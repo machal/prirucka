@@ -1,0 +1,31 @@
+browser_stats:   
+  IE8:
+    name: IE8
+    share: 12.3
+  IE9:
+    name: IE9
+    share: 5.3 
+  IE10:
+    name: IE10
+    share: 13.4
+  FF: 
+    name: Firefox
+    share: 28.9
+  Chrome:
+    name: Chrome
+    share: 26
+  Opera:
+    name: Opera
+    share: 3.6
+  Safari:
+    name: Safari
+    share: 0.7
+  ChromeMobile:
+    name: ChromeMobile
+    share: 0.7
+  MobileSafari:
+    name: MobileSafari
+    share: 1.7
+  AndroidBrowser:
+    name: AndroidBrowser
+    share: 4.3

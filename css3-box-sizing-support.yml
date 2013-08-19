@@ -1,0 +1,12 @@
+IE10: true
+IE9: true
+IE8: true
+IE7: false
+IE6: false 
+Firefox: true 
+Chrome: true
+Opera: true
+Safari: true
+MobileSafari: true
+AndroidBrowser: true
+ChromeMobile: true

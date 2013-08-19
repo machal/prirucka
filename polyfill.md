@@ -1,0 +1,21 @@
+
+Polyfill
+========
+
+Ve kontextu webového front-endu jde o javascriptový kód co vám HTML5 fíčuru rozchodí i v prohlížečích, které ji neumí.
+
+Většina polyfillů vám umožní používat HTML5 vlastnost tak jak byste ji používali v moderních prohlížečích a podporu ve starých si nějak pořeší sami. 
+
+Kdybych to uměl, napsal bych Ódu na polyfilly. Myslím, že na rychlém nástupu HTML5 technologií měly lví podíl.
+
+Je jich [opravdu hrozně moc](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills), pojďme připomenout jen ty nejznámější:
+
+* [**Respond.js**](https://github.com/scottjehl/Respond) — rozchodí [CSS3 media queries](/css3-media-queries) v IE8-
+* [**History.js**](https://github.com/browserstate/history.js/) — [HTML5 history](/html5-history), tedy history.pushState() i v docela starých křápech
+* [**CSS3Pie**](http://css3pie.com/) – [kulaté rohy](/css3-border-radius), [stíny](/css3-box-shadow) a [barevné přechody](/css3-gradients) v IE6-9
+* [**MediaElement.js**](http://mediaelementjs.com/) — HTML5 video. Připravíte mu video v patřičných formátech a on se za vás rozhodne, jestli vygeneruje flashový nebo HTML5 přehrávač.
+
+Na HTML5Please.com je seznam všech HTML5 vlastností, které se doporučuje [používat s polyfillem](http://html5please.com/#polyfill).
+
+Pokud jste zvědaví kde přesně se to slovo vzalo, mrkněte k [Remymu Sharpovi](http://remysharp.com/2010/10/08/what-is-a-polyfill/).
+
