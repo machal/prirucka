@@ -6,7 +6,7 @@ Když v praxi Border Radius ochočíme, naučíme se například:
 
 * Vykreslit kruh a schovat do něj [třeba avatar](http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/).
 * Vyčarovat i velmi roztodivné [nepravidelné tvary](http://www.css3shapes.com/), protože každý růžek může mít úplně jiné zakulacení. Ale nepředbíhejme.
-* V kombinaci s animací rámečku vytvořit [efektní roleček][1].
+* V kombinaci s animací rámečku vytvořit [efektní roleček](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek).
 * A samozřejmě — vytvořit kulaté rohy kolem boxíku.
   
 
@@ -60,6 +60,4 @@ Tipy a triky
 Podpora v prohlížečích
 ----------------------
 
-Podpora v moderních prohlížečích je bezproblémová. Pokud v osmičkovém Exploreru kulaté rohy nutně potřebujete, použijte [CSS3Pie][3]. Obvykle vám ovšem vystačí strategie nulového fallbacku.
-
-  [1]: http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek
+Podpora v moderních prohlížečích je bezproblémová. Pokud v osmičkovém Exploreru kulaté rohy nutně potřebujete, použijte [CSS3Pie](http://css3pie.com/). Obvykle vám ovšem vystačí strategie nulového fallbacku.
