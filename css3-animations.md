@@ -25,7 +25,15 @@ Animaci si nejdřív nadefinujete pomocí at-rule (zavináčové funkce) `@keyfr
     }
     
     #example {
-      animation: _nazev_animace_ _cas_trvani_ _casova_funkce_prubehu_ _zpozdeni_ _pocet_opakovani_ _smer_prubehu_ _fill_mode_ (,_dalsi_animace_);
+      animation: 
+        _nazev_animace_ 
+        _cas_trvani_ 
+        _casova_funkce_prubehu_ 
+        _zpozdeni_ 
+        _pocet_opakovani_ 
+        _smer_prubehu_ 
+        _fill_mode_ 
+        (,_dalsi_animace_);
     }
     
 
