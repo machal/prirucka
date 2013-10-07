@@ -26,7 +26,7 @@ Na příkladu vidíte, že sloupce jsou pořád stejně vysoké. Stačí z rodi�
 
 Pak taky vidíte, že prvním a poslednímu sloupci stačilo nastavit `flex-grow: 1` a poslednímu `flex-grow: 3` a podle těchto proporcí si rozdělily šířku rodiče.
 
-No a nakonec si zkuste zmenšit okno tak, aby příklad neměl k dispozici více než 640 pixelů šířky. Pomocí [Media Queries](/css3-media-queries) a nastavením vlastnosti `order: -1` přesunujeme druhý sloupec na první místo.   
+No a nakonec si zkuste zmenšit okno tak, aby příklad neměl k dispozici více než 640 pixelů šířky. Pomocí [Media Queries](css3-media-queries.md) a nastavením vlastnosti `order: -1` přesunujeme druhý sloupec na první místo.   
 
 
 Zajímavé odkazy

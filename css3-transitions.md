@@ -35,9 +35,9 @@ Zkuste si to naživo:
 V praxi
 -------
 
-A teď si představte, že takto můžete animovat téměř libovolnou CSS vlastnost včetně pozicování, [transformací](/css3-transforms). Taky vidíte ten obří potenciál? Ano, s přechody jde generovat spousty legrace typu [animace rámečku](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek) nebo docela [divoké hover stavy](http://tympanus.net/Tutorials/OriginalHoverEffects/) nad boxy.
+A teď si představte, že takto můžete animovat téměř libovolnou CSS vlastnost včetně pozicování, [transformací](css3-transforms.md). Taky vidíte ten obří potenciál? Ano, s přechody jde generovat spousty legrace typu [animace rámečku](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek) nebo docela [divoké hover stavy](http://tympanus.net/Tutorials/OriginalHoverEffects/) nad boxy.
 
-Tohle jsou specifické animace přechodu. Mohou vás zajímat skutečné [CSS3 animace](/css3-animations). Ale pozor, i s transitions lze hrát velké divadlo! Čtěte dále.
+Tohle jsou specifické animace přechodu. Mohou vás zajímat skutečné [CSS3 animace](css3-animations.md). Ale pozor, i s transitions lze hrát velké divadlo! Čtěte dále.
 
 
 Syntaxe

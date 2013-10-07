@@ -3,7 +3,7 @@ CSS3 Animace
     
 Možná se  budete divit, ale CSS3 animace jsou první pořádné nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který pro tento účel nebyl navržen — javascriptem.
 
-Jak se liší od [transitions](/css3-transitions)? Jednoduše — jen `animation` jsou plnohodnotný animační nástroj. V `animation` máte celou animaci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. `transition` jsou určené vyloženě pro jednoduchou animaci změny stavu CSS vlastnosti.
+Jak se liší od [transitions](css3-transitions.md)? Jednoduše — jen `animation` jsou plnohodnotný animační nástroj. V `animation` máte celou animaci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. `transition` jsou určené vyloženě pro jednoduchou animaci změny stavu CSS vlastnosti.
 
 Příklady
 --------

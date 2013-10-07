@@ -21,9 +21,9 @@ Do kódu prostě explicitně uvedeme vlastnost nebo hodnotu pro starší prohlí
 	background: red;
 	background: linear-gradient(to bottom, red, darkred);
 
-V prvním řádku definujeme řešení pro starší prohlížeč. A to předefinujeme [barevným přechodem](/css3-gradients) v prohlížečích, které jej ovládají.
+V prvním řádku definujeme řešení pro starší prohlížeč. A to předefinujeme [barevným přechodem](css3-gradients.md) v prohlížečích, které jej ovládají.
 
-Dále využitelné například [ve vícenásobném pozadí](/css3-multi-backgrounds), definování alternativního obrázku namísto vektorového SVG atd.
+Dále využitelné například [ve vícenásobném pozadí](css3-multi-backgrounds.md), definování alternativního obrázku namísto vektorového SVG atd.
 
 Nulový fallback
 ---------------
@@ -37,9 +37,9 @@ Nulový fallback
 	  color: darkred;
 	}
 
-Tady se netrápíme tím, že starší prohlížeče nezvládají animaci pomocí [transition](/css3-transitions), protože ty nám slouží k vylepšení uživatelského prožitku v moderních prohlížečích.
+Tady se netrápíme tím, že starší prohlížeče nezvládají animaci pomocí [transition](css3-transitions.md), protože ty nám slouží k vylepšení uživatelského prožitku v moderních prohlížečích.
 
-Dobré řešení například pro [animace](/css3-animations), [kulaté rohy](/css3-border-radius), [stínování](/css3-box-shadow).
+Dobré řešení například pro [animace](css3-animations.md), [kulaté rohy](css3-border-radius.md), [stínování](css3-box-shadow.md).
 
 Pár odkazů
 ----------

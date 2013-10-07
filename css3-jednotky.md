@@ -13,7 +13,7 @@ Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`.
 
 Obvykle mají prohlížeče ve svých výchozích stylopisech tuto hodnotu nastavenou na 16 pixelů. 
 
-Pokud všechny rozměry týkající se typografie (nebo klidně i layoutu) nastavíte v `rem` jednotkách, můžete si snadno zvětšit celý dokument pouhou změnou hodnoty ve vlastnosti `html { font-size: … }`. Podobně jako v příkladu výše na tu změnu můžete provést pomocí [media query](/css3-media-queries).
+Pokud všechny rozměry týkající se typografie (nebo klidně i layoutu) nastavíte v `rem` jednotkách, můžete si snadno zvětšit celý dokument pouhou změnou hodnoty ve vlastnosti `html { font-size: … }`. Podobně jako v příkladu výše na tu změnu můžete provést pomocí [media query](css3-media-queries.md).
   
 ### Podpora v prohlížečích
 

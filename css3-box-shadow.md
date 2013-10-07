@@ -22,7 +22,7 @@ Syntaxe
       _barva_,  
       (_dalsi stin_);
   
-Základní stín vytvoříte cobydup. První číslo udává **horizontální, druhé vertikální posun** směrem dolů. Záporná čísla stín posunují nahoru. Třetí je barva a vězte, že pro stíny se nejvíce hodí poloprůhledná [RGBa barva](/css3-rgba):
+Základní stín vytvoříte cobydup. První číslo udává **horizontální, druhé vertikální posun** směrem dolů. Záporná čísla stín posunují nahoru. Třetí je barva a vězte, že pro stíny se nejvíce hodí poloprůhledná [RGBa barva](css3-rgba.md):
 
     box-shadow: 5px 5px rgba(0, 0, 0, .5);
 

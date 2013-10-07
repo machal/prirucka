@@ -11,7 +11,7 @@ Stínování textu.
 	  _barva_,
 	  (_dalsi_stiny_);
 
-`text-shadow` má dvojče — stínování boxu `box-shadow`. [Syntaxe je velmi podobná](/css3-box-shadow) a tak nebudeme zacházet do detailu. Podívejte se rovnou na příklad:
+`text-shadow` má dvojče — stínování boxu `box-shadow`. [Syntaxe je velmi podobná](css3-box-shadow.md) a tak nebudeme zacházet do detailu. Podívejte se rovnou na příklad:
 
 <p data-height="156" data-theme-id="502" data-slug-hash="aDLCl" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/aDLCl'>CSS3 Text Shadow</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="http://codepen.io/assets/embed/ei.js"></script>
