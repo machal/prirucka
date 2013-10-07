@@ -53,23 +53,3 @@ Souřadnice bodu, ze kterého transformace vychází. Přednastavený je střed 
 
 <p data-height="194" data-theme-id="502" data-slug-hash="brBgk" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/brBgk'>Příklad: CSS3 transform-origin</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="http://codepen.io/assets/embed/ei.js"></script>
-
-
-Zajímavé odkazy
----------------
-
-
-
-Podpora v prohlížečích
-----------------------
-
-<!--TODO
-
-* matrix
-http://en.wikipedia.org/wiki/Linear_transformation#Examples_of_linear_transformation_matrices
-http://dev.opera.com/articles/view/understanding-the-css-transforms-matrix/
-http://www.useragentman.com/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/
-
-* 3D
-
--->
