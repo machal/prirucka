@@ -4,7 +4,7 @@ Box Reflection
 
 Odlesk elementu.
 
-Webkit-only vlastnost, kterou nelze použít na široce dostupných webech, ale pro specifické aplikace pro omezenou cílovou skupinu se může hodit.
+Pozor, není součástí specifikace CSS3. Webkit-only vlastnost, kterou nelze použít na široce dostupných webech, ale pro specifické aplikace pro omezenou cílovou skupinu se může hodit.
 
 Syntaxe vypadá takto:
 
@@ -17,4 +17,4 @@ Syntaxe vypadá takto:
 Podpora v prohlížečích
 ----------------------
 
-IE10+. Starší prohlížeče doporučuji řešit tvrdým fallbackem — text se tam prostě jen nezalomí do sloupců. 
+Jen prohlížeče podstavené na Webkit jádře.
