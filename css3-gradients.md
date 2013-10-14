@@ -3,12 +3,12 @@ CSS3 Gradients
 
 Gradienty nebo-li barevné přechody.
 
-Nový možnost definice barvy — způsob jak použít nativní barevný přechod kdekoliv kde jsme dosud používali obrázek. Tedy ve vlastnostech `background-image` a `list-style-image`.
+Nová možnost definice barvy a způsob jak použít nativní barevný přechod kdekoliv kde jsme dosud používali obrázek. Tedy ve vlastnostech `background-image` a `list-style-image`.
 
 Využití
 -------
 
-Škála možností leze ze škatulky „gradient mezi barvou A a B” hlavně těmito směry:
+Škála možností využítí leze ze základní škatulky „gradient mezi barvou A a B” hlavně těmito směry:
 
 * [Tlačítka](http://codepen.io/leviflair/pen/zFoKm), [tlačítka](http://cubiq.org/dropbox/cssgrad.html), [tlačítka](http://codepen.io/simurai/pen/DwJdq)
 * [Patterny](http://lea.verou.me/css3patterns/), [patterny](http://css3pie.com/demos/gradient-patterns/), [patterny](http://codepen.io/aleprieto/pen/nAmIy)
@@ -42,7 +42,7 @@ Barevná zarážka pro tmavě zelenou barvu tady začíná na třetině délky o
 Radiální přechod
 ----------------
 
-Nejdříve všechny možnosti jako ukázky kódu, dole si je pak můžete prohlédnout a naživo vyzkoušet v prohlížeči. Nejjednodušší kruhový přechod vytvoříme například tímto zápisem:
+Nejjednodušší kruhový přechod vytvoříme například tímto zápisem:
 
 	.box-1 {
 		background: radial-gradient(lightgreen, darkgreen);  
@@ -58,7 +58,7 @@ Hned za tvarem je možné definovat velikost přechodu. První možnost je defin
 	  background: radial-gradient(ellipse 50px 30px, lightgreen, darkgreen);
 	}
 	
-Poznámka: aktuální verze specifikace [nedovoluje](http://dev.w3.org/csswg/css-images-3/#radial-size-circle) u kružnice nastavit rozměry s použitím procent.
+Poznámka: aktuální verze specifikace [nedovoluje](http://dev.w3.org/csswg/css-images-3/#radial-size-circle) u kružnice nastavit rozměry s použitím procent. Divné, co?
 
 Druhá možnost je definovat **velikost klíčovým slovem**:
 
@@ -95,10 +95,9 @@ Podpora v prohlížečích
 IE10+, ale jedna dobrá a jedna špatná zpráva k tomu:
 
 * Dobře, nejdřív špatná. CSS3 gradienty jsou typický čertem z prefixového pekla. Každý prohlížeč v různých fázích vývoje implementoval různé fáze vývoje specifikace. Nebo vlastní návrh syntaxe. Takže pokud chcete podporovat i starší verze moderních prohlížečů, věnujte zvýšenou pozornost [prefixovým variantám](http://css3please.com/#box_gradient). Dobré ale je, že se poslední verze všech prohlížečů shodují na W3 syntaxi, kterou používáme v příkladech. A bez prefixů!
-* Teď dobrá. Existuje spousta nástrojů, které nám potřebnou syntaxi dokáží vygenerovat. A dokáží vygenerovat i potřebný kód pro IE9 (pomocí SVG obrázku) a IE8 (pomocí vlastnosti `filter`), takže dosáhnete prakticky plné podpory. A teď ty nástroje: například [ColorZilla Gradient Editor](http://www.colorzilla.com/gradient-editor/) nebo [LESShat](http://lesshat.com/) pokud pokužíváte preprocesor LESS.
+* Teď dobrá. Existuje spousta nástrojů, které nám potřebnou syntaxi zvládnou vygenerovat. A umí vygenerovat i potřebný kód pro IE9 (pomocí SVG obrázku) a IE8 (pomocí vlastnosti `filter`), takže dosáhnete prakticky plné podpory. A teď ty nástroje: například [ColorZilla Gradient Editor](http://www.colorzilla.com/gradient-editor/) nebo [LESShat](http://lesshat.com/) pokud pokužíváte preprocesor LESS.
 
-
-V každém případě musíte pro starší prohlížeče nadefinovat fallbackovou barvu:
+V každém případě nezapomeňte pro starší prohlížeče nadefinovat fallbackovou barvu:
 
 	background: darkgreen;
 	background: linear-gradient(lightgreen, darkgreen);

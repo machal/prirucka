@@ -50,7 +50,7 @@ Dobré je hledat přímo u typografů. V Česku nabízí dobré webfonty třeba 
 ### Docela dobré alternativy: Google Fonts, Fontsquirrel, ...
 
 - [Google Fonts][5] je fajn služba s velkým množstvím písem zdarma. Ne všechny jsou ale bůhvijak kvalitní a ne všechny mají českou lokalizaci.
-- [Fontsquirrel][6] má jednak vlastní databázi fontů s podobnými problémy jako Google, ale taky velmi známý [generátor][7], který vám udělá webfont z písma, které vlastníte v diginální podobě.
+- [Fontsquirrel][6] má jednak vlastní databázi fontů s podobnými problémy jako Google, ale taky velmi známý [generátor][7], který vám udělá webfont z písma, které vlastníte v digitální podobě.
 
 ### Pozor na fonty zdarma
 
@@ -59,7 +59,7 @@ Na internetu se jich povaluje docela dost zdarma. Ale kvalitních je málo. Font
 Podpora v prohlížečích
 ----------------------
 
-Není co řešit — `@font-face` podporuje Explorer od verze 4. Podporu musíte řešit, jen pokud v cílové skupině máte velké množství uživatelů s Androidem 2.1, což je velmi málo pravděpodobné.
+Není co řešit — `@font-face` podporuje Explorer od verze 4. Podporu musíte řešit, jen pokud v cílové skupině máte velké množství uživatelů s Androidem 2.1 a staršími, což je málo pravděpodobné.
 
   [1]: http://blog.typekit.com/2010/10/15/type-rendering-operating-systems/
   [2]: http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax

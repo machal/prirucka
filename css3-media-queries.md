@@ -34,7 +34,7 @@ Klasický dotaz na média vypadá například takto:
 	
 Deklaraci pro `.container` prohlížeč aplikuje, pokud šířka viewportu (prostoru pro stránku v okně prohlížeče) nepřesáhne 480 pixelů. Níže si to budete moci zkusit na příkladu.
 
-Alternativně lze použít dotaz na šířku displeje obrazovky: `@media (max-device-width: 480px)`. Narozdíl od `max-width` jej neočůráte změnou velikosti okna a tak toho někteří blázni začali využívat pro detekci typu zařízení. Je to blbost, malý nebo velký [tablet, smartphone či desktop od sebe počtem pixelů nerozeznáte](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu).
+Alternativně lze použít dotaz na šířku displeje obrazovky: `@media (max-device-width: 480px)`. Narozdíl od `max-width` jej neočůráte změnou velikosti okna a tak toho někteří blázni začali využívat pro detekci typu zařízení. Je to blbost, malý nebo velký [tablet, smartphone či desktop od sebe šířkou okna nerozeznáte](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu).
 
 Pomocí `max-width` naopak můžete alespoň základně otestovat aplikování změn pro malé displeje na svém desktopovém prohlížeči.
 
@@ -86,4 +86,4 @@ IE8 neumí ani základní CSS3 Media Queries. Existuje naštěstí hned několik
 
 1. Pište CSS tak, aby nedostatky IE8- nebyly problém. Výchozí tedy pro desktop a do dotazů na média dejte deklarace pro menší displeje.
 2. Použijte polyfill [Respond.js](https://github.com/scottjehl/Respond). Je odzkoušený a dostatečně rychlý, ale ano — na složitějších webech a pomalejších strojích s IE8 si uživatelé občas mohou všimnout, že se část stylů načítá později.
-3. Preferovaná strategie — vezměte na pomoc CSS preprocesor a buď použijte [body třídy](http://kratce.vzhurudolu.cz/post/49758753713/responzivni-mobile-first-s-pomoci-body-trid) nebo si nechte kompilovat zvláštní soubor pro starší [IÉčka](http://kratce.vzhurudolu.cz/post/42187934506/mobile-first-css).
+3. A doporučované strategie na závěr — vezměte na pomoc CSS preprocesor a buď použijte [body třídy](http://kratce.vzhurudolu.cz/post/49758753713/responzivni-mobile-first-s-pomoci-body-trid) nebo si nechte kompilovat zvláštní soubor pro starší [IÉčka](http://kratce.vzhurudolu.cz/post/42187934506/mobile-first-css).

@@ -3,8 +3,6 @@ CSS3 Flexbox
     
 Flexbox je úplně nový layoutovací modul.
 
-*Bacha, tenhle článek zatím nejde tak do hloubky jak by bylo potřeba. K jeho vylepšení ovšem můžete přispět i vy.*
-
 Aktuální implementace flexboxu mají pár „ale…”. Celkově vzato je ovšem [CSS Flexible Box Layout Module](http://www.w3.org/TR/css3-flexbox/) úžasný posun vpřed ve tvorbě webových layoutů.
 
 Skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí [tabulkového layoutu](http://www.jakpsatweb.cz/tabulky-design.html) v roce 2001. 
@@ -14,6 +12,8 @@ A měl by pravdu, ovšem jen z malé části. Tabulkový layout nahrazuje jen je
 1. Potřebujeme **několik stejně dlouhých sloupců**. Jeden z nich má na pozadí barvu a potřebujeme, aby barva byla vidět zezhora až dolů. To je to, co tabulkový layout uměl a floaty neumí.
 2. Sloupce našeho layoutu chceme pravidelně rozdělit po celé šířce, ale **nechce se nám počítat s procenty**.
 3. Na menších rozlišeních chceme **změnit pořadí sloupců** (nebo řádků) — bomba pro responzivní webdesign.
+
+Těch scénářů je samozřejmě daleko více. Podívejte se na hezkou stránku [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/).
 
 
 Příklad a technikálie
@@ -33,7 +33,7 @@ Zajímavé odkazy
 ---------------
 
 - [A Complete Guide to Flexbox, CSSTricks.com](http://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Flexy Boxes, generátor a hřiště](http://the-echoplex.net/flexyboxes/)
+- [Flexy Boxes, generátor a flexbox pískoviště](http://the-echoplex.net/flexyboxes/)
 
 
 Podpora v prohlížečích
@@ -41,9 +41,9 @@ Podpora v prohlížečích
 
 Není špatná. Hlavní příčinou, proč se ve flexboxu není úplně snadné zorientovat je **existence tří různých syntaxí**:
 
-* Syntaxe 2009 – kdekoliv uvidíte `display: box`. Myslím, že ji naštěstí žádná rozšířená verze prohlížeč už nepodporuje.
+* Syntaxe 2009 – kdekoliv uvidíte `display: box`. Myslím, že ji naštěstí žádná rozšířená verze prohlížeče už nepodporuje.
 * Syntaxe 2011 – `display: flexbox`. Podporují starší verze moderních prohlížečů a bohužel i IE10 a Android Browser.
-* Syntaxe 2012 – `display: flex`. V posledních verzích podporují všechny moderní prohlížeče, včetně IE10.
+* Syntaxe 2012 – `display: flex`. V posledních verzích podporují všechny moderní prohlížeče, včetně IE11.
 
 Zajímá nás tedy syntaxe 2011 a 2012 a není důvod se s ní nepoprat například [pomocí CSS preprocesorů](http://css-tricks.com/using-flexbox/).
 

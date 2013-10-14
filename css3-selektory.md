@@ -1,15 +1,15 @@
 CSS3 selektory
 ==============
 
-CSS3 přichází s armádou nových selektorů. Nejjednodušší bude podívat se na ně optikou toho jakou verzi Internet Exploreru na svých projektech musíte podporovat.
+CSS3 přichází s armádou nových selektorů. Nejjednodušší bude podívat se na ně optikou toho jakou verzi Internet Exploreru na svých projektech musíte podporovat, abyste je mohli použít.
 
 
 IE8+
 ----
 
-* `span[att^=”val”]` – hodnota atributu `attr` začíná řetězcem “val”.
-* `span[att$=”val”]` – končí “val”.
-* `span[att*=”val”]` – obsahuje “val”.
+* `span[att^="val"]` – hodnota atributu `attr` začíná řetězcem “val”. Hojně využívají CSS frameworky pro tvorbu gridu. Třídy `.span1`, `.span2` atd. selektují takto: `span[class^="span"]`
+* `span[att$="val"]` – končí “val”.
+* `span[att*="val"]` – obsahuje “val”.
 * `p ~ ul` – mají stejného rodiče, ale nejsou vedle sebe jako u `p + ul`.
   
 
