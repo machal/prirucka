@@ -1,9 +1,9 @@
 CSS3 Animace
 ============
     
-Možná se  budete divit, ale CSS3 animace jsou první pořádné nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který pro tento účel nebyl navržen — javascriptem.
+Možná se  budete divit, ale tohle jsou první pořádné nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který pro tento účel nebyl navržen — javascriptem.
 
-Jak se liší od [transitions](css3-transitions.md)? Jednoduše — jen `animation` jsou plnohodnotný animační nástroj. V `animation` máte celou animaci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. `transition` jsou určené vyloženě pro jednoduchou animaci změny stavu CSS vlastnosti.
+Jak se liší od [transitions](css3-transitions.md)? Jednoduše — jen `animation` jsou plnohodnotný animační nástroj. V `animation` máte celou animaci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. `transition` jsou určené vyloženě pro jednoduché animované přechody změny stavu CSS vlastnosti.
 
 Příklady
 --------
@@ -11,7 +11,7 @@ Příklady
 * Jednoduchá animace [pokličky na hrncem](http://www.scuk.cz/kurzy/) na Scuk kurzech. (V IE9- se neanimuje, jen se posune.)
 * [Kolovrátek](http://dabblet.com/gist/1689261) nebo-li preloader. Tady pak článek  o [výhodách z pohledu spravovatelnosti kódu](http://kratce.vzhurudolu.cz/post/17279304470/spravovatelnost-css3).
 * Vyšší dívčí – malý film [Madmanimation](http://stuffandnonsense.co.uk/content/demo/madmanimation/) zpracovaný v CSS3 animacích.
-* A opravdová animace dokazující, že bez Flashe se pro animace v budoucnu obejdeme. [Běžící kočka](http://codepen.io/rachelnabors/pen/rCost). Tady je k ní [tutoriál](http://24ways.org/2012/flashless-animation/).
+* A opravdová animace dokazující, že bez Flashe se pro animace v budoucnu obejdeme. (Jen to bude chvílí trvat.) [Běžící kočka](http://codepen.io/rachelnabors/pen/rCost). Tady je k ní [tutoriál](http://24ways.org/2012/flashless-animation/).
 
 
 Syntaxe
@@ -50,7 +50,7 @@ Nastavíte ve vteřinách (`.5s`) nebo v milisekundách (`500ms`). Výchozí hod
 ### `animation-timing-function` – časová funkce průběhu
 
 
-Podobně jako u [transition][1], lze využít funkce přednastavené nebo definovat vlastní, například nástrojem [Ceaser](http://matthewlein.com/ceaser/). Samostatný zápis a výchozí hodnota vypadá takto: `animation-timing-function: ease`.
+Podobně jako u [transition](css3-transitions.md), lze využít funkce přednastavené nebo definovat vlastní, například nástrojem [Ceaser](http://matthewlein.com/ceaser/). Samostatný zápis a výchozí hodnota vypadá takto: `animation-timing-function: ease`.
   
 ### `animation-delay` – zpoždění startu
 
@@ -80,7 +80,7 @@ Může nabývat čtyř hodnot:
 
 ### `animation-play-state` — stav přehrávání
 
-Vlastnost, která jako jediná není součástí zkratky animation a je třeba ji používat vždy samostatně. Animaci můžete dočasně zastavit pomocí `animation-play-state: paused`.
+Vlastnost, která jako jediná není součástí zkratky animation a je třeba ji používat vždy samostatně. Animaci můžete dočasně zastavit pomocí `animation-play-state: paused`. Co dělá druhá možná hodnota — `running` — je asi zřejmé.
   
 ### `@keyframes` – klíčové snímky průběhu animace
 
@@ -116,6 +116,3 @@ Podpora v prohlížečích
 ----------------------
 
 CSS3 animace nepodporuje IE9 a starší. Animace tedy můžete buď využít jako drobná estetická vylepšení uživatelského rozhraní v moderních prohlížečích nebo s pomocí detekce vlastností ve starších prohlížečích animovat jiným způsobem.
-
-
-  [1]: /css3-transitions

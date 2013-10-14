@@ -20,4 +20,4 @@ Pokud není úplně zřejmě jak vypadá padding-box, border-box a content-box, 
 Podpora v prohlížečích
 ----------------------
 
-IE9+. Vlastnost určitě nemá smysl polyfillovat. Nefukčnost téhle vlastnosti ve starších prohlížečích úhyn uživatele určitě nezpůsobí.
+IE9+. Vlastnost určitě nemá smysl polyfillovat. Nefukčnost téhle vlastnosti ve starších prohlížečích náhlý úhyn uživatele určitě nezpůsobí.

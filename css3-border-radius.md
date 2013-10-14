@@ -24,7 +24,7 @@ Rovnoměrné zakulacení rohů s poloměrem 10 pixelů vyšvihneme takto:
 
     border-radius: 10px;
 
-Zakulacovat ovšem můžeme i v procentech ze šířky elementu. A dalších jednotkách dostupných v CSS. Zakulacovat můžeme **pro každý růžek zvlášť**. První je vždy levý horní a postupuje se po směru hodinových ručiček:
+Zakulacovat ovšem můžeme i v procentech ze šířky elementu a dalších jednotkách dostupných v CSS. Zakulacovat můžeme **pro každý růžek zvlášť**. První je vždy levý horní a postupuje se po směru hodinových ručiček:
   
     border-radius: 15% 15% 0 0;
   
@@ -53,8 +53,8 @@ Tipy a triky
 ------------
 
 * Na tabulky s `border-collapse: collapse` a rodičovské prvky s obrázkem uvnitř je potřeba aplikovat `overflow: hidden`.
-* MSIE9 sice `border-radius` podporuje, ale není je možné kombinovat s vlastností `filter` používanou například pro přechody. Dá se vyřešit nastavením stejného `border-radius` a `overflow:hidden` pro rodičovský element.
-* Pokud vám v Safari zpod růžku [vyčuhuje barva pozadí](http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed), přidejte za řádek s border-radius tohle: `-webkit-background-clip: padding-box`.
+* MSIE9 sice `border-radius` podporuje, ale není je možné kombinovat s vlastností `filter` používanou například pro přechody. Dá se vyřešit nastavením stejného `border-radius` a `overflow: hidden` pro rodičovský element.
+* Pokud vám v Safari zpod růžku [vyčuhuje barva pozadí](http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed), přidejte za řádek s `border-radius` tohle: `-webkit-background-clip: padding-box`.
 
 
 Podpora v prohlížečích

@@ -1,7 +1,7 @@
 CSS3 Border Image
 =================
 
-Obrázkový rámeček. Způsob jak namísto nativní rámečků vykreslit kolem elementu pomocí obrázku naše vlastní.
+Obrázkový rámeček. Způsob jak namísto nativních rámečků kolem elementu vykreslit pomocí obrázku naše vlastní.
 
 Vezmeme jakýkoliv [obrázek s rámečkem](http://www.vzhurudolu.cz/images/border-image-test.jpg) statických rozměrů, prohlížeči řekneme jak jej má rozdělit. Následuje kouzlo — rámeček se nám elegantně přizpůsobí šířce i výšce elementu.
 
@@ -11,11 +11,11 @@ Technikálie
 	border-image: 
 	  _zdrojovy_obrazek_
 	  _rozmery_rezu_
-	  _sirka_
-	  _zacatek_  
+	  _sirka_ramecku_
+	  _zacatek_rezu_  
 	  _opakovani_
 
-Pozor, ve Firefoxu vám vlastnost `border-image` nebude fungovat správně bez deklarování `border-width` na stejné rozměry jako `border-image-slice` a `border-style: solid`.
+Pozor, v aktuálním Firefoxu (ke dni psaní článku) vám vlastnost `border-image` nebude fungovat správně bez deklarování `border-width` na stejné rozměry jako `border-image-slice` a `border-style: solid`.
 
 ### Zdrojový obrázek
 
@@ -23,25 +23,25 @@ Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`;
 
 ### Rozměry řezů
 
-Tímto prohlížeči rozřežeme zdrojový obrázek tak, aby věděl kde je část pro všechny čtyři rohy a vertikální a horizontální část rámečku. Obsahuje čtyři čísla pro řez horní, pravý, dolní a levý. Definovat lze v pixelech nebo v procentech ze zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
+Tímto prohlížeči rozřežeme zdrojový obrázek tak, aby věděl kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku. Obsahuje čtyři čísla pro řez horní, pravý, dolní a levý. Definovat lze v pixelech nebo v procentech ze zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
 
 Pokud je přítomno klíčové slovo `fill`, vezme se ze zdrojového obrázku i jeho střední část a vykreslí se přes pozadí elementu.
 
 <img class="picture" src="content/schemes/CSS3-border-image.png" width="700" height="394" alt="border-image-slice">
 
-### Šířka 
+### Šířka rámečku
 
 `border-image-width` specifikuje šířku rámečku v pixelech nebo procentech, podobně jako u `border-width`.
 
 Pokud má hodnotu `auto`, šířka se počítá z rozměrů řezů.
 
-### Začátek
+### Začátek řezu
 
-Rozměr specifikovaný v `border-image-outset` říká jak moc leze obrázkový rámeček mimo rozměry elementu počítané jako border-box.
+Rozměr specifikovaný v `border-image-outset` říká jak moc leze obrázkový rámeček mimo rozměry elementu počítané jako [border-box](/css3-box-sizing).
 
 ### Opakování
 
-Jak bude prohlížeč pracovat s vertikální a horizontální postranní částí obrázkového rámečku? To můžeme nastavit v `border-image-repeat`. Možnosti jsou tyto:
+Jak bude prohlížeč pracovat s vertikální a horizontální stranou obrázkového rámečku? To můžeme nastavit v `border-image-repeat`. Možnosti jsou tyto:
 
 * `stretch` – roztažení 
 * `repeat` – opakování
@@ -65,5 +65,3 @@ Podpora v prohlížečích
 ----------------------
 
 IE11+. Se staršími prohlížeči se lze vypořádat definovanou alternativou skrze detekci Modernizrem: `.no-borderimage { … }`.
-
-Pozor, ve starších verzích některých moderních prohlížečů a v Android browseru je vlastnost [prefixovaná](http://caniuse.com/#feat=border-image).
