@@ -3,7 +3,7 @@ CSS3 Border Image
 
 Obrázkový rámeček. Způsob jak namísto nativních rámečků kolem elementu vykreslit pomocí obrázku naše vlastní.
 
-Vezmeme jakýkoliv [obrázek s rámečkem](http://www.vzhurudolu.cz/images/border-image-test.jpg) statických rozměrů, prohlížeči řekneme jak jej má rozdělit. Následuje kouzlo — rámeček se nám elegantně přizpůsobí šířce i výšce elementu.
+Vezmeme jakýkoliv [obrázek s rámečkem](http://www.vzhurudolu.cz/images/border-image-test.jpg) statických rozměrů a prohlížeči řekneme jak jej má naporcovat. Následuje kouzlo — rámeček se elegantně přizpůsobí šířce i výšce elementu.
 
 Technikálie
 -----------
@@ -23,11 +23,13 @@ Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`;
 
 ### Rozměry řezů
 
-Tímto prohlížeči rozřežeme zdrojový obrázek tak, aby věděl kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku. Obsahuje čtyři čísla pro řez horní, pravý, dolní a levý. Definovat lze v pixelech nebo v procentech ze zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
+Právě touto hodnotou zdrojový obrázek naporcujeme tak, aby věděl kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku. 
+
+Obsahuje čtyři čísla — řez horní, pravý, dolní a levý. Definovat lze v pixelech nebo v procentech ze zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
 
 Pokud je přítomno klíčové slovo `fill`, vezme se ze zdrojového obrázku i jeho střední část a vykreslí se přes pozadí elementu.
 
-<img class="picture" src="content/schemes/CSS3-border-image.png" width="700" height="394" alt="border-image-slice">
+<img class="picture" src="content/schemes/CSS3-border-image.png" width="700" height="394" alt="Rozměry řezů v border-image">
 
 ### Šířka rámečku
 
@@ -37,7 +39,7 @@ Pokud má hodnotu `auto`, šířka se počítá z rozměrů řezů.
 
 ### Začátek řezu
 
-Rozměr specifikovaný v `border-image-outset` říká jak moc leze obrázkový rámeček mimo rozměry elementu počítané jako [border-box](/css3-box-sizing).
+Rozměr specifikovaný v `border-image-outset` říká jak moc leze obrázkový rámeček mimo rozměry elementu počítané jako [`border-box`](css3-box-sizing.md).
 
 ### Opakování
 
@@ -64,4 +66,4 @@ Odkazy
 Podpora v prohlížečích
 ----------------------
 
-IE11+. Se staršími prohlížeči se lze vypořádat definovanou alternativou skrze detekci Modernizrem: `.no-borderimage { … }`.
+IE11+. Se staršími prohlížeči se lze vypořádat definovanou alternativou a detekcí vlastnosti Modernizrem: `.no-borderimage { … }`.
