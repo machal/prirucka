@@ -19,7 +19,7 @@ Pozor, v aktuálním Firefoxu (ke dni psaní článku) vám vlastnost `border-im
 
 ### Zdrojový obrázek
 
-Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`;
+Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`. A protože [gradient](css3-gradients.md) je také obrázek, můžete namísto rámečku použít [jej](http://jsfiddle.net/jjbuckley/pnGcS/3/) (za tip díky [@superkoderi](https://twitter.com/superkoderi)).
 
 ### Rozměry řezů
 
