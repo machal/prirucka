@@ -10,7 +10,7 @@ Definovat fallback **považuji za slušnost** i na projektech, které mají níz
 
 V HTML5 světě se využívá hlavně v případě nových CSS3 vlastností.
 
-Rozeznávám dva typy fallbacku:
+Dva typy fallbacku jsem si pojmenoval jako definovaný a nulový.
 
 
 Definovaný fallback
@@ -39,7 +39,7 @@ Nulový fallback
 
 Tady se netrápíme tím, že starší prohlížeče nezvládají animaci pomocí [transition](css3-transitions.md), protože ty nám slouží k vylepšení uživatelského prožitku v moderních prohlížečích.
 
-Dobré řešení například pro [animace](css3-animations.md), [kulaté rohy](css3-border-radius.md), [stínování](css3-box-shadow.md).
+Možné řešení například pro [animace](css3-animations.md), [kulaté rohy](css3-border-radius.md), [stínování](css3-box-shadow.md).
 
 Pár odkazů
 ----------

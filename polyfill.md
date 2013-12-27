@@ -6,7 +6,7 @@ Ve kontextu webového front-endu jde o javascriptový kód co vám HTML5 fíčur
 
 Většina polyfillů vám umožní používat HTML5 vlastnost tak jak byste ji používali v moderních prohlížečích a podporu ve starých si nějak pořeší sami. 
 
-Kdybych to uměl, napsal bych Ódu na polyfilly. Myslím, že na rychlém nástupu HTML5 technologií měly lví podíl.
+Kdybych to uměl, napsal bych Ódu na polyfilly. Myslím, že na poměrně rychlém nástupu HTML5 technologií měly polyfilly zásadní podíl.
 
 Je jich [opravdu hrozně moc](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills), pojďme připomenout jen ty nejznámější:
 
@@ -17,5 +17,5 @@ Je jich [opravdu hrozně moc](https://github.com/Modernizr/Modernizr/wiki/HTML5-
 
 Na HTML5Please.com je seznam všech HTML5 vlastností, které se doporučuje [používat s polyfillem](http://html5please.com/#polyfill).
 
-Pokud jste zvědaví kde přesně se to slovo vzalo, mrkněte k [Remymu Sharpovi](http://remysharp.com/2010/10/08/what-is-a-polyfill/).
+Pokud jste zvědaví kde přesně se slovo „polyfill“ vzalo, mrkněte k [Remy Sharpovi](http://remysharp.com/2010/10/08/what-is-a-polyfill/).
 
