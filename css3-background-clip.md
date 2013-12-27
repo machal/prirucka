@@ -14,7 +14,7 @@ Další možnosti:
 * 	`content-box` — obrázek se vykresluje jen pod obsahovým boxem
 * 	`padding-box` — obrázek se vykresluje jen pod obsahovým boxem a paddingem
 
-Pokud není úplně zřejmě jak vypadá padding-box, border-box a content-box, mrkněte se na graf u vlastnosti [`box-sizing`](css3-box-sizing.md)
+Pokud není úplně zřejmě jak vypadá padding-box, border-box a content-box, mrkněte se na graf u vlastnosti [box-sizing](css3-box-sizing.md).
 
 
 Podpora v prohlížečích
