@@ -23,7 +23,7 @@ Do kódu prostě explicitně uvedeme vlastnost nebo hodnotu pro starší prohlí
 
 V prvním řádku definujeme řešení pro starší prohlížeč. A to předefinujeme [barevným přechodem](css3-gradients.md) v prohlížečích, které jej ovládají.
 
-Dále využitelné například [ve vícenásobném pozadí](css3-multi-backgrounds.md), definování alternativního obrázku namísto vektorového SVG atd.
+Dále využitelné například [ve vícenásobném pozadí](css3-multiple-backgrounds.md), definování alternativního obrázku namísto vektorového SVG atd.
 
 Nulový fallback
 ---------------
