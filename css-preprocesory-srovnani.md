@@ -192,27 +192,6 @@ box-shadow() {
 }
 ```
 
-## Media Queries
-
-LESS:
-
-```
-
-```
-
-SASS:
-
-```
-
-```
-
-Stylus:
-
-```
-
-```
-
-
 
 ## Podmínky
 
