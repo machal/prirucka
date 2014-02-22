@@ -57,7 +57,7 @@ Lépe:
 
 Vše musí být nezávislé na HTML elementech. Tzn. v CSS nepoužívat `input.button`, ale jen `.button`, protože nám programátor v HTML může `<input>` změnit na `<a>`, `<span>` nebo cokoliv jiného.
 
-### 2) Oddělit kontejner a obsah
+### 2) Osvobodit obsah z kontejneru
 
 Tzn. nevytvářet styly závislé od umístění. `.head.head-smaller` raději než `.side .head`.
 
