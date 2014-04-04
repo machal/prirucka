@@ -23,11 +23,9 @@ Je složitější, ale nosná myšlenka je v rozdělení tříd náležejících
 
 Jednoduchou komponentu s navigací byste tedy v CSS pojmenovali takto:
 
-```
-.nav
-  .nav__item
-  .nav--hidden
-```
+	.nav
+	  .nav__item
+	  .nav--hidden
 
 Skvěle to na příkladu složení komponenty *člověk* (LOL) vysvětluje [Harry Roberts](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
 
@@ -35,11 +33,9 @@ Použití ošklivých podtržítek v elementu obhajuje možností pojmenovat kom
 
 Pokud to — jako já – nepotřebujete, můžete sáhnout po jednodušším pojmenovávání:
 
-```
-.nav
-  .nav-item
-  .nav--hidden
-```  
+	.nav
+	  .nav-item
+	  .nav--hidden
 
 
 ## Odkazy

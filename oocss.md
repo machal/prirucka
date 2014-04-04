@@ -20,40 +20,35 @@ Tzn. `.button` a `.button.button-primary` namísto `.button-one` a `.button-seco
 
 Špatně:
 
-```
-.button-one {
-  padding: 10px 20px;
-  font-size: 14px;
-  line-height: 1;
-  border: 1px solid black;
-}
-
-.button-two {
-  padding: 10px 20px;
-  font-size: 14px;
-  line-height: 1;
-  border: 1px solid black;
-  background: red;
-  color: white;
-}
-
-```
+	.button-one {
+	  padding: 10px 20px;
+	  font-size: 14px;
+	  line-height: 1;
+	  border: 1px solid black;
+	}
+	
+	.button-two {
+	  padding: 10px 20px;
+	  font-size: 14px;
+	  line-height: 1;
+	  border: 1px solid black;
+	  background: red;
+	  color: white;
+	}
 
 Lépe:
 
-```
-.button {
-  padding: 10px 20px;
-  font-size: 14px;
-  line-height: 1;
-  border: 1px solid black;
-}
-
-.button-primary {
-  background: red;
-  color: white;
-}
-```
+	.button {
+	  padding: 10px 20px;
+	  font-size: 14px;
+	  line-height: 1;
+	  border: 1px solid black;
+	}
+	
+	.button-primary {
+	  background: red;
+	  color: white;
+	}
 
 Vše musí být nezávislé na HTML elementech. Tzn. v CSS nepoužívat `input.button`, ale jen `.button`, protože nám programátor v HTML může `<input>` změnit na `<a>`, `<span>` nebo cokoliv jiného.
 
