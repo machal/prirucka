@@ -6,6 +6,8 @@ V praxi to vypadá tak, že si něco spustíte na příkazové řádce, ono vám
 
 Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojování do jednoho kvůli šetření requestů pro zvýšení rychlosti načítání. Nebo zpracování [preprocesorového](/blog/12-css-preprocesory-1) kódu do CSS či kompilace CoffeeScriptu do JavaScriptu. Zdá se vám to málo? Pak vězte, že [úloh jsou stovky](http://gruntjs.com/plugins) – a je docela snadné si napsat vlastní.
 
+<img class="picture" src="content/schemes/grunt.jpg" width="1000" height="575" alt="Grunt.js">
+
 Důvody proč mám Grunt rád nejlíp ukáže seznam úloh co využívám nebo se na to v nejbližší době chystám. 
 
 ## Grunt úlohy co využívám
@@ -38,11 +40,18 @@ Grunt je robot nevykleštěný. Umí toho daleko víc. Navíc jeho konfigurák (
 Popíšu to velice zjednodušeně. Více je [v dokumentaci Gruntu](http://gruntjs.com/getting-started).
 
 1. První co potřebujete je [instalace Node.js](http://nodejs.org/). Pak byste měli mít k dispozici instalátor Node balíčků, [npm](https://www.npmjs.org/).
-* Druhý krok je nainstalovat (jako administrátor) samotný Grunt: `npm install -g grunt-cli`
-* Jednotlivé Grunt úlohy ([pluginy](http://gruntjs.com/plugins)) se pak instalují jako další Node balíčky už do konkrétního adresáře. Třeba kompilátor LESSu takhle: `npm install grunt-contrib-less --save-dev`
-* V adresáři projektu se vám takhle vytvoří konfigurák se seznamem Node balíčků, které používáte — `packages.json`.
-* Teď už stačí jen nakonfigurovat Grunt úkoly. Dělá se to souborem `Gruntfile.js`, který byste si měli napsat sami. [Tady je popsaný víc](http://gruntjs.com/sample-gruntfile)
-* Když už tedy máte nainstalovaný Node, nainstalovaný Grunt, nainstalované Node balíčky pro Grunt úlohy a `Gruntfile` s konfigurací, můžete se Gruntu říct, aby vám zobrazil všechny dostupné příkazy: `grunt --help`.
+2. Druhý krok je nainstalovat (jako administrátor) samotný Grunt: `npm install -g grunt-cli`
+3. Jednotlivé Grunt úlohy ([pluginy](http://gruntjs.com/plugins)) se pak instalují jako další Node balíčky už do konkrétního adresáře. Třeba kompilátor LESSu takhle: `npm install grunt-contrib-less --save-dev`
+4. V adresáři projektu se vám takhle vytvoří konfigurák se seznamem Node balíčků, které používáte — `packages.json`.
+5. Teď už stačí jen nakonfigurovat Grunt úkoly. Dělá se to souborem `Gruntfile.js`, který byste si měli napsat sami. [Tady je popsaný víc](http://gruntjs.com/sample-gruntfile).
+6. Když už tedy máte nainstalovaný Node, nainstalovaný Grunt, nainstalované Node balíčky pro Grunt úlohy a `Gruntfile` s konfigurací, můžete se Gruntu říct, aby vám zobrazil všechny dostupné příkazy: `grunt --help`.
+
+Další materiál ke studiu v češtině:
+
+* [Láďa Prskavec](http://blog.prskavec.net/2012/09/grunt-dot-js/)
+* [Brus kódu s Riki Fridrichem](http://bruskodu.cz/epizoda/2/)
+* [Články na Zdrojáku](http://www.zdrojak.cz/n/grunt-js/)
+
 
 
 
