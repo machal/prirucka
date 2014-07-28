@@ -29,12 +29,12 @@ Nulový fallback
 ---------------
 
 	.box {
-	  color: red;
-	  transition: .5ms;
+		color: red;
+		transition: .5ms;
 	}
-	
+
 	.box:hover {
-	  color: darkred;
+		color: darkred;
 	}
 
 Tady se netrápíme tím, že starší prohlížeče nezvládají animaci pomocí [transition](css3-transitions.md), protože ty nám slouží k vylepšení uživatelského prožitku v moderních prohlížečích.

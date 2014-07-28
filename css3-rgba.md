@@ -22,8 +22,8 @@ Podpora v prohlížečích
 
 RGBa mají rády všechny prohlížeče kromě osmičky a starších MSIE. Elegantně si se stařečky poradíte definovaným fallbackem:
 
-	color: rgb(128, 0, 0); 
-	color: rgba(255, 0, 0, 0.5); 
+	color: rgb(128, 0, 0);
+	color: rgba(255, 0, 0, 0.5);
 
 V moderních browserech se zobrazí červená s padesátiprocentní průhledností. V IE8– pak tmavý odstín čevené. Fallback barvu musíme určit s ohledem na barvu pozadí. Tady počítáme s černou.
 

@@ -9,11 +9,11 @@ Technikálie
 -----------
 
 	border-image: 
-	  _zdrojovy_obrazek_
-	  _rozmery_rezu_
-	  _sirka_ramecku_
-	  _zacatek_rezu_  
-	  _opakovani_
+		_zdrojovy_obrazek_
+		_rozmery_rezu_
+		_sirka_ramecku_
+		_zacatek_rezu_  
+		_opakovani_
 
 Pozor, v aktuálním Firefoxu (ke dni psaní článku) vám vlastnost `border-image` nebude fungovat správně bez deklarování `border-width` na stejné rozměry jako `border-image-slice` a `border-style: solid`.
 

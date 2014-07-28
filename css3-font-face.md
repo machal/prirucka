@@ -5,7 +5,7 @@ Webové fonty nebo-li vlastní (nesystémové) fonty do stránky? Font Face je d
 
 Pokud začínáte, dejte si pozor hlavně na dvě věci:
 
-- Autorská práva. Ne každý font existuje ve verzi dovolující publikaci na webu. 
+- Autorská práva. Ne každý font existuje ve verzi dovolující publikaci na webu.
 - [Vykreslování na starších systémech][1]. Zkontrolujte, zda se font v dané velikosti vykresluje hezky i na Windows XP (hlavně v alternativních prohlížečích) a na starších verzích Androidu.
 
 Webdesign je z velké části typografie. Takže pokud jste ještě nezačali, hned si webfonty vyzkoušejte!
@@ -13,16 +13,16 @@ Webdesign je z velké části typografie. Takže pokud jste ještě nezačali, h
 Syntaxe
 -------
 
-    @font-face {
-      font-family: _nazev_rodiny_;
-      src: url(_cesta_k_souboru_s_pismem_) format(_format_souboru_);
-    }
+		@font-face {
+			font-family: _nazev_rodiny_;
+			src: url(_cesta_k_souboru_s_pismem_) format(_format_souboru_);
+		}
 
-    .element {
-        font-family: _nazev_rodiny_;
-    }
+		.element {
+				font-family: _nazev_rodiny_;
+		}
 
-Nejdřív v bloku `@font-face` nadeklarujete název rodiny a cestu k souboru. Pak název rodiny jednoduše zavoláte v běžném CSS. 
+Nejdřív v bloku `@font-face` nadeklarujete název rodiny a cestu k souboru. Pak název rodiny jednoduše zavoláte v běžném CSS.
 
 Téměř každý prohlížeč využívá trochu jiný formát. Ke dnešku známe [WOFF](http://caniuse.com/woff), [SVG font](http://caniuse.com/svg-fonts), [TTF/OTF](http://caniuse.com/ttf) a starší MSIE potřebují [EOT](http://caniuse.com/eot).
 
@@ -45,7 +45,7 @@ Kde najít fonty?
 
 Tyhle dvě služby zaměstnávají špičkové typografy i techniky a vlastní licence velmi dobrých i známých fontů. Budou po vás chtít nějaké peníze, ale vyhnete se spoustě problémů, které tady ani nezvládneme nastínit.
 
-Dobré je hledat přímo u typografů. V Česku nabízí dobré webfonty třeba [Tomáš Brousil][3] nebo [František Štorm][4]. 
+Dobré je hledat přímo u typografů. V Česku nabízí dobré webfonty třeba [Tomáš Brousil][3] nebo [František Štorm][4].
 
 ### Docela dobré alternativy: Google Fonts, Fontsquirrel, ...
 
@@ -61,10 +61,10 @@ Podpora v prohlížečích
 
 Není co řešit — `@font-face` podporuje Explorer od verze 4. Podporu musíte řešit, jen pokud v cílové skupině máte velké množství uživatelů s Androidem 2.1 a staršími, což je málo pravděpodobné.
 
-  [1]: http://blog.typekit.com/2010/10/15/type-rendering-operating-systems/
-  [2]: http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax
-  [3]: http://www.suitcasetype.com/
-  [4]: http://www.stormtype.com/
-  [5]: http://www.google.com/fonts/
-  [6]: http://www.fontsquirrel.com/
-  [7]: http://www.fontsquirrel.com/tools/webfont-generator
+	[1]: http://blog.typekit.com/2010/10/15/type-rendering-operating-systems/
+	[2]: http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax
+	[3]: http://www.suitcasetype.com/
+	[4]: http://www.stormtype.com/
+	[5]: http://www.google.com/fonts/
+	[6]: http://www.fontsquirrel.com/
+	[7]: http://www.fontsquirrel.com/tools/webfont-generator

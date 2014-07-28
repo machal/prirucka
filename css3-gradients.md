@@ -26,12 +26,12 @@ Rovnoměrný barevný přechod zezhora dolů uděláte takto:
 Používají se buď **klíčová slova** označující směr gradientu (`to bottom right`, `to right`) nebo **úhly**. Přednastavený je `180deg`. Úhel 0&deg; vede zezdola nahoru, 90&deg; zprava doleva [a tak dále](http://codepen.io/thebabydino/pen/qgoBL) po směru hodinových ručiček.
 
 	background: linear-gradient(45deg, lightgreen, darkgreen);
-	
+
 ### Zarážky barev
 
 Můžeme samozřejmě ovlivnit jak se nám jednotlivé barvy rozloží na ose průběhu přechodu. Slouží k tomu zarážky, definovatelné v běžných CSS jednotkách (`%`, `px`, `em` …). Je to stejná zarážka jakou znáte z práce s gradienty v grafických editorech.
 
-	background: linear-gradient(45deg, lightgreen, darkgreen 33%);  
+	background: linear-gradient(45deg, lightgreen, darkgreen 33%);
 
 Barevná zarážka pro tmavě zelenou barvu tady začíná na třetině délky osy gradientu:
 
@@ -45,19 +45,19 @@ Radiální přechod
 Nejjednodušší kruhový přechod vytvoříme například tímto zápisem:
 
 	.box-1 {
-		background: radial-gradient(lightgreen, darkgreen);  
-	}	
-	
+		background: radial-gradient(lightgreen, darkgreen);
+	}
+
 ### Tvar a velikost
 
-Přednastavený tvar přechodu je kružnice `circle`. Lze přenastavit na `ellipse`. 
+Přednastavený tvar přechodu je kružnice `circle`. Lze přenastavit na `ellipse`.
 
 Hned za tvarem je možné definovat velikost přechodu. První možnost je definovat **velikost jako poloměr**. U kružnice jedním, u elipsy dvěma čísly:
 
 	.box-2 {
 	  background: radial-gradient(ellipse 50px 30px, lightgreen, darkgreen);
 	}
-	
+
 Poznámka: aktuální verze specifikace [nedovoluje](http://dev.w3.org/csswg/css-images-3/#radial-size-circle) u kružnice nastavit rozměry s použitím procent. Divné, co?
 
 Druhá možnost je definovat **velikost klíčovým slovem**:
@@ -66,21 +66,21 @@ Druhá možnost je definovat **velikost klíčovým slovem**:
 * `farthest-side` – přechod bude končit u nejvzdálenější strany elementu
 * `closest-corner` – přechod bude končit u nejbližšího rohu elementu
 * `farthest-corner` – přechod bude končit u nejvzdálenějšího rohu elementu
-	
+
 ### Pozice středu
 
 Pozice středu barevného přechodu se definuje podobně jako u vlastnosti `background-position`. Je potřeba ji jen doplnit o klíčové slovo `at`:
 
 	.box-3 {
-		background: radial-gradient(at top left, lightgreen, darkgreen);  
-	}	
-	
+		background: radial-gradient(at top left, lightgreen, darkgreen);
+	}
+
 ### Zarážky barev
 
 Fungují podobně jako u lineárního přechodu. Do čtvrtiny rozměrů elementu prohlížeč vykreslí světle zelenou kružnici, mezi čtvrtinou a polovinou barevný přechod mezi světle a tmavě zelenou a ve zbytku elementu uvidíte tmavě zelenou:
 
 	.box-4 {
-		background: radial-gradient(lightgreen 25%, darkgreen 50%);  
+		background: radial-gradient(lightgreen 25%, darkgreen 50%);
 	}
 
 A tady je slibovaný příklad, kde si vše můžete prohlédnout a vyzkoušet rovnou v  prohlížeči:
@@ -101,7 +101,7 @@ V každém případě nezapomeňte pro starší prohlížeče nadefinovat fallba
 
 	background: darkgreen;
 	background: linear-gradient(lightgreen, darkgreen);
-	
+
 
 
 

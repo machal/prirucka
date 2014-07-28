@@ -2,7 +2,7 @@
 CSS3 Multi-column Layout
 ===============
 
-Vícesloupcová sazba. 
+Vícesloupcová sazba.
 
 Díky tomuto modulu text snadno nasázíte do více sloupců definované šířky podobně jako v novinové sazbě.
 
@@ -25,4 +25,4 @@ Definujeme šířku sloupce tak, aby se text dobře četl a šířku odsazení m
 Podpora v prohlížečích
 ----------------------
 
-IE10+. Starší prohlížeče doporučuji řešit tvrdým fallbackem — text se tam prostě jen nezalomí do sloupců. 
+IE10+. Starší prohlížeče doporučuji řešit tvrdým fallbackem — text se tam prostě jen nezalomí do sloupců.

@@ -14,15 +14,15 @@ Příklady využití
 Syntaxe
 -------
 
-    background-size:
-      (cover/contain)
-      _vertikalni_rozmer_
-      _horizontalni_rozmer_;
+	background-size:
+		(cover/contain)
+			_vertikalni_rozmer_
+			_horizontalni_rozmer_;
 
 Klíčové slovo `cover` zajistí, aby obrázek pokryl celou plochu boxíku kdežto `contain` obstará aby obrázek byl vidět celý:  
 
 <img class="picture" src="content/schemes/CSS3-background-size-cover-contain.png" width="700" height="394" alt="background-size: cover/contain">
-    
+	
 Pokud používáme [více obrázků na pozadí](css3-multiple-backgrounds.md), specifikace změn jejich velikostí opět oddělujeme čárkou — `background-size: 50% auto, auto`.
 
 

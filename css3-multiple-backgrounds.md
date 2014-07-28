@@ -8,20 +8,20 @@ Není to přímo CSS3 vlastnost, jen nová možnost již existující vlastnosti
 Syntaxe? Je to snadné, vrstvy oddělujeme čárkou:
 
 	background:
-	    url('obrazek_nahore.png'),
-	    url('obrazek_uprostred.png'),
-	    #ddccaa;
+			url('obrazek_nahore.png'),
+			url('obrazek_uprostred.png'),
+			#ddccaa;
 
 Pozadí před první čárkou je vždy vrstva nejvíc nahoře.
 
 Pokud nepoužijeme shorthand `background`, deklarace dalších vlastností obrázku na pozadí se pro jednotlivé vrstvy rovněž oddělují čárkou:
 
 	background-image:
-	    url('obrazek.png'),
-	    url('dalsi_obrazek.png');
+		url('obrazek.png'),
+		url('dalsi_obrazek.png');
 	background-repeat:
 		no-repeat,
-		repeat;		
+		repeat;
 
 
 Příklad k vyzkoušení
@@ -40,7 +40,6 @@ IE9+. Pozor, vlastnost `background` s vícenásobnou hodnotou je ignorována pok
 
 	background: #ddccaa;
 	background:
-	    url('obrazek_nahore.png'),
-	    url('obrazek_uprostred.png'),
-	    #ddccaa;
-
+			url('obrazek_nahore.png'),
+			url('obrazek_uprostred.png'),
+			#ddccaa;

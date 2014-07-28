@@ -13,9 +13,9 @@ Syntaxe
 -------
 
 Můžete je vložit přímo do CSS souboru:
-  
+
 	@media (_podminky_) {
-	  /* css kod, ktery se aplikuje jen po splneni _podminek_ */
+		/* css kod, ktery se aplikuje jen po splneni _podminek_ */
 	}
 
 Nebo do HTML na místě reference na CSS soubor:
@@ -27,11 +27,11 @@ Nebo do HTML na místě reference na CSS soubor:
 Klasický dotaz na média vypadá například takto:
 
 	@media (max-width: 480px) {
-	  .container { 
-	  	width: auto 
-	  }
+		.container {
+			width: auto
+		}
 	}
-	
+
 Deklaraci pro `.container` prohlížeč aplikuje, pokud šířka viewportu (prostoru pro stránku v okně prohlížeče) nepřesáhne 480 pixelů. Níže si to budete moci zkusit na příkladu.
 
 Alternativně lze použít dotaz na šířku displeje obrazovky: `@media (max-device-width: 480px)`. Narozdíl od `max-width` jej neočůráte změnou velikosti okna a tak toho někteří blázni začali využívat pro detekci typu zařízení. Je to blbost, malý nebo velký [tablet, smartphone či desktop od sebe šířkou okna nerozeznáte](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu).
@@ -53,7 +53,7 @@ Dotazy na média můžete kombinovat pomocí operátoru `and` řetězit jednak m
 Další možné operátory jsou negace (`not`). `or` neexistuje, používá se místo něj čárka:
 
 	@media (max-width: 400px), print { … }
-	
+
 Pokud chcete nějaký kus stylu zároveň schovat před prohlížečí, které CSS3 nerozumí, použíjte klíčové slovo `only`:
 
 	@media only screen { … }
@@ -62,14 +62,14 @@ Pokud chcete nějaký kus stylu zároveň schovat před prohlížečí, které C
 
 1. **Detekce vysokokapacitních displejů** typu [Retina](http://www.slideshare.net/machal/retina-displeje-pro-webdesignry)
 	`@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) { … }`
-2. **Detekce orientace zařízení.** Tak co, drží ho uživatel na výšku nebo na šířku?  
-`@media (orientation:portrait) { ... }`	
-3. **Detekce poměru stran obrazovky**  
+2. **Detekce orientace zařízení.** Tak co, drží ho uživatel na výšku nebo na šířku?
+`@media (orientation:portrait) { ... }`
+3. **Detekce poměru stran obrazovky**
 `@media screen and (device-aspect-ratio: 16/9) { ... }`
 
 To byly ty nejpoužívanější. Existuje jich ale [mnohem víc](http://www.opera.com/docs/specs/presto26/css/mediaqueries/).
-  
-      
+
+
 Příklad k vyzkoušení
 --------------------
 

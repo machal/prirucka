@@ -7,18 +7,18 @@ Podivná věc, která nás nutí psát jeden CSS kód vícekrát.
 Pojďme si to ukázat na příkladu. CSS3 transformaci otočením musíme aktuálně zapsat takhle:
 
 	.box {
-	  -webkit-transform: rotate(7.5deg);  /* Chrome, Safari 3.1+ */
-	     -moz-transform: rotate(7.5deg);  /* Firefox 3.5-15 */
-	      -ms-transform: rotate(7.5deg);  /* IE 9 */
-	       -o-transform: rotate(7.5deg);  /* Opera 10.50-12.00 */
-	          transform: rotate(7.5deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+		-webkit-transform: rotate(7.5deg); /* Chrome, Safari 3.1+ */
+		-moz-transform: rotate(7.5deg); /* Firefox 3.5-15 */
+		-ms-transform: rotate(7.5deg); /* IE 9 */
+		-o-transform: rotate(7.5deg); /* Opera 10.50-12.00 */
+		transform: rotate(7.5deg); /* Firefox 16+, IE 10+, Opera 12.10+ */
 	}
-	
-V komentářích jsou uvedené prohlížeče, které k datu vzniku tohoto článku podporují danou syntaxi.	
+
+V komentářích jsou uvedené prohlížeče, které k datu vzniku tohoto článku podporují danou syntaxi.
 
 **Na posledním místě vždy musí být neprefixovaná** (standardní) verze zápisu, i když ji aktuální verze prohlížečů nepodporují. Jednou budou. A když budou, implementace bezprefixové vlastnosti bude zřejmě lepší než prefixová. I proto   je nutné ji mít na závěr, přebíjí tu potenciálně starší.
 
-Typy prefixů 
+Typy prefixů
 ------------
 
 Říká se jim občas „vendor prefixy”. Vendor je dodavatel software, v tomto případě jádra prohlížeče.
@@ -27,7 +27,7 @@ Typy prefixů
 * `-moz`. Gecko je jádro za všemi verzemi Firefoxu.
 * Prefix `-ms` používá hádejte kdo… Micorosoft má svůj Trident.
 * Prefix `-o` se vztahuje k aktuálně již neexistujícímu jádru Opery jménem Presto.
-	
+
 
 Proč a jak prefixy vznikly
 --------------------------
@@ -49,7 +49,7 @@ Máte několik možností:
 3. **-prefix-free** Tzn. nechat si je generovat [javascriptem](http://leaverou.github.io/prefixfree/). Super pro testy nebo [fiddlátka](http://codepen.io/), ale na produkci? Určitě ne.
 4. **CSS preprocesory.** Určitě [ano](http://kratce.vzhurudolu.cz/post/56084086629/css-preprocesory)! Je [tady](http://lesshat.com/) [řada](http://bourbon.io/) [knihoven](http://visionmedia.github.io/nib/) co vám zajistí klidný spánek bez nočních můru o vendor prefixech.
 
-	
-	
-	
-	
+
+
+
+

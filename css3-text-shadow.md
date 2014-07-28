@@ -5,11 +5,11 @@ CSS3 Text Shadow
 Stínování textu.
 
 	text-shadow:
-	  _horizontalni_posun_
-	  _vertikalni_posun_
-	  (_rozostreni_)
-	  _barva_,
-	  (_dalsi_stiny_);
+		_horizontalni_posun_
+		_vertikalni_posun_
+		(_rozostreni_)
+		_barva_,
+		(_dalsi_stiny_);
 
 Podívejte se rovnou na příklad:
 

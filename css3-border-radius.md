@@ -13,24 +13,24 @@ Když v praxi Border Radius ochočíme, naučíme se například:
 Syntaxe
 -------
   
-    border-radius:  
-      _polomer_vpravo_nahore_  
-      _polomer_vpravo_dole_  
-      _polomer_vlevo_dole_  
-      _polomer_vlevo_nahore_  
-      (/ _elipsove_varianty_);
+	border-radius:  
+		_polomer_vpravo_nahore_  
+		_polomer_vpravo_dole_  
+		_polomer_vlevo_dole_  
+		_polomer_vlevo_nahore_  
+		(/ _elipsove_varianty_);
 
 Rovnoměrné zakulacení rohů s poloměrem 10 pixelů vyšvihneme takto:
 
-    border-radius: 10px;
+	border-radius: 10px;
 
 Zakulacovat ovšem můžeme i v procentech ze šířky elementu a dalších jednotkách dostupných v CSS. Zakulacovat můžeme **pro každý růžek zvlášť**. První je vždy levý horní a postupuje se po směru hodinových ručiček:
   
-    border-radius: 15% 15% 0 0;
+	border-radius: 15% 15% 0 0;
   
 Přidáním lomítka zajistíme **zakulacení ve tvaru elipsy**, nikoliv kružnice. První růžek bude zakulacený v elipse s vertikálním poloměrem 15% a horizontálním 30%:
 
-    border-radius: 15% 15% 0 0 / 30% 15% 0 0;
+	border-radius: 15% 15% 0 0 / 30% 15% 0 0;
 
 Na následujícím schématu je patrné jak se podle elipsy v praxi zakulacuje:
 
@@ -38,11 +38,11 @@ Na následujícím schématu je patrné jak se podle elipsy v praxi zakulacuje:
   
 Dobré vědět, že `border-radius` je ve skutečnosti zkratka pro deklaraci vlastností jednotlivých rohů. Můžeme je samozřejmě **nastavit samostatně**:
 
-    border-top-left-radius:     4em;  
-    border-top-right-radius:    4em;  
-    border-bottom-right-radius: 4em;  
-    border-bottom-left-radius:  4em;  
-    
+	border-top-left-radius:     4em;  
+	border-top-right-radius:    4em;  
+	border-bottom-right-radius: 4em;  
+	border-bottom-left-radius:  4em;  
+	
 Příklad k vyzkoušení
 --------------------
 
