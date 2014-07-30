@@ -20,8 +20,8 @@ Syntaxe
 Animaci si nejdřív nadefinujete pomocí at-rule (zavináčové funkce) `@keyframes`. Následně ji můžete kdekoliv zavolat a nastavit si podle libosti.
 
 	@keyframes _nazev_animace_ {
-	  _cas_ { _deklarace_vlastnosti_ }
-	  _cas_ { _deklarace_vlastnosti_ }
+		_cas_ { _deklarace_vlastnosti_ }
+		_cas_ { _deklarace_vlastnosti_ }
 	}
 
 	#example {

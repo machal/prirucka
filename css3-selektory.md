@@ -10,8 +10,8 @@ IE8+
 * `span[att^="val"]` – hodnota atributu `attr` začíná řetězcem “val”. Hojně využívají CSS frameworky pro tvorbu gridu. Třídy `.span1`, `.span2` atd. selektují takto: `span[class^="span"]`
 * `span[att$="val"]` – končí “val”.
 * `span[att*="val"]` – obsahuje “val”.
-* `p ~ ul` – mají stejného rodiče, ale nejsou vedle sebe jako u `p + ul`.
-  
+* `p ~ ul` – mají stejného rodiče, ale nejsou vedle sebe jako u `p + ul`.
+
 
 IE9+
 ----
@@ -26,4 +26,4 @@ IE9+
 * `:nth-child(n)`, `:nth-last-child(n)` – n-tý potomek od začátku nebo od konce, nejlépe se tenhle šílený (ale moc užitečný) selektor naučíte s pomocí [NthMaster](http://nthmaster.com/).
 * `:first-of-type`, `:last-of-type`, `:only-of-type` – první, poslední, jediný tohoto typu elementu, např `<p>`.
 
-  
+
