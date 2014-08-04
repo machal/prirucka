@@ -1,12 +1,12 @@
-CSS3 Background Clip
-====================
+CSS3 Background Clip – míra roztažení pozadí
+============================================
 
 Určuje kde všude se uvnitř elementu vykresluje obrázek na pozadí.
 
 Výchozí hodnota je…
 
 	background-clip: border-box;
-	
+
 …a znamená, že obrázek na pozadí se vykresluje i pod rámečkem elementu.
 
 Další možnosti:

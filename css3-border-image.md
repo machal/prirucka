@@ -1,18 +1,18 @@
-CSS3 Border Image
-=================
+CSS3 Border Image – rámeček vykreslený obrázkem
+===============================================
 
-Obrázkový rámeček. Způsob jak namísto nativních rámečků kolem elementu vykreslit pomocí obrázku naše vlastní.
+Způsob jak namísto nativních rámečků kolem elementu vykreslit pomocí obrázku naše vlastní.
 
 Vezmeme jakýkoliv [obrázek s rámečkem](http://www.vzhurudolu.cz/images/border-image-test.jpg) statických rozměrů a prohlížeči řekneme jak jej má naporcovat. Následuje kouzlo — rámeček se elegantně přizpůsobí šířce i výšce elementu.
 
 Technikálie
 -----------
 
-	border-image: 
+	border-image:
 		_zdrojovy_obrazek_
 		_rozmery_rezu_
 		_sirka_ramecku_
-		_zacatek_rezu_  
+		_zacatek_rezu_
 		_opakovani_
 
 Pozor, v aktuálním Firefoxu (ke dni psaní článku) vám vlastnost `border-image` nebude fungovat správně bez deklarování `border-width` na stejné rozměry jako `border-image-slice` a `border-style: solid`.
@@ -23,7 +23,7 @@ Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`. A 
 
 ### Rozměry řezů
 
-Právě touto hodnotou zdrojový obrázek naporcujeme tak, aby věděl kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku. 
+Právě touto hodnotou zdrojový obrázek naporcujeme tak, aby věděl kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku.
 
 Obsahuje čtyři čísla — řez horní, pravý, dolní a levý. Definovat lze v pixelech nebo v procentech ze zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
 
@@ -45,7 +45,7 @@ Rozměr specifikovaný v `border-image-outset` říká jak moc leze obrázkový 
 
 Jak bude prohlížeč pracovat s vertikální a horizontální stranou obrázkového rámečku? To můžeme nastavit v `border-image-repeat`. Možnosti jsou tyto:
 
-* `stretch` – roztažení 
+* `stretch` – roztažení
 * `repeat` – opakování
 * `round` – pokud plochu nevyplní celočíselný počet opakování, jednotlivá opakování se roztáhnou aby plochu vyplnila
 * `space` – pokud plochu nevyplní celočíselný počet opakování, zbývající plocha je spravedlivě rozdělena mezi všechna opakování

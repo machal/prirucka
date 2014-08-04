@@ -1,8 +1,5 @@
-
-CSS3 Multi-column Layout
-===============
-
-Vícesloupcová sazba.
+CSS3 Multi-column Layout – vícesloupcová sazba textu
+====================================================
 
 Díky tomuto modulu text snadno nasázíte do více sloupců definované šířky podobně jako v novinové sazbě.
 

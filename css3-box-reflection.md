@@ -1,8 +1,5 @@
-
-Box Reflection
-===============
-
-Odlesk elementu.
+Box Reflection – odlesk objektu
+===============================
 
 Pozor, není součástí specifikace CSS3. Webkit-only vlastnost, kterou nelze použít na široce dostupných webech, ale pro specifické aplikace pro omezenou cílovou skupinu se může hodit.
 

@@ -1,5 +1,5 @@
-CSS3 Transformace
-==================
+CSS3 Transforms – proměny objektu
+=================================
 
 Transformace tvaru objektu ve 2D i 3D prostoru pomocí CSS.
 

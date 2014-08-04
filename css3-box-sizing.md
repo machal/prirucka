@@ -1,4 +1,5 @@
-# CSS3 Box Sizing
+CSS3 Box Sizing – způsob počítání velikosti boxu
+===============================================
 
 Změna způsobu počítání šířky a výšky elementu, nebo-li box-modelu.
 

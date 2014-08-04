@@ -1,5 +1,5 @@
-CSS3 Flexbox
-============
+CSS3 Flexbox – layout pomocí pružných boxů
+==========================================
 
 Flexbox je úplně nový layoutovací modul.
 

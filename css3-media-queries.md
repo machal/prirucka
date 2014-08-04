@@ -1,8 +1,7 @@
+CSS3 Media Queries – podmíněné zobrazení pro média
+==================================================
 
-CSS3 Media Queries
-===========
-
-Dotazy na média. Určitá část CSS deklarací se aplikuje jen po splnění podmínek napsaných pomocí Media Queries.
+Určitá část CSS deklarací se aplikuje jen po splnění podmínek napsaných pomocí Media Queries.
 
 V praxi se používá zejména v responzivním webdesignu. Dotazy na média jsou jedním ze tří pilířů klasického responzivního webdesignu spolu s fluidním layoutem a fluidními médii.
 

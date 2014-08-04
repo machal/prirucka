@@ -1,5 +1,5 @@
-CSS3 Font Face
-==============
+CSS3 Font Face – vlastní fonty
+==============================
 
 Webové fonty nebo-li vlastní (nesystémové) fonty do stránky? Font Face je dnes už standardní technika s takřka plnou podporou v prohlížečích, které se z technického pohledu není potřeba bát.
 

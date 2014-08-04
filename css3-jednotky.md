@@ -1,7 +1,6 @@
 Jednotka 'rem'
 ============
 
-
 Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. Jsou to *root-emka*, tedy varianta známé jednotky `em`, která nevychází z velikosti fontu rodičovského elementu.
 
 Příklad to vysvětlí lépe:

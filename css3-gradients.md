@@ -1,7 +1,5 @@
-CSS3 Gradients
-==============
-
-Gradienty nebo-li barevné přechody.
+CSS3 Gradients – barevné přechody
+=================================
 
 Nová možnost definice barvy a způsob jak použít nativní barevný přechod kdekoliv kde jsme dosud používali obrázek. Tedy ve vlastnostech `background-image` a `list-style-image`.
 
