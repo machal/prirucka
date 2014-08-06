@@ -1,17 +1,9 @@
 CSS3 Animations – plnohodnotné animace
 ======================================
 
-Možná se  budete divit, ale tohle jsou první pořádné nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který pro tento účel nebyl navržen — javascriptem.
+Možná se  budete divit, ale tohle jsou první nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který pro tento účel nebyl navržen — javascriptem.
 
-Jak se liší od [transitions](css3-transitions.md)? Jednoduše — jen `animation` jsou plnohodnotný animační nástroj. V `animation` máte celou animaci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. `transition` jsou určené vyloženě pro jednoduché animované přechody změny stavu CSS vlastnosti.
-
-Příklady
---------
-
-* Jednoduchá animace [pokličky na hrncem](http://www.scuk.cz/kurzy/) na Scuk kurzech. (V IE9- se neanimuje, jen se posune.)
-* [Kolovrátek](http://dabblet.com/gist/1689261) nebo-li preloader. Tady pak článek  o [výhodách z pohledu spravovatelnosti kódu](http://kratce.vzhurudolu.cz/post/17279304470/spravovatelnost-css3).
-* Vyšší dívčí – malý film [Madmanimation](http://stuffandnonsense.co.uk/content/demo/madmanimation/) zpracovaný v CSS3 animacích.
-* A opravdová animace dokazující, že bez Flashe se pro animace v budoucnu obejdeme. (Jen to bude chvílí trvat.) [Běžící kočka](http://codepen.io/rachelnabors/pen/rCost). Tady je k ní [tutoriál](http://24ways.org/2012/flashless-animation/).
+Jak se liší od [transitions](css3-transitions.md)? V animacích (`animation`) máte celou akci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. Přechody (`transition`) jsou určené jen pro jednoduché animované přechody změny stavu CSS vlastnosti.
 
 
 Syntaxe
@@ -50,7 +42,7 @@ Nastavíte ve vteřinách (`.5s`) nebo v milisekundách (`500ms`). Výchozí hod
 ### `animation-timing-function` – časová funkce průběhu
 
 
-Podobně jako u [transition](css3-transitions.md), lze využít funkce přednastavené nebo definovat vlastní, například nástrojem [Ceaser](http://matthewlein.com/ceaser/). Samostatný zápis a výchozí hodnota vypadá takto: `animation-timing-function: ease`.
+Podobně jako u [transition](css3-transitions.md), lze využít funkce přednastavené nebo definovat vlastní. Samostatný zápis a výchozí hodnota vypadá takto: `animation-timing-function: ease`.
 
 ### `animation-delay` – zpoždění startu
 
@@ -86,33 +78,95 @@ Vlastnost, která jako jediná není součástí zkratky animation a je třeba j
 
 Definují začátek (klíčové slovo `from` nebo `0%`), průběh (pomocí procent z průběhu) a konec (`to` nebo `100%`) animace. Přechod mezi jednotlivými keyframes vypočítá prohlížeč sám. Začátek a konec je potřeba nastavit vždy, počet keyframes mezi nimi neni nijak limitovaný.
 
-Příklady k vyzkoušení
+Animace na příkladech
 ---------------------
 
-Na tomhle jednoduchém příkladu si vyzkoušejte úplné základy. Elementu v nekonečné smyčce měníme opacity:
+### První: blikající box
 
-<p data-height="158" data-theme-id="502" data-slug-hash="pKodf" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/pKodf'>CSS animace</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+Na tomhle jednoduchém příkladu si vyzkoušejte úplné základy CSS animování. Elementu v nekonečné smyčce měníme opacity po najetí myši.
 
-Druhý příklad je pokročilejší. Řetězíme v něm dvě různé animace, využíváme směr průběhu a další:
+Nejdřív si pomocí `@keyframes` nadefinujeme průběh animace:
 
-<p data-height="167" data-theme-id="502" data-slug-hash="xipAj" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/xipAj'>CSS3 animace: pokročilejší</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+	@keyframes my_blink_animation {
+		0% { opacity: 1; }
+		50% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+Pod názvem `my_blink_animation` jsme si tedy nadefinovali animaci, která objektu na začátku nastaví plnou poloprůhlednost (`opacity`). V polovině (`50%`) času průběhu animaci pak nulovou poloprůhlednost a na konci průběhu opět plnou poloprůhlednost. Lidově řečeno — bude to blikat.
 
-Tipy a triky
-------------
+Animaci pak na element aplikujeme ve chvíli kdy jej uživatel aktivuje najetím myši nebo všemi možnými alternativními způsoby:
 
-* Ve Webkit prohlížečích můžete při spouštění animace někdy sledovat nepříjemné probliknutí celé stránky. Pomáhá vynucené [zapnutí hardwarové akcelerace](http://www.html5rocks.com/en/tutorials/speed/html5/#transanim). Například takto `.animovany_element { -webkit-transform: translateZ(0); }`
+	.example:hover,
+	.example:focus,
+	.example:active {
+		animation: my_blink_animation 1s infinite;
+	}
+
+Má se provést animace s názvem `my_blink_animation`, trvat přesně jednu vteřinu a mít nekonečný (`infinite`) počet opakování.
+
+Příklad je k vyzkoušení na [codepen.io/machal/pen/pKodf](http://codepen.io/machal/pen/pKodf). Vyzkoušejte, ale prosím vás, v praxi to blikání raději moc nepoužívejte! :-)
+
+### Druhý: Řetězení animací
 
 
-Zajímavé odkazy
----------------
+Druhý příklad je pokročilejší. Řetězíme v něm dvě různé animace, využíváme směru průběhu a dalších metod, které jsme se naučili v předchozím textu.
 
-- Materiál o animacích na [NetMagazine](http://www.netmagazine.com/tutorials/masterclass-css-animations).
-- Pokud potřebujete snadno nastavit dráhu animovaného objektu, mrkněte na animační nástroj [Stylie](http://jeremyckahn.github.io/stylie/).
+Rovnou si obě animace nadefinujeme:
+
+	@keyframes rotate {
+		to {
+			transform: rotate(45deg);
+		}
+	}	
+	
+	@keyframes pulse {
+		to {
+			transform: scale(1.2);	
+		}		
+	}
+
+Pokud jste si přečetli text o [transformacích](css3-transforms.md), víte, že animace `rotate` otočí element o 45 stupňů doprava a animace `pulse` jej zvětší o 20%. Všimněte si, že nemusíme deklarovat výchozí stav (`from` nebo `0%`), prostě se vezmou CSS deklarace, které element má ve chvíli kdy animaci aplikujeme.
+
+Teď animace aplikujeme na uživatelské aktivování elementu. Chceme, aby nejdříve vteřinu proběhla animace `move` a pak animace `pulse`, navíc s vteřinovým zpožděním od začátku animace předchozí.
+
+	.element:hover,
+	.element:focus,
+	.element:active {
+		animation: 
+			rotate 250ms, 
+			pulse 500ms 1s infinite;
+	}
+
+Jenže takhle to nebude fungovat 
+
+TODO!
+
+Příklad je k vyzkoušení na [codepen.io/machal/pen/xipAj](http://codepen.io/machal/pen/xipAj).
+
+
+Tipy, triky, odkazy
+--------------------
+
+Ve Webkit prohlížečích můžete při spouštění animace někdy sledovat nepříjemné probliknutí celé stránky. Pomáhá vynucené zapnutí **hardwarové akcelerace**. Například: `.animovany_element { -webkit-transform: translateZ(0); }` *TODO* 
+
+**Běžící kočka od Rachel Nabors.** Užasná animace dokazující, že bez Flashe se pro animace v budoucnu obejdeme. (Jen to bude chvílí trvat.)  – [codepen.io/rachelnabors/pen/rCost](http://codepen.io/rachelnabors/pen/rCost) + [24ways.org/2012/flashless-animation/](http://24ways.org/2012/flashless-animation/)
+
+Pokud potřebujete snadno **nastavit dráhu animovaného objektu**, mrkněte na  nástroj Stylie – [jeremyckahn.github.io/stylie/](http://jeremyckahn.github.io/stylie/)
+
+Nástroj Ceaser vám umožní nadefinovat **vlastní časovou funkci průběhu animace** – [matthewlein.com/ceaser/](http://matthewlein.com/ceaser/).
+
+**Pokročilý tutoriál k CSS3 animacím** – [netmagazine.com/tutorials/masterclass-css-animations](http://www.netmagazine.com/tutorials/masterclass-css-animations).
 
 
 Podpora v prohlížečích
 ----------------------
 
-CSS3 animace nepodporuje IE9 a starší. Animace tedy můžete buď využít jako drobná estetická vylepšení uživatelského rozhraní v moderních prohlížečích nebo s pomocí detekce vlastností ve starších prohlížečích animovat jiným způsobem.
+CSS3 animace nepodporuje například IE9 a starší: [caniuse.com/#feat=css-animation](http://caniuse.com/#feat=css-animation)
+
+Strategii podpory starších prohlížečů je dobré zvolit podle typu animace. 
+
+V případě **vylepšujících animací** (drobná i větší estetické drobnosti v uživatelském rozhraní, u kterých uživateli nevadí, že neproběhnou) není důvod tvořit alternativní řešení.
+
+Pokud **animace nese informaci** (například indikátor stavu načítání uživatelem vloženého souboru), pak je nutné nahradit CSS3 animaci javascriptem nebo detekovat prohlížeče, jež CSS3 animace neovládají a alternativu nabídnout jen jim.
+
