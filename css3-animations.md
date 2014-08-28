@@ -78,93 +78,13 @@ Vlastnost, která jako jediná není součástí zkratky animation a je třeba j
 
 Definují začátek (klíčové slovo `from` nebo `0%`), průběh (pomocí procent z průběhu) a konec (`to` nebo `100%`) animace. Přechod mezi jednotlivými keyframes vypočítá prohlížeč sám. Začátek a konec je potřeba nastavit vždy, počet keyframes mezi nimi neni nijak limitovaný.
 
-Animace na příkladech
----------------------
-
-### První: blikající box
-
-Na tomhle jednoduchém příkladu si vyzkoušejte úplné základy CSS animování. Elementu v nekonečné smyčce měníme opacity po najetí myši.
-
-Nejdřív si pomocí `@keyframes` nadefinujeme průběh animace:
-
-	@keyframes my_blink_animation {
-		0% { opacity: 1; }
-		50% { opacity: 0; }
-		100% { opacity: 1; }
-	}
-	
-Pod názvem `my_blink_animation` jsme si tedy nadefinovali animaci, která objektu na začátku nastaví plnou poloprůhlednost (`opacity`). V polovině (`50%`) času průběhu animaci pak nulovou poloprůhlednost a na konci průběhu opět plnou poloprůhlednost. Lidově řečeno — bude to blikat.
-
-Animaci pak na element aplikujeme ve chvíli kdy jej uživatel aktivuje najetím myši nebo všemi možnými alternativními způsoby:
-
-	.example:hover,
-	.example:focus,
-	.example:active {
-		animation: my_blink_animation 1s infinite;
-	}
-
-Má se provést animace s názvem `my_blink_animation`, trvat přesně jednu vteřinu a mít nekonečný (`infinite`) počet opakování.
-
-Příklad je k vyzkoušení na [codepen.io/machal/pen/pKodf](http://codepen.io/machal/pen/pKodf). Vyzkoušejte, ale prosím vás, v praxi to blikání raději moc nepoužívejte! :-)
-
-### Druhý: Řetězení animací
-
-
-Druhý příklad je pokročilejší. Řetězíme v něm dvě různé animace, využíváme směru průběhu a dalších metod, které jsme se naučili v předchozím textu.
-
-Rovnou si obě animace nadefinujeme:
-
-	@keyframes rotate {
-		to {
-			transform: rotate(45deg);
-		}
-	}	
-	
-	@keyframes pulse {
-		to {
-			transform: scale(1.2);	
-		}		
-	}
-
-Pokud jste si přečetli text o [transformacích](css3-transforms.md), víte, že animace `rotate` otočí element o 45 stupňů doprava a animace `pulse` jej zvětší o 20%. Všimněte si, že nemusíme deklarovat výchozí stav (`from` nebo `0%`), prostě se vezmou CSS deklarace, které element má ve chvíli kdy animaci aplikujeme.
-
-Teď animace aplikujeme na uživatelské aktivování elementu. Chceme, aby nejdříve vteřinu proběhla animace `move` a pak animace `pulse`, navíc s vteřinovým zpožděním od začátku animace předchozí.
-
-	.element:hover,
-	.element:focus,
-	.element:active {
-		animation: 
-			rotate 250ms, 
-			pulse 500ms 1s infinite;
-	}
-
-Jenže takhle to nebude fungovat 
-
-TODO!
-
-Příklad je k vyzkoušení na [codepen.io/machal/pen/xipAj](http://codepen.io/machal/pen/xipAj).
-
-
-Tipy, triky, odkazy
---------------------
-
-Ve Webkit prohlížečích můžete při spouštění animace někdy sledovat nepříjemné probliknutí celé stránky. Pomáhá vynucené zapnutí **hardwarové akcelerace**. Například: `.animovany_element { -webkit-transform: translateZ(0); }` *TODO* 
-
-**Běžící kočka od Rachel Nabors.** Užasná animace dokazující, že bez Flashe se pro animace v budoucnu obejdeme. (Jen to bude chvílí trvat.)  – [codepen.io/rachelnabors/pen/rCost](http://codepen.io/rachelnabors/pen/rCost) + [24ways.org/2012/flashless-animation/](http://24ways.org/2012/flashless-animation/)
-
-Pokud potřebujete snadno **nastavit dráhu animovaného objektu**, mrkněte na  nástroj Stylie – [jeremyckahn.github.io/stylie/](http://jeremyckahn.github.io/stylie/)
-
-Nástroj Ceaser vám umožní nadefinovat **vlastní časovou funkci průběhu animace** – [matthewlein.com/ceaser/](http://matthewlein.com/ceaser/).
-
-**Pokročilý tutoriál k CSS3 animacím** – [netmagazine.com/tutorials/masterclass-css-animations](http://www.netmagazine.com/tutorials/masterclass-css-animations).
-
 
 Podpora v prohlížečích
 ----------------------
 
 CSS3 animace nepodporuje například IE9 a starší: [caniuse.com/#feat=css-animation](http://caniuse.com/#feat=css-animation)
 
-Strategii podpory starších prohlížečů je dobré zvolit podle typu animace. 
+Strategii podpory starších prohlížečů je dobré zvolit podle typu animace.
 
 V případě **vylepšujících animací** (drobná i větší estetické drobnosti v uživatelském rozhraní, u kterých uživateli nevadí, že neproběhnou) není důvod tvořit alternativní řešení.
 
