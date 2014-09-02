@@ -119,28 +119,31 @@ Nezapomeňte tedy vždy definovat fallback. Gradient se považuje za obrázek na
 
 Dnes už to takový problém není, ale každý prohlížeč v různých fázích vývoje implementoval různé fáze vývoje specifikace. Nebo vlastní návrh syntaxe. Takže pokud chcete podporovat i starší verze moderních prohlížečů, věnujte zvýšenou pozornost prefixovým variantám. 
 
-Dobré ale je, že se poslední verze všech prohlížečů shodují na W3 syntaxi, kterou používáme v příkladech. A bez prefixů!
-
 Pokud někde chcete plně podporovat starší Chrome, Safari do verze 5, iOS Safari do verze 4, Android Browser do verze 3 a dalších několik prohlížečů, musíte použít jejich starší syntaxi. Jen pozor, liší se nejen prefixem, ale také způsobem zápisu. Například směr osy se určuje deklarováním růžku nebo strany ze které gradient začíná:
 
 	background-image: -webkit-linear-gradient(top, lightgreen, green); 
 
+Tohle ale není moc velký problém. Poslední verze všech prohlížečů shodují na W3 syntaxi, kterou používáme v příkladech. A bez prefixů!
 
-### `filter` v IE8 a starších
 
+### `filter` v IE8 a IE9
+
+Jednoduché dvoubarevné lineární gradienty lze ve starších Explorerech zařídit s pomocí proprietární vlastností filter:
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00ff00, endColorstr=#008800)";
+	
+V parametru `GradientType` nastavujete vertikální (`0`) nebo horizontální (`1`) směr gradientu. U filtrů jen pozor na pomalejší vykreslování a na fakt, že `background-image` účinnost filtrů ruší.
 	
 	
 Tipy a triky
 -------
 
-Škála možností využítí leze ze základní škatulky „gradient mezi barvou A a B” hlavně těmito směry:
-
-* [Tlačítka](http://codepen.io/leviflair/pen/zFoKm), [tlačítka](http://cubiq.org/dropbox/cssgrad.html), [tlačítka](http://codepen.io/simurai/pen/DwJdq)
-* [Patterny](http://lea.verou.me/css3patterns/), [patterny](http://css3pie.com/demos/gradient-patterns/), [patterny](http://codepen.io/aleprieto/pen/nAmIy)
-* Patterny často využívají tzv. [ostrý přechod](http://codepen.io/machal/pen/licEd), což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana.	   background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);  
-* TODO `list-style-image`
-* TODO [ColorZilla Gradient Editor](http://www.colorzilla.com/gradient-editor/)
-
+1. Nezapomeňte, že gradient je vlastně obrázek na pozadí elementu, takže je můžete použít pro definování obrázku odrážky (`list-style-image`) nebo pro obrázek na pozadí rámečku ([border-image](css3-border-image.md)).
+* CSS tlačítka. Nejobvyklejší netriviální použití gradientů. [cubiq.org/dropbox/cssgrad.html](http://cubiq.org/dropbox/cssgrad.html)
+* Takřka vědecké povídání o gradientech. Ana Tudor jde na následujícím odkazu pořádně do hloubky a na pomoci si. [hugogiraudel.com/2013/02/04/css-gradients/](http://hugogiraudel.com/2013/02/04/css-gradients/)
+* ColorZilla Gradient Editor vám pomůže vygenerovat kód gradientu i pro starší prohlížeče, včetně fallbacku pro IE8 a IE9. [colorzilla.com/gradient-editor/](http://colorzilla.com/gradient-editor/)
+* Lea Verou má hezkou galerii barevných vzorů vytvořených jen s pomocí gradientů. [lea.verou.me/css3patterns](http://lea.verou.me/css3patterns)
+* Právě barevné vzory často využívají tzv. ostrý přechod, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana. `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);  [cdpn.io/e/licEd](http://cdpn.io/e/licEd)
 
 
 
