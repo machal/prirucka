@@ -3,7 +3,7 @@ Nové CSS3 jednotky – `rem`, `vw`, `vh`
 
 ### `rem`
 
-Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. Jsou to *root-emka*, tedy varianta známé jednotky `em`. Od běžných `em` se liší tím, že nevychází z velikosti fontu rodičovského elementu.
+Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. „*root-emka*” jsou variantou známé jednotky `em`. Od běžných `em` se liší tím, že nevychází z velikosti fontu rodičovského elementu.
 
 Velikost písma pro `<html>` element je v prohlížečích obvykle nastavená tak, aby odpovídala `16px`. 
 
@@ -47,10 +47,10 @@ Více o podpoře v prohlížečích: [caniuse.com/rem](http://caniuse.com/rem)
 
 Umožňují definovat rozměry v CSS relativně k velikosti viewportu, zjednodušeně řečeno výšce nebo šířce okna.
 
-* `vw` – zkratka pro „viewport width” a `1vw` označuje setinu šířky viewportu
-* `vh` – zkratka pro „viewport height” a `1vh` označuje setinu výšky viewportu
-* `vmin` – zkratka pro „viewport minimum” a reprezentuje menší hodnotu z porovnání `1vw` a `1vh`
-* `vmax` – zkratka pro „viewport maxinum” a reprezentuje větší hodnotu z porovnání `1vw` a `1vh`
+* `vw` – zkratka pro „viewport width”; `1vw` označuje setinu šířky viewportu
+* `vh` – zkratka pro „viewport height”; `1vh` označuje setinu výšky viewportu
+* `vmin` – zkratka pro „viewport minimum”; reprezentuje menší hodnotu z porovnání `1vw` a `1vh`
+* `vmax` – zkratka pro „viewport maxinum”; reprezentuje větší hodnotu z porovnání `1vw` a `1vh`
 
 ### Příklad praktického využití
 
@@ -67,13 +67,10 @@ V posledních verzích umí všechny moderní prohlížeče kromě Opery Mini. [
 
 Je to ovšem trochu složitější:
 
-* IE8, Android Browser až do verze 4.3 a Opera Mini tyto jednotky neumí vůbec.
 * IE9 namísto `vmin` používá `vm`.
 * IE10 neumí `vmax`.
 * Safari na iOS6+7 má hned několik chyb souvisejících s jednotkami viewportu.  Sledujte odkazy na [caniuse.com/viewport-units](http://caniuse.com/viewport-units).
-
-
-
+* IE8, Android Browser až do verze 4.3 a Opera Mini tyto jednotky neumí vůbec.
 
 
 
