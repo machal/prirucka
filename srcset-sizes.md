@@ -57,7 +57,7 @@ Nojo, jenže v responzivním, potažmo fluidním layoutu obvykle přesně nevím
 
 Opět tedy máme [demo na CodePenu](http://codepen.io/machal/pen/azBmaX?editors=110). Nejdříve si ale raději pojďme vizualizovat jak vlastně náš layout vypadá:
 
-![image alt text](image_1.png)
+<img class="picture" src="content/schemes/rwd-images-scenare.jpg" width="700" height="394" alt="Layout příkladu pro demonstraci srcset/sizes">
 
 Do `600px` breakpointu je to jednoduché – obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna a tak musíme odečíst výchozí `margin` u `<body>`, který mají prohlížeče nastavený na `8px`:
 

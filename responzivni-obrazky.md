@@ -24,7 +24,7 @@ Neexistuje totiž způsob jak prohlížeč odradit od stažení obrázku nalinko
 
 Holky a kluci v RICG si sedli a [vymysleli 9 scénářů](http://usecases.responsiveimages.org/#use-cases) kdy je potřeba jeden obrázek reprezentovat různými variantami. My si tady ale budeme povídat jen o těch nejdůležitějších:
 
-![image alt text](image_0.png)
+<img class="picture" src="content/schemes/rwd-obrazky-priklad-layout.jpg" width="700" height="394" alt="Scénáře pro nasazení responzivních obrázků">
 
 1. Výběr varianty obrázku podle velikosti okna prohlížeče.
 2. Výběr varianty podle velikosti obrázku v rámci layoutu stránky. V některých situacích totiž můžeme na větším displeji potřebovat menší obrázky. Srovnejte layout pro mobil a tablet na obrázku.
