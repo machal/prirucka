@@ -62,10 +62,13 @@ Ve většině případů si asi vystačíte se `srcset` a `sizes`, nový tag `<p
 
 Prakticky všechny prohlížeče ústy svých tvůrců deklarovaly, že tento standard naimplementují. Ano, [včetně Internet Exploreru](http://blogs.msdn.com/b/ie/archive/2014/12/08/status-roadmap-update-srcset-lt-main-gt-element-and-date-inputs-in-development.aspx), ptáte se správně. Jenže jim bude chvíli trvat než to udělají. Nativní podpora je k dispozici [v posledních verzích Chrome, Opeře a zčásti Safari](http://caniuse.com/#feat=srcset). Do té doby – a samozřejmě kvůli starším prohlížečům – je potřeba používat polyfill [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill). Ten má jistá omezení, ale ve většině případů vám pomůže s výběrem správné varianty obrázku už nyní, takže se zkoušením není potřeba váhat.
 
+
 ## Další zdroje ke studiu
 
-* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [<picture>](http://www.vzhurudolu.cz/prirucka/picture), [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill)
+* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [picture](http://www.vzhurudolu.cz/prirucka/picture), [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill)
 * [Dev.Opera: Scénáře použítí responzivních obrázků ](https://dev.opera.com/articles/responsive-images/)(anglicky)
-* Přednášky Robina Pokorného: [úvod do problému](https://www.youtube.com/watch?v=PG2SZQjqKtw), [problém a základní řešení](https://www.youtube.com/watch?v=3yzl4XG1524) a [problém a pokročilé řešení](https://www.youtube.com/watch?v=vmj7tCBVJ6w) responzivní obrázky.
 * [Generátor variant obrázků](https://github.com/andismith/grunt-responsive-images) pro [Grunt](http://www.vzhurudolu.cz/prirucka/grunt). 
 * [Compressive Images](http://www.filamentgroup.com/lab/compressive-images.html), alternativní technika pokud řešíte problém s device-pixel-ratio a datovým objemem na pomalých připojeních.
+
+
+*Za cenné připomínky k materiálu o responzivních obrázcích autor děkuje [Robinovi Pokornému](http://robinpokorny.com/). Podívejte se na Robinovy přednášky o tomhle tématu: [úvod do problému responzivních obrázků](https://www.youtube.com/watch?v=PG2SZQjqKtw), [problém a základní řešení](https://www.youtube.com/watch?v=3yzl4XG1524) a [problém a pokročilé řešení](https://www.youtube.com/watch?v=vmj7tCBVJ6w).*

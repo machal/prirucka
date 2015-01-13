@@ -6,11 +6,11 @@ Na atributech `srcset` a `sizes` je hezké, že poměrně složité rozhodován�
 
 ## `srcset` – sada zdrojů obrázku a jejich vlastností
 
-```
-<img src="small.png" 
-srcset="small.png 600w, medium.png 1024w, large.png 1600w**"
-alt="Obrázek" width="200" height="200">
-```
+<pre><code>
+&lt;img src=&quot;small.png&quot; 
+<strong>srcset=&quot;small.png 600w, medium.png 1024w, large.png 1600w&quot;</strong>
+alt=&quot;Obr&aacute;zek&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;	
+</code></pre>
 
 [srcset demo na CodePen](http://codepen.io/machal/pen/WboGgE?editors=100). (V demu jsme použili polyfill Picturefill, takže funguje ve všech prohlížečích, ale možná jste si všimli [nepřítomnosti atributu src](http://www.vzhurudolu.cz/prirucka/picturefill#picturefill-2).)
 
@@ -42,12 +42,13 @@ Pojďme se ale podívat na atribut, který prohlížeči umožní vybírat nejen
 
 V praxi totiž tak často nepotřebujeme volit obrázek podle šířky okna, ale podle šířky obrázku v rámci layoutu:
 
-```
-<img src="small.png" 
-srcset="small.png 600w, medium.png 1024w, large.png 1600w"
-sizes="(min-width: 768px) 300px, 100vw"
-alt="Obrázek" width="200" height="200">
-```
+<pre><code>
+&lt;img src=&quot;small.png&quot; 
+srcset=&quot;small.png 600w, medium.png 1024w, large.png 1600w&quot;
+<strong>sizes=&quot;(min-width: 768px) 300px, 100vw&quot;</strong>
+alt=&quot;Obr&aacute;zek&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;	
+</code></pre>
+
 
 Tímto zápisem říkáme, že responzivní layout je vymyšlený tak, že v rozlišeních nad 768 pixelů má obrázek šířku 300 pixelů ve všech ostatních pak 100 [procent šířky viewportu](http://snook.ca/archives/html_and_css/vm-vh-units). 
 
@@ -89,19 +90,19 @@ A ještě v prostém jazyce:
 
 Takže celý zápis tagu `<img>` bude vypadat takto:
 
-```
-<img src="small_600.png" 
-srcset="small_600.png 600w, medium_1024.png 1024w, large_1600.png 1600w" 
-sizes="(min-width: 600px) calc((100vw - 2*8px) * 0.49), calc(100vw - 2*8px)"
-alt="Obrázek" width="200" height="200">
-```
+<pre><code>
+&lt;img src=&quot;small_600.png&quot; 
+srcset=&quot;small_600.png 600w, medium_1024.png 1024w, large_1600.png 1600w&quot; 
+<strong>sizes=&quot;(min-width: 600px) calc((100vw - 2*8px) * 0.49), calc(100vw - 2*8px)&quot;</strong>
+alt=&quot;Obr&aacute;zek&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;	
+</code>	</pre>
 
 Pojďme si pro jistotu ještě shrnout zápis v `sizes`:
 
 1. na rozlišeních od 600 pixelů bude mít obrázek velikost `calc((100vw - 2 * 8px) * 0.49)`
 2. ve všech ostatních případech – to znamená do 599 pixelů pak `calc(100vw - 2 * 8px)`
 
-[srcset & sizes demo na CodePenu](http://codepen.io/machal/full/azBmaX?editors=110). (V demu jsme použili polyfill Picturefill, takže funguje ve všech prohlížečích, ale možná jste si všimli [nepřítomnosti atributu src](http://www.vzhurudolu.cz/prirucka/picturefill#picturefill-2).)
+[srcset &amp; sizes demo na CodePenu](http://codepen.io/machal/full/azBmaX?editors=110). (V demu jsme použili polyfill Picturefill, takže funguje ve všech prohlížečích, ale možná jste si všimli [nepřítomnosti atributu src](http://www.vzhurudolu.cz/prirucka/picturefill#picturefill-2).)
 
 Se `srcset` a `sizes` si vystačíte v naprosté většině situací kdy budete potřebovat sáhnout po řešení responzivních obrázků. 
 
