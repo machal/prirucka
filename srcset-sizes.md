@@ -26,9 +26,9 @@ Ano, přesně v potenciálu chytrého rozhodování prohlížeče vězí krása 
 
 ## Deskriptory vlastností obrázků v `srcset`
 
-Zatím jsme zmínili jen šířku obrázku – **deskriptor ****`w**.` Ten říká jakou šířku v pixelech obrázek má při exportu z grafického editoru nebo po výstupu z vašeho skriptu.
+Zatím jsme zmínili jen šířku obrázku – **deskriptor `w`**. Ten říká jakou šířku v pixelech obrázek má při exportu z grafického editoru nebo po výstupu z vašeho skriptu.
 
-Druhý **deskriptor ****`**x` určuje připravenost souboru s obrázkem pro různé `device-pixel-ratio` poměry, například:
+Druhý **deskriptor `x`** určuje připravenost souboru s obrázkem pro různé `device-pixel-ratio` poměry, například:
 
 ```
 <img … srcset="image.jpg, image@2x.jpg 2x">
@@ -106,11 +106,11 @@ Pojďme si pro jistotu ještě shrnout zápis v `sizes`:
 
 Se `srcset` a `sizes` si vystačíte v naprosté většině situací kdy budete potřebovat sáhnout po řešení responzivních obrázků. 
 
-Pokud budete potřebovat servírovat zcela jinak vypadající obrázky pro různá rozlišení (scénář [art direction](http://usecases.responsiveimages.org/#h-art-direction)) nebo obrázky [v různých souborových formátech](http://usecases.responsiveimages.org/#h-image-formats), sáhněte po novém tagu [<picture>](#TODO).
+Pokud budete potřebovat servírovat zcela jinak vypadající obrázky pro různá rozlišení (scénář [art direction](http://usecases.responsiveimages.org/#h-art-direction)) nebo obrázky [v různých souborových formátech](http://usecases.responsiveimages.org/#h-image-formats), sáhněte po novém tagu [`<picture>`](/prirucka/picture).
 
-**Nevýhody současného řešení**
+## Nevýhody aktuálního řešení
 
-Materiál je to čerstvý, ostatně podpora prvních prohlížečů přišla snad v rekordně krátkém čase po vydání finální verze specifikace. Dále se o něm diskutuje. Proto se nelze divit některým nedořešenostem. Kromě problémů [polyfillu](http://www.vzhurudolu.cz/prirucka/picturefill) je tu například často zmiňovaný fakt, že HTML každého obrázku v sobě nese informaci o nastavení designu. Když se změní, musí chudák vývojář všechny výskyty této informace měnit. Věřím ale, že se tuhle drobnou nevýhodu podaří brzy odstranit. Například [přidáním ](https://soundcloud.com/bruskodu/epizoda-10-s-tab-atkinsem-o-responzivnich-obrazcich-a-elementu-picture#t=22:25)[meta tagu](https://soundcloud.com/bruskodu/epizoda-10-s-tab-atkinsem-o-responzivnich-obrazcich-a-elementu-picture#t=22:25), který by informace o layoutu sdružoval na jedno místo.
+Materiál je to čerstvý a podpora prvních prohlížečů přišla snad v rekordně krátkém čase po vydání finální verze specifikace. Dále se o něm diskutuje. Proto se nelze divit některým nedořešenostem. Kromě problémů [polyfillu](http://www.vzhurudolu.cz/prirucka/picturefill) je tu například často zmiňovaný fakt, že HTML každého obrázku v sobě nese informaci o nastavení designu. Když se změní, musí chudák vývojář všechny výskyty této informace měnit. Věřím ale, že se tuhle drobnou nevýhodu podaří brzy odstranit. Například [přidáním ](https://soundcloud.com/bruskodu/epizoda-10-s-tab-atkinsem-o-responzivnich-obrazcich-a-elementu-picture#t=22:25)[meta tagu](https://soundcloud.com/bruskodu/epizoda-10-s-tab-atkinsem-o-responzivnich-obrazcich-a-elementu-picture#t=22:25), který by informace o layoutu sdružoval na jedno místo.
 
 ## Podpora v prohlížečích
 
@@ -118,7 +118,7 @@ Prakticky všechny prohlížeče ústy svých tvůrců deklarovaly, že tento st
 
 ## Čtěte dále
 
-* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [<picture>](http://www.vzhurudolu.cz/prirucka/picture) a [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill)
-* [Eric Portis: kompletní průvodce srcset a sizes](http://ericportis.com/posts/2014/srcset-sizes/) (anglicky)
+* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture) a [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill).
+* [Eric Portis: kompletní průvodce srcset a sizes](http://ericportis.com/posts/2014/srcset-sizes/) (anglicky).
 
 

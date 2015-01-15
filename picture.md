@@ -23,7 +23,7 @@ Pokaždé kdy vaše varianty splňují jednu z těchto podmínek:
 1. Potřebujete servírovat jinak vypadající obrázky pro různá rozlišení — třeba pro mobily chcete jinak vyříznout hlavní motiv obrázku (scénář [art direction](http://usecases.responsiveimages.org/#h-art-direction)).
 2. Prohlížečům jste připravili obrázky [v různých souborových formátech](http://usecases.responsiveimages.org/#h-image-formats).
 
-Ve všech ostatních případech a tedy v naprosté většině případů vám bude stačit [starý dobrý img s atributy srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes).
+Ve všech ostatních případech a tedy v naprosté většině případů vám bude stačit [starý dobrý `<img>` s atributy srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes).
 
 ## Art direction – obrázky pro různá rozlišení mají také různý obsah
 
@@ -45,7 +45,7 @@ Ve všech ostatních případech a tedy v naprosté většině případů vám b
 
 Pro okna 1024 pixelů a větší se stáhne a použije obrázek `large_1600.jpg`, od 800 do 1023 pixelů `medium_1024.jpg` a pro okna šířky 799 a méně pixelů pak `small_600.jpg`.
 
-Dobré vědět, že z variant obrázku v `<source>` se vezme vždy první vyhovující, takže je nutné je řadit o největšího po nejméněší.
+Dobré vědět, že z variant obrázku v `<source>` se vezme vždy první vyhovující, takže je nutné je řadit o největšího po nejmenší.
 
 ## Podle formátu obrázku
 
