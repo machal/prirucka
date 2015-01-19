@@ -54,11 +54,19 @@ Tímto zápisem říkáme, že responzivní layout je vymyšlený tak, že v roz
 
 První vyhovující varianta v `sizes` vyhrává, takže na pořadí záleží. Bacha na to.
 
+### Proč si velikosti obrázků prohlížeč nevezme z CSS?
+
+Rozhodování, který obrázek použít, prohlížeče dělají ještě předtím než znají celý DOM. Je to chování, které je velmi výhodné pro uživatele – urychluje načítání obrázků a vlastně celé stránky.
+
+V tu chvíli o vašich CSSkách skoro nic nevědí, natož aby znaly jejich obsah. Tak proto.
+
+### Velikosti obrázků podle layoutu
+
 Nojo, jenže v responzivním, potažmo fluidním layoutu obvykle přesně nevíme jaké rozměry  budou mít obrázky v rámci konkrétní šířky okna. A hurá — tady přichází síla kombinace `sizes` [s funkcí calc()](https://developer.mozilla.org/en-US/docs/Web/CSS/calc). Pomocí ní můžeme elegantně definovat velikost obrázku relativně k layoutu mezi konkrétními breakpointy.
 
 Opět tedy máme [demo na CodePenu](http://codepen.io/machal/pen/azBmaX?editors=110). Nejdříve si ale raději pojďme vizualizovat jak vlastně náš layout vypadá:
 
-<img class="picture" src="content/schemes/rwd-images-scenare.jpg" width="700" height="394" alt="Layout příkladu pro demonstraci srcset/sizes">
+<img class="picture" src="content/schemes/rwd-obrazky-priklad-layout.jpg" width="700" height="394" alt="Layout příkladu pro demonstraci srcset/sizes">
 
 Do `600px` breakpointu je to jednoduché – obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna a tak musíme odečíst výchozí `margin` u `<body>`, který mají prohlížeče nastavený na `8px`:
 
