@@ -98,7 +98,7 @@ To se jako pisálek můžete snažit sebevíc, ale nedostanete ze sebe nic lepš
 
 ### 22. grunt-pagespeed: statistiky rychlosti načítání stránky
 
-Hooglí [Page Speed Insights](https://developers.google.com/speed/docs/insights/about) asi znáte. Vynikající záležitost pro audit načítání stránky. grunt-pagespeek vám do konzole vyplivne [hezký grafík](https://www.slideshare.net/fullscreen/tomasmusiol7/zakladni-nastroje-pro-automatizaci/15). [Github](https://github.com/jrcryer/grunt-pagespeed).
+Googlí [Page Speed Insights](https://developers.google.com/speed/docs/insights/about) asi znáte. Vynikající záležitost pro audit načítání stránky. grunt-pagespeek vám do konzole vyplivne [hezký grafík](https://www.slideshare.net/fullscreen/tomasmusiol7/zakladni-nastroje-pro-automatizaci/15). [Github](https://github.com/jrcryer/grunt-pagespeed).
 
 ### 23. grunt-modernizr: vlastní build Modernizru
 
