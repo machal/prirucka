@@ -8,19 +8,7 @@ Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojov�
 
 <img class="picture" src="content/schemes/grunt.jpg" width="1000" height="575" alt="Grunt.js">
 
-Důvody proč mám Grunt rád nejlíp ukáže seznam úloh co využívám nebo se na to v nejbližší době chystám. 
-
-## Grunt úlohy co využívám
-
-* Kompilace LESS, SASS, Stylus do CSS. To by ale nedávalo smysl bez automatického sledování změn pomocí pomocí [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch). Nesmím zapomenout na generování [Source Maps](http://roots.io/using-less-source-maps/).
-* Minifikace CSSek pomocí [cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) a Javascriptů pomocí [uglify](https://github.com/gruntjs/grunt-contrib-uglify).
-* Spojování souborů pomocí [concat](https://github.com/gruntjs/grunt-contrib-concat).
-* Automatický reload prohlížeče pomocí [livereload](https://github.com/gruntjs/grunt-contrib-watch#optionslivereload) funkce watch úlohy. Daleko lepší je to ovšem pomocí injektáže změněného kódu bez reloadu. [grunt-browser-sync](https://github.com/shakyshane/grunt-browser-sync) je boží!
-* Menší projekty nahrávám na FTP pomocí [ftp-deploy](https://github.com/zonak/grunt-ftp-deploy). V Gruntu můžete tasky spojovat, takže můj vlastní `grunt deploy` spojí, minifikuje JS/CSS a nahraje soubory na FTP.
-* Pomocí [grunt-styledocco](https://www.npmjs.org/package/grunt-styledocco) generuji u větších projektů dokumentaci k LESS komponentám. 
-* [legacssy](https://github.com/robinpokorny/grunt-legacssy) Robina Pokorného za mě řeší fallback fallback pro IE8 když kód píšu mobile first.
-* Hrozně se mi líbí [grunticon](http://blog.iconfinder.com/get-started-with-grunticon/), který řeší kompletní workflow (minifikaci, fallbacky v PNG i generování CSS kódu), pokud chcete ikonky ve vektorech. Chystám se vyzkoušet.
-* [autoprefixer](http://css-tricks.com/autoprefixer/) zase doplňuje [CSS3 prefixy](http://www.vzhurudolu.cz/prirucka/prefix), takže jsou vždy aktuální (podle CanIUse.com) a není potřeba využívat neaktuálních CSS3 mixinů. 
+Důvody proč mám Grunt rád nejlíp ukáže [seznam úloh co využívám](grunt-pluginy.md). 
 
 To jde, ne? A to si myslím, že jsem jen mírně pokročilý uživatel Gruntu a čeká mě ještě hooodně objevování.
 
@@ -46,11 +34,7 @@ Popíšu to velice zjednodušeně. Více je [v dokumentaci Gruntu](http://gruntj
 5. Teď už stačí jen nakonfigurovat Grunt úkoly. Dělá se to souborem `Gruntfile.js`, který byste si měli napsat sami. [Tady je popsaný víc](http://gruntjs.com/sample-gruntfile).
 6. Když už tedy máte nainstalovaný Node, nainstalovaný Grunt, nainstalované Node balíčky pro Grunt úlohy a `Gruntfile` s konfigurací, můžete se Gruntu říct, aby vám zobrazil všechny dostupné příkazy: `grunt --help`.
 
-Další materiál ke studiu v češtině:
-
-* [Láďa Prskavec](http://blog.prskavec.net/2012/09/grunt-dot-js/)
-* [Brus kódu s Riki Fridrichem](http://bruskodu.cz/epizoda/2/)
-* [Články na Zdrojáku](http://www.zdrojak.cz/n/grunt-js/)
+Poslechněte si [Brus kódu s Riki Fridrichem](http://bruskodu.cz/epizoda/2/) nebo běžte na jeho [školení](http://www.vzhurudolu.cz/kurzy/grunt-gulp), kde si Grunt porovnáte s konkurenčním Gulpem.
 
 
 
