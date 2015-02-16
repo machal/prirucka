@@ -1,6 +1,6 @@
-# 27 užitečných Grunt pluginů a zároveň důvodů proč konečně zkusit automatizaci
+# 29 užitečných Grunt pluginů a zároveň důvodů proč konečně zkusit automatizaci
 
-Pozor, ta sedmadvacítka je dlouhá jako týden před výplatou. Ale [kdo jednou zkusí](http://www.vzhurudolu.cz/kurzy/grunt-gulp), automatizaci s [Gruntem](grunt.md) (nebo klidně s Gulpem) neopustí. Takže se množství nelekejme a směle do toho.
+Pozor, ta devětadvacítka je dlouhá jako týden před výplatou. Ale [kdo jednou zkusí](http://www.vzhurudolu.cz/kurzy/grunt-gulp), automatizaci s [Gruntem](grunt.md) (nebo klidně s Gulpem) neopustí. Takže se množství nelekejme a směle do toho.
 
 ## CSS
 
@@ -106,21 +106,29 @@ Googlí [Page Speed Insights](https://developers.google.com/speed/docs/insights/
 
 ## Grunt úlohy pro… Grunt
 
-### 24. load-grunt-tasks: automatické načtení pluginů
+### 24. jit-grunt: zrychlení načítání pluginů
+
+JIT = Just In Time. Znalci v diskuzi pod článkem tvrdí, že dokáže pekelně zrychlit start Gruntu a běh každého tasku. Navíc není potřeba každý plugin ručně načítat pomocí `grunt.loadNpmTasks()`, což je tak trochu gruntovská psychiatrie. Mrkněte na [Github](https://github.com/shootaroo/jit-grunt). 
+
+### 25. load-grunt-tasks: automatické načtení pluginů
 
 Načítat každý plugin pomocí `grunt.loadNpmTasks()` je samozřejmě dementní, ale naštěstí je tu psychiatrická pomoc v podobě tohoto tasku.  [Github](https://github.com/sindresorhus/load-grunt-tasks).
 
-### 25. time-grunt: čas běhu grunt úloh
+### 26. time-grunt: čas běhu grunt úloh
 
 Instatní odpověď na otázku „Proč to safra trvá tak dlouho?". [Github](https://github.com/sindresorhus/time-grunt).
 
-### 26. grunt-concurrent: běh více úloh najednou
+### 27. grunt-concurrent: běh více úloh najednou
 
 Pomoc s během pomalých úloh jako je kompilování Sass nebo Coffee souborů. [Github](https://github.com/sindresorhus/grunt-concurrent).
 
-### 27. grunt-newer: aplikace úloh jen na změněné soubory
+### 28. grunt-newer: aplikace úloh jen na změněné soubory
 
-Něco jako `grunt.registerTask('js', ['newer:jshing, 'newer:uglify'])` například použijete když chcete kontrolovat a zmenšit jen změněné javascriptové soubory. [Github](https://github.com/tschaub/grunt-newer).
+Něco jako `grunt.registerTask('js', ['newer:jshing, 'newer:uglify'])` například použijete když chcete kontrolovat a zmenšit jen změněné javascriptové soubory. [Github](https://github.com/tschaub/grunt-newer)
+
+### 29. grunt-shell: jakýkoliv příkaz do příkazové řádky
+
+Jako příklad autoři uvádění kompilaci Compass `compass compile` nebo získání aktuální větve `git branch`. Může se hodit! [Github](https://github.com/sindresorhus/grunt-shell)
 
 Hotovo. A ani to nebolelo, viďte.
 
