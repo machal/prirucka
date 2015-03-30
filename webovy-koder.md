@@ -171,4 +171,4 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 
 <small>Původní verze textu vznikla jako draft pro popis profese pro [Národní soustavu kvalifikací](http://narodnikvalifikace.cz/). Za kapitolu o přístupnosti autor děkuje [Radkovi Pavlíčkovi](https://twitter.com/radlicek) ([Poslepu.cz](http://poslepu.cz/)). Za spolupráci na kvalifikačním standardu kromě Radka i [Vojtovi Outulnému](https://www.linkedin.com/in/vojtechoutulny) a Jaroslavu Zelenému. Za podněty k draftu pak [Robinu Pokornému](http://robinpokorny.com/), [Tomáši Musiolovi](http://www.musiol.cz/) a [Martinu Staňkovi](https://twitter.com/koucik).</small>
 
-<small>Pokud si něco v obsahu zaslouží změnu, [upravte soubor](https://github.com/machal/prirucka/blob/master/webovy-koder.md) na Githubu nebo tam [vyplňte issue](https://github.com/machal/prirucka/issues).</small>
+<small>Pokud si něco v obsahu zaslouží změnu, [upravte soubor](https://github.com/machal/prirucka/search?utf8=%E2%9C%93&q=webovy-koder) na Githubu nebo tam [vyplňte issue](https://github.com/machal/prirucka/issues).</small>
