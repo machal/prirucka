@@ -30,7 +30,7 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 * **[nové] **HTML5 formuláře: použitelné HTML5 [typy](http://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/) a [atributy](http://www.zdrojak.cz/clanky/formulare-v-html5-a-nove-atributy/) (`email`, `tel`, `url`, `placeholder`); [`<input required>`](http://jecas.cz/required) a HTML5 validace v prohlížeči. ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * SEO: osnova dokumentu, `<title>`, `<meta description…>`.
 * **[nové] **Sémantické metaznačky: [Facebook OpenGraph](http://davidwalsh.name/facebook-meta-tags); Google Schema.org a [Rich Snippets](http://www.vzhurudolu.cz/prirucka/rich-snippets); Twitter Cards; [favicon a touchicon](http://realfavicongenerator.net/). ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
-* **[nové] **[Audio a video](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video): HTML5 formáty audia a videa, které vyžadují aktuální prohlížeče, případně Flash.
+* **[nové] **[Audio a video](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video): HTML5 formáty audia a videa, které vyžadují aktuální prohlížeče, případně Flash.
 * **[nové] **[Canvas](http://www.zdrojak.cz/clanky/zaciname-z-html5-canvasem/): principy; k čemu je dobrý.
 * **[nové] **Povědomí o základních HTML5 aplikačních API: local/sessionStorage; History API; Geolocation API; komunikace: WebSockets, ServerSentEvents; offline: AppCache. ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
 
@@ -39,8 +39,8 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 * Znalost všech prakticky použitelných vlastností ze specifikace [CSS2](http://www.jakpsatweb.cz/css/css-vlastnosti-hodnoty-prehled.html). 
 * **[nové] **[CSS3](http://www.vzhurudolu.cz/prirucka/css3) vlastnosti, které jsou [podle CSS Working Group](http://www.w3.org/Style/CSS/current-work.en.html) ve fázi W3C Recommendation (REC) nebo Proposed Recommendation (PR). ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * Stavba [layoutu pomocí CSS](http://learnlayout.com/toc.html): kategorizace podle technologických prostředků – float, inline-block, display:table, position:absolute, flexbox; kategorizace podle typu layoutu: fixní, fluidní, responzivní.
-* Kaskáda, dědičnost, specifičnost v kontextu CSS.
-* Jednotky (např. px, em, rem, procenta, cm, atd.): jejich klady, zápory a možné scénáře použití.
+* Kaskáda, dědičnost, specifičnost v kontextu CSS.
+* Jednotky (např. px, em, rem, procenta, cm, atd.): jejich klady, zápory a možné scénáře použití.
 * Prakticky použitelné CSS selektory.
 
 #### Přístupnost
@@ -48,15 +48,15 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 * **[nové] **Standard [WAI-ARIA 1.0](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/) 
 * Standard [WCAG 2.0](http://blindfriendly.cz/wcag20checklist/). [Vyhláška o přístupnosti](http://www.mvcr.cz/clanek/vyhlaska-c-64-2008-sb-o-forme-uverejnovani-informaci-souvisejicich-s-vykonem-verejne-spravy-prostrednictvim-webovych-stranek-pro-osoby-se-zdravotnim-postizenim-vyhlaska-o-pristupnosti-10.aspx) pro weby státní správy.
 * [Handicapovaní uživatelé](http://pristupnost.nawebu.cz/texty/hendikepovani-uzivatele.php): jejich potřeby z hlediska práce s webem; jak uživatelé ovládají zařízení a prohlížeče.
-* Přístupný kód: techniky kódování pro zpřístupnění webových stránek; oddělení struktury od vizuální prezentace; ovládání [pouze z klávesnice](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/); správné [skrývání obsahu](http://a11yproject.com/posts/how-to-hide-content/); textové alternativy; přístupnost obsahu pro vnímání více smysly; ošetření dynamických změn obsahu.
-* Co jsou [asistivní technologie](http://poslepu.cz/termin-asistivni-technologie-pohledem-radka-seiferta/) a jak fungují. 
-* Nástroje pro testování přístupnosti: toolbary pro prohlížeče (například [WAVE](http://wave.webaim.org/), [Web Developer Toolbar](https://addons.mozilla.org/cs/firefox/addon/web-developer/), HeadingsMap, atd.; desktopové nástroje (například [Colour Contrast Analyzer](http://www.paciellogroup.com/resources/contrastanalyser/)); asistivní technologie (například odečítače obrazovky pro nevidomé či zvětšovací programy pro slabozraké).
+* Přístupný kód: techniky kódování pro zpřístupnění webových stránek; oddělení struktury od vizuální prezentace; ovládání [pouze z klávesnice](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/); správné [skrývání obsahu](http://a11yproject.com/posts/how-to-hide-content/); textové alternativy; přístupnost obsahu pro vnímání více smysly; ošetření dynamických změn obsahu.
+* Co jsou [asistivní technologie](http://poslepu.cz/termin-asistivni-technologie-pohledem-radka-seiferta/) a jak fungují. 
+* Nástroje pro testování přístupnosti: toolbary pro prohlížeče (například [WAVE](http://wave.webaim.org/), [Web Developer Toolbar](https://addons.mozilla.org/cs/firefox/addon/web-developer/), HeadingsMap, atd.; desktopové nástroje (například [Colour Contrast Analyzer](http://www.paciellogroup.com/resources/contrastanalyser/)); asistivní technologie (například odečítače obrazovky pro nevidomé či zvětšovací programy pro slabozraké).
 
 #### Základy Javascriptu
 
-* **[nové] **[Základní vlastnosti JavaScriptu](http://dailyjs.com/js101.html): proměnné, typy, operátory, podmínky, cykly, pole, objekty.
+* **[nové] **[Základní vlastnosti JavaScriptu](http://dailyjs.com/js101.html): proměnné, typy, operátory, podmínky, cykly, pole, objekty.
 * **[nové] **DOM: rozdíly mezi HTML zdrojem a DOM; nalezení, přidání, odebrání elementu, změna jeho vlastností v rozsahu [W3Schools](http://www.w3schools.com/js/js_htmldom_document.asp); události: základní [DOM události](http://www.w3schools.com/js/js_events.asp) a způsob jejich [odchytávání](http://www.w3schools.com/js/js_htmldom_eventlistener.asp).
-* [AJAX](https://developer.mozilla.org/cs/docs/AJAX/Jak_za%C4%8D%C3%ADt) a princip jeho fungování.
+* [AJAX](https://developer.mozilla.org/cs/docs/AJAX/Jak_za%C4%8D%C3%ADt) a princip jeho fungování.
 * jQuery a podobné knihovny: znalost scénářů pro použití; výhody a nevýhody ve srovnání s čistým JavaScriptem; základní vlastnosti: selektory, události, ajax, použití plug-inů.
 
 #### Prohlížeče
