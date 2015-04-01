@@ -54,7 +54,7 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 
 #### Základy Javascriptu
 
-* **[nové] **[Základní vlastnosti JavaScriptu](http://learn.jquery.com/javascript-101/): proměnné, typy, operátory, podmínky, cykly, pole, objekty.
+* **[nové] **[Základní vlastnosti JavaScriptu](http://dailyjs.com/js101.html): proměnné, typy, operátory, podmínky, cykly, pole, objekty.
 * **[nové] **DOM: rozdíly mezi HTML zdrojem a DOM; nalezení, přidání, odebrání elementu, změna jeho vlastností v rozsahu [W3Schools](http://www.w3schools.com/js/js_htmldom_document.asp); události: základní [DOM události](http://www.w3schools.com/js/js_events.asp) a způsob jejich [odchytávání](http://www.w3schools.com/js/js_htmldom_eventlistener.asp).
 * [AJAX](https://developer.mozilla.org/cs/docs/AJAX/Jak_za%C4%8D%C3%ADt) a princip jeho fungování.
 * jQuery a podobné knihovny: znalost scénářů pro použití; výhody a nevýhody ve srovnání s čistým JavaScriptem; základní vlastnosti: selektory, události, ajax, použití plug-inů.
