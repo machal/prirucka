@@ -1,54 +1,71 @@
 CSS3 Flexbox – layout pomocí pružných boxů
 ==========================================
 
-Flexbox je úplně nový layoutovací modul.
+## Co je Flexbox?
 
-Aktuální implementace flexboxu mají pár „ale…”. Celkově vzato je ovšem [CSS Flexible Box Layout Module](http://www.w3.org/TR/css3-flexbox/) úžasný posun vpřed ve tvorbě webových layoutů.
+Nová cesta pro tvorbu layoutu, zarovnání a distribuci volné plochy.
 
-Skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí [tabulkového layoutu](http://www.jakpsatweb.cz/tabulky-design.html) v roce 2001.
+*Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností Flexboxu je totiž schopnost vyplňovat zbylý prostor bez nutnosti přepočítávání javascriptem.
 
-A měl by pravdu, ovšem jen z malé části. Tabulkový layout nahrazuje jen jedna část flexboxu. Ten nám může být užitečný minimálně ve třech situacích:
+### Základy v jednoduchém příkladu
 
-1. Potřebujeme **několik stejně dlouhých sloupců**. Jeden z nich má na pozadí barvu a potřebujeme, aby barva byla vidět zezhora až dolů. To je to, co tabulkový layout uměl a floaty neumí.
-2. Sloupce našeho layoutu chceme pravidelně rozdělit po celé šířce, ale **nechce se nám počítat s procenty**.
-3. Na menších rozlišeních chceme **změnit pořadí sloupců** (nebo řádků) — bomba pro responzivní webdesign.
+Představme si triviální třísloupcový layout:
 
-Těch scénářů je samozřejmě daleko více. Podívejte se na hezkou stránku [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/).
+  <div class="container">
+    <p class="mandatory-1">One</p>
+    <p class="content">Two<br/>…<br/>…</p>
+    <p class="mandatory-2">Three </p>
+  </div>
 
+HTML je jednoduché. O to přísnější máme požadavky na design. A víte co? Ukážeme si rovnou jak je splnit pomocí Flexboxu.
 
-Příklad a technikálie
----------------------
+1. **Všechny sloupce stejně vysoké.** Ano, i v případech kdy má ten jeden delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče udělat kontejner flexboxu — `.container { display: flex; }`.
+2. **Chceme pětinovou mřízku**. První a třetí sloupec má zabírat jednu pětinu — `.mandatory-1, .mandatory-2 { flex: 1; }`. A druhý pak tři pětiny — `.content { flex: 3 }`. Všimli jste si, že jsme nemuseli počítat s procenty? A že bychom nemuseli procenta přepočítavat když bychom přidali další sloupec?
+3. **Na menších rozlišeních chceme změnit pořadí elementů.** Prostě jen do media query napíšeme `.content { order: -1; }` a sloupec s obsahem se přesune na první místo. Bomba pro responzivní design, že?
 
-<p data-height="158" data-theme-id="502" data-slug-hash="LhGuD" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/LhGuD'>CSS3 Flexbox příklad</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+Příklad si utíkejte vyzkoušet naživo na CodePen — [http://cdpn.io/e/LhGuD](http://cdpn.io/e/LhGuD).
 
-Na příkladu vidíte, že sloupce jsou pořád stejně vysoké. Stačí z rodiče udělat flexbox pomocí `display: flex`.
+Je to hezké, že? Ale skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí [tabulkového layoutu](http://www.jakpsatweb.cz/tabulky-design.html) v roce 2001. Jenže pravdu by měl jen z velmi malé části. Flexbox toho totiž umí daleko (*daleko!*) více než tabulky.
 
-Pak taky vidíte, že prvním a poslednímu sloupci stačilo nastavit `flex-grow: 1` a poslednímu `flex-grow: 3` a podle těchto proporcí si rozdělily šířku rodiče.
+### Proč potřebujeme Flexbox?
 
-No a nakonec si zkuste zmenšit okno tak, aby příklad neměl k dispozici více než 640 pixelů šířky. Pomocí [Media Queries](css3-media-queries.md) a nastavením vlastnosti `order: -1` přesunujeme druhý sloupec na první místo.
+Dovolte nejprve otázku. Jak dnes v CSS děláme layouty?
 
+Floaty, inline-blockem, absolutním pozicováním nebo přes `display: table`. A víte co mají všechny společného? Ani jeden nebyl vymyšlen pro tvorbu dnešních layoutů. Ano, flexbox je první layoutovací nástroj v CSS. „Po dvaceti letech", prohodil by mezi fousy náš bručoun.
 
-Zajímavé odkazy
----------------
+Floaty, tabulky a jejich parta *Layoutovacích technik nad hrobem* samozřejmě ještě pár měsíců až let poslouží. Každý člen skupiny má ovšem pro tvorbu layoutů větší či menší nevýhody. Ty vyplývají už ze specifikací, které s dnešními layouty příliš nepočítaly.
 
-- [A Complete Guide to Flexbox, CSSTricks.com](http://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Flexy Boxes, generátor a flexbox pískoviště](http://the-echoplex.net/flexyboxes/)
+### Hlavně layouty komponent
 
+Dobré zmínit, že Flexbox je určený pro layout komponent uvnitř stránek. Tedy navigací, formulářů, stránkovacích komponent atd. atd.
 
-Podpora v prohlížečích
-----------------------
+Pro celostránkové layouty se více hodí CSS3 Grid Layout. Ten má ovšem zatím jen malou podporu v prohlížečích. Užití Flexboxu pro celostránkové layouty je samozřejmě možné. Jen se na velmi pomalých zařízeních nebo internetových připojeních nebude vykreslovat optimálně. [http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)
 
-Není špatná. Hlavní příčinou, proč se ve flexboxu není úplně snadné zorientovat je **existence tří různých syntaxí**:
+## Šup na základní pojmy — flex kontejner a flex položka, hlavní a příčná osa
 
-* Syntaxe 2009 – kdekoliv uvidíte `display: box`. Myslím, že ji naštěstí žádná rozšířená verze prohlížeče už nepodporuje.
-* Syntaxe 2011 – `display: flexbox`. Podporují starší verze moderních prohlížečů a bohužel i IE10 a Android Browser.
-* Syntaxe 2012 – `display: flex`. V posledních verzích podporují všechny moderní prohlížeče, včetně IE11.
+Flexbox tvoří nerozlučná dvojice dvou typů elementů — flex kontejner a flex položka. Flex položkou se stává každý přímý potomek kontejneru.
 
-Zajímá nás tedy syntaxe 2011 a 2012 a není důvod se s ní nepoprat například [pomocí CSS preprocesorů](http://css-tricks.com/using-flexbox/).
+  <ul class="flex-container">
+    <li>…</li>
+    <li>…</li>
+  </ul>
 
-Jak s IE9- a dalšími staršími prohlížeči? Detekovat nepodporu flexboxu pomocí Modernizru a `.no-flexbox { … }` a alternativně nabídnout jinou verzi layoutu (`display: table`, floaty …).
+Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
 
+  .flex-container {
+  	display: flex;
+  }
 
+Všechny `<li>` se tady stávají flex položkami.
 
+Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
 
+*TODO: schéma pojmů uvnitř flexboxu. *
+*[https://www.evernote.com/l/AO4Wlfft64VIbbPHmNU1UbictGh8esWPFC*Q](https://www.evernote.com/l/AO4Wlfft64VIbbPHmNU1UbictGh8esWPFCQ)
+
+* flex kontejner – rodičovský element
+* flex položka – všichni přímí potomkové flex kontejneru
+* hlavní osa – výchozí je horizontální, ale lze změnit
+* příčná osa – vždy příčná k hlavní, takže ve výchozí podobě horizontální
+* hlavní rozměr – výchozí je šířka, ale řídí se nastavením hlavní osy
+* příčný rozměr – výchozí je výška
