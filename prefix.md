@@ -47,7 +47,7 @@ Máte několik možností:
 1. **Nijak, nepoužívat prefixované implementace.** Takhle to bylo i celé myšleno, ale lidé jsou hold nedočkaví a do verze vlastností s vendor prefixy jsou standardní výbavou snad každého vývojáře.
 2. **Vypisovat je ručně.** Možné řešení. V době [generátorů kódu](https://delicious.com/machal/css3-generators) a [CSS3 please](http://css3please.com/) se asi dá zvládnout, ale nedoporučuji.
 3. **-prefix-free** Tzn. nechat si je generovat [javascriptem](http://leaverou.github.io/prefixfree/). Super pro testy nebo [fiddlátka](http://codepen.io/), ale na produkci? Určitě ne.
-4. **CSS preprocesory.** Určitě [ano](http://kratce.vzhurudolu.cz/post/56084086629/css-preprocesory)! Je [tady](http://lesshat.com/) [řada](http://bourbon.io/) [knihoven](http://visionmedia.github.io/nib/) co vám zajistí klidný spánek bez nočních můru o vendor prefixech.
+4. **CSS preprocesory.** Určitě [ano](http://kratce.vzhurudolu.cz/post/56084086629/css-preprocesory)! Je [tady](http://lesshat.com/) [řada](http://bourbon.io/) [knihoven](http://tj.github.io/nib/) co vám zajistí klidný spánek bez nočních můru o vendor prefixech.
 
 
 

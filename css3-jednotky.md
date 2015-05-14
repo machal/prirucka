@@ -1,5 +1,13 @@
 Nové CSS3 jednotky – `rem`, `vw`, `vh`
 ============
+<<<<<<< HEAD
+=======
+    
+  
+Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. Jsou to *root-emka*, tedy varianta známé jednotky `em`. 
+
+Hodnota u `em` vychází z velikosti písma nejbližšího nadřazeného elementu, kdežto u `rem` vždy z velikosti písma u elementu `<html>`.
+>>>>>>> master
 
 ### `rem`
 

@@ -6,7 +6,7 @@ RGB barva se čtvrtým číslem jež nese informaci o průhlednosti v alfa kaná
 
 	rgba(_red_, _green_, _blue_, _pruhlednost_);
 
-Poloprůhledné RGBa barvy můžete samozřejmě aplikovat všude kde se v&nbsp;CSS barvy používají. Zdůrazním hlavně <a href="http://css-tricks.com/transparent-borders-with-background-clip/">rámečky</a> (s&nbsp;pomocí background-clip), <a href="/box-shadow">stíny</a> neb gradienty.
+Poloprůhledné RGBa barvy můžete samozřejmě aplikovat všude kde se v&nbsp;CSS barvy používají. Zdůrazním hlavně <a href="http://css-tricks.com/transparent-borders-with-background-clip/">rámečky</a> (s&nbsp;pomocí background-clip), <a href="css3-box-shadow.md">stíny</a> neb gradienty.
 
 Příklad
 -------
