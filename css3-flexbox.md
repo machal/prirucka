@@ -60,8 +60,7 @@ Všechny `<li>` se tady stávají flex položkami.
 
 Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
 
-*TODO: schéma pojmů uvnitř flexboxu. *
-*[https://www.evernote.com/l/AO4Wlfft64VIbbPHmNU1UbictGh8esWPFC*Q](https://www.evernote.com/l/AO4Wlfft64VIbbPHmNU1UbictGh8esWPFCQ)
+![flexbox schéma](content/schemes/flexbox-schema.jpg)
 
 * flex kontejner – rodičovský element
 * flex položka – všichni přímí potomkové flex kontejneru
