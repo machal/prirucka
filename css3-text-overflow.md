@@ -6,14 +6,14 @@ Vytečkování textu, který přesahuje šířku elementu.
 
 	text-overflow: ( clip | ellipsis | <_retezec_> );
 
-Když na školeních ukazuji `text-overflow: ellipsis`, opakuje se vždy stejný scénář. Polovina účastníků zívá: „Hm, tohle používám už dva roky…“ A druhá polovina? Nadšeně si píše: „TODO použít hned zítra!“
+Když na školeních ukazuji `text-overflow: ellipsis`, opakuje se vždy stejný scénář. Polovina účastníků zívá: „Hm, tohle používám už dva roky…“ A druhá polovina? Nadšeně si píše: „Musím použít hned zítra!“
 
-Ellipsis má háček — aktuálně je možné ji použít jen na vytečkování jednořádkového textu na blokových elementech. I tak je to ale hrozně **užitečný pomocník v responzivním webdesignu**.
+Hodnota `ellipsis` má háček — aktuálně je možné ji použít jen na vytečkování jednořádkového textu na blokových elementech. I tak je to ale hrozně užitečný pomocník.
 
-Příklad
+Příklad s navigací
 --------
 
-Přestavte si situaci kdy v každém případě potřebujete, aby text neskočil na další řádek. Třeba navigační lištu. A jeho délku, stejně jako šířku boxu, ve kterém se objevuje, neznáte.
+Přestavte si navigační lištu kdy v každém případě potřebujete, aby text neskočil na další řádek. A jeho délku, stejně jako šířku boxu, ve kterém se objevuje, neznáte.
 
 Pak stačí `ellipsis` doplnit o dvě další deklarace zajišťující „jednořádkovost”:
 
@@ -21,13 +21,10 @@ Pak stačí `ellipsis` doplnit o dvě další deklarace zajišťující „jedno
 	overflow: hidden;
 	white-space: nowrap;
 
-Zkuste si naživo v příkladu:
-
-<p data-height="124" data-theme-id="502" data-slug-hash="FeLkJ" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/FeLkJ'>CSS3 Text Oveflow: navigation items without wraping</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+Zkuste si naživo změnit velikost okna v příkladu na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
 
 
 Podpora v prohlížečích
 ----------------------
 
-`text-overflow: ellipsis` má podporu od IE6, takže není co řešit.
+`text-overflow: ellipsis` má podporu od IE6, takže není co řešit. 
