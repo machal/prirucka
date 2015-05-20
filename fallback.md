@@ -39,7 +39,7 @@ Nulový fallback
 
 Tady se netrápíme tím, že starší prohlížeče nezvládají animaci pomocí [transition](css3-transitions.md), protože ty nám slouží k vylepšení uživatelského prožitku v moderních prohlížečích.
 
-Možné řešení například pro [animace](css3-animations.md), [kulaté rohy](css3-border-radius.md), [stínování](css3-box-shadow.md).
+Možné řešení například pro [animace](css3-animations.md), [zaoblené rohy](css3-border-radius.md), [stínování](css3-box-shadow.md).
 
 Pár odkazů
 ----------
