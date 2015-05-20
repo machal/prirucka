@@ -1,7 +1,9 @@
 CSS3 Media Queries – podmíněné zobrazení pro média
 ==================================================
 
-V některých českých odborných textech se užívá překladu „dotazy na média“. Princip je jednouchý. Určitá část CSS deklarací se aplikuje jen po splnění podmínek napsaných pomocí Media Queries.
+V některých českých odborných textech se užívá překladu „dotazy na média“. 
+
+Princip je jednouchý. Určitá část CSS deklarací se aplikuje jen po splnění podmínek napsaných pomocí Media Queries.
 
 Dotazy na média jsou jedním ze tří pilířů klasického responzivního webdesignu spolu s fluidním layoutem a fluidními médii.
 
