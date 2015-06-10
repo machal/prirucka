@@ -27,19 +27,19 @@ Pokud nepoužijeme shorthand `background`, deklarace dalších vlastností obrá
 Příklad k vyzkoušení
 --------------------
 
-Nezapomeňte, že obrázkem může být i [CSS3 gradient](css3-gradients.md) s poloprůhledným pozadím. Toho lze využít pro efekt postupného překrytí obrázku i když neznáte výšku elementu:
+Nezapomeňte, že obrázkem může být i [CSS3 gradient](css3-gradients.md) s poloprůhledným pozadím. Toho lze využít pro efekt postupného překrytí obrázku, i když neznáte výšku elementu:
 
 	background:
-	  linear-gradient(180deg, transparent 0%, #333 100%),   
+	  linear-gradient(180deg, transparent 0%, #333 100%),
 	  url('bg.jpg');
-    
+
 Naživo zkoušejte na [cdpn.io/e/lvKkC](http://cdpn.io/e/lvKkC).
 
 
 Podpora v prohlížečích
 ----------------------
 
-IE9+. Pozor, vlastnost `background` s vícenásobnou hodnotou je ignorována pokud ji prohlížeč neumí. Pro starší prohlížeče jako IE8 vždy musíte definovat fallback. Například:
+IE9+. Pozor, vlastnost `background` s vícenásobnou hodnotou je ignorována, pokud ji prohlížeč neumí. Pro starší prohlížeče jako IE8 vždy musíte definovat fallback. Například:
 
 	background: #ddccaa;
 	background:

@@ -1,7 +1,7 @@
 CSS3 Box Shadow – stínování elementu
 ====================================
 
-Nejen obvyklý stín pod elementem, ale i uvnitř elementu nebo plastický efekt přes element.
+Jde o obvyklý stín nejen pod elementem, ale i uvnitř elementu nebo plastický efekt přes element.
 
 Syntaxe
 -------
@@ -15,7 +15,7 @@ Syntaxe
 		_barva_,
 		(_dalsi stin_);
 
-Základní stín vytvoříte cobydup. První číslo udává **horizontální, druhé vertikální posun** směrem dolů. Záporná čísla stín posunují nahoru. Třetí je barva a vězte, že pro stíny se nejvíce hodí poloprůhledná [RGBa barva](css3-rgba.md):
+Základní stín vytvoříte co by dup. První číslo udává **horizontální, druhé vertikální posun** směrem dolů. Záporná čísla stín posunují nahoru. Třetí je barva a vězte, že pro stíny se nejvíce hodí poloprůhledná [RGBa barva](css3-rgba.md):
 
 	box-shadow: 5px 5px rgba(0, 0, 0, .5);
 
@@ -56,7 +56,7 @@ Tady chceme stín jen na levé straně. Je to jednoduché – horizontální st�
 Kreslit stínem logo Microsoftu je samozřejmě nepraktické, ale hezky to ukazuje sílu řetězení a taky co se stane, když nepoužijeme rozostření – [cdpn.io/e/qJuzw](http://cdpn.io/e/qJuzw).
 
 Můžete samozřejmě kombinovat nerozostřené i rozostřené stíny – [dabblet.com/gist/2043600](http://dabblet.com/gist/2043600).
-	 
+
 
 Podpora v prohlížečích
 ----------------------
@@ -68,11 +68,11 @@ IE9+. Podpora v moderních prohlížečích je téměř bezproblémová: [canius
 Drobným problémem je jen ignorace nulové hodnoty roztažení v případě nepřítomnosti hodnoty rozostření ve starších prohlížečích postavených na jádře Webkit. V Safari na iOS6 nebo třeba Android Browseru 2.3 nebude fungovat zápis:
 
 	box-shadow: 5px 5px 0 rgba(0, 0, 0, .5);
-	
+
 Tento ovšem ano:
 
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
-	
+
 Živá ukázka příkladu je na [cdpn.io/e/FGtbu](http://cdpn.io/e/FGtbu).
 
 ### Internet Explorer 8
@@ -80,9 +80,9 @@ Tento ovšem ano:
 V IE8 můžete stín nechat vykreslit pomoc proprietární vlastnosti `filter`. Například:
 
 	filter: progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=145, Strength=3);
-	
-Samozřejmě, ne všechny typy stínů takto nahradíte.
-	
-Vykreslovat stíny ve starších Explorerech umí i polyfill [css3pie.com](http://css3pie.com/). 
+
+Samozřejmě ne všechny typy stínů takto nahradíte.
+
+Vykreslovat stíny ve starších Explorerech umí i polyfill [css3pie.com](http://css3pie.com/).
 
 Obvykle si ovšem u stínů vystačíte se strategií nulového fallbacku.

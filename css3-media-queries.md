@@ -3,11 +3,11 @@ CSS3 Media Queries – podmíněné zobrazení pro média
 
 V některých českých odborných textech se užívá překladu „dotazy na média“.
 
-Princip je jednouchý. Určitá část CSS deklarací se aplikuje jen po splnění podmínek napsaných pomocí Media Queries.
+Princip je jednoduchý. Určitá část CSS deklarací se aplikuje jen po splnění podmínek napsaných pomocí Media Queries.
 
-Dotazy na média jsou jedním ze tří pilířů klasického responzivního webdesignu spolu s fluidním layoutem a fluidními médii.
+Dotazy na média jsou jedním ze tří pilířů klasického responzivního webdesignu, spolu s fluidním layoutem a fluidními médii.
 
-Z CSS2 budete znát podmínky typy médií — `@media print { … }`. CSS3 Media Queries je vylepšují o dotazy na vlastnosti média.
+Z CSS2 budete znát podmínky pro typy médií — `@media print { … }`. CSS3 Media Queries je vylepšují o dotazy na vlastnosti média.
 
 
 Syntaxe
@@ -35,7 +35,7 @@ Klasický dotaz na média vypadá například takto:
 
 Deklaraci pro `.container` prohlížeč aplikuje, pokud šířka viewportu (prostoru pro stránku v okně prohlížeče) nepřesáhne 480 pixelů.
 
-Alternativně lze použít dotaz na šířku displeje obrazovky: `@media (max-device-width: 480px)`. Narozdíl od `max-width` nebude mít vliv změna velikosti okna.
+Alternativně lze použít dotaz na šířku displeje obrazovky: `@media (max-device-width: 480px)`. Na rozdíl od `max-width` nebude mít vliv změna velikosti okna.
 
 Vraťme se ke zbývajícím dotazům na rozměry viewportu. Lze si domyslet, že vypadají takto:
 
@@ -47,7 +47,7 @@ Vraťme se ke zbývajícím dotazům na rozměry viewportu. Lze si domyslet, že
 
 ### Logické operátory
 
-Dotazy na média můžete kombinovat pomocí operátoru `and` řetězit jednak mezi sebou a taky kombinovat s typy médií:
+Dotazy na média můžete pomocí operátoru `and` řetězit jednak kombinovat mezi sebou a taky kombinovat s typy médií:
 
 	@media screen and (min-width: 400px) and (max-height: 600px) { … }
 
@@ -69,9 +69,9 @@ Dalším možným operátorem je negace (`not`).
 
 Pokud má zařízení poměr mezi CSS a hardwarovými pixely alespoň 1.5, načte se obrázek `image_hd.png`.
 
-Poměrů je dnes celá řada (1.25, 1.5, 2, 3, 4) a tak tam kde to jde doporučuji namísto bitmapových obrázků využívat vektorový formát SVG.
+Poměrů je dnes celá řada (1.25, 1.5, 2, 3, 4), a tak tam kde to jde, doporučuji namísto bitmapových obrázků využívat vektorový formát SVG.
 
-**Detekce orientace zařízení.** Drží zařízení uživatel na výšku nebo na šířku?
+**Detekce orientace zařízení.** Drží zařízení uživatel na výšku, nebo na šířku?
 
 	@media (orientation: portrait) { ... }
 	@media (orientation: landscape) { ... }
@@ -86,9 +86,9 @@ To byly ty nejpoužívanější typy dotazů. Existuje jich ale [mnohem víc](ht
 Podpora v prohlížečích
 ----------------------
 
-IE8 neumí ani základní CSS3 Media Queries. Existuje naštěstí hned několik strategií jak se tím nenechat odradit. On by bez nich nemohl responzivní webdesign vůbec vzniknout, takže pokud vás to polekalo, posbírejte hned odvahu zpět.
+IE8 neumí ani základní CSS3 Media Queries. Existuje naštěstí hned několik strategií jak se tím nenechat odradit. On by bez nich nemohl responzivní webdesign vůbec vzniknout, takže pokud vás to polekalo, seberte hned zase odvahu.
 
-3 z možných strategií jak se vypořádat s tím, že IE8− Media Queries nepodporuje.
+Tři z možných strategií, jak se vypořádat s tím, že IE8− Media Queries nepodporuje.
 
 1. Použijte polyfill [Respond.js](https://github.com/scottjehl/Respond). Je odzkoušený a dostatečně rychlý. Používá jej například i populární frontend framework Bootstrap.
 2. Pište CSS tak, aby nedostatky IE8− nebyly problém. Výchozí tedy pro desktop a do dotazů na média dejte deklarace pro menší displeje.

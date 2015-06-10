@@ -55,7 +55,7 @@ Za pár měsíců až let nám bude stačit jen WOFF formát:
     }
 
 
-Opět ale pozor. Vždy tu budou prohlížeče, které žádný z formátů webových fontů neumí. Například Opera Mini. Nebo situace kdy uživatel moderního prohlížeče webový font nenačte – například proto, že je na velmi pomalé mobilní síti.
+Opět ale pozor. Vždy tu budou prohlížeče, které žádný z formátů webových fontů neumí. Například Opera Mini. Nebo situace, kdy uživatel moderního prohlížeče webový font nenačte – například proto, že je na velmi pomalé mobilní síti.
 
 Myslete i na tyto případy a nikdy nezapomínejte definovat fallbackový systémový font. Například takto:
 
