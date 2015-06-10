@@ -27,10 +27,10 @@ Pokud nepoužíváte cloudová řešení typu Typekit nebo Google Fonts a uživa
 
 * **WOFF** (Web Open Font Format) – dnes převládající formát souborů. Podporovaný je ale MSIE až od verze 9 a Android Browserem od verze 4.4 – [caniuse.com/woff](http://caniuse.com/woff)
 * **TTF/OTF** (TrueType/OpenType) – dva formáty, které podporují téměř všechny moderní prohlížeče, jen MSIE až od verze 9. Autor souboru musí navíc nastavit tzv. „embeding bits“ na „installable“. [caniuse.com/ttf](http://caniuse.com/ttf)
-* **SVG** (fonty definované ve vektorovém formátu SVG) – potřebujete jen pokud chcete podporovat opravdu hodně staré verze iOS Safari - 4.3 a starší. [caniuse.com/svg-fonts](http://caniuse.com/svg-fonts)
-* **EOT** (Embedded OpenType font) – podporují všechny Explorery od verze 4. Potřebujete pokud chcete podporovat IE8 a starší. [caniuse.com/eot](http://caniuse.com/eot)
+* **SVG** (fonty definované ve vektorovém formátu SVG) – potřebujete, jen pokud chcete podporovat opravdu hodně staré verze iOS Safari — 4.3 a starší. [caniuse.com/svg-fonts](http://caniuse.com/svg-fonts)
+* **EOT** (Embedded OpenType font) – podporují všechny Explorery od verze 4. Potřebujete, pokud chcete podporovat IE8 a starší. [caniuse.com/eot](http://caniuse.com/eot)
 
-### Syntaxe maximalizujicí kompatibilitu
+### Syntaxe maximalizující kompatibilitu
 
 Pokud potřebujete podporovat všechny systémy, zápis je trošku složitější:
 
@@ -43,7 +43,7 @@ Pokud potřebujete podporovat všechny systémy, zápis je trošku složitějš�
             url('webfont.svg') format('svg'); /* iOS 4.3 a starší */
     }
 
-Dnes ale typicky potřebujete jen soubory ve formátu WOFF, TTF (kvůli starším Androidům) a EOT (kvůli IE8-). Ale čekají nás světlé zítřky. S formátem WOFF.
+Dnes ale typicky potřebujete jen soubory ve formátu WOFF, TTF (kvůli starším Androidům) a EOT (kvůli IE8−). Ale čekají nás světlé zítřky. S formátem WOFF.
 
 ### Do budoucna jen WOFF
 
