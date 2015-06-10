@@ -9,7 +9,7 @@ Dozvíte se, proč `box-sizing: border-box` milují vývojáři co dělají flui
 
     box-sizing: content-box | border-box | padding-box;
 
-Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v nestandardním módu? 
+Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v nestandardním módu?
 
     Šířka nebo výška elementu = viditelná šířka nebo výška obsahu + padding + border.
 
@@ -17,7 +17,7 @@ Už víte? To je **`border-box` box-model**.
 
 <img class="picture" src="content/schemes/CSS3-box-sizing.svg" width="700" height="394" alt="box-sizing">
 
-Naproti tomu **`content-box` neboli „W3C box-model”** používají všechny moderní prohlížeče. Výpočet znáte: 
+Naproti tomu **`content-box` neboli „W3C box-model“** používají všechny moderní prohlížeče. Výpočet znáte:
 
     Šířka nebo výška elementu = viditelná šířka nebo výška obsahu
 
@@ -39,19 +39,19 @@ Někdo využívá vlastnosti box-sizing v situaci kdy se mu špatně pracuje s W
 Mnoho využití má vlastnost v responzivním webdesignu, konkrétně při práci s layoutem definovaných v procentuálních jednotkách. Představte si například navigaci, jež má vždy 5 položek. Šířka jedné pak bude `20%`. Oddělovač mezi položkami je vytvořený rámečkem fixní šířky:
 
     .nav li {
-        width: 20%;  
+        width: 20%;
         display: inline-block;
         border-left: .25em solid #fff;
     }
-    
+
 Jenže takhle nám pátá  položka navigace odskočí na další řádku. Potřebujeme však jen prohlížeči oznámit, ať laskavě šířku položek navigace počítá pomocí `box-sizing: border-box`:
-    
+
     .nav li {
         box-sizing: border-box;
-        width: 20%;  
+        width: 20%;
         display: inline-block;
         border-left: .25em solid #fff;
-    }   
+    }
 
 Živá ukázka příkladu je na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
 

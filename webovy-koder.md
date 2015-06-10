@@ -3,7 +3,7 @@ Co by měl umět webový kodér?
 
 ## Kdo je webový kodér
 
-Technik, který oživuje uživatelská rozhraní webové prezentace nebo webové aplikace. 
+Technik, který oživuje uživatelská rozhraní webové prezentace nebo webové aplikace.
 
 Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je potřeba jej odlišit od frontend vývojáře. Ten píše frontend aplikace a daleko více se pohybuje v javascriptovém kódu. Doménou kodéra je především CSS, HTML a související technologie.
 
@@ -14,7 +14,7 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 ## Poznámky k textu
 
 * Následující prosím berte více jako autorův subjektivní výběr než přesnou a precizně strukturovanou osnovu pro samostudium.
-* Body v jednotlivých sekcích jsou řazeny podle důležitosti. 
+* Body v jednotlivých sekcích jsou řazeny podle důležitosti.
 * Jako **[nové]** jsou označeny znalosti, které přibyly v posledních cca 2-3 letech.
 * A pozor, skutečného profíka z kodéra neudělá šíře technických znalostí, ale [vynikající soft-skills](http://cs.wikipedia.org/wiki/M%C4%9Bkk%C3%A9_dovednosti).
 
@@ -36,7 +36,7 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 
 #### CSS
 
-* Znalost všech prakticky použitelných vlastností ze specifikace [CSS2](http://www.jakpsatweb.cz/css/css-vlastnosti-hodnoty-prehled.html). 
+* Znalost všech prakticky použitelných vlastností ze specifikace [CSS2](http://www.jakpsatweb.cz/css/css-vlastnosti-hodnoty-prehled.html).
 * **[nové] **[CSS3](http://www.vzhurudolu.cz/prirucka/css3) vlastnosti, které jsou [podle CSS Working Group](http://www.w3.org/Style/CSS/current-work.en.html) ve fázi W3C Recommendation (REC) nebo Proposed Recommendation (PR). ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * Stavba [layoutu pomocí CSS](http://learnlayout.com/toc.html): kategorizace podle technologických prostředků – float, inline-block, display:table, position:absolute, flexbox; kategorizace podle typu layoutu: fixní, fluidní, responzivní.
 * Kaskáda, dědičnost, specifičnost v kontextu CSS.
@@ -45,11 +45,11 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 
 #### Přístupnost
 
-* **[nové] **Standard [WAI-ARIA 1.0](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/) 
+* **[nové] **Standard [WAI-ARIA 1.0](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/)
 * Standard [WCAG 2.0](http://blindfriendly.cz/wcag20checklist/). [Vyhláška o přístupnosti](http://www.mvcr.cz/clanek/vyhlaska-c-64-2008-sb-o-forme-uverejnovani-informaci-souvisejicich-s-vykonem-verejne-spravy-prostrednictvim-webovych-stranek-pro-osoby-se-zdravotnim-postizenim-vyhlaska-o-pristupnosti-10.aspx) pro weby státní správy.
 * [Handicapovaní uživatelé](http://pristupnost.nawebu.cz/texty/hendikepovani-uzivatele.php): jejich potřeby z hlediska práce s webem; jak uživatelé ovládají zařízení a prohlížeče.
 * Přístupný kód: techniky kódování pro zpřístupnění webových stránek; oddělení struktury od vizuální prezentace; ovládání [pouze z klávesnice](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/); správné [skrývání obsahu](http://a11yproject.com/posts/how-to-hide-content/); textové alternativy; přístupnost obsahu pro vnímání více smysly; ošetření dynamických změn obsahu.
-* Co jsou [asistivní technologie](http://poslepu.cz/termin-asistivni-technologie-pohledem-radka-seiferta/) a jak fungují. 
+* Co jsou [asistivní technologie](http://poslepu.cz/termin-asistivni-technologie-pohledem-radka-seiferta/) a jak fungují.
 * Nástroje pro testování přístupnosti: toolbary pro prohlížeče (například [WAVE](http://wave.webaim.org/), [Web Developer Toolbar](https://addons.mozilla.org/cs/firefox/addon/web-developer/), HeadingsMap, atd.; desktopové nástroje (například [Colour Contrast Analyzer](http://www.paciellogroup.com/resources/contrastanalyser/)); asistivní technologie (například odečítače obrazovky pro nevidomé či zvětšovací programy pro slabozraké).
 
 #### Základy Javascriptu
@@ -90,7 +90,7 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 * **[nové] **Základní principy: fluidní layout, fluidní média, [Media Queries](http://www.vzhurudolu.cz/prirucka/css3-media-queries), [breakpointy](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu).
 * **[nové] **Implementace: Mobile First; UX na mobilech; rychlost načítání.
 
-#### Interpretace podkladů od UX/grafika: 
+#### Interpretace podkladů od UX/grafika:
 
 * Konvenční zdroje z grafických editorů nebo převáděcí nástroje: Photoshop nebo Fireworks nebo Sketch nebo Avocode.
 * Techniky exportu podkladů a optimalizace výstupů.
@@ -114,14 +114,14 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 * **[nové] **Frontend frameworky: Bootstrap ([školení](http://www.vzhurudolu.cz/kurzy/bootstrap)), Foundation
 * **[nové] **Efektivita v Photoshopu: [CSSHat](https://csshat.com/), Enigma…
 
-	
+
 
 #### Verzování
 
 * Základy [verzování s ](http://rogerdudler.github.io/git-guide/)[git](http://rogerdudler.github.io/git-guide/)[em](http://rogerdudler.github.io/git-guide/). ([Kniha](http://knihy.nic.cz/files/nic/edice/scott_chacon_pro_git.pdf))
 * Hosting a kolaborativní vývoj přes [Github](http://cs.wikipedia.org/wiki/GitHub), Bitbucket a další.
 
-#### Testování 
+#### Testování
 
 * Funkční testování výsledného produktu - ručně nebo automaticky, Selenium a podobně.
 * **[nové] **Testování na [reálných mobilních zařízeních](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby), starších prohlížečích. Cloud testing přes [Browserstack](https://www.browserstack.com/) a podobně.
@@ -158,7 +158,7 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 #### Domény
 
 * Nastavení domény:[ A, AAA](http://podpora.domenu.cz/nastaveni-dns-zaznamu-domeny/)[A, CNAME, MX záznamy](http://podpora.domenu.cz/nastaveni-dns-zaznamu-domeny/).
-* Přesměrování bez adresy bez konečného /, přesměrování „bez www." na „s www.”
+* Přesměrování bez adresy bez konečného /, přesměrování „bez www." na „s www.“
 
 #### Legislativa
 

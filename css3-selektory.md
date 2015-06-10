@@ -7,9 +7,9 @@ CSS3 přichází s armádou nových selektorů. Nejjednodušší bude podívat s
 IE8+
 ----
 
-* `span[att^="val"]` – hodnota atributu `attr` začíná řetězcem „val”. Hojně využívají CSS frameworky pro tvorbu gridu. Třídy `.span1`, `.span2` atd. selektují takto: `span[class^="span"]`
-* `span[att$="val"]` – hodnota atributu končí řetězcem „val”.
-* `span[att*="val"]` – hodnota atributu obsahuje řetězcem „val”.
+* `span[att^="val"]` – hodnota atributu `attr` začíná řetězcem „val“. Hojně využívají CSS frameworky pro tvorbu gridu. Třídy `.span1`, `.span2` atd. selektují takto: `span[class^="span"]`
+* `span[att$="val"]` – hodnota atributu končí řetězcem „val“.
+* `span[att*="val"]` – hodnota atributu obsahuje řetězcem „val“.
 * `p ~ ul` – mají stejného rodiče, ale nejsou vedle sebe jako u `p + ul`.
 
 

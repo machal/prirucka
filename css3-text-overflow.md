@@ -15,7 +15,7 @@ Příklad s navigací
 
 Představte si navigační lištu, kdy v každém případě potřebujete, aby text neskočil na další řádek. A jeho délku, stejně jako šířku boxu, ve kterém se objevuje, neznáte.
 
-Pak stačí `ellipsis` doplnit o dvě další deklarace zajišťující „jednořádkovost”:
+Pak stačí `ellipsis` doplnit o dvě další deklarace zajišťující „jednořádkovost“:
 
 	text-overflow: ellipsis;
 	overflow: hidden;

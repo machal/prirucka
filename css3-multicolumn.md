@@ -5,12 +5,12 @@ Díky tomuto modulu text snadno nasázíte do více sloupců definované šířk
 
 Modul sestává z několika vlastností:
 
-	column-width: _sirka_sloupce_;
-	column-count: _pocet_sloupcu_;
-	column-gap: _sirka_odsazeni_mezi_sloupci_;
-	column-rule: _vlastnosti_cary_mezi_sloupci_;
-	
-Kromě „novinové” sazby textu se hodí také na položky seznamu. Třeba náhledy obrázků ve fotogalerii nebo položky eshopu.	
+    column-width: _sirka_sloupce_;
+    column-count: _pocet_sloupcu_;
+    column-gap: _sirka_odsazeni_mezi_sloupci_;
+    column-rule: _vlastnosti_cary_mezi_sloupci_;
+    
+Kromě „novinové“ sazby textu se hodí také na položky seznamu. Třeba náhledy obrázků ve fotogalerii nebo položky eshopu. 
 
 Příklad k vyzkoušení
 --------------------
