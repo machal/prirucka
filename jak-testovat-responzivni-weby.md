@@ -67,6 +67,6 @@ protože pomalejší. Nejlepší bude nejlevnějším model, který oficiálně 
 * Tablet iPad Mini s iOS6
 * Tablet Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480x800 pixelů
 
-Stačí mě to? Na denodenní testování ano, ale u zásadnějších spuštění projektů kradu telefon ženě, kamarádům a hrozně často na pivo zvu ty co mají zařízení s Windows Phone. A nezapomeňte na guerilla testing — takový DatArt bývá plný zařízení, na kterých si můžete leccos vyzkoušet.
+Stačí mě to? Na denodenní testování ano, ale u zásadnějších spuštění projektů kradu telefon ženě, kamarádům a často na pivo zvu ty co mají zařízení s Windows Phone. A nezapomeňte na guerilla testing — takový DatArt bývá plný zařízení, na kterých si můžete leccos vyzkoušet.
 
 Testujete jinak? Pochlubte se do komentářů a nezapomeňte zmínit váš typ projektů a cílovou skupinu.

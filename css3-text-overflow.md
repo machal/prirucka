@@ -8,7 +8,7 @@ Vytečkování textu, který přesahuje šířku elementu.
 
 Když na školeních ukazuji `text-overflow: ellipsis`, opakuje se vždy stejný scénář. Polovina účastníků zívá: „Hm, tohle používám už dva roky…“ A druhá polovina? Nadšeně si píše: „Musím použít hned zítra!“
 
-Hodnota `ellipsis` má háček — aktuálně je možné ji použít jen na vytečkování jednořádkového textu na blokových elementech. I tak je to ale hrozně užitečný pomocník.
+Hodnota `ellipsis` má háček — aktuálně je možné ji použít jen na vytečkování jednořádkového textu na blokových elementech. I tak je to ale velmi užitečný pomocník.
 
 Příklad s navigací
 --------
@@ -27,4 +27,4 @@ Zkuste si naživo změnit velikost okna v příkladu na [cdpn.io/e/FeLkJ](http:/
 Podpora v prohlížečích
 ----------------------
 
-`text-overflow: ellipsis` má podporu od IE6, takže není co řešit. 
+`text-overflow: ellipsis` má podporu od IE6, takže není co řešit.

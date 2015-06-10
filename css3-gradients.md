@@ -140,12 +140,17 @@ V parametru `GradientType` nastavujete vertikální (`0`) nebo horizontální (`
 Tipy a triky
 -------
 
-1. Nezapomeňte, že gradient je vlastně obrázek na pozadí elementu, takže je můžete použít pro definování obrázku odrážky (`list-style-image`) nebo pro obrázek na pozadí rámečku ([border-image](css3-border-image.md)).
-* Nejobvyklejší netriviální použití gradientů jsou grafická tlačítka vykreslená pomocí CSS. [cubiq.org/dropbox/cssgrad.html](http://cubiq.org/dropbox/cssgrad.html)
-* Takřka vědecké povídání o gradientech. Ana Tudor jde na následujícím odkazu pořádně do hloubky a na pomoc si bere matematiku. [hugogiraudel.com/2013/02/04/css-gradients/](http://hugogiraudel.com/2013/02/04/css-gradients/)
-* ColorZilla Gradient Editor vám pomůže vygenerovat kód gradientu i pro starší prohlížeče, včetně fallbacku pro IE8 a IE9. [colorzilla.com/gradient-editor/](http://colorzilla.com/gradient-editor/)
-* Lea Verou má hezkou galerii barevných vzorů vytvořených jen s pomocí gradientů. Berte raději ale jen jako ukázku možností. [lea.verou.me/css3patterns](http://lea.verou.me/css3patterns)
-* Právě zmíněné barevné vzory často využívají tzv. ostrý přechod, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana. `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);`  [cdpn.io/e/licEd](http://cdpn.io/e/licEd)
+Nezapomeňte, že gradient je vlastně **obrázek na pozadí elementu**, takže je můžete použít pro definování obrázku odrážky (`list-style-image`) nebo pro obrázek na pozadí rámečku ([border-image](css3-border-image.md)).
+
+Nejobvyklejší netriviální použití gradientů jsou **grafická tlačítka** vykreslená pomocí CSS. [cubiq.org/dropbox/cssgrad.html](http://cubiq.org/dropbox/cssgrad.html)
+
+Takřka **vědecké povídání o gradientech**. Ana Tudor jde na následujícím odkazu pořádně do hloubky a na pomoc si bere matematiku. [hugogiraudel.com/2013/02/04/css-gradients/](http://hugogiraudel.com/2013/02/04/css-gradients/)
+
+**ColorZilla Gradient Editor** vám pomůže vygenerovat kód gradientu i pro starší prohlížeče, včetně fallbacku pro IE8 a IE9. [colorzilla.com/gradient-editor/](http://colorzilla.com/gradient-editor/)
+
+Lea Verou má hezkou galerii **barevných vzorů** vytvořených jen s pomocí gradientů. Berte raději ale jen jako ukázku možností. [lea.verou.me/css3patterns](http://lea.verou.me/css3patterns)
+
+Právě zmíněné barevné vzory často využívají tzv. **ostrý přechod**, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana. `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);`  [cdpn.io/e/licEd](http://cdpn.io/e/licEd)
 
 
 

@@ -8,7 +8,7 @@ Většina polyfillů vám umožní používat HTML5 vlastnost tak jak byste ji p
 
 Kdybych to uměl, napsal bych Ódu na polyfilly. Myslím, že na poměrně rychlém nástupu HTML5 technologií měly polyfilly zásadní podíl.
 
-Je jich [opravdu hrozně moc](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills), pojďme připomenout jen ty nejznámější:
+Je jich [opravdu velmi hodně](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills), pojďme připomenout jen ty nejznámější:
 
 * [**Respond.js**](https://github.com/scottjehl/Respond) — rozchodí [CSS3 media queries](css3-media-queries.md) v IE8-
 * [**History.js**](https://github.com/browserstate/history.js/) — [HTML5 history](html5-history.md), tedy history.pushState() i v docela starých křápech
