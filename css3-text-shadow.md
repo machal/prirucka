@@ -18,12 +18,12 @@ Tipy a triky
 ------------
 
  * Stíny textu je možné řetězit a vytvořit až [pseudo-3D efekty](http://markdotto.com/playground/3d-text/).
- * Tady jsou zase stíny spolu s vlastností <code>background-clip</code> využity pro [efekt vyřízlého textu](http://www.gordonhallart.com/blog/wp-content/uploads/2011/04/insetText.html).
+ * Tady jsou zase stíny spolu s vlastností <code>background-clip</code> využity pro [efekt vyříznutého textu](http://www.gordonhallart.com/blog/wp-content/uploads/2011/04/insetText.html).
 
 
 Podpora v prohlížečích
 ----------------------
 
-IE10+. Ve starších prohlížečích si můžete vybrat buď tvrdý fallback bez stínu  (preferovaná varianta) nebo s&nbsp;pomocí
+IE10+. Ve starších prohlížečích si můžete vybrat buď tvrdý fallback bez stínu  (preferovaná varianta), nebo s&nbsp;pomocí
 	podmínek Modernizru či <a href="http://www.jakpsatweb.cz/html/podminene-komentare.html">IE podmíněných
 	komentářů</a> udělat IE8– variantu s&nbsp;pomocí microsoftího filtru <a href="http://msdn.microsoft.com/en-us/library/ms533086(v=vs.85).aspx">DropShadow</a>.

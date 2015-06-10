@@ -28,7 +28,7 @@ Holky a kluci v RICG si sedli a [vymysleli 9 scénářů](http://usecases.respon
 
 1. Výběr varianty obrázku podle velikosti okna prohlížeče.
 2. Výběr varianty podle velikosti obrázku v rámci layoutu stránky. V některých situacích totiž můžeme na větším displeji potřebovat menší obrázky. Srovnejte layout pro mobil a tablet na obrázku.
-3. Výběr podle device-pixel-ratio nebo-li poměru mezi hardwarovým a [CSS rozlišením](http://www.vzhurudolu.cz/prirucka/css-pixel).
+3. Výběr podle device-pixel-ratio neboli poměru mezi hardwarovým a [CSS rozlišením](http://www.vzhurudolu.cz/prirucka/css-pixel).
 4. Výběr podle art direction, jinak řečeno výtvarné řežie. Typicky když obrázek na mobilu potřebujeme oříznout jinak než na desktopu.
 
 ## `srcset/sizes`
