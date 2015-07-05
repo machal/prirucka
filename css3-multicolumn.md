@@ -10,14 +10,14 @@ Modul sestává z několika vlastností:
     column-gap: _sirka_odsazeni_mezi_sloupci_;
     column-rule: _vlastnosti_cary_mezi_sloupci_;
     
-Kromě „novinové“ sazby textu se hodí také na položky seznamu. Třeba náhledy obrázků ve fotogalerii nebo položky eshopu. 
+Kromě „novinové“ sazby textu se hodí také na položky seznamu. Třeba náhledy obrázků ve fotogalerii nebo položky e-shopu. 
 
 Příklad k vyzkoušení
 --------------------
 
 Definujeme šířku sloupce pomocí `column-width: 15em` a šířku odsazení mezi sloupci v deklaraci `column-gap: 2em`. 
 
-V příkladu je i ukázka oddělovací čáry mezi sloupci — `column-rule: 1px dotted #ddd`.
+V příkladu je i ukázka oddělovací čáry mezi sloupci – `column-rule: 1px dotted #ddd`.
 
 Když si zmenšíte okno prohlížeče a nezbude dost místa pro více sloupců vedle sebe, prohlížeč sám od vícesloupcové sazby upustí. 
 
@@ -27,4 +27,4 @@ Příklad vyzkoušejte na [cdpn.io/e/ohLgJ](http://cdpn.io/e/ohLgJ).
 Podpora v prohlížečích
 ----------------------
 
-IE10+. Starší prohlížeče doporučuji řešit tvrdým fallbackem — text se tam prostě jen nezalomí do sloupců.
+IE10+. Starší prohlížeče doporučuji řešit tvrdým fallbackem – text se tam prostě jen nezalomí do sloupců.

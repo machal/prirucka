@@ -4,7 +4,7 @@ Nové CSS3 jednotky – `rem`, `vw`, `vh`
 
 ### `rem`
 
-Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. „*root-emka*“ jsou variantou známé jednotky `em`. Od běžných `em` se liší tím, že nevychází z velikosti fontu rodičovského elementu.
+Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. *„root-emka“* jsou variantou známé jednotky `em`. Od běžných `em` se liší tím, že nevychází z velikosti fontu rodičovského elementu.
 
 Velikost písma pro `<html>` element je v prohlížečích obvykle nastavená tak, aby odpovídala `16px`. 
 
@@ -14,13 +14,13 @@ Podobně jako v příkladu výše můžete změnu velikosti písma celého dokum
 
 ### Příklad
 
-Všechny rozměry v dokumentu nastavíme pomocí jednotky `rem`. Pokud tedy nadpisy první úrovně nastavíme na `1.5rem`, budou velké `1.5*16px` – tedy `24px`.
+Všechny rozměry v dokumentu nastavíme pomocí jednotky `rem`. Pokud tedy nadpisy první úrovně nastavíme na `1.5rem`, budou velké 1,5 × `16px` – tedy `24px`.
 
     h1 {
         font-size: 1.5rem;
     }
 
-Pokud se tedy pomocí media query rozhodneme, že od šířky okna 801 pixelů nasavíme základní velikost písma na 25 pixelů…
+Pokud se tedy pomocí media query rozhodneme, že od šířky okna 801 pixelů nastavíme základní velikost písma na 25 pixelů, …
     
     @media (min-width: 801px) {
         html {
@@ -28,7 +28,7 @@ Pokud se tedy pomocí media query rozhodneme, že od šířky okna 801 pixelů n
         }
     }
 
-…zvětší se nám všechny rozměry nastavené v jednotkách `rem`. Nadpis `<h1>` tedy bude mít v těchto šířkách okna velikost `38` pixelů (`25px*1.5`).
+… zvětší se nám všechny rozměry nastavené v jednotkách `rem`. Nadpis `<h1>` tedy bude mít v těchto šířkách okna velikost 38 pixelů (`25px` × 1,5).
 
 Na živo můžete vyzkoušet tady: [cdpn.io/e/mnbaA](http://cdpn.io/e/mnbaA)
 
@@ -48,10 +48,10 @@ Více o podpoře v prohlížečích: [caniuse.com/rem](http://caniuse.com/rem)
 
 Umožňují definovat rozměry v CSS relativně k velikosti viewportu, zjednodušeně řečeno výšce nebo šířce okna.
 
-* `vw` – zkratka pro „viewport width“; `1vw` označuje setinu šířky viewportu
-* `vh` – zkratka pro „viewport height“; `1vh` označuje setinu výšky viewportu
-* `vmin` – zkratka pro „viewport minimum“; reprezentuje menší hodnotu z porovnání `1vw` a `1vh`
-* `vmax` – zkratka pro „viewport maxinum“; reprezentuje větší hodnotu z porovnání `1vw` a `1vh`
+* `vw` – zkratka pro „viewport width“ – `1vw` označuje setinu šířky viewportu
+* `vh` – zkratka pro „viewport height“ – `1vh` označuje setinu výšky viewportu
+* `vmin` – zkratka pro „viewport minimum“ – reprezentuje menší hodnotu z porovnání `1vw` a `1vh`
+* `vmax` – zkratka pro „viewport maximum“ – reprezentuje větší hodnotu z porovnání `1vw` a `1vh`
 
 ### Příklad praktického využití
 

@@ -3,7 +3,7 @@ CSS3 Transitions – jednoduché animace přechodu
 
 Animace přechodů mezi stavy vlastností elementu.
 
-Zní to možná komplikovaně. Představte si ale tuhle situaci:
+Zní to možná komplikovaně. Představte si ale tuto situaci:
 
 	.box {
 		background: green;
@@ -24,9 +24,9 @@ Nic složitého. Představte si také, že chcete změnu barvy po najetí myši 
 		background: blue;
 	}
 
-CSS přechody se typicky spouští po najetí myši, můžete ji ale spustit například přidáním třídy javascriptem po kliknutí `.box.clicked { background: blue; }`.
+CSS přechody se typicky spouští po najetí myši, můžete je ale spustit například přidáním třídy javascriptem po kliknutí `.box.clicked { background: blue; }`.
 
-Zkuste si to na [cdpn.io/e/hJljB](http://cdpn.io/e/hJljB) 
+Zkuste si to na [cdpn.io/e/hJljB](http://cdpn.io/e/hJljB).
 
 V praxi
 -------
@@ -35,7 +35,7 @@ Takto můžete animovat téměř libovolnou CSS vlastnost včetně pozicování 
 
 S přechody jde vytvářet spousty legrace typu [animace rámečku](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek) nebo docela [divokých hover stavů](http://tympanus.net/Tutorials/OriginalHoverEffects/) nad boxy.
 
-Plnohodný animační nástroj to ovšem není. Pokud chcete mít průběh animace zcela pod kontrolou, podívejte se na [CSS3 animace](css3-animations.md).
+Plnohodnotný animační nástroj to ovšem není. Pokud chcete mít průběh animace zcela pod kontrolou, podívejte se na [CSS3 animace](css3-animations.md).
 
 Ale pozor, i s Transitions lze hrát velké divadlo! Čtěte dále.
 
@@ -56,7 +56,7 @@ Jediná povinná položka ve zkratce `transition`. Čas můžete udat v sekundá
 
 ### Hlídané vlastnosti
 
-Z vlastností, které v elementu měníte si můžete vybrat jen některé. Ostatní se prostě nebudou animovat. Samostatně s výchozí hodnoutou jako `transition-property: none`. Příklad:
+Z vlastností, které v elementu měníte, si můžete vybrat jen některé. Ostatní se prostě nebudou animovat. Samostatně s výchozí hodnotou jako `transition-property: none`. Příklad:
 
 	.box {
 		background: green;
@@ -68,31 +68,31 @@ Z vlastností, které v elementu měníte si můžete vybrat jen některé. Osta
 		margin-left: 200px;
 	}
 
-Dobré vědět, že animované přechody nelze aplikovat úplně na všechny CSS vlastnosti. Třeba vlastnost `display` byste animovali marně. Tady je [seznam animovatelných](http://www.w3.org/TR/css3-transitions/#animatable-properties).
+Je dobré vědět, že animované přechody nelze aplikovat úplně na všechny CSS vlastnosti. Třeba vlastnost `display` byste animovali marně. Tady je [seznam animovatelných](http://www.w3.org/TR/css3-transitions/#animatable-properties).
 
 ### Funkce průběhu
 
-Samostatně jako `transition-timing-function: ease`. Vybrat si můžete z [přednastavených](http://www.w3.org/TR/css3-transitions/#animatable-properties) nebo si nadefinovat [vlastní](http://matthewlein.com/ceaser/).
+Samostatně jako `transition-timing-function: ease`. Vybrat si můžete z [přednastavených](http://www.w3.org/TR/css3-transitions/#animatable-properties), nebo si nadefinovat [vlastní](http://matthewlein.com/ceaser/).
 
 ### Zpoždění
 
-Animaci můžete spustit o chvíli později než nastane změna vlastností. Samostatně jako `transition-delay: 0s`.
+Animaci můžete spustit o chvíli později, než nastane změna vlastností. Samostatně jako `transition-delay: 0s`.
 
 ### Řetězení animací
 
 Pokud měníte více vlastností, nemusíte je animovat najednou. Docela snadno je poskládáte za sebe. A otevřete tím úplně novou dimenzi možností tvorby animací.
 
-Obě animace v následujícím příkladu trvají 200 milisekund. Druhá, která animuje `backgorund-color`, se spouští s vteřinovým zpožděním po skončení první:
+Obě animace v následujícím příkladu trvají 200 milisekund. Druhá, která animuje `background-color`, se spouští s vteřinovým zpožděním po skončení první:
 
 	transition: transform 200ms, 
 	  background-color 200ms 1s;
 
-Nejlépe opět vidět v prohlížeči — [cdpn.io/e/vIGAk](http://cdpn.io/e/vIGAk).
+Nejlépe je to opět vidět v prohlížeči – [cdpn.io/e/vIGAk](http://cdpn.io/e/vIGAk).
 
 
 Podpora v prohlížečích
 ----------------------
 
-IE10+. Když budete `transition` používat pro dekorativní (nikoliv funkční) animaci, můžete je udělat výrazně snadněji než Javascriptem a ve starších prohlížečích nebude chybějící animace nikomu vadit.
+IE10+. Když budete `transition` používat pro dekorativní (nikoliv funkční) animaci, můžete ji udělat výrazně snadněji než Javascriptem a ve starších prohlížečích nebude chybějící animace nikomu vadit.
 
 Pokud děláte funkční animaci (např. indikaci stavu nahrávání), připravte pomocí detekce vlastností alternativní řešení pro starší prohlížeče.

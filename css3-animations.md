@@ -1,7 +1,7 @@
 CSS3 Animations – plnohodnotné animace
 ======================================
 
-Možná se  budete divit, ale tohle jsou první nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight …) nebo animují prostředkem, který pro tento účel nebyl navržen — javascriptem.
+Možná se  budete divit, ale toto jsou první nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight…), nebo animují prostředkem, který pro tento účel nebyl navržen – javascriptem.
 
 Jak se liší od [transitions](css3-transitions.md)? V animacích (`animation`) máte celou akci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. Přechody (`transition`) jsou určené jen pro jednoduché animované přechody změny stavu CSS vlastnosti.
 
@@ -29,12 +29,12 @@ Animaci si nejdřív nadefinujete pomocí at-rule (zavináčové funkce) `@keyfr
 	}
 
 
-### `animation-name` — název animace
+### `animation-name` – název animace
 
 Můžete použít i samostatně jako `animation-name: my_animation`.
 
 
-### `animation-duration` — čas trvání
+### `animation-duration` – čas trvání
 
 Nastavíte ve vteřinách (`.5s`) nebo v milisekundách (`500ms`). Výchozí hodnota `animation-duration: 0s`.
 
@@ -42,41 +42,41 @@ Nastavíte ve vteřinách (`.5s`) nebo v milisekundách (`500ms`). Výchozí hod
 ### `animation-timing-function` – časová funkce průběhu
 
 
-Podobně jako u [transition](css3-transitions.md), lze využít funkce přednastavené nebo definovat vlastní. Samostatný zápis a výchozí hodnota vypadá takto: `animation-timing-function: ease`.
+Podobně jako u [transition](css3-transitions.md) lze využít funkce přednastavené nebo definovat vlastní. Samostatný zápis a výchozí hodnota vypadá takto: `animation-timing-function: ease`.
 
 ### `animation-delay` – zpoždění startu
 
-Jakou dobu má animace čekat než se rozběhne? Opět ve vteřinách nebo milisekundách. Přednastavena je samozřejmě nulová hodnota: `animation-delay: 0`.
+Jakou dobu má animace čekat, než se rozběhne? Opět ve vteřinách nebo milisekundách. Přednastavena je samozřejmě nulová hodnota: `animation-delay: 0`.
 
 
-### `animation-iteration-count` — počet opakování
+### `animation-iteration-count` – počet opakování
 
 Lze nastavit číslo nebo nekonečný počet opakování pomocí `infinite`. Přednastavená je hodnota `animation-iteration-count: 1`.
 
 
-### `animation-direction` — směr průběhu
+### `animation-direction` – směr průběhu
 
-Na rozdíl od transitions, v případě opakování animace se stav vrátí na výchozí keyframe (0%) a znovu pokračuje k cíli. Pokud chceme, aby na sebe jednotlivá opakování animace navazovaly, musíme směr průběhu nastavit na hodnotu `alternate`. Samostatně jako `animation-direction: alternate`.
+Na rozdíl od transitions se v případě opakování animace stav vrátí na výchozí keyframe (0%) a znovu pokračuje k cíli. Pokud chceme, aby na sebe jednotlivá opakování animace navazovala, musíme směr průběhu nastavit na hodnotu `alternate`. Samostatně jako `animation-direction: alternate`.
 
 
-### `animation-fill-mode` — směr přepsání vlastností
+### `animation-fill-mode` – směr přepsání vlastností
 
-Výchozí stav naší animace bude vypadat takto: před startem animování a po jeho skončení se na animovaný element nijak neaplikují CSS vlastnosti z keyframů animace. Vlastností `animation-fill-mode` toto chování můžeme změnit.
+Výchozí stav naší animace bude vypadat takto: Před startem animování a po jeho skončení se na animovaný element nijak neaplikují CSS vlastnosti z keyframů animace. Vlastností `animation-fill-mode` toto chování můžeme změnit.
 
 Může nabývat čtyř hodnot:
 
-- `none` - výchozí hodnota.
-- `backwards` - i když má element jiné nastavení vlastností, při jeho zobrazení se použijí hodnoty z keyframe 0%.
-- `forwards` - po skončení poslední iterace animace zůstane objekt ve stejném stavu jako je v keyframe 100% a nevrací se zpět.
-- `both` - aplikuje `forwards` i `backwards`.
+- `none` — výchozí hodnota.
+- `backwards` — i když má element jiné nastavení vlastností, při jeho zobrazení se použijí hodnoty z keyframe 0%.
+- `forwards` — po skončení poslední iterace animace zůstane objekt ve stejném stavu, jako je v keyframe 100%, a nevrací se zpět.
+- `both` — aplikuje `forwards` i `backwards`.
 
-### `animation-play-state` — stav přehrávání
+### `animation-play-state` – stav přehrávání
 
-Vlastnost, která jako jediná není součástí zkratky animation a je třeba ji používat vždy samostatně. Animaci můžete dočasně zastavit pomocí `animation-play-state: paused`. Co dělá druhá možná hodnota — `running` — je asi zřejmé.
+Vlastnost, která jako jediná není součástí zkratky animation a je třeba ji používat vždy samostatně. Animaci můžete dočasně zastavit pomocí `animation-play-state: paused`. Co dělá druhá možná hodnota – `running` – je asi zřejmé.
 
 ### `@keyframes` – klíčové snímky průběhu animace
 
-Definují začátek (klíčové slovo `from` nebo `0%`), průběh (pomocí procent z průběhu) a konec (`to` nebo `100%`) animace. Přechod mezi jednotlivými keyframes vypočítá prohlížeč sám. Začátek a konec je potřeba nastavit vždy, počet keyframes mezi nimi neni nijak limitovaný.
+Definují začátek (klíčové slovo `from` nebo `0%`), průběh (pomocí procent z průběhu) a konec (`to` nebo `100%`) animace. Přechod mezi jednotlivými keyframes vypočítá prohlížeč sám. Začátek a konec je potřeba nastavit vždy, počet keyframes mezi nimi není nijak limitovaný.
 
 
 Podpora v prohlížečích
@@ -86,7 +86,7 @@ CSS3 animace nepodporuje například IE9 a starší: [caniuse.com/#feat=css-anim
 
 Strategii podpory starších prohlížečů je dobré zvolit podle typu animace.
 
-V případě **vylepšujících animací** (drobná i větší estetické drobnosti v uživatelském rozhraní, u kterých uživateli nevadí, že neproběhnou) není důvod tvořit alternativní řešení.
+V případě **vylepšujících animací** (měnší i větší estetické drobnosti v uživatelském rozhraní, u kterých uživateli nevadí, že neproběhnou) není důvod tvořit alternativní řešení.
 
 Pokud **animace nese informaci** (například indikátor stavu načítání uživatelem vloženého souboru), pak je nutné nahradit CSS3 animaci javascriptem nebo detekovat prohlížeče, jež CSS3 animace neovládají a alternativu nabídnout jen jim.
 
