@@ -85,7 +85,7 @@ module.exports = function(grunt) {
 
 
   // pust po zmene obrazku (resi i svg)
-  grunt.registerTask('img', ['svg2png', 'imagemin', 'responsive_images']);
+  grunt.registerTask('img', ['copy', 'svg2png', 'imagemin', 'responsive_images']);
 
   // kdyz menis CSS a javascript, trva dele
   grunt.registerTask('default', ['img']);
