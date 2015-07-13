@@ -59,17 +59,17 @@ module.exports = function(grunt) {
         {
           name: "small",
           width: 600,
-          quality: 80
+          quality: 100
         },
         {
           name: "medium",
           width: 1024,
-          quality: 80
+          quality: 100
         },
         {
           name: "large",
           width: 1600,
-          quality: 80
+          quality: 100
         }
         ]
       },
