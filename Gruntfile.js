@@ -17,15 +17,15 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    // Kopirovani obrazku
-    // ------------------
+    // Kopirovani bitmapovych obrazku
+    // ------------------------------
 
     copy: {
       main: {
         files: [
           {
             expand: true,
-            cwd: 'path/',
+            cwd: 'src/images/',
             src: ['**.{jpg,gif,png}'],
             dest: 'dist/images/original/'
           },
