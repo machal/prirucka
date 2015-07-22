@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         sizes: [
         {
           name: "small",
-          width: 600,
+          width: 650, // Aby se v ODT veslo na sirku stranky
           quality: 100
         },
         {
