@@ -7,11 +7,16 @@ Podivná věc, která nás nutí psát jeden CSS kód vícekrát.
 Pojďme si to ukázat na příkladu. CSS3 transformaci otočením musíme aktuálně zapsat takhle:
 
     .box {
-        -webkit-transform: rotate(7.5deg); /* Chrome, Safari 3.1+ */
-        -moz-transform: rotate(7.5deg); /* Firefox 3.5-15 */
-        -ms-transform: rotate(7.5deg); /* IE 9 */
-        -o-transform: rotate(7.5deg); /* Opera 10.50-12.00 */
-        transform: rotate(7.5deg); /* Firefox 16+, IE 10+, Opera 12.10+ */
+        /* Chrome, Safari 3.1+: */
+        -webkit-transform: rotate(7.5deg);
+        /* Firefox 3.5-15: */
+        -moz-transform: rotate(7.5deg);
+        /* IE 9: */
+        -ms-transform: rotate(7.5deg);
+        /* Opera 10.50-12.00: */
+        -o-transform: rotate(7.5deg);
+        /* Firefox 16+, IE 10+, Opera 12.10+: */
+        transform: rotate(7.5deg);
     }
 
 V komentářích jsou uvedené prohlížeče, které k datu vzniku tohoto článku podporují danou syntaxi.

@@ -10,7 +10,8 @@ Nejdřív pomocí at-pravidla `@font-face` nadeklarujete název rodiny a cestu k
 
     @font-face {
         font-family: _nazev_rodiny_;
-        src: url(_cesta_k_souboru_s_pismem_) format(_format_souboru_);
+        src: url(_cesta_k_souboru_s_pismem_)
+          format(_format_souboru_);
     }
 
 Pak název rodiny jednoduše zavoláte v běžném CSS:
@@ -36,11 +37,17 @@ Pokud potřebujete podporovat všechny systémy, zápis je trošku složitějš�
 
     @font-face {
         font-family: 'MyWebFont';
-        src: url('webfont.eot'); /* IE9 v kompatibilním režimu */
-        src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('webfont.woff') format('woff'), /* Všechny moderní prohlížeče */
-            url('webfont.ttf')  format('truetype'), /* Starší Safari, Android, iOS */
-            url('webfont.svg') format('svg'); /* iOS 4.3 a starší */
+        /* IE9 v kompatibilním režimu: */
+        src: url('webfont.eot');
+        src:
+        /* IE6-IE8: */
+          url('webfont.eot?#iefix') format('embedded-opentype'),
+        /* Všechny moderní prohlížeče: */
+          url('webfont.woff') format('woff'),
+        /* Starší Safari, Android, iOS: */
+          url('webfont.ttf')  format('truetype'),
+        /* iOS 4.3 a starší */
+          url('webfont.svg') format('svg');
     }
 
 Dnes ale typicky potřebujete jen soubory ve formátu WOFF, TTF (kvůli starším Androidům) a EOT (kvůli IE8−). Ale čekají nás světlé zítřky. S formátem WOFF.

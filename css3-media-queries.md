@@ -16,12 +16,14 @@ Syntaxe
 Můžete je vložit přímo do CSS souboru:
 
 	@media (_podminky_) {
-		/* css kod, ktery se aplikuje jen po splneni _podminek_ */
+		/* css kod, ktery se aplikuje
+    jen po splneni _podminek_ */
 	}
 
 Nebo do HTML na místě reference na CSS soubor:
 
-	<link rel="stylesheet" href="mobile.css" media="max-width: 480px">
+	<link rel="stylesheet"
+    href="mobile.css" media="max-width: 480px">
 
 ### Minimální/maximální výška/šířka
 
@@ -49,7 +51,8 @@ Vraťme se ke zbývajícím dotazům na rozměry viewportu. Lze si domyslet, že
 
 Dotazy na média můžete pomocí operátoru `and` řetězit jednak kombinovat mezi sebou a taky kombinovat s typy médií:
 
-	@media screen and (min-width: 400px) and (max-height: 600px) { … }
+	@media screen and (min-width: 400px)
+    and (max-height: 600px) { … }
 
 Místo očekávaného `or` se používá čárka:
 
