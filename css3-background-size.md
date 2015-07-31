@@ -21,7 +21,7 @@ Klíčové slovo `cover` zajistí, aby obrázek pokryl celou plochu elementu. `c
 
 <img class="picture" src="content/schemes/CSS3-background-size-cover-contain.png" width="700" height="394" alt="background-size: cover/contain">
 
-`background-size: cover` použijete například pro zajištění, aby obrázek na pozadí stránky pokryl celou její plochu – [d.alistapart.com/supersize-that-background-please/index3.html](http://d.alistapart.com/supersize-that-background-please/index3.html)
+`background-size: cover` použijete například pro zajištění, aby obrázek na pozadí stránky pokryl celou její plochu – [alistapart.com/d/supersize-that-background-please/index3.html](http://alistapart.com/d/supersize-that-background-please/index3.html)
 
 `background-size: contain` zase v situaci, kdy máte ikonku na pozadí elementu, jenž bude na různých rozlišeních obrazovky různě velký. Nebo když chcete prohlížeči poslat dvojnásobně nebo třeba trojnásobně velký obrázek kvůli vysokokapacitním displejům – [studiopress.com/design/css-background-size-graphics.htm](http://www.studiopress.com/design/css-background-size-graphics.htm)
 

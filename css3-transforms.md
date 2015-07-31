@@ -45,7 +45,7 @@ Souřadnice bodu, ze kterého transformace vychází. Přednastavený je střed 
 	  transform-origin: top left;
 	}
 
-[cdnp.io/e/brBgk](http://cdnp.io/e/brBgk)
+[cdpn.io/e/brBgk](http://cdpn.io/e/brBgk)
 
 ## Podpora v prohlížečích
 
