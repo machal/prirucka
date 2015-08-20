@@ -15,7 +15,8 @@ Luke Wroblewski [tezi nadefinoval](http://www.lukew.com/ff/entry.asp?933) asi ta
 
 „Designéři, navrhujte nejprve pro mobily. Protože smartphony se prudce šíří mezi uživateli, protože nás díky svými omezeními nutí zaměřit pozornost na to nejdůležitější a protože rozšiřují naše možnosti.“
 
-*Obrázek – Wroblewski: „V jedno Mobile First věřiti budeš.”*
+<img class="picture" src="content/schemes/mobile-fist-wroblewski-1_small.jpg" height="394" alt="Wroblewski: „V jedno Mobile First věřiti budeš.”">
+
 
 ## Mobile First bez kontroverze = multidevice design
 
@@ -55,7 +56,8 @@ U sebe to počítám na roky. Máte pak dost času naučit dělat webdesign jina
 
 Pokud jste přijali víru „Mobile First” až teď, máte málo času. Proto si neuškodí udělat pár responzivních webů a s mobily si opravdu vyhrát i když to klient nechce.
 
-*Obrázek – Wroblewski: Desktopový webaři, zapomeň, abys den sváteční světil!*
+<img class="picture" src="content/schemes/mobile-fist-wroblewski-2_small.jpg" height="394" alt="Wroblewski: Desktopový webaři, zapomeň, abys den sváteční světil!">
+
 
 ## Je 16 % málo nebo dost? Trend je jasný
 
@@ -95,7 +97,7 @@ Takže – i pokud jsem vás ani teď nepřesvědčil, že ty mobily jsou fakt d
 
 Ale vážně – pojďme si to ukázat na konkrétním příkladu. Obrázek je z připravovaného – Mobile First, ach jistě – redesignu [VašeČočky.cz](http://vasecocky.cz/):
 
-*Obrázek – Mobile First na VČ.cz*
+<img class="picture" src="content/schemes/mobile-first-vc_small.jpg" height="394" alt="VašeČočky.cz">
 
 
 V desktopové verzi se uživatel uvnitř kategorií produktů pohybuje třemi a na některých stránkách i čtyřmi způsoby.
@@ -106,10 +108,7 @@ Pojďme si tedy shrnout Mobile First:
 
 - nejde o upřednostňování mobilů, ale jejich emancipaci
 - v zásadě nám jde o design pro všechna zařízení
-- na čekání na větší mobilní návštěvnost nemáme jako webaři dost času, budeme muset mnohé změnit
+- na čekání na větší mobilní návštěvnost nemáme jako webaři dost času, budeme muset  změnit spoustu svých návyků
 - když s Mobile First začnete, máte šanci vylepšit i desktopový web
 
-*Obrázek – Wroblewski: Nepromluvíš už křivého svědectví proti Mobile First svému.*
-
-
-
+<img class="picture" src="content/schemes/mobile-fist-wroblewski-3_small.jpg" height="394" alt="Wroblewski: Nepromluvíš už křivého svědectví proti Mobile First svému.">
