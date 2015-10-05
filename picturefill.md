@@ -12,7 +12,7 @@ Druhá verze Picturefillu využívá standardizované syntaxe a tak se zápis bl
 
 Příklad zápisu pro [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes):
 
-```
+```html
 <img 
   sizes="(min-width: 40em) 80vw, 100vw"
   srcset="small.jpg 375w, medium.jpg 480w, large.jpg 768w" 
@@ -21,7 +21,7 @@ Příklad zápisu pro [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-
 
 Příklad zápisu pro [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture):
 
-```
+```html
 <picture>
   <!--[if IE 9]><video style="display: none;"><![endif]-->
   <source srcset="extralarge.jpg" media="(min-width: 1000px)">
@@ -41,7 +41,7 @@ Pokud chcete mít responzivní obrázky a zároveň jsou pro vás nevýhody druh
 
 Verze [1.x](https://github.com/scottjehl/picturefill/blob/1.2.1/README.md) se vyznačuje ošklivou syntaxí postavenou na spanech a tím, že umí vyřešit jen dva scénáře použití responzivních obrázků – podle rozlišení obrazovky a `device-pixel-ratio`. 
 
-```
+```html
 <span data-picture data-alt="Obrázek">
   <span data-src="small.jpg"></span>
   <span data-src="medium.jpg" 

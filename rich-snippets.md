@@ -19,7 +19,7 @@ Protože jsme ale na kóderském webu, ukážeme si jak lze strukturované úryv
 
 Pojďme si zápis demonstrovat na schématu [Event](http://schema.org/Event), které může označovat sportovní nebo kulturní události. Nebo taky [školení](http://www.vzhurudolu.cz/kurzy):
 
-<pre><code>
+<pre><code class="language-html">
 &lt;div <strong>itemscope itemtype=&quot;http://schema.org/Event&quot;</strong>&gt;
 	&lt;h3 <strong>itemprop=&quot;name&quot;</strong>&gt;
 		&lt;a href=&quot;/kurzy/webovy-frontend&quot; <strong>itemprop=&quot;url&quot;</strong>&gt;

@@ -21,19 +21,23 @@ Pro výšku řádku máme k dispozici 2 proměnné:
 
 Tu druhou ve vlastním kódu využívám velmi často. Obvykle jako podíly nebo násobky výchozí hodnoty. Stejný princip Bootstrap totiž používá ve svém vlastním kódu. Vaše odvozená komponenta může vypadat takto:
 
-    .page-section { 
-        margin-bottom: 2*@line-height-computed;
-        …
-    }
+```less
+.page-section { 
+    margin-bottom: 2*@line-height-computed;
+    …
+}
+```
 
 ## Další velikosti písma a výšky řádku
 
 Velikosti písma ve vašem kódu nastavíte pomocí `@font-size-base`, `@font-size-large`, `@font-size-small`. Výchozí hodnoty jsou `14px`, `18px` nebo `12px`. Pro vlastní nadpisy použijete nebo modifikujte nadpisové proměnné `@font-size-h1` - `@font-size-h6`.
 
-    .page-section-header {
-        font-size: @font-size-h2;
-        …
-    }
+```less
+.page-section-header {
+    font-size: @font-size-h2;
+    …
+}
+```
 
 Podobně v proměnných najdete varianty pro výšku řádku `@line-height-large: 1.3333333`  a `@line-height-small: 1.5`.
 
@@ -43,11 +47,13 @@ Vnitřní okraje nebo prostě padding. Pro velikosti tlačítek, formulářů a 
 
 `@padding-base`, `-large`, `-small`, `-xs` s příznaky `-horizontal` a `-vertical`. Takže horní padding totožný s tím co používá například Bootstrap tlačítko získáte z proměnné `@padding-base-vertical`. Tyhle  hodnoty také používám velmi často:
 
-    .inline-element {
-        padding: @padding-base-vertical
-            @padding-base-horizontal;
-        …
-    }
+```less
+.inline-element {
+    padding: @padding-base-vertical
+        @padding-base-horizontal;
+    …
+}
+```
 
 Samozřejmě — typografické principy nejsou jediným systémem uvnitř Bootstrapu, který se vyplatí používat i ve vlastním kódu. Mohli bychom vést dlouhé řeči o barvách, responzivních breakpointech, layoutu, nastavování vzhledu komponent… To ale nechme na další články nebo [doražte na školení](http://www.vzhurudolu.cz/kurzy/bootstrap).
 

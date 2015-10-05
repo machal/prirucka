@@ -4,11 +4,11 @@ Nový tag, umožňující definování variant obrázku pro různé stavy v resp
 
 ## Ukázka zápisu
 
-```
+```html
 <picture>
-    <source media="(min-width: 1024px)" srcset="large.jpg">
-    <source media="(min-width: 600px)" srcset="medium.jpg">
-    <img src="small.jpg" alt="…">
+  <source media="(min-width: 1024px)" srcset="large.jpg">
+  <source media="(min-width: 600px)" srcset="medium.jpg">
+  <img src="small.jpg" alt="…">
 </picture>
 ```
 
@@ -27,7 +27,7 @@ Ve všech ostatních případech a tedy v naprosté většině případů vám b
 
 ## Art direction – obrázky pro různá rozlišení mají také různý obsah
 
-```
+```html
 <picture>
   <source 
   	srcset="large_1600.png" 
@@ -51,7 +51,7 @@ Dobré vědět, že z variant obrázku v `<source>` se vezme vždy první vyhovu
 
 Vybírat obrázky můžete i podle formátu. Použijte atribut `type=""`. Příklad — některé prohlížeče zvládají nový úsporný formát obrázků [WebP](http://caniuse.com/webp).
 
-```
+```html
 <picture>
 	<source media="(min-width: 1024px)" srcset="large.webp" type="image/webp">
 	<source media="(min-width: 1024px)" srcset="large.jpg">

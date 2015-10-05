@@ -6,7 +6,7 @@ Na atributech `srcset` a `sizes` je hezké, že poměrně složité rozhodován�
 
 ## `srcset` – sada zdrojů obrázku a jejich vlastností
 
-<pre><code>
+<pre><code class="language-html">
 &lt;img src=&quot;small.png&quot; 
 <strong>srcset=&quot;small.png 600w, medium.png 1024w, large.png 1600w&quot;</strong>
 alt=&quot;Obr&aacute;zek&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;	
@@ -30,7 +30,7 @@ Zatím jsme zmínili jen šířku obrázku – **deskriptor `w`**. Ten říká j
 
 Druhý **deskriptor `x`** určuje připravenost souboru s obrázkem pro různé `device-pixel-ratio` poměry, například:
 
-```
+```html
 <img … srcset="image.jpg, image@2x.jpg 2x">
 ```
 
@@ -42,7 +42,7 @@ Pojďme se ale podívat na atribut, který prohlížeči umožní vybírat nejen
 
 V praxi totiž tak často nepotřebujeme volit obrázek podle šířky okna, ale podle šířky obrázku v rámci layoutu:
 
-<pre><code>
+<pre><code class="language-html">
 &lt;img src=&quot;small.png&quot; 
 srcset=&quot;small.png 600w, medium.png 1024w, large.png 1600w&quot;
 <strong>sizes=&quot;(min-width: 768px) 300px, 100vw&quot;</strong>
@@ -70,13 +70,13 @@ Opět tedy máme [demo na CodePenu](http://codepen.io/machal/pen/azBmaX?editors=
 
 Do `600px` breakpointu je to jednoduché – obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna a tak musíme odečíst výchozí `margin` u `<body>`, který mají prohlížeče nastavený na `8px`:
 
-```
+```css
 calc(100vw - 2*8px)
 ```
 
 Od `600px` breakpointu pak musíme vyjít z CSS layoutu:
 
-```
+```css
 @media only screen and (min-width: 600px) {  
   .image {
     width: 49%;
@@ -86,7 +86,7 @@ Od `600px` breakpointu pak musíme vyjít z CSS layoutu:
 
 Přepsáno do funkce `calc()` to vypadá takto:
 
-```
+```css
 calc((100vw - 2 * 8px) * 0.49)
 ```
 
@@ -98,7 +98,7 @@ A ještě v prostém jazyce:
 
 Takže celý zápis tagu `<img>` bude vypadat takto:
 
-<pre><code>
+<pre><code class="language-html">
 &lt;img src=&quot;small_600.png&quot; 
 srcset=&quot;small_600.png 600w, medium_1024.png 1024w, large_1600.png 1600w&quot; 
 <strong>sizes=&quot;(min-width: 600px) calc((100vw - 2*8px) * 0.49), calc(100vw - 2*8px)&quot;</strong>
