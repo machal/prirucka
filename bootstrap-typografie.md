@@ -1,4 +1,4 @@
-# git st 
+# Jak správně navázat na typografické principy Bootstrapu
 
 Rozhraní webů nebo aplikací stavěné na Bootstrapu můžete budovat dvěma způsoby. V prvním si přidáte vlastní CSS a bez velkého uvažování píšete kód nových komponent. 
 
