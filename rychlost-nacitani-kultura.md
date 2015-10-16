@@ -42,6 +42,7 @@ https://speedcurve.com/vzhru-dolu/site/1/1/chrome/1/90/6jsa57zzpkgbl2r470uw3f4eq
 https://speedcurve.com/vzhru-dolu/site/1/4/chrome/1/90/6jsa57zzpkgbl2r470uw3f4eqlm9dn/
 https://speedcurve.com/vzhru-dolu/deploy/1/chrome/1/30/6jsa57zzpkgbl2r470uw3f4eqlm9dn/
 https://speedcurve.com/vzhru-dolu/responsive/1/a/1/180/speedindex/6jsa57zzpkgbl2r470uw3f4eqlm9dn/
+https://speedcurve.com/vzhru-dolu/assets/1/chrome/6jsa57zzpkgbl2r470uw3f4eqlm9dn/
 
 Je to drahé (minimálě 20 dolarů měsíčně), ale být firmou nebo vyvíjet vlastní produkt, rozhodně to zvážím.
 
