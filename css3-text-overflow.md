@@ -4,7 +4,10 @@ CSS3 Text Overflow – způsob přetékání textu
 
 Vytečkování textu, který přesahuje šířku elementu.
 
-	text-overflow: ( clip | ellipsis | <_retezec_> );
+```
+text-overflow:
+  ( clip | ellipsis | <_retezec_> );
+```
 
 Když na školeních ukazuji `text-overflow: ellipsis`, opakuje se vždy stejný scénář. Polovina účastníků zívá: „Hm, tohle používám už dva roky…“ A druhá polovina? Nadšeně si píše: „Musím použít hned zítra!“
 
@@ -17,12 +20,15 @@ Představte si navigační lištu, kdy v každém případě potřebujete, aby t
 
 Pak stačí `ellipsis` doplnit o dvě další deklarace zajišťující „jednořádkovost“:
 
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
+```css
+.element {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+```
 
 Zkuste si naživo změnit velikost okna v příkladu na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
-
 
 Podpora v prohlížečích
 ----------------------
