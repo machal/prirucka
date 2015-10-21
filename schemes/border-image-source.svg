@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="200" height="200" viewBox="0, 0, 200, 200">
+  <g id="Background">
+    <rect x="0" y="0" width="200" height="200" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_1">
+    <g>
+      <path d="M0,-1.667 L200,-1.667 L200,200 L0,200 L0,-1.667 z" fill="#FFFFFF"/>
+      <path d="M200,-1.667 L200,200 L0,200 L0,-1.667 L200,-1.667 z M192,6.333 L8,6.333 L8,192 L192,192 L192,6.333 z" fill="#D06900"/>
+    </g>
+    <g>
+      <path d="M0,-0.833 L200,-0.833 L200,200.833 L0,200.833 L0,-0.833 z" fill="#FFFFFF"/>
+      <path d="M200,-0.833 L200,200.833 L0,200.833 L0,-0.833 L200,-0.833 z M192,7.167 L8,7.167 L8,192.833 L192,192.833 L192,7.167 z" fill="#D06900"/>
+    </g>
+  </g>
+  <g id="Layer_2">
+    <g>
+      <path d="M8,7.333 L192,7.333 L192,193 L8,193 L8,7.333 z" fill="#FFFFFF"/>
+      <path d="M192,7.333 L192,193 L8,193 L8,7.333 L192,7.333 z M184,15.333 L16,15.333 L16,185 L184,185 L184,15.333 z" fill="#155400"/>
+    </g>
+  </g>
+  <g id="Layer_3">
+    <g>
+      <path d="M16,13.5 L184.333,13.5 L184.333,186.167 L16,186.167 L16,13.5 z" fill="#FFFFFF"/>
+      <path d="M184.333,13.5 L184.333,186.167 L16,186.167 L16,13.5 L184.333,13.5 z M176.333,21.5 L24,21.5 L24,178.167 L176.333,178.167 L176.333,21.5 z" fill="#32A600"/>
+    </g>
+  </g>
+</svg>

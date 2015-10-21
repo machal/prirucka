@@ -1,20 +1,44 @@
+Box Reflection – odlesk objektu
+===============================
 
-Box Reflection
-===============
+Prohlížeč vykreslí zrcadlový odlesk pod objektem nebo z jeho strany.
 
-Odlesk elementu.
+Syntaxe
+-------
 
-Pozor, není součástí specifikace CSS3. Webkit-only vlastnost, kterou nelze použít na široce dostupných webech, ale pro specifické aplikace pro omezenou cílovou skupinu se může hodit.
+Syntaxe pro prohlížeče postavené na Webkit jádře:
 
-Syntaxe vypadá takto:
+	-webkit-box-reflect: 
+		_směr_odlesku 
+		_posun_ 
+		_maska_;
+	
+### Směr odlesku
 
-	-webkit-box-reflect: _smer_ _posun_ _maska_;
+Povinná položka, která může nabývat hodnot `above`, `below`, `left` nebo `right`.
 
-<p data-height="200" data-theme-id="502" data-slug-hash="CLEhF" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/CLEhF'>Box Reflect</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+	-webkit-box-reflect: below;
 
+### Posun
+
+Jak moc se odlesk vzdálí od původního objektu. Uvádí se v běžných CSS jednotkách – `px`, `em` a dalších.
+
+	-webkit-box-reflect: below 5px;
+
+### Maska
+
+Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu maskou bývá [CSS gradient](css3-gradients.md). Může to být ale i obrázek. Co je v masce černé, zobrazí se, co je průhledné nezobrazí se.
+
+	-webkit-box-reflect: below 5px linear-gradient(to bottom, transparent, black);
+	
+Živá ukázka příkladu je na [cdpn.io/e/CLEhF](http://cdpn.io/e/CLEhF).	
 
 Podpora v prohlížečích
 ----------------------
 
-Jen prohlížeče podstavené na Webkit jádře.
+Jen prohlížeče podstavené na Webkit jádře. Ke dnešku tedy funguje ve všech Safari i Android Browseru. Dokonce ve všech Chrome, i když už dnes běží na vlastním jádře Blink. [caniuse.com/box-reflect](http://caniuse.com/box-reflect)
+
+Ve Firefoxu lze odlesku dosáhnout pomocí vlastnosti `-moz-element()`. [lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/](http://lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/)
+
+Na vlastnost se tedy nelze spolehnout na široce dostupných webech, ale pro interní aplikace s omezenou cílovou skupinou se může hodit.
+

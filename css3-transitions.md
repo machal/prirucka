@@ -1,32 +1,31 @@
-
-CSS3 Transitions
-===============
+CSS3 Transitions – jednoduché animace přechodu
+==============================================
 
 Animace přechodů mezi stavy vlastností elementu.
 
 Zní to možná složitě. Představte si ale tuhle situaci:
 
-	.box { 
-	  background: green; 
+	.box {
+		background: green;
 	}
-	
-	.box:hover { 
-	  background: blue; 
+
+	.box:hover {
+		background: blue;
 	}
 
 Vy ale chcete změnu barvy po najetí myši animovat. A právě k tomu slouží transitions, animace přechodů mezi stavy CSS vlastností.
 
-	.box { 
-	  background: green; 
-	  transition: 300ms;
+	.box {
+		background: green;
+		transition: 300ms;
 	}
-	
-	.box:hover { 
-	  background: blue; 
+
+	.box:hover {
+		background: blue;
 	}
 
 CSS přechody se typicky spouští po najetí myši, můžete ji ale spustit například přidáním třídy, kterou přidáte javascriptem po kliknutí/tapnutí `.box.clicked { background: blue; }`.
-	
+
 Zkuste si to naživo:
 
 <p data-height="179" data-theme-id="502" data-slug-hash="hJljB" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/hJljB'>CSS3 transition basic</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
@@ -37,7 +36,7 @@ V praxi
 
 A teď si představte, že takto můžete animovat téměř libovolnou CSS vlastnost včetně pozicování, [transformací](css3-transforms.md). Taky vidíte ten obří potenciál? Ano, s přechody jde generovat spousty legrace typu [animace rámečku](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek) nebo docela [divoké hover stavy](http://tympanus.net/Tutorials/OriginalHoverEffects/) nad boxy.
 
-Takže víme, že CSS3 Transitions umí udělat animace přechodu. Plnohodný animační nástroj to ovšem není. Podívejte se na [CSS3 animace](css3-animations.md). 
+Takže víme, že CSS3 Transitions umí udělat animace přechodu. Plnohodný animační nástroj to ovšem není. Podívejte se na [CSS3 animace](css3-animations.md).
 
 Ale pozor, i s transitions lze hrát velké divadlo! Čtěte dále.
 
@@ -46,13 +45,13 @@ Syntaxe
 -------
 
 	transition:
-	  (_hlidane_vlastnosti_)
-	  _trvani_animace_
-	  (_funkce_prubehu_)
-	  (_zpozdeni_)
-	  (, _dalsi_transition_);
-  
-  
+		(_hlidane_vlastnosti_)
+		_trvani_animace_
+		(_funkce_prubehu_)
+		(_zpozdeni_)
+		(, _dalsi_transition_);
+
+
 ### Trvání animace
 
 Jediná povinná položka v shorthandu `transition`. Čas můžete udat v sekundách nebo milisekundách. Samostatně tedy s výchozí hodnotou jako `transition-duration: 0s`.
@@ -61,14 +60,14 @@ Jediná povinná položka v shorthandu `transition`. Čas můžete udat v sekund
 
 Z vlastností, které v elementu měníte si můžete vybrat jen některé. Ostatní se prostě nebudou animovat. Samostatně s výchozí hodnoutou jako `transition-property: none`. Příklad:
 
-	.box { 
-	  background: green; 
-	  transition: margin 300ms;
+	.box {
+		background: green;
+		transition: margin 300ms;
 	}
-	
-	.box:hover { 
-	  background: blue; 
-	  margin-left: 200px;
+
+	.box:hover {
+		background: blue;
+		margin-left: 200px;
 	}
 
 Dobré vědět, že animované přechody nelze aplikovat úplně na všechny CSS vlastnosti. Třeba vlastnost `display` byste animovali marně. Tady je [seznam animovatelných](http://www.w3.org/TR/css3-transitions/#animatable-properties).

@@ -1,11 +1,11 @@
-CSS3 Flexbox
-============
-    
+CSS3 Flexbox – layout pomocí pružných boxů
+==========================================
+
 Flexbox je úplně nový layoutovací modul.
 
 Aktuální implementace flexboxu mají pár „ale…”. Celkově vzato je ovšem [CSS Flexible Box Layout Module](http://www.w3.org/TR/css3-flexbox/) úžasný posun vpřed ve tvorbě webových layoutů.
 
-Skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí [tabulkového layoutu](http://www.jakpsatweb.cz/tabulky-design.html) v roce 2001. 
+Skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí [tabulkového layoutu](http://www.jakpsatweb.cz/tabulky-design.html) v roce 2001.
 
 A měl by pravdu, ovšem jen z malé části. Tabulkový layout nahrazuje jen jedna část flexboxu. Ten nám může být užitečný minimálně ve třech situacích:
 
@@ -18,7 +18,7 @@ Těch scénářů je samozřejmě daleko více. Podívejte se na hezkou stránku
 
 Příklad a technikálie
 ---------------------
-  
+
 <p data-height="158" data-theme-id="502" data-slug-hash="LhGuD" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/LhGuD'>CSS3 Flexbox příklad</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="http://codepen.io/assets/embed/ei.js"></script>
 
@@ -26,7 +26,7 @@ Na příkladu vidíte, že sloupce jsou pořád stejně vysoké. Stačí z rodi�
 
 Pak taky vidíte, že prvním a poslednímu sloupci stačilo nastavit `flex-grow: 1` a poslednímu `flex-grow: 3` a podle těchto proporcí si rozdělily šířku rodiče.
 
-No a nakonec si zkuste zmenšit okno tak, aby příklad neměl k dispozici více než 640 pixelů šířky. Pomocí [Media Queries](css3-media-queries.md) a nastavením vlastnosti `order: -1` přesunujeme druhý sloupec na první místo.   
+No a nakonec si zkuste zmenšit okno tak, aby příklad neměl k dispozici více než 640 pixelů šířky. Pomocí [Media Queries](css3-media-queries.md) a nastavením vlastnosti `order: -1` přesunujeme druhý sloupec na první místo.
 
 
 Zajímavé odkazy

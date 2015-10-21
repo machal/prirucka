@@ -1,25 +1,69 @@
-# CSS3 Box Sizing
-  
-Změna způsobu počítání šířky a výšky elementu, nebo-li box-modelu.
+CSS3 Box Sizing – způsob počítání velikosti boxu
+===============================================
 
-Dozvíte se, proč `box-sizing: border-box` milují vývojáři co dělají fluidní layout a taky nepřátelé matematiky. Čtěte dále.
+Změna způsobu počítání šířky a výšky elementu, jinak též řečeno box-modelu.
 
-Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v quirks módu? Šířka nebo výška elementu = viditelná šířka nebo výška obsahu + padding + border.
-
-To je border-box box-model.
-  
-<img class="picture" src="content/schemes/CSS3-box-sizing.svg" width="700" height="394" alt="box-sizing">
-  
-`content-box` nebo-li W3 box-model používají všechny moderní prohlížeče. Výpočet znáte: šířka nebo výška elementu = viditelná šířka nebo výška obsahu. Tohle je přednastavená hodnota vlastnosti box-sizing.
+Dozvíte se, proč `box-sizing: border-box` milují vývojáři co dělají fluidní layout a taky nepřátelé počítání. Čtěte dále.
 
 ## Syntaxe
 
-    box-sizing: content-box | border-box | padding-box
+	box-sizing: content-box | border-box | padding-box;
 
-První dva už znáte z textu výše. No a `padding-box` je `border-box` kde se do výpočtu nepřipočítá šířka vlastnosti `border`.
+Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v nestandardním módu? 
 
-## Tipy a triky
+	Šířka nebo výška elementu = viditelná šířka nebo výška obsahu + padding + border.
 
-1. Někdo využívá vlastnosti box-sizing v situaci kdy se mu špatně pracuje s W3 box modelem. Ten totiž spousta lidí [nemůže vystát](http://css-tricks.com/box-sizing/). Nelze se jim divit, od vývojáře W3 model očekává přátelství s matematikou. A tak prohlížeče nechávají v `border-box` počítat [všechny elementy](http://paulirish.com/2012/box-sizing-border-box-ftw/) — `* { box-sizing: border-box }`. Na to jsem si nikdy netroufl a tuhle úžasnou vlastnost používám jen [ve specifických situacích](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek). 
-2. Kde se `box-sizing` hodí určitě je sjednocení způsobu počítání [rozměrů formulářových elementů](http://www.vzhurudolu.cz/test/etc/input_box-sizing.html). Některé z nich totiž prohlížeče počítají jako `content-box` a některé `border-box` způsobem (např. `input type=„submit“ `nebo `select`).
-3. Mnoho využití má vlastnost Box Sizing v definování **fluidního layoutu**. Představte si například navigaci, jež má vždycky 5 položek. Šířka pak jedné bude 20%. A oddělovač mezi položkami je tvořený rámečkem fixní šířky. Pak opět potřebujete `box-sizing: border-box`. 
+Už víte? To je **`border-box` box-model**.
+
+<img class="picture" src="content/schemes/CSS3-box-sizing.svg" width="700" height="394" alt="box-sizing">
+
+Naproti tomu **`content-box` nebo-li „W3C box-model”** používají všechny moderní prohlížeče. Výpočet znáte: 
+
+	Šířka nebo výška elementu = viditelná šířka nebo výška obsahu
+
+A to je taky přednastavená hodnota vlastnosti `box-sizing`, kterou — naštěstí — můžeme změnit.
+
+Pro pořádek uveďme jak se počítá šířka a výška elementu u `box-sizing: padding-box` – je to vlastně `border-box` kde se do výpočtu nepřipočítá šířka vlastnosti `border`.
+
+Dobře, ale jak to můžeme využít? Podívejme se na několik možných scénářů.
+
+
+## Příklady využití
+
+### `* { box-sizing: border-box }`
+
+Někdo využívá vlastnosti box-sizing v situaci kdy se mu špatně pracuje s W3C box modelem. Ten totiž významná část webových vývojářů považuje za neintuitivní. Ti pak prohlížeče nechávají v border-box všechny elementy. Podobný přístup mají i moderní frontned frameworky Bootstrap nebo Foundation.
+
+### Fluidní layout
+
+Mnoho využití má vlastnost v responzivním webdesignu, konkrétně při práci s layoutem definovaných v procentuálních jednotkách. Představte si například navigaci, jež má vždy 5 položek. Šířka jedné pak bude `20%`. Oddělovač mezi položkami je vytvořený rámečkem fixní šířky:
+
+	.nav li {
+		width: 20%;  
+		display: inline-block;
+		border-left: .25em solid #fff;
+	}
+	
+Jenže takhle nám pátá  položka navigace odskočí na další řádku. Potřebujeme však jen prohlížeči oznámit, ať laskavě šířku položek navigace počítá pomocí `box-sizing: border-box`:
+	
+	.nav li {
+		box-sizing: border-box;
+		width: 20%;  
+		display: inline-block;
+		border-left: .25em solid #fff;
+	}	
+
+Živá ukázka příkladu je na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
+
+
+### Změna počítání rozměrů formulářových elementů
+
+Vlastnost `box-sizing` se moc hodí na sjednocení způsobu počítání výšky nebo šířky formulářových elementů. Některé z nich totiž prohlížeče počítají jako `content-box` a některé `border-box` způsobem (např. `input type=„submit“ `nebo `select`). Pokud chcete zajistit stejnou výšku formulářových prvků ve vašem designu, než je začnete stylovat, přepněte si je nejlépe do `box-sizing: border-box`. Živá ukázka problému s formulářovými elementy je na [cdpn.io/e/iBquK](http://cdpn.io/e/iBquK).
+
+## Podpora v prohlížečích
+
+IE7+ a všechny moderní prohlížeče. Pokud jste vlastnost neznali, budete se divit jak výborně je podporována: [caniuse.com/box-sizing](http://caniuse.com/box-sizing).
+
+Dobré ale vědět, že méně používanou hodnotu `padding-box` podporuje jen Firefox.
+
+

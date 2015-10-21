@@ -1,8 +1,5 @@
-
-CSS3 Multi-column Layout
-===============
-
-Vícesloupcová sazba. 
+CSS3 Multi-column Layout – vícesloupcová sazba textu
+====================================================
 
 Díky tomuto modulu text snadno nasázíte do více sloupců definované šířky podobně jako v novinové sazbě.
 
@@ -21,8 +18,10 @@ Definujeme šířku sloupce tak, aby se text dobře četl a šířku odsazení m
 <p data-height="235" data-theme-id="502" data-slug-hash="ohLgJ" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/ohLgJ'>CSS3 Multiple Columns</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="http://codepen.io/assets/embed/ei.js"></script>
 
+TODO lepší popis a vyřešení pro IE8.
+
 
 Podpora v prohlížečích
 ----------------------
 
-IE10+. Starší prohlížeče doporučuji řešit tvrdým fallbackem — text se tam prostě jen nezalomí do sloupců. 
+IE10+. Starší prohlížeče doporučuji řešit tvrdým fallbackem — text se tam prostě jen nezalomí do sloupců.
