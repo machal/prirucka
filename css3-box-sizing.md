@@ -3,27 +3,27 @@ CSS3 Box Sizing – způsob počítání velikosti boxu
 
 Změna způsobu počítání šířky a výšky elementu, jinak též řečeno box-modelu.
 
-Dozvíte se, proč `box-sizing: border-box` milují vývojáři co dělají fluidní layout a taky nepřátelé počítání. Čtěte dále.
+Dozvíte se, proč `box-sizing: border-box` milují vývojáři, kteří dělají fluidní layout, a taky nepřátelé počítání. Čtěte dále.
 
 ## Syntaxe
 
-	box-sizing: content-box | border-box | padding-box;
+    box-sizing: content-box | border-box | padding-box;
 
-Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v nestandardním módu? 
+Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v nestandardním módu?
 
-	Šířka nebo výška elementu = viditelná šířka nebo výška obsahu + padding + border.
+    Šířka nebo výška elementu = viditelná šířka nebo výška obsahu + padding + border.
 
 Už víte? To je **`border-box` box-model**.
 
 <img class="picture" src="content/schemes/CSS3-box-sizing.svg" width="700" height="394" alt="box-sizing">
 
-Naproti tomu **`content-box` nebo-li „W3C box-model”** používají všechny moderní prohlížeče. Výpočet znáte: 
+Naproti tomu **`content-box` neboli „W3C box-model“** používají všechny moderní prohlížeče. Výpočet znáte:
 
-	Šířka nebo výška elementu = viditelná šířka nebo výška obsahu
+    Šířka nebo výška elementu = viditelná šířka nebo výška obsahu
 
-A to je taky přednastavená hodnota vlastnosti `box-sizing`, kterou — naštěstí — můžeme změnit.
+A to je taky přednastavená hodnota vlastnosti `box-sizing`, kterou – naštěstí – můžeme změnit.
 
-Pro pořádek uveďme jak se počítá šířka a výška elementu u `box-sizing: padding-box` – je to vlastně `border-box` kde se do výpočtu nepřipočítá šířka vlastnosti `border`.
+Pro pořádek uveďme, jak se počítá šířka a výška elementu u `box-sizing: padding-box` – je to vlastně `border-box`, kde se do výpočtu nepřipočítá šířka vlastnosti `border`.
 
 Dobře, ale jak to můžeme využít? Podívejme se na několik možných scénářů.
 
@@ -32,26 +32,26 @@ Dobře, ale jak to můžeme využít? Podívejme se na několik možných scén�
 
 ### `* { box-sizing: border-box }`
 
-Někdo využívá vlastnosti box-sizing v situaci kdy se mu špatně pracuje s W3C box modelem. Ten totiž významná část webových vývojářů považuje za neintuitivní. Ti pak prohlížeče nechávají v border-box všechny elementy. Podobný přístup mají i moderní frontned frameworky Bootstrap nebo Foundation.
+Někdo využívá vlastnosti box-sizing v situaci, kdy se mu špatně pracuje s W3C box modelem. Ten totiž významná část webových vývojářů považuje za neintuitivní. Takoví pak prohlížeče nechávají počítat v border-box všechny elementy. Podobný přístup mají i moderní frontned frameworky Bootstrap nebo Foundation.
 
 ### Fluidní layout
 
-Mnoho využití má vlastnost v responzivním webdesignu, konkrétně při práci s layoutem definovaných v procentuálních jednotkách. Představte si například navigaci, jež má vždy 5 položek. Šířka jedné pak bude `20%`. Oddělovač mezi položkami je vytvořený rámečkem fixní šířky:
+Mnoho využití má tato vlastnost v responzivním webdesignu, konkrétně při práci s layoutem definovaným v procentuálních jednotkách. Představte si například navigaci, jež má vždy 5 položek. Šířka jedné pak bude 20 %. Oddělovač mezi položkami je vytvořený rámečkem fixní šířky:
 
-	.nav li {
-		width: 20%;  
-		display: inline-block;
-		border-left: .25em solid #fff;
-	}
-	
+    .nav li {
+        width: 20%;
+        display: inline-block;
+        border-left: .25em solid #fff;
+    }
+
 Jenže takhle nám pátá  položka navigace odskočí na další řádku. Potřebujeme však jen prohlížeči oznámit, ať laskavě šířku položek navigace počítá pomocí `box-sizing: border-box`:
-	
-	.nav li {
-		box-sizing: border-box;
-		width: 20%;  
-		display: inline-block;
-		border-left: .25em solid #fff;
-	}	
+
+    .nav li {
+        box-sizing: border-box;
+        width: 20%;
+        display: inline-block;
+        border-left: .25em solid #fff;
+    }
 
 Živá ukázka příkladu je na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
 
@@ -62,8 +62,8 @@ Vlastnost `box-sizing` se moc hodí na sjednocení způsobu počítání výšky
 
 ## Podpora v prohlížečích
 
-IE7+ a všechny moderní prohlížeče. Pokud jste vlastnost neznali, budete se divit jak výborně je podporována: [caniuse.com/box-sizing](http://caniuse.com/box-sizing).
+IE7+ a všechny moderní prohlížeče. Pokud jste vlastnost neznali, budete se divit, jak výborně je podporována: [caniuse.com/box-sizing](http://caniuse.com/box-sizing).
 
-Dobré ale vědět, že méně používanou hodnotu `padding-box` podporuje jen Firefox.
+Je ale dobré vědět, že méně používanou hodnotu `padding-box` podporuje jen Firefox.
 
 

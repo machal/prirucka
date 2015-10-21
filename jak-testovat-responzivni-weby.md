@@ -17,7 +17,7 @@ Fáze 1: Vývojářský desktopový prohlížeč
 
 V téhle fázi trávím samozřejmě nejvíce času. Kvůli Developer Tools používám Chrome. Pravidelně se přepínám do Firefoxu a [Browserstacku](http://www.browserstack.com/) kde mám puštěný nejhorší Explorer, který chci na projektu podporovat, což je obvykle osmička. Méně pravidelně pak do Opery, Safari a modernějších Explorerů.
 
-Kvůli testování chování v konkrétních rozlišeních v Chrome používám [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh), nesmrtelný [Mattův testovač](http://mattkersley.com/responsive/), [responsivepx.com](http://responsivepx.com/), který mi umožní testovat i rozlišení větší než má můj MacBook fyzicky. Nově zkouším ještě [„ish”](http://bradfrostweb.com/demo/ish/), hlavně jeho „Hay mód”. Netestuji jen nejčastější rozlišení, [na breakpointy nevěřím](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu). Obvykle oknem prohlížeče šoupu dokud se mě to alespoň trochu nelíbí všude. I tohle mi ale asi časem nahradí „ish”.
+Kvůli testování chování v konkrétních rozlišeních v Chrome používám [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh), nesmrtelný [Mattův testovač](http://mattkersley.com/responsive/), [responsivepx.com](http://responsivepx.com/), který mi umožní testovat i rozlišení větší než má můj MacBook fyzicky. Nově zkouším ještě [„ish“](http://bradfrostweb.com/demo/ish/), hlavně jeho „Hay mód“. Netestuji jen nejčastější rozlišení, [na breakpointy nevěřím](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu). Obvykle oknem prohlížeče šoupu dokud se mě to alespoň trochu nelíbí všude. I tohle mi ale asi časem nahradí „ish“.
 
 Fáze 2: Simulátory/emulátory
 -----------------------
@@ -26,7 +26,7 @@ Když jsem s nakódovaným elementem spokojený, jdu do simulátoru. Na Macu má
 
 **Android emulátor už nepoužívám**, nahradil mi jej už zmíněný Browserstack. Ušetřil mi tak spoustu času tráveného se správou VirtualBoxu s Windows a různých Android emulátorů.
 
-Oba simulátory jsou samozřejmě úžasné v tom, že je lze přímo propojit s odpovídajícím desktopovým prohlížečem a případné problémy ladit v pohodlném prostředí Safari Web Inspectoru nebo obdobném nástroji v Opeře. O „remote debugging” ale jindy.
+Oba simulátory jsou samozřejmě úžasné v tom, že je lze přímo propojit s odpovídajícím desktopovým prohlížečem a případné problémy ladit v pohodlném prostředí Safari Web Inspectoru nebo obdobném nástroji v Opeře. O „remote debugging“ ale jindy.
 
 **Pozor, simulátory vám nestačí.** Proč?
 
@@ -67,6 +67,6 @@ protože pomalejší. Nejlepší bude nejlevnějším model, který oficiálně 
 * Tablet iPad Mini s iOS6
 * Tablet Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480x800 pixelů
 
-Stačí mě to? Na denodenní testování ano, ale u zásadnějších spuštění projektů kradu telefon ženě, kamarádům a hrozně často na pivo zvu ty co mají zařízení s Windows Phone. A nezapomeňte na guerilla testing — takový DatArt bývá plný zařízení, na kterých si můžete leccos vyzkoušet.
+Stačí mě to? Na denodenní testování ano, ale u zásadnějších spuštění projektů kradu telefon ženě, kamarádům a často na pivo zvu ty co mají zařízení s Windows Phone. A nezapomeňte na guerilla testing — takový DatArt bývá plný zařízení, na kterých si můžete leccos vyzkoušet.
 
 Testujete jinak? Pochlubte se do komentářů a nezapomeňte zmínit váš typ projektů a cílovou skupinu.

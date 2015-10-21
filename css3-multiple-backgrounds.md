@@ -8,9 +8,9 @@ Není to přímo CSS3 vlastnost, jen nová možnost již existující vlastnosti
 Syntaxe? Je to snadné, vrstvy oddělujeme čárkou:
 
 	background:
-			url('obrazek_nahore.png'),
-			url('obrazek_uprostred.png'),
-			#ddccaa;
+	  url('obrazek_nahore.png'),
+	  url('obrazek_uprostred.png'),
+	  #ddccaa;
 
 Pozadí před první čárkou je vždy vrstva nejvíc nahoře.
 
@@ -27,16 +27,19 @@ Pokud nepoužijeme shorthand `background`, deklarace dalších vlastností obrá
 Příklad k vyzkoušení
 --------------------
 
-Nezapomeňte, že obrázkem může být i [CSS3 gradient](css3-gradients.md):
+Nezapomeňte, že obrázkem může být i [CSS3 gradient](css3-gradients.md) s poloprůhledným pozadím. Toho lze využít pro efekt postupného překrytí obrázku, i když neznáte výšku elementu:
 
-<p data-height="218" data-theme-id="502" data-slug-hash="lvKkC" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/lvKkC'>CSS3 Multiple Backgrounds</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+	background:
+	  linear-gradient(180deg, transparent 0%, #333 100%),
+	  url('bg.jpg');
+
+Naživo zkoušejte na [cdpn.io/e/lvKkC](http://cdpn.io/e/lvKkC).
 
 
 Podpora v prohlížečích
 ----------------------
 
-IE9+. Pozor, vlastnost `background` s vícenásobnou hodnotou je ignorována pokud ji prohlížeč neumí. Pro starší prohlížeče jako IE8 vždy musíte definovat fallback. Například:
+IE9+. Pozor, vlastnost `background` s vícenásobnou hodnotou je ignorována, pokud ji prohlížeč neumí. Pro starší prohlížeče jako IE8 vždy musíte definovat fallback. Například:
 
 	background: #ddccaa;
 	background:

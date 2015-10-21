@@ -1,7 +1,7 @@
 CSS3 Background Origin – pozice začátku pozadí
 ============================================
 
-Určí kde se v rámci elementu nachází začátek osy pro počítání rozměrů a pozic vlastností jako [`background-size`](css3-background-size.md) nebo `background-position`:
+Určí, kde se v rámci elementu nachází začátek osy pro počítání rozměrů a pozic vlastností jako [`background-size`](css3-background-size.md) nebo `background-position`:
 
 * `content-box` – počítá se jen obsahový box elementu
 * `padding-box` (výchozí) – počítá se obsahový box a rozměry vnitřního rámečku (`padding`)
@@ -15,9 +15,9 @@ Pozor, `background-origin` prohlížeč ignoruje, pokud u elementu zároveň nas
 
 Všem se to plete, zkusme to tedy objasnit:
 
-[Background Clip](css3-background-clip.md) určuje zda barva nebo obrázek na pozadí bude vidět i pod rámečkem (`border-box`) nebo naopak jen kolem obsahového boxu (`content-box`).
+[Background Clip](css3-background-clip.md) určuje, zda barva nebo obrázek na pozadí bude vidět i pod rámečkem (`border-box`), nebo naopak jen kolem obsahového boxu (`content-box`).
 
-Background Origin sám o sobě nic nedělá, jen definuje plochu v jaké platí další vlastnosti ([`background-size`](css3-background-size.md) nebo `background-position`).
+Background Origin sám o sobě nic nedělá, jen definuje plochu, v jaké platí další vlastnosti ([`background-size`](css3-background-size.md) nebo `background-position`).
 
 ## IE8
 

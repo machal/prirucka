@@ -2,19 +2,20 @@
 CSS3 RGBa barva – barva s poloprůhledností
 ==============================================
 
-RGB barva se čtvrtým číslem jež nese informaci o průhlednosti v alfa kanále.
+RGB barva se čtvrtým číslem, jež alfa kanálem říká informaci o hodnotě průhlednosti.
 
 	rgba(_red_, _green_, _blue_, _pruhlednost_);
 
-Poloprůhledné RGBa barvy můžete samozřejmě aplikovat všude kde se v&nbsp;CSS barvy používají. Zdůrazním hlavně <a href="http://css-tricks.com/transparent-borders-with-background-clip/">rámečky</a> (s&nbsp;pomocí background-clip), <a href="css3-box-shadow.md">stíny</a> neb gradienty.
+Poloprůhledné RGBa barvy můžete samozřejmě aplikovat všude, kde se v&nbsp;CSS barvy používají. Zdůrazním hlavně rámečky, [stíny](css3-box-shadow.md) nebo [gradienty](css3-gradients.md).
 
-Příklad
--------
+Porovnání s `opacity`
+---------------------
 
-Porovnání RGBa barevného modelu s použitím vlastnosti `opacity`. Zatímco opacity zajistí poloprůhlednost objektu samotného i jeho dceřinných objektů, RGBa je barva aplikovatelná na cokoliv bez vlivu na zbytek elementu:
+`opacity: 0.5` zajistí poloprůhlednost celého elementu, ale i jeho dceřiných objektů.
 
-<p data-height="149" data-theme-id="502" data-slug-hash="HrBsD" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/HrBsD'>CSS3: RGBa</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+RGBa je barva aplikovatelná na cokoliv bez vlivu na zbytek elementu. Třeba jen na barvu pozadí `background: rgba(20%, 100%, 20%, .5)`.
+
+V prohlížeči vyťukejte [cdpn.io/e/HrBsD](http://cdpn.io/e/HrBsD).
 
 
 Podpora v prohlížečích
@@ -25,6 +26,6 @@ RGBa mají rády všechny prohlížeče kromě osmičky a starších MSIE. Elega
 	color: rgb(128, 0, 0);
 	color: rgba(255, 0, 0, 0.5);
 
-V moderních browserech se zobrazí červená s padesátiprocentní průhledností. V IE8– pak tmavý odstín čevené. Fallback barvu musíme určit s ohledem na barvu pozadí. Tady počítáme s černou.
+V moderních browserech se zobrazí červená s padesátiprocentní průhledností. V IE8– pak tmavý odstín červené. Fallback barvu musíme určit s ohledem na barvu pozadí. Tady počítáme s černou.
 
 Alternativně použijte [CSS3Pie](http://css3pie.com/documentation/supported-css3-features/).

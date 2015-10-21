@@ -62,5 +62,5 @@ Pojďme to shrnout. Pokud [v responzivních obrázcích](http://www.vzhurudolu.c
 ## Čtěte dále
 
 * Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture).
-* Moje přednáška [„Responzivní obrázky v praxi”](https://www.youtube.com/watch?v=zsE6caTsi1M) a [slajdy k ní](http://www.slideshare.net/machal/frontendisti-rwd-obrazkypublic).
+* Moje přednáška [„Responzivní obrázky v praxi“](https://www.youtube.com/watch?v=zsE6caTsi1M) a [slajdy k ní](http://www.slideshare.net/machal/frontendisti-rwd-obrazkypublic).
 * [Web Picturefillu](http://scottjehl.github.io/picturefill/).

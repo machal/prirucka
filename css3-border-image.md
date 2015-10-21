@@ -1,9 +1,9 @@
 CSS3 Border Image – rámeček vykreslený obrázkem
 ===============================================
 
-Způsob jak namísto nativních rámečků kolem elementu vykreslit vlastní.
+Jde o způsob, jak namísto nativních rámečků kolem elementu vykreslit vlastní.
 
-Vezmeme jakýkoliv obrázek obsahující rámeček a prohlížeči řekneme jak jej má naporcovat. Následuje kouzlo — rámeček se elegantně přizpůsobí šířce i výšce elementu ať je jakákoliv.
+Vezmeme jakýkoliv obrázek obsahující rámeček a prohlížeči řekneme, jak jej má naporcovat. Následuje kouzlo – rámeček se elegantně přizpůsobí šířce i výšce elementu, ať je jakákoliv.
 
 Syntaxe
 -----------
@@ -18,11 +18,11 @@ Syntaxe
 
 ### Zdrojový obrázek
 
-Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`. 
+Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`.
 
 ### Rozměry řezů
 
-Právě touto hodnotou zdrojový obrázek naporcujeme tak, aby prohlížeč věděl kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku.
+Právě touto hodnotou zdrojový obrázek naporcujeme tak, aby prohlížeč věděl, kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku.
 
 Obsahuje jedno, dvě (horizontální a vertikální řez) nebo čtyři čísla (řez horní, pravý, dolní a levý). Definovat lze v pixelech nebo v procentech z rozměrů zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
 
@@ -38,7 +38,7 @@ Pokud má hodnotu `auto`, šířka se počítá z rozměrů řezů.
 
 ### Začátek řezu
 
-Rozměr specifikovaný v `border-image-outset` říká jak moc obrázkový rámeček přetéká mimo rozměry elementu. Ty se počítají jako by měl element nastaveno [`box-sizing: border-box`](css3-box-sizing.md).
+Rozměr specifikovaný v `border-image-outset` říká, jak moc obrázkový rámeček přetéká mimo rozměry elementu. Ty se počítají, jako by měl element nastaveno [`box-sizing: border-box`](css3-box-sizing.md).
 
 ### Opakování
 
@@ -46,10 +46,10 @@ Jak bude prohlížeč pracovat s vertikální a horizontální stranou obrázkov
 
 * `stretch` – obrázek se roztáhne na šířku rámečku
 * `repeat` – obrázek se bude opakovat
-* `round` – pokud plochu nevyplní celočíselný počet opakování, jednotlivá opakování se roztáhnou aby plochu vyplnila (jednotlivá opakování se roztáhnou)
+* `round` – pokud plochu nevyplní celočíselný počet opakování, jednotlivá opakování se roztáhnou, aby plochu vyplnila
 * `space` – pokud plochu nevyplní celočíselný počet opakování, prázdná plocha je spravedlivě rozdělena mezi všechna opakování (k jednotlivým opakováním se přidá mezera)
 
-Dobré připomenout, že i tady je možné nastavit různé hodnoty pro horizontální i vertkiální část rámečku. Například:
+Je dobré připomenout, že i tady je možné nastavit různé hodnoty pro horizontální i vertikální část rámečku. Například:
 
 	border-image-repeat: stretch repeat;
 
@@ -65,7 +65,7 @@ Může se hodit
 Podpora v prohlížečích
 ----------------------
 
-IE11+. Se staršími prohlížeči se lze vypořádat definovanou alternativou a detekcí vlastnosti Modernizrem: `.no-borderimage .box { … }` nebo prostým fallbackem pomocí vlastností `border-color`.
+IE11+. Se staršími prohlížeči se lze vypořádat definovanou alternativou a detekcí vlastnosti Modernizrem: `.no-borderimage .box { … }` nebo prostým fallbackem pomocí vlastnosti `border-color`.
 
 Jednoduchý příklad s barevným přechodem
 ----
@@ -75,15 +75,15 @@ Protože [CSS gradienty](css3-gradients.md) se mezi obrázky počítají také, 
 Pamatujte, že vždy je nutné nejprve definovat nativní rámeček obrázku. Jednak kvůli rozměrům, jednak tím vytvoříme fallback pro prohlížeče, které `border-image` nezvládají. V našem příkladu tedy kolem elementu nejdříve vyrobíme 20pixelový zelený rámeček:
 
 	border: 20px solid green;
-	
+
 Teď prohlížeči řekneme, že namísto zelené barvy chceme v rámečku barevný přechod:
 
 	border-image-source: linear-gradient(lightgreen, darkgreen);
-	
-K našemu překvapení ovšem prohlížeč barevný přechod vykreslí jen v rozích rámečku. Důvodem je výchozí hodnota rozměrů řezů: `border-image-slice: 100%`. Znamená, že obrázek se použije právě jen pro všechny čtyři růžky. Předefinujeme tedy tak aby odpovídal šířce našeho rámečku: 
+
+K našemu překvapení ovšem prohlížeč barevný přechod vykreslí jen v rozích rámečku. Důvodem je výchozí hodnota rozměrů řezů: `border-image-slice: 100%`. Znamená, že obrázek se použije právě jen pro všechny čtyři růžky. Předefinujeme tedy tak, aby odpovídal šířce našeho rámečku:
 
 	border-image-slice: 20;
-	
+
 A je to. Příklad si můžete vyzkoušet na [codepen.io/machal/pen/zdyIJ](http://codepen.io/machal/pen/zdyIJ).
 
 
@@ -99,15 +99,15 @@ Opět si nejdříve nadefinujeme rozměry rámečku a fallback pro staré prohl�
 Přidáme obrázek na pozadí:
 
 	border-image-source: url(border-image-source.png);
-	
+
 Dále definujeme řezy. V tomto zdrojovém obrázku máme horizontální rámeček vysoký	21 pixelů a vertikální 23 pixelů.
 
-	border-image-slice: 21 23;	
+	border-image-slice: 21 23;
 
-Nakonec je potřeba prohlížeči oznámit, že postranní řezy hodláme v případě nárustu velikosti elementu opakovat:
+Nakonec je potřeba prohlížeči oznámit, že postranní řezy hodláme v případě nárůstu velikosti elementu opakovat:
 
 	border-image-repeat: repeat;
-	
+
 A pojďme si ještě vyzkoušet zkrácený zápis posledních tří deklarací:
 
 	border-image: url(border-image-source.png) 21 23 repeat;

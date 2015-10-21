@@ -27,7 +27,7 @@ Jak moc se odlesk vzdálí od původního objektu. Uvádí se v běžných CSS j
 
 ### Maska
 
-Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu maskou bývá [CSS gradient](css3-gradients.md). Může to být ale i obrázek. Co je v masce černé, zobrazí se, co je průhledné nezobrazí se.
+Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu maskou bývá [CSS gradient](css3-gradients.md). Může to být ale i obrázek. Co je v masce černé, zobrazí se; co je průhledné, nezobrazí se.
 
 	-webkit-box-reflect: below 5px linear-gradient(to bottom, transparent, black);
 	
@@ -36,7 +36,7 @@ Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu mas
 Podpora v prohlížečích
 ----------------------
 
-Jen prohlížeče podstavené na Webkit jádře. Ke dnešku tedy funguje ve všech Safari i Android Browseru. Dokonce ve všech Chrome, i když už dnes běží na vlastním jádře Blink. [caniuse.com/box-reflect](http://caniuse.com/box-reflect)
+Jen prohlížeče postavené na Webkit jádře. Ke dnešku tedy funguje ve všech Safari i Android Browseru. Dokonce ve všech Chrome, i když už dnes běží na vlastním jádře Blink. [caniuse.com/box-reflect](http://caniuse.com/box-reflect)
 
 Ve Firefoxu lze odlesku dosáhnout pomocí vlastnosti `-moz-element()`. [lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/](http://lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/)
 

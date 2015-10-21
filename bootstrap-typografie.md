@@ -1,16 +1,16 @@
 # Jak správně navázat na typografické principy Bootstrapu
 
-Rozhraní webů nebo aplikací stavěné na Bootstrapu můžete budovat dvěma způsoby. V prvním si přidáte vlastní CSS a bez velkého uvažování píšete kód nových komponent. 
+Rozhraní webů nebo aplikací stavěné na Bootstrapu můžete budovat dvěma způsoby. V prvním si přidáte vlastní CSS a bez velkého uvažování píšete kód nových komponent.
 
-Dnes vám doporučím jít druhou cestou. Cestou respektu k zákonitostem Bootstrapu. Bohatě se vám to vyplatí, uvidíte. Navenek se to nezdá, ale i v sazbě je tenhle populární framework uvnitř přísně systematický. 
+Dnes vám doporučím jít druhou cestou. Cestou respektu k zákonitostem Bootstrapu. Bohatě se vám to vyplatí, uvidíte. Navenek se to nezdá, ale i v sazbě je tenhle populární framework uvnitř přísně systematický.
 
 Designéři podobné principy znají pod pojmy [typografický nebo vertikální rytmus](http://typecast.com/blog/4-simple-steps-to-vertical-rhythm). Systém, který dále popisuji ale oceníte i v případě kdy vertikální mřížku dodržujete spíše od oka.
 
-Ať už jste sazeč exaktní nebo „od oka”, vždy potřebujete vycházet ze základní velikosti písma a výšky řádku. 
+Ať už jste sazeč exaktní nebo „od oka“, vždy potřebujete vycházet ze základní velikosti písma a výšky řádku.
 
 ## Velikost písma a výška řádku
 
-Podstatná je tedy [LESS proměnná](http://getbootstrap.com/css/#less-variables) `@font-size-base`. Výchozí hodnota je `14px`. 
+Podstatná je tedy [LESS proměnná](http://getbootstrap.com/css/#less-variables) `@font-size-base`. Výchozí hodnota je `14px`.
 
 Pokud jste v Bootstrapu zkoušeli její hodnotu změnit, víte, že se vám přepočítaly proporce téměř všech elementů. Jednou z výhod dodržování systému popsaného v tomto článku je, že tohle chování zachováte i ve vašich částech kódu.
 
@@ -22,7 +22,7 @@ Pro výšku řádku máme k dispozici 2 proměnné:
 Tu druhou ve vlastním kódu využívám velmi často. Obvykle jako podíly nebo násobky výchozí hodnoty. Stejný princip Bootstrap totiž používá ve svém vlastním kódu. Vaše odvozená komponenta může vypadat takto:
 
 ```less
-.page-section { 
+.page-section {
     margin-bottom: 2*@line-height-computed;
     …
 }
@@ -43,7 +43,7 @@ Podobně v proměnných najdete varianty pro výšku řádku `@line-height-large
 
 ## Vnitřní okraje elementů
 
-Vnitřní okraje nebo prostě padding. Pro velikosti tlačítek, formulářů a dalších inline prvků odvozených z paddingu Bootstrap interně využívá [rodinu padding-proměnných](https://github.com/twbs/bootstrap/blob/master/less/variables.less#L90). 
+Vnitřní okraje nebo prostě padding. Pro velikosti tlačítek, formulářů a dalších inline prvků odvozených z paddingu Bootstrap interně využívá [rodinu padding-proměnných](https://github.com/twbs/bootstrap/blob/master/less/variables.less#L90).
 
 `@padding-base`, `-large`, `-small`, `-xs` s příznaky `-horizontal` a `-vertical`. Takže horní padding totožný s tím co používá například Bootstrap tlačítko získáte z proměnné `@padding-base-vertical`. Tyhle  hodnoty také používám velmi často:
 

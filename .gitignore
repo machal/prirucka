@@ -2,6 +2,9 @@
 .DS_Store
 profile
 
+# npm
+node_modules
+
 # xcode noise
 build/*
 *.mode1
