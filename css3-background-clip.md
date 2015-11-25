@@ -5,7 +5,9 @@ Určuje, kde všude se uvnitř elementu vykresluje obrázek nebo barva na pozad�
 
 Výchozí hodnota je:
 
-	background-clip: border-box;
+```css
+background-clip: border-box;
+```
 
 Znamená, že pozadí se vykreslí i pod rámečkem elementu.
 

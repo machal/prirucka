@@ -6,10 +6,12 @@ Změna velikosti obrázku na pozadí elementu.
 Syntaxe
 -------
 
-	background-size:
-		(cover/contain)
-		_vertikalni_rozmer_
-		_horizontalni_rozmer_;
+```css
+background-size:
+  (cover/contain)
+  _vertikalni_rozmer_
+  _horizontalni_rozmer_;
+```
 
 Výchozí hodnota `background-size: auto auto` znamená, že si obrázek zachová svou původní velikost.
 
@@ -33,8 +35,10 @@ Tip: Pokud máte tendenci takto pracovat s ikonami, porozhlédněte se po vektor
 
 Procenta se používají relativně k šířce nebo výšce elementu, na který je vlastnost aplikována. Například roztažení barevného přechodu na celou šířku a polovinu výšky elementu zapíšeme takto:
 
+```css
 	background: linear-gradient(to bottom, transparent, black) no-repeat bottom;
 	background-size: 100% 50%;
+```
 
 Naživo se podívejte na [codepen.io/machal/pen/cmpjE](http://codepen.io/machal/pen/cmpjE).
 
@@ -44,8 +48,9 @@ Nezapomeňte, že šířka nebo výška pozadí vychází z nastavení vlastnost
 
 Pokud používáme [více obrázků na pozadí](css3-multiple-backgrounds.md), specifikace změn jejich velikostí opět oddělujeme čárkou:
 
+```css
 	background-size: 50% auto, auto;
-
+```
 
 Podpora v prohlížečích
 ----------------------
@@ -62,11 +67,13 @@ Detekce vlastností. Poskytnout alternativní verzi stylování pomocí Moderniz
 
 Využít parametru `filter`. Hodí se jen pro situace, kdy obrázek na pozadí máte ve stejném poměru stran a zároveň stejně velký nebo větší než rodičovský objekt:
 
-	.element {
-		background-size: contain;
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-			src='images/image.jpg',
-			sizingMethod='scale');
-	}
+```css
+.element {
+	background-size: contain;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='images/image.jpg',
+		sizingMethod='scale');
+}
+```
 
 Využít polyfill. Jen pozor, využívá `.htc` soubory, takže může nepřiměřeně zhoršovat výkon – [github.com/louisremi/background-size-polyfill](https://github.com/louisremi/background-size-polyfill).
