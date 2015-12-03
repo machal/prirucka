@@ -8,7 +8,7 @@ Kodéřina je jen část mé práce, takže dole je i seznam nástrojů, které 
 
 ## Sublime Text jako vývojové prostředí
 
-[Sublime](http://www.sublimetext.com/) je klasika. Existují i modernější varianty, ale kromě nepříliš vymakaného našeptávání mě Sublime zcela vyhovuje. Sublime je z kategorie „jednoduchý, ale rozšiřitelný editor”. Moc toho neumí a vyžaduje nějaký čas pro nastavení a vyladění dle osobních preferencí. Pokud mu čas věnujete, bohatě se vám to vrátí. Pokud vám časová investice tohoto typu nevyhovuje, hledejte IDE jako WebStorm nebo Eclipse.
+[Sublime](http://www.sublimetext.com/) je klasika. Existují i modernější varianty, ale kromě nepříliš vymakaného našeptávání mě Sublime zcela vyhovuje. Je to editor z kategorie „jednoduchý, ale rozšiřitelný”. Moc toho neumí a vyžaduje nějaký čas pro nastavení a vyladění dle osobních preferencí. Pokud mu čas věnujete, bohatě se vám to vrátí. Pokud vám časová investice tohoto typu nevyhovuje, hledejte IDE jako WebStorm nebo Eclipse.
 
 ![Můj Sublime Text](http://www.vzhurudolu.cz/assets/img/content/dest/original/sublime-text.jpg)
 
@@ -54,7 +54,7 @@ Zatím v něm debuguju CSS, JS a návrhy rozhraní (v záložce Elements), ladí
 
 Věnujte pozornost [tipům a trikům pro DevTools](http://www.vzhurudolu.cz/blog/41-devtools-tipy).
 
-Alternativy jako Firebug nebo Firefox DevTools buď zcela zaspaly dobu nebo jsou oproti Chrome výrazně pozadu. Nicméně fandím jim, konkurence je potřeba.
+Alternativy jako Firebug nebo Firefox DevTools zaspaly dobu. Nicméně fandím jim, konkurence je potřeba.
 
 ## Grunt pro sestavování a běh tasků
 
@@ -62,7 +62,7 @@ Alternativy jako Firebug nebo Firefox DevTools buď zcela zaspaly dobu nebo jsou
 
 Pokud jste méně kodéři a více vývojáři, zajímejte se spíše o Gulp a pokročilejší nástroje.
 
-Jednodušší alternativou jsou klikací apky jako Prepros nebo CodeKit (jen pro Macy).
+Jednodušší alternativou jsou zase klikací apky jako Prepros nebo CodeKit (ten ale jen pro Macy).
 
 ## NPM, Bower pro instalaci závislostí
 
@@ -78,19 +78,19 @@ Git používám přes různá rozhraní. Někdy přes jednoduchou vizuální apk
 
 ## Terminal
 
-Na to jak často příkazovou řádku používám kvůli Gruntu a celému Node.js používám, s ním pořádně neumím. Ale zatím mi to nevadí, napíšu tam denně jen zlomek v počtu znaků oproti textovým editorům.
+Používám kvůli Gruntu a nástrojům kolem Node.js. Na to jak často příkazovou řádku otevírám, pořádně s ní neumím. Ale zatím mi to nevadí, napíšu tam denně jen zlomek v počtu znaků oproti textovým editorům.
 
 ## Grafika skoro bez Photoshopu
 
 - [Photoshop Elements](http://www.adobe.com/cz/products/photoshop-elements.html) – moje obvyklé workflow je bez-photoshopové. Nedostávám PSD od grafiků, rozhraní skoro vždy vytvářím nebo spoluvytvářím. Proto disponuji luxusem vlastnit starší Photoshop. A ještě k tomu ořezaný, určený pro fotografy. A ve verzi 8 prosím!
 - [Graphic](http://graphic.com/) – vektorový editor s výstupem do [SVG](/prirucka/svg). Připravuji tady schémata pro VzhůruDolů nebo třeba upravuji ikony. Jen pro Macy. 
-- [Keynote](http://www.apple.com/mac/keynote/) – primárně v něm připravuji slajdy pro přednášky a školení. Ale divili byste se, kolik ilustrací na VzhůruDolů.cz vzniklo právě tady. Vážně – Keynote je parádní grafický editor. Jen pro Macy.
+- [Keynote](http://www.apple.com/mac/keynote/) – primárně v něm připravuji slajdy pro přednášky a školení. Ale divili byste se, kolik ilustrací pro tento blog vzniklo právě v něm. Vážně – Keynote je parádní grafický editor. Jen pro Macy.
 - Preview – dle mé zásady „nauč se pořádně to nejjednodušší“ dělám hodně grafiky. Je to ale spíše „komunikační grafika“, typu schémat co přikládám do emailů atd. Jen pro Macy.
 - ImageOptim a JPEGmini Lite – pokud potřebuji zmenšit obrázky jednotlivě, nepoužívám Grunt ale tyhle dva optimalizátory. JPEGmini je fakt objev, zmenšuje výrazněji než jiné grafické minifikátory.
 
 ## Testování na zařízeních
 
-- [BrowserStack](https://www.browserstack.com/) – testování mobilních a alternativních prohlížečů. V cloudu, v prohlížeči. A neuvěřitelně svižně. Browserstack je stále lepší a lepší a v mé nástrojové brašně neleží někde dole. Je nahoře, vždy po ruce. O způsobu [testování responzivních webů](/prirucka/jak-testovat-responzivni-weby) jsem dříve psal.
+- [BrowserStack](https://www.browserstack.com/) – testování mobilních a alternativních prohlížečů. V cloudu, v prohlížeči. A neuvěřitelně svižně. Browserstack je stále lepší  a v mé nástrojové brašně rozhodně neleží někde dole. Je nahoře, vždy po ruce. O způsobu [testování responzivních webů](/prirucka/jak-testovat-responzivni-weby) jsem dříve psal.
 - iOS simulátor (součást XCode, jen pro Macy) občas pustím, ale BrowserStack je poslední dobou skoro rychlejší.
 
 ## Běh localhostu
@@ -107,6 +107,6 @@ Tohle je docela paradoxní „atd”. Obnáší totiž soupis aplikací, v nich�
 - Organizace: [Trello](https://trello.com/) (projektové řízení), Google Tasks (osobní úkolníček), Evernote (zatím jen jako chytřejší bookmarky), Toggl (měření času), Basecamp (komunikace u některých projektů), Dropbox (sdílení souborů).
 - Komunikace: Skype, Google Hangout, webový Gmail.
 
-Do dalšího článku sepíšu ještě něco o filozofii výběru nástrojů.
+Asi jste si všimli, že můj přístup k nástrojům je konzervativnější. Je to vědomá volba. Do dalšího článku sepíšu ještě něco o filozofii výběru nástrojů.
 
 Zapomněl jsem na něco? Jaké nástroje pro workflow kodéra používáte vy? Šup s nimi do komentářů.
