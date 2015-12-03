@@ -20,3 +20,4 @@ xcuserdata
 .svn
 CVS
 sftp-config.json
+.sublime-grunt.cache
