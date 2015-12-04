@@ -12,7 +12,7 @@ Kodéřina je jen část mé práce, takže dole je i seznam nástrojů, které 
 
 ![Můj Sublime Text](http://www.vzhurudolu.cz/assets/img/content/dest/original/sublime-text.jpg)
 
-Z obrázku sami vidíte, že můj Sublime Text neoplývá barvičkami a vizuálními vychytávkami. Princip „konvence je víc než konfigurace“ v praxi. 
+Z obrázku sami vidíte, že můj Sublime Text neoplývá barvičkami a vizuálními vychytávkami. Princip „konvence je víc než konfigurace“ v praxi.
 
 ### Sublime balíčky, bez kterých bych se nechtěl obejít
 
@@ -35,13 +35,13 @@ Z obrázku sami vidíte, že můj Sublime Text neoplývá barvičkami a vizuáln
 - SublimeCodeIntel – měl by hezky našeptávat, to ale v mém případě moc neplatí (nevylučuji, že jej špatně používám).
 - Theme - Spacegray – krásné barevné schéma. Chvíli jsem používal, ale na školeních se na to hůř kouká, proto jsem zpět u `Default/Mac Classic`.
 - Terminal – práce s terminálem přímo ze Sublime, většinou mám ale otevřený systémový terminál.
-- Pochopitelně i balíčky se zvýrazňovači syntaxe: HTML5, jQuery, LESS, Nette, Sass a další. 
+- Pochopitelně i balíčky se zvýrazňovači syntaxe: HTML5, jQuery, LESS, Nette, Sass a další.
 
-### Alternativy k Sublime: 
+### Alternativy k Sublime:
 
-- Atom –  vychází se Sublime a mám jej odzkoušený. Tehdy ale nebyl nejrychlejší, pár věcí neuměl a měl slabší ekosystém. Prý se s ním už ale dá naplno pracovat. 
+- Atom –  vychází se Sublime a mám jej odzkoušený. Tehdy ale nebyl nejrychlejší, pár věcí neuměl a měl slabší ekosystém. Prý se s ním už ale dá naplno pracovat.
 - WebStorm – více jako IDE, včetně chytrého našeptávání. Brácha od PHPStorm.
-- Brackets – editor od Adobe, který si pochvalují kodéři co často pracují s PSD. 
+- Brackets – editor od Adobe, který si pochvalují kodéři co často pracují s PSD.
 
 Pro rychlé prototypování a ukázky kódu často používám online fidlátko [CodePen](http://codepen.io/machal/).
 
@@ -50,11 +50,9 @@ Pro rychlé prototypování a ukázky kódu často používám online fidlátko 
 
 Chrome a jeho [DevTools](https://developers.google.com/web/tools/chrome-devtools/) jsou mým druhým nepoužívanějším nástrojem. Kdo ví, zda v něm časem nebudu trávit více času než v Sublime, protože se o něj zajímám i jako o vývojové prostředí.
 
-Zatím v něm debuguju CSS, JS a návrhy rozhraní (v záložce Elements), ladím způsob načítání stránky (záložka Network) nebo ladím zobrazování na dotykových zařízeních (Device Mode). 
+Zatím v něm debuguju CSS, JS a návrhy rozhraní (v záložce Elements), ladím způsob načítání stránky (záložka Network) nebo ladím zobrazování na dotykových zařízeních (Device Mode).
 
 Věnujte pozornost [tipům a trikům pro DevTools](http://www.vzhurudolu.cz/blog/41-devtools-tipy).
-
-Alternativy jako Firebug nebo Firefox DevTools zaspaly dobu. Nicméně fandím jim, konkurence je potřeba.
 
 ## Grunt pro sestavování a běh tasků
 
@@ -74,7 +72,7 @@ Node.js ekosystému při profesionální kodérské práci asi nelze vyhnout. Mr
 
 ## Git pro verzování
 
-Git používám přes různá rozhraní. Někdy přes jednoduchou vizuální apku Gitbox & DiffMerge (Mac only), někdy v editoru přes SublimeGit balíček, někdy přímo na příkazové řádce. Github a Bitbucket pak pro hosting kódu a komunikaci nad ním. 
+Git používám přes různá rozhraní. Někdy přes jednoduchou vizuální apku Gitbox & DiffMerge (Mac only), někdy v editoru přes SublimeGit balíček, někdy přímo na příkazové řádce. Github a Bitbucket pak pro hosting kódu a komunikaci nad ním.
 
 ## Terminal
 
@@ -83,7 +81,7 @@ Používám kvůli Gruntu a nástrojům kolem Node.js. Na to jak často příkaz
 ## Grafika skoro bez Photoshopu
 
 - [Photoshop Elements](http://www.adobe.com/cz/products/photoshop-elements.html) – moje obvyklé workflow je bez-photoshopové. Nedostávám PSD od grafiků, rozhraní skoro vždy vytvářím nebo spoluvytvářím. Proto disponuji luxusem vlastnit starší Photoshop. A ještě k tomu ořezaný, určený pro fotografy. A ve verzi 8 prosím!
-- [Graphic](http://graphic.com/) – vektorový editor s výstupem do [SVG](/prirucka/svg). Připravuji tady schémata pro VzhůruDolů nebo třeba upravuji ikony. Jen pro Macy. 
+- [Graphic](http://graphic.com/) – vektorový editor s výstupem do [SVG](/prirucka/svg). Připravuji tady schémata pro VzhůruDolů nebo třeba upravuji ikony. Jen pro Macy.
 - [Keynote](http://www.apple.com/mac/keynote/) – primárně v něm připravuji slajdy pro přednášky a školení. Ale divili byste se, kolik ilustrací pro tento blog vzniklo právě v něm. Vážně – Keynote je parádní grafický editor. Jen pro Macy.
 - Preview – dle mé zásady „nauč se pořádně to nejjednodušší“ dělám hodně grafiky. Je to ale spíše „komunikační grafika“, typu schémat co přikládám do emailů atd. Jen pro Macy.
 - ImageOptim a JPEGmini Lite – pokud potřebuji zmenšit obrázky jednotlivě, nepoužívám Grunt ale tyhle dva optimalizátory. JPEGmini je fakt objev, zmenšuje výrazněji než jiné grafické minifikátory.
