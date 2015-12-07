@@ -1,82 +1,65 @@
-# OOCSS
+# Udržitelný kód pomocí OOCSS
 
-## Object Oriented CSS. Koncept organizace kódu.
+OOCSS je zkratka pro „Object Oriented CSS”. Je to koncept organizace kódu od Nicole Sullivan.
 
-CSS objekt je opakující se vizuální pattern, který může být abstrahován kouskem HTML a CSS, případně JS. Je znovupoužitelný na jiném místě webu nebo aplikace.
+CSS objekt je opakující se vizuální komponenta, která může být abstrahována kouskem HTML a CSS, případně JS. Je znovupoužitelná na jiném místě projektu. Ideálně pak i na dalších projektech.
 
-## Cíle OOCSS
+Cílem OOCSS je zajistit znovupoužitelnost kódu, zlepšit jeho spravovatelnost a také zmenšit objem CSS souboru.
 
-* zlepšit spravovatelnost 
-* znovupoužitelnost kódu
-  * žádné specificity wars
-  * výkonnost CSS (méně kódu díky zamezení opakování)
-  
-  
-## 2 základní pricipy
+Ukažme si nejprve zjednodušený kód komponenty s tlačítkem:
 
-### 1) Oddělit strukturu a vzhled  
+```css
+/* Komponenta */
+.button { … }
 
-Tzn. `.button` a `.button.button-primary` namísto `.button-one` a `.button-second`. Cílem je zabránit opakování kódu vzhledu a zajistit znovupoužitelnost. Mrkněte na velmi zjednodušený příklad, obvykle je kód daleko složitější a ušetření řádků znatelnější.
+/* Elementy komponenty */
+.button-icon { … }
 
-Špatně:
+/* Modifikátory komponenty */
+.button-primary { … }
+.button-login { … }
+```
 
-	.button-one {
-	  padding: 10px 20px;
-	  font-size: 14px;
-	  line-height: 1;
-	  border: 1px solid black;
-	}
-	
-	.button-two {
-	  padding: 10px 20px;
-	  font-size: 14px;
-	  line-height: 1;
-	  border: 1px solid black;
-	  background: red;
-	  color: white;
-	}
+OOCSS má pět principů, alespoň podle toho jak jej vnímám já:
 
-Lépe:
+## 1) Nezávislost vzhledu na struktuře
 
-	.button {
-	  padding: 10px 20px;
-	  font-size: 14px;
-	  line-height: 1;
-	  border: 1px solid black;
-	}
-	
-	.button-primary {
-	  background: red;
-	  color: white;
-	}
+Do CSS selektorů nikdy nedáváme HTML tagy. Mohou se změnit. Proto `.button` raději než `input.button`.
 
-Vše musí být nezávislé na HTML elementech. Tzn. v CSS nepoužívat `input.button`, ale jen `.button`, protože nám programátor v HTML může `<input>` změnit na `<a>`, `<span>` nebo cokoliv jiného.
+## 2) Nezávislost obsahu na kontejneru
 
-### 2) Osvobodit obsah z kontejneru
+Do CSS selektorů nikdy nepromítáme strukturu HTML. Může se změnit. Proto `.button.button-login` raději než `.login-form .button`.
 
-Tzn. nevytvářet styly závislé od umístění. `.head.head-smaller` raději než `.side .head`.
+## 3) Vývoj zaměřený na komponenty, znovupoužitelnost
 
-Protože…
+Komponenty (neboli objekty) nezávislé na struktuře HTML lze snadno používat i na jiných projektech.
 
-* Všechny `.head` by v jakékoliv instanci v jakémkoliv umístění měly vypadat stejně.
-* Nemusíte vytvářet složité přepisovací styly, pokud by náhodou `.side .head` měl vypadat zase stejně jako původní `.head`.
-* A taky není nikdy jasné kde v codebase vlastně CSS zdroják pro `.side .head` najdete — u komponenty `.side` nebo komponenty `.head`?
+Komponenty pak tvoří uzavřený celek, který v preprocesorech importujeme.
 
-## Další OOCSS pokyny
+```css
+@import "button";
+```
 
-* Vyhněte se `#id` selektoru - má vysokou specifičnost. Používejte jen pro jiné potřeby než CSS. Třeba JS.
-* Vyhněte se `!important`. Opět problém s vysokou specifičností. Jak přebijete `important!`? Nechte si jej v záloze pro debugování.
-* Používejte [CSS lint](http://csslint.net/).
+Zpřehledňují nám nejen kód samotný, ale i commity do repozitáře.
 
-## Odkazy
+## 4) Objekt, element, modifikátor
 
-* [http://specificity.keegan.st/](http://specificity.keegan.st/)
-* [https://github.com/stubbornella/oocss/wiki](https://github.com/stubbornella/oocss/wiki)
-* [http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/](http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+Tři typy prvků:
 
-OOCSS už dávno vymyslela [Nicole Sullivan](http://www.stubbornella.org/content/). Já to tady jen česky převyprávěl a poupravil, tak abych tomu rozuměl.
+- objekt – jinak též komponenta nebo blok (`.button`)
+- element – prvek uvnitř objektu, jinak též podobjekt (`.button-icon` pro ikonu uvnitř tlačítka)
+- modifikátor – vlastnost objektu (`.button-primary` pro hlavní call-to-action tlačítko)
 
+V praxi může být výhodné tyto tři typy prvků odlišit vizuálně. Podívejte se na [metodiku BEM](bem.md).
 
+## 5) Co nejnižší specifičnost
 
+V CSS nikdy nepoužíváme selektory identifikátorů (`#id`) a klauzuli `!important` si necháváme jen pro debugovací účely.
 
+Kvůli zachování nízké specifičnosti se také snažíme co nejméně používat:
+
+- selektorů potomka (v CSS nepíšu `.button .button-icon`, jen `.button-icon`)
+- kombinovaných selektorů (v CSS nepíšu `.button.button-primary`, jen `.button-primary`)
+
+Více o specifičnosti v CSS: [specificity.keegan.st](http://specificity.keegan.st/).
 

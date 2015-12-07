@@ -1,44 +1,63 @@
 # BEM
 
-## Block, Element, Modifier.
+Block, Element, Modifier. Metodika pro pojmenovávání tříd v CSS.
 
-Frontend metodika pro pojmenovávání tříd v komponentách od lidí z Yandexu.
+Jde vlastně o pojmenovávací konvenci pro psaní [objektových CSS](oocss.md). BEM vymysleli [v Yandexu](https://en.bem.info/method/key-concepts/).
 
-Je složitější, ale nosná myšlenka je v rozdělení tříd náležejících ke komponentám do těchto tří kategorií a k nim náležejícím vzorům pro vytváření názvů tříd.
+Hlavní myšlenka je v rozdělení tříd do těchto tří kategorií:
 
 <table>
 <tr>
   <th>Blok</th>
-  <td><code>.block</code></td> 
+  <td><code>.block</code></td>
 </tr>
 <tr>
   <th>Element</th>
-  <td><code>.block__element</code></td>  
+  <td><code>.block__element</code></td>
 </tr>
 <tr>
   <th>Modifikátor</th>
-  <td><code>.block--modifier</code></td>  
+  <td><code>.block--modifier</code></td>
 </tr>
 </table>
 
-Jednoduchou komponentu s navigací byste tedy v CSS pojmenovali takto:
+Typ třídy poznáte podle způsobu pojmenování. Dvě podtržítka znamenají element, tedy potomka bloku. Modifikátor bloku je pak označený dvěmi „pomlčkami“.
 
-	.nav
-	  .nav__item
-	  .nav--hidden
+## Příklad s navigací
 
-Skvěle to na příkladu složení komponenty *člověk* (LOL) vysvětluje [Harry Roberts](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
+Vezměme tohle HTML:
 
-Použití ošklivých podtržítek v elementu obhajuje možností pojmenovat komponentu složitěji, s minusem v názvu — `.top-nav`.
+```html
+<ul class="nav nav--hidden" role="navigation">
+  <li class="nav__item">
+    <a href="/">Úvod</a>
+  </li>
+  <!-- … -->
+</ul>
+```
 
-Pokud to — jako já – nepotřebujete, můžete sáhnout po jednodušším pojmenovávání:
+Pak:
 
-	.nav
-	  .nav-item
-	  .nav--hidden
+- `.nav` je blok (název komponenty)
+- `.nav--hidden` je modifikátor (varianta komponenty)
+- `.nav__item` je element (potomek komponenty)
+
+Psaní BEM syntaxe si můžete hezky usnadnit [v CSS preprocesorech](http://www.vzhurudolu.cz/blog/13-css-preprocesory-2) pomocí zanořování:
+
+```less
+.nav {
+  .&__item { }
+  .&--hidden { }
+}
+```
+
+Složitější komponentu podrobněji popisuje [Harry Roberts](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
+
+## Proč BEM?
+
+- Protože v CSS i HTML snadno poznáte s jakým typem třídy máte tu čest. Poznají to i programátoři, kteří přijdou do styku jen s HTML.
+- Protože je snadné se jej naučit a díky tomu se z BEMu stává standard.
+- Protože je na rozdíl od jiných způsobů organizace CSS velmi přímočarý. Srovnejte třeba se SMACSS.
 
 
-## Odkazy
 
-* [http://bem.info/method/](http://bem.info/method/)
-* [http://nicolasgallagher.com/about-html-semantics-front-end-architecture/](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
