@@ -18,8 +18,10 @@ Definovaný fallback
 
 Do kódu prostě explicitně uvedeme vlastnost nebo hodnotu pro starší prohlížeče:
 
-	background: red;
-	background: linear-gradient(to bottom, red, darkred);
+```css
+background: red;
+background: linear-gradient(to bottom, red, darkred);
+```
 
 V prvním řádku definujeme řešení pro starší prohlížeč. A to předefinujeme [barevným přechodem](css3-gradients.md) v prohlížečích, které jej ovládají.
 
@@ -28,14 +30,16 @@ Dále využitelné například [ve vícenásobném pozadí](css3-multiple-backgr
 Nulový fallback
 ---------------
 
-	.box {
-		color: red;
-		transition: .5ms;
-	}
+```css
+.box {
+  color: red;
+  transition: .5ms;
+}
 
-	.box:hover {
-		color: darkred;
-	}
+.box:hover {
+  color: darkred;
+}
+```
 
 Tady se netrápíme tím, že starší prohlížeče nezvládají animaci pomocí [transition](css3-transitions.md), protože ty nám slouží k vylepšení uživatelského prožitku v moderních prohlížečích.
 

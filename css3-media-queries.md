@@ -15,25 +15,31 @@ Syntaxe
 
 Můžete je vložit přímo do CSS souboru:
 
-	@media (_podminky_) {
-		/* css kod, ktery se aplikuje
-    jen po splneni _podminek_ */
-	}
+```css
+@media (_podminky_) {
+  /* css kod, ktery se aplikuje
+  jen po splneni _podminek_ */
+}
+```
 
 Nebo do HTML na místě reference na CSS soubor:
 
-	<link rel="stylesheet"
-    href="mobile.css" media="max-width: 480px">
+```css
+<link rel="stylesheet"
+  href="mobile.css" media="max-width: 480px">
+```
 
 ### Minimální/maximální výška/šířka
 
 Klasický dotaz na média vypadá například takto:
 
-	@media (max-width: 480px) {
-		.container {
-			width: auto
-		}
-	}
+```css
+@media (max-width: 480px) {
+  .container {
+  	width: auto
+  }
+}
+```
 
 Deklaraci pro `.container` prohlížeč aplikuje, pokud šířka viewportu (prostoru pro stránku v okně prohlížeče) nepřesáhne 480 pixelů.
 
@@ -41,9 +47,11 @@ Alternativně lze použít dotaz na šířku displeje obrazovky: `@media (max-de
 
 Vraťme se ke zbývajícím dotazům na rozměry viewportu. Lze si domyslet, že vypadají takto:
 
-	@media (min-width: 100px) { … }
-	@media (max-height: 100px) { … }
-	@media (min-height: 100px) { … }
+```css
+@media (min-width: 100px) { … }
+@media (max-height: 100px) { … }
+@media (min-height: 100px) { … }
+```
 
 Živý příklad Media Queries můžete vyzkoušet tady: [cdpn.io/e/aCBAr](http://cdpn.io/e/aCBAr).
 
@@ -51,12 +59,16 @@ Vraťme se ke zbývajícím dotazům na rozměry viewportu. Lze si domyslet, že
 
 Dotazy na média můžete pomocí operátoru `and` řetězit jednak kombinovat mezi sebou a taky kombinovat s typy médií:
 
-	@media screen and (min-width: 400px)
-    and (max-height: 600px) { … }
+```css
+@media screen and (min-width: 400px)
+  and (max-height: 600px) { … }
+```
 
 Místo očekávaného `or` se používá čárka:
 
-	@media (max-width: 400px), print { … }
+```css
+@media (max-width: 400px), print { … }
+```
 
 Dalším možným operátorem je negace (`not`).
 
@@ -64,11 +76,13 @@ Dalším možným operátorem je negace (`not`).
 
 **Detekce vysokokapacitních displejů** typu Retina, Amoled a dalších:
 
-	@media
-		(-webkit-min-device-pixel-ratio: 1.5),
-		(min-resolution: 144dpi) {
-			background-image: url(image_hd.png);
-		}
+```css
+@media
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi) {
+    background-image: url(image_hd.png);
+  }
+```
 
 Pokud má zařízení poměr mezi CSS a hardwarovými pixely alespoň 1.5, načte se obrázek `image_hd.png`.
 
@@ -76,12 +90,16 @@ Poměrů je dnes celá řada (1.25, 1.5, 2, 3, 4), a tak tam kde to jde, doporu�
 
 **Detekce orientace zařízení.** Drží zařízení uživatel na výšku, nebo na šířku?
 
+```css
 	@media (orientation: portrait) { ... }
 	@media (orientation: landscape) { ... }
+```
 
 **Podmínka pro poměr stran obrazovky**
 
+```css
 	@media screen and (device-aspect-ratio: 16/9) { ... }
+```
 
 To byly ty nejpoužívanější typy dotazů. Existuje jich ale [mnohem víc](http://www.opera.com/docs/specs/presto26/css/mediaqueries/).
 

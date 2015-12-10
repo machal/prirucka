@@ -2,7 +2,7 @@
 
 V [responzivním designu](http://www.vzhurudolu.cz/responzivn-design) často potřebujeme volit mezi různými variantami jednoho obsahového obrázku. Nejčastěji proto, že chceme ušetřit datový objem stránky na mobilech.
 
-Naš starý známý `<img>` k tomu nestačí. A tak iniciativa [Responsive Images Community Group](http://responsiveimages.org/) přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. 
+Naš starý známý `<img>` k tomu nestačí. A tak iniciativa [Responsive Images Community Group](http://responsiveimages.org/) přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`.
 
 Je to standard, jehož podporu deklarovali všichni významný výrobci prohlížečů, a který je s drobným přimhouřením očí [s pomocí polyfillu použitelný](http://www.vzhurudolu.cz/prirucka/picturefill) už dnes.
 
@@ -12,7 +12,7 @@ Bavíme se tady o bitmapových obrázcích, typicky fotografiích. Pro ikony, lo
 
 Občas je pro responzivní obrázky možné vidět [řešení s nahrazováním atributu src](http://responsejs.com/):
 
-```
+```html
 <img src="large.jpg" data-small="small.jpg" …>
 ```
 
@@ -33,18 +33,18 @@ Holky a kluci v RICG si sedli a [vymysleli 9 scénářů](http://usecases.respon
 
 ## `srcset/sizes`
 
-```
+```html
 <img src="small.jpg"
-  srcset="medium.jpg 600w, large.jpg 1200w" 
+  srcset="medium.jpg 600w, large.jpg 1200w"
   sizes="(min-width: 600px) 600px, 100vw"
   alt="…" width="400" height="300">
-```  
+```
 
 Nové atributy `<img>`, pomocí kterých autor stránky prohlížeči sděluje 2 informace. V `srcset` sadu variant obrázků a jejich vlastností. V `sizes` pak velikosti obrázků mezi jednotlivými breakpointy layoutu. Více [o srcset a sizes ve zvláštním článku](http://www.vzhurudolu.cz/prirucka/srcset-sizes). Se srcset a sizes si vystačíte ve všech scénářích kromě čtvrtého – výtvarné režie. To pak potřebujete speciální tag a to…
 
 ## `<picture>`
 
-```
+```html
 <picture>
     <source media="(min-width: 600px)" srcset="medium.jpg">
     <source media="(min-width: 1024px)" srcset="large.jpg">
@@ -67,7 +67,7 @@ Prakticky všechny prohlížeče ústy svých tvůrců deklarovaly, že tento st
 
 * Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture), [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill).
 * [Dev.Opera: Scénáře použítí responzivních obrázků ](https://dev.opera.com/articles/responsive-images/)(anglicky).
-* [Generátor variant obrázků](https://github.com/andismith/grunt-responsive-images) pro [Grunt](http://www.vzhurudolu.cz/prirucka/grunt). 
+* [Generátor variant obrázků](https://github.com/andismith/grunt-responsive-images) pro [Grunt](http://www.vzhurudolu.cz/prirucka/grunt).
 * [Compressive Images](http://www.filamentgroup.com/lab/compressive-images.html), alternativní technika pokud řešíte problém s device-pixel-ratio a datovým objemem na pomalých připojeních.
 
 

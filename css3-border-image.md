@@ -8,13 +8,14 @@ Vezmeme jakýkoliv obrázek obsahující rámeček a prohlížeči řekneme, jak
 Syntaxe
 -----------
 
-	border-image:
-		_zdrojovy_obrazek_
-		_rozmery_rezu_
-		_sirka_ramecku_
-		_zacatek_rezu_
-		_opakovani_
-
+```css
+border-image:
+  _zdrojovy_obrazek_
+  _rozmery_rezu_
+  _sirka_ramecku_
+  _zacatek_rezu_
+  _opakovani_
+```
 
 ### Zdrojový obrázek
 
@@ -51,8 +52,10 @@ Jak bude prohlížeč pracovat s vertikální a horizontální stranou obrázkov
 
 Je dobré připomenout, že i tady je možné nastavit různé hodnoty pro horizontální i vertikální část rámečku. Například:
 
-	border-image-repeat: stretch repeat;
 
+```css
+border-image-repeat: stretch repeat;
+```
 
 
 Může se hodit
@@ -74,15 +77,21 @@ Protože [CSS gradienty](css3-gradients.md) se mezi obrázky počítají také, 
 
 Pamatujte, že vždy je nutné nejprve definovat nativní rámeček obrázku. Jednak kvůli rozměrům, jednak tím vytvoříme fallback pro prohlížeče, které `border-image` nezvládají. V našem příkladu tedy kolem elementu nejdříve vyrobíme 20pixelový zelený rámeček:
 
-	border: 20px solid green;
+```css
+border: 20px solid green;
+```
 
 Teď prohlížeči řekneme, že namísto zelené barvy chceme v rámečku barevný přechod:
 
-	border-image-source: linear-gradient(lightgreen, darkgreen);
+```css
+border-image-source: linear-gradient(lightgreen, darkgreen);
+```
 
 K našemu překvapení ovšem prohlížeč barevný přechod vykreslí jen v rozích rámečku. Důvodem je výchozí hodnota rozměrů řezů: `border-image-slice: 100%`. Znamená, že obrázek se použije právě jen pro všechny čtyři růžky. Předefinujeme tedy tak, aby odpovídal šířce našeho rámečku:
 
-	border-image-slice: 20;
+```css
+border-image-slice: 20;
+```
 
 A je to. Příklad si můžete vyzkoušet na [codepen.io/machal/pen/zdyIJ](http://codepen.io/machal/pen/zdyIJ).
 
@@ -92,24 +101,34 @@ Příklad s bitmapovým obrázkem na pozadí
 
 Opět si nejdříve nadefinujeme rozměry rámečku a fallback pro staré prohlížeče:
 
-	border-color: green;
-	border-style: solid;
-	border-width: 21px 23px;
+```css
+border-color: green;
+border-style: solid;
+border-width: 21px 23px;
+```
 
 Přidáme obrázek na pozadí:
 
-	border-image-source: url(border-image-source.png);
+```css
+border-image-source: url(border-image-source.png);
+```
 
 Dále definujeme řezy. V tomto zdrojovém obrázku máme horizontální rámeček vysoký	21 pixelů a vertikální 23 pixelů.
 
-	border-image-slice: 21 23;
+```css
+border-image-slice: 21 23;
+```
 
 Nakonec je potřeba prohlížeči oznámit, že postranní řezy hodláme v případě nárůstu velikosti elementu opakovat:
 
-	border-image-repeat: repeat;
+```css
+border-image-repeat: repeat;
+```
 
 A pojďme si ještě vyzkoušet zkrácený zápis posledních tří deklarací:
 
-	border-image: url(border-image-source.png) 21 23 repeat;
+```css
+border-image: url(border-image-source.png) 21 23 repeat;
+```
 
 Hotovo. Příklad si můžete vyzkoušet na [codepen.io/machal/pen/DLkjm](http://codepen.io/machal/pen/DLkjm).

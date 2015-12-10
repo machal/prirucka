@@ -7,11 +7,17 @@ Dozvíte se, proč `box-sizing: border-box` milují vývojáři, kteří dělaj�
 
 ## Syntaxe
 
-    box-sizing: content-box | border-box | padding-box;
+```css
+box-sizing: content-box | border-box | padding-box;
+```
 
 Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v nestandardním módu?
 
-    Šířka nebo výška elementu = viditelná šířka nebo výška obsahu + padding + border.
+```
+Šířka nebo výška elementu =
+  viditelná šířka nebo výška obsahu
+  + padding + border.
+```
 
 Už víte? To je **`border-box` box-model**.
 
@@ -19,14 +25,16 @@ Už víte? To je **`border-box` box-model**.
 
 Naproti tomu **`content-box` neboli „W3C box-model“** používají všechny moderní prohlížeče. Výpočet znáte:
 
-    Šířka nebo výška elementu = viditelná šířka nebo výška obsahu
+```
+Šířka nebo výška elementu =
+viditelná šířka nebo výška obsahu.
+```
 
 A to je taky přednastavená hodnota vlastnosti `box-sizing`, kterou – naštěstí – můžeme změnit.
 
 Pro pořádek uveďme, jak se počítá šířka a výška elementu u `box-sizing: padding-box` – je to vlastně `border-box`, kde se do výpočtu nepřipočítá šířka vlastnosti `border`.
 
 Dobře, ale jak to můžeme využít? Podívejme se na několik možných scénářů.
-
 
 ## Příklady využití
 
@@ -38,20 +46,24 @@ Někdo využívá vlastnosti box-sizing v situaci, kdy se mu špatně pracuje s 
 
 Mnoho využití má tato vlastnost v responzivním webdesignu, konkrétně při práci s layoutem definovaným v procentuálních jednotkách. Představte si například navigaci, jež má vždy 5 položek. Šířka jedné pak bude 20 %. Oddělovač mezi položkami je vytvořený rámečkem fixní šířky:
 
-    .nav li {
-        width: 20%;
-        display: inline-block;
-        border-left: .25em solid #fff;
-    }
+```css
+.nav li {
+  width: 20%;
+  display: inline-block;
+  border-left: .25em solid #fff;
+}
+```
 
 Jenže takhle nám pátá  položka navigace odskočí na další řádku. Potřebujeme však jen prohlížeči oznámit, ať laskavě šířku položek navigace počítá pomocí `box-sizing: border-box`:
 
-    .nav li {
-        box-sizing: border-box;
-        width: 20%;
-        display: inline-block;
-        border-left: .25em solid #fff;
-    }
+```css
+.nav li {
+  box-sizing: border-box;
+  width: 20%;
+  display: inline-block;
+  border-left: .25em solid #fff;
+}
+```
 
 Živá ukázka příkladu je na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
 

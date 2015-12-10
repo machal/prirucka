@@ -4,7 +4,9 @@ CSS3 RGBa barva – barva s poloprůhledností
 
 RGB barva se čtvrtým číslem, jež alfa kanálem říká informaci o hodnotě průhlednosti.
 
-	rgba(_red_, _green_, _blue_, _pruhlednost_);
+```css
+rgba(_red_, _green_, _blue_, _pruhlednost_);
+```
 
 Poloprůhledné RGBa barvy můžete samozřejmě aplikovat všude, kde se v&nbsp;CSS barvy používají. Zdůrazním hlavně rámečky, [stíny](css3-box-shadow.md) nebo [gradienty](css3-gradients.md).
 
@@ -23,8 +25,10 @@ Podpora v prohlížečích
 
 RGBa mají rády všechny prohlížeče kromě osmičky a starších MSIE. Elegantně si se stařečky poradíte definovaným fallbackem:
 
-	color: rgb(128, 0, 0);
-	color: rgba(255, 0, 0, 0.5);
+```css
+color: rgb(128, 0, 0);
+color: rgba(255, 0, 0, 0.5);
+```
 
 V moderních browserech se zobrazí červená s padesátiprocentní průhledností. V IE8– pak tmavý odstín červené. Fallback barvu musíme určit s ohledem na barvu pozadí. Tady počítáme s černou.
 

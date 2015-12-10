@@ -11,11 +11,13 @@ Nová cesta pro tvorbu layoutu, zarovnání a distribuci volné plochy.
 
 Představme si triviální třísloupcový layout:
 
-	<div class="container">
-	  <p class="mandatory-1">One</p>
-	  <p class="content">Two<br/>…<br/>…</p>
-	  <p class="mandatory-2">Three </p>
-	</div>
+```html
+<div class="container">
+  <p class="mandatory-1">One</p>
+  <p class="content">Two<br/>…<br/>…</p>
+  <p class="mandatory-2">Three </p>
+</div>
+```
 
 HTML je jednoduché. O to přísnější máme požadavky na design. A víte co? Ukážeme si rovnou, jak je splnit pomocí flexboxu.
 
@@ -45,16 +47,20 @@ Pro celostránkové layouty se více hodí CSS3 Grid Layout. Ten má ovšem zat�
 
 Flexbox tvoří nerozlučná dvojice dvou typů elementů – flex kontejner a flex položka. Flex položkou se stává každý přímý potomek kontejneru.
 
-	<ul class="flex-container">
-	  <li>…</li>
-	  <li>…</li>
-	</ul>
+```html
+<ul class="flex-container">
+  <li>…</li>
+  <li>…</li>
+</ul>
+```
 
 Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
 
-	.flex-container {
-	  display: flex;
-	}
+```css
+.flex-container {
+  display: flex;
+}
+```
 
 Všechny `<li>` se tady stávají flex položkami.
 

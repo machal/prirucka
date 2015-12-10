@@ -1,13 +1,6 @@
 Lazy loading
 ============
 
-<!--
-TODO
-- unveil.js fold problém: buď musím nastavit velký treshold (600), ale pak nevidím ani animaci nebo se na vysokých displejích nezobrazují obrázky cca ve druhé půlce výšky
-- unveil.js a iOS scrolling - opravdu se musí načítat až po skončení scrollování?
--->
-
-
 Ve světě webového frontendu označuje [Lazy loading](http://cs.wikipedia.org/wiki/Lazy_loading) techniku, která zajistí načtení obsahu stránky až ve chvíli kdy jej uživatel potřebuje.
 
 Nejčastěji lazyloading (neboli odložené načítání) aplikujeme na obrázky až ve chvíli kdy na ně uživatel nascrolluje. V tomhle příkladu čekají na načtení všechny obrázky mimo viewport:
@@ -22,22 +15,28 @@ Ke zrychlení načítání stránky. Lazyloading nám ušetří jak datový obje
 
 Odložené načítání má mnoho [různých variant](http://jecas.cz/lazy-loading-obrazky), mně se z mnoha důvodů osvědčilo použití [Unveil.js](https://github.com/luis-almeida/unveil):
 
-	<img src="bg.png" data-src="img1.jpg" alt="…">
+```html
+<img src="bg.png" data-src="img1.jpg" alt="…">
+```
 
 Javascript hlídá scrollování stránky a když uživatel naroluje k obrázku, zkopíruje se obsah `data-src` do `src`.
 
 Aby to bylo dokonale přístupné, musíte ještě uvést variantu pro čtečky a další scénáře kdy se javascript nenačte:
 
-	<img src="bg.png" data-src="img1.jpg" alt="…">
-	<noscript>
-	  <img src="img1.jpg" alt="…">
-	</noscript>
+```html
+<img src="bg.png" data-src="img1.jpg" alt="…">
+<noscript>
+  <img src="img1.jpg" alt="…">
+</noscript>
+```
 
 Pak už zbývá jen inicializace:
 
-	$(document).ready(function() {
-	  $("img").unveil();
-	});
+```html
+$(document).ready(function() {
+  $("img").unveil();
+});
+```
 
 V dokumentaci Unveil.js jsou vidět i další možnosti. Umí totiž:
 

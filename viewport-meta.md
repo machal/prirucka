@@ -1,22 +1,22 @@
 # Meta tag Viewport
 
-Zjednodušeně (ale lidsky) řečeno slouží k informování prohlížeče, zda a jak jste web připravili pro mobilní zařízení. 
+Zjednodušeně (ale lidsky) řečeno slouží k informování prohlížeče, zda a jak jste web připravili pro mobilní zařízení.
 
 ![TODO img](image_1.png)
 
 Začnu bez vysvětlování správným výchozím meta viewport zápisem:
 
-```
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
 K tomu si do CSS doplňte:
 
-```
+```css
 @-ms-viewport { width: device-width; }
 ```
 
-Tohle vám u drtivé většiny responzivních webů bude stačit. Pokud ale máte 5 minut času, pojďme si říct proč meta viewport zapisovat právě takhle. 
+Tohle vám u drtivé většiny responzivních webů bude stačit. Pokud ale máte 5 minut času, pojďme si říct proč meta viewport zapisovat právě takhle.
 
 ## `<meta name="viewport" content="…">`
 
@@ -26,15 +26,16 @@ Do atributu content je možné dávat různé vlastnosti a jejich hodnoty.
 
 ### `width`
 
-Nastaví šířku layoutového viewportu v pixelech. Nejčastěji využívaná hodnota device-width pak nastaví šířku layoutového viewportu (plocha do které se zobrazuje stránka) na šířku ideálního viewportu (výřez, přes který na stránku koukáte).Pokud použijete hodnotu, např. `width=400`, nastavíte šířku layoutového viewportu na 400 pixelů. To snad nebudete muset dělat. 
+Nastaví šířku layoutového viewportu v pixelech. Nejčastěji využívaná hodnota device-width pak nastaví šířku layoutového viewportu (plocha do které se zobrazuje stránka) na šířku ideálního viewportu (výřez, přes který na stránku koukáte).
+Pokud použijete hodnotu, např. `width=400`, nastavíte šířku layoutového viewportu na 400 pixelů. To snad nebudete muset dělat.
 
 ### `initial-scale`
 
-Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku dělá zápis `initial-scale=1` totéž jako `width=device-width`. 
+Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku dělá zápis `initial-scale=1` totéž jako `width=device-width`.
 
 ### `user-scalable`
 
-Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení [fakt potřeba](http://ux.stackexchange.com/a/37513). Ať už jde o zvětšení hůř navržené stránky, zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku — přibližování a oddalování prostě potřebují všichni uživatelé. 
+Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení [fakt potřeba](http://ux.stackexchange.com/a/37513). Ať už jde o zvětšení hůř navržené stránky, zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku — přibližování a oddalování prostě potřebují všichni uživatelé.
 
 ### `minimum-scale`/`maximum-scale`
 
@@ -42,13 +43,13 @@ Minimální a maximální možný zoom. Netuším, k čemu by mohlo být dobré.
 
 ## Proč `width=device-width` a zároveň `initial-scale=1`?
 
-Hodnota `width=device-width` je instrukce pro sjednocení [viewportu layoutu s ideálním viewportem](veiwport-mobily.md). 
+Hodnota `width=device-width` je instrukce pro sjednocení [viewportu layoutu s ideálním viewportem](veiwport-mobily.md).
 
 Lidsky řečeno – mobilní prohlížeč vaši stránku nevykreslí do přednastaveného viewportu (u většiny mobilních prohlížečů 980 pixelů), ale použije [ideální viewport pro dané zařízení](http://www.quirksmode.org/mobile/metaviewport/#link7) (např. pro Android prohlížeč na Samsungu Galaxy S4 je to 360 pixelů v režimu portrait).
 
 `width=device-width` má ovšem jednu známou nevýhodu – Safari na iOS pak jako ideální viewport v režimu zobrazení na šířku použije ideální viewport pro výšku. Ano, přesně tohle je příčinou toho problému se „zvětšováním" stránky v landscape režimu na iOS.
 
-Je zde jedna záchrana – použít namísto toho zápis `initial-scale=1`. Světe div se, na všech mobilních zařízeních má ten samý efekt jako `width=device-width`. Světe div se podruhé, Safari na iOS už v landscape režimu renderuje do ideálního landscape viewportu. 
+Je zde jedna záchrana – použít namísto toho zápis `initial-scale=1`. Světe div se, na všech mobilních zařízeních má ten samý efekt jako `width=device-width`. Světe div se podruhé, Safari na iOS už v landscape režimu renderuje do ideálního landscape viewportu.
 
 A světe, teď se nemůžeš divit, má to svoje nevýhody. Internet Explorer se na mobilních Windows 8 totiž začne chovat úplně stejně špatně jako mobilní Safari.
 

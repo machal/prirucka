@@ -11,23 +11,24 @@ Syntaxe
 
 Animaci si nejdřív nadefinujete pomocí at-rule (zavináčové funkce) `@keyframes`. Následně ji můžete kdekoliv zavolat a nastavit si podle libosti.
 
-	@keyframes _nazev_animace_ {
-		_cas_ { _deklarace_vlastnosti_ }
-		_cas_ { _deklarace_vlastnosti_ }
-	}
+```css
+@keyframes _nazev_animace_ {
+	_cas_ { _deklarace_vlastnosti_ }
+	_cas_ { _deklarace_vlastnosti_ }
+}
 
-	#example {
-		animation:
-			_nazev_animace_
-			_cas_trvani_
-			_casova_funkce_prubehu_
-			_zpozdeni_
-			_pocet_opakovani_
-			_smer_prubehu_
-			_fill_mode_
-			(,_dalsi_animace_);
-	}
-
+#example {
+	animation:
+		_nazev_animace_
+		_cas_trvani_
+		_casova_funkce_prubehu_
+		_zpozdeni_
+		_pocet_opakovani_
+		_smer_prubehu_
+		_fill_mode_
+		(,_dalsi_animace_);
+}
+```
 
 ### `animation-name` – název animace
 

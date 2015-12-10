@@ -8,30 +8,38 @@ Syntaxe
 
 Syntaxe pro prohlížeče postavené na Webkit jádře:
 
-	-webkit-box-reflect: 
-		_směr_odlesku 
-		_posun_ 
-		_maska_;
-	
+```css
+-webkit-box-reflect:
+  _směr_odlesku
+  _posun_
+  _maska_;
+```
+
 ### Směr odlesku
 
 Povinná položka, která může nabývat hodnot `above`, `below`, `left` nebo `right`.
 
-	-webkit-box-reflect: below;
+```css
+-webkit-box-reflect: below;
+```
 
 ### Posun
 
 Jak moc se odlesk vzdálí od původního objektu. Uvádí se v běžných CSS jednotkách – `px`, `em` a dalších.
 
-	-webkit-box-reflect: below 5px;
+```css
+-webkit-box-reflect: below 5px;
+```
 
 ### Maska
 
 Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu maskou bývá [CSS gradient](css3-gradients.md). Může to být ale i obrázek. Co je v masce černé, zobrazí se; co je průhledné, nezobrazí se.
 
-	-webkit-box-reflect: below 5px linear-gradient(to bottom, transparent, black);
-	
-Živá ukázka příkladu je na [cdpn.io/e/CLEhF](http://cdpn.io/e/CLEhF).	
+```css
+-webkit-box-reflect: below 5px linear-gradient(to bottom, transparent, black);
+```
+
+Živá ukázka příkladu je na [cdpn.io/e/CLEhF](http://cdpn.io/e/CLEhF).
 
 Podpora v prohlížečích
 ----------------------

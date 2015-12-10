@@ -15,17 +15,21 @@ Podobně jako v příkladu výše můžete změnu velikosti písma celého dokum
 
 Všechny rozměry v dokumentu nastavíme pomocí jednotky `rem`. Pokud tedy nadpisy první úrovně nastavíme na `1.5rem`, budou velké 1,5 × `16px` – tedy `24px`.
 
-    h1 {
-        font-size: 1.5rem;
-    }
+```css
+h1 {
+    font-size: 1.5rem;
+}
+```
 
 Pokud se tedy pomocí media query rozhodneme, že od šířky okna 801 pixelů nastavíme základní velikost písma na 25 pixelů, …
 
-    @media (min-width: 801px) {
-        html {
-            font-size: 25px;
-        }
-    }
+```css
+@media (min-width: 801px) {
+  html {
+    font-size: 25px;
+  }
+}
+```
 
 … zvětší se nám všechny rozměry nastavené v jednotkách `rem`. Nadpis `<h1>` tedy bude mít v těchto šířkách okna velikost 38 pixelů (`25px` × 1,5).
 
@@ -35,8 +39,10 @@ Na živo můžete vyzkoušet tady: [cdpn.io/e/mnbaA](http://cdpn.io/e/mnbaA)
 
 IE9+. Pro starší prohlížeče lze vytvořit pixelový fallback:
 
-    font-size: 24px;
-    font-size: 1.5rem;
+```css
+font-size: 24px;
+font-size: 1.5rem;
+```
 
 Fallback je lepší nechat si generovat automaticky, například pomocí CSS preprocesoru.
 
@@ -58,9 +64,11 @@ Na rozdíl od procent se jednotky viewportu nevztahují k rozměrům nejbližš�
 
 Příkladem budiž roztažení výšky layoutu stránky na celou výšku okna prohlížeče:
 
-    .container {
-        width: 100vw;
-    }
+```css
+.container {
+  width: 100vw;
+}
+```
 
 ### Podpora v prohlížečích
 

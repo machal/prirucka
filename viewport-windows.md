@@ -4,7 +4,9 @@ S viewportem jsou jen problémy. A Internet Explorer na Windows Phone 8 a 8.1 da
 
 Pokud se nechcete zabývat celým příběhem, do CSS si prostě přidejte tohle pravidlo:
 
-	@-ms-viewport { width: device-width; }
+```css
+@-ms-viewport { width: device-width; }
+```
 
 A pokud chcete hezky zobrazovat weby na mobilních Windows 8, přidejte si do stránky i kousek javascriptu z konce tohoto článku. Raději si text ovšem přečtěte celý, je to chvilka času.
 
@@ -37,4 +39,4 @@ Jak už to ale bývá – zvídaví lidé přišli na to, že s přidáním prav
        	 appendChild(msViewportStyle);
 	}
 
-A to je šťastný konec dalšího dílu pohádky o zlobivém Microsoftu, milé děti. 
+A to je šťastný konec dalšího dílu pohádky o zlobivém Microsoftu, milé děti.

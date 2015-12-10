@@ -4,7 +4,7 @@ CSS3 Text Overflow – způsob přetékání textu
 
 Vytečkování textu, který přesahuje šířku elementu.
 
-```
+```css
 text-overflow:
   ( clip | ellipsis | <_retezec_> );
 ```
