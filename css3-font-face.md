@@ -45,14 +45,18 @@ Pokud potřebujete podporovat všechny systémy, zápis je trošku složitějš�
     /* IE9 v kompatibilním režimu: */
     src: url('webfont.eot');
     src:
-    /* IE6-IE8: */
-      url('webfont.eot?#iefix') format('embedded-opentype'),
-    /* Všechny moderní prohlížeče: */
-      url('webfont.woff') format('woff'),
-    /* Starší Safari, Android, iOS: */
-      url('webfont.ttf')  format('truetype'),
-    /* iOS 4.3 a starší */
-      url('webfont.svg') format('svg');
+      /* IE6-IE8: */
+      url('webfont.eot?#iefix')
+        format('embedded-opentype'),
+      /* Všechny moderní prohlížeče: */
+      url('webfont.woff')
+        format('woff'),
+      /* Starší Safari, Android, iOS: */
+      url('webfont.ttf')
+        format('truetype'),
+      /* iOS 4.3 a starší */
+      url('webfont.svg')
+        format('svg');
 }
 ```
 
