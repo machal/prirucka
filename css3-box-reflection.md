@@ -36,7 +36,8 @@ Jak moc se odlesk vzdálí od původního objektu. Uvádí se v běžných CSS j
 Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu maskou bývá [CSS gradient](css3-gradients.md). Může to být ale i obrázek. Co je v masce černé, zobrazí se; co je průhledné, nezobrazí se.
 
 ```css
--webkit-box-reflect: below 5px linear-gradient(to bottom, transparent, black);
+-webkit-box-reflect:
+  below 5px linear-gradient(to bottom, transparent, black);
 ```
 
 Živá ukázka příkladu je na [cdpn.io/e/CLEhF](http://cdpn.io/e/CLEhF).

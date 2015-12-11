@@ -36,8 +36,9 @@ Tip: Pokud máte tendenci takto pracovat s ikonami, porozhlédněte se po vektor
 Procenta se používají relativně k šířce nebo výšce elementu, na který je vlastnost aplikována. Například roztažení barevného přechodu na celou šířku a polovinu výšky elementu zapíšeme takto:
 
 ```css
-	background: linear-gradient(to bottom, transparent, black) no-repeat bottom;
-	background-size: 100% 50%;
+background: linear-gradient(to bottom, transparent, black)
+  no-repeat bottom;
+background-size: 100% 50%;
 ```
 
 Naživo se podívejte na [codepen.io/machal/pen/cmpjE](http://codepen.io/machal/pen/cmpjE).
@@ -49,7 +50,7 @@ Nezapomeňte, že šířka nebo výška pozadí vychází z nastavení vlastnost
 Pokud používáme [více obrázků na pozadí](css3-multiple-backgrounds.md), specifikace změn jejich velikostí opět oddělujeme čárkou:
 
 ```css
-	background-size: 50% auto, auto;
+background-size: 50% auto, auto;
 ```
 
 Podpora v prohlížečích
@@ -69,10 +70,9 @@ Využít parametru `filter`. Hodí se jen pro situace, kdy obrázek na pozadí m
 
 ```css
 .element {
-	background-size: contain;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-		src='images/image.jpg',
-		sizingMethod='scale');
+  background-size: contain;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='images/image.jpg', sizingMethod='scale');
 }
 ```
 

@@ -24,7 +24,7 @@ Můžete je vložit přímo do CSS souboru:
 
 Nebo do HTML na místě reference na CSS soubor:
 
-```css
+```html
 <link rel="stylesheet"
   href="mobile.css" media="max-width: 480px">
 ```
@@ -91,14 +91,14 @@ Poměrů je dnes celá řada (1.25, 1.5, 2, 3, 4), a tak tam kde to jde, doporu�
 **Detekce orientace zařízení.** Drží zařízení uživatel na výšku, nebo na šířku?
 
 ```css
-	@media (orientation: portrait) { ... }
-	@media (orientation: landscape) { ... }
+@media (orientation: portrait) { ... }
+@media (orientation: landscape) { ... }
 ```
 
 **Podmínka pro poměr stran obrazovky**
 
 ```css
-	@media screen and (device-aspect-ratio: 16/9) { ... }
+@media screen and (device-aspect-ratio: 16/9) { ... }
 ```
 
 To byly ty nejpoužívanější typy dotazů. Existuje jich ale [mnohem víc](http://www.opera.com/docs/specs/presto26/css/mediaqueries/).

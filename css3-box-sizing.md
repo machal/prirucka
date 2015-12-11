@@ -15,8 +15,8 @@ Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Exp
 
 ```
 Šířka nebo výška elementu =
-  viditelná šířka nebo výška obsahu
-  + padding + border.
+viditelná šířka nebo výška obsahu
++ padding + border.
 ```
 
 Už víte? To je **`border-box` box-model**.

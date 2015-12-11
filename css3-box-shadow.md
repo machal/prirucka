@@ -97,7 +97,8 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 V IE8 můžete stín nechat vykreslit pomoc proprietární vlastnosti `filter`. Například:
 
 ```css
-	filter: progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=145, Strength=3);
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#cccccc',
+  Direction=145, Strength=3);
 ```
 
 Samozřejmě ne všechny typy stínů takto nahradíte.

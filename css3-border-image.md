@@ -84,7 +84,8 @@ border: 20px solid green;
 Teď prohlížeči řekneme, že namísto zelené barvy chceme v rámečku barevný přechod:
 
 ```css
-border-image-source: linear-gradient(lightgreen, darkgreen);
+border-image-source:
+  linear-gradient(lightgreen, darkgreen);
 ```
 
 K našemu překvapení ovšem prohlížeč barevný přechod vykreslí jen v rozích rámečku. Důvodem je výchozí hodnota rozměrů řezů: `border-image-slice: 100%`. Znamená, že obrázek se použije právě jen pro všechny čtyři růžky. Předefinujeme tedy tak, aby odpovídal šířce našeho rámečku:

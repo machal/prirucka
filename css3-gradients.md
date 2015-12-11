@@ -115,7 +115,8 @@ Deklarují se úplně stejně jako běžné barevné přechody, jen pomocí funk
 .repeating-linear {
     background:
       repeating-linear-gradient(to bottom right,
-        transparent, transparent 10%, green 10%, green 20%);
+        transparent, transparent 10%,
+        green 10%, green 20%);
 }
 ```
 
@@ -128,8 +129,8 @@ Pojďme ještě zkusit opakující se kruhový gradient:
 ```css
 .repeating-radial {
     background:
-      repeating-radial-gradient(transparent, transparent 10%,
-        green 10%, green 20%);
+      repeating-radial-gradient(transparent,
+        transparent 10%, green 10%, green 20%);
 }
 ```
 
@@ -180,7 +181,7 @@ V parametru `GradientType` nastavujete vertikální (`0`) nebo horizontální (`
 
 
 Tipy a triky
--------
+------------
 
 Nezapomeňte, že gradient je vlastně **obrázek na pozadí elementu**, takže ho můžete použít pro definování obrázku odrážky (`list-style-image`) nebo pro obrázek na pozadí rámečku ([border-image](css3-border-image.md)).
 
