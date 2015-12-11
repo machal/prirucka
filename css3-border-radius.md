@@ -8,10 +8,10 @@ Syntaxe
 
 ```css
 border-radius:
+  _polomer_vlevo_nahore_
   _polomer_vpravo_nahore_
   _polomer_vpravo_dole_
   _polomer_vlevo_dole_
-  _polomer_vlevo_nahore_
   (/ _elipsove_varianty_);
 ```
 
