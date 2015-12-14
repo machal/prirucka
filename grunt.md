@@ -8,16 +8,16 @@ Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojov�
 
 <img class="picture" src="content/schemes/grunt.jpg" width="1000" height="575" alt="Grunt.js">
 
-Důvody proč mám Grunt rád nejlíp ukáže [seznam úloh co využívám](grunt-pluginy.md). 
+Důvody proč mám Grunt rád nejlíp ukáže [seznam úloh co využívám](grunt-pluginy.md).
 
 To jde, ne? A to si myslím, že jsem jen mírně pokročilý uživatel Gruntu a čeká mě ještě hooodně objevování.
 
 
 ## Proč Grunt?
 
-Pokud si rádi šetříte práci, je Grunt naprosto návyková záležitost. 
+Pokud si rádi šetříte práci, je Grunt naprosto návyková záležitost.
 
-Dobré je ale zmínit, že pro používání Gruntu musíte alespoň trochu kamarádit s příkazovou řádkou. Žádné pokročilé vědomosti potřeba nejsou. Autor  článku kolem příkazové řádky chodí po špičkách, ale s Gruntem se zkamarádil docela rychle.
+Dobré je ale zmínit, že pro používání Gruntu musíte alespoň trochu kamarádit s příkazovou řádkou. Žádné pokročilé vědomosti potřeba nejsou. Sám chodím kolem příkazové řádky po špičkách, ale s Gruntem jsem se zkamarádil docela rychle.
 
 Grunt má alternativy v podobě GUI robotů typu CodeKit, Prepros nebo Koala. Jenže ty umí fakt jen ty základní úlohy typu kompilace, minifikace, spojování. Maximálně ještě tvorbu [Source Maps](http://roots.io/using-less-source-maps/).
 

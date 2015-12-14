@@ -6,18 +6,18 @@
 
 [Novější verze](http://scottjehl.github.io/picturefill/) dokáže vyřešit daleko více scénářů použití responzivních obrázků. Je to plnohodnotný polyfill dočasně emulující funkčnost [srcset/sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes) i tagu [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture) ve všech prohlížečích.
 
-Nic ale není zadarmo. První nevýhoda Picturefillu 2 spočívá v doporučení vynechat `src` atribut, aby prohlížeče bez podpory `<picture>` nestáhly dva obrázky. Prohlížeče bez Javascriptu uvidí místo obrázku jen alternativní text. Vzniknou tím problémy s ne-indexováním obrázku v Google Images nebo ne-možností vložit obrázek při sdílení stránky na Facebooku. Pokud je nicméně autorovi známo však nemá vynechání `src` žádné zásadní negativní dopady na čtení stránky slepeckými čtečkami. Zda chcete používat variantu se `src` nebo bez něj si rozmyslete podle požadavků projektu. 
+Nic ale není zadarmo. První nevýhoda Picturefillu 2 spočívá v doporučení vynechat `src` atribut, aby prohlížeče bez podpory `<picture>` nestáhly dva obrázky. Prohlížeče bez Javascriptu uvidí místo obrázku jen alternativní text. Vzniknou tím problémy s ne-indexováním obrázku v Google Images nebo ne-možností vložit obrázek při sdílení stránky na Facebooku. Pokud je mi nicméně známo, nemá vynechání `src` žádné zásadní negativní dopady na čtení stránky slepeckými čtečkami. Zda chcete používat variantu se `src` nebo bez něj si rozmyslete podle požadavků projektu.
 
 Druhá verze Picturefillu využívá standardizované syntaxe a tak se zápis blíží tomu co za pár měsíců až let budou prohlížeče umět nativně.
 
 Příklad zápisu pro [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes):
 
 ```html
-<img 
+<img
   sizes="(min-width: 40em) 80vw, 100vw"
-  srcset="small.jpg 375w, medium.jpg 480w, large.jpg 768w" 
+  srcset="small.jpg 375w, medium.jpg 480w, large.jpg 768w"
   alt="Obrázek" width="500" height="250">
-```  
+```
 
 Příklad zápisu pro [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture):
 
@@ -31,7 +31,7 @@ Příklad zápisu pro [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture):
 </picture>
 ```
 
-Kroutíte hlavou nad použitím `<video>` tagu? Ano, to je [další obezlička](http://scottjehl.github.io/picturefill/#support), tentokrát pro Internet Explorer 9. 
+Kroutíte hlavou nad použitím `<video>` tagu? Ano, to je [další obezlička](http://scottjehl.github.io/picturefill/#support), tentokrát pro Internet Explorer 9.
 
 Jasně, Picturefill 2, má těch obezliček a drobných nevýhod docela dost, ale dobře se zamyslete co vám jeho použití přinese. Vyřešení problému s datový objemem obrázků na mobilech, `device-pixel-ratio` a dalšími obtížemi moderního frontendu za to obvykle stojí.
 
@@ -39,12 +39,12 @@ Pokud chcete mít responzivní obrázky a zároveň jsou pro vás nevýhody druh
 
 ## Picturefill 1
 
-Verze [1.x](https://github.com/scottjehl/picturefill/blob/1.2.1/README.md) se vyznačuje ošklivou syntaxí postavenou na spanech a tím, že umí vyřešit jen dva scénáře použití responzivních obrázků – podle rozlišení obrazovky a `device-pixel-ratio`. 
+Verze [1.x](https://github.com/scottjehl/picturefill/blob/1.2.1/README.md) se vyznačuje ošklivou syntaxí postavenou na spanech a tím, že umí vyřešit jen dva scénáře použití responzivních obrázků – podle rozlišení obrazovky a `device-pixel-ratio`.
 
 ```html
 <span data-picture data-alt="Obrázek">
   <span data-src="small.jpg"></span>
-  <span data-src="medium.jpg" 
+  <span data-src="medium.jpg"
     data-media="(min-width: 400px)"></span>
   <span data-src="large.jpg"
     data-media="(min-width: 800px)"></span>

@@ -71,4 +71,4 @@ Prakticky všechny prohlížeče ústy svých tvůrců deklarovaly, že tento st
 * [Compressive Images](http://www.filamentgroup.com/lab/compressive-images.html), alternativní technika pokud řešíte problém s device-pixel-ratio a datovým objemem na pomalých připojeních.
 
 
-*Za cenné připomínky k materiálu o responzivních obrázcích autor děkuje [Robinovi Pokornému](http://robinpokorny.com/). Podívejte se na 3 Robinovy přednášky na toto téma: [úvod do problému responzivních obrázků](https://www.youtube.com/watch?v=PG2SZQjqKtw), [základní řešení](https://www.youtube.com/watch?v=3yzl4XG1524) a [pokročilé řešení](https://www.youtube.com/watch?v=vmj7tCBVJ6w).*
+*Za cenné připomínky k materiálu o responzivních obrázcích děkuji [Robinovi Pokornému](http://robinpokorny.com/). Podívejte se na 3 Robinovy přednášky na toto téma: [úvod do problému responzivních obrázků](https://www.youtube.com/watch?v=PG2SZQjqKtw), [základní řešení](https://www.youtube.com/watch?v=3yzl4XG1524) a [pokročilé řešení](https://www.youtube.com/watch?v=vmj7tCBVJ6w).*
