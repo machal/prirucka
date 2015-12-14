@@ -14,7 +14,7 @@ background: linear-gradient(lightgreen, darkgreen);
 
 ### Směr osy barevného přechodu
 
-Používají se buď **klíčová slova** označující směr gradientu (`to bottom right`, `to right`) nebo **úhly**. Úhel 0&deg; vede zezdola nahoru, 90&deg; zprava doleva a tak dále po směru hodinových ručiček. Přednastavený je 90&deg; vedoucí seshora dolů. V CSS zápisu `180deg`.
+Používají se buď **klíčová slova** označující směr gradientu (`to bottom right`, `to right`) nebo **úhly**. Úhel 0&deg; vede zezdola nahoru, 90&deg; zleva doprava a tak dále po směru hodinových ručiček. Přednastavený je 180&deg; vedoucí seshora dolů. V CSS zápisu `180deg`.
 
 Například tento gradient ze světle do tmavě zelené povede z levého dolního rohu směrem k pravému hornímu:
 

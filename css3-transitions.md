@@ -80,7 +80,7 @@ Je dobré vědět, že animované přechody nelze aplikovat úplně na všechny 
 
 ### Funkce průběhu
 
-Samostatně jako `transition-timing-function: ease`. Vybrat si můžete z [přednastavených](http://www.w3.org/TR/css3-transitions/#animatable-properties), nebo si nadefinovat [vlastní](http://matthewlein.com/ceaser/).
+Samostatně jako `transition-timing-function: ease`. Vybrat si můžete z [přednastavených](http://www.w3.org/TR/css3-transitions/#transition-timing-function), nebo si nadefinovat [vlastní](http://matthewlein.com/ceaser/).
 
 ### Zpoždění
 
