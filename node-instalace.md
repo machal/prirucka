@@ -1,21 +1,27 @@
 
-# Instalace Node.js ekosystému
+# Instalace Node.js ekosystému pro použití na frontendu
 
-Tohle je začátečníkův průvodce instalací Node.js ekosystému. Ten se hodí prakticky každému frontendistovi – javascriptovým programátorům i [UI vývojářům](/prirucka/webovy-koder). Potřebujete hlavně [Node.js](https://nodejs.org/) a javascriptový balíčkovač [NPM](https://www.npmjs.com/).
+## Nástroje, které si nainstalujeme
+
+- [Node.js](https://nodejs.org/) – běh javascriptu na příkazové řádce.
+- [NPM](https://www.npmjs.com/) – správce javascriptových balíčků.
+- [Bower](bower.md) - správce frontend balíčků (např. jQuery nebo framework Bootstrap).
+- [Grunt](grunt.md) - sestavovač nebo buildovač; nástroj pro běh vývojářských úloh.
+- [Grunt pluginy](grunt-pluginy.md) – samotné úlohy pro Grunt (např. kompilace preprocesorů do CSS, minifikace souborů).
+
+Časem si můžete oblíbit automatizátor [Yeoman](http://yeoman.io/) a další nástroje jako [Gulp](http://gulpjs.com/) nebo [WebPack](https://webpack.github.io/). Vycházejí také z Node.js, ale pro zjednodušení se jim tady nebudeme vůbec věnovat.
 
 ![Node.js](content/schemes/node-js.svg)
 
-Na to navazuje frontend [balíčkovač Bower](bower.md), [sestavovač Grunt](grunt.md) a [jeho pluginy](grunt-pluginy.md). Grunt, Bower a NPM jsou jen začátek, časem si můžete oblíbit automatizátor [Yeoman](http://yeoman.io/) a další nástroje jako [Gulp](http://gulpjs.com/) nebo [WebPack](https://webpack.github.io/). 
-
-Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy – [Windows](http://dosprompt.info/basics.asp) a [Linux &amp; Mac](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/).
+Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy. Návod pro [Windows](http://dosprompt.info/basics.asp) a [Linux &amp; Mac](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/).
 
 ## Node.js a NPM
 
-NPM je balíčkovací systém Node.js – musíte stáhnout a nainstalovat celé Node. 
+NPM je balíčkovací systém Node.js – musíte stáhnout a nainstalovat celé Node.
 
 ### Jste na Windows? Úplně nejdřív tohle
 
-1. Hodí se [nainstalovat Visual Studio Express](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx), které ulehčí chod některých Node balíčků. 
+1. Hodí se [nainstalovat Visual Studio Code](https://www.visualstudio.com/products/code-vs). Editor kódu, který zároveň nainstalujte podporu Node.js pro Windows.
 2. [Nainstalovat Git](http://git-scm.com/downloads) do příkazové řádky. V kroku „Adjusting your PATH environment“ vybrat „Run Git from the Windows Command Prompt“.
 
 A teď všichni, bez ohledu na platformu. Globálně nainstalujeme Node.js. Všechny způsoby jsou tady: [nodejs.org/en/download/](https://nodejs.org/en/download/)
@@ -41,13 +47,13 @@ Konec bezpečnostní odbočky. Pojďme instalovat užitečné balíčky.
 Budete používat [sestavovač Grunt](grunt.md)? V příkazové řádce potřebujete globálně nainstalovat balíček `grunt-cli`:
 
 ```bash
-npm install -g grunt-cli 
+npm install -g grunt-cli
 ```
 
 A co frontend [balíčkovač Bower](bower.md)? To už je jednoduché. Opět jej nainstalujeme globálně:
 
 ```bash
-npm install -g bower 
+npm install -g bower
 ```
 
 Úplně stejným způsobem si pak můžete nainstalovat [Grunt pluginy](grunt-pluginy.md), alternativní sestavovač Gulp nebo třeba Webpack.
@@ -58,7 +64,7 @@ npm install -g bower
 npm install <nazev-pluginu> --save-dev
 ```
 
-Všimněte si, že už neinstalujeme globálně – bez přepínače `-g`. Ano, Grunt pluginy nebo třeba Bower balíčky instalujeme ke konkrétnímu projektu. Zároveň je chceme uložit do konfiguráků balíčkovacího systému (`packages.json`). 
+Všimněte si, že už neinstalujeme globálně – bez přepínače `-g`. Ano, Grunt pluginy nebo třeba Bower balíčky instalujeme ke konkrétnímu projektu. Zároveň je chceme uložit do konfiguráků balíčkovacího systému (`packages.json`).
 
 Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciálnější péči. Vím o [PhantomJS](http://attester.ariatemplates.com/usage/phantom.html), na kterém závisí třeba plugin pro generování [kritického CSS](/blog/35-critical-css) ([grunt-criticalcss](https://github.com/filamentgroup/grunt-criticalcss)) nebo [ImageMagick](http://www.imagemagick.org/script/binary-releases.php), na které zase potřebují pluginy pro práci s obrázky jako [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin).
 
@@ -69,7 +75,7 @@ Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciál
 bower install <nazev-pluginu> --save
 ```
 
-`--save-dev` přepínač uloží plugin do vývojářských závislostí. U začátečníků se používá hlavně v souvislosti s Gruntem a jeho pluginy. Ty instalujeme pomocí NPM. 
+`--save-dev` přepínač uloží plugin do vývojářských závislostí. U začátečníků se používá hlavně v souvislosti s Gruntem a jeho pluginy. Ty instalujeme pomocí NPM.
 
 Pokud bychom instalovali jQuery, půjde o uživatelskou závislost. Použijeme `--save` přepínač. Pro takové závislosti se více hodí Bower.
 
@@ -87,7 +93,7 @@ npm view jquery-ui
 bower info jquery-ui
 
 # Instalace všech balíčků projektu:
-npm/bower install 
+npm/bower install
 # Instalace balíčku a přidání do uživatelských závislostí:
 npm/bower install jquery-ui --save
 # Instalace balíčku a přidání do vývojářských závislostí:
@@ -121,5 +127,5 @@ npm help
 
 ## Vyzkoušejte si to
 
-Nainstalováno? Pokud nemáte nic lepšího po ruce, vezměte příklad ze [školení Dnešní webový frontend](/kurzy/webovy-frontend) a postupujte [podle návodu](https://github.com/machal/polaroid-example#instalace-projektu). 
+Nainstalováno? Pokud nemáte nic lepšího po ruce, vezměte příklad ze [školení Dnešní webový frontend](/kurzy/webovy-frontend) a postupujte [podle návodu](https://github.com/machal/polaroid-example#instalace-projektu).
 
