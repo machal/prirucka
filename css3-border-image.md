@@ -1,7 +1,7 @@
 CSS3 Border Image – rámeček vykreslený obrázkem
 ===============================================
 
-Jde o způsob, jak namísto nativních rámečků kolem elementu vykreslit vlastní.
+Jde o způsob, jak kolem elementu vykreslit vlastní namísto nativních rámečků.
 
 Vezmeme jakýkoliv obrázek obsahující rámeček a prohlížeči řekneme, jak jej má naporcovat. Následuje kouzlo – rámeček se elegantně přizpůsobí šířce i výšce elementu, ať je jakákoliv.
 
