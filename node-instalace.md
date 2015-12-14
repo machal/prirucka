@@ -1,5 +1,6 @@
-
 # Instalace Node.js ekosystému pro použití na frontendu
+
+Node.js na frontendu potřebujeme hlavně kvůli usnadnění vývojářské práce a správě vývojářských závislostí.
 
 ## Nástroje, které si nainstalujeme
 
