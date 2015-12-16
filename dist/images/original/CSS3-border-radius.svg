@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="700" height="394" viewBox="0, 0, 700, 394">
+  <g id="Background">
+    <rect x="0" y="0" width="700" height="394" fill="#F8F8F8"/>
+  </g>
+  <g id="Layer 1">
+    <text transform="matrix(1, 0, 0, 1, 617.159, 373.662)">
+      <tspan x="-31.935" y="2.03" font-family="Foro-Light" font-size="11" fill="#666666">www.vzhurudolu.cz</tspan>
+    </text>
+    <path d="M327.357,252.494 C290.078,252.494 259.857,206.155 259.857,148.994 C259.857,91.832 290.078,45.494 327.357,45.494 C364.636,45.494 394.857,91.832 394.857,148.994 C394.857,206.155 364.636,252.494 327.357,252.494 z" fill-opacity="0" stroke="#666666" stroke-width="2" stroke-dasharray="6,4"/>
+    <path d="M450.143,36.494 L450.143,315.494 L250.857,315.494 L250.857,156.065 L250.937,155.928 C250.368,124.746 256.861,92.013 275.341,66.262 C283.367,55.079 293.95,45.202 306.913,40.101 C313.079,37.675 314.247,37.808 320.398,36.852 L320.607,36.494 z" fill-opacity="0" stroke="#666666" stroke-width="5"/>
+    <g>
+      <g>
+        <path d="M269.357,152.494 L320.857,152.494" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M269.357,152.494 L263.357,152.494 M263.357,147.494 L263.357,157.494" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+        <path d="M320.857,152.494 L326.857,152.494 M326.857,157.494 L326.857,147.494" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+      <g>
+        <path d="M281.123,144.242 L308.091,144.242 L308.091,159.746 L281.123,159.746 z" fill="#FFFFFF"/>
+        <text fill="#222222" transform="matrix(1, 0, -0, 1, 294.607, 151.994)">
+          <tspan x="-11.484" y="4.26" font-family="Foro-Light" font-size="12">15%</tspan>
+        </text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <path d="M326.857,60.494 L326.857,146.494" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        <path d="M326.857,60.494 L326.857,54.494 M331.857,54.494 L321.857,54.494" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+        <path d="M326.857,146.494 L326.857,152.494 M321.857,152.494 L331.857,152.494" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"/>
+      </g>
+      <g>
+        <path d="M312.873,95.242 L339.841,95.242 L339.841,110.746 L312.873,110.746 z" fill="#FFFFFF"/>
+        <text fill="#222222" transform="matrix(1, 0, -0, 1, 326.357, 102.994)">
+          <tspan x="-11.484" y="4.26" font-family="Foro-Light" font-size="12">30%</tspan>
+        </text>
+      </g>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 349.663, 350.084)">
+      <tspan x="-112.322" y="2.467" font-family="Foro-Light" font-size="14" fill="#222222">border-radius: 15% 0 0 0 / 30% 0 0 0</tspan>
+    </text>
+  </g>
+  <defs/>
+</svg>
