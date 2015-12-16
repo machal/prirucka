@@ -12,7 +12,7 @@ Node.js na frontendu potřebujeme hlavně kvůli usnadnění vývojářské prá
 
 Časem si můžete oblíbit automatizátor [Yeoman](http://yeoman.io/) a další nástroje jako [Gulp](http://gulpjs.com/) nebo [WebPack](https://webpack.github.io/). Vycházejí také z Node.js, ale pro zjednodušení se jim tady nebudeme vůbec věnovat.
 
-![Node.js](content/schemes/node-js.svg)
+![Node.js](dist/images/original/node-js.svg)
 
 Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy. Návod pro [Windows](http://dosprompt.info/basics.asp) a [Linux &amp; Mac](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/).
 

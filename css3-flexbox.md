@@ -66,7 +66,7 @@ Všechny `<li>` se tady stávají flex položkami.
 
 Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
 
-![flexbox schéma](content/schemes/flexbox-schema.jpg)
+![flexbox schéma](dist/images/original/flexbox-schema.jpg)
 
 * flex kontejner – rodičovský element
 * flex položka – všichni přímí potomci flex kontejneru

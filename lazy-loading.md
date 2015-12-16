@@ -5,7 +5,7 @@ Ve světě webového frontendu označuje [Lazy loading](http://cs.wikipedia.org/
 
 Nejčastěji lazyloading (neboli odložené načítání) aplikujeme na obrázky až ve chvíli kdy na ně uživatel nascrolluje. V tomhle příkladu čekají na načtení všechny obrázky mimo viewport:
 
-<img class="picture" src="content/schemes/lazyloading.jpg" width="1000" height="575" alt="Lazy loading">
+![Lazy loading](dist/images/original/lazyloading.jpg)
 
 ## K čemu je to dobré?
 

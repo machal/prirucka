@@ -29,7 +29,7 @@ Obsahuje jedno, dvě (horizontální a vertikální řez) nebo čtyři čísla (
 
 Pokud je přítomno klíčové slovo `fill`, vezme se ze zdrojového obrázku i jeho střední část a vykreslí se přes pozadí elementu.
 
-<img class="picture" src="content/schemes/CSS3-border-image.png" width="700" height="394" alt="Rozměry řezů v border-image">
+![Rozměry řezů v border-image](dist/images/original/CSS3-border-image.png)
 
 ### Šířka rámečku
 

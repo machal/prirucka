@@ -4,7 +4,7 @@ Mobile First vzniklo jako reakce na navrhování webů pouze pro desktop. Nesna�
 
 Fráze „Mobile First“ má mnoho významů. Původně se jedná o filozofii návrhu UI/UX webu nebo aplikace.
 
-„Mobile First“ je také způsob psaní kódu, speciální odrůda postupného vylepšování ([Progressive Enhancement](http://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/)). Na Vzhůru dolů jste si o legracích s CSS a Mobile First přístupem mohli počíst [hned](http://kratce.vzhurudolu.cz/post/42187934506/mobile-first-css) [několik](http://kratce.vzhurudolu.cz/post/42776167995/mobile-first-stylus) [textů](http://kratce.vzhurudolu.cz/post/49758753713/responzivn%C3%AD-mobile-first-s-pomoc%C3%AD-body-t%C5%99%C3%ADd). Hezky je nově [shrnuje Bohumil Jahoda](http://jecas.cz/mobile-first). 
+„Mobile First“ je také způsob psaní kódu, speciální odrůda postupného vylepšování ([Progressive Enhancement](http://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/)). Na Vzhůru dolů jste si o legracích s CSS a Mobile First přístupem mohli počíst [hned](http://kratce.vzhurudolu.cz/post/42187934506/mobile-first-css) [několik](http://kratce.vzhurudolu.cz/post/42776167995/mobile-first-stylus) [textů](http://kratce.vzhurudolu.cz/post/49758753713/responzivn%C3%AD-mobile-first-s-pomoc%C3%AD-body-t%C5%99%C3%ADd). Hezky je nově [shrnuje Bohumil Jahoda](http://jecas.cz/mobile-first).
 A víte co? Dneska na technikálie pečeme a budeme si povídat jen o Mobile First jako designérské metodice.
 
 Jen pozor! Článek obsahuje prvky víry, místy až sektářského typu. :-)
@@ -15,12 +15,11 @@ Luke Wroblewski [tezi nadefinoval](http://www.lukew.com/ff/entry.asp?933) asi ta
 
 „Designéři, navrhujte nejprve pro mobily. Protože smartphony se prudce šíří mezi uživateli, protože nás díky svými omezeními nutí zaměřit pozornost na to nejdůležitější a protože rozšiřují naše možnosti.“
 
-<img class="picture" src="content/schemes/mobile-fist-wroblewski-1_small.jpg" height="394" alt="Wroblewski: „V jedno Mobile First věřiti budeš.”">
-
+![Wroblewski: „V jedno Mobile First věřiti budeš.”](dist/images/original/mobile-fist-wroblewski-1_small.jpg)
 
 ## Mobile First bez kontroverze = multidevice design
 
-„Navrhujte to nejprve pro mobily“ – to byla ve své době dost provokativní myšlenka. Vždyť to bylo jen dva roky po uvedení prvního iPhonu! I v USA se v roce 2009 počítaly přístupy na weby z mobilních zařízení na nízké jednotky procent. Mimochodem, v době psaní článku, po šesti letech, je to v průměru [více než 40 % celku](http://gs.statcounter.com/#all-comparison-USA-monthly-200907-201507). 
+„Navrhujte to nejprve pro mobily“ – to byla ve své době dost provokativní myšlenka. Vždyť to bylo jen dva roky po uvedení prvního iPhonu! I v USA se v roce 2009 počítaly přístupy na weby z mobilních zařízení na nízké jednotky procent. Mimochodem, v době psaní článku, po šesti letech, je to v průměru [více než 40 % celku](http://gs.statcounter.com/#all-comparison-USA-monthly-200907-201507).
 
 Víte, s těmi tezemi (nebo buzzwordy když chcete) to je občas jako s vírou. Pokud  chcete tezi „Mobile First“ přijmout hned, musíte věřit ve dvě věci:
 
@@ -44,24 +43,24 @@ Ale co už… nevezmeš jména Wroblewskiho nadarmo, že jo.
 
 ## Jak dlouho bude trvat než se naučíte dělat weby pro mobily?
 
-Mě osobně děsně pomáhá navrhovat rozhraní skutečně od nejmenších displejů. Skicuji mobilní rozhraní a pár nejlepších nápadů pak zkouším i na větších displejích. Vím ale o jiných webařích, kteří rozhraní skicují a zkoušejí na desktopu, tabletech i mobilech najednou. 
+Mě osobně děsně pomáhá navrhovat rozhraní skutečně od nejmenších displejů. Skicuji mobilní rozhraní a pár nejlepších nápadů pak zkouším i na větších displejích. Vím ale o jiných webařích, kteří rozhraní skicují a zkoušejí na desktopu, tabletech i mobilech najednou.
 
 Ani když začínáte desktopem, nemusíte za to jít rovnou do pekla. Tady si ale myslím, že musíte mít buď jednoduchý úkol, výborný cit nebo velké zkušenosti.  Nebo na smartphony prostě pečete.
 
-Jenže – jestliže někteří provozovatele webů s mobily spěchat nemusí, u webařů to neplatí. 
+Jenže – jestliže někteří provozovatele webů s mobily spěchat nemusí, u webařů to neplatí.
 
-Pokud jste se ještě nezačali učit dělat uživatelské rozhraní na mobilech, jak dlouho bude trvat než to zmáknete? Jak dlouho pak bude trvat, než změníte pracovní postupy celého webařského týmu? Jak dlouho bude trvat než se naučíte přesvědčovat šéfy, klienty, že rozhraní je potřeba dělat jinak? Kdy budete zaučovat lidi spravující obsah, aby potřeby uživatelů na mobilech pochopili, když vy sami jste ho ještě nezačali chápat – protože váš pohled na webdesign se točí kolem zkomírajících desktopových návrhových vzorů? 
+Pokud jste se ještě nezačali učit dělat uživatelské rozhraní na mobilech, jak dlouho bude trvat než to zmáknete? Jak dlouho pak bude trvat, než změníte pracovní postupy celého webařského týmu? Jak dlouho bude trvat než se naučíte přesvědčovat šéfy, klienty, že rozhraní je potřeba dělat jinak? Kdy budete zaučovat lidi spravující obsah, aby potřeby uživatelů na mobilech pochopili, když vy sami jste ho ještě nezačali chápat – protože váš pohled na webdesign se točí kolem zkomírajících desktopových návrhových vzorů?
 
 U sebe to počítám na roky. Máte pak dost času naučit dělat webdesign jinak, když ještě v roce 2015 navrhujete pro desktop a „ty mobily nějak pošudlí kodér, že jo…“?
 
 Pokud jste přijali víru „Mobile First” až teď, máte málo času. Proto si neuškodí udělat pár responzivních webů a s mobily si opravdu vyhrát i když to klient nechce.
 
-<img class="picture" src="content/schemes/mobile-fist-wroblewski-2_small.jpg" height="394" alt="Wroblewski: Desktopový webaři, zapomeň, abys den sváteční světil!">
+![Wroblewski: Desktopový webaři, zapomeň, abys den sváteční světil!](dist/images/original/mobile-fist-wroblewski-2.jpg)
 
 
 ## Je 16 % málo nebo dost? Trend je jasný
 
-Je pravda, že než by někteří čeští provozovatelé webů na vlastním byznyse nějak výrazně ucítili nepřítomnost dobře udělané mobilní verze, projdou ty weby ještě jedním až dvěma redesigny. Vezměme třeba běžné firemní neprodejní prezentační stránky. Nebo segmenty, kde je jeden dominantní hráč. Nebo segmenty, kde všichni významní hráči na mobily kašlou. 
+Je pravda, že než by někteří čeští provozovatelé webů na vlastním byznyse nějak výrazně ucítili nepřítomnost dobře udělané mobilní verze, projdou ty weby ještě jedním až dvěma redesigny. Vezměme třeba běžné firemní neprodejní prezentační stránky. Nebo segmenty, kde je jeden dominantní hráč. Nebo segmenty, kde všichni významní hráči na mobily kašlou.
 
 Můžeme se přít, kdy mobilní zařízení začnou mít v ČR nadpoloviční většinu. Ale proč bychom to dělali? [Dnešních 16 %](https://twitter.com/machal/status/629560165793157120) a meziroční růst v desítkách procent se mi zdá jako dost významný podíl pro to, abychom jejich uživatele neignorovali.
 
@@ -72,13 +71,13 @@ A pokud se něco nečekaného nestane, ve vyhlídce jednotek let budou mobilní 
 
 ## Do-mobile-firstovat se k lepšímu desktopovému webu
 
-Vraťme se ještě k té původní Wroblewskiho definici. 
+Vraťme se ještě k té původní Wroblewskiho definici.
 
 Že mobily „nutí designéry zaměřit pozornost na to nejdůležitější“? Yeah!
 
 Smartphony nás webaře omezují z technického pohledu hlavně velikostí displeje a pomalým  datovým připojením. Daleko důležitější je ale omezení z pohledu uživatelského chování:
 
-- na mobilu mám málo času 
+- na mobilu mám málo času
 - na mobilu nechci moc klikat, než se dostanu k výsledku
 - na mobilu nechci vyplňovat nesmyslně dlouhé formuláře
 - na mobilu prostě nebudu trpělivý
@@ -87,22 +86,21 @@ Nahraďte frázi „na mobilu” za „na desktopu” a máte to. Ano, pomocí M
 
 Takže – i pokud jsem vás ani teď nepřesvědčil, že ty mobily jsou fakt důležité a chcete dál navrhovat jen pro desktop:
 
-1. zmenšete si okno prohlížeče 
+1. zmenšete si okno prohlížeče
 2. zpomalte si internet na úroveň český-130kbps-EDGE
 3. vypíchněte si jedno oko
 4. uřízněte všechny prsty kromě palce a ukazováčku
 5. udělejte si menší lobotomii mozku
 
-Šup, a je z vás typický mobilní uživatel! A pak designujte. Tento návod jak udělat lepší web na desktopu sdílím s láskou zadarmo jen pro vás. 
+Šup, a je z vás typický mobilní uživatel! A pak designujte. Tento návod jak udělat lepší web na desktopu sdílím s láskou zadarmo jen pro vás.
 
 Ale vážně – pojďme si to ukázat na konkrétním příkladu. Obrázek je z připravovaného – Mobile First, ach jistě – redesignu [VašeČočky.cz](http://vasecocky.cz/):
 
-<img class="picture" src="content/schemes/mobile-first-vc_small.jpg" height="394" alt="VašeČočky.cz">
-
+![VašeČočky.cz](dist/images/original/mobile-first-vc.jpg)
 
 V desktopové verzi se uživatel uvnitř kategorií produktů pohybuje třemi a na některých stránkách i čtyřmi způsoby.
 
-To je v mobilním světě nepředstavitelné. Lidově řečeno je prostě není kam nacpat. A protože trváme na konzistenci důležitých ovládacích prvků napříč zařízeními, stejnou verzi dostanou i uživatelé desktopu. Po několika iteracích tedy jdeme do vyhodnocovací fáze s touto radikálně redukovanou variantou navigace. 
+To je v mobilním světě nepředstavitelné. Lidově řečeno je prostě není kam nacpat. A protože trváme na konzistenci důležitých ovládacích prvků napříč zařízeními, stejnou verzi dostanou i uživatelé desktopu. Po několika iteracích tedy jdeme do vyhodnocovací fáze s touto radikálně redukovanou variantou navigace.
 
 Pojďme si tedy shrnout Mobile First:
 
@@ -111,4 +109,4 @@ Pojďme si tedy shrnout Mobile First:
 - Na čekání na větší mobilní návštěvnost nemáme jako webaři dost času, budeme muset  změnit spoustu svých návyků.
 - Díky Mobile First máte šanci vylepšit i desktopový web.
 
-<img class="picture" src="content/schemes/mobile-fist-wroblewski-3_small.jpg" height="394" alt="Wroblewski: Nepromluvíš už křivého svědectví proti Mobile First svému.">
+![Wroblewski: Nepromluvíš už křivého svědectví proti Mobile First svému.](dist/images/original/mobile-fist-wroblewski-3.jpg)

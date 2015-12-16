@@ -1,13 +1,13 @@
 # Rich Snippets
 
-Česky také struktrované úryvky. Prostě graficky zajímavý obsah, který se zobrazuje ve výsledcích vyhledávání Google. 
+Česky také struktrované úryvky. Prostě graficky zajímavý obsah, který se zobrazuje ve výsledcích vyhledávání Google.
 
 A zároveň samozřejmě jeden z nejsilnějších nástrojů z pohledu HTML kódu jednotlivých stránek pro získávání konkurenční výhody ve vyhledávači.
 
-<img class="picture" src="content/schemes/rich-snippets.jpg" width="700" height="394" alt="Rich Snippets dostupné na českém Google">
+![Rich Snippets dostupné na českém Google](dist/images/original/rich-snippets.jpg)
 
 Jak je z obrázku patrné, v době psaní článku máte [na českém Google](https://www.facebook.com/media/set/?set=a.384585593913.164660.250810683913&type=1) šanci nechat zobrazovat recenze, recepty, události a třeba informaci zda je produkt na skladě.
-[Podle Google](https://support.google.com/webmasters/answer/99170?hl=cs) pak teoreticky ještě lidi, produkty, firmy a organizace, hudbu. 
+[Podle Google](https://support.google.com/webmasters/answer/99170?hl=cs) pak teoreticky ještě lidi, produkty, firmy a organizace, hudbu.
 
 ## Microdata a další způsoby značení
 
@@ -52,9 +52,9 @@ Mikrodata jsou v ukázce zvýrazněna. Všimněte si několika věcí:
 
 ## Otestování a zobrazování v Google
 
-Velmi vám pomůže [Nástroj pro testování strukturovaných dat](http://www.google.com/webmasters/tools/richsnippets). 
+Velmi vám pomůže [Nástroj pro testování strukturovaných dat](http://www.google.com/webmasters/tools/richsnippets).
 
-I tak je ovšem zobrazování na Google dost ve hvězdách. Kdy a zda se Rich Snippets začnou zobrazovat nemůžete nikomu garantovat, protože Google to nijak negarantuje vám. Někdy se zobrazí za pár dní, někdy to trvá měsíce, někdy se vůbec nedočkáte. 
+I tak je ovšem zobrazování na Google dost ve hvězdách. Kdy a zda se Rich Snippets začnou zobrazovat nemůžete nikomu garantovat, protože Google to nijak negarantuje vám. Někdy se zobrazí za pár dní, někdy to trvá měsíce, někdy se vůbec nedočkáte.
 
 Přesto ale doporučuji úryvky připravovat. Za zkoušku dáte jen pár desítek minut svého času a efekt může být výrazný.
 

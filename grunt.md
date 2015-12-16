@@ -1,12 +1,12 @@
 # Grunt.js
 
-[Grunt](http://gruntjs.com/) *[grŭnt]* si říká „The JavaScript Task Runner“ a má v logu divočáka. Ale není to nic jiného než robot sloužící webovým vývojářům. Automatizuje opakující se nebo nudné úkoly.
+[Grunt](http://gruntjs.com/) si říká „The JavaScript Task Runner“ a má v logu divočáka. Ale není to nic jiného než robot sloužící webovým vývojářům. Automatizuje opakující se nebo nudné úkoly.
 
 V praxi to vypadá tak, že si něco spustíte na příkazové řádce, ono vám to hlídá změny v souborech a po jejich provedení vyvolá nějaké akce. Další úlohy se zase spouštějí ručně, třeba nahrání webu na server.
 
 Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojování do jednoho kvůli šetření requestů pro zvýšení rychlosti načítání. Nebo zpracování [preprocesorového](/blog/12-css-preprocesory-1) kódu do CSS či kompilace CoffeeScriptu do JavaScriptu. Zdá se vám to málo? Pak vězte, že [úloh jsou stovky](http://gruntjs.com/plugins) – a je docela snadné si napsat vlastní.
 
-<img class="picture" src="content/schemes/grunt.jpg" width="1000" height="575" alt="Grunt.js">
+![Grunt.js](dist/images/original/grunt.jpg)
 
 Důvody proč mám Grunt rád nejlíp ukáže [seznam úloh co využívám](grunt-pluginy.md).
 
