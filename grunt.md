@@ -4,7 +4,7 @@
 
 V praxi to vypadá tak, že si něco spustíte na příkazové řádce, ono vám to hlídá změny v souborech a po jejich provedení vyvolá nějaké akce. Další úlohy se zase spouštějí ručně, třeba nahrání webu na server.
 
-Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojování do jednoho kvůli šetření requestů pro zvýšení rychlosti načítání. Nebo zpracování [preprocesorového](/blog/12-css-preprocesory-1) kódu do CSS či kompilace CoffeeScriptu do JavaScriptu. Zdá se vám to málo? Pak vězte, že [úloh jsou stovky](http://gruntjs.com/plugins) – a je docela snadné si napsat vlastní.
+Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojování do jednoho kvůli šetření requestů pro zvýšení rychlosti načítání. Nebo zpracování [preprocesorového](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) kódu do CSS či kompilace CoffeeScriptu do JavaScriptu. Zdá se vám to málo? Pak vězte, že [úloh jsou stovky](http://gruntjs.com/plugins) – a je docela snadné si napsat vlastní.
 
 ![Grunt.js](dist/images/original/grunt.jpg)
 

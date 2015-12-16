@@ -2,13 +2,13 @@
 
 ## Proč ji řešit? Uživatelský prožitek, ale také obchod
 
-Mobilní sítě jsou pomalé a ani zvyšování přenosové rychlosti na 3G/4G sítích rychlost načítání webů nevyrovnají s pevným připojením. 
+Mobilní sítě jsou pomalé a ani zvyšování přenosové rychlosti na 3G/4G sítích rychlost načítání webů nevyrovnají s pevným připojením.
 
-Testy a průzkumy zároveň ukazují, že rychlost načtení stránky má velký vliv na konverze webu. 
+Testy a průzkumy zároveň ukazují, že rychlost načtení stránky má velký vliv na konverze webu.
 
 [Amazon zase zjistil](https://speakerdeck.com/mangoweb/na-rychosti-zalezi-frontendisti-3-6-2015#7), že o jednu vteřinu pomalejší stránka způsobí o 11 % méně shlédnutí stránky, o 16 % horší spokojenost zákazníků a o 7 % nižší konverze. Podobné výsledky měla rozsáhlá [studie Kissmetrics](https://blog.kissmetrics.com/loading-time/?wide=1).
 
-Uživatel by na vykreslení stránky neměl čekat více než jednotky vteřin ani na mobilním EDGE připojení. 
+Uživatel by na vykreslení stránky neměl čekat více než jednotky vteřin ani na mobilním EDGE připojení.
 
 A nejde jen o mobily. Nezapomeňte, že rychlost načítání je jedním z řadících parametrů pro výsledky vyhledávání Google nebo AdWords kampaní. Ovlivňuje tak nejen konverze, ale i pravděpodobnost, že se na web člověk vůbec dostane.
 
@@ -16,7 +16,7 @@ A nejde jen o mobily. Nezapomeňte, že rychlost načítání je jedním z řad�
 
 Pojďme odlišit dva pojmy – moment načtení stránky nastane ve chvíli kdy do prohlížeče doputuje poslední byte ze všech jejich komponent včetně obrázků. Technici znají jako událost `window.load`.
 
-Chvíle zobrazení webu ale může přijít daleko dříve. Prohlížeč může stále načítat komponenty stránky, ale uživateli je ji schopen zobrazit. Ke zkrácení čekání na moment zobrazení slouží především [Critical CSS](/blog/35-critical-css) a další pokročilé techniky. 
+Chvíle zobrazení webu ale může přijít daleko dříve. Prohlížeč může stále načítat komponenty stránky, ale uživateli je ji schopen zobrazit. Ke zkrácení čekání na moment zobrazení slouží především [Critical CSS](http://www.vzhurudolu.cz/blog/35-critical-css) a další pokročilé techniky.
 
 Teď už dost teoretického a byznysového pozadí. Pusťme se do práce.
 
@@ -47,13 +47,13 @@ Neplatí to univerzálně, ale často je výhodné JS rozdělit minimálně do d
 
 ### 4) CSS: kritický CSS
 
-Podobně jako u Javascriptu – spojte do jediného souboru, zmenšete jeho datový objem. CSS vám blokují začátek vykreslování, proto si z nich nechte [vygenerovat kritickou část](/blog/35-critical-css).
+Podobně jako u Javascriptu – spojte do jediného souboru, zmenšete jeho datový objem. CSS vám blokují začátek vykreslování, proto si z nich nechte [vygenerovat kritickou část](http://www.vzhurudolu.cz/blog/35-critical-css).
 
 Přebíráte strašně starý projekt s mraky nepoužívaného CSS? Zkuste [uncsskovat](https://github.com/addyosmani/grunt-uncss).
 
 ### 5) Zapněte si kompresi na serveru, nastavte správné kešovací hlavičky
 
-Vím, Gzip je obligátní rada, ale furt se na to zapomíná. Fakt. :-) 
+Vím, Gzip je obligátní rada, ale furt se na to zapomíná. Fakt. :-)
 
 Tady je [parádní seznam nastavení](https://github.com/h5bp/server-configs) pro všechny možné servery. Zapne vám kompresi konečně pro všechny typy souborů.
 
@@ -67,8 +67,8 @@ Výšeuvedené není nic nového, vím. Hlavně pro vás, zkušenější. Mám a
 
 A je to celé v čudu.
 
-Ne, frontendista nemůže být na rychlost načítání sám. O její důležitosti musí být přesvědčený celý tým. 
+Ne, frontendista nemůže být na rychlost načítání sám. O její důležitosti musí být přesvědčený celý tým.
 
-Mohlo by pomoci zařadit aktuální rychlost načítání do dashboardu, co všichni sledují. Hned vedle konverzního poměru. Fakt. 
+Mohlo by pomoci zařadit aktuální rychlost načítání do dashboardu, co všichni sledují. Hned vedle konverzního poměru. Fakt.
 
 Její vyhodnocování se dá zautomatizovat. Nástroje jako [PageSpeeed Insights](https://developers.google.com/speed/pagespeed/insights/) nebo [WebpageTest](http://www.webpagetest.org/) mají svá API. Tak jako programátoři pouští před publikováním verze unit testy, pouštějte testy rychlosti načítání.

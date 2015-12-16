@@ -114,7 +114,7 @@ Pojďme si pro jistotu ještě shrnout zápis v `sizes`:
 
 Se `srcset` a `sizes` si vystačíte v naprosté většině situací kdy budete potřebovat sáhnout po řešení responzivních obrázků.
 
-Pokud budete potřebovat servírovat zcela jinak vypadající obrázky pro různá rozlišení (scénář [art direction](http://usecases.responsiveimages.org/#h-art-direction)) nebo obrázky [v různých souborových formátech](http://usecases.responsiveimages.org/#h-image-formats), sáhněte po novém tagu [`<picture>`](/prirucka/picture).
+Pokud budete potřebovat servírovat zcela jinak vypadající obrázky pro různá rozlišení (scénář [art direction](http://usecases.responsiveimages.org/#h-art-direction)) nebo obrázky [v různých souborových formátech](http://usecases.responsiveimages.org/#h-image-formats), sáhněte po novém tagu [`<picture>`](picture.md).
 
 ## Nevýhody aktuálního řešení
 

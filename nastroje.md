@@ -56,7 +56,7 @@ Věnujte pozornost [tipům a trikům pro DevTools](http://www.vzhurudolu.cz/blog
 
 ## Grunt pro sestavování a běh tasků
 
-[Gruntu](/prirucka/grunt) česky říkám sestavovač, protože jeho hlavní úkol je sestavování produkčních verzí obrázkových, CSS a JS assetů. Nicméně – pomáhá mi také automatizovat a vylepšit vývojářské pracovní postupy. Podívejte se na [seznam Grunt pluginů co používám](/prirucka/grunt-pluginy).
+[Gruntu](grunt.md) česky říkám sestavovač, protože jeho hlavní úkol je sestavování produkčních verzí obrázkových, CSS a JS assetů. Nicméně – pomáhá mi také automatizovat a vylepšit vývojářské pracovní postupy. Podívejte se na [seznam Grunt pluginů co používám](grunt-pluginy.md).
 
 Pokud jste méně kodéři a více vývojáři, zajímejte se spíše o Gulp a pokročilejší nástroje.
 
@@ -64,7 +64,7 @@ Jednodušší alternativou jsou zase klikací apky jako Prepros nebo CodeKit (te
 
 ## NPM, Bower pro instalaci závislostí
 
-[NPM](https://www.npmjs.com/) a [Bower](/prirucka/bower) jsou balíčkovače, které vám ušetří energii pro správu závislostí frontend balíčků, které při vývoji používáte.
+[NPM](https://www.npmjs.com/) a [Bower](bower.md) jsou balíčkovače, které vám ušetří energii pro správu závislostí frontend balíčků, které při vývoji používáte.
 
 NPM obvykle používám pro instalaci vývojářských balíčků jako jsou Grunt pluginy, Bower pro instalaci závislostí webu – jQuery atd.
 
@@ -81,14 +81,14 @@ Používám kvůli Gruntu a nástrojům kolem Node.js. Na to jak často příkaz
 ## Grafika skoro bez Photoshopu
 
 - [Photoshop Elements](http://www.adobe.com/cz/products/photoshop-elements.html) – moje obvyklé workflow je bez-photoshopové. Nedostávám PSD od grafiků, rozhraní skoro vždy vytvářím nebo spoluvytvářím. Proto disponuji luxusem vlastnit starší Photoshop. A ještě k tomu ořezaný, určený pro fotografy. A ve verzi 8 prosím!
-- [Graphic](http://graphic.com/) – vektorový editor s výstupem do [SVG](/prirucka/svg). Připravuji tady schémata pro VzhůruDolů nebo třeba upravuji ikony. Jen pro Macy.
+- [Graphic](http://graphic.com/) – vektorový editor s výstupem do [SVG](svg.md). Připravuji tady schémata pro VzhůruDolů nebo třeba upravuji ikony. Jen pro Macy.
 - [Keynote](http://www.apple.com/mac/keynote/) – primárně v něm připravuji slajdy pro přednášky a školení. Ale divili byste se, kolik ilustrací pro tento blog vzniklo právě v něm. Vážně – Keynote je parádní grafický editor. Jen pro Macy.
 - Preview – dle mé zásady „nauč se pořádně to nejjednodušší“ dělám hodně grafiky. Je to ale spíše „komunikační grafika“, typu schémat co přikládám do emailů atd. Jen pro Macy.
 - ImageOptim a JPEGmini Lite – pokud potřebuji zmenšit obrázky jednotlivě, nepoužívám Grunt ale tyhle dva optimalizátory. JPEGmini je fakt objev, zmenšuje výrazněji než jiné grafické minifikátory.
 
 ## Testování na zařízeních
 
-- [BrowserStack](https://www.browserstack.com/) – testování mobilních a alternativních prohlížečů. V cloudu, v prohlížeči. A neuvěřitelně svižně. Browserstack je stále lepší  a v mé nástrojové brašně rozhodně neleží někde dole. Je nahoře, vždy po ruce. O způsobu [testování responzivních webů](/prirucka/jak-testovat-responzivni-weby) jsem dříve psal.
+- [BrowserStack](https://www.browserstack.com/) – testování mobilních a alternativních prohlížečů. V cloudu, v prohlížeči. A neuvěřitelně svižně. Browserstack je stále lepší  a v mé nástrojové brašně rozhodně neleží někde dole. Je nahoře, vždy po ruce. O způsobu [testování responzivních webů](jak-testovat-responzivni-weby.md) jsem dříve psal.
 - iOS simulátor (součást XCode, jen pro Macy) občas pustím, ale BrowserStack je poslední dobou skoro rychlejší.
 
 ## Běh localhostu

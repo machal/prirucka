@@ -67,7 +67,7 @@ npm install <nazev-pluginu> --save-dev
 
 Všimněte si, že už neinstalujeme globálně – bez přepínače `-g`. Ano, Grunt pluginy nebo třeba Bower balíčky instalujeme ke konkrétnímu projektu. Zároveň je chceme uložit do konfiguráků balíčkovacího systému (`packages.json`).
 
-Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciálnější péči. Vím o [PhantomJS](http://attester.ariatemplates.com/usage/phantom.html), na kterém závisí třeba plugin pro generování [kritického CSS](/blog/35-critical-css) ([grunt-criticalcss](https://github.com/filamentgroup/grunt-criticalcss)) nebo [ImageMagick](http://www.imagemagick.org/script/binary-releases.php), na které zase potřebují pluginy pro práci s obrázky jako [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin).
+Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciálnější péči. Vím o [PhantomJS](http://attester.ariatemplates.com/usage/phantom.html), na kterém závisí třeba plugin pro generování [kritického CSS](http://www.vzhurudolu.cz/blog/35-critical-css) ([grunt-criticalcss](https://github.com/filamentgroup/grunt-criticalcss)) nebo [ImageMagick](http://www.imagemagick.org/script/binary-releases.php), na které zase potřebují pluginy pro práci s obrázky jako [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin).
 
 
 ## Bower balíčky
@@ -128,5 +128,5 @@ npm help
 
 ## Vyzkoušejte si to
 
-Nainstalováno? Pokud nemáte nic lepšího po ruce, vezměte příklad ze [školení Dnešní webový frontend](/kurzy/webovy-frontend) a postupujte [podle návodu](https://github.com/machal/polaroid-example#instalace-projektu).
+Nainstalováno? Pokud nemáte nic lepšího po ruce, vezměte příklad ze [školení Dnešní webová kodéřina](http://www.vzhurudolu.cz/kurzy/webova-koderina) a postupujte [podle návodu](https://github.com/machal/polaroid-example#instalace-projektu).
 
