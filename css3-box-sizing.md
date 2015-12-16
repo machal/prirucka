@@ -21,7 +21,7 @@ viditelná šířka nebo výška obsahu
 
 Už víte? To je **`border-box` box-model**.
 
-![Box Sizing](dist/images/original/CSS3-box-sizing.jpg)
+![Box Sizing](dist/images/original/css3-box-sizing.svg)
 
 Naproti tomu **`content-box` neboli „W3C box-model“** používají všechny moderní prohlížeče. Výpočet znáte:
 

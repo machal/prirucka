@@ -15,7 +15,7 @@ Luke Wroblewski [tezi nadefinoval](http://www.lukew.com/ff/entry.asp?933) asi ta
 
 „Designéři, navrhujte nejprve pro mobily. Protože smartphony se prudce šíří mezi uživateli, protože nás díky svými omezeními nutí zaměřit pozornost na to nejdůležitější a protože rozšiřují naše možnosti.“
 
-![Wroblewski: „V jedno Mobile First věřiti budeš.”](dist/images/original/mobile-fist-wroblewski-1_small.jpg)
+![Wroblewski: „V jedno Mobile First věřiti budeš.”](dist/images/original/mobile-fist-wroblewski-1.jpg)
 
 ## Mobile First bez kontroverze = multidevice design
 
