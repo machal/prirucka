@@ -25,7 +25,7 @@ Grunt je robot nevykleštěný. Umí toho daleko víc. Navíc jeho konfigurák (
 
 ## Jak si Grunt rozjet?
 
-Popíšu to velice zjednodušeně. Více je [v dokumentaci Gruntu](http://gruntjs.com/getting-started).
+Popíšu to velice zjednodušeně. Raději se ještě podívejte do článku [o instalaci Node.js](node-instalace.md) nebo do [dokumentace Gruntu](http://gruntjs.com/getting-started).
 
 1. První co potřebujete je [instalace Node.js](http://nodejs.org/). Pak byste měli mít k dispozici instalátor Node balíčků, [npm](https://www.npmjs.org/).
 2. Druhý krok je nainstalovat (jako administrátor) samotný Grunt: `npm install -g grunt-cli`

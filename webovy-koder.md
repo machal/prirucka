@@ -5,11 +5,11 @@ Co by měl umět webový kodér?
 
 Technik, který oživuje uživatelská rozhraní webové prezentace nebo webové aplikace.
 
-Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je potřeba jej odlišit od frontend vývojáře. Ten píše frontend aplikace a daleko více se pohybuje v javascriptovém kódu. Doménou kodéra je především CSS, HTML a související technologie.
+Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je potřeba jej [odlišit od frontend vývojáře](http://www.vzhurudolu.cz/blog/42-frontend-koder-vyvojar). Ten píše frontend aplikace a daleko více se pohybuje v javascriptovém kódu. Doménou kodéra je především [CSS](http://www.vzhurudolu.cz/css), [HTML](http://www.vzhurudolu.cz/html) a související technologie.
 
-Kodér má přesah do oborů, se kterými spolupracuje na podkladech pro svou práci — UX, webová grafika. Také do oborů, kterým svou práci předává — frontend či backend programování, správa serverů.
+Kodér má přesah do oborů, se kterými spolupracuje na podkladech pro svou práci — UX, webová grafika. Také do oborů, kterým svou práci předává — frontend či backend programování, mírně třeba i do správy serverů.
 
-Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.cz/post/20006686050/haml-a-dva-typy-koderu), vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster".
+Webovému kodérovi též můžeme říkat frontend kodér, [frontend designér](http://kratce.vzhurudolu.cz/post/20006686050/haml-a-dva-typy-koderu), vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster".
 
 ## Poznámky k textu
 
@@ -88,7 +88,7 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 #### Responzivní design
 
 * **[nové] **Základní principy: fluidní layout, fluidní média, [Media Queries](http://www.vzhurudolu.cz/prirucka/css3-media-queries), [breakpointy](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu).
-* **[nové] **Implementace: Mobile First; UX na mobilech; rychlost načítání.
+* **[nové] **Implementace: [Mobile First](mobile-first.md); UX na mobilech; [rychlost načítání](http://www.vzhurudolu.cz/rychlost-nacitani).
 
 #### Interpretace podkladů od UX/grafika:
 
@@ -99,13 +99,13 @@ Kodérovi též můžeme říkat [frontend designér](http://kratce.vzhurudolu.c
 #### Progressive enhancement
 
 * K čemu je to dobré. [Progressive Enhancement vs. Gracefull Degradation](http://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/) .
-* **[nové] **Pojmy [polyfill](http://www.vzhurudolu.cz/prirucka/polyfill), [fallback](http://www.vzhurudolu.cz/prirucka/fallback).
-* **[nové] **Detekce vlastností prohlížečů: proč je výhodnější než detekce prohlížeče, detekce zařízení nebo browser hacks ([1](http://www.paulirish.com/2009/browser-specific-css-hacks/), [2](http://browserhacks.com/)); Modernizr; backend - WURFL atd.
+* **[nové]** Pojmy [polyfill](http://www.vzhurudolu.cz/prirucka/polyfill), [fallback](http://www.vzhurudolu.cz/prirucka/fallback).
+* **[nové]** Detekce vlastností prohlížečů: proč je výhodnější než detekce prohlížeče, detekce zařízení nebo browser hacks ([1](http://www.paulirish.com/2009/browser-specific-css-hacks/), [2](http://browserhacks.com/)); Modernizr; backend - WURFL atd.
 
 #### Frontend architektura
 
-* **[nové] **Systémy zápisu a organizace: [OOCSS](http://www.vzhurudolu.cz/prirucka/oocss), [SMACSS](http://www.vzhurudolu.cz/prirucka/smacss), [BEM](http://www.vzhurudolu.cz/prirucka/bem).
-* **[nové] **Modulární UI systémy, tvorba style guides.
+* **[nové]** Systémy zápisu a organizace: [OOCSS](http://www.vzhurudolu.cz/prirucka/oocss), [SMACSS](http://www.vzhurudolu.cz/prirucka/smacss), [BEM](http://www.vzhurudolu.cz/prirucka/bem).
+* **[nové]** Modulární UI systémy, tvorba style guides.
 
 #### Efektivita
 

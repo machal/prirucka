@@ -1,6 +1,8 @@
 # 29 užitečných Grunt pluginů a zároveň důvodů proč konečně zkusit automatizaci
 
-Pozor, ta devětadvacítka je dlouhá jako týden před výplatou. Ale [kdo jednou zkusí](http://www.vzhurudolu.cz/kurzy/grunt-gulp), automatizaci s [Gruntem](grunt.md) (nebo klidně s Gulpem) neopustí. Takže se množství nelekejme a směle do toho.
+Pozor, ta devětadvacítka je dlouhá jako týden před výplatou. Ale [kdo jednou zkusí](http://www.vzhurudolu.cz/kurzy/grunt-gulp), automatizaci s Gruntem (nebo klidně s Gulpem) neopustí. Takže se množství nelekejme a směle do toho.
+
+Pokud je to na vás příliš pokročilé, přečtěte si nejprve text o [Gruntu](grunt.md) nebo o instalaci celého [Node.js ekosystému](node-instalace.md) pro potřeby frontendisty.
 
 ## CSS
 
@@ -32,7 +34,7 @@ Užitečné, pokud pro rozchození responzivního CSS ve starších Explorerech 
 
 To už všichni znáte, vím. [contrib-less](https://github.com/gruntjs/grunt-contrib-less), [contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) a [contrib-stylus](https://github.com/gruntjs/grunt-contrib-stylus) pro kompilaci [CSS preprocesorů](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) jsou naprosto obligátní.  Jen nezapomeňte nastavit mapování zdrojáků ke zkompilovaným asemblerů… ach pardon… CSSkům pomocí [source maps](http://blog.teamtreehouse.com/introduction-source-maps).
 
-### 8. grunt-styleguide: generování dokumentace 
+### 8. grunt-styleguide: generování dokumentace
 
 Ale ne ledajaké dokumentace. Styledocco nebo KSS, které tahle úloha využívá, vytvářejí příručky stylů rovnou z CSS nebo zdrojáků napsaných v preprocesorech. [Github](https://github.com/indieisaconcept/grunt-styleguide).
 
@@ -48,7 +50,7 @@ Soubory spojené pomocí contrib-concat pak ještě v produkční verzi minifiku
 
 ### 11. grunt-contrib-jshint: validace JS kódu
 
-Jakou blbost napíšete do JS kódu zrovna dneska? Občas jsou hlášení `jshint` dost nesrozumitelná, proto pomůže web [jslinterrors.com](http://jslinterrors.com/). [Github](https://github.com/gruntjs/grunt-contrib-jshint). 
+Jakou blbost napíšete do JS kódu zrovna dneska? Občas jsou hlášení `jshint` dost nesrozumitelná, proto pomůže web [jslinterrors.com](http://jslinterrors.com/). [Github](https://github.com/gruntjs/grunt-contrib-jshint).
 
 ## HTML
 
@@ -108,7 +110,7 @@ Googlí [Page Speed Insights](https://developers.google.com/speed/docs/insights/
 
 ### 24. jit-grunt: zrychlení načítání pluginů
 
-JIT = Just In Time. Znalci v diskuzi pod článkem tvrdí, že dokáže pekelně zrychlit start Gruntu a běh každého tasku. Navíc není potřeba každý plugin ručně načítat pomocí `grunt.loadNpmTasks()`, což je tak trochu gruntovská psychiatrie. Mrkněte na [Github](https://github.com/shootaroo/jit-grunt). 
+JIT = Just In Time. Znalci v diskuzi pod článkem tvrdí, že dokáže pekelně zrychlit start Gruntu a běh každého tasku. Navíc není potřeba každý plugin ručně načítat pomocí `grunt.loadNpmTasks()`, což je tak trochu gruntovská psychiatrie. Mrkněte na [Github](https://github.com/shootaroo/jit-grunt).
 
 ### 25. load-grunt-tasks: automatické načtení pluginů
 
