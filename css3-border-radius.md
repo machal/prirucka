@@ -35,7 +35,7 @@ border-radius: 15% 15% 0 0 / 30% 15% 0 0;
 
 Na následujícím schématu je patrné, jak se podle elipsy v praxi zaobluje:
 
-![border-radius: 15% 0 0 0 / 30% 0 0 0](dist/images/original/CSS3-border-radius.svg)
+![border-radius: 15% 0 0 0 / 30% 0 0 0](dist/images/original/border-radius.svg)
 
 Je dobré vědět, že `border-radius` je ve skutečnosti zkratka pro deklaraci vlastností jednotlivých rohů. Můžeme je samozřejmě **nastavit samostatně**:
 
