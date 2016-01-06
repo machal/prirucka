@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="700" height="394" viewBox="0, 0, 700, 394">
+  <g id="Background">
+    <rect x="0" y="0" width="700" height="394" fill="#F8F8F8"/>
+  </g>
+  <g id="Layer_1">
+    <g>
+      <path d="M36,18.631 L666,18.631 L666,225.547 L36,225.547 z" fill="#EDE29F" fill-opacity="0.5"/>
+      <path d="M666,18.631 L666,225.547 L36,225.547 L36,18.631 L666,18.631 z M651,33.631 L51,33.631 L51,210.547 L651,210.547 L651,33.631 z" fill="#48440E"/>
+    </g>
+    <g>
+      <path d="M95.5,73.513 L598.841,73.513 L598.841,172.03 L95.5,172.03 z" fill="#EDE29F"/>
+      <path d="M95.5,73.513 L598.841,73.513 L598.841,172.03 L95.5,172.03 z" fill-opacity="0" stroke="#48440E" stroke-width="3" stroke-dasharray="9,6"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 351, 238.808)">
+      <tspan x="-21.442" y="2.808" font-family="Consolas" font-size="13" fill="#48440E">border</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 351, 194.928)">
+      <tspan x="-25.016" y="0.753" font-family="Consolas" font-size="13" fill="#48440E">padding</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 350, 131.272)">
+      <tspan x="-25.016" y="0.753" font-family="Consolas" font-size="13" fill="#48440E">content</tspan>
+    </text>
+    <g>
+      <path d="M36.5,370.5 L666.5,370.5" fill="#48440E"/>
+      <g>
+        <path d="M44.7,370.5 L658.3,370.5" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-dasharray="6,4"/>
+        <path d="M44.7,370.5 L37.5,370.5 M37.5,364.5 L37.5,376.5" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-opacity="1"/>
+        <path d="M658.3,370.5 L665.5,370.5 M665.5,376.5 L665.5,364.5" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M95.5,304.5 L598.841,304.5" fill="#48440E"/>
+      <g>
+        <path d="M103.7,304.5 L590.641,304.5" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-dasharray="6,4"/>
+        <path d="M103.7,304.5 L96.5,304.5 M96.5,298.5 L96.5,310.5" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-opacity="1"/>
+        <path d="M590.641,304.5 L597.841,304.5 M597.841,310.5 L597.841,298.5" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-opacity="1"/>
+      </g>
+    </g>
+    <g>
+      <path d="M50.5,334.5 L650.5,337.5" fill="#48440E"/>
+      <g>
+        <path d="M58.7,334.541 L642.3,337.459" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-dasharray="6,4"/>
+        <path d="M58.7,334.541 L51.5,334.505 M51.53,328.505 L51.47,340.505" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-opacity="1"/>
+        <path d="M642.3,337.459 L649.5,337.495 M649.47,343.495 L649.53,331.495" fill-opacity="0" stroke="#9B5618" stroke-width="2" stroke-opacity="1"/>
+      </g>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 350, 292.753)">
+      <tspan x="-85.77" y="-1.247" font-family="Consolas-Bold" font-size="13" fill="#734012">box-sizing</tspan>
+      <tspan x="-14.295" y="-1.247" font-family="Consolas" font-size="13" fill="#D0C1B4">:</tspan>
+      <tspan x="-7.147" y="-1.247" font-family="Consolas" font-size="13" fill="#48440E"> </tspan>
+      <tspan x="0" y="-1.247" font-family="Consolas" font-size="13" fill="#9B5618">content-box</tspan>
+      <tspan x="78.622" y="-1.247" font-family="Consolas" font-size="13" fill="#D0C1B4">;</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 350, 325.753)">
+      <tspan x="-85.77" y="-1.247" font-family="Consolas-Bold" font-size="13" fill="#734012">box-sizing</tspan>
+      <tspan x="-14.295" y="-1.247" font-family="Consolas" font-size="13" fill="#D0C1B4">:</tspan>
+      <tspan x="-7.147" y="-1.247" font-family="Consolas" font-size="13" fill="#48440E"> </tspan>
+      <tspan x="0" y="-1.247" font-family="Consolas" font-size="13" fill="#9B5618">padding-box</tspan>
+      <tspan x="78.622" y="-1.247" font-family="Consolas" font-size="13" fill="#D0C1B4">;</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 346.67, 359.753)">
+      <tspan x="-82.196" y="-1.247" font-family="Consolas-Bold" font-size="13" fill="#734012">box-sizing</tspan>
+      <tspan x="-10.721" y="-1.247" font-family="Consolas" font-size="13" fill="#D0C1B4">:</tspan>
+      <tspan x="-3.574" y="-1.247" font-family="Consolas" font-size="13" fill="#48440E"> </tspan>
+      <tspan x="3.574" y="-1.247" font-family="Consolas" font-size="13" fill="#9B5618">border-box</tspan>
+      <tspan x="75.048" y="-1.247" font-family="Consolas" font-size="13" fill="#D0C1B4">;</tspan>
+    </text>
+  </g>
+  <g id="Layer_2" display="none"/>
+</svg>
