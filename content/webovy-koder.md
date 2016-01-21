@@ -13,10 +13,12 @@ Webovému kodérovi též můžeme říkat frontend kodér, [frontend designér]
 
 ## Poznámky k textu
 
+* Z opačné strany bere potřebné znalosti [výstupní checklist kodéra](checklist.md).
 * Následující prosím berte více jako autorův subjektivní výběr než přesnou a precizně strukturovanou osnovu pro samostudium.
 * Body v jednotlivých sekcích jsou řazeny podle důležitosti.
 * Jako **[nové]** jsou označeny znalosti, které přibyly v posledních cca 2-3 letech.
 * A pozor, skutečného profíka z kodéra neudělá šíře technických znalostí, ale [vynikající soft-skills](http://cs.wikipedia.org/wiki/M%C4%9Bkk%C3%A9_dovednosti).
+
 
 ## Co by měl umět webový kodér
 
