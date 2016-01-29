@@ -4,7 +4,7 @@ Co všechno by měl [webový kodér](/prirucka/webovy-koder) zkontrolovat než o
 
 Dovolte mi dvě poznámky:
 
-- Tohle je koncept. Připomínky, nápady a feedback nadšeně vítám. Klidně [mailem](mailto:martin@vzhurudolu.cz) nebo [do komentářů](#disqus_thread).
+- Tohle je koncept. Připomínky, nápady a feedback nadšeně vítám. Klidně [mailem](mailto:martin@vzhurudolu.cz) nebo do komentářů.
 - Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada věcí jinak.
 
 ---
@@ -55,7 +55,7 @@ Dovolte mi dvě poznámky:
 - WAI-ARIA oblasti  
 <small>([Článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/))</small>
 - Ovládání tabulátorem  
-<small>([Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html)</small>
+<small>([Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html))</small>
 - Alternativní texty u mediálního obsahu  
 <small>([Článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-html5-textove-alternativy-obrazku-1-2-teorie/))</small>
 - Správné typy inputů ve formulářích  (`email`, `url`…)  
