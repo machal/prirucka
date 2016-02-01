@@ -72,6 +72,5 @@ V praxi je ten zápis nyní potřeba [hlavně pro Internet Explorer na Windows P
 ## A ještě pár rychlovek
 
 1. Pokud vám [iOS9 od-zoomovává obsah](http://kihlstrom.com/2015/shrink-to-fit-no-fixes-zoom-problem-in-ios-9/), mohlo by pomoci přidání `shrink-to-fit=no`. Ale neptejte se mě, prosím, proč. Asi bych se v těch viewportech trochu ztratil.
-2. Děláte webové apky, které nepotřebují ovládácí prvky prohlížeče? Pak může být zajímavé přidat hodnotu `minimal-ui`. Od iOS sedmé verze to [spustí něco jako fullscreen](http://www.mobilexweb.com/blog/ios-7-1-safari-minimal-ui-bugs).
-3. Meta viewport sice [občas jde měnit Javascriptem](http://www.webdevdoor.com/responsive-web-design/change-viewport-meta-tag-javascript), ale nedělejte to. Je to náročné na vykreslování a nefugnuje ve všech prohlížečích. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
-4. Když budete mít viewport nastavený správně – s hodnotou `width` – přicházející prohlížeče postavené na Webkitu samy [odstraní 300ms čekání](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/) mezi tapnutím a akcí.
+2. Meta viewport [jde nastavit Javascriptem](https://twitter.com/Jahoda/status/693884147702611974). To se hodí, když nemáte přístup do `<head>`. Teoreticky jde javascriptem [i měnit](http://www.webdevdoor.com/responsive-web-design/change-viewport-meta-tag-javascript), ale nedělejte to. Je to náročné na vykreslování. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
+3. Když budete mít viewport nastavený správně – s hodnotou `width` – přicházející prohlížeče postavené na Webkitu samy [odstraní 300ms čekání](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/) mezi tapnutím a akcí.
