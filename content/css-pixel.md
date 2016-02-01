@@ -10,7 +10,7 @@ Retina, Amoled, QuadHD. Asi jste si všimli, že mobilní zařízení mají v po
 
 Kouká se přes ně na weby dobře, což o to. Ale kdo má pro ně ty weby navrhovat?!
 
-Vezměme iPhone5S, ten má rozlišení 640×1136 pixelů. Když tohle na [školení](http://www.vzhurudolu.cz/kurzy/responzivni-webdesign) zmíním, je to přesně ta chvíle kdy se někteří webaři začnou čertit: „Když si někdo otočí iPhone na šířku, zobrazí se mu web tak jsem ho v breakpointu 1024px připravoval pro tablet nebo menší desktop. Hrůza!"
+Vezměme iPhone5S, ten má rozlišení 640×1136 pixelů. Když tohle na [školení](http://www.vzhurudolu.cz/kurzy/responzivni-design) zmíním, je to přesně ta chvíle kdy se někteří webaři začnou čertit: „Když si někdo otočí iPhone na šířku, zobrazí se mu web tak jsem ho v breakpointu 1024px připravoval pro tablet nebo menší desktop. Hrůza!"
 
 Není to tak. Hardwarové pixely nás webaře totiž skoro nezajímají. Zato CSS pixely jsou naši kamarádi.
 
@@ -42,7 +42,7 @@ Nejdříve ale ještě o tom, kde všude s CSS pixely pracují webaři. Stručn�
 
 ## Autoři stránek pracují jen s CSS pixely
 
-Raději doslovně připomenu, že v HTML, CSS i Javascriptu vždy pracujeme s CSS pixely. K hardwarovým zatím rozumný přístup nemáme.
+Raději doslovně připomenu, když použijete [meta značku pro viewport](viewport-meta.md), pak v HTML, CSS i Javascriptu vždy pracujeme s CSS pixely. K hardwarovým zatím rozumný přístup nemáme.
 
 Takže když napíšu media query…
 
@@ -69,7 +69,7 @@ Jenže tady se děje další častá chyba webařů. Jejich responzivní weby po
 
 Už dříve existovaly zařízení s poměry [1.5×, 1.325×, 2.37× a dalšími](http://www.canbike.org/CSSpixels/). A ne vždy na nich obrázek ve 2násobném rozlišení vypadá uspokojivě, zejména pokud jde o ikonku.
 
-Poměrně běžné jsou také 3× displeje. Ostatně i v době psaní článku zveřejněný iPhone6+ bude z téhle kategorie. No a někteří z nás pak budou na svém zařízení používat [4násobný poměr](http://www.theverge.com/2014/9/3/6097297/samsung-galaxy-note-edge-wraparound-display) mezi hardwarovými a CSS pixely. Tam už ani obrázek ve dvojnásobném rozlišení zřejmě stačit nebude.
+Poměrně běžné jsou také 3× displeje. Ostatně i v době psaní článku zveřejněný iPhone6+ bude z téhle kategorie. No a někteří z nás pak budou na svém zařízení používat [čtyřnásobný poměr](http://www.theverge.com/2014/9/3/6097297/samsung-galaxy-note-edge-wraparound-display) mezi hardwarovými a CSS pixely. Tam už ani obrázek ve dvojnásobném rozlišení zřejmě stačit nebude.
 
 Vezměme si pár oblíbených zařízení. Jaký je tam poměr mezi HW (hardwarovým) a CSS rozlišením?
 

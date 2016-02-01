@@ -1,33 +1,43 @@
-# Meta tag Viewport
+# Vše o meta značce pro viewport
 
-Zjednodušeně (ale lidsky) řečeno slouží k informování prohlížeče, zda a jak jste web připravili pro mobilní zařízení.
+Zjednodušeně ale lidsky řečeno slouží k informování prohlížeče, zda a jak jste web připravili pro mobilní zařízení.
 
-![TODO img](image_1.png)
+![Meta Viewport](dist/images/original/meta-viewport-mobile.svg)
 
-Začnu bez vysvětlování správným výchozím meta viewport zápisem:
+Začnu bez vysvětlování zápisem meta tagu pro viewport, který je v pořádku:
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" 
+  content="width=device-width, initial-scale=1">
 ```
 
 K tomu si do CSS doplňte:
 
 ```css
-@-ms-viewport { width: device-width; }
+@-ms-viewport { 
+  width: device-width; 
+}
 ```
 
-Tohle vám u drtivé většiny responzivních webů bude stačit. Pokud ale máte 5 minut času, pojďme si říct proč meta viewport zapisovat právě takhle.
+Tohle vám u drtivé většiny responzivních webů bude stačit. Pokud ale máte 5 minut času, pojďte se o nejpopulárnější metaznačce dozvědět něco víc.
 
-## `<meta name="viewport" content="…">`
+## Různé typy viewportů
 
-Tahle nestandardizovaná meta značka obsahuje instrukce, které prohlížeč použije pro výchozí nastavení viewportu a úroveň zoomu.
+Na mobilních zařízeních potřebujeme znát alespoň tyto dva typy viewportů:
 
-Do atributu content je možné dávat různé vlastnosti a jejich hodnoty.
+- *Layoutový* – plocha, do které se vykresluje layout stránky. To je to, co mají prohlížeče na iOS a Androidu nastaveno na 980 pixelů. 
+- *Ideální* – ideální rozlišení. Dostanete jej, když vydělíte hardwarové rozlišení hodnotou `device-pixel-ratio` (viz [CSS pixel](css-pixel.md)). iPhone 4 měl ideální viewport 320 &times; 480 pixelů. Další příklady u [Petera Paula Kocha](http://www.quirksmode.org/mobile/metaviewport/#link7).
+
+Existují ještě minimálně další dva typy viewportů, ale to tom až jindy.
+
+## Parametry meta značky pro viewport
+
+Do atributu `content` je možné dávat různé vlastnosti a jejich hodnoty.
 
 ### `width`
 
-Nastaví šířku layoutového viewportu v pixelech. Nejčastěji využívaná hodnota device-width pak nastaví šířku layoutového viewportu (plocha do které se zobrazuje stránka) na šířku ideálního viewportu (výřez, přes který na stránku koukáte).
-Pokud použijete hodnotu, např. `width=400`, nastavíte šířku layoutového viewportu na 400 pixelů. To snad nebudete muset dělat.
+Nastaví šířku layoutového viewportu v pixelech. Nejčastěji využívaná hodnota `device-width` sjednotí šířku layoutového viewportu se šířkou ideálního viewportu.
+Pokud použijete hodnotu, např. `width=400`, nastavíte šířku layoutového viewportu na 400 pixelů. To snad nebude chtít ani muset dělat.
 
 ### `initial-scale`
 
@@ -35,32 +45,33 @@ Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku
 
 ### `user-scalable`
 
-Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení [fakt potřeba](http://ux.stackexchange.com/a/37513). Ať už jde o zvětšení hůř navržené stránky, zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku — přibližování a oddalování prostě potřebují všichni uživatelé.
+Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení [fakt potřeba](/blog/48-znicit-mobilistu-2#10-zakazte-jim-zoomovani). Ať už jde o zvětšení hůř navržené stránky, zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku — přibližování obsahu prostě potřebují všichni uživatelé.
 
 ### `minimum-scale`/`maximum-scale`
 
-Minimální a maximální možný zoom. Netuším, k čemu by mohlo být dobré. Pokud máte praktické využití, napište mi je do komentářů, pěkně prosím.
+Minimální a maximální možný zoom. Netuším, k čemu by mohlo být dobré. `maximum-scale=1` ruší možnost přiblížení stejně jako `user-scalable=no`. Prosím, nepoužívejte to.
 
 ## Proč `width=device-width` a zároveň `initial-scale=1`?
 
-Hodnota `width=device-width` je instrukce pro sjednocení [viewportu layoutu s ideálním viewportem](veiwport-mobily.md).
+Jak už jsem psal, `width=device-width` je instrukce pro sjednocení layoutového s ideálním viewportem.
 
-Lidsky řečeno – mobilní prohlížeč vaši stránku nevykreslí do přednastaveného viewportu (u většiny mobilních prohlížečů 980 pixelů), ale použije [ideální viewport pro dané zařízení](http://www.quirksmode.org/mobile/metaviewport/#link7) (např. pro Android prohlížeč na Samsungu Galaxy S4 je to 360 pixelů v režimu portrait).
+Lidsky řečeno: mobilní prohlížeč vaši stránku nevykreslí do přednastaveného viewportu – nejčastěji 980 pixelů. Použije namísto toho „normální“ mobilní rozlišení – třeba 360 pixelů.
 
-`width=device-width` má ovšem jednu známou nevýhodu – Safari na iOS pak jako ideální viewport v režimu zobrazení na šířku použije ideální viewport pro výšku. Ano, přesně tohle je příčinou toho problému se „zvětšováním" stránky v landscape režimu na iOS.
+`width=device-width` má ovšem jednu známou nevýhodu – Safari na iOS pak jako ideální viewport v režimu zobrazení na šířku použije ideální viewport pro výšku. Ano, přesně tohle je příčinou toho problému se „zvětšováním“ stránky v landscape režimu na iOS.
 
-Je zde jedna záchrana – použít namísto toho zápis `initial-scale=1`. Světe div se, na všech mobilních zařízeních má ten samý efekt jako `width=device-width`. Světe div se podruhé, Safari na iOS už v landscape režimu renderuje do ideálního landscape viewportu.
-
-A světe, teď se nemůžeš divit, má to svoje nevýhody. Internet Explorer se na mobilních Windows 8 totiž začne chovat úplně stejně špatně jako mobilní Safari.
+Je zde jedna záchrana – použít namísto toho zápis `initial-scale=1`. Světe div se, na všech mobilních zařízeních má ten samý efekt jako `width=device-width`. Světe div se podruhé, Safari na iOS už v landscape režimu renderuje do ideálního landscape viewportu. A světe – teď se nemůžeš divit – má to svoje nevýhody! Internet Explorer se na mobilních Windows 8 totiž začne chovat úplně stejně špatně jako mobilní Safari.
 
 Nevadí. Problémy vyřešíme tím, že použijeme obě hodnoty — `width=device-width, initial-scale=1`.
 
-## Zavináčové pravidlo @viewport v CSS
+## Zavináčové pravidlo `@viewport` v CSS
 
-Zdá se to logické. Instrukce pro způsob zobrazování, ke kterým meta tag viewport patří, by bylo lepší zapisovat v CSS, že ano? Se zápisem `@viewport { }` [přišla Opera](https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/), která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase neumí. Používá jej sice mobilní Internet Explorer, ovšem jen jako doplněk k „meta viewport".
+Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? Se zápisem `@viewport { }` [přišla Opera](https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/), která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase nejspíš neumí. 
 
-Pokud totiž použijeme zápis `width=device-width, initial-scale=1`, mobilní Explorer si jako ideální viewport z nějakých (fakt prapodivných) důvodů [nastaví kratší rozměr ideálního viewportu na ](https://www.facebook.com/groups/frontendisti/permalink/1580597372151781/)[320 pixelů](https://www.facebook.com/groups/frontendisti/permalink/1580597372151781/). Například na mojí testovací Lumii na 320x486 pixelů.  Ve skutečnosti je její ideální viewport 480×800 pixelů.
+V praxi je ten zápis nyní potřeba [hlavně pro Internet Explorer na Windows Phone 8](viewport-window.md) a jako doplněk k meta značce pro viewport jej [nabízí](http://caniuse.com/css-deviceadaptation) prohlížeče od Microsoftu.
 
-Zápis `@-ms-viewport { width: device-width; }` přidaný do CSS pak slouží k nastavení viewportu na ideální hodnoty. Chudinka Lumia pak stránky začne zobrazovat ve svém ideálním viewportu 480×800 pixelů.
+## A ještě pár rychlovek
 
-Hotovo. Svět je složitý, já vím. Pokud si s viewporty chcete sami hrát, tady jsou moje testy na Codepenu: [bez meta viewport i @viewport](http://s.codepen.io/machal/debug/PwJyQV), [s meta viewport i @viewport](http://s.codepen.io/machal/debug/pfijm), [s meta viewport, ale bez @viewport](http://s.codepen.io/machal/debug/Eawbrr).
+1. Pokud vám [iOS9 od-zoomovává obsah](http://kihlstrom.com/2015/shrink-to-fit-no-fixes-zoom-problem-in-ios-9/), mohlo by pomoci přidání `shrink-to-fit=no`. Ale neptejte se mě, prosím, proč. Asi bych se v těch viewportech trochu ztratil.
+2. Děláte webové apky, které nepotřebují ovládácí prvky prohlížeče? Pak může být zajímavé přidat hodnotu `minimal-ui`. Od iOS sedmé verze to [spustí něco jako fullscreen](http://www.mobilexweb.com/blog/ios-7-1-safari-minimal-ui-bugs).
+3. Meta viewport sice [občas jde měnit Javascriptem](http://www.webdevdoor.com/responsive-web-design/change-viewport-meta-tag-javascript), ale nedělejte to. Je to náročné na vykreslování a nefugnuje ve všech prohlížečích. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
+4. Když budete mít viewport nastavený správně – s hodnotou `width` – přicházející prohlížeče postavené na Webkitu samy [odstraní 300ms čekání](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/) mezi tapnutím a akcí.

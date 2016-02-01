@@ -12,7 +12,7 @@ A pokud chcete hezky zobrazovat weby na mobilních Windows 8, přidejte si do st
 
 ## Windows Phone 8.1 a menší problémy
 
-Pokud  použijeme [meta viewport](http://jecas.cz/meta-viewport) s hodnotami `width=device-width, initial-scale=1`, mobilní Explorer si z nějakých (fakt prapodivných, co si budem povídat) důvodů nastaví kratší rozměr layoutového viewportu [na 320 pixelů](https://www.facebook.com/groups/frontendisti/permalink/1580597372151781/). Například na [Lumia 630](http://www.gsmarena.com/nokia_lumia_630-6232.php), která má fyzické rozlišení 480×854, pak zobrazí stránku v rozlišení 320×486.
+Pokud  použijeme [meta viewport](viewport-meta.md) s hodnotami `width=device-width, initial-scale=1`, mobilní Explorer si z nějakých (fakt prapodivných, co si budem povídat) důvodů nastaví kratší rozměr layoutového viewportu [na 320 pixelů](https://www.facebook.com/groups/frontendisti/permalink/1580597372151781/). Například na [Lumia 630](http://www.gsmarena.com/nokia_lumia_630-6232.php), která má fyzické rozlišení 480×854, pak zobrazí stránku v rozlišení 320×486.
 
 ![Stránka s a bez deklarace @viewport](dist/images/original/viewport-windows-8.jpg)
 

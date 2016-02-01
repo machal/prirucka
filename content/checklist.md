@@ -18,15 +18,15 @@ Dovolte mi dvě poznámky:
 - Twitter Cards  
 <small>([Nástroj](https://cards-dev.twitter.com/validator "Card validator"), [Článek  na Je čas](http://jecas.cz/nahled-odkazu "Náhled odkazu při sdílení na sociálních sítích"))</small>
 - Strukturovaná data pro Google  
-<small>([Nástroj](https://developers.google.com/structured-data/testing-tool/ "Structured Data Testing Tool"), [Článek na Vzhůru dolů](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"))</small>
+<small>([Nástroj](https://developers.google.com/structured-data/testing-tool/ "Structured Data Testing Tool"), [Článek](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"))</small>
 - Validní HTML  
 <small>([Nástroj](https://validator.w3.org/ "W3 Markup Validator"))</small>
 - Správný `title`, `meta desc`  
 <small>([Nástroj](http://www.w3.org/2003/12/semantic-extractor.html "W3 Semantic Extractor"))</small>
 - Správný `meta viewport`  
-<small>([Článek na Je čas](http://jecas.cz/meta-viewport "Meta Viewport"))</small>
+<small>([Článek](viewport-meta.md "Meta Viewport"))</small>
 - Osnova (outline) nadpisů  
-<small>([Nástroj](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"), [Článek na Vzhůru dolů]( http://www.vzhurudolu.cz/blog/25-vice-h1))</small>
+<small>([Nástroj](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"), [Článek]( http://www.vzhurudolu.cz/blog/25-vice-h1))</small>
 - Obsah bez typografických chyb  
 <small>([Článek na Wikipedii](https://cs.wikipedia.org/wiki/Wikipedie:Typografick%C3%A9_rady "Typografické rady"))</small>
 
@@ -67,7 +67,7 @@ Dovolte mi dvě poznámky:
 ## Prohlížeče a kompatibilita
 
 - Plné zobrazení v moderních prohlížečích  
-<small>([Článek na Vzhůru dolů](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby "Jak testovat responzivní weby"))</small>
+<small>([Článek](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby "Jak testovat responzivní weby"))</small>
 - Dostupnost hlavního obsahu ve starších prohlížečích  
 - Zobrazení napříč zařízeními  
 - Tisková verze stránky  
@@ -76,7 +76,7 @@ Dovolte mi dvě poznámky:
 ## Ostatní
 
 - Grafika podporuje HD displeje typu Retina  
-<small>([Článek na Vzhůru dolů](http://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"))</small>
+<small>([Článek](http://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"))</small>
 - Požadované PageSpeedInsights  
 <small>([Pagespeed Insights tester](https://developers.google.com/speed/pagespeed/insights/?hl=cs))</small>
 - Požadovaný SpeedIndex z WebpageTest.org  
