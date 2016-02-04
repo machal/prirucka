@@ -2,42 +2,39 @@
 
 Co všechno by měl [webový kodér](/prirucka/webovy-koder) zkontrolovat než odevzdá svou práci?
 
-Dovolte mi dvě poznámky:
-
-- Tohle je koncept. Připomínky, nápady a feedback nadšeně vítám. Klidně [mailem](mailto:martin@vzhurudolu.cz) nebo do komentářů.
-- Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada věcí jinak.
+Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada věcí jinak.
 
 ---
 
 ## HTML
 
 - Ikony a favikony  
-<small>([Nástroj](http://realfavicongenerator.net/ "Real Favicon Generator"), [Článek na Je čas](http://jecas.cz/favicon "Ikona stránky"))</small>
+<small>Identifikují web v bookmarcích nebo v seznamu aplikací na mobilech i desktopu. [Více informací](http://jecas.cz/favicon). [RealFaviconGenerator.net](http://realfavicongenerator.net/ "Real Favicon Generator")</small>
 - Facebook Open Graph  
-<small>([Nástroj](https://developers.facebook.com/tools/debug/ "Facebook Debugger"), [Článek na Je čas](http://jecas.cz/nahled-odkazu "Náhled odkazu při sdílení na sociálních sítích"))</small>
+<small>Změní náhled stránky na Facebooku. Má potenciál zvýšit návštěvnost webu. Důležitý je hlavně obrázek. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Facebook Debugger](https://developers.facebook.com/tools/debug/ "Facebook Debugger").</small>
 - Twitter Cards  
-<small>([Nástroj](https://cards-dev.twitter.com/validator "Card validator"), [Článek  na Je čas](http://jecas.cz/nahled-odkazu "Náhled odkazu při sdílení na sociálních sítích"))</small>
+<small>Vytvoří náhled stránky na Twitteru. Má potenciál zvýšit návštěvnost webu. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Twitter Validator](https://cards-dev.twitter.com/validator "Card validator").</small>
 - Strukturovaná data pro Google  
-<small>([Nástroj](https://developers.google.com/structured-data/testing-tool/ "Structured Data Testing Tool"), [Článek](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"))</small>
+<small>„Rich Snippets“ vylepší náhled webu ve výsledcích vyhledávání. Podstatné hlavně u eshopů, recenzí nebo událostí. [Více informací](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"). [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
 - Validní HTML  
-<small>([Nástroj](https://validator.w3.org/ "W3 Markup Validator"))</small>
-- Správný `title`, `meta desc`  
-<small>([Nástroj](http://www.w3.org/2003/12/semantic-extractor.html "W3 Semantic Extractor"))</small>
+<small>Hlavně kvůli potenciálním chybám v indexaci vyhledávači. Lpí na tom i někteří klienti.  [Více informací](http://jecas.cz/validita). [Český validátor](http://validator.webylon.info/).</small>
+- Správný `<title>` a `<meta description>`  
+<small>Oba hlavně kvůli náhledu stránky ve výsledcích vyhledávání nebo na sociálních sítích. [Více o title](https://moz.com/learn/seo/title-tag). [Více o meta description](https://moz.com/learn/seo/meta-description). [Nástroj pro ověření](http://www.w3.org/2003/12/semantic-extractor.html "W3 Semantic Extractor").</small>
 - Správný `meta viewport`  
-<small>([Článek](viewport-meta.md "Meta Viewport"))</small>
+<small>Zařídí správné zobrazování responzivního webu v mobilních prohlížečích. [Více informací](viewport-meta.md "Meta Viewport")</small>
 - Osnova (outline) nadpisů  
-<small>([Nástroj](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"), [Článek]( http://www.vzhurudolu.cz/blog/25-vice-h1))</small>
+<small>Stromová struktura usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více h1?]( http://www.vzhurudolu.cz/blog/25-vice-h1).</small>
 - Obsah bez typografických chyb  
-<small>([Článek na Wikipedii](https://cs.wikipedia.org/wiki/Wikipedie:Typografick%C3%A9_rady "Typografické rady"))</small>
+<small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Je dobré dohlédnout alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
 
 ## CSS
 
-- Dodržuje požadovanou konvenci  
-<small>([Články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=css%20code%20standards))</small>
-- Odstranění přebytečného kódu  
-<small>([Nástroj](https://unused-css.com/))</small>
+- Kód dodržuje konvenci  
+<small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Odkážu jen na [články v Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=css%20code%20standards).</small>
 - Lint v požadované úrovni  
-<small>([Nástroj](http://csslint.net/))</small>
+<small>Automatická kontrola častých chyb nebo problematických konstrukcí kódu. Hodí se hlavně při práci v týmu, ale opět bude mít každý jinak. Lze využít například [CSS Lint](http://csslint.net/)</small>
+- Odstranění přebytečného kódu  
+<small>Nenechte uživatele stahovat zbytečná data. Hlavně při použití CSS frameworků a pluginů je tohle problém. Existují i automatické nástroje jako třeba [UnusedCSS.com](https://unused-css.com/)</small>
 
 ## Javascript
 
