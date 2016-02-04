@@ -6,7 +6,7 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 
 ---
 
-## HTML
+## Obsah a HTML
 
 - Ikony a favikony  
 <small>Identifikují web v bookmarcích nebo v seznamu aplikací na mobilech i desktopu. [Více informací](http://jecas.cz/favicon). [RealFaviconGenerator.net](http://realfavicongenerator.net/ "Real Favicon Generator")</small>
@@ -20,31 +20,27 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 <small>Hlavně kvůli potenciálním chybám v indexaci vyhledávači. Lpí na tom i někteří klienti.  [Více informací](http://jecas.cz/validita). [Český validátor](http://validator.webylon.info/).</small>
 - Správný `<title>` a `<meta description>`  
 <small>Oba hlavně kvůli náhledu stránky ve výsledcích vyhledávání nebo na sociálních sítích. [Více o title](https://moz.com/learn/seo/title-tag). [Více o meta description](https://moz.com/learn/seo/meta-description). [Nástroj pro ověření](http://www.w3.org/2003/12/semantic-extractor.html "W3 Semantic Extractor").</small>
-- Správný `meta viewport`  
+- Správný `<meta viewport>`  
 <small>Zařídí správné zobrazování responzivního webu v mobilních prohlížečích. [Více informací](viewport-meta.md "Meta Viewport")</small>
 - Osnova (outline) nadpisů  
 <small>Stromová struktura usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více h1?]( http://www.vzhurudolu.cz/blog/25-vice-h1).</small>
 - Obsah bez typografických chyb  
 <small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Je dobré dohlédnout alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
 
-## CSS
+## Kvalita CSS a JS kódu
 
 - Kód dodržuje konvenci  
-<small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Odkážu jen na [články v Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=css%20code%20standards).</small>
-- Kvalita kódu v požadované úrovni  
-<small>Automatická kontrola častých chyb nebo problematických konstrukcí kódu. Hodí se hlavně při práci v týmu, ale opět bude mít každý jinak. Lze využít například [CSS Lint](http://csslint.net/)</small>
-- Odstranění přebytečného kódu  
-<small>Nenechte uživatele stahovat zbytečná data. Hlavně při použití CSS frameworků a pluginů je tohle problém. Existují i automatické nástroje jako třeba [UnusedCSS.com](https://unused-css.com/)</small>
-
-## Javascript
-
-- Kód dodržuje konvenci  
-<small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Opět jen odkaz na [články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20code%20standards).</small>
-- Kód je pokrytý testy  
-<small>Javascript není CSS a tak se nějaké ty testy hodí. [Články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20unit%20testing)</small>
+<small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Opět jen odkaz na [články o javascript code standards](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20code%20standards) a [css code standards](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=css%20code%20standards).</small>
 - Kvalita kódu v požadované úrovni  
 <small>Automatická kontrola častých chyb nebo problematických konstrukcí kódu. Hodí se hlavně při práci v týmu, ale opět bude mít každý jinak. Lze využít například 
-[JSLint](http://www.jslint.com/), [JSHint](http://jshint.com/).</small>
+[ESLint](http://eslint.org/) nebo [CSS Lint](http://csslint.net/).</small>
+- Kód je pokrytý testy  
+<small>Javascript není CSS a tak se nějaké ty testy hodí. [Články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20unit%20testing)</small>
+- Kód je v produkční kvalitě    
+<small>Je minifikovaný a neobsahuje zbytečná data. Hlavně při použití CSS frameworků a pluginů je tohle problém. Existují i automatické nástroje jako třeba [UnusedCSS.com](https://unused-css.com/)</small>
+- README.md  
+<small>V repozitáři je popsána instalace, buildování atd.</small>
+
 
 ## Přístupnost
 
@@ -53,14 +49,14 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 - WAI-ARIA oblasti  
 <small>Zrakově postiženým umožňí strukturované procházení, což děsně šetří čas. Přitom stačí přidat hlavně `role` pro navigaci, obsah a třeba vyhledávání. Pomůže [článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/) a pár [postřehů tady](http://www.vzhurudolu.cz/blog/28-pristupnost-webexpo-2014).</small>
 - Ovládání tabulátorem  
-<small>Emulujete sekvenční procházení stránky bez myši. Kromě zrakově postižených ocení i pokročilí uživatelé. [Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html))</small>
+<small>Emulujete sekvenční procházení stránky bez myši. Kromě zrakově postižených ocení i pokročilí uživatelé. [Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html).</small>
 - Alternativní texty u mediálního obsahu  
 <small>Hlavně pro nevidomé uživatele a taky indexování obrázků vyhledávači. Pomůže [článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-html5-textove-alternativy-obrazku-1-2-teorie/).</small>
 - Správné typy inputů ve formulářích  
 <small>`<input type="email">` a další usnadňují zadávání obsahu na mobilních zařízeních. Užitečné naprosto pro všechny. [Článek na Zdrojáku](https://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/).</small>
 - Barevný kontrast  
 <small>Ocení nejen zrakově postižení, ale také majitelé horších displejů nebo prakticky každý při horších světelných podmínkách. Pomůže nástroj [Check My Colours](http://www.checkmycolours.com/).</small>
-- Hlavní obsah a navigace je dostupná bez Javascriptu  
+- Hlavní obsah a navigace jsou dostupné bez Javascriptu  
 <small>Obsah vám jinak nezaindexují vyhledávače. Pomůže vypnutí JS v Developer Tools.</small>
 
 ## Prohlížeče a kompatibilita
@@ -82,5 +78,25 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 <small>[SpeedIndex](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) číslo, které se pokouší vyjádřit rychlost webu. Čím vyšší, tím horší. Ideální stav je někdo kolem 1000. Testujte na [WebpageTest.org](http://www.webpagetest.org/).</small>
 - Šablony pro chybové stránky 404 a 50x  
 <small>Výchozí šablony chyb serverů návštěvníkovi nepomohou. Pár [tipů v článku](https://www.interval.cz/clanky/pet-nezbytnych-prvku-uspesne-chybove-stranky-404/).</small>
-- README.md  
-<small>V repozitáři popsána instalace, buildování atd.</small>
+
+
+## Spouštění webu
+
+- Google Analytics  
+<small>Návštěvnost všechny zajímá, nezapomněli jste [nastavit měření](http://www.jakmeritweb.cz/spravne-nastaveni/jak-se-nastavuje-google-analytics)?</small>
+- robots.txt a humans.txt  
+<small>[Roboty](http://www.jakpsatweb.cz/robots-txt.html), jen pokud potřebujete něco výslovně změnit. [Lidi](http://humanstxt.org/CZ) hlavně pro radost.</small>
+- sitemap.xml  
+<small>Usnadňuje indexování vyhledávači. Hlavně pro větší weby nebo weby s komplikovanou strukturou.</small>
+- Vývojářské soubory nejsou na produci  
+<small>Hlavně adresáře typu .git/, node_modules/ nebo třeba obsah databáze.</small>
+- Hlavičky ze serveru  
+<small>[REDbot.org](https://redbot.org/)</small>
+- Správně nastavené bezpečnostní hlavičky  
+<small>[SecurityHeaders.io](https://securityheaders.io/)</small>
+- Kontrola odkazů z webu ven  
+<small>[W3C Link Checker](http://validator.w3.org/checklink) nebo [Xenu](http://home.snafu.de/tilman/xenulink.html)</small>
+- Registrace v Google Search Console  
+<small>Pravidelně upozorní na časté chyby z pohledu Google.</small>
+- Funkční testování  
+<small>Fungují kritické části webu i když ho spustíte? Pomůže [Selenium](http://www.seleniumhq.org/) nebo [Testomato](http://www.testomato.com/).</small>
