@@ -31,52 +31,56 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 
 - Kód dodržuje konvenci  
 <small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Odkážu jen na [články v Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=css%20code%20standards).</small>
-- Lint v požadované úrovni  
+- Kvalita kódu v požadované úrovni  
 <small>Automatická kontrola častých chyb nebo problematických konstrukcí kódu. Hodí se hlavně při práci v týmu, ale opět bude mít každý jinak. Lze využít například [CSS Lint](http://csslint.net/)</small>
 - Odstranění přebytečného kódu  
 <small>Nenechte uživatele stahovat zbytečná data. Hlavně při použití CSS frameworků a pluginů je tohle problém. Existují i automatické nástroje jako třeba [UnusedCSS.com](https://unused-css.com/)</small>
 
 ## Javascript
 
-- Dodržuje požadovanou konvenci  
-<small>([Články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20code%20standards))</small>
-- Pokrytý testy  
-<small>([Články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20unit%20testing))</small>
+- Kód dodržuje konvenci  
+<small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Opět jen odkaz na [články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20code%20standards).</small>
+- Kód je pokrytý testy  
+<small>Javascript není CSS a tak se nějaké ty testy hodí. [Články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20unit%20testing)</small>
 - Kvalita kódu v požadované úrovni  
-<small>([JSLint](http://www.jslint.com/), [JSHint](http://jshint.com/))</small>
+<small>Automatická kontrola častých chyb nebo problematických konstrukcí kódu. Hodí se hlavně při práci v týmu, ale opět bude mít každý jinak. Lze využít například 
+[JSLint](http://www.jslint.com/), [JSHint](http://jshint.com/).</small>
 
 ## Přístupnost
 
-- Validátor přístupnosti  
-<small>([Validátor](http://achecker.ca/checker/index.php))</small>
+- Nejčastější chyby  
+<small>Pomůže [Web Accessibility Checker](http://achecker.ca/checker/index.php).</small>
 - WAI-ARIA oblasti  
-<small>([Článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/))</small>
+<small>Zrakově postiženým umožňí strukturované procházení, což děsně šetří čas. Přitom stačí přidat hlavně `role` pro navigaci, obsah a třeba vyhledávání. Pomůže [článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/) a pár [postřehů tady](http://www.vzhurudolu.cz/blog/28-pristupnost-webexpo-2014).</small>
 - Ovládání tabulátorem  
-<small>([Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html))</small>
+<small>Emulujete sekvenční procházení stránky bez myši. Kromě zrakově postižených ocení i pokročilí uživatelé. [Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html))</small>
 - Alternativní texty u mediálního obsahu  
-<small>([Článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-html5-textove-alternativy-obrazku-1-2-teorie/))</small>
-- Správné typy inputů ve formulářích  (`email`, `url`…)  
-<small>([Článek na Zdrojáku](https://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/))</small>
+<small>Hlavně pro nevidomé uživatele a taky indexování obrázků vyhledávači. Pomůže [článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-html5-textove-alternativy-obrazku-1-2-teorie/).</small>
+- Správné typy inputů ve formulářích  
+<small>`<input type="email">` a další usnadňují zadávání obsahu na mobilních zařízeních. Užitečné naprosto pro všechny. [Článek na Zdrojáku](https://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/).</small>
 - Barevný kontrast  
-<small>([Tester Check My Colours](http://www.checkmycolours.com/))</small>
-- Hlavní obsah dostupný bez Javascriptu
+<small>Ocení nejen zrakově postižení, ale také majitelé horších displejů nebo prakticky každý při horších světelných podmínkách. Pomůže nástroj [Check My Colours](http://www.checkmycolours.com/).</small>
+- Hlavní obsah a navigace je dostupná bez Javascriptu  
+<small>Obsah vám jinak nezaindexují vyhledávače. Pomůže vypnutí JS v Developer Tools.</small>
 
 ## Prohlížeče a kompatibilita
 
-- Plné zobrazení v moderních prohlížečích  
-<small>([Článek](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby "Jak testovat responzivní weby"))</small>
+- Plné zobrazení napříč prohlížeči a zařízeními  
+<small>Mezi moderními prohlížeči už tolik rozdílů není, je jich ale hodně. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)</small>
 - Dostupnost hlavního obsahu ve starších prohlížečích  
-- Zobrazení napříč zařízeními  
+<small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat dobře, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
 - Tisková verze stránky  
-<small>([Článek na Je čas](http://jecas.cz/tisk "Tisk stránky"))</small>
+<small>Potřeba  hlavně zajistit vypnutí pro tisk nepotřebných částí. [Článek na Je čas](http://jecas.cz/tisk "Tisk stránky").</small>
 
 ## Ostatní
 
 - Grafika podporuje HD displeje typu Retina  
-<small>([Článek](http://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"))</small>
-- Požadované PageSpeedInsights  
-<small>([Pagespeed Insights tester](https://developers.google.com/speed/pagespeed/insights/?hl=cs))</small>
-- Požadovaný SpeedIndex z WebpageTest.org  
-<small>([webpagetest.org](http://www.webpagetest.org/))</small>
+<small>Obyčejná grafika nebude na vysokopacitních displejích vypadat dobře. Trochu teorie [o problému v článku](http://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"). V praxi potřebujete [SVG](svg.md) a [atribut `srcset`](srcset-sizes.md).</small>
+- Rychlost načítání: požadované skóre v PageSpeedInsights  
+<small>S optimalizací pomůže [Pagespeed Insights tester](https://developers.google.com/speed/pagespeed/insights/?hl=cs). Čím vyšší skóre, tím líp. 100/100 tam ale dosáhnout obvykle nejde.</small>
+- Rychlost načítání: požadovaný SpeedIndex z WebpageTest.org  
+<small>[SpeedIndex](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) číslo, které se pokouší vyjádřit rychlost webu. Čím vyšší, tím horší. Ideální stav je někdo kolem 1000. Testujte na [WebpageTest.org](http://www.webpagetest.org/).</small>
 - Šablony pro chybové stránky 404 a 50x  
-- V README.md v repozitáři popsána instalace, buildování atd.
+<small>Výchozí šablony chyb serverů návštěvníkovi nepomohou. Pár [tipů v článku](https://www.interval.cz/clanky/pet-nezbytnych-prvku-uspesne-chybove-stranky-404/).</small>
+- README.md  
+<small>V repozitáři popsána instalace, buildování atd.</small>
