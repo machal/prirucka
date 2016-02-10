@@ -2,42 +2,42 @@
 
 Co všechno by měl [webový kodér](/prirucka/webovy-koder) zkontrolovat než odevzdá svou práci?
 
-Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada věcí jinak.
+Napsáno hlavně pro prezentační weby. U webových aplikací bude řada věcí jinak.
 
 ---
 
 ## Obsah a HTML
 
 - Ikony a favikony  
-<small>Identifikují web v bookmarcích nebo v seznamu aplikací na mobilech i desktopu. [Více informací](http://jecas.cz/favicon). [RealFaviconGenerator.net](http://realfavicongenerator.net/ "Real Favicon Generator")</small>
+<small>Identifikují web v bookmarcích nebo v seznamu aplikací na mobilech i desktopu. [Více informací](http://jecas.cz/favicon). [RealFaviconGenerator.net](http://realfavicongenerator.net/ "Real Favicon Generator").</small>
 - Facebook Open Graph  
 <small>Změní náhled stránky na Facebooku. Má potenciál zvýšit návštěvnost webu. Důležitý je hlavně obrázek. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Facebook Debugger](https://developers.facebook.com/tools/debug/ "Facebook Debugger").</small>
 - Twitter Cards  
-<small>Vytvoří náhled stránky na Twitteru. Má potenciál zvýšit návštěvnost webu. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Twitter Validator](https://cards-dev.twitter.com/validator "Card validator").</small>
+<small>Vytvoří náhled stránky na Twitteru. Opět možnost zvýšit návštěvnost webu, tentokrát z Twitteru. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Twitter Validator](https://cards-dev.twitter.com/validator "Card validator").</small>
 - Strukturovaná data pro Google  
-<small>„Rich Snippets“ vylepší náhled webu ve výsledcích vyhledávání. Podstatné hlavně u eshopů, recenzí nebo událostí. [Více informací](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"). [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
+<small>„Rich Snippets“ vylepší náhled webu ve výsledcích vyhledávání. Podstatné hlavně u eshopů a webů, které obsahují recenze nebo události. [Více informací](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"). [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
 - Validní HTML  
-<small>Hlavně kvůli potenciálním chybám v indexaci vyhledávači. Lpí na tom i někteří klienti.  [Více informací](http://jecas.cz/validita). [Český validátor](http://validator.webylon.info/).</small>
+<small>Hlavně kvůli potenciálním chybám v indexaci vyhledávači. Lpí na tom i někteří klienti, tak proč si kazit renomé.  [Více informací](http://jecas.cz/validita). [Český validátor](http://validator.webylon.info/).</small>
 - Správný `<title>` a `<meta description>`  
-<small>Oba hlavně kvůli náhledu stránky ve výsledcích vyhledávání nebo na sociálních sítích. [Více o title](https://moz.com/learn/seo/title-tag). [Více o meta description](https://moz.com/learn/seo/meta-description). [Nástroj pro ověření](http://www.w3.org/2003/12/semantic-extractor.html "W3 Semantic Extractor").</small>
+<small>Vliv na umístění ve vyhledavačích. Také kvůli náhledu stránky ve výsledcích vyhledávání nebo na sociálních sítích. [Více o title](https://moz.com/learn/seo/title-tag). [Více o meta description](https://moz.com/learn/seo/meta-description). [Nástroj pro ověření](http://www.w3.org/2003/12/semantic-extractor.html "W3 Semantic Extractor").</small>
 - Správný `<meta viewport>`  
 <small>Zařídí správné zobrazování responzivního webu v mobilních prohlížečích. [Více informací](viewport-meta.md "Meta Viewport")</small>
 - Osnova (outline) nadpisů  
-<small>Stromová struktura usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více h1?]( http://www.vzhurudolu.cz/blog/25-vice-h1).</small>
+<small>Stromová struktura usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více `<h1>`?]( http://www.vzhurudolu.cz/blog/25-vice-h1).</small>
 - Obsah bez typografických chyb  
-<small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Je dobré dohlédnout alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
+<small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Dohlídněte alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
 
 ## Kvalita CSS a JS kódu
 
 - Kód dodržuje konvenci  
-<small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Opět jen odkaz na [články o javascript code standards](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20code%20standards) a [css code standards](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=css%20code%20standards).</small>
+<small>Konvence usnadňuje sdílení nebo předávání kódu. Jde o způsob psaní kódu, jeho komentování a případně i dokumentaci. Bude v každém týmu jinak, ale dobré si nastavit. Přidám jen odkaz na [články o javascript code standards](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20code%20standards) a [css code standards](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=css%20code%20standards).</small>
 - Kvalita kódu v požadované úrovni  
 <small>Automatická kontrola častých chyb nebo problematických konstrukcí kódu. Hodí se hlavně při práci v týmu, ale opět bude mít každý jinak. Lze využít například 
 [ESLint](http://eslint.org/) nebo [CSS Lint](http://csslint.net/).</small>
 - Kód je pokrytý testy  
 <small>Javascript není CSS a tak se nějaké ty testy hodí. [Články na Google vyhledávání](https://www.google.cz/webhp?ion=1&espv=2&ie=UTF-8#q=javascript%20unit%20testing)</small>
 - Kód je v produkční kvalitě    
-<small>Je minifikovaný a neobsahuje zbytečná data. Hlavně při použití CSS frameworků a pluginů je tohle problém. Existují i automatické nástroje jako třeba [UnusedCSS.com](https://unused-css.com/)</small>
+<small>Je minifikovaný a neobsahuje zbytečná data. Hlavně při použití CSS frameworků a pluginů je tohle problém. Existují i automatické nástroje jako třeba [UnusedCSS.com](https://unused-css.com/).</small>
 - README.md  
 <small>V repozitáři je popsána instalace, buildování atd.</small>
 
@@ -47,7 +47,7 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 - Nejčastější chyby  
 <small>Pomůže [Web Accessibility Checker](http://achecker.ca/checker/index.php).</small>
 - WAI-ARIA oblasti  
-<small>Zrakově postiženým umožňí strukturované procházení, což děsně šetří čas. Přitom stačí přidat hlavně `role` pro navigaci, obsah a třeba vyhledávání. Pomůže [článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/) a pár [postřehů tady](http://www.vzhurudolu.cz/blog/28-pristupnost-webexpo-2014).</small>
+<small>Zrakově postiženým umožňí strukturované procházení, což děsně šetří čas. Přitom stačí přidat hlavně `role` pro navigaci, obsah a třeba vyhledávání. Pomůže [článek na Zdrojáku](https://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/) a [pár postřehů tady](http://www.vzhurudolu.cz/blog/28-pristupnost-webexpo-2014).</small>
 - Ovládání tabulátorem  
 <small>Emulujete sekvenční procházení stránky bez myši. Kromě zrakově postižených ocení i pokročilí uživatelé. [Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html).</small>
 - Alternativní texty u mediálního obsahu  
@@ -57,14 +57,14 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 - Barevný kontrast  
 <small>Ocení nejen zrakově postižení, ale také majitelé horších displejů nebo prakticky každý při horších světelných podmínkách. Pomůže nástroj [Check My Colours](http://www.checkmycolours.com/).</small>
 - Hlavní obsah a navigace jsou dostupné bez Javascriptu  
-<small>Obsah vám jinak nezaindexují vyhledávače. Pomůže vypnutí JS v Developer Tools.</small>
+<small>Obsah vám jinak nezaindexují vyhledávače. Testujte vypnutím Javascriptu v Developer Tools.</small>
 
 ## Prohlížeče a kompatibilita
 
 - Plné zobrazení napříč prohlížeči a zařízeními  
-<small>Mezi moderními prohlížeči už tolik rozdílů není, je jich ale hodně. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)</small>
+<small>Mezi moderními prohlížeči už tolik rozdílů není. Prohlížečů je ale hodně, pacholků. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby).</small>
 - Dostupnost hlavního obsahu ve starších prohlížečích  
-<small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat dobře, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
+<small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat jako z reklamy na zubní pastu, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
 - Tisková verze stránky  
 <small>Potřeba  hlavně zajistit vypnutí pro tisk nepotřebných částí. [Článek na Je čas](http://jecas.cz/tisk "Tisk stránky").</small>
 
@@ -83,7 +83,7 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 ## Spouštění webu
 
 - Google Analytics  
-<small>Návštěvnost všechny zajímá, nezapomněli jste [nastavit měření](http://www.jakmeritweb.cz/spravne-nastaveni/jak-se-nastavuje-google-analytics)?</small>
+<small>Výkonnost webu všechny zajímá, nezapomněli jste [nastavit měření](http://www.jakmeritweb.cz/spravne-nastaveni/jak-se-nastavuje-google-analytics)?</small>
 - robots.txt a humans.txt  
 <small>[Roboty](http://www.jakpsatweb.cz/robots-txt.html), jen pokud potřebujete něco výslovně změnit. [Lidi](http://humanstxt.org/CZ) hlavně pro radost.</small>
 - sitemap.xml  
@@ -95,8 +95,8 @@ Psal jsem to hlavně pro prezentační weby. U webových aplikací bude řada v�
 - Správně nastavené bezpečnostní hlavičky  
 <small>[SecurityHeaders.io](https://securityheaders.io/)</small>
 - Kontrola odkazů z webu ven  
-<small>[W3C Link Checker](http://validator.w3.org/checklink) nebo [Xenu](http://home.snafu.de/tilman/xenulink.html)</small>
+<small>Použijte [W3C Link Checker](http://validator.w3.org/checklink) nebo [Xenu](http://home.snafu.de/tilman/xenulink.html).</small>
 - Registrace v Google Search Console  
-<small>Pravidelně upozorní na časté chyby z pohledu Google.</small>
+<small>Pravidelně upozorní na časté chyby z pohledu Google. [Přidejte tam web](https://www.google.com/webmasters/tools/) hned po spuštění.</small>
 - Funkční testování  
-<small>Fungují kritické části webu i když ho spustíte? Pomůže [Selenium](http://www.seleniumhq.org/) nebo [Testomato](http://www.testomato.com/).</small>
+<small>Fungují kritické části webu i když ho necháte běžet? Pomůže třeba [Selenium](http://www.seleniumhq.org/) nebo [Testomato](http://www.testomato.com/).</small>
