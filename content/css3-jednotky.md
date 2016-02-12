@@ -1,7 +1,8 @@
-Nové CSS3 jednotky – `rem`, `vw`, `vh`
-============
+Nové CSS3 jednotky – rem, vw, vh
+================================
 
-### `rem`
+rem
+---
 
 Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. *„root-emka“* jsou variantou známé jednotky `em`. Od běžných `em` se liší tím, že nevychází z velikosti fontu rodičovského elementu.
 
@@ -49,7 +50,8 @@ Fallback je lepší nechat si generovat automaticky, například pomocí CSS pre
 Více o podpoře v prohlížečích: [caniuse.com/rem](http://caniuse.com/rem)
 
 
-## Jednotky viewportu: `vw`, `vh`, `vmin`, `vmax`
+Jednotky viewportu: vw, vh, vmin, vmax
+--------------------------------------
 
 Umožňují definovat rozměry v CSS relativně k velikosti viewportu, zjednodušeně řečeno výšce nebo šířce okna.
 
