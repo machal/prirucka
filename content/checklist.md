@@ -1,10 +1,6 @@
-# Kontrolní seznam frontend kodéra
+# Webařův kontrolní seznam
 
-Co všechno by měl [webový kodér](/prirucka/webovy-koder) zkontrolovat než odevzdá svou práci?
-
-Napsáno hlavně pro prezentační weby. U webových aplikací bude řada věcí jinak.
-
----
+Co všechno by měl autor webu zkontrolovat než odevzdá svou práci?
 
 ## Obsah a HTML
 
@@ -100,3 +96,5 @@ Napsáno hlavně pro prezentační weby. U webových aplikací bude řada věcí
 <small>Pravidelně upozorní na časté chyby z pohledu Google. [Přidejte tam web](https://www.google.com/webmasters/tools/) hned po spuštění.</small>
 - Funkční testování  
 <small>Fungují kritické části webu i když ho necháte běžet? Pomůže třeba [Selenium](http://www.seleniumhq.org/) nebo [Testomato](http://www.testomato.com/).</small>
+
+Poznámka: Napsáno hlavně pro [webové kodéry](/prirucka/webovy-koder) a prezentační weby. U webových aplikací bude řada věcí jinak.
