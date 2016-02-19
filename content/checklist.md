@@ -1,6 +1,6 @@
-# Webařův kontrolní seznam
+# Checklist před spuštěním webu
 
-Co všechno by měl autor webu zkontrolovat než odevzdá svou práci?
+K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-checklist.pdf).
 
 ## Obsah a HTML
 
