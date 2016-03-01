@@ -18,30 +18,28 @@ Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy. N
 
 ## Node.js a NPM
 
-NPM je balíčkovací systém Node.js – musíte stáhnout a nainstalovat celé Node.
+NPM (Node Package Manager) je balíčkovací systém Node.js. To musíte stáhnout a nainstalovat jako prnví. 
 
-### Jste na Windows? Úplně nejdřív tohle
+Jednoduchý postup instalace pro všechny platformy je popsaný na webu Node.js: [nodejs.org/en/download/](https://nodejs.org/en/download/). Mrkneme ale i na lepší postupy.
 
-1. Hodí se [nainstalovat Visual Studio Code](https://www.visualstudio.com/products/code-vs). Editor kódu, který zároveň nainstalujte podporu Node.js pro Windows.
+### Postup pro Windows: VS Code a Git
+
+1. Hodí se [nainstalovat Visual Studio Code](https://www.visualstudio.com/products/code-vs). Editor kódu, který je prý moc fajn, ale potřebovat ho nebudeme. Zároveň nám totiž jednoduchým způsobem nainstalujte podporu Node.js pro Windows.
 2. [Nainstalovat Git](http://git-scm.com/downloads) do příkazové řádky. V kroku „Adjusting your PATH environment“ vybrat „Run Git from the Windows Command Prompt“.
 
-A teď všichni, bez ohledu na platformu. Globálně nainstalujeme Node.js. Všechny způsoby jsou tady: [nodejs.org/en/download/](https://nodejs.org/en/download/)
+### Postup pro Mac OS a Linux: 
 
-Jestli vše funguje, zjistíte příkazem pro zobrazení verze NPM:
+- Ideální varianta – [pomocí NVM (Node Version Manager)](https://github.com/creationix/nvm). Nainstalovat jej není úplně přímočaré, ale má to dvě výhody. Na vývojářské mašině vám může souběžně běžet více verzí Node a NPM najednou. A pak – ušetříte si opruz s administrátorskými právy z méně optimálních variant…
+- [Druhá možnost](https://docs.npmjs.com/getting-started/fixing-npm-permissions) je buď hraní si s uživatelskými oprávněními ve výchozím NPM adresáři nebo jeho umístění jinam.
+- Třetí, úplně nejhorší varianta, pak je spouštění instalace balíčků v administrátorském režimu (`sudo npm install …`) pokaždé, když vám NPM zahlásí problém s právy (`npm ERR! Attempt to unlock …`). Autor NPM o tomhle postupu údajně prohlásil, že je bezpečný jako nechat se stříhat motorovou pilou. Což sedí.
+
+Máte nainstalováno? Jestli vše funguje, zjistíte příkazem pro zobrazení verze NPM:
 
 ```bash
 npm -v
 ```
 
 Všechny ostatní potvůrky se pak instalují jako Node balíčky.
-
-Na Macu se občas radí všechny NPM příkazy spouštět jako administrátor (`sudo npm …`). To je [není dobré z hlediska bezpečnosti](https://gist.github.com/leommoore/4420860#important-security-note). Raději si aktuálnímu uživateli přidejte práva k zápisu do `usr/local`:
-
-```bash
-sudo chown -R $USER /usr/local
-```
-
-Konec bezpečnostní odbočky. Pojďme instalovat užitečné balíčky.
 
 ## Grunt, Bower a další Node balíčky
 
