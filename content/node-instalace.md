@@ -18,7 +18,7 @@ Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy. N
 
 ## Node.js a NPM
 
-NPM (Node Package Manager) je balíčkovací systém Node.js. To musíte stáhnout a nainstalovat jako prnví. 
+NPM (Node Package Manager) je balíčkovací systém Node.js. To musíte stáhnout a nainstalovat jako první. 
 
 Jednoduchý postup instalace pro všechny platformy je popsaný na webu Node.js: [nodejs.org/en/download/](https://nodejs.org/en/download/). Mrkneme ale i na lepší postupy.
 
@@ -27,7 +27,7 @@ Jednoduchý postup instalace pro všechny platformy je popsaný na webu Node.js:
 1. Hodí se [nainstalovat Visual Studio Code](https://www.visualstudio.com/products/code-vs). Editor kódu, který je prý moc fajn, ale potřebovat ho nebudeme. Zároveň nám totiž jednoduchým způsobem nainstalujte podporu Node.js pro Windows.
 2. [Nainstalovat Git](http://git-scm.com/downloads) do příkazové řádky. V kroku „Adjusting your PATH environment“ vybrat „Run Git from the Windows Command Prompt“.
 
-### Postup pro Mac OS a Linux: 
+### Postup pro Mac OS a Linux: NVM nebo hraní s uživatelskými právy 
 
 - Ideální varianta – [pomocí NVM (Node Version Manager)](https://github.com/creationix/nvm). Nainstalovat jej není úplně přímočaré, ale má to dvě výhody. Na vývojářské mašině vám může souběžně běžet více verzí Node a NPM najednou. A pak – ušetříte si opruz s administrátorskými právy z méně optimálních variant…
 - [Druhá možnost](https://docs.npmjs.com/getting-started/fixing-npm-permissions) je buď hraní si s uživatelskými oprávněními ve výchozím NPM adresáři nebo jeho umístění jinam.
