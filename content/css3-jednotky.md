@@ -68,7 +68,7 @@ Příkladem budiž roztažení výšky layoutu stránky na celou výšku okna pr
 
 ```css
 .container {
-  width: 100vh;
+  height: 100vh;
 }
 ```
 
