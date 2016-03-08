@@ -2,7 +2,7 @@
 
 Nezdá se to, ale SVG (Scalable Vector Graphics) je prastarý vektorový formát, jehož první standard pochází z roku 2001.
 
-Jeho širšímu uplatnění dlouho bránil Microsoft, který pomocí Internet Exploreru až do verze 8 razil vlastní formát VML. To už jsou ale loňské sněhy a dávno to neplatí.
+Jeho širšímu uplatnění dlouho bránil Microsoft, který pomocí Internet Exploreru až do verze 8 razil vlastní formát VML. To už jsou ale loňské sněhy a dávno to neplatí. SVG má dnes vynikající podporu a slibuje dříve nevídané možnosti pro rozhraní webových aplikací.
 
 ## SVG je prostě XML
 
@@ -33,12 +33,12 @@ Malá nevýhoda je nutnost řešit [fallbacky ve starších prohlížečích](sv
 
 ## Využití? Od ikonek až po interaktivní schémata
 
-Formát má velmi širokou škálu využití. Výborně se samozřejmě hodí na pro vkládání logotypů nebo ikonek. U těch jde samozřejmě o principiálně správnější řešení než vkládání pomocí [ikonfontů](https://css-tricks.com/examples/IconFont/), které je potřeba považovat za dočasný hack. 
+Formát má velmi širokou škálu nasazení. Výborně se samozřejmě hodí na vkládání logotypů nebo ikonek. U těch jde samozřejmě o principiálně správnější řešení než vkládání pomocí [ikonfontů](https://css-tricks.com/examples/IconFont/), které je potřeba považovat za dočasný hack. 
 
 Další možnosti:
 
 - [stylování vzhledu pomocí CSS](http://tympanus.net/codrops/2013/11/27/svg-icons-ftw)
-- [složitější filtry](http://tympanus.net/codrops/css_reference/filter/) na objekty včetně fotek 
+- [složitější filtry](http://tympanus.net/codrops/css_reference/filter/) na objektech, včetně fotek 
 - [efekty textu](http://tympanus.net/codrops-playground/yoksel/KFxwTxTA/editor/html,css,result)
 - [interakční efekty](http://tympanus.net/Development/CreativeGooeyEffects/index.html)
 - [animace](http://tutorials.jenkov.com/svg/svg-animation.html)
@@ -49,7 +49,7 @@ Na jednom konci škály užití, kde leží ikony, tedy vektory logicky nahrazuj
 
 ## Možnost přímého vložení jako `<svg>`
 
-Kromě běžného vložení do stylů přes `background-image` a do HTML přes `<img>` je tu zcela nová možnost vložení přímo přes značku `<svg>`. Tím vzniká zcela nové hříště pro ovlivňování pomocí CSS nebo JS.
+Kromě běžného vložení do stylů přes `background-image` a do HTML přes `<img>` je tu zcela nová možnost vložení přímo přes značku `<svg>`. Tím se vykolíkovalo hřiště pro úpravu vektorů pomocí CSS nebo JS.
 
 Objekt v příkladu uvedeném výše můžeme po najetí myši obarvit:
 

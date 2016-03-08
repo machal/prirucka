@@ -1,8 +1,8 @@
 # Picturefill
 
-[Polyfill](polyfill.md), který dokáže zařídit podporu nově standardizovaných [responzivních obrázků](responzivni-obrazky.md) – nových atributů `srcset` a `sizes` a nové značky `<picture>` – ve všech prohlížečích. 
+[Polyfill](polyfill.md), který dokáže zařídit podporu nově standardizovaných [rozšíření obrázků pro responzivní účely](responzivni-obrazky.md) – atributů `srcset` a `sizes` a nové značky `<picture>` – ve všech prohlížečích. 
 
-[Picturefill](https://scottjehl.github.io/picturefill/) využívá standardizované syntaxe. Tady je třeba příklad zápisu pro [srcset a sizes](srcset-sizes.md):
+[Picturefill](https://scottjehl.github.io/picturefill/) využívá standardizované syntaxe. Tady je příklad zápisu pro [srcset a sizes](srcset-sizes.md):
 
 ```html
 <img
@@ -27,13 +27,13 @@ Kroutíte hlavou nad použitím `<video>` tagu? Ano, to je [obezlička](http://s
 
 ## Musíte vynechat `src`
 
-Nic není zadarmo, znáte to. Drobná nevýhoda Picturefillu spočívá v doporučení vynechat `src` atribut, aby prohlížeče bez podpory `<picture>` nestáhly dva obrázky. 
+Nic není zadarmo, znáte to. Drobná nevýhoda Picturefillu spočívá v nutnosti vynechat `src` atribut, aby prohlížeče bez podpory `<picture>` nestáhly dva obrázky. 
 
-Má to dva negativní důsledky. Prohlížeče bez Javascriptu uvidí místo obrázku jen alternativní text. A taky nebude možné vložit obrázek při sdílení stránky na Facebooku. 
+Má to dva negativní důsledky. Prohlížeče bez Javascriptu uvidí místo obrázku jen alternativní text. A taky nebude možné vložit obrázek při sdílení stránky na Facebooku. Obojí obvykle není žádná katastrofa.
 
-Vynechání `src` ale nemá žádné zásadní negativní dopady na čtení stránky slepeckými čtečkami, ani na [ukládání obrázků do Google Images](http://www.stefan-weiss.net/responsive-image-seo.htm).
+Vynechání `src` taky nemá žádné zásadní negativní dopady na čtení stránky slepeckými čtečkami, ani na [ukládání obrázků do Google Images](http://www.stefan-weiss.net/responsive-image-seo.htm).
 
-Jasně, Picturefill má pár drobných nevýhod, ale dobře se zamyslete co vám jeho použití přinese. Vyřešení problému s datový objemem obrázků na mobilech, `device-pixel-ratio` a dalšími obtížemi moderního frontendu za to obvykle stojí.
+Jasně, Picturefill má tyhle nevýhody, ale dobře se zamyslete co vám jeho použití přinese. Vyřešení problému s datový objemem obrázků na mobilech nebo `device-pixel-ratio` za ty nevýhody obvykle stojí.
 
 ## Čtěte dále
 

@@ -1,14 +1,14 @@
 # SVG fallbacky
 
-Pojďme prozkoumat náhradní řešení pro prohlížeče, které [SVG](svg.md) neumí. Aktuálně se to týká jen Internet Exploreru ve verzi 8 a Android Browseru 2.3 a starších. V ČR to budou 2 - 4 % uživatelů.
+Pojďme prozkoumat náhradní řešení pro prohlížeče, které neumí [SVG](svg.md). Aktuálně se to týká jen Internet Exploreru ve verzi 8 a Android Browseru 2.3 a starších. V ČR to budou 2 - 4 % uživatelů.
 
-Jako fallback do těchto prohlížečů často posíláme PNG bitmapu. Proto ji musíme umět nějak elegantně vytvořit.
+Jako fallback do těchto prohlížečů najčastěji posíláme PNG bitmapu. Proto se ji musíme nejprve naučit nějak elegantně vytvořit.
 
 ## Jak generovat PNG alternativy
 
 Možností je hodně. Od ruční konverze pomocí editoru nebo [online nástrojů](https://cloudconvert.org/svg-to-png), přes generování na serveru až po [Grunt](grunt.md) na lokále, který používám já. U mě jde konkrétně o kombinaci dvou [pluginů](grunt-pluginy.md): [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) pro zmenšení SVG a [grunt-svg2png](https://github.com/dbushell/grunt-svg2png) pro generování PNG alternativ.
 
-PNG obrázky bychom měli, teď se potřebujeme naučit detekovat podporu SVG.
+PNG obrázky bychom měli, teď se potřebujeme naučit detekovat podporu vektorového formátu.
 
 ## Detekce SVG v prohlížečích
 
@@ -16,13 +16,13 @@ PNG obrázky bychom měli, teď se potřebujeme naučit detekovat podporu SVG.
 
 Tady je kód, který jakmile zjistí, že prohlížeč SVG neumí, přidá k dokumentu třídu `.no-svg`. Ta se nám bude hodit v CSS.
 
-```
+```javascript
 if (!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1")) {
   document.documentElement.className = "no-svg";
 }
 ```
 
-Stejný kód používá i detekční knihovna [Modernizr](http://modernizr.com/), pokud jí dáváte přednost. Modernizr naví umí zjišťovat podporu pro jednotlivé vlastnosti SVG.
+Stejný kód používá i detekční knihovna [Modernizr](http://modernizr.com/). Ta navíc umí zjišťovat podporu pro jednotlivé vlastnosti SVG.
 
 Rozebereme si teď jednotlivé způsoby vkládání SVG a možnosti fallbacků pro ně.
 
@@ -32,7 +32,7 @@ Do CSS budeme dávat asi hlavně ikony a dekorativní grafiku jako je třeba vzh
 
 Vybaveni kouskem detekčního javascriptu, který nám přidává třídu `.no-svg`, můžeme vložit SVG ikonku s fallbackem do PNG:
 
-```
+```css
 .icon {
   background-image: url('icon.svg');
 }
@@ -52,15 +52,16 @@ Na webu asi najdete i další fallback řešení. [Například](http://jecas.cz/
 
 ### Pomocí detekce vlastnosti
 
-Ve druhé variantě se v HTML tváříte, že SVG zvládají všechny prohlížeče:
+V HTML se tváříte, že SVG zvládají všechny prohlížeče:
 
-```
-<img src="logo.svg" width="100" height="100" alt="…">
+```html
+<img src="logo.svg" 
+  width="100" height="100" alt="…">
 ```
 
 V javascriptovém kódu pak obstaráte výměnu koncovky souboru v `src` v momentě kdy zjistíte, že prohlížeč vektorový formát nezvládne:
 
-```
+```javascript
 if (!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1")) {
   var imgs = document.getElementsByTagName('img');
   var endsWithDotSvg = /.*\.svg$/
@@ -80,7 +81,7 @@ Tohle používám na Vzhůru dolů. Příklad s SVG v HTML na CodePenu: [cdpn.io
 
 Málo se ví, že polyfil [Picturefill](picturefill.md) umí – kromě rozchození [responzivních obrázků](responzivni-obrazky.md) ve všech prohlížečích – také detekovat SVG. Pokud už na stránce Picturefill používáte pro jiné účely, tohle se vám bude líbit:
 
-```
+```html
 <picture>
   <source type="image/svg+xml" srcset="logo.svg">
   <img src="logo.png" alt="…">
@@ -95,11 +96,12 @@ Tady je to složitější, protože dovnitř HTML můžete chtít SVG vložit ja
 
 Tady je potřeba zjišťovat podporu trochu jiným způsobem. Můžeme použít detekci z [CSS Tricks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/):
 
-```
+```javascript
 function supportsSvg() {
   var div = document.createElement('div');
   div.innerHTML = '<svg/>';
-  return (div.firstChild && div.firstChild.namespaceURI) == 'http://www.w3.org/2000/svg';
+  return (div.firstChild && div.firstChild.namespaceURI) 
+    == 'http://www.w3.org/2000/svg';
 };
 ```
 
@@ -107,7 +109,7 @@ function supportsSvg() {
 
 Výhodné zejména v situaci, kdy v SVG máte interaktivnější nebo strukturovanější typ obsahu.
 
-```
+```html
 <svg>
   <desc>
     <div class="svg-fallback">
@@ -119,7 +121,7 @@ Výhodné zejména v situaci, kdy v SVG máte interaktivnější nebo strukturov
 </svg>
 ```
 
-Značka `<desc>` slouží pro popsání obsahu SVG slepeckým čtečkám. Byla by proto chyba vložit do ní varování typu „Váš prohlížeč nepodporuje SVG“. Vložte tam prostě obsah v alternativní podobě. To je perfektní řešení pro čtečky i staré prohlížeče.
+Značka `<desc>` slouží pro popsání obsahu SVG slepeckým čtečkám. Byla by proto chyba vložit do ní varování typu „Váš prohlížeč nepodporuje SVG“. Dejte tam prostě obsah v alternativní podobě. To je perfektní řešení pro čtečky i staré prohlížeče.
 
 Jo – a pozor na `<img>`. Ten uvnitř `<desc>` být může, ale stáhnou ho všechny prohlížeče. Tedy i ty, které namísto obrázku vykreslí SVG obsah.
 
