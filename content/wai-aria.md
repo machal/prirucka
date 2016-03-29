@@ -1,13 +1,13 @@
-# Přístupný web pomocí orientačních bodů WAI-ARIA 
+# Orientační body WAI-ARIA pro přístupnější web
 
-[WAI-ARIA](https://www.w3.org/TR/wai-aria/) je technologie umožňující popsat obsah nebo chování webové aplikace tak, aby byla snadno dostupná i hendikepovaným uživatelům.
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/) je technologie umožňující popsat obsah nebo chování webů tak, aby byly snadno dostupné i zrakově nebo jinak postiženým uživatelům.
 
 Asistivní technologie – občas  se nepřesně říká slepecké čtečky –  umožňují provoz ve dvou režimech: 
 
-- *Pasivně-sekvenční*, kdy web prochází pomocí nadpisové osnovy dokumentu. Je to příjemné asi jako ovládání webu tabulátorem. Takže jde to, ale dře to.
+- *Pasivně-sekvenční*, kdy web prochází pomocí nadpisové osnovy dokumentu. Pro uživatele je to příjemné asi jako ovládání webu tabulátorem. Takže jde to, ale dře to.
 - Po hendikepovaného uživatele je pohodlnější *strukturovaný* režim, ve kterém čtečka nabízí konkrétní oblasti stránky.
 
-Ten druhý režim právě  umožňují WAI-ARIA orientační body (landmarks). Přidání do webu je otázka chvilky a pomůžete tím mnoha lidem, takže pokud jste ještě nezačali, čtěte dál. Do HTML prostě přidáte pár atributů navíc.  
+Ten druhý režim právě  umožňují WAI-ARIA orientační body (landmarks). Přidání do webu je otázka chvilky a pomůžete tím mnoha lidem, takže pokud je ještě nepoužíváte, čtěte dál. Do HTML prostě přidáte pár atributů navíc.  
 
 ## Tyhle orientační body se určitě naučte
 
@@ -22,18 +22,18 @@ Pokud teď v hlavě nemáte kapacitu na všechny, naučte se zatím `navigation`
 
 ## Další možnosti WAI-ARIA
 
-Hlavně pro potřeby psaní webových aplikací se kromě orientačních bodů hodí znát i další typy ARIA atributů. 
+Hlavně pro potřeby psaní webových aplikací se kromě orientačních bodů hodí znát i další typy ARIA atributů:
 
-- [Role pro widgety](https://www.w3.org/TR/wai-aria/roles#widget_roles_header) – označení komponent uživatelského rozhraní. Například  `role="alert"` pro časově omezené upozornění uživateli. Nebo `tab` a `tabpanel` pro vyznačení záložkové navigace uvnitř stránky a `menu`, `menuitem`, `menubar` pro dropdown navigaci.
-- [Role pro strukturu dokumentu](https://www.w3.org/TR/wai-aria/roles#document_structure_roles_header) – například `role="article"` pro označení atomické části hlavního obsahu. Může to být článek v seznamu článků nebo položka ve výpisu produktů. Nebo `presentation` pro popis elementu, který je použitý jen pro prezentaci obsahu a nechceme zachovat jeho sémantický význam – třeba `<table role="presentation">`. Krásné, že?
+- [Označení widgetů](https://www.w3.org/TR/wai-aria/roles#widget_roles_header) – přidání významu komponentám uživatelského rozhraní. Například  `role="alert"` pro časově omezené upozornění uživateli. Nebo `tab` a `tabpanel` pro vyznačení záložkové navigace uvnitř stránky a `menu`, `menuitem`, `menubar` pro dropdown navigaci.
+- [Označení struktury dokumentu](https://www.w3.org/TR/wai-aria/roles#document_structure_roles_header) – například `role="article"` pro označení atomické části hlavního obsahu. Může to být článek v seznamu článků, položka ve výpisu produktů nebo třeba `role="presentation"` pro popis elementu, který je použitý jen pro prezentaci obsahu a nechceme zachovat jeho sémantický význam. Jak se vám líbí třeba `<table role="presentation">`? Krásné, že?
 
-Ani tím ale možnosti WAI-ARIA nekončí. Orientační body patří do kategorie rolí. Dalšími kategoriemi ještě jsou [stavy a vlastnosti](https://www.w3.org/TR/wai-aria/states_and_properties). Možností jejich využití v aplikacích je hodně. Příkladem budiž [hlášení počtu zbývajících znaků](https://www.youtube.com/watch?v=MOx9cX_nQMk) v textovém poli formuláře. Pokud vás to zajímá více, [doporučím seriál Radka Pavlíčka na Zdrojáku](https://www.zdrojak.cz/serialy/pristupnost-dynamickych-webovych-aplikaci/). A jestli chcete vidět praktické ukázky, [tady](http://heydonworks.com/practical_aria_examples/) jich je devět moc pěkných.
+Ani tím ale možnosti WAI-ARIA nekončí. Orientační body patří do kategorie rolí. Dalšími kategoriemi ještě jsou [stavy a vlastnosti](https://www.w3.org/TR/wai-aria/states_and_properties). Možností jejich využití v aplikacích je hodně. Příkladem budiž [hlášení počtu zbývajících znaků](https://www.youtube.com/watch?v=MOx9cX_nQMk) v textovém poli formuláře. Pokud vás to zajímá více, [doporučím seriál Radka Pavlíčka na Zdrojáku](https://www.zdrojak.cz/serialy/pristupnost-dynamickych-webovych-aplikaci/). 
 
 Sami vidíte, že WAI-ARIA je sémanticky (významově) daleko bohatší než běžné HTML. Kromě pomoci znevýhodněným uživatelům je tedy možné atributy využít v CSS nebo Javascriptu jako selektor.
 
 ## Pár příkladů z Bootstrapu
 
-Pojďme si užitečnost ARIA atributů ukázat na dvou komponentách z Bootstrapu 4. První bude [skupina tlačítek](http://v4-alpha.getbootstrap.com/components/button-group/):
+Pojďme si užitečnost ARIA atributů ukázat na dvou komponentách [z Bootstrapu 4](/blog/39-bootstrap-4). První bude [skupina tlačítek](http://v4-alpha.getbootstrap.com/components/button-group/):
 
 ```html
 <div class="btn-group" role="group" aria-label="Zvolte akci">
@@ -42,7 +42,7 @@ Pojďme si užitečnost ARIA atributů ukázat na dvou komponentách z Bootstrap
 </div>
 ```
 
-`role="group"` tady asistivním technologií sděluje, že jde o skupinu prvků. Prvek samotný se pak nezařadí do struktury sekvenčního procházení stránky. `aria-label` tady je namísto skrytého nadpisu (cože, vy ještě pro přístupnost používáte skryté nadpisy?) – je to text, který asistivní technologie přečte pro označení téhle části stránky.
+Atribut `role="group"` tady asistivním technologií sděluje, že jde o skupinu prvků. Prvek samotný se pak nezařadí do struktury sekvenčního procházení stránky. `aria-label` tady je namísto skrytého nadpisu (cože, vy ještě pro přístupnost používáte skryté nadpisy?) – je to text, který asistivní technologie přečte pro označení téhle části stránky.
 
 A ještě kousek z bootstrapího [dropdown menu](http://v4-alpha.getbootstrap.com/components/dropdowns/):
 
@@ -60,7 +60,9 @@ A ještě kousek z bootstrapího [dropdown menu](http://v4-alpha.getbootstrap.co
 </div>
 ```
 
-`aria-haspopup="true"` říká, že po aktivaci tohoto elementu vyskočí jiný, který je ve vizuální hierarchii výše. Prostě *popup*.  `aria-expanded="false"` říká, že tohle je element sice „rozkliknutelný“, ale teď „nerozkliknutý“. Použitelné třeba při „rozklikávání“ stromových struktur. `aria-labelledby="dropdown-1"` je sestra od `aria-label`. Tahle ale jen říká, kde že asistivní technologie v existující struktuře ten nadpis sekce najde.
+Atribut `aria-haspopup="true"` říká, že po aktivaci tohoto elementu vyskočí jiný, který je ve vizuální hierarchii výše. Prostě *popup*.  `aria-expanded="false"` říká, že tohle je element sice „rozkliknutelný“, ale teď „nerozkliknutý“. Použitelné třeba při „rozklikávání“ stromových struktur. `aria-labelledby="dropdown-1"` je sestra od `aria-label`. Tahle ale jen říká, kde asistivní technologie najde popis sekce v existující struktuře HTML.
+
+Chcete další praktické ukázky bez Bootstrapu? [Tady](http://heydonworks.com/practical_aria_examples/) jich je devět moc pěkných.
 
 
 ## Můžu místo `role` použít HTML5 tagy?
@@ -71,3 +73,6 @@ Co třeba `<nav>` namísto `<div role="navigation">`? To bych nedělal. U HTML5 
 
 ARIA role umí zobrazit rozšíření [Web Developer](http://chrispederick.com/work/web-developer/), které je dostupné pro Chrome, Firefox nebo Operu. Na Apple výrobcích to jde „z pohledu“ hendikepovaného uživatele testovat pomocí nativního rozšíření Voice Over ([OS X](http://www.apple.com/accessibility/osx/voiceover/), [iOS](http://www.apple.com/accessibility/ios/)).
 
+Na závěr to všechno ukážu v tříminutovém videu:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/sO_xOGgrE2Y" frameborder="0" allowfullscreen></iframe>

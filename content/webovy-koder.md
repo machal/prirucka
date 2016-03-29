@@ -47,7 +47,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, [frontend designér]
 
 #### Přístupnost
 
-* **[nové] **Standard [WAI-ARIA 1.0](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/)
+* **[nové] **Standard [WAI-ARIA](wai-aria.md).
 * Standard [WCAG 2.0](http://blindfriendly.cz/wcag20checklist/). [Vyhláška o přístupnosti](http://www.mvcr.cz/clanek/vyhlaska-c-64-2008-sb-o-forme-uverejnovani-informaci-souvisejicich-s-vykonem-verejne-spravy-prostrednictvim-webovych-stranek-pro-osoby-se-zdravotnim-postizenim-vyhlaska-o-pristupnosti-10.aspx) pro weby státní správy.
 * [Handicapovaní uživatelé](http://pristupnost.nawebu.cz/texty/hendikepovani-uzivatele.php): jejich potřeby z hlediska práce s webem; jak uživatelé ovládají zařízení a prohlížeče.
 * Přístupný kód: techniky kódování pro zpřístupnění webových stránek; oddělení struktury od vizuální prezentace; ovládání [pouze z klávesnice](http://www.zdrojak.cz/clanky/pristupnost-ria-strukturovani-dokumentu-a-pristupnost-z-klavesnice/); správné [skrývání obsahu](http://a11yproject.com/posts/how-to-hide-content/); textové alternativy; přístupnost obsahu pro vnímání více smysly; ošetření dynamických změn obsahu.
