@@ -1,10 +1,10 @@
-# Zpětně kompatibilní SVG pomocí Grunticon
+# Grunticon: SVG s vynikající zpětnou kompatibilitou
 
-[Grunticon](http://www.grunticon.com/) je sada nástrojů pro maximalizaci zpětné kompatibility [SVG vektorových obrázků](svg.md). Kombinuje výhodu [přímého vložení vektoru](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do tagu `<svg>` s kompatibilitou až do Internet Exploreru ve verzi 6.
+[Grunticon](http://www.grunticon.com/) je sada nástrojů pro maximalizaci zpětné kompatibility [SVG](svg.md). Nabízí výhodu [přímého vložení vektorového obrázku](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do tagu `<svg>` a kompatibilitu až do Internet Exploreru ve verzi 6.
 
 V „balení“ najdete [Grunt](grunt.md) úlohu pro zpracování sady SVG obrázků a javascriptovou knihovnu pro ošetření fallbacků. Grunt úloha vygeneruje PNG verze obrázků pro staré prohlížeče a tři verze souborů se styly. Kouskem javascriptu se pak rozhoduje, který typ fallbacku se použije.
 
-Připravil jsem malé [Grunticon demo](https://github.com/machal/demo-grunticon). Pojďme si ukázat detailní postup implentace.
+Připravil jsem malé [Grunticon demo](https://github.com/machal/demo-grunticon). Pojďme si ukázat detailní postup implementace.
 
 ## 1. Nainstalujte Grunticon
 
@@ -57,7 +57,7 @@ V definovaných adresářích by se měly objevit nové soubory. V `dest` adres�
 
 ## 3. Vše vložíte do HTML
 
-Ikonu vložíte jen pomocí třídy z CSS co vygeneruje Grunticon – tady `icon-bootstrap`. Pokud stojíte o vložení do DOMu pomocí značky `<svg>`, stačí použít parametr `data-grunticon-embed`:
+Ikonu vložíte jen třídou ze stylu co vygeneruje Grunticon – v demonstračním příkladu třeba `icon-bootstrap`. Pokud stojíte o vložení do DOMu pomocí značky `<svg>`, stačí použít parametr `data-grunticon-embed`:
 
 ```html
 <div class="icon icon-bootstrap" 
@@ -130,7 +130,7 @@ V CSS pak použieje [známým trik](http://kratce.vzhurudolu.cz/post/44617199471
 }
 ```
 
-Vkládané SVG se samo o sobě nepřizpůsobuje rodičovskému kontejneru, proto je potřeba zapnout ještě:
+Vkládané SVG se samo o sobě nepřizpůsobuje rodičovskému kontejneru, proto je potřeba zapnout ještě tohle:
 
 ```css
 .icon svg {
