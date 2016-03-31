@@ -1,10 +1,12 @@
 # Grunticon: SVG s vynikající zpětnou kompatibilitou
 
-[Grunticon](http://www.grunticon.com/) je sada nástrojů pro maximalizaci zpětné kompatibility [SVG](svg.md). Nabízí výhodu [přímého vložení vektorového obrázku](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do tagu `<svg>` a kompatibilitu až do Internet Exploreru ve verzi 6.
+[Grunticon](http://www.grunticon.com/) je sada nástrojů pro maximalizaci zpětné kompatibility [SVG](svg.md). 
 
-V „balení“ najdete [Grunt](grunt.md) úlohu pro zpracování sady SVG obrázků a javascriptovou knihovnu pro ošetření fallbacků. Grunt úloha vygeneruje PNG verze obrázků pro staré prohlížeče a tři verze souborů se styly. Kouskem javascriptu se pak rozhoduje, který typ fallbacku se použije.
+Nabízí [přímé vložení vektorového obrázku](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do značky `<svg>` pomocí javascriptu. To vám umožní ovlivňovat části SVG pomocí stylů a skriptů podobně jako to děláte u jiných části stránky. Jako bonus od Grunticon dostanete kompatibilitu až do Internet Exploreru ve verzi 6. Pamatujete si na něj ještě?
 
-Připravil jsem malé [Grunticon demo](https://github.com/machal/demo-grunticon). Pojďme si ukázat detailní postup implementace.
+V „balení“ najdete [Grunt](grunt.md) úlohu pro zpracování sady SVG obrázků a javascriptovou knihovnu pro ošetření fallbacků. Úloha vygeneruje PNG verze obrázků pro staré prohlížeče a tři verze souborů se styly. Kouskem skriptu se pak rozhoduje, který typ fallbacku se použije.
+
+Připravil jsem malé [demo využití Grunticon](https://github.com/machal/demo-grunticon). Pojďme to vše ukázat v detailním postupu implementace.
 
 ## 1. Nainstalujte Grunticon
 
@@ -12,7 +14,7 @@ Připravil jsem malé [Grunticon demo](https://github.com/machal/demo-grunticon)
 npm install grunt-grunticon --save-dev
 ```
 
-Pokud nemáte nainstalovaný Node.js ekosystém, [začněte tady](node-instalace.md).
+Předtím možná budete potřebovat [rozchodit Node.js ekosystém](node-instalace.md) na svém počítači.
 
 ## 2. Nastavte Grunt úlohu 
 
@@ -44,8 +46,8 @@ grunticon: {
 - `compressPNG: true` – výstupní  PNG alternativy se komprimují.
 - `pngpath` – cesta k PNG alternativám z pohledu CSS.
 - `datasvgcss` – styl pro moderní prohlížeče.
-- `datapngcss` – kam se uloží styl pro prohlížeče co neumí inline SVG.  Týká se IE8, Opery Mini nebo Androidu do verze 2.3.
-- `urlpngcss` –  styl pro prohlížeče co neumí inline SVG, ani [data-uri](http://jecas.cz/data-uri). Týká se třeba IE7 a IE6.
+- `datapngcss` – styl pro prohlížeče co neumí inline SVG.  Týká se dědka IE8, Opery Mini nebo Androidu do verze 2.3.
+- `urlpngcss` –  styl pro prohlížeče co neumí inline SVG, ani [data-uri](http://jecas.cz/data-uri). Týká se třeba IE7 a IE6. Pradědka a prapradědka.
 
 Grunt úlohu pak prostě spustíte:
 
@@ -55,9 +57,9 @@ grunt grunticon
 
 V definovaných adresářích by se měly objevit nové soubory. V `dest` adresáři je pak [náhledový soubor](https://github.com/machal/demo-grunticon/blob/master/dist/grunticon/preview.html), kde si vygenerované můžete hned zkusit.
 
-## 3. Vše vložíte do HTML
+## 3. Úprava HTML
 
-Ikonu vložíte jen třídou ze stylu co vygeneruje Grunticon – v demonstračním příkladu třeba `icon-bootstrap`. Pokud stojíte o vložení do DOMu pomocí značky `<svg>`, stačí použít parametr `data-grunticon-embed`:
+Ikonu vložíte jednoduše třídou ze stylu co vygeneruje Grunticon – v demonstračním příkladu je to třeba `.icon-bootstrap`. Pokud stojíte o vložení do DOMu pomocí značky `<svg>`, stačí použít parametr `data-grunticon-embed`:
 
 ```html
 <div class="icon icon-bootstrap" 
@@ -65,7 +67,7 @@ Ikonu vložíte jen třídou ze stylu co vygeneruje Grunticon – v demonstračn
 </div>
 ```
 
-Z HTML hlavičky stáhnete skript, který vám Grunticon vygeneruje pro načítání ikonek a zavoláte funkci `grunticon()`:
+Do hlavičky přidáte skript, který vám Grunticon vygeneruje pro načítání ikonek a zavoláte funkci `grunticon()`:
 
 ```html
 <script src="/js/grunticon.loader.js"></script>
@@ -81,14 +83,14 @@ grunticon(
   ],
   grunticon.svgLoadedCallback
 );
-<script>
+</script>
 ```
 
 Nezapomeňte uvést i alternativu pro prohlížeče bez běžícího javascriptu:
 
 ```html
 <noscript>
-  <link href="/css/svg-fallback.css" rel="stylesheet">
+  <link href="/css/icons-png-bg.css" rel="stylesheet">
 </noscript>
 ```
 
@@ -107,7 +109,7 @@ Zachování poměru stran se hodí pro krátký čas než se načtou SVG ikony a
 </p>
 ```
 
-V CSS pak použieje [známým trik](http://kratce.vzhurudolu.cz/post/44617199471/responzivn%C3%AD-m%C3%A9dia-se-zachov%C3%A1n%C3%ADm-pom%C4%9Bru-stran) pro vkládaná média:
+V CSS pak použijeme [známým trik](http://kratce.vzhurudolu.cz/post/44617199471/responzivn%C3%AD-m%C3%A9dia-se-zachov%C3%A1n%C3%ADm-pom%C4%9Bru-stran) pro vkládaná média:
 
 ```css
 .icon-container {
@@ -141,7 +143,7 @@ Vkládané SVG se samo o sobě nepřizpůsobuje rodičovskému kontejneru, proto
 
 ## Velikost alternativních PNG obrázků
 
-Šířka a výška PNG obrázků pro starší prohlížeče se bere z hodnot, které máte ve zdrojových obrázcích u značky `<svg>`.  Buď si je tedy nastavte podle fixní šířky layoutu ve starších prohlížečích, nebo se bez nich tedy ve zdrojích obejdete a velikosti PNG si nastavíte parametry `defaultWidth` a `defaultHeight`.
+Šířka a výška fallback obrázků se bere z hodnot, které máte ve zdrojových obrázcích u značky `<svg>`.  Buď si je tedy nastavte podle fixní šířky layoutu ve starších prohlížečích, nebo se bez nich v SVG zdrojích obejděte a velikosti PNG si nastavte v Grunt úloze parametry `defaultWidth` a `defaultHeight`.
 
 A to je vše, přátelé. Více najdete [v demu na Githubu](https://github.com/machal/demo-grunticon).
 
