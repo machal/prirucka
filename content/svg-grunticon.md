@@ -147,3 +147,6 @@ Vkládané SVG se samo o sobě nepřizpůsobuje rodičovskému kontejneru, proto
 
 A to je vše, přátelé. Více najdete [v demu na Githubu](https://github.com/machal/demo-grunticon).
 
+## Zjednodušený obsah článku jako screencast
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/jG49jWMSjSc" frameborder="0" allowfullscreen></iframe>
