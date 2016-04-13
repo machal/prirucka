@@ -1,18 +1,18 @@
-# Jak na navigaci na mobilech a proč potřebujeme hamburgery?
+# Jak na mobilní navigaci a proč potřebujeme hamburgery?
 
-Hlavní navigace webů jsme zvyklí dělat tak, že se nám na mobily nevejdou. Proto je schováváme a opatřujeme vypínačem. Takhle vypadá stav mysli většiny dnešních webařů. 
+Hlavní navigace webů jsme zvyklí dělat tak, že se nám na mobilní obrazovky nevejdou. Proto je schováváme a opatřujeme vypínačem. To je stav mysli většiny dnešních webařů. 
 
-Jenže ono to schovávání není tak dobrý nápad. Pojďte, vezmeme to zgruntu a pozastavíme se i ikony hamburgeru. Chcete vědět, jestli je dobrá nebo zlá?
+Jenže ono to schovávání není tak dobrý nápad. Pojďte, vezmeme to zgruntu a pozastavíme se také u ikony hamburgeru, oblíbeného tématu diskuzí. Je dobrá nebo špatná?
 
-Nejdřív dovolte jednu zásadní otázku.
+Nejdřív ale dovolte jednu zásadní otázku.
 
-## Proč jsme vlastně navigace do ikony neschovávali už v době čistě desktopových webů?
+## Proč jsme vlastně navigace neschovávali už v době čistě desktopových webů?
 
 Protože nejsme blbí. Víme, že navigace musí na webech plnit minimálně tři úkoly:
 
 1. *Mapa* – uživatel by měl z navigace snadno pochopit strukturu webu a najít co hledá.
-- *Ukazatel*  – uživatel by měl vědět, kde na mapě se aktuálně nachází.
-- *Reklama na obsah* – zájmem provozovatele webu je, aby uživatel nepřišel o nic zajímavého.
+2. *Ukazatel*  – uživatel by měl vědět, kde na mapě se aktuálně nachází.
+3. *Reklama na obsah* – zájmem provozovatele webu je, aby uživatel nepřišel o nic zajímavého.
 
 Jak dobře plní tyto tři úkoly schovaná navigace? Že je neplní vůbec? Bingo!
 
@@ -21,25 +21,27 @@ Jak dobře plní tyto tři úkoly schovaná navigace? Že je neplní vůbec? Bin
 
 Dobře, pro ideální svět stručných navigací na velkých displejích bychom měli vyřešeno. Prostě je na mobilech neschovávat. 
 
+![Dobré a špatné hamburgery](/assets/img/content/dest/original/hamburger-variants.jpg)
+
 Jenže tady máme i weby se složitými navigacemi a zařízení s velmi malými displeji. 
 
-## Jak uvažovat při návrhu navigace pro mobily?
+## Jak uvažovat při návrhu hlavní navigace?
 
-**Vymyslete navigaci tak, aby byla co nejjednodušší.** Ano, už při vymýšlení struktury webu aktivujte [Mobile First](mobile-first.md) režim. Na 27 položek v hlavní navigace a druhou i třetí úroveň prostě zapomeňte. Zachrání vám to kejhák při návrhu designu webu.
+**Navrhněte navigaci tak, aby byla co nejjednodušší.** Ano, už při vymýšlení struktury webu aktivujte [Mobile First](mobile-first.md) režim. Na dvacet šest položek v hlavní navigace a druhou i třetí úroveň prostě zapomeňte. Zachrání vám to kejhák při návrhu designu webu.
 
-**Navrhněte web tak, jako by tam navigace nebyla.** Je jasné, že na těch nejmenších displejích budeme muset skoro vždy minimálně část navigace schovat. Proto se musíme naučit vymýšlet weby bez ní. Navigační schéma prostě duplikujte v obsahu, do úvodní stránky dejte něco jako mapu webu.
+**Navrhněte web, jako by tam navigace nebyla.** Je jasné, že na těch nejmenších displejích budeme muset skoro vždy minimálně část navigace schovat. Proto se musíme naučit vymýšlet weby bez ní. Navigační schéma prostě duplikujte v obsahu, do úvodní stránky dejte něco jako mapu webu.
 
 Pokud jde navigace zobrazit celá, **prostě ji zobrazte celou i na mobilech**. Zní to trochu blbě, jenže svět je plný webů s navigací o čtyřech položkách, které používají hamburger jen proto, že to je *in*. Pokud je rozlišení dostatečně široké, prostě navigaci zobrazte. 
 
-A ve chvíli, kdy ji celou zobrazit nedokážete, zvažte jiné návrhové vzory než prosté zapínání a vypínání. Doporučuji [vzor s prioritizací položek](https://css-tricks.com/the-priority-navigation-pattern/).
+Jestliže navigaci nedokážete zobrazit celou, zvažte jiné návrhové vzory než prosté zapínání a vypínání. Doporučuji [vzor s prioritizací položek](https://css-tricks.com/the-priority-navigation-pattern/).
 
-Až pokud žádné z těchto možností nezabrala, volte návrhový vzor s vypínačem navigace. Ano, ten, kterému co přeneseně říkáme *hamburger*. 
+Až pokud žádné z těchto možností nezabrala, volte návrhový vzor s vypínačem navigace. Ano, ten, kterému podle vzhledu ikony říkáme *hamburger*. 
 
-Číst ale nepřestávejte. Volbou hamburgeru se otevírá nová sada potenciálních průšvihů, které můžete nechtěně napáchat.
+Číst ale nepřestávejte. Volbou hamburgeru se otevírá nová sada průšvihů, které můžete nechtěně napáchat.
 
 ## Hamburger je potížista, ale potřebujeme ho
 
-Ikona hamburgeru a schovávání navigace je v poslední době pod [palbou](http://deep.design/the-hamburger-menu/) [kritiky](http://jecas.cz/hamburger-menu). Já tvrdím, že se mu prostě často nedá vyhnout.
+Ikona hamburgeru a schovávání navigace je v poslední době pod [palbou](http://deep.design/the-hamburger-menu/) [kritiky](http://jecas.cz/hamburger-menu). Tvrdím, že na některých webech se mu nedá vyhnout a že ji webdesign jako obor potřebuje.
 
 O ikonách je známo, že trvá nějakou dobu než se mezi lidmi zavedou. Lidé se nenarodili ani se znalostí ikon pro *play*, *pause* a *stop* na hudebních přehrávačích. 
 
@@ -47,29 +49,29 @@ O ikonách je známo, že trvá nějakou dobu než se mezi lidmi zavedou. Lidé 
 
 – [Andy Budd, In defence of the hamburger menu](http://www.andybudd.com/archives/2016/01/in_defence_of_the_hamburger_menu/)
 
-Hamburger nový je a situaci nám ještě komplikují operační systémy a nativní aplikace na nich. Ty pro otevření navigace používají různé ikony ([hamburger, kebab, masové kuličky…](https://twitter.com/lukew/status/591296890030915585)). 
+Hamburger nový je a situaci nám ještě komplikují operační systémy a nativní aplikace na nich. Ty pro otevření navigace používají různé ikony ([hamburger, kebab, masové kuličky…](https://twitter.com/lukew/status/591296890030915585)). Uživatelé zatím moc neví co si pod nimi představit.
 
-Myslím si ale, že ikonu pro schování navigace ve webdesignu potřebujeme. Proto ji  prostě musíme mezi lidi dostat. Nejlépe pomocí textových popisků.
+Napsal jsem, že ikonu pro schování navigace ve webdesignu potřebujeme. Proto ji  prostě musíme mezi lidi dostat. Nejlépe pomocí textových popisků.
 
 Je také dobré v době minimalizmu a flat designu zmínit, že ikona by kromě textového popisku [měla mít vzhled tlačítka](http://exisweb.net/menu-eats-hamburger).
 
 ## Otevírá hamburger opravdu obsah, který reprezentuje?
 
-Každá ikona je zjednodušenou abstrakcí toho co aktivuje. V případě hamburgeru je to seznam horizontálních položek. To velmi dobře odpovídá jednoduché navigaci s položkami řazenými pod sebe.  Odpovídá to ale třeba víceúrovňové navigaci nebo bohatému obsahu, na který se dostanete kliknutím na hamburger například u jinak výborného webu Respektu? 
+Každá ikona je zjednodušenou abstrakcí toho co aktivuje. V případě hamburgeru je to seznam horizontálních položek. To velmi dobře odpovídá jednoduché navigaci s položkami řazenými pod sebe.  Odpovídá to ale třeba víceúrovňové navigaci nebo třeba celé liště sekundárního obsahu, na který se dostanete kliknutím na hamburger například u jinak výborného webu Respektu? 
 
-*TODO obrázek dobrý a špatný hamburger*
+![Špatný symbol pro zobrazení sekundárního obsahu](/assets/img/content/dest/original/hamburger-abstraction.jpg)
 
-Prostě – pokud nechceme naše milé uživatele úplně zničit, měli bychom hamburger používat k tomu co skutečně reprezentuje.
+Pokud nechceme naše milé uživatele [úplně zničit](/blog/47-znicit-mobilistu-1), měli bychom hamburger jako abstrakci typu obsahu, který skutečně reprezentuje.
 
 ## Co dělat, když hamburger použít musím?
 
-Takže – některé weby navigaci zobrazí celou, některé se bez navigace zcela obejdou a některé použijí chytřejší navigační vzor jako je prioritizace položek. 
+Takže – některé weby navigaci zobrazí celou i na mobilech, některé se bez navigace zcela obejdou a některé použijí chytřejší navigační vzor jako je prioritizace položek. 
 
 Zbývá nám tu množina webů, u kterých je schovávání navigace nebo její části prostě nevyhnutelné. Minimálně na opravdu malých displejích, vezměme třeba šířky 240 pixelů. A nějakou ikonu k tomu potřebovat budeme.
 
 Takže ano, hamburger je dobrý! Je dobré ale splnit tyto podmínky:
 
 1. Ikonu nezneužíváme pro typ obsahu, který nepředstavuje.
-- Ikonu opatříme popiskem „Menu“. Hlavně u webů, které cílí mimo geekovské kruhy. 
-- Navigaci neschováváme na těch šířkách displeje, kde by ještě šla zobrazit celá nebo její podstatná část.
-- Zařídíme, aby plocha kolem hamburgeru vypadala jako tlačítko.
+2. Ikonu opatříme popiskem „Menu“. Hlavně u webů, které cílí mimo geekovské kruhy. 
+3. Navigaci neschováváme na těch šířkách displeje, kde by ještě šla zobrazit celá nebo její podstatná část.
+4. Zařídíme, aby plocha kolem hamburgeru vypadala jako tlačítko.
