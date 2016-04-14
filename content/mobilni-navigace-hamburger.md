@@ -61,7 +61,10 @@ Každá ikona je zjednodušenou abstrakcí toho co aktivuje. V případě hambur
 
 ![Špatný symbol pro zobrazení sekundárního obsahu](/assets/img/content/dest/original/hamburger-abstraction.jpg)
 
-Pokud nechceme naše milé uživatele [úplně zničit](/blog/47-znicit-mobilistu-1), měli bychom hamburger jako abstrakci typu obsahu, který skutečně reprezentuje.
+Pokud nechceme naše milé uživatele [úplně zničit](/blog/47-znicit-mobilistu-1), měli bychom hamburger používat jako abstrakci typu obsahu, který skutečně reprezentuje.
+
+Jak v této souvislosti [dodává Adam Fendrych](https://twitter.com/adlo/status/720266123774713856) i textový popisek „Menu“ je někdy dobré nahradit pojmenováním, které přesně popisuje obsah. Například „Kategorie“ nebo „Recepty”.
+
 
 ## Co dělat, když hamburger použít musím?
 
