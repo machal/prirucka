@@ -1,8 +1,8 @@
-# Návrhové vzory pro responzivní navigace
+# Jaký typ responzivní navigace vybrat?
 
-Osm návrhových vzorů pro navigace na responzivních webech. Od uživatelsky složitých a implementačně jednoduchých až po ty dobré.
+Projdeme si osm návrhových vzorů pro navigace na responzivních webech. Od uživatelsky složitých a implementačně jednoduchých až po — ty dobré. 
 
-Většina webů si ale vystačí se vzory dvěma – upřesnostňujícím a zapínacím. Podívejme se nejprve na ně.
+Většina webů si ale vystačí se vzory dvěmi – upřesnostňujícím a zapínacím. Podívejme se nejprve na ně.
 
 ## Upřednostňování položek (Priority+)
 
@@ -15,6 +15,8 @@ Se zmenšující se šířkou obrazovky se zmenšuje i počet položek v navigac
 Celou navigaci prostě na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“, odtud se tomuto návrhovému vzoru trochu nepřesně říká „hamburger navigace“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiné návrhové vzory. Nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, které ji na webu náleží. Více jsem schovávání a hamburgeru psal [v samostatném článku](mobilni-navigace-hamburger.md). 
 
 Návrhový vzor „zapni/vypni“ zpopularizoval [Bootstrap](http://getbootstrap.com/) a najdete jej na většině dnešních responzivních webů. U nás je to v dobře psaní článku třeba [Globus](https://www.globus.cz/).
+
+![Návrhové vzory pro responzivní navigace](dist/images/original/responzivni-navigace.jpg)
 
 ### Speciální varianta: zapínač s vyjížděním (Off Canvas)
 
