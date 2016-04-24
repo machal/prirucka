@@ -2,17 +2,17 @@
 
 Co je layoutový a co vizuální viewport? Co přesně přesně vyjadřuje `device-pixel-ratio` a proč nepoužívat `screen.width` v Javascriptu nebo `min-device-width` v CSS?
 
-Pojďme si nejprve říct, co to ten viewport vlastně je. V kontextu webdesignu jde o označení pro výřez dokumentu viditelný v okně prohlížeče. 
+Pojďme si nejprve říct, co to ten *viewport* vlastně je. V kontextu webdesignu jde o označení pro výřez dokumentu viditelný v okně prohlížeče. 
 
 Na zařízeních, kde je možné měnit velikost okna, typicky desktopových, tedy viewport představuje šířku a výšku okna bez rozhraní prohlížeče.
 
-Správná legrace s viewportem ovšem začíná na mobilních zařízeních. Hlavně proto, že tam viewport není jen jeden. Budeme používat terminologii [Petera-Paula Kocha](http://www.quirksmode.org/mobile/metaviewport/) a rozlišovat viewport layoutový, vizuální a ideální.
+Správná legrace s viewportem ovšem začíná na moderních smartphonech a tabletech. Hlavně proto, že tam viewport není jen jeden. Budeme používat terminologii [Petera-Paula Kocha](http://www.quirksmode.org/mobile/metaviewport/) a rozlišovat viewport layoutový, vizuální a ideální.
 
 ![Layoutový a vizuální viewport](../dist/images/original/viewport-layoutovy-vizualni.svg)
 
 ## Layoutový viewport
 
-Plocha, do které se vykresluje layout stránky. Layout napsaný v CSS se počítá právě z něj. A pro pořádek – z pohledu CSS je layoutový viewport „[initial containing block](http://reference.sitepoint.com/css/containingblock)“.
+Plocha, do které se vykresluje layout stránky. Layout napsaný v CSS se počítá právě z něj. A pro pořádek – z pohledu CSS je layoutový viewport tzv. „[initial containing block](http://reference.sitepoint.com/css/containingblock)“.
 
 Šířka výchozí layoutového viewportu je na mobilních platformách podobná:
 
@@ -25,7 +25,7 @@ Vezměme například tento zápis ručního nastavení viewportu:
 <meta name="viewport" content="width=1000">
 ``` 
 
-Tímto sjednotíte velikost layoutového viewportu s vizuálním. O tom za chvíli.
+Tím nastavíme sířku layoutového viewportu na 1000 pixelů.
 
 Javascriptem rozměry layoutového viewportu zjistíte pomocí: 
 
@@ -35,16 +35,6 @@ document.documentElement.clientHeight
 ```
 
 K layoutovému viewportu se vztahují [Media Queries](css3-media-queries.md) dotazy na velikost okna – `min-width` a `max-width`.
-
-U skoro všech responzivních webů chcete layoutový viewport nastavit na rozměry ideálního viewportu. Uděláte to pomocí [správné meta značky pro viewport](meta-viewport.md) a kousku CSS:
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```  
-
-```css
-@-ms-viewport { width: device-width }
-``` 
 
 ## Vizuální viewport
 
@@ -121,10 +111,23 @@ rozlišení</td>
   </tr>
 </table>
 
+### Layoutový viewport na rozměry ideálního viewportu
+
+
+U skoro všech responzivních webů chcete layoutový viewport nastavit na rozměry ideálního viewportu. Uděláte to pomocí [správné meta značky pro viewport](meta-viewport.md) a kousku CSS:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```  
+
+```css
+@-ms-viewport { width: device-width }
+``` 
+
 ### Proč nepoužívat `screen.width` a `min-device-width`?
 
-Javascriptem se u některých prohlížečů dá ideální viewport zjistit pomocí `screen.width` a `screen.height`. Některé ovšem vracejí šířku a výšku displeje v hardwarových pixelech. Dělá to třeba Android Browser, takže je tato hodnota v praxi dost nepoužitelná. 
+Javascriptem se u některých prohlížečů dá ideální viewport zjistit pomocí `screen.width` a `screen.height`. Některé ovšem vracejí šířku a výšku displeje v hardwarových pixelech. Dělá to třeba Android Browser až do verze 4.2, takže je tato hodnota v praxi dost nepoužitelná. 
 
-Javascriptové vlastnosti ideálního viewportu mají své protějšky v Media Queries `min-device-width` a `min-device-height` a i ty jsou tedy díky tomu nepříliš použitelné.
+Javascriptové vlastnosti ideálního viewportu mají své protějšky v Media Queries `min-device-width` a `min-device-height` a i ty jsou tedy nejen díky tomu nepříliš použitelné.
 
 Můžete pokračovat článkem o [meta značce pro viewport](viewport-meta.md) nebo [viewportu na Windows](viewport-windows.md).
