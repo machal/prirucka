@@ -36,7 +36,7 @@ Do atributu `content` je možné dávat různé vlastnosti a jejich hodnoty.
 
 ### `width`
 
-Nastaví šířku layoutového viewportu v pixelech. Nejčastěji využívaná hodnota `device-width` sjednotí šířku layoutového viewportu se šířkou ideálního viewportu.
+Nastaví šířku [layoutového viewportu](viewport-mobily.md) v pixelech. Nejčastěji využívaná hodnota `device-width` sjednotí šířku layoutového viewportu se šířkou ideálního viewportu.
 Pokud použijete hodnotu, např. `width=400`, nastavíte šířku layoutového viewportu na 400 pixelů. To snad nebude chtít ani muset dělat.
 
 ### `initial-scale`

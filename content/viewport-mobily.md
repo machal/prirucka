@@ -1,4 +1,4 @@
-# Viewport na mobilních zařízeních
+# Tři viewporty na mobilních zařízeních
 
 Co je layoutový a co vizuální viewport? Co přesně přesně vyjadřuje `device-pixel-ratio` a proč nepoužívat `screen.width` v Javascriptu nebo `min-device-width` v CSS?
 
