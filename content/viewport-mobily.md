@@ -55,61 +55,63 @@ Ideální viewport je trochu z jiné kategorie než ty dva předchozí. Je to ho
 
 Ideální viewport získáte když vydělíte hardwarové rozlišení hodnotou [device-pixel-ratio](css-pixel.md). Pojďme se teď podívat na rozměry jednotlivých viewportů pro pár vybraných mobilních zařízení:
 
-<table>
-  <tr>
-    <td></td>
-    <td>Hardwarové
-rozlišení</td>
-    <td>Výchozí layoutový viewport</td>
-    <td>Ideální viewport</td>
-    <td>device-pixel-ratio</td>
-  </tr>
-  <tr>
-    <td>iPhone 4 
-/ iOS6 
-/ Safari</td>
-    <td>640×960</td>
-    <td>980×1091</td>
-    <td>320×480</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>iPad Air 
-/ iOS8.1 
-/ Safari</td>
-    <td>1536×2048</td>
-    <td>980×1225</td>
-    <td>768×1024</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>Lumia 630 
-/ WP8.1 
-/ IE11</td>
-    <td>480×800</td>
-    <td>1024×1554</td>
-    <td>480×800</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>Galaxy S5 
-/ Android 4.4 
-/ Android Browser</td>
-    <td>1080×1920</td>
-    <td>980×1532</td>
-    <td>360×640</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>Nexus 6 
-/ Android 5 
-/ Android Browser</td>
-    <td>1440 × 2560</td>
-    <td>980×1402</td>
-    <td>360×592</td>
-    <td>4</td>
-  </tr>
-</table>
+<div class="rwd-scrollable">
+  <table>
+    <tr>
+      <td></td>
+      <td>Hardwarové
+  rozlišení</td>
+      <td>Výchozí layoutový viewport</td>
+      <td>Ideální viewport</td>
+      <td>device-pixel-ratio</td>
+    </tr>
+    <tr>
+      <td>iPhone 4 
+  / iOS6 
+  / Safari</td>
+      <td>640×960</td>
+      <td>980×1091</td>
+      <td>320×480</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>iPad Air 
+  / iOS8.1 
+  / Safari</td>
+      <td>1536×2048</td>
+      <td>980×1225</td>
+      <td>768×1024</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Lumia 630 
+  / WP8.1 
+  / IE11</td>
+      <td>480×800</td>
+      <td>1024×1554</td>
+      <td>480×800</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Galaxy S5 
+  / Android 4.4 
+  / Android Browser</td>
+      <td>1080×1920</td>
+      <td>980×1532</td>
+      <td>360×640</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Nexus 6 
+  / Android 5 
+  / Android Browser</td>
+      <td>1440 × 2560</td>
+      <td>980×1402</td>
+      <td>360×592</td>
+      <td>4</td>
+    </tr>
+  </table>  
+</div>
 
 ### Layoutový viewport na rozměry ideálního viewportu
 
@@ -117,11 +119,14 @@ rozlišení</td>
 U skoro všech responzivních webů chcete layoutový viewport nastavit na rozměry ideálního viewportu. Uděláte to pomocí [správné meta značky pro viewport](meta-viewport.md) a kousku CSS:
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" 
+  content="width=device-width, initial-scale=1">
 ```  
 
 ```css
-@-ms-viewport { width: device-width }
+@-ms-viewport { 
+  width: device-width 
+}
 ``` 
 
 ### Proč nepoužívat `screen.width` a `min-device-width`?
