@@ -50,4 +50,4 @@ Vysvětlení je nasnadě - architektura mobilního internetového připojení je
 
 Ano, Česko je už sice moc hezky [pokryto LTE sítěmi](http://lte.ctu.cz/pokryti/), jenže tuhle rychlost zdaleka nemají a jen tak nebudou mít v mobilu všichni.
 
-Takže ano, rychlost načtení je dobré řešit – pravděpodobně vám na web pomůže dostat více lidí a také vylepší klíčové ukazatele hodnocení jeho úspěšnosti.
+Takže ano, rychlost načtení je dobré řešit – pravděpodobně vám na web pomůže dostat více lidí a také vylepší klíčové ukazatele hodnocení jeho úspěšnosti. Co dál? Přečíst si [článek o nástrojích](rychlost-nastroje.md) pro analýzu rychlosti.
