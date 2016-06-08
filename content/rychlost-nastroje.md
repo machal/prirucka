@@ -79,3 +79,6 @@ V „Časování uživatelů“ (User Timings) mohou být vaše vlastní měřen
 
 Standardně se prý pro měření rychlost používá jednoprocentní vzorek vašich shlédnutí stránky. Pokud to chcete jinak, [je potřeba měřit s nastavením](http://www.ericmobley.net/measuring-performance-google-analytics/) `‘siteSpeedSampleRate’: 50`.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: analýza načítání stránky</a> - praktická demonstrace analýzy rychlosti načítání ve vývojářských nástrojích Chrome.
+</p>

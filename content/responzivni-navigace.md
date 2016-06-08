@@ -58,4 +58,7 @@ Na některých webech navigaci v hlavičce nepotřebujete. Třeba mikrosajty neb
 
 Raději zmíním i tento „návrhový vzor“. Jak jsem psal [v článku o *hamburgeru*](mobilni-navigace-hamburger.md), často se navigace na mobilech schovává zbytečně. Když v ní máte velmi málo položek, tohle je nejlepší řešení: dát si kafe, nohy nahoru a nedělat nic. 
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=D4IDwYCWfJk">Responzivní navigace</a> - jaký typ responzivní navigace vybrat? Projdeme si osm návrhových vzorů pro navigace na responzivních webech. Od uživatelsky složitých a implementačně jednoduchých až po ty – ehm – dobré.
+</p>
 

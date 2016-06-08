@@ -136,3 +136,8 @@ Javascriptem se u některých prohlížečů dá ideální viewport zjistit pomo
 Javascriptové vlastnosti ideálního viewportu mají své protějšky v Media Queries `min-device-width` a `min-device-height` a i ty jsou tedy nejen díky tomu nepříliš použitelné.
 
 Můžete pokračovat článkem o [meta značce pro viewport](viewport-meta.md) nebo [viewportu na Windows](viewport-windows.md).
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=Un1lofU64oo">Viewporty na mobilních zařízeních</a> - praktická demonstrace viewportů na mobilních zařízeních a jak se k nim dostat v Javascriptu.
+</p>
+

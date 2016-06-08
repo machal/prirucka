@@ -73,6 +73,7 @@ Co třeba `<nav>` namísto `<div role="navigation">`? To bych nedělal. U HTML5 
 
 ARIA role umí zobrazit rozšíření [Web Developer](http://chrispederick.com/work/web-developer/), které je dostupné pro Chrome, Firefox nebo Operu. Na Apple výrobcích to jde „z pohledu“ hendikepovaného uživatele testovat pomocí nativního rozšíření Voice Over ([OS X](http://www.apple.com/accessibility/osx/voiceover/), [iOS](http://www.apple.com/accessibility/ios/)).
 
-Na závěr to všechno ukážu v tříminutovém videu:
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=sO_xOGgrE2Y">WAI-ARIA: demo s VoiceOver</a> - kromě základů WAI-ARIA si na videu ukážeme demo použití s VoiceOver. To je  čtečka vestavěná na Macu.
+</p>
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/sO_xOGgrE2Y" frameborder="0" allowfullscreen></iframe>
