@@ -9,11 +9,11 @@ Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je p
 
 Kodér má přesah do oborů, se kterými spolupracuje na podkladech pro svou práci — UX, webová grafika. Také do oborů, kterým svou práci předává — frontend či backend programování, mírně třeba i do správy serverů.
 
-Webovému kodérovi též můžeme říkat frontend kodér, [frontend designér](http://kratce.vzhurudolu.cz/post/20006686050/haml-a-dva-typy-koderu), vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster".
+Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster“, ale její používání [dnes je už překonané](http://www.vzhurudolu.cz/blog/62-frontend-pozice).
 
 ## Poznámky k textu
 
-* Z opačné strany bere potřebné znalosti [výstupní checklist kodéra](checklist.md).
+* Z opačné strany bere potřebné znalosti [výstupní checklist kodéra](http://www.vzhurudolu.cz/checklist).
 * Následující prosím berte více jako autorův subjektivní výběr než přesnou a precizně strukturovanou osnovu pro samostudium.
 * Body v jednotlivých sekcích jsou řazeny podle důležitosti.
 * Jako **[nové]** jsou označeny znalosti, které přibyly v posledních cca 2-3 letech.
