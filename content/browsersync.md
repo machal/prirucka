@@ -15,26 +15,16 @@ V textu budu jeho instalaci a základní vlastnosti ukazovat na příkladu. Zku�
 Vezmeme [tento příklad](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.html.injection) z [ukázek využití Browsersync](https://github.com/BrowserSync/recipes). 
 
 1. Na lokální mašině předtím potřebujete rozchodit [Node ekosystém](node-instalace.md) – hlavně NPM a [Grunt](grunt.md). Volitelně také [Git](https://git-scm.com/downloads) v příkazové řádce.
-2. Naklonujte repozitář (nebo prostě [stáhněte v ZIPu](https://github.com/BrowserSync/recipes/archive/master.zip)):
-```bash
-git clone https://github.com/Browsersync/recipes.git bs-recipes
-```
+2. Naklonujte repozitář (nebo prostě [stáhněte v ZIPu](https://github.com/BrowserSync/recipes/archive/master.zip)):  
+`git clone https://github.com/Browsersync/recipes.git bs-recipes`
 3. Skočte do adresáře s první ukázkou:   
-```bash
-cd bs-recipes/recipes/grunt.html.injection
-```
+`cd bs-recipes/recipes/grunt.html.injection`
 4. Nainstalujte NPM závislosti:  
-```bash
-npm install
-```
+`npm install`
 5. Pusťte příklad:  
-```bash
-npm start
-```
+`npm start`
 6. Ve výchozím prohlížeči se vám otevře okno s adresou podobného tvaru:   
-```
-http://localhost:3000/
-```
+`http://localhost:3000/`
 
 To bychom měli. A teď ještě k čemu nám to bude, že ano?
 
@@ -63,7 +53,7 @@ UI External: http://192.168.0.2:3001
  
 Co je to za adresy?
 
- - `Local` –  tam najdete svůj web.
+- `Local` –  tam najdete svůj web.
 - `External` – kde svůj web uvidíte na všech zařízeních připojených do stejné sítě.
 - `UI` – rozhraní s nastavením Browsersync.
 - `UI External` – rozhraní s nastavením na připojených zařízeních.
