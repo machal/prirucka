@@ -1,72 +1,97 @@
-Jak testovat responzivní weby
-=============================
-
-Univerzální návod vám nedám. Vaše projekty a cílová skupina mohou být trošku jinde než moje. Pokud se ale spokojíte s popisem toho jak pracuji já, čtěte dál. Dělám hlavně menší až střední prezentační weby a občas řeším technicky náročnější pasáže u větších webů.
+# Testování responzivních webů
 
 Mé testování je třífázové:
 
-1. Vývojářský desktopový prohlížeč
-2. Simulátory/emulátory
-3. Reálná zařízení
+1. Prototypování 
+2. Vývojářský desktopový prohlížeč
+3. Simulátory a emulátory
+4. Reálná zařízení
 
-Ještě předtím ale zmíním fázi 0, kterou občas využívám. To je [Codepen](http://codepen.io/machal) fáze. Codepen je pro mě pískoviště kde si zkouším věci, které mohou být technicky složitější. Potenciální průšvihy nebo úkoly, u kterých se špatně odhaduje časová náročnost. V Codepenu je to za chvilku hotové, výsledek je propojený s testovačem Browserstack a snadno se posílá na reálná zařízení, takže na výsledek si sáhnete bez složitého vystavování někam.
+
+## Prototypování
+
+Ještě než začnu něco pořádně kódovat, procházím nultou kodérskou fází. Prototypování pomocí [Codepenu](http://codepen.io/machal). 
+
+Codepen je pro mě pískoviště kde si zkouším věci, které mohou být technicky složitější. Potenciální průšvihy nebo úkoly, u kterých se špatně odhaduje časová náročnost. Týká se to jak návrhu řešení rozhraní, tak i vyloženě kodérských oříšků. 
+
+V Codepenu je to za chvilku hotové, výsledek můžu rychle otestovat ve všech možných prohlížečích a zařízeních. A nemusím to složitě vystavovat někam.
+
+## Vývojářský desktopový prohlížeč
+
+V téhle fázi trávím samozřejmě nejvíce času. Kvůli DevTools používám Chrome. 
+
+Občas se podívám do ostatních desktopů – Firefoxu, Explorerů a Edge. Méně často do Opery nebo Safari, ty moje weby zobrazují velice podobně jako Chrome.
+
+Protože se ale bavíme hlavně o mobilních zařízeních, v Chrome mám puštěný [Device Mode](http://www.vzhurudolu.cz/blog/41-devtools-tipy#emulace-zarizeni-s-device-mode). 
+
+Neznám lepší nástroj na emulaci všeho možného na mobilních zařízeních a díky tomu v Chrome trávím během procesu návrhu i kódování webu nejvíce času. Já vím, že něco *podobného* existuje ve Firefoxu (Responsive Design View - `Ctrl/Cmd+Alt+M`) a dokonce v Edge (`F12` / Záložka „Emulation“), ale je to děsně slabý. Dávám to sem hlavně proto, abyste si nemysleli, že moc nadržuji Googlu. Při testování v Chrome si navíc poladíte nejpopulárnější desktopový i mobilní prohlížeč. Na mobilní Firefox a Edge bychom neměli zapomínat, ale jejich podíl na trhu je bohužel fakt minimální.
+
+Jo a pozor – netestuji jen nejčastější rozlišení, [na breakpointy nevěřím](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu). Obvykle oknem prohlížeče šoupu dokud se mě to alespoň trochu nelíbí ve *všech*  rozlišeních. 
+
+V další fázi ale potřebujeme kvůli testovat v reálnějším prostředí než je desktopový Chrome. Ano, jde o jiná vykreslovací nebo javascriptová jádra. Pomůže Browserstack nebo simulátory.
+
+## Browserstack
+
+Browserstack je parádní nástroj, ušetřil mi hrozně moc času. Rovnou upozorním, že za [Live verzi, kterou používám](https://www.browserstack.com/accounts/subscriptions), zaplatíte kolem pěti set korun na osobu měsíčně. Tak, a to bychom měli výčet nevýhod.
+
+Bezplatná alternativa existuje, ale fakt moc bolí. Simulátory a emulátory nejsou multiplatformní a žerou děsně moc času při instlalaci, správě i spouštění. Však si to přečtěte v další části textu.
+
+Browserstack naproti tomu:
+
+- běží v prohlížeči a je naprosto multiplatformní,
+- nabízí daleko svižnější čas startu i přepínání mezi prohlížeči,
+- nevyžaduje vaši pozornost při instalaci a aktualizaci,
+- umožňuje testování webu v lokálním prostředí (užasné v kombinaci s [Browsersync](browsersync.md)),
+- kromě emulátorů nabízí také testování na reálnýh zařízení,
+- ke všem prohlížečům jsou k dispozici rozumné vývojářské nástroje,
+
+…takže už možná chápete, proč nakonec pětistovka měsíčně nemusí vůbec bolet.
+
+Když byste chtěli levnější alternativu, mrkněte se na [CrossBrowserTesting.com](https://crossbrowsertesting.com). Jsou tam jen emulátory a je to pomalejší, ale zase sakumprdum za přibližně 700 Kč, ale včetně generování screenshotů a spouštění Selenium testů, které jsou u Browserstacku za další peníze.
+
+Následující část čtěte jen pokud chcete moc šetřit a máte vysokou odolnost proti bolesti. V opačném případě skočte rovnou na testování na reálných zařízeních.
+
+## Simulátory a emulátory (nedoporučuji)
+
+Mobilní Chrome jakžtakž odpovídá tomu desktopovému, takže potřebujete otestovat hlavně Android Browser a pak mobilní Safari. Občas také mobilní Operu, Firefox nebo Explorer. Mrkněte do statistik, jak si u vás tyhle prohlížeče stojí. 
+
+- **Mobilní Safari:** [Simulatorem](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) je možné na Macu testovat iOS (nebo také watchOS a tvOS, ale tam není žádný prohlížeč), takže mobilní Safari. Nicméně pokud jste na Windowsech nebo Linuxu, s emulací mobilního Safari si neškrtnete.
+- **Android Browser:** [Android Emulatorem](https://developer.android.com/studio/run/emulator.html) jste si dříve mohli pustit verzi Androidu s aktuálním Android Browserem. Vůbec si nejsem jistý, jestli to pořád jde. Dřív byl Android Emulator děsně pomalý a teď koukám, že je navíc docela věda ho nainstalovat.
+- **Mobilní Opery:** Emulator aktuální verze mobilní Opery neexistuje, ale má jádro velice podobně Chrome. Je ale dobré web vidět [v Opeře Mini](https://dev.opera.com/articles/installing-opera-mini-on-your-computer/), kterou lze nainstalovat na desktop.
+- **Mobilní Firefox:** Jakžtakž je asi možné emulovat [v tom desktopovém](http://stackoverflow.com/questions/16651911/how-can-i-simulate-mobile-devices-and-debug-in-firefox-browser).
 
 
-Fáze 1: Vývojářský desktopový prohlížeč
-----------------------------------
+## Pozor, simulátory ani Browserstack vám nestačí! 
 
-V téhle fázi trávím samozřejmě nejvíce času. Kvůli Developer Tools používám Chrome. Pravidelně se přepínám do Firefoxu a [Browserstacku](http://www.browserstack.com/) kde mám puštěný nejhorší Explorer, který chci na projektu podporovat, což je obvykle osmička. Méně pravidelně pak do Opery, Safari a modernějších Explorerů.
+Proč?
 
-Kvůli testování chování v konkrétních rozlišeních v Chrome používám [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh), nesmrtelný [Mattův testovač](http://mattkersley.com/responsive/), [responsivepx.com](http://responsivepx.com/), který mi umožní testovat i rozlišení větší než má můj MacBook fyzicky. Nově zkouším ještě [„ish“](http://bradfrostweb.com/demo/ish/), hlavně jeho „Hay mód“. Netestuji jen nejčastější rozlišení, [na breakpointy nevěřím](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu). Obvykle oknem prohlížeče šoupu dokud se mě to alespoň trochu nelíbí všude. I tohle mi ale asi časem nahradí „ish“.
-
-Fáze 2: Simulátory/emulátory
------------------------
-
-Když jsem s nakódovaným elementem spokojený, jdu do simulátoru. Na Macu mám k dispozici výborný **iOS simulátor** a Opera Mobile simulátor. Používám hlavně ten první, protože iPhone i iPad jsou obvykle v podílech na návštěvnosti nepřehlédnutelní.
-
-**Android emulátor už nepoužívám**, nahradil mi jej už zmíněný Browserstack. Ušetřil mi tak spoustu času tráveného se správou VirtualBoxu s Windows a různých Android emulátorů.
-
-Oba simulátory jsou samozřejmě úžasné v tom, že je lze přímo propojit s odpovídajícím desktopovým prohlížečem a případné problémy ladit v pohodlném prostředí Safari Web Inspectoru nebo obdobném nástroji v Opeře. O „remote debugging“ ale jindy.
-
-**Pozor, simulátory vám nestačí.** Proč?
-
-* Nedá se jim stoprocentně věřit.
-* Web si musíte osahat vlastním palcem. Klikání v simulátoru tohle nenahradí.
+* Web si musíte osahat vlastním palcem. Klikání myší v simulátoru tohle nenahradí.
 * Simulátory nenasimulují problémy s výkonností.
+* Občas se stane, že v reálném zařízení se věci vykreslují jinak než v simulátoru.
 
 Tedy pokud to myslíte s responzivními weby vážně, určitě k ruce potřebujete ještě nějaká reálná zařízení.
 
-Fáze 3: Reálná zařízení
-------------------
+## Reálná zařízení
 
 Jaká koupit? Nejlépe všechna!
 
 Že vám to rozpočet nedovolí? Mě taky ne, takže pro začátek **nakupte to co má ve vaší cílovce silné zastoupení.** Určitě napoví Google Analytics.
 
-### Složení pro firmu
+Pro inspiraci – seznam zařízení, na kterých testuji svou práci. Budu je řadit podle toho jak důležitá mě připadají pro testování dnešních webů.
 
-Tohle jsem do testovací sestavy radil nakoupit jedné web-vývojářské firmě:
+Telefony:
 
-* Tablety:
-  * Android (7") — koupil bych nějaký šrot do dvou tisíc. Hrozně se
-prodávají a prohlížeče jsou nechutně pomalé.
-  * Win (10") s Win8 jsou fajn.
-  * iPad — pokud jen jeden, pak určitě Mini! Všechny prvky rozhraní webu jsou
-na něm menší a Mini je dobrý benchmark, jestli je to navržené dobře.
-* Telefony:
-  * Android (3.5") — doporučuji jeden s Androidem 2.3 (mrkněte radši do
-Analytics, mohou tam mít významné zastoupení) a jeden s poslením Androidem 4.x.
-  * Windows Phone — prohlížeče ve verzích 7.0, 7.5, 7.8 a 8 se liší. Mrkl bych do statistik, co z toho potřebujete. Tipuji, že osmičky vyrostou.
-  * iPhone — cokoliv s poslední verzí iOS. Starší je pro testování lepší,
-protože pomalejší. Nejlepší bude nejlevnějším model, který oficiálně prodává Apple.
+* iPhone 6 Plus s iOS9 jako zástupce supermoderních phabletů. 
+* Samsung Galaxy S III Mini s Androidem 4, Chrome a Android Browserem.
+* Nokia Lumia 520 pro testování Exploreru na Windows Phone 8.1.
+* iPhone 4 s iOS7 jako zástupce pomalu vykreslujícího iKřápu.
+* Vodafone 945 se starým Androidem 2.1 a rozlišením 240x400 pixelů. Ano, vaše weby občas testuju na nejhorší smartphone jaký si umíte představit. ;)
 
-### Moje sestava
 
-* Telefon iPhone 4 s iOS6 s Retina displejem
-* Telefon Vodafone 945 se starým Androidem 2.1 a rozlišením 240x400 pixelů
-* Tablet iPad Mini s iOS6
-* Tablet Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480x800 pixelů
+Tablety:
 
-Stačí mě to? Na denodenní testování ano, ale u zásadnějších spuštění projektů kradu telefon ženě, kamarádům a často na pivo zvu ty co mají zařízení s Windows Phone. A nezapomeňte na guerilla testing — takový DatArt bývá plný zařízení, na kterých si můžete leccos vyzkoušet.
+* iPad Mini s iOS8. Fyzicky nejmenší tablet z těch, které jde reálně použít na nějakou jednodušší práci. Velmi prodávaný. Určitě doporučuji, hlavně kvůli otestování dostatečné velikosti. Rozlišení 1024×768 na sedmi palcích.
+* Tablet Lenovo TAB 2. Klasický desetipalec s Androidem 5. 
+* Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480x800 pixelů. 
 
-Testujete jinak? Pochlubte se do komentářů a nezapomeňte zmínit váš typ projektů a cílovou skupinu.
+A nezapomeňte na guerilla testing — takový DatArt bývá plný zařízení, na kterých si můžete leccos vyzkoušet.
