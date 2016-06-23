@@ -1,12 +1,11 @@
 # Testování responzivních webů
 
-Mé testování je třífázové:
+Mé testování je čtyřfázové:
 
 1. Prototypování 
 2. Vývojářský desktopový prohlížeč
 3. Simulátory a emulátory
 4. Reálná zařízení
-
 
 ## Prototypování
 
@@ -36,6 +35,8 @@ Browserstack je parádní nástroj, ušetřil mi hrozně moc času. Rovnou upozo
 
 Bezplatná alternativa existuje, ale fakt moc bolí. Simulátory a emulátory nejsou multiplatformní a žerou děsně moc času při instlalaci, správě i spouštění. Však si to přečtěte v další části textu.
 
+*TODO obrázek Browserstack*
+
 Browserstack naproti tomu:
 
 - běží v prohlížeči a je naprosto multiplatformní,
@@ -57,11 +58,11 @@ Mobilní Chrome jakžtakž odpovídá tomu desktopovému, takže potřebujete ot
 
 - **Mobilní Safari:** [Simulatorem](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) je možné na Macu testovat iOS (nebo také watchOS a tvOS, ale tam není žádný prohlížeč), takže mobilní Safari. Nicméně pokud jste na Windowsech nebo Linuxu, s emulací mobilního Safari si neškrtnete.
 - **Android Browser:** [Android Emulatorem](https://developer.android.com/studio/run/emulator.html) jste si dříve mohli pustit verzi Androidu s aktuálním Android Browserem. Vůbec si nejsem jistý, jestli to pořád jde. Dřív byl Android Emulator děsně pomalý a teď koukám, že je navíc docela věda ho nainstalovat.
+- **Mobilní Explorer:** Spustíte [v emulátoru od Microsoftu](https://msdn.microsoft.com/en-us/library/windows/apps/ff402563%28v=vs.105%29.aspx).
 - **Mobilní Opery:** Emulator aktuální verze mobilní Opery neexistuje, ale má jádro velice podobně Chrome. Je ale dobré web vidět [v Opeře Mini](https://dev.opera.com/articles/installing-opera-mini-on-your-computer/), kterou lze nainstalovat na desktop.
 - **Mobilní Firefox:** Jakžtakž je asi možné emulovat [v tom desktopovém](http://stackoverflow.com/questions/16651911/how-can-i-simulate-mobile-devices-and-debug-in-firefox-browser).
 
-
-## Pozor, simulátory ani Browserstack vám nestačí! 
+### Pozor, simulátory ani Browserstack vám nestačí! 
 
 Proč?
 
@@ -71,13 +72,11 @@ Proč?
 
 Tedy pokud to myslíte s responzivními weby vážně, určitě k ruce potřebujete ještě nějaká reálná zařízení.
 
-## Reálná zařízení
+## Testování na fyzických zařízeních
 
-Jaká koupit? Nejlépe všechna!
+### Jaká zařízení si pro testování pořídit?
 
-Že vám to rozpočet nedovolí? Mě taky ne, takže pro začátek **nakupte to co má ve vaší cílovce silné zastoupení.** Určitě napoví Google Analytics.
-
-Pro inspiraci – seznam zařízení, na kterých testuji svou práci. Budu je řadit podle toho jak důležitá mě připadají pro testování dnešních webů.
+Nejlépe všechna! Že vám to rozpočet nedovolí? Mě taky ne, takže do začátku vás může inspirovat seznam zařízení, na kterých testuji svou práci. Budu je řadit podle toho jak důležitá mě připadají pro testování dnešních webů.
 
 Telefony:
 
@@ -94,4 +93,26 @@ Tablety:
 * Tablet Lenovo TAB 2. Klasický desetipalec s Androidem 5. 
 * Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480x800 pixelů. 
 
-A nezapomeňte na guerilla testing — takový DatArt bývá plný zařízení, na kterých si můžete leccos vyzkoušet.
+A nezapomeňte na guerilla testing — takové prodejny Alzy nebo Datartu bývají plné zařízení, na kterých si můžete leccos vyzkoušet. Z pohledu designéra je zajímavé každé nové zařízení, takže když byste se kolem mě s nějakým takovým točili, pravděpodobně vám ho na chvíli ukradnu a budu na něm své weby testovat.
+
+### Browsersync a multiplatformní vývojářské nástroje
+
+[Browsersync](browsersync.md) je obecně velmi přínosný nástroj pro testování responzivních webů. Teď nás ale zajímá hlavně jeho schopnost poskytnout *něco jako DevTools*, ovšem multiplatformně. Obsahuje nástroj jménem Weinre, se kterým je [ladění webů na mobilech](browsersync.md#ladění-webu-na-mobilních-zařízeních) velmi příjemné. 
+
+*TODO obrázek Browsersync a Winre*
+
+Browsersync a Weinre umožňují kombinovat platformy. Takže třeba Firefox na Macu propojit s Explorerem na Windows Phone. Jeho nevýhodou je, že Weinre jsou jen *něco* jako DevTools. Plnohodnotým vývojářským nástrojům dnešních prohlížečů konkurovat nemohou. Občas se jsou potřeba právě ty. Pak nezbývá než se smířit s tím, že to nepůjde multiplatformně a propojit mobilní prohlížeč s jeho desktopovým bratrem.
+
+### Propojení bratrských prohlížečů
+
+- **Mobilní Chrome** s jeho desktopovým sourozencem propojíte od Androidu verze 4. Mobilní zařízení stačí propojit USB kabelem a pak ještě nastavit pár věcí [podle tohoto návodu](https://developers.google.com/web/tools/chrome-devtools/debug/remote-debugging/remote-debugging).
+- **Mobilní Safari** s desktopovým Safari propojíte samozřejmě jen na Macu. Musíte si také nainstalovat [Xcode](https://developer.apple.com/xcode/), což obecně doporučuji pokud na Macu děláte jakoukoliv vývojařinu. Po propojení zařízení kabelem se pak podívejte do nové položky v menu Safari – Developer. V druhé sekci jsou připojená zařízení. Tady je [podrobnější návod](https://blog.idrsolutions.com/2015/02/remote-debugging-ios-safari-on-os-x-windows-and-linux/).
+- **Mobilní Explorer/Edge** je možné pomocí Visual Studio nějak propojit s desktopovým Edge. I tady případné zájemce [pošlu na návod](https://blogs.msdn.microsoft.com/visualstudioalm/2014/04/04/diagnosing-mobile-website-issues-on-windows-phone-8-1-with-visual-studio/).
+
+To bychom měli. V textu jsem ukázal hodně možností, ale z pohledu efektivity práce vám doporučím vyzkoušet můj postup. Ještě jednou zopakujme podstatné.
+
+1. V celém procesu mi pomáhá [Browsersync](browsersync.md)
+2. Prototypuji pomocí Codepen.io 
+3. Běžné ladění responzivních webů dělám v Chrome DevTools Device Toolbar
+4. Pro ladění ve zobrazovacíh jádrech jiných prohlížečů používám Browserstack
+5. Případné problémy v reálných zařízeních řeším obvykle pomocí Weinre, což je také součást Browsersync
