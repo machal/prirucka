@@ -61,6 +61,10 @@ Vše podstatné je v záložce Network:
 
 Mohou se vám hodit i další [tipy pro DevTools](http://www.vzhurudolu.cz/blog/41-devtools-tipyblog/41-devtools-tipy).
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: analýza načítání stránky </a> – praktická demonstrace analýzy rychlosti načítání ve vývojářských nástrojích Chrome.
+</p>
+
 ## GTmetrix
 
 Používám jen jako doplněk, ale někteří mu dávají přednost před PageSpeed Insights. Obsahuje totiž analýzu z tohoto nástroje a zároveň ještě [YSlow metodiku](http://yslow.org/) v jednom reportu.

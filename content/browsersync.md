@@ -62,6 +62,10 @@ Vezměte mobil připojený do stejné wifi a vyťukejte do tamního prohlížeč
 
 Proč vám o takové *blbině* vyprávím? Protože šetří děsně energie při [testování responzivních webů](jak-testovat-responzivni-weby.md) na reálných zařízeních.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> - obě vlastnosti rozebrány ve videu. Podívejte se.
+</p>
+
 ## Ladění webu na mobilních zařízeních
 
 Díky Browsersync také dostanete k dispozici jednoduchý nástroj podobný DevTools vašeho prohlížeče. Prostě *bazmek* co umožňuje ladění HTML, CSS a JS kódu. Browsersync pro to využívá technologii Weinre.
@@ -76,6 +80,10 @@ Zkoušíte příklad a máte připojený mobil?
 6. Teď už stačí kliknout třeba na „Elements“ nebo „Console“, protože jste v prostředí podobnému DevTools vašeho prohlížeče.  
 
 [Weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html) (vyslovujte jako *„winery“*) není tak pokročilá aplikace jako v prohlížečích vestavěné vývojářské nástroje. Máte ovšem k dispozici DOM, CSS a JS konzoli. To je pro základní ladění dost dobré. Ohromná výhoda Weinre je v tom, že můžete ladit napříč platformami. Třeba se z desktopového Firefoxu připojit do mobilního Safari. 
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=3g-AaEkc47M">Browsersync: ladění mobilních prohlížečů </a> - vzdálené ladění pomocí Weinre a dalších funkcí Browsersync.
+</p>
 
 ## Browsersync a Grunt
 

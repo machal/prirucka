@@ -48,6 +48,10 @@ Browserstack naproti tomu:
 
 …takže už možná chápete, proč nakonec pětistovka měsíčně nemusí vůbec bolet.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=VN8CFG-YajE">BrowserStack</a> - Jak testovat web ve všech prohlížečích a nemuset řešit virtuály a emulátory?
+</p>
+
 Když byste chtěli levnější alternativu, mrkněte se na [CrossBrowserTesting.com](https://crossbrowsertesting.com). Jsou tam jen emulátory a je to pomalejší, ale zase sakumprdum za přibližně 700 Kč, ale včetně generování screenshotů a spouštění Selenium testů, které jsou u Browserstacku za další peníze.
 
 Následující část čtěte jen pokud chcete moc šetřit a máte vysokou odolnost proti bolesti. V opačném případě skočte rovnou na testování na reálných zařízeních.
