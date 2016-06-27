@@ -1,6 +1,10 @@
 #   Vlastnosti flex kontejneru
 
-##   flex-direction – směr vyskládání položek
+##   Blokový nebo řádkový?
+
+Kromě `display: flex` můžete kontejner definovat jako řádkový – `display: inline-flex`. V obou případech se ze všech přímých potomků stávají položky flexboxu.
+
+##   `flex-direction` – směr vyskládání položek
 
 Nastaví směr hlavní osy flexboxu.
 
@@ -8,15 +12,19 @@ Nastaví směr hlavní osy flexboxu.
 flex-direction: row | row-reverse | column | column-reverse
 ```
 
+![vlastnost flex-direction](../dist/images/original/flexbox-flex-direction.jpg)
+
 Výchozí (`row`) hodnota vyskládá flex položky do řádky. Pokud chcete dělat layout do vertikálního směru, použijte hodnotu `column`.
 
 Pořadí položek se v těchto případech bere z pořadí v kódu. Pokud chcete pořadí otočit, prostě zvolte hodnoty `row-reverse` nebo `column-reverse`. To má vliv jen na vizuální vykreslení, nikoliv např. na pořadí vykreslování nebo procházení při navigaci klávesou `Tab`. Pozorní si asi všimli, že vlastnost lze použít i pro změnu řazení seznamů.
 
-##   flex-wrap – zalamování položek
+##   `flex-wrap` – zalamování položek
 
 ```css
 flex-wrap: nowrap | wrap | wrap-reverse
 ```
+
+![vlastnost flex-wrap](../dist/images/original/flexbox-flex-direction.jpg)
 
 Výchozí `nowrap` říká, že elementy budou vždy na hlavní ose vedle sebe (nebo pod sebou v případě, že použijete `flex-direction: column`).
 
@@ -24,7 +32,7 @@ Alternativně `wrap`. Pak se flex položky zalomí na další řádku ve chvíli
 
 `wrap-reverse` zalamuje naopak. Poslední položka řádku skočí nahoru a zařadí se nad první položku.
 
-##   flex-flow, zkratka pro flex-direction a flex-wrap
+##   `flex-flow`, zkratka pro flex-direction a flex-wrap
 
 Nejlépe si to ukážeme na příkladech:
 
