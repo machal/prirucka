@@ -11,6 +11,8 @@ Možné hodnoty:
 - `0` (výchozí) znamená, že položky nijak nerostou.
 - Celá kladná čísla. Položky si rozdělují podíly z nově získaného místa nad rámec výchozí šířky. 
 
+Živé demo: [http://cdpn.io/e/GqrVzL](http://cdpn.io/e/GqrVzL)
+
 
 ##   `flex-shrink` – možnosti smršťování  {#flex-shrink}
 
@@ -23,6 +25,8 @@ Možné hodnoty:
 - `1` (výchozí) – položky si z vlastní šířky ubírají rovnoměrně.
 - Celá kladná čísla.
 
+Živé demo: [http://cdpn.io/e/PzWMvM](http://cdpn.io/e/PzWMvM)
+
 ##   `flex-basis` – výchozí rozměr položky  {#flex-basis}
 
 Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: column`.
@@ -32,6 +36,8 @@ Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: co
 * `auto` (výchozí) – rozměr určuje obsah podobně jako u `width: auto`. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se pak bude týkat jen místa, které položky okupují nad rámec svého obsahu – tzv. relativní model pružnosti.
 * `0` – nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se bude týkat celé šířky položky – absolutní model pružnosti.
 * Jakýkoliv CSS rozměr, např. `100px`, `15em` nebo `50%`.
+
+Živé demo: [http://cdpn.io/e/oLZvgQ](http://cdpn.io/e/oLZvgQ)
 
 ##   `flex` – celková pružnost položky  {#flex}
 
@@ -93,7 +99,9 @@ Tímto zápisem pak třeba třetí položku předřadíme první:
 
 Nezapomeňte, že order nelze použít na jiné elementy ve stránce než přímé potomky flex kontejneru.
 
-Teď je na řadě další z radostí, kterou přináší flexbox. Konečně v CSS snadno zarovnáme prvky layoutu horizontálně, ale i vertikálně.
+Teď je na řadě další z radostí, kterou přináší flexbox. Konečně v CSS snadno zarovnáme prvky layoutu vodorovně, ale i svisle.
+
+Živé demo: [http://cdpn.io/e/JoqxJe](http://cdpn.io/e/JoqxJe)
 
 ##   `margin` – zarovnání položek na hlavní ose pro jednotlivou položku  {#margin}
 
@@ -110,6 +118,8 @@ align-self:
 ```
 
 Tato vlastnost se aplikuje na jednotlivé položky, a tak se hodí pro vytvoření výjimky ze zarovnání. Výchozí hodnota je `auto`.
+
+Živé demo: [http://cdpn.io/e/OXWKwe](http://cdpn.io/e/OXWKwe)
 
 ###   Poznámka: Baseline zarovnání
 

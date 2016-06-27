@@ -35,6 +35,8 @@ Alternativně `wrap`. Pak se flex položky zalomí na další řádku ve chvíli
 
 `wrap-reverse` zalamuje naopak. Poslední položka řádku skočí nahoru a zařadí se nad první položku.
 
+Živé demo: [http://cdpn.io/e/mERZxB](http://cdpn.io/e/mERZxB)
+
 ##   `flex-flow`, zkratka pro `flex-direction` a `flex-wrap` {#flex-flow}
 
 Nejlépe si to ukážeme na příkladech:
@@ -54,6 +56,8 @@ justify-content:
 
 Vlastnost `justify-content` aplikujeme na flex kontejner. Říká, jak budou flex položky zarovnány po jeho hlavní ose. Výchozí hodnota je `flex-start`, tedy zarovnání k začátku hlavní osy.
 
+Živé demo: [http://cdpn.io/e/doGjaZ](http://cdpn.io/e/doGjaZ)
+
 ##   `align-items` – zarovnání položek na příčné ose {#align-items}
 
 ```css
@@ -68,6 +72,8 @@ Vlastnost `align-items` lze opět aplikovat na kontejner flexboxu. Výchozí hod
 
 Pozor, hodnota `stretch` nefunguje, pokud mají položky nastavený rozměr pro příčnou osu, tedy ve výchozím stavu hodnotu vlastnosti `height`.
 
+Živé demo: [http://cdpn.io/e/RNmvmr](http://cdpn.io/e/RNmvmr)
+
 ##   `align-content` – zarovnání na hlavní ose víceřádkového kontejneru {#align-content}
 
 ```css
@@ -78,3 +84,5 @@ align-content:
 ![align-content.jpg](../dist/images/original/flexbox-align-content.jpg)
 
 Ještě jedna zarovnávací vlastnost. Tentokrát se vztahuje jen na flex kontejnery, jejichž položky se rozpadnou na více řádků.
+
+Živé demo: [http://cdpn.io/e/oXbMRo](http://cdpn.io/e/oXbMRo)
