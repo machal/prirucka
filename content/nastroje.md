@@ -68,7 +68,7 @@ Jednodušší alternativou jsou zase klikací apky jako Prepros nebo CodeKit (te
 
 NPM obvykle používám pro instalaci vývojářských balíčků jako jsou Grunt pluginy, Bower pro instalaci závislostí webu – jQuery atd.
 
-Node.js ekosystému při profesionální kodérské práci asi nelze vyhnout. Mrkněte [jak si jej nainstalovat](http://www.vzhurudolu.cz/prirucka/node-instalace).
+Node.js ekosystému při profesionální kodérské práci asi nelze vyhnout. Mrkněte [jak si jej nainstalovat](node-instalace.md).
 
 ## Git pro verzování
 
@@ -88,7 +88,7 @@ Používám kvůli Gruntu a nástrojům kolem Node.js. Na to jak často příkaz
 
 ## Testování na zařízeních
 
-- [BrowserStack](https://www.browserstack.com/) – testování mobilních a alternativních prohlížečů. V cloudu, v prohlížeči. A neuvěřitelně svižně. Browserstack je stále lepší  a v mé nástrojové brašně rozhodně neleží někde dole. Je nahoře, vždy po ruce. O způsobu [testování responzivních webů](jak-testovat-responzivni-weby.md) jsem dříve psal.
+- [BrowserStack](jak-testovat-responzivni-weby.md) – testování mobilních a alternativních prohlížečů. V cloudu, v prohlížeči. A neuvěřitelně svižně. Browserstack je stále lepší  a v mé nástrojové brašně rozhodně neleží někde dole. Je nahoře, vždy po ruce. O způsobu [testování responzivních webů](jak-testovat-responzivni-weby.md) jsem dříve psal.
 - iOS simulátor (součást XCode, jen pro Macy) občas pustím, ale BrowserStack je poslední dobou skoro rychlejší.
 
 ## Běh localhostu
