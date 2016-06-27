@@ -2,15 +2,21 @@
 
 ##   `flex-grow` – možnost zvětšování
 
-Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo –  například když uživatel zvětší okno prohlížeče. Položky si rozdělují podíly z nově získaného místa nad rámec výchozí šířky. Hodnoty jsou celá kladná čísla, výchozí je 0 a znamená, že položky nijak nerostou.
+Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo –  například když uživatel zvětší okno prohlížeče. Možné hodnoty:
+
+- `0` (výchozí) znamená, že položky nijak nerostou
+- Celá kladná čísla. Položky si rozdělují podíly z nově získaného místa nad rámec výchozí šířky. 
 
 ##   `flex-shrink` – možnosti smršťování
 
-Jakým podílem vzhledem k ostatním položkám se může definovaná položka zmenšovat, pokud v rodičovském kontejneru místo ubylo –  když uživatel zmenšil okno nebo třeba přibyla nová položka. Hodnoty jsou celá kladná čísla, výchozí je 1 – položky si z vlastní šířky ubírají rovnoměrně.
+Jakým podílem vzhledem k ostatním položkám se může definovaná položka zmenšovat, pokud v rodičovském kontejneru místo ubylo –  když uživatel zmenšil okno nebo třeba přibyla nová položka. Hodnoty jsou 
+
+- `1` (výchozí) – položky si z vlastní šířky ubírají rovnoměrně.
+- Celá kladná čísla.
 
 ##   `flex-basis` – výchozí rozměr položky
 
-Výchozí šířka položky. Alternativně výška, pokud je flex-direction: column.
+Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: column`.
 
 * `auto` (výchozí) – rozměr určuje obsah podobně jako u width: auto. Distribuce volného místa pomocí flex-grow/flex-basis se pak bude týkat jen místa, které položky okupují nad rámec svého obsahu – tzv. relativní model pružnosti.
 * `0` – nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow`/`flex-basis` se bude týkat celé šířky položky – absolutní model pružnosti.
