@@ -1,6 +1,6 @@
 #   Vlastnosti flex položky
 
-##   `flex-grow` – možnost zvětšování
+##   `flex-grow` – možnost zvětšování {#flex-grow}
 
 Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo –  například když uživatel zvětší okno prohlížeče. 
 
@@ -8,11 +8,11 @@ Jak moc může položka růst relativně k dalším položkám, pokud je k dispo
 
 Možné hodnoty:
 
-- `0` (výchozí) znamená, že položky nijak nerostou
+- `0` (výchozí) znamená, že položky nijak nerostou.
 - Celá kladná čísla. Položky si rozdělují podíly z nově získaného místa nad rámec výchozí šířky. 
 
 
-##   `flex-shrink` – možnosti smršťování
+##   `flex-shrink` – možnosti smršťování  {#flex-shrink}
 
 Jakým podílem vzhledem k ostatním položkám se může definovaná položka zmenšovat, pokud v rodičovském kontejneru místo ubylo –  když uživatel zmenšil okno nebo třeba přibyla nová položka. 
 
@@ -23,24 +23,25 @@ Možné hodnoty:
 - `1` (výchozí) – položky si z vlastní šířky ubírají rovnoměrně.
 - Celá kladná čísla.
 
-##   `flex-basis` – výchozí rozměr položky
+##   `flex-basis` – výchozí rozměr položky  {#flex-basis}
 
 Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: column`.
 
 ![vlastnost flex-basis](../dist/images/original/flexbox-flex-basis.jpg)
 
-* `auto` (výchozí) – rozměr určuje obsah podobně jako u width: auto. Distribuce volného místa pomocí flex-grow/flex-basis se pak bude týkat jen místa, které položky okupují nad rámec svého obsahu – tzv. relativní model pružnosti.
-* `0` – nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow`/`flex-basis` se bude týkat celé šířky položky – absolutní model pružnosti.
+* `auto` (výchozí) – rozměr určuje obsah podobně jako u `width: auto`. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se pak bude týkat jen místa, které položky okupují nad rámec svého obsahu – tzv. relativní model pružnosti.
+* `0` – nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se bude týkat celé šířky položky – absolutní model pružnosti.
 * Jakýkoliv CSS rozměr, např. `100px`, `15em` nebo `50%`.
 
-##   `flex` – celková pružnost položky
+##   `flex` – celková pružnost položky  {#flex}
 
 Zkratka pro všechny vlastnosti definující pružnost flex položky –  `flex-grow`, `flex-shrink` a `flex-basis`. Nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat.
 
 Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku `flex` proti konkrétním vlastnostem, které zastupuje. Důvodem je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
 
 ```css
-flex: <flex-grow> <flex-shrink> <flex-basis>
+flex: 
+  <flex-grow> <flex-shrink> <flex-basis>
 ```
 
 Výchozí hodnota je:
@@ -72,9 +73,9 @@ Zpětné nastavení výchozí hodnoty, tedy `flex: 0 1 auto`. Položky se tak s 
 * `flex: <kladné-číslo>`
 U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se vám změní výchozí velikost položky a model pružnosti, jak jsme zmiňovali u vlastnosti flex-basis.
 
-Je také dobré vědět, že se flex položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením min-width nebo min-height na nějakou nízkou hodnotu.
+Je také dobré vědět, že se flex položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením `min-width` nebo `min-height` na nějakou nízkou hodnotu.
 
-##   `order` – změna pořadí prvků
+##   `order` – změna pořadí prvků  {#order}
 
 Pořadí flex položky standardně odpovídá zdrojovému kódu, ale to můžeme změnit pomocí vlastnosti order.
 
@@ -94,16 +95,18 @@ Nezapomeňte, že order nelze použít na jiné elementy ve stránce než přím
 
 Teď je na řadě další z radostí, kterou přináší flexbox. Konečně v CSS snadno zarovnáme prvky layoutu horizontálně, ale i vertikálně.
 
-##   `margin` – zarovnání položek na hlavní ose pro jednotlivou položku
+##   `margin` – zarovnání položek na hlavní ose pro jednotlivou položku  {#margin}
 
 `margin: auto` funguje podobně jako u blokových elementů. Když se počítají rozměry flex položek, nijak se tato hodnota nezohledňuje. Zbývající volné místo se pak spravedlivě rozdělí mezi všechny takto nastavené vnější okraje.
 
 Díky tomu můžete flex položce nastavit `margin-left: auto` a tím zajistit, aby vnější okraj vyplnil všechno volné místo nalevo od ní a ona se tak zarovnala zcela vpravo. Využitelné to je namísto `float` vlastností.
 
-##   `align-self` – zarovnání položky na příčné ose
+##   `align-self` – zarovnání položky na příčné ose  {#align-self}
 
 ```css
-align-self: auto | flex-start | flex-end | center | baseline | stretch
+align-self: 
+  auto | flex-start | flex-end | 
+  center | baseline | stretch
 ```
 
 Tato vlastnost se aplikuje na jednotlivé položky, a tak se hodí pro vytvoření výjimky ze zarovnání. Výchozí hodnota je `auto`.
