@@ -27,7 +27,7 @@ flex-wrap:
   nowrap | wrap | wrap-reverse
 ```
 
-![vlastnost flex-wrap](../dist/images/original/flexbox-flex-direction.jpg)
+![vlastnost flex-wrap](../dist/images/original/flexbox-flex-wrap.jpg)
 
 Výchozí `nowrap` říká, že elementy budou vždy na hlavní ose vedle sebe (nebo pod sebou v případě, že použijete `flex-direction: column`).
 

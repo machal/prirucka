@@ -12,7 +12,7 @@ S předchozím bodem souvisí i to, že na rozdíl od blokových elementů se u 
 
 Pozicování prvků (`position: absolute|relative|fixed`) lze na rozdíl od vlastností souvisejících s `float` na flex položky běžně aplikovat.
 
-## 4. `visibility: collapse` jako u řádků tabulky
+## 4. S `visibility: collapse` flexbox pracuje jako se řádky tabulky
 
 `visibility: collapse` funguje u flex položek stejně jako u `display: table-row` nebo `table-column` elementů. A to tak, že element okupuje místo a v DOMu se s ním počítá, jen není vidět.
 
