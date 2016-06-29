@@ -1,8 +1,8 @@
-# Funkce calc()
+# Funkce `calc()`
 
 Funkce, která umožňuje vložit matematický výraz namísto hodnoty vlastnosti.
 
-Podívejme se na pár příkladů.
+Je velmi dobře podporovaná, ale málo se o ní ví. Nemluvě o její zpochybňované užitečnosti. Pojďme to napravit. Neprve příklad:
 
 ```css
 .el {
@@ -10,8 +10,6 @@ Podívejme se na pár příkladů.
   margin-bottom: calc(1em - 2px); 
 }
 ```
-
-Je velmi dobře podporovaná, ale málo se o ní ví. Nemluvě o její zpochybňované užitečnosti. Pojďme to napravit.
 
 ## Není to to samé jako matematika v preprocesorech?
 
@@ -28,6 +26,8 @@ Jenže preprocesoru dochází dech v momentě, kdy potřebuji kombinovat více j
 width: calc(100% / 3 - (2 * 1em))
 ```
 
+Že se vám to někdy hodilo a obcházeli jste to podivnými hacky? Vítejte v klubu!
+
 ## Podpora v prohlížečích
 
 Funkci `calc()` nepodporuje hlavně Internet Explorer 8, jeho starší sourozenci a také Android Browser. V době psaní textu mohou u průměrného českého webu tvořit maximálně něco kolem 3-4 % návštěvnosti. 
@@ -43,18 +43,24 @@ width: 30%;
 width: calc(100% / 3 - (2 * 1em));
 ```
 
-A prosím pěkně: pozor na chyby v některých nechvalně známých prohlížečích. Na této stránce doporučuji kliknout na „Known issues“ a hledat „crash“.
+A prosím pěkně: pozor na chyby v některých nechvalně známých prohlížečích. Na této stránce doporučuji kliknout na „Known issues“ a hledat „crash“: [caniuse.com/calc](http://caniuse.com/calc).
+
 
 ### Polyfill
 
-TODO: https://github.com/closingtag/calc-polyfill
+Vždycky říkám, že používání polyfillu na zásadní věci týkající se layoutu je dost nebezpečné. Myslete na situaci, kdy selže Javascript. Myslete na vykreslovací výkon. Myslete na svoje nervy. 
 
-### Detekce
+Pokud je i tak použítí `calc` ve starých prohlížečích nezbytné, z polyfillů vezměte tento: [github.com/closingtag/calc-polyfill](https://github.com/closingtag/calc-polyfill).
 
-https://modernizr.com/download?csscalc-setclasses
+### Detekce vlastnosti
 
+[Modernizr](https://modernizr.com/download?csscalc-setclasses) umí funkci detekovat, takže směle do toho:
 
-
-
-- https://www.w3.org/TR/css3-values/
-- 
+```css
+.no-csscalc .el {
+  /* IE8 a spol: */
+}
+.csscalc .el {
+  /* Moderní prohlížeče: */
+}
+```
