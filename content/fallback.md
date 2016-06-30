@@ -2,7 +2,7 @@
 Fallback
 ========
 
-Ve světě webového front-endu se jedná o náhradní řešení pro prohlížeče, které neznají určitou technologii.
+Ve světě webového frontendu se jedná o náhradní řešení pro prohlížeče, které neznají určitou technologii.
 
 Využívá **chytré vlastnosti HTML a CSS — ignorace neznámého**. Prohlížeče odjakživa oba jazyky zpracovávají tak, že v případě, že narazí na neznámou značku, atribut, vlastnost nebo hodnotu, ignorují ji a pokračují ve zpracování kódu.
 

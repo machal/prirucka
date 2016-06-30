@@ -2,7 +2,7 @@
 Polyfill
 ========
 
-V kontextu webového front-endu jde o javascriptový kód co vám HTML5 fíčuru rozchodí i v prohlížečích, které ji neumí.
+V kontextu webového frontendu jde o javascriptový kód co vám HTML5 fíčuru rozchodí i v prohlížečích, které ji neumí.
 
 Většina polyfillů vám umožní používat HTML5 vlastnost tak jak byste ji používali v moderních prohlížečích a podporu ve starých si nějak pořeší sami.
 

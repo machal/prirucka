@@ -40,7 +40,7 @@ Dobře, ale jak to můžeme využít? Podívejme se na několik možných scén�
 
 ### `* { box-sizing: border-box }`
 
-Někdo využívá vlastnosti box-sizing v situaci, kdy se mu špatně pracuje s W3C box modelem. Ten totiž významná část webových vývojářů považuje za neintuitivní. Takoví pak prohlížeče nechávají počítat v border-box všechny elementy. Podobný přístup mají i moderní frontned frameworky Bootstrap nebo Foundation.
+Někdo využívá vlastnosti box-sizing v situaci, kdy se mu špatně pracuje s W3C box modelem. Ten totiž významná část webových vývojářů považuje za neintuitivní. Takoví pak prohlížeče nechávají počítat v border-box všechny elementy. Podobný přístup mají i moderní frontend frameworky Bootstrap nebo Foundation.
 
 ### Fluidní layout
 
