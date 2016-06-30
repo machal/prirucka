@@ -51,7 +51,7 @@ background:
     transparent 0);
 ```    
 
-Tady je pak živá ukázka od Any Tudor: [cdpn.io/e/YyGPJo](codepen.io/thebabydino/pen/YyGPJo).
+Tady je pak živá ukázka od Any Tudor: [cdpn.io/e/YyGPJo](https://codepen.io/thebabydino/pen/YyGPJo).
 
 Ne všechno co se třpytí je `calc()`. Pojďme se teď podívat na příklady užití, které doporučují různé články na webu a které je lepší řešit jinak. 
 

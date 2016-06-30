@@ -72,5 +72,5 @@
   CSS3 přichází s armádou nových selektorů. 
 - [Box Reflection](css3-box-reflection.md)  
   Odlesk objektu. Vlastnost nezařazená ve W3.org standardech.
-- [Nezařazené](css3-nezarazeno.md)  
+- [Nezařazené](css3-nezarazene.md)  
   Ostatní a zatím nezařazené CSS3 vlastnosti.

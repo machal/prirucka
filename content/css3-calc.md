@@ -54,7 +54,7 @@ Pokud je i tak použítí `calc` ve starých prohlížečích nezbytné, z polyf
 
 ### Detekce vlastnosti
 
-[Modernizr](https://modernizr.com/download?csscalc-setclasses) umí funkci detekovat, takže směle do toho:
+[Modernizr](https://modernizr.com/) umí funkci detekovat, takže směle do toho:
 
 ```css
 .no-csscalc .el {
