@@ -16,7 +16,7 @@ Text, který jste právě začali číst provádí vývojáře aktuálním stave
 
 Bude se hodit jako každodenní pomocník při používání vlastností v praxi hlavně začínajícím a mírně pokročilým. Zkušení ale ocení první podrobný český text o Flexboxu nebo úvodní shrnutí principů kódování pro současný web.
 
-Zabýváme se kódeřinou, tedy UI vývojařinou. Nikoliv frontend programováním a Javascriptem.
+Zabýváme se kodéřinou, tedy UI vývojařinou. Nikoliv frontend programováním a Javascriptem.
 
 ## O co tady půjde?
 

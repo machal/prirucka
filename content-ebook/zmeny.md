@@ -1,4 +1,4 @@
-# Proměny kódeřiny
+# Proměny kodéřiny
 
 Jako každá profese, i vývojařina webového rozhraní reflektuje změny prostředí, ve kterém se pohybuje. To, co se v posledních letech změnilo v prostředí webového kodéra, se dá shrnout do osmi bodů.
 

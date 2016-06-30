@@ -59,7 +59,7 @@ Více na [css-snippets.com/web-fonts-faux-bold-and-italic/](http://css-snippets.
 
 ## Načítání fontů z jiných domén
 
-Kvůli bezpečnostnímu pravidlu o servírování fontů ze stejného původu (Same Origin Policy) je některých prohlížečích zakázáno načítat soubory s fonty z jiné domény. Například Explorer vám do konzole nahlásí:
+Kvůli bezpečnostnímu pravidlu o servírování fontů ze stejného původu (Same Origin Policy) je v některých prohlížečích zakázáno načítat soubory s fonty z jiné domény. Například Explorer vám do konzole nahlásí:
 
 ```
 CSS3117: @font-face failed cross-origin request.

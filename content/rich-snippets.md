@@ -13,7 +13,7 @@ Jak je z obrázku patrné, v době psaní článku máte [na českém Google](ht
 
 Jsou tři možnosti jak Google poprosit o zobrazování vašeho obsahu v úryvcích. Pro nekódery je tu klikací [Zvýrazňovač dat](https://support.google.com/webmasters/answer/2692911) a někde na půl cesty mezi klikáním a kódem pak [Pomocník](https://www.google.com/webmasters/markup-helper/), který zároveň umí vygenerovat strukturované úryvky pro emailové klienty (asi jen Gmail).
 
-Protože jsme ale na kóderském webu, ukážeme si jak lze strukturované úryvky vyznačit přímo v kódu. Google doporučuje použít technologii [mikrodata](http://www.w3.org/TR/microdata/) ve struktuře vlastní specifikace [Schema.org](http://schema.org).
+Protože jsme ale na kodérském webu, ukážeme si jak lze strukturované úryvky vyznačit přímo v kódu. Google doporučuje použít technologii [mikrodata](http://www.w3.org/TR/microdata/) ve struktuře vlastní specifikace [Schema.org](http://schema.org).
 
 ## Příklad – událost
 
