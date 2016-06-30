@@ -2,7 +2,7 @@
 
 Funkce, která umožňuje vložit matematický výraz namísto hodnoty vlastnosti.
 
-Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, ale občas se to zpochybňuje. Pojďme to napravit. Neprve příklad:
+Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, ale občas se to zpochybňuje. Pojďme to napravit. Neprve si ukažme dvě jednoduchá využití:
 
 ```css
 .el {
@@ -11,7 +11,7 @@ Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, ale občas
 }
 ```
 
-## Není to to samé jako matematika v preprocesorech?
+## Není to stejné jako matematika v preprocesorech?
 
 Není. [V preprocesoru](http://www.vzhurudolu.cz/blog/13-css-preprocesory-2#matematika) se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím než prohlížeč stránku vidí:
 
