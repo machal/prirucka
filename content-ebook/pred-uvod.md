@@ -1,1 +1,1 @@
-Verze 1.2 z 19. prosince 2015.
+Verze 1.3 z 30. června 2016.
