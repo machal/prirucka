@@ -14,7 +14,7 @@ flex-direction:
   column | column-reverse
 ```
 
-![vlastnost flex-direction](../dist/images/original/flexbox-flex-direction.jpg)
+![vlastnost flex-direction](dist/images/original/flexbox-flex-direction.jpg)
 
 Výchozí (`row`) hodnota vyskládá flex položky do řádky. Pokud chcete dělat layout do svislého směru, použijte hodnotu `column`.
 
@@ -27,7 +27,7 @@ flex-wrap:
   nowrap | wrap | wrap-reverse
 ```
 
-![vlastnost flex-wrap](../dist/images/original/flexbox-flex-wrap.jpg)
+![vlastnost flex-wrap](dist/images/original/flexbox-flex-wrap.jpg)
 
 Výchozí `nowrap` říká, že elementy budou vždy na hlavní ose vedle sebe (nebo pod sebou v případě, že použijete `flex-direction: column`).
 
@@ -52,7 +52,7 @@ justify-content:
   space-between | space-around
 ```
 
-![justify-content](../dist/images/original/flexbox-justify-content.jpg)
+![justify-content](dist/images/original/flexbox-justify-content.jpg)
 
 Vlastnost `justify-content` aplikujeme na flex kontejner. Říká, jak budou flex položky zarovnány po jeho hlavní ose. Výchozí hodnota je `flex-start`, tedy zarovnání k začátku hlavní osy.
 
@@ -66,7 +66,7 @@ align-items:
   flex-end | center | baseline
 ```
 
-![align-items](../dist/images/original/flexbox-align-items.jpg)
+![align-items](dist/images/original/flexbox-align-items.jpg)
 
 Vlastnost `align-items` lze opět aplikovat na kontejner flexboxu. Výchozí hodnota je `stretch`, tedy roztažení na celou délku příčné osy.
 
@@ -81,7 +81,7 @@ align-content:
   stretch | flex-start | flex-end | 
   center | space-between | space-around
 ```
-![align-content.jpg](../dist/images/original/flexbox-align-content.jpg)
+![align-content.jpg](dist/images/original/flexbox-align-content.jpg)
 
 Ještě jedna zarovnávací vlastnost. Tentokrát se vztahuje jen na flex kontejnery, jejichž položky se rozpadnou na více řádků.
 

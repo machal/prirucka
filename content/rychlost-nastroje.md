@@ -22,7 +22,7 @@ Má také [API](https://sites.google.com/a/webpagetest.org/docs/advanced-feature
 
 Co z výsledků WebPagetest mě zajímá?
 
-![WebPagetest.org stránka s výsledkem testu](../dist/images/original/webpagetest-schema.jpg)
+![WebPagetest.org stránka s výsledkem testu](dist/images/original/webpagetest-schema.jpg)
 
 ### 1) Speed Index
 
@@ -50,7 +50,7 @@ Dívám se samozřejmě i na další čísla. WebpageTest má mnoho zákoutí k 
 
 Pokročilá analýza a detailní testování procesů načítání v Chrome. Velmi podobný nástroj mají i ostatní moderní prohlížeče.
 
-![Chrome DevTools a analýza rychlosti](../dist/images/original/devtools-rychlost-schema.jpg)
+![Chrome DevTools a analýza rychlosti](dist/images/original/devtools-rychlost-schema.jpg)
 
 Vše podstatné je v záložce Network:
 

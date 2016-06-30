@@ -8,7 +8,7 @@ Na zařízeních, kde je možné měnit velikost okna, typicky desktopových, te
 
 Správná legrace s viewportem ovšem začíná na moderních smartphonech a tabletech. Hlavně proto, že tam viewport není jen jeden. Budeme používat terminologii [Petera-Paula Kocha](http://www.quirksmode.org/mobile/metaviewport/) a rozlišovat viewport layoutový, vizuální a ideální.
 
-![Layoutový a vizuální viewport](../dist/images/original/viewport-layoutovy-vizualni.svg)
+![Layoutový a vizuální viewport](dist/images/original/viewport-layoutovy-vizualni.svg)
 
 ## Layoutový viewport
 
