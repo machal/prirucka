@@ -20,13 +20,13 @@ Další velmi zajímavý scénář je využití Bootstrapu jako startovacího ř
 
 Ano, je. Když jej používáte špatně. :-)
 
-Bootstrap se trošku nešťastně tváří jeho jednolitý celek. Vnitřně je ovšem systematicky rozdělen do menších komponent.
+Bootstrap se trošku nešťastně tváří jako jednolitý celek. Vnitřně je ovšem systematicky rozdělen do menších komponent.
 
 Když si vyberete jen to, co na projektu potřebujete, komplexnost kódu a datová náročnost se sníží.
 
 ## Kdy Bootstrap pomůže a kdy ne?
 
-Bootstrap vám pomůže při tvorbě rozhraní webových aplikací typu administrace, při prototypování a když chcete využít některé z jeho komponent. Při dodržení jeho principů se hodí i na prezentační weby. Moc se nehodí na graficky unikání mikrosajty. Viz článek [vrdl.cz/blog/11-bootstrap-pomuze](http://www.vzhurudolu.cz/blog/11-bootstrap-pomuze).
+Bootstrap vám pomůže při tvorbě rozhraní webových aplikací typu administrace, při prototypování a když chcete využít některé z jeho komponent. Při dodržení jeho principů se hodí i na prezentační weby. Moc se nehodí na graficky unikátní mikrosajty. Viz článek [vrdl.cz/blog/11-bootstrap-pomuze](http://www.vzhurudolu.cz/blog/11-bootstrap-pomuze).
 
 Zmíněné typografické principy Bootstrapu jsem popsal zde: [vrdl.cz/prirucka/bootstrap-typografie](http://www.vzhurudolu.cz/prirucka/bootstrap-typografie).
 
