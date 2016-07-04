@@ -39,7 +39,7 @@ Takto můžete animovat téměř libovolnou CSS vlastnost včetně pozicování 
 
 S přechody jde vytvářet spousty legrace typu animace rámečku: [http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek).
 
-…nebo docela divokých hover stavů nad boxy: [tympanus.net/Tutorials/OriginalHoverEffects/](http://tympanus.net/Tutorials/OriginalHoverEffects/).
+…nebo docela divokých hover stavů nad boxy: [tympanus.net/Tutorials/OriginalHoverEffects](http://tympanus.net/Tutorials/OriginalHoverEffects/).
 
 Plnohodnotný animační nástroj to ovšem není. Pokud chcete mít průběh animace zcela pod kontrolou, podívejte se na [CSS3 animace](css3-animations.md).
 
@@ -84,7 +84,7 @@ Je dobré vědět, že animované přechody nelze aplikovat úplně na všechny 
 
 Samostatně jako `transition-timing-function: ease`. Vybrat si můžete z přednastavených: [w3.org/TR/css3-transitions/#transition-timing-function](http://www.w3.org/TR/css3-transitions/#transition-timing-function)…
 
-…nebo si nadefinovat vlastní: [matthewlein.com/ceaser](http://matthewlein.com/ceaser/].
+…nebo si nadefinovat vlastní: [matthewlein.com/ceaser](http://matthewlein.com/ceaser].
 
 ### Zpoždění
 

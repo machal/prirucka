@@ -1,4 +1,4 @@
-# Příklady s funkcí `calc()`. Kdy ji využít a kdy naopak ne?
+# Příklady s funkcí calc(): kdy ji využít a kdy naopak ne?
 
 ---
 

@@ -4,7 +4,7 @@ Font Face – netechnické aspekty
 Pokud s webfonty začínáte, dejte si pozor hlavně na dvě věci:
 
 1. **Autorská práva.** Ne každý font existuje ve verzi dovolující publikaci na webu.
-2. **Vykreslování na starších systémech.** Zkontrolujte, zda se font v dané velikosti vykresluje hezky třeba i na Windows XP (hlavně v alternativních prohlížečích) a na starších verzích Androidu. Více na [blog.typekit.com/2010/10/15/type-rendering-operating-systems/](http://blog.typekit.com/2010/10/15/type-rendering-operating-systems/)
+2. **Vykreslování na starších systémech.** Zkontrolujte, zda se font v dané velikosti vykresluje hezky třeba i na Windows XP (hlavně v alternativních prohlížečích) a na starších verzích Androidu. Více na [blog.typekit.com/2010/10/15/type-rendering-operating-systems](http://blog.typekit.com/2010/10/15/type-rendering-operating-systems/)
 
 ## Studujte typografii
 

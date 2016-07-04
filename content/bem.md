@@ -51,7 +51,7 @@ Psaní BEM syntaxe si můžete hezky usnadnit v CSS preprocesorech pomocí zano�
 }
 ```
 
-Složitější komponentu podrobněji popisuje Harry Roberts: [csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
+Složitější komponentu podrobněji popisuje Harry Roberts: [csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
 
 ## Proč BEM?
 

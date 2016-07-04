@@ -24,9 +24,9 @@ Toto je javascriptová knihovna pro detekci vlastností. Vyberete si CSS3 nebo H
 
 Pokud vás nebaví začínat projekty úplně od nuly, podívejte se na HTML5 Boilerplate, šablonu výchozího HTML souboru. Osvědčilo se mi brát ji jako zdroj znalostí, ale nepoužívat ji na reálných projektech. [html5boilerplate.com](https://html5boilerplate.com)
 
-Masivnější základna projektu je pak Web Starter Kit od Google. Kromě výchozích HTML, CSS a JS souborů je tam rovnou hotové Gulp workflow. [developers.google.com/web/starter-kit/](https://developers.google.com/web/starter-kit/)
+Masivnější základna projektu je pak Web Starter Kit od Google. Kromě výchozích HTML, CSS a JS souborů je tam rovnou hotové Gulp workflow. [developers.google.com/web/starter-kit](https://developers.google.com/web/starter-kit/)
 
-Spoustu (i docela složitých) šablon pro start projektu obsahují generátory v rámci nástroje Yeoman. [yeoman.io/generators/](http://yeoman.io/generators/)
+Spoustu (i docela složitých) šablon pro start projektu obsahují generátory v rámci nástroje Yeoman. [yeoman.io/generators](http://yeoman.io/generators/)
 
 ## Dokumentace
 

@@ -20,7 +20,7 @@ Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy. N
 
 NPM (Node Package Manager) je balíčkovací systém Node.js. To musíte stáhnout a nainstalovat jako první. 
 
-Jednoduchý postup instalace pro všechny platformy je popsaný na webu Node.js: [nodejs.org/en/download/](https://nodejs.org/en/download/). Mrkneme ale i na lepší postupy.
+Jednoduchý postup instalace pro všechny platformy je popsaný na webu Node.js: [nodejs.org/en/download](https://nodejs.org/en/download/). Mrkneme ale i na lepší postupy.
 
 ### Postup pro Windows: VS Code a Git
 

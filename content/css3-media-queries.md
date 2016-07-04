@@ -101,7 +101,7 @@ Poměrů je dnes celá řada (1.25, 1.5, 2, 3, 4), a tak tam kde to jde, doporu�
 @media screen and (device-aspect-ratio: 16/9) { ... }
 ```
 
-To byly ty nejpoužívanější typy dotazů. Existuje jich ale mnohem víc: [opera.com/docs/specs/presto26/css/mediaqueries/](http://www.opera.com/docs/specs/presto26/css/mediaqueries/).
+To byly ty nejpoužívanější typy dotazů. Existuje jich ale mnohem víc: [opera.com/docs/specs/presto26/css/mediaqueries](http://www.opera.com/docs/specs/presto26/css/mediaqueries/).
 
 
 Podpora v prohlížečích

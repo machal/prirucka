@@ -54,7 +54,7 @@ Zjednodušeně by to mohlo vypadat takto:
 }
 ```
 
-Více na [css-snippets.com/web-fonts-faux-bold-and-italic/](http://css-snippets.com/web-fonts-faux-bold-and-italic/).
+Více na [css-snippets.com/web-fonts-faux-bold-and-italic](http://css-snippets.com/web-fonts-faux-bold-and-italic/).
 
 
 ## Načítání fontů z jiných domén
@@ -94,4 +94,4 @@ Aplikace IcoMoon vám vygeneruje fonty s ikonami na míru – [icomoon.io](http:
 
 Hezké využití ikonfontů je vektorová mapa Česka – [cezetmap.cz](http://cezetmap.cz).
 
-Než se do používání ikonfontů pustíte, zvažte, zda pro vás není lepší použít rovnou vektorový formát SVG – [css-tricks.com/icon-fonts-vs-svg/](http://css-tricks.com/icon-fonts-vs-svg/).
+Než se do používání ikonfontů pustíte, zvažte, zda pro vás není lepší použít rovnou vektorový formát SVG – [css-tricks.com/icon-fonts-vs-svg](http://css-tricks.com/icon-fonts-vs-svg/).

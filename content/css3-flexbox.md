@@ -41,7 +41,7 @@ Floaty, tabulky a jejich parta *Layoutovacích technik nad hrobem* samozřejmě 
 
 Je dobré zmínit, že flexbox je určený pro layout komponent uvnitř stránek. Tedy navigací, formulářů, stránkovacích komponent atd. atd.
 
-Pro celostránkové layouty se více hodí CSS3 Grid Layout. Ten má ovšem zatím jen malou podporu v prohlížečích. Užití flexboxu pro celostránkové layouty je samozřejmě možné. Jen se na velmi pomalých zařízeních nebo internetových připojeních nebude vykreslovat optimálně: [http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/).
+Pro celostránkové layouty se více hodí CSS3 Grid Layout. Ten má ovšem zatím jen malou podporu v prohlížečích. Užití flexboxu pro celostránkové layouty je samozřejmě možné. Jen se na velmi pomalých zařízeních nebo internetových připojeních nebude vykreslovat optimálně: [http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/).
 
 ## Šup na základní pojmy — flex kontejner a flex položka, hlavní a příčná osa
 

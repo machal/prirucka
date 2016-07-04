@@ -6,7 +6,7 @@ Obrázky užívané ve stránkách si nejdříve ale musíme rozdělit do dvou k
 
 ## Obrázky v rozhraní: ikony, logotypy, dekorace
 
-Tady je rozhodně jedinou udržitelnou cestou použít vektorovou grafiku. Ikonfonty považuji za dobré, ale spíše dočasné řešení. Více o nich si přečtěte na [css-tricks.com/examples/IconFont/](https://css-tricks.com/examples/IconFont/).
+Tady je rozhodně jedinou udržitelnou cestou použít vektorovou grafiku. Ikonfonty považuji za dobré, ale spíše dočasné řešení. Více o nich si přečtěte na [css-tricks.com/examples/IconFont](https://css-tricks.com/examples/IconFont/).
 
 Zajímavější možnosti nabízí vektorový formát SVG. 
 

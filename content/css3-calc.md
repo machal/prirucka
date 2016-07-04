@@ -1,4 +1,4 @@
-# Funkce `calc()`
+# Funkce calc()
 
 Funkce, která umožňuje vložit matematický výraz namísto hodnoty vlastnosti.
 
