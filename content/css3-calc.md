@@ -13,7 +13,7 @@ Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, ale občas
 
 ## Není to stejné jako matematika v preprocesorech?
 
-Není. [V preprocesoru](http://www.vzhurudolu.cz/blog/13-css-preprocesory-2#matematika) se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím než prohlížeč stránku vidí:
+Není. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím než prohlížeč stránku vidí:
 
 ```sass
 width: (100% / 3)
@@ -54,7 +54,7 @@ Pokud je i tak použítí `calc` ve starých prohlížečích nezbytné, z polyf
 
 ### Detekce vlastnosti
 
-[Modernizr](https://modernizr.com/) umí funkci detekovat, takže směle do toho:
+Knihovna Modernizr umí funkci detekovat, takže směle do toho:
 
 ```css
 .no-csscalc .el {
