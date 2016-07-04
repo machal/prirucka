@@ -1,6 +1,6 @@
 # Buildování: Prepros, Grunt, Gulp
 
-Skoro vždy se nám na frontendu hodí provádění nějakých operací nad zdrojovými kódy. CSS chceme kompilovat z preprocesoru, pak ještě třeba minifikovat. Javascriptové soubory chceme zmenšit a spojit. Obrázky chceme datově optimalizovat a slepit do jedné [CSS sprite](http://jecas.cz/css-sprite).
+Skoro vždy se nám na frontendu hodí provádění nějakých operací nad zdrojovými kódy. CSS chceme kompilovat z preprocesoru, pak ještě třeba minifikovat. Javascriptové soubory chceme zmenšit a spojit. Obrázky chceme datově optimalizovat a slepit do jedné „CSS sprite“. 
 
 Zdrojové soubory tedy v HTML kódu nelinkujeme prohlížečům přímo. Nahradily je optimalizované distribuční verze. No a pro vytvoření distribučních verzí potřebujeme sestavovací (buildovací) nástroje.
 

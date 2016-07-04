@@ -37,4 +37,4 @@ Chrome existuje i ve verzi pro iOS. Tam je to ovšem  takový pseudo-Chrome.
 
 Na iOS totiž není možné instalovat prohlížeč s vlastním vykreslovacím jádrem. Takže iOS Chrome a všechny ostatní alternativní prohlížeče jsou pouhým uživatelským rozhraním. Stránky dále vykresluje mobilní Safari.
 
-V některých statistikách můžete vidět přístupy na web [z rozhraní Facebooku](http://www.vzhurudolu.cz/blog/19-prohlizec-facebook). Zobrazování webu uvnitř aplikací téhle sociální sítě se děje také v rámci pseudoprohlížeče. Vykreslení probíhá jádrem výchozího prohlížeče na dané platformě. Pomocí Chrome, Android Browseru na Androidu, mobilního Safari na iOS nebo třeba Internet Exploreru na Windows Phone.
+V některých statistikách můžete vidět přístupy na web z rozhraní Facebooku. Zobrazování webu uvnitř aplikací téhle sociální sítě se děje také v rámci pseudoprohlížeče. Vykreslení probíhá jádrem výchozího prohlížeče na dané platformě. Pomocí Chrome, Android Browseru na Androidu, mobilního Safari na iOS nebo třeba Internet Exploreru na Windows Phone. Více na [vrdl.cz/blog/19-prohlizec-facebook](http://www.vzhurudolu.cz/blog/19-prohlizec-facebook)

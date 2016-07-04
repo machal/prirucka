@@ -19,7 +19,7 @@ Další možnosti míry roztažení pozadí:
 
 Pokud není úplně zřejmé, jaký je rozdíl mezi `border-`, `padding-` a `content-box`, mrkněte se na schéma u vlastnosti [box-sizing](css3-box-sizing.md).
 
-Příklad k vyzkoušení – [codepen.io/machal/pen/yamFI](http://codepen.io/machal/pen/yamFI).
+Příklad k vyzkoušení – [cdpn.io/e/yamFI](http://codepen.io/machal/pen/yamFI).
 
 
 Podpora v prohlížečích

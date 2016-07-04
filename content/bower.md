@@ -32,7 +32,7 @@ Obsahy repozitářů obou knihoven se pak uloží do adresáře `bower_component
 
 Sem to všechno Bower ukládá. Adresář obvykle máme v `.gitignore`, abychom do našeho repozitáře necommitovali změny v knihovnách.
 
-Pro lokální vývoj obvykle natahuji knihovny do HTML kódu přímo z `bower_components/`, ale balíčky pro produkci si kompiluji, minifikuji a všelijak jinak upravuji pomocí [Gruntu](grunt).
+Pro lokální vývoj obvykle natahuji knihovny do HTML kódu přímo z `bower_components/`, ale balíčky pro produkci si kompiluji, minifikuji a všelijak jinak upravuji pomocí [Gruntu](grunt.md).
 
 Pro vás ale samozřejmě může být výhodné jiné workflow. A adresář, kam se budou Bower balíčky ukládat, si můžete přenastavit.
 

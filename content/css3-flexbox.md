@@ -27,7 +27,7 @@ HTML je jednoduché. O to přísnější máme požadavky na design. A víte co?
 
 Příklad si utíkejte vyzkoušet naživo na CodePen – [http://cdpn.io/e/LhGuD](http://cdpn.io/e/LhGuD).
 
-Je to hezké, že? Ale skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí [tabulkového layoutu](http://www.jakpsatweb.cz/tabulky-design.html) v roce 2001. Jenže pravdu by měl jen z velmi malé části. Flexbox toho totiž umí daleko (*daleko!*) více než tabulky.
+Je to hezké, že? Ale skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí „tabulkového layoutu“ v roce 2001. Jenže pravdu by měl jen z velmi malé části. Flexbox toho totiž umí daleko (*daleko!*) více než tabulky. 
 
 ### Proč potřebujeme flexbox?
 
@@ -41,7 +41,7 @@ Floaty, tabulky a jejich parta *Layoutovacích technik nad hrobem* samozřejmě 
 
 Je dobré zmínit, že flexbox je určený pro layout komponent uvnitř stránek. Tedy navigací, formulářů, stránkovacích komponent atd. atd.
 
-Pro celostránkové layouty se více hodí CSS3 Grid Layout. Ten má ovšem zatím jen malou podporu v prohlížečích. Užití flexboxu pro celostránkové layouty je samozřejmě možné. Jen se na velmi pomalých zařízeních nebo internetových připojeních nebude vykreslovat optimálně. [http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)
+Pro celostránkové layouty se více hodí CSS3 Grid Layout. Ten má ovšem zatím jen malou podporu v prohlížečích. Užití flexboxu pro celostránkové layouty je samozřejmě možné. Jen se na velmi pomalých zařízeních nebo internetových připojeních nebude vykreslovat optimálně: [http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/).
 
 ## Šup na základní pojmy — flex kontejner a flex položka, hlavní a příčná osa
 

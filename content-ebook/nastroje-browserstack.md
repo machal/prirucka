@@ -23,4 +23,4 @@ Ideální je třífázové testování:
 2. Simulátory/emulátory – u mě vyhrál Browserstack.
 3. Reálná zařízení – u mě iPhone 4 s iOS, Vodafone 945 se starým Androidem 2.1, iPad Mini s iOS8, Tablet Sencor Element 7 s Androidem 4.1, Samsung Galaxy S III mini s Androidem 4.1 a Nokia Lumia 520 s Windows Phone 8.
 
-Více najdete na blogu: [http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby).
+Více najdete na blogu: [vrdl.cz/prirucka/jak-testovat-responzivni-weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby).

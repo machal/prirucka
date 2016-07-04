@@ -48,5 +48,5 @@ Možné řešení například pro [animace](css3-animations.md), [zaoblené rohy
 Pár odkazů
 ----------
 
-* [Quickie CSS3 Tricks with Fallbacks, CSSTricks.com](http://css-tricks.com/quickie-css3-tricks-with-fallbacks/)
-* [Seznam HTML5 vlastností vyžadujících fallback, HTML5Please.com](http://html5please.com/#fallback)
+* Quickie CSS3 Tricks with Fallbacks, CSSTricks.com: [css-tricks.com/quickie-css3-tricks-with-fallbacks](http://css-tricks.com/quickie-css3-tricks-with-fallbacks/).
+* Seznam HTML5 vlastností vyžadujících fallback: [html5please.com/#fallback](http://html5please.com/#fallback).

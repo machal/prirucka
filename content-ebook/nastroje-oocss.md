@@ -50,7 +50,7 @@ Tři typy prvků:
 - element – prvek uvnitř objektu, jinak též podobjekt (`.button-icon` pro ikonu uvnitř tlačítka)
 - modifikátor – vlastnost objektu (`.button-primary` pro hlavní call-to-action tlačítko)
 
-U větších projektů může být výhodné tyto tři typy prvků odlišit vizuálně. Podívejte se na metodiku BEM: [http://www.vzhurudolu.cz/prirucka/bem](http://www.vzhurudolu.cz/prirucka/bem).
+U větších projektů může být výhodné tyto tři typy prvků odlišit vizuálně. Podívejte se na metodiku BEM: [vrdl.cz/prirucka/bem](http://www.vzhurudolu.cz/prirucka/bem).
 
 ## 5) Co nejnižší specifičnost
 

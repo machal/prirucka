@@ -72,7 +72,7 @@ Hned za tvarem je možné definovat velikost přechodu. První možnost je defin
 }
 ```
 
-Poznámka: aktuální verze specifikace u kružnice neumožňuje nastavit rozměry s použitím procent. [dev.w3.org/csswg/css-images-3/#radial-size-circle](http://dev.w3.org/csswg/css-images-3/#radial-size-circle)
+Poznámka: aktuální verze specifikace u kružnice neumožňuje nastavit rozměry s použitím procent: [dev.w3.org/csswg/css-images-3/#radial-size-circle](http://dev.w3.org/csswg/css-images-3/#radial-size-circle).
 
 Druhá možnost je definovat **velikost klíčovým slovem**:
 
@@ -139,7 +139,7 @@ Opakujícími se barevnými a zelenými plochami se nám vykreslí „terč“. 
 Podpora v prohlížečích
 ----------------------
 
-Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini. Android Browser 2.3 opakované gradienty nezvládne vůbec a v podpoře běžných gradientů má také mezery. [caniuse.com/gradients](http://caniuse.com/gradients)
+Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini. Android Browser 2.3 opakované gradienty nezvládne vůbec a v podpoře běžných gradientů má také mezery: [caniuse.com/gradients](http://caniuse.com/gradients).
 
 Nezapomeňte tedy vždy definovat fallback. Gradient se považuje za obrázek na pozadí, takže si můžete fallback definovat jako běžnou barvu:
 
@@ -185,15 +185,15 @@ Tipy a triky
 
 Nezapomeňte, že gradient je vlastně **obrázek na pozadí elementu**, takže ho můžete použít pro definování obrázku odrážky (`list-style-image`) nebo pro obrázek na pozadí rámečku ([border-image](css3-border-image.md)).
 
-Nejobvyklejší netriviální použití gradientů jsou **grafická tlačítka** vykreslená pomocí CSS. [cubiq.org/dropbox/cssgrad.html](http://cubiq.org/dropbox/cssgrad.html)
+Nejobvyklejší netriviální použití gradientů jsou **grafická tlačítka** vykreslená pomocí CSS: [cubiq.org/dropbox/cssgrad.html](http://cubiq.org/dropbox/cssgrad.html).
 
-Takřka **vědecké povídání o gradientech**. Ana Tudor jde v následujícím odkazu pořádně do hloubky a na pomoc si bere matematiku. [hugogiraudel.com/2013/02/04/css-gradients/](http://hugogiraudel.com/2013/02/04/css-gradients/)
+Takřka **vědecké povídání o gradientech**. Ana Tudor jde v následujícím odkazu pořádně do hloubky a na pomoc si bere matematiku: [hugogiraudel.com/2013/02/04/css-gradients](http://hugogiraudel.com/2013/02/04/css-gradients/).
 
-**ColorZilla Gradient Editor** vám pomůže vygenerovat kód gradientu i pro starší prohlížeče, včetně fallbacku pro IE8 a IE9. [colorzilla.com/gradient-editor/](http://colorzilla.com/gradient-editor/)
+**ColorZilla Gradient Editor** vám pomůže vygenerovat kód gradientu i pro starší prohlížeče, včetně fallbacku pro IE8 a IE9: [colorzilla.com/gradient-editor](http://colorzilla.com/gradient-editor/).
 
-Lea Verou má hezkou galerii **barevných vzorů** vytvořených jen s pomocí gradientů. Berte to ale raději jen jako ukázku možností. [lea.verou.me/css3patterns](http://lea.verou.me/css3patterns)
+Lea Verou má hezkou galerii **barevných vzorů** vytvořených jen s pomocí gradientů. Berte to ale raději jen jako ukázku možností: [lea.verou.me/css3patterns](http://lea.verou.me/css3patterns).
 
-Právě zmíněné barevné vzory často využívají tzv. **ostrý přechod**, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana. `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);`  [cdpn.io/e/licEd](http://cdpn.io/e/licEd)
+Právě zmíněné barevné vzory často využívají tzv. **ostrý přechod**, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana: `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);` [cdpn.io/e/licEd](http://cdpn.io/e/licEd).
 
 
 

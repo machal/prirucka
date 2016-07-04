@@ -83,7 +83,7 @@ Definují začátek (klíčové slovo `from` nebo `0%`), průběh (pomocí proce
 Podpora v prohlížečích
 ----------------------
 
-CSS3 animace nepodporuje například IE9 a starší: [caniuse.com/#feat=css-animation](http://caniuse.com/#feat=css-animation)
+CSS3 animace nepodporuje například IE9 a starší: [caniuse.com/css-animation](http://caniuse.com/#feat=css-animation).
 
 Strategii podpory starších prohlížečů je dobré zvolit podle typu animace.
 

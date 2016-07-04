@@ -143,12 +143,12 @@ Vše podle těchto dvou hesel:
 
 Jde o javascriptové knihovny, které simulují podporu nových vlastností i v prohlížečích, které je neumí. Jsou velmi populární ve světě javascriptových vývojářů, pomohou ale i HTML/CSS kodérům. Příkladem budiž Respond.js, který zapne podporu CSS3 Media Queries i ve starších Explorerech, nebo Picturefill, který zase rozchodí responzivní obrázky – `<img srcset sizes>` a `<picture>`.
 
-Kromě ověřeného [Respond.js](https://github.com/scottjehl/Respond) ale polyfilly u CSS3 vlastností nedoporučuji nasazovat. Obvykle zhoršují výkonnost stránky a činí vzhled závislým na Javascriptu.
+Kromě ověřeného Respond.js ale polyfilly u CSS3 vlastností nedoporučuji nasazovat. Obvykle zhoršují výkonnost stránky a činí vzhled závislým na Javascriptu.
 
 ## 5. Generovaný fallback
 
 Zmiňoval jsem CSSnext a postprocessing, musíme to proto ještě jednou udělat v kapitole o vytváření fallbacků.
 
-Alternativou k Respond.js, která zajistí fungování stránky i v prohlížečích bez podpory Media Queries, je zmíněný [grunt-legacssy](https://github.com/robinpokorny/grunt-legacssy), který vygeneruje verzi CSS bez dotazů na média.
+Alternativou k Respond.js, která zajistí fungování stránky i v prohlížečích bez podpory Media Queries, je zmíněný grunt-legacssy, který vygeneruje verzi CSS bez dotazů na média. Více: [github.com/robinpokorny/grunt-legacssy](https://github.com/robinpokorny/grunt-legacssy).
 
-Generovaný fallback ovšem většinou jen automatizuje už zmíněný definovaný fallback jako v případě [grunt-pixrem](https://github.com/robwierzbowski/grunt-pixrem).
+Generovaný fallback ovšem většinou jen automatizuje už zmíněný definovaný fallback jako v případě grunt-pixrem. Více: [github.com/robwierzbowski/grunt-pixrem](https://github.com/robwierzbowski/grunt-pixrem).

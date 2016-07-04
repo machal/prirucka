@@ -34,7 +34,7 @@ Pokud se tedy pomocí media query rozhodneme, že od šířky okna 801 pixelů n
 
 … zvětší se nám všechny rozměry nastavené v jednotkách `rem`. Nadpis `<h1>` tedy bude mít v těchto šířkách okna velikost 38 pixelů (`25px` × 1,5).
 
-Na živo můžete vyzkoušet tady: [cdpn.io/e/mnbaA](http://cdpn.io/e/mnbaA)
+Na živo můžete vyzkoušet tady: [cdpn.io/e/mnbaA](http://cdpn.io/e/mnbaA).
 
 ### Podpora v prohlížečích
 
@@ -47,7 +47,7 @@ font-size: 1.5rem;
 
 Fallback je lepší nechat si generovat automaticky, například pomocí CSS preprocesoru.
 
-Více o podpoře v prohlížečích: [caniuse.com/rem](http://caniuse.com/rem)
+Více o podpoře v prohlížečích: [caniuse.com/rem](http://caniuse.com/rem).
 
 
 Jednotky viewportu: vw, vh, vmin, vmax
@@ -74,7 +74,7 @@ Příkladem budiž roztažení výšky layoutu stránky na celou výšku okna pr
 
 ### Podpora v prohlížečích
 
-V posledních verzích umí všechny moderní prohlížeče kromě Opery Mini. [caniuse.com/viewport-units](http://caniuse.com/viewport-units)
+V posledních verzích umí všechny moderní prohlížeče kromě Opery Mini: [caniuse.com/viewport-units](http://caniuse.com/viewport-units).
 
 Je to ovšem trochu složitější:
 

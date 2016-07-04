@@ -12,7 +12,7 @@ Kodérům zase ohromně šetří práci nástroje jako Brackets nebo Avocode, kt
 
 Další vliv mají UI knihovny typu Bootstrap. Díky nim se programátoři pro tvorbu uživatelského rozhraní interních webových aplikací obejdou bez grafika, a dokonce bez vývojáře rozhraní.
 
-Týmy, jež pracují na vlastním webovém produktu, zase zjistily, že nejefektivněji půjdou dopředu nikoliv kreslením dalších a dalších obrazovek ve Photoshopu, ale vytvořením vlastního Bootstrapu. Rozhraní webů a hlavně webových aplikací je možné pojmout jako skládanku samostatných komponent. Znovupoužitelných lego kostek. V ČR mezi průkopníky tohoto přístupu patří [Jobs UI](http://www.jobs.cz/ui/) nebo GoodData.
+Týmy, jež pracují na vlastním webovém produktu, zase zjistily, že nejefektivněji půjdou dopředu nikoliv kreslením dalších a dalších obrazovek ve Photoshopu, ale vytvořením vlastního Bootstrapu. Rozhraní webů a hlavně webových aplikací je možné pojmout jako skládanku samostatných komponent. Znovupoužitelných lego kostek. V ČR mezi průkopníky tohoto přístupu patří GoodData nebo LMC se svým Jobs UI: [jobs.cz/ui](http://www.jobs.cz/ui/).
 
 Jako frontend designér mám zase zajímavé zkušenosti s návrhem responzivních webů rovnou v prohlížeči. Kombinace designu v HTML a CSS s grafickým editorem by ovšem vydala na samostatnou knížku. Začít ale můžete v tomto článku: [vrdl.cz/blog/38-design-v-prohlizeci](http://www.vzhurudolu.cz/blog/38-design-v-prohlizeci).
 

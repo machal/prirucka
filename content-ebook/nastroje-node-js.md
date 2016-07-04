@@ -6,5 +6,4 @@ Potřebujeme nástroje pro instalaci a správu balíčků a pak něco pro buildo
 
 Budeme se bavit o NPM, Boweru, Gruntu či Gulpu. Vždy je dobré si uvědomit, že to jsou nástroje vycházející právě z Node.js světa.
 
-- [nodejs.org](https://nodejs.org/)
-- [cs.wikipedia.org/wiki/Node.js](https://cs.wikipedia.org/wiki/Node.js)
+Více na [nodejs.org](https://nodejs.org/).

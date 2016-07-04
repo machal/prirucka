@@ -19,7 +19,7 @@ Připravovat technické řešení webu *křápovzdorně* – s ohledem na nejni�
 
 > Progressive enhancement – začít se základní funkcionalitou a poté krok po kroku zlepšovat uživatelský prožitek s tím, že před aplikací daného vylepšení nejprve otestujeme jeho podporu.
 
-– Honza Sládek, [Graceful degradation vs. progressive enhancement, Zdroják.cz](http://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/)
+– Honza Sládek, „Graceful degradation vs. progressive enhancement“, Zdroják.cz: [zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement](http://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/)
 
 Cílem postupného vylepšování je garance poskytnutí obsahu nebo hlavní funkce stránky bez ohledu na technologické vybavení uživatele.
 

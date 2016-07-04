@@ -2,7 +2,7 @@
 
 Block, Element, Modifier. Metodika pro pojmenovávání tříd v CSS.
 
-Jde vlastně o pojmenovávací konvenci pro psaní [objektových CSS](oocss.md). BEM vymysleli [v Yandexu](https://en.bem.info/method/key-concepts/).
+Jde vlastně o pojmenovávací konvenci pro psaní [objektových CSS](oocss.md). BEM vymysleli v ruském Yandexu.
 
 Hlavní myšlenka je v rozdělení tříd do těchto tří kategorií:
 
@@ -42,7 +42,7 @@ Pak:
 - `.nav--hidden` je modifikátor (varianta komponenty)
 - `.nav__item` je element (potomek komponenty)
 
-Psaní BEM syntaxe si můžete hezky usnadnit [v CSS preprocesorech](http://www.vzhurudolu.cz/blog/13-css-preprocesory-2) pomocí zanořování:
+Psaní BEM syntaxe si můžete hezky usnadnit v CSS preprocesorech pomocí zanořování:
 
 ```less
 .nav {
@@ -51,13 +51,11 @@ Psaní BEM syntaxe si můžete hezky usnadnit [v CSS preprocesorech](http://www.
 }
 ```
 
-Složitější komponentu podrobněji popisuje [Harry Roberts](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
+Složitější komponentu podrobněji popisuje Harry Roberts: [csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
 
 ## Proč BEM?
 
 - Protože v CSS i HTML snadno poznáte s jakým typem třídy máte tu čest. Poznají to i programátoři, kteří přijdou do styku jen s HTML.
 - Protože je snadné se jej naučit a díky tomu se z BEMu stává standard.
 - Protože je na rozdíl od jiných způsobů organizace CSS velmi přímočarý. Srovnejte třeba se SMACSS.
-
-
 

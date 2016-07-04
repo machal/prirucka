@@ -11,7 +11,7 @@ Dozvíte se, proč `box-sizing: border-box` milují vývojáři, kteří dělaj�
 box-sizing: content-box | border-box | padding-box;
 ```
 
-Vzpomínáte na [tradiční box-model](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug), který počítal IE6 a starší v nestandardním módu?
+Vzpomínáte na tradiční box-model, který počítal IE6 a starší v nestandardním módu? Nevzpomínáte? Gratuluji, jste šťastní lidé: [wikipedia.org/wiki/Internet_Explorer_box_model_bug](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug).
 
 ```
 Šířka nebo výška elementu =

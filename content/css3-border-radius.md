@@ -51,9 +51,9 @@ border-bottom-left-radius: 4em;
 Tipy a triky
 ------------
 
-Jak pomocí `border-radius` vykreslit **kruhové avatary**? [trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/](http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/)
+Jak pomocí `border-radius` vykreslit **kruhové avatary**? [trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/](http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/).
 
-Jak na **tabulky se zaoblenými rohy**? Na tabulky s `border-collapse: collapse` a rodičovské prvky s obrázkem uvnitř je potřeba aplikovat `overflow: hidden`. [cdpn.io/e/jpdFm](http://cdpn.io/e/jpdFm)
+Jak na **tabulky se zaoblenými rohy**? Na tabulky s `border-collapse: collapse` a rodičovské prvky s obrázkem uvnitř je potřeba aplikovat `overflow: hidden`: [cdpn.io/e/jpdFm](http://cdpn.io/e/jpdFm).
 
 
 Podpora v prohlížečích

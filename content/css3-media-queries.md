@@ -101,7 +101,7 @@ Poměrů je dnes celá řada (1.25, 1.5, 2, 3, 4), a tak tam kde to jde, doporu�
 @media screen and (device-aspect-ratio: 16/9) { ... }
 ```
 
-To byly ty nejpoužívanější typy dotazů. Existuje jich ale [mnohem víc](http://www.opera.com/docs/specs/presto26/css/mediaqueries/).
+To byly ty nejpoužívanější typy dotazů. Existuje jich ale mnohem víc: [opera.com/docs/specs/presto26/css/mediaqueries/](http://www.opera.com/docs/specs/presto26/css/mediaqueries/).
 
 
 Podpora v prohlížečích
@@ -111,6 +111,6 @@ IE8 neumí ani základní CSS3 Media Queries. Existuje naštěstí hned několik
 
 Tři z možných strategií, jak se vypořádat s tím, že IE8− Media Queries nepodporuje.
 
-1. Použijte polyfill [Respond.js](https://github.com/scottjehl/Respond). Je odzkoušený a dostatečně rychlý. Používá jej například i populární frontend framework Bootstrap.
+1. Použijte polyfill Respond.js. Je odzkoušený a dostatečně rychlý. Používá jej například i populární frontend framework Bootstrap: [github.com/scottjehl/Respond](https://github.com/scottjehl/Respond).
 2. Pište CSS tak, aby nedostatky IE8− nebyly problém. Výchozí tedy pro desktop a do dotazů na média dejte deklarace pro menší displeje.
-3. Nebo vezměte na pomoc CSS preprocesor a buď použijte [body třídy](http://kratce.vzhurudolu.cz/post/49758753713/responzivni-mobile-first-s-pomoci-body-trid) nebo si nechte kompilovat zvláštní soubor pro starší [IÉčka](http://kratce.vzhurudolu.cz/post/42187934506/mobile-first-css).
+3. Nebo vezměte na pomoc CSS preprocesor a buď použijte body třídy nebo si nechte kompilovat zvláštní soubor pro starší IÉčka: [kratce.vzhurudolu.cz/post/49758753713/responzivni-mobile-first-s-pomoci-body-trid](http://kratce.vzhurudolu.cz/post/49758753713/responzivni-mobile-first-s-pomoci-body-trid) a [kratce.vzhurudolu.cz/post/42187934506/mobile-first-css](http://kratce.vzhurudolu.cz/post/42187934506/mobile-first-css).

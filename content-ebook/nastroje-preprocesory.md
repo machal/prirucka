@@ -107,7 +107,7 @@ Pokud importujeme běžný CSS soubor, preprocesory ve zkompilovaném kódu zach
 
 Preprocesory mají mnoho a mnoho dalších vlastností. Podívejte se na ně:
 
-- [lesscss.org/features/](http://lesscss.org/features/)
+- [lesscss.org/features](http://lesscss.org/features/)
 - [sass-lang.com/guide](http://sass-lang.com/guide)
 
 Každá složitější vlastnost ale komplikuje srozumitelnost CSS kódu. Osvědčilo se mi trvat na jednodušším kódu a z preprocesorů si brát jen ty nejdůležitější vlastnosti. Pokud pracujete v týmu, je jednoduchost CSS obzvlášť důležitá.
