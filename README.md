@@ -43,7 +43,9 @@ Lorem ipsum lorem ipsum:
 
 ### Video
 
+```markdown
 <p class="video" markdown="1">
 Video: [BrowserStack](https://www.youtube.com/watch?v=VN8CFG-YajE) - Jak testovat web ve všech prohlížečích a nemuset řešit virtuály a emulátory.
 </p>
+```
 
