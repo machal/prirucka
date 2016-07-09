@@ -12,5 +12,6 @@
 
 Seznam všech novinek je na webu: [vrdl.cz/ebook/info#verze](http://www.vzhurudolu.cz/ebook/info#verze).
 
+A teď už přeji příjemné čtení.
 
 
