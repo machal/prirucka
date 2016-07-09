@@ -1,4 +1,4 @@
-# Nepostradatelný pomocník Browsersync: živý náhled webu a ladění na zařízeních
+# Browsersync: živý náhled webu a ladění na zařízeních
 
 Browsersync je velmi užitečný nástroj pro lokální vývoj webů. Pomáhá hned s několika činnostmi naráz:
 
@@ -8,7 +8,7 @@ Browsersync je velmi užitečný nástroj pro lokální vývoj webů. Pomáhá h
 
 Browsersync je Node.js komponenta, takže je kompatibilní [s Gruntem](grunt.md), Gulpem, ale i dalšími nástroji tohoto ekosystému. Je opensource a zdarma: [browsersync.io](https://www.browsersync.io/).
 
-V textu budu jeho instalaci a základní vlastnosti ukazovat na příkladu. Zkušenější mohou skočit rovnou na poslední část - pokročilejší tipy. 
+V textu budu jeho instalaci a základní vlastnosti ukazovat na příkladu. Zkušenější mohou skočit rovnou na poslední část „Další tipy pro práci s Browsersync“. 
 
 ## Instalace ukázky krok za krokem
 
@@ -30,7 +30,7 @@ To bychom měli. A teď ještě k čemu nám to bude, že ano?
 
 ## Živé promítání změn do prohlížeče
 
-Upravíte CSS nebo HTML soubor a změny se vám hned projeví v prohlížeči bez obnovení stránky. Možná už znáte z jiných nástrojů jako je LiveReload. 
+Upravíte CSS nebo HTML soubor a změny se vám hned projeví v prohlížeči bez obnovení stránky. Možná už to znáte z jiných nástrojů, jako je LiveReload. 
 
 Pokud živý náhled neznáte nebo nevěříte, že to nějak zásadně pomáhá, opravdu (ale *opravdu*) si to zkuste.
 
@@ -63,12 +63,12 @@ Vezměte mobil připojený do stejné wifi a vyťukejte do tamního prohlížeč
 Proč vám o takové *blbině* vyprávím? Protože šetří děsně energie při [testování responzivních webů](jak-testovat-responzivni-weby.md) na reálných zařízeních.
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> - obě vlastnosti rozebrány ve videu. Podívejte se.
+Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> – obě vlastnosti rozebrány ve videu. Podívejte se.
 </p>
 
 ## Ladění webu na mobilních zařízeních
 
-Díky Browsersync také dostanete k dispozici jednoduchý nástroj podobný DevTools vašeho prohlížeče. Prostě *bazmek* co umožňuje ladění HTML, CSS a JS kódu. Browsersync pro to využívá technologii Weinre.
+Díky Browsersync také dostanete k dispozici jednoduchý nástroj podobný DevTools vašeho prohlížeče. Prostě *bazmek*, co umožňuje ladění HTML, CSS a JS kódu. Browsersync pro to využívá technologii Weinre.
 
 Zkoušíte příklad a máte připojený mobil? 
 
@@ -77,14 +77,14 @@ Zkoušíte příklad a máte připojený mobil?
 3. Zapněte „Remote Debugger (weinre)“.
 4. Klikněte na „Access remote debugger (opens in a new tab)“. V prohlížeči se otevře něco jako vývojářské nástroje. Tohle je Weinre.
 5. Mezi „Targets“ zvolte ten první. Pravděpodobně to bude mobil, který jste před chvíli připojili.
-6. Teď už stačí kliknout třeba na „Elements“ nebo „Console“, protože jste v prostředí podobnému DevTools vašeho prohlížeče.  
+6. Teď už stačí kliknout třeba na „Elements“ nebo „Console“, protože jste v prostředí podobném DevTools vašeho prohlížeče.  
 
 Weinre (vyslovujte jako *„winery“*) není tak pokročilá aplikace jako v prohlížečích vestavěné vývojářské nástroje. Máte ovšem k dispozici DOM, CSS a JS konzoli. To je pro základní ladění dost dobré. Ohromná výhoda Weinre je v tom, že můžete ladit napříč platformami. Třeba se z desktopového Firefoxu připojit do mobilního Safari. 
 
 Homepage Weinre má trošku krkolomnější adresu: [people.apache.org/~pmuellr/weinre/docs/latest/Home.html](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html)
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=3g-AaEkc47M">Browsersync: ladění mobilních prohlížečů </a> - vzdálené ladění pomocí Weinre a dalších funkcí Browsersync.
+Video: <a href="https://www.youtube.com/watch?v=3g-AaEkc47M">Browsersync: ladění mobilních prohlížečů </a> – vzdálené ladění pomocí Weinre a dalších funkcí Browsersync.
 </p>
 
 ## Browsersync a Grunt
@@ -107,7 +107,7 @@ browserSync: {
 
 Co jsem tím nastavil?
 
-- V `bsFiles` je cesta k souborům, které se budou naživo vkládat do prohlížeče jakmile je změníte.
+- V `bsFiles` je cesta k souborům, které se budou naživo vkládat do prohlížeče, jakmile je změníte.
 - `watchTask: true` v nastavení úlohy říká, že soubory sledujete ještě `watch` pluginem. Pravděpdobně totiž po změně souboru provádíte ještě další operace nad nimi – minifikaci, spojování atd. BrowserSync tomuto procesu nesmí stát v cestě.
 - V `proxy: 'vzhurudolu.localhost'` je adresa, na které mi projekt už na lokále běží. Využívám tedy jiný server (v mém případě Apache z MAMP balíčku). Je ale dobré vědět, že Browsersync nabízí vlastní server. Více v další části. 
 
@@ -147,6 +147,6 @@ Zobrazení obrysů prvků kvůli testování CSS layoutu můžete nastavit na `h
 
 Viz také [Pesticide.io](http://pesticide.io/).
 
-To by mohlo být všechno. Browsersync mám tedy pomůže zefektivnit práci s frontend technologiemi a testování na mobilních zařízeních. Patří k mým nejoblíbenějším nástrojům. Zkuste ho.
+To by mohlo být všechno. Browsersync vám tedy pomůže zefektivnit práci s frontend technologiemi a testování na mobilních zařízeních. Patří k mým nejoblíbenějším nástrojům. Zkuste ho.
 
 

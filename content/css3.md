@@ -63,11 +63,11 @@
 ## Další
 
 - [Jednotky](css3-jednotky.md)  
-  Jednotky jako root `em` (`rem`) nebo závislé od velikosti viweportu (`vw`, `vh`).
+  Jednotky jako root `em` (`rem`) nebo závislé na velikosti viewportu (`vw`, `vh`).
 - [calc()](css3-calc.md)  
   Funkce pro počítání matematických výrazů, včetně kombinací jednotek.
 - [RGBa](css3-rgba.md)  
-  RGB barva se čtvrtým číslem, alfa kanálem, jež říká informaci o hodnotě průhlednosti.
+  RGB barva se čtvrtým číslem, alfa kanálem, jež podává informaci o hodnotě průhlednosti.
 - [Selektory](css3-selektory.md)  
   CSS3 přichází s armádou nových selektorů. 
 - [Box Reflection](css3-box-reflection.md)  

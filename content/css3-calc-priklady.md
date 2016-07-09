@@ -10,14 +10,14 @@ width: calc(100% / 7);
 
 Proč nenapsat rovnou `width: 14.2857`? Ze dvou důvodů:
 
-1. **Čitelnost kódu.** Vsaďte se, že na původ čísla 14,2857 zapomente. Nejpozději za týden. Správa této části kódu pro vás pak bude znamenat kladení otázek „jak jsem k tomu číslu došel?“.
-2. **Zaokrouhlování.** V celé kráse vypadá takto: 14,285714286. Kodéři občas podlehnou pokušení a desetinná místa zakrouhlí. A pak se diví, že se jim v nějakém konkrétním rozlišení a prohlížeči rozpadlo rozvržení stránky. Nebuďte takoví kodéři. Nezaokrouhlujte.
+1. **Čitelnost kódu.** Vsaďte se, že na původ čísla 14,2857 zapomenete. Nejpozději za týden. Správa této části kódu pro vás pak bude znamenat kladení otázek „jak jsem k tomu číslu došel?“.
+2. **Zaokrouhlování.** V celé kráse vypadá takto: 14,285714286. Kodéři občas podlehnou pokušení a desetinná místa zaokrouhlí. A pak se diví, že se jim v nějakém konkrétním rozlišení a prohlížeči rozpadlo rozvržení stránky. Nebuďte takoví kodéři. Nezaokrouhlujte.
 
 ## 2) Responzivní obrázky
 
 V parametru `sizes` značky `<img>` se bez `calc()` nedá obejít. Zkuste si bez téhle prima funkce spočítat šířku obrázku uvnitř layoutu, který v responzivním layoutu splňuje následující podmínky:
 
-1. Na větších displejích zabírá poloviny šířky layoutu stránky. Ale bez vnějších okrajů layoutu (10 pixelů) a samotné stránky (15 pixelů).
+1. Na větších displejích zabírá polovinu šířky layoutu stránky. Ale bez vnějších okrajů layoutu (10 pixelů) a samotné stránky (15 pixelů).
 2. Na menších zabírá celou šířku viewportu bez vnějších okrajů stránky (15 pixelů).
 
 ```
@@ -53,7 +53,7 @@ background:
 
 Tady je pak živá ukázka od Any Tudor: [cdpn.io/e/YyGPJo](https://codepen.io/thebabydino/pen/YyGPJo).
 
-Ne všechno co se třpytí je `calc()`. Pojďme se teď podívat na příklady užití, které doporučují různé články na webu a které je lepší řešit jinak. 
+Ne všechno, co se třpytí, je `calc()`. Pojďme se teď podívat na příklady užití, které doporučují různé články na webu a které je lepší řešit jinak. 
 
 ## Tři známá využití `calc()`, která naopak stojí za starou bačkoru
 

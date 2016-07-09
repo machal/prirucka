@@ -8,7 +8,7 @@ Pokud si rádi šetříte práci, je Grunt naprosto návyková záležitost.
 
 ## Jak Grunt funguje?
 
-V praxi to vypadá tak, že si něco spustíte na příkazové řádce, ono vám to hlídá změny v souborech a po jejich provedení vyvolá nějaké akce. Další úlohy se zase spouštějí ručně, třeba nahrání webu na server.
+V praxi to vypadá tak, že si něco spustíte na příkazové řádce, ono vám to hlídá změny v souborech a po jejich provedení vyvolá nějaké akce. Další úlohy, třeba nahrání webu na server, se zase spouštějí ručně.
 
 Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojování do jednoho kvůli šetření requestů pro zvýšení rychlosti načítání. Nebo zpracování preprocesorového kódu do CSS. Grunt sám o sobě nic neumí, to až stovky existujících pluginů z něj dělají tu velkou věc.
 
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       }
     },
 
-    // Vytvoreni minifikovaneho CSS pro produkci:
+    // Vytvoření minifikovaného CSS pro produkci:
 
     cssmin: {
       css: {
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
       }
     },
 
-    // Sledovani zmen v LESS souborech:
+    // Sledování změn v LESS souborech:
 
     watch: {
       less: {
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
     }
   });
 
-  // Alias ulohy:
+  // Alias úlohy:
 
   grunt.registerTask('css', ['less', 'cssmin']);
   grunt.registerTask('default', ['watch']);
@@ -83,7 +83,7 @@ Nejdříve nakonfigurujeme pluginy `less`, `cssmin` a `watch`. Pak z nich vytvo�
 
 Když tedy začínáme práci na projektu, příkazem `grunt` pustíme `default` úlohu a začnou se nám sledovat změny v souborech.
 
-Když už tedy máme `Gruntfile.js` s konfigurací, můžete se Gruntu říct, aby vám zobrazil všechny dostupné příkazy: 
+Když už tedy máme `Gruntfile.js` s konfigurací, můžete Gruntu říct, aby vám zobrazil všechny dostupné příkazy: 
 
 ```bash
 grunt --help
@@ -96,6 +96,6 @@ To by pro začátek mohlo o Gruntu stačit. Tady jsou odkazy:
 
 ## Grunt versus Gulp
 
-Konkurenční nástroj – Gulp – umí v zásadě totéž co Grunt, jen je v základu rychlejší a konfigurace úloh provádí pomocí javascriptového kódu. Je proto snadnější v něm věci zobecňovat a je tak vhodnější pro programátory nebo větší projekty. Grunt je přehlednější pro CSS kodéry a začátečníky.
+Konkurenční nástroj – Gulp – umí v zásadě totéž co Grunt, jen je v základu rychlejší a konfigurace úloh provádí pomocí javascriptového kódu. Je proto snadnější v něm věci zobecňovat, a tak je vhodnější pro programátory nebo větší projekty. Grunt je zase přehlednější pro CSS kodéry a začátečníky.
 
 Více na [gulpjs.com](http://gulpjs.com/).

@@ -1,6 +1,6 @@
 # CSS3 vlastnosti nezařazené v tomto textu
 
-Většinou jde o technologie, která zatím nemají širokou podporu prohlížečů a hodí se jen pro speciální případy využití. Přidávám i ty, které stojí za pozornost, ale zatím jsem je nezdokumentoval.
+Většinou jde o technologie, které zatím nemají širokou podporu prohlížečů a hodí se jen pro speciální případy případy. Přidávám i ty, které sice stojí za pozornost, ale zatím jsem je nezdokumentoval.
 
 ## Filtry
 
@@ -18,22 +18,22 @@ Zobrazení obrázku nebo elementu přes masku tvořenou jiným obrázkem. Hodilo
 - [jecas.cz/mask](http://jecas.cz/mask)
 - [w3.org/TR/css-masking](https://www.w3.org/TR/css-masking/)
 
-## Grid, mřížka
+## Grid (mřížka)
 
-Layout do mřížky. Zatímco [flexbox](css3-flexbox.md) je vymyšlený pro design komponent uživatelského rozhraní, grid pro layout celých stránek. Podpora je v době psaní jen experimentální. Existuje sice polyfill, pro layout bych ho ovšem používat nedoporučoval. Grid layout ale bude po flexboxu další velká věc, takže doporučuji sledovat jeho vývoj. 
+Layout do mřížky. Zatímco [flexbox](css3-flexbox.md) je vymyšlený pro design komponent uživatelského rozhraní, grid pro layout celých stránek. Podpora je v době psaní jen experimentální. Existuje sice polyfill, pro layout bych ho ovšem používat nedoporučoval. Každopádně grid layout bude po flexboxu další velká věc, takže doporučuji sledovat jeho vývoj. 
 
 - [caniuse.com/grid](http://caniuse.com/grid)
 - [w3.org/TR/css3-grid-layout](https://www.w3.org/TR/css3-grid-layout/)
 
-## Hyphens, spojovníky
+## Hyphens (spojovníky)
 
-Definuje, zda budou slova na konci řádků automaticky rozdělovány pomocí spojovníků. Co podpora? Kromě Chrome, Opery a Android Browseru se to už naučily všechny prohlížeče. Ale – vzhledem k povaze vlastnosti – jejímu využití nic nebrání. S českým textem to bude nejlépe fungovat v Exploreru.
+Definuje, zda budou v případě potřeby slova na konci řádků automaticky rozdělována pomocí spojovníků. Co podpora? Kromě Chrome, Opery a Android Browseru se to už naučily všechny prohlížeče. Ale – vzhledem k povaze vlastnosti – jejímu využití nic nebrání. S českým textem to bude nejlépe fungovat v Exploreru.
 
 - [caniuse.com/hyphens](http://caniuse.com/hyphens)
 - [jecas.cz/hyphens](http://jecas.cz/hyphens)
 - [w3.org/TR/css-text-3](https://www.w3.org/TR/css-text-3/#hyphens-property)
 
-## @supports, detekce podpory vlastností
+## @supports (detekce podpory vlastností)
 
 Testuje dostupnost CSS vlastností v prohlížeči. Standardizovaná náhrada javascriptové knihovny Modernizr. Dnes už podporují všechny moderní prohlížeče, jen ten Explorer to už nedožene. Doufám, že o `@supports` brzy napíšu více.
 

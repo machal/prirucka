@@ -2,7 +2,7 @@
 
 Funkce, která umožňuje vložit matematický výraz namísto hodnoty vlastnosti.
 
-Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, ale občas se to zpochybňuje. Pojďme to napravit. Neprve si ukažme dvě jednoduchá využití:
+Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, i když se to občas zpochybňuje. Pojďme to napravit. Nejprve si ukažme dvě jednoduchá využití:
 
 ```css
 .el {
@@ -13,7 +13,7 @@ Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, ale občas
 
 ## Není to stejné jako matematika v preprocesorech?
 
-Není. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím než prohlížeč stránku vidí:
+Není. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím, než prohlížeč stránku vidí:
 
 ```sass
 width: (100% / 3)
@@ -30,9 +30,9 @@ width: calc(100% / 3 - (2 * 1em))
 
 ## Podpora v prohlížečích
 
-Funkci `calc()` nepodporuje hlavně Internet Explorer 8, jeho starší sourozenci a také Android Browser. V době psaní textu mohou u průměrného českého webu tvořit maximálně něco kolem 3-4 % návštěvnosti. 
+Funkci `calc()` nepodporuje hlavně Internet Explorer 8, jeho starší sourozenci a ani Android Browser. V době psaní textu mohou u průměrného českého webu tvořit maximálně něco kolem 3–4 % návštěvnosti. 
 
-Pokud funkci používáte, myslete na tyto uživatele a pokud je to potřebné, poskytněte jim alternativu v podobě definovaného fallbacku. Může vypadat mírně jinak. Je to lepší, než když se ve starém prohlížeči rozpadnou důležité věci:
+Pokud funkci používáte, myslete na tyto uživatele, a pokud je to potřeba, poskytněte jim alternativu v podobě definovaného fallbacku. Může vypadat mírně jinak. Je to lepší, než když se ve starém prohlížeči rozpadnou důležité věci.
 
 ### Definovaný fallback
 
@@ -50,7 +50,7 @@ A prosím pěkně: pozor na chyby v některých nechvalně známých prohlíže�
 
 Vždycky říkám, že používání polyfillu na zásadní věci týkající se layoutu je dost nebezpečné. Myslete na situaci, kdy selže Javascript. Myslete na vykreslovací výkon. Myslete na svoje nervy. 
 
-Pokud je i tak použítí `calc` ve starých prohlížečích nezbytné, z polyfillů vezměte tento: [github.com/closingtag/calc-polyfill](https://github.com/closingtag/calc-polyfill).
+Pokud je i tak použití `calc` ve starých prohlížečích nezbytné, z polyfillů vezměte tento: [github.com/closingtag/calc-polyfill](https://github.com/closingtag/calc-polyfill).
 
 ### Detekce vlastnosti
 

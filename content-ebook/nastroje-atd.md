@@ -4,17 +4,17 @@ Teď už to vezmeme hodně stručně.
 
 ## HTML5 Please
 
-Pro každou CSS3 (nebo HTML5) vlastnost vám tento web řekne, zda a za jakých podmínek ji doporučuje používat. Takže – zda vlastnost použít a zda použít s prefixy, nebo s polyfillem. U některých samozřejmě raději počkat. Berte to jako obecná doporučení a vždy se dívejte na cílovou skupinu vašeho konkrétního projektu. [html5please.com](http://html5please.com)
+Pro každou CSS3 (nebo HTML5) vlastnost vám tento web řekne, zda a za jakých podmínek ji doporučuje používat. Takže – zda vlastnost použít a zda použít s prefixy, nebo s polyfillem. U některých samozřejmě raději počkat. Berte to jako obecná doporučení a vždy se dívejte na cílovou skupinu svého konkrétního projektu. [html5please.com](http://html5please.com)
 
 
-## Can I use
+## Can I Use
 
-Jsou to tabulky s informací, které prohlížeče vaši vlastnost podporují a které naopak ne. Pokud si chcete zapamatovat jen jeden web, tohle je on. Can I use je možné si propojit s vašimi statistikami z Google Analytics. Podíly podpory vlastností na globální úrovni samozřejmě pro konkrétní projekt nemají vypovídající hodnotu. [caniuse.com](http://caniuse.com)
+Jsou to tabulky s informací o tom, které prohlížeče vaši vlastnost podporují a které naopak ne. Pokud si chcete zapamatovat jen jeden web, tohle je on. Can I Use je možné si propojit s vašimi statistikami z Google Analytics. Podíly podpory vlastností na globální úrovni samozřejmě nemají pro konkrétní projekt vypovídající hodnotu. [caniuse.com](http://caniuse.com)
 
 
-## Should I prefix
+## Should I Prefix
 
-Musím u konkrétní CSS3 vlastnosti použít prefixované verze, nebo ne? Může se hodit, ale obecně je lepším řešením Autoprefixer zmíněný v předchozích částech webu. [shouldiprefix.com](http://shouldiprefix.com)
+Musím u konkrétní CSS3 vlastnosti použít prefixované verze, nebo nemusím? Může se hodit, ale obecně je lepším řešením Autoprefixer zmíněný v předchozích částech webu. [shouldiprefix.com](http://shouldiprefix.com)
 
 ## Modernizr
 
