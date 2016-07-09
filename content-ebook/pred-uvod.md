@@ -10,6 +10,7 @@
 - Dlouhý text o [Gruntu](grunt.md).
 - Seznam [dalších nástrojů](nastroje-atd.md).
 
+Seznam všech novinek je na webu: [vrdl.cz/ebook/info#verze](http://www.vzhurudolu.cz/ebook/info#verze).
 
 
 
