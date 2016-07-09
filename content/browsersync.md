@@ -111,6 +111,19 @@ Co jsem tím nastavil?
 - `watchTask: true` v nastavení úlohy říká, že soubory sledujete ještě `watch` pluginem. Pravděpdobně totiž po změně souboru provádíte ještě další operace nad nimi – minifikaci, spojování atd. BrowserSync tomuto procesu nesmí stát v cestě.
 - V `proxy: 'vzhurudolu.localhost'` je adresa, na které mi projekt už na lokále běží. Využívám tedy jiný server (v mém případě Apache z MAMP balíčku). Je ale dobré vědět, že Browsersync nabízí vlastní server. Více v další části. 
 
+<div class="web-only text-center text-small">
+  <hr>
+    <p>
+      Text je součástí mého ebooku <a href="/ebook">Vzhůru do CSS3</a>, který 
+      exkluzivně obsahuje také další materiál 
+      o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
+    </p>
+    <p>
+      <a class="button" href="/ebook#objednavka">Koupit ebook za 249&nbsp;Kč</a>
+    </p>
+  <hr>
+</div>
+
 ## Další tipy pro práci s Browsersync
 
 ### Vlastní server

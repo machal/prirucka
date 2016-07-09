@@ -1,5 +1,11 @@
 # Flexbox: vlastnosti kontejneru
 
+<p class="web-only" markdown="1">
+  Čtete referenční příručku vlastností, které je možné přiřadit kontejneru 
+  [flexboxu](css3-flexbox.md). Je dobré vědět, že existuje i příručka 
+  [pro položky flexboxu](css3-flexbox-polozky.md). 
+</p>
+
 ##   Blokový nebo řádkový?
 
 Kromě `display: flex` můžete kontejner flexboxu definovat jako řádkový – `display: inline-flex`. V obou případech se ze všech přímých potomků stávají položky flexboxu.
@@ -36,6 +42,19 @@ Alternativně `wrap`. Pak se flex položky zalomí na další řádku ve chvíli
 `wrap-reverse` zalamuje naopak. Poslední položka řádku skočí nahoru a zařadí se nad první položku.
 
 Živé demo: [http://cdpn.io/e/mERZxB](http://cdpn.io/e/mERZxB)
+
+<div class="web-only text-center text-small">
+  <hr>
+    <p>
+      Text je součástí mého ebooku <a href="/ebook">Vzhůru do CSS3</a>, který 
+      exkluzivně obsahuje také další materiál 
+      o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
+    </p>
+    <p>
+      <a class="button" href="/ebook#objednavka">Koupit ebook za 249&nbsp;Kč</a>
+    </p>
+  <hr>
+</div>
 
 ##   `flex-flow`, zkratka pro `flex-direction` a `flex-wrap` {#flex-flow}
 
@@ -86,3 +105,4 @@ align-content:
 Ještě jedna zarovnávací vlastnost. Tentokrát se vztahuje jen na flex kontejnery, jejichž položky se rozpadnou na více řádků.
 
 Živé demo: [http://cdpn.io/e/oXbMRo](http://cdpn.io/e/oXbMRo)
+

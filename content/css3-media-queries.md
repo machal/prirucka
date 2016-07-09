@@ -29,6 +29,19 @@ Nebo do HTML na místě reference na CSS soubor:
   href="mobile.css" media="max-width: 480px">
 ```
 
+<div class="web-only text-center text-small">
+  <hr>
+    <p>
+      Text je součástí mého ebooku <a href="/ebook">Vzhůru do CSS3</a>, který 
+      exkluzivně obsahuje také další materiál 
+      o&nbsp;CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
+    </p>
+    <p>
+      <a class="button" href="/ebook#objednavka">Koupit ebook za 249&nbsp;Kč</a>
+    </p>
+  <hr>
+</div>
+
 ### Minimální/maximální výška/šířka
 
 Klasický dotaz na média vypadá například takto:

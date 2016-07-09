@@ -25,6 +25,19 @@ HTML je jednoduché. O to přísnější máme požadavky na design. A víte co?
 2. **Chceme pětinovou mřížku**. První a třetí sloupec má zabírat jednu pětinu – `.mandatory-1, .mandatory-2 { flex: 1; }`. A druhý pak tři pětiny – `.content { flex: 3 }`. Všimli jste si, že jsme nemuseli počítat s procenty? A že bychom nemuseli procenta přepočítávat, když bychom přidali další sloupec?
 3. **Na menších rozlišeních chceme změnit pořadí elementů.** Prostě jen do media query napíšeme `.content { order: -1; }`, a sloupec s obsahem se přesune na první místo. Bomba pro responzivní design, že?
 
+<div class="web-only text-center text-small">
+  <hr>
+    <p>
+      Text je součástí mého ebooku <a href="/ebook">Vzhůru do CSS3</a>, který 
+      exkluzivně obsahuje také další materiál 
+      o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
+    </p>
+    <p>
+      <a class="button" href="/ebook#objednavka">Koupit ebook za 249&nbsp;Kč</a>
+    </p>
+  <hr>
+</div>
+
 Příklad si utíkejte vyzkoušet naživo na CodePen – [http://cdpn.io/e/LhGuD](http://cdpn.io/e/LhGuD).
 
 Je to hezké, že? Ale skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí „tabulkového layoutu“ v roce 2001. Jenže pravdu by měl jen z velmi malé části. Flexbox toho totiž umí daleko (*daleko!*) více než tabulky. 

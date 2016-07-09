@@ -1,5 +1,11 @@
 # Flexbox: vlastnosti položky
 
+<p class="web-only" markdown="1">
+  Čtete referenční příručku vlastností, které je možné přiřadit položkám 
+  [flexboxu](css3-flexbox.md). Raději zmíním, že existuje i příručka 
+  [pro kontejner flexboxu](css3-flexbox-kontejner.md). 
+</p>
+
 ##   `flex-grow` – možnost zvětšování {#flex-grow}
 
 Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo –  například když uživatel zvětší okno prohlížeče. 
@@ -42,6 +48,19 @@ Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: co
 ##   `flex` – celková pružnost položky  {#flex}
 
 Zkratka pro všechny vlastnosti definující pružnost flex položky –  `flex-grow`, `flex-shrink` a `flex-basis`. Nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat.
+
+<div class="web-only text-center text-small">
+  <hr>
+    <p>
+      Text je součástí mého ebooku <a href="/ebook">Vzhůru do CSS3</a>, který 
+      exkluzivně obsahuje také další materiál 
+      o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
+    </p>
+    <p>
+      <a class="button" href="/ebook#objednavka">Koupit ebook za 249&nbsp;Kč</a>
+    </p>
+  <hr>
+</div>
 
 Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku `flex` proti konkrétním vlastnostem, které zastupuje. Důvodem je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
 
