@@ -1,5 +1,5 @@
-CSS3 Media Queries – podmíněné zobrazení pro média
-==================================================
+CSS3 Media Queries: podmíněné zobrazení pro média
+=================================================
 
 V některých českých odborných textech se užívá překladu „dotazy na média“.
 

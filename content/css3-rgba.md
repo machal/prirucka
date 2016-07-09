@@ -1,6 +1,5 @@
-
-CSS3 RGBa barva – barva s poloprůhledností
-==============================================
+CSS3 RGBa: barva s poloprůhledností
+===================================
 
 RGB barva se čtvrtým číslem, jež alfa kanálem říká informaci o hodnotě průhlednosti.
 

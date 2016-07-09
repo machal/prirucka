@@ -1,5 +1,5 @@
-Box Reflection – odlesk objektu
-===============================
+Box Reflection: odlesk objektu
+==============================
 
 Prohlížeč vykreslí zrcadlový odlesk pod objektem nebo z jeho strany.
 

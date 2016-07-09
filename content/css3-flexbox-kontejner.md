@@ -1,4 +1,4 @@
-# Flexbox: Vlastnosti kontejneru
+# Flexbox: vlastnosti kontejneru
 
 ##   Blokový nebo řádkový?
 

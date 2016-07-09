@@ -1,5 +1,5 @@
-CSS3 Text Shadow – stín textu
-=============================
+CSS3 Text Shadow: stín textu
+============================
 
 Stínování textu.
 

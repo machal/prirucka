@@ -1,5 +1,5 @@
-CSS3 Box Shadow – stínování elementu
-====================================
+CSS3 Box Shadow: stínování elementu
+===================================
 
 Jde o obvyklý stín nejen pod elementem, ale i uvnitř elementu nebo plastický efekt přes element.
 

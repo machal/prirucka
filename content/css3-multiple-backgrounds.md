@@ -1,5 +1,5 @@
-CSS3 Multiple Backgrounds – více obrázků na pozadí
-==================================================
+CSS3 Multiple Backgrounds: více obrázků na pozadí
+=================================================
 
 Vrstvení více obrázků nebo barev na pozadí jednoho elementu.
 

@@ -1,5 +1,5 @@
-CSS3 Background Clip – míra roztažení pozadí
-============================================
+CSS3 Background Clip: míra roztažení pozadí
+===========================================
 
 Určuje, kde všude se uvnitř elementu vykresluje obrázek nebo barva na pozadí.
 

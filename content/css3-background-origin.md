@@ -1,5 +1,5 @@
-CSS3 Background Origin – pozice začátku pozadí
-============================================
+CSS3 Background Origin: pozice začátku pozadí
+=============================================
 
 Určí, kde se v rámci elementu nachází začátek osy pro počítání rozměrů a pozic vlastností jako [Background Size](css3-background-size.md) nebo `background-position`:
 

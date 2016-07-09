@@ -1,4 +1,4 @@
-# Flexbox: Podpora v prohlížečích
+# Flexbox: podpora v prohlížečích
 
 Není špatná. V době psaní článku je to v ČR 92–95 % a s pomocí rozumných fallbacků pro starší prohlížeče není důvod jej nepoužít hned.
 

@@ -1,5 +1,5 @@
-Nové CSS3 jednotky – rem, vw, vh
-================================
+Nové CSS3 jednotky: rem, vw, vh
+===============================
 
 rem
 ---

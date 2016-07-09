@@ -1,5 +1,5 @@
-CSS3 Animations – plnohodnotné animace
-======================================
+CSS3 Animations: plnohodnotné animace
+=====================================
 
 Možná se  budete divit, ale toto jsou první nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight…), nebo animují prostředkem, který pro tento účel nebyl navržen – javascriptem.
 

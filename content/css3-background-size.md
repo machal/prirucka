@@ -1,5 +1,5 @@
-CSS3 Background Size – velikost obrázku na pozadí
-=================================================
+CSS3 Background Size: velikost obrázku na pozadí
+================================================
 
 Změna velikosti obrázku na pozadí elementu.
 

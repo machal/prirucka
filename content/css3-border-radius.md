@@ -1,5 +1,5 @@
-CSS3 Border Radius – poloměr rohu rámečku
-=========================================
+CSS3 Border Radius: poloměr rohu rámečku
+========================================
 
 Vykreslování zakulacených a elipsovitých rohů elementu.
 

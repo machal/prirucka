@@ -1,6 +1,5 @@
-
-CSS3 Text Overflow – způsob přetékání textu
-===========================================
+CSS3 Text Overflow: způsob přetékání textu
+==========================================
 
 Vytečkování textu, který přesahuje šířku elementu.
 

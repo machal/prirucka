@@ -1,5 +1,5 @@
-Font Face – netechnické aspekty
-===============================
+Font Face: netechnické aspekty
+==============================
 
 Pokud s webfonty začínáte, dejte si pozor hlavně na dvě věci:
 

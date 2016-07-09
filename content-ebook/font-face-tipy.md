@@ -1,5 +1,5 @@
-Font Face – tipy a triky
-========================
+Font Face: tipy a triky
+=======================
 
 ## Pozor na falešnou kurzívu a tučný řez
 

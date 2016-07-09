@@ -1,5 +1,5 @@
-CSS3 Transforms – proměny objektu
-=================================
+CSS3 Transforms: proměny objektu
+================================
 
 Transformace tvaru, pozice nebo velikosti elementu.
 

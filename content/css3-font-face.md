@@ -1,5 +1,5 @@
-CSS3 Font Face – vlastní fonty
-==============================
+CSS3 Font Face: vlastní fonty
+=============================
 
 Webové fonty neboli vlastní fonty do stránky? `@font-face` je dnes už standardní technika s takřka plnou podporou v prohlížečích, které se z technického pohledu není potřeba bát.
 

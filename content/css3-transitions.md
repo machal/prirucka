@@ -1,5 +1,5 @@
-CSS3 Transitions – jednoduché animace přechodu
-==============================================
+CSS3 Transitions: jednoduché animace přechodu
+=============================================
 
 Animace přechodů mezi stavy vlastností elementu.
 

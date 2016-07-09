@@ -1,5 +1,5 @@
-CSS3 Border Image – rámeček vykreslený obrázkem
-===============================================
+CSS3 Border Image: rámeček vykreslený obrázkem
+==============================================
 
 Jde o způsob, jak kolem elementu vykreslit vlastní namísto nativních rámečků.
 

@@ -1,5 +1,5 @@
-CSS3 Gradients – barevné přechody
-=================================
+CSS3 Gradients: barevné přechody
+================================
 
 Způsob, jak kódem vykreslit barevný přechod – jinak též gradient – všude, kde jsme donedávna používali externí obrázek.
 
