@@ -1,4 +1,4 @@
-#   Vlastnosti flex položky
+# Flexbox: Vlastnosti položky
 
 ##   `flex-grow` – možnost zvětšování {#flex-grow}
 

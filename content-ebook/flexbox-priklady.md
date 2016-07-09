@@ -1,8 +1,6 @@
-Tyto vědomosti nám zatím budou stačit. Další vlastnosti se pojďme naučit na pěti praktických příkladech. Jsou zvolené tak, abyste je mohli využít hned na příštím projektu.
+# Flexbox: praktické příklady
 
-## Flexbox – praktické příklady
-
-### První příklad: základy pružnosti
+## První příklad: základy pružnosti
 
 Vezměme toto HTML:
 
@@ -35,7 +33,7 @@ Technicky vzato má totiž každá položka vlastnost `flex` a její výchozí n
 
 Příklad si můžete vyzkoušet na CodePenu [http://cdpn.io/e/raqXZX](http://cdpn.io/e/raqXZX).
 
-### Příklad druhý: kombinování jednotek
+## Příklad druhý: kombinování jednotek
 
 ![kombinování jednotek](dist/images/original/flexbox-priklady-3.jpg)
 
@@ -49,7 +47,7 @@ Všimněte si, že jsme přepínači a textu nastavili `flex: none`. Nechceme to
 
 Příklad si opět můžete vyzkoušet na CodePenu [http://cdpn.io/e/jEJbmg](http://cdpn.io/e/jEJbmg).
 
-### Příklad třetí: vertikální centrování boxu neznámé výšky
+## Příklad třetí: vertikální centrování boxu neznámé výšky
 
 ![centrování](dist/images/original/flexbox-priklady-5.jpg)
 
@@ -59,7 +57,7 @@ Vertikální i horizontální centrování je s flexboxem bezproblémové. Krom�
 
 CodePen ukázka je na [http://cdpn.io/e/zxydom](http://cdpn.io/e/zxydom).
 
-### Příklad čtvrtý: změna vizuálního pořadí položek
+## Příklad čtvrtý: změna vizuálního pořadí položek
 
 Potřebujete v HTML pořadí položek jedním způsobem, ale zobrazovat je zase jiným způsobem? I tady flexbox pomůže. Zapamatujte si vlastnost `order`, která slouží pro změnu pořadí flex položek.
 
@@ -75,7 +73,7 @@ V prohlížeči vyzkoušíte na adrese [http://cdpn.io/e/JoqxJe](http://cdpn.io/
 
 Změna vizuálního pořadí se hodí i třeba pro řazení od konce abecedy. Do příručky se podívejte na vlastnost flex-direction.
 
-### Příklad pátý: navigace s neznámým počtem položek
+## Příklad pátý: navigace s neznámým počtem položek
 
 Představte si horizontální navigaci, u které předem neznáte počet položek. Ale nepředstavujte si ji prosím moc dlouho, abyste z toho nedostali nějakou ošklivou vyrážku.
 

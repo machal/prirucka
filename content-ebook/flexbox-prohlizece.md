@@ -1,8 +1,8 @@
-## Podpora v prohlížečích
+# Flexbox: Podpora v prohlížečích
 
 Není špatná. V době psaní článku je to v ČR 92–95 % a s pomocí rozumných fallbacků pro starší prohlížeče není důvod jej nepoužít hned.
 
-### Tři syntaxe v moderních prohlížečích
+## Tři syntaxe v moderních prohlížečích
 
 Raději rovnou píšu, že plnou podporu v moderních prohlížečích vám zajistí dobře nakonfigurovaný Autoprefixer, o kterém byla řeč v úvodu ebooku. Dále proto čtěte, jen pokud vás zajímají detaily.
 
@@ -12,11 +12,11 @@ V moderních prohlížečích má flexbox tři verze syntaxe.
 * **Mezisyntaxe (tweener) z roku 2012.** `display: flexbox`. Dnes už vyžaduje snad jen IE10.
 * **Stará (legacy) syntaxe z roku 2009.** Kdekoliv uvidíte `display: box` nebo lépe `-webkit-display: box`. Webkit ve verzi 20 a starší, tzn. třeba iOS6 nebo starší Androidy.
 
-### Jak v prohlížečích bez podpory?
+## Jak v prohlížečích bez podpory?
 
 Týká se jen IE9 a starších. Raději se podívejte do statistik vašeho projektu, kolik uživatelů vlastně mají.
 
-#### Nulový fallback – podporu vůbec neřešíme
+### Nulový fallback – podporu vůbec neřešíme
 
 Je ale dobré si ujasnit a v praxi vyzkoušet, co to znamená „neřešit podporu flexboxu ve starších prohlížečích“.
 
@@ -30,7 +30,7 @@ Formulář tedy zůstává použitelný. Jen některé prvky nebudou uživatelsk
 
 ![Layout jako enhancement](dist/images/original/flexbox-layout-as-enhancement.jpg)
 
-#### Detekce vlastností a alternativní řešení
+### Detekce vlastností a alternativní řešení
 
 Nulový fallback ovšem nemůžeme použít u příkladu s centrováním boxu doprostřed stránky. Pokud by v konkrétní aplikaci bylo potřeba dodržet alespoň obdobný vzhled, museli bychom si vypomoci alternativním řešením v CSS nebo případně Javascriptu.
 
@@ -50,7 +50,7 @@ Principiálně by řešení vypadalo takto:
 
 Takto lze udělat alternativní layout například pomocí `display: table|table-row|table-cell`.
 
-#### Definovaný fallback
+### Definovaný fallback
 
 Flexbox je jen nová hodnota vlastnosti display. S tím je možné pracovat hlavně u typů fallbacků, kdy chceme, aby se i původně `inline` nebo `inline-block` elementy naskládaly pod sebe. V prohlížečích bez podpory flexboxu se tedy naskládají pod sebe, často podobně jako na mobilních zařízeních.
 
@@ -74,7 +74,7 @@ Snadno se například dělá fallback pomocí vlastnosti `float`, protože ta se
 }
 ```
 
-#### flexbugs – nejčastější chyby prohlížečů
+### flexbugs – nejčastější chyby prohlížečů
 
 Jak už jste si jistě všimli, flexbox je dost složitý standard a to – spolu s jeho relativní čerstvostí – způsobuje řadu drobných chyb v prohlížečích.
 

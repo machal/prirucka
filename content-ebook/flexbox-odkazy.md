@@ -1,4 +1,4 @@
-## Zajímavé odkazy k flexboxu
+# Flexbox: zajímavé odkazy
 
 * **A Complete Guide to Flexbox**  
 Vizuální referenční příručka Chrise Coyiera. [https://css-tricks.com/snippets/css/a-guide-to-flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
