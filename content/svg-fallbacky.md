@@ -77,9 +77,9 @@ if (!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Imag
 
 Tohle používám na Vzhůru dolů. Příklad s SVG v HTML na CodePenu: [cdpn.io/e/isrIB](http://cdpn.io/e/isrIB).
 
-### Pomocí Picturefillu
+### Pomocí značky `<picture>`
 
-Málo se ví, že polyfil [Picturefill](picturefill.md) umí – kromě rozchození [responzivních obrázků](responzivni-obrazky.md) ve všech prohlížečích – také detekovat SVG. Pokud už na stránce Picturefill používáte pro jiné účely, tohle se vám bude líbit:
+Nová HTML značka [picture](picture.md) umí, kromě jiného, také detekovat SVG:
 
 ```html
 <picture>

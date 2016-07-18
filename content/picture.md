@@ -61,6 +61,15 @@ Vybírat obrázky můžete i podle formátu. Použijte atribut `type=""`. Přík
 
 Prohlížeč co umí formát WebP a běží v okně velikosti alespoň 1024 pixelů, stáhne a zobrazí soubor `large.webp`.  Pokud vím, Picturefill umí kromě WebP detekovat ještě SVG.
 
+Tímto způsobem je také možné udělat pěkný fallback pro [formát SVG](svg.md):
+
+```html
+<picture>
+  <source type="image/svg+xml" srcset="logo.svg">
+  <img src="logo.png" alt="…">
+</picture>
+```
+
 Další složitější scénáře použití `<picture>` najdete například [v tomto článku na Dev.Opera](https://dev.opera.com/articles/responsive-images/).
 
 ## Podpora v prohlížečích
