@@ -26,6 +26,8 @@ Výchozí (`row`) hodnota vyskládá flex položky do řádky. Pokud chcete děl
 
 Pořadí položek se v těchto případech bere z pořadí v kódu. Pokud chcete pořadí otočit, prostě zvolte hodnoty `row-reverse` nebo `column-reverse`. To má vliv jen na vizuální vykreslení, nikoliv např. na pořadí vykreslování nebo procházení při navigaci klávesou Tab. Pozorní si asi všimli, že vlastnost lze použít i pro změnu řazení seznamů.
 
+Živé demo: [http://cdpn.io/e/pbarBw](http://cdpn.io/e/pbarBw)
+
 ##   `flex-wrap` – zalamování položek {#flex-wrap}
 
 ```css
