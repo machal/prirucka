@@ -17,7 +17,7 @@ Není. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat
 
 ```sass
 width: (100% / 3)
-// → width: 56.25%
+// → width: 33.33333333%
 ```
 
 Jenže preprocesoru dochází dech v momentě, kdy potřebuji kombinovat více jednotek. Vezměme příklad třísloupcového rozvržení s vnějším okrajem o šířce `1em`:
