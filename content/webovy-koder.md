@@ -167,9 +167,10 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * [Zákon o ochraně osobních údajů](http://business.center.cz/business/pravo/zakony/oou/).
 * Licencování software: [MIT, Apache, GPL, Public Domain](http://choosealicense.com/) a obsahu pomocí CreativeCommons.
 
-#### Google Analytics
+#### Google Analytics a Search Console
 
 * Nastavení Google Analytics: základní nastavení cílů; ukládání událostí; měření konverzí a jejich hodnot.
+* [Google Search Console](google-search-console.md): přidání webu a monitoring problémů.
 
 <small>Původní verze textu vznikla jako draft pro popis profese pro [Národní soustavu kvalifikací](http://narodnikvalifikace.cz/). Za kapitolu o přístupnosti autor děkuje [Radkovi Pavlíčkovi](https://twitter.com/radlicek) ([Poslepu.cz](http://poslepu.cz/)). Za spolupráci na kvalifikačním standardu kromě Radka i [Vojtovi Outulnému](https://www.linkedin.com/in/vojtechoutulny) a Jaroslavu Zelenému. Za podněty k draftu pak [Robinu Pokornému](http://robinpokorny.com/), [Tomáši Musiolovi](http://www.musiol.cz/) a [Martinu Staňkovi](https://twitter.com/koucik).</small>
 

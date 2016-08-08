@@ -81,7 +81,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 - Přidání a konfigurace Google Analytics  
 <small>Výkonnost webu všechny zajímá, nezapomněli jste [nastavit měření](http://www.jakmeritweb.cz/spravne-nastaveni/jak-se-nastavuje-google-analytics)?</small>
 - Registrace v Google Search Console  
-<small>Pravidelně upozorní na časté chyby z pohledu Google. [Přidejte tam web](https://www.google.com/webmasters/tools/) hned po spuštění.</small>
+<small>Pravidelně upozorní na časté chyby z pohledu Google. [Přidejte tam web](https://www.google.com/webmasters/tools/) hned po spuštění. [Více o Search Console](google-search-console.md).</small>
 - Funkční testování  
 <small>Fungují kritické části webu i když ho necháte běžet? Pomůže třeba [Selenium](http://www.seleniumhq.org/) nebo [Testomato](http://www.testomato.com/).</small>
 - Vývojářské soubory nejsou na produkci  
