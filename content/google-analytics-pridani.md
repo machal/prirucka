@@ -52,7 +52,7 @@ Dále budeme s přidáním nového webu pokračovat přímo v rozhraní Analytic
 * Vyfiltrujte si IP adresy, ze kterých přistupují tvůrci webu  
 <small>Viz [vyloučení vlastních návštěv](http://jecas.cz/vylouceni-svych-navstev).  
 (*Administrátor > Výběr dat > Filtry*)</small> 
-* Propojte účty [Search Console](http://google-search-console.md) a AdWords  
+* Propojte účty [Search Console](google-search-console.md) a AdWords  
 <small>Poskytnou další zajímavá data.  
 (*Administrátor >  Služba > Všechny služby*)</small> 
 * Nastavte cíle  
