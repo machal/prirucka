@@ -6,9 +6,18 @@ Jednoduchá odpověď zní: nainstalovat Technical Performance Dashboard, ale p�
 
 Pokud si do Analytics [přidáte tuto palubní desku](https://analytics.google.com/analytics/gallery/#posts/search/%3F_.tab%3DMy%26_.sort%3DDATE%26_.start%3D0%26_.viewId%3DsJXXMwZtSCmLNYXy-gmozA/), získáte *Analytics-konečně-zábavné-pro-vývojáře™*, to vám garantuji.  
 
-![image alt text](image_0.png)
+![Technical Performace Dashboard](dist/images/original/analytics-performance-dashboard.jpg)
 
-[Technical Performance Dashboard od Vigetu](https://www.viget.com/articles/a-google-analytics-dashboard-for-front-end-developers) vám z nitra Analytics vytáhne aktuální údaje týkající se rychlosti načítání, prohlížečů a podílu mobilních zařízení. Prostě tu část statistik, která zajímá právě vás. Pokud ji chcete mít ještě obohacenou o podíl návštěv bez spuštěného Javascriptu, výčet javascriptových chyb nebo velikosti viewportu (nikoliv rozlišení obrazovky), je potřeba doinstalovat jejich plugin [Trackomatic](https://www.viget.com/articles/making-cross-client-google-analytics-tracking-easy-with-trackomatic). Je to fajn, zkuste to.
+[Technical Performance Dashboard od Vigetu](https://www.viget.com/articles/a-google-analytics-dashboard-for-front-end-developers) vám z nitra Analytics vytáhne aktuální údaje týkající se rychlosti načítání, prohlížečů a podílu mobilních zařízení. Prostě tu část statistik, která zajímá právě vás. 
+
+### Trackomatic: další čísla pro vývojáře
+
+Mimochodem, Viget jsou také autoři  pluginu [Trackomatic](https://www.viget.com/articles/making-cross-client-google-analytics-tracking-easy-with-trackomatic). Ten vám bude do Událostí v Analytics ukládat další zajímavé hodnoty. Například:
+
+- Velikost [viewportu](viewport-mobily.md). Tedy rozměry vnitřku okna prohlížeče, nikoliv rozlišení, které nás příliš nezajímá
+- First Input. Čím uživatelé „klikají“ na vaší stránce – myší, dotykem, klávesnicí… ?
+- Site Exit. Kam uživatelé odcházejí?
+- Javascript Error. Výborný report návštěv, které skončily chybou ve skriptu.
 
 ## Statistiky pro webové vývojáře vestavěné v Google Analytics
 
@@ -49,7 +58,7 @@ Možnosti jak Analytics debugovat je docela dost:
 * [WASP.inspector](http://www.webanalyticssolutionprofiler.com/) – komplexní rozšíření do Chrome DevTools pro průzkum všech doplňků stránky. Nejen pro Analytics, ale i Tag Manager nebo Facebook kódy.
 * [Event Tracking Tracker](https://chrome.google.com/webstore/detail/event-tracking-tracker/npjkfahkbgoagkfpkidpjdemjjmmbcim) – ladění ukládání událostí do Analytics. Ty nezmizí ani při přechodu na jinou stránku. 
 
-![TODO](image_1.png)
+![Analytics Debugger](dist/images/original/analytics-debug.jpg)
 
 ### Single Page apky a měření shlédnutí „stránky"
 
