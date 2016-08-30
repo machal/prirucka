@@ -79,7 +79,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 ## Spouštění webu
 
 - Přidání a konfigurace Google Analytics  
-<small>Výkonnost webu všechny zajímá, nezapomněli jste [nastavit měření](http://www.jakmeritweb.cz/spravne-nastaveni/jak-se-nastavuje-google-analytics)?</small>
+<small>Výkonnost webu všechny zajímá, nezapomněli jste [nastavit měření](google-analytics-pridani.md)?</small>
 - Registrace v Google Search Console  
 <small>Pravidelně upozorní na časté chyby z pohledu Google. [Přidejte tam web](https://www.google.com/webmasters/tools/) hned po spuštění. [Více o Search Console](google-search-console.md).</small>
 - Funkční testování  

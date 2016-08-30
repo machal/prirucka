@@ -143,5 +143,7 @@ V rozhraní teď v části *Konverze > Přehled* uvidíme statistiky pro elektro
 * V rozhraní Analytics si web správně nastavte podle mého kontrolního seznamu.
 * Nastavte si měření cílů a elektronického obchodu.
 
+Podívejte se i na článek [o nástrojích a měření v Analytics](google-analytics-vyvojari.md).
+
 <div class="web-only text-center text-small" markdown="1">
-Na článku spolupracovali: [Daniel Střelec](https://www.danielstrelec.cz/) a [Miroslav Pecka](http://miroslavpecka.cz/).</small>
+Na článku spolupracovali: [Daniel Střelec](https://www.danielstrelec.cz/) a [Miroslav Pecka](http://miroslavpecka.cz/).</div>

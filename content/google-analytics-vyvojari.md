@@ -1,6 +1,6 @@
 # Google Analytics: průvodce měřením pro webové vývojáře
 
-Jednoduchá odpověď zní: nainstalovat Technical Performance Dashboard, ale půjdeme i dál. Podíváme se co mohou vývojáři sledovat a na nutné základy práce s daty.
+Podíváme se co v Analytics mohou vývojáři sledovat, na užitečné nástroje a nutné základy práce s daty.
 
 ## Vše v jednom: skvělý Technical Performace Dashboard
 
@@ -12,12 +12,12 @@ Pokud si do Analytics [přidáte tuto palubní desku](https://analytics.google.c
 
 ### Trackomatic: další čísla pro vývojáře
 
-Mimochodem, Viget jsou také autoři  pluginu [Trackomatic](https://www.viget.com/articles/making-cross-client-google-analytics-tracking-easy-with-trackomatic). Ten vám bude do Událostí v Analytics ukládat další zajímavé hodnoty. Například:
+Mimochodem, Viget jsou také autory  pluginu [Trackomatic](https://www.viget.com/articles/making-cross-client-google-analytics-tracking-easy-with-trackomatic). Ten vám bude do událostí v Analytics ukládat další zajímavé hodnoty. Například:
 
-- Velikost [viewportu](viewport-mobily.md). Tedy rozměry vnitřku okna prohlížeče, nikoliv rozlišení, které nás příliš nezajímá
-- First Input. Čím uživatelé „klikají“ na vaší stránce – myší, dotykem, klávesnicí… ?
-- Site Exit. Kam uživatelé odcházejí?
-- Javascript Error. Výborný report návštěv, které skončily chybou ve skriptu.
+- Velikost [viewportu](viewport-mobily.md): rozměry vnitřku okna prohlížeče, nikoliv rozlišení obrazovky, které nás příliš nezajímá.
+- First Input: čím uživatelé „klikají“ na vaší stránce – myší, dotykem, klávesnicí… ?
+- Site Exit: kam uživatelé odcházejí?
+- Javascript Error: výborný report návštěv, které skončily chybou ve skriptu.
 
 ## Statistiky pro webové vývojáře vestavěné v Google Analytics
 
@@ -25,7 +25,7 @@ Mimochodem, Viget jsou také autoři  pluginu [Trackomatic](https://www.viget.co
 
 * Přehledy najdete v rozhraní Analytics pod *Chování > Rychlost webu*.
 * Hodí se vidět *Časování stránek* napříč různými kontexty: prohlížeči, regiony atd.
-* V *Časování uživatelů* mohou být vaše vlastní měření - např. jak rychle se načetl konkrétní obrázek nebo kdy se stáhly fonty z Google Fonts. [Je to potřeba nastavit](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
+* V *Časování uživatelů* mohou být vaše vlastní měření. Například: jak rychle se načetl konkrétní obrázek nebo kdy se stáhly fonty z Google Fonts. [Je to potřeba nastavit](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
 * Standardně se pro měření rychlosti používá jednoprocentní vzorek vašich shlédnutí stránky. Pokud to chcete jinak, [je potřeba měřit s jiným nastavením](http://www.ericmobley.net/measuring-performance-google-analytics/). Ja například používám 'siteSpeedSampleRate': 50.
 
 Mimochodem, o dalších [nástrojích pro analýzu rychlosti načítání](rychlost-nastroje.md) píšu ve speciálním článku.
@@ -33,9 +33,9 @@ Mimochodem, o dalších [nástrojích pro analýzu rychlosti načítání](rychl
 ### Prohlížeče, operační systémy, mobilní zařízení
 
 * Menu: *Technologie > Prohlížeč* a pak odkazy nad tabulkou.   
-<small>Zdejší statistiky se hodí pro zjištění, zda technické vybavení vaší cílové skupiny není v něčem specifické. (Starší, ale povětšinou pořád platné články k prohlížečům: [Stav trhu mobilních prohlížečů](http://www.vzhurudolu.cz/blog/18-mobilni-prohlizece) a [Proč podporovat i prohlížeče pod pětiprocentní hranicí podílu](http://www.vzhurudolu.cz/blog/20-pet-procent)).</small>
+Zdejší statistiky se hodí pro zjištění, zda technické vybavení vaší cílové skupiny není v něčem specifické. (Starší, ale povětšinou pořád platné články k prohlížečům: [Stav trhu mobilních prohlížečů](http://www.vzhurudolu.cz/blog/18-mobilni-prohlizece) a [Proč podporovat i prohlížeče pod pětiprocentní hranicí podílu](http://www.vzhurudolu.cz/blog/20-pet-procent)).
 * V menu *Cílové publikum > Mobilní zařízení > Přehled* najdete momentální podíl desktopu, tabletů a mobilů.  
-<small>Někde tam uvidíte i přehled nejpoužívanějších mobilních zařízení, ale těch je děsně moc, takže to obvykle k ničemu nebývá. Může snad jen sloužit jako rada jaké si koupit testovací zařízení [pro testování responzivních webů](jak-testovat-responzivni-weby.md).</small>
+Někde tam uvidíte i přehled nejpoužívanějších mobilních zařízení, ale těch je děsně moc, takže to obvykle k ničemu nebývá. Může snad jen sloužit jako rada jaké si koupit zařízení [pro testování responzivních webů](jak-testovat-responzivni-weby.md).
 
 ## Tipy pro práci s Analytics
 
@@ -92,7 +92,7 @@ Object.keys(breakpoints).forEach(function(breakpoint) {
 });
 ```
 
-Tuhle vychytávku mám z prezentace Philipa Waltona [Google Analytics for Web Developers](https://philipwalton.github.io/talks/2015-11-19/), která je skvělá úplně celá a rozhodně si je projděte.
+Tuhle vychytávku mám z prezentace Philipa Waltona [Google Analytics for Web Developers](https://philipwalton.github.io/talks/2015-11-19/), která je skvělá úplně celá a rozhodně si ji projděte.
 
 Dosavadními postupy získáme dost dat. Teď ještě, abychom je nějak uměli vyhodnocovat.
 
@@ -139,7 +139,11 @@ Jen pozor na *vzorkování*, tedy výběr dat. Při použití segmentu se může
 * Nastavte měření i tam, kde se nemění URL adresa.
 * Naučte se data správně číst, porovnávat a vyhodnocovat.
 
-<small>Na článku spolupracovali: [Daniel Střelec](https://www.danielstrelec.cz/) a [Miroslav Pecka](http://miroslavpecka.cz/).</small>
+<div class="web-only text-center text-small" markdown="1">
+  Na článku spolupracovali: [Daniel Střelec](https://www.danielstrelec.cz/) a [Miroslav Pecka](http://miroslavpecka.cz/).  
+</div>
+
+
 
 
 

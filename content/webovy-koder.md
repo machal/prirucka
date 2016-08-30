@@ -169,7 +169,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### Google Analytics a Search Console
 
-* Nastavení Google Analytics: základní nastavení cílů; ukládání událostí; měření konverzí a jejich hodnot.
+* [Nastavení Google Analytics](google-analytics-pridani.md): základní nastavení cílů; ukládání událostí; měření konverzí a jejich hodnot; [nástroje pro vývojáře](google-analytics-vyvojari.md).
 * [Google Search Console](google-search-console.md): přidání webu a monitoring problémů.
 
 <small>Původní verze textu vznikla jako draft pro popis profese pro [Národní soustavu kvalifikací](http://narodnikvalifikace.cz/). Za kapitolu o přístupnosti autor děkuje [Radkovi Pavlíčkovi](https://twitter.com/radlicek) ([Poslepu.cz](http://poslepu.cz/)). Za spolupráci na kvalifikačním standardu kromě Radka i [Vojtovi Outulnému](https://www.linkedin.com/in/vojtechoutulny) a Jaroslavu Zelenému. Za podněty k draftu pak [Robinu Pokornému](http://robinpokorny.com/), [Tomáši Musiolovi](http://www.musiol.cz/) a [Martinu Staňkovi](https://twitter.com/koucik).</small>

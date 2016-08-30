@@ -75,11 +75,11 @@ Umí toho hodně. Ukáže timeline, zvládne emulaci pomalého připojení. Test
 
 ## Google Analytics
 
-Používám méně často, ale líbí se mi jak je tahle důležitá analýza po ruce markeťákům.
+U statistik z Google Analytics se mi líbí jak jsou po ruce markeťákům. Mají ale velmi zajímavé [využití i pro vývojáře](google-analytics-vyvojari.md), hlavně když se rozšíří o Trackomatic a Technical Performace Dashboard.
 
-Mrkněte do Chování / Rychlost / Přehled. Je potřeba měřit pomocí verze Universal Analytics. Analytics ukazují „Časování stránek“ (Page Timings), ale napříč různými kontexty - prohlížeče, regiony. 
+Mrkněte se do *Chování > Rychlost > Přehled*. Je potřeba měřit pomocí verze Universal Analytics. Analytics ukazují *Časování stránek (Page Timings)*, ale napříč různými kontexty - prohlížeče, regiony. 
 
-V „Časování uživatelů“ (User Timings) mohou být vaše vlastní měření - např. jak rychle se načetl konkrétní obrázek. [Je to potřeba nastavit](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
+V *Časování uživatelů (User Timings)* mohou být vaše vlastní měření - např. jak rychle se načetl konkrétní obrázek. [Je to potřeba nastavit](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
 
 Standardně se prý pro měření rychlost používá jednoprocentní vzorek vašich shlédnutí stránky. Pokud to chcete jinak, [je potřeba měřit s nastavením](http://www.ericmobley.net/measuring-performance-google-analytics/) `‘siteSpeedSampleRate’: 50`.
 
