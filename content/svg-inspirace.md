@@ -6,7 +6,7 @@
 
 ## Text: výplně, filtry, efekty 
 
-![Text: výplně, filtry, efekty v SVG](dist/images/small/svg-inspirace-animace.jpg)
+![Text: výplně, filtry, efekty v SVG](../dist/images/small/svg-inspirace-animace.jpg)
 
 Práce s textem je jasná volba. Výhoda SVG je v tom, že text je plně přístupný: indexovatelný Googlem, čtený slepeckými čtečkami a je možné jej kopírovat.
 
@@ -18,7 +18,7 @@ Práce s textem je jasná volba. Výhoda SVG je v tom, že text je plně příst
 
 ## Obrázky: výřezy a filtry
 
-![Obrázky: výřezy a filtry v SVG](dist/images/small/svg-inspirace-obrazky.jpg)
+![Obrázky: výřezy a filtry v SVG](../dist/images/small/svg-inspirace-obrazky.jpg)
 
 Ořezávání obrázků vlastními tvary bude do budoucna možné [i v CSS](http://bennettfeely.com/clippy/). Teď je však nejspolehlivější cestou SVG. Zajimavé využití nabízí SVG i pro filtry přes obrázky. Sledujte co s nimi dělá [Michael Mullany](http://codepen.io/mullany/pens/popular/).
 
@@ -28,7 +28,7 @@ Ořezávání obrázků vlastními tvary bude do budoucna možné [i v CSS](http
 
 ## Animace
 
-![Animace v SVG](dist/images/small/svg-inspirace-animace.jpg)
+![Animace v SVG](../dist/images/small/svg-inspirace-animace.jpg)
 
 Animování jednotlivých částí SVG má daleko širší škálu než v případě elementů stránky stylovaných pomocí CSS. SVG animace – [SMIL](http://caniuse.com/#search=smil) – nemají plnou podporu a tak se pro rozhýbání používá buď CSS nebo javascriptové knihovny: [Snap.svg](http://snapsvg.io/) se bude líbit kodérům nebo [Greensock](http://greensock.com/) s velmi pokročilými možnostmi.
 
@@ -45,7 +45,7 @@ Animování jednotlivých částí SVG má daleko širší škálu než v příp
 
 ## Interakční přechody
 
-![Interakční přechody v SVG](dist/images/small/svg-inspirace-prechody.jpg)
+![Interakční přechody v SVG](../dist/images/small/svg-inspirace-prechody.jpg)
 
 Ano, i přechody mezi stránkami se hodí animovat. Tohle se ve webdesignu zatím moc nepoužívá, ale dovolím si tomu věštit velkou budoucnost. 
 
@@ -57,7 +57,7 @@ Ano, i přechody mezi stránkami se hodí animovat. Tohle se ve webdesignu zatí
 
 ## Widgety: bannery, mapy, infografiky
 
-![Udělátka v SVG](dist/images/small/svg-inspirace-interakce.jpg)
+![Udělátka v SVG](../dist/images/small/svg-inspirace-interakce.jpg)
 
 SVG se mimojiné hodí jako náhrada Flashe jako pomocník pro realizaci *udělátek*, malých webů uvnitř webů. Bannery, malé interaktivní apky, interaktivní infografiky… Prostě věci co jsme dřív dělali ve Flashi. A já vím – SVG je zatím spíše srandovní náhrada Flashe. Hlavně z pohledu nepřítomnosti pořádných designérských nástrojů. Ale však ono se to časem zlepší.
 
