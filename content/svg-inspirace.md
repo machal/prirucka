@@ -10,7 +10,7 @@ Než se do některých řešení pustíte, poctivě to zvažte. Můžu ale slíb
 
 ## Text: výplně, filtry, efekty 
 
-![Text: výplně, filtry, efekty v SVG](dist/images/original/svg-inspirace-animace.jpg)
+![Text: výplně, filtry, efekty v SVG](dist/images/original/svg-inspirace-text.jpg)
 
 Práce s textem je jasná volba. V případě dobré implementace je SVG text plně přístupný: indexovatelný Googlem, čtený slepeckými čtečkami a je možné jej kopírovat.
 
