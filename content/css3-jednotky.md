@@ -60,7 +60,7 @@ Umožňují definovat rozměry v CSS relativně k velikosti viewportu, zjednodu�
 * `vmin` – zkratka pro „viewport minimum“ – reprezentuje menší hodnotu z porovnání `1vw` a `1vh`
 * `vmax` – zkratka pro „viewport maximum“ – reprezentuje větší hodnotu z porovnání `1vw` a `1vh`
 
-### Příklad praktického využití
+### První příklad: roztažení elementu na celou výšku okna pomocí `vh`
 
 Na rozdíl od procent se jednotky viewportu nevztahují k rozměrům nejbližšího rodiče, ale k šířce a výšce okna prohlížeče. Lze s nimi tedy dělat kouzla, která dříve byla možná jen pomocí CSS hacků nebo Javascriptu.
 
@@ -71,6 +71,37 @@ Příkladem budiž roztažení výšky layoutu stránky na celou výšku okna pr
   height: 100vh;
 }
 ```
+
+### Druhý příklad: elastická typografie s `vw`
+
+S *volkswageny* můžete užitečné věci  dělat v oblasti velikosti písma.
+
+Nejjednodušší příklad vypadá takto:
+
+```css
+h1 {
+  font-size: 6vw;
+}
+```
+
+Písmo se pak bude zvětšovat podle šířky okna. Zkuste si to sami:
+
+- Téměř elastická typografie: [css-tricks.com/viewport-sized-typography/](https://css-tricks.com/viewport-sized-typography/).
+- Složitější, ale plně elastická typografie: [smashingmagazine.com/2016/05/fluid-typography/](https://www.smashingmagazine.com/2016/05/fluid-typography/).
+
+### Třetí příklad: velikost textu v hlavním nadpise stránky pomocí `vmin`
+
+Jak vám možná došlo u `vw` typografie, nadpisy mohou být na malých displejích příliš malé a na velkých příliš velké. Když se nechcete trápit [s Media Queries](css3-media-queries.md), zkuste `vmin`. 
+
+```css
+h1 {
+  font-size: 6vmin;
+}
+```
+
+Písmo se pak na malém displeji v režimu na výšku sází v procentech ze šířky. Na velkém monitoru zase v procentech z výšky. Ve spoustě situací se tak obejdete bez Media Queries.
+
+Více zde: [thenewcode.com/1137/MinMaxing-Understanding-vMin-and-vMax-in-CSS](http://thenewcode.com/1137/MinMaxing-Understanding-vMin-and-vMax-in-CSS).
 
 ### Podpora v prohlížečích
 
