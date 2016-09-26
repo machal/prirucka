@@ -180,8 +180,8 @@ Jednoduché, dvoubarevné lineární gradienty lze ve starších Explorerech za�
 V parametru `GradientType` nastavujete vertikální (`0`) nebo horizontální (`1`) směr gradientu. U filtrů jen pozor na pomalejší vykreslování a na fakt, že `background-image` účinnost filtrů ruší.
 
 
-Tipy a triky
-------------
+Tipy, triky a nástroje
+----------------------
 
 Nezapomeňte, že gradient je vlastně **obrázek na pozadí elementu**, takže ho můžete použít pro definování obrázku odrážky (`list-style-image`) nebo pro obrázek na pozadí rámečku ([border-image](css3-border-image.md)).
 
@@ -194,6 +194,8 @@ Takřka **vědecké povídání o gradientech**. Ana Tudor jde v následujícím
 Lea Verou má hezkou galerii **barevných vzorů** vytvořených jen s pomocí gradientů. Berte to ale raději jen jako ukázku možností: [lea.verou.me/css3patterns](http://lea.verou.me/css3patterns).
 
 Právě zmíněné barevné vzory často využívají tzv. **ostrý přechod**, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana: `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);` [cdpn.io/e/licEd](http://cdpn.io/e/licEd).
+
+**CSS Scales** jsou předdefinované barevné přechody. Hezké, ano. Navíc ovšem při jejich vymýšlení mysleli na přístupnost a barvy jsou vhodné pro barvoslepé lidi. [bennettfeely.com/scales](http://bennettfeely.com/scales/).
 
 
 
