@@ -88,6 +88,7 @@ Písmo se pak bude zvětšovat podle šířky okna. Zkuste si to sami:
 
 - Téměř elastická typografie: [css-tricks.com/viewport-sized-typography/](https://css-tricks.com/viewport-sized-typography/).
 - Složitější, ale plně elastická typografie: [smashingmagazine.com/2016/05/fluid-typography/](https://www.smashingmagazine.com/2016/05/fluid-typography/).
+- Elastická typografie počítaná v procentech z výšky komponenty: [vrdl.cz/prirucka/reseni-elasticka-typografie](reseni-elasticka-typografie.md).
 
 ### Třetí příklad: velikost textu v hlavním nadpise stránky pomocí `vmin`
 

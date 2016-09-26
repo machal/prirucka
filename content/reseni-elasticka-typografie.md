@@ -2,15 +2,17 @@
 
 Pojďme si rozebrat jedno z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 
-Typografické hlavičky se na webu dělají docela často. Jenže když chcete, aby na různě velkých displejích vypadaly hezky, musíte pro jednotlivé breakpointy dělat ruční zásahy: 
+V komponentách, u kterých známe poměr stran, umožňuje nastavit svislý (typografický) rytmus v procentech z jejich výšky.
+
+Typografické hlavičky se na webu dělají docela často. Jenže když chcete, aby na různě velkých displejích vypadaly hezky, musíte pro jednotlivé breakpointy dělat ruční zásahy pomocí [Media Queries](css3-media-queries.md):
 
 ![Responzivní typografie](dist/images/original/elasticka-typografie-1.jpg)
 
-Shodou okolností jem před čtyřmi lety na WebExpu mluvil [o téměř vektorovém webu](http://webexpo.cz/praha2012/prednaska/pozor-front-end-stavba/). Tam jsem se u některých komponent snažil dosáhnout pružnosti, kterou známe z PDF.  Dnes už je naštěstí většina popisovaných technik použitelná.
+Shodou okolností jem před čtyřmi lety na WebExpu mluvil [o téměř vektorovém webu](http://webexpo.cz/praha2012/prednaska/pozor-front-end-stavba/). Tam jsem se u některých komponent snažil dosáhnout pružnosti, kterou známe z PDF.  Tehdy jsem ale ještě neznal jednotky viewportu.
 
 ## Téměř elastická typografie pomocí `vw`
 
-Nejčastěji se pro elastickou typografii používá nových [jednotek viewportu](css3-jednotky.md#jednotky-viewportu-vw-vh-vmin-vmax) `vw`, `vh`, `vmin` a `vmax`. Nejzajímavější je „volkswagen“ – `vw`. 
+Nejčastěji se pro elastickou typografii používají právě nové [jednotky viewportu](css3-jednotky.md#jednotky-viewportu-vw-vh-vmin-vmax): `vw`, `vh`, `vmin` a `vmax`. Nejzajímavější je „volkswagen“ – `vw`. 
 
 ```css
 .box__heading { 
@@ -28,24 +30,23 @@ Způsobů jak elastickou typografii vytvořit [je více](https://www.smashingmag
 
 ```css
 .box__heading { 
-  font-size: 10% boxheight;
-  padding-bottom: 8% boxheight;
+  font-size: 10bh; /* 10 % z výšky boxu  */
 }
 ```
 
-Jenže nic jako `10% boxheight` v CSS nemáme, že? Můžeme to ale spočítat, pokud známe alespoň poměr stran komponenty. Ten je v našem případě 16:9. Výška tedy je:
+Jenže nic jako `10bh` v CSS nemáme, že? Můžeme to ale spočítat, pokud známe poměr stran komponenty. Ten je v našem případě 16:9. Výšku pak vypočteme ze šířky a poměru stran:
 
 ```
 ((šířka okna) - (vodorovný padding)) / 16 * 9)
 ```
 
-Jedno procento výšky okna tedy je:
+Jedno procento výšky okna tedy vypočteme:
 
 ```
 ((šířka okna) - (vodorovný padding)) / 16 * 9 / 100)
 ```
 
-V CSS využijeme [funkci calc()](css3-calc.md) a zápis pak vypadá takto:
+V CSS pak využijeme [funkci calc()](css3-calc.md) a zápis pak vypadá takto:
 
 ```css
 calc( (100vw - 2em) / 16 * 9 / 100 )
@@ -53,7 +54,7 @@ calc( (100vw - 2em) / 16 * 9 / 100 )
 
 ![Elastická typografie - výpočet](dist/images/original/elasticka-typografie-3.jpg)
 
-V původní deklaraci pak bude zápis takovýto: 
+Těch deset procent z výšky komponenty pak zapíšeme takto: 
 
 ```css
 .box__heading { 
@@ -61,14 +62,13 @@ V původní deklaraci pak bude zápis takovýto:
 }
 ```
 
-V preprocesoru bychom to pak moli napsat elegantněji:
+V preprocesoru bychom to pak moli napsat elegantněji. Používám SCSS:
 
 ```scss
 $boxHeightPercent: "( (100vw - 2em) / 100 / 16 * 9 )";
 
 .box__heading { 
   font-size: calc( 10 * #{$boxHeightPercent} );
-  padding-bottom: calc( 8 * #{$boxHeightPercent} );
 }
 ```
 
@@ -84,9 +84,11 @@ Je dobré ještě pomyslet na náhradní řešení v IE verze 9 a starších:
 }
 ```
 
-Výsledek pak v různých rozlišeních vypadá takto:
+Výsledek pak v různých zařízeních vypadá takto:
 
 ![Elastická typografie v různých prohlížečích](dist/images/original/elasticka-typografie-4.jpg)
+
+Samozřejmě. Měli bychom pak ale ještě myslet na nějaká minima a případně i maxima. Znovu tady pro zájemce odkážu na [článek na Smashing Magazine](https://www.smashingmagazine.com/2016/05/fluid-typography/).
 
 Živé demo i s fallbackem je tady: [cdpn.io/e/bZzmGg](http://codepen.io/machal/pen/bZzmGg?editors=1100#0).
 
