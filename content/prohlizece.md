@@ -11,7 +11,8 @@ Více než polovina mobilních shlédnutí stránek je z mobilního Chrome.
 
 ## Desktop: Chrome jako jediný masivně roste, na desktopu přes třetinu
 
-|* Prohlížeč *|* Vývoj za dva roky *|* Podíl k  6/2016 *|* HTML5test.com skóre *|
+| Prohlížeč  |  Vývoj za dva roky | Podíl k  6/2016 | HTML5test.com skóre |
+| -----------  |  --------------------- | ------------------ | -------------------------- |
 | [Chrome](https://en.wikipedia.org/wiki/Google_Chrome) | ⇧ | 34,26 | 492/555 (v52) |
 | [Firefox](https://en.wikipedia.org/wiki/Firefox) | ⇩ | 20,37 | 461/555 (v48) |
 | [IE 8](https://en.wikipedia.org/wiki/Internet_Explorer_8) | ⇩ | 0,50 | 33/555 |
@@ -38,7 +39,8 @@ Na 20 % podílu ze shlédnutých stránek se mobily samozřejmě nezastaví. Za 
 
 ![Vývoj podílu mobilních prohlížečů](../dist/images/original/prohlizece-mobily.png)
 
-|* Prohlížeč *|* Vývoj za dva roky *|* Podíl k  6/2016 *|* HTML5test.com skóre *|
+| Prohlížeč  |  Vývoj za dva roky | Podíl k  6/2016 | HTML5test.com skóre |
+| -----------  |  --------------------- | ------------------ | -------------------------- |
 | [Chrome Mobile](https://en.wikipedia.org/wiki/Google_Chrome_for_Android) | ⇧ | 11,74 | 486/555 (v52) |
 | Android Browser | ⇩ | 5,06 | 356/555 (v30) |
 | [Safari Mobile](https://en.wikipedia.org/wiki/Safari_(web_browser)) | ⇩ | 1,17 | 378/555 (v9.3) |
