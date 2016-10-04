@@ -6,10 +6,9 @@ Node.js na frontendu potřebujeme hlavně kvůli usnadnění vývojářské prá
 
 - Node.js – běh javascriptu na příkazové řádce.
 - NPM (Node Package Manager)  – správce javascriptových balíčků.
-- Bower – správce frontend balíčků (např. jQuery nebo framework Bootstrap).
 - [Grunt](grunt.md) – sestavovač nebo buildovač; nástroj pro běh vývojářských úloh.
 
-Časem si můžete oblíbit automatizátor Yeoman a další nástroje jako Gulp nebo WebPack. Mohou být velmi užitečné, ale pro zjednodušení se jim tady nebudeme vůbec věnovat.
+Někdo si může oblíbit i další nástroje tohoto ekosystému, třeba [Bower](bower.md) – správce frontend balíčků (např. jQuery nebo framework Bootstrap). Nebo například automatizátor Yeoman, Gulp nebo WebPack. Mohou být velmi užitečné, ale pro zjednodušení se jim tady nebudeme věnovat.
 
 ![Node.js](dist/images/original/node-js.svg)
 
@@ -26,10 +25,10 @@ Jednoduchý postup instalace pro všechny platformy je popsaný na webu Node.js:
 
 Podívejme se ale i na lepší postupy.
 
-### Postup pro Windows: VS Code a Git
+### Postup pro Windows
 
-1. Hodí se nainstalovat Visual Studio Code – editor kódu, který je prý moc fajn, ale potřebovat ho nebudeme. Zároveň nám totiž jednoduchým způsobem nainstaluje podporu Node.js pro Windows: [visualstudio.com/products/code-vs](https://www.visualstudio.com/products/code-vs)
-2. Nainstalujte Git do příkazové řádky. V kroku „Adjusting your PATH environment“ vybrat „Run Git from the Windows Command Prompt“: [git-scm.com/downloads](http://git-scm.com/downloads).
+1. Nainstalujte Git do příkazové řádky. V kroku „Adjusting your PATH environment“ vybrat „Run Git from the Windows Command Prompt“: [git-scm.com/downloads](http://git-scm.com/downloads).
+2. Nainstalujeme Node.js: [nodejs.org/en/download](https://nodejs.org/en/download/).
 
 ### Postup pro Mac OS a Linux: NVM, nebo hraní s uživatelskými právy 
 
@@ -43,7 +42,7 @@ Máte nainstalováno? Jestli vše funguje, zjistíte příkazem pro zobrazení v
 npm -v
 ```
 
-Všechny ostatní potvůrky se pak instalují jako Node balíčky.
+Všechny ostatní nástroje se pak instalují jako Node balíčky.
 
 ## Grunt, Bower a další Node balíčky
 
@@ -68,6 +67,8 @@ npm install <nazev-pluginu> --save-dev
 ```
 
 Všimněte si, že už neinstalujeme globálně – bez přepínače `-g`. Ano, Grunt pluginy nebo třeba Bower balíčky instalujeme ke konkrétnímu projektu. Zároveň je chceme uložit do konfiguračních souborů balíčkovacího systému (`packages.json`).
+
+Pro inspiraci: Moje tipy na [Grunt pluginy](grunt-pluginy.md). 
 
 Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciální péči. Například tyto dva:
 
