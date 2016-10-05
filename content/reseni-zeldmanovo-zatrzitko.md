@@ -2,18 +2,19 @@
 
 Podíváme se na další z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 
-Žádné SVG ani flexbox tady tentokrát nehledejte. Jen [animované přechody](css3-transitions.md) a [tranformace](css3-transformations.md) z CSS. Zatržítko mě zaujalo právě svou jednoduchostí.
+Je to jednoduchá, ale efektní věc postavená na [animovaných přechodech](css3-transitions.md) a [tranformacích](css3-transformations.md). Zatržítko mě zaujalo právě svou jednoduchostí.
 
 Proč Zeldmanovo? Řešení jsem poprvé viděl na [studio.zeldman.com](http://studio.zeldman.com/).
 
 Podívejte se: [cdpn.io/e/ozgPwm](http://codepen.io/machal/pen/ozgPwm).
 
-Jak na to? 
+![Zeldmanovo zatržítko](dist/images/original/reseni-zeldman-checkbox.jpg)
 
+Jak na to? 
 
 ## 1. Na HTML nic není…
 
-…a to je dobře, protože řešení je plně přístupné.
+…a to je dobře, protože řešení je díky tomu plně přístupné a funkční i ve starých prohlížečích.
 
 ```html
 <label class="checkbox">
@@ -44,11 +45,11 @@ Z nového pseudoelementu pak vytvoříme překryvnou vrstvu:
 .checkbox__label:before {
   content: ' ';
   display: block;
-  height: 2.5rem;
-  width: 2.5rem;
   position: absolute;
   top: 0;
   left: 0;
+  height: 2.5rem;
+  width: 2.5rem;
   background: #EDE29F;  
 }
 ```
@@ -61,14 +62,14 @@ Pomůžeme si dalším pseudoelementem:
 .checkbox__label:after {
   content: ' ';
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;  
   height: 2.5rem;
   width: 2.5rem;
   border: .35rem solid #48440E;
-  transition: 200ms;
-  position: absolute;
-  top: 0;
-  left: 0;
   background: #EDE29F;  
+  transition: 200ms;  
 }
 ```
 
@@ -92,6 +93,8 @@ Jakmile na něj někdo klikne:
 - zmenší se výška na polovic (`height: 1.25rem`)
 - zmení se barva rámečku (`border-color: green`)
 
+Všimněte si, že využíváme vlnovkový selektor pro elementy se stejným rodičem. Podívejte se i na další [CSS3 selektory](css3-selektory.md).
+
 ## 5. Animujeme!
 
 Tohle je ta jednodušší část. Pomohou nám [animace přechodů](css3-transitions.md). Však se podívejte na kód:
@@ -102,6 +105,19 @@ Tohle je ta jednodušší část. Pomohou nám [animace přechodů](css3-transit
 }
 ```
 
-Řešení bude fungovat ve všech dnešních prohlížečích. 
+## Náhradní řešení pro staré Explorery
 
-Tady je živé demo: [cdpn.io/e/ozgPwm](http://codepen.io/machal/pen/ozgPwm).
+Řešení bude fungovat v Internet Exploreru od verze 10 a všech dnešních prohlížečích.  
+
+V IE 8 a 9 by se ale zobrazovalo špatně. Důvody jsou v nepodpoře CSS transformací konkrétního typu nebo pokročilejších selektorů. Nemůžeme proto použít detekci vlastností. Pomohou nám [podmíněné body třídy](https://css-tricks.com/snippets/html/add-body-class-just-for-ie/). Problematické části prostě odstraníme:
+
+```css
+.old-ie .checkbox__label:before,
+.old-ie .checkbox__label:after {
+  display: none;
+}
+```
+
+Staré Explorery pak zobrazí klasický systémový checkbox.
+
+A je to. Tady je živé demo: [cdpn.io/e/ozgPwm](http://codepen.io/machal/pen/ozgPwm).
