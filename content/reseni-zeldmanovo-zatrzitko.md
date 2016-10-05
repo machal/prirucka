@@ -2,7 +2,7 @@
 
 Podíváme se na další z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 
-Je to jednoduchá, ale efektní věc postavená na [animovaných přechodech](css3-transitions.md) a [tranformacích](css3-transformations.md). Zatržítko mě zaujalo právě svou jednoduchostí.
+Je to jednoduchá, ale efektní věc postavená na [animovaných přechodech](css3-transitions.md) a [transformacích](css3-transformations.md). Zatržítko mě zaujalo právě svou jednoduchostí.
 
 Proč Zeldmanovo? Řešení jsem poprvé viděl na [studio.zeldman.com](http://studio.zeldman.com/).
 
