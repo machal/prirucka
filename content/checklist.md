@@ -22,7 +22,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 <small>Stromová struktura (outline) usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více `<h1>`?]( http://www.vzhurudolu.cz/blog/25-vice-h1).</small>
 - Obsah bez typografických chyb  
 <small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Dohlídněte alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
-- Odkazů z webu ven jsou platné  
+- Odkazy z webu ven jsou platné  
 <small>Pro kontrolu použijte třeba [W3C Link Checker](http://validator.w3.org/checklink) nebo [Xenu](http://home.snafu.de/tilman/xenulink.html).</small>
 
 ## Kvalita CSS a JS kódu
@@ -99,3 +99,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 Poznámka: Napsáno hlavně pro [webové kodéry](/prirucka/webovy-koder) a prezentační weby. U webových aplikací bude řada věcí jinak. 
 
 Úpravy vítány. Klikněte na datum nahoře pod nadpisem a pošlete pull request na Github.
+
+Věnujte pozornost i dalším českým webařských checklistům: [SEO od Lukáše Pítry](http://www.lukaspitra.cz/checklist-kontroly-pred-spustenim-webu/) a [UX pro eshopy od Ondřeje Ilinčeva](http://www.ilincev.com/ux-checklist-eshop).
+
+
