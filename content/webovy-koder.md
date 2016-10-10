@@ -63,7 +63,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### Prohlížeče
 
-* **[nové] **Jaké jsou: jádra prohlížečů a jednotlivé prohlížeče v .cz a světovém prostředí včetně [mobilních](http://www.vzhurudolu.cz/blog/18-mobilni-prohlizece).
+* **[nové] **Jaké jsou: jádra prohlížečů a [jednotlivé prohlížeče v českém](prohlizece.md) a světovém prostředí včetně mobilních.
 * **[nové] **Fungování prohlížeče: [preloader](http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/); blokující JS/CSS.
 * Rychlost načítání: základní metody: datový objem stránky, requesty, CSS sprity.
 * **[nové] **Pokročilá rychlost načítání: [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=en); znalost principů lazyloadingu, podmíněné načítání, problému latence mobilních sítí. ([školení](http://www.vzhurudolu.cz/kurzy/pokrocily-responzivni-design))

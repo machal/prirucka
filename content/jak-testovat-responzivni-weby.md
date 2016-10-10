@@ -13,7 +13,7 @@ Mé testování je čtyřfázové:
 
 Ještě než začnu něco pořádně kódovat, procházím nultou kodérskou fází. Prototypování pomocí [Codepenu](http://codepen.io/machal). 
 
-Codepen je pro mě pískoviště, kde experimentuji s problémy, které mohou být technicky složitější nebo náročné na odhad časové náročnosti.  V Codepenu je to za chvilku hotové a výsledek můžu rychle otestovat ve všech možných prohlížečích. 
+Codepen je pro mě pískoviště, kde experimentuji s problémy, které mohou být technicky složitější nebo náročné na odhad časové náročnosti.  V Codepenu je to za chvilku hotové a výsledek můžu rychle otestovat ve všech možných [prohlížečích](prohlizece.md). 
 
 ## Chrome DevTools: vývojářský desktopový prohlížeč
 
