@@ -2,6 +2,8 @@
 
 Pojďme si shrnout aktuální stav trhu prohlížečů. Čísla v článku jsou vytažená z Rankings.cz ke konci června 2016.
 
+*Upozornění: ve statistikách není chybně zohledněn [prohlížeč Samsung Internet](http://www.vzhurudolu.cz/blog/71-samsung-internet). Odhadem bude mít minimálně dvouprocentní podíl na trhu.*
+
 ![Podíly prohlížečů na trhu v ČR](../dist/images/original/prohlizece-kolac.jpg)
 
 Nejprve tři zásadní fakta:
