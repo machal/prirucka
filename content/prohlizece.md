@@ -73,7 +73,7 @@ Ke krátkému komentáři pro zajímavost přidávám i skóre [na HTML5test.com
   Moderní prohlížeč od Microsoftu roste méně než bych čekal.
   <small>HTML5test.com: 460/555 (verze 14)</small>
 - **[Opera](https://en.wikipedia.org/wiki/Opera_(web_browser))**
-  Od verze 13 je postavená na stejném jádru jako Chrome, takže s testováním tolik práce není.  
+  Od verze 15 je postavená na stejném jádru jako Chrome, takže s testováním tolik práce není.  
   <small>HTML5test.com: 496/555 (verze 40)</small>
 - **[Safari](https://en.wikipedia.org/wiki/Safari_(web_browser))**  
   Z moderních prohlížečů je to dnes největší *brzda*. Ještě nedávno byl WebKit synonymem inovací na webu, pamatujete? Aktualizuje se klasicky až s verzemi operačního systému.
