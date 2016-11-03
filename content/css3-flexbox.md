@@ -1,6 +1,23 @@
 CSS3 Flexbox: layout pomocí pružných boxů
 =========================================
 
+
+<div class="web-only vd-nav">
+  <h2 class="sr-only">Navigace: vše o flexboxu</h2>
+  <ul>
+    <li>
+        <strong class="vd-nav__item">Flexbox</strong>
+    </li>
+    <li>
+        <a class="vd-nav__item" href="css3-flexbox-polozky.md">Položky</a>
+    </li>
+    <li>
+        <a class="vd-nav__item" href="css3-flexbox-kontejner.md">Kontejner</a>
+    </li>
+  </ul>
+</div>
+
+
 ## Co je flexbox?
 
 Nová cesta pro tvorbu layoutu, zarovnání a distribuci volné plochy.

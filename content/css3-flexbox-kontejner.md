@@ -1,10 +1,19 @@
 # Flexbox: vlastnosti kontejneru
 
-<p class="web-only" markdown="1">
-  Čtete referenční příručku vlastností, které je možné přiřadit kontejneru 
-  [flexboxu](css3-flexbox.md). Je dobré vědět, že existuje i příručka 
-  [pro položky flexboxu](css3-flexbox-polozky.md). 
-</p>
+<div class="web-only vd-nav">
+  <h2 class="sr-only">Navigace: vše o flexboxu</h2>
+  <ul>
+    <li>
+        <a class="vd-nav__item" href="css3-flexbox.md">Flexbox</a>
+    </li>
+    <li>
+        <a class="vd-nav__item" href="css3-flexbox-polozky.md">Položky</a>
+    </li>
+    <li>
+        <strong class="vd-nav__item">Kontejner</strong>
+    </li>
+  </ul>
+</div>
 
 ##   Blokový nebo řádkový?
 

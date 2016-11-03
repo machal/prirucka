@@ -1,10 +1,19 @@
 # Flexbox: vlastnosti položky
 
-<p class="web-only" markdown="1">
-  Čtete referenční příručku vlastností, které je možné přiřadit položkám 
-  [flexboxu](css3-flexbox.md). Raději zmíním, že existuje i příručka 
-  [pro kontejner flexboxu](css3-flexbox-kontejner.md). 
-</p>
+<div class="web-only vd-nav">
+  <h2 class="sr-only">Navigace: vše o flexboxu</h2>
+  <ul>
+    <li>
+        <a class="vd-nav__item" href="css3-flexbox.md">Flexbox</a>
+    </li>
+    <li>
+        <strong class="vd-nav__item">Položky</strong>
+    </li>
+    <li>
+        <a class="vd-nav__item" href="css3-flexbox-kontejner.md">Kontejner</a>
+    </li>
+  </ul>
+</div>
 
 ##   `flex-grow` – možnost zvětšování {#flex-grow}
 
