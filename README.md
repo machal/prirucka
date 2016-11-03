@@ -49,3 +49,13 @@ Video: [BrowserStack](https://www.youtube.com/watch?v=VN8CFG-YajE) - Jak testova
 </p>
 ```
 
+### Zobrazení jen na webu
+
+Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování textu odstraněno.
+
+```markdown
+<p class="web-only" markdown="1">
+  Čtete referenční příručku vlastností, které je možné přiřadit položkám 
+  [flexboxu](css3-flexbox.md).
+</p>
+```
