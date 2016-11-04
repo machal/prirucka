@@ -2,7 +2,7 @@
 	"folders":
 	[
 		{
-			"follow_symlinks": true,
+			"follow_symlinks": true,      
 			"path": ".",
       "folder_exclude_patterns": ["bower_components", "node_modules"]
 		}
