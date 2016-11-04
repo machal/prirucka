@@ -30,11 +30,15 @@ Video: [Úvod do Style Guides](https://www.youtube.com/watch?v=FvTzAwebUjQ) - Ma
 
 Style guides, systémy komponent, vlastní Bootstrapy, UI knihovny, knihovny návrhových vzorů, CSS frameworky… Ano, narážím na hlavní nevýhodu design systémů – zatím mají děsně moc názvů a variant. Ať tomu budeme říkat jakkoliv, webdesign jde z mého pohledu jasně tímhle směrem.
 
+![Webmium - systém atomického designu](dist/images/original/atomicky-design-webmium.jpg)
+
 Jedním z nejnadějnějších myšlenkových frameworků pro tvorbu designových systémů je Atomic Design.
 
 ## Atomický design 
 
 [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/). Proč do atomického designu vkládám takovou naději? Stojí za ním chlapík jménem Brad Frost. Nic vám to neříká? Nevadí. Je to velká hvězda frontend designu, která má vliv a teď navíc o atomickém designu [píše knížku](http://atomicdesign.bradfrost.com/). Ano, sázet při výběru nástroje na jméno tvůrce není stoprocentně spolehlivé. Brad ale v tuhle chvíli nemá konkurenci a ta knížka to pojistí, uvidíte.
+
+![Atomic Design](dist/images/original/atomic-design.jpg)
 
 V atomickém designu přišel s tříděním prvků na stránce do úrovní vycházejících celkem chytře z chemické terminologie. Vezměme to i s příklady z hypotetického eshopu:
 
@@ -92,13 +96,11 @@ Asi budete souhlasit, že obsah a design spolu dost úzce souvisejí. Při prác
 
 Pattern Lab nabízí úžasnou věc – vkládání reálného obsahu přímo do designu. Pokud už obsah někde máte, necháte si ho nalít do JSON souboru a napojíte na něj Pattern Lab. Lusknutí prstem a v prohlížeči testujete víceméně reálný web. Nebo v našem případě více webů na jednom systému designu:
 
-*TODO Webmium eshops*
+![Varianty Webmium](dist/images/original/atomicky-design-webmium-eshopy.jpg)
 
 ### Pseudošablony: testování variant obsahu
 
 Další hezká věc a přitom žádná velká věda. Pattern Lab nabízí možnost vytvořit pseudošablony, varianty šablon s různým typem obsahu, různým rozložením atd. Prostě si všechny možnosti otestujete už přímo v design systému a ne až na běžícím webu.
-
-*TODO Webmium eshops*
 
 ## Zkusíte Pattern Lab a atomický design?
 
