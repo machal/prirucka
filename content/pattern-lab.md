@@ -1,8 +1,11 @@
 # Atomický design a Pattern Lab: návrat do budoucnosti návrhu uživatelských rozhraní
 
+> We’re not designing pages, we’re designing systems of components. 
+— Stephen Hay
+
 [Pattern Lab](http://patternlab.io/) je nástroj pro návrh, testování a prezentaci atomických designových systémů. 
 
-Pattern Lab používám na aktuálním projektu a mám takový pocit, že jinak už větší weby dělat nechci. V tomhle textu budu vysvětlovat proč.
+Používám jej na aktuálním projektu a mám takový pocit, že jinak už větší weby dělat nechci. V tomhle textu budu vysvětlovat proč.
 
 Nejprve si ale musíme povědět něco o systémech designu. 
 
@@ -11,8 +14,9 @@ Nejprve si ale musíme povědět něco o systémech designu.
 
 Myslím to, co asi znáte pod pojmy *style guide* nebo *pattern library*. Neznáte? Je to jako by jste si udělali pro větší projekt vlastní knihovnu odpovídající typu Bootstrap.
 
-> We’re not designing pages, we’re designing systems of components. 
-— Stephen Hay
+Budu se tady odkazovat na svůj aktuální projekt, přípravu atomického designu pro nový [Webmium Eshop](http://www.webmium.cz/eshopy).
+
+![Webmium - systém atomického designu](dist/images/original/atomicky-design-webmium.jpg)
 
 Systémy jsou super:
 
@@ -29,8 +33,6 @@ Video: [Úvod do Style Guides](https://www.youtube.com/watch?v=FvTzAwebUjQ) - Ma
 </p>
 
 Style guides, systémy komponent, vlastní Bootstrapy, UI knihovny, knihovny návrhových vzorů, CSS frameworky… Ano, narážím na hlavní nevýhodu design systémů – zatím mají děsně moc názvů a variant. Ať tomu budeme říkat jakkoliv, webdesign jde z mého pohledu jasně tímhle směrem.
-
-![Webmium - systém atomického designu](dist/images/original/atomicky-design-webmium.jpg)
 
 Jedním z nejnadějnějších myšlenkových frameworků pro tvorbu designových systémů je Atomic Design.
 
@@ -64,7 +66,7 @@ Video: [Atomic Design v České televizi](https://www.youtube.com/watch?v=wgsHfA
 
 Tak, a teď si pojďme povídat o nástroji pro práci na atomických systémech.
 
-## Pattern Lab: návrh, prezentace, ale hlavně testování
+## Pattern Lab: návrh, prezentace, ale hlavně testování atomického designu
 
 Na začátek se musím přiznat, že [Pattern Lab](http://patternlab.io/) je pro mě zdrojem největšího nepochopení a frustrace od doby co jsem se snažil ve Francii domluvit anglicky.
 
@@ -98,22 +100,37 @@ Pattern Lab nabízí úžasnou věc – vkládání reálného obsahu přímo do
 
 ![Varianty Webmium](dist/images/original/atomicky-design-webmium-eshopy.jpg)
 
+
 ### Pseudošablony: testování variant obsahu
 
 Další hezká věc a přitom žádná velká věda. Pattern Lab nabízí možnost vytvořit pseudošablony, varianty šablon s různým typem obsahu, různým rozložením atd. Prostě si všechny možnosti otestujete už přímo v design systému a ne až na běžícím webu.
+
+### Pattern Lab není nutnost, ale…
+
+Asi byste atomický systém dokázali implementovat bez Pattern Labu. Ale moc to nedoporučuji. Můžete ho navrhnout v Photoshopu, ale bude vám chybět možnost okamžitého otestování. Můžete ho zkusit napsat přímo v kódu, ale bude vám chybět nástroj pro snadný návrh a prezentaci.
+
+Ale ani v případě mé práce pro Webmium není Pattern Lab jediný nástroj. Grafické materiály dostávám v běžných celostránkových souborech z Photoshopu. S grafikem máme docela soulad, takže můžu prohlásit, že i takhle může atomický systém vznikat. Jen musíte vědět, že to co poskládáte z atomického designu nebude perfektně sedět s pé-es-déčky. Nicméně doufám, že v pixel-perfect návrhy už dávno nevěříte.
 
 ## Zkusíte Pattern Lab a atomický design?
 
 Určitě ho zkuste, pokud:
 
-- děláte vlastní produkt nebo spravujete větší web: design systém dlouhodobě využijete a větší počáteční časová investice se vám vrátí
-- jste otevření změnám v pracovních postupech: designér i kodér musí velmi intenzivně spolupracovat a vyvíjet věci v malých iteracích
+- děláte vlastní produkt nebo spravujete větší web: design systém dlouhodobě využijete a větší počáteční časová investice se vám vrátí;
+- jste otevření změnám v pracovních postupech: designér i kodér musí velmi intenzivně spolupracovat a vyvíjet věci v malých iteracích.
 
 Pattern Lab se nehodí:
 
-- do firem, kde rubete unikátní weby jako Baťa cvičky – obvykle agenturního typu
-- na malinké projekty – pokud si to nechcete vyloženě zkusit a víte, že to v budoucnu užijete
-- do týmů, kde designér chybí nebo je to externista
+- do firem, kde rubete unikátní weby jako Baťa cvičky – obvykle agenturního typu;
+- na malinké projekty – pokud si to nechcete vyloženě zkusit a víte, že to v budoucnu užijete;
+- do týmů, ve kterých chybí zkušený designér nebo kodér – spolupráce je tam dost důležitá (lze spojit do jedné osoby [frontend designéra](http://www.vzhurudolu.cz/blog/62-frontend-pozice#frontend-designer)).
 
-Já sám vím, že bez Pattern Labu a atomického designu se mi nové projekty nebude chtít dělat. 
+## Návrat do budoucnosti?
+
+Tím, že jsme si do projektů zavedli vodopádový systém (grafik předává složitá celostránková PSDéčka atd.), udělali jsme si z webdesignu dost složitý obor. 
+
+Díky nástupu mobilních zařízení se zjednodušují uživatelská rozhraní, což je skvělé, ale nestačí to. Nástup designových systémů vnímám jako další ohromně zjednodušující a pročišťující proces. Proto *návrat*. Návrat do pravěku webdesignu, kdy příprava webu nebyla tak komplexní činností.
+
+A proč návrat *do budoucnosti*? [Na WebExpo 2015](https://webexpo.cz/praha2015/prednaska/designovani-webu-v-prohlizeci/) jsem říkal, že nám chybí nástroje pro rozumný návrh rozhraní. A že v budoucnu určitě přijdou. Pattern Lab je pro mě jedním z nich. 
+
+Do světa bez atomického designu, Pattern Labu nebo podobných nástrojů se už vracet nechci. 
 
