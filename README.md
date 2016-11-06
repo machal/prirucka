@@ -43,9 +43,11 @@ Lorem ipsum lorem ipsum:
 
 ### Video
 
+Ideální je vložení pomocí HTML kódu. Markdown je tady nespolehlivý:
+
 ```markdown
-<p class="video" markdown="1">
-Video: [BrowserStack](https://www.youtube.com/watch?v=VN8CFG-YajE) - Jak testovat web ve všech prohlížečích a nemuset řešit virtuály a emulátory.
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> – obě vlastnosti rozebrány ve videu. Podívejte se.
 </p>
 ```
 
