@@ -177,7 +177,7 @@ Jednoduché, dvoubarevné lineární gradienty lze ve starších Explorerech za�
     GradientType=0, startColorstr=#00ff00, endColorstr=#008800)";
 ```
 
-V parametru `GradientType` nastavujete vertikální (`0`) nebo horizontální (`1`) směr gradientu. U filtrů jen pozor na pomalejší vykreslování a na fakt, že `background-image` účinnost filtrů ruší.
+V parametru `GradientType` nastavujete svislý (`0`) nebo vodorovný (`1`) směr gradientu. U filtrů jen pozor na pomalejší vykreslování a na fakt, že `background-image` účinnost filtrů ruší.
 
 
 Tipy, triky a nástroje

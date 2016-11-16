@@ -4,7 +4,7 @@ Rozhraní webů nebo aplikací stavěné na Bootstrapu můžete budovat dvěma z
 
 Dnes vám doporučím jít druhou cestou. Cestou respektu k zákonitostem Bootstrapu. Bohatě se vám to vyplatí, uvidíte. Navenek se to nezdá, ale i v sazbě je tenhle populární framework uvnitř přísně systematický.
 
-Designéři podobné principy znají pod pojmy [typografický nebo vertikální rytmus](http://typecast.com/blog/4-simple-steps-to-vertical-rhythm). Systém, který dále popisuji ale oceníte i v případě kdy vertikální mřížku dodržujete spíše od oka.
+Designéři podobné principy znají pod pojmy [typografický nebo svislý rytmus](http://typecast.com/blog/4-simple-steps-to-vertical-rhythm). Systém, který dále popisuji ale oceníte i v případě kdy typografickou mřížku dodržujete spíše od oka.
 
 Ať už jste sazeč exaktní nebo „od oka“, vždy potřebujete vycházet ze základní velikosti písma a výšky řádku.
 
@@ -17,7 +17,7 @@ Pokud jste v Bootstrapu zkoušeli její hodnotu změnit, víte, že se vám pře
 Pro výšku řádku máme k dispozici 2 proměnné:
 
 * `@line-height-base` – pro nastavování výšky řádku v inline elementech typu tlačítka. Výchozí je vypočtena na přibližně `1.4`.
-* `@line-height-computed` – výchozí výška řádku převedená do pixelových hodnot. Použitelná právě pro budování vertikálního rytmu pomocí okrajů elementu (margin a padding). Výchozí se počítá na `20px`.
+* `@line-height-computed` – výchozí výška řádku převedená do pixelových hodnot. Použitelná právě pro budování typografického rytmu pomocí okrajů elementu (margin a padding). Výchozí se počítá na `20px`.
 
 Tu druhou ve vlastním kódu využívám velmi často. Obvykle jako podíly nebo násobky výchozí hodnoty. Stejný princip Bootstrap totiž používá ve svém vlastním kódu. Vaše odvozená komponenta může vypadat takto:
 

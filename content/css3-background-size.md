@@ -9,8 +9,7 @@ Syntaxe
 ```css
 background-size:
   (cover/contain)
-  _vertikalni_rozmer_
-  _horizontalni_rozmer_;
+  (_sirka_ (_vyska_));
 ```
 
 Výchozí hodnota `background-size: auto auto` znamená, že si obrázek zachová svou původní velikost.
@@ -31,7 +30,7 @@ Tip: Pokud máte tendenci takto pracovat s ikonami, porozhlédněte se po vektor
 
 ### Rozměry v `px` nebo procentech
 
-*_vertikalni_rozmer_* a *_horizontalni_rozmer_* je možné definovat ve standardních CSS jednotkách – `px`, `em` a dalších.
+Šířku a výšku je možné definovat ve standardních CSS jednotkách – `px`, `em` a dalších.
 
 Procenta se používají relativně k šířce nebo výšce elementu, na který je vlastnost aplikována. Například roztažení barevného přechodu na celou šířku a polovinu výšky elementu zapíšeme takto:
 

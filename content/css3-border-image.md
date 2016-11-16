@@ -23,9 +23,9 @@ Jediná povinná vlastnost. Samostatně jako `border-image-source: url(…)`.
 
 ### Rozměry řezů
 
-Právě touto hodnotou zdrojový obrázek naporcujeme tak, aby prohlížeč věděl, kde leží výřezy pro všechny čtyři rohy a kde výřezy pro vertikální a horizontální stranu rámečku.
+Právě touto hodnotou zdrojový obrázek naporcujeme tak, aby prohlížeč věděl, kde leží výřezy pro všechny čtyři rohy a kde výřezy pro svislou a vodorovnou stranu rámečku.
 
-Obsahuje jedno, dvě (horizontální a vertikální řez) nebo čtyři čísla (řez horní, pravý, dolní a levý). Definovat lze v pixelech nebo v procentech z rozměrů zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
+Obsahuje jedno, dvě (vodorovný a svislý řez) nebo čtyři čísla (řez horní, pravý, dolní a levý). Definovat lze v pixelech nebo v procentech z rozměrů zdrojového obrázku. Výchozí stav je `border-image-slice: 100%`.
 
 Pokud je přítomno klíčové slovo `fill`, vezme se ze zdrojového obrázku i jeho střední část a vykreslí se přes pozadí elementu.
 
@@ -43,14 +43,14 @@ Rozměr specifikovaný v `border-image-outset` říká, jak moc obrázkový rám
 
 ### Opakování
 
-Jak bude prohlížeč pracovat s vertikální a horizontální stranou obrázkového rámečku, pokud má rámeček jiné rozměry než zdrojový obrázek? To můžeme nastavit v `border-image-repeat`. Možnosti jsou tyto:
+Jak bude prohlížeč pracovat se svislou a vodorovnou stranou obrázkového rámečku, pokud má rámeček jiné rozměry než zdrojový obrázek? To můžeme nastavit v `border-image-repeat`. Možnosti jsou tyto:
 
 * `stretch` – obrázek se roztáhne na šířku rámečku
 * `repeat` – obrázek se bude opakovat
 * `round` – pokud plochu nevyplní celočíselný počet opakování, jednotlivá opakování se roztáhnou, aby plochu vyplnila
 * `space` – pokud plochu nevyplní celočíselný počet opakování, prázdná plocha je spravedlivě rozdělena mezi všechna opakování (k jednotlivým opakováním se přidá mezera)
 
-Je dobré připomenout, že i tady je možné nastavit různé hodnoty pro horizontální i vertikální část rámečku. Například:
+Je dobré připomenout, že i tady je možné nastavit různé hodnoty pro vodorovnou i svislou část rámečku. Například:
 
 
 ```css
@@ -114,7 +114,7 @@ Přidáme obrázek na pozadí:
 border-image-source: url(border-image-source.png);
 ```
 
-Dále definujeme řezy. V tomto zdrojovém obrázku máme horizontální rámeček vysoký	21 pixelů a vertikální 23 pixelů.
+Dále definujeme řezy. V tomto zdrojovém obrázku máme vodorovný rámeček vysoký	21 pixelů a svislý 23 pixelů.
 
 ```css
 border-image-slice: 21 23;

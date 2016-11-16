@@ -47,13 +47,13 @@ Všimněte si, že jsme přepínači a textu nastavili `flex: none`. Nechceme to
 
 Příklad si opět můžete vyzkoušet na CodePenu [http://cdpn.io/e/jEJbmg](http://cdpn.io/e/jEJbmg).
 
-## Příklad třetí: vertikální centrování boxu neznámé výšky
+## Příklad třetí: svislé centrování boxu neznámé výšky
 
 ![centrování](dist/images/original/flexbox-priklady-5.jpg)
 
 Také jste se s tímto úkolem dřív trápili? S flexboxem už nebudete! Z `<body>` uděláme flex kontejner a roztáhneme jej na 100 % výšky okna – pomocí nové jednotky `vh`. Pak už jen stačí flex položce pomocí `align-self` přikázat, ať se centruje.
 
-Vertikální i horizontální centrování je s flexboxem bezproblémové. Kromě `align-self` se do následující referenční příručky podívejte i na vlastnosti `justify-content` a `align-items`.
+Centrování v obou směrech je s flexboxem bezproblémové. Kromě `align-self` se do následující referenční příručky podívejte i na vlastnosti `justify-content` a `align-items`.
 
 CodePen ukázka je na [http://cdpn.io/e/zxydom](http://cdpn.io/e/zxydom).
 

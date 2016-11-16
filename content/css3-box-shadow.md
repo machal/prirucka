@@ -9,15 +9,15 @@ Syntaxe
 ```css
 box-shadow:
   (inset)
-  _horizontalni_posun_
-  _vertikalni_posun_
+  _posun_x_
+  _posun_y_
   (_rozostreni_)
   (_roztazeni_)
   _barva_,
   (_dalsi stin_);
 ```
 
-Základní stín vytvoříte co by dup. První číslo udává **horizontální, druhé vertikální posun** směrem dolů. Záporná čísla stín posunují nahoru. Třetí je barva a vězte, že pro stíny se nejvíce hodí poloprůhledná [RGBa barva](css3-rgba.md):
+Základní stín vytvoříte co by dup. První číslo udává posun po vodorovné – doprava. Druhé po ose svislé – dolů. Záporná čísla stín posunují doleva, respektive nahoru. Třetí je barva a vězte, že pro stíny se nejvíce hodí poloprůhledná [RGBa barva](css3-rgba.md):
 
 ```css
 box-shadow: 5px 5px rgba(0, 0, 0, .5);

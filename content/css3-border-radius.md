@@ -27,7 +27,7 @@ Zakulacovat ovšem můžeme i v procentech ze šířky elementu a v dalších je
 border-radius: 15% 15% 0 0;
 ```
 
-Přidáním lomítka zajistíme **zakulacení ve tvaru elipsy**, nikoliv kružnice. První růžek bude zakulacený v elipse s vertikálním poloměrem 15 % a horizontálním 30 %:
+Přidáním lomítka zajistíme **zakulacení ve tvaru elipsy**, nikoliv kružnice. První růžek bude zakulacený v elipse se svislým poloměrem 15 % a vodorovným 30 %:
 
 ```css
 border-radius: 15% 15% 0 0 / 30% 15% 0 0;

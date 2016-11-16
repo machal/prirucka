@@ -5,8 +5,8 @@ Stínování textu.
 
 ```css
 text-shadow:
-	_horizontalni_posun_
-	_vertikalni_posun_
+	_posun_x_
+	_posun_y_
 	(_rozostreni_)
 	_barva_,
 	(_dalsi_stiny_);
