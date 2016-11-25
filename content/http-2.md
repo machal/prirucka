@@ -12,9 +12,11 @@ Frontendu webu se přechod na HTTP/2 dotkne kromě jiného tak, že přestává 
 - Weby na něm fičí jako když bičem mrská. 
 - Je binární, takže se rychleji parsuje a přenáší.
 - Komprimuje i hlavičky a tedy třeba i přenášené cookies.
-- Podporuje [multiplexing](https://http2.github.io/faq/#why-is-http2-multiplexed): v jednu chvílí může jít více požadavků i odpovědí, odpadá pak řazení dotazů do fronty.
+- Podporuje [multiplexing](https://http2.github.io/faq/#why-is-http2-multiplexed): v jednu chvíli jde po síti více požadavků i odpovědí, odpadá pak řazení dotazů do fronty.
 - Podporuje [Server Push](https://http2.github.io/faq/#whats-the-benefit-of-server-push): při prvním dotazu (na HTML) můžete rovnou poslat assety: obrázky, CSS nebo JS.
 - V praxi ale nejdřív musíte běžet na HTTPS.
+
+![HTTP/2 versus HTTP/1.1](dist/images/original/http-1-vs-2.jpg)
 
 <small markdown="1">
 Více informací: [Michal Špaček o HTTP/2](https://www.michalspacek.cz/prednasky/http2-develcz), [Root.cz - Jak funguje HTTP/2](https://www.root.cz/clanky/jak-funguje-novy-protokol-http-2/), [Ebook HTTP/2 explained](https://daniel.haxx.se/http2/).  
