@@ -61,3 +61,7 @@ Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování te
   [flexboxu](css3-flexbox.md).
 </p>
 ```
+
+### Umístění reklamy na webu
+
+Standardně po druhém odstavci. Lze změnit jednou nebo více kotvami `<!-- JobsSnippet -->` v obsahu.
