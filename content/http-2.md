@@ -14,6 +14,7 @@ Frontendu webu se přechod na HTTP/2 dotkne kromě jiného tak, že přestává 
 - Komprimuje i hlavičky a tedy třeba i přenášené cookies.
 - Podporuje [multiplexing](https://http2.github.io/faq/#why-is-http2-multiplexed): v jednu chvíli jde po síti více požadavků i odpovědí, odpadá pak řazení dotazů do fronty.
 - Podporuje [Server Push](https://http2.github.io/faq/#whats-the-benefit-of-server-push): při prvním dotazu (na HTML) můžete rovnou poslat assety: obrázky, CSS nebo JS.
+- Umí [prioritizaci](https://nghttp2.org/blog/2014/11/16/visualization-of-http-slash-2-priority/), takže prohlížeče mohou například upřednostnit stahování CSS před obrázky.
 - V praxi ale nejdřív musíte běžet na HTTPS.
 
 ![HTTP/2 versus HTTP/1.1](dist/images/original/http-1-vs-2.jpg)
