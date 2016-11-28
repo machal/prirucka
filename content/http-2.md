@@ -2,7 +2,7 @@
 
 HTTP/2 je nová verze protokolu, která dokáže urychlit načítání vašich webů. Je už téměř plně podporovaná na straně prohlížečů i serverového software.
 
-Pokud máte vlastní server, není problém dvojku hned nasadit a já vám radím, abyste to taky udělali. České sdílené hostingy zatím většinou čekají. Na co? Vše se dozvíte.
+Pokud máte vlastní server, není problém dvojku hned nasadit a já vám radím, abyste to taky udělali. České sdílené hostingy zatím většinou čekají. <!-- Na co? Vše se dozvíte. -->
 
 Frontendu webu se přechod na HTTP/2 dotkne kromě jiného tak, že přestává být potřeba  slučovat více vývojářských souborů do jednoho distribučního.
 
@@ -19,7 +19,7 @@ Frontendu webu se přechod na HTTP/2 dotkne kromě jiného tak, že přestává 
 ![HTTP/2 versus HTTP/1.1](dist/images/original/http-1-vs-2.jpg)
 
 <small markdown="1">
-Více informací: [Michal Špaček o HTTP/2](https://www.michalspacek.cz/prednasky/http2-develcz), [Root.cz - Jak funguje HTTP/2](https://www.root.cz/clanky/jak-funguje-novy-protokol-http-2/), [Ebook HTTP/2 explained](https://daniel.haxx.se/http2/).  
+Více informací: [Michal Špaček o HTTP/2](https://www.michalspacek.cz/prednasky/http2-develcz), [Jak funguje HTTP/2](https://www.root.cz/clanky/jak-funguje-novy-protokol-http-2/), [Ebook o HTTP/2](https://daniel.haxx.se/http2/).  
 Nástroje: [Firefox plugin](https://addons.mozilla.org/cs/firefox/addon/spdy-indicator/) pro detekci, zda web běží na HTTP/2. [Totéž pro Chrome](https://chrome.google.com/webstore/detail/http2-and-spdy-indicator/mpbpobfflnpcgagjijhmgnchggcjblin). [Jak poznat protokol](https://ma.ttias.be/view-http-spdy-http2-protocol-google-chrome/) v Chrome DevTools.
 </small>
 
@@ -44,7 +44,7 @@ Webů běžících na HTTP/2 je už v Česku docela dost. Třeba [VašeČočky.c
 
 ## Optimalizace frontendu se mění: hodně malých souborů je plus
 
-Při optimalizaci pro HTTP/1.1 frontendisti minimalizují data co stránka posílá a počet dotazů na server. Na HTTP/2 už na počtu dotazů tak moc nezáleží.
+Při optimalizaci pro HTTP/1.1 frontendisti dbající [na rychlost](http://www.vzhurudolu.cz/rychlost-nacitani) minimalizují data co stránka posílá a počet dotazů na server. Na HTTP/2 už na počtu dotazů tak moc nezáleží.
 
 Pro HTTP/2 je tedy ideální posílání menších CSS, JS souborů. Hlavní důvody pro některé aktuální optimalizační triky odpadají:
 
@@ -73,11 +73,13 @@ Pro Apache je tady [mod_http2](https://httpd.apache.org/docs/trunk/mod/mod_http2
 
 Serverový software je takřka připravený. Teď ještě, aby to někdo na těch serverech zapnul.
 
-Pokud máte vlastní server, nebo pronajatý server, nebude problém *zapnutí* HTTP/2 domluvit. Horší je to na sdíleném hostingu.
+Pokud máte vlastní nebo pronajatý server, nebude problém *zapnutí* HTTP/2 domluvit. Horší je to na sdíleném hostingu.
 
 ### České sdílené hostingy
 
-Ty většinou čekají stabilní verzi mod_http2. Na [cn130.com](http://cn130.com/2015/12/webhosting-s-http-2-0/) je pěkný seznam českých hostingů, které HTTP/2 podporují. Tedy seznam… Jsou zatím tři. Možná.
+Ty většinou čekají stabilní verzi mod_http2. Na [cn130.com](http://cn130.com/2015/12/webhosting-s-http-2-0/) je pěkný seznam českých hostingů, které HTTP/2 podporují. Tedy seznam… Jsou zatím dva, možná tři. 
+
+<!--
 
 - [Wedos](https://hosting.wedos.com/cs/newsletters/2016/05/01.html) prý podporuje HTTP/2 u všech linuxových tarifů.
 - [Tele3](https://www.tele3.cz/) to prý nastavuje na vyžádání.
@@ -95,6 +97,8 @@ V podobném duchu mě psal Matěj Kloubek z [Českého hostingu](http://www.cesk
 Vývoj budu sledovat. Pokud něco víte, napište prosím do komentářů.
 
 Na statické weby je možné použít CDN jako je třeba [cdn77.com](https://www.cdn77.com/), které novou verzi protokolu obvykle podporují.
+
+-->
 
 ## Nasazení HTTP/2 s Cloudflare
 
