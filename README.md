@@ -64,4 +64,4 @@ Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování te
 
 ### Umístění reklamy na webu
 
-Standardně po druhém odstavci. Lze změnit jednou nebo více kotvami `<!-- JobsSnippet -->` v obsahu.
+Standardně po druhém odstavci. Lze změnit jednou nebo více kotvami `<!-- AdSnippet -->` v obsahu.
