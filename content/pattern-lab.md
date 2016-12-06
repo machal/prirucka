@@ -9,6 +9,8 @@ Používám ho na aktuálním projektu a mám takový pocit, že jinak už vět�
 
 Nejprve si ale musíme povědět něco o systémech designu. 
 
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295697951&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
 
 ## Designové systémy
 
@@ -31,6 +33,8 @@ Systémy jsou super:
 - vylepší komunikaci v týmu a zaučení nových lidí, hlavně díky dokumentaci
 
 Designové systémy prostě šetří čas a peníze.
+
+<!-- AdSnippet -->
 
 Poslyšte, není těch názvů nějak moc? Style guides, systémy komponent, vlastní Bootstrapy, UI knihovny, knihovny návrhových vzorů, CSS frameworky… Ano, ta věc má děsně moc názvů a variant. Já si je všechny vložil do kategorie *systémy webového designu*. 
 
@@ -61,6 +65,8 @@ Frost přišel s tříděním prvků na stránce do úrovní vycházejících ce
 Neptáte se sami. Než jsem si atomickou organizaci zkusil na konkrétním projektu, všem okolo jsem říkal, že je to zbytečně složitá hierarchie a že běžné projekty si vystačí s jedno až dvouúrovňovou strukturou komponent. 
 
 Než jsem si to zkusil na konkrétním projektu. 
+
+<!-- AdSnippet -->
 
 Teď už mám vyzkoušeno a říkám, že je to kategorizace, která je pro obyčejné weby vlastně dokonalá. Omlouvám se tedy všem atomům, molekulám, organizmům a své učitelce chemie na střední.
 
@@ -106,6 +112,8 @@ Nejdřív otázka pro designéry:
 > Bylo dřív vejce nebo slepice? A obsah nebo design?
 
 Asi budete souhlasit, že obsah a design spolu dost úzce souvisejí. Při práci na designu potřebujete obsah, to designéři vědí. Jenže ono je to někdy i naopak. Při testování designu potřebujete všechny varianty obsahu, včetně extrémních. To vědí zase frontend kodéři.
+
+<!-- AdSnippet -->
 
 Pattern Lab nabízí úžasnou věc – vkládání reálného obsahu přímo do designu. Už ve fázi návrhu! Pokud obsah někde máte, necháte si ho nalít do JSON souboru a napojíte na něj Pattern Lab. Lusknutí prstem a v prohlížeči testujete víceméně reálný web. Nebo v případě rozpracovaného projektu pro Webmium více webů na jednom systému designu:
 
