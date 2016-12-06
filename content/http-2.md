@@ -91,7 +91,8 @@ Ty většinou čekají stabilní verzi mod_http2. Na [cn130.com](http://cn130.co
 - [Wedos](https://hosting.wedos.com/cs/newsletters/2016/05/01.html) prý podporuje HTTP/2 u všech linuxových tarifů.
 - [Tele3](https://www.tele3.cz/) to prý nastavuje na vyžádání.
 - [Active24](https://www.active24.cz/) údajně [umí na všech tarifech](https://www.facebook.com/active24cz/posts/10211267842150771), což je cool. Škoda jen, že aktuálně to využijí jen vaší uživatelé s Firefoxem.
-- [WPHosting](https://www.wp-hosting.cz/programatori/) to jako jediný komunikuje zcela veřejně.
+- [WPHosting](https://www.wp-hosting.cz/programatori/) pro WordPress to píše na webu.
+- [ONEBit](https://www.onebit.cz/cz/webhosting/) také na webu zmiňuje HTTP/2 u všech tarifů.
 
 Vyjádření některých dalších hostingů:
 
