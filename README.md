@@ -51,6 +51,16 @@ Video: <a href="https://www.youtube.com/watch?v=VN8CFG-YajE">BrowserStack</a> ~ 
 </p>
 ```
 
+### Podcast
+
+Vložení opět pomocí HTML kódu. 
+
+```html
+<p class="podcast">
+Podcast: <a href="https://soundcloud.com/vzhurudolu/s-robinem-pokornym-o-css-v-js">S Robinem Pokorným o CSS v JS</a>
+</p>
+```
+
 ### Zobrazení jen na webu
 
 Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování textu odstraněno.
