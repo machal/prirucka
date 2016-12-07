@@ -9,7 +9,9 @@ Používám ho na aktuálním projektu a mám takový pocit, že jinak už vět�
 
 Nejprve si ale musíme povědět něco o systémech designu. 
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295697951&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<p class="podcast">
+Podcast: <a href="https://soundcloud.com/vzhurudolu/atomicky-design-a-pattern-lab" data-id="295697951">Atomický design a Pattern Lab</a>
+</p>
 
 
 ## Designové systémy
