@@ -138,6 +138,6 @@ Javascriptové vlastnosti ideálního viewportu mají své protějšky v Media Q
 Můžete pokračovat článkem o [meta značce pro viewport](viewport-meta.md) nebo [viewportu na Windows](viewport-windows.md).
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=Un1lofU64oo">Viewporty na mobilních zařízeních</a> - praktická demonstrace viewportů na mobilních zařízeních a jak se k nim dostat v Javascriptu.
+Video: <a href="https://www.youtube.com/watch?v=Un1lofU64oo">Viewporty na mobilních zařízeních</a> ~ Praktická demonstrace viewportů na mobilních zařízeních a jak se k nim dostat v Javascriptu.
 </p>
 

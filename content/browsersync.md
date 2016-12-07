@@ -63,7 +63,7 @@ Vezměte mobil připojený do stejné wifi a vyťukejte do tamního prohlížeč
 Proč vám o takové *blbině* vyprávím? Protože šetří děsně energie při [testování responzivních webů](jak-testovat-responzivni-weby.md) na reálných zařízeních.
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> – obě vlastnosti rozebrány ve videu. Podívejte se.
+Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> ~ Obě vlastnosti rozebrány ve videu. Podívejte se.
 </p>
 
 ## Ladění webu na mobilních zařízeních
@@ -84,7 +84,7 @@ Weinre (vyslovujte jako *„winery“*) není tak pokročilá aplikace jako v pr
 Homepage Weinre má trošku krkolomnější adresu: [people.apache.org/~pmuellr/weinre/docs/latest/Home.html](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html)
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=3g-AaEkc47M">Browsersync: ladění mobilních prohlížečů </a> – vzdálené ladění pomocí Weinre a dalších funkcí Browsersync.
+Video: <a href="https://www.youtube.com/watch?v=3g-AaEkc47M">Browsersync: ladění mobilních prohlížečů </a> ~ Vzdálené ladění pomocí Weinre a dalších funkcí Browsersync.
 </p>
 
 ## Browsersync a Grunt

@@ -148,5 +148,5 @@ Vkládané SVG se samo o sobě nepřizpůsobuje rodičovskému kontejneru, proto
 A to je vše, přátelé. Více najdete [v demu na Githubu](https://github.com/machal/demo-grunticon).
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=jG49jWMSjSc">Grunticon: sada nástrojů pro práci s SVG </a> - co je Grunticon a jak ho nainstalovat a nastavit?
+Video: <a href="https://www.youtube.com/watch?v=jG49jWMSjSc">Grunticon: sada nástrojů pro práci s SVG </a> ~ Co je Grunticon a jak ho nainstalovat a nastavit?
 </p>
