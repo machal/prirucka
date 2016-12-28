@@ -10,7 +10,7 @@ Pojďme si teď zapráskat bičem, který jsem na sebe upletl. Celý proces tvor
 
 Ony to vlastně kroky nejsou. Je to nekonečný koloběh, jehož fáze se v praxi velmi prolínají.
 
-![Zjednodušený proces tvorby webu](dist/images/vdwd/original/proces-tvorby.png)
+![Zjednodušený proces tvorby webu](dist/images/original/vdwd/proces-tvorby.png)
 
 *Obrázek: Zjednodušený koloběh tvorby webu. V knížce se budeme zabývat hlavně fází řemeslnou – návrhem a realizací.*
 

@@ -10,7 +10,7 @@ Původní definice responzivního designu pochází z roku 2010, hlavy a pera Et
 
 Je to myslím nejsdílenější článek v historii webdesignu, ale když už vlastníte tuhle knihu, vlastně ho ani nepotřebujete. Pokud jste ale dosud nepřispěli ke krásným statistikám jeho čtenosti, udělejte prosím pěkně panu Marcottemu radost. On si to zaslouží, protože to vymyslel a napsal tak skvěle, že si dnešní webdesign bez „responzivnosti“ už ani neumíme představit. [http://alistapart.com/article/responsive-web-design](http://alistapart.com/article/responsive-web-design)
 
-![](dist/images/vdwd/original/principy-rwd.png)
+![](dist/images/original/vdwd/principy-rwd.png)
 
 *Obrázek: 3 principy responzivního designu: pružný layout, pružné obrázky, Media Queries.*
 

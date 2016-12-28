@@ -24,7 +24,7 @@ Návrh rozhraní v desktopovém světě počítal s tím, že máme k dispozici 
 
 Pro mnohé designéry, včetně mě, je proto lepší si rozhraní navrhnout nejprve pro ty nejmenší displeje. 
 
-![VašeČočky.cz - dvě skici](dist/images/vdwd/original/vase-cocky-dve-skici.png)
+![VašeČočky.cz - dvě skici](dist/images/original/vdwd/vase-cocky-dve-skici.png)
 
 *Obrázek: Rychlé ruční skici pro VašeČočky.cz.*
 
@@ -52,7 +52,7 @@ Příkladů „Desktop First“ řešení najdeme v Česku hodně. Vezměme Alzu
 
 Jen si například spočítejte, kolik různých navigací má desktopová verze Alzy. Už to samo o sobě nevěstí nic dobrého pro převod do mobilní podoby. V té pak některé navigace zmizí, jiné pak vypadají výrazně jinak než na desktopu. Rozhraní tedy z pohledu uživatele trpí nekonzistencí. Vzpomeňte na moje čtyři principy.
 
-![Alza.cz](dist/images/vdwd/original/alza-cz.png)
+![Alza.cz](dist/images/original/vdwd/alza-cz.png)
 
 *Obrázek: Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je odvozená a nekonzistentní s desktopovou.*
 
@@ -60,4 +60,4 @@ Weby jako Alza si za sebou pochopitelně táhnou zátěž v podobě své histori
 
 Na druhé straně je Maternia, provozovatel e-shopů jako VašeČočky.cz nebo Lentiamo.co.uk, a můj vážený klient. Tam se k zásadním změnám rozhodli už při zvažování mobilní verze. Mobile First postupem jsme postupně přepracovali celý web. Všechny komponenty rozhraní webu jsou jednotné z pohledu uživatele, ale i z pohledu návrhu a technologie.
 
-![Lentiamo.co.uk](dist/images/vdwd/original/lentiamo-co-uk.png)
+![Lentiamo.co.uk](dist/images/original/vdwd/lentiamo-co-uk.png)

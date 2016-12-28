@@ -15,7 +15,7 @@ Moderní webařina se najčastěji odkazuje na další výzkum Stevena Hoobera, 
 
 Přiznávám, že ve svých myšlenkách na Obra z Altonu si pravidlo zjednodušuji. Chci aktivní plochu vždy **alespoň jeden čtvereční centimetr**.
 
-![FotoŠkoda.cz](dist/images/vdwd/original/triky-ui-6.png)
+![FotoŠkoda.cz](dist/images/original/vdwd/triky-ui-6.png)
 
 *Obrázek: E-shop FotoŠkoda.cz má jeden z těch povedenějších košíků na mobilech. Všechno velké, navigace jednoznačná. Jen prvky v té šedivé ploše s „Pojištěním“ bych ani na pětiapůlpalcovém iPhone palcem netrefil. Na výšku alespoň centimetr, prosím!*
 
@@ -52,7 +52,7 @@ Pojďme si teď naložit nějaké praktické tipy, co říkáte?
 
 ## 8 tipů pro jednodušší rozhraní na mobilech
 
-![Zetor.cz](dist/images/vdwd/original/triky-ui-7.png)
+![Zetor.cz](dist/images/original/vdwd/triky-ui-7.png)
 
 ### 1) Dejte pryč všechny zbytečnosti 
 
@@ -64,7 +64,7 @@ Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaný
 
 Odkaz: UX Myth: Icons enhance usability – [http://uxmyths.com/post/715009009/myth-icons-enhance-usability](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
 
-![K bodu 3](dist/images/vdwd/original/triky-ui-8.png)
+![K bodu 3](dist/images/original/vdwd/triky-ui-8.png)
 
 ### 3) Šetřete rozbalovacími nabídkami 
 
@@ -72,7 +72,7 @@ S rozbalovacími nabídkami (typu `<select>`) je na mobilech tolik potíží, a�
 
 Odkaz: Luke Wroblewski: Dropdowns Should be the UI of Last Resort:  [http://www.lukew.com/ff/entry.asp?1950](http://www.lukew.com/ff/entry.asp?1950)
 
-![K bodu 4](dist/images/vdwd/original/triky-ui-9.png)
+![K bodu 4](dist/images/original/vdwd/triky-ui-9.png)
 
 ### 4) Otevírejte pohodlné klávesnice
 
@@ -82,7 +82,7 @@ Odkaz: Virtual keyboards are awesome. Use them. [http://mobileinputtypes.com/](h
 
 A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízeních uvádějte jako odkazy: [http://vrdl.cz/blog/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
 
-![](dist/images/vdwd/original/triky-ui-10.png)
+![](dist/images/original/vdwd/triky-ui-10.png)
 
 ### 5) Používejte krokovače a další alternativní formulářové prvky
 
@@ -94,7 +94,7 @@ Více opět u Luke Wroblewskiho: [http://www.lukew.com/ff/entry.asp?1950](http:/
 
 Jsou velmi dobrým pomocníkem ve vstupních polích, kde je velké množství možných vstupů – hlavně ve vyhledávání, které je na mobilech kvůli nepřítomnosti plnohodnotné navigace velmi důležité. V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití je omezené, ale určitě se na něj s vývojáři podívejte. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
 
-![](dist/images/vdwd/original/triky-ui-11.png)
+![](dist/images/original/vdwd/triky-ui-11.png)
 
 ### 7) Nenuťte mobilního uživatele psát
 
@@ -105,7 +105,7 @@ Tohle bych na webu SmileBox.cz ještě dotáhl. Mám na mobilu napsat text „kd
 
 Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to ale, že stránka by měla být dlouhá jako ponožky Pipi dlouhé punčochy. Hezký objev od UX konzultanta Jana Kvasničky vidíte na obrázku:
 
-![](dist/images/vdwd/original/triky-ui-12.png)
+![](dist/images/original/vdwd/triky-ui-12.png)
 
 *Obrázek: Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
 
@@ -133,7 +133,7 @@ Karusel je pro designéra i uživatele docela výzva. Z mnoha studií zpochybňu
 
 Navrhnout dobrý karusel je prostě složité – proto po něm osobně sáhnu až když jsem vyčerpal jiné možnosti.
 
-![](dist/images/vdwd/original/triky-ui-13.png)
+![](dist/images/original/vdwd/triky-ui-13.png)
 
 *Obrázek: Stará a nová verze karuselu na RSTS.cz. Starší ještě používala na mobilech nepoužitelnou tečkovou navigaci. Nová je vpravo a je fajn. Díky šipkám se lépe ovládá a grafika je uzpůsobená velikosti displeje.*
 
@@ -155,7 +155,7 @@ Jak už jsem psal, dost ve svých rozhraních sázím na to, že uživatelé pos
 
 Záložková navigace uvnitř stránky je mobilech riskantní, protože může otevírat obsah, jehož studium vám ony záložky odsune do neznáma. I proto mám mnohem raději takzvané akordeony. Podporují přirozené plynutí informací shora dolů.
 
-![](dist/images/vdwd/original/triky-ui-14.png)
+![](dist/images/original/vdwd/triky-ui-14.png)
 
 *Obrázek: CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis“ otevřít „Parametry“, musím posunovat stránku zpět nahoru.*
 

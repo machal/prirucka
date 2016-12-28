@@ -6,7 +6,7 @@ Vlastně dnes máme jen dvě možnosti jak udělat web pro všechna zařízení.
 
 Občas se říká „m tečka web“. Ano, jsou to ty weby, které pro přístupy z desktopů používají adresu jako www.example.cz a pro přístupy z mobilů m.example.cz. Z pohledu návštěvníka i provozovatele jsou to vlastně dva weby, které servírují stejný nebo případně i upravený obsah.
 
-![Web banky Moneta](dist/images/vdwd/original/moneta.png)
+![Web banky Moneta](dist/images/original/vdwd/moneta.png)
 
 *Obrázek: Příklad dvou aplikací pro jeden web. m.moneta.cz a www.moneta.cz.*
 
@@ -31,13 +31,13 @@ Dnes už je Scuk responzivní, ale v roce 2010 ještě mobily nebyly v Česku ta
 
 Desktopový Scuk.cz byl totiž *vymyšlený* pro desktop. Když je něco vymyšlené pro desktop, těžko z toho uděláte responzivní web. Musíte to vymyslet znovu. Scuk byl postavený na Google mapách, takže rozhraní bylo poměrně složité a řešení z pohledu frotnend technologií relativně těžkopádné. Hlavně pro mobily, kde potřebujete rychlé načtení a pohodlí ovládání, což vkládané Google mapy nenabízely.
 
-![Původní verze Scuk.cz](dist/images/vdwd/original/scuk.png)
+![Původní verze Scuk.cz](dist/images/original/vdwd/scuk.png)
 
 *Obrázek: Původní verze Scuk.cz a zpětně dodělaná mobilní verze.*
 
 Nakonec jsme se rozhodli pro vytvoření ještě jednoho webu – „m tečka“ verze. Ale už v době, kdy jsme ji připravovali, jsme věděli, že bude dočasná. Po několika letech se oba staré weby zahodily a vznikl nový, responzivní. Už beze mě, protože naše domácnost se v té době rozrůstala o děti. Ale povedl se, že jo?
 
-![Responzivní verze Scuk.cz](dist/images/vdwd/original/scuk-responzivni.png)
+![Responzivní verze Scuk.cz](dist/images/original/vdwd/scuk-responzivni.png)
 
 *Obrázek: Poslední, již plně responzivní generace Scuk.cz.*
 
@@ -53,7 +53,7 @@ Web, který *responzivně* – tedy rychle a jednoznačně – reaguje na změny
 * Všechna zařízení sdílejí **stejné URL adresy**.
 * Jen pozor, responzivní redesign vyžaduje **nezanedbatelné množství energie** pro všechny lidi, kteří se účastní procesu vývoje a správy webu.
 
-![VašeČočky.cz](dist/images/vdwd/original/vase-cocky.png)
+![VašeČočky.cz](dist/images/original/vdwd/vase-cocky.png)
 
 *Obrázek: VašeČočky.cz jako příklad responzivního webu.*
 
@@ -67,7 +67,7 @@ Ve výsledku tedy potřebujeme poslat každému zařízení jiný obrázek. Nebo
 
 Téhle širší kategorii řešení můžeme říkat adaptivní webdesign. 
 
-![Adaptivní webdesign](dist/images/vdwd/original/adaptivni.png)
+![Adaptivní webdesign](dist/images/original/vdwd/adaptivni.png)
 
 *Obrázek: Do adaptivního webdesignu patří kromě technik responzivního designu také například řešení rychlosti načítání nebo technologie responzivních obrázků.*
 

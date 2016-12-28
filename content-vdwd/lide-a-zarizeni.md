@@ -67,7 +67,7 @@ Tady je zdrojový výzkum Steven Hoobera: [http://www.uxmatters.com/mt/archives/
 
 Prodávají se stále větší chytré telefony, takže bychom při návrhu rozhraní měli myslet na to, že palcem je u nich dosažitelná daleko menší část obrazovky.
 
-![Palce na mobilech](dist/images/vdwd/original/palce-mobily.png)
+![Palce na mobilech](dist/images/original/vdwd/palce-mobily.png)
 
 *Obrázek: Mobily jsou větší, ale plocha ovládatelná palcem se zmenšuje. Větší zařízení totiž také mívají silnější šasi. Zelená je palcem dosažitelná snadno, žlutá hůř a červená skoro vůbec.*
 
@@ -87,7 +87,7 @@ Na časté otázky jestli lidé tablety častěji používají na výšku nebo n
 
 Znovu se zde budu odkazovat na data, která sesbíral Josh Clark. Malé tablety držíme v ruce, ale zóny pohodlného ovládání palci vypadají zcela jinak. 
 
-![Palce na tabletu](dist/images/vdwd/original/palce-tablet.png)
+![Palce na tabletu](dist/images/original/vdwd/palce-tablet.png)
 
 *Obrázek: Na malých tabletech držených obouruč jsou palci nejlépe dosažitelné okraje od středu nahoru. Spodní okraj a střed je naopak dosažitelné nejhůře.*
 
@@ -103,7 +103,7 @@ O tom, zda lidé budou vůbec někdy chtít ovládat zařízení stojící na st
 
 Lidé totiž dotykové obrazovky notebooků  a podobných zařízení nepoužívají ukazováčkem, ale znovu palcem. Únavě paží zabraňují tak, že si ruce opřou o stůl pod hranou displeje. Ukazováčkem obrazovky ohmatávají jen uživatelé méně zkušení, kteří většinou časem přejdou znovu na palce. 
 
-![Palce na notebooku](dist/images/vdwd/original/palce-notebook.png)
+![Palce na notebooku](dist/images/original/vdwd/palce-notebook.png)
 
 *Obrázek: u notebooků s dotykovou obrazovkou a hybridních zařízení jsou palcem nejlépe dostupné plochy spodních rohů.*
 

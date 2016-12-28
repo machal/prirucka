@@ -8,7 +8,7 @@ Všechno se to točí kolem zařízení. Jasně, přišly mobily, ale to není v
 
 Proč promeškat příležitost ukázat graf s rostoucí návštěvností z mobilních zařízení? Jdeme na to.
 
-![Podíl mobilů](dist/images/vdwd/original/statistika-mobily.png)
+![Podíl mobilů](dist/images/original/vdwd/statistika-mobily.png)
 
 *Obrázek: Podíl mobilních prohlížečů na celkovém počtu zobrazení stránek. Zdroj: velké české weby měřené Gemius SA, gemiusTraffic,  Rankings.cz.*
 
@@ -33,7 +33,7 @@ Zvyšují se také prodeje hybridních notebooků, které je možné ovládat my
 
 Mnozí webaři jsou vystrašení ohromnými rozlišení posledních modelů mobilů. Někdy až FullHD (1920×1080). Netrapme se tím. Prohlížeče pro nás hardwarové rozlišení přepočítávají do „CSS pixelů“. Podívejte se na obrázek.
 
-![CSS Pixel](dist/images/vdwd/original/css-pixel.png)
+![CSS Pixel](dist/images/original/vdwd/css-pixel.png)
 
 *Obrázek: poměr mezi hardwarovými pixely udávanými výrobci a CSS pixely, se kterými pracují webový vývojáři u vybraných zařízení.*
 
