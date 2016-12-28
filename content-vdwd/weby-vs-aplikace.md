@@ -7,7 +7,7 @@ V tomto textu totiž chci říct, že:
 * nějaký web potřebujete vždycky;
 * nativní aplikace může být skvělý doplněk a ve speciálních případech přímo nezbytnost;
 * rozhodování není tak polarizované – existuje velká škála možností mezi webem a aplikací;
-* slovo „versus" není na místě, weby a aplikace se skvěle doplňují.
+* slovo „versus“ není na místě, weby a aplikace se skvěle doplňují.
 
 ## Weby vs. nativní aplikace
 
@@ -16,11 +16,11 @@ Hned první problém je v definici. Jednoduše se nám budou definovat jen dva e
 * Za **web** považuji software vytvořený technologiemi standardizovanými webovým konsorciem W3.org a přidruženými organizacemi. Jde hlavně o HTML, CSS, Javascript a různá API pro komunikaci aplikace se systémem a zařízením.
 * Za **nativní aplikaci** považuji software vytvořený v programovacím jazyce pro konkrétní operační systém. Například na iOS, operačním systému v mobilních zařízeních od Apple, napíšete nativní aplikaci v jazycích Objective-C nebo Swift.
 
-Velký zmatek ale nastane když použijeme slovo „aplikace" bez přívlastku „webová“. Je to *nativní* aplikace? *Webová* aplikace? Myslím tím *aplikaci* z pohledu uživatelských interakcí jako protiklad statických dokumentů? Vydržte, pokusím se to vše vyjasnit.
+Velký zmatek ale nastane když použijeme slovo „aplikace“ bez přívlastku „webová“. Je to *nativní* aplikace? *Webová* aplikace? Myslím tím *aplikaci* z pohledu uživatelských interakcí jako protiklad statických dokumentů? Vydržte, pokusím se to vše vyjasnit.
 
 ## Rozdíly z pohledu uživatele: interakčně jednoduché weby a složité aplikace
 
-Když v souboji „weby versus aplikace" oba hráče definujeme pohledem uživatele, musíme se zaměřit hlavně na složitost rozhraní a množství interakcí.
+Když v souboji „weby versus aplikace“ oba hráče definujeme pohledem uživatele, musíme se zaměřit hlavně na složitost rozhraní a množství interakcí.
 
 * **Weby jsou interakčně jednoduché**. 
 Prostě obyčejné dokumenty jako je blog VzhůruDolů.cz nebo prezentační stránky vaší firmy. 
@@ -38,13 +38,13 @@ Zajímavé na tomto typu dělení na weby a aplikace také je, že obsah webů c
 
 U aplikací to až tak neplatí. U kontrolního seznamu na VzhůruDolů.cz chci ve vyhledávačích dobře umístěnou stránku, která aplikaci propaguje – statický web. Nepotřebuji – a obvykle ani nechci* –* indexovat samotnou aplikaci.
 
-Proto se i v poslední době aplikace dělají stále více frontendovými technologiemi (Angular, React), kdežto weby stále „postaru backendově" s pomocí Nette, Symfony nebo jiných frameworků. Javascript na frontendu to pak jen doplňuje.
+Proto se i v poslední době aplikace dělají stále více frontendovými technologiemi (Angular, React), kdežto weby stále „postaru backendově“ s pomocí Nette, Symfony nebo jiných frameworků. Javascript na frontendu to pak jen doplňuje.
 
 Teď už nebudeme obecní, přejdeme do světa *mobilních* aplikací a responzivních webů. 
 
-## Mobilní aplikace a problém „Proč dělat web? Stačí nám aplikace!"
+## Mobilní aplikace a problém „Proč dělat web? Stačí nám aplikace!“
 
-Občas je totiž stále slyšet, že „když máme aplikaci, nepotřebujeme web". Ze všech možných příkladů vyberu web restaurace El Asador v sousední vesnici. Slyšte příběh o tom, jak jsem se v ní nenajedl, i když jsem chtěl. On vlastně asi stačí obrázek:
+Občas je totiž stále slyšet, že „když máme aplikaci, nepotřebujeme web“. Ze všech možných příkladů vyberu web restaurace El Asador v sousední vesnici. Slyšte příběh o tom, jak jsem se v ní nenajedl, i když jsem chtěl. On vlastně asi stačí obrázek:
 
 ![Web restaruace El Asador](dist/images/vdwd/original/el-asador.png)
 
@@ -94,7 +94,7 @@ Psaní různých aplikací pro různé platformy se dnes ale neděje tak často.
 
 ### Hybridní aplikace
 
-Představuje zajímavý sjednocující přístup mezi webem a nativní aplikací – prostředky pro výrobu nativní aplikace vytvoříte jen „obal", kontejner s hlavními ovládacími prkvy. Do něj vložíte prohlížeč (říkává se mu WebView). V něm pak běží webová aplikace, kterou vytvoříte v HTML/CSS/JS. Výhoda možnosti instalace ikonky na plochu zůstává.
+Představuje zajímavý sjednocující přístup mezi webem a nativní aplikací – prostředky pro výrobu nativní aplikace vytvoříte jen „obal“, kontejner s hlavními ovládacími prkvy. Do něj vložíte prohlížeč (říkává se mu WebView). V něm pak běží webová aplikace, kterou vytvoříte v HTML/CSS/JS. Výhoda možnosti instalace ikonky na plochu zůstává.
 
 Hybridní je část snad každé větší aplikace. V ČR jmenujme třeba aplikaci Invia.cz (technicky Cordova&React) nebo apky Bubbleology (Ionic) či FlowReader.
 
@@ -112,7 +112,7 @@ Nejnovější možný přístup. Tlačí jej Google, Microsoft souhlasil, Apple 
 * sama se nainstaluje na plochu uživatele
 * posílá mu notifikace 
 
-Moc se mě to líbí, protože to dělá příjemný kompromis mezi webem a nativní aplikací a pro minimálně dvě platformy je půjde vyvíjet stejně univerzálně běžnou webovou stránku. A slovo „progresivní" definuje chování na nepodporovaných platformách – prostě uvidíte běžnou webovou aplikaci.
+Moc se mě to líbí, protože to dělá příjemný kompromis mezi webem a nativní aplikací a pro minimálně dvě platformy je půjde vyvíjet stejně univerzálně běžnou webovou stránku. A slovo „progresivní“ definuje chování na nepodporovaných platformách – prostě uvidíte běžnou webovou aplikaci.
 
 V Česku jsem během psaní textu příklad nenašel, ale ve světě je jich už hodně: [https://pwa.rocks/](https://pwa.rocks/)
 
@@ -129,7 +129,7 @@ Více informací:
 
 [https://facebook.github.io/react-native/](https://facebook.github.io/react-native/)
 
-## Weby versus aplikace: „záběr" versus „zápřah“
+## Weby versus aplikace: „záběr“ versus „zápřah“
 
 Obecně platí, že weby mají na mobilech skvělý *záběr*. Navštíví je daleko více uživatelů. 
 
@@ -137,13 +137,13 @@ Pokud jste firma, co má věrné uživatele, aplikací jste zase schopní je ví
 
 ![Reach (web) vs. Rich (native)](dist/images/vdwd/original/lukew-reach-rich.png)
 
-*Obrázek: „Reach (web) vs. Rich (native) OR why you want both." Zdroj: Luke Wroblewski **[na Twitter*u](https://twitter.com/lukew/status/649255909420503041)*.*
+*Obrázek: „Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski [na Twitteru](https://twitter.com/lukew/status/649255909420503041).*
 
 Podle comScore (The 2015 U.S. Mobile App Report) měl v červnu 2015 americký mobilní Web na 9 milionů unikátních uživatelů, nativní aplikace jen něco přes tři. Jenže v aplikacích strávil průměrný uživatel přes 200 minut času, v prohlížeči něco přes 10 minut.
 
 V angličtině to stručně a pěkně popsal Luke Wroblewski: 
 
-*„The Web is for audience reach and native apps are for rich experiences. Both are strategic. Both are valuable."*
+> The Web is for audience reach and native apps are for rich experiences. Both are strategic. Both are valuable.
 
 Takže usmíření na závěr. Web potřebujete skoro vždy, aplikaci někdy. Někdy aplikací uděláte věci co s webem nedokážete. V aplikaci můžete uživatele více zapřáhnout. A existuje spoustu variant jak udělat aplikaci a netrápit se extra kódem pro různé platformy. Tím bychom mohli mít tuto odbočku k aplikacím uzavřenou.
 

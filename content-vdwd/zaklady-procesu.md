@@ -23,7 +23,7 @@ Takhle stručně mě to pro potřeby knížky stačí. Výhrady zkušených weba
 
 ## Další zdroje o procesu návrhu webu
 
-* Pokud v procesu plavete vy nebo vaši klienti, jednoznačně doporučuji stručnou, ale atraktivně pojatou knihu Jana Řezáče „Web ostrý jako břitva".
+* Pokud v procesu plavete vy nebo vaši klienti, jednoznačně doporučuji stručnou, ale atraktivně pojatou knihu Jana Řezáče „Web ostrý jako břitva“.
 [https://janrezac.com/kniha](https://janrezac.com/kniha)
 * Raději něco hutnějšího? Poctivá knihu o designérském procesu, „Dobrý designér to všechno ví" je dobrá volba i pro vás, zkušenější.
 [http://pixy.cz/kniha-dobrydesigner/](http://pixy.cz/kniha-dobrydesigner/)

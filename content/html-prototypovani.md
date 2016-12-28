@@ -1,22 +1,22 @@
 # HTML prototypování
 
-Když řekneme „prototyp" dejme tomu v hospodě – a nebude přitom  zrovna plná webařů – asi si ostatní u stolu představí testovací model nějakého výrobku. 
+Když řekneme „prototyp“ dejme tomu v hospodě – a nebude přitom  zrovna plná webařů – asi si ostatní u stolu představí testovací model nějakého výrobku. 
 
 Prototyp je obvykle definován jako *raný* vzorek, který byl vytvořen pro *otestování* myšlenkového konceptu nebo pracovního procesu během práce na produktu. Na výsledek testu se buď naváže v reálné výrobě nebo se z něj poučíme a zkusíme to jinak.
 
-Každý dobrý řemeslník věci nejprve promýšlí a pak teprve vyrábí. Samotná výroba ale bývá v některých oborech velmi drahá. Přísloví „třikrát měř, jednou řež" platí i u webů.
+Každý dobrý řemeslník věci nejprve promýšlí a pak teprve vyrábí. Samotná výroba ale bývá v některých oborech velmi drahá. Přísloví „třikrát měř, jednou řež“ platí i u webů.
 
 Proto třeba výrobci automobilů, ale dnes právě i webů, sahají k nějaké formě zkušebních modelů. Prototypů. Přísloví si proto upravme: 
 
 ## Dvakrát měř, jednou to zkus na prototypu a pak teprve řež
 
-Díky prototypu si můžeme naživo „osahat" věci, které nám na „papíře“ dávaly smysl. V našem případě hlavně otestovat složité nebo inovativní prvky uživatelského rozhraní. Nebo zkusit si výrobní postupy, které běžně neděláte. 
+Díky prototypu si můžeme naživo „osahat“ věci, které nám na „papíře“ dávaly smysl. V našem případě hlavně otestovat složité nebo inovativní prvky uživatelského rozhraní. Nebo zkusit si výrobní postupy, které běžně neděláte. 
 
 Prototypování je učení na produktu, který je co nejpodobnější tomu cílovému. Způsobů jak testovat vymyšlené je ale ve webdesignu hodně. Já tady budu hájit svou oblíbenou cestu – prototypování přímo v HTML, CSS a Javascriptu.
 
 ## Co je to HTML prototyp a jak se liší třeba od Axure?
 
-Exporty do prohlížečové verze dnes nabízí leckteré „klikací" nástroje – například Axure RP. Exporty jsou ovšem limitované tím, co zvládá klikací rozhraní. Plnohodnotné HTML, CSS a Javascript nabídnou vždy výrazně větší možnosti vyjádření. Ale mají i jiné výhody, za chvíli se k nim dostaneme.
+Exporty do prohlížečové verze dnes nabízí leckteré „klikací“ nástroje – například Axure RP. Exporty jsou ovšem limitované tím, co zvládá klikací rozhraní. Plnohodnotné HTML, CSS a Javascript nabídnou vždy výrazně větší možnosti vyjádření. Ale mají i jiné výhody, za chvíli se k nim dostaneme.
 
 Nicméně – Axure RP považuji za nástroj vhodnější pro návrh webového designu nikoliv grafiky než třeba Photoshop, který je graficky zaměřený. Kromě snadnější práce pro designéra také umožňuje testovat interakce a další věci. V mnoha týmech mají podobné nástroje nezastupitelnou roli. S HTML prototypováním se nevylučuje a může hezky doplňovat. [axure.com](https://www.axure.com/)
 
@@ -31,7 +31,7 @@ HTML prototypy, o kterých tady mluvím, jsou prostě plnohodnotné webové str�
 Jsou totiž:
 
 * **Brzy v prohlížeči**  
-Vzpomeňte na slovo „raný" v definici prototypu. Máme problém složitý k vymýšlení na papíře nebo v Photoshopu? Pak co nejdříve do reálného prostředí s tím – do prohlížeče! Výrobci aut také s testem na silnicích nečekají až sjedou první hotová auta z výrobních linek.
+Vzpomeňte na slovo „raný“ v definici prototypu. Máme problém složitý k vymýšlení na papíře nebo v Photoshopu? Pak co nejdříve do reálného prostředí s tím – do prohlížeče! Výrobci aut také s testem na silnicích nečekají až sjedou první hotová auta z výrobních linek.
 * **Plnohodnotné**  
 Prototypy tvořené webovými technologiemi jsou ze stejného těsta jako hotové weby. Je tedy možné dosáhnout až absolutní míry věrnosti s konečným produktem.
 * **Znovupoužitelné**  
@@ -48,7 +48,7 @@ Nástroje, používané pro demonstraci a odzkoušení nějaké myšlenky použ�
 *TODO obrázek.*
 
 1. **Drátěný model (wireframe)**  
-    * Je to vlastně kostra pro webový design. Ukazuje obsah, možnosti jeho rozložení a případně základní interakce. „Dráťák" je rychle hotový, ale velmi zjednodušuje. Obvykle je to levná volba, ideální pro úvodní fáze projektů.
+    * Je to vlastně kostra pro webový design. Ukazuje obsah, možnosti jeho rozložení a případně základní interakce. „Dráťák“ je rychle hotový, ale velmi zjednodušuje. Obvykle je to levná volba, ideální pro úvodní fáze projektů.
     * Model nízké věrnosti s finálním webem. 
     * Nejméně časově náročné.
     * Nástroje: ruční skicování nebo programy jako [UXPin](https://www.uxpin.com/), [Balsamiq Mockups](https://balsamiq.com/products/mockups/).
@@ -78,7 +78,7 @@ Uživatelsky můžete testovat klidně i papírové skici nebo výstupy z Axure 
 3. **Animace**  
 Nástroje pro tvorbu maket jako Photoshop tady nepomohou. Klikací animační nástroje s výstupem do plnohodnotných CSS animací zatím nemáme. I tohle si můžete v rychlosti otestovat s pomocí svého kodéra.
 4. **Pokročilé interakce**  
-Nemyslím tím jen „kliknu a přejdu na jinou stránku". V HTML se skvěle prototypují třeba ajaxové interakce, klidně spojené s animací.
+Nemyslím tím jen „kliknu a přejdu na jinou stránku“. V HTML se skvěle prototypují třeba ajaxové interakce, klidně spojené s animací.
 5. **Pokročilé SVG vlastnosti**  
 Výplně, výřezy, filtry, efekty… tady opravdu nevím, jak jinak než přímo v HTML si to zkusit. [http://www.vzhurudolu.cz/prirucka/svg-inspirace](http://www.vzhurudolu.cz/prirucka/svg-inspirace)
 
@@ -86,12 +86,12 @@ Ohromě ale z HTML prototypování mohou těžit vývojáři, kteří mají na s
 
 ## Frontendisti ošetří své rizikové faktory
 
-Každá správná frontendistka, každý správný frontendista mají prototypování rádi. I pro ně jsem našel pět otázek, na které jim HTML prototyp dokáže dát odpověď. Seznamu, který následuje, občas říkám „Pět obvyklých podezřelých na podkladech od designérů". 
+Každá správná frontendistka, každý správný frontendista mají prototypování rádi. I pro ně jsem našel pět otázek, na které jim HTML prototyp dokáže dát odpověď. Seznamu, který následuje, občas říkám „Pět obvyklých podezřelých na podkladech od designérů“. 
 
 1. **Rychlost načítání**  
 Komponenta vypadá hezky, ale – nezpomalí zásadně načítání stránky? Karusel na úvodní stránku do drátěného modelu šoupnete raz dva, že? Jen až během prototypování nebo nedejbože finální implementaci zjistíte, že se díky němu úvodní stránka načítá děsně pomalu. To nechcete.
 2. **Výkon v prohlížeči**  
-Nebude se stránka při posouvání „trhat"? Je myšleno i na výkon při práci s načtenou stránkou? To, že klient je nadšený z krásných paralax efektů, které chce na webu pouštět zároveň s videem na pozadí, neznamená, že jeho pocity budou sdílet návštěvníci webu. Prototypem zjistíte, jak je jeho myšlenka problematická co do výkonu v prohlížeči.
+Nebude se stránka při posouvání „trhat“? Je myšleno i na výkon při práci s načtenou stránkou? To, že klient je nadšený z krásných paralax efektů, které chce na webu pouštět zároveň s videem na pozadí, neznamená, že jeho pocity budou sdílet návštěvníci webu. Prototypem zjistíte, jak je jeho myšlenka problematická co do výkonu v prohlížeči.
 3. **Přístupnost**  
 Jaký dopad bude komponenta mít na přístupnost zrakově postiženými? I karusel může být přístupný. Ale je přístupný zrovna ten váš? Dobré si to otestovat.
 4. **Zobrazování v exotických prohlížečích**  
@@ -99,7 +99,7 @@ Jak se bude zobrazovat ve starších a exotičtějších prohlížečích? Půjd
 5. **Udržovatelnost**  
 Nezkomplikuje řešení celkovou udržovatelnost projektu? Shlédl se váš designér v Bootstrapu, ale vy zjišťujete, že z něj využijete jen tlačítka a formuláře? Pokud vaše argumenty nepadají na úrodnou půdu, udělejte rychlý prototyp, na které komplikaci se špatnou udržitelností složité knihovny v rámci vašeho projektu ukážete. 
 
-Všimněte si, že kromě čtvrtého a pátého bodu, které jsou ryze technické, spadají všechny ostatní do kompetencí dobrého webového designéra.  Takže, milí designéři, nejde jen o „nějaké problémy ve vzdálené části vývojářského týmu a pro lidi, o nichž nic nevíme", abych parafrázoval Chamberlainův výrok o Československu po Mnichově.
+Všimněte si, že kromě čtvrtého a pátého bodu, které jsou ryze technické, spadají všechny ostatní do kompetencí dobrého webového designéra.  Takže, milí designéři, nejde jen o „nějaké problémy ve vzdálené části vývojářského týmu a pro lidi, o nichž nic nevíme“, abych parafrázoval Chamberlainův výrok o Československu po Mnichově.
 
 Klikací prototypovací nástroje jako Axure nám pachatele mezi obvyklými podezřelými najít nepomohou. Kód nemáme od začátku pod kontrolou, takže si na nich rizikové faktory neotestujeme. Výstupy z naklikaných prototypů navíc v produkční fázi projektu použít nemůžeme.
 

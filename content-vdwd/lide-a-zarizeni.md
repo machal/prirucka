@@ -6,13 +6,13 @@ Dozvíte se, že dotykovost je nový standard. A také, že důležité prvky v 
 
 ## Všechno je dotykové
 
-Na začátek si dovolím parafrázovat myšlenku Joshe Clarka z jeho skvělé knihy „Designing for Touch":
+Na začátek si dovolím parafrázovat myšlenku Joshe Clarka z jeho skvělé knihy „Designing for Touch“:
 
-*„Zařízení jakéhokoliv typu může být dotykové. Proto musíme předpokládat, že dotykové bude."*
+> Zařízení jakéhokoliv typu může být dotykové. Proto musíme předpokládat, že dotykové bude.
 
 Přesně tak, přátelé, pojďme považovat dotykové ovládaní za výchozí stav.
 
-V době kdy píšu tento text ještě „dotykáče" mezi zařízeními přistupujícími na vaše weby nemusejí hrát první housle.  Jenže, jak už jsem psal dříve, to se brzy změní. 
+V době kdy píšu tento text ještě „dotykáče“ mezi zařízeními přistupujícími na vaše weby nemusejí hrát první housle.  Jenže, jak už jsem psal dříve, to se brzy změní. 
 
 Blíží se doba, kdy dotyková zařízení snědí počítačové myši i s kabelem. 
 
@@ -49,7 +49,7 @@ V roce 2013 se Steven Hoober sebral a šel se podívat, jak lidé na ulicích dr
 Hooberovy výsledky:
 
 * 49 % lidí mobilní zařízení v jedné ruce a šátralo po něm palcem,
-* 36 % lidí dávalo přednost „kolébkovému" chvatu – držení v jedné ruce a ovládání prstem druhé ruky,
+* 36 % lidí dávalo přednost „kolébkovému“ chvatu – držení v jedné ruce a ovládání prstem druhé ruky,
 * 15 % drželo krabičky obouruč a ovládalo dvěma palci.
 
 Hoober ale o držení mobilů zjistil i další věci, které se v zásadě dají zobecnit i pro další dotyková  zařízení:

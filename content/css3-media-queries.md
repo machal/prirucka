@@ -22,11 +22,11 @@ Dotaz na medium (anglicky *media query*) se skládají z typu média (*media typ
 
 ![](dist/images/original/media-query.png)
 
-*Obrázek: Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only", které ze zpracování dotazu vyloučí starší Internet Explorery.*
+*Obrázek: Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování dotazu vyloučí starší Internet Explorery.*
 
 ## Body zlomu
 
-Známý je také výraz bod zlomu (*breakpoint*), což je hodnota vlastnosti média. O „breakpointech" mluvíme jako o sadě hodnot pro konkrétní web nebo systém designu. Bootstrap má například tyto přednastavené (a nastavitelné) body zlomu: extra small (šířka okna do 767 pixelů), small (768–991), medium (992–1199) a large (1200 a více).  
+Známý je také výraz bod zlomu (*breakpoint*), což je hodnota vlastnosti média. O „breakpointech“ mluvíme jako o sadě hodnot pro konkrétní web nebo systém designu. Bootstrap má například tyto přednastavené (a nastavitelné) body zlomu: extra small (šířka okna do 767 pixelů), small (768–991), medium (992–1199) a large (1200 a více).  
 
 ## Minimální nebo maximální výška a šířka
 
@@ -52,13 +52,13 @@ Dotazy na médium můžete pomocí operátoru and kombinovat:
 
 Podmínka se aplikuje jen na všechny zobrazovací média se šířkou okna mezi třiceti a čtyřiceti čtverčíky.
 
-A co „nebo"? Místo možná očekávaného or se používá čárka:
+A co „nebo“? Místo možná očekávaného or se používá čárka:
 
 ```css
 @media only screen and (max-width: 40em), print { … }
 ```
 
-Podle CSS specifikace jde o „seznam oddělený čárkou", kde se jednotlivé položky seznamu vyhodnocují samostatně. Čárka („or“) má proto větší váhu než and. Výšeuvedený dotaz se tak vyhodnotí jako pravdivý, když budeme na zobrazovacím mediu o šířce viewportu do 40 čtverčíků nebo když budeme stránku tisknout.
+Podle CSS specifikace jde o „seznam oddělený čárkou“, kde se jednotlivé položky seznamu vyhodnocují samostatně. Čárka („or“) má proto větší váhu než and. Výšeuvedený dotaz se tak vyhodnotí jako pravdivý, když budeme na zobrazovacím mediu o šířce viewportu do 40 čtverčíků nebo když budeme stránku tisknout.
 
 Dalším možným operátorem je negace:
 
@@ -91,7 +91,7 @@ Obrazovky s poměrem stran 16:9 například zacílíme takto:
   (device-aspect-ratio: 16/9) { … }
 ```
 
-Existují samozřejmě i varianty „od" a „do“:  `min-aspect-ratio` a `max-aspect-ratio`.
+Existují samozřejmě i varianty „od“ a „do“:  `min-aspect-ratio` a `max-aspect-ratio`.
 
 ### Detekce vysokokapacitních displejů 
 
@@ -141,7 +141,7 @@ Správný zápis tedy vypadá následovně:
 @media … (min-device-width: 40em) { … }
 ```
 
-„Device" zápis cílí na rozlišení obrazovky, nikoliv na velikost okna prohlížeče. Hodně dávno se používalo pro „detekci“ konkrétních zařízení, což ale dobrý postup nebyl, není a nebude. Za chvíli to vyjasním.
+„Device“ zápis cílí na rozlišení obrazovky, nikoliv na velikost okna prohlížeče. Hodně dávno se používalo pro „detekci“ konkrétních zařízení, což ale dobrý postup nebyl, není a nebude. Za chvíli to vyjasním.
 
 ### 3. Rozdělování CSS podle velikosti obrazovky
 

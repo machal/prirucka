@@ -160,7 +160,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 #### Domény
 
 * Nastavení domény:[ A, AAA](http://podpora.domenu.cz/nastaveni-dns-zaznamu-domeny/)[A, CNAME, MX záznamy](http://podpora.domenu.cz/nastaveni-dns-zaznamu-domeny/).
-* Přesměrování bez adresy bez konečného /, přesměrování „bez www." na „s www.“
+* Přesměrování bez adresy bez konečného /, přesměrování „bez www.“ na „s www.“
 
 #### Legislativa
 

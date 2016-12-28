@@ -17,7 +17,7 @@ Přiznávám, že ve svých myšlenkách na Obra z Altonu si pravidlo zjednoduš
 
 ![FotoŠkoda.cz](dist/images/vdwd/original/triky-ui-6.png)
 
-*Obrázek: E-shop FotoŠkoda.cz má jeden z těch povedenějších košíků na mobilech. Všechno velké, navigace jednoznačná. Jen prvky v té šedivé ploše s „Pojištěním" bych ani na pětiapůlpalcovém iPhone palcem netrefil. Na výšku alespoň centimetr, prosím!*
+*Obrázek: E-shop FotoŠkoda.cz má jeden z těch povedenějších košíků na mobilech. Všechno velké, navigace jednoznačná. Jen prvky v té šedivé ploše s „Pojištěním“ bych ani na pětiapůlpalcovém iPhone palcem netrefil. Na výšku alespoň centimetr, prosím!*
 
 K podobným závěrům došly i velké firmy jako Apple, Microsoft a Google. Hlouběji to rozepisuje Martin Pešout. [http://www.martinpesout.cz/velikosti-dotykovych-oblasti-pod-drobnohledem/](http://www.martinpesout.cz/velikosti-dotykovych-oblasti-pod-drobnohledem/)
 
@@ -34,19 +34,19 @@ Pokud chcete kód vysvětlit, čtěte můj článek na Smashing Magazine:
 
 ## Málo kliků a ještě méně (otravných) dotyků
 
-Víte, my webdesignéři, si jako všichni lidé občas věci až moc zjednodušujeme. Díky tomu asi před patnácti lety vzniklo „Pravidlo tří kliků". Doporučovalo, aby veškeré informace byly na vašem webu dostupné maximálně na tři kliknutí myši. 
+Víte, my webdesignéři, si jako všichni lidé občas věci až moc zjednodušujeme. Díky tomu asi před patnácti lety vzniklo „Pravidlo tří kliků“. Doporučovalo, aby veškeré informace byly na vašem webu dostupné maximálně na tři kliknutí myši. 
 
-„Pravidlo" bylo naštěstí mnohokrát vyvráceno. Nejlepší shrnutí najdete na [UXGood.com](http://www.uxgood.com/ux-myths-cesky-mytus-2-vsechny-stranky-by-mely-byt-dostupne-na-3-kliky/):
+„Pravidlo“ bylo naštěstí mnohokrát vyvráceno. Nejlepší shrnutí najdete na [UXGood.com](http://www.uxgood.com/ux-myths-cesky-mytus-2-vsechny-stranky-by-mely-byt-dostupne-na-3-kliky/):
 
 > Uživatelům nevadí extra kliknutí navíc, pokud o nich nemusí přemýšlet.
 
-Přesně tak, tři *otravná* kliknutí jsou horší než pět jednoduchých. Jak říká klasik Steve Krug už titulem své zásadní knihy: „Nenuťte uživatele přemýšlet". Na desktopu máme výzkumy ověřeno, že to platilo a platit bude. A co teprve, když zmenšíme obrazovku!
+Přesně tak, tři *otravná* kliknutí jsou horší než pět jednoduchých. Jak říká klasik Steve Krug už titulem své zásadní knihy: „Nenuťte uživatele přemýšlet“. Na desktopu máme výzkumy ověřeno, že to platilo a platit bude. A co teprve, když zmenšíme obrazovku!
 
 Uživatelské rozhraní na mobilech není jednoduché. Designér má k dispozici méně prostoru. Uživatel kromě menšího prostoru i zhoršené fyzické podmínky. 
 
 Představte si například, že hledáte dopravní spojení v klidu kanceláře. Máte? A teď ve spěchu v tramvaji, když zjistíte, že má zpoždění. Představte si, že tramvaj je přecpaná, zleva se na vás valí korpulentní dáma v letech a zprava si halasně povídají dva výrostci. Pravou rukou křečovitě visíte oprátce, kterou vám připravil kat tramvaják, který se jako šílený žene za utíkajícím jízdním řádem. Připojení k internetu je tu navíc pomalé. Máte to? Ano, vytvoření dobrého rozhraní pro mobily je vyšší dívčí.
 
-Proto se na mobilech vždy musíme snažit věci zbytečně nekomplikovat a lidem práci maximálně zjednodušovat. Týká se to hlavně míst, kde od nich očekáváte uživatelský vstup nebo složitější interakci. Vzpomeňte si na jeden ze čtyř principů – „tupost" rozhraní.
+Proto se na mobilech vždy musíme snažit věci zbytečně nekomplikovat a lidem práci maximálně zjednodušovat. Týká se to hlavně míst, kde od nich očekáváte uživatelský vstup nebo složitější interakci. Vzpomeňte si na jeden ze čtyř principů – „tupost“ rozhraní.
 
 Pojďme si teď naložit nějaké praktické tipy, co říkáte?
 
@@ -68,7 +68,7 @@ Odkaz: UX Myth: Icons enhance usability – [http://uxmyths.com/post/715009009/m
 
 ### 3) Šetřete rozbalovacími nabídkami 
 
-S rozbalovacími nabídkami (typu <select>) je na mobilech tolik potíží, až o nich Luke Wroblewski napsal, že je máme použít jen jako poslední záchranu. Ani na webu FotoSkoda.cz  se nevyhnuli nasypání ohromného seznamu poboček Uloženky do rozbalovací nabídky. Zkuste si tam najít tu, která je nejblíž vašemu bydlišti. Třeba v Praze, kde samozřejmě všechny ulice znát nemůžete. A představte si počet otravných tapnutí, které takovému rozhraní musíte věnovat. To bolí! Web CSOBpoj.cz to má naopak hezky, rozbalovací nabídky vyměnili za přepínače. Podívejte se na obrázek. 
+S rozbalovacími nabídkami (typu `<select>`) je na mobilech tolik potíží, až o nich Luke Wroblewski napsal, že je máme použít jen jako poslední záchranu. Ani na webu FotoSkoda.cz  se nevyhnuli nasypání ohromného seznamu poboček Uloženky do rozbalovací nabídky. Zkuste si tam najít tu, která je nejblíž vašemu bydlišti. Třeba v Praze, kde samozřejmě všechny ulice znát nemůžete. A představte si počet otravných tapnutí, které takovému rozhraní musíte věnovat. To bolí! Web CSOBpoj.cz to má naopak hezky, rozbalovací nabídky vyměnili za přepínače. Podívejte se na obrázek. 
 
 Odkaz: Luke Wroblewski: Dropdowns Should be the UI of Last Resort:  [http://www.lukew.com/ff/entry.asp?1950](http://www.lukew.com/ff/entry.asp?1950)
 
@@ -76,7 +76,7 @@ Odkaz: Luke Wroblewski: Dropdowns Should be the UI of Last Resort:  [http://www.
 
 ### 4) Otevírejte pohodlné klávesnice
 
-Web CSOBpoj.cz uživatele nutí vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to má dobře, otevře čistě numerickou. Podívejte se na obrázek. Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (<input type="tel">), emailů, URL adres nebo na vyhledávací pole.
+Web CSOBpoj.cz uživatele nutí vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to má dobře, otevře čistě numerickou. Podívejte se na obrázek. Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`<input type="tel">`), emailů, URL adres nebo na vyhledávací pole.
 
 Odkaz: Virtual keyboards are awesome. Use them. [http://mobileinputtypes.com/](http://mobileinputtypes.com/)
 
@@ -84,27 +84,26 @@ A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízen
 
 ![](dist/images/vdwd/original/triky-ui-10.png)
 
-### 5) Používejte krokovače a další alternativní formulářové prvky** **
+### 5) Používejte krokovače a další alternativní formulářové prvky
 
-Opět se vracíme k náhradě nešťastného <select>. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu určitě stojí. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: Radio Group, Button Input,  Slider, Segmented Control: 
+Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu určitě stojí. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: Radio Group, Button Input,  Slider, Segmented Control: 
 
 Více opět u Luke Wroblewskiho: [http://www.lukew.com/ff/entry.asp?1950](http://www.lukew.com/ff/entry.asp?1950)
 
 ### 6) Zamilujte si našeptávače 
 
-Jsou velmi dobrým pomocníkem ve vstupních polích, kde je velké množství možných vstupů – hlavně ve vyhledávání, které je na mobilech kvůli nepřítomnosti plnohodnotné navigace velmi důležité. V HTML pro ten účel existuje prvek <datalist>. Jeho využití je omezené, ale určitě se na něj s vývojáři podívejte. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
+Jsou velmi dobrým pomocníkem ve vstupních polích, kde je velké množství možných vstupů – hlavně ve vyhledávání, které je na mobilech kvůli nepřítomnosti plnohodnotné navigace velmi důležité. V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití je omezené, ale určitě se na něj s vývojáři podívejte. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
 
 ![](dist/images/vdwd/original/triky-ui-11.png)
 
 ### 7) Nenuťte mobilního uživatele psát
 
  
-Tohle bych na webu SmileBox.cz ještě dotáhl. Mám na mobilu napsat text „kde, kdy a jak" chci přístroj pronajmout? To, prosím ne. Na mobilu se nepíše. Co takhle tři na pár kliků ovládatelné vstupy? 
+Tohle bych na webu SmileBox.cz ještě dotáhl. Mám na mobilu napsat text „kde, kdy a jak“ chci přístroj pronajmout? To, prosím ne. Na mobilu se nepíše. Co takhle tři na pár kliků ovládatelné vstupy? 
 
 ### 8) Neprotahujte stránku
 
-**  
-**Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to ale, že stránka by měla být dlouhá jako ponožky Pipi dlouhé punčochy. Hezký objev od UX konzultanta Jana Kvasničky vidíte na obrázku:
+Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to ale, že stránka by měla být dlouhá jako ponožky Pipi dlouhé punčochy. Hezký objev od UX konzultanta Jana Kvasničky vidíte na obrázku:
 
 ![](dist/images/vdwd/original/triky-ui-12.png)
 
@@ -118,15 +117,15 @@ Hledejte alternativní způsoby zobrazení:
 * modální okna nebo karusely (jen pozor na správnou implementaci)
 * roztahovací akordeóny (collapse)
 
-Odkaz: Když už jsem zmiňoval Jana Kvasničku, vřele doporučuji jeho text a přednášku „Nejčastější chyby při návrhu mobilního a responzivního webu prakticky": [http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/](http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/)
+Odkaz: Když už jsem zmiňoval Jana Kvasničku, vřele doporučuji jeho text a přednášku „Nejčastější chyby při návrhu mobilního a responzivního webu prakticky“: [http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/](http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/)
 
 ## Opusťte desktopové zlozvyky
 
 ### 1) Efekt na najetí myši? Už jen jako vylepšení
 
-Jak už jsem zmiňoval: jakékoliv zařízení může být dotykové, proto musíme dotykové ovládaní považovat za výchozí stav. No a na dotykových obrazovkách máme s :hover efekty po najetí myši smůlu. Ano, v myší ovládaných zařízeních můžeme přidat vylepšující efekt nebo vrstvu s doplňujícími informacemi. Rozhraní by ale mělo být použitelné bez nich.
+Jak už jsem zmiňoval: jakékoliv zařízení může být dotykové, proto musíme dotykové ovládaní považovat za výchozí stav. No a na dotykových obrazovkách máme s `:hover` efekty po najetí myši smůlu. Ano, v myší ovládaných zařízeních můžeme přidat vylepšující efekt nebo vrstvu s doplňujícími informacemi. Rozhraní by ale mělo být použitelné bez nich.
 
-Je zřejmé, že závislost zobrazení důležitého obsahu na najetí myši patří v rozhraních do minulosti. Ale – s pozvolným odchodem desktopu do menšiny – přibývá dalších adeptů na zápis do „Červené knihy ohrožených návrhových vzorů". Pojďme na krátký výlet do pavilonu designérské ZOO, kde je všechny vystavují.
+Je zřejmé, že závislost zobrazení důležitého obsahu na najetí myši patří v rozhraních do minulosti. Ale – s pozvolným odchodem desktopu do menšiny – přibývá dalších adeptů na zápis do „Červené knihy ohrožených návrhových vzorů“. Pojďme na krátký výlet do pavilonu designérské ZOO, kde je všechny vystavují.
 
 ### 2) Karusely jsou fakt složitý dorozumívací prostředek
 
@@ -138,7 +137,7 @@ Navrhnout dobrý karusel je prostě složité – proto po něm osobně sáhnu a
 
 *Obrázek: Stará a nová verze karuselu na RSTS.cz. Starší ještě používala na mobilech nepoužitelnou tečkovou navigaci. Nová je vpravo a je fajn. Díky šipkám se lépe ovládá a grafika je uzpůsobená velikosti displeje.*
 
-Jsou karusely obecně špatné? Jako poloviční designér musím napsat: „Ono záleží…"
+Jsou karusely obecně špatné? Jako poloviční designér musím napsat: „Ono záleží…“
 
 Karusely jsou určitě špatné, když:
 
@@ -146,7 +145,7 @@ Karusely jsou určitě špatné, když:
 * je používáte jako univerzální schovavač toho, co na webu nechcete a co si klient vymyslel;
 * zpomalují načtení nebo zobrazení stránky;
 * nejsou použitelné na mobilních zařízeních (malé tečky jako navigace, závislost);
-* nepropagují obsah na dalších „slajdech".
+* nepropagují obsah na dalších „slajdech“.
 
 Hodně bych zvažoval dnes běžné použití karuselu pro propagaci aktuálních akcí na úvodní stránce. Karusely se ale naopak hodí pro seznamy souvisejících položek. U e-shopu jde třeba o fotografie produktu nebo seznam podobného zboží.  
 
@@ -158,13 +157,13 @@ Záložková navigace uvnitř stránky je mobilech riskantní, protože může o
 
 ![](dist/images/vdwd/original/triky-ui-14.png)
 
-*Obrázek: CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis" otevřít „Parametry", musím posunovat stránku zpět nahoru.*
+*Obrázek: CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis“ otevřít „Parametry“, musím posunovat stránku zpět nahoru.*
 
 ### 4) Uměl by si Obr z Altonu na vašem webu vybrat datum?
 
 Vložení data na mobilech může být pěkná otrava. Pokud používáte některý z pluginů určených pro desktop. A že je používá každý druhý responzivní web!
 
-Na mobilech můžete využít <input type="date">, který otevře nativní výběr data. Občas je ale potřeba udělat vlastní komponentu. Vždy mějte v prvé řadě na paměti ovládání palcem. Obr z Altonu se na vás dívá!
+Na mobilech můžete využít `<input type="date">`, který otevře nativní výběr data. Občas je ale potřeba udělat vlastní komponentu. Vždy mějte v prvé řadě na paměti ovládání palcem. Obr z Altonu se na vás dívá!
 
 ### 5) Nespoléhejte na přítomnost globální navigace
 
@@ -176,7 +175,7 @@ Nezbývá než se s tím smířit a na globální navigaci tak moc nestavět. U 
 
 Ty samy o sobě nejsou špatné. Dokonce bych řekl, že jsou na mobilech velmi užitečné. Jen mám asi smůlu. Smůlu na weby, které zavírání modálního okna schovávání pod horní hranu okna prohlížeče. 
 
-Modálními okny a lightboxy ukončíme výčet nejvýznamnějších zástupců „Červené knihy ohrožených návrhových vzorů". Myslíte, že vyhynou? Doufám, že ve své desktopové podobě ano. Ale ještě víc doufám, že příroda bude mít dostatek soudnosti, aby jejich DNA upravila. Tak aby v nové responzivní době měly šanci přežít.
+Modálními okny a lightboxy ukončíme výčet nejvýznamnějších zástupců „Červené knihy ohrožených návrhových vzorů“. Myslíte, že vyhynou? Doufám, že ve své desktopové podobě ano. Ale ještě víc doufám, že příroda bude mít dostatek soudnosti, aby jejich DNA upravila. Tak aby v nové responzivní době měly šanci přežít.
 
 ## Vyhněte se častým chybám
 
@@ -204,7 +203,7 @@ Taky vás štve problikávání obsahu stránky při jejím načítání? Použi
 
 ### 6) Vkládání zbytečných sdílecích tlačítek
 
-„Lajkovací" nebo sdílecí tlačítka Facebooku a dalších sítí jsou na webech velmi často k ničemu. Komplikují uživatelská rozhraní, zpomalují načítání. Funkce sdílení je navíc součástí všech mobilních operačních systémů. Zvažte, jestli vám umístění tlačítek stojí za to. Případně zvolte alternativní, úspornější řešení.
+„Lajkovací“ nebo sdílecí tlačítka Facebooku a dalších sítí jsou na webech velmi často k ničemu. Komplikují uživatelská rozhraní, zpomalují načítání. Funkce sdílení je navíc součástí všech mobilních operačních systémů. Zvažte, jestli vám umístění tlačítek stojí za to. Případně zvolte alternativní, úspornější řešení.
 
 Například knihovnu Social Likes. [http://social-likes.js.org/](http://social-likes.js.org/)
 

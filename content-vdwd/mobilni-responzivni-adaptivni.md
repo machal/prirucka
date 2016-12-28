@@ -4,7 +4,7 @@ Vlastně dnes máme jen dvě možnosti jak udělat web pro všechna zařízení.
 
 ## Mobilní web
 
-Občas se říká „m tečka web". Ano, jsou to ty weby, které pro přístupy z desktopů používají adresu jako www.example.cz a pro přístupy z mobilů m.example.cz. Z pohledu návštěvníka i provozovatele jsou to vlastně dva weby, které servírují stejný nebo případně i upravený obsah.
+Občas se říká „m tečka web“. Ano, jsou to ty weby, které pro přístupy z desktopů používají adresu jako www.example.cz a pro přístupy z mobilů m.example.cz. Z pohledu návštěvníka i provozovatele jsou to vlastně dva weby, které servírují stejný nebo případně i upravený obsah.
 
 ![Web banky Moneta](dist/images/vdwd/original/moneta.png)
 
@@ -27,7 +27,7 @@ Jak vidíte, tohle řešení má řadu nevýhod a považuji ho za dlouhodobě ne
 
 Kdysi jsem jako kodér spolupracoval na projektu Scuk.cz známého foodbloggera, pana Cuketky. http://www.scuk.cz/
 
-Dnes už je Scuk responzivní, ale v roce 2010 ještě mobily nebyly v Česku tak důležité. Proto jsme – jako všichni v té době – vyrobili jen desktopovou verzi. Pár let od spuštění ovšem mobily v naší cílové skupině vyrostly. Responzivní web jsem tehdy udělat uměl, takže jsme se bavili o jakémsi *„zresponzivnění" *desktopového webu. Nakonec jsme to ale zavrhli.
+Dnes už je Scuk responzivní, ale v roce 2010 ještě mobily nebyly v Česku tak důležité. Proto jsme – jako všichni v té době – vyrobili jen desktopovou verzi. Pár let od spuštění ovšem mobily v naší cílové skupině vyrostly. Responzivní web jsem tehdy udělat uměl, takže jsme se bavili o jakémsi „zresponzivnění“ desktopového webu. Nakonec jsme to ale zavrhli.
 
 Desktopový Scuk.cz byl totiž *vymyšlený* pro desktop. Když je něco vymyšlené pro desktop, těžko z toho uděláte responzivní web. Musíte to vymyslet znovu. Scuk byl postavený na Google mapách, takže rozhraní bylo poměrně složité a řešení z pohledu frotnend technologií relativně těžkopádné. Hlavně pro mobily, kde potřebujete rychlé načtení a pohodlí ovládání, což vkládané Google mapy nenabízely.
 
@@ -35,7 +35,7 @@ Desktopový Scuk.cz byl totiž *vymyšlený* pro desktop. Když je něco vymyšl
 
 *Obrázek: Původní verze Scuk.cz a zpětně dodělaná mobilní verze.*
 
-Nakonec jsme se rozhodli pro vytvoření ještě jednoho webu – „m tečka" verze. Ale už v době, kdy jsme ji připravovali, jsme věděli, že bude dočasná. Po několika letech se oba staré weby zahodily a vznikl nový, responzivní. Už beze mě, protože naše domácnost se v té době rozrůstala o děti. Ale povedl se, že jo?
+Nakonec jsme se rozhodli pro vytvoření ještě jednoho webu – „m tečka“ verze. Ale už v době, kdy jsme ji připravovali, jsme věděli, že bude dočasná. Po několika letech se oba staré weby zahodily a vznikl nový, responzivní. Už beze mě, protože naše domácnost se v té době rozrůstala o děti. Ale povedl se, že jo?
 
 ![Responzivní verze Scuk.cz](dist/images/vdwd/original/scuk-responzivni.png)
 
@@ -73,13 +73,13 @@ Téhle širší kategorii řešení můžeme říkat adaptivní webdesign.
 
 A proč to nenapsat – všechny dnešní větší weby nejsou responzivní, ale adaptivní. Jenže lidé pořád říkají *responzivní*. Proč? Protože si na to zvykli a už s tím nic nenaděláme. Pro potřeby zdejších textů tedy budeme dál říkat *responzivní* design a k jeho implementaci užívat technik *adaptivního* designu. [http://vrdl.cz/blog/23-adaptivni-responzivni](http://www.vrdl.cz/blog/23-adaptivni-responzivni)
 
-Ono na tom vlastně v dlouhodobé perspektivě nezáleží. Fáze webdesignu, ve které bylo potřeba rozlišovat responzivní a „normální" weby končí.
+Ono na tom vlastně v dlouhodobé perspektivě nezáleží. Fáze webdesignu, ve které bylo potřeba rozlišovat responzivní a „normální“ weby končí.
 
 Ještě se ale ale jednou vraťme k tomu galimatyáši v pojmech *responzivní* a *adaptivní*. 
 
 ### Responzivní versus adaptivní layout
 
-Jako „adaptivní layout" je obvykle myšleno rozvržení responzivní stránky, které se šířce okna nepřizpůsobuje plynule (pixel po pixelu), ale skokově. Někteří designéři tuto variantu layout používají se hlavně na větších rozlišeních a je také výchozí například v Bootstrapu 3.
+Jako „adaptivní layout“ je obvykle myšleno rozvržení responzivní stránky, které se šířce okna nepřizpůsobuje plynule (pixel po pixelu), ale skokově. Někteří designéři tuto variantu layout používají se hlavně na větších rozlišeních a je také výchozí například v Bootstrapu 3.
 
 ## Responzivní webdesign = adaptivní webdesign = webdesign
 

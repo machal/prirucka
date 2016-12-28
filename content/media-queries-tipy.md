@@ -2,7 +2,7 @@
 
 ## Body zlomu vždy se snažte nastavovat podle obsahu
 
-Častou chybou je vymýšlení breakpointů „podle zařízení". Vezměme, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
+Častou chybou je vymýšlení breakpointů „podle zařízení“. Vezměme, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
 
 ```css
 /* Bod zlomu nastavený „podle zařízení" */
@@ -14,7 +14,7 @@
 
 Vypadá to hezky, ale je to konina. Nespolehlivá konina. Jak už jsem psal, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů. Podmínku splní také mnoho chytrých telefonů. Takový iPhone 6 má třeba v režimu na šířku rozlišení 736 pixelů. Zařízení proto vůbec neřešte.
 
-Naše „podmínka pro tablety" navíc nijak nereflektuje obsah a jeho rozvržení na obrazovce. A to by mělo být tou hlavní motivací k přidání bodu zlomu či breakpointu.
+Naše „podmínka pro tablety“ navíc nijak nereflektuje obsah a jeho rozvržení na obrazovce. A to by mělo být tou hlavní motivací k přidání bodu zlomu či breakpointu.
 
 Body zlomu prostě, pokud je to jen trochu možné, nastavujte podle potřeb obsahu konkrétních komponent. Media Queries prostě mají vyrůstat z obsahu.
 
@@ -33,7 +33,7 @@ Nebudu ale popírat, že existují situace, kdy je nastavení bodů zlomu podle 
 
 Často se vedou spory kolem použití jednotek v dotazech na media. Správná odpověď je: `em`, čtverčíky. 
 
-Media Queries většinou nastavujeme kvůli optimální délce řádku písma. Pixely se velikosti písma nepřizpůsobují, proto v situacích jako je uživatelské zvětšení písma nemohou fungovat dobře. Detailní vysvětlení najdete v článku „PX, EM or REM Media Queries?" [zellwk.com/blog/media-query-units/](https://zellwk.com/blog/media-query-units/)
+Media Queries většinou nastavujeme kvůli optimální délce řádku písma. Pixely se velikosti písma nepřizpůsobují, proto v situacích jako je uživatelské zvětšení písma nemohou fungovat dobře. Detailní vysvětlení najdete v článku „PX, EM or REM Media Queries?“ [zellwk.com/blog/media-query-units/](https://zellwk.com/blog/media-query-units/)
 
 Při návrhu bodu zlomu se ovšem na web díváme přes okno prohlížeče. Jeho šířka k naší smůle ale nepracuje s čtverčíky, nýbrž s pixely. Proto obvykle nejdřív v hlavě musíme spustit kalkulačku přepočtů z pixelů do `em`. Alespoň v mém případě je ale spouštění kalkulačky náročné na výpočetní zdroje. 
 

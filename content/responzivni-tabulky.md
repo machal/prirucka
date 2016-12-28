@@ -14,7 +14,7 @@ Nejjednodušší varianta. Prostě tabulce přikážete, ať se roluje do strany
 }
 ```
 
-Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost posunu indikována useknutím obsahu zprava. „Scrollbar", indikátor možnosti posunu, totiž sám o sobě nestačí. Na mobilech nebývá vidět, dokud uživatel na tabulku nezaútočí prstem.
+Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost posunu indikována useknutím obsahu zprava. „Scrollbar“, indikátor možnosti posunu, totiž sám o sobě nestačí. Na mobilech nebývá vidět, dokud uživatel na tabulku nezaútočí prstem.
 
 ![](dist/images/original/tabulky_1.png)
 
@@ -30,7 +30,7 @@ Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně m
 
 ![](dist/images/original/tabulky_2.png)
 
-*Obrázek: Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe". Zdroj: **[github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)
+*Obrázek: Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. Zdroj: **[github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)
 
 Vyzkoušejte si tady: [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
 
@@ -50,7 +50,7 @@ Datagrid není prosím žádná vzácnost. Každá webová aplikace pro interní
 
 *Obrázek: Stohování tabulky na menších displejích. Zdroj: **[github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)
 
-V nejjednodušší možné CSS implementaci prostě tabulce na menších displejích zrušíme „tabulkovost":
+V nejjednodušší možné CSS implementaci prostě tabulce na menších displejích zrušíme „tabulkovost“:
 
 ```css
 @media only screen and (max-width: 600px) {
@@ -108,7 +108,7 @@ Jako příklad vezměme tabulku fotbalové ligy na Sport.cz, která v den, kdy t
 
 *Obrázek: Tabulka pořadí první fotbalové ligy v prosinci 2016. Zdroj: sport.cz*
 
-Mimochodem, pokud jste, stejně jako já, zcela mimo fotbalové dění, pak „Z" je počet zápasů, „V“ je počet výher, „R“ remíz a „P“ proher. Tohle na mobilu úplně chybí. A protože mě už trochu znáte, víte, že tady začnu zvedat ukazováček a prudit.
+Mimochodem, pokud jste, stejně jako já, zcela mimo fotbalové dění, pak „Z“ je počet zápasů, „V“ je počet výher, „R“ remíz a „P“ proher. Tohle na mobilu úplně chybí. A protože mě už trochu znáte, víte, že tady začnu zvedat ukazováček a prudit.
 
 Vezměme to ale od začátku. Pojďme si představit, že vymýšlíme chování tabulky na malých displejích. Do zařízení s rozlišením 320, nedejbože 240 pixelů se nám tabulka nevejde, že? Kterou z variant chování tabulek na responzivních webech použít? Neodstranit prostě na mobilech některé sloupečky? 
 
@@ -117,7 +117,7 @@ Je pravda, že informace v takové tabulce mají nějakou hierarchii: Pořadí, 
 * **Logo týmu** sice nemá informační hodnotu a dekorativní budeme pro zjednodušení ignorovat. Ale důležité je navigačně. Na mobilu se proto lidem bude oblíbený tým hledat hůř. Ušetřili jsme tedy místo, ale zároveň zhoršili uživatelský prožitek.
 * **Výhry, remízy a prohry** jsou sice méně důležité, ale… proč je pak máme na velkých displejích? Nemám tady samozřejmě rozbor cílových skupin a jejich potřeb pro Sport.cz, ale tipuji, že zrovna uživatelé tohoto webu takové informace potřebují. Na jiném webu, třeba obecně zpravodajském by pak nepřítomnost těchto informací smysl dávala. 
 
-Jak bych tedy tabulku na mobilech řešil? Použil bych řešení „Posun do stran s fixním sloupcem". Ponechal bych v ní všechny informace a zajistil fixní pozici sloupečků s pořadí, logem a názvem týmů. Ostatní sloupečky pak nechal uživatele posouvat do stran.
+Jak bych tedy tabulku na mobilech řešil? Použil bych řešení „Posun do stran s fixním sloupcem“. Ponechal bych v ní všechny informace a zajistil fixní pozici sloupečků s pořadí, logem a názvem týmů. Ostatní sloupečky pak nechal uživatele posouvat do stran.
 
 ## Vše v jednom: plugin Tablesaw
 

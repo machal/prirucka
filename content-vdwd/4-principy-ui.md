@@ -30,7 +30,7 @@ To co je na stránce nahoře je důležité, co uprostřed málo důležité a k
 
 ## Očividnost
 
-Co oči nevidí, srdce nepálí. Jenže co oči uživatele nevidí, srdce designéra pálit může. Lidé prostě schované prvky neotevírají. Proto je lepší zobrazit alespoň pár položek hlavní navigace, nebudovat závislost rozhraní na ikonách a na důležitých místech uživatelského rozhraní se vyhýbat vysouvacím nabídkám. Luke Wroblewski to hezky shrnul do anglického „Obvious Wins".
+Co oči nevidí, srdce nepálí. Jenže co oči uživatele nevidí, srdce designéra pálit může. Lidé prostě schované prvky neotevírají. Proto je lepší zobrazit alespoň pár položek hlavní navigace, nebudovat závislost rozhraní na ikonách a na důležitých místech uživatelského rozhraní se vyhýbat vysouvacím nabídkám. Luke Wroblewski to hezky shrnul do anglického „Obvious Wins“.
 
 Zdroj:
 

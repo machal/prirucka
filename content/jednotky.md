@@ -61,7 +61,7 @@ Pixel dříve vládl, hlavně kvůli nepraktičnosti čtverčíků. Dnes ale má
 .nav-item { border-right: 1px solid white; }
 ```
 
-Jen připomínám, že už dávno nejde o hardwarový pixel. Bavíme se o „CSS pixelu". [vrdl.cz/prirucka/css-pixel](http://www.vzhurudolu.cz/prirucka/css-pixel)
+Jen připomínám, že už dávno nejde o hardwarový pixel. Bavíme se o „CSS pixelu“. [vrdl.cz/prirucka/css-pixel](http://www.vzhurudolu.cz/prirucka/css-pixel)
 
 ## Jednotky viewportu: vw a vh
 

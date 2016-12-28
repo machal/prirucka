@@ -31,7 +31,7 @@ Zvyšují se také prodeje hybridních notebooků, které je možné ovládat my
 
 ## CSS pixel 
 
-Mnozí webaři jsou vystrašení ohromnými rozlišení posledních modelů mobilů. Někdy až FullHD (1920×1080). Netrapme se tím. Prohlížeče pro nás hardwarové rozlišení přepočítávají do „CSS pixelů". Podívejte se na obrázek.
+Mnozí webaři jsou vystrašení ohromnými rozlišení posledních modelů mobilů. Někdy až FullHD (1920×1080). Netrapme se tím. Prohlížeče pro nás hardwarové rozlišení přepočítávají do „CSS pixelů“. Podívejte se na obrázek.
 
 ![CSS Pixel](dist/images/vdwd/original/css-pixel.png)
 

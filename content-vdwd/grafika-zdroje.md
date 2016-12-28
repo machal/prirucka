@@ -36,6 +36,6 @@ Výběr dvou písem pro jedno užití je víceméně vyšší dívčí. Pokud s 
 * **Tlačítka**: [https://codepen.io/collection/bxdaH/](https://codepen.io/collection/bxdaH/)
 * **Formuláře** *TODO*
 
-Zdroje, které uvádím, by rozhodně neměly být jakousi internetovou náhradou grafického designéra. Jak už jsem psal, profesionální návrh se netočí kolem pojmů „líbí" a „nelíbí“. Profesionální návrh slouží cíli a přizpůsobuje se cílové skupině. Jistě vás nepřekvapí, že mezi specifikací cílů, cílových skupin a výběrem barvy nebo písma je kvantum znalostí, které specializovaní grafici a typografové nosí pod čepicí.
+Zdroje, které uvádím, by rozhodně neměly být jakousi internetovou náhradou grafického designéra. Jak už jsem psal, profesionální návrh se netočí kolem pojmů „líbí“ a „nelíbí“. Profesionální návrh slouží cíli a přizpůsobuje se cílové skupině. Jistě vás nepřekvapí, že mezi specifikací cílů, cílových skupin a výběrem barvy nebo písma je kvantum znalostí, které specializovaní grafici a typografové nosí pod čepicí.
 
 Stejně tak je ale mnozí profesionální designéři využívají, protože s jejich pomocí šetří čas a hledaní u nich inspiraci.

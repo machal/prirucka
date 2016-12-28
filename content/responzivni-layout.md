@@ -4,7 +4,7 @@ Pro rozvržení celé stránky nebo jednotlivých komponent máme několik techn
 
 ## Flexbox
 
-Flexbox byl uveden relativně nedávno, ale buďme za něj rádi, protože jde o první pořádný nástroj pro tvorbu layoutu v CSS. Oproti „float" a jiným technikám ze staré školy má řadu výhod. Podpora v prohlížečích je prakticky plná. 
+Flexbox byl uveden relativně nedávno, ale buďme za něj rádi, protože jde o první pořádný nástroj pro tvorbu layoutu v CSS. Oproti „float“ a jiným technikám ze staré školy má řadu výhod. Podpora v prohlížečích je prakticky plná. 
 
 Osobně flexbox používám jako výchozí variantu pro jakékoliv v něm realizovatelné rozvržení stránky nebo její komponenty.
 
@@ -40,7 +40,7 @@ Pomocí Media Queries, které už známe, pak layout nastavíme jen pro obrazovk
 
 Živá ukázka je pro vás připravená na Codepenu. [cdpn.io/e/wobjoq](http://codepen.io/machal/pen/wobjoq)
 
-Flexbox je relativně složitý a tak pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů nebo svůj ebook „Vzhůru do CSS3", kde je flexbox podrobně vysvětlen i s příklady. [vrdl.cz/prirucka/css3-flexbox](http://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook).
+Flexbox je relativně složitý a tak pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů nebo svůj ebook „Vzhůru do CSS3“, kde je flexbox podrobně vysvětlen i s příklady. [vrdl.cz/prirucka/css3-flexbox](http://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook).
 
 ## Grid Layout
 
@@ -48,11 +48,11 @@ Flexbox je velmi mocná technologie pro jednosměrný typ layoutu. Pokud ale pot
 
 V době vydání knihy už jej pravděpodobně některé prohlížeče budou podporovat ve svých veřejných verzích. Na implementaci gridu ale pracují prohlížeče všechny, takže jej během roku 2017 budeme moci začít používat.
 
-Podívejte se na specifikaci nebo web „Grid by Example" od Rachel Andrew, kterou znáte z Webexpa 2016. [w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/) a [gridbyexample.com/examples/](http://gridbyexample.com/examples/).
+Podívejte se na specifikaci nebo web „Grid by Example“ od Rachel Andrew, kterou znáte z Webexpa 2016. [w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/) a [gridbyexample.com/examples/](http://gridbyexample.com/examples/).
 
 ## Layout pomocí zastarávajících metod: float, position:absolute, display: table, display: inline-block…
 
-Nic proti nim. Dlouho nám pomáhaly a tímto jim děkujeme. Je ale dobré vědět, že jde o techniky, které pro tvorbu layoutů nebyly vymyšleny, takže mají mnoho nevýhod. Když můžete použít flexbox, použijte jej. Pokud flexbox použít nemůžete, inspirujte se návrhovými vzory pro layout na webu „This is Responsive" od Brada Frosta. [bradfrost.github.io/this-is-responsive/patterns.html](https://bradfrost.github.io/this-is-responsive/patterns.html#layout)
+Nic proti nim. Dlouho nám pomáhaly a tímto jim děkujeme. Je ale dobré vědět, že jde o techniky, které pro tvorbu layoutů nebyly vymyšleny, takže mají mnoho nevýhod. Když můžete použít flexbox, použijte jej. Pokud flexbox použít nemůžete, inspirujte se návrhovými vzory pro layout na webu „This is Responsive“ od Brada Frosta. [bradfrost.github.io/this-is-responsive/patterns.html](https://bradfrost.github.io/this-is-responsive/patterns.html#layout)
 
 ## Vícesloupcový layout
 
