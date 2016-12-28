@@ -9,12 +9,10 @@ Nemusíte být Google. Rychlejší načtení vylepší uživatelský prožitek a
 Pojďme si přiznat, že uživatelé jsou jen lidé. Na jejich vnímání rychlosti uživatelského rozhraní dělal v šedesátých letech pokusy Robert B. Miller. Výsledky v devadesátých letech převzal Jacob Nielsen. Zkoumána byla trpělivost lidí při čekání na reakci rozhraní po provedení uživatelské akce:
 
 * do 100 ms – považujeme za okamžitou reakci,
-
 * do jedné vteřiny – poznáme prodlevu, ale nepřerušíme úkol,
-
 * nad deset vteřin – ztrácíme pozornost a máme tendenci začít plnit jiný úkol.
 
-Více je v článku „Response Times: The 3 Important Limits": [https://www.nngroup.com/articles/response-times-3-important-limits/](https://www.nngroup.com/articles/response-times-3-important-limits/)
+Více je v článku „Response Times: The 3 Important Limits": [nngroup.com/articles/response-times-3-important-limits/](https://www.nngroup.com/articles/response-times-3-important-limits/)
 
 ## Rychlost načtení stránky má vliv na úspěšnost webu
 

@@ -71,7 +71,7 @@ Pokud nebudeme nastavovat výšku obrázku, v CSS nemusíme pro moderní prohlí
 img {
   width: 100%;
 }
-``
+```
 
 Codepen s příklad se na vás těší i tady: [cdpn.io/e/VmNbPx](http://codepen.io/machal/pen/VmNbPx).
 

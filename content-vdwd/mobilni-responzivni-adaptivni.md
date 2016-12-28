@@ -92,7 +92,7 @@ A pak – slovo *responzivní* v branži dnes má dva významy:
 * děláme web, který se přizpůsobuje mobilním zařízením a
 * neděláme jen desktopový web.
 
-Ano, slovem *responzivní *se trochu vyhraňujeme vůči předchozímu způsobu tvorby webů. *Responzivní *je dnes tedy více pojmenování pro aktuální způsob tvorby. Pro aktuální etapu webdesignu.
+Ano, slovem *responzivní* se trochu vyhraňujeme vůči předchozímu způsobu tvorby webů. *Responzivní* je dnes tedy více pojmenování pro aktuální způsob tvorby. Pro aktuální etapu webdesignu.
 
 Jenže tahle etapa končí.
 

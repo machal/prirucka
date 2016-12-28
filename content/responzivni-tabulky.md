@@ -30,7 +30,7 @@ Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně m
 
 ![](dist/images/original/tabulky_2.png)
 
-*Obrázek: Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. Zdroj: **[github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)
+*Obrázek: Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. Zdroj: [github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)*
 
 Vyzkoušejte si tady: [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
 
@@ -48,7 +48,7 @@ Datagrid není prosím žádná vzácnost. Každá webová aplikace pro interní
 
 ![](dist/images/original/tabulky_3.png)
 
-*Obrázek: Stohování tabulky na menších displejích. Zdroj: **[github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)
+*Obrázek: Stohování tabulky na menších displejích. Zdroj: [github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)*
 
 V nejjednodušší možné CSS implementaci prostě tabulce na menších displejích zrušíme „tabulkovost“:
 

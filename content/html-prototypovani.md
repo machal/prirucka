@@ -47,21 +47,26 @@ Nástroje, používané pro demonstraci a odzkoušení nějaké myšlenky použ�
 
 *TODO obrázek.*
 
-1. **Drátěný model (wireframe)**  
-    * Je to vlastně kostra pro webový design. Ukazuje obsah, možnosti jeho rozložení a případně základní interakce. „Dráťák“ je rychle hotový, ale velmi zjednodušuje. Obvykle je to levná volba, ideální pro úvodní fáze projektů.
-    * Model nízké věrnosti s finálním webem. 
-    * Nejméně časově náročné.
-    * Nástroje: ruční skicování nebo programy jako [UXPin](https://www.uxpin.com/), [Balsamiq Mockups](https://balsamiq.com/products/mockups/).
-2. **Statická maketa (mockup)**  
-    * Na jednu stranu velmi detailní, jiné atributy prototypu ignorující. Typická maketa je výstup z Photoshopu, který obvykle detailně popisuje vizuální design, ale interakce nebo chování v různých rozlišeních naopak zcela nedostatečně.
-    * Model střední až vysoké věrnosti. 
-    * Časově středně a hodně náročné.
-    * Nástroje: Photoshop, Sketch.
-3. **Interaktivní prototyp**  
-    * Důraz na interaktivitu a tedy například možnost otestovat uživatelské scénáře. Hezky dokáže otestovat i typické frontendové problémy. Vizuální design ale obvykle moc neřeší. 
-    * Opět střední až vysoká věrnost. 
-    * Časově ze všech možností nejnáročněší.
-    * Nástroje: Naše HTML prototypování nebo zčásti Axure RP. 
+### Drátěný model (wireframe)
+
+* Je to vlastně kostra pro webový design. Ukazuje obsah, možnosti jeho rozložení a případně základní interakce. „Dráťák“ je rychle hotový, ale velmi zjednodušuje. Obvykle je to levná volba, ideální pro úvodní fáze projektů.
+* Model nízké věrnosti s finálním webem. 
+* Nejméně časově náročné.
+* Nástroje: ruční skicování nebo programy jako [UXPin](https://www.uxpin.com/), [Balsamiq Mockups](https://balsamiq.com/products/mockups/).
+
+### Statická maketa (mockup)
+
+* Na jednu stranu velmi detailní, jiné atributy prototypu ignorující. Typická maketa je výstup z Photoshopu, který obvykle detailně popisuje vizuální design, ale interakce nebo chování v různých rozlišeních naopak zcela nedostatečně.
+* Model střední až vysoké věrnosti. 
+* Časově středně a hodně náročné.
+* Nástroje: Photoshop, Sketch.
+
+### Interaktivní prototyp
+
+* Důraz na interaktivitu a tedy například možnost otestovat uživatelské scénáře. Hezky dokáže otestovat i typické frontendové problémy. Vizuální design ale obvykle moc neřeší. 
+* Opět střední až vysoká věrnost. 
+* Časově ze všech možností nejnáročněší.
+* Nástroje: Naše HTML prototypování nebo zčásti Axure RP. 
 
 Zjednodušeně řečeno: HTML prototypování nabízí nejvyšší možnou míru věrnosti, ale za cenu nejsložitější práce.
 

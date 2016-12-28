@@ -54,12 +54,12 @@ Hooberovy výsledky:
 
 Hoober ale o držení mobilů zjistil i další věci, které se v zásadě dají zobecnit i pro další dotyková  zařízení:
 
-* **Držíme telefony různě podle kontextu a pozice.** 
+* **Držíme telefony různě podle kontextu a pozice.**   
 Ano, i úchopově přelétaví jsme. Chudáci mobilní telefony. A co teprve tablety!
-* **Dvě třetiny dotyků při držení v jedné ruce se provádí pravačkou. 
-**A to i přes to, že leváci tvoří jen asi desetinu, nikoliv zbylou třetinu, populace. I my, praváci, si prostě občas sáhneme levým palcem. Tím méně přesným, mimochodem.
-* **75 % všech interakcí bylo děláno palcem. 
-**U jednorukého držení to asi smysl dává, ale palce to vyhrály i u kolébkového chvatu. 
+* **Dvě třetiny dotyků při držení v jedné ruce se provádí pravačkou.**  
+A to i přes to, že leváci tvoří jen asi desetinu, nikoliv zbylou třetinu, populace. I my, praváci, si prostě občas sáhneme levým palcem. Tím méně přesným, mimochodem.
+* **75 % všech interakcí bylo děláno palcem.**  
+U jednorukého držení to asi smysl dává, ale palce to vyhrály i u kolébkového chvatu. 
 
 Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovládání palců, přátelé. 
 

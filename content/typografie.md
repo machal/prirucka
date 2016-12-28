@@ -13,11 +13,11 @@ Typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů.
 
 ![](dist/images/original/typografie-16.png)
 
-**1) Děsně dlouhé řádky. **Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl zabrat více než 75 znaků, aby oči nechtěně nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
+**1) Děsně dlouhé řádky.** Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl zabrat více než 75 znaků, aby oči nechtěně nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
 
 ![](dist/images/original/typografie-17.png)
 
-**2) Špatný kontrast a další technické parametry. **Novinky.cz jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat na [contrastchecker.com](http://contrastchecker.com/).
+**2) Špatný kontrast a další technické parametry.** Novinky.cz jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat na [contrastchecker.com](http://contrastchecker.com/).
 
 ![](dist/images/original/typografie-18.png)
 
@@ -69,9 +69,9 @@ Zase říkám ano. Je to totiž praktičtější. Bezpatková písma jsou užš�
 
 ## Další zdroje o typografii
 
-* **Kniha „On Web Typography"**  
+* **Kniha „On Web Typography“**  
 Skvělá učebnice od Jasona Santa Maria (anglicky): [https://abookapart.com/products/on-web-typography](https://abookapart.com/products/on-web-typography)
-* **Přednáška „Praktická typografie pro webové kodéry"**  
+* **Přednáška „Praktická typografie pro webové kodéry“**  
 Od Dana Srba: [https://youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
-* **Online kina „The Elements of Typographic Style Applied to the Web"**  
+* **Online kina „The Elements of Typographic Style Applied to the Web“**  
 Bible od Roberta Bringhursta a spoluautorů (anglicky): [http://webtypography.net/toc/](http://webtypography.net/toc/)

@@ -17,7 +17,7 @@ Když to zjednoduším, em je výchozí jednotka. Ostatní používám jen v opo
 
 Vypočítaná velikost písma (`font-size`) daného elementu. Pokud je tedy výchozí velikost téměř ve všech prohlížečích 16 pixelů, pak vnější okraj zezdola bude v následnujícím příkladu také 16px:
 
-``css
+```css
 p { margin-bottom: 1em } /* = 16px */
 ```
 
@@ -25,7 +25,7 @@ Je tady ale výjimka. Jednotka em uvedená u vlastnosti font-size pak není pouh
 
 Jakmile tedy zkusíme u nastavení spodního okraje u nadpisu první úrovně, bude výsledek jiný:
 
-``css
+```css
 h1 { font-size: 2em } /* Výchozí CSS prohlížeče */
 h1 { margin-bottom: 1em } /* = 32px */
 ```

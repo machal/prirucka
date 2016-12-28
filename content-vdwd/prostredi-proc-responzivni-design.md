@@ -60,15 +60,15 @@ K internetu jsou prý už připojené i stromy v Amazonii, takže lednička s we
 
 Cítím krásnou příležitost se historicky ztrapnit a jdu tedy vývoj odhadnout jen podle svého nejlepšího vědomí. Na jakých zařízeních budou lidé používat prohlížeče a zobrazovat naše weby?
 
-* **Chytré hodiny: NE**
+* **Chytré hodiny: NE**  
 Na některých platformách si neoficiální prohlížeče stáhnout můžete. Zkoušel jsem to, ale myslím že to je nepoužitelné a že se to neujme.
-* **Televize: NE**
+* **Televize: NE**  
 I pro vaši chytrou telku byste nejspíš nějaký ten prohlížeč sehnat dokázali. Jsem ale skeptický k ovládání na dálku. Budoucnost vidím v gestech a hlasovém ovládání a pro běžné webové stránky to nebude. Pro nativní aplikace dělané webovými technologiemi ale ano.
-* **Ledničky: NE**
+* **Ledničky: NE**  
 Nenapadá mě rozumný případ využití. Doma už navíc máme tablety, proč si připlácet za další displej? Ale lednička s prohlížečem existuje, to ne že ne. [https://www.cnet.com/products/samsung-family-hub-refrigerator/](https://www.cnet.com/products/samsung-family-hub-refrigerator/)
-* **Herní konzole: ANO**
+* **Herní konzole: ANO**  
 Myslím konzole do ruky. To jsou jen převlečené chytré telefony.
-* **Auta: ANO**
+* **Auta: ANO**  
 S rozmachem poloautomatického řízení poroste význam velkých dotykových obrazovek. Nejspíš v těch místech, kde teď v autě máte výstupy z ventilátorů. Číst si Blesk.cz v dopravní zácpě? Dává mi to dokonalý smysl. Jen doufejme, že ta auta budou fakt chytrá, aby zvládla řídit, protože nás od palubních displejů už nic neodtrhne. Už odzkoušeno v Tesla Motors. [https://www.tesla.com/support/touchscreen-web-browser](https://www.tesla.com/support/touchscreen-web-browser)
 
 Na žádnou další velkou displejovou revoluci to tedy, přátelé, v nejbližších letech nevidím. Jedině, že by do toho ještě vstoupily pračky. Ale ne, dělám si legraci. Dotykové panely v autech jsou vlastně větší tablety a přenosné herní konzole zase chytré telefony. 
