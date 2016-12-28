@@ -76,9 +76,9 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['**.{jpg,gif,png}'],
+          src: ['**/**.{jpg,gif,png}'],
           cwd: 'dist/images/original/',
-          custom_dest: 'dist/images/{%= name %}/'
+          custom_dest: 'dist/images/{%= name %}/{%= path %}/'
         }]
       },
       all: {
@@ -102,9 +102,9 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['**.{jpg,gif,png}'],
+          src: ['**/**.{jpg,gif,png}'],
           cwd: 'dist/images/original/',
-          custom_dest: 'dist/images/{%= name %}/'
+          custom_dest: 'dist/images/{%= name %}/{%= path %}/'
         }]
       },
     }
