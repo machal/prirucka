@@ -11,15 +11,15 @@ Typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů.
 
 ## Časté typografické chyby
 
-![](dist/images/vdwd/original/typografie-16.png)
+![](dist/images/original/typografie-16.png)
 
 **1) Děsně dlouhé řádky. **Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl zabrat více než 75 znaků, aby oči nechtěně nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
 
-![](dist/images/vdwd/original/typografie-17.png)
+![](dist/images/original/typografie-17.png)
 
 **2) Špatný kontrast a další technické parametry. **Novinky.cz jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat na [contrastchecker.com](http://contrastchecker.com/).
 
-![](dist/images/vdwd/original/typografie-18.png)
+![](dist/images/original/typografie-18.png)
 
 **3) Nesprávné znaky.** Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky). Není to žádná typografická buzerace. Prostě se to lépe čte. Podívejte se na typografický tahák od Beneš a Michl (PDF). [http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf)
 
@@ -32,7 +32,7 @@ Na příkladu Wikipedie jste viděli…
 * Velké displeje: 66 znaků je ideál, 45-75 vyhovující - (Bringhurst) předpokládá se vysázení patkovým písmem a do jednoho sloupce. Mění se podle parametrů písma - patkové, nepatkové, kontrast, počet sloupců…
 * Na malých displejích není snadné toho dosáhnout, proto se snižuje výška řádku.
 
-![](dist/images/vdwd/original/typografie-19.png)
+![](dist/images/original/typografie-19.png)
 
 ### Mřížka účaří (Baseline grid)
 
