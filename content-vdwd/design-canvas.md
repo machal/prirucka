@@ -8,13 +8,13 @@ User Centered Design Canvas je ale nástroj, který to celé dokáže shrnout na
 
 User Centered Design Canvas má čtyři hlavní oblasti:
 
-* **Uživatelé (Users)**
+* **Uživatelé (Users)**  
 Všechny kategorie potenciálních uživatelů produktu.
-* **Uživatelská část (Users Side)**
+* **Uživatelská část (Users Side)**  
 Problémy, motivy a obavy uživatelů.
-* **Část byznysu (Business Side)**
+* **Část byznysu (Business Side)**  
 Konkurenční výhody, alternativy k produktu a řešení problémů uživatelů, která nabízíme.
-* **Jedinečný prodejní argument (Unique Value Proposition)**
+* **Jedinečný prodejní argument (Unique Value Proposition)**  
 Důvod, proč by uživatelé měli koupit zrovna váš produkt.
 
 Pojďme si teď připravit User Centered Design Canvas pro náš projekt a tím si to také představíme.
