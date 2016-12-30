@@ -16,6 +16,7 @@ Protože nejsme blbí. Víme, že navigace musí na webech plnit minimálně tř
 
 Jak dobře plní tyto tři úkoly schovaná navigace? Že je neplní vůbec? Bingo!
 
+<!-- TODO nahradit obrazkem: -->
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Schováváte vždy navigaci webu do hamburger ikony? A co je na ni tak nedůležitého, že je potřeba ji schovat?</p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/686878575400714240">January 12, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -33,7 +34,7 @@ Jenže tady máme i weby se složitými navigacemi a zařízení s velmi malými
 
 Pokud jde navigace zobrazit celá, **prostě ji zobrazte celou i na mobilech**. Zní to trochu blbě, jenže svět je plný webů s navigací o čtyřech položkách, které používají hamburger jen proto, že to je *in*. Pokud je rozlišení dostatečně široké, prostě navigaci zobrazte. 
 
-Jestliže navigaci nedokážete zobrazit celou, zvažte jiné návrhové vzory než prosté zapínání a vypínání. Doporučuji [vzor s prioritizací položek](https://css-tricks.com/the-priority-navigation-pattern/).
+Jestliže navigaci nedokážete zobrazit celou, zvažte jiné návrhové vzory než prosté zapínání a vypínání. Doporučuji vzor s prioritizací položek. [css-tricks.com/the-priority-navigation-pattern/](https://css-tricks.com/the-priority-navigation-pattern/).
 
 Až pokud žádné z těchto možností nezabrala, volte návrhový vzor s vypínačem navigace. Ano, ten, kterému podle vzhledu ikony říkáme *hamburger*. 
 
@@ -41,19 +42,21 @@ Až pokud žádné z těchto možností nezabrala, volte návrhový vzor s vypí
 
 ## Hamburger je potížista, ale potřebujeme ho
 
-Ikona hamburgeru a schovávání navigace je v poslední době pod [palbou](http://deep.design/the-hamburger-menu/) [kritiky](http://jecas.cz/hamburger-menu). Tvrdím, že na některých webech se mu nedá vyhnout a že ji webdesign jako obor potřebuje.
+Ikona hamburgeru a schovávání navigace je v poslední době pod palbou kritiky. [jecas.cz/hamburger-menu](http://jecas.cz/hamburger-menu) 
+
+Tvrdím, že na některých webech se mu nedá vyhnout a že ji webdesign jako obor potřebuje.
 
 O ikonách je známo, že trvá nějakou dobu než se mezi lidmi zavedou. Lidé se nenarodili ani se znalostí ikon pro *play*, *pause* a *stop* na hudebních přehrávačích. 
 
 > Jedním z hlavních důvodů, proč jsme schopni symboly (*play*, *pause* a *stop*) používat bez textového značení je skutečnost, že si svou cestu mezi komunikační zkratky naší kultury našly díky neustálému opakování na magnetofonech a videopřehrávačích.
 
-– [Andy Budd, In defence of the hamburger menu](http://www.andybudd.com/archives/2016/01/in_defence_of_the_hamburger_menu/)
+– Andy Budd, In defence of the hamburger menu. [vrdl.in/28gc0](http://www.andybudd.com/archives/2016/01/in_defence_of_the_hamburger_menu/)
 
-Hamburger nový je a situaci nám ještě komplikují operační systémy a nativní aplikace na nich. Ty pro otevření navigace používají různé ikony ([hamburger, kebab, masové kuličky…](https://twitter.com/lukew/status/591296890030915585)). Uživatelé zatím moc neví co si pod nimi představit.
+Hamburger nový je a situaci nám ještě komplikují operační systémy a nativní aplikace na nich. Ty pro otevření navigace používají různé ikony hamburger, kebab, masové kuličky…). Uživatelé zatím moc neví co si pod nimi představit. [vrdl.in/jve94](https://twitter.com/lukew/status/591296890030915585)
 
 Napsal jsem, že ikonu pro schování navigace ve webdesignu potřebujeme. Proto ji  prostě musíme mezi lidi dostat. Nejlépe pomocí textových popisků.
 
-Je také dobré v době minimalizmu a flat designu zmínit, že ikona by kromě textového popisku [měla mít vzhled tlačítka](http://exisweb.net/menu-eats-hamburger).
+Je také dobré v době minimalizmu a flat designu zmínit, že ikona by kromě textového popisku měla mít vzhled tlačítka. [exisweb.net/menu-eats-hamburger](http://exisweb.net/menu-eats-hamburger)
 
 ## Otevírá hamburger opravdu obsah, který reprezentuje?
 
@@ -61,9 +64,9 @@ Každá ikona je zjednodušenou abstrakcí toho co aktivuje. V případě hambur
 
 ![Špatný symbol pro zobrazení sekundárního obsahu](/assets/img/content/dest/original/hamburger-abstraction.jpg)
 
-Pokud nechceme naše milé uživatele [úplně zničit](/blog/47-znicit-mobilistu-1), měli bychom hamburger používat jako abstrakci typu obsahu, který skutečně reprezentuje.
+Pokud nechceme naše milé uživatele úplně zničit, měli bychom hamburger používat jako abstrakci typu obsahu, který skutečně reprezentuje. [vrdl.cz/blog/47-znicit-mobilistu-1](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1)
 
-Jak v této souvislosti [dodává Adam Fendrych](https://twitter.com/adlo/status/720266123774713856) i textový popisek „Menu“ je někdy dobré nahradit pojmenováním, které přesně popisuje obsah. Například „Kategorie“ nebo „Recepty”.
+Jak v této souvislosti dodal Adam Fendrych i textový popisek „Menu“ je někdy dobré nahradit pojmenováním, které přesně popisuje obsah. Například „Kategorie“ nebo „Recepty“. [vrdl.in/o7dzl](https://twitter.com/adlo/status/720266123774713856)
 
 
 ## Co dělat, když hamburger použít musím?

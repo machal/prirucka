@@ -12,13 +12,13 @@ Pojďme si přiznat, že uživatelé jsou jen lidé. Na jejich vnímání rychlo
 * do jedné vteřiny – poznáme prodlevu, ale nepřerušíme úkol,
 * nad deset vteřin – ztrácíme pozornost a máme tendenci začít plnit jiný úkol.
 
-Více je v článku „Response Times: The 3 Important Limits": [nngroup.com/articles/response-times-3-important-limits/](https://www.nngroup.com/articles/response-times-3-important-limits/)
+Více je v článku „Response Times: The 3 Important Limits": [vrdl.in/4o3d7](https://www.nngroup.com/articles/response-times-3-important-limits/)
 
 ## Rychlost načtení stránky má vliv na úspěšnost webu
 
 Říkají to alespoň studie a testy, které o tom byly publikovány.
 
-Wallmart si například spočítal, že každé zrychlení načtení stránky o vteřinu jim zvýší konverze o dva procentní body. [http://www.slideshare.net/devonauerswald/walmart-pagespeedslide/46](http://www.slideshare.net/devonauerswald/walmart-pagespeedslide/46).
+Wallmart si například spočítal, že každé zrychlení načtení stránky o vteřinu jim zvýší konverze o dva procentní body. [vrdl.in/ziud9](http://www.slideshare.net/devonauerswald/walmart-pagespeedslide/46).
 
 Další analýzy dokazují, že se zrychlení webu pozitivně promítá do všech klíčových ukazatelů – konverzního poměru, počtu zobrazených stránek, počtu návštěv nebo třeba spokojenosti zákazníků. Všechny studie ze světa najdete na WPO stats. [wpostats.com](https://wpostats.com/)
 
@@ -28,13 +28,11 @@ Případovou studii ale máme už i z českého prostředí. Srovname.cz jsem po
 
 ## Ovlivňuje také řazení Adwords inzerátů a přirozených výsledků v Google vyhledávání
 
-Nezapomeňte, že rychlost načítání je jedním z řadících parametrů AdWords kampaní. [http://adwords.blogspot.cz/2008/06/landing-page-load-time-now-affects.html](http://adwords.blogspot.cz/2008/06/landing-page-load-time-now-affects.html)
+Nezapomeňte, že rychlost načítání je jedním z řadících parametrů AdWords kampaní. [vrdl.in/9w2xd](http://adwords.blogspot.cz/2008/06/landing-page-load-time-now-affects.html)
 
 Google říká, že rychlost webu má vliv na zobrazování ve výsledcích vyhledávání. Na pořadí ve výsledcích má přímý vliv hlavně rychlost vygenerování stránky na serveru.
 
-Rychlost tak ovlivňuje nejen konverze, ale i pravděpodobnost, že se na web člověk vůbec dostane.
-
-[https://moz.com/blog/how-website-speed-actually-impacts-search-ranking](https://moz.com/blog/how-website-speed-actually-impacts-search-ranking)
+Rychlost tak ovlivňuje nejen konverze, ale i pravděpodobnost, že se na web člověk vůbec dostane. [vrdl.in/zhrkp](https://moz.com/blog/how-website-speed-actually-impacts-search-ranking)
 
 ## Mobilní sítě se nikdy nevyrovnají pevnému připojení
 
@@ -49,8 +47,12 @@ Připojení | Max. rychlost Mbit/s |  Latence ms
 4G/LTE  |   1 - 50  |   < 100
 Wifi  |   1 - 50  |   < 10
 
-Vysvětlení je nasnadě - architektura mobilního internetového připojení je daleko složitější než toho pevného. Hlavně proto, že data jdou vzduchem.
+Vysvětlení je nasnadě - architektura mobilního internetového připojení je daleko složitější než toho pevného. Hlavně proto, že data jdou vzduchem. 
 
-Ano, Česko je už sice moc hezky pokryto LTE sítěmi, jenže tuhle rychlost zdaleka nemají a jen tak nebudou mít v mobilu všichni. [lte.ctu.cz/pokryti/](http://lte.ctu.cz/pokryti/)
+Česko je už sice hezky pokryto LTE sítěmi, jenže tuhle rychlost zdaleka nemají a jen tak nebudou mít v mobilu všichni. [lte.ctu.cz/pokryti/](http://lte.ctu.cz/pokryti/)
 
-Takže ano, rychlost načtení je dobré řešit – pravděpodobně vám na web pomůže dostat více lidí a také vylepší klíčové ukazatele hodnocení jeho úspěšnosti. Co dál? Přečíst si [článek o nástrojích](http://www.vzhurudolu.cz/prirucka/rychlost-nastroje) pro analýzu rychlosti.
+Takže ano, rychlost načtení je dobré řešit – pravděpodobně vám na web pomůže dostat více lidí a také vylepší klíčové ukazatele hodnocení jeho úspěšnosti. 
+
+<p class="web-only" markdown="1">
+Co dál? Přečíst si [článek o nástrojích](http://www.vzhurudolu.cz/prirucka/rychlost-nastroje) pro analýzu rychlosti.
+</p>

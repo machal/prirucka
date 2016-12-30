@@ -16,7 +16,7 @@ Já prostě používám tužku, gumu a papír. Když mám na výběr, volím te�
 
 Na rozdíl od uměleckého skicování, u náčrtů uživatelského rozhraní nemusíte umět kreslit. Stačí vám jakžtakž zvládnout úsečky, čtverečky, kolečka a umět psát. To by šlo, ne?
 
-Dále se budu zabývat jen určitou částí nauky o skicování: rychlým náčrtům variant designérského řešení. A je třeba říct, že se ve skicovací vědě necítím být expertem. Jako průvodce pro detailnější zkoumání volte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování". [http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
+Dále se budu zabývat jen určitou částí nauky o skicování: rychlým náčrtům variant designérského řešení. A je třeba říct, že se ve skicovací vědě necítím být expertem. Jako průvodce pro detailnější zkoumání volte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování". [vrdl.in/8yd6f](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
 
 ## Skicování variant designérského řešení
 

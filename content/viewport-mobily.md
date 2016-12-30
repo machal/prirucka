@@ -6,13 +6,15 @@ Pojďme si nejprve říct, co to ten *viewport* vlastně je. V kontextu webdesig
 
 Na zařízeních, kde je možné měnit velikost okna, typicky desktopových, tedy viewport představuje šířku a výšku okna bez rozhraní prohlížeče.
 
-Správná legrace s viewportem ovšem začíná na moderních smartphonech a tabletech. Hlavně proto, že tam viewport není jen jeden. Budeme používat terminologii [Petera-Paula Kocha](http://www.quirksmode.org/mobile/metaviewport/) a rozlišovat viewport layoutový, vizuální a ideální.
+Správná legrace s viewportem ovšem začíná na moderních smartphonech a tabletech. Hlavně proto, že tam viewport není jen jeden. Budeme používat terminologii Petera-Paula Kocha a rozlišovat viewport layoutový, vizuální a ideální. 
 
 ![Layoutový a vizuální viewport](dist/images/original/viewport-layoutovy-vizualni.svg)
 
+*Obrázek: Viewport layoutový, vizuální a ideální. [quirksmode.org/mobile/metaviewport](http://www.quirksmode.org/mobile/metaviewport/)*
+
 ## Layoutový viewport
 
-Plocha, do které se vykresluje layout stránky. Layout napsaný v CSS se počítá právě z něj. A pro pořádek – z pohledu CSS je layoutový viewport tzv. „[initial containing block](http://reference.sitepoint.com/css/containingblock)“.
+Plocha, do které se vykresluje layout stránky. Layout napsaný v CSS se počítá právě z něj. A pro pořádek – z pohledu CSS je layoutový viewport tzv. „initial containing block“.
 
 Šířka výchozí layoutového viewportu je na mobilních platformách podobná:
 
@@ -135,7 +137,9 @@ Javascriptem se u některých prohlížečů dá ideální viewport zjistit pomo
 
 Javascriptové vlastnosti ideálního viewportu mají své protějšky v Media Queries `min-device-width` a `min-device-height` a i ty jsou tedy nejen díky tomu nepříliš použitelné.
 
+<p class="web-only" markdown="1">
 Můžete pokračovat článkem o [meta značce pro viewport](viewport-meta.md) nebo [viewportu na Windows](viewport-windows.md).
+</p>
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=Un1lofU64oo">Viewporty na mobilních zařízeních</a> ~ Praktická demonstrace viewportů na mobilních zařízeních a jak se k nim dostat v Javascriptu.

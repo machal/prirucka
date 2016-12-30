@@ -26,7 +26,7 @@ Tohle vám u drtivé většiny responzivních webů bude stačit. Pokud ale mát
 Na mobilních zařízeních potřebujeme znát alespoň tyto dva typy viewportů:
 
 - *Layoutový* – plocha, do které se vykresluje layout stránky. To je to, co mají prohlížeče na iOS a Androidu nastaveno na 980 pixelů. 
-- *Ideální* – ideální rozlišení. Dostanete jej, když vydělíte hardwarové rozlišení hodnotou `device-pixel-ratio` (viz [CSS pixel](css-pixel.md)). iPhone 4 měl ideální viewport 320 &times; 480 pixelů. Další příklady u [Petera Paula Kocha](http://www.quirksmode.org/mobile/metaviewport/#link7).
+- *Ideální* – ideální rozlišení. Dostanete jej, když vydělíte hardwarové rozlišení hodnotou `device-pixel-ratio` (viz [CSS pixel](css-pixel.md)). iPhone 4 měl ideální viewport 320 &times; 480 pixelů. 
 
 Existují ještě minimálně další dva typy viewportů, ale to tom až jindy.
 
@@ -45,7 +45,7 @@ Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku
 
 ### `user-scalable`
 
-Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení [fakt potřeba](/blog/48-znicit-mobilistu-2#10-zakazte-jim-zoomovani). Ať už jde o zvětšení hůř navržené stránky, zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku — přibližování obsahu prostě potřebují všichni uživatelé.
+Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení fakt potřeba. Ať už jde o zvětšení hůř navržené stránky, zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku — přibližování obsahu prostě potřebují všichni uživatelé.
 
 ### `minimum-scale`/`maximum-scale`
 
@@ -65,12 +65,11 @@ Nevadí. Problémy vyřešíme tím, že použijeme obě hodnoty — `width=devi
 
 ## Zavináčové pravidlo `@viewport` v CSS
 
-Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? Se zápisem `@viewport { }` [přišla Opera](https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/), která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase nejspíš neumí. 
+Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? Se logičtěji umístěným zápisem `@viewport { }` přišla Opera, která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase nejspíš neumí. V praxi je ten zápis nyní potřeba hlavně pro Internet Explorer na Windows Phone 8. [vrdl.cz/prirucka/viewport-windows](http://www.vzhurudolu.cz/prirucka/viewport-windows)
 
-V praxi je ten zápis nyní potřeba [hlavně pro Internet Explorer na Windows Phone 8](viewport-window.md) a jako doplněk k meta značce pro viewport jej [nabízí](http://caniuse.com/css-deviceadaptation) prohlížeče od Microsoftu.
+## A ještě pár rychlých tipů
 
-## A ještě pár rychlovek
+<!-- TODO http://kihlstrom.com/2015/shrink-to-fit-no-fixes-zoom-problem-in-ios-9/ -->
 
-1. Pokud vám [iOS9 od-zoomovává obsah](http://kihlstrom.com/2015/shrink-to-fit-no-fixes-zoom-problem-in-ios-9/), mohlo by pomoci přidání `shrink-to-fit=no`. Ale neptejte se mě, prosím, proč. Asi bych se v těch viewportech trochu ztratil.
-2. Meta viewport [jde nastavit Javascriptem](https://twitter.com/Jahoda/status/693884147702611974). To se hodí, když nemáte přístup do `<head>`. Teoreticky jde javascriptem [i měnit](http://www.webdevdoor.com/responsive-web-design/change-viewport-meta-tag-javascript), ale nedělejte to. Je to náročné na vykreslování. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
-3. Když budete mít viewport nastavený správně – s hodnotou `width` – přicházející prohlížeče postavené na Webkitu samy [odstraní 300ms čekání](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/) mezi tapnutím a akcí.
+1. Meta viewport jde nastavit Javascriptem. To se hodí, když nemáte přístup do `<head>`. Teoreticky jde javascriptem i měnit, ale nedělejte to. Je to náročné na vykreslování. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
+2. Když budete mít viewport nastavený správně – s hodnotou `width` – přicházející prohlížeče postavené na Webkitu a Chrome samy odstraní 300ms čekání mezi tapnutím a akcí. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)

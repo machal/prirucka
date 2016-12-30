@@ -52,7 +52,7 @@ Nástroje, používané pro demonstraci a odzkoušení nějaké myšlenky použ�
 * Je to vlastně kostra pro webový design. Ukazuje obsah, možnosti jeho rozložení a případně základní interakce. „Dráťák“ je rychle hotový, ale velmi zjednodušuje. Obvykle je to levná volba, ideální pro úvodní fáze projektů.
 * Model nízké věrnosti s finálním webem. 
 * Nejméně časově náročné.
-* Nástroje: ruční skicování nebo programy jako [UXPin](https://www.uxpin.com/), [Balsamiq Mockups](https://balsamiq.com/products/mockups/).
+* Nástroje: ruční skicování nebo programy jako UXPin nebo Balsamiq Mockups.
 
 ### Statická maketa (mockup)
 
@@ -70,7 +70,6 @@ Nástroje, používané pro demonstraci a odzkoušení nějaké myšlenky použ�
 
 Zjednodušeně řečeno: HTML prototypování nabízí nejvyšší možnou míru věrnosti, ale za cenu nejsložitější práce.
 
-Tip: Seznam nástrojů pro prototypování: [https://365tipu.wordpress.com/2015/05/15/tip135-v-cem-vytvaret-wireframe-drataky-a-slozitejsi-design-webu/](https://365tipu.wordpress.com/2015/05/15/tip135-v-cem-vytvaret-wireframe-drataky-a-slozitejsi-design-webu/)
 
 ## Výhody pro designéry
 
@@ -85,7 +84,7 @@ Nástroje pro tvorbu maket jako Photoshop tady nepomohou. Klikací animační n�
 4. **Pokročilé interakce**  
 Nemyslím tím jen „kliknu a přejdu na jinou stránku“. V HTML se skvěle prototypují třeba ajaxové interakce, klidně spojené s animací.
 5. **Pokročilé SVG vlastnosti**  
-Výplně, výřezy, filtry, efekty… tady opravdu nevím, jak jinak než přímo v HTML si to zkusit. [http://www.vzhurudolu.cz/prirucka/svg-inspirace](http://www.vzhurudolu.cz/prirucka/svg-inspirace)
+Výplně, výřezy, filtry, efekty… tady opravdu nevím, jak jinak než přímo v HTML si to zkusit. [vrdl.cz/prirucka/svg-inspirace](http://www.vzhurudolu.cz/prirucka/svg-inspirace)
 
 Ohromě ale z HTML prototypování mohou těžit vývojáři, kteří mají na starost zpracování výstupů designérů. Cílem totiž není jen dostat produkt co nejdříve do prohlížeče, ale také vtáhnout vývojáře do dřívějších fází procesu. Tak, aby si zavčasu otestovali časté problémy, které na drátěném modelu ani maketě prostě vidět nejsou.
 
@@ -93,15 +92,20 @@ Ohromě ale z HTML prototypování mohou těžit vývojáři, kteří mají na s
 
 Každá správná frontendistka, každý správný frontendista mají prototypování rádi. I pro ně jsem našel pět otázek, na které jim HTML prototyp dokáže dát odpověď. Seznamu, který následuje, občas říkám „Pět obvyklých podezřelých na podkladech od designérů“. 
 
-1. **Rychlost načítání**  
+### 1. Rychlost načítání  
 Komponenta vypadá hezky, ale – nezpomalí zásadně načítání stránky? Karusel na úvodní stránku do drátěného modelu šoupnete raz dva, že? Jen až během prototypování nebo nedejbože finální implementaci zjistíte, že se díky němu úvodní stránka načítá děsně pomalu. To nechcete.
-2. **Výkon v prohlížeči**  
+
+
+### 2. Výkon v prohlížeči  
 Nebude se stránka při posouvání „trhat“? Je myšleno i na výkon při práci s načtenou stránkou? To, že klient je nadšený z krásných paralax efektů, které chce na webu pouštět zároveň s videem na pozadí, neznamená, že jeho pocity budou sdílet návštěvníci webu. Prototypem zjistíte, jak je jeho myšlenka problematická co do výkonu v prohlížeči.
-3. **Přístupnost**  
+
+### 3. Přístupnost  
 Jaký dopad bude komponenta mít na přístupnost zrakově postiženými? I karusel může být přístupný. Ale je přístupný zrovna ten váš? Dobré si to otestovat.
-4. **Zobrazování v exotických prohlížečích**  
+
+### 4. Zobrazování v exotických prohlížečích  
 Jak se bude zobrazovat ve starších a exotičtějších prohlížečích? Půjde snadno vymyslet náhradní řešení pro ně? Úžasné 3D WebGL efekty, které váš grafik někde viděl, jsou fajn. Jak to ale poběží v Exploreru 8, jehož uživatelé jsou třeba pro váš projekt ještě stále zásadní? Nepoběží. Jak bude vypadat náhradní řešení? Opět zjistíte a grafikovi demonstrujete rychlým prototypem.
-5. **Udržovatelnost**  
+
+### 5. Udržovatelnost  
 Nezkomplikuje řešení celkovou udržovatelnost projektu? Shlédl se váš designér v Bootstrapu, ale vy zjišťujete, že z něj využijete jen tlačítka a formuláře? Pokud vaše argumenty nepadají na úrodnou půdu, udělejte rychlý prototyp, na které komplikaci se špatnou udržitelností složité knihovny v rámci vašeho projektu ukážete. 
 
 Všimněte si, že kromě čtvrtého a pátého bodu, které jsou ryze technické, spadají všechny ostatní do kompetencí dobrého webového designéra.  Takže, milí designéři, nejde jen o „nějaké problémy ve vzdálené části vývojářského týmu a pro lidi, o nichž nic nevíme“, abych parafrázoval Chamberlainův výrok o Československu po Mnichově.
@@ -112,7 +116,7 @@ Klikací prototypovací nástroje jako Axure nám pachatele mezi obvyklými pode
 
 Celou dobu tady o plnohodnotných prototypech básním, takže si teď pojďme říci, v čem tkví jejich problémy:
 
-* **Jsou časově náročné a tedy drahé.**  
+* **Jsou časově náročné a tedy dražší.**  
 Nehodí se tedy pro použití kdekoliv a kdykoliv. Rozumný kompromis budu hledat v dalším textu.
 * **Vyžadují určitou zkušenost na straně designéra i frontendisty.**  
 Hlavně u nezkušených frontendistů se může protypování zbytečně prodražit. Pokud v týmu máte hlavně juniory, dávejte dvakrát pozor, zda se nezaměřují spíše na nástroje nebo věci, které jste na prototypech testovat nechtěli.
@@ -148,7 +152,7 @@ Teď jedna odbočka. Podíváme se do blízké budoucnosti návrhu uživatelské
 
 Ještě poznámka k progresivním směrům návrhu uživatelského rozhraní. Systémy atomických designů jsou tvořeny skládáním menších komponent do větších. Návrh a testování se z velké části odehrává přímo v prohlížeči, takže z HTML prototypování dělají neoddělitelnou součást pracovního procesu. 
 
-→ Více informací o systémech atomického designu: [vrdl.cz/prirucka/pattern-lab](http://www.vzhurudolu.cz/prirucka/pattern-lab)
+O systémech atomického designu jsem psal na Vzhůru dolů. [vrdl.cz/prirucka/pattern-lab](http://www.vzhurudolu.cz/prirucka/pattern-lab)
 
 U systémů atomického designu to bez intenzivní spolupráce designéra s vývojářem nejde. A podobné to je u celého HTML prototypování.
 
@@ -160,21 +164,20 @@ Prototypování je dobré dělat v nástroji, který zvládáte ovládat rychle 
 
 *Obrázek: Bootstrap a další frontend frameworky je ideálním pomocníkem pro prototypování celých webů. CodePen používám pro rychlý nástřel menších komponent.*
 
+### Rychlý online editor CodePen
+
+Editor, kde dělám jednoduché a přímočaré prototypy na pár řádků kódu. Je to rovnou online, takže se to dobře sdílí nebo posílá do mobilních zařízení.
+
+
 ### Frontend knihovna Bootstrap
 
 Všechny mé projekty z posledních let vznikly nejprve jako HTML prototyp postavený na Bootstrapu. Ten obsahuje dostatečně robustní sadu komponent proto, abych velmi rychle dokázal poskládat prvotní verzi webu k proklikání. S postupným iterativním vývojem webu se pak postupně jeho komponenty nahrazují komponentami navrženými na míru konkrétního projektu. 
 
 Bootstrap podporuje stavebnicový vývoj. Zároveň dodává řadu principů (prostřednictvím proměných a mixinů), na kterých pak snadno můžeme stavět své vlastní komponenty. 
 
-### Rychlý online editor CodePen
+Čtěte „Jak správně navázat na typografické principy Bootstrapu?“ na Vzhůru dolů. [vrdl.cz/prirucka/bootstrap-typografie](http://www.vzhurudolu.cz/prirucka/bootstrap-typografie)
 
-Editor, kde dělám jednoduché a přímočaré prototypy na pár řádků kódu. Je to rovnou online, takže se to dobře sdílí nebo posílá do mobilních zařízení.
-
-→ Jak správně navázat na typografické principy Bootstrapu? [vrdl.cz/prirucka/bootstrap-typografie](http://www.vzhurudolu.cz/prirucka/bootstrap-typografie)
-
-Workflow postavené na Bootstrapu má také třeba Adam Kudrna. Ve firmě VisionApps si je doplnili dalšími nástroji, postavenými na míru svých projektů. Jako příklad uvedu [http://www.bootstrap-ui.com/](http://www.bootstrap-ui.com/), jejich rozšíření Bootstrapu, vylepšující vzhed a přidávájící další komponenty.
-
-→ Adam ostatně o HTML prototypování hezky povídal na Frontendisti.cz. [https://youtu.be/A71kFP8I_qY](https://youtu.be/A71kFP8I_qY)
+Workflow postavené na Bootstrapu má také třeba Adam Kudrna. Ve firmě VisionApps si je doplnili dalšími nástroji, postavenými na míru svých projektů. Jako příklad uvedu [bootstrap-ui.com](http://www.bootstrap-ui.com/), jejich rozšíření Bootstrapu, vylepšující vzhed a přidávájící další komponenty. Adam ostatně o HTML prototypování hezky povídal na Frontendisti.cz. [https://youtu.be/A71kFP8I_qY](https://youtu.be/A71kFP8I_qY)
 
 Pojďme si shrnout to nejdůležitější:
 
