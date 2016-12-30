@@ -6,20 +6,15 @@ Ale nebudu vám kazit krásné chvíle s mými texty takto nemístnými odbočka
 
 ## Chartist.js
 
-Z mého pohledu nejzajímavější knihovna pro jednodušší grafy. Protože používá formát SVG, umí kromě přizpůsobení velikosti okna také přizpůsobovat obsah grafů. Obrázek řekne více.
-
+Z mého pohledu nejzajímavější knihovna pro jednodušší grafy. Protože používá formát SVG, umí kromě přizpůsobení velikosti okna také přizpůsobovat obsah grafů. [gionkunz.github.io/chartist-js/](https://gionkunz.github.io/chartist-js/)
 
 ![](dist/images/original/chartist-js.png)
 
 *Obrázek: Chartist.js se umí menším displejům přizpůsobovat nejen velikostně, ale i hustotou dat a typem  zobrazení.*
 
-Více o Chartist.js: [gionkunz.github.io/chartist-js/](https://gionkunz.github.io/chartist-js/).
-
 ## Highcharts
 
-Nějaké responzivní možnosti má i tahle populární grafová knihovna. Spíše se ale jedná o přizpůsobení velikosti, než o adekvátní změny v obsahu a hustotě grafů.
-
-[highcharts.com/demo/responsive](http://www.highcharts.com/demo/responsive)
+Nějaké responzivní možnosti má i tahle populární grafová knihovna. Spíše se ale jedná o přizpůsobení velikosti, než o adekvátní změny v obsahu a hustotě grafů. [highcharts.com/demo/responsive](http://www.highcharts.com/demo/responsive)
 
 ## Chart.js
 

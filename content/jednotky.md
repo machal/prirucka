@@ -43,7 +43,7 @@ h1 { margin-bottom: 1rem } /* = 16px */
 
 Kořenový čverčík je můj kamarád, protože mě nenutí v hlavě přepočítávat své hodnoty. Nehodí se ale pro komponenty, u kterých lze předpokládat, že se jejich velikost bude měnit v závislosti na umístění v layoutu.
 
-Více informací o rem: [vrdl.cz/prirucka/css3-jednotky#rem](http://www.vzhurudolu.cz/prirucka/css3-jednotky#rem)
+Více informací o rem: [vrdl.cz/prirucka/css3-jednotky](http://www.vzhurudolu.cz/prirucka/css3-jednotky#rem)
 
 ## Procenta
 
@@ -78,5 +78,5 @@ Nejčastěji používám pro roztažení plochy layoutu na celou výšku okna:
 }
 ```
 
-Více o `vw`, `vh`, ale i `vmax` a `vmin`: [vrdl.cz/prirucka/css3-jednotky#jednotky-viewportu-vw-vh-vmin-vmax](http://www.vzhurudolu.cz/prirucka/css3-jednotky#jednotky-viewportu-vw-vh-vmin-vmax)
+Více o `vw`, `vh`, ale i `vmax` a `vmin`: [vrdl.cz/prirucka/css3-jednotky](http://www.vzhurudolu.cz/prirucka/css3-jednotky#jednotky-viewportu-vw-vh-vmin-vmax)
 

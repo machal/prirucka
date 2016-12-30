@@ -70,4 +70,4 @@ Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, k
 
 ![](dist/images/original/bootstrap-mrizka.png)
 
-*Obrázek: Rozvržení do mřížky zpopularizoval Boostrap. Zdroj: **[getbootstrap.co*m](http://getbootstrap.com/)
+*Obrázek: Rozvržení do mřížky zpopularizoval Boostrap. [getbootstrap.com](http://getbootstrap.com/)*

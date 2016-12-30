@@ -22,14 +22,17 @@ Velký zmatek ale nastane když použijeme slovo „aplikace“ bez přívlastku
 
 Když v souboji „weby versus aplikace“ oba hráče definujeme pohledem uživatele, musíme se zaměřit hlavně na složitost rozhraní a množství interakcí.
 
-* **Weby jsou interakčně jednoduché**. 
+### Weby jsou interakčně jednoduché 
+
 Prostě obyčejné dokumenty jako je blog VzhůruDolů.cz nebo prezentační stránky vaší firmy. 
-* **Aplikace jsou interakční složité**. 
+
+### Aplikace jsou interakční složité
+
 Vezměme třeba podávání daňového přiznání přes tu (*šílenou*) aplikaci na webu Ministerstva financí, příprava faktury ve Fakturoidu. A víte vy co? Úplně nejlépe si představte extrém – hru Pokémon Go nebo třeba Instagram. To jsou aplikace jako vyšité. Hry jsou vůbec dobrý příklad. I když nemají složité rozhraní, uživatel v nich dělá velké množství netriviálních akcí. Nebo využívají prostředky zařízení tak, že by to weby zvládly jen s obtížemi. Například úprava fotky a přidání filtrů na ni v Instagramu.
 
 V moderním webdesignu ale platí, že skoro každý statický** web obsahuje nějaké aplikační prvky**:
 
-* Když čtete VzhůruDolů.cz, časem se doklikáte k aplikaci pro přípravu kontrolního seznamu před spuštěním webu. A ze statického webu jste se dostali do aplikace. [http://www.vrdl.cz/checklist](http://www.vrdl.cz/checklist)
+* Když čtete VzhůruDolů.cz, časem se doklikáte k aplikaci pro přípravu kontrolního seznamu před spuštěním webu. A ze statického webu jste se dostali do aplikace. [vrdl.cz/checklist](http://www.vrdl.cz/checklist)
 * Typickým hybridem jsou eshopy. Úvodní stránka a všechny produktové stránky tvoří statický web. Košík a nákupní proces už zase typická aplikace. 
 
 ## Ve vyhledávačích bojují hlavně weby
@@ -68,7 +71,7 @@ Navíc –  jak vychází z mnoha výzkumů – uživatelé zase tak moc nativn�
 
 ![Uživatelé tráví 88 % svého času jen v pěti aplikacích](dist/images/original/vdwd/forrester-cas.png)
 
-*Obrázek: Podle Forrester Research uživatelé tráví 88 % svého času jen v pěti aplikacích. **[Zdro*j](http://blogs.forrester.com/nicole_dvorak/16-01-28-data_digest_just_a_handful_of_apps_account_for_nearly_all_app_time_on_smartphones)*.*
+*Obrázek: Podle Forrester Research uživatelé tráví 88 % svého času jen v pěti aplikacích. [vrdl.in/en8rk](http://blogs.forrester.com/nicole_dvorak/16-01-28-data_digest_just_a_handful_of_apps_account_for_nearly_all_app_time_on_smartphones).*
 
 Pět aplikací? To máme email, Facebook, mapy, volání, SMS, fotky… Počkejte, už jich je šest! Bude tady místo pro restauraci z Hrnčířů? Nejspíš ne, přátelé. 
 
@@ -98,11 +101,7 @@ Představuje zajímavý sjednocující přístup mezi webem a nativní aplikací
 
 Hybridní je část snad každé větší aplikace. V ČR jmenujme třeba aplikaci Invia.cz (technicky Cordova&React) nebo apky Bubbleology (Ionic) či FlowReader.
 
-Více informací:
-
-[https://pixelfield.cz/blog/hybridni-mobilni-aplikace-kdy-ano-a-kdy-ne/](https://pixelfield.cz/blog/hybridni-mobilni-aplikace-kdy-ano-a-kdy-ne/)
-
-[http://janvaclavik.cz/jak-vyvijet-mobilni-aplikace/](http://janvaclavik.cz/jak-vyvijet-mobilni-aplikace/)
+Více informací je třeba na blogu firmy Pixelfield, „Hybridní mobilní aplikace – kdy ano a kdy ne?“ [vrdl.in/e7j8h](https://pixelfield.cz/blog/hybridni-mobilni-aplikace-kdy-ano-a-kdy-ne/)
 
 ### Progresivní webové aplikace
 
@@ -114,20 +113,13 @@ Nejnovější možný přístup. Tlačí jej Google, Microsoft souhlasil, Apple 
 
 Moc se mě to líbí, protože to dělá příjemný kompromis mezi webem a nativní aplikací a pro minimálně dvě platformy je půjde vyvíjet stejně univerzálně běžnou webovou stránku. A slovo „progresivní“ definuje chování na nepodporovaných platformách – prostě uvidíte běžnou webovou aplikaci.
 
-V Česku jsem během psaní textu příklad nenašel, ale ve světě je jich už hodně: [https://pwa.rocks/](https://pwa.rocks/)
+V Česku jsem během psaní textu příklad nenašel, ale ve světě je jich už hodně. Na PWA.rock jsou seřazené ty nejlepší. [pwa.rocks/](https://pwa.rocks/)
 
-Více informací:
-
-[https://en.wikipedia.org/wiki/Progressive_web_app](https://en.wikipedia.org/wiki/Progressive_web_app)
-[https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/](https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/)
+Proč vlastně dělat progresivní webovou aplikaci? Jason Grigsby sepsal hezký text „The Business Case for Progressive Web Apps“. [vrdl.in/aklr5](https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/)
 
 ### Univerzální aplikace
 
-Z pohledu šetření času také velmi atraktivní varianta. Například s pomocí React Native můžete stavět nativní aplikace. Ty ale píšete v jazyce a frameworku, kterým můžete vytvořit i webovou aplikaci. 
-
-Více informací:
-
-[https://facebook.github.io/react-native/](https://facebook.github.io/react-native/)
+Z pohledu šetření času také velmi atraktivní varianta. Například s pomocí React Native můžete stavět nativní aplikace. Ty ale píšete ve stejném jazyce a podobném frameworku jakým můžete vytvořit i webovou aplikaci. [facebook.github.io/react-native/](https://facebook.github.io/react-native/)
 
 ## Weby versus aplikace: „záběr“ versus „zápřah“
 
@@ -137,21 +129,14 @@ Pokud jste firma, co má věrné uživatele, aplikací jste zase schopní je ví
 
 ![Reach (web) vs. Rich (native)](dist/images/original/vdwd/lukew-reach-rich.png)
 
-*Obrázek: „Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski [na Twitteru](https://twitter.com/lukew/status/649255909420503041).*
+*Obrázek: „Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na Twitteru. [vrdl.in/8lh4f](https://twitter.com/lukew/status/649255909420503041)*
 
 Podle comScore (The 2015 U.S. Mobile App Report) měl v červnu 2015 americký mobilní Web na 9 milionů unikátních uživatelů, nativní aplikace jen něco přes tři. Jenže v aplikacích strávil průměrný uživatel přes 200 minut času, v prohlížeči něco přes 10 minut.
 
 V angličtině to stručně a pěkně popsal Luke Wroblewski: 
 
-> The Web is for audience reach and native apps are for rich experiences. Both are strategic. Both are valuable.
+> The Web is for audience reach and native apps are for rich experiences. Both are strategic. Both are valuable. [vrdl.in/wsfe8](http://www.lukew.com/ff/entry.asp?1954)
 
 Takže usmíření na závěr. Web potřebujete skoro vždy, aplikaci někdy. Někdy aplikací uděláte věci co s webem nedokážete. V aplikaci můžete uživatele více zapřáhnout. A existuje spoustu variant jak udělat aplikaci a netrápit se extra kódem pro různé platformy. Tím bychom mohli mít tuto odbočku k aplikacím uzavřenou.
 
-Zdroje:
-
-[http://www.lukew.com/ff/entry.asp?1954](http://www.lukew.com/ff/entry.asp?1954)
-
-[https://twitter.com/lukew/status/649255909420503041](https://twitter.com/lukew/status/649255909420503041)
-
-[http://www.comscore.com/Insights/Presentations-and-Whitepapers/2015/The-2015-US-Mobile-App-Report](http://www.comscore.com/Insights/Presentations-and-Whitepapers/2015/The-2015-US-Mobile-App-Report)
 

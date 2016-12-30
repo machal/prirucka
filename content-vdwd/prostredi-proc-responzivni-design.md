@@ -25,9 +25,9 @@ Nespokojte se s tím, že váš web je na velkých rozlišeních špatně čitel
 
 ## Vývoj: tablety klesají, hybridy rostou
 
-Podle odhady agentury Gartner to vypadá, že minimálně do roku 2018 budou klesat prodeje tradičních notebooků a specializovaných desktopových počítačů. Stejně tak ale tabletů. Rostou jen prodeje chytrých telefonů a malých přenosných notebooků. [http://www.gartner.com/newsroom/id/3468817](http://www.gartner.com/newsroom/id/3468817)
+Podle odhady agentury Gartner to vypadá, že minimálně do roku 2018 budou klesat prodeje tradičních notebooků a specializovaných desktopových počítačů. Stejně tak ale tabletů. Rostou jen prodeje chytrých telefonů a malých přenosných notebooků. [vrdl.in/807ya](http://www.gartner.com/newsroom/id/3468817)
 
-Zvyšují se také prodeje hybridních notebooků, které je možné ovládat myší i dotykově. Mezi lety 2014 a 2015 o celých 70 procent. [http://www.gartner.com/newsroom/id/3077817](http://www.gartner.com/newsroom/id/3077817)
+Zvyšují se také prodeje hybridních notebooků, které je možné ovládat myší i dotykově. Mezi lety 2014 a 2015 o celých 70 procent. [vrdl.in/scx2m](http://www.gartner.com/newsroom/id/3077817)
 
 ## CSS pixel 
 
@@ -37,7 +37,7 @@ Mnozí webaři jsou vystrašení ohromnými rozlišení posledních modelů mobi
 
 *Obrázek: poměr mezi hardwarovými pixely udávanými výrobci a CSS pixely, se kterými pracují webový vývojáři u vybraných zařízení.*
 
-Na Vzhůru dolů je pro zájemce více informací. [vrdl.cz/prirucka/css-pixel](http://www.vzhurudolu.cz/prirucka/css-pixel)
+Na Vzhůru dolů je pro zájemce více informací o CSS pixelu. [vrdl.cz/prirucka/css-pixel](http://www.vzhurudolu.cz/prirucka/css-pixel)
 
 Zjednodušeně z toho vyplývá, že dekorativní grafiku bychom teď měli dělat ve vektorovém SVG a u fotografií zajistit pomocí techniky srcset/sizes dost variant pro to, aby si prohlížeč mohl vybrat. Více v kapitole o obrázcích.
 
@@ -60,23 +60,30 @@ K internetu jsou prý už připojené i stromy v Amazonii, takže lednička s we
 
 Cítím krásnou příležitost se historicky ztrapnit a jdu tedy vývoj odhadnout jen podle svého nejlepšího vědomí. Na jakých zařízeních budou lidé používat prohlížeče a zobrazovat naše weby?
 
-* **Chytré hodiny: NE**  
+### Chytré hodiny: NE
+
 Na některých platformách si neoficiální prohlížeče stáhnout můžete. Zkoušel jsem to, ale myslím že to je nepoužitelné a že se to neujme.
-* **Televize: NE**  
+
+### Televize: NE
+
 I pro vaši chytrou telku byste nejspíš nějaký ten prohlížeč sehnat dokázali. Jsem ale skeptický k ovládání na dálku. Budoucnost vidím v gestech a hlasovém ovládání a pro běžné webové stránky to nebude. Pro nativní aplikace dělané webovými technologiemi ale ano.
-* **Ledničky: NE**  
+
+### Ledničky: NE  
+
 Nenapadá mě rozumný případ využití. Doma už navíc máme tablety, proč si připlácet za další displej? Ale lednička s prohlížečem existuje, to ne že ne. [https://www.cnet.com/products/samsung-family-hub-refrigerator/](https://www.cnet.com/products/samsung-family-hub-refrigerator/)
-* **Herní konzole: ANO**  
+
+### Herní konzole: ANO
+
 Myslím konzole do ruky. To jsou jen převlečené chytré telefony.
-* **Auta: ANO**  
-S rozmachem poloautomatického řízení poroste význam velkých dotykových obrazovek. Nejspíš v těch místech, kde teď v autě máte výstupy z ventilátorů. Číst si Blesk.cz v dopravní zácpě? Dává mi to dokonalý smysl. Jen doufejme, že ta auta budou fakt chytrá, aby zvládla řídit, protože nás od palubních displejů už nic neodtrhne. Už odzkoušeno v Tesla Motors. [https://www.tesla.com/support/touchscreen-web-browser](https://www.tesla.com/support/touchscreen-web-browser)
+
+### Auta: ANO
+
+S rozmachem poloautomatického řízení poroste význam velkých dotykových obrazovek. Nejspíš v těch místech, kde teď v autě máte výstupy z ventilátorů. Číst si Blesk.cz v dopravní zácpě? Dává mi to dokonalý smysl. Jen doufejme, že ta auta budou fakt chytrá, aby zvládla řídit, protože nás od palubních displejů už nic neodtrhne. Už odzkoušeno v Tesla Motors. Podívejte se na jejich krásný prohlížeč. [vrdl.in/rlwn0](https://www.tesla.com/support/touchscreen-web-browser)
 
 Na žádnou další velkou displejovou revoluci to tedy, přátelé, v nejbližších letech nevidím. Jedině, že by do toho ještě vstoupily pračky. Ale ne, dělám si legraci. Dotykové panely v autech jsou vlastně větší tablety a přenosné herní konzole zase chytré telefony. 
 
-Responzivní weby a aplikace se spíše naučí lépe využívat znalostí o prostředí prohlížeče, zařízení a uživatele: stavu baterie, světelných podmínek v okolí zařízení, geolokace a polohy zařízení v reálném světě obecně.
+Responzivní weby a aplikace se spíše naučí lépe využívat znalostí o prostředí prohlížeče, zařízení a uživatele: stavu baterie, světelných podmínek v okolí zařízení, geolokace a polohy zařízení v reálném světě obecně. Hezky to rozebírá Una Kravets v článku „Rethinking Responsive Design“. [vrdl.in/ozlu9](https://medium.com/@unakravets/rethinking-responsive-d557ef1745bd#.qz3s11y34)
 
-[https://medium.com/@unakravets/rethinking-responsive-d557ef1745bd#.qz3s11y34](https://medium.com/@unakravets/rethinking-responsive-d557ef1745bd#.qz3s11y34)
+A když už se tak odvážně historicky ztrapňuji, příští velký technologický posun vidím v hlasovém uživatelském rozhraní. Sledujte Google Home. Nebo si na YouTube pusťte předstadstavení Amazon Echo. [https://youtu.be/KkOCeAtKHIc](https://youtu.be/KkOCeAtKHIc)
 
-A když už se tak odvážně historicky ztrapňuji, příští velký technologický posun vidím v hlasovém uživatelském rozhraní. Sledujte Google Home nebo Amazon Echo: [https://youtu.be/KkOCeAtKHIc](https://youtu.be/KkOCeAtKHIc)
-
-Tam už moc příležitostí pro tvůrce webových stránek nebude. Omlouvám se. Ale nebojte, mluvící rozhraní ta obrazovková ani zdaleka nenahradí. Takže nám nic nebrání v pokračování.
+Tam už moc příležitostí pro tvůrce webových stránek nebude. Omlouvám se. Ale nebojte, mluvící rozhraní ta obrazovková ani zdaleka nenahradí. Tuhle knížku ještě neodkládejte, to vážně ne.

@@ -21,9 +21,7 @@ A teď ještě vysvětlení:
 * `max-width: 100%` nastaví šířku obrázku podle šířky rodiče. Neudělá ale ten ošklivý trapas, že by jej roztahoval nad rámec jeho fyzické šířky a tím deformoval jako by to dokázala nezbednější kolegyně mezi vlastnostmi – width.
 * `height: auto` uvést musíme, aby si obrázek zároveň zachoval poměr stran. V opačném případě by se poměrově deformoval.
 
-Vyzkoušet si to můžete na CodePen, kde je to ještě doplněno o ošetření pro Internet Explorer 8, pokud by vám to v něm nefungovalo.
-
-[http://codepen.io/machal/pen/jWebge](http://codepen.io/machal/pen/jWebge)
+Vyzkoušet si to můžete na CodePen, kde je to ještě doplněno o ošetření pro Internet Explorer 8, pokud by vám to v něm nefungovalo. [cdpn.io/e/jWebge](http://codepen.io/machal/pen/jWebge)
 
 
 ## Pružné vkládané elementy: video, mapy a další se zachovaním poměru stran
@@ -61,4 +59,4 @@ A zase si to pojďme vysvětlit:
 * Poměr stran je zde tedy 100 ku 60, takže 5:3. Například pro 16:9 bychom do padding-bottom vložili `56.25%` (9 / 16 * 100).
 * `.rwd-object-in` pak aplikujeme přímo na `<iframe>` nebo jiný vkládaný element. Ten už má jen za úkol se sobecky roztahovat na celou výšku i šířku rodiče.
 
-Máte svrbění si to hned zkoušet?  Neváhejte, Codepen se na vás těší. [http://codepen.io/machal/pen/BdniC](http://codepen.io/machal/pen/BdniC)
+Máte svrbění si to hned zkoušet?  Neváhejte, Codepen se na vás těší. [cdpn.io/e/BdniC](http://codepen.io/machal/pen/BdniC)

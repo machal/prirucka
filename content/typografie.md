@@ -21,7 +21,7 @@ Typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů.
 
 ![](dist/images/original/typografie-18.png)
 
-**3) Nesprávné znaky.** Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky). Není to žádná typografická buzerace. Prostě se to lépe čte. Podívejte se na typografický tahák od Beneš a Michl (PDF). [http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf)
+**3) Nesprávné znaky.** Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky). Není to žádná typografická buzerace. Prostě se to lépe čte. Podívejte se na typografický tahák od Beneš a Michl. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
 
 ## Sazba webového dokumentu
 
@@ -52,9 +52,11 @@ Ani tady nepatřím mezi fanoušky, to říkám hned. Modular Scale je způsob j
 
 *TODO img*
 
-V příkladu půjdeme jiným směrem, ale klidně si to zkuste: [http://www.modularscale.com/](http://www.modularscale.com/)
+V příkladu půjdeme jiným směrem, ale klidně si to zkuste na [modularscale.com/](http://www.modularscale.com/).
 
 ## Tipy a triky pro typografii na webu
+
+*TODO*
 
 * **Patkové pro texty?**  
 Občas se to zpochybňuje, ale myslím, že patkové písmo se středně vysokou střední výškou jako Georgia je spolehlivější volba. Patky jednoznačněji definují jednotlivé znaky a nehrozí zpomalení čtení například záměnou „h" a „n“ jako u moderních bezpatkových písem typu Helvetica nebo Roboto.
@@ -64,14 +66,14 @@ Zase říkám ano. Je to totiž praktičtější. Bezpatková písma jsou užš�
 * small caps: např. akronymy nebo mezinadpisy (nepoužívat zprasené kapitálky)
 * ligatury (fi, st, Th) viz CSS3 Fonts Module
 * fout, foit - web font loader
-* text rendering (viz výše) [http://blog.typekit.com/2011/01/26/css-properties-that-affect-type-rendering/](http://blog.typekit.com/2011/01/26/css-properties-that-affect-type-rendering/)
+* text rendering [vrdl.in/dz5f9](http://blog.typekit.com/2011/01/26/css-properties-that-affect-type-rendering/)
 * zalamování textu - hyphens: auto 
 
 ## Další zdroje o typografii
 
 * **Kniha „On Web Typography“**  
-Skvělá učebnice od Jasona Santa Maria (anglicky): [https://abookapart.com/products/on-web-typography](https://abookapart.com/products/on-web-typography)
+Skvělá učebnice typografie od Jasona Santa Maria. [vrdl.in/76nb2](https://abookapart.com/products/on-web-typography)
 * **Přednáška „Praktická typografie pro webové kodéry“**  
-Od Dana Srba: [https://youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
-* **Online kina „The Elements of Typographic Style Applied to the Web“**  
-Bible od Roberta Bringhursta a spoluautorů (anglicky): [http://webtypography.net/toc/](http://webtypography.net/toc/)
+Dana Srba na jedné z akcí Frontendisti.cz. [youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
+* **Online kniha „The Elements of Typographic Style Applied to the Web“**  
+Bible od Roberta Bringhursta a spoluautorů. [webtypography.net](http://webtypography.net/toc/)

@@ -19,7 +19,7 @@ Přiznávám, že ve svých myšlenkách na Obra z Altonu si pravidlo zjednoduš
 
 *Obrázek: E-shop FotoŠkoda.cz má jeden z těch povedenějších košíků na mobilech. Všechno velké, navigace jednoznačná. Jen prvky v té šedivé ploše s „Pojištěním“ bych ani na pětiapůlpalcovém iPhone palcem netrefil. Na výšku alespoň centimetr, prosím!*
 
-K podobným závěrům došly i velké firmy jako Apple, Microsoft a Google. Hlouběji to rozepisuje Martin Pešout. [http://www.martinpesout.cz/velikosti-dotykovych-oblasti-pod-drobnohledem/](http://www.martinpesout.cz/velikosti-dotykovych-oblasti-pod-drobnohledem/)
+K podobným závěrům došly i velké firmy jako Apple, Microsoft a Google. Hlouběji to rozepisuje Martin Pešout v článku „Velikosti dotykových oblastí pod drobnohledem“. [vrdl.in/7t4b6](http://www.martinpesout.cz/velikosti-dotykovych-oblasti-pod-drobnohledem/)
 
 Za předpokladu, že máte správně nastavenou meta značku pro viewport, to dokonce lze zapsat v CSS tak, aby ve všech dnešních mobilních zařízeních byla plocha přibližně centimetr veliká:
 
@@ -28,15 +28,13 @@ Za předpokladu, že máte správně nastavenou meta značku pro viewport, to do
 .touch { width: 4rem; height: 4rem; }
 ```
 
-Pokud chcete kód vysvětlit, čtěte můj článek na Smashing Magazine:
-
-[https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/#5-make-all-tap-targets-nice-and-small](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/#5-make-all-tap-targets-nice-and-small)
+Pokud chcete kód vysvětlit, rozebírám to ve svém článku na Smashing Magazine. [http://vrdl.in/h8n7i](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/#5-make-all-tap-targets-nice-and-small)
 
 ## Málo kliků a ještě méně (otravných) dotyků
 
 Víte, my webdesignéři, si jako všichni lidé občas věci až moc zjednodušujeme. Díky tomu asi před patnácti lety vzniklo „Pravidlo tří kliků“. Doporučovalo, aby veškeré informace byly na vašem webu dostupné maximálně na tři kliknutí myši. 
 
-„Pravidlo“ bylo naštěstí mnohokrát vyvráceno. Nejlepší shrnutí najdete na [UXGood.com](http://www.uxgood.com/ux-myths-cesky-mytus-2-vsechny-stranky-by-mely-byt-dostupne-na-3-kliky/):
+„Pravidlo“ bylo naštěstí mnohokrát vyvráceno. Nejlepší odmítací argumentaci najdete v textu „Mýtus 2: Všechny stránky by měly být dostupné na 3 kliky“ na UXGood.cz. [vrdl.in/cz1an](http://www.uxgood.com/ux-myths-cesky-mytus-2-vsechny-stranky-by-mely-byt-dostupne-na-3-kliky/)
 
 > Uživatelům nevadí extra kliknutí navíc, pokud o nich nemusí přemýšlet.
 
@@ -62,7 +60,7 @@ Na obrazovce máme málo místa, proto tam nechte jen to opravdu nejdůležitěj
 
 Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaným ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. Vezměme web EquaBank.cz na dalším obrázku. Pojďme si udělat kvíz: co dělá první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Začne mi telefon hned volat?
 
-Odkaz: UX Myth: Icons enhance usability – [http://uxmyths.com/post/715009009/myth-icons-enhance-usability](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
+Více také na „UX Myth: Icons enhance usability“ na UXMyths.com.[vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
 
 ![K bodu 3](dist/images/original/vdwd/triky-ui-8.png)
 
@@ -70,7 +68,7 @@ Odkaz: UX Myth: Icons enhance usability – [http://uxmyths.com/post/715009009/m
 
 S rozbalovacími nabídkami (typu `<select>`) je na mobilech tolik potíží, až o nich Luke Wroblewski napsal, že je máme použít jen jako poslední záchranu. Ani na webu FotoSkoda.cz  se nevyhnuli nasypání ohromného seznamu poboček Uloženky do rozbalovací nabídky. Zkuste si tam najít tu, která je nejblíž vašemu bydlišti. Třeba v Praze, kde samozřejmě všechny ulice znát nemůžete. A představte si počet otravných tapnutí, které takovému rozhraní musíte věnovat. To bolí! Web CSOBpoj.cz to má naopak hezky, rozbalovací nabídky vyměnili za přepínače. Podívejte se na obrázek. 
 
-Odkaz: Luke Wroblewski: Dropdowns Should be the UI of Last Resort:  [http://www.lukew.com/ff/entry.asp?1950](http://www.lukew.com/ff/entry.asp?1950)
+Více také v textu od Luke Wroblewskiho „Dropdowns Should be the UI of Last Resort“. [vrdl.in/gad1e](http://www.lukew.com/ff/entry.asp?1950)
 
 ![K bodu 4](dist/images/original/vdwd/triky-ui-9.png)
 
@@ -78,7 +76,7 @@ Odkaz: Luke Wroblewski: Dropdowns Should be the UI of Last Resort:  [http://www.
 
 Web CSOBpoj.cz uživatele nutí vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to má dobře, otevře čistě numerickou. Podívejte se na obrázek. Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`<input type="tel">`), emailů, URL adres nebo na vyhledávací pole.
 
-Odkaz: Virtual keyboards are awesome. Use them. [http://mobileinputtypes.com/](http://mobileinputtypes.com/)
+Více na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http://mobileinputtypes.com/)
 
 A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízeních uvádějte jako odkazy: [http://vrdl.cz/blog/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
 
@@ -86,9 +84,7 @@ A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízen
 
 ### 5) Používejte krokovače a další alternativní formulářové prvky
 
-Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu určitě stojí. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: Radio Group, Button Input,  Slider, Segmented Control: 
-
-Více opět u Luke Wroblewskiho: [http://www.lukew.com/ff/entry.asp?1950](http://www.lukew.com/ff/entry.asp?1950)
+Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu určitě stojí. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: Radio Group, Button Input,  Slider, Segmented Control.
 
 ### 6) Zamilujte si našeptávače 
 
@@ -117,7 +113,7 @@ Hledejte alternativní způsoby zobrazení:
 * modální okna nebo karusely (jen pozor na správnou implementaci)
 * roztahovací akordeóny (collapse)
 
-Odkaz: Když už jsem zmiňoval Jana Kvasničku, vřele doporučuji jeho text a přednášku „Nejčastější chyby při návrhu mobilního a responzivního webu prakticky“: [http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/](http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/)
+Když už jsem zmiňoval Jana Kvasničku, vřele doporučuji jeho text a přednášku „Nejčastější chyby při návrhu mobilního a responzivního webu prakticky“. [vrdl.in/2tghs](http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/)
 
 ## Opusťte desktopové zlozvyky
 
@@ -129,7 +125,7 @@ Je zřejmé, že závislost zobrazení důležitého obsahu na najetí myši pat
 
 ### 2) Karusely jsou fakt složitý dorozumívací prostředek
 
-Karusel je pro designéra i uživatele docela výzva. Z mnoha studií zpochybňujících jejich efektivitu vyberme tu od Erika Runyona. Ten změřil, že ze všech kliknutí na jeho karusel patřilo téměř 90 % jen prvnímu obrázku. Další se pohybovaly mezi dvěma a třemi procenty. [https://erikrunyon.com/2013/07/carousel-interaction-stats/](https://erikrunyon.com/2013/07/carousel-interaction-stats/)
+Karusel je pro designéra i uživatele docela výzva. Z mnoha studií zpochybňujících jejich efektivitu vyberme tu od Erika Runyona. Ten změřil, že ze všech kliknutí na jeho karusel patřilo téměř 90 % jen prvnímu obrázku. Další se pohybovaly mezi dvěma a třemi procenty. [vrdl.in/50zuo](https://erikrunyon.com/2013/07/carousel-interaction-stats/)
 
 Navrhnout dobrý karusel je prostě složité – proto po něm osobně sáhnu až když jsem vyčerpal jiné možnosti.
 
@@ -195,17 +191,17 @@ Jak už jsem zmiňoval dříve, dnešní weby se zobrazují v oknech mezi 240 a 
 
 Uživatelé si zvětšují výřezy obrazovky z mnoha důvodů: kvůli špatnému kontrastu na sluníčku, kvůli snadnějšímu výběru textu nebo se prostě jen chtějí podívat na detail fotografie na stránce. Snažte se jim prosím zvětšování nezakázat. Uveďte správnou meta značku pro viewport.
 
-Odkaz: WCAG (doporučení pro přístupné weby) trvají na možnost vše alespoň dvakrát zvětšit. [https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale)
+WCAG (doporučení pro přístupné weby) trvají na možnost vše alespoň dvakrát zvětšit. [vrdl.in/cbe5f](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale)
 
 ### 5) Neošetřené načítání webfontů
 
-Taky vás štve problikávání obsahu stránky při jejím načítání? Použití webfontů je v pořádku, ale je nutné je mít ze strany vývojáře pod kontrolou. Různé prohlížeče totiž načítají webfonty různě. Je potřeba si tedy vybrat způsob načítání, který vyhovuje konkrétnímu webu. Já pro kontrolu nad načítáním využívám knihovnu FontFaceObserver. [https://github.com/bramstein/fontfaceobserver](https://github.com/bramstein/fontfaceobserver)
+Taky vás štve problikávání obsahu stránky při jejím načítání? Použití webfontů je v pořádku, ale je nutné je mít ze strany vývojáře pod kontrolou. Různé prohlížeče totiž načítají webfonty různě. Je potřeba si tedy vybrat způsob načítání, který vyhovuje konkrétnímu webu. Já pro kontrolu nad načítáním využívám knihovnu FontFaceObserver. [fontfaceobserver.com](https://github.com/bramstein/fontfaceobserver)
 
 ### 6) Vkládání zbytečných sdílecích tlačítek
 
 „Lajkovací“ nebo sdílecí tlačítka Facebooku a dalších sítí jsou na webech velmi často k ničemu. Komplikují uživatelská rozhraní, zpomalují načítání. Funkce sdílení je navíc součástí všech mobilních operačních systémů. Zvažte, jestli vám umístění tlačítek stojí za to. Případně zvolte alternativní, úspornější řešení.
 
-Například knihovnu Social Likes. [http://social-likes.js.org/](http://social-likes.js.org/)
+Například knihovnu Social Likes. [social-likes.js.org/](http://social-likes.js.org)
 
 ### 7) Schovávání obsahu za fixně pozicované elementy
 
@@ -213,6 +209,6 @@ Tady mám poněkud radikální postoj. Elementy, které při rolování stránky
 
 Týká se všech fixně umístěných navigačních lišt, překryvných vrstev s reklamou na newslettery nebo mobilní aplikace a nebo v poslední době populární tlačítka pro otevření chatu.
 
-To by mohlo stačit. Hlubší argumentaci ke zde zmíněným chybám najdete na mém článku na Smashing Magazine: [https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/)
+To by mohlo stačit. Hlubší argumentaci ke zde zmíněným chybám najdete ve dvoudílné hubící sérii „Jak zničit mobilní uživatele?“ na Vzhůru dolů. [vrdl.in/lq5b4](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1)
 
-Podívejte se také na obsáhlý materiál Honzy Kvasničky na téma častých chyb v mobilních rozhraních: [http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/](http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/)
+

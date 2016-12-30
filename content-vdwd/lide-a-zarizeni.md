@@ -23,7 +23,7 @@ Ani skupina uživatelů klasických počítačů,  zejména notebooků, není ne
 Není. 
 
 * Bylo by to totiž děsně **neefektivní**. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit.
-* Z principu je navíc téměř **nemožné detekovat dotyková zařízení**. Kdyby se lidé dělili na *dotykující* a *myšujíc*í, možné by to jakž takž bylo. Jenže lidstvo je děsně zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
+* Z principu je navíc téměř **nemožné detekovat dotyková zařízení**. Kdyby se lidé dělili na *dotykující* a *myšující*, možné by to jakž takž bylo. Jenže lidstvo je děsně zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
 
 Výjimečně nastává situace, kdy se nějaká detekce hodí. Třeba když chcete pro desktopové rozhraní otevřít prvek po najetí myši. Pak použijte detekční knihovnu Modernizr, která *myšovitá* umí najít. Obecně se tomu ale snažte vyhnout, protože i tato detekce je z mnoha důvodů nespolehlivá. 
 
@@ -38,7 +38,7 @@ No tak dobře, teď vážně. Opravdu neexistuje nic jako oddělené tábory mob
 * 39 % lidí vyhledává jen na mobilech, 28 % na různých zařízeních, 32 % jen na počítači;
 * 27 % využívá jen mobil a jen 14 % pouze desktop.
 
-Google to měřil na svých amerických uživatelích mezi 18 a 49 lety v prvním čtvrtletí 2016. [https://www.thinkwithgoogle.com/articles/device-use-marketer-tips.html](https://www.thinkwithgoogle.com/articles/device-use-marketer-tips.html)
+Google to měřil na svých amerických uživatelích mezi 18 a 49 lety v prvním čtvrtletí 2016. [vrdl.in/gdum](https://www.thinkwithgoogle.com/articles/device-use-marketer-tips.html)
 
 Není samozřejmě bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 minut denně u tabletů, 120 u počítače a celých 170 minut pohledem do mobilu. Když držíme mobily, nechodíme snad ani na záchod! Nebo si je prostě na záchod bereme, že ano.
 
@@ -63,7 +63,7 @@ U jednorukého držení to asi smysl dává, ale palce to vyhrály i u kolébkov
 
 Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovládání palců, přátelé. 
 
-Tady je zdrojový výzkum Steven Hoobera: [http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php](http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php#top)
+Zdrojový výzkum Steven Hoobera How Do Users Really Hold Mobile Devices najdete na UXMatters.com. [vrdl.in/m326o](http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php#top)
 
 Prodávají se stále větší chytré telefony, takže bychom při návrhu rozhraní měli myslet na to, že palcem je u nich dosažitelná daleko menší část obrazovky.
 
@@ -73,13 +73,11 @@ Prodávají se stále větší chytré telefony, takže bychom při návrhu rozh
 
 Čím více dole a čím více veprostřed aktivní prvek je, tím lépe. Spodní hrana prohlížeče ale pro umístění důležitých prvků dobré místo nepředstavuje. K tomu se ještě vrátím. Na mobilech tedy důležité prvky jako primární výzvy k akci umísťujte alespoň co nejvíce doprostřed. 
 
-Na menších mobilech tedy dělají palce kolem 75 % všech interakcí. Na velkých mobilech kolem 60 % jak uvádí Josh Clark ve vynikajícím článku na A List Apart, ze kterého budu dále vycházet.
-
-[http://alistapart.com/article/how-we-hold-our-gadgets](http://alistapart.com/article/how-we-hold-our-gadgets)
+Na menších mobilech tedy dělají palce kolem 75 % všech interakcí. Na velkých mobilech kolem 60 %. Uvádí to Josh Clark ve vynikajícím článku How We Hold Our Gadgets“ na A List Apart, ze kterého budu dále vycházet. [vrdl.in/hold](http://alistapart.com/article/how-we-hold-our-gadgets)
 
 To bychom měli mobily. Jak je to u větších zařízení?
 
-U tabletů značně záleží na jejich velikosti. Josh Clark ve výše odkazovaném článku zmiňuje, že ty menší sedmi- a osmi-palcové drží většina uživatelů ještě v ruce a ovládá palci. Větší tablety si zase pokládáme na stůl nebo do klína. 
+U tabletů značně záleží na jejich velikosti. Josh Clark ve výše odkazovaném článku zmiňuje, že ty menší sedmi- a osmipalcové drží většina uživatelů ještě v ruce a ovládá palci. Větší tablety si zase pokládáme na stůl nebo do klína. 
 
 Na časté otázky jestli lidé tablety častěji používají na výšku nebo na šířku odpovím tak, že to vychází na remízu. Větší tablety používá mírná většina lidí na šířku. Menší na výšku, protože se nám pak lépe drží v ruce.
 

@@ -8,7 +8,7 @@ Původní definice responzivního designu pochází z roku 2010, hlavy a pera Et
 2. Doplňte to pružnými obrázky.
 3. Přidejte hranice změn layoutu (Media Queries). 
 
-Je to myslím nejsdílenější článek v historii webdesignu, ale když už vlastníte tuhle knihu, vlastně ho ani nepotřebujete. Pokud jste ale dosud nepřispěli ke krásným statistikám jeho čtenosti, udělejte prosím pěkně panu Marcottemu radost. On si to zaslouží, protože to vymyslel a napsal tak skvěle, že si dnešní webdesign bez „responzivnosti“ už ani neumíme představit. [http://alistapart.com/article/responsive-web-design](http://alistapart.com/article/responsive-web-design)
+Je to myslím nejsdílenější článek v historii webdesignu, ale když už vlastníte tuhle knihu, vlastně ho ani nepotřebujete. Pokud jste ale dosud nepřispěli ke krásným statistikám jeho čtenosti, udělejte prosím pěkně panu Marcottemu radost. On si to zaslouží, protože to vymyslel a napsal tak skvěle, že si dnešní webdesign bez „responzivnosti“ už ani neumíme představit. [alistapart.com/article/responsive-web-design](http://alistapart.com/article/responsive-web-design)
 
 ![](dist/images/original/vdwd/principy-rwd.png)
 

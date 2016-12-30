@@ -43,7 +43,7 @@ Hezky to popsal Otto Bohuš:
 
 > Grafik navrhuje tiskoviny, sází brožury, maluje ikonky… Prostě dělá grafiku. To je v naprostém pořádku. (Práci spousty grafiků jen tiše obdivuji.) Vy ale hledáte webového designéra.
 
-Více v jeho článku „Co by měl každý vědět o tom, jak se dělá web – 2. díl“. [http://ottocopy.cz/jak-udelat-web](http://ottocopy.cz/jak-udelat-web)
+Více v jeho článku „Co by měl každý vědět o tom, jak se dělá web – 2. díl“. [ottocopy.cz/jak-udelat-web](http://ottocopy.cz/jak-udelat-web)
 
 Prostě každý dobrý webový grafik je zároveň designér, protože nedělá „hezké věci“, ale snaží se vyřešit nějaký klientův problém. Musím to tady uvést, protože oddělení grafiky od designu, které tady dělám má za cíl hlavně ukázat mapu problémů, které při návrhu rozhraní řešíme.
 

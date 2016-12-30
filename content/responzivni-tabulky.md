@@ -20,7 +20,7 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 
 *Obrázek: Obsah tabulky se na malém displeji posouvá do stran.*
 
-Vyzkoušejte si zmenšit okno tady: [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0).
+Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
 Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také tabulky vkládané přes redakční systémy, u kterých nevíte jak složité budou. A nebo když prostě chcete ušetřit čas.
 
@@ -30,11 +30,11 @@ Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně m
 
 ![](dist/images/original/tabulky_2.png)
 
-*Obrázek: Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. Zdroj: [github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)*
+*Obrázek: Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
 
-Vyzkoušejte si tady: [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
+Vyzkoušejte si naživo v Codepenu. [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
 
-S propracovanějším řešením využívající flexbox a další moderní CSS vlastnosti přišel David Bushell. [http://dbushell.com/2016/03/04/css-only-responsive-tables/](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
+S propracovanějším řešením využívající flexbox a další moderní CSS vlastnosti přišel David Bushell v textu „CSS only Responsive Tables“. [vrdl.in/xlpbn](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
 
 Fixně-posuvné řešení je pak možné doplnit detekcí gesta švihnutí (swipe) pro snadnější a přesnější posouvání sloupečků. Plugin Tablesaw, který doporučuji dále v textu, to umí.
 
@@ -48,7 +48,7 @@ Datagrid není prosím žádná vzácnost. Každá webová aplikace pro interní
 
 ![](dist/images/original/tabulky_3.png)
 
-*Obrázek: Stohování tabulky na menších displejích. Zdroj: [github.com/filamentgroup/tablesa*w](https://github.com/filamentgroup/tablesaw)*
+*Obrázek: Stohování tabulky na menších displejích. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
 
 V nejjednodušší možné CSS implementaci prostě tabulce na menších displejích zrušíme „tabulkovost“:
 
@@ -60,7 +60,7 @@ V nejjednodušší možné CSS implementaci prostě tabulce na menších displej
 }
 ```
 
-Tady je možné si zkusit si to i s dalším stylováním: [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0).
+Na Codepenu je možné si zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0)
 
 I tak ale čisté CSS řešení nebude dokonalé. Pro tento typ práce s tabulkami budete potřebovat kousek Javascriptu. 
 
@@ -72,7 +72,7 @@ Stohování se hodí i pro tabulky se složitějším obsahem v buňkách (odsta
 
 ![](dist/images/original/tabulky_4.png)
 
-Vyzkoušejte si to na Codepenu: [cdpn.io/e/rjmyx](http://s.codepen.io/JasonAGross/debug/rjmyx).
+Vyzkoušejte si to na Codepenu. [cdpn.io/e/rjmyx](http://s.codepen.io/JasonAGross/debug/rjmyx)
 
 Nasazení doporučuji u tabulek, které mají velký počet řádků, ale málo sloupců.
 
@@ -82,7 +82,7 @@ Tak. Řekněme, že nejčastější scénáře jsme vyčerpali. Pojďme se ale p
 
 Na mobilech můžete samozřejmě tabulku hodně zjednodušit a přiložit odkaz na plnou verzi. 
 
-Za fajn nápad také považuji vložit do stránky namísto tabulky jen jakýsi zástupný symbol. Vidíte to na obrázku a zkoumat můžete v této ukázce. [jsbin.com/apane6/14](http://output.jsbin.com/apane6/14)
+Za fajn nápad také považuji vložit do stránky namísto tabulky jen jakýsi zástupný symbol. Vidíte to na obrázku a zkoumat můžete v přiložené ukázce. [jsbin.com/apane6/14](http://output.jsbin.com/apane6/14)
 
 ![](dist/images/original/tabulky_5.png)
 

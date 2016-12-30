@@ -103,6 +103,6 @@ Představme si, že bychom měli Media Queries, které se nedotazují na šířk
 
 Kód by se aplikoval jen v rodičovských elementech, které mají šířku alespoň dvacet čtverčíků.
 
-Specifikace pro Container Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi kolem nich. [http://alistapart.com/article/container-queries-once-more-unto-the-breach](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
+Specifikace pro Container Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi kolem nich. Pěkný je článek „Container Queries: Once More Unto the Breach“ na A List Apart. [http://vrdl.in/fivt1](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
 
 Pro vás, nedočkavé, přikládám i odkaz na jednu z javascriptových implementací, EQ.js. Jen pozor, bude to výpočetně náročnější. [github.com/Snugug/eq.js](https://github.com/Snugug/eq.js)

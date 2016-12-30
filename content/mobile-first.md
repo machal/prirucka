@@ -6,15 +6,15 @@ Kromě reflexe nástupu mobilů na trh má Mobile First  ještě jednu – dalek
 
 Autor myšlenky, Luke Wroblewski, ji nadefinoval asi takto:
 
-> Designéři, navrhujte nejprve pro mobily. Protože se prudce šíří mezi uživateli, díky svými omezením nás nutí zaměřit pozornost na to nejdůležitější a rozšiřují naše možnosti.
+„Designéři, navrhujte nejprve pro mobily. Protože se prudce šíří mezi uživateli, díky svými omezením nás nutí zaměřit pozornost na to nejdůležitější a rozšiřují naše možnosti.“
 
-Více v článku „Mobile First“ od Luke Wroblewskiho: [http://www.lukew.com/ff/entry.asp?933](http://www.lukew.com/ff/entry.asp?933)
+Parafrázuji, necituji. Plné znění hledejte ve Wroblewskiho článku „Mobile First“. [vrdl.in/4slev](http://www.lukew.com/ff/entry.asp?933)
 
 ## Mobily mají větší budoucnost než desktop
 
 Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé příručních přístrojů budou jednou tvořit většinu návštěvnosti pravděpodobně i na vašem webu. 
 
-Pro ilustraci ještě jedno číslo – 92 % aktivních uživatelů nyní na Facebook.com přistupuje přes mobilní zařízení. [https://twitter.com/lukew/status/758433206882361345](https://twitter.com/lukew/status/758433206882361345)
+Pro ilustraci ještě jedno číslo – 92 % aktivních uživatelů nyní na Facebook.com přistupuje přes mobilní zařízení. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)
 
 Proto „nejdříve mobily“.
 

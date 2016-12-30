@@ -1,6 +1,6 @@
 # Responzivní SVG
 
-Vektorové obrázky jsou fajn. Ještě než začneme, můžete si dát rychlý předkrm o SVG ([vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)), nebo se inspirovat příklady použití ([vrdl.cz/prirucka/svg-inspirace](http://www.vzhurudolu.cz/prirucka/svg-inspirace)).
+Vektorové obrázky jsou fajn. Asi tady není potřeba zdržovat se možnostmi a důvody pro SVG, ty si případně nastudujte na Vzhůru dolů. ([vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)).
 
 Používání SVG namísto bitmapových obrázků hájím kam vkročím, ale na jednu věc jsou bitmapy zlaté – když dojde na přizpůsobování šířce kontejneru a zachování poměru stran. To co jsme tak snadno zajistili v kapitole o elastických obrázcích, u SVG budeme dělat dost složitě. 
 
@@ -16,7 +16,7 @@ Bitmapy mají jasně definovanou výšku, šířku i poměr stran. Je proto velm
 
 Mnoho kodérů se domnívá, že u značky `<svg>` nastaví parametry `width`, `height` a SVG začne poslouchat. Je to tak ale jen v některých prohlížečích a některých typech vložení do stránky. Celá pravda ovšem je, že nastavením výšky a šířky si mnoho věcí zkomplikujeme. 
 
-Vysvětlení je složité, takže vás odkážu na článek, který to rozebírá lépe, než bych dokázal. Než ale začnete číst, ujistěte se, že doma máte dostatečnou zásobu brufenů. [https://css-tricks.com/scale-svg/#article-header-id-2](https://css-tricks.com/scale-svg/#article-header-id-2)
+Vysvětlení je složité, takže vás odkážu na článek, který to rozebírá lépe, než bych dokázal. Než ale začnete číst, ujistěte se, že doma máte dostatečnou zásobu brufenů. [css-tricks.com/scale-svg](https://css-tricks.com/scale-svg/#article-header-id-2)
 
 Použijte parametr viewbox:
 
@@ -55,7 +55,7 @@ Třídu `.svg-container` pak kvůli Explorerům nastylujeme stejně jako jsme to
 }
 ```
 
-Podívejte na výsledný Codepen: [cdpn.io/e/oYOZwz](http://codepen.io/machal/pen/oYOZwz).
+Podívejte na výsledný Codepen. [cdpn.io/e/oYOZwz](http://codepen.io/machal/pen/oYOZwz)
 
 ## Elastické SVG externě pomocí <img>
 
@@ -73,7 +73,7 @@ img {
 }
 ```
 
-Codepen s příklad se na vás těší i tady: [cdpn.io/e/VmNbPx](http://codepen.io/machal/pen/VmNbPx).
+Codepen s příklad se na vás těší i tady. [cdpn.io/e/VmNbPx](http://codepen.io/machal/pen/VmNbPx)
 
 ## Elastické SVG externě v CSS
 
@@ -97,11 +97,9 @@ U většiny vektorových obrázků pak chceme definovat poměr stran, který si 
 }
 ```
 
-Teď už není žádné speciální nastavení pro Internet Explorer. Hurá! Codepen: [cdpn.io/e/NbmgPr](http://codepen.io/machal/pen/NbmgPr).
+Teď už není žádné speciální nastavení pro Internet Explorer. Hurá! [cdpn.io/e/NbmgPr](http://codepen.io/machal/pen/NbmgPr)
 
-Tím bychom mohli zajištění pružnosti SVG v responzivním layoutu uzavřít pro nejčastěji používané způsoby vložení. Formát je ale možné do stránky vkládat i dalšími, méně používanými způsoby. Jak zajistit pružnost při vložení do `<object>`, `<iframe>`? Poradí vám vrchní odbornice na SVG, Sara Soueidan:
-
-[https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/](https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/).
+Tím bychom mohli zajištění pružnosti SVG v responzivním layoutu uzavřít pro nejčastěji používané způsoby vložení. Formát je ale možné do stránky vkládat i dalšími, méně používanými způsoby. Jak zajistit pružnost při vložení do `<object>`, `<iframe>`? Poradí vám vrchní odbornice na SVG, Sara Soueidan, v článku „Making SVGs Responsive with CSS“. [vrdl.in/yixth](https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/)
 
 Ještě vydržte. To nejlepší teprve přijde. Slíbil jsem přeci povídání o *responzivních* SVG, ale zatím jsme se bavili jen o těch *elastických*. Přizpůsobujících se šířce rozvržení stránky. Kromě pružného layoutu ale responzivitu definují ještě změny stylování v určitých velikostech obrazovky. Prostě Media Queries.
 
@@ -127,5 +125,5 @@ Media Queries prostě napíšeme dovnitř kódu vektorového dokumentu:
 </svg>
 ```
 
-Tady je, prosím, plnohodnotná ukázka: [cdpn.io/e/vyMRPL](http://codepen.io/machal/pen/vyMRPL?editors=1100#0).
+Tady je, prosím, plnohodnotná ukázka. [cdpn.io/e/vyMRPL](http://codepen.io/machal/pen/vyMRPL?editors=1100#0)
 
