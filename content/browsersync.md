@@ -34,7 +34,7 @@ Upravíte CSS nebo HTML soubor a změny se vám hned projeví v prohlížeči be
 
 Pokud živý náhled neznáte nebo nevěříte, že to nějak zásadně pomáhá, opravdu (ale *opravdu*) si to zkuste.
 
-V našem příkladu stačí  upravit soubor `app/index.html` nebo `app/css/main.css`. Změny se hned projeví v prohlížeči. Obnovení stránky netřeba. Úplně nejlepší je nastavit si editor, aby ukládal změny v otevřených souborech hned po přepnutí do jiné aplikace (takto třeba u Sublime Text: [superuser.com/a/374668](http://superuser.com/a/374668)). Pak stačí přepínat mezi editorem a prohlížečem. Šetří to hrozně energie, fakt že jo. 
+V našem příkladu stačí  upravit soubor `app/index.html` nebo `app/css/main.css`. Změny se hned projeví v prohlížeči. Obnovení stránky netřeba. Úplně nejlepší je nastavit si editor, aby ukládal změny v otevřených souborech hned po přepnutí do jiné aplikace. Pak stačí přepínat mezi editorem a prohlížečem. Šetří to hrozně energie, fakt že jo. 
 
 ## Synchronizace interakcí při testování webu
 
@@ -60,7 +60,7 @@ Co je to za adresy?
 
 Vezměte mobil připojený do stejné wifi a vyťukejte do tamního prohlížeče `External` adresu.  Teď když budete provádět uživatelské interakce v jednom zařízení, druhé bude dělat totéž za vás.  Pěkné, ne? Browsersync to umí s klikáním, rolováním stránky nebo taky vyplňováním formulářů. 
 
-Proč vám o takové *blbině* vyprávím? Protože šetří děsně energie při [testování responzivních webů](jak-testovat-responzivni-weby.md) na reálných zařízeních.
+Proč vám o takové *blbině* vyprávím? Protože šetří děsně energie při testování responzivních webů na reálných zařízeních. [vrdl.cz/prirucka/jak-testovat-responzivni-weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> ~ Obě vlastnosti rozebrány ve videu. Podívejte se.
@@ -79,9 +79,7 @@ Zkoušíte příklad a máte připojený mobil?
 5. Mezi „Targets“ zvolte ten první. Pravděpodobně to bude mobil, který jste před chvíli připojili.
 6. Teď už stačí kliknout třeba na „Elements“ nebo „Console“, protože jste v prostředí podobném DevTools vašeho prohlížeče.  
 
-Weinre (vyslovujte jako *„winery“*) není tak pokročilá aplikace jako v prohlížečích vestavěné vývojářské nástroje. Máte ovšem k dispozici DOM, CSS a JS konzoli. To je pro základní ladění dost dobré. Ohromná výhoda Weinre je v tom, že můžete ladit napříč platformami. Třeba se z desktopového Firefoxu připojit do mobilního Safari. 
-
-Homepage Weinre má trošku krkolomnější adresu: [people.apache.org/~pmuellr/weinre/docs/latest/Home.html](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html)
+Weinre (vyslovujte jako *„winery“*) není tak pokročilá aplikace jako v prohlížečích vestavěné vývojářské nástroje. Máte ovšem k dispozici DOM, CSS a JS konzoli. To je pro základní ladění dost dobré. Ohromná výhoda Weinre je v tom, že můžete ladit napříč platformami. Třeba se z desktopového Firefoxu připojit do mobilního Safari. Homepage Winre: [vrdl.in/abmfz](https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html).
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=3g-AaEkc47M">Browsersync: ladění mobilních prohlížečů </a> ~ Vzdálené ladění pomocí Weinre a dalších funkcí Browsersync.
@@ -140,15 +138,11 @@ Viz také [browsersync.io/docs/grunt#grunt-server](https://www.browsersync.io/do
 
 ### Živý náhled HTML
 
-Pokud chcete vkládat změny v HTML souboru do všech připojených zařízení, použijte plugin HTML Injector. V demíčku ukazovaném v tomto textu je to už nastavené.
-
-Viz také [github.com/shakyShane/html-injector](https://github.com/shakyShane/html-injector).
+Pokud chcete vkládat změny v HTML souboru do všech připojených zařízení, použijte plugin HTML Injector. V demíčku ukazovaném v tomto textu je to už nastavené. Viz také [github.com/shakyShane/html-injector](https://github.com/shakyShane/html-injector).
 
 ### Příklady použití
 
-Recipes jsou sada funkčních příkladů s předpřipravenými obvyklými nastaveními Browsersync. Pěkný zdroj inspirace i pro pokročilejší uživatele.
-
-Viz také [github.com/Browsersync/recipes](https://github.com/Browsersync/recipes).
+Recipes jsou sada funkčních příkladů s předpřipravenými obvyklými nastaveními Browsersync. Pěkný zdroj inspirace i pro pokročilejší uživatele. Viz také [github.com/Browsersync/recipes](https://github.com/Browsersync/recipes).
 
 ### Přiškrcení rychlosti připojení
 
@@ -156,9 +150,7 @@ Pokud nepoužíváte Chrome, kde je možnost zpomalení rychlosti připojení ve
 
 ### Rychlé ladění CSS layoutu
 
-Zobrazení obrysů prvků kvůli testování CSS layoutu můžete nastavit na `http://localhost:3001/remote-debug`. Layout je také možné testovat oproti  mřížce vykreslené na pozadí. Používá technologii Pesticide.
-
-Viz také [Pesticide.io](http://pesticide.io/).
+Zobrazení obrysů prvků kvůli testování CSS layoutu můžete nastavit na `http://localhost:3001/remote-debug`. Layout je také možné testovat oproti  mřížce vykreslené na pozadí. Používá technologii Pesticide. [Pesticide.io](http://pesticide.io/).
 
 To by mohlo být všechno. Browsersync vám tedy pomůže zefektivnit práci s frontend technologiemi a testování na mobilních zařízeních. Patří k mým nejoblíbenějším nástrojům. Zkuste ho.
 
