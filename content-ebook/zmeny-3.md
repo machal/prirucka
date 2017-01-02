@@ -1,6 +1,6 @@
 # Mnoho prohlížečů, kodérova smrt
 
-Příchodem Chrome na desktopu začaly nové Browser Wars a zároveň se první bitva války prohlížečů spustila na mobilních zařízeních. Ano, z tohoto pohledu už kodéři zažívali lepší časy.
+Příchodem Chrome na desktopu začaly nové „Browser Wars“ a zároveň se první bitva války prohlížečů spustila na mobilních zařízeních. Ano, z tohoto pohledu už kodéři zažívali lepší časy.
 
 Pojďme si jen tak z legrace všechny v Česku relevantní prohlížeče vyjmenovat:
 

@@ -4,15 +4,23 @@ Jeden z největších omylů webdesignu? Photoshop jako hlavní tvůrčí nástr
 
 Jak to souvisí s CSS3? Asi jako Bolek s Lolkem. Velmi.
 
+## Od návrhu ke kódu daleko rychleji
+
 Dříve se veškerá webová grafika, která nešla vyjádřit v CSS, exportovala z Photoshopu v podobě obrázků. CSS3 přineslo možnosti, jak kódem popsat nejen statickou grafiku, ale také jednodušší tvorbu interakcí.
 
 A pokud jde něco vyjádřit kódem, lze snadno propojit vizuální tvorbu s praktickým použitím v prohlížečích. Máme tu nadějné pokusy v podobě editorů jako Sketch, Adobe Edge Reflow nebo WebFlow. Ty buď rovnou exportují kód či kousky kódu, nebo jsou z pohledu workflow lépe uzpůsobeny potřebám dnešního webdesignu – například podporou SVG grafiky nebo responzivního návrhu webů.
 
 Kodérům zase ohromně šetří práci nástroje jako Brackets nebo Avocode, které problematiku řeší z jejich pohledu a část kódu ze zdrojové grafiky vygenerují automaticky.
 
+## Komponentový webdesign
+
 Další vliv mají UI knihovny typu Bootstrap. Díky nim se programátoři pro tvorbu uživatelského rozhraní interních webových aplikací obejdou bez grafika, a dokonce bez vývojáře rozhraní.
 
-Týmy, jež pracují na vlastním webovém produktu, zase zjistily, že nejefektivněji půjdou dopředu nikoliv kreslením dalších a dalších obrazovek ve Photoshopu, ale vytvořením vlastního Bootstrapu. Rozhraní webů a hlavně webových aplikací je možné pojmout jako skládanku samostatných komponent. Znovupoužitelných lego kostek. V ČR mezi průkopníky tohoto přístupu patří GoodData nebo LMC se svým Jobs UI: [jobs.cz/ui](http://www.jobs.cz/ui/).
+Týmy, jež pracují na vlastním webovém produktu, zase zjistily, že nejefektivněji půjdou dopředu nikoliv kreslením dalších a dalších obrazovek ve Photoshopu, ale vytvořením vlastního Bootstrapu. Rozhraní webů a hlavně webových aplikací je možné pojmout jako skládanku samostatných komponent. Znovupoužitelných lego kostek. 
+
+Jednou z nejnadějnějších metodik komponentového přístupu k designu webového uživatelského rozhraní je atomický design a nástroj Pattern Lab. [vrdl.cz/prirucka/pattern-lab](http://www.vzhurudolu.cz/prirucka/pattern-lab)
+
+V ČR mezi průkopníky tohoto přístupu patří například LMC se svým Jobs UI. [jobs.cz/ui](http://www.jobs.cz/ui/)
 
 Jako frontend designér mám zase zajímavé zkušenosti s návrhem responzivních webů rovnou v prohlížeči. Kombinace designu v HTML a CSS s grafickým editorem by ovšem vydala na samostatnou knížku. Začít ale můžete v tomto článku: [vrdl.cz/blog/38-design-v-prohlizeci](http://www.vzhurudolu.cz/blog/38-design-v-prohlizeci).
 
