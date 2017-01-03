@@ -37,9 +37,7 @@ V praxi
 
 Takto můžete animovat téměř libovolnou CSS vlastnost včetně pozicování nebo [transformací](css3-transforms.md).
 
-S přechody jde vytvářet spousty legrace typu animace rámečku: [http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek](http://kratce.vzhurudolu.cz/post/18092366948/css3-rolecek).
-
-…nebo docela divokých hover stavů nad boxy: [tympanus.net/Tutorials/OriginalHoverEffects](http://tympanus.net/Tutorials/OriginalHoverEffects/).
+Včetně docela divokých hover stavů nad boxy. [tympanus.net/Tutorials/OriginalHoverEffects](http://tympanus.net/Tutorials/OriginalHoverEffects/)
 
 Plnohodnotný animační nástroj to ovšem není. Pokud chcete mít průběh animace zcela pod kontrolou, podívejte se na [CSS3 animace](css3-animations.md).
 
@@ -78,13 +76,13 @@ Z vlastností, které v elementu měníte, si můžete vybrat jen některé. Ost
 }
 ```
 
-Je dobré vědět, že animované přechody nelze aplikovat úplně na všechny CSS vlastnosti. Třeba vlastnost `display` byste animovali marně. Tady je seznam animovatelných: [w3.org/TR/css3-transitions/#animatable-properties](http://www.w3.org/TR/css3-transitions/#animatable-properties)
+Je dobré vědět, že animované přechody nelze aplikovat úplně na všechny CSS vlastnosti. Třeba vlastnost `display` byste animovali marně. Tady je seznam animovatelných na W3.org. [vrdl.in/hgx4v](http://www.w3.org/TR/css3-transitions/#animatable-properties)
 
 ### Funkce průběhu
 
-Samostatně jako `transition-timing-function: ease`. Vybrat si můžete z přednastavených: [w3.org/TR/css3-transitions/#transition-timing-function](http://www.w3.org/TR/css3-transitions/#transition-timing-function)…
+Samostatně jako `transition-timing-function: ease`. Vybrat si můžete z přednastavených. Více je na W3.org. [vrdl.in/p3rh6](http://www.w3.org/TR/css3-transitions/#transition-timing-function)
 
-…nebo si nadefinovat vlastní: [matthewlein.com/ceaser](http://matthewlein.com/ceaser].
+Lze si samozřejmě také nadefinovat vlastní. [matthewlein.com/ceaser](http://matthewlein.com/ceaser].
 
 ### Zpoždění
 

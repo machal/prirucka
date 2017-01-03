@@ -72,8 +72,6 @@ Hned za tvarem je možné definovat velikost přechodu. První možnost je defin
 }
 ```
 
-Poznámka: aktuální verze specifikace u kružnice neumožňuje nastavit rozměry s použitím procent: [dev.w3.org/csswg/css-images-3/#radial-size-circle](http://dev.w3.org/csswg/css-images-3/#radial-size-circle).
-
 Druhá možnost je definovat **velikost klíčovým slovem**:
 
 * `closest-side` – přechod bude končit u nejbližší strany elementu

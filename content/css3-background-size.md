@@ -22,11 +22,11 @@ Klíčové slovo `cover` zajistí, aby obrázek pokryl celou plochu elementu. `c
 
 ![background-size: cover/contain](dist/images/original/background-size-cover-contain.svg)
 
-`background-size: cover` použijete například pro zajištění, aby obrázek na pozadí stránky pokryl celou její plochu – [alistapart.com/d/supersize-that-background-please/index3.html](http://alistapart.com/d/supersize-that-background-please/index3.html)
+`background-size: cover` použijete například pro zajištění, aby obrázek na pozadí stránky pokryl celou její plochu. [vrdl.in/ognci](http://alistapart.com/d/supersize-that-background-please/index3.html)
 
-`background-size: contain` zase v situaci, kdy máte ikonku na pozadí elementu, jenž bude na různých rozlišeních obrazovky různě velký. Nebo když chcete prohlížeči poslat dvojnásobně nebo třeba trojnásobně velký obrázek kvůli vysokokapacitním displejům – [studiopress.com/design/css-background-size-graphics.htm](http://www.studiopress.com/design/css-background-size-graphics.htm)
+`background-size: contain` zase v situaci, kdy máte ikonku na pozadí elementu, jenž bude na různých rozlišeních obrazovky různě velký. Nebo když chcete prohlížeči poslat dvojnásobně nebo třeba trojnásobně velký obrázek kvůli vysokokapacitním displejům. [vrdl.in/ef6cp](http://www.studiopress.com/design/css-background-size-graphics.htm)
 
-Tip: Pokud máte tendenci takto pracovat s ikonami, porozhlédněte se po vektorovém řešení (SVG nebo ikonfonty) – [css-tricks.com/icon-fonts-vs-svg](http://css-tricks.com/icon-fonts-vs-svg/).
+Tip: Pokud máte tendenci takto pracovat s ikonami, porozhlédněte se po vektorovém řešení (SVG nebo ikonfonty). [css-tricks.com/icon-fonts-vs-svg](http://css-tricks.com/icon-fonts-vs-svg/)
 
 ### Rozměry v `px` nebo procentech
 

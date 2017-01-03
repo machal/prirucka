@@ -47,7 +47,7 @@ Podpora v prohlížečích
 
 Jen prohlížeče postavené na Webkit jádře. Ke dnešku tedy funguje ve všech Safari i Android Browseru. Dokonce ve všech Chrome, i když už dnes běží na vlastním jádře Blink. [caniuse.com/box-reflect](http://caniuse.com/box-reflect)
 
-Ve Firefoxu lze odlesku dosáhnout pomocí vlastnosti `-moz-element()`. [lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks](http://lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/)
+Ve Firefoxu lze odlesku dosáhnout pomocí vlastnosti `-moz-element()`. [vrdl.in/yboz2](http://lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/)
 
 Na vlastnost se tedy nelze spolehnout na široce dostupných webech, ale pro interní aplikace s omezenou cílovou skupinou se může hodit.
 

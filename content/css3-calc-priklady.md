@@ -23,12 +23,11 @@ V parametru `sizes` značky `<img>` se bez `calc()` nedá obejít. Zkuste si bez
 ```
 <img
   sizes="calc((100vw - 2 * 15px) / 2) - 10px), 
-         calc(100vw - 2 * 15px)"
-  …       
+         calc(100vw - 2 * 15px)"   
 >
 ```
 
-Více o responzivních obrázcích: [vrdl.cz/prirucka/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes).
+Více o parametrech `srcset` a `sizes` najdete na Vzhůru dolů. [vrdl.cz/prirucka/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes)
 
 Chci zmínit, že knihovna pro práci s responzivními obrázky – Picturefill – už obsahuje také polyfill pro funkci `calc()`. Dostanete s ní tedy řešení pro všechny existující prohlížeče.
 
@@ -57,12 +56,12 @@ Ne všechno, co se třpytí, je `calc()`. Pojďme se teď podívat na příklady
 
 ## Tři známá využití `calc()`, která naopak stojí za starou bačkoru
 
-1. **Dopočítávání zbytku výšky nebo šířky:** [css-tricks.com/a-couple-of-use-cases-for-calc](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-3)  
-Máme fixně vysokou hlavičku. Tělo dokumentu pak má zabrat zbytek výšky okna. Ano, dá se to udělat pomocí něčeho jako `height: calc(100% - {výška-hlavičky})`. Ale daleko elegantněji to uděláte [flexboxem](css3-flexbox.md), nástrojem, který byl pro účely tvorby layoutu vymyšlen. 
-2. **Náhrada `box-sizing`:** [css-tricks.com/a-couple-of-use-cases-for-calc](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-7)  
-Ano, můžete použít něco jako `width: calc({width} + {padding} * 2)`. Ale proč byste to dělali? Změna počítání šířky a výšky pomocí [vlastnosti Box Sizing](css3-box-sizing.md) má daleko lepší podporu než `calc()`.
-3. **Posun obrázku na pozadí zezdola a zprava:** [cdpn.io/e/OXpqRm](http://codepen.io/machal/pen/OXpqRm)    
-Je možné použít zápis typu `background-position: calc(100% - {posun-zezdola}) calc(100% - {posun-zprava})`. Lepší ale je využít čtyřčíselný zápis pro pozicování obrázku s posunem, který má širší podporu mezi prohlížeči: [caniuse.com/css-background-offsets](http://caniuse.com/#feat=css-background-offsets).
+1. **Dopočítávání zbytku výšky nebo šířky.**  
+Máme fixně vysokou hlavičku. Tělo dokumentu pak má zabrat zbytek výšky okna. Ano, dá se to udělat pomocí něčeho jako `height: calc(100% - {výška-hlavičky})`. Ale daleko elegantněji to uděláte [flexboxem](css3-flexbox.md), nástrojem, který byl pro účely tvorby layoutu vymyšlen. [vrdl.in/53f64](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-3)  
+2. **Náhrada `box-sizing`.**  
+Ano, můžete použít něco jako `width: calc({width} + {padding} * 2)`. Ale proč byste to dělali? Změna počítání šířky a výšky pomocí [vlastnosti Box Sizing](css3-box-sizing.md) má daleko lepší podporu než `calc()`. [vrdl.in/53f64](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-7)  
+3. **Posun obrázku na pozadí zezdola a zprava.**  
+Je možné použít zápis typu `background-position: calc(100% - {posun-zezdola}) calc(100% - {posun-zprava})`. Lepší ale je využít čtyřčíselný zápis pro pozicování obrázku s posunem, který má širší podporu mezi prohlížeči. [caniuse.com/css-background-offsets](http://caniuse.com/#feat=css-background-offsets) [cdpn.io/e/OXpqRm](http://codepen.io/machal/pen/OXpqRm)    
 
 Takže – `calc()` se hodí hlavně pro responzivní obrázky a pro zpřehlednění kódu. Máte jiné využití? Budu rád, když mi napíšete.
 

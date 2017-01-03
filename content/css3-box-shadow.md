@@ -66,15 +66,15 @@ box-shadow: 5px 0 5px -2px rgba(0,0,0,.5);
 
 ### Stín jako kopie objektu
 
-Kreslit stínem logo Microsoftu je samozřejmě nepraktické, ale hezky to ukazuje sílu řetězení a taky co se stane, když nepoužijeme rozostření – [cdpn.io/e/qJuzw](http://cdpn.io/e/qJuzw).
+Kreslit stínem logo Microsoftu je samozřejmě nepraktické, ale hezky to ukazuje sílu řetězení a taky co se stane, když nepoužijeme rozostření. [cdpn.io/e/qJuzw](http://cdpn.io/e/qJuzw)
 
-Můžete samozřejmě kombinovat nerozostřené i rozostřené stíny – [dabblet.com/gist/2043600](http://dabblet.com/gist/2043600).
+Můžete samozřejmě kombinovat nerozostřené i rozostřené stíny. [dabblet.com/gist/2043600](http://dabblet.com/gist/2043600)
 
 
 Podpora v prohlížečích
 ----------------------
 
-IE9+. Podpora v moderních prohlížečích je téměř bezproblémová: [caniuse.com/box-shadow](http://caniuse.com/box-shadow)
+IE9+. Podpora v moderních prohlížečích je téměř bezproblémová. [caniuse.com/box-shadow](http://caniuse.com/box-shadow)
 
 ### Starší Webkit prohlížeče občas ignorují roztažení
 

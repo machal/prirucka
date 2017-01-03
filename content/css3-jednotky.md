@@ -102,7 +102,7 @@ h1 {
 
 Písmo se pak na malém displeji v režimu na výšku sází v procentech ze šířky. Na velkém monitoru zase v procentech z výšky. Ve spoustě situací se tak obejdete bez Media Queries.
 
-Více zde: [thenewcode.com/1137/MinMaxing-Understanding-vMin-and-vMax-in-CSS](http://thenewcode.com/1137/MinMaxing-Understanding-vMin-and-vMax-in-CSS).
+Více v článku „MinMaxing: Understanding vMin and vMax in CSS“ na TheNewCode.com. [vrdl.in/afq9y](http://thenewcode.com/1137/MinMaxing-Understanding-vMin-and-vMax-in-CSS).
 
 ### Podpora v prohlížečích
 

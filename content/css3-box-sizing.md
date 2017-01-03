@@ -11,7 +11,7 @@ Dozvíte se, proč `box-sizing: border-box` milují vývojáři, kteří dělaj�
 box-sizing: content-box | border-box | padding-box;
 ```
 
-Vzpomínáte na tradiční box-model, který počítal IE6 a starší v nestandardním módu? Nevzpomínáte? Gratuluji, jste šťastní lidé: [wikipedia.org/wiki/Internet_Explorer_box_model_bug](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug).
+Vzpomínáte na tradiční box-model, který počítal IE6 a starší v nestandardním módu? Nevzpomínáte? Gratuluji, jste šťastní lidé. [wikipedia.org/wiki/Internet_Explorer_box_model_bug](http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug)
 
 ```
 Šířka nebo výška elementu =
@@ -74,7 +74,7 @@ Vlastnost `box-sizing` se moc hodí na sjednocení způsobu počítání výšky
 
 ## Podpora v prohlížečích
 
-IE7+ a všechny moderní prohlížeče. Pokud jste vlastnost neznali, budete se divit, jak výborně je podporována: [caniuse.com/box-sizing](http://caniuse.com/box-sizing).
+IE7+ a všechny moderní prohlížeče. Pokud jste vlastnost neznali, budete se divit, jak výborně je podporována. [caniuse.com/box-sizing](http://caniuse.com/box-sizing)
 
 Je ale dobré vědět, že méně používanou hodnotu `padding-box` podporuje jen Firefox.
 
