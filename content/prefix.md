@@ -1,10 +1,11 @@
-
 CSS prefixy
-============
+===========
 
-Podivná věc, která nás nutí psát jeden CSS kód vícekrát.
+Předpony experimentálních implementací CSS vlastností od výrobců prohlížečů. 
 
-Pojďme si to ukázat na příkladu. CSS3 transformaci otočením musíme aktuálně zapsat takhle:
+Nebo také podivná věc, která nás nutí duplikovat CSS kód. Dnes už prefixy nepáchají tak moc komplikací, ale kvůli novým vlastnostem jako je [flexbox](css3-flexbox.md) si s nimi nějak poradit musíme.
+
+Pojďme si to ukázat na příkladu. [CSS3 transformaci](css3-transforms.md) otočením bychom v době největší slávy prefixů měli zapsat takhle:
 
 ```css
 .box {
@@ -21,42 +22,36 @@ Pojďme si to ukázat na příkladu. CSS3 transformaci otočením musíme aktuá
 }
 ```
 
-V komentářích jsou uvedené prohlížeče, které k datu vzniku tohoto článku podporují danou syntaxi.
+Dnes už to tak složité není. Podívejte se ostatně na web „Should I Prefix“, který skladuje aktuální potřebu prefixů pro jednotlivé vlastnosti stylů. [shouldiprefix.com](http://shouldiprefix.com/)
 
-**Na posledním místě vždy musí být neprefixovaná** (standardní) verze zápisu, i když ji aktuální verze prohlížečů nepodporují. Jednou budou. A když budou, implementace bezprefixové vlastnosti bude zřejmě lepší než prefixová. I proto   je nutné ji mít na závěr, přebíjí tu potenciálně starší.
+Na posledním místě by měla být neprefixovaná a tedy standardní verze zápisu. I v situaci, kdy ji aktuální verze prohlížečů nepodporují a je pravděpodobné, že jednou budou. Bezprefixová implementace bude totiž lepší než prefixová. I proto je nutné ji mít na závěr, přebíjí tu starší a horší, pokud se v některé verzi prohlížeče vyskytují obě najednou.
 
 Typy prefixů
 ------------
 
 Říká se jim občas „vendor prefixy“. Vendor je dodavatel software, v tomto případě jádra prohlížeče.
 
-* `-webkit`. Jádro Webkit v tuhle chvíli používá Safari včetně iOS verze, Android Browser a všechny verze Google Chrome a od verze 15 i Opery. Poslední dva jmenovaní ovšem aktuálně odcházejí budovat vlastní jádro Blink.
-* `-moz`. Gecko je jádro za všemi verzemi Firefoxu.
-* Prefix `-ms` používá hádejte kdo… Micorosoft má svůj Trident.
+* `-webkit`. Prohlížečové jádro Webkit v tuhle chvíli používá Safari včetně iOS verze a některé menší prohlížeče. Dříve také Google Chrome a od verze 15 i Opery. Poslední dva jmenovaní ovšem odešli k vlastnímu jádru Blink.
+* `-moz`. Gecko je jádro všech verzí Firefoxu.
+* Prefix `-ms` používá hádejte kdo… Microsoft, přeci.
 * Prefix `-o` se vztahuje k aktuálně již neexistujícímu jádru Opery jménem Presto.
 
 
-Proč a jak prefixy vznikly
---------------------------
+Minulost a budoucnost prefixů
+-----------------------------
 
-Velmi zevrubě řečeno: Výrobci prohlížečů jsou v poslední době docela horliví při implementaci nových CSS vlastností. Implementují i vlastnosti, které W3C zatím neposlalo do finálních fází procesu standardizace. A taky jsou často jsou týmy kolem prohlížečů horlivé i v přidávání vlastních CSS vlastností.
+Výrobci prohlížečů jsou v posledních letech docela horliví při implementaci nových vlastností z HTML5 a nových verzí CSS. Implementují pak i vlastnosti, které W3C zatím neposlalo do finálních fází procesu standardizace. 
 
-V každém případě implementují něco, co nemá hotový standard. Je to tedy zkušební, prototypová implementace. Aby ji odlišili od finální implementace, zavedli vendor prefixy.
+Implementují tedy něco, co nemá hotový standard. Je to tedy zkušební, prototypová implementace. Aby ji odlišili od finální implementace, zavedli vendor prefixy. Detailně proces vzniku prefixů kdysi hezky popsal Martin Hassman. [vrdl.in/i4s8m](https://blog.root.cz/met/k-cemu-jsou-v-css-potreba-vendor-prefixy/)
 
-Detailně proces vzniku prefixů [tady hezky popisuje Martin Hassman](http://met.blog.root.cz/2008/09/10/k-cemu-jsou-v-css-potreba-vendor-prefixy/).
+Během roku 2016 ovšem vyvrcholila snaha výrobců prohlížečů a tvůrců standardů o nový přístup. Standardy se už nějakou dobu vyvíjejí v menších modulech, takže jdou vpřed rychleji. Z toho kromě jiného vyplývá, že prefixy přestávají být potřeba.
 
+Nové vlastnosti teď výrobci prohlížečů přidávají pod „vlaječky“ (flags), skrytá nastavení. Můžete si je snadno zkusit otevřením `chrome:flags` v Chrome nebo třeba `about:config` ve Firefoxu. Bližší vysvětlení přechodu od prefixů k vlaječkám je na Mozilla Developer Network.
+[vrdl.in/akgm5](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
 
-Jak si s prefixy poradit?
--------------------------
+Jak si s prefixy poradit? Autoprefixerem
+----------------------------------------
 
-Máte několik možností:
+Autoprefixer je nástroj, kterému řeknete jaké prohlížeče chcete podporovat. On se pak podívá do vašeho CSS kódu a doplní prefixy. Nejlépe se používá automaticky, v kombinaci [s Gruntem](grunt.md) nebo podobným nástrojem. [github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
 
-1. **Nijak, nepoužívat prefixované implementace.** Takhle to bylo i celé myšleno, ale lidé jsou hold nedočkaví a do verze vlastností s vendor prefixy jsou standardní výbavou snad každého vývojáře.
-2. **Vypisovat je ručně.** Možné řešení. V době [generátorů kódu](https://delicious.com/machal/css3-generators) a [CSS3 please](http://css3please.com/) se asi dá zvládnout, ale nedoporučuji.
-3. **-prefix-free** Tzn. nechat si je generovat [javascriptem](http://leaverou.github.io/prefixfree/). Super pro testy nebo [fiddlátka](http://codepen.io/), ale na produkci? Určitě ne.
-4. **CSS preprocesory.** Určitě [ano](http://kratce.vzhurudolu.cz/post/56084086629/css-preprocesory)! Je [tady](http://lesshat.com/) [řada](http://bourbon.io/) [knihoven](http://tj.github.io/nib/) co vám zajistí klidný spánek bez nočních můru o vendor prefixech.
-
-
-
-
-
+Alternativně je možné prefixy nechat doplňovat editorem kódu nebo CSS preprocesorem. To je ale postrádá kouzlo Autoprefixeru, který sám aktualizuje databázi prefixů podle jejich aktuální podpory v prohlížečích.
