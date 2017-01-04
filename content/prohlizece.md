@@ -20,17 +20,7 @@ A více než polovina shlédnutí stránek na mobilech je opět z Chrome.
 
 ![Vývoj podílu desktopových prohlížečů](dist/images/original/prohlizece-desktop.jpg)
 
-| Prohlížeč  |  Vývoj |  % podíl k  6/2016 |
-| -----------  |  --------------------- | -----------------: |
-| Chrome | ⬆ | 34,26 |
-| Firefox | ⇩ | 20,37 |
-| IE 11 | ⬆ | 15,66 |
-| Edge | ⬆ | 3,7 |
-| Opera | ⇩ | 2,6 |
-| Safari | ⬆ | 1,14 |
-| IE 8 | ⇩ | 0,50 |
-| IE 9 | ⇩  | 0,46 |
-| IE 10 | ⇩ | 0,47 |
+Poznámky:
 
 - V uvedeném období přestal klesat Firefox. Držím palce, aby nešlo o výjimku, protože konkurence je pro Chrome potřeba jako sůl.
 - Konec starých Internet Explorerů (IE) je tady. Už dlouho se to týká verzí 9 a 10, teď už konečně i osmičky. 
@@ -50,13 +40,7 @@ Podíly mobilních prohlížečů mám z Google Analytics cestovky Rekrea, proto
 
 Data k relativně novému prohlížeči Samsung Internet odhaduji. V Analytics jsou schovaná za čísly mobilního Chrome. [vrdl.cz/blog/71-samsung-internet](http://www.vzhurudolu.cz/blog/71-samsung-internet)
 
-| Prohlížeč  | % podíl k  6/2016 |
-| ---------- |  ---------------: | 
-| Chrome Mobile | 18,1 |
-| Safari Mobile | 5,5 |
-| Android Browser | 3,1 |
-| Samsung Internet | 3,0 |
-| Internet Explorer Mobile | 0,7 |
+Mezi mobilními prohlížeči tedy vede Chrome Mobile s 18,1 procenty podílu. Druhé je Safari Mobile (5,5 %), třetí Android Browser (3,1 %). Dle mých odhadů následuje Samsung Internet (kolem 3 %), Internet Explorer Mobile (0,7 %) a další méně významné prohlížeče jako Opery a zatím i mobilní Edge. 
 
 Mobilní Chrome samozřejmě v budoucnu statistiky ovládne ještě výrazněji, protože je to nyní hlavní prohlížeč na Androidu. Ano, na té platformě, která dnes vlastně na mobilech nemá masově zaměřenou konkurenci. 
 
@@ -109,22 +93,22 @@ I v těchto kontextech doporučuji weby testovat. Prohlížeče tam mívají tro
 Weby je možné a slušné vyrobit tak, aby se zásadně nerozsypaly ani v méně obvyklých browserech. Rozhodně ale nedoporučuji trvat na plnohodnotném zobrazení v nich. [Náhradních řešení](fallback.md) se pro ně dá vymyslet celá řada.
 
 - **[IE 8](https://en.wikipedia.org/wiki/Internet_Explorer_8)**   
-  Děkujeme, ale už opravdu odejdi. Vypadá to, že jeho éra právě končí spolu s Windows XP. 
+  Děkujeme, ale už opravdu odejdi. Vypadá to, že jeho éra právě končí spolu s Windows XP.  
   <small>HTML5test.com: 33/555</small>  
 - **[IE 9](https://en.wikipedia.org/wiki/Internet_Explorer_9)**  
-  IE9 běží na systémech, kde lze obvykle aktualizovat na novější verzi. 
+  IE9 běží na systémech, kde lze obvykle aktualizovat na novější verzi.  
   <small>HTML5test.com: 113/555</small>  
 - **[IE 10](https://en.wikipedia.org/wiki/Internet_Explorer_10)**  
-  Také IE10 běží na systémech, kde lze obvykle aktualizovat na novější verzi. Tipuji, že IE8, 9 i 10 v roce 2017 vymřou úplně.
+  Také IE10 běží na systémech, kde lze obvykle aktualizovat na novější verzi. Tipuji, že IE8, 9 i 10 v roce 2017 vymřou úplně.  
   <small>HTML5test.com: 265/555</small>  
-- **[Internet Explorery Mobile](https://en.wikipedia.org/wiki/Internet_Explorer_Mobile)**
-  Výchozí prohlížeče na Windows Phone verzí 7 a 8. V Analytics u relevantní projektů pod jednoprocentním podílem trhu.
+- **[Internet Explorery Mobile](https://en.wikipedia.org/wiki/Internet_Explorer_Mobile)**  
+  Výchozí prohlížeče na Windows Phone verzí 7 a 8. V Analytics u relevantní projektů pod jednoprocentním podílem trhu.  
   <small>HTML5test.com: 310/555 (verze 11 na Windows Phone 8.1)</small>  
 - **[Edge Mobile](http://jecas.cz/edge-mobile)**  
-  Výchozí prohlížeč na mobilních Windows 10. V Analytics vidím u cestovky s průměrnou českou návštěvností kolem 0,2 % podílu. Ale poroste.  
+  Výchozí prohlížeč na mobilních Windows 10. V Analytics vidím u cestovky s průměrnou českou návštěvností kolem 0,2 % podílu. Ale poroste.    
   <small>HTML5test.com: 444/555 (Windows Phone 10) </small>   
 - **[Opera Mobile](http://www.opera.com/cs/mobile)**
-  Běžná mobilní Opera s jádrem Blink. Může mít asi 0,3 % podílu.  
+  Běžná mobilní Opera s jádrem Blink. Může mít asi 0,3 % podílu.    
   <small>HTML5test.com: 481/555 (verze 37)</small>  
 - **[Opera Mini](http://www.opera.com/cs/mobile/mini)**  
   Proxy prohlížeč bez vlastního renderovacího jádra co dokáže šetřit datový objem, ale weby renderuje ošklivě. Dříve populární, dnes už v ČR zapadá. U cestovky vidím 0,1 % návštěv.
@@ -139,16 +123,7 @@ Podporujte prostě různé prohlížeče různým způsobem a vynakládejte na t
 
 ## Renderovací jádra: vede samozřejmě Blink
 
-K polovině prázdnin 2016 to vypadá takto:
-
-| Jádro |  % podíl k  6/2016 |
-| ----- |  ----------------: |
-| Blink (Chrome, Opera) |  48,0 |
-| Gecko (Firefox) |  20,0 |
-| Trident (Internet Explorer) |  18,3 |
-| WebKit/KHTML (Safari) |  9,0 |
-| EdgeHTML (Edge) |  3,7 |
-| Presto (Opera 12-) |  0,5 |
+K polovině prázdnin 2016 má jádro Blink (Chrome, Opera) podíl na trhu 48 procent. Gecko (Firefox) 20 %, Trident (Internet Explorer) 18,3 %, WebKit/KHTML (Safari) 9,0 % , EdgeHTML (Edge)  3,7 % a už nevyvíjené Presto (Opera 12-) 0,5 %.
 
 
 ## Závěrečná doporučení pro webaře
