@@ -8,7 +8,7 @@ Node.js na frontendu potřebujeme hlavně kvůli usnadnění vývojářské prá
 - NPM (Node Package Manager)  – správce javascriptových balíčků.
 - [Grunt](grunt.md) – sestavovač nebo buildovač; nástroj pro běh vývojářských úloh.
 
-Někdo si může oblíbit i další nástroje tohoto ekosystému, třeba [Bower](bower.md) – správce frontend balíčků (např. jQuery nebo framework Bootstrap). Nebo například automatizátor Yeoman, Gulp nebo WebPack. Mohou být velmi užitečné, ale pro zjednodušení se jim tady nebudeme věnovat.
+Někdo si může oblíbit i další nástroje tohoto ekosystému, třeba Bower, správce frontend balíčků. Nebo například automatizátor Yeoman, Gulp nebo WebPack. Mohou být velmi užitečné, ale pro zjednodušení se jim tady nebudeme věnovat.
 
 ![Node.js](dist/images/original/node-js.svg)
 

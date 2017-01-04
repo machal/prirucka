@@ -59,7 +59,7 @@ Správnou meta značku pro viewport rozebírám v jiném článku. [vrdl.cz/prir
 
 Ještě mi rozumíte? Výborně, trochu to zkomplikujeme.
 
-![device-pixel-ratio](http://www.vzhurudolu.cz/prirucka-content/schemes/device-pixel-ratio.png)
+![device-pixel-ratio](dist/images/original/device-pixel-ratio.png)
 
 Poměr mezi hardwarovým a CSS rozlišením udává vlastnost `resolution` (dříve `device-pixel-ratio`. Mimochodem, pomocí [dotazu na média](css3-media-queries.md) je možné zacílit zařízení s displeji v určitém poměru i v CSS:
 
@@ -127,6 +127,8 @@ Ježíši, to je průšvih, co? Budeme vytvářet obrázky pro každé `device-p
 
 Nějak se to řešit dá, nebojte. Jen člověk musí opustit staré zvyky.
 
+<div class="web-only" markdown="1">
+
 ## Řešení pro svět s nekonečným množstvím poměrů CSS pixelů k harwarovým
 
 Jsou dva typy obrázků na webech: vektorové a bitmapové.  
@@ -142,3 +144,7 @@ Pro dekorace v rozhraní (vlastní stíny, vlastní vzhled tlačítek nebo ráme
 Fotky samozřejmě můžete připravit v ohromném rozlišení, klidně více než čtyřnásobném, a v HTML kódu stránky zmenšit. Bude to vypadat všude hezky, ale nárust datového objemu stránky bude tak šílený, že vás brzy uživatelé jistojistě přijdou ubít svými smartphony. Připomínám, že fotka připravená pro Retina displej neobsahuje 2×, ale 4× více pixelů, takže její datový objem naroste klidně čtyřnásobně.
 
 Pokud je to možné, servírujte obrázky ve více variantách. Máme pro to standardizované parametry `srcset` a `sizes` u značky `<img>`. [vrdl.cz/prirucka/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes)
+  
+</div>
+
+
