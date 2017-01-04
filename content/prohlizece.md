@@ -4,7 +4,7 @@ Vstupem Chrome na desktop a nástupem mobilů začaly nové Browser Wars. Máme 
 
 Pojďme si tady shrnout aktuální stav trhu prohlížečů v ČR. Čísla v textu jsou vytažená z měření Gemius SA na Rankings.cz a u mobilních zařízení z Google Analytics cestovky Rekrea. Vždy ke konci června 2016.
 
-![Podíly prohlížečů na trhu v ČR](../dist/images/original/prohlizece-desktop-kolac.jpg)
+![Podíly prohlížečů na trhu v ČR](dist/images/original/prohlizece-desktop-kolac.jpg)
 
 Nejprve tři zásadní fakta z poslední doby:
 
@@ -18,7 +18,7 @@ A více než polovina shlédnutí stránek na mobilech je opět z Chrome.
 
 ## Desktop: Chrome jako jediný masivně roste. Na desktopu má více než třetinový podíl
 
-![Vývoj podílu desktopových prohlížečů](../dist/images/original/prohlizece-desktop.jpg)
+![Vývoj podílu desktopových prohlížečů](dist/images/original/prohlizece-desktop.jpg)
 
 | Prohlížeč  |  Vývoj |  % podíl k  6/2016 |
 | -----------  |  --------------------- | -----------------: |
@@ -40,11 +40,11 @@ A více než polovina shlédnutí stránek na mobilech je opět z Chrome.
 
 ## Mobily: pětinový podíl na shlédnutích stránek a dominance Chrome
 
-![Vývoj podílu mobilních zařízení](../dist/images/original/prohlizece-mobily-podil.jpg)
+![Vývoj podílu mobilních zařízení](dist/images/original/prohlizece-mobily-podil.jpg)
 
 Na pětinovém podílu ze shlédnutých stránek se mobily samozřejmě nezastaví. Za rok budou mít minimálně čtvrtinu a tak dále. Čísla ze Západu ukazují, že to půjde přes polovinu a výše. Ale vy už jistě dávno neváháte, že budoucnost Webu je v mobilech.
 
-![Trh mobilních prohlížečů](../dist/images/original/prohlizece-mobily-kolac.jpg)
+![Trh mobilních prohlížečů](dist/images/original/prohlizece-mobily-kolac.jpg)
 
 Podíly mobilních prohlížečů mám z Google Analytics cestovky Rekrea, protože Rankings.cz neumí rozumně rozeznat jednotlivé mobilní prohlížeče.
 

@@ -4,7 +4,7 @@ Jako každá profese, i vývojařina webového rozhraní reflektuje změny prost
 
 1. [Příchod mobilů](zmeny-1.md)  
 2. [Responzivní webdesign = webdesign](zmeny-2.md)  
-3. [Mnoho prohlížečů, kodérova smrt](zmeny-3.md)  
+3. [Mnoho prohlížečů, kodérova smrt](prohlizece.md)  
 4. [`device-pixel-ratio` a CSS pixel](zmeny-4.md)  
 5. [PNG, nebo JPG? Za webovou grafikou je už daleko víc otázek](zmeny-5.md)   
 6. [Prefixové peklo](zmeny-6.md)   
