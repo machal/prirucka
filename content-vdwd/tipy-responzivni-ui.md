@@ -50,7 +50,7 @@ Pojďme si teď naložit nějaké praktické tipy, co říkáte?
 
 ## 8 tipů pro jednodušší rozhraní na mobilech
 
-![Zetor.cz](dist/images/original/vdwd/triky-ui-7.png)
+![Zetor.cz](dist/images/original/vdwd/triky-ui-7.jpg)
 
 ### 1) Dejte pryč všechny zbytečnosti 
 
@@ -70,7 +70,7 @@ S rozbalovacími nabídkami (typu `<select>`) je na mobilech tolik potíží, a�
 
 Více také v textu od Luke Wroblewskiho „Dropdowns Should be the UI of Last Resort“. [vrdl.in/gad1e](http://www.lukew.com/ff/entry.asp?1950)
 
-![K bodu 4](dist/images/original/vdwd/triky-ui-9.png)
+![K bodu 4](dist/images/original/vdwd/triky-ui-9.jpg)
 
 ### 4) Otevírejte pohodlné klávesnice
 
