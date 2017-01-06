@@ -7,9 +7,8 @@
 - [CSS pixel a „Retina“ displeje](css-pixel.md) podrobněji.
 - Přepsaná kapitola o [CSS prefixech](prefix.md).
 - Dlouhé odkazy ven z ebooku jsou prohnané zkracovačem, aby nerušily text.
+- Lepší kontrast písma v Kindle čtečkách.
 - Drobné opravy a aktualizace (včetně odstranění pitomé chyby se špatným směrem `flex-direction` u [flexboxu](css3-flexbox-kontejner.md)).
-
-Seznam všech novinek je na webu: [vrdl.cz/ebook/info#verze](http://www.vzhurudolu.cz/ebook/info#verze).
 
 Hlášení případných chyb velmi vítám: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).  
 
