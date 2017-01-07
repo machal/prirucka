@@ -56,6 +56,6 @@ Fajn, osm bodů design canvasu, bychom měli. Co bude následovat? Příprava ob
 
 Tady ovšem zmáčkneme tlačítko pro rychlý posun filmu vpřed a tím opět proces tvorby webu trošku nemístně zjednodušíme. Představíme si, že tohle všechno máme hotovo a vyloupl se nám obsah jedné konkrétní stránky, kterou budeme dál (responzivně) webdesignérsky opečovávat.
 
-Nejvýhodnější je začít od té nejzákladnější entity, což je v případě e-shopu detail produktu. Odmyslíme si množství variant detailu produktu, které bychom si při standardní práci na webu připravili jako podklad pro návrh. Přestavíme si prostě jednu, už hotovou stránku.
+Nejvýhodnější je začít od té nejzákladnější entity, což je v případě e-shopu detail produktu. Odmyslíme si množství variant detailu produktu, které bychom si při standardní práci na webu připravili jako podklad pro návrh. Představíme si prostě jednu, už hotovou stránku.
 
 
