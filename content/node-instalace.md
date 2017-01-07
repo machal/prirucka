@@ -8,14 +8,14 @@ Node.js na frontendu potřebujeme hlavně kvůli usnadnění vývojářské prá
 - NPM (Node Package Manager)  – správce javascriptových balíčků.
 - [Grunt](grunt.md) – sestavovač nebo buildovač; nástroj pro běh vývojářských úloh.
 
-Někdo si může oblíbit i další nástroje tohoto ekosystému, třeba [Bower](bower.md) – správce frontend balíčků (např. jQuery nebo framework Bootstrap). Nebo například automatizátor Yeoman, Gulp nebo WebPack. Mohou být velmi užitečné, ale pro zjednodušení se jim tady nebudeme věnovat.
+Někdo si může oblíbit i další nástroje tohoto ekosystému, třeba Bower, správce frontend balíčků. Nebo například automatizátor Yeoman, Gulp nebo WebPack. Mohou být velmi užitečné, ale pro zjednodušení se jim tady nebudeme věnovat.
 
 ![Node.js](dist/images/original/node-js.svg)
 
 Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy: 
 
-- Návod pro Windows: [dosprompt.info/basics.asp](http://dosprompt.info/basics.asp). 
-- Návod pro Linux &amp; Mac: [mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/).
+- Návod pro Windows: „Starting to use the Command Prompt“. [vrdl.in/6w1a0](http://dosprompt.info/basics.asp)
+- Návod pro Linux &amp; Mac: „How to Use Terminal: The Basics“. [vrdl.in/uo3m2](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/)
 
 ## Node.js a NPM
 
@@ -27,13 +27,13 @@ Podívejme se ale i na lepší postupy.
 
 ### Postup pro Windows
 
-1. Nainstalujte Git do příkazové řádky. V kroku „Adjusting your PATH environment“ vybrat „Run Git from the Windows Command Prompt“: [git-scm.com/downloads](http://git-scm.com/downloads).
-2. Nainstalujeme Node.js: [nodejs.org/en/download](https://nodejs.org/en/download/).
+1. Nainstalujte Git do příkazové řádky. V kroku „Adjusting your PATH environment“ zkontrolujte zatržení „Run Git from the Windows Command Prompt“. [git-scm.com/downloads](http://git-scm.com/downloads)
+2. Nainstalujeme Node.js. [nodejs.org/en/download](https://nodejs.org/en/download/)
 
 ### Postup pro Mac OS a Linux: NVM, nebo hraní s uživatelskými právy 
 
-- Ideální varianta – pomocí NVM (Node Version Manager). Nainstalovat jej není úplně přímočaré, ale má to dvě výhody. Na vývojářské mašině vám může souběžně běžet více verzí Node a NPM najednou. A pak – ušetříte si opruz s administrátorskými právy z méně optimálních variant: [github.com/creationix/nvm](https://github.com/creationix/nvm).
-- Druhá možnost je buď hrát si s uživatelskými oprávněními ve výchozím NPM adresáři nebo ho umístit jinam: [docs.npmjs.com/getting-started/fixing-npm-permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
+- Ideální varianta – pomocí NVM (Node Version Manager). Nainstalovat jej není úplně přímočaré, ale má to dvě výhody. Na vývojářské mašině vám může souběžně běžet více verzí Node a NPM najednou. A pak – ušetříte si opruz s administrátorskými právy z méně optimálních variant. [github.com/creationix/nvm](https://github.com/creationix/nvm)
+- Druhá možnost je buď hrát si s uživatelskými oprávněními ve výchozím NPM adresáři nebo ho umístit jinam. [vrdl.in/4hlaw](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
 - Třetí, úplně nejhorší varianta pak je spouštění instalace balíčků v administrátorském režimu (`sudo npm install …`) pokaždé, když vám NPM zahlásí problém s právy (`npm ERR! Attempt to unlock …`). Autor NPM o tomhle postupu údajně prohlásil, že je bezpečný jako nechat se stříhat motorovou pilou. Což sedí.
 
 Máte nainstalováno? Jestli vše funguje, zjistíte příkazem pro zobrazení verze NPM:
@@ -68,12 +68,12 @@ npm install <nazev-pluginu> --save-dev
 
 Všimněte si, že už neinstalujeme globálně – bez přepínače `-g`. Ano, Grunt pluginy nebo třeba Bower balíčky instalujeme ke konkrétnímu projektu. Zároveň je chceme uložit do konfiguračních souborů balíčkovacího systému (`packages.json`).
 
-Pro inspiraci: Moje tipy na [Grunt pluginy](grunt-pluginy.md). 
+Pro inspiraci: Moje tipy na Grunt pluginy. [vrdl.cz/prirucka/grunt-pluginy](http://www.vzhurudolu.cz/prirucka/grunt-pluginy) 
 
 Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciální péči. Například tyto dva:
 
-- PhantomJS, na kterém závisí třeba plugin pro generování kritického CSS: [attester.ariatemplates.com/usage/phantom.html](http://attester.ariatemplates.com/usage/phantom.html). 
-- ImageMagick, který zase potřebují pluginy pro práci s obrázky jako grunt-contrib-imagemin: [imagemagick.org/script/binary-releases.php](http://www.imagemagick.org/script/binary-releases.php).
+- PhantomJS, na kterém závisí třeba plugin pro generování kritického CSS. [vrdl.in/fa8jb](http://attester.ariatemplates.com/usage/phantom.html)
+- ImageMagick, který zase potřebují pluginy pro práci s obrázky jako grunt-contrib-imagemin. [vrdl.in/ti9jp](http://www.imagemagick.org/script/binary-releases.php)
 
 
 ## Bower balíčky
@@ -133,5 +133,5 @@ npm help
 
 ## Vyzkoušejte si to
 
-Nainstalováno? Pokud nemáte nic lepšího po ruce, vezměte příklad ze školení Dnešní webová kodéřina a postupujte podle návodu: [github.com/machal/polaroid-example#instalace-projektu](https://github.com/machal/polaroid-example#instalace-projektu).
+Nainstalováno? Pokud nemáte nic lepšího po ruce, vezměte příklad ze školení Dnešní webová kodéřina a postupujte podle návodu. [git.io/vMqaj](https://github.com/machal/polaroid-example#instalace-projektu)
 

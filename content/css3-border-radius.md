@@ -51,9 +51,9 @@ border-bottom-left-radius: 4em;
 Tipy a triky
 ------------
 
-Jak pomocí `border-radius` vykreslit **kruhové avatary**? [trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars](http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/).
+Jak pomocí `border-radius` vykreslit **kruhové avatary**? [vrdl.in/uncsg](http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/)
 
-Jak na **tabulky se zaoblenými rohy**? Na tabulky s `border-collapse: collapse` a rodičovské prvky s obrázkem uvnitř je potřeba aplikovat `overflow: hidden`: [cdpn.io/e/jpdFm](http://cdpn.io/e/jpdFm).
+Jak na **tabulky se zaoblenými rohy**? Na tabulky s `border-collapse: collapse` a rodičovské prvky s obrázkem uvnitř je potřeba aplikovat `overflow: hidden`. [cdpn.io/e/jpdFm](http://cdpn.io/e/jpdFm)
 
 
 Podpora v prohlížečích
@@ -63,6 +63,6 @@ Podpora v moderních prohlížečích je bezproblémová. Pokud v osmičkovém E
 
 Velmi tedy doporučuji strategii nulového fallbacku. Uživatelé starších prohlížečů prostě zakulacené rohy neuvidí, a co oči nevidí, to srdce nebolí.
 
-Pokud vám v některých prohlížečích pod zaobleným rohem prosvítá barva pozadí, přidejte `background-clip: padding-box`. [tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed](http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed)
+Pokud vám v některých prohlížečích pod zaobleným rohem prosvítá barva pozadí, přidejte `background-clip: padding-box`. [vrdl.in/ls2uc](http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed)
 
 MSIE9 sice `border-radius` podporuje, ale není je možné kombinovat s vlastností `filter` používanou například pro barevné přechody. Dá se to vyřešit nastavením stejného `border-radius` a `overflow: hidden` pro rodičovský element.

@@ -1,6 +1,8 @@
 ## Děkuji!
 
-Ještě jednou díky za zakoupení ebooku „Vzhůru do CSS3“. Pokud se k vám náhodou e-kniha dostala jinou cestou, nic není ztraceno. Stále můžete dát vše do pořádku koupí licence na webu [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook).
+Ještě jednou díky za zakoupení ebooku „Vzhůru do CSS3“. Vážím si vaší důvěry. Díky ní mohu ebook dále vylepšovat a rozšiřovat. 
+
+Pokud se k vám náhodou dostal jinou cestou, nebojte nic není ztraceno. Stále můžete dát vše do pořádku koupí licence na webu [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook).
 
 ## Zpětná vazba
 
@@ -10,11 +12,11 @@ Moc rád si přečtu i obecnou zpětnou vazbu nebo rovnou recenze ebooku. Pište
 
 ## Proč a pro koho?
 
-Základy pro ebook „Vzhůru do CSS3“ položila leta aktualizovaná CSS3 příručka na webu Vzhůru dolů – [vrdl.cz/prirucka/css3](http://www.vzhurudolu.cz/prirucka/css3).
+Základy pro ebook „Vzhůru do CSS3“ pokládá leta aktualizovaná CSS3 příručka na webu Vzhůru dolů – [vrdl.cz/prirucka/css3](http://www.vzhurudolu.cz/prirucka/css3).
 
 Text, který jste právě začali číst provádí vývojáře aktuálním stavem ve vývoji webového uživatelského rozhraní (UI).
 
-Bude se hodit jako každodenní pomocník při používání vlastností v praxi hlavně začínajícím a mírně pokročilým. Zkušení ale ocení první podrobný český text o Flexboxu nebo úvodní shrnutí principů kódování pro současný web.
+Bude se hodit jako každodenní pomocník při používání vlastností v praxi hlavně začínajícím a mírně pokročilým. Zkušení ale ocení první podrobný český text [o Flexboxu](css3-flexbox.md) nebo [úvodní shrnutí](kapitola-1-perex.md) principů kódování pro současný web.
 
 Zabýváme se kodéřinou, tedy UI vývojařinou. Nikoliv frontend programováním a Javascriptem.
 
@@ -31,8 +33,9 @@ Text má dvě části:
 
 ![Martin Michálek](dist/images/original/autor.jpg)
 
-Martin Michálek je frontend designér na volné noze. O frontend kodéřině píše i přednáší. Podívejte se na
-[vrdl.cz/martin](http://www.vzhurudolu.cz/martin).
+Martin Michálek je frontend designér na volné noze. Navrhuje a implementuje  uživatelská rozhraní responzivních webů, například pro [VašeČočky.cz](http://www.vasecocky.cz). Píše blog [Vzhůru dolů](http://www.vzhurudolu.cz/) a ebook [Vzhůru do CSS3](http://www.vzhurudolu.cz/ebook). Spoluzaložil a vede spolek [Frontendisti.cz](http://frontendisti.cz/).
 
-Pořádá školení se zaměřením na moderní kodéřinu – responzivní design, rychlost načítání, framework Bootstrap, Grunt nebo SVG – [vrdl.cz/kurzy](http://www.vzhurudolu.cz/kurzy).
+Pořádá školení se zaměřením na moderní webový frontend – CSS, responzivní design, rychlost načítání, framework Bootstrap, SVG nebo Javascript. [vrdl.cz/kurzy](http://www.vzhurudolu.cz/kurzy)
+
+[vrdl.cz/martin](http://www.vzhurudolu.cz/martin)
 

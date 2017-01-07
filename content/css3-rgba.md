@@ -31,4 +31,4 @@ color: rgba(255, 0, 0, 0.5);
 
 V moderních browserech se zobrazí červená s padesátiprocentní průhledností. V IE8– pak tmavý odstín červené. Fallback barvu musíme určit s ohledem na barvu pozadí. Tady počítáme s černou.
 
-Alternativně použijte [CSS3Pie](http://css3pie.com/documentation/supported-css3-features/).
+Alternativně použijte [CSS3Pie.com](http://css3pie.com/documentation/supported-css3-features/).

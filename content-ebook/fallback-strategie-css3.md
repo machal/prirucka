@@ -114,7 +114,7 @@ Modernizr aktuálně dostává *něco jako* nativní podporu od W3C. Přichází
 }
 ```
 
-Více na [developer.mozilla.org/en-US/docs/Web/CSS/@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports).
+Více o pravidle `@supports` čtěte na Mozilla Developer Network. [vrdl.in/o9lm2](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
 
 ### Prázdný dotaz na média
 
@@ -149,6 +149,6 @@ Kromě ověřeného Respond.js ale polyfilly u CSS3 vlastností nedoporučuji na
 
 Zmiňoval jsem CSSnext a postprocessing, musíme to proto ještě jednou udělat v kapitole o vytváření fallbacků.
 
-Alternativou k Respond.js, která zajistí fungování stránky i v prohlížečích bez podpory Media Queries, je zmíněný grunt-legacssy, který vygeneruje verzi CSS bez dotazů na média. Více: [github.com/robinpokorny/grunt-legacssy](https://github.com/robinpokorny/grunt-legacssy).
+Alternativou k Respond.js, která zajistí fungování stránky i v prohlížečích bez podpory Media Queries, je zmíněný grunt-legacssy, který vygeneruje verzi CSS bez dotazů na média. [github.com/robinpokorny/grunt-legacssy](https://github.com/robinpokorny/grunt-legacssy)
 
-Generovaný fallback ovšem většinou jen automatizuje už zmíněný definovaný fallback jako v případě grunt-pixrem. Více: [github.com/robwierzbowski/grunt-pixrem](https://github.com/robwierzbowski/grunt-pixrem).
+Generovaný fallback ovšem většinou jen automatizuje už zmíněný definovaný fallback jako v případě grunt-pixrem. [github.com/robwierzbowski/grunt-pixrem](https://github.com/robwierzbowski/grunt-pixrem)

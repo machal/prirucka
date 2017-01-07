@@ -30,9 +30,9 @@ Spoustu (i docela složitých) šablon pro start projektu obsahují generátory 
 
 ## Dokumentace
 
-Vynikající dokumentaci nových webových technologií najdete na Mozilla Developer Network. Třeba i pro CSS3 – [developer.mozilla.org/en-US/docs/Web/CSS/CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3).
+Vynikající dokumentaci nových webových technologií najdete na Mozilla Developer Network. Třeba i pro CSS3. [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3).
 
-Část obsahu tohoto e-booku najdete na webu – [vrdl.cz/prirucka/css3](http://www.vzhurudolu.cz/prirucka/css3).
+Část obsahu tohoto ebooku najdete online na Vzhůru dolů. [vrdl.cz/prirucka/css3](http://www.vzhurudolu.cz/prirucka/css3).
 
 ## Pokročilejší nástroje
 
