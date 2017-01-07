@@ -4,7 +4,7 @@ Správný UX designér hledá řešení, které vyhovuje potřebám uživatele, 
 
 User Centered Design Canvas je ale nástroj, který to celé dokáže shrnout na jedné stránce. U větších projektů může posloužit jako shrnutí, provázející všechny členy týmu. U těch menších se obejdeme bez dalších výstupů.
 
-![User Centered Design Canvas](dist/images/original/vdwd/design-canvas.png)
+![User Centered Design Canvas](dist/images/original/design-canvas.png)
 
 User Centered Design Canvas má čtyři hlavní oblasti:
 
