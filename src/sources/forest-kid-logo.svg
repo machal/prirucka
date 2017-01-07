@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="595.276" height="113.386" viewBox="0, 0, 595.276, 113.386">
+  <g id="Background">
+    <rect x="0" y="0" width="595.276" height="113.386" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_1">
+    <text transform="matrix(1, 0, 0, 1, 306.708, 60.026)">
+      <tspan x="-306.708" y="37.667" font-family="YesevaOne" font-size="120" fill="#06D6A0">Forest</tspan>
+      <tspan x="81.492" y="37.667" font-family="YesevaOne" font-size="120" fill="#0F7699">Kid</tspan>
+    </text>
+  </g>
+</svg>
