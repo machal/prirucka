@@ -50,7 +50,12 @@ Přímá konkurence (např. OutdoorKids.cz, OutdoorBaby.cz) má širokou nabídk
 
 ForestKid.cz je jediný eshop s celým sortimentem outdoorového vybavení pro děti, který vám zároveň poradí a nakoupíte na něm opravdu snadno.
 
+## Teď to řádně zjednodušíme
 
+Fajn, osm bodů design canvasu, bychom měli. Co bude následovat? Příprava obsahu pro samotný web, návrh jeho informační architektury, příprava uživatelských scénářů, analýza klíčových slov a další kroky. 
 
+Tady ovšem zmáčkneme tlačítko pro rychlý posun filmu vpřed a tím opět proces tvorby webu trošku nemístně zjednodušíme. Představíme si, že tohle všechno máme hotovo a vyloupl se nám obsah jedné konkrétní stránky, kterou budeme dál (responzivně) webdesignérsky opečovávat.
+
+Nejvýhodnější je začít od té nejzákladnější entity, což je v případě e-shopu detail produktu. Odmyslíme si množství variant detailu produktu, které bychom si při standardní práci na webu připravili jako podklad pro návrh. Přestavíme si prostě jednu, už hotovou stránku.
 
 
