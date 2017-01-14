@@ -41,32 +41,64 @@ Pro ForestKid.cz jsem vybral druhou variantu se středně velkým náhledem a na
 
 ## Prototyp vybrané varianty
 
-Rychlé demo si vytvoříme na [Codepen.io](http://codepen.io/) a použijeme přitom skvělý generátor zástupných obrázků [Satyr.io](http://satyr.io/).
+Rychlé demo si vytvoříme na [Codepen.io](http://codepen.io/) a použijeme přitom skvělý generátor zástupných obrázků [Satyr.io](http://satyr.io/). Výsledek si prohlédneme Re:view, neméně skvělém rozšíření Google Chrome pro komparativní testovaní návrhů v mobilních rozlišeních. [re-view.emmet.io/](http://re-view.emmet.io/) 
 
-TODO:
+Na výsledný prototyp se můžete podívat na následujícím obrázku nebo Codepenu. [cdpn.io/e/JEKxEK](http://codepen.io/machal/pen/JEKxEK).
 
-- codepen v css
-- screenshoty ze všech zařízení
-- problémy: vertikálně neúsporné
-- na mobilech tedy jinak?
+*TODO obrázek viz Keynote.*
 
-## Technické řešení
+*Obrázek: Komparativní pohled na vybraná rozlišení mobilních zařízení s Androidem přes Re:view.*
 
-TODO:
+Je vidět, že na zařízeních s vyšším poměrem šířky k výšce uživatelka při načítání stránky uvidí spolehlivě jen navigaci, název produktu a obrázky. Jde samozřejmě o prototyp, takže přesná výška těchto elementů nám v této fázi známá není. Problém zčásti můžeme upravit už teď, kdy zajistíme, aby se hlavní obrázek nikdy neroztáhl na celou šířku stránky:
 
-- jednoduchá varianta podporující snap points
-- popsat, codepen
+```css
+.gallery-pane {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}  
+```
 
+I další krok si můžete vyzkoušet naživo. [cdpn.io/e/XpKOxd](http://codepen.io/machal/pen/XpKOxd)
 
+Vsadím se ale, že při pohledu na obrázek z testování prototypu vás do očí praštilo něco jiného. Právě to taky od prototypů chceme. Aby obtěžovaly naše oči tím, co se naše mozky nedomyslely. Ano, myslím tím náhledy ze zařízení držených na šířku.
 
+### Řešení pro zobrazení na šířku 
 
+V landscape režimu je vybrané řešení bohužel velmi neuspokojivé. Naše milá uživatelka uvidí v lepším případě jen horní část hlavního obrázku. Když naroluje na malé navigační obrázky, uvidí zase jen jeho spodní část. Tady bohužel musíme sáhnout po jiném rešení. Které ze skicovaných využívalo lépe šířku? 
 
+No jasně, třetí varianta – *karusel*. Ten totiž nevyžaduje roztažení obrázku do plné šířky okna, což zmenší výšku komponenty. Obrázků se do karuselu vejde více vedle sebe, což opět šetří prostor na výšku. 
 
+Když kód hodně zjednodušíme, vypadal by následovně:
 
+```css
+@media only screen and (orientation: landscape) {    
+  .gallery-pane img {
+    width: 30%;
+  }
 
+  .gallery-thumbs {
+    display: none;
+  }  
+}
+```
 
+Pro zobrazení na šířku využíváme `orientation: landscape`, jednu [Media Queries](css3-media-queries.md), o kterých jsme si už dříve něco řekli.
 
+*TODO obrázek viz Keynote.*
+*Obrázek: Výsledný prototyp designu fotogalerie.*
 
+Codepen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/dNXrMe). 
 
+Vy zkušenější jste jistě mírně pozvedli obočí nad schováváním jedné části s obrázky pomocí `display: none`. Tohle v produkčním kódu být nesmí, protože by nám některé mobilní prohlížece neviditelné obrázky tak či tak stáhly a zpomalili bychom tím ošklivě načtení stránky.
 
+Je dobré ale na tomto místě zopakovat, že to co jsme teď prováděli bylo *prototypování designu*. Určité technické zjednodušení je tady na místě ve prospěch rychlosti jednotlivých kroků.   
+
+### Jste už také zamilovaní do HTML prototypů?
+
+Snad bylo na příkladu dobře vidět výhody prototypů přímo v kódu, o kterých jsem už psal.
+
+* Bylo to *brzy v prohlížeči*, takže jsme ne nevýhody původně vybraného řešení nepřišli až při drahé technické implementaci.
+* Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom Codepen mohli testovat na uživatelích.
+* Kód je zčásti *znovupoužitelný* a při následné implementaci jej použijeme jako základ.
 
