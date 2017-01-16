@@ -1,32 +1,32 @@
 # Favikony webu s RealFaviconGenerator
 
-Ikona webu. Kromě tradiční `favicon.ico`, ikony na záložce rozhraní prohlížeče se dnes „favikony“ zobrazují v celé řadě dalších kontextů: například na ploše mobilního operačního systému nebo jako součást širšího nastavení zobrazování na dlaždicích Windows 8 a 10. 
-
-_TODO obrázek_
+Ikona webu. Kromě tradiční `favicon.ico`, ikony na záložce rozhraní prohlížeče se dnes „favikony“ zobrazují v celé řadě dalších kontextů: na ploše mobilních operačního systémů nebo jako součást širšího nastavení zobrazování na dlaždicích Windows 8 a 10. 
 
 Proto už ani ta *pitomá favikona* není tak jednoduché téma jako před lety. 
 
+![Favicony](dist/images/original/favicon.jpg)
+
 ## Jednoduché řešení: použijte generátor
 
-Prostě jděte na skvělý web jménem Real Favicon Generator. [realfavicongenerator.net](http://realfavicongenerator.net/)
+Nezajímají vás detaily a chcete vyřešit problém? Prostě jděte na skvělý web jménem Real Favicon Generator. [realfavicongenerator.net](http://realfavicongenerator.net/)
 
-Generátor vám vytvoří potřebný HTML kód a všechny externí soubory jako jsou obrázky a manifesty. Slouží také ale jako validátor správného nastavení [favikon](http://realfavicongenerator.net/favicon_checker). Má taky API, různé pluginy pro [Grunt](grunt.md), Gulp a tak dále. Na takovou pitominu prostě brutální ekosystém nástrojů a vědomostí. Jestli můžete, [podpořte ho](http://realfavicongenerator.net/donate). 
+Nástroj vám vytvoří potřebný HTML kód a všechny externí soubory: obrázky a manifesty. Slouží také ale jako [validátor správného nastavení](http://realfavicongenerator.net/favicon_checker) favikon. Má taky API, různé pluginy pro [Grunt](grunt.md), Gulp a tak dále. Na takovou pitominu prostě slušný ekosystém nástrojů a vědomostí. Autoři na tom dále pracují, proto jestli můžete, [podpořte ho](http://realfavicongenerator.net/donate). 
 
 Tím bychom mohli skončit, ale vsadím se, že jste zvědaví, proč je kolem favikon potřeba psát tolik textů a programovat generátory.
 
-Zaměřím se na HTML kód, který RealFaviconGenerator.net vytvořil pro Vzhůru dolů. Hloubka studny znalostí kolem favikon je ovšem neskutečná. [realfavicongenerator.net/faq](https://realfavicongenerator.net/faq)
+Zaměřím se na HTML kód, který RealFaviconGenerator.net vytvořil pro Vzhůru dolů. Studna znalostí kolem favikon je ovšem hlubší. [realfavicongenerator.net/faq](https://realfavicongenerator.net/faq)
 
 Některé další detaily najdete také na JeČas.cz. [jecas.cz/favicon](http://jecas.cz/favicon)
 
 ## Detaily pro zvědavce
 
-**Touch ikonu** uvidíte na Androidu nebo iOS, když si web umístíte na plochu. Těchto ikon je ve skutečnosti daleko, daleko více. Jsou to všechny, které v [kompletním seznamu ikon](https://realfavicongenerator.net/faq) začínají na `apple-touch-icon-` nebo `android-chrome-`. V době psaní jsem napočítal sedmnáct souborů:
+**Touch ikonu** uvidíte na Androidu nebo iOS, když si web umístíte na plochu. Těchto ikon je ve skutečnosti daleko, daleko více. Jsou to všechny, které v [kompletním seznamu ikon](https://realfavicongenerator.net/faq) začínají na `apple-touch-icon-` nebo `android-chrome-`. Napočítal jsem sedmnáct souborů. Podle RealFaviconGenerator.net stačí soubory vytvořit a do HTML vložit tento kód:
 
 ```html
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 ```
 
-Standardizovaný **Web App Manifest**, který kromě ikon definuje také barvy a způsob zobrazení. Používá jej Chrome na Androidu. Více na [w3.org](http://www.w3.org/2008/webapps/manifest/):
+Dále tady máme standardizovaný **Web App Manifest**, který kromě ikon definuje  barvy a způsob zobrazení. Používá jej Chrome na Androidu. Více na [w3.org](http://www.w3.org/2008/webapps/manifest/):
 
 
 ```html
@@ -79,6 +79,6 @@ Klasická 16×16 ikona pro **všechny ostatní prohlížeče**:
 
 Já je tam dávám všechny kromě `favicon.ico`. Proto, abych si hlavní adresář projektu nezaplevelil desítkami souborů. Jenže některé prohlížeče a vyhledávače si favikony  chtějí stahovat právě z hlavního adresáře. Když si k nim ale nadefinujete meta značky, mělo by to být v pořádku. 
 
-`favicon.ico` tvoří výjimku, protože si pro ni do hlavního adresáře sahají starší Explorery a taky roboti vyhledávačů. Tu v rootu nechávám vždy, aby server zbytečně nevracel chyby 404.
+`favicon.ico` je výjimka, protože si pro ni do hlavního adresáře sahají starší Explorery a taky roboti vyhledávačů. Tu v rootu nechávám vždy, aby server zbytečně nevracel chyby typu „404 Nenalezeno“.
 
 
