@@ -1,6 +1,6 @@
 # Příklad: návrh fotogalerie krok za krokem
 
-Nevivil bych se, když byste v této části knihy měli hlavu jako meloun. Jen díky tomu ale máme dost vědomostí, abychom navrhli první komponentu uživatelského rozhraní. Nevěste meloun a pojďme si nejprve shrnout jak budeme postupovat.
+Nedivil bych se, když byste v této části knihy měli hlavu jako meloun. Jen díky tomu ale máme dost vědomostí, abychom navrhli první komponentu uživatelského rozhraní. Nevěste meloun a pojďme si nejprve shrnout jak budeme postupovat.
 
 - Do *skic* si nakreslíme všechny možnosti zobrazení komponenty, které nás napadnou.
 - Pokud si s ním nebudeme zcela jistí, uděláme si *prototyp* řešení.
