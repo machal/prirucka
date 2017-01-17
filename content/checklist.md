@@ -5,7 +5,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 ## Obsah a HTML
 
 - Ikony a favikony  
-<small>Identifikují web v bookmarcích nebo v seznamu aplikací na mobilech i desktopu. [Více informací](http://jecas.cz/favicon). [RealFaviconGenerator.net](http://realfavicongenerator.net/ "Real Favicon Generator").</small>
+<small>Identifikují web v bookmarcích nebo v seznamu aplikací na mobilech i desktopu. [Více informací](favicon.md). [RealFaviconGenerator.net](http://realfavicongenerator.net/ "Real Favicon Generator").</small>
 - Facebook Open Graph  
 <small>Změní náhled stránky na Facebooku. Má potenciál zvýšit návštěvnost webu. Důležitý je hlavně obrázek. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Facebook Debugger](https://developers.facebook.com/tools/debug/ "Facebook Debugger").</small>
 - Twitter Cards  
