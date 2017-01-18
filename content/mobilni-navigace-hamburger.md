@@ -22,7 +22,7 @@ Jak dobře plní tyto tři úkoly schovaná navigace? Že je neplní vůbec? Bin
 
 Dobře, pro ideální svět stručných navigací na velkých displejích bychom měli vyřešeno. Prostě je na mobilech neschovávat. 
 
-![Dobré a špatné hamburgery](dist/original/hamburger-variants.jpg)
+![Dobré a špatné hamburgery](dist/images/original/hamburger-variants.jpg)
 
 Jenže tady máme i weby se složitými navigacemi a zařízení s velmi malými displeji. 
 
@@ -62,7 +62,7 @@ Je také dobré v době minimalizmu a flat designu zmínit, že ikona by kromě 
 
 Každá ikona je zjednodušenou abstrakcí toho co aktivuje. V případě hamburgeru je to seznam horizontálních položek. To velmi dobře odpovídá jednoduché navigaci s položkami řazenými pod sebe.  Odpovídá to ale třeba víceúrovňové navigaci nebo třeba celé liště sekundárního obsahu, na který se dostanete kliknutím na hamburger například u jinak výborného webu Respektu? 
 
-![Špatný symbol pro zobrazení sekundárního obsahu](dist/original/hamburger-abstraction.jpg)
+![Špatný symbol pro zobrazení sekundárního obsahu](dist/images/original/hamburger-abstraction.jpg)
 
 Pokud nechceme naše milé uživatele úplně zničit, měli bychom hamburger používat jako abstrakci typu obsahu, který skutečně reprezentuje. [vrdl.cz/blog/47-znicit-mobilistu-1](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1)
 
