@@ -1,12 +1,12 @@
 # Příklad: návrh fotogalerie krok za krokem
 
-Nedivil bych se, když byste v této části knihy měli hlavu jako meloun. Jen díky tomu ale máme dost vědomostí, abychom navrhli první komponentu uživatelského rozhraní. Nevěste meloun a pojďme si nejprve shrnout jak budeme postupovat.
+Nedivil bych se, když byste v této části knihy měli hlavu jako meloun. Jen díky tomu ale máme dost vědomostí, abychom navrhli první komponentu uživatelského rozhraní. A tak – nevěšme meloun a pojďme si shrnout jak budeme postupovat.
 
 - Do *skic* si nakreslíme všechny možnosti zobrazení komponenty, které nás napadnou.
 - Pokud si s ním nebudeme zcela jistí, uděláme si *prototyp* řešení.
 - Pro vybranou variantu promyslíme *technické řešení* a nakódujeme si ji.
 
-TODO Obrázek: Takhle vypadá fotogalerie před naším designérských zásahem. Vypsaní fotek pod sebou nebude to pravé ořechové, že?
+Jak vypadá fotogalerie před naším designérských zásahem? Fotky jsou prostě seřazené pod sebe. To nebude to pravé ořechové, že?
 
 ## Skicování
 
@@ -14,7 +14,7 @@ Teď prostě, jak jsem popisoval v kapitole [o skicování](skicovani.md), nabro
 
 Já ze sebe dostal šest možností, co vy?
 
-TODO obrázek: https://photos.google.com/photo/AF1QipP0Blhdp8SOQqt5KbtP5wwLjnUcAGMneH6n88Ux
+![Skici komponenty fotogalerie](dist/images/original/vdwd/priklad-skici.jpg)
 
 Než je začneme hodnotit, měli bychom si rozmyslet co je vlastně ta naše fotogalerie zač.  
 
@@ -26,7 +26,7 @@ Zároveň jim ale nechceme dát tak zásadní váhu, aby upozadily všechny osta
 
 Musíme si ale také vyjasnit, jestli jsme od našich dodavatelů schopní získat dostatečně kvalitní obrázky produktů pro komponentu tak zásadní váhy. V naší hypotetické situaci ano, ale pozor, neplatí to zdaleka pro každý eshop nebo web obecně.
 
-A ještě na jednu věc nesmíme zapomenout, na různorodost obsahu. V našem případě vycházím z toho, že všechny fotografie budeme mít produkčně připravené ořezané na bílém pozadí v poměru 1:1 a že jich u jednoho produktu bude mezi třemi a patnácti.
+A ještě na jednu věc nesmíme zapomenout, na variabilitu obsahu. V našem případě vycházím z toho, že všechny fotografie budeme mít produkčně připravené ořezané na bílém pozadí v poměru 1:1 a že jich u jednoho produktu bude mezi třemi a patnácti.
 
 ### Zvážení jednotlivých skic
 
@@ -45,7 +45,7 @@ Rychlé demo si vytvoříme na [Codepen.io](http://codepen.io/) a použijeme př
 
 Na výsledný prototyp se můžete podívat na následujícím obrázku nebo Codepenu. [cdpn.io/e/JEKxEK](http://codepen.io/machal/pen/JEKxEK).
 
-*TODO obrázek viz Keynote.*
+![Komparativní pohled na prototyp](dist/images/original/vdwd/priklad-komponenta-review-1.jpg)
 
 *Obrázek: Komparativní pohled na vybraná rozlišení mobilních zařízení s Androidem přes Re:view.*
 
@@ -85,7 +85,8 @@ Když kód hodně zjednodušíme, vypadal by následovně:
 
 Pro zobrazení na šířku využíváme `orientation: landscape`, jednu [Media Queries](css3-media-queries.md), o kterých jsme si už dříve něco řekli.
 
-*TODO obrázek viz Keynote.*
+![Komparativní pohled na prototyp](dist/images/original/vdwd/priklad-komponenta-review-2.jpg)
+
 *Obrázek: Výsledný prototyp designu fotogalerie.*
 
 Codepen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/dNXrMe). 
