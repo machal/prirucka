@@ -25,7 +25,7 @@ Více k HTML základům nepotřebujeme. Nuda? U stylů to ale bude vrstevnatěj�
 
 Často se zapomíná, že ještě než napíšeme první řádku CSS, náš dokument už nějaké styly má. Prohlížeč prostě musí mít nějaká zadní vrátka, kterými vejde škodolibý skřítek a dokument vysázený krásnými písmy ve Wordu pokazí ohyzdným Times New Roman s modrými odkazy, že ano? 
 
-Jsou to výchozí styly prohlížečů. Ve vývojářských nástrojích je v CSS kaskádě vidíte jako „user agent stylesheet“. Nevidíte? Doporučím vám si jejich zobrazování zapnout. Vlastnosti stylů totiž mají ošklivou vlastnost. V různých prohlížečích mohou mít různá nastavení. 
+Prví vrstva stylů, která se aplikuje na váš dokument, jsou výchozí styly prohlížečů. Ve vývojářských nástrojích je v CSS kaskádě vidíte jako „user agent stylesheet“. Nevidíte? Doporučím vám si jejich zobrazování zapnout. Vlastnosti stylů totiž mají ošklivou vlastnost. V různých prohlížečích mohou mít různá nastavení. 
 
 ### Proč nepoužívat resetování?
 
@@ -37,11 +37,11 @@ Nevýhoda resetovacího přístupu je – to byste nečekali – v onom *resetov
 
 Normalize prostě zasahuje jen tam, kde jsou ve výchozích stylech prohlížečů nějaké rozdíly. Normalizace stylů. To je ale slovo, které v Česku a na Slovensku nemá moc hezké emoční zabarvení, takže pojďme mluvit o *sjednocení*. První krok je tedy přidat k dokumentu Normalize.css. [necolas.github.io/normalize.css](https://necolas.github.io/normalize.css/)
 
-Máme teď jednotné výchozí stylování. Pojďme si v další vrstvě konečně něco nastavit.
+Díky Normalize.css, druhé vrstvě stylů dokumentu, máme výchozí stylování sjednocené napříč prohlížeči. V další vrstvě si konečně pojďme něco nastavit.
 
 ## Blanka CSS: typografické základna
 
-Blanka je opět můj vlastní kousek CSS. Má dva hlavní účely:
+Blanka je opět můj vlastní kousek CSS. Je to třetí vrstva achitektury webů a má dva hlavní účely:
 
 - *Sjednocuje vzhled*. Normalize.css sjednocuje vzhled mezi prohlížeči, už ale neřeší jednodnost vzhledu uvnitř dokumentu. Třeba levé odsazení u prků `ul`, `ol` nebo `dd`. 
 - *Nastavuje typografický rytmus*. Asi jste si všimli, že mám rád jednoduchost. Aby se mě s dokumentem dobře pracovalo, mají všechny typografické elementy nastavený vnější okraj jen zezdola. Nemusím myslet na horní vnější okraj, nemluvě o vnitřních, které se ve výchozích stylech prohlížečů hojně vyskytují. 
