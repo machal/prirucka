@@ -1,6 +1,6 @@
 # Příklad: Barvy, písma a grafický styl
 
-# Barevné schéma pro odlišení od konkurence
+## Barevné schéma pro odlišení od konkurence
 
 Pro e-shop potřebujeme alespoň tři základní barvy: 
 
@@ -16,7 +16,7 @@ Jak už jsem zmiňoval, pro zjednodušení si můžeme pomáhat databázemi bare
 
 *Obrázek: Vybrané barevné schéma. [coolors.co](https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c)*
 
-# Vybereme písmo: jedno charakteristické a druhé chlebové 
+## Vybereme písmo: jedno charakteristické a druhé chlebové 
 
 Při výběru typografie opět nejprve zvážíme pro jaké účely budeme písmo potřebovat. V našem případě to zjednodušeně obnáší logo firmy, nadpisy, delší texty a navigační prvky uživatelské rozhraní. 
 
