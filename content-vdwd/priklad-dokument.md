@@ -2,40 +2,50 @@
 
 *TODO refactor a přidat blanka-css a blanka-type test*
 
-V této kapitole se zájemci naučili nezbytné základy [grafického designu](graficky-design.md) a [typografie](typografie.md). Díky tomu jsme byli schopní zvolit základní [grafický styl](priklad-barvy-typografie.md) pro náš příklad. 
+V této kapitole jsme se naučili nezbytné základy [grafického designu](graficky-design.md) a [typografie](typografie.md). Díky tomu jsme byli schopní zvolit základní [grafický styl](priklad-barvy-typografie.md) pro náš příklad.  Alespoň doufám! 
 
-Jak to ale dostat do webové stránky? Potřebujeme [znalost jednotek](jednotky.md) pro využití na webu a taky vědět, že použití `px` se už dnes nefandí. No a díky jednoduché HTML šabloně a třem základním vrstvám stylů z předchozí kapitoly jsme je naše stránka konečně prezentovatelná v prohlížeci. Nic extra to zatím není.
+Jak to ale dostat do webové stránky? Potřebujeme [znát jednotky](jednotky.md) pro tvorbu webu a taky vědět, že pixely (`px`) jsou už skoro na seznamu zakázaných slov. Díky jednoduché HTML šabloně a třem základním vrstvám stylů z [předchozí kapitoly](dokument-nastroje.md) je naše stránka konečně prezentovatelná v prohlížeci. Nic extra to ale zatím není.
 
-TODO IMG
+*TODO IMG*
 
-*Obrázek: V této fázi máme základní HTML a CSS. Stránka ovšem nemá žádný charakter. Musíme přidat naši typografii a grafické prvky.*
+*Obrázek: V této fázi máme základní HTML a CSS. Stránka ovšem nemá žádný charakter.*
 
-Po pár krocích už stránka vypadá lépe:
+Pojďme tedy přidat vlastní typografii, barvy a grafické prvky. Nějak si prostě dokument upravit k obrazu ForestKid.cz.
 
-TODO IMG
+## Příprava dokumentu krok za krokem
 
-*Obrázek: *
+Aktuální stav příkladu si můžete naživo prohlédnout nebo stáhnout na následujících adresách.
 
-Co jsme na stránce udělali, nejlépe uvidíme pohledem na `style.css`:
+- Otevření v prohlížeči: [vrdl.in/vdwddok](http://vrdl.in/vdwddok)
+- Stažení v ZIPu: [vrdl.in/vdwddokzip](http://vrdl.in/vdwddokzip)
+
+Co jsme na stránce udělali, nejlépe uvidíme pohledem do `style.css`. Hned na první řádce je tohle:
 
 ```css
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Yeseva+One&subset=latin-ext');
+@import 
+  url('https://fonts.googleapis.com/css?
+    family=PT+Sans:400,400i,700|Yeseva+One&
+      subset=latin-ext');
 ```
 
-Vložili jsme fonty Yeseva One a PT Sans. Ten druhý ve třech řezech: základním (`400`), kurzívě (`400i`) a tučném řezu (`700`). Pokud vám ta čísla nic neříkají, jde o stupně tučnosti známé také ve vlastnosti `font-weight`: [jakpsatweb.cz/css/font-weight.html](http://jakpsatweb.cz/css/font-weight.html)
+Vložili jsme fonty Yeseva One a PT Sans. Ten druhý ve třech řezech: základním (`400`), kurzívě (`400i`) a tučném řezu (`700`). Pokud vám ta čísla nic neříkají, jde o stupně tučnosti používané také ve vlastnosti `font-weight`: [jakpsatweb.cz/css/font-weight.html](http://jakpsatweb.cz/css/font-weight.html)
+
+A jdeme dál:
 
 ```
 @import 'vendor/normalize.css';
 @import 'vendor/blanka.css';
 ```
 
-Přidali jsme Normalize.CSS a Blanka.CSS. Ty známe [z kapitoly](dokument-nastroje.md) o základních vrstvách dokumentu.
+Přidali jsme Normalize.css a Blanka.css. Oba projekty známe [z kapitoly](dokument-nastroje.md) o základních vrstvách dokumentu. Složku jsme pojmenovali `vendor/`, protože jde o projekty externích „dodavatelů“.
+
+Teď se mrkneme do jiné složky. `core/` obvykle používám pro „programátorské“ části CSS kódu. V případě použití preprocesorů tady nevinné kódery straší složité soubory s mixiny nebo proměnnými. 
 
 ```css
 @import 'core/variables.css';
-````
+```
 
-Abychom si zjednodušili práci, používáme tady CSS proměnné. Neumí je starší prohlížeče, ale to budete umět vyřešit až ke konci knihy. Teď vám musí stačit můj slib, že v nich stránka bude díky blbuvzdornému charakteru CSS vypadat docela obstojně.
+Abychom si zjednodušili práci, používáme tady CSS proměnné. Neumí je některé starší prohlížeče, ale to budete umět vyřešit až ke konci knihy. Teď vám musí stačit můj slib, že v nich stránka bude díky blbuvzdornému charakteru CSS vypadat docela obstojně. Podpora proměnných ale není vůbec špatná, podívejte se na Can I use. [caniuse.com/css-variables](http://caniuse.com/#feat=css-variables)
 
 Definice proměnné vypadá takto:
 
@@ -53,9 +63,11 @@ body {
 }
 ```
 
-Proměnné asi někteří znáte z CSS preprocesorů. Jak už víte, v této knize se chci obejít bez složitých nástrojů a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově součástí CSS a jde s nimi dělat daleko větší legrace než s těmi preprocesorovými. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
+Proměnné asi někteří znáte právě z CSS preprocesorů. To jsou velmi mocné nástroje, o kterých píšu v ebooku „Vzhůru do CSS3“ nebo ve starším textu na Vzhůru dolů. [vrdl.cz/blog/12-css-preprocesory-1](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
 
-Dále jsme si museli nastavit velikost nadpisů a písma; základní styl tabulek, formulářových a další prvků. To už si nastudujte sami na odkaze dole:
+Jak už víte, v této knize se chci obejít bez složitých nástrojů a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově součástí kaskádových stylů. Jde s nimi navíc páchat ještě větší legrace než s těmi preprocesorovými. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
+
+Dále jsme si museli nastavit velikost nadpisů a písma, základní styl tabulek, formulářových a další prvků. To už si nastudujte sami ve staženém příkladu, není to nic složitého:
 
 ```
 @import 'document/scale.css';
@@ -66,7 +78,7 @@ Dále jsme si museli nastavit velikost nadpisů a písma; základní styl tabule
 @import 'helpers/helpers.css';
 ```
 
-Co ale ještě zmínit chci, je základní nastavení šířky dokumentu. Zabývám se tím v `document/document.css`. Vzpomenete si na optimální délku řádku textu [z kapitoly o typografii](typografie.md)? Ideál 66 znaků mám v písmu PT Sans napočítaný kolem 30 čtverčíků, takže použijeme následující deklaraci:
+Co ale ještě zmínit chci, je základní nastavení šířky dokumentu. Zabývám se tím v `document/document.css`. Vzpomenete si na optimální délku řádku textu [z kapitoly o typografii](typografie.md)? Ideál 66 znaků mám v našem základním písmu PT Sans napočítaný kolem 30 čtverčíků, takže použijeme následující deklaraci:
 
 ```css
 .container {
@@ -84,10 +96,11 @@ body {
 }
 ```
 
-První stav příkladu si můžete naživo prohlédnout nebo stáhnout na následujících adresách:
+Po pár krocích už tedy stránka vypadá lépe:
 
-- Otevření v prohlížeči: [vrdl.in/vdwddok](http://vrdl.in/vdwddok)
-- Stažení v ZIPu: [vrdl.in/vdwddokzip](http://vrdl.in/vdwddokzip)
+*TODO IMG*
 
+*Obrázek: Dokument se základním grafickým stylem, barvami a typografií. Zvětšujte a změnšujte si okno prohlížeče. Ano, už v této fázi je to vlastně „responzivní”. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
 
+Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav poté, když jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. To se dělá meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři v něm chyby sekají tempem jako Baťa cvičky. Pojďme to napravit a o viewportech si rychle něco povědět.
 
