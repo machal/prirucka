@@ -4,11 +4,7 @@
 
 V této kapitole jsme se naučili nezbytné základy [grafického designu](graficky-design.md) a [typografie](typografie.md). Díky tomu jsme byli schopní zvolit základní [grafický styl](priklad-barvy-typografie.md) pro náš příklad.  Alespoň doufám! 
 
-Jak to ale dostat do webové stránky? Potřebujeme [znát jednotky](jednotky.md) pro tvorbu webu a taky vědět, že pixely (`px`) jsou už skoro na seznamu zakázaných slov. Díky jednoduché HTML šabloně a třem základním vrstvám stylů z [předchozí kapitoly](dokument-nastroje.md) je naše stránka konečně prezentovatelná v prohlížeci. Nic extra to ale zatím není.
-
-*TODO IMG*
-
-*Obrázek: V této fázi máme základní HTML a CSS. Stránka ovšem nemá žádný charakter.*
+Jak to ale dostat do webové stránky? Potřebujeme [znát jednotky](jednotky.md) pro tvorbu webu a taky vědět, že pixely (`px`) jsou už skoro na seznamu zakázaných slov. Díky jednoduché HTML šabloně a třem základním vrstvám stylů z [předchozí kapitoly](dokument-nastroje.md) bude naše stránka prezentovatelná v prohlížeci s nějakým vlastním charakterem. 
 
 Pojďme tedy přidat vlastní typografii, barvy a grafické prvky. Nějak si prostě dokument upravit k obrazu ForestKid.cz.
 
@@ -98,7 +94,7 @@ body {
 
 Po pár krocích už tedy stránka vypadá lépe:
 
-*TODO IMG*
+![Dokument fáze příkladu](dist/images/original/vdwd/priklad-dokument.jpg)
 
 *Obrázek: Dokument se základním grafickým stylem, barvami a typografií. Zvětšujte a změnšujte si okno prohlížeče. Ano, už v této fázi je to vlastně „responzivní”. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
 
