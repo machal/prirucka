@@ -47,7 +47,7 @@ Díky sjednocení, druhé vrstvě stylů dokumentu, máme výchozí stylování 
 
 Blanka CSS je třetí vrstva stavby webu a má dva hlavní účely:
 
-- *Sjednocuje vzhled*. Normalize.css ladí vzhled napříč prohlížeči, už ale neřeší jednodnost vzhledu uvnitř dokumentu. Třeba levé odsazení u prků `ul`, `ol` nebo `dd`. 
+- *Sjednocuje vzhled*. Normalize.css ladí vzhled napříč prohlížeči, už ale neřeší jednodnost vzhledu uvnitř dokumentu. Třeba levé odsazení u prvků `ul`, `ol` nebo `dd`. 
 - *Nastavuje typografický rytmus*. Asi jste si všimli, že mám rád jednoduchost. Aby se mě s dokumentem dobře pracovalo, mají všechny typografické elementy nastavený vnější okraj jen zezdola. Nemusím myslet na horní vnější okraj, nemluvě o vnitřních, které se ve výchozích stylech prohlížečů hojně vyskytují. 
 
 Ve stylové Blance je toho více, ale to už si můžete prohlédnout sami v souboru `blanka.css`. [github.com/machal/blanka-html/](https://github.com/machal/blanka-html/blob/master/blanka.css)
