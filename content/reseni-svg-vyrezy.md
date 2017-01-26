@@ -1,10 +1,13 @@
 # SVG řešení: Vlastní výřezy obrázků pomocí SVG
 
-Mám fotku. V CSS snadno udělám kulatý výřez, jenž co vlastní tvar? 
+Mám fotku. Chci ji udělat specifický výřez v přímo v kódu. V CSS snadno udělám kulatý, jenže co vlastní tvar? 
 
-*TODO IMG*
+Po čase pro vás mám další z příkladů, které jsem ukazoval na přednášce [„10 praktických CSS3 a SVG řešení“](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246) na Webexpo 2016.
 
-Možností je víc, ale když chci aby to fungovalo prakticky ve všech prohlížečích, zvolím SVG. Tohle řešení nebude fungovat jen v Exploreru 8 a starších, ale ošetříme tam samozřejmě fallbacky.
+![Vlastní výřez pomocí SVG](dist/images/original/reseni-svg-vyrezy.jpg)
+
+[Možností](http://codepen.io/yoksel/full/fsdbu/) je víc, ale když chci, aby to fungovalo prakticky ve všech prohlížečích, zvolím [SVG](svg.md). Výřez nezvládne jen Internet Explorer 8 a starší. Ale uděláme pro ně docela vyčůrané náhradní řešení, vydržte.
+
 
 ## 1) Nejdříve fotka v SVG
 
@@ -14,6 +17,9 @@ Možností je víc, ale když chci aby to fungovalo prakticky ve všech prohlí�
     class="svg__image" alt="Image">  
 </svg>
 ```
+
+Namísto prostého `<img>` použijeme SVG obrázek, abychom na něj mohli aplikovat tvar masky.
+
 
 ## 2) Definuji tvar výstřižku
 
@@ -32,14 +38,19 @@ Všimněte si, že zde nepoužívám zanoření do `<defs>`, oblasti pro vymezen
 <image clip-path="url(#clip-path)" …>
 ```
 
-Dělám to přímým parametrem v SVG kódu. Proč jsem nepoužil [CSS vlastnost `clip-path`](http://codepen.io/machal/pen/qRPbYZ), která je také standardně k dispozici? Opět kvůli Safari, které ji zatím neumí.
+A máme skoro hotovo. Nic složitého, že? Ještě trochu vysvětlování a pak ten fallback pro starší prohlížeče.
 
-V mém případě jsem si v grafickém editoru naklikal něco jako „metalový hexagon“. Teď už to bude vypadat jako na obrázku nahoře.
+Nasazení ořezového tvaru (`clip-path`) dělám přímým parametrem v SVG kódu. Proč jsem nepoužil [CSS vlastnost `clip-path`](http://codepen.io/machal/pen/qRPbYZ), která je také standardně k dispozici? Opět kvůli Safari, které ji zatím neumí.
 
+Na obrázku nahoře jste mohli vidět, že jsem si v grafickém editoru naklikal něco jako *metalový* šestiúhelník. 
 
-## Náhradní řešení pro staré Explorery a legrace se značkou `<image>`
+Vaše maska může pochopitelně vypadat jak chcete vy: trojúhelník, srdce nebo třeba obrys nosu vašeho šéfa. Proti gustu žádný dišputát. A jasně, tvar i obrázek v něm můžete třeba animovat po najetí myši.
 
-Řešení bude fungovat ve všech dnes vyráběných prohlížečích. V těch starých,  které neumí SVG, jako je třeba Internet Exploreru do verze 8, obrázek ani ořez neuvidíte. Mohli bychom pro ně přidat [SVG fallback](svg-fallbacky.md) a značku `<desc>`:
+Řešení bude fungovat ve všech dnes vyráběných [prohlížečích](prohlizece.md). V těch starých bez podpory SVG obrázek ani ořez neuvidíte.
+
+## 4) Náhradní řešení pro staré Explorery a legrace se značkou `<image>`
+
+Mohli bychom pro ně přidat [SVG fallback](svg-fallbacky.md) pomocí značky `<desc>`:
 
 ```html
 <desc>
@@ -47,13 +58,14 @@ V mém případě jsem si v grafickém editoru naklikal něco jako „metalový 
 </desc>  
 ```
 
-Ale neuděláme to. Prohlížeče se totiž tváří, že [značku `<image>` znají](https://jakearchibald.com/2013/having-fun-with-image/), i když by ji znát neměly. Přeborníkem v tomto je opět Explorer. A tak náš `<image>` uvnitř `<svg>` považuje za `<img>`, kterému jsme zapomněli přidat parametr `src`. To nám umožní vrátit se na začátek a udělat vtipně jednoduchý fallback:
+Ale neuděláme to. Prohlížeče se totiž tváří, že [značku `<image>` znají](https://jakearchibald.com/2013/having-fun-with-image/), i když by ji znát neměly. Přeborníkem v tomto je, chválabohu, právě Explorer. Náš `<image>` uvnitř `<svg>` považuje za `<img>`, kterému jsme zapomněli přidat parametr `src`. Švanda, což? To nám ale umožní vrátit se na začátek a udělat vtipně jednoduchý fallback:
 
 ```html
 <svg>
-  <image xlink:href="image.jpg" 
+  <image 
+    xlink:href="image.jpg" 
     src="image.jpg" 
-    class="svg__image" alt="Image">  
+    …>  
 </svg>
 ```
 
