@@ -2,6 +2,8 @@
 
 Nezdá se to, ale SVG (Scalable Vector Graphics) je prastarý vektorový formát, jehož první standard pochází z roku 2001.
 
+<!-- AdSnippet -->
+
 Jeho širšímu uplatnění dlouho bránil Microsoft, který pomocí Internet Exploreru až do verze 8 razil vlastní formát VML. To už jsou ale loňské sněhy a dávno to neplatí. SVG má dnes vynikající podporu a slibuje dříve nevídané možnosti pro rozhraní webových aplikací.
 
 ## SVG je prostě XML
@@ -45,6 +47,8 @@ Další možnosti:
 
 Příchod SVG asi dost obohatí vizuální jazyk webů. Mrkněte se na [tuhle prezentaci Sary Soueidan](http://slides.com/sarasoueidan/building-better-interfaces-with-svg).
 
+<!-- AdSnippet -->
+
 Na jednom konci škály užití, kde leží ikony, tedy vektory logicky nahrazují bitmapy a hlavně PNG. Na druhém konci jsou složité interaktivní infografiky, které se dříve dělaly hlavně pomocí Flashe. SVG je takový malý Flash. 
 
 ## Možnost přímého vložení jako `<svg>`
@@ -66,6 +70,8 @@ Naživo: [cdpn.io/e/LNGqZw](http://cdpn.io/e/LNGqZw).
 Grafik webu vám nepřipravuje podklady ve vektorech? Hned za ním utíkejte a citlivě mu oznamte, že od příštího projektu to jinak nepůjde.
 
 Pokud si připravujete podklady sami, na internetech se povaluje spousta kvalitních ikonek. Já velmi často chodím na [Iconfinder](https://www.iconfinder.com/). V aplikacích správu ikonek jako je [Icomoon](https://icomoon.io/) nebo [Fontastic](http://fontastic.me/) je možné vybrat si SVG export rovnou s PNG alternativami.
+
+<!-- AdSnippet -->
 
 SVG si můžete samozřejmě editovat sami. Kromě obligátního Illustratoru je populární Inkscape a řada dalších nástrojů. Hezky prý s SVG pracuje [Affinity Designer](https://affinity.serif.com/en-gb/designer/). Já třeba na Macu používám [Graphic](http://graphic.com/) (dříve iDraw):
 

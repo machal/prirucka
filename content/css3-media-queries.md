@@ -14,6 +14,8 @@ h1 { font-size: 2em }
 
 Takto zmenšíme nadpis první úrovně pro okna prohlížeče do šířky 40 čtverčíků, což je v přepočtu 640 pixelů. Toto jednoduché použití dotazů na média si můžete vyzkoušet v živé ukázce. [cdpn.io/e/Bpajbz](http://cdpn.io/e/Bpajbz)
 
+<!-- AdSnippet -->
+
 Z CSS2 budete znát podmínky pro typy médií, jako třeba `@media print`. Norma CSS3 Media Queries je vylepšuje o bližší specifikaci vlastnosti médií.
 
 ## Anatomie media query
@@ -108,6 +110,8 @@ Moderní displeje s vyšším počtem hardwarových pixelů, tedy displeje typu 
 
 Aplikuje se, pokud má zařízení poměr mezi hardwarovými a CSS pixely alespoň 2. Pokud byste náhodou ztráceli nit, na Vzhůru dolů je o CSS pixelu více informací. [vrdl.cz/prirucka/css-pixel](http://www.vzhurudolu.cz/prirucka/css-pixel)
 
+<!-- AdSnippet -->
+
 Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji namísto dotazu na vlastnost `resolution` v kombinaci s bitmapovými obrázky využívat vektorový formát SVG. U vektorových obrázků totiž vlastnost `resolution` řešit nemusíme. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg).
 
 ### A co další vlastnosti médií?
@@ -157,6 +161,8 @@ Správný zápis vypadá následovně:
 ```
 
 Občas ještě někde vídávám. Organizace CSS kódu přes velikosti zařízení už ale vytvořilo nejednu vrásku na čele webových vývojářů. Kód jedné komponenty rozhraní je pak rozdělený do více souborů a dost špatně se to spravuje. 
+
+<!-- AdSnippet -->
 
 Jediný rozumný způsob organizace stylů je podle komponent uživatelského rozhraní jako jsou navigace, tlačítka atd. Pokud je to pro vás nové, čtěte můj blogpost o organizaci CSS. [vrdl.cz/blog/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
 

@@ -3,6 +3,8 @@ CSS3 Box Sizing: způsob počítání velikosti boxu
 
 Změna způsobu počítání šířky a výšky elementu, jinak též řečeno box-modelu.
 
+<!-- AdSnippet -->
+
 Dozvíte se, proč `box-sizing: border-box` milují vývojáři, kteří dělají fluidní layout, a taky nepřátelé počítání. Čtěte dále.
 
 ## Syntaxe
@@ -31,6 +33,8 @@ viditelná šířka nebo výška obsahu.
 ```
 
 A to je taky přednastavená hodnota vlastnosti `box-sizing`, kterou – naštěstí – můžeme změnit.
+
+<!-- AdSnippet -->
 
 Pro pořádek uveďme, jak se počítá šířka a výška elementu u `box-sizing: padding-box` – je to vlastně `border-box`, kde se do výpočtu nepřipočítá šířka vlastnosti `border`.
 

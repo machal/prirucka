@@ -22,6 +22,8 @@ CSS3 Flexbox: layout pomocí pružných boxů
 
 Nová cesta pro tvorbu layoutu, zarovnání a distribuci volné plochy.
 
+<!-- AdSnippet -->
+
 *Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor bez nutnosti přepočítávání javascriptem.
 
 ### Základy v jednoduchém příkladu
@@ -37,6 +39,8 @@ Představme si triviální třísloupcový layout:
 ```
 
 HTML je jednoduché. O to přísnější máme požadavky na design. A víte co? Ukážeme si rovnou, jak je splnit pomocí flexboxu.
+
+<!-- AdSnippet -->
 
 1. **Všechny sloupce stejně vysoké.** Ano, i v případech kdy má ten jeden delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče udělat kontejner flexboxu – `.container { display: flex; }`.
 2. **Chceme pětinovou mřížku**. První a třetí sloupec má zabírat jednu pětinu – `.mandatory-1, .mandatory-2 { flex: 1; }`. A druhý pak tři pětiny – `.content { flex: 3 }`. Všimli jste si, že jsme nemuseli počítat s procenty? A že bychom nemuseli procenta přepočítávat, když bychom přidali další sloupec?
@@ -64,6 +68,8 @@ Je to hezké, že? Ale skeptik by zamručel, že se CSSko konečně naučilo to,
 Dovolte nejprve otázku. Jak dnes v CSS děláme layouty?
 
 Floaty, inline-blockem, absolutním pozicováním nebo přes `display: table`. A víte, co mají všechny společného? Ani jeden nebyl vymyšlen pro tvorbu dnešních layoutů. Ano, flexbox je první layoutovací nástroj v CSS. „Po dvaceti letech,“ prohodil by pod fousy náš bručoun.
+
+<!-- AdSnippet -->
 
 Floaty, tabulky a jejich parta *Layoutovacích technik nad hrobem* samozřejmě ještě pár měsíců až let poslouží. Každý člen skupiny má ovšem pro tvorbu layoutů větší či menší nevýhody. Ty vyplývají už ze specifikací, které s dnešními layouty příliš nepočítaly.
 

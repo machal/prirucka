@@ -2,6 +2,8 @@
 
 Nové atributy elementu `<img>`, které řeší potřebu autorů stránek zobrazovat v různých stavech responzivního designu různé varianty obrázků.
 
+<!-- AdSnippet -->
+
 Na atributech `srcset` a `sizes` je hezké, že poměrně složité rozhodování, který obrázek ve které situaci použít, necháváme na prohlížeči. Jako autoři stránky mu jen řekneme jaké varianty obrázku má k dispozici (`srcset`) a jak jsou veliké mezi jednotlivými breakpointy layoutu (`sizes`).
 
 ## `srcset` – sada zdrojů obrázku a jejich vlastností
@@ -17,6 +19,8 @@ alt=&quot;Obr&aacute;zek&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
 Prohlížeči tím sdělujeme, že jsme předgenerovali obrázek `small.png` v šířce 600 pixelů, `medium.png` v šířce 1024 pixelů a a `large.png` v šířce 1600 pixelů. V atributu `src` pak uvádíme [fallback](http://www.vzhurudolu.cz/prirucka/fallback) pro prohlížeče, které `srcset` neumí.
 
 Prohlížeč pro rozhodování o tom, který obrázek načíst, zde bere šířku okna. Takže do 600 pixelů a méně širokého okna načte `small.jpg`, mezi 601 a 1024 pixelů širokým pak `medium.jpg` a v oknech šířky od 1025 pixelů načte `large.png`.
+
+<!-- AdSnippet -->
 
 Některé prohlížeče – jako Chrome – to budou dělat chytřeji a například `small.jpg` budou zobrazovat i daleko nad hranicí 600pixelového okna, protože na vizuální kvalitě to obrázku neubere.
 
@@ -51,6 +55,8 @@ alt=&quot;Obr&aacute;zek&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
 
 
 Tímto zápisem říkáme, že responzivní layout je vymyšlený tak, že v oknech šířky 768 pixelů a více má obrázek šířku 300 pixelů ve všech ostatních pak 100 [procent šířky viewportu](http://snook.ca/archives/html_and_css/vm-vh-units).
+
+<!-- AdSnippet -->
 
 První vyhovující varianta v `sizes` vyhrává, takže na pořadí záleží. Bacha na to.
 

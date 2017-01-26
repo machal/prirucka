@@ -7,6 +7,8 @@ Technik, který oživuje uživatelská rozhraní webové prezentace nebo webové
 
 Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je potřeba jej [odlišit od frontend vývojáře](http://www.vzhurudolu.cz/blog/42-frontend-koder-vyvojar). Ten píše frontend aplikace a daleko více se pohybuje v javascriptovém kódu. Doménou kodéra je především [CSS](http://www.vzhurudolu.cz/css), [HTML](http://www.vzhurudolu.cz/html) a související technologie.
 
+<!-- AdSnippet -->
+
 Kodér má přesah do oborů, se kterými spolupracuje na podkladech pro svou práci — UX, webová grafika. Také do oborů, kterým svou práci předává — frontend či backend programování, mírně třeba i do správy serverů.
 
 Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster“, ale její používání [dnes je už překonané](http://www.vzhurudolu.cz/blog/62-frontend-pozice).

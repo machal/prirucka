@@ -2,6 +2,8 @@
 
 K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-checklist.pdf) nebo [webová aplikace](http://www.vzhurudolu.cz/checklist).
 
+<!-- AdSnippet -->
+
 ## Obsah a HTML
 
 - Ikony a favikony  
@@ -39,6 +41,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 - README.md  
 <small>V repozitáři je popsána instalace, buildování atd.</small>
 
+<!-- AdSnippet -->
 
 ## Přístupnost
 
@@ -75,6 +78,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 - Šablony pro chybové stránky 404 a 50x  
 <small>Výchozí šablony chyb serverů návštěvníkovi nepomohou. Pár [tipů v článku](https://www.interval.cz/clanky/pet-nezbytnych-prvku-uspesne-chybove-stranky-404/).</small>
 
+<!-- AdSnippet -->
 
 ## Spouštění webu
 

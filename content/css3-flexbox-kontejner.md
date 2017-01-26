@@ -33,6 +33,8 @@ flex-direction:
 
 Výchozí (`row`) hodnota vyskládá flex položky do řádky. Pokud chcete dělat layout do svislého směru, použijte hodnotu `column`.
 
+<!-- AdSnippet -->
+
 Pořadí položek se v těchto případech bere z pořadí v kódu. Pokud chcete pořadí otočit, prostě zvolte hodnoty `row-reverse` nebo `column-reverse`. To má vliv jen na vizuální vykreslení, nikoliv např. na pořadí vykreslování nebo procházení při navigaci klávesou Tab. Pozorní si asi všimli, že vlastnost lze použít i pro změnu řazení seznamů.
 
 Živé demo: [cdpn.io/e/pbarBw](http://cdpn.io/e/pbarBw).
@@ -47,6 +49,8 @@ flex-wrap:
 ![vlastnost flex-wrap](dist/images/original/flexbox-flex-wrap.jpg)
 
 Výchozí `nowrap` říká, že elementy budou vždy na hlavní ose vedle sebe (nebo pod sebou v případě, že použijete `flex-direction: column`).
+
+<!-- AdSnippet -->
 
 Alternativně `wrap`. Pak se flex položky zalomí na další řádku ve chvíli, kdy se jejich obsah zvětší natolik, že se nevejdou do jedné. Poslední flex položka na prvním řádku skočí dolů a zařadí se pod první položku.
 
@@ -99,6 +103,8 @@ align-items:
 ![align-items](dist/images/original/flexbox-align-items.jpg)
 
 Vlastnost `align-items` lze opět aplikovat na kontejner flexboxu. Výchozí hodnota je `stretch`, tedy roztažení na celou délku příčné osy.
+
+<!-- AdSnippet -->
 
 Pozor, hodnota `stretch` nefunguje, pokud mají položky nastavený rozměr pro příčnou osu, tedy ve výchozím stavu hodnotu vlastnosti `height`.
 

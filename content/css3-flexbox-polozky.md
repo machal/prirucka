@@ -115,6 +115,8 @@ Pořadí flex položky standardně odpovídá zdrojovému kódu, ale to můžeme
 
 Změna pořadí má vliv na vizuální pozici elementu a na pořadí jeho vykreslení prohlížečem. Nemá ale vliv například na pořadí čtení dokumentu čtečkami nebo na pořadí navigace pomocí klávesy tab.
 
+<!-- AdSnippet -->
+
 Výchozí hodnota je `0`, což znamená „dodržujeme pořadí ze zdrojového HTML“.
 
 Tímto zápisem pak třeba třetí položku předřadíme první:
@@ -134,6 +136,8 @@ Teď je na řadě další z radostí, kterou přináší flexbox. Konečně v CS
 ##   `margin` – zarovnání položek na hlavní ose pro jednotlivou položku  {#margin}
 
 `margin: auto` funguje podobně jako u blokových elementů. Když se počítají rozměry flex položek, nijak se tato hodnota nezohledňuje. Zbývající volné místo se pak spravedlivě rozdělí mezi všechny takto nastavené vnější okraje.
+
+<!-- AdSnippet -->
 
 Díky tomu můžete flex položce nastavit `margin-left: auto` a tím zajistit, aby vnější okraj vyplnil všechno volné místo nalevo od ní a ona se tak zarovnala zcela vpravo. Využitelné to je namísto `float` vlastností.
 

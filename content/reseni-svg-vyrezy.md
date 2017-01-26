@@ -2,6 +2,8 @@
 
 Mám fotku. Chci ji udělat specifický výřez v přímo v kódu. V CSS snadno udělám kulatý, jenže co vlastní tvar? 
 
+<!-- AdSnippet -->
+
 Po čase pro vás mám další z příkladů, které jsem ukazoval na přednášce [„10 praktických CSS3 a SVG řešení“](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246) na Webexpo 2016.
 
 ![Vlastní výřez pomocí SVG](dist/images/original/reseni-svg-vyrezy.jpg)
@@ -41,6 +43,8 @@ Všimněte si, že zde nepoužívám zanoření do `<defs>`, oblasti pro vymezen
 A máme skoro hotovo. Nic složitého, že? Ještě trochu vysvětlování a pak ten fallback pro starší prohlížeče.
 
 Nasazení ořezového tvaru (`clip-path`) dělám přímým parametrem v SVG kódu. Proč jsem nepoužil [CSS vlastnost `clip-path`](http://codepen.io/machal/pen/qRPbYZ), která je také standardně k dispozici? Opět kvůli Safari, které ji zatím neumí.
+
+<!-- AdSnippet -->
 
 Na obrázku nahoře jste mohli vidět, že jsem si v grafickém editoru naklikal něco jako *metalový* šestiúhelník. 
 

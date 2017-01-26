@@ -2,6 +2,8 @@
 
 Pojďme si rozebrat jedno z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 
+<!-- AdSnippet -->
+
 V komponentách, u kterých známe poměr stran, umožňuje nastavit svislý (typografický) rytmus v procentech z jejich výšky.
 
 Typografické hlavičky se na webu dělají docela často. Jenže když chcete, aby na různě velkých displejích vypadaly hezky, musíte pro jednotlivé breakpointy dělat ruční zásahy pomocí [Media Queries](css3-media-queries.md):
@@ -73,6 +75,8 @@ $boxHeightPercent: "( (100vw - 2em) / 100 / 16 * 9 )";
 ```
 
 Hotovo. Tohle řešení funguje ve všech prohlížečích, které podporují jednotky `vw` – tedy všech moderních. 
+
+<!-- AdSnippet -->
 
 Je dobré ještě pomyslet na náhradní řešení v IE verze 9 a starších:
 

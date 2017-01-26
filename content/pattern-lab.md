@@ -7,6 +7,8 @@
 
 Používám ho na aktuálním projektu a mám takový pocit, že jinak už větší weby dělat nechci. Tady budu vysvětlovat proč.
 
+<!-- AdSnippet -->
+
 Nejprve si ale musíme povědět něco o systémech designu. 
 
 <p class="podcast">
