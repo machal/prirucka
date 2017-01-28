@@ -2,5 +2,8 @@
 
 # Návrh rozhraní v éře mobilů
 
-*TODO* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aspernatur, repellendus quos aliquam omnis dolorum, nulla eos similique aperiam velit corporis harum laudantium id odit vel nam quibusdam dolores officia.
+Než si prakticky ukážeme, jaký proces pro návrh používám, musíme vstřebat filozofii vyplývající ze zkušeností, průzkumů a dat, které za mým uvažováním stojí. 
 
+Kapitolu můžete brát jako aktualizaci znalostí o návrhu rozhraní obohacený o přítomnost mobilních zařízení. 
+
+Projdeme si jakousi mou filozofii v podobě [čtyř základních vlastností](4-principy-ui.md) dobrého rozhraní, podíváme se na [Mobile First](mobile-first.md) způsob návrhu, projdeme si data o tom [jak lidé používají nová zařízení](lide-a-zarizeni.md) a pak [praktické tipy](tipy-responzivni-ui.md) pro návrh dobrého responzivního rozhraní.
