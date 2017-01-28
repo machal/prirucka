@@ -1,4 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 11](dist/images/original/numbers/011.jpg)
+</p>
 
 # Další tipy, triky
 

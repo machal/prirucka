@@ -1,4 +1,7 @@
-![Kapitola 9](dist/images/original/numbers/009.jpg)
+<p class="new-page" markdown="1">
+![Kapitola 9](dist/images/original/numbers/009.jpg) 
+</p>
+
 
 # Media Queries a layout
 

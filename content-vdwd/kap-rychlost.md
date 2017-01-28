@@ -1,4 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 5](dist/images/original/numbers/005.jpg)
+</p>
 
 # Rychlost načítání
 

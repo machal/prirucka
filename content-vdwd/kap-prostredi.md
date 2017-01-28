@@ -1,4 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 1](dist/images/original/numbers/001.jpg)
+</p>
 
 # Prostředí (responzivního) webdesignu 
 

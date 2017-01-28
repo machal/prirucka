@@ -1,4 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 7](dist/images/original/numbers/007.jpg)
+</p>
 
 # Návrh rozhraní v éře mobilů
 

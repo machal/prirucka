@@ -1,4 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 2](dist/images/original/numbers/002.jpg)
+</p>
 
 # Úvod do tvorby webu
 

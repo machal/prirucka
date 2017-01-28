@@ -1,4 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 8](dist/images/original/numbers/008.jpg)
+</p>
 
 # Design komponent rozhraní
 

@@ -1,5 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 3](dist/images/original/numbers/003.jpg)
-
+</p>
 
 # Design dokumentu
 

@@ -1,4 +1,6 @@
+<p class="new-page" markdown="1">
 ![Kapitola 10](dist/images/original/numbers/010.jpg)
+</p>
 
 # Navrhujeme navigaci 
 
