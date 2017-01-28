@@ -1,7 +1,3 @@
-<p class="new-page" markdown="1">
-![Kapitola 2](dist/images/original/numbers/002.jpg)
-</p>
-
 # Úvod do tvorby webu
 
 Vy zkušenější víte, že dnešní webdesign se jako celek nedá pojmout jediným člověkem. Já se třeba ze židle frontend designéra jakžtakž vyznám v návrhu uživatelského rozhraní, jazycích HTML a CSS a souvisejících tématech. Kolegům UX designérům, copywriterům, marketingovým expertům, vývojářům, serverovým administrátorům a dalším pod ruce vidím jen málo.

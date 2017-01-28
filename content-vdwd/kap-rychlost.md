@@ -1,7 +1,3 @@
-<p class="new-page" markdown="1">
-![Kapitola 5](dist/images/original/numbers/005.jpg)
-</p>
-
 # Rychlost načítání
 
 Hrozně rád vařím. Dělám to ale relativně málo, takže jako každý amatér nemám rutinně zvládnuté pracovní postupy a v hlavě všechny recepty. Takže se mi občas stane, že na něco podstatného zapomenu. Jednou v jídle jaksi chybí sůl. Jindy čekám až vykyne těsto bez kvasnic. Prostě zapomnětlivý kuchař.

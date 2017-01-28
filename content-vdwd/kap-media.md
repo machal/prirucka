@@ -1,7 +1,3 @@
-<p class="new-page" markdown="1">
-  ![Kapitola 6](dist/images/original/numbers/006.jpg)
-</p>
-
 # Obrázky a další média
 
 > Potvory co vystrkují růžky. Vezmem' na ně nůžky!

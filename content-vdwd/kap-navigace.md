@@ -1,7 +1,3 @@
-<p class="new-page" markdown="1">
-![Kapitola 10](dist/images/original/numbers/010.jpg)
-</p>
-
 # Navrhujeme navigaci 
 
 Navigace je paní Columbová mobilního webdesignu. Mnozí o ní mluví. Všichni vědí, že tam někde bude. Ale nikdo ji nikdy neviděl. 

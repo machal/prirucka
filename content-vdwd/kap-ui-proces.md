@@ -1,7 +1,3 @@
-<p class="new-page" markdown="1">
-![Kapitola 8](dist/images/original/numbers/008.jpg)
-</p>
-
 # Design komponent rozhraní
 
 Dosud jsme se v knize zabývali jen dokumentem: zjednodušeně textem a obrázky v něm. Teď už konečně přichází na řadu přemýšlení nad návrhem složitějšího uživatelského rozhraní. Nad návrhem komponent jako navigace, fotogalerie, hlavičky nebo patičky celých webů. Vsadím se s vámi, že alespoň jeden takový prvek někde na stránce máte.

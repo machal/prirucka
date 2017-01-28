@@ -1,8 +1,3 @@
-<p class="new-page" markdown="1">
-![Kapitola 9](dist/images/original/numbers/009.jpg) 
-</p>
-
-
 # Media Queries a layout
 
 > To je prosím klobouk kouzelníka Pokustona a v něm bydlí králík. Bob.  „Vstávat! Vstávat a cvičit!“ nabádá Bob, „je ráno!“.
