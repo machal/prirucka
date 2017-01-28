@@ -2,5 +2,6 @@
 
 # Navrhujeme navigaci 
 
-*TODO* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aspernatur, repellendus quos aliquam omnis dolorum, nulla eos similique aperiam velit corporis harum laudantium id odit vel nam quibusdam dolores officia.
+Navigace je paní Columbová mobilního webdesignu. Mnozí o ní mluví. Všichni vědí, že tam někde bude. Ale nikdo ji nikdy neviděl. 
 
+Zvykli jsme si složitou desktopovou navigaci na mobilech prostě schovat do „hamburger“ ikony. [V první části](mobilni-navigace-hamburger.md) kapitoly se ptám, zda je to vůbec rozumné a [v druhé](responzivni-navigace.md) se pokoužím představit všechny možné návrhové vzory pro dnešní navigace na mobilech. 

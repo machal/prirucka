@@ -2,5 +2,4 @@
 
 # Další tipy, triky
 
-*TODO* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aspernatur, repellendus quos aliquam omnis dolorum, nulla eos similique aperiam velit corporis harum laudantium id odit vel nam quibusdam dolores officia.
-
+Tady se, moji milí, dostáváme do samotného závěru. V poslední kapitole na vás čeká text [o testování responzivních webů](jak-testovat-responzivni-weby.md) a pak povětšinou technické tipy a triky, které se prostě jinam nevešly.
