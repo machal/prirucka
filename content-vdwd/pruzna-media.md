@@ -1,8 +1,6 @@
 # Pružná média: obrázky, video a vkládané elementy
 
-> Potvory co vystrkují růžky. Vezmem' na ně nůžky!
-
-Vložíme obsah do stránky a ono to vlastně bude samo o sobě responzivní. To se dobře říká, že? Jenže – tohle se týká textu, ne už dalších elementů. 
+Jak zařídit, aby se obrázky, video a prvky vkládané přes `<iframe>` přizpůsobovaly šířce rodičovského elementu a ještě k tomu zachovávaly poměr stran?
 
 ## Pružné obrázky
 
