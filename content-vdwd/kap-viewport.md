@@ -1,5 +1,3 @@
-![Kapitola 4](dist/images/original/numbers/004.jpg)
-
 # Viewport na mobilech
 
 Mobily nám přinesly tři zásadní radosti. První jsou notifikace z Facebooku, chodící ve tři ráno. Druhá je možnost ukázat dětem každý den jinou fotku jiného koťátka. Třetí jsou viewporty na mobilech.
