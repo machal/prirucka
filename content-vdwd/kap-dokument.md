@@ -1,4 +1,4 @@
-![Kapitola 3](dist/images/original/numbers/3.jpg)
+![Kapitola 3](dist/images/original/numbers/003.jpg)
 
 
 # Design dokumentu

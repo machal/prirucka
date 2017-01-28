@@ -1,4 +1,4 @@
-![Kapitola 2](dist/images/original/numbers/2.jpg)
+![Kapitola 2](dist/images/original/numbers/002.jpg)
 
 # Úvod do tvorby webu
 

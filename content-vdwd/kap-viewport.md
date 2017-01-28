@@ -1,4 +1,4 @@
-![Kapitola 4](dist/images/original/numbers/4.jpg)
+![Kapitola 4](dist/images/original/numbers/004.jpg)
 
 # Viewport na mobilech
 

@@ -1,4 +1,4 @@
-![Kapitola 6](dist/images/original/numbers/6.jpg)
+![Kapitola 6](dist/images/original/numbers/006.jpg)
 
 # Obrázky a další média
 

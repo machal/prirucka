@@ -1,4 +1,4 @@
-![Kapitola 10](dist/images/original/numbers/10.jpg)
+![Kapitola 10](dist/images/original/numbers/010.jpg)
 
 # Navrhujeme navigaci 
 

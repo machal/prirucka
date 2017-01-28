@@ -1,4 +1,4 @@
-![Kapitola 8](dist/images/original/numbers/8.jpg)
+![Kapitola 8](dist/images/original/numbers/008.jpg)
 
 # Design komponent rozhraní
 

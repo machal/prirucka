@@ -1,4 +1,4 @@
-![Kapitola 5](dist/images/original/numbers/5.jpg)
+![Kapitola 5](dist/images/original/numbers/005.jpg)
 
 # Rychlost načítání
 

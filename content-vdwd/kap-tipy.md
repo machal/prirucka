@@ -1,4 +1,4 @@
-![Kapitola 11](dist/images/original/numbers/11.jpg)
+![Kapitola 11](dist/images/original/numbers/011.jpg)
 
 # Další tipy, triky
 

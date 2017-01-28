@@ -1,4 +1,4 @@
-![Kapitola 7](dist/images/original/numbers/7.jpg)
+![Kapitola 7](dist/images/original/numbers/007.jpg)
 
 # Návrh rozhraní v éře mobilů
 

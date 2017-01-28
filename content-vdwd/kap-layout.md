@@ -1,4 +1,4 @@
-![Kapitola 9](dist/images/original/numbers/9.jpg)
+![Kapitola 9](dist/images/original/numbers/009.jpg)
 
 # Media Queries a layout
 

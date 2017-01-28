@@ -1,4 +1,4 @@
-![Kapitola 1](dist/images/original/numbers/1.jpg)
+![Kapitola 1](dist/images/original/numbers/001.jpg)
 
 # Prostředí (responzivního) webdesignu 
 
