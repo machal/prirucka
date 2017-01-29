@@ -1,8 +1,3 @@
-<div class="new-page" markdown="1">
-![Kapitola 3](dist/images/original/numbers/003.jpg)
-</div>
-
-
 # Design dokumentu
 
 „Dokumentu?! V době, kdy prakticky vše co běží v prohlížeči je skoro vždy aplikace a ne dokument? V době složitých uživatelských rozhraní? V době javascriptových webových aplikací, kdy v HTML zdrojáku skoro nic není?“ mohli byste namítnout. Jenže já bych s vámi s dovolením nesouhlasil. 

@@ -14,8 +14,8 @@ Ale dopadlo to dobře. Použil jsem trik se změnou definice slova. „Webdesign
 
 Webdesign jako obor si tedy můžeme zjednodušit:
 
-- Do pěti minut pak dostaneme celý [proces realizace webu](zaklady-procesu.md). 
-- Práci, která by u profesionálních projektů předcházela „designu webového uživatelského rozhraní“, tedy zejména UX design si shrneme do [User Centered Design Canvasu](design-canvas.md) a jeho [aplikace na příkladu](priklad-ux-canvas.md). 
-- V knihách se to hemží pohádkovými bytostmi. V našem připadě to bude *Imaginární copywriterka*. Ta začaruje a dodá [obsah pro náš příklad](priklad-obsah.md). 
+- Do pěti minut pak dostaneme celý [proces tvorby webu](zaklady-procesu.md). 
+- Analytickou práci a UX design si shrneme do [User Centered Design Canvasu](design-canvas.md) a jeho [aplikace na příkladu](priklad-ux-canvas.md). 
+- …a protože v knihách se to má hemží pohádkovými bytostmi, v našem případě to bude *Imaginární copywriterka*. Ta začaruje a dodá [obsah pro náš příklad](priklad-obsah.md). 
 
-Telefonní číslo na psychiatrickou záchranku tedy odkládám do šuplíku, kam znovu sáhnu až budou děti v pubertě. Pojďme tedy na ten pětiminutový webdesignový proces.
+Telefonní číslo na psychiatrickou záchranku tedy odkládám do šuplíku, kam znovu sáhnu až budou děti v pubertě. Pojďme teď za pět minut vysvětlit ten webdesignový proces. 
