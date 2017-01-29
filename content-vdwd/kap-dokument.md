@@ -8,8 +8,7 @@ Blogy se vizuálně od dokumentů moc nevzdalují, eshopy už trochu více. Čis
 
 Nic to ale nemění na tom, že někde dole, pod sebesložitějším rozhraním a sebepropracovanější javascriptovou aplikací *může* být prosté strukturované HTML se styly. Je to unikátní vlastnost webu, která mimojiné umožňuje zachovávat vynikající zpětnou i dopřednou kompatibilitu. 
 
-
-## Technologicky je stavění na dokumentu stabilnější
+### Technologicky je stavění na dokumentu stabilnější
 
 Samozřejmě, některé webové aplikace je neefektivní na HTML dokumentu stavět. Současný technologický stav webdesignu to také nečiní efektivním. Serverová rozšíření frontendových frameworků jako je Angular nebo React nejsou ve webových týmech moc časté a taky jsou prostě příliš čerstvé.
 
@@ -21,7 +20,7 @@ Velmi často je ale stavění na dokumentu výhodné. A to hned z několika dův
 
 
 
-## Navrhujeme od obsahu, nikoliv od layoutu
+### Navrhujeme od obsahu, nikoliv od layoutu
 
 Naprostá většina webů dnes vzniká v kreslícím nástroji jako je Photoshop. Otevřeme prázdný dokument, plochu jako ruzyňská přistávací dráha. Ta svádí k tomu, že první věc, kterou tam chceme udělat je rozvržení, layout. Až pak se přes komponenty rozhraní propracujeme k obsahu a jeho vlastnostem. Poznáváte se? Nedivím se, je to intuitivní proces, který vám nenápadně nadiktoval nástroj, který používáte. Já se s ním ale ztotožnit nedokážu.
 
@@ -38,7 +37,7 @@ Ostatně, stačí se podívat hned na první řádku HTML kódu. Mluví o typu *
 Heydon Pickering v knize „Inclusive Design Patterns“.
 
 
-## Jak to nacpat do agenturního workflow?
+### Jak to nacpat do stávajících pracovních postupů?
 
 Vsadím levou botu, že byť jste dosud byli zvyklí pracovat jinak, některým z vás se postup práce ukazovaný v knížce zalíbí. A vsadím pravou, že budete narážet na železné zvyky v pracovních postupech vašeho týmu. 
 

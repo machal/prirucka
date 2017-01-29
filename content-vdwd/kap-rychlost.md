@@ -19,7 +19,7 @@ Veškeré tyto aspekty dobrého webu musejí být promýšleny jako nedílné so
 A když se dostáváme k rychlosti: vždycky říkám, že je děsně důležité, aby vývojáři byli přítomní už v oné přípravné fázi projektu. Alespoň pro konzultace, ale ideálně i s možností zůčastnit se přípravy prototypů. To zase probírám [v kapitole o HTML prototypování](html-prototypovani.md).  Webový projekt je stejně technický jako designérský.
 
 
-## Speed Budget: rozpočet na rychlost 
+### Speed Budget: rozpočet na rychlost 
 
 Speed Budget je metrika, která říká, jaký maximální čas načtení mají vaše vstupní stránky mít. 
 
