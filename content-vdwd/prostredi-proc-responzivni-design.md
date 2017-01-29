@@ -55,6 +55,7 @@ Na Vzhůru dolů je pro zájemce o CSS pixel více informací. [vrdl.cz/prirucka
 
 Zjednodušeně z toho vyplývá, že dekorativní grafiku bychom teď měli dělat ve vektorovém SVG a u fotografií zajistit pomocí atributů `srcset` a `sizes` dost variant pro to, aby si prohlížeč mohl pro různě husté rastry vybrat tu správnou. Více si o nich řekneme [v kapitole o obrázcích](kap-media.md).
 
+
 ## Úroda prohlížečů
 
 Když vezmeme celý trh, mezi prohlížeči to vypadá takto: Chrome vede, Explorery verzí 10 a starší už téměř vymřely a hlavně: prohlížečů je dnes děsně moc. 
@@ -125,12 +126,12 @@ Responzivní weby a aplikace se spíše skrze hardware naučí lépe využívat 
 
 ### Sledujte hlasová uživatelská rozhraní
 
-
-
 A když už se tak odvážně historicky ztrapňuji, příští velký technologický posun vidím v hlasovém uživatelském rozhraní. 
 
 Sami asi víte, že hlasový vstup se stále zlepšuje i ve stávajících zařízeních. V domácnostech nebo třeba v autech je pro hlasové ovládání naprosto ideální prostředí. Naše předškolní děti, například, ovládají YouTube na tabletu zcela bez zábran hlasem.
 
-Sledujte zařízení jako třeba Google Home. Nebo si na YouTube pusťte představení Amazon Echo. [https://youtu.be/KkOCeAtKHIc](https://youtu.be/KkOCeAtKHIc)
+Sledujte zařízení jako třeba Google Home. Nebo si na YouTube pusťte představení Amazon Echo. [youtu.be/KkOCeAtKHIc](https://youtu.be/KkOCeAtKHIc)
 
 Tam už moc příležitostí pro tvůrce webových stránek nebude. Omlouvám se. Ale nebojte, mluvící rozhraní ta naše obrazovková ani zdaleka nenahradí. Tuhle knížku ještě neodkládejte, to vážně ne.
+
+Než se z této futurologické odbočky dostaneme zpět k responzivním webům, musíme to vzít přes aplikace. Protože co je dnes web a co aplikace? Co je nativní, hybridní nebo univerzální aplikace? Je v tom děsný zmatek, takže mě prosím dovolte ještě tuhle odbočku.
