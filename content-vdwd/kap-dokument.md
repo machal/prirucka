@@ -43,6 +43,6 @@ Ostatně, stačí se podívat hned na první řádku HTML kódu. Mluví o typu *
 
 > `<!DOCTYPE html>` slouží jako důležitá připomínka toho, že i když navrhujete interakčně složité a dynamické rozhraní, stále prostě jen vkládáte obsah do okna prohlížeče.
  
-Dobrá tedy, vezmeme to v této kapitole postupně. Začátečníkům nejprve sdělím nutné základy [grafického designu](graficky-design.md), zamyslíme nad [typografií](typografie.md) obecně, ale také dopady responzivního webdesignu na ni. Poprvé se v knize ponoříme do lehkých technikálií: od [jednotek](jednotky.md), které na webu můžeme používat, přes způsob jak postavit [dokumentovou základnu webu](dokument-nastroje.md). Na konci kapitoly bude náš milý e-shop mít jakýs takýs [grafický charakter](priklad-dokument.md). Těšíte se tak jako já?
+Dobrá tedy, vezmeme to v této kapitole postupně. Začínajícím designérům a vývojářům nejprve sdělím nutné základy [grafického designu](graficky-design.md), zamyslíme nad [typografií](typografie.md) obecně, ale také dopady responzivního webdesignu na ni. Poprvé se v knize ponoříme do lehkých technikálií: od [jednotek](jednotky.md), které na webu můžeme používat, přes způsob jak postavit [dokumentovou základnu webu](dokument-nastroje.md). Na konci kapitoly bude náš milý e-shop mít jakýs takýs [grafický charakter](priklad-dokument.md). Těšíte se tak jako já?
 
 
