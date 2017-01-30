@@ -1,6 +1,6 @@
-# SVG řešení: Vlastní výřezy obrázků pomocí SVG
+# Řešení: Vlastní výřezy obrázků pomocí SVG
 
-Mám fotku. Chci ji udělat specifický výřez v přímo v kódu. V CSS snadno udělám kulatý, jenže co vlastní tvar? 
+Mám fotku a chci ji udělat specifický výřez v přímo v kódu. Pomocí CSS snadno zařídím kulatý, jenže co vlastní tvar? 
 
 <!-- AdSnippet -->
 
@@ -16,7 +16,7 @@ Po čase pro vás mám další z příkladů, které jsem ukazoval na přednáš
 ```html
 <svg>
   <image xlink:href="image.jpg" 
-    class="svg__image" alt="Image">  
+    alt="Image">  
 </svg>
 ```
 
@@ -50,9 +50,9 @@ Na obrázku nahoře jste mohli vidět, že jsem si v grafickém editoru naklikal
 
 Vaše maska může pochopitelně vypadat jak chcete vy: trojúhelník, srdce nebo třeba obrys nosu vašeho šéfa. Proti gustu žádný dišputát. A jasně, tvar i obrázek v něm můžete třeba animovat po najetí myši.
 
-Řešení bude fungovat ve všech dnes vyráběných [prohlížečích](prohlizece.md). V těch starých bez podpory SVG obrázek ani ořez neuvidíte.
+Řešení bude fungovat ve všech dnes vyráběných [prohlížečích](prohlizece.md). Ve starých bez podpory SVG obrázek ani ořez neuvidíte.
 
-## 4) Náhradní řešení pro staré Explorery a legrace se značkou `<image>`
+## 4) Víte, že prohlížeče znají`<image>`? Postavíme na tom náhradní řešení pro staré Explorery
 
 Mohli bychom pro ně přidat [SVG fallback](svg-fallbacky.md) pomocí značky `<desc>`:
 
