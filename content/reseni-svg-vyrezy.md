@@ -52,7 +52,7 @@ Vaše maska může pochopitelně vypadat jak chcete vy: trojúhelník, srdce neb
 
 Řešení bude fungovat ve všech dnes vyráběných [prohlížečích](prohlizece.md). Ve starých bez podpory SVG obrázek ani ořez neuvidíte.
 
-## 4) Víte, že prohlížeče znají`<image>`? Postavíme na tom náhradní řešení pro staré Explorery
+## 4) Víte, že prohlížeče znají `<image>`? Postavíme na tom náhradní řešení pro staré Explorery
 
 Mohli bychom pro ně přidat [SVG fallback](svg-fallbacky.md) pomocí značky `<desc>`:
 
