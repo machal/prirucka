@@ -1,13 +1,15 @@
 # Typografie na webu
 
-Písmo má dvě funkce: 
+Pojďme si projít základní množinu znalostí o využití písma na webu, zmínit pár častých chyb a dvakrát podtrhnout hlavní pravidlo pro stavbu responzivního rozvržení stránky. Předtím ale ještě zmíním jeden účel písma, na který se často zapomíná. 
 
-* **Čteme je.**  
-To by nás nemělo překvapit. O to horší je fakt, že jen málo textů je na webu vysázených písmy nebo způsobem, který se čte dobře.
-* **Vyvolává v nás dojem.**  
-Informaci o tom, co na webu čekat a naše sympatie k němu určuje písmo a nebo jeho kombinace. 
+## Písmo v nás vyvolává emoce
 
-Typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů. Proto níže doporučím pár zdrojů ke studiu a předtím snad jen seznam nejčastějších chyb.
+Ještě předtím než se začteme, řekne nam typ písma (spolu s dalšími prostředky grafického designu) informaci o tom, co od webu očekávat. Jsem na webu seriózního magazínu, užitného webu typu e-shopu nebo na stránkách Déčka, určeného pro děti? Asi je jasné, že tohle všechno je možné sdělit pouhou volbou písma. Je toho ale mnohem více.
+
+Typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů. Myslím si nicméně, že základní úroveň znalosti typografie patří do výbavy každého webového řemeslníka, designérů i vývojářů. Zájemcům dále doporučím pár zdrojů ke studiu.
+
+Typografie nemá exaktní pravidla, a v takové situaci mě pro potřeby předání základní úrovně typografických znalostí připadá lepší začít z druhého konce. 
+
 
 ## Časté typografické chyby
 
@@ -17,63 +19,62 @@ Typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů.
 
 ![](dist/images/original/typografie-17.png)
 
-**2) Špatný kontrast a další technické parametry.** Novinky.cz jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat na [contrastchecker.com](http://contrastchecker.com/).
+**2) Špatný kontrast a další technické parametry.** Novinky.cz jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků.  
+Tip na nástroj: kontrast si můžete zkontrolovat na [contrastchecker.com](http://contrastchecker.com/).
 
 ![](dist/images/original/typografie-18.png)
 
-**3) Nesprávné znaky.** Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky). Není to žádná typografická buzerace. Prostě se to lépe čte. Podívejte se na typografický tahák od Beneš a Michl. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
+**3) Nesprávné znaky.** Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky). Není to žádná buzerace typografických snobů. Prostě se to lépe čte.   
+Tip na nástroj: Typografický tahák od Beneš a Michl. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
 
-## Sazba webového dokumentu
+## Ideální šířka a výška řádku
 
-### Ideální šířka a výška řádku
+Teď zpozorněte, protože zmíním jeden ze základních designérských principů dnešního (responzivního) webdesginu.
 
-Na příkladu Wikipedie jste viděli…
+Na příkladu Wikipedie jsem ukazoval, jak se může dlouhý řádek negativně projevit do celkové čitelnosti textu a webu.
 
-* Velké displeje: 66 znaků je ideál, 45-75 vyhovující - (Bringhurst) předpokládá se vysázení patkovým písmem a do jednoho sloupce. Mění se podle parametrů písma - patkové, nepatkové, kontrast, počet sloupců…
-* Na malých displejích není snadné toho dosáhnout, proto se snižuje výška řádku.
+Už od dob zásadní typografické příručky Roberta Bringhurst platí následující:
 
-![](dist/images/original/typografie-19.png)
+- 66 je ideální počet znaků na jedné řádce,
+- 45-75 je pak vyhovující rozmezí.
 
-### Mřížka účaří (Baseline grid)
+Jako zdroj používám Bringhurstovy pravidla shrnuté na webu „The Elements of Typographic Style Applied to the Web“. [webtypography.net/2.1.2](http://webtypography.net/2.1.2)
 
-Mezi webaři je často diskutována a já se vám tady bez mučení se vám přiznám, že patřím do skupiny, která její použití považuje za zbytečnou komplikaci.
+Samozřejmě – na malých displejích toho není možné dosáhnout. Doproručení pak říkají s ubývajícím počtem znaků na řádce snižovat i jeho výšku, protože oči častěji přecházejí z jedné řádky na druhou. Praktické řešení v CSS pak ukazoval Marko Dugonjić na své přednášce „Responsive Web Typography“ na WebExpo 2014. [vrdl.in/rwdtypo](https://speakerdeck.com/maratz/responsive-web-typography-at-webexpo)
 
-*TODO img*
 
-Mřížku účaří jsem opět zdědili z tiskových médií. Hlavně z novin, kde zaručuje, že na nekvalitním papíře nebudou do prostoru mezi řádky prosvítat texty z druhé strany.
+```css
+/* Méně než 45 znaků */
+body { line-height: 1.4 }
+p    { margin-bottom: 1.4em }
 
-Z tisku také víme, že text vysázený v mřížce účaří se lépe čte. Ale na webu je těžké toho dosáhnout: máme tady různé fonty, různě vykreslované na různých platformách. Máme tady média typu obrázky nebo videa. Máme fluidní rozvržení stránky. A jako na potvoru se web zobrazuje v různě velkých obrazovkách. 
+/* 45-60 znaků */
+body { line-height: 1.45 }
+p    { margin-bottom: 1.45em }
 
-Účaří je fajn dodržovat v místech, kde spolu bezprostředně sousedí dva texty. Dodržovat ji v celém rozhraní webů je hotové šílenství, ne-li nemožnost.
+/* 60-75 znaků */
+body { line-height: 1.5 }
+p    { margin-bottom: 1.5em }
+```
 
-### Modulární stupnice velikostí písma (Modular Scale)
+Toto nastavení předpokládá vysázení patkovým písmem a do jednoho sloupce. Drobně se samozřejme může měnit podle parametrů písma. Jinak to bude pro nepatkové písmo, jiný kontrast, specifický charakter písma nebo počet sloupců. Nejlépe nám správnou volbu potvrdí poctivé uživatelské testování, ale pro začátek stačí nastavení písem poctivě testovat na různých zařízeních a různých lidech v okolí.
 
-Ani tady nepatřím mezi fanoušky, to říkám hned. Modular Scale je způsob jak sjednotit velikosti prvků rozhraní a odstupňovat je nějakým „racionálním" způsobem. Se sjednocením velikostí prvků naprosto souhlasím, ale používané stupnice mě připadají spíše „racionalizující to co se designérům líbí“ než „založené na racionálních základech“.
+Nicméně, délka řádku je první designérské pravidlo, na které bychom při návrhu rozhraní měli myslet. Postup návrhu pak ideálně vypadá tak, že zvolíme písmo, získáme obsah a až na těchto dvou nerozlučných přátelích postavíme systém pro layout stránky.
 
-*TODO img*
-
-V příkladu půjdeme jiným směrem, ale klidně si to zkuste na [modularscale.com/](http://www.modularscale.com/).
-
-## Tipy a triky pro typografii na webu
-
-*TODO*
-
-* **Patkové pro texty?**  
-Občas se to zpochybňuje, ale myslím, že patkové písmo se středně vysokou střední výškou jako Georgia je spolehlivější volba. Patky jednoznačněji definují jednotlivé znaky a nehrozí zpomalení čtení například záměnou „h" a „n“ jako u moderních bezpatkových písem typu Helvetica nebo Roboto.
-* **Bezpatkové pro nadpisy a rozhraní?**  
-Zase říkám ano. Je to totiž praktičtější. Bezpatková písma jsou užší, takže se do nadpisů nebo prvků rozhraní (jako navigace) prostě vejdou i delší texty. 
-* lowercase číslovky z opentype (font-feature-setting) (nepoutají v textu takovou pozornost)
-* small caps: např. akronymy nebo mezinadpisy (nepoužívat zprasené kapitálky)
-* ligatury (fi, st, Th) viz CSS3 Fonts Module
-* fout, foit - web font loader
-* text rendering [vrdl.in/dz5f9](http://blog.typekit.com/2011/01/26/css-properties-that-affect-type-rendering/)
-* zalamování textu - hyphens: auto 
+<div class="ebook-only" markdown="1">
+Máte pravdu, sem se odkazuji, když [na začátku kapitoly](kap-dokument.md) mluvím o potřebě návrhu rozhraní směrem od obsahu, nikoliv od rozvržení. I v našem příkladu vyjdeme při vymýšlení layoutu z optimální délky čtené řádky.
+</div>
 
 ## Další zdroje o typografii
 
-* **Kniha „On Web Typography“**  
+* *Kniha „On Web Typography“*
 Skvělá učebnice typografie od Jasona Santa Maria. [vrdl.in/76nb2](https://abookapart.com/products/on-web-typography)
-* **Přednáška „Praktická typografie pro webové kodéry“**  
-Dana Srba na jedné z akcí Frontendisti.cz. [youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
-* **Online kniha „The Elements of Typographic Style Applied to the Web“**  
+* *Přednáška „Praktická typografie pro webové kodéry“*  
+Dana Srb se hezky rozpovídal na jedné z akcí Frontendisti.cz. Velmi praktické. [youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
+* *Online kniha „The Elements of Typographic Style Applied to the Web“*  
 Bible od Roberta Bringhursta a spoluautorů. [webtypography.net](http://webtypography.net/toc/)
+
+<div class="ebook-only" markdown="1">
+Jasně, vnímáte mě dobře. Typografii mám za nejzákladnější stavební kámen návrhu skoro každého webu. Než se dostaneme k dalším zdrojům ke studiu, pojďme si ještě zmínit dva typografické principy rozšířené mezi designéry, které na webu naopak prožívám velmi málo a nepoužívám skoro vůbec. Mřížku účaří a modulární stupnici velikostí.
+</div>
+
