@@ -110,6 +110,6 @@ Nejčastěji používám pro roztažení plochy layoutu na celou výšku okna:
 ```
 
 <div class="ebook-only" markdown="1">
-To zajímavější ale teprve přijde. Na jednotkách viewportu můžete vystavět takzvanou [plně responzivní typografii](plne-responzivni-typografie.md), které se věnuji už za dvě podkapitoly.
+To nejzajímavější ale teprve přijde. Na jednotkách viewportu můžete vystavět takzvanou [plně responzivní typografii](plne-responzivni-typografie.md), které se věnuji už v přespříští podkapitole. Nejprve ale si ale trochu *zazůmujeme*.
 </div>
 
