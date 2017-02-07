@@ -2,7 +2,7 @@
 
 Grafický designér navrhuje firemní identitu, reklamní plochy, obaly, aplikace nebo (chvíle napětí!) weby.
 
-Pojďme se o této části návrhu webu pobavit více a  otevřít si k tomu například aktuální web jednoho z nejzkušenějších českých grafických designérů, Jiřího Tvrdka.
+Pojďme se o této části návrhu webu pobavit alespoň v nejzákladnějších obrysech. Otevřeme si k tomu například aktuální web jednoho z nejzkušenějších českých webových grafických designérů, Jiřího Tvrdka.
 
 ![Tvrdek.cz](dist/images/original/vdwd/tvrdek-cz.png)
 
@@ -11,7 +11,7 @@ Pojďme se o této části návrhu webu pobavit více a  otevřít si k tomu nap
 Prostředky, které Jiří použil k sestavení kompozice, nejsou nijak složité: 
 
 1. **Typografie**  
-Základní kámen, na kterém je nebo by měla být postavena identita každé firmy, instituce a ve výsledku pak i každého webu. Budeme se jí ještě věnovat, vydržte.
+Základní kámen, na kterém je nebo by měla být postavena identita každé firmy, instituce a ve výsledku pak i každého webu. Budeme se jí [ještě věnovat](typografie.md), vydržte.
 2. **Multimédia**  
 Fotky, ilustrace, videa nebo třeba koláčové grafy, když chcete.
 3. **Rozvržení**  
@@ -21,7 +21,7 @@ Grafický styl, jakým jsou vyvedeny prvky stránky. V době psaní ještě stá
 
 Kromě této základní čtyřky mají weboví grafici k dispozici také interakce a animace. Ty na obrázku nevidíte a v některých případech je grafičtí designéři ani nenavrhují. Může to být práce specializovaného interakčního designéra nebo prostě frontend kodéra. 
 
-Je asi jasné, že velmi záleží na kvalitě každé z těchto čtyř komponent. Takže dobře navržený web s nekvalitními fotografiemi prostě fungovat nebude, čehož jsme každý den nešťastnými svědky. Každý ze čtyř prostředků, snad kromě layoutu, podléhá módě. Ale to jak dohromady fungují by nemělo být výsledkem grafikova aktuálního rozpoložení pod vlivem módy a měkkých drog. Pojďme si teď zvolat něco moc důležitého: 
+Je asi jasné, že velmi záleží na kvalitě každé z těchto čtyř komponent. Takže dobře navržený web s nekvalitními fotografiemi prostě fungovat nebude, čehož jsme každý den nešťastnými svědky. Každý ze čtyř prostředků, snad kromě layoutu, podléhá módě. Ale to jak dohromady fungují by nemělo být výsledkem grafikova aktuálního rozpoložení pod vlivem módy a měkkých drog. Ty jsou povoleny, ale i tak by grafika měla být důsledkem promyšleného procesu.
 
 ## Grafika se může líbit, ale musí sloužit!
 
@@ -37,16 +37,16 @@ Jan to na svém webu rozebírá spolu s dalšími častými chybami při návrhu
 
 ## Grafik versus designér
 
-Takže už všichni víme, že barvy, fonty a tlačítka nemají být jen hezká, ale také účel plníci. Proto je dobré zmínit rozdíl mezi často splývajícím pojmy „grafik“ a „designér“.
+Takže už všichni víme, že barvy, fonty a tlačítka nemají být jen hezká, ale také účel plníci. Proto považuji za dobré zmínit rozdíl mezi často splývajícím pojmy „grafik“ a „designér“.
 
 Hezky to popsal Otto Bohuš:
 
-> Grafik navrhuje tiskoviny, sází brožury, maluje ikonky… Prostě dělá grafiku. To je v naprostém pořádku. (Práci spousty grafiků jen tiše obdivuji.) Vy ale hledáte webového designéra.
+> Grafik navrhuje tiskoviny, sází brožury, maluje ikonky… Prostě dělá grafiku. To je v naprostém pořádku. Práci spousty grafiků jen tiše obdivuji. Vy (zadavatelé) ale hledáte webového designéra.
 
-Více v jeho článku „Co by měl každý vědět o tom, jak se dělá web – 2. díl“. [ottocopy.cz/jak-udelat-web](http://ottocopy.cz/jak-udelat-web)
+Více v jeho článku „Co by měl každý vědět o tom, jak se dělá web: 2. díl“. [ottocopy.cz/jak-udelat-web](http://ottocopy.cz/jak-udelat-web)
 
-Prostě každý dobrý webový grafik je zároveň designér, protože nedělá „hezké věci“, ale snaží se vyřešit nějaký klientův problém. 
+Prostě každý dobrý webový grafik je zároveň designér, protože nedělá jen „hezké věci“, ale snaží se vyřešit nějaký klientův problém. 
 
-Ano, webová grafika je obor sám pro sebe a do hloubky ji tady popisovat nechci. U jednodušších webů nebo webových aplikací je ale možné k ní přistoupit zjednodušeně. Znám mnoho vývojářů s vyvinutým citem pro vzhled, kteří si vzhled umí sami navrhnout nebo poskládat z knihoven, které jsou volně dostupné a čekají také třeba na vás.
+Bylo to moc stručné, já vím. Webová grafika je obor sám pro sebe a do hloubky ji tady popisovat nechci. Vždyť píšu jen knížku o webdesignu!
 
-Zájemce o trošku hlubší průzkum webové grafiky pošlu do kapitol o typografii, barvách a layoutu online knihy „Designing for the Web“ od Marka Boultona. [designingfortheweb.co.uk](http://designingfortheweb.co.uk/)
+Zájemce o hlubší průzkum webové grafiky bych asi v dalším kroku poslal do kapitol o typografii, barvách a layoutu online knihy „Designing for the Web“ od Marka Boultona. [designingfortheweb.co.uk](http://designingfortheweb.co.uk/)
