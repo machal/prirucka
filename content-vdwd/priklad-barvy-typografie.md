@@ -30,7 +30,7 @@ Tvář našemu eshopu chci dát právě výrazným písmem, proto padla volba na
 
 Zbývá nám písmo pro texty a rozhraní. Pro delší texty, které na webu mít jistě budeme (vzpomeňte na plánovaný blog) je vhodnější patkové písmo. Jenže to by pak znamenalo hledat třetí rodinu pro uživatelské rozhraní, kde se patky nehodí kvůli prostorové neúspornosti. Vybraný *PT Sans* je naopak velmi úsporný, taková méně velkorysá Verdana. A má hezkou kurzívu, kterou budeme spolu s tučným řezem potřebovat v delších textech. [fonts.google.com/specimen/PT+Sans](https://fonts.google.com/specimen/PT+Sans)
 
-![Typografie pro příklad](dist/images/original/vdwd/priklad-barvy.jpg)
+![Typografie pro příklad](dist/images/original/vdwd/priklady-typografie.jpg)
 
 *Obrázek: vybraná písma Yeseva One a PT Sans.*
 
