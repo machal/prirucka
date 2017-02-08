@@ -1,8 +1,10 @@
 # Blanka a další nástroje pro dokumentovou základnu webu
 
-Při práci na dokumentu, nevyhnutelném základu každého webu se může hodit pár nástrojů. Předpokládejme, že máme hotový obsah ve strukturovaném HTML. Co teď?
+Při formování dokumentu, nevyhnutelném základu každého webu se může hodit pár nástrojů. Předpokládejme, že máme hotový obsah ve strukturovaném HTML. Co teď?
 
-Překvapivě vás teď někomu představím. Seznamte se s Blankou. Pro klid manželství musím ovšem rychle dodat, kdo to vlastně je. Žádný tunel. Nic většího než vlastní sada nástrojů pro stavbu základů každého webu. Pro mě třetí vrstva stavby hned po výchozích stylech prohlížečů a Normalize.css. Dám sem rovnou odkaz, ale nebojte, ještě to pořádně rozebereme. [github.com/machal/blanka-html](https://github.com/machal/blanka-html)
+Překvapivě vás teď někomu představím. Seznamte se s Blankou. Žádný tunel, přátelé. Blanka od anglického *blank*: prázdný, čistý, nepopsaný. 
+
+Je to má sada nástrojů pro typografickou základnu každého webu. Třetí vrstva stavby hned po výchozích stylech prohlížečů a Normalize.css. Dám sem rovnou odkaz, ale nebojte, ještě to pořádně rozebereme. [github.com/machal/blanka-html](https://github.com/machal/blanka-html)
 
 ## Blanka HTML: výchozí šablona prázdného dokumentu
 
@@ -21,33 +23,33 @@ Další věci se dozvíte přímo z kódu `blanka.html`. [github.com/machal/blan
 
 ### HTML Boilerplate: až moc robustní alternativa
 
-Pokud byste raději robustní řešení, zajímejte se o projekt HTML5 Boilerplate. Pro mě není. Upřednostňuji jednoduché řešení nad robustním, ze kterého musím u každého projektu mnoho věcí odebírat. Jde ale rozhodně o zajímavý zdroj vzdělávání a inspirace. [html5boilerplate.com](https://html5boilerplate.com)
+Pokud byste raději méně minimalistickou variantu, zajímejte se o projekt HTML5 Boilerplate. Pro mě není. Upřednostňuji jednoduché řešení nad robustním, ze kterého musím u každého projektu mnoho věcí odebírat. Jde ale rozhodně o zajímavý zdroj vzdělávání a inspirace. [html5boilerplate.com](https://html5boilerplate.com)
 
 Více k HTML základům nepotřebujeme. Nuda? U stylů to ale bude vrstevnatější, nebojte.
 
 ## A teď CSS: výchozí styly prohlížečů
 
-Často se zapomíná, že ještě než napíšeme první řádku CSS, náš dokument už nějaké styly obsahuje. Prohlížeč prostě musí mít nějaká zadní vrátka, kterými vejde škodolibý skřítek a klientův vymazlený *dizájn* z wordovského dokumentu pokazí ohyzdným Times New Roman s modrými odkazy, že ano? 
+Často se zapomíná, že ještě než napíšeme první řádku CSS, náš dokument už nějaké styly obsahuje. Prohlížeč prostě musí mít nějaká zadní vrátka, kterými vejde škodolibý skřítek a klientův vymazlený *dizájn* z wordovského dokumentu pokazí ohyzdným písmem Times New Roman s modrými odkazy, že ano? 
 
-Prví vrstva vzhledu, která se aplikuje na váš dokument, jsou výchozí styly prohlížečů. Ve vývojářských nástrojích prohlížeče je v CSS kaskádě vidíte jako „user agent stylesheet“. Nevidíte? Doporučím vám si jejich zobrazování zapnout. Vlastnosti stylů totiž mají ošklivou vlastnost. V různých prohlížečích mohou mít různá nastavení. Nejprve je musíme sjednotit.
+První vrstva vzhledu, která se aplikuje na váš dokument, jsou výchozí styly prohlížečů. Ve vývojářských nástrojích je v CSS kaskádě vidíte jako „user agent stylesheet“. Nevidíte? Doporučím vám si jejich zobrazování zapnout. Výchozí styly totiž mají ošklivou vlastnost. V různých prohlížečích mohou mít mírně různá nastavení. Nejprve je tedy musíme sjednotit.
 
 ### Proč nepoužívat resetování?
 
 Svého času se v prvním kroku technické práce prakticky na každém webu používal CSS Reset od Erika Meyera. Ten prostě vynuloval všechny vnější i vnitřní okraje prvku, čímž jsme získali konzistentně ošklivý Time New Roman a modré odkazy ve všech prohlížečích. [meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/)
 
-Nevýhoda resetovacího přístupu je – to byste nečekali – v onom *resetování*. Když totiž nějaké vlastnosti „resetujeme“, musíme je v druhém kroku také „setovat“. Nastavit na vysněné hodnoty. Co když nám ale vyhovovalo původní nastavení prohlížečů? To jsme pak udělali dva zbytečné kroky a práci na webu si zkomplikovali. Hned na startu.
+Nevýhoda resetovacího přístupu je (to byste nečekali) v onom *resetování*. Když totiž nějaké vlastnosti „resetujeme“, musíme je v druhém kroku také „setovat“. Nastavit na vysněné hodnoty. Co když nám ale vyhovovalo původní nastavení prohlížečů? To jsme pak udělali dva zbytečné kroky a styly webu si zkomplikovali hned na startu.
 
 ## Normalize.css: sjednocení stylů prohlížečů
 
-Normalize zasahuje jen tam, kde jsou ve výchozích stylech prohlížečů nějaké rozdíly. *Normalizace* stylů. To je ale spojení, které pro nás, kteří v Česku a na Slovensku pamatujeme komunismus, nemá zrovna hezké emoční zabarvení. Takže pojďme mluvit o *sjednocení*. První krok je tedy přidat k dokumentu Normalize.css. [necolas.github.io/normalize.css](https://necolas.github.io/normalize.css/)
+Normalize zasahuje jen tam, kde jsou ve výchozích stylech prohlížečů nějaké rozdíly. *Normalizace* stylů. To je ale spojení, které pro nás, kteří v Česku a na Slovensku pamatujeme komunismus, nemá zrovna hezké emoční zabarvení. Víte co? Pojďme raději mluvit o *sjednocení*. První krok je tedy přidat k dokumentu Normalize.css. [necolas.github.io/normalize.css](https://necolas.github.io/normalize.css/)
 
-Díky sjednocení, druhé vrstvě stylů dokumentu, máme výchozí stylování sjednocené napříč prohlížeči. V další vrstvě si konečně pojďme něco nastavit.
+Díky této druhé vrstvě stylů dokumentu, máme výchozí stylování sjednocené napříč prohlížeči. V další vrstvě si konečně pojďme něco nastavit.
 
 ## Blanka CSS: typografické základna
 
 Blanka CSS je třetí vrstva stavby webu a má dva hlavní účely:
 
-- *Sjednocuje vzhled*. Normalize.css ladí vzhled napříč prohlížeči, už ale neřeší jednodnost vzhledu uvnitř dokumentu. Třeba levé odsazení u prvků `ul`, `ol` nebo `dd`. 
+- *Sjednocuje vzhled elementů*. Normalize.css ladí vzhled napříč prohlížeči, už ale neřeší jednodnost vzhledu uvnitř dokumentu. Třeba levé odsazení u prvků `ul`, `ol` nebo `dd`. 
 - *Nastavuje typografický rytmus*. Asi jste si všimli, že mám rád jednoduchost. Aby se mě s dokumentem dobře pracovalo, mají všechny typografické elementy nastavený vnější okraj jen zezdola. Nemusím myslet na horní vnější okraj, nemluvě o vnitřních, které se ve výchozích stylech prohlížečů hojně vyskytují. 
 
 Ve stylové Blance je toho více, ale to už si můžete prohlédnout sami v souboru `blanka.css`. [github.com/machal/blanka-html/](https://github.com/machal/blanka-html/blob/master/blanka.css)
@@ -64,7 +66,7 @@ Když už máme jakžtakž vysázený dokument, můžeme k němu začít přidá
 
 Poslední členka sesterského komanda Blanek vychází právě z toho, že ne všechny HTML elementy musíte znát. Nebo lépe: že si na ně prostě nemusíte vzpomenout a ve stylech je neošetříte.
 
-Kdo snad nezažil situaci, kdy ve stylech počítal úplně se vším — dokud mu klient přes redakční systém na web nevložil nečekanou kombinaci prvků. Která rozbila celý web.
+Kdo snad nezažil situaci, kdy ve stylech počítal úplně se vším — dokud mu klient přes redakční systém na web nevložil úplně novou kombinaci prvků. Která rozbila celý web.
 
 Proto je tu Blanka Type Test, zátěžový test typografie. Je to vlastně dokument obsahující všechny myslitelné i nemyslitelné HTML elementy. V kombinacích co by nás nenapadly. V zanořeních, se kterými jsme nepočítali. V rozměrech a délkách, jejichž představa by nás budila ze sna.
 

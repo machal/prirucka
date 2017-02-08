@@ -22,7 +22,7 @@ Co jsme na stránce udělali, nejlépe uvidíme pohledem do `style.css`. Hned na
       subset=latin-ext');
 ```
 
-Vložili jsme fonty Yeseva One a PT Sans. Ten druhý ve třech řezech: základním (`400`), kurzívě (`400i`) a tučném řezu (`700`). Pokud vám ta čísla nic neříkají, jde o stupně tučnosti používané také ve vlastnosti `font-weight`: [jakpsatweb.cz/css/font-weight.html](http://jakpsatweb.cz/css/font-weight.html)
+Vložili jsme fonty Yeseva One a PT Sans. Ten druhý ve třech řezech: základním (`400`), kurzívě (`400i`) a tučném (`700`). Pokud vám ta čísla nic neříkají, jde o stupně tučnosti používané také ve vlastnosti `font-weight`: [jakpsatweb.cz/css/font-weight.html](http://jakpsatweb.cz/css/font-weight.html)
 
 A jdeme dál:
 
@@ -33,7 +33,7 @@ A jdeme dál:
 
 Přidali jsme Normalize.css a Blanka.css. Oba projekty známe [z kapitoly](dokument-nastroje.md) o základních vrstvách dokumentu. Složku jsme pojmenovali `vendor/`, protože jde o projekty externích „dodavatelů“.
 
-Teď se mrkneme do jiné složky. `core/` obvykle používám pro „programátorské“ části CSS kódu. V případě použití preprocesorů tady nevinné kódery straší složité soubory s mixiny nebo proměnnými. 
+Teď se mrkneme do jiné složky. `core/` obvykle používám pro „programátorské“ části CSS kódu. V případě použití preprocesorů tady straší relativně složité soubory s mixiny nebo proměnnými. 
 
 ```css
 @import 'core/variables.css';
@@ -59,9 +59,9 @@ body {
 
 Proměnné asi někteří znáte právě z CSS preprocesorů. To jsou velmi mocné nástroje, o kterých píšu v ebooku „Vzhůru do CSS3“ nebo ve starším textu na Vzhůru dolů. [vrdl.cz/blog/12-css-preprocesory-1](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
 
-Jak už víte, v této knize se chci obejít bez složitých nástrojů a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově součástí kaskádových stylů. Jde s nimi navíc páchat ještě větší legrace než s těmi preprocesorovými. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
+Jak už víte, v knize se chci obejít bez složitých nástrojů a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově ale přímou součástí kaskádových stylů. A jde s nimi páchat ještě větší legrace než s těmi preprocesorovými. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
 
-Dále jsme si museli nastavit velikost nadpisů a písma, základní styl tabulek, formulářových a další prvků. To už si nastudujte sami ve staženém příkladu, není to nic složitého:
+Dále jsme si museli nastavit velikost nadpisů a písma, základní styl tabulek, formulářových a dalších prvků. To už si nastudujte sami ve staženém příkladu, není to nic složitého:
 
 ```
 @import 'document/scale.css';
@@ -94,7 +94,9 @@ Po pár krocích už tedy stránka vypadá lépe:
 
 ![Dokument fáze příkladu](dist/images/original/vdwd/priklad-dokument.jpg)
 
-*Obrázek: Dokument se základním grafickým stylem, barvami a typografií. Zvětšujte a změnšujte si okno prohlížeče. Ano, už v této fázi je to vlastně „responzivní”. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
+*Obrázek: Dokument se základním grafickým stylem, barvami a typografií. Zvětšujte a změnšujte si okno prohlížeče. Ano, už v této fázi je to vlastně „responzivní“. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
 
-Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav poté, když jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. To se dělá meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři v něm chyby sekají tempem jako Baťa cvičky. Pojďme to napravit a o viewportech si rychle něco povědět.
+Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. 
+
+Udělali jsme to meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři v něm chyby sekají tempem jako Baťa cvičky. Pojďme to napravit a o viewportech si rychle něco povědět.
 
