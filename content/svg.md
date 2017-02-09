@@ -75,7 +75,7 @@ Pokud si připravujete podklady sami, na internetech se povaluje spousta kvalitn
 
 SVG si můžete samozřejmě editovat sami. Kromě obligátního Illustratoru je populární Inkscape a řada dalších nástrojů. Hezky prý s SVG pracuje [Affinity Designer](https://affinity.serif.com/en-gb/designer/). Já třeba na Macu používám [Graphic](http://graphic.com/) (dříve iDraw):
 
-![SVG v Graphic (dříve iDraw)](http://www.vzhurudolu.cz/prirucka-content/schemes/idraw_svg.jpg)
+![SVG v Graphic (dříve iDraw)](dist/images/original/idraw_svg.jpg)
 
 ## Podpora v prohlížečích? 95-98 % jich SVG umí
 
