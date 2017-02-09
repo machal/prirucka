@@ -37,15 +37,15 @@ Malá nevýhoda je nutnost řešit [fallbacky ve starších prohlížečích](sv
 
 Formát má velmi širokou škálu nasazení. Výborně se samozřejmě hodí na vkládání logotypů nebo ikonek. U těch jde samozřejmě o principiálně správnější řešení než vkládání pomocí [ikonfontů](https://css-tricks.com/examples/IconFont/), které je potřeba považovat za dočasný hack. 
 
-Další možnosti:
+Další možnosti ovšem začínají být zajímavé:
 
-- [stylování vzhledu pomocí CSS](http://tympanus.net/codrops/2013/11/27/svg-icons-ftw)
-- [složitější filtry](http://tympanus.net/codrops/css_reference/filter/) na objektech, včetně fotek 
-- [efekty textu](http://tympanus.net/codrops-playground/yoksel/KFxwTxTA/editor/html,css,result)
-- [interakční efekty](http://tympanus.net/Development/CreativeGooeyEffects/index.html)
-- [animace](http://tutorials.jenkov.com/svg/svg-animation.html)
+- stylování vzhledu jednotlivých částí ikonek pomocí CSS
+- složitější filtry
+- efekty textu
+- interakční efekty
+- složitější animace
 
-Příchod SVG asi dost obohatí vizuální jazyk webů. Mrkněte se na [tuhle prezentaci Sary Soueidan](http://slides.com/sarasoueidan/building-better-interfaces-with-svg).
+Podívejte se na kompletní přehled v mém článku [SVG inspirace](svg-inspirace.md). Příchod SVG asi dost obohatí vizuální jazyk webů. 
 
 <!-- AdSnippet -->
 
