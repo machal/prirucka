@@ -6,15 +6,16 @@ Začněte s Google PageSpeed Insights, pokračujte na WebPageTest.org. Budou se 
 
 Validátor základních technických problémů, které komplikují rychlost webu. Zde začněte. Otestujte si tady všechny důležité vstupní šablony. 
 
-PageSpeed Insights (PSI) se dá instalovat i jako rozšíření do prohlížečů nebo testování zautomatizovat pomocí API.
+Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl se učit se další nástroje. Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu vypršení uložení měřicího skriptu Google Analytics do mezipaměti prohlížeče. Jinak je to ale skvělý nástroj.
 
-Dokud v PSI nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl se učit se další nástroje. 
+PSI se dá také instalovat jako rozšíření do prohlížečů nebo testování zautomatizovat pomocí API.
 
 [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
 
+
 ## WebPagetest.org
 
-Pro mě nástroj číslo jedna. Dělá pokročilou analýzu, testuje jinak než Page Speed Insights. Na druhou stranu – WebPagetest nelze používat průběžně, testy nějakou dobu trvají. WebPagetest také nevede za ruku jako PSI, je potřeba se s ním trochu zkamarádit.
+Pro mě nástroj číslo jedna. Dělá pokročilou analýzu, testuje detailněji než Page Speed Insights. Na druhou stranu: WebPagetest nelze používat průběžně, protože testy nějakou dobu trvají. WebPagetest také nevede za ruku jako PSI, je potřeba jej trochu více poznávat.
 
 Umožňuje testování z jiné lokality, testování pomalého připojení a v prohlížečích, ve kterých nemáte pokročilé vývojářské nástroje. Třeba v těch mobilních nebo ve starých Internet Explorerech.
 
@@ -32,7 +33,7 @@ Speed Index je esence rychlosti načítání. Číslo, které můžete porovnáv
 
 ### 2) Vysvědčení
 
-Hodnocení v parametrech, které připadají autorům WebPagetest důležité. *First Byte*, takže jak rychlý je backend, nastavení kešování na serveru, komprese obrázků a využití CDN.
+Hodnocení v parametrech, které připadají autorům WebPagetest důležité. *First Byte* (jak rychlý je backend), nastavení kešování na serveru, komprese obrázků a využití CDN.
 
 ### 3) Vodopád načítání
 
@@ -40,9 +41,9 @@ Jak se stahují komponenty stránky? Které z nich blokují parsování? Velmi u
 
 ### 4) Filmový pás
 
-Jak přesně vizuálně probíhalo načítání stránky? Velmi důležité. Dívám se jak dlouho trvalo, než se uživateli zobrazil obsah. Je to užitečnější než strojově vypočtený *Start Render*, který vidíte v tabulce.
+Jak přesně vizuálně probíhalo načítání stránky? Velmi důležité. Dívám se jak dlouho trvalo, než se uživateli zobrazil obsah a také jakým způsobem vykreslování probíhalo. Je to užitečnější než strojově vypočtený *Start Render*, který vidíte v tabulce.
 
-Dívám se samozřejmě i na další čísla. WebpageTest má mnoho zákoutí k prozkoumání, tohle byl jen začátek.  
+Dívám se samozřejmě i na další čísla. WebpageTest má mnoho zákoutí k prozkoumání, tohle byl ale dobrý začátek.  
 
 [webpagetest.org](http://www.webpagetest.org/)
 
@@ -57,7 +58,7 @@ Vše podstatné je v záložce Network:
 1. Zapněte nahrávání
 2. Zapněte snímání filmový pásu s průběhem zobrazování webu
 3. Omezte rychlost připojení
-4. Modrá je [událost DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded). Ta je spuštěná ve chvíli kdy bylo HTML načteno a rozparsováno. Červená [událost Load](https://developer.mozilla.org/en-US/docs/Web/Events/load) se spustí jakmile prohlížeč stáhl úplně vše, včetně obrázků. 
+4. Modrá je událost *DOMContentLoaded. Ta je spuštěná ve chvíli kdy bylo HTML načteno a rozparsováno. Červená událost *Load* se spustí jakmile prohlížeč stáhl úplně vše, včetně obrázků. 
 
 Na Vzhůru dolů jsem už psal o dalších praktických tipech pro DevTools. [vrdl.cz/blog/41-devtools-tipy](http://www.vzhurudolu.cz/blog/41-devtools-tipyblog/41-devtools-tipy).
 
@@ -77,7 +78,7 @@ Umí toho hodně. Ukáže timeline, zvládne emulaci pomalého připojení. Test
 
 U statistik z Google Analytics se mi líbí jak jsou po ruce markeťákům. Mají ale velmi zajímavé využití i pro vývojáře, hlavně když se rozšíří o Trackomatic a Technical Performace Dashboard. [vrdl.cz/prirucka/google-analytics-vyvojari](http://www.vzhurudolu.cz/prirucka/google-analytics-vyvojari)
 
-Mrkněte se do *Chování > Rychlost > Přehled*. Je potřeba měřit pomocí verze Universal Analytics. Analytics ukazují *Časování stránek (Page Timings)*, ale napříč různými kontexty - prohlížeče, regiony. 
+Na přehledy o rychlosti webu se mrkněte do *Chování > Rychlost > Přehled*. Je potřeba měřit pomocí aktuální verze: Universal Analytics. Analytics ukazují *Časování stránek (Page Timings)*, ale napříč různými kontexty jako jsou prohlížeče nebo regiony. 
 
 V *Časování uživatelů (User Timings)* mohou být vaše vlastní měření - např. jak rychle se načetl konkrétní obrázek. Je to potřeba nastavit. [vrdl.in/f3rbx](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
 
