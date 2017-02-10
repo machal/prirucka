@@ -1,11 +1,13 @@
 # Viewport na mobilech
 
-Mobily nám přinesly tři zásadní radosti. První jsou notifikace z Facebooku, chodící ve tři ráno. Druhá je možnost ukázat dětem každý den jinou fotku jiného koťátka. Třetí jsou viewporty na mobilech.
+Mobily nám přinesly tři zásadní životní radosti. Notifikace chodící ve tři ráno. Facebook plný selfíček. V vývojářům ještě viewporty na mobilech.
 
-První iPhone přišel v roce 2007 do situace, kdy byl prakticky každý web navržený velké displeje. S tím se snažil vypořádat zmenšením webu s jednouchou možností konkrétní části zmenšit. 
+Nezdá se to, ale viewporty nejstou tak jednoduchý koncept. Mezi nimi a vývojáři je prostě pár nedorozumění.
 
-Prastarý první iPhone ovšem tajně doufal, že začnou vznikat weby, přizpůsobené malým obrazovkám. Proto přešel s možností, jak mu webaři mohou sdělit, že si právě s tímto dali práce. [Meta značkou pro viewport](viewport-meta.md).
+Nejdříve ale k historickému kontextu. První iPhone přišel v roce 2007 do situace, kdy byl prakticky každý web navržený pro velké displeje. S tím se snažil vypořádat zmenšením webu a jednoduchou možností konkrétní části zvětšovat. 
 
-Než se k ní dostaneme, pojďme si říci něco o konceptu viewportů na mobilech. Je to důležité pro chápání dalších věcí.
+Stařeček první iPhone ovšem tajně doufal, že začnou vznikat weby, přizpůsobené malým obrazovkám. Proto přešel s možností, jak mu webaři mohou sdělit, že si právě s tímto dali práce. [Meta značkou pro viewport](viewport-meta.md).
+
+Než se k ní ale dostaneme, pojďme si říci něco o konceptu viewportů na mobilech. Je to důležité pro chápání dalších věcí.
 
 

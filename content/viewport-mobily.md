@@ -1,33 +1,26 @@
 # Tři viewporty na mobilních zařízeních
 
-Co je layoutový a co vizuální viewport? Co přesně přesně vyjadřuje `device-pixel-ratio` a proč nepoužívat `screen.width` v Javascriptu nebo `min-device-width` v CSS?
+Dozvíte se co je layoutový, co vizuální a co ideální viewport. 
 
-Pojďme si nejprve říct, co to ten *viewport* vlastně je. V kontextu webdesignu jde o označení pro výřez dokumentu viditelný v okně prohlížeče. 
+Co to ale ten *viewport* vlastně je? V kontextu webdesignu jde o označení pro výřez dokumentu viditelný v okně prohlížeče. 
 
 Na zařízeních, kde je možné měnit velikost okna, typicky desktopových, tedy viewport představuje šířku a výšku okna bez rozhraní prohlížeče.
 
-Správná legrace s viewportem ovšem začíná na moderních smartphonech a tabletech. Hlavně proto, že tam viewport není jen jeden. Budeme používat terminologii Petera-Paula Kocha a rozlišovat viewport layoutový, vizuální a ideální. 
+Správná legrace s viewportem ovšem začíná na moderních smartphonech a tabletech. Proto, že tam viewport není jen jeden. Budeme používat terminologii Petera-Paula Kocha a rozlišovat viewporty layoutové, vizuální a ideální. [quirksmode.org/mobile/metaviewport](http://www.quirksmode.org/mobile/metaviewport/)
 
 ![Layoutový a vizuální viewport](dist/images/original/viewport-layoutovy-vizualni.svg)
 
-*Obrázek: Viewport layoutový, vizuální a ideální. [quirksmode.org/mobile/metaviewport](http://www.quirksmode.org/mobile/metaviewport/)*
+*Obrázek: Viewport layoutový a vizuální. Při použití správné [meta značky](viewport-meta.md) jsou oba při načtení responzivní stránky na všech zařízeních stejně velké.*
+
 
 ## Layoutový viewport
 
-Plocha, do které se vykresluje layout stránky. Layout napsaný v CSS se počítá právě z něj. A pro pořádek – z pohledu CSS je layoutový viewport tzv. „initial containing block“.
+Plocha, do které se vykresluje layout stránky napsaný v CSS. 
 
-Šířka výchozí layoutového viewportu je na mobilních platformách podobná:
+Pokud vložíte meta značku pro viewport, má stejné rozměry jako vnitřní část okna prohlížeče. Svou velikost ale mění, jakmile uživatel  zoomuje nebo když vy na meta značku zapomenete. Pak se použije výchozí šířka layoutového viewportu. Na všech mobilních platformách je podobná:
 
 * IE10 na Win8: 1024 pixelů 
 * iOS a Android: 980 pixelů 
-
-Vezměme například tento zápis ručního nastavení viewportu:
-
-```html
-<meta name="viewport" content="width=1000">
-``` 
-
-Tím nastavíme sířku layoutového viewportu na 1000 pixelů.
 
 Javascriptem rozměry layoutového viewportu zjistíte pomocí: 
 
@@ -36,13 +29,12 @@ document.documentElement.clientWidth
 document.documentElement.clientHeight
 ```
 
-K layoutovému viewportu se vztahují [Media Queries](css3-media-queries.md) dotazy na velikost okna – `min-width` a `max-width`.
+K layoutovému viewportu se vztahují [Media Queries](css3-media-queries.md) pro velikost okna: `min-width` a `max-width`. 
+
 
 ## Vizuální viewport
 
-„Průzor“, přes který se díváte na layoutový viewport a tedy stránku samotnou. Neobsahuje ovládací prvky prohlížeče.
-
-Při prvním vykreslení stránky na mobilním zařízení je obvykle velikost vizuálního viewportu stejná s layoutovým. Když ale například uživatel zoomuje stránku, zvětšuje nebo zmenšuje layoutový viewport. Vizuální zůstává pořád stejný.
+„Průzor“, přes který se díváte na layoutový viewport a tedy stránku samotnou. Neobsahuje ovládací prvky prohlížeče. Vizuální viewport zůstává pořád stejný.
 
 Javascriptem rozměry vizuálního viewportu zjistíte pomocí: 
 
@@ -51,11 +43,14 @@ window.innerWidth
 window.innerHeight
 ```
 
+
 ## Ideální viewport
 
-Ideální viewport je trochu z jiné kategorie než ty dva předchozí. Je to hodnota určená výrobcem prohlížeče. Představuje ideální rozměry layoutového viewportu a tedy webové stránky zobrazované na používaném zařízení. 
+Ideální viewport je trochu z jiné kategorie než dva předchozí. Hodnotu totiž určuje výrobcem prohlížeče. Představuje ideální rozměry layoutového viewportu a tedy webové stránky zobrazované na používaném zařízení. 
 
-Ideální viewport získáte když vydělíte hardwarové rozlišení hodnotou [device-pixel-ratio](css-pixel.md). Pojďme se teď podívat na rozměry jednotlivých viewportů pro pár vybraných mobilních zařízení:
+Ideální viewport získáte když vydělíte hardwarové rozlišení hodnotou `resolution` (nebo postaru `device-pixel-ratio`). Více o nich najdete v textu o [Media Queries](css3-media-queries.md).
+
+Pojďme se teď podívat na rozměry jednotlivých viewportů pro pár vybraných mobilních zařízení:
 
 <div class="rwd-scrollable">
   <table>
@@ -107,7 +102,7 @@ Ideální viewport získáte když vydělíte hardwarové rozlišení hodnotou [
       <td>Nexus 6 
   / Android 5 
   / Android Browser</td>
-      <td>1440 × 2560</td>
+      <td>1440×2560</td>
       <td>980×1402</td>
       <td>360×592</td>
       <td>4</td>
@@ -115,27 +110,14 @@ Ideální viewport získáte když vydělíte hardwarové rozlišení hodnotou [
   </table>  
 </div>
 
-### Layoutový viewport na rozměry ideálního viewportu
 
-
-U skoro všech responzivních webů chcete layoutový viewport nastavit na rozměry ideálního viewportu. Uděláte to pomocí [správné meta značky pro viewport](meta-viewport.md) a kousku CSS:
-
-```html
-<meta name="viewport" 
-  content="width=device-width, initial-scale=1">
-```  
-
-```css
-@-ms-viewport { 
-  width: device-width 
-}
-``` 
+U skoro všech responzivních webů chcete layoutový viewport nastavit na rozměry ideálního viewportu. Uděláte to opět pomocí meta značky pro viewport.
 
 ### Proč nepoužívat `screen.width` a `min-device-width`?
 
-Javascriptem se u některých prohlížečů dá ideální viewport zjistit pomocí `screen.width` a `screen.height`. Některé ovšem vracejí šířku a výšku displeje v hardwarových pixelech. Dělá to třeba Android Browser až do verze 4.2, takže je tato hodnota v praxi dost nepoužitelná. 
+Javascriptem se u některých prohlížečů dá ideální viewport zjistit pomocí `screen.width` a `screen.height`. Jiné ovšem zase vracejí šířku a výšku displeje v hardwarových pixelech. Dělá to třeba Android Browser až do verze 4.2. 
 
-Javascriptové vlastnosti ideálního viewportu mají své protějšky v Media Queries `min-device-width` a `min-device-height` a i ty jsou tedy nejen díky tomu nepříliš použitelné.
+Javascriptové vlastnosti ideálního viewportu mají své protějšky [v Media Queries](css3-media-queries.md) `min-device-width` a `min-device-height`, ale ani ty se i z těchto důvodů nepoužívají.
 
 <p class="web-only" markdown="1">
 Můžete pokračovat článkem o [meta značce pro viewport](viewport-meta.md) nebo [viewportu na Windows](viewport-windows.md).
