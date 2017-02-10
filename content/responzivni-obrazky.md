@@ -1,28 +1,26 @@
 # Responzivní obrázky
 
-V [responzivním designu](http://www.vzhurudolu.cz/responzivn-design) často potřebujeme volit mezi různými variantami jednoho obsahového obrázku. Nejčastěji proto, že chceme ušetřit datový objem stránky na mobilech.
+V responzivním designu často potřebujeme volit mezi různými variantami jednoho obrázku. Nejčastěji proto, že chceme ušetřit datový objem stránky na mobilech nebo ošetřit vysokopacitní displeje typu Retina.
 
-Naš starý známý `<img>` k tomu nestačí. A tak iniciativa [Responsive Images Community Group](http://responsiveimages.org/) přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`.
+Naš starý známý `<img>` k tomu nestačí. Proto iniciativa Responsive Images Community Group přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. [responsiveimages.org](http://responsiveimages.org/)
 
-Je to standard, jehož podporu deklarovali všichni významný výrobci prohlížečů, a který je s drobným přimhouřením očí [s pomocí polyfillu použitelný](http://www.vzhurudolu.cz/prirucka/picturefill) už dnes.
-
-Bavíme se tady o bitmapových obrázcích, typicky fotografiích. Pro ikony, logotypy a další vektorový obsah je lepší použít formát [SVG](http://www.vzhurudolu.cz/prirucka/svg) nebo alternativu v podobě [ikonfontů](http://css-tricks.com/examples/IconFont/).
 
 ## Proč ne `<img src="">`?
 
-Občas je pro responzivní obrázky možné vidět [řešení s nahrazováním atributu src](http://responsejs.com/):
+Občas je pro responzivní obrázky možné vidět řešení s nahrazováním atributu `src`:
 
 ```html
-<img src="large.jpg" data-small="small.jpg" …>
+<img src="large.jpg" 
+  data-small="small.jpg" …>
 ```
 
-Javascriptem pak na malých displejích zkopírujete obsah `data-small` do `src` a prohlížeč zobrazí správný obrázek. Na pohled elegantní, jenže ve výsledku napytel.
+Na malých displejích pak autoři těchto řešení usilují o zkopírování obsahu `data-small` do `src` pomocí javascriptu. Pak prohlížeč zobrazí správný obrázek. Na pohled elegantní, ale nevýhody to má.
 
-Neexistuje totiž způsob jak prohlížeč odradit od stažení obrázku nalinkovaného v `<img src>`. Proto se v těchto řešeních obrázek sice vymění, ale stáhnou se oba soubory, což na pomalé mobilní síti moc nepotěší.
+Neexistuje totiž způsob jak prohlížeč odradit od stažení obrázku nalinkovaného v `<img src>`. Proto se v těchto řešeních obrázek sice vymění, ale předtím se už stáhly oba soubory, což není potěšující zpráva pro uživatele čekajícího na pomalém připojení.
 
 ## Proč vlastně více variant obrázků?
 
-Holky a kluci v RICG si sedli a [vymysleli 9 scénářů](http://usecases.responsiveimages.org/#use-cases) kdy je potřeba jeden obrázek reprezentovat různými variantami. My si tady ale budeme povídat jen o těch nejdůležitějších:
+Holky a kluci v RICG si sedli a vymysleli 9 scénářů kdy je potřeba jeden obrázek reprezentovat různými variantami. My si tady ale budeme povídat jen o těch nejdůležitějších:
 
 ![Scénáře pro nasazení responzivních obrázků](dist/images/original/rwd-obrazky-priklad-layout.jpg)
 
@@ -31,18 +29,28 @@ Holky a kluci v RICG si sedli a [vymysleli 9 scénářů](http://usecases.respon
 3. Výběr podle device-pixel-ratio neboli poměru mezi hardwarovým a [CSS rozlišením](http://www.vzhurudolu.cz/prirucka/css-pixel).
 4. Výběr podle art direction, jinak řečeno výtvarné řežie. Typicky když obrázek na mobilu potřebujeme oříznout jinak než na desktopu.
 
-## `srcset/sizes`
+## Nové atributy značky `<img>`: `srcset` a `sizes`
+
+Hodí se pro scénář s výběrem varianty podle velikosti okna:
+
+
+```html
+<img src="small.jpg"
+  srcset="medium.jpg 600w, large.jpg 1200w"
+  alt="…">
+```
+Častější je ale použití pro scénář s výběrem varianty podle velikosti obrázku v layoutu:
 
 ```html
 <img src="small.jpg"
   srcset="medium.jpg 600w, large.jpg 1200w"
   sizes="(min-width: 600px) 600px, 100vw"
-  alt="…" width="400" height="300">
+  alt="…">
 ```
 
-Nové atributy `<img>`, pomocí kterých autor stránky prohlížeči sděluje 2 informace. V `srcset` sadu variant obrázků a jejich vlastností. V `sizes` pak velikosti obrázků mezi jednotlivými breakpointy layoutu. Více [o srcset a sizes ve zvláštním článku](http://www.vzhurudolu.cz/prirucka/srcset-sizes). Se srcset a sizes si vystačíte ve všech scénářích kromě čtvrtého – výtvarné režie. To pak potřebujete speciální tag a to…
+Více [o srcset a sizes zjistíte hned v dalším textu](srcset-sizes.md). 
 
-## `<picture>`
+## Nová značka `<picture>`
 
 ```html
 <picture>
@@ -52,23 +60,25 @@ Nové atributy `<img>`, pomocí kterých autor stránky prohlížeči sděluje 2
 </picture>
 ```
 
-Ve většině případů si asi vystačíte se `srcset` a `sizes`, nový tag `<picture>` vymysleli pro méně časté scénáře a kombinace scénářů použití. Více [o ](http://www.vzhurudolu.cz/prirucka/picture)[`<picture>`](http://www.vzhurudolu.cz/prirucka/picture)[ ve zvláštním článku](http://www.vzhurudolu.cz/prirucka/picture).
-
-## Pomocník pro prohlížeč, ne příkaz
-
-`srcset`, `sizes` i všechny konstrukce v `<picture>` jsou jen jakousi nádstavbou nad stále funkční a povinný mechanizmus `<img src>`. Co uzná prohlížeč za lepší alternativu obrázku v `<img src>` tam prostě zkopíruje a zobrazí.
+Nový tag `<picture>` vymysleli pro méně časté scénáře jako v případě potřeby mít na konkrétních velikostech layoutu jinak oříznuté obrázky. Více si přečtete [v dalším textu](picture.md).
 
 ## Podpora v prohlížečích
 
-Prakticky všechny prohlížeče ústy svých tvůrců deklarovaly, že tento standard naimplementují. Ano, [včetně Internet Exploreru](http://blogs.msdn.com/b/ie/archive/2014/12/08/status-roadmap-update-srcset-lt-main-gt-element-and-date-inputs-in-development.aspx), ptáte se správně. Jenže jim bude chvíli trvat než to udělají. Nativní podpora je k dispozici [v posledních verzích Chrome, Opeře a zčásti Safari](http://caniuse.com/#feat=srcset). Do té doby – a samozřejmě kvůli starším prohlížečům – je potřeba používat polyfill [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill). Ten má jistá omezení, ale ve většině případů vám pomůže s výběrem správné varianty obrázku už nyní, takže se zkoušením není potřeba váhat.
+`srcset`, `sizes` i `<picture>` podporují všechny moderní prohlížeče. Responzivní obrázky nám chybí hlavně ve všech verzích Exploreru a Android Browseru do čtyřkových verzí Androidu. [caniuse.com/srcset](http://caniuse.com/#search=srcset) 
 
+Obzvlášť IE ve verzi 11 je ke dni psaní textu ještě velmi silně zastoupený. Je však dobré si uvědomit, jaké je v tomto případě chování „nepodporující prohlížečů“.
 
-## Další zdroje ke studiu
+### První řešení: přirozené náhradní řešení
 
-* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture), [Picturefill](http://www.vzhurudolu.cz/prirucka/picturefill).
-* [Dev.Opera: Scénáře použítí responzivních obrázků ](https://dev.opera.com/articles/responsive-images/)(anglicky).
-* [Generátor variant obrázků](https://github.com/andismith/grunt-responsive-images) pro [Grunt](http://www.vzhurudolu.cz/prirucka/grunt).
-* [Compressive Images](http://www.filamentgroup.com/lab/compressive-images.html), alternativní technika pokud řešíte problém s device-pixel-ratio a datovým objemem na pomalých připojeních.
+Prostě použijete parametr `src`, který v případě dostupného `srcset` moderní prohlížeče ignorují:
 
+```html
+<img 
+  src="starsi_prohlizece.jpg"
+  srcset="nove_prohlizece.jpg …">
+```
 
-*Za cenné připomínky k materiálu o responzivních obrázcích děkuji [Robinovi Pokornému](http://robinpokorny.com/). Podívejte se na 3 Robinovy přednášky na toto téma: [úvod do problému responzivních obrázků](https://www.youtube.com/watch?v=PG2SZQjqKtw), [základní řešení](https://www.youtube.com/watch?v=3yzl4XG1524) a [pokročilé řešení](https://www.youtube.com/watch?v=vmj7tCBVJ6w).*
+### Druhé řešení: Picturefill
+
+Polyfill, který zařídí fungování všech variant responzivních i ve starších prohlížečích. Jmenuje se Picturefill a považuji jej za dobré řešení, které mám odzkoušené na mnoha webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
+
