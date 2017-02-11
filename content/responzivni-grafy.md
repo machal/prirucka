@@ -2,7 +2,9 @@
 
 Responzivní grafy nacházejí své využití hlavně v rukou demagogických politiků. Grafy, které používají, se prostě *přizpůsobují* jejich vidění světa.
 
-Ale nebudu vám kazit krásné chvíle s mými texty takto nemístnými odbočkami. Budeme se bavit o opravdových grafech v opravdových responzivních stránkách. Zase tak často se nepoužívají, proto to vezmu letem světem.
+Ale nebudu vám kazit krásné chvíle s mými texty těmito rádobyvtipnými odbočkami. 
+
+Budeme se bavit o opravdových grafech v opravdových responzivních stránkách. Zase tak často se nepoužívají, proto to vezmu letem světem.
 
 ## Chartist.js
 
@@ -18,5 +20,5 @@ Nějaké responzivní možnosti má i tahle populární grafová knihovna. Spí�
 
 ## Chart.js
 
-Velmi populární knihovna, ale grafy vykresluje Canvasem, takže s responzivitou to bude horší. Šířkou a výškou se ale grafy přizpůsobovat umí. [chartjs.org](http://www.chartjs.org/)
+Velmi populární knihovna, ale grafy vykresluje do prvku `<canvas>`, takže s responzivitou to bude horší. Šířkou a výškou se ale grafy přizpůsobovat umí. [chartjs.org](http://www.chartjs.org/)
 
