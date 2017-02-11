@@ -1,12 +1,12 @@
 # Příklad: dokument s přizpůsobivými médii
 
-Do příkladu jsme teď vložili veškerý mediální obsah. Podívejme se teď na něj společně v rozlišení dnešních běžných mobilů. 
+Abychom použili vědomosti nasáté v téhle kapitole, vložili jsme do příkladu veškerý mediální obsah. Podívejme se teď na něj společně v rozlišení dnešních běžných mobilů. 
 
 ![Příklad před aplikováním přizpůsobivých médií](dist/images/original/vdwd/priklad-media-pred.jpg)
 
 *Obrázek: Příklad před aplikováním přizpůsobivosti médií.*
 
-Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný strach, nůžky na ně brát nebudeme. Prostě jim domluvíme, aby se jejich chování stalo flexibilnějším.
+Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný strach, nůžky na ně brát nebudeme. Prostě médiím domluvíme, aby se začala chovat flexibilněji.
 
 ## 1. SVG logo
 
@@ -21,39 +21,39 @@ První krok je jednoduchý: pružné přizpůsobení velikosti okna. Toho dosáh
 
 Druhý krok zajistí, aby se načítaly také správné varianty obrázků na různě velkých oknech a poměrech `device-pixel-ratio`.
 
-Pojďme si tady projít celý proces, protože jde asi o nejsložitější a jinde jen teoreticky popsanou část v tomto kroku práce na příkladu.
+Pojďme si tady projít celý proces, protože jde asi o nejsložitější a jinde jen teoreticky popsanou část tohoto kroku práce na příkladu.
 
 ### Vložíme obrázky v maximálním rozlišení
 
-Obsahové obrázky webu se hodí ukládat v co největším rozlišení. Nikdy totiž nevíte jak budou vypadat displeje budoucnosti. Nám se ty naše podařilo ulovit ve velikosti kolem dvou tisíc pixelů. 
+Obsahové obrázky webu se hodí ukládat v co největším rozlišení. Nikdy totiž nevíte, jak budou vypadat displeje budoucnosti. Nám se obrázky podařilo ulovit ve velikosti kolem dvou tisíc pixelů. 
 
 ### Najdeme nejmenší a největší velikost
 
-Nejmenší velikost obrazovky aktuálních mobilů je 240 pixelů. Dnes už se moc nedělají, ale nějaký podíl na trhu ještě mají. V tomto rozlišení mají obrázky po odečtení okrajů velikost 192 pixelů. Zaokrouhlíme si to na 200 pixelů a tohle bude naše nejmenší varianta.
+Nejmenší velikost obrazovky aktuálních mobilů je 240 pixelů. Dnes už se moc nedělají, ale nějaký podíl na trhu ještě mají. V tomto rozlišení mají obrázky po odečtení okrajů velikost 192 pixelů. Zaokrouhlíme si to na 200 pixelů.Tohle bude naše nejmenší varianta.
 
-Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli vysokokapacitním displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s vyšším `device-pixel-ratio` než dva, ale mám zkušenost že dvojnásobek obvykle postačuje.
+Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli vysokokapacitním displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s vyšším poměrem pixelů než dva, ale mám zkušenost že dvojnásobek obvykle postačuje.
 
 ### Vyrobíme varianty a uvedeme je do `srcset`
 
 Jak jsem psal v textu o [srcset a sizes](srcset-sizes.md), varianty generuji po dvěstě a třista pixelech. Pro jednorázovou práci ale doporučuji výborný generátor variant obrázků „Responsive Image Breakpoints Generator“. [responsivebreakpoints.com](http://www.responsivebreakpoints.com/)
 
-Varianty generuje chytře podle minimálního kroku datové velikosti. Když jsem nastavil 30kB, dostal jsem následující vyrianty:
+Ten varianty chytře vytváří podle minimálního kroku datové velikosti. Když jsem nastavil 30kB, dostal jsem následující verze prvního obrázku:
 
 | Šířka | Velikost |
 | ----- | -------- |
-| 200px | 12.3 KB |
-| 442px | 43.2 KB |
-| 617px | 72.5 KB |
-| 762px | 100.6 KB  |
-| 903px | 129.8 KB  |
-| 1036px | 160.2 KB  |
-| 1080px | 180.0 KB  |
+| 200px | 12 kB |
+| 442px | 43 kB |
+| 617px | 72 kB |
+| 762px | 100 kB  |
+| 903px | 129 kB  |
+| 1036px | 160 kB  |
+| 1080px | 180 kB  |
 
 Pro další dva obrázky to bude vypadat trochu jinak. Podívejte se pak do HTML zdroje nebo na odpovídající commit na Githubu. [git.io/vDVjw](https://github.com/machal/vdwd-example/commit/e19e60989a520cca57cc94fa4c2b90886b64e01f)
 
 ### Nastavíme velikost layoutu: `sizes`
 
-Layout a velikost obrázků je v tuto chvíli poměrně jednoduchá. Stačí vzít vývojářské nástroje, zmenšit okno a postupně ho zvětšovat. Všechny změny tam krásně uvidíte a z CSS snadno vytáhnete.
+Layout a velikost obrázků v něm je v tuto chvíli poměrně jednoduchá. Stačí vzít vývojářské nástroje, zmenšit okno a postupně ho zvětšovat. Všechny body zlomu layoutu tam krásně uvidíte a z CSS snadno patřičné rozměry.
 
 Na malých displejích zabírá layout celou obrazovku bez postranních okrajů a obrázek jakbysmet:
 
@@ -65,7 +65,7 @@ Od šířky okna kolem 530 pixelů už se dále nezvětšuje. Šířka obrázku 
 
 Od 640 pixelů je zase obrázek velký `540px`.
 
-Pojďme si tři typy layoutu zapsat do atributu `sizes`:
+Teď si tři typy layoutu zapišme do atributu `sizes`:
 
 ```img
 <img sizes="
@@ -78,11 +78,18 @@ Pojďme si tři typy layoutu zapsat do atributu `sizes`:
 
 V tomto rozlišení ještě vypadá hezky. Ale není tabulky, která by se někde nerozpadla. Stačilo by okno zmenšit o trochu více. Aplikujeme řešení pro posun do stran [z podkapitoly o tabulkách](responzivni-tabulky.md).
 
-Uvidíte v souboru `style/media/rwd-table.css` a následujícím commitu. [git.io/vDwJJ](https://github.com/machal/vdwd-example/commit/3d629607da1bedc9e9a8d9750d31c6527924ba79)
+Uvidíte to v souboru `style/media/rwd-table.css` a následujícím commitu. [git.io/vDwJJ](https://github.com/machal/vdwd-example/commit/3d629607da1bedc9e9a8d9750d31c6527924ba79)
 
 
 ## 4. Vkládané video
 
-Opět si stačí vzpomenout na „Pružné vkládané elementy se zachovaním poměru stran“ ze začátku této kapitoly. A opět se o slovo hlásí trik s `padding-bottom`, ten ostatně v responzivním designu budete potřebavat velmi často.
+Stačí vzpomenout na „Pružné vkládané elementy se zachovaním poměru stran“ [ze začátku této kapitoly](pruzna-media.md). A opět se o slovo hlásí trik s `padding-bottom`, ten ostatně v responzivním designu budete potřebavat velmi často.
 
 Tuto věc má v našem případě na starost komponenta `style/media/rwd-object.css`.
+
+Aktuální stav příkladu si můžete naživo prohlédnout nebo stáhnout na následujících adresách.
+
+- Otevření v prohlížeči: [vrdl.in/vdwdmed](http://www.vzhurudolu.cz/files/vdwd/media/)
+- Stažení v ZIPu: [vrdl.in/vdwdmedzip](http://www.vzhurudolu.cz/files/vdwd/media.zip)
+
+Dostali jsme se tedy do stavu naformátovaného dokumentu s ošetřeným mediálním obsahem. Teď už pojďme navrhnout pokročilejší prvky uživatelského rozhraní. Nejdřív ale znalosti, které byste měli mít, pokoud si na to chcete troufnout.
