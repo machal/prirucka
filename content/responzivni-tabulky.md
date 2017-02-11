@@ -1,8 +1,8 @@
 # Responzivní tabulky
 
-Chuck Norris sice rozbrečí cibuli, ale s tabulkami ve webdesignu by měl potíže. No vážně. Však čtěte.
+Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky ve webdesignu by mu zavařily. No vážně. Však čtěte.
 
-Zejména rozsáhlejší tabulky mají tu nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet a vy si jistě vyberete. Tedy pokud nejste Chuck Norris, ten už si vybral dávno.
+Zejména ty rozsáhlejší mají nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet a vy si jistě vyberete. Tedy pokud nejste Chuck Norris, ten si vybral ještě jsem začal psát.
 
 ## Posun do stran
 
@@ -38,13 +38,13 @@ S propracovanějším řešením využívající flexbox a další moderní CSS 
 
 Fixně-posuvné řešení je pak možné doplnit detekcí gesta švihnutí (swipe) pro snadnější a přesnější posouvání sloupečků. Plugin Tablesaw, který doporučuji dále v textu, to umí.
 
-Řešení má mnoho užití. Podmínkou ale je, aby tabulka měla má přijatelně nízký počet řádků.
+Řešení má mnoho užití. Podmínkou ale je, aby tabulka měla přijatelně nízký počet řádků.
 
-Nojo, ale co když ale máte tabulku typu datagrid – hodně sloupečků, ale také řádků? 
+Nojo, ale co když ale máte tabulku toho typu, kterému programátoři říkají „datagrid“? Ta má, potvora, hodně sloupečků, ale také řádků.
 
 ## Stohování
 
-Datagrid není prosím žádná vzácnost. Každá webová aplikace pro interní systémy je datagridů plná. Je to případ vašeho projektu? Pak bych vám doporučil přestylovat tabulku na mobilech do podoby netabulkového, kartičkového zobrazení. Říká se tomu stohování.
+Datagrid není žádná vzácnost. Každá webová aplikace pro interní systémy je datagridů plná. Je to případ vašeho projektu? Pak bych vám doporučil přestylovat tabulku na mobilech do podoby netabulkového, kartičkového zobrazení. Říká se tomu stohování.
 
 ![](dist/images/original/tabulky_3.png)
 
@@ -62,9 +62,9 @@ V nejjednodušší možné CSS implementaci prostě tabulce na menších displej
 
 Na Codepenu je možné si zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0)
 
-I tak ale čisté CSS řešení nebude dokonalé. Pro tento typ práce s tabulkami budete potřebovat kousek Javascriptu. 
+I tak ale čisté CSS řešení nebude dokonalé. Pro tento typ práce s tabulkami budete potřebovat kousek Javascriptu. Za chvíli vám poradím pěknou knihovnu, vydržte.
 
-Stohování se hodí i pro tabulky se složitějším obsahem v buňkách (odstavcový text, formulářové prvky a tak dále).
+Stohování se hodí i pro tabulky se složitějším obsahem v buňkách: odstavcový text, formulářové prvky a tak dále.
 
 ## Změna směru tabulky
 
@@ -96,29 +96,12 @@ Z tabulkových prostě na mobilu uděláte zjednodušený graf. Doporučuji nasa
 
 ## Na mobilech něco vynechat. Ale opravdu?
 
-Tahle varianta vypadá, že se sama nabízí. Z technického pohledu budiž. Jenže – designér ve mě zvedá obočí i ukazováček, aby vás upozornil na možné nevýhody.
+„Prostě schováme pár sloupečku a na mobil se to vejde“. Tahle varianta vypadá, že se sama nabízí. Z technického pohledu budiž. Jenže: designér ve mě zvedá obočí i ukazováček, aby vás upozornil na možné nevýhody.
 
-Schovávání obsahu na konkrétních zařízeních je dost nebezpečné. Jak už jsem argumentoval dříve, stejní lidé se na vaše rozhraní dívají z různých zařízení. Proč by určitý obsah měli na jednom zařízení vidět a jiný ne?
+Schovávání obsahu na konkrétních zařízeních je dost nebezpečné. Jak už jsem argumentoval dříve, stejní lidé se na vaše rozhraní dívají z různých zařízení. Proč by určitý obsah měli na jednom zařízení vidět a jiném ne?
 
-### Příklad s fotbalovou tabulkou
-
-Jako příklad vezměme tabulku fotbalové ligy na Sport.cz, která v den, kdy tento text píšu, vypadá jako na obrázku.
-
-![](dist/images/original/tabulky_6.png)
-
-*Obrázek: Tabulka pořadí první fotbalové ligy v prosinci 2016. Zdroj: sport.cz*
-
-Mimochodem, pokud jste, stejně jako já, zcela mimo fotbalové dění, pak „Z“ je počet zápasů, „V“ je počet výher, „R“ remíz a „P“ proher. Tohle na mobilu úplně chybí. A protože mě už trochu znáte, víte, že tady začnu zvedat ukazováček a prudit.
-
-Vezměme to ale od začátku. Pojďme si představit, že vymýšlíme chování tabulky na malých displejích. Do zařízení s rozlišením 320, nedejbože 240 pixelů se nám tabulka nevejde, že? Kterou z variant chování tabulek na responzivních webech použít? Neodstranit prostě na mobilech některé sloupečky? 
-
-Je pravda, že informace v takové tabulce mají nějakou hierarchii: Pořadí, tým a počet bodů jsou nejdůležitější. Skóre a počet zápasů hned za nimi. Výhry, remízy a prohry méně důležité a logo týmu na posledním místě. Stejně to vyhodnotili autoři tabulky a poslední jmenované na mobilech prostě vyšoupli. Jenže…
-
-* **Logo týmu** sice nemá informační hodnotu a dekorativní budeme pro zjednodušení ignorovat. Ale důležité je navigačně. Na mobilu se proto lidem bude oblíbený tým hledat hůř. Ušetřili jsme tedy místo, ale zároveň zhoršili uživatelský prožitek.
-* **Výhry, remízy a prohry** jsou sice méně důležité, ale… proč je pak máme na velkých displejích? Nemám tady samozřejmě rozbor cílových skupin a jejich potřeb pro Sport.cz, ale tipuji, že zrovna uživatelé tohoto webu takové informace potřebují. Na jiném webu, třeba obecně zpravodajském by pak nepřítomnost těchto informací smysl dávala. 
-
-Jak bych tedy tabulku na mobilech řešil? Použil bych řešení „Posun do stran s fixním sloupcem“. Ponechal bych v ní všechny informace a zajistil fixní pozici sloupečků s pořadí, logem a názvem týmů. Ostatní sloupečky pak nechal uživatele posouvat do stran.
+Více o tomu budu psát [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů.
 
 ## Vše v jednom: plugin Tablesaw
 
-Tablesaw je jQuery plugin (nebo lépe řečeno sada pluginů), který umí všechny popsané možnosti chování responzivních tabulek. Chuck Norris jej doporučoval ještě než vznikl! [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)
+Tablesaw je jQuery plugin (nebo lépe řečeno sada pluginů), který zvládá všechny popsané možnosti chování responzivních tabulek. Prostě švýcarský tabulkový nůž Chuck Norrise. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)
