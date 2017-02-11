@@ -10,7 +10,7 @@ Nejjednodušší varianta. Prostě tabulce přikážete, ať se roluje do strany
 
 ```css
 .scrollable-table {
-  overflow-y: auto;
+  overflow-x: auto;
 }
 ```
 
