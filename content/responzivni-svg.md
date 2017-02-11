@@ -42,14 +42,14 @@ V moderních prohlížečích je to v případě dodržení výšeuvedeného opr
 Třídu `.svg-container` pak kvůli Explorerům nastylujeme stejně jako jsme to dělali u dalších vkládaných elementů [v textu o obrázcích](pruzna-media.md):
 
 ```css
-.svg-box {
+.svg-container {
   position: relative;
   width: 100%;
   height: 0;
   padding-top: 50%; /* Poměr stran 2:1 */ 
 }
 
-.svg-box-content {
+.svg-content {
   position: absolute;
   top: 0;
   left: 0;
