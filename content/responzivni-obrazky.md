@@ -1,11 +1,26 @@
 # Responzivní obrázky
 
-V responzivním designu často potřebujeme volit mezi různými variantami jednoho obrázku. Nejčastěji proto, že chceme ušetřit datový objem stránky na mobilech nebo ošetřit vysokopacitní displeje typu Retina.
+V responzivním designu často potřebujeme volit mezi různými variantami jednoho obrázku. Nejčastěji proto, že chceme ušetřit datový objem stránky na mobilech nebo poskytnou kvalitní zobrazení pro vysokopacitní displeje typu Retina.
 
-Naš starý známý `<img>` k tomu nestačí. Proto iniciativa Responsive Images Community Group přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. [responsiveimages.org](http://responsiveimages.org/)
+Naše stará známá značka `<img>` k tomu nestačí. Proto iniciativa Responsive Images Community Group přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. [responsiveimages.org](http://responsiveimages.org/)
 
 
-## Proč ne `<img src="">`?
+## Jednoduché řešení: komprimované obrázky
+
+Nejdříve ale dovolte jedno snadné řešení. Datový objem i vysokopacitní displeje můžete v některých situacích vyřešit naráz.
+
+1. Původní obrázek uložíte ve výrazně větší pixelové velikosti.
+2. Snížíte kvalitu exportu někam výrazně pod polovinu.
+3. Prohlížeč necháte obrázek převzorkovat na původní velikost.
+
+Obrázek pak vypadá prakticky stejně jako ten původní. Na vysokopacitních displejích dokonce lépe. A co je nejlepší: datově je výrazně menší. Podívejte se bližší popis do článku na blogu Filament Group. [vrdl.in/z7k34](https://www.filamentgroup.com/lab/compressive-images.html)
+
+Komprimované obrázky jsme zkoušeli nasadit na jednom starším projektu. Udělali jsme si testy pro různé kombinace komprese a pixelové velikosti. Nakonec došli k tomu, že obrázky ve dvojnásobné pixelové velikosti a kvalitě komprese nastavené na 30 % měly nejlepší poměr kvality a datového objemu. Ten byl poloviční oproti původní verzi s 80 % kvalitou a velikostí stejné jako se používá ve stránce. U různých typů obrázků to ale bude různé.
+
+Asi sami vidíte, že řešení je vhodné jen pro JPG nebo WEBM obrázky, kde je možné nastavit úroveň komprese. Typově pak spíše fotografie než bannery, kde by v ostrých hranách mezi barvami byla ztráta kvality viditelná.
+
+
+## Proč ne vlastní javascriptová řešení?
 
 Občas je pro responzivní obrázky možné vidět řešení s nahrazováním atributu `src`:
 
@@ -62,13 +77,13 @@ Více [o srcset a sizes zjistíte hned v dalším textu](srcset-sizes.md).
 
 Nový tag `<picture>` vymysleli pro méně časté scénáře jako v případě potřeby mít na konkrétních velikostech layoutu jinak oříznuté obrázky. Více si přečtete [v dalším textu](picture.md).
 
-## Podpora v prohlížečích
+## Podpora `srcset`, `sizes` a `<picture>` v prohlížečích
 
-`srcset`, `sizes` i `<picture>` podporují všechny moderní prohlížeče. Responzivní obrázky nám chybí hlavně ve všech verzích Exploreru a Android Browseru do čtyřkových verzí Androidu. [caniuse.com/srcset](http://caniuse.com/#search=srcset) 
+Podporují je všechny moderní prohlížeče. Responzivní obrázky nám chybí hlavně ve všech verzích Exploreru a Android Browseru do čtyřkových verzí Androidu. [caniuse.com/srcset](http://caniuse.com/#search=srcset) 
 
 Obzvlášť IE ve verzi 11 je ke dni psaní textu ještě velmi silně zastoupený. Je však dobré si uvědomit, jaké je v tomto případě chování „nepodporující prohlížečů“.
 
-### První řešení: přirozené náhradní řešení
+### První náhradní řešení: přirozené
 
 Prostě použijete parametr `src`, který v případě dostupného `srcset` moderní prohlížeče ignorují:
 
@@ -78,7 +93,7 @@ Prostě použijete parametr `src`, který v případě dostupného `srcset` mode
   srcset="nove_prohlizece.jpg …">
 ```
 
-### Druhé řešení: Picturefill
+### Druhé náhradní řešení: Picturefill
 
 Polyfill, který zařídí fungování všech variant responzivních i ve starších prohlížečích. Jmenuje se Picturefill a považuji jej za dobré řešení, které mám odzkoušené na mnoha webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
 
