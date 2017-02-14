@@ -29,8 +29,11 @@ Tvůrci CSSnext prostě podlehli nedočkavosti a implementovali i vlastnosti, kt
 
 Druhý problém je s časem potřebným pro průzkum a nastavování vlastních řešení pomocí PostCSS. To vyplývá z modulárního přístupu.
 
-Když ale kombinaci PostCSS/CSSnext vezmete jako drobné rozšíření vašeho CSS o proměnné, importy a další drobnosti, s použitím na menší projekty neváhejte. Pro ty ostatní prostě využijte [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1). 
+## PostCSS nebo preprocesor?
 
+Když kombinaci PostCSS/CSSnext vezmete jako drobné rozšíření vašeho CSS o proměnné, importy a další drobnosti, s použitím na menší projekty neváhejte. Pro ty ostatní prostě využijte [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1). 
+
+Pro běžné weby a menší aplikace vám bude opravdu PostCSS nebo možná někdy úplně čisté CSS bude naprosto stačit. Čím více ale budete mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete spíše preprocesor. Prostě jazyk, který je vymyšlený pro složité úkoly. Framework typu Bootstrapu si prostě v PostCSS představit neumím, ale i to se časem může srovnat.
 
 ## Vlastnosti preprocesorů v novém CSS
 
@@ -69,10 +72,8 @@ Pokud byste hledali pokročilejší funkce jako hromadné importy z adresářů,
 
 Ještě chci zmínit, že jakmile váš web poběží na [HTTP/2](http-2.md), vychází teoreticky lépe importy nevkládat a nechat server posílat jednotlivé soubory. 
 
+TODO: autoprefixer, pixrem.
 
-### Zvolit preprocesory nebo PostCSS?
-
-Pro běžné weby a menší aplikace vám bude opravdu PostCSS nebo možná někdy úplně čisté CSS bude naprosto stačit. Čím více ale budete mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete spíše preprocesor. Prostě jazyk, který je vymyšlený pro složité úkoly. Framework typu Bootstrapu si prostě v PostCSS představit neumím, ale i to se časem může srovnat.
 
 ## Instalace a nastavení
 
