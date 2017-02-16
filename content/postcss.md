@@ -7,9 +7,9 @@ V textu ukážu jak jej využít jako jednoduchý a rychlý preprocesor, který 
 
 ## PostCSS versus CSS preprocesory
 
-Rozdíl je už **v momentě zpracování**. [Preprocesor](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) (SASS, LESS, Stylus) předzpracovává, což v důsledku znamená, že vytváří nový jazyk, který se kompiluje do CSS. 
+Rozdíl je už **v momentě zpracování**. [Preprocesor](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) (SASS, LESS, Stylus) předzpracovává, což v důsledku znamená, že vytváří nový jazyk, který se kompiluje do CSS. PostCSS je postprocesor. Více či méně předpokládá, že to co píšete je současná nebo budoucí verze CSS.
 
-Další rozdíl je **v modularitě**. Preprocesory jsou monolity, velké potvory, jejichž všechny vlastnosti nikdy nevyužijete. PostCSS je modulární. Samo o sobě nic neumí, pro každou vlastnost si musíte doinstalovat plugin. To je samozřejmě taky trochu nevýhoda, protože to vyžaduje režii na učení a prozkoumávání. S tím vám tady ale chci pomoci.
+Další rozdíl je **v modularitě**. Preprocesory jsou monolity, velké potvory, jejichž všechny vlastnosti nikdy nevyužijete. PostCSS je modulární. Samo o sobě nic neumí, pro každou vlastnost si musíte doinstalovat plugin. To je samozřejmě taky trochu nevýhoda, protože to vyžaduje režii na učení a prozkoumávání. S tím vám tady můžu trochu pomoci.
 
 Díky modularitě **kompiluje rychleji**. A může být i enormě rychlé.  Podívejte se třeba [na tyhle testy](https://github.com/postcss/benchmark).
 
@@ -27,7 +27,7 @@ Jenže pro mě je CSSnext z velké části demonstrace způsobu, jakým by se tr
 
 Tvůrci CSSnext prostě podlehli nedočkavosti a do „transpilátoru“ vložili i vlastnosti, které se v CSS možná nikdy neobjeví. Začali tím vlastně tvořit jen další preprocesor s vlastní nestandardní syntaxí.
 
-Je pravda, že CSSnext obsahuje řadu pluginů, které chci sám používat: doplňování prefixů, fallbacky pro `rem` nebo nativní proměnné. Jenže většinu ostatních vlastností používat nechci.
+Je pravda, že CSSnext obsahuje řadu pluginů, které chci sám používat: doplňování prefixů, fallbacky pro `rem` nebo nativní proměnné. Většinu ostatních vlastností ale neupotřebím.
 
 
 ## Preprocesor pomocí PostCSS
@@ -65,7 +65,7 @@ a {
 
 Mimochodem, nativní proměnné mají velmi dobrou [podporu v prohlížečích](http://caniuse.com/#feat=css-variables). PostCSS potřebujete hlavně kvůli náhradnímu řešení pro Internet Explorery a Edge.
 
-Je dobré vědět, že CSS proměnné jsou na rozdíl od preprocesorových sester dynamické. Dědí se a jsou dostupné v Javascriptu. Mrněte na [Je čas](http://jecas.cz/var). 
+Je dobré vědět, že CSS proměnné jsou na rozdíl od preprocesorových sester dynamické. Dědí se a jsou dostupné v Javascriptu. Mrkněte se na [Je čas](http://jecas.cz/var). 
 
 Tyhle cool vlastnosti jsou ovšem dostupné jen v nativní podpoře. PostCSS plugin [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) se k proměnným chová stejně jako preprocesory.
 
@@ -135,8 +135,8 @@ Je to fajn základ, který můžete dále rozšiřovat, třeba [o Style Lint](ht
 
 ## PostCSS nebo preprocesor?
 
-Když PostCSS vezmete jako jemné rozšíření vašeho CSS o proměnné a vkládané importy, s použitím na menší projekty neváhejte. Zařídí vám to CSS kód kompatibilní i v budoucnu a rychlou kompilaci. 
+Když PostCSS vezmete jako jemné rozšíření vašeho CSS o proměnné a vkládané importy, s použitím na menší projekty neváhejte. Váš CSS kód bude kompatibilní i do budoucna a získáte velmi rychlou kompilaci. 
 
-Pro ostatní projekty prostě využijte [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Čím více totiž budete mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete robustnější řešení. Jazyk, který je vymyšlený pro složité úkoly – nejlépe [Sass](http://sass-lang.com/). Extrémy jako [frameworky typu Bootstrapu](http://www.vzhurudolu.cz/frontend-frameworky) si prostě napsané v nativním CSS a transpilované pomocí PostCSS zatím představit neumím, ale i to se časem může srovnat.
+Pro ostatní projekty prostě využijte [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Čím více budete ve stylech mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete robustnější řešení. Jazyk, který je vymyšlený pro složité úkoly – nejlépe [Sass](http://sass-lang.com/). Extrémy jako [frameworky typu Bootstrapu](http://www.vzhurudolu.cz/frontend-frameworky) si prostě napsané v nativním CSS a transpilované pomocí PostCSS zatím představit neumím, ale i to se časem může srovnat.
 
 
