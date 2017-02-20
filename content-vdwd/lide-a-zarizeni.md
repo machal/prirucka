@@ -1,8 +1,10 @@
 # Lidé a zařízení: jak je ovládají a jak se chovají?
 
-Než se vrhneme na samotné uživatelské rozhraní, podívejme se na naše milé uživatele. Jak vlastně ta nová zařízení drží, jak je ohmatávají… jaké polohy používají? Vítejte u mobilní, tabletové a desktopové kamasútry!
+Než se vrhneme na konkrétní aspekty uživatelského rozhraní, podívejme se na naše milé uživatele. 
 
-Dozvíte se, že dotykovost je nový standard. A také, že důležité prvky v rozhraní mají být na mobilech veprostřed a na větších dotykových zařízeních u pravého kraje. Pojďme na to.
+Jak vlastně ta nová zařízení drží, jak je ohmatávají… jaké polohy používají? Vítejte u mobilní, tabletové a desktopové kamasútry!
+
+Asi víte, že dotykovost je nový standard. Ale dozvíte se také, že důležité prvky v rozhraní mají být na mobilech veprostřed a na větších dotykových zařízeních u pravého kraje. Pojďme na to.
 
 ## Všechno je dotykové
 
@@ -14,7 +16,7 @@ Přesně tak, přátelé, pojďme považovat dotykové ovládaní za výchozí s
 
 V době kdy píšu tento text ještě „dotykáče“ mezi zařízeními přistupujícími na vaše weby nemusejí hrát první housle.  Jenže, jak už jsem psal dříve, to se brzy změní. 
 
-Blíží se doba, kdy dotyková zařízení snědí počítačové myši i s kabelem. 
+Statistiky neúprosně ukazují, že dotyková zařízení jednou snědí počítačové myši i s kabelem. 
 
 Ani skupina uživatelů klasických počítačů,  zejména notebooků, není nedotčená. Máme tady hybridní zařízení, dotykové stroje s klávesnicí a myší. A jejich prodeje rostou.
 
@@ -63,7 +65,7 @@ U jednorukého držení to asi smysl dává, ale palce to vyhrály i u kolébkov
 
 Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovládání palců, přátelé. 
 
-Zdrojový výzkum Steven Hoobera How Do Users Really Hold Mobile Devices najdete na UXMatters.com. [vrdl.in/m326o](http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php#top)
+Zdrojový výzkum Steven Hoobera „How Do Users Really Hold Mobile Devices“ najdete na UXMatters.com. [vrdl.in/m326o](http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php#top)
 
 Prodávají se stále větší chytré telefony, takže bychom při návrhu rozhraní měli myslet na to, že palcem je u nich dosažitelná daleko menší část obrazovky.
 
@@ -73,7 +75,7 @@ Prodávají se stále větší chytré telefony, takže bychom při návrhu rozh
 
 Čím více dole a čím více veprostřed aktivní prvek je, tím lépe. Spodní hrana prohlížeče ale pro umístění důležitých prvků dobré místo nepředstavuje. K tomu se ještě vrátím. Na mobilech tedy důležité prvky jako primární výzvy k akci umísťujte alespoň co nejvíce doprostřed. 
 
-Na menších mobilech tedy dělají palce kolem 75 % všech interakcí. Na velkých mobilech kolem 60 %. Uvádí to Josh Clark ve vynikajícím článku How We Hold Our Gadgets“ na A List Apart, ze kterého budu dále vycházet. [vrdl.in/hold](http://alistapart.com/article/how-we-hold-our-gadgets)
+Na menších mobilech tedy dělají palce kolem 75 % všech interakcí. Na velkých mobilech kolem 60 %. Uvádí to Josh Clark ve vynikajícím článku „How We Hold Our Gadgets“ na A List Apart, ze kterého budu dále vycházet. [vrdl.in/hold](http://alistapart.com/article/how-we-hold-our-gadgets)
 
 To bychom měli mobily. Jak je to u větších zařízení?
 
