@@ -1,12 +1,19 @@
 # Příklad: dokument s přizpůsobivými médii
 
-Abychom použili vědomosti nasáté v téhle kapitole, vložili jsme do příkladu veškerý mediální obsah. Podívejme se teď na něj společně v rozlišení dnešních běžných mobilů. 
+Abychom použili vědomosti nasáté v téhle kapitole, vložil jsem do příkladu veškerý mediální obsah. Podívejme se teď na něj v rozlišení dnešních běžných mobilů. 
 
 ![Příklad před aplikováním přizpůsobivých médií](dist/images/original/vdwd/priklad-media-pred.jpg)
 
 *Obrázek: Příklad před aplikováním přizpůsobivosti médií.*
 
-Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný strach, nůžky na ně brát nebudeme. Prostě médiím domluvíme, aby se začala chovat flexibilněji.
+Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný strach, nůžky na ně brát nebudeme. Prostě jim klidným hlasem domluvíme, aby se začala chovat pružněji.
+
+Pro nedočkavce je tady výsledek:
+
+- Otevření v prohlížeči: [vrdl.in/vdwdmed](http://www.vzhurudolu.cz/files/vdwd/media/)
+- Stažení v ZIPu: [vrdl.in/vdwdmedzip](http://www.vzhurudolu.cz/files/vdwd/media.zip)
+
+Pojďme si teď lidsky popsat, co přesně se změnilo.
 
 ## 1. SVG logo
 
@@ -21,21 +28,21 @@ První krok je jednoduchý: pružné přizpůsobení velikosti okna. Toho dosáh
 
 Druhý krok zajistí, aby se načítaly také správné varianty obrázků na různě velkých oknech a poměrech `device-pixel-ratio`.
 
-Pojďme si tady projít celý proces, protože jde asi o nejsložitější a jinde jen teoreticky popsanou část tohoto kroku práce na příkladu.
+Pojďme si tady projít celý proces, protože jinde v knize tuto část popisuji spíše obecně.
 
 ### Vložíme obrázky v maximálním rozlišení
 
-Obsahové obrázky webu se hodí ukládat v co největším rozlišení. Nikdy totiž nevíte, jak budou vypadat displeje budoucnosti. Nám se obrázky podařilo ulovit ve velikosti kolem dvou tisíc pixelů. 
+Obsahové obrázky webu se hodí ukládat v co největším rozlišení. Nikdy totiž nevíte, jak budou vypadat displeje budoucnosti. Nám se je podařilo ulovit ve velikosti kolem dvou tisíc pixelů. 
 
 ### Najdeme nejmenší a největší velikost
 
 Nejmenší velikost obrazovky aktuálních mobilů je 240 pixelů. Dnes už se moc nedělají, ale nějaký podíl na trhu ještě mají. V tomto rozlišení mají obrázky po odečtení okrajů velikost 192 pixelů. Zaokrouhlíme si to na 200 pixelů.Tohle bude naše nejmenší varianta.
 
-Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli vysokokapacitním displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s vyšším poměrem pixelů než dva, ale mám zkušenost že dvojnásobek obvykle postačuje.
+Maximální šířka layoutu je nastavená na 30 čtverčíků, což je 540 pixelů. Kvůli vysokokapacitním displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s vyšším poměrem pixelů než dva, ale mám zkušenost že dvojnásobek obvykle postačuje.
 
 ### Vyrobíme varianty a uvedeme je do `srcset`
 
-Jak jsem psal v textu o [srcset a sizes](srcset-sizes.md), varianty generuji po dvěstě a třista pixelech. Pro jednorázovou práci ale doporučuji výborný generátor variant obrázků „Responsive Image Breakpoints Generator“. [responsivebreakpoints.com](http://www.responsivebreakpoints.com/)
+Jak jsem psal v textu o [srcset a sizes](srcset-sizes.md), varianty generuji po dvěstě a třista pixelech. Můžu to udělat nějakým Grunt či Gulp pluginem, můžu to udělat na serveru pomocí knihovny pro práci s obrázky. Pro jednorázovou práci ale doporučuji výborný generátor variant obrázků „Responsive Image Breakpoints Generator“. [responsivebreakpoints.com](http://www.responsivebreakpoints.com/)
 
 Ten varianty chytře vytváří podle minimálního kroku datové velikosti. Když jsem nastavil 30kB, dostal jsem následující verze prvního obrázku:
 
@@ -55,15 +62,9 @@ Pro další dva obrázky to bude vypadat trochu jinak. Podívejte se pak do HTML
 
 Layout a velikost obrázků v něm je v tuto chvíli poměrně jednoduchá. Stačí vzít vývojářské nástroje, zmenšit okno a postupně ho zvětšovat. Všechny body zlomu layoutu tam krásně uvidíte a z CSS snadno patřičné rozměry.
 
-Na malých displejích zabírá layout celou obrazovku bez postranních okrajů a obrázek jakbysmet:
-
-```css
-calc(100vw - 2 * 1.5rem)
-```
-
-Od šířky okna kolem 530 pixelů už se dále nezvětšuje. Šířka obrázku tam zůstává fixně na `480px`.
-
-Od 640 pixelů je zase obrázek velký `540px`.
+- Na malých displejích zabírá layout celou obrazovku bez postranních okrajů a obrázek jakbysmet: `calc(100vw - 2 * 1.5rem)`.
+- Od šířky okna kolem 530 pixelů už se dále nezvětšuje. Šířka obrázku tam zůstává fixně na `480px`.
+- Od 640 pixelů je zase obrázek velký `540px`.
 
 Teď si tři typy layoutu zapišme do atributu `sizes`:
 
@@ -73,6 +74,8 @@ Teď si tři typy layoutu zapišme do atributu `sizes`:
   (min-width: 530px) 480px,
   calc(100vw - 2 * 1.5rem)">
 ```
+
+Prohlížeč uplatní první vyhovující pravidlo, proto jsem typy layoutu řadil od největších obrazovek po nejmenší.
 
 ## 3. Tabulka
 

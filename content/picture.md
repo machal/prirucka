@@ -1,8 +1,8 @@
-# Nová značka picture
+# Nová značka `<picture>`
 
 `<picture>` umožňuje definovat varianty obrázku pro různé stavy v responzivním webdesignu. 
 
-Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my, autoři. Ukážu tady pár scénářů, kdy je to výhodné. Moc jich není.
+Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my, autoři. Ukážu tady pár scénářů, kdy je to výhodné. Moc jich není, častěji využijete značku `<img>` právě s atributy `srcset` a `sizes`.
 
 
 ## Ukázka zápisu
@@ -76,7 +76,7 @@ Tímto způsobem je také možné udělat pěkný fallback pro formát SVG:
 ```
 
 <div class="ebook-only" markdown="1">
-  Šmytec. O bitmapových obrázcích jsme si toho řekli až až. Teď vzhůru do vektorů!
+  Šmytec. O bitmapových obrázcích jsme si toho řekli už dost. Teď vzhůru do vektorů!
 </div>
 
 

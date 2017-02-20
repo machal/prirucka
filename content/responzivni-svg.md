@@ -140,7 +140,7 @@ Tady je, prosím, plnohodnotná ukázka. [cdpn.io/e/vyMRPL](http://codepen.io/ma
 Mechanismus responzivních SVG má velkou budoucnost: pro ikony, grafy, interaktivní elementy, mapy (!) a další prvky s potřebou měnit hustotu informací podle velikosti okna prohlížeče.
 
 <div class="ebook-only" markdown="1">
-  A teď už pryč od obrázků a hurá do tabulek a grafů. Slibuju, že to nebude taková nuda jako to zní.
+  A teď už pryč od obrázků a hurá do tabulek a grafů. Slibuji, že to nebude taková nuda jako to zní.
 </div>
 
 
