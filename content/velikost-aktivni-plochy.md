@@ -1,12 +1,12 @@
 # Minimální velikost aktivní plochy
 
-Robert Wadlow byl podle Wikipedie nejvyšším člověkem v historii, pro něhož existují nezvratné důkazy. Přezdívalo se mu Obr z Altonu. Když navrhuji rozhraní, myslím na Obra z Altonu. Hned vysvětlím proč. 
+Robert Wadlow byl podle Wikipedie nejvyšším člověkem v historii. Přezdívalo se mu Obr z Altonu. Když navrhuji rozhraní, dost na něj myslím. Hned vysvětlím proč. 
 
 Titěrné aktivní plochy v uživatelském rozhraní jsou častým hříchem responzivních webů. Ano, myší se trefíte skoro na cokoliv.
 
 Průměrný palec sedmnáctileté dívky bude ale menší než palec Roberta Wadlowa. Ten totiž měřil 2,72 m a vážil okolo 220 kg. Proto raději při vymýšlení rozhraní myslím na Obra z Altonu než na mladé dívky, jestli mi rozumíte.
 
-Moderní webařina se najčastěji odkazuje na další výzkum Stevena Hoobera, tentokrát s Patti Shank. Zjistili, že potřebná minimální velikost se různí podle vzdálenosti od kraje obrazovky:
+Co se týká minimalní velikost aktivní plochy, moderní webařina se nejčastěji odkazuje na další výzkum Stevena Hoobera, tentokrát s Patti Shank. Zjistili, že potřebná minimální velikost se různí podle vzdálenosti od kraje obrazovky:
 
 * ve středu obrazovky je 7 čtverečních milimetrů
 * na krajích obrazovky je to 11 čtverečních milimetrů
@@ -28,5 +28,5 @@ Za předpokladu, že máte správně nastavenou meta značku pro viewport, to do
 
 Pokud chcete kód vysvětlit, rozebírám to ve svém článku na Smashing Magazine. [http://vrdl.in/h8n7i](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/#5-make-all-tap-targets-nice-and-small)
 
-Navrhněte to raději i pro obra z Altonu!
+Budou to lidé trefovat palcem? Navrhněte to na plochu centimetru čtverečního. Navrhněte to i pro obra z Altonu.
 

@@ -2,11 +2,11 @@
 
 ## 1) Pomalu se načítající web
 
-Asi největší hřích dnešních responzivních webů. Rychlost načítání má vliv na úspěšnost webu a ovlivňuje řazení ve výsledcích vyhledávání Google. Mobilní sítě jsou pomalé a jen tak se nezrychlí. Nezapomeňte rychlost webu řešit už při návrhu a konzultovat ji s vývojáři. Tomu se budeme ještě věnovat.
+Asi největší hřích dnešních responzivních webů. Rychlost načítání má vliv na úspěšnost webu a ovlivňuje řazení ve výsledcích vyhledávání Google. Mobilní sítě jsou pomalé a jen tak se nezrychlí. Nezapomeňte rychlost webu řešit už při návrhu a konzultovat ji s vývojáři. Už jsme se tomu věnovali [v kapitole o rychlosti](kap-rychlost.md).
 
 ## 2) Navigace schovaná do ikony
 
-Responzivní weby často na mobilních obrazovkách schovávají navigace do různých ikon. Z průzkumů ale vyplývá, že ikony bez popisků jsou pro uživatele často nesrozumitelné. Ani samo schovávání navigace není nejlepší nápad. Také si o tom ještě něco povíme.
+Responzivní weby často na mobilních obrazovkách schovávají navigace do různých ikon. Z průzkumů ale vyplývá, že ikony bez popisků jsou pro uživatele často nesrozumitelné. Ani samo schovávání navigace není nejlepší nápad. Také si o tom ještě [něco povíme](kap-navigace.md).
 
 ## 3) Přizpůsobení jen některým rozlišením
 
@@ -34,6 +34,9 @@ Tady mám poněkud radikální postoj. Elementy, které při rolování stránky
 
 Týká se všech fixně umístěných navigačních lišt, překryvných vrstev s reklamou na newslettery nebo mobilní aplikace a nebo v poslední době populární tlačítka pro otevření chatu.
 
-To by mohlo stačit. Hlubší argumentaci ke zde zmíněným chybám najdete ve dvoudílné hubící sérii „Jak zničit mobilní uživatele?“ na Vzhůru dolů. [vrdl.in/lq5b4](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1)
+To by mohlo stačit. Pro další popis i hlubší argumentaci vás pošlu na další své texty:
+
+- Dvoudílná hubící série „Jak zničit mobilní uživatele?“ na Vzhůru dolů. [vrdl.in/lq5b4](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1) [vrdl.in/sacjz](http://www.vzhurudolu.cz/blog/48-znicit-mobilistu-2)
+- Anglický text „How To Poison The Mobile User“ na Smashing Magazine. [vrdl.in/h8n7i](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/)
 
 

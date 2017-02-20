@@ -8,9 +8,9 @@ Na obrazovce máme málo místa, proto tam nechte jen to opravdu nejdůležitěj
 
 ## 2) Nepodlehněte ikonománii
 
-Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaným ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. Vezměme web EquaBank.cz na dalším obrázku. Pojďme si udělat kvíz: co dělá první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Začne mi telefon hned volat?
+Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaným ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. Vezměme web EquaBank.cz na dalším obrázku a udělejme si kvíz: co má na starosti první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Bude můj telefon hned volat na zákaznickou linku?
 
-Více také na „UX Myth: Icons enhance usability“ na UXMyths.com.[vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
+Na většinu ikon se nedá spolehnout. Doplňte je popisy dat. Více v textu „UX Myth: Icons enhance usability“ na UXMyths.com.[vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
 
 ![K bodu 3](dist/images/original/vdwd/triky-ui-8.png)
 
@@ -24,11 +24,11 @@ Více také v textu od Luke Wroblewskiho „Dropdowns Should be the UI of Last R
 
 ## 4) Otevírejte pohodlné klávesnice
 
-Web CSOBpoj.cz uživatele nutí vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to má dobře, otevře čistě numerickou. Podívejte se na obrázek. Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`<input type="tel">`), emailů, URL adres nebo na vyhledávací pole.
+Web CSOBpoj.cz uživatele nutí vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to myslím vymyšleno lépe, otevře čistě numerickou. Podívejte se na obrázek. Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`<input type="tel">`), emailů, URL adres nebo na vyhledávací pole.
 
 Více na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http://mobileinputtypes.com/)
 
-A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízeních uvádějte jako odkazy: [http://vrdl.cz/blog/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
+A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízeních vypisujte jako odkazy. [http://vrdl.cz/blog/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
 
 ![](dist/images/original/vdwd/triky-ui-10.png)
 
@@ -38,7 +38,7 @@ Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pom
 
 ## 6) Zamilujte si našeptávače 
 
-Jsou velmi dobrým pomocníkem ve vstupních polích, kde je velké množství možných vstupů – hlavně ve vyhledávání, které je na mobilech kvůli nepřítomnosti plnohodnotné navigace velmi důležité. V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití je omezené, ale určitě se na něj s vývojáři podívejte. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
+Jsou velmi dobrým pomocníkem ve formulářových polích, kde je velké množství možných vstupů: hlavně ve vyhledávání, které je na mobilech kvůli časté nepřítomnosti plnohodnotné navigace velmi důležité. V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití je omezené, ale určitě se na něj podívejte. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
 
 ![](dist/images/original/vdwd/triky-ui-11.png)
 
@@ -55,7 +55,7 @@ Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to
 
 *Obrázek: Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
 
-Dlouhá stránka kromě této konkrétní nevýhody taky odsunuje spodní část rozhraní – patičku. Jak už jsem psal, s koncem stránky roste pozornost uživatelů, protože je tam bývá sekundární navigace. Příliš dlouhá stránka pak zhoršuje její přístupnost. Prostě se uživatel vyčerpá rolovacím maratonem.
+Dlouhá stránka kromě této konkrétní nevýhody taky odsunuje spodní část rozhraní – patičku. Jak už jsem psal, s koncem stránky roste pozornost uživatelů, protože tam bývá sekundární navigace. Příliš dlouhá stránka pak zhoršuje její přístupnost. Prostě se uživatel vyčerpá rolovacím maratonem.
 
 Hledejte alternativní způsoby zobrazení: 
 
