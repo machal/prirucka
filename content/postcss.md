@@ -13,12 +13,16 @@ Další rozdíl je **v modularitě**. Preprocesory jsou monolity, velké potvory
 
 Díky modularitě **kompiluje rychleji**. A může být i enormě rychlé.  Podívejte se třeba [na tyhle testy](https://github.com/postcss/benchmark).
 
+<!-- AdSnippet -->
+
 Dobré taky je, že mnoho PostCSS pluginů **využívá standardizovanou syntaxi**. CSS prostě píšete způsobem, který už dnes část prohlížečů umí nebo se předpokládá, že velmi brzy umět budou. Díky tomu můžete PostCSS použít jen jako fallback pro starší prohlížeče. Jenže v té *standarizované* syntaxi je ukrytý i ďábel. Hned vysvětlím.
 
 
 ## Proč ne CSSnext?
 
 Dole ukážu jednoduchý preprocesor, který jsem si v PostCSS poskládal z různých pluginů. Někteři z vás se mohou ptát, proč jsem nepoužil [CSSnext](http://cssnext.io/). To je transpilátor budoucího CSS do stylů, kterým rozumí dnešní prohlížeče. CSSnext by mi vlastně většinu pluginů nahradilo. 
+
+<!-- AdSnippet -->
 
 Jenže pro mě je CSSnext z velké části demonstrace způsobu, jakým by se transpilátor dělat neměl. Příklady:
 
@@ -129,6 +133,8 @@ dest: 'dist/css/index.css'
 ```
 
 Více je v příkladu ze [školení Dnešní webová kodéřina](http://www.vzhurudolu.cz/kurzy/webova-koderina) [na Githubu](https://github.com/machal/polaroid-example/blob/master/grunt/postcss.js). 
+
+<!-- AdSnippet -->
 
 Je to fajn základ, který můžete dále rozšiřovat, třeba [o Style Lint](https://stylelint.io/) a jiné pluginy. Inspirovat se můžete třeba i [u preprocesoru](https://github.com/suitcss/preprocessor/blob/master/README.md), který si pro framework Suit napsal Nicolas Gallagher. Neváhejte do komentářů napsat, jaké další používáte vy.
 
