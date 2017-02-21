@@ -1,4 +1,4 @@
-# 29 užitečných Grunt pluginů
+# 29 užitečných pluginů pro Grunt
 
 Pozor, vybraná devětadvacítka je dlouhá jako týden před výplatou. Berte ji ale jako zdroj inspirace, pokud Grunt nevyužíváte naplno nebo teprve začínáte. Takže se množství nelekejme a směle do toho.
 
