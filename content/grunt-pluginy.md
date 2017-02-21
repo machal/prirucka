@@ -1,136 +1,159 @@
-# 29 užitečných Grunt pluginů a zároveň důvodů proč konečně zkusit automatizaci
+# 29 užitečných Grunt pluginů
 
-Pozor, ta devětadvacítka je dlouhá jako týden před výplatou. Ale [kdo jednou zkusí](http://www.vzhurudolu.cz/kurzy/grunt-gulp), automatizaci s Gruntem (nebo klidně s Gulpem) neopustí. Takže se množství nelekejme a směle do toho.
+Pozor, vybraná devětadvacítka je dlouhá jako týden před výplatou. Berte ji ale jako zdroj inspirace, pokud Grunt nevyužíváte naplno nebo teprve začínáte. Takže se množství nelekejme a směle do toho.
 
-Pokud je to na vás příliš pokročilé, přečtěte si nejprve text o [Gruntu](grunt.md) nebo o instalaci celého [Node.js ekosystému](node-instalace.md) pro potřeby frontendisty.
+Předpokládám, že o [Gruntu](grunt.md) už něco víte a že máte lokálně nainstalovaný [Node.js](node-instalace.md).
+
 
 ## CSS
 
-### 1. grunt-autoprefixer: doplňování prefixů
+Pro práci s CSS se může hodit PostCSS, jeho pluginy. Pro pokročilejší pak preprocesory jako Sass nebo LESS.
 
-S [prohlížečovými prefixy](http://www.vzhurudolu.cz/prirucka/prefix) dnes už takové peklo neprožíváme. I tak se ale hodí jejich vkládání automatizovat. A s příchodem Autoprefixeru padá potřeba používat CSS3 mixiny v preprocesorech. Oblíbená vlastnost? Nastavení verzí prohlížečů, které chci podporovat. Výchozí jsou 2 verze zpět. Takhle to mám třeba u aktuálního většího projektu: options: `{ browsers: ['last 3 versions', 'ios 6', 'ie 7', 'ie 8', 'ie 9'] }`. [Github](https://github.com/nDmitry/grunt-autoprefixer).
+### PostCSS
 
-### 2. grunt-pixrem: px fallbacky k rem
+[PostCSS](postcss.md) můžete využít jako jediný nástroj pro zpracování CSS nebo jako doplněk k preprocesoru. Je to plugin co obsahuje řadu dalších pluginů. Ty hned následují. [Github](https://github.com/nDmitry/grunt-postcss)
 
-Nová CSS [jednotka rem](http://www.vzhurudolu.cz/prirucka/css3-jednotky) je úžasná, ale potřebujete náhradní řešení pro starší prohlížeče. Náhradní řešení? Ano, zní to jako úkol pro automatizaci. [Github](https://github.com/robwierzbowski/grunt-pixrem).
+### Autoprefixer: doplňování prefixů
 
-### 3. grunt-criticalcss: vytažení kódu nad zlomem stránky
+S [prohlížečovými prefixy](prefix.md) dnes už takové peklo neprožíváme. I tak se ale hodí jejich vkládání automatizovat. [Github](https://github.com/postcss/autoprefixer).
 
-Vygenerování části CSS kódu, která zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `<style>` tagu a ve výsledku rychlé načtení stránky i na mobilech. [Článek](http://www.filamentgroup.com/lab/performance-rwd.html). [Github](https://github.com/filamentgroup/grunt-criticalcss).
+### PixRem: `px` fallbacky k `rem`
 
-### 4. grunt-contrib-cssmin: zmenšení objemu CSS souboru
+Nová CSS [jednotka `rem`](css3-jednotky.md) je úžasná, ale potřebujete náhradní řešení pro starší prohlížeče. Náhradní řešení? Ano, zní to jako úkol pro automatizaci. [Github](https://github.com/robwierzbowski/node-pixrem).
+
+### Stylelint: kontrola stylů
+
+Moc pěkná a velmi dobře konfigurovatelná kontrola CSS oproti vašim týmovým standardům. [Web](https://stylelint.io/). [Výchozí konfigurace](https://github.com/stylelint/stylelint-config-standard).
+
+### CriticalCSS: vytažení kódu nad zlomem stránky
+
+Vygenerování [kritického CSS](http://www.vzhurudolu.cz/blog/35-critical-css), která zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `<style>` tagu a ve výsledku rychlé načtení stránky i na mobilech. [Github](https://github.com/filamentgroup/grunt-criticalcss).
+
+### CSSMin: zmenšení objemu CSS souboru
 
 Minifikovat CSSka umí i preprocesory. `contrib-cssmin` ale dokáže zmenšovat lépe a navíc se hodí nechat preprocesor zkompilovat plnohodnotný stylopis kvůli debugování. [Github](https://github.com/gruntjs/grunt-contrib-cssmin).
 
-### 5. grunt-uncss: odstranění zbytečného CSS
+### LegaCSSy: verze CSS bez Media Queries
 
-Skvělá věc pokud používáte [Bootstrap](http://www.vzhurudolu.cz/kurzy/bootstrap) a používáte jej špatně. Ale ocení myslím i pokročilí CSSkaři. [Github](https://github.com/addyosmani/grunt-uncss).
+Užitečný nástroj Robina Pokorného pokud řešíte responzivní design ve starších  starších Explorerech. [Github](https://github.com/robinpokorny/grunt-legacssy).
 
-### 6. grunt-legacssy: verze CSS bez Media Queries
+### Styleguide: generování dokumentace ze stylů
 
-Užitečné, pokud pro rozchození responzivního CSS ve starších Explorerech nechcete nebo nemůžete použít [Respond.js](https://github.com/scottjehl/Respond). [Github](https://github.com/robinpokorny/grunt-legacssy).
+Styledocco nebo KSS, které tahle úloha využívá, vytvářejí příručky stylů rovnou z CSS nebo zdrojáků napsaných v preprocesorech. [Github](https://github.com/indieisaconcept/grunt-styleguide).
 
-### 7. Kompilace LESSu, SASSu a Stylusu
+### Kompilace LESSu, SASSu a Stylusu
 
-To už všichni znáte, vím. [contrib-less](https://github.com/gruntjs/grunt-contrib-less), [contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) a [contrib-stylus](https://github.com/gruntjs/grunt-contrib-stylus) pro kompilaci [CSS preprocesorů](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) jsou naprosto obligátní.  Jen nezapomeňte nastavit mapování zdrojáků ke zkompilovaným asemblerů… ach pardon… CSSkům pomocí [source maps](http://blog.teamtreehouse.com/introduction-source-maps).
+To už všichni znáte, vím. [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less), [grunt-sass](https://github.com/sindresorhus/grunt-sass) a [grunt-contrib-stylus](https://github.com/gruntjs/grunt-contrib-stylus) pro kompilaci [CSS preprocesorů](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) jsou naprosto obligátní. 
 
-### 8. grunt-styleguide: generování dokumentace
 
-Ale ne ledajaké dokumentace. Styledocco nebo KSS, které tahle úloha využívá, vytvářejí příručky stylů rovnou z CSS nebo zdrojáků napsaných v preprocesorech. [Github](https://github.com/indieisaconcept/grunt-styleguide).
 
 ## Javascript
 
-### 9. grunt-contrib-concat: spojování JS souborů
+Vývojáři javascriptových aplikací budou používat daleko více nástrojů. Zmíním tady alespoň ty základní pro práci na prezentačních webech.
+
+### Concat: spojování JS souborů
 
 Aby se nám weby načítaly rychle, chceme co nejméně requestů a proto spojujeme Javascripty do jednoho souboru a teprve ten linkujeme z HTML kódu stránky. [Github](https://github.com/gruntjs/grunt-contrib-concat).
 
-### 10. grunt-contrib-uglify: zmenšování JS souborů
+### Uglify: zmenšování JS souborů
 
 Soubory spojené pomocí contrib-concat pak ještě v produkční verzi minifikujeme. V javascriptu je minifikace daleko efektivnější než v CSS a proto zde slovo „minifikace" používám jen pro zjednodušení. Prostě uglify. [Github](https://github.com/gruntjs/grunt-contrib-uglify).
 
-### 11. grunt-contrib-jshint: validace JS kódu
+### JSHint: validace JS kódu
 
-Jakou blbost napíšete do JS kódu zrovna dneska? Občas jsou hlášení `jshint` dost nesrozumitelná, proto pomůže web [jslinterrors.com](http://jslinterrors.com/). [Github](https://github.com/gruntjs/grunt-contrib-jshint).
+Jakou blbost napíšete do JS kódu zrovna dneska? [Github](https://github.com/gruntjs/grunt-contrib-jshint).
+
+### Sestavování vlastní verzí knihoven
+
+Posílat v produkčním kódu jen to co uživatel opravdu potřebuje je správné. Sestavovače jsou dostupné pro spoustu větších knihoven. Například [jQuery](https://www.npmjs.com/package/grunt-jquery-builder), [Bootstrap](https://www.npmjs.com/package/grunt-bootstrap) nebo [Modernizr](https://github.com/Modernizr/grunt-modernizr).
+
+
 
 ## HTML
 
-### 12. grunt-contrib-htmlmin: zmenšení datového objemu HTML
+To jen aby HTML nezávidělo stylům a javascriptům.
 
-Minifikace HTML – a proč jako? Na mobilním připojení šetříme každý bajt a tak tenhle task u statických webů není od věci. Volba removeComments odstraní z kódu komentáře. To jen aby HTML nezávidělo stylům a javascriptům. [Github](https://github.com/gruntjs/grunt-contrib-htmlmin).
+### HTMLmin: zmenšení datového objemu HTML
+
+Na pomalém připojení šetříme každý bajt a tak tahle úloha není u statických webů od věci. Volba `removeComments` odstraní z kódu komentáře.  [Github](https://github.com/gruntjs/grunt-contrib-htmlmin).
+
 
 ## Obrázky
 
-### 13. grunt-contrib-imagemin: zmenšování obrázků
+Práce s obrázky se automatizuje výborně. Můžete zmenšovat datový objem, generovat varianty nebo sprajty. 
 
-Minifikuje JPG nebo PNG obrázky, ale s překvapivými výsledky mám odzkoušeno i na [vektorovém SVG](http://www.vzhurudolu.cz/prirucka/svg). [Github](https://github.com/gruntjs/grunt-contrib-imagemin)
+### ImageMin: zmenšování obrázků
 
-### 14. grunt-svg2png: převod SVG do PNG
+Minifikuje obrázky všeho typu. Mám odzkoušeno i na [vektorovém SVG](svg.md). [Github](https://github.com/gruntjs/grunt-contrib-imagemin)
 
-Pokud používáte SVG, kvůli starším prohlížečům potřebujete [náhradní řešení](http://www.vzhurudolu.cz/prirucka/svg#svg-v-html-jako-code-lt-img-gt-code) v PNG obrázcích. Pak SVG2PNG znáte. Pokud ne, brzy jej poznáte – to si pište. [Github](https://github.com/dbushell/grunt-svg2png).
+### SVG2PNG: převod SVG do PNG
 
-### 15. grunt-responsive-images: generování zmenšenin obrázků
+Pokud používáte SVG, kvůli starším prohlížečům můžete potřebovat náhradní řešení v PNG obrázcích. [Github](https://github.com/dbushell/grunt-svg2png).
 
-Nadefinujete varianty – třeba takhle: `options: { sizes: [ { name: "small", width: 200, quality: 80 }, { name: "large", width: 600, quality: 80 } ] }`. Úloha vám pak vytvoří adresáře a do nich umístí zmenšeniny obrázků. Obvykle to sice u webů řeší backend, na statických stránkách je tenhle plugin ovšem k nezaplacení. [Github](https://github.com/andismith/grunt-responsive-images).
+### Responsive Images: generování zmenšenin obrázků
 
-### 16. Sprity: grunt-spritesmith nebo grunt-sprite-packer
+Generuje varianty například [pro `srcset` atribut](srcset-sizes.md). Nadefinujete varianty (třeba takhle: `options: { sizes: [ { name: "small", width: 200, quality: 80 }, { name: "large", width: 600, quality: 80 } ] }`). Úloha vám pak vytvoří adresáře a do nich umístí zmenšeniny obrázků. Obvykle to sice u webů řeší backend, na statických stránkách je tenhle plugin ovšem k nezaplacení. [Github](https://github.com/andismith/grunt-responsive-images).
 
-Generování obrázkových sprajtů – další fantastická příležitost pro automatizátory. Vyzkoušel jsem [grunt-sprite-packer](https://github.com/karfcz/grunt-sprite-packer) (i na SVG sprity!) a mnozí chválí [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith).
+### Sprajty: grunt-spritesmith nebo grunt-sprite-packer
 
-### 17. Ikony: grunticon nebo grunt-iconizr
+Generování obrázkových sprajtů – další fantastická příležitost pro automatizátory. Vyzkoušel jsem [grunt-sprite-packer](https://github.com/karfcz/grunt-sprite-packer) (i na SVG sprity) a mnozí chválí [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith).
 
-Práce se soubory ikon, to jsou sprajty v bleděmodrém. V shortlistu mám [grunticon](https://github.com/filamentgroup/grunticon) a [grunt-iconizr](https://github.com/jkphl/grunt-iconizr). Zatím jsem nevyzkoušel v praxi, takže poraďte v komentářích.
 
 ## Workflow
 
-### 18. grunt-contrib-watch: sledování změn v souborech
+Grunt pluginy, které samy o sobě nic nedělají. Obvykle ale šetří čas nebo nahrazují jiné nástroje. 
+
+### Watch: sledování změn v souborech
 
 Čekatel a čmuchal `contrib-watch` je samozřejmě nepostradatelným středobodem celého Grunt vesmíru. Méně známé je třeba nastavení atBegin: true, které při startu úlohy vše provede tak jako by se soubory změnily. [Github](https://github.com/gruntjs/grunt-contrib-watch).
 
-### 19. grunt-browser-sync: živý reload stránky a synchronizace mezi zařízeními
+### BrowserSync: živý reload stránky a synchronizace mezi zařízeními
 
 Fantastická věc. Jednak zařizuje reload stránky bez nutnosti mačkat reload tlačítko pomocí injektáže změněných CSSek. Zadruhé vám vyrobí malý webserver pro lokální testování a prozradí adresu, na které je web viditelný z mobilních zařízení. No a pak ještě – lusk! – a máte synchronizované procházení webem na všech připojených zařízeních. Včetně skrolování a odesílání formulářů prosím. Čtyři z pěti responzivních zubařů doporučují! [Web](http://www.browsersync.io/docs/grunt/).
 
-### 20. grunt-contrib-copy: kopírování souborů nebo adresářů
+### Copy: kopírování souborů nebo adresářů
 
 To se jako pisálek můžete snažit sebevíc, ale nedostanete ze sebe nic lepšího než „slouží ke kopírování souborů nebo adresářů". Blé. [Github](https://github.com/gruntjs/grunt-contrib-copy).
 
-### 21. grunt-ftp-deploy: upload projektu na FTP
+### FTPdeploy: upload projektu na FTP
 
 Šikovná věc, kterou jsem užíval pro deployment malých projektů. Předtím než jsem propadl [FTP v Sublime](http://wbond.net/sublime_packages/sftp). [Github](https://github.com/zonak/grunt-ftp-deploy).
 
-### 22. grunt-pagespeed: statistiky rychlosti načítání stránky
+### PageSpeed: statistiky rychlosti načítání stránky
 
 Googlí [Page Speed Insights](https://developers.google.com/speed/docs/insights/about) asi znáte. Vynikající záležitost pro audit načítání stránky. grunt-pagespeek vám do konzole vyplivne [hezký grafík](https://www.slideshare.net/fullscreen/tomasmusiol7/zakladni-nastroje-pro-automatizaci/15). [Github](https://github.com/jrcryer/grunt-pagespeed).
 
-### 23. grunt-modernizr: vlastní build Modernizru
-
-„Myšlenka Modernizru je moc krásná, ale využiju z něj setinovou část." – kolikrát jsem to jen [na školeních](http://www.vzhurudolu.cz/kurzy/webovy-frontend) slyšel! Pokud vás nebaví [ruční klikání](http://modernizr.com/download/), vybrat tu správnou část Modernizru pomůže tahle úloha. [Github](https://github.com/Modernizr/grunt-modernizr).
-
-## Grunt úlohy pro… Grunt
-
-### 24. jit-grunt: zrychlení načítání pluginů
-
-JIT = Just In Time. Znalci v diskuzi pod článkem tvrdí, že dokáže pekelně zrychlit start Gruntu a běh každého tasku. Navíc není potřeba každý plugin ručně načítat pomocí `grunt.loadNpmTasks()`, což je tak trochu gruntovská psychiatrie. Mrkněte na [Github](https://github.com/shootaroo/jit-grunt).
-
-### 25. load-grunt-tasks: automatické načtení pluginů
-
-Načítat každý plugin pomocí `grunt.loadNpmTasks()` je samozřejmě dementní, ale naštěstí je tu psychiatrická pomoc v podobě tohoto tasku.  [Github](https://github.com/sindresorhus/load-grunt-tasks).
-
-### 26. time-grunt: čas běhu grunt úloh
-
-Instatní odpověď na otázku „Proč to safra trvá tak dlouho?". [Github](https://github.com/sindresorhus/time-grunt).
-
-### 27. grunt-concurrent: běh více úloh najednou
-
-Pomoc s během pomalých úloh jako je kompilování Sass nebo Coffee souborů. [Github](https://github.com/sindresorhus/grunt-concurrent).
-
-### 28. grunt-newer: aplikace úloh jen na změněné soubory
-
-Něco jako `grunt.registerTask('js', ['newer:jshing, 'newer:uglify'])` například použijete když chcete kontrolovat a zmenšit jen změněné javascriptové soubory. [Github](https://github.com/tschaub/grunt-newer)
-
-### 29. grunt-shell: jakýkoliv příkaz do příkazové řádky
+### Shell: jakýkoliv příkaz do příkazové řádky
 
 Jako příklad autoři uvádění kompilaci Compass `compass compile` nebo získání aktuální větve `git branch`. Může se hodit! [Github](https://github.com/sindresorhus/grunt-shell)
 
-Hotovo. A ani to nebolelo, viďte.
+
+
+## Grunt úlohy pro Grunt
+
+Zrychlení běhu nebo ošetření místy zbytečné ukecanosti Gruntu nebo aplikace úloh jen na změněné soubory.
+
+### jit-grunt: zrychlení načítání pluginů
+
+JIT = Just In Time. Znalci v diskuzi pod článkem tvrdí, že dokáže pekelně zrychlit start Gruntu a běh každého tasku. Navíc není potřeba každý plugin ručně načítat pomocí `grunt.loadNpmTasks()`, což je tak trochu gruntovská psychiatrie. Mrkněte na [Github](https://github.com/shootaroo/jit-grunt).
+
+### load-grunt-tasks: automatické načtení pluginů
+
+Načítat každý plugin pomocí `grunt.loadNpmTasks()` je samozřejmě dementní, ale naštěstí je tu psychiatrická pomoc v podobě tohoto tasku.  [Github](https://github.com/sindresorhus/load-grunt-tasks).
+
+### time-grunt: čas běhu grunt úloh
+
+Instatní odpověď na otázku „Proč to safra trvá tak dlouho?". [Github](https://github.com/sindresorhus/time-grunt).
+
+### grunt-concurrent: běh více úloh najednou
+
+Pomoc s během pomalých úloh jako je kompilování Sass nebo Coffee souborů. [Github](https://github.com/sindresorhus/grunt-concurrent).
+
+### grunt-newer: aplikace úloh jen na změněné soubory
+
+Něco jako `grunt.registerTask('js', ['newer:jshing, 'newer:uglify'])` například použijete když chcete kontrolovat a zmenšit jen změněné javascriptové soubory. [Github](https://github.com/tschaub/grunt-newer)
+
+
+
+Hotovo. Máte další tipy? Poraďte do komentářů. 
 
