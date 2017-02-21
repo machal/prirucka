@@ -2,16 +2,18 @@
 
 Pozor, vybraná devětadvacítka je dlouhá jako týden před výplatou. Berte ji ale jako zdroj inspirace, pokud Grunt nevyužíváte naplno nebo teprve začínáte. Takže se množství nelekejme a směle do toho.
 
+<!-- AdSnippet -->
+
 Předpokládám, že o [Gruntu](grunt.md) už něco víte a že máte lokálně nainstalovaný [Node.js](node-instalace.md).
 
 
 ## CSS
 
-Pro práci s CSS se může hodit PostCSS, jeho pluginy. Pro pokročilejší pak preprocesory jako Sass nebo LESS.
+Pro práci s CSS se může hodit PostCSS a jeho pluginy. Pro pokročilejší pak preprocesory jako Sass nebo LESS.
 
 ### PostCSS
 
-[PostCSS](postcss.md) můžete využít jako jediný nástroj pro zpracování CSS nebo jako doplněk k preprocesoru. Je to plugin co obsahuje řadu dalších pluginů. Ty hned následují. [Github](https://github.com/nDmitry/grunt-postcss)
+[PostCSS](postcss.md) můžete využít jako jediný nástroj pro zpracování CSS nebo jako doplněk k preprocesoru. Je to plugin co umožňuje běh řadě dalších pluginů. Ty v textu následují. [Github](https://github.com/nDmitry/grunt-postcss)
 
 ### Autoprefixer: doplňování prefixů
 
@@ -27,11 +29,13 @@ Moc pěkná a velmi dobře konfigurovatelná kontrola CSS oproti vašim týmový
 
 ### CriticalCSS: vytažení kódu nad zlomem stránky
 
-Vygenerování [kritického CSS](http://www.vzhurudolu.cz/blog/35-critical-css), která zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `<style>` tagu a ve výsledku rychlé načtení stránky i na mobilech. [Github](https://github.com/filamentgroup/grunt-criticalcss).
+Vygenerování [kritického CSS](http://www.vzhurudolu.cz/blog/35-critical-css), které zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `<style>` tagu. Ve výsledku zařídí rychlé zobrazení stránky i na mobilech. [Github](https://github.com/filamentgroup/grunt-criticalcss).
 
-### CSSMin: zmenšení objemu CSS souboru
+### CSSnano: zmenšení objemu CSS souboru
 
-Minifikovat CSSka umí i preprocesory. `contrib-cssmin` ale dokáže zmenšovat lépe a navíc se hodí nechat preprocesor zkompilovat plnohodnotný stylopis kvůli debugování. [Github](https://github.com/gruntjs/grunt-contrib-cssmin).
+Minifikovat CSSka umí i jiné nástroje. CSSnano je ale navržený pro PostCSS, což chceme. Navíc je velmi konfigurovatelný. [Web](http://cssnano.co/).
+
+<!-- AdSnippet -->
 
 ### LegaCSSy: verze CSS bez Media Queries
 
@@ -57,7 +61,7 @@ Aby se nám weby načítaly rychle, chceme co nejméně requestů a proto spojuj
 
 ### Uglify: zmenšování JS souborů
 
-Soubory spojené pomocí contrib-concat pak ještě v produkční verzi minifikujeme. V javascriptu je minifikace daleko efektivnější než v CSS a proto zde slovo „minifikace" používám jen pro zjednodušení. Prostě uglify. [Github](https://github.com/gruntjs/grunt-contrib-uglify).
+Soubory spojené pomocí contrib-concat pak ještě v produkční verzi minifikujeme. V javascriptu je minifikace daleko efektivnější než v CSS a proto zde slovo „minifikace“ používám jen pro zjednodušení. Prostě uglify. [Github](https://github.com/gruntjs/grunt-contrib-uglify).
 
 ### JSHint: validace JS kódu
 
@@ -92,11 +96,11 @@ Pokud používáte SVG, kvůli starším prohlížečům můžete potřebovat n�
 
 ### Responsive Images: generování zmenšenin obrázků
 
-Generuje varianty například [pro `srcset` atribut](srcset-sizes.md). Nadefinujete varianty (třeba takhle: `options: { sizes: [ { name: "small", width: 200, quality: 80 }, { name: "large", width: 600, quality: 80 } ] }`). Úloha vám pak vytvoří adresáře a do nich umístí zmenšeniny obrázků. Obvykle to sice u webů řeší backend, na statických stránkách je tenhle plugin ovšem k nezaplacení. [Github](https://github.com/andismith/grunt-responsive-images).
+Generuje varianty například [pro `srcset` atribut](srcset-sizes.md). Nadefinujete velikosti, třeba takhle: `options: { sizes: [ { name: "small", width: 200, quality: 80 }, { name: "large", width: 600, quality: 80 } ] }`. Úloha vám pak vytvoří adresáře a do nich umístí zmenšeniny obrázků. Obvykle to sice u webů řeší backend, na statických stránkách je tenhle plugin ovšem k nezaplacení. [Github](https://github.com/andismith/grunt-responsive-images).
 
 ### Sprajty: grunt-spritesmith nebo grunt-sprite-packer
 
-Generování obrázkových sprajtů – další fantastická příležitost pro automatizátory. Vyzkoušel jsem [grunt-sprite-packer](https://github.com/karfcz/grunt-sprite-packer) (i na SVG sprity) a mnozí chválí [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith).
+Generování obrázkových sprajtů je další fantastická příležitost pro automatizátory. Vyzkoušel jsem [grunt-sprite-packer](https://github.com/karfcz/grunt-sprite-packer) (i na SVG sprity) a mnozí chválí [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith).
 
 
 ## Workflow
@@ -109,7 +113,13 @@ Grunt pluginy, které samy o sobě nic nedělají. Obvykle ale šetří čas neb
 
 ### BrowserSync: živý reload stránky a synchronizace mezi zařízeními
 
-Fantastická věc. Jednak zařizuje reload stránky bez nutnosti mačkat reload tlačítko pomocí injektáže změněných CSSek. Zadruhé vám vyrobí malý webserver pro lokální testování a prozradí adresu, na které je web viditelný z mobilních zařízení. No a pak ještě – lusk! – a máte synchronizované procházení webem na všech připojených zařízeních. Včetně skrolování a odesílání formulářů prosím. Čtyři z pěti responzivních zubařů doporučují! [Web](http://www.browsersync.io/docs/grunt/).
+Fantastická věc. [Browsersync](browsersync.md) zařizuje reload stránky bez nutnosti mačkat reload tlačítko pomocí injektáže změněných CSSek. Zadruhé vám vyrobí malý webserver pro lokální testování a prozradí adresu, na které je web viditelný z mobilních zařízení. 
+
+No a pak ještě – lusk! – a máte synchronizované procházení webem na všech připojených zařízeních. Včetně skrolování a odesílání formulářů prosím. Čtyři z pěti responzivních webařů doporučují! [Web](http://www.browsersync.io/docs/grunt/).
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> ~ Obě vlastnosti rozebrány ve videu. Podívejte se.
+</p>
 
 ### Copy: kopírování souborů nebo adresářů
 
@@ -136,6 +146,8 @@ Zrychlení běhu nebo ošetření místy zbytečné ukecanosti Gruntu nebo aplik
 ### jit-grunt: zrychlení načítání pluginů
 
 JIT = Just In Time. Znalci v diskuzi pod článkem tvrdí, že dokáže pekelně zrychlit start Gruntu a běh každého tasku. Navíc není potřeba každý plugin ručně načítat pomocí `grunt.loadNpmTasks()`, což je tak trochu gruntovská psychiatrie. Mrkněte na [Github](https://github.com/shootaroo/jit-grunt).
+
+<!-- AdSnippet -->
 
 ### load-grunt-tasks: automatické načtení pluginů
 
