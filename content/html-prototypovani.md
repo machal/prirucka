@@ -4,6 +4,8 @@ Když vyslovíme slovo „prototyp“ v hospodě – a nebude přitom zrovna pln
 
 Prototyp je obvykle definován jako *raný* vzorek, který byl vytvořen pro *otestování* myšlenkového konceptu nebo pracovního procesu v začátcích práce na produktu. Na výsledek testu se buď naváže v reálné výrobě nebo se z něj poučíme a zkusíme to jinak.
 
+<!-- AdSnippet -->
+
 Každý dobrý řemeslník věci nejprve promýšlí a pak teprve vyrábí. Produkční výroba ale bývá v některých oborech velmi drahá. Přísloví „třikrát měř, jednou řež“ platí i u webů.
 
 Proto třeba výrobci automobilů, ale právě i webů, sahají k nějaké formě zkušebních modelů. Prototypů. 
@@ -100,6 +102,8 @@ Nemyslím tím jen „kliknu a přejdu na jinou stránku“. V HTML se skvěle p
 
 SVG výplně, výřezy, filtry, efekty… tady opravdu nevím, jak jinak než přímo v HTML si to zkusit. [vrdl.cz/prirucka/svg-inspirace](http://www.vzhurudolu.cz/prirucka/svg-inspirace)
 
+<!-- AdSnippet -->
+
 Ohromě ale z HTML prototypování mohou těžit vývojáři, kteří mají na starost zpracování výstupů designérů. Cílem totiž není jen dostat produkt co nejdříve do prohlížeče, ale také vtáhnout vývojáře do dřívějších fází procesu. Tak, aby si zavčasu otestovali časté problémy, které na drátěném modelu ani maketě prostě vidět nejsou.
 
 ## Frontendisti ošetří své rizikové faktory
@@ -159,6 +163,8 @@ Ano, HTML prototypování je časově nejnáročnější varianta modelování w
 Na svých projektech HTML prototypování používám kdykoliv je to možné. Mluvím do designu rozhraní i frontend kódování a jak už jsem ukázal, pro obě části mé profesní osobnosti jsou prototypy výborné. Obvykle jsem najímán na projekty, kde je očekávaná špičková kvalita a nepočítá se každá hodina stráveného času. 
 
 Pro HTML prototypování se ale také rozhodují často týmy pracující dlouhodobě na jednom produktu. Tam se vyplatí. 
+
+<!-- AdSnippet -->
 
 V případě agenturní práce pro mnoho klientů doporučuji HTML prototypy dělat tam, kde zkoušíte nové věci nebo je rizikovost návrhu vysoká. 
 

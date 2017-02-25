@@ -8,6 +8,8 @@ Browsersync je velmi užitečný nástroj pro lokální vývoj webů. Pomáhá h
 
 Browsersync je Node.js komponenta, takže je kompatibilní [s Gruntem](grunt.md), Gulpem, ale i dalšími nástroji tohoto ekosystému. Je opensource a zdarma: [browsersync.io](https://www.browsersync.io/).
 
+<!-- AdSnippet -->
+
 V textu budu jeho instalaci a základní vlastnosti ukazovat na příkladu. Zkušenější mohou skočit rovnou na poslední část „Další tipy pro práci s Browsersync“. 
 
 ## Instalace ukázky krok za krokem
@@ -33,6 +35,8 @@ To bychom měli. A teď ještě k čemu nám to bude, že ano?
 Upravíte CSS nebo HTML soubor a změny se vám hned projeví v prohlížeči bez obnovení stránky. Možná už to znáte z jiných nástrojů, jako je LiveReload. 
 
 Pokud živý náhled neznáte nebo nevěříte, že to nějak zásadně pomáhá, opravdu (ale *opravdu*) si to zkuste.
+
+<!-- AdSnippet -->
 
 V našem příkladu stačí  upravit soubor `app/index.html` nebo `app/css/main.css`. Změny se hned projeví v prohlížeči. Obnovení stránky netřeba. Úplně nejlepší je nastavit si editor, aby ukládal změny v otevřených souborech hned po přepnutí do jiné aplikace. Pak stačí přepínat mezi editorem a prohlížečem. Šetří to hrozně energie, fakt že jo. 
 
