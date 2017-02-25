@@ -7,7 +7,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Jak to dostat do stávajících pracovních postupů?
+## Jak to dostat do stávajících pracovních postupů?
 
 Vsadím levou botu, že byť jste dosud byli zvyklí pracovat jinak, některým z vás se postup práce ukazovaný v knížce zalíbí. A vsadím pravou, že budete narážet na železné zvyky v pracovních postupech vašeho týmu. 
 
