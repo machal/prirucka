@@ -6,7 +6,10 @@ Titěrné aktivní plochy v uživatelském rozhraní jsou častým hříchem res
 
 Průměrný palec sedmnáctileté dívky bude ale menší než palec Roberta Wadlowa. Ten totiž měřil 2,72 m a vážil okolo 220 kg. Proto raději při vymýšlení rozhraní myslím na Obra z Altonu než na mladé dívky, jestli mi rozumíte.
 
-Co se týká minimalní velikost aktivní plochy, moderní webařina se nejčastěji odkazuje na další výzkum Stevena Hoobera, tentokrát s Patti Shank. Zjistili, že potřebná minimální velikost se různí podle vzdálenosti od kraje obrazovky:
+Co se týká minimalní velikost aktivní plochy, moderní webařina se nejčastěji odkazuje na další výzkum Stevena Hoobera, tentokrát s Patti Shank: „Making mLearning Usable: How We Use Mobile Devices“. 
+[vrdl.in/aug5z](http://shoobe01.blogspot.cz/2014/11/making-mlearning-usable-how-we-use.html) 
+
+Zjistili, že potřebná minimální velikost se různí podle vzdálenosti od kraje obrazovky:
 
 * ve středu obrazovky je 7 čtverečních milimetrů
 * na krajích obrazovky je to 11 čtverečních milimetrů

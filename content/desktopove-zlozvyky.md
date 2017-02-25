@@ -54,7 +54,10 @@ Nezbývá než se s tím smířit a na globální navigaci tak moc nestavět. U 
 
 ## 6) Modální okna, lightboxy: pozor na správnou implementaci
 
-Ty samy o sobě nejsou špatné. Dokonce bych řekl, že jsou na mobilech velmi užitečné. Jen mám asi smůlu. Smůlu na weby, které zavírání modálního okna schovávání pod horní hranu okna prohlížeče. 
+Ty samy o sobě nejsou špatné. Dokonce bych řekl, že jsou na mobilech velmi užitečné. Jen mám asi smůlu. Smůlu na weby, které zavírání modálního okna schovávájí pod horní hranu okna prohlížeče. 
+
+Specifickou odrůdu modálních oken, otravná modální okna, dokonce Google považuje za hodné penalizace. Více je v článku Pavla Ungra „Google od ledna 2017 penalizuje weby s obtěžujícími popupy“.[vrdl.in/googlepopup](http://blog.bloxxter.cz/google-od-ledna-2017-penalizuje-weby-s-obtezujicimi-popupy/)
+
 
 Modálními okny a lightboxy ukončíme výčet nejvýznamnějších zástupců „Červené knihy ohrožených návrhových vzorů“. Myslíte, že vyhynou? Doufám, že ve své desktopové podobě ano. Ale ještě víc doufám, že příroda bude mít dostatek soudnosti, aby jejich DNA upravila. Tak aby v nové responzivní době měly šanci přežít.
 

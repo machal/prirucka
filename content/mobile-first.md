@@ -10,11 +10,13 @@ Autor myšlenky, Luke Wroblewski, ji nadefinoval asi takto:
 
 Parafrázuji, necituji. Plné znění hledejte ve slavném Wroblewskiho článku „Mobile First“. [vrdl.in/4slev](http://www.lukew.com/ff/entry.asp?933)
 
-## Mobily mají větší budoucnost než desktop
+## Mobily budou používanější než desktop. Někde už jsou
 
 Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé příručních přístrojů budou jednou tvořit většinu návštěvnosti pravděpodobně i na vašem webu. 
 
-Pro dokreslení situace alespoň jedno další číslo: 92 % uživatelů přistupovalo v červenci 2016 na Facebook přes mobilní zařízení. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)
+![VašeČočky.cz - dvě skici](dist/images/original/mobile-facebook-graph.jpg)
+
+*Obrázek: 94 % uživatelů Facebooku přistupovalo ke konci roku 2016 na Facebook přes mobilní zařízení. 62 % používalo výlučně mobilní zařízení. Zdroj: Luke Wroblewski. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)*
 
 Proto „nejdříve mobily“.
 

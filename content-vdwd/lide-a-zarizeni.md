@@ -24,10 +24,13 @@ Ani skupina uživatelů klasických počítačů,  zejména notebooků, není ne
 
 Není. 
 
-* Bylo by to totiž děsně **neefektivní**. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit.
-* Z principu je navíc téměř **nemožné detekovat dotyková zařízení**. Kdyby se lidé dělili na *dotykující* a *myšující*, možné by to jakž takž bylo. Jenže lidstvo je děsně zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
+Bylo by to totiž děsně **neefektivní**. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit. Pro nastartování představivosti doporučuji podkapitolu [o webech mobilních, responzivních, adaptivních](mobilni-responzivni-adaptivni.md). Možná si vzpomenete, že jsem proti speciální mobilní verzi webu argumentoval náročností práce i údržby pro designéry i vývojáře. Ale týká se vlastně všech řemesel sovisejících s webem: uživatelského a technického testování, správy obsahu a dalších. Práce na dvou rozhraních je všechny zpomalí a prodraží.
 
-Výjimečně nastává situace, kdy se nějaká detekce hodí. Třeba když chcete pro desktopové rozhraní otevřít prvek po najetí myši. Pak použijte detekční knihovnu Modernizr, která *myšovitá* umí najít. Obecně se tomu ale snažte vyhnout, protože i tato detekce je z mnoha důvodů nespolehlivá. 
+Z principu je navíc téměř **nemožné detekovat dotyková zařízení**. Kdyby se lidé dělili na *dotykující* a *myšující*, možné by to jakž takž bylo. Jenže lidstvo je děsně zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
+
+Výjimečně nastává situace, kdy se nějaká detekce hodí. Třeba když chcete pro desktopové rozhraní otevřít prvek po najetí myši. Pak použijte detekční knihovnu Modernizr, která *myšovitá* umí najít. 
+
+Obecně se tomu ale snažte vyhnout, protože i tato detekce je nespolehlivá. Řeknu dva z mnoha důvodů. Starší dotyková zařízení například prostě jen technicky emulovala klikání myší, takže je jako dotyková detekovat nelze. A pak tu máme hybridní zařízení. Technicky se jich zeptáte: „Umíš doteky?“ „Ano, umím.“ odpoví. Jenže co když uživatel právě ovládá vaše rozhraní myší? Více o tomto problému najdete v dokumentaci Modernizru, hledejte „touchevents“. https://modernizr.com/docs 
 
 ## Lidé váš web vidí na více zařízeních
 
@@ -48,11 +51,9 @@ Není samozřejmě bez zajímavosti, že uživatelé v průzkumu strávili v pr�
 
 V roce 2013 se Steven Hoober sebral a šel se podívat, jak lidé na ulicích drží své mobilní telefony. Asi vás to nepřekvapí, ale my lidé jsme se nesjednotili ani ve způsobu držení těch malých svítících krabiček. 
 
-Hooberovy výsledky:
+![Výsledek výzkumu Stevena Hoobera](dist/images/original/mobily-drzeni.jpg)
 
-* 49 % lidí mobilní zařízení v jedné ruce a šátralo po něm palcem,
-* 36 % lidí dávalo přednost „kolébkovému“ chvatu – držení v jedné ruce a ovládání prstem druhé ruky,
-* 15 % drželo krabičky obouruč a ovládalo dvěma palci.
+*Obrázek: 49 % lidí mobilní zařízení v jedné ruce a šátralo po něm palcem. 36 % lidí dávalo přednost „kolébkovému“ chvatu (držení v jedné ruce a ovládání prstem druhé ruky) a 15 % drželo krabičky obouruč a ovládalo dvěma palci.*
 
 Hoober ale o držení mobilů zjistil i další věci, které se v zásadě dají zobecnit i pro další dotyková  zařízení:
 
