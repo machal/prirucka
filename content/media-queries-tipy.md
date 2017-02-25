@@ -5,20 +5,18 @@
 Častou chybou je vymýšlení breakpointů „podle zařízení“. Vezměme, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
 
 ```css
-/* Bod zlomu nastavený „podle zařízení" */
+/* Bod zlomu „pro tablety“ (špatně) */
 @media only screen 
   and (min-width: 40em) and (max-width: 48em) { 
     /* Kod pro obrazovky mezi 640 a 768 px */
 }
 ```
 
-Vypadá to hezky, ale je to konina. Nespolehlivá konina. Jak už jsem psal, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů. Podmínku splní také mnoho chytrých telefonů. Takový iPhone 6 má třeba v režimu na šířku rozlišení 736 pixelů. Zařízení proto vůbec neřešte.
+Vypadá to hezky, ale je to konina. Jak už jsem psal, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů, jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
 
-Naše „podmínka pro tablety“ navíc nijak nereflektuje obsah a jeho rozvržení na obrazovce. A to by mělo být tou hlavní motivací k přidání bodu zlomu či breakpointu.
+„Podmínka pro tablety“ navíc nijak nereflektuje obsah a jeho rozvržení na obrazovce. Tohle by mělo být tou hlavní motivací k přidání bodu zlomu či breakpointu. Media Queries prostě mají vyrůstat z obsahu.
 
-Body zlomu prostě, pokud je to jen trochu možné, nastavujte podle potřeb obsahu konkrétních komponent. Media Queries prostě mají vyrůstat z obsahu.
-
-Vezměme třeba jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozhodujeme se o hodnotě bodu zlomu šířky okna, kdy se navigace z vodorovné stane svislou pro menší displeje.
+Vezměme jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozhodujeme se o hodnotě bodu zlomu šířky okna, kdy se navigace z vodorovné stane svislou pro menší displeje.
 
 ```css
 /* Bod zlomu nastavený podle obsahu */
@@ -27,9 +25,9 @@ Vezměme třeba jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozh
 
 Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na Codepenu: [cdpn.io/e/bBPdgQ](http://codepen.io/machal/pen/bBPdgQ)
 
-Nebudu ale popírat, že existují situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy jej prostě neznáme: například když pracujeme na frameworku nebo připravujeme šablonu pro obsah, který má v rukách až koncový uživatel našeho redakčního systému. Jako příklad můžu opět jmenovat Bootstrap, který má body zlomu nastavené pevně. Naštěstí jdou měnit a vždy můžete přidat nějaké vlastní. [getbootstrap.com/css/](http://getbootstrap.com/css/#grid-media-queries)
+Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy obsah prostě při tvorbě layoutu neznáme: například když pracujeme na frameworku nebo připravujeme šablonu pro obsah, který má v rukách až koncový uživatel našeho redakčního systému. Jako příklad můžu opět jmenovat Bootstrap, který má body zlomu nastavené pevně. Naštěstí jdou měnit a vždy můžete přidat nějaké vlastní. [getbootstrap.com/css/](http://getbootstrap.com/css/#grid-media-queries)
 
-## Správné je použít čterčíky, ale lépe se pracuje s pixely
+## Správné je použít čtverčíky, ale lépe se pracuje s pixely
 
 Často se vedou spory kolem použití jednotek v dotazech na media. Správná odpověď je: `em`, čtverčíky. 
 
@@ -58,9 +56,10 @@ Možné ovšem je zanořování Media Queries do sebe se selektorem uvnitř. Jen
 
 ## Mobile First psaní kódu
 
-Kromě designérské filozofie můžeme o Mobile First mluvit také o psaní kódu:
+Kromě designérské filozofie můžeme o Mobile First mluvit také v souvislosti s psaním CSS kódu:
 
 ```css
+/* „Mobile First“ přístup (lepší): */
 .el {
   /* Styly pro menší obrazovky */
 }
@@ -73,11 +72,12 @@ Kromě designérské filozofie můžeme o Mobile First mluvit také o psaní kó
 }
 ```
 
-Pokud design vaší komponenty nese nálepku „Mobile First", budete pravděpodobně i její kód psát od varianty pro nejmenší displeje. 
+Pokud design vaší komponenty nese nálepku „Mobile First“, budete pravděpodobně i její kód psát od varianty pro nejmenší displeje. 
 
-Je to ale i obecně výhodnější než opačný, „Desktop First", přístup. Kód pro menší displeje je obvykle jednodušší. A je lepší další deklarace přidávat než odstraňovat nadefinované, což bychom museli dělat u opačného přístupu:
+Je to ale i obecně výhodnější než opačný, „Desktop First“, přístup. Kód pro menší displeje je obvykle jednodušší. A je lepší další deklarace přidávat než odstraňovat nadefinované, což bychom museli dělat u opačného přístupu:
 
 ```css
+/* „Desktop First“ přístup (horší): */
 .el {
   /* Styly pro větší obrazovky */
   display: flex;
@@ -91,18 +91,18 @@ Je to ale i obecně výhodnější než opačný, „Desktop First", přístup. 
 }
 ```
 
-## Container Queries: podmínky podle parametrů rodiče
+## Container Queries: dotazy na vlastnosti rodičovského prvku
 
 Media Queries se dotazují vždy jen na parametry okna prohlížeče. To je fajn, když vymýšlíme body zlomu pro layout obrazovky. Horší je to pro jednotlivé, v něm rozmístěné komponenty. Zvláště pro ty, které se mohou vyskytovat na různých místech uživatelského rozhraní.
 
-Představme si, že bychom měli Media Queries, které se nedotazují na šířku či výšku okna, ale rodičovského elementu. Protože právě ten nás zajímá. Mohlo by to pak vypadat takto:
+Představme si, že bychom se mohli v CSS pát na velikost rodičovského elementu. Ano, většinou nás zajímá právě ten. Mohlo by to pak vypadat třeba takto:
 
 ```css
 *:media(min-width: 20em) > .el { … }
 ```
 
-Kód by se aplikoval jen v rodičovských elementech, které mají šířku alespoň dvacet čtverčíků.
+Kód by se pak aplikoval jen v rodičovských elementech, které mají šířku alespoň dvacet čtverčíků.
 
-Specifikace pro Container Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi kolem nich. Pěkný je článek „Container Queries: Once More Unto the Breach“ na A List Apart. [http://vrdl.in/fivt1](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
+Specifikace pro Container Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi kolem nich. Pěkný je článek „Container Queries: Once More Unto the Breach“ na A List Apart. [http://vrdl.in/fivt0](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
 
-Pro vás, nedočkavé, přikládám i odkaz na jednu z javascriptových implementací, EQ.js. Jen pozor, bude to výpočetně náročnější. [github.com/Snugug/eq.js](https://github.com/Snugug/eq.js)
+Pro vás, nedočkavé, přikládám i odkaz na jednu z javascriptových implementací, EQCSS. Jen pozor, může to být při překreslování stránky v prohlížeči výpočetně náročnější. [elementqueries.com](http://elementqueries.com/)

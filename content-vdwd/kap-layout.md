@@ -2,6 +2,8 @@
 
 > To je prosím klobouk kouzelníka Pokustona a v něm bydlí králík. Bob.  „Vstávat! Vstávat a cvičit!“ nabádá Bob, „je ráno!“.
 
-Nechybí tam něco? No, jasně! Přátelé, tak jako Bob bez Bobka by asi vypadal responzivní webdesign bez [Media Queries](css3-media-queries.md).
+Nechybí vám tam něco? No, jasně, přátelé. Bob bez Bobka prostě nemá šťávu. 
 
-Díky tomu, že se naučíme Media Queries, vyplatí se nám pak v dalších částech této kapitoly na web aplikovat nějaký [layout](responzivni-layout.md). 
+A jako Bob bez Bobka by byl responzivní webdesign bez [Media Queries](css3-media-queries.md).
+
+Díky tomu, že se naučíme Media Queries, můžeme pak v další části této kapitoly na web aplikovat nějaký [layout](responzivni-layout.md). 
