@@ -38,7 +38,3 @@ Technické znalosti o webové kodéřině v jednom ebooku: nástroje jako NPM ne
 - Další veřejná a individuální školení autora a spolupracujících expertů: [vrdl.cz/kurzy](http://www.vzhurudolu.cz/kurzy)
 
 
-© 2013-2017 Martin Michálek
-
-
-
