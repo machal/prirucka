@@ -40,30 +40,37 @@ Pokud oblasti ve stránce takto vyznačíte, umožní dnešní čtečky uživate
 
 ### `<main role="main">`
 
-[HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-main-element): Hlavní část dokumentu. Obsah stránky nebo místo, kde běží hlavní část aplikace. Nejde o sekční, ale „seskupovací“ typ elementu. 
+[HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) i [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#main) význam se zde shoduje.  Jde o hlavní část dokumentu. Obsah stránky nebo místo, kde běží hlavní část aplikace. Nejde o sekční, ale „seskupovací“ typ elementu. 
 
 Čtečka JAWS nabízí klávesovou zkratku pro skok na ni pomocí klávesy „Q“ a je jí jedno, jestli použijete HTML5 značku, `role` atribut nebo obojí. 
 
 ### `<aside role="complementary">`
 
-Něco jako boční lišta. Prostě méně významné informace, které se vztahují k hlavnímu obsahu stránky. Například reklamní panely nebo zvýrazněné citace z textového obsahu. Na stránce jich může být více. 
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-aside-element). 
+Něco jako boční lišta. Prostě méně významné informace, které se vztahují k hlavnímu obsahu stránky. Například reklamní panely nebo zvýrazněné citace z textového obsahu. 
+
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-aside-element). Na stránce může být `<aside>` více. 
+
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#complementary): Doplňující informace k hlavnímu obsahu stránky. Podobná úroveň v DOM hierarchii, ale bez hlavního obsahu nedává smysl.
 
 ### `<nav role="navigation">`
 
-Sekce s navigací. Může jich být ve stránce více. Ve specifikaci se doporučuje mít kódovat položky navigace jako nečíslovaný seznam (`<ul>`).
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-nav-element). 
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-nav-element): Sekce s navigací. Může jich být ve stránce více. Ve specifikaci se doporučuje mít kódovat položky navigace jako nečíslovaný seznam (`<ul>`).
+
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#navigation): Hlavní navigace webu dokumentu nebo celého webu.
 
 ### `<header role="banner">`
 
-Hlavička stránky nebo sekce. Pokud použijete [s `role` atributem](https://www.w3.org/TR/wai-aria/roles#banner), jde o hlavičku celého webu. Bez atributu je možné `<header>` použít i pro hlavičky jednotlivých sekcí. Hlavička je zde zamýšlená pro navigační, tak uvozující, představující obsah.
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-header-element): Hlavička stránky nebo sekce. Bez atributu je možné `<header>` použít i pro hlavičky jednotlivých sekcí. Hlavička je zde zamýšlená pro navigační, tak uvozující, představující obsah.
+
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#banner): Pokud použijete s `role` atributem, jde o hlavičku celého webu.
 
 
 ### `<footer role="contentinfo"> `
 
 [HTML5](https://www.w3.org/TR/html5/sections.html#the-footer-element): patička sekce, která obsahuje informace o sekci. Kdo ji napsat, odkaz na související dokumenty, licence a podobné informace.
 
-pickering: vůbec nic
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#contentinfo): Podobný význam, jen se opět vztahuje na celý dokument.
+
 
 ### `<section>`
 
@@ -81,6 +88,8 @@ Kompletní a soběstačná komponenta v rámci dokumentu, která je opakovateln�
 
 ### `<div role="search">`
 
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#search): Oblast, ve které je komponenta pro vyhledávání. Může jít o složitější strukturu než jen formulářové pole. Obvykle budete dávat na `<form>` element.
+
 Vyhledávání není možné vyznačit pomocí HTML5 prvku, takže alespoň `role` atributem.
 
 
@@ -88,16 +97,74 @@ Vyhledávání není možné vyznačit pomocí HTML5 prvku, takže alespoň `rol
 
 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element): `<figure>` je obsah, který doplňuje hlavní textový obsah a bude na něj odkazováno. Obrázek, video, schéma, ukázka kódu, SVG dokument. Volitelně je možné doplnit popiskem `<figcaption>`. Opět nejde o sekční typ elementu, ale považuje se spolu s nimi za novou značku. Je užitečná jak pro čtečky, tak pro efektivní kódování webů.
 
+### `<div role="application">`
+
+Opět jen jako [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#application) oblast. Ovšem pozor na něj. Nemáme ji využívat použít pro označení celého dokumentu nebo jeho části jako interaktivní webové aplikace. `role="application"` zruší veškeré klávesové zkratky čtečky a nechává jejich zřízení na vás jako autorovi. Zacházejte s tím [velice opatrně](http://a11yproject.com/posts/how-to-use-application-role/). 
+
 ### `<h1>` až `<h6>`
 
 [HTML5](https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements) Nadpisy a tvorba struktury stránky. Znáte je, vím, ale sem patří hlavně proto, že jde pořád o jediný způsob tvorby strukturované osnovy dokumentu. Tvorba struktury pomocí `<section>`, jak bylo dříve zamýšleno, [možná není](http://www.vzhurudolu.cz/blog/25-vice-h1). Alespoň v něčem jsem měl pravdu.
 
+## Ukázková struktura stránky
 
-## Jak to testovat?
+Je to velmi zjednodušené, ale může pomoci:
 
-https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html
+```html
+<header role="banner">
+   <!-- Logo… -->
+   <form role="search">
+     <!-- Vyhledávací formulář -->
+   </form>
+</header>
+<nav role="navigation">
+   <ul>
+      <li><!-- Navigace --></li>
+   </ul>
+</nav>
+<main role="main">
+   <!-- Hlavní obsah -->
+</main>
+<aside role="complementary">
+   <!-- Vedlejší lišta -->
+</aside>
+<footer role="contentinfo">
+   <!-- Copyright, související dokumenty… -->
+</footer>
+```
 
+## Jak testovat oblasti stránky?
+
+
+- Pro Firefox existuje hezké rozšíření [Landmarks](https://addons.mozilla.org/en-US/firefox/addon/landmarks/).
+- V Chrome vám ARIA oblasti ukáže rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm): „Information“ > „Display ARIA roles“.
+-  Nejlepší je ale testovat přímo pomocí čteček. Na Macu máme vestavěný [VoiceOver]. Na Windows si nainstalujte [NVDA](http://nvda-project.cz/). Tady je [návod pro spuštění testování](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html).
 
 ## Podpora pro staré Explorery
 
-https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html
+Pokud máte významnou návštěvnost z Exploreru 8 a starších, následujte tento návod.
+
+Ve stylech musíte zajistit, aby se zmíněné HTML5 prvky staly blokovými:
+
+
+```css
+header, nav, main, footer, article, 
+section, aside, figure, figcaption {
+   display: block;
+}
+```
+
+Javascriptem pak zařídíme, aby staré Explorery dokázaly nové HTML5 prvky vůbec stylovat. Z pohledu práce prohlížeče je rychlejší, když to vložíte přímo do hlavičky HTML kódu, než kdybyste odkazovali na externí soubor:
+
+```html
+<!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,main,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+```
+
