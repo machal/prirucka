@@ -41,3 +41,5 @@ Ano, javascriptových. Tím se zároveň dostáváme k jádru problému. Bude to
 
 
 ## Jak to bude s nativní implementací?
+
+*TODO*
