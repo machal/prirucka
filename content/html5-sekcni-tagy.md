@@ -1,37 +1,36 @@
-# Sekční tagy v HTML5
+# Struktura v HTML5: tagy a role atributy
 
-Stručně: HTML5 sekční tagy umožňují lépe strukturovat stránky. Užitečné jsou hlavně ve slepeckých čtečkách. Doporučuji je používat v kombinaci s `role=""` atributy.
+Sekční tagy a `role` atributy umožňují lépe strukturovat stránku. Užitečné jsou hlavně ve slepeckých čtečkách. A myslím, že je čas se s nimi kamarádit. 
 
 
 ## Dříve: zbytečnost, která komplikovala weby v IE 8 a starších
 
-Sekční tagy v HTML5 to se mnou nemají lehké. Před čtyřmi lety jsem se naštval a napsal článek „[HTML5 strukturální elementy stojí za starou bačkoru](http://kratce.vzhurudolu.cz/post/38371151431/html5-elementy)“. Argumenty proti jejich používání jsem uváděl dva:
+Sekční tagy v HTML5 to se mnou nemají lehké. Před čtyřmi lety jsem se naštval a napsal článek „[HTML5 strukturální elementy stojí za starou bačkoru](http://kratce.vzhurudolu.cz/post/38371151431/html5-elementy)“. Uváděl jsem tyto argumenty proti jejich používání:
 
-- *Jsou duplicitní k WAI ARIA oblastem.* Orientační oblasti stránky lze slepeckým čtečkám vyznačit pomocí atributů `role=""` ze specifikace [WAI ARIA](wai-aria.md). Podpora WAI ARIA byla ve čtečkách v té době daleko lepší než podpora HTML5 tagů. 
+- Tagy jsou *duplicitní k WAI ARIA oblastem.* Orientační oblasti stránky bylo už tehdy možné vyznačit pomocí atributů `role=""` ze specifikace [WAI ARIA](wai-aria.md). A jejich podpora byla ve čtečkách v té době daleko lepší než podpora HTML5 tagů. 
 - *Závislost na Javascriptu* v Internet Exploreru 8. Abyste totiž s HTML5 tagy mohli v IE8 a starších pracovat v CSS, museli jste přidat kousek skriptu. A když skript selhal, stránka se nehezky rozbila. 
 - *…celkově jsou taknějak k ničemu.* Kromě přehlednosti HTML kódu nic nepřidávají. Vyhledavače a jiné stroje je nijak nezpracovávají.
 
 Jenže doba se změnila a kunratické proti-sekčně-tagové hnutí vychladlo.  
 
 
-## Teď: IE 8 je mrtvý  a podpora HTML5 ve čtečkách velmi dobrá
+## Teď: IE 8 je mrtvý a podpora HTML5 ve čtečkách velmi dobrá
 
 Internet Explorer 8 a starší dneska na návštěvnosti drtivé většiny webů není zastoupený [více než půlprocentním podílem](prohlizece.md). A míra podpory HTML5 tagů prohlížeči a slepeckými čtečkami už je velmi podobná podpoře WAI-ARIA atributů. 
 
 *TODO Obrázek http://www.html5accessibility.com/*
 
-Když se podíváte na data z [HTML5accessibility.com](http://www.html5accessibility.com/), sekční HTML5 elementy neumí především Explorer 11. Pak tam jsou jen dvě výjimky pro `<header>` u Chrome a `<figure>` u Safari.
+Když se totiž podíváte na data z [HTML5accessibility.com](http://www.html5accessibility.com/), sekční HTML5 elementy neumí především Explorer 11. Pak tam jsou jen dvě výjimky pro `<header>` u Chrome a `<figure>` u Safari.
 
-Podpora `role=""` atributů je ale podle všeho vyšší. Proč tedy používat HTML5 tagy? 
-Vypadá to totiž, že do budoucna bude pro vyznačení oblastí možné používat jen tagy. [Radek Pavlíček](http://poslepu.blogspot.cz/2012/12/proc-bych-nerad-aby-strukturalni-html5.html) v podpovědi na můj tehdejší hejt psal, že sekční elementy zvyšují pravděpodobnosti, že je kodéři použijí. Tím si zcela jistý nejsem, i když jistý efekt to mít může. 
+Podpora `role=""` atributů je ale podle všeho vyšší. Proč tedy používat HTML5 tagy? Vypadá to totiž, že do budoucna bude pro vyznačení oblastí možné používat jen tagy. [Radek Pavlíček](http://poslepu.blogspot.cz/2012/12/proc-bych-nerad-aby-strukturalni-html5.html) v podpovědi na můj tehdejší hejt psal, že sekční elementy zvyšují pravděpodobnosti, že je kodéři použijí. `<main>` napíšete radši než `role="main"`. Ano, jistý efekt to mít může. 
 
 Spíše se ale obrátím k autoritě W3C.org, která dneska už [vyloženě říká](https://www.w3.org/TR/aria-in-html/):
 
-> První pravidlo použití ARIA zní: Pokud můžete použít nativní element, který má význam nebo chování, jež vyžadujete, už v sobě, prostě ho použijte.
+> První pravidlo použití ARIA zní: Pokud můžete použít nativní element, který má požadovaný význam nebo chování už v sobě, prostě ho použijte.
 
-Prostě to vypadá, že jsem se mýlil a HTML5 tagy se pro vyznačování oblastí stránky ujaly. Jednou tedy může nastat situace, že čtečka nebo jiný stroj implementuje význam oblasti stránky jen přes HTML5 elementy.
+Prostě to vypadá, že jsem se mýlil a HTML5 tagy se pro vyznačování oblastí stránky ujaly. Jednou tedy může nastat situace, že čtečka nebo jiný stroj implementuje význam oblasti stránky jen přes HTML5 element a nikoliv WAI ARIA oblast.
 
-Proto doporučuji používat obě varianty: HTML5 tag kvůli dopředné kompatibilitě a k němu WAI-ARIA atribut kvůli kompatibilitě zpětné. Pojďme teď na všechny oblasti, které byste pomocí tagů nebo atributů měli ve stránce vyznačovat.
+Proto *doporučuji používat obě varianty*: HTML5 tag kvůli dopředné kompatibilitě a k němu WAI-ARIA atribut kvůli kompatibilitě zpětné, dnes hlavně kvůli Internet Exploreru 11. Pojďme se teď podívat na všechny oblasti, které byste pomocí tagů nebo atributů měli ve stránce vyznačovat.
 
 
 ## Oblasti stránky
@@ -42,19 +41,19 @@ Pokud oblasti ve stránce takto vyznačíte, umožní dnešní čtečky uživate
 
 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) i [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#main) význam se zde shoduje.  Jde o hlavní část dokumentu. Obsah stránky nebo místo, kde běží hlavní část aplikace. Nejde o sekční, ale „seskupovací“ typ elementu. 
 
-Čtečka JAWS nabízí klávesovou zkratku pro skok na ni pomocí klávesy „Q“ a je jí jedno, jestli použijete HTML5 značku, `role` atribut nebo obojí. 
+Čtečka JAWS nabízí klávesovou zkratku pro skok na hlavní oblast pomocí klávesy „Q“ a je jí jedno, jestli použijete HTML5 značku, `role` atribut nebo obojí. 
 
 ### `<aside role="complementary">`
 
 Něco jako boční lišta. Prostě méně významné informace, které se vztahují k hlavnímu obsahu stránky. Například reklamní panely nebo zvýrazněné citace z textového obsahu. 
 
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-aside-element). Na stránce může být `<aside>` více. 
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-aside-element) specifikace říká, že na stránce může být `<aside>` více. Jedna pod `<html>` prvkem a další pod jednotlivými sekcemi. 
 
-[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#complementary): Doplňující informace k hlavnímu obsahu stránky. Podobná úroveň v DOM hierarchii, ale bez hlavního obsahu nedává smysl.
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#complementary) specifikace říká, že jde o doplňující informace k hlavnímu obsahu stránky. Podobná úroveň v DOM hierarchii, ale bez hlavního obsahu nedává smysl. Všechny zmíněné `role` atributy by ve stránce měly být jen jednou,
 
 ### `<nav role="navigation">`
 
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-nav-element): Sekce s navigací. Může jich být ve stránce více. Ve specifikaci se doporučuje mít kódovat položky navigace jako nečíslovaný seznam (`<ul>`).
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-nav-element): Sekce s navigací. Může jich být ve stránce více. Ve specifikaci doporučují kódovat položky navigace jako nečíslovaný seznam (`<ul>`).
 
 [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#navigation): Hlavní navigace webu dokumentu nebo celého webu.
 
@@ -74,36 +73,36 @@ Něco jako boční lišta. Prostě méně významné informace, které se vztahu
 
 ### `<section>`
 
-Tématické seskupení obsahu v rámci aplikace nebo dokumentu. Například kapitoly v delších textech nebo jednotlivé panely v záložkové navigaci. Opět nemá odpovídající landmark. Žádný konkrétní význam pro čtečky a jiné stroje se mi vypátrat nepodařilo.
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-section-element). 
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-section-element): Tématické seskupení obsahu v rámci aplikace nebo dokumentu. Například kapitoly v delších textech nebo jednotlivé panely v záložkové navigaci. Nemá odpovídající landmark. Žádný konkrétní význam pro čtečky a jiné stroje se mi vypátrat nepodařilo.
+ 
 
 ### `<article>`
 
-Kompletní a soběstačná komponenta v rámci dokumentu, která je opakovatelná a znovupoužitelná. Nemusí jít o článek, ale také třeba produkt, komentář nebo jiné. Čtečka JAWS usnadňuje pochopení struktury oznámením začátku a konce „article“. Nemá odpovídající `role` atribut.
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-article-element). 
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-article-element): Kompletní a soběstačná komponenta v rámci dokumentu, která je opakovatelná a znovupoužitelná. Nemusí jít o článek, ale také třeba produkt, komentář nebo jiné. Čtečka JAWS usnadňuje pochopení struktury oznámením začátku a konce „article“. Nemá odpovídající `role` atribut.
+ 
 
 ### `<address>`
 
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-address-element): kontaktní infromace k sekci nebo dokumentu. V HTML5 změnil tag význam, ale nevím, zda to k něčemu je.
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-address-element): kontaktní informace k sekci nebo dokumentu. V HTML5 změnil tag význam, ale nevím, zda to vlastně k něčemu je.
 
 ### `<div role="search">`
 
-[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#search): Oblast, ve které je komponenta pro vyhledávání. Může jít o složitější strukturu než jen formulářové pole. Obvykle budete dávat na `<form>` element.
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#search): Oblast, ve které je komponenta pro vyhledávání na celém webu. Může jít o složitější strukturu než jen formulářové pole. Obvykle ji budete dávat na `<form>` element. 
 
 Vyhledávání není možné vyznačit pomocí HTML5 prvku, takže alespoň `role` atributem.
 
 
 ### `<figure>` a `<figcaption>`
 
-[HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element): `<figure>` je obsah, který doplňuje hlavní textový obsah a bude na něj odkazováno. Obrázek, video, schéma, ukázka kódu, SVG dokument. Volitelně je možné doplnit popiskem `<figcaption>`. Opět nejde o sekční typ elementu, ale považuje se spolu s nimi za novou značku. Je užitečná jak pro čtečky, tak pro efektivní kódování webů.
+[HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element): `<figure>` je obsah, který doplňuje hlavní textový obsah a bude na něj odkazováno. Obrázek, video, schéma, ukázka kódu, SVG dokument. Volitelně je možné doplnit popiskem `<figcaption>`. Opět nejde o sekční, ale seskupovací typ elementu. Je užitečná jak pro čtečky, tak pro efektivní kódování webů.
 
 ### `<div role="application">`
 
-Opět jen jako [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#application) oblast. Ovšem pozor na něj. Nemáme ji využívat použít pro označení celého dokumentu nebo jeho části jako interaktivní webové aplikace. `role="application"` zruší veškeré klávesové zkratky čtečky a nechává jejich zřízení na vás jako autorovi. Zacházejte s tím [velice opatrně](http://a11yproject.com/posts/how-to-use-application-role/). 
+Opět jen jako [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#application) oblast. Ovšem pozor na ni. Nemáme ji využívat pro označení celého dokumentu nebo jeho části jako interaktivní webové aplikace. `role="application"` zruší veškeré klávesové zkratky čtečky a nechává jejich zřízení na vás jako autorovi. Zacházejte s tím [velice opatrně](http://a11yproject.com/posts/how-to-use-application-role/). 
 
 ### `<h1>` až `<h6>`
 
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements) Nadpisy a tvorba struktury stránky. Znáte je, vím, ale sem patří hlavně proto, že jde pořád o jediný způsob tvorby strukturované osnovy dokumentu. Tvorba struktury pomocí `<section>`, jak bylo dříve zamýšleno, [možná není](http://www.vzhurudolu.cz/blog/25-vice-h1). Alespoň v něčem jsem měl pravdu.
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements): Nadpisy a tvorba struktury stránky. Znáte je, vím, ale sem patří hlavně proto, že jde pořád o jediný způsob tvorby strukturované osnovy dokumentu. Tvorba struktury pomocí HTML5 elementů `<section>`, jak bylo dříve zamýšleno, [se neujala](http://www.vzhurudolu.cz/blog/25-vice-h1). Alespoň v něčem jsem měl pravdu.
 
 ## Ukázková struktura stránky
 
@@ -135,9 +134,9 @@ Je to velmi zjednodušené, ale může pomoci:
 ## Jak testovat oblasti stránky?
 
 
-- Pro Firefox existuje hezké rozšíření [Landmarks](https://addons.mozilla.org/en-US/firefox/addon/landmarks/).
-- V Chrome vám ARIA oblasti ukáže rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm): „Information“ > „Display ARIA roles“.
--  Nejlepší je ale testovat přímo pomocí čteček. Na Macu máme vestavěný [VoiceOver]. Na Windows si nainstalujte [NVDA](http://nvda-project.cz/). Tady je [návod pro spuštění testování](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html).
+- Pro Firefox existuje hezké rozšíření pro testování `role` atributů [Landmarks](https://addons.mozilla.org/en-US/firefox/addon/landmarks/).
+- V Chrome vám oblasti definované pomocí `role` ukáže rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm): „Information“ > „Display ARIA roles“.
+-  Nejlepší je ale testovat přímo pomocí čteček. Na Macu máme vestavěný [VoiceOver](http://www.apple.com/accessibility/mac/vision/). Na Windows si nainstalujte [NVDA](http://nvda-project.cz/). Tady je [návod pro spuštění testování](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html).
 
 ## Podpora pro staré Explorery
 
