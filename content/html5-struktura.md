@@ -8,9 +8,9 @@ Sekční tagy a `role` atributy umožňují lépe strukturovat stránku. Užite�
 
 Sekční tagy v HTML5 to se mnou nemají lehké. Před čtyřmi lety jsem se naštval a napsal článek „[HTML5 strukturální elementy stojí za starou bačkoru](http://kratce.vzhurudolu.cz/post/38371151431/html5-elementy)“. Uváděl jsem tyto argumenty proti jejich používání:
 
-- Tagy jsou *duplicitní k WAI ARIA oblastem.* Orientační oblasti stránky bylo už tehdy možné vyznačit pomocí atributů `role=""` ze specifikace [WAI ARIA](wai-aria.md). A jejich podpora byla ve čtečkách v té době daleko lepší než podpora HTML5 tagů. 
-- *Závislost na Javascriptu* v Internet Exploreru 8. Abyste totiž s HTML5 tagy mohli v IE8 a starších pracovat v CSS, museli jste přidat kousek skriptu. A když skript selhal, stránka se nehezky rozbila. 
-- *…celkově jsou taknějak k ničemu.* Kromě přehlednosti HTML kódu nic nepřidávají. Vyhledavače a jiné stroje je nijak nezpracovávají.
+- Tagy jsou duplicitní k WAI ARIA oblastem. Orientační oblasti stránky bylo už tehdy možné vyznačit pomocí atributů `role=""` ze specifikace [WAI ARIA](wai-aria.md). A jejich podpora byla ve čtečkách v té době daleko lepší než podpora HTML5 tagů. 
+- Závislost na Javascriptu v Internet Exploreru 8. Abyste totiž s HTML5 tagy mohli v IE8 a starších pracovat v CSS, museli jste přidat kousek skriptu. A když skript selhal, stránka se nehezky rozbila. 
+- …a celkově jsou tak nějak k ničemu. Kromě přehlednosti HTML kódu nic nepřidávají. Vyhledavače a jiné stroje je nijak nezpracovávají.
 
 Jenže doba se změnila a kunratické proti-sekčně-tagové hnutí vychladlo.  
 
@@ -35,7 +35,7 @@ Prostě to vypadá, že jsem se mýlil a HTML5 tagy se pro vyznačování oblast
 
 <!-- AdSnippet -->
 
-Proto *doporučuji používat obě varianty*: HTML5 tag kvůli dopředné kompatibilitě a k němu WAI-ARIA atribut kvůli kompatibilitě zpětné, dnes hlavně kvůli Internet Exploreru 11. Pojďme se teď podívat na všechny oblasti, které byste pomocí tagů nebo atributů měli ve stránce vyznačovat.
+Proto **doporučuji používat obě varianty**: HTML5 tag kvůli dopředné kompatibilitě a k němu WAI-ARIA atribut kvůli kompatibilitě zpětné, dnes hlavně kvůli Internet Exploreru 11. Pojďme se teď podívat na všechny oblasti, které byste pomocí tagů nebo atributů měli ve stránce vyznačovat.
 
 
 ## Oblasti stránky
@@ -76,18 +76,22 @@ Něco jako boční lišta. Prostě méně významné informace, které se vztahu
 [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#contentinfo): Podobný význam, jen se opět vztahuje na celý dokument.
 
 
-### `<section>`
+### `<section role="region">`
 
 [HTML5](https://www.w3.org/TR/html5/sections.html#the-section-element): Tématické seskupení obsahu v rámci aplikace nebo dokumentu. Například kapitoly v delších textech nebo jednotlivé panely v záložkové navigaci. Nemá odpovídající landmark.
 
-Čtečka JAWS [oznamuje „region“](https://www.paciellogroup.com/blog/2013/10/using-html5-section-element/) pokaždé když vstoupí do nové `<section>`. Nemá odpovídající `role` atribut.
+Čtečka JAWS [oznamuje „region“](https://www.paciellogroup.com/blog/2013/10/using-html5-section-element/) pokaždé když vstoupí do nové `<section>`. 
+
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#region): Oblast stránky, která je dost důležitá na to, aby byla vložena do souhrnu nebo strukturovaného obsahu. 
  
 
-### `<article>`
+### `<article role="article">`
 
 [HTML5](https://www.w3.org/TR/html5/sections.html#the-article-element): Kompletní a soběstačná komponenta v rámci dokumentu, která je opakovatelná a znovupoužitelná. Nemusí jít o článek, ale také třeba produkt, komentář nebo jiné. 
 
-Čtečka JAWS usnadňuje pochopení struktury oznámením začátku a konce „article“. Nemá odpovídající `role` atribut.
+Čtečka JAWS usnadňuje pochopení struktury oznámením začátku a konce „article“. 
+
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#region) specifikace mluví velmi podobně jako HTML5. Jde o nezávislou komponentu stránky. 
  
 
 ### `<address>`
@@ -153,6 +157,7 @@ Pokud máte významnou návštěvnost z Exploreru 8 a starších, použijte [HTM
 
 - Pro Firefox existuje hezké rozšíření pro testování `role` atributů [Landmarks](https://addons.mozilla.org/en-US/firefox/addon/landmarks/).
 - V Chrome vám oblasti definované pomocí `role` ukáže rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm): „Information“ > „Display ARIA roles“.
+- V Chrome si také můžete povolit experimentální [Accessibility Inspection](https://gist.github.com/marcysutton/0a42f815878c159517a55e6652e3b23a), jak píše Martin Držka v komentářích.
 -  Nejlepší je ale testovat přímo pomocí čteček. Na Macu máme vestavěný [VoiceOver](http://www.apple.com/accessibility/mac/vision/). Na Windows si nainstalujte [NVDA](http://nvda-project.cz/). Tady je [návod pro spuštění testování](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html).
 
 
