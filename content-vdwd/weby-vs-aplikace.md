@@ -8,7 +8,7 @@ Myslím si, že nějaký web potřebujete vždycky. Nativní aplikace může bý
 
 Hned první problém je v definici. Jednoduše se nám budou definovat jen dva extrémní póly:
 
-Za *web* považuji software vytvořený technologiemi standardizovanými webovým konsorciem W3.org a přidruženými organizacemi. Jde hlavně o HTML, CSS, Javascript a různá API pro komunikaci aplikace se systémem a zařízením. Každá stránka webu, každý jeho stav má adresu zvanou URL, dnes nejčastěji na protokolu `https:`.
+Za *web* považuji software vytvořený technologiemi standardizovanými webovým konsorciem W3.org a přidruženými organizacemi. Jde hlavně o HTML, CSS, Javascript a různá API pro komunikaci aplikace se systémem a zařízením. Každá stránka webu, každý jeho stav má adresu zvanou URL, dnes nejčastěji na protokolu `http:` nebo `https:`.
 
 Za *nativní aplikaci* považuji software vytvořený v programovacím jazyce pro konkrétní operační systém. Například pro iOS, operační systém mobilních zařízení od Apple, napíšete nativní aplikaci v jazycích Objective-C nebo Swift.
 
@@ -74,7 +74,7 @@ Navíc,  jak vychází z průzkumů, uživatelé zase tak moc nativních aplikac
 
 *Obrázek: Podle Forrester Research uživatelé tráví 88 % svého času na mobilních zařízení jen v pěti aplikacích. [vrdl.in/en8rk](http://blogs.forrester.com/nicole_dvorak/16-01-28-data_digest_just_a_handful_of_apps_account_for_nearly_all_app_time_on_smartphones)*
 
-Pět aplikací? To máme email, Facebook, mapy, volání, SMS, fotky… Počkejte, už jich je šest! Bude tady místo pro restauraci z Hrnčířů? Nejspíš ne, přátelé. 
+Pět aplikací? To máme email, Facebook, mapy, volání, fotky, prohlížeč… Počkejte, už jich je šest! Bude tady místo pro restauraci z Hrnčířů? Nejspíš ne, přátelé. 
 
 Do aplikace lidi tak snadno nedostanete. Na web je to jednoduché, chodí vám tam z Google vyhledávání, Facebooku, emailů, chatů… však víte. 
 
@@ -94,7 +94,7 @@ Tento přístup se obecně vyplatí velkým hráčům: v Česku to jsou banky, m
 
 ### Nativní aplikace vytvářené pomocí překladačů
 
-Psaní různých aplikací pro různé platformy se dnes ale neděje tak často. Jak už jsem uváděl, je to velmi drahé. Pro obyčejné aplikace je lepší využít některý z překladačů, které mají společný technologický základ, ze kterého se pak generují jednotlivé aplikace pro jednotlivé platformy. Příkladem budiž třeba Xamarin, Cordova a další.
+Psaní různých aplikací pro různé platformy se dnes ale neděje tak často. Jak už jsem uváděl, je to velmi drahé. Pro obyčejné aplikace je lepší využít některý z překladačů, které mají společný technologický základ, ze kterého se pak generují jednotlivé aplikace pro jednotlivé platformy. Příkladem můžou být třeba nástroje rodiny Xamarin. [xamarin.com](https://www.xamarin.com/)
 
 ### Hybridní aplikace
 
@@ -124,11 +124,13 @@ Detaily o progresivních webových aplikacích hledejte u Jasona Grigsbyho v tex
 
 Z pohledu šetření času také velmi atraktivní varianta. S pomocí například React Native můžete stavět nativní aplikace. Ty ale píšete ve stejném jazyce a podobném frameworku jakým můžete vytvořit i webovou aplikaci. [facebook.github.io/react-native/](https://facebook.github.io/react-native/)
 
+Vývojáři pro Windows si pod pojmem „univerzální aplikace“ představí spíše aplikace pro Universal Windows Platform. V tomto kontextu jde o apky stavěné tak, aby zároveň běžely na počítačových i mobilních zařízeních.
+
 Univerzální aplikací bychom mohli ukončit slovník dnešních typů aplikací. Pojďme si ještě porovnat weby a aplikace. Pro jaký účel se hodí? 
 
 ## Weby versus aplikace: „záběr“ versus „zápřah“
 
-Obecně platí, že weby mají na mobilech skvělý *záběr*. Nemusí se instalovat s rozumnou propagací je navštíví je daleko více uživatelů. Kanálů k propagaci je celá řada: sociální sítě, vyhledávače, bannery… Vlastně všechny kanály známé z dnešního Webu.
+Obecně platí, že weby mají na mobilech skvělý *záběr*. Nemusí se instalovat a s rozumnou propagací je navštíví daleko více uživatelů. Kanálů k propagaci je celá řada: sociální sítě, vyhledávače, bannery… Vlastně všechny kanály známé z dnešního Webu.
 
 Pokud jste firma, co má věrné uživatele, aplikací jste zase schopní je více *zapřáhnout*. Díky snadnějšímu ovládání a rychlé dostupnosti budou daleko aktivnější než uživatelé webu. 
 
