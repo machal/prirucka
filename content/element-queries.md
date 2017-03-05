@@ -48,7 +48,7 @@ Bude to prostě křehké jako babiččina váza. Kde tedy vězí CSS standard pr
 
 ## Proč pro to ještě není ani standard?
 
-Kromě Javascriptových implementací existují i návrhy specifikací, ale žádná velká aktivita ve W3.org vidět není. Vymyslet a v prohlížečích implementovat takovou věc totiž zřejmě není úplně snadné.
+Kromě Javascriptových implementací existují i návrhy specifikací, ale žádná velká aktivita ve W3.org vidět není. Podle všeho totiž není úplně snadné takovou legraci vymyslet a v prohlížečích implementovat.
 
 První implementační problém zmiňoval už před čtyřmi lety jeden z důležitých tvůrců CSS specifikace, [Tab Atkins](http://www.xanthir.com/b4PR0). Zacyklenou závislost. Tady by třeba prohlížeč skončil v nekonečné smyčce:
 
