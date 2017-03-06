@@ -4,7 +4,7 @@ Projdeme si osm možností jak navrhnout navigaci na responzivních webech. Od u
 
 <!-- AdSnippet -->
 
-Většina webů si ale vystačí se dvěma: upřesnostňujícím a zapínacím vzorem. Podívejme se nejprve na ně.
+Většina webů si ale vystačí se dvěma: upřesnostňujícím a přepínacím vzorem. Podívejme se nejprve na ně.
 
 ## Upřednostňování položek (Priority+)
 
@@ -14,15 +14,15 @@ Upřednostňování používá například aktuální web BBC News. Zajímavou v
 
 Technicky to je možné řešit i dost jednoduše jen pomocí CSS. [cdpn.io/e/adeMzP](http://codepen.io/olach/details/adeMzP) 
 
-## Zapínač (Toggle)
+## Přepínač (Toggle)
 
 Celou navigaci prostě na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiné. Jeho nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, které má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
 
-Návrhový vzor *zapínač* zpopularizoval například framework Bootstrap a najdete jej na většině dnešních responzivních webů. 
+Návrhový vzor *přepínač* zpopularizoval například framework Bootstrap a najdete jej na většině dnešních responzivních webů. 
 
 ![Návrhové vzory pro responzivní navigace](dist/images/original/responzivni-navigace.jpg)
 
-### Speciální varianta zapínače: vyjíždění do obrazovky (Off Canvas)
+### Speciální varianta přepínače: vyjíždění do obrazovky (Off Canvas)
 
 Chování, které znáte z nativních aplikací. Nejobvyklejší je vyjíždění ze strany, které je vhodné pro schovávání bohatého obsahu. V tom případě ale není dobrý nápad použít ikonu hamburgeru. Podívejte se na živé demo Jasona Weavera. [jasonweaver.name/lab/offcanvas](http://jasonweaver.name/lab/offcanvas/)
 
