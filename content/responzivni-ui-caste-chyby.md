@@ -28,13 +28,29 @@ Taky vás štve problikávání obsahu stránky při jejím načítání? Použi
 
 Například knihovnu Social Likes. [social-likes.js.org/](http://social-likes.js.org)
 
-## 7) Schovávání obsahu za fixně pozicované elementy
+## 7) Fixně pozicované navigační a propagační elementy
 
-Tady mám poněkud radikální postoj. Elementy, které při rolování stránky drží pozici nemají na mobilech co dělat. Zmenšují už tak skromný prostor, kolidují s ovládacími prvky prohlížečů… A ke všemu vás na méně výkonných mobilech nebudou poslouchat a při posunu stránky občas neudrží vámi vysněnou pozici. 
+Tady mám poněkud radikální postoj. Navigační a propagační elementy, které při rolování stránky drží pozici, nemají na mobilech co dělat. 
 
-Týká se všech fixně umístěných navigačních lišt, překryvných vrstev s reklamou na newslettery nebo mobilní aplikace a nebo v poslední době populární tlačítka pro otevření chatu.
+Týká se všech fixně umístěných navigačních lišt, překryvných vrstev s reklamou na newslettery a mobilní aplikace. Nebo v poslední době těch nešťastných tlačítek pro otevření chatu.
 
-To by mohlo stačit. Pro další popis i hlubší argumentaci vás pošlu na další své texty:
+Ptáte se proč? 
+
+**Zmenšují už tak skromný prostor.** Telefony s menšími rozlišeními, jako 320×480 nebo dokonce 240×320 pixelů, stále žijí. Problém to ale bude prakticky na každém čtyřpalcovém displeji.
+
+**Kolidují s ovládacími prvky prohlížečů.** Fixně pozicovaná horní navigace bývá překrývána vysunovací lištou s adresním řádkem prohlížeče. Prvky fixně umístěné dole zase kolidují s výsuvnou spodní lištou prohlížeče Safari na iOS. [vrdl.in/houb1](https://www.eventbrite.com/engineering/mobile-safari-why/)
+
+**Komplikují posun obrazovky.** Postranní fixní lišty zase nevinným palcům vezmou prázdné okraje, kterými jinak spokojeně rolují stránku. Kolikrát se vám stalo, že jste takovou lištu při rolování omylem otevřeli? Mému palci mnohokrát, mohl by vám vyprávět.
+
+**Rozbijí přiblíženou stránku.** Jak už jsem psal – zakazovat zoomování považuji za chybu. Co ale udělají vaše fixně pozicované elementy pokaždé, když si uživatel stránku přiblíží? No jasně, rozbijí ji.
+
+A ke všemu vás **na méně výkonných mobilech nebudou poslouchat** a při posunu stránky občas neudrží vámi vysněnou pozici. 
+
+Často se argumentuje tím, že fixně pozicovaná navigace umožní uživateli ovládat web na obzvlášť dlouhých stránách. Na to už jsem namítal, že stránky na mobilech *obzvlášť dlouhé* prostě být nemají, však víte. Na obou hlavních mobilních platformách navíc existuje možnost vrátit se na vršek stránky pomocí tapnutí na horní lištu operačního systému.
+
+Tolik k hejtu na fixně pozicované elementy. Ale i celkově by toho bručounství mohlo stačit, co říkáte? 
+
+Pro další popis i hlubší argumentaci vás pošlu na další své texty:
 
 - Dvoudílná hubící série „Jak zničit mobilní uživatele?“ na Vzhůru dolů. [vrdl.in/lq5b4](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1) [vrdl.in/sacjz](http://www.vzhurudolu.cz/blog/48-znicit-mobilistu-2)
 - Anglický text „How To Poison The Mobile User“ na Smashing Magazine. [vrdl.in/h8n7i](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/)
