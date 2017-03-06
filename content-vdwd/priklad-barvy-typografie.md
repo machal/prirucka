@@ -8,13 +8,21 @@ Pro e-shop potřebujeme alespoň tři základní barvy:
 - *Primární* pro aktivní prvky, hlavně primární výzvy k akci. Tahle barvy by měla být výrazně odlišná od té neutrální.
 - *Doplňková* barva se nám bude hodit pro zvýraznění komunikujících elementů jako jsou informativní a chybová hlášení. 
 
-Z výběru barevného schématu pro zjednodušení nebudeme dělat vědu, i když to samozřejmě také věda je. Měli bychom myslet na cílovou skupinu – v našem případě ženy z velkých měst – a samozřejmě do barev nějak promítnout tématiku eshopu. Mimochodem, dobrý úvod do problematiky barev je v knize Petra Staníčka „Dobrý designér“. [pixy.cz/kniha-dobrydesigner](http://pixy.cz/kniha-dobrydesigner/)
+Z výběru barevného schématu pro zjednodušení nebudeme dělat vědu, přestože i barvy samozřejmě věda jsou. Měli bychom myslet na cílovou skupinu – v našem případě ženy z velkých měst – a samozřejmě do barev nějak promítnout tématiku eshopu. Mimochodem, dobrý úvod do problematiky barev je v knize Petra Staníčka „Dobrý designér“. [pixy.cz/kniha-dobrydesigner](http://pixy.cz/kniha-dobrydesigner/)
 
 Jak už jsem zmiňoval, pro zjednodušení si pomůžeme databázemi barevných schémat. Hledáme barevné schéma se třemi a více barvami, které ladí s ženskou cílovou skupinou. A také nás výrazně odlišují od konkurence, která vždy spoléhá na zelené asociace s lesem. ForestKid.cz tedy jako uniforma hajného vypadat nebude. 
 
 ![Barevné schéma pro příklad](dist/images/original/vdwd/priklad-barvy.jpg)
 
-*Obrázek: Vybrané barevné schéma. Úplně vpravo je neutrální tmavě modrá a nalevo od ní její dva odstíny. Primární barva je „infračervená“ zcela nalevo. Oranžová vedle ní je pak ona doplňková pro komunikující elementy. [coolors.co](https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c)*
+*Obrázek: Vybrané barevné schéma. [coolors.co](https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c)*
+
+Jak vidíte z obrázku, barevné schéma je… hodně barevné:
+
+- Zcela nalevo je „infračervená“, barva pro primární výzvy k akci.
+- Druhá zleva je „žluto-oranžová“, doplňková barva pro komunikující elementy jako jsou informativní hlášení.
+- Uprostřed je „karibsky zelená“, doplňková barva pro text, kterou můžeme použít například pro nadpisy sloupců tabulek.
+- Následují dva odstíny modré neutrální barvy pro text a neaktivní prvky stránky. 
+
 
 ## Vybereme písmo: jedno charakteristické a druhé chlebové 
 

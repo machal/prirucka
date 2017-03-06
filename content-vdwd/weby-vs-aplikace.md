@@ -42,7 +42,7 @@ Zajímavé na tomto dělení na weby a aplikace z pohledu interakční složitos
 
 U aplikací to až tak neplatí. U kontrolního seznamu na Vzhůru dolů chci ve vyhledávačích dobře umístěnou stránku, která aplikaci propaguje, statický web. Nepotřebuji, a obvykle ani nechci, indexovat samotnou aplikaci.
 
-Proto se i v poslední době aplikace dělají stále více frontendovými technologiemi (Angular, React), kdežto weby stále „postaru backendově“ s pomocí Nette, Symfony nebo jiných frameworků. Javascript na frontendu to pak jen doplňuje. Časem se ale tyto dva přístupy začnou nějak sjednocovat.
+Proto se i v poslední době aplikace dělají stále více frontendovými technologiemi (Angular, React), kdežto weby stále „postaru backendově“ s pomocí PHP, .NET nebo jiných jazyků. Javascript na frontendu to pak jen doplňuje. Časem se ale tyto dva přístupy začnou nějak sjednocovat.
 
 Teď už nebudeme obecní, přejdeme do světa *mobilních* aplikací a responzivních webů. 
 
@@ -124,7 +124,7 @@ Detaily o progresivních webových aplikacích hledejte u Jasona Grigsbyho v tex
 
 Z pohledu šetření času také velmi atraktivní varianta. S pomocí například React Native můžete stavět nativní aplikace. Ty ale píšete ve stejném jazyce a podobném frameworku jakým můžete vytvořit i webovou aplikaci. [facebook.github.io/react-native/](https://facebook.github.io/react-native/)
 
-Vývojáři pro Windows si pod pojmem „univerzální aplikace“ představí spíše aplikace pro Universal Windows Platform. V tomto kontextu jde o apky stavěné tak, aby zároveň běžely na počítačových i mobilních zařízeních.
+Uživatelé Windows si pod pojmem „univerzální aplikace“ představí spíše aplikace pro Universal Windows Platform. V tomto kontextu jde o apky stavěné tak, aby zároveň běžely na počítačových i mobilních zařízeních.
 
 Univerzální aplikací bychom mohli ukončit slovník dnešních typů aplikací. Pojďme si ještě porovnat weby a aplikace. Pro jaký účel se hodí? 
 

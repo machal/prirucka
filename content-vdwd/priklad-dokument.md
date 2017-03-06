@@ -6,6 +6,8 @@ Jak to ale dostat do webové stránky? Potřebujeme [znát jednotky](jednotky.md
 
 Pojďme tedy přidat vlastní typografii, barvy a grafické prvky. Nějak si prostě dokument upravit k obrazu ForestKid.cz.
 
+Před napsáním první řádky kódu vás ale upozorním, že v příkladu zatím pro zjednodušení nebudu zohledňovat rychlost načítání nebo náhradní řešení pro starší prohlížeče. Prostě žádný z aspektů, které by během zvažování řešení žádný profesionální designér či kodér neměl míjet. Profíci mi jistě odpustí, protože i k nim se v knize časem dopracujeme.
+
 ## Příprava dokumentu krok za krokem
 
 Aktuální stav příkladu si můžete naživo prohlédnout nebo stáhnout na následujících adresách.
@@ -98,5 +100,5 @@ Po pár krocích už tedy stránka vypadá lépe:
 
 Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. 
 
-Udělali jsme to meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři v něm chyby sekají tempem jako Baťa cvičky. Pojďme to napravit a o viewportech si rychle něco povědět.
+Udělali jsme to meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři v něm chyby sekají tempem Baťovy továrny na cvičky. Pojďme to napravit a o viewportech si rychle něco povědět.
 

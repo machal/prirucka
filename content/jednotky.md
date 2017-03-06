@@ -74,7 +74,7 @@ Ve flexboxu, dnes hlavním prostředku pro tvorbu rozvržení komponent, je mož
 .flex-2 { flex-grow: 2 }
 ```
 
-Layout se rozdělí na tři díly. První třetiny zabírá `.flex-1`, další dvě pak `.flex-3`. Asi vidíte, že je to elegantnější, než zápis v procentech s mnoha desetinnými místy, ale vlastně znamená totéž.
+Layout se rozdělí na tři díly. První třetinu zabírá `.flex-1`, další dvě pak `.flex-2`. Asi vidíte, že je to elegantnější, než zápis v procentech s mnoha desetinnými místy, ale vlastně znamená totéž.
 
 <div class="ebook-only" markdown="1">
 O flexboxu píšu v části [o responzivním layoutu](responzivni-layout.md] a ještě více na Vzhůru dolů. [vrdl.cz/prirucka/css3-flexbox](http://www.vzhurudolu.cz/prirucka/css3-flexbox)

@@ -72,7 +72,7 @@ Stohování se hodí i pro tabulky se složitějším obsahem v buňkách: odsta
 
 ![](dist/images/original/tabulky_4.png)
 
-Vyzkoušejte si to na Codepenu. [cdpn.io/e/rjmyx](http://s.codepen.io/JasonAGross/debug/rjmyx)
+Vyzkoušejte si to na Codepenu. [cdpn.io/rjmyx](http://s.codepen.io/JasonAGross/full/rjmyx)
 
 Nasazení doporučuji u tabulek, které mají velký počet řádků, ale málo sloupců.
 

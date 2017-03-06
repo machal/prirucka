@@ -39,7 +39,7 @@ Můžeme to ale udělat také pro konkrétní rozlišení:
 
 Je to například skvělá možnost jak zvětšit (zoomovat) celou stránku a zlepšit čitelnost obsahu na velkých displejích. 
 
-Statistiky ukazují, že skupina uživatelů opravdu velkých rozlišení jako 1920 pixelů a výše je dnes téměř stejně početná jako skupina uživatelů mobilních zařízení. A právě na velkých monitorech uživatelé ocení větší základní typografii, protože od obrazovky prostě sedí dále.
+Statistiky ukazují, že skupina uživatelů opravdu velkých rozlišení jako 1920 pixelů a výše je dnes téměř stejně početná jako skupina uživatelů mobilních zařízení. A právě na velkých monitorech uživatelé ocení větší základní velikost písma. Oči totiž do monitoru třeštíme dál než do mobilu, tabletu a notebooku.
 
 <div class="ebook-only" markdown="1">
 Vzpomeňte na kapitolu [o prostředí](prostredi-proc-responzivni-design.md) responzivního designu, kde jsme se tím zabývali.
