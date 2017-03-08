@@ -107,5 +107,5 @@ No jasně, Element Queries všichni chtějí, takže se to snad jednou podaří 
 - [Elementary](https://github.com/filamentgroup/elementary) od Scotta Jehla
 - [EQ.js](https://github.com/Snugug/eq.js) od Sam Richards
 
-Zatím jsem zkoušel jen pár demíček s EQCSS. Což o to, v demíčkách vypadá spousta věcí skvěle. I na menších projektech může být fajn si s tím hrát, ale  na použití na rozumně velkých webech bych si z výše uvedených důvodů netroufl. Za vaše zkušenosti budu vděčný.
+Zatím jsem zkoušel jen pár [demíček](http://codepen.io/machal/pen/XMmdWx) s EQCSS. Což o to, v demíčkách vypadá spousta věcí skvěle. I na menších projektech může být fajn si s tím hrát, ale  na použití na rozumně velkých webech bych si z výše uvedených důvodů netroufl. Za vaše zkušenosti budu vděčný.
 
