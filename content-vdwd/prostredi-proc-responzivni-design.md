@@ -60,7 +60,7 @@ Zjednodušeně z toho vyplývá, že dekorativní grafiku bychom teď měli děl
 
 Když vezmeme celý trh, mezi prohlížeči to vypadá takto: Chrome vede, Explorery verzí 10 a starší už téměř vymřely a hlavně: prohlížečů je dnes děsně moc. 
 
-Na mobilech musíme počítat s Google Chrome a Safari. Menší podíl mají další Chromium odvozeny jako je Samsung Internet a Internet Explorery či Edge na Windows Phone platformách nebo Opera Mobile. 
+Na mobilech musíme počítat s Google Chrome a Safari. Menší podíl mají další Chromium odvozeny jako je Samsung Internet nebo Android Browser. Ještě menší pak Internet Explorery či Edge na Windows Phone platformách nebo Opera Mobile. 
 
 Moc se neví, že na iOS je jádro Safari používáno i v Google Chrome a všech dalších prohlížečích. Raději to tedy zmíním už tady.
 
