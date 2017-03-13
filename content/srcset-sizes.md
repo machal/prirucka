@@ -154,7 +154,9 @@ Pojďme si pro jistotu ještě shrnout celý zápis v `sizes`:
 
 Demo na CodePenu: [cdpn.io/e/azBmaX](http://codepen.io/machal/full/azBmaX?editors=110). 
 
-Nezapomínejte prosím na povinný atribut `alt`. Ideálně i `height`, který vylepší vykreslování stránky tím, že ještě před stažením obrázku sdělí prohlížeči jak velký prostor má pro něj v layoutu vynechat.
+Nezapomínejte prosím na povinný atribut `alt`, který ocení vyhledavače a  čtečky zrakově hendikepovaných uživatelů. 
+
+Doplňte i atribut `height`, který vylepší vykreslování stránky tím, že ještě před stažením obrázku sdělí prohlížeči jak velký prostor pro něj má v layoutu vynechat. Nevztahujte jej tedy k pixelové výšce obrázku ale k prostoru stránky, který si přejete pro obrázek rezervovat na nejčastejším breakpointu layoutu.
 
 ### „Hernajs, a proč je to tak složité?“
 

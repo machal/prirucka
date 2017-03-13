@@ -6,7 +6,9 @@ Začněte s Google PageSpeed Insights, pokračujte na WebPageTest.org. Budou se 
 
 Validátor základních technických problémů, které komplikují rychlost webu. Zde začněte. Otestujte si tady všechny důležité vstupní šablony. 
 
-Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl se učit se další nástroje. Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu vypršení uložení měřicího skriptu Google Analytics do mezipaměti prohlížeče. Jinak je to ale skvělý nástroj.
+Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl se učit se další nástroje. Vyřešit je potřeba hlavně červeně zvýrazněné problémy vašeho webu.
+
+Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu vypršení uložení měřicího skriptu Google Analytics do mezipaměti prohlížeče. Jinak je to ale skvělý nástroj.
 
 PSI se dá také instalovat jako rozšíření do prohlížečů nebo testování zautomatizovat pomocí API.
 
@@ -25,15 +27,15 @@ Co z výsledků WebPagetest mě zajímá?
 
 ![WebPagetest.org stránka s výsledkem testu](dist/images/original/webpagetest-schema.jpg)
 
-### 1) Speed Index
+### 1) Vysvědčení
+
+Hodnocení v parametrech, které připadají autorům WebPagetest důležité. *First Byte* (jak rychlý je backend), nastavení kešování na serveru, komprese obrázků a využití CDN.
+
+### 2) Speed Index
 
 Speed Index je průměrný čas zobrazení konkrétní stránky v daném prohlížeči, [viewportu](viewport-mobily.md) a rychlosti internetu. Čím menší Speed Index, tím lépe. Nejrychlejší weby dosahují čísel kolem tisícovky. Průměr je mezi pěti a desíti tisíci.
 
 Speed Index je esence rychlosti načítání. Číslo, které můžete porovnávat s konkurenty nebo před a po optimalizaci. Takový „pagerank“ pro odborníky na zrychlování webu. 
-
-### 2) Vysvědčení
-
-Hodnocení v parametrech, které připadají autorům WebPagetest důležité. *First Byte* (jak rychlý je backend), nastavení kešování na serveru, komprese obrázků a využití CDN.
 
 ### 3) Vodopád načítání
 

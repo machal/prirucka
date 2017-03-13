@@ -20,6 +20,11 @@ Snižte datovou velikost obrázků, zvolte pro ně vhodné formáty, posílejte 
 
 Zmenšete datovou velikost prvků stránky jako jsou JS, CSS nebo HTML soubory. Použijte UglifyJS, CSSNano a podobné nástroje. Minifikaci kódu si zautomatizujte. Vytvořte si verze knihoven (Bootstrap, jQuery UI…), které obsahují jen používané vlastnosti. Rady od Google: [vrdl.in/kmav0](https://developers.google.com/speed/docs/insights/MinifyResources).
 
+### Webové fonty
+
+Nepoužívejte zbytečně moc řezů písem. Nejen každé používané písmo, ale každý řez (tučný, kurzíva…) zatěžuje stránku desítkami kilobajtů dat navíc. Využívejte úsporný formát WOFF2. Do fontu dejte jen znaky, které na webu opravdu potřebujete. Dlouhé povídání o rychlosti webfontů od Google: [vrdl.in/91bg5](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization).
+
+
 ## 2. Zamezte blokování vykreslení
 
 Data můžete ušetřit vždy. Dnešní weby ale větší mívají problémy obvykle jinde: ve špatném postupu posílání souborů do prohlížeče.
@@ -33,8 +38,6 @@ Další rady od Google: [vrdl.in/afzxg](https://developers.google.com/speed/docs
 ### Webové fonty
 
 Když zjistí, že ve stránce jsou webfonty, většina prohlížečů na čas schová obsah stránky. Obvykle je ale u webů vhodnější do načtení webfontů zobrazovat obsah systémovými písmy. Pokud je to i váš případ, doporučím vám knihovnu FontFaceObserver. [fontfaceobserver.com](https://fontfaceobserver.com/)
-
-Další tipy: nepoužívejte zbytečně moc řezů písem. Využívejte úsporný formát WOFF2. Do fontu dejte jen znaky, které na webu opravdu potřebujete.  Dlouhé povídání o rychlosti webfontů od Google: [vrdl.in/91bg5](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization).
 
 ### Dejte přednost viditelnému obsahu
 

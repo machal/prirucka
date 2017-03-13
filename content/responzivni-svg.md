@@ -2,7 +2,7 @@
 
 Vektorové obrázky jsou fajn. Asi tady není potřeba zdržovat velkou řadou argumentů pro využívání SVG. Ty si případně nastudujte na Vzhůru dolů. ([vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)).
 
-Používání SVG namísto bitmapových obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté. V přizpůsobování šířce kontejneru a zachování poměru stran. To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě. 
+Používání SVG pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté. V přizpůsobování šířce kontejneru a zachování poměru stran. To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě. 
 
 Abychom ale pochopili, proč pružná SVG nejsou jednoduchá jako facka a pružné obrázky, musíme na světlo boží vytáhnout jednu překvapivou a možná i nepříjemnou pravdu. Nádech… 
 

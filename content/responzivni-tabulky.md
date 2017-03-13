@@ -1,6 +1,6 @@
 # Responzivní tabulky
 
-Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky ve webdesignu by mu zavařily. No vážně. Však čtěte.
+Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky na webu by mu zavařily. No vážně. Však čtěte.
 
 Zejména ty rozsáhlejší mají nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet a vy si jistě vyberete. Tedy pokud nejste Chuck Norris, ten si vybral ještě jsem začal psát.
 

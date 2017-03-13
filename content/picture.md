@@ -2,7 +2,7 @@
 
 `<picture>` umožňuje definovat varianty obrázku pro různé stavy v responzivním webdesignu. 
 
-Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my, autoři. Ukážu tady pár scénářů, kdy je to výhodné. Moc jich není, častěji využijete značku `<img>` právě s atributy `srcset` a `sizes`.
+Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my, autoři. Ukážu tady pár scénářů, kdy je to výhodné. Není jich tak moc.
 
 
 ## Ukázka zápisu
@@ -15,21 +15,21 @@ Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohl�
 </picture>
 ```
 
-Značky `<source>` slouží jako alternativy k výchozímu řešení popsanému v `<img>`.
+Ve elementech `<source>` uvádím alternativy k výchozímu obrázku, který je v `<img>`. Prohlížeč vezme vždy první vyhovující, takže je nutné alternativy řadit od největšího po nejmenší.
 
-Z variant obrázku v `<source>` se vezme vždy první vyhovující, takže je nutné je řadit od největšího po nejmenší.
+Značka `<picture>` přitom tvoří jen obal a prvky `<source>` jakési molitanové vycpávky nesoucí informaci o alternativách. Veškeré stylování nebo věšení událostí v javascriptu je nutné dělat přímo na `<img>` elementu. V každém `<picture>` musí být právě jeden `<img>`.
 
-Je dobré vědět, že `<picture>` tvoří jen obal a prvky `<source>` jakési molitanové vycpávky nesoucí informaci o alternativách. Veškeré stylování nebo věšení událostí v javascriptu je nutné dělat přímo na `<img>` elementu. Prohlížeče také do jeho atributu `src` stěhují obsah vyhovujícího obrázku z atributů `srcset` u prvků `<source>`. V každém `<picture>` proto musí být právě jeden `<img>`.
+Kdy se vám může `<picture>` hodit? Hlavně ve dvou situacích:
 
-Kdy budete `<picture>` potřebovat? Hlavně ve dvou situacích:
-
-1. Potřebujete servírovat jinak vypadající obrázky pro různá rozlišení. Například pro mobily chcete jinak vyříznout hlavní motiv obrázku.
+1. Připravili jste obrázky v různých ořezech. Třeba na mobily chcete poslat čtverce a jinde obdélníky. Zároveň chcete mít pod kontrolou hranice, kdy prohlíže použije jednu či druhou ořezovou verzi. Jde o „art direction“, tedy autorské řízení obsahu obrázků.
 2. Prohlížečům jste obrázky připravili v různých souborových formátech.
 
 Ve všech ostatních případech a tedy v naprosté většině případů vám bude stačit starý dobrý `<img>` [s atributy `srcset` a `sizes`](srcset-sizes.md).
 
 
 ## Art direction: obrázky pro různá rozlišení mají také různý obsah
+
+Máme tři varianty obrázků a prohlížeči chceme přesně stanovit hranice přepínání mezi nimi:
 
 ```html
 <picture>
@@ -47,12 +47,14 @@ Ve všech ostatních případech a tedy v naprosté většině případů vám b
 
 Pro okna 1024 pixelů a větší se stáhne a použije obrázek `large_1600.png`, od 800 do 1023 pixelů `medium_1024.png` a pro okna šířky 799 a méně pixelů pak `small_600.png`.
 
-I tady jsem pro vás připravil demo na CodePen. [cdpn.io/e/VYPPQQ](http://codepen.io/machal/pen/VYPPQQ?editors=110)`. 
+I tady jsem pro vás připravil demo na CodePen. [cdpn.io/e/VYPPQQ](http://codepen.io/machal/pen/VYPPQQ?editors=110). 
+
+V čem se to liší od `<img srcset sizes>`? Příklad, který uvádím, je velmi zjednodušený. Museli byste v něm ještě ošetřit různé hodnoty `device-pixel-ratio`. To máte u `srcset` a `sizes` „v ceně“ řešení: prohlížeč to udělá sám.  Na druhou stranu tady pomocí jakýchkoliv [Media Queries](css3-media-queries.md) určíte sami hranice mezi variantami. Naproti tomu vybírá obrázky `srcset` prohlížeč sám podle layoutu nastaveného v `sizes`.
 
 
 ## Podle formátu obrázku
 
-Vybírat obrázky můžete i podle formátu. Použijte atribut `type`. Hodí se hlavně pro detekci prohlížečí, které zvládají nový formát obrázků WebP. Ten je mimochodem ještě výrazně datově úspornější než JPG. [caniuse.com/webp](http://caniuse.com/#feat=webp)
+Vybírat obrázky prohlížeče umí i podle formátu. Použijte atribut `type`. Hodí se hlavně pro detekci prohlížečí, které zvládají nový formát WebP. Ten je mimochodem ještě výrazně datově úspornější než JPG, ale ke dni psaní jej podporuje jen Chrome a Opera. [caniuse.com/webp](http://caniuse.com/#feat=webp)
 
 ```html
 <picture>

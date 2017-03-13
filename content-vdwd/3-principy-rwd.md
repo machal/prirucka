@@ -1,4 +1,4 @@
-# 3 základní technické principy responzivního designu
+# Tři základní technické principy responzivního designu
 
 Původní definice responzivního designu pochází z roku 2010, hlavy a pera Ethana Marcotteho. A je to děsně jednoduchá, technicistní myšlenka.
 
