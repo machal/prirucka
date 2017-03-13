@@ -30,7 +30,7 @@ A ještě na jednu věc nesmíme zapomenout, na variabilitu obsahu. V našem př
 
 ### Zvážení jednotlivých skic
 
-1. *Výpis pod sebe* je velmi jednoduchý z pohledu implementace, ale i ovládání uživateli. V kontextu další prvků stránky je ovšem obvykle nepoužitelný. Na malých i velkých displejích odsunuje další informace jako je cena nebo dostupnost velikostí. Vzpomeňte si také, jak jsem [v kapitole o principech návrhu rohraní](principy-ui.md) bojoval proti otravně dlouhým stránkám na mobilech. Ne, tahle varianta pro náš skvělý eshop nebude.
+1. *Výpis pod sebe* je velmi jednoduchý z pohledu implementace, ale i ovládání uživateli. V kontextu další prvků stránky je ovšem obvykle nepoužitelný. Na malých i velkých displejích odsunuje další informace jako je cena nebo dostupnost velikostí. Vzpomeňte si také, jak jsem [v kapitole o principech návrhu rohraní](principy-ui.md) bojoval proti otravně dlouhým stránkám na mobilech. Ne, tahle varianta pro náš skvělý e-shop nebude.
 2. *Středně velký náhled s navigací pomocí karuselu* vypadá dobře. Šetří totiž prostor na výšku, ale zároveň zobrazuje jednu fotku dostatečně velkou. Na velkých displejích je možné tuto i další varianty doplnit o rozkliknutí do ještě větší verze pomocí lightboxu.
 3. *Středně velký náhled v karuselu* je ve svislém směru ještě úspornější. Pokud bychom karusel navrhli správně, může jít o moc prima řešení pro malé displeje. Uživatelé velkých monitorů takovou míru úspornosti neocení, tam bychom dali přednost řešení jinému. Jednou z našich zásad ale je [konzistence rozhraní](4-principy-ui.md) napříč všemi zařízeními, vzpomeňte si. 
 4. *Malé náhledy* nesplňují náš požadavek zobrazení co největší fotografie bez potřeby kliklání.

@@ -24,7 +24,7 @@ Jsem na začátku přemýšlení o designu konkrétní komponenty. Skicování v
 
 ![](dist/images/original/skicovani-2.png)
 
-*Obrázek: Tady jsem hledal optimální způsob prezentace výběru čísla bot v detailu produktu na eshopech. Tohle už je uhlazenější, prezentovatelnější verze.*
+*Obrázek: Tady jsem hledal optimální způsob prezentace výběru čísla bot v detailu produktu na e-shopech. Tohle už je uhlazenější, prezentovatelnější verze.*
 
 Mozek zapojím až v další fázi. Dívám se na jednotlivé skici a přemýšlím o jejich výhodách a nevýhodách. Samozřejmě si řešení představím na všech možných zařízeních, bereme v potaz zvyklosti, cílové skupiny a technickou řešitelnost. 
 

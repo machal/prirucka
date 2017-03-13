@@ -13,7 +13,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 - Twitter Cards  
 <small>Vytvoří náhled stránky na Twitteru. Opět možnost zvýšit návštěvnost webu, tentokrát z Twitteru. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Twitter Validator](https://cards-dev.twitter.com/validator "Card validator").</small>
 - Strukturovaná data pro Google  
-<small>„Rich Snippets“ vylepší náhled webu ve výsledcích vyhledávání. Podstatné hlavně u eshopů a webů, které obsahují recenze nebo události. [Více informací](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"). [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
+<small>„Rich Snippets“ vylepší náhled webu ve výsledcích vyhledávání. Podstatné hlavně u e-shopů a webů, které obsahují recenze nebo události. [Více informací](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"). [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
 - Validní HTML  
 <small>Hlavně kvůli potenciálním chybám v indexaci vyhledávači. Lpí na tom i někteří klienti, tak proč si kazit renomé.  [Více informací](http://jecas.cz/validita). [Český validátor](http://validator.webylon.info/).</small>
 - Správný `<title>` a `<meta description>`  
@@ -104,6 +104,6 @@ Poznámka: Napsáno hlavně pro [webové kodéry](/prirucka/webovy-koder) a prez
 
 Úpravy vítány. Klikněte na datum nahoře pod nadpisem a pošlete pull request na Github.
 
-Věnujte pozornost i dalším českým webařských checklistům: [SEO od Lukáše Pítry](http://www.lukaspitra.cz/checklist-kontroly-pred-spustenim-webu/) a [UX pro eshopy od Ondřeje Ilinčeva](http://www.ilincev.com/ux-checklist-eshop).
+Věnujte pozornost i dalším českým webařských checklistům: [SEO od Lukáše Pítry](http://www.lukaspitra.cz/checklist-kontroly-pred-spustenim-webu/) a [UX pro e-shopy od Ondřeje Ilinčeva](http://www.ilincev.com/ux-checklist-eshop).
 
 

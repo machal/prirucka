@@ -12,7 +12,7 @@ Pro formátování textu je možné využít nějaký vizuální HTML editor typ
 
 ![Obsah příkladu v Markdownu](dist/images/original/vdwd/priklad-markdown.jpg)
 
-*Obrázek: Použil jsem opět CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho eshopu. [cdpn.io/e/MJwGXK](http://codepen.io/machal/pen/MJwGXK?editors=1000)*
+*Obrázek: Použil jsem opět CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho e-shopu. [cdpn.io/e/MJwGXK](http://codepen.io/machal/pen/MJwGXK?editors=1000)*
 
 Už tenhle náhled (prakticky bez CSS stylů) můžeme nějak testovat. Nejlépe se nám to bude dělat v mobilním prohlížeči. Ano, pracujeme přeci [Mobile First](mobile-first.md) způsobem návrhu. 
 

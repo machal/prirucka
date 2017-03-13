@@ -54,7 +54,7 @@ Nakonec jsme se rozhodli pro vytvoření ještě jednoho webu: právě „m teč
 
 *Obrázek: Poslední, již plně responzivní generace Scuk.cz.*
 
-Dalšího klienta, eshop VašeČočky.cz, se mi hned v počátcích spolupráce někdy v roce 2015 povedlo přesvědčit, aby myšlenku na mobilní web opustil. Rok a půl jsme pak pracovali na pořádném responzivním redesignu. Neztratili jsme čas vytvořením dočasné mobilní verze. Nyní máme dlouhodobě udržitelné řešení, které jedním kódem obsluhuje všechna relevantní zařízení.
+Dalšího klienta, e-shop VašeČočky.cz, se mi hned v počátcích spolupráce někdy v roce 2015 povedlo přesvědčit, aby myšlenku na mobilní web opustil. Rok a půl jsme pak pracovali na pořádném responzivním redesignu. Neztratili jsme čas vytvořením dočasné mobilní verze. Nyní máme dlouhodobě udržitelné řešení, které jedním kódem obsluhuje všechna relevantní zařízení.
 
 A teď už konečně obracím kormidlo na naše responzivní weby. Hurá!
 

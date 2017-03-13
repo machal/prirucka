@@ -8,7 +8,7 @@ Pro e-shop potřebujeme alespoň tři základní barvy:
 - *Primární* pro aktivní prvky, hlavně primární výzvy k akci. Tahle barvy by měla být výrazně odlišná od té neutrální.
 - *Doplňková* barva se nám bude hodit pro zvýraznění komunikujících elementů jako jsou informativní a chybová hlášení. 
 
-Z výběru barevného schématu pro zjednodušení nebudeme dělat vědu, přestože i barvy samozřejmě věda jsou. Měli bychom myslet na cílovou skupinu – v našem případě ženy z velkých měst – a samozřejmě do barev nějak promítnout tématiku eshopu. Mimochodem, dobrý úvod do problematiky barev je v knize Petra Staníčka „Dobrý designér“. [pixy.cz/kniha-dobrydesigner](http://pixy.cz/kniha-dobrydesigner/)
+Z výběru barevného schématu pro zjednodušení nebudeme dělat vědu, přestože i barvy samozřejmě věda jsou. Měli bychom myslet na cílovou skupinu – v našem případě ženy z velkých měst – a samozřejmě do barev nějak promítnout tématiku e-shopu. Mimochodem, dobrý úvod do problematiky barev je v knize Petra Staníčka „Dobrý designér“. [pixy.cz/kniha-dobrydesigner](http://pixy.cz/kniha-dobrydesigner/)
 
 Jak už jsem zmiňoval, pro zjednodušení si pomůžeme databázemi barevných schémat. Hledáme barevné schéma se třemi a více barvami, které ladí s ženskou cílovou skupinou. A také nás výrazně odlišují od konkurence, která vždy spoléhá na zelené asociace s lesem. ForestKid.cz tedy jako uniforma hajného vypadat nebude. 
 
@@ -34,7 +34,7 @@ Problém je kombinovat písma *vhodně*. Tedy tak, aby spolu ladila a zároveň 
 
 Osobně výběr obvykle začínám buď od kvalitního systémového písma, ke kterému hledám do páru doplňkové písmo. Systémový font nepředstavuje žádnou datovou zátěž, ale jak už jsem zmínil, široce dostupných systémových písem je opravdu málo. Druhá možnost je najít výrazné a neobvyklé *značkové* písmo a k němu do páru hledat písmo *chlebové*, pro vysázení textů a komponent rozhraní.
 
-Tvář našemu eshopu chci dát právě výrazným písmem, proto padla volba na *Yeseva One*. Je nepřehlédnutelné a dle názoru autora výrazně ženské. Písmo pro eshop s cílovou skupinou maminek jako dělané. Yes, Eva! [fonts.google.com/specimen/Yeseva+One](https://fonts.google.com/specimen/Yeseva+One)
+Tvář našemu e-shopu chci dát právě výrazným písmem, proto padla volba na *Yeseva One*. Je nepřehlédnutelné a dle názoru autora výrazně ženské. Písmo pro eshop s cílovou skupinou maminek jako dělané. Yes, Eva! [fonts.google.com/specimen/Yeseva+One](https://fonts.google.com/specimen/Yeseva+One)
 
 Zbývá nám písmo pro texty a rozhraní. Pro delší texty, které na webu mít jistě budeme (vzpomeňte na plánovaný blog) je vhodnější patkové písmo. Jenže to by pak znamenalo hledat třetí rodinu pro uživatelské rozhraní, kde se patky nehodí kvůli prostorové neúspornosti. Vybraný *PT Sans* je naopak velmi úsporný, taková méně velkorysá Verdana. A má hezkou kurzívu, kterou budeme spolu s tučným řezem potřebovat v delších textech. [fonts.google.com/specimen/PT+Sans](https://fonts.google.com/specimen/PT+Sans)
 

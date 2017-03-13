@@ -24,7 +24,7 @@ Myslím to, co asi znáte pod pojmy *style guide* nebo *pattern library*. Nezná
 Video: <a href="https://www.youtube.com/watch?v=FvTzAwebUjQ">Úvod do Style Guides</a> ~ Martin Staněk o „style guides“, dokumentacích k systémům designu.
 </p>
 
-Budu se tady odkazovat na svůj aktuální projekt – přípravu systému atomického designu pro nový [Webmium Eshop](http://www.webmium.cz/eshopy).
+Budu se tady odkazovat na svůj aktuální projekt – přípravu systému atomického designu pro nový [Webmium e-Shop](http://www.webmium.cz/eshopy).
 
 ![Webmium - systém atomického designu](dist/images/original/atomicky-design-webmium.jpg)
 
@@ -56,7 +56,7 @@ Já vím, sázet při výběru nástroje na jméno tvůrce není stoprocentně s
 
 ![Atomic Design](dist/images/original/atomic-design.jpg)
 
-Frost přišel s tříděním prvků na stránce do úrovní vycházejících celkem chytře z chemické terminologie. Vezměme to i s příklady z našeho eshopu:
+Frost přišel s tříděním prvků na stránce do úrovní vycházejících celkem chytře z chemické terminologie. Vezměme to i s příklady z našeho e-shopu:
 
 1. Atomy (například tlačítko)
 2. Molekuly (např. tlačítko s inputem spojené do vyhledávacího pole)

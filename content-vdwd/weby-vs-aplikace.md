@@ -33,7 +33,7 @@ V moderním webdesignu ale platí, že skoro každý statický web obsahuje něj
 
 Když čtete blog Vzhůru dolů, časem se doklikáte k aplikaci pro přípravu kontrolního seznamu před spuštěním webu. A ze statického webu jste se dostali do aplikace. [vrdl.cz/checklist](http://www.vrdl.cz/checklist)
 
-Typickým hybridem mezi prezentací a aplikací jsou eshopy. Úvodní stránka a všechny produktové stránky tvoří prezentační, statický web. Košík a nákupní proces jsou zase už typická aplikace. 
+Typickým hybridem mezi prezentací a aplikací jsou e-shopy. Úvodní stránka a všechny produktové stránky tvoří prezentační, statický web. Košík a nákupní proces jsou zase už typická aplikace. 
 
 
 ## Ve vyhledávačích bojují hlavně weby
