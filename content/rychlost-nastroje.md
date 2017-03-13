@@ -37,11 +37,11 @@ Speed Index je průměrný čas zobrazení konkrétní stránky v daném prohlí
 
 Speed Index je esence rychlosti načítání. Číslo, které můžete porovnávat s konkurenty nebo před a po optimalizaci. Takový „pagerank“ pro odborníky na zrychlování webu. 
 
-### 3) Vodopád načítání
+### 3) Vodopád načítání (Waterfall)
 
 Jak se stahují komponenty stránky? Které z nich blokují parsování? Velmi užitečné a velmi detailní.
 
-### 4) Filmový pás
+### 4) Filmový pás (Filmstrip View)
 
 Jak přesně vizuálně probíhalo načítání stránky? Velmi důležité. Dívám se jak dlouho trvalo, než se uživateli zobrazil obsah a také jakým způsobem vykreslování probíhalo. Je to užitečnější než strojově vypočtený *Start Render*, který vidíte v tabulce.
 
