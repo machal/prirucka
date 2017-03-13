@@ -24,5 +24,27 @@ Ze všech sil jsem se snažil, aby se text „Vzhůru do responzivního webdesig
 Přeji si ale, aby kniha dávala smysl lidem, kteří se k tvorbě webu dostali teprve nedávno a třeba ještě neví, do které ze zjednodušených škatulek *designér* nebo *vývojář* se časem zařadí.
 
 
+## To podstatné vyzkoušíme na příkladu
 
+V textu často ukazuji principy, které se špatně vysvětlují na umělých ukázkách. Proto se knihou jako červená nit táhne příklad. No dobře, v našem případě se jedná spíše o modrou nit. 
+
+Snažil jsem se, aby byl co nejreálnější, ale kvůli zachování tempa vyprávění jsem se dopustil mnoha zjednodušení. Na příkladu ale v praxi ukážu mnoho věcí.
+
+1. [Definici potřeb uživatelů a cílů webu](priklad-ux-canvas.md)
+2. [Přípravu obsahu webu](priklad-obsah.md)
+3. [Výběr barvy a typografie](priklad-barvy-typografie.md)
+4. [Návrh a nakódování dokumentové vrstvy designu](priklad-dokument.md)
+5. [Implementaci responzivních médií](priklad-media.md)
+6. [Návrh komponenty uživatelského rozhraní](priklad-navrh-komponenty.md)
+7. [Návrh rozvržení stránky](priklad-layout.md)
+8. [Hotovou verzi](priklad-hotovo.md)
+
+Jednotlivé kroky si samozřejmě můžete stáhnout, zkoušet nebo využít pro vaše potřeby.
+
+## Jak je to s odkazy?
+
+- **Odkazy v textu** v elektronické verzi knihy vedou na odpovídající místa v knize.
+- **Odkazy v podobě** URL adres na konci odstavců vedou na externí stránky.
+
+Teď už mi nezbývá než se zhluboka nadechnout a popřát vám, ať se knížka dobře čte. 
 
