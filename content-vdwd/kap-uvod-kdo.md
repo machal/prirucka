@@ -36,7 +36,7 @@ Snažil jsem se, aby byl co nejreálnější, ale kvůli zachování tempa vypr�
 4. [Návrh a nakódování dokumentové vrstvy designu](priklad-dokument.md)
 5. [Implementaci responzivních médií](priklad-media.md)
 6. [Návrh komponenty uživatelského rozhraní](priklad-navrh-komponenty.md)
-7. [Návrh rozvržení stránky](priklad-layout.md)
+7. [Rozvržení stránky](priklad-layout.md)
 8. [Hotovou verzi](priklad-hotovo.md)
 
 Jednotlivé kroky si samozřejmě můžete stáhnout, zkoušet nebo využít pro vaše potřeby.
