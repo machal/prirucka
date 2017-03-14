@@ -24,7 +24,7 @@ Jak vidíte z obrázku, barevné schéma je… hodně barevné:
 - Následují dva odstíny modré neutrální barvy pro text a neaktivní prvky stránky. 
 
 
-## Vybereme písmo: jedno charakteristické a druhé chlebové 
+## Vybereme písmo: jedno charakteristické a druhé obsahové 
 
 Při výběru typografie opět nejprve zvážíme pro jaké účely budeme písmo potřebovat. V našem případě to zjednodušeně obnáší logo firmy a pak elementy webu: nadpisy, delší texty a navigační prvky uživatelské rozhraní. Vážíme samozřejmě i vhodnost písem pro další média, hlavně tisk.
 
@@ -32,7 +32,7 @@ V době webových fontů není vkládání vlastních písem a jejich kombinace 
 
 Problém je kombinovat písma *vhodně*. Tedy tak, aby spolu ladila a zároveň charakterem a nezaměnitelností vytvářela dostatečný kontrast. Jak také ale uvádím v části o [rychlosti načítání](rychlost-nacitani-proc.md), každý řez písma znamená nezanedbatelný úkol k řešení. Proto je nanejvýš vhodné s počtem písem a jejich řezů šetřit.
 
-Osobně výběr obvykle začínám buď od kvalitního systémového písma, ke kterému hledám do páru doplňkové písmo. Systémový font nepředstavuje žádnou datovou zátěž, ale jak už jsem zmínil, široce dostupných systémových písem je opravdu málo. Druhá možnost je najít výrazné a neobvyklé *značkové* písmo a k němu do páru hledat písmo *chlebové*, pro vysázení textů a komponent rozhraní.
+Osobně výběr obvykle začínám buď od kvalitního systémového písma, ke kterému hledám do páru doplňkové písmo. Systémový font nepředstavuje žádnou datovou zátěž, ale jak už jsem zmínil, široce dostupných systémových písem je opravdu málo. Druhá možnost je najít výrazné a neobvyklé *značkové* písmo a k němu do páru hledat písmo *obsahové*, pro vysázení textů a komponent rozhraní.
 
 Tvář našemu e-shopu chci dát právě výrazným písmem, proto padla volba na *Yeseva One*. Je nepřehlédnutelné a dle názoru autora výrazně ženské. Písmo pro eshop s cílovou skupinou maminek jako dělané. Yes, Eva! [fonts.google.com/specimen/Yeseva+One](https://fonts.google.com/specimen/Yeseva+One)
 

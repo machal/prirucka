@@ -1,4 +1,4 @@
-# 4 principy návrhu responzivního rozhraní
+# Čtyři principy návrhu responzivního rozhraní
 
 My, dnešní webdesignéři, musíme předpokládat, že: 
 
