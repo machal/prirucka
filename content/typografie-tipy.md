@@ -1,7 +1,6 @@
-
 ## Tipy a triky pro typografii na webu
 
-*TODO*
+(TODO)
 
 * **Patkové pro texty?**  
 Občas se to zpochybňuje, ale myslím, že patkové písmo se středně vysokou střední výškou jako Georgia je spolehlivější volba. Patky jednoznačněji definují jednotlivé znaky a nehrozí zpomalení čtení například záměnou „h" a „n“ jako u moderních bezpatkových písem typu Helvetica nebo Roboto.

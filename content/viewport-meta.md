@@ -65,8 +65,6 @@ Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? Se logi�
 
 ## A ještě pár rychlých tipů
 
-<!-- TODO http://kihlstrom.com/2015/shrink-to-fit-no-fixes-zoom-problem-in-ios-9/ -->
-
 **Meta viewport jde nastavit Javascriptem**. To se hodí, když nemáte přístup do `<head>`. Teoreticky jde javascriptem i měnit, ale nedělejte to. Je to náročné na vykreslování. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
 
 **Odstranění 300ms čekání**. Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na Webkitu a Chromium samy odstraní prodlevu mezi tapnutím a akcí. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)
