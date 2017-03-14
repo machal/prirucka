@@ -94,7 +94,7 @@ Pokud by se to měly prohlíže naučit, musely by pracovat asi takto:
 
 Prostě by to vykreslovací proces někdy dost zpomalilo. 
 
-Úvahy z Atkinsova článku směřují k nějakému způsobu zápisu stylů do HTML, podobně jako [u atributu `sizes`](srcset-sizes.md)… To by ale pro nás autory bylo dost nepříjemné, protože se vší silou snažíme dosáhnout toho, abychom měli styly na jedno místě.
+Úvahy z Atkinsova článku směřují k nějakému způsobu zápisu stylů do HTML, podobně jako [u atributu `sizes`](srcset-sizes.md)… To by ale pro nás autory bylo dost nepříjemné, protože se vší silou snažíme dosáhnout toho, abychom měli styly na jednom místě.
 
 No jasně, Element Queries všichni chtějí, takže se to snad jednou podaří vyřešit. Už ale rozumím tomu, proč to v prohlížečích dávno není, takže mě to štve o trochu méně.
 
