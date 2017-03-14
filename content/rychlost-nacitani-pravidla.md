@@ -2,7 +2,7 @@
 
 Vytvoření rychlého webu občas vyžaduje širokou škálu dovedností a znalostí. My si teď ale vystačíme s absolutními základy a obecnými pravdami. 
 
-Vždycky totiž musíte zmenšit datový objem prvků stránky, zamezit blokování vykreslování stránky a ideálně ještě zrychlit backend.
+Vždycky totiž musíte zmenšit datový objem prvků stránky, zamezit blokování vykreslování stránky a ideálně ještě zrychlit procesy na serveru.
 
 Budu tady vycházet z obecných doporučení webu Web Fundamentals od Google a také na ně odkazovat vás, kteří se zajímáte o více informací.
 
@@ -43,9 +43,9 @@ Když zjistí, že ve stránce jsou webfonty, většina prohlížečů na čas s
 
 To co je na stránce vidět nahoře, se do prohlížeče snažte v externích souborech dostat jako první. Nastavte správné pořadí, využijte vkládání obrázků přímo do HTML nebo CSS. Rady od strýčků a tet z Google: [vrdl.in/aywc5](https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent).
 
-## 3. Zrychlete backend
+## 3. Zrychlete server
 
-Tak jasně, i na backendu můžete hodně získat. V celkovém čase potřebném k načtení stránky ovšem server obvykle bývá až obvyklý podezřelý číslo dva.
+Tak jasně, i na serveru můžete hodně získat. V celkovém čase potřebném k načtení stránky ovšem rychlost server a na serveru běžících technologií obvykle bývají až druhým v pořadí obvyklých podezřelých.
 
 ### Zrychlete serverový čas
 

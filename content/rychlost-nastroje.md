@@ -29,7 +29,7 @@ Co z výsledků WebPagetest mě zajímá?
 
 ### 1) Vysvědčení
 
-Hodnocení v parametrech, které připadají autorům WebPagetest důležité. *First Byte* (jak rychlý je backend), nastavení kešování na serveru, komprese obrázků a využití CDN.
+Hodnocení v parametrech, které připadají autorům WebPagetest důležité. *First Byte* (jak rychlý je server), nastavení kešování na serveru, komprese obrázků a využití CDN.
 
 ### 2) Speed Index
 

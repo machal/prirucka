@@ -38,11 +38,11 @@ Typickým hybridem mezi prezentací a aplikací jsou e-shopy. Úvodní stránka 
 
 ## Ve vyhledávačích bojují hlavně weby
 
-Zajímavé na tomto dělení na weby a aplikace z pohledu interakční složitosti také je, že obsah webů chcete typicky dobře indexovat roboty vyhledávačů, takže důležité části generujete už na backendu. 
+Zajímavé na tomto dělení na weby a aplikace z pohledu interakční složitosti také je, že obsah webů chcete typicky dobře indexovat roboty vyhledávačů, takže důležité části generujete už na serveru. 
 
-U aplikací to až tak neplatí. U kontrolního seznamu na Vzhůru dolů chci ve vyhledávačích dobře umístěnou stránku, která aplikaci propaguje, statický web. Nepotřebuji, a obvykle ani nechci, indexovat samotnou aplikaci.
+U aplikací to až tak neplatí. V případě aplikace pro kontrolní seznam na Vzhůru dolů chci ve vyhledávačích dobře umísťovat pouze stránku, která aplikaci propaguje. To je ale konvenční statická stránka. Nepotřebuji, a obvykle ani nechci, vyhledávači indexovat samotnou aplikaci.
 
-Proto se i v poslední době aplikace dělají stále více frontendovými technologiemi (Angular, React), kdežto weby stále „postaru backendově“ s pomocí PHP, .NET nebo jiných jazyků. Javascript na frontendu to pak jen doplňuje. Časem se ale tyto dva přístupy začnou nějak sjednocovat.
+Proto se v poslední době aplikace dělají stále více frontendovými technologiemi, které běží přímo v prohlížeči. Příkladem mohou být javascriptové frameworky Angular nebo React. Weby jsou naproti tomu programovány „postaru“ v jazycích běžících na serveru jako jsou PHP, .NET a další jazyky. Javascriptové frameworky v prohlížečích to pak jen doplňují. 
 
 Teď už nebudeme obecní, přejdeme do světa *mobilních* aplikací a responzivních webů. 
 
