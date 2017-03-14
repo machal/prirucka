@@ -35,7 +35,9 @@ Neexistuje totiž způsob jak prohlížeč odradit od stažení obrázku nalinko
 
 ## Proč vlastně více variant obrázků?
 
-Holky a kluci v RICG si sedli a vymysleli 9 scénářů kdy je potřeba jeden obrázek reprezentovat různými variantami. My si tady ale budeme povídat jen o těch nejdůležitějších:
+Holky a kluci v RICG si sedli a vymysleli 9 scénářů kdy je potřeba jeden obrázek reprezentovat různými variantami.  [responsiveimages.org](http://usecases.responsiveimages.org/)
+
+My si tady ale budeme povídat jen o těch nejdůležitějších:
 
 ![Scénáře pro nasazení responzivních obrázků](dist/images/original/rwd-obrazky-priklad-layout.jpg)
 

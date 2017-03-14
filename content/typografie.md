@@ -29,16 +29,18 @@ Typografie nemá exaktní pravidla, a v takové situaci mě pro potřeby předá
 
 Teď zpozorněte, protože zmíním jeden ze základních designérských principů dnešního (responzivního) webdesginu.
 
-Na příkladu Wikipedie jsem ukazoval, jak se může dlouhý řádek negativně projevit do celkové čitelnosti textu a webu.
+Na příkladu Wikipedie jsem ukazoval, jak se může dlouhý řádek negativně projevit do celkové čitelnosti textu a webu. A není to jen problém Wikipedie.
 
-Platí následující:
+Platí totiž následující:
 
 - 66 je ideální počet znaků na jedné řádce,
 - 45-75 je pak vyhovující rozmezí.
 
-Jako zdroj používám Bringhurstovy pravidla shrnutá na webu „The Elements of Typographic Style Applied to the Web“. [webtypography.net/2.1.2](http://webtypography.net/2.1.2)
+U webů, jako je právě Wikipedie, se čtenářům stává že snadno ztrácejí aktuálně čtenou řádku. Rychlost čtení se tím snižuje.
 
-Samozřejmě – na malých displejích toho není možné dosáhnout. Doproručení pak říkají s ubývajícím počtem znaků na řádce snižovat i jeho výšku, protože oči častěji přecházejí z jedné řádky na druhou. Praktické řešení v CSS pak ukazoval Marko Dugonjić na své přednášce „Responsive Web Typography“ na WebExpo 2014. [vrdl.in/rwdtypo](https://speakerdeck.com/maratz/responsive-web-typography-at-webexpo)
+Jsou to pravidla, která zpopularizoval Robert Bringhurst ve své knize „The Elements of Typographic Style“ a která jsou průběžně potvrzována nejrůznějšími studiemi. Ale vyzkoušet si je můžete i sami na sobě. 
+
+Na malých displejích však není možné optima dosáhnout. Doproručení pak říkají s ubývajícím počtem znaků na řádce snižovat i jeho výšku, protože oči častěji přecházejí z jedné řádky na druhou. Praktické řešení v CSS pak ukazoval Marko Dugonjić na své přednášce „Responsive Web Typography“ na WebExpo 2014. [vrdl.in/rwdtypo](https://speakerdeck.com/maratz/responsive-web-typography-at-webexpo)
 
 
 ```css
@@ -57,7 +59,9 @@ p    { margin-bottom: 1.5em }
 
 Toto nastavení předpokládá vysázení patkovým písmem a do jednoho sloupce. Drobně se samozřejme může měnit podle parametrů písma. Jinak to bude pro nepatkové písmo, pro jiný kontrast, pro specifický charakter písma nebo počet sloupců. Nejlépe nám správnou volbu potvrdí poctivé uživatelské testování, ale pro začátek stačí nastavení písem poctivě testovat na různých zařízeních a různých lidech ve vašem okolí.
 
-Nicméně, délka řádku je první designérské pravidlo, na které bychom při návrhu rozhraní měli myslet. Postup návrhu pak ideálně vypadá tak, že zvolíme písmo, získáme obsah a až na těchto dvou nerozlučných přátelích postavíme systém pro layout stránky.
+Příliš malý řádkový proklad spojuje sousedící znaky, zhoršuje čitelnost slov a ve výsledku zpomaluje čtení. Příliš velký zase vypadá jako seznam samostatných položek a nutí uživatele přemýšlet nad významem čteného obsahu.
+
+Nicméně, délka a výška řádku je první designérské pravidlo, na které bychom při návrhu rozhraní měli myslet. Postup návrhu pak ideálně vypadá tak, že zvolíme písmo, získáme obsah a až na těchto dvou nerozlučných přátelích postavíme systém pro layout stránky.
 
 <div class="ebook-only" markdown="1">
 Máte pravdu, i sem se odkazuji, když [na začátku kapitoly](kap-dokument.md) mluvím o potřebě návrhu rozhraní směrem od obsahu, nikoliv od rozvržení. I v našem příkladu vyjdeme při vymýšlení layoutu z optimální délky čtené řádky.

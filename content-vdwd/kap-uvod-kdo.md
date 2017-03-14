@@ -24,6 +24,13 @@ Ze všech sil jsem se snažil, aby se text „Vzhůru do responzivního webdesig
 Přeji si ale, aby kniha dávala smysl lidem, kteří se k tvorbě webu dostali teprve nedávno a třeba ještě neví, do které ze zjednodušených škatulek *designér* nebo *vývojář* se časem zařadí.
 
 
+## Co předpokládám, že čtenáři umí?
+
+Pro pochopení technických částí budete potřebovat dobrou znalost HTML a CSS, včetně moderních HTML5 technologií jako je flexbox nebo SVG. 
+
+Text je plný odkazů, takže se snad nebude stávat, že ke knize budete potřebovat vyhledávání v Google. Pokud snad někde ano, napište mi to, prosím.
+
+
 ## To podstatné vyzkoušíme na příkladu
 
 V textu často ukazuji principy, které se špatně vysvětlují na umělých ukázkách. Proto se knihou jako červená nit táhne příklad. No dobře, v našem případě se jedná spíše o modrou nit. 

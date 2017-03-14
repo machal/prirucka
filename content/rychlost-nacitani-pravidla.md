@@ -14,7 +14,7 @@ Pravidlo zmešování dat je evergreen. Platí pro každý web, aplikaci, platí
 
 ### Obrázky
 
-Snižte datovou velikost obrázků, zvolte pro ně vhodné formáty, posílejte je správným způsobem. Zvažte WebP namísto JPG, používejte [responzivní obrázky](responzivni-obrazky.md), používejte kompresi pokročilými nástroji jako je JPEGmini nebo Kraken. Pro dekorace používejte CSS, nikoliv obrázky. Zmenšování obrázků si zautomatizujte pomocí Gruntu nebo podobného nástroje. Rady od Google: [vrdl.in/od06q](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization).
+Snižte datovou velikost obrázků, zvolte pro ně vhodné formáty, posílejte je správným způsobem. Používejte [responzivní obrázky](responzivni-obrazky.md). Používejte kompresi pokročilými nástroji jako je JPEGmini nebo Kraken. Pro dekorace používejte CSS, nikoliv obrázky. Zmenšování obrázků si zautomatizujte pomocí Gruntu nebo podobného nástroje. Zvažte použití WebP namísto JPG, je datově výrazně úspornější (jeho detekci už umíte díky textu [o značce `<picture>`](picture.md)). Rady od Google: [vrdl.in/od06q](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization).
 
 ### Zdrojové kódy 
 
