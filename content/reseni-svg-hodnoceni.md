@@ -1,10 +1,10 @@
-## SVG řešení: hvězdičkové hodnocení
+# SVG řešení: hvězdičkové hodnocení
 
 Hvězdičkové hodnocení se na webu používá děsně často. Před časem jsem kápl na moc pěkné řešení postavené na [SVG](svg.md) vloženém do HTML. 
 
 Tady je Codepen pro nedočkavce. [cdpn.io/e/yayxGv](http://codepen.io/machal/pen/yayxGv) 
 
-*TODO IMG*
+![Hvězdičkové hodnocení](../dist/images/original/svg-hvezdy.jpg)
 
 Mám plnou a prázdnou hvězdu. Co když ale potřebuji udělat z poloviny vyplněnou hvězdičku? Nebo čtvrtinovou hvězdičku? Vyrobím si tři nebo čtyři obrázky? 
 
