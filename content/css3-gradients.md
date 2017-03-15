@@ -16,6 +16,8 @@ background: linear-gradient(lightgreen, darkgreen);
 
 Používají se buď **klíčová slova** označující směr gradientu (`to bottom right`, `to right`) nebo **úhly**. Úhel 0&deg; vede zezdola nahoru, 90&deg; zleva doprava a tak dále po směru hodinových ručiček. Přednastavený je 180&deg; vedoucí seshora dolů. V CSS zápisu `180deg`.
 
+<!-- AdSnippet -->
+
 Například tento gradient ze světle do tmavě zelené povede z levého dolního rohu směrem k pravému hornímu:
 
 ```css
@@ -46,8 +48,7 @@ background:
 
 Tento zápis vykreslí gradient z levého horního do pravého dolního rohu. Do čtvrtiny délky úhlopříčky elementu se vykreslí přechod z průhledné do světle zelené barvy. Od čtvrtiny do poloviny pak přechod ze světle zelené do tmavě zelené, jen tentokrát zapsané pomocí RGB barevného modelu.
 
-Kruhový přechod
-----------------
+## Kruhový přechod
 
 Jednoduchý kruhový (radiální) přechod vytvoříme například tímto zápisem:
 
@@ -104,8 +105,7 @@ Fungují podobně jako u lineárního přechodu. Do čtvrtiny rozměrů elementu
 A tady je živý příklad, obsahující všechny čtyři varianty radiálního přechodu: [cdpn.io/e/cdyfx](http://cdpn.io/e/cdyfx).
 
 
-Opakující se barevné přechody
------------------------------
+## Opakující se barevné přechody
 
 Deklarují se úplně stejně jako běžné barevné přechody, jen pomocí funkcí `repeating-linear-gradient()` nebo `repeating-radial-gradient()`. Narozdíl od běžných přechodů prohlížeč od poslední barevné zarážky nevykreslí barvu, kterou obsahuje, ale znovu opakuje definovaný gradient.
 
@@ -134,10 +134,11 @@ Pojďme ještě zkusit opakující se kruhový gradient:
 
 Opakujícími se barevnými a zelenými plochami se nám vykreslí „terč“. Tady ovšem pozor, některé prohlížeče (konkrétně Chrome nebo Firefox v době psaní článku) zatím neumějí tyto složitější gradienty vyhlazovat, takže hrany kružnic budou „kostrbaté“.
 
-Podpora v prohlížečích
-----------------------
+## Podpora v prohlížečích
 
 Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini. Android Browser 2.3 opakované gradienty nezvládne vůbec a v podpoře běžných gradientů má také mezery: [caniuse.com/gradients](http://caniuse.com/gradients).
+
+<!-- AdSnippet -->
 
 Nezapomeňte tedy vždy definovat fallback. Gradient se považuje za obrázek na pozadí, takže si můžete fallback definovat jako běžnou barvu:
 
@@ -178,10 +179,11 @@ Jednoduché, dvoubarevné lineární gradienty lze ve starších Explorerech za�
 V parametru `GradientType` nastavujete svislý (`0`) nebo vodorovný (`1`) směr gradientu. U filtrů jen pozor na pomalejší vykreslování a na fakt, že `background-image` účinnost filtrů ruší.
 
 
-Tipy, triky a nástroje
-----------------------
+## Tipy, triky a nástroje
 
 Nezapomeňte, že gradient je vlastně **obrázek na pozadí elementu**, takže ho můžete použít pro definování obrázku odrážky (`list-style-image`) nebo pro obrázek na pozadí rámečku ([border-image](css3-border-image.md)).
+
+<!-- AdSnippet -->
 
 Nejobvyklejší netriviální použití gradientů jsou **grafická tlačítka** vykreslená pomocí CSS: [cubiq.org/dropbox/cssgrad.html](http://cubiq.org/dropbox/cssgrad.html).
 
