@@ -30,9 +30,10 @@ Výběr dvou písem pro jedno užití je víceméně vyšší dívčí. Pokud s 
 ## Fotky, ilustrace, ikony
 
 * Iconfinder skladuje ikony a jednoduché vektory. Můj velmi častý zdroj. [iconfinder.com](https://www.iconfinder.com/)
-* PhotoPin obsahuje fotografie s Creative Commons licencí.
-[photopin.com](http://photopin.com/free-photos/)
+* PhotoPin a Pixabay skladují fotografie s Creative Commons licencí.
+[photopin.com](http://photopin.com/free-photos/) [pixabay.com](https://pixabay.com/cs/)
 * Adobe Stock pro všechny ostatní obrázky. [stock.adobe.com](https://stock.adobe.com/cz/)
+
 
 
 ## Dekorace, opakované vzory

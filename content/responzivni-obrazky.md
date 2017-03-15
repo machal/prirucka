@@ -97,5 +97,5 @@ Prostě použijete parametr `src`, který v případě dostupného `srcset` mode
 
 ### Druhé náhradní řešení: Picturefill
 
-Polyfill, který zařídí fungování všech variant responzivních i ve starších prohlížečích. Jmenuje se Picturefill a považuji jej za dobré řešení, které mám odzkoušené na mnoha webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
+Javascriptová knihovna, která zařídí fungování všech variant responzivních i ve starších prohlížečích. Jmenuje se Picturefill a považuji jej za dobré řešení, které mám odzkoušené na mnoha webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
 

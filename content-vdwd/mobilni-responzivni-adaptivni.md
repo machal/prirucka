@@ -34,7 +34,7 @@ Jak vidíte, tohle řešení má řadu nevýhod a považuji ho za dlouhodobě ne
 
 V krátkodobém horizontu může být „m tečka“ web docela záchrana, ale v dlouhodobém se údržba dvou webů prodraží. Ukážu to na příkladu.
 
-### Scuk.cz: Příběh o dočasném mobilním webu
+### Příběh o Scuk.cz: když je něco vymyšlené pro desktop, těžko z toho uděláte responzivní web
 
 Před lety jsem jako kodér spolupracoval na projektu Scuk.cz známého foodbloggera, pana Cuketky. [scuk.cz](http://www.scuk.cz/)
 

@@ -98,7 +98,7 @@ K internetu jsou prý už připojené i stromy v Amazonii, takže lednička s we
 
 Cítím krásnou příležitost se historicky ztrapnit a jdu tedy vývoj odhadnout jen podle svého nejlepšího vědomí. Na jakých zařízeních budou lidé používat prohlížeče a zobrazovat naše weby za pár let?
 
-### Chytré hodiny: NE
+### Chytré hodinky: NE
 
 Hodinky obvykle prohlížeč instalovaný nemají. Na některých platformách si neoficiální prohlížeče stáhnout můžete. Zkoušel jsem to, ale myslím že je to nepoužitelné a že se to neujme. Plocha je příliš malá na konzumaci obsahu, natož pak rozumné interakce.
 
