@@ -1,6 +1,6 @@
 # Příklad: hotový dokument
 
-V této kapitole jsme se naučili nezbytné základy [grafického designu](graficky-design.md) a [typografie](typografie.md). Díky tomu jsme byli schopní zvolit základní [grafický styl](priklad-barvy-typografie.md) pro náš příklad.  Alespoň doufám! 
+V této kapitole jsme se naučili nezbytné základy [grafického designu](graficky-design.md) a [typografie](typografie.md). Díky tomu jsme byli schopní zvolit základní [grafický styl](priklad-barvy-typografie.md) pro náš příklad.  
 
 Jak to ale dostat do webové stránky? Potřebujeme [znát jednotky](jednotky.md) pro tvorbu webu a taky vědět, že pixely (`px`) jsou už skoro na seznamu zakázaných slov. Díky jednoduché HTML šabloně a třem základním vrstvám stylů z [předchozí kapitoly](dokument-nastroje.md) bude naše stránka prezentovatelná v prohlížeci s nějakým vlastním charakterem. 
 
