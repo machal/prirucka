@@ -75,7 +75,7 @@ Jen pozor, bez nevýhod to není: responzivní redesign vyžaduje nezanedbateln�
 
 Responzivní web je to, čemu dávám vždy přednost a čemu (to byste nevěřili!) se budeme také v dalších textech nejvíc věnovat.
 
-V boji za úměrnou délku textů jsem vynechal podložení menších argumentů, které ve prospěch responzivních webů používám. Pokud svým šéfům, kolegům nebo klientům ještě stále potřebujete předkládat důvody pro přechod na responzivní web, pořiďte si výbornou argumentační příručku „Going Responsive“ od Karen McGrane. Ta je důvodům pro responzivní web a ošemetnostem přechodu na něj věnovaná celá. [https://abookapart.com/products/going-responsive](https://abookapart.com/products/going-responsive)
+V boji za úměrnou délku textů jsem vynechal podložení menších argumentů, které ve prospěch responzivních webů používám. Pokud svým šéfům, kolegům nebo klientům ještě stále potřebujete předkládat důvody pro přechod na responzivní web, pořiďte si výbornou argumentační příručku „Going Responsive“ od Karen McGrane. Ta je důvodům pro responzivní web a ošemetnostem přechodu na něj věnovaná celá. [vrdl.in/goingrwd](https://abookapart.com/products/going-responsive)
 
 Tady bychom mohli skončit, ale dlužím vám ještě poznámku k přídavnému jménu *adaptivní*.
 
