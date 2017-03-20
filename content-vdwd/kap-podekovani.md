@@ -7,6 +7,8 @@ Foto autora je od Jana Forejta
 - Dan Duráň: review celé knihy
 - Dan Střelec: review celé knihy
 - Honza Sládek: review kapitoly „Weby versus aplikace“
+- Jan Kvasnička: review
+- Jiří Sekera: review
 - Fare.cz
 - *TODO*
 
