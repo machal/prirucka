@@ -1,10 +1,12 @@
 # User Centered Design Canvas
 
-Správný UX designér hledá řešení, které vyhovuje potřebám uživatele, ale také cílům člověka, firmy nebo instituce, pro kterou web navrhuje. 
+Správný designér hledá řešení, které vyhovuje potřebám uživatele, ale také cílům člověka, firmy nebo instituce, pro kterou web navrhuje. 
 
 Výstupů výzkumné fáze projektu bývá u větších projektů více: persony, uživatelské scénáře, mapy webu, definice klíčových ukazatelů výkonu (KPI) a mnoho dalších. 
 
-User Centered Design Canvas je ale nástroj, který to celé dokáže shrnout na jedné stránce. U větších projektů může posloužit jako shrnutí, provázející všechny členy týmu. U těch menších se obejdeme bez dalších výstupů.
+User Centered Design Canvas je ale nástroj, který to celé dokáže shrnout na jedné stránce. Jde o variaci na známý Lean Canvas, zjednodušený podnikatelský plán na jedné straně papíru. [leancanvas.cz](http://www.leancanvas.cz/)
+
+UCD Canvas může u větších projektů posloužit jako shrnutí, provázející projektem všechny členy týmu. U těch menších se obejdeme bez dalších výstupů.
 
 ![User Centered Design Canvas](dist/images/original/design-canvas.png)
 

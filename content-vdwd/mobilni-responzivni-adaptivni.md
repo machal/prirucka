@@ -12,7 +12,7 @@ Občas se říká „m tečka web“. Ano, jsou to ty weby, které pro přístup
 
 ### Výhoda: Mobilní web může být relativně rychle hotový
 
-Pokud máte složitý desktopový web a teprve uvažujete o řešení mobilních uživatelů, může to být na rozdíl od velkého responzivního redesignu výrazně časově méně náročné.
+Pokud máte složitý desktopový web a teprve uvažujete o řešení mobilních uživatelů, může to být na rozdíl od velkého responzivního redesignu výrazně časově i finančně méně náročné.
 
 ### Výhoda: Serverová detekce se může hodit 
 
@@ -81,7 +81,7 @@ Tady bychom mohli skončit, ale dlužím vám ještě poznámku k přídavnému 
 
 ## Adaptivní web
 
-Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Potřebujeme například řešit rychlost načítání nebo měníme pracovní postupy. Napříkald potřebujeme poslat každému zařízení jiný obrázek. Nebo zvýraznit telefonní číslo jen na mobilech. [vrdl.cz/blog/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
+Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Potřebujeme například řešit rychlost načítání nebo měníme pracovní postupy. Například potřebujeme poslat každému zařízení jiný obrázek. Nebo zvýraznit telefonní číslo jen na mobilech. [vrdl.cz/blog/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
 
 Téhle širší kategorii řešení můžeme říkat adaptivní webdesign. 
 
