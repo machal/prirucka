@@ -1,12 +1,12 @@
 # Mřížka účaří (Baseline Grid)
 
-Layout vysázený v pravidelné vodorovné mřížce asi znáte, protože jej velmi zpopularizoval framework Bootstrap. Mřížka účaří je vlastně totéž ve svislém směru. Je to typografická mřížka, jinak též typografický rytmus.
+Layout vysázený v pravidelné vodorovné mřížce asi znáte, protože jej velmi zpopularizoval framework Bootstrap. Mřížka účaří je vlastně totéž ve svislém směru. Je to svislá mřížka, jinak též typografický rytmus.
 
 Mezi webaři je často diskutována a já se vám tady bez mučení přiznám, že patřím do skupiny, která její použití považuje za zbytečnou komplikaci.
 
 ![Baseline Grid](dist/images/original/baseline-grid.jpg)
 
-*Obrázek: Mřížku účaří na obrázku vidíte jako šedivé vodorovné čáry.  Velmi ji zpopularizoval  (na tehdejší dobu skvělý) framework pro tvorbu layoutu Blueprint. To ještě webdesign nebyl tak daleko od tištěných médií jako dnes. [blueprintcss.org](http://blueprintcss.org/)*
+*Obrázek: Mřížku účaří na obrázku vidíte jako šedivé vodorovné čáry.  Zpopularizoval ji (na tehdejší dobu skvělý) framework pro tvorbu layoutu Blueprint. To ještě webdesign nebyl tak daleko od tištěných médií jako dnes. [blueprintcss.org](http://blueprintcss.org/)*
 
 Mřížku účaří jsme opět zdědili z tištěných médií. Hlavně z novin, kde zaručuje, že na nekvalitním papíře nebudou do prostoru mezi řádky prosvítat texty z druhé strany, což zlepšuje čitelnost.
 
@@ -20,5 +20,5 @@ Představte si, že jsou vaše vkládané elementy navržené tak, že je nutné
 
 Nemyslím, že trvat na přísném dodržování mřížky účaří je v efektivních lidských silách. 
 
-Je fajn účaří dodržovat v místech, kde spolu bezprostředně ve dvou sloupcích sousedí dva texty. Na stránce plné vkládaných médií a dokumentů ale prostě typografickou mřížku vzdejte. 
+Je fajn účaří dodržovat v místech, kde spolu bezprostředně ve dvou sloupcích sousedí dva texty. Nebo v blocích s textem. Na stránce plné vkládaných médií nebo ovládacích prvků ale osobně dogmatické dodržování typografické mřížky vzdávám. 
 

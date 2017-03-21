@@ -8,15 +8,21 @@ Jako příklad pro náš proces návrhu uživatelského rozhraní si vezmeme tyh
 
 Jak budu v knize často zmiňovat, jednotlivé fáze procesu návrhu je výhodné vidět co nejdříve v podobě prezentovatelné v prohlížeči. U textu to nebude tak složité, viďte?
 
-Pro formátování textu je možné využít nějaký vizuální HTML editor typu Dreamweaveru, přímou editaci kódu nebo – když zavřeme všechny oči a zatajíme dech – třeba export z Wordu. Uf! Já používám jednoduché značkování pomocí Markdownu. Práce s ním je daleko rychlejší než s HTML a převést jej do jakéhokoliv složitějšího formátu je velmi snadné. [wikipedia.org/wiki/Markdown](https://cs.wikipedia.org/wiki/Markdown)
+## Dva nástroje: Markdown a CodePen 
+
+Pro formátování textu je možné využít nějaký vizuální HTML editor typu Dreamweaveru, přímou editaci kódu nebo – když zavřeme všechny oči a zatajíme dech – třeba export z Wordu. Uf! 
+
+Já používám jednoduché značkování pomocí *Markdownu*. Práce s ním je daleko rychlejší než s HTML a převést jej do jakéhokoliv složitějšího formátu je velmi snadné. [wikipedia.org/wiki/Markdown](https://cs.wikipedia.org/wiki/Markdown)
+
+Využijeme také *CodePen*. Jednoduchý online editor, kde si stránku napíšete a otestujete bez potřeby složitějších nástrojů. Jak brzy uvidíte, je to pro mě nepostradatelný pomocník. Všechny demonstrační příklady v knize jsou umístěné na něm. [codepen.io](http://codepen.io/)
+
+## Obsah příkladu převedeme rovnou do kódu
 
 ![Obsah příkladu v Markdownu](dist/images/original/vdwd/priklad-markdown.jpg)
 
-*Obrázek: Použil jsem opět CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho e-shopu. [cdpn.io/e/MJwGXK](http://codepen.io/machal/pen/MJwGXK?editors=1000)*
+*Obrázek: Použil jsem CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho e-shopu. [cdpn.io/e/MJwGXK](http://codepen.io/machal/pen/MJwGXK?editors=1000)*
 
-Už tenhle náhled (prakticky bez CSS stylů) můžeme nějak testovat. Nejlépe se nám to bude dělat v mobilním prohlížeči. Ano, pracujeme přeci [Mobile First](mobile-first.md) způsobem návrhu. 
-
-Jediné, co pro test potřebujeme udělat, je sdělit prohlížečům, že jsme při kódování HTML mysleli na mobilní zařízení. [Meta značkou pro viewport](viewport-meta.md), kterou detailně rozebírám na jiném místě.
+Už tenhle náhled (prakticky bez CSS stylů) můžeme nějak hodnotit či testovat. Nejlépe se nám to bude dělat v malé velikosti okna, protože tam půjdou problémy obsahu vidět nejlépe.
 
 Pracujeme tady jen s čistým, strukturovaným textem. Pro mediální obsah nebo složitější interaktivní elementy si ve stránce jen vyhradíme místo pomocí šedivých zástupných ploch. Lépe pak uvidíme, zda je délka obsahu a tedy i stránky snadno vstřebatelná nebo ne.
 
@@ -24,7 +30,7 @@ V této fázi máme neopakovatelnou příležitost odpovědět si na otázky tý
 
 Testujeme kvalitu obsahu samotného a jeho hierarchii. Konfrontujeme text s našimi znalostmi uživatelů a zájmů firmy, které jsme promítli do [design canvasu](design-canvas.md). Nechybí nebo nepřebývá na stránce něco? Má obsah správné pořadí? Je obsah srozumitelný a přesvědčivý pro cílovou skupinu? 
 
-Pojďme tento moment neproměskat a pořádně se na texty podívat. Některé problémy jsou totiž vidět už teď:
+Pojďme tento moment nepromeškat a pořádně se na texty podívat. Některé problémy jsou totiž vidět už teď:
 
 1. Chybí nám tady informace o dostupnosti jednotlivých velikostí bot. Návštěvníka navíc umíme přehledněji informovat o vnitřní velikosti bot, která je pro koupi přes internet důležitá. Dbáme na dobrý výběr bot a rodičům dětí tedy musíme doporučit objednávku zařízení pro domácí přeměření velikosti.
 2. Doplníme také stručné informace o ceně dopravy a platby, která by mohla u nového eshopu budit pochyby. Plná verze bude samozřejmě standardně v obchodních podmínkách.

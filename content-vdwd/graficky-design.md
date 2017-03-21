@@ -11,7 +11,7 @@ Pojďme se o této části návrhu webu pobavit alespoň v nejzákladnějších 
 Prostředky, které Jiří použil k sestavení kompozice, nejsou nijak složité: 
 
 1. **Typografie**  
-Základní kámen, na kterém je nebo by měla být postavena identita každé firmy, instituce a ve výsledku pak i každého webu. Budeme se jí [ještě věnovat](typografie.md), vydržte.
+Základní kámen, kterému se ještě [budeme věnovat](typografie.md), vydržte.
 2. **Multimédia**  
 Fotky, ilustrace, videa nebo třeba koláčové grafy, když chcete.
 3. **Rozvržení**  
@@ -27,7 +27,7 @@ Je asi jasné, že velmi záleží na kvalitě každé z těchto čtyř komponen
 
 Jeden z nejčastějších omylů webdesignérů a jejich klientů. Musím to zopakovat i já. Webová grafika se nám nemá *líbit*. Má *sloužit* účelu, pro který web tvoříme.
 
-Barvy, použitá písma, styl fotografií nebo rozvržení vyvolávají ve čtenáři nějaké pocit. Nesmí to být náhodný pocit nebo dobrý pocit u špatných lidí jako je grafik nebo klient. Pokud se klientovi web líbí, je to fajn. Když se ale nelíbí cílové skupině, je to katastrofa.
+Barvy, použitá písma, styl fotografií nebo rozvržení vyvolávají ve čtenáři nějaký pocit. Nesmí to být náhodný pocit nebo dobrý pocit u špatných lidí jako je grafik nebo klient. Pokud se klientovi web líbí, je to fajn. Když to ale neplní potřeby cílové skupiny, je to průšvih.
 
 Jak to ale zjistit? Předám tady slovo Janu Řezáčovi, přednímu UX konzultantovi:
 
@@ -47,6 +47,4 @@ Více v jeho článku „Co by měl každý vědět o tom, jak se dělá web: 2.
 
 Prostě každý dobrý webový grafik je zároveň designér, protože nedělá jen „hezké věci“, ale snaží se vyřešit nějaký klientův problém. 
 
-Bylo to moc stručné, já vím. Webová grafika je obor sám pro sebe a do hloubky ji tady popisovat nechci. Vždyť píšu jen knížku o webdesignu!
-
-Zájemce o hlubší průzkum webové grafiky bych asi v dalším kroku poslal do kapitol o typografii, barvách a layoutu online knihy „Designing for the Web“ od Marka Boultona. [designingfortheweb.co.uk](http://designingfortheweb.co.uk/)
+Bylo to moc stručné, já vím. Zájemce o hlubší průzkum vizuálního designu bych asi v dalším kroku poslal do kapitol o typografii, barvách a layoutu online knihy „Designing for the Web“ od Marka Boultona. [designingfortheweb.co.uk](http://designingfortheweb.co.uk/)

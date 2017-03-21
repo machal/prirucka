@@ -1,7 +1,6 @@
 # Zdroje elementů grafického designu 
 
-
-U jednodušších webů nebo webových aplikací je možné ke návrhu [grafického designu](graficky-design.md) přistoupit zjednodušeně. 
+U jednodušších webů nebo webových aplikací je možné ke návrhu [grafického designu](graficky-design.md) přistoupit jako ke skládance. 
 
 Servíruji zde zdroje, které pro jednotlivé přísady grafického designu webu používám sám. Pokud opravdu začítáne, držte se zásady „méně je vždy více“.
 
@@ -10,11 +9,11 @@ Servíruji zde zdroje, které pro jednotlivé přísady grafického designu webu
 
 ### Systémová písma
 
-Nezapomínejte na ně. I v operačních systémech totiž na vaše použití čekají kvalitní písma. Kvalitních fontů je dnes v operačních systémem dost, ale naprostá většina není široce dostupná. Ve snaze být velmi stručný doporučím hlavně dvě klasiky od Matthew Cartera, které najdete skoro na každém zařízení. *Georgii* pro čtení a *Verdanu* pro nadpisy a prvky uživatelského rozhraní. 
+Nezapomínejte na ně. I v operačních systémech totiž na vaše použití čekají kvalitní písma. Kvalitních fontů je dnes v operačních systémech dost, ale naprostá většina není široce dostupná. Ve snaze být velmi stručný doporučím hlavně dvě klasiky od Matthew Cartera, které najdete skoro na každém zařízení. *Georgii* pro čtení a *Verdanu* pro nadpisy a prvky uživatelského rozhraní. 
 
 ### Google Fonts
 
-Dnes už klasika. Jako každá služba zdarma, i Google Fonts nabízí řadu nekvalitních nebo pro váš účel nevhodných písem. Pokud o písmech nic moc nevíte, raději si nechte poradit. Typewolf už jich pár vybral za vás. Jen si ověřte podporu českých znaků. [typewolf.com/google-fonts](https://www.typewolf.com/google-fonts)
+Dnes už klasika. Jako každá služba zdarma, i Google Fonts nabízí i řadu nekvalitních nebo pro váš účel nevhodných písem. Pokud o písmech nic moc nevíte, raději si nechte poradit. Typewolf už jich pár vybral za vás. Jen si ověřte podporu českých znaků. [typewolf.com/google-fonts](https://www.typewolf.com/google-fonts)
 
 ### Kombinování písem?
 
@@ -41,12 +40,9 @@ Výběr dvou písem pro jedno užití je víceméně vyšší dívčí. Pokud s 
 * Opakované vzory na ColourLovers.com. [colourlovers.com/patterns](http://www.colourlovers.com/patterns)
 * Dekorační tvary tamtéž. [colourlovers.com/shapes](http://www.colourlovers.com/shapes)
 
-## Styly vzhledu
 
-* CodePen kolekce pro tlačítka. [codepen.io/collection/bxdaH](https://codepen.io/collection/bxdaH/)
+Zdroje, které uvádím, by rozhodně neměly být jakousi internetovou náhradou grafického designéra. Jak už jsem psal, profesionální návrh se netočí kolem pojmů „líbí“ a „nelíbí“, ale slouží cíli a přizpůsobuje se cílové skupině. Jistě vás nepřekvapí, že mezi specifikací cílů, cílových skupin a výběrem barvy nebo písma je kvantum znalostí, které specializovaní grafici a typografové nosí pod čepicí.
 
-Zdroje, které uvádím, by rozhodně neměly být jakousi internetovou náhradou grafického designéra. Jak už jsem psal, profesionální návrh se netočí kolem pojmů „líbí“ a „nelíbí“. Profesionální návrh slouží cíli a přizpůsobuje se cílové skupině. Jistě vás nepřekvapí, že mezi specifikací cílů, cílových skupin a výběrem barvy nebo písma je kvantum znalostí, které specializovaní grafici a typografové nosí pod čepicí.
+Na druhou stranu tyto zdroje využívají také mnozí profesionální designéři, protože s jejich pomocí šetří čas a hledají u nich inspiraci.
 
-Stejně tak je ale mnozí profesionální designéři využívají, protože s jejich pomocí šetří čas a hledaní u nich inspiraci.
-
-Teď už pojďme získané znalosti zúročit při návrhu grafického designu našeho webu.
+Teď už pojďme získané znalosti zúročit při návrhu vizuálního designu našeho webu.

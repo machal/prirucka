@@ -4,9 +4,9 @@ Pojďme si projít základní množinu znalostí o využití písma na webu, zm�
 
 ## Písmo v nás vyvolává emoce
 
-Než se začteme, řekne nam typ písma (spolu s dalšími prostředky grafického designu) informaci, co od webu očekávat. Jsem na webu seriózního magazínu, užitného webu typu e-shopu nebo na stránkách Déčka, určeného pro děti? Asi je jasné, že tohle všechno je možné sdělit pouhou volbou písma. Je toho ale mnohem více.
+Než se začteme, může nám typ písma (spolu s dalšími prostředky vizuálního designu) sdělit informaci, co od webu očekávat. Jsem na webu seriózního magazínu, užitného webu typu e-shopu nebo na stránkách Déčka, určeného pro děti? Asi je jasné, že tohle všechno je možné sdělit nebo zpochybnit mimojiné i volbou písma. Je toho ale mnohem více.
 
-Typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů. Myslím si nicméně, že základní úroveň znalosti typografie patří do výbavy každého webového řemeslníka, designérů i vývojářů. Zájemcům dále doporučím pár zdrojů ke studiu.
+I typografie je poměrně složitý obor a cit pro ni nevzniká lusknutím prstů. Myslím si nicméně, že základní úroveň znalosti typografie patří do výbavy každého webového řemeslníka, designérů i vývojářů. Zájemcům dále doporučím pár zdrojů ke studiu.
 
 Typografie nemá exaktní pravidla, a v takové situaci mě pro potřeby předání základní úrovně typografických znalostí připadá lepší začít z druhého konce. 
 
@@ -19,7 +19,7 @@ Typografie nemá exaktní pravidla, a v takové situaci mě pro potřeby předá
 
 ![](dist/images/original/typografie-17.png)
 
-**2) Špatný kontrast a další technické parametry.** Novinky.cz jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastchecker.com](http://contrastchecker.com/).
+**2) Špatný kontrast a další technické parametry.** Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastchecker.com](http://contrastchecker.com/).
 
 ![](dist/images/original/typografie-18.png)
 
@@ -57,7 +57,7 @@ body { line-height: 1.5 }
 p    { margin-bottom: 1.5em }
 ```
 
-Toto nastavení předpokládá vysázení patkovým písmem a do jednoho sloupce. Drobně se samozřejme může měnit podle parametrů písma. Jinak to bude pro nepatkové písmo, pro jiný kontrast, pro specifický charakter písma nebo počet sloupců. Nejlépe nám správnou volbu potvrdí poctivé uživatelské testování, ale pro začátek stačí nastavení písem poctivě testovat na různých zařízeních a různých lidech ve vašem okolí.
+Toto nastavení předpokládá vysázení patkovým písmem a do jednoho sloupce. Drobně se samozřejme může měnit podle parametrů písma. Jinak to bude pro nepatkové písmo, pro jiný kontrast, pro specifický charakter písma nebo počet sloupců. Nejlépe nám správnou volbu potvrdí poctivé uživatelské testování, ale pro začátek stačí nastavení písem testovat na různých zařízeních a různých lidech ve vašem okolí.
 
 Příliš malý řádkový proklad spojuje sousedící znaky, zhoršuje čitelnost slov a ve výsledku zpomaluje čtení. Příliš velký zase vypadá jako seznam samostatných položek a nutí uživatele přemýšlet nad významem čteného obsahu.
 
@@ -77,6 +77,6 @@ Dana Srb se hezky rozpovídal na jedné z akcí Frontendisti.cz. Velmi praktick�
 Bible od Roberta Bringhursta a spoluautorů. [webtypography.net](http://webtypography.net/toc/)
 
 <div class="ebook-only" markdown="1">
-Jasně, vnímáte mě dobře. Typografii mám za nejzákladnější stavební kámen návrhu skoro každého webu. Než se dostaneme k dalším zdrojům ke studiu, pojďme si ještě zmínit dva typografické principy relativně rozšířené mezi designéry, které na webu nepoužívám skoro vůbec. Mřížku účaří a modulární stupnici velikostí.
+Jasně, vnímáte mě dobře. Typografii mám za nejzákladnější stavební kámen návrhu vizuálu skoro každého webu. Než se dostaneme k dalším zdrojům ke studiu, pojďme si ještě zmínit jeden relativně rozšířený typografický princip, který v příkladu dodržovat nebudeme. Na mřížku účaří.
 </div>
 

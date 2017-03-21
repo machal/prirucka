@@ -48,11 +48,11 @@ Přidáno do našeho projektu to vypadá jako v následujícím CodePenu. [cdpn.
 
 Vybrali jsme poměrně výrazný barevný i typografický styl. Navíc si pro náš příklad můžeme dovolit předpoklad, že dokážeme zajistit kvalitní obrazový obsah. E-shop je navíc z principu užitková aplikace. Ikony, tlačítka a další doplňkové grafické elementy by proto neměly poutat příliš pozornosti. Měly by doladit atmosféru a moc nekřičet.
 
-Pro vyhledání grafického stylu použijeme Iconfinder. Hledáme minimalistický styl, dvoubarevné ikonky s obrysem. Nacházíme sady Maxe Gribojedova. [iconfinder.com/enotmaks](https://www.iconfinder.com/enotmaks)
+Pro vyhledání grafického stylu jsem využil Iconfinder. Hledal jsem minimalistický styl, dvoubarevné ikonky s obrysem. A našel sady Maxe Gribojedova. [iconfinder.com/enotmaks](https://www.iconfinder.com/enotmaks)
 
-Některé z nich pro naše potřeby tedy zakoupíme a barevně upravíme.
+Některé z nich jsem tedy pro naše potřeby zakoupil a barevně upravil.
 
 ![Ikony pro příklad](dist/images/original/vdwd/priklad-ikony.jpg)
 
-*Obrázek: Upravené ikony Maxe Gribojedova, které využijeme pro komunikaci benefitů e-shopu, ale i další účely.*
+*Obrázek: Upravené ikony Maxe Gribojedova, které využijeme pro komunikaci benefitů e-shopu.*
 
