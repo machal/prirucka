@@ -2,58 +2,53 @@
 
 Podívejte se, jsem webař, aplikace nedělám. Už si o nich ale se mnou chtělo povídat tolik lidí, že se o ně zajímám alespoň ze strategického pohledu. Pokud vám tedy stačí stručný úvod do tématu, čtěte.
 
-Myslím si, že nějaký web potřebujete vždycky. Nativní aplikace může být skvělý doplněk a ve speciálních případech přímo nezbytnost. A také myslím, že rozhodování není tak polarizované: existuje velká škála možností mezi webem a aplikací. Slovo „versus“ v názvu textu možná dokonce není na místě, weby a aplikace se totiž skvěle doplňují.
+Rovnou říkám, že rozhodování není tak polarizované: existuje velká škála možností mezi webem a aplikací. Slovo „versus“ v názvu textu možná dokonce není na místě, weby a aplikace se totiž mohou skvěle doplňovat.
+
 
 ## Weby versus nativní aplikace
 
 Hned první problém je v definici. Jednoduše se nám budou definovat jen dva extrémní póly:
 
-Za *web* považuji software vytvořený technologiemi standardizovanými webovým konsorciem W3.org a přidruženými organizacemi. Jde hlavně o HTML, CSS, Javascript a různá API pro komunikaci aplikace se systémem a zařízením. Každá stránka webu, každý jeho stav má adresu zvanou URL, dnes nejčastěji na protokolu `http:` nebo `https:`.
+Za *web* považuji software vytvořený technologiemi standardizovanými webovým konsorciem W3.org a přidruženými organizacemi. Jde hlavně o HTML, CSS, Javascript a různá API pro komunikaci aplikace se systémem a zařízením. Každá stránka webu nebo jeho významný stav má adresu zvanou URL, dnes nejčastěji na protokolu `http:` nebo `https:`.
 
 Za *nativní aplikaci* považuji software vytvořený v programovacím jazyce pro konkrétní operační systém. Například pro iOS, operační systém mobilních zařízení od Apple, napíšete nativní aplikaci v jazycích Objective-C nebo Swift.
 
-Tohle bylo jednoduché. Horší to je, když použijeme slovo „aplikace“ bez přívlastku „webová“. Je to *nativní* aplikace? *Webová* aplikace? Myslím tím *aplikaci* z pohledu uživatelských interakcí jako protiklad statických dokumentů? Vydržte, pokusím se to vše vyjasnit.
+Tohle bylo jednoduché. Co když ale použijeme slovo „aplikace“ bez přívlastku?
 
 
 ## Rozdíly z pohledu uživatele: interakčně jednoduché weby a složité aplikace
 
 Když v souboji „weby versus aplikace“ oba hráče definujeme pohledem uživatele, musíme se zaměřit hlavně na složitost rozhraní a množství interakcí.
 
-### Weby jsou interakčně jednoduché 
+### Weby jsou většinou interakčně jednoduché 
 
 Prostě obyčejné dokumenty jako je blog Vzhůru dolů, deník Aktuálně.cz nebo prezentační stránky vaší firmy. 
 
 ### Aplikace jsou interakční složité
 
-Vezměme třeba podávání daňového přiznání přes tu (*šílenou*) aplikaci na webu Finanční správy nebo přípravu faktury v aplikaci Fakturoid. A víte vy co? Úplně nejlépe si představte extrémy: hru Pokémon Go nebo třeba Instagram. To jsou aplikace jako vyšité. 
+Úplně nejlépe si představte extrémy: hru Pokémon Go nebo třeba Instagram. To jsou aplikace jako vyšité. Hry jsou vůbec dobrý příklad. I když nemají složité rozhraní, uživatel v nich dělá velké množství netriviálních akcí. Nebo využívají prostředky zařízení tak, že by to weby zvládly jen s obtížemi. Například úprava fotky a přidání filtrů v Instagramu.
 
-Hry jsou vůbec dobrý příklad. I když nemají složité rozhraní, uživatel v nich dělá velké množství netriviálních akcí. Nebo využívají prostředky zařízení tak, že by to weby zvládly jen s obtížemi. Například úprava fotky a přidání filtrů na ni v Instagramu.
-
-V moderním webdesignu ale platí, že skoro každý statický web obsahuje nějaké aplikační prvky.
-
-Když čtete blog Vzhůru dolů, časem se doklikáte k aplikaci pro přípravu kontrolního seznamu před spuštěním webu. A ze statického webu jste se dostali do aplikace. [vrdl.cz/checklist](http://www.vrdl.cz/checklist)
-
-Typickým hybridem mezi prezentací a aplikací jsou e-shopy. Úvodní stránka a všechny produktové stránky tvoří prezentační, statický web. Košík a nákupní proces jsou zase už typická aplikace. 
+Z pohledu interakční složitosti pak aplikaci představují i konkrétní části webů: košík v e-shopu nebo každý složitější formulář.
 
 
 ## Ve vyhledávačích bojují hlavně weby
 
-Zajímavé na tomto dělení na weby a aplikace z pohledu interakční složitosti také je, že obsah webů chcete typicky dobře indexovat roboty vyhledávačů, takže důležité části generujete už na serveru. 
+Zajímavé na tomto dělení na weby a aplikace z pohledu interakční složitosti také je, že obsah webů chcete typicky dobře indexovat vyhledávači. Proto důležité části generujete už na serveru, aby byly robotům lépe přístupné.
 
-U aplikací to až tak neplatí. V případě aplikace pro kontrolní seznam na Vzhůru dolů chci ve vyhledávačích dobře umísťovat pouze stránku, která aplikaci propaguje. To je ale konvenční statická stránka. Nepotřebuji, a obvykle ani nechci, vyhledávači indexovat samotnou aplikaci.
+U aplikací to až tak neplatí. Košík v e-shopu ve vyhledávačích indexovat nepotřebuji a vlastně ani nechci.
 
 Proto se v poslední době aplikace dělají stále více frontendovými technologiemi, které běží přímo v prohlížeči. Příkladem mohou být javascriptové frameworky Angular nebo React. Weby jsou naproti tomu programovány „postaru“ v jazycích běžících na serveru jako jsou PHP, .NET a další jazyky. Javascriptové frameworky v prohlížečích to pak jen doplňují. 
 
 Teď už nebudeme obecní, přejdeme do světa *mobilních* aplikací a responzivních webů. 
 
 
-## Mobilní aplikace a problém „Proč dělat web? Stačí nám aplikace!“
+## Jen nativní aplikace vám nestačí
 
-Občas je totiž stále slyšet, že „když máme aplikaci, nepotřebujeme web“. Ze všech možných příkladů vyberu web restaurace v sousední vesnici. Slyšte příběh o tom, jak jsem se v El Asador nenajedl, i když jsem chtěl. On vlastně asi stačí obrázek:
+Občas je totiž stále slyšet, že „když máme aplikaci, nepotřebujeme web“. To ale není pravda. Ze všech možných příkladů vyberu web restaurace v sousední vesnici. Slyšte příběh o tom, jak jsem se v El Asador nenajedl, i když jsem chtěl. On vlastně asi stačí obrázek:
 
 ![Web restaruace El Asador](dist/images/original/vdwd/el-asador.png)
 
-*Obrázek: Web restaurace El Asador na desktopu a mobilech. Příklad za všechny weby, které na mobilech nezdravě upřednostňují aplikaci namísto webu.*
+*Obrázek: Web restaurace El Asador na desktopu a mobilech. Příklad za všechny weby, které na mobilech nezdravě upřednostňují reklamu na aplikaci namísto informací samotných.*
 
 Ano, přes mobil jsem se chtěl podívat na menu a případně zarezervovat stůl. Provozovatelé webu po mě ale chtějí, abych:
 
@@ -66,9 +61,7 @@ Ano, přes mobil jsem se chtěl podívat na menu a případně zarezervovat stů
 
 Víte, co jsem udělal? Šli jsme se ženou do Lokálu U Zavadilů. Jako vždy.
 
-Na jedné ze svých bolestných zkušeností jsem načrtl, co se hlavou honí uživatelům, když jim nutíte stažení aplikace namísto webu upraveného pro mobily. 
-
-Navíc,  jak vychází z průzkumů, uživatelé zase tak moc nativních aplikací na mobilech nevyužívají. 
+Je tu ještě jedna věc. Z průzkumů vychází, uživatelé zase tak moc nativních aplikací na mobilech nevyužívají a snížila se jejich ochota instalovat si aplikace nové.
 
 ![Uživatelé tráví 88 % svého času jen v pěti aplikacích](dist/images/original/vdwd/forrester-cas.png)
 
@@ -80,11 +73,18 @@ Do aplikace lidi tak snadno nedostanete. Na web je to jednoduché, chodí vám t
 
 Proto říkám: Web potřebují všichni, nativní aplikaci dokáží prosadit jen někteří.
 
-Pojďme se ale zamyslet nad situací, že neděláte statický web restaurace, protože tam je to jasné. Přemýšlejme nad situací, že váš software splňuje uživatelskou definici aplikace. 
+Pojďme se ale zamyslet nad situací, že neděláte statický web restaurace, protože tam je to jasné. Přemýšlejme nad situací, že váš software splňuje uživatelskou definici aplikace: je interakčně složitý. 
 
 To teď máte draze vyrobit nativní aplikaci a ještě se smířit s tím, že ji uživatelé nebudou používat? Nemusí to být tak hrozné, protože zde máme kompromisní přístupy.
 
 ## Nativní, hybridní, progresivní a univerzální aplikace
+
+Nejprve stručně:
+
+- *Nativní* aplikace je psaná na míru konkrétnímu operačnímu systému.
+- *Hybridní* aplikace je kombinací nativního přístupu s univerzálním webem.
+- *Progresivní* webová aplikace je web, který umí některé vlastnosti nativních aplikací.
+- *Univerzální* aplikace je obecný pojem pro přístup návrhu a vývoje tak, aby se dělal jen jednou a obsloužil všechna zařízení.
 
 ### Nativní aplikace
 
@@ -92,15 +92,17 @@ Jak už jsem psal, nativní aplikaci si tady definujeme jako software běžící
 
 Tento přístup se obecně vyplatí velkým hráčům: v Česku to jsou banky, mediální domy, operátoři a podobně. Nutné to je ve specifických oborech jako jsou mobilní hry, přehrávání videa a tak dále. Tam nevadí, že je vývoj v různých jazycích pro různé platformy drahý. Využijí výhody tohoto přístupu ve formě snadnějšího zabezpečení, vyladění výkonu nebo využití nativních funkcí platformy. Některé aplikace navíc z principu není možné udělat jinak než nativním přístupem: například speciální klávesnice nebo widgety.
 
+Je sice možné nechat si nativní aplikaci prohledávat Googlem (App Indexing), ale obecně se pro prezentaci statických informací hodí méně než weby.
+
 ### Nativní aplikace vytvářené pomocí překladačů
 
-Psaní různých aplikací pro různé platformy se dnes ale neděje tak často. Jak už jsem uváděl, je to velmi drahé. Pro obyčejné aplikace je lepší využít některý z překladačů, které mají společný technologický základ, ze kterého se pak generují jednotlivé aplikace pro jednotlivé platformy. Příkladem můžou být třeba nástroje rodiny Xamarin. [xamarin.com](https://www.xamarin.com/)
+Psaní různých aplikací pro různé platformy se dnes ale neděje tak často. Jak už jsem uváděl, je to velmi drahé. Pro obyčejné aplikace je lepší využít některý z překladačů. Každý z nich má jednotný technologický základ, ze kterého se pak generují aplikace pro jednotlivé platformy. Příkladem může být třeba rodina nástrojů Xamarin. [xamarin.com](https://www.xamarin.com/)
 
 ### Hybridní aplikace
 
-Představuje zajímavý sjednocující přístup mezi webem a nativní aplikací. Prostředky pro výrobu nativní aplikace vytvoříte jen „obal“, kontejner s hlavními ovládacími prkvy. Do něj vložíte prohlížečovou komponentu, které se říkává WebView. V ní pak běží webová aplikace, kterou vytvoříte v našich dobře známých jazycích HTML, CSS a Javascriptu. Výhoda možnosti instalace ikonky na plochu, známá od nativních aplikací, zůstává.
+Představuje zajímavý sjednocující přístup mezi webem a nativní aplikací. Prostředky pro výrobu nativní aplikace vytvoříte jen „obal“, kontejner s hlavními ovládacími prvky. Do něj vložíte prohlížečovou komponentu, které se říkává WebView. V ní pak běží webová aplikace, kterou vytvoříte v našich dobře známých jazycích HTML, CSS a Javascriptu. Výhoda možnosti instalace ikonky na plochu, známá od nativních aplikací, zůstává.
 
-Hybridní je část snad každé větší aplikace. V ČR jmenujme ke dni psaní textu třeba aplikaci Invia.cz (technicky Cordova&React) nebo apky Bubbleology (Ionic) či FlowReader.
+Hybridní je část snad každé větší aplikace. V ČR jmenujme ke dni psaní textu třeba aplikaci Invia.cz (technicky řešenou pomocí dua technologií Cordova a React).
 
 Více informací o hybridním přístupu hledejte třeba na blogu firmy Pixelfield, „Hybridní mobilní aplikace: kdy ano a kdy ne?“ [vrdl.in/e7j8h](https://pixelfield.cz/blog/hybridni-mobilni-aplikace-kdy-ano-a-kdy-ne/)
 
@@ -112,7 +114,7 @@ Prostě napíšete webovou aplikaci, která se otevírá v prohlížeči, ale za
 
 * načte se rychle a pracuje offline
 * sama se nainstaluje na plochu uživatele
-* posílá mu notifikace 
+* má možnost posílat mu notifikace 
 
 Moc se mě to líbí, protože to dělá příjemný kompromis mezi webem a nativní aplikací a pro minimálně dvě platformy je půjde vyvíjet stejně univerzálně běžnou webovou stránku. A slovo „progresivní“ definuje chování na nepodporovaných platformách: prostě tam uvidíte běžnou webovou aplikaci.
 
@@ -122,11 +124,14 @@ Detaily o progresivních webových aplikacích hledejte u Jasona Grigsbyho v tex
 
 ### Univerzální aplikace
 
-Z pohledu šetření času také velmi atraktivní varianta. S pomocí například React Native můžete stavět nativní aplikace. Ty ale píšete ve stejném jazyce a podobném frameworku jakým můžete vytvořit i webovou aplikaci. [facebook.github.io/react-native/](https://facebook.github.io/react-native/)
+Z pohledu šetření času také velmi atraktivní varianta. Na různých platformách znamenají různé věci. Jde ale o jediné: na všech zařízeních a platformách tvořit rozhraní z jednoho místa. Netrávit tedy čas designérů a vývojářů vývojem pro konkrétní zařízení nebo platformy.
 
-Uživatelé Windows si pod pojmem „univerzální aplikace“ představí spíše aplikace pro Universal Windows Platform. V tomto kontextu jde o apky stavěné tak, aby zároveň běžely na počítačových i mobilních zařízeních.
+Například s pomocí React Native můžete stavět nativní aplikace. Ty ale píšete ve stejném jazyce a podobném frameworku jakým můžete vytvořit i webovou aplikaci. [facebook.github.io/react-native/](https://facebook.github.io/react-native/)
+
+Uživatelé Windows si pod pojmem „univerzální aplikace“ představí spíše aplikace pro Universal Windows Platform. V tomto kontextu jde o apky stavěné tak, aby zároveň běžely na počítačových i mobilních zařízeních. [vrdl.in/s9ywc](https://wmmania.cz/clanek/univerzalni-aplikace-pro-windows/)
 
 Univerzální aplikací bychom mohli ukončit slovník dnešních typů aplikací. Pojďme si ještě porovnat weby a aplikace. Pro jaký účel se hodí? 
+
 
 ## Weby versus aplikace: „záběr“ versus „zápřah“
 
@@ -144,7 +149,12 @@ V angličtině to stručně a pěkně popsal Luke Wroblewski:
 
 > The Web is for audience reach and native apps are for rich experiences. Both are strategic. Both are valuable. [vrdl.in/wsfe8](http://www.lukew.com/ff/entry.asp?1954)
 
-Takže usmíření na závěr. Web potřebujete skoro vždy, aplikaci někdy. Někdy aplikací uděláte věci co s webem nedokážete. V aplikaci můžete uživatele více zapřáhnout. A existuje spoustu variant jak udělat aplikaci a netrápit se extra kódem pro různé platformy.
+Takže usmíření na závěr: 
+
+- Web potřebujete skoro vždy, aplikaci občas. 
+- Někdy aplikací uděláte věci co s webem nedokážete, vzpomeňte na hry nebo Instagram. 
+- V aplikaci můžete uživatele více zapřáhnout. 
+- Existuje spoustu variant jak udělat aplikaci a netrápit se extra kódem pro různé platformy.
 
 <p class="ebook-only">
    Tím bychom mohli mít tuto odbočku k aplikacím uzavřenou. V knize se budeme věnovat hlavně responzivním webům, ale pojďme si nejdřív také něco říci o webech mobilních a adaptivních. Ani tady přece zmatení pojmů nedopustíme.
