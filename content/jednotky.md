@@ -2,22 +2,9 @@
 
 Pojďme si teď shrnout všechny CSS jednotky použitelné v dnešním webdesignu. A zjistit, jak konkrétně nám mohou pomoci. 
 
-Za základní jednotku můžeme považovat čtverčík – `em`. Dnešní weby totiž mají puzení se roztahovat do dvou směrů: 
+Za základní jednotku můžeme považovat čtverčík, `em`, který se svou pružnou povahou dobře hodí do světa responzivních rozhraní.
 
-- do šířky: pružný responzivní layout, o kterém [píšu později](responzivni-layout.md);
-- na výšku: proměnlivá základní velikost písma, o které [něco povím už za chvíli](rem-em-zoom.md).
-
-Čterčík je pružný ve všech směrech a nahrazuje fixní pixely (`px`), používané dříve takřka na vše.
-
-Ani čtverčík ale není žádný Superman mezi CSS jednotkami. Nehodí se na vše a tak pro různé účely ještě občas budeme potřebovat i Spidermana, Batmana a další jejich kolegy a kolegyně. 
-
-* Rozměry v dokumentu: nejvíc se hodí `rem`, občas jednotky viewportu
-* Rozměr v komponentách: `em`, občas jednotky viewportu
-* Media Queries: `em` 
-* Dekorace (kulaté rohy, rámečky…):  všechny jednotky, nejčastěji `px`
-* Vodorovné rozvržení: `%` a jednotky viewportu
-
-Proberme si teď všechny pěkně popořadě.
+Ani čtverčík ale není žádný Superman mezi CSS jednotkami. Nehodí se na vše a tak pro různé účely ještě občas budeme potřebovat i Spidermana, Batmana a další jejich kolegy a kolegyně. Proberme si teď všechny pěkně popořadě.
 
 
 ## Čtverčík: `em`
@@ -30,12 +17,15 @@ Pojďme na příklad. Výchozí velikost téměř ve všech prohlížečích je 
 p { margin-bottom: 1em } /* = 16px */
 ```
 
-Jen pozor, pokud jednotku `em` uvedete u vlastnosti `font-size`, není pouhým odkazem na nastavenou velikost písma, ale sama velikost písma nastavuje. Dělá to vždy relativně k rodičovskému elementu.
-
-Jakmile tedy zkusíme u nastavení spodního okraje u nadpisu první úrovně, bude výsledek jiný:
+Pokud však jednotku `em` uvedete u vlastnosti `font-size`, sama velikost písma nastavuje. 
 
 ```css
-h1 { font-size: 2em } /* Výchozí CSS prohlížeče */
+h1 { font-size: 2em } /* = 32px */
+```
+
+Na prvku `h1` se teď změnila výchozí velikost písma. Jakmile tedy nastavíme spodní okraj u nadpisu první úrovně, bude výsledek jiný:
+
+```css
 h1 { margin-bottom: 1em } /* = 32px */
 ```
 
@@ -47,7 +37,7 @@ Jak sami vidíte, `1em` nedává vždy stejné výsledky. Proto se s čtverčík
 Neodkazuje se na velikost písma na nejbližším rodičovském elementu, ale v kořeni struktury dokumentu, na prvku `<html>`. Situace z příkladu výše tedy bude jiná:
 
 ```css
-h1 { font-size: 2em } /* Výchozí CSS prohlížeče */
+h1 { font-size: 2em } /* = 32px */
 h1 { margin-bottom: 1rem } /* = 16px */
 ```
 
@@ -81,6 +71,8 @@ V dnešním pružném webdesignu je už fixní jednotka jako pixel špatně pou�
 Jen pro jistotu připomínám, že už dávno nejde o hardwarový, ale takzvaný *CSS* pixel. Psal jsem o tom [v kapitole](prostredi-proc-responzivni-design.md) o prostředí responzivního designu.
 </div>
 
+TODO Proč nepoužít pixely jako univerzální jednotku? Pixely, `px`, používané dříve takřka na vše.
+
 ## Jednotky viewportu: `vw`, `vh` a další
 
 Umožňují definovat rozměry v CSS relativně k velikosti viewportu, zjednodušeně řečeno výšce nebo šířce okna. Na rozdíl od procent se tedy neodkazují na rodiče, ale na celé okno.
@@ -100,3 +92,20 @@ Nejčastěji používám pro roztažení plochy layoutu na celou výšku okna:
 To nejzajímavější ale teprve přijde. Na jednotkách viewportu můžete vystavět takzvanou [plně responzivní typografii](plne-responzivni-typografie.md), které se věnuji už v přespříští podkapitole. Nejprve ale si ale trochu *zazůmujeme*.
 </div>
 
+
+## Všechny jednotky v jednom příkladu
+
+TODO
+
+* Velikost písma: nejvíc se hodí `rem`, občas jednotky viewportu
+* Rozměry v komponentách: `em`, občas jednotky viewportu
+* Media Queries: `em` 
+* Dekorace (kulaté rohy, rámečky…):  všechny jednotky, nejčastěji `px`
+* Vodorovné rozvržení: `%` a jednotky viewportu
+
+TODO 
+
+http://codepen.io/machal/pen/dvdxWG
+- rem hlavní
+- pozor jeden ze způsobů jak to dělat
+- jiné pohledy
