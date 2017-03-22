@@ -12,7 +12,7 @@ h1 { font-size: 2em }
 }
 ```
 
-Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky 40 čtverčíků. Toto jednoduché použití dotazů na média si můžete vyzkoušet v živé ukázce. [cdpn.io/e/Bpajbz](http://cdpn.io/e/Bpajbz)
+Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky 40 `em`. Toto jednoduché použití dotazů na média si můžete vyzkoušet v živé ukázce. [cdpn.io/e/Bpajbz](http://cdpn.io/e/Bpajbz)
 
 <!-- AdSnippet -->
 
@@ -59,7 +59,7 @@ Spojovat Media Queries můžeme pomocí operátoru `and`:
   and (min-width: 30em) and (max-width: 40em) { … }
 ```
 
-Podmínka se aplikuje jen na všechna zobrazovací média, tedy ne v tiskové verzi. Navíc musejí mít šířku okna mezi třiceti a čtyřiceti čtverčíky.
+Podmínka se aplikuje jen na všechna zobrazovací média, tedy ne v tiskové verzi. Navíc musejí mít šířku okna mezi třiceti a čtyřiceti `em`.
 
 A co „nebo“? Místo `or`, možná očekávaného programátory, se používá čárka:
 
@@ -67,7 +67,7 @@ A co „nebo“? Místo `or`, možná očekávaného programátory, se použív�
 @media only screen and (max-width: 40em), print { … }
 ```
 
-Podle CSS specifikace jde o „seznam oddělený čárkou“, kde se jednotlivé položky seznamu vyhodnocují samostatně. Čárka („or“) má proto větší váhu než „and“. Výše uvedený dotaz se tak vyhodnotí jako pravdivý, když budeme na zobrazovacím mediu o šířce viewportu do 40 čtverčíků nebo když budeme stránku tisknout.
+Podle CSS specifikace jde o „seznam oddělený čárkou“, kde se jednotlivé položky seznamu vyhodnocují samostatně. Čárka („or“) má proto větší váhu než „and“. Výše uvedený dotaz se tak vyhodnotí jako pravdivý, když budeme na zobrazovacím mediu o šířce viewportu do `40em` nebo když budeme stránku tisknout.
 
 Dalším možným operátorem je negace:
 

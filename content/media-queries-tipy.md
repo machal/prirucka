@@ -27,15 +27,15 @@ Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigac
 
 Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy obsah prostě při tvorbě layoutu neznáme: například když pracujeme na frameworku nebo připravujeme šablonu pro obsah, který má v rukách až koncový uživatel našeho redakčního systému. Jako příklad můžu opět jmenovat Bootstrap, který má body zlomu nastavené pevně. Naštěstí jdou měnit a vždy můžete přidat nějaké vlastní. [getbootstrap.com/css/](http://getbootstrap.com/css/#grid-media-queries)
 
-## Správné je použít čtverčíky, ale lépe se pracuje s pixely
+## Správné je použít `em`, ale lépe mi se pracuje s pixely
 
-Často se vedou spory kolem použití jednotek v dotazech na media. Správná odpověď je: `em`, čtverčíky. 
+Často se vedou spory kolem použití jednotek v dotazech na media. Správná odpověď je: `em`. 
 
 Media Queries většinou nastavujeme kvůli optimální délce řádku písma. Pixely se velikosti písma nepřizpůsobují, proto v situacích jako je uživatelské zvětšení písma nemohou fungovat dobře. Detailní vysvětlení najdete v článku „PX, EM or REM Media Queries?“ [zellwk.com/blog/media-query-units/](https://zellwk.com/blog/media-query-units/)
 
-Při návrhu bodu zlomu se ovšem na web díváme přes okno prohlížeče. Jeho šířka k naší smůle ale nepracuje s čtverčíky, nýbrž s pixely. Proto obvykle nejdřív v hlavě musíme spustit kalkulačku přepočtů z pixelů do `em`. Alespoň v mém případě je ale spouštění kalkulačky náročné na výpočetní zdroje. 
+Při návrhu bodu zlomu se ovšem na web díváme přes okno prohlížeče. Jeho šířka k naší smůle ale nepracuje s `em`, nýbrž s `px`. Proto obvykle nejdřív v hlavě musíme spustit kalkulačku přepočtů z pixelů do `em`. Alespoň v mém případě je ale spouštění kalkulačky náročné na výpočetní zdroje. 
 
-Proto se i vám může hodit ve vývojářském kódu používat pixely a pro produkční kód si je nechat přepočíst do čtverčíků. Pokud využíváte Grunt, Gulp nebo podobný automatizační nástroj, je zde plugin „postcss-em-media-query". [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
+Proto se i vám může hodit ve vývojářském kódu používat pixely a pro produkční kód si je nechat přepočíst do `em`. Pokud využíváte Grunt, Gulp nebo podobný automatizační nástroj, je zde plugin „postcss-em-media-query". [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
 
 ## Zanořování Media Queries
 
@@ -101,7 +101,7 @@ Představme si, že bychom se mohli v CSS pát na velikost rodičovského elemen
 *:media(min-width: 20em) > .el { … }
 ```
 
-Kód by se pak aplikoval jen v rodičovských elementech, které mají šířku alespoň dvacet čtverčíků.
+Kód by se pak aplikoval jen v rodičovských elementech, které mají šířku alespoň `20em`.
 
 Specifikace pro Container Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi kolem nich. Pěkný je článek „Container Queries: Once More Unto the Breach“ na A List Apart. [http://vrdl.in/fivt0](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
 

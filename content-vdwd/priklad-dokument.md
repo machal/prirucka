@@ -74,7 +74,7 @@ Dále jsme si museli nastavit velikost nadpisů a písma, základní styl tabule
 @import 'helpers/helpers.css';
 ```
 
-Co ale ještě zmínit chci, je základní nastavení šířky dokumentu. Zabývám se tím v `document/document.css`. Vzpomenete si na optimální délku řádku textu [z kapitoly o typografii](typografie.md)? Ideál 66 znaků mám v našem základním písmu PT Sans napočítaný kolem 30 čtverčíků, takže použijeme následující deklaraci:
+Co ale ještě zmínit chci, je základní nastavení šířky dokumentu. Zabývám se tím v `document/document.css`. Vzpomenete si na optimální délku řádku textu [z kapitoly o typografii](typografie.md)? Ideál 66 znaků mám v našem základním písmu PT Sans napočítaný kolem `30em`, takže použijeme následující deklaraci:
 
 ```css
 .container {

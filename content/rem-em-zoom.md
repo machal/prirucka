@@ -4,7 +4,7 @@ Jednotky `em` a `rem` jsou dokonale pružné a tak je možné s jejich pomocí z
 
 ## Zvětšování nebo zmenšování celé stránky
 
-Sazbu dokumentu a odkazování na ni je vhodné dělat pomocí jednotky `rem` (kořenový čtverčík). 
+Sazbu dokumentu a odkazování na ni je vhodné dělat pomocí jednotky `rem` (kořenový `em`). 
 
 Důležité je sázet pravidla pro základní typografii dokumentu a layout stránky důsledně v `rem` (nebo výjimečně `em`) jednotkách:
 
@@ -59,7 +59,7 @@ V ukázce na CodePenu mám sice nereálnou, ale o to lépe vše demonstrující 
 }
 ```
 
-Na jejím místě si můžete představit jen o něco složitější tlačítka, ikony, propracovanější navigaci, fotogalerii a tak dále. Pokud chcete snadno vytvářet velikostní varianty komponent, musíte dodržet jediné: všechny rozměry na svislé ose mít ve čverčících (`em`). Jednotky na vodorovné ose určují layout se různí podle situace, ale obvykle jsou to buď procenta nebo opět čtverčíky.
+Na jejím místě si můžete představit jen o něco složitější tlačítka, ikony, propracovanější navigaci, fotogalerii a tak dále. Pokud chcete snadno vytvářet velikostní varianty komponent, musíte dodržet jediné: všechny rozměry na svislé ose mít ve čverčících (`em`). Jednotky na vodorovné ose určují layout se různí podle situace, ale obvykle jsou to buď procenta nebo opět `em`.
 
 Teď si stačí nadefinovat obecné pomocné třídy pro zvětšování a změnšování:
 
