@@ -20,6 +20,115 @@ Za základní jednotku pro svůj způsob práce považuji `rem`. Ani ten ale nen
 Existují samozřejmě ještě další jednotky: namátkou `pt`, `ex` nebo `vmax`. Buď je ale využívám málo nebo vůbec, takže je pro zjednodušení úplně vynechám.  Dobrý přehled v češtině ale je na Jak psát web. [vrdl.in/btoxk](https://www.jakpsatweb.cz/css/css-jednotky.html)
 
 
+## Všechny jednotky v jednom příkladu
+
+Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější nastavení velikostí v CSS. Projdeme si to všechno v textu, ale tady je online, pokud byste to nemohli vydržet: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG)
+
+### Výchozí velikost písma v dokumentu: `%`
+
+Jak už jsem psal, je to vždycky 16 pixelů. Pokud vám nevyhovuje, měňte to  pružnými jednotkami, například procenty:
+
+```
+html {
+  font-size: 125%; /* 18px */
+}
+```
+
+Pokud byste už tady použili `px`, uživatelům byste znemožnili zvětšovat si výchozí písmo v prohlížečích. Dělají to lidé s horším zrakem nebo méně kvalitními displeji. Moc jich není, ale je škoda jim házet klacky pod nohy. Například v Chrome je to volba „Velikost písma“ v rozšířeném Nastavení. [vrdl.in/uzx6o](https://support.google.com/chrome/answer/96810?hl=cs)
+
+### Rozměry vycházející z písma: `rem`
+
+`font-size`, `margin`, `padding`, ale i další vlastnosti v dokumentu i komponentách prostě nastavuji v `rem`.
+
+```
+p { margin-bottom: 1rem; }
+h1 { font-size: 2rem; }
+```
+
+Je to výhodné i z pohledu vývojáře. V `1rem` máte uloženou základní velikost písma a nemusíte si pamatovat, jestli je to  12, 14, 16 nebo kolik vlastně pixelů. 
+
+### Rozměry pružných komponent: `em`
+
+`rem` je tedy pro mě výchozí jednotka. Občas ale využiji `em`, které se odkazuje na velikost písma, nikoliv v dokumentu, ale na daném elementu.
+
+```css
+.button {
+  font-size: .75em;
+  padding: 1em;
+}
+```
+
+Na některých projektech mám pak třídy, které umí pak umí zvětšovat či zmenšovat takto pružně definované komponenty:
+
+```css
+.size-sm { font-size: .75em }
+.size-lg { font-size: 1.25em }
+```
+
+Takto zapsané tlačítko pak bude o čtvrtinu větší než je jeho výchozí stav:
+
+```html
+<button class="button size-lg">
+  Tlačítko
+</button>
+```
+
+Naživo to je hezky vidět v příkladu: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG).
+
+
+### Media Queries: `em`
+
+V textu [o Media Queries](media-queries-tipy.md) píšu, proč nepoužít pixely (opět kvůli zvětšování písma) a `rem` (kvůli chybě v Safari). Proto nám zbývají staré dobré `em`:
+
+```css
+@media screen and (min-width: 30em) {
+  …
+}
+```
+
+Pokud se i vám v dotazech lépe pracuje s pixely, je zde plugin „postcss-em-media-query". [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
+
+### Výška řádku: číslem bez jednotky
+
+Hodnota bez jednotky je pro výšku řádku unikum:
+
+```
+h1 {
+  line-height: 1.5;
+}
+```
+
+Proč je to lepší než nastavení „natvrdo“ v `rem`, `em` nebo `px`? Pokud autorsky (například pro určité velikosti oken prohlížeče) změníte velikost písma, nemusíte zároveň přenastavovat výšku řádku.
+
+### Layout: `%` atd.
+
+Pro layout se dobře hodí procenta. Raději připomínám, že se vždy počítají ze šířky rodiče:
+
+```css
+.layout-col {
+    width: 50%;
+}
+```
+
+Použitelných jednotek pro layout je ale více. Procenta nebo `vw` se roztahují podle šířky okna. `rem` a `em` podle velikosti písma. Občas se hodí pixely. A ve flexboxu je možné používat i absolutní jednotky. [vrdl.in/bm26n](http://www.vzhurudolu.cz/prirucka/css3-flexbox-polozky#flex) 
+
+
+### Typografie podle velikosti okna: `vw`
+
+Můžeme potřebovat i zvětšování a změnšování velikosti písma podle šířky nebo výšky okna. Pak si vzpomeňte na jednotky `vw` (viewport width) nebo `vh` (viewport  height).
+
+Například tento nadpis z příkladu bude mít velikost písma `2rem` a k tomu vždy dvě procenta ze šířky okna:
+
+```css
+.heading {
+  font-size: calc(2rem + 2vw);
+}
+```
+
+Těmito triky se pak zabývám ještě v textu o [plně responzivní typografii](plne-responzivni-typografie.md). Pokud vidíte funkci `calc()` prvně, následujte odkaz. [vrdl.cz/prirucka/css3-calc](http://www.vzhurudolu.cz/prirucka/css3-calc)
+
+Na závěr ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG).
+
 
 ## `rem` (root `em`)
 
@@ -123,69 +232,6 @@ To nejzajímavější ale teprve přijde. Na jednotkách viewportu můžete vyst
 </div>
 
 
-## Všechny jednotky v jednom příkladu
-
-TODO
-
-http://codepen.io/machal/pen/dvdxWG
-
-### Výchozí velikost písma v dokumentu: `%`
-
-Jak už jsem psal, je to vždycky 16 pixelů. Pokud vám to nevyhovuje, měňte to vždy procenty:
-
-```
-html {
-  font-size: 125%; /* 18px */
-}
-```
-
-Pokud byste už tady použili `px`, uživatelům s horším zrakem byste znemožnili zvětšovat si výchozí písmo v prohlížečích.
-
-### Rozměry vycházející z písma: `rem`
-
-`font-size`
-
-```
-p { margin-bottom: 1rem; }
-h1 { font-size: 2rem; }
-```
-
-### Výška řádku: číslem bez jednotky
-
-```
-h1 {
-  line-height: 1.5;
-}
-
-
-### Rozměry pružných komponent: 
-
-.button {
-  background: #ccc;
-  padding: 1em;
-  display: inline-block;
-}
-
-.size-sm { font-size: .75em }
-.size-lg { font-size: 1.25em }
-
-### Typografie podle velikosti okna: `vw`
-
-.heading {
-  font-size: calc(2rem + 2vw);
-}
-
-### Media Queries: `em`
-
-@media screen and (min-width: 30em) {
-  …
-}
-
-### Layout: `%` atd.
-
-.layout-col {
-    width: 50%;
-}
 
 + flex
 
@@ -206,3 +252,5 @@ http://codepen.io/machal/pen/dvdxWG
 - jiné pohledy
 - neopakovat se
 - obrázek
+- do příkladu nezoomovatelnou komponentu
+- TODO workflow bez pružné typografie

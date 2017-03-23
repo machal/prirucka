@@ -31,7 +31,7 @@ Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy o
 
 Často se vedou spory kolem použití jednotek v dotazech na media. Správná odpověď je: `em`. 
 
-Media Queries většinou nastavujeme kvůli optimální délce řádku písma. Pixely se velikosti písma nepřizpůsobují, proto v situacích jako je uživatelské zvětšení písma nemohou fungovat dobře. Detailní vysvětlení najdete v článku „PX, EM or REM Media Queries?“ [zellwk.com/blog/media-query-units/](https://zellwk.com/blog/media-query-units/)
+Media Queries většinou nastavujeme kvůli optimální délce řádku písma. Pixely se velikosti písma nepřizpůsobují, proto v situacích jako je uživatelské zvětšení písma nemohou fungovat dobře. A `rem`? S těmi nepracuje korektně Safari, když změníte velikost písma autorsky. Detailní vysvětlení najdete v článku „PX, EM or REM Media Queries?“ [zellwk.com/blog/media-query-units/](https://zellwk.com/blog/media-query-units/)
 
 Při návrhu bodu zlomu se ovšem na web díváme přes okno prohlížeče. Jeho šířka k naší smůle ale nepracuje s `em`, nýbrž s `px`. Proto obvykle nejdřív v hlavě musíme spustit kalkulačku přepočtů z pixelů do `em`. Alespoň v mém případě je ale spouštění kalkulačky náročné na výpočetní zdroje. 
 
