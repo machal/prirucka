@@ -106,7 +106,7 @@ Okna s poměrem stran 16:9 například zacílíme takto:
 
 Existují samozřejmě i varianty pro rozmezí hodnot:  `min-aspect-ratio` a `max-aspect-ratio`.
 
-### Detekce vysokokapacitních displejů 
+### Detekce „Retina“ displejů 
 
 Moderní displeje s vyšším hustotou hardwarových pixelů, tedy displeje typu Retina a další, můžeme detekovat takto:
 
