@@ -4,7 +4,7 @@
 
 Dokument je základ všeho, co na webu stavíte. Ať už to berete technicky nebo designérsky.
 
-Blogy se vizuálně od dokumentů moc nevzdalují, e-shopy už trochu více. Čistokrevné aplikace jako třeba redakční systémy, kalkulačky nebo dashboardy už docela hodně. To už víte, protože jsme se tím zabývali [v kapitole o webech a aplikacích](weby-vs-aplikace.md).
+Blogy se vizuálně od dokumentů moc nevzdalují, e-shopy už trochu více. Čistokrevné aplikace jako třeba redakční systémy, kalkulačky nebo dashboardy už docela hodně. 
 
 Nic to ale nemění na tom, že někde dole, i pod napohled složitým rozhraním nebo komplexní javascriptovou aplikací žije strukturovaný dokument se styly, ať už v podobě vygenerované na serveru nebo až v prohlížeči. 
 

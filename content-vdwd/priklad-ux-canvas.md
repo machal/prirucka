@@ -2,7 +2,7 @@
 
 Jaký zvolit příklad pro knihu? Nebudete mi věřit, ale tohle byla jedna z těžší částí práce na ní.
 
-Neměl by to být jednoduchý prezentační web, ale zase ne všichni dělají komplexní webové aplikace. [Jak už jsem psal](weby-vs-aplikace.md), někde mezi statickým webem a aplikací jsou e-shopy, prezentační weby s výraznými aplikačními prvky v podobě objednávkového procesu. OK, tohle byla ta jednodušší fáze výběru.
+Neměl by to být jednoduchý prezentační web, ale zase ne všichni dělají komplexní webové aplikace. Někde mezi statickým webem a aplikací leží e-shopy, prezentační weby s výraznými aplikačními prvky v podobě objednávkového procesu. OK, tohle byla ta jednodušší fáze výběru.
 
 Jaký e-shop to ale, do prkýnka, bude? V zemi, kde jich je pomalu více než nakupujících? V zemi, kde v každém oboru narazíte na stovky konkurečních obchodů provozovaných z garáže začínajících e-shopařů nebo obýváků maminkatelek? V zemi, kde dříve nebo později ve vašem segmentu přistane zelený mimozemšťan Alza a s gustem vetřelce vyžere díru do koláče tržního podílu? 
 
