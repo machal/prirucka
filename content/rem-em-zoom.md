@@ -42,7 +42,7 @@ Je to například skvělá možnost jak zvětšit (zoomovat) celou stránku a zl
 Statistiky ukazují, že skupina uživatelů opravdu velkých rozlišení jako 1920 pixelů a výše je dnes téměř stejně početná jako skupina uživatelů mobilních zařízení. A právě na velkých monitorech uživatelé ocení větší základní velikost písma. Oči totiž do monitoru třeštíme dál než do mobilu, tabletu a notebooku.
 
 <div class="ebook-only" markdown="1">
-Vzpomeňte na kapitolu [o prostředí](prostredi-proc-responzivni-design.md) responzivního designu, kde jsme se tím zabývali.
+Vzpomeňte si na část první kapitoly [o velkých displejích](zmeny-velke-displeje.md), kde jsme se tím zabývali.
 </div>
 
 Podobně můžeme zvětšovat či zmenšovat písmo (a pak celý layout) na displejích menších nebo prostě na konkrétních breakpointech. Každý webový projekt má jinak nastavenou základní typografii, jinak postavený layout, takže k tomu moc obecných rad nemám. Ale když budete usilovně zmenšovat a zvětšovat okno a sledovat přitom čitelnost textu, přijdete na to i vy, méně zkušení. 

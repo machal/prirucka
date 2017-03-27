@@ -1,6 +1,6 @@
 # Testování responzivních webů
 
-Vraťme se teď společně na začátek, do kapitoly o [prostředí dnešních webů](prostredi-proc-responzivni-design.md). Při tvorbě responzivních webů díky ní počítáme s mobily, tablety a počítači. Počítáme s hybridními laptopy nebo třeba profesionální tablety jako je iPad Pro. 
+Vraťme se teď společně na začátek, do první kapitoly o [nových displejích a zařízeních](kap-prostredi.md). Při tvorbě responzivních webů díky ní počítáme s mobily, tablety a počítači. Počítáme s hybridními laptopy nebo třeba profesionální tablety jako je iPad Pro. 
 
 Počítáme se zvětšujícími se desktopovými displeji. Počítáme s mnoha prohlížeči v nich a desítkami jejich verzí. Myslíme i na různé typy displejů, různé rychlosti připojení a mnoho dalších aspektů poměrně nehostinného publika webových tvůrců. 
 

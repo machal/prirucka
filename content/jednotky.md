@@ -171,7 +171,7 @@ Doporučuji jej používat jen tam, kde potřebujete precizní vyjádření v pi
 ```
 
 <div class="ebook-only" markdown="1">
-Jen pro jistotu připomínám, že už dávno nejde o hardwarový, ale takzvaný *CSS pixel*. Psal jsem o tom [v kapitole](prostredi-proc-responzivni-design.md) o prostředí responzivního designu.
+Jen pro jistotu připomínám, že už dávno nejde o hardwarový pixel. Psal jsem o tom části první kapitoly o [CSS pixelu](zmeny-css-pixel.md).
 </div>
 
 
