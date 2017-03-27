@@ -6,7 +6,7 @@ Na to, jak je CSS pixel v dnešním webdesignu důležitý, je pohříchu málo 
 
 ## Hardwarové rozlišení nás moc nezajímá
 
-Retina, Amoled, QuadHD. Asi jste si všimli, že mobilní zařízení mají v poslední době dost šílená rozlišení. A trend u mobilních zařízení nekončí. Podívejte se na MacBook Pro s Retina displejem nebo další laptopy.
+Retina, Amoled, QuadHD… Asi jste si všimli, že mobilní zařízení mají v poslední době dost šílená rozlišení. A trend u mobilních zařízení nekončí. Podívejte se na MacBook Pro s Retina displejem nebo další laptopy.
 
 Kouká se přes ně na weby dobře, což o to. Ale kdo má pro ně ty weby navrhovat?!
 

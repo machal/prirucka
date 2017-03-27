@@ -108,7 +108,7 @@ Existují samozřejmě i varianty pro rozmezí hodnot:  `min-aspect-ratio` a `ma
 
 ### Detekce vysokokapacitních displejů 
 
-Moderní displeje s vyšším počtem hardwarových pixelů, tedy displeje typu Retina, Amoled a další můžeme detekovat takto:
+Moderní displeje s vyšším hustotou hardwarových pixelů, tedy displeje typu Retina a další, můžeme detekovat takto:
 
 ```
 @media only screen and 

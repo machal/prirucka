@@ -6,11 +6,11 @@ Neměl by to být jednoduchý prezentační web, ale zase ne všichni dělají k
 
 Jaký e-shop to ale, do prkýnka, bude? V zemi, kde jich je pomalu více než nakupujících? V zemi, kde v každém oboru narazíte na stovky konkurečních obchodů provozovaných z garáže začínajících e-shopařů nebo obýváků maminkatelek? V zemi, kde dříve nebo později ve vašem segmentu přistane zelený mimozemšťan Alza a s gustem vetřelce vyžere díru do koláče tržního podílu? 
 
-Ono se ale často stačí podívat přes rameno sví milé ženě a zamyslet se, jaké problémy jako při online nakupování řešíme. Řešíme problémy s dětmi. 
+Ono se ale často stačí podívat přes rameno své milé ženě a zamyslet se, jaké problémy při online nakupování řešíme. Řešíme problémy s dětmi. 
 
 Oba chlapečkové chodili nebo chodí do skvělé kunratické lesní školky. Jsou pořád venku a děsně jim to prospívá. No a víte jak se to říká: špatné počasí neexistuje, je to vždy jen problém špatného oblečení. 
 
-Proto žena často nakupuje pohorky, nepromokavé kalhoty a bundy s vodním sloupcem, o kterém se mě nikdy ani nesnilo. Je z ní úplná expertka na miniaturní outdoorové vybavení. Jenže získat ty vědomosti nebyla úplná sranda. Navíc nakupuje na různých e-shopech a moc by se jí líbilo, když by vše vyřešil jen jeden. Právě teď jsme ho doma v obýváku založili. Jmenuje *ForestKid* a bude mít prima web, uvidíte.
+Proto žena často nakupuje pohorky, nepromokavé kalhoty a bundy s vodním sloupcem, o kterém se mně nikdy ani nesnilo. Je z ní úplná expertka na miniaturní outdoorové vybavení. Jenže získat ty vědomosti nebyla úplná sranda. Navíc nakupuje na různých e-shopech a moc by se jí líbilo, když by vše vyřešil jen jeden. Právě teď jsme ho doma v obýváku založili. Jmenuje *ForestKid* a bude mít prima web, uvidíte.
 
 Vezměme prázdnou tabulku našeho UCD canvasu a načrtněme si do ni situaci kolem potenciálních uživatelů a tržního prostředí.
 

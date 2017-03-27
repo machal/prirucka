@@ -137,7 +137,7 @@ Hodinky obvykle prohlížeč instalovaný nemají. Na některých platformách s
 
 ### Televize: NE
 
-I pro vaši chytrou domácí televizi byste nejspíš nějaký ten prohlížeč sehnat dokázali. Zakopaný pes ale vězí v uživatelském ovládání. Budoucnost v případě televizí vidím v gestech a hlasovém ovládání. Interakce s běžnými webovými stránkami na televizi budou do té doby nepohodlné. To ale neznamená, že nevznikají nativní TV aplikace vytvářené pomocí webových technologií. Ostatně, i HbbTV aplikace jsou vyrobené webovými technologiemi. [vrdl.in/hbbtv](http://www.hbbtv-developer.com/site/wiki/index.php/Hello_world) 
+I vaše chytrá domácí televizi nejspíš nějaký ten prohlížeč obsahuje. Moc je ale lidé nepoužívají. Zakopaný pes ale vězí v uživatelském ovládání. Budoucnost v případě televizí vidím v gestech a hlasovém ovládání. Interakce s běžnými webovými stránkami na televizi budou do té doby nepohodlné. To ale neznamená, že nevznikají nativní TV aplikace vytvářené pomocí webových technologií. Ostatně, i HbbTV aplikace jsou vyrobené webovými technologiemi. [vrdl.in/hbbtv](http://www.hbbtv-developer.com/site/wiki/index.php/Hello_world) 
 
 ### Ledničky: NE  
 

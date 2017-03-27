@@ -63,7 +63,7 @@ Následující část čtěte jen pokud chcete moc šetřit a máte vysokou odol
 Mobilní Chrome jakžtakž odpovídá tomu desktopovému, takže potřebujete otestovat hlavně Android Browser a pak mobilní Safari. Občas také mobilní Operu, Firefox nebo Explorer. Mrkněte do statistik, jak si u vás tyhle prohlížeče stojí. 
 
 - **Mobilní Safari:** Simulátorem je možné na Macu testovat iOS (nebo také watchOS a tvOS, ale tam není žádný prohlížeč), takže mobilní Safari. Nicméně pokud jste na Windowsech nebo Linuxu, emulaci mobilního Safari nespustíte. [vrdl.in/sgo6c](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html)
-- **Android Browser:** Android emulátorem jste si dříve mohli pustit verzi Androidu s aktuálním Android Browserem. Vůbec si nejsem jistý, jestli to pořád jde. Dřív byl Android Emulator děsně pomalý a teď je navíc docela věda ho nainstalovat. [vrdl.in/1m26i](https://developer.android.com/studio/run/emulator.html)
+- **Android Browser:** Android emulátorem jste si dříve mohli pustit verzi Androidu s aktuálním Android Browserem. Dřív byl Android Emulator děsně pomalý a teď je navíc docela věda ho nainstalovat. [vrdl.in/1m26i](https://developer.android.com/studio/run/emulator.html)
 - **Mobilní Explorer:** Spustíte v emulátoru od Microsoftu. Samozřejmě jen na Windows. [vrdl.in/s72hb](https://msdn.microsoft.com/en-us/library/windows/apps/ff402563%28v=vs.105%29.aspx)
 - **Mobilní Opery:** Emulator aktuální verze mobilní Opery neexistuje, ale má jádro velice podobné Chrome. Je ale dobré web vidět v Opeře Mini, kterou lze nainstalovat na desktop. [vrdl.in/xba60](https://dev.opera.com/articles/installing-opera-mini-on-your-computer/)
 

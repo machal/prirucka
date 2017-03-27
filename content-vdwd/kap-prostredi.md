@@ -1,8 +1,8 @@
 # Prostředí (responzivního) webdesignu 
 
-Nevím jak vás, mě jako dítě děsně štvala pohádka „O perníkové chaloupce“. Vždy jsem si zkoušel představit domek uprostřed temného lesa. Perníkovou střechu. Okolnosti přeci jasně naznačovaly, že uvnitř chaloupky může dojít k jistým obtížím. A stejně šli Jeníček s Mařenkou dovnitř! To nikdy nepochopím.
+Nevím jak vás, ale mě jako dítě děsně štvala pohádka „O perníkové chaloupce“. Před usnutím jsem si zkoušel představit ten temný les. To šlo. Jenže malebný palouk uprostřed…? A domek s perníkovou střechou na něm… ?! Okolnosti přeci jasně naznačovaly, že v chaloupce může k jistým obtížím dojít. A stejně tam Jeníček s Mařenkou vešli. To nikdy nepochopím.
 
-My se poučíme. Než otevřeme dveře webdesignu, nejdříve pořádně prozkoumáme jeho okolí.
+My se poučíme. Než otevřeme dveře webdesignu, pořádně prozkoumáme jeho okolí.
 
 V části [o prostředí](prostredi-proc-responzivni-design.md) zjistíme, že příchod mobilů není jedinou změnou, kterou řešíme. Jako nováčky nevítáme jen malé displeje, nové jsou i displeje velké. A aby toho nebylo dost, ty malé mohou mít neuvěřitelné velké rozlišení. Prohlížeče se množí jako myši ve sklepě chalupy z perníku. A z temného lesa se ke všemu vynořují nová, k internetu připojená zařízení.
 

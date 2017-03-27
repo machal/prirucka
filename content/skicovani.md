@@ -12,7 +12,7 @@ Na papír si skicou odložím základní obrysy problému a uvolním mentální 
 
 Při skicování je děsně důležité soustředění na problém. Existuje celá řada softwarových nástrojů, ale ty mě rozptylují svými možnostmi a počítačovým prostředím. Tam ani nevíte jak a už neskicujete, ale čtete Facebook. 
 
-Používám prostě tužku, gumu a papír. Když mám na výběr, volím tečkované bloky od Tečkovaný.cz a nebo předtištěné šablony od SneakPeekIt. [teckovany.cz](http://teckovany.cz/) [sneakpeekit.com](http://sneakpeekit.com/)
+Používám prostě tužku, gumu a papír. Když mám na výběr, volím bílý papír ve formátu A3 nebo předtištěné šablony od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
 
 Na rozdíl od uměleckého skicování, u náčrtů uživatelského rozhraní nemusíte umět kreslit. Stačí vám jakžtakž zvládnout úsečky, obdélníky, kružnice a psaní. To by šlo, ne?
 
