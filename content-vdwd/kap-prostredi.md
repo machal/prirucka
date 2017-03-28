@@ -1,4 +1,4 @@
-# Proč vlastně responzivní webdesign?
+# 1) Proč vlastně responzivní webdesign?
 
 Nevím jak vás, ale mě jako dítě děsně štvala pohádka „O perníkové chaloupce“. Před usnutím jsem si zkoušel představit ten temný les. To šlo. Jenže malebný palouk uprostřed…? A domek s perníkovou střechou na něm… ?! Okolnosti byly podezřelé a jasně naznačovaly, že v chaloupce může dojít k jistým obtížím. A stejně tam Jeníček s Mařenkou vešli. To nikdy nepochopím.
 

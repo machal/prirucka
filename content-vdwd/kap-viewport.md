@@ -1,4 +1,4 @@
-# Viewport na mobilech
+# 4) Viewport na mobilech
 
 Mobily nám přinesly tři zásadní životní radosti. Notifikace chodící ve tři ráno. Facebook plný selfíček. V vývojářům ještě viewporty na mobilech.
 

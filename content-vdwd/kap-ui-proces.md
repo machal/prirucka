@@ -1,4 +1,4 @@
-# Design komponent rozhraní
+# 8) Design komponent rozhraní
 
 Dosud jsme se v knize zabývali jen dokumentem: zjednodušeně textem a obrázky v něm. Teď už konečně přichází na řadu přemýšlení nad návrhem složitějších částí uživatelského rozhraní. Vrhneme se na navigace, fotogalerie, hlavičky nebo patičky celých webů. Vsadím se s vámi, že alespoň jeden takový prvek někde na stránce máte.
 

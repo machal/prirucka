@@ -1,4 +1,4 @@
-# Obrázky a další média
+# 6) Obrázky a další média
 
 > Potvory co vystrkují růžky. Vezmem' na ně nůžky!
 

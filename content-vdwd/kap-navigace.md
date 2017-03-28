@@ -1,4 +1,4 @@
-# Responzivní navigace 
+# 10) Responzivní navigace 
 
 Navigace je paní Columbová mobilního webdesignu. Poručík Columbo o ní mluví, ostatní tuší, že někde bude. Ale nikdo ji nikdy neviděl. 
 

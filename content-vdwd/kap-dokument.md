@@ -1,4 +1,4 @@
-# Design dokumentu
+# 3) Design dokumentu
 
 „Dokumentu?! V době, kdy skoro vše co běží v prohlížeči je aplikace a ne dokument? V době složitých uživatelských rozhraní?“ mohli byste namítnout. Jenže já bych s vámi s dovolením nesouhlasil. 
 

@@ -1,4 +1,4 @@
-# Návrh rozhraní v éře mobilů
+# 7) Návrh rozhraní v éře mobilů
 
 Než si prakticky ukážeme, jaký proces pro návrh používám, musíme vstřebat filozofii vyplývající ze zkušeností, průzkumů a dat, které za mým uvažováním stojí. 
 
