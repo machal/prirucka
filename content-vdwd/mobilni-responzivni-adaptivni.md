@@ -4,31 +4,29 @@ Vlastně dnes máme jen dvě možnosti jak udělat web pro všechna zařízení.
 
 ## Mobilní web
 
-Občas se říká „m tečka web“. Ano, jsou to ty weby, které pro přístupy z desktopů používají adresu jako `www.example.cz` a pro přístupy z mobilů něco jako `m.example.cz`. Z pohledu návštěvníka i provozovatele jsou to vlastně dva weby, které servírují stejný nebo případně i upravený obsah.
+Občas se říká „m tečka web“. Ano, jsou to ty weby, které pro přístupy z počítačů používají adresu jako `www.example.cz` a pro přístupy z mobilů něco jako `m.example.cz`. Z pohledu návštěvníka i provozovatele jsou to vlastně dva weby, které servírují stejný nebo případně i upravený obsah.
 
 ![Web banky Moneta](dist/images/original/vdwd/moneta.png)
 
-*Příklad dvou aplikací pro jeden web. [m.moneta.cz](http://m.moneta.cz) a [www.moneta.cz](http://www.moneta.cz).*
+*Příklad mobilního webu: [m.moneta.cz](http://m.moneta.cz) a [www.moneta.cz](http://www.moneta.cz).*
 
 ### Výhoda: Mobilní web může být relativně rychle hotový
 
-Pokud máte složitý desktopový web a teprve uvažujete o řešení mobilních uživatelů, může to být na rozdíl od velkého responzivního redesignu výrazně časově i finančně méně náročné.
+Pokud máte složitý desktopový web a teprve uvažujete o řešení pro mobilní uživatele, může to být narozdíl od velkého responzivního redesignu výrazně časově i finančně méně náročné.
 
 ### Výhoda: Serverová detekce se může hodit 
 
-Pro někoho může být výhodou serverové detekce zařízení. Výjimečně se může stát, že chcete určité skupině uživatelů poslat výrazně jinou verzi designu nebo obsahu. Dříve se tak řešil problém existence velmi starých chytrých telefonů, které dnešní frontend technologie nezvládaly – třeba Nokií se Symbianem. Drobné detekce na serveru dělá dnes i řada responzivních webů. Nebo přesněji *adaptivních* jak uvidíte dále. U nich je ale drtivá většina frontend kódu pro všechny návštěvníky totožná.
+Pro někoho může být výhodou serverová detekce zařízení. Výjimečně se může stát, že chcete určité skupině uživatelů poslat výrazně jinou verzi designu nebo obsahu. Dříve se tak řešil problém existence velmi starých chytrých telefonů, které dnešní frontend technologie nezvládaly – třeba Nokií se Symbianem. Drobné detekce na serveru dělá dnes i řada responzivních webů. U nich je ale drtivá většina frontend kódu pro všechny návštěvníky totožná.
 
 ### Nevýhoda: Dvě URL adresy a nutnost udržovat vazby mezi nimi
 
-Je potřeba řešit situace přesměrování mezi jednou a druhou verzí. Vyvstávají i další problémy: co budou indexovat vyhledávače, jak jim říct o existenci dvou webů? Jako správce webu dvě verze nechcete, věřte mi. 
-
-Pokud už ale v takové situaci jste, udělejte to dobře. Nečekali byste to, ale odkážu vás na doporučení Google: [vrdl.in/os3y1](https://developers.google.com/webmasters/mobile-sites/mobile-seo/separate-urls)
+Je potřeba řešit situace přesměrování mezi jednou a druhou verzí. Vyvstávají i další problémy: co budou indexovat vyhledávače, jak jim říct o existenci dvou webů? Jako správce webu dvě verze nechcete, věřte mi. Pokud už ale v takové situaci jste, udělejte vazbu mezi oběma verzemi dobře. Nečekali byste to, ale odkážu vás na doporučení Google: [vrdl.in/os3y1](https://developers.google.com/webmasters/mobile-sites/mobile-seo/separate-urls)
 
 ### Nevýhoda: Co se středně velkými displeji?
 
-Co s tablety? U speciálních mobilních webů často vznikne tento problém. Mobilní web bude na tablety moc jednoduchý a desktopový moc složitý.
+Co s tablety? U speciálních mobilních webů často vznikne následující problém. Mobilní web bude na tablety moc jednoduchý a desktopový moc složitý.
 
-A co dále? Občas se argumentuje tím, že speciální mobilní web se může načítat rychleji. Hlavně pokud je desktopová verze datově gigantická. V žádném případě to ale neznamená, že nelze udělat velmi rychlý responzivní web. Naopak!
+A co dále? Občas se argumentuje tím, že speciální mobilní web se může načítat rychleji. Hlavně pokud je desktopová verze datově oplácaná. V žádném případě to ale neznamená, že nelze udělat velmi rychlý responzivní web. Naopak! [V páté kapitole](kap-rychlost.md) o tom něco málo píšu.
 
 Jak vidíte, tohle řešení má řadu nevýhod a považuji ho za dlouhodobě neudržitelné. 
 
@@ -38,11 +36,11 @@ V krátkodobém horizontu může být „m tečka“ web docela záchrana, ale v
 
 Před lety jsem jako kodér spolupracoval na projektu Scuk.cz známého foodbloggera, pana Cuketky. [scuk.cz](http://www.scuk.cz/)
 
-Dnes už je Scuk responzivní, ale v roce 2010 ještě mobily nebyly v Česku tak důležité. Proto jsme, jako všichni v té době, vyrobili jen desktopovou verzi. Pár let od spuštění ovšem mobily v naší cílové skupině vyrostly. Responzivní web jsem tehdy udělat uměl, takže jsme se bavili o jakémsi „zresponzivnění“ desktopového webu. Nakonec jsme to ale zavrhli.
+Dnes už je Scuk responzivní, ale v roce 2010 ještě mobily nebyly v Česku tak důležité. Proto jsme, jako všichni v té době, vyrobili jen desktopovou verzi. Pár let po spuštění ovšem v naší cílové skupině podíl mobilních uživatelů vyrostl. Responzivní web jsem tehdy udělat uměl, takže jsme se bavili o jakémsi „zresponzivnění“ desktopového webu. Nakonec jsme to ale zavrhli.
 
 Desktopový Scuk.cz byl totiž *vymyšlený* pro desktop. Když je něco vymyšlené pro desktop, těžko z toho uděláte responzivní web. Musíte to vymyslet znovu. 
 
-Scuk byl postavený na Google mapách, takže rozhraní bylo poměrně složité a řešení z pohledu tehdejších frontend technologií relativně těžkopádné. Hlavně pro mobily, kde potřebujete rychlé načtení a pohodlí ovládání, což vkládané Google mapy nenabízely.
+Scuk byl postavený na Google mapách, takže rozhraní bylo poměrně složité a řešení z pohledu tehdejších frontend technologií relativně těžkopádné. Na mobilech, kde potřebujete rychlé načtení a na pohodlí ovládání jsou vyšší nároky, by bylo ještě těžkopádnější.
 
 ![Původní verze Scuk.cz](dist/images/original/vdwd/scuk.png)
 
@@ -54,13 +52,11 @@ Nakonec jsme se rozhodli pro vytvoření ještě jednoho webu: právě „m teč
 
 *Poslední, již plně responzivní generace Scuk.cz.*
 
-Dalšího klienta, e-shop VašeČočky.cz, se mi hned v počátcích spolupráce někdy v roce 2015 povedlo přesvědčit, aby myšlenku na mobilní web opustil. Rok a půl jsme pak pracovali na pořádném responzivním redesignu. Neztratili jsme čas vytvořením dočasné mobilní verze. Nyní máme dlouhodobě udržitelné řešení, které jedním kódem obsluhuje všechna relevantní zařízení.
-
 A teď už konečně obracím kormidlo na naše responzivní weby. Hurá!
 
 ## Responzivní web
 
-Web, který *responzivně*, tedy rychle a jednoznačně, reaguje na změny prostředí. Technicky jde o web, kterému pro přizpůsobení všem zařízením stačí jedna aplikace. Dle původní definice si vystačí s pružným layoutem a se změnami pro konkrétní skupiny rozlišení obrazovky realizovanými pomocí Media Queries. O tom si ale ještě budeme povídat [v kapitole o médiích](3-principy-rwd.md).
+Web, který *responzivně*, tedy rychle a jednoznačně, reaguje na změny prostředí. Technicky jde o web, kterému pro přizpůsobení všem zařízením stačí jedna aplikace. Dle původní definice si vystačí s pružným layoutem a se změnami pro konkrétní skupiny rozlišení obrazovky realizovanými pomocí Media Queries. O tom si ale ještě budeme povídat [v šesté kapitole](3-principy-rwd.md).
 
 Responzivní web vlastně odstraňuje nevýhody speciálního mobilního webu, které jsem jmenoval výše: 
 
@@ -68,6 +64,10 @@ Responzivní web vlastně odstraňuje nevýhody speciálního mobilního webu, k
 - Všechna zařízení sdílejí stejné URL adresy, takže není potřeba řešit vztahy mezi nimi.
 
 Jen pozor, bez nevýhod to není: responzivní redesign vyžaduje nezanedbatelné množství energie pro všechny lidi, kteří se účastní procesu vývoje a správy webu. Často je nutná zcela zásadní změna v pracovních postupech nejen designérů a vývojářů, ale prakticky všech lidí, kteří se na webu, jeho obsahu a marketingu podílejí.
+
+### Responzivní redesign VašeČočky.cz: rok a půl práce
+
+Dalšího klienta, firmu Maternia, se mi hned v počátcích spolupráce (někdy v roce 2015) povedlo přesvědčit, aby myšlenku na mobilní web opustil. Rok a půl jsme pak pracovali na pořádném responzivním redesignu všech jejich e-shopů. Nyní ale má dlouhodobě udržitelné řešení, které jedním kódem obsluhuje všechna relevantní zařízení.
 
 ![VašeČočky.cz](dist/images/original/vdwd/vase-cocky.png)
 
@@ -98,11 +98,11 @@ Mnohé dnešní weby tedy nejsou responzivní, ale adaptivní. Jenže lidé je j
 
 Ono na tom vlastně v dlouhodobé perspektivě nezáleží. Fáze webdesignu, ve které bylo potřeba rozlišovat responzivní a „normální“ snad už brzy skončí. Všechny weby budou responzivní, takže to přídavné jméno můžeme přestat používat.
 
-Slovem *responzivní* se totiž dnes už hlavně vyhraňujeme vůči předchozímu způsobu tvorby webů. *Responzivní* je tedy více pojmenování pro aktuální způsob tvorby. Pro aktuální etapu webdesignu. A tahle etapa končí.
+Slovem *responzivní* se totiž dnes už hlavně vyhraňujeme vůči předchozímu způsobu tvorby webů. *Responzivní* je tedy více pojmenování pro aktuální způsob tvorby. Pro aktuální etapu webdesignu. A tahle etapa skončí.
 
-Za pár let už slova responzivní nebo adaptivní potřebovat nebudeme. Všechny weby budou responzivní, jen budované prostředky adaptivního designu. Nebude responzivní webdesign, zůstane zase jen *webdesign*. 
+Za pár let už slova „responzivní“ nebo „adaptivní“ potřebovat nebudeme. Všechny weby budou responzivní, jen budované prostředky adaptivního designu. Nebude responzivní webdesign, zůstane zase jen *webdesign*. 
 
 <p class="ebook-only">
-  V další kapitole začneme pracovat na příkladu konkrétního (responzivního) webu, takže to bude praktické. Začít ale musíme zeširoka, protože rozumný návrh (responzivního) uživatelského rozhraní vzniká až na základě informací získaných z analytické fáze projektu. Víte vy co? Pojďme si raději povědět něco o tom, jak se dneska tvoří weby. Slibuji, že to bude stručné.
+  Pojmologii už ale uzavřeme. V další kapitole budeme pracovat na příkladu konkrétního (responzivního) webu, takže to bude praktické. Začít ale musíme zeširoka, protože rozumný návrh (responzivního) uživatelského rozhraní vzniká až na základě informací získaných z analytické fáze projektu. Víte vy co? Pojďme si raději povědět něco o tom, jak se dneska tvoří weby. Slibuji, že to bude stručné.
 </p>
 
