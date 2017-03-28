@@ -1,4 +1,4 @@
-# 5) Rychlost načítání
+# Kapitola 5: Rychlost načítání
 
 Hrozně rád vařím. Dělám to ale relativně málo, takže jako každý amatér nemám rutinně zvládnuté pracovní postupy a v hlavě všechny recepty. Občas se mi proto stane, že na něco podstatného zapomenu. Jednou v jídle jaksi chybí sůl. Jindy čekám až vykyne těsto bez kvasnic. Prostě zapomnětlivý kuchař.
 

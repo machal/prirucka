@@ -1,4 +1,4 @@
-# 6) Obrázky a další média
+# Kapitola 6: Obrázky a další média
 
 > Potvory co vystrkují růžky. Vezmem' na ně nůžky!
 

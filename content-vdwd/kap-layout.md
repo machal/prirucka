@@ -1,4 +1,4 @@
-# 9) Media Queries a layout
+# Kapitola 9: Media Queries a layout
 
 > To je prosím klobouk kouzelníka Pokustona a v něm bydlí králík. Bob.  „Vstávat! Vstávat a cvičit!“ nabádá Bob, „je ráno!“.
 
