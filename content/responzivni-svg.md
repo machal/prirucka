@@ -135,7 +135,7 @@ Tady je, prosím, plnohodnotná ukázka. [cdpn.io/e/vyMRPL](http://codepen.io/ma
 
 ![Responsive Logos](dist/images/original/rwd-svg-logos.jpg)
 
-*Obrázek: Využití responzivních SVG, jen se značkami o fous větších firem, najdete na webu „Responsive Logos“. Podívejte se, stojí to za to. [responsivelogos.co.uk](http://responsivelogos.co.uk/)*
+*Využití responzivních SVG, jen se značkami o fous větších firem, najdete na webu „Responsive Logos“. Podívejte se, stojí to za to. [responsivelogos.co.uk](http://responsivelogos.co.uk/)*
 
 Mechanismus responzivních SVG má velkou budoucnost: pro ikony, grafy, interaktivní elementy, mapy (!) a další prvky s potřebou měnit hustotu informací podle velikosti okna prohlížeče.
 

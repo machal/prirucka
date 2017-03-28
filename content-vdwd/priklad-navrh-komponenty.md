@@ -51,7 +51,7 @@ Aktuální stav prototypu můžete vidět na obrázku a naživo na nebo Codepenu
 
 ![Komparativní pohled na prototyp](dist/images/original/vdwd/priklad-komponenta-review-1.jpg)
 
-*Obrázek: Komparativní pohled na vybraná rozlišení mobilních zařízení s Androidem přes Re:view.*
+*Komparativní pohled na vybraná rozlišení mobilních zařízení s Androidem přes Re:view.*
 
 Je vidět, že na zařízeních s vyšším poměrem šířky k výšce uvidí uživatelka při načítání stránky spolehlivě jen navigaci, název produktu a obrázky. Jde samozřejmě o prototyp, takže přesná výška těchto elementů nám v této fázi známá není. 
 
@@ -93,7 +93,7 @@ Využíváme `orientation: landscape`, jednu z [Media Queries](css3-media-querie
 
 ![Komparativní pohled na prototyp](dist/images/original/vdwd/priklad-komponenta-review-2.jpg)
 
-*Obrázek: Výsledný prototyp designu fotogalerie.*
+*Výsledný prototyp designu fotogalerie.*
 
 Codepen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/dNXrMe). 
 

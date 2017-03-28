@@ -26,7 +26,7 @@ HTML prototypy, o kterých tady mluvím, jsou prostě plnohodnotné webové str�
 
 ![](dist/images/original/html-prototypovani-1.png)
 
-*Obrázek: Jeden z raných HTML prototypů VašeČočky.cz a finální stránka webu.*
+*Jeden z raných HTML prototypů VašeČočky.cz a finální stránka webu.*
 
 ## HTML prototypy mají své výhody
 
@@ -185,7 +185,7 @@ Prototypování je dobré dělat v nástroji, který zvládáte ovládat rychle 
 
 ![](dist/images/original/html-prototypovani-3.png)
 
-*Obrázek: Bootstrap a další frontend frameworky je ideálním pomocníkem pro prototypování celých webů. CodePen používám pro rychlý nástřel menších komponent.*
+*Bootstrap a další frontend frameworky je ideálním pomocníkem pro prototypování celých webů. CodePen používám pro rychlý nástřel menších komponent.*
 
 ### Rychlý online editor CodePen
 

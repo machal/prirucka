@@ -10,7 +10,7 @@ Původní definice responzivního designu pochází z roku 2010, hlavy a pera Et
 
 ![](dist/images/original/vdwd/principy-rwd.png)
 
-*Obrázek: 3 principy responzivního designu: pružný layout, pružné obrázky, Media Queries.*
+*3 principy responzivního designu: pružný layout, pružné obrázky, Media Queries.*
 
 ## 1. Pružný layout
 

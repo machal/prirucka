@@ -18,7 +18,7 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 
 ![](dist/images/original/tabulky_1.png)
 
-*Obrázek: Obsah tabulky se na malém displeji posouvá do stran.*
+*Obsah tabulky se na malém displeji posouvá do stran.*
 
 Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
@@ -30,7 +30,7 @@ Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně m
 
 ![](dist/images/original/tabulky_2.png)
 
-*Obrázek: Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
+*Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
 
 Vyzkoušejte si naživo v Codepenu. [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
 
@@ -48,7 +48,7 @@ Datagrid není žádná vzácnost. Každá webová aplikace pro interní systém
 
 ![](dist/images/original/tabulky_3.png)
 
-*Obrázek: Stohování tabulky na menších displejích. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
+*Stohování tabulky na menších displejích. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
 
 V nejjednodušší možné CSS implementaci prostě tabulce na menších displejích zrušíme „tabulkovost“:
 
@@ -86,7 +86,7 @@ Za fajn nápad také považuji vložit do stránky namísto tabulky jen jakýsi 
 
 ![](dist/images/original/tabulky_5.png)
 
-*Obrázek: Tabulku na mobilu uprostřed obsahu nahradíme zástupným symbolem. Kliknutí se zobrazí plná verze.*
+*Tabulku na mobilu uprostřed obsahu nahradíme zástupným symbolem. Kliknutí se zobrazí plná verze.*
 
 Kdy se hodí? Pro složité tabulky uprostřed jiného obsahu, kde ostatní scénáře (stohování, fixní sloupec) selhávají.
 

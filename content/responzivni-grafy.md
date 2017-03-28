@@ -12,7 +12,7 @@ Z mého pohledu nejzajímavější knihovna pro jednodušší grafy. Protože po
 
 ![](dist/images/original/chartist-js.png)
 
-*Obrázek: Chartist.js se umí menším displejům přizpůsobovat nejen velikostně, ale i hustotou dat a typem  zobrazení.*
+*Chartist.js se umí menším displejům přizpůsobovat nejen velikostně, ale i hustotou dat a typem  zobrazení.*
 
 ## Highcharts
 

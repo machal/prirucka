@@ -4,7 +4,7 @@ Vlastně se, my webdesignéři, chováme jako správní rodiče. Pipláme se s t
 
 ![Vzhůru dolů: podíl velkých a malých displejů](dist/images/original/vdwd/vzhurudolu-podil-velkych.jpg)
 
-*Obrázek: Na blog Vzhůru dolů mě v lednu 2017 přišlo 42 % procent návštěv s rozlišením obrazovky 1920 pixelů a širšími. Z tabletů a mobilů jen 15 %.* 
+*Na blog Vzhůru dolů mě v lednu 2017 přišlo 42 % procent návštěv s rozlišením obrazovky 1920 pixelů a širšími. Z tabletů a mobilů jen 15 %.* 
 
 Na webech jiného klienta, cestovky Rekrea s populačním vzorkem bližším českému průměru evidujeme kolem 20 % uživatelů cvalíkovitých monitorů. To je stejný podíl jako mají přístupy z mobilů.
 

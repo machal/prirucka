@@ -36,7 +36,7 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 
 ![](dist/images/original/responzivni-layout.png)
 
-*Obrázek: Jednoduchý responzivní dvousloupcový layout tři ku jedné realizovaný flexboxem.*
+*Jednoduchý responzivní dvousloupcový layout tři ku jedné realizovaný flexboxem.*
 
 Živá ukázka je pro vás připravená na Codepenu. [cdpn.io/e/wobjoq](http://codepen.io/machal/pen/wobjoq)
 
@@ -70,7 +70,7 @@ Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, k
 
 ![](dist/images/original/bootstrap-mrizka.png)
 
-*Obrázek: Rozvržení do mřížky zpopularizoval Boostrap. [getbootstrap.com](http://getbootstrap.com/)*
+*Rozvržení do mřížky zpopularizoval Boostrap. [getbootstrap.com](http://getbootstrap.com/)*
 
 Kromě toho je práce s pravidelnou mřížkou pro vývojáře efektivnější, protože stačí pracovat s HTML. V Bootstrapu 3 například rozdělení stránky na dvě poloviny zařídíme takto:
 

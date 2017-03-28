@@ -8,7 +8,7 @@ Celý proces tvorby webu zjednoduším do dvou kroků. Ony to vlastně kroky nej
 
 ![Zjednodušený proces tvorby webu](dist/images/original/vdwd/proces-tvorby.png)
 
-*Obrázek: Zjednodušený koloběh tvorby webu. V knížce se budeme zabývat hlavně fází řemeslnou: návrhem a realizací.*
+*Zjednodušený koloběh tvorby webu. V knížce se budeme zabývat hlavně fází řemeslnou: návrhem a realizací.*
 
 ## Průzkum a definice 
 

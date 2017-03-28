@@ -53,7 +53,7 @@ Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to
 
 ![](dist/images/original/vdwd/triky-ui-12.png)
 
-*Obrázek: Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
+*Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
 
 Dlouhá stránka kromě této konkrétní nevýhody taky odsunuje spodní část rozhraní – patičku. Jak už jsem psal, s koncem stránky roste pozornost uživatelů, protože tam bývá sekundární navigace. Příliš dlouhá stránka pak zhoršuje její přístupnost. Prostě se uživatel vyčerpá rolovacím maratonem.
 

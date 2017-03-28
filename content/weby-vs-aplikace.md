@@ -48,7 +48,7 @@ Občas je totiž stále slyšet, že „když máme aplikaci, nepotřebujeme web
 
 ![Web restaruace El Asador](dist/images/original/vdwd/el-asador.png)
 
-*Obrázek: Web restaurace El Asador na desktopu a mobilech. Příklad za všechny weby, které na mobilech nezdravě upřednostňují reklamu na aplikaci namísto informací samotných.*
+*Web restaurace El Asador na desktopu a mobilech. Příklad za všechny weby, které na mobilech nezdravě upřednostňují reklamu na aplikaci namísto informací samotných.*
 
 Ano, přes mobil jsem se chtěl podívat na menu a případně zarezervovat stůl. Provozovatelé webu po mě ale chtějí, abych:
 
@@ -65,7 +65,7 @@ Je tu ještě jedna věc. Z průzkumů vychází, uživatelé zase tak moc nativ
 
 ![Uživatelé tráví 88 % svého času jen v pěti aplikacích](dist/images/original/vdwd/forrester-cas.png)
 
-*Obrázek: Podle Forrester Research uživatelé tráví 88 % svého času na mobilních zařízení jen v pěti aplikacích. [vrdl.in/en8rk](http://blogs.forrester.com/nicole_dvorak/16-01-28-data_digest_just_a_handful_of_apps_account_for_nearly_all_app_time_on_smartphones)*
+*Podle Forrester Research uživatelé tráví 88 % svého času na mobilních zařízení jen v pěti aplikacích. [vrdl.in/en8rk](http://blogs.forrester.com/nicole_dvorak/16-01-28-data_digest_just_a_handful_of_apps_account_for_nearly_all_app_time_on_smartphones)*
 
 Pět aplikací? To máme email, Facebook, mapy, volání, fotky, prohlížeč… Počkejte, už jich je šest! Bude tady místo pro restauraci z Hrnčířů? Nejspíš ne, přátelé. 
 
@@ -141,7 +141,7 @@ Pokud jste firma, co má věrné uživatele, aplikací jste zase schopní je ví
 
 ![Reach (web) vs. Rich (native)](dist/images/original/vdwd/lukew-reach-rich.png)
 
-*Obrázek: „Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na Twitteru. [vrdl.in/8lh4f](https://twitter.com/lukew/status/649255909420503041)*
+*„Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na Twitteru. [vrdl.in/8lh4f](https://twitter.com/lukew/status/649255909420503041)*
 
 Zvládnete ještě nějaká čísla? Podle comScore (The 2015 U.S. Mobile App Report) měl v červnu 2015 americký mobilní Web na 9 milionů unikátních uživatelů, nativní aplikace jen něco přes tři. Jenže v aplikacích strávil průměrný uživatel přes 200 minut času, v prohlížeči něco přes 10 minut.
 

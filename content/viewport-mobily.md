@@ -10,7 +10,7 @@ Správná legrace s viewportem ovšem začíná na moderních smartphonech a tab
 
 ![Layoutový a vizuální viewport](dist/images/original/viewport-layoutovy-vizualni.svg)
 
-*Obrázek: Viewport layoutový a vizuální. Při použití správné [meta značky](viewport-meta.md) jsou oba při načtení responzivní stránky na všech zařízeních stejně velké.*
+*Viewport layoutový a vizuální. Při použití správné [meta značky](viewport-meta.md) jsou oba při načtení responzivní stránky na všech zařízeních stejně velké.*
 
 
 ## Layoutový viewport

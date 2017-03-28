@@ -4,7 +4,7 @@ Jako příklad pro náš proces návrhu uživatelského rozhraní si vezmeme tyh
 
 ![Boty Fare](dist/images/original/vdwd/priklad-boty.jpg)
 
-*Obrázek: Ukázkový produkt, se kterým budeme v příkladu pracovat. [fare.cz/detska-obuv-827263.htm](https://www.fare.cz/detska-obuv-827263.htm)*
+*Ukázkový produkt, se kterým budeme v příkladu pracovat. [fare.cz/detska-obuv-827263.htm](https://www.fare.cz/detska-obuv-827263.htm)*
 
 Jak budu v knize často zmiňovat, jednotlivé fáze procesu návrhu je výhodné vidět co nejdříve v podobě prezentovatelné v prohlížeči. U textu to nebude tak složité, viďte?
 
@@ -20,7 +20,7 @@ Využijeme také *CodePen*. Jednoduchý online editor, kde si stránku napíšet
 
 ![Obsah příkladu v Markdownu](dist/images/original/vdwd/priklad-markdown.jpg)
 
-*Obrázek: Použil jsem CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho e-shopu. [cdpn.io/e/MJwGXK](http://codepen.io/machal/pen/MJwGXK?editors=1000)*
+*Použil jsem CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho e-shopu. [cdpn.io/e/MJwGXK](http://codepen.io/machal/pen/MJwGXK?editors=1000)*
 
 Už tenhle náhled (prakticky bez CSS stylů) můžeme nějak hodnotit či testovat. Nejlépe se nám to bude dělat v malé velikosti okna, protože tam půjdou problémy obsahu vidět nejlépe.
 
@@ -41,7 +41,7 @@ Druhá iterace dokumentu je na světě:
 
 ![Druhá iterace obsahu příkladu v Markdownu](dist/images/original/vdwd/priklad-markdown-2.jpg)
 
-*Obrázek: Změny, které jsme provedli v druhé iteraci práce s obsahem. [cdpn.io/e/XpbBJy](http://codepen.io/machal/pen/XpbBJy?editors=1000)*
+*Změny, které jsme provedli v druhé iteraci práce s obsahem. [cdpn.io/e/XpbBJy](http://codepen.io/machal/pen/XpbBJy?editors=1000)*
 
 Řekněme, že na ní už žádné zásadní chyby nevidíme. Hurá! Můžeme otevřít bránu do veselého světa barev, do světa webové grafiky.
 

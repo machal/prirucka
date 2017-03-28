@@ -4,7 +4,7 @@ Proč promeškat příležitost ukázat si graf s rostoucí návštěvností z m
 
 ![Podíl mobilů](dist/images/original/vdwd/statistika-mobily.png)
 
-*Obrázek: Podíl mobilních prohlížečů na celkovém počtu zobrazení stránek k polovině roku 2016. Zdroj: Gemius SA, gemiusTraffic,  Rankings.cz.*
+*Podíl mobilních prohlížečů na celkovém počtu zobrazení stránek k polovině roku 2016. Zdroj: Gemius SA, gemiusTraffic,  Rankings.cz.*
 
 Čísla z Rankings.cz ukazovaly asi pětinu podílu na shlédnutých stránkách velkých webů v ČR. Tam se mobily a tablety samozřejmě nezastaví. 
 
@@ -16,7 +16,7 @@ V další statistice zase můžeme vidět, jak moc vyrostl počet hodin lidmi de
 
 ![eMarketer: Čas na mobilech](dist/images/original/vdwd/statistika-cas-emarketer.jpg)
 
-*Obrázek: Podíl času tráveného na mobilních zařízeních roste, ovšem ne na úkor počítačů. V roce 2015 to bylo už 51 % z průměrných 5,6 hodin denně. Zdroj: eMarketer. [vrdl.in/ikr1p](http://www.slideshare.net/kleinerperkins/internet-trends-v1/14-14Internet_Usage_Engagement_Growth_Solid11)*
+*Podíl času tráveného na mobilních zařízeních roste, ovšem ne na úkor počítačů. V roce 2015 to bylo už 51 % z průměrných 5,6 hodin denně. Zdroj: eMarketer. [vrdl.in/ikr1p](http://www.slideshare.net/kleinerperkins/internet-trends-v1/14-14Internet_Usage_Engagement_Growth_Solid11)*
 
 Potřebujete kolegy nebo klienty přesvědčit ještě dalšími čísly? Rád vám doporučím knížku „Going Responsive“ od Karen McGrane. [vrdl.in/goingrwd](https://abookapart.com/products/going-responsive) 
 

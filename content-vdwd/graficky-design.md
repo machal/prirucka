@@ -6,7 +6,7 @@ Pojďme se o této části návrhu webu pobavit alespoň v nejzákladnějších 
 
 ![Tvrdek.cz](dist/images/original/vdwd/tvrdek-cz.png)
 
-*Obrázek: Web Jiřího Tvrdka. [tvrdek.cz](http://www.tvrdek.cz/)*
+*Web Jiřího Tvrdka. [tvrdek.cz](http://www.tvrdek.cz/)*
 
 Prostředky, které Jiří použil k sestavení kompozice, nejsou nijak složité: 
 

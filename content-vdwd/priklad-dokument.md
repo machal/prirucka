@@ -96,7 +96,7 @@ Po pár krocích už tedy stránka vypadá lépe:
 
 ![Dokument fáze příkladu](dist/images/original/vdwd/priklad-dokument.jpg)
 
-*Obrázek: Dokument se základním grafickým stylem, barvami a typografií. Zvětšujte a změnšujte si okno prohlížeče. Ano, už v této fázi je to vlastně „responzivní“. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
+*Dokument se základním grafickým stylem, barvami a typografií. Zvětšujte a změnšujte si okno prohlížeče. Ano, už v této fázi je to vlastně „responzivní“. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
 
 Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. 
 

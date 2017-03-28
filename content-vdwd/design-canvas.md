@@ -10,7 +10,7 @@ UCD Canvas může u větších projektů posloužit jako shrnutí, provázejíc�
 
 ![User Centered Design Canvas](dist/images/original/design-canvas.png)
 
-*Obrázek: User Centered Design Canvas. [ucdc.therectangles.com](https://ucdc.therectangles.com/)*
+*User Centered Design Canvas. [ucdc.therectangles.com](https://ucdc.therectangles.com/)*
 
 User Centered Design Canvas má čtyři hlavní oblasti:
 

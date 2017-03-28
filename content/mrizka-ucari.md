@@ -6,7 +6,7 @@ Mezi webaři je často diskutována a já se vám tady bez mučení přiznám, �
 
 ![Baseline Grid](dist/images/original/baseline-grid.jpg)
 
-*Obrázek: Mřížku účaří na obrázku vidíte jako šedivé vodorovné čáry.  Zpopularizoval ji (na tehdejší dobu skvělý) framework pro tvorbu layoutu Blueprint. To ještě webdesign nebyl tak daleko od tištěných médií jako dnes. [blueprintcss.org](http://blueprintcss.org/)*
+*Mřížku účaří na obrázku vidíte jako šedivé vodorovné čáry.  Zpopularizoval ji (na tehdejší dobu skvělý) framework pro tvorbu layoutu Blueprint. To ještě webdesign nebyl tak daleko od tištěných médií jako dnes. [blueprintcss.org](http://blueprintcss.org/)*
 
 Mřížku účaří jsme opět zdědili z tištěných médií. Hlavně z novin, kde zaručuje, že na nekvalitním papíře nebudou do prostoru mezi řádky prosvítat texty z druhé strany, což zlepšuje čitelnost.
 

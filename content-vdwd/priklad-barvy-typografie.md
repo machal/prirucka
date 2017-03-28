@@ -14,7 +14,7 @@ Jak už jsem zmiňoval, pro zjednodušení si pomůžeme databázemi barevných 
 
 ![Barevné schéma pro příklad](dist/images/original/vdwd/priklad-barvy.jpg)
 
-*Obrázek: Vybrané barevné schéma. [coolors.co](https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c)*
+*Vybrané barevné schéma. [coolors.co](https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c)*
 
 Jak vidíte z obrázku, barevné schéma je… hodně barevné:
 
@@ -40,7 +40,7 @@ Zbývá nám písmo pro texty a rozhraní. Pro delší texty, které na webu mí
 
 ![Typografie pro příklad](dist/images/original/vdwd/priklady-typografie.jpg)
 
-*Obrázek: vybraná písma Yeseva One a PT Sans.*
+*vybraná písma Yeseva One a PT Sans.*
 
 Přidáno do našeho projektu to vypadá jako v následujícím CodePenu. [cdpn.io/e/XpbPmm](http://codepen.io/machal/pen/XpbPmm?editors=1100).
 
@@ -54,5 +54,5 @@ Některé z nich jsem tedy pro naše potřeby zakoupil a barevně upravil.
 
 ![Ikony pro příklad](dist/images/original/vdwd/priklad-ikony.jpg)
 
-*Obrázek: Upravené ikony Maxe Gribojedova, které využijeme pro komunikaci benefitů e-shopu.*
+*Upravené ikony Maxe Gribojedova, které využijeme pro komunikaci benefitů e-shopu.*
 
