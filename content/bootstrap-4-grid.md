@@ -172,6 +172,28 @@ V příkladu se díky tomu na `md` breakpointu, tedy od šířky okna 768 pixel�
 
 Ukázka opět pomůže: [cdpn.io/e/xqamPp](http://codepen.io/machal/pen/xqamPp?editors=1000)
 
+### Zanořování {#zanorovani}
+
+Velmi užitečné je, že layout můžete zanořovat. Prostě přidejte další řádku layoutu – třídu `.row`:
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+      <div class="row">
+        <div class="col-sm-6"><!-- … --></div>  
+        <div class="col-sm-6"><!-- … --></div>            
+      </div>
+    </div>  
+  </div>
+</div>
+```
+
+Každá nově vytvořená řádka layoutu se řídí šířkou rodiče. Takže se vám může stát, že zanořený layout opustí celostránkovou dvanáctisloupcovou mřížku. Nemusí vám to vadit, ale raději na to upozorňuji.
+
+A jasně! Ukázka je zase zde: [cdpn.io/e/xqamzW](http://codepen.io/machal/pen/xqamzW?editors=1000)
+
+
 
 <!-- TODO auto nefunguje, staci .col? viz ukazka
 ### Sloupec se šířkou podle obsahu: `.col-{breakpoint}-auto` {#col-auto}
