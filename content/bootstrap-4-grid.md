@@ -1,6 +1,15 @@
 # Detailně: layout pomocí Bootstrapu 4
 
-Základní struktura rozvržení je složená z kontejneru (třída `.container`), řádky (`.row`) a sloupce layoutu (`.col`)
+Pojďme se do hloubky podívat na nový systém pro tvorbu rozvržení stránky v chystané verzi Bootstrapu.
+
+Ano, Bootstrap 4 je stále v alfa verzi. Nicméně, změny grid systému [chystané do první bety](https://github.com/twbs/bootstrap/issues/21568) jsou jen malinké, takže si troufnu napsat, že tahle stránka zůstane beze změn. Ve čtyřce je možné stáhnout CSS soubor s gridem samostatně, což je další plus. 
+
+Rychlá navigace po stránce: [kontejner](#container), [řádka](#row), [sloupec](#col), [sloupec do mřížky](#col-mrizka), [responzivní sloupec](#col-breakpoint), [posuny](#offset), [push a pull](#push-pull), [změna pořadí](#poradi) a [zarovnávání](#zarovnavani).
+
+
+## Tvorba layoutu s Bootstrap gridem
+
+Základní struktura rozvržení je stále složená z kontejneru (třída `.container`), řádky (`.row`) a sloupce layoutu (`.col`):
 
 ```html
 <div class="container">
@@ -11,34 +20,30 @@ Základní struktura rozvržení je složená z kontejneru (třída `.container`
 </div>
 ```
 
-Rychlá navigace po stránce: [kontejner](#container), [řádka](#row), [sloupec](#col), [sloupec do mřížky](#col-mrizka), [responzivní sloupec](#col-breakpoint), [posuny](#offset), [push a pull](#push-pull), [změna pořadí](#poradi) a [zarovnávání](#zarovnavani).
-
 
 ## Kontejner rozvržení {#container}
 
 Kontejner je obal pro váš layout. Bootstrap má dva typy obalů:
 
-- `.container` je kontejner fixní šířky: má stupně omezené maximální šířkou. Jeho maximální šířky jsou 540px na „small“ šířkách okna, 720px („medium“) 960px („large“) a 1140px („extra large“). Ten asi budete využívat častěji.
-- `.container-fluid` je pružný, takže se roztahuje do plné šířky okna prohlížeče.
+- `.container` je kontejner fixní šířky: má stupně omezené maximální šířkou. Jeho maximální šířky jsou 540px na „small“ šířkách okna, 720px („medium“) 960px („large“) a 1140px („extra large“). 
+- `.container-fluid` je pružný, takže se roztahuje do plné šířky okna prohlížeče. Ten asi budete využívat méně často.
 
-Kontejnerů můžete mít na stránce samozřejmě víc. 
-
-V ukázce je porovnání obou kontejnerů: [cdpn.io/e/RpYqwK](http://codepen.io/machal/pen/RpYqwK?editors=1000).
+Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnání pružného i fixního kontejneru: [cdpn.io/e/RpYqwK](http://codepen.io/machal/pen/RpYqwK?editors=1000).
 
 
-## Řádka rozvržení {#row}
+## Řádek rozvržení {#row}
 
-Řádky jsou vodorovná seskupení sloupců rozvržení. Třídu `.row` nesmíte zapomenout, má totiž dvě funkce:
+Řádky jsou vodorovná seskupení sloupců rozvržení. Na třídu `.row` nesmíte zapomenout, má totiž dvě funkce:
 
-1. Spuštění layoutu. `.row` je totiž [flex kontejner](css3-flexbox-kontejner.md). 
+1. Spuštění layoutu. `.row` je [flex kontejner](css3-flexbox-kontejner.md). 
 2. Zarovnávání layoutu. Má totiž nastavený záporný vnější okraj.
 
-V Bootstrapu 3 bylo se často na `.row` zapomínalo, ve čtyřce už bez řádky není možné udělat layout, takže se vám to snad nestane. 
+Při používání Bootstrapu 3 se na `.row` často zapomínalo. Ve čtyřce už bez řádky není možné udělat layout. To je docela hezká tabletka proti zapomnětlivosti. 
 
-Do ukázky se podívejte, co se stane, když na řádku zapomenete: [cdpn.io/e/VpGVKm](http://codepen.io/machal/pen/VpGVKm?editors=1000).
+Do ukázky se podívejte, co se stane, když řádek omylem vynecháte: [cdpn.io/e/VpGVKm](http://codepen.io/machal/pen/VpGVKm?editors=1000).
 
 
-## Sloupec bez přípony: `.col` {#col}
+## Sloupec: `.col` {#col}
 
 Sloupec je základní stavební jednotka layoutů v Bootstrapu. Nově je ve verzi 4 možné zapsat sloupec jednoduše pomocí prvku s třídou `.col` bez přípony. 
 
@@ -53,7 +58,7 @@ Sloupec je základní stavební jednotka layoutů v Bootstrapu. Nově je ve verz
 
 `.col` má nastaveno `flex-grow: 1`, takže sloupečky budou stejně široké. Viz [vlastnosti flex položky](css3-flexbox-polozky.md). To je prima.
 
-Jen pozor, layout neuvidíte na menších velikostech okna. Flexbox vlastnosti v `.col` jsou nastavené tak, aby zohledňovaly obsah okna. Uvidíte to v ukázce, když si okno zmenšíte pod 260 pixelů: [cdpn.io/e/ZeMmJg](http://codepen.io/machal/pen/ZeMmJg?editors=1000).
+Jen pozor, layout neuvidíte na menších velikostech okna. Flexbox vlastnosti v `.col` jsou nastavené tak, aby zohledňovaly obsah okna. Zažijete to i v ukázce, když si okno zmenšíte pod 260 pixelů: [cdpn.io/e/ZeMmJg](http://codepen.io/machal/pen/ZeMmJg?editors=1000).
 
 
 ## Sloupec zarovnaný do mřížky: `.col-{číslo}` {#col-mrizka}
