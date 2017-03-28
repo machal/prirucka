@@ -68,7 +68,7 @@ Mřížka rozděluje plochu stránky do sloupečků a jednotlivé komponenty roz
 
 Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, kterou se webařina naučila z tisku. Všechny rozumné noviny a knihy jsou do nějaké mřížky vysázeny. Layout do mřížky díky své pravidelnosti zrychluje vstřebání stránky uživateli. 
 
-![](dist/images/original/bootstrap-mrizka.png)
+![Layout do mřížky v Bootstrapu](dist/images/original/bootstrap-mrizka.jpg)
 
 *Rozvržení do mřížky zpopularizoval Boostrap. [getbootstrap.com](http://getbootstrap.com/)*
 

@@ -1,8 +1,8 @@
 # Detailně: layout pomocí Bootstrapu 4
 
-Pojďme se do hloubky podívat na nový systém pro tvorbu rozvržení stránky v chystané verzi Bootstrapu.
+Pojďme se spolu podívat na nový systém pro tvorbu rozvržení stránky v chystané verzi Bootstrapu. Pořádně do hloubky. 
 
-Ano, Bootstrap 4 je stále v alfa verzi. Nicméně, změny grid systému [chystané do první bety](https://github.com/twbs/bootstrap/issues/21568) jsou jen malinké, takže si troufnu napsat, že tahle stránka zůstane beze změn. Ve čtyřce je možné stáhnout CSS soubor s gridem samostatně, což je další plus. 
+Ano, Bootstrap 4 je stále v alfa verzi. Nicméně, změny grid systému [chystané do první bety](https://github.com/twbs/bootstrap/issues/21568) jsou jen malinké, takže si troufnu napsat, že tahle stránka zůstane beze změn. A pak ten [flexbox](css3-flexbox.md)! Grid systém nového Bootstrapu je na něm postavený a dost to pomáhá. Ve čtyřce je možné stáhnout CSS soubor s gridem samostatně, což je další plus. Evolučně vychází z předchozí verze, takže tutoriál vlastně využijete i vy, trojkaři. 
 
 Rychlá navigace po stránce: [kontejner](#container), [řádka](#row), [sloupec](#col), [sloupec do mřížky](#col-mrizka), [responzivní sloupec](#col-breakpoint), [posuny](#offset), [push a pull](#push-pull), [změna pořadí](#poradi) a [zarovnávání](#zarovnavani).
 
@@ -20,6 +20,8 @@ Základní struktura rozvržení je stále složená z kontejneru (třída `.con
 </div>
 ```
 
+Struktura zůstává stejná s trojkou, jen se to chová jinak. Uvidíte. A v trojce jsme nemohli používat samostatnou třídu `.col`.
+
 
 ## Kontejner rozvržení {#container}
 
@@ -29,6 +31,8 @@ Kontejner je obal pro váš layout. Bootstrap má dva typy obalů:
 - `.container-fluid` je pružný, takže se roztahuje do plné šířky okna prohlížeče. Ten asi budete využívat méně často.
 
 Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnání pružného i fixního kontejneru: [cdpn.io/e/RpYqwK](http://codepen.io/machal/pen/RpYqwK?editors=1000).
+
+Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden bod breakpoint pro mobilní zařízení. Psal jsem o tom v článku [o chystaných novinkách](http://www.vzhurudolu.cz/blog/39-bootstrap-4#nova-mrizka-a-flexbox) ve čtyřce.
 
 
 ## Řádek rozvržení {#row}
@@ -67,7 +71,9 @@ Bootstrap používá pravidelnou mřížku. Zarovnání do ní je z pohledu uži
 
 Výchozí mřížka je dvanáctisloupcová. K dispozici tedy máte třídy `.col-1` až `.col-12`. 
 
-*TODO obrázek: 12sloupcová mřížka v BS*
+![Layout do mřížky v Bootstrapu](dist/images/original/bootstrap-mrizka.jpg)
+
+*Vizualizace rozvržení layoutu webu do dvanáctisloupcové mřížky. [getbootstrap.com](http://getbootstrap.com/)*
 
 ```html
 <div class="container">
@@ -105,6 +111,8 @@ Abychom mohli udělat různé layouty na různě velkých šířkách okna, nem�
 | Třída      | `.col-` | `.col-sm-` |  `.col-md-` |  `.col-lg-` |  `.col-xl-` |
 
 Třídy platí vždy od aktuálně platného bodu zlomu výše. `.col-sm` pak bude například platit od oken šířky 576 pixelů a výše.
+
+Třída `.col-` je vlastně synonymum pro trojkovou `.col-xs-`. Tedy layout, který platí na všech breakpointech. Tahle změna se mi ale líbí. Pro nováčky je to jednodušší na přemýšlení.
 
 
 ```html
@@ -189,6 +197,8 @@ Kromě výšeuvedených způsobů lze měnit pořadí sloupců layoutu pomocí
 
 Vychází to z flexboxí [vlastnosti `order`](css3-flexbox-polozky.md#order). Ukázka: [cdpn.io/e/dvqrZv](http://codepen.io/machal/pen/dvqrZv?editors=1000)
 
+To je věc nová pro čtvrtou verzi. Ale jak sami vidíte, pro změnu pořadí je to daleko příjemnější než metoda pomocí tříd `.pull` a `.push`.
+
 
 ## Zanořování {#zanorovani}
 
@@ -212,7 +222,7 @@ Každá nově vytvořená řádka layoutu se řídí šířkou rodiče. Takže s
 
 ## Zarovnávání {#zarovnavani}
 
-Flexbox přinesl do systému pro layout v Bootstrapu 4 kromě jiného také výborné možnosti zarovnání obsahu. Samozřejmě v obou směrech a jak pro celý layout, tak jeho jednotlivé položky.
+Použití flexboxu otevřelo v mřížce Bootstrapu 4 kromě jiného také výborné možnosti zarovnání obsahu. Samozřejmě v obou směrech a jak pro celý layout, tak jeho jednotlivé položky.
 
 Zarovnání na vodorovné ose:
 
