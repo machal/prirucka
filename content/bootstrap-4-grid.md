@@ -1,15 +1,19 @@
-# Detailně: layout pomocí Bootstrapu 4
+# Detailně: layout v Bootstrapu 4
 
 Pojďme se spolu podívat na nový systém pro tvorbu rozvržení stránky v chystané verzi Bootstrapu. Pořádně do hloubky. 
 
-Ano, Bootstrap 4 je stále v alfa verzi. Nicméně, změny grid systému [chystané do první bety](https://github.com/twbs/bootstrap/issues/21568) jsou jen malinké, takže si troufnu napsat, že tahle stránka zůstane beze změn. A pak ten [flexbox](css3-flexbox.md)! Grid systém nového Bootstrapu je na něm postavený a dost to pomáhá. Ve čtyřce je možné stáhnout CSS soubor s gridem samostatně, což je další plus. Evolučně vychází z předchozí verze, takže tutoriál vlastně využijete i vy, trojkaři. 
+Ten [flexbox](css3-flexbox.md)! Grid systém nového Bootstrapu je na něm postavený a dost to pomáhá. Evolučně ale vychází z předchozí verze, takže tutoriál vlastně využijete i vy, trojkaři. Ve čtyřce je možné stáhnout CSS soubor s gridem samostatně, což je další plus. 
+
+Ano, Bootstrap 4 je stále v alfa verzi. Nicméně, změny grid systému [chystané do první bety](https://github.com/twbs/bootstrap/issues/21568) jsou jen malinké, takže si troufnu napsat, že tahle stránka zůstane beze změn i po vydání betaverze a jednou i verze finální. Samotný grid systém bych se prostě už nebál používat.
+
+<!-- AdSnippet -->
 
 Rychlá navigace po stránce: [kontejner](#container), [řádka](#row), [sloupec](#col), [sloupec do mřížky](#col-mrizka), [responzivní sloupec](#col-breakpoint), [posuny](#offset), [push a pull](#push-pull), [změna pořadí](#poradi) a [zarovnávání](#zarovnavani).
 
 
-## Tvorba layoutu s Bootstrap gridem
+## Úplné základy
 
-Základní struktura rozvržení je stále složená z kontejneru (třída `.container`), řádky (`.row`) a sloupce layoutu (`.col`):
+Základní struktura kódu je stále složená z kontejneru (třída `.container`), řádky (`.row`) a sloupce layoutu (`.col`):
 
 ```html
 <div class="container">
@@ -27,10 +31,12 @@ Struktura zůstává stejná s trojkou, jen se to chová jinak. Uvidíte. A v tr
 
 Kontejner je obal pro váš layout. Bootstrap má dva typy obalů:
 
-- `.container` je kontejner fixní šířky: má stupně omezené maximální šířkou. Jeho maximální šířky jsou 540px na „small“ šířkách okna, 720px („medium“) 960px („large“) a 1140px („extra large“). 
+- `.container` je kontejner fixní šířky: má stupně omezené maximální šířkou. Jeho maximální šířky jsou 540px na *small* šířkách okna, 720px (*medium*) 960px (*large*) a 1140px (*extra large*). 
 - `.container-fluid` je pružný, takže se roztahuje do plné šířky okna prohlížeče. Ten asi budete využívat méně často.
 
 Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnání pružného i fixního kontejneru: [cdpn.io/e/RpYqwK](http://codepen.io/machal/pen/RpYqwK?editors=1000).
+
+<!-- AdSnippet -->
 
 Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden bod breakpoint pro mobilní zařízení. Psal jsem o tom v článku [o chystaných novinkách](http://www.vzhurudolu.cz/blog/39-bootstrap-4#nova-mrizka-a-flexbox) ve čtyřce.
 
@@ -39,10 +45,10 @@ Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden bod breakpoint pro mobiln
 
 Řádky jsou vodorovná seskupení sloupců rozvržení. Na třídu `.row` nesmíte zapomenout, má totiž dvě funkce:
 
-1. Spuštění layoutu. `.row` je [flex kontejner](css3-flexbox-kontejner.md). 
+1. Spuštění layoutu. `.row` je [flex kontejner](css3-flexbox-kontejner.md), rodič layoutu.
 2. Zarovnávání layoutu. Má totiž nastavený záporný vnější okraj.
 
-Při používání Bootstrapu 3 se na `.row` často zapomínalo. Ve čtyřce už bez řádky není možné udělat layout. To je docela hezká tabletka proti zapomnětlivosti. 
+Při používání Bootstrapu 3 se na `.row` často zapomínalo. Ve čtyřce už bez řádky není možné udělat layout. To je docela účinná tabletka proti zapomnětlivosti. 
 
 Do ukázky se podívejte, co se stane, když řádek omylem vynecháte: [cdpn.io/e/VpGVKm](http://codepen.io/machal/pen/VpGVKm?editors=1000).
 
@@ -67,7 +73,7 @@ Jen pozor, layout neuvidíte na menších velikostech okna. Flexbox vlastnosti v
 
 ## Sloupec zarovnaný do mřížky: `.col-{číslo}` {#col-mrizka}
 
-Bootstrap používá pravidelnou mřížku. Zarovnání do ní je z pohledu uživatele samozřejmě výhodné, proto tyhle třídy použijete velmi často.
+Bootstrap používá pravidelnou mřížku. Zarovnání do ní je z pohledu uživatele, designéra, ale i kodéra výhodné. Věřím, že tyhle třídy použijete velmi často.
 
 Výchozí mřížka je dvanáctisloupcová. K dispozici tedy máte třídy `.col-1` až `.col-12`. 
 
@@ -84,7 +90,7 @@ Výchozí mřížka je dvanáctisloupcová. K dispozici tedy máte třídy `.col
 </div>
 ```
 
-Jistě, že můžete kombinovat mřížku se sloupečky bez přípony:
+Jde kombinovat mřížku se sloupečky bez přípony? Jistě:
 
 ```html
 <div class="container">
@@ -96,9 +102,9 @@ Jistě, že můžete kombinovat mřížku se sloupečky bez přípony:
 </div>
 ```
 
-`.col` třídy se pak díky `flex-grow: 1` dělí rovným dílem o prostor, který zůstává po „mřížkových“ sloupečcích. Opět se tady ale musíte smířit s neposlušností `.col` tříd, které poslouchají pnutí obsahu a ne vždy vám udělají layout tak, jak si ho představujete. [cdpn.io/e/BWOGvq](http://codepen.io/machal/pen/BWOGvq?editors=1000).
+`.col` třídy se pak díky `flex-grow:1` dělí rovným dílem o prostor, který zůstává po „mřížkových“ sloupečcích. Opět se tady ale musíte smířit se vzdorovitostí `.col` tříd, které poslouchají pnutí obsahu a ne vždy vám udělají layout tak, jak si ho představujete. [cdpn.io/e/BWOGvq](http://codepen.io/machal/pen/BWOGvq?editors=1000).
 
-[Pokročilým použitím s preprocesorem Sass](https://v4-alpha.getbootstrap.com/layout/grid/#customizing-the-grid) je samozřejmě možné výchozí počet sloupců zmenit. Stačí přenastavit proměnnou `$grid-columns`.
+[Pokročilým použitím s preprocesorem Sass](https://v4-alpha.getbootstrap.com/layout/grid/#customizing-the-grid) je samozřejmě možné výchozí počet sloupců změnit. Stačí přenastavit proměnnou `$grid-columns`.
 
 
 ## Sloupec responzivní: `.col-{breakpoint}` {#col-breakpoint}
@@ -111,6 +117,8 @@ Abychom mohli udělat různé layouty na různě velkých šířkách okna, nem�
 | Třída      | `.col-` | `.col-sm-` |  `.col-md-` |  `.col-lg-` |  `.col-xl-` |
 
 Třídy platí vždy od aktuálně platného bodu zlomu výše. `.col-sm` pak bude například platit od oken šířky 576 pixelů a výše.
+
+<!-- AdSnippet -->
 
 Třída `.col-` je vlastně synonymum pro trojkovou `.col-xs-`. Tedy layout, který platí na všech breakpointech. Tahle změna se mi ale líbí. Pro nováčky je to jednodušší na přemýšlení.
 
@@ -143,12 +151,12 @@ Třídy je samozřejmě možné úplně v pohodě kombinovat a dělat různé la
 </div>
 ```
 
-Nejlépe to všechno uvidíte v mé další ukázce: [cdpn.io/e/zZJyGN](http://codepen.io/machal/pen/zZJyGN?editors=1000)
+Nejlépe to všechno uvidíte v další mé ukázce: [cdpn.io/e/zZJyGN](http://codepen.io/machal/pen/zZJyGN?editors=1000)
 
 
 ## Posuny: `.offset-{breakpoint}` {#offset}
 
-Sloupečky můžete posunovat směrem doleva přidáním vnějšího okraje třídami z rodiny posunů. Tady je třeba sloupec třetinové délky `.col-md-4`, který posouváme o třetinu zleva `offset-md-4`. 
+Sloupečky můžete posunovat směrem doleva přidáním vnějšího okraje třídami z rodiny posunů. V ukázce třeba mám sloupec třetinové délky `.col-md-4`, který posouváme o třetinu zleva `offset-md-4`. 
 
 ```html
 <div class="container">
@@ -183,7 +191,7 @@ V příkladu se díky tomu na `md` breakpointu, tedy od šířky okna 768 pixel�
 
 ## Změna pořadí {#poradi}
 
-Kromě výšeuvedených způsobů lze měnit pořadí sloupců layoutu pomocí 
+Kromě výše uvedených způsobů lze měnit pořadí sloupců layoutu pomocí třídy `.flex-first`: 
 
 ```html
 <div class="container">
@@ -234,7 +242,7 @@ Zarovnání na vodorovné ose:
 | Mezery kolem sloupců  | `.justify-content-around`  |
 | Mezery mezi sloupci   | `.justify-content-between` |
 
-Vychází to z vlastnosti flex kontejneru [`justify-content`](flexbox-kontejner.md#justify-content). Následuje příklad použití:
+Vychází to z vlastnosti flex kontejneru [`justify-content`](css3-flexbox-kontejner.md#justify-content). Následuje příklad použití:
 
 ```html
 <div class="container">
@@ -255,7 +263,7 @@ Zarovnání na svislé ose:
 | Na střed  | `.align-items-center`      |  `.align-self-center`|
 | Doprava   | `.align-items-end`         |  `.align-self-end`   |
 
-Vychází to z vlastností flex kontejneru [`align-items`](flexbox-kontejner.md#align-items) a flex položky [`align-items`](flexbox-polozky.md#align-self). Příklad použití:
+Vychází to z vlastností flex kontejneru [`align-items`](css3-flexbox-kontejner.md#align-items) a flex položky [`align-self`](css3-flexbox-polozky.md#align-self). Příklad použití:
 
 ```html
 <div class="container">
@@ -269,6 +277,9 @@ Vychází to z vlastností flex kontejneru [`align-items`](flexbox-kontejner.md#
 ```
 Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdnp.io/XMPGjv](http://codepen.io/machal/pen/XMPGjv?editors=1100)
 
+<!-- AdSnippet -->
+
+To je vše. Děkuji za pozornost a ať vám mřížka v Bootstrapu 4 dobře slouží. 
 
 Odkazy na závěr:
 
