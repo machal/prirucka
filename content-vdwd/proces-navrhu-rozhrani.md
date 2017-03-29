@@ -27,6 +27,6 @@ Už během přípravy dokumentové základny a komponent je vhodné vymýšlet s
 
 I tento můj proces se mění podle potřeby. Řeknu dva příklady. Když je třeba úkol jednoduchý, vynechávám skicování. Někdy se zase pro layout webu hodí využít hotovou knihovnu a tak je rozvržení vymyšlené dřív než vizuální design v dokumentové základně.
 
-Většina webařů asi pracuje konvečním způsobem: nakreslí se drátěné modely (wireframy), pak vše grafik nakreslí v Photoshopu, kodér nakóduje šablony a programátor naprogramuje funkční část. [V osmé kapitole](kap-ui-proces.md) zmíním některé z nevýhod konvenčních procesů.
+Většina webařů asi pracuje konvečním způsobem: načrtnou se drátěné modely (wireframy), pak vše grafik nakreslí v Photoshopu, kodér nakóduje šablony a programátor naprogramuje funkční část. [V osmé kapitole](kap-ui-proces.md) zmíním některé z nevýhod konvenčních procesů.
 
 Teď už k našemu fiktivního i Pro potřeby projektu, který za chvíli otevřeme se nám pak bude hodit nástroj, který průzkum umí shrnout na jeden list papíru.
