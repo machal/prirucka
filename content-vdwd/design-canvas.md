@@ -2,9 +2,7 @@
 
 Správný designér hledá řešení, které vyhovuje potřebám uživatele, ale také cílům člověka, firmy nebo instituce, pro kterou web navrhuje. 
 
-Výstupů výzkumné fáze projektu bývá u větších projektů více: persony, uživatelské scénáře, mapy webu, definice klíčových ukazatelů výkonu (KPI) a mnoho dalších. 
-
-User Centered Design Canvas je ale nástroj, který to celé dokáže shrnout na jedné stránce. Jde o variaci na známý Lean Canvas, zjednodušený podnikatelský plán na jedné straně papíru. [leancanvas.cz](http://www.leancanvas.cz/)
+Výstupů výzkumné fáze projektu bývá u větších projektů více: persony, uživatelské scénáře, mapy webu, definice klíčových ukazatelů výkonu (KPI) a mnoho dalších. User Centered Design Canvas je ale nástroj, který to celé dokáže shrnout na jedné stránce.
 
 UCD Canvas může u větších projektů posloužit jako shrnutí, provázející projektem všechny členy týmu. U těch menších se obejdeme bez dalších výstupů.
 
@@ -14,14 +12,15 @@ UCD Canvas může u větších projektů posloužit jako shrnutí, provázejíc�
 
 User Centered Design Canvas má čtyři hlavní oblasti:
 
-* *Typy uživatelů* (Users)  
+1. *Typy uživatelů*
 Všechny kategorie možných uživatelů webu nebo produktu.
-* *Vlastnosti uživatelů* (Users Side)  
+2. *Vlastnosti uživatelů*
 Problémy, motivy a obavy uživatelů.
-* *Vlastnosti byznysu* (Business Side)    
+3. *Vlastnosti byznysu*
 Konkurenční výhody, alternativy k produktu a řešení problémů uživatelů, která nabídneme.
-* *Jedinečný prodejní argument* (Unique Value Proposition)  
+4. *Jedinečný prodejní argument*
 Důvod, proč by uživatelé měli koupit zrovna váš produkt a ne ten konkurenční.
 
-Tím se dostáváme k příkladu, kterým se v knize zabýváme. Představíme si jej tím, že si pro něj sestavíme UCD Canvas.
+Možná jste si všimli, že mluvíme o variaci na známý Lean Canvas, zjednodušený podnikatelský plán na jedné straně papíru. Ano, je to tak. Ten už rámec obsahu knihy překračuje skutečně hodně, takže nabídnu alespoň odkaz. [leancanvas.cz](http://www.leancanvas.cz/)
 
+Tím se dostáváme k ukázkovému příkladu, kterým se v knize budeme zabývat. Představíme si jej tím, že si pro něj sestavíme UCD Canvas.

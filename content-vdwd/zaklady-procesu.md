@@ -2,8 +2,6 @@
 
 V dalších kapitolách budeme navrhovat a psát kód jednoduché responzivní webové stránky. Při návrhu, ale i implementaci budeme dělat rozhodnutí, která by v praxi vycházela z předchozích fází procesu návrhu webu. 
 
-O těch se tady jen stručně zmíním, ale budu alespoň té dobroty, kterou my, hoši pocházející z moravských vesnic, překvapujeme kolegy v pražských webových studiích ještě než se z nás stanou praví Pražáci… Budu té dobroty, že vám doporučím další zdroje ke studiu.
-
 Celý proces tvorby webu zjednoduším do dvou kroků. Ony to vlastně kroky nejsou. Je to nekonečný koloběh, jehož fáze se v praxi velmi prolínají.
 
 ![Zjednodušený proces tvorby webu](dist/images/original/vdwd/proces-tvorby.png)

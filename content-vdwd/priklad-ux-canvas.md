@@ -2,19 +2,17 @@
 
 Jaký zvolit příklad pro knihu? Nebudete mi věřit, ale tohle byla jedna z těžší částí práce na ní.
 
-Neměl by to být jednoduchý prezentační web, ale zase ne všichni dělají komplexní webové aplikace. Někde mezi statickým webem a aplikací leží e-shopy, prezentační weby s výraznými aplikačními prvky v podobě objednávkového procesu. OK, tohle byla ta jednodušší fáze výběru.
+Neměl by to být až moc jednoduchý prezentační web. Ne všichni ale dělají komplexní webové aplikace. Někde mezi statickým webem a aplikací leží e-shopy, prezentační weby s výraznými aplikačními prvky v podobě objednávkového procesu. OK, bude to elektronický obchod.
 
-Jaký e-shop to ale, do prkýnka, bude? V zemi, kde jich je pomalu více než nakupujících? V zemi, kde v každém oboru narazíte na stovky konkurečních obchodů provozovaných z garáže začínajících e-shopařů nebo obýváků maminkatelek? V zemi, kde dříve nebo později ve vašem segmentu přistane zelený mimozemšťan Alza a s gustem vetřelce vyžere díru do koláče tržního podílu? 
+Jaký e-shop to ale, do prkýnka, bude? V zemi, kde jich je pomalu více než nakupujících? Ono se ale často stačí podívat přes rameno své milé ženě a zamyslet se, jaké problémy při online nakupování řešíme. Řešíme problémy s dětmi. 
 
-Ono se ale často stačí podívat přes rameno své milé ženě a zamyslet se, jaké problémy při online nakupování řešíme. Řešíme problémy s dětmi. 
+Oba naši chlapečkové chodili nebo chodí do skvělé kunratické lesní školky. Jsou pořád venku a děsně jim to prospívá. No a víte jak se to říká: špatné počasí neexistuje, je to vždy jen problém špatného oblečení. 
 
-Oba chlapečkové chodili nebo chodí do skvělé kunratické lesní školky. Jsou pořád venku a děsně jim to prospívá. No a víte jak se to říká: špatné počasí neexistuje, je to vždy jen problém špatného oblečení. 
+Proto žena často nakupuje pohorky, nepromokavé kalhoty a bundy s vodním sloupcem, o kterém se mně nikdy ani nesnilo. Je z ní úplná expertka na miniaturní outdoorové vybavení. Jenže získat ty vědomosti nebyla úplná sranda. Navíc nakupuje na různých e-shopech a moc by se jí líbilo, když by vše vyřešil jen jeden. Právě teď jsme doma v obýváku jeden fiktivní založili. Jmenuje *ForestKid* a v knížce mu uděláme prima web, uvidíte.
 
-Proto žena často nakupuje pohorky, nepromokavé kalhoty a bundy s vodním sloupcem, o kterém se mně nikdy ani nesnilo. Je z ní úplná expertka na miniaturní outdoorové vybavení. Jenže získat ty vědomosti nebyla úplná sranda. Navíc nakupuje na různých e-shopech a moc by se jí líbilo, když by vše vyřešil jen jeden. Právě teď jsme ho doma v obýváku založili. Jmenuje *ForestKid* a bude mít prima web, uvidíte.
+Pojďme na první krok. Vezměme prázdnou tabulku našeho UCD canvasu a načrtněme si do ni tržního prostředí našeho e-shopu.
 
-Vezměme prázdnou tabulku našeho UCD canvasu a načrtněme si do ni situaci kolem potenciálních uživatelů a tržního prostředí.
-
-## UCD Canvas pro e-shop ForestKid
+## UCD Canvas pro fiktivní e-shop ForestKid
 
 ### 1. Byznys
 
@@ -42,7 +40,7 @@ Veškeré vybavení se prodává na jednom místě a s jedním poštovným. Sou�
 
 ### 7. Alternativy k ForestKid
 
-Přímá konkurence (např. OutdoorKids.cz, OutdoorBaby.cz) má širokou nabídku, ale horší komfort nákupu a chybí jim obsah sloužící k rozhodování. Specializované obchody (např. Fare.cz, VeselaNohavice.cz) nabízí jen jeden typ produktů a chybí zcela nezávislé hodnocení. Uživatelé občas využívají také obecné e-shopy jako Sportisimo.cz. Hlavně jejich výprodejové akce.
+Přímá konkurence (např. OutdoorKids.cz, OutdoorBaby.cz) má širokou nabídku, ale horší komfort nákupu a chybí jim obsah sloužící k rozhodování. Specializované obchody (např. Fare.cz, VeselaNohavice.cz) nabízí jen jeden typ produktů a postrádají nezávislé hodnocení. Cílová skupina občas využívá také obecné e-shopy jako Sportisimo.cz. Hlavně jejich výprodejové akce.
 
 ### 8. Jedinečný prodejní argument
 
@@ -54,6 +52,6 @@ Fajn, osm bodů design canvasu, bychom měli. Co by mělo následovat? Příprav
 
 Tady ovšem zmáčkneme tlačítko pro rychlý posun filmu vpřed a tím opět proces tvorby webu trošku zjednodušíme. Představíme si, že tohle všechno máme hotovo a díky *Imaginární copywriterce* se nám vyloupl obsah jedné konkrétní stránky, kterou budeme dál webdesignérsky opečovávat.
 
-Nejvýhodnější je začít od nejzákladnější entity, což je v případě e-shopu  produktu a stránka s jeho prezentací. Odmyslíme si množství variant detailu produktu, které bychom si při standardní práci na webu připravili jako podklad pro návrh. Představíme si prostě jednu, už hotovou stránku.
+Nejvýhodnější je začít od základního obsahového prvku, což je v případě e-shopu produkt. 
 
 
