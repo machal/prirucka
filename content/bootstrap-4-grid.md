@@ -111,10 +111,14 @@ Jde kombinovat mřížku se sloupečky bez přípony? Jistě:
 
 Abychom mohli udělat různé layouty na různě velkých šířkách okna, nemůžeme žít bez responzivních přípon:
 
+<div class="rwd-scrollable" markdown="1">
+
 | Body zlomu | Extra small  |  Small  | Medium | Large | Extra large |
 | -----------| ------------ |  -----  | ------ | ----- | ----------- |
-| Šířka okna | <576px | ≥576px | ≥768px | ≥992px | ≥1200px |
+| Šířka okna od | 0px | 576px | 768px | 992px | 1200px |
 | Třída      | `.col-` | `.col-sm-` |  `.col-md-` |  `.col-lg-` |  `.col-xl-` |
+
+</div>
 
 Třídy platí vždy od aktuálně platného bodu zlomu výše. `.col-sm` pak bude například platit od oken šířky 576 pixelů a výše.
 
@@ -234,6 +238,8 @@ Použití flexboxu otevřelo v mřížce Bootstrapu 4 kromě jiného také výbo
 
 Zarovnání na vodorovné ose:
 
+<div class="rwd-scrollable" markdown="1">
+
 | Zarovnání             | Celý layout (`.row`)       |
 | ----------------------| ---------------------------|
 | Doleva                | `.justify-content-start`   |
@@ -241,6 +247,8 @@ Zarovnání na vodorovné ose:
 | Doprava               | `.justify-content-end`     |
 | Mezery kolem sloupců  | `.justify-content-around`  |
 | Mezery mezi sloupci   | `.justify-content-between` |
+
+</div>
 
 Vychází to z vlastnosti flex kontejneru [`justify-content`](css3-flexbox-kontejner.md#justify-content). Následuje příklad použití:
 
@@ -257,11 +265,15 @@ Pro tenhle kód se první sloupec přilepí doleva a druhý doprava. Volný pros
 
 Zarovnání na svislé ose:
 
+<div class="rwd-scrollable" markdown="1">
+
 | Zarovnání | Celý layout (`.row`)       |  Sloupec (`.col`)    |
 | ----------| ---------------------------|----------------------| 
 | Doleva    | `.align-items-start`       |  `.align-self-start` |
 | Na střed  | `.align-items-center`      |  `.align-self-center`|
 | Doprava   | `.align-items-end`         |  `.align-self-end`   |
+
+</div>
 
 Vychází to z vlastností flex kontejneru [`align-items`](css3-flexbox-kontejner.md#align-items) a flex položky [`align-self`](css3-flexbox-polozky.md#align-self). Příklad použití:
 
