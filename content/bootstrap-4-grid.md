@@ -40,6 +40,8 @@ Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnán�
 
 Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden bod breakpoint pro mobilní zařízení. Psal jsem o tom v článku [o chystaných novinkách](http://www.vzhurudolu.cz/blog/39-bootstrap-4#nova-mrizka-a-flexbox) ve čtyřce.
 
+V dalších ukázkách kódu už budu `.container` pro zjednodušení vynechávat.
+
 
 ## Řádek rozvržení {#row}
 
@@ -58,11 +60,9 @@ Do ukázky se podívejte, co se stane, když řádek omylem vynecháte: [cdpn.io
 Sloupec je základní stavební jednotka layoutů v Bootstrapu. Nově je ve verzi 4 možné zapsat sloupec jednoduše pomocí prvku s třídou `.col` bez přípony. 
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col"> <!-- Sloupec rozvržení --> </div>
-    <div class="col"> <!-- Sloupec rozvržení --> </div>
-  </div>
+<div class="row">
+  <div class="col"> <!-- Sloupec rozvržení --> </div>
+  <div class="col"> <!-- Sloupec rozvržení --> </div>
 </div>
 ```
 
@@ -82,23 +82,19 @@ Výchozí mřížka je dvanáctisloupcová. K dispozici tedy máte třídy `.col
 *Vizualizace rozvržení layoutu webu do dvanáctisloupcové mřížky. [getbootstrap.com](http://getbootstrap.com/)*
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-4"> <!-- 1/3 šířky --> </div>
-    <div class="col-8"> <!-- 2/3 šířky --> </div>
-  </div>
+<div class="row">
+  <div class="col-4"> <!-- 1/3 šířky --> </div>
+  <div class="col-8"> <!-- 2/3 šířky --> </div>
 </div>
 ```
 
 Jde kombinovat mřížku se sloupečky bez přípony? Jistě:
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col"> <!-- 1/4 šířky --> </div>  
-    <div class="col-6"> <!-- 1/2 šířky --> </div>  
-    <div class="col"> <!-- 1/4 šířky --> </div>
-  </div>
+<div class="row">
+  <div class="col"> <!-- 1/4 šířky --> </div>  
+  <div class="col-6"> <!-- 1/2 šířky --> </div>  
+  <div class="col"> <!-- 1/4 šířky --> </div>
 </div>
 ```
 
@@ -128,14 +124,12 @@ Třída `.col-` je vlastně synonymum pro trojkovou `.col-xs-`. Tedy layout, kte
 
 
 ```html
-<div class="container">
-  <div class="row">
+<div class="row">
   <div class="col-sm-4"> 
     <!-- třetina od „sm“ výše --> 
   </div>  
   <div class="col-sm-8"> 
     <!-- dvě třetiny od „sm“ výše --> 
-  </div>
   </div>
 </div>
 ```
@@ -143,14 +137,12 @@ Třída `.col-` je vlastně synonymum pro trojkovou `.col-xs-`. Tedy layout, kte
 Třídy je samozřejmě možné úplně v pohodě kombinovat a dělat různé layouty pro různá rozlišení:
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-6 col-sm-4"> 
-      <!-- polovina na „xs“, třetina od „sm“ výše --> 
-    </div>  
-    <div class="col-6 col-sm-8"> 
-      <!-- polovina na „xs“, dvě třetiny od „sm“ výše --> 
-    </div>
+<div class="row">
+  <div class="col-6 col-sm-4"> 
+    <!-- polovina na „xs“, třetina od „sm“ výše --> 
+  </div>  
+  <div class="col-6 col-sm-8"> 
+    <!-- polovina na „xs“, dvě třetiny od „sm“ výše --> 
   </div>
 </div>
 ```
@@ -163,12 +155,10 @@ Nejlépe to všechno uvidíte v další mé ukázce: [cdpn.io/e/zZJyGN](http://c
 Sloupečky můžete posunovat směrem doleva přidáním vnějšího okraje třídami z rodiny posunů. V ukázce třeba mám sloupec třetinové délky `.col-md-4`, který posouváme o třetinu zleva `offset-md-4`. 
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-md-4 offset-md-4"> 
-      <!-- posunutý obsah --> 
-    </div>  
-  </div>
+<div class="row">
+  <div class="col-md-4 offset-md-4"> 
+    <!-- posunutý obsah --> 
+  </div>  
 </div>
 ```
 
@@ -182,11 +172,9 @@ Třída `.push-` funguje podobně jako offsety. Prostě v daném bodu zlomu posu
 Jde to hezky využít pro změnu pořadí prvků:
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-md-9 push-md-3"><!-- 1. --></div>  
-    <div class="col-md-3 pull-md-9"><!-- 2. --></div>      
-  </div>
+<div class="row">
+  <div class="col-md-9 push-md-3"><!-- 1. --></div>  
+  <div class="col-md-3 pull-md-9"><!-- 2. --></div>      
 </div>
 ```
 
@@ -198,12 +186,10 @@ V příkladu se díky tomu na `md` breakpointu, tedy od šířky okna 768 pixel�
 Kromě výše uvedených způsobů lze měnit pořadí sloupců layoutu pomocí třídy `.flex-first`: 
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-4"><!-- … --></div>
-    <div class="col-4"><!-- … --></div>
-    <div class="col-4 flex-first"><!-- V prohlížeči bude první --></div>  
-  </div>
+<div class="row">
+  <div class="col-4"><!-- … --></div>
+  <div class="col-4"><!-- … --></div>
+  <div class="col-4 flex-first"><!-- V prohlížeči bude první --></div>  
 </div>
 ```
 
@@ -217,15 +203,13 @@ To je věc nová pro čtvrtou verzi. Ale jak sami vidíte, pro změnu pořadí j
 Velmi užitečné je, že layout můžete zanořovat. Prostě přidejte další řádku layoutu – třídu `.row`:
 
 ```html
-<div class="container">
-  <div class="row">
-    <div class="col-9">
-      <div class="row">
-        <div class="col-sm-6"><!-- … --></div>  
-        <div class="col-sm-6"><!-- … --></div>            
-      </div>
-    </div>  
-  </div>
+<div class="row">
+  <div class="col-9">
+    <div class="row">
+      <div class="col-sm-6"><!-- … --></div>  
+      <div class="col-sm-6"><!-- … --></div>            
+    </div>
+  </div>  
 </div>
 ```
 
@@ -253,11 +237,9 @@ Zarovnání na vodorovné ose:
 Vychází to z vlastnosti flex kontejneru [`justify-content`](css3-flexbox-kontejner.md#justify-content). Následuje příklad použití:
 
 ```html
-<div class="container">
-  <div class="row justify-content-between">
-    <div class="col-3"> <!-- … --> </div>
-    <div class="col-3"> <!-- … --> </div>
-  </div>
+<div class="row justify-content-between">
+  <div class="col-3"> <!-- … --> </div>
+  <div class="col-3"> <!-- … --> </div>
 </div>
 ```
 
@@ -278,13 +260,11 @@ Zarovnání na svislé ose:
 Vychází to z vlastností flex kontejneru [`align-items`](css3-flexbox-kontejner.md#align-items) a flex položky [`align-self`](css3-flexbox-polozky.md#align-self). Příklad použití:
 
 ```html
-<div class="container">
-  <div class="row align-items-center">
-    <div class="col-3"> <!-- … --> </div>
-    <div class="col-3"> <!-- … --> </div>
-    <div class="col-3"> <!-- … --> </div>
-    <div class="col-3 align-self-end"> <!-- … --> </div>
-  </div>
+<div class="row align-items-center">
+  <div class="col-3"> <!-- … --> </div>
+  <div class="col-3"> <!-- … --> </div>
+  <div class="col-3"> <!-- … --> </div>
+  <div class="col-3 align-self-end"> <!-- … --> </div>
 </div>
 ```
 Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdnp.io/XMPGjv](http://codepen.io/machal/pen/XMPGjv?editors=1100)
