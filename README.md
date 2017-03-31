@@ -48,6 +48,18 @@ Lorem ipsum lorem ipsum:
 ```
 - **Méně důležité** - bez odkazu (máme Google, že…)
 
+### Obrázky
+
+- Bílé pozadí. Obsah až ke krajům.
+- 16:9. Minimálně 2000 pixelů široké v 300dpi. Kvůli případnému tisku.
+- Zezhora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
+
+Standardně vkládáme jako obrázek:
+
+```html
+![Podíl mobilů](dist/images/original/statistika-mobily.png)
+```
+
 ### Video
 
 Ideální je vložení pomocí HTML kódu. Markdown je tady nespolehlivý:
