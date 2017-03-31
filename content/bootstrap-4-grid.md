@@ -107,7 +107,7 @@ Jde kombinovat mřížku se sloupečky bez přípony? Jistě:
 
 Abychom mohli udělat různé layouty na různě velkých šířkách okna, nemůžeme žít bez responzivních přípon:
 
-<div class="rwd-scrollable" markdown="1">
+<div class="rwd-scrollable font-size-08em" markdown="1">
 
 | Body zlomu | Extra small  |  Small  | Medium | Large | Extra large |
 | -----------| ------------ |  -----  | ------ | ----- | ----------- |
@@ -222,7 +222,7 @@ Použití flexboxu otevřelo v mřížce Bootstrapu 4 kromě jiného také výbo
 
 Zarovnání na vodorovné ose:
 
-<div class="rwd-scrollable" markdown="1">
+<div class="rwd-scrollable font-size-08em" markdown="1">
 
 | Zarovnání             | Celý layout (`.row`)       |
 | ----------------------| ---------------------------|
@@ -247,7 +247,7 @@ Pro tenhle kód se první sloupec přilepí doleva a druhý doprava. Volný pros
 
 Zarovnání na svislé ose:
 
-<div class="rwd-scrollable" markdown="1">
+<div class="rwd-scrollable font-size-08em" markdown="1">
 
 | Zarovnání | Celý layout (`.row`)       |  Sloupec (`.col`)    |
 | ----------| ---------------------------|----------------------| 
