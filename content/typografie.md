@@ -13,15 +13,15 @@ Typografie nemá exaktní pravidla, a v takové situaci mě pro potřeby předá
 
 ## Časté typografické chyby
 
-![](dist/images/original/typografie-16.png)
+![](dist/images/original/typografie-16.jpg)
 
 **1) Děsně dlouhé řádky.** Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl zabrat více než 75 znaků, aby oči nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
 
-![](dist/images/original/typografie-17.png)
+![](dist/images/original/typografie-17.jpg)
 
 **2) Špatný kontrast a další technické parametry.** Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastchecker.com](http://contrastchecker.com/).
 
-![](dist/images/original/typografie-18.png)
+![](dist/images/original/typografie-18.jpg)
 
 **3) Nesprávné znaky.** Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky). Není to žádná buzerace typografických snobů. Prostě se to lépe čte.   Typografický tahák od Beneš a Michl vám může velmi pomoci. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
 

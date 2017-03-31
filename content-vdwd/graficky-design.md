@@ -4,7 +4,7 @@ Grafický designér navrhuje firemní identitu, reklamní plochy, obaly, aplikac
 
 Pojďme se o této části návrhu webu pobavit alespoň v nejzákladnějších obrysech. Otevřeme si k tomu například aktuální web jednoho z nejzkušenějších českých webových grafických designérů, Jiřího Tvrdka.
 
-![Tvrdek.cz](dist/images/original/vdwd/tvrdek-cz.png)
+![Tvrdek.cz](dist/images/original/vdwd/tvrdek-cz.jpg)
 
 *Web Jiřího Tvrdka. [tvrdek.cz](http://www.tvrdek.cz/)*
 

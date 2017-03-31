@@ -2,7 +2,7 @@
 
 Proč promeškat příležitost ukázat si graf s rostoucí návštěvností z mobilních zařízení? Jdeme na to.
 
-![Podíl mobilů](dist/images/original/vdwd/statistika-mobily.png)
+![Podíl mobilů](dist/images/original/vdwd/statistika-mobily.jpg)
 
 *Podíl mobilních prohlížečů na celkovém počtu zobrazení stránek k polovině roku 2016. Zdroj: Gemius SA, gemiusTraffic,  Rankings.cz.*
 
