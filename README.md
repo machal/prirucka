@@ -50,14 +50,16 @@ Lorem ipsum lorem ipsum:
 
 ### Obrázky
 
+- Zatím jen JPG nebo PNG.
 - Bílé pozadí. Obsah až ke krajům.
 - 16:9. Minimálně 2000 pixelů široké v 300dpi. Kvůli případnému tisku.
 - Zezhora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
+- Font vždy Foro Light a jeho varianty. Minimální velikost písma 40pt.
 
 Standardně vkládáme jako obrázek:
 
 ```html
-![Podíl mobilů](dist/images/original/statistika-mobily.png)
+![Podíl mobilů](dist/images/original/statistika-mobily.jpg)
 ```
 
 ### Video
