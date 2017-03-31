@@ -6,7 +6,7 @@ Výstupů výzkumné fáze projektu bývá u větších projektů více: persony
 
 UCD Canvas může u větších projektů posloužit jako shrnutí, provázející projektem všechny členy týmu. U těch menších se obejdeme bez dalších výstupů.
 
-![User Centered Design Canvas](dist/images/original/design-canvas.jpg)
+![User Centered Design Canvas](dist/images/original/vdwd/design-canvas.jpg)
 
 *User Centered Design Canvas. [ucdc.therectangles.com](https://ucdc.therectangles.com/)*
 
