@@ -1,24 +1,29 @@
-# Dokument jako základ
+# Základna jako první vrstva 
 
-Dokument je základ všeho, co na webu stavíte. Ať už to berete technicky nebo designérsky.
+Vrstvení. Tak bych jedním slovem popsal svůj proces návrhu a implementace webových rozhraní. A základna je ta první z vrstev.
 
-Blogy se vizuálně od dokumentů moc nevzdalují, e-shopy už trochu více. Čistokrevné aplikace jako třeba redakční systémy, kalkulačky nebo dashboardy už docela hodně. 
+*TODO img*
 
-Nic to ale nemění na tom, že někde dole, i pod napohled složitým rozhraním nebo komplexní javascriptovou aplikací žije strukturovaný dokument se styly, ať už v podobě vygenerované na serveru nebo až v prohlížeči. 
+*Základna obsahuje společné elementy grafického designu: barvy, typografii, velikostní stupnici, grafický styl a další prvky. Z nich pak vychází komponenty uživatelského rozhraní, obohacené o layout a chování.*
 
-To, že si *můžete* zvolit variantu jednoduchého dokumentu předgenerovaného na serveru je unikátní vlastnost webu. Ta mimojiné umožňuje zachovávat vynikající zpětnou i dopřednou kompatibilitu. 
+Proč zrovna takhle? Vrstvení totiž považuji za jednu ze základních (a skvělých)
+vlastností média, kterému říkáme Web. Je to podstata fungování technologií a technologie dávají mantinely. Stavění od základny je fajn ještě z jednoho důvodu. Umožní nám rozfázovat proces návrhu tak, abychom se nezabývali přiliš mnoha problémy najednout.
 
-Podíváme se teď, co může filozofie „začni dokumentem“ přinést vývojářům a co designérům. 
+Vezmeme to postupně. Nejdřív k tomu technologickému pozadí.
 
-## „Začni dokumentem“ pro vývojáře: stavění na HTML je stabilnější
+## Web je vrstvený z podstaty
 
-Samozřejmě, některé webové aplikace je neefektivní na statickém HTML dokumentu stavět. Současný technologický stav webdesignu to také nečiní efektivním. Serverová rozšíření frontendových frameworků jako je Angular nebo React nejsou ve webových týmech moc častá a taky zatím jsou prostě příliš nová.
+To, co vidíte na povrchu, je možné jen díky správnému fungování skrytých vrstev. Technicky řečeno: zobrazení HTML stránky vyžaduje URL adresu, která vyžaduje HTTP protokol, který je zase postavený na vrstvě TCP/IP.
 
-Velmi často je ale stavění na serveru předgenerovaném dokumentu výhodné. A to hned z několika důvodů:
+My ale tak hluboko nepůjdeme. Potřebujete znát hlavně vrstvení podle tří hlavních technologií pro tvorbu webu: HTML, CSS, Javascript.
+
+*TODO img*
+
+*HTML slouží k vyznačení toho nejdůležitějšího: obsahu, jeho struktury a významu. CSS nastavuje vzhled a Javascript zase definuje chování stránky.*
 
 ### Rozšiřuje to kompatibilitu a možnosti náhradních řešení
 
-Selže javascriptová aplikační vrstva? I ten nejexotičtější nebo prastarý prohlížeč vám stále zobrazí stylovaný HTML dokument. Jeremy Keith takto na WebExpo 2015 citoval Jake Archibalda:
+Je to skvěle vymyšleno. Když selže Javascript, zobrazí se stylovaný obsah. A když selže i CSS, dostanete alespoň obsah. Vymyšlené to je dobře i z pohledu kompatibility. I ten nejexotičtější nebo prastarý prohlížeč vám při dodržení správného postupu zobrazí strukturovaný obsah. Jeremy Keith takto na WebExpo 2015 citoval Jake Archibalda:
 
 > Když selže výtah, je nepoužitelný. Když ale selžou jezdící schody, stanou se z nich prostě schody. Měli bychom budovat jezdící schody, ne výtahy.
 
@@ -28,6 +33,7 @@ Jeremyho přednáška „Enhance!“ je dostupná online. [vrdl.in/enhance](http
 
 I přes to, že se Google v získávání informací o stránce z verze vygenerované Javascriptem stále zlepšuje, kvalitní HTML podklad je spolehlivější zdroj. Nemluvě o tom, že Seznam ke dni psaní neumí obsah generovaný Javascriptem indexovat. Podívejte se na přednášku Jana Tichého „Vyhledávače a Javascript“. [youtu.be/kU_M1elyunw](https://youtu.be/kU_M1elyunw)
 
+
 ### Zpřístupňuje to obsah širší cílové skupině
 
 Přístupnost. Široká škatule, do které patří první i kompatibilita a vyhledávače, ale také usnadnění přístupu hendikepovaným uživatelům. A pozor, nejsou to jen lidé s oční vadou nebo jiným fyzickým omezením. Hendikepovaná může být i zdravá dvacetiletá studentka, které některé rozšíření v prohlížeči zablokuje zrovna váš javascriptový soubor. Tohle je web, takové věci se stávají běžně.
@@ -36,17 +42,61 @@ Web má dokument v DNA, ať se nám to líbí nebo ne. Vznikl přeci jako síť 
 
 > `<!DOCTYPE html>` slouží jako důležitá připomínka toho, že i když navrhujete interakčně složité a dynamické rozhraní, stále prostě jen vkládáte obsah do okna prohlížeče.
 
-Mít pod aplikací statické HTML není žádná vývojářská povinnost. Všichni bychom ale měli vědět, co přesně to uživatelům přináší. Snad mi rozumíte. Pojďme se na to ještě podívat z pohledu návrhu rozhraní.
+### A co javascriptové aplikace?
+
+Některé webové aplikace na přítomnost Javascriptu plně spoléhají. V HTML kódu pak často bývá jen odkaz na skript. Až ten obstarává vygenerování obsahu a stylů. Může být a někdy to skoro jinak nejde. Jen je dobré znát nevýhody řešení: horší indexování vyhledávači, variabilitu náhradních řešení a celkovou přístupnost obsahu. 
+
+### Kaskádové (a vrstvené) CSS
+
+Pokud má Web vrstvení v DNA, pak CSS je takový malý vrstvící maniak. Pozor na něj. Následuje nenápadný (a pro kodéry nudný) kousek kódu, který ale dost přesně popisuje důvody, proč vás s těmi vrstvami tak otravuji:
+
+```css
+/* Základna */
+html     { color: navy  }
+table    { margin-bottom: 1em }
+
+/* Komponenta */
+.table     { font-size: 80% }
+.table-bg  { background: ivory }
+```
+
+Pro celý web si barvu písma nastavíme námořnickou modř. Všem tabulkám pak v základně spodní vnější okraj na velikost písma. Tabulky mimochodem mezitím přebraly styl předchozího písma.  V další vrstvě, v komponentách, pak konkrétním skupinám tabulek pojmenovaným `.table` ještě zmenšujeme výchozí velikost písma.
+
+Je to úspornější a efektivnější způsob práce než v případě alternativu, kterou by mohl zvolit kodér bez jasně daných pravidel pro základnu stylu webu:
+
+```css
+/* Špatně: komponenty bez společné základny */
+
+.table { 
+  color: navy; 
+  font-size: 80%; 
+  margin-bottom: 1em; 
+}
+
+.table-bg  { 
+  color: navy; 
+  font-size: 80%; 
+  margin-bottom: 1em; 
+  background: ivory; 
+}
+```
+
+I když bude výsledek stejný jako v předchozí ukázce, kodér bude z takového řešení brzy nešťastný. Špatně se bude globálně měnit, špatně se bude číst a zpětně upravovat. Ve výsledku bude jen náchylnější k chybám a pomalejší pro práci.
+
+Podobná řešení často dělají kodéři bez jasně definované struktury vizuálního stylu. Designéři jim mohou velmi pomoci, když budou pracovat systémem podobným tomu, který zde ukazuji. 
 
 
-## „Začni dokumentem“ pro designéry: navrhujeme od obsahu, nikoliv od layoutu
+
+## Pro designéry: navrhujeme od obsahu, nikoliv od layoutu
 
 Asi většina webů dnes vzniká v kreslícím nástroji jako je Photoshop nebo Sketch. Grafici si otevřou prázdný dokument, plochu jako ruzyňská přistávací dráha. 
 
-Ta svádí k tomu, že první věc, kterou tam udělají je rozvržení, layout. Až pak se přes komponenty rozhraní propracují k obsahu a jeho vlastnostem. Poznáváte se? Nedivím se, je to intuitivní proces, který vám nenápadně nadiktoval nástroj, který používáte. 
+Ta svádí k tomu, že první věc, kterou tam udělají, je rozvržení. Layout. Až pak se přes komponenty rozhraní propracují k obsahu a jeho vlastnostem. Poznáváte se? Nedivím se, je to intuitivní proces, který vám nenápadně nadiktoval nástroj, který používáte. 
 
-Když jsem někdy před rokem 2000 dělal své první weby za peníze, zadání bylo jednoduché: vezmi tenhle tištěný katalog a převeď jej do HTML. Vzniklý web měl pevně dané rozměry a všelijak napodoboval vzhled katalogu, který jsem měl položený vedle monitoru s rozlišením 640 na 480 pixelů. Webdesign byl v té době naprosto v područí tiskového designu. 
+Když jsem někdy před rokem 2000 dělal své první weby za peníze, zadání bylo jednoduché: vezmi tenhle tištěný katalog a převeď jej do HTML. Vzniklý web měl pevně dané rozměry a všelijak napodoboval vzhled katalogu, který jsem měl položený vedle monitoru s rozlišením 800 na 600 pixelů. Webdesign byl v té době naprosto v područí tiskového designu. 
 
 Responzivní design je ovšem zásadní emancipační vlnou. Teď už víme, že pracujeme na novém médiu. Médiu, které nemá pevné rozměry. Proč tedy napodobovat procesy tiskařů a navrhovat nejprve layout? 
 
 Layout má vznikat až z potřeb obsahu, vycházet z dokumentu. Pojďme to v knížce vzít právě tímto postupem. Vyladit obsah, vymyslet typografii a grafický charakter. Pak teprve navrhnout komponenty typu navigace a až nám obsah začne přetékat z Ruzyně, teprve pak jej zalomit layoutem.
+
+
