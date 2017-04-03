@@ -2,7 +2,7 @@
 
 Vrstvení. Tak bych jedním slovem popsal svůj proces návrhu a implementace webových rozhraní. A základna je ta první z vrstev.
 
-*TODO img*
+![Dvě vrstvy: základna a komponenty](dist/images/vdwd/zakladna-komponenty.jpg)
 
 *Základna obsahuje společné elementy grafického designu: barvy, typografii, velikostní stupnici, grafický styl a další prvky. Z nich pak vychází komponenty uživatelského rozhraní, obohacené o layout a chování.*
 
@@ -18,7 +18,7 @@ To, co vidíte na povrchu, je možné jen díky správnému fungování skrytýc
 
 My ale tak hluboko nepůjdeme. Potřebujete znát hlavně vrstvení tří hlavních technologií pro tvorbu webu: HTML, CSS a Javascriptu.
 
-*TODO img*
+![HTML, CSS, Javascript](dist/images/vdwd/html-css-js.jpg)
 
 *HTML slouží k vyznačení toho nejdůležitějšího: obsahu, jeho struktury a významu. CSS nastavuje vzhled a Javascript zase definuje chování stránky.*
 
