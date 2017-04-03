@@ -7,9 +7,10 @@ Vrstvení. Tak bych jedním slovem popsal svůj proces návrhu a implementace we
 *Základna obsahuje společné elementy grafického designu: barvy, typografii, velikostní stupnici, grafický styl a další prvky. Z nich pak vychází komponenty uživatelského rozhraní, obohacené o layout a chování.*
 
 Proč zrovna takhle? Vrstvení totiž považuji za jednu ze základních (a skvělých)
-vlastností média, kterému říkáme Web. Je to podstata fungování technologií a technologie dávají mantinely. Stavění od základny je fajn ještě z jednoho důvodu. Umožní nám rozfázovat proces návrhu tak, abychom se nezabývali přiliš mnoha problémy najednout.
+vlastností média, kterému říkáme Web. Je to podstata fungování technologií a technologie dávají mantinely designu. Stavění od základny je fajn ještě z jednoho důvodu. Umožní nám rozfázovat proces návrhu tak, abychom se nezabývali přiliš mnoha problémy najednou.
 
 Vezmeme to postupně. Nejdřív k tomu technologickému pozadí.
+
 
 ## Web je vrstvený z podstaty
 
@@ -93,10 +94,10 @@ Asi většina webů dnes vzniká v kreslícím nástroji jako je Photoshop nebo 
 
 Ta svádí k tomu, že první věc, kterou tam udělají, je rozvržení. Layout. Až pak se přes komponenty rozhraní propracují k obsahu a jeho vlastnostem. Poznáváte se? Nedivím se, je to intuitivní proces, který vám nenápadně nadiktoval nástroj, který používáte. 
 
-Když jsem někdy před rokem 2000 dělal své první weby za peníze, zadání bylo jednoduché: vezmi tenhle tištěný katalog a převeď jej do HTML. Vzniklý web měl pevně dané rozměry a všelijak napodoboval vzhled katalogu, který jsem měl položený vedle monitoru s rozlišením 800 na 600 pixelů. Webdesign byl v té době naprosto v područí tiskového designu. 
+Vývojář, který pak výsledný soubor z Photoshopu zpracovává, musí namísto převodu grafického systému do CSS předvádět onen nesystematický způsob zápisu z ukázky výše.
 
-Responzivní design je ovšem zásadní emancipační vlnou. Teď už víme, že pracujeme na novém médiu. Médiu, které nemá pevné rozměry. Proč tedy napodobovat procesy tiskařů a navrhovat nejprve layout? 
+Layout má vznikat až z potřeb obsahu, vycházet z dokumentu. Pojďme to v knížce vzít právě tímto postupem. Máme vyladěný obsah, teď vybereme písma, barvy a celkový grafický charakter. 
 
-Layout má vznikat až z potřeb obsahu, vycházet z dokumentu. Pojďme to v knížce vzít právě tímto postupem. Vyladit obsah, vymyslet typografii a grafický charakter. Pak teprve navrhnout komponenty typu navigace a až nám obsah začne přetékat z Ruzyně, teprve pak jej zalomit layoutem.
+Pak teprve navrhneme komponenty typu navigace a až nám obsah začne přetékat z Ruzyně, teprve pak jej zalomíme layoutem.
 
 
