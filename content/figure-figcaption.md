@@ -1,29 +1,39 @@
-# Média ve stránce pomocí <figure>, <figcaption>
+# Ilustrující obsah ve stránce: `<figure>` a `<figcaption>`
 
-Značka `<figure>` slouží ke vložení obrázku, videa, schématu, grafu, tabulky, ilustrace, ukázky kódu nebo třeba reklamy. Prostě netextového obsahu více či méně se vztahujícímu k textu:
+Značka `<figure>` obvykle slouží ke vložení doplňkového obsahu vztahujícímu se k hlavním obsahu:
 
 ```html
 <figure>
-  <img src="obrazek.jpg" alt="…">
+  <img src="obrazek.jpg" 
+    alt="Start rakety Falcon 9">
 </figure>
 ```
 
+Nemusí jít jen o obrázky. Možné je takto vkládat videa, schémata, grafy, tabulky, ilustrace, ukázky kódu nebo třeba reklamy. Klidně ale kusy textu, citace. Prostě cokoliv k čemu se může hodit přidat popisek. 
 
-## <figure> je vždy soběstačná, ale ne nezávislá jednotka {#sobestacna}
+Může to být  ilustrace či doplnění hlavního obsahu. Prvek `<figure`> může ale tvořit i hlavní obsah, jak za chvíli uvidíte.
 
-Musí to ale být soběstačná jednotka. Tu si můžete představit jako jednu větu v textu. Když byste do obrázku dali jen část sdělení věty, `<figure>` použít nemůžete:
+
+## Proč to používat?
+
+Může to mít pozitivní dopad na sémantiku, hlavně při zpracování stránky odečítači obrazovky. Dobře se to styluje. A nakonec: podle specifikace je to jediný správný způsob, jak do HTML vložit ilutraci doplněnou popiskem.
+
+
+## `<figure>` je vždy soběstačná, ale ne nezávislá jednotka {#sobestacna}
+
+Soběstačnou jednotku si můžete představit jako jednu větu v textu. Když byste do obrázku dali jen část sdělení věty, `<figure>` použít nemůžete:
 
 ```html
 <p>
-  A řekl: 
-  <blockquote><img src="rekl.png" alt="Dneska ti to fakt sluší"></blockquote>
+  Start rakety
+  <img src="rekl.png" alt="Falcon 9">.
 </p>  
 ```
 
-Obsah elementu `<figure>` ovšem není nezávislý na hlavním obsahu stránky. Buď je z něj odkazovaný nebo v něm přímo vložený. 
+Obsah elementu `<figure>` ovšem není nezávislý na hlavním obsahu stránky. Buď  je z hlavního obsahu odkazovaný, v hlavním obsahu vložení nebo sám tvoří hlavní obsah. `<figure>` byste tedy neměli použít pro vložení čehokoliv nerelevantního k hlavnímu obsahu stránky.
 
 
-## Popisek <figcaption> {#figcaption}
+## Textový popisek: `<figcaption>` {#figcaption}
 
 Je nepovinný. Mělo by jít o první nebo poslední potomek uvnitř `<figure>`:
 
@@ -34,8 +44,7 @@ Je nepovinný. Mělo by jít o první nebo poslední potomek uvnitř `<figure>`:
 </figure>
 ```
 
-
-## Jak se liší parametr `alt` a popisek `<figcaption>`? {#figcaption-alt}
+Nojo, ale jak se liší parametr `alt` a popisek `<figcaption>`? 
 
 - `alt` je textový popis obsahu obrázku.
 - `<figcaption>` komentuje obrázek v kontextu obsahu, ke kterému se vztahuje.
@@ -61,7 +70,9 @@ Zkusím to ukázat:
 
 `<figcaption>` samozřejmě může obsahovat plnohodnotný HTML obsah, takže dokáže obsah popsat lépe než `alt`. Může se hodit u složitějších grafů nebo schémat.
 
-Podrobnější pojednání o textových alternativách k obrázkům napsal [Radek Pavlíček pro Zdroják](https://www.zdrojak.cz/clanky/metody-poskytovani-textovych-alternativ-obrazku-shrnuti/).
+Podrobnější pojednání o textových alternativách k obrázkům před lety napsal [Radek Pavlíček pro Zdroják](https://www.zdrojak.cz/clanky/metody-poskytovani-textovych-alternativ-obrazku-shrnuti/).
+
+Tady je ukázka nestylovaného vložení `<figure>` do stránky: [cdpn.io/e/qrgQMw](http://codepen.io/machal/pen/qrgQMw).
 
 
 ## Odkazování na `<figure>` {#odkazovani}
@@ -89,7 +100,7 @@ Různé asistivní technologie podporují `<figure>` různě. Proto je vhodné k
 Nedoporučuje se používat relativní textové odkazy: „na obrázku níže“, „jak ukazuje následující graf“. Po přestylování stránky totiž přestávají platit.
 
 
-## Více médií v jednom <figure> {#vice-medii}
+## Více médií v jednom `<figure>` {#vice-medii}
 
 Fotogalerii s jedním společným popiskem si asi představit umíte. Tohle je samozřejmě správně:
 
@@ -139,11 +150,12 @@ figure {
 Normalize.CSS ani [Reboot](http://www.vzhurudolu.cz/blog/53-reboot) z Bootstrapu to samy neodstraňují.
 
 
-## Podpora {#podpora}
+## Podpora v prohlížečích a čtečkách {#podpora}
 
 Vazba na odečítače obrazovky funguje ve všech aktuálních prohlížečích kromě [všech verzí Exploreru a Safari](http://www.html5accessibility.com/). Plná podpora u prohlížečů je tedy jen otázkou času. 
 
 
-http://codepen.io/machal/pen/qrgQMw
+
+
 
 
