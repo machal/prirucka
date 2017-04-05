@@ -28,7 +28,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### HTML
 
-* Prakticky použitelné [HTML5 značky](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list) a jejich významy podle specifikace. [Strukturální elementy](http://kratce.vzhurudolu.cz/post/38371151431/html5-elementy) zase tak potřeba nejsou.
+* Prakticky použitelné [HTML5 značky](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list) a [strukturální elementy](html5-struktura.md). Jejich významy podle specifikace. 
 * Teorie: [outline](http://html5doctor.com/outlines/) (osnova) dokumentu; rozdíl HTML4, XHTML, HTML5.
 * Formuláře: [HTML4 formuláře](http://www.jakpsatweb.cz/html/formulare.html).
 * **[nové] **HTML5 formuláře: použitelné HTML5 [typy](http://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/) a [atributy](http://www.zdrojak.cz/clanky/formulare-v-html5-a-nove-atributy/) (`email`, `tel`, `url`, `placeholder`); [`<input required>`](http://jecas.cz/required) a HTML5 validace v prohlížeči. ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))

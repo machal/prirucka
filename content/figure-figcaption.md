@@ -1,4 +1,4 @@
-# Ilustrace ve stránce: `<figure>` a `<figcaption>`
+# Ilustrace ve stránce: figure a figcaption
 
 Značka `<figure>` slouží k vložení ilustrací vztahujících se k  hlavnímu obsahu:
 
@@ -9,14 +9,16 @@ Značka `<figure>` slouží k vložení ilustrací vztahujících se k  hlavním
 </figure>
 ```
 
-Nemusí jít jen o obrázky. Je možné  takto vkládat videa, schémata, grafy, tabulky, ilustrace, ukázky kódu nebo třeba reklamy. Klidně ale kusy textu, citace. Prostě cokoliv k čemu se může hodit přidat popisek. 
+Nemusí jít jen o obrázky. Je možné  takto vkládat videa, schémata, grafy, tabulky, ilustrace, ukázky kódu nebo třeba reklamy. Klidně ale kusy textu, citace. Prostě cokoliv, k čemu se může hodit přidat popisek. 
 
-Obvykle půjde o ilustraci či doplnění hlavního obsahu. Prvek `<figure>` ale někdy bude tvořit i hlavní obsah stránky jak za chvíli uvidíte.
+<!-- AdSnippet -->
+
+Obvykle značkou vkládáme ilustraci či doplnění hlavního obsahu. Prvek `<figure>` ale někdy použijeme i pro hlavní obsah stránky. To za chvíli uvidíte.
 
 
 ## Proč to používat?
 
-Může to mít pozitivní dopad na sémantiku, hlavně při zpracování stránky odečítači obrazovky. Ale nijak zásadní dopad to myslím aktuálně nemá.
+Může to mít pozitivní dopad na sémantiku, hlavně při zpracování stránky odečítači obrazovky. Ale nijak zásadní pomoc to myslím v době psaní článku není.
 
 Dobře se to styluje. Ale hlavně: je to jediný rozumný způsob, jak do stránky vložit ilustraci doplněnou popiskem.
 
@@ -28,7 +30,7 @@ Soběstačnou jednotku si můžete představit jako jednu větu v textu. Když b
 ```html
 <p>
   Start rakety
-  <img src="rekl.png" alt="Falcon 9">.
+  <img src="falcon-9.png" alt="Falcon 9">.
 </p>  
 ```
 
@@ -72,6 +74,8 @@ Zkusím to ukázat:
 
 Jak vidíte, `<figcaption>` může obsahovat plnohodnotný HTML obsah. Takže dokáže obrázek popsat lépe než `alt`. To se vám bude hodit u složitějších grafů nebo schémat.
 
+<!-- AdSnippet -->
+
 Podrobnější a stále platné pojednání o textových alternativách k obrázkům před lety napsal [Radek Pavlíček pro Zdroják](https://www.zdrojak.cz/clanky/metody-poskytovani-textovych-alternativ-obrazku-shrnuti/).
 
 
@@ -81,7 +85,7 @@ Prvek nemusí být součástí hlavního obsahu. Lze jej přesunout třeba do po
 
 ```html
 <p>
-  …jak je vidět <a href="#f-1">na první videu</a>,
+  …jak je vidět <a href="#f-1">na prvním videu</a>,
   Falcon 9 odstartoval z mysu Canaveral…
 </p>
 
@@ -97,7 +101,9 @@ Jak už víte z textu o [HTML5 značkách](html5-struktura.md), do `<aside>` dá
 
 Různé asistivní technologie podporují `<figure>` různě. Proto je vhodné kromě HTML odkazu (`<a href="#f-1">`) použít i provázání přes pojmenování („Obrázek 1“). 
 
-Nedoporučuje se používat relativní textové odkazy: „na obrázku níže“, „jak ukazuje následující graf“. Po přestylování stránky totiž přestávají platit.
+<!-- AdSnippet -->
+
+Nedoporučuji používat relativní textové odkazy: „na obrázku níže“ nebo „jak ukazuje následující graf“. Po přestylování stránky totiž přestávají platit.
 
 
 ## Více médií v jednom `<figure>` {#vice-medii}
@@ -150,9 +156,11 @@ figure {
 Normalize.CSS ani [Reboot](http://www.vzhurudolu.cz/blog/53-reboot) z Bootstrapu to samy neodstraňují.
 
 
-## Podpora v prohlížečích a čtečkách {#podpora}
+## Podpora v prohlížečích a odečítačích {#podpora}
 
 Vazba na odečítače obrazovky funguje ve všech aktuálních prohlížečích kromě [všech verzí Exploreru a Safari](http://www.html5accessibility.com/). Plná podpora u prohlížečů je asi jen otázkou času. 
+
+<!-- AdSnippet -->
 
 A co odečítače obrazovky? Testoval jsem to v Chrome přes VoiceOver na Macu a NVDA na Windows. Obrázek i popisek z ukázky v pohodě přečtou. Na druhou stranu nijak speciálně nehlásí, že jde o obrázek s popiskem nebo přímo značku `<figure>`. Ale to se samozřejmě může v různých čtečkách různit a do budoucna změnit.
 
