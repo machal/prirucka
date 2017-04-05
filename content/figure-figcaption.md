@@ -11,12 +11,14 @@ Značka `<figure>` obvykle slouží ke vložení doplňkového obsahu vztahujíc
 
 Nemusí jít jen o obrázky. Možné je takto vkládat videa, schémata, grafy, tabulky, ilustrace, ukázky kódu nebo třeba reklamy. Klidně ale kusy textu, citace. Prostě cokoliv k čemu se může hodit přidat popisek. 
 
-Může to být  ilustrace či doplnění hlavního obsahu. Prvek `<figure`> může ale tvořit i hlavní obsah, jak za chvíli uvidíte.
+Může to být  ilustrace či doplnění hlavního obsahu. Prvek `<figure>` může ale tvořit i hlavní obsah, jak za chvíli uvidíte.
 
 
 ## Proč to používat?
 
 Může to mít pozitivní dopad na sémantiku, hlavně při zpracování stránky odečítači obrazovky. Dobře se to styluje. A nakonec: podle specifikace je to jediný správný způsob, jak do HTML vložit ilutraci doplněnou popiskem.
+
+Ukázka používaná v článku je také na Codepenu. http://codepen.io/machal/pen/oZOOer
 
 
 ## `<figure>` je vždy soběstačná, ale ne nezávislá jednotka {#sobestacna}
