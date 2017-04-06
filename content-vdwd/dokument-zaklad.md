@@ -1,6 +1,6 @@
-# Základna jako první vrstva 
+# Vrstvení
 
-Vrstvení. Tak bych jedním slovem popsal svůj proces návrhu a implementace webových rozhraní. A základna je ta první z vrstev.
+Tak bych jedním slovem popsal svůj proces návrhu a implementace webových rozhraní. První z vrstev je dokumentový základ.
 
 ![Dvě vrstvy: základna a komponenty](dist/images/vdwd/zakladna-komponenty.jpg)
 
