@@ -93,6 +93,7 @@ Ty většinou čekají stabilní verzi mod_http2. Na [cn130.com](http://cn130.co
 - [Active24](https://www.active24.cz/) údajně [umí na všech tarifech](https://www.facebook.com/active24cz/posts/10211267842150771), což je cool. Škoda jen, že aktuálně to využijí jen vaší uživatelé s Firefoxem.
 - [WPHosting](https://www.wp-hosting.cz/programatori/) pro WordPress to píše na webu.
 - [ONEBit](https://www.onebit.cz/cz/webhosting/) také na webu zmiňuje HTTP/2 u všech tarifů.
+- [Blueboard.cz](https://twitter.com/hostingBB/status/849263004751417344) u všech zákazníků. Od dubna 2017.
 
 Vyjádření některých dalších hostingů:
 
