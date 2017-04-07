@@ -151,7 +151,7 @@ Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obráz
 *Pod dokumentovou vrstvou máme ještě výchozí styly prohlížečů. V samotném dokumentu pak nejprve sjednocujeme vzhled a pomocí například barev, velikostní stupnice nebo písem nastavujeme ten náš.*
 
 
-## Stránka už vypadá lépe
+## A jak teď vypadá rozpracovaná verze ForestKid.cz?
 
 ![Dokument fáze příkladu](dist/images/original/vdwd/priklad-dokument.jpg)
 
