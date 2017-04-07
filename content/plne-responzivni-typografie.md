@@ -83,3 +83,4 @@ Podrobněji to rozepisuji na Vzhůru dolů v článku „CSS řešení: Elastick
 
 Pro tipy na další možná řešení se můžete obrátit na kolegy ze Smashing Magazine, konkrétně do jejich článku „Truly Fluid Typography With vh And vw Units“. [vrdl.in/4g9xs](https://www.smashingmagazine.com/2016/05/fluid-typography/)
 
+Máme tedy všechny nezbytné znalosti o typografii a jednotkách v CSS. A máme připravený grafický styl našeho e-shopu. Můžeme tedy začít stavět kód. I ten budeme samozřejmě vrstvit. Ne každý kousek kódu musíme u každého projektu napsat znovu. Proto si ukážeme sadu nástrojů, které ty nejzákladnější vrstvy obstarají za nás.
