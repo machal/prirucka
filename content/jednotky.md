@@ -169,7 +169,7 @@ Například tento nadpis z příkladu bude mít velikost písma `2rem` a k tomu 
 }
 ```
 
-Těmito triky se pak více zabývám v následující podkapitole. 
+Triky s responzivní typografií se více zabývám v přespříští podkapitole. 
 
 Na závěr ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG).
 
