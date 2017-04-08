@@ -36,7 +36,7 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 
 ![](dist/images/original/responzivni-layout.png)
 
-*Jednoduchý responzivní dvousloupcový layout tři ku jedné realizovaný flexboxem.*
+*Jednoduchý responzivní dvousloupcový layout tři ku jedné realizovaný flexboxem*
 
 Živá ukázka je pro vás připravená na Codepenu. [cdpn.io/e/wobjoq](http://codepen.io/machal/pen/wobjoq)
 

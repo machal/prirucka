@@ -4,7 +4,7 @@ Abychom použili vědomosti nasáté v téhle kapitole, vložil jsem do příkla
 
 ![Příklad před aplikováním přizpůsobivých médií](dist/images/original/vdwd/priklad-media-pred.jpg)
 
-*Příklad před aplikováním přizpůsobivosti médií.*
+*Příklad před aplikováním přizpůsobivosti médií*
 
 Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný strach, nůžky na ně brát nebudeme. Prostě jim klidným hlasem domluvíme, aby se začala chovat pružněji.
 

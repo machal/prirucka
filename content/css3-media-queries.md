@@ -24,7 +24,7 @@ Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*
 
 ![](dist/images/original/media-query.png)
 
-*Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování dotazu vyloučí starší Internet Explorery.*
+*Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování dotazu vyloučí starší Internet Explorery*
 
 ## Body zlomu
 

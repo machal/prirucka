@@ -148,7 +148,7 @@ Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obráz
 
 ![Vrstvy: dokumentová v detailu](dist/images/original/vdwd/vrstvy-dokument.jpg)
 
-*Pod dokumentovou vrstvou máme ještě výchozí styly prohlížečů. V samotném dokumentu pak nejprve sjednocujeme vzhled a pomocí například barev, velikostní stupnice nebo písem nastavujeme ten náš.*
+*Pod dokumentovou vrstvou máme ještě výchozí styly prohlížečů. V samotném dokumentu pak nejprve sjednocujeme vzhled a pomocí například barev, velikostní stupnice nebo písem nastavujeme ten náš*
 
 
 ## A jak teď vypadá rozpracovaná verze ForestKid.cz?

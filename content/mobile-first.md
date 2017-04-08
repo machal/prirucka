@@ -28,7 +28,7 @@ Pro mnohé designéry, včetně mě, je proto lepší si rozhraní navrhnout nej
 
 ![VašeČočky.cz - dvě skici](dist/images/original/vdwd/vase-cocky-dve-skici.png)
 
-*Rychlé ruční skici pro VašeČočky.cz.*
+*Rychlé ruční skici pro VašeČočky.cz*
 
 Při skicování mobilního rozhraní jsme omezení plochou a rozhraní zredukujeme na to nejpodstatnější. Pro přípravu verze pro větší displeje často stačí jen použít běžné techniky responzivního designu: zvětšení nebo mírné přeskládání elementů.
 
@@ -64,7 +64,7 @@ Jen si například spočítejte, kolik různých navigací má desktopová verze
 
 ![Alza.cz](dist/images/original/vdwd/alza-cz.png)
 
-*Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je v samostatném webu. Rozhraní na obou typech zařízení trpí nejednotností.*
+*Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je v samostatném webu. Rozhraní na obou typech zařízení trpí nejednotností*
 
 Provozovatelé velkých a úspěšných webů samozřejmě nechávají zásadní redesign až na chvíli, kdy je nezbytně nutný. Převod do responzivní „Mobile First“ verze bude v případě Alzy znamenat práci na mnoho měsíců až let. 
 

@@ -14,7 +14,7 @@ Navrhnout dobrý karusel je vážně složité. Proto po něm osobně sáhnu až
 
 ![](dist/images/original/vdwd/triky-ui-13.png)
 
-*Stará a nová verze karuselu na RSTS.cz. Starší ještě používala na mobilech nepoužitelnou tečkovou navigaci. Nová je vpravo a je fajn. Díky šipkám se lépe ovládá a grafika je uzpůsobená velikosti displeje.*
+*Stará a nová verze karuselu na RSTS.cz. Starší ještě používala na mobilech nepoužitelnou tečkovou navigaci. Nová je vpravo a je fajn. Díky šipkám se lépe ovládá a grafika je uzpůsobená velikosti displeje*
 
 Jsou karusely obecně špatné? Jako poloviční designér musím napsat: „Ono záleží…“
 
@@ -36,7 +36,7 @@ Záložková navigace uvnitř stránky je mobilech riskantní, protože může o
 
 ![](dist/images/original/vdwd/triky-ui-14.png)
 
-*CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis“ otevřít „Parametry“, musím posunovat stránku zpět nahoru.*
+*CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis“ otevřít „Parametry“, musím posunovat stránku zpět nahoru*
 
 ## 4) Uměl by si Obr z Altonu na vašem webu vybrat datum?
 

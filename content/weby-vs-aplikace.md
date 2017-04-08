@@ -48,7 +48,7 @@ Občas je totiž stále slyšet, že „když máme aplikaci, nepotřebujeme web
 
 ![Web restaruace El Asador](dist/images/original/vdwd/el-asador.png)
 
-*Web restaurace El Asador na desktopu a mobilech. Příklad za všechny weby, které na mobilech nezdravě upřednostňují reklamu na aplikaci namísto informací samotných.*
+*Web restaurace El Asador na desktopu a mobilech. Příklad za všechny weby, které na mobilech nezdravě upřednostňují reklamu na aplikaci namísto informací samotných*
 
 Ano, přes mobil jsem se chtěl podívat na menu a případně zarezervovat stůl. Provozovatelé webu po mě ale chtějí, abych:
 

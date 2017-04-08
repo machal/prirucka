@@ -6,7 +6,7 @@ Na papír si skicou odložím základní obrysy problému a uvolním mentální 
 
 ![](dist/images/original/skicovani-1.png)
 
-*Skicování je výborné pro zjednodušení řešení designérských, ale i kodérských problémů. Zpětně těžko říct, co jsem řešil právě tady, ale ušetřilo mi to moc času, to se vsaďte.*
+*Skicování je výborné pro zjednodušení řešení designérských, ale i kodérských problémů. Zpětně těžko říct, co jsem řešil právě tady, ale ušetřilo mi to moc času, to se vsaďte*
 
 ## Skicuji tužkou na papír
 
@@ -24,7 +24,7 @@ Jsem na začátku přemýšlení o designu konkrétní komponenty. Skicování v
 
 ![](dist/images/original/skicovani-2.png)
 
-*Tady jsem hledal optimální způsob prezentace výběru čísla bot v detailu produktu na e-shopech. Tohle už je uhlazenější, prezentovatelnější verze.*
+*Tady jsem hledal optimální způsob prezentace výběru čísla bot v detailu produktu na e-shopech. Tohle už je uhlazenější, prezentovatelnější verze*
 
 Mozek zapojím až v další fázi. Dívám se na jednotlivé skici a přemýšlím o jejich výhodách a nevýhodách. Samozřejmě si řešení představím na všech možných zařízeních, bereme v potaz zvyklosti, cílové skupiny a technickou řešitelnost. 
 

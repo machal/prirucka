@@ -18,7 +18,7 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 
 ![](dist/images/original/tabulky_1.png)
 
-*Obsah tabulky se na malém displeji posouvá do stran.*
+*Obsah tabulky se na malém displeji posouvá do stran*
 
 Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
@@ -86,7 +86,7 @@ Za fajn nápad také považuji vložit do stránky namísto tabulky jen jakýsi 
 
 ![](dist/images/original/tabulky_5.png)
 
-*Tabulku na mobilu uprostřed obsahu nahradíme zástupným symbolem. Kliknutí se zobrazí plná verze.*
+*Tabulku na mobilu uprostřed obsahu nahradíme zástupným symbolem. Kliknutí se zobrazí plná verze*
 
 Kdy se hodí? Pro složité tabulky uprostřed jiného obsahu, kde ostatní scénáře (stohování, fixní sloupec) selhávají.
 

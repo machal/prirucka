@@ -4,7 +4,7 @@ Tak bych jedním slovem popsal svůj proces návrhu a implementace webových roz
 
 ![Dvě vrstvy: dokument a komponenty](dist/images/original/vdwd/zakladna-komponenty.jpg)
 
-*Dokumentová vrstva obsahuje společné elementy grafického designu: barvy, typografii, velikostní stupnici, grafický styl a další prvky. Z nich pak vychází komponenty uživatelského rozhraní, obohacené o layout a chování.*
+*Dokumentová vrstva obsahuje společné elementy grafického designu: barvy, typografii, velikostní stupnici, grafický styl a další prvky. Z nich pak vychází komponenty uživatelského rozhraní, obohacené o layout a chování*
 
 Na obrázku vidíte opravdu jen nejzákladnější dělení. Dokument obsahuje mnoho dalších vrstev, to si ukážeme ke konci kapitoly. A komponenty? I ty můžeme dělit do mnoha hierarchií, bylo by to ale už nad rámec téhle knížky.
 
@@ -20,7 +20,7 @@ My ale tak hluboko nepůjdeme. Potřebujeme znát hlavně vrstvení tří hlavn�
 
 ![HTML, CSS, Javascript](dist/images/original/vdwd/html-css-js.jpg)
 
-*HTML slouží k vyznačení toho nejdůležitějšího: obsahu, jeho struktury a významu. CSS nastavuje vzhled a Javascript zase definuje chování stránky.*
+*HTML slouží k vyznačení toho nejdůležitějšího: obsahu, jeho struktury a významu. CSS nastavuje vzhled a Javascript zase definuje chování stránky*
 
 Dobře, ale co s tím?
 

@@ -38,7 +38,7 @@ Zbývá nám písmo pro texty a rozhraní. Pro delší texty, které na webu mí
 
 ![Typografie pro příklad](dist/images/original/vdwd/priklady-typografie.jpg)
 
-*Vybraná písma Yeseva One a PT Sans.*
+*Vybraná písma Yeseva One a PT Sans*
 
 Přidáno do našeho projektu to vypadá jako v následujícím CodePenu. [cdpn.io/e/XpbPmm](http://codepen.io/machal/pen/XpbPmm?editors=1100).
 
