@@ -6,6 +6,7 @@ Napsat knížku o *celém* webdesignu vlastně už ani není možné. I tady se 
 
 Webdesign jako obor si tedy pro potřeby knížky můžeme zjednodušit.
 
-- Do pěti minut pak dostaneme celý [proces tvorby webu](zaklady-procesu.md). 
-- Analytickou práci a průzkum předcházející tvorbě webu si shrneme do [User Centered Design Canvasu](design-canvas.md) a jeho [aplikace na příkladu](priklad-ux-canvas.md). 
-- Ani tvorbou obsahu se zabývat nebudeme. V knihách se to má hemžit pohádkovými bytostmi, takže [obsah vyčaruje](priklad-obsah.md) *Imaginární copywriterka*. 
+1. Do pěti minut pak dostaneme celý [proces tvorby webu](zaklady-procesu.md). 
+2. Analytickou práci a průzkum předcházející tvorbě webu si shrneme do [User Centered Design Canvasu](design-canvas.md) 
+3. Cesign Canvas [aplikujeme na příkladu](priklad-ux-canvas.md). 
+4. Ani tvorbou obsahu se zabývat nebudeme. V knihách se to má hemžit pohádkovými bytostmi, takže [obsah vyčaruje](priklad-obsah.md) *Imaginární copywriterka*. 
