@@ -1,13 +1,11 @@
 # Kapitola 4: Viewport na mobilech
 
-Mobily nám přinesly tři zásadní životní radosti. Notifikace chodící ve tři ráno. Facebook plný selfíček. V vývojářům ještě viewporty na mobilech.
+Mobily nám přinesly tři zásadní životní radosti. Notifikace chodící ve tři ráno. Facebook plný selfíček. A tvůrcům webů ještě viewporty na mobilech.
 
-Nezdá se to, ale viewporty nejstou tak jednoduchý koncept. Mezi nimi a vývojáři je prostě pár nedorozumění.
+Problematika vykreslování do plochy prohlížeče má na mobilních zařízeních svá specifika. Jejich neznalost v důsledku vede k chybám jako je zakázání zoomování obsahu uživatelem nebo používání fixního pozicování. O těch si budeme povídat [v kapitole o návrhu rozhraní](kap-ui.md).
 
-Nejdříve ale k historickému kontextu. První iPhone přišel v roce 2007 do situace, kdy byl prakticky každý web navržený pro velké displeje. S tím se snažil vypořádat zmenšením webu a jednoduchou možností konkrétní části zvětšovat. 
+Tady to vezmeme čistě technicky:
 
-Stařeček první iPhone ovšem tajně doufal, že začnou vznikat weby, přizpůsobené malým obrazovkám. Proto přešel s možností, jak mu webaři mohou sdělit, že si právě s tímto dali práce. [Meta značkou pro viewport](viewport-meta.md).
-
-Než se k ní ale dostaneme, pojďme si říci něco o konceptu viewportů na mobilech. Je to důležité pro chápání dalších věcí.
-
+1. Co je viewport zač a [jaké jeho tři typy známe](viewport-mobily.md)?
+2. Jak správně zapsat [meta značku pro viewport](viewport-meta.md)?
 

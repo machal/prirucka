@@ -1,8 +1,10 @@
 # Meta značka pro viewport
 
-Zjednodušeně ale lidsky řečeno slouží k informování prohlížeče, zda a jak jste web připravili pro mobilní zařízení.
+Zjednodušeně (ale lidsky) řečeno slouží k informování prohlížeče, zda a jak jste web připravili pro mobilní zařízení.
 
 ![Meta Viewport](dist/images/original/meta-viewport-mobile.svg)
+
+*Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířká layoutového viewport nastaví na velikost ideálního CSS rozlišení*
 
 Začnu bez vysvětlování zápisem meta tagu pro viewport, který je v pořádku:
 
@@ -27,44 +29,46 @@ Do atributu `content` je možné dávat různé vlastnosti a jejich hodnoty.
 
 ### `width`
 
-Nastaví šířku [layoutového viewportu](viewport-mobily.md) v pixelech. Nejčastěji využívaná hodnota `device-width` sjednotí šířku layoutového viewportu se šířkou ideálního viewportu. Takže uživatel nebude muset zoomovat a vaši responzivní stránku uvidí jedna ku jedné.
-
-Pokud použijete hodnotu, např. `width=400`, nastavíte šířku layoutového viewportu na 400 pixelů. To snad nebude chtít ani muset dělat.
+Nastaví šířku layoutového viewportu v pixelech. Nejčastěji využívaná hodnota `device-width` sjednotí šířku layoutového viewportu se šířkou ideálního viewportu. Takže uživatel nebude muset zoomovat a vaši responzivní stránku uvidí jedna ku jedné. Pokud použijete hodnotu, např. `width=400`, nastavíte šířku layoutového viewportu na 400 pixelů. Nenapadá mě ale moc rozumných důvodů, proč to dělat.
 
 ### `initial-scale`
 
-Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku dělá zápis `initial-scale=1` totéž jako `width=device-width`, jenže kvůli drobným prohlížečovým nekompatibilitám musíme uvádět oba.
+Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku dělá zápis `initial-scale=1` totéž jako `width=device-width`, jenže kvůli drobným prohlížečovým nekompatibilitám musíme uvádět oba. Za chvíli o tom píšu.
 
 ### `user-scalable`
 
-Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení fakt potřeba. Ať už jde o zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku, přibližování obsahu prostě potřebují všichni uživatelé. Safari na iOS 10 navíc zákaz zoomování úplně ignorují.
+Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení fakt potřeba. Ať už jde o zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku, přibližování obsahu prostě potřebují všichni uživatelé. Safari na iOS 10 navíc zákaz zoomování úplně ignorují. <span class="ebook-only">Více o tom píšu [v kapitole o častých chybách](responzivni-ui-caste-chyby.md).</span>
 
 ### `minimum-scale`/`maximum-scale`
 
-Minimální a maximální možný zoom. Netuším, k čemu by mohlo být dobré. `maximum-scale=1` ruší možnost přiblížení stejně jako `user-scalable=no`. Prosím, nepoužívejte to.
+Minimální a maximální možný zoom. `maximum-scale=1` ruší možnost přiblížení stejně jako `user-scalable=no`. Prosím, nepoužívejte to.
 
 ### `shrink-to-fit`
 
-Pokud by váš layout bláznil na iPadech s iOS od verze 9, zkuste ještě přidat atribut s hodnotou: `shrink-to-fit=no`. Proč ovšem? To nevím, jako vlastně nikdo. Maximiliano Firtman o tom píše v textu „The new viewport shrink-to-fit attribute (that nobody understands)“. [vrdl.in/xpub9](http://www.mobilexweb.com/blog/safari-on-ios-9-3-picture-shrink-fit-iphone-se)
+Pokud by váš layout bláznil na iPadech s iOS od verze 9, zkuste ještě přidat atribut s hodnotou: `shrink-to-fit=no`. Proč? To vlastně skoro nikdo neví. Maximiliano Firtman o tom píše v textu „The new viewport shrink-to-fit attribute (that nobody understands)“. [vrdl.in/xpub9](http://www.mobilexweb.com/blog/safari-on-ios-9-3-picture-shrink-fit-iphone-se)
+
 
 ## Proč `width=device-width` a zároveň `initial-scale=1`?
 
 Jak už jsem psal, `width=device-width` je instrukce pro sjednocení layoutového s ideálním viewportem.
 
-Lidsky řečeno: mobilní prohlížeč vaši stránku nevykreslí do přednastaveného viewportu, nejčastěji 980 pixelů. Použije namísto toho „normální“ mobilní rozlišení: třeba 360 pixelů.
-
 `width=device-width` má ovšem jednu známou nevýhodu: Safari na iOS pak jako ideální viewport v režimu zobrazení na šířku použije ideální viewport pro výšku. Ano, přesně tohle je příčinou toho problému se „zvětšováním“ stránky v landscape režimu na iOS.
 
-Je zde jedna záchrana: použít namísto toho zápis `initial-scale=1`. Světe div se, na všech mobilních zařízeních má ten samý efekt jako `width=device-width`. Světe div se podruhé, Safari na iOS už v landscape režimu renderuje do ideálního landscape viewportu. A světe – teď se nemůžeš divit – má to svoje nevýhody! Internet Explorer se na mobilních Windows 8 totiž začne chovat úplně stejně špatně jako mobilní Safari.
+Je zde jedna záchrana: použít namísto toho zápis `initial-scale=1`. Světe, div se, na všech mobilních zařízeních má ten samý efekt jako `width=device-width`. Světe, div se podruhé, Safari na iOS už v landscape režimu renderuje do ideálního landscape viewportu. A světe, má to svoje nevýhody! Internet Explorer se na mobilních Windows 8 totiž začne chovat úplně stejně špatně jako mobilní Safari.
 
 Nevadí. Problémy vyřešíme tím, že použijeme obě hodnoty.
+
 
 ## Zavináčové pravidlo `@viewport` v CSS
 
 Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? Se logičtěji umístěným zápisem `@viewport { }` přišla Opera, která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase nejspíš neumí. V praxi je ten zápis nyní potřeba hlavně pro Internet Explorer na Windows Phone 8. [vrdl.cz/prirucka/viewport-windows](http://www.vzhurudolu.cz/prirucka/viewport-windows)
 
-## A ještě pár rychlých tipů
 
-**Meta viewport jde nastavit Javascriptem**. To se hodí, když nemáte přístup do `<head>`. Teoreticky jde javascriptem i měnit, ale nedělejte to. Je to náročné na vykreslování. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
+## Meta viewport raději moc nenastavujte Javascriptem 
 
-**Odstranění 300ms čekání**. Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na Webkitu a Chromium samy odstraní prodlevu mezi tapnutím a akcí. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)
+Hodí se to jen, když nemáte přístup do `<head>`. Teoreticky jde javascriptem meta značka pro viewport i měnit, ale nedělejte to. Je to náročné na překreslování stránky. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
+
+
+## Odstranění 300ms prodlevy 
+
+Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče to dělaly proto, že po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)

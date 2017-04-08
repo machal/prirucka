@@ -14,9 +14,11 @@ Jak už jsem zmiňoval dříve, dnešní weby se zobrazují v oknech mezi 240 a 
 
 ## 4) Zakázané přiblížení (zoom)
 
-Uživatelé si zvětšují výřezy obrazovky z mnoha důvodů: kvůli špatnému kontrastu na sluníčku, kvůli snadnějšímu výběru textu nebo se prostě jen chtějí podívat na detail fotografie na stránce. Snažte se jim prosím zvětšování nezakázat. Uveďte správnou meta značku pro viewport.
+Uživatelé si zvětšují výřezy obrazovky z mnoha důvodů: kvůli špatnému kontrastu na sluníčku, kvůli snadnějšímu výběru textu nebo se prostě jen chtějí podívat na detail fotografie na stránce. Snažte se jim prosím zvětšování nezakázat. Uveďte [správnou meta značku pro viewport](viewport-meta.md).
 
 WCAG (doporučení pro přístupné weby) trvají na možnost vše alespoň dvakrát zvětšit. [vrdl.in/cbe5f](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale)
+
+Prohlížeč Safari na iOS 10 a novějších už naštěstí zákaz zoomování ignoruje.
 
 ## 5) Neošetřené načítání webfontů
 
