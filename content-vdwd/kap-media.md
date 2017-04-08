@@ -1,9 +1,18 @@
 # Kapitola 6: Obrázky a další média
 
-> Potvory co vystrkují růžky. Vezmem' na ně nůžky!
+> Potvory co vystrkují růžky.  
+> Vezmem' na ně nůžky!
 
-Vložíme obsah do prohlížeče a vlastně to bude samo o sobě responzivní. Nedivte se, je to pravda, jenže platí pro text, ne už další elementy. Obrázky, tabulky, video… Vsadím se, že nějakou takovou věc jste na webu už viděli.
+Obsah vložený do prohlížeče je z podstaty responzivní. No, nedivte se – je to pravda. Jenže platí pro text, ne už další elementy. Obrázky, tabulky, video… Vsadím se, že nějakou takovou věc jste na webu už viděli.
 
-Pojďme se podívat jak zařídit, aby se [obrázky, video, externí `<iframe>` elementy](pruzna-media.md), [vektorové SVG](responzivni-svg.md), ale i [tabulky](responzivni-tabulky.md) a [grafy](responzivni-grafy.md) chovaly pružně? A jak dosáhnout toho, abychom každému zařízení [posílali obrázek](responzivni-obrazky.md) podle jeho zásluh?
+1. Vrátíme se ke kořenům [technického pojetí responzivního designu](3-principy-rwd.md), abychom poznali, proč je potřeba mediálnímu obsahu věnovat tolik péče.
+2. Pak se zaměříme na způsoby, jak přinutit [mediální obsah k pružnému chování](pruzna-media.md). 
+3. Zaostříme na obrázky a ukážeme si, jak různým zařízením [posílat obrázky](responzivni-obrazky.md) podle jejich zásluh.
+4. Ukážu vám nejuniverzálnější metodu pro ošetření obrázků, [nové atributy značky `<img>`](srcset-sizes.md).
+5. Element [`<picture>`](picture.md) možná také neznáte, že?
+6. [Vektorové SVG](responzivni-svg.md) donutíme k pružnému chování ve všech prohlížečích, i když v Internet Exploreru to bude docela fuška. Připravte si silné kafe. 
+7. A tabulky? Ach, ty [responzivní tabulky](responzivni-tabulky.md). Těšte se na fakt hodně možných variant jejich návrhu a implementace.
+8. [Responzivní grafy](responzivni-grafy.md) vezmeme letem světem, protože tak časté nejsou. 
+9. Radostně také hlásím návrat ke kódování našeho fiktivního e-shopu. Naimplementujeme si do něj [responzivní obrázky](priklad-media.md).
 
-Multimediálního obsahu obsahu je na webu hodně, ale ne každý asi vždy využijete. Abych vám ukázal ty najzákladnější, vezmu vás opět do naší kuchyně. Zrovna dělám základ pro další vaření. Vývar. No a vývar, úplný základ responzivního designu, to je pružný layout, pružná média a Media Queries. Měli bychom si říct recept. Tentokrát solím, nebojte se.
+Je toho hodně, že? Než se ponoříme do všech těch médií, vezmu vás zase kuchyně zapomnětlivého kuchaře. Zrovna mi tu bublá základ pro další vaření. Vývar. Vývar, úplný základ responzivního designu, to je pružný layout, pružná média a Media Queries. Měli bychom si říct recept. Tentokrát budu solit, žádné strachy.
