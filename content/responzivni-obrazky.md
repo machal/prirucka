@@ -25,7 +25,7 @@ Pojďme si ale udělat kompletní přehled všech možných řešení, jejich v�
 | 2. `<img src>`          |    𐄂     |    𐄂   |  𐄂  |   𐄂  |    𐄂   | cokoliv |
 | 3. `<img src>` 2 ×      |    𐄂     |    ✔   |  ✔  |   𐄂  |    𐄂   | cokoliv | 
 | 4. `<img src>` kompr.   |    ✔     |    ✔   |  𐄂  |   𐄂  |    𐄂   | bitmapy: fotky | 
-| 5. `<img src/data-large>` |    𐄂     |    ✔   |  ✔  |   ✔  |    𐄂   | cokoliv | 
+| 5. `<img src/data-src>` |    𐄂     |    ✔   |  ✔  |   ✔  |    𐄂   | cokoliv | 
 | 6. `<img srcset>`       |    ✔     |    ✔   |  𐄂  |   ✔  |    𐄂   | cokoliv | 
 | 7. `<img srcset/sizes>` |    ✔     |    ✔   |  𐄂  |   𐄂  |    ✔   | cokoliv | 
 | 8. `<picture>`          |    ✔     |    ✔   |  ✔  |   ✔  |    𐄂   | cokoliv | 
@@ -78,7 +78,7 @@ Datový objem i vysokopacitní displeje můžete v některých situacích vyře�
   width="100" height="100" alt="…">
 ```
 
-Výroba takového obrázku ve třech krocích:
+Jak vypadá výroba takového obrázku ve třech krocích?
 
 1. Původní obrázek uložíte ve výrazně větší pixelové velikosti.
 2. Snížíte kvalitu exportu někam výrazně pod polovinu.
@@ -86,82 +86,92 @@ Výroba takového obrázku ve třech krocích:
 
 Komprimované obrázky jsme zkoušeli nasadit na jednom starším projektu. Udělali jsme si testy pro různé kombinace komprese a pixelové velikosti. Nakonec došli k tomu, že obrázky ve dvojnásobné pixelové velikosti a kvalitě komprese nastavené na 30 % měly nejlepší poměr kvality a datového objemu. Ten byl poloviční oproti původní verzi s 80 % kvalitou a velikostí stejné jako se používá ve stránce. U různých typů obrázků to ale bude různé.
 
-Autoři nápadu, Filament Group, svůj zkušební obrázek vkládali dvaapůlkrát velký a kvalitu JPG snížili na 0 %. Výsledný obrázek měl méně než polovinu datového objemu toho původního. [vrdl.in/z7k34](https://www.filamentgroup.com/lab/compressive-images.html)
+Autoři nápadu, Filament Group, svůj zkušební obrázek vkládali dvaapůlkrát velký a kvalitu JPG snížili na 0 %. Výsledný obrázek se pyšnil opět méně než polovinou datového objemu toho původního. [vrdl.in/z7k34](https://www.filamentgroup.com/lab/compressive-images.html)
 
-Asi sami vidíte, že řešení je vhodné jen pro JPG nebo WebP obrázky, kde je možné nastavit ztrátovou kompresi. Typově jde spíše fotografie než třeba bannery, kde by v ostrých hranách mezi barvami byla ztráta kvality viditelná.
+Asi sami vidíte, že řešení je vhodné jen pro JPG nebo WebP obrázky, kde je možné nastavit ztrátovou kompresi různých úrovní. Typově je pak použití metody vhodné spíše pro fotografie než třeba obrázky s textem, kde by v ostrých hranách mezi barvami byla ztráta kvality viditelná.
 
 
-## 5. Vlastní řešení pomocí `<img src/data-large>`
+## 5. Vlastní řešení pomocí `<img src/data-src>`
 
 Občas je pro responzivní obrázky možné vidět řešení s nahrazováním atributu `src`:
 
 ```html
-<img src="image_small.jpg" 
-  data-large="image_large.jpg"
+<img src="image_100x100.jpg" 
+  data-src="image_300x300.jpg"
   width="100" height="100" alt="…">
 ```
 
-Na velkých displejích pak autoři těchto řešení usilují o zkopírování obsahu `data-large` do `src` pomocí javascriptu. Pak prohlížeč zobrazí správný obrázek. Na pohled elegantní, ale nevýhody to má.
+Na velkých displejích pak autoři těchto řešení usilují o zkopírování obsahu `data-src` do `src` pomocí Javascriptu. Ano, prohlížeč pak zobrazí správný obrázek. Takto pracuje například knihovna Response. [responsejs.com](http://responsejs.com/)
 
-Neexistuje totiž způsob jak prohlížeč odradit od stažení obrázku nalinkovaného v `<img src>`. Proto se v těchto řešeních obrázek sice vymění, ale předtím se už stáhly oba soubory, což není potěšující zpráva pro uživatele čekajícího na pomalém připojení.
+Na pohled elegantní, ale nevýhody to má. Neexistuje totiž způsob jak prohlížeč odradit od stažení obrázku nalinkovaného v atributu `src`. Proto se v těchto řešeních obrázek sice vymění, ale předtím se už stáhl tento soubor. To není potěšující zpráva pro uživatele čekající na pomalém připojení.
 
-Navíc je nutné naprogramovat i logiku pro další problémy, které mají responzivní obrázky řešit. Například ony Retina displeje. Logiku, kterou už navíc prohlížeče mají v sobě. Hned k ní dojdeme, ale musíme se rozloučit se starým známým atributem `src`.
+Navíc je nutné naprogramovat i logiku pro další scénáře, které mají responzivní obrázky řešit. Například ony Retina displeje. Logiku, kterou už navíc prohlížeče mají v sobě. Hned k ní dojdeme, ale musíme se rozloučit se starým známým atributem `src`.
 
-Iniciativa Responsive Images Community Group totiž před leety přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. [responsiveimages.org](http://responsiveimages.org/)
+Iniciativa Responsive Images Community Group totiž před lety přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. To jsou řešení, která dnes považuji za standardní a pokud je to možné, dávám jim přednost. 
 
 
 ## 6. Atribut `srcset` značky `<img>`
 
-Hodí se pro scénář s výběrem varianty podle velikosti okna:
 
-
-```html
-<img src="small.jpg"
-  srcset="medium.jpg 600w, large.jpg 1200w"
-  alt="…">
-```
-Častější je ale použití pro scénář s výběrem varianty podle velikosti obrázku v layoutu:
+Hodí se pro scénář s výběrem varianty podle velikosti okna. Do atributu `srcset` uvedete velikostní varianty, které jste si předtím uložili na server:
 
 ```html
-<img src="small.jpg"
-  srcset="medium.jpg 600w, large.jpg 1200w"
-  sizes="(min-width: 600px) 600px, 100vw"
+<img src="image_300x300.jpg" 
+  srcset="
+    image_100x100.jpg 100w,
+    image_200x200.jpg 200w,
+    image_300x300.jpg 300w"
+  width="100" height="100" 
   alt="…">
 ```
 
-Více [o srcset a sizes zjistíte hned v dalším textu](srcset-sizes.md). 
+Všimněte si `w`, takzvaného *deskriptoru*, který nese informaci o šířce obrázku. Proč je tam potřeba? Dobrá otázka, zodpovíme si ji v textu o atributech [`srcset` a `sizes`](srcset-sizes.md).
 
 ## 7. Atribut `sizes` značky `<img>`
 
+Řešení s atributem `srcset` je fajn, ale zajistí výměnu obrázků jen podle velikosti okna. Obrázky se ale obvykle vyskytují v nějakém prostředí layoutu webu. Proto potřebujeme ještě atribut `sizes`, kterým prohlížeči předáváme onu informaci o layoutu:
+
 
 ```html
-<img src="small.jpg"
-  srcset="medium.jpg 600w, large.jpg 1200w"
-  sizes="(min-width: 600px) 600px, 100vw"
+<img src="image_300x300.jpg" 
+  srcset="
+    image_100x100.jpg 100w,
+    image_200x200.jpg 200w,
+    image_300x300.jpg 300w"
+  sizes="980px"
+  width="100" height="100" 
   alt="…">
 ```
 
+Pro více informací vás pošlu opět do podrobně rozepsaného materiálu o atributech [`srcset` a `sizes`](srcset-sizes.md).
+
 ## 8. Nová značka `<picture>`
+
+Nový tag `<picture>` vymysleli pro méně časté scénáře jako v případě potřeby mít na konkrétních velikostech layoutu jinak oříznuté obrázky:
 
 ```html
 <picture>
-    <source media="(min-width: 600px)" srcset="medium.jpg">
-    <source media="(min-width: 1024px)" srcset="large.jpg">
-    <img src="small.jpg" alt="…">
+    <source media="(min-width: 600px)" srcset="image_100x100.jpg">
+    <source media="(min-width: 1024px)" srcset="image_300x300.jpg">
+    <img src="image_100x100.jpg" alt="…">
 </picture>
 ```
 
-Nový tag `<picture>` vymysleli pro méně časté scénáře jako v případě potřeby mít na konkrétních velikostech layoutu jinak oříznuté obrázky. Více si přečtete [v dalším textu](picture.md).
+Na první pohled méně zkušených očí vypadá užitečněji než atributy `srcset` a `sizes`, ale není to pravda. Hodí se opravdu hlavně jen na ty speciální ořezové verze a další méně časté scénáře. Více si přečtete [v samostatném textu](picture.md).
+
+Co ale ještě zmínit chci, je podpora nových atributů a značky `<picture>` v prohlížečích. Je výborná, nebojte se.
+
 
 ## Podpora `srcset`, `sizes` a `<picture>` v prohlížečích
 
 Podporují je všechny moderní prohlížeče. Responzivní obrázky nám chybí hlavně ve všech verzích Exploreru a Android Browseru do čtyřkových verzí Androidu. [caniuse.com/srcset](http://caniuse.com/#search=srcset) 
 
-Obzvlášť IE ve verzi 11 je ke dni psaní textu ještě velmi silně zastoupený. Je však dobré si uvědomit, jaké je v tomto případě chování „nepodporující prohlížečů“.
+Obzvlášť IE ve verzi 11 je ke dni psaní textu ještě velmi silně zastoupený. Je však dobré si uvědomit, jaké je v tomto případě chování „nepodporujících prohlížečů“.
+
 
 ### První náhradní řešení: přirozené
 
-Prostě použijete parametr `src`, který v případě dostupného `srcset` moderní prohlížeče ignorují:
+Prostě použijete parametr `src`, který moderní prohlížeče ignorují, pokud je přítomný `srcset`:
 
 ```html
 <img 
@@ -171,5 +181,5 @@ Prostě použijete parametr `src`, který v případě dostupného `srcset` mode
 
 ### Druhé náhradní řešení: Picturefill
 
-Javascriptová knihovna, která zařídí fungování všech variant responzivních i ve starších prohlížečích. Jmenuje se Picturefill a považuji jej za dobré řešení, které mám odzkoušené na mnoha webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
+Javascriptová knihovna, která zařídí fungování atributů `srcset`, `sizes` a značky `<picture>` i ve starších prohlížečích. Jmenuje se Picturefill a považuji jej za dobré řešení, které mám odzkoušené na několika webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
 
