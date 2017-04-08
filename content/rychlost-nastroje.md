@@ -1,23 +1,31 @@
 # Nástroje pro analýzu rychlosti načtení stránky
 
-Začněte s Google PageSpeed Insights, pokračujte na WebPageTest.org. Budou se vám také hodit vývojářské nástroje v Chrome nebo jiných prohlížečích. 
+Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebPageTest.org. Vývojářům se také budou hodit vývojářské nástroje v Chrome nebo jiných prohlížečích. 
+
 
 ## Google PageSpeed Insights
 
 Validátor základních technických problémů, které komplikují rychlost webu. Zde začněte. Otestujte si tady všechny důležité vstupní šablony. 
 
-Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl se učit se další nástroje. Vyřešit je potřeba hlavně červeně zvýrazněné problémy vašeho webu.
+Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl učit se další nástroje. Vyřešit je potřeba hlavně červeně zvýrazněné problémy vašeho webu.
 
-Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu vypršení uložení měřicího skriptu Google Analytics do mezipaměti prohlížeče. Jinak je to ale skvělý nástroj.
+Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu kešování měřicího skriptu Google Analytics. Jinak je to ale skvělý nástroj. [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
 
-PSI se dá také instalovat jako rozšíření do prohlížečů nebo testování zautomatizovat pomocí API.
 
-[developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
+## Google Analytics
+
+U statistik z Google Analytics se mi líbí jak jsou po ruce markeťákům. Mají ale velmi zajímavé využití i pro vývojáře, hlavně když se rozšíří o Trackomatic a Technical Performace Dashboard. [vrdl.cz/prirucka/google-analytics-vyvojari](http://www.vzhurudolu.cz/prirucka/google-analytics-vyvojari)
+
+Na přehledy o rychlosti webu se mrkněte do *Chování > Rychlost > Přehled*. Je potřeba měřit pomocí aktuální verze: Universal Analytics. Analytics ukazují *Časování stránek (Page Timings)*, ale napříč různými kontexty jako jsou prohlížeče nebo regiony. 
+
+V *Časování uživatelů (User Timings)* mohou být vaše vlastní měření - např. jak rychle se načetl konkrétní obrázek. Je to potřeba nastavit. [vrdl.in/f3rbx](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
+
+Standardně se prý pro měření rychlost používá jednoprocentní vzorek vašich zhlédnutí stránky. Pokud to chcete jinak, je potřeba měřit s nastavením `‘siteSpeedSampleRate’: 50`. [vrdl.in/4bn30](http://www.ericmobley.net/measuring-performance-google-analytics/)
 
 
 ## WebPagetest.org
 
-Pro mě nástroj číslo jedna. Dělá pokročilou analýzu, testuje detailněji než Page Speed Insights. Na druhou stranu: WebPagetest nelze používat průběžně, protože testy nějakou dobu trvají. WebPagetest také nevede za ruku jako PSI, je potřeba jej trochu více poznávat.
+Pro mě nástroj číslo jedna. Dělá pokročilou analýzu, testuje detailněji než Page Speed Insights. Na druhou stranu: WebPagetest nelze používat průběžně, protože testy nějakou dobu trvají. WebPagetest také nevede za ruku jako PSI, nedává přímé rady jak problém odstranit. A je potřeba jej trochu více poznávat, rozhraní nepatří mezi nejpřívětivější.
 
 Umožňuje testování z jiné lokality, testování pomalého připojení a v prohlížečích, ve kterých nemáte pokročilé vývojářské nástroje. Třeba v těch mobilních nebo ve starých Internet Explorerech.
 
@@ -33,21 +41,19 @@ Hodnocení v parametrech, které připadají autorům WebPagetest důležité. *
 
 ### 2) Speed Index
 
-Speed Index je průměrný čas zobrazení konkrétní stránky v daném prohlížeči, [viewportu](viewport-mobily.md) a rychlosti internetu. Čím menší Speed Index, tím lépe. Nejrychlejší weby dosahují čísel kolem tisícovky. Průměr je mezi pěti a desíti tisíci.
+Speed Index je průměrný čas zobrazení konkrétní stránky v daném prohlížeči, velikosti okna a rychlosti internetu. Čím nižší je váš Speed Index, tím lépe. Nejrychlejší weby dosahují čísel kolem tisícovky. Průměr je mezi pěti a desíti tisíci. Čísla nad deset tisíc jsou na pováženou.
 
 Speed Index je esence rychlosti načítání. Číslo, které můžete porovnávat s konkurenty nebo před a po optimalizaci. Takový „pagerank“ pro odborníky na zrychlování webu. 
 
 ### 3) Vodopád načítání (Waterfall)
 
-Jak se stahují komponenty stránky? Které z nich blokují parsování? Velmi užitečné a velmi detailní.
+Jak se stahují komponenty stránky? Které z nich blokují parsování? Užitečný a detailní pohled na postup načítání. 
 
 ### 4) Filmový pás (Filmstrip View)
 
 Jak přesně vizuálně probíhalo načítání stránky? Velmi důležité. Dívám se jak dlouho trvalo, než se uživateli zobrazil obsah a také jakým způsobem vykreslování probíhalo. Je to užitečnější než strojově vypočtený *Start Render*, který vidíte v tabulce.
 
-Dívám se samozřejmě i na další čísla. WebpageTest má mnoho zákoutí k prozkoumání, tohle byl ale dobrý začátek.  
-
-[webpagetest.org](http://www.webpagetest.org/)
+Dívám se samozřejmě i na další čísla. WebpageTest má mnoho zákoutí k prozkoumání, tohle byl ale dobrý začátek. [webpagetest.org](http://www.webpagetest.org/)
 
 ## Chrome DevTools
 
@@ -62,7 +68,9 @@ Vše podstatné je v záložce Network:
 3. Omezte rychlost připojení
 4. Modrá je událost *DOMContentLoaded. Ta je spuštěná ve chvíli kdy bylo HTML načteno a rozparsováno. Červená událost *Load* se spustí jakmile prohlížeč stáhl úplně vše, včetně obrázků. 
 
-Na Vzhůru dolů jsem už psal o dalších praktických tipech pro DevTools. [vrdl.cz/blog/41-devtools-tipy](http://www.vzhurudolu.cz/blog/41-devtools-tipyblog/41-devtools-tipy).
+<div class="web-only" markdown="1">
+Na Vzhůru dolů jsem už psal i o dalších praktických tipech pro DevTools. [vrdl.cz/blog/41-devtools-tipy](http://www.vzhurudolu.cz/blog/41-devtools-tipyblog/41-devtools-tipy).
+</div>
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: analýza načítání stránky </a> ~ Praktická demonstrace analýzy rychlosti načítání ve vývojářských nástrojích Chrome.
@@ -76,16 +84,4 @@ Umí toho hodně. Ukáže timeline, zvládne emulaci pomalého připojení. Test
 
 [gtmetrix.com](https://gtmetrix.com/)
 
-## Google Analytics
 
-U statistik z Google Analytics se mi líbí jak jsou po ruce markeťákům. Mají ale velmi zajímavé využití i pro vývojáře, hlavně když se rozšíří o Trackomatic a Technical Performace Dashboard. [vrdl.cz/prirucka/google-analytics-vyvojari](http://www.vzhurudolu.cz/prirucka/google-analytics-vyvojari)
-
-Na přehledy o rychlosti webu se mrkněte do *Chování > Rychlost > Přehled*. Je potřeba měřit pomocí aktuální verze: Universal Analytics. Analytics ukazují *Časování stránek (Page Timings)*, ale napříč různými kontexty jako jsou prohlížeče nebo regiony. 
-
-V *Časování uživatelů (User Timings)* mohou být vaše vlastní měření - např. jak rychle se načetl konkrétní obrázek. Je to potřeba nastavit. [vrdl.in/f3rbx](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
-
-Standardně se prý pro měření rychlost používá jednoprocentní vzorek vašich zhlédnutí stránky. Pokud to chcete jinak, je potřeba měřit s nastavením `‘siteSpeedSampleRate’: 50`. [vrdl.in/4bn30](http://www.ericmobley.net/measuring-performance-google-analytics/)
-
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: analýza načítání stránky</a> ~ Praktická demonstrace analýzy rychlosti načítání ve vývojářských nástrojích Chrome.
-</p>
