@@ -10,13 +10,13 @@ Ke konci sezení se otevřou dveře a vstoupí Google. Všichni ztichnou a napja
 
 Odkazování na doporučení Google funguje. Ta firma je totiž stále nejmocnějším dodavatelem návštěvníků na naše weby a diskutovat s ní moc smysl nemá. 
 
-Podobné je to s tématy, která budeme rozebírat v této knize. Google byl jednou z prvních velkých firem, které přesně pochopily význam mobilních zařízení pro Web. Jeho doporučení jsou v zásadě plně v souladu s tím co vám na následujících stránkách budu tvrdit. Podívejme se na některé jeho kroky a doporučení z poslední doby:
+Podobné je to s tématy, která budeme rozebírat v této knize. Google byl jednou z prvních velkých firem, které přesně pochopily význam mobilních zařízení pro web. Jeho doporučení jsou v zásadě plně v souladu s tím co vám na následujících stránkách budu tvrdit. Podívejme se na některé jeho kroky a doporučení z poslední doby:
 
 - Radí stavět web jako responzivní, tedy s jednou URL adresou pro všechny typy zařízení. [vrdl.in/googlerwd](https://developers.google.com/webmasters/mobile-sites/mobile-seo/responsive-design)
 - Od ledna 2017 znevýhodňuje weby s obtěžujícími překryvnými vrstvami, které jsou špatně použitelné hlavně na mobilech. [vrdl.in/googlepopup](http://blog.bloxxter.cz/google-od-ledna-2017-penalizuje-weby-s-obtezujicimi-popupy/)
 - V průběhu roku 2017 začne zkoušet posuzovat weby hlavně podle toho jak vypadají na mobilech. [vrdl.cz/blog/73-google-mobile-first](http://www.vzhurudolu.cz/blog/73-google-mobile-first)
 
-Mohli bychom pokračovat dále. Google chápe Web jako *zejména* mobilní a je tedy poměrně oddaným fanouškem filozofie návrhu nejprve od mobilů ([Mobile First](mobile-first.md)), o které budu psát v druhé polovině knihy.
+Mohli bychom pokračovat dále. Google chápe web jako *zejména* mobilní a je tedy poměrně oddaným fanouškem filozofie návrhu nejprve od mobilů ([Mobile First](mobile-first.md)), o které budu psát v druhé polovině knihy.
 
 Co se týká doporučení Google, je to přesně dle slov klasika Járy Cimrmana: „Můžeme s tím nesouhlasit, můžeme proti tomu protestovat, ale je to asi tak jediné, co s tím můžeme dělat.“ 
 

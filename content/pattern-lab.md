@@ -56,7 +56,7 @@ Já vím, sázet při výběru nástroje na jméno tvůrce není stoprocentně s
 
 ![Atomic Design](dist/images/original/atomic-design.jpg)
 
-Frost přišel s tříděním prvků na stránce do úrovní vycházejících celkem chytře z chemické terminologie. Vezměme to i s příklady z našeho e-shopu:
+Frost přišel s tříděním prvků na stránce do úrovní vycházejících celkem chytře z chemické terminologie. Projdeme ji i s příklady z našeho e-shopu:
 
 1. Atomy (například tlačítko)
 2. Molekuly (např. tlačítko s inputem spojené do vyhledávacího pole)

@@ -71,7 +71,7 @@ Pět aplikací? To máme email, Facebook, mapy, volání, fotky, prohlížeč…
 
 Do aplikace lidi tak snadno nedostanete. Na web je to jednoduché, chodí vám tam z Google vyhledávání, Facebooku, emailů, chatů… však víte. 
 
-Proto říkám: Web potřebují všichni, nativní aplikaci dokáží prosadit jen někteří.
+Proto říkám: web potřebují všichni, nativní aplikaci dokáží prosadit jen někteří.
 
 Pojďme se ale zamyslet nad situací, že neděláte statický web restaurace, protože tam je to jasné. Přemýšlejme nad situací, že váš software splňuje uživatelskou definici aplikace: je interakčně složitý. 
 
@@ -143,7 +143,7 @@ Pokud jste firma, co má věrné uživatele, aplikací jste zase schopní je ví
 
 *„Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na Twitteru. [vrdl.in/8lh4f](https://twitter.com/lukew/status/649255909420503041)*
 
-Zvládnete ještě nějaká čísla? Podle comScore (The 2015 U.S. Mobile App Report) měl v červnu 2015 americký mobilní Web na 9 milionů unikátních uživatelů, nativní aplikace jen něco přes tři. Jenže v aplikacích strávil průměrný uživatel přes 200 minut času, v prohlížeči něco přes 10 minut.
+Zvládnete ještě nějaká čísla? Podle comScore (The 2015 U.S. Mobile App Report) měl v červnu 2015 americký mobilní web na 9 milionů unikátních uživatelů, nativní aplikace jen něco přes tři. Jenže v aplikacích strávil průměrný uživatel přes 200 minut času, v prohlížeči něco přes 10 minut.
 
 V angličtině to stručně a pěkně popsal Luke Wroblewski: 
 

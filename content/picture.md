@@ -2,7 +2,7 @@
 
 `<picture>` umožňuje definovat varianty obrázku pro různé stavy v responzivním webdesignu. 
 
-Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my, autoři. Ukážu tady pár scénářů, kdy je to výhodné. Není jich tak moc.
+Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my autoři. Ukážu tady pár scénářů, kdy je to výhodné. Není jich tak moc.
 
 
 ## Ukázka zápisu

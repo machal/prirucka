@@ -10,7 +10,7 @@ Retina, Amoled, QuadHD… Asi jste si všimli, že mobilní zařízení mají v 
 
 Kouká se přes ně na weby dobře, což o to. Ale kdo má pro ně ty weby navrhovat?!
 
-Vezměme iPhone 5S, ten má rozlišení 640×1136 pixelů. Někteří webaři se pořád ještě čertí: „Když si někdo otočí iPhone na šířku, zobrazí se mu web v na malém zařízení web v rozlišení pro tablet. Hrůza!“
+Vezměme iPhone 5S, ten má rozlišení 640 × 1136 pixelů. Někteří webaři se pořád ještě čertí: „Když si někdo otočí iPhone na šířku, zobrazí se mu web v na malém zařízení web v rozlišení pro tablet. Hrůza!“
 
 Není to tak. Hardwarové pixely nás webaře totiž skoro nezajímají. Zato CSS pixely jsou naši kamarádi. 
 
@@ -18,9 +18,9 @@ Není to tak. Hardwarové pixely nás webaře totiž skoro nezajímají. Zato CS
 
 Autorům webů totiž prohlížeče hardwarové rozlišení přepočítají do takzvaného CSS rozlišení.
 
-V případě iPhone 5S to bude polovina, tedy 320×568 pixelů. To už je docela normální „mobilní“ rozlišení, že?
+V případě iPhone 5S to bude polovina, tedy 320 × 568 pixelů. To už je docela normální „mobilní“ rozlišení, že?
 
-Retina displej na iPhone má tedy poměr mezi CSS a hardwarovým rozlišením 1:2. Ale pozor, když v CSS vykreslíme objekt velký 1 pixel, bude zabírat 4 hardwarové pixely. Půjde o mřížku o velikosti 2×2 pixely, odtud ten poměr 1:2.
+Retina displej na iPhone má tedy poměr mezi CSS a hardwarovým rozlišením 1:2. Ale pozor, když v CSS vykreslíme objekt velký 1 pixel, bude zabírat 4 hardwarové pixely. Půjde o mřížku o velikosti 2 × 2 pixely, odtud ten poměr 1:2.
 
 Když tedy do stránky vložíme obrázek…
 
@@ -30,11 +30,11 @@ Když tedy do stránky vložíme obrázek…
     alt="Fotka z dovolené">
 ```
 
-…vykreslí se na Retina displeji v ploše 200×200 hardwarových pixelů.
+…vykreslí se na Retina displeji v ploše 200 × 200 hardwarových pixelů.
 
-A tady vznikají problémy. Prohlížeč totiž nebude mít fotografii v dostatečné kvalitě, protože vykresluje 100×100 velký obrázek na 200×200 mřížce. Na iPhone s Retina displejem pak naše úžasná fotografie z dovolené prostě nebude tak krásně ostrá. Kurnik šopa!
+A tady vznikají problémy. Prohlížeč totiž nebude mít fotografii v dostatečné kvalitě, protože vykresluje 100 × 100 velký obrázek na 200 × 200 mřížce. Na iPhone s Retina displejem pak naše úžasná fotografie z dovolené prostě nebude tak krásně ostrá. Kurnik šopa!
 
-Zjednodušeně řečeno je tedy lepší fotografii rovnou vyrobit ve velikosti 200×200 pixelů. Do stránky ji ale vložíte stejným HTML kódem. Prohlížeč ji zmenší na 100×100 CSS pixelů, na běžných displejích nic nepoznáte a na Retina displeji to bude vypadat hezky.
+Zjednodušeně řečeno je tedy lepší fotografii rovnou vyrobit ve velikosti 200 × 200 pixelů. Do stránky ji ale vložíte stejným HTML kódem. Prohlížeč ji zmenší na 100 × 100 CSS pixelů, na běžných displejích nic nepoznáte a na Retina displeji to bude vypadat hezky.
 
 Jenže to by znamenalo velké obrázky a neúměrnou datovou zátěž. Raději ještě chvilku čtěte.
 
@@ -86,32 +86,32 @@ Vezměme si pár oblíbených zařízení. Jaký je tam poměr mezi HW (hardwaro
 </tr>
 <tr>
 <td>iPad Mini</td>
-<td>768×1024</td>
-<td>768×1024</td>
+<td>768 × 1024</td>
+<td>768 × 1024</td>
 <td>1</td>
 </tr>
 <tr>
 <td>iPhone 4</td>
-<td>640×960</td>
-<td>320×480</td>
+<td>640 × 960</td>
+<td>320 × 480</td>
 <td>2</td>
 </tr>
 <tr>
 <td>Google Nexus 7</td>
-<td>800×1280</td>
-<td>604×966</td>
+<td>800 × 1280</td>
+<td>604 × 966</td>
 <td>1.325</td>
 </tr>
 <tr>
 <td>HTC One</td>
-<td>1080×1920</td>
-<td>360×640</td>
+<td>1080 × 1920</td>
+<td>360 × 640</td>
 <td>3</td>
 </tr>
 <tr>
 <td>Xiaomi Mi3</td>
-<td>1080×1920</td>
-<td>270×480</td>
+<td>1080 × 1920</td>
+<td>270 × 480</td>
 <td>4</td>
 </tr>
 </tbody>

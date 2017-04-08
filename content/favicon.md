@@ -58,7 +58,7 @@ Další manifest, tentokrát používaný **Internet Explorerem 11**:
   content="Vzhůru dolů">
 ```
 
-`favicon.ico` používá **Internet Explorer**, ale slouží také jako fallback pro další prohlížeče. Je to takzvaný multiformát soubor, který obsahuje ikony v různých velikostech: 16×16, 32×32 nebo 48×48 pixelů:
+`favicon.ico` používá **Internet Explorer**, ale slouží také jako fallback pro další prohlížeče. Je to takzvaný multiformát soubor, který obsahuje ikony v různých velikostech: 16 × 16, 32 × 32 nebo 48 × 48 pixelů:
 
 ```html
 <link rel="shortcut icon" href="/favicon.ico">
@@ -72,7 +72,7 @@ Favicona pro **Safari na Mac OS**:
   href="/favicon/favicon-32x32.png" sizes="32x32">
 ```
 
-Klasická 16×16 ikona pro **všechny ostatní prohlížeče**:
+Klasická 16 × 16 ikona pro **všechny ostatní prohlížeče**:
 
 
 ```html

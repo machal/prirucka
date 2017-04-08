@@ -9,7 +9,7 @@ Tak bych jedním slovem popsal svůj proces návrhu a implementace webových roz
 Na obrázku vidíte opravdu jen nejzákladnější dělení. Dokument obsahuje mnoho dalších vrstev, to si ukážeme ke konci kapitoly. A komponenty? I ty můžeme dělit do mnoha hierarchií, bylo by to ale už nad rámec téhle knížky.
 
 Musíme se ale shodnout na vrstvení. To totiž považuji za jednu ze základních (a skvělých!)
-vlastností média, kterému říkáme Web. Je to podstata fungování webových technologií a ty dávají mantinely designu. Stavění od základny je fajn ještě z jednoho důvodu. Umožní nám rozfázovat proces návrhu tak, abychom se nezabývali přiliš mnoha problémy najednou. A abychom nezačínali od konce.
+vlastností média, kterému říkáme web. Je to podstata fungování webových technologií a ty dávají mantinely designu. Stavění od základny je fajn ještě z jednoho důvodu. Umožní nám rozfázovat proces návrhu tak, abychom se nezabývali přiliš mnoha problémy najednou. A abychom nezačínali od konce.
 
 
 ## Web je vrstvený z podstaty
@@ -59,7 +59,7 @@ Někdy se stačí podívat hned na první řádku HTML kódu. Mluví o typu *dok
 
 ## Vrstvené CSS: kodér potřebuje vidět systém, ne vnější znaky systému
 
-Pokud má Web vrstvení v DNA, pak CSS je takový malý vrstvící maniak. Pozor na něj. Následuje nenápadný kousek kódu, který ale dost přesně popisuje důvody, proč vás s těmi vrstvami tak otravuji. Mají totiž vliv na designérské procesy:
+Pokud má web vrstvení v DNA, pak CSS je takový malý vrstvící maniak. Pozor na něj. Následuje nenápadný kousek kódu, který ale dost přesně popisuje důvody, proč vás s těmi vrstvami tak otravuji. Mají totiž vliv na designérské procesy:
 
 ```css
 /* Dokument */

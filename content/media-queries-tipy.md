@@ -2,7 +2,7 @@
 
 ## Body zlomu vždy se snažte nastavovat podle obsahu
 
-Častou chybou je vymýšlení breakpointů „podle zařízení“. Vezměme, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
+Častou chybou je vymýšlení breakpointů „podle zařízení“. Dejme tomu, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
 
 ```css
 /* Bod zlomu „pro tablety“ (špatně) */
@@ -16,7 +16,7 @@ Vypadá to hezky, ale je to konina. Jak už jsem psal, rozlišení mobilů i tab
 
 „Podmínka pro tablety“ navíc nijak nereflektuje obsah a jeho rozvržení na obrazovce. Tohle by mělo být tou hlavní motivací k přidání bodu zlomu či breakpointu. Media Queries prostě mají vyrůstat z obsahu.
 
-Vezměme jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozhodujeme se o hodnotě bodu zlomu šířky okna, kdy se navigace z vodorovné stane svislou pro menší displeje.
+Dejme tomu, že máme jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozhodujeme se o hodnotě bodu zlomu šířky okna, kdy se navigace z vodorovné stane svislou pro menší displeje.
 
 ```css
 /* Bod zlomu nastavený podle obsahu */

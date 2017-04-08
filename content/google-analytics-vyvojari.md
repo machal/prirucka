@@ -26,7 +26,7 @@ Mimochodem, Viget jsou také autory  pluginu [Trackomatic](https://www.viget.com
 * Přehledy najdete v rozhraní Analytics pod *Chování > Rychlost webu*.
 * Hodí se vidět *Časování stránek* napříč různými kontexty: prohlížeči, regiony atd.
 * V *Časování uživatelů* mohou být vaše vlastní měření. Například: jak rychle se načetl konkrétní obrázek nebo kdy se stáhly fonty z Google Fonts. [Je to potřeba nastavit](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
-* Standardně se pro měření rychlosti používá jednoprocentní vzorek vašich shlédnutí stránky. Pokud to chcete jinak, [je potřeba měřit s jiným nastavením](http://www.ericmobley.net/measuring-performance-google-analytics/). Ja například používám 'siteSpeedSampleRate': 50.
+* Standardně se pro měření rychlosti používá jednoprocentní vzorek vašich zhlédnutí stránky. Pokud to chcete jinak, [je potřeba měřit s jiným nastavením](http://www.ericmobley.net/measuring-performance-google-analytics/). Ja například používám 'siteSpeedSampleRate': 50.
 
 Mimochodem, o dalších [nástrojích pro analýzu rychlosti načítání](rychlost-nastroje.md) píšu ve speciálním článku.
 
@@ -60,9 +60,9 @@ Možnosti jak Analytics debugovat je docela dost:
 
 ![Analytics Debugger](dist/images/original/analytics-debug.jpg)
 
-### Single Page apky a měření shlédnutí „stránky"
+### Single Page apky a měření zhlédnutí „stránky"
 
-Analytics standardně změří shlédnutí stránky jen při konvenčním postupu, kdy se každá nová stránka načítá se serveru na vlastním URL.
+Analytics standardně změří zhlédnutí stránky jen při konvenčním postupu, kdy se každá nová stránka načítá se serveru na vlastním URL.
 
 Pokud měníte URL z javascriptu, pak to Analytics nepoznají a novou *pageview* nezapočtou. Musíte jim to výslovně říct. Takže ke každé změně URL javascriptem dávejte kód podobný tomuto:
 

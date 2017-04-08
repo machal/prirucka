@@ -9,6 +9,8 @@ Foto autora je od Jana Forejta
 - Honza Sládek: review kapitoly „Weby versus aplikace“
 - Jan Kvasnička: review
 - Jiří Sekera: review
+- Zuzana Šumlanská
+- Radek Pavlíček
 - Fare.cz
 - *TODO*
 

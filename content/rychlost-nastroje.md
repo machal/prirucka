@@ -84,7 +84,7 @@ Na přehledy o rychlosti webu se mrkněte do *Chování > Rychlost > Přehled*. 
 
 V *Časování uživatelů (User Timings)* mohou být vaše vlastní měření - např. jak rychle se načetl konkrétní obrázek. Je to potřeba nastavit. [vrdl.in/f3rbx](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings).
 
-Standardně se prý pro měření rychlost používá jednoprocentní vzorek vašich shlédnutí stránky. Pokud to chcete jinak, je potřeba měřit s nastavením `‘siteSpeedSampleRate’: 50`. [vrdl.in/4bn30](http://www.ericmobley.net/measuring-performance-google-analytics/)
+Standardně se prý pro měření rychlost používá jednoprocentní vzorek vašich zhlédnutí stránky. Pokud to chcete jinak, je potřeba měřit s nastavením `‘siteSpeedSampleRate’: 50`. [vrdl.in/4bn30](http://www.ericmobley.net/measuring-performance-google-analytics/)
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: analýza načítání stránky</a> ~ Praktická demonstrace analýzy rychlosti načítání ve vývojářských nástrojích Chrome.

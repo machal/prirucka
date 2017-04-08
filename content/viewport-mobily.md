@@ -66,45 +66,45 @@ Pojďme se teď podívat na rozměry jednotlivých viewportů pro pár vybranýc
       <td>iPhone 4 
   / iOS6 
   / Safari</td>
-      <td>640×960</td>
-      <td>980×1091</td>
-      <td>320×480</td>
+      <td>640 × 960</td>
+      <td>980 × 1091</td>
+      <td>320 × 480</td>
       <td>2</td>
     </tr>
     <tr>
       <td>iPad Air 
   / iOS8.1 
   / Safari</td>
-      <td>1536×2048</td>
-      <td>980×1225</td>
-      <td>768×1024</td>
+      <td>1536 × 2048</td>
+      <td>980 × 1225</td>
+      <td>768 × 1024</td>
       <td>2</td>
     </tr>
     <tr>
       <td>Lumia 630 
   / WP8.1 
   / IE11</td>
-      <td>480×800</td>
-      <td>1024×1554</td>
-      <td>480×800</td>
+      <td>480 × 800</td>
+      <td>1024 × 1554</td>
+      <td>480 × 800</td>
       <td>1</td>
     </tr>
     <tr>
       <td>Galaxy S5 
   / Android 4.4 
   / Android Browser</td>
-      <td>1080×1920</td>
-      <td>980×1532</td>
-      <td>360×640</td>
+      <td>1080 × 1920</td>
+      <td>980 × 1532</td>
+      <td>360 × 640</td>
       <td>3</td>
     </tr>
     <tr>
       <td>Nexus 6 
   / Android 5 
   / Android Browser</td>
-      <td>1440×2560</td>
-      <td>980×1402</td>
-      <td>360×592</td>
+      <td>1440 × 2560</td>
+      <td>980 × 1402</td>
+      <td>360 × 592</td>
       <td>4</td>
     </tr>
   </table>  

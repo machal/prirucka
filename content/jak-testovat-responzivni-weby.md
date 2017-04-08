@@ -92,7 +92,7 @@ Telefony:
 
 Tablety:
 
-* iPad Mini s iOS 8. Jeden z menších tabletů, přitom plnohodnotně použitelný (a u nás doma používaný). Také velmi prodávaný. Určitě doporučuji pořídit, hlavně kvůli otestování dostatečné velikosti aktivních prvků v uživatelském rozhraní. Rozlišení 1024×768 na sedmi palcích: garantuji, že se váš grafik zapotí.
+* iPad Mini s iOS 8. Jeden z menších tabletů, přitom plnohodnotně použitelný (a u nás doma používaný). Také velmi prodávaný. Určitě doporučuji pořídit, hlavně kvůli otestování dostatečné velikosti aktivních prvků v uživatelském rozhraní. Rozlišení 1024 × 768 na sedmi palcích: garantuji, že se váš grafik zapotí.
 * Tablet Lenovo TAB 2. Klasický desetipalec s Androidem 5. 
 * Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480x800 pixelů. A také displejem prasklým od našeho mladšího chlapečka. To je prosím simulace těžkých podmínek pro prohlížení webu.
 

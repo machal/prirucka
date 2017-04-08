@@ -10,7 +10,7 @@ Oba naši chlapečkové chodili nebo chodí do skvělé kunratické lesní škol
 
 Proto žena často nakupuje pohorky, nepromokavé kalhoty a bundy s vodním sloupcem, o kterém se mně nikdy ani nesnilo. Je z ní úplná expertka na miniaturní outdoorové vybavení. Jenže získat ty vědomosti nebyla úplná sranda. Navíc nakupuje na různých e-shopech a moc by se jí líbilo, když by vše vyřešil jen jeden. Právě teď jsme doma v obýváku jeden fiktivní založili. Jmenuje *ForestKid* a v knížce mu uděláme prima web, uvidíte.
 
-Pojďme na první krok. Vezměme prázdnou tabulku našeho UCD canvasu a načrtněme si do ni tržního prostředí našeho e-shopu.
+Pojďme na první krok. Podívejme se na prázdnou tabulku UCD canvasu a načrtněme si do ni tržního prostředí našeho e-shopu.
 
 ## UCD Canvas pro fiktivní e-shop ForestKid
 

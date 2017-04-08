@@ -1,17 +1,17 @@
 # CSS rozlišení 
 
-Na školeních se stále setkávám se strachem mnohých webových tvůrců z ohromných rozlišení displejů posledních modelů mobilů. Výrobci dnes udávají až FullHD plochu pro zobrazování. To je 1920×1080 pixelů. Znamená to, že se na pětipalcových displejích budou weby zobrazovat stejně jako na velkých monitorech, a budou jen zmenšené do trpasličí velikosti?
+Na školeních se stále setkávám se strachem mnohých webových tvůrců z ohromných rozlišení displejů posledních modelů mobilů. Výrobci dnes udávají až FullHD plochu pro zobrazování. To je 1920 × 1080 pixelů. Znamená to, že se na pětipalcových displejích budou weby zobrazovat stejně jako na velkých monitorech a budou jen zmenšené do trpasličí velikosti?
 
-Netrapme se tím. Nás, webové tvůrce, totiž hardwarové rozlišení vůbec nezajímá. Prohlížeče jej pro nás přepočítávají do „CSS rozlišení“. 
+Netrapme se tím. Nás webové tvůrce totiž hardwarové rozlišení vůbec nezajímá. Prohlížeče jej pro nás přepočítávají do „CSS rozlišení“.
 
 V tabulce na příkladu několika zařízení ukazuji hardwarové a CSS rozlišení vybraných modelů telefonů:
 
 | Zařízení | Hardwarové rozlišení| CSS rozlišení |
 | -------- | ------------------  | ------------- |
-| iPhone 4 | 640×960 | 320×480 |
-| Google Nexus 7 | 800×1280 | 604×966 |
-| HTC One | 1080×1920 | 360×640 |
-| Xiaomi Mi3 | 1080×1920 | 270×480 |
+| iPhone 4 | 640 × 960 | 320 × 480 |
+| Google Nexus 7 | 800 × 1280 | 604 × 966 |
+| HTC One | 1080 × 1920 | 360 × 640 |
+| Xiaomi Mi3 | 1080 × 1920 | 270 × 480 |
 
 Vykreslení CSS rozlišení do hardwarového rastru pak obstarají samy prohlížeče.
 
@@ -28,7 +28,7 @@ CSS jednotka „pixel“ dříve vždy odpovídala hardwarovému pixelu, tedy sk
 
 ## Nesprávně vložená bitmapová grafika bude rozostřená
 
-Vezměme, že jsme si v grafickém programu připravili obrázek kružnice. Odtamtud ji vyexportujeme ve výšce a šířce 10 pixelů do formátu PNG. Teď ji vložíme do stránky:
+Dejme tomu, že jsme si v grafickém programu připravili obrázek kružnice. Odtamtud ji vyexportujeme ve výšce a šířce 10 pixelů do formátu PNG. Teď ji vložíme do stránky:
 
 ```html
 <img src="kruznice_10x10.png" 
@@ -37,9 +37,9 @@ Vezměme, že jsme si v grafickém programu připravili obrázek kružnice. Odta
 
 ![Běžný vs. Retina displej](dist/images/original/bezny-vs-retina.jpg)
 
-Na běžném displeji se soubor s obrázkem obsahující data pro 10×10 pixelů vykreslí do mřížky 10×10 hardwarových pixelů. Tady je svět ještě v pořádku. 
+Na běžném displeji se soubor s obrázkem obsahující data pro 10 × 10 pixelů vykreslí do mřížky 10 × 10 hardwarových pixelů. Tady je svět ještě v pořádku. 
 
-Jenže na „Retina“ displeji je potřeba vykreslit obrázek do mřížky 20×20. Tady vznikají problémy, protože prohlížeč má data jen pro poloviční počet pixelů. Druhou polovinu si tedy musí vymýšlet. Snaží se to dělat chytře, ale obrázek bude působit více či méně rozostřeně.
+Jenže na „Retina“ displeji je potřeba vykreslit obrázek do mřížky 20 × 20. Tady vznikají problémy, protože prohlížeč má data jen pro poloviční počet pixelů. Druhou polovinu si tedy musí vymýšlet. Snaží se to dělat chytře, ale obrázek bude působit více či méně rozostřeně.
 
 
 ## Řešení: používejte SVG a responzivní obrázky

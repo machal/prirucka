@@ -8,7 +8,7 @@ Ale také zjistili, že webový design není možné navrhovat a implementovat p
  
 V téhle zásadní kapitole si rozpitváme první ze dvou základních vrstev designu i technologie. Dokumentovou vrstvu.
 
-1. Podíváme se, co nám může přinést [vrstvení designu](dokument-zaklad.md) a jak to vychází z technických specifik Webu.
+1. Podíváme se, co nám může přinést [vrstvení designu](dokument-zaklad.md) a jak to vychází z technických specifik webu.
 2. Vývojářům a začínajícím designérům naservírujeme nutné základy [grafického designu](graficky-design.md).
 3. Blíže se podíváme na [typografii](typografie.md), ale také dopady responzivního webdesignu na ni. 
 4. Dám vám pár tipů na [zdroje pro grafické elementy](grafika-zdroje.md).

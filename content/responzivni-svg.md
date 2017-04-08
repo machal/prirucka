@@ -115,7 +115,7 @@ Ještě vydržte. To nejlepší teprve přijde. Slíbil jsem přeci povídání 
 
 Ano, uvnitř SVG můžeme Media Queries úplně v pohodě použít, A ano, tady se podmínky nevztahují k rozměrům celé stránky, ale k rodiči SVG dokumentu.
 
-Vezměme jednoduchý příklad, kdy na menších velikostech okna invertujeme barvy loga Vzhůru dolů:
+Podívejme se na jednoduchý příklad, kdy na menších velikostech okna invertujeme barvy loga Vzhůru dolů:
 
 Media Queries prostě napíšeme dovnitř kódu vektorového dokumentu:
 

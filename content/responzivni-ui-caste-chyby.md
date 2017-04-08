@@ -36,7 +36,7 @@ Týká se všech fixně umístěných navigačních lišt, překryvných vrstev 
 
 Ptáte se proč? 
 
-**Zmenšují už tak skromný prostor.** Telefony s menšími rozlišeními, jako 320×480 nebo dokonce 240×320 pixelů, stále žijí. Problém to ale bude prakticky na každém čtyřpalcovém displeji.
+**Zmenšují už tak skromný prostor.** Telefony s menšími rozlišeními, jako 320 × 480 nebo dokonce 240 × 320 pixelů, stále žijí. Problém to ale bude prakticky na každém čtyřpalcovém displeji.
 
 **Kolidují s ovládacími prvky prohlížečů.** Fixně pozicovaná horní navigace bývá překrývána vysunovací lištou s adresním řádkem prohlížeče. Prvky fixně umístěné dole zase kolidují s výsuvnou spodní lištou prohlížeče Safari na iOS. [vrdl.in/houb1](https://www.eventbrite.com/engineering/mobile-safari-why/)
 

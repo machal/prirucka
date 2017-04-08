@@ -8,7 +8,7 @@ Na obrazovce máme málo místa, proto tam nechte jen to opravdu nejdůležitěj
 
 ## 2) Nepodlehněte ikonománii
 
-Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaným ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. Vezměme web EquaBank.cz na dalším obrázku a udělejme si kvíz: co má na starosti první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Bude můj telefon hned volat na zákaznickou linku?
+Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaným ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. Podívejme se na web EquaBank.cz na dalším obrázku a udělejme si kvíz: co má na starosti první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Bude můj telefon hned volat na zákaznickou linku?
 
 Na většinu ikon se nedá spolehnout. Doplňte je popisy dat. Více v textu „UX Myth: Icons enhance usability“ na UXMyths.com.[vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
 

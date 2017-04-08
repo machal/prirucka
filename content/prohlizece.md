@@ -9,11 +9,11 @@ Pojďme si tady shrnout aktuální stav trhu prohlížečů v ČR. Čísla v tex
 Nejprve tři zásadní fakta z poslední doby:
 
 1. **Chrome požírá trh.**    
-Už nyní se v Česku dostal přes třetinu shlédnutých stránek. Ostatní prohlížeče stagnují nebo klesají.
+Už nyní se v Česku dostal přes třetinu zhlédnutých stránek. Ostatní prohlížeče stagnují nebo klesají.
 2. **Staré Explorery už skoro vymřely.**    
 Každý z Internet Explorerů kromě verze 11 už má podíl pod půl procenta a rychle klesá. Dnes je to poprvé co vám vyloženě nedoporučím pro ně dělat pracnější [fallbacky](fallback.md).
 3. **Mobilní zařízení mají přes pětinu celku.**    
-A více než polovina shlédnutí stránek na mobilech je opět z Chrome.
+A více než polovina zhlédnutí stránek na mobilech je opět z Chrome.
 
 
 ## Desktop: Chrome jako jediný masivně roste. Na desktopu má více než třetinový podíl
@@ -28,11 +28,11 @@ Poznámky:
 - Opera se dlouho držela kolem čtyřprocentního podílu. V posledním roce ale také začala klesat.
 - Podíl Safari na Apple počítačích v ČR k mému překvapení mírně roste. 
 
-## Mobily: pětinový podíl na shlédnutích stránek a dominance Chrome
+## Mobily: pětinový podíl na zhlédnutích stránek a dominance Chrome
 
 ![Vývoj podílu mobilních zařízení](dist/images/original/prohlizece-mobily-podil.jpg)
 
-Na pětinovém podílu ze shlédnutých stránek se mobily samozřejmě nezastaví. Za rok budou mít minimálně čtvrtinu a tak dále. Čísla ze Západu ukazují, že to půjde přes polovinu a výše. Ale vy už jistě dávno neváháte, že budoucnost Webu je v mobilech.
+Na pětinovém podílu ze zhlédnutých stránek se mobily samozřejmě nezastaví. Za rok budou mít minimálně čtvrtinu a tak dále. Čísla ze Západu ukazují, že to půjde přes polovinu a výše. Ale vy už jistě dávno neváháte, že budoucnost webu je v mobilech.
 
 ![Trh mobilních prohlížečů](dist/images/original/prohlizece-mobily-kolac.jpg)
 
@@ -82,7 +82,7 @@ Ke krátkému komentáři pro zajímavost přidávám i skóre [na HTML5test.com
 
 ### Speciální kategorie: WebView a prohlížeče uvnitř aplikací
 
-Většina dnešních shlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, Twitteru nebo třeba emailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/blog/19-prohlizec-facebook](http://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
+Většina dnešních zhlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, Twitteru nebo třeba emailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/blog/19-prohlizec-facebook](http://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
 
 Jakým prohlížečem se pak stránka vykreslí? Vývojáři nativních mobilních aplikací jej znají jako WebView komponentu. Ta startuje jádro výchozího prohlížeče pro konkrétní operační systém. Na iOS je to vždy mobilní Safari, na dnešních Androidech obvykle Chrome. 
 
@@ -131,8 +131,8 @@ K polovině prázdnin 2016 má jádro Blink (Chrome, Opera) podíl na trhu 48 pr
 
 - **Moje obecná čísla berte s rezervou**. Sledujte hlavně vlastní Google Analytics.
 - **Nebojte se nových technologií**. [Flexbox](css3-flexbox.md) má v těchto číslech přibližně 98 % podporu. Totéž SVG. Obojí vám děsně ušetří práci a nabídne nové možnosti. Fallbacky ve starých prohlížečích rozhodně nedělejte plnohodnotné se zobrazením v moderních prohlížečích. Obvykle se vám to nevyplatí.
-- **Nepodceňujte menší prohlížeče**. Zařízují sedminu shlédnutí stránek. Naučte se testovat tak, abyste s tím neměli moc práce. Doporučím zase svůj článek. [vrdl.cz/prirucka/jak-testovat-responzivni-weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
-- … a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že Web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. 
+- **Nepodceňujte menší prohlížeče**. Zařízují sedminu zhlédnutí stránek. Naučte se testovat tak, abyste s tím neměli moc práce. Doporučím zase svůj článek. [vrdl.cz/prirucka/jak-testovat-responzivni-weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
+- … a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. 
 
 
 

@@ -87,7 +87,7 @@ Cíle nastavíte v horním menu Analytics: *Administrátor > Výběr dat > Cíle
 
 ### Měření cílů pomocí událostí
 
-V rozhraní Analytics jde cíle vložit jako shlédnutí konkrétní stránky. Obvykle to stačí. Někdy se ale při splnění cíle URL nezmění. Pak se vám může hodit měření pomocí událostí. Vývojář prostě vloží kus javascriptového kódu, který cíl po splnění podmínky započítá. Například na Vzhůru dolů se nákup [e-booku](http://www.vzhurudolu.cz/ebook) měří tímto kódem:
+V rozhraní Analytics jde cíle vložit jako zhlédnutí konkrétní stránky. Obvykle to stačí. Někdy se ale při splnění cíle URL nezmění. Pak se vám může hodit měření pomocí událostí. Vývojář prostě vloží kus javascriptového kódu, který cíl po splnění podmínky započítá. Například na Vzhůru dolů se nákup [e-booku](http://www.vzhurudolu.cz/ebook) měří tímto kódem:
 
 ```javascript
 ga('send', 'event', {
