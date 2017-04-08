@@ -72,3 +72,9 @@ Hodí se to jen, když nemáte přístup do `<head>`. Teoreticky jde javascripte
 ## Odstranění 300ms prodlevy 
 
 Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče to dělaly proto, že po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)
+
+<div class="ebook-only" markdown="1">
+
+Teď se pojďme podívat na jeden parametr webů, jehož podcenění může mít daleko horší důsledky. Rychlost načítání. Nepatří sem jen zdánlivě. V průběhu práce na projektu ji totiž nesmíme nechat na závěr.
+
+</div>
