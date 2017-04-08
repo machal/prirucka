@@ -20,7 +20,7 @@ Ukažme si nejprve zjednodušený kód komponenty s tlačítkem:
 .button-login { … }
 ```
 
-OOCSS má pět principů, alespoň podle toho jak jej vnímám já:
+OOCSS má pět principů, alespoň podle toho, jak jej vnímám já:
 
 ## 1) Nezávislost vzhledu na struktuře
 

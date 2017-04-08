@@ -107,7 +107,7 @@ A tady je živý příklad, obsahující všechny čtyři varianty radiálního 
 
 ## Opakující se barevné přechody
 
-Deklarují se úplně stejně jako běžné barevné přechody, jen pomocí funkcí `repeating-linear-gradient()` nebo `repeating-radial-gradient()`. Narozdíl od běžných přechodů prohlížeč od poslední barevné zarážky nevykreslí barvu, kterou obsahuje, ale znovu opakuje definovaný gradient.
+Deklarují se úplně stejně jako běžné barevné přechody, jen pomocí funkcí `repeating-linear-gradient()` nebo `repeating-radial-gradient()`. Na rozdíl od běžných přechodů prohlížeč od poslední barevné zarážky nevykreslí barvu, kterou obsahuje, ale znovu opakuje definovaný gradient.
 
 ```css
 .repeating-linear {

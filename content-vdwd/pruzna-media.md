@@ -54,7 +54,7 @@ A zase si to pojďme vysvětlit:
 
 `position: relative` – vytvoří nový omezující blok, ve kterém lze absolutně pozicovat.
 
-`height: 0` – potřebujeme proto, abychom výšku elementu mohli nastavit pomocí vnitřních okrajů prvku. Svislý padding se totiž narozdíl od vlastnosti `height` počítá ze šířky elementu, takže s jeho pomocí určíme poměr stran rodičovského bloku.
+`height: 0` – potřebujeme proto, abychom výšku elementu mohli nastavit pomocí vnitřních okrajů prvku. Svislý padding se totiž na rozdíl od vlastnosti `height` počítá ze šířky elementu, takže s jeho pomocí určíme poměr stran rodičovského bloku.
 
 Poměr stran je zde tedy 100 ku 60, takže 5:3. Například pro 16:9 bychom do padding-bottom vložili `56.25%` (9 / 16 * 100).
 

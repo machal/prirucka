@@ -80,7 +80,7 @@ Pokud to myslíte s responzivními weby vážně, určitě k ruce potřebujete j
 
 ## Testování na fyzických zařízeních
 
-Jaká zařízení si pro testování pořídit? Nejlépe všechna! Že vám to rozpočet nedovolí? Mě taky ne, takže do začátku vás může inspirovat seznam zařízení, na kterých testuji svou práci. Budu je řadit podle toho jak důležitá mě připadají pro testování dnešních webů.
+Jaká zařízení si pro testování pořídit? Nejlépe všechna! Že vám to rozpočet nedovolí? Mě taky ne, takže do začátku vás může inspirovat seznam zařízení, na kterých testuji svou práci. Budu je řadit podle toho, jak důležitá mě připadají pro testování dnešních webů.
 
 Telefony:
 

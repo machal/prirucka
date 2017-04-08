@@ -86,4 +86,4 @@ Running "perfbudget:default" (perfbudget) task
 >> Summary: http://www.webpagetest.org/result/150813_GN_FDM/
 ```
 
-Není to samozřejmě bez nevýhod. Test čeká ve frontě a tak na jeho výsledek čekáte řádově minuty až desítky minut podle toho jakou zvolíte testovací lokaci a její parametry.
+Není to samozřejmě bez nevýhod. Test čeká ve frontě a tak na jeho výsledek čekáte řádově minuty až desítky minut podle toho, jakou zvolíte testovací lokaci a její parametry.

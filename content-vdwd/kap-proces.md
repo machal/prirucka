@@ -1,8 +1,8 @@
 # Kapitola 2: Úvod do tvorby webu
 
-Vy zkušenější víte, že se dnešní webdesign nedá pojmout jediným člověkem. Já se třeba ze židle frontend designéra jakžtakž vyznám v návrhu uživatelského rozhraní, jazycích HTML a CSS a souvisejících tématech. Kolegům a kolegyním uživatelským výzkumníkům, grafikům, copywriterům, markeťákům, vývojářům, serverovým administrátorům vidím pod ruce jen málo.
+Vy zkušenější víte, že se dnešní webdesign nedá pojmout jediným člověkem. Já se třeba ze židle frontend designéra jakžtakž vyznám v návrhu uživatelského rozhraní, jazycích HTML a CSS a souvisejících tématech. Kolegům a kolegyním uživatelským výzkumníkům, grafikům, copywriterům, markeťákům, vývojářům a serverovým administrátorům vidím pod ruce jen málo.
 
-Napsat knížku o *celém* webdesignu vlastně už ani není možné. I tady se budeme zabývat jen úzkou výsečí: designem a imlementací webového uživatelského rozhraní. Vynecháme všechny rybníky s tenkým ledem, ve kterých bych se jistojistě utopil.
+Napsat knížku o *celém* webdesignu vlastně už ani není možné. I tady se budeme zabývat jen úzkou výsečí: designem a implementací webového uživatelského rozhraní. Vynecháme všechny rybníky s tenkým ledem, ve kterých bych se jistojistě utopil.
 
 Webdesign jako obor si tedy pro potřeby knížky můžeme zjednodušit.
 

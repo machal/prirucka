@@ -9,12 +9,12 @@ Budeme si na nich prohlížet weby?
 
 ## Chytré hodinky: NE
 
-Hodinky obvykle prohlížeč instalovaný nemají. Na některých platformách si nějaký ten neoficiální stáhnout můžete. Zkoušel jsem, ale myslím že je to nepoužitelné a že masovému přijetí nevěřím. Plocha je pro weby příliš malá na konzumaci obsahu, natož pak rozumné interakce s ním.
+Hodinky obvykle prohlížeč instalovaný nemají. Na některých platformách si nějaký ten neoficiální stáhnout můžete. Zkoušel jsem, ale myslím, že je to nepoužitelné, a masovému přijetí nevěřím. Plocha je pro weby příliš malá na konzumaci obsahu, natož pak rozumnou interakci s ním.
 
 
 ## Televize: NE
 
-I vaše chytrá domácí televizi nejspíš nějaký ten prohlížeč obsahuje. Moc je ale lidé nepoužívají. Zakopaný pes vězí v uživatelském ovládání. Budoucnost v případě televizí vidím v gestech a hlasovém rozhraní. Interakce s běžnými webovými stránkami na televizi budou do té doby nepohodlné. To ale neznamená, že nevznikají nativní TV aplikace vytvářené pomocí webových technologií. Ostatně, i HbbTV aplikace jsou vyrobené webovými technologiemi. [vrdl.in/hbbtv](http://www.hbbtv-developer.com/site/wiki/index.php/Hello_world) 
+I vaše chytrá domácí televize nejspíš nějaký ten prohlížeč obsahuje. Moc je ale lidé nepoužívají. Zakopaný pes vězí v uživatelském ovládání. Budoucnost v případě televizí vidím v gestech a hlasovém rozhraní. Interakce s běžnými webovými stránkami na televizi budou do té doby nepohodlné. To ale neznamená, že nevznikají nativní TV aplikace vytvářené pomocí webových technologií. Ostatně i HbbTV aplikace jsou vyrobené webovými technologiemi. [vrdl.in/hbbtv](http://www.hbbtv-developer.com/site/wiki/index.php/Hello_world) 
 
 
 ## Ledničky: NE  
@@ -29,13 +29,13 @@ Myslím ty malé potvůrky do ruky. Jsou to jen převlečené chytré telefony, 
 
 S rozmachem (polo)automatického řízení poroste význam velkých dotykových obrazovek. Nejspíš v těch místech, kde teď v autě máte výstupy z ventilátorů. Číst si Blesk.cz v dopravní zácpě? Já to dělat nebudu, ale dává mi to dokonalý smysl. Jen doufejme, že ta auta budou fakt chytrá, aby zvládla řídit, protože nás od palubních displejů už nic neodtrhne. Mají to už odzkoušeno v Tesla Motors: [vrdl.in/rlwn0](https://www.tesla.com/support/touchscreen-web-browser).
 
-## Na žádnou další revoluci to teď nevypadá? 
+## Revoluce nejspíš ne. Weby budou ale ještě více responzivní
 
-Jedině, že by na trh ještě vstoupily pračky s displejem a prohlížečem. Ale ne, dělám si legraci. 
+Jedině že by na trh ještě vstoupily pračky s displejem a prohlížečem. Ale ne, dělám si legraci.
 
-Dotykové panely v autech jsou vlastně větší tablety a přenosné herní konzole zase něco jako chytré telefony. Vypadá to tedy, že velké novinky nás ze strany displejů v nejbližší době nečekají? 
+Dotykové panely v autech jsou vlastně větší tablety a přenosné herní konzole zase něco jako chytré telefony. Vypadá to tedy, že velké novinky nás ze strany displejů v nejbližší době nečekají.
 
-Responzivní weby a aplikace se spíše skrze hardware naučí lépe využívat znalosti o prostředí prohlížeče, zařízení a uživatele. Mohou zjistit stav baterie, světelné podmínky v okolí zařízení, lépe využít geolokaci a polohu zařízení v reálném světě. Hezky to rozebírá Una Kravets v článku „Rethinking Responsive Design“. [vrdl.in/ozlu9](https://medium.com/@unakravets/rethinking-responsive-d557ef1745bd#.qz3s11y34)
+Responzivní weby a aplikace se spíše skrze hardware naučí lépe využívat znalosti o prostředí prohlížeče, zařízení a uživatele. Mohou zjistit stav baterie, světelné podmínky v okolí zařízení a lépe využít geolokaci a polohu zařízení v reálném světě. Hezky to rozebírá Una Kravets v článku „Rethinking Responsive Design“. [vrdl.in/ozlu9](https://medium.com/@unakravets/rethinking-responsive-d557ef1745bd#.qz3s11y34)
 
 ## Sledujte hlasová uživatelská rozhraní
 
