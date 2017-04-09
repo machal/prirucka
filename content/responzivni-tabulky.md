@@ -1,8 +1,9 @@
 # Responzivní tabulky
 
-Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky na webu by mu zavařily. No vážně. Však čtěte.
+Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky na webu by mu daly zabrat. No vážně. Však čtěte.
 
-Zejména ty rozsáhlejší mají nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet a vy si jistě vyberete. Tedy pokud nejste Chuck Norris, ten si vybral ještě jsem začal psát.
+Zejména ty rozsáhlejší mají nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet a vy si jistě vyberete. Tedy pokud nejste Chuck Norris. Ten si vybral, ještě jsem začal psát.
+
 
 ## Posun do stran
 
@@ -22,7 +23,15 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 
 Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
-Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také tabulky vkládané přes redakční systémy, u kterých nevíte jak složité budou. A nebo když prostě chcete ušetřit čas.
+Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také tabulky vkládané přes redakční systémy, u kterých nevíte jak složité budou. A nebo, když prostě chcete ušetřit čas na vývoj.
+
+Než si ukážeme propracovanější způsoby práce s responzivními tabulkami, dovolte mi jeden tip na nástroj.
+
+
+## Chytrý plugin: Tablesaw
+
+Tablesaw je jQuery plugin, který zvládá téměř všechny zde popsané možnosti chování responzivních tabulek. Prostě švýcarský tabulkový nůž Chuck Norrise. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)
+
 
 ## Posun do stran s fixním sloupcem
 
@@ -36,7 +45,7 @@ Vyzkoušejte si naživo v Codepenu. [cdpn.io/e/qqvJdV](http://codepen.io/machal/
 
 S propracovanějším řešením využívající flexbox a další moderní CSS vlastnosti přišel David Bushell v textu „CSS only Responsive Tables“. [vrdl.in/xlpbn](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
 
-Fixně-posuvné řešení je pak možné doplnit detekcí gesta švihnutí (swipe) pro snadnější a přesnější posouvání sloupečků. Plugin Tablesaw, který doporučuji dále v textu, to umí.
+Fixně-posuvné řešení je pak možné doplnit detekcí gesta švihnutí (swipe) pro snadnější a přesnější posouvání sloupečků. 
 
 Řešení má mnoho užití. Podmínkou ale je, aby tabulka měla přijatelně nízký počet řádků.
 
@@ -44,7 +53,7 @@ Nojo, ale co když ale máte tabulku toho typu, kterému programátoři říkaj�
 
 ## Stohování
 
-Datagrid není žádná vzácnost. Každá webová aplikace pro interní systémy je datagridů plná. Je to případ vašeho projektu? Pak bych vám doporučil přestylovat tabulku na mobilech do podoby netabulkového, kartičkového zobrazení. Říká se tomu stohování.
+Datagrid není žádná vzácnost. Každá webová aplikace pro interní systémy je datagridů plná. Je to případ vašeho projektu? Pak bych vám doporučil přestylovat tabulku na mobilech do podoby netabulkového, kartičkového zobrazení. Říkám tomu *stohování*.
 
 ![](dist/images/original/tabulky_3.png)
 
@@ -60,9 +69,9 @@ V nejjednodušší možné CSS implementaci prostě tabulce na menších displej
 }
 ```
 
-Na Codepenu je možné si zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0)
+Na Codepenu je možné zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0)
 
-I tak ale čisté CSS řešení nebude dokonalé. Pro tento typ práce s tabulkami budete potřebovat kousek Javascriptu. Za chvíli vám poradím pěknou knihovnu, vydržte.
+I tak ale čisté CSS řešení nebude dokonalé. Pro tento typ práce s tabulkami budete potřebovat kousek Javascriptu nebo zmíněný plugin.
 
 Stohování se hodí i pro tabulky se složitějším obsahem v buňkách: odstavcový text, formulářové prvky a tak dále.
 
@@ -100,8 +109,6 @@ Z tabulkových prostě na mobilu uděláte zjednodušený graf. Doporučuji nasa
 
 Schovávání obsahu na konkrétních zařízeních je dost nebezpečné. Jak už jsem argumentoval dříve, stejní lidé se na vaše rozhraní dívají z různých zařízení. Proč by určitý obsah měli na jednom zařízení vidět a jiném ne?
 
-Více o tomu budu psát [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů.
+Více o tomu píšu dále [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů sedmé kapitoly.
 
-## Vše v jednom: plugin Tablesaw
 
-Tablesaw je jQuery plugin (nebo lépe řečeno sada pluginů), který zvládá všechny popsané možnosti chování responzivních tabulek. Prostě švýcarský tabulkový nůž Chuck Norrise. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)

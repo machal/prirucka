@@ -153,10 +153,10 @@ Tušíte správně, podmínky v `@media` se pak budou vztahovat k šířce obrá
 
 Podmínky budou pracovat jako Container Queries, které bychom ve webdesignu děsně potřebovali. Ale nemáme je. Zatím tedy jen u externích SVG. Zmíním je ještě [v kapitole o Media Queries](media-queries-tipy.md).
 
-Tak či tak, mechanismus responzivních SVG má velkou budoucnost: pro ikony, grafy, interaktivní elementy, mapy (!) a další prvky s potřebou měnit hustotu informací podle velikosti okna prohlížeče.
+Tak či tak, mechanismus responzivních SVG má velkou budoucnost: pro ikony, grafy, interaktivní elementy, mapy (!) a další prvky s potřebou měnit hustotu informací nebo formy podle velikosti okna prohlížeče.
 
 <div class="ebook-only" markdown="1">
-  A teď už pryč od obrázků a hurá do tabulek a grafů. Slibuji, že to nebude taková nuda jako to zní.
+  A teď už pryč od obrázků a hurá do tabulek a grafů. Slibuji, že to nebude taková nuda, jak to zní.
 </div>
 
 
