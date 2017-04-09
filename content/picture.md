@@ -2,7 +2,7 @@
 
 `<picture>` umožňuje definovat varianty obrázku pro různé stavy v responzivním webdesignu. 
 
-Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my autoři. Ukážu tady pár scénářů, kdy je to výhodné. Není jich tak moc.
+Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohlížeči. Vedení tady přebíráme my autoři. Ukážu tady pár scénářů, kdy je to výhodné. 
 
 
 ## Ukázka zápisu
@@ -15,16 +15,16 @@ Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohl�
 </picture>
 ```
 
-Ve elementech `<source>` uvádím alternativy k výchozímu obrázku, který je v `<img>`. Prohlížeč vezme vždy první vyhovující, takže je nutné alternativy řadit od největšího po nejmenší.
+V elementech `<source>` uvádím alternativy k výchozímu obrázku, který je v `<img>`. Prohlížeč vezme vždy první vyhovující, takže je nutné alternativy řadit od největšího po nejmenší.
 
 Značka `<picture>` přitom tvoří jen obal a prvky `<source>` jakési molitanové vycpávky nesoucí informaci o alternativách. Veškeré stylování nebo věšení událostí v javascriptu je nutné dělat přímo na `<img>` elementu. V každém `<picture>` musí být právě jeden `<img>`.
 
 Kdy se vám může `<picture>` hodit? Hlavně ve dvou situacích:
 
-1. Připravili jste obrázky v různých ořezech. Třeba na mobily chcete poslat čtverce a jinde obdélníky. Zároveň chcete mít pod kontrolou hranice, kdy prohlíže použije jednu či druhou ořezovou verzi. Jde o „art direction“, tedy autorské řízení obsahu obrázků.
+1. Připravili jste obrázky v různých ořezech. Třeba na mobily chcete poslat čtverce a jinde obdélníky. Zároveň chcete mít pod kontrolou hranice, kdy prohlíže použije jednu či druhou ořezovou verzi. Jde o „art direction“, tedy autorské řízení formy a obsahu obrázků.
 2. Prohlížečům jste obrázky připravili v různých souborových formátech.
 
-Ve všech ostatních případech a tedy v naprosté většině případů vám bude stačit starý dobrý `<img>` [s atributy `srcset` a `sizes`](srcset-sizes.md).
+V naprosté většině případů vám bude stačit stará dobrá značka `<img>` [s atributy `srcset` a `sizes`](srcset-sizes.md).
 
 
 ## Art direction: obrázky pro různá rozlišení mají také různý obsah
@@ -49,12 +49,14 @@ Pro okna 1024 pixelů a větší se stáhne a použije obrázek `large_1600.png`
 
 I tady jsem pro vás připravil demo na CodePen. [cdpn.io/e/VYPPQQ](http://codepen.io/machal/pen/VYPPQQ?editors=110). 
 
-V čem se to liší od `<img srcset sizes>`? Příklad, který uvádím, je velmi zjednodušený. Museli byste v něm ještě ošetřit různé hodnoty `device-pixel-ratio`. To máte u `srcset` a `sizes` „v ceně“ řešení: prohlížeč to udělá sám.  Na druhou stranu tady pomocí jakýchkoliv [Media Queries](css3-media-queries.md) určíte sami hranice mezi variantami. Naproti tomu vybírá obrázky `srcset` prohlížeč sám podle layoutu nastaveného v `sizes`.
+V čem se to liší od `<img srcset sizes>`? Příklad, který uvádím výše, je velmi zjednodušený. Museli byste v něm ještě ošetřit displeje typu Retina, tedy různé hodnoty `device-pixel-ratio`. To máte u `srcset` a `sizes` „v ceně“ řešení: prohlížeč to udělá sám.  Na druhou stranu tady pomocí jakýchkoliv [Media Queries](css3-media-queries.md) určíte sami hranice mezi variantami. V metodě `srcset` vybírá prohlížeč sám podle layoutu nastaveného v `sizes`.
+
+Jinými slovy: Pokud byste se rozhodli používat `<picture>` pro běžné obrázky, byly by vaše Media Queries v nich uvedené dost složité. Kromě šířky okna by musely zohledňovat velikost obrázku v layoutu a také displeje typu Retina. Pojďme se ale zaměřit na ty scénáře, kdy se nová značka opravdu hodí.
 
 
 ## Podle formátu obrázku
 
-Vybírat obrázky prohlížeče umí i podle formátu. Použijte atribut `type`. Hodí se hlavně pro detekci prohlížečí, které zvládají nový formát WebP. Ten je mimochodem ještě výrazně datově úspornější než JPG, ale ke dni psaní jej podporuje jen Chrome a Opera. [caniuse.com/webp](http://caniuse.com/#feat=webp)
+Vybírat obrázky prohlížeče umí i podle formátu. Použijte atribut `type`. Hodí se hlavně pro detekci prohlížečů, které zvládají nový formát WebP. Ten je mimochodem ještě výrazně datově úspornější než JPG, ale ke dni psaní jej podporuje jen Chrome a Opera. [caniuse.com/webp](http://caniuse.com/#feat=webp)
 
 ```html
 <picture>
@@ -66,9 +68,9 @@ Vybírat obrázky prohlížeče umí i podle formátu. Použijte atribut `type`.
 </picture>`
 ```
 
-Prohlížeč, co umí formát WebP a běží v okně velikosti alespoň 1024 pixelů, stáhne a zobrazí soubor `large.webp`. 
+Prohlížeč, který umí formát WebP a běží v okně velikosti alespoň 1024 pixelů, stáhne a zobrazí soubor `large.webp`. 
 
-Tímto způsobem je také možné udělat pěkný fallback pro formát SVG:
+Tímto způsobem je také možné udělat pěkné náhradní řešení pro formát SVG:
 
 ```html
 <picture>

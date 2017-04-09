@@ -158,7 +158,7 @@ Takže celý zápis tagu `<img>` bude vypadat takto:
   sizes="
     (min-width: 800px) calc((100vw - 2*8px) * 0.49), 
     calc(100vw - 2*8px)"
-  >
+  width="200" height="200" alt="…"  >
 ```
 
 Pojďme si pro jistotu ještě shrnout celý zápis:
