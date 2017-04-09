@@ -1,4 +1,4 @@
-# Nová značka `<picture>`
+# Nová značka Picture
 
 `<picture>` umožňuje definovat varianty obrázku pro různé stavy v responzivním webdesignu. 
 
