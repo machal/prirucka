@@ -10,7 +10,7 @@ Lidé od webu se jako zapomnětliví kuchaři chovají v jednom kuse. Na surovin
 - Přikážou kodérovi přiravit mobilní verzi.
 - Na spuštěním webu se vrhnou na „optimalizaci“ rychlosti načtení.
 
-Jenže, přátelé, neexistuje nic jako tlačítka s nápisy jako „zapnout SEO“ nebo „zapnout rychlost“ na hlavě webařky nebo webaře.
+Jenže, milí čtenáři, neexistuje nic jako tlačítka s nápisy jako „zapnout SEO“ nebo „zapnout rychlost“ na hlavě webařky nebo webaře.
 
 Tyto a další aspekty dobrého webu musejí být promýšleny jako nedílná součást hned první, výzkumné a definiční fáze webového projektu. Povídali jsme si o ní [v kapitole o tvorbě webu](zaklady-procesu.md), pokud si vzpomínáte.
 

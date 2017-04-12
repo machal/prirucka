@@ -2,7 +2,7 @@
 
 Při formování dokumentu, nevyhnutelném základu každého webu, se může hodit pár nástrojů. Předpokládejme, že máme hotový obsah ve strukturovaném HTML. Co teď?
 
-Seznamte se s Blankou. Žádný tunel to není, přátelé. Blanka od anglického *blank*: prázdný, čistý, nepopsaný. 
+Seznamte se s Blankou. Žádný tunel to není, nebojte se. Blanka od anglického *blank*: prázdný, čistý, nepopsaný. 
 
 Je to má sada nástrojů pro nastavení typografické základnu každého webu. Třetí vrstva stavby hned po výchozích stylech prohlížečů a Normalize.css. Dám sem rovnou odkaz, ale nebojte, Blanku pořádně rozpitváme. [github.com/machal/blanka-html](https://github.com/machal/blanka-html)
 

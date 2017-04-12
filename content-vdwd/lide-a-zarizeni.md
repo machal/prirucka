@@ -12,7 +12,7 @@ Na začátek si dovolím parafrázovat myšlenku Joshe Clarka z jeho skvělé kn
 
 > Zařízení jakéhokoliv typu může být dotykové. Proto musíme předpokládat, že dotykové bude.
 
-Přesně tak, přátelé, pojďme považovat dotykové ovládaní za výchozí stav.
+Přesně tak, milí čtenáři, pojďme považovat dotykové ovládaní za výchozí stav.
 
 V době kdy píšu tento text ještě „dotykáče“ mezi zařízeními přistupujícími na vaše weby nemusejí hrát první housle.  Jenže, jak už jsem psal dříve, to se brzy změní. 
 
@@ -64,7 +64,7 @@ A to i přes to, že leváci tvoří jen asi desetinu, nikoliv zbylou třetinu, 
 * **75 % všech interakcí bylo děláno palcem.**  
 U jednorukého držení to asi smysl dává, ale palce to vyhrály i u kolébkového chvatu. 
 
-Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovládání palců, přátelé. 
+Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovládání palců. 
 
 Zdrojový výzkum Steven Hoobera „How Do Users Really Hold Mobile Devices“ najdete na UXMatters.com. [vrdl.in/m326o](http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php#top)
 

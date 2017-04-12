@@ -2,7 +2,7 @@
 
 > To je prosím klobouk kouzelníka Pokustona a v něm bydlí králík. Bob.  „Vstávat! Vstávat a cvičit!“ nabádá Bob, „je ráno!“.
 
-Nechybí vám tam něco? No, jasně, přátelé. Bob bez Bobka prostě nemá šťávu. 
+Nechybí vám tam něco? No, jasně: Bob bez Bobka prostě nemá šťávu. 
 
 A jako Bob bez Bobka by byl responzivní webdesign bez [Media Queries](css3-media-queries.md).
 
