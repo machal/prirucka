@@ -200,7 +200,7 @@ To je věc nová pro čtvrtou verzi. Ale jak sami vidíte, pro změnu pořadí j
 
 ## Zanořování {#zanorovani}
 
-Velmi užitečné je, že layout můžete zanořovat. Prostě přidejte další řádku layoutu – třídu `.row`:
+Velmi užitečné je, že layout můžete zanořovat. Přidejte další řádku layoutu, třídu `.row`, a je to:
 
 ```html
 <div class="row">

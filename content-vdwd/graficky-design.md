@@ -23,7 +23,7 @@ Layout jak celé stránky, tak rozmístění prvků v rámci jednotlivých kompo
 
 Kromě této základní čtyřky mají designéři k dispozici další prostředky. Například interakce a animace. Ty na obrázku nevidíte a v některých případech je grafičtí designéři ani nenavrhují. Může to být práce specializovaného interakčního designéra nebo prostě frontend kodéra. 
 
-Je asi jasné, že velmi záleží na kvalitě každé z těchto čtyř komponent. Takže dobře navržený web s nekvalitními fotografiemi prostě fungovat nebude, čehož jsme každý den nešťastnými svědky. Každý ze čtyř prostředků, snad kromě layoutu, podléhá módě. Ale to jak dohromady fungují by nemělo být výsledkem grafikova aktuálního rozpoložení pod vlivem módy a měkkých drog. Ty jsou povoleny, ale i tak by grafika měla být důsledkem promyšleného procesu.
+Je asi jasné, že velmi záleží na kvalitě každé z těchto čtyř komponent. Takže dobře navržený web s nekvalitními fotografiemi fungovat nebude, čehož jsme každý den nešťastnými svědky. Každý ze čtyř prostředků, snad kromě layoutu, podléhá módě. Ale to jak dohromady fungují by nemělo být výsledkem grafikova aktuálního rozpoložení pod vlivem módy a měkkých drog. Ty jsou povoleny, ale i tak by grafika měla být důsledkem promyšleného procesu.
 
 ## Grafika se může líbit, ale musí sloužit!
 
@@ -47,6 +47,6 @@ Hezky to popsal Otto Bohuš:
 
 Více v jeho článku „Co by měl každý vědět o tom, jak se dělá web: 2. díl“. [ottocopy.cz/jak-udelat-web](http://ottocopy.cz/jak-udelat-web)
 
-Prostě každý dobrý webový grafik je zároveň designér, protože nedělá jen „hezké věci“, ale snaží se vyřešit nějaký klientův problém. 
+Zkrátka každý dobrý webový grafik je zároveň designér, protože nedělá jen „hezké věci“, ale snaží se vyřešit nějaký klientův problém. 
 
 Bylo to moc stručné, já vím. Zájemce o hlubší průzkum vizuálního designu bych asi v dalším kroku poslal do kapitol o typografii, barvách a layoutu online knihy „Designing for the Web“ od Marka Boultona. [designingfortheweb.co.uk](http://designingfortheweb.co.uk/)

@@ -17,7 +17,7 @@ V textu budu jeho instalaci a základní vlastnosti ukazovat na příkladu. Zku�
 Vezmeme tento příklad z ukázek využití Browsersync: [git.io/vKfhs](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.html.injection).
 
 1. Na lokální mašině předtím potřebujete rozchodit [Node ekosystém](node-instalace.md) – hlavně NPM a [Grunt](grunt.md). Volitelně také Git v příkazové řádce.
-2. Naklonujte repozitář (nebo prostě stáhněte v ZIPu: [git.io/vKfhc](https://github.com/BrowserSync/recipes/archive/master.zip)):  
+2. Naklonujte repozitář (nebo stáhněte v ZIPu: [git.io/vKfhc](https://github.com/BrowserSync/recipes/archive/master.zip)):  
 `git clone https://github.com/Browsersync/recipes.git bs-recipes`
 3. Skočte do adresáře s první ukázkou:   
 `cd bs-recipes/recipes/grunt.html.injection`

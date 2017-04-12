@@ -20,7 +20,7 @@ Zeptejme se teď sami sebe: Jak dobře tyto tři úkoly plní schovaná navigace
 
 ![Dobré a špatné hamburgery](dist/images/original/hamburger-variants.jpg)
 
-Dobře, pro ideální svět stručných navigací na velkých displejích bychom měli vyřešeno. Prostě je na mobilech neschovávat. Jenže mnozí z nás navrhují weby se složitými navigacemi a mnozí uživatelé mají zařízení s velmi malými displeji. 
+Dobře, pro ideální svět stručných navigací na velkých displejích bychom měli vyřešeno. Na mobilech je neschovávat. Jenže mnozí z nás navrhují weby se složitými navigacemi a mnozí uživatelé mají zařízení s velmi malými displeji. 
 
 
 
@@ -28,15 +28,15 @@ Dobře, pro ideální svět stručných navigací na velkých displejích bychom
 
 ### 1. Navrhněte navigaci tak, aby byla co nejjednodušší 
 
-Ano, už při vymýšlení struktury webu aktivujte [Mobile First](mobile-first.md) režim. Na dvacet šest položek v hlavní navigace a druhou i třetí úroveň prostě zapomeňte. Zachrání vám to kejhák při návrhu designu webu.
+Ano, už při vymýšlení struktury webu aktivujte [Mobile First](mobile-first.md) režim. Na dvacet šest položek v hlavní navigace a druhou i třetí úroveň raději zapomeňte. Zachrání vám to kejhák při návrhu designu webu.
 
 ### 2. Navrhněte web jako by tam navigace nebyla 
 
-Je jasné, že na těch nejmenších displejích budeme muset skoro vždy minimálně část navigace schovat. Proto se musíme naučit vymýšlet weby bez ní. Navigační schéma prostě duplikujte v obsahu, do úvodní stránky dejte něco jako mapu webu.
+Je jasné, že na těch nejmenších displejích budeme muset skoro vždy minimálně část navigace schovat. Proto se musíme naučit vymýšlet weby bez ní. Navigační schéma duplikujte v obsahu, do úvodní stránky dejte něco jako mapu webu.
 
 ### 3. Pokud to jde, na mobilu ji prostě zobrazte celou
 
-Zní to trochu polopaticky, jenže svět je plný webů s navigací o čtyřech položkách, které používají hamburger jen proto, že to je „in“. Pokud je rozlišení dostatečně široké, prostě navigaci zobrazte. 
+Zní to trochu polopaticky, jenže svět je plný webů s navigací o čtyřech položkách, které používají hamburger jen proto, že to je „in“. Pokud je rozlišení dostatečně široké, navigaci zobrazte. 
 
 Jestliže navigaci nedokážete zobrazit celou, zvažte [jiné návrhové vzory](responzivni-navigace.md) než prosté zapínání a vypínání. Až pokud žádná z těchto možností nezabrala, volte návrhový vzor s vypínačem navigace. Ano, ten, kterému podle vzhledu ikony říkáme „hamburger“. 
 
@@ -71,9 +71,9 @@ Pokud nechceme naše milé uživatele úplně dezorientovat, měli bychom naviga
 
 Takže: některé weby navigaci zobrazí celou i na mobilech a některé použijí chytřejší navigační vzor jako je prioritizace položek. 
 
-Zbývá nám tu množina webů, u kterých je schovávání navigace nebo její části prostě nevyhnutelné. Takže ano, hamburger je dobrý, protože jej někdy dost nutně potřebujeme. Je dobré ale při návrhu myslet na následující:
+Zbývá nám tu množina webů, u kterých je schovávání navigace nebo její části  nevyhnutelné. Takže ano, hamburger je dobrý, protože jej někdy dost nutně potřebujeme. Je dobré ale při návrhu myslet na následující:
 
 1. Ikonu nezneužívejte pro typ obsahu, který nepředstavuje.
-2. Ikonu opatřete textovým popiskem „Menu“. Nebo prostě popiskem, který přesně popisuje obsah, například „Kategorie“ nebo „Recepty“. [vrdl.in/o7dzl](https://twitter.com/adlo/status/720266123774713856)
+2. Ikonu opatřete textovým popiskem „Menu“. Nebo popiskem, který přesně popisuje obsah, například „Kategorie“ nebo „Recepty“. [vrdl.in/o7dzl](https://twitter.com/adlo/status/720266123774713856)
 3. Ikona by měla mít vzhled tlačítka. [exisweb.net/menu-eats-hamburger](http://exisweb.net/menu-eats-hamburger)
 

@@ -71,7 +71,7 @@ Je to samozřejmě nevýhodné pro rychlost načtení na běžných (ne-Retina) 
 
 ## 4. Razantně komprimované obrázky v `<img src>`
 
-Datový objem i vysokopacitní displeje můžete v některých situacích vyřešit naráz. Prostě zvětšíte pixelovou velikost obrázku a výrazně snížíte jeho kvalitu:
+Datový objem i vysokopacitní displeje můžete v některých situacích vyřešit naráz. Zvětšíte pixelovou velikost obrázku a výrazně snížíte jeho kvalitu:
 
 ```html
 <img src="image_300x300_lowquality.jpg" 
@@ -171,7 +171,7 @@ Obzvlášť IE ve verzi 11 je ke dni psaní textu ještě velmi silně zastoupen
 
 ### První náhradní řešení: přirozené
 
-Prostě použijete parametr `src`, který moderní prohlížeče ignorují, pokud je přítomný `srcset`:
+Použijete parametr `src`, který moderní prohlížeče ignorují, pokud je přítomný `srcset`:
 
 ```html
 <img 

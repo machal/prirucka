@@ -31,7 +31,7 @@ Spíše se ale obrátím k autoritě W3C.org, která dneska už [vyloženě ří
 
 > První pravidlo použití ARIA zní: Pokud můžete použít nativní element, který má požadovaný význam nebo chování už v sobě, prostě ho použijte.
 
-Prostě to vypadá, že jsem se mýlil a HTML5 tagy se pro vyznačování oblastí stránky ujaly. Jednou tedy může nastat situace, že čtečka nebo jiný stroj implementuje význam oblasti stránky jen přes HTML5 element a nikoliv WAI ARIA oblast.
+Vypadá to, že jsem se mýlil a HTML5 tagy se pro vyznačování oblastí stránky ujaly. Jednou tedy může nastat situace, že čtečka nebo jiný stroj implementuje význam oblasti stránky jen přes HTML5 element a nikoliv WAI ARIA oblast.
 
 <!-- AdSnippet -->
 
@@ -50,7 +50,7 @@ Jak píše Heydon Pickering v knize [Inclusive Design Patterns](https://www.smas
 
 ### `<aside role="complementary">`
 
-Něco jako boční lišta. Prostě méně významné informace, které se vztahují k hlavnímu obsahu stránky. Například reklamní panely nebo zvýrazněné citace z textového obsahu. 
+Něco jako boční lišta. Méně významné informace, které se vztahují k hlavnímu obsahu stránky. Například reklamní panely nebo zvýrazněné citace z textového obsahu. 
 
 [HTML5](https://www.w3.org/TR/html5/sections.html#the-aside-element) specifikace říká, že na stránce může být `<aside>` více. Jedna pod `<html>` prvkem a další pod jednotlivými sekcemi. 
 

@@ -7,7 +7,7 @@ V Google mají jasno. Tohle prohlásil v roce 2010 Eric Schmidt, tehdejší šé
 Ale nemusíte být Google. Rychlejší načtení vylepší uživatelský prožitek a pomůže tak cílům každého webu.
 
 
-## My lidé to prostě rychlé chceme
+## My lidé to zkrátka rychlé chceme
 
 Uživatelé jsou prostě jen lidé. A na lidech a jejich vnímání rychlosti uživatelského rozhraní dělal v šedesátých letech pokusy Robert B. Miller.  Zkoumána byla trpělivost lidí při čekání na reakci rozhraní po provedení uživatelské akce.
 

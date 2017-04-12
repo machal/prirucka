@@ -30,7 +30,7 @@ Z principu je navíc téměř **nemožné detekovat dotyková zařízení**. Kdy
 
 Výjimečně nastává situace, kdy se nějaká detekce hodí. Třeba když chcete pro desktopové rozhraní otevřít prvek po najetí myši. Pak použijte detekční knihovnu Modernizr, která *myšovitá* umí najít. 
 
-Obecně se tomu ale snažte vyhnout, protože i tato detekce je nespolehlivá. Řeknu dva z mnoha důvodů. Starší dotyková zařízení například prostě jen technicky emulovala klikání myší, takže je jako dotyková detekovat nelze. A pak tu máme hybridní zařízení. Technicky se jich zeptáte: „Umíš doteky?“ „Ano, umím.“ odpoví. Jenže co když uživatel právě ovládá vaše rozhraní myší? Více o tomto problému najdete v dokumentaci Modernizru, hledejte „touchevents“. https://modernizr.com/docs 
+Obecně se tomu ale snažte vyhnout, protože i tato detekce je nespolehlivá. Řeknu dva z mnoha důvodů. Starší dotyková zařízení například jen technicky emulovala klikání myší, takže je jako dotyková detekovat nelze. A pak tu máme hybridní zařízení. Technicky se jich zeptáte: „Umíš doteky?“ „Ano, umím.“ odpoví. Jenže co když uživatel právě ovládá vaše rozhraní myší? Více o tomto problému najdete v dokumentaci Modernizru, hledejte „touchevents“. https://modernizr.com/docs 
 
 ## Lidé váš web vidí na více zařízeních
 
@@ -45,7 +45,7 @@ No tak dobře, teď vážně. Opravdu neexistuje nic jako oddělené tábory mob
 
 Google to měřil na svých amerických uživatelích mezi 18 a 49 lety v prvním čtvrtletí 2016. [vrdl.in/gdum](https://www.thinkwithgoogle.com/articles/device-use-marketer-tips.html)
 
-Není samozřejmě bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 minut denně u tabletů, 120 u počítače a celých 170 minut pohledem do mobilu. Když držíme mobily, nechodíme snad ani na záchod! Nebo si je prostě na záchod bereme, že ano.
+Není samozřejmě bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 minut denně u tabletů, 120 u počítače a celých 170 minut pohledem do mobilu. Když držíme mobily, nechodíme snad ani na záchod! Nebo si je na záchod bereme, že ano.
 
 ## Zařízení nejčastěji držíme jednou rukou a ovládáme palcem
 
@@ -60,7 +60,7 @@ Hoober ale o držení mobilů zjistil i další věci, které se v zásadě daj�
 * **Držíme telefony různě podle kontextu a pozice.**   
 Ano, i úchopově přelétaví jsme. Chudáci mobilní telefony. A co teprve tablety!
 * **Dvě třetiny dotyků při držení v jedné ruce se provádí pravačkou.**  
-A to i přes to, že leváci tvoří jen asi desetinu, nikoliv zbylou třetinu, populace. I my praváci si prostě občas sáhneme levým palcem. Tím méně přesným, mimochodem.
+A to i přes to, že leváci tvoří jen asi desetinu, nikoliv zbylou třetinu, populace. I my praváci si občas sáhneme levým palcem. Tím méně přesným, mimochodem.
 * **75 % všech interakcí bylo děláno palcem.**  
 U jednorukého držení to asi smysl dává, ale palce to vyhrály i u kolébkového chvatu. 
 

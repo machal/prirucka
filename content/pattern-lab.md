@@ -36,7 +36,7 @@ Systémy jsou super:
 - usnadňují testování 
 - vylepší komunikaci v týmu a zaučení nových lidí, hlavně díky dokumentaci
 
-Designové systémy prostě šetří čas a peníze.
+Stručně řečeno: Designové systémy šetří čas a peníze.
 
 <!-- AdSnippet -->
 
@@ -126,7 +126,7 @@ Pattern Lab nabízí úžasnou věc – vkládání reálného obsahu přímo do
 
 ### Pseudošablony: testování variant obsahu
 
-Další hezká věc a přitom žádná velká věda. Pattern Lab nabízí možnost vytvořit pseudošablony, varianty šablon s různým typem obsahu, různým rozložením atd. Prostě si všechny možnosti otestujete už přímo v design systému a ne až na běžícím webu.
+Další hezká věc a přitom žádná velká věda. Pattern Lab nabízí možnost vytvořit pseudošablony, varianty šablon s různým typem obsahu, různým rozložením atd. Všechny možnosti si otestujete už přímo v design systému a ne až na běžícím webu.
 
 ### Pattern Lab není nutnost, ale…
 

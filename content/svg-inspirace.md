@@ -63,7 +63,7 @@ Ano, i přechody mezi stavy se hodí animovat. Tohle se ve webdesignu zatím moc
 
 ![Udělátka v SVG](dist/images/original/svg-inspirace-interakce.jpg)
 
-SVG se mimojiné hodí jako náhrada Flashe. Je to nový pomocník pro realizaci *udělátek*, malých webů uvnitř webů. Bannery, malé interaktivní apky, interaktivní infografiky… Prostě věci co jsme dřív dělali ve Flashi. Ano, já vím, SVG je zatím jako náhrada Flashe dost neadekvátní. Hlavně z pohledu nepřítomnosti pořádných designérských nástrojů. Ale však ono se to časem zlepší.
+SVG se mimojiné hodí jako náhrada Flashe. Je to nový pomocník pro realizaci *udělátek*, malých webů uvnitř webů. Bannery, malé interaktivní apky, interaktivní infografiky… Zkrátka věci, které jsme dřív dělali ve Flashi. Ano, já vím, SVG je zatím jako náhrada Flashe dost neadekvátní. Hlavně z pohledu nepřítomnosti pořádných designérských nástrojů. Ale však ono se to časem zlepší.
 
 1. Interaktivní mapy: [Codrops demo](http://tympanus.net/Development/Interactive3DMallMap/).
 2. Interaktivní infografika realizovaná [SuperKodéry](http://www.superkoderi.cz/): [IslamophobiaNetwork.com](https://islamophobianetwork.com/).

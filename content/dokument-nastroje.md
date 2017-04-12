@@ -73,13 +73,13 @@ Více k základům HTML nepotřebujeme. Nuda? U stylů to ale bude zajímavějš
 
 ## Výchozí styly prohlížečů
 
-Často se zapomíná, že ještě než napíšeme první řádku CSS, náš dokument už nějaké styly obsahuje. Prohlížeč prostě musí mít nějaká zadní vrátka, kterými vejde škodolibý skřítek a klientův vymazlený *dizájn* z wordovského dokumentu vysázený písmem Comic Sans pokazí vědecky vyhlížející stránkou s modrými odkazy vysázenou Times New Roman, že ano? 
+Často se zapomíná, že ještě než napíšeme první řádku CSS, náš dokument už nějaké styly obsahuje. Vždyť prohlížeč musí mít nějaká zadní vrátka, kterými vejde škodolibý skřítek a klientův vymazlený *dizájn* z wordovského dokumentu vysázený písmem Comic Sans pokazí vědecky vyhlížející stránkou s modrými odkazy vysázenou Times New Roman, že ano? 
 
 První vrstva vzhledu, která se aplikuje na váš dokument, jsou výchozí styly prohlížečů. Ve vývojářských nástrojích je v CSS kaskádě vidíte jako „user agent stylesheet“. Nevidíte? Doporučím vám si jejich zobrazování zapnout. Výchozí styly totiž mají ošklivou vlastnost. V různých prohlížečích mohou mít mírně různá nastavení. Nejprve je vhodné je sjednotit.
 
 ### Resetování CSS: raději ne
 
-Svého času se v prvním kroku technické práce prakticky na každém webu nasadil CSS Reset od Erika Meyera. Ten prostě vynuloval všechny vnější i vnitřní okraje prvku, čímž jsme získali konzistentně ošklivý Time New Roman a modré odkazy ve všech prohlížečích. [vrdl.in/cssreset](http://meyerweb.com/eric/tools/css/reset/)
+Svého času se v prvním kroku technické práce prakticky na každém webu nasadil CSS Reset od Erika Meyera. Ten vynuloval všechny vnější i vnitřní okraje prvku, čímž jsme získali konzistentně ošklivý Time New Roman a modré odkazy ve všech prohlížečích. [vrdl.in/cssreset](http://meyerweb.com/eric/tools/css/reset/)
 
 Nevýhoda resetovacího přístupu je (to byste nečekali) v onom *resetování*. Když totiž nějaké vlastnosti „resetujeme“, musíme je v druhém kroku také „setovat“. Nastavit na vysněné hodnoty. Co když nám ale vyhovovalo původní nastavení prohlížečů? To jsme pak udělali dva zbytečné kroky a styly webu si zkomplikovali hned na startu.
 
@@ -131,7 +131,7 @@ Když už máme jakžtakž vysázený dokument, můžeme k němu začít přidá
 
 ## Blanka Type Test
 
-Poslední členka sesterského komanda Blanek vychází právě z toho, že ne všechny HTML elementy musíte znát. Nebo lépe: že si na ně prostě nemusíte vzpomenout a ve stylech je neošetřit.
+Poslední členka sesterského komanda Blanek vychází právě z toho, že ne všechny HTML elementy musíte znát. Nebo lépe: že si na ně nemusíte vzpomenout a ve stylech je neošetřit.
 
 Kdo snad nezažil situaci, kdy ve stylech počítal úplně se vším — dokud mu klient přes redakční systém na web nevložil úplně novou kombinaci prvků. Která rozbila celý web.
 

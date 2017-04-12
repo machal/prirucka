@@ -37,7 +37,7 @@ Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku
 
 ### `user-scalable`
 
-Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení fakt potřeba. Ať už jde o zvětšení textu v horších podmínkách nebo prostě jen touhu vidět detaily z nějakého obrázku, přibližování obsahu prostě potřebují všichni uživatelé. Safari na iOS 10 navíc zákaz zoomování úplně ignorují. <span class="ebook-only">Více o tom píšu [v kapitole o častých chybách](responzivni-ui-caste-chyby.md).</span>
+Hodnota `no` zakazuje uživateli jakkoliv zoomovat. Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení fakt potřeba. Ať už jde o zvětšení textu v horších podmínkách nebo jen touhu vidět detaily z nějakého obrázku, přibližování obsahu potřebujé velké množství uživatelů. Safari na iOS 10 navíc zákaz zoomování úplně ignorují. <span class="ebook-only">Více o tom píšu [v kapitole o častých chybách](responzivni-ui-caste-chyby.md).</span>
 
 ### `minimum-scale`/`maximum-scale`
 

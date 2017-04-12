@@ -45,7 +45,7 @@ EQCSS je jedna z javascriptových implementací konceptu. Ano, *javascriptových
 - *Fallbacky*. Stačí si představit situaci, kdy na webu selže Javascript. Nebo kdy chvilku trvá, než se knihovna načte. 
 
 
-Javascriptové implementace jsou prostě křehké jako váza po prababičce. Kde tedy vězí CSS standard pro tak skvělou věc?
+Javascriptové implementace jsou křehké jako váza po prababičce. Kde tedy vězí CSS standard pro tak skvělou věc?
 
 
 ## Chcete standard? Zkuste si ho napsat
@@ -81,7 +81,7 @@ Tab Atkins v odkazovaném článku zmiňuje jinou cestu: pro komponenty použít
 
 Stejně je na tom [SVG](svg.md) vložené do dokumentu externě, například pomocí `<img>` značky. I tamní Media Queries se odkazují k elementu samotnému, nikoliv celému dokumentu. [SVG už taky umí Element Queries](http://codepen.io/machal/pen/zZKzRe?editors=1100). Zásah. 
 
-Jenže u dnešního `<iframe>` ani externího SVG nepotřebuje prohlížeč čekat na jejich obsah ani styly. Prostě si vykreslí rodičovský dokument a po čase nějak došudlá obsah „ajfrejmů“ a externích vektorových dokumentů.
+Jenže u dnešního `<iframe>` ani externího SVG nepotřebuje prohlížeč čekat na jejich obsah ani styly. Vykreslí si rodičovský dokument a po čase nějak došudlá obsah „ajfrejmů“ a externích vektorových dokumentů.
 
 V případě běžných komponent uživatelského rozhraní by ale čekat musel. Nejde o žádné externisty, ale komponenty, přirozenou součást layoutu webu. 
 
@@ -92,7 +92,7 @@ Pokud by se to měly prohlíže naučit, musely by pracovat asi takto:
 3. Znovu by si spočítaly vzhled stránky.
 4. Znovu by si spočítaly vzhled kompontent s EQ… 
 
-Prostě by to vykreslovací proces někdy dost zpomalilo. 
+Vykreslovací proces by to někdy dost zpomalilo. 
 
 Úvahy z Atkinsova článku směřují k nějakému způsobu zápisu stylů do HTML, podobně jako [u atributu `sizes`](srcset-sizes.md)… To by ale pro nás autory bylo dost nepříjemné, protože se vší silou snažíme dosáhnout toho, abychom měli styly na jednom místě.
 

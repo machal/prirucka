@@ -48,7 +48,7 @@ Mobilní Chrome samozřejmě v budoucnu statistiky ovládne ještě výrazněji,
 
 Ke krátkému komentáři pro zajímavost přidávám i skóre [na HTML5test.com](https://html5test.com/). To udává podporu moderních HTML5 technologií. Čím vyšší, tím lepší.
 
-### 9 prohlížečů, se kterými prostě musíte počítat
+### 9 prohlížečů, se kterými musíte počítat
 
 - **[Chrome](https://en.wikipedia.org/wiki/Google_Chrome)**  
   Ten, co všechno sní. Celosvětově podle má podle Statcounter.com už k šedesátiprocentnímu podílu.
@@ -86,7 +86,7 @@ Většina dnešních zhlédnutí webů na mobilech se neodehrává vědomým spu
 
 Jakým prohlížečem se pak stránka vykreslí? Vývojáři nativních mobilních aplikací jej znají jako WebView komponentu. Ta startuje jádro výchozího prohlížeče pro konkrétní operační systém. Na iOS je to vždy mobilní Safari, na dnešních Androidech obvykle Chrome. 
 
-I v těchto kontextech doporučuji weby testovat. Prohlížeče tam mívají trochu jiné uspořádání ovládacích prvků a některé funkce prostě neumí.
+I v těchto kontextech doporučuji weby testovat. Prohlížeče tam mívají trochu jiné uspořádání ovládacích prvků a některé funkce neumí.
 
 ### Vymírající nebo zatím slabě zastoupené prohlížeče
 

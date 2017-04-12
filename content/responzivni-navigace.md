@@ -16,7 +16,7 @@ Technicky to je možné řešit i dost jednoduše jen pomocí CSS. [cdpn.io/e/ad
 
 ## Přepínač (Toggle)
 
-Celou navigaci prostě na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiné. Jeho nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, které má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
+Celou navigaci na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiné. Jeho nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, které má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
 
 Návrhový vzor *přepínač* zpopularizoval například framework Bootstrap a najdete jej na většině dnešních responzivních webů. 
 
@@ -37,11 +37,11 @@ Demo víceúrovňové navigace na na pěkném webu „Adventures in Responsive N
 
 ## Konverze do jiného stylování
 
-Pokud v navigaci zvládnete mít jen nízké jednotky položek, můžete je prostě zobrazit všechny a na malých obrazovkách jen upravit stylování. 
+Pokud v navigaci zvládnete mít jen nízké jednotky položek, můžete je  zobrazit všechny a na malých obrazovkách jen upravit stylování. 
 
 ## Přestylování a skok do patičky
 
-Navigace je prostě v HTML někde dole a na velkých displejích se pomocí stylů umístí do hlavičky. Implementačně je *skok do patičky* asi nejméně náročná volba. Uživatelsky ovšem dle mého názoru málo přívětivá. Dnes už bych *skok* na běžné weby nepoužil. Snad jen v opravdu jednoduchých případech. [vrdl.in/9em7w](http://responsivenavigation.net/examples/clean-grid/index.html)
+Navigace je v HTML někde dole a na velkých displejích se pomocí stylů umístí do hlavičky. Implementačně je *skok do patičky* asi nejméně náročná volba. Uživatelsky ovšem dle mého názoru málo přívětivá. Dnes už bych *skok* na běžné weby nepoužil. Snad jen v opravdu jednoduchých případech. [vrdl.in/9em7w](http://responsivenavigation.net/examples/clean-grid/index.html)
 
 ## Konverze do `<select>`
 

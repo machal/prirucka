@@ -15,7 +15,7 @@ Díky modularitě **kompiluje rychleji**. A může být i enormě rychlé.  Pod�
 
 <!-- AdSnippet -->
 
-Dobré taky je, že mnoho PostCSS pluginů **využívá standardizovanou syntaxi**. CSS prostě píšete způsobem, který už dnes část prohlížečů umí nebo se předpokládá, že velmi brzy umět budou. Díky tomu můžete PostCSS použít jen jako fallback pro starší prohlížeče. Jenže v té *standarizované* syntaxi je ukrytý i ďábel. Hned vysvětlím.
+Dobré taky je, že mnoho PostCSS pluginů **využívá standardizovanou syntaxi**. CSS píšete způsobem, který už dnes část prohlížečů umí nebo se předpokládá, že velmi brzy umět budou. Díky tomu můžete PostCSS použít jen jako fallback pro starší prohlížeče. Jenže v té *standarizované* syntaxi je ukrytý i ďábel. Hned vysvětlím.
 
 
 ## Proč ne CSSnext?
@@ -29,7 +29,7 @@ Jenže pro mě je CSSnext z velké části demonstrace způsobu, jakým by se tr
 - [Pojmenované Media Queries](http://cssnext.io/features/#custom-media-queries) jsou založené na [`@custom-media` vlastnosti](https://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/#custom-mq), která v nové verzi Working Draft pro Media Queries Level 4 už není. Nevím o žádné implementaci v prohlížeči.
 - [Nativní mixiny](http://cssnext.io/features/#custom-properties-set-apply) si zase v CSSnext troufli založit na `@apply` pravidlu, která [navrhuje Tab Atkinks](http://tabatkins.github.io/specs/css-apply-rule/). To je sice důležitá osoba, ale specifikaci napsal jako soukromník. Opět nevím o žádném pokračujícím specifikačním procesu natož implementaci.
 
-Tvůrci CSSnext prostě podlehli nedočkavosti a do „transpilátoru“ vložili i vlastnosti, které se v CSS možná nikdy neobjeví. Začali tím vlastně tvořit jen další preprocesor s vlastní nestandardní syntaxí.
+Tvůrci CSSnext podlehli nedočkavosti a do „transpilátoru“ vložili i vlastnosti, které se v CSS možná nikdy neobjeví. Začali tím vlastně tvořit jen další preprocesor s vlastní nestandardní syntaxí.
 
 Je pravda, že CSSnext obsahuje řadu pluginů, které chci sám používat: doplňování prefixů, fallbacky pro `rem` nebo nativní proměnné. Většinu ostatních vlastností ale neupotřebím.
 
@@ -143,6 +143,6 @@ Je to fajn základ, který můžete dále rozšiřovat, třeba [o Style Lint](ht
 
 Když PostCSS vezmete jako jemné rozšíření vašeho CSS o proměnné a vkládané importy, s použitím na menší projekty neváhejte. Váš CSS kód bude kompatibilní i do budoucna a získáte velmi rychlou kompilaci. 
 
-Pro ostatní projekty prostě využijte [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Čím více budete ve stylech mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete robustnější řešení. Jazyk, který je vymyšlený pro složité úkoly – nejlépe [Sass](http://sass-lang.com/). Extrémy jako [frameworky typu Bootstrapu](http://www.vzhurudolu.cz/frontend-frameworky) si prostě napsané v nativním CSS a transpilované pomocí PostCSS zatím představit neumím, ale i to se časem může srovnat.
+Pro ostatní projekty prostě využijte [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Čím více budete ve stylech mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete robustnější řešení. Jazyk, který je vymyšlený pro složité úkoly – nejlépe [Sass](http://sass-lang.com/). Extrémy jako [frameworky typu Bootstrapu](http://www.vzhurudolu.cz/frontend-frameworky) si napsané v nativním CSS a transpilované pomocí PostCSS zatím představit neumím, ale i to se časem může srovnat.
 
 

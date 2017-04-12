@@ -23,14 +23,14 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 
 Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
-Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také tabulky vkládané přes redakční systémy, u kterých nevíte jak složité budou. A nebo, když prostě chcete ušetřit čas na vývoj.
+Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také tabulky vkládané přes redakční systémy, u kterých nevíte jak složité budou. A nebo, když zkrátka chcete ušetřit čas na vývoj.
 
 Než si ukážeme propracovanější způsoby práce s responzivními tabulkami, dovolte mi jeden tip na nástroj.
 
 
 ## Chytrý plugin: Tablesaw
 
-Tablesaw je jQuery plugin, který zvládá téměř všechny zde popsané možnosti chování responzivních tabulek. Prostě švýcarský tabulkový nůž Chuck Norrise. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)
+Tablesaw je jQuery plugin, který zvládá téměř všechny zde popsané možnosti chování responzivních tabulek. Zkrátka švýcarský tabulkový nůž Chuck Norrise. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)
 
 
 ## Posun do stran s fixním sloupcem
@@ -59,7 +59,7 @@ Datagrid není žádná vzácnost. Každá webová aplikace pro interní systém
 
 *Stohování tabulky na menších displejích. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
 
-V nejjednodušší možné CSS implementaci prostě tabulce na menších displejích zrušíme „tabulkovost“:
+V nejjednodušší možné CSS implementaci tabulce na menších displejích zrušíme „tabulkovost“:
 
 ```css
 @media only screen and (max-width: 600px) {
@@ -101,7 +101,7 @@ Kdy se hodí? Pro složité tabulky uprostřed jiného obsahu, kde ostatní scé
 
 ### Varianta s reprezentací obsahu na mobilech grafem
 
-Z tabulkových prostě na mobilu uděláte zjednodušený graf. Doporučuji nasazovat v kombinaci s odkazem na plnou verzi tabulky. Hodí se opět pro situace se strašlivě komplikovanými daty bez výrazné obsahové hierarchie.
+Z tabulkových dat na mobilu uděláte zjednodušený graf. Doporučuji nasazovat v kombinaci s odkazem na plnou verzi tabulky. Hodí se opět pro situace se strašlivě komplikovanými daty bez výrazné obsahové hierarchie.
 
 ## Na mobilech něco vynechat. Ale opravdu?
 

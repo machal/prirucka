@@ -22,7 +22,7 @@ Když v souboji „weby versus aplikace“ oba hráče definujeme pohledem uživ
 
 ### Weby jsou většinou interakčně jednoduché 
 
-Prostě obyčejné dokumenty jako je blog Vzhůru dolů, deník Aktuálně.cz nebo prezentační stránky vaší firmy. 
+Zkrátka obyčejné dokumenty jako je blog Vzhůru dolů, deník Aktuálně.cz nebo prezentační stránky vaší firmy. 
 
 ### Aplikace jsou interakční složité
 
@@ -110,7 +110,7 @@ Více informací o hybridním přístupu hledejte třeba na blogu firmy Pixelfie
 
 Nejnovější možný přístup. Propaguje jej Google a Microsoft s ním souhlasil. Apple ke dni psaní textu zatím neví, jestli to neudělá nějak po svém. 
 
-Prostě napíšete webovou aplikaci, která se otevírá v prohlížeči, ale za určitých podmínek může získat výhody nativní aplikace:
+Zkrátka napíšete webovou aplikaci, která se otevírá v prohlížeči, ale za určitých podmínek může získat výhody nativní aplikace:
 
 * načte se rychle a pracuje offline
 * sama se nainstaluje na plochu uživatele

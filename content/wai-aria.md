@@ -7,7 +7,7 @@ Asistivní technologie – občas  se nepřesně říká slepecké čtečky – 
 - *Pasivně-sekvenční*, kdy web prochází pomocí nadpisové osnovy dokumentu. Pro uživatele je to příjemné asi jako ovládání webu tabulátorem. Takže jde to, ale dře to.
 - Po hendikepovaného uživatele je pohodlnější *strukturovaný* režim, ve kterém čtečka nabízí konkrétní oblasti stránky.
 
-Ten druhý režim právě  umožňují WAI-ARIA orientační body (landmarks). Přidání do webu je otázka chvilky a pomůžete tím mnoha lidem, takže pokud je ještě nepoužíváte, čtěte dál. Do HTML prostě přidáte pár atributů navíc.  
+Ten druhý režim právě  umožňují WAI-ARIA orientační body (landmarks). Přidání do webu je otázka chvilky a pomůžete tím mnoha lidem, takže pokud je ještě nepoužíváte, čtěte dál. Do HTML přidáte jen pár atributů navíc.  
 
 ## Tyhle orientační body se určitě naučte
 
@@ -60,7 +60,7 @@ A ještě kousek z bootstrapího [dropdown menu](http://v4-alpha.getbootstrap.co
 </div>
 ```
 
-Atribut `aria-haspopup="true"` říká, že po aktivaci tohoto elementu vyskočí jiný, který je ve vizuální hierarchii výše. Prostě *popup*.  `aria-expanded="false"` říká, že tohle je element sice „rozkliknutelný“, ale teď „nerozkliknutý“. Použitelné třeba při „rozklikávání“ stromových struktur. `aria-labelledby="dropdown-1"` je sestra od `aria-label`. Tahle ale jen říká, kde asistivní technologie najde popis sekce v existující struktuře HTML.
+Atribut `aria-haspopup="true"` říká, že po aktivaci tohoto elementu vyskočí jiný, který je ve vizuální hierarchii výše. Zkrátka *popup*.  `aria-expanded="false"` říká, že tohle je element sice „rozkliknutelný“, ale teď „nerozkliknutý“. Použitelné třeba při „rozklikávání“ stromových struktur. `aria-labelledby="dropdown-1"` je sestra od `aria-label`. Tahle ale jen říká, kde asistivní technologie najde popis sekce v existující struktuře HTML.
 
 Chcete další praktické ukázky bez Bootstrapu? [Tady](http://heydonworks.com/practical_aria_examples/) jich je devět moc pěkných.
 

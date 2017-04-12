@@ -8,7 +8,7 @@ Pokud si do Analytics [přidáte tuto palubní desku](https://analytics.google.c
 
 ![Technical Performace Dashboard](dist/images/original/analytics-performance-dashboard.jpg)
 
-[Technical Performance Dashboard od Vigetu](https://www.viget.com/articles/a-google-analytics-dashboard-for-front-end-developers) vám z nitra Analytics vytáhne aktuální údaje týkající se rychlosti načítání, prohlížečů a podílu mobilních zařízení. Prostě tu část statistik, která zajímá právě vás. 
+[Technical Performance Dashboard od Vigetu](https://www.viget.com/articles/a-google-analytics-dashboard-for-front-end-developers) vám z nitra Analytics vytáhne aktuální údaje týkající se rychlosti načítání, prohlížečů a podílu mobilních zařízení. Tu část statistik, která zajímá právě vás. 
 
 ### Trackomatic: další čísla pro vývojáře
 
@@ -54,7 +54,7 @@ Předpokládám, že jako vývojáři nebudete rozhraní Analytics navštěvovat
 Možnosti jak Analytics debugovat je docela dost:
 
 * [Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna) – rozšíření pro Chrome, které pro základní ladění úplně stačí. Výsledky zobrazuje v konzoli DevTools.
-* Ladící verzi Analytics: [analytics_debug.js](https://google-analytics.com/analytics_debug.js). Prostě ji volejte v měřícím kódu a opět otevřete konzoli v DevTools.
+* Ladící verzi Analytics: [analytics_debug.js](https://google-analytics.com/analytics_debug.js). Volejte ji v měřícím kódu a opět otevřete konzoli v DevTools.
 * [WASP.inspector](http://www.webanalyticssolutionprofiler.com/) – komplexní rozšíření do Chrome DevTools pro průzkum všech doplňků stránky. Nejen pro Analytics, ale i Tag Manager nebo Facebook kódy.
 * [Event Tracking Tracker](https://chrome.google.com/webstore/detail/event-tracking-tracker/npjkfahkbgoagkfpkidpjdemjjmmbcim) – ladění ukládání událostí do Analytics. Ty nezmizí ani při přechodu na jinou stránku. 
 

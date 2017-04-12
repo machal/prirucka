@@ -8,9 +8,9 @@ Jako příklad si vezmeme tabulku fotbalové ligy na Sport.cz, která v den, kdy
 
 Mimochodem, pokud jste, stejně jako já, zcela mimo fotbalové dění, pak „Z“ je počet zápasů, „V“ je počet výher, „R“ remíz a „P“ proher. Tohle na mobilu úplně chybí. A protože mě už trochu znáte, víte, že tady začnu zvedat ukazováček a prudit.
 
-Vezmeme to ale od začátku. Pojďme si představit, že vymýšlíme chování tabulky na malých displejích. Do zařízení s rozlišením 320, nedejbože 240 pixelů se nám tabulka nevejde, že? Kterou z variant chování tabulek na responzivních webech použít? Neodstranit prostě na mobilech některé sloupečky? 
+Vezmeme to ale od začátku. Pojďme si představit, že vymýšlíme chování tabulky na malých displejích. Do zařízení s rozlišením 320, nedejbože 240 pixelů se nám tabulka nevejde, že? Kterou z variant chování tabulek na responzivních webech použít? Neodstranit na mobilech některé sloupečky? 
 
-Je pravda, že informace v takové tabulce mají nějakou hierarchii: Pořadí, tým a počet bodů jsou nejdůležitější. Skóre a počet zápasů hned za nimi. Výhry, remízy a prohry méně důležité a logo týmu na posledním místě. Stejně to vyhodnotili autoři tabulky a poslední jmenované na mobilech prostě vyšoupli. Jenže…
+Je pravda, že informace v takové tabulce mají nějakou hierarchii: Pořadí, tým a počet bodů jsou nejdůležitější. Skóre a počet zápasů hned za nimi. Výhry, remízy a prohry méně důležité a logo týmu na posledním místě. Stejně to vyhodnotili autoři tabulky a poslední jmenované na mobilech zkrátka vyšoupli. Jenže…
 
 *Logo týmu* sice nemá informační hodnotu a dekorativní budeme pro zjednodušení ignorovat. Důležité je ale navigačně. Na mobilu se proto lidem bude oblíbený tým hledat hůř. Ušetřili jsme tedy místo, ale zároveň zhoršili uživatelský prožitek.
 

@@ -11,11 +11,11 @@ Z pohledu vývojáře to je skript umožňující vkládat další skripty. Tag 
 * Z pohledu *markeťáka* výborná věc, která umožní vkládat kódy měřících, remarketingových nebo testovacích služeb přímo do kódu. Tedy bez vývojářů, což má nesporné výhody. Ale těch [důvodů je z pohledu markeťáka více](http://miroslavpecka.cz/blog/5-duvodu-pro-google-tag-manager/).
 * Očima *vývojáře* je to ale potenciální problém, který při špatném nastavení může neblaze ovlivnit rychlost načítání stránky. No a tu by na starost měli mít především vývojáři. Ostatně je v zájmu všech účastníků vývoje webu [rychlost řešit](http://www.vzhurudolu.cz/prirucka/rychlost-nacitani-proc). 
 
-U svých webů mám plný přístup ke kódu a zároveň jsem nejčastější uživatel Analytics, takže Tag Manager je zbytečná vrstva. Vy ale pravděpodobně budete v jiné situaci a nezbývá, než zvážit pro a proti konkrétní implementace a s analytikem se prostě dohodnout.
+U svých webů mám plný přístup ke kódu a zároveň jsem nejčastější uživatel Analytics, takže Tag Manager je zbytečná vrstva. Vy ale pravděpodobně budete v jiné situaci a nezbývá, než zvážit pro a proti konkrétní implementace a s analytikem se dohodnout.
 
 ### Pokud se rozhodnete pro Google Tag Managera
 
-Pak prostě obstarání měření v Analytics a dalších nástrojích necháte na expertovi s přístupem do Tag Managera. Pokud jej máte na starosti sami, nezapomeňte [na správné nastavení](https://www.danielnytra.cz/nastaveni-google-tag-manager/).
+Obstarání měření v Analytics a dalších nástrojích necháte na expertovi s přístupem do Tag Managera. Pokud jej máte na starosti sami, nezapomeňte [na správné nastavení](https://www.danielnytra.cz/nastaveni-google-tag-manager/).
 
 ### Vložení Analytics do zdrojáku webu: obvykle je lepší asynchronní verze
 
@@ -61,7 +61,7 @@ Dále budeme s přidáním nového webu pokračovat přímo v rozhraní Analytic
 * Zapněte sledování vyhledávání na webu
 <small> S GET parametry to je jednoduché. U POST nebo AJAX hledání je [potřeba to trochu nastavovat](http://jecas.cz/ga-mereni#vyhledavani).  
 (*Administrátor > Výběr dat > Nastavení*)</small> 
-* Přepněte měnu ve výběr dat na „Kč“ nebo prostě odpovídající  
+* Přepněte měnu ve výběr dat na „Kč“ nebo odpovídající  
 <small>(*Administrátor > Výběr dat > Nastavení*)</small> 
 * Odfiltrujte roboty  
 <small>(*Administrátor > Výběr dat > Nastavení*)</small> 
@@ -87,7 +87,7 @@ Cíle nastavíte v horním menu Analytics: *Administrátor > Výběr dat > Cíle
 
 ### Měření cílů pomocí událostí
 
-V rozhraní Analytics jde cíle vložit jako zhlédnutí konkrétní stránky. Obvykle to stačí. Někdy se ale při splnění cíle URL nezmění. Pak se vám může hodit měření pomocí událostí. Vývojář prostě vloží kus javascriptového kódu, který cíl po splnění podmínky započítá. Například na Vzhůru dolů se nákup [e-booku](http://www.vzhurudolu.cz/ebook) měří tímto kódem:
+V rozhraní Analytics jde cíle vložit jako zhlédnutí konkrétní stránky. Obvykle to stačí. Někdy se ale při splnění cíle URL nezmění. Pak se vám může hodit měření pomocí událostí. Vývojář vloží kus javascriptového kódu, který cíl po splnění podmínky započítá. Například na Vzhůru dolů se nákup [e-booku](http://www.vzhurudolu.cz/ebook) měří tímto kódem:
 
 ```javascript
 ga('send', 'event', {

@@ -10,7 +10,7 @@ Proto už ani ona *pitomá favikona* není téma triviální jako před lety.
 
 Nezajímají vás detaily a chcete vyřešit problém? Prostě jděte na skvělý web jménem Real Favicon Generator. [realfavicongenerator.net](http://realfavicongenerator.net/)
 
-Nástroj vám vytvoří potřebný HTML kód a všechny externí soubory: obrázky a manifesty. Slouží také ale jako [validátor správného nastavení](http://realfavicongenerator.net/favicon_checker) favikon. Má taky API, různé pluginy pro [Grunt](grunt.md), Gulp a tak dále. Na takovou pitominu prostě slušný ekosystém nástrojů a vědomostí, že? Autoři na tom dále pracují, proto, jestli můžete, [podpořte je](http://realfavicongenerator.net/donate). 
+Nástroj vám vytvoří potřebný HTML kód a všechny externí soubory: obrázky a manifesty. Slouží také ale jako [validátor správného nastavení](http://realfavicongenerator.net/favicon_checker) favikon. Má taky API, různé pluginy pro [Grunt](grunt.md), Gulp a tak dále. Na takovou pitominu slušný ekosystém nástrojů a vědomostí, že? Autoři na tom dále pracují, proto, jestli můžete, [podpořte je](http://realfavicongenerator.net/donate). 
 
 Tím bychom mohli skončit, ale vsadím se, že jste zvědaví, proč je kolem favikon potřeba psát tolik textů a programovat generátory.
 
