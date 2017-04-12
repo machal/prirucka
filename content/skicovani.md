@@ -10,7 +10,7 @@ Na papír si skicou odložím základní obrysy problému a uvolním mentální 
 
 ## Skicuji tužkou na papír
 
-Při skicování je děsně důležité soustředění na problém. Existuje celá řada softwarových nástrojů, ale ty mě rozptylují svými možnostmi a počítačovým prostředím. Tam ani nevíte jak a už neskicujete, ale čtete Facebook. 
+Při skicování je důležité soustředění na problém. Existuje celá řada softwarových nástrojů, ale ty mě rozptylují svými možnostmi a počítačovým prostředím. Tam ani nevíte jak a už neskicujete, ale čtete Facebook. 
 
 Používám prostě tužku, gumu a papír. Když mám na výběr, volím bílý papír ve formátu A3 nebo předtištěné šablony od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
 

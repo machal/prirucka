@@ -48,7 +48,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 - Kontrola podle WCAG  
 <small>[Web Accessibility Checker](http://achecker.ca/checker/index.php) projde web a upozorní na možné chyby podle standardu [„Web Content Accessibility Guidelines“ ve verzi 2.0](http://blindfriendly.cz/wcag20checklist/). Nastavenu má střední přísnost – [AA úroveň](http://www.pristupnost.cz/jak-tvorit-pristupny-web/pravidla-pristupnosti/wcag/).</small>
 - Přidat WAI-ARIA oblasti  
-<small>Zrakově postiženým umožní strukturované procházení, což děsně šetří čas. Přitom stačí přidat hlavně `role` pro navigaci, obsah a třeba vyhledávání. Pomůže [článek o WAI-ARIA](wai-aria.md).</small>
+<small>Zrakově postiženým umožní strukturované procházení, což jim šetří čas. Přitom stačí přidat hlavně `role` pro navigaci, obsah a třeba vyhledávání. Pomůže [článek o WAI-ARIA](wai-aria.md).</small>
 - Ovládání tabulátorem funguje
 <small>Emulujete sekvenční procházení stránky bez myši. Kromě zrakově postižených ocení i pokročilí uživatelé. [Článek na Poslepu](http://poslepu.blogspot.cz/2010/06/zvyraznujete-odkazy-pri-ovladani-webu-z.html).</small>
 - Správné typy inputů ve formulářích  

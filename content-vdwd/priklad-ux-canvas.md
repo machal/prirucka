@@ -6,7 +6,7 @@ Neměl by to být až moc jednoduchý prezentační web. Ne všichni ale dělaj�
 
 Jaký e-shop to ale, do prkýnka, bude? V zemi, kde jich je pomalu více než nakupujících? Ono se ale často stačí podívat přes rameno své milé ženě a zamyslet se, jaké problémy při online nakupování řešíme. Řešíme problémy s dětmi. 
 
-Oba naši chlapečkové chodili nebo chodí do skvělé kunratické lesní školky. Jsou pořád venku a děsně jim to prospívá. No a víte, jak se to říká: Špatné počasí neexistuje, je to vždy jen problém špatného oblečení.
+Oba naši chlapečkové chodili nebo chodí do skvělé kunratické lesní školky. Jsou pořád venku a nadmíru jim to prospívá. No a víte, jak se to říká: Špatné počasí neexistuje, je to vždy jen problém špatného oblečení.
 
 Proto žena často nakupuje pohorky, nepromokavé kalhoty a bundy s vodním sloupcem, o kterém se mně nikdy ani nesnilo. Je z ní úplná expertka na miniaturní outdoorové vybavení. Jenže získat ty vědomosti nebyla úplná sranda. Navíc nakupuje na různých e-shopech a moc by se jí líbilo, kdyby vše vyřešil jen jeden. Právě teď jsme doma v obýváku jeden fiktivní založili. Jmenuje se *ForestKid.cz* a v knížce mu uděláme prima web, uvidíte.
 

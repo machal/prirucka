@@ -1,6 +1,6 @@
 # Marcotteho responzivní design
 
-Původní definice responzivního designu pochází z roku 2010, hlavy a pera Ethana Marcotteho. A je to děsně jednoduchá, technicistní myšlenka.
+Původní definice responzivního designu pochází z roku 2010, hlavy a pera Ethana Marcotteho. A je to nadmíru jednoduchá, technicistní myšlenka.
 
 1. Udělejte pružný layout.
 2. Doplňte to pružnými obrázky.

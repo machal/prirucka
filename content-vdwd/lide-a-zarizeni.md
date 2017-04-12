@@ -24,9 +24,9 @@ Ani skupina uživatelů klasických počítačů,  zejména notebooků, není ne
 
 Není. 
 
-Bylo by to totiž děsně **neefektivní**. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit. Pro nastartování představivosti doporučuji podkapitolu [o webech mobilních, responzivních, adaptivních](mobilni-responzivni-adaptivni.md). Možná si vzpomenete, že jsem proti speciální mobilní verzi webu argumentoval náročností práce i údržby pro designéry i vývojáře. Ale týká se vlastně všech řemesel sovisejících s webem: uživatelského a technického testování, správy obsahu a dalších. Práce na dvou rozhraních je všechny zpomalí a prodraží.
+Bylo by to totiž **neefektivní**. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit. Pro nastartování představivosti doporučuji podkapitolu [o webech mobilních, responzivních, adaptivních](mobilni-responzivni-adaptivni.md). Možná si vzpomenete, že jsem proti speciální mobilní verzi webu argumentoval náročností práce i údržby pro designéry i vývojáře. Ale týká se vlastně všech řemesel sovisejících s webem: uživatelského a technického testování, správy obsahu a dalších. Práce na dvou rozhraních je všechny zpomalí a prodraží.
 
-Z principu je navíc téměř **nemožné detekovat dotyková zařízení**. Kdyby se lidé dělili na *dotykující* a *myšující*, možné by to jakž takž bylo. Jenže lidstvo je děsně zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
+Z principu je navíc téměř **nemožné detekovat dotyková zařízení**. Kdyby se lidé dělili na *dotykující* a *myšující*, možné by to jakž takž bylo. Jenže lidstvo je tak trochu zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
 
 Výjimečně nastává situace, kdy se nějaká detekce hodí. Třeba když chcete pro desktopové rozhraní otevřít prvek po najetí myši. Pak použijte detekční knihovnu Modernizr, která *myšovitá* umí najít. 
 

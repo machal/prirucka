@@ -158,7 +158,7 @@ Správný zápis vypadá následovně:
 @media … (min-device-width: 40em) { … }
 ```
 
-„Device“ zápis cílí na rozlišení obrazovky, nikoliv na velikost okna prohlížeče. Hodně dávno se to používalo pro „detekci“ konkrétních zařízení, což ale dobrý postup nebyl, není a nebude. Rozlišení obrazovek je dnes děsně moc a nedá se z nich vyčíst, jestli zařízení patří mezi mobily, tablety nebo něco jiného.
+„Device“ zápis cílí na rozlišení obrazovky, nikoliv na velikost okna prohlížeče. Hodně dávno se to používalo pro „detekci“ konkrétních zařízení, což ale dobrý postup nebyl, není a nebude. Rozlišení obrazovek je dnes velmi hodně a nedá se z nich vyčíst, jestli zařízení patří mezi mobily, tablety nebo něco jiného.
 
 „Device“ zápis navíc znemožňuje testování responzivního layoutu změnšením velikosti okna. A vlastně nevím, k čemu by vám mohl být dobrý.
 

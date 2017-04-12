@@ -112,7 +112,7 @@ Každá správná frontendistka, každý správný frontendista mají prototypov
 
 ### 1. Rychlost načítání 
 
-Komponenta vypadá hezky, ale – nezpomalí zásadně načítání stránky? Karusel na úvodní stránku do drátěného modelu šoupnete raz dva, že? Jen až během prototypování nebo nedejbože finální implementaci zjistíte, že se díky němu úvodní stránka načítá děsně pomalu. To nechcete.
+Komponenta vypadá hezky, ale – nezpomalí zásadně načítání stránky? Karusel na úvodní stránku do drátěného modelu šoupnete raz dva, že? Jen až během prototypování nebo nedejbože finální implementaci zjistíte, že se díky němu úvodní stránka načítá fakt pomalu. To nechcete.
 
 
 ### 2. Výkon v prohlížeči  

@@ -35,7 +35,7 @@ Mimochodem, o dalších [nástrojích pro analýzu rychlosti načítání](rychl
 * Menu: *Technologie > Prohlížeč* a pak odkazy nad tabulkou.   
 Zdejší statistiky se hodí pro zjištění, zda technické vybavení vaší cílové skupiny není v něčem specifické. (Starší, ale povětšinou pořád platné články k prohlížečům: [Stav trhu mobilních prohlížečů](http://www.vzhurudolu.cz/blog/18-mobilni-prohlizece) a [Proč podporovat i prohlížeče pod pětiprocentní hranicí podílu](http://www.vzhurudolu.cz/blog/20-pet-procent)).
 * V menu *Cílové publikum > Mobilní zařízení > Přehled* najdete momentální podíl desktopu, tabletů a mobilů.  
-Někde tam uvidíte i přehled nejpoužívanějších mobilních zařízení, ale těch je děsně moc, takže to obvykle k ničemu nebývá. Může snad jen sloužit jako rada jaké si koupit zařízení [pro testování responzivních webů](jak-testovat-responzivni-weby.md).
+Někde tam uvidíte i přehled nejpoužívanějších mobilních zařízení, ale těch je mnoho, takže to obvykle k ničemu nebývá. Může snad jen sloužit jako rada jaké si koupit zařízení [pro testování responzivních webů](jak-testovat-responzivni-weby.md).
 
 ## Tipy pro práci s Analytics
 

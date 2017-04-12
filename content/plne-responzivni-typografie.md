@@ -6,7 +6,7 @@ Co když bychom ale stránku a komponenty chtěli zvětšovat *plynule*? Prostě
 
 K tomu si ke stolu pozveme dříve už také zmíněné jednotky viewportu, hlavně `vw` (setina šířky okna) a `vh` (setina výšky okna).
 
-Elastická (nebo také plně responzivní typografie) je v době psaní textu spíše v počátcích bádání. Nevyřeší zdaleka všechny situace, pro které byste je možná chtěli nadšeně použít. Ale je děsně *cool* i tak. A já ji tady uvedu, i kdyby mě natahovali na elastický skřipec. 
+Elastická (nebo také plně responzivní typografie) je v době psaní textu spíše v počátcích bádání. Nevyřeší zdaleka všechny situace, pro které byste je možná chtěli nadšeně použít. Ale je *cool* i tak. A já ji tady uvedu, i kdyby mě natahovali na elastický skřipec. 
 
 
 ## Elastická typografie pomocí `vw`

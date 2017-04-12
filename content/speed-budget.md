@@ -27,7 +27,7 @@ Pak už to vše stačí jen zrealizovat, že?
 
 ## Optimalizace vs. kultura rychlosti
 
-Nemám rád slovo „optimalizace“. Abyste totiž něco mohli „optimalizovat“, musíte to předtím děsně odfláknout. 
+Nemám rád slovo „optimalizace“. Abyste totiž něco mohli „optimalizovat“, musíte to předtím pokazit. 
 
 Optimalizaci pro vyhledávače nebo optimalizaci rychlosti musíte dělat jen pokud na ně nemyslíte už v úvodních fázích práce na projektu. Když je projekt nemá v DNA. Proč to probůh neudělat rovnou dobře?
 
@@ -35,7 +35,7 @@ Stanovení rychlostních limitů velmi pomůže. Všechny nové vlastnosti, kter
 
 > Že bychom na houmpejdž dali automaticky pouštěné videjko přes celou stránku? Oukej, ale překročí vám to rychlostní limit. Šestnáctkát.  
 
-Vždycky říkám, že je děsně důležité, aby vývojáři byli přítomní už v oné přípravné fázi projektu. Alespoň pro konzultace, ale ideálně i s možností zůčastnit se přípravy prototypů. Webový projekt je stejně technický jako designérský. Designéři a marketéři obvykle neznají technická specifika komponent zvažovaných k implementaci. Vývojáři jim rádi připraví testy. 
+Je důležité, aby vývojáři byli přítomní už v oné přípravné fázi projektu. Alespoň pro konzultace, ale ideálně i s možností zůčastnit se přípravy prototypů. Webový projekt je stejně technický jako designérský. Designéři a marketéři obvykle neznají technická specifika komponent zvažovaných k implementaci. Vývojáři jim rádi připraví testy. 
 
 Kontrola dodržování rychlostních limitů by se měla provádět nejen během práce na webu, ale také po každé větší aktualizaci. Dá se to naštěstí zautomatizovat. Buď nějakým vlastním nástrojem, který vytáhne data z analyzátorů, o kterých mluvím v dalším textu. Nebo třeba pomocí Speed Curve, ale ten si mohou dovolit jen firmy. [speedcurve.com](https://speedcurve.com/)
 

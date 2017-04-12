@@ -27,7 +27,7 @@ Občas se podívám do ostatních desktopů: Firefoxu, Explorerů a Edge. Méně
 
 Protože se ale bavíme hlavně o mobilních zařízeních, v Chrome mám puštěný Device Mode. Neznám lepší nástroj na emulaci všeho možného mobilního a díky tomu v Chrome trávím během procesu návrhu i kódování webu nejvíce času. Psal jsem o něm na blogu. [vrdl.in/ms0nh](http://www.vzhurudolu.cz/blog/41-devtools-tipy#emulace-zarizeni-s-device-mode)
 
-Já vím, že něco *podobného* existuje ve Firefoxu (Responsive Design View - `Ctrl/Cmd+Alt+M`), nebo v Safari a dokonce v Edge (`F12` / Záložka „Emulation“). Alternativy jsou ale dle mých zkušenosti děsně slabé. Zmiňuji je hlavně proto, abyste si nemysleli, že jsem přes Chrome zamilovaný do Google. Při testování v Chrome si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bráchy, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
+Já vím, že něco *podobného* existuje ve Firefoxu (Responsive Design View - `Ctrl/Cmd+Alt+M`), nebo v Safari a dokonce v Edge (`F12` / Záložka „Emulation“). Alternativy jsou ale dle mých zkušenosti slabé. Zmiňuji je hlavně proto, abyste si nemysleli, že jsem přes Chrome zamilovaný do Google. Při testování v Chrome si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bráchy, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
 
 V Chrome se dívám hlavně na vizuální část responzivního webu. Obvykle oknem prohlížeče hýbu a upravuji kód dokud se mě to alespoň trochu nelíbí ve *všech*  rozlišeních. 
 
@@ -37,7 +37,7 @@ V další fázi potřebuji testovat v reálnějším prostředí. Ano, jde o jin
 
 BrowserStack je výborný nástroj, ušetřil mi hrozně moc času. Rovnou upozorním, že za Live verzi, kterou používám, zaplatíte kolem pěti set korun na osobu měsíčně. Tak, a to bychom měli výčet nevýhod.
 
-Bezplatná alternativa existuje, ale je složitější. Simulátory a emulátory nejsou multiplatformní a žerou děsně moc času při instlalaci, správě i spouštění. Však si to přečtěte v další části textu.
+Bezplatná alternativa existuje, ale je složitější. Simulátory a emulátory nejsou multiplatformní a zaberou moc času při instlalaci, správě i spouštění. Však si to přečtěte v další části textu.
 
 BrowserStack naproti tomu:
 
@@ -63,7 +63,7 @@ Následující část čtěte jen pokud chcete moc šetřit a máte vysokou odol
 Mobilní Chrome jakžtakž odpovídá tomu desktopovému, takže potřebujete otestovat hlavně Android Browser a pak mobilní Safari. Občas také mobilní Operu, Firefox nebo Explorer. Mrkněte do statistik, jak si u vás tyhle prohlížeče stojí. 
 
 - **Mobilní Safari:** Simulátorem je možné na Macu testovat iOS (nebo také watchOS a tvOS, ale tam není žádný prohlížeč), takže mobilní Safari. Nicméně pokud jste na Windowsech nebo Linuxu, emulaci mobilního Safari nespustíte. [vrdl.in/sgo6c](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html)
-- **Android Browser:** Android emulátorem jste si dříve mohli pustit verzi Androidu s aktuálním Android Browserem. Dřív byl Android Emulator děsně pomalý a teď je navíc docela věda ho nainstalovat. [vrdl.in/1m26i](https://developer.android.com/studio/run/emulator.html)
+- **Android Browser:** Android emulátorem jste si dříve mohli pustit verzi Androidu s aktuálním Android Browserem. Dřív byl Android Emulator pomalý a teď je navíc docela věda ho nainstalovat. [vrdl.in/1m26i](https://developer.android.com/studio/run/emulator.html)
 - **Mobilní Explorer:** Spustíte v emulátoru od Microsoftu. Samozřejmě jen na Windows. [vrdl.in/s72hb](https://msdn.microsoft.com/en-us/library/windows/apps/ff402563%28v=vs.105%29.aspx)
 - **Mobilní Opery:** Emulator aktuální verze mobilní Opery neexistuje, ale má jádro velice podobné Chrome. Je ale dobré web vidět v Opeře Mini, kterou lze nainstalovat na desktop. [vrdl.in/xba60](https://dev.opera.com/articles/installing-opera-mini-on-your-computer/)
 

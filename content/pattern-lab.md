@@ -40,7 +40,7 @@ Designové systémy prostě šetří čas a peníze.
 
 <!-- AdSnippet -->
 
-Poslyšte, není těch názvů nějak moc? Style guides, systémy komponent, vlastní Bootstrapy, UI knihovny, knihovny návrhových vzorů, CSS frameworky… Ano, ta věc má děsně moc názvů a variant. Já si je všechny vložil do kategorie *systémy webového designu*. 
+Poslyšte, není těch názvů nějak moc? Style guides, systémy komponent, vlastní Bootstrapy, UI knihovny, knihovny návrhových vzorů, CSS frameworky… Ano, ta věc má docela dost názvů a variant. Já si je všechny vložil do kategorie *systémy webového designu*. 
 
 Ať tomu budeme říkat jakkoliv, webdesign jde z mého pohledu jasně tímhle směrem. Materiálů o design systémech je opravdu hodně. Podívejte se třeba na tenhle rozcestník: [styleguides.io](http://styleguides.io/).
 

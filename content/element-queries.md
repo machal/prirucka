@@ -2,7 +2,7 @@
 
 [Element Queries](http://elementqueries.com/) (nebo [Container Queries](https://alistapart.com/article/container-queries-once-more-unto-the-breach)) jsou vlastně stejné typy dotazů jako [Media Queries](css3-media-queries.md). Jen se neptáte na parametry okna prohlížeče, ale na parametry samotného elementu. 
 
-Je to věc, kterou ve webdesignu děsně chci. A věřte mi, že vy taky. 
+Je to věc, kterou ve webdesignu opravdu hodně chci. A věřte mi, že vy taky. 
 
 Zatím je Element Queries možné jen emulovat javascriptovými knihovnami. A bohužel není jisté, že se standardu, natož nějaké nativní implementace v dohledné době dočkáme. 
 

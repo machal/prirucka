@@ -12,7 +12,7 @@ Pro potřeby předání základní úrovně typografických znalostí mě tady p
 ## Časté typografické chyby
 
 
-### 1) Děsně dlouhé řádky
+### 1) Příliš dlouhé řádky
 
 ![](dist/images/original/typografie-16.jpg)
 
