@@ -27,7 +27,7 @@ Pro pochopení technických částí budete potřebovat dobrou znalost HTML a CS
 
 ## To podstatné vyzkoušíme na příkladu
 
-V textu často ukazuji principy, které se špatně vysvětlují na umělých ukázkách. Proto se knihou jako červená nit táhne příklad. No dobře, v našem případě se jedná spíše o nit modrou. 
+V textu často ukazuji principy, které se špatně vysvětlují na umělých ukázkách. Proto se knihou jako červená nit táhne příklad. 
 
 Kvůli zachování tempa vyprávění jsem se samozřejmě i v procesu jeho tvorbu dopustil mnoha zjednodušení. Na příkladu ale v praxi ukážu mnoho věcí:
 

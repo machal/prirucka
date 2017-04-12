@@ -4,7 +4,7 @@ Měnit velikost stránky i jednotlivých komponent už umíme díky předchozí 
 
 Co když bychom ale stránku a komponenty chtěli zvětšovat *plynule*? Prostě elasticky se změnou šířky nebo výšky okna.
 
-K tomu si ke stolu pozveme dříve už také zmíněné jednotky viewportu, hlavně `vw` (setina šířky okna) a `vh` (setina výšky okna).
+K tomu si přizveme dříve už také zmíněné jednotky viewportu, hlavně `vw` (setina šířky okna) a `vh` (setina výšky okna).
 
 Elastická (nebo také plně responzivní typografie) je v době psaní textu spíše v počátcích bádání. Nevyřeší zdaleka všechny situace, pro které byste je možná chtěli nadšeně použít. Ale je *cool* i tak. A já ji tady uvedu, i kdyby mě natahovali na elastický skřipec. 
 
@@ -32,7 +32,7 @@ Kód je jednoduchý, funguje ve všech moderních prohlížečích a náhradní 
 
 Tak proč jsem tedy bručel o nějakých nevýhodách? Nerad kazím oslavu, ale pojďme si představit dvě situace:
 
-1. Jednotka `vw` nezná váš layout. Neví, že jsou v něm fixně nastavené okraje nebo rámečky. Šířka `.heading` tak nemusí být vyjádřitelná v procentech ze šířky okna. A text se prostě na některých viewportech zalomí jinak než na jiných. To vám může vadit.
+1. Jednotka `vw` nezná váš layout. Neví, že jsou v něm fixně nastavené okraje nebo rámečky. Šířka `.heading` tak nemusí být vyjádřitelná v procentech ze šířky okna, na kterou se `vw` odkazuje. A text se prostě na některých viewportech zalomí jinak než na jiných. To vám může vadit.
 2. Můžete chtít nastavit minimální a maximální velikost písma. Na mobilech bude sedm procent šířky okna už tak trochu trpasličí velikost, že ano?
 
 První problém dokážu (za jistých podmínek) vyřešit v dalším textu. Ten druhý je zčásti řešitelný nastavením minimální velikosti v `rem`:

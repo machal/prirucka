@@ -73,14 +73,14 @@ Nevýhoda `rem` leží ve faktu, že jej nepodporuje Explorer 8 a starší. To a
 
 ### Proč tady nepoužít `px`?
 
-Možná jste zvyklí při převodu designu do kódu pracovat v `px`. Velikosti písma možná máte uložené v proměnných CSS preprocesorů a zvětšování a zmenšování v layoutu nepoužíváte. Když už to chcete dělat, nenastavujte v `px` prosím alespoň tu velikosti písma.
+Možná jste zvyklí při převodu designu do kódu pracovat v `px`. Velikosti písma možná máte uložené v proměnných CSS preprocesorů a zvětšování a zmenšování v layoutu nepoužíváte. Když už to chcete dělat, nenastavujte v `px` prosím alespoň tu velikosti písma, abyste nezablokovali možnost uživatelského zvětšení. 
 
 `rem` je pro mě tedy výchozí jednotka. Občas se mi ale hodí `em`.
 
 
 ## Rozměry pružných komponent: `em`
 
-`em` se vztahuje na velikost písma elementu, nikoliv dokumentu.
+Jednotka `em` obsahuje velikost písma elementu, nikoliv dokumentu.
 
 ```css
 html {
@@ -113,8 +113,6 @@ V textu [o Media Queries](media-queries-tipy.md) píšu, proč nepoužít `px` (
   …
 }
 ```
-
-Pokud se vám v dotazech lépe pracuje s pixely, je zde plugin „postcss-em-media-query“. [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
 
 
 ## Výška řádku: číslem bez jednotky

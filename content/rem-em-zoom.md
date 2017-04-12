@@ -1,6 +1,6 @@
 # Autorský zoom dokumentu a komponent
 
-Jednotky `em` a `rem` jsou dokonale pružné a tak je možné s jejich pomocí zvětšovat nebo zmenšovat celý web nebo jeho jednotlivé komponenty. 
+Jednotky `em` a `rem` jsou pružné a tak je možné s jejich pomocí zvětšovat nebo zmenšovat celý web nebo jeho jednotlivé komponenty. 
 
 
 ## Zvětšování nebo zmenšování celé stránky
@@ -43,12 +43,12 @@ Je to například skvělá možnost, jak zvětšit (zoomovat) celou stránku a z
 Vzpomeňte si na část první kapitoly [o velkých displejích](zmeny-velke-displeje.md), kde jsme se tím zabývali.
 </div>
 
-Podobně můžeme zvětšovat či zmenšovat písmo (a pak celý layout) na displejích menších. Každý webový projekt má jinak nastavenou základní typografii, jinak postavený layout, takže k tomu moc obecných rad nemám. Ale když budete usilovně zmenšovat a zvětšovat okno a sledovat přitom čitelnost textu, na místa, kde se vám hodí zvětšení či zmenšení celého dokumentu přijdete i vy, méně zkušení. 
+Podobně můžeme zvětšovat či zmenšovat písmo (a pak celý layout) na displejích menších. Každý webový projekt má jinak nastavenou základní typografii, jinak postavený layout, takže k tomu moc obecných rad nejde dát. Ale když budete usilovně zmenšovat a zvětšovat okno a sledovat přitom čitelnost textu, místa vhodná k nasazení celkového zvětšení či zmenšení dokumentu poznáte.
 
 
 ## Zvětšování nebo zmenšování komponent
 
-Vezměme sice nereálnou, ale o to lépe vše demonstrující komponentu:
+Vezměme sice zjednodušenou, ale o to lépe vše demonstrující komponentu:
 
 ```css
 .component {

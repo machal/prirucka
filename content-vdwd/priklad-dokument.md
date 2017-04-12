@@ -1,6 +1,6 @@
 # Příklad: hotový dokument
 
-Pojďme do fiktivního e-shopu přidat vlastní typografii, barvy a grafické prvky. Nějak si prostě dokument upravit k obrazu ForestKid.cz. Hotový stav  příkladu pro tuto fázi si můžete naživo prohlédnout nebo stáhnout na následujících adresách:
+Pojďme do fiktivního e-shopu přidat vlastní typografii, barvy a grafické prvky. Nějak si prostě dokument upravit podle vizuálního stylu ForestKid.cz. Hotový stav  příkladu pro tuto fázi si můžete naživo prohlédnout nebo stáhnout na následujících adresách:
 
 - Otevření v prohlížeči: [vrdl.in/vdwddok](http://vrdl.in/vdwddok)
 - Stažení v ZIPu: [vrdl.in/vdwddokzip](http://vrdl.in/vdwddokzip)
@@ -67,7 +67,7 @@ body {
 
 Proměnné asi znáte z CSS preprocesorů. Ty jsou pro větší projekty dost užitečné. Píšu o nich v ebooku „Vzhůru do CSS3“ nebo ve starším textu na Vzhůru dolů. [vrdl.cz/blog/12-css-preprocesory-1](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
 
-Jak už víte, v knize se chci obejít bez složitějších technikálií a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově přímou součástí kaskádových stylů. A jde s nimi páchat ještě větší legrace než s těmi z preprocesorů. Třeba číst a měnit je z javascriptového nebo HTML kódu. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
+Jak už víte, v knize se chci obejít bez složitějších technikálií a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově přímou součástí kaskádových stylů. A jde s nimi tropit ještě větší legrace než s těmi z preprocesorů. Třeba číst a měnit je z javascriptového nebo HTML kódu. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
 
 Podpora CSS proměnných ovšem není vůbec špatná. Z aktuálních prohlížečů je nezvládají jenom Internet Explorery. [caniuse.com/css-variables](http://caniuse.com/#feat=css-variables)
 
@@ -159,5 +159,5 @@ Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obráz
 
 Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. 
 
-Udělali jsme to meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři v něm chyby sekají tempem Baťovy továrny na cvičky. Pojďme to napravit a o viewportech si rychle něco povědět.
+Udělali jsme to meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři a webařky v něm umí udělat chyby. Pojďme to napravit a o viewportech si něco povědět.
 
