@@ -1,6 +1,6 @@
 # Kapitola 7: Návrh rozhraní v éře mobilů
 
-Než si prakticky ukážeme, jaký proces pro návrh používám, musíme vstřebat filozofii vyplývající ze zkušeností, průzkumů a dat, které za mým uvažováním stojí. 
+Než si prakticky ukážeme, jaký proces pro návrh používám, musím popsat přístup vyplývající ze zkušeností, průzkumů a dat, které za mým uvažováním stojí. 
 
 Kapitolu můžete brát jako aktualizaci znalostí o návrhu rozhraní obohacený o přítomnost mobilních zařízení. 
 

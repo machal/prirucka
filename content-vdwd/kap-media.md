@@ -1,9 +1,7 @@
 # Kapitola 6: Obrázky a další média
 
-> Potvory co vystrkují růžky.  
-> Vezmem' na ně nůžky!
 
-Obsah vložený do prohlížeče je z podstaty responzivní. No, nedivte se – je to pravda. Jenže platí pro text, ne už další elementy. Obrázky, tabulky, video… Vsadím se, že nějakou takovou věc jste na webu už viděli.
+Obsah vložený do prohlížeče je z podstaty responzivní. No, nedivte se – je to pravda. Jenže platí pro text, ne už další elementy. Obrázky, tabulky, video… Vsadím se, že takovou věc jste na webu už viděli.
 
 1. Vrátíme se ke kořenům [technického pojetí responzivního designu](3-principy-rwd.md), abychom poznali, proč je potřeba mediálnímu obsahu věnovat tolik péče.
 2. Pak se zaměříme na způsoby, jak přinutit [mediální obsah k pružnému chování](pruzna-media.md). 
@@ -15,4 +13,3 @@ Obsah vložený do prohlížeče je z podstaty responzivní. No, nedivte se – 
 8. [Responzivní grafy](responzivni-grafy.md) vezmeme letem světem, protože tak časté nejsou. 
 9. Radostně také hlásím návrat ke kódování našeho fiktivního e-shopu. Naimplementujeme si do něj [responzivní obrázky](priklad-media.md).
 
-Je toho hodně, že? Než se ponoříme do všech těch médií, vezmu vás zase kuchyně zapomnětlivého kuchaře. Zrovna mi tu bublá základ pro další vaření. Vývar. Vývar, úplný základ responzivního designu, to je pružný layout, pružná média a Media Queries. Měli bychom si říct recept. Tentokrát budu solit, žádné strachy.

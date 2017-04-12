@@ -109,6 +109,6 @@ Z tabulkových dat na mobilu uděláte zjednodušený graf. Doporučuji nasazova
 
 Schovávání obsahu na konkrétních zařízeních je dost nebezpečné. Jak už jsem argumentoval dříve, stejní lidé se na vaše rozhraní dívají z různých zařízení. Proč by určitý obsah měli na jednom zařízení vidět a jiném ne?
 
-Více o tomu píšu dále [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů sedmé kapitoly.
+Připomenu to znovu [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů sedmé kapitoly.
 
 

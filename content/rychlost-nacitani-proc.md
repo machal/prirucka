@@ -9,7 +9,7 @@ Ale nemusíte být Google. Rychlejší načtení vylepší uživatelský prožit
 
 ## My lidé to zkrátka rychlé chceme
 
-Uživatelé jsou prostě jen lidé. A na lidech a jejich vnímání rychlosti uživatelského rozhraní dělal v šedesátých letech pokusy Robert B. Miller.  Zkoumána byla trpělivost lidí při čekání na reakci rozhraní po provedení uživatelské akce.
+Uživatelé jsou prostě jen lidé. Trpělivost lidí při čekání na reakci rozhraní po provedení akce není nekonečná.
 
 * Do 100 milisekund: považujeme za okamžitou reakci.
 * Do jedné vteřiny: poznáme prodlevu, ale nepřerušíme úkol.
@@ -28,7 +28,7 @@ I v Česku rychlost zabírá. Srovname.cz jsem osobně pomáhal se zrychlením d
 Další analýzy dokazují, že se zrychlení webu pozitivně promítá do všech klíčových ukazatelů: konverzního poměru, počtu zobrazených stránek, počtu návštěv nebo třeba spokojenosti zákazníků. Mnoho studií ze světa najdete na WPO stats. [wpostats.com](https://wpostats.com/)
 
 
-## Rychlost ovlivňuje řazení Adwords inzerátů a přirozených výsledků v Google vyhledávání
+## Rychlost ovlivňuje řazení Adwords inzerátů a přirozených výsledků ve vyhledávání Google
 
 Ano, rychlost načítání je jedním z řadících parametrů AdWords kampaní. Už od roku 2008. Doslova píšou:
 

@@ -14,13 +14,15 @@ Původní definice responzivního designu pochází z roku 2010, hlavy a pera Et
 
 ## 1. Pružný layout
 
-Ethan Marcotte psal článek (a pak ještě knihu) v době, kdy byl nebohý internet přeplněný weby připravenými pouze pro počítače. Skoro všechny měly fixní šířku layoutu. No jen si to představte. Ach, bolí mě už jen to pomyšlení! 
+Ethan Marcotte psal článek (a pak ještě knihu) v době, kdy byl nebohý internet přeplněný weby připravenými pouze pro počítače. Skoro všechny měly fixní šířku layoutu, nastavenou v konkrétní pixelové hodnotě. No jen si to představte. Ach, bolí mě už jen to pomyšlení! 
 
-Dnes už bych nikomu nedoporučoval vymýšlet weby jen pro velké displeje. Tehdy to ale nikdo jinak nedělal. V roce 2010 tedy musel Marcotte a jeho tým zbourat něco jako Stalinův pomník tehdejšího webdesignu: Layout fixních rozměrů optimalizovaný pro velké displeje. O [responzivním layoutu](responzivni-layout.md) píšu v samostatné kapitole.
+Pružný layout naproti tomu mění rozměry podle velikosti okna. Nejčastěji je definovaný v procentech ze šířky okna.
+
+Dnes už bych nikomu nedoporučoval vymýšlet weby jen pro velké displeje. Tehdy to ale nikdo jinak nedělal. V roce 2010 tedy musel Marcotte a jeho tým zbourat něco jako Stalinův pomník tehdejšího webdesignu: Layout fixních rozměrů optimalizovaný pro velké displeje. O [layoutu](responzivni-layout.md) píšu v samostatné kapitole.
 
 ## 2. Pružné obrázky
 
-Když už máte pružný layout, musíte mu přizpůsobit elementy vevnitř. První věc, která vám ze zmenšeného layoutu vypadne, budou obrázky. Pružnými obrázky se společně budeme zabývat hned v další podkapitole.  
+Když už máte pružný layout, musíte mu přizpůsobit elementy vevnitř. První věc, která vám ze zmenšeného layoutu vypadne, budou obrázky. O [obrázcích](kap-media) a dalších médiích pak v samostatné kapitole.
 
 ## 3. Podmínky pro změny layoutu (Media Queries)
 

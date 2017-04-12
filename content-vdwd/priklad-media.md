@@ -6,7 +6,7 @@ Abychom použili vědomosti nasáté v téhle kapitole, vložil jsem do příkla
 
 *Příklad před aplikováním přizpůsobivosti médií*
 
-Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný strach, nůžky na ně brát nebudeme. Prostě jim klidným hlasem domluvíme, aby se začala chovat pružněji.
+Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný strach, nůžky na ně brát nebudeme. Prostě zařídíme, aby se začala chovat pružněji.
 
 Pro nedočkavce je tady výsledek:
 
@@ -38,7 +38,7 @@ Obsahové obrázky webu se hodí ukládat v co největším rozlišení. Nikdy t
 
 Nejmenší velikost obrazovky aktuálních mobilů je 240 pixelů. Dnes už se moc nedělají, ale nějaký podíl na trhu ještě mají. V tomto rozlišení mají obrázky po odečtení okrajů šéřli 192 pixelů. Zaokrouhlíme si to na 200 pixelů. Tohle bude naše nejmenší varianta.
 
-Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli „Retina“ displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s vyšším poměrem pixelů než dva, ale mám zkušenost že dvojnásobek obvykle postačuje.
+Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli „Retina“ displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s více než dvojnásobným poměrem hardwarových a CSS pixelů, ale mám zkušenost že dvojnásobek obvykle postačuje.
 
 ### Vyrobíme varianty a uvedeme je do `srcset`
 

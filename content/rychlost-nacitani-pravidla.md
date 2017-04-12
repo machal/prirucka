@@ -27,7 +27,7 @@ Další rady od Google na téma obrázků jsou zde: [vrdl.in/od06q](https://opti
 
 - Každý font má své řezy (tučný, kurzíva…). Nepoužívejte jich zbytečně moc. Více než pět na jedné stránce je na pováženou. Každý řez zatěžuje stránku desítkami kilobajtů dat navíc. 
 - Využívejte úsporný formát WOFF2. [vrdl.cz/blog/50-woff2](http://www.vzhurudolu.cz/blog/50-woff2) 
-- Do fontu dejte jen znaky, které na webu opravdu potřebujete. Pomůže vám FontSquirrel Webfont Generator. [fontsquirrel.com/tools/webfont-generator](https://www.fontsquirrel.com/tools/webfont-generator)
+- Do fontu dejte jen znaky, které na webu opravdu potřebujete. Vlastnost podporují i Google Fonts. [vrdl.in/9763d](https://developers.google.com/fonts/docs/getting_started#specifying_script_subsets)
 
 Povídání o rychlosti a webfontech od Google: [vrdl.in/91bg5](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization).
 
@@ -77,11 +77,11 @@ To co je na stránce vidět nahoře, se do prohlížeče snažte v externích so
 
 ## 3. Zrychlete server
 
-No jasně, že na serveru můžete hodně získat. V celkovém čase potřebném k načtení stránky sice rychlost serveru hraje menší roli než zpracování frontendu, je ale velmi důležitá. Jak už jsem psal: Hledí na ni Google a považuje ji za jeden ze signálů pro pozici stránky ve výsledcích vyhledávání. Serverové technologie nejsou součástí mé specializace, proto alespoň velmi stručně.
+Na serveru můžete hodně získat. V celkovém čase potřebném k načtení stránky sice rychlost serveru hraje menší roli než zpracování frontendu, je ale velmi důležitá. Jak už jsem psal: Hledí na ni Google a považuje ji za jeden ze signálů pro pozici stránky ve výsledcích vyhledávání. Serverové technologie nejsou součástí mé specializace, proto alespoň velmi stručně.
 
 ### Zrychlete serverový čas
 
-Já vím, dobře se to řekne. Ale renderování stránky přes vteřinu je dost pitomé a určitě na serveru nějaké rezervy máte. Rady od Google: [vrdl.in/ivy17](https://developers.google.com/speed/docs/insights/Server).
+Já vím, dobře se to řekne. Ale renderování stránky přes vteřinu je velmi nepříjemné a určitě na serveru nějaké rezervy máte. Rady od Google: [vrdl.in/ivy17](https://developers.google.com/speed/docs/insights/Server).
 
 ### Zapněte si gzip
 
@@ -89,7 +89,7 @@ Zdaleka není samozřejmost. Přitom je to jednoduché. Zkontrolujte si to hlavn
 
 ### Zajistěte správné kešování v prohlížeči
 
-To je složitější, ale prvky stránky mají na serverech často zapnuté špatné kešovací pravidla. Rady od Google: [vrdl.in/l0rhz](https://developers.google.com/speed/docs/insights/LeverageBrowserCaching).
+To je složitější, ale prvky stránky mají na serverech často zapnutá špatná kešovací pravidla. Rady od Google: [vrdl.in/l0rhz](https://developers.google.com/speed/docs/insights/LeverageBrowserCaching).
 
 ### Vyhněte se zbytečným přesměrováním
 
@@ -98,7 +98,9 @@ Každé přesměrování zpomalí dojem z načítání stránky, proto je pokud 
 
 ## 4. Neběží vám server na HTTP/2? Pak ještě minimalizujte počet dotazů
 
-Ve dnech, kdy toto píšu, jsou weby běžící na HTTP/2 ještě stále vzácné. Pro weby, servírované pomocí HTTP/1 je proto k uvedeným základním radám potřeba přidat ještě jednu: minimalizujte počet dotazů na server. Týká se všech externích prvků webu: soubory s CSS a JS kódem, obrázků, webfontů a dalších.
+Ve dnech, kdy toto píšu, jsou weby běžící na HTTP/2 ještě stále vzácné. Druhá verze protokolu ovšem umožňuje načítání webů hezky zrychlit. Proto vám doporučuji se o ni zajímat a na serverech ji případně nechat zapnout.
+
+Pro weby, servírované pomocí HTTP/1 je proto k uvedeným základním radám potřeba přidat ještě jednu: minimalizujte počet dotazů na server. Týká se všech externích prvků webu: soubory s CSS a JS kódem, obrázků, webfontů a dalších.
 
 - CSS a JS lze spojovat do balíčků. Najděte si nástroje pro vaši platformu. [vrdl.in/7zcde](https://www.google.com/search?q=css+js+concat).
 - Obrázky zase můžete spojovat do takzvaných „sprajtů“. [jecas.cz/css-sprite](http://jecas.cz/css-sprite)
