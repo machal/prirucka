@@ -34,7 +34,7 @@ Všimněte si, že došlo k určitému přeskupení sekcí. Ano, až dosud jsme 
 
 Sekci „Proč ForestKid?“ jsme přesunuli až na konec. Týká se celého webu, nikoliv konkrétního produktu a její pozice tomu prostě neodpovídala. Pracujeme v *iteracích*, takže špatné rozhodnutí v dřívějších fázích vývoje není tak problematické. 
 
-V HTML ukázce pro zjednodušení vynechávám další potřebné atributy. Například `role`, které zlepšují přístupnost slepeckými čtečkami. Jak definovat strukturu v HTML5 píšu ve zvláštním článku na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
+V HTML ukázce pro zjednodušení vynechávám další potřebné atributy. Například `role`, které zlepšují přístupnost zařízeními pro očečítání obrazovky. Jak definovat strukturu v HTML5 píšu ve zvláštním článku na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
 
 ## Rozvržení hlavního obsahu flexboxem
 
@@ -63,9 +63,7 @@ Tohle rozvržení ale nechceme na mobilech. Proto ještě musíme vymyslet bod z
 
 ## Bod zlomu a Media Query
 
-Tak jako kuchař míchá vařečkou, responzivní webdesignér zvětšuje a zmenšuje okno prohlížeče. Je činnost, kterou se živíme a některým z nás se už snad uložila do DNA.
-
-Stejně budeme postupovat tady. Nasadíme layout a zmenšováním okna hledáme  minimální šířku, ve které layout dobře funguje. Díváme se, zda se nám nebortí důležité komponenty, ale posuzujeme i šířku typografické řádky. Z [kapitoly o typografii](typografie.md) víme, že by měla být mezi 45-75 znaky. Tu hlídáme u jediného delšího textu na stránce: popisu produktu.
+Tak jako kuchař míchá vařečkou, responzivní webdesignér zvětšuje a zmenšuje okno prohlížeče.  I po nakódování layoutu zmenšováním okna hledáme  minimální šířku okna, ve které layout dobře funguje. Díváme se, zda se nám nebortí důležité komponenty, ale posuzujeme i délku typografické řádky. Z [kapitoly o typografii](typografie.md) víme, že by měla být mezi 45-75 znaky. Tu hlídáme u jediného delšího textu na stránce: popisu produktu.
 
 Minimální šířka okna, ve které layout funguje, je 800 pixelů. V takovém případě vždy přemýšlím, zda bych nedokázal layout udělat tak, aby fungoval už od 768 pixelů. 
 
@@ -87,4 +85,4 @@ A tím se dostáváme k výsledné Media Query pro nasazení layoutu.
 
 Pokud jste pozorně četli [kapitolu o Media Queries](css3-media-queries.md), zápisu byste měli bez problémů rozumět.
 
-Layout tedy máme hotový. A jak se za chvíli dozvíte, máme vlastně hotový celý příklad.
+Layout tedy máme hotový. A vlastně i celý příklad.

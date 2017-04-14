@@ -4,7 +4,7 @@ Robert Wadlow byl podle Wikipedie nejvyšším člověkem v historii. Přezdíva
 
 Titěrné aktivní plochy v uživatelském rozhraní jsou častým hříchem responzivních webů. Ano, myší se trefíte skoro na cokoliv.
 
-Průměrný palec sedmnáctileté dívky bude ale menší než palec Roberta Wadlowa. Ten totiž měřil 2,72 m a vážil okolo 220 kg. Proto raději při vymýšlení rozhraní myslím na Obra z Altonu než na mladé dívky, jestli mi rozumíte.
+Palec sedmnáctileté dívky bude menší než palec Roberta Wadlowa. Ten totiž měřil 2,72 m a vážil okolo 220 kg. Proto raději při vymýšlení rozhraní myslím na Obra z Altonu než na mladé dívky, jestli mi rozumíte.
 
 Co se týká minimalní velikost aktivní plochy, moderní webařina se nejčastěji odkazuje na další výzkum Stevena Hoobera, tentokrát s Patti Shank: „Making mLearning Usable: How We Use Mobile Devices“. 
 [vrdl.in/aug5z](http://shoobe01.blogspot.cz/2014/11/making-mlearning-usable-how-we-use.html) 
@@ -22,14 +22,17 @@ Přiznávám, že ve svých myšlenkách na Obra z Altonu si pravidlo zjednoduš
 
 K podobným závěrům došly i velké firmy jako Apple, Microsoft a Google. Hlouběji to rozepisuje Martin Pešout v článku „Velikosti dotykových oblastí pod drobnohledem“. [vrdl.in/7t4b6](http://www.martinpesout.cz/velikosti-dotykovych-oblasti-pod-drobnohledem/)
 
-Za předpokladu, že máte správně nastavenou meta značku pro viewport, to dokonce lze zapsat v CSS tak, aby ve všech dnešních mobilních zařízeních byla plocha přibližně centimetr veliká:
+Za předpokladu, že máte správně nastavenou meta značku pro viewport, to dokonce lze zapsat v CSS tak, aby ve všech dnešních mobilních zařízeních byla plocha přibližně centimetr veliká.
+
+Podle Joshe Clarka, kterého cituji v předchozích textech, mají téměř všechna dotyková zařízení rozlišení kolem 160 DPI (CSS pixelů na palec). Přepočtem do centimetrů čtverečních dostaneme při obvyklé výchozí velikosti písma v prohlížečích (`16px`) tento výsledek:
+
 
 ```css
-/* 10mm ≅ 63px ≅ 4rem */
+/* 10mm při 160 DPI ≅ 63px ≅ 4rem */
 .touch { width: 4rem; height: 4rem; }
 ```
 
-Pokud chcete kód vysvětlit, rozebírám to ve svém článku na Smashing Magazine. [http://vrdl.in/h8n7i](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/#5-make-all-tap-targets-nice-and-small)
+Pokud by vás zajímalo detailní vysvětlení, rozebírám to ve svém článku na Smashing Magazine. [vrdl.in/h8n7i](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/#5-make-all-tap-targets-nice-and-small)
 
 Budou to lidé trefovat palcem? Navrhněte to na plochu centimetru čtverečního. Navrhněte to i pro obra z Altonu.
 

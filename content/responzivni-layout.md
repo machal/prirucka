@@ -66,7 +66,7 @@ Stručný průlet technickými možnostmi bychom tímto mohli uzavřít. Pojďme
 
 Mřížka rozděluje plochu stránky do sloupečků a jednotlivé komponenty rozhraní jsou pak do nich zarovnány.
 
-Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, kterou se webařina naučila z tisku. Všechny rozumné noviny a knihy jsou do nějaké mřížky vysázeny. Layout do mřížky díky své pravidelnosti zrychluje vstřebání stránky uživateli. 
+Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, kterou se webařina naučila z tisku. Všechny rozumné noviny a knihy jsou do nějaké mřížky vysázeny. Layout do mřížky díky své pravidelnosti usnadňuje pochopení uživatelům. 
 
 ![Layout do mřížky v Bootstrapu](dist/images/original/bootstrap-mrizka.jpg)
 

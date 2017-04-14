@@ -27,9 +27,9 @@ Občas se podívám do ostatních desktopů: Firefoxu, Explorerů a Edge. Méně
 
 Protože se ale bavíme hlavně o mobilních zařízeních, v Chrome mám puštěný Device Mode. Neznám lepší nástroj na emulaci všeho možného mobilního a díky tomu v Chrome trávím během procesu návrhu i kódování webu nejvíce času. Psal jsem o něm na blogu. [vrdl.in/ms0nh](http://www.vzhurudolu.cz/blog/41-devtools-tipy#emulace-zarizeni-s-device-mode)
 
-Já vím, že něco *podobného* existuje ve Firefoxu (Responsive Design View - `Ctrl/Cmd+Alt+M`), nebo v Safari a dokonce v Edge (`F12` / Záložka „Emulation“). Alternativy jsou ale dle mých zkušenosti slabé. Zmiňuji je hlavně proto, abyste si nemysleli, že jsem přes Chrome zamilovaný do Google. Při testování v Chrome si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bráchy, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
+Já vím, že něco *podobného* existuje ve Firefoxu (Responsive Design View - `Ctrl/Cmd+Alt+M`), nebo v Safari a dokonce v Edge (`F12` / Záložka „Emulation“). Alternativy jsou ale dle mých zkušenosti slabší. Při testování v Chrome si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bráchy, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
 
-V Chrome se dívám hlavně na vizuální část responzivního webu. Obvykle oknem prohlížeče hýbu a upravuji kód dokud se mě to alespoň trochu nelíbí ve *všech*  rozlišeních. 
+V Chrome obvykle oknem prohlížeče hýbu a upravuji kód dokud se mě design  alespoň trochu nelíbí ve *všech*  rozlišeních. 
 
 V další fázi potřebuji testovat v reálnějším prostředí. Ano, jde o jiná vykreslovací nebo javascriptová jádra. Pomůže BrowserStack nebo simulátory.
 
@@ -37,16 +37,14 @@ V další fázi potřebuji testovat v reálnějším prostředí. Ano, jde o jin
 
 BrowserStack je výborný nástroj, ušetřil mi hrozně moc času. Rovnou upozorním, že za Live verzi, kterou používám, zaplatíte kolem pěti set korun na osobu měsíčně. Tak, a to bychom měli výčet nevýhod.
 
-Bezplatná alternativa existuje, ale je složitější. Simulátory a emulátory nejsou multiplatformní a zaberou moc času při instlalaci, správě i spouštění. Však si to přečtěte v další části textu.
+Bezplatná alternativa existuje, ale je složitější. Simulátory a emulátory nejsou multiplatformní a zaberou moc času při instalaci, správě i spouštění.
 
 BrowserStack naproti tomu:
 
 - běží v prohlížeči a je naprosto multiplatformní,
-- nabízí daleko svižnější čas startu i přepínání mezi prohlížeči,
-- nevyžaduje vaši pozornost při instalaci a aktualizaci,
-- umožňuje testování webu v lokálním prostředí 
-- kromě emulátorů nabízí také testování na reálných zařízeních,
-- ke všem prohlížečům jsou k dispozici rozumné vývojářské nástroje,
+- nabízí svižnější čas startu i přepínání mezi prohlížeči,
+- nevyžaduje vaši pozornost při instalaci a aktualizaci, 
+- poskytuje možnost testování na reálných zařízeních
 
 …takže už možná chápete, proč ta pětistovka měsíčně nemusí vůbec bolet. [browserstack.com](https://www.browserstack.com/)
 
@@ -54,7 +52,7 @@ BrowserStack naproti tomu:
 Video: <a href="https://www.youtube.com/watch?v=VN8CFG-YajE">BrowserStack</a> ~ Jak testovat web ve všech prohlížečích a nemuset řešit virtuály a emulátory.
 </p>
 
-Když byste chtěli levnější alternativu, mrkněte se na [CrossBrowserTesting.com](https://crossbrowsertesting.com). Jsou tam jen emulátory a je to pomalejší. Stojí to  přibližně sedm stovek, ale *sakumprdum* i s generováním screenshotů a spouštěním Selenium testů, které jsou u BrowserStacku za další peníze.
+Když byste chtěli levnější alternativu, mrkněte se na [CrossBrowserTesting.com](https://crossbrowsertesting.com). Jsou tam jen emulátory a je to pomalejší. Stojí to  přibližně sedm stovek, ale i s generováním screenshotů a spouštěním Selenium testů, které jsou u BrowserStacku za další peníze.
 
 Následující část čtěte jen pokud chcete moc šetřit a máte vysokou odolnost proti bolesti. V opačném případě přejděte k testování na reálných zařízeních.
 
@@ -67,18 +65,15 @@ Mobilní Chrome jakžtakž odpovídá tomu desktopovému, takže potřebujete ot
 - **Mobilní Explorer:** Spustíte v emulátoru od Microsoftu. Samozřejmě jen na Windows. [vrdl.in/s72hb](https://msdn.microsoft.com/en-us/library/windows/apps/ff402563%28v=vs.105%29.aspx)
 - **Mobilní Opery:** Emulator aktuální verze mobilní Opery neexistuje, ale má jádro velice podobné Chrome. Je ale dobré web vidět v Opeře Mini, kterou lze nainstalovat na desktop. [vrdl.in/xba60](https://dev.opera.com/articles/installing-opera-mini-on-your-computer/)
 
+## Testování na fyzických zařízeních
 
-### Pozor, simulátory ani BrowserStack vám nestačí! 
-
-Proč?
+Pozor, simulátory ani BrowserStack vám nestačí! Proč?
 
 * Web si musíte osahat vlastním palcem. Klikání myší v simulátoru tohle nenahradí.
 * Simulátory nenasimulují problémy s výkonností.
 * Občas se stane, že v reálném zařízení se věci vykreslují jinak než v simulátoru.
 
 Pokud to myslíte s responzivními weby vážně, určitě k ruce potřebujete ještě nějaká reálná zařízení.
-
-## Testování na fyzických zařízeních
 
 Jaká zařízení si pro testování pořídit? Nejlépe všechna! Že vám to rozpočet nedovolí? Mě taky ne, takže do začátku vás může inspirovat seznam zařízení, na kterých testuji svou práci. Budu je řadit podle toho, jak důležitá mě připadají pro testování dnešních webů.
 

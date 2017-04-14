@@ -10,7 +10,7 @@ Nejdřív ale dovolte jednu zásadní otázku.
 
 ## Proč jsme vlastně navigace neschovávali už v době čistě desktopových webů?
 
-Protože nejsme hloupí. Selským rozumem vzato, navigace musí na webech plnit minimálně tři úkoly:
+Protože navigace musí na webech plnit minimálně tři úkoly:
 
 1. *Mapa:* uživatel by měl z navigace snadno pochopit strukturu webu a najít co hledá.
 2. *Ukazatel:* uživatel by měl vědět, kde se na mapě aktuálně nachází.
@@ -28,7 +28,7 @@ Dobře, pro ideální svět stručných navigací na velkých displejích bychom
 
 ### 1. Navrhněte navigaci tak, aby byla co nejjednodušší 
 
-Ano, už při vymýšlení struktury webu aktivujte [Mobile First](mobile-first.md) režim. Na dvacet šest položek v hlavní navigace a druhou i třetí úroveň raději zapomeňte. Zachrání vám to kejhák při návrhu designu webu.
+Ano, už při vymýšlení struktury webu aktivujte [Mobile First](mobile-first.md) režim. Na šedesát osm položek a tři úrovně hlavní navigace nejlépe zapomeňte. 
 
 ### 2. Navrhněte web jako by tam navigace nebyla 
 
@@ -36,7 +36,7 @@ Je jasné, že na těch nejmenších displejích budeme muset skoro vždy minim�
 
 ### 3. Pokud to jde, na mobilu ji prostě zobrazte celou
 
-Zní to trochu polopaticky, jenže svět je plný webů s navigací o čtyřech položkách, které používají hamburger jen proto, že to je „in“. Pokud je rozlišení dostatečně široké, navigaci zobrazte. 
+Svět je plný webů s navigací o čtyřech položkách, které používají hamburger jen proto, že to je „in“. Pokud je rozlišení dostatečně široké, navigaci zobrazte. 
 
 Jestliže navigaci nedokážete zobrazit celou, zvažte [jiné návrhové vzory](responzivni-navigace.md) než prosté zapínání a vypínání. Až pokud žádná z těchto možností nezabrala, volte návrhový vzor s vypínačem navigace. Ano, ten, kterému podle vzhledu ikony říkáme „hamburger“. 
 
@@ -64,7 +64,7 @@ Každá ikona je zjednodušenou abstrakcí obsahu, který následuje po její ak
 
 ![Špatný symbol pro zobrazení sekundárního obsahu](dist/images/original/hamburger-abstraction.jpg)
 
-Pokud nechceme naše milé uživatele úplně dezorientovat, měli bychom navigaci hamburgeru používat jako abstrakci typu obsahu, který skutečně reprezentuje. [vrdl.cz/blog/47-znicit-mobilistu-1](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1)
+Pokud nechceme uživatele úplně dezorientovat, měli bychom navigaci hamburgeru používat jako abstrakci typu obsahu, který skutečně reprezentuje. [vrdl.cz/blog/47-znicit-mobilistu-1](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1)
 
 
 ## Dobře míněné rady pro správný návrh ikony otevírající navigaci

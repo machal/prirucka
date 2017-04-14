@@ -75,12 +75,12 @@ Nástroje, používané pro demonstraci a odzkoušení nějaké myšlenky použ�
 * Časově ze všech možností nejnáročněší.
 * Nástroje: Naše HTML prototypování nebo zčásti Axure RP. 
 
-Zjednodušeně řečeno: HTML prototypování nabízí nejvyšší možnou míru věrnosti, ale za cenu nejsložitější práce.
+Zjednodušeně řečeno: HTML prototypování nabízí nejvyšší možnou míru věrnosti, ale za cenu největší pracnosti.
 
 
 ## Výhody pro designéry
 
-Designéři uživatelského rozhraní a weboví grafici myslím dost ocení možnost na prototypech testovat následující:
+Designéři uživatelského rozhraní a weboví grafici mohou ocenit možnost na prototypech testovat následující:
 
 ### 1. Responzivnost
 
@@ -104,7 +104,7 @@ SVG výplně, výřezy, filtry, efekty… tady opravdu nevím, jak jinak než p�
 
 <!-- AdSnippet -->
 
-Ohromě ale z HTML prototypování mohou těžit vývojáři, kteří mají na starost zpracování výstupů designérů. Cílem totiž není jen dostat produkt co nejdříve do prohlížeče, ale také vtáhnout vývojáře do dřívějších fází procesu. Tak, aby si zavčasu otestovali časté problémy, které na drátěném modelu ani maketě prostě vidět nejsou.
+Ohromě ale z HTML prototypování mohou těžit vývojáři, kteří mají na starost zpracování výstupů designérů. Cílem totiž není jen dostat produkt co nejdříve do prohlížeče, ale také vtáhnout vývojáře do dřívějších fází procesu. Tak, aby zavčasu otestovali možné problémy, které na drátěném modelu ani maketě prostě vidět nejsou.
 
 ## Frontendisti ošetří své rizikové faktory
 
@@ -117,7 +117,7 @@ Komponenta vypadá hezky, ale – nezpomalí zásadně načítání stránky? Ka
 
 ### 2. Výkon v prohlížeči  
 
-Nebude se stránka při posouvání „trhat“? Je myšleno i na výkon při práci s načtenou stránkou? To, že klient je nadšený z krásných paralax efektů, které chce na webu pouštět zároveň s videem na pozadí, neznamená, že jeho pocity budou sdílet návštěvníci webu. Prototypem zjistíte, jak je jeho myšlenka problematická co do výkonu v prohlížeči.
+Nebude se stránka při posouvání „trhat“? Je myšleno i na výkon při práci s načtenou stránkou? To, že klient je nadšený z krásných paralaxových efektů, které chce na webu pouštět zároveň s videem na pozadí, neznamená, že jeho pocity budou sdílet návštěvníci webu. Prototypem zjistíte, jak je jeho myšlenka problematická co do výkonu v prohlížeči.
 
 ### 3. Přístupnost  
 
@@ -125,7 +125,7 @@ Jaký dopad bude komponenta mít na přístupnost zrakově postiženými? I karu
 
 ### 4. Zobrazování v exotických prohlížečích 
 
-Jak se bude zobrazovat ve starších a exotičtějších prohlížečích? Půjde snadno vymyslet náhradní řešení pro ně? Úžasné SVG efekty, které grafik někde viděl, jsou fajn. Jak to ale poběží třeba v Exploreru 9, jehož uživatelé jsou třeba pro váš projekt ještě stále zásadní? 
+Jak se bude zobrazovat ve starších a exotičtějších prohlížečích? Půjde snadno vymyslet náhradní řešení pro ně? Úžasné SVG efekty, které grafik někde viděl, jsou fajn. Jak to ale poběží třeba v Exploreru 9, jehož uživatelé jsou třeba pro váš projekt ještě stále důležití? 
 
 ### 5. Udržovatelnost  
 
@@ -154,15 +154,13 @@ Prostě si spolu musíte sednout a pracovat na prototypech dohromady. V dělený
 
 ### Těžší rozhodování u znovupoužitelnosti
 
-Moje vlastní zkušenost. U VašeČočky.cz jsem tak moc stál o znovupoužitelnost psaného kódu, že jsem u některých částí prototypovaného uživatelského rozhraní dosahoval závratně hlemýždího tempa. Někdy je prostě kvůli rychlosti lepší prototypový kód zahodit a pro finální web napsat znovu. Ještě se k tomu vrátím.
+Moje vlastní zkušenost. U VašeČočky.cz jsem tak moc stál o znovupoužitelnost psaného kódu, že jsem u některých částí prototypovaného uživatelského rozhraní dosahoval hlemýždího tempa. Někdy je prostě kvůli rychlosti lepší prototypový kód zahodit a pro finální web napsat znovu. Ještě se k tomu vrátím.
 
 ## Kdy HTML prototypování použít a kdy spíše ne? Nemusíte prototypovat celé weby
 
-Ano, HTML prototypování je časově nejnáročnější varianta modelování webu. Na druhou stranu umožňuje otestovat všechny rizikové faktory na straně designu, frontendu i vývoje obecně. Kód je možné připravovat už v kvalitě, využitelné pro produkční nasazení.
+Ano, HTML prototypování je časově nejnáročnější varianta modelování webu. Na druhou stranu umožňuje otestovat velkou části rizikových faktorů na straně designu, frontendu i vývoje obecně. Kód je možné připravovat už v kvalitě, využitelné pro produkční nasazení.
 
-Na svých projektech HTML prototypování používám kdykoliv je to možné. Mluvím do designu rozhraní i frontend kódování a jak už jsem ukázal, pro obě části mé profesní osobnosti jsou prototypy výborné. Obvykle jsem najímán na projekty, kde je očekávaná špičková kvalita a nepočítá se každá hodina stráveného času. 
-
-Pro HTML prototypování se ale také rozhodují často týmy pracující dlouhodobě na jednom produktu. Tam se vyplatí. 
+Na svých projektech HTML prototypování používám kdykoliv je to možné. Mluvím do designu rozhraní i frontend kódování a jak už jsem ukázal, pro obě části mé profesní osobnosti jsou prototypy výborné. Pro HTML prototypování se ale také rozhodují často týmy pracující dlouhodobě na jednom produktu. Tam se vyplatí. 
 
 <!-- AdSnippet -->
 
@@ -201,5 +199,3 @@ Bootstrap podporuje stavebnicový vývoj. Zároveň dodává řadu principů (pr
 
 O HTML prototypování hezky povídal i Adam Kudrna na jedné z akcí Frontendisti.cz. [https://youtu.be/A71kFP8I_qY](https://youtu.be/A71kFP8I_qY)
 
-
-HTML prototypy je náročnější vyrobit, ale umožní volit míru věrnosti a otestovat myšlenku v raných fázích projektu.  Pokud řešíte cokoliv neobvyklého a nemáte příliš nízký rozpočet, vyzkoušejte je. 

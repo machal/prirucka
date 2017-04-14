@@ -75,7 +75,7 @@ Dalším možným operátorem je negace:
 @media not print { … }
 ```
 
-Jen pozor, milí čtenáři. Negace vždy postihuje celý dotaz, nikoliv jeho určitou část.
+Jen pozor, negace vždy postihuje celý dotaz, nikoliv jeho určitou část.
 
 ## Další vlastnosti média
 
@@ -123,7 +123,7 @@ Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji nam�
 
 ### A co další vlastnosti médií?
 
-V textu jsme zvládli ty nejpoužívanější. Z dalších zajímavých budu jmenovat hlavně sadu vlastností pro detekci způsobu ovládání. Například `@media (hover:hover)`. Tam se ale čeká na podporu Firefoxu. [caniuse.com/media-interaction](http://caniuse.com/#feat=css-media-interaction)
+V textu jsme zvládli ty nejpoužívanější. Z dalších zajímavých budu jmenovat hlavně sadu vlastností pro detekci způsobu ovládání. Například `@media (hover:hover)`, které se umí prohlížeče zeptat na podporu efektu po najetí kurzoru. Tam se ale čeká na podporu Firefoxu. [caniuse.com/media-interaction](http://caniuse.com/#feat=css-media-interaction)
 
 Vlastností médií existuje ale mnohem víc, i když ty ostatní už tak moc použitelné nejsou. [jecas.cz/media](http://jecas.cz/media#vlastnosti)
 

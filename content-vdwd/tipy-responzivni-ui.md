@@ -34,7 +34,7 @@ A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízen
 
 ## 5) Používejte krokovače a další alternativní formulářové prvky
 
-Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu určitě stojí. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: Radio Group, Button Input,  Slider, Segmented Control.
+Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu stát může. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: Radio Group, Button Input,  Slider, Segmented Control.
 
 ## 6) Zamilujte si našeptávače 
 
@@ -53,7 +53,7 @@ Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to
 
 ![](dist/images/original/vdwd/triky-ui-12.png)
 
-*Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
+*Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Je to modální okno, které se objeví po přidání zboží do košíku. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
 
 Dlouhá stránka kromě této konkrétní nevýhody taky odsunuje spodní část rozhraní – patičku. Jak už jsem psal, s koncem stránky roste pozornost uživatelů, protože tam bývá sekundární navigace. Příliš dlouhá stránka pak zhoršuje její přístupnost. Prostě se uživatel vyčerpá rolovacím maratonem.
 

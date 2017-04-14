@@ -37,9 +37,9 @@ A ještě na jednu věc nesmíme zapomenout, na variabilitu obsahu. V našem př
 5. *Zobrazení lupy* pro prohlížení detailu výřezů považuji za uživatelsky  komplikované řešení, které je navíc možné pohodlně ovládat jen na zařízeních s připojenou myší.
 6. *Lightbox*, zobrazení fotky přes celou obrazovku sám o sobě použít nemůžeme. Necháme si jej jako možný stav některé z našich variant.
 
-Pro ForestKid.cz jsem na základě svého nejlepšího svědomí a vědomí vybral druhou variantu se středně velkým náhledem a navigací pomocí karuselu. 
+Pro ForestKid.cz jsem vybral druhou variantu se středně velkým náhledem a navigací pomocí karuselu. 
 
-Jde ovšem pořád jen o mou designérskou hypotézu, kterou bych chtěl časem ověřit uživatelským testováním. To je ale téma, které se nám do knížky už nevejde.
+Jde ovšem pořád jen o mou designérskou hypotézu, kterou bych měl ověřit uživatelským testováním. To je ale téma, které se nám do knížky už nevejde.
 
 Protože si ale ani bez testování nejsem úplně jistý jak se vybraná varianta bude ovládat na větších mobilech (phabletech), udělám si rychlý vizuální test. Prototyp. Vzpomeňte si teď zase na kapitolu [o prototypování v HTML](html-prototypovani.md). 
 
@@ -100,8 +100,6 @@ Codepen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/
 Vy zkušenější jste jistě mírně pozvedli obočí nad schováváním jedné části s obrázky pomocí `display: none`. Tohle v produkčním kódu být nesmí, protože by nám mobilní prohlížece neviditelné obrázky tak či tak stáhly a zpomalily  tím nehezky načtení stránky.
 
 Je dobré ale na tomto místě zopakovat, děláme *prototypování designu*. Určité technické zjednodušení je tady na místě ve prospěch rychlosti jednotlivých kroků vývoje.   
-
-### Jste už také zamilovaní do HTML prototypů?
 
 Snad byly na příkladu dobře vidět výhody prototypů přímo v kódu, o kterých jsem už psal.
 

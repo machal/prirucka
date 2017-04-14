@@ -14,7 +14,7 @@
 
 Vypadá to hezky, ale je to konina. Jak už jsem psal, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů, jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
 
-„Podmínka pro tablety“ navíc nijak nereflektuje obsah a jeho rozvržení na obrazovce. Tohle by mělo být tou hlavní motivací k přidání bodu zlomu či breakpointu. Media Queries mají vyrůstat z obsahu.
+„Podmínka pro tablety“ navíc nijak nereflektuje obsah a jeho rozvržení na obrazovce. Tohle by mělo být tou hlavní motivací k přidání bodu zlomu či breakpointu. Media Queries mají vyplynout z obsahu.
 
 Dejme tomu, že máme jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozhodujeme se o hodnotě bodu zlomu šířky okna, kdy se navigace z vodorovné stane svislou pro menší displeje.
 

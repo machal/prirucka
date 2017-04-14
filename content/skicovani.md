@@ -10,13 +10,13 @@ Na papír si skicou odložím základní obrysy problému a uvolním mentální 
 
 ## Skicuji tužkou na papír
 
-Při skicování je důležité soustředění na problém. Existuje celá řada softwarových nástrojů, ale ty mě rozptylují svými možnostmi a počítačovým prostředím. Tam ani nevíte jak a už neskicujete, ale čtete Facebook. 
+Při skicování je důležité soustředění na problém. Existuje celá řada softwarových nástrojů, ale ty mě rozptylují počítačovým prostředím. 
 
 Používám prostě tužku, gumu a papír. Když mám na výběr, volím bílý papír ve formátu A3 nebo předtištěné šablony od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
 
 Na rozdíl od uměleckého skicování, u náčrtů uživatelského rozhraní nemusíte umět kreslit. Stačí vám jakžtakž zvládnout úsečky, obdélníky, kružnice a psaní. To by šlo, ne?
 
-Dále se budu zabývat jen určitou částí nauky o skicování: rychlým náčrtům variant designérského řešení. Cítím taky povinnost zmínit, že se ve skicovací vědě necítím být expertem. Jako průvodce pro detailnější zkoumání si zvolte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování". [vrdl.in/8yd6f](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
+Dále se budu zabývat jen specifickým typem skicování: rychlým náčrtům variant designérského řešení. Jako průvodce pro detailnější zkoumání si zvolte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování". [vrdl.in/8yd6f](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
 
 ## Skicování variant designérského řešení
 

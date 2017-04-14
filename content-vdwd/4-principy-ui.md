@@ -6,13 +6,13 @@ My, dnešní webdesignéři, musíme předpokládat, že:
 * jeden člověk se na naše weby dívá z různých zařízení,
 * nejčastěji je ovládá tím nejtlustším prstem – palcem.
 
-Během let navrhování a implementace responzivních webů se u mě ustálily následující čtyři principy, ze kterých vždy vycházím: 
+Během let navrhování a implementace responzivních webů jsem dospěl k následujícím čtyřem principům, ze kterých vždy vycházím: 
 
 ## 1) Konzistence
 
-Uživatelé se na naše weby dívají přes různá zařízení. Pokud to není nutné, nenuťme je učit se ovládání webu na každém zařízení znova. Rozhraní musí být co nejvíce podobné napříč všemi zařízeními.
+Jeden uživatel se na naše weby dívá přes různá zařízení. Pokud to není nutné, nenuťme je učit se ovládání webu na každém zařízení znova. Rozhraní musí být co nejvíce podobné napříč všemi zařízeními.
 
-## 2) Tupost
+## 2) Jednoduchost
 
 Když to přeženu, uživatelé umějí klikat a sahat palcem, posunovat stránku a mačkat tlačítko pro návrat v historii. Nic dalšího pro jistotu nepředpokládám. Proto se pokud možno snažím vyhnout složitějším ovládacím prvkům jako jsou karusely, delší formuláře nebo modální okna.
 
@@ -33,4 +33,4 @@ Co oči nevidí, srdce nepálí. Jenže co oči uživatele nevidí, srdce design
 
 Proto je lepší zobrazit alespoň pár položek hlavní navigace, nebudovat závislost rozhraní na ikonách a na důležitých místech uživatelského rozhraní se vyhýbat vysouvacím nabídkám. Luke Wroblewski to hezky shrnul do anglického „Obvious Always Wins“. [vrdl.in/t93f2](http://www.lukew.com/ff/entry.asp?1945)
 
-Tak, dogma je na světě. A teď si pojďme říct, na jakých základě jsem své čtyři principy vystavěl.
+Tak, dogma je na světě. A teď si pojďme říct, na jakých základech jsem své čtyři principy vystavěl.

@@ -6,13 +6,13 @@ Kromě reflexe nástupu mobilů na trh má Mobile First  ještě jednu – dalek
 
 Autor myšlenky, Luke Wroblewski, ji nadefinoval asi takto:
 
-> Designéři, navrhujte nejprve pro mobily. Protože se prudce šíří mezi uživateli, díky svými omezením nás nutí zaměřit pozornost na to nejdůležitější a rozšiřují naše možnosti.
+> Designéři, navrhujte nejprve pro mobily. Prudce se šíří mezi uživateli. Nutí zaměřit pozornost na to nejdůležitější. A rozšiřují naše možnosti.
 
 Parafrázuji, necituji. Plné znění hledejte ve slavném Wroblewskiho článku „Mobile First“. [vrdl.in/4slev](http://www.lukew.com/ff/entry.asp?933)
 
 ## Mobily budou používanější než desktop. Někde už jsou
 
-Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé příručních přístrojů budou jednou tvořit většinu návštěvnosti pravděpodobně i na vašem webu. 
+Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé příručních přístrojů budou jednou tvořit většinu návštěvnosti téměř jistě i na vašem webu. 
 
 ![VašeČočky.cz - dvě skici](dist/images/original/mobile-facebook-graph.jpg)
 
@@ -39,7 +39,7 @@ Je ale tento nový pohled na návrh jediným důsledkem „Mobile First“ filoz
 
 Příchod mobilů neznamená pro designéry jen omezení: zmenšení plochy displeje, horší vykreslovací výkon nebo pomalejší internetové připojení. 
 
-Znamená také nové možnosti. Mobily máme stále u sebe, poskytují informace o naší poloze a tak dále. Mnoho vlastností dnešních webů a aplikací by bez mobilů vůbec nemohlo vzniknout.
+Znamená také nové možnosti. Mobily máme stále u sebe, poskytují informace o naší poloze a tak dále. Mnoho vlastností dnešních webů a aplikací by bez mobilů vůbec nemohlo vzniknout. Vezměme třeba daleko lepší možnosti lokalizace uživatelů nebo možnost jejich okamžité reakce na newslettery nebo sociální sítě.
 
 Opravdu ale chceme dávat mobily na první místo?
 
@@ -64,7 +64,7 @@ Jen si například spočítejte, kolik různých navigací má desktopová verze
 
 ![Alza.cz](dist/images/original/vdwd/alza-cz.png)
 
-*Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je v samostatném webu. Rozhraní na obou typech zařízení trpí nejednotností*
+*Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je  samostatný web na jiné doméně. Rozhraní na obou typech zařízení trpí nejednotností*
 
 Provozovatelé velkých a úspěšných webů samozřejmě nechávají zásadní redesign až na chvíli, kdy je nezbytně nutný. Převod do responzivní „Mobile First“ verze bude v případě Alzy znamenat práci na mnoho měsíců až let. 
 

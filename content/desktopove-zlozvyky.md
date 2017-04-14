@@ -16,7 +16,7 @@ Navrhnout dobrý karusel je vážně složité. Proto po něm osobně sáhnu až
 
 *Stará a nová verze karuselu na RSTS.cz. Starší ještě používala na mobilech nepoužitelnou tečkovou navigaci. Nová je vpravo a je fajn. Díky šipkám se lépe ovládá a grafika je uzpůsobená velikosti displeje*
 
-Jsou karusely obecně špatné? Jako poloviční designér musím napsat: „Ono záleží…“
+Jsou karusely obecně špatné? Z pohledu designéra se sluší napsat: „Ono záleží…“
 
 Karusely jsou určitě špatné, když:
 
@@ -24,7 +24,7 @@ Karusely jsou určitě špatné, když:
 * je používáte jako univerzální schovavač toho, co na webu nechcete a co si klient vymyslel;
 * zpomalují načtení nebo zobrazení stránky;
 * nejsou použitelné na mobilních zařízeních (malé tečky jako navigace, závislost);
-* nepropagují obsah na dalších „slajdech“.
+* nepropagují obsah na dalších „slajdech“ a uživatel na první pohled nepozná, že ho čekají i další obrázky.
 
 Hodně bych si rozmýšlel dnes bohužel běžné použití karuselu pro propagaci aktuálních akcí na úvodní stránce webu. Karusely se ale naopak hodí pro seznamy souvisejících položek. U e-shopu jde třeba o fotografie produktu nebo seznam podobného zboží.  
 
@@ -48,9 +48,9 @@ Další tipy od Nielsen Norman Group k výběru datumu jsem sepisoval na blog. [
 
 ## 5) Nespoléhejte na přítomnost globální navigace
 
-Web bez hlavní navigace? Pfff…!  Představte si, že byste to nějakému klientovi navrhli před pěti lety. Dnes ale na velmi malých displejích postrádají globální navigaci téměř všechny weby. Prostě se tam, potvora, nevejde.
+Web bez hlavní navigace? Pfff…!  Představte si, že byste to nějakému klientovi navrhli před pěti lety. Dnes ale na velmi malých displejích postrádají globální navigaci téměř všechny weby. Prostě se tam nevejde.
 
-Nezbývá než se s tím smířit a na globální navigaci tak moc nestavět. U větších webů hraje na mobilech velkou roli vyhledávání. Mám také dobrou zkušenost se stavěním úvodní stránky složitějších webů jako rozcestníku – poslední záchrany ztraceného uživatele. Chybějící hlavní navigaci je ale potřeba mít v hlavě při návrhu každé komponenty a každé stránky webu.
+Nezbývá než se s tím smířit a na globální navigaci tak moc nestavět. U větších webů hraje na mobilech velkou roli vyhledávání. Může být vhodné stavět úvodní stránku složitějších webů také jako rozcestník. Chybějící hlavní navigaci je ale potřeba mít v hlavě při návrhu každé komponenty a každé stránky webu.
 
 ## 6) Modální okna, lightboxy: pozor na správnou implementaci
 
@@ -59,5 +59,5 @@ Ty samy o sobě nejsou špatné. Dokonce bych řekl, že jsou na mobilech velmi 
 Specifickou odrůdu modálních oken, otravná modální okna, dokonce Google považuje za hodné penalizace. Více je v článku Pavla Ungra „Google od ledna 2017 penalizuje weby s obtěžujícími popupy“.[vrdl.in/googlepopup](http://blog.bloxxter.cz/google-od-ledna-2017-penalizuje-weby-s-obtezujicimi-popupy/)
 
 
-Modálními okny a lightboxy ukončíme výčet nejvýznamnějších zástupců „Červené knihy ohrožených návrhových vzorů“. Myslíte, že vyhynou? Doufám, že ve své desktopové podobě ano. Ale ještě víc doufám, že příroda bude mít dostatek soudnosti, aby jejich DNA upravila. Tak aby v nové responzivní době měly šanci přežít.
+Modálními okny a lightboxy ukončíme výčet nejvýznamnějších zástupců „Červené knihy ohrožených návrhových vzorů“. 
 

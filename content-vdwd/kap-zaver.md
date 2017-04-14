@@ -10,7 +10,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Našli jste chybu? Zpětná vazba mi moc pomůže
 
-I když jsem udělal vše proto, abych se chybám vyhnul, nezbývá než se smířit s tím, že i v tomto textu nějaké zůstaly. Moc pomůže, když je nahlásíte. Všichni uživatelé dostanou jednou za čas aktualizovanou elektronickou verzi.
+I když jsem udělal vše proto, abych se chybám vyhnul, nezbývá než se smířit s tím, že i v tomto textu nějaké zůstaly. Moc pomůže, když je nahlásíte. Všichni čtenáři dostanou jednou za čas aktualizovanou elektronickou verzi.
 
 Moc rád si přečtu i obecnou zpětnou vazbu nebo rovnou recenze ebooku. Pište mi na email [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz).
 

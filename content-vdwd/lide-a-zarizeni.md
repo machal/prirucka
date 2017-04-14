@@ -2,9 +2,9 @@
 
 Než se vrhneme na konkrétní aspekty uživatelského rozhraní, podívejme se na naše milé uživatele. 
 
-Jak vlastně ta nová zařízení drží, jak je ohmatávají… jaké polohy používají? Vítejte u mobilní, tabletové a desktopové kamasútry!
+Jak vlastně ta nová zařízení drží, jak je osahávají? Vítejte u mobilní, tabletové a desktopové kamasútry!
 
-Asi víte, že dotykovost je nový standard. Ale dozvíte se také, že důležité prvky v rozhraní mají být na mobilech veprostřed a na větších dotykových zařízeních u pravého kraje. Pojďme na to.
+Asi víte, že dotykovost je nový standard. Ale dozvíte se také, že důležité prvky v rozhraní mají být na mobilech uprostřed a na větších dotykových zařízeních u pravého kraje. Pojďme na to.
 
 ## Všechno je dotykové
 
@@ -45,7 +45,7 @@ No tak dobře, teď vážně. Opravdu neexistuje nic jako oddělené tábory mob
 
 Google to měřil na svých amerických uživatelích mezi 18 a 49 lety v prvním čtvrtletí 2016. [vrdl.in/gdum](https://www.thinkwithgoogle.com/articles/device-use-marketer-tips.html)
 
-Není samozřejmě bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 minut denně u tabletů, 120 u počítače a celých 170 minut pohledem do mobilu. Když držíme mobily, nechodíme snad ani na záchod! Nebo si je na záchod bereme, že ano.
+Není bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 minut denně u tabletů, 120 u počítače a celých 170 minut pohledem do mobilu. Když držíme mobily, nechodíme snad ani na záchod! Nebo si je na záchod bereme, že ano.
 
 ## Zařízení nejčastěji držíme jednou rukou a ovládáme palcem
 
@@ -72,7 +72,7 @@ Prodávají se stále větší chytré telefony, takže bychom při návrhu rozh
 
 ![Palce na mobilech](dist/images/original/vdwd/palce-mobily.png)
 
-*Mobily jsou větší, ale plocha ovládatelná palcem se zmenšuje. Větší zařízení totiž také mívají silnější šasi. Zelená je palcem dosažitelná snadno, žlutá hůř a červená skoro vůbec*
+*Mobily jsou větší, ale plocha ovládatelná palcem se zmenšuje. Větší zařízení totiž také mívají silnější šasi. Uprostřed zvýrazněná zelená je palcem dosažitelná snadno, žlutá hůř a zbylá červená skoro vůbec*
 
 Čím více dole a čím více veprostřed aktivní prvek je, tím lépe. Spodní hrana prohlížeče ale pro umístění důležitých prvků dobré místo nepředstavuje. K tomu se ještě vrátím. Na mobilech tedy důležité prvky jako primární výzvy k akci umísťujte alespoň co nejvíce doprostřed. 
 
