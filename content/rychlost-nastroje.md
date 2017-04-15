@@ -72,7 +72,7 @@ Dívám se samozřejmě i na další čísla. WebpageTest má mnoho zákoutí k 
 Pokročilá analýza a detailní testování procesů načítání v Chrome. Velmi podobný nástroj mají i ostatní moderní prohlížeče.
 
 <figure>
-<img src="dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="dist/images/original/devtools-rychlost-schema.jpg" alt="DevTools">
 <figcaption markdown="1">    
 *Chrome DevTools a analýza rychlosti*
 </figcaption> 
