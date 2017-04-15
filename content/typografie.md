@@ -68,7 +68,7 @@ p    { margin-bottom: 1.5em }
 
 Toto nastavení předpokládá vysázení patkovým písmem a do jednoho sloupce. Drobně se samozřejme může měnit podle parametrů písma. Jinak to bude pro nepatkové písmo, pro jiný kontrast, pro specifický charakter písma nebo počet sloupců. Nejlépe nám správnou volbu potvrdí poctivé uživatelské testování, ale pro začátek stačí nastavení písem testovat na různých zařízeních a různých lidech ve vašem okolí.
 
-Příliš malý řádkový proklad spojuje sousedící znaky, zhoršuje čitelnost slov a ve výsledku zpomaluje čtení. Příliš velký zase vypadá jako seznam samostatných položek a čtenář zaváhá nad jeho přemýšlet nad významem čteného obsahu.
+Příliš malý řádkový proklad spojuje sousedící znaky, zhoršuje čitelnost slov a ve výsledku zpomaluje čtení. Příliš velký zase vypadá jako seznam samostatných položek a nutí uživatele přemýšlet, zda se jedná o souvislý text nebo o nějakou formu odrážek.
 
 Nicméně, délka a výška řádku je první designérské pravidlo, na které bychom při návrhu rozhraní měli myslet. Postup návrhu pak ideálně vypadá tak, že zvolíme písmo, získáme obsah a až na těchto dvou nerozlučných přátelích postavíme systém pro layout stránky.
 
