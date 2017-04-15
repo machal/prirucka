@@ -2,9 +2,12 @@
 
 Zjednodušeně (ale lidsky) řečeno slouží k informování prohlížeče, zda a jak jste web připravili pro mobilní zařízení.
 
-![Meta Viewport](dist/images/original/meta-viewport-mobile.svg)
-
-*Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířká layoutového viewport nastaví na velikost ideálního CSS rozlišení*
+<figure markdown="1">
+  ![Meta Viewport](dist/images/original/meta-viewport-mobile.jpg)
+  <figcaption markdown="1">    
+    *Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířká layoutového viewport nastaví na velikost ideálního CSS rozlišení*
+  </figcaption> 
+</figure>
 
 Začnu bez vysvětlování zápisem meta tagu pro viewport, který je v pořádku:
 
