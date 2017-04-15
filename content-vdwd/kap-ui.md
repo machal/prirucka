@@ -2,6 +2,16 @@
 
 Než si prakticky ukážeme, jaký proces pro návrh používám, musím popsat přístup vyplývající ze zkušeností, průzkumů a dat, které za mým uvažováním stojí. 
 
-Kapitolu můžete vám může posloužit pro aktualizaci znalostí o návrhu rozhraní. Je zaměřená hlavně na novou přítomnost mobilních zařízení. 
+Kapitola je by měla aktualizovat vaše znalosti o návrhu rozhraní. Je zaměřená hlavně na novou přítomnost mobilních zařízení. 
 
-Postupovat budeme od obecného ke konkrétnímu: začneme [čtyřmi základními vlastnostmi](4-principy-ui.md) dobrého repsonzivního rozhraní, podíváme se na [Mobile First](mobile-first.md) způsob návrhu, projdeme si data o tom [jak lidé používají nová zařízení](lide-a-zarizeni.md) a pak se vám pokusím dát [praktické tipy](tipy-responzivni-ui.md) a odradit od častých chyb.
+Postupovat budeme od obecného ke konkrétnímu: 
+
+1. [Čtyři základní vlastnosti](4-principy-ui.md) dobrého repsponzivního rozhraní.
+2. [„Mobile First“](mobile-first.md) způsob návrhu. Je jen o mobilech?
+3. [Jak lidé používají nová zařízení](lide-a-zarizeni.md)? Podíváme se také na hybridní a větší dotyková zařízení.
+4. Jaká je [minimální doporučená velikost aktivní plochy](velikost-aktivni-plochy.md) v rozhraní? Co myslíte?
+5. „Pravidlo o třech klicích“ budeme ignorovat. Zavedeme pravidlo [o otravných dotycích](otravne-klikani.md).
+6. [Tipy, co dělat a co nedělat](tipy-responzivni-ui.md)  v responzivní designu. Mám jich opravdu hodně.
+7. Časté [desktopové zlozvyky webdesignérů](desktopove-zlozvyky.md). Jsou karusely dobré nebo špatné?
+8. Je rozumné [na mobilech schovávat obsah](responzivni-ui-schovavani-obsahu.md)?
+9. A nakonec seznam [častých chyb](responzivni-ui-caste-chyby.md) responzivních webařů. Internet je jich plný.

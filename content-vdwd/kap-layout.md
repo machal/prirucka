@@ -1,9 +1,10 @@
 # Kapitola 9: Media Queries a layout
 
-> To je prosím klobouk kouzelníka Pokustona a v něm bydlí králík. Bob.  „Vstávat! Vstávat a cvičit!“ nabádá Bob, „je ráno!“.
 
-Nechybí vám tam něco? No, jasně: Bob bez Bobka prostě nemá šťávu. 
+Responzivní webdesign by bez layoutu a Media Queries byl jako Bob bez Bobka v klobouku kouzelníka Pokustona. To nesmíme vynechat.
 
-A jako Bob bez Bobka by byl responzivní webdesign bez [Media Queries](css3-media-queries.md).
-
-Díky tomu, že se naučíme Media Queries, můžeme pak v další části této kapitoly na web aplikovat nějaký [layout](responzivni-layout.md). 
+1. [Media Queries](css3-media-queries.md), podmínky pro zobrazení, nutně potřebujeme. Vezmeme je do hloubky.
+2. Vy zkušenější oceníte i [tipy pro práci s Media Queries](media-queries-tipy.md).
+3. Naučíme se [základy responzivního layoutu](responzivni-layout.md).
+4. Rozvržení stránky si pak [přidáme i do příkladu](priklad-layout.md).
+5. Příklad pak můžeme považovat [za hotový](priklad-hotovo.md).

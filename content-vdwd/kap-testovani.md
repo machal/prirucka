@@ -6,4 +6,4 @@ Počítáme se zvětšujícími se desktopovými displeji. Počítáme s mnoha p
 
 Jasně, testování a ladění webů na zařízeních a prohlížečích získalo s příchodem responzivního designu nové rozměry. Ale zbláznit se z toho nemusíme.
 
-Test responzivních webů nemusí být žádný *trest*. Je dobré vědět, že nemusíte vlastnit všechna zařízení světa. Stačí mít komplexitu webového prostřední v hlavě už návrhu designu a psaní kódu. A tamtéž mít uložené znalosti pro hledání a odstraňování chyb. V poslední kapitole na vás čeká text o testování a ladění responzivních webů. Vzhůru na něj!
+Test responzivních webů nemusí být žádný *trest*. Je dobré vědět, že nemusíte vlastnit všechna zařízení světa. Stačí mít komplexitu webového prostřední v hlavě už návrhu designu a psaní kódu. A tamtéž mít uložené znalosti pro hledání a odstraňování chyb. V poslední kapitole na vás čeká text o testování a ladění responzivních webů. Vzhůru do něj!

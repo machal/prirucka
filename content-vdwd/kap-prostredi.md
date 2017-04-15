@@ -7,7 +7,7 @@ My se poučíme. Než otevřeme dveře webdesignu, pořádně prozkoumáme jeho 
 Čím webdesign prochází a co jej v nejbližší době čeká? Podívejme se na změny, které se v technologickém světě udály a zřejmě ještě udějí a které se nějak promítly do profesních životů nás nebohých webařů.
 
 1. [Příchod mobilů](zmeny-mobily.md) není jedinou změnou, na kterou reagujeme. Ale je tou nejvýznamnější. 
-2. Nové jsou i displeje [enormně velké](zmeny-velke-displeje.md). 
+2. Nové jsou i displeje [enormně velké](zmeny-velke-displeje.md). Nevíte, proč na ně pořád zapomínáme?
 3. Malá zařízení navíc mohou mít [neuvěřitelné vysoká rozlišení](zmeny-css-pixel.md). Ještě čerstvěji jsou na trhu také [hybridní zařízení](zmeny-hybridy.md), umožňující ovládání dotykem i myší. 
 4. [Prohlížeče](zmeny-prohlizece.md) se množí jako myši ve sklepě perníkové chaloupky. 
 5. Z temného lesa se ke všemu [vynořují nová](budoucnost.md), k internetu připojená zařízení.

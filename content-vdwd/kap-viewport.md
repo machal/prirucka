@@ -4,7 +4,7 @@ Mobily nám přinesly tři zásadní životní radosti. Notifikace chodící ve 
 
 Problematika vykreslování do plochy prohlížeče má na mobilních zařízeních svá specifika. Jejich neznalost v důsledku vede k chybám jako je zakázání zoomování obsahu uživatelem nebo používání fixního pozicování. O těch si budeme povídat [v kapitole o návrhu rozhraní](kap-ui.md).
 
-Tady to vezmeme čistě technicky:
+V této kapitole to vezmeme čistě technicky:
 
 1. Co je viewport zač a [jaké jeho tři typy známe](viewport-mobily.md)?
 2. Jak správně zapsat [meta značku pro viewport](viewport-meta.md)?
