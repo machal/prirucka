@@ -62,6 +62,17 @@ Standardně vkládáme jako obrázek:
 ![Podíl mobilů](dist/images/original/statistika-mobily.jpg)
 ```
 
+Alternativně s popiskem jako `<figure>`:
+
+```
+<figure markdown="1">
+  ![Podíl mobilů](dist/images/original/statistika-mobily.jpg)
+  <figcaption markdown="1">    
+    *Srovnání řešení pro responzivní obrázky. Rychlost – zohledňují rychlost načítání? Retina – zohledňuji vysokokapacitní displeje? AD (Art Direction) – dokáží poslat různé ořezy obrázků na různá zařízení? Okno – umí vybírat obrázky podle velikosti okna prohlížeče? Layout – zohledňují layout webu?* 
+  </figcaption> 
+</figure>
+```
+
 ### Video
 
 Ideální je vložení pomocí HTML kódu. Markdown je tady nespolehlivý:
