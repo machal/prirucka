@@ -1,4 +1,4 @@
-# To nejdůležitější z této kapitoly
+# Zapamatujte si
 
 - Proces tvorby webu probíhá v cyklech „Výzkum a definice“ a následný „Návrh a realizace“.
 - User Centered Design Canvas stručně shrnuje výzkumnou fázi projektu.

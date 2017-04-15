@@ -1,4 +1,4 @@
-# To nejdůležitější z této kapitoly
+# Zapamatujte si
 
 - Web je výhodné tvořit vrstvením: nad obsah pokládat prezentaci a na tu chování.
 - I webový design je vrstvený: nad dokumentem jsou komponenty.
