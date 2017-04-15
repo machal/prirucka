@@ -7,6 +7,13 @@ Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebP
 
 Validátor základních technických problémů, které komplikují rychlost webu. Zde začněte. Otestujte si tady všechny důležité vstupní šablony. 
 
+<figure markdown="1">
+  ![PageSpeed Insights](dist/images/original/pagespeed-insights.jpg)
+  <figcaption markdown="1">    
+    *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
+  </figcaption> 
+</figure>
+
 Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl učit se další nástroje. Vyřešit je potřeba hlavně červeně zvýrazněné problémy vašeho webu.
 
 Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu kešování měřicího skriptu Google Analytics. Jinak je to ale skvělý nástroj. [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
@@ -29,11 +36,16 @@ Pro mě nástroj číslo jedna. Dělá pokročilou analýzu, testuje detailněji
 
 Umožňuje testování z jiné lokality, testování pomalého připojení a v prohlížečích, ve kterých nemáte pokročilé vývojářské nástroje. Třeba v těch mobilních nebo ve starých Internet Explorerech.
 
+<figure markdown="1">
+  ![WebPagetest.org stránka s výsledkem testu](dist/images/original/webpagetest-schema.jpg)
+  <figcaption markdown="1">    
+    *WebpageTest.org: kromě vysvědčení (1) vidíme i Speed Index (2), vodopádový pohled (3) nebo se můžeme prokliknout na filmový pás (4)*
+  </figcaption> 
+</figure>
+
 Má také API, ve verzi zdarma je omezené na pár stovek dotazů týdně. 
 
 Co z výsledků WebPagetest mě zajímá?
-
-![WebPagetest.org stránka s výsledkem testu](dist/images/original/webpagetest-schema.jpg)
 
 ### 1) Vysvědčení
 
@@ -59,7 +71,12 @@ Dívám se samozřejmě i na další čísla. WebpageTest má mnoho zákoutí k 
 
 Pokročilá analýza a detailní testování procesů načítání v Chrome. Velmi podobný nástroj mají i ostatní moderní prohlížeče.
 
-![Chrome DevTools a analýza rychlosti](dist/images/original/devtools-rychlost-schema.jpg)
+<figure markdown="1">
+  ![PageSpeed Insights](dist/images/original/pagespeed-insights.jpg)
+  <figcaption markdown="1">    
+    *Chrome DevTools a analýza rychlosti*
+  </figcaption> 
+</figure>
 
 Vše podstatné je v záložce Network:
 

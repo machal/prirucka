@@ -33,7 +33,8 @@ Optimalizaci pro vyhledávače nebo optimalizaci rychlosti musíte dělat jen po
 
 Stanovení rychlostních limitů velmi pomůže. Všechny nové vlastnosti, které různí členové týmu běžně do projektů přidávají, se zvažují i pod úhlem limitů. 
 
-> Že bychom na houmpejdž dali automaticky pouštěné videjko přes celou stránku? Oukej, ale překročí vám to rychlostní limit. Šestnáctkát.  
+> Klient: „Že bychom na houmpejdž dali automaticky pouštěné videjko přes celou stránku?“ 
+> Designér: „OK, ale překročí vám to rychlostní limit. Šestnáctkát.“  
 
 Je důležité, aby vývojáři byli přítomní už v oné přípravné fázi projektu. Alespoň pro konzultace, ale ideálně i s možností zůčastnit se přípravy prototypů. Webový projekt je stejně technický jako designérský. Designéři a marketéři obvykle neznají technická specifika komponent zvažovaných k implementaci. Vývojáři jim rádi připraví testy. 
 
