@@ -16,7 +16,7 @@ Prostředky, které Jiří použil k sestavení kompozice, nejsou nijak složit�
 
 1. **Styl vzhledu**  
 Grafický styl, jakým jsou vyvedeny prvky stránky. V době psaní ještě stále letí minimalistický „flat“ styl, pokud byste potřebovali příklad.
-2. **Barvy**
+2. **Barvy**  
 Dobře vybrané barvy nebo jejich kombinace chytí toho správného uživatele za srdce.  
 3. **Typografie**  
 Písmo a jeho kombinace jsou jedním ze základních stavebních kamenů vizuálního výrazu.
