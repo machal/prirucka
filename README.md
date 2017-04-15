@@ -65,11 +65,11 @@ Standardně vkládáme jako obrázek:
 Alternativně s popiskem jako `<figure>`:
 
 ```
-<figure markdown="1">
-  ![Podíl mobilů](dist/images/original/statistika-mobily.jpg)
-  <figcaption markdown="1">    
-    *Srovnání řešení pro responzivní obrázky. Rychlost – zohledňují rychlost načítání? Retina – zohledňuji vysokokapacitní displeje? AD (Art Direction) – dokáží poslat různé ořezy obrázků na různá zařízení? Okno – umí vybírat obrázky podle velikosti okna prohlížeče? Layout – zohledňují layout webu?* 
-  </figcaption> 
+<figure>
+<img src="pagespeed-insights.jpg" alt="PageSpeed Insights">
+<figcaption markdown="1">    
+*Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
+</figcaption> 
 </figure>
 ```
 

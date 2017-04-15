@@ -13,11 +13,11 @@ Zároveň první iPhone tajně doufal, že začnou vznikat weby přizpůsobené 
 
 Ano, viewport na mobilech není jen jeden. Budeme používat terminologii Petera-Paula Kocha a rozlišovat viewporty layoutové, vizuální a ideální. [quirksmode.org/mobile/metaviewport](http://www.quirksmode.org/mobile/metaviewport/)
 
-<figure markdown="1">
-  ![Layoutový a vizuální viewport](dist/images/original/viewport-layoutovy-vizualni.jpg)
-  <figcaption markdown="1">    
-    *Viewport layoutový a vizuální. Při použití správné meta značky jsou oba při načtení responzivní stránky na všech zařízeních stejně velké*
-  </figcaption> 
+<figure>
+<img src="dist/images/original/viewport-layoutovy-vizualni.jpg" alt="Layoutový a vizuální viewport">
+<figcaption markdown="1">    
+*Viewport layoutový a vizuální. Při použití správné meta značky jsou oba při načtení responzivní stránky na všech zařízeních stejně velké*
+</figcaption> 
 </figure>
 
 ## Layoutový viewport
