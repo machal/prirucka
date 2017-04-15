@@ -1,0 +1,3 @@
+# Shrnutí kapitoly
+
+TODO …
