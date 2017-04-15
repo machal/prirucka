@@ -12,13 +12,16 @@ Parafrázuji, necituji. Plné znění hledejte ve slavném Wroblewskiho článku
 
 ## Mobily budou používanější než desktop. Někde už jsou
 
-Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé příručních přístrojů budou jednou tvořit většinu návštěvnosti téměř jistě i na vašem webu. 
+Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé příručních přístrojů budou jednou tvořit většinu návštěvnosti téměř jistě i na vašem webu. Proto „nejdříve mobily“.
 
-![VašeČočky.cz - dvě skici](dist/images/original/mobile-facebook-graph.jpg)
-
+<figure>
+<img src="dist/images/original/mobile-facebook-graph.jpg" alt="VašeČočky.cz - dvě skici">
+<figcaption markdown="1">    
 *94 % uživatelů Facebooku přistupovalo ke konci roku 2016 na Facebook přes mobilní zařízení. 62 % používalo výlučně mobilní zařízení. Zdroj: Luke Wroblewski. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)*
+</figcaption> 
+</figure>
 
-Proto „nejdříve mobily“.
+
 
 ## Malý displej nutí designéry zaměřit pozornost na to nejdůležitější
 
@@ -26,9 +29,12 @@ Návrh rozhraní v desktopovém světě počítal s tím, že máme k dispozici 
 
 Pro mnohé designéry, včetně mě, je proto lepší si rozhraní navrhnout nejprve pro ty nejmenší displeje. 
 
-![VašeČočky.cz - dvě skici](dist/images/original/vdwd/vase-cocky-dve-skici.png)
-
+<figure>
+<img src="dist/images/original/vdwd/vase-cocky-dve-skici.png" alt="">
+<figcaption markdown="1">    
 *Rychlé ruční skici pro VašeČočky.cz*
+</figcaption> 
+</figure>
 
 Při skicování mobilního rozhraní jsme omezení plochou a rozhraní zredukujeme na to nejpodstatnější. Pro přípravu verze pro větší displeje často stačí jen použít běžné techniky responzivního designu: zvětšení nebo mírné přeskládání elementů.
 
@@ -62,9 +68,12 @@ Příkladů „Desktop First“ řešení najdeme v Česku hodně. Vezměme Alzu
 
 Jen si například spočítejte, kolik různých navigací má desktopová verze Alzy. Už to samo o sobě nevěstí nic dobrého pro „převod“ do mobilní podoby. V té pak některé navigace zmizí, jiné pak vypadají výrazně jinak než na desktopu. Rozhraní tedy z pohledu uživatele trpí nekonzistencí. 
 
-![Alza.cz](dist/images/original/vdwd/alza-cz.png)
-
+<figure>
+<img src="dist/images/original/vdwd/alza-cz.png" alt="">
+<figcaption markdown="1">    
 *Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je  samostatný web na jiné doméně. Rozhraní na obou typech zařízení trpí nejednotností*
+</figcaption> 
+</figure>
 
 Provozovatelé velkých a úspěšných webů samozřejmě nechávají zásadní redesign až na chvíli, kdy je nezbytně nutný. Převod do responzivní „Mobile First“ verze bude v případě Alzy znamenat práci na mnoho měsíců až let. 
 
@@ -72,4 +81,9 @@ Na druhé straně je Maternia, provozovatel e-shopů jako VašeČočky.cz nebo L
 
 Mobile First postupem jsme postupně přepracovali celý web. Všechny komponenty rozhraní webu jsou co možná nejvíce jednotné z pohledu uživatele všech zařízení, ale i z pohledu návrhu a technologie.
 
-![Lentiamo.co.uk](dist/images/original/vdwd/lentiamo-co-uk.png)
+<figure>
+<img src="dist/images/original/vdwd/lentiamo-co-uk.png" alt="">
+<figcaption markdown="1">    
+*Lentiamo.co.uk jako příklad „Mobile First“ přístupu*
+</figcaption> 
+</figure>

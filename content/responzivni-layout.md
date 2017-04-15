@@ -34,9 +34,13 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 }
 ```
 
-![](dist/images/original/responzivni-layout.png)
-
+<figure>
+<img src="dist/images/original/responzivni-layout.png" alt="">
+<figcaption markdown="1">    
 *Jednoduchý responzivní dvousloupcový layout tři ku jedné realizovaný flexboxem*
+</figcaption> 
+</figure>
+
 
 Živá ukázka je pro vás připravená na Codepenu. [cdpn.io/e/wobjoq](http://codepen.io/machal/pen/wobjoq)
 
@@ -68,7 +72,13 @@ Mřížka rozděluje plochu stránky do sloupečků a jednotlivé komponenty roz
 
 Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, kterou se webařina naučila z tisku. Všechny rozumné noviny a knihy jsou do nějaké mřížky vysázeny. Layout do mřížky díky své pravidelnosti usnadňuje pochopení uživatelům. 
 
-![Layout do mřížky v Bootstrapu](dist/images/original/bootstrap-mrizka.jpg)
+<figure>
+<img src="dist/images/original/bootstrap-mrizka.jpg" alt="">
+<figcaption markdown="1">    
+*Layout do mřížky v Bootstrapu*
+</figcaption> 
+</figure>
+
 
 *Rozvržení do mřížky zpopularizoval Boostrap. [getbootstrap.com](http://getbootstrap.com/)*
 

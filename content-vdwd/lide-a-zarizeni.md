@@ -51,9 +51,12 @@ Není bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 min
 
 V roce 2013 se Steven Hoober sebral a šel se podívat, jak lidé na ulicích drží své mobilní telefony. Asi vás to nepřekvapí, ale my lidé jsme se nesjednotili ani ve způsobu držení těch malých svítících krabiček. 
 
-![Výsledek výzkumu Stevena Hoobera](dist/images/original/mobily-drzeni.jpg)
-
-*49 % lidí mobilní zařízení v jedné ruce a šátralo po něm palcem. 36 % lidí dávalo přednost „kolébkovému“ chvatu (držení v jedné ruce a ovládání prstem druhé ruky) a 15 % drželo krabičky obouruč a ovládalo dvěma palci*
+<figure>
+<img src="dist/images/original/mobily-drzeni.jpg" alt="">
+<figcaption markdown="1">    
+*Výsledek výzkumu Stevena Hoobera: 49 % lidí mobilní zařízení v jedné ruce a šátralo po něm palcem. 36 % lidí dávalo přednost „kolébkovému“ chvatu (držení v jedné ruce a ovládání prstem druhé ruky) a 15 % drželo krabičky obouruč a ovládalo dvěma palci*
+</figcaption> 
+</figure>
 
 Hoober ale o držení mobilů zjistil i další věci, které se v zásadě dají zobecnit i pro další dotyková  zařízení:
 
@@ -70,9 +73,12 @@ Zdrojový výzkum Steven Hoobera „How Do Users Really Hold Mobile Devices“ n
 
 Prodávají se stále větší chytré telefony, takže bychom při návrhu rozhraní měli myslet na to, že palcem je u nich dosažitelná daleko menší část obrazovky.
 
-![Palce na mobilech](dist/images/original/vdwd/palce-mobily.png)
-
+<figure>
+<img src="dist/images/original/vdwd/palce-mobily.png" alt="">
+<figcaption markdown="1">    
 *Mobily jsou větší, ale plocha ovládatelná palcem se zmenšuje. Větší zařízení totiž také mívají silnější šasi. Uprostřed zvýrazněná zelená je palcem dosažitelná snadno, žlutá hůř a zbylá červená skoro vůbec*
+</figcaption> 
+</figure>
 
 Čím více dole a čím více veprostřed aktivní prvek je, tím lépe. Spodní hrana prohlížeče ale pro umístění důležitých prvků dobré místo nepředstavuje. K tomu se ještě vrátím. Na mobilech tedy důležité prvky jako primární výzvy k akci umísťujte alespoň co nejvíce doprostřed. 
 
@@ -86,11 +92,14 @@ Na časté otázky jestli lidé tablety častěji používají na výšku nebo n
 
 ### Malé tablety (7" a 8") držíme častěji obouruč a ovládáme palci
 
-Znovu se zde budu odkazovat na data, která sesbíral Josh Clark. Malé tablety držíme v ruce, ale zóny pohodlného ovládání palci vypadají zcela jinak. 
+Znovu se zde budu odkazovat na data, která sesbíral Josh Clark. Malé tablety držíme v ruce, ale zóny pohodlného ovládání palci vypadají zcela jinak.
 
-![Palce na tabletu](dist/images/original/vdwd/palce-tablet.png)
-
+<figure>
+<img src="dist/images/original/vdwd/palce-tablet.png" alt="">
+<figcaption markdown="1">    
 *Na malých tabletech držených obouruč jsou palci nejlépe dosažitelné okraje od středu nahoru. Spodní okraj a střed je naopak dosažitelné nejhůře*
+</figcaption> 
+</figure> 
 
 Primární výzvy k akci bychom tedy měli umísťovat ke kraji. Nejlépe pravému, vzhledem k přesile praváků v populaci. 
 
@@ -104,9 +113,12 @@ O tom, zda lidé budou vůbec někdy chtít ovládat zařízení stojící na st
 
 Lidé totiž dotykové obrazovky notebooků  a podobných zařízení nepoužívají ukazováčkem, ale znovu palcem. Únavě paží zabraňují tak, že si ruce opřou o stůl pod hranou displeje. Ukazováčkem obrazovky ohmatávají jen uživatelé méně zkušení, kteří většinou časem přejdou znovu na palce. 
 
-![Palce na notebooku](dist/images/original/vdwd/palce-notebook.png)
-
-*u notebooků s dotykovou obrazovkou a hybridních zařízení jsou palcem nejlépe dostupné plochy spodních rohů*
+<figure>
+<img src="dist/images/original/vdwd/palce-notebook.png" alt="">
+<figcaption markdown="1">    
+*U notebooků s dotykovou obrazovkou a hybridních zařízení jsou palcem nejlépe dostupné plochy spodních rohů*
+</figcaption> 
+</figure> 
 
 I u těchto zařízení jsou tedy nejsnáze dosažitelné kraje uživatelského rozhraní. Jen nezapomeňte, že je u nich uživatelům potřeba nechat trochu volného místa pro rolování stránky.
 

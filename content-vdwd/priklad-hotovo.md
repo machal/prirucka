@@ -4,9 +4,12 @@ Ano, je to tak. Příklad můžeme považovat za hotový. Může za to imaginár
 
 Zatímco jsem tlačítko držel stisknuté, promýšlel jsem, skicoval, prototypoval a kódoval všechny ostatní komponenty uživatelského rozhraní. Až se ze mě kouřilo. Ale dělal jsem to podle postupů [z kapitoly o návrhu UI komponent](kap-ui-proces.md). Pro vás by to bylo jen opakování a nudili byste se mi tady.
 
-Takhle stránka příkladu vypadá v celé své kráse:
-
-![Hotový příklad](dist/images/original/vdwd/priklad-hotovo.jpg)
+<figure>
+<img src="dist/images/original/vdwd/priklad-hotovo.jpg" alt="">
+<figcaption markdown="1">    
+*Takhle stránka příkladu vypadá v celé své kráse*
+</figcaption> 
+</figure> 
 
 - Otevření v prohlížeči: [vrdl.in/vdwdhot](http://vrdl.in/vdwdhot)
 - Stažení v ZIPu: [vrdl.in/vdwdhotzip](http://vrdl.in/vdwdhotzip)

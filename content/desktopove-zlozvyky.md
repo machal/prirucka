@@ -12,9 +12,13 @@ Karusel je pro designéra i uživatele docela výzva. Z mnoha studií zpochybňu
 
 Navrhnout dobrý karusel je vážně složité. Proto po něm osobně sáhnu až když jsem všechny ostatní možnosti selhávají.
 
-![](dist/images/original/vdwd/triky-ui-13.png)
-
+<figure>
+<img src="dist/images/original/vdwd/triky-ui-13.png" alt="">
+<figcaption markdown="1">    
 *Stará a nová verze karuselu na RSTS.cz. Starší ještě používala na mobilech nepoužitelnou tečkovou navigaci. Nová je vpravo a je fajn. Díky šipkám se lépe ovládá a grafika je uzpůsobená velikosti displeje*
+</figcaption> 
+</figure>
+
 
 Jsou karusely obecně špatné? Z pohledu designéra se sluší napsat: „Ono záleží…“
 
@@ -34,9 +38,13 @@ Jak už jsem psal, dost ve svých rozhraních sázím na to, že uživatelé pos
 
 Záložková navigace uvnitř stránky je mobilech riskantní, protože může otevírat obsah, jehož studium vám ony záložky odsune do neznáma. I proto mám mnohem raději takzvané akordeony. Podporují přirozené plynutí informací shora dolů.
 
-![](dist/images/original/vdwd/triky-ui-14.png)
-
+<figure>
+<img src="dist/images/original/vdwd/triky-ui-14.png" alt="">
+<figcaption markdown="1">    
 *CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis“ otevřít „Parametry“, musím posunovat stránku zpět nahoru*
+</figcaption> 
+</figure>
+
 
 ## 4) Uměl by si Obr z Altonu na vašem webu vybrat datum?
 

@@ -14,7 +14,12 @@ Teď prostě, jak jsem popisoval v kapitole [o skicování](skicovani.md), nabro
 
 Já ze sebe dostal šest možností, co vy?
 
-![Skici komponenty fotogalerie](dist/images/original/vdwd/priklad-skici.jpg)
+<figure>
+<img src="dist/images/original/vdwd/priklad-skici.jpg" alt="">
+<figcaption markdown="1">    
+*Skici komponenty fotogalerie*
+</figcaption> 
+</figure> 
 
 Než je začneme hodnotit, měli bychom si rozmyslet co je vlastně ta naše fotogalerie zač.  
 
@@ -49,9 +54,13 @@ Rychlé demo si vytvoříme na už zmíněném online editoru *Codepen* a použi
 
 Aktuální stav prototypu můžete vidět na obrázku a naživo na nebo Codepenu. [cdpn.io/e/JEKxEK](http://codepen.io/machal/pen/JEKxEK).
 
-![Komparativní pohled na prototyp](dist/images/original/vdwd/priklad-komponenta-review-1.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/priklad-komponenta-review-1.jpg" alt="">
+<figcaption markdown="1">    
 *Komparativní pohled na vybraná rozlišení mobilních zařízení s Androidem přes Re:view*
+</figcaption> 
+</figure> 
+
 
 Je vidět, že na zařízeních s vyšším poměrem šířky k výšce uvidí uživatelka při načítání stránky spolehlivě jen navigaci, název produktu a obrázky. Jde samozřejmě o prototyp, takže přesná výška těchto elementů nám v této fázi známá není. 
 
@@ -91,9 +100,12 @@ Když kód pro režim na šírku hodně zjednodušíme, vypadal by následovně:
 
 Využíváme `orientation: landscape`, jednu z [Media Queries](css3-media-queries.md), o kterých budeme mluvit v další kapitole.
 
-![Komparativní pohled na prototyp](dist/images/original/vdwd/priklad-komponenta-review-2.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/priklad-komponenta-review-2.jpg" alt="">
+<figcaption markdown="1">    
 *Výsledný prototyp designu fotogalerie*
+</figcaption> 
+</figure> 
 
 Codepen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/dNXrMe). 
 

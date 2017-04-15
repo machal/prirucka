@@ -14,21 +14,41 @@ Pro potřeby předání základní úrovně typografických znalostí mě tady p
 
 ### 1) Příliš dlouhé řádky
 
-![](dist/images/original/typografie-16.jpg)
-
 Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl zabrat více než 75 znaků, aby oči nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
+
+<figure>
+<img src="dist/images/original/typografie-16.jpg" alt="">
+<figcaption markdown="1">    
+*Wikipedie na počítačovém rozlišení obrazovky*
+</figcaption> 
+</figure>
+
 
 ### 2) Špatný kontrast a další technické parametry
 
-![](dist/images/original/typografie-17.jpg)
+Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů. 
 
-Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů: bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků. Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastchecker.com](http://contrastchecker.com/).
+<figure>
+<img src="dist/images/original/typografie-17.jpg" alt="">
+<figcaption markdown="1">    
+*Zdroják.cz má bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků*
+</figcaption> 
+</figure>
+
+Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastchecker.com](http://contrastchecker.com/).
 
 ### 3) Nesprávné znaky
 
-![](dist/images/original/typografie-18.jpg)
+Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky).
 
-Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky). Není to žádná buzerace typografických snobů. Prostě se to lépe čte.   Typografický tahák od Beneš a Michl vám může velmi pomoci. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
+<figure>
+<img src="dist/images/original/typografie-18.jpg" alt="">
+<figcaption markdown="1">    
+*Aktuálně.cz používá nesprávné znaky*
+</figcaption> 
+</figure>
+
+Není to žádná buzerace typografických snobů. Prostě se to lépe čte.   Typografický tahák od Beneš a Michl vám může velmi pomoci. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
 
 
 ## Ideální šířka a výška řádku

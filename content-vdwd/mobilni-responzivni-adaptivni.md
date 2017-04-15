@@ -6,9 +6,14 @@ Vlastně dnes máme jen dvě možnosti, jak udělat web pro všechna zařízení
 
 Občas se říká „m tečka web“. Ano, jsou to ty weby, které pro přístupy z počítačů používají adresu jako `www.example.cz` a pro přístupy z mobilů něco jako `m.example.cz`. Z pohledu návštěvníka i provozovatele jsou to vlastně dva weby, které servírují stejný nebo případně i upravený obsah.
 
-![Web banky Moneta](dist/images/original/vdwd/moneta.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/moneta.jpg" alt="">
+<figcaption markdown="1">    
 *Příklad mobilního webu: [m.moneta.cz](http://m.moneta.cz) a [www.moneta.cz](http://www.moneta.cz)*
+</figcaption> 
+</figure> 
+
+
 
 ### Výhoda: Mobilní web může být relativně rychle hotový
 
@@ -42,15 +47,21 @@ Desktopový Scuk.cz byl totiž *vymyšlený* pro desktop. Když je něco vymyšl
 
 Scuk byl postavený na mapách Google, takže rozhraní bylo poměrně složité a řešení z pohledu tehdejších frontend technologií relativně těžkopádné. Na mobilech, kde potřebujete rychlé načtení a na pohodlnost ovládání má uživatel vyšší nároky, by bylo ještě těžkopádnější.
 
-![Původní verze Scuk.cz](dist/images/original/vdwd/scuk.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/scuk.jpg" alt="">
+<figcaption markdown="1">    
 *Původní verze Scuk.cz a zpětně dodělaná mobilní verze*
+</figcaption> 
+</figure> 
 
 Nakonec jsme se rozhodli vytvořit ještě jeden web: právě „m tečka“ verzi pro mobily. Už v době příprav jsme ale věděli, že bude dočasná. Po několika letech se oba staré weby zahodily a vznikl nový, jednotný responzivní web. Už beze mě, protože naše domácnost se v té době rozrůstala o děti. Ale povedl se, že ano?
 
-![Responzivní verze Scuk.cz](dist/images/original/vdwd/scuk-responzivni.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/scuk-responzivni.jpg" alt="">
+<figcaption markdown="1">    
 *Poslední, již plně responzivní generace Scuk.cz*
+</figcaption> 
+</figure> 
 
 A teď už konečně obracím kormidlo směrem k našim responzivním webům. Hurá!
 
@@ -69,9 +80,12 @@ Jen pozor, bez nevýhod to není: Responzivní redesign vyžaduje nezanedbateln�
 
 Dalšího klienta, firmu Maternia, se mi hned v počátcích spolupráce (někdy v roce 2015) povedlo přesvědčit, aby myšlenku na mobilní web opustil. Rok a půl jsme pak pracovali na pořádném responzivním redesignu všech jeho e-shopů. Nyní ale má dlouhodobě udržitelné řešení, které jedním kódem obsluhuje všechna relevantní zařízení.
 
-![VašeČočky.cz](dist/images/original/vdwd/vase-cocky.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/vase-cocky.jpg" alt="">
+<figcaption markdown="1">    
 *VašeČočky.cz jako příklad responzivního webu*
+</figcaption> 
+</figure> 
 
 Responzivní web je to, čemu dávám vždy přednost a čemu (to byste nevěřili!) se budeme také v dalších textech nejvíc věnovat.
 
@@ -85,9 +99,12 @@ Technické prostředky původní definice responzivního designu dnes už k výr
 
 Téhle širší kategorii řešení můžeme říkat adaptivní webdesign. 
 
-![Adaptivní webdesign](dist/images/original/vdwd/adaptivni.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/adaptivni.jpg" alt="">
+<figcaption markdown="1">    
 *Do adaptivního webdesignu patří kromě technik responzivního designu také například řešení rychlosti načítání nebo technologie responzivních obrázků*
+</figcaption> 
+</figure> 
 
 Původní definice responzivního designu už prostě dnešním webům nestačí.
 

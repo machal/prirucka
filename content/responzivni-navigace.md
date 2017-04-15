@@ -20,7 +20,13 @@ Celou navigaci na malých displejích schováte do tlačítka. Nejčastěji s ik
 
 Návrhový vzor *přepínač* zpopularizoval například framework Bootstrap a najdete jej na většině dnešních responzivních webů. 
 
-![Návrhové vzory pro responzivní navigace](dist/images/original/responzivni-navigace.jpg)
+<figure>
+<img src="dist/images/original/responzivni-navigace.jpg" alt="">
+<figcaption markdown="1">    
+*Návrhové vzory pro responzivní navigace*
+</figcaption> 
+</figure>
+
 
 ### Speciální varianta přepínače: vyjíždění do obrazovky (Off Canvas)
 

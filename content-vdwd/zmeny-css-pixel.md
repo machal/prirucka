@@ -35,7 +35,12 @@ Dejme tomu, že jsme si v grafickém programu připravili obrázek kružnice. Od
   width="10" height="10" alt="Kružnice">
 ```  
 
-![Běžný vs. Retina displej](dist/images/original/bezny-vs-retina.jpg)
+<figure>
+<img src="dist/images/original/bezny-vs-retina.jpg" alt="">
+<figcaption markdown="1">    
+*Hustota hardwarových pixelů je na „Retina“ displeji násobně vyšší*
+</figcaption> 
+</figure> 
 
 Na běžném displeji se soubor s obrázkem obsahující data pro 10 × 10 pixelů vykreslí do mřížky 10 × 10 hardwarových pixelů. Tady je svět ještě v pořádku. 
 

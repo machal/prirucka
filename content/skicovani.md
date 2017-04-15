@@ -4,9 +4,14 @@ Skicování je metoda rychlého zhmotnění myšlenky. Skicuji velmi rád, skicu
 
 Na papír si skicou odložím základní obrysy problému a uvolním mentální kapacity na jeho vyhodnocování nebo hledání řešení.
 
-![](dist/images/original/skicovani-1.png)
-
+<figure>
+<img src="dist/images/original/skicovani-1.png" alt="">
+<figcaption markdown="1">    
 *Skicování je výborné pro zjednodušení řešení designérských, ale i kodérských problémů. Zpětně těžko říct, co jsem řešil právě tady, ale ušetřilo mi to moc času, to se vsaďte*
+</figcaption> 
+</figure>
+
+
 
 ## Skicuji tužkou na papír
 
@@ -22,9 +27,12 @@ Dále se budu zabývat jen specifickým typem skicování: rychlým náčrtům v
 
 Jsem na začátku přemýšlení o designu konkrétní komponenty. Skicování v téhle fázi používám proto, abych vygeneroval co nejvíce variant řešení uživatelského rozhraní. Hlavně žádné hodnocení, žádné přemýšlení. Jen kreslím jako šílený.
 
-![](dist/images/original/skicovani-2.png)
-
+<figure>
+<img src="dist/images/original/skicovani-2.png" alt="">
+<figcaption markdown="1">    
 *Tady jsem hledal optimální způsob prezentace výběru čísla bot v detailu produktu na e-shopech. Tohle už je uhlazenější, prezentovatelnější verze*
+</figcaption> 
+</figure>
 
 Mozek zapojím až v další fázi. Dívám se na jednotlivé skici a přemýšlím o jejich výhodách a nevýhodách. Samozřejmě si řešení představím na všech možných zařízeních, bereme v potaz zvyklosti, cílové skupiny a technickou řešitelnost. 
 

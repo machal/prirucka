@@ -24,9 +24,14 @@ Pokud vám Axure RP a podobné *wireframovací* nástroje vyhovují, není důvo
 
 HTML prototypy, o kterých tady mluvím, jsou prostě plnohodnotné webové stránky vytvořené technologiemi, které jsou v dnešních prohlížečích po ruce. Jen jsou cíleně zjednodušené – ořezané o některé atributy, které by finální stránka mít měla a prototyp nemusí.
 
-![](dist/images/original/html-prototypovani-1.png)
-
+<figure>
+<img src="dist/images/original/html-prototypovani-1.png" alt="">
+<figcaption markdown="1">    
 *Jeden z raných HTML prototypů VašeČočky.cz a finální stránka webu*
+</figcaption> 
+</figure>
+
+
 
 ## HTML prototypy mají své výhody
 
@@ -181,9 +186,13 @@ U systémů atomického designu to bez intenzivní spolupráce designéra s výv
 
 Prototypování je dobré dělat v nástroji, který zvládáte ovládat rychle a který vám neklade překážky. Moje nástroje vám tedy vnucovat nechci. I když…
 
-![](dist/images/original/html-prototypovani-3.png)
-
+<figure>
+<img src="dist/images/original/html-prototypovani-3.png" alt="">
+<figcaption markdown="1">    
 *Bootstrap a další frontend frameworky je ideálním pomocníkem pro prototypování celých webů. CodePen používám pro rychlý nástřel menších komponent*
+</figcaption> 
+</figure>
+
 
 ### Rychlý online editor CodePen
 

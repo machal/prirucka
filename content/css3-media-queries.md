@@ -22,9 +22,13 @@ Z CSS2 budete znát podmínky pro typy médií, jako třeba `@media print`. Norm
 
 Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
 
-![](dist/images/original/media-query.png)
-
+<figure>
+<img src="dist/images/original/media-query.png" alt="">
+<figcaption markdown="1">    
 *Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování dotazu vyloučí starší Internet Explorery*
+</figcaption> 
+</figure>
+
 
 ## Body zlomu
 

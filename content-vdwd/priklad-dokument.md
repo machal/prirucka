@@ -146,16 +146,25 @@ Je ale pravda, že z pohledu rychlosti načítání (alespoň na dnes ještě p�
 
 Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obrázek se dvěmi hlavními vrstvami webu: dokumentové a komponentové. Pracovali jsme teď na té první, takže se nám povedlo ten krásně jednoduchý obrázek zkomplikovat.
 
-![Vrstvy: dokumentová v detailu](dist/images/original/vdwd/vrstvy-dokument.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/vrstvy-dokument.jpg" alt="">
+<figcaption markdown="1">    
 *Pod dokumentovou vrstvou máme ještě výchozí styly prohlížečů. V samotném dokumentu pak nejprve sjednocujeme vzhled a pomocí například barev, velikostní stupnice nebo písem nastavujeme ten náš*
+</figcaption> 
+</figure> 
+
+
 
 
 ## A jak teď vypadá rozpracovaná verze ForestKid.cz?
 
-![Dokument fáze příkladu](dist/images/original/vdwd/priklad-dokument.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/priklad-dokument.jpg" alt="">
+<figcaption markdown="1">    
 *Dokument se základním grafickým stylem, barvami a typografií. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
+</figcaption> 
+</figure> 
+
 
 Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. 
 

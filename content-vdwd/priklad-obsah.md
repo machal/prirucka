@@ -2,9 +2,13 @@
 
 Jako ukázkový produkt pro náš proces návrhu uživatelského rozhraní jsem vybral tyhle krásné kotníkové boty značky Fare, v jejichž poněkud zabahněných variantách se v Kunratickém lese prohánějí mladí Michálci. 
 
-![Boty Fare](dist/images/original/vdwd/priklad-boty.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/priklad-boty.jpg" alt="">
+<figcaption markdown="1">    
 *Ukázkový produkt, se kterým budeme v příkladu fiktivního e-shopu pracovat. Zdroj: [fare.cz](https://www.fare.cz/detska-obuv-827263.htm)*
+</figcaption> 
+</figure> 
+
 
 Jak budu v knize často zmiňovat, jednotlivé fáze procesu návrhu je výhodné co nejdříve vidět v podobě prezentovatelné v prohlížeči. U textu to nebude tak složité, viďte?
 
@@ -18,9 +22,13 @@ Využijeme také *CodePen*. Jednoduchý online editor, kde si stránku napíšet
 
 ## Obsah příkladu převedeme rovnou do kódu
 
-![Obsah příkladu v Markdownu](dist/images/original/vdwd/priklad-markdown.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/priklad-markdown.jpg" alt="">
+<figcaption markdown="1">    
 *Použil jsem CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho e-shopu. [cdpn.io/e/MJwGXK](http://codepen.io/machal/pen/MJwGXK?editors=1000)*
+</figcaption> 
+</figure> 
+
 
 Už tenhle náhled (prakticky bez CSS stylů) můžeme nějak hodnotit či testovat. Nejlépe se nám to bude dělat v malé velikosti okna, protože tam půjdou problémy obsahu vidět nejlépe.
 
@@ -32,9 +40,12 @@ Testujeme kvalitu obsahu samotného a jeho hierarchii. Konfrontujeme text s naš
 
 Pojďme tento moment nepromeškat a pořádně se na texty podívat. Našel jsem v nich pár problémů, ale nejdřív vám rovnou ukážu druhou iteraci obsahu:
 
-![Druhá iterace obsahu příkladu v Markdownu](dist/images/original/vdwd/priklad-markdown-2.jpg)
-
+<figure>
+<img src="dist/images/original/vdwd/priklad-markdown-2.jpg" alt="">
+<figcaption markdown="1">    
 *Změny, které jsme provedli v druhé iteraci práce s obsahem. Doplnili jsme dostupnost velikostí a informace o ceně dopravy. [cdpn.io/e/XpbBJy](http://codepen.io/machal/pen/XpbBJy?editors=1000)*
+</figcaption> 
+</figure> 
 
 
 ### První problém: chybějící informace o dostupnosti velikostí bot 

@@ -97,9 +97,15 @@ A nezapomeňte na *guerilla* testování — takové prodejny Alzy nebo Datartu 
 
 Browsersync je obecně velmi přínosný nástroj pro testování responzivních webů. Teď nás ale zajímá hlavně jeho schopnost poskytnout *něco jako DevTools*, ovšem multiplatformně. Obsahuje nástroj jménem Weinre, se kterým je ladění webů na mobilech velmi příjemné. [vrdl.cz/prirucka/browsersync](http://www.vzhurudolu.cz/prirucka/browsersync)
 
-![Browsersync v kombinaci s BrowserStack](dist/images/original/browsersync-browserstack.jpg)
+<figure>
+<img src="dist/images/original/browsersync-browserstack.jpg" alt="">
+<figcaption markdown="1">    
+*Browsersync v kombinaci s BrowserStack. Browsersync a Weinre umožňuje kombinovat platformy. Takže třeba Firefox na Macu propojit s Explorerem na Windows Phone*
+</figcaption> 
+</figure>
 
-Browsersync a Weinre umožňuje kombinovat platformy. Takže třeba Firefox na Macu propojit s Explorerem na Windows Phone. 
+
+ 
 
 Weinre jsou ale jen *něco* jako DevTools. Plnohodnotým vývojářským nástrojům dnešních prohlížečů konkurovat nemohou. 
 

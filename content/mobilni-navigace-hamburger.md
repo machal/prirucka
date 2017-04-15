@@ -18,7 +18,12 @@ Protože navigace musí na webech plnit minimálně tři úkoly:
 
 Zeptejme se teď sami sebe: Jak dobře tyto tři úkoly plní schovaná navigace? Že je neplní vůbec? Bingo!
 
-![Dobré a špatné hamburgery](dist/images/original/hamburger-variants.jpg)
+<figure>
+<img src="dist/images/original/hamburger-variants.jpg" alt="">
+<figcaption markdown="1">    
+*Dobré a špatné hamburgery*
+</figcaption> 
+</figure>
 
 Dobře, pro ideální svět stručných navigací na velkých displejích bychom měli vyřešeno. Na mobilech je neschovávat. Jenže mnozí z nás navrhují weby se složitými navigacemi a mnozí uživatelé mají zařízení s velmi malými displeji. 
 
@@ -62,7 +67,12 @@ Ikona hamburgeru je nová a pro autory webů je výhodné, abychom jej, stejně 
 
 Každá ikona je zjednodušenou abstrakcí obsahu, který následuje po její aktivaci. V případě ikony hamburgeru jde o seznam položek řazených pod sebou. Odpovídá to ale třeba víceúrovňové navigaci nebo třeba celé liště sekundárního obsahu, na který se dostanete kliknutím na hamburger například u jinak výborného webu Respektu? 
 
-![Špatný symbol pro zobrazení sekundárního obsahu](dist/images/original/hamburger-abstraction.jpg)
+<figure>
+<img src="dist/images/original/hamburger-abstraction.jpg" alt="">
+<figcaption markdown="1">    
+*Špatný symbol pro zobrazení sekundárního obsahu*
+</figcaption> 
+</figure>
 
 Pokud nechceme uživatele úplně dezorientovat, měli bychom navigaci hamburgeru používat jako abstrakci typu obsahu, který skutečně reprezentuje. [vrdl.cz/blog/47-znicit-mobilistu-1](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1)
 
