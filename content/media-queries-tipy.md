@@ -35,7 +35,7 @@ Media Queries většinou nastavujeme kvůli optimální délce řádku písma. P
 
 Při návrhu bodu zlomu se ovšem na web díváme přes okno prohlížeče. Jeho šířka k naší smůle ale nepracuje s `em`, nýbrž s `px`. Proto obvykle nejdřív v hlavě musíme spustit kalkulačku přepočtů z pixelů do `em`. Alespoň v mém případě je ale spouštění kalkulačky náročné na výpočetní zdroje. 
 
-Proto se i vám může hodit ve vývojářském kódu používat pixely a pro produkční kód si je nechat přepočíst do `em`. Pokud využíváte Grunt, Gulp nebo podobný automatizační nástroj, je zde plugin „postcss-em-media-query". [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
+Proto se i vám může hodit ve vývojářském kódu používat pixely a pro produkční kód si je nechat přepočíst do `em`. Pokud využíváte nějaký automatizační nástroj, je zde plugin „postcss-em-media-query“. [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
 
 ## Zanořování Media Queries
 
