@@ -10,9 +10,12 @@ Budeme se bavit o opravdových grafech v opravdových responzivních stránkách
 
 Z mého pohledu nejzajímavější knihovna pro jednodušší grafy. Protože používá formát SVG, umí kromě přizpůsobení velikosti okna také přizpůsobovat obsah grafů. [gionkunz.github.io/chartist-js/](https://gionkunz.github.io/chartist-js/)
 
-![](dist/images/original/chartist-js.png)
-
+<figure>
+<img src="dist/images/original/chartist-js.jpg" alt="Chartist.js">
+<figcaption markdown="1">    
 *Chartist.js se umí menším displejům přizpůsobovat nejen velikostně, ale i hustotou dat a typem  zobrazení*
+</figcaption> 
+</figure>
 
 ## Highcharts
 

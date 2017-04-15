@@ -116,7 +116,12 @@ V responzivním layoutu obvykle přesně nevíme jaké rozměry budou mít obrá
 
 Pojďme si nejprve vizuálně přiblížit layout pro další ukázku:
 
-![Layout příkladu pro demonstraci srcset/sizes](dist/images/original/rwd-obrazky-priklad-layout.jpg)
+<figure>
+<img src="dist/images/original/rwd-obrazky-priklad-layout.jpg" alt="">
+<figcaption markdown="1">    
+*Layout příkladu pro demonstraci srcset/sizes*
+</figcaption> 
+</figure>
 
 Do `800px` breakpointu je to jednoduché: Obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna a tak musíme odečíst výchozí `margin` u `<body>`, který mají prohlížeče nastavený na `8px`:
 

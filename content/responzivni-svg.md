@@ -117,9 +117,12 @@ Ale čtěte dál. To nejlepší teprve přijde. Slíbil jsem povídání o *resp
 
 Ano, uvnitř SVG můžeme Media Queries úplně v pohodě použít, A ano, někdy se podmínky nevztahují k rozměrům celé stránky, ale k rodiči SVG dokumentu.
 
-![Responsive Logos](dist/images/original/rwd-svg-logos.jpg)
-
+<figure>
+<img src="dist/images/original/rwd-svg-logos.jpg" alt="Responsive Logos">
+<figcaption markdown="1">    
 *Využití Media Queries v responzivních SVG najdete na webu „Responsive Logos“. Podívejte se, stojí to za to. [responsivelogos.co.uk](http://responsivelogos.co.uk/)*
+</figcaption> 
+</figure>
 
 
 ### K čemu se vztahují Media Queries v SVG?
