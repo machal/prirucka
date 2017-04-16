@@ -4,7 +4,7 @@ Než se vrhneme na konkrétní aspekty uživatelského rozhraní, podívejme se 
 
 Jak vlastně ta nová zařízení drží, jak je osahávají? Vítejte u mobilní, tabletové a desktopové kamasútry!
 
-Asi víte, že dotykovost je nový standard. Ale dozvíte se také, že důležité prvky v rozhraní mají být na mobilech uprostřed a na větších dotykových zařízeních u pravého kraje. Pojďme na to.
+Asi víte, že dotykovost je nový standard. Ale dozvíte se také, že prvky, které mají být snadno dosažitelné, je dobré na mobilech umísťovat na vodorovný střed a na větších zařízeních k pravému kraji. Pojďme na to.
 
 ## Všechno je dotykové
 
@@ -80,7 +80,7 @@ Prodávají se stále větší chytré telefony, takže bychom při návrhu rozh
 </figcaption> 
 </figure>
 
-Čím více dole a čím více veprostřed aktivní prvek je, tím lépe. Spodní hrana prohlížeče ale pro umístění důležitých prvků dobré místo nepředstavuje. K tomu se ještě vrátím. Na mobilech tedy důležité prvky jako primární výzvy k akci umísťujte alespoň co nejvíce doprostřed. 
+Pokud má být prvek rozhraní snadno dosažitelný, bude nejlepší, když jej na mobilech umístíte co nejvíc dolů a co nejvíc doprostřed. Spodní hrana prohlížeče ale pro umístění důležitých prvků dobré místo nepředstavuje. K tomu se ještě vrátím v povídání o fixním pozicování elementů.
 
 Na menších mobilech tedy dělají palce kolem 75 % všech interakcí. Na velkých mobilech kolem 60 %. Uvádí to Josh Clark ve vynikajícím článku „How We Hold Our Gadgets“ na A List Apart, ze kterého budu dále vycházet. [vrdl.in/hold](http://alistapart.com/article/how-we-hold-our-gadgets)
 

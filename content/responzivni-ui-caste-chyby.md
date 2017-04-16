@@ -14,11 +14,13 @@ Jak už jsem zmiňoval dříve, dnešní weby se zobrazují v oknech mezi 240 a 
 
 ## 4) Zakázané přiblížení (zoom)
 
-Uživatelé si zvětšují výřezy obrazovky z mnoha důvodů: kvůli špatnému kontrastu na sluníčku, kvůli snadnějšímu výběru textu nebo se jen chtějí podívat na detail fotografie na stránce. Snažte se jim prosím zvětšování nezakázat. Uveďte [správnou meta značku pro viewport](viewport-meta.md).
+Uživatelé si zvětšují výřezy obrazovky z mnoha důvodů: kvůli špatnému kontrastu na sluníčku, kvůli snadnějšímu výběru textu nebo se jen chtějí podívat na detail fotografie na stránce. Je to stejně přirozené jako posun stránky nahoru a dolů a občas to potřebují udělat snad všichni uživatelé.
 
-WCAG (doporučení pro přístupné weby) trvají na možnost vše alespoň dvakrát zvětšit. [vrdl.in/cbe5f](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale)
+Rozhodně si nenamlouvejte, že jste web „optimalizovali“ pro mobily a že zoomování potřeba není. Snažte se jej prosím nezakázat úmyslně ani nevědomky. Uveďte [správnou meta značku pro viewport](viewport-meta.md).
 
-Prohlížeč Safari na iOS 10 a novějších už naštěstí zákaz zoomování ignoruje.
+Norma WCAG (doporučení pro přístupné weby) trvá na možnosti vše alespoň dvakrát zvětšit. [vrdl.in/cbe5f](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale)
+
+Prohlížeč Safari na iOS 10 a novějších už naštěstí „zákaz zoomování“ ignoruje.
 
 ## 5) Neošetřené načítání webfontů
 
@@ -38,17 +40,21 @@ Týká se všech fixně umístěných navigačních lišt, překryvných vrstev 
 
 Ptáte se proč? 
 
-**Zmenšují už tak skromný prostor.** Telefony s menšími rozlišeními, jako 320 × 480 nebo dokonce 240 × 320 pixelů, stále žijí. Problém to ale bude prakticky na každém čtyřpalcovém displeji.
+### Zmenšují už tak skromný prostor
+Telefony s menšími rozlišeními, jako 320 × 480 nebo dokonce 240 × 320 pixelů, stále žijí. Problém to ale bude prakticky na každém čtyřpalcovém displeji.
 
-**Kolidují s ovládacími prvky prohlížečů.** Fixně pozicovaná horní navigace bývá překrývána vysunovací lištou s adresním řádkem prohlížeče. Prvky fixně umístěné dole zase kolidují s výsuvnou spodní lištou prohlížeče Safari na iOS. [vrdl.in/houb1](https://www.eventbrite.com/engineering/mobile-safari-why/)
+### Kolidují s ovládacími prvky prohlížečů
+Fixně pozicovaná horní navigace bývá překrývána vysunovací lištou s adresním řádkem prohlížeče. Prvky fixně umístěné dole zase kolidují s výsuvnou spodní lištou prohlížeče Safari na iOS. [vrdl.in/houb1](https://www.eventbrite.com/engineering/mobile-safari-why/)
 
-**Komplikují posun obrazovky.** Postranní fixní lišty zase nevinným palcům vezmou prázdné okraje, kterými jinak spokojeně rolují stránku. Kolikrát se vám stalo, že jste takovou lištu při rolování omylem otevřeli? Mému palci mnohokrát, mohl by vám vyprávět.
+### Komplikují posun obrazovky 
+Postranní fixní lišty zase nevinným palcům vezmou prázdné okraje, kterými jinak spokojeně rolují stránku. Kolikrát se vám stalo, že jste takovou lištu při rolování omylem otevřeli? Mému palci mnohokrát, mohl by vám vyprávět.
 
-**Rozbijí přiblíženou stránku.** Jak už jsem psal – zakazovat zoomování považuji za chybu. Co ale udělají vaše fixně pozicované elementy pokaždé, když si uživatel stránku přiblíží? No jasně, rozbijí layout.
+### Rozbijí přiblíženou stránku 
+Jak už jsem psal – zakazovat zoomování považuji za chybu. Co ale udělají vaše fixně pozicované elementy pokaždé, když si uživatel stránku přiblíží? No jasně, rozbijí layout.
 
-A ke všemu vás **na méně výkonných mobilech nebudou poslouchat** a při posunu stránky občas neudrží vámi vysněnou pozici. 
+A ke všemu vás na méně výkonných mobilech nebudou poslouchat a při posunu stránky občas neudrží vámi vysněnou pozici. 
 
-Často se argumentuje tím, že fixně pozicovaná navigace umožní uživateli ovládat web na obzvlášť dlouhých stránách. Na to už jsem namítal, že stránky na mobilech *obzvlášť dlouhé* prostě být nemají, však víte. Na obou hlavních mobilních platformách navíc existuje možnost vrátit se na vršek stránky pomocí tapnutí na horní lištu operačního systému.
+Často se argumentuje tím, že fixně pozicovaná navigace umožní uživateli ovládat web na obzvlášť dlouhých stránách. Na to už jsem namítal, že stránky na mobilech *obzvlášť dlouhé* prostě být nemají, však víte. Na rozumně dlouhých stránkách je návrat zpět nahoru snadný díky možnosti rychlého posunu stránky (tzv. „momentum scrolling“). Tou jsou vybaveny všechny mobilní prohlížeče.
 
 Pro další popis i hlubší argumentaci vás pošlu na další své texty:
 

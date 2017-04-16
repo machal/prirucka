@@ -32,11 +32,11 @@ Karusely jsou určitě špatné, když:
 
 Hodně bych si rozmýšlel dnes bohužel běžné použití karuselu pro propagaci aktuálních akcí na úvodní stránce webu. Karusely se ale naopak hodí pro seznamy souvisejících položek. U e-shopu jde třeba o fotografie produktu nebo seznam podobného zboží.  
 
-## 3) Záložky spíše ne, akordeony ano
+## 3) Akordeony raději než záložky uprostřed stránky
 
-Jak už jsem psal, dost ve svých rozhraních sázím na to, že uživatelé posunovat stránku shora dolů bez problémů zvládají. 
+Jak už jsem psal, dost ve svých rozhraních sázím na to, že uživatelé posunovat stránku shora dolů bez problémů zvládají.
 
-Záložková navigace uvnitř stránky je mobilech riskantní, protože může otevírat obsah, jehož studium vám ony záložky odsune do neznáma. I proto mám mnohem raději takzvané akordeony. Podporují přirozené plynutí informací shora dolů.
+Záložková navigace uvnitř stránky je mobilech ke zvážení, protože může otevírat obsah, jehož studium vám ony záložky odsune do nahoře skrytých částí stránky. 
 
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-14.png" alt="">
@@ -44,6 +44,8 @@ Záložková navigace uvnitř stránky je mobilech riskantní, protože může o
 *CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis“ otevřít „Parametry“, musím posunovat stránku zpět nahoru*
 </figcaption> 
 </figure>
+
+I proto mám raději takzvané akordeony. Podporují přirozené plynutí informací shora dolů. Na druhou stranu – akordeony dávají díky výpisu pod sebou informacím (někdy nechtěnou) hierarchi. Jak tedy sami vidíte, při výběru řešení vždy záleží na obsahu, který reprezentuje a celkovém kontextu, ve kterém jej používáte.
 
 
 ## 4) Uměl by si Obr z Altonu na vašem webu vybrat datum?

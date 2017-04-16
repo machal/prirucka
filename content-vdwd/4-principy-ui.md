@@ -23,7 +23,7 @@ Pokud byste s mými předpoklady nesouhlasili, přečtěte si například tyto d
 
 ## 3) Přirozený proud
 
-To co je na stránce nahoře je důležité, co uprostřed málo důležité a ke konci stránky zase důležitost roste. Nejpřirozenější směr konzumace informací v naší části světa je zleva doprava a shora dolů. 
+To co je na stránce nahoře je přirozeně důležité, co uprostřed méně důležité a tak dále. Nejpřirozenější směr konzumace informací v naší části světa je zleva doprava a shora dolů. Ten samozřejmě můžete změnit vizuálním designem, ale musíte si být jistí, že to děláte dobře.
 
 Proto se vyhýbám prvkům, které uživatele nutí vracet se proti přirozenému proudu: například záložkovým navigacím uprostřed stránky. 
 
