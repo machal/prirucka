@@ -19,7 +19,11 @@ Při skicování je důležité soustředění na problém. Existuje celá řada
 
 Používám prostě tužku, gumu a papír. Když mám na výběr, volím bílý papír ve formátu A3 nebo předtištěné šablony od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
 
-Na rozdíl od uměleckého skicování, u náčrtů uživatelského rozhraní nemusíte umět kreslit. Stačí vám jakžtakž zvládnout úsečky, obdélníky, kružnice a psaní. To by šlo, ne?
+Pěkný je také Gridzzly, nástroj Rostislava Blahy, který vám umožní tisk požadované mřížky na čistý papír. [gridzzly.com](http://gridzzly.com/)
+
+Ale jiní skicují popisovačem Sharpie nebo do elektronicky v nějaké aplikaci na iPadu. Vezměte, co vám vyhovuje a v čem jste rychlí a dosáhnete požadované úrovně kvality.
+
+Na rozdíl od uměleckého skicování, u náčrtů uživatelského rozhraní nemusíte umět kreslit. Stačí vám jakžtakž zvládnout úsečky, obdélníky, kružnice a psaní. To by šlo, ne? Pokud si myslíte, že mé skici jsou pěkné, je to proto, že ty úplně první náčrty jsem se vám styděl ukázat. Samozřejmě, výhoda skicování je také v rychlých iteracích. 
 
 Dále se budu zabývat jen specifickým typem skicování: rychlým náčrtům variant designérského řešení. Jako průvodce pro detailnější zkoumání si zvolte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování". [vrdl.in/8yd6f](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
 

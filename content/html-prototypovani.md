@@ -35,7 +35,7 @@ HTML prototypy, o kterých tady mluvím, jsou prostě plnohodnotné webové str�
 
 ## HTML prototypy mají své výhody
 
-Jsou totiž…
+Mohou totiž být…
 
 ### Brzy v prohlížeči
 
@@ -47,7 +47,7 @@ Prototypy tvořené webovými technologiemi jsou ze stejného těsta jako hotov�
 
 ### Znovupoužitelné
 
-Výstupy z jiných prototypovacích nástrojů obvykle po skončení práce zahazujeme. V případě HTML prototypů na ně mohou vývojáři i designéři navázat. Je to pořád jedno těsto.
+Výstupy z jiných prototypovacích nástrojů obvykle po skončení práce zahazujeme. V případě HTML prototypů na ně mohou vývojáři i designéři navázat. Je to pořád jedno těsto. Ale znovupoužitelnost je mince o dvou stranách, dočtete se dále.
 
 ### Snadno udržovatelné
 
@@ -134,7 +134,7 @@ Jak se bude zobrazovat ve starších a exotičtějších prohlížečích? Půjd
 
 ### 5. Udržovatelnost  
 
-Nezkomplikuje řešení celkovou udržovatelnost projektu? Shlédl se váš designér v Bootstrapu, ale vy zjišťujete, že z něj využijete jen tlačítka a formuláře? Pokud vaše argumenty nepadají na úrodnou půdu, udělejte rychlý prototyp, na které komplikaci se špatnou udržitelností složité knihovny v rámci vašeho projektu ukážete. 
+Nezkomplikuje řešení navržené designérem (nebo v horším případě klientem) celkovou udržovatelnost projektu? Pokud vaše argumenty nepadají na úrodnou půdu, udělejte rychlý prototyp, na které komplikaci se špatnou udržitelností složité knihovny v rámci vašeho projektu ukážete. 
 
 Všimněte si, že kromě čtvrtého a pátého bodu, které jsou ryze technické, spadají všechny ostatní do kompetencí dobrého webového designéra.  
 
@@ -157,9 +157,17 @@ Hlavně u nezkušených frontendistů se může protypování zbytečně prodra�
 
 Prostě si spolu musíte sednout a pracovat na prototypech dohromady. V dělených týmech to moc nejde.
 
+### Složitější zařazení do workflow větších týmů
+
+Může vám chybět přímé napojení na Axure, Photoshop nebo jiné designérské nástroje. Můžete postrádat možnost diskutování konkrétních prvků rozhraní přímo na webu.
+
 ### Těžší rozhodování u znovupoužitelnosti
 
-Moje vlastní zkušenost. U VašeČočky.cz jsem tak moc stál o znovupoužitelnost psaného kódu, že jsem u některých částí prototypovaného uživatelského rozhraní dosahoval hlemýždího tempa. Někdy je prostě kvůli rychlosti lepší prototypový kód zahodit a pro finální web napsat znovu. Ještě se k tomu vrátím.
+Někdy se dá znovupoužitelnost kódu z prototypu dosáhnout, ale pokud s živými prototypy začínáte, raději na tom netrvejte.
+
+Moje vlastní zkušenost: U responzivního redesignu VašeČočky.cz jsem tak moc stál o znovupoužitelnost kódu prototypu, že jsem v některých jeho částech  dosahoval závratně hlemýždího tempa přípravy. Někdy je prostě pro zvýšení rychlosti lepší prototypový kód zahodit a pro finální web napsat znovu. 
+
+
 
 ## Kdy HTML prototypování použít a kdy spíše ne? Nemusíte prototypovat celé weby
 
@@ -184,15 +192,7 @@ U systémů atomického designu to bez intenzivní spolupráce designéra s výv
 
 ## V jakých nástrojích dělám HTML prototypy: Bootstrap a CodePen
 
-Prototypování je dobré dělat v nástroji, který zvládáte ovládat rychle a který vám neklade překážky. Moje nástroje vám tedy vnucovat nechci. I když…
-
-<figure>
-<img src="dist/images/original/html-prototypovani-3.png" alt="">
-<figcaption markdown="1">    
-*Bootstrap a další frontend frameworky je ideálním pomocníkem pro prototypování celých webů. CodePen používám pro rychlý nástřel menších komponent*
-</figcaption> 
-</figure>
-
+Prototypování je dobré dělat v nástroji, který zvládáte ovládat rychle a který vám neklade překážky. Moje nástroje vám tedy vnucovat nechci. 
 
 ### Rychlý online editor CodePen
 

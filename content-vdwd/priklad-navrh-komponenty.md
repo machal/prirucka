@@ -12,16 +12,7 @@ Jak vypadá fotogalerie před naším designérských zásahem? Fotky jsou prost
 
 Teď prostě, jak jsem popisoval v kapitole [o skicování](skicovani.md), nabrousíme tužku, přimhouříme oči (to abychom vypadali jako skuteční profíci) a hlavně – vypneme veškeré tendence k hodnocení toho co vytváříme. Nakreslíme prostě všechny varianty zobrazení fotogalerie co nás napadnou.
 
-Já ze sebe dostal šest možností, co vy?
-
-<figure>
-<img src="dist/images/original/vdwd/priklad-skici.jpg" alt="">
-<figcaption markdown="1">    
-*Skici komponenty fotogalerie*
-</figcaption> 
-</figure> 
-
-Než je začneme hodnotit, měli bychom si rozmyslet co je vlastně ta naše fotogalerie zač.  
+Než si skici ukážeme, měli bychom si rozmyslet co je vlastně ta naše fotogalerie zač.  
 
 ### Kde se fotogalerie nachází v hierarchii stránky?
 
@@ -35,6 +26,15 @@ A ještě na jednu věc nesmíme zapomenout, na variabilitu obsahu. V našem př
 
 ### Zvážení jednotlivých skic
 
+Zpět ke skicám. Já ze sebe dostal šest možností, co vy?
+
+<figure>
+<img src="dist/images/original/vdwd/priklad-skici.jpg" alt="">
+<figcaption markdown="1">    
+*Skici komponenty fotogalerie*
+</figcaption> 
+</figure> 
+
 1. *Výpis pod sebe* je velmi jednoduchý z pohledu implementace, ale i ovládání uživateli. V kontextu další prvků stránky je ovšem obvykle nepoužitelný. Na malých i velkých displejích odsunuje další informace jako je cena nebo dostupnost velikostí. Vzpomeňte si také, jak jsem [v kapitole o principech návrhu rohraní](principy-ui.md) bojoval proti otravně dlouhým stránkám na mobilech. Ne, tahle varianta pro náš skvělý e-shop nebude.
 2. *Středně velký náhled s navigací pomocí karuselu* vypadá dobře. Šetří totiž prostor na výšku, ale zároveň zobrazuje jednu fotku dostatečně velkou. Na velkých displejích je možné tuto i další varianty doplnit o rozkliknutí do ještě větší verze pomocí lightboxu.
 3. *Středně velký náhled v karuselu* je ve svislém směru ještě úspornější. Pokud bychom karusel navrhli správně, může jít o moc prima řešení pro malé displeje. Uživatelé velkých monitorů takovou míru úspornosti neocení, tam bychom dali přednost řešení jinému. Jednou z našich zásad ale je [konzistence rozhraní](4-principy-ui.md) napříč všemi zařízeními, vzpomeňte si. 
@@ -44,9 +44,7 @@ A ještě na jednu věc nesmíme zapomenout, na variabilitu obsahu. V našem př
 
 Pro ForestKid.cz jsem vybral druhou variantu se středně velkým náhledem a navigací pomocí karuselu. 
 
-Jde ovšem pořád jen o mou designérskou hypotézu, kterou bych měl ověřit uživatelským testováním. To je ale téma, které se nám do knížky už nevejde.
-
-Protože si ale ani bez testování nejsem úplně jistý jak se vybraná varianta bude ovládat na větších mobilech (phabletech), udělám si rychlý vizuální test. Prototyp. Vzpomeňte si teď zase na kapitolu [o prototypování v HTML](html-prototypovani.md). 
+Udělám si teď test hypotézy vzešlé ze skicování. Navážeme teď zase na kapitolu [o prototypování v HTML](html-prototypovani.md). 
 
 ## Prototyp vybrané varianty
 
@@ -118,4 +116,6 @@ Snad byly na příkladu dobře vidět výhody prototypů přímo v kódu, o kter
 * Bylo to *brzy v prohlížeči*, takže jsme na nevýhody původně vybraného řešení nepřišli až při drahé technické implementaci.
 * Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom Codepen mohli testovat na uživatelích.
 * Kód je zčásti *znovupoužitelný* a při následné implementaci jej použijeme jako základ.
+
+Jde ovšem pořád jen o mou designérsko-kodérskou hypotézu, kterou bych měl ověřit uživatelským testováním. To je ale téma, které se nám do knížky už nevejde. Zájemce odkážu na už zmíněný kurz „Human-Centered Design: Design zaměřený na člověka“, který je dostupný zdarma. [seduo.cz/human-centered-design](https://www.seduo.cz/human-centered-design)
 
