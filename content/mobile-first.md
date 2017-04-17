@@ -69,7 +69,7 @@ Příkladů „Desktop First“ řešení najdeme v Česku hodně. Vezměme Alzu
 Jen si například spočítejte, kolik různých navigací má desktopová verze Alzy. Už to samo o sobě nevěstí nic dobrého pro „převod“ do mobilní podoby. V té pak některé navigace zmizí, jiné pak vypadají výrazně jinak než na desktopu. Rozhraní tedy z pohledu uživatele trpí nekonzistencí. 
 
 <figure>
-<img src="dist/images/original/vdwd/alza-cz.png" alt="">
+<img src="dist/images/original/vdwd/alza-cz.jpg" alt="">
 <figcaption markdown="1">    
 *Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je  samostatný web na jiné doméně. Rozhraní na obou typech zařízení trpí nejednotností*
 </figcaption> 
@@ -82,8 +82,8 @@ Na druhé straně je Maternia, provozovatel e-shopů jako VašeČočky.cz nebo L
 Mobile First postupem jsme postupně přepracovali celý web. Všechny komponenty rozhraní webu jsou co možná nejvíce jednotné z pohledu uživatele všech zařízení, ale i z pohledu návrhu a technologie.
 
 <figure>
-<img src="dist/images/original/vdwd/lentiamo-co-uk.png" alt="">
+<img src="dist/images/original/vdwd/vasecocky-mobil-desktop.jpg" alt="">
 <figcaption markdown="1">    
-*Lentiamo.co.uk jako příklad „Mobile First“ přístupu*
+*VašeČočky.cz jako příklad „Mobile First“ přístupu*
 </figcaption> 
 </figure>

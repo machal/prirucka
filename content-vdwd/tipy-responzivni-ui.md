@@ -11,7 +11,7 @@
 
 ## 1) Dejte pryč všechny zbytečnosti 
 
-Na obrazovce máme málo místa, proto tam nechte jen to opravdu nejdůležitější. Výběr jazyka viditelný hned v hlavičce webu Zetor.cz na obrázku lze dělat automaticky na serveru nebo přidat do uživatelského nastavení či prostě někam do patičky. Informace, které od uživatele nutně nepotřebujete, po něm nechtějte. Informace, které uživatel nutně nepotřebuje, mu nezobrazujte. 
+Na mobilní obrazovce máme k dispozici málo místa, proto tam nechte jen to opravdu nejdůležitější. O zbytečnosti ikon sociálních sítí budu ještě psát. Na Albert.cz jsou nešťastnější ještě o pozici na obsahem. Spolu s dalšími prvky tak obsah odsouvají z viditelné plochy.
 
 ## 2) Nepodlehněte ikonománii
 
