@@ -30,7 +30,7 @@ Návrh rozhraní v desktopovém světě počítal s tím, že máme k dispozici 
 Pro mnohé designéry, včetně mě, je proto lepší si rozhraní navrhnout nejprve pro ty nejmenší displeje. 
 
 <figure>
-<img src="dist/images/original/vdwd/vase-cocky-dve-skici.png" alt="">
+<img src="dist/images/original/vdwd/vase-cocky-dve-skici.jpg" alt="">
 <figcaption markdown="1">    
 *Rychlé ruční skici pro VašeČočky.cz*
 </figcaption> 
