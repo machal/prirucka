@@ -12,7 +12,7 @@ Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaný
 
 Na většinu ikon se nedá spolehnout. Doplňte je popisy dat. Více v textu „UX Myth: Icons enhance usability“ na UXMyths.com.[vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
 
-![K bodu 3](dist/images/original/vdwd/triky-ui-8.png)
+![K bodu 3](dist/images/original/vdwd/triky-ui-8.jpg)
 
 ## 3) Šetřete rozbalovacími nabídkami 
 
@@ -30,7 +30,7 @@ Více na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http:
 
 A ještě, prosím, telefonní čísla na stránce vždy na mobilních zařízeních vypisujte jako odkazy. [http://vrdl.cz/blog/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
 
-![](dist/images/original/vdwd/triky-ui-10.png)
+![](dist/images/original/vdwd/triky-ui-10.jpg)
 
 ## 5) Používejte krokovače a další alternativní formulářové prvky
 
@@ -40,7 +40,7 @@ Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pom
 
 Jsou velmi dobrým pomocníkem ve formulářových polích, kde je velké množství možných vstupů: hlavně ve vyhledávání, které je na mobilech kvůli časté nepřítomnosti plnohodnotné navigace velmi důležité. V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití je omezené, ale určitě se na něj podívejte. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
 
-![](dist/images/original/vdwd/triky-ui-11.png)
+![](dist/images/original/vdwd/triky-ui-11.jpg)
 
 ## 7) Nenuťte mobilního uživatele psát
 
@@ -51,7 +51,7 @@ Tohle bych na webu SmileBox.cz ještě dotáhl. Mám na mobilu napsat text „kd
 
 Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to ale, že stránka by měla být dlouhá jako ponožky Pipi dlouhé punčochy. Hezký objev od UX konzultanta Jana Kvasničky vidíte na obrázku:
 
-![](dist/images/original/vdwd/triky-ui-12.png)
+![](dist/images/original/vdwd/triky-ui-12.jpg)
 
 *Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Je to modální okno, které se objeví po přidání zboží do košíku. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
 

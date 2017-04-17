@@ -3,7 +3,7 @@
 Jako příklad si vezmeme tabulku fotbalové ligy.
 
 <figure>
-<img src="dist/images/original/tabulky_6.png" alt="">
+<img src="dist/images/original/tabulky_6.jpg" alt="">
 <figcaption markdown="1">    
 *Tabulka pořadí fotbalové ligy v prosinci 2016. Zdroj obsahu: sport.cz*
 </figcaption> 

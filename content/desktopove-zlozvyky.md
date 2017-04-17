@@ -13,7 +13,7 @@ Karusel je pro designéra i uživatele docela výzva. Z mnoha studií zpochybňu
 Navrhnout dobrý karusel je vážně složité. Proto po něm osobně sáhnu až když jsem všechny ostatní možnosti selhávají.
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-13.png" alt="">
+<img src="dist/images/original/vdwd/triky-ui-13.jpg" alt="">
 <figcaption markdown="1">    
 *Stará a nová verze karuselu na RSTS.cz. Starší ještě používala na mobilech nepoužitelnou tečkovou navigaci. Nová je vpravo a je fajn. Díky šipkám se lépe ovládá a grafika je uzpůsobená velikosti displeje*
 </figcaption> 
@@ -39,7 +39,7 @@ Jak už jsem psal, dost ve svých rozhraních sázím na to, že uživatelé pos
 Záložková navigace uvnitř stránky je mobilech ke zvážení, protože může otevírat obsah, jehož studium vám ony záložky odsune do nahoře skrytých částí stránky. 
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-14.png" alt="">
+<img src="dist/images/original/vdwd/triky-ui-14.jpg" alt="">
 <figcaption markdown="1">    
 *CZC.cz má hezky provedený akordeón. Podobný prvek na Mall.cz se ale chová jako  záložky: pokud chci po přečtení obsahu pro „Popis“ otevřít „Parametry“, musím posunovat stránku zpět nahoru*
 </figcaption> 

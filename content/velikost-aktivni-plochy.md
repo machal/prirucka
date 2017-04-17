@@ -17,7 +17,7 @@ Zjistili, že potřebná minimální velikost se různí podle vzdálenosti od k
 Přiznávám, že ve svých myšlenkách na Obra z Altonu si pravidlo zjednodušuji. Chci aktivní plochu vždy **alespoň jeden čtvereční centimetr**.
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-6.png" alt="">
+<img src="dist/images/original/vdwd/triky-ui-6.jpg" alt="">
 <figcaption markdown="1">    
 *E-shop FotoŠkoda.cz má jeden z těch povedenějších košíků na mobilech. Všechno velké, navigace jednoznačná. Jen prvky v té šedivé ploše s „Pojištěním“ bych ani na pětiapůlpalcovém iPhone palcem netrefil. Na výšku alespoň centimetr, prosím*
 </figcaption> 
