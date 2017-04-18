@@ -23,7 +23,7 @@ Dejme tomu, že máme jednoduchou vodorovnou navigaci, jejíž obsah se nemění
 @media only screen and (min-width: 27.5em) { … }
 ```
 
-Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na Codepenu: [cdpn.io/e/bBPdgQ](http://codepen.io/machal/pen/bBPdgQ)
+Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na CodePenu: [cdpn.io/e/bBPdgQ](http://codepen.io/machal/pen/bBPdgQ)
 
 Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy obsah prostě při tvorbě layoutu neznáme: například když pracujeme na frameworku nebo připravujeme šablonu pro obsah, který má v rukách až koncový uživatel našeho redakčního systému. Jako příklad můžu opět jmenovat Bootstrap, který má body zlomu nastavené pevně. Naštěstí jdou měnit a vždy můžete přidat nějaké vlastní. [getbootstrap.com/css/](http://getbootstrap.com/css/#grid-media-queries)
 

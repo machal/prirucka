@@ -8,7 +8,7 @@ Dodržím postup, kterým jsem napsal první e-book, „Vzhůru do CSS3“. Tak�
 
 V případě „Vzhůru do (responzivního) webdesignu“ to ovšem dopadlo jinak. Psát o technologiích a zamlčet vazbu na design je totiž v tomto případě nemožné.
 
-Když bych například chtěl povědět pár slov o technologii Media Queries, musel bych dodat designérské přemýšlení nad volbou breakpointů a nad postupem návrhu nejprve pro mobily, Mobile First. Pokud bych to neudělal, vývojář bude psát kód způsobem, který mu zbytečně zkomplikuje život. Designérovi zase nedojde, proč vývojář zvedá obočí nad některými jeho nápady. HTML, CSS a design jsou zkrátka spojené nádoby. 
+Kdybych například chtěl povědět pár slov o technologii Media Queries, musel bych dodat designérské přemýšlení nad volbou breakpointů a nad postupem návrhu nejprve pro mobily, Mobile First. Pokud bych to neudělal, vývojář bude psát kód způsobem, který mu zbytečně zkomplikuje život. Designérovi zase nedojde, proč vývojář zvedá obočí nad některými jeho nápady. HTML, CSS a design jsou zkrátka spojené nádoby. 
 
 V tu chvíli jsem měl opět jasno. Bude to o návrhu a implementaci responzivních uživatelských rozhraní. Má to ale ještě jeden háček. Brzy se totiž dozvíte, že přívlastek *responzivní* už dnes považuji za přežitý. Responzivní je nebo by měl být prakticky každý web, tak proč to přídavné jméno vůbec používat?
 

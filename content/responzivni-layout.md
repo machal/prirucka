@@ -42,7 +42,7 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 </figure>
 
 
-Živá ukázka je pro vás připravená na Codepenu. [cdpn.io/e/wobjoq](http://codepen.io/machal/pen/wobjoq)
+Živá ukázka je pro vás připravená na CodePenu. [cdpn.io/e/wobjoq](http://codepen.io/machal/pen/wobjoq)
 
 Flexbox je plný užitečných vlastností, ale díky tomu relativně složitý. Pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů nebo svůj ebook „Vzhůru do CSS3“, kde jej podrobně vysvětluji i s příklady. [vrdl.cz/prirucka/css3-flexbox](http://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook).
 

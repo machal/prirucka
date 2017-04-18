@@ -108,7 +108,7 @@ První vyhovující varianta v `sizes` vyhrává, takže na pořadí záleží. 
 
 ### Proč si informaci o layoutu stránky prohlížeč nevezme z CSS?
 
-Dobrá otázka. Rozhodnutí, který z obrázků stáhnout a zobrazit, prohlížeče dělají ještě předtím než znají CSS. Ony v tu chvíli jen rychle parsují HTML a o stylech zatím „nevědí“. Když by na styly čekaly, zpozdí se stažení a zobrazení obrázků. Je to takhle výhodnější pro uživatele. Zkracuje to načtení obrázků a vlastně celé stránky.
+Dobrá otázka. Rozhodnutí, který z obrázků stáhnout a zobrazit, prohlížeče dělají ještě předtím než znají CSS. Ony v tu chvíli jen rychle parsují HTML a o stylech zatím „nevědí“. Kdyby na styly čekaly, zpozdí se stažení a zobrazení obrázků. Je to takhle výhodnější pro uživatele. Zkracuje to načtení obrázků a vlastně celé stránky.
 
 ### Velikosti obrázků podle layoutu
 

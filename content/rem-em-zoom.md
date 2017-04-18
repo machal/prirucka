@@ -1,6 +1,6 @@
 # Autorský zoom dokumentu a komponent
 
-Jednotky `em` a `rem` jsou pružné a tak je možné s jejich pomocí zvětšovat nebo zmenšovat celý web nebo jeho jednotlivé komponenty. 
+Jednotky `em` a `rem` jsou pružné, a tak je možné s jejich pomocí zvětšovat či zmenšovat celý web nebo jeho jednotlivé komponenty.
 
 
 ## Zvětšování nebo zmenšování celé stránky
@@ -59,7 +59,7 @@ Vezměme sice zjednodušenou, ale o to lépe vše demonstrující komponentu:
 
 Na jejím místě si můžete představit jen o něco složitější tlačítka, ikony, propracovanější navigaci, fotogalerii a tak dále. 
 
-Teď si stačí nadefinovat obecné pomocné třídy pro zvětšování a změnšování:
+Teď si stačí nadefinovat obecné pomocné třídy pro zvětšování a zmenšování:
 
 ```css
 .size-sm { font-size: 75% }
@@ -76,8 +76,8 @@ O čtvrtinu větší verzi komponenty pak zařídíme takto snadno:
 
 Pokud chcete takto vytvářet velikostní varianty komponent, musíte dodržet jediné: všechny pružné rozměry sázet v `em`. Použití `rem` by tady nemělo žádný účinek. Neumí totiž změnit velikost jen pro konkrétní použití komponenty.
 
-`em` proto používám v komponentách, které mohou měnit velikost podle výskytu. `rem` ve všech ostatních případech.
+`em` proto používám v komponentách, které mohou měnit velikost podle výskytu. A `rem` ve všech ostatních případech.
 
-Různé komponenty budou vyžadovat různý přístup: někde budete ještě muset do velikostních tříd přidat pravidlo pro menší výšku řádku, někde to bude stačit tak jako v mé ukázce.
+Různé komponenty budou vyžadovat různý přístup: Někde budete ještě muset do velikostních tříd přidat pravidlo pro menší výšku řádku, někde to bude stačit tak jako v mé ukázce.
 
 Dává vám to smysl? Kód k tomuto textu je také na CodePenu. [cdpn.io/e/RKQmVG](http://codepen.io/machal/pen/RKQmVG?editors=1100#0)

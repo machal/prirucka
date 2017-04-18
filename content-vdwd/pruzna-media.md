@@ -77,6 +77,6 @@ Poměr stran je zde tedy 100 ku 60, takže 5:3. Pro poměr 16:9 bychom do `paddi
 
 Tuto třídu pak aplikujeme přímo na `<iframe>` nebo jiný vkládaný element. Ten už má za úkol se už jen sobecky roztahovat na celou výšku i šířku rodiče.
 
-Máte svrbění si to hned zkoušet?  Neváhejte, Codepen se na vás těší. [cdpn.io/e/BdniC](http://codepen.io/machal/pen/BdniC)
+Máte svrbění si to hned zkoušet?  Neváhejte, CodePen se na vás těší. [cdpn.io/e/BdniC](http://codepen.io/machal/pen/BdniC)
 
 Tímto jsme ošetřili *pružnost* obrázků a vkládaných médií v rámci layoutu. *Responzivnost* se ale definuje šířeji než jen prostou flexibilní reakcí na změnu šířky layoutu. Jdeme na ni. Zaměříme se nejprve na obrázky, bezpochyby nejčastější mediální obsah. 

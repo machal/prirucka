@@ -14,10 +14,10 @@ Mé testování je čtyřfázové:
 Ještě než začnu něco pořádně kódovat, procházím touto nultou, prototypovací fází. 
 
 <div class="ebook-only" markdown="1">
-  O prototypování jsem už psal [ve zvláštní kapitole](html-prototypovani.md), takže jen velmi stručně o tom, jak používám službu Codepen.
+  O prototypování jsem už psal [ve zvláštní kapitole](html-prototypovani.md), takže jen velmi stručně o tom, jak používám službu CodePen.
 </div>
 
-Codepen je pro mě pískoviště, kde experimentuji s problémy, které mohou být technicky složitější nebo náročné na odhad časové náročnosti. V Codepenu je to za chvilku hotové a výsledek můžu rychle otestovat ve všech možných prohlížečích. 
+CodePen je pro mě pískoviště, kde experimentuji s problémy, které mohou být technicky složitější nebo náročné na odhad časové náročnosti. V CodePenu je to za chvilku hotové a výsledek můžu rychle otestovat ve všech možných prohlížečích. 
 
 ## Chrome DevTools: vývojářský desktopový prohlížeč
 
@@ -52,7 +52,7 @@ BrowserStack naproti tomu:
 Video: <a href="https://www.youtube.com/watch?v=VN8CFG-YajE">BrowserStack</a> ~ Jak testovat web ve všech prohlížečích a nemuset řešit virtuály a emulátory.
 </p>
 
-Když byste chtěli levnější alternativu, mrkněte se na [CrossBrowserTesting.com](https://crossbrowsertesting.com). Jsou tam jen emulátory a je to pomalejší. Stojí to  přibližně sedm stovek, ale i s generováním screenshotů a spouštěním Selenium testů, které jsou u BrowserStacku za další peníze.
+Kdybyste chtěli levnější alternativu, mrkněte se na [CrossBrowserTesting.com](https://crossbrowsertesting.com). Jsou tam jen emulátory a je to pomalejší. Stojí to  přibližně sedm stovek, ale i s generováním screenshotů a spouštěním Selenium testů, které jsou u BrowserStacku za další peníze.
 
 Následující část čtěte jen pokud chcete moc šetřit a máte vysokou odolnost proti bolesti. V opačném případě přejděte k testování na reálných zařízeních.
 
@@ -91,7 +91,7 @@ Tablety:
 * Tablet Lenovo TAB 2. Klasický desetipalec s Androidem 5. 
 * Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480x800 pixelů. A také displejem prasklým od našeho mladšího chlapečka. To je prosím simulace těžkých podmínek pro prohlížení webu.
 
-A nezapomeňte na *guerilla* testování — takové prodejny Alzy nebo Datartu bývají plné zařízení, na kterých si můžete leccos vyzkoušet. Z pohledu designéra je zajímavé každé nové zařízení, takže když byste se kolem mě s nějakým takovým vyskytli, pravděpodobně vám ho na chvíli ukradnu a budu na něm své weby testovat.
+A nezapomeňte na *guerilla* testování — takové prodejny Alzy nebo Datartu bývají plné zařízení, na kterých si můžete leccos vyzkoušet. Z pohledu designéra je zajímavé každé nové zařízení, takže kdybyste se kolem mě s nějakým takovým vyskytli, pravděpodobně vám ho na chvíli ukradnu a budu na něm své weby testovat.
 
 ### Browsersync a multiplatformní vývojářské nástroje
 
@@ -118,7 +118,7 @@ Weinre jsou ale jen *něco* jako DevTools. Plnohodnotým vývojářským nástro
 
 To bychom měli. Bylo toho hodě, takže ještě jednou zopakuji to podstatné.
 
-1. Věci, které se mohou pokazit, raději předem prototypuji. Nejčastěji pomocí Codepen.io. 
+1. Věci, které se mohou pokazit, raději předem prototypuji. Nejčastěji pomocí CodePen.io. 
 2. Běžné ladění responzivních webů dělám v Chrome DevTools a jeho Device Mode.
 3. Pro kontrolu ve zobrazovacích jádrech jiných prohlížečů používám BrowserStack.
 4. Nakonec používám reálná zažízení. Případné problémy řeším pomocí propojení s desktopovým prohlížečem nebo nástroji Weinre a Browsersync.

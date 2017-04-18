@@ -47,7 +47,7 @@ Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně m
 </figcaption> 
 </figure>
 
-Vyzkoušejte si naživo v Codepenu. [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
+Vyzkoušejte si naživo v CodePenu. [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
 
 S propracovanějším řešením využívající flexbox a další moderní CSS vlastnosti přišel David Bushell v textu „CSS only Responsive Tables“. [vrdl.in/xlpbn](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
 
@@ -78,7 +78,7 @@ V nejjednodušší možné CSS implementaci tabulce na menších displejích zru
 }
 ```
 
-Na Codepenu je možné zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0)
+Na CodePenu je možné zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0)
 
 I tak ale čisté CSS řešení nebude dokonalé. Pro tento typ práce s tabulkami budete potřebovat kousek Javascriptu nebo zmíněný plugin.
 
@@ -91,7 +91,7 @@ Stohování se hodí i pro tabulky se složitějším obsahem v buňkách: odsta
 <figure>
 <img src="dist/images/original/tabulky_4.jpg" alt="Změna směru tabulky">
 <figcaption markdown="1">    
-*Změna směru tabulky. Vyzkoušejte si to na Codepenu. [cdpn.io/rjmyx](http://s.codepen.io/JasonAGross/full/rjmyx)*
+*Změna směru tabulky. Vyzkoušejte si to na CodePenu. [cdpn.io/rjmyx](http://s.codepen.io/JasonAGross/full/rjmyx)*
 </figcaption> 
 </figure>
 

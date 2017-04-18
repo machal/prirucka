@@ -1,6 +1,6 @@
 # Příklad: návrh fotogalerie krok za krokem
 
-Nedivil bych se, když byste v této části knihy měli hlavu jako meloun. Jen díky tomu ale máme dost vědomostí, abychom navrhli první komponentu uživatelského rozhraní. A tak – nevěšme meloun a pojďme si shrnout jak budeme postupovat.
+Nedivil bych se, kdybyste v této části knihy měli hlavu jako meloun. Jen díky tomu ale máme dost vědomostí, abychom navrhli první komponentu uživatelského rozhraní. A tak – nevěšme meloun a pojďme si shrnout jak budeme postupovat.
 
 1. Do *skic* si nakreslíme všechny možnosti zobrazení komponenty, které nás napadnou.
 2. Varianty vyhodnotíme a vybereme vítěznou.
@@ -48,9 +48,9 @@ Udělám si teď test hypotézy vzešlé ze skicování. Navážeme teď zase na
 
 ## Prototyp vybrané varianty
 
-Rychlé demo si vytvoříme na už zmíněném online editoru *Codepen* a použijeme přitom skvělý generátor zástupných obrázků *Satyr.io*. Výsledek si prohlédneme v *Re:view*, neméně skvělém rozšíření Google Chrome pro komparativní testovaní návrhů v mobilních rozlišeních. [re-view.emmet.io/](http://re-view.emmet.io/) 
+Rychlé demo si vytvoříme na už zmíněném online editoru *CodePen* a použijeme přitom skvělý generátor zástupných obrázků *Satyr.io*. Výsledek si prohlédneme v *Re:view*, neméně skvělém rozšíření Google Chrome pro komparativní testovaní návrhů v mobilních rozlišeních. [re-view.emmet.io/](http://re-view.emmet.io/) 
 
-Aktuální stav prototypu můžete vidět na obrázku a naživo na nebo Codepenu. [cdpn.io/e/JEKxEK](http://codepen.io/machal/pen/JEKxEK).
+Aktuální stav prototypu můžete vidět na obrázku a naživo na nebo CodePenu. [cdpn.io/e/JEKxEK](http://codepen.io/machal/pen/JEKxEK).
 
 <figure>
 <img src="dist/images/original/vdwd/priklad-komponenta-review-1.jpg" alt="">
@@ -105,7 +105,7 @@ Využíváme `orientation: landscape`, jednu z [Media Queries](css3-media-querie
 </figcaption> 
 </figure> 
 
-Codepen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/dNXrMe). 
+CodePen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/dNXrMe). 
 
 Vy zkušenější jste jistě mírně pozvedli obočí nad schováváním jedné části s obrázky pomocí `display: none`. Tohle v produkčním kódu být nesmí, protože by nám mobilní prohlížece neviditelné obrázky tak či tak stáhly a zpomalily  tím nehezky načtení stránky.
 
@@ -114,7 +114,7 @@ Je dobré ale na tomto místě zopakovat, děláme *prototypování designu*. Ur
 Snad byly na příkladu dobře vidět výhody prototypů přímo v kódu, o kterých jsem už psal.
 
 * Bylo to *brzy v prohlížeči*, takže jsme na nevýhody původně vybraného řešení nepřišli až při drahé technické implementaci.
-* Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom Codepen mohli testovat na uživatelích.
+* Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom CodePen mohli testovat na uživatelích.
 * Kód je zčásti *znovupoužitelný* a při následné implementaci jej použijeme jako základ.
 
 Jde ovšem pořád jen o mou designérsko-kodérskou hypotézu, kterou bych měl ověřit uživatelským testováním. To je ale téma, které se nám do knížky už nevejde. Zájemce odkážu na už zmíněný kurz „Human-Centered Design: Design zaměřený na člověka“, který je dostupný zdarma. [seduo.cz/human-centered-design](https://www.seduo.cz/human-centered-design)

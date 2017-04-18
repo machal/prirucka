@@ -19,10 +19,10 @@ Ani `rem` není žádný Superman mezi CSS jednotkami. Prostě se nehodí na vš
 | `vw`  | procento ze šířky okna prohlížeče |
 | `vh`  | procento z výšky okna prohlížeče |
 
-Existují samozřejmě ještě další jednotky: namátkou `pt`, `ex` nebo `vmax`. Buď je ale využívám málo nebo vůbec, takže pro zjednodušení je úplně vynechám.  Dobrý přehled všech je v češtině na stránkách Jak psát web. [vrdl.in/btoxk](https://www.jakpsatweb.cz/css/css-jednotky.html)
+Existují samozřejmě ještě další jednotky: namátkou `pt`, `ex` nebo `vmax`. Buď je ale využívám málo, nebo vůbec, takže pro zjednodušení je úplně vynechám.  Dobrý přehled všech je v češtině na stránkách Jak psát web. [vrdl.in/btoxk](https://www.jakpsatweb.cz/css/css-jednotky.html)
 
 
-Teď prakticky. Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější scénáře nastavování rozměrů v CSS. Projdeme si to v textu, ale tady je ještě online: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG).
+Teď prakticky. Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější scénáře nastavování rozměrů v CSS. Projdeme si to v textu, ale tady je ještě online: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG)
 
 
 ## Základní velikost písma v dokumentu: `%`
@@ -37,13 +37,13 @@ html {
 }
 ```
 
-Nastavíte tak o čtvrtinu větší písmo než je výchozí. U skoro všech prohlížečů tedy `20px`.
+Nastavíte tak o čtvrtinu větší písmo, než je výchozí. Skoro u všech prohlížečů tedy `20px`.
 
 ### Proč tady nepoužít `px`?
 
-Pokud bychom to udělali, našim milým uživatelům znemožníme zvětšovat si výchozí písmo v prohlížečích. 
+Pokud to uděláme, našim milým uživatelům znemožníme zvětšovat si výchozí písmo v prohlížečích.
 
-Pozor, nebavíme se o „zoomování“ ale zvětšení velikosti písma pro všechny weby. Taková věc existuje v prohlížečích nebo v operačních systémech. A ano, lidé to používají. Asi taky jednou budeme. Dělají to totiž lidé s horším zrakem nebo třeba jen méně kvalitními displeji. 
+Pozor, nebavíme se o „zoomování“, ale zvětšení velikosti písma pro všechny weby. Taková věc existuje v prohlížečích nebo v operačních systémech. A ano, lidé to používají. Asi taky jednou budeme. Dělají to totiž lidé s horším zrakem nebo třeba jen méně kvalitními displeji.
 
 Například v Chrome je to volba „Velikost písma“ v rozšířeném Nastavení. [vrdl.in/1gcz0](http://www.computerhope.com/issues/ch000779.htm)
 
@@ -64,16 +64,16 @@ Odstavcům tak nastavím spodní vnější okraj na výšku písma. Nadpisy prvn
 
 Používat `rem` je výhodné i z pohledu vývojáře: 
 
-- V `1rem` máte uloženou základní velikost písma a nemusíte si pamatovat, jestli je to  12, 14, 16 nebo kolik vlastně pixelů. 
+- V `1rem` máte uloženou základní velikost písma a nemusíte si pamatovat, jestli je to  12, 14, 16, nebo kolik vlastně pixelů. 
 - Šířka layoutu nastavená v `rem` bude dodržovat [optimální délku textu](typografie.md), i když si uživatel písmo zvětší.
 - `rem` vám pomohou při [autorském „zoomování“ dokumentu](rem-em-zoom.md) na určitých velikostech okna prohlížeče.
 
-Nevýhoda `rem` leží ve faktu, že jej nepodporuje Explorer 8 a starší. To ale jde vyřešit automatickým přidáním `px` řešení, například pomocí nástroje PixRem. [vrdl.in/ivuk8](https://www.npmjs.com/package/pixrem)
+Nevýhoda `rem` tkví ve faktu, že jej nepodporuje Explorer 8 a starší. To ale jde vyřešit automatickým přidáním `px` řešení, například pomocí nástroje PixRem. [vrdl.in/ivuk8](https://www.npmjs.com/package/pixrem)
 
 
 ### Proč tady nepoužít `px`?
 
-Možná jste zvyklí při převodu designu do kódu pracovat v `px`. Velikosti písma možná máte uložené v proměnných CSS preprocesorů a zvětšování a zmenšování v layoutu nepoužíváte. Když už to chcete dělat, nenastavujte v `px` prosím alespoň tu velikosti písma, abyste nezablokovali možnost uživatelského zvětšení. 
+Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože grafický editor používá podobné jednotky. Velikosti písma možná máte uložené v proměnných CSS preprocesorů a zvětšování a zmenšování v layoutu nepoužíváte. Když už to chcete dělat, nenastavujte v `px` prosím alespoň ty velikosti písma.
 
 `rem` je pro mě tedy výchozí jednotka. Občas se mi ale hodí `em`.
 
@@ -97,7 +97,7 @@ p {
 }
 ```
 
-Vidíte, že `1em` znamená v různých místech dokumentu různé věci. Někde to může být fajn. Ale vývojářům se s `em` samozřejme pracuje trošku hůř. Ne každý se chce stát pochodující kalkuačkou pro převod mezi `em` a pixely.
+Vidíte, že `1em` znamená v různých místech dokumentu různé věci. Někde to může být fajn. Ale vývojářům se s `em` samozřejmě pracuje trošku hůř. Ne každý se chce stát pochodující kalkulačkou pro převod mezi `em` a pixely.
 
 ### `em` není čtverčík
 
@@ -125,7 +125,7 @@ h1 {
 }
 ```
 
-Výška řádku je jeden a půl násobek velikosti písma nadpisu první úrovně. Proč je to lepší než nastavení „natvrdo“ v `rem`, `em` nebo `px`? Pokud se autorsky nebo uživatelsky v některém kontextu změní velikost písma, nemusíte pak už přenastavovat výšku řádku.
+Výška řádku je jedenapůlnásobek velikosti písma nadpisu první úrovně. Proč je to lepší než nastavení „natvrdo“ v `rem`, `em` nebo `px`? Pokud se autorsky nebo uživatelsky v některém kontextu změní velikost písma, nemusíte pak už přenastavovat výšku řádku.
 
 
 ## Layout: `%` atd.
@@ -151,7 +151,7 @@ Doporučuji jej používat jen tam, kde potřebujete precizní vyjádření v pi
 ```
 
 <div class="ebook-only" markdown="1">
-Jen pro jistotu připomínám, že už nejde o hardwarový pixel. Psal jsem o tom části první kapitoly o [CSS pixelu](zmeny-css-pixel.md).
+Jen pro jistotu připomínám, že už nejde o hardwarový pixel. Psal jsem o tom v první kapitole v části o [CSS pixelu](zmeny-css-pixel.md).
 </div>
 
 
@@ -169,5 +169,5 @@ Například tento nadpis z příkladu bude mít velikost písma `2rem` a k tomu 
 
 Triky s responzivní typografií se více zabývám v přespříští podkapitole. 
 
-Na závěr ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG).
+Na závěr ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG)
 

@@ -25,7 +25,7 @@ Dobře se to styluje. Ale hlavně: je to jediný rozumný způsob, jak do strán
 
 ## `<figure>` je vždy soběstačná, ale ne nezávislá jednotka {#sobestacna}
 
-Soběstačnou jednotku si můžete představit jako jednu větu v textu. Když byste do obrázku dali jen část sdělení věty, `<figure>` použít nemůžete:
+Soběstačnou jednotku si můžete představit jako jednu větu v textu. Kdybyste do obrázku dali jen část sdělení věty, `<figure>` použít nemůžete:
 
 ```html
 <p>
@@ -164,7 +164,7 @@ Vazba na odečítače obrazovky funguje ve všech aktuálních prohlížečích 
 
 A co odečítače obrazovky? Testoval jsem to v Chrome přes VoiceOver na Macu a NVDA na Windows. Obrázek i popisek z ukázky v pohodě přečtou. Na druhou stranu nijak speciálně nehlásí, že jde o obrázek s popiskem nebo přímo značku `<figure>`. Ale to se samozřejmě může v různých čtečkách různit a do budoucna změnit.
 
-Ukázka používaná v článku je na Codepenu. [cdpn.io/e/oZOOer](http://codepen.io/machal/pen/oZOOer)
+Ukázka používaná v článku je na CodePenu. [cdpn.io/e/oZOOer](http://codepen.io/machal/pen/oZOOer)
 
 
 

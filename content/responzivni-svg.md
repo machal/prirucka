@@ -57,7 +57,7 @@ Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachová
 }
 ```
 
-Podívejte na výsledný Codepen. [cdpn.io/e/oYOZwz](http://codepen.io/machal/pen/oYOZwz)
+Podívejte na výsledný CodePen. [cdpn.io/e/oYOZwz](http://codepen.io/machal/pen/oYOZwz)
 
 
 ## Pružné SVG vkládáné externě pomocí `<img>`
@@ -77,7 +77,7 @@ Pokud nebudeme nastavovat výšku obrázku, v CSS nemusíme pro moderní prohlí
 }
 ```
 
-Codepen s příkladem se na vás těší i tady. [cdpn.io/e/VmNbPx](http://codepen.io/machal/pen/VmNbPx)
+CodePen s příkladem se na vás těší i tady. [cdpn.io/e/VmNbPx](http://codepen.io/machal/pen/VmNbPx)
 
 
 ## Pružné SVG externě v CSS

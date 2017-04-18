@@ -2,11 +2,11 @@
 
 Měnit velikost stránky i jednotlivých komponent už umíme díky předchozí podkapitole a díky jednotkám `em` a `rem`. Při změně velikosti okna se to děje *skokově*.
 
-Co když bychom ale stránku a komponenty chtěli zvětšovat *plynule*? Prostě elasticky se změnou šířky nebo výšky okna.
+Co kdybychom ale stránku ale stránku a komponenty chtěli zvětšovat *plynule*? Prostě elasticky se změnou šířky nebo výšky okna.
 
 K tomu si přizveme dříve už také zmíněné jednotky viewportu, hlavně `vw` (setina šířky okna) a `vh` (setina výšky okna).
 
-Elastická (nebo také plně responzivní typografie) je v době psaní textu spíše v počátcích bádání. Nevyřeší zdaleka všechny situace, pro které byste je možná chtěli nadšeně použít. Ale je *cool* i tak. A já ji tady uvedu, i kdyby mě natahovali na elastický skřipec. 
+Elastická (nebo také plně responzivní) typografie je v době psaní textu spíše v počátcích bádání. Nevyřeší zdaleka všechny situace, pro které byste je možná chtěli nadšeně použít. Ale je *cool* i tak. A já ji tady uvedu, i kdyby mě natahovali na elastický skřipec. 
 
 
 ## Elastická typografie pomocí `vw`
@@ -19,7 +19,7 @@ Představte si, že nadpis článku chcete na stránce zvětšovat a zmenšovat 
 }
 ```
 
-Velikost písma bude na sedmi procentech šířky viewportu. Zmenšíme okno, vše se zmenší. Zvětšíme ho, vše se zvětší. Jupí! Zkuste si to na Codepenu. [cdpn.io/e/mAAOLa](http://codepen.io/machal/pen/mAAOLa)
+Velikost písma bude na sedmi procentech šířky viewportu. Zmenšíme okno, a vše se zmenší. Zvětšíme ho, a vše se zvětší. Jupí! Zkuste si to na CodePenu. [cdpn.io/e/mAAOLa](http://codepen.io/machal/pen/mAAOLa)
 
 Kód je jednoduchý, funguje ve všech moderních prohlížečích a náhradní řešení pro ty starší bude jednoduché: 
 
