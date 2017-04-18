@@ -22,7 +22,7 @@ Frontendu webu se přechod na HTTP/2 dotkne kromě jiného tak, že přestává 
 ![HTTP/2 versus HTTP/1.1](dist/images/original/http-1-vs-2.jpg)
 
 <small markdown="1">
-Více informací: [Michal Špaček o HTTP/2](https://www.michalspacek.cz/prednasky/http2-develcz), [Jak funguje HTTP/2](https://www.root.cz/clanky/jak-funguje-novy-protokol-http-2/), [Ebook o HTTP/2](https://daniel.haxx.se/http2/).  
+Více informací: [Michal Špaček o HTTP/2](https://www.michalspacek.cz/prednasky/http2-develcz), [Jak funguje HTTP/2](https://www.root.cz/clanky/jak-funguje-novy-protokol-http-2/), [E-book o HTTP/2](https://daniel.haxx.se/http2/).  
 Nástroje: [Firefox plugin](https://addons.mozilla.org/cs/firefox/addon/spdy-indicator/) pro detekci, zda web běží na HTTP/2. [Totéž pro Chrome](https://chrome.google.com/webstore/detail/http2-and-spdy-indicator/mpbpobfflnpcgagjijhmgnchggcjblin). [Jak poznat protokol](https://ma.ttias.be/view-http-spdy-http2-protocol-google-chrome/) v Chrome DevTools.
 </small>
 

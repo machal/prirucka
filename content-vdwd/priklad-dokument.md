@@ -5,7 +5,7 @@ Pojďme do fiktivního e-shopu přidat vlastní typografii, barvy a grafické pr
 - Otevření v prohlížeči: [vrdl.in/vdwddok](http://vrdl.in/vdwddok)
 - Stažení v ZIPu: [vrdl.in/vdwddokzip](http://vrdl.in/vdwddokzip)
 
-Co jsme na stránce udělali, nejlépe uvidíme pohledem do `style.css`. 
+Co jsme na stránce udělali, nejlépe ověříme pohledem do `style.css`. 
 
 ## Vlastní písma 
 
@@ -65,7 +65,7 @@ body {
 }
 ```
 
-Proměnné asi znáte z CSS preprocesorů. Ty jsou pro větší projekty dost užitečné. Píšu o nich v ebooku „Vzhůru do CSS3“ nebo ve starším textu na Vzhůru dolů. [vrdl.cz/blog/12-css-preprocesory-1](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
+Proměnné asi znáte z CSS preprocesorů. Ty jsou pro větší projekty dost užitečné. Píšu o nich v e-booku „Vzhůru do CSS3“ nebo ve starším textu na Vzhůru dolů. [vrdl.cz/blog/12-css-preprocesory-1](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
 
 Jak už víte, v knize se chci obejít bez složitějších technikálií a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově přímou součástí kaskádových stylů. A jde s nimi tropit ještě větší legrace než s těmi z preprocesorů. Třeba číst a měnit je z javascriptového nebo HTML kódu. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
 

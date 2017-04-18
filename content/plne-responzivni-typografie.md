@@ -48,9 +48,9 @@ Velikost písma v ukázce nikdy neklesne pod `2rem`. Nadpis se bude při změně
 
 ## Elastická typografie podle výšky komponenty
 
-Moje řešení v zásadě nahrazuje jednotku, která v CSS neexistuje, ale pevně doufám, že jednou existovat bude. Setinu výšky rodičovského elementu.
+Moje řešení v zásadě nahrazuje jednotku, která v CSS neexistuje, ale pevně doufám, že jednou existovat bude: setinu výšky rodičovského elementu.
 
-Jakmile se totiž odkážeme na rozměry rodiče, při výpočtu velikosti elementu se vezme v potaz layout konkrétní komponenty a text se nám na žádném viewportu nezalomí jinak než bychom chtěli. 
+Jakmile se totiž odkážeme na rozměry rodiče, při výpočtu velikosti elementu se vezme v potaz layout konkrétní komponenty a text se nám na žádném viewportu nezalomí jinak, než bychom chtěli. 
 
 Pokud si onu výšku rodiče představíte jako fiktivní hodnotu `heading-height-percent`, kód by vypadal takto: 
 
@@ -77,10 +77,10 @@ Popíšu to ještě v textu:
 2. Šířku `.heading` pak vydělíme poměrem stran komponenty. Díky tomu máme vypočtenou výšku. 
 3. Výšku `.heading` už pak stačí vydělit stem, abychom získali procentuální údaj.
 
-Ano, řešení je to netriviální a navíc vychází z toho, že znáte poměr stran komponenty. Ale já vám to říkal: elastická typografie je složitější než jste si možná mysleli. Jenže ty výsledky za to stojí, že?
+Ano, řešení to není triviální, a navíc vychází z toho, že znáte poměr stran komponenty. Ale já vám to říkal: Elastická typografie je složitější, než jste si možná mysleli. Jenže ty výsledky za to stojí, že?
 
 Podrobněji to rozepisuji na Vzhůru dolů v článku „CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty“. [vrdl.cz/prirucka/reseni-elasticka-typografie](http://www.vzhurudolu.cz/prirucka/reseni-elasticka-typografie)
 
-Pro tipy na další možná řešení se můžete obrátit na kolegy ze Smashing Magazine, konkrétně do jejich článku „Truly Fluid Typography With vh And vw Units“. [vrdl.in/4g9xs](https://www.smashingmagazine.com/2016/05/fluid-typography/)
+Pokud jde o tipy na další možná řešení, můžete se obrátit na kolegy ze Smashing Magazine, konkrétně do jejich článku „Truly Fluid Typography With vh And vw Units“. [vrdl.in/4g9xs](https://www.smashingmagazine.com/2016/05/fluid-typography/)
 
 Máme tedy všechny nezbytné znalosti o typografii a jednotkách v CSS. A máme připravený grafický styl našeho e-shopu. Můžeme tedy začít stavět kód. I ten budeme samozřejmě vrstvit. Ne každý kousek kódu musíme u každého projektu napsat znovu. Proto si ukážeme sadu nástrojů, které ty nejzákladnější vrstvy obstarají za nás.

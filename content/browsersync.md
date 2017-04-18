@@ -116,12 +116,12 @@ Co jsem tím nastavil?
 <div class="web-only text-center text-small">
   <hr>
     <p>
-      Text je součástí mého ebooku <a href="/ebook">Vzhůru do CSS3</a>, který 
+      Text je součástí mého e-booku <a href="/ebook">Vzhůru do CSS3</a>, který 
       exkluzivně obsahuje také další materiál 
       o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
     </p>
     <p>
-      <a class="button" href="/ebook#objednavka">Koupit ebook za 249&nbsp;Kč</a>
+      <a class="button" href="/ebook#objednavka">Koupit e-book za 249&nbsp;Kč</a>
     </p>
   <hr>
 </div>
