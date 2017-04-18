@@ -2,7 +2,7 @@
 
 Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky na webu by mu daly zabrat. No vážně. Však čtěte.
 
-Zejména ty rozsáhlejší mají nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet a vy si jistě vyberete. Tedy pokud nejste Chuck Norris. Ten si vybral, ještě jsem začal psát.
+Zejména ty rozsáhlejší mají nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet, a vy si jistě vyberete. Tedy pokud nejste Chuck Norris. Ten si vybral, ještě než jsem začal psát.
 
 
 ## Posun do stran
@@ -26,7 +26,7 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 
 Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
-Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také tabulky vkládané přes redakční systémy, u kterých nevíte jak složité budou. A nebo, když zkrátka chcete ušetřit čas na vývoj.
+Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také pro tabulky vkládané přes redakční systémy, u kterých nevíte, jak složité budou. Anebo když prostě chcete ušetřit čas na vývoj.
 
 Než si ukážeme propracovanější způsoby práce s responzivními tabulkami, dovolte mi jeden tip na nástroj.
 
@@ -49,17 +49,17 @@ Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně m
 
 Vyzkoušejte si naživo v CodePenu. [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
 
-S propracovanějším řešením využívající flexbox a další moderní CSS vlastnosti přišel David Bushell v textu „CSS only Responsive Tables“. [vrdl.in/xlpbn](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
+S propracovanějším řešením využívajícím flexbox a další moderní CSS vlastnosti přišel David Bushell v textu „CSS only Responsive Tables“. [vrdl.in/xlpbn](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
 
 Fixně-posuvné řešení je pak možné doplnit detekcí gesta švihnutí (swipe) pro snadnější a přesnější posouvání sloupečků. 
 
 Řešení má mnoho užití. Podmínkou ale je, aby tabulka měla přijatelně nízký počet řádků.
 
-Nojo, ale co když ale máte tabulku toho typu, kterému programátoři říkají „datagrid“? Ta má, potvora, hodně sloupečků, ale také řádků.
+No jo, ale co když máte tabulku toho typu, kterému programátoři říkají „datagrid“? Ta má, potvora, hodně sloupečků, ale také řádků.
 
 ## Stohování
 
-Datagrid není žádná vzácnost. Každá webová aplikace pro interní systémy je datagridů plná. Je to případ vašeho projektu? Pak bych vám doporučil přestylovat tabulku na mobilech do podoby netabulkového, kartičkového zobrazení. Říkám tomu *stohování*.
+Datagrid není žádná vzácnost. Každá webová aplikace pro interní systémy je datagridů plná. Je to případ i vašeho projektu? Pak bych vám doporučil přestylovat tabulku na mobilech do podoby netabulkového, kartičkového zobrazení. Říkám tomu *stohování*.
 
 <figure>
 <img src="dist/images/original/tabulky_3.jpg" alt="Stohování">
@@ -108,7 +108,7 @@ Za fajn nápad také považuji vložit do stránky namísto tabulky jen jakýsi 
 <figure>
 <img src="dist/images/original/tabulky_5.jpg" alt="Odkaz na plnou tabulku">
 <figcaption markdown="1">    
-*Tabulku na mobilu uprostřed obsahu nahradíme zástupným symbolem. Kliknutí se zobrazí plná verze*
+*Tabulku na mobilu uprostřed obsahu nahradíme zástupným symbolem. Kliknutím se zobrazí plná verze*
 </figcaption> 
 </figure>
 
@@ -118,14 +118,14 @@ Kdy se hodí? Pro složité tabulky uprostřed jiného obsahu, kde ostatní scé
 
 ### Varianta s reprezentací obsahu na mobilech grafem
 
-Z tabulkových dat na mobilu uděláte zjednodušený graf. Doporučuji nasazovat v kombinaci s odkazem na plnou verzi tabulky. Hodí se opět pro situace se strašlivě komplikovanými daty bez výrazné obsahové hierarchie.
+Z tabulky prostě na mobilu uděláte zjednodušený graf. Doporučuji nasazovat v kombinaci s odkazem na plnou verzi tabulky. Hodí se opět pro situace se strašlivě komplikovanými daty bez výrazné obsahové hierarchie.
 
 ## Na mobilech něco vynechat. Ale opravdu?
 
-„Prostě schováme pár sloupečku a na mobil se to vejde“. Tahle varianta vypadá, že se sama nabízí. Z technického pohledu budiž. Jenže: designér ve mě zvedá obočí i ukazováček, aby vás upozornil na možné nevýhody.
+„Prostě schováme pár sloupečků, a na mobil se to vejde.“ Tahle varianta vypadá, že se sama nabízí. Z technického pohledu budiž. Jenže designér ve mně zvedá obočí i ukazováček, aby vás upozornil na možné nevýhody.
 
 Schovávání obsahu na konkrétních zařízeních je dost nebezpečné. Jak už jsem argumentoval dříve, stejní lidé se na vaše rozhraní dívají z různých zařízení. Proč by určitý obsah měli na jednom zařízení vidět a jiném ne?
 
-Připomenu to znovu [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů sedmé kapitoly.
+Připomenu to znovu [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů v rámci sedmé kapitoly.
 
 

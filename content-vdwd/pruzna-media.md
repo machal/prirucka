@@ -1,4 +1,4 @@
-# Pružná média: obrázky, video a vkládané elementy
+# Pružné vkládané elementy se zachováním poměru stran
 
 Jak zařídit, aby se obrázky, video a prvky vkládané přes `<iframe>` přizpůsobovaly šířce rodičovského elementu a ještě k tomu zachovávaly poměr stran?
 
@@ -71,12 +71,12 @@ Potřebujeme vynulovat proto, abychom výšku elementu mohli nastavit pomocí vn
 
 Svislý vnitřní okraj se na rozdíl od vlastnosti `height` počítá ze šířky elementu, takže s jeho pomocí určíme poměr stran rodičovského bloku.
 
-Poměr stran je zde tedy 100 ku 60, takže 5:3. Pro poměr 16:9 bychom do `padding-bottom` vložili hodnotu `56.25%`. Tady je ještě výpočet: `(9 / 16 * 100)`.
+Poměr stran je zde tedy 100 ku 60, takže 5 : 3. Pro poměr 16 : 9 bychom do `padding-bottom` vložili hodnotu `56.25%`. Tady je ještě výpočet: `(9 / 16 * 100)`.
 
 ### `.rwd-object-in` 
 
-Tuto třídu pak aplikujeme přímo na `<iframe>` nebo jiný vkládaný element. Ten už má za úkol se už jen sobecky roztahovat na celou výšku i šířku rodiče.
+Tuto třídu pak aplikujeme přímo na `<iframe>` nebo jiný vkládaný element. Ten už má za úkol se jen sobecky roztahovat na celou výšku i šířku rodiče.
 
 Máte svrbění si to hned zkoušet?  Neváhejte, CodePen se na vás těší. [cdpn.io/e/BdniC](http://codepen.io/machal/pen/BdniC)
 
-Tímto jsme ošetřili *pružnost* obrázků a vkládaných médií v rámci layoutu. *Responzivnost* se ale definuje šířeji než jen prostou flexibilní reakcí na změnu šířky layoutu. Jdeme na ni. Zaměříme se nejprve na obrázky, bezpochyby nejčastější mediální obsah. 
+Tímto jsme ošetřili *pružnost* obrázků a vkládaných médií v rámci layoutu. *Responzivnost* se ale definuje šířeji než jen prostou flexibilní reakcí na změnu šířky layoutu. Jdeme na ni. Zaměříme se nejprve na obrázky, což je bezpochyby nejčastější mediální obsah.

@@ -1,23 +1,23 @@
 # Responzivní SVG
 
-Vektorové obrázky jsou fajn. Asi tady není potřeba zahltit vás celou řadou argumentů pro využívání SVG. Ty si případně nastudujte na Vzhůru dolů. ([vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)).
+Vektorové obrázky jsou fajn. Asi tady není potřeba zahltit vás celou řadou argumentů pro využívání SVG. Ty si případně nastudujte na Vzhůru dolů. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)
 
-Používání SVG pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté. V přizpůsobování šířce layoutu a zachování poměru stran. To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě. 
+Používání SVG pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté: V přizpůsobování šířce layoutu a zachování poměru stran. To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě. 
 
-Abychom ale pochopili, proč není dosažení pružnosti SVG jednoduché jako facka, musíme na světlo boží vytáhnout jednu překvapivou a možná i nepříjemnou pravdu. Nádech… 
+Abychom ale pochopili, proč není dosažení pružnosti SVG jednoduché jako facka, musíme na světlo Boží vytáhnout jednu překvapivou a možná i nepříjemnou pravdu. Nádech… 
 
 SVG není obrázek. 
 
-…výdech! No jasně, SVG je vektorový dokument, který vkládáme do stránky. Právě proto jej do HTML dát nejen ve formě obrázku (`<img>`), ale také jako externí zdroj (`<iframe>`, `<object>`) nebo vektory vykreslit přímo (`<svg>`).
+… výdech! No jasně, SVG je vektorový dokument, který vkládáme do stránky. Právě proto jej do HTML musíme dát nejen ve formě obrázku (`<img>`), ale také jako externí zdroj (`<iframe>`, `<object>`) nebo vektory vykreslit přímo (`<svg>`).
 
-Bitmapy mají jasně definovanou výšku i šířku. Je proto velmi snadné jejich poměr stran zachovat. Jaký je ale výška nebo poměr stran dokumentu?
+Bitmapy mají jasně definovanou výšku i šířku. Je proto velmi snadné jejich poměr stran zachovat. Jaká je ale výška nebo poměr stran dokumentu?
 
 
 ## Nastavení šířky a výšky je k ničemu, použijte `viewbox`
 
-Mnoho kodérů se domnívá, že u značky `<svg>` nastaví parametry `width`, `height` a SVG začne poslouchat. Je to tak ale jen v některých prohlížečích a některých typech vložení do stránky. Celá pravda ovšem je, že nastavením výšky a šířky si mnoho věcí zkomplikujeme. 
+Mnoho kodérů se domnívá, že u značky `<svg>` nastaví parametry `width` a `height` – a SVG začne poslouchat. Je to tak ale jen v některých prohlížečích a některých typech vložení do stránky. Celá pravda ovšem je, že nastavením výšky a šířky si mnoho věcí zkomplikujeme. 
 
-Vysvětlení je složité, takže vás odkážu na článek, který to rozebírá lépe, než bych dokázal udělat já. Než se ale do čtení textu „How to Scale SVG“ na CSS Tricks pustíte, ujistěte se, že doma máte dostatečnou zásobu brufenů. [css-tricks.com/scale-svg](https://css-tricks.com/scale-svg/#article-header-id-2)
+Vysvětlení je složité, takže vás odkážu na článek, který to rozebírá lépe, než bych to dokázal udělat já. Než se ale do čtení textu „How to Scale SVG“ na CSS Tricks pustíte, ujistěte se, že doma máte dostatečnou zásobu brufenů. [css-tricks.com/scale-svg](https://css-tricks.com/scale-svg/#article-header-id-2)
 
 S brufeny nebo bez, výsledek je stejný. Prostě použijeme parametr `viewbox`:
 
@@ -25,14 +25,14 @@ S brufeny nebo bez, výsledek je stejný. Prostě použijeme parametr `viewbox`:
 <svg viewbox="0 0 100 50">
 ```
 
-Kód říká, že výchozí velikost SVG dokumentu je 100 na 50 pixelů, že souřadnicových systém začíná klasicky na bodě nula nula a že si má dokument držet poměr stran.
+Kód říká, že výchozí velikost SVG dokumentu je 100 na 50 pixelů, že souřadnicový systém začíná klasicky na bodě nula nula a že si má dokument držet poměr stran.
 
 Jak teď zajistit pružné chování SVG při různých typech vložení do stránky?
 
 
 ## Pružné SVG vložené do HTML dokumentu pomocí `<svg>`
 
-V moderních prohlížečích je to v případě dodržení výšeuvedeného opravdu jednoduché. Jen kvůli Internet Exploreru musím přidat obalující značku:
+V moderních prohlížečích je to v případě dodržení výše uvedeného opravdu jednoduché. Jen kvůli Internet Exploreru musím přidat obalující značku:
 
 ```html
 <p class="svg-container">
@@ -60,7 +60,7 @@ Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachová
 Podívejte na výsledný CodePen. [cdpn.io/e/oYOZwz](http://codepen.io/machal/pen/oYOZwz)
 
 
-## Pružné SVG vkládáné externě pomocí `<img>`
+## Pružné SVG vkládané externě pomocí `<img>`
 
 Opět do zdrojového SVG přidáme viewbox a zrušíme případně přítomné atributy `width` a `height`. Pak stačí klasicky vložit do stránky:
 
@@ -82,7 +82,7 @@ CodePen s příkladem se na vás těší i tady. [cdpn.io/e/VmNbPx](http://codep
 
 ## Pružné SVG externě v CSS
 
-Tady je to jednoduché, stačí prostě obrázek umístit na pozadí, zakázat mu opakování a pomocí `background-size: contain` jej rozprostřít do celé šířky rodiče.
+Tady je to jednoduché – stačí prostě obrázek umístit na pozadí, zakázat mu opakování a pomocí `background-size: contain` jej rozprostřít do celé šířky rodiče.
 
 ```css
 .svg-icon {
@@ -115,7 +115,7 @@ Ale čtěte dál. To nejlepší teprve přijde. Slíbil jsem povídání o *resp
 
 ## (Opravdu) responzivní SVG
 
-Ano, uvnitř SVG můžeme Media Queries úplně v pohodě použít, A ano, někdy se podmínky nevztahují k rozměrům celé stránky, ale k rodiči SVG dokumentu.
+Ano, uvnitř SVG můžeme Media Queries úplně v pohodě použít. A ano, někdy se podmínky nevztahují k rozměrům celé stránky, ale k rodiči SVG dokumentu.
 
 <figure>
 <img src="dist/images/original/rwd-svg-logos.jpg" alt="Responsive Logos">

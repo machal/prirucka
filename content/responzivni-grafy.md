@@ -2,7 +2,7 @@
 
 Responzivní grafy nacházejí využití hlavně v rukou demagogických politiků. Grafy, které používají, se *přizpůsobují* jejich vidění světa.
 
-OK, nebudu vám kazit krásné chvíle s mými texty těmito rádobyvtipnými odbočkami. 
+OK, nebudu vám kazit krásné chvíle s mými texty těmito rádoby vtipnými odbočkami. 
 
 Budeme se bavit o opravdových grafech v opravdových responzivních stránkách. Zase tak často se nepoužívají, proto to vezmu letem světem.
 
@@ -19,7 +19,7 @@ Z mého pohledu nejzajímavější knihovna pro jednodušší grafy. Protože po
 
 ## Highcharts
 
-Nějaké responzivní možnosti má i tahle populární grafová knihovna. Spíše se ale jedná o přizpůsobení velikosti, než o adekvátní změny v obsahu a hustotě formy či obsahu. [highcharts.com/demo/responsive](http://www.highcharts.com/demo/responsive)
+Nějaké responzivní možnosti má i tahle populární grafová knihovna. Spíše se ale jedná o přizpůsobení velikosti než o adekvátní změny v obsahu a hustotě formy či obsahu.  [highcharts.com/demo/responsive](http://www.highcharts.com/demo/responsive)
 
 ## Chart.js
 

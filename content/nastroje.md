@@ -98,7 +98,7 @@ Používám kvůli Gruntu a nástrojům kolem Node.js. Na to jak často příkaz
 
 ## atd. (nekodérské nástroje)
 
-Tohle je docela paradoxní „atd”. Obnáší totiž soupis aplikací, v nichž dohromady trávím více času než ve výšeuvedených. Čtení, psaní, organizace, komunikace. Nástroje pro „soft skills“ mají na mou obživu větší vliv než ty z předchozího seznamu. Tady je alespoň jejich seznam.
+Tohle je docela paradoxní „atd”. Obnáší totiž soupis aplikací, v nichž dohromady trávím více času než ve výše uvedených. Čtení, psaní, organizace, komunikace. Nástroje pro „soft skills“ mají na mou obživu větší vliv než ty z předchozího seznamu. Tady je alespoň jejich seznam.
 
 - Čtení: Kindle (e-booky a články stažené z webu), iBooks (ebooky).
 - Psaní: [Mou](http://25.io/mou/) (Markdown editor, v poslední době tu vznikají všechny články na VzhůruDolů.cz), Google Docs (delší články nebo ty co vyžadují kooperaci více lidí), Buffer (plánování příspěvků na sociálních sítích).

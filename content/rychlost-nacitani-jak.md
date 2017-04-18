@@ -59,7 +59,7 @@ Tady je [parádní seznam nastavení](https://github.com/h5bp/server-configs) pr
 
 ## Narvěte rychlost načítání do svého týmového DNA
 
-Výšeuvedené není nic nového, vím. Hlavně pro vás, zkušenější. Mám ale odsledováno, že i dobře optimalizovaná stránka časem na rychlosti ztratí. Nebo, že znalostmi nabušený frontendista narazí na hradbu programátorů, správců serverů, grafiků nebo šéfů projektu kroutících hlavami:
+Výše uvedené není nic nového, vím. Hlavně pro vás, zkušenější. Mám ale odsledováno, že i dobře optimalizovaná stránka časem na rychlosti ztratí. Nebo, že znalostmi nabušený frontendista narazí na hradbu programátorů, správců serverů, grafiků nebo šéfů projektu kroutících hlavami:
 
 „Támhle je potřeba přidat pět jQuery pluginů, protože to tak produkťák chce.“
 

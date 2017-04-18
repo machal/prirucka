@@ -2,13 +2,13 @@
 
 Nové atributy řeší potřebu autorů stránek zobrazovat v různých kontextech designu různé varianty obrázků.
 
-Změna kontextu v tomto případě nejčastěji vypadá jako změna layoutu pro jinou velikost obrazovky. Může ale jít také o zobrazení stránky na zařízeních s displeji typu Retina (různými poměry `device-pixel-ratio`). Do budoucna třeba ještě změnu úrovně zoomu na stránce nebo uživatele na pomalém připojení. 
+Změna kontextu v tomto případě nejčastěji vypadá jako změna layoutu pro jinou velikost obrazovky. Může ale jít také o zobrazení stránky na zařízeních s displeji typu Retina (různými poměry `device-pixel-ratio`). Do budoucna třeba ještě o změnu úrovně zoomu na stránce nebo uživatele na pomalém připojení. 
 
 <!-- AdSnippet -->
 
 Na atributech `srcset` a `sizes` je hezké, že poměrně složité rozhodování, který obrázek ve které situaci použít, necháváme na prohlížeči. 
 
-Jako autoři stránky mu jen řekneme jaké varianty obrázku má k dispozici (`srcset`) a jak jsou veliké na jednotlivých breakpointech layoutu (`sizes`).
+Jako autoři stránky mu jen řekneme, jaké varianty obrázku má k dispozici (`srcset`) a jak jsou veliké na jednotlivých breakpointech layoutu (`sizes`).
 
 ## `srcset`: Sada zdrojů obrázku a jejich vlastností
 
@@ -21,24 +21,24 @@ Jako autoři stránky mu jen řekneme jaké varianty obrázku má k dispozici (`
   width="200" height="200" alt="…">
 ```
 
-Prohlížeči tímhle kódem sdělujeme, že jsme předgenerovali obrázek `small_600.png`. Má jeho fyzická šířka (při exportu z grafického editoru) je 600 pixelů, což říká zápis `600w`, k nemuž se ještě dostaneme. Dále zde máme obrázek `medium_1024.png` v šířce 1024 pixelů a `large_1600.png` v šířce 1600 pixelů. V atributu `src` pak uvádíme náhradní řešení pro prohlížeče, které  atribut `srcset` neumí.
+Prohlížeči tímhle kódem sdělujeme, že jsme předgenerovali obrázek `small_600.png`. Jeho fyzická šířka (při exportu z grafického editoru) je 600 pixelů, což říká zápis `600w`, k němuž se ještě dostaneme. Dále zde máme obrázek `medium_1024.png` v šířce 1024 pixelů a `large_1600.png` v šířce 1600 pixelů. V atributu `src` pak uvádíme náhradní řešení pro prohlížeče, které  atribut `srcset` neumí.
 
-Prohlížeč se zde pro rozhodování o tom, který obrázek stáhnout a zobrazit, dívá na aktuální šířku okna. 
+Prohlížeč se zde při rozhodování o tom, který obrázek stáhnout a zobrazit, dívá na aktuální šířku okna. 
 
 <!-- AdSnippet -->
 
 Některé prohlížeče na to půjdou chytřeji a například `small_600.png` budou zobrazovat ještě kousek nad hranicí šestisetpixelového okna, protože na vizuální kvalitě obrázku to neubere.
 
-Prohlížeč vezme v potaz i aktuální `device-pixel-ratio`. Pak například na zařízení s původním Retina displejem (`device-pixel-ratio=2`) v případě, že okno je široké 600 pixelů už největší obrázek, `large_1600.png`. Potřebuje obrázek velikosti šířky okna krát `device-pixel-ratio`. Takže kolem 1200 pixelů široký.
+Prohlížeč vezme v potaz i aktuální `device-pixel-ratio`. Například na zařízení s původním Retina displejem (`device-pixel-ratio=2`) pak v případě, že okno je široké 600 pixelů, stáhne a použije už největší obrázek, `large_1600.png`. Potřebuje obrázek velikosti šířky okna krát `device-pixel-ratio`. Takže kolem 1200 pixelů široký. Obrázek `medium_1024.png` by mu tedy nestačil.
 
 V potenciálu chytrého rozhodování prohlížeče vězí krása atributu `srcset`. Prohlížeč zváží všechny informace, které má o stavu stránky k dispozici a podle toho vybere nejvhodnější obrázek. Vy jako autoři jen vygenerujete dost variant a správně je popíšete. 
 
-Demo výšeuvedeného kódu mám také na CodePenu. Nejlépe jej vyzkoušíte, když si změnšíte okno ukázky, obnovíte stránku a pak budete okno postupně zvětšovat. [cdpn.io/e/WboGgE](http://codepen.io/machal/pen/WboGgE?editors=100)
+Demo výše uvedeného kódu mám také na CodePenu. Nejlépe jej vyzkoušíte, když si zmenšíte okno ukázky, obnovíte stránku a pak budete okno postupně zvětšovat. [cdpn.io/e/WboGgE](http://codepen.io/machal/pen/WboGgE?editors=100)
 
 
 ### Kolik variant obrázků vygenerovat?
 
-V ukázce mám obrázky tři, to by ale v praxi nestačilo. Obvykle si vypočtu šířku nejmenší a největší možné varianty. Mezi nimi pak nechám vygenerovat obrázky odstupňované po 200 až 400 pixelech. Je to samozřejmě někdy limitováno i uložným místem na serveru, takže tuto mou radu prosím berte s rezervou. 
+V ukázce mám obrázky tři, to by ale v praxi nestačilo. Obvykle si vypočtu šířku nejmenší a největší možné varianty. Mezi nimi pak nechám vygenerovat obrázky odstupňované po 200 až 400 pixelech. Je to samozřejmě někdy limitováno i úložným místem na serveru, takže tuto mou radu prosím berte s rezervou.
 
 <div class="ebook-only" markdown="1">
 Detailně si postup hledání variant ukážeme už za chvíli [na příkladu](priklad-media.md).
@@ -51,7 +51,7 @@ Zatím jsem zmínil jen šířku obrázku, tedy deskriptor `w`. Ten budete použ
 
 ### deskriptor `w`
 
-Udává jakou pixelovou šířku má ve skutečnosti soubor s obrázkem obrázku.
+Udává, jakou pixelovou šířku má ve skutečnosti soubor s obrázkem.
 
 ```html
 <img srcset="
@@ -99,7 +99,7 @@ Sledujte hodnoty v `sizes`. Responzivní layout v ukázce je vymyšlený takto:
 - Ve všech ostatních velikostech okna, tedy do 767 pixelů, zabere 100 procent šířky okna (`100vw`). 
 
 <div class="ebook-only" markdown="1">
-„Volkswageny“, tedy jednotku `vw` jsme probírali [v textu o jednotkách](jednotky.md), vzpomínáte? 
+„Volkswageny“, tedy jednotku `vw`, jsme probírali [v textu o jednotkách](jednotky.md), vzpomínáte? 
 </div>
 
 <!-- AdSnippet -->
@@ -108,11 +108,11 @@ První vyhovující varianta v `sizes` vyhrává, takže na pořadí záleží. 
 
 ### Proč si informaci o layoutu stránky prohlížeč nevezme z CSS?
 
-Dobrá otázka. Rozhodnutí, který z obrázků stáhnout a zobrazit, prohlížeče dělají ještě předtím než znají CSS. Ony v tu chvíli jen rychle parsují HTML a o stylech zatím „nevědí“. Kdyby na styly čekaly, zpozdí se stažení a zobrazení obrázků. Je to takhle výhodnější pro uživatele. Zkracuje to načtení obrázků a vlastně celé stránky.
+Dobrá otázka. Rozhodnutí, který z obrázků stáhnout a zobrazit, prohlížeče dělají ještě předtím, než znají CSS. Ony v tu chvíli jen rychle parsují HTML a o stylech zatím „nevědí“. Když by na styly čekaly, zpozdí se stažení a zobrazení obrázků. Je to takhle výhodnější pro uživatele. Zkracuje to načtení obrázků a vlastně celé stránky.
 
 ### Velikosti obrázků podle layoutu
 
-V responzivním layoutu obvykle přesně nevíme jaké rozměry budou mít obrázky v rámci konkrétní šířky okna. A právě tady se projeví síla kombinace `sizes` s CSS funkcí `calc()`. Definovat velikost obrázku můžeme relativně k layoutu mezi konkrétními breakpointy.
+V responzivním layoutu obvykle přesně nevíme, jaké rozměry budou mít obrázky v rámci konkrétní šířky okna.  A právě tady se projeví síla kombinace `sizes` s CSS funkcí `calc()`. Definovat velikost obrázku můžeme relativně k layoutu mezi konkrétními breakpointy.
 
 Pojďme si nejprve vizuálně přiblížit layout pro další ukázku:
 
@@ -123,7 +123,7 @@ Pojďme si nejprve vizuálně přiblížit layout pro další ukázku:
 </figcaption> 
 </figure>
 
-Do `800px` breakpointu je to jednoduché: Obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna a tak musíme odečíst výchozí `margin` u `<body>`, který mají prohlížeče nastavený na `8px`:
+Do `800px` breakpointu je to jednoduché: Obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna, a tak musíme odečíst výchozí `margin` u `<body>`, který mají prohlížeče nastavený na `8px`:
 
 ```css
 calc(100vw - 2 * 8px)
@@ -170,13 +170,13 @@ Pojďme si pro jistotu ještě shrnout celý zápis:
 
 1. V `src` máme obrázek sloužící jako náhradní řešení pro starší prohlížeče.
 2. V `srcset` máme seznam variant obrázku, které jsme předpřipravili a uložili na server.
-3. Atribut `sizes` říká: na šířkách okna od 800 pixelů výše bude mít obrázek velikost `calc((100vw - 2 * 8px) * 0.49)`. Ve všech ostatních případech – to znamená do 799 pixelů pak `calc(100vw - 2 * 8px)`.
+3. Atribut `sizes` říká: na šířkách okna od 800 pixelů výše bude mít obrázek velikost `calc((100vw - 2 * 8px) * 0.49)`. Ve všech ostatních případech – to znamená do 799 pixelů – pak `calc(100vw - 2 * 8px)`.
 
-Demo na CodePenu: [cdpn.io/e/azBmaX](http://codepen.io/machal/full/azBmaX?editors=110). 
+Demo na CodePenu: [cdpn.io/e/azBmaX](http://codepen.io/machal/full/azBmaX?editors=110)
 
-Nezapomínejte prosím na povinný atribut `alt`, který ocení vyhledavače a  odečítače obrazovky pro zrakově hendikepované uživatele. 
+Nezapomínejte prosím na povinný atribut `alt`, který ocení vyhledávače a odečítače obrazovky pro zrakově hendikepované uživatele.
 
-Doplňte i atribut `height`, který vylepší vykreslování stránky tím, že ještě před stažením obrázku sdělí prohlížeči jak velký prostor pro něj má v layoutu vynechat. Nevztahujte jej tedy k pixelové výšce obrázku ale k prostoru stránky, který si přejete pro obrázek rezervovat do chvíle než se stáhne a zobrazí. 
+Doplňte i atribut `height`, který vylepší vykreslování stránky tím, že ještě před stažením obrázku sdělí prohlížeči, jak velký prostor pro něj má v layoutu vynechat. Nevztahujte jej tedy k pixelové výšce obrázku, ale k prostoru stránky, který si přejete pro obrázek rezervovat do chvíle, než se stáhne a zobrazí.
 
 ### „Hernajs, a proč je to tak složité?“
 
@@ -185,7 +185,7 @@ Nedivím se samozřejmě žádným námitkám vůči estetice a zdánlivě zbyte
 V textu o [responzivních obrázcích](responzivni-obrazky.md) jsem zmiňoval i další alternativy. `<img srcset sizes>` ale považuji za výchozí řešení. Ta ostatní se hodí pro konkrétní a méně časté scénáře. 
 
 <div class="ebook-only" markdown="1">
-  Pojďme si rozpitvat jednu z metod pro specifické situace. Novou značku `<picture>`.
+  Pojďme si rozpitvat jednu z metod pro specifické situace – novou značku `<picture>`.
 </div>
 
 

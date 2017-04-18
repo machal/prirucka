@@ -39,25 +39,25 @@ Obsahové obrázky webu se hodí ukládat v co největším rozlišení. Nikdy t
 
 ### Najdeme nejmenší a největší velikost
 
-Nejmenší velikost obrazovky aktuálních mobilů je 240 pixelů. Dnes už se moc nedělají, ale nějaký podíl na trhu ještě mají. V tomto rozlišení mají obrázky po odečtení okrajů šéřli 192 pixelů. Zaokrouhlíme si to na 200 pixelů. Tohle bude naše nejmenší varianta.
+Nejmenší velikost obrazovky aktuálních mobilů je 240 pixelů. Dnes už se moc nedělají, ale nějaký podíl na trhu ještě mají. V tomto rozlišení mají obrázky po odečtení okrajů šířku 192 pixelů. Zaokrouhlíme si to na 200 pixelů a to bude naše nejmenší varianta.
 
-Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli „Retina“ displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s více než dvojnásobným poměrem hardwarových a CSS pixelů, ale mám zkušenost že dvojnásobek obvykle postačuje.
+Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli „Retina“ displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s více než dvojnásobným poměrem hardwarových a CSS pixelů, ale mám zkušenost, že dvojnásobek obvykle postačuje.
 
 ### Vyrobíme varianty a uvedeme je do `srcset`
 
-Jak jsem psal v textu o [srcset a sizes](srcset-sizes.md), varianty generuji po dvěstě a třista pixelech. Můžu to nějakou automatizací na svém počítači nebo na serveru. Pro jednorázovou práci ale doporučuji výborný generátor variant obrázků „Responsive Image Breakpoints Generator“. [responsivebreakpoints.com](http://www.responsivebreakpoints.com/)
+Jak jsem psal v textu o [srcset a sizes](srcset-sizes.md), varianty generuji po dvě stě a tři sta pixelech. Můžu to zařídit nějakou automatizací na svém počítači nebo na serveru. Pro jednorázovou práci ale doporučuji výborný generátor variant obrázků „Responsive Image Breakpoints Generator“. [responsivebreakpoints.com](http://www.responsivebreakpoints.com/)
 
 Ten varianty chytře vytváří podle minimálního kroku datové velikosti. Když jsem nastavil 30kB, dostal jsem následující verze prvního obrázku:
 
-| Šířka | Velikost |
+| Šířka v pixelech | Velikost v kB |
 | ----- | -------- |
-| 200px | 12 kB |
-| 442px | 43 kB |
-| 617px | 72 kB |
-| 762px | 100 kB  |
-| 903px | 129 kB  |
-| 1036px | 160 kB  |
-| 1080px | 180 kB  |
+| 200 | 12 |
+| 442 | 43 |
+| 617 | 72 |
+| 762 | 100  |
+| 903 | 129  |
+| 1036 | 160  |
+| 1080 | 180  |
 
 Zapsáno v kódu to vypadá takto:
 
@@ -80,7 +80,7 @@ Pro další dva obrázky to bude vypadat trochu jinak. Podívejte se pak do HTML
 
 ### Nastavíme velikost obrázku v layoutu: `sizes`
 
-Layout a velikost obrázků v něm je v tuto chvíli jednoduše zjistitelná. Stačí vzít vývojářské nástroje, zmenšit okno a postupně ho zvětšovat. Všechny body zlomu layoutu tam krásně uvidíte a z vývojářských nástrojů snadno vyčtete patřičné rozměry.
+Layout a velikost obrázků v něm jsou v tuto chvíli jednoduše zjistitelné. Stačí vzít vývojářské nástroje, zmenšit okno a postupně ho zvětšovat. Všechny body zlomu layoutu tam krásně uvidíte a z vývojářských nástrojů snadno vyčtete patřičné rozměry.
 
 - Na malých displejích zabírá layout celou obrazovku bez postranních okrajů a obrázek jakbysmet: `calc(100vw - 2 * 1.5rem)`.
 - Od šířky okna kolem 530 pixelů už se dále nezvětšuje. Šířka obrázku tam zůstává fixně na `480px`.
@@ -112,7 +112,7 @@ Uvidíte to v souboru `style/media/rwd-table.css` a následujícím commitu. [gi
 
 ## 4. Vkládané video
 
-Stačí vzpomenout na „Pružné vkládané elementy se zachovaním poměru stran“ [ze začátku této kapitoly](pruzna-media.md). A opět se o slovo hlásí trik s `padding-bottom`, ten ostatně v responzivním designu budete potřebovat velmi často.
+Stačí vzpomenout na „Pružné vkládané elementy se zachováním poměru stran“ [ze začátku této kapitoly](pruzna-media.md). A opět se o slovo hlásí trik s `padding-bottom`, který ostatně v responzivním designu budete potřebovat velmi často.
 
 Tuto věc má v našem případě na starost komponenta `style/media/rwd-object.css`.
 

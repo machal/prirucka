@@ -9,13 +9,13 @@ V responzivním designu máme na výběr poměrně hodně řešení možných pr
 - *Art direction*  
   Občas chceme na různá zařízení poslat různé výřezy obrazovky. Celou fotku na počítač a výřez obličeje na mobil například.
 - *Velikost okna*  
-  Pro různé velká okna prohlížeče bychom rádi servírovali různé varianty obrázků.
+  Pro různě velká okna prohlížeče bychom rádi servírovali různé varianty obrázků.
 - *Layout*  
   Úplně nejraději bychom, aby obrázky znaly layout stránky, protože ten je v responzivním designu velmi variabilní. 
 
-Nejčastěji z těchto důvod, že chceme ušetřit datový objem stránky na mobilech nebo poskytnout kvalitní zobrazení pro vysokopacitní displeje typu Retina.
+Nejčastěji chceme ušetřit datový objem stránky na mobilech nebo poskytnout kvalitní zobrazení pro vysokokapacitní displeje typu Retina.
 
-Pojďme si ale udělat kompletní přehled všech možných řešení, jejich výhod a nevýhod.
+Pojďme si nejdříve ukázat kompletní přehled všech možných řešení, jejich výhod a nevýhod.
 
 <figure markdown="1">
 
@@ -31,7 +31,7 @@ Pojďme si ale udělat kompletní přehled všech možných řešení, jejich v�
 | 8. `<picture>`          |    ✔     |    ✔   |  ✔  |   ✔  |    𐄂   | cokoliv | 
 
 <figcaption markdown="1">
-  Srovnání řešení pro responzivní obrázky. Rychlost – zohledňují rychlost načítání? Retina – zohledňuji vysokokapacitní displeje? AD (Art Direction) – dokáží poslat různé ořezy obrázků na různá zařízení? Okno – umí vybírat obrázky podle velikosti okna prohlížeče? Layout – zohledňují layout webu? 
+  *Srovnání řešení pro responzivní obrázky. Rychlost – zohledňují rychlost načítání? Retina – zohledňují vysokokapacitní displeje? AD (Art Direction) – dokážou poslat různé ořezy obrázků na různá zařízení? Okno – umí vybírat obrázky podle velikosti okna prohlížeče? Layout – zohledňují layout webu?*
 </figcaption> 
 
 </figure>
@@ -67,11 +67,11 @@ Občas se ještě setkávám s řešením, které upřednostňuje Retina displej
   width="100" height="100" alt="…">
 ```
 
-Je to samozřejmě nevýhodné pro rychlost načtení na běžných (ne-Retina) displejích. Raději vás upozorním, že obrázek nebude datově dvakrát tak velký, ale tři- nebo čtyřikrát. Obsahuje přeci čtyřnásobný počet pixelů. Zajímavější to začne být, když obrázku uberete na zobrazovací kvalitě.
+Je to samozřejmě nevýhodné pro rychlost načtení na běžných (ne-Retina) displejích. Raději vás upozorním, že obrázek nebude datově dvakrát tak velký, ale tři- nebo čtyřikrát. Obsahuje přece čtyřnásobný počet pixelů. Zajímavější to začne být, když obrázku uberete na zobrazovací kvalitě.
 
 ## 4. Razantně komprimované obrázky v `<img src>`
 
-Datový objem i vysokopacitní displeje můžete v některých situacích vyřešit naráz. Zvětšíte pixelovou velikost obrázku a výrazně snížíte jeho kvalitu:
+Datový objem i vysokokapacitní displeje můžete v některých situacích vyřešit naráz. Prostě zvětšíte pixelovou velikost obrázku a výrazně snížíte jeho kvalitu:
 
 ```html
 <img src="image_300x300_lowquality.jpg" 
@@ -84,9 +84,9 @@ Jak vypadá výroba takového obrázku ve třech krocích?
 2. Snížíte kvalitu exportu někam výrazně pod polovinu.
 3. Prohlížeč necháte obrázek převzorkovat na původní velikost.
 
-Komprimované obrázky jsme zkoušeli nasadit na jednom starším projektu. Udělali jsme si testy pro různé kombinace komprese a pixelové velikosti. Nakonec došli k tomu, že obrázky ve dvojnásobné pixelové velikosti a kvalitě komprese nastavené na 30 % měly nejlepší poměr kvality a datového objemu. Ten byl poloviční oproti původní verzi s 80 % kvalitou a velikostí stejné jako se používá ve stránce. U různých typů obrázků to ale bude různé.
+Komprimované obrázky jsme zkoušeli nasadit na jednom starším projektu. Udělali jsme si testy pro různé kombinace komprese a pixelové velikosti. Nakonec jsme došli k tomu, že obrázky ve dvojnásobné pixelové velikosti a kvalitě komprese nastavené na 30 % měly nejlepší poměr kvality a datového objemu. Ten byl poloviční oproti původní verzi s 80% kvalitou a velikostí stejnou, jako se používá ve stránce. U různých typů obrázků to ale bude různé.
 
-Autoři nápadu, Filament Group, svůj zkušební obrázek vkládali dvaapůlkrát velký a kvalitu JPG snížili na 0 %. Výsledný obrázek se pyšnil opět méně než polovinou datového objemu toho původního. [vrdl.in/z7k34](https://www.filamentgroup.com/lab/compressive-images.html)
+Autoři nápadu, Filament Group, svůj zkušební obrázek vkládali dvaapůlkrát větší a kvalitu JPG snížili na 0 %. Výsledný obrázek se pyšnil opět méně než polovinou datového objemu toho původního. [vrdl.in/z7k34](https://www.filamentgroup.com/lab/compressive-images.html)
 
 Asi sami vidíte, že řešení je vhodné jen pro JPG nebo WebP obrázky, kde je možné nastavit ztrátovou kompresi různých úrovní. Typově je pak použití metody vhodné spíše pro fotografie než třeba obrázky s textem, kde by v ostrých hranách mezi barvami byla ztráta kvality viditelná.
 
@@ -103,11 +103,11 @@ Občas je pro responzivní obrázky možné vidět řešení s nahrazováním at
 
 Na velkých displejích pak autoři těchto řešení usilují o zkopírování obsahu `data-src` do `src` pomocí Javascriptu. Ano, prohlížeč pak zobrazí správný obrázek. Takto pracuje například knihovna Response. [responsejs.com](http://responsejs.com/)
 
-Na pohled elegantní, ale nevýhody to má. Neexistuje totiž způsob jak prohlížeč odradit od stažení obrázku nalinkovaného v atributu `src`. Proto se v těchto řešeních obrázek sice vymění, ale předtím se už stáhl tento soubor. To není potěšující zpráva pro uživatele čekající na pomalém připojení.
+Na pohled elegantní, ale nevýhody to má. Neexistuje totiž způsob, jak prohlížeč odradit od stažení obrázku nalinkovaného v atributu `src`. Proto se v těchto řešeních obrázek sice vymění, ale předtím se už stáhl tento soubor. To není potěšující zpráva pro uživatele čekající na pomalém připojení.
 
 Navíc je nutné naprogramovat i logiku pro další scénáře, které mají responzivní obrázky řešit. Například ony Retina displeje. Logiku, kterou už navíc prohlížeče mají v sobě. Hned k ní dojdeme, ale musíme se rozloučit se starým známým atributem `src`.
 
-Iniciativa Responsive Images Community Group totiž před lety přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. To jsou řešení, která dnes považuji za standardní a pokud je to možné, dávám jim přednost. 
+Iniciativa Responsive Images Community Group totiž před lety přišla s novými atributy – `srcset` a `sizes` – a také s úplně novým tagem `<picture>`. To jsou řešení, která dnes považuji za standardní, a pokud je to možné, dávám jim přednost. 
 
 
 ## 6. Atribut `srcset` značky `<img>`
@@ -143,11 +143,11 @@ Všimněte si `w`, takzvaného *deskriptoru*, který nese informaci o šířce o
   alt="…">
 ```
 
-Pro více informací vás pošlu opět do podrobně rozepsaného materiálu o atributech [`srcset` a `sizes`](srcset-sizes.md).
+Pokud chcete více informací, odkážu vás opět na podrobně rozepsaný materiál o atributech [`srcset` a `sizes`](srcset-sizes.md).
 
 ## 8. Nová značka `<picture>`
 
-Nový tag `<picture>` vymysleli pro méně časté scénáře jako v případě potřeby mít na konkrétních velikostech layoutu jinak oříznuté obrázky:
+Nový tag `<picture>` vymysleli pro méně časté scénáře – třeba když potřebujete mít na konkrétních velikostech layoutu jinak oříznuté obrázky:
 
 ```html
 <picture>
@@ -181,5 +181,5 @@ Použijete parametr `src`, který moderní prohlížeče ignorují, pokud je př
 
 ### Druhé náhradní řešení: Picturefill
 
-Javascriptová knihovna, která zařídí fungování atributů `srcset`, `sizes` a značky `<picture>` i ve starších prohlížečích. Jmenuje se Picturefill a považuji jej za dobré řešení, které mám odzkoušené na několika webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
+Javascriptová knihovna, která zařídí fungování atributů `srcset`, `sizes` a značky `<picture>` i ve starších prohlížečích. Jmenuje se Picturefill a považuji ji za dobré řešení, které mám odzkoušené na několika webech. [scottjehl.github.io/picturefill](https://scottjehl.github.io/picturefill/)
 
