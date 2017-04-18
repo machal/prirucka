@@ -1,6 +1,6 @@
 # Kapitola 4: Viewport na mobilech
 
-Mobily nám přinesly tři zásadní životní radosti. Notifikace chodící ve tři ráno. Facebook plný selfíček. A tvůrcům webů ještě viewporty na mobilech.
+Smartphony nám přinesly tři zásadní životní radosti: Notifikace chodící ve tři ráno, Facebook plný selfíček – a tvůrcům webů ještě viewporty na mobilech.
 
 Problematika vykreslování do plochy prohlížeče má na mobilních zařízeních svá specifika. Jejich neznalost v důsledku vede k chybám jako je zakázání zoomování obsahu uživatelem nebo používání fixního pozicování. O těch si budeme povídat [v kapitole o návrhu rozhraní](kap-ui.md).
 

@@ -51,7 +51,7 @@ Navigace je v HTML někde dole a na velkých displejích se pomocí stylů umís
 
 ## Konverze do `<select>`
 
-Navigaci pomocí javascriptu na mobilech proměníte v nativní seznam položek. Výhodou je opět jednoduchá implementace. Nevýhodou horší uživatelská přívětivost seznamu položek na mobilních zařízení. Ukázka je na CSS Tricks. [css-tricks.com/convert-menu-to-dropdown/](https://css-tricks.com/convert-menu-to-dropdown/).
+Navigaci pomocí Javascriptu na mobilech proměníte v nativní seznam položek. Výhodou je opět jednoduchá implementace. Nevýhodou horší uživatelská přívětivost seznamu položek na mobilních zařízení. Ukázka je na CSS Tricks. [css-tricks.com/convert-menu-to-dropdown/](https://css-tricks.com/convert-menu-to-dropdown/).
 
 ## Navigace jen v patičce
 

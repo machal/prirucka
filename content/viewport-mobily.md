@@ -1,6 +1,6 @@
 # Viewporty na mobilních zařízeních
 
-Dozvíte se co je layoutový, co vizuální a co ideální viewport. 
+Dozvíte se, co je layoutový, co vizuální a co ideální viewport.
 
 Co to ale ten *viewport* vlastně je? V kontextu webdesignu jde o označení pro výřez stránky viditelný v okně prohlížeče. Na zařízeních, kde je možné měnit velikost okna (typicky počítačích), tedy viewport představuje šířku a výšku okna bez rozhraní prohlížeče.
 
@@ -9,7 +9,7 @@ Co to ale ten *viewport* vlastně je? V kontextu webdesignu jde o označení pro
 
 Nejdříve ale k historickému kontextu. První iPhone přišel v roce 2006 do situace, kdy byl prakticky každý web navržený pro velké displeje. S tím se dítko Steva Jobse snažilo vypořádat zmenšením layoutu webu a přidáním možností konkrétní části zvětšovat. 
 
-Zároveň první iPhone tajně doufal, že začnou vznikat weby přizpůsobené malým obrazovkám. Proto přešel s možností, jak mu webaři mohou sdělit, že si právě s tímto dali práci. My pro to používáme [meta značku pro viewport](viewport-meta.md). V důsledku se tím sjednotí šířka layoutového viewportu se šířkou ideálního viewportu. 
+Zároveň první iPhone tajně doufal, že začnou vznikat weby přizpůsobené malým obrazovkám. Proto přišel s možností, jak mu webaři mohou sdělit, že si právě s tímto dali práci. My pro to používáme [meta značku pro viewport](viewport-meta.md). V důsledku se tím sjednotí šířka layoutového viewportu se šířkou ideálního viewportu. 
 
 Ano, viewport na mobilech není jen jeden. Budeme používat terminologii Petera-Paula Kocha a rozlišovat viewporty layoutové, vizuální a ideální. [quirksmode.org/mobile/metaviewport](http://www.quirksmode.org/mobile/metaviewport/)
 
@@ -31,21 +31,21 @@ Když na meta značku zapomenete, použije se výchozí šířka layoutového vi
 * IE10 na Win8: 1024 pixelů 
 * iOS a Android: 980 pixelů 
 
-Javascriptem rozměry layoutového viewportu zjistíte pomocí: 
+Javascriptem zjistíte rozměry layoutového viewportu pomocí:
 
 ```javascript
 document.documentElement.clientWidth
 document.documentElement.clientHeight
 ```
 
-K layoutovému viewportu se vztahují [Media Queries](css3-media-queries.md) pro velikost okna: `min-width` a `max-width`. 
+K layoutovému viewportu se vztahují [Media Queries](css3-media-queries.md) pro velikost okna `min-width` a `max-width`. 
 
 
 ## Vizuální viewport
 
-„Průzor“, přes který se díváte na layoutový viewport a tedy stránku samotnou. Neobsahuje ovládací prvky prohlížeče. Vizuální viewport zůstává pořád stejný.
+„Průzor“, přes který se díváte na layoutový viewport, a tedy stránku samotnou. Neobsahuje ovládací prvky prohlížeče. Vizuální viewport zůstává pořád stejný.
 
-Javascriptem rozměry vizuálního viewportu zjistíte pomocí: 
+Javascriptem zjistíte rozměry vizuálního viewportu pomocí:
 
 ```javascript
 window.innerWidth
@@ -55,9 +55,9 @@ window.innerHeight
 
 ## Ideální viewport
 
-Ideální viewport je trochu z jiné kategorie než dva předchozí. Hodnotu totiž určuje výrobce prohlížeče. Představuje ideální rozměry layoutového viewportu a tedy webové stránky zobrazované na používaném zařízení. 
+Ideální viewport je trochu z jiné kategorie než dva předchozí. Hodnotu totiž určuje výrobce prohlížeče. Představuje ideální rozměry layoutového viewportu, a tedy webové stránky zobrazované na používaném zařízení.
 
-Ideální viewport získáte když vydělíte hardwarové rozlišení hodnotou `resolution` (nebo postaru `device-pixel-ratio`).
+Ideální viewport získáte, když vydělíte hardwarové rozlišení hodnotou `resolution` (nebo postaru `device-pixel-ratio`).
 
 <div class="ebook-only" markdown="1">
 

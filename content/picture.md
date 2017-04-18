@@ -18,7 +18,7 @@ Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohl�
 
 V elementech `<source>` uvádím alternativy k výchozímu obrázku, který je v `<img>`. Prohlížeč vezme vždy první vyhovující, takže je nutné alternativy řadit od největšího po nejmenší.
 
-Značka `<picture>` přitom tvoří jen obal a prvky `<source>` jakési molitanové vycpávky nesoucí informaci o alternativách. Veškeré stylování nebo věšení událostí v javascriptu je nutné dělat přímo na `<img>` elementu. V každém `<picture>` musí být právě jeden `<img>`.
+Značka `<picture>` přitom tvoří jen obal a prvky `<source>` jakési molitanové vycpávky nesoucí informaci o alternativách. Veškeré stylování nebo věšení událostí v Javascriptu je nutné dělat přímo na `<img>` elementu. V každém `<picture>` musí být právě jeden `<img>`.
 
 Kdy se vám může `<picture>` hodit? Hlavně ve dvou situacích:
 

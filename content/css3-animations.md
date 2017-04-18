@@ -1,7 +1,7 @@
 CSS3 Animations: plnohodnotné animace
 =====================================
 
-Možná se  budete divit, ale toto jsou první nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight…), nebo animují prostředkem, který pro tento účel nebyl navržen – javascriptem.
+Možná se  budete divit, ale toto jsou první nativní webové animace vůbec. Překvapující? Všechny existující způsoby animace jsou buď zapouzdřené ve vlastním technologickém kontejneru (Gif, Flash, Silverlight…), nebo animují prostředkem, který pro tento účel nebyl navržen – Javascriptem.
 
 Jak se liší od [transitions](css3-transitions.md)? V animacích (`animation`) máte celou akci daleko víc pod kontrolou a nemusíte se omezovat na CSS vlastnosti, které u animovaného objektu existují před startem animace. Přechody (`transition`) jsou určené jen pro jednoduché animované přechody změny stavu CSS vlastnosti.
 
@@ -89,5 +89,5 @@ Strategii podpory starších prohlížečů je dobré zvolit podle typu animace.
 
 V případě **vylepšujících animací** (měnší i větší estetické drobnosti v uživatelském rozhraní, u kterých uživateli nevadí, že neproběhnou) není důvod tvořit alternativní řešení.
 
-Pokud **animace nese informaci** (například indikátor stavu načítání uživatelem vloženého souboru), pak je nutné nahradit CSS3 animaci javascriptem nebo detekovat prohlížeče, jež CSS3 animace neovládají a alternativu nabídnout jen jim.
+Pokud **animace nese informaci** (například indikátor stavu načítání uživatelem vloženého souboru), pak je nutné nahradit CSS3 animaci Javascriptem nebo detekovat prohlížeče, jež CSS3 animace neovládají a alternativu nabídnout jen jim.
 

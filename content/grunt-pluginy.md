@@ -61,7 +61,7 @@ Aby se nám weby načítaly rychle, chceme co nejméně requestů a proto spojuj
 
 ### Uglify: zmenšování JS souborů
 
-Soubory spojené pomocí contrib-concat pak ještě v produkční verzi minifikujeme. V javascriptu je minifikace daleko efektivnější než v CSS a proto zde slovo „minifikace“ používám jen pro zjednodušení. Prostě uglify. [Github](https://github.com/gruntjs/grunt-contrib-uglify).
+Soubory spojené pomocí contrib-concat pak ještě v produkční verzi minifikujeme. V Javascriptu je minifikace daleko efektivnější než v CSS a proto zde slovo „minifikace“ používám jen pro zjednodušení. Prostě uglify. [Github](https://github.com/gruntjs/grunt-contrib-uglify).
 
 ### JSHint: validace JS kódu
 

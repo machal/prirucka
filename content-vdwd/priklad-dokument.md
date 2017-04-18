@@ -73,7 +73,7 @@ Podpora CSS proměnných ovšem není vůbec špatná. Z aktuálních prohlíže
 
 Důležité je, že ani v Internet Explorerech se stránka (díky „blbuvzdornosti“ CSS) nerozpadne. Prostě se namísto barev z proměnných použijí barvy výchozí. Texty budou černé, odkazy modré. Vzhledem k rozšířenosti Exploreru verze 11 nám to ale může vadit. Pak doporučuji nasadit automatizované přepočítání proměnných do běžných CSS hodnot. Prohlížeč dostane CSS bez proměnných. Udělejte to pomocí PostCSS. [vrdl.cz/prirucka/postcss](http://www.vzhurudolu.cz/prirucka/postcss)
 
-Konec technické odbočkou, pojďme nastavit další vzhled.
+Konec technické odbočky, pojďme nastavit další vzhled.
 
 
 ## Vlastnosti dokumentu
@@ -92,13 +92,13 @@ To už si nastudujte sami ve staženém příkladu, není to nic složitého.
 
 ## Pomocné třídy
 
-Pomocné třídy jsou tak trochu mimo ostatní kategorie. Nelze je zařadit do dokumentové vrstvy, ani ke komponentám. 
+Pomocné třídy jsou tak trochu mimo ostatní kategorie. Nelze je zařadit do dokumentové vrstvy ani ke komponentám.
 
 ```css
 @import 'helpers/helpers.css';
 ```
 
-Třída `.focus-only` například styluje prvky, jež mají být viditelné jen při ovládání z klávesnice. Například odkaz pro skok na hlavní obsah.
+Třída `.focus-only` například styluje prvky, jež mají být viditelné jen při ovládání z klávesnice, třeba odkaz pro skok na hlavní obsah.
 
 ```css
 .focus-only {
@@ -137,14 +137,14 @@ Zabývám se tím v `document/document.css`. Tím bychom mohli mít v této fáz
 
 ## Organizace CSS do malých souborů
 
-Často ani profesionální weboví vývojáři moc nehledí na organizaci a způsob psaní CSS kódu. Psaní jakékoliv kódu bez jasné štábní kultury ovšem vede ke zbytečným bolehlavům. V knize budeme CSS kód alespoň dělit do malých soběstačných souborů, na které se pomocí závinačového pravidla `@import` odkazuji z hlavního `style.css`. Tvrdím, že je to přehlednější a rychlejší než práce s jedním velkým souborem. Na blogu mám článek o tomto způsobu dělení. [vrdl.cz/blog/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
+Často ani profesionální weboví vývojáři moc nehledí na organizaci a způsob psaní CSS kódu. Psaní jakéhokoliv kódu bez jasné štábní kultury ovšem vede ke zbytečným bolehlavům. V knize budeme CSS kód alespoň dělit do malých soběstačných souborů, na které se pomocí zavináčového pravidla `@import` odkazuji z hlavního `style.css`. Tvrdím, že je to přehlednější a rychlejší než práce s jedním velkým souborem. Na blogu mám o tomto způsobu dělení článek. [vrdl.cz/blog/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
 
 Je ale pravda, že z pohledu rychlosti načítání (alespoň na dnes ještě převládajícím protokolu HTTP/1) je vhodnější posílat prohlížeči CSS v jednom souboru. Šetříme tím dotazy na server, které by na mobilních připojeních velmi oddálily moment vykreslení stránky. CSS preprocesory dělají seskupení importovaných souborů do jednoho automaticky. Udělá to pro vás ale i komponenta `postcss-easy-import` z PostCSS. [vrdl.cz/prirucka/postcss](http://www.vzhurudolu.cz/prirucka/postcss)
 
 
 ## Pěkně jsme si zavrstvili, že?
 
-Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obrázek se dvěmi hlavními vrstvami webu: dokumentové a komponentové. Pracovali jsme teď na té první, takže se nám povedlo ten krásně jednoduchý obrázek zkomplikovat.
+Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obrázek se dvěma hlavními vrstvami webu: dokumentovou a komponentovou. Pracovali jsme teď na té první, takže se nám povedlo ten krásně jednoduchý obrázek zkomplikovat.
 
 <figure>
 <img src="dist/images/original/vdwd/vrstvy-dokument.jpg" alt="">
@@ -166,7 +166,7 @@ Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obráz
 </figure> 
 
 
-Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení. 
+Na obrázku trochu kecám a vy zkušenější to víte. Takhle by stránka sama o sobě v mobilu určitě nevypadala. Na obrázku je vidět až stav potom, co jsme prohlížeči oznámili, že je optimalizovaná pro mobilní zařízení.
 
 Udělali jsme to meta značkou pro viewport. I přes to, že jde o jeden řádek HTML kódu, webaři a webařky v něm umí udělat chyby. Pojďme to napravit a o viewportech si něco povědět.
 

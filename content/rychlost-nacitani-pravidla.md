@@ -110,7 +110,7 @@ Na druhé verzi HTTP protokolu to už obvykle není potřeba dělat. Díky vychy
 
 To bychom měli. Vytvořili jsme si tady základní mapu problémů, které obvykle zpomalují weby. Máte málo času? Doporučím vám začít s následujícími třemi. Má je skoro každý web a jejich odstranění bude mít největší efekt.
 
-1. Datová velikost, hlavně obrázků a javascriptů (bod 1)
+1. Datová velikost, hlavně obrázků a Javascriptů (bod 1)
 2. Javascript blokující vykreslení (bod 2, první odstavec)
 3. Webfonty (bod 2, druhý odstavec)
 

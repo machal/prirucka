@@ -64,7 +64,7 @@ Možnosti jak Analytics debugovat je docela dost:
 
 Analytics standardně změří zhlédnutí stránky jen při konvenčním postupu, kdy se každá nová stránka načítá se serveru na vlastním URL.
 
-Pokud měníte URL z javascriptu, pak to Analytics nepoznají a novou *pageview* nezapočtou. Musíte jim to výslovně říct. Takže ke každé změně URL javascriptem dávejte kód podobný tomuto:
+Pokud měníte URL z Javascriptu, pak to Analytics nepoznají a novou *pageview* nezapočtou. Musíte jim to výslovně říct. Takže ke každé změně URL javascriptem dávejte kód podobný tomuto:
 
 ```javascript
 ga('send', 'pageview', '/new-page.html', {'title': 'Nová stránka'} );

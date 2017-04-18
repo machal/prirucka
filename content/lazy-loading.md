@@ -21,7 +21,7 @@ Odložené načítání má mnoho [různých variant](http://jecas.cz/lazy-loadi
 
 Javascript hlídá scrollování stránky a když uživatel naroluje k obrázku, zkopíruje se obsah `data-src` do `src`.
 
-Aby to bylo dokonale přístupné, musíte ještě uvést variantu pro čtečky a další scénáře kdy se javascript nenačte:
+Aby to bylo dokonale přístupné, musíte ještě uvést variantu pro čtečky a další scénáře kdy se Javascript nenačte:
 
 ```html
 <img src="bg.png" data-src="img1.jpg" alt="…">

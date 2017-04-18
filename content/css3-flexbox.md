@@ -24,7 +24,7 @@ Nová cesta pro tvorbu layoutu, zarovnání a distribuci volné plochy.
 
 <!-- AdSnippet -->
 
-*Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor bez nutnosti přepočítávání javascriptem.
+*Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor bez nutnosti přepočítávání Javascriptem.
 
 ### Základy v jednoduchém příkladu
 

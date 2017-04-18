@@ -2,7 +2,7 @@
 
 [Grunticon](http://www.grunticon.com/) je sada nástrojů pro maximalizaci zpětné kompatibility [SVG](svg.md). 
 
-Nabízí [přímé vložení vektorového obrázku](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do značky `<svg>` pomocí javascriptu. To vám umožní ovlivňovat části SVG pomocí stylů a skriptů podobně jako to děláte u jiných části stránky. Jako bonus od Grunticon dostanete kompatibilitu až do Internet Exploreru ve verzi 6. Pamatujete si na něj ještě?
+Nabízí [přímé vložení vektorového obrázku](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do značky `<svg>` pomocí Javascriptu. To vám umožní ovlivňovat části SVG pomocí stylů a skriptů podobně jako to děláte u jiných části stránky. Jako bonus od Grunticon dostanete kompatibilitu až do Internet Exploreru ve verzi 6. Pamatujete si na něj ještě?
 
 V „balení“ najdete [Grunt](grunt.md) úlohu pro zpracování sady SVG obrázků a javascriptovou knihovnu pro ošetření fallbacků. Úloha vygeneruje PNG verze obrázků pro staré prohlížeče a tři verze souborů se styly. Kouskem skriptu se pak rozhoduje, který typ fallbacku se použije.
 
@@ -86,7 +86,7 @@ grunticon(
 </script>
 ```
 
-Nezapomeňte uvést i alternativu pro prohlížeče bez běžícího javascriptu:
+Nezapomeňte uvést i alternativu pro prohlížeče bez běžícího Javascriptu:
 
 ```html
 <noscript>
@@ -98,7 +98,7 @@ Další kroky jsou volitelné. Potřeboval jsem je udělat, protože ikony použ
 
 ## Ošetření zachování poměru stran
 
-Zachování poměru stran se hodí pro krátký čas než se načtou SVG ikony a pro prostředí bez javascriptu.  Tohle nám trochu zkomplikuje HTML kód:
+Zachování poměru stran se hodí pro krátký čas než se načtou SVG ikony a pro prostředí bez Javascriptu.  Tohle nám trochu zkomplikuje HTML kód:
 
 ```html
 <p class="icon">

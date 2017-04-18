@@ -8,7 +8,7 @@ Pokud se nechcete zabývat celým příběhem, do CSS si prostě přidejte tohle
 @-ms-viewport { width: device-width; }
 ```
 
-A pokud chcete hezky zobrazovat weby na mobilních Windows 8, přidejte si do stránky i kousek javascriptu z konce tohoto článku. Raději si text ovšem přečtěte celý, je to chvilka času.
+A pokud chcete hezky zobrazovat weby na mobilních Windows 8, přidejte si do stránky i kousek Javascriptu z konce tohoto článku. Raději si text ovšem přečtěte celý, je to chvilka času.
 
 ## Windows Phone 8.1 a menší problémy
 
