@@ -1,8 +1,8 @@
 # Zdroje elementů grafického designu 
 
-U jednodušších webů nebo webových aplikací je možné ke návrhu [grafického designu](graficky-design.md) přistoupit jako ke skládance. 
+U jednodušších webů nebo webových aplikací je možné k návrhu [grafického designu](graficky-design.md) přistoupit jako ke skládance. 
 
-Servíruji zde zdroje, které pro jednotlivé přísady grafického designu webu používám sám. Pokud opravdu začítáne, držte se zásady „méně je vždy více“.
+Servíruji zde zdroje, které pro jednotlivé přísady grafického designu webu používám sám. Pokud opravdu začínáte, držte se zásady „méně je vždy více“.
 
 
 ## Písmo
@@ -11,7 +11,7 @@ O výběru písma více píšu [v následujícím textu o příkladu](priklad-ba
 
 ### Systémová písma
 
-Nezapomínejte na ně. I v operačních systémech totiž na vaše použití čekají kvalitní písma. Kvalitních fontů je dnes v operačních systémech dost, ale naprostá většina není široce dostupná. Ve snaze být velmi stručný doporučím hlavně dvě klasiky od Matthew Cartera, které najdete skoro na každém zařízení. *Georgii* pro čtení a *Verdanu* pro nadpisy a prvky uživatelského rozhraní. 
+Nezapomínejte na ně. I v operačních systémech totiž čekají kvalitní písma, až je využijete. Kvalitních fontů je dnes v operačních systémech dost, ale naprostá většina není široce dostupná. Ve snaze být velmi stručný doporučím hlavně dvě klasiky od Matthewa Cartera, které najdete skoro na každém zařízení.*Georgii* pro čtení a *Verdanu* pro nadpisy a prvky uživatelského rozhraní. 
 
 ### Google Fonts
 
@@ -32,7 +32,7 @@ Výběr sady dvou písem pro jedno užití je víceméně vyšší dívčí. Pok
 ## Fotky, ilustrace, ikony
 
 * Iconfinder skladuje ikony a jednoduché vektory. Můj velmi častý zdroj. [iconfinder.com](https://www.iconfinder.com/)
-* PhotoPin a Pixabay skladují fotografie s Creative Commons licencí.
+* PhotoPin a Pixabay skladují fotografie s licencí Creative Commons.
 [photopin.com](http://photopin.com/free-photos/) [pixabay.com](https://pixabay.com/cs/)
 * Adobe Stock pro všechny ostatní obrázky. [stock.adobe.com](https://stock.adobe.com/cz/)
 

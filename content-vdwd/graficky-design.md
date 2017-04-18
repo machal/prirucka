@@ -27,23 +27,23 @@ Layout jak celé stránky, tak rozmístění prvků v rámci jednotlivých kompo
 
 Kromě této základní čtyřky mají designéři k dispozici další prostředky. Například interakce a animace. Ty na obrázku nevidíte a v některých případech je grafičtí designéři ani nenavrhují. Může to být práce specializovaného interakčního designéra nebo prostě frontend kodéra. 
 
-Je asi jasné, že velmi záleží na kvalitě každé z těchto čtyř komponent. Takže dobře navržený web s nekvalitními fotografiemi fungovat nebude, čehož jsme každý den nešťastnými svědky. Každý ze čtyř prostředků, snad kromě layoutu, podléhá módě. Ale to jak dohromady fungují by nemělo být výsledkem grafikova aktuálního rozpoložení pod vlivem módy a měkkých drog. Ty jsou povoleny, ale i tak by grafika měla být důsledkem promyšleného procesu.
+Je asi jasné, že velmi záleží na kvalitě každé z těchto čtyř komponent. Takže dobře navržený web s nekvalitními fotografiemi prostě fungovat nebude, čehož jsme každý den nešťastnými svědky. Každý ze čtyř prostředků, snad kromě layoutu, podléhá módě. Ale to, jak dohromady fungují, by nemělo být výsledkem grafikova aktuálního rozpoložení pod vlivem módy a měkkých drog. Ty jsou povoleny, ale i tak by grafika měla být důsledkem promyšleného procesu.
 
 ## Grafika se může líbit, ale musí sloužit!
 
-Jeden z nejčastějších omylů webdesignérů a jejich klientů. Musím to zopakovat i já. Cílem webové grafiky není *líbivost* nebo *podbízivost*. Grafika má účelu, pro který web tvoříme.
+Jeden z nejčastějších omylů webdesignérů a jejich klientů. Musím to zopakovat i já. Cílem webové grafiky není *líbivost* nebo *podbízivost*. Grafika má sloužit účelu, pro který web tvoříme.
 
-Barvy, použitá písma, styl fotografií nebo rozvržení vyvolávají ve čtenáři nějaký pocit. Nesmí to být náhodný pocit nebo dobrý pocit u špatných lidí jako je grafik nebo klient. Pokud se klientovi web líbí, je to fajn. Když to ale neplní potřeby cílové skupiny, je to průšvih.
+Barvy, použitá písma, styl fotografií nebo rozvržení vyvolávají ve čtenáři nějaký pocit. Nesmí to být náhodný pocit nebo dobrý pocit u špatných lidí, jako je grafik nebo klient. Pokud se klientovi web líbí, je to fajn. Když ale neplní potřeby cílové skupiny, je to průšvih.
 
-Jak to ale zjistit? Předám tady slovo Janu Řezáčovi, přednímu UX konzultantovi:
+Jak to zjistit? Předám tady slovo Janu Řezáčovi, přednímu UX konzultantovi:
 
 > Názory se nepočítají. Jak tedy přistoupit k designu objektivně? Víte, jak má váš design působit na návštěvníky. A to můžete otestovat. 
 
-Jan to na svém webu rozebírá spolu s dalšími častými chybami při návrhu a posuzování grafiky. Pro rychlé posouzení grafiky doporučuje pětisekundový nebo kartičkový testu. [houseofrezac.com/grafika](https://www.houseofrezac.com/grafika)
+Jan to na svém webu rozebírá spolu s dalšími častými chybami při návrhu a posuzování grafiky. Pro rychlé posouzení grafiky doporučuje pětisekundový nebo kartičkový test.  [houseofrezac.com/grafika](https://www.houseofrezac.com/grafika)
 
 ## Grafik versus designér
 
-Takže už všichni víme, že barvy, fonty a tlačítka nemají být jen hezká, ale také účel plníci. Proto považuji za dobré zmínit rozdíl mezi často splývajícím pojmy „grafik“ a „designér“.
+Takže už všichni víme, že barvy, fonty a tlačítka nemají být jen hezké, ale také účel plnící. Proto považuji za dobré zmínit rozdíl mezi často splývajícími pojmy „grafik“ a „designér“.
 
 Hezky to popsal Otto Bohuš:
 

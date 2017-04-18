@@ -4,9 +4,9 @@ Pojďme si projít základní množinu znalostí o využití písma na webu, zm�
 
 ## Písmo v nás vyvolává emoce
 
-Než se začteme, může nám typ písma (spolu s dalšími prostředky vizuálního designu) sdělit informaci, co od webu očekávat. Jsem na webu seriózního magazínu, užitného webu typu e-shopu nebo na stránkách Déčka, určeného pro děti? Asi je jasné, že tohle všechno je možné sdělit nebo zpochybnit mimojiné i volbou písma. Je toho ale mnohem více.
+Než se začteme, může nám typ písma (spolu s dalšími prostředky vizuálního designu) sdělit informaci, co od webu očekávat. Jsem na webu seriózního magazínu, užitného webu typu e-shopu, nebo na stránkách Déčka, určeného pro děti? Asi je jasné, že tohle všechno je možné sdělit nebo zpochybnit mimo jiné i volbou písma. Je toho ale mnohem více.
 
-Pro potřeby předání základní úrovně typografických znalostí mě tady připadá lepší začít z druhého konce. Chybami.
+Pro potřeby předání základní úrovně typografických znalostí mně tady připadá lepší začít z druhého konce. Chybami.
 
 
 ## Časté typografické chyby
@@ -14,7 +14,7 @@ Pro potřeby předání základní úrovně typografických znalostí mě tady p
 
 ### 1) Příliš dlouhé řádky
 
-Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl zabrat více než 75 znaků, aby oči nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
+Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl obsahovat více než 75 znaků, aby oči nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
 
 <figure>
 <img src="dist/images/original/typografie-16.jpg" alt="">
@@ -26,7 +26,7 @@ Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl za
 
 ### 2) Špatný kontrast a další technické parametry
 
-Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou možnost díky kombinaci několika faktorů. 
+Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou variantu díky kombinaci několika faktorů. 
 
 <figure>
 <img src="dist/images/original/typografie-17.jpg" alt="">
@@ -39,7 +39,7 @@ Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastch
 
 ### 3) Nesprávné znaky
 
-Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv minus) nebo výpustku (nikoliv tečky).
+Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv spojovník, který na klávesnici můžete považovat za minus) nebo výpustku (nikoliv tři běžné tečky). 
 
 <figure>
 <img src="dist/images/original/typografie-18.jpg" alt="">
@@ -48,28 +48,28 @@ Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol pal
 </figcaption> 
 </figure>
 
-Není to žádná buzerace typografických snobů. Prostě se to lépe čte.   Typografický tahák od Beneš a Michl vám může velmi pomoci. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
+Není to žádná buzerace typografických snobů – prostě se to lépe čte. Typografický tahák od Beneš a Michl vám může velmi pomoci. [http://vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
 
 
 ## Ideální šířka a výška řádku
 
-Teď zpozorněte, protože zmíním jeden ze základních designérských principů dnešního (responzivního) webdesginu.
+Teď zpozorněte, protože zmíním jeden ze základních designérských principů dnešního (responzivního) webdesignu.
 
 Na příkladu Wikipedie jsem ukazoval, jak se může dlouhý řádek negativně projevit do celkové čitelnosti textu a webu. A není to jen problém Wikipedie.
 
 Platí totiž následující:
 
 - 66 je ideální počet znaků na jedné řádce,
-- 45-75 je pak vyhovující rozmezí.
+- 45–75 je pak vyhovující rozmezí.
 
-U webů, jako je právě Wikipedie, se čtenářům stává že snadno ztrácejí aktuálně čtenou řádku. Rychlost čtení se tím snižuje.
+U webů, jako je právě Wikipedie, se čtenářům stává, že snadno ztrácejí aktuálně čtenou řádku. Rychlost čtení se tím snižuje.
 
 Jsou to pravidla, která zpopularizoval Robert Bringhurst ve své knize „The Elements of Typographic Style“ a která jsou průběžně potvrzována nejrůznějšími studiemi. Ale vyzkoušet si je můžete i sami na sobě. 
 
 Na malých displejích však není možné optima dosáhnout. Doporučení pak říkají s ubývajícím počtem znaků na řádce snižovat i jeho výšku, protože oči častěji přecházejí z jedné řádky na druhou. 
 
 
-Tady je praktické řešení v CSS, která ukazoval Marko Dugonjić na své přednášce „Responsive Web Typography“ na WebExpo 2014. [vrdl.in/rwdtypo](https://speakerdeck.com/maratz/responsive-web-typography-at-webexpo)
+Tady je jedno z možných řešení v CSS, které ukazoval Marko Dugonjić ve své přednášce „Responsive Web Typography“ na WebExpo 2014. [vrdl.in/rwdtypo](https://speakerdeck.com/maratz/responsive-web-typography-at-webexpo)
 
 
 ```css
@@ -86,11 +86,11 @@ body { line-height: 1.5 }
 p    { margin-bottom: 1.5em }
 ```
 
-Toto nastavení předpokládá vysázení patkovým písmem a do jednoho sloupce. Drobně se samozřejme může měnit podle parametrů písma. Jinak to bude pro nepatkové písmo, pro jiný kontrast, pro specifický charakter písma nebo počet sloupců. Nejlépe nám správnou volbu potvrdí poctivé uživatelské testování, ale pro začátek stačí nastavení písem testovat na různých zařízeních a různých lidech ve vašem okolí.
+Toto nastavení předpokládá vysázení patkovým písmem a do jednoho sloupce. Drobně se samozřejmě může měnit podle parametrů písma. Jinak to bude pro nepatkové písmo, pro jiný kontrast, pro specifický charakter písma nebo počet sloupců. Nejlépe nám správnou volbu potvrdí poctivé uživatelské testování, ale pro začátek stačí nastavení písem testovat na různých zařízeních a různých lidech ve vašem okolí.
 
 Příliš malý řádkový proklad spojuje sousedící znaky, zhoršuje čitelnost slov a ve výsledku zpomaluje čtení. Příliš velký zase vypadá jako seznam samostatných položek a nutí uživatele přemýšlet, zda se jedná o souvislý text nebo o nějakou formu odrážek.
 
-Nicméně, délka a výška řádku je první designérské pravidlo, na které bychom při návrhu rozhraní měli myslet. Postup návrhu pak ideálně vypadá tak, že zvolíme písmo, získáme obsah a až na těchto dvou nerozlučných přátelích postavíme systém pro layout stránky.
+Nicméně délka a výška řádku je první designérské pravidlo, na které bychom při návrhu rozhraní měli myslet. Postup návrhu pak ideálně vypadá tak, že zvolíme písmo, získáme obsah a až na těchto dvou nerozlučných přátelích postavíme systém pro layout stránky.
 
 
 ## Další zdroje o typografii
