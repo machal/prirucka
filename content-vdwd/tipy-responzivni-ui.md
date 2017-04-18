@@ -1,7 +1,5 @@
 # 8 tipů pro jednodušší rozhraní na mobilech
 
-![Zetor.cz]()
-
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-7.jpg" alt="">
 <figcaption markdown="1">    
