@@ -2,13 +2,11 @@
 
 Mobile First je způsob návrhu uživatelského rozhraní, který z pohledu důležitosti staví mobilní zařízení minimálně na úroveň tradičních počítačů s velkými obrazovkami. 
 
-Kromě reflexe nástupu mobilů na trh má Mobile First  ještě jednu – daleko zajímavější – vedlejší účinek. Učí nás navrhovat jednodušší a myslím, že i lepší rozhraní.
+Kromě reflexe nástupu mobilů na trh má Mobile First  ještě jeden – daleko zajímavější – vedlejší účinek. Učí nás navrhovat jednodušší a myslím, že i lepší rozhraní.
 
-Autor myšlenky, Luke Wroblewski, ji nadefinoval asi takto:
+Autor myšlenky, Luke Wroblewski, ji definoval asi takto:
 
 > Designéři, navrhujte nejprve pro mobily. Prudce se šíří mezi uživateli. Nutí zaměřit pozornost na to nejdůležitější. A rozšiřují naše možnosti.
-
-Parafrázuji, necituji. Plné znění hledejte ve slavném Wroblewskiho článku „Mobile First“. [vrdl.in/4slev](http://www.lukew.com/ff/entry.asp?933)
 
 ## Mobily budou používanější než desktop. Někde už jsou
 
@@ -17,7 +15,7 @@ Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé pří
 <figure>
 <img src="dist/images/original/mobile-facebook-graph.jpg" alt="VašeČočky.cz - dvě skici">
 <figcaption markdown="1">    
-*94 % uživatelů Facebooku přistupovalo ke konci roku 2016 na Facebook přes mobilní zařízení. 62 % používalo výlučně mobilní zařízení. Zdroj: Luke Wroblewski. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)*
+*94 % uživatelů přistupovalo ke konci roku 2016 na Facebook přes mobilní zařízení. 62 % jich používalo dokonce výlučně mobilní zařízení. Zdroj: Luke Wroblewski. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)*
 </figcaption> 
 </figure>
 
@@ -32,11 +30,11 @@ Pro mnohé designéry, včetně mě, je proto lepší si rozhraní navrhnout nej
 <figure>
 <img src="dist/images/original/vdwd/vase-cocky-dve-skici.jpg" alt="">
 <figcaption markdown="1">    
-*Rychlé ruční skici pro VašeČočky.cz*
+*Rychlé ruční skici „Mobile First“ návrhů pro VašeČočky.cz*
 </figcaption> 
 </figure>
 
-Při skicování mobilního rozhraní jsme omezení plochou a rozhraní zredukujeme na to nejpodstatnější. Pro přípravu verze pro větší displeje často stačí jen použít běžné techniky responzivního designu: zvětšení nebo mírné přeskládání elementů.
+Při skicování mobilního rozhraní jsme omezení plochou. Uživatelské rozhraní pak přirozeně redukujeme na to nejpodstatnější. K přípravě verze pro větší displeje často stačí jen použít běžné techniky responzivního designu: zvětšení nebo mírné přeskládání elementů.
 
 Je ale tento nový pohled na návrh jediným důsledkem „Mobile First“ filozofie?
 
@@ -54,7 +52,7 @@ Opravdu ale chceme dávat mobily na první místo?
 
 Uvědomme si, že Wroblewski s myšlenkou přišel v roce 2009. Jen dva roky po uvedení prvního iPhonu.  Zvolání „Mobile First!“ vzniklo jako reakce na v té době převládající postup. Weby se navrhovaly jen pro velké displeje. Takzvaným „Desktop First“ postupem. 
 
-Mobily se pak řešily až v implementační fázi nebo dokonce až po implementaci rozhraní pro velké displeje. Nastávaly ohromné vývojářské i designérské potíže. Ve výsledku pak velké kompromisy v uživatelském rozhraní na mobilech. Že je téma stále žhavé, ukazuje fakt, že v mnoha českých webařských týmech jde stále o aktuální způsob práce. To bolí!
+Mobilní rozhraní se pak vymýšlelo až v implementační fázi nebo dokonce až po implementaci rozhraní pro velké displeje. Nastávaly ohromné vývojářské i designérské potíže. Ve výsledku pak velké kompromisy v uživatelském rozhraní na mobilech. Že je téma stále žhavé, ukazuje fakt, že v mnoha českých webařských týmech jde stále o aktuální způsob práce. To bolí!
 
 ## Dnes už nejde o upřednostnění mobilů, ale hledání jednoho řešení vhodného pro všechny
 
@@ -64,9 +62,9 @@ Pro mě i mnoho dalších je ale efektivnější myslet při návrhu rozhraní n
 
 ## „Desktop First“ a „Mobile First“ na příkladech
 
-Příkladů „Desktop First“ řešení najdeme v Česku hodně. Vezměme Alzu, která má v době mého psaní dva oddělené weby pro malé a pro velké displeje. Webařský tým Alzy odvádí skvělou práci, stačí se podívat na jejich pozici na trhu. Nesou si s sebou ale zátěž návyku uživatelů na web, který už dnes nesplňuje podmínky efektivního vývoje.
+Příkladů „Desktop First“ řešení najdeme v Česku hodně. Vezměme Alzu, která má v době mého psaní dva oddělené weby pro malé a pro velké displeje. Webařský tým Alzy odvádí skvělou práci, stačí se podívat na jejich pozici na trhu. Nesou si s sebou ale zátěž desktopového webu. Ten už dnes plně nereflektuje rozšíření mobilních zařízení mezi uživateli.
 
-Jen si například spočítejte, kolik různých navigací má desktopová verze Alzy. Už to samo o sobě nevěstí nic dobrého pro „převod“ do mobilní podoby. V té pak některé navigace zmizí, jiné pak vypadají výrazně jinak než na desktopu. Rozhraní tedy z pohledu uživatele trpí nekonzistencí. 
+Jen si například spočítejte, kolik různých navigací má desktopová verze Alzy. Už to samo o sobě nevěstí nic dobrého pro „převod“ do mobilní podoby. V mobilní verzi pak některé navigace „zmizí“, jiné zase vypadají výrazně jinak než na desktopu. Rozhraní tedy z pohledu uživatele trpí nekonzistencí. 
 
 <figure>
 <img src="dist/images/original/vdwd/alza-cz.jpg" alt="">
@@ -75,7 +73,7 @@ Jen si například spočítejte, kolik různých navigací má desktopová verze
 </figcaption> 
 </figure>
 
-Provozovatelé velkých a úspěšných webů samozřejmě nechávají zásadní redesign až na chvíli, kdy je nezbytně nutný. Převod do responzivní „Mobile First“ verze bude v případě Alzy znamenat práci na mnoho měsíců až let. 
+Provozovatelé velkých a úspěšných webů samozřejmě často nechávají zásadní redesign až na chvíli, kdy je nezbytně nutný. Převod do responzivní „Mobile First“ verze v případě Alzy znamená práci na mnoho měsíců až let. 
 
 Na druhé straně je Maternia, provozovatel e-shopů jako VašeČočky.cz nebo Lentiamo.co.uk, a můj vážený klient. Tam se k zásadním změnám rozhodli už při zvažování výroby speciální mobilní verze. 
 
@@ -87,3 +85,11 @@ Mobile First postupem jsme postupně přepracovali celý web. Všechny komponent
 *VašeČočky.cz jako příklad „Mobile First“ přístupu*
 </figcaption> 
 </figure>
+
+Vedlejší, ale podstatnou výhodou, je pak jednotnost na úrovni kódu, která Maternii šetří práci a zrychluje vývoj.
+
+Tolik k Mobile First. Původní znění myšlenky hledejte ve slavném Wroblewskiho článku „Mobile First“. [vrdl.in/4slev](http://www.lukew.com/ff/entry.asp?933)
+
+<div class="ebook-only" markdown="1">
+V další podkapitole se zaměříme na chování uživatelů.
+</div>

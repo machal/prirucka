@@ -9,8 +9,8 @@
 - Aktivní plochy dělejte alespoň jeden čtvereční centimetr velké.
 - Uživatelům nevadí extra kliknutí navíc, pokud o nich nemusí přemýšlet.
 - Šetřete ikonami, nabídkami v `<select>` a karusely. Nenuťte uživatele psát delší texty a neprotahujte délku stránky.
-- Otevírejte správné klávesnice, používejte krokovače a vyhledávání s našeptávačem.
-- Neschovávejte na mobilech obsah. Jen dekorace.
+- Otevírejte správné softwarové klávesnice, používejte krokovače a vyhledávání s našeptávačem.
+- Neschovávejte na mobilech obsah. Jen dekorativní prvky.
 - Nevkládejte do webů zbytečně tlačítka sociálních sítích.
 - Vyhněte se fixně pozicovaným elementům.
-- Nezakazujte zoom.
+- Nezakazujte zvětšování stránky zoomem.
