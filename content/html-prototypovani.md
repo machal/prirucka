@@ -1,8 +1,8 @@
-# Živé webové prototypy
+# HTML prototypy
 
 Když vyslovíme slovo „prototyp“ v hospodě – a nebude přitom zrovna plná webařů – asi si okolosedící představí testovací model nějakého výrobku. 
 
-Prototyp je obvykle definován jako *raný* vzorek, který byl vytvořen pro *otestování* myšlenkového konceptu nebo pracovního procesu v začátcích práce na produktu. Na výsledek testu se buď naváže v reálné výrobě nebo se z něj poučíme a zkusíme to jinak.
+Prototyp je obvykle definován jako *raný* vzorek, který byl vytvořen pro *otestování* myšlenkového konceptu nebo pracovního procesu. Na výsledek testu se buď naváže v reálné výrobě nebo jej zahodíme, poučíme se a zkusíme to jinak.
 
 <!-- AdSnippet -->
 
@@ -18,16 +18,16 @@ Prototypování je učení na produktu, který je co nejpodobnější tomu cílo
 
 ## Co je to HTML prototyp a jak se liší třeba od Axure?
 
-Exporty do prohlížečové verze dnes nabízí leckteré „klikací“ nástroje – například Axure RP. Exporty jsou ovšem limitované tím, co zvládá klikací rozhraní. Plnohodnotné HTML, CSS a Javascript nabídnou vždy výrazně větší možnosti vyjádření. Ale mají i jiné výhody, za chvíli se k nim dostaneme.
+Exporty do prohlížečové verze dnes nabízí leckteré „klikací“ nástroje – například Axure RP. Exporty jsou ovšem často limitované tím, co zvládá klikací rozhraní. Plnohodnotné HTML, CSS a Javascript nabídnou vždy výrazně větší možnosti vyjádření. 
 
-Pokud vám Axure RP a podobné *wireframovací* nástroje vyhovují, není důvod je měnit. Kromě snadnější práce pro designéra umožňují testovat interakce a další věci. V mnoha týmech mají podobné nástroje nezastupitelnou roli. S HTML prototypováním se nevylučují a mohou se hezky doplňovat. [axure.com](https://www.axure.com/)
+Pokud vám Axure RP a podobné *wireframovací* nástroje vyhovují, není důvod je měnit. Kromě snadnější práce pro designéra umožňují testovat interakce a další věci. V mnoha týmech mají podobné nástroje nezastupitelnou roli. S HTML prototypováním se nevylučují a mohou se hezky doplňovat. 
 
 HTML prototypy, o kterých tady mluvím, jsou prostě plnohodnotné webové stránky vytvořené technologiemi, které jsou v dnešních prohlížečích po ruce. Jen jsou cíleně zjednodušené – ořezané o některé atributy, které by finální stránka mít měla a prototyp nemusí.
 
 <figure>
 <img src="dist/images/original/html-prototypovani-1.jpg" alt="">
 <figcaption markdown="1">    
-*Jeden z raných HTML prototypů VašeČočky.cz a finální stránka webu*
+*Jeden z raných HTML prototypů VašeČočky.cz a tatáž stránka na finálním webu, ke které jsme dospěli iterativním procesem*
 </figcaption> 
 </figure>
 
@@ -35,15 +35,15 @@ HTML prototypy, o kterých tady mluvím, jsou prostě plnohodnotné webové str�
 
 ## HTML prototypy mají své výhody
 
-Mohou totiž být…
+Jsou brzy v prohlížeči, mají volitelnou míru věrnosti a mohou být znovupoužitelné a snadno udržovatelné.
 
 ### Brzy v prohlížeči
 
-Vzpomeňte na slovo „raný“ v definici prototypu. Máme problém složitý k vymýšlení na papíře nebo v Photoshopu? Pak co nejdříve do reálného prostředí s tím – do prohlížeče! Výrobci aut také s testem na silnicích nečekají až sjedou první hotová auta z výrobních linek.
+Vzpomeňte na slovo „raný“ v definici prototypu. Máme problém složitý k vymýšlení na papíře nebo v Photoshopu? Pak co nejdříve do reálného prostředí s tím – do prohlížeče! 
 
 ### Plnohodnotné
 
-Prototypy tvořené webovými technologiemi jsou ze stejného těsta jako hotové weby. Ve vybraných aspektech je dosáhnout absolutní míry věrnosti s konečným produktem.
+Prototypy tvořené webovými technologiemi jsou ze stejného těsta jako hotové weby. Ve vybraných aspektech lze dosáhnout absolutní míry věrnosti s konečným produktem.
 
 ### Znovupoužitelné
 
@@ -63,14 +63,14 @@ Nástroje, používané pro demonstraci a odzkoušení nějaké myšlenky použ�
 
 * Je to vlastně kostra pro webový design. Ukazuje obsah, možnosti jeho rozložení a případně základní interakce. „Dráťák“ je rychle hotový, ale velmi zjednodušuje. Obvykle je to levná volba, ideální pro úvodní fáze projektů.
 * Model nízké věrnosti s finálním webem. 
-* Nejméně časově náročné.
+* Nejméně časově náročný.
 * Nástroje: ruční skicování nebo programy jako UXPin nebo Balsamiq Mockups.
 
 ### Statická maketa (mockup)
 
-* Na jednu stranu velmi detailní, jiné atributy prototypu ignorující. Typická maketa je výstup z Photoshopu, který obvykle detailně popisuje vizuální design, ale interakce nebo chování v různých rozlišeních naopak zcela nedostatečně.
+* Na jednu stranu velmi detailní, jiné atributy prototypu ignorující. Typická maketa je výstup z Photoshopu, který obvykle detailně popisuje vizuální design. Interakce nebo chování v různých rozlišeních statická maketa popisuje naopak zcela nedostatečně.
 * Model střední až vysoké věrnosti. 
-* Časově středně a hodně náročné.
+* Časově středně a hodně náročná.
 * Nástroje: Photoshop, Sketch.
 
 ### Interaktivní prototyp
@@ -89,23 +89,19 @@ Designéři uživatelského rozhraní a weboví grafici mohou ocenit možnost na
 
 ### 1. Responzivnost
 
-Častý problém maket z grafických programů je statický výstup. UI komponentu není možné otestovat na všech rozlišeních. Rychlý HTML prototyp to řeší.
+Častý problém maket z grafických programů je statický výstup. UI komponentu není možné otestovat na široké šlále zařízení nebo jen rozlišení. HTML prototyp to řeší.
 
-### 2. Testování na uživatelích
-
-Uživatelsky můžete testovat klidně i papírové skici nebo výstupy z Axure a Photoshopu. Jen HTML prototypy vám ale nabízejí volitelnou míru věrnosti konkrétního instrumentu uživatelského rozhraní.
-
-### 3. Animace
+### 2. Animace
 
 Nástroje pro tvorbu maket jako Photoshop tady nepomohou. Klikací animační nástroje s výstupem do plnohodnotných CSS animací zatím nemáme. I tohle si můžete v rychlosti otestovat s pomocí svého kodéra.
 
-### 4. Pokročilé interakce
+### 3. Pokročilé interakce
 
-Nemyslím tím jen „kliknu a přejdu na jinou stránku“. V HTML se skvěle prototypují třeba ajaxové interakce, klidně spojené s animací.
+Nemyslím tím jen „kliknu a přejdu na jinou stránku“. V HTML se skvěle prototypují třeba složitější ajaxové interakce, klidně spojené s animací.
 
-### 5. Pokročilé technologie
+### 4. Pokročilé technologie
 
-SVG výplně, výřezy, filtry, efekty… tady opravdu nevím, jak jinak než přímo v HTML si to zkusit. [vrdl.cz/prirucka/svg-inspirace](http://www.vzhurudolu.cz/prirucka/svg-inspirace)
+SVG výplně, výřezy, filtry, efekty… Tady opravdu nevím, jak jinak než přímo v HTML vyzkoušet řešení na nich postavená. 
 
 <!-- AdSnippet -->
 
@@ -143,7 +139,7 @@ Klikací prototypovací nástroje jako Axure nám pachatele mezi obvyklými pode
 
 ## Nevýhody HTML prototypů: časově náročné a vyžadují zkušenější tým
 
-Celou dobu tady o plnohodnotných prototypech básním, takže si teď pojďme říci, v čem tkví jejich problémy:
+Celou dobu tady o plnohodnotných prototypech básním, takže si teď také pojďme říci, v čem tkví jejich problémy:
 
 ### Jsou časově náročné a tedy dražší
 
@@ -155,7 +151,7 @@ Hlavně u nezkušených frontendistů se může protypování zbytečně prodra�
 
 ### Vyžadují intenzivní spolupráci designérů a frontendistů
 
-Prostě si spolu musíte sednout a pracovat na prototypech dohromady. V dělených týmech to moc nejde.
+Prostě si spolu musíte sednout a pracovat na prototypech dohromady. V dělených týmech to často nejde.
 
 ### Složitější zařazení do workflow větších týmů
 
@@ -165,7 +161,7 @@ Může vám chybět přímé napojení na Axure, Photoshop nebo jiné designérs
 
 Někdy se dá znovupoužitelnost kódu z prototypu dosáhnout, ale pokud s živými prototypy začínáte, raději na tom netrvejte.
 
-Moje vlastní zkušenost: U responzivního redesignu VašeČočky.cz jsem tak moc stál o znovupoužitelnost kódu prototypu, že jsem v některých jeho částech  dosahoval závratně hlemýždího tempa přípravy. Někdy je prostě pro zvýšení rychlosti lepší prototypový kód zahodit a pro finální web napsat znovu. 
+Moje vlastní zkušenost: U responzivního redesignu VašeČočky.cz jsem tak moc stál o znovupoužitelnost a kvalitu kódu prototypu, že jsem v některých jeho částech  dosahoval závratně hlemýždího tempa přípravy. Někdy je prostě lepší pro zvýšení rychlosti a lepší zaměření pozornosti prototypový kód zahodit a pro finální řešení jej napsat znovu. 
 
 
 
@@ -204,7 +200,8 @@ Většina mých projektů z posledních let vznikla nejprve jako živý prototyp
 
 Bootstrap podporuje stavebnicový vývoj. Zároveň dodává řadu principů (prostřednictvím proměných a mixinů), na kterých pak snadno můžeme stavět své vlastní komponenty. 
 
-Čtěte „Jak správně navázat na typografické principy Bootstrapu?“ na Vzhůru dolů. [vrdl.cz/prirucka/bootstrap-typografie](http://www.vzhurudolu.cz/prirucka/bootstrap-typografie)
+Video: O HTML prototypování také hezky povídal i Adam Kudrna na jedné z akcí Frontendisti.cz. [vrdl.in/2t451](https://youtu.be/A71kFP8I_qY)
 
-O HTML prototypování hezky povídal i Adam Kudrna na jedné z akcí Frontendisti.cz. [https://youtu.be/A71kFP8I_qY](https://youtu.be/A71kFP8I_qY)
-
+<div class="ebook-only" markdown="1">
+Nyní si pojďme znalosti o skicování a prototypech promítnout do práce na fotogalerii v našem e-shopu.
+</div>

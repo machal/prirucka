@@ -17,15 +17,13 @@ Na papír si skicou odložím základní obrysy problému a uvolním mentální 
 
 Při skicování je důležité soustředění na problém. Existuje celá řada softwarových nástrojů, ale ty mě rozptylují počítačovým prostředím. 
 
-Používám prostě tužku, gumu a papír. Když mám na výběr, volím bílý papír ve formátu A3 nebo předtištěné šablony od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
+Používám prostě tužku, gumu a papír. Když mám na výběr, volím bílý papír ve formátu A3 nebo předtištěné šablony. Na konci textu najdete tipy na nástroje pro tisk šablon.
 
-Pěkný je také Gridzzly, nástroj Rostislava Blahy, který vám umožní tisk požadované mřížky na čistý papír. [gridzzly.com](http://gridzzly.com/)
+Jiní skicují popisovačem Sharpie nebo elektronicky v nějaké aplikaci na tabletu. Zkrátka – vezměte, co vám vyhovuje a v čem jste rychlí a dosáhnete požadované úrovně kvality.
 
-Ale jiní skicují popisovačem Sharpie nebo do elektronicky v nějaké aplikaci na iPadu. Vezměte, co vám vyhovuje a v čem jste rychlí a dosáhnete požadované úrovně kvality.
+Na rozdíl od uměleckého skicování, u náčrtů uživatelského rozhraní nemusíte umět kreslit. Stačí vám jakžtakž zvládnout úsečky, obdélníky, kružnice a psaní. To by šlo, ne? Pokud si myslíte, že mé skici jsou pěkné, je to proto, že ty úplně první náčrty tady nevidíte. Výhoda skicování je totiž také ve snadném měnění.
 
-Na rozdíl od uměleckého skicování, u náčrtů uživatelského rozhraní nemusíte umět kreslit. Stačí vám jakžtakž zvládnout úsečky, obdélníky, kružnice a psaní. To by šlo, ne? Pokud si myslíte, že mé skici jsou pěkné, je to proto, že ty úplně první náčrty jsem se vám styděl ukázat. Samozřejmě, výhoda skicování je také v rychlých iteracích. 
-
-Dále se budu zabývat jen specifickým typem skicování: rychlým náčrtům variant designérského řešení. Jako průvodce pro detailnější zkoumání si zvolte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování". [vrdl.in/8yd6f](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
+Dále se budu zabývat jen specifickým typem skicování: rychlým náčrtům variant designérského řešení. 
 
 ## Skicování variant designérského řešení
 
@@ -40,4 +38,12 @@ Jsem na začátku přemýšlení o designu konkrétní komponenty. Skicování v
 
 Mozek zapojím až v další fázi. Dívám se na jednotlivé skici a přemýšlím o jejich výhodách a nevýhodách. Samozřejmě si řešení představím na všech možných zařízeních, bereme v potaz zvyklosti, cílové skupiny a technickou řešitelnost. 
 
-Vybranou variantu pak musím ověřit ve světě, ve kterém komponenta bude žít. V prohlížeči. Živým prototypem.
+Vybranou variantu pak musím ověřit ve světě, ve kterém komponenta bude žít. V prohlížeči. Živým prototypem, na který se podíváme v dalším textu.
+
+## Odkazy k dalšímu studiu skicování
+
+- Jako průvodce pro detailnější zkoumání si zvolte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování". [vrdl.in/8yd6f](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
+- Styl a úroveň věrnosti skic jsou volitelné. Jak moc se mohou lišit skici designérů v rámci jedné firmy hezky ukazuje článek „The different sketch styles of the designers at 37signals“ od Jasona Frieda. [vrdl.in/pmuio](https://signalvnoise.com/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals)
+- Předtištěné šablony mobilních zařízení od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
+- Pěkný je také Gridzzly, nástroj Rostislava Blahy, který vám umožní tisk požadované mřížky na čistý papír. [gridzzly.com](http://gridzzly.com/)
+
