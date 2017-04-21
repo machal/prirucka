@@ -16,7 +16,7 @@ Validátor základních technických problémů, které komplikují rychlost web
 
 Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl učit se další nástroje. Vyřešit je potřeba hlavně červeně zvýrazněné problémy vašeho webu.
 
-<!-- AdSnipet -->
+<!-- AdSnippet -->
 
 Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat, a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu kešování měřicího skriptu Google Analytics. Jinak je to ale skvělý nástroj.  [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
 
@@ -29,7 +29,7 @@ Na přehledy o rychlosti webu se mrkněte do *Chování > Rychlost > Přehled*. 
 
 V *Časování uživatelů (User Timings)* mohou být vaše vlastní měření – např. jak rychle se načetl konkrétní obrázek. Je to potřeba nastavit. [vrdl.in/f3rbx](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings)
 
-<!-- AdSnipet -->
+<!-- AdSnippet -->
 
 Standardně se prý pro měření rychlosti používá jednoprocentní vzorek zhlédnutí vaší stránky. Pokud to chcete jinak, je potřeba měřit s nastavením `‘siteSpeedSampleRate’: 50`. [vrdl.in/4bn30](http://www.ericmobley.net/measuring-performance-google-analytics/)
 
@@ -102,7 +102,7 @@ Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: an
 
 Používám jen jako doplněk, ale někteří mu dávají přednost před PageSpeed Insights. Obsahuje totiž analýzu z tohoto nástroje a zároveň ještě dříve velmi známou metodiku YSlow v jednom reportu.
 
-<!-- AdSnipet -->
+<!-- AdSnippet -->
 
 Umí toho hodně. Ukáže timeline, zvládne emulaci pomalého připojení. Testovací lokality má GTmetrix ale pro ČR horší než WebPagetest.org a s méně možnostmi nastavení. Hezké je monitorování a nastavení připomínek do e-mailu. [gtmetrix.com](https://gtmetrix.com/)
 
