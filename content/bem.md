@@ -46,8 +46,8 @@ Psaní BEM syntaxe si můžete hezky usnadnit v CSS preprocesorech pomocí zano�
 
 ```less
 .nav {
-  .&__item { }
-  .&--hidden { }
+  &__item { }
+  &--hidden { }
 }
 ```
 
