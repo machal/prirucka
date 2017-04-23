@@ -29,7 +29,7 @@ Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy o
 
 ## Správné je použít `em`, ale lépe mi se pracuje s pixely
 
-Často se vedou spory kolem použití jednotek v dotazech na media. Správná odpověď je: `em`. 
+Často se vedou spory kolem použití jednotek v Meda Queries. Správná odpověď je: `em`. 
 
 Media Queries většinou nastavujeme kvůli optimální délce řádku písma. Pixely se velikosti písma nepřizpůsobují, proto v situacích jako je uživatelské zvětšení písma nemohou fungovat dobře. A `rem`? S těmi nepracuje korektně Safari, když změníte velikost písma autorsky. Detailní vysvětlení najdete v článku „PX, EM or REM Media Queries?“ [zellwk.com/blog/media-query-units/](https://zellwk.com/blog/media-query-units/)
 
@@ -39,7 +39,7 @@ Proto se i vám může hodit ve vývojářském kódu používat pixely a pro pr
 
 ## Zanořování Media Queries
 
-Doporučoval jsem vymýšlet body zlomu vždy pro obsah konkrétní komponenty. V kódu bych pak dotaz na media chtěl vyjádřit jako podmnožinu selektoru komponenty:
+Doporučoval jsem vymýšlet body zlomu vždy pro obsah konkrétní komponenty. V kódu bych pak podmínku chtěl vyjádřit jako podmnožinu selektoru komponenty:
 
 ```css
 .el {
@@ -91,7 +91,7 @@ Je to ale i obecně výhodnější než opačný, „Desktop First“, přístup
 }
 ```
 
-## Container Queries: dotazy na vlastnosti rodičovského prvku
+## Container Queries: podmínky týkající se vlastností rodičovského prvku
 
 Media Queries se dotazují vždy jen na parametry okna prohlížeče. To je fajn, když vymýšlíme body zlomu pro layout obrazovky. Horší je to pro jednotlivé, v něm rozmístěné komponenty. Zvláště pro ty, které se mohou vyskytovat na různých místech uživatelského rozhraní.
 

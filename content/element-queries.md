@@ -1,6 +1,6 @@
 # Element Queries: proč je chceme a proč je jen tak nedostaneme
 
-[Element Queries](http://elementqueries.com/) (nebo [Container Queries](https://alistapart.com/article/container-queries-once-more-unto-the-breach)) jsou vlastně stejné typy dotazů jako [Media Queries](css3-media-queries.md). Jen se neptáte na parametry okna prohlížeče, ale na parametry samotného elementu. 
+[Element Queries](http://elementqueries.com/) (nebo [Container Queries](https://alistapart.com/article/container-queries-once-more-unto-the-breach)) jsou vlastně stejné typy podmínek jako [Media Queries](css3-media-queries.md). Jen se neptáte na parametry okna prohlížeče, ale na parametry samotného elementu. 
 
 Je to věc, kterou ve webdesignu opravdu hodně chci. A věřte mi, že vy taky. 
 
@@ -10,7 +10,7 @@ Zatím je Element Queries možné jen emulovat javascriptovými knihovnami. A bo
 
 Pokud design udržujete v nějakém [systému](pattern-lab.md), asi budete souhlasit, že parametry samotné komponenty jsou pro změnu layoutu nebo chování daleko důležitější než parametry okna prohlížeče. Myslím, že bychom tím Media Queries mohli skoro úplně nahradit.
 
-Vezměte třeba dotaz na šířku komponenty a změnu layoutu podle ní:
+Vezměte třeba podmínku vázanou na šířku komponenty a změnu layoutu podle ní:
 
 ```css
 .item {

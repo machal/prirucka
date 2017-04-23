@@ -44,7 +44,7 @@ Nejdříve ale ještě o tom, kde všude s CSS pixely pracují webaři. Stručn�
 
 Raději doslovně připomenu, když použijete správnou meta značku pro viewport, pak v HTML, CSS i Javascriptu vždy pracujeme s CSS pixely. K těm hardwarovým prostě jako vývojáři přístup nemáme. 
 
-Takže když napíšu následující dotaz na médium…
+Takže když napíšu následující podmínku…
 
 ```css
 @media only screen and 
@@ -61,7 +61,7 @@ Ještě mi rozumíte? Výborně, trochu to zkomplikujeme.
 
 ![device-pixel-ratio](dist/images/original/device-pixel-ratio.png)
 
-Poměr mezi hardwarovým a CSS rozlišením udává vlastnost `resolution` (dříve `device-pixel-ratio`. Mimochodem, pomocí [dotazu na média](css3-media-queries.md) je možné zacílit zařízení s displeji v určitém poměru i v CSS:
+Poměr mezi hardwarovým a CSS rozlišením udává vlastnost `resolution` (dříve `device-pixel-ratio`. Mimochodem, pomocí [Media Queries](css3-media-queries.md) je možné zacílit zařízení s displeji v určitém poměru i v CSS:
 
 ```css
 @media only screen and 

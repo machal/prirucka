@@ -30,7 +30,7 @@ Když už máte pružný layout, musíte mu přizpůsobit elementy vevnitř. Prv
 
 ## 3. Podmínky pro změny layoutu (Media Queries)
 
-Představte si, že na tehdejší počítačový web nasadíte pružný layout a pružné obrázky. Máte? Teď mírně zmenšete okno prohlížeče. Vše funguje hezky, že? Co když ale okno zmenšíte opravdu hodně, řekněme na velikost malých mobilů? Tam pružný layout nepomůže. Musíme tedy změnit layout nebo ho úplně zrušit. Pomohou nám k tomu dotazy na média. I [Media Queries](css3-media-queries.md) si spolu rozpitváme později, v kapitole o layoutu.
+Představte si, že na tehdejší počítačový web nasadíte pružný layout a pružné obrázky. Máte? Teď mírně zmenšete okno prohlížeče. Vše funguje hezky, že? Co když ale okno zmenšíte opravdu hodně, řekněme na velikost malých mobilů? Tam pružný layout nepomůže. Musíme tedy změnit layout nebo ho úplně zrušit. Pomohou nám k tomu [Media Queries](css3-media-queries.md), které si spolu rozpitváme později, v kapitole o layoutu.
 
 <div class="ebook-only" markdown="1">
   Tímto končíme prohlídku naší kuchyně. Nejzákladnější surovinu, vývar responzivního designu, máme. Další podkapitoly už budou detailně rozebírat responzivní přizpůsobování veškerého možného  netextového obsahu.

@@ -1,6 +1,6 @@
 # Media Queries
 
-Dotazy na media umožňují aplikovat různá CSS pravidla v různých technických kontextech.
+Podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
 
 Dejme si rychlý příklad: 
 
@@ -12,20 +12,20 @@ h1 { font-size: 2em }
 }
 ```
 
-Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky 40 `em`. Toto jednoduché použití dotazů na média si můžete vyzkoušet v živé ukázce. [cdpn.io/e/Bpajbz](http://cdpn.io/e/Bpajbz)
+Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky 40 `em`. Toto jednoduché použití podmínek si můžete vyzkoušet v živé ukázce. [cdpn.io/e/Bpajbz](http://cdpn.io/e/Bpajbz)
 
 <!-- AdSnippet -->
 
 Z CSS2 budete znát podmínky pro typy médií, jako třeba `@media print`. Norma CSS3 Media Queries je vylepšuje o bližší specifikaci vlastnosti médií.
 
-## Anatomie media query
+## Anatomie Media Query
 
 Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
 
 <figure>
 <img src="dist/images/original/media-query.png" alt="">
 <figcaption markdown="1">    
-*Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování dotazu vyloučí starší Internet Explorery*
+*Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování podmínky vyloučí starší Internet Explorery*
 </figcaption> 
 </figure>
 
@@ -43,7 +43,7 @@ Pro vaše konkrétní projekty to nemusí být použitelné, ale pro ilustraci z
 
 ## Minimální nebo maximální výška a šířka
 
-Nejčastější podmínky v responzivním designu vypadají jako dotazy na vodorovný nebo svislý rozměr okna prohlížeče:
+Nejčastější podmínky v responzivním designu vypadají jako podmínky pro vodorovný nebo svislý rozměr okna prohlížeče:
 
 ```css
 @media only screen and (min-width: 40em) { … }
@@ -52,7 +52,7 @@ Nejčastější podmínky v responzivním designu vypadají jako dotazy na vodor
 @media only screen and (max-height: 40em) { … }
 ```
 
-V drtivé většině případů se ale pracuje jen s vodorovnými rozměry, s vlastností `width`. Ukážeme si i další možnosti. Předtím se ale naučíme jak dotazy kombinovat.
+V drtivé většině případů se ale pracuje jen s vodorovnými rozměry, s vlastností `width`. Ukážeme si i další možnosti. Předtím se ale naučíme jak podmínky kombinovat.
 
 ## Logické operátory
 
@@ -71,7 +71,7 @@ A co „nebo“? Místo `or`, možná očekávaného programátory, se použív�
 @media only screen and (max-width: 40em), print { … }
 ```
 
-Podle CSS specifikace jde o „seznam oddělený čárkou“, kde se jednotlivé položky seznamu vyhodnocují samostatně. Čárka („or“) má proto větší váhu než „and“. Výše uvedený dotaz se tak vyhodnotí jako pravdivý, když budeme na zobrazovacím mediu o šířce viewportu do `40em` nebo když budeme stránku tisknout.
+Podle CSS specifikace jde o „seznam oddělený čárkou“, kde se jednotlivé položky seznamu vyhodnocují samostatně. Čárka („or“) má proto větší váhu než „and“. Výše uvedená podmínka se tak vyhodnotí jako pravdivý, když budeme na zobrazovacím mediu o šířce viewportu do `40em` nebo když budeme stránku tisknout.
 
 Dalším možným operátorem je negace:
 
@@ -79,7 +79,7 @@ Dalším možným operátorem je negace:
 @media not print { … }
 ```
 
-Jen pozor, negace vždy postihuje celý dotaz, nikoliv jeho určitou část.
+Jen pozor, negace vždy postihuje celou podmínku, nikoliv její určitou část.
 
 ## Další vlastnosti média
 
@@ -123,7 +123,7 @@ Aplikuje se, pokud má zařízení poměr mezi hardwarovými a CSS pixely alespo
 
 <!-- AdSnippet -->
 
-Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji namísto dotazu na vlastnost `resolution` v kombinaci s bitmapovými obrázky využívat vektorový formát SVG. U něj vlastnost `resolution` nepotřebujeme, vektorový obrázek se vykreslí všude stejně dobře. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg).
+Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji namísto podmínky pro vlastnost `resolution` v kombinaci s bitmapovými obrázky využívat vektorový formát SVG. U něj vlastnost `resolution` nepotřebujeme, vektorový obrázek se vykreslí všude stejně dobře. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg).
 
 ### A co další vlastnosti médií?
 
@@ -131,7 +131,7 @@ V textu jsme zvládli ty nejpoužívanější. Z dalších zajímavých budu jme
 
 Vlastností médií existuje ale mnohem víc, i když ty ostatní už tak moc použitelné nejsou. [jecas.cz/media](http://jecas.cz/media#vlastnosti)
 
-## Na co si dát u dotazů pozor?
+## Na co si dát u Media Queries pozor?
 
 ### 1. Zápis vynechávající typ média
 
