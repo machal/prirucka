@@ -98,10 +98,17 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-robinem-pokornym-o-css-v-j
 Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování textu odstraněno.
 
 ```markdown
-<p class="web-only" markdown="1">
-  Čtete referenční příručku vlastností, které je možné přiřadit položkám 
-  [flexboxu](css3-flexbox.md).
-</p>
+<div class="web-only" markdown="1">
+Čtete referenční příručku vlastností, které je možné přiřadit položkám [flexboxu](css3-flexbox.md).
+</div>
+```
+
+Totéž jen pro e-booky pomocí `.ebook-only`:
+
+```markdown
+<div class="ebook-only" markdown="1">
+Čtete referenční příručku vlastností, které je možné přiřadit položkám [flexboxu](css3-flexbox.md).
+</div>
 ```
 
 ### Umístění reklamy na webu
