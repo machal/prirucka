@@ -12,29 +12,36 @@ Ta teď vypadá následovně:
     <!-- Logo stránky -->
   </header>
   <main class="layout-container">
-    <div class="layout-heading">
-      <!-- Název produktu -->
-    </div>
-    <div class="layout-main">
-      <div class="layout-photos">
-        <!-- Fotografie -->
-      </div>      
-      <div class="layout-photos">
-        <!-- Text -->
-      </div>            
-    </div>      
+    <!-- Hlavní část stránky -->      
   </main>
   <section class="layout-why">
-    <!-- Sekce „Proč ForestKid?“ -->
+    <!-- Sekce „Proč ForestKid?“ v patičce -->
   </section>    
 </div>
 ```
 
-Všimněte si, že došlo k určitému přeskupení sekcí. Ano, až dosud jsme pořadí stránky přizpůsobovali malým displejům. Některé drobné úpravy jsme proto udělali na základě přípravy pro layout ve větších velikostech okna prohlížeče.
+Pokud bychom se na zoubek podívali hlavní části stránky (`.layout-container`), je rozdělená takto:
 
-Sekci „Proč ForestKid?“ jsme přesunuli až na konec. Týká se celého webu, nikoliv konkrétního produktu a její pozice tomu prostě neodpovídala. Pracujeme v *iteracích*, takže špatné rozhodnutí v dřívějších fázích vývoje není tak problematické. 
 
-V HTML ukázce pro zjednodušení vynechávám další potřebné atributy. Například `role`, které zlepšují přístupnost zařízeními pro očečítání obrazovky. Jak definovat strukturu v HTML5 píšu ve zvláštním článku na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
+```html
+<div class="layout-heading">
+  <!-- Název produktu -->
+</div>
+<div class="layout-main">
+  <div class="layout-photos">
+    <!-- Fotografie -->
+  </div>      
+  <div class="layout-text">
+    <!-- Text -->
+  </div>            
+</div>      
+```
+
+Všimněte si, že došlo k určitému přeskupení sekcí. Sekci „Proč ForestKid?“ jsme přesunuli až na konec. Týká se celého webu, nikoliv konkrétního produktu a její pozice tomu prostě neodpovídala. 
+
+Až dosud jsme pořadí stránky přizpůsobovali malým displejům. Tuto změnu jsme  udělali na základě přípravy pro layout ve větších velikostech okna prohlížeče. Pracujeme v *iteracích* a přímo v prohlížeči, kde jsou úpravy snadné. Špatné rozhodnutí z dřívějších fází vývoje nebude tak problematické. 
+
+V HTML ukázce pro zjednodušení vynechávám další potřebné atributy. Například `role`, které zlepšují přístupnost zařízeními pro odečítání obrazovky. Přidají prvkům stránky význam, který samy o sobě nenesou. Jak definovat strukturu v HTML5 píšu ve zvláštním článku na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
 
 ## Rozvržení hlavního obsahu flexboxem
 
@@ -63,21 +70,21 @@ Tohle rozvržení ale nechceme na mobilech. Proto ještě musíme vymyslet bod z
 
 ## Bod zlomu a Media Query
 
-Tak jako kuchař míchá vařečkou, responzivní webdesignér zvětšuje a zmenšuje okno prohlížeče.  I po nakódování layoutu zmenšováním okna hledáme  minimální šířku okna, ve které layout dobře funguje. Díváme se, zda se nám nebortí důležité komponenty, ale posuzujeme i délku typografické řádky. Z [kapitoly o typografii](typografie.md) víme, že by měla být mezi 45-75 znaky. Tu hlídáme u jediného delšího textu na stránce: popisu produktu.
+Responzivní webdesignér zvětšuje a zmenšuje okno prohlížeče stejně často jako kuchař míchá vařečkou. Po přípravě layoutu tedy pomocí zmenšování okna hledáme minimální šířku, ve které layout dobře funguje. Díváme se, zda se nám nebortí důležité komponenty, ale posuzujeme i délku typografické řádky. Z [kapitoly o typografii](typografie.md) víme, že by měla být mezi 45—75 znaky. Tu hlídáme u jediného delšího textu na stránce: popisu produktu.
 
-Minimální šířka okna, ve které layout funguje, je 800 pixelů. V takovém případě vždy přemýšlím, zda bych nedokázal layout udělat tak, aby fungoval už od 768 pixelů. 
+Minimální šířka okna, ve které layout funguje, je `800px`. Hodnota je však velmi blízko `768px`, což je menší rozlišení iPadů. Jak jsem psal [v kapitole o principech](4-principy-ui.md) návrhu responzivního rozhraní, snažím se o konzistenci rozhraní a obecně dost nerad těmto tabletům servíruji výrazně layout v režimu na výšku než v poloze na šířku. Je to jedna z mála výjimek, kdy na můj výběr bodu zlomu mají vliv rozlišení zařízení. Většinou je ale lepší dávat přednost výběru podle obsahu komponenty nebo stránky. To už také víte [z kapitoly o tipech k Media Queries](media-queries-tipy.md).
 
-Co je 768 pixelů? Je to menší rozlišení iPadů. Jak jsem psal [v kapitole o principech](4-principy-ui.md) návrhu responzivního rozhraní, snažím se o konzistenci rozhraní a obecně dost nerad těmto tabletům servíruji jiný layout v režimu na výšku než v poloze na šířku. Je to jedna z mála výjimek, kdy na můj výběr bodu zlomu mají vliv rozlišení zařízení. Většinou je ale lepší dávat přednost výběru podle obsahu komponenty nebo stránky. To už také víte [z kapitoly o tipech k Media Queries](media-queries-tipy.md).
+Tady tedy testuji, zda bych nedokázal layout udělat tak, aby fungoval už od 768 pixelů. A layout by tam fungoval měl.
 
-Ve stejné kapitole píšu, že je lepší breakpointy nastavovat ve čtverčících. Do těch si naši pixelovou hodnotu musíme přepočíst:
+V kapitole o Media Qureies také píšu, že je lepší breakpointy nastavovat v jednotkám `em`. Do těch si naši `px` hodnotu musíme přepočíst:
 
 ```
-768 pixelů 
-÷ 16 pixelů základní velikost písma v tomto breakpointu
-= 48 em
+768px
+÷ 16px (základní velikost písma)
+= 48em
 ```
 
-A tím se dostáváme k výsledné Media Query pro nasazení layoutu.
+A tím se dostáváme k výsledné podmínce pro nasazení layoutu.
 
 ```css
 @media only screen and (min-width: 48em) { … }
@@ -85,4 +92,4 @@ A tím se dostáváme k výsledné Media Query pro nasazení layoutu.
 
 Pokud jste pozorně četli [kapitolu o Media Queries](css3-media-queries.md), zápisu byste měli bez problémů rozumět.
 
-Layout tedy máme hotový. A vlastně i celý příklad.
+Layout tedy máme hotový. 

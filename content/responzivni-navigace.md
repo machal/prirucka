@@ -6,26 +6,24 @@ Projdeme si osm možností jak navrhnout navigaci na responzivních webech. Od u
 
 Většina webů si ale vystačí se dvěma: upřesnostňujícím a přepínacím vzorem. Podívejme se nejprve na ně.
 
+<figure>
+<img src="dist/images/original/responzivni-navigace.jpg" alt="">
+<figcaption markdown="1">    
+*Hlavní návrhové vzory pro responzivní navigace: zapínač (také přepínač nebo Toggle) a upřednostňování se schováváním (Priority+)*
+</figcaption> 
+</figure>
+
 ## Upřednostňování položek (Priority+)
 
-Se zmenšující se šířkou obrazovky se zmenšuje i počet položek v navigaci. Na mobilních šířkách obrazovky pak zůstává opravdu jen to důležité. Ostatní položky jsou obvykle dostupné na rozbalení.  
+Se zmenšující se šířkou obrazovky se zmenšuje i počet položek v navigaci. Na mobilních šířkách obrazovky pak zůstává opravdu jen to důležité. Ostatní položky navigace jsou obvykle dostupné na rozbalení.  
 
-Upřednostňování používá například aktuální web BBC News. Zajímavou variantou je nechat položky navigace na malých obrazovkách rolovat do strany jak je vidět třeba na nynějším webu Guardianu.
-
-Technicky to je možné řešit i dost jednoduše jen pomocí CSS. [cdpn.io/e/adeMzP](http://codepen.io/olach/details/adeMzP) 
+Technicky je možné tento návrhový vzor řešit i dost jednoduše jen pomocí CSS. [cdpn.io/e/adeMzP](http://codepen.io/olach/details/adeMzP) 
 
 ## Přepínač (Toggle)
 
 Celou navigaci na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiné. Jeho nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, které má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
 
 Návrhový vzor *přepínač* zpopularizoval například framework Bootstrap a najdete jej na většině dnešních responzivních webů. 
-
-<figure>
-<img src="dist/images/original/responzivni-navigace.jpg" alt="">
-<figcaption markdown="1">    
-*Návrhové vzory pro responzivní navigace*
-</figcaption> 
-</figure>
 
 
 ### Speciální varianta přepínače: vyjíždění do obrazovky (Off Canvas)
@@ -34,7 +32,7 @@ Chování, které znáte z nativních aplikací. Nejobvyklejší je vyjížděn�
 
 ### Víceúrovňové navigace: speciální varianta a speciální úroveň ošemetnosti
 
-Oba už zmíněné návrhové vzory je samozřejmě možné použít i pro víceúrovňové navigace. Jak jste si sami asi v kůži uživatele na mnoha webech zkusili, na mobilních obrazovkách se takové navigace obvykle používají špatně. Když to jde, snažte se víceúrovňové navigaci vyhnout. 
+Oba už zmíněné návrhové vzory je samozřejmě možné použít i pro víceúrovňové navigace. Jen opatrně, uživatelské ovládání na mobilech nemusí být nejpříjemnější. Řešení vždy testujte.
 
 <!-- AdSnippet -->
 
@@ -47,15 +45,15 @@ Pokud v navigaci zvládnete mít jen nízké jednotky položek, můžete je  zob
 
 ## Přestylování a skok do patičky
 
-Navigace je v HTML někde dole a na velkých displejích se pomocí stylů umístí do hlavičky. Implementačně je *skok do patičky* asi nejméně náročná volba. Uživatelsky ovšem dle mého názoru málo přívětivá. Dnes už bych *skok* na běžné weby nepoužil. Snad jen v opravdu jednoduchých případech. [vrdl.in/9em7w](http://responsivenavigation.net/examples/clean-grid/index.html)
+Navigace je v HTML někde dole. Na malých displejích je umístěná v patičce. Na velkých displejích se pomocí stylů umístí do hlavičky. Implementačně je *skok do patičky* asi nejméně náročná volba. Uživatelsky ovšem dle mého názoru málo přívětivá. Umístění navigace je takto nekonzistentní napříč zařízeními. Dnes už bych *skok* na běžné weby nepoužil. Snad jen v opravdu jednoduchých případech. [vrdl.in/9em7w](http://responsivenavigation.net/examples/clean-grid/index.html)
 
 ## Konverze do `<select>`
 
-Navigaci pomocí Javascriptu na mobilech proměníte v nativní seznam položek. Výhodou je opět jednoduchá implementace. Nevýhodou horší uživatelská přívětivost seznamu položek na mobilních zařízení. Ukázka je na CSS Tricks. [css-tricks.com/convert-menu-to-dropdown/](https://css-tricks.com/convert-menu-to-dropdown/).
+Navigaci pomocí Javascriptu na mobilech proměníte v nativní seznam položek. Výhodou je opět jednoduchá implementace. Nevýhodou horší uživatelská přívětivost seznamu položek na mobilních zařízení. Ukázka je na CSS Tricks. [vrdl.in/navsel](https://css-tricks.com/convert-menu-to-dropdown/).
 
 ## Navigace jen v patičce
 
-Na některých webech hlavní navigaci v hlavičce nepotřebujete. Žádná speciální péče o mobilní zařízení není potřebná.
+Na některých webech hlavní navigaci v hlavičce nepotřebujete. Žádná speciální péče o mobilní zařízení není potřebná. 
 
 ## Vzor „nohy nahoru a nedělat nic“
 
