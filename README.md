@@ -28,10 +28,11 @@ V prvé řadě je potřeba psát obecně ve stylu například „v době psaní 
 
 ### Formátování
 
-Pro ebooku je lepší co nejjednodušší formátování, proto:
+Pro ebooky je lepší co nejjednodušší formátování, proto:
 
 - Pro zvýrazňování slov v textu nepoužíváme tučný řez, ale kurzívu. Jedinou výjimkou jsou „nadpisy“ v `ul`/`ol` seznamech. Tučný řez rezervujeme pro nadpisy.
 - `ul`/`ol` seznamy nepoužíváme pro texty delší než jedna věta. V eboocích se pak rozpadají na více řádek.
+- Kombinace nadpisu a podnadpisu nevypadá dobře. Stejně jako nadpis a ukázka kódu. Prostě by pod každým nadpisem měl být nějaký text a až pak teprve jiný typ obsahu.
 
 ### Odkazy
 
