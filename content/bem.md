@@ -1,25 +1,69 @@
-# BEM: Metodika pro pojmenovávání tříd v CSS
+# BEM: Pojmenovávací konvence pro CSS
 
-BEM je pojmenovávací konvence pro psaní [objektových CSS](oocss.md). Vymysleli jej v ruském Yandexu.
+BEM je pojmenovávací konvence pro psaní CSS. Vymysleli jej v ruském Yandexu.
 
-Hlavní myšlenka je v rozdělení tříd do tří kategorií: Block, Element, Modifier. 
+Na BEM můžeme nahlížet dvěma způsoby:
+
+1. Plnohodnotná metodiku pro organizaci CSS. 
+2. Konvenci pro pojmenovávání tříd.
+
+Budu se tady zabývat jen druhou částí. BEM jako plnohodnotnou metodiku nepoužívám, častěji volím vlastní způsoby organizace. I vy můžete chtít použít BEM v kombinaci s jinou organizační metodikou: SMACSS, ITCSS nebo jinými. 
+
+Pojďme se prostě bavit jen o tom pojmenovávání tříd, v tom je myslím největší přínos BEMu. I tak je o čem psát, nebojte se. Zájemce o celý popis metodiky pošlu na [bem.info](https://en.bem.info/methodology/).
 
 <table>
 <tr>
-  <th>Blok <br> <small>(Komponenta)</small></th>
+  <th>Blok</th>
   <td><code>.block</code></td>
 </tr>
 <tr>
-  <th>Element<br> <small>(Element v komponentě)</small></th>
+  <th>Element</th>
   <td><code>.block__element</code></td>
 </tr>
 <tr>
-  <th>Modifikátor <br> <small>(Varianta komponenty nebo elementu)</small></th>
+  <th>Modifikátor</th>
   <td><code>.block--modifier</code></td>
 </tr>
 </table>
 
-Typ třídy poznáte podle způsobu pojmenování. Dvě podtržítka znamenají element, tedy potomka bloku. Modifikátor bloku je pak označený dvěmi „pomlčkami“.
+
+## Tři kategorie: Blok, Element, Modifikátor
+
+### Blok
+
+Třída bez speciálních znaků: `.block`.
+
+Blok je v zásadě komponenta. Nezávislý prvek uživatelského rozhraní, který je znovupoužitelný. Bloky se do sebe mohou libovolně zanořovat.
+
+
+### Element
+
+Třída prefixovaná názvem bloku a doplněná názvem elementu odděleným dvěmi podtržítky: `.block__element`.
+
+Element nelze v rozhraní použít samostatně. Jeho existence má smysl jen v rámci bloku. Opět je možné je libovolně zanořovat. Hierarchie selektorů má ovšem vždy zůstat jednoúrovňová. `.block__element__heading` je tedy špatně. Má být `.block__element-heading`. To proto, aby nebyla závislá na struktuře DOMu.
+
+
+### Modifikátor
+
+Třída prefixovaná názvem bloku a doplněná názvem elementu odděleným dvěmi pomlčkami: `.block--modifier`.
+
+Popisuje vizuální vlastnosti (`.block--small`), stav (`.block--disabled`) nebo chování (`.block--animated-to-left`). 
+
+Možná jste někde narazili na zápis modifikátorů jen pomocí jednoho podržítka (`.block_modifier`). To je „klasická“ BEM syntaxe. Zdá se, že to byl Harry Roberts, kdo ji upravil do podoby dvou pomlček. Tady [je vysvětlení](http://stackoverflow.com/a/25213997/889682). Klasická varianta umožňuje rozdělit modifikátory na dva typy – boolean a key-value. Mě se ale pro svou jednoduchost líbí „Robertsova“ varianta.
+
+
+### Pravidla pro tvorbu názvů 
+
+
+Názvy bloků, elementů a modifikátorů se oddělují jednou pomlčkou. Například `.block-name--modifier-name`.
+
+Název tříd by měl vycházet z účelu a být nezávislý na vzhledu. Například `.button-blue` je špatně. 
+
+
+
+
+
+
 
 
 ## Proč BEM používat a kde se hodí?
@@ -107,7 +151,8 @@ Protože BEM vychází z OOCSS, cílem je zachovat co nejnižší specificitu (v
 }
 ```
 
-Má to dvě výhody: 
+Má to dvě výhody. Selektory si zachovají nízkou specifičnost a neopakujeme CSS kód.
+
 
 ### Zachováváme nízkou váhu selektorů 
 
