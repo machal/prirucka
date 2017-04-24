@@ -52,7 +52,7 @@ Tři typy prvků:
 
 V praxi může být výhodné tyto tři typy prvků odlišit vizuálně. Podívejte se na [metodiku BEM](bem.md).
 
-## 5) Co nejnižší specifičnost
+## 5) Co nejnižší specifičnost {#specificita}
 
 V CSS nikdy nepoužíváme selektory identifikátorů (`#id`) a klauzuli `!important` si necháváme jen pro debugovací účely.
 
@@ -61,5 +61,9 @@ Kvůli zachování nízké specifičnosti se také snažíme co nejméně použ�
 - selektorů potomka (v CSS nepíšu `.button .button-icon`, jen `.button-icon`)
 - kombinovaných selektorů (v CSS nepíšu `.button.button-primary`, jen `.button-primary`)
 
-Více o specifičnosti v CSS: [specificity.keegan.st](http://specificity.keegan.st/).
+Více o specifičnosti v CSS: 
+
+- [W3.org specifikace](https://www.w3.org/TR/css3-selectors/#specificity)
+- [Lidsky popsáno na MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+- [Kalkulačka specifičnosti na specificity.keegan.st](http://specificity.keegan.st/).
 

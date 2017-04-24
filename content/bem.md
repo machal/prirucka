@@ -1,37 +1,79 @@
-# BEM
+# BEM: Metodika pro pojmenovávání tříd v CSS
 
-Block, Element, Modifier. Metodika pro pojmenovávání tříd v CSS.
+BEM je pojmenovávací konvence pro psaní [objektových CSS](oocss.md). Vymysleli jej v ruském Yandexu.
 
-Jde vlastně o pojmenovávací konvenci pro psaní [objektových CSS](oocss.md). BEM vymysleli v ruském Yandexu.
-
-Hlavní myšlenka je v rozdělení tříd do těchto tří kategorií:
+Hlavní myšlenka je v rozdělení tříd do tří kategorií: Block, Element, Modifier. 
 
 <table>
 <tr>
-  <th>Blok</th>
+  <th>Blok <br> <small>(Komponenta)</small></th>
   <td><code>.block</code></td>
 </tr>
 <tr>
-  <th>Element</th>
+  <th>Element<br> <small>(Element v komponentě)</small></th>
   <td><code>.block__element</code></td>
 </tr>
 <tr>
-  <th>Modifikátor</th>
+  <th>Modifikátor <br> <small>(Varianta komponenty nebo elementu)</small></th>
   <td><code>.block--modifier</code></td>
 </tr>
 </table>
 
 Typ třídy poznáte podle způsobu pojmenování. Dvě podtržítka znamenají element, tedy potomka bloku. Modifikátor bloku je pak označený dvěmi „pomlčkami“.
 
+
+## Proč BEM používat a kde se hodí?
+
+BEM považuji za nadstavbu [objektových CSS (OOCSS)](oocss.md) pro středně velké a velké projekty. Pro nasazení BEMu tedy musíte umět styly psát komponentově, mít nízkou specifičnost selektorů a tak dále.
+
+### Jednoznačný význam tříd v CSS i HTML
+
+Pokud v projektu máte dejme tomu přes dvacet komponent, je vysoká pravděpodobnost, že se vám začne význam tříd plést:
+
+```html
+<nav class="nav nav-secondary nav-visible">
+```
+
+Členové týmu se mohou ptát, zda `nav-secondary` a `nav-visible` modifikují původní komponentu nebo jde o samostatnou komponentu. Je samostatná `nav-secondary` nebo i `nav-visible`? Mají ji hledat v souboru `nav.css` nebo `nav-secondary.css` nebo kde?
+
+S BEMem je vše jasné:
+
+```html
+<nav class="nav nav--secondary nav--visible">
+```
+
+`nav--secondary` a `nav--visible` jsou jen modifikátory bloku `nav`. Najdeme je pravděpodobně v souboru `nav.css`. 
+
+### Je to jednoduché a rozšířené
+
+Princip BEMu je velmi jednoduchý a snadno jej vysvětlíte kolegům a kolegyním vývojářům, kteří s CSS třeba až tak do styku nepřicházejí. Určitě se ale koukají do HTML, kde díky BEMu získají více informací o struktuře komponent i bez dokumentace. BEM není žádná novinka a mezi vývojáři je slušně zavedený.
+
+
+## BEM a systémy organizace CSS
+
+Jak jsem psal, BEM navazuje na [OOCSS](oocss.md). Je na něm také hezké, že se může pěkně doplňovat se šířeji definovanými systémy organizace CSS jako [SMACSS](smacss.md) nebo [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
+
+Raději si v těch metodikách udělejme pořádek:
+
+- *OOCSS* je metodika pro psaní komponentové části stylů. Nutný základ pro rozumný způsob psaní komponentové části kódu u všech projektů.
+- *BEM* je metodika pro pojmenovávání komponentové části stylů. Není potřebná jen na malinkých projektech.
+- *ITCSS* nebo *SMACSS* jsou metodiky pro organizaci celého CSS, tedy včetně nekomponentových částí: typografické základny, helperů a tak dále.
+
+BEM se s žádnou z ostatních metodik nevylučuje. Naopak je hezky doplňuje.
+
+
 ## Příklad s navigací
 
 Vezměme tohle HTML:
 
 ```html
-<ul class="nav nav--hidden" role="navigation">
+<ul class="nav nav--secondary" role="navigation">
   <li class="nav__item">
     <a href="/">Úvod</a>
   </li>
+  <li class="nav__item nav__item--active">
+    <a href="/">Produkty</a>
+  </li>  
   <!-- … -->
 </ul>
 ```
@@ -39,23 +81,78 @@ Vezměme tohle HTML:
 Pak:
 
 - `.nav` je blok (název komponenty)
-- `.nav--hidden` je modifikátor (varianta komponenty)
+- `.nav--secondary` je modifikátor (varianta komponenty)
 - `.nav__item` je element (potomek komponenty)
+- `.nav__item--active` je modifikátor elementu (varianty potomka komponenty)
 
-Psaní BEM syntaxe si můžete hezky usnadnit v CSS preprocesorech pomocí zanořování:
+## Specifičnost v BEMu {#specificita}
+
+Protože BEM vychází z OOCSS, cílem je zachovat co nejnižší specificitu (váhu) salektorů. Kód v CSS pak budeme psát takto:
+
+```css
+.nav { 
+  /* Pravidla společná pro všechny navigace */ 
+}
+
+.nav--secondary { 
+  /* Měnící se pravidla pro tuto modifikaci */ 
+}
+
+.nav__item {
+  /* Pravidla pro tento element */ 
+}
+
+.nav__item--active {
+  /* Měnící se pravidla pro tuto modifikaci elementu */ 
+}
+```
+
+Má to dvě výhody: 
+
+### Zachováváme nízkou váhu selektorů 
+
+Selektory typu `.nav.nav--secondary` jsou pak díky prefixování modifikáturu zbytečné.
+
+### Zbytečně neopakujeme kód 
+
+Častým problémem neobjektového CSS kódu bývá opakování deklarací z `.nav` v modifikátorech typu `.nav--secondary`. 
+
+Sice bychom si pak mohli v HTML dovolit jednodušší zápis typu `<nav class="nav--secondary">`, ale CSS kód bude složitý a ukrutně špatně spravovatelný. Jednodušší HTML také není výhodou, protože z něj nevidíme co je komponenta a co její modifikátor.
+
+Více informací o specificitě mám v článku [o OOCSS](oocss.md#specificita).
+
+## Element v modifikátoru {#element-v-modifikatoru}
+
+Jediná výjimka, kdy je možné použít specificitu o dvou třídách je element v modifikovaném bloku:
+
+```css
+.nav--secondary .nav__item {
+  /* Měnící se pravidla položky 
+     navigace pro sekundární navigaci */
+}
+```
+
+Element je totiž vždy závislý na rodičovském bloku a nedávalo by smysl jej osamostatnit. A jen během snahy ho osamostatnit by nastaly potíže s uzavřením do selektoru potomka.
+
+
+## BEM a preprocesory {#preprocesory}
+
+Psaní BEM syntaxe si můžete hezky usnadnit [v CSS preprocesorech](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) pomocí zanořování:
 
 ```less
 .nav {
   &__item { }
-  &--hidden { }
+  &--secondary { }
 }
 ```
 
-Složitější komponentu podrobněji popisuje Harry Roberts: [csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/).
+Jen to prosím nepřehánějte. Zanořování v preprocesorech je dobrý sluha, ale zlý pán. Samo o sobě problematické není, ale v kódu méně zkušených CSS pisálků vede [k monolitickým bloků a závorkovému peklu](http://www.vzhurudolu.cz/blog/65-css-kod-problemy#1-zavorkove-peklo-a-monoliticnost).
 
-## Proč BEM?
 
-- Protože v CSS i HTML snadno poznáte s jakým typem třídy máte tu čest. Poznají to i programátoři, kteří přijdou do styku jen s HTML.
-- Protože je snadné se jej naučit a díky tomu se z BEMu stává standard.
-- Protože je na rozdíl od jiných způsobů organizace CSS velmi přímočarý. Srovnejte třeba se SMACSS.
+## Časté chyby
+
+Kromě přehnaného zanořování v preprocesorech vás upozorním ještě na další problémy. Psal jsem o tom [ve zvláštním článku](http://www.vzhurudolu.cz/blog/63-bem-chyby):
+
+- Vícenásobné zanoření. `.card__header__title` je špatně. Činíte selektor závislý na organizaci DOMu. `card__header-title` je lepší.  [Odkaz](http://www.vzhurudolu.cz/blog/63-bem-chyby#v-css-nekopirujte-dom-strukturu).
+- Křížení komponent. `.card .button` je špatně. Je pak těžké říct, zda kód patří do komponenty `card` nebo do `button`. Lepší je vytvořit modifikátor typu `button--small`  [Odkaz do článku](http://www.vzhurudolu.cz/blog/63-bem-chyby#krizeni-nechte-rostlinarum-u-komponent-jej-nezkousejte)
 
