@@ -41,14 +41,5 @@ Kvůli zachování tempa vyprávění jsem se samozřejmě i v procesu jeho tvor
 
 Jednotlivé kroky, ale i [hotovou verzi](priklad-hotovo.md) si samozřejmě můžete stáhnout, zkoušet nebo využít pro vaše potřeby.
 
-
-## Proces tvorby webu
-
-Ještě jedna poznámka než začnete. V knize a na příkladu ukazuji svůj proces tvorby webů. Někteří profesionální kolegové by o něm řekli, že je „exotický“. Nevyužívám nástroje pro tvorbu předběžných návrhů webů, skoro neotevírám Photoshop a jiné kreslící programy. Velkou část práce dělám přímo v kódu.
-
-Je proto dobré vědět, že proces tvorby webu v dnešních webových studiích vypadá jinak. Ale není dobrého nebo špatného postupu. Důležitý je vždy výsledek. 
-
-Mé techniky práce jsou ovšem dost jednoduché na to, aby je mohli převzít začátečníci. A profesionály třeba v lecčems inspirují.
-
 Teď už mi nezbývá než popřát, ať se vám knížka dobře čte. 
 
