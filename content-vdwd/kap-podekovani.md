@@ -1,18 +1,12 @@
 # Poděkování
 
-Foto autora je od Jana Forejta 
+Velmi děkuji všem recenzentům, kritikům, rejpalům… Prostě kolegům a kolegyním, kteří trpělivě četli, hlásili chyby, upozorňovali na nejasnosti a ptali se „Proč?“, tam kde jsem se sám sebe zeptat zapomněl.
 
-- Jan Forejt: foto autora ([about.me/janforejt](https://about.me/janforejt)). 
-- Jan Kvasnička: review kapitoly „Návrh rozhraní v éře mobilů“
-- Dan Duráň: review celé knihy
-- Dan Střelec: review celé knihy
-- Honza Sládek: review kapitoly „Weby versus aplikace“
-- Jan Kvasnička: review úvodu
-- Jiří Sekera: review úvodu
-- Zuzana Šumlanská
-- Radek Pavlíček
-- Fare.cz
-- *TODO*
+Zásadním způsobem mi pomohli knihu posunout zejména Dan Srb a Jirka Sekera. Děkuji také Janu Kvasničkovi, Danu Střelcovi, Zuzaně Šumlanské, Radku Pavlíčkovi, Danu Duráňovi, Janu Polzerovi, Michalu Miklášovi, Tomáši Musiolovi, Kristíně Voľanské a Honzovi Sládkovi. 
 
+Na psaní knížky není nejtěžší psaní, ale ta nervóza co autor prožívá mezi psaním a publikováním. Knížka by myslím v takovéto podobě nevyšla nebýt podpory mé ženy. Jano, díky!
 
-© 2017 Martin Michálek
+Za poskytnutí materiálů k produktům děkuji panu Jaroslavu Naňákovi ze společnosti Fare.
+
+Foto autora je od [Jana Forejta](https://about.me/janforejt). 
+

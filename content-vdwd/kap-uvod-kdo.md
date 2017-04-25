@@ -1,23 +1,21 @@
 # Pro koho knížka je a jak ji číst?
 
-Během psaní „Vzhůru do responzivního webdesignu“ jsem myslel hlavně na tři skupiny možných čtenářů a čtenářek. 
-
-Jak už víte, věnuji se zde designu i kódu. Technologie jsou mantinelem (a zároveň zdrojem inspirace) pro hřiště designéra. Designérské principy zase mají přímý vliv na způsob psaní kódu. 
+Během psaní „Vzhůru do (responzivního) webdesignu“ jsem myslel hlavně na tři skupiny webařů a webařek.
 
 
 ## Vývojáři a kodéři
 
-Vy z knížky využijete největší část. Načerpáte přehled o postupech a technologiích používaných pro tvorbu dnešních responzivních webů. Každý frontend kodér a skoro každý vývojář ovšem dotváří nebo dokonce navrhuje i nějaké části uživatelských rozhraní. Mezi řádky a v netechnických kapitolách se tedy můžete inspirovat mým přístupem k tvorbě responzivních rozhraní. 
+Vy z knížky využijete největší část. Načerpáte přehled o postupech a technologiích používaných pro tvorbu dnešních responzivních webů. Ovšem – každý frontend kodér a skoro každý vývojář dotváří nebo dokonce navrhuje i nějaké části uživatelských rozhraní. Mezi řádky a v netechnických kapitolách se tedy můžete inspirovat tipy k tvorbě responzivních rozhraní. 
 
 
 ## Designéři, grafici, marketéři
 
-Vaši pozornosti doporučím hlavně kapitoly [o statistikách](kap-prostredi.md), [o rychlosti načítání](kap-rychlost.md), [o návrhu rozhraní v éře mobilů](kap-ui.md), [procesu návrhu UI](kap-ui-proces.md) a [responzivních navigacích](kap-navigace.md).  Věřím ale, že vás nalákám i do dalších textů a získáte tak hrubý přehled o technologických základech, na kterých weby společně stavíme. 
+Vaši pozornosti doporučím hlavně kapitoly [o statistikách](kap-prostredi.md), [rychlosti načítání](kap-rychlost.md), [návrhu rozhraní v éře mobilů](kap-ui.md), [procesu návrhu UI](kap-ui-proces.md) a [responzivních navigacích](kap-navigace.md).  Věřím ale, že vás nalákám i do dalších textů a získáte tak hrubý přehled o technologických základech, na kterých weby společně stavíme. 
 
 
 ## Začátečníci a méně zkušení
 
-Text knihy jsem psal tak, aby se dal číst i jako učebnice tvorby webových uživatelských rozhraní. Vynechávám všechny pokročilé nástroje, nezmiňuji složité techniky a občas sám skřípu zuby jak moc musím zjednodušovat. Přeji si ale, aby kniha dávala smysl lidem, kteří se k tvorbě webu dostali teprve nedávno a třeba ještě neví, do které ze zjednodušených škatulek *designér* nebo *vývojář* se časem zařadí.
+Text knihy jsem psal tak, aby se dal číst i jako učebnice tvorby webových uživatelských rozhraní. Vynechávám všechny pokročilé nástroje, nezmiňuji složité techniky a občas sám skřípu zuby jak moc musím zjednodušovat. Přeji si ale, aby kniha dávala smysl lidem, kteří se k tvorbě webu dostali teprve nedávno a třeba ještě neví, do které ze škatulek „designéři“ a „vývojáři“ se časem zařadí.
 
 
 ## Co předpokládám, že čtenáři umí?

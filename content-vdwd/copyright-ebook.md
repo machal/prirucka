@@ -1,0 +1,3 @@
+Verze 1.0, 2017
+
+ISBN: TODO
