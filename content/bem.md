@@ -1,68 +1,26 @@
 # BEM: Pojmenovávací konvence pro CSS
 
-BEM je pojmenovávací konvence pro psaní CSS. Vymysleli jej v ruském Yandexu.
+BEM je způsob, jak pojmenovávat třídy v CSS tak, aby se vám nepletly jejich různé typy. Vymysleli jej v ruském Yandexu.
 
 Na BEM můžeme nahlížet dvěma způsoby:
 
-1. Plnohodnotná metodiku pro organizaci CSS. 
-2. Konvenci pro pojmenovávání tříd.
+1. Plnohodnotná metodika pro organizaci CSS. Viz plná dokumenace na [bem.info](https://en.bem.info/methodology/).
+2. Konvenci pro pojmenovávání tříd. Viz web [getbem.com](http://getbem.com/).
 
-Budu se tady zabývat jen druhou částí. BEM jako plnohodnotnou metodiku nepoužívám, častěji volím vlastní způsoby organizace. I vy můžete chtít použít BEM v kombinaci s jinou organizační metodikou: SMACSS, ITCSS nebo jinými. 
+Budu se tady zabývat jen druhou částí. BEM jako plnohodnotnou metodiku nepoužívám, častěji volím vlastní způsoby organizace. Myslím, že to je docela častý scénář. I vy můžete chtít použít BEM v kombinaci s jinou metodikou: [SMACSS](smacss.md), ITCSS nebo jinými. 
 
-Pojďme se prostě bavit jen o tom pojmenovávání tříd, v tom je myslím největší přínos BEMu. I tak je o čem psát, nebojte se. Zájemce o celý popis metodiky pošlu na [bem.info](https://en.bem.info/methodology/).
-
-<table>
-<tr>
-  <th>Blok</th>
-  <td><code>.block</code></td>
-</tr>
-<tr>
-  <th>Element</th>
-  <td><code>.block__element</code></td>
-</tr>
-<tr>
-  <th>Modifikátor</th>
-  <td><code>.block--modifier</code></td>
-</tr>
-</table>
-
-
-## Tři kategorie: Blok, Element, Modifikátor
-
-### Blok
-
-Třída bez speciálních znaků: `.block`.
-
-Blok je v zásadě komponenta. Nezávislý prvek uživatelského rozhraní, který je znovupoužitelný. Bloky se do sebe mohou libovolně zanořovat.
-
-
-### Element
-
-Třída prefixovaná názvem bloku a doplněná názvem elementu odděleným dvěmi podtržítky: `.block__element`.
-
-Element nelze v rozhraní použít samostatně. Jeho existence má smysl jen v rámci bloku. Opět je možné je libovolně zanořovat. Hierarchie selektorů má ovšem vždy zůstat jednoúrovňová. `.block__element__heading` je tedy špatně. Má být `.block__element-heading`. To proto, aby nebyla závislá na struktuře DOMu.
-
-
-### Modifikátor
-
-Třída prefixovaná názvem bloku a doplněná názvem elementu odděleným dvěmi pomlčkami: `.block--modifier`.
-
-Popisuje vizuální vlastnosti (`.block--small`), stav (`.block--disabled`) nebo chování (`.block--animated-to-left`). 
-
-Možná jste někde narazili na zápis modifikátorů jen pomocí jednoho podržítka (`.block_modifier`). To je „klasická“ BEM syntaxe. Zdá se, že to byl Harry Roberts, kdo ji upravil do podoby dvou pomlček. Tady [je vysvětlení](http://stackoverflow.com/a/25213997/889682). Klasická varianta umožňuje rozdělit modifikátory na dva typy – boolean a key-value. Mě se ale pro svou jednoduchost líbí „Robertsova“ varianta.
-
-
-### Pravidla pro tvorbu názvů 
-
-
-Názvy bloků, elementů a modifikátorů se oddělují jednou pomlčkou. Například `.block-name--modifier-name`.
-
-Název tříd by měl vycházet z účelu a být nezávislý na vzhledu. Například `.button-blue` je špatně. 
+V pojmenovávací konvenci je myslím největší přínos BEMu. I tak je o čem psát, nebojte se. 
 
 
 
+## BEM jako Blok, Element, Modifikátor
 
+Nejprve stručně s odkazy na podrobnější vysvětlení.
 
+| [Blok](#blok) | `.block` |
+| [Element](#element) | `.block__element` |
+| [Modifikátor](#modifikator) | `.block--modifier` |
+| [Modifikátor elementu](#modifikator-elementu) | `.block__element--modifier` |
 
 
 
@@ -72,13 +30,13 @@ BEM považuji za nadstavbu [objektových CSS (OOCSS)](oocss.md) pro středně ve
 
 ### Jednoznačný význam tříd v CSS i HTML
 
-Pokud v projektu máte dejme tomu přes dvacet komponent, je vysoká pravděpodobnost, že se vám začne význam tříd plést:
+Pokud v projektu máte dejme tomu přes dvacet komponent a CSS kód píšeme objektově, je vysoká pravděpodobnost, že se vám začne význam tříd plést:
 
 ```html
 <nav class="nav nav-secondary nav-visible">
 ```
 
-Členové týmu se mohou ptát, zda `nav-secondary` a `nav-visible` modifikují původní komponentu nebo jde o samostatnou komponentu. Je samostatná `nav-secondary` nebo i `nav-visible`? Mají ji hledat v souboru `nav.css` nebo `nav-secondary.css` nebo kde?
+Členové týmu se mohou ptát, zda `nav-secondary` a `nav-visible` modifikují původní komponentu nebo jde o samostatnou komponentu. Je samostatná `nav-secondary` nebo i `nav-visible`? Mají ji hledat v souboru `nav.css` nebo `nav-secondary.css`?
 
 S BEMem je vše jasné:
 
@@ -88,9 +46,57 @@ S BEMem je vše jasné:
 
 `nav--secondary` a `nav--visible` jsou jen modifikátory bloku `nav`. Najdeme je pravděpodobně v souboru `nav.css`. 
 
+Komponenta vyznačkovaná BEMem tedy nese více informací než komponenta vyznačkovaná běžným OOCSS, nemluvě o situai, kdy objekty vůbec nepoužíváte. Kód se vám bude snadněji chápat, ale také přenášet v rámci projektu nebo na jiné projekty.
+
 ### Je to jednoduché a rozšířené
 
-Princip BEMu je velmi jednoduchý a snadno jej vysvětlíte kolegům a kolegyním vývojářům, kteří s CSS třeba až tak do styku nepřicházejí. Určitě se ale koukají do HTML, kde díky BEMu získají více informací o struktuře komponent i bez dokumentace. BEM není žádná novinka a mezi vývojáři je slušně zavedený.
+Princip BEMu není složitý a snadno jej vysvětlíte kolegům a kolegyním vývojářům, kteří s CSS třeba až tak do styku nepřicházejí. Určitě se ale koukají do HTML, kde díky BEMu získají právě více informací o struktuře komponent i bez dokumentace. 
+
+BEM navíc není žádná novinka a mezi kodéry je slušně zavedený. Takže pokud se budete držet zde uvedeného, pro nové kolegy nebude problém se v projekt zorientovat.
+
+### Je to „ošklivé“?
+
+To je častá výtka, zejména programátorů. Estetický pohled je subjektivní, takže se podle toho těžko rozhodovat. Buď vám BEM vyřeší nějaký problém nebo ne. Pokud ano, používejte ho.
+
+A teď se do BEMu ponořme hlouběji. 
+
+
+## BEM podrobně
+
+### Blok
+
+Blok je v zásadě komponenta uživatelského rozhraní. Nezávislý prvek uživatelského rozhraní, který je znovupoužitelný. Bloky se do sebe mohou libovolně zanořovat. 
+
+Označuje jej třída bez speciálních znaků: `.nazev-bloku`.
+
+
+### Element
+
+Prvek uvnitř bloku, který potřebujeme stylovat. Element nelze v rozhraní použít samostatně. Jeho existence má smysl jen v rámci bloku. 
+
+Poznáte ho podle třídy prefixované názvem bloku a doplněné názvem elementu odděleným dvěmi podtržítky: `.nazev-bloku__nazev-elementu`.
+
+
+### Modifikátor
+
+Varianta komponenty. Popisuje vizuální vlastnosti (`.block--small`), stav (`.block--disabled`) nebo chování (`.block--animated-to-left`). Neměla by nést název závislý na vzhledu (`.block--green`). 
+
+V kódu je to třída prefixovaná názvem bloku a doplněná názvem elementu odděleným dvěmi pomlčkami: `.nazev-bloku--nazev-modifikatoru`.
+
+Možná jste někde narazili na zápis modifikátorů jen pomocí jednoho podržítka (`.block_modifier`). To je „klasická“ BEM syntaxe. Zdá se, že to byl Harry Roberts, kdo ji upravil do podoby dvou pomlček. Nebo alespoň zpopularizoval tuto variantu. Tady [je vysvětlení](http://stackoverflow.com/a/25213997/889682). 
+
+„Klasický“ zápis umožňuje rozdělit modifikátory na dva typy – „boolean“ a „key-value“. Popravdě si ale nepamatuju, kdy bych něco takového potřeboval použít. Proso se i mě pro svou jednoduchost a jednoznačnost líbí „Robertsova“ varianta.
+
+### Modifikátor elementu 
+
+Varianta elementu je taky možná. Hlavně u komplexnejších komponent něco takového můžete potřebovat. Jako příklad vezměme aktivní záložku v záložkové navigaci – `.tabs-nav__tab-item__active`.
+
+Platí u ní stejná pravidla pro tvorbu názvů jako u modifikátorů. V kódu je to třída prefixovaná názvem bloku a doplněná názvem elementu odděleným dvěmi pomlčkami: `.nazev-bloku__nazev-elementu--nazev-modifikatoru`.
+
+
+### Názvy se oddělují pomlčkou
+
+Jak je z výše uvedených ukázek vidět, názvy bloků, elementů a modifikátorů se oddělují jednou pomlčkou. Například `.block-name--modifier-name`.
 
 
 ## BEM a systémy organizace CSS
@@ -126,10 +132,11 @@ Pak:
 
 - `.nav` je blok (název komponenty)
 - `.nav--secondary` je modifikátor (varianta komponenty)
-- `.nav__item` je element (potomek komponenty)
-- `.nav__item--active` je modifikátor elementu (varianty potomka komponenty)
+- `.nav__item` je element (DOM element uvnitř komponent)
+- `.nav__item--active` je modifikátor elementu (varianty elementu)
 
-## Specifičnost v BEMu {#specificita}
+
+## Specificita v BEMu {#specificita}
 
 Protože BEM vychází z OOCSS, cílem je zachovat co nejnižší specificitu (váhu) salektorů. Kód v CSS pak budeme psát takto:
 
@@ -177,12 +184,13 @@ Jediná výjimka, kdy je možné použít specificitu o dvou třídách je eleme
 }
 ```
 
-Element je totiž vždy závislý na rodičovském bloku a nedávalo by smysl jej osamostatnit. A jen během snahy ho osamostatnit by nastaly potíže s uzavřením do selektoru potomka.
+Element je totiž vždy závislý na rodičovském bloku a nedávalo by smysl jej osamostatnit. Zároveň by bylo dost nepříjemné vytvářet modifikátory všem elementům uvnitř modifikovaného bloku (`.nav__item--secondary`). 
 
+Z praktických důvodů má tedy jako jediný v systému pojmenovávání BEM dovoleno mít dvojnásobnou specificitu selektoru.
 
 ## BEM a preprocesory {#preprocesory}
 
-Psaní BEM syntaxe si můžete hezky usnadnit [v CSS preprocesorech](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) pomocí zanořování:
+Psaní BEM syntaxe si můžete usnadnit [v CSS preprocesorech](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) pomocí zanořování:
 
 ```less
 .nav {
@@ -191,13 +199,38 @@ Psaní BEM syntaxe si můžete hezky usnadnit [v CSS preprocesorech](http://www.
 }
 ```
 
-Jen to prosím nepřehánějte. Zanořování v preprocesorech je dobrý sluha, ale zlý pán. Samo o sobě problematické není, ale v kódu méně zkušených CSS pisálků vede [k monolitickým bloků a závorkovému peklu](http://www.vzhurudolu.cz/blog/65-css-kod-problemy#1-zavorkove-peklo-a-monoliticnost).
+Jen to prosím nepřehánějte. Zanořování v preprocesorech je dobrý sluha, ale zlý pán. Samo o sobě problematické není, ale v kódu méně zkušených CSS pisálků vede [k monolitickým blokům a závorkovému peklu](http://www.vzhurudolu.cz/blog/65-css-kod-problemy#1-zavorkove-peklo-a-monoliticnost).
 
 
-## Časté chyby
+## Co se ještě hodí vědět?
 
-Kromě přehnaného zanořování v preprocesorech vás upozorním ještě na další problémy. Psal jsem o tom [ve zvláštním článku](http://www.vzhurudolu.cz/blog/63-bem-chyby):
+Kromě přehnaného zanořování v preprocesorech vás upozorním ještě na další problémy. 
 
-- Vícenásobné zanoření. `.card__header__title` je špatně. Činíte selektor závislý na organizaci DOMu. `card__header-title` je lepší.  [Odkaz](http://www.vzhurudolu.cz/blog/63-bem-chyby#v-css-nekopirujte-dom-strukturu).
-- Křížení komponent. `.card .button` je špatně. Je pak těžké říct, zda kód patří do komponenty `card` nebo do `button`. Lepší je vytvořit modifikátor typu `button--small`  [Odkaz do článku](http://www.vzhurudolu.cz/blog/63-bem-chyby#krizeni-nechte-rostlinarum-u-komponent-jej-nezkousejte)
+### Vícenásobné zanoření bloků 
+
+Ve struktuře DOMu možné je libovolně zanořovat. Hierarchie CSS selektorů má ovšem vždy zůstat jednoúrovňová. `.block__element__heading` je tedy špatně. Má být `.block__element-heading`. To proto, aby CSS selektor nebyl závislý na struktuře DOMu a nemuseli jste jej měnit při každé úpravě HTML. [Nekopírujte v CSS strukturu DOMu](http://www.vzhurudolu.cz/blog/63-bem-chyby#v-css-nekopirujte-dom-strukturu).
+
+### Křížení komponent
+
+Často v CSS vídávám takovéto konstrukce:
+
+```css
+.button {
+  /* Kód pro komponentu Button */
+}
+
+.card .button {
+  /* Změny komponenty Button pro jeho výskyt uvnitř Card */
+}
+```
+
+Občas není zbytí, ale principiálně je křížení komponent špatně. Je pak těžké říct, zda kód patří do komponenty `card` nebo do `button`. Lepší je vytvořit modifikátor typu `button--small`. [Křízení zkrátka nechte rostlnářům](http://www.vzhurudolu.cz/blog/63-bem-chyby#krizeni-nechte-rostlinarum-u-komponent-jej-nezkousejte)
+
+### Použití BEMu v ne-BEM prostředí
+
+Co když na projektu využívám třeba Bootstrap, který je napsaný objektově, ale bez BEM pojmenovávání? 
+
+Pokud je Bootstrap nebo jiná knihovna v kódu dominující, na BEM bych se pro zachování konzistence vykašlal. Bootstrap má navíc [vlastní standardy](http://codeguide.co/) psaní kódu, takže vám doporučím pohybovat se v jejich mantinelech. Jde o nepříliš přísné, ale pro většinu situací naprosto vyhovující vodítko pro psaní kódu.
+
+Pokud byste však používali Bootstrap nebo jinou knihovnu jen jako doplněk k vlastní robustní základně kódu, zvážil bych buď prefixování selektorů knihoven nebo vlastních částí kódu. V počátcích vývoj [VašeČočky](http://www.vasecocky.cz/) jsme třeba pro odlišení našich komponent od těch „bootstrapích“ používali prefix `vc-`.
 
