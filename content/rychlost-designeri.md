@@ -95,9 +95,9 @@ Předpokládám, že děláte nějakou analýzu konkurence. Změřte si také je
 
 | Web           | First Byte |  Speed Index |  Page Load |
 |:--------------|-----------:| ------------:|-----------:|
-| mujweb.cz     | 1,205 s    | 10 542       | 12,5 s     |
-| konkurent1.cz | 0,355 s    | 4 535        | 8,5 s      |
-| konkurent2.cz | 1,105 s    | 8 500        | 9,5        | 
+| mujweb.cz     | 1,205 s    | 10 542       | 12,5 s     |
+| konkurent1.cz | 0,355 s    | 4 535        | 8,5 s      |
+| konkurent2.cz | 1,105 s    | 8 500        | 9,5        | 
 
 <figcaption markdown="1">    
 *Ukázkové srovnání s konkurencí u existujícího webu. Hledáte konkurenta, který má ve vašem oboru nejlepší rychlostní metriky*
@@ -108,7 +108,7 @@ Je prokázáno, že lidé jsou schopní rozeznat dvacetiprocentní a vyšší ro
 
 |                    | First Byte |  Speed Index |  Page Load |
 |:-------------------|-----------:| ------------:|-----------:|
-| Cíl pro mujweb.cz  | 0,26 s     | 3 600        |  6,8 s     |
+| Cíl pro mujweb.cz  | 0,26 s     | 3 600        |  6,8 s     |
 
 Více je v článku [„How To Make A Performance Budget“](http://v3.danielmall.com/articles/how-to-make-a-performance-budget/) od Dana Malla.
 
@@ -116,7 +116,7 @@ Více je v článku [„How To Make A Performance Budget“](http://v3.danielmal
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-### 3. Klíč pro zavedení kultury rychlost je ve spolupráci s vývojáři {#spoluprace}
+### 3. Klíč pro zavedení kultury rychlosti je ve spolupráci s vývojáři {#spoluprace}
 
 Říkám to pořád a tady to znovu rád zopakuji: Zvěte vývojáře už na úvodní schůzky, kde přemýšlíte o řešení. Ukazujte jim wireframy, rozpracovanou grafiku. Ptejte se, jaké budou mít návrhy dopad na rychlost načítání.
 
@@ -174,7 +174,7 @@ Datový objem je evergreen, tam se dá vždycky něco vylepšit. Zaměřím se t
 - Zvažte použití formátu WebP. Je to lépe komprimovaná háhrada JPEG. Umí jej sice jen Chrome a Opera, ale není těžké servírovat WebP i JPEG najednou. Detaily naleznete v článku [o HTML značce Picture](picture.md).
 - Když už využíváte JPEG, zvažte náhradu open source řešení pro zmenšování datového objemu obrázků. Doporučuji například [Kraken.io](https://kraken.io/).
 
-Chcete příklad z praxe? Když kolegové z [VašeČočky.cz](https://www.vasecocky.cz/) nasadili WebP obrázky, ušetřili 30 % datového objemu  úvodní stránky (1250 kB → 950 kB ) a o pětinu snížili čas pro Page Load  (19,8 s → 16,8 s).
+Chcete příklad z praxe? Když kolegové z [VašeČočky.cz](https://www.vasecocky.cz/) nasadili WebP obrázky, ušetřili 30 % datového objemu úvodní stránky (1250 kB → 950 kB) a o pětinu snížili čas pro Page Load (19,8 s → 16,8 s).
 
 ### Javascript: Odstraňte blokování parsování  {#blokujici-js}
 
@@ -209,7 +209,7 @@ Už jen pouhé zapnutí HTTP/2 na serveru vám pravděpodobně web alespoň troc
 
 Jen pozor, pravděpodobně bude po přechodu potřebné poupravit i způsob servírování frontendových prvků stránky. Více naleznete v mém textu [o HTTP/2](http-2.md).
 
-### Webfonty {#webfonty}
+### Nechte sjednotit postup načítání webfontů {#webfonty}
 
 Po obrázcích a Javascriptu bývají webové fonty třetím největším datovým hříšníkem. To ještě není tak hrozné jako to, že každý prohlížeč s webfonty zachází trochu jinak:
 
@@ -221,7 +221,7 @@ Po obrázcích a Javascriptu bývají webové fonty třetím největším datov�
 
 Je ale nutné, aby vývojář převzal kontrolu a způsob servírování sjednotil napříč všemi přohlížeči. Osobně k tomu používám knihovnu [FontFaceObserver](https://fontfaceobserver.com/).
 
-Příklad z praxe? Kolegové z VašeČočky.cz snížili nasazením FontFaceObserveru hodnotu metriky Start Render Time  na polovinu (13,2 s → 6,6 s).
+Příklad z praxe? Kolegové z VašeČočky.cz snížili nasazením FontFaceObserveru hodnotu metriky Start Render Time na polovinu (13,2 s → 6,6 s).
 
 
 ### Zvažte nasazení technologie AMP {#amp}

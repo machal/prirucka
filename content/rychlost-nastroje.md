@@ -106,4 +106,3 @@ Používám jen jako doplněk, ale někteří mu dávají přednost před PageSp
 
 Umí toho hodně. Ukáže timeline, zvládne emulaci pomalého připojení. Testovací lokality má GTmetrix ale pro ČR horší než WebPagetest.org a s méně možnostmi nastavení. Hezké je monitorování a nastavení připomínek do e-mailu. [gtmetrix.com](https://gtmetrix.com/)
 
-
