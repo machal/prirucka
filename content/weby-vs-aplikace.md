@@ -101,9 +101,9 @@ Je tu ještě jedna věc. Z průzkumů vychází, že uživatelé zase tak moc n
 
 *Podle Forrester Research uživatelé tráví 88 % svého času na mobilních zařízení jen v pěti aplikacích. [vrdl.in/en8rk](http://blogs.forrester.com/nicole_dvorak/16-01-28-data_digest_just_a_handful_of_apps_account_for_nearly_all_app_time_on_smartphones)*
 
-Pět aplikací? To máme email, Facebook, mapy, volání, fotky, prohlížeč… Počkejte, už jich je šest! Bude tady místo pro restauraci z Hrnčířů? Nejspíš ne. 
+Pět aplikací? To máme e-mail, Facebook, mapy, volání, fotky, prohlížeč… Počkejte, už jich je šest! Bude tady místo pro restauraci z Hrnčířů? Nejspíš ne. 
 
-Do aplikace lidi tak snadno nedostanete. Na web je to jednoduché, chodí vám tam z Google vyhledávání, Facebooku, emailů, chatů… však víte. 
+Do aplikace lidi tak snadno nedostanete. Na web je to jednoduché, chodí vám tam z Google vyhledávání, Facebooku, e-mailů, chatů… však víte. 
 
 Proto říkám: web potřebují všichni, nativní aplikaci dokáží prosadit jen někteří.
 

@@ -1,12 +1,12 @@
-# Minimální plocha aktivní plochy: alespoň centimetr čvereční
+# Minimální plocha aktivní plochy: alespoň centimetr čtvereční
 
 Robert Wadlow byl podle Wikipedie nejvyšším člověkem v historii. Přezdívalo se mu Obr z Altonu. Když navrhuji rozhraní, dost na něj myslím. Hned vysvětlím proč. 
 
 Titěrné aktivní plochy v uživatelském rozhraní jsou častým hříchem responzivních webů. Ano, kurzorem myši se trefíte skoro na cokoliv.
 
-Palec sedmnáctileté dívky bude menší než palec Roberta Wadlowa. Ten totiž měřil 2,72 m a vážil okolo 220 kg. Proto raději při vymýšlení rozhraní myslím na Obra z Altonu než na mladé dívky, jestli mi rozumíte.
+Palec sedmnáctileté dívky bude menší než palec Roberta Wadlowa. Ten totiž měřil 272 cm a vážil okolo 220 kg. Proto raději při vymýšlení rozhraní myslím na Obra z Altonu než na mladé dívky, jestli mi rozumíte.
 
-Co se týká minimalní plochy aktivní plochy, moderní webařina se nejčastěji odkazuje na další výzkum Stevena Hoobera, tentokrát s Patti Shank. Zjistili, že potřebná minimální plocha se různí podle vzdálenosti od kraje obrazovky:
+Co se týká minimální plochy aktivní plochy, moderní webařina se nejčastěji odkazuje na další výzkum Stevena Hoobera, provedený tentokrát ve spolupráci s Patti Shank. Zjistili, že potřebná minimální plocha se různí podle vzdálenosti od kraje obrazovky:
 
 * ve středu obrazovky je 7 čtverečních milimetrů
 * na krajích obrazovky je to 11 čtverečních milimetrů
@@ -16,7 +16,7 @@ Přiznávám, že ve svých myšlenkách na Obra z Altonu si pravidlo zjednoduš
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-6.jpg" alt="">
 <figcaption markdown="1">    
-*E-shop FotoŠkoda.cz má jeden z těch povedenějších košíků na mobilech. Všechno velké, navigace jednoznačná. Jen prvky v šedivé ploše s „Pojištěním“ by můj palec ani na pětiapůlpalcovém iPhone netrefil. Na výšku alespoň centimetr, prosím*
+*E-shop FotoŠkoda.cz má jeden z těch povedenějších košíků na mobilech. Všechno velké, navigace jednoznačná. Jen prvky v šedivé ploše s „Pojištěním“ by můj palec ani na pětiapůlpalcovém iPhonu netrefil. Na výšku alespoň centimetr, prosím*
 </figcaption> 
 </figure>
 

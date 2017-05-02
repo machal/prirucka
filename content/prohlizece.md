@@ -82,7 +82,7 @@ Ke krátkému komentáři pro zajímavost přidávám i skóre [na HTML5test.com
 
 ### Speciální kategorie: WebView a prohlížeče uvnitř aplikací
 
-Většina dnešních zhlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, Twitteru nebo třeba emailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/blog/19-prohlizec-facebook](http://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
+Většina dnešních zhlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, Twitteru nebo třeba e-mailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/blog/19-prohlizec-facebook](http://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
 
 Jakým prohlížečem se pak stránka vykreslí? Vývojáři nativních mobilních aplikací jej znají jako WebView komponentu. Ta startuje jádro výchozího prohlížeče pro konkrétní operační systém. Na iOS je to vždy mobilní Safari, na dnešních Androidech obvykle Chrome. 
 

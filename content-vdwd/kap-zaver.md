@@ -6,7 +6,7 @@ Díky, že jste přečetli „Vzhůru do (responzivního) webdesignu”!
 
 I když jsem udělal vše proto, abych se chybám vyhnul, nezbývá než se smířit s tím, že i v tomto textu nějaké zůstaly. Moc pomůže, když je nahlásíte. Všichni čtenáři dostanou jednou za čas aktualizovanou elektronickou verzi.
 
-Moc rád si přečtu i obecnou zpětnou vazbu. Pomohla vám knížka? Vylepšili byste ji něčím? Pište mi na email, na Twitter nebo Facebook.
+Moc rád si přečtu i obecnou zpětnou vazbu. Pomohla vám knížka? Vylepšili byste ji něčím? Pište mi na e-mail, na Twitter nebo Facebook.
 
 - E-mail: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz)
 - Facebook: [facebook.com/vzhurudolu](https://facebook.com/vzhurudolu)

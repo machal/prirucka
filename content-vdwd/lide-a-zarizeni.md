@@ -1,6 +1,6 @@
 # Lidé a zařízení: jak je ovládají a jak se chovají?
 
-Jak vlastně lidé ta nová zařízení drží, jak je osahávají? Vítejte u mobilní, tabletové a desktopové kamasútry!
+Jak vlastně lidé ta nová zařízení drží, jak je osahávají? Vítejte u mobilní, tabletové a desktopové Kámasútry!
 
 Asi víte, že dotykovost je nový standard. Ale dozvíte se také, že prvky, které mají být snadno dosažitelné, je dobré na mobilech umísťovat na vodorovný střed a na větších zařízeních k pravému kraji. Pojďme na to.
 
@@ -10,23 +10,23 @@ Na začátek si dovolím parafrázovat myšlenku Joshe Clarka z jeho skvělé kn
 
 > Zařízení jakéhokoliv typu může být dotykové. Proto musíme předpokládat, že dotykové bude.
 
-Přesně tak, milí čtenáři, pojďme považovat dotykové ovládaní za výchozí stav.
+Přesně tak, milí čtenáři, pojďme považovat dotykové ovládání za výchozí stav.
 
-V době kdy píšu tento text ještě „dotykáče“ mezi zařízeními přistupujícími na vaše weby nemusejí hrát první housle.  Jenže, jak už jsem psal dříve, to se brzy změní. Statistiky neúprosně ukazují, že dotyková zařízení jednou snědí počítačové myši i s kabelem. 
+V době, kdy píšu tento text, ještě „dotykáče“ mezi zařízeními přistupujícími na vaše weby nemusejí hrát první housle. Jenže jak už jsem psal dříve, to se brzy změní. Statistiky neúprosně ukazují, že dotyková zařízení jednou snědí počítačové myši i s kabelem.
 
-Ani skupina uživatelů klasických počítačů,  zejména notebooků, není nedotčená. Máme tady hybridní zařízení, dotykové stroje s klávesnicí a myší. A jejich prodeje rostou.
+Ani skupina uživatelů klasických počítačů, zejména notebooků, není nedotčená. Máme tady hybridní zařízení, tedy dotykové stroje s klávesnicí a myší. A jejich prodeje rostou.
 
-### Proč nemít dvě verze rozhraní – pro myšovitá a dotyková zařízení?
+### Proč nemít dvě verze rozhraní – pro „myšovitá“ a dotyková zařízení?
 
 Bylo by to totiž neefektivní a je dost těžké ta zařízení detekovat.
 
-Nejprve k efektivitě. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit. Pro nastartování představivosti doporučuji podkapitolu [o webech mobilních, responzivních, adaptivních](mobilni-responzivni-adaptivni.md). Možná si vzpomenete, že jsem proti speciální mobilní verzi webu argumentoval náročností práce i údržby pro designéry i vývojáře. Ale týká se vlastně všech řemesel sovisejících s webem: uživatelského a technického testování, správy obsahu a dalších. Práce na dvou rozhraních je všechny zpomalí a prodraží.
+Nejprve k efektivitě. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit. Pro nastartování představivosti doporučuji podkapitolu [o webech mobilních, responzivních, adaptivních](mobilni-responzivni-adaptivni.md). Možná si vzpomenete, že jsem proti speciální mobilní verzi webu argumentoval náročností práce i údržby pro designéry i vývojáře. Ale týká se vlastně všech řemesel souvisejících s webem: uživatelského a technického testování, správy obsahu a dalších. Práce na dvou rozhraních je všechny zpomalí a prodraží.
 
 Z principu je navíc téměř nemožné detekovat dotyková zařízení. Kdyby se lidé dělili na *dotykující* a *myšující*, možné by to jakž takž bylo. Jenže lidstvo je tak trochu zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
 
 Výjimečně nastává situace, kdy se nějaká detekce hodí. Třeba když chcete pro desktopové rozhraní otevřít prvek po najetí myši. Pak použijte detekční knihovnu Modernizr, která *myšovitá* umí najít. 
 
-Obecně se tomu ale snažte vyhnout, protože i tato detekce je nespolehlivá. Řeknu dva z mnoha důvodů. Starší dotyková zařízení například jen technicky emulovala klikání myší, takže je jako dotyková detekovat nelze. A pak tu máme hybridní zařízení. Technicky se jich zeptáte: „Umíš doteky?“ „Ano, umím.“ odpoví. Jenže co když uživatel právě ovládá vaše rozhraní myší? Více o tomto problému najdete v dokumentaci Modernizru, hledejte „touchevents“. https://modernizr.com/docs 
+Obecně se tomu ale snažte vyhnout, protože i tato detekce je nespolehlivá. Uvedu dva z mnoha důvodů. Starší dotyková zařízení například jen technicky emulovala klikání myší, takže je jako dotyková detekovat nelze. A pak tu máme hybridní zařízení. Technicky se jich zeptáte: „Umíš doteky?“ „Ano, umím,“ odpoví. Jenže co když uživatel právě ovládá vaše rozhraní myší? Více o tomto problému najdete v dokumentaci Modernizru, hledejte „touchevents“.  https://modernizr.com/docs 
 
 ## Lidé váš web vidí na více zařízeních
 
@@ -39,9 +39,9 @@ No tak dobře, teď vážně. Opravdu neexistuje nic jako oddělené tábory mob
 * 39 % lidí vyhledává jen na mobilech, 28 % na různých zařízeních, 32 % jen na počítači;
 * 27 % využívá jen mobil a jen 14 % pouze desktop.
 
-Google to měřil na svých amerických uživatelích mezi 18 a 49 lety v prvním čtvrtletí 2016. [vrdl.in/gdum](https://www.thinkwithgoogle.com/articles/device-use-marketer-tips.html)
+Google to měřil na svých amerických uživatelích mezi 18 a 49 lety v prvním čtvrtletí roku 2016.  [vrdl.in/gdum](https://www.thinkwithgoogle.com/articles/device-use-marketer-tips.html)
 
-Není bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 minut denně u tabletů, 120 u počítače a celých 170 minut pohledem do mobilu. Když držíme mobily, nechodíme snad ani na záchod! Nebo si je na záchod bereme, že ano.
+Není bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 minut denně u tabletů, 120 minut u počítače a celých 170 minut pohledem do mobilu. Když držíme mobily, nechodíme snad ani na záchod! Nebo si je na záchod bereme, že ano.
 
 ## Zařízení nejčastěji držíme jednou rukou a ovládáme palcem
 
@@ -50,7 +50,7 @@ V roce 2013 se Steven Hoober sebral a šel se podívat, jak lidé na ulicích dr
 <figure>
 <img src="dist/images/original/mobily-drzeni.jpg" alt="">
 <figcaption markdown="1">    
-*Výsledek výzkumu Stevena Hoobera: 49 % lidí mobilní zařízení v jedné ruce a šátralo po něm palcem. 36 % lidí dávalo přednost „kolébkovému“ chvatu (držení v jedné ruce a ovládání prstem druhé ruky) a 15 % drželo krabičky obouruč a ovládalo dvěma palci*
+*Výsledek výzkumu Stevena Hoobera: 49 % lidí drželo mobilní zařízení v jedné ruce a šátralo po něm palcem. 36 % lidí dávalo přednost „kolébkovému“ chvatu (držení v jedné ruce a ovládání prstem druhé ruky) a 15 % drželo krabičky obouruč a ovládalo dvěma palci*
 </figcaption> 
 </figure>
 
@@ -62,13 +62,13 @@ Ano, i úchopově přelétaví jsme. Chudáci mobilní telefony. A co teprve tab
 
 ### Dvě třetiny dotyků při držení v jedné ruce se provádí pravačkou
 
-A to i přes to, že leváci tvoří jen asi desetinu, nikoliv zbylou třetinu, populace. I my praváci si občas sáhneme levým palcem. Tím méně přesným, mimochodem.
+A to i přes to, že leváci tvoří jen asi desetinu, nikoliv zbylou třetinu populace. I my praváci si tedy občas sáhneme levým palcem. Tím méně přesným, mimochodem.
 
 ### 75 % všech interakcí bylo děláno palcem
 
 U jednorukého držení to asi smysl dává, ale palce to vyhrály i u kolébkového chvatu. 
 
-Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovládání palců. Zdrojový výzkum Steven Hoobera „How Do Users Really Hold Mobile Devices“ najdete na UXMatters.com. [vrdl.in/m326o](http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php#top)
+Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovládání palců. Zdrojový výzkum Stevena Hoobera „How Do Users Really Hold Mobile Devices“ najdete na UXMatters.com. [vrdl.in/m326o](http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php#top)
 
 ### Pozor na malou plochu pohodlně dosažitelných oblastí obrazovky
 
@@ -89,7 +89,7 @@ To bychom měli mobily. Jak je to u větších zařízení?
 
 U tabletů značně záleží na jejich velikosti. Josh Clark ve výše odkazovaném článku zmiňuje, že ty menší sedmi- a osmipalcové drží většina uživatelů ještě v ruce a ovládá palci. Větší tablety si zase pokládáme na stůl nebo do klína. 
 
-Na otázku jestli lidé tablety častěji používají na výšku nebo na šířku odpovím tak, že to vychází na remízu. Větší tablety používá mírná většina lidí na šířku. Menší na výšku, protože se nám pak lépe drží v ruce.
+Na otázku, jestli lidé tablety častěji používají na výšku, nebo na šířku, odpovím tak, že to vychází na remízu. Větší tablety používá mírná většina lidí na šířku. Menší na výšku, protože se nám pak lépe drží v ruce.
 
 ### Malé tablety (7" a 8") držíme častěji obouruč a ovládáme palci
 
@@ -98,7 +98,7 @@ Znovu se zde budu odkazovat na data, která sesbíral Josh Clark. Malé tablety 
 <figure>
 <img src="dist/images/original/vdwd/palce-tablet.jpg" alt="">
 <figcaption markdown="1">    
-*Na malých tabletech držených obouruč jsou palci nejlépe dosažitelné okraje od středu nahoru. Spodní okraj a střed je naopak dosažitelné nejhůře*
+*Na malých tabletech držených obouruč jsou palci nejlépe dosažitelné okraje od středu nahoru. Spodní okraj a střed jsou naopak dosažitelné nejhůře*
 </figcaption> 
 </figure> 
 
@@ -112,7 +112,7 @@ I mě, jako člověka nadšeného do dotykových zařízení, překvapilo, že c
 
 O tom, zda lidé budou vůbec někdy chtít ovládat zařízení stojící na stole doteky, se dlouho vedly spory. Skeptici namítali, že ovládání ukazováčkem člověka nutí držet paže před sebou a to že není pohodlné. Když si vzpomenete na onen vysoký podíl ovládání doteky, budete se asi divit, když prohlásím, že skeptici měli pravdu.
 
-Lidé totiž dotykové obrazovky notebooků  a podobných zařízení nepoužívají ukazováčkem, ale znovu palcem. Únavě paží zabraňují tak, že si ruce opřou o stůl pod hranou displeje. Ukazováčkem obrazovky ohmatávají jen uživatelé méně zkušení, kteří většinou časem přejdou znovu na palce. 
+Lidé totiž dotykové obrazovky notebooků a podobných zařízení neovládají ukazováčkem, ale znovu palcem. Únavě paží zabraňují tak, že si ruce opřou o stůl pod hranou displeje. Ukazováčkem ohmatávají obrazovky jen uživatelé méně zkušení, kteří většinou časem přejdou znovu na palce.
 
 <figure>
 <img src="dist/images/original/vdwd/palce-notebook.jpg" alt="">

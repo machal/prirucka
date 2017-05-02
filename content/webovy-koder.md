@@ -132,7 +132,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### Typologie projektů
 
-* Prezentační stránky, microsites, webové aplikace, HTML emaily… Jejich specifika a rozdíl v používaných nástrojích a přístupech.
+* Prezentační stránky, microsites, webové aplikace, HTML e-maily… Jejich specifika a rozdíl v používaných nástrojích a přístupech.
 
 ### 3. přesahy do dalších oborů
 

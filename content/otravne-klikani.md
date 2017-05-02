@@ -1,12 +1,12 @@
 # Málo kliků a ještě méně (otravných) dotyků
 
-Víte, my webdesignéři, si problémy (jako všichni lidé) občas až moc zjednodušujeme. Díky tomu asi před patnácti lety vzniklo „Pravidlo tří kliků“. Doporučovalo, aby veškeré informace byly na vašem webu dostupné maximálně na tři kliknutí myši. 
+Víte, my webdesignéři si problémy (jako všichni lidé) občas až moc zjednodušujeme. Díky tomu asi před patnácti lety vzniklo „Pravidlo tří kliků“. Doporučovalo, aby veškeré informace byly na vašem webu dostupné maximálně na tři kliknutí myši.
 
 „Pravidlo“ bylo naštěstí mnohokrát vyvráceno:
 
 > Uživatelům nevadí extra kliknutí navíc, pokud o nich nemusí přemýšlet.
 
-Přesně tak, tři *otravná* kliknutí jsou horší než pět jednoduchých. Jak říká klasik Steve Krug už titulem své zásadní knihy: „Nenuťte uživatele přemýšlet“. Na desktopu máme výzkumy ověřeno, že to platilo a platit bude. A co teprve, když zmenšíme obrazovku!
+Přesně tak, tři *otravná* kliknutí jsou horší než pět jednoduchých. Jak říká klasik Steve Krug už titulem své zásadní knihy: „Nenuťte uživatele přemýšlet.“ Na desktopu máme výzkumy ověřeno, že to platilo a platit bude. A co teprve, když zmenšíme obrazovku!
 
 Tvorba uživatelského rozhraní pro mobily není jednoduchá disciplína. Designér má k dispozici méně prostoru. Uživatel kromě menšího prostoru i zhoršené fyzické podmínky. 
 

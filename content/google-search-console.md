@@ -24,7 +24,7 @@ Mohou se hodit i další nastavení. Třeba vyloučení parametrů v URL adresá
 
 ## Google Search Console už pak funguje sám, jen ji jednou za čas navštivte
 
-Pokud nástroj narazí na problém, který považuje za zásadní, pošle vám email. Například i ve chvíli, kdy web vůbec nejede. 
+Pokud nástroj narazí na problém, který považuje za zásadní, pošle vám e-mail. Například i ve chvíli, kdy web vůbec nejede. 
 
 Doporučuji Search Console navštívit alespoň jednou měsíčně a podívat se, jestli vám nezobrazuje zprávy, které jsou méně důležité. Ty se totiž vypisují jen v rozhraní. Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obvykle se o svém webu dozvíte něco zajímavého. Nebo zjistíte co Google chystá. V poslední době se třeba v rozhraní objevily nástroje pro bezpečnostní audit nebo [Google AMP stránky](http://www.vzhurudolu.cz/blog/40-amp), které ale v českém Google zatím nefungují.
 

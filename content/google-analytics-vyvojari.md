@@ -134,7 +134,7 @@ Jen pozor na *vzorkování*, tedy výběr dat. Při použití segmentu se může
 
 * Naučte se Analytics [správně vložit](google-analytics-pridani.md).
 * Nainstalujte si [Technical Performance Dashboard](https://www.viget.com/articles/a-google-analytics-dashboard-for-front-end-developers) a sledujte čísla o rychlosti webu, prohlížečích a dalších technických aspektech.
-* Zásadnější změny zapisujte, nechte si posílat emailové reporty.
+* Zásadnější změny zapisujte, nechte si posílat e-mailové reporty.
 * Využívejte nástroje pro debugování Analytics.
 * Nastavte měření i tam, kde se nemění URL adresa.
 * Naučte se data správně číst, porovnávat a vyhodnocovat.

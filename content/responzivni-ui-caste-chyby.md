@@ -21,23 +21,23 @@ Uživatelé si zvětšují výřezy obrazovky z mnoha důvodů: kvůli špatném
 
 Rozhodně si nenamlouvejte, že jste web „optimalizovali“ pro mobily a že zoomování potřeba není. Uveďte [správnou meta značku pro viewport](viewport-meta.md).
 
-Norma WCAG (doporučení pro přístupné weby) trvá na možnosti vše alespoň dvakrát zvětšit. [vrdl.in/cbe5f](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale)
+Norma WCAG (doporučení pro přístupné weby) trvá na tom, že vše musí být možné alespoň dvakrát zvětšit. [vrdl.in/cbe5f](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale)
 
 Prohlížeč Safari na operačním systému iOS verze 10 a novějších už naštěstí „zákaz zoomování“ ignoruje.
 
 ## 5) Neošetřené načítání webfontů
 
-Taky vás štve problikávání obsahu stránky při jejím načítání? Použití webfontů je v pořádku, ale je nutné mít ze strany vývojáře pod kontrolou. Různé prohlížeče totiž načítají webfonty různě. Je potřeba si tedy vybrat způsob načítání, který vyhovuje konkrétnímu webu. Pro převzetí kontroly nad načítáním doporučuji malou knihovnu FontFaceObserver. [fontfaceobserver.com](https://github.com/bramstein/fontfaceobserver)
+Taky vás štve problikávání obsahu stránky při jejím načítání? Použití webfontů je v pořádku, ale ale vývojář musí mít vše pod kontrolou. Různé prohlížeče totiž načítají webfonty různě. Je potřeba si tedy vybrat způsob načítání, který vyhovuje konkrétnímu webu. Pro převzetí kontroly nad načítáním doporučuji malou knihovnu FontFaceObserver. [fontfaceobserver.com](https://github.com/bramstein/fontfaceobserver)
 
 ## 6) Vkládání zbytečných sdílecích tlačítek
 
-„Lajkovací“ nebo sdílecí tlačítka Facebooku a dalších sítí jsou na webech velmi často k ničemu. Komplikují uživatelská rozhraní, zpomalují načítání. Funkce sdílení je navíc součástí všech mobilních operačních systémů. Zvažte, jestli vám umístění tlačítek stojí za to. Případně zvolte alternativní, úspornější řešení. Například knihovnu Social Likes. [social-likes.js.org/](http://social-likes.js.org)
+„Lajkovací“ nebo sdílecí tlačítka Facebooku a dalších sítí jsou na webech velmi často k ničemu. Komplikují uživatelská rozhraní a zpomalují načítání. Funkce sdílení je navíc součástí všech mobilních operačních systémů. Zvažte, jestli vám umístění tlačítek stojí za to. Případně zvolte alternativní, úspornější řešení. Například knihovnu Social Likes. [social-likes.js.org/](http://social-likes.js.org)
 
 ## 7) Fixně pozicované navigační a propagační elementy
 
 Tady mám poněkud radikální postoj. Navigační a propagační elementy, které při rolování stránky drží pozici, dělají na mobilech více škody než užitku. 
 
-Týká se všech fixně umístěných navigačních lišt, překryvných vrstev s reklamou na newslettery a mobilní aplikace. Nebo v poslední době těch nešťastných tlačítek pro otevření chatu.
+Týká se to všech fixně umístěných navigačních lišt i překryvných vrstev s reklamou na newslettery a mobilní aplikace. Nebo v poslední době těch nešťastných tlačítek pro otevření chatu.
 
 Ptáte se proč? 
 
@@ -47,7 +47,7 @@ Telefony s menšími rozlišeními, jako 320 × 480 nebo dokonce 240 × 320 pixe
 
 ### Kolidují s ovládacími prvky prohlížečů
 
-Fixně pozicovaná horní navigace bývá překrývána vysunovací lištou s adresním řádkem prohlížeče. Prvky fixně umístěné dole zase kolidují s výsuvnou spodní lištou prohlížeče Safari na iOS. [vrdl.in/houb1](https://www.eventbrite.com/engineering/mobile-safari-why/)
+Fixně pozicovanou horní navigaci často překrývá vysunovací lišta s adresním řádkem prohlížeče. Prvky fixně umístěné dole zase kolidují s výsuvnou spodní lištou prohlížeče Safari na iOS. [vrdl.in/houb1](https://www.eventbrite.com/engineering/mobile-safari-why/)
 
 ### Komplikují posun obrazovky 
 
@@ -58,11 +58,11 @@ Postranní fixní lišty zase nevinným palcům vezmou prázdné okraje, kterým
 Jak už jsem psal – zakazovat zoomování považuji za chybu. Co ale udělají vaše fixně pozicované elementy pokaždé, když si uživatel stránku přiblíží? No jasně, rozbijí layout.
 
 
-### Problematické na méně výkonných zařízeních
+### Jsou problematické na méně výkonných zařízeních
 
 Na starších a méně výkonných mobilech vás `position: fixed` nebude poslouchat a při posunu stránky občas neudrží vámi vysněnou pozici. 
 
-Často se argumentuje tím, že fixně pozicovaná navigace umožní uživateli ovládat web na obzvlášť dlouhých stránách. Na to už jsem namítal, že stránky na mobilech *obzvlášť dlouhé* prostě být nemají, však víte. Na rozumně dlouhých stránkách je návrat zpět nahoru snadný díky možnosti rychlého posunu stránky (tzv. „momentum scrolling“). Tou jsou vybaveny všechny mobilní prohlížeče.
+Často se argumentuje tím, že fixně pozicovaná navigace umožní uživateli ovládat web na obzvlášť dlouhých stránkách. Na to už jsem namítal, že stránky na mobilech *obzvlášť dlouhé* prostě být nemají, však víte. Na rozumně dlouhých stránkách je návrat zpět nahoru snadný díky možnosti rychlého posunu stránky (tzv. „momentum scrolling“). Tou jsou vybaveny všechny mobilní prohlížeče.
 
 Pro další popis i hlubší argumentaci vás pošlu na další své texty:
 

@@ -1,25 +1,25 @@
 # 8 tipů pro jednodušší rozhraní na mobilech
 
-Ostraňte zbytečnosti, šetřete ikonkami a rozbalovacími nabídkami. Otevírejte správné klávesnice, používejte našeptávače. Ale mám i další. Jen čtěte.
+Odstraňte zbytečnosti, šetřete ikonkami a rozbalovacími nabídkami. Otevírejte správné klávesnice, používejte našeptávače. Ale mám i další. Jen čtěte.
 
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-7.jpg" alt="">
 <figcaption markdown="1">    
-*Zbytečné ikony sociálních sítích na Albert.cz a podlehnutí ikonománii na EquaBank.cz*
+*Zbytečné ikony sociálních sítí na Albert.cz a podlehnutí ikonománii na EquaBank.cz*
 </figcaption> 
 </figure>
 
 ## 1) Dejte pryč všechny zbytečnosti 
 
-Na mobilní obrazovce máme k dispozici málo místa, proto tam nechejte jen to opravdu nejdůležitější. O zbytečnosti ikon sociálních sítí budu ještě psát. Na Albert.cz vše zhoršuje ještě pozice na obsahem. Jakou bude mít uživatel motivaci obsah sdílet hned po přečtení názvu článku?
+Na mobilní obrazovce máme k dispozici málo místa, proto tam nechejte jen to opravdu nejdůležitější. O zbytečnosti ikon sociálních sítí budu ještě psát. Na Albert.cz vše zhoršuje ještě pozice nad obsahem. Jakou bude mít uživatel motivaci sdílet obsah hned po přečtení názvu článku?
 
 ## 2) Nepodlehněte ikonománii
 
 Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaným ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. 
 
-Podívejme se na web EquaBank.cz na dalším obrázku a udělejme si kvíz: co má na starosti první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Bude můj telefon hned volat na zákaznickou linku? 
+Podívejme se na web EquaBank.cz na dalším obrázku a udělejme si kvíz: Co má na starosti první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Bude můj telefon hned volat na zákaznickou linku? 
 
-Na většinu ikon se nedá spolehnout. Doplňte je textovými popisy. Více v textu „UX Myth: Icons enhance usability“ na UXMyths.com.[vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
+Na většinu ikon se nedá spolehnout. Doplňte je textovými popisy. Více v textu „UX Myth: Icons enhance usability“ na UXMyths.com. [vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
 
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-8.jpg" alt="">
@@ -45,9 +45,9 @@ Více také v textu od Luke Wroblewskiho „Dropdowns Should be the UI of Last R
 
 ## 4) Otevírejte pohodlné klávesnice
 
-Web CSOBpoj.cz nutí uživatele vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to má vymyšleno lépe, otevře klávesnici numerickou. Podívejte se na obrázek. 
+Web CSOBpoj.cz nutí uživatele vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to má vymyšleno lépe, ten otevře klávesnici numerickou. Podívejte se na obrázek.
 
-Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`<input type="tel">`), emailů, URL adres nebo na vyhledávací pole. Více informací najdete na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http://mobileinputtypes.com/)
+Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`<input type="tel">`),  e-mailů, URL adres nebo na vyhledávací pole. Více informací najdete na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http://mobileinputtypes.com/)
 
 A ještě, prosím: Telefonní čísla na stránce vždy na mobilních zařízeních vypisujte jako odkazy. [http://vrdl.cz/blog/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
 
@@ -65,9 +65,9 @@ Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pom
 
 ## 6) Vyhledávání doplňujte našeptávačem 
 
-Jsou velmi dobrým pomocníkem ve formulářových polích, kde je velké množství možných vstupů: Hlavně ve vyhledávání, které je na mobilech kvůli časté nepřítomnosti plnohodnotné navigace velmi důležité. 
+Je velmi dobrým pomocníkem ve formulářových polích, kde je velké množství možných vstupů: Hlavně ve vyhledávání, které je na mobilech kvůli časté nepřítomnosti plnohodnotné navigace velmi důležité.
 
-V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití ale je omezené. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
+V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití je ale omezené. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
 
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-11.jpg" alt="">
@@ -78,7 +78,7 @@ V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití ale je omezen�
 
 ## 7) Nenuťte mobilního uživatele psát
  
-Tohle by stálo na webu SmileBox.cz za vylepšení. Web po uživateli chce ručně vypsat „kde, kdy a jak“ chci přístroj pronajmout. Rychlost psaní není na mobilu nejvyšší. Problém by lépe vyřešily tři na pár kliků ovládatelné vstupní pole.
+Tohle by stálo na webu SmileBox.cz za vylepšení. Web po uživateli chce ručně vypsat „kde, kdy a jak“ chci přístroj pronajmout. Rychlost psaní není na mobilu nejvyšší. Problém by lépe vyřešily tři na pár kliků ovladatelná vstupní pole.
 
 ## 8) Neprotahujte stránku
 
@@ -87,7 +87,7 @@ Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-12.jpg" alt="">
 <figcaption markdown="1">    
-*Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Je to modální okno, které se objeví po přidání zboží do košíku. Důležité aktivní prvky jsou červně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
+*Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Je to modální okno, které se objeví po přidání zboží do košíku. Důležité aktivní prvky jsou červeně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
 </figcaption> 
 </figure>
 
@@ -95,7 +95,7 @@ Dlouhá stránka kromě jiného taky odsunuje spodní část rozhraní – pati�
 
 * offcanvas (vysunování obsahu ze strany)
 * modální okna nebo karusely (jen pozor na správnou implementaci, zmíním se za chvíli)
-* roztahovací akordeóny (opět je brzy zmíním)
+* roztahovací akordeony (opět je brzy zmíním)
 
 Když už jsem zmiňoval Jana Kvasničku, vřele doporučuji jeho text a přednášku „Nejčastější chyby při návrhu mobilního a responzivního webu prakticky“. [vrdl.in/2tghs](http://blog.kvasnickajan.cz/prakticky-pruvodce-nejcastejsimi-chybami-pri-navrhu-mobilniho-a-responzivniho-webu/)
 
