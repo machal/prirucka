@@ -2,22 +2,24 @@
 
 V knize a na příkladu ukazuji proces tvorby webů, o kterém by mnozí profesionální kolegové řekli, že je „exotický“. Nevyužívám nástroje pro tvorbu předběžných návrhů webů, skoro neotevírám Photoshop a jiné kreslící programy. Velkou část práce dělám přímo v prohlížeči. Pojďme s říct, jak přesně budeme v knize postupovat a proč vlastně takto specificky.
 
-V procesu návrhu a implementace uživatelského rozhraní se budeme pohybovat v části „Návrh a realizace“, který znáte z předchozí podkapitoly [o základech procesu tvorby webu](zaklady-procesu.md).  
+V procesu návrhu a implementace uživatelského rozhraní se budeme pohybovat v kolečku „Návrh a realizace“ ze zjednodušeného grafu procesu tvorby webu, který znáte z předchozí podkapitoly [o základech procesu tvorby webu](zaklady-procesu.md).  
 
 Navazujeme tedy na kolečko „Průzkumu a definice“. Některé výstupy z tého fáze jsem si shrnuli [do User Centered Design Canvasu](design-canvas.md). Dále bychom z ní dostali například přípravu obsahu pro  web, návrh jeho informační architektury, uživatelské scénáře, analýzu klíčových slov a další materiály. 
 
 
-## Jak to dělají jinde?
+## Jak obvykle vypadá návrh uživatelského rozhraní?
 
-Nejobvyklejší proces tvorby rozhraní v dnešních webařských týmech vypadá asi takto:
+Nejčastější proces tvorby rozhraní v dnešních webařských týmech vypadá asi takto:
 
 1. Načrtnou se wireframy
 2. Nakreslí se grafika
 3. Nakóduje se to
 
-Každou funkci obvykle zastává jiný člověk. Často se jednotliví aktéři ani nepotkají (a na dálku na sebe navzájem nadávají). Konvenčnímu procesu kromě nedostatku mezioborové spolupráce vytýkám také neefektivitu. Z pohledu frontendisty také to, že se takto vznikající weby do svého přirozeného prostředí – prohlížeče – dostanou příliš pozdě. U designérů a grafiků padají rozhodnutí, která nejsou otestovaná prohlížečem. Kodér pak už jen – nadává, však víte. 
+Každou funkci obvykle zastává jiný člověk. Často se jednotliví aktéři ani nepotkají (a na dálku na sebe navzájem nadávají). Konvenčnímu procesu kromě nedostatku mezioborové spolupráce vytýkám také neefektivitu. Například připomínky ke grafice a její globální změny se v dnešních grafických editorech zapracovávají pomalu a složitě.
 
-Podívejme se teď na můj postup. Je specifický a v běžném webovém studiu se asi jen tak neujme. Ale není dobrého nebo špatného postupu. Důležitý je vždy výsledek: Jak funguje výsledný produkt, kolik času vám proces zabral a zda pro vás bylo příjemné jím procházet. Mé postupy práce jsou ovšem dost jednoduché na to, aby je mohli převzít začátečníci. A profesionály třeba v lecčems inspirují.
+Z pohledu frontendisty mě na konvenčním procesu také vadí, že se takto vznikající weby do svého přirozeného prostředí – prohlížeče – dostanou příliš pozdě. U designérů a grafiků, ale často už i v krocích před nimi padají rozhodnutí, která nejsou otestovaná prohlížečem a přizpůsobená technologickým možnostem. Kodér pak už jen – nadává, však víte. 
+
+Podívejme se teď na můj postup. Je specifický a v běžném webovém studiu se asi jen tak neujme. Ale není dobrého nebo špatného postupu. Důležitý je vždy výsledek: Jak funguje výsledný produkt, kolik času vám proces zabral a zda pro vás bylo příjemné jím procházet. Následující postup práce je navíc dost jednoduchý na to, aby jej mohli převzít začátečníci. A profesionály třeba v lecčems inspirují.
 
 
 ## Tři a tři kroky: proces návrhu uživatelského rozhraní
@@ -53,7 +55,7 @@ Už během přípravy dokumentové základny a komponent je vhodné vymýšlet s
 
 ## Proč to v knížce ukazuji právě takto?
 
-Tady hlavně proto, že to nevyžaduje složité nástroje a je vhodné pro začátečníky. Ale řeknu vám i další výhody.
+Hlavně proto, že to nevyžaduje složité nástroje a je vhodné pro začátečníky. Ale řeknu vám i další důvody.
 
 ### Rozhraní se dostane brzy do prohlížeče
 
@@ -63,30 +65,32 @@ Není to jen proto, že prohlížeče vykreslují jinak. Ve statickém kreslíc�
 
 ### Komponenty a znovupoužitelnost
 
-To, že jsme ve webdesignu začali pracovat se stránkami jako nejmenšími prvky, ze kterých skládáme weby, je omyl, který nás bude ještě dlouho mrzet. Stránky jsou prostě pořád moc komplexní entity, aby je bylo možné navrhnout i implementovat dostatečně efektivně. 
+To, že jsme ve webdesignu začali pracovat se stránkami jako nejmenšími prvky, ze kterých skládáme weby, je omyl, který nás bude ještě dlouho mrzet. Stránky jsou prostě pořád moc komplexní entity, aby je bylo možné navrhnout i implementovat dostatečně kvalitně a efektivně. 
 
-Neměli bychom navrhovat stránky, ale systémy komponent. Znovupoužitelných komponent. Ze „stránkových“ výstupů grafických programů není možné systém vyčíst, i kdyby tam byl. Obvykle tam ale ani žádný není. Systém znovupoužitelných komponent pro každý větší web by ovšem šetřil čas i peníze všem.
+Neměli bychom navrhovat stránky, ale systémy komponent. Znovu použitelných komponent. Ze „stránkových“ výstupů grafických programů není možné systém vyčíst, i kdyby tam byl. Obvykle tam ale ani žádný není. Systém znovu použitelných komponent pro každý větší web by ovšem šetřil čas i peníze všem.
 
 
 ### Krátké iterace, ne vodopád
 
-Spolupráce designéra a kodéra je obvykle velmi neefektivní. Designér dlouho pracuje na návrzích obsahujících unikátní stránky. Provádění změn v Photoshopu nebo Sketchi ke všemu není nijak příjemné. Kodér je pak zase dlouho převádí do HTML, CSS a Javascriptu. 
+Spolupráce designéra a kodéra je obvykle velmi neefektivní. Designér dlouho pracuje na návrzích obsahujících unikátní stránky webu. Provádění změn v Photoshopu nebo Sketchi ke všemu není nijak příjemné. Kodér je pak zase dlouho převádí do HTML, CSS a Javascriptu. 
 
-Je to vodopádový proces, známý z klasických výrobních linek, kde bylo potřeba v každé fázi produkt dokonale vybrousit, aby do té následující vplul bez újmy. Digitální médium ovšem kodérům i designérům nabízí možnost pracovat společně, v kratších iteracích a rychleji.
+Je to vodopádový proces, známý z klasických výrobních linek, kde bylo potřeba v každé fázi produkt dokonale vybrousit, aby do té následující vplul bez újmy. Digitální médium ovšem kodérům i designérům nabízí možnost pracovat společně, na menších celcích než jsou stránky, v kratších iteracích a rychleji. Škoda, že toho tak málo využíváme.
 
 ### Nepotřebujete k tomu složité nástroje
 
-Stačí vám prohlížeč, editor kódu, tužka, papír – a hlava. Jedna z cílových skupin knihy jsou začátečníci, ale ani profíky nechci zatěžovat komplexními prototypovacími nebo návrhářskými nástroji. 
+Stačí vám prohlížeč, editor kódu, tužka, papír – a hlava. Jedna z cílových skupin knihy jsou začátečníci, ale ani profíky nechci zbytečně zatěžovat  prototypovacími nebo návrhářskými nástroji, které třeba nemusejí používat.
 
 
 ## Kde se to hodí a kde ne?
 
 Uvedené workflow je ovšem náročné na intenzitu mezioborové spolupráce a čas. Myslím, že se hodí pro všechny, kteří zvládnou kódovat a alespoň trochu přitom myslet designérsky. Použil bych jej ve všech podoborech webdesignu, které nejsou závislé na „prodeji PSD“. Proces nebo jeho prvky je možné využít při tvorbě webových aplikací nebo během dlouhodobé práce na produktu. 
 
-U klientské, agenturní práce si jej zatím neumím představit. U většiny zde zapadajících projektů nás čeká ohromný kus práce: Vysvětlit klientům, že to za co platí není pár krásných obrázků z Photoshopu. Že weby jsou doma v prohlížečích.
+U klientské, agenturní práce si jej zatím neumím představit. U většiny zde zapadajících projektů nás čeká ohromný kus práce: Vysvětlit klientům, že to, za co platí není pár krásných obrázků z Photoshopu. Že by měli chtít platit za systémy komponent. A že weby jsou doma v prohlížečích. 
 
 
 ## Zdroje
+
+Pokud by vás téma alternativních pracovních postupů zaujalo, věnujte svou pozornost následujícím odkazům.
 
 - *Přednáška Stephena Haye „Responsive Design Workflow“*   
   Stephen Hay je pro mě asi nejzajímavější zdroj procesů pro tvorbu responzivních webů. Vydal i stejnojmennou knížku. [youtu.be/6e3m9qRj67o](https://youtu.be/6e3m9qRj67o)
@@ -96,3 +100,6 @@ U klientské, agenturní práce si jej zatím neumím představit. U většiny z
   Přepis přednášky z WebExpo 2015. Obsahuje zde uvedený postup aplikovaný při redesignu e-shopu VašeČočky.cz. [vrdl.cz/blog/38-design-v-prohlizeci](http://www.vzhurudolu.cz/blog/38-design-v-prohlizeci)
 - *Kniha Brada Frosta „Atomic Design“*  
   V textu, který právě čtete, nezvládnu jít takhle do hloubky, ale systémy designu mají ve webdesignu velkou budoucnost, věřte mi. [atomicdesign.bradfrost.com](http://atomicdesign.bradfrost.com/)
+
+
+Tím se dostáváme k ukázkovému příkladu, kterým se v knize budeme zabývat. Představíme si jej tím, že si pro něj sestavíme UCD Canvas.

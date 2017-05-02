@@ -5,7 +5,7 @@ Během psaní „Vzhůru do (responzivního) webdesignu“ jsem myslel hlavně n
 
 ## Vývojáři a kodéři
 
-Vy z knížky využijete největší část. Načerpáte přehled o postupech a technologiích používaných pro tvorbu dnešních responzivních webů. Ovšem – každý frontend kodér a skoro každý vývojář dotváří nebo dokonce navrhuje i nějaké části uživatelských rozhraní. Mezi řádky a v netechnických kapitolách se tedy můžete inspirovat tipy k tvorbě responzivních rozhraní. 
+Vy z knížky využijete největší část. Načerpáte přehled o postupech a technologiích používaných pro tvorbu dnešních responzivních webů. Ovšem – každý frontend kodér a skoro každý vývojář dotváří nebo dokonce navrhuje i nějaké části uživatelských rozhraní. Mezi řádky a v netechnických kapitolách se tedy můžete inspirovat tipy pro tvorbu a úpravy responzivních rozhraní. 
 
 
 ## Designéři, grafici, marketéři
@@ -20,14 +20,14 @@ Text knihy jsem psal tak, aby se dal číst i jako učebnice tvorby webových u�
 
 ## Co předpokládám, že čtenáři umí?
 
-Pro pochopení technických částí budete potřebovat dobrou znalost HTML a CSS, včetně moderních technologií jako je flexbox nebo SVG. Netechnické části předpokládají jen to, že máte základní přehled o procesu návrhu webu.
+Pro pochopení technických částí budete potřebovat dobrou znalost HTML a CSS a hrubý přehled o moderních technologií zmíněných v e-booku „Vzhůru do CSS3“. Netechnické části předpokládají jen to, že máte základní přehled o procesu návrhu webu.
 
 
 ## To podstatné vyzkoušíme na příkladu
 
 V textu často ukazuji principy, které se špatně vysvětlují na umělých ukázkách. Proto se knihou jako červená nit táhne příklad. 
 
-Kvůli zachování tempa vyprávění jsem se samozřejmě i v procesu jeho tvorbu dopustil mnoha zjednodušení. Na příkladu ale v praxi ukážu mnoho věcí:
+Kvůli zachování tempa vyprávění jsem se samozřejmě i v procesu jeho tvorbu dopustil mnoha zjednodušení. Na příkladu ale ukážu mnoho věcí:
 
 1. [Definici potřeb uživatelů a cílů webu](priklad-ux-canvas.md)
 2. [Přípravu obsahu webu](priklad-obsah.md)
