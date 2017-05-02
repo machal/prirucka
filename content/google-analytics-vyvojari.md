@@ -2,7 +2,7 @@
 
 Podíváme se co v Analytics mohou vývojáři sledovat, na užitečné nástroje a nutné základy práce s daty.
 
-## Vše v jednom: skvělý Technical Performace Dashboard
+## Vše v jednom: skvělý Technical Performace Dashboard {#technical-performace-dashboard}
 
 Pokud si do Analytics [přidáte tuto palubní desku](https://analytics.google.com/analytics/gallery/#posts/search/%3F_.tab%3DMy%26_.sort%3DDATE%26_.start%3D0%26_.viewId%3DsJXXMwZtSCmLNYXy-gmozA/), získáte *Analytics-konečně-zábavné-pro-vývojáře™*, to vám garantuji.  
 
