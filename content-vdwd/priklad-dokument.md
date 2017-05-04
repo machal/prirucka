@@ -146,14 +146,9 @@ Je ale pravda, že z pohledu rychlosti načítání (alespoň na dnes ještě p�
 
 Vrátím se teď na začátek kapitoly a přinutím vás vzpomenout si na obrázek se dvěma hlavními vrstvami webu: dokumentovou a komponentovou. Pracovali jsme teď na té první, takže se nám povedlo ten krásně jednoduchý obrázek zkomplikovat.
 
-<figure>
-<img src="dist/images/original/vdwd/vrstvy-dokument.jpg" alt="">
-<figcaption markdown="1">    
-*Pod dokumentovou vrstvou máme ještě výchozí styly prohlížečů. V samotném dokumentu pak nejprve sjednocujeme vzhled a pomocí například barev, velikostní stupnice nebo písem nastavujeme ten náš*
-</figcaption> 
-</figure> 
+Zjistili jsme, že pod dokumentovou vrstvou máme ještě výchozí styly prohlížečů. V samotném dokumentu pak nejprve sjednocujeme vzhled a pomocí například barev, velikostní stupnice nebo písem nastavujeme vzhled našeho webu. Takže jsme dokumentovou vrstvu rozvrstvili do dalších vrstev.
 
-
+Ale nekomplikujme to ještě více. Podívejme se na náš e-shop.
 
 
 ## A jak teď vypadá rozpracovaná verze ForestKid.cz?
