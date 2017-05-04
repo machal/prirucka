@@ -32,7 +32,7 @@ Takhle stručně mně to pro potřeby knížky stačí. Výhrady zkušených web
 
 * Jiří Sekera a Petr Kosnar detailně popisují proces návrhu produktů, aplikací a služeb ve svém kurzu „Human-Centered Design: Design zaměřený na člověka“. Je dostupný zdarma na Seduo.cz a skvěle použitelný i pro weby. [seduo.cz/human-centered-design](https://www.seduo.cz/human-centered-design)
 * Pokud v procesu tvorby webu plavete vy nebo vaši klienti, velmi doporučuji stručnou, ale atraktivně pojatou knihu Jana Řezáče „Web ostrý jako břitva“.  
-[janrezac.com/kniha](https://janrezac.com/kniha)
+[houseofrezac.com/kniha](https://www.houseofrezac.com/kniha)
 * Raději něco hutnějšího? Poctivá kniha o designérském procesu „Dobrý designér to všechno ví“ je dobrá volba i pro vás zkušenější.    
 [pixy.cz/kniha-dobrydesigner](http://pixy.cz/kniha-dobrydesigner/)
 
