@@ -26,7 +26,7 @@ Dnes už bych nikomu nedoporučoval vymýšlet weby jen pro velké displeje. Teh
 
 ## 2. Pružné obrázky
 
-Když už máte pružný layout, musíte mu přizpůsobit elementy vevnitř. První věc, která vám ze zmenšeného layoutu vypadne, budou obrázky. O [obrázcích](kap-media) a dalších médiích pak v samostatné kapitole.
+Když už máte pružný layout, musíte mu přizpůsobit elementy vevnitř. První věc, která vám ze zmenšeného layoutu vypadne, budou obrázky. O [obrázcích](kap-media.md) a dalších médiích pak v samostatné kapitole.
 
 ## 3. Podmínky pro změny layoutu (Media Queries)
 
