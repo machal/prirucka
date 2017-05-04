@@ -9,13 +9,13 @@ Ta teď vypadá následovně:
 
 ```html
 <div class="container">
-  <header>
+  <header role="banner">
     <!-- Logo stránky -->
   </header>
-  <main class="layout-container">
+  <main class="layout-container" role="main">
     <!-- Hlavní část stránky -->      
   </main>
-  <section class="layout-why">
+  <section class="layout-why" role="region">
     <!-- Sekce „Proč ForestKid?“ v patičce -->
   </section>    
 </div>

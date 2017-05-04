@@ -60,6 +60,8 @@ Pokud by vás zajímaly detaily o poněkud nedokonalém indexování javascripto
 
 Přístupnost. Široká škatule, do které patří i kompatibilita a vyhledávače, ale také usnadnění přístupu hendikepovaným uživatelům. A pozor, nejsou to jen lidé s oční vadou nebo jiným fyzickým omezením. Momentálně „hendikepovaná“ může být i zdravá dvacetiletá studentka, které některé rozšíření v prohlížeči zablokuje zrovna váš javascriptový soubor. Tohle je web – takové věci se stávají.
 
+Studie prokázaly, že přístupný web se lépe používá *všem* návštěvníkům. Ať vás proto nenapadne přístupnost podceňovat. Nepřístupný nebo hůře přístupný web vás může připravit o celou řadu návštěvníků a možných zákazníků. 
+
 Někdy se stačí podívat hned na první řádku HTML kódu. Mluví o typu *dokumentu*. Heydon Pickering v knize „Inclusive Design Patterns“ říká:
 
 > `<!DOCTYPE html>` slouží jako důležitá připomínka toho, že i když navrhujete interakčně složité a dynamické rozhraní, stále prostě jen vkládáte obsah do okna prohlížeče.

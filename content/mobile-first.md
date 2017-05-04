@@ -36,7 +36,15 @@ Pro mnohé designéry, včetně mě, je proto lepší si rozhraní navrhnout nej
 
 Při skicování mobilního rozhraní jsme omezení plochou. Uživatelské rozhraní pak přirozeně redukujeme na to nejpodstatnější. K přípravě verze pro větší displeje často stačí jen použít běžné techniky responzivního designu: zvětšení nebo mírné přeskládání elementů.
 
-Je ale tento nový pohled na návrh jediným důsledkem filozofie „Mobile First“?
+Zjednodušení řešení pak mimo jiné zvyšuje přístupnost webu nebo webové aplikace. Přístup Mobile First pomáhá minimálně ve třech oblastech:
+
+- Zvyšuje srozumitelnost a přehlednost.
+- Zavádí snadnější lineární způsob konzumování informací.
+- Zvětšuje velikost ovládacích prvků.
+
+Píše to Radek Pavlíček, přední expert na přístupnost, ve svém článku „Proč je Mobile First přístup dobrý i pro přístupnost“. [vrdl.in/mfprist](http://poslepu.cz/proc-je-mobile-first-pristup-dobry-i-pro-pristupnost/)
+
+Je ale tento nový zjednodušující pohled na návrh jediným důsledkem filozofie „Mobile First“?
 
 
 ## Mobily také rozšiřují naše možnosti
