@@ -4,6 +4,8 @@
 
 V Google mají jasno. Tohle prohlásil v roce 2010 Eric Schmidt, tehdejší šéf firmy.
 
+<!-- AdSnippet -->
+
 Ale nemusíte být Google. Rychlejší načtení vylepší uživatelský prožitek a pomůže tak cílům každého webu.
 
 
@@ -23,7 +25,9 @@ Více se dozvíte v článku „Response Times: The 3 Important Limits“ od Jac
 
 Walmart si například spočítal, že každé zrychlení načtení stránky o vteřinu  zvýší konverze jejich webu o dva procentní body. To nebude úplně špatný výdělek, že ano? [vrdl.in/ziud9](http://www.slideshare.net/devonauerswald/walmart-pagespeedslide/46)
 
-I v Česku rychlost zabírá. Srovname.cz jsem osobně pomáhal se zrychlením důležitých vstupních stránek. Poměrně jednoduchými kroky jsme na mobilních zařízeních zvýšili konverzní poměr o čtvrtinu. [vrdl.cz/blog/58-rychlost-srovname-cz](http://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)
+<!-- AdSnippet -->
+
+I v Česku rychlost zabírá. Portálu Srovname.cz jsem osobně pomáhal se zrychlením důležitých vstupních stránek. Poměrně jednoduchými kroky jsme na mobilních zařízeních zvýšili konverzní poměr o čtvrtinu. [vrdl.cz/blog/58-rychlost-srovname-cz](http://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)
 
 Další analýzy dokazují, že se zrychlení webu pozitivně promítá do všech klíčových ukazatelů: konverzního poměru, počtu zobrazených stránek, počtu návštěv nebo třeba spokojenosti zákazníků. Mnoho studií ze světa najdete na WPO stats. [wpostats.com](https://wpostats.com/)
 

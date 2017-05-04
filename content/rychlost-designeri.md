@@ -255,5 +255,5 @@ U javascriptových aplikací se skeletony nasazují lépe než u běžných web�
 ## Můžu vám pomoci? {#pomoc}
 
 - Pro vývojáře organizuji celodenní [školení rychlosti načítání webů](http://www.vzhurudolu.cz/kurzy/rychlost-nacitani).
-- Poskytuji také individuální poradenství pro optimalizaci rychlosti webů. Neváhejte se [na mě obrátit](http://www.vzhurudolu.cz/martin#kontakt). 
+- Poskytuji také individuální poradenství pro optimalizaci rychlosti webů. Neváhejte se [na mě obrátit](http://www.vzhurudolu.cz/martin#rychlost). 
 
