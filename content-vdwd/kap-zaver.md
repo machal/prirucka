@@ -1,13 +1,13 @@
 # A to je vše, přátelé
 
-Právě jste dočetli „Vzhůru do (responzivního) webdesignu“! Díky, že jste knize věnovali svůj čas a jsem napjatý, zda se vám líbila.
+Právě jste dočetli „Vzhůru do (responzivního) webdesignu“! Díky, že jste knize věnovali svůj čas, a jsem napjatý, zda se vám líbila.
 
 
 ## Zpětná vazba mi moc pomůže
 
-Moc rád si přečtu váš názor nebo zpětnou vazbu. Pomohla vám knížka? Vylepšili byste ji něčím? Pište mi na e-mail, na Twitter nebo Facebook.
+Moc rád si přečtu váš názor nebo zpětnou vazbu. Pomohla vám knížka? Vylepšili byste ji něčím? Pište mi na e-mail, na Twitter nebo na Facebook.
 
-I když jsem udělal vše proto, abych se chybám vyhnul, nezbývá než se smířit s tím, že i v tomto textu nějaké zůstaly. Moc pomůže, když je nahlásíte. Všichni čtenáři dostanou jednou za čas aktualizovanou elektronickou verzi.
+I když jsem udělal vše pro to, abych se chybám vyhnul, nezbývá než se smířit s tím, že i v tomto textu nějaké zůstaly. Moc mi pomůže, když je nahlásíte. Všichni čtenáři dostanou jednou za čas aktualizovanou elektronickou verzi.
 
 - E-mail: [martin@vzhurudolu.cz](mailto:martin@vzhurudolu.cz)
 - Facebook: [facebook.com/vzhurudolu](https://facebook.com/vzhurudolu)
