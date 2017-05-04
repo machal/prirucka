@@ -1,9 +1,9 @@
 # Tipy a triky k Media Queries
 
-Doporučím vám nastavovat body zlomu podle obsahu a dávat přednost komponentovým před globálními. V produkčním kódu byste měli u Media Queries mít jednotku `em`. Podíváme se na Mobile First způsob psaní a povíme si něco o budoucnosti – o Element Queries.
+Doporučím vám nastavovat body zlomu podle obsahu a dávat přednost komponentovým před globálními. V produkčním kódu byste měli u Media Queries mít jednotku `em`. Podíváme se na způsob psaní Mobile First a povíme si něco o budoucnosti – o Element Queries.
 
 
-## Body zlomu vždy se snažte nastavovat podle obsahu
+## Body zlomu se vždy snažte nastavovat podle obsahu
 
 Častou chybou je vymýšlení breakpointů „podle zařízení“. Dejme tomu, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
 
@@ -44,7 +44,7 @@ Obsahové body zlomu nejčastěji definuji podle obsahu konkrétních komponent.
 }
 ```
 
-To ale neznamená, že nepotřebujete body zlomu *globální*. Ty se nejčastěji se hodí pro nastavení layoutu stránky:
+To ale neznamená, že nepotřebujete body zlomu *globální*. Ty se nejčastěji hodí pro nastavení layoutu stránky:
 
 ```css
 /* Komponentový bod zlomu */
@@ -53,14 +53,14 @@ To ale neznamená, že nepotřebujete body zlomu *globální*. Ty se nejčastěj
 }
 ```
 
-Globální breakpointy jsou obvykle uložené v nějaké hodnotě sdílené napříč projektem – v proměnné CSS preprocesoru a pdoobně. Mohou je pak samozřejmě přebírat i komponenty. 
+Globální breakpointy jsou obvykle uložené v nějaké hodnotě sdílené napříč projektem – v proměnné CSS preprocesoru a podobně. Mohou je pak samozřejmě přebírat i komponenty.
 
 
 ## Správné je použít `em`, ale autorům se obvykle lépe pracuje s `px`
 
-Často se vedou spory kolem použití jednotek v Meda Queries. Správná jednotka je `em`, alespoň ve všech mě známých případech.
+Často se vedou spory kolem použití jednotek v Media Queries. Správná jednotka je `em`, alespoň ve všech mně známých případech.
 
-Jednotka `px` nepřízpusobuje změně velikosti písma, proto nefunguje dobře v situacích jako je uživatelské zvětšení či změnšení písma. 
+Jednotka `px` se nepřizpůsobuje změně velikosti písma, proto nefunguje dobře v situacích, jako je uživatelské zvětšení či zmenšení písma.
 
 A `rem`? S těmi v Media Queries nepracuje korektně Safari, když změníte velikost písma autorsky. Takže by v produkčním kódu našich webů mělo být `em`. Detailní vysvětlení najdete v článku „PX, EM or REM Media Queries?“ [zellwk.com/blog/media-query-units/](https://zellwk.com/blog/media-query-units/)
 
@@ -96,10 +96,10 @@ Možné ovšem je zanořování Media Queries do sebe se selektorem uvnitř:
 }
 ```
 
-Jen pozor, nebude to fungovat v žádném Internet Exploreru, takže spolehlivější je opět využít automat pro zpracování CSS jako je preprocesor. Živá ukázka různých typů zanořování je na CodePenu. [cdpn.io/e/xEkKd](http://codepen.io/machal/pen/xEkKd)
+Jen pozor, nebude to fungovat v žádném Internet Exploreru, takže spolehlivější je opět využít automat pro zpracování CSS, jako je preprocesor. Živá ukázka různých typů zanořování je na CodePenu. [cdpn.io/e/xEkKd](http://codepen.io/machal/pen/xEkKd)
 
 
-## Mobile First psaní kódu
+## Psaní kódu stylem Mobile First
 
 Kromě [designérské filozofie](mobile-first.md) můžeme o Mobile First mluvit také v souvislosti s psaním CSS kódu:
 
@@ -119,7 +119,7 @@ Kromě [designérské filozofie](mobile-first.md) můžeme o Mobile First mluvit
 
 Pokud design vaší komponenty nese nálepku „Mobile First“, budete pravděpodobně i její kód psát od varianty pro nejmenší displeje. 
 
-Je to ale i obecně výhodnější než opačný, „Desktop First“, přístup. Kód pro menší displeje je obvykle jednodušší. A je lepší další deklarace přidávat než odstraňovat nadefinované, což bychom museli dělat u opačného přístupu:
+Je to ale i obecně výhodnější než opačný přístup, „Desktop First“. Kód pro menší displeje je obvykle jednodušší. A je lepší další deklarace přidávat než odstraňovat nadefinované, což bychom museli dělat u opačného přístupu:
 
 ```css
 /* „Desktop First“ přístup (horší): */
@@ -140,7 +140,7 @@ Je to ale i obecně výhodnější než opačný, „Desktop First“, přístup
 
 Media Queries se dotazují vždy jen na parametry okna prohlížeče. To je fajn, když vymýšlíme body zlomu pro layout obrazovky. Horší je to pro jednotlivé, v něm rozmístěné komponenty. Zvláště pro ty, které se mohou vyskytovat na různých místech uživatelského rozhraní.
 
-Představme si, že bychom se mohli v CSS pát na velikost rodičovského elementu. Ano, většinou nás zajímá právě ten. Mohlo by to pak vypadat třeba takto:
+Představme si, že bychom se mohli v CSS ptát na velikost rodičovského elementu. Ano, většinou nás zajímá právě ten. Mohlo by to pak vypadat třeba takto:
 
 ```css
 /* Od šířky 20em naskládej položky vedle sebe: */
@@ -151,6 +151,6 @@ Představme si, že bychom se mohli v CSS pát na velikost rodičovského elemen
 }
 ```
 
-Kód by se aplikoval pokud by šířka rodiče elementu `.item` byla alespoň `20em`. Ukázka je v kódu javascriptové implementace konceptu – EQCSS.
+Kód by se aplikoval, pokud by šířka rodiče elementu `.item` byla alespoň `20em`. Ukázka je v kódu javascriptové implementace konceptu – EQCSS.
 
 Problém je právě v té závislosti na Javascriptu. Při havárii JS by vám přestalo fungovat CSS. A nebude to také výkonnostně optimální. Specifikace pro Element Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi na toto téma. Bližší informace mám na blogu. [vrdl.cz/prirucka/element-queries](http://www.vzhurudolu.cz/prirucka/element-queries)

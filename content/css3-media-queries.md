@@ -1,6 +1,6 @@
 # Media Queries
 
-Podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
+Jde o podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
 
 Dejme si rychlý příklad: 
 
@@ -16,7 +16,7 @@ Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky `40em`. Tot
 
 <!-- AdSnippet -->
 
-Z CSS2 budete znát podmínky pro typy médií, jako třeba `@media print`. Norma CSS3 Media Queries je vylepšuje o bližší specifikaci vlastnosti médií.
+Z CSS2 budete znát podmínky pro typy médií jako třeba `@media print`. Norma CSS3 Media Queries je vylepšuje o bližší specifikaci vlastnosti médií.
 
 ## Anatomie Media Query
 
@@ -35,8 +35,8 @@ Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*
 V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), což je hodnota vlastnosti média. O „breakpointech“ mluvíme jako o sadě hodnot pro konkrétní web nebo systém designu. Knihovna Bootstrap má například body zlomu přednastavené takto: 
 
 - extra small (šířka okna do `767px`)
-- small (768 – 991)
-- medium (992 – 1199)
+- small (768–991)
+- medium (768–991)
 - large (1200 a více)
 
 Pro konkrétní projekty samozřejmě nebudou tyto konkrétní hodnoty použitelné. Body zlomu je vždy lepší definovat podle obsahu konkrétních komponent než takto centrálně. Body zlomu Boostrapu berte jen jako ilustraci pojmu.
@@ -53,7 +53,7 @@ Nejčastější podmínky v responzivním designu vypadají jako podmínky pro v
 @media only screen and (max-height: 40em) { … }
 ```
 
-V drtivé většině případů se ale pracuje jen s vodorovnými rozměry, s vlastností `width`. Ukážeme si i další možnosti. Předtím se ale naučíme jak podmínky kombinovat.
+V drtivé většině případů se ale pracuje jen s vodorovnými rozměry, s vlastností `width`. Ukážeme si i další možnosti. Předtím se ale naučíme, jak podmínky kombinovat.
 
 
 ## Logické operátory
@@ -73,9 +73,8 @@ A co „nebo“? Programátoři by možná očekávali `or`,  ale používá se 
 @media only screen and (max-width: 40em), print { … }
 ```
 
-Uvedená podmínka se vyhodnotí jako pravdivá, když si uživatel stránku prohlídne na zobrazovacím mediu o šířce viewportu do `40em` nebo když bude stránku tisknout.
-
-Podle CSS specifikace jde o „seznam oddělený čárkou“, kde se jednotlivé položky seznamu vyhodnocují samostatně. Disjunkce („or“) má proto větší váhu než konjukce („and“). 
+Uvedená podmínka se vyhodnotí jako pravdivá, když si uživatel stránku prohlédne na zobrazovacím médiu o šířce viewportu do `40em` nebo když bude stránku tisknout.
+Podle CSS specifikace jde o „seznam oddělený čárkou“, kde se jednotlivé položky seznamu vyhodnocují samostatně. Disjunkce („or“) má proto větší váhu než konjunkce („and“).
 
 Dalším možným operátorem je negace:
 
@@ -83,12 +82,12 @@ Dalším možným operátorem je negace:
 @media not print { … }
 ```
 
-Jen pozor, negace vždy postihuje celou podmínku, nikoliv její určitou část.
+Jen pozor – negace vždy postihuje celou podmínku, nikoliv její určitou část.
 
 ## Další vlastnosti média
 
 
-Je jich dost. Od zjišťování orientace zařízení, poměru stran obrazovky přes počet barev až po zjišťování vysokokapacitních displejů. Uvedu jen ty nejpoužitelnější.
+Je jich dost. Od zjišťování orientace zařízení či poměru stran obrazovky přes počet barev až po zjišťování vysokokapacitních displejů. Uvedu jen ty nejpoužitelnější.
 
 
 ### Detekce orientace zařízení 
@@ -109,7 +108,7 @@ Drží uživatel zařízení na výšku, nebo na šířku?
 
 ### Podmínka pro poměr stran obrazovky
 
-Okna s poměrem stran 16:9 například zacílíme takto:
+Okna s poměrem stran 16 : 9 například zacílíme takto:
 
 ```css
 @media only screen and 
@@ -120,7 +119,7 @@ Existují samozřejmě i varianty pro rozmezí hodnot:  `min-aspect-ratio` a `ma
 
 ### Detekce „Retina“ displejů 
 
-Moderní displeje s vyšším hustotou hardwarových pixelů můžeme detekovat takto:
+Moderní displeje s vyšší hustotou hardwarových pixelů můžeme detekovat takto:
 
 ```
 @media only screen and 
@@ -131,7 +130,7 @@ Aplikuje se, pokud má zařízení poměr mezi hardwarovými a CSS pixely alespo
 
 <!-- AdSnippet -->
 
-Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji namísto podmínky pro vlastnost `resolution` v kombinaci s bitmapovými obrázky využívat vektorový formát SVG. U něj vlastnost `resolution` nepotřebujeme, vektorový obrázek se vykreslí na všech poměrech `resolution` stejně dobře. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg).
+Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji namísto podmínky pro vlastnost `resolution` v kombinaci s bitmapovými obrázky využívat vektorový formát SVG. U něj vlastnost `resolution` nepotřebujeme, vektorový obrázek se vykreslí na všech poměrech `resolution` stejně dobře. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)
 
 <div class="ebook-only" markdown="1">
 Pokud byste náhodou nerozuměli souvislostem, vzpomeňte si na text o [CSS pixelu](zmeny-css-pixel.md) z první kapitoly.
@@ -168,7 +167,7 @@ Podmínka se pak aplikuje na všechna média. Tedy nejen obrazovková, ale také
 @media { … }
 ```
 
-Klíčové slovo `only` před médiem vyřazuje ze hry staré Explorery (verze šest a starší), které by se jinak tvářily, že podmínce rozumějí. Občas je krátký zápis bezproblémový, musíte ovšem vědět co děláte.
+Klíčové slovo `only` před médiem vyřazuje ze hry staré Explorery (verze šest a starší), které by se jinak tvářily, že podmínce rozumějí. Občas je krátký zápis bezproblémový, musíte ovšem vědět, co děláte.
 
 Správný zápis vypadá následovně:
 
@@ -178,15 +177,15 @@ Správný zápis vypadá následovně:
 
 ### 2. Cílení na rozlišení obrazovky
 
-„Device“ zápis cílí na rozlišení obrazovky, nikoliv na velikost okna prohlížeče:
+Zápis s „device“ cílí na rozlišení obrazovky, nikoliv na velikost okna prohlížeče:
 
 ```css
 @media … (min-device-width: 40em) { … }
 ```
 
-V začátcích reponzivního webdesginu toho někteří využívali pro „detekci“ konkrétních zařízení. To ale dobrý postup nebyl, není a nebude. Rozlišení obrazovek je dnes velmi hodně a nedá se z nich vyčíst, jestli zařízení patří mezi mobily, tablety nebo něco jiného.
+V začátcích responzivního webdesignu toho někteří využívali pro „detekci“ konkrétních zařízení. To ale dobrý postup nebyl, není a nebude. Rozlišení obrazovek je dnes velmi hodně a nedá se z nich vyčíst, jestli zařízení patří mezi mobily, tablety, nebo něco jiného.
 
-Zápis podmínky s prefixem `device-` navíc (díky cílení na obrazovku, nikoliv okno) znemožňuje testování responzivního layoutu pomocí změny velikosti okna. Vlastně nevím, k čemu by vám dnes mohl být dobrý. 
+Zápis podmínky s prefixem `device-` navíc (kvůli cílení na obrazovku, nikoliv okno) znemožňuje testování responzivního layoutu pomocí změny velikosti okna. Vlastně nevím, k čemu by vám dnes mohl být dobrý. 
 
 
 ### 3. Rozdělování CSS podle velikosti obrazovky
@@ -202,7 +201,7 @@ Vývojáři si dělí kód podle typu zařízení: Například do `mobile.css`, 
 
 <!-- AdSnippet -->
 
-Jediný rozumný hlavní způsob organizace souborů se styly je podle komponent uživatelského rozhraní jako jsou navigace, tlačítka atd. Píšete totiž kód pro jednu komponentu, nikoliv pro jeden bod zlomu. Pokud je to pro vás nové, čtěte můj blogpost o organizaci CSS. [vrdl.cz/blog/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
+Jediný rozumný hlavní způsob organizace souborů se styly je podle komponent uživatelského rozhraní, jako jsou navigace, tlačítka atd. Píšete totiž kód pro jednu komponentu, nikoliv pro jeden bod zlomu. Pokud je to pro vás nové, čtěte můj blogpost o organizaci CSS. [vrdl.cz/blog/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
 
 
 ## Podpora ve starších prohlížečích: nejlépe s Respond.js

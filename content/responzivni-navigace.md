@@ -1,10 +1,10 @@
 # Návrhové vzory responzivních navigací
 
-Projdeme si osm možností jak navrhnout navigaci na responzivních webech. Od uživatelsky složitých a implementačně jednoduchých až po ty, ehm, dobré. 
+Projdeme si osm možností, jak navrhnout navigaci na responzivních webech. Od uživatelsky složitých a implementačně jednoduchých až po ty, ehm, dobré.
 
 <!-- AdSnippet -->
 
-Většina webů si ale vystačí se dvěma: upřesnostňujícím a přepínacím vzorem. Podívejme se nejprve na ně.
+Většina webů si ale vystačí se dvěma: upřednostňujícím a přepínacím vzorem. Podívejme se nejprve na ně.
 
 <figure>
 <img src="dist/images/original/responzivni-navigace.jpg" alt="">
@@ -21,7 +21,7 @@ Technicky je možné tento návrhový vzor řešit i dost jednoduše jen pomocí
 
 ## Přepínač (Toggle)
 
-Celou navigaci na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiné. Jeho nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, které má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
+Celou navigaci na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiný. Jeho nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, jež má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
 
 Návrhový vzor *přepínač* zpopularizoval například framework Bootstrap a najdete jej na většině dnešních responzivních webů. 
 
@@ -32,11 +32,11 @@ Chování, které znáte z nativních aplikací. Nejobvyklejší je vyjížděn�
 
 ### Víceúrovňové navigace: speciální varianta a speciální úroveň ošemetnosti
 
-Oba už zmíněné návrhové vzory je samozřejmě možné použít i pro víceúrovňové navigace. Jen opatrně, uživatelské ovládání na mobilech nemusí být nejpříjemnější. Řešení vždy testujte.
+Oba už zmíněné návrhové vzory je samozřejmě možné použít i pro víceúrovňové navigace. Jen opatrně, protože uživatelské ovládání na mobilech nemusí být nejpříjemnější. Řešení vždy testujte.
 
 <!-- AdSnippet -->
 
-Demo víceúrovňové navigace na na pěkném webu „Adventures in Responsive Navigation“. [vrdl.in/t2n7r](http://responsivenavigation.net/examples/multi-toggle/index.html)
+Demo víceúrovňové navigace na pěkném webu „Adventures in Responsive Navigation“. [vrdl.in/t2n7r](http://responsivenavigation.net/examples/multi-toggle/index.html)
 
 
 ## Konverze do jiného stylování
@@ -49,15 +49,15 @@ Navigace je v HTML někde dole. Na malých displejích je umístěná v patičce
 
 ## Konverze do `<select>`
 
-Navigaci pomocí Javascriptu na mobilech proměníte v nativní seznam položek. Výhodou je opět jednoduchá implementace. Nevýhodou horší uživatelská přívětivost seznamu položek na mobilních zařízení. Ukázka je na CSS Tricks. [vrdl.in/navsel](https://css-tricks.com/convert-menu-to-dropdown/).
+Navigaci pomocí Javascriptu na mobilech proměníte v nativní seznam položek. Výhodou je opět jednoduchá implementace. Nevýhodou horší uživatelská přívětivost seznamu položek na mobilních zařízeních. Ukázka je na CSS Tricks. [vrdl.in/navsel](https://css-tricks.com/convert-menu-to-dropdown/)
 
 ## Navigace jen v patičce
 
-Na některých webech hlavní navigaci v hlavičce nepotřebujete. Žádná speciální péče o mobilní zařízení není potřebná. 
+Na některých webech hlavní navigaci v hlavičce nepotřebujete. Žádná speciální péče o mobilní zařízení pak není potřebná.
 
 ## Vzor „nohy nahoru a nedělat nic“
 
-Raději zmíním i tento „návrhový vzor“. Jak jsem psal [v textu o ikoně hamburgeru](mobilni-navigace-hamburger.md), často se navigace na mobilech schovává zbytečně. Když v ní máte velmi málo položek, tohle je nejlepší řešení: dát si kafe, nohy nahoru a nedělat nic. 
+Raději zmíním i tento „návrhový vzor“. Jak jsem psal [v textu o ikoně hamburgeru](mobilni-navigace-hamburger.md), často se navigace na mobilech schovává zbytečně. Když v ní máte velmi málo položek, tohle je nejlepší řešení: uvařit si kafe, dát nohy nahoru a nedělat nic.
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=D4IDwYCWfJk">Responzivní navigace</a> ~ Jaký typ responzivní navigace vybrat? Projdeme si osm návrhových vzorů pro navigace na responzivních webech a ukážeme si příklady ze skutečných webů.

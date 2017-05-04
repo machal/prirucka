@@ -17,7 +17,7 @@ Vezměme jednoduché dvousloupcové rozvržení stránky:
 </div>  
 ```
 
-Sloupce bychom chtěli rozděli na tři a jednu čtvrtinu šířky. Jednoduchá krása flexboxu je pak vidět v CSS kódu:
+Sloupce bychom chtěli rozdělit na tři a jednu čtvrtinu šířky. Jednoduchá krása flexboxu je pak vidět v CSS kódu:
 
 ```css
 .col-main { flex: 3; }  
@@ -41,15 +41,15 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 </figcaption> 
 </figure>
 
-Flexbox je plný užitečných vlastností, ale díky tomu relativně složitý. Pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů nebo svůj e-book „Vzhůru do CSS3“, kde jej podrobně vysvětluji i s příklady. [vrdl.cz/prirucka/css3-flexbox](http://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook).
+Flexbox je plný užitečných vlastností, ale kvůli tomu relativně složitý. Pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů, nebo svůj e-book „Vzhůru do CSS3“, kde jej podrobně vysvětluji i s příklady.  [vrdl.cz/prirucka/css3-flexbox](http://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook)
 
 ## Brzy už i Grid Layout
 
 Flexbox je velmi mocná technologie pro jednosměrný typ layoutu. Pokud ale potřebujeme rozvržení po vodorovné i svislé ose, s flexboxem se pracuje hůře. Pro ty účely nově připravilo konsorcium W3.org koncept rozvržení do mřížky, Grid Layout. 
 
-V době vydání knihy už jej některé prohlížeče podporují ve svých veřejných verzích. Na implementaci „gridu“ ale pracují prohlížeče všechny, takže jej během už brzy budeme moci začít používat.
+V době vydání knihy už jej některé prohlížeče podporují ve svých veřejných verzích. Na implementaci „gridu“ ale pracují prohlížeče všechny, takže jej už brzy budeme moci začít používat.
 
-Podívejte se na specifikaci nebo web „Grid by Example“ od Rachel Andrew, kterou znáte z Webexpa 2016. [w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/) a [gridbyexample.com/examples/](http://gridbyexample.com/examples/).
+Podívejte se na specifikaci nebo web „Grid by Example“ od Rachel Andrew, kterou znáte z Webexpa 2016. [w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/) a [gridbyexample.com/examples/](http://gridbyexample.com/examples/)
 
 ## Layout pomocí zastarávajících metod: `float`, `position:absolute`, `display:table`, `display:inline-block`…
 
@@ -65,7 +65,7 @@ Stručný průlet technickými možnostmi bychom tímto mohli uzavřít. Pojďme
 
 Mřížka (nebo také „grid“) rozděluje plochu stránky do sloupečků a jednotlivé komponenty rozhraní jsou pak do nich zarovnány.
 
-Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, kterou se webařina naučila z tisku. Všechny rozumné noviny a knihy jsou do nějaké mřížky vysázeny. Layout do mřížky díky své pravidelnosti usnadňuje pochopení stránky uživateli. 
+Je to skvělý nástroj, protože výrazně zrychluje práci kodéra. Opět je to věc, kterou se webařina naučila z tisku. Všechny rozumné noviny a knihy jsou do nějaké mřížky vysázeny. Layout do mřížky díky své pravidelnosti usnadňuje uživatelům, aby stránku pochopili.
 
 <figure>
 <img src="dist/images/original/bootstrap-mrizka.jpg" alt="">
@@ -74,7 +74,7 @@ Je to skvělé, protože výrazně zrychluje práci kodéra. Opět je to věc, k
 </figcaption> 
 </figure>
 
-Kromě toho je práce s pravidelnou mřížkou pro vývojáře efektivnější. Pokud použijete některou z hotových knihoven v CSS, bude vám stačit pracovat s třídami v HTML a nebudete muset každý kus layout stylovat zvláštním CSS kódem.. V Bootstrapu 4 například rozdělení stránky na dvě poloviny zařídíme takto jednoduše:
+Kromě toho je práce s pravidelnou mřížkou pro vývojáře efektivnější. Pokud použijete některou z hotových knihoven v CSS, bude vám stačit pracovat s třídami v HTML a nebudete muset každý kus layoutu stylovat zvláštním CSS kódem. V Bootstrapu 4 například rozdělení stránky na dvě poloviny zařídíme takto jednoduše:
 
 
 ```html
