@@ -8,7 +8,7 @@ Zrovna tento problém se ale dá vyřešit velmi jednoduše. Pomocí nových [CS
 
 Pojďme si přilepenou patičku rozpitvat jako další z řešení, která jsem ukazoval [během přednášky na WebExpo 2016](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 
-Pro nedočkavé – hotový CodePen je tady: [http://cdpn.io/e/jrEGYZ](http://codepen.io/machal/pen/jrEGYZ).
+Pro nedočkavé – hotový CodePen je tady: [cdpn.io/e/jrEGYZ](http://codepen.io/machal/pen/jrEGYZ).
 
 ## 1. Stránku roztáhneme na celou výšku okna a uděláme z ní flexbox rodiče
 
@@ -63,4 +63,4 @@ Totéž bychom mohli zapsat zkratkou `flex: 0 0 auto` nebo „superzkratkou“ `
 
 Řešení bude fungovat ve všech dnešních prohlížečích. Patičku zobrazenou „postaru“ uvidíte jen v Internet Exploreru verze 9 a starších.
 
-Hotové řešení je tady: [http://cdpn.io/e/jrEGYZ](http://codepen.io/machal/pen/jrEGYZ).
+Hotové řešení je tady: [cdpn.io/e/jrEGYZ](http://codepen.io/machal/pen/jrEGYZ).

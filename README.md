@@ -49,6 +49,8 @@ Lorem ipsum lorem ipsum:
 ```
 - **Méně důležité** - bez odkazu (máme Google, že…)
 
+A pozor, zápis odkazu na konci odstavce nesmí začínat `http://` např. `[http://vrdl.cz…]`. Vždy `[vrdl.cz…]`. Jednak kvůli stručnosti a jednak kvůli možným chybám v XHTML pro ePub.
+
 ### Obrázky
 
 - Zatím jen JPG nebo PNG.

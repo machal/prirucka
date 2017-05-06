@@ -26,7 +26,7 @@ composer create-project pattern-lab/edition-mustache-standard patternlab2-exampl
 ```
 php core/console --server --with-watch
 ```
-5. Na [http://localhost:8080](http://localhost:8080) byste pak měli vidět dokumentaci instalovanou pomocí starterkitu.
+5. Na `http://localhost:8080` byste pak měli vidět dokumentaci instalovanou pomocí starterkitu.
 
 ## Struktura adresářů je fajn, neupravujte ji
 

@@ -35,5 +35,5 @@ Pozn.: Jonathan neříká, že se mají třídy pro layout a stavy prefixovat zr
 
 ## Odkazy
 
-* [http://smacss.com](http://smacss.com/)
-* [http://tv.adobe.com/watch/adc-presents-smacss/smacss-introduction-to-a-scalable-and-modular-architecture-for-css](http://tv.adobe.com/watch/adc-presents-smacss/smacss-introduction-to-a-scalable-and-modular-architecture-for-css/)
+* [smacss.com](http://smacss.com/)
+* [tv.adobe.com/watch/adc-presents-smacss/smacss-introduction-to-a-scalable-and-modular-architecture-for-css](http://tv.adobe.com/watch/adc-presents-smacss/smacss-introduction-to-a-scalable-and-modular-architecture-for-css/)
