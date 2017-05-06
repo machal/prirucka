@@ -46,7 +46,7 @@ S BEMem je vše jasné:
 
 `nav--secondary` a `nav--visible` jsou jen modifikátory bloku `nav`. Najdeme je pravděpodobně v souboru `nav.css`. 
 
-Komponenta vyznačkovaná BEMem tedy nese více informací než komponenta vyznačkovaná běžným OOCSS, nemluvě o situai, kdy objekty vůbec nepoužíváte. Kód se vám bude snadněji chápat, ale také přenášet v rámci projektu nebo na jiné projekty.
+Komponenta vyznačkovaná BEMem tedy nese více informací než komponenta vyznačkovaná běžným OOCSS, nemluvě o situaci, kdy objekty vůbec nepoužíváte. Kód se vám bude snadněji chápat, ale také přenášet v rámci projektu nebo na jiné projekty.
 
 ### Je to jednoduché a rozšířené
 
@@ -85,7 +85,7 @@ V kódu je to třída prefixovaná názvem bloku a doplněná názvem elementu o
 
 Možná jste někde narazili na zápis modifikátorů jen pomocí jednoho podržítka (`.block_modifier`). To je „klasická“ BEM syntaxe. Zdá se, že to byl Harry Roberts, kdo ji upravil do podoby dvou pomlček. Nebo alespoň zpopularizoval tuto variantu. Tady [je vysvětlení](http://stackoverflow.com/a/25213997/889682). 
 
-„Klasický“ zápis umožňuje rozdělit modifikátory na dva typy – „boolean“ a „key-value“. Popravdě si ale nepamatuju, kdy bych něco takového potřeboval použít. Proso se i mě pro svou jednoduchost a jednoznačnost líbí „Robertsova“ varianta.
+„Klasický“ zápis umožňuje rozdělit modifikátory na dva typy – „boolean“ a „key-value“. Popravdě si ale nepamatuju, kdy bych něco takového potřeboval použít. Proto se i mě pro svou jednoduchost a jednoznačnost líbí „Robertsova“ varianta.
 
 ### Modifikátor elementu 
 
