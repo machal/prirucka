@@ -42,8 +42,8 @@ V JS kódu je obvykle druhý největší datový objem. Určitě jej spojte do v
 
 Neplatí to univerzálně, ale často je výhodné JS rozdělit minimálně do dvou různých celků:
 
-- Kritický Javascript – např. [polyfilly](https://github.com/machal/rwd-space-news-example-finished/blob/master/index.php#L34), [skripty pro detekci vlastností](https://github.com/machal/rwd-space-news-example-finished/blob/master/index.php#L25) a další. Pokud jej není moc, vkládejte do hlavičky dokumentu jako kód vkládaný přímo do stránky. V případě, že je to datový tlouštík, vložte jej do stránky jako externí zdroj, ale zajistěte jeho neblokující povahu: `<script src="critical.js" defer async>`.
-- Zbytný Javascript – JS kód, bez kterého se stránka může zobrazit a chvíli tak vydrží. Např. jQuery a knihovny UI komponent (karusely, lightboxy a další obludy, pokud je využíváte). Ten prostě vložte nakonec dokumentu. Před `</html>`, aby vám neblokoval vykreslování.
+- Kritický Javascript – např. [polyfilly](https://github.com/machal/rwd-space-news-example-finished/blob/master/index.php#L34), [skripty pro detekci vlastností](https://github.com/machal/rwd-space-news-example-finished/blob/master/index.php#L25) a další. Pokud jej není moc, vkládejte do hlavičky dokumentu jako kód vkládaný přímo do stránky. V případě, že je to datový tlouštík, vložte jej do stránky jako externí zdroj, ale zajistěte jeho neblokující povahu: `&lt;script src="critical.js" defer async&gt;`.
+- Zbytný Javascript – JS kód, bez kterého se stránka může zobrazit a chvíli tak vydrží. Např. jQuery a knihovny UI komponent (karusely, lightboxy a další obludy, pokud je využíváte). Ten prostě vložte nakonec dokumentu. Před `&lt;/html&gt;`, aby vám neblokoval vykreslování.
 
 ### 4) CSS: kritický CSS
 

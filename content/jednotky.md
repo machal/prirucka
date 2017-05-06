@@ -12,7 +12,7 @@ Ani `rem` není žádný Superman mezi CSS jednotkami. Prostě se nehodí na vš
 
 | Jednotka | Jak počítá rozměr? |
 | -------- | ----------------- | 
-| `rem` | relativně k velikosti písma na prvku `<html>` |
+| `rem` | relativně k velikosti písma na prvku `&lt;html&gt;` |
 | `em`  | relativně k velikosti písma na elementu |
 | `px`  | pixel (lépe ale přepočtený nebo také CSS pixel) |
 | `%`   | procenta relativně k rodičovskému elementu |

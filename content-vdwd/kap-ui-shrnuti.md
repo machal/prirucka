@@ -8,7 +8,7 @@
 - Pro ovládání dotykových zařízení lidé používají hlavně palce. I u hybridních notebooků.
 - Aktivní plochy dělejte alespoň jeden čtvereční centimetr velké.
 - Uživatelům nevadí extra kliknutí navíc, pokud o něm nemusí přemýšlet.
-- Šetřete ikonami, nabídkami v `<select>` a karusely. Nenuťte uživatele psát delší texty a neprotahujte délku stránky.
+- Šetřete ikonami, nabídkami v `&lt;select&gt;` a karusely. Nenuťte uživatele psát delší texty a neprotahujte délku stránky.
 - Otevírejte správné softwarové klávesnice, používejte krokovače a vyhledávání s našeptávačem.
 - Neschovávejte na mobilech obsah. Jen dekorativní prvky.
 - Nevkládejte do webů zbytečně tlačítka sociálních sítí.

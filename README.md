@@ -96,6 +96,10 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-robinem-pokornym-o-css-v-j
 </p>
 ```
 
+### Ukázky kódu
+
+Vkládání HTML tagů dovniř textu pomocí speciálních symbolů, tedy `&lt;meta&gt;`, nikoliv `<meta>`. Opět hlavně kvůli možným XHTML chybám v ePub formátu.
+
 ### Zobrazení jen na webu
 
 Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování textu odstraněno.

@@ -1,6 +1,6 @@
 # Pružné vkládané elementy se zachováním poměru stran
 
-Jak zařídit, aby se obrázky, video a prvky vkládané přes `<iframe>` přizpůsobovaly šířce rodičovského elementu a ještě k tomu zachovávaly poměr stran?
+Jak zařídit, aby se obrázky, video a prvky vkládané přes `&lt;iframe&gt;` přizpůsobovaly šířce rodičovského elementu a ještě k tomu zachovávaly poměr stran?
 
 ## Pružné obrázky
 
@@ -31,7 +31,7 @@ Vyzkoušet si to můžete na CodePen, kde je to ještě doplněno o drobné oše
 
 ## Pružné vkládané elementy se zachovaním poměru stran
 
-Vkládáte do stránky kód třetí strany pomocí `<iframe>`, máte tam `<video>` nebo nedejbože Flash v `<object>`?
+Vkládáte do stránky kód třetí strany pomocí `&lt;iframe&gt;`, máte tam `&lt;video&gt;` nebo nedejbože Flash v `&lt;object&gt;`?
 
 Většina takto vkládaných elementů třetí strany má jakés-takés responzivní chování zajištěno díky výchově na straně dodavatele kódu. Vám se ale může stát, že i u nich potřebujete zachovat poměr stran. 
 
@@ -75,7 +75,7 @@ Poměr stran je zde tedy 100 ku 60, takže 5 : 3. Pro poměr 16 : 9 bychom do `p
 
 ### `.rwd-object-in` 
 
-Tuto třídu pak aplikujeme přímo na `<iframe>` nebo jiný vkládaný element. Ten už má za úkol se jen sobecky roztahovat na celou výšku i šířku rodiče.
+Tuto třídu pak aplikujeme přímo na `&lt;iframe&gt;` nebo jiný vkládaný element. Ten už má za úkol se jen sobecky roztahovat na celou výšku i šířku rodiče.
 
 Máte svrbění si to hned zkoušet?  Neváhejte, CodePen se na vás těší. [cdpn.io/e/BdniC](http://codepen.io/machal/pen/BdniC)
 

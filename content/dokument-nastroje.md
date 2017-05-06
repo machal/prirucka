@@ -57,7 +57,7 @@ A nakonec tělo stránky:
 </body>
 ```
 
-Ošetřená je základní přístupnost: Prvek `<main>` umožňuje uživatelům odečítačů obrazovky snadný skok na obsah. Ze stejných důvodů nezapomínáme na WAI-ARIA atribut (`role="main"`). Detaily čtěte u mě na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
+Ošetřená je základní přístupnost: Prvek `&lt;main&gt;` umožňuje uživatelům odečítačů obrazovky snadný skok na obsah. Ze stejných důvodů nezapomínáme na WAI-ARIA atribut (`role="main"`). Detaily čtěte u mě na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
 
 Univerzálnost vyžaduje minimalismus. Pokud chci mít základní kousek kódu jednotný opravdu pro všechny projekty, nesmí být moc složitý. Nechci přemýšlet, kterou řádku pro nový projekt převezmu a která je tam zbytečně. 
 

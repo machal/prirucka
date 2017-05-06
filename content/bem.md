@@ -169,7 +169,7 @@ Selektory typu `.nav.nav--secondary` jsou pak díky prefixování modifikáturu 
 
 Častým problémem neobjektového CSS kódu bývá opakování deklarací z `.nav` v modifikátorech typu `.nav--secondary`. 
 
-Sice bychom si pak mohli v HTML dovolit jednodušší zápis typu `<nav class="nav--secondary">`, ale CSS kód bude složitý a ukrutně špatně spravovatelný. Jednodušší HTML také není výhodou, protože z něj nevidíme co je komponenta a co její modifikátor.
+Sice bychom si pak mohli v HTML dovolit jednodušší zápis typu `&lt;nav class="nav--secondary"&gt;`, ale CSS kód bude složitý a ukrutně špatně spravovatelný. Jednodušší HTML také není výhodou, protože z něj nevidíme co je komponenta a co její modifikátor.
 
 Více informací o specificitě mám v článku [o OOCSS](oocss.md#specificita).
 

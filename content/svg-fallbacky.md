@@ -46,7 +46,7 @@ Příklad s SVG v CSS na CodePenu: [cdpn.io/e/FEzcI](http://cdpn.io/e/FEzcI).
 
 Na webu asi najdete i další fallback řešení. [Například](http://jecas.cz/svg#background) pomocí [vícenásobných pozadí](css3-multiple-backgrounds.md) nebo [gradientů](css3-gradients.md). To moc nedoporučuji. Jde o hack, který nefunguje ve všech prohlížečích, ve kterých fungovat má. Detekce vlastnosti je spolehlivější.
 
-## SVG v HTML jako `<img>`
+## SVG v HTML jako `&lt;img&gt;`
 
 Řešení hlavně pro obsahovou grafiku – schémata, grafy nebo logotypy. Občas i ikony.
 
@@ -77,7 +77,7 @@ if (!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Imag
 
 Tohle používám na Vzhůru dolů. Příklad s SVG v HTML na CodePenu: [cdpn.io/e/isrIB](http://cdpn.io/e/isrIB).
 
-### Pomocí značky `<picture>`
+### Pomocí značky `&lt;picture&gt;`
 
 Nová HTML značka [picture](picture.md) umí, kromě jiného, také detekovat SVG:
 
@@ -88,7 +88,7 @@ Nová HTML značka [picture](picture.md) umí, kromě jiného, také detekovat S
 </picture>
 ```
 
-## Fallbacky pro inline `<svg>`
+## Fallbacky pro inline `&lt;svg&gt;`
 
 Tady je to složitější, protože dovnitř HTML můžete chtít SVG vložit jak kvůli obyčejnému efektu po najetí myši nebo proto, že máte složitou infografiku. Fallback řešení je pokaždé trochu jiné. 
 
@@ -121,13 +121,13 @@ Výhodné zejména v situaci, kdy v SVG máte interaktivnější nebo strukturov
 </svg>
 ```
 
-Značka `<desc>` slouží pro popsání obsahu SVG slepeckým čtečkám. Byla by proto chyba vložit do ní varování typu „Váš prohlížeč nepodporuje SVG“. Dejte tam prostě obsah v alternativní podobě. To je perfektní řešení pro čtečky i staré prohlížeče.
+Značka `&lt;desc&gt;` slouží pro popsání obsahu SVG slepeckým čtečkám. Byla by proto chyba vložit do ní varování typu „Váš prohlížeč nepodporuje SVG“. Dejte tam prostě obsah v alternativní podobě. To je perfektní řešení pro čtečky i staré prohlížeče.
 
-Jo – a pozor na `<img>`. Ten uvnitř `<desc>` být může, ale stáhnou ho všechny prohlížeče. Tedy i ty, které namísto obrázku vykreslí SVG obsah.
+Jo – a pozor na `&lt;img&gt;`. Ten uvnitř `&lt;desc&gt;` být může, ale stáhnou ho všechny prohlížeče. Tedy i ty, které namísto obrázku vykreslí SVG obsah.
 
 ### Pomocí Grunticon
 
-[Grunticon](http://www.grunticon.com/) je malá javascriptová knihovna a [Grunt](grunt.md) plugin, který obstarává kompletní workflow pro práci s SVG. Včetně generování fallbacků. Pokud chcete používat vektory uvnitř `<svg>` značky, javascriptová část Grunticon je vloží do DOMu a Grunt plugin vám předgeneruje CSS s fallbacky i pro velmi staré prohlížeče typu IE6. 
+[Grunticon](http://www.grunticon.com/) je malá javascriptová knihovna a [Grunt](grunt.md) plugin, který obstarává kompletní workflow pro práci s SVG. Včetně generování fallbacků. Pokud chcete používat vektory uvnitř `&lt;svg&gt;` značky, javascriptová část Grunticon je vloží do DOMu a Grunt plugin vám předgeneruje CSS s fallbacky i pro velmi staré prohlížeče typu IE6. 
 
 
 

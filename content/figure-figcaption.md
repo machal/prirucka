@@ -1,6 +1,6 @@
 # Ilustrace ve stránce: figure a figcaption
 
-Značka `<figure>` slouží k vložení ilustrací vztahujících se k  hlavnímu obsahu:
+Značka `&lt;figure&gt;` slouží k vložení ilustrací vztahujících se k  hlavnímu obsahu:
 
 ```html
 <figure>
@@ -13,7 +13,7 @@ Nemusí jít jen o obrázky. Je možné  takto vkládat videa, schémata, grafy,
 
 <!-- AdSnippet -->
 
-Obvykle značkou vkládáme ilustraci či doplnění hlavního obsahu. Prvek `<figure>` ale někdy použijeme i pro hlavní obsah stránky. To za chvíli uvidíte.
+Obvykle značkou vkládáme ilustraci či doplnění hlavního obsahu. Prvek `&lt;figure&gt;` ale někdy použijeme i pro hlavní obsah stránky. To za chvíli uvidíte.
 
 
 ## Proč to používat?
@@ -23,9 +23,9 @@ Může to mít pozitivní dopad na sémantiku, hlavně při zpracování stránk
 Dobře se to styluje. Ale hlavně: je to jediný rozumný způsob, jak do stránky vložit ilustraci doplněnou popiskem.
 
 
-## `<figure>` je vždy soběstačná, ale ne nezávislá jednotka {#sobestacna}
+## `&lt;figure&gt;` je vždy soběstačná, ale ne nezávislá jednotka {#sobestacna}
 
-Soběstačnou jednotku si můžete představit jako jednu větu v textu. Kdybyste do obrázku dali jen část sdělení věty, `<figure>` použít nemůžete:
+Soběstačnou jednotku si můžete představit jako jednu větu v textu. Kdybyste do obrázku dali jen část sdělení věty, `&lt;figure&gt;` použít nemůžete:
 
 ```html
 <p>
@@ -34,12 +34,12 @@ Soběstačnou jednotku si můžete představit jako jednu větu v textu. Kdybyst
 </p>  
 ```
 
-Obsah elementu `<figure>` ovšem není nezávislý na hlavním obsahu stránky. Buď  je z hlavního obsahu odkazovaný, v hlavním obsahu vložený nebo sám tvoří hlavní obsah. `<figure>` byste tedy neměli použít pro vložení čehokoliv nerelevantního k hlavnímu obsahu stránky.
+Obsah elementu `&lt;figure&gt;` ovšem není nezávislý na hlavním obsahu stránky. Buď  je z hlavního obsahu odkazovaný, v hlavním obsahu vložený nebo sám tvoří hlavní obsah. `&lt;figure&gt;` byste tedy neměli použít pro vložení čehokoliv nerelevantního k hlavnímu obsahu stránky.
 
 
-## Textový popisek: `<figcaption>` {#figcaption}
+## Textový popisek: `&lt;figcaption&gt;` {#figcaption}
 
-Je nepovinný. Mělo by jít o první nebo poslední potomek uvnitř `<figure>`:
+Je nepovinný. Mělo by jít o první nebo poslední potomek uvnitř `&lt;figure&gt;`:
 
 ```html
 <figure>
@@ -48,10 +48,10 @@ Je nepovinný. Mělo by jít o první nebo poslední potomek uvnitř `<figure>`:
 </figure>
 ```
 
-Nojo, ale jak se liší parametr `alt` a popisek `<figcaption>`? 
+Nojo, ale jak se liší parametr `alt` a popisek `&lt;figcaption&gt;`? 
 
 - `alt` je textový popis obsahu obrázku.
-- `<figcaption>` komentuje obrázek v kontextu obsahu, ke kterému se vztahuje.
+- `&lt;figcaption&gt;` komentuje obrázek v kontextu obsahu, ke kterému se vztahuje.
 
 Zkusím to ukázat:
 
@@ -72,14 +72,14 @@ Zkusím to ukázat:
 </figure>
 ```
 
-Jak vidíte, `<figcaption>` může obsahovat plnohodnotný HTML obsah. Takže dokáže obrázek popsat lépe než `alt`. To se vám bude hodit u složitějších grafů nebo schémat.
+Jak vidíte, `&lt;figcaption&gt;` může obsahovat plnohodnotný HTML obsah. Takže dokáže obrázek popsat lépe než `alt`. To se vám bude hodit u složitějších grafů nebo schémat.
 
 <!-- AdSnippet -->
 
 Podrobnější a stále platné pojednání o textových alternativách k obrázkům před lety napsal [Radek Pavlíček pro Zdroják](https://www.zdrojak.cz/clanky/metody-poskytovani-textovych-alternativ-obrazku-shrnuti/).
 
 
-## Odkazování na `<figure>` {#odkazovani}
+## Odkazování na `&lt;figure&gt;` {#odkazovani}
 
 Prvek nemusí být součástí hlavního obsahu. Lze jej přesunout třeba do postranní lišty a pojmenovat pro potřeby odkazu:
 
@@ -97,16 +97,16 @@ Prvek nemusí být součástí hlavního obsahu. Lze jej přesunout třeba do po
 </aside>
 ```
 
-Jak už víte z textu o [HTML5 značkách](html5-struktura.md), do `<aside>` dáváme méně významné informace, které se vztahují k hlavnímu obsahu stránky.
+Jak už víte z textu o [HTML5 značkách](html5-struktura.md), do `&lt;aside&gt;` dáváme méně významné informace, které se vztahují k hlavnímu obsahu stránky.
 
-Různé asistivní technologie podporují `<figure>` různě. Proto je vhodné kromě HTML odkazu (`<a href="#f-1">`) použít i provázání přes pojmenování („Obrázek 1“). 
+Různé asistivní technologie podporují `&lt;figure&gt;` různě. Proto je vhodné kromě HTML odkazu (`&lt;a href="#f-1"&gt;`) použít i provázání přes pojmenování („Obrázek 1“). 
 
 <!-- AdSnippet -->
 
 Nedoporučuji používat relativní textové odkazy: „na obrázku níže“ nebo „jak ukazuje následující graf“. Po přestylování stránky totiž přestávají platit.
 
 
-## Více médií v jednom `<figure>` {#vice-medii}
+## Více médií v jednom `&lt;figure&gt;` {#vice-medii}
 
 Fotogalerii s jedním společným popiskem si asi představit umíte. Tohle je samozřejmě správně:
 
@@ -123,7 +123,7 @@ Fotogalerii s jedním společným popiskem si asi představit umíte. Tohle je s
 
 ## Fotogalerie s mnoha obrázky {#zanorovani}
 
-`<figure>` je možné zanořovat, proto značku klidně využijte pro vyznačení fotogalerie. Tentokrát s jedním společným a několika samostatnými popisky:
+`&lt;figure&gt;` je možné zanořovat, proto značku klidně využijte pro vyznačení fotogalerie. Tentokrát s jedním společným a několika samostatnými popisky:
 
 ```html
 <figure>
@@ -144,7 +144,7 @@ Fotogalerii s jedním společným popiskem si asi představit umíte. Tohle je s
 
 ## Stylování {#stylovani}
 
-Ve výchozích stylech všech prohlížečů, které jsem během psaní článku testoval, má `<figure>` nastavený vnější okraj zleva i zprava na `40px`. Pravděpodobně se toho budete chtít zbavit:
+Ve výchozích stylech všech prohlížečů, které jsem během psaní článku testoval, má `&lt;figure&gt;` nastavený vnější okraj zleva i zprava na `40px`. Pravděpodobně se toho budete chtít zbavit:
 
 ```css
 figure {
@@ -162,7 +162,7 @@ Vazba na odečítače obrazovky funguje ve všech aktuálních prohlížečích 
 
 <!-- AdSnippet -->
 
-A co odečítače obrazovky? Testoval jsem to v Chrome přes VoiceOver na Macu a NVDA na Windows. Obrázek i popisek z ukázky v pohodě přečtou. Na druhou stranu nijak speciálně nehlásí, že jde o obrázek s popiskem nebo přímo značku `<figure>`. Ale to se samozřejmě může v různých čtečkách různit a do budoucna změnit.
+A co odečítače obrazovky? Testoval jsem to v Chrome přes VoiceOver na Macu a NVDA na Windows. Obrázek i popisek z ukázky v pohodě přečtou. Na druhou stranu nijak speciálně nehlásí, že jde o obrázek s popiskem nebo přímo značku `&lt;figure&gt;`. Ale to se samozřejmě může v různých čtečkách různit a do budoucna změnit.
 
 Ukázka používaná v článku je na CodePenu. [cdpn.io/e/oZOOer](http://codepen.io/machal/pen/oZOOer)
 

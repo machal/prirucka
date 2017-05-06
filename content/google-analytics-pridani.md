@@ -36,7 +36,7 @@ Stačí co nejvýše do kódu každé stránky vašeho webu vložit tento kód a
 
 V čem je tahle verze lepší? Klade důraz na rychlost stažení a spuštění skriptu v moderních prohlížečích. 
 
-Standardně nabízená verze bez značky `<script>` totiž bere až příliš velké ohledy na staré Explorery – osmičku a devítku. Pokud ty ve vaší cílovce netvoří významnou část, použijte vždy tento *rychlejší* kód.
+Standardně nabízená verze bez značky `&lt;script&gt;` totiž bere až příliš velké ohledy na staré Explorery – osmičku a devítku. Pokud ty ve vaší cílovce netvoří významnou část, použijte vždy tento *rychlejší* kód.
 
 Před časem psal o Analytics kódu optimalizovaném pro rychlost [David Grudl](https://phpfashion.com/rychlejsi-stranky-s-google-universal-analytics). Jeho skript je rovněž asynchronní, ale přidává parametr `defer`. Tím se zajistí neblokující načítání i ve starších Explorerech verze 8 a 9. Jenže se v nich skript spustí [až po rozparsování HTML](http://jecas.cz/async-defer#defer-async), ve kterém mohou být běžné synchronní skripty. Může se tedy stát, že se měření spustí tak pozdě, že se ani nezapočítá. Dávám proto přednost výše uvedenému oficiálnímu asynchronnímu kódu.
 

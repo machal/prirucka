@@ -29,7 +29,7 @@ Moc pěkná a velmi dobře konfigurovatelná kontrola CSS oproti vašim týmový
 
 ### CriticalCSS: vytažení kódu nad zlomem stránky
 
-Vygenerování [kritického CSS](http://www.vzhurudolu.cz/blog/35-critical-css), které zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `<style>` tagu. Ve výsledku zařídí rychlé zobrazení stránky i na mobilech. [Github](https://github.com/filamentgroup/grunt-criticalcss).
+Vygenerování [kritického CSS](http://www.vzhurudolu.cz/blog/35-critical-css), které zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `&lt;style&gt;` tagu. Ve výsledku zařídí rychlé zobrazení stránky i na mobilech. [Github](https://github.com/filamentgroup/grunt-criticalcss).
 
 ### CSSnano: zmenšení objemu CSS souboru
 

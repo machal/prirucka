@@ -30,7 +30,7 @@ Na většinu ikon se nedá spolehnout. Doplňte je textovými popisy. Více v te
 
 ## 3) Šetřete rozbalovacími nabídkami 
 
-S rozbalovacími nabídkami (typu `<select>`) je na mobilech tolik potíží, až o nich Luke Wroblewski napsal, že je máme použít jen jako poslední záchranu. 
+S rozbalovacími nabídkami (typu `&lt;select&gt;`) je na mobilech tolik potíží, až o nich Luke Wroblewski napsal, že je máme použít jen jako poslední záchranu. 
 
 Ani autoři webu FotoSkoda.cz se nevyhnuli nasypání ohromného seznamu poboček Uloženky do rozbalovací nabídky. Zkuste si tam najít tu, která je nejblíž vašemu bydlišti. Třeba v Praze, kde samozřejmě všechny ulice znát nemůžete. A představte si počet otravných tapnutí, které takovému rozhraní musíte věnovat. To bolí! Autoři webu CSOBpoj.cz zvolili přívětivější řešení: Rozbalovací nabídky vyměnili za přepínače. Podívejte se na obrázek. 
 
@@ -47,7 +47,7 @@ Více také v textu od Luke Wroblewskiho „Dropdowns Should be the UI of Last R
 
 Web CSOBpoj.cz nutí uživatele vyplnit číselný údaj na alfanumerické klávesnici. SmileBox.cz to má vymyšleno lépe, ten otevře klávesnici numerickou. Podívejte se na obrázek.
 
-Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`<input type="tel">`),  e-mailů, URL adres nebo na vyhledávací pole. Více informací najdete na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http://mobileinputtypes.com/)
+Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`&lt;input type="tel"&gt;`),  e-mailů, URL adres nebo na vyhledávací pole. Více informací najdete na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http://mobileinputtypes.com/)
 
 A ještě, prosím: Telefonní čísla na stránce vždy na mobilních zařízeních vypisujte jako odkazy. [vrdl.cz/blog/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
 
@@ -61,13 +61,13 @@ A ještě, prosím: Telefonní čísla na stránce vždy na mobilních zařízen
 
 ## 5) Používejte krokovače a další alternativní formulářové prvky
 
-Opět se vracíme k náhradě nešťastného `<select>`. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu stát může. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: *Radio Group*, *Button Input*,  *Slider* nebo *Segmented Control*.
+Opět se vracíme k náhradě nešťastného `&lt;select&gt;`. Krokovač (stepper) pomocí běžného HTML neuděláte, ale za vylepšený uživatelský prožitek pár řádků Javascriptu stát může. Zvažte i další alternativní formulářové prvky. Hledejte je rovnou v angličtině: *Radio Group*, *Button Input*,  *Slider* nebo *Segmented Control*.
 
 ## 6) Vyhledávání doplňujte našeptávačem 
 
 Je velmi dobrým pomocníkem ve formulářových polích, kde je velké množství možných vstupů: Hlavně ve vyhledávání, které je na mobilech kvůli časté nepřítomnosti plnohodnotné navigace velmi důležité.
 
-V HTML pro ten účel existuje prvek `<datalist>`. Jeho využití je ale omezené. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
+V HTML pro ten účel existuje prvek `&lt;datalist&gt;`. Jeho využití je ale omezené. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
 
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-11.jpg" alt="">

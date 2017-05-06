@@ -20,7 +20,7 @@ Po čase pro vás mám další z příkladů, které jsem ukazoval na přednáš
 </svg>
 ```
 
-Namísto prostého `<img>` použijeme SVG obrázek, abychom na něj mohli aplikovat tvar masky.
+Namísto prostého `&lt;img&gt;` použijeme SVG obrázek, abychom na něj mohli aplikovat tvar masky.
 
 
 ## 2) Definuji tvar výstřižku
@@ -31,7 +31,7 @@ Namísto prostého `<img>` použijeme SVG obrázek, abychom na něj mohli apliko
 </clipPath>
 ```
 
-Všimněte si, že zde nepoužívám zanoření do `<defs>`, oblasti pro vymezení později využívaných objektů. Nefungovalo by to totiž v aktuálních verzích Safari.
+Všimněte si, že zde nepoužívám zanoření do `&lt;defs&gt;`, oblasti pro vymezení později využívaných objektů. Nefungovalo by to totiž v aktuálních verzích Safari.
 
 
 ## 3) Výstřižek pak na obrázek nasadím
@@ -52,9 +52,9 @@ Vaše maska může pochopitelně vypadat jak chcete vy: trojúhelník, srdce neb
 
 Řešení bude fungovat ve všech dnes vyráběných [prohlížečích](prohlizece.md). Ve starých bez podpory SVG obrázek ani ořez neuvidíte.
 
-## 4) Víte, že prohlížeče znají `<image>`? Postavíme na tom náhradní řešení pro staré Explorery
+## 4) Víte, že prohlížeče znají `&lt;image&gt;`? Postavíme na tom náhradní řešení pro staré Explorery
 
-Mohli bychom pro ně přidat [SVG fallback](svg-fallbacky.md) pomocí značky `<desc>`:
+Mohli bychom pro ně přidat [SVG fallback](svg-fallbacky.md) pomocí značky `&lt;desc&gt;`:
 
 ```html
 <desc>
@@ -62,7 +62,7 @@ Mohli bychom pro ně přidat [SVG fallback](svg-fallbacky.md) pomocí značky `<
 </desc>  
 ```
 
-Ale neuděláme to. Prohlížeče se totiž tváří, že [značku `<image>` znají](https://jakearchibald.com/2013/having-fun-with-image/), i když by ji znát neměly. Přeborníkem v tomto je, chválabohu, právě Explorer. Náš `<image>` uvnitř `<svg>` považuje za `<img>`, kterému jsme zapomněli přidat parametr `src`. Švanda, což? To nám ale umožní vrátit se na začátek a udělat vtipně jednoduchý fallback:
+Ale neuděláme to. Prohlížeče se totiž tváří, že [značku `&lt;image&gt;` znají](https://jakearchibald.com/2013/having-fun-with-image/), i když by ji znát neměly. Přeborníkem v tomto je, chválabohu, právě Explorer. Náš `&lt;image&gt;` uvnitř `&lt;svg&gt;` považuje za `&lt;img&gt;`, kterému jsme zapomněli přidat parametr `src`. Švanda, což? To nám ale umožní vrátit se na začátek a udělat vtipně jednoduchý fallback:
 
 ```html
 <svg>

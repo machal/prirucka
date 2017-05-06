@@ -51,9 +51,9 @@ Podívejte se na kompletní přehled v mém článku [SVG inspirace](svg-inspira
 
 Na jednom konci škály užití, kde leží ikony, tedy vektory logicky nahrazují bitmapy a hlavně PNG. Na druhém konci jsou složité interaktivní infografiky, které se dříve dělaly hlavně pomocí Flashe. SVG je takový malý Flash. 
 
-## Možnost přímého vložení jako `<svg>`
+## Možnost přímého vložení jako `&lt;svg&gt;`
 
-Kromě běžného vložení do stylů přes `background-image` a do HTML přes `<img>` je tu zcela nová možnost vložení přímo přes značku `<svg>`. Tím se vykolíkovalo hřiště pro úpravu vektorů pomocí CSS nebo JS.
+Kromě běžného vložení do stylů přes `background-image` a do HTML přes `&lt;img&gt;` je tu zcela nová možnost vložení přímo přes značku `&lt;svg&gt;`. Tím se vykolíkovalo hřiště pro úpravu vektorů pomocí CSS nebo JS.
 
 Objekt v příkladu uvedeném výše můžeme po najetí myši obarvit:
 

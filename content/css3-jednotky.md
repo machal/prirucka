@@ -4,9 +4,9 @@ Nové CSS3 jednotky: rem, vw, vh
 rem
 ---
 
-Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`. *„root-emka“* jsou variantou známé jednotky `em`. Od běžných `em` se liší tím, že nevychází z velikosti fontu rodičovského elementu.
+Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `&lt;html&gt;`. *„root-emka“* jsou variantou známé jednotky `em`. Od běžných `em` se liší tím, že nevychází z velikosti fontu rodičovského elementu.
 
-Velikost písma pro `<html>` element je v prohlížečích obvykle nastavená tak, aby odpovídala `16px`.
+Velikost písma pro `&lt;html&gt;` element je v prohlížečích obvykle nastavená tak, aby odpovídala `16px`.
 
 Pokud všechny rozměry týkající se typografie (nebo klidně i layoutu) nastavíte v `rem` jednotkách, můžete si snadno zvětšit celý dokument pouhou změnou hodnoty ve vlastnosti `html { font-size: … }` a vytvářet tak elastické layouty.
 
@@ -32,7 +32,7 @@ Pokud se tedy pomocí media query rozhodneme, že od šířky okna 801 pixelů n
 }
 ```
 
-… zvětší se nám všechny rozměry nastavené v jednotkách `rem`. Nadpis `<h1>` tedy bude mít v těchto šířkách okna velikost 38 pixelů (`25px` × 1,5).
+… zvětší se nám všechny rozměry nastavené v jednotkách `rem`. Nadpis `&lt;h1&gt;` tedy bude mít v těchto šířkách okna velikost 38 pixelů (`25px` × 1,5).
 
 Na živo můžete vyzkoušet tady: [cdpn.io/e/mnbaA](http://cdpn.io/e/mnbaA).
 

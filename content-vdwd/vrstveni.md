@@ -64,7 +64,7 @@ Studie prokázaly, že přístupný web se lépe používá *všem* návštěvn�
 
 Někdy se stačí podívat hned na první řádku HTML kódu. Mluví o typu *dokumentu*. Heydon Pickering v knize „Inclusive Design Patterns“ říká:
 
-> `<!DOCTYPE html>` slouží jako důležitá připomínka toho, že i když navrhujete interakčně složité a dynamické rozhraní, stále prostě jen vkládáte obsah do okna prohlížeče.
+> `&lt;!DOCTYPE html&gt;` slouží jako důležitá připomínka toho, že i když navrhujete interakčně složité a dynamické rozhraní, stále prostě jen vkládáte obsah do okna prohlížeče.
 
 
 ## Vrstvené CSS: kodér potřebuje vidět systém, ne vnější znaky systému

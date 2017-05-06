@@ -73,15 +73,15 @@ Představte si, že `.item` má šířku 500 pixelů. První pravidlo změní š
 
 Jak to ale pak budeme debugovat? Třeba na složitějších webech, které používají CSS více stran nebo když styly měníme dynamicky. Jak bychom poznali, proč naše pravidlo prohlížeč neakceptoval?
 
-## Ale `<iframe>` a externí SVG umí Element Queries dávno, fňuk…
+## Ale `&lt;iframe&gt;` a externí SVG umí Element Queries dávno, fňuk…
 
-Tab Atkins v odkazovaném článku zmiňuje jinou cestu: pro komponenty použít nový element typu `<iframe>`. Ten totiž nastavuje nový viewport. A to si pište, že se Media Queries uvnitř `<iframe>` vztahují k aktuálním rozměrům elementu, nikoliv celého dokumentu. Starej páprda `<iframe>` nám to teď natřel. [Umí Element Queries](http://codepen.io/machal/pen/EWgXGz?editors=1100) už… no minimálně dvě století. 
+Tab Atkins v odkazovaném článku zmiňuje jinou cestu: pro komponenty použít nový element typu `&lt;iframe&gt;`. Ten totiž nastavuje nový viewport. A to si pište, že se Media Queries uvnitř `&lt;iframe&gt;` vztahují k aktuálním rozměrům elementu, nikoliv celého dokumentu. Starej páprda `&lt;iframe&gt;` nám to teď natřel. [Umí Element Queries](http://codepen.io/machal/pen/EWgXGz?editors=1100) už… no minimálně dvě století. 
 
 <!-- AdSnippet -->
 
-Stejně je na tom [SVG](svg.md) vložené do dokumentu externě, například pomocí `<img>` značky. I tamní Media Queries se odkazují k elementu samotnému, nikoliv celému dokumentu. [SVG už taky umí Element Queries](http://codepen.io/machal/pen/zZKzRe?editors=1100). Zásah. 
+Stejně je na tom [SVG](svg.md) vložené do dokumentu externě, například pomocí `&lt;img&gt;` značky. I tamní Media Queries se odkazují k elementu samotnému, nikoliv celému dokumentu. [SVG už taky umí Element Queries](http://codepen.io/machal/pen/zZKzRe?editors=1100). Zásah. 
 
-Jenže u dnešního `<iframe>` ani externího SVG nepotřebuje prohlížeč čekat na jejich obsah ani styly. Vykreslí si rodičovský dokument a po čase nějak došudlá obsah „ajfrejmů“ a externích vektorových dokumentů.
+Jenže u dnešního `&lt;iframe&gt;` ani externího SVG nepotřebuje prohlížeč čekat na jejich obsah ani styly. Vykreslí si rodičovský dokument a po čase nějak došudlá obsah „ajfrejmů“ a externích vektorových dokumentů.
 
 V případě běžných komponent uživatelského rozhraní by ale čekat musel. Nejde o žádné externisty, ale komponenty, přirozenou součást layoutu webu. 
 

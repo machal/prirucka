@@ -1,6 +1,6 @@
 # Picturefill
 
-[Polyfill](polyfill.md), který dokáže zařídit podporu nově standardizovaných [rozšíření obrázků pro responzivní účely](responzivni-obrazky.md) – atributů `srcset` a `sizes` a nové značky `<picture>` – ve všech prohlížečích. 
+[Polyfill](polyfill.md), který dokáže zařídit podporu nově standardizovaných [rozšíření obrázků pro responzivní účely](responzivni-obrazky.md) – atributů `srcset` a `sizes` a nové značky `&lt;picture&gt;` – ve všech prohlížečích. 
 
 [Picturefill](https://scottjehl.github.io/picturefill/) využívá standardizované syntaxe. Tady je příklad zápisu pro [srcset a sizes](srcset-sizes.md):
 
@@ -11,7 +11,7 @@
   alt="Obrázek" width="500" height="250">
 ```
 
-Příklad zápisu pro [`značku <picture>`](http://www.vzhurudolu.cz/prirucka/picture):
+Příklad zápisu pro [`značku <picture&gt;`](http://www.vzhurudolu.cz/prirucka/picture):
 
 ```html
 <picture>
@@ -23,11 +23,11 @@ Příklad zápisu pro [`značku <picture>`](http://www.vzhurudolu.cz/prirucka/pi
 </picture>
 ```
 
-Kroutíte hlavou nad použitím `<video>` tagu? Ano, to je [obezlička](http://scottjehl.github.io/picturefill/#support) pro Internet Explorer 9. Ten má ale fakt minimální tržní podíl, takže u spousty projektů už nebude nutné `<video>` vkládat.
+Kroutíte hlavou nad použitím `&lt;video&gt;` tagu? Ano, to je [obezlička](http://scottjehl.github.io/picturefill/#support) pro Internet Explorer 9. Ten má ale fakt minimální tržní podíl, takže u spousty projektů už nebude nutné `&lt;video&gt;` vkládat.
 
 ## Musíte vynechat `src`
 
-Nic není zadarmo, znáte to. Drobná nevýhoda Picturefillu spočívá v nutnosti vynechat `src` atribut, aby prohlížeče bez podpory `<picture>` nestáhly dva obrázky. 
+Nic není zadarmo, znáte to. Drobná nevýhoda Picturefillu spočívá v nutnosti vynechat `src` atribut, aby prohlížeče bez podpory `&lt;picture&gt;` nestáhly dva obrázky. 
 
 Má to dva negativní důsledky. Prohlížeče bez Javascriptu uvidí místo obrázku jen alternativní text. A taky nebude možné vložit obrázek při sdílení stránky na Facebooku. Obojí obvykle není žádná katastrofa.
 
@@ -37,5 +37,5 @@ Jasně, Picturefill má tyhle nevýhody, ale dobře se zamyslete co vám jeho po
 
 ## Čtěte dále
 
-* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture).
+* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [`&lt;picture&gt;`](http://www.vzhurudolu.cz/prirucka/picture).
 * Moje přednáška [„Responzivní obrázky v praxi“](https://www.youtube.com/watch?v=zsE6caTsi1M) a [slajdy k ní](http://www.slideshare.net/machal/frontendisti-rwd-obrazkypublic).

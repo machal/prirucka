@@ -20,11 +20,11 @@ body {
 }
 ```
 
-Výška prvku `<body>` je totiž v CSS určená vždy výškou jeho obsahu. Pokud ji tedy chceme roztáhnout na výšku okna, musíme to definovat `vh` (viewport height) jednotkami. 
+Výška prvku `&lt;body&gt;` je totiž v CSS určená vždy výškou jeho obsahu. Pokud ji tedy chceme roztáhnout na výšku okna, musíme to definovat `vh` (viewport height) jednotkami. 
 
 První krok bychom měli, sám o sobě ale nestačí. Chybí nám popis rozložení prostoru mezi obsahem stránky a patičkou.
 
-Z `<body>` tedy uděláme rodiče flexboxu a směr layoutu nastavíme na příčný:
+Z `&lt;body&gt;` tedy uděláme rodiče flexboxu a směr layoutu nastavíme na příčný:
 
 ```css
 body {
