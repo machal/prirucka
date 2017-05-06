@@ -11,6 +11,8 @@ Pro potřeby předání základní úrovně typografických znalostí mně tady 
 
 ## Časté typografické chyby
 
+Vypadají triviálně, ale weby jsou jich plné. Příliš dlouhé řádky, špatný kontrast a nesprávné znaky.
+
 
 ### 1) Příliš dlouhé řádky
 

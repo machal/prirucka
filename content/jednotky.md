@@ -10,6 +10,8 @@ Ani `rem` není žádný Superman mezi CSS jednotkami. Prostě se nehodí na vš
 
 ## Rychlý přehled použitelných jednotek
 
+Zapamatujte si hlavně následující šestici.
+
 | Jednotka | Jak počítá rozměr? |
 | -------- | ----------------- | 
 | `rem` | relativně k velikosti písma na prvku `&lt;html&gt;` |

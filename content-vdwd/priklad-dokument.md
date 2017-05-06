@@ -153,6 +153,8 @@ Ale nekomplikujme to ještě více. Podívejme se na náš e-shop.
 
 ## A jak teď vypadá rozpracovaná verze ForestKid.cz?
 
+E-shop teď získal základní grafický styl.
+
 <figure>
 <img src="dist/images/original/vdwd/priklad-dokument.jpg" alt="">
 <figcaption markdown="1">    

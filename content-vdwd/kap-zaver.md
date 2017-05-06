@@ -1,6 +1,8 @@
-# A to je vše, přátelé
+# Na závěr
 
-Právě jste dočetli „Vzhůru do (responzivního) webdesignu“! Díky, že jste knize věnovali svůj čas, a jsem napjatý, zda se vám líbila.
+Právě jste dočetli „Vzhůru do (responzivního) webdesignu“! 
+
+Díky, že jste knize věnovali svůj čas, a jsem napjatý, zda se vám líbila.
 
 
 ## Zpětná vazba mi moc pomůže

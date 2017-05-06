@@ -1,12 +1,12 @@
 # Proč řešit rychlost načítání webu?
 
+V Google mají jasno. Tohle prohlásil v roce 2010 Eric Schmidt, tehdejší šéf firmy:
+
 > Never underestimate the importance of fast.
 
-V Google mají jasno. Tohle prohlásil v roce 2010 Eric Schmidt, tehdejší šéf firmy.
+Ale nemusíte být Google. Rychlejší načtení vylepší uživatelský prožitek a pomůže tak cílům každého webu.
 
 <!-- AdSnippet -->
-
-Ale nemusíte být Google. Rychlejší načtení vylepší uživatelský prožitek a pomůže tak cílům každého webu.
 
 
 ## My lidé to zkrátka rychlé chceme
@@ -51,14 +51,20 @@ Ani zvyšování přenosové rychlosti na 3G/4G sítích nesrovná načítání 
 
 Mrkněte se na tuhle tabulku. Je inspirovaná knihou Ilji Grigorika, High Performance Browser Networking.
 
-Připojení    | Max. rychlost Mbit/s     |  Latence ms
------------- | ------------------------ | --------------
-2G/EDGE      |  0,1–0,4               |  300–1000
-3G           |   0,5–5                |  100–500
-4G/LTE       |   1–50                 |   < 100
-WiFi         |   1–50                 |   < 10
+<figure markdown="1">
 
-*Latence je průměrné zpoždění mezi požadavkem serveru a odpovědí prohlížeče. Doručení každého ze souborů, které web potřebuje, latence zdrží.*
+| Připojení    | Max. rychlost Mbit/s   |  Latence ms |
+| :----------- | ---------------------: | -----------:|
+| 2G/EDGE      |  0,1–0,4               |  300–1000   |
+| 3G           |   0,5–5                |  100–500    |
+| 4G/LTE       |   1–50                 |   < 100     |
+| WiFi         |   1–50                 |   < 10      |
+
+<figcaption markdown="1">    
+  *Latence je průměrné zpoždění mezi požadavkem serveru a odpovědí prohlížeče. Doručení každého ze souborů, které web potřebuje, latence zdrží*
+</figcaption> 
+
+</figure>
 
 Zatímco ideální přenosová rychlost mobilního připojení se může rovnat pomalejším „wifinám“, zpoždění (latence) pro zaslání každého ze souborů bude vždy horší. Vysvětlení je nasnadě – architektura mobilního internetového připojení je daleko složitější než u toho pevného. Data jdou vzduchem, že ano.
 
