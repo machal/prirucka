@@ -21,14 +21,14 @@ Pojďme si nejdříve ukázat kompletní přehled všech možných řešení, je
 
 | Řešení                        | Rychlost | Retina | AD  | Okno | Layout | Vhodné pro |
 |:------------------------------|:--------:|:------:|:---:|:----:|:------:|:----------:|
-| 1. SVG                        |    ✓     |    ✓   |  -  |   -  |    -   | vektory    |
+| 1. SVG                        |    •     |    •   |  -  |   -  |    -   | vektory    |
 | 2. `&lt;img src&gt;`          |    -     |    -   |  -  |   -  |    -   | cokoliv    |
-| 3. `&lt;img src&gt;` 2×       |    -     |    ✓   |  ✓  |   -  |    -   | cokoliv    |
-| 4. `&lt;img src&gt;` kompr.   |    ✓     |    ✓   |  -  |   -  |    -   | fotky      |
-| 5. `&lt;img src/data-src&gt;` |    -     |    ✓   |  ✓  |   ✓  |    -   | cokoliv    |
-| 6. `&lt;img srcset&gt;`       |    ✓     |    ✓   |  -  |   ✓  |    -   | cokoliv    |
-| 7. `&lt;img srcset sizes&gt;` |    ✓     |    ✓   |  -  |   -  |    ✓   | cokoliv    |
-| 8. `&lt;picture&gt;`          |    ✓     |    ✓   |  ✓  |   ✓  |    -   | cokoliv    |
+| 3. `&lt;img src&gt;` 2×       |    -     |    •   |  •  |   -  |    -   | cokoliv    |
+| 4. `&lt;img src&gt;` kompr.   |    •     |    •   |  -  |   -  |    -   | fotky      |
+| 5. `&lt;img src/data-src&gt;` |    -     |    •   |  •  |   •  |    -   | cokoliv    |
+| 6. `&lt;img srcset&gt;`       |    •     |    •   |  -  |   •  |    -   | cokoliv    |
+| 7. `&lt;img srcset sizes&gt;` |    •     |    •   |  -  |   -  |    •   | cokoliv    |
+| 8. `&lt;picture&gt;`          |    •     |    •   |  •  |   •  |    -   | cokoliv    |
 
 <figcaption markdown="1">
   *Srovnání řešení pro responzivní obrázky. Rychlost – zohledňují rychlost načítání? Retina – zohledňují vysokokapacitní displeje? AD (Art Direction) – dokážou poslat různé ořezy obrázků na různá zařízení? Okno – umí vybírat obrázky podle velikosti okna prohlížeče? Layout – zohledňují layout webu?*

@@ -1,5 +1,7 @@
 # Úroda prohlížečů
 
+Podívejme se, jak to vypadá na trhu prohlížečů pro počítače a také jejich sourozence pro mobilní zařízení.
+
 ## Na desktopu: vede Chrome, staré Explorery vymřely
 
 Když vezmeme trh počítačů, mezi prohlížeči už jednoznačně vede Chrome, následovaný Firefoxem a Explorerem 11. Opera, Safari nebo Edge to dotáhly na podíly jen v řádu jednotek procent. Explorery verzí 10 a starší už téměř vymřely. A hlavně: prohlížečů je dnes docela hodně. 
