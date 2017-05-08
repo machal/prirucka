@@ -27,7 +27,7 @@ V parametru `sizes` značky `&lt;img&gt;` se bez `calc()` nedá obejít. Zkuste 
 >
 ```
 
-Více o parametrech `srcset` a `sizes` najdete na Vzhůru dolů. [vrdl.cz/prirucka/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes)
+Více o parametrech `srcset` a `sizes` najdete na Vzhůru dolů. [vrdl.cz/p/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes)
 
 Chci zmínit, že knihovna pro práci s responzivními obrázky – Picturefill – už obsahuje také polyfill pro funkci `calc()`. Dostanete s ní tedy řešení pro všechny existující prohlížeče.
 

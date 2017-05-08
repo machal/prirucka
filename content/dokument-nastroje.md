@@ -57,7 +57,7 @@ A nakonec tělo stránky:
 </body>
 ```
 
-Ošetřená je základní přístupnost: Prvek `&lt;main&gt;` umožňuje uživatelům odečítačů obrazovky snadný skok na obsah. Ze stejných důvodů nezapomínáme na WAI-ARIA atribut (`role="main"`). Detaily čtěte u mě na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
+Ošetřená je základní přístupnost: Prvek `&lt;main&gt;` umožňuje uživatelům odečítačů obrazovky snadný skok na obsah. Ze stejných důvodů nezapomínáme na WAI-ARIA atribut (`role="main"`). Detaily čtěte u mě na blogu. [vrdl.cz/p/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
 
 Univerzálnost vyžaduje minimalismus. Pokud chci mít základní kousek kódu jednotný opravdu pro všechny projekty, nesmí být moc složitý. Nechci přemýšlet, kterou řádku pro nový projekt převezmu a která je tam zbytečně. 
 
@@ -123,7 +123,7 @@ blockquote, pre, hr, figure {
 
 Opět pro zájemce zmíním i složitější alternativu. Bootstrap 4 přichází s vlastní typografickou základnou, které říká Reboot. [vrdl.in/reboot](https://v4-alpha.getbootstrap.com/content/reboot/)
 
-Základna obsahuje sjednocení stylu mezi prohlížeči (pro které používáme Normalize.css), sjednocení vzhledu mezi prvky (používáme Blanka.css), ale také jistá nastavení vlastního vzhledu. A právě ne všechna pravidla z poslední kategorie mám v úmyslu využít na všech svých projektech. Nechci jim už v této fázi vnucovat konkrétní písma, konkrétní typografickou stupnici a výšky řádku. To vše vychází ze zvoleného typografického systému a mělo by se psát na míru projektu. O Rebootu jsem ale psal na Vzhůru dolů. [vrdl.cz/blog/53-reboot](http://www.vzhurudolu.cz/blog/53-reboot)
+Základna obsahuje sjednocení stylu mezi prohlížeči (pro které používáme Normalize.css), sjednocení vzhledu mezi prvky (používáme Blanka.css), ale také jistá nastavení vlastního vzhledu. A právě ne všechna pravidla z poslední kategorie mám v úmyslu využít na všech svých projektech. Nechci jim už v této fázi vnucovat konkrétní písma, konkrétní typografickou stupnici a výšky řádku. To vše vychází ze zvoleného typografického systému a mělo by se psát na míru projektu. O Rebootu jsem ale psal na Vzhůru dolů. [vrdl.cz/b/53-reboot](http://www.vzhurudolu.cz/blog/53-reboot)
 
 Když už máme jakžtakž vysázený dokument, můžeme k němu začít přidávat vzhled vlastního webu. Řezy písem, velikostní stupnici, barvy. Promítnou se pak do vzhledu základních prvků dokumentu, nadpisů, odstavců, seznamů, citací, tabulek, formulářových prvků… No však je všechny znáte. Nebo neznáte?
 

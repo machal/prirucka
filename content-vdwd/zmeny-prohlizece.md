@@ -28,4 +28,4 @@ Na mobilech musíme počítat s Google Chrome a Safari. Menší podíl mají dal
 
 Moc se neví, že na iOS se jádro Safari používá i v Google Chrome a všech dalších prohlížečích. Raději to zmíním už tady. Vykreslování tedy obvykle není potřeba na iOS kontrolovat v Chrome a zároveň Safari.
 
-Sledujte statistiky podílů prohlížečů ve vaší cílové skupině. Na Vzhůru dolů pak najdete aktuální čísla vycházející z velkých českých webů měřených Gemiusem. [vrdl.cz/prirucka/prohlizece](http://www.vzhurudolu.cz/prirucka/prohlizece)
+Sledujte statistiky podílů prohlížečů ve vaší cílové skupině. Na Vzhůru dolů pak najdete aktuální čísla vycházející z velkých českých webů měřených Gemiusem. [vrdl.cz/p/prohlizece](http://www.vzhurudolu.cz/prirucka/prohlizece)

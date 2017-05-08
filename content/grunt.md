@@ -92,7 +92,7 @@ grunt --help
 To by pro začátek mohlo o Gruntu stačit. Tady jsou odkazy:
 
 - Homepage: [gruntjs.com](http://gruntjs.com/).
-- Seznam Grunt pluginů pro inspiraci: [vrdl.cz/prirucka/grunt-pluginy](http://www.vzhurudolu.cz/prirucka/grunt-pluginy).
+- Seznam Grunt pluginů pro inspiraci: [vrdl.cz/p/grunt-pluginy](http://www.vzhurudolu.cz/prirucka/grunt-pluginy).
 
 ## Grunt versus Gulp
 

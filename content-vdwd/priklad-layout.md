@@ -42,7 +42,7 @@ Všimněte si, že došlo k určitému přeskupení sekcí. Sekci „Proč Fores
 
 Až dosud jsme pořadí stránky přizpůsobovali malým displejům. Tuto změnu jsme udělali na základě přípravy pro layout ve větších velikostech okna prohlížeče. Pracujeme v *iteracích* a přímo v prohlížeči, kde jsou úpravy snadné. Špatné rozhodnutí z dřívějších fází vývoje nebude působit takové problémy.
 
-V HTML ukázce pro zjednodušení vynechávám další potřebné atributy. Například `role`, které zlepšují přístupnost zařízeními pro odečítání obrazovky. Přidají prvkům stránky význam, který samy o sobě nenesou. Jak definovat strukturu v HTML5, píšu ve zvláštním článku na blogu. [vrdl.cz/prirucka/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
+V HTML ukázce pro zjednodušení vynechávám další potřebné atributy. Například `role`, které zlepšují přístupnost zařízeními pro odečítání obrazovky. Přidají prvkům stránky význam, který samy o sobě nenesou. Jak definovat strukturu v HTML5, píšu ve zvláštním článku na blogu. [vrdl.cz/p/html5-struktura](http://www.vzhurudolu.cz/prirucka/html5-struktura)
 
 ## Rozvržení hlavního obsahu flexboxem
 

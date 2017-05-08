@@ -95,7 +95,7 @@ Tady bychom mohli skončit, ale dlužím vám ještě poznámku k přídavnému 
 
 ## Adaptivní web
 
-Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Potřebujeme například řešit rychlost načítání nebo měníme pracovní postupy. Mimo jiné potřebujeme poslat každému zařízení jiný obrázek. Nebo zvýraznit telefonní číslo jen na mobilech. [vrdl.cz/blog/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
+Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Potřebujeme například řešit rychlost načítání nebo měníme pracovní postupy. Mimo jiné potřebujeme poslat každému zařízení jiný obrázek. Nebo zvýraznit telefonní číslo jen na mobilech. [vrdl.cz/b/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
 
 Téhle širší kategorii řešení můžeme říkat adaptivní webdesign. 
 

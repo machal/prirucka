@@ -23,7 +23,7 @@ Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat,
 
 ## Google Analytics
 
-U statistik z Google Analytics se mi líbí, jak jsou po ruce markeťákům. Mají ale velmi zajímavé využití i pro vývojáře, hlavně když se rozšíří o Trackomatic a Technical Performace Dashboard.  [vrdl.cz/prirucka/google-analytics-vyvojari](http://www.vzhurudolu.cz/prirucka/google-analytics-vyvojari)
+U statistik z Google Analytics se mi líbí, jak jsou po ruce markeťákům. Mají ale velmi zajímavé využití i pro vývojáře, hlavně když se rozšíří o Trackomatic a Technical Performace Dashboard.  [vrdl.cz/p/google-analytics-vyvojari](http://www.vzhurudolu.cz/prirucka/google-analytics-vyvojari)
 
 Na přehledy o rychlosti webu se mrkněte do *Chování > Rychlost > Přehled*. Je potřeba měřit pomocí aktuální verze: Universal Analytics. Analytics ukazují *Časování stránek (Page Timings)*, ale napříč různými kontexty, jako jsou prohlížeče nebo regiony. 
 
@@ -91,7 +91,7 @@ Vše podstatné je v záložce Network:
 4. Modrá je událost *DOMContentLoaded*. Ta je spuštěná ve chvíli kdy bylo HTML načteno a rozparsováno. Červená událost *Load* se spustí, jakmile prohlížeč stáhl úplně vše, včetně obrázků. 
 
 <div class="web-only" markdown="1">
-Na Vzhůru dolů jsem už psal i o dalších praktických tipech pro DevTools. [vrdl.cz/blog/41-devtools-tipy](http://www.vzhurudolu.cz/blog/41-devtools-tipyblog/41-devtools-tipy).
+Na Vzhůru dolů jsem už psal i o dalších praktických tipech pro DevTools. [vrdl.cz/b/41-devtools-tipy](http://www.vzhurudolu.cz/blog/41-devtools-tipyblog/41-devtools-tipy).
 </div>
 
 <p class="video">

@@ -68,7 +68,7 @@ npm install <nazev-pluginu> --save-dev
 
 Všimněte si, že už neinstalujeme globálně – bez přepínače `-g`. Ano, Grunt pluginy nebo třeba Bower balíčky instalujeme ke konkrétnímu projektu. Zároveň je chceme uložit do konfiguračních souborů balíčkovacího systému (`packages.json`).
 
-Pro inspiraci: Moje tipy na Grunt pluginy. [vrdl.cz/prirucka/grunt-pluginy](http://www.vzhurudolu.cz/prirucka/grunt-pluginy) 
+Pro inspiraci: Moje tipy na Grunt pluginy. [vrdl.cz/p/grunt-pluginy](http://www.vzhurudolu.cz/prirucka/grunt-pluginy) 
 
 Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciální péči. Například tyto dva:
 

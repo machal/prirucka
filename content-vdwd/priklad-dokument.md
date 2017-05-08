@@ -65,13 +65,13 @@ body {
 }
 ```
 
-Proměnné asi znáte z CSS preprocesorů. Ty jsou pro větší projekty dost užitečné. Píšu o nich v e-booku „Vzhůru do CSS3“ nebo ve starším textu na Vzhůru dolů. [vrdl.cz/blog/12-css-preprocesory-1](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
+Proměnné asi znáte z CSS preprocesorů. Ty jsou pro větší projekty dost užitečné. Píšu o nich v e-booku „Vzhůru do CSS3“ nebo ve starším textu na Vzhůru dolů. [vrdl.cz/b/12-css-preprocesory-1](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
 
 Jak už víte, v knize se chci obejít bez složitějších technikálií a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově přímou součástí kaskádových stylů. A jde s nimi tropit ještě větší legrace než s těmi z preprocesorů. Třeba číst a měnit je z javascriptového nebo HTML kódu. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
 
 Podpora CSS proměnných ovšem není vůbec špatná. Z aktuálních prohlížečů je nezvládají jenom Internet Explorery. [caniuse.com/css-variables](http://caniuse.com/#feat=css-variables)
 
-Důležité je, že ani v Internet Explorerech se stránka (díky „blbuvzdornosti“ CSS) nerozpadne. Prostě se namísto barev z proměnných použijí barvy výchozí. Texty budou černé, odkazy modré. Vzhledem k rozšířenosti Exploreru verze 11 nám to ale může vadit. Pak doporučuji nasadit automatizované přepočítání proměnných do běžných CSS hodnot. Prohlížeč dostane CSS bez proměnných. Udělejte to pomocí PostCSS. [vrdl.cz/prirucka/postcss](http://www.vzhurudolu.cz/prirucka/postcss)
+Důležité je, že ani v Internet Explorerech se stránka (díky „blbuvzdornosti“ CSS) nerozpadne. Prostě se namísto barev z proměnných použijí barvy výchozí. Texty budou černé, odkazy modré. Vzhledem k rozšířenosti Exploreru verze 11 nám to ale může vadit. Pak doporučuji nasadit automatizované přepočítání proměnných do běžných CSS hodnot. Prohlížeč dostane CSS bez proměnných. Udělejte to pomocí PostCSS. [vrdl.cz/p/postcss](http://www.vzhurudolu.cz/prirucka/postcss)
 
 Konec technické odbočky, pojďme nastavit další vzhled.
 
@@ -137,9 +137,9 @@ Zabývám se tím v `document/document.css`. Tím bychom mohli mít v této fáz
 
 ## Organizace CSS do malých souborů
 
-Často ani profesionální weboví vývojáři moc nehledí na organizaci a způsob psaní CSS kódu. Psaní jakéhokoliv kódu bez jasné štábní kultury ovšem vede ke zbytečným bolehlavům. V knize budeme CSS kód alespoň dělit do malých soběstačných souborů, na které se pomocí zavináčového pravidla `@import` odkazuji z hlavního `style.css`. Tvrdím, že je to přehlednější a rychlejší než práce s jedním velkým souborem. Na blogu mám o tomto způsobu dělení článek. [vrdl.cz/blog/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
+Často ani profesionální weboví vývojáři moc nehledí na organizaci a způsob psaní CSS kódu. Psaní jakéhokoliv kódu bez jasné štábní kultury ovšem vede ke zbytečným bolehlavům. V knize budeme CSS kód alespoň dělit do malých soběstačných souborů, na které se pomocí zavináčového pravidla `@import` odkazuji z hlavního `style.css`. Tvrdím, že je to přehlednější a rychlejší než práce s jedním velkým souborem. Na blogu mám o tomto způsobu dělení článek. [vrdl.cz/b/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
 
-Je ale pravda, že z pohledu rychlosti načítání (alespoň na dnes ještě převládajícím protokolu HTTP/1) je vhodnější posílat prohlížeči CSS v jednom souboru. Šetříme tím dotazy na server, které by na mobilních připojeních velmi oddálily moment vykreslení stránky. CSS preprocesory dělají seskupení importovaných souborů do jednoho automaticky. Udělá to pro vás ale i komponenta `postcss-easy-import` z PostCSS. [vrdl.cz/prirucka/postcss](http://www.vzhurudolu.cz/prirucka/postcss)
+Je ale pravda, že z pohledu rychlosti načítání (alespoň na dnes ještě převládajícím protokolu HTTP/1) je vhodnější posílat prohlížeči CSS v jednom souboru. Šetříme tím dotazy na server, které by na mobilních připojeních velmi oddálily moment vykreslení stránky. CSS preprocesory dělají seskupení importovaných souborů do jednoho automaticky. Udělá to pro vás ale i komponenta `postcss-easy-import` z PostCSS. [vrdl.cz/p/postcss](http://www.vzhurudolu.cz/prirucka/postcss)
 
 
 ## Pěkně jsme si zavrstvili, že?

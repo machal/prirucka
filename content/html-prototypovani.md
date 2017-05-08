@@ -180,7 +180,7 @@ Teď jedna odbočka. Podíváme se do blízké budoucnosti návrhu uživatelské
 
 Ještě poznámka k progresivním směrům návrhu uživatelského rozhraní. Systémy atomických designů jsou tvořeny skládáním menších komponent do větších. Návrh a testování se z velké části odehrávají přímo v prohlížeči, v nástroji Pattern Lab, takže z HTML prototypování dělají neoddělitelnou součást pracovního procesu.
 
-O systémech atomického designu jsem psal na Vzhůru dolů. [vrdl.cz/prirucka/pattern-lab](http://www.vzhurudolu.cz/prirucka/pattern-lab)
+O systémech atomického designu jsem psal na Vzhůru dolů. [vrdl.cz/p/pattern-lab](http://www.vzhurudolu.cz/prirucka/pattern-lab)
 
 U systémů atomického designu to bez intenzivní spolupráce designéra s vývojářem nejde. A podobné to je u celého HTML prototypování.
 

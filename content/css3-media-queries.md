@@ -130,7 +130,7 @@ Aplikuje se, pokud má zařízení poměr mezi hardwarovými a CSS pixely alespo
 
 <!-- AdSnippet -->
 
-Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji namísto podmínky pro vlastnost `resolution` v kombinaci s bitmapovými obrázky využívat vektorový formát SVG. U něj vlastnost `resolution` nepotřebujeme, vektorový obrázek se vykreslí na všech poměrech `resolution` stejně dobře. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)
+Poměrů je ale dnes celá řada (1,25; 1,5; 2; 3; 4…). Proto doporučuji namísto podmínky pro vlastnost `resolution` v kombinaci s bitmapovými obrázky využívat vektorový formát SVG. U něj vlastnost `resolution` nepotřebujeme, vektorový obrázek se vykreslí na všech poměrech `resolution` stejně dobře. [vrdl.cz/p/svg](http://www.vzhurudolu.cz/prirucka/svg)
 
 <div class="ebook-only" markdown="1">
 Pokud byste náhodou nerozuměli souvislostem, vzpomeňte si na text o [CSS pixelu](zmeny-css-pixel.md) z první kapitoly.
@@ -201,7 +201,7 @@ Vývojáři si dělí kód podle typu zařízení: Například do `mobile.css`, 
 
 <!-- AdSnippet -->
 
-Jediný rozumný hlavní způsob organizace souborů se styly je podle komponent uživatelského rozhraní, jako jsou navigace, tlačítka atd. Píšete totiž kód pro jednu komponentu, nikoliv pro jeden bod zlomu. Pokud je to pro vás nové, čtěte můj blogpost o organizaci CSS. [vrdl.cz/blog/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
+Jediný rozumný hlavní způsob organizace souborů se styly je podle komponent uživatelského rozhraní, jako jsou navigace, tlačítka atd. Píšete totiž kód pro jednu komponentu, nikoliv pro jeden bod zlomu. Pokud je to pro vás nové, čtěte můj blogpost o organizaci CSS. [vrdl.cz/b/29-organizace-css-2014](http://www.vzhurudolu.cz/blog/29-organizace-css-2014)
 
 
 ## Podpora ve starších prohlížečích: nejlépe s Respond.js
