@@ -26,7 +26,7 @@ Z principu je navíc téměř nemožné detekovat dotyková zařízení. Kdyby s
 
 Výjimečně nastává situace, kdy se nějaká detekce hodí. Třeba když chcete pro desktopové rozhraní otevřít prvek po najetí myši. Pak použijte detekční knihovnu Modernizr, která *myšovitá* umí najít. 
 
-Obecně se tomu ale snažte vyhnout, protože i tato detekce je nespolehlivá. Uvedu dva z mnoha důvodů. Starší dotyková zařízení například jen technicky emulovala klikání myší, takže je jako dotyková detekovat nelze. A pak tu máme hybridní zařízení. Technicky se jich zeptáte: „Umíš doteky?“ „Ano, umím,“ odpoví. Jenže co když uživatel právě ovládá vaše rozhraní myší? Více o tomto problému najdete v dokumentaci Modernizru, hledejte „touchevents“.  https://modernizr.com/docs 
+Obecně se tomu ale snažte vyhnout, protože i tato detekce je nespolehlivá. Uvedu dva z mnoha důvodů. Starší dotyková zařízení například jen technicky emulovala klikání myší, takže je jako dotyková detekovat nelze. A pak tu máme hybridní zařízení. Technicky se jich zeptáte: „Umíš doteky?“ „Ano, umím,“ odpoví. Jenže co když uživatel právě ovládá vaše rozhraní myší? Více o tomto problému najdete v dokumentaci Modernizru, hledejte „touchevents“.  [modernizr.com/docs](https://modernizr.com/docs) 
 
 ## Lidé váš web vidí na více zařízeních
 

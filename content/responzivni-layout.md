@@ -53,7 +53,7 @@ Podívejte se na specifikaci nebo web „Grid by Example“ od Rachel Andrew, kt
 
 ## Layout pomocí zastarávajících metod: `float`, `position:absolute`, `display:table`, `display:inline-block`…
 
-Nic proti nim. Dlouho nám pomáhaly a tímto jim děkujeme. Je ale dobré vědět, že jde o techniky, které pro tvorbu rozvržení nebyly vymyšleny, takže mají mnoho nevýhod. Když můžete použít flexbox, použijte jej. Pokud flexbox použít nemůžete, inspirujte se návrhovými vzory pro layout na webu „This is Responsive“ od Brada Frosta. [bradfrost.github.io/this-is-responsive/patterns.html](https://bradfrost.github.io/this-is-responsive/patterns.html#layout)
+Nic proti nim. Dlouho nám pomáhaly a tímto jim děkujeme. Je ale dobré vědět, že jde o techniky, které pro tvorbu rozvržení nebyly vymyšleny, takže mají mnoho nevýhod. Když můžete použít flexbox, použijte jej. Pokud flexbox použít nemůžete, inspirujte se návrhovými vzory pro layout na webu „This is Responsive“ od Brada Frosta. [vrdl.in/rtpk3](https://bradfrost.github.io/this-is-responsive/patterns.html#layout)
 
 ## Vícesloupcový layout pomocí vlastností `column` 
 

@@ -31,7 +31,7 @@ Taky vás štve problikávání obsahu stránky při jejím načítání? Použi
 
 ## 6) Vkládání zbytečných sdílecích tlačítek
 
-„Lajkovací“ nebo sdílecí tlačítka Facebooku a dalších sítí jsou na webech velmi často k ničemu. Komplikují uživatelská rozhraní a zpomalují načítání. Funkce sdílení je navíc součástí všech mobilních operačních systémů. Zvažte, jestli vám umístění tlačítek stojí za to. Případně zvolte alternativní, úspornější řešení. Například knihovnu Social Likes. [social-likes.js.org/](http://social-likes.js.org)
+„Lajkovací“ nebo sdílecí tlačítka Facebooku a dalších sítí jsou na webech velmi často k ničemu. Komplikují uživatelská rozhraní a zpomalují načítání. Funkce sdílení je navíc součástí všech mobilních operačních systémů. Zvažte, jestli vám umístění tlačítek stojí za to. Případně zvolte alternativní, úspornější řešení. Například knihovnu Social Likes. [social-likes.js.org](http://social-likes.js.org)
 
 ## 7) Fixně pozicované navigační a propagační elementy
 
