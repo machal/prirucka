@@ -52,7 +52,7 @@ Komponenta vyznačkovaná BEMem tedy nese více informací než komponenta vyzna
 
 Princip BEMu není složitý a snadno jej vysvětlíte kolegům a kolegyním vývojářům, kteří s CSS třeba až tak do styku nepřicházejí. Určitě se ale koukají do HTML, kde díky BEMu získají právě více informací o struktuře komponent i bez dokumentace. 
 
-BEM navíc není žádná novinka a mezi kodéry je slušně zavedený. Takže pokud se budete držet zde uvedeného, pro nové kolegy nebude problém se v projekt zorientovat.
+BEM navíc není žádná novinka a mezi kodéry je slušně zavedený. Takže pokud se budete držet zde uvedeného, pro nové kolegy nebude problém se v projektu zorientovat.
 
 ### Je to „ošklivé“?
 
