@@ -6,6 +6,8 @@ CSS objekt je opakující se vizuální komponenta, která může být abstrahov
 
 Cílem OOCSS je kromě zajištění znovupoužitelnosti kódu i zlepšení jeho spravovatelnost a také zmenšení objemu CSS souboru.
 
+<!-- AdSnippet -->
+
 Myslím, že uplatnění objektovích principů na psaní CSS je jistým způsobem nutnost. Alespoň u webů, [psaní javascriptových aplikací](http://www.vzhurudolu.cz/blog/77-css-v-js) totiž může být z pohledu organizace CSS úplně jiná písnička.
 
 Ukažme si nejprve zjednodušený kód komponenty s tlačítkem:
@@ -39,6 +41,8 @@ input.button { … }
 ```
 
 Selektor jako `.comment img` může vypadat neškodně. Jenže co když do komponenty váš kolega, kolegyně nebo třeba klient přes redakční systém přidá do struktury komponenty další obrázek?
+
+<!-- AdSnippet -->
 
 Jediná rozumná výjimka je stylování základní typografické vrstvy projektu. Tam jsou samozřejmě selektory jako `p` nebo `h1` úplně v pořádku. Tam ani OOCSS nevyužijete, objekty jsou určené pro vrstvu komponent uživatelského rozhraní.
 
@@ -109,6 +113,8 @@ Tím jsme ukončili procházku po pěti principech OOCSS. Teď ještě musím od
 ## Objektový kód v neobjektovém designu {#neobjektovy-design}
 
 Netrvejte na komponentovém přístupu, pokud není design komponentově zaměřený.
+
+<!-- AdSnippet -->
 
 CSS je zápis designu. CSS kodér, který používá objektový zápis dělá v designu systém. Jenže ne každý design je vymyšlený systematicky. Dnešní podklady designérů jen vzácně tvoří striktní systém typu [atomického designu](pattern-lab.md). Většinou se pohybují v rozmezí mezi částečně komponentovým přístupem a naprosto nekomponentovým, kdy každé tlačítko vypadá trochu jinak.
 
