@@ -171,7 +171,7 @@ Pojďme se teď podívat na pár praktických tipů, jak web zrychlit. Nemám ta
 Datový objem je evergreen, tam se dá vždycky něco vylepšit. Zaměřím se tady hlavně na obrázky.
 
 - Kde můžete použít vektory, použijte [SVG obrázky](svg.md).
-- Zvažte použití formátu WebP. Je to lépe komprimovaná háhrada JPEG. Umí jej sice jen Chrome a Opera, ale není těžké servírovat WebP i JPEG najednou. Detaily naleznete v článku [o HTML značce Picture](picture.md).
+- Zvažte použití formátu WebP. Je to lépe komprimovaná náhrada JPEG. Umí jej sice jen Chrome a Opera, ale není těžké servírovat WebP i JPEG najednou. Detaily naleznete v článku [o HTML značce Picture](picture.md).
 - Když už využíváte JPEG, zvažte náhradu open source řešení pro zmenšování datového objemu obrázků. Doporučuji například [Kraken.io](https://kraken.io/).
 
 Chcete příklad z praxe? Když kolegové z [VašeČočky.cz](https://www.vasecocky.cz/) nasadili WebP obrázky, ušetřili 30 % datového objemu úvodní stránky (1250 kB → 950 kB) a o pětinu snížili čas pro Page Load (19,8 s → 16,8 s).
