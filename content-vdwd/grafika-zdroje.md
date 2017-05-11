@@ -11,7 +11,7 @@ O výběru písma více píšu [v následujícím textu o příkladu](priklad-ba
 
 ### Systémová písma
 
-Nezapomínejte na ně. I v operačních systémech totiž čekají kvalitní písma, až je využijete. Kvalitních fontů je dnes v operačních systémech dost, ale naprostá většina není široce dostupná. Ve snaze být velmi stručný doporučím hlavně dvě klasiky od Matthewa Cartera, které najdete skoro na každém zařízení.*Georgii* pro čtení a *Verdanu* pro nadpisy a prvky uživatelského rozhraní. 
+Nezapomínejte na ně. I v operačních systémech totiž čekají kvalitní písma, až je využijete. Kvalitních fontů je dnes v operačních systémech dost, ale naprostá většina není široce dostupná. Ve snaze být velmi stručný doporučím hlavně dvě klasiky od Matthewa Cartera, které najdete skoro na každém zařízení – *Georgii* pro čtení a *Verdanu* pro nadpisy a prvky uživatelského rozhraní. 
 
 ### Google Fonts
 

@@ -102,7 +102,7 @@ Jasně, vnímáte mě dobře. Typografii mám za jeden ze zásadních stavebníc
 * *Kniha „On Web Typography“*  
 Skvělá učebnice typografie od Jasona Santa Maria. [vrdl.in/76nb2](https://abookapart.com/products/on-web-typography)
 * *Přednáška „Praktická typografie pro webové kodéry“*  
-Dana Srb se hezky rozpovídal na jedné z akcí Frontendisti.cz. [youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
+Dan Srb se hezky rozpovídal na jedné z akcí Frontendisti.cz. [youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
 * *Online kniha „The Elements of Typographic Style Applied to the Web“*  
 Bible od Roberta Bringhursta a spoluautorů. [webtypography.net](http://webtypography.net/toc/)
 

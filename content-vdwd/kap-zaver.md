@@ -18,9 +18,9 @@ I když jsem udělal vše pro to, abych se chybám vyhnul, nezbývá než se sm�
 Na Twitteru nebo Facebooku můžete použít hashtag „#VzhuruDoWebdesignu“.
 
 
-## E-book „Vzhůru do CSS3“
+## Můj první e-book: „Vzhůru do CSS3“
 
-Technické znalosti o webové kodéřině v jednom e-booku: nástroje jako NPM nebo Grunt a nové CSS3 vlastnosti, od kulatých rohů po flexbox. [vzhurudolu.cz/ebook](http://www.vzhurudolu.cz/ebook)
+Získáte v něm hlubší technické znalosti o webové kodéřině: nástroje jako NPM nebo Grunt a nové CSS3 vlastnosti, od kulatých rohů po flexbox. Oba e-booky koncipuji tak, aby se doplňovaly. [vzhurudolu.cz/ebook](http://www.vzhurudolu.cz/ebook)
 
 
 ## Kam dál?
