@@ -99,7 +99,7 @@ Zpřehledňují nám nejen kód samotný, ale i commity do repozitáře. [O orga
 Na protokolu HTTP/1 bude obvykle výhodnější importované CSS opět slučovat. Mohou pomoci [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) nebo [PostCSS](postcss.md). Na [HTTP/2](http-2.md) potřeba slučování souborů do jednoho už tak moc neplatí.
 
 
-## 5) Objekt, element, modifikátor {#objekt-element-modifikator}
+## 5) Princip prefixování: objekt, element, modifikátor {#objekt-element-modifikator}
 
 Máme tři typy prvků:
 
@@ -110,6 +110,87 @@ Máme tři typy prvků:
 Pro někoho už tohle patří do [metodiky BEM](bem.md). Já si ji ale vykládám jako pravidla pro způsob zápisu tříd. 
 
 Tím jsme ukončili procházku po pěti principech OOCSS. Teď ještě musím odbočit ke spolupráci kodérů s vývojáři. Někdy totiž není přísné uplnatnění principů OOCSS možné už z principu. Z principu designu.
+
+
+## OOCSS v praxi {#praxe}
+
+Ukážu čtyři možnosti, jak v CSS napsat kód pro přihlašovací tlačítko. Jen ta poslední je v pořádku. Předpokládejme, že jde o komponentu, která nějak výchází ze základního tlačítka. To v CSS vypadá následovně:
+
+```css
+.button {
+  text-align: center;
+  padding: .5em 1em;
+}
+```
+
+Další předpoklad je, že přihlašovací tlačítko používat na různých místech projektu. Pak chci využít objektové CSS.
+
+### Špatně: závislý na kontejneru
+
+V HTML by vypadalo takto:
+
+```html
+<form class="login-form">
+  <button class="button"></button>
+</form>  
+```  
+
+V CSS se mi pak, jak už jsem psal, vytváří závislot na konkrétním kontejneru a tato varianta tlačítka je tedy nepřenositelná. Proto je nesprávná.
+
+```css
+.login-form .button { … }
+```
+
+### Špatně: bez prefixování
+
+HTML:
+
+```html
+<button class="button login"></button>
+```
+
+Vymanili jsme se tedy ze závislosti na kontejneru. Prima. Jenže… Člověku, který HTML čte, nebude jasné, co vlastně `login` znamená. 
+
+Je to nový objekt? Je to modifikátor původního objektu `button`? Je to nějaká globální helper třída? Pak je obtížné z HTML vyvodit, jak komponentu používat nebo ve kterém souboru najít kód komponenty.
+
+
+### Špatně: přesun zátěže do CSS
+
+HTML:
+
+```html
+<button class="button-login"></button>
+```
+
+V CSS pak kromě původního `.button` budu mít ještě kód pro přihlašovací verzi tlačítka:
+
+```css
+.button-login {
+  text-align: center;
+  padding: .5em 1em;
+  background: blue;
+  color: white;
+}
+```
+
+Jak vidíte, je to prakticky totožný kód, který jen přidává dvě nové vlastnosti. Problém je v tom, že vám CSS kód neúměrně a zbytečně bobtná. 
+
+### Správně: pomocí modifikátoru
+
+HTML:
+
+```html
+<button class="button button-login"></button>
+```
+
+Z uvedeného kódu díky prefixování snadno poznáme, že jde o komponentu `button` s modifikací.  V CSS u modifikace jen přidáme kód, který nemá původní objekt:
+
+```css
+.button-login {
+  background: blue;
+  color: white;
+}
+```
 
 
 ## Objektový kód v neobjektovém designu {#neobjektovy-design}
