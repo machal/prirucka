@@ -103,6 +103,8 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-robinem-pokornym-o-css-v-j
 
 Vkládání HTML tagů dovniř textu pomocí speciálních symbolů, tedy `&lt;meta&gt;`, nikoliv `<meta>`. Opět hlavně kvůli možným XHTML chybám v ePub formátu.
 
+(Poznámka, tohle se od VDWD1.1 bude řešit replacnutím při zpracování kódu. Na blogu se to totiž zobrazuje špatně - ve formátu `&lt;meta&gt;`.)
+
 ### Zobrazení jen na webu
 
 Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování textu odstraněno.

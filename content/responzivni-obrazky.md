@@ -2,8 +2,8 @@
 
 V responzivním designu máme na výběr poměrně hodně řešení možných problémů s obrázky. 
 
-<div class="web-only" markdown="1">
-  *Text najdete také v e-booku [Vzhůru do (responzivního) webdesignu](http://www.vzhurudolu.cz/ebook-responzivni).* 
+<div class="web-only font-size-08em" markdown="1">
+  → *Text najdete také v e-booku [Vzhůru do (responzivního) webdesignu](http://www.vzhurudolu.cz/ebook-responzivni).* 
 </div>
 
 Pojďme si nejprve udělat mapu těch problémů:
@@ -11,7 +11,7 @@ Pojďme si nejprve udělat mapu těch problémů:
 - *Rychlost načítání*   
   Velký obrázek pro počítač je zbytečné posílat do mobilu. Datový objem je jeden z největších problémů bránících rychlému načtení.
 - *Retina displeje*  
-  Pokud má displej dvojnásobnou a vyšší hustotu hardwarových pixelů, bude tam obyčejná bitmapa vypadat špatně. Znáte to z textu o [CSS pixelu](zmeny-css-pixel.md).
+  Pokud má displej dvojnásobnou a vyšší hustotu hardwarových pixelů, bude tam obyčejná bitmapa vypadat špatně. <span class="ebook-only">Znáte to z textu o <a href="zmeny-css-pixel.md">CSS pixelu</a>.</span><span class="web-only">Znáte to z textu o <a href="css-pixel.md">CSS pixelu</a>.</span>
 - *Art direction*  
   Občas chceme na různá zařízení poslat různé výřezy obrazovky. Celou fotku na počítač a výřez obličeje na mobil například.
 - *Velikost okna*  
