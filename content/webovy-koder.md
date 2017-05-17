@@ -32,6 +32,10 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * Teorie: [outline](http://html5doctor.com/outlines/) (osnova) dokumentu; rozdíl HTML4, XHTML, HTML5.
 * Formuláře: [HTML4 formuláře](http://www.jakpsatweb.cz/html/formulare.html).
 * **[nové] **HTML5 formuláře: použitelné HTML5 [typy](http://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/) a [atributy](http://www.zdrojak.cz/clanky/formulare-v-html5-a-nove-atributy/) (`email`, `tel`, `url`, `placeholder`); [`&lt;input required&gt;`](http://jecas.cz/required) a HTML5 validace v prohlížeči. ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
+
+
+<!-- AdSnippet -->
+
 * SEO: osnova dokumentu, `&lt;title&gt;`, `&lt;meta description…&gt;`.
 * **[nové] **Sémantické metaznačky: [Facebook OpenGraph](http://davidwalsh.name/facebook-meta-tags); Google Schema.org a [Rich Snippets](http://www.vzhurudolu.cz/prirucka/rich-snippets); Twitter Cards; [favicon a touchicon](favicon.md). ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * **[nové] **[Audio a video](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video): HTML5 formáty audia a videa, které vyžadují aktuální prohlížeče, případně Flash.
@@ -118,7 +122,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * **[nové] **Frontend frameworky: Bootstrap ([školení](http://www.vzhurudolu.cz/kurzy/bootstrap)), Foundation
 * **[nové] **Efektivita v Photoshopu: [CSSHat](https://csshat.com/), Enigma…
 
-
+<!-- AdSnippet -->
 
 #### Verzování
 

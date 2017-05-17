@@ -12,6 +12,8 @@ Sekční tagy v HTML5 to se mnou nemají lehké. Před čtyřmi lety jsem se na�
 - Závislost na Javascriptu v Internet Exploreru 8. Abyste totiž s HTML5 tagy mohli v IE8 a starších pracovat v CSS, museli jste přidat kousek skriptu. A když skript selhal, stránka se nehezky rozbila. 
 - …a celkově jsou tak nějak k ničemu. Kromě přehlednosti HTML kódu nic nepřidávají. Vyhledavače a jiné stroje je nijak nezpracovávají.
 
+<!-- AdSnippet -->
+
 Jenže doba se změnila a kunratické proti-sekčně-tagové hnutí vychladlo.  
 
 
@@ -32,8 +34,6 @@ Spíše se ale obrátím k autoritě W3C.org, která dneska už [vyloženě ří
 > První pravidlo použití ARIA zní: Pokud můžete použít nativní element, který má požadovaný význam nebo chování už v sobě, prostě ho použijte.
 
 Vypadá to, že jsem se mýlil a HTML5 tagy se pro vyznačování oblastí stránky ujaly. Jednou tedy může nastat situace, že čtečka nebo jiný stroj implementuje význam oblasti stránky jen přes HTML5 element a nikoliv WAI ARIA oblast.
-
-<!-- AdSnippet -->
 
 Proto **doporučuji používat obě varianty**: HTML5 tag kvůli dopředné kompatibilitě a k němu WAI-ARIA atribut kvůli kompatibilitě zpětné, dnes hlavně kvůli Internet Exploreru 11. Pojďme se teď podívat na všechny oblasti, které byste pomocí tagů nebo atributů měli ve stránce vyznačovat.
 
@@ -116,6 +116,8 @@ Opět jen jako [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#application) obla
 ### `&lt;h1&gt;` až `&lt;h6&gt;`
 
 [HTML5](https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements): Nadpisy a tvorba struktury stránky. Znáte je, vím, ale sem patří hlavně proto, že jde pořád o jediný způsob tvorby strukturované osnovy dokumentu. Tvorba struktury pomocí HTML5 elementů `&lt;section&gt;`, jak bylo dříve zamýšleno, [se neujala](http://www.vzhurudolu.cz/blog/25-vice-h1). Alespoň v něčem jsem měl pravdu.
+
+<!-- AdSnippet -->
 
 Uživatelé čteček NVDA and JAWS mohou použít klávesu „1“ pro přímý skok na element `&lt;h1&gt;`.
 

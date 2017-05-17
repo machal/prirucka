@@ -205,6 +205,8 @@ Tolik stručně. Problematika přikládání skriptů do stránky je ale netrivi
 
 HTTP/2 je nová, rychlejší verze protokolu. Je zpětně kompatibilní, takže s ní nemají problémy ani starší prohlížeče. A všechny moderní ji už umí.
 
+<!-- AdSnippet -->
+
 Už jen pouhé zapnutí HTTP/2 na serveru vám pravděpodobně web alespoň trochu zrychlí. Obraťte se na svůj hosting nebo serverové administrátory.
 
 Jen pozor, pravděpodobně bude po přechodu potřebné poupravit i způsob servírování frontendových prvků stránky. Více naleznete v mém textu [o HTTP/2](http-2.md).
