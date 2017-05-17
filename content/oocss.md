@@ -8,7 +8,7 @@ Cílem OOCSS je kromě zajištění znovupoužitelnosti kódu i zlepšení jeho 
 
 <!-- AdSnippet -->
 
-Myslím, že uplatnění objektovích principů na psaní CSS je jistým způsobem nutnost. Alespoň u webů, [psaní javascriptových aplikací](http://www.vzhurudolu.cz/blog/77-css-v-js) totiž může být z pohledu organizace CSS úplně jiná písnička.
+Myslím, že uplatnění objektových principů na psaní CSS je jistým způsobem nutnost. Alespoň u webů, [psaní javascriptových aplikací](http://www.vzhurudolu.cz/blog/77-css-v-js) totiž může být z pohledu organizace CSS úplně jiná písnička.
 
 Ukažme si nejprve zjednodušený kód komponenty s tlačítkem:
 
@@ -40,16 +40,16 @@ input.button { … }
 .comment img { … }
 ```
 
-Selektor jako `.comment img` může vypadat neškodně. Jenže co když do komponenty váš kolega, kolegyně nebo třeba klient přes redakční systém přidá do struktury komponenty další obrázek?
+Selektor jako `.comment img` může vypadat neškodně. Jenže co když třeba do komponenty váš kolega, kolegyně nebo třeba klient přes redakční systém přidá do struktury komponenty další obrázek? 
 
 <!-- AdSnippet -->
 
-Jediná rozumná výjimka je stylování základní typografické vrstvy projektu. Tam jsou samozřejmě selektory jako `p` nebo `h1` úplně v pořádku. Tam ani OOCSS nevyužijete, objekty jsou určené pro vrstvu komponent uživatelského rozhraní.
+Jediná rozumná výjimka je stylování základní typografické vrstvy projektu. Tam jsou samozřejmě selektory jako `p` nebo `h1` úplně v pořádku. V této vrstvě kódu ani OOCSS nevyužijete, objekty jsou určené pro vrstvu komponent uživatelského rozhraní.
 
 
 ## 2) Nezávislost obsahu na kontejneru {#obsah-na-kontejneru}
 
-Do CSS selektorů nikdy nepromítáme strukturu HTML. I ta se totiž  může změnit:
+Do CSS selektorů nikdy nepromítáme strukturu HTML nebo přesněji stromu DOM. I ta se totiž  může změnit:
 
 ```css
 /* Špatně: */
@@ -60,7 +60,7 @@ Do CSS selektorů nikdy nepromítáme strukturu HTML. I ta se totiž  může zm�
 .button-login { … }
 ```
 
-Komponenta `.button` s modifikátorem `.button-login` je totiž snadněji přenositelná do jiné struktury HTML než komponenta v kontejneru (`.button.button-login`). U komponenty v kontejneru opět platí, že úpravu struktury HTML budete muset promítat do CSS.
+Komponenta `.button` s modifikátorem `.button-login` je totiž snadněji přenositelná do jiné struktury HTML než komponenta v kontejneru (`.login-form .button`). U komponenty v kontejneru opět platí, že úpravu struktury HTML budete muset promítat do CSS.
 
 
 ## 3) Co nejnižší specifičnost {#specificnost}
@@ -71,14 +71,16 @@ Klazule `!important` je víceméně také zapovězená. Tu si necháváme pro de
 
 Kvůli zachování nízké specifičnosti se také snažíme co nejméně používat následující:
 
-- selektorů potomka (v CSS nepíšeme `.button .button-icon`, jen `.button-icon`)
-- kombinované selektory (v CSS nepíšeme `.button.button-primary`, jen `.button-primary`)
+- selektorů potomka  
+`.button .button-icon → .button-icon`
+- kombinované selektory  
+`.button.button-primary → .button-primary`
 
 Více o specifičnosti v CSS: 
 
-- [W3.org specifikace](https://www.w3.org/TR/css3-selectors/#specificity)
 - [Lidsky popsáno na MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 - [Kalkulačka specifičnosti na specificity.keegan.st](http://specificity.keegan.st/).
+- [W3.org specifikace](https://www.w3.org/TR/css3-selectors/#specificity)
 
 
 ## 4) Vývoj zaměřený na komponenty, znovupoužitelnost {#komponenty}
@@ -118,8 +120,6 @@ Netrvejte na komponentovém přístupu, pokud není design komponentově zaměř
 
 CSS je zápis designu. CSS kodér, který používá objektový zápis dělá v designu systém. Jenže ne každý design je vymyšlený systematicky. Dnešní podklady designérů jen vzácně tvoří striktní systém typu [atomického designu](pattern-lab.md). Většinou se pohybují v rozmezí mezi částečně komponentovým přístupem a naprosto nekomponentovým, kdy každé tlačítko vypadá trochu jinak.
 
-Milí kodéři, nesnažte se proto aplikovat přísné objektové přístupy tam, kde to není z principu možné. Obvykle naštěstí můžete většinu principů OOCSS využít i tam, kde designéři na znovupoužitelnost designu nemysleli. 
-
-Široce použitelné jsou hlavně principy nezávislosti vzhledu na struktuře, obsahu na kontejneru a zachování nízké specificity.
+Milí kodéři, nesnažte se proto aplikovat přísné objektové přístupy tam, kde to není z principu možné. Obvykle ale můžete naštěstí alespoň základy principů OOCSS využít i tam, kde designéři na znovupoužitelnost designu nemysleli. Široce použitelné jsou hlavně principy nezávislosti vzhledu na struktuře, obsahu na kontejneru a zachování nízké specifičnosti.
 
 
