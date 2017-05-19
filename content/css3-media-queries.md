@@ -36,7 +36,7 @@ V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), co�
 
 - extra small (šířka okna do `767px`)
 - small (768–991)
-- medium (768–991)
+- medium (992–1199)
 - large (1200 a více)
 
 Pro konkrétní projekty samozřejmě nebudou tyto konkrétní hodnoty použitelné. Body zlomu je vždy lepší definovat podle obsahu konkrétních komponent než takto centrálně. Body zlomu Boostrapu berte jen jako ilustraci pojmu.
