@@ -152,7 +152,7 @@ Ještě v jazyce našeho kmene:
   * 49% šířka obrázku
 ```
 
-Takže celý zápis tagu `&lt;img&gt;` bude vypadat takto:
+Takže celý zápis tagu `<img>` bude vypadat takto:
 
 ```html
 <img src="small_600.png"
@@ -182,10 +182,14 @@ Doplňte i atribut `height`, který vylepší vykreslování stránky tím, že 
 
 Nedivím se samozřejmě žádným námitkám vůči estetice a zdánlivě zbytečné složitosti autorské práce s responzivními obrázky. Moje první reakce byly stejné. Když si ale zopakujeme, že informace z CSS prohlížeči v momentě parsování HTML nijak nepomohou, asi bychom došli k řešení stejnému nebo velmi podobnému. Pokud bychom jej tedy chtěli vymýšlet znovu, což nikomu nedoporučuji.
 
-V textu o [responzivních obrázcích](responzivni-obrazky.md) jsem zmiňoval i další alternativy. `&lt;img srcset sizes&gt;` ale považuji za výchozí řešení. Ta ostatní se hodí pro konkrétní a méně časté scénáře. 
+V textu o [responzivních obrázcích](responzivni-obrazky.md) jsem zmiňoval i další alternativy. `<img srcset sizes>` ale považuji za výchozí řešení. Ta ostatní se hodí pro konkrétní a méně časté scénáře. 
 
 <div class="ebook-only" markdown="1">
   Pojďme si rozpitvat jednu z metod pro specifické situace – novou značku `&lt;picture&gt;`.
+</div>
+
+<div class="web-only" markdown="1">
+  Podívejte se také na další možnosti jak zvládnout obrázky v responzivním designu: [Kompletní průvodce obrázky v responzivním designu](responzivni-obrazky.md).
 </div>
 
 
