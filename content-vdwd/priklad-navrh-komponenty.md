@@ -37,7 +37,7 @@ Zpět ke skicám. Já ze sebe dostal šest možností, co vy?
 </figure> 
 
 1. *Výpis pod sebe*  
-Velmi jednoduchý z pohledu ovládání uživateli. V kontextu dalších prvků stránky je ovšem obvykle nepoužitelný. Na malých i velkých displejích odsunuje další informace, jako je cena nebo dostupnost velikostí. Vzpomeňte si také, jak jsem v kapitole [o principech návrhu rohraní](principy-ui.md) bojoval proti otravně dlouhým stránkám na mobilech. Ne, tahle varianta pro náš skvělý e-shop nebude.
+Velmi jednoduchý z pohledu ovládání uživateli. V kontextu dalších prvků stránky je ovšem obvykle nepoužitelný. Na malých i velkých displejích odsunuje další informace, jako je cena nebo dostupnost velikostí. Vzpomeňte si také, jak jsem v kapitole [o principech návrhu rozhraní](principy-ui.md) bojoval proti otravně dlouhým stránkám na mobilech. Ne, tahle varianta pro náš skvělý e-shop nebude.
 2. *Středně velký náhled s navigací pomocí karuselu*  
 Vypadá dobře. Šetří totiž prostor na výšku, ale zároveň zobrazuje jednu fotku dostatečně velkou. Na velkých displejích je možné tuto i další varianty doplnit o rozkliknutí do ještě větší verze pomocí lightboxu. 
 3. *Středně velký náhled v karuselu*  

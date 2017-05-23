@@ -12,7 +12,7 @@ Tak bych jedním slovem popsal svůj proces návrhu a implementace webových roz
 Na obrázku vidíte opravdu jen nejzákladnější dělení. Dokument obsahuje mnoho dalších vrstev, což si ukážeme ke konci kapitoly. A komponenty? I ty můžeme dělit do mnoha hierarchií, bylo by to ale už nad rámec téhle knížky.
 
 Musíme se ale shodnout na vrstvení. To totiž považuji za jednu ze základních (a skvělých!)
-vlastností média, kterému říkáme web. Je to podstata fungování webových technologií a ty dávají mantinely designu. Stavění od základny je fajn ještě z jednoho důvodu – umožní nám rozfázovat proces návrhu tak, abychom se nezabývali příliš mnoha problémy najednou. A abychom nezačínali od konce.
+vlastností média, kterému říkáme web. Je to podstata fungování webových technologií a ty dávají mantinely designu. Stavění od dokumentové vrstvy je fajn ještě z jednoho důvodu – umožní nám rozfázovat proces návrhu tak, abychom se nezabývali příliš mnoha problémy najednou. A abychom nezačínali od konce.
 
 
 ## Web je vrstvený z podstaty

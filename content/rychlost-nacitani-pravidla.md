@@ -100,8 +100,6 @@ Každé přesměrování zpomalí dojem z načítání stránky, proto je pokud 
 
 Ve dnech, kdy toto píšu, jsou weby běžící na HTTP/2 ještě stále vzácné. Pro weby servírované pomocí HTTP/1 je proto k uvedeným základním radám potřeba přidat ještě jednu: Minimalizujte počet dotazů na server. Týká se všech externích prvků webu – souborů s CSS a JS kódem, obrázků, webfontů a dalších.
 
-Pro weby, servírované pomocí HTTP/1 je proto k uvedeným základním radám potřeba přidat ještě jednu: minimalizujte počet dotazů na server. Týká se všech externích prvků webu: soubory s CSS a JS kódem, obrázků, webfontů a dalších.
-
 - CSS a JS lze spojovat do balíčků. Najděte si nástroje pro vaši platformu. [vrdl.in/7zcde](https://www.google.com/search?q=css+js+concat)
 - Obrázky zase můžete spojovat do takzvaných „sprajtů“. [jecas.cz/css-sprite](http://jecas.cz/css-sprite)
 - Menší obrázky můžete vložit přímo do HTML nebo CSS pomocí takzvaného „data URI“. [jecas.cz/data-uri](http://jecas.cz/data-uri)

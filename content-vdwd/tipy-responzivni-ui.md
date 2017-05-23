@@ -15,7 +15,7 @@ Na mobilní obrazovce máme k dispozici málo místa, proto tam nechejte jen to 
 
 ## 2) Nepodlehněte ikonománii
 
-Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaným ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. 
+Mnoho grafiků šetří místo v mobilních rozhraních nadměrným používaním ikon. Ale jak už bylo mnohokrát prokázáno, většina ikon má velmi nejednoznačný význam. 
 
 Podívejme se na web EquaBank.cz na dalším obrázku a udělejme si kvíz: Co má na starosti první, druhá a třetí modrá ikona? První vede do mapové aplikace nebo je to seznam poboček. Najdu tam i bankomaty? Druhá je… to vážně netuším. Třetí budou asi kontakty. Nebo jen telefon? Bude můj telefon hned volat na zákaznickou linku? 
 

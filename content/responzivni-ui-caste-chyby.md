@@ -27,7 +27,7 @@ Prohlížeč Safari na operačním systému iOS verze 10 a novějších už naš
 
 ## 5) Neošetřené načítání webfontů
 
-Taky vás štve problikávání obsahu stránky při jejím načítání? Použití webfontů je v pořádku, ale ale vývojář musí mít vše pod kontrolou. Různé prohlížeče totiž načítají webfonty různě. Je potřeba si tedy vybrat způsob načítání, který vyhovuje konkrétnímu webu. Pro převzetí kontroly nad načítáním doporučuji malou knihovnu FontFaceObserver. [fontfaceobserver.com](https://github.com/bramstein/fontfaceobserver)
+Taky vás štve problikávání obsahu stránky při jejím načítání? Použití webfontů je v pořádku, ale vývojář musí mít vše pod kontrolou. Různé prohlížeče totiž načítají webfonty různě. Je potřeba si tedy vybrat způsob načítání, který vyhovuje konkrétnímu webu. Pro převzetí kontroly nad načítáním doporučuji malou knihovnu FontFaceObserver. [fontfaceobserver.com](https://github.com/bramstein/fontfaceobserver)
 
 ## 6) Vkládání zbytečných sdílecích tlačítek
 

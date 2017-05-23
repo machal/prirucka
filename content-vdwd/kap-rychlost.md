@@ -8,7 +8,7 @@ Lidé od webu se jako zapomnětliví kuchaři chovají v jednom kuse. Na surovin
 - Nervózně čekají na obsah od klienta.
 - Začnou si lámat hlavu nad přístupností pro slabozraké.
 - Přikážou kodérovi připravit mobilní verzi.
-- Po spuštěním webu se vrhnou na „optimalizaci“ rychlosti načtení.
+- Po spuštění webu se vrhnou na „optimalizaci“ rychlosti načtení.
 
 Jenže přátelé, neexistuje nic jako tlačítka s nápisy typu „zapnout SEO“ nebo „zapnout rychlost“ na hlavě webařky nebo webaře.
 

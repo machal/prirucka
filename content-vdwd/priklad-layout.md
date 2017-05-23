@@ -73,9 +73,9 @@ Tohle rozvržení ale nechceme na mobilech. Proto ještě musíme vymyslet bod z
 
 Responzivní webdesignér zvětšuje a zmenšuje okno prohlížeče stejně často jako kuchař míchá vařečkou. Po přípravě layoutu tedy pomocí zmenšování okna hledáme minimální šířku, ve které layout dobře funguje. Díváme se, zda se nám nebortí důležité komponenty, ale posuzujeme i délku typografické řádky. Z [kapitoly o typografii](typografie.md) víme, že by měla být mezi 45 a 75 znaky. Tady hlídáme délku u jediného delšího textu na stránce: popisu produktu.
 
-Minimální šířka okna, ve které layout funguje, je `800px`. Hodnota je však velmi blízko `768px`, což je menší rozlišení iPadů. Jak jsem psal [v kapitole o principech](4-principy-ui.md) návrhu responzivního rozhraní, snažím se o konzistenci rozhraní a obecně dost nerad těmto tabletům servíruji výrazně layout v režimu na výšku než v poloze na šířku. Je to jedna z mála výjimek, kdy na můj výběr bodu zlomu mají vliv rozlišení zařízení. Většinou je ale lepší dávat přednost výběru podle obsahu komponenty nebo stránky. To už také víte [z kapitoly o tipech k Media Queries](media-queries-tipy.md).
+Minimální šířka okna, ve které layout funguje, je `800px`. Hodnota je však velmi blízko `768px`, což je menší rozlišení iPadů. Jak jsem psal [v kapitole o principech](4-principy-ui.md) návrhu responzivního rozhraní, snažím se o konzistenci rozhraní a obecně dost nerad těmto tabletům servíruji výrazně jiný layout v režimu na výšku než v poloze na šířku. Je to jedna z mála výjimek, kdy na můj výběr bodu zlomu mají vliv rozlišení zařízení. Většinou je ale lepší dávat přednost výběru podle obsahu komponenty nebo stránky. To už také víte [z kapitoly o tipech k Media Queries](media-queries-tipy.md).
 
-Tady tedy testuji, zda bych nedokázal layout udělat tak, aby fungoval už od 768 pixelů. A layout by tam fungoval měl.
+Tady tedy testuji, zda bych nedokázal layout udělat tak, aby fungoval už od 768 pixelů. A fungovat by tam měl.
 
 V kapitole o Media Queries také píšu, že je lepší breakpointy nastavovat v jednotkám `em`. Do těch si naši `px` hodnotu musíme přepočíst:
 

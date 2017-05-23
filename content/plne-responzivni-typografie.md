@@ -2,7 +2,7 @@
 
 Měnit velikost stránky i jednotlivých komponent už umíme díky předchozí podkapitole a díky jednotkám `em` a `rem`. Při změně velikosti okna se to děje *skokově*.
 
-Co kdybychom ale stránku ale stránku a komponenty chtěli zvětšovat *plynule*? Prostě elasticky se změnou šířky nebo výšky okna.
+Co kdybychom ale stránku a komponenty chtěli zvětšovat *plynule*? Prostě elasticky se změnou šířky nebo výšky okna.
 
 K tomu si přizveme dříve už také zmíněné jednotky viewportu, hlavně `vw` (setina šířky okna) a `vh` (setina výšky okna).
 

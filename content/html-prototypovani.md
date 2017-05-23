@@ -172,7 +172,7 @@ Na svých projektech HTML prototypování používám, kdykoliv je to možné. M
 
 <!-- AdSnippet -->
 
-V případě agenturní práce pro mnoho klientů doporučuji HTML prototypy dělat tam, kde zkoušíte nové věci nebo ke je rizikovost návrhu vysoká.
+V případě agenturní práce pro mnoho klientů doporučuji HTML prototypy dělat tam, kde zkoušíte nové věci nebo je rizikovost návrhu vysoká.
 
 Teď jedna odbočka. Podíváme se do blízké budoucnosti návrhu uživatelského rozhraní. Na atomické systémy designu, kde weby netvoříme po stránkách, ale po jednotlivých komponentách. 
 
