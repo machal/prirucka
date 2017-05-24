@@ -10,5 +10,5 @@ Za poskytnutí materiálů k produktům ukázkového e-shopu děkuji panu Jarosl
 
 Foto autora je od [Jana Forejta](https://about.me/janforejt). 
 
-Připomínkami k verzi 1.1 přispěli všechny tyto dobré duše: Michal Horáček, Jakub Honíšek a Lubomír Merta.  
+Připomínkami k verzi 1.1 přispěli všechny tyto dobré duše: Michal Horáček, Jakub Honíšek, Ondřej Konečný, Lubomír Merta a Vojtěch Sláma.  
 

@@ -91,7 +91,7 @@ Vše podstatné je v záložce Network:
 4. Modrá je událost *DOMContentLoaded*. Ta je spuštěná ve chvíli kdy bylo HTML načteno a rozparsováno. Červená událost *Load* se spustí, jakmile prohlížeč stáhl úplně vše, včetně obrázků. 
 
 <div class="web-only" markdown="1">
-Na Vzhůru dolů jsem už psal i o dalších praktických tipech pro DevTools. [vrdl.cz/b/41-devtools-tipy](http://www.vzhurudolu.cz/blog/41-devtools-tipyblog/41-devtools-tipy).
+Na Vzhůru dolů jsem už psal i o dalších praktických tipech pro DevTools. [vrdl.cz/b/41-devtools-tipy](http://www.vzhurudolu.cz/blog/41-devtools-tipy).
 </div>
 
 <p class="video">

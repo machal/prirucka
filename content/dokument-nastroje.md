@@ -9,7 +9,7 @@ Je to má sada nástrojů pro nastavení typografické základny každého webu.
 
 ## Blanka HTML: výchozí šablona prázdného dokumentu
 
-Je to má výchozí šablona pro dokument. Když ji zjednoduším, aby se vešla sem do knížky, vypadá následovně. Neprve se podíváme na definici typu dokumentu:
+Je to má výchozí šablona pro dokument. Když ji zjednoduším, aby se vešla sem do knížky, vypadá následovně. Nejprve se podíváme na definici typu dokumentu:
 
 ```html
 <!doctype html>

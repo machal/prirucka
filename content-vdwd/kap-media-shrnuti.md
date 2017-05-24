@@ -1,7 +1,7 @@
 # Zapamatujte si
 
 - Trik s `padding-bottom` umožní zachovat poměr stran jakéhokoliv elementu.  
-- Grafiku, kteoru lze vyjádřit vektorem, vkládejte do webu v SVG.
+- Grafiku, kterou lze vyjádřit vektorem, vkládejte do webu v SVG.
 - `&lt;img src=""&gt;` vám pro bitmapové obrázky stačit nebude.
 - Zvažte využití formátu WebP.
 - Do atributu `srcset` značky `&lt;img&gt;` vkládejte seznam předpřipravených variant obrázků. Do `sizes` patří popis breakpointů layoutu webu.
