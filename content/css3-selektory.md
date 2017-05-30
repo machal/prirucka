@@ -16,7 +16,7 @@ IE8+
 IE9+
 ----
 
-* `span:empty` – všechny `&lt;span&gt;` elementy, které neobsahují dceřiný element ani text.
+* `span:empty` – všechny `<span>` elementy, které neobsahují dceřiný element ani text.
 * `div:target` – vybírá část zvýrazněnou přes kotvu (`/adresa#kotva`).
 * `input:enabled`, `input:disabled` – formulářové pole, kam není možné zapisovat.
 * `input:checked` – vybírá aktivovaný input typu `checkbox`, `radio` nebo `option`.

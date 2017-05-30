@@ -15,7 +15,7 @@ Proč nenapsat rovnou `width: 14.2857`? Ze dvou důvodů:
 
 ## 2) Responzivní obrázky
 
-V parametru `sizes` značky `&lt;img&gt;` se bez `calc()` nedá obejít. Zkuste si bez téhle prima funkce spočítat šířku obrázku uvnitř layoutu, který v responzivním layoutu splňuje následující podmínky:
+V parametru `sizes` značky `<img>` se bez `calc()` nedá obejít. Zkuste si bez téhle prima funkce spočítat šířku obrázku uvnitř layoutu, který v responzivním layoutu splňuje následující podmínky:
 
 1. Na větších displejích zabírá polovinu šířky layoutu stránky. Ale bez vnějších okrajů layoutu (10 pixelů) a samotné stránky (15 pixelů).
 2. Na menších zabírá celou šířku viewportu bez vnějších okrajů stránky (15 pixelů).

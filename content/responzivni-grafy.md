@@ -23,7 +23,7 @@ Nějaké responzivní možnosti má i tahle populární grafová knihovna. Spí�
 
 ## Chart.js
 
-Velmi populární knihovna, ale grafy vykresluje do prvku `&lt;canvas&gt;`, takže s responzivitou to bude horší. Canvas totiž není elegantně vektorový jako SVG. Šířkou a výškou se ale grafy přizpůsobovat umí. [chartjs.org](http://www.chartjs.org/)
+Velmi populární knihovna, ale grafy vykresluje do prvku `<canvas>`, takže s responzivitou to bude horší. Canvas totiž není elegantně vektorový jako SVG. Šířkou a výškou se ale grafy přizpůsobovat umí. [chartjs.org](http://www.chartjs.org/)
 
 <div class="ebook-only" markdown="1">
   Tím jsme se dostali k poslednímu textu kapitoly o mediálním obsahu ve stránkách. Pojďme se vrátit k příkladu. ForestKid.cz, vzpomínáte?

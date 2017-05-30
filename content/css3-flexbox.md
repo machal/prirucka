@@ -98,7 +98,7 @@ Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
 }
 ```
 
-Všechny `&lt;li&gt;` se tady stávají flex položkami.
+Všechny `<li>` se tady stávají flex položkami.
 
 Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
 

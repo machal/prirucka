@@ -14,7 +14,7 @@ Zapamatujte si hlavně následující šestici.
 
 | Jednotka | Jak počítá rozměr? |
 | -------- | ----------------- | 
-| `rem` | relativně k velikosti písma na prvku `&lt;html&gt;` |
+| `rem` | relativně k velikosti písma na prvku `<html>` |
 | `em`  | relativně k velikosti písma na elementu |
 | `px`  | pixel (lépe ale přepočtený nebo také CSS pixel) |
 | `%`   | procenta relativně k rodičovskému elementu |

@@ -25,7 +25,7 @@ Pokud teď v hlavě nemáte kapacitu na všechny, naučte se zatím `navigation`
 Hlavně pro potřeby psaní webových aplikací se kromě orientačních bodů hodí znát i další typy ARIA atributů:
 
 - [Označení widgetů](https://www.w3.org/TR/wai-aria/roles#widget_roles_header) – přidání významu komponentám uživatelského rozhraní. Například  `role="alert"` pro časově omezené upozornění uživateli. Nebo `tab` a `tabpanel` pro vyznačení záložkové navigace uvnitř stránky a `menu`, `menuitem`, `menubar` pro dropdown navigaci.
-- [Označení struktury dokumentu](https://www.w3.org/TR/wai-aria/roles#document_structure_roles_header) – například `role="article"` pro označení atomické části hlavního obsahu. Může to být článek v seznamu článků, položka ve výpisu produktů nebo třeba `role="presentation"` pro popis elementu, který je použitý jen pro prezentaci obsahu a nechceme zachovat jeho sémantický význam. Jak se vám líbí třeba `&lt;table role="presentation"&gt;`? Krásné, že?
+- [Označení struktury dokumentu](https://www.w3.org/TR/wai-aria/roles#document_structure_roles_header) – například `role="article"` pro označení atomické části hlavního obsahu. Může to být článek v seznamu článků, položka ve výpisu produktů nebo třeba `role="presentation"` pro popis elementu, který je použitý jen pro prezentaci obsahu a nechceme zachovat jeho sémantický význam. Jak se vám líbí třeba `<table role="presentation">`? Krásné, že?
 
 Ani tím ale možnosti WAI-ARIA nekončí. Orientační body patří do kategorie rolí. Dalšími kategoriemi ještě jsou [stavy a vlastnosti](https://www.w3.org/TR/wai-aria/states_and_properties). Možností jejich využití v aplikacích je hodně. Příkladem budiž [hlášení počtu zbývajících znaků](https://www.youtube.com/watch?v=MOx9cX_nQMk) v textovém poli formuláře. Pokud vás to zajímá více, [doporučím seriál Radka Pavlíčka na Zdrojáku](https://www.zdrojak.cz/serialy/pristupnost-dynamickych-webovych-aplikaci/). 
 
@@ -67,7 +67,7 @@ Chcete další praktické ukázky bez Bootstrapu? [Tady](http://heydonworks.com/
 
 ## Můžu místo `role` použít HTML5 tagy?
 
-Co třeba `&lt;nav&gt;` namísto `&lt;div role="navigation"&gt;`? To bych nedělal. U HTML5 tagů [pořád neexistuje plná podpora](http://www.html5accessibility.com/) jejich sémantického propojení s asistivními technologiemi. WAI-ARIA je na tom podle mých informací výrazně lépe. Je ale možné zápisy kombinovat – `&lt;nav role="navigation"&gt;`. Sémantika pomocí WAI-ARIA a zpřehlednění pomocí HTML5 tagu? OK, jinak ale ty [HTML5 značky zase taková výhra nejsou](http://kratce.vzhurudolu.cz/post/38371151431/html5-elementy).  Jinými slovy – HTML5 tagy jsou volitelné, WAI-ARIA povinná.
+Co třeba `<nav>` namísto `<div role="navigation">`? To bych nedělal. U HTML5 tagů [pořád neexistuje plná podpora](http://www.html5accessibility.com/) jejich sémantického propojení s asistivními technologiemi. WAI-ARIA je na tom podle mých informací výrazně lépe. Je ale možné zápisy kombinovat – `<nav role="navigation">`. Sémantika pomocí WAI-ARIA a zpřehlednění pomocí HTML5 tagu? OK, jinak ale ty [HTML5 značky zase taková výhra nejsou](http://kratce.vzhurudolu.cz/post/38371151431/html5-elementy).  Jinými slovy – HTML5 tagy jsou volitelné, WAI-ARIA povinná.
 
 ## Jak testovat?
 

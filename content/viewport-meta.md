@@ -69,7 +69,7 @@ Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logič
 
 ## Meta viewport raději moc nenastavujte Javascriptem 
 
-Hodí se to, jen když nemáte přístup do `&lt;head&gt;`. Teoreticky jde Javascriptem meta značka pro viewport i měnit, ale nedělejte to. Je to náročné na překreslování stránky. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
+Hodí se to, jen když nemáte přístup do `<head>`. Teoreticky jde Javascriptem meta značka pro viewport i měnit, ale nedělejte to. Je to náročné na překreslování stránky. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
 
 
 ## Odstranění 300ms prodlevy 

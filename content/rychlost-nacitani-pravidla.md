@@ -19,7 +19,7 @@ Snižte datovou velikost obrázků, zvolte pro ně vhodné formáty.
 2. Cokoliv, co lze vyjádřit vektorem (logotypy, ikony, grafy…), uložte do formátu SVG. [vrdl.cz/p/svg](http://www.vzhurudolu.cz/prirucka/svg)
 3. Pro dekorace používejte CSS, nikoliv obrázky. 
 4. Používejte kompresi pokročilými nástroji, jako je Kraken.io, JPEGmini.com nebo Guetzli. 
-5. Zvažte použití formátu WebP namísto JPEG. I když jej umí jen Chrome a Opera, vyplatí se, protože je datově výrazně úspornější (jeho detekci se naučíte v textu [o značce `&lt;picture&gt;`](picture.md)) z následující kapitoly.
+5. Zvažte použití formátu WebP namísto JPEG. I když jej umí jen Chrome a Opera, vyplatí se, protože je datově výrazně úspornější (jeho detekci se naučíte v textu [o značce `<picture>`](picture.md)) z následující kapitoly.
 
 Další rady od Google na téma obrázků jsou zde: [vrdl.in/od06q](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
 
@@ -56,8 +56,8 @@ Prohlížeče nedokážou stránku zobrazit, dokud nestáhnou a nezpracují veš
 
 ### Javascript
 
-- Používejte parametry `async` a `defer`. Prohlížeči říkají, že na jejich stažení nemusí čekat a stránku může zobrazit už bez nich. Externí JS soubory bez těchto parametrů nedávejte do hlavičky (`&lt;head&gt;`) nebo těla (`&lt;html&gt;`) stránky. [jecas.cz/async-defer](http://jecas.cz/async-defer)
-- Rozdělte si Javascript do skupin. *Kritický* kód jako polyfilly nebo detekční skripty vkládejte přímo do HTML. Externí *nezbytně blokující* vložte pomocí `&lt;script src=""&gt;` rovnou do stránky. *Externí neblokující* pak vkládejte pomocí `&lt;script src="" async&gt;`.
+- Používejte parametry `async` a `defer`. Prohlížeči říkají, že na jejich stažení nemusí čekat a stránku může zobrazit už bez nich. Externí JS soubory bez těchto parametrů nedávejte do hlavičky (`<head>`) nebo těla (`<html>`) stránky. [jecas.cz/async-defer](http://jecas.cz/async-defer)
+- Rozdělte si Javascript do skupin. *Kritický* kód jako polyfilly nebo detekční skripty vkládejte přímo do HTML. Externí *nezbytně blokující* vložte pomocí `<script src="">` rovnou do stránky. *Externí neblokující* pak vkládejte pomocí `<script src="" async>`.
 - Pozor na vkládané Javascripty třetích stran. Příkladem budiž měřící kódy nebo A/B testovací nástroje. Pokud je zrovna nevyužíváte, vypínejte je. Zkuste přepsat jejich kód, bývá často velmi špatně optimalizovaný: [vrdl.in/3ym50](https://www.souki.cz/jak-si-zabit-eshop-mericim-kodem)
 
 Další rady od Google: [vrdl.in/afzxg](https://developers.google.com/speed/docs/insights/BlockingJS)

@@ -57,8 +57,8 @@ Mrkněte se na tuhle tabulku. Je inspirovaná knihou Ilji Grigorika, High Perfor
 |:-------------|----------------------:|-----------:|
 | 2G/EDGE      | 0,1–0,4               | 300–1000   |
 | 3G           | 0,5–5                 | 100–500    |
-| 4G/LTE       | 1–50                  | &lt; 100   |
-| WiFi         | 1–50                  | &lt; 10    |
+| 4G/LTE       | 1–50                  | < 100   |
+| WiFi         | 1–50                  | < 10    |
 
 <figcaption markdown="1">    
   *Latence je průměrné zpoždění mezi požadavkem serveru a odpovědí prohlížeče. Doručení každého ze souborů, které web potřebuje, latence zdrží*

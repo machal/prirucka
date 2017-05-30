@@ -2,7 +2,7 @@
 
 [Grunticon](http://www.grunticon.com/) je sada nástrojů pro maximalizaci zpětné kompatibility [SVG](svg.md). 
 
-Nabízí [přímé vložení vektorového obrázku](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do značky `&lt;svg&gt;` pomocí Javascriptu. To vám umožní ovlivňovat části SVG pomocí stylů a skriptů podobně jako to děláte u jiných části stránky. Jako bonus od Grunticon dostanete kompatibilitu až do Internet Exploreru ve verzi 6. Pamatujete si na něj ještě?
+Nabízí [přímé vložení vektorového obrázku](/prirucka/svg#moznost-primeho-vlozeni-jako-code-lt-svg-gt-code) do značky `<svg>` pomocí Javascriptu. To vám umožní ovlivňovat části SVG pomocí stylů a skriptů podobně jako to děláte u jiných části stránky. Jako bonus od Grunticon dostanete kompatibilitu až do Internet Exploreru ve verzi 6. Pamatujete si na něj ještě?
 
 V „balení“ najdete [Grunt](grunt.md) úlohu pro zpracování sady SVG obrázků a javascriptovou knihovnu pro ošetření fallbacků. Úloha vygeneruje PNG verze obrázků pro staré prohlížeče a tři verze souborů se styly. Kouskem skriptu se pak rozhoduje, který typ fallbacku se použije.
 
@@ -59,7 +59,7 @@ V definovaných adresářích by se měly objevit nové soubory. V `dest` adres�
 
 ## 3. Úprava HTML
 
-Ikonu vložíte jednoduše třídou ze stylu co vygeneruje Grunticon – v demonstračním příkladu je to třeba `.icon-bootstrap`. Pokud stojíte o vložení do DOMu pomocí značky `&lt;svg&gt;`, stačí použít parametr `data-grunticon-embed`:
+Ikonu vložíte jednoduše třídou ze stylu co vygeneruje Grunticon – v demonstračním příkladu je to třeba `.icon-bootstrap`. Pokud stojíte o vložení do DOMu pomocí značky `<svg>`, stačí použít parametr `data-grunticon-embed`:
 
 ```html
 <div class="icon icon-bootstrap" 
@@ -143,7 +143,7 @@ Vkládané SVG se samo o sobě nepřizpůsobuje rodičovskému kontejneru, proto
 
 ## Velikost alternativních PNG obrázků
 
-Šířka a výška fallback obrázků se bere z hodnot, které máte ve zdrojových obrázcích u značky `&lt;svg&gt;`.  Buď si je tedy nastavte podle fixní šířky layoutu ve starších prohlížečích, nebo se bez nich v SVG zdrojích obejděte a velikosti PNG si nastavte v Grunt úloze parametry `defaultWidth` a `defaultHeight`.
+Šířka a výška fallback obrázků se bere z hodnot, které máte ve zdrojových obrázcích u značky `<svg>`.  Buď si je tedy nastavte podle fixní šířky layoutu ve starších prohlížečích, nebo se bez nich v SVG zdrojích obejděte a velikosti PNG si nastavte v Grunt úloze parametry `defaultWidth` a `defaultHeight`.
 
 A to je vše, přátelé. Více najdete [v demu na Githubu](https://github.com/machal/demo-grunticon).
 

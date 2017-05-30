@@ -47,7 +47,7 @@ Pokud v navigaci zvládnete mít jen nízké jednotky položek, můžete je  zob
 
 Navigace je v HTML někde dole. Na malých displejích je umístěná v patičce. Na velkých displejích se pomocí stylů umístí do hlavičky. Implementačně je *skok do patičky* asi nejméně náročná volba. Uživatelsky ovšem dle mého názoru málo přívětivá. Umístění navigace je takto nekonzistentní napříč zařízeními. Dnes už bych *skok* na běžné weby nepoužil. Snad jen v opravdu jednoduchých případech. [vrdl.in/9em7w](http://responsivenavigation.net/examples/clean-grid/index.html)
 
-## Konverze do `&lt;select&gt;`
+## Konverze do `<select>`
 
 Navigaci pomocí Javascriptu na mobilech proměníte v nativní seznam položek. Výhodou je opět jednoduchá implementace. Nevýhodou horší uživatelská přívětivost seznamu položek na mobilních zařízeních. Ukázka je na CSS Tricks. [vrdl.in/navsel](https://css-tricks.com/convert-menu-to-dropdown/)
 

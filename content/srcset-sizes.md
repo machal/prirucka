@@ -123,7 +123,7 @@ Pojďme si nejprve vizuálně přiblížit layout pro další ukázku:
 </figcaption> 
 </figure>
 
-Do `800px` breakpointu je to jednoduché: Obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna, a tak musíme odečíst výchozí `margin` u `&lt;body&gt;`, který mají prohlížeče nastavený na `8px`:
+Do `800px` breakpointu je to jednoduché: Obrázek zabírá celou šířku layoutu. Nikoliv ovšem šířku okna, a tak musíme odečíst výchozí `margin` u `<body>`, který mají prohlížeče nastavený na `8px`:
 
 ```css
 calc(100vw - 2 * 8px)
@@ -185,7 +185,7 @@ Nedivím se samozřejmě žádným námitkám vůči estetice a zdánlivě zbyte
 V textu o [responzivních obrázcích](responzivni-obrazky.md) jsem zmiňoval i další alternativy. `<img srcset sizes>` ale považuji za výchozí řešení. Ta ostatní se hodí pro konkrétní a méně časté scénáře. 
 
 <div class="ebook-only" markdown="1">
-  Pojďme si rozpitvat jednu z metod pro specifické situace – novou značku `&lt;picture&gt;`.
+  Pojďme si rozpitvat jednu z metod pro specifické situace – novou značku `<picture>`.
 </div>
 
 <div class="web-only" markdown="1">

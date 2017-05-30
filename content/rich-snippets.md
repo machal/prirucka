@@ -20,35 +20,35 @@ Protože jsme ale na kodérském webu, ukážeme si jak lze strukturované úryv
 Pojďme si zápis demonstrovat na schématu [Event](http://schema.org/Event), které může označovat sportovní nebo kulturní události. Nebo taky [školení](http://www.vzhurudolu.cz/kurzy):
 
 <pre><code class="language-html">
-&lt;div <strong>itemscope itemtype=&quot;http://schema.org/Event&quot;</strong>&gt;
-    &lt;h3 <strong>itemprop=&quot;name&quot;</strong>&gt;
-        &lt;a href=&quot;/kurzy/webovy-frontend&quot; <strong>itemprop=&quot;url&quot;</strong>&gt;
+<div <strong>itemscope itemtype=&quot;http://schema.org/Event&quot;</strong>>
+    <h3 <strong>itemprop=&quot;name&quot;</strong>>
+        <a href=&quot;/kurzy/webovy-frontend&quot; <strong>itemprop=&quot;url&quot;</strong>>
             Dne&scaron;n&iacute; webov&yacute; frontend
-        &lt;/a&gt;
-    &lt;/h3&gt;
-    &lt;p <strong>itemprop=&quot;description&quot;</strong>&gt;
+        </a>
+    </h3>
+    <p <strong>itemprop=&quot;description&quot;</strong>>
         &bdquo;Frontend update&rdquo; kurz, kter&yacute; citliv&#x11b; mixuje novinky a osv&#x11b;d&#x10d;en&eacute; postupy webov&eacute;ho frontendu. Ty nejd&#x16f;le&#x17e;it&#x11b;j&scaron;&iacute; &#x10d;&aacute;sti si sami&amp;nbsp;vyzkou&scaron;&iacute;te.
-    &lt;/p&gt;
-    &lt;p <strong>itemprop=&quot;startDate&quot; content=&quot;2015-01-22T10:00&quot;</strong>&gt;
+    </p>
+    <p <strong>itemprop=&quot;startDate&quot; content=&quot;2015-01-22T10:00&quot;</strong>>
         22. 1.
-    &lt;/p&gt;
-    &lt;p <strong>itemprop=&quot;location&quot; itemscope itemtype=&quot;http://schema.org/Place&quot;</strong>&gt;
+    </p>
+    <p <strong>itemprop=&quot;location&quot; itemscope itemtype=&quot;http://schema.org/Place&quot;</strong>>
         KC Greenpoint, Praha
-    &lt;/p&gt;
-    &lt;p <strong>itemscope itemtype=&quot;http://schema.org/Offer&quot;</strong>&gt;
-        &lt;span <strong>itemprop=&quot;price&quot; content=&quot;3900.00&quot;</strong>&gt;
+    </p>
+    <p <strong>itemscope itemtype=&quot;http://schema.org/Offer&quot;</strong>>
+        <span <strong>itemprop=&quot;price&quot; content=&quot;3900.00&quot;</strong>>
             3 900 K&#x10d;
-            <strong>&lt;meta itemprop=&quot;priceCurrency&quot; content=&quot;CZK&quot;&gt;</strong>
-        &lt;/span&gt;
-    &lt;/p&gt;
-&lt;/div&gt;
+            <strong><meta itemprop=&quot;priceCurrency&quot; content=&quot;CZK&quot;></strong>
+        </span>
+    </p>
+</div>
 </code></pre>
 
 Mikrodata jsou v ukázce zvýrazněna. Všimněte si několika věcí:
 
 * `startDate` a jakékoliv datumy je potřeba stroji poskytnout v ISO formátu.
 * Schémata je do sebe možné zanořovat – viz zde vložené typy obsahu `Place` a `Offer`.
-* Pro vypisování informací, které nejsou v uživatelském obsahu vidět, Google doporučuje používat `&lt;meta&gt;` značku – viz `priceCurrency`.
+* Pro vypisování informací, které nejsou v uživatelském obsahu vidět, Google doporučuje používat `<meta>` značku – viz `priceCurrency`.
 
 ## Otestování a zobrazování v Google
 

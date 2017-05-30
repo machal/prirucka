@@ -34,7 +34,7 @@ To bude snadné. Křivku hvězdy si ode mě klidně zkopírujte:
 </svg>
 ```
 
-Tohle ale na stránce zobrazit nechceme. Jde o `&lt;def&gt;`, definici pro pozdější použití. Prohlížeče tuhle část správně nezobrazí, jenže vykreslí prázdný prostor, potvory. Proto je lepší tuhle část schovat:
+Tohle ale na stránce zobrazit nechceme. Jde o `<def>`, definici pro pozdější použití. Prohlížeče tuhle část správně nezobrazí, jenže vykreslí prázdný prostor, potvory. Proto je lepší tuhle část schovat:
 
 ```css
 .star-source {
@@ -58,7 +58,7 @@ Teď jdeme na varianty vzhledu hvězdy.
 
 ## 2) Prázdnou hvězdu uděláme snadno
 
-Použijeme (`&lt;use&gt;`) dříve nadefinovaný tvar. Na jeho název se odkážeme pomocí `xlink:href`. Funguje to podobně jako třeba `include()` v PHP.
+Použijeme (`<use>`) dříve nadefinovaný tvar. Na jeho název se odkážeme pomocí `xlink:href`. Funguje to podobně jako třeba `include()` v PHP.
 
 ```svg
 <use xlink:href="#icon-star" class="star--empty">
@@ -105,7 +105,7 @@ Jsme zodpovědní kodéři a proto ještě vytvoříme náhradní řešení pro 
 
 ## 4) Textový fallback
 
-Od článku [o náhradních řešeních pro SVG](svg-fallbacky.md) mohutně oslavuji SVG značku `&lt;desc&gt;`. Tady tomu nebude jinak. Díky ní vytvoříme krásné alternativní řešení pro slepecké čtečky a staré prohlížeče, co SVG nezvládají:
+Od článku [o náhradních řešeních pro SVG](svg-fallbacky.md) mohutně oslavuji SVG značku `<desc>`. Tady tomu nebude jinak. Díky ní vytvoříme krásné alternativní řešení pro slepecké čtečky a staré prohlížeče, co SVG nezvládají:
 
 
 ```svg

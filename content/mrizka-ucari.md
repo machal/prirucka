@@ -12,7 +12,7 @@ Mřížku účaří jsme opět zdědili z tištěných médií. Hlavně z novin,
 
 ## Responzivní webové prostředí účaří nepřeje
 
-Z tisku také víme, že text vysázený v mřížce účaří se lépe čte. Ale na webu je těžké toho dosáhnout: máme tady různé fonty, různě vykreslované na různých platformách. Co víc, do textu na webu vkládáme média typu obrázků a videí. A k tomu ještě externí dokumenty vkládané jako SVG nebo do `&lt;iframe&gt;`. 
+Z tisku také víme, že text vysázený v mřížce účaří se lépe čte. Ale na webu je těžké toho dosáhnout: máme tady různé fonty, různě vykreslované na různých platformách. Co víc, do textu na webu vkládáme média typu obrázků a videí. A k tomu ještě externí dokumenty vkládané jako SVG nebo do `<iframe>`. 
 
 Na webu používáme pružné rozvržení stránky. A jako na potvoru se web zobrazuje v různě velkých obrazovkách. 
 
