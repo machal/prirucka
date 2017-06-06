@@ -9,6 +9,8 @@ Na BEM můžeme nahlížet dvěma způsoby:
 
 BEM jako plnohodnotnou metodiku nepoužívám, častěji volím vlastní způsoby organizace. Myslím, že to je docela častý scénář. I vy můžete chtít použít BEM v kombinaci s jinou metodikou: [SMACSS](smacss.md), ITCSS nebo jinými. 
 
+<!-- AdSnippet -->
+
 V konvenci pro pojmenovávání tříd je myslím největší přínos BEMu. Na první pohled to může vypadat na hodně stručný článek, ale i tak je o čem psát. Však hned uvidíte.
 
 
@@ -39,7 +41,7 @@ Pokud v projektu máte dejme tomu přes dvacet komponent a CSS kód píšete obj
 <nav class="nav nav-secondary nav-visible">
 ```
 
-Členové týmu se mohou ptát, zda `nav-secondary` a `nav-visible` modifikují původní komponentu nebo jde o samostatnou komponentu. Je samostatná `nav-secondary` nebo i `nav-visible`? Mají ji hledat v souboru `nav.css` nebo `nav-secondary.css`?
+Když budete číst tento kód, můžete se ptát, zda `nav-secondary` a `nav-visible` modifikují původní komponentu nebo jde o samostatný objekt. Je samostatná `nav-secondary` nebo i `nav-visible`? Máte ji hledat v souboru `nav.css` nebo `nav-secondary.css`?
 
 S BEMem je vše jasné:
 
@@ -49,7 +51,9 @@ S BEMem je vše jasné:
 
 `nav` je blok, jinak též samostatná komponenta. `nav--secondary` a `nav--visible` jsou její modifikátory. Najdeme je všechny pravděpodobně v souboru `nav.css` nebo s koncovkou podle používaného [preprocesoru](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1).
 
-Komponenta vyznačkovaná BEMem tedy nese více informací než komponenta vyznačkovaná běžným OOCSS. Jak v CSS, tak v HTML. Kód se vám bude snadněji chápat, budete potřebovat méně dokumentace a komentářů. Kód se vám také bude snadněji přenášet v rámci projektu nebo na jiné projekty.
+<!-- AdSnippet -->
+
+Komponenta vyznačkovaná BEMem tedy nese více informací než komponenta vyznačkovaná běžným OOCSS, a to jak v CSS, tak v HTML. Kód se vám bude snadněji chápat, budete potřebovat méně dokumentace a komentářů. Kód se vám také bude snadněji přenášet v rámci projektu nebo na jiné projekty.
 
 
 ### Je to jednoduché a rozšířené
@@ -89,6 +93,8 @@ Poznáte ho podle třídy prefixované názvem bloku a doplněné názvem elemen
 Varianta komponenty. Popisuje vizuální vlastnosti (`.block--small`), stav (`.block--disabled`) nebo chování (`.block--animated-to-left`). Neměla by nést název závislý na vzhledu (`.block--green`). 
 
 V kódu je to třída prefixovaná názvem bloku a doplněná názvem elementu odděleným dvěmi pomlčkami: `.nazev-bloku--nazev-modifikatoru`.
+
+<!-- AdSnippet -->
 
 Možná jste někde narazili na zápis modifikátorů jen pomocí jednoho podržítka (`.block_modifier`). To je „klasická“ BEM syntaxe. [Zdá se](http://stackoverflow.com/a/25213997/889682), že to byl Harry Roberts, kdo ji upravil do podoby dvou spojovníků. Nebo alespoň tuhle variantu zpopularizoval.  
 
@@ -146,9 +152,9 @@ Pak:
 Atribut `role` tady uvádím pro pořádek, abychom nezapomněli [na přístupnost](html5-struktura.md).
 
 
-## Specificita v BEMu {#specificita}
+## Specifičnost selektorů v BEMu {#specificnost}
 
-Protože BEM vychází z OOCSS, cílem je zachovat co nejnižší specificitu (váhu) salektorů. Kód v CSS pak budeme psát takto:
+Protože BEM vychází z OOCSS, cílem je zachovat co nejnižší specifičnost (váhu) salektorů. Kód v CSS pak budeme psát takto:
 
 ```css
 .nav { 
@@ -181,7 +187,7 @@ Selektory typu `.nav.nav--secondary` jsou pak díky prefixování modifikáturu 
 
 Sice bychom si pak mohli v HTML dovolit jednodušší zápis typu `<nav class="nav--secondary">`, ale CSS kód bude složitý a ukrutně špatně spravovatelný. Jednodušší HTML také není výhodou, protože z něj nevidíme co je komponenta a co její modifikátor.
 
-Více informací o specificitě mám v článku [o OOCSS](oocss.md#specificita).
+Více informací o specifičnost mám v článku [o OOCSS](oocss.md#specificnost).
 
 ## Element v modifikátoru {#element-v-modifikatoru}
 
