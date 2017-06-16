@@ -2,9 +2,11 @@
 
 Bower je správce frontend balíčků.
 
-jQuery, Bootstrap, HTML5shiv, Fancybox, jQueryUI, Angular, Normalize.css, Modernizr, Fastclick… weby se skládají z frameworků, knihoven, pluginů. Prostě balíčků. No a [Bower](http://bower.io/) za vás obstará jejich stahování, instalaci, ukládání a taky správu vzájemných závislostí.
+*Upozornění: Bower je od poloviny roku 2017 označen jako „deprecated“, proto jej nedoporučuji používat na nové projekty. Více [na blogu](http://www.vzhurudolu.cz/blog/91-bower-mrtvy).*
 
-![Bower](http://www.vzhurudolu.cz/prirucka-content/schemes/bower.svg)
+<!-- AdSnippet -->
+
+jQuery, Bootstrap, HTML5shiv, Fancybox, jQueryUI, Angular, Normalize.css, Modernizr, Fastclick… weby se skládají z frameworků, knihoven, pluginů. Prostě balíčků. No a [Bower](http://bower.io/) za vás obstará jejich stahování, instalaci, ukládání a taky správu vzájemných závislostí.
 
 ## Instalace balíčků
 
@@ -32,6 +34,8 @@ Obsahy repozitářů obou knihoven se pak uloží do adresáře `bower_component
 
 Sem to všechno Bower ukládá. Adresář obvykle máme v `.gitignore`, abychom do našeho repozitáře necommitovali změny v knihovnách.
 
+<!-- AdSnippet -->
+
 Pro lokální vývoj obvykle natahuji knihovny do HTML kódu přímo z `bower_components/`, ale balíčky pro produkci si kompiluji, minifikuji a všelijak jinak upravuji pomocí [Gruntu](grunt.md).
 
 Pro vás ale samozřejmě může být výhodné jiné workflow. A adresář, kam se budou Bower balíčky ukládat, si můžete přenastavit.
@@ -45,6 +49,8 @@ $ bower update
 ```
 
 Zajistí, aby se mi z veřejných repozitářů stáhly nové verze balíčků. Pokud tedy zrovna `jquery-smooth-scroll` bude v příští verzi potřebovat jinou verzi jQuery, zaktualizuje se mi i ta.
+
+<!-- AdSnippet -->
 
 A ještě se naučíme jeden příkaz:
 
