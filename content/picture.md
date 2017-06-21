@@ -1,4 +1,3 @@
-
 # Nová značka Picture
 
 `<picture>` umožňuje definovat varianty obrázku pro různé stavy v responzivním webdesignu. 
@@ -19,6 +18,8 @@ Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohl�
 V elementech `<source>` uvádím alternativy k výchozímu obrázku, který je v `<img>`. Prohlížeč vezme vždy první vyhovující, takže je nutné alternativy řadit od největšího po nejmenší.
 
 Značka `<picture>` přitom tvoří jen obal, zatímco prvky `<source>` jsou jakési molitanové vycpávky nesoucí informaci o alternativách. Veškeré stylování nebo věšení událostí v Javascriptu je nutné dělat přímo na `<img>` elementu. V každém `<picture>` musí být právě jeden `<img>`.
+
+<!-- AdSnippet -->
 
 Kdy se vám může `<picture>` hodit? Hlavně ve dvou situacích:
 
@@ -50,6 +51,8 @@ Pro okna 1024 pixelů a větší se stáhne a použije obrázek `large_1600.png`
 
 I tady jsem pro vás připravil demo na CodePen. [cdpn.io/e/VYPPQQ](http://codepen.io/machal/pen/VYPPQQ?editors=110) 
 
+<!-- AdSnippet -->
+
 V čem se to liší od `<img srcset sizes>`? Příklad, který uvádím výše, je velmi zjednodušený. Museli byste v něm ještě ošetřit displeje typu Retina, tedy různé hodnoty `device-pixel-ratio`. To máte u `srcset` a `sizes` „v ceně“ řešení: prohlížeč to udělá sám.  Na druhou stranu tady pomocí jakýchkoliv [Media Queries](css3-media-queries.md) určíte sami hranice mezi variantami. V metodě `srcset` vybírá prohlížeč sám podle layoutu nastaveného v `sizes`.
 
 Jinými slovy: Pokud byste se rozhodli používat `<picture>` pro běžné obrázky, byly by vaše Media Queries v nich uvedené dost složité. Kromě šířky okna by musely zohledňovat velikost obrázku v layoutu a také displeje typu Retina. Pojďme se ale zaměřit na ty scénáře, kdy se nová značka opravdu hodí.
@@ -70,6 +73,8 @@ Vybírat obrázky prohlížeče umí i podle formátu. Použijte atribut `type`.
 ```
 
 Prohlížeč, který umí formát WebP a běží v okně velikosti alespoň 1024 pixelů, stáhne a zobrazí soubor `large.webp`. 
+
+<!-- AdSnippet -->
 
 Tímto způsobem je také možné udělat pěkné náhradní řešení pro formát SVG:
 
