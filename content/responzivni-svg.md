@@ -1,14 +1,22 @@
 # Responzivní SVG
 
-Vektorové obrázky jsou fajn. Asi tady není potřeba zahltit vás celou řadou argumentů pro využívání SVG. Ty si případně nastudujte na Vzhůru dolů. [vrdl.cz/p/svg](http://www.vzhurudolu.cz/prirucka/svg)
+<div class="ebook-only" markdown="1">
+  Vektorové obrázky jsou fajn. Asi tady není potřeba zahltit vás celou řadou argumentů pro využívání SVG. Ty si případně nastudujte na Vzhůru dolů. [vrdl.cz/p/svg](http://www.vzhurudolu.cz/prirucka/svg)
 
-Používání SVG pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté: V přizpůsobování šířce layoutu a zachování poměru stran. To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě. 
+  Používání SVG pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté: V přizpůsobování šířce layoutu a zachování poměru stran. To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě.
+</div>
+
+<div class="web-only" markdown="1">
+  Používání [SVG](svg.md) pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté: V přizpůsobování šířce layoutu a zachování poměru stran.
+</div>
+
+<!-- AdSnippet -->
 
 Abychom ale pochopili, proč není dosažení pružnosti SVG jednoduché jako facka, musíme na světlo Boží vytáhnout jednu překvapivou a možná i nepříjemnou pravdu. Nádech… 
 
 SVG není obrázek. 
 
-… výdech! No jasně, SVG je vektorový dokument, který vkládáme do stránky. Právě proto jej do HTML musíme dát nejen ve formě obrázku (`<img>`), ale také jako externí zdroj (`<iframe>`, `<object>`) nebo vektory vykreslit přímo (`<svg>`).
+… výdech! No jasně, SVG je vektorový dokument, který vkládáme do stránky. Právě proto jej do HTML můžeme dát nejen ve formě obrázku (`<img>`), ale také jako externí zdroj (`<iframe>`, `<object>`) nebo vektory vykreslit přímo (`<svg>`).
 
 Bitmapy mají jasně definovanou výšku i šířku. Je proto velmi snadné jejich poměr stran zachovat. Jaká je ale výška nebo poměr stran dokumentu?
 
@@ -40,7 +48,13 @@ V moderních prohlížečích je to v případě dodržení výše uvedeného op
 </p>  
 ```
 
+<div class="ebook-only" markdown="1">
 Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachování poměru stran, stejně jako jsme to udělali u vkládaných elementů [v textu o obrázcích](pruzna-media.md):
+</div>
+
+<div class="web-only" markdown="1">
+Třídu `.svg-container` pak kvůli Explorerům nastylujeme známou metodou pro zachování poměru stran:
+</div>
 
 ```css
 .svg-container {
@@ -106,6 +120,8 @@ Tady už není ani žádné speciální nastavení pro Internet Explorer. Hurá!
 
 Mrkněme se spolu na CodePen. [cdpn.io/e/NbmgPr](http://codepen.io/machal/pen/NbmgPr)
 
+<!-- AdSnippet -->
+
 Tím bychom mohli zajištění pružnosti SVG v responzivním layoutu uzavřít pro nejčastěji používané způsoby vložení. 
 
 Formát je ale možné do stránky vkládat i dalšími, méně používanými způsoby. Jak zajistit pružnost při vložení do `<object>`, `<iframe>`? Poradí vám vrchní odbornice na SVG, Sara Soueidan, v článku „Making SVGs Responsive with CSS“. [vrdl.in/yixth](https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/)
@@ -154,7 +170,13 @@ Co když ale vložíme SVG soubor obsahující Media Queries externě?
 
 Tušíte správně, podmínky v `@media` se pak budou vztahovat k šířce obrázku samotného. [cdnp.io/e/zZKzRe](http://codepen.io/machal/pen/zZKzRe?editors=1100)
 
-Podmínky budou pracovat jako Container Queries, které bychom ve webdesignu potřebovali jako sůl. Ale nemáme je. Zatím tedy jen u externích SVG. Zmíním je ještě [v kapitole o Media Queries](media-queries-tipy.md).
+<div class="ebook-only" markdown="1">
+  Podmínky budou pracovat jako Container Queries, které bychom ve webdesignu potřebovali jako sůl. Ale nemáme je. Zatím tedy jen u externích SVG. Zmíním je ještě [v kapitole o Media Queries](media-queries-tipy.md).
+</div>
+
+<div class="web-only" markdown="1">
+  Podmínky budou pracovat jako [Element Queries](element-queries.md), které bychom ve webdesignu potřebovali jako sůl. Ale nemáme je. Zatím tedy jen u externích SVG. 
+</div>
 
 Tak či tak, mechanismus responzivních SVG má velkou budoucnost: pro ikony, grafy, interaktivní elementy, mapy (!) a další prvky s potřebou měnit hustotu informací nebo formy podle velikosti okna prohlížeče.
 
@@ -162,5 +184,5 @@ Tak či tak, mechanismus responzivních SVG má velkou budoucnost: pro ikony, gr
   A teď už pryč od obrázků a hurá do tabulek a grafů. Slibuji, že to nebude taková nuda, jak to zní.
 </div>
 
-
+<!-- AdSnippet -->
 
