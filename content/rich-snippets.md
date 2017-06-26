@@ -6,8 +6,13 @@ A zároveň samozřejmě jeden z nejsilnějších nástrojů z pohledu HTML kód
 
 ![Rich Snippets dostupné na českém Google](dist/images/original/rich-snippets.jpg)
 
-Jak je z obrázku patrné, v době psaní článku máte [na českém Google](https://www.facebook.com/media/set/?set=a.384585593913.164660.250810683913&type=1) šanci nechat zobrazovat recenze, recepty, události a třeba informaci zda je produkt na skladě.
-[Podle Google](https://support.google.com/webmasters/answer/99170?hl=cs) pak teoreticky ještě lidi, produkty, firmy a organizace, hudbu.
+Jak je z obrázku patrné, máte [na českém Google](https://www.facebook.com/media/set/?set=a.384585593913.164660.250810683913&type=1) šanci nechat zobrazovat recenze, recepty, události a třeba informaci zda je produkt na skladě.
+
+<!-- AdSnippet -->
+
+[Podle Google](https://support.google.com/webmasters/answer/99170?hl=cs) pak teoreticky ještě lidi, produkty, firmy a organizace, hudbu, ale u těch nevím jaký to bude mít vzhled ve výsledcích vyhledávání. 
+
+Chystají se ještě také [výpisy pracovních pozic](https://webmasters.googleblog.com/2017/06/connect-to-job-seekers-with-google.html).
 
 ## Microdata a další způsoby značení
 
@@ -19,40 +24,78 @@ Protože jsme ale na kodérském webu, ukážeme si jak lze strukturované úryv
 
 Pojďme si zápis demonstrovat na schématu [Event](http://schema.org/Event), které může označovat sportovní nebo kulturní události. Nebo taky [školení](http://www.vzhurudolu.cz/kurzy):
 
-<pre><code class="language-html">
-<div <strong>itemscope itemtype=&quot;http://schema.org/Event&quot;</strong>>
-    <h3 <strong>itemprop=&quot;name&quot;</strong>>
-        <a href=&quot;/kurzy/webovy-frontend&quot; <strong>itemprop=&quot;url&quot;</strong>>
-            Dne&scaron;n&iacute; webov&yacute; frontend
-        </a>
-    </h3>
-    <p <strong>itemprop=&quot;description&quot;</strong>>
-        &bdquo;Frontend update&rdquo; kurz, kter&yacute; citliv&#x11b; mixuje novinky a osv&#x11b;d&#x10d;en&eacute; postupy webov&eacute;ho frontendu. Ty nejd&#x16f;le&#x17e;it&#x11b;j&scaron;&iacute; &#x10d;&aacute;sti si sami&amp;nbsp;vyzkou&scaron;&iacute;te.
-    </p>
-    <p <strong>itemprop=&quot;startDate&quot; content=&quot;2015-01-22T10:00&quot;</strong>>
-        22. 1.
-    </p>
-    <p <strong>itemprop=&quot;location&quot; itemscope itemtype=&quot;http://schema.org/Place&quot;</strong>>
-        KC Greenpoint, Praha
-    </p>
-    <p <strong>itemscope itemtype=&quot;http://schema.org/Offer&quot;</strong>>
-        <span <strong>itemprop=&quot;price&quot; content=&quot;3900.00&quot;</strong>>
-            3 900 K&#x10d;
-            <strong><meta itemprop=&quot;priceCurrency&quot; content=&quot;CZK&quot;></strong>
-        </span>
-    </p>
-</div>
+<pre><code>
+&lt;div <strong>itemscope itemtype=&quot;http://schema.org/Event&quot;</strong>&gt;
+  &lt;h3 <strong>itemprop=&quot;name&quot;</strong>&gt;
+    &lt;a href=&quot;/kurzy/webovy-frontend&quot; <strong>itemprop=&quot;url&quot;</strong>&gt;
+          Dne&scaron;n&iacute; webov&yacute; frontend
+      &lt;/a&gt;
+  &lt;/h3&gt;
+  &lt;p <strong>itemprop=&quot;description&quot;</strong>&gt;
+    „Frontend update“ kurz, kter&yacute; citliv&#x11b; mixuje novinky a osv&#x11b;d&#x10d;en&eacute; postupy webov&eacute;ho frontendu. Ty nejd&#x16f;le&#x17e;it&#x11b;j&scaron;&iacute; &#x10d;&aacute;sti si sami&amp;nbsp;vyzkou&scaron;&iacute;te.
+  &lt;/p&gt;
+  &lt;p <strong>itemprop=&quot;startDate&quot; content=&quot;2015-01-22T10:00&quot;</strong>&gt;
+    22. 1.
+  &lt;/p&gt;
+  &lt;p <strong>itemprop=&quot;location&quot; itemscope itemtype=&quot;http://schema.org/Place&quot;</strong>&gt;
+    KC Greenpoint, Praha
+  &lt;/p&gt;
+  &lt;p <strong>itemscope itemtype=&quot;http://schema.org/Offer&quot;</strong>&gt;
+    &lt;span <strong>itemprop=&quot;price&quot; content=&quot;3900.00&quot;</strong>&gt;
+      3 900 K&#x10d;
+      <strong>&lt;meta itemprop=&quot;priceCurrency&quot; content=&quot;CZK&quot;&gt;</strong>
+    &lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
 </code></pre>
 
-Mikrodata jsou v ukázce zvýrazněna. Všimněte si několika věcí:
+Všimněte si několika věcí:
 
 * `startDate` a jakékoliv datumy je potřeba stroji poskytnout v ISO formátu.
 * Schémata je do sebe možné zanořovat – viz zde vložené typy obsahu `Place` a `Offer`.
 * Pro vypisování informací, které nejsou v uživatelském obsahu vidět, Google doporučuje používat `<meta>` značku – viz `priceCurrency`.
 
+<!-- AdSnippet -->
+
+Pokud se vám mikrodata v HTML úplně nelíbí (což bych se vám nedivil), můžete použít JSON-LD: 
+
+```
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "Mistrovský vývoj webů na WordPressu",
+  "description": "Vyvíjet weby na míru s WordPressem může být fajn zážitek. Na našem kurzu proniknete do jeho principů, chytnete jej za správný konec a vytěžíte z něj maximum.",
+  "startDate": "2017-09-14T09:30",
+  "url": "http:\/\/www.vzhurudolu.cz\/kurzy\/wordpress",
+  "location": {
+    "name": "KC Greenpoint",
+    "url": "http://www.kc-greenpoint.cz",
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Praha",
+      "streetAddress": "Dvouletky 529/ 42",
+      "postalCode": "100 00"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "4490",
+    "priceCurrency": "Kč",
+    "url": "http:\/\/www.vzhurudolu.cz\/kurzy\/wordpress"
+  }
+}
+</script>
+```
+
+Data se pak nepletou s vaší HTML strukturou. JSON-LD začal Google v poslední době doporučovat.
+
 ## Otestování a zobrazování v Google
 
 Velmi vám pomůže [Nástroj pro testování strukturovaných dat](http://www.google.com/webmasters/tools/richsnippets).
+
+<!-- AdSnippet -->
 
 I tak je ovšem zobrazování na Google dost ve hvězdách. Kdy a zda se Rich Snippets začnou zobrazovat nemůžete nikomu garantovat, protože Google to nijak negarantuje vám. Někdy se zobrazí za pár dní, někdy to trvá měsíce, někdy se vůbec nedočkáte.
 
