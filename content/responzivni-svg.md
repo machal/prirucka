@@ -48,13 +48,8 @@ V moderních prohlížečích je to v případě dodržení výše uvedeného op
 </p>  
 ```
 
-<div class="ebook-only" markdown="1">
-Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachování poměru stran, stejně jako jsme to udělali u vkládaných elementů [v textu o obrázcích](pruzna-media.md):
-</div>
+Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachování poměru stran, stejně jako to děláme u vkládaných elementů [v textu o obrázcích](pruzna-media.md):
 
-<div class="web-only" markdown="1">
-Třídu `.svg-container` pak kvůli Explorerům nastylujeme známou metodou pro zachování poměru stran:
-</div>
 
 ```css
 .svg-container {
