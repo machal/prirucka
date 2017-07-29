@@ -2,10 +2,6 @@
 
 V responzivním designu máme na výběr poměrně hodně řešení možných problémů s obrázky. 
 
-<div class="web-only font-size-08em" markdown="1">
-  → *Text najdete také v e-booku [Vzhůru do (responzivního) webdesignu](http://www.vzhurudolu.cz/ebook-responzivni).* 
-</div>
-
 Pojďme si nejprve udělat mapu těch problémů:
 
 - *Rychlost načítání*   
@@ -31,14 +27,14 @@ Ukažme si proto kompletní přehled všech možných řešení, jejich výhod a
 
 | Řešení                        | Rychlost | Retina | AD  | Okno | Layout | Vhodné pro |
 |:------------------------------|:--------:|:------:|:---:|:----:|:------:|:----------:|
-| 1. SVG                        |    •     |    •   |  -  |   -  |    -   | vektory    |
+| 1. SVG                        |    ✔     |    ✔   |  -  |   -  |    -   | vektory    |
 | 2. `<img src>`          |    -     |    -   |  -  |   -  |    -   | cokoliv    |
-| 3. `<img src>` 2×       |    -     |    •   |  •  |   -  |    -   | cokoliv    |
-| 4. `<img src>` kompr.   |    •     |    •   |  -  |   -  |    -   | fotky      |
-| 5. `<img src/data-src>` |    -     |    •   |  •  |   •  |    -   | cokoliv    |
-| 6. `<img srcset>`       |    •     |    •   |  -  |   •  |    -   | cokoliv    |
-| 7. `<img srcset sizes>` |    •     |    •   |  -  |   -  |    •   | cokoliv    |
-| 8. `<picture>`          |    •     |    •   |  •  |   •  |    -   | cokoliv    |
+| 3. `<img src>` 2×       |    -     |    ✔   |  ✔  |   -  |    -   | cokoliv    |
+| 4. `<img src>` kompr.   |    ✔     |    ✔   |  -  |   -  |    -   | fotky      |
+| 5. `<img src/data-src>` |    -     |    ✔   |  ✔  |   ✔  |    -   | cokoliv    |
+| 6. `<img srcset>`       |    ✔     |    ✔   |  -  |   ✔  |    -   | cokoliv    |
+| 7. `<img srcset sizes>` |    ✔     |    ✔   |  -  |   -  |    ✔   | cokoliv    |
+| 8. `<picture>`          |    ✔     |    ✔   |  ✔  |   ✔  |    -   | cokoliv    |
 
 </div>
 
