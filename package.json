@@ -10,7 +10,7 @@
   "devDependencies": {
     "grunt": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-imagemin": "^2.0.0",
     "grunt-responsive-images": "^1.10.0",
     "grunt-svg2png": "^0.2.5",
     "jit-grunt": "^0.10.0",
