@@ -1,1 +1,1 @@
-Verze 1.0, květen 2017
+Verze 1.1, srpen 2017
