@@ -2,6 +2,8 @@
 
 Chuck Norris toho zvládne hodně, třeba i rozbrečí cibuli, ale tabulky na webu by mu daly zabrat. No vážně. Však čtěte.
 
+<!-- AdSnippet -->
+
 Zejména ty rozsáhlejší mají nehezkou vlastnost, že na menších displejích jsou rozměrově poněkud nezkrotitelné. Pojďme si představit všechny způsoby, jak lze s tabulkami v dnešním webdesignu zacházet, a vy si jistě vyberete. Tedy pokud nejste Chuck Norris. Ten si vybral, ještě než jsem začal psát.
 
 
@@ -27,6 +29,8 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
 Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také pro tabulky vkládané přes redakční systémy, u kterých nevíte, jak složité budou. Anebo když prostě chcete ušetřit čas na vývoj.
+
+<!-- AdSnippet -->
 
 Než si ukážeme propracovanější způsoby práce s responzivními tabulkami, dovolte mi jeden tip na nástroj.
 
@@ -126,6 +130,14 @@ Z tabulky prostě na mobilu uděláte zjednodušený graf. Doporučuji nasazovat
 
 Schovávání obsahu na konkrétních zařízeních je dost nebezpečné. Jak už jsem argumentoval dříve, stejní lidé se na vaše rozhraní dívají z různých zařízení. Proč by určitý obsah měli na jednom zařízení vidět a jiném ne?
 
+<div class="web-only" markdown="1">
+Více o tom píšu v kapitole o častých chybách při návrhu responzivních uživatelských rozhraní knížky [„Vzhůru do (responzivního) webdesignu“](/ebook-responzivni), ze které jste právě dočetli ukázku.
+</div>
+
+<div class="ebook-only" markdown="1">
 Připomenu to znovu [v textu o častých chybách](tipy-responzivni-ui.md) responzivních webů v rámci sedmé kapitoly.
+</div>
+
+<!-- AdSnippet -->
 
 
