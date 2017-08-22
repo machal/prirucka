@@ -22,6 +22,8 @@ Ethan Marcotte psal článek (a pak ještě knihu) v době, kdy byl nebohý inte
 
 Pružný layout naproti tomu mění rozměry podle velikosti okna. Nejčastěji je definovaný v procentech ze šířky okna.
 
+<!-- AdSnippet -->
+
 Dnes už bych nikomu nedoporučoval vymýšlet weby jen pro velké displeje. Tehdy to ale nikdo jinak nedělal. V roce 2010 tedy musel Marcotte a jeho tým zbourat něco jako Stalinův pomník tehdejšího webdesignu: Layout fixních rozměrů optimalizovaný pro velké displeje. O [layoutu](responzivni-layout.md) píšu v samostatné kapitole.
 
 ## 2. Pružné obrázky
@@ -41,3 +43,5 @@ Principy responzivního webdesignu by se daly ještě zjednodušit. Takhle jej v
 > Vložte obsah do prohlížeče. Zvětšujte nebo zmenšujte okno. A odstraňujte problémy, které vidíte.
 
 Ten bonmot je překvapivě pravdivý. Při zmenšování nebo zvětšování okna se musíte vypořádat s nepružnými médii, obsahu dát layoutový rámec, vyřešit rychlost načítání…
+
+<!-- AdSnippet -->
