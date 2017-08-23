@@ -10,5 +10,5 @@ Za poskytnutí materiálů k produktům ukázkového e-shopu děkuji panu Jarosl
 
 Foto autora je od [Jana Forejta](https://about.me/janforejt). 
 
-Za připomínky k verzi 1.1 děkuji těmto dobrým duším: Michal Horáček, Jakub Honíšek, Martin Kavík, Ondřej Konečný, Lubomír Merta a Vojtěch Sláma.  
+Za připomínky k verzi 1.1 děkuji těmto dobrým duším: Michal Horáček, Jakub Honíšek, Martin Kavík, Ondřej Konečný, Lubomír Merta, Vojtěch Sláma a Ladislav Suchánek.  
 
