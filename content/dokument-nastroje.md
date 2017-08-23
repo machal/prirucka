@@ -19,9 +19,7 @@ Je to má výchozí šablona pro dokument. Když ji zjednoduším, aby se vešla
 <!--<![endif]-->
 ```
 
-Máme zde správný typ dokumentu, nastavený jazyk (`lang="cs"`) a kódování znaků (`charset="utf-8"`).
-
-Připravili jsme si detekci starších Explorerů (`class="old-ie"`) nebo situace, kdy ve stránce nefunguje Javascript (`class="no-js"`). Můžeme využít při stylování komponent.
+Máme zde správný typ dokumentu a nastavený jazyk (`lang="cs"`). Připravili jsme si detekci starších Explorerů (`class="old-ie"`) nebo situace, kdy ve stránce nefunguje Javascript (`class="no-js"`). Můžeme využít při stylování komponent.
 
 Teď pojďme k hlavičce:
 
@@ -38,7 +36,7 @@ Teď pojďme k hlavičce:
 </head>
 ```
 
-Kromě jiného vidíte i správnou [meta značku pro viewport](viewport-meta.md). Ještě si o ní povíme v následující kapitole.
+Nastavujeme správné kódování znaků (`charset="utf-8"`) a kromě jiného tady vidíte i správnou [meta značku pro viewport](viewport-meta.md). Ještě si o ní povíme v následující kapitole.
 
 A nakonec tělo stránky:
 

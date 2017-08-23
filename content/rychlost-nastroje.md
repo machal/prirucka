@@ -47,7 +47,7 @@ Umožňuje testování z jiné lokality, testování pomalého připojení a v p
 </figcaption> 
 </figure>
 
-Má také API, přičemž ve verzi zdarma je omezené na pár stovek dotazů týdně. 
+Má také API. Je omezené na pár stovek dotazů týdně, což ale vystačí skoro všem.
 
 Co z výsledků WebPagetest mě zajímá?
 

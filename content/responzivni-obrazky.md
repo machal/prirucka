@@ -28,13 +28,13 @@ Ukažme si proto kompletní přehled všech možných řešení, jejich výhod a
 | Řešení                        | Rychlost | Retina | AD  | Okno | Layout | Vhodné pro |
 |:------------------------------|:--------:|:------:|:---:|:----:|:------:|:----------:|
 | 1. SVG                        |    +     |    +   |  -  |   -  |    -   | vektory    |
-| 2. `<img src>`          |    -     |    -   |  -  |   -  |    -   | cokoliv    |
-| 3. `<img src>` 2×       |    -     |    +   |  +  |   -  |    -   | cokoliv    |
-| 4. `<img src>` kompr.   |    +     |    +   |  -  |   -  |    -   | fotky      |
-| 5. `<img src/data-src>` |    -     |    +   |  +  |   +  |    -   | cokoliv    |
-| 6. `<img srcset>`       |    +     |    +   |  -  |   +  |    -   | cokoliv    |
-| 7. `<img srcset sizes>` |    +     |    +   |  -  |   -  |    +   | cokoliv    |
-| 8. `<picture>`          |    +     |    +   |  +  |   +  |    -   | cokoliv    |
+| 2. `<img src>`                |    -     |    -   |  -  |   -  |    -   | cokoliv    |
+| 3. `<img src>` 2×             |    -     |    +   |  -  |   -  |    -   | cokoliv    |
+| 4. `<img src>` kompr.         |    +     |    +   |  -  |   -  |    -   | fotky      |
+| 5. `<img src/data-src>`       |    -     |    +   |  +  |   +  |    -   | cokoliv    |
+| 6. `<img srcset>`             |    +     |    +   |  -  |   +  |    -   | cokoliv    |
+| 7. `<img srcset sizes>`       |    +     |    +   |  -  |   -  |    +   | cokoliv    |
+| 8. `<picture>`                |    +     |    +   |  +  |   +  |    -   | cokoliv    |
 
 </div>
 
@@ -145,7 +145,7 @@ Hodí se pro scénář s výběrem varianty podle velikosti okna. Do atributu `s
   alt="…">
 ```
 
-Všimněte si `w`, takzvaného *deskriptoru*, který nese informaci o šířce obrázku. Proč je tam potřeba? Dobrá otázka, zodpovíme si ji v textu o atributech [`srcset` a `sizes`](srcset-sizes.md).
+Všimněte si `w`, takzvaného *deskriptoru*, který nese informaci o šířce obrázku. Proč je tam potřeba? Dobrá otázka, zodpovíme si ji v textu o atributech [`srcset` a `sizes`](srcset-sizes.md). <span class="ebook-only">Těší se na vás hned v další podkapitole.</span>
 
 ## 7. Atribut `sizes` značky `<img>` {#img-sizes}
 
