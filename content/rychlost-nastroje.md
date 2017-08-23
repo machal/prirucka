@@ -36,7 +36,7 @@ Standardně se prý pro měření rychlosti používá jednoprocentní vzorek zh
 
 ## WebPagetest.org
 
-Pro mě nástroj číslo jedna. Dělá pokročilou analýzu a testuje detailněji než Page Speed Insights. Na druhou stranu WebPagetest nelze používat průběžně, protože testy nějakou dobu trvají. WebPagetest také nevede za ruku jako PSI, nedává přímé rady, jak problém odstranit. A je potřeba jej trochu více poznávat, jelikož rozhraní nepatří mezi nejpřívětivější.
+Pro mě nástroj číslo jedna. Dělá pokročilou analýzu a testuje detailněji než Page Speed Insights. Na druhou stranu je průběžné používání WebPagetestu náročnější, protože testy nějakou dobu trvají. WebPagetest také nevede za ruku jako PSI, nedává přímé rady, jak problém odstranit. A je potřeba jej trochu více poznávat, jelikož rozhraní nepatří mezi nejpřívětivější.
 
 Umožňuje testování z jiné lokality, testování pomalého připojení a v prohlížečích, ve kterých nemáte pokročilé vývojářské nástroje. Třeba v těch mobilních nebo ve starých Internet Explorerech.
 
