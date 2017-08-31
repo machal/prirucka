@@ -4,6 +4,8 @@ Responzivní grafy nacházejí využití hlavně v rukou demagogických politik�
 
 OK, nebudu vám kazit krásné chvíle s mými texty těmito rádoby vtipnými odbočkami. 
 
+<!-- AdSnippet -->
+
 Budeme se bavit o opravdových grafech v opravdových responzivních stránkách. Zase tak často se nepoužívají, proto to vezmu letem světem.
 
 ## Chartist.js
@@ -28,3 +30,5 @@ Velmi populární knihovna, ale grafy vykresluje do prvku `<canvas>`, takže s r
 <div class="ebook-only" markdown="1">
   Tím jsme se dostali k poslednímu textu kapitoly o mediálním obsahu ve stránkách. Pojďme se vrátit k příkladu. ForestKid.cz, vzpomínáte?
 </div>
+
+<!-- AdSnippet -->
