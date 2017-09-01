@@ -5,14 +5,14 @@ Stínování textu.
 
 ```css
 text-shadow:
-	_posun_x_
-	_posun_y_
-	(_rozostreni_)
-	_barva_,
-	(_dalsi_stiny_);
+    _posun_x_
+    _posun_y_
+    (_rozostreni_)
+    _barva_,
+    (_dalsi_stiny_);
 ```
 
-Podívejte se rovnou na příklad: [cdpn.io/e/aDLCl](http://cdpn.io/e/aDLCl).
+Podívejte se rovnou na příklad: [cdpn.io/e/aDLCl](https://cdpn.io/e/aDLCl).
 
 `text-shadow` má dvojče — stínování boxu [box-shadow](css3-box-shadow.md). Na stránce o stínování boxu najdete detailnější popis syntaxe. Je velmi podobná.
 

@@ -42,7 +42,7 @@ Vybaveni kouskem detekčního javascriptu, který nám přidává třídu `.no-s
 }
 ```
 
-Příklad s SVG v CSS na CodePenu: [cdpn.io/e/FEzcI](http://cdpn.io/e/FEzcI).
+Příklad s SVG v CSS na CodePenu: [cdpn.io/e/FEzcI](https://cdpn.io/e/FEzcI).
 
 Na webu asi najdete i další fallback řešení. [Například](http://jecas.cz/svg#background) pomocí [vícenásobných pozadí](css3-multiple-backgrounds.md) nebo [gradientů](css3-gradients.md). To moc nedoporučuji. Jde o hack, který nefunguje ve všech prohlížečích, ve kterých fungovat má. Detekce vlastnosti je spolehlivější.
 
@@ -75,7 +75,7 @@ if (!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Imag
 }
 ```
 
-Tohle používám na Vzhůru dolů. Příklad s SVG v HTML na CodePenu: [cdpn.io/e/isrIB](http://cdpn.io/e/isrIB).
+Tohle používám na Vzhůru dolů. Příklad s SVG v HTML na CodePenu: [cdpn.io/e/isrIB](https://cdpn.io/e/isrIB).
 
 ### Pomocí značky `<picture>`
 

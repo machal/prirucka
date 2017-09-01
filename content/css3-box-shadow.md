@@ -48,7 +48,7 @@ box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .5),
     inset 5px 5px 10px 10px rgba(0, 0, 0, .5);
 ```
 
-Živá ukázka příkladu je na [cdpn.io/e/lAoDv](http://cdpn.io/e/lAoDv).
+Živá ukázka příkladu je na [cdpn.io/e/lAoDv](https://cdpn.io/e/lAoDv).
 
 
 Tipy a triky
@@ -62,11 +62,11 @@ Tady chceme stín jen na levé straně. Je to jednoduché – horizontální st�
 box-shadow: 5px 0 5px -2px rgba(0,0,0,.5);
 ```
 
-Živá ukázka příkladu je na [cdpn.io/e/JnGyb](http://cdpn.io/e/JnGyb).
+Živá ukázka příkladu je na [cdpn.io/e/JnGyb](https://cdpn.io/e/JnGyb).
 
 ### Stín jako kopie objektu
 
-Kreslit stínem logo Microsoftu je samozřejmě nepraktické, ale hezky to ukazuje sílu řetězení a taky co se stane, když nepoužijeme rozostření. [cdpn.io/e/qJuzw](http://cdpn.io/e/qJuzw)
+Kreslit stínem logo Microsoftu je samozřejmě nepraktické, ale hezky to ukazuje sílu řetězení a taky co se stane, když nepoužijeme rozostření. [cdpn.io/e/qJuzw](https://cdpn.io/e/qJuzw)
 
 Můžete samozřejmě kombinovat nerozostřené i rozostřené stíny. [dabblet.com/gist/2043600](http://dabblet.com/gist/2043600)
 
@@ -90,7 +90,7 @@ Tento ovšem ano:
 box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 ```
 
-Živá ukázka příkladu je na [cdpn.io/e/FGtbu](http://cdpn.io/e/FGtbu).
+Živá ukázka příkladu je na [cdpn.io/e/FGtbu](https://cdpn.io/e/FGtbu).
 
 ### Internet Explorer 8
 

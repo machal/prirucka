@@ -30,7 +30,7 @@ Nic složitého. Představte si také, že chcete změnu barvy po najetí myši 
 
 CSS přechody se typicky spouští po najetí myši, můžete je ale spustit například přidáním třídy javascriptem po kliknutí `.box.clicked { background: blue; }`.
 
-Zkuste si to na [cdpn.io/e/hJljB](http://cdpn.io/e/hJljB).
+Zkuste si to na [cdpn.io/e/hJljB](https://cdpn.io/e/hJljB).
 
 V praxi
 -------
@@ -99,7 +99,7 @@ transition: transform 200ms,
   background-color 200ms 1s;
 ```
 
-Nejlépe je to opět vidět v prohlížeči: [cdpn.io/e/vIGAk](http://cdpn.io/e/vIGAk).
+Nejlépe je to opět vidět v prohlížeči: [cdpn.io/e/vIGAk](https://cdpn.io/e/vIGAk).
 
 
 Podpora v prohlížečích

@@ -34,7 +34,7 @@ background:
   linear-gradient(45deg, lightgreen, darkgreen 33%);
 ```
 
-Barevná zarážka pro tmavě zelenou barvu tady začíná na třetině délky osy gradientu. Příklad si můžete naživo vyzkoušet nebo upravovat na [cdpn.io/e/CcdBf](http://cdpn.io/e/CcdBf).
+Barevná zarážka pro tmavě zelenou barvu tady začíná na třetině délky osy gradientu. Příklad si můžete naživo vyzkoušet nebo upravovat na [cdpn.io/e/CcdBf](https://cdpn.io/e/CcdBf).
 
 ### Barvy
 
@@ -102,7 +102,7 @@ Fungují podobně jako u lineárního přechodu. Do čtvrtiny rozměrů elementu
 }
 ```
 
-A tady je živý příklad, obsahující všechny čtyři varianty radiálního přechodu: [cdpn.io/e/cdyfx](http://cdpn.io/e/cdyfx).
+A tady je živý příklad, obsahující všechny čtyři varianty radiálního přechodu: [cdpn.io/e/cdyfx](https://cdpn.io/e/cdyfx).
 
 
 ## Opakující se barevné přechody
@@ -193,7 +193,7 @@ Takřka **vědecké povídání o gradientech**. Ana Tudor jde v následujícím
 
 Lea Verou má hezkou galerii **barevných vzorů** vytvořených jen s pomocí gradientů. Berte to ale raději jen jako ukázku možností: [lea.verou.me/css3patterns](http://lea.verou.me/css3patterns).
 
-Právě zmíněné barevné vzory často využívají tzv. **ostrý přechod**, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana: `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);` [cdpn.io/e/licEd](http://cdpn.io/e/licEd).
+Právě zmíněné barevné vzory často využívají tzv. **ostrý přechod**, což je přechod-nepřechod, ve kterém je mezi barvami ostrá hrana: `background: linear-gradient(to bottom, transparent, lightgreen 33%, darkgreen 33%);` [cdpn.io/e/licEd](https://cdpn.io/e/licEd).
 
 **CSS Scales** jsou předdefinované barevné přechody. Hezké, ano. Navíc ovšem při jejich vymýšlení mysleli na přístupnost a barvy jsou vhodné pro barvoslepé lidi. [bennettfeely.com/scales](http://bennettfeely.com/scales/).
 

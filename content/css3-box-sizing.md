@@ -69,12 +69,12 @@ Jenže takhle nám pátá  položka navigace odskočí na další řádku. Potř
 }
 ```
 
-Živá ukázka příkladu je na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
+Živá ukázka příkladu je na [cdpn.io/e/FeLkJ](https://cdpn.io/e/FeLkJ).
 
 
 ### Změna počítání rozměrů formulářových elementů
 
-Vlastnost `box-sizing` se moc hodí na sjednocení způsobu počítání výšky nebo šířky formulářových elementů. Některé z nich totiž prohlížeče počítají jako `content-box` a některé `border-box` způsobem (např. `input type=„submit“ `nebo `select`). Pokud chcete zajistit stejnou výšku formulářových prvků ve vašem designu, než je začnete stylovat, přepněte si je nejlépe do `box-sizing: border-box`. Živá ukázka problému s formulářovými elementy je na [cdpn.io/e/iBquK](http://cdpn.io/e/iBquK).
+Vlastnost `box-sizing` se moc hodí na sjednocení způsobu počítání výšky nebo šířky formulářových elementů. Některé z nich totiž prohlížeče počítají jako `content-box` a některé `border-box` způsobem (např. `input type=„submit“ `nebo `select`). Pokud chcete zajistit stejnou výšku formulářových prvků ve vašem designu, než je začnete stylovat, přepněte si je nejlépe do `box-sizing: border-box`. Živá ukázka problému s formulářovými elementy je na [cdpn.io/e/iBquK](https://cdpn.io/e/iBquK).
 
 ## Podpora v prohlížečích
 

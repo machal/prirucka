@@ -19,7 +19,7 @@ Jedno z kouzel SVG je v možnosti ručně ho zapsat. Je to jednoduše XML texť�
 </svg>
 ```
 
-Ukázka naživo: [cdpn.io/e/VaeqOo](http://cdpn.io/e/VaeqOo)
+Ukázka naživo: [cdpn.io/e/VaeqOo](https://cdpn.io/e/VaeqOo)
 
 ## Proč ho používat?
 
@@ -63,7 +63,7 @@ Objekt v příkladu uvedeném výše můžeme po najetí myši obarvit:
 }
 ```
 
-Naživo: [cdpn.io/e/LNGqZw](http://cdpn.io/e/LNGqZw).
+Naživo: [cdpn.io/e/LNGqZw](https://cdpn.io/e/LNGqZw).
 
 ## Jak SVG získat
 

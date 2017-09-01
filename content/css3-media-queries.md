@@ -12,7 +12,7 @@ h1 { font-size: 2em }
 }
 ```
 
-Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky `40em`. Toto jednoduché použití podmínek si můžete vyzkoušet v živé ukázce. [cdpn.io/e/Bpajbz](http://cdpn.io/e/Bpajbz)
+Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky `40em`. Toto jednoduché použití podmínek si můžete vyzkoušet v živé ukázce. [cdpn.io/e/Bpajbz](https://cdpn.io/e/Bpajbz)
 
 <!-- AdSnippet -->
 

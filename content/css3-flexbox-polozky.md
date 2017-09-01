@@ -26,7 +26,7 @@ Možné hodnoty:
 - `0` (výchozí) znamená, že položky nijak nerostou.
 - Celá kladná čísla. Položky si rozdělují podíly z nově získaného místa nad rámec výchozí šířky. 
 
-Živé demo: [cdpn.io/e/GqrVzL](http://cdpn.io/e/GqrVzL).
+Živé demo: [cdpn.io/e/GqrVzL](https://cdpn.io/e/GqrVzL).
 
 
 ##   `flex-shrink` – možnosti smršťování  {#flex-shrink}
@@ -40,7 +40,7 @@ Možné hodnoty:
 - `1` (výchozí) – položky si z vlastní šířky ubírají rovnoměrně.
 - Celá kladná čísla.
 
-Živé demo: [cdpn.io/e/PzWMvM](http://cdpn.io/e/PzWMvM).
+Živé demo: [cdpn.io/e/PzWMvM](https://cdpn.io/e/PzWMvM).
 
 ##   `flex-basis` – výchozí rozměr položky  {#flex-basis}
 
@@ -52,7 +52,7 @@ Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: co
 * `0` – nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se bude týkat celé šířky položky – absolutní model pružnosti.
 * Jakýkoliv CSS rozměr, např. `100px`, `15em` nebo `50%`.
 
-Živé demo: [cdpn.io/e/oLZvgQ](http://cdpn.io/e/oLZvgQ).
+Živé demo: [cdpn.io/e/oLZvgQ](https://cdpn.io/e/oLZvgQ).
 
 ##   `flex` – celková pružnost položky  {#flex}
 
@@ -131,7 +131,7 @@ Nezapomeňte, že order nelze použít na jiné elementy ve stránce než přím
 
 Teď je na řadě další z radostí, kterou přináší flexbox. Konečně v CSS snadno zarovnáme prvky layoutu vodorovně, ale i svisle.
 
-Živé demo: [cdpn.io/e/JoqxJe](http://cdpn.io/e/JoqxJe).
+Živé demo: [cdpn.io/e/JoqxJe](https://cdpn.io/e/JoqxJe).
 
 ##   `margin` – zarovnání položek na hlavní ose pro jednotlivou položku  {#margin}
 
@@ -151,9 +151,9 @@ align-self:
 
 Tato vlastnost se aplikuje na jednotlivé položky, a tak se hodí pro vytvoření výjimky ze zarovnání. Výchozí hodnota je `auto`.
 
-Živé demo: [cdpn.io/e/OXWKwe](http://cdpn.io/e/OXWKwe).
+Živé demo: [cdpn.io/e/OXWKwe](https://cdpn.io/e/OXWKwe).
 
 ###   Poznámka: Baseline zarovnání
 
-Doporučuji všimnout si velmi praktického zarovnání na účaří prvního řádku – `baseline`. K horní hraně flex kontejneru se přilepí položka s největší vzdáleností mezi baseline a horní hranou boxu. Vidět je na předchozím obrázku nebo na [cdpn.io/e/QwobXz](http://cdpn.io/e/QwobXz). Všimněte si, že flexbox nerozhodí ani nastavení horního paddingu v pixelech.
+Doporučuji všimnout si velmi praktického zarovnání na účaří prvního řádku – `baseline`. K horní hraně flex kontejneru se přilepí položka s největší vzdáleností mezi baseline a horní hranou boxu. Vidět je na předchozím obrázku nebo na [cdpn.io/e/QwobXz](https://cdpn.io/e/QwobXz). Všimněte si, že flexbox nerozhodí ani nastavení horního paddingu v pixelech.
 

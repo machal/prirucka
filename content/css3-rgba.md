@@ -16,7 +16,7 @@ Porovnání s `opacity`
 
 RGBa je barva aplikovatelná na cokoliv bez vlivu na zbytek elementu. Třeba jen na barvu pozadí `background: rgba(20%, 100%, 20%, .5)`.
 
-V prohlížeči vyťukejte [cdpn.io/e/HrBsD](http://cdpn.io/e/HrBsD).
+V prohlížeči vyťukejte [cdpn.io/e/HrBsD](https://cdpn.io/e/HrBsD).
 
 
 Podpora v prohlížečích

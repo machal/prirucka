@@ -23,7 +23,7 @@ V příkladu je i ukázka oddělovací čáry mezi sloupci – `column-rule: 1px
 
 Když si zmenšíte okno prohlížeče a nezbude dost místa pro více sloupců vedle sebe, prohlížeč sám od vícesloupcové sazby upustí.
 
-Příklad vyzkoušejte na [cdpn.io/e/ohLgJ](http://cdpn.io/e/ohLgJ).
+Příklad vyzkoušejte na [cdpn.io/e/ohLgJ](https://cdpn.io/e/ohLgJ).
 
 
 Podpora v prohlížečích

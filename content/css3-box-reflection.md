@@ -40,7 +40,7 @@ Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu mas
   below 5px linear-gradient(to bottom, transparent, black);
 ```
 
-Živá ukázka příkladu je na [cdpn.io/e/CLEhF](http://cdpn.io/e/CLEhF).
+Živá ukázka příkladu je na [cdpn.io/e/CLEhF](https://cdpn.io/e/CLEhF).
 
 Podpora v prohlížečích
 ----------------------

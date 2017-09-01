@@ -46,14 +46,14 @@ border-bottom-right-radius: 4em;
 border-bottom-left-radius: 4em;
 ```
 
-Živý příklad se zaoblenými rohy najdete na [cdpn.io/e/EljFa](http://cdpn.io/e/EljFa).
+Živý příklad se zaoblenými rohy najdete na [cdpn.io/e/EljFa](https://cdpn.io/e/EljFa).
 
 Tipy a triky
 ------------
 
 Jak pomocí `border-radius` vykreslit **kruhové avatary**? [vrdl.in/uncsg](http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/)
 
-Jak na **tabulky se zaoblenými rohy**? Na tabulky s `border-collapse: collapse` a rodičovské prvky s obrázkem uvnitř je potřeba aplikovat `overflow: hidden`. [cdpn.io/e/jpdFm](http://cdpn.io/e/jpdFm)
+Jak na **tabulky se zaoblenými rohy**? Na tabulky s `border-collapse: collapse` a rodičovské prvky s obrázkem uvnitř je potřeba aplikovat `overflow: hidden`. [cdpn.io/e/jpdFm](https://cdpn.io/e/jpdFm)
 
 
 Podpora v prohlížečích

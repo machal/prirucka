@@ -27,7 +27,7 @@ Pak stačí `ellipsis` doplnit o dvě další deklarace zajišťující „jedno
 }
 ```
 
-Zkuste si naživo změnit velikost okna v příkladu na [cdpn.io/e/FeLkJ](http://cdpn.io/e/FeLkJ).
+Zkuste si naživo změnit velikost okna v příkladu na [cdpn.io/e/FeLkJ](https://cdpn.io/e/FeLkJ).
 
 Podpora v prohlížečích
 ----------------------

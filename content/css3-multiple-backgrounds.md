@@ -38,7 +38,7 @@ background:
   url('bg.jpg');
 ```
 
-Naživo zkoušejte na [cdpn.io/e/lvKkC](http://cdpn.io/e/lvKkC).
+Naživo zkoušejte na [cdpn.io/e/lvKkC](https://cdpn.io/e/lvKkC).
 
 
 Podpora v prohlížečích

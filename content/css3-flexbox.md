@@ -59,7 +59,7 @@ HTML je jednoduché. O to přísnější máme požadavky na design. A víte co?
   <hr>
 </div>
 
-Příklad si utíkejte vyzkoušet naživo na CodePen. [cdpn.io/e/LhGuD](http://cdpn.io/e/LhGuD)
+Příklad si utíkejte vyzkoušet naživo na CodePen. [cdpn.io/e/LhGuD](https://cdpn.io/e/LhGuD)
 
 Je to hezké, že? Ale skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí „tabulkového layoutu“ v roce 2001. Jenže pravdu by měl jen z velmi malé části. Flexbox toho totiž umí daleko (*daleko!*) více než tabulky. 
 

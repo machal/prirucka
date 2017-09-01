@@ -37,7 +37,7 @@ Výchozí (`row`) hodnota vyskládá flex položky do řádky. Pokud chcete děl
 
 Pořadí položek se v těchto případech bere z pořadí v kódu. Pokud chcete pořadí otočit, prostě zvolte hodnoty `row-reverse` nebo `column-reverse`. To má vliv jen na vizuální vykreslení, nikoliv např. na pořadí vykreslování nebo procházení při navigaci klávesou Tab. Pozorní si asi všimli, že vlastnost lze použít i pro změnu řazení seznamů.
 
-Živé demo: [cdpn.io/e/pbarBw](http://cdpn.io/e/pbarBw).
+Živé demo: [cdpn.io/e/pbarBw](https://cdpn.io/e/pbarBw).
 
 ##   `flex-wrap` – zalamování položek {#flex-wrap}
 
@@ -56,7 +56,7 @@ Alternativně `wrap`. Pak se flex položky zalomí na další řádku ve chvíli
 
 `wrap-reverse` zalamuje naopak. Poslední položka řádku skočí nahoru a zařadí se nad první položku.
 
-Živé demo: [cdpn.io/e/mERZxB](http://cdpn.io/e/mERZxB).
+Živé demo: [cdpn.io/e/mERZxB](https://cdpn.io/e/mERZxB).
 
 <div class="web-only text-center text-small">
   <hr>
@@ -90,7 +90,7 @@ justify-content:
 
 Vlastnost `justify-content` aplikujeme na flex kontejner. Říká, jak budou flex položky zarovnány po jeho hlavní ose. Výchozí hodnota je `flex-start`, tedy zarovnání k začátku hlavní osy.
 
-Živé demo: [cdpn.io/e/doGjaZ](http://cdpn.io/e/doGjaZ).
+Živé demo: [cdpn.io/e/doGjaZ](https://cdpn.io/e/doGjaZ).
 
 ##   `align-items` – zarovnání položek na příčné ose {#align-items}
 
@@ -108,7 +108,7 @@ Vlastnost `align-items` lze opět aplikovat na kontejner flexboxu. Výchozí hod
 
 Pozor, hodnota `stretch` nefunguje, pokud mají položky nastavený rozměr pro příčnou osu, tedy ve výchozím stavu hodnotu vlastnosti `height`.
 
-Živé demo: [cdpn.io/e/RNmvmr](http://cdpn.io/e/RNmvmr).
+Živé demo: [cdpn.io/e/RNmvmr](https://cdpn.io/e/RNmvmr).
 
 ##   `align-content` – zarovnání na hlavní ose víceřádkového kontejneru {#align-content}
 
@@ -121,5 +121,5 @@ align-content:
 
 Ještě jedna zarovnávací vlastnost. Tentokrát se vztahuje jen na flex kontejnery, jejichž položky se rozpadnou na více řádků.
 
-Živé demo: [cdpn.io/e/oXbMRo](http://cdpn.io/e/oXbMRo).
+Živé demo: [cdpn.io/e/oXbMRo](https://cdpn.io/e/oXbMRo).
 

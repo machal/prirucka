@@ -34,7 +34,7 @@ Pokud se tedy pomocí media query rozhodneme, že od šířky okna 801 pixelů n
 
 … zvětší se nám všechny rozměry nastavené v jednotkách `rem`. Nadpis `<h1>` tedy bude mít v těchto šířkách okna velikost 38 pixelů (`25px` × 1,5).
 
-Na živo můžete vyzkoušet tady: [cdpn.io/e/mnbaA](http://cdpn.io/e/mnbaA).
+Na živo můžete vyzkoušet tady: [cdpn.io/e/mnbaA](https://cdpn.io/e/mnbaA).
 
 ### Podpora v prohlížečích
 

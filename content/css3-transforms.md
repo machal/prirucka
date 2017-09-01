@@ -28,7 +28,7 @@ Existují čtyři funkce: zkosení, otočení, posun a změna velikosti:
 }
 ```
 
-Vyzkoušejte si: [cdpn.io/e/wxoil](http://cdpn.io/e/wxoil).
+Vyzkoušejte si: [cdpn.io/e/wxoil](https://cdpn.io/e/wxoil).
 
 Všechny čtyři základní funkce mají varianty pro transformaci jen po jedné ose – například `skewX()`, `skewY()`.
 
@@ -51,7 +51,7 @@ Souřadnice bodu, ze kterého transformace vychází. Přednastavený je střed 
 }
 ```
 
-Naživo: [cdpn.io/e/brBgk](http://cdpn.io/e/brBgk).
+Naživo: [cdpn.io/e/brBgk](https://cdpn.io/e/brBgk).
 
 ## Podpora v prohlížečích
 
