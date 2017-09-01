@@ -89,7 +89,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 * **[nové] **Skutečné animační nástroje: [CSS animace](http://slideslive.com/38892079/vse-o-css-animacich), vlastnosti [animation](https://www.vzhurudolu.cz/prirucka/css3-animations) a [transition](https://www.vzhurudolu.cz/prirucka/css3-transitions); SVG animace.
 * Emulace animací v Javascriptu/jQuery.
-* [Principy animací](http://codepen.io/jeroens/blog/the-illusion-of-life).
+* [Principy animací](https://codepen.io/jeroens/blog/the-illusion-of-life).
 
 ### 2. pracovní postupy
 

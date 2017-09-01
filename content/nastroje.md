@@ -43,7 +43,7 @@ Z obrázku sami vidíte, že můj Sublime Text neoplývá barvičkami a vizuáln
 - WebStorm – více jako IDE, včetně chytrého našeptávání. Brácha od PHPStorm.
 - Brackets – editor od Adobe, který si pochvalují kodéři co často pracují s PSD.
 
-Pro rychlé prototypování a ukázky kódu často používám online fidlátko [CodePen](http://codepen.io/machal/).
+Pro rychlé prototypování a ukázky kódu často používám online fidlátko [CodePen](https://codepen.io/machal/).
 
 
 ## Chrome DevTools

@@ -17,17 +17,17 @@ Práce s textem je jasná volba. V případě dobré implementace je SVG text pl
 1. Výplně textu obrázky nebo barevnými přechody: [Codrops demo](http://tympanus.net/codrops/2013/12/02/techniques-for-creating-textured-text/).
 2. Animované textové výplně: [Codrops demo](http://tympanus.net/codrops/2015/02/16/create-animated-text-fills/).
 3. Filtry na text jako v grafickém editoru: [Článek na Smashing Magazine](https://www.smashingmagazine.com/2015/05/why-the-svg-filter-is-awesome/).
-4. Animované ohraničení textu: [CodePen demo](http://codepen.io/mullany/pen/kkYNNQ). 
+4. Animované ohraničení textu: [CodePen demo](https://codepen.io/mullany/pen/kkYNNQ). 
 
 
 ## Obrázky: výřezy a filtry
 
 ![Obrázky: výřezy a filtry v SVG](dist/images/original/svg-inspirace-obrazky.jpg)
 
-Ořezávání obrázků vlastními tvary bude do budoucna možné [i v CSS](http://bennettfeely.com/clippy/). SVG teď ale nabízí širší podporu v prohlížečích. Zajimavé využití nabízí SVG i pro filtry přes obrázky. Sledujte co s nimi dělá [Michael Mullany](http://codepen.io/mullany/pens/popular/).
+Ořezávání obrázků vlastními tvary bude do budoucna možné [i v CSS](http://bennettfeely.com/clippy/). SVG teď ale nabízí širší podporu v prohlížečích. Zajimavé využití nabízí SVG i pro filtry přes obrázky. Sledujte co s nimi dělá [Michael Mullany](https://codepen.io/mullany/pens/popular/).
 
-1. Vlastní ořez obrázku: [CodePen demo](http://codepen.io/machal/pen/jrPpdO). 
-2. Filtry přes fotky: [CodePen demo](http://codepen.io/machal/pen/JaECv).
+1. Vlastní ořez obrázku: [CodePen demo](https://codepen.io/machal/pen/jrPpdO). 
+2. Filtry přes fotky: [CodePen demo](https://codepen.io/machal/pen/JaECv).
 
 
 ## Animace
@@ -67,7 +67,7 @@ SVG se mimojiné hodí jako náhrada Flashe. Je to nový pomocník pro realizaci
 
 1. Interaktivní mapy: [Codrops demo](http://tympanus.net/Development/Interactive3DMallMap/).
 2. Interaktivní infografika realizovaná [SuperKodéry](http://www.superkoderi.cz/): [IslamophobiaNetwork.com](https://islamophobianetwork.com/).
-3. Bannery v SVG: [CodePen demo](http://codepen.io/chriscoyier/pen/dvjhn).
+3. Bannery v SVG: [CodePen demo](https://codepen.io/chriscoyier/pen/dvjhn).
 4. Omalovánka pro syna Lukáše Wernera: [Blesk](http://pics.prosexsound.cz/blesk.html).
 5. Půjčkolis: [Bistro Agency](http://bistroagency.cz/work/cs-pujckolis/).
 6. Interaktivní Vennovy diagramy: [Serpo.cz](https://www.serpo.cz/seo/souboj/g/srovnanicen.cz/a/zbozi.cz/a/mall.cz).
@@ -77,7 +77,7 @@ SVG se mimojiné hodí jako náhrada Flashe. Je to nový pomocník pro realizaci
 
 Na samotných ikonkách nic objevného není. SVG ale otevírá nové možnosti jak pracovat s jejich většími sadami. Mnozí doporučují [SVG Store](https://github.com/FWeinb/grunt-svgstore), já jsem si oblíbil nástroj [Grunticon](http://www.grunticon.com/), o kterém jsem také [nedávno psal](svg-grunticon.md).
 
-Další inspiraci hledejte v téhle nesmrtelné prezentaci od [Sary Soueidan](http://slides.com/sarasoueidan/building-better-interfaces-with-svg/), na [Codrops](http://tympanus.net/codrops/tag/svg/) nebo třeba u [Lucase Bebbera](http://codepen.io/lbebber/pens/popular/).
+Další inspiraci hledejte v téhle nesmrtelné prezentaci od [Sary Soueidan](http://slides.com/sarasoueidan/building-better-interfaces-with-svg/), na [Codrops](http://tympanus.net/codrops/tag/svg/) nebo třeba u [Lucase Bebbera](https://codepen.io/lbebber/pens/popular/).
 
 <div class="web-only" markdown="1">
 

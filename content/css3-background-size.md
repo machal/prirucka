@@ -40,7 +40,7 @@ background: linear-gradient(to bottom, transparent, black)
 background-size: 100% 50%;
 ```
 
-Naživo se podívejte na [cdpn.io/e/cmpjE](http://codepen.io/machal/pen/cmpjE).
+Naživo se podívejte na [cdpn.io/e/cmpjE](https://codepen.io/machal/pen/cmpjE).
 
 Nezapomeňte, že šířka nebo výška pozadí vychází z nastavení vlastnosti [background-origin](css3-background-origin.md). Standardně se tedy `padding-box` a `background-size` počítá z vnitřního okraje a obsahu elementu.
 

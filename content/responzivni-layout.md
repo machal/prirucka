@@ -37,7 +37,7 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 <figure>
 <img src="dist/images/original/responzivni-layout.jpg" alt="">
 <figcaption markdown="1">    
-*Jednoduchý responzivní dvousloupcový layout tři ku jedné realizovaný flexboxem. Živá ukázka je pro vás připravená na CodePenu. [cdpn.io/e/wobjoq](http://codepen.io/machal/pen/wobjoq)*
+*Jednoduchý responzivní dvousloupcový layout tři ku jedné realizovaný flexboxem. Živá ukázka je pro vás připravená na CodePenu. [cdpn.io/e/wobjoq](https://codepen.io/machal/pen/wobjoq)*
 </figcaption> 
 </figure>
 

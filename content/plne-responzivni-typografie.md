@@ -19,7 +19,7 @@ Představte si, že nadpis článku chcete na stránce zvětšovat a zmenšovat 
 }
 ```
 
-Velikost písma bude na sedmi procentech šířky viewportu. Zmenšíme okno, a vše se zmenší. Zvětšíme ho, a vše se zvětší. Jupí! Zkuste si to na CodePenu. [cdpn.io/e/mAAOLa](http://codepen.io/machal/pen/mAAOLa)
+Velikost písma bude na sedmi procentech šířky viewportu. Zmenšíme okno, a vše se zmenší. Zvětšíme ho, a vše se zvětší. Jupí! Zkuste si to na CodePenu. [cdpn.io/e/mAAOLa](https://codepen.io/machal/pen/mAAOLa)
 
 Kód je jednoduchý, funguje ve všech moderních prohlížečích a náhradní řešení pro ty starší bude jednoduché: 
 

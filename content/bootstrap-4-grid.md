@@ -34,7 +34,7 @@ Kontejner je obal pro váš layout. Bootstrap má dva typy obalů:
 - `.container` je kontejner fixní šířky: má stupně omezené maximální šířkou. Jeho maximální šířky jsou 540px na *small* šířkách okna, 720px (*medium*) 960px (*large*) a 1140px (*extra large*). 
 - `.container-fluid` je pružný, takže se roztahuje do plné šířky okna prohlížeče. Ten asi budete využívat méně často.
 
-Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnání pružného i fixního kontejneru: [cdpn.io/e/RpYqwK](http://codepen.io/machal/pen/RpYqwK?editors=1000).
+Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnání pružného i fixního kontejneru: [cdpn.io/e/RpYqwK](https://codepen.io/machal/pen/RpYqwK?editors=1000).
 
 <!-- AdSnippet -->
 
@@ -52,7 +52,7 @@ V dalších ukázkách kódu už budu `.container` pro zjednodušení vynecháva
 
 Při používání Bootstrapu 3 se na `.row` často zapomínalo. Ve čtyřce už bez řádky není možné udělat layout. To je docela účinná tabletka proti zapomnětlivosti. 
 
-Do ukázky se podívejte, co se stane, když řádek omylem vynecháte: [cdpn.io/e/VpGVKm](http://codepen.io/machal/pen/VpGVKm?editors=1000).
+Do ukázky se podívejte, co se stane, když řádek omylem vynecháte: [cdpn.io/e/VpGVKm](https://codepen.io/machal/pen/VpGVKm?editors=1000).
 
 
 ## Sloupec: `.col` {#col}
@@ -68,7 +68,7 @@ Sloupec je základní stavební jednotka layoutů v Bootstrapu. Nově je ve verz
 
 `.col` má nastaveno `flex-grow: 1`, takže sloupečky budou stejně široké. Viz [vlastnosti flex položky](css3-flexbox-polozky.md). To je prima.
 
-Jen pozor, layout neuvidíte na menších velikostech okna. Flexbox vlastnosti v `.col` jsou nastavené tak, aby zohledňovaly obsah okna. Zažijete to i v ukázce, když si okno zmenšíte pod 260 pixelů: [cdpn.io/e/ZeMmJg](http://codepen.io/machal/pen/ZeMmJg?editors=1000).
+Jen pozor, layout neuvidíte na menších velikostech okna. Flexbox vlastnosti v `.col` jsou nastavené tak, aby zohledňovaly obsah okna. Zažijete to i v ukázce, když si okno zmenšíte pod 260 pixelů: [cdpn.io/e/ZeMmJg](https://codepen.io/machal/pen/ZeMmJg?editors=1000).
 
 
 ## Sloupec zarovnaný do mřížky: `.col-{číslo}` {#col-mrizka}
@@ -98,7 +98,7 @@ Jde kombinovat mřížku se sloupečky bez přípony? Jistě:
 </div>
 ```
 
-`.col` třídy se pak díky `flex-grow:1` dělí rovným dílem o prostor, který zůstává po „mřížkových“ sloupečcích. Opět se tady ale musíte smířit se vzdorovitostí `.col` tříd, které poslouchají pnutí obsahu a ne vždy vám udělají layout tak, jak si ho představujete. [cdpn.io/e/BWOGvq](http://codepen.io/machal/pen/BWOGvq?editors=1000).
+`.col` třídy se pak díky `flex-grow:1` dělí rovným dílem o prostor, který zůstává po „mřížkových“ sloupečcích. Opět se tady ale musíte smířit se vzdorovitostí `.col` tříd, které poslouchají pnutí obsahu a ne vždy vám udělají layout tak, jak si ho představujete. [cdpn.io/e/BWOGvq](https://codepen.io/machal/pen/BWOGvq?editors=1000).
 
 [Pokročilým použitím s preprocesorem Sass](https://v4-alpha.getbootstrap.com/layout/grid/#customizing-the-grid) je samozřejmě možné výchozí počet sloupců změnit. Stačí přenastavit proměnnou `$grid-columns`.
 
@@ -147,7 +147,7 @@ Třídy je samozřejmě možné úplně v pohodě kombinovat a dělat různé la
 </div>
 ```
 
-Nejlépe to všechno uvidíte v další mé ukázce: [cdpn.io/e/zZJyGN](http://codepen.io/machal/pen/zZJyGN?editors=1000)
+Nejlépe to všechno uvidíte v další mé ukázce: [cdpn.io/e/zZJyGN](https://codepen.io/machal/pen/zZJyGN?editors=1000)
 
 
 ## Posuny: `.offset-{breakpoint}` {#offset}
@@ -162,7 +162,7 @@ Sloupečky můžete posunovat směrem doleva přidáním vnějšího okraje tř�
 </div>
 ```
 
-Ve výsledku bude tedy centrovaný. [cdpn.io/e/jBvXmP](http://codepen.io/machal/pen/jBvXmP?editors=1000)
+Ve výsledku bude tedy centrovaný. [cdpn.io/e/jBvXmP](https://codepen.io/machal/pen/jBvXmP?editors=1000)
 
 
 ## Push a pull {#push-pull}
@@ -178,7 +178,7 @@ Jde to hezky využít pro změnu pořadí prvků:
 </div>
 ```
 
-V příkladu se díky tomu na `md` breakpointu, tedy od šířky okna 768 pixelů, oba sloupce prohodí. `1.` je v kódu první, ale v layoutu bude až na druhém místě. [cdpn.io/e/xqamPp](http://codepen.io/machal/pen/xqamPp?editors=1000)
+V příkladu se díky tomu na `md` breakpointu, tedy od šířky okna 768 pixelů, oba sloupce prohodí. `1.` je v kódu první, ale v layoutu bude až na druhém místě. [cdpn.io/e/xqamPp](https://codepen.io/machal/pen/xqamPp?editors=1000)
 
 
 ## Změna pořadí {#poradi}
@@ -193,7 +193,7 @@ Kromě výše uvedených způsobů lze měnit pořadí sloupců layoutu pomocí 
 </div>
 ```
 
-Vychází to z flexboxí [vlastnosti `order`](css3-flexbox-polozky.md#order). Ukázka: [cdpn.io/e/dvqrZv](http://codepen.io/machal/pen/dvqrZv?editors=1000)
+Vychází to z flexboxí [vlastnosti `order`](css3-flexbox-polozky.md#order). Ukázka: [cdpn.io/e/dvqrZv](https://codepen.io/machal/pen/dvqrZv?editors=1000)
 
 To je věc nová pro čtvrtou verzi. Ale jak sami vidíte, pro změnu pořadí je to daleko příjemnější než metoda pomocí tříd `.pull` a `.push`.
 
@@ -213,7 +213,7 @@ Velmi užitečné je, že layout můžete zanořovat. Přidejte další řádku 
 </div>
 ```
 
-Každá nově vytvořená řádka layoutu se řídí šířkou rodiče. Takže se vám může stát, že zanořený layout opustí celostránkovou dvanáctisloupcovou mřížku. Nemusí vám to vadit, ale raději na to upozorňuji. [cdpn.io/e/xqamzW](http://codepen.io/machal/pen/xqamzW?editors=1000)
+Každá nově vytvořená řádka layoutu se řídí šířkou rodiče. Takže se vám může stát, že zanořený layout opustí celostránkovou dvanáctisloupcovou mřížku. Nemusí vám to vadit, ale raději na to upozorňuji. [cdpn.io/e/xqamzW](https://codepen.io/machal/pen/xqamzW?editors=1000)
 
 
 ## Zarovnávání {#zarovnavani}
@@ -243,7 +243,7 @@ Vychází to z vlastnosti flex kontejneru [`justify-content`](css3-flexbox-konte
 </div>
 ```
 
-Pro tenhle kód se první sloupec přilepí doleva a druhý doprava. Volný prostor se totiž rozdělí mezi jednotlivé sloupce (`.justify-content-between`). [cdnp.io/ZeMPbP](http://codepen.io/machal/pen/ZeMPbP?editors=1000)
+Pro tenhle kód se první sloupec přilepí doleva a druhý doprava. Volný prostor se totiž rozdělí mezi jednotlivé sloupce (`.justify-content-between`). [cdnp.io/ZeMPbP](https://codepen.io/machal/pen/ZeMPbP?editors=1000)
 
 Zarovnání na svislé ose:
 
@@ -267,7 +267,7 @@ Vychází to z vlastností flex kontejneru [`align-items`](css3-flexbox-kontejne
   <div class="col-3 align-self-end"> <!-- … --> </div>
 </div>
 ```
-Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdnp.io/XMPGjv](http://codepen.io/machal/pen/XMPGjv?editors=1100)
+Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdnp.io/XMPGjv](https://codepen.io/machal/pen/XMPGjv?editors=1100)
 
 <!-- AdSnippet -->
 
@@ -275,7 +275,7 @@ To je vše. Děkuji za pozornost a ať vám mřížka v Bootstrapu 4 dobře slou
 
 Odkazy na závěr:
 
-- Sada [ukázek na CodePenu](http://codepen.io/collection/XMjRJk/).
+- Sada [ukázek na CodePenu](https://codepen.io/collection/XMjRJk/).
 - Dokumentace gridu [na webu Bootstrapu 4](https://v4-alpha.getbootstrap.com/layout/grid/).
 - Samostatný [Bootstrap 4 grid ke stažení](https://github.com/twbs/bootstrap/tree/v4-dev/dist/css).
 - Naše [školení pokročilého využití Bootstrapu](https://www.vzhurudolu.cz/kurzy/bootstrap).

@@ -58,7 +58,7 @@ Uděláme technický test hypotézy vzešlé ze skicování. Navážeme teď zas
 
 Rychlé demo si vytvoříme na už zmíněném online editoru *CodePen* a použijeme přitom generátor zástupných obrázků *Satyr.io*. Výsledek si prohlédneme v *Re:view*, neméně skvělém nástroji pro komparativní testování návrhů v mobilních rozlišeních.
 
-Aktuální stav prototypu vidíte na obrázku nebo naživo na CodePenu. [cdpn.io/e/JEKxEK](http://codepen.io/machal/pen/JEKxEK).
+Aktuální stav prototypu vidíte na obrázku nebo naživo na CodePenu. [cdpn.io/e/JEKxEK](https://codepen.io/machal/pen/JEKxEK).
 
 <figure>
 <img src="dist/images/original/vdwd/priklad-komponenta-review-1.jpg" alt="">
@@ -80,7 +80,7 @@ Problém ale zčásti můžeme upravit už teď. Prostě zajistíme, aby se hlav
 }  
 ```
 
-I tento další krok si můžete vyzkoušet naživo. [cdpn.io/e/XpKOxd](http://codepen.io/machal/pen/XpKOxd)
+I tento další krok si můžete vyzkoušet naživo. [cdpn.io/e/XpKOxd](https://codepen.io/machal/pen/XpKOxd)
 
 Vsadím se ale, že při pohledu na obrázek z testování prototypu vás do očí praštilo ještě něco jiného. Právě to taky od prototypů chceme – aby obtěžovaly naše oči tím, co naše mozky nedomyslely. Jasně, myslím tím náhledy ze zařízení držených na šířku.
 
@@ -113,7 +113,7 @@ Využíváme `orientation: landscape`, jednu z [Media Queries](css3-media-querie
 </figcaption> 
 </figure> 
 
-CodePen výsledného prototypu: [cdpn.io/e/dNXrMe](http://codepen.io/machal/pen/dNXrMe) 
+CodePen výsledného prototypu: [cdpn.io/e/dNXrMe](https://codepen.io/machal/pen/dNXrMe) 
 
 Vy zkušenější jste jistě mírně pozvedli obočí nad schováváním jedné části s obrázky pomocí `display: none`. Tohle v produkčním kódu být nesmí, protože by nám mobilní prohlížeče neviditelné obrázky tak či tak stáhly a zpomalily  tím nehezky načtení stránky.
 

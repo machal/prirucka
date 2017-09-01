@@ -94,7 +94,7 @@ K našemu překvapení ovšem prohlížeč barevný přechod vykreslí jen v roz
 border-image-slice: 20;
 ```
 
-A je to. Příklad si můžete vyzkoušet na [cdpn.io/e/zdyIJ](http://codepen.io/machal/pen/zdyIJ).
+A je to. Příklad si můžete vyzkoušet na [cdpn.io/e/zdyIJ](https://codepen.io/machal/pen/zdyIJ).
 
 
 Příklad s bitmapovým obrázkem na pozadí
@@ -114,7 +114,7 @@ Přidáme obrázek na pozadí:
 border-image-source: url(border-image-source.png);
 ```
 
-Dále definujeme řezy. V tomto zdrojovém obrázku máme vodorovný rámeček vysoký	21 pixelů a svislý 23 pixelů.
+Dále definujeme řezy. V tomto zdrojovém obrázku máme vodorovný rámeček vysoký   21 pixelů a svislý 23 pixelů.
 
 ```css
 border-image-slice: 21 23;
@@ -132,4 +132,4 @@ A pojďme si ještě vyzkoušet zkrácený zápis posledních tří deklarací:
 border-image: url(border-image-source.png) 21 23 repeat;
 ```
 
-Hotovo. Příklad si můžete vyzkoušet na [cdpn.io/e/DLkjm](http://codepen.io/machal/pen/DLkjm).
+Hotovo. Příklad si můžete vyzkoušet na [cdpn.io/e/DLkjm](https://codepen.io/machal/pen/DLkjm).

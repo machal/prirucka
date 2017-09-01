@@ -24,7 +24,7 @@ Zapamatujte si hlavně následující šestici.
 Existují samozřejmě ještě další jednotky: namátkou `pt`, `ex` nebo `vmax`. Buď je ale využívám málo, nebo vůbec, takže pro zjednodušení je úplně vynechám.  Dobrý přehled všech je v češtině na stránkách Jak psát web. [vrdl.in/btoxk](https://www.jakpsatweb.cz/css/css-jednotky.html)
 
 
-Teď prakticky. Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější scénáře nastavování rozměrů v CSS. Projdeme si to v textu, ale tady je ještě online: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG)
+Teď prakticky. Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější scénáře nastavování rozměrů v CSS. Projdeme si to v textu, ale tady je ještě online: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
 
 
 ## Základní velikost písma v dokumentu: `%`
@@ -171,5 +171,5 @@ Například tento nadpis z příkladu bude mít velikost písma `2rem` a k tomu 
 
 Triky s responzivní typografií se více zabývám v přespříští podkapitole. 
 
-Na závěr ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](http://codepen.io/machal/pen/dvdxWG)
+Na závěr ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
 

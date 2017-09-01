@@ -66,7 +66,7 @@ Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachová
 }
 ```
 
-Podívejte na výsledný CodePen. [cdpn.io/e/oYOZwz](http://codepen.io/machal/pen/oYOZwz)
+Podívejte na výsledný CodePen. [cdpn.io/e/oYOZwz](https://codepen.io/machal/pen/oYOZwz)
 
 
 ## Pružné SVG vkládané externě pomocí `<img>`
@@ -86,7 +86,7 @@ Pokud nebudeme nastavovat výšku obrázku, v CSS nemusíme pro moderní prohlí
 }
 ```
 
-CodePen s příkladem se na vás těší i tady. [cdpn.io/e/VmNbPx](http://codepen.io/machal/pen/VmNbPx)
+CodePen s příkladem se na vás těší i tady. [cdpn.io/e/VmNbPx](https://codepen.io/machal/pen/VmNbPx)
 
 
 ## Pružné SVG externě v CSS
@@ -113,7 +113,7 @@ U většiny vektorových obrázků pak chceme definovat poměr stran, který si 
 
 Tady už není ani žádné speciální nastavení pro Internet Explorer. Hurá! 
 
-Mrkněme se spolu na CodePen. [cdpn.io/e/NbmgPr](http://codepen.io/machal/pen/NbmgPr)
+Mrkněme se spolu na CodePen. [cdpn.io/e/NbmgPr](https://codepen.io/machal/pen/NbmgPr)
 
 <!-- AdSnippet -->
 
@@ -154,7 +154,7 @@ Media Queries prostě napíšeme dovnitř kódu vektorového dokumentu:
 </svg>
 ```
 
-Tady se podmínky v `@media` vcelku logicky vztahují k šířce okna prohlížeče. [cdpn.io/e/vyMRPL](http://codepen.io/machal/pen/vyMRPL?editors=1100#0)
+Tady se podmínky v `@media` vcelku logicky vztahují k šířce okna prohlížeče. [cdpn.io/e/vyMRPL](https://codepen.io/machal/pen/vyMRPL?editors=1100#0)
 
 Co když ale vložíme SVG soubor obsahující Media Queries externě?
 
@@ -163,7 +163,7 @@ Co když ale vložíme SVG soubor obsahující Media Queries externě?
   width="100" height="100" alt="Logo Vzhůru dolů">
 ```  
 
-Tušíte správně, podmínky v `@media` se pak budou vztahovat k šířce obrázku samotného. [cdnp.io/e/zZKzRe](http://codepen.io/machal/pen/zZKzRe?editors=1100)
+Tušíte správně, podmínky v `@media` se pak budou vztahovat k šířce obrázku samotného. [cdnp.io/e/zZKzRe](https://codepen.io/machal/pen/zZKzRe?editors=1100)
 
 <div class="ebook-only" markdown="1">
   Podmínky budou pracovat jako Container Queries, které bychom ve webdesignu potřebovali jako sůl. Ale nemáme je. Zatím tedy jen u externích SVG. Zmíním je ještě [v kapitole o Media Queries](media-queries-tipy.md).

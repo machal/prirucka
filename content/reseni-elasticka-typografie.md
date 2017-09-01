@@ -24,7 +24,7 @@ Nejčastěji se pro elastickou typografii používají právě nové [jednotky v
 
 ![Téměř elastická typografie pomocí vw](dist/images/original/elasticka-typografie-2.jpg)
 
-Jenže nastavení typografie a tedy svislého rozměru v procentech ze šířky okna, tedy vodorovného rozměru, samo o sobě nestačí. Nezohledňuje totiž vnitřní ani vnější okraje. Text se tedy v určitých velikostech okna zalomí. Podívejte se na demo: [cdpn.io/e/bZzmGg](http://codepen.io/machal/pen/bZzmGg?editors=1100#0).
+Jenže nastavení typografie a tedy svislého rozměru v procentech ze šířky okna, tedy vodorovného rozměru, samo o sobě nestačí. Nezohledňuje totiž vnitřní ani vnější okraje. Text se tedy v určitých velikostech okna zalomí. Podívejte se na demo: [cdpn.io/e/bZzmGg](https://codepen.io/machal/pen/bZzmGg?editors=1100#0).
 
 ## Elastická typografie v procentech z výšky komponenty
 
@@ -94,5 +94,5 @@ Výsledek pak v různých zařízeních vypadá takto:
 
 Samozřejmě. Měli bychom pak ale ještě myslet na nějaká minima a případně i maxima. Znovu tady pro zájemce odkážu na [článek na Smashing Magazine](https://www.smashingmagazine.com/2016/05/fluid-typography/).
 
-Živé demo i s fallbackem je tady: [cdpn.io/e/bZzmGg](http://codepen.io/machal/pen/bZzmGg?editors=1100#0).
+Živé demo i s fallbackem je tady: [cdpn.io/e/bZzmGg](https://codepen.io/machal/pen/bZzmGg?editors=1100#0).
 

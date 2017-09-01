@@ -28,7 +28,7 @@ Dejme tomu, že máme jednoduchou vodorovnou navigaci, jejíž obsah se nemění
 @media only screen and (min-width: 27.5em) { … }
 ```
 
-Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na CodePenu: [cdpn.io/e/bBPdgQ](http://codepen.io/machal/pen/bBPdgQ)
+Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na CodePenu: [cdpn.io/e/bBPdgQ](https://codepen.io/machal/pen/bBPdgQ)
 
 Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy obsah prostě při tvorbě layoutu neznáme: Například když pracujeme na frameworku nebo připravujeme šablonu pro obsah, který má v rukách až koncový uživatel našeho redakčního systému. Jako příklad můžu opět jmenovat Bootstrap, který má body zlomu nastavené pevně. Naštěstí jdou měnit a vždy můžete přidat nějaké vlastní. 
 
@@ -96,7 +96,7 @@ Možné ovšem je zanořování Media Queries do sebe se selektorem uvnitř:
 }
 ```
 
-Jen pozor, nebude to fungovat v žádném Internet Exploreru, takže spolehlivější je opět využít automat pro zpracování CSS, jako je preprocesor. Živá ukázka různých typů zanořování je na CodePenu. [cdpn.io/e/xEkKd](http://codepen.io/machal/pen/xEkKd)
+Jen pozor, nebude to fungovat v žádném Internet Exploreru, takže spolehlivější je opět využít automat pro zpracování CSS, jako je preprocesor. Živá ukázka různých typů zanořování je na CodePenu. [cdpn.io/e/xEkKd](https://codepen.io/machal/pen/xEkKd)
 
 
 ## Psaní kódu stylem Mobile First

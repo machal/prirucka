@@ -26,7 +26,7 @@ Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost p
 </figcaption> 
 </figure>
 
-Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](http://codepen.io/machal/pen/ENMezZ?editors=1100#0)
+Vyzkoušejte si zmenšit okno v ukázce. [cdpn.io/e/ENMezZ](https://codepen.io/machal/pen/ENMezZ?editors=1100#0)
 
 Řešení se hodí hlavně pro tabulky s menším počtem řádků i sloupců a s popisem dat nahoře. Nebo také pro tabulky vkládané přes redakční systémy, u kterých nevíte, jak složité budou. Anebo když prostě chcete ušetřit čas na vývoj.
 
@@ -51,7 +51,7 @@ Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně m
 </figcaption> 
 </figure>
 
-Vyzkoušejte si naživo v CodePenu. [cdpn.io/e/qqvJdV](http://codepen.io/machal/pen/qqvJdV?editors=1100#0)
+Vyzkoušejte si naživo v CodePenu. [cdpn.io/e/qqvJdV](https://codepen.io/machal/pen/qqvJdV?editors=1100#0)
 
 S propracovanějším řešením využívajícím flexbox a další moderní CSS vlastnosti přišel David Bushell v textu „CSS only Responsive Tables“. [vrdl.in/xlpbn](http://dbushell.com/2016/03/04/css-only-responsive-tables/)
 
@@ -82,7 +82,7 @@ V nejjednodušší možné CSS implementaci tabulce na menších displejích zru
 }
 ```
 
-Na CodePenu je možné zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](http://codepen.io/machal/pen/bBZmxE?editors=1100#0)
+Na CodePenu je možné zkusit si to i s dalším stylováním. [cdpn.io/e/bBZmxE](https://codepen.io/machal/pen/bBZmxE?editors=1100#0)
 
 I tak ale čisté CSS řešení nebude dokonalé. Pro tento typ práce s tabulkami budete potřebovat kousek Javascriptu nebo zmíněný plugin.
 

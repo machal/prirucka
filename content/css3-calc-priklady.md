@@ -61,7 +61,7 @@ Máme fixně vysokou hlavičku. Tělo dokumentu pak má zabrat zbytek výšky ok
 2. **Náhrada `box-sizing`.**  
 Ano, můžete použít něco jako `width: calc({width} + {padding} * 2)`. Ale proč byste to dělali? Změna počítání šířky a výšky pomocí [vlastnosti Box Sizing](css3-box-sizing.md) má daleko lepší podporu než `calc()`. [vrdl.in/53f64](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-7)  
 3. **Posun obrázku na pozadí zezdola a zprava.**  
-Je možné použít zápis typu `background-position: calc(100% - {posun-zezdola}) calc(100% - {posun-zprava})`. Lepší ale je využít čtyřčíselný zápis pro pozicování obrázku s posunem, který má širší podporu mezi prohlížeči. [caniuse.com/css-background-offsets](http://caniuse.com/#feat=css-background-offsets) [cdpn.io/e/OXpqRm](http://codepen.io/machal/pen/OXpqRm)    
+Je možné použít zápis typu `background-position: calc(100% - {posun-zezdola}) calc(100% - {posun-zprava})`. Lepší ale je využít čtyřčíselný zápis pro pozicování obrázku s posunem, který má širší podporu mezi prohlížeči. [caniuse.com/css-background-offsets](http://caniuse.com/#feat=css-background-offsets) [cdpn.io/e/OXpqRm](https://codepen.io/machal/pen/OXpqRm)    
 
 Takže – `calc()` se hodí hlavně pro responzivní obrázky a pro zpřehlednění kódu. Máte jiné využití? Budu rád, když mi napíšete.
 

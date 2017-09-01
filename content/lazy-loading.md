@@ -57,8 +57,8 @@ Mě osobně se bude hodit na načítání jakéhokoliv obsahu náročnějšího 
 
 Demonstrace použití Unveil.js s fadeout animací načtených obrázků.
 
-<p data-height="270" data-theme-id="502" data-slug-hash="ILhbK" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/machal/pen/ILhbK'>CSS3 Border Image</a> by Martin Michálek (<a href='http://codepen.io/machal'>@machal</a>) on <a href='http://codepen.io'>CodePen</a></p>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+<p data-height="270" data-theme-id="502" data-slug-hash="ILhbK" data-user="machal" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/machal/pen/ILhbK'>CSS3 Border Image</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a></p>
+<script async src="https://codepen.io/assets/embed/ei.js"></script>
 
 ## Zajímavé odkazy
 

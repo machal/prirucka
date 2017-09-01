@@ -17,7 +17,7 @@ Většina webů si ale vystačí se dvěma: upřednostňujícím a přepínacím
 
 Se zmenšující se šířkou obrazovky se zmenšuje i počet položek v navigaci. Na mobilních šířkách obrazovky pak zůstává opravdu jen to důležité. Ostatní položky navigace jsou obvykle dostupné na rozbalení.  
 
-Technicky je možné tento návrhový vzor řešit i dost jednoduše jen pomocí CSS. [cdpn.io/e/adeMzP](http://codepen.io/olach/details/adeMzP) 
+Technicky je možné tento návrhový vzor řešit i dost jednoduše jen pomocí CSS. [cdpn.io/e/adeMzP](https://codepen.io/olach/details/adeMzP) 
 
 ## Přepínač (Toggle)
 

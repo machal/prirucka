@@ -164,7 +164,7 @@ Vazba na odečítače obrazovky funguje ve všech aktuálních prohlížečích 
 
 A co odečítače obrazovky? Testoval jsem to v Chrome přes VoiceOver na Macu a NVDA na Windows. Obrázek i popisek z ukázky v pohodě přečtou. Na druhou stranu nijak speciálně nehlásí, že jde o obrázek s popiskem nebo přímo značku `<figure>`. Ale to se samozřejmě může v různých čtečkách různit a do budoucna změnit.
 
-Ukázka používaná v článku je na CodePenu. [cdpn.io/e/oZOOer](http://codepen.io/machal/pen/oZOOer)
+Ukázka používaná v článku je na CodePenu. [cdpn.io/e/oZOOer](https://codepen.io/machal/pen/oZOOer)
 
 
 

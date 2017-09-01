@@ -6,7 +6,7 @@ Je to jednoduchá, ale efektní věc postavená na [animovaných přechodech](cs
 
 Proč Zeldmanovo? Řešení jsem poprvé viděl na [studio.zeldman.com](http://studio.zeldman.com/).
 
-Podívejte se: [cdpn.io/e/ozgPwm](http://codepen.io/machal/pen/ozgPwm).
+Podívejte se: [cdpn.io/e/ozgPwm](https://codepen.io/machal/pen/ozgPwm).
 
 ![Zeldmanovo zatržítko](dist/images/original/reseni-zeldman-checkbox.jpg)
 
@@ -120,4 +120,4 @@ V IE 8 a 9 by se ale zobrazovalo špatně. Důvody jsou v nepodpoře CSS transfo
 
 Staré Explorery pak zobrazí klasický systémový checkbox.
 
-A je to. Tady je živé demo: [cdpn.io/e/ozgPwm](http://codepen.io/machal/pen/ozgPwm).
+A je to. Tady je živé demo: [cdpn.io/e/ozgPwm](https://codepen.io/machal/pen/ozgPwm).

@@ -75,11 +75,11 @@ Jak to ale pak budeme debugovat? Třeba na složitějších webech, které použ
 
 ## Ale `<iframe>` a externí SVG umí Element Queries dávno, fňuk…
 
-Tab Atkins v odkazovaném článku zmiňuje jinou cestu: pro komponenty použít nový element typu `<iframe>`. Ten totiž nastavuje nový viewport. A to si pište, že se Media Queries uvnitř `<iframe>` vztahují k aktuálním rozměrům elementu, nikoliv celého dokumentu. Starej páprda `<iframe>` nám to teď natřel. [Umí Element Queries](http://codepen.io/machal/pen/EWgXGz?editors=1100) už… no minimálně dvě století. 
+Tab Atkins v odkazovaném článku zmiňuje jinou cestu: pro komponenty použít nový element typu `<iframe>`. Ten totiž nastavuje nový viewport. A to si pište, že se Media Queries uvnitř `<iframe>` vztahují k aktuálním rozměrům elementu, nikoliv celého dokumentu. Starej páprda `<iframe>` nám to teď natřel. [Umí Element Queries](https://codepen.io/machal/pen/EWgXGz?editors=1100) už… no minimálně dvě století. 
 
 <!-- AdSnippet -->
 
-Stejně je na tom [SVG](svg.md) vložené do dokumentu externě, například pomocí `<img>` značky. I tamní Media Queries se odkazují k elementu samotnému, nikoliv celému dokumentu. [SVG už taky umí Element Queries](http://codepen.io/machal/pen/zZKzRe?editors=1100). Zásah. 
+Stejně je na tom [SVG](svg.md) vložené do dokumentu externě, například pomocí `<img>` značky. I tamní Media Queries se odkazují k elementu samotnému, nikoliv celému dokumentu. [SVG už taky umí Element Queries](https://codepen.io/machal/pen/zZKzRe?editors=1100). Zásah. 
 
 Jenže u dnešního `<iframe>` ani externího SVG nepotřebuje prohlížeč čekat na jejich obsah ani styly. Vykreslí si rodičovský dokument a po čase nějak došudlá obsah „ajfrejmů“ a externích vektorových dokumentů.
 
@@ -107,5 +107,5 @@ No jasně, Element Queries všichni chtějí, takže se to snad jednou podaří 
 - [Elementary](https://github.com/filamentgroup/elementary) od Scotta Jehla
 - [EQ.js](https://github.com/Snugug/eq.js) od Sam Richards
 
-Zatím jsem zkoušel jen pár [demíček](http://codepen.io/machal/pen/XMmdWx) s EQCSS. Což o to, v demíčkách vypadá spousta věcí skvěle. I na menších projektech může být fajn si s tím hrát, ale  na použití na rozumně velkých webech bych si z výše uvedených důvodů netroufl. Za vaše zkušenosti budu vděčný.
+Zatím jsem zkoušel jen pár [demíček](https://codepen.io/machal/pen/XMmdWx) s EQCSS. Což o to, v demíčkách vypadá spousta věcí skvěle. I na menších projektech může být fajn si s tím hrát, ale  na použití na rozumně velkých webech bych si z výše uvedených důvodů netroufl. Za vaše zkušenosti budu vděčný.
 

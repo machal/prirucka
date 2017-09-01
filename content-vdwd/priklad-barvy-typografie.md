@@ -48,7 +48,7 @@ Zbývá nám písmo pro texty a rozhraní. Pro delší texty, které na webu mí
 </figcaption> 
 </figure> 
 
-Přidáno do našeho projektu to vypadá jako v následujícím CodePenu. [cdpn.io/e/XpbPmm](http://codepen.io/machal/pen/XpbPmm?editors=1100)
+Přidáno do našeho projektu to vypadá jako v následujícím CodePenu. [cdpn.io/e/XpbPmm](https://codepen.io/machal/pen/XpbPmm?editors=1100)
 
 ## Grafický styl: minimalistický s jednoduchými linkami
 

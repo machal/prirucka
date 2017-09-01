@@ -2,7 +2,7 @@
 
 Hvězdičkové hodnocení se na webu používá poměrně často. Před časem jsem kápl na moc pěkné řešení postavené na [SVG](svg.md) vloženém do HTML. 
 
-Tady je CodePen pro nedočkavce. [cdpn.io/e/yayxGv](http://codepen.io/machal/pen/yayxGv) 
+Tady je CodePen pro nedočkavce. [cdpn.io/e/yayxGv](https://codepen.io/machal/pen/yayxGv) 
 
 ![Hvězdičkové hodnocení](../dist/images/original/svg-hvezdy.jpg)
 
@@ -133,7 +133,7 @@ Takhle vypadá celá viditelná část kódu:
   </svg>
 ```
 
-A pro pořádek ještě jednou živý příklad na CodePenu. [cdpn.io/e/yayxGv](http://codepen.io/machal/pen/yayxGv) 
+A pro pořádek ještě jednou živý příklad na CodePenu. [cdpn.io/e/yayxGv](https://codepen.io/machal/pen/yayxGv) 
 
 <!-- AdSnippet -->
 

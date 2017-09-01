@@ -28,7 +28,7 @@ Uvést musíme, aby si obrázek zároveň zachoval poměr stran. V opačném př
 
 <!-- AdSnippet -->
 
-Vyzkoušet si to můžete na CodePen, kde je to ještě doplněno o drobné ošetření  občas neposlušného Internet Exploreru 8. [cdpn.io/e/jWebge](http://codepen.io/machal/pen/jWebge)
+Vyzkoušet si to můžete na CodePen, kde je to ještě doplněno o drobné ošetření  občas neposlušného Internet Exploreru 8. [cdpn.io/e/jWebge](https://codepen.io/machal/pen/jWebge)
 
 
 ## Pružné vkládané elementy se zachovaním poměru stran
@@ -81,7 +81,7 @@ Poměr stran je zde tedy 100 ku 60, takže 5 : 3. Pro poměr 16 : 9 bychom do `p
 
 Tuto třídu pak aplikujeme přímo na `<iframe>` nebo jiný vkládaný element. Ten už má za úkol se jen sobecky roztahovat na celou výšku i šířku rodiče.
 
-Máte svrbění si to hned zkoušet?  Neváhejte, CodePen se na vás těší. [cdpn.io/e/BdniC](http://codepen.io/machal/pen/BdniC)
+Máte svrbění si to hned zkoušet?  Neváhejte, CodePen se na vás těší. [cdpn.io/e/BdniC](https://codepen.io/machal/pen/BdniC)
 
 <div class="ebook-only" markdown="1">
 Tímto jsme ošetřili *pružnost* obrázků a vkládaných médií v rámci layoutu. *Responzivnost* se ale definuje šířeji než jen prostou flexibilní reakcí na změnu šířky layoutu. Jdeme na ni. Zaměříme se nejprve na obrázky, což je bezpochyby nejčastější mediální obsah.

@@ -33,7 +33,7 @@ Prohlížeč vezme v potaz i aktuální `device-pixel-ratio`. Například na za�
 
 V potenciálu chytrého rozhodování prohlížeče vězí krása atributu `srcset`. Prohlížeč zváží všechny informace, které má o stavu stránky k dispozici a podle toho vybere nejvhodnější obrázek. Vy jako autoři jen vygenerujete dost variant a správně je popíšete. 
 
-Demo výše uvedeného kódu mám také na CodePenu. Nejlépe jej vyzkoušíte, když si zmenšíte okno ukázky, obnovíte stránku a pak budete okno postupně zvětšovat. [cdpn.io/e/WboGgE](http://codepen.io/machal/pen/WboGgE?editors=100)
+Demo výše uvedeného kódu mám také na CodePenu. Nejlépe jej vyzkoušíte, když si zmenšíte okno ukázky, obnovíte stránku a pak budete okno postupně zvětšovat. [cdpn.io/e/WboGgE](https://codepen.io/machal/pen/WboGgE?editors=100)
 
 
 ### Kolik variant obrázků vygenerovat?
@@ -172,7 +172,7 @@ Pojďme si pro jistotu ještě shrnout celý zápis:
 2. V `srcset` máme seznam variant obrázku, které jsme předpřipravili a uložili na server.
 3. Atribut `sizes` říká: na šířkách okna od 800 pixelů výše bude mít obrázek velikost `calc((100vw - 2 * 8px) * 0.49)`. Ve všech ostatních případech – to znamená do 799 pixelů – pak `calc(100vw - 2 * 8px)`.
 
-Demo na CodePenu: [cdpn.io/e/azBmaX](http://codepen.io/machal/full/azBmaX?editors=110)
+Demo na CodePenu: [cdpn.io/e/azBmaX](https://codepen.io/machal/full/azBmaX?editors=110)
 
 Nezapomínejte prosím na povinný atribut `alt`, který ocení vyhledávače a odečítače obrazovky pro zrakově hendikepované uživatele.
 

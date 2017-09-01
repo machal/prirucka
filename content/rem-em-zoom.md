@@ -80,4 +80,4 @@ Pokud chcete takto vytvářet velikostní varianty komponent, musíte dodržet j
 
 Různé komponenty budou vyžadovat různý přístup: Někde budete ještě muset do velikostních tříd přidat pravidlo pro menší výšku řádku, někde to bude stačit tak jako v mé ukázce.
 
-Dává vám to smysl? Kód k tomuto textu je také na CodePenu. [cdpn.io/e/RKQmVG](http://codepen.io/machal/pen/RKQmVG?editors=1100#0)
+Dává vám to smysl? Kód k tomuto textu je také na CodePenu. [cdpn.io/e/RKQmVG](https://codepen.io/machal/pen/RKQmVG?editors=1100#0)

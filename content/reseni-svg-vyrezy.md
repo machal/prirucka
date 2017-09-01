@@ -8,7 +8,7 @@ Po čase pro vás mám další z příkladů, které jsem ukazoval na přednáš
 
 ![Vlastní výřez pomocí SVG](dist/images/original/reseni-svg-vyrezy.jpg)
 
-[Možností](http://codepen.io/yoksel/full/fsdbu/) je víc, ale když chci, aby to fungovalo prakticky ve všech prohlížečích, zvolím [SVG](svg.md). Výřez nezvládne jen Internet Explorer 8 a starší. Ale uděláme pro ně docela vyčůrané náhradní řešení, vydržte.
+[Možností](https://codepen.io/yoksel/full/fsdbu/) je víc, ale když chci, aby to fungovalo prakticky ve všech prohlížečích, zvolím [SVG](svg.md). Výřez nezvládne jen Internet Explorer 8 a starší. Ale uděláme pro ně docela vyčůrané náhradní řešení, vydržte.
 
 
 ## 1) Nejdříve fotka v SVG
@@ -42,7 +42,7 @@ Všimněte si, že zde nepoužívám zanoření do `<defs>`, oblasti pro vymezen
 
 A máme skoro hotovo. Nic složitého, že? Ještě trochu vysvětlování a pak ten fallback pro starší prohlížeče.
 
-Nasazení ořezového tvaru (`clip-path`) dělám přímým parametrem v SVG kódu. Proč jsem nepoužil [CSS vlastnost `clip-path`](http://codepen.io/machal/pen/qRPbYZ), která je také standardně k dispozici? Opět kvůli Safari, které ji zatím neumí.
+Nasazení ořezového tvaru (`clip-path`) dělám přímým parametrem v SVG kódu. Proč jsem nepoužil [CSS vlastnost `clip-path`](https://codepen.io/machal/pen/qRPbYZ), která je také standardně k dispozici? Opět kvůli Safari, které ji zatím neumí.
 
 <!-- AdSnippet -->
 
@@ -73,4 +73,4 @@ Ale neuděláme to. Prohlížeče se totiž tváří, že [značku `<image>` zna
 </svg>
 ```
 
-Tady je živá ukázka: [cdpn.io/e/jrPpdO](http://codepen.io/machal/pen/jrPpdO).
+Tady je živá ukázka: [cdpn.io/e/jrPpdO](https://codepen.io/machal/pen/jrPpdO).

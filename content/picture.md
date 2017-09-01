@@ -49,7 +49,7 @@ Máme tři varianty obrázků a prohlížeči chceme přesně stanovit hranice p
 
 Pro okna 1024 pixelů a větší se stáhne a použije obrázek `large_1600.png`, od 800 do 1023 pixelů `medium_1024.png` a pro okna šířky 799 a méně pixelů pak `small_600.png`.
 
-I tady jsem pro vás připravil demo na CodePen. [cdpn.io/e/VYPPQQ](http://codepen.io/machal/pen/VYPPQQ?editors=110) 
+I tady jsem pro vás připravil demo na CodePen. [cdpn.io/e/VYPPQQ](https://codepen.io/machal/pen/VYPPQQ?editors=110) 
 
 <!-- AdSnippet -->
 
