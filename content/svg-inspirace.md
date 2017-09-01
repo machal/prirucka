@@ -34,7 +34,7 @@ Ořezávání obrázků vlastními tvary bude do budoucna možné [i v CSS](http
 
 ![Animace v SVG](dist/images/original/svg-inspirace-animace.jpg)
 
-Animování jednotlivých částí SVG má daleko širší škálu výrazových prostředků než v případě elementů stránky stylovaných pomocí CSS. SVG animace – [SMIL](http://caniuse.com/#search=smil) – nemají plnou podporu a tak se pro rozhýbání používá buď CSS nebo javascriptové knihovny. Nejznámější je [Snap.svg](http://snapsvg.io/), který se bude líbit frontend kodérům. [Greensock](http://greensock.com/) má zase velmi pokročilé možnosti.
+Animování jednotlivých částí SVG má daleko širší škálu výrazových prostředků než v případě elementů stránky stylovaných pomocí CSS. SVG animace – [SMIL](https://caniuse.com/#search=smil) – nemají plnou podporu a tak se pro rozhýbání používá buď CSS nebo javascriptové knihovny. Nejznámější je [Snap.svg](http://snapsvg.io/), který se bude líbit frontend kodérům. [Greensock](http://greensock.com/) má zase velmi pokročilé možnosti.
 
 1. Animované zatržítka s vlastním vzhledem: [Codrops demo](http://tympanus.net/codrops/2013/10/15/animated-checkboxes-and-radio-buttons-with-svg/).
 2. Animované interakce s textovými políčky: [Codrops demo](http://tympanus.net/Development/TextInputEffects/index2.html).

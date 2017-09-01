@@ -43,7 +43,7 @@ width: 30%;
 width: calc(100% / 3 - (2 * 1em));
 ```
 
-A prosím pěkně: pozor na chyby v některých nechvalně známých prohlížečích. Na této stránce doporučuji kliknout na „Known issues“ a hledat „crash“: [caniuse.com/calc](http://caniuse.com/calc).
+A prosím pěkně: pozor na chyby v některých nechvalně známých prohlížečích. Na této stránce doporučuji kliknout na „Known issues“ a hledat „crash“: [caniuse.com/calc](https://caniuse.com/calc).
 
 
 ### Polyfill

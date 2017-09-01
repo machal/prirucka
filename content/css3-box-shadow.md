@@ -45,7 +45,7 @@ Stíny můžeme **vrstvit**, stačí je oddělit čárkou. První stín je ten n
 
 ```css
 box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .5),
-	inset 5px 5px 10px 10px rgba(0, 0, 0, .5);
+    inset 5px 5px 10px 10px rgba(0, 0, 0, .5);
 ```
 
 Živá ukázka příkladu je na [cdpn.io/e/lAoDv](http://cdpn.io/e/lAoDv).
@@ -74,7 +74,7 @@ Můžete samozřejmě kombinovat nerozostřené i rozostřené stíny. [dabblet.
 Podpora v prohlížečích
 ----------------------
 
-IE9+. Podpora v moderních prohlížečích je téměř bezproblémová. [caniuse.com/box-shadow](http://caniuse.com/box-shadow)
+IE9+. Podpora v moderních prohlížečích je téměř bezproblémová. [caniuse.com/box-shadow](https://caniuse.com/box-shadow)
 
 ### Starší Webkit prohlížeče občas ignorují roztažení
 

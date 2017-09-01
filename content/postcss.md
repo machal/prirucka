@@ -67,7 +67,7 @@ a {
 }
 ```
 
-Mimochodem, nativní proměnné mají velmi dobrou [podporu v prohlížečích](http://caniuse.com/#feat=css-variables). PostCSS potřebujete hlavně kvůli náhradnímu řešení pro Internet Explorery a Edge.
+Mimochodem, nativní proměnné mají velmi dobrou [podporu v prohlížečích](https://caniuse.com/#feat=css-variables). PostCSS potřebujete hlavně kvůli náhradnímu řešení pro Internet Explorery a Edge.
 
 Je dobré vědět, že CSS proměnné jsou na rozdíl od preprocesorových sester dynamické. Dědí se a jsou dostupné v Javascriptu. Mrkněte se na [Je čas](http://jecas.cz/var). 
 

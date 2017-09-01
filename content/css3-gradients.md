@@ -136,7 +136,7 @@ Opakujícími se barevnými a zelenými plochami se nám vykreslí „terč“. 
 
 ## Podpora v prohlížečích
 
-Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini. Android Browser 2.3 opakované gradienty nezvládne vůbec a v podpoře běžných gradientů má také mezery: [caniuse.com/gradients](http://caniuse.com/gradients).
+Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini. Android Browser 2.3 opakované gradienty nezvládne vůbec a v podpoře běžných gradientů má také mezery: [caniuse.com/gradients](https://caniuse.com/gradients).
 
 <!-- AdSnippet -->
 

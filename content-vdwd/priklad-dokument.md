@@ -69,7 +69,7 @@ Proměnné asi znáte z CSS preprocesorů. Ty jsou pro větší projekty dost u�
 
 Jak už víte, v knize se chci obejít bez složitějších technikálií a z relativně komplexních CSS preprocesorů bychom toho využili jen málo. Proměnné jsou ale nově přímou součástí kaskádových stylů. A jde s nimi tropit ještě větší legrace než s těmi z preprocesorů. Třeba číst a měnit je z javascriptového nebo HTML kódu. Nastudujte si to na JeČas.cz. [jecas.cz/var](http://jecas.cz/var)
 
-Podpora CSS proměnných ovšem není vůbec špatná. Z aktuálních prohlížečů je nezvládají jenom Internet Explorery. [caniuse.com/css-variables](http://caniuse.com/#feat=css-variables)
+Podpora CSS proměnných ovšem není vůbec špatná. Z aktuálních prohlížečů je nezvládají jenom Internet Explorery. [caniuse.com/css-variables](https://caniuse.com/#feat=css-variables)
 
 Důležité je, že ani v Internet Explorerech se stránka (díky „blbuvzdornosti“ CSS) nerozpadne. Prostě se namísto barev z proměnných použijí barvy výchozí. Texty budou černé, odkazy modré. Vzhledem k rozšířenosti Exploreru verze 11 nám to ale může vadit. Pak doporučuji nasadit automatizované přepočítání proměnných do běžných CSS hodnot. Prohlížeč dostane CSS bez proměnných. Udělejte to pomocí PostCSS. [vrdl.cz/p/postcss](https://www.vzhurudolu.cz/prirucka/postcss)
 

@@ -78,7 +78,7 @@ Vlastnost `box-sizing` se moc hodí na sjednocení způsobu počítání výšky
 
 ## Podpora v prohlížečích
 
-IE7+ a všechny moderní prohlížeče. Pokud jste vlastnost neznali, budete se divit, jak výborně je podporována. [caniuse.com/box-sizing](http://caniuse.com/box-sizing)
+IE7+ a všechny moderní prohlížeče. Pokud jste vlastnost neznali, budete se divit, jak výborně je podporována. [caniuse.com/box-sizing](https://caniuse.com/box-sizing)
 
 Je ale dobré vědět, že méně používanou hodnotu `padding-box` podporuje jen Firefox.
 

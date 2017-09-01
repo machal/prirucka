@@ -21,6 +21,6 @@ Background Origin sám o sobě nic nedělá, jen definuje plochu, v jaké platí
 
 ## IE8
 
-Opět se musíte obejít bez podpory IE8 [caniuse.com/background-origin](http://caniuse.com/background-origin).
+Opět se musíte obejít bez podpory IE8 [caniuse.com/background-origin](https://caniuse.com/background-origin).
 
 Polyfill pro tuto vlastnost neexistuje, stejně tak ani částečná náhrada pomocí vlastnosti `filter`. V IE8 tedy zbývá nefunkčnost vlastnosti ignorovat nebo použít detekci vlastnosti a vymyslet alternativní řešení pro starší prohlížeče.

@@ -13,20 +13,20 @@ Animaci si nejdřív nadefinujete pomocí at-rule (zavináčové funkce) `@keyfr
 
 ```css
 @keyframes _nazev_animace_ {
-	_cas_ { _deklarace_vlastnosti_ }
-	_cas_ { _deklarace_vlastnosti_ }
+    _cas_ { _deklarace_vlastnosti_ }
+    _cas_ { _deklarace_vlastnosti_ }
 }
 
 #example {
-	animation:
-		_nazev_animace_
-		_cas_trvani_
-		_casova_funkce_prubehu_
-		_zpozdeni_
-		_pocet_opakovani_
-		_smer_prubehu_
-		_fill_mode_
-		(,_dalsi_animace_);
+    animation:
+        _nazev_animace_
+        _cas_trvani_
+        _casova_funkce_prubehu_
+        _zpozdeni_
+        _pocet_opakovani_
+        _smer_prubehu_
+        _fill_mode_
+        (,_dalsi_animace_);
 }
 ```
 
@@ -83,7 +83,7 @@ Definují začátek (klíčové slovo `from` nebo `0%`), průběh (pomocí proce
 Podpora v prohlížečích
 ----------------------
 
-CSS3 animace nepodporuje například IE9 a starší: [caniuse.com/css-animation](http://caniuse.com/#feat=css-animation).
+CSS3 animace nepodporuje například IE9 a starší: [caniuse.com/css-animation](https://caniuse.com/#feat=css-animation).
 
 Strategii podpory starších prohlížečů je dobré zvolit podle typu animace.
 

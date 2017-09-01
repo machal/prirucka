@@ -30,10 +30,10 @@ Formáty souborů s webovými fonty
 
 Pokud nepoužíváte cloudová řešení typu Typekit nebo Google Fonts a uživatelům servírujete vlastní soubory s fonty, potřebuje základní povědomí o formátech souborů:
 
-* **WOFF** (Web Open Font Format) – dnes převládající formát souborů. Podporovaný je ale MSIE až od verze 9 a Android Browserem od verze 4.4 – [caniuse.com/woff](http://caniuse.com/woff)
-* **TTF/OTF** (TrueType/OpenType) – dva formáty, které podporují téměř všechny moderní prohlížeče, jen MSIE až od verze 9. Autor souboru musí navíc nastavit tzv. „embeding bits“ na „installable“. [caniuse.com/ttf](http://caniuse.com/ttf)
-* **SVG** (fonty definované ve vektorovém formátu SVG) – potřebujete, jen pokud chcete podporovat opravdu hodně staré verze iOS Safari — 4.3 a starší. [caniuse.com/svg-fonts](http://caniuse.com/svg-fonts)
-* **EOT** (Embedded OpenType font) – podporují všechny Explorery od verze 4. Potřebujete, pokud chcete podporovat IE8 a starší. [caniuse.com/eot](http://caniuse.com/eot)
+* **WOFF** (Web Open Font Format) – dnes převládající formát souborů. Podporovaný je ale MSIE až od verze 9 a Android Browserem od verze 4.4 – [caniuse.com/woff](https://caniuse.com/woff)
+* **TTF/OTF** (TrueType/OpenType) – dva formáty, které podporují téměř všechny moderní prohlížeče, jen MSIE až od verze 9. Autor souboru musí navíc nastavit tzv. „embeding bits“ na „installable“. [caniuse.com/ttf](https://caniuse.com/ttf)
+* **SVG** (fonty definované ve vektorovém formátu SVG) – potřebujete, jen pokud chcete podporovat opravdu hodně staré verze iOS Safari — 4.3 a starší. [caniuse.com/svg-fonts](https://caniuse.com/svg-fonts)
+* **EOT** (Embedded OpenType font) – podporují všechny Explorery od verze 4. Potřebujete, pokud chcete podporovat IE8 a starší. [caniuse.com/eot](https://caniuse.com/eot)
 
 ### Syntaxe maximalizující kompatibilitu
 

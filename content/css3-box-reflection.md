@@ -45,7 +45,7 @@ Maska určuje efekt překrytí odlesku. Pro zajištění zrcadlového efektu mas
 Podpora v prohlížečích
 ----------------------
 
-Jen prohlížeče postavené na Webkit jádře. Ke dnešku tedy funguje ve všech Safari i Android Browseru. Dokonce ve všech Chrome, i když už dnes běží na vlastním jádře Blink. [caniuse.com/box-reflect](http://caniuse.com/box-reflect)
+Jen prohlížeče postavené na Webkit jádře. Ke dnešku tedy funguje ve všech Safari i Android Browseru. Dokonce ve všech Chrome, i když už dnes běží na vlastním jádře Blink. [caniuse.com/box-reflect](https://caniuse.com/box-reflect)
 
 Ve Firefoxu lze odlesku dosáhnout pomocí vlastnosti `-moz-element()`. [vrdl.in/yboz2](http://lea.verou.me/2011/06/css-reflections-for-firefox-with-moz-element-and-svg-masks/)
 

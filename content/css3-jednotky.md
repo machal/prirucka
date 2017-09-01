@@ -47,7 +47,7 @@ font-size: 1.5rem;
 
 Fallback je lepší nechat si generovat automaticky, například pomocí CSS preprocesoru.
 
-Více o podpoře v prohlížečích: [caniuse.com/rem](http://caniuse.com/rem).
+Více o podpoře v prohlížečích: [caniuse.com/rem](https://caniuse.com/rem).
 
 
 Jednotky viewportu: vw, vh, vmin, vmax
@@ -106,13 +106,13 @@ Více v článku „MinMaxing: Understanding vMin and vMax in CSS“ na TheNewCo
 
 ### Podpora v prohlížečích
 
-V posledních verzích umí všechny moderní prohlížeče kromě Opery Mini: [caniuse.com/viewport-units](http://caniuse.com/viewport-units).
+V posledních verzích umí všechny moderní prohlížeče kromě Opery Mini: [caniuse.com/viewport-units](https://caniuse.com/viewport-units).
 
 Je to ovšem trochu složitější:
 
 * IE9 namísto `vmin` používá `vm`.
 * IE10 neumí `vmax`.
-* Safari na iOS6+7 má hned několik chyb souvisejících s jednotkami viewportu.  Sledujte odkazy na [caniuse.com/viewport-units](http://caniuse.com/viewport-units).
+* Safari na iOS6+7 má hned několik chyb souvisejících s jednotkami viewportu.  Sledujte odkazy na [caniuse.com/viewport-units](https://caniuse.com/viewport-units).
 * IE8, Android Browser až do verze 4.3 a Opera Mini tyto jednotky neumí vůbec.
 
 

@@ -55,7 +55,7 @@ background-size: 50% auto, auto;
 Podpora v prohlížečích
 ----------------------
 
-`background-size` zvládají všechny dnešní prohlížeče kromě IE8 – [caniuse.com/background-img-opts](http://caniuse.com/background-img-opts).
+`background-size` zvládají všechny dnešní prohlížeče kromě IE8 – [caniuse.com/background-img-opts](https://caniuse.com/background-img-opts).
 
 ### `background-size` v IE8
 
