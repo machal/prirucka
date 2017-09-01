@@ -16,7 +16,7 @@ A nejde jen o mobily. Nezapomeňte, že rychlost načítání je jedním z řad�
 
 Pojďme odlišit dva pojmy – moment načtení stránky nastane ve chvíli kdy do prohlížeče doputuje poslední byte ze všech jejich komponent včetně obrázků. Technici znají jako událost `window.load`.
 
-Chvíle zobrazení webu ale může přijít daleko dříve. Prohlížeč může stále načítat komponenty stránky, ale uživateli je ji schopen zobrazit. Ke zkrácení čekání na moment zobrazení slouží především [Critical CSS](http://www.vzhurudolu.cz/blog/35-critical-css) a další pokročilé techniky.
+Chvíle zobrazení webu ale může přijít daleko dříve. Prohlížeč může stále načítat komponenty stránky, ale uživateli je ji schopen zobrazit. Ke zkrácení čekání na moment zobrazení slouží především [Critical CSS](https://www.vzhurudolu.cz/blog/35-critical-css) a další pokročilé techniky.
 
 Teď už dost teoretického a byznysového pozadí. Pusťme se do práce.
 
@@ -30,7 +30,7 @@ Obrázky jsou problematickou zátěží hlavně na mobilech. Pokud z nějakého 
 
 Ideální variantou ovšem je poskytnou prohlížeči více variant obrázků. Podívejte se na technolii [srcset/sizes](srcset-sizes.md), potažmo polyfill [Picturefill](picturefill.md).
 
-Jako všechny komponenty stránky, i obsahové obrázky můžete samozřejmě zmenšovat. Například pomocí [JPEGMini](http://www.jpegmini.com/) nebo třeba imagemin či [jiných Grunt pluginů](http://www.vzhurudolu.cz/prirucka/grunt-pluginy#obrazky).
+Jako všechny komponenty stránky, i obsahové obrázky můžete samozřejmě zmenšovat. Například pomocí [JPEGMini](http://www.jpegmini.com/) nebo třeba imagemin či [jiných Grunt pluginů](https://www.vzhurudolu.cz/prirucka/grunt-pluginy#obrazky).
 
 ### 2) Ikony, loga: použijte vektory
 
@@ -47,7 +47,7 @@ Neplatí to univerzálně, ale často je výhodné JS rozdělit minimálně do d
 
 ### 4) CSS: kritický CSS
 
-Podobně jako u Javascriptu – spojte do jediného souboru, zmenšete jeho datový objem. CSS vám blokují začátek vykreslování, proto si z nich nechte [vygenerovat kritickou část](http://www.vzhurudolu.cz/blog/35-critical-css).
+Podobně jako u Javascriptu – spojte do jediného souboru, zmenšete jeho datový objem. CSS vám blokují začátek vykreslování, proto si z nich nechte [vygenerovat kritickou část](https://www.vzhurudolu.cz/blog/35-critical-css).
 
 Přebíráte strašně starý projekt s mraky nepoužívaného CSS? Zkuste [uncsskovat](https://github.com/addyosmani/grunt-uncss).
 

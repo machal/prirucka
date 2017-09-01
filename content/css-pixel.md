@@ -53,7 +53,7 @@ Takže když napíšu následující podmínku…
 
 …cílím s jeho pomocí na rozlišení obrazovky nebo velikosti okna, které mají méně než 600 CSS pixelů. A cílím tedy i na zmiňovaný iPhone 5S.
 
-Správnou meta značku pro viewport rozebírám v jiném článku. [vrdl.cz/p/viewport-meta](http://www.vzhurudolu.cz/prirucka/viewport-meta)
+Správnou meta značku pro viewport rozebírám v jiném článku. [vrdl.cz/p/viewport-meta](https://www.vzhurudolu.cz/prirucka/viewport-meta)
 
 ## 2×? 1.5×?! 1.325×! 2.37×! 3×! 4×…
 
@@ -135,7 +135,7 @@ Jsou dva typy obrázků na webech: vektorové a bitmapové.
 
 ### Obrázky v rozhraní: ikony, logotypy, dekorace
 
-Tady je rozhodně jedinou možnou cestou použít vektorovou grafiku. „Ikonfonty“ považuji za dobré, ale spíše dočasné řešení. Zajímavější možnosti nabízí SVG. [vrdl.cz/p/svg](http://www.vzhurudolu.cz/prirucka/svg) 
+Tady je rozhodně jedinou možnou cestou použít vektorovou grafiku. „Ikonfonty“ považuji za dobré, ale spíše dočasné řešení. Zajímavější možnosti nabízí SVG. [vrdl.cz/p/svg](https://www.vzhurudolu.cz/prirucka/svg) 
 
 Pro dekorace v rozhraní (vlastní stíny, vlastní vzhled tlačítek nebo rámečků…) je určitě nejvýhodnější využít možností [CSS3](css3.md). Pokud jeho možnosti nestačí, zkuste SVG.
 
@@ -143,7 +143,7 @@ Pro dekorace v rozhraní (vlastní stíny, vlastní vzhled tlačítek nebo ráme
 
 Fotky samozřejmě můžete připravit v ohromném rozlišení, klidně více než čtyřnásobném, a v HTML kódu stránky zmenšit. Bude to vypadat všude hezky, ale nárust datového objemu stránky bude tak šílený, že vás brzy uživatelé jistojistě přijdou ubít svými smartphony. Připomínám, že fotka připravená pro Retina displej neobsahuje 2×, ale 4× více pixelů, takže její datový objem naroste klidně čtyřnásobně.
 
-Pokud je to možné, servírujte obrázky ve více variantách. Máme pro to standardizované parametry `srcset` a `sizes` u značky `<img>`. [vrdl.cz/p/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes)
+Pokud je to možné, servírujte obrázky ve více variantách. Máme pro to standardizované parametry `srcset` a `sizes` u značky `<img>`. [vrdl.cz/p/srcset-sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes)
   
 </div>
 

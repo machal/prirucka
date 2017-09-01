@@ -96,7 +96,7 @@ Pattern Lab totiž není:
 
 Je to nástroj pro *návrh*. Tedy spíše v kategorii Photoshop nebo Sketch. Jejda, to byla bolest, než mě došlo, že se nehodí k nasazení na existující projekt, ale že projekt se musí přizpůsobit jemu. 
 
-V obvyklých případech vás bude přidání Pattern Labu do vašeho designérského workflow stát určité úsilí. U mě to bylo snadné, protože asi víte, že jsem zblázněný do návrhu rozhraní [přímo v prohlížeči](http://www.vzhurudolu.cz/prednaska/design-webu-v-prohlizeci-149). 
+V obvyklých případech vás bude přidání Pattern Labu do vašeho designérského workflow stát určité úsilí. U mě to bylo snadné, protože asi víte, že jsem zblázněný do návrhu rozhraní [přímo v prohlížeči](https://www.vzhurudolu.cz/prednaska/design-webu-v-prohlizeci-149). 
 
 Kromě návrhu ale Pattern Lab dokáže *testovat*, ověřovat designérské hypotézy přímo v prohlížeči, v různých obsahových nebo uživatelských kontextech. To je, řekl bych, jeho hlavní silná stránka. Vy totiž dobře víte, že spíše turista z Francouze vytáhne anglickou větu než vy ze svého Photoshopu či Sketche prototyp testovatelný v prohlížeči. Tady je ta budoucnost, kterou jsem zmiňoval na začátku.
 
@@ -145,7 +145,7 @@ Pattern Lab se naopak nehodí:
 
 - do firem, kde rubete unikátní weby jako Baťa cvičky – obvykle agenturního typu;
 - na malinké projekty – pokud si to nechcete vyloženě zkusit a víte, že to v budoucnu užijete (naopak skvěle se hodí na systémy pro vytváření malinkých webíků);
-- do týmů, ve kterých chybí zkušený designér nebo kodér – spolupráce je tam dost důležitá (lze spojit do jedné osoby [frontend designéra](http://www.vzhurudolu.cz/blog/62-frontend-pozice#frontend-designer)).
+- do týmů, ve kterých chybí zkušený designér nebo kodér – spolupráce je tam dost důležitá (lze spojit do jedné osoby [frontend designéra](https://www.vzhurudolu.cz/blog/62-frontend-pozice#frontend-designer)).
 
 ## Návrat do budoucnosti?
 
@@ -153,4 +153,4 @@ Tím, že jsme si do projektů zavedli vodopádový systém, udělali jsme si z 
 
 Díky nástupu mobilních zařízení se zjednodušují uživatelská rozhraní, což je skvělé, ale nestačí to. Nástup designových systémů vnímám jako pročišťující proces. Proto *návrat*. Návrat do pravěku webdesignu, kdy fáze návrhu a implementace webu nebyla tak komplexní činností.
 
-A proč návrat *do budoucnosti*? [Na WebExpo 2015](http://www.vzhurudolu.cz/blog/38-design-v-prohlizeci) jsem říkal, že nám chybí nástroje pro rozumný návrh rozhraní. A že v budoucnu určitě přijdou. Tušíte správně. Pattern Lab je pro mě jedním z nich. Do světa bez atomického designu, Pattern Labu nebo podobných nástrojů se už, moji milí, vracet nechci. 
+A proč návrat *do budoucnosti*? [Na WebExpo 2015](https://www.vzhurudolu.cz/blog/38-design-v-prohlizeci) jsem říkal, že nám chybí nástroje pro rozumný návrh rozhraní. A že v budoucnu určitě přijdou. Tušíte správně. Pattern Lab je pro mě jedním z nich. Do světa bez atomického designu, Pattern Labu nebo podobných nástrojů se už, moji milí, vracet nechci. 

@@ -13,8 +13,8 @@ Text se chová hezky, ale média nám vystrkují růžky, že ano? Žádný stra
 
 Pro nedočkavce je tady výsledek:
 
-- Otevření v prohlížeči: [vrdl.in/vdwdmed](http://www.vzhurudolu.cz/files/vdwd/media/)
-- Stažení v ZIPu: [vrdl.in/vdwdmedzip](http://www.vzhurudolu.cz/files/vdwd/media.zip)
+- Otevření v prohlížeči: [vrdl.in/vdwdmed](https://www.vzhurudolu.cz/files/vdwd/media/)
+- Stažení v ZIPu: [vrdl.in/vdwdmedzip](https://www.vzhurudolu.cz/files/vdwd/media.zip)
 
 Pojďme si teď lidsky popsat, co přesně se změnilo.
 
@@ -118,7 +118,7 @@ Tuto věc má v našem případě na starost komponenta `style/media/rwd-object.
 
 Aktuální stav příkladu si můžete naživo prohlédnout nebo stáhnout na následujících adresách.
 
-- Otevření v prohlížeči: [vrdl.in/vdwdmed](http://www.vzhurudolu.cz/files/vdwd/media/)
-- Stažení v ZIPu: [vrdl.in/vdwdmedzip](http://www.vzhurudolu.cz/files/vdwd/media.zip)
+- Otevření v prohlížeči: [vrdl.in/vdwdmed](https://www.vzhurudolu.cz/files/vdwd/media/)
+- Stažení v ZIPu: [vrdl.in/vdwdmedzip](https://www.vzhurudolu.cz/files/vdwd/media.zip)
 
 Dostali jsme se tedy do stavu naformátovaného dokumentu s ošetřeným mediálním obsahem. Teď už pojďme navrhnout pokročilejší prvky uživatelského rozhraní. A pak i layout. Nejdřív ale znalosti, které byste měli mít, pokud si na to chcete troufnout.

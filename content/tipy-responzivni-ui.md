@@ -49,7 +49,7 @@ Web CSOBpoj.cz nutí uživatele vyplnit číselný údaj na alfanumerické kláv
 
 Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ formulářového pole. Hodí se pro vkládání telefonů (`&lt;input type="tel"&gt;`),  e-mailů, URL adres nebo na vyhledávací pole. Více informací najdete na speciální stránce MobileInputTypes.com. [mobileinputtypes.com](http://mobileinputtypes.com/)
 
-A ještě, prosím: Telefonní čísla na stránce vždy na mobilních zařízeních vypisujte jako odkazy. [vrdl.cz/b/57-href-tel](http://www.vzhurudolu.cz/blog/57-href-tel)
+A ještě, prosím: Telefonní čísla na stránce vždy na mobilních zařízeních vypisujte jako odkazy. [vrdl.cz/b/57-href-tel](https://www.vzhurudolu.cz/blog/57-href-tel)
 
 <figure>
 <img src="dist/images/original/vdwd/triky-ui-10.jpg" alt="">

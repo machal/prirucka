@@ -22,7 +22,7 @@ Protože jsme ale na kodérském webu, ukážeme si jak lze strukturované úryv
 
 ## Příklad – událost
 
-Pojďme si zápis demonstrovat na schématu [Event](http://schema.org/Event), které může označovat sportovní nebo kulturní události. Nebo taky [školení](http://www.vzhurudolu.cz/kurzy):
+Pojďme si zápis demonstrovat na schématu [Event](http://schema.org/Event), které může označovat sportovní nebo kulturní události. Nebo taky [školení](https://www.vzhurudolu.cz/kurzy):
 
 <pre><code>
 &lt;div <strong>itemscope itemtype=&quot;http://schema.org/Event&quot;</strong>&gt;

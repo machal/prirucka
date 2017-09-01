@@ -26,7 +26,7 @@ Mohou se hodit i další nastavení. Třeba vyloučení parametrů v URL adresá
 
 Pokud nástroj narazí na problém, který považuje za zásadní, pošle vám e-mail. Například i ve chvíli, kdy web vůbec nejede. 
 
-Doporučuji Search Console navštívit alespoň jednou měsíčně a podívat se, jestli vám nezobrazuje zprávy, které jsou méně důležité. Ty se totiž vypisují jen v rozhraní. Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obvykle se o svém webu dozvíte něco zajímavého. Nebo zjistíte co Google chystá. V poslední době se třeba v rozhraní objevily nástroje pro bezpečnostní audit nebo [Google AMP stránky](http://www.vzhurudolu.cz/blog/40-amp), které ale v českém Google zatím nefungují.
+Doporučuji Search Console navštívit alespoň jednou měsíčně a podívat se, jestli vám nezobrazuje zprávy, které jsou méně důležité. Ty se totiž vypisují jen v rozhraní. Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obvykle se o svém webu dozvíte něco zajímavého. Nebo zjistíte co Google chystá. V poslední době se třeba v rozhraní objevily nástroje pro bezpečnostní audit nebo [Google AMP stránky](https://www.vzhurudolu.cz/blog/40-amp), které ale v českém Google zatím nefungují.
 
 ## Jaké problémy vám může Search Console odhalit, když budete nástroj důsledně sledovat?
 

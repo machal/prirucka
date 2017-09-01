@@ -11,7 +11,7 @@
   alt="Obrázek" width="500" height="250">
 ```
 
-Příklad zápisu pro [`značku <picture>`](http://www.vzhurudolu.cz/prirucka/picture):
+Příklad zápisu pro [`značku <picture>`](https://www.vzhurudolu.cz/prirucka/picture):
 
 ```html
 <picture>
@@ -37,5 +37,5 @@ Jasně, Picturefill má tyhle nevýhody, ale dobře se zamyslete co vám jeho po
 
 ## Čtěte dále
 
-* Další části textů o [responzivních obrázcích](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture).
+* Další části textů o [responzivních obrázcích](https://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](https://www.vzhurudolu.cz/prirucka/picture).
 * Moje přednáška [„Responzivní obrázky v praxi“](https://www.youtube.com/watch?v=zsE6caTsi1M) a [slajdy k ní](http://www.slideshare.net/machal/frontendisti-rwd-obrazkypublic).

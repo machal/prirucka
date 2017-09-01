@@ -105,7 +105,7 @@ A nezapomeňte na *guerilla* testování – takové prodejny Alzy nebo Datartu 
 
 ### Browsersync a multiplatformní „DevTools“
 
-Browsersync je obecně velmi přínosný nástroj pro testování responzivních webů. Teď nás ale zajímá hlavně jeho schopnost poskytnout *něco jako DevTools*, ovšem multiplatformně. Obsahuje nástroj jménem Weinre, se kterým je ladění webů na mobilech velmi příjemné. [vrdl.cz/p/browsersync](http://www.vzhurudolu.cz/prirucka/browsersync)
+Browsersync je obecně velmi přínosný nástroj pro testování responzivních webů. Teď nás ale zajímá hlavně jeho schopnost poskytnout *něco jako DevTools*, ovšem multiplatformně. Obsahuje nástroj jménem Weinre, se kterým je ladění webů na mobilech velmi příjemné. [vrdl.cz/p/browsersync](https://www.vzhurudolu.cz/prirucka/browsersync)
 
 <figure>
 <img src="dist/images/original/browsersync-browserstack.jpg" alt="">

@@ -1,6 +1,6 @@
 # Checklist před spuštěním webu
 
-K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-checklist.pdf) nebo [webová aplikace](http://www.vzhurudolu.cz/checklist).
+K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-checklist.pdf) nebo [webová aplikace](https://www.vzhurudolu.cz/checklist).
 
 <!-- AdSnippet -->
 
@@ -13,7 +13,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 - Twitter Cards  
 <small>Vytvoří náhled stránky na Twitteru. Opět možnost zvýšit návštěvnost webu, tentokrát z Twitteru. [Více informací](http://jecas.cz/nahled-odkazu "Je čas: Náhled odkazu při sdílení na sociálních sítích"). [Twitter Validator](https://cards-dev.twitter.com/validator "Card validator").</small>
 - Strukturovaná data pro Google  
-<small>„Rich Snippets“ vylepší náhled webu ve výsledcích vyhledávání. Podstatné hlavně u e-shopů a webů, které obsahují recenze nebo události. [Více informací](http://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"). [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
+<small>„Rich Snippets“ vylepší náhled webu ve výsledcích vyhledávání. Podstatné hlavně u e-shopů a webů, které obsahují recenze nebo události. [Více informací](https://www.vzhurudolu.cz/prirucka/rich-snippets "Rich Snippets"). [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
 - Validní HTML  
 <small>Hlavně kvůli potenciálním chybám v indexaci vyhledávači. Lpí na tom i někteří klienti, tak proč si kazit renomé.  [Více informací](http://jecas.cz/validita). [Český validátor](http://validator.webylon.info/).</small>
 - Správný `<title>` a `<meta description>`  
@@ -21,7 +21,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 - Správný `<meta viewport>`  
 <small>Zařídí správné zobrazování responzivního webu v mobilních prohlížečích. [Více informací](viewport-meta.md "Meta Viewport")</small>
 - Osnova nadpisů je v pořádku  
-<small>Stromová struktura (outline) usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více `<h1>`?](http://www.vzhurudolu.cz/blog/25-vice-h1).</small>
+<small>Stromová struktura (outline) usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více `<h1>`?](https://www.vzhurudolu.cz/blog/25-vice-h1).</small>
 - Obsah bez typografických chyb  
 <small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Dohlídněte alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
 - Odkazy z webu ven jsou platné  
@@ -61,7 +61,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 ## Prohlížeče a kompatibilita
 
 - Plné zobrazení napříč prohlížeči a zařízeními  
-<small>Mezi moderními [prohlížeči](prohlizece.md "Webdesignérův průvodce světem prohlížečů v Česku") už tolik rozdílů není. Prohlížečů je ale hodně, pacholků. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby).</small>
+<small>Mezi moderními [prohlížeči](prohlizece.md "Webdesignérův průvodce světem prohlížečů v Česku") už tolik rozdílů není. Prohlížečů je ale hodně, pacholků. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby).</small>
 - Dostupnost hlavního obsahu ve starších prohlížečích  
 <small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat jako z reklamy na zubní pastu, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
 - Tisková verze stránky  
@@ -70,7 +70,7 @@ K dispozici také [jako PDF](http://www.vzhurudolu.cz/assets/files/webaruv-check
 ## Ostatní
 
 - Grafika podporuje HD displeje typu Retina  
-<small>Obyčejná grafika nebude na vysokopacitních displejích vypadat dobře. Trochu teorie [o problému v článku](http://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"). V praxi potřebujete [SVG](svg.md) a [atribut `srcset`](srcset-sizes.md).</small>
+<small>Obyčejná grafika nebude na vysokopacitních displejích vypadat dobře. Trochu teorie [o problému v článku](https://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"). V praxi potřebujete [SVG](svg.md) a [atribut `srcset`](srcset-sizes.md).</small>
 - Rychlost načítání: požadované skóre v PageSpeedInsights  
 <small>S optimalizací pomůže [Pagespeed Insights tester](https://developers.google.com/speed/pagespeed/insights/?hl=cs). Čím vyšší skóre, tím líp. 100/100 tam ale dosáhnout obvykle nejde.</small>
 - Rychlost načítání: požadovaný SpeedIndex z WebpageTest.org  

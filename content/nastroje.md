@@ -10,7 +10,7 @@ Kodéřina je jen část mé práce, takže dole je i seznam nástrojů, které 
 
 [Sublime](http://www.sublimetext.com/) je klasika. Existují i modernější varianty, ale kromě nepříliš vymakaného našeptávání mě Sublime zcela vyhovuje. Je to editor z kategorie „jednoduchý, ale rozšiřitelný”. Moc toho neumí a vyžaduje nějaký čas pro nastavení a vyladění dle osobních preferencí. Pokud mu čas věnujete, bohatě se vám to vrátí. Pokud vám časová investice tohoto typu nevyhovuje, hledejte IDE jako WebStorm nebo Eclipse.
 
-![Můj Sublime Text](http://www.vzhurudolu.cz/assets/img/content/dest/original/sublime-text.jpg)
+![Můj Sublime Text](https://www.vzhurudolu.cz/assets/img/content/dest/original/sublime-text.jpg)
 
 Z obrázku sami vidíte, že můj Sublime Text neoplývá barvičkami a vizuálními vychytávkami. Princip „konvence je víc než konfigurace“ v praxi.
 
@@ -52,7 +52,7 @@ Chrome a jeho [DevTools](https://developers.google.com/web/tools/chrome-devtools
 
 Zatím v něm debuguju CSS, JS a návrhy rozhraní (v záložce Elements), ladím způsob načítání stránky (záložka Network) nebo ladím zobrazování na dotykových zařízeních (Device Mode).
 
-Věnujte pozornost [tipům a trikům pro DevTools](http://www.vzhurudolu.cz/blog/41-devtools-tipy).
+Věnujte pozornost [tipům a trikům pro DevTools](https://www.vzhurudolu.cz/blog/41-devtools-tipy).
 
 ## Grunt pro sestavování a běh tasků
 

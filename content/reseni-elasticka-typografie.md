@@ -1,6 +1,6 @@
 # CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty
 
-Pojďme si rozebrat jedno z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
+Pojďme si rozebrat jedno z řešení, které jsem ukazoval v přednášce [na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 
 <!-- AdSnippet -->
 

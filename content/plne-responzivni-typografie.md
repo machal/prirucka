@@ -79,7 +79,7 @@ Popíšu to ještě v textu:
 
 Ano, řešení to není triviální, a navíc vychází z toho, že znáte poměr stran komponenty. Ale já vám to říkal: Elastická typografie je složitější, než jste si možná mysleli. Jenže ty výsledky za to stojí, že?
 
-Podrobněji to rozepisuji na Vzhůru dolů v článku „CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty“. [vrdl.cz/p/reseni-elasticka-typografie](http://www.vzhurudolu.cz/prirucka/reseni-elasticka-typografie)
+Podrobněji to rozepisuji na Vzhůru dolů v článku „CSS řešení: Elastická typografie počítaná v procentech z výšky komponenty“. [vrdl.cz/p/reseni-elasticka-typografie](https://www.vzhurudolu.cz/prirucka/reseni-elasticka-typografie)
 
 Pokud jde o tipy na další možná řešení, můžete se obrátit na kolegy ze Smashing Magazine, konkrétně do jejich článku „Truly Fluid Typography With vh And vw Units“. [vrdl.in/4g9xs](https://www.smashingmagazine.com/2016/05/fluid-typography/)
 

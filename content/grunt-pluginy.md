@@ -29,7 +29,7 @@ Moc pěkná a velmi dobře konfigurovatelná kontrola CSS oproti vašim týmový
 
 ### CriticalCSS: vytažení kódu nad zlomem stránky
 
-Vygenerování [kritického CSS](http://www.vzhurudolu.cz/blog/35-critical-css), které zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `<style>` tagu. Ve výsledku zařídí rychlé zobrazení stránky i na mobilech. [Github](https://github.com/filamentgroup/grunt-criticalcss).
+Vygenerování [kritického CSS](https://www.vzhurudolu.cz/blog/35-critical-css), které zobrazuje design nad zlomem stránky. Skvělá věc pro vložení této části jako blok dovnitř `<style>` tagu. Ve výsledku zařídí rychlé zobrazení stránky i na mobilech. [Github](https://github.com/filamentgroup/grunt-criticalcss).
 
 ### CSSnano: zmenšení objemu CSS souboru
 
@@ -47,7 +47,7 @@ Styledocco nebo KSS, které tahle úloha využívá, vytvářejí příručky st
 
 ### Kompilace LESSu, SASSu a Stylusu
 
-To už všichni znáte, vím. [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less), [grunt-sass](https://github.com/sindresorhus/grunt-sass) a [grunt-contrib-stylus](https://github.com/gruntjs/grunt-contrib-stylus) pro kompilaci [CSS preprocesorů](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) jsou naprosto obligátní. 
+To už všichni znáte, vím. [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less), [grunt-sass](https://github.com/sindresorhus/grunt-sass) a [grunt-contrib-stylus](https://github.com/gruntjs/grunt-contrib-stylus) pro kompilaci [CSS preprocesorů](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) jsou naprosto obligátní. 
 
 
 

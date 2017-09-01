@@ -64,7 +64,7 @@ Nevadí. Problémy vyřešíme tím, že použijeme obě hodnoty.
 
 ## Zavináčové pravidlo `@viewport` v CSS
 
-Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišla Opera, která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase nejspíš neumí. V praxi je ten zápis nyní potřeba hlavně pro Internet Explorer na Windows Phone 8. [vrdl.cz/p/viewport-windows](http://www.vzhurudolu.cz/prirucka/viewport-windows)
+Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišla Opera, která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase nejspíš neumí. V praxi je ten zápis nyní potřeba hlavně pro Internet Explorer na Windows Phone 8. [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)
 
 
 ## Meta viewport raději moc nenastavujte Javascriptem 

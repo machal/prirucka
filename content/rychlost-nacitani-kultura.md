@@ -61,7 +61,7 @@ Monitoring frontendu od autorů populárního nástroje pro hlídání výkonnos
 perfbudget: {
   default: {
     options: {
-      url: 'http://www.vzhurudolu.cz/ebook',
+      url: 'https://www.vzhurudolu.cz/ebook',
       key: 'A.393688d7205d1193096b3473d97245bc',
       location: 'ec2-eu-west-1:Chrome',
       connectivity: '3G',
@@ -80,7 +80,7 @@ Když je pak na příkazové řádce spustíte, vrací vám výsledek testu:
 $ grunt perfbudget
 Running "perfbudget:default" (perfbudget) task
 >> -----------------------------------------------
->> Test for http://www.vzhurudolu.cz/ebook 	  FAILED
+>> Test for https://www.vzhurudolu.cz/ebook 	  FAILED
 >> -----------------------------------------------
 >> SpeedIndex: 2429 [FAIL]. Budget is 2000
 >> Summary: http://www.webpagetest.org/result/150813_GN_FDM/

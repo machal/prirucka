@@ -16,7 +16,7 @@ Pravidlo zmenšování dat je evergreen. Platí pro každý web, aplikaci, plat�
 Snižte datovou velikost obrázků, zvolte pro ně vhodné formáty.
  
 1. Používejte responzivní obrázky. Píšu o nich v příští kapitole, o [médiích](responzivni-obrazky.md). 
-2. Cokoliv, co lze vyjádřit vektorem (logotypy, ikony, grafy…), uložte do formátu SVG. [vrdl.cz/p/svg](http://www.vzhurudolu.cz/prirucka/svg)
+2. Cokoliv, co lze vyjádřit vektorem (logotypy, ikony, grafy…), uložte do formátu SVG. [vrdl.cz/p/svg](https://www.vzhurudolu.cz/prirucka/svg)
 3. Pro dekorace používejte CSS, nikoliv obrázky. 
 4. Používejte kompresi pokročilými nástroji, jako je Kraken.io, JPEGmini.com nebo Guetzli. 
 5. Zvažte použití formátu WebP namísto JPEG. I když jej umí jen Chrome a Opera, vyplatí se, protože je datově výrazně úspornější (jeho detekci se naučíte v textu [o značce `<picture>`](picture.md)) z následující kapitoly.
@@ -26,7 +26,7 @@ Další rady od Google na téma obrázků jsou zde: [vrdl.in/od06q](https://deve
 ### Webové fonty
 
 - Každý font má své řezy (tučný, kurzíva…). Nepoužívejte jich zbytečně moc. Více než pět na jedné stránce je na pováženou. Každý řez zatěžuje stránku desítkami kilobajtů dat navíc. 
-- Využívejte úsporný formát WOFF2. [vrdl.cz/b/50-woff2](http://www.vzhurudolu.cz/blog/50-woff2) 
+- Využívejte úsporný formát WOFF2. [vrdl.cz/b/50-woff2](https://www.vzhurudolu.cz/blog/50-woff2) 
 - Do fontu dejte jen znaky, které na webu opravdu potřebujete. Vlastnost podporují i Google Fonts. [vrdl.in/9763d](https://developers.google.com/fonts/docs/getting_started#specifying_script_subsets)
 
 Povídání o rychlosti a webfontech od Google: [vrdl.in/91bg5](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization)
@@ -45,7 +45,7 @@ Rady od Google: [vrdl.in/kmav0](https://developers.google.com/speed/docs/insight
 
 Technika, která odkládá načtení datově zatěžujících komponent až na chvíli, kdy je uživatel opravdu potřebuje. Obvykle na moment narolování stránky na jejich pozici. Zvažte využití téhle užitečné techniky. 
 
-Je použitelná pro javascriptové knihovny, vkládané prvky jako videa z YouTube, ale hlavně pro stránky se spoustou obrázků. [vrdl.cz/p/lazy-loading](http://www.vzhurudolu.cz/prirucka/lazy-loading)
+Je použitelná pro javascriptové knihovny, vkládané prvky jako videa z YouTube, ale hlavně pro stránky se spoustou obrázků. [vrdl.cz/p/lazy-loading](https://www.vzhurudolu.cz/prirucka/lazy-loading)
 
 
 ## 2. Zamezte blokování vykreslení
@@ -68,7 +68,7 @@ Když prohlížeče zjistí, že jsou ve stránce webové fonty, většinou na �
 
 ### CSS
 
-Kritické CSS je implementačně mírně náročnější technika, ale s velkým vlivem na rychlost zobrazení stránky. Jde o automatické rozdělení CSS na dvě části a vložení té kritické přímo do HTML kódu. [vrdl.cz/b/35-critical-css](http://www.vzhurudolu.cz/blog/35-critical-css)
+Kritické CSS je implementačně mírně náročnější technika, ale s velkým vlivem na rychlost zobrazení stránky. Jde o automatické rozdělení CSS na dvě části a vložení té kritické přímo do HTML kódu. [vrdl.cz/b/35-critical-css](https://www.vzhurudolu.cz/blog/35-critical-css)
 
 ### Dejte přednost viditelnému obsahu
 
@@ -104,7 +104,7 @@ Ve dnech, kdy toto píšu, jsou weby běžící na HTTP/2 ještě stále vzácn�
 - Obrázky zase můžete spojovat do takzvaných „sprajtů“. [jecas.cz/css-sprite](http://jecas.cz/css-sprite)
 - Menší obrázky můžete vložit přímo do HTML nebo CSS pomocí takzvaného „data URI“. [jecas.cz/data-uri](http://jecas.cz/data-uri)
 
-Na druhé verzi HTTP protokolu to už obvykle není potřeba dělat. Díky vychytávce jménem *multiplexing* je obecně lepší posílat prohlížeči mnoho malých souborů. Více o HTTP/2, včetně seznamu podporujících hostingů, najdete na Vzhůru dolů. [vrdl.cz/p/http-2](http://www.vzhurudolu.cz/prirucka/http-2)
+Na druhé verzi HTTP protokolu to už obvykle není potřeba dělat. Díky vychytávce jménem *multiplexing* je obecně lepší posílat prohlížeči mnoho malých souborů. Více o HTTP/2, včetně seznamu podporujících hostingů, najdete na Vzhůru dolů. [vrdl.cz/p/http-2](https://www.vzhurudolu.cz/prirucka/http-2)
 
 To bychom měli. Vytvořili jsme si tady základní mapu problémů, které obvykle zpomalují weby. Máte málo času? Doporučím vám začít s následujícími třemi. Trpí jimi skoro každý web a jejich odstranění bude mít největší efekt.
 

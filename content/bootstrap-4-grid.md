@@ -38,7 +38,7 @@ Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnán�
 
 <!-- AdSnippet -->
 
-Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden bod breakpoint pro mobilní zařízení. Psal jsem o tom v článku [o chystaných novinkách](http://www.vzhurudolu.cz/blog/39-bootstrap-4#nova-mrizka-a-flexbox) ve čtyřce.
+Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden bod breakpoint pro mobilní zařízení. Psal jsem o tom v článku [o chystaných novinkách](https://www.vzhurudolu.cz/blog/39-bootstrap-4#nova-mrizka-a-flexbox) ve čtyřce.
 
 V dalších ukázkách kódu už budu `.container` pro zjednodušení vynechávat.
 
@@ -278,4 +278,4 @@ Odkazy na závěr:
 - Sada [ukázek na CodePenu](http://codepen.io/collection/XMjRJk/).
 - Dokumentace gridu [na webu Bootstrapu 4](https://v4-alpha.getbootstrap.com/layout/grid/).
 - Samostatný [Bootstrap 4 grid ke stažení](https://github.com/twbs/bootstrap/tree/v4-dev/dist/css).
-- Naše [školení pokročilého využití Bootstrapu](http://www.vzhurudolu.cz/kurzy/bootstrap).
+- Naše [školení pokročilého využití Bootstrapu](https://www.vzhurudolu.cz/kurzy/bootstrap).

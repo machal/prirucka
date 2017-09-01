@@ -27,7 +27,7 @@ Walmart si například spočítal, že každé zrychlení načtení stránky o v
 
 <!-- AdSnippet -->
 
-I v Česku rychlost zabírá. Portálu Srovname.cz jsem osobně pomáhal se zrychlením důležitých vstupních stránek. Poměrně jednoduchými kroky jsme na mobilních zařízeních zvýšili konverzní poměr o čtvrtinu. [vrdl.cz/b/58-rychlost-srovname-cz](http://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)
+I v Česku rychlost zabírá. Portálu Srovname.cz jsem osobně pomáhal se zrychlením důležitých vstupních stránek. Poměrně jednoduchými kroky jsme na mobilních zařízeních zvýšili konverzní poměr o čtvrtinu. [vrdl.cz/b/58-rychlost-srovname-cz](https://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)
 
 Další analýzy dokazují, že se zrychlení webu pozitivně promítá do všech klíčových ukazatelů: konverzního poměru, počtu zobrazených stránek, počtu návštěv nebo třeba spokojenosti zákazníků. Mnoho studií ze světa najdete na WPO stats. [wpostats.com](https://wpostats.com/)
 
@@ -73,7 +73,7 @@ Zatímco ideální přenosová rychlost mobilního připojení se může rovnat 
 Takže: ano, rychlost načtení je dobré řešit. Pravděpodobně vám na web pomůže dostat více lidí a také vylepší klíčové ukazatele hodnocení jeho úspěšnosti. 
 
 <div class="web-only" markdown="1">
-Co dál? Přečíst si [článek o nástrojích](http://www.vzhurudolu.cz/prirucka/rychlost-nastroje) pro analýzu rychlosti.
+Co dál? Přečíst si [článek o nástrojích](https://www.vzhurudolu.cz/prirucka/rychlost-nastroje) pro analýzu rychlosti.
 </div>
 
 <div class="ebook-only" markdown="1">

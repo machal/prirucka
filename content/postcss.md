@@ -7,7 +7,7 @@ V textu ukážu jak jej využít jako jednoduchý a rychlý preprocesor, který 
 
 ## PostCSS versus CSS preprocesory
 
-Rozdíl je už **v momentě zpracování**. [Preprocesor](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) (SASS, LESS, Stylus) předzpracovává, což v důsledku znamená, že vytváří nový jazyk, který se kompiluje do CSS. PostCSS je postprocesor. Více či méně předpokládá, že to co píšete je současná nebo budoucí verze CSS.
+Rozdíl je už **v momentě zpracování**. [Preprocesor](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) (SASS, LESS, Stylus) předzpracovává, což v důsledku znamená, že vytváří nový jazyk, který se kompiluje do CSS. PostCSS je postprocesor. Více či méně předpokládá, že to co píšete je současná nebo budoucí verze CSS.
 
 Další rozdíl je **v modularitě**. Preprocesory jsou monolity, velké potvory, jejichž všechny vlastnosti nikdy nevyužijete. PostCSS je modulární. Samo o sobě nic neumí, pro každou vlastnost si musíte doinstalovat plugin. To je samozřejmě taky trochu nevýhoda, protože to vyžaduje režii na učení a prozkoumávání. S tím vám tady můžu trochu pomoci.
 
@@ -36,11 +36,11 @@ Je pravda, že CSSnext obsahuje řadu pluginů, které chci sám používat: dop
 
 ## Preprocesor pomocí PostCSS
 
-Jak už jsem [dříve psal](http://www.vzhurudolu.cz/blog/34-css-postprocessing) z preprocesorů toho moc nevyužívám: obejít se nedokážu hlavně bez proměnných a vkládaných importů. Teď ukážu, jak byste takhle malý preprocesor udělali pomocí PostCSS.
+Jak už jsem [dříve psal](https://www.vzhurudolu.cz/blog/34-css-postprocessing) z preprocesorů toho moc nevyužívám: obejít se nedokážu hlavně bez proměnných a vkládaných importů. Teď ukážu, jak byste takhle malý preprocesor udělali pomocí PostCSS.
 
 ### Vkládané importy
 
-[Importy](http://www.vzhurudolu.cz/blog/13-css-preprocesory-2#import), které znáte z preprocesorů, v čistém CSS neuděláte, proto doporučuji využít plugin [postcss-easy-import](https://github.com/TrySound/postcss-easy-import). Umí také automaticky rozpoznat cesty k do `/node_modules` nebo importovat všechny soubory v adresáři:
+[Importy](https://www.vzhurudolu.cz/blog/13-css-preprocesory-2#import), které znáte z preprocesorů, v čistém CSS neuděláte, proto doporučuji využít plugin [postcss-easy-import](https://github.com/TrySound/postcss-easy-import). Umí také automaticky rozpoznat cesty k do `/node_modules` nebo importovat všechny soubory v adresáři:
 
 ```css
 /* komponenta z node_modules: */
@@ -91,7 +91,7 @@ Konfiguraci podporovaných prohlížečů je i kvůli dalším nástrojům nejle
 ]
 ```
 
-Podívejte se na [`package.json`](https://github.com/machal/polaroid-example/blob/master/package.json) ke [školení](http://www.vzhurudolu.cz/kurzy/webova-koderina).
+Podívejte se na [`package.json`](https://github.com/machal/polaroid-example/blob/master/package.json) ke [školení](https://www.vzhurudolu.cz/kurzy/webova-koderina).
 
 ### `rem` fallback
 
@@ -132,7 +132,7 @@ src: 'src/css/index.css',
 dest: 'dist/css/index.css'
 ```
 
-Více je v příkladu ze [školení Dnešní webová kodéřina](http://www.vzhurudolu.cz/kurzy/webova-koderina) [na Githubu](https://github.com/machal/polaroid-example/blob/master/grunt/postcss.js). 
+Více je v příkladu ze [školení Dnešní webová kodéřina](https://www.vzhurudolu.cz/kurzy/webova-koderina) [na Githubu](https://github.com/machal/polaroid-example/blob/master/grunt/postcss.js). 
 
 <!-- AdSnippet -->
 
@@ -143,6 +143,6 @@ Je to fajn základ, který můžete dále rozšiřovat, třeba [o Style Lint](ht
 
 Když PostCSS vezmete jako jemné rozšíření vašeho CSS o proměnné a vkládané importy, s použitím na menší projekty neváhejte. Váš CSS kód bude kompatibilní i do budoucna a získáte velmi rychlou kompilaci. 
 
-Pro ostatní projekty prostě využijte [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Čím více budete ve stylech mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete robustnější řešení. Jazyk, který je vymyšlený pro složité úkoly – nejlépe [Sass](http://sass-lang.com/). Extrémy jako [frameworky typu Bootstrapu](http://www.vzhurudolu.cz/frontend-frameworky) si napsané v nativním CSS a transpilované pomocí PostCSS zatím představit neumím, ale i to se časem může srovnat.
+Pro ostatní projekty prostě využijte [preprocesory](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Čím více budete ve stylech mít programátorského, imperativního kódu – mixinů, funkcí, cyklů – tím více potřebujete robustnější řešení. Jazyk, který je vymyšlený pro složité úkoly – nejlépe [Sass](http://sass-lang.com/). Extrémy jako [frameworky typu Bootstrapu](https://www.vzhurudolu.cz/frontend-frameworky) si napsané v nativním CSS a transpilované pomocí PostCSS zatím představit neumím, ale i to se časem může srovnat.
 
 

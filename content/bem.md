@@ -49,7 +49,7 @@ S BEMem je vše jasné:
 <nav class="nav nav--secondary nav--visible">
 ```
 
-`nav` je blok, jinak též samostatná komponenta. `nav--secondary` a `nav--visible` jsou její modifikátory. Najdeme je všechny pravděpodobně v souboru `nav.css` nebo s koncovkou podle používaného [preprocesoru](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1).
+`nav` je blok, jinak též samostatná komponenta. `nav--secondary` a `nav--visible` jsou její modifikátory. Najdeme je všechny pravděpodobně v souboru `nav.css` nebo s koncovkou podle používaného [preprocesoru](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1).
 
 <!-- AdSnippet -->
 
@@ -67,7 +67,7 @@ BEM navíc není žádná novinka a mezi kodéry je slušně zavedený. Takže p
 
 To je častá výtka, zejména programátorů. Estetický pohled je subjektivní, takže se podle toho těžko rozhodovat, zda metodiku použít nebo ne. 
 
-Ano, může to vypadat ošklivě. Ale buď vám BEM vyřeší nějaký problém nebo ne. Pokud ano, používejte ho. Já to *rozhodně* doporučuji. Výjimku tvoří úplně malinké projekty nebo [generování CSS Javascriptem](http://www.vzhurudolu.cz/blog/77-css-v-js) v aplikacích plně na JS závislých.
+Ano, může to vypadat ošklivě. Ale buď vám BEM vyřeší nějaký problém nebo ne. Pokud ano, používejte ho. Já to *rozhodně* doporučuji. Výjimku tvoří úplně malinké projekty nebo [generování CSS Javascriptem](https://www.vzhurudolu.cz/blog/77-css-v-js) v aplikacích plně na JS závislých.
 
 A teď se do BEMu ponořme hlouběji. 
 
@@ -212,7 +212,7 @@ Raději vás upozorním na další problémy.
 
 ### BEM a zrádné zanořování v preprocesorech {#preprocesory}
 
-Psaní BEM syntaxe si někdo usnadňuje [v CSS preprocesorech](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) pomocí zanořování:
+Psaní BEM syntaxe si někdo usnadňuje [v CSS preprocesorech](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) pomocí zanořování:
 
 ```less
 /* Tohle raději ne: */
@@ -222,7 +222,7 @@ Psaní BEM syntaxe si někdo usnadňuje [v CSS preprocesorech](http://www.vzhuru
 }
 ```
 
-Jen to prosím nepřehánějte. Zanořování v preprocesorech je dobrý sluha, ale zlý pán. Samo o sobě problematické není, ale v kódu méně zkušených CSS pisálků vede [k monolitickým blokům a závorkovému peklu](http://www.vzhurudolu.cz/blog/65-css-kod-problemy#1-zavorkove-peklo-a-monoliticnost). 
+Jen to prosím nepřehánějte. Zanořování v preprocesorech je dobrý sluha, ale zlý pán. Samo o sobě problematické není, ale v kódu méně zkušených CSS pisálků vede [k monolitickým blokům a závorkovému peklu](https://www.vzhurudolu.cz/blog/65-css-kod-problemy#1-zavorkove-peklo-a-monoliticnost). 
 
 Další problém může nastat při vyhledávání v editorech. Může se vám stát, že budete vyhledávat `.nav__item`. V kódu s „ampersandovou“ syntaxí vám to prostě bude dělat problémy.
 
@@ -230,7 +230,7 @@ Další problém může nastat při vyhledávání v editorech. Může se vám s
 
 Ve struktuře DOMu je možné libovolně zanořovat. Hierarchie CSS selektorů má ovšem vždy zůstat jednoúrovňová. `.block__element__heading` je tedy špatně. Má být `.block__element-heading`. 
 
-To proto, aby CSS selektor nebyl závislý na struktuře DOMu a nemuseli jste jej měnit při každé úpravě HTML. [Nekopírujte v CSS strukturu DOMu](http://www.vzhurudolu.cz/blog/63-bem-chyby#v-css-nekopirujte-dom-strukturu).
+To proto, aby CSS selektor nebyl závislý na struktuře DOMu a nemuseli jste jej měnit při každé úpravě HTML. [Nekopírujte v CSS strukturu DOMu](https://www.vzhurudolu.cz/blog/63-bem-chyby#v-css-nekopirujte-dom-strukturu).
 
 ### Křížení komponent {#krizeni}
 
@@ -246,7 +246,7 @@ To proto, aby CSS selektor nebyl závislý na struktuře DOMu a nemuseli jste je
 }
 ```
 
-Občas není zbytí, ale principiálně je křížení komponent špatně. Je pak těžké říct, zda kód patří do komponenty `card` nebo do `button`. Lepší je vytvořit modifikátor typu `button--small`. [Křízení zkrátka nechte rostlinářům](http://www.vzhurudolu.cz/blog/63-bem-chyby#krizeni-nechte-rostlinarum-u-komponent-jej-nezkousejte)
+Občas není zbytí, ale principiálně je křížení komponent špatně. Je pak těžké říct, zda kód patří do komponenty `card` nebo do `button`. Lepší je vytvořit modifikátor typu `button--small`. [Křízení zkrátka nechte rostlinářům](https://www.vzhurudolu.cz/blog/63-bem-chyby#krizeni-nechte-rostlinarum-u-komponent-jej-nezkousejte)
 
 Už jsme skoro na konci. Poslední část textu věnuji použití BEMu v nehostinných podmínkách.
 

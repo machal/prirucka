@@ -47,7 +47,7 @@ Webů běžících na HTTP/2 je už v Česku docela dost. Třeba [VašeČočky.c
 
 ## Optimalizace frontendu se mění: hodně malých souborů je plus
 
-Při optimalizaci pro HTTP/1.1 frontendisti dbající [na rychlost](http://www.vzhurudolu.cz/rychlost-nacitani) minimalizují data co stránka posílá a počet dotazů na server. Na HTTP/2 už na počtu dotazů tak moc nezáleží.
+Při optimalizaci pro HTTP/1.1 frontendisti dbající [na rychlost](https://www.vzhurudolu.cz/rychlost-nacitani) minimalizují data co stránka posílá a počet dotazů na server. Na HTTP/2 už na počtu dotazů tak moc nezáleží.
 
 <!-- AdSnippet -->
 
@@ -58,7 +58,7 @@ Pro HTTP/2 je tedy ideální posílání menších CSS, JS souborů. Hlavní dů
 - **Data-uri** (přímé vkládání obrázků do HTML nebo CSS)  
   Ty se dělaly hlavně kvůli requestům, což nyní padá. Na druhou stranu zvětšovaly datový objem původního obrázku. 
 - **Spojování CSS a JS**  
-  Obvykle bude lepší posílat řadu malých souborů. Pokud soubory rozdělíme, nemusí být potřeba připravovat [kritické CSS](http://www.vzhurudolu.cz/blog/35-critical-css), protože menší soubory s CSS dorazí dříve. Jednotlivé CSS a JS také můžeme kešovat s různými pravidly. Nemusíme také do stránky vkládat CSS, které stránka neobsahuje. Totéž u Javascriptu. Samozřejmě v praxi je potřeba zkoušet všechny možnosti. Univerzální doporučení zatím nemám, jen ta papírová.
+  Obvykle bude lepší posílat řadu malých souborů. Pokud soubory rozdělíme, nemusí být potřeba připravovat [kritické CSS](https://www.vzhurudolu.cz/blog/35-critical-css), protože menší soubory s CSS dorazí dříve. Jednotlivé CSS a JS také můžeme kešovat s různými pravidly. Nemusíme také do stránky vkládat CSS, které stránka neobsahuje. Totéž u Javascriptu. Samozřejmě v praxi je potřeba zkoušet všechny možnosti. Univerzální doporučení zatím nemám, jen ta papírová.
 - **Domain sharding** (rozdělování domén pro znásobování fronty)  
   Díky tomu se navíc zbavíme vytváření potřeby vytváření nových TCP spojení.
 

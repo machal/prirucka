@@ -26,7 +26,7 @@ Zvažte jak moc tohle chcete řešit. Windows 8.1 měly v lednu 2015 celosvětov
 
 Znáte [snap mód](https://www.youtube.com/watch?v=DS9kPoJ5xvA) z desktopových Windows 8? Česky snad *přichycení*. Mód, ve kterém si aplikaci přilepíte k hraně obrazovky. Pokud ve snap módu běží Internet Explorer ve verzi 10 a zobrazuje responzivní web, nestačí mu obvyklý meta tag viewport. Pokud se má web přizpůsobovat šířce okna, je potřeba nastavit to už zmíněnou CSS deklarací `@-ms-viewport { width: device-width; }`.
 
-Jak už to ale bývá – zvídaví lidé přišli na to, že s přidáním pravidla `@-ms-viewport` se zároveň na Windows Phone 8 začínají weby [zobrazovat v hardwarovém rozlišení](http://mattstow.com/responsive-design-in-ie10-on-windows-phone-8.html), nikoliv [CSS rozlišení](http://www.vzhurudolu.cz/prirucka/css-pixel) jak bychom chtěli. [Řešení](http://timkadlec.com/2013/01/windows-phone-8-and-device-width/) pak – bohužel – spočívá v detekci mobilního Exploreru ve verzi 10 a podstrčení modifikovaného viewportu:
+Jak už to ale bývá – zvídaví lidé přišli na to, že s přidáním pravidla `@-ms-viewport` se zároveň na Windows Phone 8 začínají weby [zobrazovat v hardwarovém rozlišení](http://mattstow.com/responsive-design-in-ie10-on-windows-phone-8.html), nikoliv [CSS rozlišení](https://www.vzhurudolu.cz/prirucka/css-pixel) jak bychom chtěli. [Řešení](http://timkadlec.com/2013/01/windows-phone-8-and-device-width/) pak – bohužel – spočívá v detekci mobilního Exploreru ve verzi 10 a podstrčení modifikovaného viewportu:
 
 	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     	var msViewportStyle = document.createElement("style");

@@ -49,7 +49,7 @@ Vložení data na mobilech může být pěkná otrava. Hlavně pokud web použí
 
 Na mobilech můžete využít `<input type="date">`, který otevře nativní výběr data, ale ten taky neřeší všechny potřeby uživatelů. Občas je potřeba udělat vlastní komponentu. Vždy mějte v prvé řadě na paměti ovládání palcem. Obr z Altonu se na vás dívá!
 
-Další tipy od Nielsen Norman Group k výběru data jsem sepisoval na blog. [vrdl.cz/b/83-nng-input-date](http://www.vzhurudolu.cz/blog/83-nng-input-date)
+Další tipy od Nielsen Norman Group k výběru data jsem sepisoval na blog. [vrdl.cz/b/83-nng-input-date](https://www.vzhurudolu.cz/blog/83-nng-input-date)
 
 ## 5) Nespoléhejte na přítomnost globální navigace
 

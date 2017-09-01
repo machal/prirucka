@@ -199,7 +199,7 @@ Lepší by bylo soubory spojit do jednoho, ten zmenšit a servírovat *asynchron
 </head>
 ```
 
-Tolik stručně. Problematika přikládání skriptů do stránky je ale netriviální. Probíráme ji mimojiné na mém [školení rychlosti načítání webů](http://www.vzhurudolu.cz/kurzy/rychlost-nacitani).
+Tolik stručně. Problematika přikládání skriptů do stránky je ale netriviální. Probíráme ji mimojiné na mém [školení rychlosti načítání webů](https://www.vzhurudolu.cz/kurzy/rychlost-nacitani).
 
 ### Přejděte na HTTP/2 {#http-2}
 
@@ -236,7 +236,7 @@ Video: <a href="https://www.youtube.com/watch?v=i2_lAEzmOPo">AMP HTML (Accelerat
 
 Zatím je určená hlavně pro statické weby – stránky s textovým obsahem typu blogy. [V plánech](https://www.ampproject.org/roadmap/) se ale objevují zmínky i o e-commerce.
 
-O AMP jsem už [tady dříve psal](http://www.vzhurudolu.cz/blog/40-amp).
+O AMP jsem už [tady dříve psal](https://www.vzhurudolu.cz/blog/40-amp).
 
 
 ### Psychologie: používejte zástupné symboly, skeletony… {#psychologie}
@@ -256,6 +256,6 @@ U javascriptových aplikací se skeletony nasazují lépe než u běžných web�
 
 ## Můžu vám pomoci? {#pomoc}
 
-- Pro vývojáře organizuji celodenní [školení rychlosti načítání webů](http://www.vzhurudolu.cz/kurzy/rychlost-nacitani).
-- Poskytuji také individuální poradenství pro optimalizaci rychlosti webů. Neváhejte se [na mě obrátit](http://www.vzhurudolu.cz/martin#rychlost). 
+- Pro vývojáře organizuji celodenní [školení rychlosti načítání webů](https://www.vzhurudolu.cz/kurzy/rychlost-nacitani).
+- Poskytuji také individuální poradenství pro optimalizaci rychlosti webů. Neváhejte se [na mě obrátit](https://www.vzhurudolu.cz/martin#rychlost). 
 

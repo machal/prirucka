@@ -115,7 +115,7 @@ Opět jen jako [WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#application) obla
 
 ### `<h1>` až `<h6>`
 
-[HTML5](https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements): Nadpisy a tvorba struktury stránky. Znáte je, vím, ale sem patří hlavně proto, že jde pořád o jediný způsob tvorby strukturované osnovy dokumentu. Tvorba struktury pomocí HTML5 elementů `<section>`, jak bylo dříve zamýšleno, [se neujala](http://www.vzhurudolu.cz/blog/25-vice-h1). Alespoň v něčem jsem měl pravdu.
+[HTML5](https://www.w3.org/TR/html5/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements): Nadpisy a tvorba struktury stránky. Znáte je, vím, ale sem patří hlavně proto, že jde pořád o jediný způsob tvorby strukturované osnovy dokumentu. Tvorba struktury pomocí HTML5 elementů `<section>`, jak bylo dříve zamýšleno, [se neujala](https://www.vzhurudolu.cz/blog/25-vice-h1). Alespoň v něčem jsem měl pravdu.
 
 <!-- AdSnippet -->
 

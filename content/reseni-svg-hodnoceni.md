@@ -137,4 +137,4 @@ A pro pořádek ještě jednou živý příklad na CodePenu. [cdpn.io/e/yayxGv](
 
 <!-- AdSnippet -->
 
-Je to jedno z řešení, která jsem ukazoval na WebExpu 2016. Podívejte se [i na další dema z přednášky](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
+Je to jedno z řešení, která jsem ukazoval na WebExpu 2016. Podívejte se [i na další dema z přednášky](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).

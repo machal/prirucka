@@ -66,7 +66,7 @@ Na starších a méně výkonných mobilech vás `position: fixed` nebude poslou
 
 Pro další popis i hlubší argumentaci vás pošlu na další své texty:
 
-- Dvoudílná série „Jak zničit mobilní uživatele?“ na Vzhůru dolů. [vrdl.in/lq5b4](http://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1) a [vrdl.in/sacjz](http://www.vzhurudolu.cz/blog/48-znicit-mobilistu-2)
+- Dvoudílná série „Jak zničit mobilní uživatele?“ na Vzhůru dolů. [vrdl.in/lq5b4](https://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1) a [vrdl.in/sacjz](https://www.vzhurudolu.cz/blog/48-znicit-mobilistu-2)
 - Můj text „How To Poison The Mobile User“ na Smashing Magazine. [vrdl.in/h8n7i](https://www.smashingmagazine.com/2016/10/how-to-poison-the-mobile-user/)
 
 

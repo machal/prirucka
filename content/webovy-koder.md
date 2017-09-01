@@ -5,17 +5,17 @@ Co by měl umět webový kodér?
 
 Technik, který oživuje uživatelská rozhraní webové prezentace nebo webové aplikace.
 
-Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je potřeba jej [odlišit od frontend vývojáře](http://www.vzhurudolu.cz/blog/42-frontend-koder-vyvojar). Ten píše frontend aplikace a daleko více se pohybuje v javascriptovém kódu. Doménou kodéra je především [CSS](http://www.vzhurudolu.cz/css), [HTML](http://www.vzhurudolu.cz/html) a související technologie.
+Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je potřeba jej [odlišit od frontend vývojáře](https://www.vzhurudolu.cz/blog/42-frontend-koder-vyvojar). Ten píše frontend aplikace a daleko více se pohybuje v javascriptovém kódu. Doménou kodéra je především [CSS](https://www.vzhurudolu.cz/css), [HTML](https://www.vzhurudolu.cz/html) a související technologie.
 
 <!-- AdSnippet -->
 
 Kodér má přesah do oborů, se kterými spolupracuje na podkladech pro svou práci — UX, webová grafika. Také do oborů, kterým svou práci předává — frontend či backend programování, mírně třeba i do správy serverů.
 
-Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster“, ale její používání [dnes je už překonané](http://www.vzhurudolu.cz/blog/62-frontend-pozice).
+Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster“, ale její používání [dnes je už překonané](https://www.vzhurudolu.cz/blog/62-frontend-pozice).
 
 ## Poznámky k textu
 
-* Z opačné strany bere potřebné znalosti [výstupní checklist kodéra](http://www.vzhurudolu.cz/checklist).
+* Z opačné strany bere potřebné znalosti [výstupní checklist kodéra](https://www.vzhurudolu.cz/checklist).
 * Následující prosím berte více jako autorův subjektivní výběr než přesnou a precizně strukturovanou osnovu pro samostudium.
 * Body v jednotlivých sekcích jsou řazeny podle důležitosti.
 * Jako **[nové]** jsou označeny znalosti, které přibyly v posledních cca 2-3 letech.
@@ -31,21 +31,21 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * Prakticky použitelné [HTML5 značky](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list) a [strukturální elementy](html5-struktura.md). Jejich významy podle specifikace. 
 * Teorie: [outline](http://html5doctor.com/outlines/) (osnova) dokumentu; rozdíl HTML4, XHTML, HTML5.
 * Formuláře: [HTML4 formuláře](http://www.jakpsatweb.cz/html/formulare.html).
-* **[nové] **HTML5 formuláře: použitelné HTML5 [typy](http://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/) a [atributy](http://www.zdrojak.cz/clanky/formulare-v-html5-a-nove-atributy/) (`email`, `tel`, `url`, `placeholder`); [`<input required>`](http://jecas.cz/required) a HTML5 validace v prohlížeči. ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
+* **[nové] **HTML5 formuláře: použitelné HTML5 [typy](http://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/) a [atributy](http://www.zdrojak.cz/clanky/formulare-v-html5-a-nove-atributy/) (`email`, `tel`, `url`, `placeholder`); [`<input required>`](http://jecas.cz/required) a HTML5 validace v prohlížeči. ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
 
 
 <!-- AdSnippet -->
 
 * SEO: osnova dokumentu, `<title>`, `<meta description…>`.
-* **[nové] **Sémantické metaznačky: [Facebook OpenGraph](http://davidwalsh.name/facebook-meta-tags); Google Schema.org a [Rich Snippets](http://www.vzhurudolu.cz/prirucka/rich-snippets); Twitter Cards; [favicon a touchicon](favicon.md). ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
+* **[nové] **Sémantické metaznačky: [Facebook OpenGraph](http://davidwalsh.name/facebook-meta-tags); Google Schema.org a [Rich Snippets](https://www.vzhurudolu.cz/prirucka/rich-snippets); Twitter Cards; [favicon a touchicon](favicon.md). ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * **[nové] **[Audio a video](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video): HTML5 formáty audia a videa, které vyžadují aktuální prohlížeče, případně Flash.
 * **[nové] **[Canvas](http://www.zdrojak.cz/clanky/zaciname-z-html5-canvasem/): principy; k čemu je dobrý.
-* **[nové] **Povědomí o základních HTML5 aplikačních API: local/sessionStorage; History API; Geolocation API; komunikace: WebSockets, ServerSentEvents; offline: AppCache. ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
+* **[nové] **Povědomí o základních HTML5 aplikačních API: local/sessionStorage; History API; Geolocation API; komunikace: WebSockets, ServerSentEvents; offline: AppCache. ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
 
 #### CSS
 
 * Znalost všech prakticky použitelných vlastností ze specifikace [CSS2](http://www.jakpsatweb.cz/css/css-vlastnosti-hodnoty-prehled.html).
-* **[nové] **[CSS3](http://www.vzhurudolu.cz/prirucka/css3) vlastnosti, které jsou [podle CSS Working Group](http://www.w3.org/Style/CSS/current-work.en.html) ve fázi W3C Recommendation (REC) nebo Proposed Recommendation (PR). ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
+* **[nové] **[CSS3](https://www.vzhurudolu.cz/prirucka/css3) vlastnosti, které jsou [podle CSS Working Group](http://www.w3.org/Style/CSS/current-work.en.html) ve fázi W3C Recommendation (REC) nebo Proposed Recommendation (PR). ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * Stavba [layoutu pomocí CSS](http://learnlayout.com/toc.html): kategorizace podle technologických prostředků – float, inline-block, display:table, position:absolute, flexbox; kategorizace podle typu layoutu: fixní, fluidní, responzivní.
 * Kaskáda, dědičnost, specifičnost v kontextu CSS.
 * Jednotky (např. px, em, rem, procenta, cm, atd.): jejich klady, zápory a možné scénáře použití.
@@ -72,22 +72,22 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * **[nové] **Jaké jsou: jádra prohlížečů a [jednotlivé prohlížeče v českém](prohlizece.md) a světovém prostředí včetně mobilních.
 * **[nové] **Fungování prohlížeče: [preloader](http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/); blokující JS/CSS.
 * Rychlost načítání: základní metody: datový objem stránky, requesty, CSS sprity.
-* **[nové] **Pokročilá rychlost načítání: [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=en); znalost principů lazyloadingu, podmíněné načítání, problému latence mobilních sítí. ([školení](http://www.vzhurudolu.cz/kurzy/pokrocily-responzivni-design))
+* **[nové] **Pokročilá rychlost načítání: [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=en); znalost principů lazyloadingu, podmíněné načítání, problému latence mobilních sítí. ([školení](https://www.vzhurudolu.cz/kurzy/pokrocily-responzivni-design))
 
 #### Obrázky
 
 * Obecné pojmy: vektory, bitmapy, komprese, alfaprůhlednost, nástroje pro optimalizaci.
 * Rozdíly mezi JPG, GIF, PNG, WebP, SVG.
-* **[nové] **[Responzivní obrázky](http://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](http://www.vzhurudolu.cz/prirucka/picture). ([školení](http://www.vzhurudolu.cz/kurzy/pokrocily-responzivni-design))
+* **[nové] **[Responzivní obrázky](https://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](https://www.vzhurudolu.cz/prirucka/picture). ([školení](https://www.vzhurudolu.cz/kurzy/pokrocily-responzivni-design))
 
 #### SVG
 
-* **[nové] **[Základy](http://www.vzhurudolu.cz/prirucka/svg) pro statickou grafiku: způsoby vložení do stránky, fallbacky, vytvoření SVG, srovnání s ikonfonty.
+* **[nové] **[Základy](https://www.vzhurudolu.cz/prirucka/svg) pro statickou grafiku: způsoby vložení do stránky, fallbacky, vytvoření SVG, srovnání s ikonfonty.
 * **[nové] **Typy využití a jejich technické provedení: ilustrace, ikony, celé UI komponenty, stylování formulářů, grafy, animace, efekty textu.
 
 #### Animace
 
-* **[nové] **Skutečné animační nástroje: [CSS animace](http://slideslive.com/38892079/vse-o-css-animacich), vlastnosti [animation](http://www.vzhurudolu.cz/prirucka/css3-animations) a [transition](http://www.vzhurudolu.cz/prirucka/css3-transitions); SVG animace.
+* **[nové] **Skutečné animační nástroje: [CSS animace](http://slideslive.com/38892079/vse-o-css-animacich), vlastnosti [animation](https://www.vzhurudolu.cz/prirucka/css3-animations) a [transition](https://www.vzhurudolu.cz/prirucka/css3-transitions); SVG animace.
 * Emulace animací v Javascriptu/jQuery.
 * [Principy animací](http://codepen.io/jeroens/blog/the-illusion-of-life).
 
@@ -95,8 +95,8 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### Responzivní design
 
-* **[nové] **Základní principy: fluidní layout, fluidní média, [Media Queries](http://www.vzhurudolu.cz/prirucka/css3-media-queries), [breakpointy](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu).
-* **[nové] **Implementace: [Mobile First](mobile-first.md); UX na mobilech; [rychlost načítání](http://www.vzhurudolu.cz/rychlost-nacitani).
+* **[nové] **Základní principy: fluidní layout, fluidní média, [Media Queries](https://www.vzhurudolu.cz/prirucka/css3-media-queries), [breakpointy](http://kratce.vzhurudolu.cz/post/46416507703/jake-breakpointy-zvolit-v-responzivnim-webdesignu).
+* **[nové] **Implementace: [Mobile First](mobile-first.md); UX na mobilech; [rychlost načítání](https://www.vzhurudolu.cz/rychlost-nacitani).
 
 #### Interpretace podkladů od UX/grafika:
 
@@ -107,19 +107,19 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 #### Progressive enhancement
 
 * K čemu je to dobré. [Progressive Enhancement vs. Gracefull Degradation](http://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/) .
-* **[nové]** Pojmy [polyfill](http://www.vzhurudolu.cz/prirucka/polyfill), [fallback](http://www.vzhurudolu.cz/prirucka/fallback).
+* **[nové]** Pojmy [polyfill](https://www.vzhurudolu.cz/prirucka/polyfill), [fallback](https://www.vzhurudolu.cz/prirucka/fallback).
 * **[nové]** Detekce vlastností prohlížečů: proč je výhodnější než detekce prohlížeče, detekce zařízení nebo browser hacks ([1](http://www.paulirish.com/2009/browser-specific-css-hacks/), [2](http://browserhacks.com/)); Modernizr; backend - WURFL atd.
 
 #### Frontend architektura
 
-* **[nové]** Systémy zápisu a organizace: [OOCSS](http://www.vzhurudolu.cz/prirucka/oocss), [SMACSS](http://www.vzhurudolu.cz/prirucka/smacss), [BEM](http://www.vzhurudolu.cz/prirucka/bem).
+* **[nové]** Systémy zápisu a organizace: [OOCSS](https://www.vzhurudolu.cz/prirucka/oocss), [SMACSS](https://www.vzhurudolu.cz/prirucka/smacss), [BEM](https://www.vzhurudolu.cz/prirucka/bem).
 * **[nové]** Modulární UI systémy, tvorba style guides.
 
 #### Efektivita
 
-* **[nové] **[CSS preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) ([školení](http://www.vzhurudolu.cz/kurzy/webovy-frontend))
-* **[nové] **Automatizace: [Grunt](http://www.vzhurudolu.cz/prirucka/grunt), Gulp, [Bower](http://www.vzhurudolu.cz/prirucka/bower), Yeoman. ([školení](http://www.vzhurudolu.cz/kurzy/grunt-gulp))
-* **[nové] **Frontend frameworky: Bootstrap ([školení](http://www.vzhurudolu.cz/kurzy/bootstrap)), Foundation
+* **[nové] **[CSS preprocesory](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
+* **[nové] **Automatizace: [Grunt](https://www.vzhurudolu.cz/prirucka/grunt), Gulp, [Bower](https://www.vzhurudolu.cz/prirucka/bower), Yeoman. ([školení](https://www.vzhurudolu.cz/kurzy/grunt-gulp))
+* **[nové] **Frontend frameworky: Bootstrap ([školení](https://www.vzhurudolu.cz/kurzy/bootstrap)), Foundation
 * **[nové] **Efektivita v Photoshopu: [CSSHat](https://csshat.com/), Enigma…
 
 <!-- AdSnippet -->
@@ -132,7 +132,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 #### Testování
 
 * Funkční testování výsledného produktu - ručně nebo automaticky, Selenium a podobně.
-* **[nové] **Testování na [reálných mobilních zařízeních](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby), starších prohlížečích. Cloud testing přes [Browserstack](https://www.browserstack.com/) a podobně.
+* **[nové] **Testování na [reálných mobilních zařízeních](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby), starších prohlížečích. Cloud testing přes [Browserstack](https://www.browserstack.com/) a podobně.
 
 #### Typologie projektů
 
@@ -158,7 +158,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### Webové programování obecně
 
-* MVC frameworky: povědomí o backendových (Nette, Zend, Rails, Django…) i frontendových (Angular.js, viz [školení](http://www.vzhurudolu.cz/kurzy/angular), Ember nebo ekosystém kolem React).
+* MVC frameworky: povědomí o backendových (Nette, Zend, Rails, Django…) i frontendových (Angular.js, viz [školení](https://www.vzhurudolu.cz/kurzy/angular), Ember nebo ekosystém kolem React).
 * [Fungování protokolu HTTP](http://www.jakpsatweb.cz/server/http-protokol.html) a chybové stránky 4x a 5x.
 * [LAMP architektura](http://cs.wikipedia.org/wiki/LAMP) a její alternativy.
 * Šablonovací jazyky obecně a znalost konkrétního (Smarty, Latte, Jinja…)

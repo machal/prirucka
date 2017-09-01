@@ -89,7 +89,7 @@ Vsadím boty, že tímhle sbírka jen začíná. [Zmiňte se](https://github.com
 
 ---
 
-Zaujaly vás, ale nevíte jak ukázky zrealizovat? Vše co potřebujete znát vás naučí Michal Matuška na našem [kurzu SVG](http://www.vzhurudolu.cz/kurzy/svg).
+Zaujaly vás, ale nevíte jak ukázky zrealizovat? Vše co potřebujete znát vás naučí Michal Matuška na našem [kurzu SVG](https://www.vzhurudolu.cz/kurzy/svg).
 
 </div>
 

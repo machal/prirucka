@@ -6,7 +6,7 @@ Jsou věci, které grafici na CSS prostě nemůžou vystát. Jako třeba patičk
 
 Zrovna tento problém se ale dá vyřešit velmi jednoduše. Pomocí nových [CSS jednotek](css3-jednotky.md) a [flexbox layoutu](css3-flexbox.md). 
 
-Pojďme si přilepenou patičku rozpitvat jako další z řešení, která jsem ukazoval [během přednášky na WebExpo 2016](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
+Pojďme si přilepenou patičku rozpitvat jako další z řešení, která jsem ukazoval [během přednášky na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 
 Pro nedočkavé – hotový CodePen je tady: [cdpn.io/e/jrEGYZ](http://codepen.io/machal/pen/jrEGYZ).
 

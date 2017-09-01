@@ -30,7 +30,7 @@ php core/console --server --with-watch
 
 ## Struktura adresářů je fajn, neupravujte ji
 
-K tomu jsem samozřejmě musel dojít až bolestnou zkušeností.  Chtěl jsem totiž Pattern Lab uzpůsobit [struktuře svých projektů](http://www.vzhurudolu.cz/blog/29-organizace-css-2014). Chyba!
+K tomu jsem samozřejmě musel dojít až bolestnou zkušeností.  Chtěl jsem totiž Pattern Lab uzpůsobit [struktuře svých projektů](https://www.vzhurudolu.cz/blog/29-organizace-css-2014). Chyba!
 
 Pattern Lab totiž neslouží k vytváření webu, ale hlavně **k návrhu a prezentaci UI knihovny.** 
 

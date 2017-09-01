@@ -4,7 +4,7 @@ Mám fotku a chci ji udělat specifický výřez v přímo v kódu. Pomocí CSS 
 
 <!-- AdSnippet -->
 
-Po čase pro vás mám další z příkladů, které jsem ukazoval na přednášce [„10 praktických CSS3 a SVG řešení“](http://www.vzhurudolu.cz/prednaska/webexpo-2016-246) na Webexpo 2016.
+Po čase pro vás mám další z příkladů, které jsem ukazoval na přednášce [„10 praktických CSS3 a SVG řešení“](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246) na Webexpo 2016.
 
 ![Vlastní výřez pomocí SVG](dist/images/original/reseni-svg-vyrezy.jpg)
 

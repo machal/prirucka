@@ -140,5 +140,5 @@ Takže usmíření na závěr:
 - Existuje spoustu variant jak udělat aplikaci a netrápit se extra kódem pro různé platformy.
 
 <div class="text-small" markdown="1">
-  Text byl původně součástí připravované knihy [Vzhůru do (responzivního) webdesignu](http://www.vzhurudolu.cz/ebook-responzivni). Za připomínky k článku děkuji [Honzovi Sládkovi](https://www.mangoweb.cz/en/tym/honzas), [Jirkovi Sekerovi](https://twitter.com/signalizer?lang=cs), [Honzovi Kvasničkovi](http://www.kvasnickajan.cz/), [Janu Polzerovi](https://www.polzer.cz/), [Tomáši Musiolovi](https://www.musiol.cz/) a dalším.
+  Text byl původně součástí připravované knihy [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/ebook-responzivni). Za připomínky k článku děkuji [Honzovi Sládkovi](https://www.mangoweb.cz/en/tym/honzas), [Jirkovi Sekerovi](https://twitter.com/signalizer?lang=cs), [Honzovi Kvasničkovi](http://www.kvasnickajan.cz/), [Janu Polzerovi](https://www.polzer.cz/), [Tomáši Musiolovi](https://www.musiol.cz/) a dalším.
 </div>

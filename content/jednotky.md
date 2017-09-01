@@ -140,7 +140,7 @@ Pro layout se dobře hodí procenta. Raději připomínám, že se vždy počít
 }
 ```
 
-Použitelných jednotek pro layout je ale více. Procenta nebo `vw` se roztahují podle šířky okna. `rem` a `em` podle velikosti písma. Občas se hodí i `px`. A ve flexboxu je možné používat i absolutní jednotky. Odkážu vás na svůj text o flexboxu, pokud by vás to zajímalo více. [vrdl.in/bm26n](http://www.vzhurudolu.cz/prirucka/css3-flexbox-polozky#flex) 
+Použitelných jednotek pro layout je ale více. Procenta nebo `vw` se roztahují podle šířky okna. `rem` a `em` podle velikosti písma. Občas se hodí i `px`. A ve flexboxu je možné používat i absolutní jednotky. Odkážu vás na svůj text o flexboxu, pokud by vás to zajímalo více. [vrdl.in/bm26n](https://www.vzhurudolu.cz/prirucka/css3-flexbox-polozky#flex) 
 
 ## Rámečky, dekorace: `px`
 

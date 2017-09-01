@@ -64,7 +64,7 @@ Co je to za adresy?
 
 Vezměte mobil připojený do stejné wifi a vyťukejte do tamního prohlížeče `External` adresu.  Teď když budete provádět uživatelské interakce v jednom zařízení, druhé bude dělat totéž za vás.  Pěkné, ne? Browsersync to umí s klikáním, rolováním stránky nebo taky vyplňováním formulářů. 
 
-Proč vám o takové *blbině* vyprávím? Protože ušetří vaši energii při testování responzivních webů na reálných zařízeních. [vrdl.cz/p/jak-testovat-responzivni-weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
+Proč vám o takové *blbině* vyprávím? Protože ušetří vaši energii při testování responzivních webů na reálných zařízeních. [vrdl.cz/p/jak-testovat-responzivni-weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> ~ Obě vlastnosti rozebrány ve videu. Podívejte se.

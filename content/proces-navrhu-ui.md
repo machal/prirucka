@@ -97,7 +97,7 @@ Pokud by vás téma alternativních pracovních postupů zaujalo, věnujte svou 
 - *Přednáška Ryana Singera „Designing from start to finish“*  
   Jako mnohé z vás, i mě velmi inspirovaly procesy v Basecamp.com (dříve 37signals). [vrdl.in/singer](https://www.webexpo.net/prague2017/talk/designing-from-start-to-finish/)
 - *Můj text „Design webů v prohlížeči“*  
-  Přepis přednášky z WebExpo 2015. Obsahuje zde uvedený postup, aplikovaný při redesignu e-shopu VašeČočky.cz. [vrdl.cz/b/38-design-v-prohlizeci](http://www.vzhurudolu.cz/blog/38-design-v-prohlizeci)
+  Přepis přednášky z WebExpo 2015. Obsahuje zde uvedený postup, aplikovaný při redesignu e-shopu VašeČočky.cz. [vrdl.cz/b/38-design-v-prohlizeci](https://www.vzhurudolu.cz/blog/38-design-v-prohlizeci)
 - *Kniha Brada Frosta „Atomic Design“*  
   V textu, který právě čtete, nezvládnu jít takhle do hloubky, ale systémy designu mají ve webdesignu velkou budoucnost, věřte mi. [atomicdesign.bradfrost.com](http://atomicdesign.bradfrost.com/)
 

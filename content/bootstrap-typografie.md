@@ -55,7 +55,7 @@ Vnitřní okraje nebo prostě padding. Pro velikosti tlačítek, formulářů a 
 }
 ```
 
-Samozřejmě — typografické principy nejsou jediným systémem uvnitř Bootstrapu, který se vyplatí používat i ve vlastním kódu. Mohli bychom vést dlouhé řeči o barvách, responzivních breakpointech, layoutu, nastavování vzhledu komponent… To ale nechme na další články nebo [doražte na školení](http://www.vzhurudolu.cz/kurzy/bootstrap).
+Samozřejmě — typografické principy nejsou jediným systémem uvnitř Bootstrapu, který se vyplatí používat i ve vlastním kódu. Mohli bychom vést dlouhé řeči o barvách, responzivních breakpointech, layoutu, nastavování vzhledu komponent… To ale nechme na další články nebo [doražte na školení](https://www.vzhurudolu.cz/kurzy/bootstrap).
 
 ## Bez zapojení designéra to bude bolet
 

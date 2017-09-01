@@ -153,7 +153,7 @@ figure {
 }
 ```
 
-Normalize.CSS ani [Reboot](http://www.vzhurudolu.cz/blog/53-reboot) z Bootstrapu to samy neodstraňují.
+Normalize.CSS ani [Reboot](https://www.vzhurudolu.cz/blog/53-reboot) z Bootstrapu to samy neodstraňují.
 
 
 ## Podpora v prohlížečích a odečítačích {#podpora}

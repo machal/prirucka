@@ -38,7 +38,7 @@ Na pětinovém podílu ze zhlédnutých stránek se mobily samozřejmě nezastav
 
 Podíly mobilních prohlížečů mám z Google Analytics cestovky Rekrea, protože Rankings.cz neumí rozumně rozeznat jednotlivé mobilní prohlížeče.
 
-Data k relativně novému prohlížeči Samsung Internet odhaduji. V Analytics jsou schovaná za čísly mobilního Chrome. [vrdl.cz/b/71-samsung-internet](http://www.vzhurudolu.cz/blog/71-samsung-internet)
+Data k relativně novému prohlížeči Samsung Internet odhaduji. V Analytics jsou schovaná za čísly mobilního Chrome. [vrdl.cz/b/71-samsung-internet](https://www.vzhurudolu.cz/blog/71-samsung-internet)
 
 Mezi mobilními prohlížeči tedy vede Chrome Mobile s 18,1 procenty podílu. Druhé je Safari Mobile (5,5 %), třetí Android Browser (3,1 %). Dle mých odhadů následuje Samsung Internet (kolem 3 %), Internet Explorer Mobile (0,7 %) a další méně významné prohlížeče jako Opery a zatím i mobilní Edge. 
 
@@ -72,7 +72,7 @@ Ke krátkému komentáři pro zajímavost přidávám i skóre [na HTML5test.com
   Na mobilech zatím jednoznačně kraluje. Jedinou konkurenci má v iOS zařízeních od Apple a v možném nástupu prohlížeče od Samsungu. U Chrome na iOS pozor. Je to jen pseudoprohlížeč, tedy jiné rozhraní pro mobilní Safari. Píšu o tom dále.  
   <small>HTML5test.com: 486/555 (verze 52)</small>
 - **[Samsung Internet](http://developer.samsung.com/internet)**  
-  Nový prohlížeč od Samsungu, který se ve statistkách (včetně Google Analytics) aktuálně schovává  pod mobilní Chrome. Moc o něm nevíme, ale Samsung zařízení patří mezi nejprodávanější i v ČR, takže s ním nějak musíme začít počítat. V mobilech má ikonu fialové zeměkoule. [vrdl.cz/b/71-samsung-internet](http://www.vzhurudolu.cz/blog/71-samsung-internet) 
+  Nový prohlížeč od Samsungu, který se ve statistkách (včetně Google Analytics) aktuálně schovává  pod mobilní Chrome. Moc o něm nevíme, ale Samsung zařízení patří mezi nejprodávanější i v ČR, takže s ním nějak musíme začít počítat. V mobilech má ikonu fialové zeměkoule. [vrdl.cz/b/71-samsung-internet](https://www.vzhurudolu.cz/blog/71-samsung-internet) 
 - **Android Browser**  
   Starší prohlížeč postavený na Webkit jádře. Modrá zeměkoule s nápisem Internet. Týká se Androidů ve verzích 4.x. Často jej upravovali výrobci zařízení, takže ho můžete znát třeba i pod jinými názvy. V téhle rodině prohlížečů je pěkný galimatyáš. Už se myslím ale nevyvíjí. [slides.com/html5test/the-android-browser](http://slides.com/html5test/the-android-browser)  
   <small>HTML5test.com: 356/555 (verze 30)</small>
@@ -82,7 +82,7 @@ Ke krátkému komentáři pro zajímavost přidávám i skóre [na HTML5test.com
 
 ### Speciální kategorie: WebView a prohlížeče uvnitř aplikací
 
-Většina dnešních zhlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, Twitteru nebo třeba e-mailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/b/19-prohlizec-facebook](http://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
+Většina dnešních zhlédnutí webů na mobilech se neodehrává vědomým spuštěním prohlížeče, ale otevřením stránky kliknutím na odkaz uvnitř aplikací. Ve Facebooku, Twitteru nebo třeba e-mailové apce. Dříve jsem o tom podrobně psal na Vzhůru dolů. [vrdl.cz/b/19-prohlizec-facebook](https://www.vzhurudolu.cz/blog/19-prohlizec-facebook)
 
 Jakým prohlížečem se pak stránka vykreslí? Vývojáři nativních mobilních aplikací jej znají jako WebView komponentu. Ta startuje jádro výchozího prohlížeče pro konkrétní operační systém. Na iOS je to vždy mobilní Safari, na dnešních Androidech obvykle Chrome. 
 
@@ -116,7 +116,7 @@ Weby je možné a slušné vyrobit tak, aby se zásadně nerozsypaly ani v mén�
 
 ### Prohlížeče s menším než pětiprocentním podílem tvoří asi 15 % trhu
 
-Jak už jsem na Vzhůru dolů psal, pětiprocentní nebo jiná hranice pro podporu prohlížečů je velmi zrádná. Prohlížeče pod touto hranicí teď tvoří kolem šestiny pageviews. Čtěte „pohádku o pěti procentech“. [vrdl.cz/b/20-pet-procent](http://www.vzhurudolu.cz/blog/20-pet-procent)
+Jak už jsem na Vzhůru dolů psal, pětiprocentní nebo jiná hranice pro podporu prohlížečů je velmi zrádná. Prohlížeče pod touto hranicí teď tvoří kolem šestiny pageviews. Čtěte „pohádku o pěti procentech“. [vrdl.cz/b/20-pet-procent](https://www.vzhurudolu.cz/blog/20-pet-procent)
 
 Podporujte prostě různé prohlížeče různým způsobem a vynakládejte na to energii, které odpovídá byznys hodnotě jejich uživatelů s výhledem do budoucna.
 
@@ -131,7 +131,7 @@ K polovině prázdnin 2016 má jádro Blink (Chrome, Opera) podíl na trhu 48 pr
 
 - **Moje obecná čísla berte s rezervou**. Sledujte hlavně vlastní Google Analytics.
 - **Nebojte se nových technologií**. [Flexbox](css3-flexbox.md) má v těchto číslech přibližně 98 % podporu. Totéž SVG. Obojí vám ušetří práci a nabídne nové možnosti. Fallbacky ve starých prohlížečích rozhodně nedělejte plnohodnotné se zobrazením v moderních prohlížečích. Obvykle se vám to nevyplatí.
-- **Nepodceňujte menší prohlížeče**. Zařízují sedminu zhlédnutí stránek. Naučte se testovat tak, abyste s tím neměli moc práce. Doporučím zase svůj článek. [vrdl.cz/p/jak-testovat-responzivni-weby](http://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
+- **Nepodceňujte menší prohlížeče**. Zařízují sedminu zhlédnutí stránek. Naučte se testovat tak, abyste s tím neměli moc práce. Doporučím zase svůj článek. [vrdl.cz/p/jak-testovat-responzivni-weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 - … a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. 
 
 

@@ -33,7 +33,7 @@ Mimochodem, o dalších [nástrojích pro analýzu rychlosti načítání](rychl
 ### Prohlížeče, operační systémy, mobilní zařízení
 
 * Menu: *Technologie > Prohlížeč* a pak odkazy nad tabulkou.   
-Zdejší statistiky se hodí pro zjištění, zda technické vybavení vaší cílové skupiny není v něčem specifické. (Starší, ale povětšinou pořád platné články k prohlížečům: [Stav trhu mobilních prohlížečů](http://www.vzhurudolu.cz/blog/18-mobilni-prohlizece) a [Proč podporovat i prohlížeče pod pětiprocentní hranicí podílu](http://www.vzhurudolu.cz/blog/20-pet-procent)).
+Zdejší statistiky se hodí pro zjištění, zda technické vybavení vaší cílové skupiny není v něčem specifické. (Starší, ale povětšinou pořád platné články k prohlížečům: [Stav trhu mobilních prohlížečů](https://www.vzhurudolu.cz/blog/18-mobilni-prohlizece) a [Proč podporovat i prohlížeče pod pětiprocentní hranicí podílu](https://www.vzhurudolu.cz/blog/20-pet-procent)).
 * V menu *Cílové publikum > Mobilní zařízení > Přehled* najdete momentální podíl desktopu, tabletů a mobilů.  
 Někde tam uvidíte i přehled nejpoužívanějších mobilních zařízení, ale těch je mnoho, takže to obvykle k ničemu nebývá. Může snad jen sloužit jako rada jaké si koupit zařízení [pro testování responzivních webů](jak-testovat-responzivni-weby.md).
 
@@ -43,7 +43,7 @@ Někde tam uvidíte i přehled nejpoužívanějších mobilních zařízení, al
 
 Analytics disponují výborným nástrojem pro evidenci zásadních změn v historii webu. Poznámky najdete v menu *Administrátor > Výběr dat > Poznámky* nebo přímo v přehledech vpravo po kliknutí na šipku pod grafem. 
 
-Kromě vývojářských aktivit – jako je nasazení větší aktualizace nebo [optimalizace rychlosti](http://www.vzhurudolu.cz/kurzy/rychlost-nacitani) – se samozřejmě hodí i pro další větší změny kolem webu (úprava designu, publikování zásadnějšího obsahu…). Marketingové aktivity je lepší měřit pomocí [URL s parametry](https://support.google.com/analytics/answer/1033867?hl=cs).
+Kromě vývojářských aktivit – jako je nasazení větší aktualizace nebo [optimalizace rychlosti](https://www.vzhurudolu.cz/kurzy/rychlost-nacitani) – se samozřejmě hodí i pro další větší změny kolem webu (úprava designu, publikování zásadnějšího obsahu…). Marketingové aktivity je lepší měřit pomocí [URL s parametry](https://support.google.com/analytics/answer/1033867?hl=cs).
 
 ### Nechávejte si posílat e-mailové reporty
 

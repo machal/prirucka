@@ -41,7 +41,7 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 </figcaption> 
 </figure>
 
-Flexbox je plný užitečných vlastností, ale kvůli tomu relativně složitý. Pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů, nebo svůj e-book „Vzhůru do CSS3“, kde jej podrobně vysvětluji i s příklady.  [vrdl.cz/p/css3-flexbox](http://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook)
+Flexbox je plný užitečných vlastností, ale kvůli tomu relativně složitý. Pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů, nebo svůj e-book „Vzhůru do CSS3“, kde jej podrobně vysvětluji i s příklady.  [vrdl.cz/p/css3-flexbox](https://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](https://www.vzhurudolu.cz/ebook)
 
 ## Brzy už i Grid Layout
 
@@ -57,7 +57,7 @@ Nic proti nim. Dlouho nám pomáhaly a tímto jim děkujeme. Je ale dobré věd�
 
 ## Vícesloupcový layout pomocí vlastností `column` 
 
-Primárně slouží k zalamování textů do sloupců na širších displejích. Prostě k „novinové“ sazbě. Může se ale hodit na širších obrazovkách pro dodržení optimální šířky řádku, na což si jistě vzpomínáte z kapitoly o základech typografie. Na webu se to často nepoužívá, ale hodit se může. [vrdl.cz/p/css3-multicolumn](http://www.vzhurudolu.cz/prirucka/css3-multicolumn)
+Primárně slouží k zalamování textů do sloupců na širších displejích. Prostě k „novinové“ sazbě. Může se ale hodit na širších obrazovkách pro dodržení optimální šířky řádku, na což si jistě vzpomínáte z kapitoly o základech typografie. Na webu se to často nepoužívá, ale hodit se může. [vrdl.cz/p/css3-multicolumn](https://www.vzhurudolu.cz/prirucka/css3-multicolumn)
 
 Stručný průlet technickými možnostmi bychom tímto mohli uzavřít. Pojďme si ale ještě doporučit jednu netechnickou, designérskou metodu.
 
@@ -84,7 +84,7 @@ Kromě toho je práce s pravidelnou mřížkou pro vývojáře efektivnější. 
 </div>
 ```
 
-Více informací o systému pro tvorbu rozvržení do mřížky v Bootstrapu 4 najdete opět na Vzhůru dolů. [vrdl.cz/p/bootstrap-4-grid](http://www.vzhurudolu.cz/prirucka/bootstrap-4-grid)  
+Více informací o systému pro tvorbu rozvržení do mřížky v Bootstrapu 4 najdete opět na Vzhůru dolů. [vrdl.cz/p/bootstrap-4-grid](https://www.vzhurudolu.cz/prirucka/bootstrap-4-grid)  
 
 
 

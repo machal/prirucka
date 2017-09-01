@@ -12,7 +12,7 @@ Ten druhý režim právě  umožňují WAI-ARIA orientační body (landmarks). P
 ## Tyhle orientační body se určitě naučte
 
 - `role="banner"` – ne banner, ale třeba název webu nebo logo
-- `role="navigation"` – navigace; může jich být [na stránce více](http://www.vzhurudolu.cz/blog/28-pristupnost-webexpo-2014)
+- `role="navigation"` – navigace; může jich být [na stránce více](https://www.vzhurudolu.cz/blog/28-pristupnost-webexpo-2014)
 - `role="main"` – hlavní obsah stránky
 - `role="search"` – vyhledávání na stránce
 - `role="complementary"` – doplňkovým obsah, obvykle „boční lišta“

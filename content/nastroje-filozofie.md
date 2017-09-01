@@ -8,7 +8,7 @@ Zajímá vás to víc? Filozofii jsem si pro sebe shrnul do šesti bodů.
 
 ## 1) Ber první co se nabízí
 
-Vezmu první technologii, která přišla s inovací. A využívám ji na maximum, dokud mě některá její vlastnost nezdržuje od práce. Proto [z preprocesorů LESS](http://www.vzhurudolu.cz/blog/15-css-preprocesory-4) a [ze sestavovačů Grunt](grunt.md). Technokraticky vzato – dnes to nejsou nejpokročilejší nástroje, ale vyhovují na drtivou většinu úkolů, které jim svěřuji.
+Vezmu první technologii, která přišla s inovací. A využívám ji na maximum, dokud mě některá její vlastnost nezdržuje od práce. Proto [z preprocesorů LESS](https://www.vzhurudolu.cz/blog/15-css-preprocesory-4) a [ze sestavovačů Grunt](grunt.md). Technokraticky vzato – dnes to nejsou nejpokročilejší nástroje, ale vyhovují na drtivou většinu úkolů, které jim svěřuji.
 
 ## 2) V davu ti bude líp
 

@@ -2,7 +2,7 @@
 
 Bower je správce frontend balíčků.
 
-*Upozornění: Bower je od poloviny roku 2017 označen jako „deprecated“, proto jej nedoporučuji používat na nové projekty. Více [na blogu](http://www.vzhurudolu.cz/blog/91-bower-mrtvy).*
+*Upozornění: Bower je od poloviny roku 2017 označen jako „deprecated“, proto jej nedoporučuji používat na nové projekty. Více [na blogu](https://www.vzhurudolu.cz/blog/91-bower-mrtvy).*
 
 <!-- AdSnippet -->
 
@@ -69,4 +69,4 @@ vzhuru-dolu /Users/machal/Sites/vzhurudolu/www
   └── jquery#1.9.1 (2.1.1 available)
 ```
 
-Více o Boweru se dozvíte na [školení s Riki Fridrichem](http://www.vzhurudolu.cz/kurzy/grunt-gulp).
+Více o Boweru se dozvíte na [školení s Riki Fridrichem](https://www.vzhurudolu.cz/kurzy/grunt-gulp).

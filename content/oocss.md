@@ -8,7 +8,7 @@ Cílem OOCSS je kromě zajištění znovupoužitelnosti kódu i zlepšení jeho 
 
 <!-- AdSnippet -->
 
-Myslím, že uplatnění objektových principů na psaní CSS je jistým způsobem nutnost. Alespoň u webů, [psaní javascriptových aplikací](http://www.vzhurudolu.cz/blog/77-css-v-js) totiž může být z pohledu organizace CSS úplně jiná písnička.
+Myslím, že uplatnění objektových principů na psaní CSS je jistým způsobem nutnost. Alespoň u webů, [psaní javascriptových aplikací](https://www.vzhurudolu.cz/blog/77-css-v-js) totiž může být z pohledu organizace CSS úplně jiná písnička.
 
 Ukažme si nejprve zjednodušený kód komponenty s tlačítkem:
 
@@ -94,9 +94,9 @@ Tvoří pak samostatný celek, který importujeme:
 @import "nav.css";
 ```
 
-Zpřehledňují nám nejen kód samotný, ale i commity do repozitáře. [O organizaci CSS do souborů](http://www.vzhurudolu.cz/blog/29-organizace-css-2014) jsem kdysi psal samostatný článek.
+Zpřehledňují nám nejen kód samotný, ale i commity do repozitáře. [O organizaci CSS do souborů](https://www.vzhurudolu.cz/blog/29-organizace-css-2014) jsem kdysi psal samostatný článek.
 
-Na protokolu HTTP/1 bude obvykle výhodnější importované CSS opět slučovat. Mohou pomoci [preprocesory](http://www.vzhurudolu.cz/blog/12-css-preprocesory-1) nebo [PostCSS](postcss.md). Na [HTTP/2](http-2.md) potřeba slučování souborů do jednoho už tak moc neplatí.
+Na protokolu HTTP/1 bude obvykle výhodnější importované CSS opět slučovat. Mohou pomoci [preprocesory](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) nebo [PostCSS](postcss.md). Na [HTTP/2](http-2.md) potřeba slučování souborů do jednoho už tak moc neplatí.
 
 
 ## 5) Princip prefixování: objekt, element, modifikátor {#objekt-element-modifikator}
