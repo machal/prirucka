@@ -24,7 +24,10 @@ Pružný layout naproti tomu mění rozměry podle velikosti okna. Nejčastěji 
 
 <!-- AdSnippet -->
 
-Dnes už bych nikomu nedoporučoval vymýšlet weby jen pro velké displeje. Tehdy to ale nikdo jinak nedělal. V roce 2010 tedy musel Marcotte a jeho tým zbourat něco jako Stalinův pomník tehdejšího webdesignu: Layout fixních rozměrů optimalizovaný pro velké displeje. <span class="ebook-only" markdown="1">O [layoutu](responzivni-layout.md) píšu v samostatné kapitole.</span>
+Dnes už bych nikomu nedoporučoval vymýšlet weby jen pro velké displeje. Tehdy to ale nikdo jinak nedělal. V roce 2010 tedy musel Marcotte a jeho tým zbourat něco jako Stalinův pomník tehdejšího webdesignu: Layout fixních rozměrů optimalizovaný pro velké displeje. 
+
+<div class="ebook-only" markdown="1">O [layoutu](responzivni-layout.md) píšu v samostatné kapitole.
+</div>
 
 ## 2. Pružné obrázky
 

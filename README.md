@@ -123,6 +123,8 @@ Totéž jen pro e-booky pomocí `.ebook-only`:
 </div>
 ```
 
+Pozor, není možné totéž udělat inline pomocí `<span class="ebook-only" markdown="1">`. Nějak to prostě nefunguje.
+
 ### Umístění reklamy na webu
 
 Standardně po druhém odstavci. Lze změnit jednou nebo více kotvami `<!-- AdSnippet -->` v obsahu.
