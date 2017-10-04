@@ -2,8 +2,8 @@
 
 Pojďme do fiktivního e-shopu přidat vlastní typografii, barvy a grafické prvky. Nějak si prostě dokument upravit podle vizuálního stylu ForestKid.cz. Hotový stav  příkladu pro tuto fázi si můžete naživo prohlédnout nebo stáhnout na následujících adresách:
 
-- Otevření v prohlížeči: [vrdl.in/vdwddok](http://vrdl.in/vdwddok)
-- Stažení v ZIPu: [vrdl.in/vdwddokzip](http://vrdl.in/vdwddokzip)
+- Otevření v prohlížeči: [vrdl.in/vdwddok](https://vrdl.in/vdwddok)
+- Stažení v ZIPu: [vrdl.in/vdwddokzip](https://vrdl.in/vdwddokzip)
 
 Co jsme na stránce udělali, nejlépe ověříme pohledem do `style.css`. 
 
@@ -158,7 +158,7 @@ E-shop teď získal základní grafický styl.
 <figure>
 <img src="dist/images/original/vdwd/priklad-dokument.jpg" alt="">
 <figcaption markdown="1">    
-*Dokument se základním grafickým stylem, barvami a typografií. [vrdl.in/vdwddok](http://vrdl.in/vdwddok)*
+*Dokument se základním grafickým stylem, barvami a typografií. [vrdl.in/vdwddok](https://vrdl.in/vdwddok)*
 </figcaption> 
 </figure> 
 

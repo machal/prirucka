@@ -11,8 +11,8 @@ Ano, je to tak. Příklad můžeme pro naše potřeby považovat za hotový. V [
 
 Poslední krok ukázkové stránky si můžete stáhnout a otevřít zde na následujících odkazech.
 
-- Otevření v prohlížeči: [vrdl.in/vdwdhot](http://vrdl.in/vdwdhot)
-- Stažení v ZIPu: [vrdl.in/vdwdhotzip](http://vrdl.in/vdwdhotzip)
+- Otevření v prohlížeči: [vrdl.in/vdwdhot](https://vrdl.in/vdwdhot)
+- Stažení v ZIPu: [vrdl.in/vdwdhotzip](https://vrdl.in/vdwdhotzip)
 
 ## Hotové to je a není
 
