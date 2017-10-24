@@ -89,6 +89,43 @@ Video: <a href="https://www.youtube.com/watch?v=VN8CFG-YajE">BrowserStack</a> ~ 
 </p>
 ```
 
+### Tabulka
+
+Jednodušší:
+
+```
+| Prvek      | Vzhled | Klik/touch |
+|------------|:------:|:----------:|
+| `<span>`   |  +     |            |
+```
+
+Pro dvoustavové značky v tabulkách používáme `+`, protože je dostupné ve všech písmech, kterými se obsah vykresluje.
+
+Složitější tabulky ideálně jako `<figure>`:
+
+```html
+<figure>
+
+<div class="rwd-scrollable"  markdown="1"> 
+
+| Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
+|------------|:------:|:----------:|:-----:|:------:|:--------:|
+| `<span>`   |  +     |      +     |       |        |          |
+| `<a>`      |  +     |      +     |    +  |        |          |
+| `<button>` |  +     |      +     |    +  |    +   |      +   |
+
+</div>  
+
+<figcaption markdown="1">    
+*Tabulka: Přidáním třídy můžeme nastavit vzhled tlačítka na jakýkoliv element*
+</figcaption> 
+
+</figure>
+```
+
+Třída `rwd-scrollable` zajišťuje rolování do stran na blogu u širších tabulek.
+
+
 ### Podcast
 
 Vložení opět pomocí HTML kódu. 

@@ -137,13 +137,17 @@ Existence ARIA `role="button"` by mohla napovídat, že bychom snad měli možno
 
 Je to samozřejmě blbost. Pojďme si na tabulce ukázat, jaké všechny funkce jsou skryté v prvku `<button>` a které prvky `<span>` ani `<a>` nemají.
 
-<figure markdown="1">
+<figure>
+
+<div class="rwd-scrollable"  markdown="1"> 
 
 | Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
 |------------|:------:|:----------:|:-----:|:------:|:--------:|
 | `<span>`   |  +     |      +     |       |        |          |
 | `<a>`      |  +     |      +     |    +  |        |          |
 | `<button>` |  +     |      +     |    +  |    +   |      +   |
+
+</div>  
 
 <figcaption markdown="1">    
 *Tabulka: Přidáním třídy můžeme nastavit vzhled tlačítka na jakýkoliv element, `<span>` nebude možné aktivovat klikáním a dotyky a nebude možné jej zaměřit z klávesnice (focus). To asi nepřekvapí. `<a>` ovšem nenese význam tlačítka a není možné jej aktivovat mezerníkem.*
