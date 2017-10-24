@@ -2,17 +2,19 @@
 
 Prvek `<button>` reprezentuje tlačítko. Tím bychom mohli skončit a jít na pivo, že jo? To byste ale byli na špatném blogu. My půjdeme do hloubky.
 
-* Doporučím vám dávat prvku `<button>` přednost před tlačítky v <input>.
-* Upozorním, že prvek `<a>` stylovaný jako tlačítko vždy nemusí být dobrý nápad.
-* Nakonec společně zjistíme, že `<button>` je vlastně univerzální interaktivní prvek.
+* Doporučím vám [dávat prvku `<button>` přednost](#proc) před tlačítky v `<input>`.
+* Upozorním, že [prvek `<a>` stylovaný jako tlačítko](#odkaz) vždy nemusí být dobrý nápad.
+* Nakonec společně zjistíme, že `<button>` je vlastně [univerzální interaktivní prvek](#univerzalni).
 
 Začneme ale u samotné HTML značky.
 
-## Prvek `<button>`
+## Prvek `<button>` {#prvek}
 
 [Specifikace](https://www.w3.org/TR/html5/forms.html#the-button-element) uvádí, že `<button>` reprezentuje tlačítko, jenže definice tlačítka je širší než bychom mohli čekat.
 
 Nespornou výhodou prvku `<button>` je jeho párovost. Můžeme do něj vložit libovolný text, který zároveň slouží jako jeho popis (label). Můžeme do něj vložit libovolnou HTML strukturu.
+
+<!-- AdSnippet -->
 
 Atributem `type=""` můžete tlačítku vnutit různé vzorce chování:
 
@@ -22,7 +24,7 @@ Atributem `type=""` můžete tlačítku vnutit různé vzorce chování:
 
 To, že poslední typ nic nedělá, neznamená, že nic neumí. Má vlastnosti, které jiným HTML prvkům chybí. Za chvilku se k tomu dostaneme.
 
-## Proč `<button>` a ne `<input>`?
+## Proč `<button>` a ne `<input>`? {#proc}
 
 Známe přeci `<input type="button">` nebo jiné s hodnotami `image`, `submit` a `reset` v atributu `type=""`. Proč tedy `<button>`? 
 
@@ -65,18 +67,21 @@ Tlačítko (*button*) je naproti tomu prvek, který po aktivování vyvolává a
 
 Pokud tedy prvek vyvolává akci, ale nemění lokaci, je správnější použít značku `<button>`. 
 
-Neznamená to však, že byste měli pro všechny komponenty rozhraní s vizuálem tlačítka používat zásadně jen `<button>`. Občas je kvůli jednotnosti rozhraní potřeba odkaz nastylovat vizuálěm tlačítka. Znamená to především, že byste neměli používat prvek `<a>` tam, kde je významově vhodnější tlačítko. Prostě pro akce, které nemění URL prohlížeče. Neměli byste dělat ošklivárny tohoto typu:
+Neznamená to však, že byste měli pro všechny komponenty rozhraní s vizuálem tlačítka používat zásadně jen `<button>`. Občas je kvůli jednotnosti rozhraní potřeba odkaz nastylovat vizuálem tlačítka. Znamená to především, že byste neměli používat prvek `<a>` tam, kde je významově vhodnější tlačítko. Prostě pro akce, které nemění URL prohlížeče. Neměli byste dělat ošklivárny tohoto typu:
 
 ```html
 <input type="text">
-<a href="#" class="button">Tlačítko pro ovládání inputu</a> 
+
+<a href="#" class="button">
+  Tlačítko pro ovládání inputu
+</a> 
 ```
 
-Nebo takhle: Když už to potřebujete, měli byste myslet opravdu na všechno.
+Nebo takhle: Když už to potřebujete, měli byste přidat všechny očekávané funkce tlačítka.
 
-## Odkaz s vizuálem tlačítka: na co všechno myslet?
+## Odkaz s vizuálem tlačítka: na co všechno myslet? {#odkaz}
 
-Udělat z `<a>` tlačítko? Předpokládeme, že se jedná z významového pohledu o tlačítko, tedy nepřecházíme na novou URL. Pojďme to zkusit udělat špatně, odkazem:
+Pojďme si to ukázat na příkladu. Předpokládeme, že se jedná z významového pohledu o tlačítko, tedy nepřecházíme na novou URL. Pojďme to zkusit udělat špatně, odkazem:
 
 ```html
 <a href="#" class="button">
@@ -84,7 +89,7 @@ Udělat z `<a>` tlačítko? Předpokládeme, že se jedná z významového pohle
 </a>
 ```
 
-Prvek bude mít díky třídě vizuál tlačítka. Čtečky dávají prvku `<a>` jiný význam než prvku `<button>`. Proto bychom museli přidat [WAI-ARIA roli](wai-aria.md) s významem tlačítka:
+Prvek bude mít díky třídě vizuál tlačítka. Čtečky dávají prvku `<a>` jiný význam než prvku `<button>`. Proto bychom museli přidat [WAI-ARIA roli](wai-aria.md) pro tlačítko:
 
 ```html
 <a href="#" class="button" role="button">
@@ -92,7 +97,7 @@ Prvek bude mít díky třídě vizuál tlačítka. Čtečky dávají prvku `<a>`
 </a>
 ```
 
-Ale je tu i další problém: Odkaz není na rozdíl od tlačítka možné v prohlížečích aktivovat mezerníkem. Tlačítko je aktivovatelné mezerníkem i enterem, odkaz jen enterem. Více o tom píší třeba [na MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role).
+Ale je tu i další problém: Odkaz není na rozdíl od tlačítka možné v prohlížečích aktivovat mezerníkem. Tlačítko má být aktivovatelné mezerníkem i enterem, odkaz jen enterem. Více o tom píší třeba [na MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role).
 
 Jak to vyřešit? Mohlo by vás napadnout třeba zanoření nativních prvků:
 
@@ -105,6 +110,8 @@ Jak to vyřešit? Mohlo by vás napadnout třeba zanoření nativních prvků:
 ```
 
 Jenže to dobře fungovat nebude. Při ovládání z klávesnice musí uživatel zápasit se dvěmi zaměřeními, s dvojitým *focusem*. Nebude pro něj snadné vybrat ten správný. 
+
+<!-- AdSnippet -->
 
 Zkusme tedy další pokus s odkazem. Hlídání stisknutí mezerníku musíme ošetřit Javascriptem:
 
@@ -132,10 +139,11 @@ Je to samozřejmě blbost. Pojďme si na tabulce ukázat, jaké všechny funkce 
 
 <figure markdown="1">
 
-|* Prvek    *|* Vzhled *|* Klik/touch *|* Focus *|* Význam *|* Mezerník *|
-| `<span>`   |  +       |      +       |         |          |            |
-| `<a>`      |  +       |      +       |    +    |          |            |
-| `<button>` |  +       |      +       |    +    |    +     |      +     |
+| Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
+|------------|:------:|:----------:|:-----:|:------:|:--------:|
+| `<span>`   |  +     |      +     |       |        |          |
+| `<a>`      |  +     |      +     |    +  |        |          |
+| `<button>` |  +     |      +     |    +  |    +   |      +   |
 
 <figcaption markdown="1">    
 *Tabulka: Přidáním třídy můžeme nastavit vzhled tlačítka na jakýkoliv element, `<span>` nebude možné aktivovat klikáním a dotyky a nebude možné jej zaměřit z klávesnice (focus). To asi nepřekvapí. `<a>` ovšem nenese význam tlačítka a není možné jej aktivovat mezerníkem.*
@@ -147,7 +155,7 @@ Do vytvoření tlačítka pomocí jiných prvků než `<button>` se proto ideál
 
 [Paul J. Adam](https://www.deque.com/blog/accessible-aria-buttons/) píše i o dalších věcech, které se mi sem nevešly. Cituji:
 
-*There's a lot to consider when making a custom button control fully accessible with an experience equal to a native `<button>`. You need tabindex=0, role=button, onkeydown, .keyCode == 13, .keyCode == 32, event.preventDefault(), and extra CSS to make it look like a real button.*
+> There's a lot to consider when making a custom button control fully accessible with an experience equal to a native `<button>`. You need tabindex=0, role=button, onkeydown, .keyCode == 13, .keyCode == 32, event.preventDefault(), and extra CSS to make it look like a real button.*
 
 Ano, sémanticky správné tlačítko totiž vypadá úplně jednoduše:
 
@@ -161,15 +169,16 @@ Jak navíc [ve své skvělé knize](https://shop.smashingmagazine.com/products/i
 
 A jak za chvilku uvidíte, používat pro prvek `<button>` označení „tlačítko“ trochu zavání podceňováním.
 
-## `<button>` jako univerzální iteraktivní prvek
+## `<button>` jako univerzální iteraktivní prvek {#univerzalni}
 
-Button je zaměřitelný a aktivovatelný z dotykem, myší i z klávesnice. To je věc, kterou potřebujeme fakt často. Co třeba akordeóny a další rozklikávací rozhraní?
+Button je zaměřitelný a aktivovatelný dotykem, myší i z klávesnice. To je věc, kterou potřebujeme fakt často. Co třeba akordeóny a další rozklikávací rozhraní?
 
-Aktivační prvek je totiž významem dost typické tlačítko:
+Aktivační prvek akordeónu je totiž významem typické tlačítko:
 
 ```html
 <h3>
-  <button aria-expanded="false" aria-controls="collapsible-0">
+  <button 
+    aria-expanded="false" aria-controls="collapsible-0">
     Rozklikávač
   </button>
 </h3>
@@ -181,12 +190,15 @@ Aktivační prvek je totiž významem dost typické tlačítko:
 
 [Příklad s akordeónem](http://heydonworks.com/practical_aria_examples/#progressive-collapsibles) jsem si vypůjčil z ukázek Heydona Pickeringa. 
 
-Další možnosti jsou vidět na webu [Inclusive Components](https://inclusive-components.design/). Jednou z nich [stylování vlastních přepínačů](https://inclusive-components.design/toggle-button/#theswitchrole) – dvoupolohových tlačítek:
+Další možnosti jsou vidět na webu [Inclusive Components](https://inclusive-components.design/). Jednou z nich je [stylování vlastních přepínačů](https://inclusive-components.design/toggle-button/#theswitchrole) – dvoupolohových tlačítek:
 
 
 ```html
-<span id="notify-email">Notify by email</span> 
-<button role="switch" aria-checked="true" aria-labelledby="notify-email">
+<span id="notify-email">
+  Notify by email
+</span> 
+<button role="switch" 
+  aria-checked="true" aria-labelledby="notify-email">
   <span>on</span>
   <span>off</span>
 </button>
@@ -194,5 +206,8 @@ Další možnosti jsou vidět na webu [Inclusive Components](https://inclusive-c
 
 Vidíte, že pomocí atributu `role=""` měníme význam tlačítka na „přepínač“. Věnujte prosím pozornost i dalším atributům začínajícím slovem `aria-`. 
 
-Takovéto prvky v rozhraní jako běžná tlačítka nevypadají, přesto u nich může být prvek `<button>` díky svým vlastnostem velmi užitečný. Vzpomeňte si na něj až budete nějakou takovou komponentu stylovat.
+Takovéto prvky v rozhraní jako běžná tlačítka nevypadají, přesto u nich může být prvek `<button>` díky svým vlastnostem velmi užitečný. 
 
+Vzpomeňte si na něj až budete nějakou takovou komponentu stylovat. `<a>` pro tlačítka používejte jen tam, kde se to významově hodí. Jiné elementy nejlépe vůbec pro tlačítka nevyužívejte.
+
+<!-- AdSnippet -->
