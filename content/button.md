@@ -8,6 +8,7 @@ Prvek `<button>` reprezentuje tlačítko. Tím bychom mohli skončit a jít na p
 
 Začneme ale u samotné HTML značky.
 
+
 ## Prvek `<button>` {#prvek}
 
 [Specifikace](https://www.w3.org/TR/html5/forms.html#the-button-element) uvádí, že `<button>` reprezentuje tlačítko, jenže definice tlačítka je širší než bychom mohli čekat.
@@ -18,11 +19,14 @@ Nespornou výhodou prvku `<button>` je jeho párovost. Můžeme do něj vložit 
 
 Atributem `type=""` můžete tlačítku vnutit různé vzorce chování:
 
-* `<button type="submit">` – odesílá formulář
+* `<button type="submit">` nebo `<button>` – odesílá formulář
 * `<button type="reset">` – resetuje hodnoty ve formuláři
-* `<button type="button">` nebo `<button>` nedělá nic
+* `<button type="button">` – nedělá nic
 
-To, že poslední typ nic nedělá, neznamená, že nic neumí. Má vlastnosti, které jiným HTML prvkům chybí. Za chvilku se k tomu dostaneme.
+Poslední typ neodešle formulář, takže mu můžete přidávat nejrůznější funkce. Rozdíl mezi odesílacím a neodesílacím tlačítkem je patrný také v mé další ukázce. [cdnp.io/e/VrZJwX](https://codepen.io/machal/pen/VrZJwX)
+
+To, že `type="button"` nic nedělá, neznamená, že nic neumí. Má vlastnosti, které jiným HTML prvkům chybí. Za chvilku se k nim dostaneme. Nejprve ještě k sesterské značce `<input>`.
+
 
 ## Proč `<button>` a ne `<input>`? {#proc}
 
@@ -55,19 +59,25 @@ button:before {
 }
 ```
 
+Nicméně pozor na velké aktivní plochy. Jak uvádí Bohumil Jahoda, větší plochy pseudotříd nejsou aktivní ve Firefoxu. [kod.djpw.cz/mckc](http://kod.djpw.cz/mckc)
+
 ### Problémy se starými Explorery, spíše pro zajímavost
 
 S `<button>` se pojily nějaké problémy v Internet Explorerech verzí 6-9. Zejména pak v situacích, když jste textovou hodnotu uvedenou v `<button>` chtěli poslat na server. Mě osobně to nevadí, protože to je velmi vzácný scénář a protože už i staré Explorery jsou dnes druh velmi vzácný, až vyhynulý. Problémy se starými Explorery přesně [popisuje Bohumil Jahoda](http://jecas.cz/button), ale nenechte se jimi odradit. 
 
 ## Nepleťte si tlačítko s odkazem
 
-Odkaz (*link*) specifikace definuje jako interaktivní odkaz na interní nebo externí zdroj. Prostě kotva uvnitř dokumentu nebo odkaz na jinou adresu. Plně mu odpovídá prvek `<a>`.
+Odkaz (*link*) specifikace definuje jako interaktivní odkaz na interní nebo externí zdroj. Prostě kotva uvnitř dokumentu nebo odkaz na jinou adresu. Plně mu odpovídá prvek `<a>`. 
+
+Odkaz má kromě toho speciální chování v prohlížečích. Jejich obsah lze pomocí drag'n'drop přemístit jinam. Některé prohlížeče po najetí myši ukazují cílovou adresu. Poslední specialita je možnost otevřít cílovou adresu v novém okně pomocí klávesové zkratky nebo z kontextové nabídky. [Někteří také tvrdí](https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b), že je jim *vyhrazený* kurzor v podobě ruky (`cursor:pointer`), ale s tím já se neztotožňuji. „Pracičkový“ kurzor se dnes na webech široce používá pro zvýraznění aktivních elementů a je to zažitá věc.
 
 Tlačítko (*button*) je naproti tomu prvek, který po aktivování vyvolává akci uvnitř aktuální stránky. Plně mu odpovídá element `<button>`.
 
 Pokud tedy prvek vyvolává akci, ale nemění lokaci, je správnější použít značku `<button>`. 
 
-Neznamená to však, že byste měli pro všechny komponenty rozhraní s vizuálem tlačítka používat zásadně jen `<button>`. Občas je kvůli jednotnosti rozhraní potřeba odkaz nastylovat vizuálem tlačítka. Znamená to především, že byste neměli používat prvek `<a>` tam, kde je významově vhodnější tlačítko. Prostě pro akce, které nemění URL prohlížeče. Neměli byste dělat ošklivárny tohoto typu:
+Neznamená to však, že byste měli pro všechny komponenty rozhraní s vizuálem tlačítka používat zásadně jen `<button>`. Občas je kvůli jednotnosti rozhraní potřeba odkaz nastylovat vizuálem tlačítka. 
+
+Znamená to především, že byste neměli používat prvek `<a>` tam, kde je významově vhodnější tlačítko. Prostě pro akce, které nemění URL prohlížeče. Neměli byste dělat ošklivárny tohoto typu:
 
 ```html
 <input type="text">
@@ -77,7 +87,7 @@ Neznamená to však, že byste měli pro všechny komponenty rozhraní s vizuál
 </a> 
 ```
 
-Nebo takhle: Když už to potřebujete, měli byste přidat všechny očekávané funkce tlačítka.
+Nebo takhle: Když už to udělat potřebujete, měli byste přidat všechny očekávané funkce tlačítka.
 
 ## Odkaz s vizuálem tlačítka: na co všechno myslet? {#odkaz}
 
@@ -159,7 +169,7 @@ Do vytvoření tlačítka pomocí jiných prvků než `<button>` se proto ideál
 
 [Paul J. Adam](https://www.deque.com/blog/accessible-aria-buttons/) píše i o dalších věcech, které se mi sem nevešly. Cituji:
 
-> There's a lot to consider when making a custom button control fully accessible with an experience equal to a native `<button>`. You need tabindex=0, role=button, onkeydown, .keyCode == 13, .keyCode == 32, event.preventDefault(), and extra CSS to make it look like a real button.*
+> There's a lot to consider when making a custom button control fully accessible with an experience equal to a native button. You need tabindex=0, role=button, onkeydown, .keyCode == 13, .keyCode == 32, event.preventDefault(), and extra CSS to make it look like a real button.
 
 Ano, sémanticky správné tlačítko totiž vypadá úplně jednoduše:
 
