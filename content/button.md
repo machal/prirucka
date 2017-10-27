@@ -9,7 +9,7 @@ Prvek `<button>` reprezentuje tlačítko. Tím bychom mohli skončit a jít na p
 Začneme ale u samotné HTML značky.
 
 
-## Prvek `<button>` {#prvek}
+## Prvek BUTTON {#prvek}
 
 [Specifikace](https://www.w3.org/TR/html5/forms.html#the-button-element) uvádí, že `<button>` reprezentuje tlačítko, jenže definice tlačítka je širší než bychom mohli čekat.
 
@@ -28,13 +28,13 @@ Poslední typ neodešle formulář, takže mu můžete přidávat nejrůznějš�
 To, že `type="button"` nic nedělá, neznamená, že nic neumí. Má vlastnosti, které jiným HTML prvkům chybí. Za chvilku se k nim dostaneme. Nejprve ještě k sesterské značce `<input>`.
 
 
-## Proč `<button>` a ne `<input>`? {#proc}
+## Proč prvek BUTTON a ne INPUT? {#proc}
 
 Známe přeci `<input type="button">` nebo jiné s hodnotami `image`, `submit` a `reset` v atributu `type=""`. Proč tedy `<button>`? 
 
 Protože je univerzální a snadněji se styluje.
 
-### Do `<button>` můžete vložit další element 
+### Do prvku BUTTON můžete vložit další element 
 
 Prvek pojme skoro jakoukoliv HTML strukturu:
 
@@ -49,7 +49,7 @@ Přesněji řečeno: Pojme jakékoliv značky, které popisují text v odstavci 
 
 `<input>` přijímá pouze textové hodnoty nebo obrázek, který je ovšem dneska kvůli přístupnosti už dost krajní možností.
 
-### Můžete používat pseudotřídy `:before` a `:after`
+### Můžete používat pseudotřídy :before a :after
 
 Tohle bychom s `<input>` jako nepárovou značkou opět nemohli:
 
@@ -135,9 +135,9 @@ Zkusme tedy další pokus s odkazem. Hlídání stisknutí mezerníku musíme o�
 
 Můžete si to zkusit na Codepenu: [cdpn.io/e/eExXmy](https://codepen.io/machal/pen/eExXmy?editors=1000#0).
 
-### A teď úplná prasárna: `<span>` jako tlačítko
+### A teď úplná prasárna: prvek SPAN jako tlačítko
 
-Existence ARIA `role="button"` by mohla napovídat, že bychom snad měli možnost udělat tlačítko z čehokoliv, třeba z prvku <span>:
+Existence ARIA `role="button"` by mohla napovídat, že bychom snad měli možnost udělat tlačítko z čehokoliv, třeba z prvku `<span>`:
 
 ```html
 <span role="button">
@@ -148,21 +148,16 @@ Existence ARIA `role="button"` by mohla napovídat, že bychom snad měli možno
 Je to samozřejmě blbost. Pojďme si na tabulce ukázat, jaké všechny funkce jsou skryté v prvku `<button>` a které prvky `<span>` ani `<a>` nemají.
 
 <figure>
-
 <div class="rwd-scrollable"  markdown="1"> 
-
 | Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
 |------------|:------:|:----------:|:-----:|:------:|:--------:|
 | `<span>`   |  +     |      +     |       |        |          |
 | `<a>`      |  +     |      +     |    +  |        |          |
 | `<button>` |  +     |      +     |    +  |    +   |      +   |
-
 </div>  
-
 <figcaption markdown="1">    
-*Tabulka: Přidáním třídy můžeme nastavit vzhled tlačítka na jakýkoliv element, `<span>` nebude možné aktivovat klikáním a dotyky a nebude možné jej zaměřit z klávesnice (focus). To asi nepřekvapí. `<a>` ovšem nenese význam tlačítka a není možné jej aktivovat mezerníkem.*
+*Tabulka: Přidáním třídy můžeme nastavit vzhled tlačítka na jakýkoliv element, prvek SPAN nebude možné aktivovat klikáním a dotyky a nebude možné jej zaměřit z klávesnice (:focus). To asi nepřekvapí. Prvek A ovšem nenese význam tlačítka a není možné jej aktivovat mezerníkem.*
 </figcaption> 
-
 </figure>
 
 Do vytvoření tlačítka pomocí jiných prvků než `<button>` se proto ideálně nepouštějte. 
@@ -183,7 +178,7 @@ Jak navíc [ve své skvělé knize](https://shop.smashingmagazine.com/products/i
 
 A jak za chvilku uvidíte, používat pro prvek `<button>` označení „tlačítko“ trochu zavání podceňováním.
 
-## `<button>` jako univerzální iteraktivní prvek {#univerzalni}
+## Značka BUTTON jako univerzální iteraktivní prvek {#univerzalni}
 
 Button je zaměřitelný a aktivovatelný dotykem, myší i z klávesnice. To je věc, kterou potřebujeme fakt často. Co třeba akordeóny a další rozklikávací rozhraní?
 

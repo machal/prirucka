@@ -30,7 +30,7 @@ V prvé řadě je potřeba psát obecně ve stylu například „v době psaní 
 
 Pro ebooky je lepší co nejjednodušší formátování, proto:
 
-- Pro zvýrazňování slov v textu nepoužíváme tučný řez, ale kurzívu. Jedinou výjimkou jsou „nadpisy“ v `ul`/`ol` seznamech. Tučný řez rezervujeme pro nadpisy.
+- Pro zvýrazňování slov v textu nepoužíváme tučný řez, ale kurzívu. Jedinou výjimkou jsou „nadpisy“ v `ul`/`ol` seznamech. Tučný řez jinak rezervujeme pro nadpisy.
 - `ul`/`ol` seznamy nepoužíváme pro texty delší než jedna věta. V eboocích se pak rozpadají na více řádek.
 - Kombinace nadpisu a podnadpisu nevypadá dobře. Stejně jako nadpis a ukázka kódu. Prostě by pod každým nadpisem měl být nějaký text a až pak teprve jiný typ obsahu.
 
@@ -107,13 +107,11 @@ Složitější tabulky ideálně jako `<figure>`:
 <figure>
 
 <div class="rwd-scrollable"  markdown="1"> 
-
 | Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
 |------------|:------:|:----------:|:-----:|:------:|:--------:|
 | `<span>`   |  +     |      +     |       |        |          |
 | `<a>`      |  +     |      +     |    +  |        |          |
 | `<button>` |  +     |      +     |    +  |    +   |      +   |
-
 </div>  
 
 <figcaption markdown="1">    
@@ -138,9 +136,19 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-robinem-pokornym-o-css-v-j
 
 ### Ukázky kódu
 
-Vkládání HTML tagů dovniř textu pomocí speciálních symbolů, tedy `&lt;meta&gt;`, nikoliv `<meta>`. Opět hlavně kvůli možným XHTML chybám v ePub formátu.
+Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně:
 
-(Poznámka, tohle se od VDWD1.1 bude řešit replacnutím při zpracování kódu. Na blogu se to totiž zobrazuje špatně - ve formátu `&lt;meta&gt;`.)
+- V bloku kódu.
+- Uvnitř textu. Např. „Značka `<html>` slouží…“. Možné to je uvnitř odstravců, odrážek, ale i uvnitř tabulek.
+
+
+`<code>` naopak nepoužíváme:
+
+- V nadpisech, protože jsou vyvedené tučným řezem (kód není), vypadají nehezky atd. Jediná výjimka jsou situace, kdy nadpis tvoří jen samotný kód. [Příklad](https://www.vzhurudolu.cz/prirucka/pruzna-media)
+- V citacích (`blockquote` a `cite`) a `figcaption`, protože jsou vyvedené kurzívou.
+
+HTML značky lze opsat kapitálkami („Značka HTML slouží…“). JS a CSS kód prostě uvedeme bez `<code>` tak jak je. Vyplývá z toho samozřejmě, že je lepší se kódu na takovýchto místech vyhnout.
+
 
 ### Zobrazení jen na webu
 
