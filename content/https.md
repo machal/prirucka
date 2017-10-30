@@ -1,5 +1,13 @@
 # HTTPS
 
+Shrnu zkušenosti s nedávným přesunem Vzhůru dolů na zabezpečený protokol.
+
+
+- [Praktické důvody](#proc) pro přechod na HTTPS
+- Tříkrokový [návod na přechod](#jak)
+- [Moje zkušenosti](#zkusenosti): opruz s Disqus, Google Search Console a lokálním vývojem
+
+
 ## Proč mít web na HTTPS? {#proc}
 
 Důvody jsou dvou typů: bezpečnostní a praktické.
@@ -49,9 +57,31 @@ Já z nich při převádění Vzhůru dolů vycházel. I tak jsem se nevyhnul n�
 
 ## Zkušenosti z převodu Vzhůru dolů {#zkusenosti}
 
-### Disqus a další služby třetích stran
+### Disqus a další služby třetích stran {#zkusenosti-disqus}
 
+Ve stránce můžete mít lajkovací tlačítka Facebooku, Twitteru a dalších služeb. Nebo komentáře – například od Disqus – jako já. Tyhle služby obvykle zobrazují obsah podle URL, kterou ale přechodem na HTTPS měníte.
 
+Disqus má sice [migrační nástroj](https://help.disqus.com/customer/portal/articles/286778-migration-tools) a [postup konverze URL](https://woorkup.com/migrate-disqus-comments-https/) na zabezpečenou verzi vypadá snadno. Já to ovšem ani přes veškerou snahu nedokázal. Jejich podpora mi navíc ukázala, jak dokáže krásně mlčet. Asi jste si všimli, že komentářích na webu úplně nelpím, takže jsem to prostě vzdal a začal s nimi odznovu.
+
+### Google Search Console {#zkusenosti-gse}
+
+O data ze [Search Console](google-search-console.md) jsem přesměrování URL nechtěl přijít. Ale asi to jinak nejde. Search Console má nějaký [migrační nástroj](https://support.google.com/webmasters/answer/83106?hl=en&ref_topic=6029673), ale zrovna přesun z HTTP na HTTPS není mezi podporovanými typy přesunů.
+
+Musíte tam tedy přidat nový web s HTTPS adresou a smířit se s tím, že po přechodu vám začne u původní HTTP verze hlásit velké množství chyb s přesměrováním.
+
+### Lokální vývoj {#zkusenosti-lokal}
+
+Jak ale po přechodu na HTTPS vyřešit lokální vývoj? Na vlastním počítači HTTPS nepotřebuju. Na druhou stranu si myslím, že by na lokální mašině měla aplikace běžet ve stejném prostředí jako na produkci. Zeptal jsem se milých kolegů a kolegyň na naší [frontendistické diskuzi](https://www.facebook.com/groups/frontendisti/permalink/1943434769201371/) a dostal zajímavé možnosti:
+
+1. Nechat si [MAMPem vygenerovat](http://documentation.mamp.info/en/MAMP-PRO-Mac/Settings/Hosts/SSL/) self-signed certifikát. Nebo jiným nástrojem pro vaše prostředí. Prohlížeč pak ale zobrazoval varovnou obrazovku – certifikát mu smrděl. To se na Macu vyřeší [přidáním certifikátu do Keychain Access](https://css-tricks.com/trusting-ssl-locally-mac/). Pokud jste to řešili pro jiné platformy, napište mi prosím – přidám to sem. 
+2. Udělat v `.htaccess` podmínku, která neudělá přesměrování na zabezpečený protokol na localhostu: `RewriteCond %{REMOTE_ADDR} !=127.0.0.1`. Další možnost [ukazuje David Grudl](https://www.facebook.com/groups/frontendisti/permalink/1943434769201371/?comment_id=1943589395852575&comment_tracking=%7B%22tn%22%3A%22R2%22%7D).
+3. S Dockerem je to jednoduché: „Kontejner aplikace jede na HTTP a TLS s přesměrování tam dodává až load balancer v produkci.“ píše Honza Pobořil.
+
+Docker zatím nepoužívám a chtěl jsem prostředí co nejpodobnější produkci, takže moje řešení je v bodě jedna.
+
+Měli jste s přechodem i jiné potíže, neuvedené u mě, ani v odkazovaných checklistech? Napište je is řešením do komentářů.
+
+Pojďme to shrnout? Ano, HTTPS potřebujete. Ano, přesun není složitý. Ano, vždycky se na něčem zaseknete. :-)
 
 
 
