@@ -1,4 +1,4 @@
-# HTTPS
+# HTTPS: 4 důvody proč přejít a pár zkušeností k tomu
 
 V textu shrnu zkušenosti s nedávným přesunem Vzhůru dolů na zabezpečený protokol. 
 
@@ -19,14 +19,17 @@ HTTPS byste ale měli na webu mít i čistě z praktických důvodů. Hlavně kv
 
 Tlaky pro přechod na HTTPS ale nepřicházejí jen ze strany prohlížečů:
 
-- Jde o doporučení vyhledávačů. Google říká, že [HTTPS je jeden z řadících signálů](https://security.googleblog.com/2014/08/https-as-ranking-signal_6.html).
-- HTTPS je podmínkou pro rozběhnutí rychlého [HTTP/2](http-2.md) (což chcete a už asi víte). Google jej také [silně doporučuje](https://www.ampproject.org/docs/getting-started/)  pro rozběhnutí [AMP verze webu](/blog/40-amp) (což někteří chcete, ale ještě možná nevíte).
-- Některé [funkce z HTML5 bez HTTPS nefungují](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https#https_is_the_future_of_the_web), nebo je potřeba je ze strany uživatelů povolovat. Týká se například příjmu audia nebo videa přes prohlížeč, geolokace atd. 
-- A opakuji to necitelnější: cejchování nezabezpečených stránek a formulářů ze strany prohlížečů. Však se podívejte na obrázek.
+1. Jde o doporučení vyhledávačů. Google říká, že [HTTPS je jeden z řadících signálů](https://security.googleblog.com/2014/08/https-as-ranking-signal_6.html).
+2. HTTPS je podmínkou pro rozběhnutí rychlého [HTTP/2](http-2.md) (což chcete a už asi víte). Google jej také [silně doporučuje](https://www.ampproject.org/docs/getting-started/)  pro rozběhnutí [AMP verze webu](/blog/40-amp) (což někteří chcete, ale ještě možná nevíte).
+3. Některé [funkce z HTML5 bez HTTPS nefungují](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https#https_is_the_future_of_the_web), nebo je potřeba je ze strany uživatelů povolovat. Týká se například příjmu audia nebo videa přes prohlížeč, geolokace atd. 
+4. A opakuji to necitelnější: cejchování nezabezpečených stránek a formulářů ze strany prohlížečů. Však se podívejte na obrázek.
 
-*TODO IMG*
-
-*Obrázek: Jak různé prohlížeče na Macu označují nezabezepčený a zabezpečený web. A podle slov výrobců prohlížečů se to bude postupně přitvrzovat.*
+<figure markdown="1">
+![flexbox schéma](dist/images/original/https.jpg)
+<figcaption markdown="1">    
+*Obrázek: Jak Firefox a Chrome na Macu označují nezabezpečený web a formuláře v něm. A podle slov výrobců prohlížečů se to bude postupně přitvrzovat.*
+</figcaption> 
+</figure>
 
 Pokud tedy weby nemáte na HTTPS, pojďme na to.
 
