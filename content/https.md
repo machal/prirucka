@@ -2,16 +2,18 @@
 
 V textu shrnu zkušenosti s nedávným přesunem Vzhůru dolů na zabezpečený protokol. 
 
-Může to být užitečné pro ty z vás, kteří ještě na HTTPS nepřešli nebo ty, kteří nemají dořešené detaily přechodu, jako třeba lokální vývoj.
+Může to být užitečné pro ty z vás, kteří ještě na HTTPS nepřešli nebo ty, kteří nemají dořešené detaily přechodu, jako třeba lokální vývoj. Budu se zabývat třemi tématy:
 
-- [Praktické důvody](#proc) pro přechod na HTTPS
-- Tříkrokový [návod na přechod](#jak)
-- [Moje zkušenosti](#zkusenosti): opruz s Disqus, Google Search Console a lokálním vývojem. Něco jsem i vyřešil.
+1. [Praktické důvody](#proc) pro přechod na HTTPS.
+2. Tříkrokový [návod na přechod](#jak).
+3. [Moje zkušenosti](#zkusenosti): opruz s Disqus, Google Search Console a lokálním vývojem. Něco jsem i vyřešil.
 
 
 ## Proč mít web na HTTPS? {#proc}
 
 Důvody jsou dvou typů: bezpečnostní a praktické.
+
+<!-- AdSnippet -->
 
 Z bezpečnosního hlediska vám HTTPS pojistí přenos citlivých dat, ale i například hlaviček. Téhle úrovni argumentace se nebudu do hloubky věnovat, protože jí nerozumím. Odkážu vás na [Michala Špačka](https://www.michalspacek.cz/prednasky/https-vsude-proc-f5forum), [Bohumila Jahodu](http://jecas.cz/https) nebo skvělý přesvědčovací web [Does my site need HTTPS?](https://doesmysiteneedhttps.com/) (spoiler, ale odpověď zní: „YES!“).
 
@@ -34,7 +36,7 @@ Tlaky pro přechod na HTTPS ale nepřicházejí jen ze strany prohlížečů:
 Pokud tedy weby nemáte na HTTPS, pojďme na to.
 
 
-## Jak jednoduše přejít na HTTPS? {#jak)
+## Jak jednoduše přejít na HTTPS? {#jak}
 
 Budu jen velmi stručný, protože skvělých detailních návodů jsou internety plné. Pod seznamem na ně taky odkážu.
 
@@ -66,6 +68,8 @@ Já z nich při převádění Vzhůru dolů vycházel. I tak jsem se ale nevyhnu
 
 Ve stránce asi budete mít lajkovací tlačítka Facebooku, Twitteru a dalších služeb. Nebo komentáře – například od Disqus – jako já. Tyhle služby obvykle zobrazují obsah podle URL, kterou ale přechodem na HTTPS měníte. (Ano, je to stejná situace, jako když změníte adresu stránky.)
 
+<!-- AdSnippet -->
+
 Disqus má sice [migrační nástroj](https://help.disqus.com/customer/portal/articles/286778-migration-tools) a [postup konverze URL](https://woorkup.com/migrate-disqus-comments-https/) na zabezpečenou verzi vypadá snadno. Já to ovšem ani přes veškerou snahu nedokázal. Jejich uživatelská podpora mi navíc ukázala, jak dokáže krásně mlčet. Na druhou stranu – asi jste si všimli, že na komentářích úplně nelpím, takže jsem to prostě vzdal a začal s nimi odznovu.
 
 ### Google Search Console {#zkusenosti-gse}
@@ -80,7 +84,7 @@ Jak ale po přechodu na HTTPS vyřešit lokální vývoj? Na vlastním počíta�
 
 Zeptal jsem se milých kolegů a kolegyň na naší [frontendistické diskuzi](https://www.facebook.com/groups/frontendisti/permalink/1943434769201371/) a dostal zajímavé možnosti:
 
-1. Nechat si [MAMPem vygenerovat](http://documentation.mamp.info/en/MAMP-PRO-Mac/Settings/Hosts/SSL/) „self-signed“ certifikát. Nemáte MAMP? Dejte tam [něco jiného](https://www.google.cz/search?q=ssl+certificate+localhost). Prohlížeč pak ale zobrazoval varovnou obrazovku – certifikát mu smrděl. To se na Macu vyřeší [přidáním certifikátu do Keychain Access](https://css-tricks.com/trusting-ssl-locally-mac/). Pokud jste to řešili i pro jiné platformy, napište mi prosím – přidám to sem. 
+1. Nechat si [MAMPem vygenerovat](http://documentation.mamp.info/en/MAMP-PRO-Mac/Settings/Hosts/SSL/) „self-signed“ certifikát. Nemáte MAMP? Dejte tam [něco jiného](https://www.zdrojak.cz/clanky/vytvoreni-vlastni-certifikacni-autority-tvorba-vlastnich-self-signed-certifikatu/). Prohlížeč pak ale zobrazoval varovnou obrazovku – certifikát mu smrděl. To se na Macu vyřeší [přidáním certifikátu do Keychain Access](https://css-tricks.com/trusting-ssl-locally-mac/). Pokud jste to řešili i pro jiné platformy, napište mi prosím – přidám to sem. 
 2. Udělat si v `.htaccess` podmínku, která nepřesměruje na zabezpečený protokol na localhostu: `RewriteCond %{REMOTE_ADDR} !=127.0.0.1`. Další možnost [ukazuje David Grudl](https://www.facebook.com/groups/frontendisti/permalink/1943434769201371/?comment_id=1943589395852575&comment_tracking=%7B%22tn%22%3A%22R2%22%7D).
 3. S Dockerem je to jednoduché: „Kontejner aplikace jede na HTTP a TLS s přesměrování tam dodává až load balancer v produkci.“ píše Honza Pobořil.
 
@@ -90,3 +94,4 @@ Měli jste s přechodem i jiné potíže, neuvedené u mě, ani v odkazovaných 
 
 Pojďme vše shrnout: Ano, HTTPS potřebujete. Ano, přesun není složitý. Ano, vždycky se na něčem zaseknete.
 
+<!-- AdSnippet -->
