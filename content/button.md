@@ -61,7 +61,19 @@ button:before {
 
 Nicméně pozor na velké aktivní plochy. Jak uvádí Bohumil Jahoda, větší plochy pseudotříd nejsou aktivní ve Firefoxu. [kod.djpw.cz/mckc](http://kod.djpw.cz/mckc)
 
-### Problémy se starými Explorery, spíše pro zajímavost
+### Atribut value se může lišit od textu
+
+Vývojáři zase na prvku `<button>` oceňují nezávislost atributu `value` na textu. Následující příklad jsem objevil v komentářích [na CSS Tricks](https://css-tricks.com/use-button-element/#comment-1073188):
+
+```html
+<form method="post">
+  <button name="action" value="save">Save this article</button>
+  <button name="action" value="publish">Publish this article</button>
+  <button name="action" value="save,publish">Save and publish this article</button>
+</form>
+```
+
+### Nevýhoda: Problémy se starými Explorery, spíše pro zajímavost
 
 S `<button>` se pojily nějaké problémy v Internet Explorerech verzí 6-9. Zejména pak v situacích, když jste textovou hodnotu uvedenou v `<button>` chtěli poslat na server. Mě osobně to nevadí, protože to je velmi vzácný scénář a protože už i staré Explorery jsou dnes druh velmi vzácný, až vyhynulý. Problémy se starými Explorery přesně [popisuje Bohumil Jahoda](http://jecas.cz/button), ale nenechte se jimi odradit. 
 
