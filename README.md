@@ -72,7 +72,7 @@ Alternativně s popiskem jako `<figure>`:
 
 ```
 <figure>
-<img src="pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
 <figcaption markdown="1">    
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
 </figcaption> 

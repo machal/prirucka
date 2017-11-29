@@ -40,7 +40,16 @@ Proto **doporučuji používat obě varianty**: HTML5 tag kvůli dopředné komp
 
 ## Oblasti stránky
 
-Pokud oblasti ve stránce takto nakódujete, umožní dnešní čtečky uživatelům procházet stránkou strukturovaně. To je rychlejší a efektivněji než sekvenčně pomocí nadpisů či jiných prvků.
+Pokud oblasti ve stránce takto nakódujete, umožní dnešní čtečky zrakově postiženým procházet stránkou strukturovaně. To je rychlejší a efektivněji než sekvenční procházení pomocí nadpisů či jiných prvků.
+
+<figure>
+<img src="dist/images/original/html5-role.jpg" alt="Oblasti stránky z WAI-ARIA a HTML5">
+<figcaption markdown="1">    
+*Šest hlavních oblastí stránky podle specifikací HTML5 a WAI-ARIA: hlavička, navigace, vyhledávací pole, hlavní obsah, méně důležitý obsah a patička.*
+</figcaption> 
+</figure>
+
+Podívejme se teď na těch šest hlavních oblastí.
 
 ### `<main role="main">`
 
@@ -104,10 +113,13 @@ Něco jako boční lišta. Méně významné informace, které se vztahují k hl
 
 Vyhledávání není možné vyznačit pomocí HTML5 prvku, takže alespoň `role` atributem.
 
+## Další oblasti stránky
+
+Zmíním i některé další důležité HTML prvky nebo WAI-ARIA role.
 
 ### `<figure>` a `<figcaption>`
 
-[HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element): `<figure>` je obsah, který doplňuje hlavní textový obsah a bude na něj odkazováno. Obrázek, video, schéma, ukázka kódu, SVG dokument. Volitelně je možné doplnit popiskem `<figcaption>`. Opět nejde o sekční, ale seskupovací typ elementu. Je užitečná jak pro čtečky, tak pro efektivní kódování webů.
+[HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element): `<figure>` je obsah, který doplňuje hlavní textový obsah a bude na něj odkazováno. Obrázek, video, schéma, ukázka kódu, SVG dokument. Volitelně je možné doplnit popiskem `<figcaption>`. Opět nejde o sekční, ale seskupovací typ elementu. Je užitečná jak pro čtečky, tak pro efektivní kódování webů. Více píšu v [samostatném článku](figure-figcaption.md).
 
 ### `<div role="application">`
 
