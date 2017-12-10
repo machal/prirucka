@@ -1,10 +1,12 @@
 # Testování přístupnosti webů v odečítačích obrazovky 
 
-Asi víte, že odečítač obrazovky (taky *čtečka* nebo *screen reader*) je software, který umožňuje slepým nebo jinak zrakově postiženým lidem používat vaše weby.
+Jak nainstalovat, spustit a používat screen readery? Pojďme si ukázat, jak testovat weby přímo tak jak je „vidí“ zrakově hendikepovaní uživatelé. 
 
-Opravdu *používat* – a to interaktivně – ne jen *číst*. České i anglické označení je vlastně dost zavádějící.
+Asi víte, že odečítač obrazovky (taky *čtečka* nebo [screen reader](https://en.wikipedia.org/wiki/Screen_reader)) je software, který umožňuje slepým nebo jinak zrakově postiženým lidem používat vaše weby.
 
-Protože jste webaři a protože chcete dělat věci dobře, jste zvyklí [testovat svá díla](jak-testovat-responzivni-weby.md) na všech možných prohlížečích a zařízeních. A není důvod netestovat na odečítačích. Zkusím vám to teď usnadnit.
+Opravdu *používat* – a to interaktivně – ne jen *číst*. České i anglické označení téhle kategorie software je vlastně dost zavádějící.
+
+Protože jste webaři a protože chcete dělat věci dobře, jste zvyklí [testovat svá díla](jak-testovat-responzivni-weby.md) na všech možných prohlížečích a zařízeních. A není důvod netestovat na odečítačích. Je to poměrně snadné, velmi užitečné a na děláním webů dostanete dost jiný pohled.
 
 <!-- AdSnippet -->
 
@@ -16,22 +18,22 @@ Radek Pavlíček [doporučuje](http://poslepu.cz/testovani-pristupnosti-webu-dop
 - [iOS: VoiceOver se Safari](#ios-voiceover)
 - [Android: TalkBack s Chrome nebo Firefoxem](#android-talkback)
 
-Vychází to z kombinací, které používají samí zrakově hendikepovaní. To zase vychází z toho, jak je který odečítač optimalizovaný pro který prohlížeč. Jiné kombinace jsou trochu bez záruky.
+Vychází to z kombinací, které používají sami zrakově hendikepovaní. To zase vychází z toho, jak je který odečítač optimalizovaný pro který prohlížeč. Jiné kombinace jsou trochu bez záruky.
 
-Osobně na Windows používám NVDA a na Apple zařízeních VoiceOver. A protože obojí nepoužívám denně, udělal jsem si tahák, který snad pomůže i vám.
+Osobně na Windows používám odečítač NVDA a na Apple zařízeních vestavěný VoiceOver. A protože obojí nepoužívám denně, udělal jsem si tahák, který snad pomůže i vám.
 
 
 ## Jak testovat na NVDA a Firefoxu?{#windows-nvda}
 
-[NVDA](https://www.nvaccess.org/) je potřeba nejprve stáhnout a nainstalovat. Je to zdarma nebo za drobný příspěvek, kterým je určitě vhodné autory podpořit. [nvaccess.org](https://www.nvaccess.org/download/)
+[NVDA](https://www.nvaccess.org/) je potřeba nejprve stáhnout a nainstalovat. Je to zdarma nebo za drobný příspěvek, kterým je určitě vhodné autory podpořit: utíkejte na [nvaccess.org](https://www.nvaccess.org/download/).
 
-- Zapnutí a vypnutí: <kbd>Ctrl Alt N</kbd> (Pokud je aplikace NVDA už spuštěná.)
+- Zapnutí a vypnutí čtení: <kbd>Ctrl Alt N</kbd> (Pokud je aplikace NVDA už spuštěná.)
 - Čtení od pozice kurzoru: <kbd>Insert ↓</kbd>
 - Zastavení čtení: <kbd>Ctrl</kbd>
 - Čtení od začátku stránky: <kbd>+</kbd> na numerické klávesnici
 - Seznam prvků: <kbd>Insert F7</kbd> (Seznam odkazů, nadpisů nebo [WAI-ARIA oblastí](wai-aria.md))
 
-Kompletní návod v češtině je na [blindfriendly.cz](http://ewn.blindfriendly.cz/).
+Kompletní návod v češtině je opět na [blindfriendly.cz](http://ewn.blindfriendly.cz/).
 
 
 ## Jak testovat na JAWS a Internet Exploreru?{#windows-jaws}
@@ -49,7 +51,7 @@ Stručně o používání píše [Radek ve svém článku](http://poslepu.cz/tes
 
 Nezapomeňte, že nejlepší je VoiceOver používat v kombinaci se Safari.
 
-- Zapnutí a vypnutí: <kbd>Cmd f5</kbd> (Na laptopech nezapomeňte ještě zmáčknout <kbd>Fn</kbd>.)
+- Zapnutí a vypnutí: <kbd>Cmd F5</kbd> (Na laptopech nezapomeňte ještě zmáčknout <kbd>Fn</kbd>.)
 - Vstup do oblasti, např. webové stránky: <kbd>Ctrl Alt Shift ↓</kbd> nebo kliknutím do ní
 - Navigace po prvcích stránky: <kbd>Ctrl Alt ←/→</kbd> 
 - Číst vše od polohy kurzoru: <kbd>Ctrl Alt A</kbd> 
@@ -66,26 +68,24 @@ Video: <a href="https://www.youtube.com/watch?v=sO_xOGgrE2Y">WAI-ARIA</a> ~ Jak 
 
 ## Jak používat VoiceOver na iOS?{#ios-voiceover}
 
-I [na iOS je VoiceOver](https://www.apple.com/accessibility/iphone/vision/) je opět předinstalovaný. 
+I [na iOS je VoiceOver](https://www.apple.com/accessibility/iphone/vision/) předinstalovaný. 
 
 Než jej začnete používat, doporučuji tento postup:
 
-1. Zapnutí možnosti jednorázové akcivace: *Nastavení* / *Obecné* / *Zpřístupnění* dole najděte *Zkratka zpřístupnění* a nastavte si tam *VoiceOver*.
+1. Zapnutí možnosti jednorázové aktivace: *Nastavení* / *Obecné* / *Zpřístupnění*. Dole najděte *Zkratka zpřístupnění* a nastavte si tam *VoiceOver*.
 2. Pak v téže sekci části *Nastavení* VoiceOver zapněte. Na iOS 11 je to hned první položka. 
 
 Teď můžete VoiceOver instantně aktivovat a deaktivovat trojitým stisknutím tlačítka Home. 
 
-Pokud byste totiž přeskočili první bod, VoiceOver spustíte, ale nemusí se vám podařit jej vypnout. Což je bez taháku *not funny*.
+Pokud byste totiž přeskočili první bod, VoiceOver spustíte, ale nemusí se vám podařit jej vypnout. Což je bez taháku *not funny*. iOS se při aktivním VoiceOveru totiž celý ovládá *trošku* jinak:
 
-iOS se při aktivním VoiceOveru ovládá *trošku* jinak:
+- *Klepnutím* vyberete položku
+- *Dvojitým klepnutím* aktivujete položku
+- Stránku posunujete *třemi prsty*
+- Při čtení se pohybujete *šviháním (swipe) doleva nebo doprava*.
+- I na iOS můžete [aktivovat rotor](https://support.apple.com/cs-cz/HT204783) se seznamem dostupných prvků. Stačí točit dvěmi prsty imaginární kolečko veprostřed obrazovky. Položky se aktivují švihnutím nahoru nebo dolů
 
-- Klepnutím vyberete položku.
-- Dvojitým klepnutím aktivujete položku.
-- Stránku posunujete třemi prsty.
-- Při čtení se pohybujete šviháním (swipe) doleva nebo doprava.
-- I na iOS můžete [aktivovat rotor](https://support.apple.com/cs-cz/HT204783) se seznamem dostupných prvků. Stačí točit dvěmi prsty imaginární kolečko veprostřed obrazovky. Položky se aktivují švihnutím nahoru nebo dolů.
-
-Na iOS je ovládání přes VoiceOver a gesta prsty fakt vyladěné. Moc se mi to líbí a rád weby testuji primárně takhle. Dodatek: Ano, jsem Apple ovce.
+Na iOS je ovládání přes VoiceOver a gesta fakt vyladěné. Moc se mi to líbí a rád weby takhle testuji. (Dodatek: Ano, jsem Apple ovce.)
 
 
 ## Android: TalkBack s Chrome nebo Firefoxem{#android-talkback}
@@ -99,18 +99,18 @@ Zapnutí a vypnutí TalkBacku:
 
 Vypadá to, že není možné nechat TalkBack pořád zapnutý a jen občas jej aktivovat jako to dělám na iOS. 
 
-Po každém zamčení zařízení se totiž permanentně zapnutý TalkBack automaticky aktivuje. To udělat nemůžu, protože by mě náš Honza – hlavní uživatel tabletu s Androidem – prostě vykostil.
+Po každém zamčení zařízení se totiž permanentně zapnutý TalkBack automaticky aktivuje. To ponechat nemůžu, protože by mě náš Honza – hlavní uživatel tabletu s Androidem – prostě vykostil.
 
 Když už to slavnostně pustíte, ovládání je pak podobné VoiceOveru:
 
-- Klepnutím vyberete položku
-- Dvojitým klepnutím aktivujete položku
-- Čtení i tady posunujete švihnutím doleva nebo doprava
-- Stránku posunujete třemi prsty
-- Procházení seznamem položek (něco jako rotor na iOS) je možné švihnutím prstu nahoru nebo dolů
+- *Klepnutím* vyberete položku
+- *Dvojitým klepnutím* aktivujete položku
+- Čtení i tady posunujete *švihnutím doleva nebo doprava*
+- Stránku posunujete *třemi prsty*
+- Procházení seznamem položek (něco jako rotor na iOS) je možné *švihnutím prstem nahoru nebo dolů*
 
 Více je v oficiální [nápovědě od Google](https://support.google.com/accessibility/android/answer/6283677?hl=cs).
 
-Věřím, že vás návod nakopne k tomu, abyste [přístupnost](https://www.vzhurudolu.cz/pristupnost) začali sami ověřovat testovat pomocí reálných odečítačů. Budu samozřejmě moc rád za každé doplnění.
+Věřím, že vás návod nakopne k tomu, abyste [přístupnost](https://www.vzhurudolu.cz/pristupnost) začali sami ověřovat testovat pomocí reálných odečítačů. Sám jsem v tom zatím dost jalový, takže budu samozřejmě moc rád za každé doplnění.
 
 <!-- AdSnippet -->
