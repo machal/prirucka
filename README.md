@@ -134,6 +134,17 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-robinem-pokornym-o-css-v-j
 </p>
 ```
 
+### Související články
+
+Vložení opět pomocí HTML kódu. 
+
+```html
+<div class="related" markdown="1">
+- [S Robinem Pokorným o CSS v JS](/blog/link)
+- [Nějaký další odkaz na článek z příručky](/prirucka/link)
+</div>
+```
+
 ### Ukázky kódu
 
 Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně:
