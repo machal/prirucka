@@ -1,16 +1,16 @@
 # Flexbox: vlastnosti položky
 
-<div class="web-only vd-nav">
+<div class="web-only nav">
   <h2 class="sr-only">Navigace: vše o flexboxu</h2>
   <ul>
     <li>
-        <a class="vd-nav__item" href="css3-flexbox.md">Flexbox</a>
+        <a class="nav__item" href="css3-flexbox.md">Flexbox</a>
     </li>
     <li>
-        <strong class="vd-nav__item">Položky</strong>
+        <strong class="nav__item">Položky</strong>
     </li>
     <li>
-        <a class="vd-nav__item" href="css3-flexbox-kontejner.md">Kontejner</a>
+        <a class="nav__item" href="css3-flexbox-kontejner.md">Kontejner</a>
     </li>
   </ul>
 </div>
@@ -57,19 +57,6 @@ Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: co
 ##   `flex` – celková pružnost položky  {#flex}
 
 Zkratka pro všechny vlastnosti definující pružnost flex položky –  `flex-grow`, `flex-shrink` a `flex-basis`. Nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat.
-
-<div class="web-only text-center text-small">
-  <hr>
-    <p>
-      Text je součástí mého e-booku <a href="/ebook">Vzhůru do CSS3</a>, který 
-      exkluzivně obsahuje také další materiál 
-      o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
-    </p>
-    <p>
-      <a class="button" href="/ebook#objednavka">Koupit e-book za 249&nbsp;Kč</a>
-    </p>
-  <hr>
-</div>
 
 Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku `flex` proti konkrétním vlastnostem, které zastupuje. Důvodem je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
 
@@ -157,3 +144,4 @@ Tato vlastnost se aplikuje na jednotlivé položky, a tak se hodí pro vytvořen
 
 Doporučuji všimnout si velmi praktického zarovnání na účaří prvního řádku – `baseline`. K horní hraně flex kontejneru se přilepí položka s největší vzdáleností mezi baseline a horní hranou boxu. Vidět je na předchozím obrázku nebo na [cdpn.io/e/QwobXz](https://cdpn.io/e/QwobXz). Všimněte si, že flexbox nerozhodí ani nastavení horního paddingu v pixelech.
 
+<!-- AdSnippet -->

@@ -1,16 +1,16 @@
 # Flexbox: vlastnosti kontejneru
 
-<div class="web-only vd-nav">
+<div class="web-only nav">
   <h2 class="sr-only">Navigace: vše o flexboxu</h2>
   <ul>
     <li>
-        <a class="vd-nav__item" href="css3-flexbox.md">Flexbox</a>
+        <a class="nav__item" href="css3-flexbox.md">Flexbox</a>
     </li>
     <li>
-        <a class="vd-nav__item" href="css3-flexbox-polozky.md">Položky</a>
+        <a class="nav__item" href="css3-flexbox-polozky.md">Položky</a>
     </li>
     <li>
-        <strong class="vd-nav__item">Kontejner</strong>
+        <strong class="nav__item">Kontejner</strong>
     </li>
   </ul>
 </div>
@@ -58,19 +58,6 @@ Alternativně `wrap`. Pak se flex položky zalomí na další řádku ve chvíli
 
 Živé demo: [cdpn.io/e/mERZxB](https://cdpn.io/e/mERZxB).
 
-<div class="web-only text-center text-small">
-  <hr>
-    <p>
-      Text je součástí mého e-booku <a href="/ebook">Vzhůru do CSS3</a>, který 
-      exkluzivně obsahuje také další materiál 
-      o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
-    </p>
-    <p>
-      <a class="button" href="/ebook#objednavka">Koupit e-book za 249&nbsp;Kč</a>
-    </p>
-  <hr>
-</div>
-
 ##   `flex-flow`, zkratka pro `flex-direction` a `flex-wrap` {#flex-flow}
 
 Nejlépe si to ukážeme na příkladech:
@@ -104,8 +91,6 @@ align-items:
 
 Vlastnost `align-items` lze opět aplikovat na kontejner flexboxu. Výchozí hodnota je `stretch`, tedy roztažení na celou délku příčné osy.
 
-<!-- AdSnippet -->
-
 Pozor, hodnota `stretch` nefunguje, pokud mají položky nastavený rozměr pro příčnou osu, tedy ve výchozím stavu hodnotu vlastnosti `height`.
 
 Živé demo: [cdpn.io/e/RNmvmr](https://cdpn.io/e/RNmvmr).
@@ -123,3 +108,4 @@ Ještě jedna zarovnávací vlastnost. Tentokrát se vztahuje jen na flex kontej
 
 Živé demo: [cdpn.io/e/oXbMRo](https://cdpn.io/e/oXbMRo).
 
+<!-- AdSnippet -->
