@@ -89,6 +89,14 @@ Video: <a href="https://www.youtube.com/watch?v=VN8CFG-YajE">BrowserStack</a> ~ 
 </p>
 ```
 
+Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit jej pomocí `.rwd-media`. Jinak se nechová responzivně k velikost okna:
+
+```html
+<div class="rwd-media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eywi0h_Y5_U" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+```
+
 ### Tabulka
 
 Jednodušší:
