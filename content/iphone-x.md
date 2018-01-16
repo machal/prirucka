@@ -85,7 +85,7 @@ Už dlouho říkám, že fixní pozicování prvků je na mobilech dost nebezpe�
 ## Jak to testovat? {#jak-testovat}
 
 <div class="related" markdown="1">
-- [Více o efektivním ladění responzivních webů](jak-testovat-responzivni-weby.md)
+- [Efektivní ladění responzivních webů](jak-testovat-responzivni-weby.md)
 </div>
 
 [Browserstack](https://www.browserstack.com/s) sice iPhone X testovat umí, ale v době psaní článku jen v režimu na výšku.
