@@ -57,6 +57,7 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 
 - Zatím jen JPG nebo PNG.
 - Bílé pozadí. Obsah až ke krajům.
+- Ideálně bez efektů jako stíny na pozadí screenshotů z Maca.
 - 16:9. Minimálně 2000 pixelů široké v 300dpi. Kvůli případnému tisku.
 - Zezhora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
 - Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
