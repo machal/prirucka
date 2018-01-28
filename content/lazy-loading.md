@@ -81,6 +81,8 @@ observer.observe(contentImages);
 
 ### Vlastnosti {#io-vlastnosti}
 
+Nejprve příklad:
+
 ```javascript
 var options = {
   root: document.querySelector('#main'),
@@ -89,9 +91,27 @@ var options = {
 };
 ```
 
+A teď si vysvětleme jednotlivé vlastnosti:
+
 - `root` – element, jehož plochu má náš prvek překrývat. Obvykle chceme použít celý viewport, takže `root: null` nebo `root` neuvádějte – je to výchozí chování.
 - `rootMargin` – vnější okraj kolem `root`, kdy se hlídač aktivuje. V případě lazyloadingu se samozřejmě hodí mít nějaký náskok a začít obrázky načítat chvilku před tím, než jsou ve viewportu. `rootMargin: '-50px 0px' tohle udělá.
 - `threshold` – práh protnutí. Lidsky řečeno: jaká část prvku musí jít vidět, aby se hlídač aktivoval. `threshold: 0.5` aktivuje při padesátiprocentním překryvu. Výchozí hodnota je `0`, což je pro lazyloading optimální. Prostě se aktivuje hned při překrytí první řady pixelů.
+
+## Knihovny pro lazy loading
+
+Často bude stačit napsat kus kódu a využít Intersection Observer. Pokud byste přesto měli speciálnější požadavky, zde je seznam knihoven, které lazy loading podporují.
+
+| Knihovna                                                  | Velikost | jQuery/JS     | Obsah         | Int. Observer |
+|-----------------------------------------------------------|---------:|:-------------:|:--------------||:------------:|
+| [Unveil](http://luis-almeida.github.io/unveil/)           |  0,7 kB  | jQuery, Zepto | img           |               |
+| [Recliner](https://github.com/sourcey/recliner)           |  1,2 kB  | jQuery        | img, iframe, ajax   |   +     |
+| [LazyLoad](https://github.com/verlok/lazyload)            |  3,5 kB  | JS            | img, srcset   |       +       |
+| [jQuery Lazy](http://jquery.eisbehr.de/lazy/)             |  4,9 kB  | jQuery, Zepto | img, iframe   |               |
+| [Lazyframe](https://github.com/viktorbergehall/lazyframe) |  5,1 kB  | JS, jQuery    | iframe        |               |
+| [lazySizes](http://afarkas.github.io/lazysizes/)          |  6,5 kB  | JS            | img, iframe, ajax…  |         |
+
+
+
 
 <!-- AdSnippet -->
 
