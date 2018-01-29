@@ -23,7 +23,7 @@ Ukažme si proto kompletní přehled všech možných řešení, jejich výhod a
 
 <figure markdown="1">
 
-<div class="rwd-scrollable font-size-08em" markdown="1">
+<div class="rwd-scrollable f-sm" markdown="1">
 
 | Řešení                        | Rychlost | Retina | AD  | Okno | Layout | Vhodné pro |
 |:------------------------------|:--------:|:------:|:---:|:----:|:------:|:----------:|
