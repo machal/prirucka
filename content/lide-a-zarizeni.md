@@ -1,6 +1,8 @@
 # Lidé a zařízení: jak je ovládají a jak se chovají?
 
+<div class="ebook-only" markdown="1">
 Jak vlastně lidé ta nová zařízení drží, jak je osahávají? Vítejte u mobilní, tabletové a desktopové Kámasútry!
+</div>
 
 Asi víte, že dotykovost je nový standard. Ale dozvíte se také, že prvky, které mají být snadno dosažitelné, je dobré na mobilech umísťovat na vodorovný střed a na větších zařízeních k pravému kraji. Pojďme na to.
 
@@ -12,6 +14,8 @@ Na začátek si dovolím parafrázovat myšlenku Joshe Clarka z jeho skvělé kn
 
 Přesně tak, milí čtenáři, pojďme považovat dotykové ovládání za výchozí stav.
 
+<!-- AdSnippet -->
+
 V době, kdy píšu tento text, ještě „dotykáče“ mezi zařízeními přistupujícími na vaše weby nemusejí hrát první housle. Jenže jak už jsem psal dříve, to se brzy změní. Statistiky neúprosně ukazují, že dotyková zařízení jednou snědí počítačové myši i s kabelem.
 
 Ani skupina uživatelů klasických počítačů, zejména notebooků, není nedotčená. Máme tady hybridní zařízení, tedy dotykové stroje s klávesnicí a myší. A jejich prodeje rostou.
@@ -20,7 +24,9 @@ Ani skupina uživatelů klasických počítačů, zejména notebooků, není ned
 
 Bylo by to totiž neefektivní a je dost těžké ta zařízení detekovat.
 
-Nejprve k efektivitě. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit. Pro nastartování představivosti doporučuji podkapitolu [o webech mobilních, responzivních, adaptivních](mobilni-responzivni-adaptivni.md). Možná si vzpomenete, že jsem proti speciální mobilní verzi webu argumentoval náročností práce i údržby pro designéry i vývojáře. Ale týká se vlastně všech řemesel souvisejících s webem: uživatelského a technického testování, správy obsahu a dalších. Práce na dvou rozhraních je všechny zpomalí a prodraží.
+Nejprve k efektivitě. Představte si, že děláte dvě verze uživatelského rozhraní vaší aplikace. Nevadí vám to? A teď si představte, že to máte všechno platit. <span class="ebook-only" markdown="1">Pro nastartování představivosti doporučuji podkapitolu [o webech mobilních, responzivních, adaptivních](mobilni-responzivni-adaptivni.md).</span> 
+
+Možná si vzpomenete, že jsem proti speciální mobilní verzi webu argumentoval náročností práce i údržby pro designéry i vývojáře. Ale týká se vlastně všech řemesel souvisejících s webem: uživatelského a technického testování, správy obsahu a dalších. Práce na dvou rozhraních je všechny zpomalí a prodraží.
 
 Z principu je navíc téměř nemožné detekovat dotyková zařízení. Kdyby se lidé dělili na *dotykující* a *myšující*, možné by to jakž takž bylo. Jenže lidstvo je tak trochu zlomyslná parta. Je tu ona rostoucí skupina hybridních zařízení, *dotykujících* a *myšujících* zároveň.
 
@@ -85,6 +91,8 @@ Pokud má být prvek rozhraní snadno dosažitelný, bude nejlepší, když jej 
 
 Na menších mobilech tedy dělají palce kolem 75 % všech interakcí. Na velkých mobilech kolem 60 %. Uvádí to Josh Clark ve vynikajícím článku „How We Hold Our Gadgets“ na A List Apart, ze kterého budu dále vycházet. [vrdl.in/hold](http://alistapart.com/article/how-we-hold-our-gadgets)
 
+<!-- AdSnippet -->
+
 To bychom měli mobily. Jak je to u větších zařízení?
 
 U tabletů značně záleží na jejich velikosti. Josh Clark ve výše odkazovaném článku zmiňuje, že ty menší sedmi- a osmipalcové drží většina uživatelů ještě v ruce a ovládá palci. Větší tablety si zase pokládáme na stůl nebo do klína. 
@@ -112,6 +120,8 @@ I mě, jako člověka nadšeného do dotykových zařízení, překvapilo, že c
 
 O tom, zda lidé budou vůbec někdy chtít ovládat zařízení stojící na stole doteky, se dlouho vedly spory. Skeptici namítali, že ovládání ukazováčkem člověka nutí držet paže před sebou a to že není pohodlné. Když si vzpomenete na onen vysoký podíl ovládání doteky, budete se asi divit, když prohlásím, že skeptici měli pravdu.
 
+<!-- AdSnippet -->
+
 Lidé totiž dotykové obrazovky notebooků a podobných zařízení neovládají ukazováčkem, ale znovu palcem. Únavě paží zabraňují tak, že si ruce opřou o stůl pod hranou displeje. Ukazováčkem ohmatávají obrazovky jen uživatelé méně zkušení, kteří většinou časem přejdou znovu na palce.
 
 <figure>
@@ -124,3 +134,7 @@ Lidé totiž dotykové obrazovky notebooků a podobných zařízení neovládaj�
 I u těchto zařízení jsou tedy nejsnáze dosažitelné kraje uživatelského rozhraní. Jen nezapomeňte, že je u nich uživatelům potřeba nechat trochu volného místa pro rolování stránky.
 
 V jednom se tedy dotyky na všechna zařízení shodují. Většinou před ostatními prsty upřednostňujeme ovládání palcem. Palce jsou přesné a pro mobilní zařízení univerzálně použitelné prsty. 
+
+<div class="f-6 web-only" markdown="1">
+  *Text je součástí kapitoly „Návrh rozhraní v éře mobilů“ knihy [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/ebook-responzivni).*
+</div>
