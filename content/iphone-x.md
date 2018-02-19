@@ -13,7 +13,7 @@ Stačí si představit chytré hodinky s prohlížečem a hned víte, že za to 
 
 <!-- AdSnippet -->
 
-V čem je problém? Zařízení tohoto typu totiž neví, zda byste raději chtěli, aby stránka šla vidět celá nebo abys byla roztažená ke krajům za cenu ořezání jejích prvků.
+V čem je problém? Zařízení tohoto typu totiž neví, zda byste raději chtěli, aby stránka šla vidět celá nebo aby byla roztažená ke krajům za cenu ořezání jejích prvků.
 
 
 ## Weby s jednou barvou pozadí {#weby-jednobarevne}
@@ -85,7 +85,7 @@ Už dlouho říkám, že fixní pozicování prvků je na mobilech dost nebezpe�
 ## Jak to testovat? {#jak-testovat}
 
 <div class="related" markdown="1">
-- [Efektivní ladění responzivních webů](jak-testovat-responzivni-weby.md)
+- [Efektivní ladění responzivních webů](/prirucka/jak-testovat-responzivni-weby)
 </div>
 
 [Browserstack](https://www.browserstack.com/s) sice iPhone X testovat umí, ale v době psaní článku jen v režimu na výšku.
