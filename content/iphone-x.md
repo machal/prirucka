@@ -18,7 +18,7 @@ V čem je problém? Zařízení tohoto typu totiž neví, zda byste raději cht�
 
 ## Weby s jednou barvou pozadí {#weby-jednobarevne}
 
-U bílé barvy pozadí asi vše na iPhone X vše funguje. 
+U bílé barvy pozadí asi na iPhone X vše funguje. 
 
 Pokud používáte jinou barvu, zkontrolujte si, zda ji máte nastavenou na pozadí stránky:
 
