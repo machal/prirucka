@@ -98,7 +98,7 @@ Intersection Observer používá také řada moderních knihoven pro usnadnění
 | Knihovna                                                  | Velikost | jQuery/JS     | Obsah         | Int. Observer |
 |-----------------------------------------------------------|---------:|:--------------|:--------------|:-------------:|
 | [Unveil](http://luis-almeida.github.io/unveil/)           |  0,7 kB  | jQuery, Zepto | img           |               |
-| [Recliner](https://github.com/sourcey/recliner)           |  1,2 kB  | jQuery        | img, iframe, ajax |     +     |
+| [Recliner](https://github.com/sourcey/recliner)           |  1,2 kB  | jQuery        | img, iframe, ajax |           |
 | [LazyLoad](https://github.com/verlok/lazyload)            |  3,5 kB  | JS            | img, srcset   |       +       |
 | [jQuery Lazy](http://jquery.eisbehr.de/lazy/)             |  4,9 kB  | jQuery, Zepto | img, iframe   |               |
 | [Lazyframe](https://github.com/viktorbergehall/lazyframe) |  5,1 kB  | JS, jQuery    | iframe        |               |
@@ -113,7 +113,46 @@ Poznámky k tabulce:
 - *Obsah* - jaký typ obsahu umí odloženě načítat? Obvykle potřebujeme více než jen obrázky.
 - Pole *Int. Observer* říká, zda umí využít Intersection Observer.
 
-Pokud bych potřeboval lazy loading na menší nebo střední web, preferoval bych vlastní řešení pomocí Observeru. Alternativně bych sáhl po knihovnách Recliner nebo LazyLoad. Knihovny ale mají daleko více parametrů než ty v tabulce uvedené. Raději si udělejte hlubší analýzu než některou vyberete.
+Pokud bych potřeboval lazy loading na menší nebo střední web, preferoval bych vlastní řešení pomocí Observeru. Alternativně bych sáhl po knihovně LazyLoad. Knihovny ale mají daleko více parametrů než ty v tabulce uvedené. Raději si udělejte hlubší analýzu než některou vyberete.
+
+## Kdy spustit načítání obrázků? {#spustit}
+
+Jsou dvě obvyklé možnosti: 
+
+1. Čekat na posun stránky. Prostě až se bude obrázek blížit viewportu.
+2. Počkat na událost `load` (v jQuery `$(window).on('load')…`) a pak načíst všechny obrázky.
+
+První možnost je zajímavější z pohledu datové úspory. Načtou se opravdu jen ty soubory, které uživatel potenciálně potřebuje. Jenže – ouha! – co na to řeknou roboti? Například robot od Facebooku nebo od Google Images. První neumí spustit Javascript vůbec, druhý jej umí, ale čeká na načtení celé stránky. Co je ovšem důležité – žádný robot neposunuje stránku. Někteří roboti, jako například Googlebot, navíc neindexují obsah `<noscript>`, kam byste mohli vložit náhradní cestu k obrázkům. 
+
+Ať se nám to tedy líbí nebo ne: Vždy tady budou roboti, kteří se o obrázcích, na které je nasazený lazy loading, nedozví. Což nás pravděpodobně bude bolet.
+
+Proto je dobré dvakrát rozmýšlet, na jaké typy obrázků odložené načítání nasadit.
+
+## Na jaké obrázky to nasadit? {#na-jake}
+
+Doporučuji rozdělit obrázky na minimálně dvě kategorie:
+
+- *Nezbytné* jsou nejdůležitější obrázky pro danou stránku. Pokud jde o detail produktu, budou to první obrázky produktu. Nebo nejdůležitější obrázky uvnitř článku.
+- *Zbytné* jsou všechny ostatní. Takže třeba obrázky doporučených produktů nebo obrázky v seznamu produktů. Bez nich by se prostě  roboti a vlastně i uživatelé mohli obejít. 
+
+No a na ty *zbytné* prostě můžeme odložené načítání nasadit úplně bez výčitek.
+
+V době psaní článku mám o zbytných obrázcích tendenci přemýšlet jako o těch, na které můžeme použít prázdný atribut `alt`:
+
+```html
+<img alt="" data-src="zbytny-obrazek.jpg">
+```
+
+Prázdný `alt` není žádná chyba. Je to naprosto seriozní označení *prezentačního* obrázku. Takového který nemá žádnou přidanou hodnotu. Obrázky v seznamu produktu jsou myslím přesně tohoto typu:
+
+```html
+<article>
+  <img alt="" data-src="zbytny-obrazek.jpg">
+  <h2>Název produktu</h2>
+</article>  
+```
+
+Jejich `alt` by jen znovu obsahoval „Název produktu“, čím pro slepecké čtečky a jiné stroje zbytečně duplikujeme informaci, jež už na stránce existuje. 
 
 
 ## Nepoužívejte animované zástupné symboly {#zastupne-symboly}
@@ -122,11 +161,11 @@ Designérský tip: Řada webařů (včetně autora knihovny Unveil [v demonstra�
 
 Jsem přesvědčený, že na uživatele působí daleko lépe, když na místě před načtením obrázku uvidí čistou barevnou plochu mírně odlišenou od barvy pozadí. Animace zbytečně poutají pozornost.
 
-Shrňme si to:
+Shrňme si to, co všechno teď víme o lazy loadingu obrázků:
 
 - Používejte lazy loading! K ušetření dat a k prioritizaci stahování jiný věcí než prvků mimo viewport.
 - Snažte se napsat si vlastní řešení s pomocí Intersection Observeru.
-- Z knihoven volte ty menší a ty, které využívají Intersection Observer: Recliner nebo LazyLoad.
+- Z knihoven volte ty menší nebo ty, které využívají Intersection Observer.
 - Nepoužívejte animované placeholdery.
 
 
