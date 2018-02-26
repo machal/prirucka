@@ -35,14 +35,14 @@ V režimu na šířku vám iPhone X ke stranám přidá proužky v oné barvě a
 
 ## Weby s různobarevnými prvky roztaženými přes celou šířku stránku  {#weby-ruznobarevne}
 
-I tady to může být jednoduché. Klíč je [v meta značce pro viewport](meta-viewport.md). 
+I tady to může být jednoduché. Klíč je [v meta značce pro viewport](viewport-meta.md). 
 
 ```html
 <meta name="viewport" 
   content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
-Hodnotou `cover` vlastnosti [viewport-fit](meta-viewport.md#viewport-fit) říkáte, že se stránka má roztáhnout na celou šířku dostupné plochy v okně prohlížeče. A že vám nevadí, že něktré její části budou překryté kulatými rohy nebo výčnělkem.
+Hodnotou `cover` vlastnosti [viewport-fit](viewport-meta.md#viewport-fit) říkáte, že se stránka má roztáhnout na celou šířku dostupné plochy v okně prohlížeče. A že vám nevadí, že něktré její části budou překryté kulatými rohy nebo výčnělkem.
 
 ![Úprava Vzhůru dolů pro iPhone X](dist/images/original/iphone-x.jpg)
 
