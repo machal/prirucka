@@ -22,6 +22,8 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 <small>Zařídí správné zobrazování responzivního webu v mobilních prohlížečích. [Více informací](viewport-meta.md "Meta Viewport")</small>
 - Osnova nadpisů je v pořádku  
 <small>Stromová struktura (outline) usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. [HTML5 outliner](https://gsnedders.html5.org/outliner/ "HTML5 Outliner"). [Lze mít více `<h1>`?](https://www.vzhurudolu.cz/blog/25-vice-h1).</small>
+- Stránka je v pořádku bez CSS
+<small>Verze pro čtečky a další kontexty, které nepoužívají vaše CSS. [Článek Weby bez CSS](weby-bez-css.md).</small>  
 - Obsah bez typografických chyb  
 <small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Dohlídněte alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
 - Odkazy z webu ven jsou platné  
@@ -78,8 +80,6 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 - Šablony pro chybové stránky 404 a 50x  
 <small>Výchozí šablony chyb serverů návštěvníkovi nepomohou. Pár [tipů v článku](https://www.interval.cz/clanky/pet-nezbytnych-prvku-uspesne-chybove-stranky-404/).</small>
 
-<!-- AdSnippet -->
-
 ## Spouštění webu
 
 - Přidání a konfigurace Google Analytics  
@@ -106,4 +106,4 @@ Poznámka: Napsáno hlavně pro [webové kodéry](/prirucka/webovy-koder) a prez
 
 Věnujte pozornost i dalším českým webařských checklistům: [SEO od Lukáše Pítry](http://www.lukaspitra.cz/checklist-kontroly-pred-spustenim-webu/) a [UX pro e-shopy od Ondřeje Ilinčeva](http://www.ilincev.com/ux-checklist-eshop).
 
-
+<!-- AdSnippet -->

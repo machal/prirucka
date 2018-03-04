@@ -109,6 +109,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * K čemu je to dobré. [Progressive Enhancement vs. Gracefull Degradation](http://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/) .
 * **[nové]** Pojmy [polyfill](https://www.vzhurudolu.cz/prirucka/polyfill), [fallback](https://www.vzhurudolu.cz/prirucka/fallback).
 * **[nové]** Detekce vlastností prohlížečů: proč je výhodnější než detekce prohlížeče, detekce zařízení nebo browser hacks ([1](http://www.paulirish.com/2009/browser-specific-css-hacks/), [2](http://browserhacks.com/)); Modernizr; backend - WURFL atd.
+* Verze stránky [bez CSS](weby-bez-css.md) a bez Javascriptu 
 
 #### Frontend architektura
 

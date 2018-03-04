@@ -8,7 +8,7 @@ Využívá **chytré vlastnosti HTML a CSS — ignorace neznámého**. Prohlíž
 
 Definovat fallback **považuji za slušnost** i na projektech, které mají nízký podíl přístupů ze starších prohlížečů. Nemluvě o tom, že ke dnešku má pořád dost silné zastoupení IE8+9, jež většinu HTML5 technologií nezvládají.
 
-V HTML5 světě se využívá hlavně v případě nových CSS3 vlastností.
+V HTML5 světě se využívá hlavně v případě nových CSS3 vlastností. Ale za fallback můžete považovat [„verzi“ stránky bez CSS](weby-bez-css.md) nebo bez Javascriptu.
 
 Dva typy fallbacku jsem si pojmenoval jako definovaný a nulový.
 
