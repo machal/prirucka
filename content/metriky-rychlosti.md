@@ -1,9 +1,62 @@
 # Metriky rychlosti načítání
 
+## Událost Time To First Byte (TTFB) {#TTFB}
+
+Vzniká ve chvíli, kdy prohlížeč stáhne první byte z vašeho HTML. Ukazuje tedy čas, který zabere komunikace po síti a váš server.
+
+Rychlost serveru ukazují asi všechny používané nástroje – PageSpeed Insights, Lighthouse nebo WebpageTest (jako „First Byte“.
 
 
+## Událost DOM Content Loaded (DCL) {#DCL}
 
-## Load
+Událost `DOMContentLoaded` se v JavaScriptu použí, když byl úvodní HTML dokument stažen a rozparsován. Nečeká se na žádné další prvky – CSS, JS, obrázky nebo `iframe`.
+
+Metriku uvidíte například v záložce Network Chrome DevTools jako modrou čáru. Ukazuje ji také online verze PageSpeed Insight v nových reportech vytažených ze sběru nad reálnými uživateli. Zatím ale jen u větších webů.
+
+Je samozřejmě dobré ji optimalizací posunovat směrem k nule, ale nicmoc vám o uživatelském prožitku neřekne.
+
+Nicméně je prokázáno, že lepší časy DCL [korelují s nížšími „bounce rate“](https://developers.google.com/speed/docs/insights/faq#speedmetrics) v analytických nástrojích. Jasně – čím rychleji se vám stránka zobrazí, tím méně pravděpodobně s ní ztratíte trpělivost.
+
+
+## Událost First Paint (FP) {#FP}
+
+Moment, kdy browser vyrenderuje cokoliv, co je vizuálně odlišné od obrazovky, kterou uživatel viděl před navigací. 
+
+Například tedy když vidí výsledky vyhledávání na Google a klikne na položku s vaším webem. First Paint vzniká ve chvíli, kdy uživatel vidí něco jiného než výsledky vyhledávání.
+
+Odpovídá na nevyřčenou otázku uživatele „děje se to?“
+
+Metriku umí zobrazit jen WebpageTest. Myslím, že to je jeho hodnota „Start Render“.
+
+
+## Událost First Contentful Paint (FCP) {#FCP}
+
+Vzniká ve chvíli, kdy uživatel vidí první verzi hlavního obsahu stránky. Čím lepší čas, tím [větší šance udržet aktivitu uživatele](https://developers.google.com/speed/docs/insights/faq#speedmetrics).
+
+Když vezmu příklad eshopu a detailu produktu: First Contentful Paint nastává ve chvíli kdy uživatel vidí název produktu, jeho nejdůležitějí popis, cenu a hlavní obrázek.
+
+Hlavním obsahem je samozřejmě pro každou stránku něco jiného – text, obrázek, SVG nebo klidně `<canvas>`.
+
+Je důležitý pro informování uživatele kladoucího si otázku „je to užitečné?“. 
+
+FCP zobrazuje Lighthouse od Google pod názvem „First Meaningful Paint“.
+
+
+## Událost Time to Interactive (TTI) {#TTI}
+
+Chvíle, kdy je stránka renderovaná a zároveň schopná spolehlivě reagovat na uživatelský vstup.
+
+Kdy stránka spolehlivě reaguje na uživatelský vstup? Když se načetly a spustily JavaScripty, které jsou k tomu potřeba. A když prohlížeč není „zaseknutý“ nebo „nalaguje“. Odborně vzato nesmí být jeho vykreslovací jádro zatíženo dlouhotrvajícími úkoly. „[Long task](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics#long_tasks)“ je definován jako zaseknutí vykreslovacího jádra na více než 50 ms.
+
+TTI je odpovědí na otázku uživatele „je to použitelné?“. 
+
+TTI jsou vlastně dvě různé metriky:
+
+- [Consistently Interactive](https://developers.google.com/web/tools/lighthouse/audits/consistently-interactive), kterou ukazuje Lighthouse. Ta nepočítá s žádnými prodlevami v interakci se stránkou. Musí být vykreslená a reagující podle výše uvedených podmínek.
+- [First Interactive](https://github.com/WPO-Foundation/webpagetest/blob/master/docs/Metrics/TimeToInteractive.md), kterou uvádí WebpageTest. První moment, kdy stránka může reagovat na uživatelské vstupy. Počítá se ale s možnými prodlevami, protože některé části stránky se dále stahují.
+
+
+## Událost Load {#Load}
 
 Událost, která indikuje, že prohlížeč stáhl celé  HTML i všechny v něm odkazované prvky - CSS, JS, obrázky nebo `iframe`.
 
@@ -27,19 +80,24 @@ TODO: Vývojáři, vy si v Analytics nainstalujte Technical Performance Dashboar
 
 TODO: Článek o Analytics.
 
-## First Contentful Paint (FCP)
+Celkovou dobu načtení ukazují snad všechny nástroje. Z těch, které používám já jsou to Chrome DevTools, Lighthouse nebo WebpageTest, ten jako „Document Complete“. Ten poslední ukazuje ale těch metrik pro finalizaci dokumentu víc, takže si v tom pojďme udělat pořádek.
 
-Vzniká ve chvíli, kdy uživatel vidí první vizuální odezvu od stránky. Čím lepší čas, tím [větší šance udržet aktivitu uživatele](https://developers.google.com/speed/docs/insights/faq#speedmetrics).
+### WebpageTest.org: Load Time, Document complete, Fully loaded
+
+Budu vycházet z vysvětlení [Patricka Meenana](https://www.webpagetest.org/forums/showthread.php?tid=10315):
+
+- *Document complete* je moment, kdy prohlížeč spouští událost Load.
+- *Fully loaded* je moment po události Load, kdy navíc síťová aktivita ustála alespoň na dvě vteřiny.
+- *Load Time* je totéž jako Document complete, tedy událost Load. U mých testů se čísla vždy shodují.
 
 
+## SpeedIndex {#SpeedIndex}
 
 
-## DOM Content Loaded (DCL)
+Ukazuje jak rychle je obsah stránky viditelně naplněn. 
 
-Událost `DOMContentLoaded` se v JavaScriptu použí, když byl úvodní HTML dokument stažen a rozparsován. Nečeká se na žádné další prvky – CSS, JS, obrázky nebo `iframe`.
+Nástroj Lighthouse SpeedIndex počítá jako [Perceptual Speed Index](https://developers.google.com/web/tools/lighthouse/audits/speed-index), WebpageTest jako Speed Index.
 
-Metriku uvidíte například v záložce Network Chrome DevTools jako modrou čáru. Ukazuje ji také online verze PageSpeed Insight v nových reportech vytažených ze sběru nad reálnými uživateli. Zatím ale jen u větších webů.
-
-Je samozřejmě dobré ji optimalizací posunovat směrem k nule, ale nicmoc vám o uživatelském prožitku neřekne.
-
-Nicméně je prokázáno, že lepší časy DCL [korelují s nížšími „bounce rate“](https://developers.google.com/speed/docs/insights/faq#speedmetrics) v analytických nástrojích. Jasně – čím rychleji se vám stránka zobrazí, tím méně pravděpodobně s ní ztratíte trpělivost.
+- https://github.com/paulirish/speedline
+- https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index
+- TODO co přesně je
