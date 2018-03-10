@@ -76,9 +76,9 @@ V Analytics je [přesně definována](https://support.google.com/analytics/answe
 
 > Průměrná doba (v sekundách), kterou trvá načtení stránky od spuštění zobrazení stránky (tj. kliknutí na odkaz vedoucí na stránku) do úplného načtení v prohlížeči.
 
-TODO: Vývojáři, vy si v Analytics nainstalujte Technical Performance Dashboard, který vše ukazuje pěkně na jednom místě.
+*TODO: Vývojáři, vy si v Analytics nainstalujte Technical Performance Dashboard, který vše ukazuje pěkně na jednom místě.*
 
-TODO: Článek o Analytics.
+*TODO: Článek o Analytics.*
 
 Celkovou dobu načtení ukazují snad všechny nástroje. Z těch, které používám já jsou to Chrome DevTools, Lighthouse nebo WebpageTest, ten jako „Document Complete“. Ten poslední ukazuje ale těch metrik pro finalizaci dokumentu víc, takže si v tom pojďme udělat pořádek.
 
@@ -91,13 +91,23 @@ Budu vycházet z vysvětlení [Patricka Meenana](https://www.webpagetest.org/for
 - *Load Time* je totéž jako Document complete, tedy událost Load. U mých testů se čísla vždy shodují.
 
 
-## SpeedIndex {#SpeedIndex}
+## Speed Index {#SI}
 
+Skóre, které ukazuje jak rychle je viditelný obsah stránky naplněn do stavu stoprocentního vykreslení.
 
-Ukazuje jak rychle je obsah stránky viditelně naplněn. 
+Udává se v milisekundách. Čím nižší je, tím lépe. A je navázán na konkrétní technologický kontext – prohlížeč, šířku okna nebo typ připojení.
 
-Nástroj Lighthouse SpeedIndex počítá jako [Perceptual Speed Index](https://developers.google.com/web/tools/lighthouse/audits/speed-index), WebpageTest jako Speed Index.
+Tohle je jiná metrika než všechny ostatní. SpeedIndex neukazuje čas události, jde o celkové skóre stránky. Velmi dobře se hodí pro jednoduché porovnávání výsledků stránky v čase nebo poměření s konkurencí.
 
-- https://github.com/paulirish/speedline
-- https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index
-- TODO co přesně je
+A je to také jediná metrika, která něco říká o uživatelském prožitku v čase. I proto ji mám tak rád.
+
+Chcete-li být na sebe přísní, držte SpeedIndex pod 1000 bodů. Většině běžných webů bude ale stačit dostat se do pěti tisícové hranice na rychlosti 3G Slow.
+
+*TODO: obrázek jak se počítá*
+
+SI je známý především z WebpageTest.org. Nástroj Lighthouse ukazuje podobnou veličinu [Perceptual Speed Index](https://developers.google.com/web/tools/lighthouse/audits/speed-index).
+
+Problémem SpeedIndexu je to, že se aktuálně počítá z video-záznamu průběhu načítání stránky. Nelze jej tedy použít pro sbírání dat od všech uživatelů, jen pro syntetické testy. Další problém je v tom, že čeká na vizuální „hotovost“ stránky. Pokud tedy na stránce máte animované prvky, například automatický karusel, asi vám SpeedIndex naroste do nebeských výšin. Ale i tak je ze všech metrik ta nejzajímavější.
+
+Více o [Speed Indexu](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index).
+
