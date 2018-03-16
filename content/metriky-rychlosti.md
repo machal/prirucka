@@ -26,7 +26,7 @@ Například tedy když vidí výsledky vyhledávání na Google a klikne na polo
 
 Odpovídá na nevyřčenou otázku uživatele „děje se to?“
 
-Metriku umí zobrazit jen WebpageTest. Myslím, že to je jeho hodnota „Start Render“.
+Podobnou hodnotu umí zobrazit jen WebpageTest. Blízko je jeho hodnota „Start Render“. V timeline přehledu ji ukazuje jako tmavě zelenou čáru. V timeline přehledu také ukazuje světle zelenou čarou ukazuje „RUM First Paint“.
 
 
 ## Událost First Contentful Paint (FCP) {#FCP}
