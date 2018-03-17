@@ -1,23 +1,22 @@
-# SVG <use>
+# USE v SVG: klonování šetří čas a data
 
-Značka `<use>` uvnitř jeden element SVG duplikovat a na jiném místě použít třeba s jinými vlastnostmi.
+Značka `<use>` uvnitř SVG dokáže element duplikovat a na jiném místě použít třeba s jinými vlastnostmi.
+
+
+Je to výhodné asi ze tří důvodů:
+
+* Znovupoužívání elementů uvnitř SVG: je zbytečné dělat stejnou věc vícekrát.
+* Přímé vkládání často používaných SVG symbolů do HTML - např. ikony, logotypy.
+* Je možné takto vládat ikony také ze sady v externím souboru ikon – to je ale problematické kvůl Internet Exploreru 11.
 
 <!-- AdSnippet -->
 
+Duplikovat můžeme i složitější struktury ve značkách `<g>`, `<svg>` nebo `<symbol>`. Jo a taky elementy `<use>`. Z pohledu DOM to funguje tak, že se vezme jeden uzel a duplikuje se na jiné místo.
 
-## Proč to používat? Práce s ikonami, šetření práce a dat
 
-* Znovupoužívání elementů uvnitř SVG: je zbytečné dělat stejnou věc vícekrát
-* Přímé vkládání často používaných SVG symbolů do HTML - např. ikony, logotypy
-* Je možné takto vládat ikony také ze sady v externím souboru ikon – to je ale problematické kvůl Internet Exploreru 11
+## Základy v příkladu {#zaklady}
 
-## "Klonování"
-
-Je dobré vědět, že duplikovat můžeme i složitější strukturuy ve značkách `<g>`, `<svg>` nebo `<symbol>`. Jo a taky elementy `<use>`. Z pohledu DOM to funguje tak, že se vezme jeden uzel a duplikue se na jiné místo.
-
-## Základy v příkladu
-
-Jednoduchá ukázka může vypadat následovně. Nejdříve nadefinujeme objekt:
+Jednoduchá ukázka může vypadat následovně:
 
 ```html
 <svg>
@@ -28,13 +27,13 @@ Jednoduchá ukázka může vypadat následovně. Nejdříve nadefinujeme objekt:
 </svg>
 ```    
 
-Tímto jsme nadefinovali čtverec o velikosti 100 × 100 pixelů ve výchozí černé barvě. K němu alternativní text pro případ zpracování nevizuálním zařízením.
+Tímto jsme nadefinovali čtverec o velikosti 100 × 100 pixelů ve výchozí černé barvě. K němu alternativní text pro případ zpracování nevizuálním zařízením jako jsou slepecké čtečky.
 
 Pár komentářů:
 
 - Pokud `<svg>` použijeme uvnitř HTML, není potřeba doplňovat další atributy.
-- Skupinu `<g>` tady máme proto, abychom k objektu mohli přiřadit alternativní text – `<title>`.
-- Nezapomeneme uvést `id` atribut. Vždyť se náš černý čtverec hodláme odkazovat.
+- Skupinu `<g>` tady máme proto, abychom k objektu mohli přiřadit alternativní text – `<title>`. Toto velmi doporučuji, pokud se jedná o obsahový obrázek, u kterého má alternativní text smysl.
+- Nezapomeneme uvést `id` atribut, protože se náš černý čtverec hodláme odkazovat.
 - `<rect>` je onen samotný čtverec. To byste nečekali, viďte?
 
 A teď náš čtverec slavnostně použijeme:
@@ -43,16 +42,21 @@ A teď náš čtverec slavnostně použijeme:
 <use xlink:href="#svg-square" fill="LimeGreen">
 ```
 
-Zavoláme původní čtverec a rovnou si jej obarvíme – `fill="LimeGreen"`.
+Zavoláme původní čtverec a rovnou si jej obarvíme, to pomocí `fill="LimeGreen"`.
 
-Tady je to vidět v Codepenu: [cdpn.io/e/BrKvwv](https://codepen.io/machal/pen/BrKvwv?editors=1100)
+<p data-height="265" data-theme-id="light" data-slug-hash="BrKvwv" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - basics" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/BrKvwv/">SVG &lt;use&rt; - basics</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-Až si jej budete pozorně prohlížet, všimněte si ještě, že pro zajištění pružného chování „esvégéček“ v Internet Exploreru 11 na různých rozlišeních používáme trik z textu [o responzivních SVG](responzivni-svg.md). Ale to už je jen detail a trochu nutný kolorit.
+Odkaz na Codepen: [cdpn.io/e/BrKvwv](https://codepen.io/machal/pen/BrKvwv?editors=1100)
 
-To by bylo všechno hezké, jenže vám by se určitě hodilo mít někde ve stránce zdroj obrázku neviditelně. Tak, abyse zobrazoval jen když jej někde použijete pomocí `<use>`.
+Až si jej budete pozorně prohlížet, všimněte si ještě, že pro zajištění pružného chování „esvégéček“ v Internet Exploreru 11 na různých rozlišeních používáme trik z textu [o responzivních SVG](responzivni-svg.md). Ale to už je jen detail a trochu i nutný kolorit, abychom neměli pocit, že všechno jde bez potíží.
+
+<!-- AdSnippet -->
+
+To by bylo všechno hezké, jenže vám by se určitě hodilo mít někde ve stránce zdroj obrázku neviditelně. Tak, aby se zobrazoval jen když jej někde použijete pomocí `<use>`.
 
 
-## Neviditelný zdroj
+## Neviditelný zdroj {#neviditelny}
 
 Může stačit `display: none`? To si pište, že ne.
 
@@ -70,19 +74,22 @@ Tímto schováte zdroj schováte před lidmi, ale i stroji. Taková slepecká č
 
 Asi si všímáte, že jsem zde také nepoužil skupinu – `<g>`, ale symbol – `<symbol>`. Symbol se totiž podobně jako třeba sekce `<def>` v prohlížečích nevykresluje. Hodí se mi to pro případ, kdy se stránka zobrazuje [bez CSS](weby-bez-css.md).
 
-Další Codepen pro vaše potěšení: [cdpn.io/e/WzwPdG](https://codepen.io/machal/pen/WzwPdG?editors=1100)
+<p data-height="265" data-theme-id="light" data-slug-hash="WzwPdG" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - invisible source in <def>" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/WzwPdG/">SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Odkaz na Codepen: [cdpn.io/e/WzwPdG](https://codepen.io/machal/pen/WzwPdG?editors=1100)
 
 
-## Stylování… není taková prča
+## Stylování… není taková prča {#stylovani}
 
 Zatím jsem ukazoval obarvování zdrojů, které neměly výchozí barvu. To jde. Málo se ale ví, že přebarování tady fungovat nemusí. Tohle třeba selže:
 
 ```html
 <svg>
   <symbol id="svg-square">
-    <rect … stroke="Black">
-    <use xlink:href="#svg-square" stroke="Grey">
+    <rect … stroke="Black">    
   </symbol>  
+  <use xlink:href="#svg-square" stroke="Grey">
 </svg>
 ```
 
@@ -94,39 +101,65 @@ Může za to milá fíčurka CSS, o které [píší na MDN](https://developer.mo
 
 Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Druhá je ručně nastavit dědičnost na hodnotu, které je výchozí v běžném DOMu: `stroke: inherit`.
 
-V dalším Codepen si vyzkoušejme všechny možnosti: [cdpn.io/e/EEKrde](https://codepen.io/machal/pen/EEKrde?editors=1100)
+V dalším Codepenu si vyzkoušejme všechny možnosti. 
+
+<p data-height="265" data-theme-id="light" data-slug-hash="WzwPdG" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - invisible source in <def>" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/WzwPdG/">SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 - `fill` není na původním objektu definován, takže jej mohou klony používat
 - `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz
 - `stroke-with` je definován, ale nastavili jsme dědičnost pomocí CSS hodnoty `inherit`
 
+Odkaz na Codepen: [cdpn.io/e/EEKrde](https://codepen.io/machal/pen/EEKrde?editors=1100)
 
-To by byl praktický pohled do hloubky používání značky `<use>`. 
-
-
-## Atributy
-
-* x
-* y
-* width
-* height
-* href 
-    * the xlink:href attribute is deprecated in favor of simply href.
-    * ale safari
-
-## Externí zdroje
-
-* some browsers could apply a same-origin policy on use elements and could refuse to load a cross-origin URI within the href attribute. (Internet Explorer)
-* <svg> <use xlink:href="sprite.svg#icon-1"></use></svg>
-* Ale nefičí v IE
-    * Include the SVG sprite in all the HTML documents themselves.
-    * AJAXem donačíst https://css-tricks.com/ajaxing-svg-sprite/
-* inline SVG referencing SVG in the same document could do. But unfortunately, it can't. SVG references this way has it's own separate DOM. It goes beyond the regular Shadow DOM boundary that all <use> is subject to.
+To by byl praktický pohled do hloubky používání značky `<use>`. Ještě se mrkneme na atributy a taky používání externích zdrojů.
 
 
-## Javascriptem
+## Atributy {#atributy}
 
-* var useElement =    document.createElementNS('http://www.w3.org/2000/svg', 'use');
- 
+```
+<use xlink:href="#svg-square"
+  width="100" height="100">
+```
+
+* `x` a `y` – pozice prvku v [souřadnicovém systému uvnitř SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Positions). Obvykle začíná v horním levém rohu.
+* `width` a `height` – šířka a výška prvku v souřadnicovém systému uvnitř SVG.
+* `href` – cesta ke zdroji. Tady ale pozor. V době psaní textu umí Safari jen starší zápis `xlink:href`. Je tedy potřeba použít ten.  
+
+Cesta ke zdroji by stála za zmínku. Teoreticky totiž umožňuje vložit externí SVG soubor.
 
 
+## Přístupnost {#atributy}
+
+Nezapomeňte hlavně na dvě věci
+
+- `<title>` pro každý obrázek, u kterého má smysl. Ikony, loga a další obsahové symboly. Viz ukázky výše.
+- `role="presentation"` pro obrázky, které slouží k dekoraci. Šipky, kulaté rohy a další ornamenty. Jsou to přesně ty, u kterých nemá `<title>` smysl.
+
+V případě pochybností prostě [testujte přímo ve čtečkách](testovani-odecitace.md).
+
+
+## Externí zdroje {#externi}
+
+Tohle by mohlo být super:
+
+```
+<use xlink:href="sprite.svg#icon-1">
+```
+
+Umožnilo by to ukládat ikonky [do jednoho externího souboru](https://css-tricks.com/svg-sprites-use-better-icon-fonts/), podobně jako se to dělávalo s ikonfonty. Zároveň by zůstala výhoda existence SVG v rámci DOMu – tedy stylování.
+
+Jenže… nebude to fungovat v Internet Exploreru 11. (A taky do Safari 6 a Edge 12, ale to nás tak moc nepálí.)
+
+Nějaká řešení tady ale jsou. Vlastně stačí detekovat nepodporující prohlížeče a pomocí AJAXu v nich vložit část externích SVG přímo do dokumentu. Dělá to například [SVG for Everybody](https://github.com/jonathantneal/svg4everybody).
+
+To nejdůležitější na konec:
+
+- Využívejte `<use>`. Vám to ušetří čas a uživatelům data.
+- Hodí se pro častějí opakované symboly: ikony, někdy i logotypy a dekorativní prvky.
+- Plnou kompatibilitu zajistí odkazování pomocí `xlink:href`.
+- Krásné je vložit symbol z externího souboru: `<use xlink:href="sprite.svg#icon-1">`. MSIE vyřeší například polyfill „SVG for Everybody“ 
+- Nezapomínejte na přístupnost: hlavně `<title>` a `role="presentation"`.
+
+
+<!-- AdSnippet -->
