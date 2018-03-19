@@ -3,15 +3,15 @@
 Značka `<use>` uvnitř SVG dokáže element duplikovat a na jiném místě použít třeba s jinými vlastnostmi.
 
 
-Je to výhodné asi ze tří důvodů:
+Je to výhodné hlavně ze tří důvodů:
 
 * Znovupoužívání elementů uvnitř SVG: je zbytečné dělat stejnou věc vícekrát.
-* Přímé vkládání často používaných SVG symbolů do HTML - např. ikony, logotypy.
-* Je možné takto vládat ikony také ze sady v externím souboru ikon – to je ale problematické kvůl Internet Exploreru 11.
+* Přímé vkládání často používaných SVG symbolů do HTML – např. ikony nebo logotypy.
+* Je možné takto vládat ikony také ze sady v externím souboru. Nefunguje to v Internet Exploreru 11, ale jde to občůrat.
 
 <!-- AdSnippet -->
 
-Duplikovat můžeme i složitější struktury ve značkách `<g>`, `<svg>` nebo `<symbol>`. Jo a taky elementy `<use>`. Z pohledu DOM to funguje tak, že se vezme jeden uzel a duplikuje se na jiné místo.
+Duplikovat můžeme i složitější struktury ve značkách `<g>`, `<svg>` nebo `<symbol>`. Jo a taky elementy `<use>`. Z pohledu DOM to funguje tak, že se vezme jeden uzel a duplikuje se na jiné místo. Ano, klony útočí.
 
 
 ## Základy v příkladu {#zaklady}
@@ -31,9 +31,9 @@ Tímto jsme nadefinovali čtverec o velikosti 100 × 100 pixelů ve výchozí č
 
 Pár komentářů:
 
-- Pokud `<svg>` použijeme uvnitř HTML, není potřeba doplňovat další atributy.
-- Skupinu `<g>` tady máme proto, abychom k objektu mohli přiřadit alternativní text – `<title>`. Toto velmi doporučuji, pokud se jedná o obsahový obrázek, u kterého má alternativní text smysl.
-- Nezapomeneme uvést `id` atribut, protože se náš černý čtverec hodláme odkazovat.
+- Pokud `<svg>` použijeme uvnitř HTML, není potřeba doplňovat k němu další atributy.
+- Skupinu `<g>` tady máme proto, abychom k objektu mohli přiřadit alternativní text `<title>`. Toto velmi doporučuji, pokud se jedná o obsahový obrázek, u kterého má alternativní text smysl.
+- Nezapomeneme uvést `id` atribut, protože se na náš černý čtverec hodláme odkazovat.
 - `<rect>` je onen samotný čtverec. To byste nečekali, viďte?
 
 A teď náš čtverec slavnostně použijeme:
@@ -42,25 +42,25 @@ A teď náš čtverec slavnostně použijeme:
 <use xlink:href="#svg-square" fill="LimeGreen">
 ```
 
-Zavoláme původní čtverec a rovnou si jej obarvíme, to pomocí `fill="LimeGreen"`.
+Zavoláme původní objekt a rovnou si jej obarvíme, to pomocí `fill="LimeGreen"`.
 
 <p data-height="265" data-theme-id="light" data-slug-hash="BrKvwv" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - basics" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/BrKvwv/">SVG &lt;use&rt; - basics</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Odkaz na Codepen: [cdpn.io/e/BrKvwv](https://codepen.io/machal/pen/BrKvwv?editors=1100)
 
-Až si jej budete pozorně prohlížet, všimněte si ještě, že pro zajištění pružného chování „esvégéček“ v Internet Exploreru 11 na různých rozlišeních používáme trik z textu [o responzivních SVG](responzivni-svg.md). Ale to už je jen detail a trochu i nutný kolorit, abychom neměli pocit, že všechno jde bez potíží.
+Až si jej budete pozorně prohlížet, všimněte si ještě, že pro zajištění pružného chování „esvégéček“ v Internet Exploreru 11 na různých rozlišeních používáme trik z textu [o responzivních SVG](responzivni-svg.md). Ale to už je jen detail a trochu i nutný kolorit, abychom neměli pocit, že všechno může jít bez potíží.
 
 <!-- AdSnippet -->
 
-To by bylo všechno hezké, jenže vám by se určitě hodilo mít někde ve stránce zdroj obrázku neviditelně. Tak, aby se zobrazoval jen když jej někde použijete pomocí `<use>`.
+Je to hezké, že? Jenže vám by se určitě hodilo mít někde ve stránce zdroj obrázku schovaný. Nebo lépe neviditelný. Tak, aby se zobrazoval jen když jej někde použijete pomocí `<use>`.
 
 
 ## Neviditelný zdroj {#neviditelny}
 
-Může stačit `display: none`? To si pište, že ne.
+Může stačit `display:none`? To si pište, že ne.
 
-Tímto schováte zdroj schováte před lidmi, ale i stroji. Taková slepecká čtečka vám zdroj nepřečte. Musíme na to fikaněji. Ale nic nového vám neřeknu, třídu `sr-only` asi znáte a používáte:
+Tím byste zdroj schovali před lidmi, ale i stroji. Taková slepecká čtečka vám jej pak nepřečte. Musíme na to fikaněji. Ale nic nového vám neřeknu, třídu `sr-only` asi znáte a používáte:
 
 ```
 <p class="sr-only">
@@ -72,7 +72,7 @@ Tímto schováte zdroj schováte před lidmi, ale i stroji. Taková slepecká č
 </p>
 ```
 
-Asi si všímáte, že jsem zde také nepoužil skupinu – `<g>`, ale symbol – `<symbol>`. Symbol se totiž podobně jako třeba sekce `<def>` v prohlížečích nevykresluje. Hodí se mi to pro případ, kdy se stránka zobrazuje [bez CSS](weby-bez-css.md).
+Všimněte si, že jsem zde také nepoužil skupinu `<g>`, ale symbol `<symbol>`. Ten se totiž podobně jako třeba sekce `<def>` v prohlížečích nevykresluje. Hodí se mi to pro případ, kdy se stránka zobrazuje [bez CSS](weby-bez-css.md) a já nechci zdroj vykreslit ani v tomto případě.
 
 <p data-height="265" data-theme-id="light" data-slug-hash="WzwPdG" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - invisible source in <def>" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/WzwPdG/">SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -99,20 +99,20 @@ Může za to milá fíčurka CSS, o které [píší na MDN](https://developer.mo
 
 > CSS attributes are not guaranteed to be inherited by the hidden, cloned DOM unless you explicitly request it using CSS inheritance.
 
-Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Druhá je ručně nastavit dědičnost na hodnotu, které je výchozí v běžném DOMu: `stroke: inherit`.
+Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Druhá je ručně nastavit dědičnost na hodnotu, které je výchozí v běžném DOMu: `stroke:inherit`.
 
 V dalším Codepenu si vyzkoušejme všechny možnosti. 
 
 <p data-height="265" data-theme-id="light" data-slug-hash="WzwPdG" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - invisible source in <def>" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/WzwPdG/">SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-- `fill` není na původním objektu definován, takže jej mohou klony používat
-- `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz
-- `stroke-with` je definován, ale nastavili jsme dědičnost pomocí CSS hodnoty `inherit`
+- `fill` není na původním objektu definován, takže jej mohou klony používat.
+- `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz.
+- `stroke-with` je definován, ale nastavili jsme dědičnost pomocí CSS hodnoty `inherit`.
 
 Odkaz na Codepen: [cdpn.io/e/EEKrde](https://codepen.io/machal/pen/EEKrde?editors=1100)
 
-To by byl praktický pohled do hloubky používání značky `<use>`. Ještě se mrkneme na atributy a taky používání externích zdrojů.
+To by byl praktický pohled do hloubky značky `<use>`. Ještě se mrkneme na atributy a taky používání externích zdrojů.
 
 
 ## Atributy {#atributy}
@@ -158,7 +158,7 @@ To nejdůležitější na konec:
 - Využívejte `<use>`. Vám to ušetří čas a uživatelům data.
 - Hodí se pro častějí opakované symboly: ikony, někdy i logotypy a dekorativní prvky.
 - Plnou kompatibilitu zajistí odkazování pomocí `xlink:href`.
-- Krásné je vložit symbol z externího souboru: `<use xlink:href="sprite.svg#icon-1">`. MSIE vyřeší například polyfill „SVG for Everybody“ 
+- Krásné je vložit symbol z externího souboru: `<use xlink:href="sprite.svg#icon-1">`. MSIE vyřeší například polyfill „SVG for Everybody“. 
 - Nezapomínejte na přístupnost: hlavně `<title>` a `role="presentation"`.
 
 
