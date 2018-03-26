@@ -1,14 +1,20 @@
-# CSS Grid
+# CSS Grid: Začíná druhé dějství layoutové revoluce
 
-Sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
+CSS Grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
 
-Jejich síla je v tom, že můžeme mřížku definovat v obou směrech: v řádcích si sloupcích. Na rozdíl od [flexboxu](css3-flexbox.md) je tedy vhodnější pro celostránkové layouty.
+Síla Gridu je v tom, že můžeme mřížku definovat v obou směrech: v řádcích si sloupcích. Na rozdíl od [flexboxu](css3-flexbox.md) je tedy vhodnější pro celostránkové a komplexnější layouty.
 
-Nevýhoda je aktuální podpoře, ale to bude za pár měsíců vyřešeno. V době psaní textu zvládne grid aktuální verze všech relevantních [prohlížečů](prohlizece.md).
+Nevýhoda je v aktuální podpoře, ale to bude brzy vyřešeno. V době psaní textu zvládnou Grid aktuální verze všech relevantních [prohlížečů](prohlizece.md). Problém je jen v Internet Exploreru 11.
 
 ## Jednoduchý příklad {#priklad}
 
-Toto demo asi budete znát z mých textů [o flexboxu](css3-flexbox.md). Řekněme, že naše HTML vypadá takto:
+Podobné demo asi budete znát z mých textů [o flexboxu](css3-flexbox.md). 
+
+<p data-height="130" data-theme-id="light" data-slug-hash="QaxGqX" data-default-tab="result" data-user="machal" data-embed-version="2" data-pen-title="CSS Grid Basics demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/QaxGqX/">CSS Grid Basics demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+Řekněme, že naše HTML vypadá takto:
 
 ```html
 <div class="container">
@@ -30,7 +36,7 @@ Pojďme to nakódovat. Nejprve příprava na layout do mřížky:
 }
 ```
 
-Toto, na rozdíl od `display: flex` automaticky nic nedělá. Nemáme totiž definovánu mřížku:
+Toto – na rozdíl od `display: flex` – automaticky nic nedělá. Nemáme totiž definovánu mřížku. Vzhůru do ní:
 
 ```css
 @media screen and (min-width: 600px) {
@@ -40,7 +46,7 @@ Toto, na rozdíl od `display: flex` automaticky nic nedělá. Nemáme totiž def
 }  
 ```
 
-Vytvoříme tím layout rozdělený na pět sloupečků mřížky. Přičemž první a poslední části (postranní obsah) zaberou jednu pětinu. Prostřední část (`content`) tři pětiny.
+Vytvoříme tím layout rozdělený na pět sloupečků mřížky. Přičemž první a poslední části pro postranní obsah zaberou jednu pětinu. Prostřední část (`content`) tři pětiny.
 
 V HTML ovšem máme na první místě `content`, takže ještě musíme sáhnout po změně pořadí. Tu už znáte z flexboxu:
 
@@ -52,9 +58,9 @@ V HTML ovšem máme na první místě `content`, takže ještě musíme sáhnout
 }
 ```
 
-Ano, některé vlastnosti, které jste používali z flexboxu můžete používat i v CSS Grid Layout. Kromě pořadí například i zarovnávání.
+Ano, některé vlastnosti, které jste používali u flexboxu můžete používat i v CSS Grid Layout. Kromě pořadí například i zarovnávání.
 
-Zbývá doladit nějaké ty mezery mezi buňkami mřížky: 
+Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V Gridu pro ty potřeby máme novou vlastnost. 
 
 ```css
 .container {
@@ -63,14 +69,16 @@ Zbývá doladit nějaké ty mezery mezi buňkami mřížky:
 }
 ```
 
-
 Živé demo: [cdpn.io/e/QaxGqX](https://codepen.io/machal/pen/QaxGqX)
 
-## Důležité vlastnosti {#vlastnosti}
+
+## Důležité vlastnosti Gridu {#vlastnosti}
+
 
 ### Nastavení rodiče mřížky {#grid}
 
-`display: grid`. Jak už jsem psal, sám o sobě nic nedělá. Jen nastaví „grid formatting context“, takže jeho přímí potomkové mohou mít specifické vlastnosti.
+`display: grid`. Jak už jsem psal – sám o sobě nic nedělá. Jen nastaví „grid formatting context“, takže jeho přímí potomkové mohou mít specifické vlastnosti.
+
 
 ### Definice mřížky {#mrizka}
 
@@ -83,11 +91,15 @@ Vlastnosti `grid-template-columns` a `grid-template-rows`. Akceptují různé je
 }
 ```  
 
-Vytvoří to layout, kde první a poslední sloupec zabírá čtvrtinu šířky rodiče. P rvní a poslední řádek pak `100px` z jeho výšky. Prostřední pak zbytek.
+Vytvoří to layout, kde první a poslední sloupec zabírá čtvrtinu šířky rodiče. První a poslední řádek pak `100px` z jeho výšky. Prostřední pak zbytek. Je to vidět v živé ukázce: 
+
+<p data-height="265" data-theme-id="light" data-slug-hash="QmqOeY" data-default-tab="result,css" data-user="machal" data-embed-version="2" data-pen-title="CSS Grid: Combining units in template-columns/rows" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/QmqOeY/">CSS Grid: Combining units in template-columns/rows</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 ### Definice mezery mezi buňkami mřížky {#mezera}
 
-Vlastnosti `grid-column-gap` a `grid-row-gap` opět přijímají všechny možné jednotky: 
+Vlastnosti `grid-column-gap` a `grid-row-gap`. Opět přijímají všechny možné jednotky: 
 
 ```css
 .layout {
@@ -96,6 +108,9 @@ Vlastnosti `grid-column-gap` a `grid-row-gap` opět přijímají všechny možn�
 }
 ```  
 
+K dispozici je také samozřejmě zkratka `grid-gap`, jejíž použití je vidět ve výšeuvedené ukázce.
+
+
 ### Jednotka `fr` {#fr}
 
 Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `em`…) se dělí mezi sloupce layoutu označení těmito jednotkami. Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`. 
@@ -103,15 +118,16 @@ Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `e
 
 ## Co je to vlastně mřížka? {#mrizka}
 
-* Mřížka není nic nového. Do pravidelné mřížky se už staletí velká část knížek, dnes i novin a tiskovin obecně. 
+* Nic nového. Do pravidelné mřížky se už staletí sází velká část knížek, dnes i novin a tiskovin obecně. 
 * Veteránům lze CSS Grid přiblížit jako tabulkový layout, jen daleko lépe udělaný a zbavený nevýhod.
-* Těm, kteří znají Bootstrap a podobné frameworky, to zase lze vysvětlit jako Bootstrap grid vestavěný v prohlížečích.
+* Těm, kteří znají Bootstrap a podobné frameworky, lze Grid podat jako zdokonalený Bootstrap grid vestavěný v prohlížečích. 
 * Všechno by to ale byla pravda jen částečně. Grid je daleko silnější než uvedené příklady.
+
 
 ## Jak se grid liší od flexboxu? {#flexbox}
 
-* Předně chci zdůraznit, že grid nenahrazuje flexbox. Potřebujete obojí. Naučte se obojí.
-* Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na jednosměrné.
+* Předně chci zdůraznit, že Grid nenahrazuje flexbox. Potřebujete obojí. Naučte se obojí.
+* Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
 * Grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.
 * Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu. Více na [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/).
 * Grid je také silnější v responzivním designu. Prostě budete potřebovat méně media queries: *„with really powerful functionality like auto layout, minmax(), repeat(), and auto-fill“* - [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/)
@@ -120,12 +136,63 @@ Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `e
 
 ## Zásadní plusy a mínusy {#plusy-minusy}
 
-* Hlavní argument je stejný jako u flexboxu - jde o systém vymyšlený pro tvorbu layoutu. Zbavíme se hacků a desítek až stovek řádků zbytečného kódu.
-* Podpora zatím není plná: [caniuse.com/grid](http://caniuse.com/#search=grid)
-* Nepodporuje jen Opera Mini (asi vás nemusí zajímat) a starší verze moderních prohlížečů.
+* Hlavní výhoda: je stejná jako u flexboxu - jde o systém vymyšlený pro tvorbu layoutu. Zbavíme se hacků a desítek až stovek řádků zbytečného CSS i HTML kódu.
+* Hlavní nevýhoda: zatím není plná: [caniuse.com/grid](http://caniuse.com/#search=grid) Nepodporuje jej jen Opera Mini (asi vás nemusí zajímat), starší verze moderních prohlížečů. IE 11 podporuje starší verzi Gridu, která zdaleka neodpovídá variantě podporované v moderních prohlížečích.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Podpora CSS Grid na dvou z projektů, o které se starám. <br>Zajímavost: problematické už v žádném případě nejsou starší Explorery (10-), ale starší verze Chrome a Safari. Zdroj: <a href="https://twitter.com/caniuse?ref_src=twsrc%5Etfw">@caniuse</a> a Google Analytics. <a href="https://t.co/yJ2tXmb5mF">pic.twitter.com/yJ2tXmb5mF</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/956447238770909184?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+## Grid v Internet Exploreru 11 {#ie11}
+
+Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `gap`… No mohli bychom pokračovat.
+
+Díky tomu neexistuje automatizované řešení pro zpětnou kompatibilitu typu Autoprefixeru. Na druhou stranu nám existence „explorerového“ Gridu v mnoha případech umožní mřížku vcelku bez problémů používat už dnes. Jen je potřeba se kromě základních vlastností dnešního Gridu naučit i ten starší.
+
+Vezměme příklad třísloupcového layoutu z prvního dema na této stránce:
+
+<p data-height="265" data-theme-id="light" data-slug-hash="XZbrEY" data-default-tab="css,result" data-user="machal" data-embed-version="2" data-pen-title="CSS Grid Basics demo (with IE11 support)" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/XZbrEY/">CSS Grid Basics demo (with IE11 support)</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Začneme tím nejjednodušším. 
+
+```css
+display: -ms-grid
+```
+
+Ano, prostě to zapíná Grid. Pak přidáme samotný layout:
+
+```css
+.layout {
+  -ms-grid-columns: 1fr 3fr 1fr
+}
+```
+
+Ten v moderních prohlížečích řešíme vlastností `grid-template-columns`.
+
+IE11 nepodporuje automatické umísťování do mřížky, takže to u jednotlivých položek musíme obstarat ručne:
+
+```css
+.content {
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;    
+	margin-right: .5em;    
+}  
+```
+
+`content` umísťujeme do druhého sloupečku mřížky (`-ms-grid-column: 2`) a říkáme, že zabere jen jeden sloupeček té mřížky (`-ms-grid-column-span: 1`).
+
+Asi si všimnete vlastnosti `margin-right`. Přesně tak, mezeru mezi sloupečky musíme dělat starými prostředky, protože s vlastností `gap` zde máme smůlu.
+  
+Živé demo, které je funkční i v IE11: [cdpn.io/e/XZbrEY](https://codepen.io/machal/pen/XZbrEY)
+
+Ke studiu náhradních řešení pro explorer a tamní verze Gridu doporučuji tyhle články:
+
+- [MDN: CSS Grid Layout and Progressive Enhancement](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement)
+- [Rachel Andrew: Should I try to use the IE implementation of CSS Grid Layout?](https://rachelandrew.co.uk/archives/2016/11/26/should-i-try-to-use-the-ie-implementation-of-css-grid-layout/)
+
+Podpora v IE11 je bídná, s tím se asi polemizovat nedá. Nicméně pro jednodušší layouty je přítomnost alespoň nějakého Gridu v tomhle starém ale pořád ještě používaném prohlížeči skvělá zpráva. Rozšiřuje to šíři možností [náhradních řešení](fallback.md).
+
 
 ## Kde se učit? {#ucit}
 
@@ -136,3 +203,5 @@ Než vše detailně připravím pro Vzhůru dolů a pro další e-booky, odkáž
 * Na web [CSSGrid.io](https://cssgrid.io/).
 * Detailní vlastnosti pak studujte na [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) nebo [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/).
 
+
+Grid samozřejmě dále zkoumám, takže nalaďte všechny [kanály Vzhůru dolů](#touch) nebo doražte na [školení Dnešní webová kodéřina](https://www.vzhurudolu.cz/kurzy/webova-koderina), kde se mu – kromě jiného – věnuji.
