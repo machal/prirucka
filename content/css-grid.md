@@ -1,10 +1,13 @@
-# CSS Grid: Začíná druhé dějství layoutové revoluce
+# CSS Grid: Začíná druhé dějství layoutového převratu
 
-CSS Grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
+[CSS Grid](https://www.w3.org/TR/css-grid-1/) je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
 
-Síla Gridu je v tom, že můžeme mřížku definovat v obou směrech: v řádcích si sloupcích. Na rozdíl od [flexboxu](css3-flexbox.md) je tedy vhodnější pro celostránkové a komplexnější layouty.
+Síla Gridu je v tom, že můžeme mřížku definovat v obou směrech: v řádcích i sloupcích. Na rozdíl od [flexboxu](css3-flexbox.md) je tedy vhodnější pro celostránkové a komplexnější layouty.
 
-Nevýhoda je v aktuální podpoře, ale to bude brzy vyřešeno. V době psaní textu zvládnou Grid aktuální verze všech relevantních [prohlížečů](prohlizece.md). Problém je jen v Internet Exploreru 11.
+<!-- AdSnippet -->
+
+Nevýhoda je v aktuální podpoře, ale to bude brzy vyřešeno. V době psaní textu zvládnou Grid aktuální verze všech relevantních [prohlížečů](prohlizece.md). Problém je jen v Internet Exploreru 11, který podporuje jen starší verzi Gridu.
+
 
 ## Jednoduchý příklad {#priklad}
 
@@ -24,9 +27,7 @@ Podobné demo asi budete znát z mých textů [o flexboxu](css3-flexbox.md).
 </div>
 ```
 
-Obsahový sloupec `content` je na prvním místě, protože jej takto chceme zobrazit na malých obrazovkách.
-
-Méně důležité části `side-1` a `side-2` jsou pak na širších displejích po stranách.
+Obsahový sloupec `content` je na prvním místě, protože se v něm schovává to nejcennějěí na stránce – obsah. Méně důležité části `side-1` a `side-2` jsou pak na širších displejích po stranách.
 
 Pojďme to nakódovat. Nejprve příprava na layout do mřížky:
 
@@ -36,7 +37,7 @@ Pojďme to nakódovat. Nejprve příprava na layout do mřížky:
 }
 ```
 
-Toto – na rozdíl od `display: flex` – automaticky nic nedělá. Nemáme totiž definovánu mřížku. Vzhůru do ní:
+Toto – na rozdíl od `display: flex` – automaticky nic nedělá. Nedefinovali jsme mřížku, takže smůla. Vzhůru do ní:
 
 ```css
 @media screen and (min-width: 600px) {
@@ -58,9 +59,9 @@ V HTML ovšem máme na první místě `content`, takže ještě musíme sáhnout
 }
 ```
 
-Ano, některé vlastnosti, které jste používali u flexboxu můžete používat i v CSS Grid Layout. Kromě pořadí například i zarovnávání.
+Ano, některé vlastnosti, které používáte z flexboxu můžete používat i v CSS Grid Layout. Kromě pořadí například i zarovnávání.
 
-Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V Gridu pro ty potřeby máme novou vlastnost. 
+Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V Gridu pro ty potřeby máme novou vlastnost `grid-gap`: 
 
 ```css
 .container {
@@ -113,7 +114,9 @@ K dispozici je také samozřejmě zkratka `grid-gap`, jejíž použití je vidě
 
 ### Jednotka `fr` {#fr}
 
-Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `em`…) se dělí mezi sloupce layoutu označení těmito jednotkami. Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`. 
+Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `em`…) se dělí mezi sloupce layoutu označeními jednotkami `fr`. Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`. 
+
+<!-- AdSnippet -->
 
 
 ## Co je to vlastně mřížka? {#mrizka}
@@ -130,14 +133,14 @@ Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `e
 * Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
 * Grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.
 * Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu. Více na [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/).
-* Grid je také silnější v responzivním designu. Prostě budete potřebovat méně media queries: *„with really powerful functionality like auto layout, minmax(), repeat(), and auto-fill“* - [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/)
-* Grid rozšiřuje možnosti dané flexboxem. Můžeme v něm dělat i dost neortodoxní layouty. Viz [Rachel Andrew](https://twitter.com/rachelandrew/status/899979364225478656).
+* Grid je také silnější v responzivním designu. Budete potřebovat méně [Media Queries](css3-media-queries.md), protože Grid má *„really powerful functionality like auto layout, minmax(), repeat(), and auto-fill“*. Píšou to na [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/).
+* Grid rozšiřuje možnosti dané flexboxem. Můžeme v něm dělat i dost neortodoxní layouty. Viz opět [Rachel Andrew](https://twitter.com/rachelandrew/status/899979364225478656).
 
 
 ## Zásadní plusy a mínusy {#plusy-minusy}
 
 * Hlavní výhoda: je stejná jako u flexboxu - jde o systém vymyšlený pro tvorbu layoutu. Zbavíme se hacků a desítek až stovek řádků zbytečného CSS i HTML kódu.
-* Hlavní nevýhoda: zatím není plná: [caniuse.com/grid](http://caniuse.com/#search=grid) Nepodporuje jej jen Opera Mini (asi vás nemusí zajímat), starší verze moderních prohlížečů. IE 11 podporuje starší verzi Gridu, která zdaleka neodpovídá variantě podporované v moderních prohlížečích.
+* Hlavní nevýhoda: Podpora zatím není plná: Neumí jej hlavně starší verze moderních prohlížečů. IE 11 podporuje starší verzi Gridu, která zdaleka neodpovídá variantě podporované v moderních prohlížečích. [caniuse.com/grid](http://caniuse.com/#search=grid)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Podpora CSS Grid na dvou z projektů, o které se starám. <br>Zajímavost: problematické už v žádném případě nejsou starší Explorery (10-), ale starší verze Chrome a Safari. Zdroj: <a href="https://twitter.com/caniuse?ref_src=twsrc%5Etfw">@caniuse</a> a Google Analytics. <a href="https://t.co/yJ2tXmb5mF">pic.twitter.com/yJ2tXmb5mF</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/956447238770909184?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -145,7 +148,7 @@ Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `e
 
 ## Grid v Internet Exploreru 11 {#ie11}
 
-Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `gap`… No mohli bychom pokračovat.
+Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No mohli bychom pokračovat.
 
 Díky tomu neexistuje automatizované řešení pro zpětnou kompatibilitu typu Autoprefixeru. Na druhou stranu nám existence „explorerového“ Gridu v mnoha případech umožní mřížku vcelku bez problémů používat už dnes. Jen je potřeba se kromě základních vlastností dnešního Gridu naučit i ten starší.
 
@@ -170,7 +173,7 @@ Ano, prostě to zapíná Grid. Pak přidáme samotný layout:
 
 Ten v moderních prohlížečích řešíme vlastností `grid-template-columns`.
 
-IE11 nepodporuje automatické umísťování do mřížky, takže to u jednotlivých položek musíme obstarat ručne:
+IE11 nepodporuje automatické umísťování do mřížky, takže to u jednotlivých položek musíme obstarat ručně:
 
 ```css
 .content {
@@ -182,26 +185,28 @@ IE11 nepodporuje automatické umísťování do mřížky, takže to u jednotliv
 
 `content` umísťujeme do druhého sloupečku mřížky (`-ms-grid-column: 2`) a říkáme, že zabere jen jeden sloupeček té mřížky (`-ms-grid-column-span: 1`).
 
-Asi si všimnete vlastnosti `margin-right`. Přesně tak, mezeru mezi sloupečky musíme dělat starými prostředky, protože s vlastností `gap` zde máme smůlu.
+Asi si všimnete vlastnosti `margin-right`. Přesně tak, mezeru mezi sloupečky musíme dělat starými prostředky, protože s vlastností `grid-gap` zde neuspějeme.
   
 Živé demo, které je funkční i v IE11: [cdpn.io/e/XZbrEY](https://codepen.io/machal/pen/XZbrEY)
 
-Ke studiu náhradních řešení pro explorer a tamní verze Gridu doporučuji tyhle články:
+Ke studiu náhradních řešení pro Explorer a tamní verzi Gridu doporučuji tyhle články:
 
 - [MDN: CSS Grid Layout and Progressive Enhancement](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement)
 - [Rachel Andrew: Should I try to use the IE implementation of CSS Grid Layout?](https://rachelandrew.co.uk/archives/2016/11/26/should-i-try-to-use-the-ie-implementation-of-css-grid-layout/)
 
-Podpora v IE11 je bídná, s tím se asi polemizovat nedá. Nicméně pro jednodušší layouty je přítomnost alespoň nějakého Gridu v tomhle starém ale pořád ještě používaném prohlížeči skvělá zpráva. Rozšiřuje to šíři možností [náhradních řešení](fallback.md).
+Podpora v IE11 je bídná, s tím se asi polemizovat nedá. Nicméně pro jednodušší layouty je přítomnost alespoň nějakého Gridu v tomhle starém ale pořád ještě používaném prohlížeči skvělá zpráva. Rozšiřuje to škálu možností [náhradních řešení](fallback.md).
 
 
 ## Kde se učit? {#ucit}
 
-Než vše detailně připravím pro Vzhůru dolů a pro další e-booky, odkážu vás na jiné zdroje:
+Než vše detailně připravím pro Vzhůru dolů a [e-booky](https://www.vzhurudolu.cz/ebooky), odkážu vás na jiné zdroje:
 
 * Moc pěkný český článek od Pavla Satrapy [na Root.cz](https://www.root.cz/clanky/css-grid-revoluce-ve-web-designu/).
-* Na hru [CSS Grid Garden](http://cssgridgarden.com/).
-* Na web [CSSGrid.io](https://cssgrid.io/).
+* Hra [CSS Grid Garden](http://cssgridgarden.com/).
+* Web [CSSGrid.io](https://cssgrid.io/).
 * Detailní vlastnosti pak studujte na [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) nebo [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/).
 
 
-Grid samozřejmě dále zkoumám, takže nalaďte všechny [kanály Vzhůru dolů](#touch) nebo doražte na [školení Dnešní webová kodéřina](https://www.vzhurudolu.cz/kurzy/webova-koderina), kde se mu – kromě jiného – věnuji.
+Tohle je jen začátek. Grid samozřejmě dále zkoumám, takže nalaďte všechny [kanály Vzhůru dolů](#touch) nebo doražte na [školení Dnešní webová kodéřina](https://www.vzhurudolu.cz/kurzy/webova-koderina), kde se mu – kromě jiného – věnuji.
+
+<!-- AdSnippet -->
