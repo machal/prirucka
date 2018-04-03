@@ -27,7 +27,7 @@ Podobné demo asi budete znát z mých textů [o flexboxu](css3-flexbox.md).
 </div>
 ```
 
-Obsahový sloupec `content` je na prvním místě, protože se v něm schovává to nejcennějěí na stránce – obsah. Méně důležité části `side-1` a `side-2` jsou pak na širších displejích po stranách.
+Obsahový sloupec `content` je na prvním místě, protože se v něm schovává to nejcennější na stránce – obsah. Méně důležité části `side-1` a `side-2` jsou pak na širších displejích po stranách.
 
 Pojďme to nakódovat. Nejprve příprava na layout do mřížky:
 
