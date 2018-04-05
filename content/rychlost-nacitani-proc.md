@@ -11,7 +11,7 @@ Ale nemusíte být Google. Rychlejší načtení vylepší uživatelský prožit
 
 ## My lidé to zkrátka rychlé chceme
 
-Uživatelé jsou prostě jen lidé. Trpělivost lidí při čekání na reakci rozhraní po provedení akce není nekonečná.
+Uživatelé jsou prostě jen lidé. Jejich trpělivost při čekání na reakci rozhraní po provedení akce není nekonečná.
 
 * Do 100 milisekund: považujeme za okamžitou reakci.
 * Do jedné vteřiny: poznáme prodlevu, ale nepřerušíme úkol.
@@ -34,13 +34,15 @@ Další analýzy dokazují, že se zrychlení webu pozitivně promítá do všec
 
 ## Rychlost ovlivňuje řazení inzerátů AdWords a přirozených výsledků ve vyhledávání přes Google
 
-Ano, rychlost načítání je jedním z řadicích parametrů AdWords kampaní. Už od roku 2008. Doslova píšou:
+Ano, rychlost načítání je jedním z řadicích parametrů AdWords kampaní. Už od roku 2008. Na oficiálním blogu AdWords se píše:
 
 >  Pokud výrazně vylepšíte čas načtení vaší cílové stránky, měli byste vidět lepší Quality Score a nižší nabídky pro minimální cenu za proklik (CPC).
 
-Více se dočtete v článku „Landing page load time now affects keywords' Quality Scores“ na blogu Inside AdWords. [vrdl.in/9w2xd](http://adwords.blogspot.cz/2008/06/landing-page-load-time-now-affects.html)
+Cituji z článku „Landing page load time now affects keywords' Quality Scores“. [vrdl.in/9w2xd](http://adwords.blogspot.cz/2008/06/landing-page-load-time-now-affects.html)
 
 Google říká, že rychlost webu má vliv na zobrazování ve výsledcích vyhledávání. Na pořadí ve výsledcích má přímý vliv hlavně rychlost vygenerování stránky na serveru. Zájemce odkážu na detailní popis na Moz.com. [vrdl.in/zhrkp](https://moz.com/blog/how-website-speed-actually-impacts-search-ranking)
+
+Od poloviny roku 2018 bude také rychlost nově řadícím signálem v mobilních výsledcích vyhledávání. Google to uvedl v lednu blogpostem „Using page speed in mobile search ranking“. [vrdl.in/f7b80](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html)
 
 Rychlost tedy ovlivňuje nejen konverze, ale i pravděpodobnost, že se na web člověk vůbec dostane. 
 
