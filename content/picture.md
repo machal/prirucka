@@ -15,7 +15,9 @@ Na rozdíl od atributů `srcset` a `sizes` nenecháváme rozhodování na prohl�
 </picture>
 ```
 
-V elementech `<source>` uvádím alternativy k výchozímu obrázku, který je v `<img>`. Prohlížeč vezme vždy první vyhovující, takže je nutné alternativy řadit od největšího po nejmenší.
+V elementech `<source>` uvádím alternativy k výchozímu obrázku, který je v `<img>`. 
+
+Prohlížeč vezme vždy první vyhovující obrázek. Je možné tedy obrázky řadit jak od největšího, tak od nejmenšího obrázku. V prvé případě použijte [Media Query](media-queries.md) `min-width`, v druhém `max-width`. [cdpn.io/e/qDmar](https://codepen.io/machal/pen/qDmar)
 
 Značka `<picture>` přitom tvoří jen obal, zatímco prvky `<source>` jsou jakési molitanové vycpávky nesoucí informaci o alternativách. Veškeré stylování nebo věšení událostí v Javascriptu je nutné dělat přímo na `<img>` elementu. V každém `<picture>` musí být právě jeden `<img>`.
 
