@@ -1,9 +1,31 @@
 # Metriky rychlosti načítání
 
-*TODO: uživatelské a technické*
+V pojmech a mírách kolem rychlosti je děsný zmatek, takže se nám v nich teď pokusím udělat pořádek. 
+
+Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledují. Ostatní pošlu [na závěrečná doporučení](#doporuceni).
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=fR9n_yi050g">Metriky rychlosti načítání</a> ~ O tématu jsem přednášel také na minikonferenci Frontendisti.cz
+</p>
+
+Na začátek bych rád zmínil, že metriky se dají získat dvěmi způsoby:
+
+### Syntetická měření {#syntetika} 
+
+Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní prohlížeč, rozlišení, rychlost internetu a tak dále. Tohle je nyní převládající způsob měření. Měří tak všechny [nástroje](rychlost-nastroje.md), o kterých jsem psal: PageSpeed Insights, WebpageTest.org a další.
+
+<!-- AdSnippet -->
 
 
-*TODO metriky v obrázku*
+### Měřením reálných uživatelů (RUM = Real User Monitoring) {#rum}
+
+Daleko lepší způsob měření, kdy si do stránky vložíte skript, který vám měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou zaměřené spíše na velké weby a firmy. U velkých webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights. 
+
+Jde o údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup.
+
+*TODO obrázek: https://developers.google.com/speed/pagespeed/insights/?hl=cs&url=https%3A%2F%2Fwww.aktualne.cz%2F*
+
+My se tady ale budeme věnovat jednotlivým momentům, které vznikají během času kdy se web vykresluje. Zatím většinou vznikají syntetickým měřením, ale neberu na to ohled.
 
 
 ## Jak jdou metriky v čase?
@@ -18,6 +40,7 @@
 | [Speed Index](#SI)                  | Průběh vykreslování |
 | [Load](#Load)                       | Načtení všeho       | 
 
+*TODO metriky v obrázku*
 
 
 ## Událost Time To First Byte (TTFB) {#TTFB}
@@ -52,8 +75,6 @@ Odpovídá na nevyřčenou otázku uživatele „děje se to?“
 
 Podobnou metriku umí zobrazit jen WebpageTest. Blízko je jeho hodnota „Start Render“. V timeline přehledu ji ukazuje jako tmavě zelenou čáru. V timeline přehledu také ukazuje světle zelenou čárou ukazuje „RUM First Paint“.
 
-*TODO obrázek*
-
 
 ## Událost First Contentful Paint (FCP) {#FCP}
 
@@ -73,6 +94,8 @@ FCP zobrazuje Lighthouse od Google pod názvem „First Meaningful Paint“.
 Skóre, které ukazuje jak rychle je viditelný obsah stránky naplněn do stavu stoprocentního vykreslení.
 
 Udává se v milisekundách. Čím nižší je, tím lépe. A je navázán na konkrétní technologický kontext – prohlížeč, šířku okna nebo typ připojení.
+
+<!-- AdSnippet -->
 
 Tohle je jiná metrika než všechny ostatní. SpeedIndex neukazuje čas události, jde o celkové skóre stránky. Velmi dobře se hodí pro jednoduché porovnávání výsledků stránky v čase nebo poměření s konkurencí.
 
@@ -128,7 +151,10 @@ V Analytics je [přesně definována](https://support.google.com/analytics/answe
 
 > Průměrná doba (v sekundách), kterou trvá načtení stránky od spuštění zobrazení stránky (tj. kliknutí na odkaz vedoucí na stránku) do úplného načtení v prohlížeči.
 
-*TODO: Článek o Analytics.*
+<div class="related" markdown="1">
+- [Google Analytics: průvodce měřením pro webové vývojáře](https://www.vzhurudolu.cz/prirucka/google-analytics-vyvojari)
+- [Google Analytics: průvodce pro přidání webu](https://www.vzhurudolu.cz/prirucka/google-analytics-pridani)
+</div>
 
 Celkovou dobu načtení ukazují snad všechny nástroje. Z těch, které používám já, jsou to Chrome DevTools, Lighthouse nebo WebpageTest. 
 
@@ -152,5 +178,5 @@ Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatov
 - Větší weby a budoucnost: RUM metriky a automatizace. Dívejte se po nástrojích, které vám měření zautomatizují. Hledejte řešení s měřením reálných uživatelů (RUM).
 - Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org.
 
-
+<!-- AdSnippet -->
 
