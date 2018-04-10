@@ -69,7 +69,7 @@ TTFB byste měli i na pomalých sítích vždy držet pod jednu vteřinu. Ideál
 
 Událost `DOMContentLoaded` v JavaScriptu vzniká, když byl hlavní HTML dokument stažen a rozparsován. Nečeká se na žádné další prvky – CSS, JS, obrázky nebo `<iframe>`.
 
-Metriku uvidíte například pod záložkou „Network“ v Chrome DevTools jako modrou čáru. Jak jsem zmiňoval, ukazuje ji také online verze PageSpeed Insight v nových reportech vytažených ze sběru nad reálnými uživateli. 
+Metriku uvidíte například pod záložkou „Network“ v DevTools prohlížečů Firefox nebo Chrome jako modrou čáru. Jak jsem zmiňoval, ukazuje ji také online verze PageSpeed Insight v nových reportech vytažených ze sběru nad reálnými uživateli. 
 
 Je samozřejmě dobré ji optimalizací posunovat směrem k nule, ale nicmoc vám o uživatelském prožitku neřekne.
 
@@ -157,7 +157,7 @@ window.addEventListener("load", function(event) { … });
 
 Je to tradičně nejpoužívanější metrika. Nic proti ní a vylepšování jejich hodnot. Zhola nic vám ale neřekne o uživatelském prožitku. Když totiž například bude stránka zobrazená, interaktivní (a už dávno konzumovaná uživatelem) a na pozadí ještě stahuje velký obrázky někde do patičky, uživatel o tom vlastně vůbec neví. Přitom událost „Load“ může vycházet dost nehezky. Proto ji osobně rozhodně nepřeceňuji.
 
-Metriku uvidíte například v záložce Network Chrome DevTools jako červenou čáru. Ale nějak ji uvádějí vlastně všechny měřící nástroje.
+Metriku uvidíte například v záložkách Network vývojářských nástrojů Firefoxu nebo Chrome jako červenou čáru. Ale nějak ji uvádějí vlastně všechny měřící nástroje.
 
 <figure>
 <img src="dist/images/original/devtools-load.jpg" alt="">
