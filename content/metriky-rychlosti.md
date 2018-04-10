@@ -1,14 +1,14 @@
 # Metriky rychlosti načítání
 
-V metrikách a událostech během načítání a vykreslování stránky je děsný zmatek, takže se v nich teď pokusím udělat pořádek. 
+V metrikách a událostech, které se týkají načítání a vykreslování stránky je děsný zmatek. Pokusím se trochu uklidit. 
 
-Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledují. Ostatní pošlu [na závěrečná doporučení](#doporuceni).
+Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledují. Ostatní pošlu na konec článku do [závěrečných doporučení](#doporuceni).
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=fR9n_yi050g">Metriky rychlosti načítání</a> ~ O tématu jsem přednášel také na minikonferenci Frontendisti.cz
+Video: <a href="https://www.youtube.com/watch?v=fR9n_yi050g">Metriky rychlosti načítání</a> ~ O tématu jsem v březnu 2018 přednášel také na minikonferenci Frontendisti.cz
 </p>
 
-Na začátek bych rád zmínil, že metriky se dají získat dvěmi způsoby:
+Na začátek bych rád zmínil, že metriky se dají získat dvěma způsoby:
 
 ### Syntetická měření {#syntetika} 
 
@@ -19,19 +19,19 @@ Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní 
 
 ### Měřením reálných uživatelů (RUM = Real User Monitoring) {#rum}
 
-Daleko lepší způsob měření, kdy si do stránky vložíte skript, který vám měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou zaměřené spíše na velké weby a firmy. U velkých webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights. 
+Daleko lepší způsob měření, kdy si do stránky vložíte skript, který vám měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou nastavené spíše na velké weby a firmy. Prostě na ně potřebujete peněz jako šlupek. U velkých webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights. 
 
 <figure>
 <img src="dist/images/original/pagespeed-insights-chrome-ux.jpg" alt="">
 <figcaption markdown="1">    
-*Nástroje PageSpeed Insights zobrazuje údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup*
+*Nástroj PageSpeed Insights zobrazuje údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup*
 </figcaption> 
 </figure>
 
-My se tady ale budeme věnovat jednotlivým momentům, které vznikají během času kdy se web vykresluje. Zatím většinou vznikají syntetickým měřením, ale neberu na to ohled.
+Teď se budeme věnovat jednotlivým momentům, které vznikají během času, kdy se web vykresluje. Zatím většinou vznikají syntetickým měřením, ale neberu na to ohled.
 
 
-## Jak jdou události v čase?
+## Jak jdou události v čase? {#v-case}
 
 Většina rychlostních metrik (kromě Speed Indexu) jsou prostě události, které po splnění určitých podmínek vznikají na časové ose postupu vykreslování stránky.
 
@@ -39,11 +39,11 @@ Většina rychlostních metrik (kromě Speed Indexu) jsou prostě události, kte
 | Metrika                             |   Stručná definice |
 |:------------------------------------|:-------------------|
 | [Time To First Byte (TTFB)](#TTFB)  | Rychlost serveru a sítě  |
-| [DOM Content Loaded (DCL)](#DCL)    | Rozparsování HTML  |
-| [First Paint (FP)](#FP) 				  | První vykreslení  |
+| [DOM Content Loaded (DCL)](#DCL)    | Rozparsování HTML prohlížečem |
+| [First Paint (FP)](#FP) 				  | První vykreslení čehokoliv  |
 | [First Contentful Paint (FCP)](#FCP)| První vykreslení obsahu  |
 | [Time to Interactive (TTI)](#TTI)   | První možnost interaktivity |
-| [Speed Index](#SI)                  | Průběh vykreslování |
+| [Speed Index](#SI)                  | Celkový průběh vykreslování |
 | [Load](#Load)                       | Načtení všeho       | 
 
 <figure>
@@ -56,9 +56,9 @@ Většina rychlostních metrik (kromě Speed Indexu) jsou prostě události, kte
 
 ## Událost Time To First Byte (TTFB) {#TTFB}
 
-Vzniká ve chvíli, kdy prohlížeč stáhne první bajt z vašeho HTML. Ukazuje tedy čas, který zabere komunikace po síti. A hlavně rychlost vašeho serveru a backendové části aplikace.
+Vzniká ve chvíli, kdy prohlížeč stáhne první bajt z vašeho HTML. Ukazuje tedy rychlost vašeho serveru a backendové části aplikace. A taky samozřejmě rychlost sítě.
 
-TTFB ukazují asi všechny pořádnější nástroje – PageSpeed Insights, Lighthouse nebo WebpageTest (jako „First Byte“).
+TTFB ukazují asi všechny pořádnější nástroje – PageSpeed Insights, Lighthouse nebo WebpageTest. ten jako „First Byte“.
 
 Serverový čas tvoří skoro vždy tu menší část problému u pomalejších webů. Nicméně i tak není dobré ho podceňovat: Důležitý je například pro [Crawl Budget vyhledávačů](https://www.contentkingapp.cz/akademie/crawl-budget/), hlavně u velkých webů.
 
@@ -69,33 +69,33 @@ TTFB byste měli i na pomalých sítích vždy držet pod jednu vteřinu. Ideál
 
 Událost `DOMContentLoaded` v JavaScriptu vzniká, když byl hlavní HTML dokument stažen a rozparsován. Nečeká se na žádné další prvky – CSS, JS, obrázky nebo `<iframe>`.
 
-Metriku uvidíte například pod záložkou „Network“ v Chrome DevTools jako modrou čáru. Ukazuje ji také online verze PageSpeed Insight v nových reportech vytažených ze sběru nad reálnými uživateli. Zatím ale jen u větších webů.
+Metriku uvidíte například pod záložkou „Network“ v Chrome DevTools jako modrou čáru. Jak jsem zmiňoval, ukazuje ji také online verze PageSpeed Insight v nových reportech vytažených ze sběru nad reálnými uživateli. 
 
 Je samozřejmě dobré ji optimalizací posunovat směrem k nule, ale nicmoc vám o uživatelském prožitku neřekne.
 
-Nicméně je prokázáno, že lepší časy DCL [korelují s nížšími „bounce rate“](https://developers.google.com/speed/docs/insights/faq#speedmetrics) v analytických nástrojích. Jasně – čím rychleji se vám stránka zobrazí, tím méně pravděpodobně s ní ztratíte trpělivost.
+Je ale prokázáno, že lepší časy DCL [korelují s nížšími „bounce rate“](https://developers.google.com/speed/docs/insights/faq#speedmetrics) v analytických nástrojích. Dává to smysl. Čím rychleji se vám stránka zobrazí, tím méně pravděpodobně s ní ztratíte trpělivost.
 
 
 ## Událost First Paint (FP) {#FP}
 
-Moment, kdy po kliknutí uživatele browser vyrenderuje cokoliv, co je vizuálně odlišné od stávající obrazovky. 
+Moment, kdy po kliknutí uživatele prohlížeč vyrenderuje cokoliv, co je vizuálně odlišné od stávající obrazovky. 
 
-Například když vidí výsledky vyhledávání na Google a klikne na položku s vaším webem. First Paint vzniká ve chvíli, kdy uživatel vidí něco jiného než výsledky vyhledávání.
+Předstame si třeba uživatelku, dívající se na výsledky vyhledávání Google. Následně díkybohu klikne na položku s vaším webem. First Paint vzniká ve chvíli, kdy uživatel vidí něco jiného než výsledky vyhledávání.
 
-Odpovídá na nevyřčenou otázku uživatele „děje se to?“
+FP odpovídá na nevyřčenou otázku uživatele: „Děje se to?“
 
-Podobnou metriku umí zobrazit jen WebpageTest. Blízko je jeho hodnota „Start Render“. V timeline přehledu ji ukazuje jako tmavě zelenou čáru. V timeline přehledu také ukazuje světle zelenou čárou ukazuje „RUM First Paint“.
+Podobnou metriku umí zobrazit jen WebpageTest. Blízko je jeho hodnota „Start Render“. V timeline přehledu ji ukazuje jako tmavě zelenou čáru. V timeline přehledu také ukazuje světle zelenou čárou ukazuje „RUM First Paint“. 
 
 
 ## Událost First Contentful Paint (FCP) {#FCP}
 
 Vzniká ve chvíli, kdy uživatel vidí první verzi hlavního obsahu stránky. Čím lepší čas, tím [větší šance udržet aktivitu uživatele](https://developers.google.com/speed/docs/insights/faq#speedmetrics).
 
-Když vezmu příklad e-shopu a detailu produktu: First Contentful Paint nastává ve chvíli kdy uživatel vidí název produktu a jeho nejdůležitějí textový popis.
+Když vezmu příklad e-shopu a detailu produktu: FCP nastává ve chvíli kdy uživatel vidí název produktu a jeho nejdůležitějí textový popis.
 
-Hlavním obsahem je samozřejmě pro každou stránku něco jiného – text, obrázek, SVG nebo klidně nějaký graf `<canvasu>` či video.
+Hlavním obsahem je samozřejmě pro každou stránku něco jiného – text, obrázek, SVG nebo klidně nějaký graf či video.
 
-Je důležitý pro informování uživatele kladoucího si otázku „je to užitečné?“. 
+Událost je důležitá pro informování uživatele kladoucího si otázku „Je to užitečné?“. 
 
 FCP zobrazuje Lighthouse od Google pod názvem „First Meaningful Paint“.
 
@@ -104,7 +104,7 @@ FCP zobrazuje Lighthouse od Google pod názvem „First Meaningful Paint“.
 
 Skóre, které ukazuje jak rychle je viditelný obsah stránky naplněn do stavu stoprocentního vykreslení.
 
-Udává se v milisekundách. Čím nižší je, tím lépe. A je navázán na konkrétní technologický kontext – prohlížeč, šířku okna nebo typ připojení.
+Čím nižší je, tím lépe. I Speed Index je navázán na konkrétní technologický kontext – prohlížeč, šířku okna nebo typ připojení.
 
 <!-- AdSnippet -->
 
@@ -112,7 +112,7 @@ Tohle je jiná metrika než všechny ostatní. SpeedIndex neukazuje čas událos
 
 A je to také jediná metrika, která něco říká o uživatelském prožitku v čase. I proto ji mám tak rád.
 
-Chcete-li být na sebe přísní, držte SpeedIndex pod 1 000 bodů. Většině běžných webů bude ale dnes stačit dostat se do pěti tisícové hranice na rychlosti 3G Slow.
+Chcete-li být na sebe přísní, držte SpeedIndex pod 1 000 bodů. Většině běžných webů bude ale dnes stačit dostat se do pětitisícové hranice na rychlosti 3G Slow.
 
 <figure>
 <img src="dist/images/original/speed-index.jpg" alt="">
@@ -121,9 +121,9 @@ Chcete-li být na sebe přísní, držte SpeedIndex pod 1 000 bodů. Většině 
 </figcaption> 
 </figure>
 
-SI je známý především z WebpageTest.org. Nástroj Lighthouse ukazuje podobnou veličinu [Perceptual Speed Index](https://developers.google.com/web/tools/lighthouse/audits/speed-index).
+Speed Index je známý především z WebpageTest.org. Nástroj Lighthouse ukazuje podobnou veličinu [Perceptual Speed Index](https://developers.google.com/web/tools/lighthouse/audits/speed-index).
 
-Problémem SpeedIndexu je to, že se aktuálně počítá z video-záznamu průběhu načítání stránky. Nelze jej tedy použít pro sbírání dat od všech uživatelů, jen pro syntetické testy. Další problém je v tom, že čeká na vizuální „hotovost“ stránky. Pokud tedy na stránce máte animované prvky, například automatický karusel, asi vám SpeedIndex naroste do nebeských výšin. Ale i tak je ze všech metrik ta nejzajímavější.
+Problémem Speed Indexu je to, že se aktuálně počítá z video-záznamu průběhu načítání stránky. Nelze jej tedy použít pro sbírání dat od všech uživatelů, jen pro syntetické testy. Další problém je v tom, že čeká na vizuální „hotovost“ stránky. Pokud tedy na stránce máte animované prvky, například automatický karusel, asi vám Speed Index naroste do nebeských výšin. Ale i tak je to ze všech metrik ta nejzajímavější.
 
 Více o [Speed Indexu](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index).
 
@@ -133,11 +133,11 @@ Více o [Speed Indexu](https://sites.google.com/a/webpagetest.org/docs/using-web
 
 Chvíle, kdy je stránka renderovaná a zároveň schopná spolehlivě reagovat na uživatelský vstup.
 
-Ptáte se, kdy stránka spolehlivě reaguje na uživatelský vstup? V momentě, kdy se načetly a spustily javascripty, které jsou k tomu potřeba. A když prohlížeč není „zaseknutý“ nebo „nalaguje“. 
+Ptáte se, kdy stránka reaguje *spolehlivě*? Je to v momentě, kdy se načetly a spustily javascripty, které jsou k tomu potřeba. A když prohlížeč není „zaseknutý“ nebo „nalaguje“. 
 
 Odborně vzato nesmí být vykreslovací jádro prohlížeče zatíženo dlouhotrvajícími úkoly. „[Long task](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics#long_tasks)“ je definován jako zaseknutí vykreslovacího jádra na více než 50 ms.
 
-TTI je odpovědí na otázku uživatele „je to použitelné?“. 
+TTI je odpovědí na otázku uživatele „Je to použitelné?“. 
 
 TTI jsou vlastně dvě různé metriky:
 
@@ -147,7 +147,7 @@ TTI jsou vlastně dvě různé metriky:
 
 ## Událost Load {#Load}
 
-Událost, která indikuje, že prohlížeč stáhl celé  HTML i všechny v něm odkazované prvky - CSS, JS, obrázky nebo `<iframe>`.
+Poslední událost, která indikuje, že prohlížeč stáhl celé  HTML i všechny v něm odkazované prvky - CSS, JS, obrázky nebo `<iframe>`.
 
 V JavaScriptu na ni můžeme čekat takto:
 
@@ -155,9 +155,9 @@ V JavaScriptu na ni můžeme čekat takto:
 window.addEventListener("load", function(event) { … });
 ```
 
-Je to tradičně nejpoužívanější metrika. Nic proti ni a vylepšování jejich hodnot. Zhola nic vám ale neřekne o uživatelském prožitku. Když totiž například bude stránka zobrazená, interaktivní (a už dávno konzumovaná uživatelem) a na pozadí ještě stahuje velký obrázky někde do patičky, uživatel o tom vlastně vůbec neví. Přitom událost „Load“ může vycházet dost nehezky.
+Je to tradičně nejpoužívanější metrika. Nic proti ní a vylepšování jejich hodnot. Zhola nic vám ale neřekne o uživatelském prožitku. Když totiž například bude stránka zobrazená, interaktivní (a už dávno konzumovaná uživatelem) a na pozadí ještě stahuje velký obrázky někde do patičky, uživatel o tom vlastně vůbec neví. Přitom událost „Load“ může vycházet dost nehezky. Proto ji osobně rozhodně nepřeceňuji.
 
-Metriku uvidíte například: v záložce Network Chrome DevTools jako červenou čáru. Ale nějak ji uvádějí vlastně všechny měřící nástroje.
+Metriku uvidíte například v záložce Network Chrome DevTools jako červenou čáru. Ale nějak ji uvádějí vlastně všechny měřící nástroje.
 
 <figure>
 <img src="dist/images/original/devtools-load.jpg" alt="">
@@ -166,7 +166,7 @@ Metriku uvidíte například: v záložce Network Chrome DevTools jako červenou
 </figcaption> 
 </figure>
 
-Zajímavou podobu má v Google Analytics. Ty ukazují „průměrnou dobu načítání stránky“ pro různé uživatelské kontexty (zařízení, prohlížeče nebo geografické umístění). Hlavně jde o reálné uživatele, takže nějaký smysl tuhle metriku v Analytics má.
+Zajímavou podobu má v Google Analytics. Ty ukazují „průměrnou dobu načítání stránky“ pro různé uživatelské kontexty (zařízení, prohlížeče nebo geografické umístění). Jde o reálné uživatele, takže nějaký smysl tahle metriku v Analytics má.
 
 V Analytics je [přesně definována](https://support.google.com/analytics/answer/2383341?hl=cs) takhle: 
 
@@ -177,9 +177,7 @@ V Analytics je [přesně definována](https://support.google.com/analytics/answe
 - [Google Analytics: průvodce pro přidání webu](https://www.vzhurudolu.cz/prirucka/google-analytics-pridani)
 </div>
 
-Celkovou dobu načtení ukazují snad všechny nástroje. Z těch, které používám já, jsou to Chrome DevTools, Lighthouse nebo WebpageTest. 
-
-WebpateTest ale ukazuje těch metrik pro finalizaci dokumentu víc, takže si v tom pojďme udělat pořádek.
+Celkovou dobu načtení ukazují snad všechny nástroje. Z těch, které používám já, jsou to Chrome DevTools, Lighthouse nebo WebpageTest. WebpateTest ale ukazuje těch metrik pro finalizaci dokumentu víc, takže si v tom pojďme udělat pořádek.
 
 ### WebpageTest.org: Load Time, Document complete a Fully loaded {#wpt-load}
 
