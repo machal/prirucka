@@ -1,6 +1,6 @@
 # Metriky rychlosti načítání
 
-V pojmech a mírách kolem rychlosti je děsný zmatek, takže se nám v nich teď pokusím udělat pořádek. 
+V metrikách a událostech během načítání a vykreslování stránky je děsný zmatek, takže se v nich teď pokusím udělat pořádek. 
 
 Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledují. Ostatní pošlu [na závěrečná doporučení](#doporuceni).
 
@@ -21,18 +21,24 @@ Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní 
 
 Daleko lepší způsob měření, kdy si do stránky vložíte skript, který vám měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou zaměřené spíše na velké weby a firmy. U velkých webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights. 
 
-Jde o údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup.
-
-*TODO obrázek: https://developers.google.com/speed/pagespeed/insights/?hl=cs&url=https%3A%2F%2Fwww.aktualne.cz%2F*
+<figure>
+<img src="dist/images/original/pagespeed-insights-chrome-ux.jpg" alt="">
+<figcaption markdown="1">    
+*Nástroje PageSpeed Insights zobrazuje údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup*
+</figcaption> 
+</figure>
 
 My se tady ale budeme věnovat jednotlivým momentům, které vznikají během času kdy se web vykresluje. Zatím většinou vznikají syntetickým měřením, ale neberu na to ohled.
 
 
-## Jak jdou metriky v čase?
+## Jak jdou události v čase?
 
-|* Metrika                           *|* Stručná definice *|
-|-------------------------------------|--------------------|
-| [Time To First Byte (TTFB)](#TTFB)  | Server a síť       |
+Většina rychlostních metrik (kromě Speed Indexu) jsou prostě události, které po splnění určitých podmínek vznikají na časové ose postupu vykreslování stránky.
+
+
+| Metrika                             |   Stručná definice |
+|:------------------------------------|:-------------------|
+| [Time To First Byte (TTFB)](#TTFB)  | Rychlost serveru a sítě  |
 | [DOM Content Loaded (DCL)](#DCL)    | Rozparsování HTML  |
 | [First Paint (FP)](#FP) 				  | První vykreslení  |
 | [First Contentful Paint (FCP)](#FCP)| První vykreslení obsahu  |
@@ -40,12 +46,17 @@ My se tady ale budeme věnovat jednotlivým momentům, které vznikají během �
 | [Speed Index](#SI)                  | Průběh vykreslování |
 | [Load](#Load)                       | Načtení všeho       | 
 
-*TODO metriky v obrázku*
+<figure>
+<img src="dist/images/original/metriky-rychlosti.jpg" alt="">
+<figcaption markdown="1">    
+*Ukázka postupného vzniku událostí pro vykreslování stránky. Zde je jako příklad Vzhůru dolů*
+</figcaption> 
+</figure>
 
 
 ## Událost Time To First Byte (TTFB) {#TTFB}
 
-Vzniká ve chvíli, kdy prohlížeč stáhne první byte z vašeho HTML. Ukazuje tedy čas, který zabere komunikace po síti. A hlavně rychlost vašeho serveru a backendové části aplikace.
+Vzniká ve chvíli, kdy prohlížeč stáhne první bajt z vašeho HTML. Ukazuje tedy čas, který zabere komunikace po síti. A hlavně rychlost vašeho serveru a backendové části aplikace.
 
 TTFB ukazují asi všechny pořádnější nástroje – PageSpeed Insights, Lighthouse nebo WebpageTest (jako „First Byte“).
 
@@ -89,7 +100,7 @@ Je důležitý pro informování uživatele kladoucího si otázku „je to uži
 FCP zobrazuje Lighthouse od Google pod názvem „First Meaningful Paint“.
 
 
-## Skóre Speed Index {#SI}
+## Skóre Speed Index {#SpeedIndex}
 
 Skóre, které ukazuje jak rychle je viditelný obsah stránky naplněn do stavu stoprocentního vykreslení.
 
@@ -103,7 +114,12 @@ A je to také jediná metrika, která něco říká o uživatelském prožitku v
 
 Chcete-li být na sebe přísní, držte SpeedIndex pod 1 000 bodů. Většině běžných webů bude ale dnes stačit dostat se do pěti tisícové hranice na rychlosti 3G Slow.
 
-*TODO: obrázek jak se počítá*
+<figure>
+<img src="dist/images/original/speed-index.jpg" alt="">
+<figcaption markdown="1">    
+*1) Vezměme jeden web se dvěmi různými postupy vykreslování. 2) Do grafu si vykreslíme postup vykreslování obou případů. Ve vodorovné ose je čas, ve svislé procenta vykreslení viditelné části obrazovky. 3) Speed Index je plocha nad průběhem grafu. (Zdroj obrázku: WebpageTest.org)*
+</figcaption> 
+</figure>
 
 SI je známý především z WebpageTest.org. Nástroj Lighthouse ukazuje podobnou veličinu [Perceptual Speed Index](https://developers.google.com/web/tools/lighthouse/audits/speed-index).
 
@@ -143,7 +159,12 @@ Je to tradičně nejpoužívanější metrika. Nic proti ni a vylepšování jej
 
 Metriku uvidíte například: v záložce Network Chrome DevTools jako červenou čáru. Ale nějak ji uvádějí vlastně všechny měřící nástroje.
 
-*TODO obrázek*
+<figure>
+<img src="dist/images/original/devtools-load.jpg" alt="">
+<figcaption markdown="1">    
+*Chrome DevTools s vyznačenou událostí Load (červená). Událost DOMContentReady je modrá*
+</figcaption> 
+</figure>
 
 Zajímavou podobu má v Google Analytics. Ty ukazují „průměrnou dobu načítání stránky“ pro různé uživatelské kontexty (zařízení, prohlížeče nebo geografické umístění). Hlavně jde o reálné uživatele, takže nějaký smysl tuhle metriku v Analytics má.
 
@@ -164,19 +185,22 @@ WebpateTest ale ukazuje těch metrik pro finalizaci dokumentu víc, takže si v 
 
 Budu vycházet z vysvětlení [Patricka Meenana](https://www.webpagetest.org/forums/showthread.php?tid=10315):
 
-- *Document complete* je moment, kdy prohlížeč spouští událost Load.
-- *Fully loaded* je moment po události Load, kdy navíc síťová aktivita ustála alespoň na dvě vteřiny.
-- *Load Time* je totéž jako Document complete, tedy událost Load. U mých testů se čísla vždy shodují.
+- *Document Complete*  
+  Moment, kdy prohlížeč spouští událost Load.
+- *Fully Loaded*   
+  Okamžik po události Load, kdy navíc síťová aktivita ustála alespoň na dvě vteřiny.
+- *Load Time*  
+  Totéž jako Document complete, tedy událost Load. U mých testů se čísla vždy shodují. Zatím tedy moc nevím, k čemu je to dobré.
 
 
 ## Doporučení na závěr {#doporuceni}
 
-Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatovali metriky všechny. Zkusím vám na závěr doporučit jednoduchou strategii:
+Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatovali metriky všechny a lpěli na nich. Zkusím vám na závěr doporučit jednoduchou strategii:
 
-- Hlídejte si hlavně SpeedIndex, Time to First Byte (TTFB) a Load. První dvě vám ukáže nástroj Lighthouse, který je také vestavěný v Chrome. Poslední metriku uvidíte v záložce „Network“ Chrome DevTools.
-- Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí.
-- Větší weby a budoucnost: RUM metriky a automatizace. Dívejte se po nástrojích, které vám měření zautomatizují. Hledejte řešení s měřením reálných uživatelů (RUM).
-- Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org.
+- Hlídejte si hlavně Speed Index, Time to First Byte (TTFB) a Load. První dvě vám ukáže nástroj Lighthouse, který je také vestavěný v Chrome. Poslední metriku uvidíte v záložce „Network“ Chrome DevTools.
+- Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a merketéry.
+- Větší weby a budoucnost: RUM metriky a automatizace. Dívejte se po nástrojích, které vám měření zautomatizují. Hledejte řešení s měřením reálných uživatelů (RUM). Příkladem je třeba [SpeedCurve](https://speedcurve.com/).
+- Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org. Viz můj [článek o nástrojích](rychlost-nastroje.md).
 
 <!-- AdSnippet -->
 
