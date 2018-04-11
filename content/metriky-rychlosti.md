@@ -2,7 +2,7 @@
 
 V metrikách a událostech, které se týkají načítání a vykreslování stránky je děsný zmatek. Pokusím se trochu uklidit. 
 
-Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledují. Ostatní pošlu na konec článku do [závěrečných doporučení](#doporuceni).
+Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledujete. Ostatní pošlu na konec článku do [závěrečných doporučení](#doporuceni).
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=fR9n_yi050g">Metriky rychlosti načítání</a> ~ O tématu jsem v březnu 2018 přednášel také na minikonferenci Frontendisti.cz
@@ -12,14 +12,14 @@ Na začátek bych rád zmínil, že metriky se dají získat dvěma způsoby:
 
 ### Syntetická měření {#syntetika} 
 
-Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní prohlížeč, rozlišení, rychlost internetu a tak dále. Tohle je nyní převládající způsob měření. Měří tak všechny [nástroje](rychlost-nastroje.md), o kterých jsem psal: PageSpeed Insights, WebpageTest.org a další.
+Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní prohlížeč, rozlišení, rychlost internetu a tak dále. Tohle je nyní převládající technika. Pracují tak všechny [nástroje](rychlost-nastroje.md), o kterých jsem psal: PageSpeed Insights, WebpageTest.org a další.
 
 <!-- AdSnippet -->
 
 
 ### Měřením reálných uživatelů (RUM = Real User Monitoring) {#rum}
 
-Daleko lepší způsob měření, kdy si do stránky vložíte skript, který vám měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou nastavené spíše na velké weby a firmy. Prostě na ně potřebujete peněz jako šlupek. U velkých webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights. 
+Daleko lepší způsob metodika: Do stránky si vložíte skript, který měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou nastavené spíše na velké weby a firmy. Prostě na ně potřebujete peněz jako šlupek. U velkých webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights. 
 
 <figure>
 <img src="dist/images/original/pagespeed-insights-chrome-ux.jpg" alt="">
@@ -28,7 +28,7 @@ Daleko lepší způsob měření, kdy si do stránky vložíte skript, který v�
 </figcaption> 
 </figure>
 
-Teď se budeme věnovat jednotlivým momentům, které vznikají během času, kdy se web vykresluje. Zatím většinou vznikají syntetickým měřením, ale neberu na to ohled.
+Teď se budeme věnovat jednotlivým metrikám. Zatím většinou vznikají syntetickým měřením, ale neberu na to ohled.
 
 
 ## Jak jdou události v čase? {#v-case}
@@ -58,11 +58,11 @@ Většina rychlostních metrik (kromě Speed Indexu) jsou prostě události, kte
 
 Vzniká ve chvíli, kdy prohlížeč stáhne první bajt z vašeho HTML. Ukazuje tedy rychlost vašeho serveru a backendové části aplikace. A taky samozřejmě rychlost sítě.
 
-TTFB ukazují asi všechny pořádnější nástroje – PageSpeed Insights, Lighthouse nebo WebpageTest. ten jako „First Byte“.
+TTFB ukazují asi všechny pořádnější nástroje – PageSpeed Insights, Lighthouse nebo WebpageTest. Ten jako „First Byte“.
 
-Serverový čas tvoří skoro vždy tu menší část problému u pomalejších webů. Nicméně i tak není dobré ho podceňovat: Důležitý je například pro [Crawl Budget vyhledávačů](https://www.contentkingapp.cz/akademie/crawl-budget/), hlavně u velkých webů.
+Serverový čas tvoří skoro vždy tu menší část problému u pomalých webů. Nicméně i tak není dobré ho podceňovat: Důležitý je například pro [Crawl Budget vyhledávačů](https://www.contentkingapp.cz/akademie/crawl-budget/), hlavně u velkých webů.
 
-TTFB byste měli i na pomalých sítích vždy držet pod jednu vteřinu. Ideální stav je co nejvíce pod půl vteřinou.
+TTFB byste měli i na pomalých sítích držet pod jednu vteřinu. Ideální stav je co nejvíce pod půl vteřinou.
 
 
 ## Událost DOM Content Loaded (DCL) {#DCL}
@@ -80,7 +80,7 @@ Je ale prokázáno, že lepší časy DCL [korelují s nížšími „bounce rat
 
 Moment, kdy po kliknutí uživatele prohlížeč vyrenderuje cokoliv, co je vizuálně odlišné od stávající obrazovky. 
 
-Předstame si třeba uživatelku, dívající se na výsledky vyhledávání Google. Následně díkybohu klikne na položku s vaším webem. First Paint vzniká ve chvíli, kdy uživatel vidí něco jiného než výsledky vyhledávání.
+Předstame si třeba uživatelku, dívající se na výsledky vyhledávání Google. Následně díkybohu klikne na položku s vaším webem. First Paint vzniká ve chvíli, kdy uživatelka vidí něco jiného než výsledky vyhledávání.
 
 FP odpovídá na nevyřčenou otázku uživatele: „Děje se to?“
 
@@ -196,7 +196,7 @@ Budu vycházet z vysvětlení [Patricka Meenana](https://www.webpagetest.org/for
 Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatovali metriky všechny a lpěli na nich. Zkusím vám na závěr doporučit jednoduchou strategii:
 
 - Hlídejte si hlavně Speed Index, Time to First Byte (TTFB) a Load. První dvě vám ukáže nástroj Lighthouse, který je také vestavěný v Chrome. Poslední metriku uvidíte v záložce „Network“ Chrome DevTools.
-- Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a merketéry.
+- Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a marketéry.
 - Větší weby a budoucnost: RUM metriky a automatizace. Dívejte se po nástrojích, které vám měření zautomatizují. Hledejte řešení s měřením reálných uživatelů (RUM). Příkladem je třeba [SpeedCurve](https://speedcurve.com/).
 - Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org. Viz můj [článek o nástrojích](rychlost-nastroje.md).
 
