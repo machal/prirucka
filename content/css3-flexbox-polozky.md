@@ -1,16 +1,16 @@
 # Flexbox: vlastnosti položky
 
-<div class="web-only nav">
-  <h2 class="sr-only">Navigace: vše o flexboxu</h2>
-  <ul>
-    <li>
-        <a class="nav__item" href="css3-flexbox.md">Flexbox</a>
+<div class="nav web-only">
+  <h2 class="nav__heading sr-only">Navigace: vše o flexboxu</h2>
+  <ul class="nav__list">
+    <li class="nav__item">
+        <a class="nav__item-in" href="css3-flexbox.md">Flexbox</a>
     </li>
-    <li>
-        <strong class="nav__item">Položky</strong>
+    <li class="nav__item--active">
+        <strong class="nav__item-in">Položky</strong>
     </li>
-    <li>
-        <a class="nav__item" href="css3-flexbox-kontejner.md">Kontejner</a>
+    <li class="nav__item">
+        <a class="nav__item-in" href="css3-flexbox-kontejner.md">Kontejner</a>
     </li>
   </ul>
 </div>

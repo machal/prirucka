@@ -2,17 +2,17 @@ CSS3 Flexbox: layout pomocí pružných boxů
 =========================================
 
 
-<div class="web-only nav">
-  <h2 class="sr-only">Navigace: vše o flexboxu</h2>
-  <ul>
-    <li>
-        <strong class="nav__item">Flexbox</strong>
+<div class="nav web-only">
+  <h2 class="nav__heading sr-only">Navigace: vše o flexboxu</h2>
+  <ul class="nav__list">
+    <li class="nav__item nav__item--active">
+        <strong class="nav__item-in">Flexbox</strong>
     </li>
-    <li>
-        <a class="nav__item" href="css3-flexbox-polozky.md">Položky</a>
+    <li class="nav__item">
+        <a class="nav__item-in" href="css3-flexbox-polozky.md">Položky</a>
     </li>
-    <li>
-        <a class="nav__item" href="css3-flexbox-kontejner.md">Kontejner</a>
+    <li class="nav__item">
+        <a class="nav__item-in" href="css3-flexbox-kontejner.md">Kontejner</a>
     </li>
   </ul>
 </div>
