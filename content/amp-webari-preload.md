@@ -9,6 +9,7 @@ Za pomalé weby nemohou technologie, ale zase jenom lidé.
 Představím vám tři z nich:
 
 ### Mimoňský designér
+
 Nečetl [můj článek](https://www.vzhurudolu.cz/prirucka/rychlost-designeri), takže v návrhu použije děsně moc řezů písma, na pozadí stránky vloží pětiminutové video, stránka bude samý obrázek a vše se bude animovat. A hlavně se vůbec nebude bavit se zbytkem týmu. Rychlost je přece věcí vývojáře. Prostě to nadizajnuje. 
 
 ### Mimoňský vývojář
@@ -20,7 +21,7 @@ Nebyl [na mém školení](https://www.vzhurudolu.cz/kurzy/rychlost-nacitani), ne
 Rychlost neřeší. Proč by měl? To je přece úkol vývojáře. Do stránky vloží čtyři monitorovací a A/B testovací skripty. Poběží pořád a na všech stránkách. I když se zrovna nic netestuje. Přidá chatovací lištu a vývojáře poprosí o plugin pro marketingový splash screen, který viděl na Alze.
 
 <figure>
-<img src="amp-webari.jpg" alt="">
+<img src="dist/images/original/amp-webari.jpg" alt="">
 <figcaption markdown="1">    
 *Obrázek: Tři rychlostní mimoni: grafik, marketér a vývojář*
 </figcaption> 
@@ -73,12 +74,11 @@ Zatímco totiž koukáte na výsledky vyhledávání Google, skripty na pozadí 
 Zkoušel jsem otestovat dva z českých AMP webů – blog váženého klienta [Bella Rose](https://atmosfera.bellarose.cz/) a [recepty na Cuketka.cz](https://recepty.cuketka.cz/):
 
 <figure>
-<img src="amp-bella-cuketka.jpg" alt="">
+<img src="dist/images/original/amp-bella-cuketka.jpg" alt="">
 <figcaption markdown="1">    
 *Obrázek: Nahoře Bella Rose a jejich původní článek na blogu, pak jeho umístění v Google hledání a nakonec AMP verze téhož, řešená WordPress pluginem. Totéž dole u pana Cuketky. *
 </figcaption> 
 </figure>
-
 
 A teď pár čísel:
 
@@ -106,7 +106,7 @@ Na takové hodnoty se s běžným webem nemáte šanci dostat.
 
 Mimochodem – všimněte si, že u pana Cuketky je Speed Index AMP stránky vyšší než u běžného webu. Není to optimální, ale v kontextu preloadované AMP stránky je to vlastně úplně jedno.
 
-## Web je pomalý  díky možnostem. AMP je rychlý díky omezením
+## Web je pomalý díky možnostem. AMP je rychlý díky omezením
 
 Co tedy AMP vyřešil oproti běžnému webu?
 
