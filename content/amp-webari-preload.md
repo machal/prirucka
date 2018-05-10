@@ -4,17 +4,17 @@ Za pomalé weby nemohou technologie, ale zase jenom lidé.
 
 <!-- AdSnippet -->
 
-## Někteří webaři jsou totiž rychlostní mimoni
+## Někteří webaři jsou totiž rychlostní mimoni {#mimoni}
 
 Představím vám tři z nich:
 
 ### Mimoňský designér
 
-Nečetl [můj článek](https://www.vzhurudolu.cz/prirucka/rychlost-designeri), takže v návrhu použije děsně moc řezů písma, na pozadí stránky vloží pětiminutové video, stránka bude samý obrázek a vše se bude animovat. A hlavně se vůbec nebude bavit se zbytkem týmu. Rychlost je přece věcí vývojáře. Prostě to nadizajnuje. 
+Nečetl [článek](https://www.vzhurudolu.cz/prirucka/rychlost-designeri), takže v návrhu použije osmnáct řezů písma, do pozadí stránky vloží pětiminutové video, stránka bude samý obrázek a vše se animuje. A hlavně se vůbec nebude bavit se zbytkem týmu. Rychlost je přece věcí vývojáře. Prostě to nadizajnuje. 
 
 ### Mimoňský vývojář
 
-Nebyl [na mém školení](https://www.vzhurudolu.cz/kurzy/rychlost-nacitani), nečte. Ostatně – nic vědět nepotřebuje, psát kód umí, tak kam by chodil a co by četl…? Podklady od designéra vezme tak, jak jsou. Proč by se s designérem bavil? Optimalizaci neřeší, rychlost netestuje. Do stránky vloží dvacet tři  jQuery knihoven, na které je zvyklý. 
+Nebyl [na školení](https://www.vzhurudolu.cz/kurzy/rychlost-nacitani), nečte. Ostatně – nic vědět nepotřebuje. Psát kód umí, tak kam by chodil a co by četl…? Podklady od designéra vezme tak jak jsou. Proč by se s designérem bavil? Optimalizaci neřeší, rychlost netestuje. Do stránky vloží dvacet tři  jQuery knihoven, na které je zvyklý. 
 
 ### Mimoňský markeťák
 
@@ -29,25 +29,27 @@ Rychlost neřeší. Proč by měl? To je přece úkol vývojáře. Do stránky v
 
 Je asi jasné, že tihle tři rychlost webu společnými silami zabijí. Problémy se kupí až se nakupí.
 
-Ale zároveň je jasné, že jsem si vybral sice reálné, ale poněkud extrémní hrdiny. V normálních webařských týmech to tak nebývá, že?
+Ale zároveň je jasné, že jsem si vybral sice reálné, ale poněkud extrémní hrdiny. V normálních webařských týmech nejsou všichni takoví, že?
 
 <div class="related" markdown="1">
 - [AMP opravuje a zároveň rozbíjí World Wide Web](https://www.vzhurudolu.cz/blog/40-amp)
 </div>
 
-Dobře, ale vysvětlete mi, proč má naprostá většina českých webů, které jsem kdy testoval, [Speed Index](https://www.vzhurudolu.cz/prirucka/metriky-rychlosti#SI) na hodnotách přes 20 tisíc? I když za nimi stojí často jednotlivci, jejichž práce si vážím.
+Dobře, ale vysvětlete mi, proč má většina českých webů, které jsem testoval, [Speed Index](metriky-rychlosti.md#SI) na hodnotách přes dvacet tisíc bodů? I když za nimi stojí často jednotlivci, jejichž práce si vážím.
 
-Je to prostě proto, že týmy nemají rychlost v procesech. Milí čtenáři, rychlost [má vliv na úspěšnost webu](rychlost-nacitani-proc.md), takže si [nastavte rychlostní limity](https://www.vzhurudolu.cz/prirucka/rychlost-designeri), ty kontrolujte a na jejich dodržování vyčleňujte peníze a lidi. 
+Je to prostě proto, že většina týmů nemá rychlost v procesech. Nenavrhují, nevyvíjejí a nedělají marketing s ohledem na cílové [rychlostní metriky](metriky-rychlosti.md).
 
-Takhle jednoduché to  je.
+Milí čtenáři, rychlost [má vliv na úspěšnost webu](rychlost-nacitani-proc.md), takže si [nastavte rychlostní limity](rychlost-designeri.md), ty kontrolujte a na jejich dodržování vyčleňujte peníze a lidi. 
+
+Takhle jednoduché to je.
 
 <!-- AdSnippet -->
 
-Než se to ale všichni naučíme, bude to trvat. Dlouhá léta. Google moc dobře ví, jak moc by uživatelský prožitek webů vylepšil náhlý pokrok v rychlosti načítání. A už to s námi nemohl vydržet.
+Jenže – než se to všichni naučíme, bude to trvat dlouhá léta. Google ale dobře ví, jak by náhlý pokrok v rychlosti načítání vylepšil uživatelský prožitek webů. A myslím, že už to s námi nemohl vydržet.
 
-## I proto Google přišel s AMP
+## I proto Google přišel s AMP {#google-amp}
 
-AMP neslibuje jen rychlejší zobrazení. On slibuje zobrazení okamžité. Proto je potřeba být velmi přísný a AMP nastavuje omezení opravdu přísná. Jen namátkou:
+AMP neslibuje jen rychlejší zobrazení. On slibuje zobrazení okamžité. Proto je potřeba být velmi přísný a AMP přísný je. Jen namátkou:
 
 * Žádné vlastní UI komponenty
 * Žádný vlastní Javascript
@@ -55,12 +57,12 @@ AMP neslibuje jen rychlejší zobrazení. On slibuje zobrazení okamžité. Prot
 * Žádné vlastní reklamy
 * Velikost CSS maximálně 50 kB
 
-…a taky přidal několi vychytávek navíc:
+…a taky AMP přidal několik vychytávek navíc:
 
 * Hostování u Google
 * Přednačtení od Google
 
-Výsledek není vůbec marný. Jak Google slíbil, tak splnil. 
+Výsledek není vůbec marný. Takový nějaký efekt to má:
 
 <div class="rwd-media">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/elHr8-MPUwA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -69,14 +71,14 @@ Výsledek není vůbec marný. Jak Google slíbil, tak splnil.
 
 ## Hlavní kouzlo? Přednačtení 
 
-Zatímco totiž koukáte na výsledky vyhledávání Google, skripty na pozadí nelení a stahují AMP stránky, které se tam vyskytují. 
+Zatímco totiž koukáte na výsledky vyhledávání Google, prohlížeč nelení a stahuje AMP stránky ve výsledcích zobrazené. 
 
 Zkoušel jsem otestovat dva z českých AMP webů – blog váženého klienta [Bella Rose](https://atmosfera.bellarose.cz/) a [recepty na Cuketka.cz](https://recepty.cuketka.cz/):
 
 <figure>
 <img src="dist/images/original/amp-bella-cuketka.jpg" alt="">
 <figcaption markdown="1">    
-*Obrázek: Nahoře Bella Rose a jejich původní článek na blogu, pak jeho umístění v Google hledání a nakonec AMP verze téhož, řešená WordPress pluginem. Totéž dole u pana Cuketky. *
+*Obrázek: Nahoře Bella Rose a jejich původní článek na blogu, pak jeho umístění v Google hledání a nakonec AMP verze téhož, řešená WordPress pluginem. Totéž dole u pana Cuketky.*
 </figcaption> 
 </figure>
 
@@ -102,11 +104,14 @@ A teď pár čísel:
 
 Když jsem poprvé viděl Speed Indexy přednačtených AMP stránek, spadla mi čelist. 
 
-Na takové hodnoty se s běžným webem nemáte šanci dostat.
+Je sice pravda, že ne vždy se musí AMP stránka stihnout přednačíst. Speed Index se bude pohybovat vždycky mezi hodnotami na předposledním a posledním řádku.
+
+A na hodnoty s přednačtením se s běžným webem nemáte šanci dostat.
 
 Mimochodem – všimněte si, že u pana Cuketky je Speed Index AMP stránky vyšší než u běžného webu. Není to optimální, ale v kontextu preloadované AMP stránky je to vlastně úplně jedno.
 
-## Web je pomalý díky možnostem. AMP je rychlý díky omezením
+
+## Web je pomalý díky možnostem. AMP je rychlý díky omezením {#rychly-diky-omezenim}
 
 Co tedy AMP vyřešil oproti běžnému webu?
 
@@ -120,11 +125,12 @@ Co tedy AMP vyřešil oproti běžnému webu?
 Tabulka je trochu zjednodušená, ale takhle to vidím:
 
 ### Nevyřešil: HTML/CSS/JS a webové technologie
-I na „normálním“ webu můžete použít lazyloading obrázků nebo si zakázat vymýšlet vlastní UI komponenty nebo ty desítky JS knihoven, které potřebujete.
+
+I na „normálním“ webu můžete použít lazyloading obrázků, zakázat si vymýšlet vlastní UI komponenty a přidávat desítky JS knihoven.
 
 ### Nevyřešil: Rychlý server
 
-On vám jej AMP nabídne (stránky se hostují přímo na Googlím CDN), ale není důvod si podobně skvěle nezoptimalizovat servírování vašeho „normálního webu".
+AMP vám jej nabídne (stránky se hostují přímo na Googlím CDN), ale není důvod si podobně skvěle zoptimalizovat servírování vašeho „normálního webu“.
 
 ### Vyřešil: Přednačtení
 
@@ -132,13 +138,19 @@ Prostě proto, že Google vám jej ve výsledcích vyledávání nabídne jen u 
 
 ### Vyřešil: Mimoňské webaře
 
-Jejich kreativita je omezená a zlozvykům je zabráněno. Procesy vylepšovat netřeba. S AMPem jde udělat pomalou stránku, ale ne zas tak šíleně hlemýždí jako u „normálních webů". Tim Kadlec ukázal, že [AMP stránka vždy výrazně rychlejší](https://timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/) než normální stránka od stejného týmu.
+Jejich kreativita je omezená a zlozvykům je zabráněno. Procesy vylepšovat netřeba. S AMPem jde udělat pomalou stránku, ale ne zas tak šíleně hlemýždí jako u „normálních webů“. Tim Kadlec ukázal, že [AMP stránka je obvykle rychlejší](https://timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/) než normální stránka od stejného týmu.
 
-## „AMP je rychlý web pro blbý“
+## „AMP je rychlý web pro blbý“ {#pro-blby}
 
 Tohle mi napsal [Pavel Ungr](http://www.pavelungr.cz/), když se koukal na můj materiál pro jeho [SEOloger](https://nazivo.seologer.cz/). A je to tak. 
 
-S AMPem udělaji rychlý web úplně všichni. 
+Ano, je nutné se bavit i o jeho nevýhodách. Namátkou:
+
+- jak proprietární technologie [škodí otevřenému Webu](https://www.vzhurudolu.cz/blog/40-amp),
+- jak nehezké je, že Google neumožní přednačtení i rychlým běžným webům,
+- jak se zatím těžko hledá hranice, kde AMP nasadit a kde ne…
+
+Jedno je ale jisté. S AMPem udělají rychlou stránku úplně všichni. 
 
 <!-- AdSnippet -->
 
