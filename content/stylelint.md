@@ -30,11 +30,6 @@ Různými způsoby. My třeba lintování pouštíme ručně přes [plugin pro G
 $ grunt stylelint
 ```
 
-<div class="related" markdown="1" class="web-only">
-- [Grunt.js](grunt.md)
-- [Užitečné Grunt pluginy](grunt-pluginy.md)
-</div>
-
 Taková věc pak projde definovaný adresář a napíše, jak se váš kód shoduje s konfigurací. Může například vrátit něco takového:
 
 ```bash
@@ -46,9 +41,9 @@ assets/scss/base/vd-base.scss
  194:12  ✖  Expected quotes around "text"                         selector-attribute-quotes
 ```
 
-Jak vidíte, ukazuje mi to možné zásadnější problémy se spravovatelností (přítomnost !important v [declaration-no-important](https://stylelint.io/user-guide/rules/declaration-no-important/)), ale taky menší problémy se stylistikou – způsobem psaní (prázdné řádky v [max-empty-lines](https://stylelint.io/user-guide/rules/max-empty-lines/)).
+Jak vidíte, ukazuje mi to možné zásadnější problémy se spravovatelností (přítomnost `!important` v [declaration-no-important](https://stylelint.io/user-guide/rules/declaration-no-important/)), ale taky menší problémy se stylistikou – způsobem psaní (prázdné řádky v [max-empty-lines](https://stylelint.io/user-guide/rules/max-empty-lines/)).
 
-O pravidlech si ještě něco řekneme, vydržte. Teď se chci vrátit k možným způsobům využití a tedy i instalace. Stylelint je Node.js balíček, takže nabízí všechny obvyklé cesty použití:
+O pravidlech si ještě něco řekneme, vydržte. Teď se chci vrátit k možným způsobům využití a tedy i instalace. Stylelint je Node.js balíček, takže nabízí všechny obvyklé způsoby kamarádění:
 
 * Na [příkazové řádce](https://stylelint.io/user-guide/cli/). 
 * [V editorech](https://stylelint.io/user-guide/complementary-tools/#editor-plugins): nabízí se Sublime, Atom, VS Code, Vim a Emacs.
@@ -64,6 +59,11 @@ Instaluje se spolu se Stylelintem známým způsobem:
 ```bash
 $ npm install stylelint grunt-stylelint --save-dev
 ```
+
+<div class="related" markdown="1" class="web-only">
+- [Grunt.js](grunt.md)
+- [Užitečné Grunt pluginy](grunt-pluginy.md)
+</div>
 
 Takhle se vám nainstaluje do `package.json`. To víte. Možná ale nevíte, že Stylelint dost často mění pravidla i na úrovni minor (setinkových) aktualizací. Proto sami autoři doporučují používat vlnovku, která zamezí stahování major verzí. Viz `package.json`:
 
@@ -86,9 +86,9 @@ src: [
 
 Vysvětlím:
 
-* `failOnError: false` – Při nalezení chyby Stylelint standarně skončí hlášením `„Warning: Task "stylelint:src" failed"`, což děsně mate všechny nováčky. Ne, task tímto nehavaroval, jen máte v CSS chyby. Raději si to vypněte uvedenou konfigurací.
+* `failOnError: false` – Při nalezení chyby Stylelint standarně skončí hlášením `„Warning: Task "stylelint:src" failed“`, což děsně mate všechny nováčky. Ne, task tímto nehavaroval, jen máte v CSS chyby. Raději si to vypněte uvedenou konfigurací.
 * `syntax: 'scss'` – Ano, umí kontrolovat i SCSS nebo LESS soubory. Bez toho bychom se mohli jít klouzat, že ano.
-* Všimněte si, že v `src` vylučuji adresář `lib/`. Tam jsou umístěné soubory s knihovnami třetích stran, ale také soubory, které „přebíjejí" jejich CSS pravidla. Dobře víte, že tady jde veškerá čistota kódu stranou. Prostě se vezmou vidle a… Nelintuje se!
+* Všimněte si, že v `src` vylučuji adresář `lib/`. Tam jsou umístěné soubory s knihovnami třetích stran, ale také soubory, které „přebíjejí“ jejich CSS pravidla. Dobře víte, že tady jde veškerá čistota kódu stranou. Prostě se vezmou vidle a… Nelintuje se!
 
 ### Jo, i z příkazové řádky to jde
 
@@ -106,7 +106,7 @@ npm install -g stylelint
 
 ## Nastavení kontrolních pravidel
 
-Právě [množství pravidel](https://stylelint.io/user-guide/rules/) a jejich nastavení dělá Stylelint vaším vysněným přítelem. Přítelem s vidlemi na ošklivý CSS kód, který vás leta trápí na vašich projektech.
+Právě [množství pravidel](https://stylelint.io/user-guide/rules/) a jejich nastavení dělá Stylelint vaším vysněným přítelem. Přítelem s vidlemi na ošklivý CSS kód, který leta trápí vaše projekty.
 
 Ale jen se neradujte, bude vás to stát více námahy než z článku vyznívá. 
 
@@ -118,7 +118,7 @@ Nainstalujeme si ji:
 $ npm install stylelint-config-standard --save-dev
 ```
 
-Konfigurace Stylelintu se obvykle dává do samostatného souboru .stylelintrc. Hned na první řádce specifikujeme, že jde o rozšíření standarní konfigurace a následně přidáme naše vlastní pravidla:
+Konfigurace Stylelintu se obvykle dává do samostatného souboru `.stylelintrc`. Hned na první řádce specifikujeme, že jde o rozšíření standarní konfigurace a následně přidáme naše vlastní pravidla:
 
 ```javascript
 {
@@ -129,7 +129,7 @@ Konfigurace Stylelintu se obvykle dává do samostatného souboru .stylelintrc. 
 }
 ```
 
-Takhle by mohl vypadat hodně jednoduchý konfigurák pravidel. Ale pro inspiraci ukážu stávající verzi používanou pro vývoj Vzhůru dolů:
+Takhle by mohl vypadat hodně jednoduchý konfigurák pravidel. Ale pro inspiraci ukážu verzi používanou pro vývoj Vzhůru dolů:
 
 ```javascript
 {
@@ -174,23 +174,23 @@ Takhle by mohl vypadat hodně jednoduchý konfigurák pravidel. Ale pro inspirac
 
 Pár poznámek:
 
-* Některá pravidla ze [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) považuji za zbytečně svazující, proto je na úrovni naší konfigurace vypínáme pomocí null.
-* Jiná pravidla zde trpím jen se skřípěním zubů. [selector-max-specificity](https://stylelint.io/user-guide/rules/selector-max-specificity/) nastavuje maximální váhu selektoru na 4 třídy. Raději bych měl jen tři, ale starší kód mě tíží i na blogu – abyste si nemysleli, že si žiju v růžovém světě.
+* Některá pravidla ze [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) považuji za zbytečně svazující, proto je na úrovni naší konfigurace vypínáme pomocí `null`.
+* Jiná pravidla zde trpím jen se skřípěním zubů. [selector-max-specificity](https://stylelint.io/user-guide/rules/selector-max-specificity/) nastavuje maximální váhu selektoru na 4 třídy. Raději bych měl dvě, ale starší kód mě tíží i na blogu – abyste si nemysleli, že si žiju v růžovém světě.
 * Někdy je těžké se Stylelintem domluvit. Například u pravidla [at-rule-no-unknown](https://stylelint.io/user-guide/rules/at-rule-no-unknown/) nesmyslně hlásí i klíčová slova preprocesoru Sass. Lze to říct obecne – Stylelint vám dlouhodobě dost práce ušetří, ale v krátkodobém horizontu očekávejte, že do zkamarádění s ním budete muset vložit dost času.
 
-Celkově vzato mě ale tahle konfigurace vyhovuje. Kód byl poměrně v dobrém stavu už před nasazením Stylelintu a teď zvedá laťku.
+Celkově vzato mě ale tahle konfigurace vyhovuje. Kód byl poměrně v dobrém stavu už před nasazením Stylelintu a ten teď zvedá laťku.
 
 <!-- AdSnippet -->
 
-Pokud bych ale začal pracovat na vylepšení hodně starého CSS kódu, .stylelintrc by bylo lepší začít z nuly a pravidla postupně přidávat. Nasazením config-standard by mohla vzniknout nutnost úprav tisíců řádků kódu. To umí rychle zkazit i sebevětší chuť do refaktoringu. 
+Pokud bych ale začal pracovat na vylepšení hodně starého CSS kódu, `.stylelintrc` by bylo lepší začít z nuly a pravidla postupně přidávat. Nasazením `stylelint-config-standard` by mohla vzniknout nutnost úprav tisíců řádků kódu. To umí rychle zkazit i sebevětší chuť do refaktoringu. 
 
 ## A ještě pár tipů
 
 ### Naklikání konfigurace
 
-Během psaní článku jsem narazil na tenhle skvělý vizuální nástroj pro generování konfigurace – [Stylelint Config](https://maximgatilin.github.io/stylelint-config/).
+Během psaní článku jsem narazil na tenhle krásný vizuální nástroj pro generování konfigurace – [Stylelint Config](https://maximgatilin.github.io/stylelint-config/).
 
-Obsahuje 43 otázek na preferovaný způsob psaní CSS. Sedněte si k tomu s kolegy, o každém pravidle diskutujte a… Dělám si legraci. Prosím, tohle nedělejte! Nejlepší je, když pravidla nastaví nezkušenější člen týmu a diskutuje se o nich málo. Protože není  až tak důležité, jaká pravidla si nastavíte, ale že budete mít *jednotná* pravidla.
+Obsahuje 43 otázek na preferovaný způsob psaní CSS. Sedněte si k tomu s kolegy, o každém pravidle diskutujte a… Dělám si legraci. Prosím, tohle nedělejte! Nejlepší je, když základní pravidla nastaví nejzkušenější člen týmu a diskutuje se o nich málo. Protože není až tak důležité, jaká pravidla si nastavíte, ale že budete mít *jednotná* pravidla.
 
 ### Automatická oprava chyb
 
@@ -208,9 +208,9 @@ Shrňme si to:
 
 * Stylelint má smysl používat na každém projektu.
 * Ideální je použití v editorech, alternativně pak na příkazové řádce.
-* Start si usnadníte aplikací jen na refaktorovanou část kódu a použitím config-standard.
+* Start si usnadníte aplikací jen na refaktorovanou část kódu a použitím `stylelint-config-standard`.
 
-O Stylelintu povídám také na mém novém školení [CSS kód: Organizace a údržba](https://www.vzhurudolu.cz/kurzy/css-kod), kde se kromě dalšího dozvíte špeky a zkušenosti z jeho z praktického používání.
+O Stylelintu povídám také na mém novém školení [CSS kód: Organizace a údržba](https://www.vzhurudolu.cz/kurzy/css-kod), kde se kromě dalšího dozvíte špeky a zkušenosti z jeho praktického používání.
 
 <!-- AdSnippet -->
 
