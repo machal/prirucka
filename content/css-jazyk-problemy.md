@@ -16,7 +16,7 @@ Než se dostaneme k architektuře – první věc, u které se musím pozastavit
 
 ## Divný jazyk – ale dobře známý {#divny-jazyk}
 
-CSS je kód. Není to však programovací, ale deklarativní jazyk, protože popisuje design. S tím se hold musíme smířit.
+CSS je kód. Není to však programovací, ale deklarativní jazyk, protože popisuje design. S tím se holt musíme smířit.
 
 Řadě vývojářů se nelíbí z toho vycházející repetitivní povaha CSS a tak si všelijak uzpůsobují a „zefektivňují“ zápis:
 
@@ -31,9 +31,10 @@ CSS je kód. Není to však programovací, ale deklarativní jazyk, protože pop
 
 A je to. Z divného jazyka tím vytvoří ještě divnější. Nový jazyk, kterému rozumí autor a pár zasvěcených. Nikdo jiný.
 
-CSS preprocesory přinesly mnoho dobrého, ale také možnost vytvořit si zcela nové jazyky, velmi málo podobné kaskádovým stylů. A to je peklo.
+[CSS preprocesory](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) přinesly mnoho dobrého, ale také možnost vytvořit si zcela nové jazyky, velmi málo podobné kaskádovým stylů. A to je peklo.
 
-[CSS je třetí nejčastěji používaný jazyk](https://www.vzhurudolu.cz/blog/108-stack-overflow-2018), takže mu prostě většina vývojářů a vývojářek rozumí. Když nad ním vytvoříme jazyk nový, zkomplikujeme tím zapojování nových lidí do vašeho projektu. Ti, kteří jich spravují více, nečekají jako na smilování, až budou moci naučit pokaždé novou nadstavbu nad styly.
+[CSS je třetí nejčastěji používaný jazyk](https://www.vzhurudolu.cz/blog/108-stack-overflow-2018), takže mu prostě většina vývojářů a vývojářek rozumí. Když nad ním vytvoříme jazyk nový, zkomplikujeme tím zapojování nových lidí do vašeho projektu. Pro ty, kteří spravují více projektů, jsou silně proprietární nádstavby nad styly komplikující.
+
 
 ## Pořadí vlastností a specifičnost – bez metodik to nejde {#poradi-specificnost}
 
@@ -95,7 +96,7 @@ Nezbývá než se s kaskádou smířit a přizpůsobit tomu dvě věci:
 
 * *Držet specifičnost co nejníže*  
 To je ostatně jedno z pravidel metodiky [OOCSS](https://www.vzhurudolu.cz/prirucka/oocss), ze kterého pak vychází [BEM](https://www.vzhurudolu.cz/prirucka/bem). V tomto příkladě jsou samozřejmě špatně selektory `.box h2` a `.tabs h2`.
-* *Nastavit pořadí kategorií stylů tak aby specifičnost postupně rostla.*  
+* *Nastavit pořadí kategorií stylů podle rostoucí specifičnosti*  
 To hlásá například metodika [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/). V tomto příkladu by se hodilo změnit pořadí v kódu tak, aby užitková třída (`.mb-0`) následovala až za komponentami. Je také výhodnější ji uměle zvýšit specificitu.
 
 Lépe napsaný kód vypadá takto:
@@ -146,7 +147,7 @@ Tady se dotýkáme i toho, že aby to celé dávalo smysl, i design musí být k
 ## Globální platnost – komponentový přístup a metodiky to řeší {#globalni-platnost}
 
 
-To, že každý každý selektor platí globálně, byl svého času první argument pro používaní [CSS v JS.](https://www.vzhurudolu.cz/podcast/77-css-v-js)  Vlastně jsem mu ale nikdy úplně plně nerozumněl, hlavně srovnání s globálními konstantami v programovacích jazycích. 
+To, že každý selektor platí globálně, byl svého času první argument pro používaní [CSS v JS.](https://www.vzhurudolu.cz/podcast/77-css-v-js)  Vlastně jsem mu ale nikdy úplně plně nerozumněl, hlavně omílanému srovnání s globálními konstantami v programovacích jazycích. 
 
 
 
@@ -209,7 +210,7 @@ Na složku `libraries/` pak samozřejmě nepouštíme [Stylelint](https://www.vz
 
 Tak dobře. Ještě zbývá pár chytrých rad v závěrečném shrnutí:
 
-* Pokud vám CSS připadá divné, nezhoršujte ho vymýšlením vlastního jazyka v preprocesorech.
+* Ať už vám CSS připadá divné nebo ne, nezhoršujte kód vymýšlením vlastního jazyka v preprocesorech.
 * Respektujte kaskádu: držte specificitu co nejníže, řaďte podle ní soubory v projektu a snažte se o komponentový přístup.
 * Docela účinný lék na globální platnost selektorů je opět komponentový přístup a metodika BEM.
 * Externí závislosti izolujte alespoň kvůli lintování do zvláštní složky.
