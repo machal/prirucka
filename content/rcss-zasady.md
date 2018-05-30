@@ -1,25 +1,25 @@
 # Zásady psaní respektujícího CSS
 
-Pište kód jednotně a hlavně tak, aby se dobře četl jiným. Nebo vám za rok. U CSS je to obzvlášť důležité. 
+Pište kód jednotně a hlavně tak, aby se dobře četl jiným nebo třeba vám samotným za rok. Počítejte s tím, že lidé umí CSS. To ostatní není jisté. Pište proto CSS kód a moc si jej neupravujte. *Respektujte* CSS.
 
-Tyhle zásady psaní vycházejí z [OOCSS](oocss.md), [BEM](bem.md) a dalších přístupů a nástrojů. Není to nic nového, ale sepsal jsem to, protože v češtině žádný dobrý zdroj není. 
+Tyhle zásady psaní vycházejí z [OOCSS](oocss.md), [BEM](bem.md) a dalších přístupů a nástrojů.  
 
 
 ## Předpoklady {#predpoklady}
 
-- Design vašeho projektu je navržený komponentově a systematicky. Výjimky jsou možné, ale nesmí být moc časté. 
+- Design vašeho projektu je vymyšlený komponentově a systematicky, ideálně podle principů [atomického designu](pattern-lab.md). Výjimky jsou možné, ale nesmí být moc časté. 
 - Píšete čisté nebo preprocesorové CSS, nikoliv [CSS v JS](https://www.vzhurudolu.cz/podcast/77-css-v-js).
-- Nepíšete CSS pomocí výlučně pomocí [užitkových tříd](https://www.vzhurudolu.cz/podcast/103-podcast-fakturoid-css).
+- Styly nezapisujete výlučně pomocí [užitkových tříd](https://www.vzhurudolu.cz/podcast/103-podcast-fakturoid-css).
 
 ## Doporučené nástroje {#nastroje}
 
 - Píšeme čisté CSS nebo pomocí [preprocesorů](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1). Doporučuji dnes převládající Sass v konvenční SCSS syntaxi.
-- Kód zpracovává postprocesor ([PostCSS](https://postcss.org/)) a sestavovací nástroje ([Grunt](grunt.md), [Gulp](https://gulpjs.com/)). Díky tomu můžeme dělat automaticky různé hacky v kódu, které není slušné dělat ručně: Například minifikaci nebo přidávání prefixů.
-- Při kompilaci nastavujeme Source Maps, abychom v prohlížeči viděli napojení na zdrojové soubory.
-- [Prettier](https://prettier.io/) nám automaticky opravuje chyby v kódu ještě před commitem.
-- Pro kontrolu psaní používáme [Stylelint](stylelint.md), nejlépe [v mé výchozí konfiguraci](https://github.com/machal/example-css-architecture/blob/master/.stylelintrc).
-- Pro sjednocení nastavení editorů používáme [EditorConfig](http://editorconfig.org/).  
-
+- Kód zpracovává postprocesor ([PostCSS](https://postcss.org/)) a sestavovací nástroje ([Grunt](grunt.md), [Gulp](https://gulpjs.com/)). Díky tomu můžeme automaticky dělat různé hacky v kódu, které není pěkné dávat do čteného kódu: Například minifikaci nebo přidávání [prefixů](prefix.md).
+- Při kompilaci nastavujeme [Source Maps](https://webdesign.tutsplus.com/tutorials/how-to-use-source-maps-for-better-preprocessor-debugging--cms-22735), abychom v prohlížeči viděli napojení na zdrojové soubory.
+- Pro sjednocení nastavení editorů používáme [EditorConfig](http://editorconfig.org/). 
+- [Prettier](https://prettier.io/) nám automaticky opravuje formátování v kódu ještě před commitem.
+- Pro kontrolu psaní používáme [Stylelint](stylelint.md), nejlépe [v mé výchozí konfiguraci](https://github.com/machal/example-css-architecture/blob/master/.stylelintrc). 
+<!-- AdSnippet -->
 
 ## 1) Obecná pravidla {#1}
 
@@ -28,6 +28,9 @@ Tyhle zásady psaní vycházejí z [OOCSS](oocss.md), [BEM](bem.md) a dalších 
 Bereme ohled na kaskádu, hlavně [specifičnost a pořadí selektorů](css-jazyk-problemy.md), a také na globální povahu jazyka.
 
 ```scss
+
+// Cilem je, aby vsechny nadpisy mely velikost 1.25rem
+// a varianta pouzivana v .box pak velikost 1.5rem.
 
 // Spatne:
 
@@ -55,13 +58,6 @@ Bereme ohled na kaskádu, hlavně [specifičnost a pořadí selektorů](css-jazy
 ```
 
 
-
-
-
-
-
-
-
 ## 1.2) Nevytváříme zbytečně konstrukce neobsažené v CSS {#1-konstrukce}
 
 Pokud to není nezbytně nutné nebo to výrazně nepomáhá čitelnosti kódu, netvoříme proprietární funkce v preprocesorech. CSS umí číst všichni, na rozdíl od specifických konstrukcí. V deklarativní části píšeme jednoduchý kód co nejvíce podobný běžnému CSS.
@@ -81,17 +77,17 @@ Pokud to není nezbytně nutné nebo to výrazně nepomáhá čitelnosti kódu, 
 }
 ```
 
-Jsou ale samozřejmě opodstatněná použití mixinů – v programátorské části. Například při generování mřížky layoutu, animací a dalších extrémně se opakujících částech kódu.
+Jsou ale samozřejmě opodstatněná použití mixinů – v programátorské části kódu. Například při generování mřížky layoutu, animací a dalších extrémně se opakujících částí stylů.
 
 
 ## 2) Soubory a struktura {#2}
 
 ### 2.1) Kód rozdělujeme do malých souborů  {#2-atomicke-soubory}
 
-Jeden problém řeší jeden soubor. Vyhýbáváme se souborům míchajícím více funkcí nebo o délce větší než 200 řádků kódu.
+Jeden problém řeší jeden soubor. Vyhýbáme se souborům míchajícím více komponent, funkcí nebo o délce větší než 200 řádků kódu.
 
 
-### 2.2) Soubory umísťujeme do adresářů podle kategorií, v nichž specificita roste a počet dotčených souborů se snižuje {#2-kategorie}
+### 2.2) Soubory umísťujeme do adresářů podle kategorií, v nichž specificita roste a počet dotčených HTML elementů se snižuje {#2-kategorie}
 
 Tipy pro metody organizace: [jednoduché projekty](https://www.vzhurudolu.cz/blog/29-organizace-css-2014#adresarova-struktura-css-zdrojaku). Složitější podle [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
 
@@ -113,10 +109,11 @@ Další doporučení:
 - V adresáři se zdrojovým CSS máme jeden hlavní soubor. Všechny ostatní jsou v adresářích. Víme tak, který otevřít jako první. Doporučuji jej pojmenovat `index.scss`.
 - Atomické soubory sestavovacím nástrojem skládáme do větších kvůli efektivitě při rychlosti načítání.
 
+<!-- AdSnippet -->
 
 ## 3) Psaní komponent {#3}
 
-### 3.1 OOCSS: používáme objektový zápis {#3-OOCSS}
+### 3.1) OOCSS: používáme objektový zápis {#3-OOCSS}
 
 Držíme se hlavních pravidel:
 
@@ -127,7 +124,7 @@ Držíme se hlavních pravidel:
 
 Vyhneme se tak možným problémům s kolizí komponent nebo jejich částí. Více je v textu o [OOCSS](oocss.md).
 
-```
+```scss
 // Spatne:
 
 .page-cart .box ul > li { … }
@@ -138,7 +135,7 @@ Vyhneme se tak možným problémům s kolizí komponent nebo jejich částí. V�
 ```
 
 
-### 3.2 BEM: pojmenováním odlišujeme bloky, elementy a modifikátory {#3-BEM}
+### 3.2) BEM: pojmenováním odlišujeme bloky, elementy a modifikátory {#3-BEM}
 
 Pomůže nám to jednoznačně určit typ třídy už z HTML nebo dokumentace. Více je v textu o [BEM](bem.md).
 
@@ -156,7 +153,8 @@ Pomůže nám to jednoznačně určit typ třídy už z HTML nebo dokumentace. V
 
 Další doporučení:
 
-- Kód složitějších komponent dělíme na deklarativní a programátorský (imperativní). Např. `module.scss` a vedle něj `module-mixins.scss` nebo také `module-variables.scss`.
+- Nepojmenováváme komponenty nebo funkce zkratkami. My si je možná zapamatujeme, ale situaci zase zkomplikujeme ostatním.
+- Kód složitějších komponent dělíme na deklarativní a programátorský (imperativní). Máme tak např. `box.scss` a vedle něj `box-mixins.scss` nebo také `box-variables.scss`. Samozřejmě jen v momentě, kdy si to  množství kódu dotčených částí žádá.
 -  Vycházíme ze vzorové [šablony SCSS souboru](https://gist.github.com/machal/156a47275bdf5f4b8605a4f0656b94f4): Strukturu souboru činíme zjevnější pomocí [Markdown nadpisů](https://fvsch.com/code/markdown-css-comments/). Do hlavičky přidáváme odkaz na dokumentaci. Pod hlavičkou struktura komponenty pro snadnější vstřebání složitějších celků. Části komponent drží pořadí podle metodiky BEM.
 - BEM komponenty lintujeme pomocí [selector-bem-pattern](https://github.com/simonsmith/stylelint-selector-bem-pattern), pluginu do Stylelintu.
 
@@ -180,10 +178,10 @@ Prettier máme nainstalovaný tak, aby nám všechny prohřešky rovnou sám opr
 [Stylelint](stylelint.md) používáme [v této konfiguraci](https://github.com/machal/example-css-architecture/blob/master/.stylelintrc). Příklady nastavení:
 
 - Nejvyšší úroveň zanoření deklarace je 1.
-- Všechny barvy v hexa tvaru musejí být uvedené malými písmeny.
+- Všechny barvy v hexa tvaru musejí být uvedené malými písmeny, lidem se lépe čtou.
 - Nejsou povoleny vendor prefixy.
-- Nejvyšší povolená specificita je 0, 3, 0 – tři třídy.
-- Nejsou povoleny id selektory.
+- Nejvyšší povolená specificita je 0,3,0 – tři třídy.
+- Nejsou povoleny id selektory (např. `#container`).
 - U funkcí a deklarací písem se vždy používají dvojité uvozovky
 
 ### 4.3) Vlastní hodnoty zobecňujeme co nejvíce, pravidla nebo selektory co nejméně  {#4-zobecnovani}
@@ -194,9 +192,9 @@ Zobecňování do lokálních a globálních proměnných je správné:
 // Spatne:
 
 .box {
-  @include f-s(1.25);
-  color: #edef33;
-  @media (min-width: 320px) { … } 
+  @include f-s(1.25); // Tezko rict, co se pod tim skryva
+  color: #edef33;  // Proc zrovna tato barva?
+  @media (min-width: 320px) { … } // Proc zrovna tento breakpoint?
 }
 
 // Dobre:
@@ -210,8 +208,9 @@ Zobecňování do lokálních a globálních proměnných je správné:
 
 Další doporučení:
 
-- Pokročilé vlastnosti preprocesorů jako `@extend` nebo placeholdery pokud možno [vůbec nepoužíváme](https://www.sitepoint.com/avoid-sass-extend/). Mění pořadí v kódu a podobně jako mixiny tvoří proprietární abstrahovanou vrstvu v kódu.
+- Pokročilé vlastnosti preprocesorů jako `@extend` nebo placeholdery pokud možno [vůbec nepoužíváme](https://www.sitepoint.com/avoid-sass-extend/). Obvykle dělají více škody než užitku. Mění například pořadí v kódu a podobně jako mixiny vytvářejí abstrakci v kódu specifickou pro náš projekt.
 - Mixiny používáme jen pokud jsou nezbytně nutné pro pochopení kódu nebo odstranění extrémního opakování deklarací. Třeba pro generování mřížky layoutu nebo u složitějších animací.
+- Direktivy `@include` dáváme na začátek deklarací, jsou důležité.
 
 
 ### 4.3) Šetříme se zanořováním {#4-zanorovani}
@@ -262,7 +261,7 @@ Kód píšeme vždy podle specifikací W3.org. Části, které potřebujeme pro 
 
 Další doporučení:
 
-- Pořadí pravidel: U složitějších dáváme důležité vlastnosti na první místo: pozicování, box model a pak další.
+- Pořadí pravidel: U složitějších deklarací dáváme důležité vlastnosti na první místo: pozicování, box model a pak další.
 - Matematické výrazy zapisujeme vždy v závorkách a s mezerami uvnitř Např. `margin-top: (2 * $gutter);` 
 
 
@@ -270,9 +269,9 @@ Další doporučení:
 
 ### 5.1) Pokud je to potřeba k pochopení důvodu a kontextu, vždy ke kódu píšeme komentář {#5-duvod-kontext}
 
-V jiných jazycích je potřeba okomentovat důvod, v CSS ještě *kontext*. Někdy má na prohlíženou část vliv předcházející. Jindy prohlížená část ovlivňuje následující. Více je v praktické ukázce [v článku](https://www.vzhurudolu.cz/blog/65-css-kod-problemy#2-chybejici-komentare).
+V jiných jazycích je potřeba okomentovat důvod, v CSS ještě *kontext*. Někdy má na prohlíženou část vliv předcházející kód. Jindy prohlížená část ovlivňuje následující. Více je v praktické ukázce [v článku](https://www.vzhurudolu.cz/blog/65-css-kod-problemy#2-chybejici-komentare).
 
-```
+```scss
 // Dobre:
 
 .box {
@@ -283,15 +282,26 @@ V jiných jazycích je potřeba okomentovat důvod, v CSS ještě *kontext*. Ně
 
 Další doporučení:
 
-- Komentáře v kódu píšeme anglicky. Nikdy totiž nevíme, kdo do projektu nastoupí po nás. Pokud vyberete češtinu, pište bez diakritiky. Velká část vývojářů používá anglickou klávesnici.
+- Umísťujte komentáře na nový řádek nad popisovaný kód, nedávejte je vedle něj.
+- Ponechte šířku řádky pro komentáře na maximu 80 znacích, aby se to dobře četlo.
+- Komentáře v kódu píšeme anglicky. Nikdy totiž nevíme, kdo do projektu nastoupí po nás. Pokud vybereme češtinu, píšeme bez diakritiky. Velká část česko-slovenských vývojářů používá anglickou klávesnici.
 - Standardně používáme tiché, preprocesorové komentáře (`// comment`). CSS komentáře (`/* comment */`) jen v hlavičkách souborů kvůli snadnějšímu dohledání v neminifikovaných souborech.
 - Pro výraznější oddělení částí souborů používáme [strukturální komentáře](https://fvsch.com/code/markdown-css-comments/) vycházející z Markdown nadpisů. [Vzor](https://gist.github.com/machal/156a47275bdf5f4b8605a4f0656b94f4). 
 - Nepoužíváme `// TODO` komentáře. V kódu jsou obvykle k ničemu. Zakládáme úkol do systému úkolů.
 - U složitějších komentáře používáme referenci na ovlivněný kód. [Ukázka](https://gist.github.com/machal/0c7503b35688b802a5c53ebcc602c522#file-header-refactor-less-L15-L22).
 
 
+To je vše, děkuji za pozornost a respektujte prosím povahu CSS. 
+
+---
+
 <small markdown="1">
-  Zdroj: [rcss-zasady.md](https://github.com/machal/prirucka/tree/master/content). Jako další obsah ze Vzhůru dolů jej můžete využít pro vlastní účely s dodržením [licence](https://creativecommons.org/licenses/by-nc/3.0/cz/).
+- Verze: 1.5  
+- Autor: Martin Michálek  
+- Zdroj: [rcss-zasady.md](https://github.com/machal/prirucka/tree/master/content)  
+- Náměty na doplnění, diskuze a pull requesty jsou vítány  
+- Stejně jako další obsah ze Vzhůru dolů jej můžete upravit a využít pro vlastní účely s podmínkou dodržení [licence](https://creativecommons.org/licenses/by-nc/3.0/cz/)  
 </small>
 
 
+<!-- AdSnippet -->
