@@ -97,7 +97,7 @@ Nezbývá než se s kaskádou smířit a přizpůsobit tomu dvě věci:
 * *Držet specifičnost co nejníže*  
 To je ostatně jedno z pravidel metodiky [OOCSS](https://www.vzhurudolu.cz/prirucka/oocss), ze kterého pak vychází [BEM](https://www.vzhurudolu.cz/prirucka/bem). V tomto příkladě jsou samozřejmě špatně selektory `.box h2` a `.tabs h2`.
 * *Nastavit pořadí kategorií stylů podle rostoucí specifičnosti*  
-To hlásá například metodika [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/). V tomto příkladu by se hodilo změnit pořadí v kódu tak, aby užitková třída (`.mb-0`) následovala až za komponentami. Je také výhodnější ji uměle zvýšit specificitu.
+To hlásá například metodika [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/). V tomto příkladu by se hodilo změnit pořadí v kódu tak, aby užitková třída (`.mb-0`) následovala až za komponentami.
 
 Lépe napsaný kód vypadá takto:
 
@@ -129,10 +129,12 @@ h2 {
 
 /* helpers.scss */
 
-#container .mb-0 {
+.mb-0 {
    margin-bottom: 0;
 }
 ```
+
+Občas je také výhodnější utilitám zvýšit specificitu nebo použít `!important`. Hlavně v situacích, kdy je přidáváme do starého a nezbedného kódu s nevyzpytatelnou úrovní specificity.
 
 Je dobré používat komponentový přístup a zbavit elementy závislosti na kontejneru. Prostě používat [OOCSS](oocss.md), abychom se vyhnuli problémům s kaskádou.
 
