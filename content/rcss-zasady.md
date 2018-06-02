@@ -284,13 +284,12 @@ V jiných jazycích je potřeba okomentovat důvod, v CSS ještě *kontext*. Ně
 
 Další doporučení:
 
-1. Umísťujte komentáře na nový řádek nad popisovaný kód, nedávejte je vedle něj.
-2. Ponechte šířku řádky pro komentáře na maximu 80 znacích, aby se to dobře četlo.
-3. Komentáře v kódu píšeme anglicky. Nikdy totiž nevíme, kdo do projektu nastoupí po nás. Pokud vybereme češtinu, píšeme bez diakritiky. Velká část česko-slovenských vývojářů používá anglickou klávesnici.
-4. Standardně používáme tiché, preprocesorové komentáře (`// comment`). CSS komentáře (`/* comment */`) jen v hlavičkách souborů kvůli snadnějšímu dohledání v neminifikovaných souborech.
-5. Pro výraznější oddělení částí souborů používáme [strukturální komentáře](https://fvsch.com/code/markdown-css-comments/) vycházející z Markdown nadpisů. [Vzor](https://gist.github.com/machal/156a47275bdf5f4b8605a4f0656b94f4). 
-6. Nepoužíváme `// TODO` komentáře. V kódu jsou obvykle k ničemu. Zakládáme úkol do systému úkolů.
-7. U složitějších komentáře používáme referenci na ovlivněný kód. [Ukázka](https://gist.github.com/machal/0c7503b35688b802a5c53ebcc602c522#file-header-refactor-less-L15-L22).
+1. Ponecháváme šířku řádky pro komentáře na maximu 80 znacích, aby se to dobře četlo.
+2. Komentáře v kódu píšeme anglicky. Nikdy totiž nevíme, kdo do projektu nastoupí po nás. Pokud vybereme češtinu, píšeme bez diakritiky. Velká část česko-slovenských vývojářů používá anglickou klávesnici.
+3. Standardně používáme tiché, preprocesorové komentáře (`// comment`). CSS komentáře (`/* comment */`) jen v hlavičkách souborů kvůli snadnějšímu dohledání v neminifikovaných souborech.
+4. Pro výraznější oddělení částí souborů používáme [strukturální komentáře](https://fvsch.com/code/markdown-css-comments/) vycházející z Markdown nadpisů. [Vzor](https://gist.github.com/machal/156a47275bdf5f4b8605a4f0656b94f4). 
+5. Nepoužíváme `// TODO` komentáře. V kódu jsou obvykle k ničemu. Zakládáme úkol do systému úkolů.
+6. U složitějších komentáře používáme referenci na ovlivněný kód. [Ukázka](https://gist.github.com/machal/0c7503b35688b802a5c53ebcc602c522#file-header-refactor-less-L15-L22).
 
 
 To je vše, děkuji za pozornost a respektujte prosím povahu CSS. 
