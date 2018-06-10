@@ -62,7 +62,7 @@ Jinými slovy: Pokud byste se rozhodli používat `<picture>` pro běžné obrá
 
 ## Podle formátu obrázku
 
-Vybírat obrázky prohlížeče umí i podle formátu. Použijte atribut `type`. Hodí se hlavně pro detekci prohlížečů, které zvládají nový formát WebP. Ten je mimochodem ještě výrazně datově úspornější než JPG, ale ke dni psaní jej podporuje jen Chrome a Opera. [caniuse.com/webp](https://caniuse.com/#feat=webp)
+Vybírat obrázky prohlížeče umí i podle formátu. Použijte atribut `type`. Hodí se hlavně pro detekci prohlížečů, které zvládají nový formát [WebP](webp.md). Ten je mimochodem ještě výrazně datově úspornější než JPG, ale ke dni psaní jej podporuje jen Chrome a Opera. [caniuse.com/webp](https://caniuse.com/#feat=webp)
 
 ```html
 <picture>

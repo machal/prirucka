@@ -106,7 +106,7 @@ Komprimované obrázky jsme zkoušeli nasadit na jednom starším projektu. Udě
 
 Autoři nápadu, Filament Group, svůj zkušební obrázek vkládali dvaapůlkrát větší a kvalitu JPG snížili na 0 %. Výsledný obrázek se pyšnil opět méně než polovinou datového objemu toho původního. [vrdl.in/z7k34](https://www.filamentgroup.com/lab/compressive-images.html)
 
-Asi sami vidíte, že řešení je vhodné jen pro JPG nebo WebP obrázky, kde je možné nastavit ztrátovou kompresi různých úrovní. Typově je pak použití metody vhodné spíše pro fotografie než třeba obrázky s textem, kde by v ostrých hranách mezi barvami byla ztráta kvality viditelná.
+Asi sami vidíte, že řešení je vhodné jen pro JPG nebo [WebP](webp.md) obrázky, kde je možné nastavit ztrátovou kompresi různých úrovní. Typově je pak použití metody vhodné spíše pro fotografie než třeba obrázky s textem, kde by v ostrých hranách mezi barvami byla ztráta kvality viditelná.
 
 
 ## 5. Vlastní řešení pomocí `<img src/data-src>` {#img-data-src}

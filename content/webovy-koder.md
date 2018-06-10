@@ -77,8 +77,8 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 #### Obrázky
 
 * Obecné pojmy: vektory, bitmapy, komprese, alfaprůhlednost, nástroje pro optimalizaci.
-* Rozdíly mezi JPG, GIF, PNG, WebP, SVG.
-* **[nové] **[Responzivní obrázky](https://www.vzhurudolu.cz/prirucka/responzivni-obrazky): [srcset a sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](https://www.vzhurudolu.cz/prirucka/picture). ([školení](https://www.vzhurudolu.cz/kurzy/pokrocily-responzivni-design))
+* Rozdíly mezi JPG, GIF, PNG, [WebP](webp.md), SVG(svg.md).
+* **[nové] **[Responzivní obrázky](responzivni-obrazky.md): [srcset a sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes), [`<picture>`](https://www.vzhurudolu.cz/prirucka/picture). ([školení](https://www.vzhurudolu.cz/kurzy/pokrocily-responzivni-design))
 
 #### SVG
 
