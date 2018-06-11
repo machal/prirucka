@@ -63,7 +63,7 @@ Podobné zkušenosti mám i z jiných testů a klientských projektů. Není vý
 
 Jinak [obecné studie od Googlu](https://developers.google.com/speed/webp/) říkají, že WebP je menší následovně
 
-- u bezstrátových obrázků typu PNG o 26 %
+- u bezztrátových obrázků typu PNG o 26 %
 - u ztrátových obrázků typu JPG o 25-34 %
 
 
