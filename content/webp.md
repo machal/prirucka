@@ -73,6 +73,6 @@ Necháme si poradit od skvělého průvodce [images.guide](https://images.guide/
 
 - Grafické aplikace: Sketch, Pixelmator nebo GIMP mají přímý export, Photoshop a další nástroje od Adobe jej nemají, ale existuje [plugin](https://github.com/fnordware/AdobeWebM).
 - Na příkazové řádce: Oficiální [libwebp](https://developers.google.com/speed/webp/docs/using) nebo třeba plugin typu [imagemin-webp](https://github.com/imagemin/imagemin-webp) pro [Grunt](grunt.md), Gulp či jiné sestavovače. 
-- Na příkazové řádce: Oficiální [libwebp](https://developers.google.com/speed/webp/docs/using) nebo třeba plugin typu [imagemin-webp](https://github.com/imagemin/imagemin-webp) pro [Grunt](grunt.md), Gulp či jiné sestavovače. 
+
 
 <!-- AdSnippet -->
