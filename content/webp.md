@@ -50,6 +50,21 @@ Chrome a jeho parta tady stáhnou jen WebP, zbývající třetina uživatelů do
 
 Pokud toto řešení nemůžete nasadit, je zde ještě například možnost detekce na serveru nebo [přes .htaccess](https://github.com/vincentorback/WebP-images-with-htaccess). Řešení s `<picture>` ale bude výkonnostně nejefektivnější.
 
+
+Detekci podpory formátu WebP, ale i jeho jednotlivých vlastností, pro obrázky linkované z CSS lze obstarat knihovnou [Modernizr](https://modernizr.com/download). Zápis v CSS by pak mohl vypadat takto:
+
+```css
+.box {
+  background-image: url("image.jpg");
+}
+
+.webp .box {
+  background-image: url("image.webp");
+}
+```
+
+Jednoduchý [detekční skript](https://developers.google.com/speed/webp/faq#in_your_own_javascript) nabízí také Google na stránkách o WebP.
+
 Má kvůli WebP smysl zdvojovat obrázky? Záleží od situace, ale hlavně u větších webů se to myslím velmi vyplatí.
 
 
