@@ -46,11 +46,13 @@ Jak vidíte, ukazuje mi to možné zásadnější problémy se spravovatelností
 O pravidlech si ještě něco řekneme, vydržte. Teď se chci vrátit k možným způsobům využití a tedy i instalace. Stylelint je Node.js balíček, takže nabízí všechny obvyklé způsoby kamarádění:
 
 * Na [příkazové řádce](https://stylelint.io/user-guide/cli/). 
-* [V editorech](https://stylelint.io/user-guide/complementary-tools/#editor-plugins): nabízí se Sublime, Atom, VS Code, Vim a Emacs.
+* [V editorech](stylelint-editory.md): nabízí se Sublime, Atom, VS Code, Vim a Emacs.
 * Jako [plugin pro sestavovače](https://stylelint.io/user-guide/complementary-tools/#build-tool-plugins) typu Grunt, Gulp nebo Webpack.
 * Jako [plugin pro PostCSS](https://stylelint.io/user-guide/postcss-plugin/).
 
-Na příkazové řádce jej občas používám, k tomu se vrátím. Využití v editoru trochu spoléhá na aktivitu konkrétních vývojářů v týmu, ale z pohledu efektivity je nejvýhodnější. 
+Na příkazové řádce jej občas používám, k tomu se vrátím. 
+
+Využití v editoru trochu spoléhá na aktivitu konkrétních vývojářů v týmu, ale z pohledu efektivity je nejvýhodnější. 
 
 ## Použití s Grunt pluginem
 

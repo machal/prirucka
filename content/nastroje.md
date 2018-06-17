@@ -1,4 +1,4 @@
-# Nástroje co používám pro frontend kodéřinu
+# Nástroje, které používám pro frontend kodéřinu
 
 Sublime Text, DevTools, Grunt, Browserstack, Graphic, Photoshop Elements a další.
 
