@@ -37,10 +37,6 @@ Minifikovat CSSka umí i jiné nástroje. CSSnano je ale navržený pro PostCSS,
 
 <!-- AdSnippet -->
 
-### LegaCSSy: verze CSS bez Media Queries
-
-Užitečný nástroj Robina Pokorného pokud řešíte responzivní design ve starších  starších Explorerech. [Github](https://github.com/robinpokorny/grunt-legacssy).
-
 ### Styleguide: generování dokumentace ze stylů
 
 Styledocco nebo KSS, které tahle úloha využívá, vytvářejí příručky stylů rovnou z CSS nebo zdrojáků napsaných v preprocesorech. [Github](https://github.com/indieisaconcept/grunt-styleguide).

@@ -59,10 +59,6 @@ Jak na **tabulky se zaoblenými rohy**? Na tabulky s `border-collapse: collapse`
 Podpora v prohlížečích
 ----------------------
 
-Podpora v moderních prohlížečích je bezproblémová. Pokud v osmičkovém Exploreru zaoblené rohy nutně potřebujete, použijte [css3pie.com](http://css3pie.com/), ale pozor na neblahý vliv na výkonnost stránky.
-
-Velmi tedy doporučuji strategii nulového fallbacku. Uživatelé starších prohlížečů prostě zakulacené rohy neuvidí, a co oči nevidí, to srdce nebolí.
+Podpora v moderních prohlížečích je bezproblémová. Velmi tedy doporučuji strategii nulového fallbacku. Uživatelé starších prohlížečů prostě zakulacené rohy neuvidí, a co oči nevidí, to srdce nebolí.
 
 Pokud vám v některých prohlížečích pod zaobleným rohem prosvítá barva pozadí, přidejte `background-clip: padding-box`. [vrdl.in/ls2uc](http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed)
-
-MSIE9 sice `border-radius` podporuje, ale není je možné kombinovat s vlastností `filter` používanou například pro barevné přechody. Dá se to vyřešit nastavením stejného `border-radius` a `overflow: hidden` pro rodičovský element.

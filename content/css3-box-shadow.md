@@ -92,17 +92,6 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 
 Živá ukázka příkladu je na [cdpn.io/e/FGtbu](https://cdpn.io/e/FGtbu).
 
-### Internet Explorer 8
+### Starší prohlížeče
 
-V IE8 můžete stín nechat vykreslit pomoc proprietární vlastnosti `filter`. Například:
-
-```css
-filter: progid:DXImageTransform.Microsoft.Shadow(color='#cccccc',
-  Direction=145, Strength=3);
-```
-
-Samozřejmě ne všechny typy stínů takto nahradíte.
-
-Vykreslovat stíny ve starších Explorerech umí i polyfill [css3pie.com](http://css3pie.com/).
-
-Obvykle si ovšem u stínů vystačíte se strategií nulového fallbacku.
+V IE8 můžete stín nechat vykreslit pomoc proprietární vlastnosti `filter`. Obvykle si ovšem u stínů vystačíte se strategií nulového fallbacku.

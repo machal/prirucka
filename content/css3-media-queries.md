@@ -204,18 +204,6 @@ Vývojáři si dělí kód podle typu zařízení: Například do `mobile.css`, 
 Jediný rozumný hlavní způsob organizace souborů se styly je podle komponent uživatelského rozhraní, jako jsou navigace, tlačítka atd. Píšete totiž kód pro jednu komponentu, nikoliv pro jeden bod zlomu. Pokud je to pro vás nové, čtěte můj blogpost o organizaci CSS. [vrdl.cz/b/29-organizace-css-2014](https://www.vzhurudolu.cz/blog/29-organizace-css-2014)
 
 
-## Podpora ve starších prohlížečích: nejlépe s Respond.js
-
-Internet Explorer 8 a starší, budiž jim země lehká, neumějí ani základní vlastnosti médií z CSS3 Media Queries. Pokud to na svém projektu potřebujete řešit, doporučuji použít polyfill Respond.js. Je odzkoušený a dostatečně rychlý. Používá jej například i populární frontend framework Bootstrap. [vrdl.in/respond](https://github.com/scottjehl/Respond)
-
-```html
-<!--[if lte IE 8]>
-<script src="respond.js"></script>
-<![endif]-->
-```
-
-Dejte si pozor na místo vložení. Skript by měl být hned za odkazem na CSS soubor.
-
 ## Media Queries v Javascriptu
 
 V Javascriptu používejte funkci `matchMedia()`, která přijímá stejné podmínky jako CSS:
@@ -226,4 +214,4 @@ if (matchMedia('only screen and (max-width: 40em)').matches) {
 }
 ```
 
-Častou chybou je detekce podle šířky nebo výšky okna a následné spoléhání na událost `onresize`. Je to v kódu zbytečně složité a při zmenšování nebo zvětšování okna výkonnostně problematické. `matchMedia()` sice opět nemá podporu v IE8 a starších, ale na to máme polyfill, který je také součástí Respond.js. [vrdl.in/matchm](https://github.com/paulirish/matchMedia.js/)
+Častou chybou je detekce podle šířky nebo výšky okna a následné spoléhání na událost `onresize`. Je to v kódu zbytečně složité a při zmenšování nebo zvětšování okna výkonnostně problematické. 
