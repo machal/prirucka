@@ -133,7 +133,12 @@ Lidé totiž dotykové obrazovky notebooků a podobných zařízení neovládaj�
 
 I u těchto zařízení jsou tedy nejsnáze dosažitelné kraje uživatelského rozhraní. Jen nezapomeňte, že je u nich uživatelům potřeba nechat trochu volného místa pro rolování stránky.
 
-V jednom se tedy dotyky na všechna zařízení shodují. Většinou před ostatními prsty upřednostňujeme ovládání palcem. Palce jsou přesné a pro mobilní zařízení univerzálně použitelné prsty. 
+V jednom se tedy dotyky na všechna zařízení shodují. Většinou před ostatními prsty upřednostňujeme ovládání palcem. Palce jsou přesné a pro mobilní zařízení univerzálně použitelné prsty. Primárně bychom tedy měli rozhraní navrhovat pro ně.
+
+## Z „touch first“ rozhraní profitují všichni
+
+Nerad bych, aby zapadla důležitá věc. Pokud navrhneme jednotné uživatelské rozhraní a uzpůsobíme je hlavně dotykovému ovládání palci, budou profitovat i majitelé dalších ovládacích prvků: ukazováčků nebo klidně prostředníčků, ale hlavně kurzorů ovládaných myší. Větší aktivní plocha znamená větší pohodlí při ovládání rozhraní.
+
 
 <div class="f-6 web-only" markdown="1">
   *Text je součástí kapitoly „Návrh rozhraní v éře mobilů“ knihy [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/ebook-responzivni).*
