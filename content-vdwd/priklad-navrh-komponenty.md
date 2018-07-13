@@ -122,7 +122,7 @@ Je dobré ale na tomto místě zopakovat, že děláme prototypování *designu*
 Snad byly na příkladu dobře vidět výhody prototypů přímo v kódu, o kterých jsem už psal.
 
 * Bylo to *brzy v prohlížeči*, takže jsme na nevýhody původně vybraného řešení nepřišli až při drahé technické implementaci.
-* Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom CodePen mohli testovat na uživatelích.
+* Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom CodePen mohli testovat s uživateli.
 * Kód je zčásti *znovu použitelný* a při následné implementaci jej použijeme jako základ.
 
 Jde ovšem pořád jen o mou designérsko-kodérskou hypotézu, kterou bych měl ověřit uživatelským testováním. To je ale téma, které se nám do knížky už nevejde. Zájemce odkážu na už zmíněný kurz „Human-Centered Design: Design zaměřený na člověka“, který je dostupný zdarma. [seduo.cz/human-centered-design](https://www.seduo.cz/human-centered-design)
