@@ -95,7 +95,9 @@ Tady bychom mohli skončit, ale dlužím vám ještě poznámku k přídavnému 
 
 ## Adaptivní web
 
-Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Potřebujeme například řešit rychlost načítání nebo měníme pracovní postupy. Mimo jiné potřebujeme poslat každému zařízení jiný obrázek. Nebo zvýraznit telefonní číslo jen na mobilech. [vrdl.cz/b/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
+Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Dnes už nestačí přizpůsobit rozvržení stránky a mediální obsah pružnému rozvržení. 
+
+Máme zde také řadu situací, kdy je potřeba měnit věci už na serveru:  Často například v kontextu řešení rychlosti načítání. Můžeme také potřebovat poslat každému zařízení jiný obrázek. Nebo zajistit, aby telefonní číslo bylo aktivní jen na mobilech. Zájemci najdou řešení toho posledního v článku „Průvodce odkazy na telefonní čísla“ na Vzhůru dolů. [vrdl.cz/b/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
 
 Téhle širší kategorii řešení můžeme říkat adaptivní webdesign. 
 
@@ -118,6 +120,8 @@ Ono na tom vlastně v dlouhodobé perspektivě nezáleží. Fáze webdesignu, ve
 Slovem *responzivní* se totiž dnes už hlavně vyhraňujeme vůči předchozímu způsobu tvorby webů. *Responzivní* je tedy více pojmenování pro aktuální způsob tvorby. Pro aktuální etapu webdesignu. A tahle etapa skončí.
 
 Za pár let už slova „responzivní“ nebo „adaptivní“ potřebovat nebudeme. Všechny weby budou responzivní, jen budované prostředky adaptivního designu. Nebude responzivní webdesign, zůstane zase jen *webdesign*. 
+
+Mimochodem, adaptivní webdesign popsal a příklady moc hezky doplnil Aaron Gustafson v knížce, jejíž název byste neuhádli. „Adaptive Web Design“. [adaptivewebdesign.info](https://adaptivewebdesign.info/)
 
 <p class="ebook-only">
   Pojmologii už ale uzavřeme. V další kapitole budeme pracovat na příkladu konkrétního (responzivního) webu, takže nás čeká praxe. Začít ale musíme zeširoka, protože rozumný návrh (responzivního) uživatelského rozhraní vzniká až na základě informací získaných z analytické fáze projektu. Víte vy co? Pojďme si raději povědět něco o tom, jak se dneska tvoří weby. Slibuji, že to bude stručné.
