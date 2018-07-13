@@ -70,8 +70,6 @@ Používat `rem` je výhodné i z pohledu vývojáře:
 - Šířka layoutu nastavená v `rem` bude dodržovat [optimální délku textu](typografie.md), i když si uživatel písmo zvětší.
 - `rem` vám pomohou při [autorském „zoomování“ dokumentu](rem-em-zoom.md) na určitých velikostech okna prohlížeče.
 
-Nevýhoda `rem` tkví ve faktu, že jej nepodporuje Explorer 8 a starší. To ale jde vyřešit automatickým přidáním `px` řešení, například pomocí nástroje PixRem. [vrdl.in/ivuk8](https://www.npmjs.com/package/pixrem)
-
 
 ### Proč tady nepoužít `px`?
 
