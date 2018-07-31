@@ -59,7 +59,7 @@ AMP neslibuje jen rychlejší zobrazení. On slibuje zobrazení okamžité. Prot
 
 …a taky AMP přidal několik vychytávek navíc:
 
-* Hostování u Google
+* Umístění stránky na CDN u Google
 * Přednačtení od Google
 
 Výsledek není vůbec marný. Takový nějaký efekt to má:
@@ -96,7 +96,7 @@ A teď pár čísel:
 </div>  
 
 <figcaption markdown="1">    
-*Tabulka: Srování Speed Indexů různých verzí detailů článků. Běžný web, pak AMP verze na hostingu u běžného webu, AMP na hostingu u Google. To poslední je měřeno s dostatečným časem na přednačtení. V odkazech na číslech jsou zdrojové testy z WebpageTest.org*
+*Tabulka: Srování Speed Indexů různých verzí detailů článků. Běžný web, pak AMP verze na hostingu u běžného webu, AMP na CDN cache u Google. To poslední je měřeno s dostatečným časem na přednačtení. V odkazech na číslech jsou zdrojové testy z WebpageTest.org*
 </figcaption> 
 
 </figure>
@@ -130,7 +130,7 @@ I na „normálním“ webu můžete použít lazyloading obrázků, zakázat si
 
 ### Nevyřešil: Rychlý server
 
-AMP vám jej nabídne (stránky se hostují přímo na Googlím CDN), ale není důvod si podobně skvěle zoptimalizovat servírování vašeho „normálního webu“.
+AMP vám jej nabídne (stránky si Google stáhne přímo na svou CDN cache), ale není důvod si podobně skvěle zoptimalizovat servírování vašeho „normálního webu“.
 
 ### Vyřešil: Přednačtení
 
