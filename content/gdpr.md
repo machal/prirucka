@@ -74,9 +74,12 @@ Obojí rozebereme. Nejprve ale ke způsobu komunikace těchto věcí na webu. [M
 2. Bublina se stručným souhrnem podmínek pro tuto konkrétní situaci.
 3. Plné znění podmínek na informativní stránce „Zásady ochrany osobních údajů“.
 
-![image alt text](image_1.png)
-
-*TODO Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: **[https://codepen.io/machal/pen/PeJPNx?editors=110*0](https://codepen.io/machal/pen/PeJPNx?editors=1100)
+<figure>
+<img src="dist/images/original/gdpr-3-kroky.jpg" alt="">
+<figcaption markdown="1">    
+*Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: [https://codepen.io/machal/pen/PeJPNx?editors=1100](https://codepen.io/machal/pen/PeJPNx?editors=1100)*
+</figcaption> 
+</figure>
 
 Druhou informační vrstvu – bublinu po najetí myši – je možné řešit také laickým shrnutím na cílové stránce se souhlasem ke zpracování osobních údajů.
 
@@ -117,9 +120,14 @@ Vzorové dokumenty:
 
 Aktivní souhlas potřebujete především v situacích, kdy po uživateli chcete osobní údaje, které jste dříve neměli.
 
-*TODO obrázek s příklady*
+Příkladem může být přihlášení k newsletteru, registrace, objednávka, odeslání příspěvku do diskuze nebo recenze produktu.
 
-Jasné příklady najdete [v onom dokumentu](https://docs.google.com/document/d/1gECJnkfHlYe58EHg4af-QAxqqD1HnMAXnaJHzEAS0Sk/edit#) od Shopsysu a APEKu: přihlášení k newsletteru, registrace, objednávka, odeslání příspěvku do diskuze nebo recenze produktu.
+<figure>
+<img src="dist/images/original/gdpr-shopsys.jpg" alt="">
+<figcaption markdown="1">    
+*Obrázek: Ukázky formulářů, kde potřebujete aktivní souhlas. Zdroj [APEK & ShopSys](https://docs.google.com/document/d/1gECJnkfHlYe58EHg4af-QAxqqD1HnMAXnaJHzEAS0Sk/edit#)*
+</figcaption> 
+</figure>
 
 GDPR tady zpřísňuje podmínky, jaké musí souhlas splňovat. Musí totiž být:
 
