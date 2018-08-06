@@ -1,6 +1,6 @@
 # GDPR pro webaře: Všechno, co o tom vím (s dohledem advokáta)
 
-O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmů tedy opadla. Pořád ale chodím na weby, které tu věc nijak neřeší. 
+O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmů tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší. 
 
 Proto jsem se rozhodl dokončit i svůj článek, který mám rozepsaný mnoho měsíců. Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
 
@@ -39,13 +39,19 @@ Zdá se mi, že obecně z diskuze vypadává, že webaři byse letos měli zabý
 
 Osobní údaj je informace nebo sada informací, na základě které můžete identifikovat konkrétní osobu.
 
-Někde jsem viděl zmínku, že e-mail osobní údaj není. Problém je v tom, že sice skutečně nemusí osobním údajem být, ale v drtivé většině případů jím naopak bude. Takový *smudla89@seznam.cz* nemusí být osobním údajem, pokud ho nespojíte s konkrétním člověkem. Pokud však víte o „Smudlovi“ cokoliv dalšího, o osobní údaj se nejspíš jednat bude.  *franta.vomacka@firma-xyz.cz* už ale osobní údaj určitě je, protože jde o konkrétního zaměstnance konkrétní firmy. Nic z toho ale ve chvíli sběru e-mailů nevíte, takže e-mail za osobní údaj považovat musíte.
+### Příklad s e-mailem
 
-GPDR osobní údaje dělí do skupin:
+Někde jsem viděl zmínku, že e-mail osobní údaj není. Problém je v tom, že sice skutečně nemusí osobním údajem být, ale v drtivé většině případů jím naopak bude. 
 
-* *Obecné osobní údaje*
+Takový *smudla89@seznam.cz* nemusí být osobním údajem, pokud ho nespojíte s konkrétním člověkem. Pokud však víte o „Smudlovi“ cokoliv dalšího, o osobní údaj se nejspíš jednat bude.  *franta.vomacka@firma-xyz.cz* už ale osobní údaj určitě je, protože jde o konkrétního zaměstnance konkrétní firmy. 
+
+Nic z toho ale ve chvíli sběru e-mailů nevíte, takže e-mail za osobní údaj považovat musíte.
+
+### 2 skupiny osobních údajů podle GPDR
+
+1. *Obecné osobní údaje*  
 Jméno, e-mailová adresa, telefonní číslo, rodné číslo, IP adresa, geolokace nebo fotka. Pro firmy i tzv. organizační údaje, kterými jsou například e-mailová adresa, telefonní číslo či různé identifikační údaje vydané státem.
-* *Zvláštních kategorie osobních údajů*
+1. *Zvláštních kategorie osobních údajů*  
 Informace o rasovém či etnickém původu, politických názorech, náboženském nebo filozofickém vyznání, členství v odborech, o zdravotním stavu, sexuální orientaci a trestních deliktech či pravomocném odsouzení. Zvláštní kategorie podléhají [přísnějšímu režimu zpracování](https://www.uoou.cz/5-zvlastni-kategorie-osobnich-udaju-citlive-udaje/d-27274/p1=4744). 
 
 Viz také [článek od Frank Bold Advokáti](http://www.fbadvokati.cz/cs/clanky/541-co-je-co-neni-a-co-bude-osobni-udaj-podle-gdpr). 
@@ -70,7 +76,7 @@ Obojí rozebereme. Nejprve ale ke způsobu komunikace těchto věcí na webu. [M
 
 ![image alt text](image_1.png)
 
-*Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: **[https://codepen.io/machal/pen/PeJPNx?editors=110*0](https://codepen.io/machal/pen/PeJPNx?editors=1100)
+*TODO Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: **[https://codepen.io/machal/pen/PeJPNx?editors=110*0](https://codepen.io/machal/pen/PeJPNx?editors=1100)
 
 Druhou informační vrstvu – bublinu po najetí myši – je možné řešit také laickým shrnutím na cílové stránce se souhlasem ke zpracování osobních údajů.
 
@@ -96,12 +102,16 @@ Co by měl souhlas obsahovat?
 
 Je tam ještě hodně dalších náležitostí. Je samozřejmě lepší si stránku nechat udělat od právníka. Já využil [Dostupného advokáta](https://dostupnyadvokat.cz/spolecnosti/gdpr).
 
+<small markdown="1">
+
 Vzorové dokumenty:
 
 * [e-legal.cz: Vzor souhlasu se zpracováním osobních údajů podle GDPR ](http://www.e-legal.cz/ke-stazeni/vzor-souhlasu-se-zpracovanim-osobnich-udaju-podle-gdpr)
 * [Legito.cz: Souhlas s poskytnutím osobních údajů](https://www.legito.cz/souhlas-s-poskytnutim-osobnich-udaju) (199 Kč)
 * [Shoptet: Univerzální podmínky ochrany osobních údajů](https://www.shoptet.cz/univerzalni-podminky-ochrany-osobnich-udaju/)
 * [APEK: vzorové dokumenty](https://www.apek.cz/dokumenty-a-videa) (jen pro členy, členství za 1 000 Kč měsíčně)
+
+</small>
 
 ### Aktivní souhlas {#aktivni-souhlas}
 
@@ -113,11 +123,11 @@ Jasné příklady najdete [v onom dokumentu](https://docs.google.com/document/d/
 
 GDPR tady zpřísňuje podmínky, jaké musí souhlas splňovat. Musí totiž být:
 
-1. *Aktivní*
+1. *Aktivní*  
 V rozhraní je potřeba mít nezatržený checkbox „Souhlasím se zpracováním osobních údajů“. Nic jako předem aktivní zatržítko nebo pravidlo „mlčení je souhlas“. 
-2. *Svobodný*
+2. *Svobodný*  
 Informace, proč data sbírám, nesmí být například součástí obchodních podmínek. Takže neprojde něco jako „Souhlasím s podmínkami“, čímž by uživatel odsouhlasil obchodní podmínky i zpracování osobních údajů.
-3. *Transparentní*
+3. *Transparentní*  
 Uživatel musí vědět, jaké údaje, za jakým účelem a komu se dávají. Proto jde zde odkaz na dokument s detailními informacemi o zpracování osobních údajů. Volitelně také druhá vrstva informací v bublině.
 
 
@@ -190,11 +200,11 @@ Na lokálních strojích a při vývoji obecně by vývojáři měli používat 
 
 Další věci jsou spíše na úrovni doporučení. Poskládal jsem je z různých zdrojů:
 
-* *Šifrování*
+* *Šifrování*  
 Doporučení ukládat osobní údaje zašifrované v databázi nebo třeba na šifrovaných discích zaměstnanců. 
-* *HTTPS*
+* *HTTPS*  
 Doporučuje se přejít. Ale vy už jste [jistě přešli](https.md), i kvůli [HTTP/2](http-2.md). 
-* *Bezpečnostní audit*
+* *Bezpečnostní audit*  
 Je určitě vhodné spojit sladění webů s GDPR s nějakým auditem. Nejčastěji jsem narážel na doporučení zabezpečit web v souladu [s nějčastějšími 10 chybami podle OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10).
 
 
@@ -210,11 +220,14 @@ Předpokládám, že většina z vás také nějaké menší weby provozuje. Pro
 1. Ujistěte se, že máte smlouvy s cloudovými službami (většina je má [na webu](https://help.shoptet.cz/topic/gdpr-zpracovatelske-smlouvy/)) a ostatními subjekty, kterým je předáváte.
 1. Upravte frontend a backend webů, jak jsem psal v článku.
 
+<small markdown="1">
+
 Odkazy
 
 * [Clipsan.com: 5 kroků ke GDPR](https://clipsan.com/blog/gdpr-bloger-digitalni-podnikatel/)
 * [Shoptet: Checklist pro provozovatele e-shopů](https://help.shoptet.cz/topic/gdpr-checklist-potrebnych-opatreni/)
 
+</small>
 
 ## Newslettery a databáze e-mailů {#newslettery}
 
@@ -236,7 +249,9 @@ Jak jsem psal, tohle řeší předpis ePrivacy, který bude aktuální až nejsp
 
 To je vše. Děkuji vám za přečtení a doufám, že vám text pomohl. 
 
-## Odkazy
+<small markdown="1">
+
+Odkazy
 
 * [Shopsys + APEK - GDPR a doporučení pro provozovatele e-shopů](https://docs.google.com/document/d/1gECJnkfHlYe58EHg4af-QAxqqD1HnMAXnaJHzEAS0Sk/edit) (Google docs)
 * [Brožura od Clipsan](https://clipsan.com/blog/gdpr-cesky/)
@@ -247,5 +262,7 @@ To je vše. Děkuji vám za přečtení a doufám, že vám text pomohl.
 * [Celé GDPR](http://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:32016R0679&from=EN) (PDF)
 * [GDPR audit od Dostupného advokáta](https://dostupnyadvokat.cz/spolecnosti/gdpr) (9 600 Kč)
 * [Stránka ÚOOÚ o GDPR](https://www.uoou.cz/gdpr-obecne-narizeni/ds-3938/p1=3938)
+
+</small>
 
 <!-- AdSnippet -->
