@@ -1,4 +1,4 @@
-# GDPR pro webaře: Všechno, co o tom vím (s dohledem advokáta)
+# GDPR pro webaře: Všechno, co o tom vím (pod dohledem advokáta)
 
 O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmů tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší. 
 
