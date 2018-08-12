@@ -1,8 +1,8 @@
 # GDPR pro webaře: Všechno, co o tom vím (pod dohledem advokáta)
 
-O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmů tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší. 
+O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmu tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší. 
 
-Proto jsem se rozhodl dokončit i svůj článek, který mám rozepsaný mnoho měsíců. Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
+Proto jsem se rozhodl dokončit i článek, který mám rozepsaný mnoho měsíců. Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
 
 Obsah: [Co je GDPR](#co-je-gdpr) – [Rozdíl mezi GDPR a ePrivacy](#gdpr-eprivacy) – [Co je osobní údaj](#osobni-udaj) – [Jak se to týká frontendu a designu](#frontend) – [Jak se to týká backendu](#backend) – [Jak se to týká majitelů webů](#majitele-webu) [Newslettery](#newslettery) – [Souhlas se sledováním a „cookie lišta“](#cookie-lista)
 
@@ -16,7 +16,7 @@ Vůbec si nemyslím, že jde o nějakou zbytečnou buzeraci, jak občas slýchá
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Spousta lidí: “<a href="https://twitter.com/hashtag/GDPR?src=hash&amp;ref_src=twsrc%5Etfw">#GDPR</a> je zbytečné.”<br><br>Tož jasně. Do doby, než uniknou a budou zneužita právě jejich data.</p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/989460397257261057?ref_src=twsrc%5Etfw">April 26, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Je samozřejmě pravda, že v provádění předpisu na webech je pořád hrozně moc nejasností, ale to už tak s velkými normami bývá.
+Je samozřejmě pravda, že v zavádění předpisu na weby je pořád dost nejasností, ale tak už to s velkými normami bývá.
 
 Nařízení GDPR vstoupilo ve všech zemích EU do platnosti 25. května. V ČR nahrazuje [zákon č. 101/2000 Sb. o ochraně osobních údajů](https://www.zakonyprolidi.cz/cs/2000-101).
 
@@ -29,7 +29,7 @@ Nejde navíc, minimálně v ČR, o žádnou revoluci. Jak říká Ondřej Preuss
 
 <!-- AdSnippet -->
 
-Zdá se mi, že obecně z diskuze vypadává, že webaři byse letos měli zabývat ne jedním, ale dvěma evropskými nařízeními:
+Zdá se mi, že obecně z diskuze vypadává, že webaři by se letos měli zabývat ne jedním, ale dvěma evropskými nařízeními:
 
 * [GDPR](https://www.gdpr.cz/gdpr/heslo/gdpr/) se zabývá ochranou osobních údajů. Je aktuální teď a pojednává o něm tento článek.
 * [ePrivacy](https://www.gdpr.cz/gdpr/heslo/eprivacy/) se zabývá ochranou všech dat na internetu. Jednoznačně ošetřuje pravidla například pro zpracovávání cookies (a známou „[cookie lištu](https://www.vzhurudolu.cz/blog/36-eu-cookies)“). To bude aktuální prý až někdy na podzim či v zimě 2018.
@@ -41,9 +41,9 @@ Osobní údaj je informace nebo sada informací, na základě které můžete id
 
 ### Příklad s e-mailem
 
-Někde jsem viděl zmínku, že e-mail osobní údaj není. Problém je v tom, že sice skutečně nemusí osobním údajem být, ale v drtivé většině případů jím naopak bude. 
+Někde jsem viděl zmínku, že e-mail osobní údaj není. Problém je v tom, že opravdu nemusí osobním údajem být, ale v drtivé většině případů jím bude. 
 
-Takový *smudla89@seznam.cz* nemusí být osobním údajem, pokud ho nespojíte s konkrétním člověkem. Pokud však víte o „Smudlovi“ cokoliv dalšího, o osobní údaj se nejspíš jednat bude.  *franta.vomacka@firma-xyz.cz* už ale osobní údaj určitě je, protože jde o konkrétního zaměstnance konkrétní firmy. 
+Takový *smudla89@seznam.cz* nemusí být osobním údajem, pokud ho nespojíte s konkrétním člověkem. Pokud však víte o „Smudlovi“ cokoliv dalšího, o osobní údaj se nejspíš jednat bude.  *franta.vomacka@firma-xyz.cz* už ale osobní údaj jednoznačně je, protože jde o konkrétního zaměstnance konkrétní firmy. 
 
 Nic z toho ale ve chvíli sběru e-mailů nevíte, takže e-mail za osobní údaj považovat musíte.
 
@@ -77,13 +77,13 @@ Obojí rozebereme. Nejprve ale ke způsobu komunikace těchto věcí na webu. [M
 <figure>
 <img src="dist/images/original/gdpr-3-kroky.jpg" alt="">
 <figcaption markdown="1">    
-*Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: [https://codepen.io/machal/pen/PeJPNx?editors=1100](https://codepen.io/machal/pen/PeJPNx?editors=1100)*
+*Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: [cdpn.io/e/PeJPNx](https://codepen.io/machal/pen/PeJPNx?editors=1100)*
 </figcaption> 
 </figure>
 
 Druhou informační vrstvu – bublinu po najetí myši – je možné řešit také laickým shrnutím na cílové stránce se souhlasem ke zpracování osobních údajů.
 
-[ÚOOÚ](https://www.uoou.cz/) podle Shopsysu navíc v případě zákaznických registrací  výrazně doporučuje takzvaný *double opt-in*. To znamená: registraci ještě potvrzovat pomocí kliknutí na odkaz v e-mailu, který bychom uživateli měli zaslat. 
+Úřad pro ochranu osobních údajů ([ÚOOÚ](https://www.uoou.cz/)) podle Shopsysu navíc v případě zákaznických registrací  výrazně doporučuje takzvaný *double opt-in*. To znamená: registraci ještě potvrzovat pomocí kliknutí na odkaz v e-mailu, který bychom uživateli měli zaslat. 
 
 ### Informativní stránka: Zásady zpracování osobních údajů {#informativni-stranka}
 
@@ -92,7 +92,7 @@ APEK doporučuje mít dvě stránky o zpracování osobních údajů:
 * pro objednávky (nebo jiné uzavření smlouvy)
 * pro obchodní sdělení (newsletter, registrace, věrnostní systém…)
 
-Měli byste navíc umět zpětně zjistit, kterou verzi podmínek konkrétní uživatel odsouhlasil. Takže byste měli znění stránek verzovat a ukládat si datum odsouhlasení uživatelem. V jednodušších případech se dá daná verze dohledat v historii verzovacícho systému. Větší weby budou potřeboval logování data, času a verze odsouhlasených podmínek.
+Měli byste navíc umět zpětně zjistit, kterou verzi podmínek konkrétní uživatel odsouhlasil. Takže byste měli znění stránek verzovat a ukládat si datum odsouhlasení uživatelem. V jednodušších případech se dá daná verze dohledat v historii verzovacího systému. Větší weby budou potřeboval logování data, času a verze odsouhlasených podmínek.
 
 Co by měl souhlas obsahovat?
 
@@ -132,18 +132,18 @@ Příkladem může být přihlášení k newsletteru, registrace, objednávka, o
 GDPR tady zpřísňuje podmínky, jaké musí souhlas splňovat. Musí totiž být:
 
 1. *Aktivní*  
-V rozhraní je potřeba mít nezatržený checkbox „Souhlasím se zpracováním osobních údajů“. Nic jako předem aktivní zatržítko nebo pravidlo „mlčení je souhlas“. 
+V rozhraní je potřeba mít nezatržený checkbox „Souhlasím se zpracováním osobních údajů“. Nic jako předem aktivní zatržítko nebo pravidlo „mlčení je souhlas“ vám už neprojde.
 2. *Svobodný*  
-Informace, proč data sbírám, nesmí být například součástí obchodních podmínek. Takže neprojde něco jako „Souhlasím s podmínkami“, čímž by uživatel odsouhlasil obchodní podmínky i zpracování osobních údajů.
+Informace, proč data sbírám nesmí být například součástí obchodních podmínek. Takže neprojde něco jako „Souhlasím s podmínkami“, čímž by uživatel odsouhlasil obchodní podmínky i zpracování osobních údajů.
 3. *Transparentní*  
-Uživatel musí vědět, jaké údaje, za jakým účelem a komu se dávají. Proto jde zde odkaz na dokument s detailními informacemi o zpracování osobních údajů. Volitelně také druhá vrstva informací v bublině.
+Uživatel musí vědět, jaké údaje, za jakým účelem a komu se dávají. Proto u zatržítka má být odkaz na dokument s detailními informacemi o zpracování osobních údajů. Volitelně také druhá vrstva informací v bublině.
 
 
 ### Oprávněný zájem: o souhlas není potřeba žádat {#opravneny-zajem}
 
 Pokud už mezi provozovatelem webu a uživatelem existuje nějaký vztah (realizovaná objednávka), pak je možné o další využití jeho údajů nežádat, protože existuje [oprávněný zájem](https://mladypodnikatel.cz/gdpr-co-to-je-opravneny-zajem-k-uzivani-osobnich-udaju-t34667) provozovatele. 
 
-Je samozřejmě ideální, když do oprávněného zájmu toho můžete zahrnout co nejvíce.
+Je samozřejmě ideální, když toho do oprávněného zájmu můžete zahrnout co nejvíce.
 
 Pokud to chápu správně, mohlo by být takto: Objednáte si u nás například [školení](https://www.vzhurudolu.cz/kurzy) a uvedete přitom e-mail. Můj oprávněný zájem je poslat vám na e-mail organizační instrukce před akcí a feedback dotazník po ní. 
 
@@ -188,7 +188,7 @@ Měla by se uchovávat podrobná historie putování každé osobní informace v
 
 ### Možnost předat uživateli všechny informace, které o něm máte uložené
 
-Z práva na přístup k osobním údajům vyplývá, že uživatel by měl mít možnost vědět, kdo má k jejich informacím přístup a proč.  Do 30 od jeho žádosti byste měli zvládnout připravit a předat zákazníkovi veškeré informace, které o něm máte uložené.
+Z práva na přístup k osobním údajům vyplývá, že uživatel by měl mít možnost vědět, kdo má k jejich informacím přístup a proč.  Do 30 dní od jeho žádosti byste měli zvládnout připravit a předat zákazníkovi veškeré informace, které o něm máte uložené.
 
 ### Možnost smazat vše o uživateli, kromě toho, co vyžadují jiné zákony
 
@@ -213,7 +213,7 @@ Doporučení ukládat osobní údaje zašifrované v databázi nebo třeba na š
 * *HTTPS*  
 Doporučuje se přejít. Ale vy už jste [jistě přešli](https.md), i kvůli [HTTP/2](http-2.md). 
 * *Bezpečnostní audit*  
-Je určitě vhodné spojit sladění webů s GDPR s nějakým auditem. Nejčastěji jsem narážel na doporučení zabezpečit web v souladu [s nějčastějšími 10 chybami podle OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10).
+Je určitě vhodné spojit sladění webů s GDPR s nějakým bezpečnostním auditem. Nejčastěji jsem narážel na doporučení zabezpečit web v souladu [s nějčastějšími 10 chybami podle OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10).
 
 
 ## Pro majitele webů: Co udělat pro sladění s GDPR? {#majitele-webu}
