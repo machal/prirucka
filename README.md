@@ -98,6 +98,10 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
+### CodePen
+
+Ukázky vkládáme v `<iframe>`. Doporučované vložení přes HTML není kompatibiliní s AMP.
+
 ### Tabulka
 
 Jednodušší:

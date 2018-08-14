@@ -44,8 +44,8 @@ A teď náš čtverec slavnostně použijeme:
 
 Zavoláme původní objekt a rovnou si jej obarvíme, to pomocí `fill="LimeGreen"`.
 
-<p data-height="265" data-theme-id="light" data-slug-hash="BrKvwv" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - basics" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/BrKvwv/">SVG &lt;use&rt; - basics</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='SVG <use> - basics' src='//codepen.io/machal/embed/BrKvwv/?height=300&theme-id=502&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/BrKvwv/'>SVG &lt;use&rt; - basics</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 Odkaz na Codepen: [cdpn.io/e/BrKvwv](https://codepen.io/machal/pen/BrKvwv?editors=1100)
 
@@ -74,8 +74,8 @@ Tím byste zdroj schovali před lidmi, ale i stroji. Taková slepecká čtečka 
 
 Všimněte si, že jsem zde také nepoužil skupinu `<g>`, ale symbol `<symbol>`. Ten se totiž podobně jako třeba sekce `<def>` v prohlížečích nevykresluje. Hodí se mi to pro případ, kdy se stránka zobrazuje [bez CSS](weby-bez-css.md) a já nechci zdroj vykreslit ani v tomto případě.
 
-<p data-height="265" data-theme-id="light" data-slug-hash="WzwPdG" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - invisible source in <def>" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/WzwPdG/">SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='SVG <use> - invisible source in <def>' src='//codepen.io/machal/embed/WzwPdG/?height=300&theme-id=502&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/WzwPdG/'>SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 Odkaz na Codepen: [cdpn.io/e/WzwPdG](https://codepen.io/machal/pen/WzwPdG?editors=1100)
 
@@ -103,8 +103,8 @@ Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Dr
 
 V dalším Codepenu si vyzkoušejme všechny možnosti. 
 
-<p data-height="265" data-theme-id="light" data-slug-hash="WzwPdG" data-default-tab="html,result" data-user="machal" data-embed-version="2" data-pen-title="SVG <use> - invisible source in <def>" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/WzwPdG/">SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='SVG <use> - invisible source in <def>' src='//codepen.io/machal/embed/WzwPdG/?height=300&theme-id=502&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/WzwPdG/'>SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 - `fill` není na původním objektu definován, takže jej mohou klony používat.
 - `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz.

@@ -13,8 +13,8 @@ Nevýhoda je v aktuální podpoře, ale to bude brzy vyřešeno. V době psaní 
 
 Podobné demo asi budete znát z mých textů [o flexboxu](css3-flexbox.md). 
 
-<p data-height="130" data-theme-id="light" data-slug-hash="QaxGqX" data-default-tab="result" data-user="machal" data-embed-version="2" data-pen-title="CSS Grid Basics demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/QaxGqX/">CSS Grid Basics demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='CSS Grid Basics demo' src='//codepen.io/machal/embed/QaxGqX/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/QaxGqX/'>CSS Grid Basics demo</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 Řekněme, že naše HTML vypadá takto:
@@ -94,8 +94,8 @@ Vlastnosti `grid-template-columns` a `grid-template-rows`. Akceptují různé je
 
 Vytvoří to layout, kde první a poslední sloupec zabírá čtvrtinu šířky rodiče. První a poslední řádek pak `100px` z jeho výšky. Prostřední pak zbytek. Je to vidět v živé ukázce: 
 
-<p data-height="265" data-theme-id="light" data-slug-hash="QmqOeY" data-default-tab="result,css" data-user="machal" data-embed-version="2" data-pen-title="CSS Grid: Combining units in template-columns/rows" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/QmqOeY/">CSS Grid: Combining units in template-columns/rows</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='CSS Grid: Combining units in template-columns/rows' src='//codepen.io/machal/embed/QmqOeY/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/QmqOeY/'>CSS Grid: Combining units in template-columns/rows</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 ### Definice mezery mezi buňkami mřížky {#mezera}
