@@ -226,7 +226,7 @@ Je ale nutné, aby vývojář převzal kontrolu a způsob servírování sjednot
 Příklad z praxe? Kolegové z VašeČočky.cz snížili nasazením FontFaceObserveru hodnotu metriky Start Render Time na polovinu (13,2 s → 6,6 s).
 
 
-### Zvažte nasazení technologie AMP {#amp}
+### Zvažte nasazení technologie AMP {#amp-heading}
 
 [Accelerated Mobile Pages Project](https://www.ampproject.org/) je technologie pro tvorbu speciální verze stránek od Google.
 
