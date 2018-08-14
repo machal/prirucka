@@ -98,7 +98,7 @@ Ty většinou čekají stabilní verzi mod_http2. Na [cn130.com](http://cn130.co
 Vyjádření některých dalších hostingů:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr"><a href="https://twitter.com/machal">@machal</a> Současná stabilní verze platformy Debian/apache, kterou používáme, HTTP/2 nepodporuje. S přechodem na Debian 9 s HTTP/2 počítáme.</p>&mdash; IGNUM (@ignum) <a href="https://twitter.com/ignum/status/801353087189454848">November 23, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 V podobném duchu mě psal Matěj Kloubek z [Českého hostingu](http://www.cesky-hosting.cz/):
 
