@@ -50,7 +50,7 @@ Nic z toho ale ve chvíli sběru e-mailů nevíte, takže e-mail za osobní úda
 ### 2 skupiny osobních údajů podle GPDR
 
 1. *Obecné osobní údaje*  
-Jméno, e-mailová adresa, telefonní číslo, rodné číslo, IP adresa, geolokace nebo fotka. Pro firmy i tzv. organizační údaje, kterými jsou například e-mailová adresa, telefonní číslo či různé identifikační údaje vydané státem.
+Například jméno, e-mailová adresa, telefonní číslo, rodné číslo, IP adresa, geolokace, fotka nebo různé identifikační údaje vydané státem jako je DIČ.
 1. *Zvláštních kategorie osobních údajů*  
 Informace o rasovém či etnickém původu, politických názorech, náboženském nebo filozofickém vyznání, členství v odborech, o zdravotním stavu, sexuální orientaci a trestních deliktech či pravomocném odsouzení. Zvláštní kategorie podléhají [přísnějšímu režimu zpracování](https://www.uoou.cz/5-zvlastni-kategorie-osobnich-udaju-citlive-udaje/d-27274/p1=4744). 
 
@@ -152,6 +152,8 @@ Je ale můj oprávněný zájem vám následně zasílat občasné novinky ke š
 Dle mého bych vám tedy newsletter posílat mohl, pokud bych vám to dal dopředu vědět v některé vrstvě informací o zpracování osobních údajů. Více k tomu píší [na UOOU.cz](https://www.uoou.cz/gdpr-a-nbsp-primy-elektronicky-marketing/d-30715).
 
 Co je a co není oprávněný zájem je ale potřeba vždy posuzovat podle konkrétní situace, což zmiňuje Ondřej Preuss [v rozhovoru na MladýPodnikatel.cz](https://mladypodnikatel.cz/gdpr-co-to-je-opravneny-zajem-k-uzivani-osobnich-udaju-t34667). Prostě se často bez právníků neobejdeme.
+
+Aktualizace: Podle neoficiálních informací [advokátů z eLegal od ÚOOÚ](https://www.e-legal.cz/aktuality/marketingove-vejicky-a-gdpr-urad-povoluje-oteze) se zdá, že do oprávněného zájmu toho bude možné zahrnout daleko více: Například při poskytnutí e-mailu výměnou za e-book zdarma bylo potřeba aktivní svolení, protože do hry nevstoupily peníze. Nyní ÚOOÚ bude zřejmě povolovat zasílání obchodních sdělení i výměnou za poskytnutí produktu zdarma. Aktivní souhlas je potřeba jen v případě, že se transakcí z vašeho uživatele nestane zákazník – např. při poskytnutí slevy nebo odemknutí článku za poskytnutí e-mailu. V každém případě je ale potřeba mít možnost se snadno odhlásit. V příkladu posílání newsletteru účastníkům školení by tedy vše bylo v pořádku i bez aktivního souhlasu.
 
 
 ### Profilování jako další způsob získání osobních informací {#profilovani}
