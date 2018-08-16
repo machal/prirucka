@@ -215,7 +215,7 @@ Doporučení ukládat osobní údaje zašifrované v databázi nebo třeba na š
 * *HTTPS*  
 Doporučuje se přejít. Ale vy už jste [jistě přešli](https.md), i kvůli [HTTP/2](http-2.md). 
 * *Bezpečnostní audit*  
-Je určitě vhodné spojit sladění webů s GDPR s nějakým bezpečnostním auditem. Nejčastěji jsem narážel na doporučení zabezpečit web v souladu [s nějčastějšími 10 chybami podle OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10).
+Je určitě vhodné spojit sladění webů s GDPR s nějakým bezpečnostním auditem. Nejčastěji jsem narážel na doporučení zabezpečit web v souladu [s nejčastějšími 10 chybami podle OWASP](https://www.owasp.org/index.php/Top_10-2017_Top_10).
 
 
 ## Pro majitele webů: Co udělat pro sladění s GDPR? {#majitele-webu}
