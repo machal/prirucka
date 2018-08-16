@@ -1,16 +1,20 @@
-# Rozlišení displeje a jak jej zjistit?
+# Rozlišení obrazovky ve webdesignu
 
-Rozlišení obrazovky z pohledu webaře moc zajímavé není, protože weby vykreslujeme do okna prohlížeče. Nicméně – možnosti, jak toto změřit pochopitelně máme.
+Rozlišení displeje z pohledu webaře moc zajímavé není, protože weby vykreslujeme a přizpůsobujeme velikosti okna prohlížeče. Nicméně – možnosti jak rozlišení změřit pochopitelně máme.
+
+<!-- AdSnippet -->
+
+Obsah: [Zjištění JavaScriptem](#JS) – [Zjištění v CSS](#CSS) – [Statistiky rozlišení obrazovky](#statistiky) – [Full HD, 2K, 4K a další označení](#zkratky)
 
 
 ## Zjištění JavaScriptem {#JS}
 
 - `screen.width` a `screen.height` vrací rozlišení obrazovky.
-- `screen.availWidth` a `screen.availHeight` vrací *dostupné* rozlišení obrazovky, tedy bez hlavního panelu operačního systému. 
+- `screen.availWidth` a `screen.availHeight` vrací rozlišení *dostupné* pro okna aplikací, obvykle tedy bez hlavního panelu operačního systému. 
 
-Na desktopu bývají obvykle hodnoty `availWidth` nebo `availHeight` trochu menší, na mobilech mívají obě kategorie – rozlišení i dostupné rozlišení – stejné hodnoty. Vyzkoušejte si to na CodePenu: https://codepen.io/machal/pen/gjNpYg
+Na desktopu bývají obvykle hodnoty `availWidth` nebo `availHeight` trochu menší, na mobilech mívají obě kategorie – plné i dostupné rozlišení – stejné hodnoty. Vyzkoušejte si to na CodePenu: [cdpn.io/e/gjNpYg](https://codepen.io/machal/pen/gjNpYg)
 
-Připomínám, že veškerá čísla dostanete v [CSS pixelech](css-pixel.md), nikoliv v hardwarovém rozlišení. Pokud byste chtěli to, musíte násobit přepočítací hodnotou `devicePixelRatio`. Například:
+Připomínám, že veškerá čísla dostanete v [CSS pixelech](css-pixel.md), nikoliv v hardwarovém rozlišení. Pokud byste chtěli hardwarové pixely, musíte násobit přepočítací hodnotou `devicePixelRatio`. Například:
 
 ```javascript
 window.screen.width * window.devicePixelRatio
@@ -20,12 +24,14 @@ window.screen.width * window.devicePixelRatio
 
 [Media Queries](css3-media-queries.md) nabízí dotazy na šířku a výšku rozlišení obrazovky – `min-device-width` a `min-device-height`.
 
-To jen pro pořádek. Ale v CSS je to snad ještě méně užitečné než v JavaScriptu. Daleko zajímavější je cílit na velikost okna.
+To jen pro pořádek. V CSS to ale je ještě méně užitečné než v JavaScriptu. Daleko zajímavější je cílit na velikost okna.
 
-Při psaní článku jsem navíc zjistil, že se W3C tyto vlastnosti chystá odstranit ze specifikace. S tím se plně ztotožňuji. Zdroj je [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/device-width).
+Při psaní článku jsem navíc zjistil, že se W3C tyto vlastnosti chystá odstranit ze specifikace. S tím se plně ztotožňuji. Můj zdroj je [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/device-width).
 
 
 ## Statistiky rozlišení obrazovky {#statistiky}
+
+<!-- AdSnippet -->
 
 Jak už jsem zmiňoval, zase tak zajímavé rozlišení displejů pro webaře není. 
 
@@ -34,7 +40,7 @@ Jedno z pravidel dobrého [responzivního designu](https://www.vzhurudolu.cz/res
 Web je ale plný statistik rozlišení displejů. Za červenec 2018 napříkld [Gemius uvádí](http://ranking.gemius.com/cz/ranking/resolutions/) následující pořadí:
 
 | Rozlišení    | Podíl     |
-|:------------:|:---------:|
+|:-------------|:----------|
 | 360 × 640    |   20.80 % |
 | 1366 × 768   |   15.63 % |
 | 1920 × 1080  |   13.47 % |
@@ -48,10 +54,10 @@ Navíc – daleko zajímavější je sledovat, s jak velkými okny prohlížeče
 
 ## Full HD, 2K, 4K a další označení  {#zkratky}
 
-Tohle je často předmětem hovorů, proto zde ještě pro pořádek zmíním zkratky, kterými se některá rozlišení označují:
+Tohle je často předmětem diskuzí, proto zde ještě pro pořádek zmíním zkratky, kterými se některá rozlišení označují:
 
 | Rozlišení    | Zkratka   |
-|:------------:|:---------:|
+|:-------------|:----------|
 | 1024 × 768   | XGA/XVGA  |
 | 1366 × 768   | HD Ready  |
 | 1280 × 720   | HD        |
@@ -62,3 +68,5 @@ Tohle je často předmětem hovorů, proto zde ještě pro pořádek zmíním zk
 Zdrojem mi byla [Wikipedie](https://cs.wikipedia.org/wiki/Rozli%C5%A1en%C3%AD), kde těch krásných zkratek najdete ještě daleko více.
 
 Platí to i pro rozlišení videa nebo pro televize, ale to už je trochu mimo náš obor, tedy pokud nás nezajímají [HbbTV a chytré televize](https://www.vzhurudolu.cz/podcast/105-podcast-hbbtv).
+
+<!-- AdSnippet -->
