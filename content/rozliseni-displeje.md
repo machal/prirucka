@@ -37,7 +37,7 @@ Jak už jsem zmiňoval, zase tak zajímavé rozlišení displejů pro webaře ne
 
 Jedno z pravidel dobrého [responzivního designu](https://www.vzhurudolu.cz/responzivni-design) je – navrhujte stránku tak aby fungovala od nějakých 320 (raději ale 240) až do alespoň 2500 CSS pixelů.
 
-Web je ale plný statistik rozlišení displejů. Za červenec 2018 napříkld [Gemius uvádí](http://ranking.gemius.com/cz/ranking/resolutions/) následující pořadí:
+Web je ale plný statistik rozlišení displejů. Za červenec 2018 například [Gemius uvádí](http://ranking.gemius.com/cz/ranking/resolutions/) následující pořadí:
 
 | Rozlišení    | Podíl     |
 |:-------------|:----------|
