@@ -59,13 +59,12 @@ Tohle je často předmětem diskuzí, proto zde ještě pro pořádek zmíním z
 | Rozlišení    | Zkratka   |
 |:-------------|:----------|
 | 1024 × 768   | XGA/XVGA  |
-| 1366 × 768   | HD Ready  |
 | 1280 × 720   | HD        |
 | 1920 × 1080  | Full HD   |
 | 2048 × 1080  | 2K        |
 | 3840 × 2160  | 4K        |
 
-Zdrojem mi byla [Wikipedie](https://cs.wikipedia.org/wiki/Rozli%C5%A1en%C3%AD), kde těch krásných zkratek najdete ještě daleko více.
+Zdrojem mi byla [Wikipedie](https://cs.wikipedia.org/wiki/Rozli%C5%A1en%C3%AD) a [Mobilmania](https://www.mobilmania.cz/clanky/konec-zmatku-v-rozliseni-displeju-prehled/sc-3-a-1319962/default.aspx) kde těch krásných zkratek najdete ještě daleko více.
 
 Platí to i pro rozlišení videa nebo pro televize, ale to už je trochu mimo náš obor, tedy pokud nás nezajímají [HbbTV a chytré televize](https://www.vzhurudolu.cz/podcast/105-podcast-hbbtv).
 
