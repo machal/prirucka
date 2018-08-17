@@ -1,23 +1,17 @@
-# Velikost okna prohlížeče a jak zjistit statistiky pro svůj web
+# Velikost okna prohlížeče v CSS a JavaScriptu
 
 Na rozdíl od [rozlišení displeje](rozliseni-displeje.md) dodává pro [responzivní design](https://www.vzhurudolu.cz/responzivni-design) webu velikost okna dost zásadní informaci. Jde o nejdůležitější uživatelský kontext, kterému se weby přizpůsobují.
 
+Podívejme se, jak tuhle hodnotu zjišťovat v [JavaScriptu](#JS) a [CSS](#CSS).
 
-## Zjištění v CSS a JavaScriptu {#CSS-JS}
+<!-- AdSnippet --> 
 
-V CSS máme [Media Queries](css3-media-queries.md), kterými se na šířku nebo výšku ptáme například takto
+## JavaScript {#JS}
 
-```css
-/* Minimální šířka */
-@media only screen and (min-width: 30em) { … }
-/* Maximální výška */
-@media only screen and (max-height: 10em) { … }
-```
-
-V JavaScriptu jsou dvě možnosti.
+Prostřednictvím JavaScriptu se nabízení dvě možnosti. Vybíráme v zásadě podle toho, zda chceme připočítávat rozměry lišty pro rolování stránky.
 
 
-### innerWidth a innerHeight {#JS-innerWidth}
+### Okno: innerWidth a innerHeight {#JS-innerWidth}
 
 Vrací šířku a výšku okna v CSS pixelech včetně rolovátka („scrollbaru“), pokud je přítomné. 
 
@@ -33,7 +27,9 @@ Pokud bychom se bavili [o viewportech](viewport-mobily.md), těmito vlastnostmi 
 V Internet Exploreru to funguje od verze 9. Více informací je [na MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth).
 
 
-### clientWidth a clientHeight {#JS-clientWidth}
+### Dokument: clientWidth a clientHeight {#JS-clientWidth}
+
+<!-- AdSnippet -->
 
 Vrací šířku a výšku prvku v CSS pixelech *bez rozměru* rolovátka („scrollbaru“), pokud je přítomné. 
 
@@ -60,8 +56,20 @@ Rozdíly mezi `innerWidth` a `clientWidth` si můžete vyzkoušet také na mém 
 <iframe height='300' scrolling='no' title='JavaScript: innerWidth vs. clientWidth' src='//codepen.io/machal/embed/rrXNWO/?height=300&theme-id=502&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/rrXNWO/'>JavaScript: innerWidth vs. clientWidth</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> 
 
+## CSS {#CSS}
 
-## Získání velikosti okna z Google Analytics {#google-analytics}
+V CSS máme [Media Queries](css3-media-queries.md), kterými se na šířku nebo výšku ptáme například takto
+
+```css
+/* Minimální šířka */
+@media only screen and (min-width: 30em) { … }
+/* Maximální výška */
+@media only screen and (max-height: 10em) { … }
+```
+
+<!-- AdSnippet -->
+
+
 
 
 
