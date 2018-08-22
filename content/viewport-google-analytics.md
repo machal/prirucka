@@ -1,10 +1,10 @@
 # Google Analytics: S jakými viewporty navštěvují uživatelé můj web?
 
-Velikost okna (nebo viewportu) dodává na rozdíl od [rozlišení displeje](rozliseni-displeje.md) do [responzivního designu](https://www.vzhurudolu.cz/responzivni-design) informaci, bez které se nedá tvořit. 
+Data o velikostech okna (nebo viewportu) dodávají na rozdíl od [rozlišení displeje](rozliseni-displeje.md) do [responzivního designu](https://www.vzhurudolu.cz/responzivni-design) informaci, bez které se nedá rozumně vymýšlet design webu. 
 
 Jde o nejdůležitější uživatelský kontext, kterému se weby přizpůsobují. Mají vliv na tvorbu breakpointů, hojně se s nimi pracuje [v CSS a JavaScriptu](velikost-okna-css-js.md).
 
-Jenže z veřejně dostupných dat tady vyjít nemůžeme: [Gemius](http://ranking.gemius.com/cz/), [Statcounter](http://gs.statcounter.com/) nebo i [Google Analytics](google-analytics-vyvojari.md) standardně nabízí jen přehled pro rozlišení obrazovky, který je webařům tak nějak *na pytel*.
+Jenže z veřejně dostupných dat tady vyjít nemůžeme: [Gemius](http://ranking.gemius.com/cz/), [Statcounter](http://gs.statcounter.com/) nebo i [Google Analytics](google-analytics-vyvojari.md) standardně nabízejí jen přehled pro rozlišení obrazovky, který je webařům tak nějak *na pytel*.
 
 Ukážu vám ale způsob, jak z Google Analytics (GA) data vytáhnout a prezentovat v jakžtakž použitelné podobě. Jako na následujícím obrázku.
 
@@ -34,20 +34,25 @@ Všechna ostatní nastavení klidně ponechte ve výchozím stavu.
 
 V angličtině je to popsáno například na [CSS Tricks](https://css-tricks.com/google-analytics-can-show-screen-resolution-%E2%89%A0-browser-window/).
 
-![Krok 1: Vytvoření vlastního přehledu](dist/images/original/ga-viewport-3.jpg)
+![Krok 1: Vytvoření vlastního přehledu](dist/images/original/ga-viewport-1.jpg)
 
 
 ### 2) Uložte do Google tabulky {#navod-2}
 
 Po otevření reportu (*Přizpůsobení → Vlastní přehledy*) uvidíte přehled po velikostech okna, ale ten vám nicmoc neřekne. 
 
-![Krok 2: Vložení do Google tabulky](dist/images/original/ga-viewport-3.jpg)
+![Krok 2: Vložení do Google tabulky](dist/images/original/ga-viewport-2.jpg)
 
 Já si vše uložil do Google tabulky a dále s tím pracoval tam:
 
 - *Exportovat → Tabulky Google*
 
 Pozor, Analytics mají limit 5 000 řádků exportu. Většinou to nevadí, ale některé projekty to může limitovat. Na to jsem vyzrál [úpravou počtu řádků](https://www.hobo-web.co.uk/how-to-export-more-then-500-rows-to-csv-up-to-50000-rows-google-analytics-tip/) přímo v URL adrese.
+
+<div class="related" markdown="1">
+- [Google Analytics: přidání webu](google-analytics-pridani.md)
+- [Google Analytics: průvodce měřením](google-analytics-vyvojari.md)
+</div>
 
 Tabulka by v tomto kroku měla vypadat [asi takto](https://docs.google.com/spreadsheets/d/1A4AvTM9KejtlG6DFUH0-G1sytm4SZvhnCBMMgn_lBKw/edit?usp=sharing).
 
@@ -76,7 +81,7 @@ Dostali jsme se k docela hezké reprezentaci čísel. Mě by však zajímala dis
 Výsledná tabulka s grafem: [Ukázka](https://docs.google.com/spreadsheets/d/18PHIBsQOsKL7cqiE2fVo2RmmHTAym2C1Fi7An8vJMOw/edit#gid=1063209725).
 
 
-# Graf rozdělení šířky viewportů na vašem projektu {#graf}
+## Graf rozdělení šířky viewportů na vašem projektu {#graf}
 
 <!-- AdSnippet -->
 
@@ -94,11 +99,11 @@ Když například vezmu nastavení breakpointů například ze vcelku rozumného
 * 1 200 - 1 799 pixelů: 35 %
 * 1 800 pixelů a více: 12 %
 
-Tady bych zvažoval, zda breakpointy nenastavit jinak - je zde velmi málo uživatelů s obrazovkami šířky 600-900 pixelů a s velmi velkými displeji. Ale k nastavování breakpointů se ještě vrátím v dalším textu.
+Tady bych zvažoval, zda breakpointy nenastavit jinak – je zde velmi málo uživatelů s obrazovkami šířky 600-900 pixelů a s velmi velkými displeji. Ale k nastavování breakpointů se ještě vrátím v dalším textu.
 
 Dvě poznámky na závěr:
 
 1. Necítím se jako analytický profík, takže pokud máte námět na vylepšení nebo zjednodušení procesu nebo výsledné prezentace, velmi je vítám.
-2. Docela dost by mě zajímaly grafy z vašich projektů - zejména těch s větší návštěvností. Tušítě správně, že se to dost liší projekt od projektu. Budu moc rád, když je nasdílíte.
+2. Docela dost by mě zajímaly grafy z vašich projektů - zejména těch s větší návštěvností. Tušíte správně, že se to dost liší projekt od projektu. Budu moc rád, když je nasdílíte.
 
 <!-- AdSnippet -->

@@ -39,6 +39,8 @@ Někde tam uvidíte i přehled nejpoužívanějších mobilních zařízení, al
 
 ## Tipy pro práci s Analytics
 
+<!-- AdSnippet -->
+
 ### Všechny zásadnější změny zapisujte do poznámek
 
 Analytics disponují výborným nástrojem pro evidenci zásadních změn v historii webu. Poznámky najdete v menu *Administrátor > Výběr dat > Poznámky* nebo přímo v přehledech vpravo po kliknutí na šipku pod grafem. 
@@ -63,6 +65,11 @@ Možnosti jak Analytics debugovat je docela dost:
 ### Single Page apky a měření zhlédnutí „stránky"
 
 Analytics standardně změří zhlédnutí stránky jen při konvenčním postupu, kdy se každá nová stránka načítá se serveru na vlastním URL.
+
+<div class="related" markdown="1">
+- [Google Analytics: jak přidat web](google-analytics-pridani.md)
+- [Google Analytics: statistiky viewportů](viewport-google-analytics.md)
+</div>
 
 Pokud měníte URL z Javascriptu, pak to Analytics nepoznají a novou *pageview* nezapočtou. Musíte jim to výslovně říct. Takže ke každé změně URL javascriptem dávejte kód podobný tomuto:
 
@@ -104,6 +111,8 @@ Data vždy berte s rezervou. I když Analytics umí rozumně odfiltrovat roboty 
 
 ### Co je vlastně ta „návštěva", kterou vidím v rozhraní Analytics? 
 
+<!-- AdSnippet -->
+
 Analytics operují s pojmy uživatel, návštěva a hit, což je například interakce se se stránkou. Jeden uživatel může během dne udělat více návštěv a v rámci každé z nich pak mnoho hitů.
 
 Je důležité vědět, že k ukončení návštěvy a startu nové dochází v případě dvou návštěv na těchto hranicích: půlnoc, 30 minut nečinnosti uživatele, příchodu uživatele z jiného zdroje.
@@ -143,7 +152,7 @@ Jen pozor na *vzorkování*, tedy výběr dat. Při použití segmentu se může
   Na článku spolupracovali: [Daniel Střelec](https://www.danielstrelec.cz/) a [Miroslav Pecka](http://miroslavpecka.cz/).  
 </div>
 
-
+<!-- AdSnippet -->
 
 
 

@@ -11,6 +11,8 @@ Z pohledu vývojáře to je skript umožňující vkládat další skripty. Tag 
 * Z pohledu *markeťáka* výborná věc, která umožní vkládat kódy měřících, remarketingových nebo testovacích služeb přímo do kódu. Tedy bez vývojářů, což má nesporné výhody. Ale těch [důvodů je z pohledu markeťáka více](http://miroslavpecka.cz/blog/5-duvodu-pro-google-tag-manager/).
 * Očima *vývojáře* je to ale potenciální problém, který při špatném nastavení může neblaze ovlivnit rychlost načítání stránky. No a tu by na starost měli mít především vývojáři. Ostatně je v zájmu všech účastníků vývoje webu [rychlost řešit](https://www.vzhurudolu.cz/prirucka/rychlost-nacitani-proc). 
 
+<!-- AdSnippet -->
+
 U svých webů mám plný přístup ke kódu a zároveň jsem nejčastější uživatel Analytics, takže Tag Manager je zbytečná vrstva. Vy ale pravděpodobně budete v jiné situaci a nezbývá, než zvážit pro a proti konkrétní implementace a s analytikem se dohodnout.
 
 ### Pokud se rozhodnete pro Google Tag Managera
@@ -39,6 +41,8 @@ V čem je tahle verze lepší? Klade důraz na rychlost stažení a spuštění 
 Standardně nabízená verze bez značky `<script>` totiž bere až příliš velké ohledy na staré Explorery – osmičku a devítku. Pokud ty ve vaší cílovce netvoří významnou část, použijte vždy tento *rychlejší* kód.
 
 Před časem psal o Analytics kódu optimalizovaném pro rychlost [David Grudl](https://phpfashion.com/rychlejsi-stranky-s-google-universal-analytics). Jeho skript je rovněž asynchronní, ale přidává parametr `defer`. Tím se zajistí neblokující načítání i ve starších Explorerech verze 8 a 9. Jenže se v nich skript spustí [až po rozparsování HTML](http://jecas.cz/async-defer#defer-async), ve kterém mohou být běžné synchronní skripty. Může se tedy stát, že se měření spustí tak pozdě, že se ani nezapočítá. Dávám proto přednost výše uvedenému oficiálnímu asynchronnímu kódu.
+
+<!-- AdSnippet -->
 
 Dále budeme s přidáním nového webu pokračovat přímo v rozhraní Analytics. 
 
@@ -71,6 +75,11 @@ Dále budeme s přidáním nového webu pokračovat přímo v rozhraní Analytic
 * E-shopům také povolte „elektronický obchod“.  
 <small> Opět doporučuji poradit se s analytikem.  
 (*Administrátor > Výběr dat > Nastavení elektronického obchodu*)</small> 
+
+<div class="related" markdown="1">
+- [Google Analytics: průvodce měřením](google-analytics-vyvojari.md)
+- [Google Analytics: statistiky viewportů](viewport-google-analytics.md)
+</div>
 
 Pro své weby si asi vystačíte s jedním účtem. Jednotlivé weby pak máte jako služby. Weby klientů  je vhodné mít každý pod zvláštním účtem, kvůli případnému převodu na jinou osobu.
 
@@ -147,3 +156,5 @@ Podívejte se i na článek [o nástrojích a měření v Analytics](google-anal
 
 <div class="web-only text-center text-small" markdown="1">
 Na článku spolupracovali: [Daniel Střelec](https://www.danielstrelec.cz/) a [Miroslav Pecka](http://miroslavpecka.cz/).</div>
+
+<!-- AdSnippet -->
