@@ -59,7 +59,7 @@ Rozdíly mezi `innerWidth` a `clientWidth` si můžete vyzkoušet také na mém 
 <iframe height='300' scrolling='no' title='JavaScript: innerWidth vs. clientWidth' src='//codepen.io/machal/embed/rrXNWO/?height=300&theme-id=502&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/rrXNWO/'>JavaScript: innerWidth vs. clientWidth</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> 
 
-Asi už jste pochopili, že v dnešním vývoji webů jsou vlastnosti `innerWidth` a `innerHeight` výhodnější, protože na všech platformách dostanete shodné vypočtená čísla.
+Pro zjištění viewportu jsou výhodnější vlastnosti `innerWidth` a `innerHeight`, protože na všech platformách dostanete shodně vypočtená čísla. Pokud potřebujete zjistit velikost prostoru dostupného pro váš design, musíte pracovat s `clientWidth` a `clientHeight`.
 
 
 ## CSS {#CSS}
