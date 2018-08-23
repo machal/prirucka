@@ -154,8 +154,8 @@ Díky tomu neexistuje automatizované řešení pro zpětnou kompatibilitu typu 
 
 Vezměme příklad třísloupcového layoutu z prvního dema na této stránce:
 
-<p data-height="265" data-theme-id="light" data-slug-hash="XZbrEY" data-default-tab="css,result" data-user="machal" data-embed-version="2" data-pen-title="CSS Grid Basics demo (with IE11 support)" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/XZbrEY/">CSS Grid Basics demo (with IE11 support)</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='CSS Grid Basics demo (with IE11 support)' src='//codepen.io/machal/embed/XZbrEY/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/XZbrEY/'>CSS Grid Basics demo (with IE11 support)</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 Začneme tím nejjednodušším. 
 
