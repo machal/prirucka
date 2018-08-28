@@ -43,7 +43,7 @@ Lepším řešením může být nastavení podle textu [The 100% correct way to 
 
 *TODO IMG The 100% correct way to do CSS breakpoints*
 
-Je to lepší řešení, ale problém je v oněch *globálních* statistikách. Ty prostě nemusí pasovat na vaši cílovou skupinu a váš projekt. Úplně nejlepší řešení tedy leží v odvození breakpointů z vlastních dat. 
+Je to lepší řešení, ale problém je v oněch *globálních* statistikách. Ty prostě nemusí pasovat na vaši cílovou skupinu a váš projekt. Úplně nejlepší řešení tedy leží v odvození breakpointů z vlastních dat.
 
 
 ### Breakpointy na míru {#na-miru}
@@ -68,14 +68,14 @@ Z obrázku je hezky vidět, že už tyto dva projekty se v zastoupení cílové 
 
 *Tabulka: Zastoupení šířky viewportů v univerzálních rozmezích designu*
 
-Z tabulky můžeme například vyčíst, že na projektu *Vzhůru dolů* jsou hodně důležité skupina uživatelů s velkými displeji – rozmězí *xl*. U obou projektů jsou pak velmi málo zajímavé skupiny s rozlišeními v rozmezí *sm*. Dává nám to buď informaci o tom, jak moc do jednotlivých skupin investovat naši energii nebo o tom, že máme špatně nastavené body zlomu.
+Z tabulky můžeme například vyčíst, že na projektu *Vzhůru dolů* jsou hodně důležité skupina uživatelů s velkými displeji – rozmezí *xl*. U obou projektů jsou pak velmi málo zajímavé skupiny s rozlišeními v rozmezí *sm*. Dává nám to buď informaci o tom, jak moc do jednotlivých skupin investovat naši energii nebo o tom, že máme špatně nastavené body zlomu.
 
 *TODO: skutečně nastavené body zlomu pro VD.cz*
 
 
 ## Globální a komponentové  body zlomu {#globalni-komponentove}
 
-*TODO*
+*TODO: příklad v jedné komponentě*
 
 Obsahové body zlomu nejčastěji definuji podle obsahu konkrétních komponent. Říkám jim *komponentové*. Jako příklad vezměme záložkovou navigaci, ve které je určitý počet položek, proto layout zapínám až od určité hodnoty:
 
@@ -104,7 +104,21 @@ Globální breakpointy jsou obvykle uložené v nějaké hodnotě sdílené nap�
 
 ## Pojmenování
 
+*TODO:*
+
+* "ipad portrait" je úplně blbě, páč to bude taky spousta jiných zařízení
+* "tablet portrait" je už lepší, ale bude to i třeba menší desktop
+* "md" nebo "medium" je imho nejlepší, viz bootstrap
+
+
 ## Realizace v kódu
+
+*TODO:*
+
+* viz Bootstrap, např. @include media-breakpoint-up(sm) { ... }
+* viz VD
+* Sass MQ https://github.com/sass-mq/sass-mq
+* post-css pro příklad
 
 ## Ne podle zařízení, ale podle obsahu {#podle-obsahu}
 
