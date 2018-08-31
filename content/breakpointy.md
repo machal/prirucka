@@ -1,6 +1,6 @@
-# Breakpointy: jak je vymýšlet, nastavovat a spravovat
+# Breakpointy a rozmezí v responzivním designu
 
-Breakpointy jsou šířky okna (viewportu) prohlížeče, ve kterých se může měnit design webu. Česky jim můžeme říkat *body zlomu designu*.
+Breakpointy jsou velikosti okna ([viewportu](viewport.md)) prohlížeče, ve kterých se může měnit design webu. Česky jim můžeme říkat *body zlomu designu*.
 
 *TODO: obrázek - co je breakpoint a co rozmezí*
 
@@ -10,9 +10,9 @@ Všímám si, že si weboví lidé občas nerozumí v definici „breakpointu“
 
 *Bod zlomu* (v angličtině „breakpoint“): Konkrétní body, ve kterých se design mění. Samotné hodnoty typu 480px, 640px, 768px a tak dále.
 
-Občas se tím slovem ale označuje jiná věc – *rozmezí* platnosti designu („range“). Tím jsou pak myšleny kategorie zařízení a hodnoty typu 0-480px, 481-640px, 641–767px atd.
+Občas se slovem „breakpoint“ ale označuje jiná věc – *rozmezí* platnosti designu („range“). Tím jsou pak myšleny skupiny velikosti viewportů a hodnoty typu 0-480px, 481-640px, 641–767px atd.
 
-Může být proto matoucí, když použijete frázi „breakpoint pro nejmenší displeje“ a myslí te tím hodnoty 0-480px. Mluvíte totiž o „rozmezí“.
+Může být proto matoucí, když použijete frázi „breakpoint pro nejmenší displeje“ a myslíte tím hodnoty 0-480px. Mluvíte totiž o „rozmezí“.
 
 
 ## Jak je vymýšlet: ideálně podle designu a cílové skupiny {#vymysleni}
@@ -21,20 +21,21 @@ Body zlomu a rozmezí platnosti designu je možné buď použít univerzální n
 
 Obecně vám samozřejmě doporučím vymýšlet vlastní, hlavně ze dvou důvodů:
 
-1. Zohlednění cílové skupiny a zastoupení jednotlivých rozlišení v ní. Může se vám stát, že prefabrikované breakpointy u vás nebudou fungovat, protože v cílové skupině máte například velmi málo uživatelů mobilů a hodně uživatelů velkých displejů.
-2. Přihlénutí k vlastnímu navrhu uživatelského rozhraní. Platí, že obsah ovlivňuje design a naopak. Pokud je váš design nestandardní, univerzální breakpointy nemusejí svou roli plnit dobře.
+1. Zohlednění cílové skupiny a zastoupení jednotlivých rozlišení v ní. Může se vám stát, že prefabrikované breakpointy u vás nebudou fungovat, protože v cílové skupině máte například velmi podprůměrně uživatelů mobilů a nadprůměrně uživatelů velkých displejů. Univerzální breakpointy vycházejí z průměrných dat, což vám může být k ničemu.
+2. Přihlénutí k vlastnímu navrhu uživatelského rozhraní. Platí, že obsah ovlivňuje design a naopak. Pokud je váš design něčím výjimečný (což je tak každý druhý), univerzální breakpointy nemusejí svou roli plnit dobře.
 
+Pojďme se ale na ty prefabrikované body zlomu používat. Někdy se hodit mohou.
 
 ### Univerzální breakpointy {#univerzalni}
 
-Nelámat si hlavu body zlomu na míru je často nevyhnutelné. Z voleje dám dva příklady:
+Nelámat si hlavu body zlomu na míru je často jediná cesta. Z voleje dám dva příklady:
 
-– Pracujete na univerzálním systému pro tvorbu webů jako jsou třeba Webnode nebo SolidPixels.
+- Pracujete na univerzálním systému pro tvorbu webů jako jsou třeba Webnode nebo SolidPixels. Prostě nevíte, jak bude vypadat obsah a design jednotlivých webů.
 - Nemáte dost dat. Například proto, že jste v rané fázi řešení a teprve prototypujete.
 
-Nejčastěji se prefabrikované přebírají z populárních frontendových frameworků, jako je Bootstrap. Ten má přednastavené čtyři hodnoty bodů zlomu – *xs* (576 pixelů), *sm* (768), *md* (992) a *lg* (1200).
+Nejčastěji se prefabrikované body zlomu designu přebírají z populárních frontendových frameworků, jako je Bootstrap. Ten má přednastavené čtyři hodnoty – *xs* (576 pixelů), *sm* (768), *md* (992) a *lg* (1200).
 
-Lepším řešením může být nastavení podle textu [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862), který z globálních statistik vytáhl čísla tak, by bylo rozložení rovnoměrnější. Došel k těmto hodnotám:
+Lepším řešením může být nastavení podle textu [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862), který z globálních statistik vytáhl čísla tak, by bylo rozložení viewportů v jednotlivých rozmezích rovnoměrnější. Došel k těmto hodnotám:
 
 - 600px
 - 900px
@@ -43,23 +44,23 @@ Lepším řešením může být nastavení podle textu [The 100% correct way to 
 
 *TODO IMG The 100% correct way to do CSS breakpoints*
 
-Je to lepší řešení, ale problém je v oněch *globálních* statistikách. Ty prostě nemusí pasovat na vaši cílovou skupinu a váš projekt. Úplně nejlepší řešení tedy leží v odvození breakpointů z vlastních dat.
+Je to lepší řešení, ale problém je v oněch *globálních* statistikách. Ty prostě nemusejí pasovat na vaši cílovou skupinu a váš projekt. Úplně nejlepší řešení tedy leží v odvození breakpointů z vlastních dat a vlastního designu.
 
 
 ### Breakpointy na míru {#na-miru}
 
 To, jak je navržené vaše rozhraní, v tuhle chvíli nevím. Můžete ale s mou pomocí zjistit, jak vypadá vaše cílová skupina. Nebo přesněji – rozložení šířek obrazovky v ní.
 
-V zásadě to dnes už jde vytáhnout z Google Anylytics. Je to trochu práce, ale určitě se vám to u větších projektů vyplatí. Návod jsem sepsal do textu: „S jakými viewporty navštěvují uživatelé můj web?“. https://www.vzhurudolu.cz/prirucka/viewport-google-analytics
+V zásadě to dnes už jde vytáhnout z Google Anylytics. Je to trochu práce, ale určitě se vám to u větších projektů vyplatí. Návod jsem sepsal do textu: „S jakými viewporty uživatelé navštěvují můj web?“. [vrdl.cz/p/viewport-google-analytics](https://www.vzhurudolu.cz/prirucka/viewport-google-analytics)
 
 Získáte pak grafy podobné těmto:
 
-*TODO IMG: Rozložení breakpointů na Rekrea a VD.cz*
+*TODO IMG: Rozložení breakpointů na webech cestovky Rekrea a pro můj web Vzhůru dolů za první polovinu roku 2018*
 
 Z obrázku je hezky vidět, že už tyto dva projekty se v zastoupení cílové skupiny liší. Dejme si výsledky do tabulky s breakpointy z článku „The 100% correct way to do CSS breakpoints“.
 
 | Rozmezí v px       | Vzhůru dolů v %   | Rekrea v %  |
-|-------------------:|------------------:|------------:|
+|:------------------|------------------:|------------:|
 | 0-699 (xs)         | 20 %              | 33 %        | 
 | 600-899 (sm)       | 2 %               | 3 %         |
 | 900-1199 (md)      | 5 %               | 13 %        |
@@ -68,10 +69,61 @@ Z obrázku je hezky vidět, že už tyto dva projekty se v zastoupení cílové 
 
 *Tabulka: Zastoupení šířky viewportů v univerzálních rozmezích designu*
 
-Z tabulky můžeme například vyčíst, že na projektu *Vzhůru dolů* jsou hodně důležité skupina uživatelů s velkými displeji – rozmezí *xl*. U obou projektů jsou pak velmi málo zajímavé skupiny s rozlišeními v rozmezí *sm*. Dává nám to buď informaci o tom, jak moc do jednotlivých skupin investovat naši energii nebo o tom, že máme špatně nastavené body zlomu.
+Z tabulky můžeme například vyčíst, že na projektu *Vzhůru dolů* je hodně důležitá skupina uživatelů s velkými displeji – rozmezí *xl*. U obou projektů jsou pak velmi málo zajímavé skupiny s rozlišeními v rozmezí *sm*. Dává nám to informaci o prioritě jednotlivých rozmezí. Prostě víme, jak moc do jednotlivých skupin investovat naši energii.
 
-*TODO: skutečně nastavené body zlomu pro VD.cz*
+*TODO: skutečně nastavené body zlomu pro VD.cz podle designu, viz Evernote*
 
+Tím se dostáváme k dalšímu zajímavého bodu - jak breakpointy pojmenovávat.
+
+## Pojmenování: ideálně abstrakně podle triček {#pojmenovavani}
+
+Přepokládám, že breakpointy máte uložené v proměnné preprocesoru. Vezmu tři příklady pojmenování bodu zlomu na 900px:
+
+* `$breakpoint-ipad-potrait` – Špatně, protože zmiňuje konkrétní zařízení. Platí totiž určitě i pro jiné tablety než iPad.
+* `$breakpoint-tablet-potrait` – Mírně lepší, ale pořád špatně. Bod zlomu se může týkat také mobilu v landscape režimu nebo zmenšehého okna desktopu.
+* `$breakpoint-medium` nebo `$breakpoint-md` – Dle mého nejlepší pojmenování. Je abstraktní, takže do komunikace neplete zavádějící konkrétnosti. A taky je snadno naučitelný a obvyklý. Kromě výrobců triček používá stupnici *xs* (extra small), *sm* (small), *md* (medium), *lg* (large), *xl* (extra large) také Bootstrap a další frontendové frameworky. 
+
+Raději ještě upozorním, že ať jsou breakpointy pojmenované jakkoliv, měl by se na jejich názvosloví domluvit celý tým.
+
+## Realizace v kódu {#kod}
+
+### Jednoduše s preprocesorem {#kod-preprocesor}
+
+Ukládání breakpointů a rozmezí do proměnné preprocesoru velmi doporučuji, zpřehlední to kód a zefektivní psaní. Následuje příklad ze zdrojáků Vzhůru dolů.
+
+Definice breakpointů:
+
+```scss
+$vd-screen-sm:  600px;
+$vd-screen-md:  768px;
+$vd-screen-lg:  1100px;
+```
+
+Definice rozmezí:
+
+```scss
+$vd-screen-sm-up:  "only screen and (min-width: #{$vd-screen-sm})";
+$vd-screen-md-up:  "only screen and (min-width: #{$vd-screen-md})";
+$vd-screen-lg-up:  "only screen and (min-width: #{$vd-screen-lg})";
+
+$vd-screen-sm-down:  "(max-width: #{$vd-screen-sm - 1})";
+$vd-screen-md-down:  "(max-width: #{$vd-screen-md - 1})";
+$vd-screen-lg-down:  "(max-width: #{$vd-screen-lg - 1})";
+```
+
+A ještě použití:
+
+```scss
+@media #{$vd-screen-sm-up} { … }
+```
+
+Takhle jednoduchá implementace vám u větších projektů nemusí stačit. Pojďme se podívat na další.
+
+*TODO:*
+
+* viz Bootstrap, např. @include media-breakpoint-up(sm) { ... }
+* Sass MQ https://github.com/sass-mq/sass-mq
+* post-css pro příklad
 
 ## Globální a komponentové  body zlomu {#globalni-komponentove}
 
@@ -101,24 +153,6 @@ $md-breakpoint: 260px;
 ```
 
 Globální breakpointy jsou obvykle uložené v nějaké hodnotě sdílené napříč projektem – v proměnné CSS preprocesoru a podobně. Mohou je pak samozřejmě přebírat i komponenty.
-
-## Pojmenování
-
-*TODO:*
-
-* "ipad portrait" je úplně blbě, páč to bude taky spousta jiných zařízení
-* "tablet portrait" je už lepší, ale bude to i třeba menší desktop
-* "md" nebo "medium" je imho nejlepší, viz bootstrap
-
-
-## Realizace v kódu
-
-*TODO:*
-
-* viz Bootstrap, např. @include media-breakpoint-up(sm) { ... }
-* viz VD
-* Sass MQ https://github.com/sass-mq/sass-mq
-* post-css pro příklad
 
 ## Ne podle zařízení, ale podle obsahu {#podle-obsahu}
 
