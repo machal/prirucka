@@ -23,7 +23,7 @@ Používám ho také – jako jeden z nástrojů pro vstupní analýzu webů kli
 Učité limity jsou vidět už ze způsobu fungování PSI:
 
 1. Dělá syntetickou analýzu – netestuje se tedy skupina reálných uživatelů. 
-2. Provádí se dva testy na počítači. Prohlížeč se spustí ve dvou režimech – desktop a mobil. Nastavení testů je jen jedno *TODO*. 
+2. Provádí se dva testy na počítači. Prohlížeč se spustí ve dvou režimech – desktop a mobil. Nastavení testů je jen jedno *TODO*.
 3. Testuje se jen *v aktuálním okamžiku*. Zkreslení zde může nastat momentálními  výkonnostními problémy serveru nebo naopak neobvykle dobrými podmínkami (například bez návštěvnosti v noci), které neodpovídají reálné uživatelské zkušenosti.
 
 Tady je vidět onen zkreslený pohled – ze široké škály možných časů použití webu, rozlišení obrazovky, rychlostí načítání a výkonu zařízení uživatelů, vidíte jen malinkou a v mnoha směrech optimistickou výseč.

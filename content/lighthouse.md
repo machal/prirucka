@@ -42,6 +42,10 @@ Nejde tak do hloubky jako propracovanější nástroje, které analyzují jednot
 - V dalších nástrojích – výstupy „majáku“ jsou dostupný z testů aplikací jako WebpageTest.org, SpeedCurve…
 - Příkazová řádka – díky ní vděčí za rozšíření.
 
+## Jak funguje? {#jak}
+
+*TODO emulovaná rychlost a výkon*
+
 ## Pravidelné spouštění {#pravidelne}
 
 *TODO*

@@ -79,9 +79,9 @@ Tím se dostáváme k dalšímu zajímavého bodu - jak breakpointy pojmenováva
 
 Přepokládám, že breakpointy máte uložené v proměnné preprocesoru. Vezmu tři příklady pojmenování bodu zlomu na 900px:
 
-* `$breakpoint-ipad-potrait` – Špatně, protože zmiňuje konkrétní zařízení. Platí totiž určitě i pro jiné tablety než iPad.
-* `$breakpoint-tablet-potrait` – Mírně lepší, ale pořád špatně. Bod zlomu se může týkat také mobilu v landscape režimu nebo zmenšehého okna desktopu.
-* `$breakpoint-medium` nebo `$breakpoint-md` – Dle mého nejlepší pojmenování. Je abstraktní, takže do komunikace neplete zavádějící konkrétnosti. A taky je snadno naučitelný a obvyklý. Kromě výrobců triček používá stupnici *xs* (extra small), *sm* (small), *md* (medium), *lg* (large), *xl* (extra large) také Bootstrap a další frontendové frameworky. 
+- `$breakpoint-ipad-potrait` – Špatně, protože zmiňuje konkrétní zařízení. Platí totiž určitě i pro jiné tablety než iPad.
+- `$breakpoint-tablet-potrait` – Mírně lepší, ale pořád špatně. Bod zlomu se může týkat také mobilu v landscape režimu nebo zmenšehého okna desktopu.
+- `$breakpoint-medium` nebo `$breakpoint-md` – Dle mého nejlepší pojmenování. Je abstraktní, takže do komunikace neplete zavádějící konkrétnosti. A taky je snadno naučitelný a obvyklý. Kromě výrobců triček používá stupnici *xs* (extra small), *sm* (small), *md* (medium), *lg* (large), *xl* (extra large) také Bootstrap a další frontendové frameworky. 
 
 Raději ještě upozorním, že ať jsou breakpointy pojmenované jakkoliv, měl by se na jejich názvosloví domluvit celý tým.
 
@@ -114,16 +114,16 @@ $vd-screen-lg-down:  "(max-width: #{$vd-screen-lg - 1})";
 A ještě použití:
 
 ```scss
-@media #{$vd-screen-sm-up} { … }
+@media #{$vd-screen-sm-up} { }
 ```
 
 Takhle jednoduchá implementace vám u větších projektů nemusí stačit. Pojďme se podívat na další.
 
 *TODO:*
 
-* viz Bootstrap, např. @include media-breakpoint-up(sm) { ... }
-* Sass MQ https://github.com/sass-mq/sass-mq
-* post-css pro příklad
+- viz Bootstrap, např. @include media-breakpoint-up(sm) { ... }
+- Sass MQ https://github.com/sass-mq/sass-mq
+- post-css pro příklad
 
 ## Globální a komponentové  body zlomu {#globalni-komponentove}
 
@@ -176,7 +176,7 @@ Dejme tomu, že máme jednoduchou vodorovnou navigaci, jejíž obsah se nemění
 
 ```css
 /* Bod zlomu nastavený podle obsahu */
-@media only screen and (min-width: 27.5em) { … }
+@media only screen and (min-width: 27.5em) { }
 ```
 
 Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na CodePenu: [cdpn.io/e/bBPdgQ](https://codepen.io/machal/pen/bBPdgQ)
