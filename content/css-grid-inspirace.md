@@ -1,8 +1,19 @@
-# CSS grid: Příklady použití, na které budete čubrnět
+# CSS grid: 3 příklady použití, které se vám budou líbit (a fallback k tomu)
 
-[CSS grid](css-grid.md) nádherně rozšiřuji možnosti layoutu ve webdesignu. 
+[CSS grid](css-grid.md) nádherně rozšiřuje možnosti layoutu ve webdesignu. Pojďte se nechat inspirovat pár příklady využití.
 
-Nebo *bude* rozšiřovat. Jeho podpora totiž není plná. IE11 totiž umí jen základní vlastnosti gridu a to ještě jinak než ostatní prohlížeče. U většiny příkladů je ovšem možné udělat alespoň částečné náhradní řešení, například pomocí [flexboxu](css3-flexbox.md). Všechny ale využijí jen ti z vás, kteří se podporou Exploreru z nějakých důvodů nemusíte zabývat.
+Jeho podpora totiž není plná. Internet Explorer 11, který má v Česku v době psaní podíl mezi 5 - 10 % uživatelů, umí jen základní vlastnosti gridu a to ještě jinak než ostatní prohlížeče. 
+
+<!-- AdSnippet -->
+
+V posledním příkladu si proto ukážeme, jak udělat alespoň částečné náhradní řešení, například pomocí [flexboxu](css3-flexbox.md).
+
+Obsah:
+
+- [Mřížka jako v Bootstrapu na pár řádcích kódu](#1)
+- [Pojmenované oblasti](#2)
+- [Umísťování prvků podle vzhledu, ne podle pořadí](#3)
+- [Fallback se @supports](#4)
 
 ## 1) Mřížka jako v Bootstrapu na pár řádcích kódu {#1}
 
@@ -41,6 +52,8 @@ Na CodePenu mám také detailnější rozborku: [cdpn.io/e/dJxBGz](https://codep
 ## 2) Pojmenované oblasti {#2}
 
 Jeden tahák trnu z paty – pojmenování oblastí – se velmi hodí při tvorbě složitějších vícerozměrných layoutů.
+
+<!-- AdSnippet -->
 
 Nejprve definujeme mřížku pro layout. Bude mít dva sloupce a tří řádky:
 
@@ -103,3 +116,39 @@ V CodePenu si všimněte i jiné deklarace:
 - `auto-fill` – když dostane volný prostor, vloží novou prázdnou buňku. 
 - Funkce `minmax()` definuje šířku položky mezi určitými hranicemi.
 - `1fr` je „fraction unit“. Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`. 
+
+## 4) Fallback se @supports {#4}
+
+Problém předchozího příkladu (stejně jako skoro všech příkladů s gridem) je v tom, že v MSIE 11 nebude fungovat.
+
+V tomhle případě to není žádná tragédie. Vezmeme si na pomoc zavináčové pravidlo `@supports`, které nativním způsobem detekuje podporu moderních CSS vlastností v prohlížečích.
+
+Navrhneme nejprve zjednodušené řešení pomocí flexboxu:
+
+```css
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}  
+```
+A pak jej upravíme pro prohlížeče, které grid zvládají:
+
+```css
+@supports (display: grid) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense; 
+  }  
+}
+```
+
+Celá ukázka:
+
+<iframe height='265' scrolling='no' title='CSS grid:  grid-auto-flow: dense with @supports fallback' src='//codepen.io/machal/embed/NLpWXY/?height=265&theme-id=light&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/NLpWXY/'>CSS grid:  grid-auto-flow: dense with @supports fallback</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+Takhle se dá udělat spousta fallbacků pro řešení s gridem. Takže se ho nebojme.
+
+<!-- AdSnippet -->
