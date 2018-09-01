@@ -22,7 +22,7 @@ Občas se slovem „breakpoint“ ale označuje jiná věc – *rozmezí* platno
 Může být proto matoucí, když použijete frázi „breakpoint pro nejmenší displeje“ a myslíte tím hodnoty 0-480px. Mluvíte totiž o „rozmezí“.
 
 
-## Jak je vymýšlet: ideálně podle designu a cílové skupiny {#vymysleni}
+## Nepřebírejte hotové breakpointy. Vymyslete je podle designu a cílové skupiny {#vymysleni}
 
 Body zlomu a rozmezí platnosti designu je možné buď použít univerzální nebo vymyslet vlastní.
 
@@ -108,11 +108,13 @@ Přepokládám, že breakpointy máte uložené v proměnné preprocesoru. Vezmu
 Raději ještě upozorním, že ať jsou breakpointy pojmenované jakkoliv, měl by se na jejich názvosloví domluvit celý tým.
 
 
-## Globální a komponentové  body zlomu {#globalni-komponentove}
+## Lokální a globální body zlomu {#globalni-komponentove}
 
-*TODO: příklad v jedné komponentě*
+Obsahové body zlomu nejčastěji definuji podle obsahu konkrétních komponent. Říkám jim *lokální* (občas též *komponentové* breakpointy nebo kdysi *mikrobreakpointy*). Hodně názvů pro stejnou věc, že ano? Jde ale o totéž: odlišení bodů zlomu a rozmezí platnosti designu, které platí pro celou aplikaci od těch, které platí jen pro její malou část – obvykle právě komponentu.
 
-Obsahové body zlomu nejčastěji definuji podle obsahu konkrétních komponent. Říkám jim *komponentové*. Jako příklad vezměme záložkovou navigaci, ve které je určitý počet položek, proto layout zapínám až od určité hodnoty:
+### Lokální {#komponentove}
+
+Jako příklad vezměme záložkovou navigaci, ve které je určitý počet položek, proto layout zapínáme až od určité hodnoty:
 
 ```scss
 /* tabs.scss: */
@@ -123,45 +125,36 @@ $tabs-breakpoint: 260px;
 }
 ```
 
-To ale neznamená, že nepotřebujete body zlomu *globální*. Ty se nejčastěji hodí pro nastavení layoutu stránky:
+### Globální {#globalni}
+
+To ale neznamená, že nepotřebujete body zlomu *globální*. Ty se nejčastěji hodí pro nastavení layoutu stránky, ale přebírají jej i jednotlivé komponenty:
 
 ```scss
 /* variables.scss: */
-$md-breakpoint: 260px; 
+$md-breakpoint: 600px; 
 
 /* tabs.scss: */
 @media only screen and (min-width: #{$md-breakpoint}) { 
-  .page-layout { display: flex; }
+  .tabs { font-size: 1.3rem; }
 }
 ```
 
-Globální breakpointy jsou obvykle uložené v nějaké hodnotě sdílené napříč projektem – v proměnné CSS preprocesoru a podobně. Mohou je pak samozřejmě přebírat i komponenty.
-
-## Ne podle zařízení, ale podle obsahu {#podle-obsahu}
+## Zapomeňte na zařízení. Obsah určuje design. Design určuje breakpointy {#podle-obsahu}
 
 Častou chybou je vymýšlení breakpointů „podle zařízení“. Dejme tomu, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
 
 ```css
 /* Bod zlomu „pro tablety“ (špatně) */
-@media only screen 
-  and (min-width: 40em) and (max-width: 48em) { 
-    /* Kod pro obrazovky mezi 640 a 768 px */
-}
+@media only screen and (min-width: 640px) and (max-width: 768px) { }
 ```
 
-Vypadá to hezky, ale je to konina. Jak už jsem psal, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. 
+Vypadá to hezky, ale je to konina. Jak už jsem mnohokrát apeloval, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. 
 
 Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů, jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
 
-Vždy se při vymýšlení bodu zlomů snažte zaměřit na obsah a jeho rozvržení na obrazovce. Media Queries mají vyplynout z obsahu.
+Vždy se při vymýšlení bodu zlomů snažte zaměřit na obsah a jeho rozvržení na obrazovce. Body zlomu mají vyplynout z obsahu a jeho designu.
 
-Dejme tomu, že máme jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozhodujeme se o hodnotě bodu zlomu šířky okna, kdy se navigace z vodorovné stane svislou pro menší displeje.
+Musím tady citovat klasika Stephena Haye:
 
-```css
-/* Bod zlomu nastavený podle obsahu */
-@media only screen and (min-width: 27.5em) { }
-```
+> Začněte s malou obrazovkou a pak zvětšujte okno dokud se design nerozbije. Tady je čas na breakpoint!
 
-Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na CodePenu: [cdpn.io/e/bBPdgQ](https://codepen.io/machal/pen/bBPdgQ)
-
-Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy obsah prostě při tvorbě layoutu neznáme: Například když pracujeme na frameworku nebo připravujeme šablonu pro obsah, který má v rukách až koncový uživatel našeho redakčního systému. Jako příklad můžu opět jmenovat Bootstrap, který má body zlomu nastavené pevně. Naštěstí jdou měnit a vždy můžete přidat nějaké vlastní. 
