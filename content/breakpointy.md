@@ -9,9 +9,9 @@ Obsah:
 [Globální a komponentové](#globalni-komponentove) –
 [Ne podle zařízení, ale podle obsahu](#podle-obsahu)
 
-*TODO: obrázek - co je breakpoint a co rozmezí*
+![Co je breakpoint a co rozmezí](dist/images/original/breakpointy-rozmezi.jpg)
 
-## Body zlomu a rozmezí {#breakpoint-range}
+## Body zlomu a rozmezí: bavme se o dvou různých věcech {#breakpoint-range}
 
 Všímám si, že si weboví lidé občas nerozumí v definici „breakpointu“. 
 
@@ -42,14 +42,21 @@ Nelámat si hlavu body zlomu na míru je často jediná cesta. Z voleje dám dva
 
 Nejčastěji se prefabrikované body zlomu designu přebírají z populárních frontendových frameworků, jako je Bootstrap. Ten má přednastavené čtyři hodnoty – *xs* (576 pixelů), *sm* (768), *md* (992) a *lg* (1200).
 
-Lepším řešením může být nastavení podle textu [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862), který z globálních statistik vytáhl čísla tak, by bylo rozložení viewportů v jednotlivých rozmezích rovnoměrnější. Došel k těmto hodnotám:
+Lepším řešením může být nastavení podle textu Davida Gilbertsona [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862), který z globálních statistik vytáhl čísla tak, by bylo rozložení viewportů v jednotlivých rozmezích rovnoměrnější. 
+
+<figure>
+<img src="dist/images/original/breakpointy-gilbertson.jpg" alt="Breakpointy Davida Gilbertsona">
+<figcaption markdown="1">
+*Obrázek: Rozložení breakpointů pro můj web Vzhůru dolů a na webech cestovky Rekrea za první polovinu roku 2018*
+</figcaption>
+</figure>
+
+Došel k těmto hodnotám:
 
 - 600px
 - 900px
 - 1200px
 - 1800px
-
-*TODO IMG The 100% correct way to do CSS breakpoints*
 
 Je to lepší řešení, ale problém je v oněch *globálních* statistikách. Ty prostě nemusejí pasovat na vaši cílovou skupinu a váš projekt. Úplně nejlepší řešení tedy leží v odvození breakpointů z vlastních dat a vlastního designu.
 
@@ -62,10 +69,16 @@ V zásadě to dnes už jde vytáhnout z Google Anylytics. Je to trochu práce, a
 
 Získáte pak grafy podobné těmto:
 
-*TODO IMG: Rozložení breakpointů na webech cestovky Rekrea a pro můj web Vzhůru dolů za první polovinu roku 2018*
+<figure>
+<img src="dist/images/original/breakpointy-vd-rekrea.jpg" alt="PageSpeed Insights">
+<figcaption markdown="1">
+*Obrázek: Rozložení breakpointů pro můj web Vzhůru dolů a na webech cestovky Rekrea za první polovinu roku 2018*
+</figcaption>
+</figure>
 
 Z obrázku je hezky vidět, že už tyto dva projekty se v zastoupení cílové skupiny liší. Dejme si výsledky do tabulky s breakpointy z článku „The 100% correct way to do CSS breakpoints“.
 
+<figure markdown="1">
 | Rozmezí v px       | Vzhůru dolů      | Rekrea       |
 |:-------------------|-----------------:|-------------:|
 | 0-599 (xs)         | 20 %              | 33 %        |
@@ -73,8 +86,10 @@ Z obrázku je hezky vidět, že už tyto dva projekty se v zastoupení cílové 
 | 900-1199 (md)      | 5 %               | 13 %        |
 | 1200-1799 (lg)     | 38 %              | 39 %        |
 | 1800 a více (xl)   | 33 %              | 10 %        |
-
+<figcaption markdown="1">
 *Tabulka: Zastoupení šířky viewportů v univerzálních rozmezích designu*
+</figcaption>
+</figure>
 
 Z tabulky můžeme například vyčíst, že na projektu *Vzhůru dolů* je hodně důležitá skupina uživatelů s velkými displeji – rozmezí *xl*. U obou projektů jsou pak velmi málo zajímavé skupiny s rozlišeními v rozmezí *sm*. Dává nám to informaci o prioritě jednotlivých rozmezí. Prostě víme, jak moc do jednotlivých skupin investovat naši energii.
 

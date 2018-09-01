@@ -4,7 +4,7 @@ Ukládání breakpointů a rozmezí do proměnné preprocesoru velmi doporučuji
 
 Příklady zde využívají CSS preprocesoru Sass v SCSS syntaxi. Ale podíváme se také na PostCSS (a CSSnext) nebo očekávaný vývoj specifikací.
 
-Možností je více: 
+Možností je více:
 [Proměnné](#promenne) –
 [Mixiny](#mixiny) –
 [Knihovna Sass MQ](#sass-mq) –
