@@ -2,6 +2,13 @@
 
 Breakpointy jsou velikosti okna ([viewportu](viewport.md)) prohlížeče, ve kterých se může měnit design webu. Česky jim můžeme říkat *body zlomu designu*.
 
+Obsah:
+[Body zlomu vs. rozmezí](#breakpoint-range) –
+[Návrh breakpointů podle designu](#vymysleni) –
+[Pojmenování](#pojmenovavani) –
+[Globální a komponentové](#globalni-komponentove) –
+[Ne podle zařízení, ale podle obsahu](#podle-obsahu)
+
 *TODO: obrázek - co je breakpoint a co rozmezí*
 
 ## Body zlomu a rozmezí {#breakpoint-range}
@@ -59,9 +66,9 @@ Získáte pak grafy podobné těmto:
 
 Z obrázku je hezky vidět, že už tyto dva projekty se v zastoupení cílové skupiny liší. Dejme si výsledky do tabulky s breakpointy z článku „The 100% correct way to do CSS breakpoints“.
 
-| Rozmezí v px       | Vzhůru dolů v %   | Rekrea v %  |
-|:------------------|------------------:|------------:|
-| 0-699 (xs)         | 20 %              | 33 %        | 
+| Rozmezí v px       | Vzhůru dolů      | Rekrea       |
+|:-------------------|-----------------:|-------------:|
+| 0-599 (xs)         | 20 %              | 33 %        |
 | 600-899 (sm)       | 2 %               | 3 %         |
 | 900-1199 (md)      | 5 %               | 13 %        |
 | 1200-1799 (lg)     | 38 %              | 39 %        |
@@ -85,45 +92,6 @@ Přepokládám, že breakpointy máte uložené v proměnné preprocesoru. Vezmu
 
 Raději ještě upozorním, že ať jsou breakpointy pojmenované jakkoliv, měl by se na jejich názvosloví domluvit celý tým.
 
-## Realizace v kódu {#kod}
-
-### Jednoduše s preprocesorem {#kod-preprocesor}
-
-Ukládání breakpointů a rozmezí do proměnné preprocesoru velmi doporučuji, zpřehlední to kód a zefektivní psaní. Následuje příklad ze zdrojáků Vzhůru dolů.
-
-Definice breakpointů:
-
-```scss
-$vd-screen-sm:  600px;
-$vd-screen-md:  768px;
-$vd-screen-lg:  1100px;
-```
-
-Definice rozmezí:
-
-```scss
-$vd-screen-sm-up:  "only screen and (min-width: #{$vd-screen-sm})";
-$vd-screen-md-up:  "only screen and (min-width: #{$vd-screen-md})";
-$vd-screen-lg-up:  "only screen and (min-width: #{$vd-screen-lg})";
-
-$vd-screen-sm-down:  "(max-width: #{$vd-screen-sm - 1})";
-$vd-screen-md-down:  "(max-width: #{$vd-screen-md - 1})";
-$vd-screen-lg-down:  "(max-width: #{$vd-screen-lg - 1})";
-```
-
-A ještě použití:
-
-```scss
-@media #{$vd-screen-sm-up} { }
-```
-
-Takhle jednoduchá implementace vám u větších projektů nemusí stačit. Pojďme se podívat na další.
-
-*TODO:*
-
-- viz Bootstrap, např. @include media-breakpoint-up(sm) { ... }
-- Sass MQ https://github.com/sass-mq/sass-mq
-- post-css pro příklad
 
 ## Globální a komponentové  body zlomu {#globalni-komponentove}
 
