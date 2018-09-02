@@ -1,4 +1,4 @@
-# Breakpointy a rozmezí v responzivním designu
+# Breakpointy a rozmezí platnosti responzivního designu
 
 Breakpointy jsou velikosti okna ([viewportu](viewport.md)) prohlížeče, ve kterých se může měnit design webu. Česky jim můžeme říkat *body zlomu designu*.
 
@@ -9,18 +9,40 @@ Obsah:
 [Globální a komponentové](#globalni-komponentove) –
 [Ne podle zařízení, ale podle obsahu](#podle-obsahu)
 
-![Co je breakpoint a co rozmezí](dist/images/original/breakpointy-rozmezi.jpg)
 
 ## Body zlomu a rozmezí: bavme se o dvou různých věcech {#breakpoint-range}
 
-Všímám si, že si weboví lidé občas nerozumí v definici „breakpointu“. 
+Všímám si, že si weboví lidé občas nerozumí v definici „breakpointu“.
+
+![Co je breakpoint a co rozmezí](dist/images/original/breakpointy-rozmezi.jpg)
 
 *Bod zlomu* (v angličtině „breakpoint“): Konkrétní body, ve kterých se design mění. Samotné hodnoty typu 480px, 640px, 768px a tak dále.
 
-Občas se slovem „breakpoint“ ale označuje jiná věc – *rozmezí* platnosti designu („range“). Tím jsou pak myšleny skupiny velikosti viewportů a hodnoty typu 0-480px, 481-640px, 641–767px atd.
+Občas se slovem „breakpoint“ ale označuje jiná věc – *rozmezí* platnosti designu („range“). Tím jsou pak myšleny skupiny velikosti viewportů a hodnoty typu 0-480px, 481-640px, 481 a více, 1024px a méně a tak dále.
+
+<!-- AdSnippet -->
 
 Může být proto matoucí, když použijete frázi „breakpoint pro nejmenší displeje“ a myslíte tím hodnoty 0-480px. Mluvíte totiž o „rozmezí“.
 
+
+## Zapomeňte na zařízení. Obsah určuje design. Design určuje breakpointy {#podle-obsahu}
+
+Častou chybou je vymýšlení breakpointů „podle zařízení“. Dejme tomu, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
+
+```css
+/* Bod zlomu „pro tablety“ (špatně) */
+@media only screen and (min-width: 640px) and (max-width: 768px) { }
+```
+
+Vypadá to hezky, ale je to konina. Jak už jsem mnohokrát apeloval, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne.
+
+Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů, jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
+
+Vždy se při vymýšlení bodu zlomů snažte zaměřit na obsah a jeho rozvržení na obrazovce. Body zlomu mají vyplynout z obsahu a jeho designu.
+
+Musím tady citovat klasika Stephena Haye:
+
+> Začněte s malou obrazovkou a pak zvětšujte okno dokud se design nerozbije. Tady je čas na breakpoint!
 
 ## Nepřebírejte hotové breakpointy. Vymyslete je podle designu a cílové skupiny {#vymysleni}
 
@@ -29,20 +51,24 @@ Body zlomu a rozmezí platnosti designu je možné buď použít univerzální n
 Obecně vám samozřejmě doporučím vymýšlet vlastní, hlavně ze dvou důvodů:
 
 1. Zohlednění cílové skupiny a zastoupení jednotlivých rozlišení v ní. Může se vám stát, že prefabrikované breakpointy u vás nebudou fungovat, protože v cílové skupině máte například velmi podprůměrně uživatelů mobilů a nadprůměrně uživatelů velkých displejů. Univerzální breakpointy vycházejí z průměrných dat, což vám může být k ničemu.
-2. Přihlénutí k vlastnímu navrhu uživatelského rozhraní. Platí, že obsah ovlivňuje design a naopak. Pokud je váš design něčím výjimečný (což je tak každý druhý), univerzální breakpointy nemusejí svou roli plnit dobře.
+2. Přihlédnutí k vlastnímu návrhu uživatelského rozhraní. Platí, že obsah ovlivňuje design a naopak. Pokud je váš design něčím výjimečný (což je tak každý druhý), univerzální breakpointy nemusejí svou roli plnit dobře.
 
-Pojďme se ale na ty prefabrikované body zlomu používat. Někdy se hodit mohou.
+Pojďme se ale na ty prefabrikované body zlomu podívat. Někdy se hodit mohou.
 
 ### Univerzální breakpointy {#univerzalni}
 
 Nelámat si hlavu body zlomu na míru je často jediná cesta. Z voleje dám dva příklady:
 
-- Pracujete na univerzálním systému pro tvorbu webů jako jsou třeba Webnode nebo SolidPixels. Prostě nevíte, jak bude vypadat obsah a design jednotlivých webů.
+- Pracujete na univerzálním systému pro tvorbu webů jako jsou třeba Webnode, SolidPixels nebo framework typu Bootstrapu. Prostě nevíte, jak bude vypadat obsah a design jednotlivých webů.
 - Nemáte dost dat. Například proto, že jste v rané fázi řešení a teprve prototypujete.
 
-Nejčastěji se prefabrikované body zlomu designu přebírají z populárních frontendových frameworků, jako je Bootstrap. Ten má přednastavené čtyři hodnoty – *xs* (576 pixelů), *sm* (768), *md* (992) a *lg* (1200).
+Nejčastěji se prefabrikované body zlomu designu přebírají z populárních frontendových frameworků, jako je právě Bootstrap. Ten má přednastavené čtyři hodnoty – *xs* (576 pixelů), *sm* (768), *md* (992) a *lg* (1200).
 
-Lepším řešením může být nastavení podle textu Davida Gilbertsona [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862), který z globálních statistik vytáhl čísla tak, by bylo rozložení viewportů v jednotlivých rozmezích rovnoměrnější. 
+<!-- AdSnippet -->
+
+Lepším řešením může být nastavení podle textu Davida Gilbertsona „The 100% correct way to do CSS breakpoints“. [vrdl.in/correctbreakpoints](http://vrdl.in/correctbreakpoints)
+
+Ten z globálních statistik vytáhl čísla tak, by bylo rozložení viewportů v jednotlivých rozmezích rovnoměrnější.
 
 <figure>
 <img src="dist/images/original/breakpointy-gilbertson.jpg" alt="Breakpointy Davida Gilbertsona">
@@ -58,14 +84,14 @@ Došel k těmto hodnotám:
 - 1200px
 - 1800px
 
-Je to lepší řešení, ale problém je v oněch *globálních* statistikách. Ty prostě nemusejí pasovat na vaši cílovou skupinu a váš projekt. Úplně nejlepší řešení tedy leží v odvození breakpointů z vlastních dat a vlastního designu.
+Je to lepší řešení, ale problém je v oněch *globálních* statistikách. Ty prostě nemusejí pasovat na vaši cílovou skupinu a váš projekt. Úplně nejlepší řešení tedy leží v odvození breakpointů z vlastního designu a vlastních dat.
 
 
 ### Breakpointy na míru {#na-miru}
 
 To, jak je navržené vaše rozhraní, v tuhle chvíli nevím. Můžete ale s mou pomocí zjistit, jak vypadá vaše cílová skupina. Nebo přesněji – rozložení šířek obrazovky v ní.
 
-V zásadě to dnes už jde vytáhnout z Google Anylytics. Je to trochu práce, ale určitě se vám to u větších projektů vyplatí. Návod jsem sepsal do textu: „S jakými viewporty uživatelé navštěvují můj web?“. [vrdl.cz/p/viewport-google-analytics](https://www.vzhurudolu.cz/prirucka/viewport-google-analytics)
+V zásadě to dnes už jde vytáhnout z Google Analytics. Je to trochu práce, ale určitě se vám to u větších projektů vyplatí. Návod jsem sepsal do textu: „S jakými viewporty uživatelé navštěvují můj web?“. [vrdl.cz/p/viewport-google-analytics](https://www.vzhurudolu.cz/prirucka/viewport-google-analytics)
 
 Získáte pak grafy podobné těmto:
 
@@ -93,17 +119,15 @@ Z obrázku je hezky vidět, že už tyto dva projekty se v zastoupení cílové 
 
 Z tabulky můžeme například vyčíst, že na projektu *Vzhůru dolů* je hodně důležitá skupina uživatelů s velkými displeji – rozmezí *xl*. U obou projektů jsou pak velmi málo zajímavé skupiny s rozlišeními v rozmezí *sm*. Dává nám to informaci o prioritě jednotlivých rozmezí. Prostě víme, jak moc do jednotlivých skupin investovat naši energii.
 
-*TODO: skutečně nastavené body zlomu pro VD.cz podle designu, viz Evernote*
-
 Tím se dostáváme k dalšímu zajímavého bodu - jak breakpointy pojmenovávat.
 
-## Pojmenování: ideálně abstrakně podle triček {#pojmenovavani}
+## Pojmenování: Ideálně abstraktně podle triček {#pojmenovavani}
 
-Přepokládám, že breakpointy máte uložené v proměnné preprocesoru. Vezmu tři příklady pojmenování bodu zlomu na 900px:
+Předpokládám, že breakpointy máte uložené v proměnné preprocesoru. Vezmu tři příklady pojmenování bodu zlomu na 900px:
 
-- `$breakpoint-ipad-potrait` – Špatně, protože zmiňuje konkrétní zařízení. Platí totiž určitě i pro jiné tablety než iPad.
-- `$breakpoint-tablet-potrait` – Mírně lepší, ale pořád špatně. Bod zlomu se může týkat také mobilu v landscape režimu nebo zmenšehého okna desktopu.
-- `$breakpoint-medium` nebo `$breakpoint-md` – Dle mého nejlepší pojmenování. Je abstraktní, takže do komunikace neplete zavádějící konkrétnosti. A taky je snadno naučitelný a obvyklý. Kromě výrobců triček používá stupnici *xs* (extra small), *sm* (small), *md* (medium), *lg* (large), *xl* (extra large) také Bootstrap a další frontendové frameworky. 
+- *iPad potrait* – Špatně, protože zmiňuje konkrétní zařízení. Platí totiž určitě i pro jiné tablety než iPad.
+- *Tablet potrait* – Mírně lepší, ale pořád špatně. Bod zlomu se může týkat také mobilu v landscape režimu nebo zmenšeného okna desktopu.
+- *Medium* (nebo v kódu `$breakpoint-md`) – Dle mého nejlepší pojmenování. Je abstraktní, takže do komunikace neplete zavádějící konkrétnosti. A taky je snadno naučitelný a obvyklý. Kromě výrobců triček používá stupnici *xs* (extra small), *sm* (small), *md* (medium), *lg* (large), *xl* (extra large) také Bootstrap a další frontendové frameworky.
 
 Raději ještě upozorním, že ať jsou breakpointy pojmenované jakkoliv, měl by se na jejich názvosloví domluvit celý tým.
 
@@ -118,9 +142,9 @@ Jako příklad vezměme záložkovou navigaci, ve které je určitý počet polo
 
 ```scss
 /* tabs.scss: */
-$tabs-breakpoint: 260px; 
+$tabs-breakpoint: 260px;
 
-@media only screen and (min-width: #{$tabs-breakpoint}) { 
+@media only screen and (min-width: #{$tabs-breakpoint}) {
   .tabs { display: flex; }
 }
 ```
@@ -131,30 +155,17 @@ To ale neznamená, že nepotřebujete body zlomu *globální*. Ty se nejčastěj
 
 ```scss
 /* variables.scss: */
-$md-breakpoint: 600px; 
+$md-breakpoint: 600px;
 
 /* tabs.scss: */
-@media only screen and (min-width: #{$md-breakpoint}) { 
+@media only screen and (min-width: #{$md-breakpoint}) {
   .tabs { font-size: 1.3rem; }
 }
 ```
 
-## Zapomeňte na zařízení. Obsah určuje design. Design určuje breakpointy {#podle-obsahu}
+<div class="ebook-only" markdown="1">
+V dalším textu se podíváme na to, jaké jsou možnosti implementace breakpointů a rozmezí v kódu.
+</div>
 
-Častou chybou je vymýšlení breakpointů „podle zařízení“. Dejme tomu, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
 
-```css
-/* Bod zlomu „pro tablety“ (špatně) */
-@media only screen and (min-width: 640px) and (max-width: 768px) { }
-```
-
-Vypadá to hezky, ale je to konina. Jak už jsem mnohokrát apeloval, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. 
-
-Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů, jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
-
-Vždy se při vymýšlení bodu zlomů snažte zaměřit na obsah a jeho rozvržení na obrazovce. Body zlomu mají vyplynout z obsahu a jeho designu.
-
-Musím tady citovat klasika Stephena Haye:
-
-> Začněte s malou obrazovkou a pak zvětšujte okno dokud se design nerozbije. Tady je čas na breakpoint!
-
+<!-- AdSnippet -->

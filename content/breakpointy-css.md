@@ -1,14 +1,14 @@
 # Responzivní breakpointy: Realizace v kódu (CSS, Sass i PostCSS)
 
-Ukládání breakpointů a rozmezí do proměnné preprocesoru velmi doporučuji, zpřehlední to kód a zefektivní psaní. 
+Ukládání breakpointů a rozmezí do proměnných preprocesoru velmi doporučuji, zpřehlední to kód a zefektivní psaní.
 
-Příklady zde využívají CSS preprocesoru Sass v SCSS syntaxi. Ale podíváme se také na PostCSS (a CSSnext) nebo očekávaný vývoj specifikací.
+Příklady níže využívají CSS preprocesoru Sass v SCSS syntaxi. Ale podíváme se také na PostCSS (a CSSnext) nebo očekávaný vývoj specifikací.
 
-Možností je více:
+Možností, jak pracovat s breakpointy je více:
 [Proměnné](#promenne) –
 [Mixiny](#mixiny) –
 [Knihovna Sass MQ](#sass-mq) –
-[Media Queries Level 4](#media-qeuries-4) –
+[Media Queries Level 4](#media-queries-4) –
 [PostCSS a CSSnext]({#postcss)
 
 ## Jednoduše v proměnných {#promenne}
@@ -18,21 +18,21 @@ Následuje příklad ze zdrojáků Vzhůru dolů.
 Definice breakpointů:
 
 ```scss
-$vd-screen-sm:  600px;
-$vd-screen-md:  768px;
-$vd-screen-lg:  1100px;
+$vd-screen-sm: 600px;
+$vd-screen-md: 768px;
+$vd-screen-lg: 1100px;
 ```
 
 Definice rozmezí:
 
 ```scss
-$vd-screen-sm-up:  "only screen and (min-width: #{$vd-screen-sm})";
-$vd-screen-md-up:  "only screen and (min-width: #{$vd-screen-md})";
-$vd-screen-lg-up:  "only screen and (min-width: #{$vd-screen-lg})";
+$vd-screen-sm-up: "only screen and (min-width: #{$vd-screen-sm})";
+$vd-screen-md-up: "only screen and (min-width: #{$vd-screen-md})";
+$vd-screen-lg-up: "only screen and (min-width: #{$vd-screen-lg})";
 
-$vd-screen-sm-down:  "(max-width: #{$vd-screen-sm - 1})";
-$vd-screen-md-down:  "(max-width: #{$vd-screen-md - 1})";
-$vd-screen-lg-down:  "(max-width: #{$vd-screen-lg - 1})";
+$vd-screen-sm-down: "(max-width: #{$vd-screen-sm - 1})";
+$vd-screen-md-down: "(max-width: #{$vd-screen-md - 1})";
+$vd-screen-lg-down: "(max-width: #{$vd-screen-lg - 1})";
 ```
 
 A ještě použití:
@@ -41,11 +41,11 @@ A ještě použití:
 @media #{$vd-screen-sm-up} { }
 ```
 
-Jak vidíte, použití je díky specifikům Sassu poněkud krkolomnější a celkově jednoduchá implementace vám u větších projektů nemusí stačit. Pojďme se podívat na další.
+Jak vidíte, zápis použití je díky specifikům Sassu poněkud krkolomnější a celkově jednoduchá implementace vám u větších projektů nemusí stačit. Pojďme se podívat na další.
 
 ## Pomocí mixinů {#mixiny}
 
-Další možnost je vytvořit si mixiny práci s rozmezími platnosti mixinů. Pojďme rovnou k použití, tam je vidět  pak bude přímočarejší. 
+Další možnost je vytvořit si mixiny práci s rozmezími platnosti mixinů. Pojďme rovnou k použití, tam je to vidět přímočařeji.
 
 ```scss
 /* Breakpoint "sm" a větší šířka viewportu: */
@@ -113,7 +113,7 @@ Všechna zmíněná řešení mají jednu poměrně citelnou nevýhodu. Použív
 
 Ukažme si tedy ještě dvě možnosti, které jsou blíže k čistému CSS. Ale rovnou říkám, že zatím vám jejich využití nedoporučím.
 
-## Pomocí Media Queries Level 4, což bohužel zatím neumí prohlížeče {#media-qeuries-4}
+## Pomocí Media Queries Level 4, což bohužel zatím neumí prohlížeče {#media-queries-4}
 
 Tohle uvádím hlavně proto, abychom viděli, kam nás vede vývoj standardů. Konsorcium W3.org ve čtvrté verzi specifikace Media Queries chystá „Range Context“, což je zjednodušený zápis platnosti dotazu:
 
@@ -146,7 +146,7 @@ O odkazy vás ale nepřipravím:
 
 Můj závěr je tedy jasný:
 
-- Pokud můžete, využite preprocesor a Sass MQ nebo podobnou malou knihovnu.
+- Pokud můžete, využijte preprocesor a Sass MQ nebo podobnou malou knihovnu.
 - Těšte se na Media Queries čtvrté generace.
 
 <!-- AdSnippet -->
