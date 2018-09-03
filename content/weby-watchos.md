@@ -1,4 +1,4 @@
-# Weby na chytrých hodinkách s watchOS
+# Weby na chytrých hodinkách Apple Watch
 
 Mezi zařízeními, které nějak zobrazují weby, už určitou dobu figurují i chytré hodinky. Ale má smysl se jimi v responzivním designu zabývat? Ano, minimálně od téhle chvíle určitě.
 
@@ -10,11 +10,11 @@ Do první verze knížky „Vzhůru do (responzivního) designu“ jsem ostatně
 
 > Myslím, že je to nepoužitelné, a masovému přijetí nevěřím. Plocha je pro weby příliš malá na konzumaci obsahu, natož pak rozumnou interakci s ním.
 
-Jenže hodinky se zvětšují a způsob jejich ovládání je stále pohodlnější. Stále platí, že nevěřím, že používaní webů na hodinkách bude *masovou* záležitostí. 
+Jenže hodinky se zvětšují a způsob jejich ovládání je stále pohodlnější. Stále platí, že nevěřím, že používaní webů na hodinkách bude *masovou* záležitostí.
 
-Ve všem ostatním jsem se však pravděpodobně mýlil. Do hry už vstoupil i Apple s hodinkami Watch, respektive operačním systémem na nich – watchOS. 
+Ve všem ostatním jsem se však pravděpodobně mýlil. Do hry už vstoupil i Apple s hodinkami Watch, respektive operačním systémem na nich – watchOS.
 
-Píšu o tom proto, že Apple je známý tím, že kroky nemívá nepodložené reálnými testy uživatelů a jejich chování. To je něco jiného, než když menší výrobce hodinek do systému *narve* prohlížeč, protože — no proč ne, že? 
+Píšu o tom proto, že Apple je známý tím, že kroky nemívá nepodložené reálnými testy uživatelů a jejich chování. To je něco jiného, než když menší výrobce hodinek do systému *narve* prohlížeč, protože — no proč ne, že?
 
 Počínaje tímto krokem Apple (platí od roku 2018 a watchOS verze 5) je potřeba věřit tomu, že lidé weby na hodinkách nějak používat budou. Rozdíl oproti mobilům nebo desktopu bude pravděpodobně v intenzitě toho použití. V textu vycházím hlavně z prezentace „Designing Web Content for watchOS“ přímo od Apple. [vrdl.in/webwatchos](http://vrdl.in/webwatchos)
 
