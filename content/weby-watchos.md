@@ -16,6 +16,8 @@ Ve všem ostatním jsem se však pravděpodobně mýlil. Do hry už vstoupil i A
 
 Píšu o tom proto, že Apple je známý tím, že kroky nemívá nepodložené reálnými testy uživatelů a jejich chování. To je něco jiného, než když menší výrobce hodinek do systému *narve* prohlížeč, protože — no proč ne, že?
 
+<!-- AdSnippet -->
+
 Počínaje tímto krokem Apple (platí od roku 2018 a watchOS verze 5) je potřeba věřit tomu, že lidé weby na hodinkách nějak používat budou. Rozdíl oproti mobilům nebo desktopu bude pravděpodobně v intenzitě toho použití. V textu vycházím hlavně z prezentace „Designing Web Content for watchOS“ přímo od Apple. [vrdl.in/webwatchos](http://vrdl.in/webwatchos)
 
 Ale čtěte dále, všechno se dozvíte.
@@ -71,7 +73,9 @@ V takovém případě nebude Safari na watchOS provádět výchozí adaptace a p
 
 Pojďme se podívat i na další použité technologie. Není to vlastně nic nového a je dobře, že Apple zůstal u standardních a jinde zavedených technnologií.  
 
-Následující věci vám doporučuji přidat na všechny veřejně dostupné obsahové weby. „Riziko“ zobrazení na chytrých hodinkách totiž od letoška poroste.
+<!-- AdSnippet -->
+
+Následující kousky kódu vám doporučuji přidat na všechny veřejně dostupné obsahové weby. „Riziko“ zobrazení na chytrých hodinkách totiž od letoška poroste.
 
 
 ### Open Graph pro náhled obrázku {#open-graph}
@@ -123,3 +127,5 @@ Webmasteři mohou pro lepší uživatelský prožitek udělat následující:
 - Zavřít hlavní obsah do značky `<article>`.
 - K sémantickým informacím o článcích přidat atributy `itemprop`. Vypadá to, že uznávané jsou hodnoty `title`, `author`, `subheading` nebo `pubdate`.
 - Používat sémanticky správné HTML značky pro obsah: `<strong>`, `<em>`, `<blockquote>`, `<figure>` a `<figcaption>`.
+
+<!-- AdSnippet -->
