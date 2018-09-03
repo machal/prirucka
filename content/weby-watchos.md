@@ -1,12 +1,10 @@
-# Weby na chytrých hodinkách: watchOS
+# Weby na chytrých hodinkách s watchOS
 
 Mezi zařízeními, které nějak zobrazují weby, už určitou dobu figurují i chytré hodinky. Ale má smysl se jimi v responzivním designu zabývat? Ano, minimálně od téhle chvíle určitě.
 
 ## Budou lidé weby používat na chytrých hodinkách? {#budoucnost}
 
 Občas dostanu obrázek webu Vzhůru dolů z nějakých hodinek, ale bral jsem to spíše za kuriozitu a masovému používaní nevěřil.
-
-*TODO obrázek*
 
 Do první verze knížky „Vzhůru do (responzivního) designu“ jsem ostatně napsal:
 
@@ -51,7 +49,12 @@ Pokud to dobře chápu, prohlížeč se snaží weby za každou cenu zobrazit v 
 - Vynutí hodnotu vlastnosti `initial-scale` [meta značky pro viewport](viewport-meta.md) na `0.49`.
 - Prohlížeč pak hlásí rozlišení 320×357 (v CSS pixelech).
 
-*TODO obrázek (Photos)*
+<figure>
+<img src="dist/images/original/watchos-weby-shrink.jpg" alt="shrink-to-fit na watchos">
+<figcaption markdown="1">
+*Obrázek: Jak fungují výchozí adaptace webů na watchOS 5. Zdroj: Apple*
+</figcaption>
+</figure>
 
 ### Vypnutí výchozího stavu a meta značka disabled-adaptations {#disabled-adaptations}
 
@@ -85,9 +88,14 @@ Předpokládám ale, že je už na webu máte, kvůli zobrazení náhledů na so
 
 ### Formuláře {#formulare}
 
-Velmi mě překvapilo, že na hodinkách od Apple bude možné dělat také interakce s formuláři. Když se ale podíváte na následující obrázek, dává to smysl. Uživatelský vstup je vyřešený vážně hezky:
+Mile mě překvapilo, že na hodinkách od Apple je možné dělat také interakce s formuláři. Když se ale podíváte na následující obrázek, dává to smysl. Uživatelský vstup je vyřešený vážně hezky:
 
-*TODO obrázek (Photos)*
+<figure>
+<img src="dist/images/original/watchos-weby-forms.jpg" alt="Formuláře na watchos">
+<figcaption markdown="1">
+*Obrázek: Formulářové prvky na watchOS 5. Zdroj: Apple*
+</figcaption>
+</figure>
 
 Jako webmasteři jen musíte použít správné typy pro značku `<input>` nebo nativní `<select>`:
 
@@ -113,5 +121,5 @@ Na delších textových stránkách se Safari na watchOS automaticky přepíná 
 Webmasteři mohou pro lepší uživatelský prožitek udělat následující:
 
 - Zavřít hlavní obsah do značky `<article>`.
-- K sématickým informacím o článcích přidat atributy `itemprop`. Vypadá to, že uznávané jsou hodnoty `title`, `author`, `subheading` nebo `pubdate`.
+- K sémantickým informacím o článcích přidat atributy `itemprop`. Vypadá to, že uznávané jsou hodnoty `title`, `author`, `subheading` nebo `pubdate`.
 - Používat sémanticky správné HTML značky pro obsah: `<strong>`, `<em>`, `<blockquote>`, `<figure>` a `<figcaption>`.
