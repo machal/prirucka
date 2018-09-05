@@ -50,7 +50,7 @@ Hodnota `span 4` znamená:
 
 Podívejte se na to ještě v CodePenu:
 
-<iframe height='265' scrolling='no' title='Bootstrap's grid in CSS grid: 4 / 8 Layout ' src='//codepen.io/machal/embed/vzxYYN/?height=265&theme-id=light&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/vzxYYN/'>Bootstrap's grid in CSS grid: 4 / 8 Layout </a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='265' scrolling='no' title='Bootstraps grid in CSS grid: 4 / 8 Layout' src='//codepen.io/machal/embed/vzxYYN/?height=265&theme-id=light&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/vzxYYN/'>Bootstrap's grid in CSS grid: 4 / 8 Layout </a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 CodePen: [cdpn.io/e/vzxYYN](https://codepen.io/machal/pen/vzxYYN?editors=11100).

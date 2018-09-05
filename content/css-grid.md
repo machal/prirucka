@@ -209,4 +209,6 @@ Než vše detailně připravím pro Vzhůru dolů a [e-booky](https://www.vzhuru
 
 Tohle je jen začátek. Grid samozřejmě dále zkoumám, takže nalaďte všechny [kanály Vzhůru dolů](#touch) nebo doražte na [školení Dnešní webová kodéřina](https://www.vzhurudolu.cz/kurzy/webova-koderina), kde se mu – kromě jiného – věnuji.
 
+Běžte se podívat ještě na [3 příklady použití Gridu](css-grid-inspirace.md) i s vysvětlením v kódu.
+
 <!-- AdSnippet -->
