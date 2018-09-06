@@ -56,11 +56,14 @@ Pokud máte server Apache a přístup do `.htaccess`, obvykle stačí přidat n�
 
 ```htaccess
 # redirect na https
+RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-Dost vše zjednodušuji a dívám se na to hlavně vývojářsky. Pokud opravdu budete přecházet, držte se výborného kontrolního [seznamu Jaroslava Hlavinky](https://jakdelatseo.cz/checklist-pro-prechod-z-http-na-https/) nebo [detailního průvodce Dušana Janovského](https://www.jakpsatweb.cz/https.html).
+První řádek (`RewriteEngine On`) budete někde potřebovat a někde ne. Zápis se každopádně může lišit hosting od hostingu. Mrkněte se do kdyžtak [detailního průvodce Dušana Janovského](https://www.jakpsatweb.cz/https.html).
+
+Dost vše zjednodušuji a dívám se na to hlavně vývojářsky. Pokud opravdu budete přecházet, držte se výborného kontrolního [seznamu Jaroslava Hlavinky](https://jakdelatseo.cz/checklist-pro-prechod-z-http-na-https/).
 
 Já z nich při převádění Vzhůru dolů vycházel. I tak jsem se ale nevyhnul některým bolestným zkušenostem. Pojďme si je teď vyslechnout.
 
