@@ -44,15 +44,17 @@ Budu jen velmi stručný, protože skvělých detailních návodů jsou internet
 
 Certifikát je možné dostat zdarma, některé české hostingy to ale (samozřejmě) nějak drobně zpoplatňují.
 
+Například u mého aktuálního hostingu – Savana.cz – je zřízení SSL certifikátů Let's Encrypt bezplatné. Stačí si to [naklikat v uživatelském rozhraní](https://www.savana.cz/napoveda/ssl-certifikaty/search/ssl-certifikaty/jak-pridat-ssl-certifikat-lets-encrypt/).
+
 ### 2) Odstraňte odkazy na nezabezpečený HTTP obsah {#jak-2}
 
-Opravte odkazy na zdroje stránky - CSS, JS, obrázky – ale taky raději o odkazy uvnitř webu, vložené například přes nějaký editor redakčního systému. 
+Opravte odkazy na zdroje stránky – CSS, JS, obrázky – ale taky raději odkazy uvnitř webu, vložené například přes editor redakčního systému. Občas je kvůli tomu potřeba sáhnout do databáze.
 
 ### 3) Přesměrujte všechno z HTTP na HTTPS {#jak-3}
 
 Pokud máte server Apache a přístup do `.htaccess`, obvykle stačí přidat něco takového:
 
-```
+```htaccess
 # redirect na https
 RewriteCond %{HTTPS} off
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
