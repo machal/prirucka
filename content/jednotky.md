@@ -1,4 +1,4 @@
-# Jednotky pro tvorbu webu: em, rem, %, px, vh, vw
+# Jednotky pro tvorbu webu (em, rem, %, px, vh, vw): Kde použít jakou?
 
 Pojďme si tady shrnout všechny CSS jednotky použitelné v dnešním webdesignu. A na příkladu ukázat, k čemu se která hodí.
 
@@ -6,25 +6,27 @@ Za základní jednotku pro svůj způsob práce považuji jednotky relativní k 
 
 <!-- AdSnippet -->
 
-Ani `rem` není žádný Superman mezi CSS jednotkami. Prostě se nehodí na vše. Pro různé účely ještě budeme potřebovat i Spidermana, Batmana a další jejich kolegy a kolegyně.
+Ani ty ale nepovažuji za žádné Supermany mezi CSS jednotkami. Prostě se nehodí na vše. Pro různé účely ještě budeme potřebovat i Spidermana, Batmana a další jejich kolegy a kolegyně.
 
 
 ## Rychlý přehled použitelných jednotek {#prehled}
 
 Zapamatujte si hlavně následující šestici.
 
-| Jednotka | Jak počítá rozměr?                         |
-| -------- | ------------------------------------------ |
-| `rem` | relativně k velikosti písma na prvku `<html>` |
-| `em`  | relativně k velikosti písma na elementu       |
-| `px`  | CSS pixel                                     |
-| `%`   | procenta relativně k rodičovskému elementu    |
-| `vw`  | procento ze šířky okna prohlížeče             |
-| `vh`  | procento z výšky okna prohlížeče              |
+| Jednotka | Jak počítá rozměr?                            |
+| -------- | --------------------------------------------- |
+| `rem`    | relativně k velikosti písma na prvku `<html>` |
+| `em`     | relativně k velikosti písma na elementu       |
+| `px`     | CSS pixel                                     |
+| `%`      | procenta relativně k rodičovskému elementu    |
+| `vw`     | procento ze šířky okna prohlížeče             |
+| `vh`     | procento z výšky okna prohlížeče              |
 
-Existují samozřejmě ještě další jednotky: namátkou `pt`, `ex` nebo `vmax`. Buď je ale jejich využitelnost malá, nebo skoro žádná, takže pro zjednodušení je zatím úplně vynechám a vrátím se k nim na konci.
+Existují samozřejmě ještě další: namátkou `pt`, `ex` nebo `vmax`. Buď je ale jejich využitelnost malá, nebo skoro žádná, takže pro zjednodušení je zatím úplně vynechám.
 
 ## Které jednotky v jakých situacích použít? {#scenare}
+
+V tomhle textu dost dbám na to, abychom si nerozbili přirozenou dědičnost velikosti písma v prohlížečích. Kromě nás, autorů stránek, si ji totiž může chtít změnit uživatel a občas ji mění i prohlížeče. Proto vám pro různá použití doporučuji různé jednotky:
 
 - Základní velikost písma v dokumentu: [%](#velikost-pisma-html)
 - Rozměry vycházející z velikosti písma: [rem](#rem)
@@ -33,6 +35,8 @@ Existují samozřejmě ještě další jednotky: namátkou `pt`, `ex` nebo `vmax
 - Výška řádku: [číslem bez jednotky](#vyska-radku)
 - Rámečky, dekorace: [px](#dekorace)
 - Typografie podle velikosti okna: [vw](#viewport-typografie)
+
+Je ale možné, že si skoro všude vystačíte s `px`. K tomu se dostávám [na konci textu](#px).
 
 Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější scénáře nastavování rozměrů v CSS. Projdeme si to v textu, ale tady je ještě online: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
 
@@ -49,20 +53,20 @@ html {
 }
 ```
 
-Nastavíte tak o čtvrtinu větší písmo, než je výchozí. Skoro u všech prohlížečů tedy `20px`.
+Nastavíte tak o čtvrtinu větší písmo, než je výchozí. Skoro u všech prohlížečů tedy `20px`. V Kindle 3 by to bylo `33px`. Je důležité si uvědomit, že je to v pořádku. Pokud prohlížeč nastavuje jinak veliké písmo, dělá to z rozumných důvodů.
 
-### Proč ne px? Protože lidé si zvěšují písmo v prohlížečích  {#proc-ne-px}
+### Proč ne px? Protože lidé si zvětšují písmo v prohlížečích  {#proc-ne-px}
 
-Pokud bychom to udělali, našim milým uživatelům bychom zakázali měnit si výchozí velikost písma v prohlížečích.
+Pokud bychom už tady použili `ps`, našim milým uživatelům bychom zakázali měnit si výchozí velikost písma v prohlížečích.
 
-Pozor, nebavíme se o „zoomování“, ale zvětšení velikosti písma pro všechny weby. Taková věc existuje v prohlížečích nebo v operačních systémech. A ano, lidé to používají. Asi taky jednou budeme. Dělají to totiž lidé s horším zrakem nebo třeba jen méně kvalitními displeji.
+Pozor, nebavíme se o „zoomování“, ale zvětšení velikosti písma pro všechny weby. Taková věc stále existuje v prohlížečích nebo v operačních systémech. A ano, lidé to používají. Asi taky jednou budeme. Dělají to totiž lidé s horším zrakem nebo třeba jen méně kvalitními displeji.
 
-Vývojář z Archive.org Evan Minto to měřil a zjistil, že velikost písma má v prohlížeči změněnou 3 % jejich uživatelů. Jak trefně přirovnává, je to více než podíl jejich návštěvníků, používajících Internet Explorer, Edge, nebo Operu Mini. Protože chceme vytvářet řešení s co nejširším uživatelským zásahem, neměli bychom to ignorovat. Zdroj: [medium.com/@vamptvo/5cfb20831773](https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773)
+Vývojář z Archive.org Evan Minto to měřil a zjistil, že velikost písma si v prohlížeči změnilo 3 % jejich uživatelů. Jak trefně přirovnává, je to více než podíl návštěvníků používajících Internet Explorer, Edge, nebo Operu Mini. Protože chceme vytvářet řešení s co nejširším uživatelským zásahem, neměli bychom to ignorovat. Zdroj: [medium.com/@vamptvo/5cfb20831773](https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773)
 
 
 ## Rozměry vycházející z velikosti písma: rem  {#rem}
 
-Velikost písma, vnější a vnitřní okraje, ale i další vlastnosti v dokumentu a komponentách prostě nastavuji v `rem`. `1rem` (1 root `em`) obsahuje výchozí velikost písma nastavenou autorem pro dokument (a případně ještě upravenou uživatelem nebo prohlížečem, jak už jsme viděli).
+Velikost písma, vnější a vnitřní okraje, ale i další vlastnosti v dokumentu a komponentách prostě nastavuji v `rem`. `1rem` (1 root `em`) obsahuje výchozí velikost písma nastavenou autorem pro dokument (a případně ještě upravenou uživatelem nebo prohlížečem, jak už jsme viděli). Pokud to nezměníme pomocí `%`, platí tedy, že `1rem = 16px`.
 
 ```css
 p { margin-bottom: 1rem; }
@@ -77,19 +81,20 @@ Používat `rem` je výhodné i z pohledu vývojáře:
 
 - V `1rem` máte uloženou základní velikost písma a nemusíte si pamatovat, jestli je to  12, 14, 16, nebo kolik vlastně pixelů.
 - Šířka layoutu nastavená v `rem` bude dodržovat optimální délku textu, i když si uživatel písmo zvětší. <span class="ebook-only" markdown="1">(Vzpomeňte si na text o [typografii](typografie.md).)</span>
-- Díky `rem` je také možné autorsky zvětšit celý dokument. <span class="ebook-only" markdown="1">(Budeme rozebírat v části o [autorském „zoomování“ dokumentu](rem-em-zoom.md).</span>
+- Díky `rem` je také možné zvětšit celý dokument na konkrétních rozmezích designu. <span class="ebook-only" markdown="1">(Budeme rozebírat v části o [autorském „zoomování“ dokumentu](rem-em-zoom.md).</span>
 
 
 ### Co když dostávám podklady v px? {#podklady-v-px}
 
-Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože grafici používají podobné jednotky. Jak už jsem ale napsal, nastavovat v `px` cokoliv odvozeného od hlavní velikosti písma komplikuje život mnohým uživatelů.
+Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože grafici dodávají podklady v takových jednotkách. Jak už jsem ale napsal, nastavovat v `px` cokoliv odvozeného od hlavní velikosti písma komplikuje život mnohým uživatelů.
 
-Jak z tohodle vnitřního konfliktu ven? Může vám pomoci automatická úprava CSS. Existují minimálně dva pluginy do PostCSS, které kód napsaný v `px` převedou do `rem`:
+Jak z konfliktu design versus přístupnost ven? Může vám pomoci automatická úprava CSS. Existují minimálně dva pluginy do PostCSS, které kód napsaný v `px` převedou do `rem`:
 
-- Plugin „postcss-pxtorem“ zařídí převod pro vybrané vlastnosti. Z `font-size: 32px` prostě udělá `font-size: 2rem`. [github.com/cuth/postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
-- Plugin „postcss-line-height-px-to-unitless“ zase například převede výšku řádku do bezjednotkové podoby: Z `font-size: 16px; line-height: 26px;` udělá `font-size: 16px;  line-height: 1.63;`. [github.com/makotot/postcss-line-height-px-to-unitless](https://github.com/makotot/postcss-line-height-px-to-unitless)
+- Plugin „postcss-line-height-px-to-unitless“ například převede výšku řádku do bezjednotkové podoby: Z `font-size: 16px; line-height: 26px;` udělá `font-size: 16px;  line-height: 1.63;`. [github.com/makotot/postcss-line-height-px-to-unitless](https://github.com/makotot/postcss-line-height-px-to-unitless)
+- Plugin „postcss-pxtorem“ zařídí zase převod pro vybrané vlastnosti. Z `font-size: 16px` prostě udělá `font-size: 1rem`. [github.com/cuth/postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
 
-`rem` tedy považuji za hlavní jednotku pro tvorbu rozhraní. Velmi se ale hodí také `em`.
+`rem` tedy považuji za hlavní jednotku pro tvorbu rozhraní. Velmi se nám ale také hodí `em`.
+
 
 ## Rozměry pružných komponent: em {#em}
 
@@ -112,11 +117,13 @@ p {
 
 Vidíte, že `1em` znamená v různých místech dokumentu různé věci. Někde to může být fajn: Třeba v případě, že kódujete komponentu, jejíž velikost *má být* určená právě velikostí písma na rodičovském prvku.
 
-Ale vývojářům se s `em` samozřejmě pracuje trošku hůř. Ne každý se chce stát pochodující kalkulačkou pro převod mezi `em` a pixely.
+Ale vývojářům se s „emky“ samozřejmě pracuje trošku hůř než s „remky“. Ne každý se chce stát pochodující kalkulačkou pro převod mezi `em` a pixely.
 
 ### Jen pozor, em není čtverčík {#em-neni-ctvercik}
 
-„Čtverčík“ je typografická jednotka, která se počítá ze šířky velkého „M“. `em` by pak bylo pro různá písma různě velké.  W3C ovšem `em` definovalo jinak. Jeho velikost v kořeni dokumentu je ve všech prohlížečích a při použití jakéhokoliv písma stejná – `16px`, pokud to ovšem nezmění uživatel, prohlížeč nebo autor stránky. [vrdl.in/oyqwn](https://diskuse.jakpsatweb.cz/?action=vthread&forum=19&topic=138070)
+„Čtverčík“ je typografická jednotka, která se počítá ze šířky velkého „M“. `em` se občas nepřesně jako čtverčík označuje. Jenže to by pak bylo pro různá písma různě velké.  
+
+Není. W3C `em` definovalo jinak. Jeho velikost v kořeni dokumentu je ve všech prohlížečích a při použití jakéhokoliv písma stejná – `16px`. Pokud to ovšem nezmění někdo ze zákeřné trojice uživatel, prohlížeč či autor stránky. [vrdl.in/oyqwn](https://diskuse.jakpsatweb.cz/?action=vthread&forum=19&topic=138070)
 
 
 ## Media Queries: em {#media-queries}
@@ -127,7 +134,7 @@ V textu [o Media Queries](media-queries-tipy.md) píšu, proč nepoužít `px` (
 @media screen and (min-width: 30em) { }
 ```
 
-Opět je ale možné použít automatický převod z px, protože (i mě) se tady s CSS pixely pracuje lépe.
+Opět je ale možné použít automatický převod z `px`, protože (i mě) se tady s CSS pixely pracuje lépe. Pomůže plugin do PostCSS jménem „postcss-em-media-query“. [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
 
 
 ## Výška řádku: číslem bez jednotky {#vyska-radku}
@@ -140,7 +147,9 @@ h1 {
 }
 ```
 
-Výška řádku je jedenapůlnásobek velikosti písma nadpisu první úrovně. Proč je to lepší než nastavení „natvrdo“ v `rem`, `em` nebo `px`? Pokud se autorsky nebo uživatelsky v některém kontextu změní velikost písma, nemusíte pak už přenastavovat výšku řádku.
+V ukázce je výška řádku prostě jedenapůlnásobek velikosti písma nadpisu první úrovně. A je nám pak úplně jedno, jak si který čert nastaví velikost písma.
+
+Proč je to lepší než nastavení „natvrdo“ v `rem`, `em` nebo `px`? Pokud se autorsky nebo uživatelsky v některém kontextu změní velikost písma, nemusíte pak už měnit nastavní výšky řádku.
 
 
 ## Layout: procenta, ale i další jednotky {#layout}
@@ -153,18 +162,18 @@ Pro layout se dobře hodí procenta. Raději připomínám, že se vždy počít
 }
 ```
 
-Použitelných jednotek pro layout je ale více: 
+Použitelných jednotek pro layout je ale více:
 
-- Procenta nebo `vw` se roztahují podle šířky okna. 
-- `rem` a `em` podle velikosti písma. 
-- Občas se hodí i `px`. 
-- Ve flexboxu je možné používat i absolutní jednotky (`flex: 1`).
-- V CSS Grid zase takzvané podílové jednotky (`)
+- Procenta nebo `vw` se roztahují podle šířky okna, `vh` podle jeho šířky.
+- `rem` a `em` podle velikosti písma.
+- Občas se hodí i `px`.
+- Ve flexboxu je možné používat také absolutní jednotky (`flex: 1`).
+- V CSS Grid zase takzvané podílové jednotky (`grid-template-columns: 3fr 1fr`).
 
 
 ## Rámečky, dekorace: px {#dekorace}
 
-Doporučuji jej používat jen tam, kde potřebujete precizní vyjádření v pixelech. Třeba pro rámečky mezi prvky navigace:
+Doporučuji `px` používat jen tam, kde potřebujete precizní vyjádření v pixelech. Třeba pro rámečky mezi prvky navigace:
 
 ```css
 .nav-item {
@@ -176,6 +185,9 @@ Doporučuji jej používat jen tam, kde potřebujete precizní vyjádření v pi
 Jen pro jistotu připomínám, že už nejde o hardwarový pixel. Psal jsem o tom v první kapitole v části o [CSS pixelu](zmeny-css-pixel.md).
 </div>
 
+<div class="web-only" markdown="1">
+Jen pro jistotu připomínám, že už nejde o hardwarový pixel, ale o referenční nebo takzvaný [CSS pixel](css-pixel.md).
+</div>
 
 ## Typografie podle velikosti okna: vw {#viewport-typografie}
 
@@ -193,6 +205,26 @@ Například tento nadpis z příkladu bude mít velikost písma `2rem` a k tomu 
 Triky s responzivní typografií se více zabývám v přespříští podkapitole.
 </div>
 
-Na závěr ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
+<div class="web-only" markdown="1">
+Další triky s responzivní typografií se více zabývám například v článku o [elastická typografii](reseni-elasticka-typografie.md).
+</div>
+
+A ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
+
+## Co když chci přesto používat hlavně px? {#px}
+
+Nemyslím si, že zemře mnoho koťátek, když to uděláte. Použití `px` je u velké části typů designu na implementaci výrazně pohodlnější.
+
+Přesto si udělejte před začátkem kódování jasno, zda vám nevadí nic z následujícího seznamu:
+
+- Písmo je dostatečně veliké tak, aby je přečetla většina uživatelů. Jako základ se obecně doporučuje alespoň oněch `16px`.
+- Uživatelům, kteří si změnili písmo v systému nebo prohlížeči (na Archive.org asi 3 %), se jejich nastavení na vašem webu neprojeví. Zůstává jim možnost zoomovat celou stránku.
+- Nevadí vám, že změna velikosti písma nebude správně reflektována v Media Queries. <span class="ebook-only" markdown="1">(Řešíme v [tipech k Media Queries](media-queries-tipy.md).</span>
+- V návrhu designu se nepočítá s elastickou typografií, zvětšující se podle viewportu.
+- Designér nebo designérka rovněž nepočítal s pružnou změnou velikosti komponenty podle velikosti písma rodiče, ani s globální změnou velikosti písma v určitých breakpointech designu.
+
+<div class="ebook-only" markdown="1">
+Způsob práce při návrhu designu, který v knížce ukazuji by v mnoha položkách tohoto kontrolního seznamu úpěl, skřípal nebo přímo selhal. Budeme se proto v dalších textech `px` spíše vyhýbat.
+</div>
 
 <!-- AdSnippet -->
