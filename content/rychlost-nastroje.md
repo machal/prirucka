@@ -20,6 +20,9 @@ Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů n
 
 Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat, a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu kešování měřicího skriptu Google Analytics. Jinak je to ale skvělý nástroj.  [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
 
+<span class="web-only" markdown="1">
+V příručce najdete samostný [článek o PageSpeed Insights](pagespeed-insights.md).
+</span>
 
 ## Google Analytics
 

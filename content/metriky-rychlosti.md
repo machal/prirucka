@@ -12,7 +12,7 @@ Na začátek bych rád zmínil, že metriky se dají získat dvěma způsoby:
 
 ### Syntetická měření {#syntetika} 
 
-Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní prohlížeč, rozlišení, rychlost internetu a tak dále. Tohle je nyní převládající technika. Pracují tak všechny [nástroje](rychlost-nastroje.md), o kterých jsem psal: PageSpeed Insights, WebpageTest.org a další.
+Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní prohlížeč, rozlišení, rychlost internetu a tak dále. Tohle je nyní převládající technika. Pracují tak všechny [nástroje](rychlost-nastroje.md), o kterých jsem psal: [PageSpeed Insights](pagespeed-insights.md), WebpageTest.org a další.
 
 <!-- AdSnippet -->
 

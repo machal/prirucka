@@ -29,7 +29,7 @@ Všechny důvody jsem detailně rozebral v článku [„Proč řešit rychlost n
 
 ## Nástroje a metriky
 
-Jako designéři a marketéři nemusíte jít moc do hloubky. Pro začátek stačí Google Analytics a PageSpeed Insights.
+Jako designéři a marketéři nemusíte jít moc do hloubky. Pro začátek stačí Google Analytics a [PageSpeed Insights](pagespeed-insights.md).
 
 ### Nástroje pro analýzu rychlosti
 

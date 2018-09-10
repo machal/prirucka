@@ -74,7 +74,7 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 - Grafika podporuje HD displeje typu Retina  
 <small>Obyčejná grafika nebude na vysokopacitních displejích vypadat dobře. Trochu teorie [o problému v článku](https://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"). V praxi potřebujete [SVG](svg.md) a [atribut `srcset`](srcset-sizes.md).</small>
 - Rychlost načítání: požadované skóre v PageSpeedInsights  
-<small>S optimalizací pomůže [Pagespeed Insights tester](https://developers.google.com/speed/pagespeed/insights/?hl=cs). Čím vyšší skóre, tím líp. 100/100 tam ale dosáhnout obvykle nejde.</small>
+<small>S optimalizací pomůže [Pagespeed Insights tester](pagespeed-insights.md). Čím vyšší skóre, tím líp. 100/100 tam ale dosáhnout obvykle nejde.</small>
 - Rychlost načítání: požadovaný SpeedIndex z WebpageTest.org  
 <small>[SpeedIndex](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) číslo, které se pokouší vyjádřit rychlost webu. Čím vyšší, tím horší. Ideální stav je někdo kolem 1000. Testujte na [WebpageTest.org](http://www.webpagetest.org/).</small>
 - Šablony pro chybové stránky 404 a 50x  
