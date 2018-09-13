@@ -14,11 +14,19 @@ Obsah článku: [Proč jej používat?](#proc) – [Co umí analyzovat](#co-umi)
 
 Lighthouse vám pomůže najít problémy na úrovni designu a frontendového kódu, které nějakým způsobem škodí nebo mohou škodit přísunu uživatelů na web a jeho použitelnosti.
 
-Provozovatel největšího světového vyhledavače jej připravil pravděpodobně proto, aby webmasterům pomohl s odstraňováním chyb, které jim mohou snižovat návštěvnost nebo zhoršovat spokojenost návštěvníků.
+Za jeho výhody považuji především:
+
+- Snadnou dostupnost komukoliv.
+- Rychlé výstupy.
+- Rozumné rady.
 
 <!-- AdSnippet -->
 
-Nejde tak do hloubky jako propracovanější nástroje, které analyzují jednotlivé oblasti. Ale je snadno spustitelný (a to i automaticky) a zdarma.
+Ale bavme se i o nevýhodách:
+
+- Dává spíše základní přehled a bez pokročilejších nástrojů se pro vážnější audit neobejdeme.
+- Jeho výsledky jsou obvykle ovlivněné aktuálním výkonem našeho počítače, pokud jej na něm pouštíme.
+- Dělá syntetickou analýzu v jednom umělém uživatelském kontextu. Zdaleka nám tedy nedá obrázek o celé šíři problémů v naší uživatelské základně.
 
 
 ## Co umí analyzovat? {#co-umi}
@@ -45,7 +53,7 @@ Ligthouse je balíček pro Node.js, proto je způsobů jeho použítí fakt hodn
 
 Lighthouse se ve většině případu použití spouští na vašem počítači a dělá se jen jeden test, takže se výsledky testů mohou lišit podle momentálního vytížení. Hlavně v oblasti *Performance*.
 
-**TODO obrázek**
+*TODO obrázek*
 
 V testech jsou na výběr dvě zařízení:
 
@@ -59,12 +67,39 @@ Se zajímavou možností přišel Lighthouse [ve verzi 3]( https://developers.go
 
 No a poslední možnost – *Clear storage* – před testy smaže obsah lokálních uložišť, aby měl Lighthouse prožitek úplně nového uživatele.
 
+## Příkazová řádka {#prikazovka}
+
+Jak už víte, Lighthouse je možné nainstalovat na příkazovou řádku:
+
+```bash
+npm install -g lighthouse
+```
+
+Otestovat konkrétní web je pak snadné:
+
+```bash
+lighthouse https://www.vzhurudolu.cz --view
+```
+
+Tohle jen otevře Chrome nejprve pro otestování a následně pro zobrazení reportu (parametr `--view`).
+
+Další příkaz pak uloží výstupy do formátu JSON:
+
+```bash
+lighthouse https://www.vzhurudolu.cz --output json  --output-path vzhurudolu-report.json
+```
+
+Zpracování JSONu (nebo CSV, který Lighthouse nabízí také) pak je možné dělat automaticky. Toho je možné využít při pravidelném spouštění.
+
 ## Pravidelné spouštění {#pravidelne}
 
-*TODO*
+Optimální varianta je samozřejmě pravidelné spouštění Ligthouse, tak abyste na něj nemuseli myslet. Kromě vlastního řešení tady máte několik možností:
 
-- Příkazová řádka
-- Nástroje jako SpeedCurve, Etnetera něco…
+- Integrace do lokální automatizace – Gulpu ([ukázka](https://github.com/GoogleChrome/lighthouse/tree/master/docs/recipes/gulp), Gruntu (pomocí [grunt-shell](https://github.com/sindresorhus/grunt-shell), Webpacku (asi pomocí [webpack-lighthouse-plugin](https://github.com/addyosmani/webpack-lighthouse-plugin))).
+- Řešení pomocí CI (Continuous integration) – například pomocí [Lighthouse CI](https://github.com/ebidel/lighthouse-ci).
+- Hotové vizualizační nástroje jako [SpeedCurve](https://speedcurve.com/), [Calibre](https://calibreapp.com/), [Treo](https://treo.sh/) a jim podobné.
+
+
 
 ## Shrnutí
 
