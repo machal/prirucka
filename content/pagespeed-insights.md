@@ -10,7 +10,6 @@ Obsah článku: [Použití](#pouziti) – [Dvě rady](#rady) – [Co ukazuje a p
 
 PageSpeed Insights (dále jen PSI) ale také může méně zasvěcené zbytečně stresovat. Hlavní problém je v tom, že řada lidí zde bezhlavě  usiluje o stoprocentní hodnocení, aniž by znala širší kontext problematiky rychlosti načítání webů.
 
-
 ## Použití {#pouziti}
 
 Použití je snadné jako facka. Prostě jděte na adresu nástroje a zadejte tam adresu vašeho webu: [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
@@ -28,7 +27,7 @@ Na PSI je skvělé, že kombinuje dva zdroje dat:
 
 ### Neusilujte o stoprocentní hodnocení {#100procent}
 
-Usilovat o hodnocení 100 ze 100 v políčku *Optimalizace* smysl nedává. (I když je takových návodů plný internet.) 
+Usilovat o hodnocení 100 ze 100 v políčku *Optimalizace* smysl nedává. (I když je takových návodů plný internet.)
 
 PageSpeed Insights jako „chyby“ hlásí například i „špatně“ nastavené kešování skriptů třetích stran. Jenže ono je to v principu vlastně dobře a navíc s tím nic neuděláte.
 
@@ -73,7 +72,7 @@ Hodí se vědět, že [Chrome UX report se aktualizuje jednou za měsíc](https:
 
 ### 3) Optimalizace {#vlastnosti-3}
 
-Jak si web stojí při porovnání s kontrolním seznamem důležitých optimalizací, který má PSI vestavěný? 
+Jak si web stojí při porovnání s kontrolním seznamem důležitých optimalizací, který má PSI vestavěný?
 
 Pokud se v problematice neorientujete, zde je rychlý návod na vyhodnocení:
 
@@ -93,7 +92,6 @@ A zbývá nám pátý bod. Doporučení k úpravám webu.
 
 ![PageSpeed Insights - bod 5](dist/images/original/pagespeed-insights-numbers-2.jpg)
 
-
 ### 5) Optimalizační návrhy {#vlastnosti-5}
 
 Tady se dozvíte, co byste mohli (vy nebo vaši vývojáři) na stránce vylepšit. Opět platí: Pokud zde PSI hlásí prostor k vylepšení, neznamená to, že nějaký nutně musí být.
@@ -112,6 +110,6 @@ Shrňme si to:
 - PageSpeed Insights používejte hlavně pro občasné ujištění, zda váš web není pomalý.
 - Testujte všechny důležité vstupní stránky.
 - Pokud jste v červených číslech, je čas zabývat se rychlostí webu.
-- Neusilujte o skóre 100 / 100. V praxi je obvykle nedosažitelné. Každá zelená hodnota je skvělý výsledek a značí, že byste měli začít používat [pokročilejší nástroje](rychlost-nastroje.md) jako je Lighthouse nebo WebpageTest.
+- Neusilujte o skóre 100 / 100. V praxi je obvykle nedosažitelné. Každá zelená hodnota je skvělý výsledek a značí, že byste měli začít používat [pokročilejší nástroje](rychlost-nastroje.md) jako je [Lighthouse](lighthouse.md) nebo WebpageTest.
 
 <!-- AdSnippet -->

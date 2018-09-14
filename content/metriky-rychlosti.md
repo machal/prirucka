@@ -95,9 +95,9 @@ Když vezmu příklad e-shopu a detailu produktu: FCP nastává ve chvíli kdy u
 
 Hlavním obsahem je samozřejmě pro každou stránku něco jiného – text, obrázek, SVG nebo klidně nějaký graf či video.
 
-Událost je důležitá pro informování uživatele kladoucího si otázku „Je to užitečné?“. 
+Událost je důležitá pro informování uživatele kladoucího si otázku „Je to užitečné?“.
 
-FCP zobrazuje Lighthouse od Google pod názvem „First Meaningful Paint“.
+FCP zobrazuje [Lighthouse](lighthouse.md) od Google pod názvem „First Meaningful Paint“.
 
 
 ## Skóre Speed Index {#SpeedIndex}
@@ -137,7 +137,7 @@ Ptáte se, kdy stránka reaguje *spolehlivě*? Je to v momentě, kdy se načetly
 
 Odborně vzato nesmí být vykreslovací jádro prohlížeče zatíženo dlouhotrvajícími úkoly. „[Long task](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics#long_tasks)“ je definován jako zaseknutí vykreslovacího jádra na více než 50 ms.
 
-TTI je odpovědí na otázku uživatele „Je to použitelné?“. 
+TTI je odpovědí na otázku uživatele „Je to použitelné?“.
 
 TTI jsou vlastně dvě různé metriky:
 
@@ -177,7 +177,7 @@ V Analytics je [přesně definována](https://support.google.com/analytics/answe
 - [Google Analytics: průvodce pro přidání webu](https://www.vzhurudolu.cz/prirucka/google-analytics-pridani)
 </div>
 
-Celkovou dobu načtení ukazují snad všechny nástroje. Z těch, které používám já, jsou to Chrome DevTools, Lighthouse nebo WebpageTest. WebpateTest ale ukazuje těch metrik pro finalizaci dokumentu víc, takže si v tom pojďme udělat pořádek.
+Celkovou dobu načtení ukazují snad všechny nástroje. Z těch, které používám já, jsou to Chrome DevTools, [Lighthouse](lighthouse.md) nebo WebpageTest. WebpateTest ale ukazuje těch metrik pro finalizaci dokumentu víc, takže si v tom pojďme udělat pořádek.
 
 ### WebpageTest.org: Load Time, Document complete a Fully loaded {#wpt-load}
 
@@ -195,7 +195,7 @@ Budu vycházet z vysvětlení [Patricka Meenana](https://www.webpagetest.org/for
 
 Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatovali metriky všechny a lpěli na nich. Zkusím vám na závěr doporučit jednoduchou strategii:
 
-- Hlídejte si hlavně Speed Index, Time to First Byte (TTFB) a Load. První dvě vám ukáže nástroj Lighthouse, který je také vestavěný v Chrome. Poslední metriku uvidíte v záložce „Network“ Chrome DevTools.
+- Hlídejte si hlavně Speed Index, Time to First Byte (TTFB) a Load. První dvě vám ukáže nástroj [Lighthouse](lighthouse.md), který je také vestavěný v Chrome. Poslední metriku uvidíte v záložce „Network“ Chrome DevTools.
 - Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a marketéry.
 - Větší weby a budoucnost: RUM metriky a automatizace. Dívejte se po nástrojích, které vám měření zautomatizují. Hledejte řešení s měřením reálných uživatelů (RUM). Příkladem je třeba [SpeedCurve](https://speedcurve.com/).
 - Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org. Viz můj [článek o nástrojích](rychlost-nastroje.md).
