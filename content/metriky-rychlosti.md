@@ -23,7 +23,7 @@ Daleko lepší způsob metodika: Do stránky si vložíte skript, který měří
 
 <figure>
 <img src="dist/images/original/pagespeed-insights-chrome-ux.jpg" alt="">
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Nástroj PageSpeed Insights zobrazuje údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup*
 </figcaption> 
 </figure>

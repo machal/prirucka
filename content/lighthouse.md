@@ -22,7 +22,7 @@ Za jeho výhody považuji především:
 
 Ale bavme se i o nevýhodách:
 
-- Dává spíše *základní přehled* a bez pokročilejších nástrojů se v případě vážnějších auditů neobejdeme. Psal jsen například o nástrojích pro [měření rychlosti](rychlost-nastroje.md).
+- Dává spíše *základní přehled* a bez pokročilejších nástrojů se v případě vážnějších auditů neobejdeme. Psal jsem například o nástrojích pro [měření rychlosti](rychlost-nastroje.md).
 - Výsledky audit rychlosti webu jsou obvykle *ovlivněné aktuálním výkonem*  počítače, na kterém jej spouštíme.
 - Dělá jen *syntetickou analýzu* v jednom umělém uživatelském kontextu. Zdaleka nám tedy nedá obrázek o celé šíři problémů v naší uživatelské základně. Data od uživatelů nám částečně dá například jiný nástroj od Google – [PageSpeed Insights](pagespeed-insights.md).
 
@@ -74,7 +74,7 @@ Se zajímavou možností přišel Lighthouse [ve verzi 3]( https://developers.go
 - *Simulated* – rychlejší test, navíc s lépe porovnatelnými výsledky. Znamená to, že se web otestuje na vašem aktuálním připojení i výkonu procesoru. Pak se čísla přepočítají, jak by asi vypadaly na slabším stroji. Tohle je myslím lepší používat.
 - *Applied* – přesnější, ale pomalý test. Připojení a procesor se uměle zpomalí a pak teprve Lighthouse operuje. Jde o původní metodu.
 
-No a poslední možnost – *Clear storage* – před testy smaže obsah lokálních uložišť, aby Lighthouse dokázal zachytit prožitek úplně nového uživatele.
+No a poslední možnost – *Clear storage* – před testy smaže obsah lokálních úložišť, aby Lighthouse dokázal zachytit prožitek úplně nového uživatele.
 
 ## Příkazová řádka {#prikazovka}
 
@@ -97,6 +97,11 @@ Další příkaz pak uloží výstupy do formátu JSON:
 ```bash
 lighthouse https://www.vzhurudolu.cz --output json  --output-path vzhurudolu-report.json
 ```
+
+<div class="related web-only" markdown="1">
+- [Nástroje pro analýzu rychlosti](rychlost-nastroje.md)
+- [PageSpeed Insights](pagespeed-insights.md)
+</div>
 
 Zpracování JSONu (nebo CSV, který Lighthouse nabízí také) pak je možné dělat automaticky. Toho je možné využít při pravidelném spouštění.
 
