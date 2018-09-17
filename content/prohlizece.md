@@ -1,20 +1,10 @@
 # Prohlížeče v Česku
 
-Vstupem Chrome na desktop a nástupem mobilů začaly nové Browser Wars. Od roku 2017 ale rostou i další nové prohlížeče – Samsung Browser a v ČR pak prohlížeč od Seznam.cz.
+Vstupem Chrome na desktop a nástupem mobilů začaly nové Browser Wars. Od roku 2017 ale rostou i další nové prohlížeče – Samsung Browser a v ČR pak ten od Seznam.cz.
 
-Pro webaře může být tohle prostředí trochu nepřehledné, proto aktualizuji starší text. Podívejme se na 
+Pro webaře může být tohle prostředí trochu nepřehledné, proto aktualizuji starší text.
 
-Nejprve tři zásadní fakta z poslední doby:
-
-1. **Chrome požírá trh.**    
-Už nyní se v Česku dostal přes třetinu zhlédnutých stránek. Ostatní prohlížeče stagnují nebo klesají.
-2. **Staré Explorery už skoro vymřely.**    
-Každý z Internet Explorerů kromě verze 11 už má podíl pod půl procenta a rychle klesá. Dnes je to poprvé co vám vyloženě nedoporučím pro ně dělat pracnější [fallbacky](fallback.md).
-3. **Mobilní zařízení mají přes pětinu celku.**    
-A více než polovina zhlédnutí stránek na mobilech je opět z Chrome.
-
-
-## Desktop: Chrome jako jediný masivně roste. Na desktopu má více než třetinový podíl
+## Počítače: Chrome jako jediný masivně roste. Na desktopu má větší než poloviční podíl  {#pocitace}
 
 <figure>
 <img src="../dist/images/original/prohlizece-desktop.jpg" alt="Podíl desktopových prohlížečů">
@@ -23,15 +13,17 @@ A více než polovina zhlédnutí stránek na mobilech je opět z Chrome.
 </figcaption>
 </figure>
 
-Poznámky:
+*Chrome* samozřejmě ukousl největší část trhu. Dále je ale vidět, že v Česku na desktopech spíše stagnuje a rostou hlavně nové menší prohlížeče.
 
-- Chrome samozřejmě ukousl největší část trhu. Dále je ale vidět, že v Česku na desktopech spíše stagnuje a rostou hlavně nové menší prohlížeče. 
-- Firefox se drží na druhém místě, ale níže je vidět, že stále klesá.
-- Internet Explorer – ještě stále je tu s námi. U tohoto webu jde z 97 % o verzi 11 a stejné to bude i u jiných webů. Dobrá zpráva tedy je, že u většiny projektů rozhodně není potřeba optimalizovat pro verze 8, 9 ani 10.
-- Edge, nový moderní prohlížeč od Microsoftu, roste. Ale pomalu.
-- Opera se dlouho držela kolem čtyřprocentního podílu. S nástupem „nových malých“ ale také začala klesat.
+*Firefox* se drží na druhém místě, ale níže je vidět, že stále klesá.
 
-## Mobily: pětinový podíl na zhlédnutích stránek a dominance Chrome
+*Internet Explorer* – ještě stále je tu s námi. U tohoto webu jde z 97 % o verzi 11 a stejné to bude i u jiných webů. Dobrá zpráva tedy je, že u většiny projektů rozhodně není potřeba optimalizovat pro verze 8, 9 ani 10.
+
+*Edge*, nový moderní prohlížeč od Microsoftu, roste. Ale pomalu.
+
+*Opera* se dlouho držela kolem čtyřprocentního podílu. S nástupem „nových malých“ ale také začala klesat.
+
+## Mobilní zařízení: tři pětiny podílu a dominance Chrome {#mobily}
 
 [Data z Gemius](http://ranking.gemius.com/cz/ranking/platforms/) k srpnu 2018 ukazují tyto podíly:
 
@@ -51,12 +43,15 @@ Mobilní zařízení jsou tedy už i v ČR na podílu ke čtyřiceti procentům.
 </figure>
 
 
-- Mezi mobilními prohlížeči tedy vede Chrome Mobile. 
-- Druhé je Safari Mobile. 
-- Jaké třetí ukazují Analytics „Android Webview“, což by dle všeho měl být Chrome nebo něco postavené na Chromiu. [Dříve](https://www.quirksmode.org/blog/archives/2015/02/android_webview.html) to mohl být také stařičký Android Browser, což už snad neplatí. V Google Anylytics je uváděný zvlášť se zanedbatelným podílem 1,12 %.
-- Nezapomeňte na Samsung Internet a Seznam.cz. Oba dva jsou velmi podobné Chrome.
+Mezi mobilními prohlížeči tedy vede *Chrome Mobile*.
 
-Mobilní Chrome samozřejmě v budoucnu statistiky ovládne ještě výrazněji, protože je to nyní hlavní prohlížeč na Androidu. Ano, na té platformě, která dnes vlastně na mobilech nemá masově zaměřenou konkurenci.
+Druhé je *Safari Mobile*. Mobilní zařízení od Apple jsou samozřejmě velmi rozšířená i v Česku.
+
+Jaké třetí ukazují Analytics *Android Webview*, což by dle všeho měl být Chrome nebo něco postavené na Chromiu. [Dříve](https://www.quirksmode.org/blog/archives/2015/02/android_webview.html) to mohl být také stařičký *Android Browser*, což už snad neplatí. V Google Anylytics je uváděný zvlášť se zanedbatelným podílem 1,12 %.
+
+Nezapomeňte na *Samsung Internet* a *Seznam.cz*. Oba dva jsou velmi podobné Chrome, za chvíli se dozvíte více.
+
+Když sečteme všechny prohlížeč postavená na jádru Chrome („Chromium“) kromě Safari nemá v ČR na mobilních zařízení žádnou konkurenci.
 
 ## Trendy: Roste mobilní Chrome a nové menší prohlížeče
 
@@ -67,11 +62,13 @@ Mobilní Chrome samozřejmě v budoucnu statistiky ovládne ještě výrazněji,
 </figcaption>
 </figure>
 
-Poznámky:
-- Na prvním grafu je hezky vidět, že zatímco desktopový Chrome stagnuje, ten mobilní hodně roste.
-- Firefox a Internet Explorer verze 11 bezútěšně klesají. Nyní jsou na 14 a 12 procentech, přičemž toho prvního je trochu škoda.
-- A menší prohlížeče? Opera zdá se neustále mírně klesá. Roste prohlížeč od Seznamu, to je v Česku novinka a Samsung Browser, což je novinka globání.
-- Skoky v grafu si vysvětluji změnami v měření Gemiusu. Je vidět, že prohlížeč od Seznamu začali rozlišovat až poměrně pozdě.
+Na prvním grafu je hezky vidět, že zatímco *desktopový Chrome* stagnuje, ten mobilní hodně roste.
+
+*Firefox* a *Internet Explorer* verze 11 bezútěšně klesají. Nyní jsou na 14 a 12 procentech, přičemž toho prvního je trochu škoda.
+
+A menší prohlížeče? *Opera* zdá se neustále mírně klesá. Roste *prohlížeč od Seznamu* – to je v Česku novinka – a *Samsung Browser*, což je novinka globání.
+
+Mimochodem, skoky v grafu si vysvětluji změnami v měření Gemiusu. Je vidět, že prohlížeč od Seznamu začali rozlišovat až poměrně pozdě.
 
 ## K jednotlivým prohlížečům: ke dnešku je jich minimálně 16
 
@@ -80,23 +77,23 @@ Ke krátkému komentáři pro zajímavost přidávám i skóre [na HTML5test.com
 ### 9 prohlížečů, se kterými musíte počítat
 
 - **[Chrome](https://en.wikipedia.org/wiki/Google_Chrome)**  
-  Ten, co všechno sní. Celosvětově podle má podle Statcounter.com už k šedesátiprocentnímu podílu.
-  <small>HTML5test.com: 492/555 (verze 52)</small>
+  Ten, co všechno sní. Celosvětově podle má podle Statcounter.com už dvě třetiny podílu.
+  <small>HTML5test.com: 505/555 (verze 55)</small>
 - **[Firefox](https://en.wikipedia.org/wiki/Firefox)**  
-  Celosvětově mírně klesá. Teď má na světě podle Statcounter podíl 14 %. Mozille nelze upřít snahu. Firefox chce zrychlit, [zavřela boční projekty](https://twitter.com/jsnajdr/status/785095932782190592) a přichází [s drobnými inovacemi](https://testpilot.firefox.com/experiments). Jenže Google má v případě Chrome z jejich pohledu dost nešťasnou kombinaci *umu* vyrábět výborný prohlížeč a *síly* cokoliv protlačit.
-  <small>HTML5test.com: 461/555 (verze 48)</small>
+  Celosvětově mírně klesá. Teď má na světě podle Statcounter podíl 11 %. Mozille nelze upřít snahu. Firefox chce zrychlit, [zavřela boční projekty](https://twitter.com/jsnajdr/status/785095932782190592) a přichází [s drobnými inovacemi](https://testpilot.firefox.com/experiments). Jenže Google má v případě Chrome z jejich pohledu dost nešťasnou kombinaci *umu* vyrábět výborný prohlížeč a *síly* cokoliv protlačit.
+  <small>HTML5test.com: 491/555 (verze 59)</small>
 - **[IE 11](https://en.wikipedia.org/wiki/Internet_Explorer_11)**  
   Podle vývoje za poslední dva roky ubrala relativně moderní jedenácka podíl ostatním prohlížečům od Microsoftu. Přepokládám, že teď začne klesat ve prospěch Edge a ostatních prohlížečů.
   <small>HTML5test.com: 312/555</small>
 - **[Edge](https://en.wikipedia.org/wiki/Microsoft_Edge)**  
   Moderní prohlížeč od Microsoftu roste méně než bych čekal.
-  <small>HTML5test.com: 460/555 (verze 14)</small>
+  <small>HTML5test.com: 492/555 (verze 17)</small>
 - **[Opera](https://en.wikipedia.org/wiki/Opera_(web_browser))**
-  Od verze 15 je Opera postavená na stejném jádru jako Chrome, takže s testováním na ní tolik práce není. Tedy, ne že by se dalo úplně vynechat. Nějaké rozdíly tam jsou. Opera každopádně mírně klesá. 
-  <small>HTML5test.com: 496/555 (verze 40)</small>
+  Od verze 15 je Opera postavená na stejném jádru jako Chrome, takže s testováním na ní tolik práce není.
+  <small>HTML5test.com: 518/555 (verze 45)</small>
 - **[Safari](https://en.wikipedia.org/wiki/Safari_(web_browser))**  
   Z moderních prohlížečů je to dnes největší *brzda*. Ještě nedávno byl WebKit synonymem inovací na webu, pamatujete? Aktualizuje se klasicky až s verzemi operačního systému.
-  <small>HTML5test.com: 370/555 (verze 9.1)</small>
+  <small>HTML5test.com: 471/555 (verze 11.1)</small>
 - **[Chrome Mobile](https://en.wikipedia.org/wiki/Google_Chrome_for_Android)**    
   Na mobilech zatím jednoznačně kraluje. Jedinou konkurenci má v iOS zařízeních od Apple a v možném nástupu prohlížeče od Samsungu. U Chrome na iOS pozor. Je to jen pseudoprohlížeč, tedy jiné rozhraní pro mobilní Safari. Píšu o tom dále.  
   <small>HTML5test.com: 486/555 (verze 52)</small>
