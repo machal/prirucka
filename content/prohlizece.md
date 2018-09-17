@@ -1,10 +1,8 @@
 # Prohlížeče v Česku
 
-Vstupem Chrome na desktop a nástupem mobilů začaly nové Browser Wars. Máme tady minimálně 16 prohlížečů. Ano, z tohoto pohledu už kodéři zažívali lepší časy.
+Vstupem Chrome na desktop a nástupem mobilů začaly nové Browser Wars. Od roku 2017 ale rostou i další nové prohlížeče – Samsung Browser a v ČR pak prohlížeč od Seznam.cz.
 
-Pojďme si tady shrnout aktuální stav trhu prohlížečů v ČR. Čísla v textu jsou vytažená z měření Gemius SA na Rankings.cz a u mobilních zařízení z Google Analytics cestovky Rekrea. Vždy ke konci června 2016.
-
-![Podíly prohlížečů na trhu v ČR](dist/images/original/prohlizece-desktop-kolac.jpg)
+Pro webaře může být tohle prostředí trochu nepřehledné, proto aktualizuji starší text. Podívejme se na 
 
 Nejprve tři zásadní fakta z poslední doby:
 
@@ -18,31 +16,62 @@ A více než polovina zhlédnutí stránek na mobilech je opět z Chrome.
 
 ## Desktop: Chrome jako jediný masivně roste. Na desktopu má více než třetinový podíl
 
-![Vývoj podílu desktopových prohlížečů](dist/images/original/prohlizece-desktop.jpg)
+<figure>
+<img src="../dist/images/original/prohlizece-desktop.jpg" alt="Podíl desktopových prohlížečů">
+<figcaption markdown="1">
+*Obrázek: Podíl desktopových prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
+</figcaption>
+</figure>
 
 Poznámky:
 
-- V uvedeném období přestal klesat Firefox. Držím palce, aby nešlo o výjimku, protože konkurence je pro Chrome potřeba jako sůl.
-- Konec starých Internet Explorerů (IE) je tady. Už dlouho se to týká verzí 9 a 10, teď už konečně i osmičky. 
+- Chrome samozřejmě ukousl největší část trhu. Dále je ale vidět, že v Česku na desktopech spíše stagnuje a rostou hlavně nové menší prohlížeče. 
+- Firefox se drží na druhém místě, ale níže je vidět, že stále klesá.
+- Internet Explorer – ještě stále je tu s námi. U tohoto webu jde z 97 % o verzi 11 a stejné to bude i u jiných webů. Dobrá zpráva tedy je, že u většiny projektů rozhodně není potřeba optimalizovat pro verze 8, 9 ani 10.
 - Edge, nový moderní prohlížeč od Microsoftu, roste. Ale pomalu.
-- Opera se dlouho držela kolem čtyřprocentního podílu. V posledním roce ale také začala klesat.
-- Podíl Safari na Apple počítačích v ČR k mému překvapení mírně roste. 
+- Opera se dlouho držela kolem čtyřprocentního podílu. S nástupem „nových malých“ ale také začala klesat.
 
 ## Mobily: pětinový podíl na zhlédnutích stránek a dominance Chrome
 
-![Vývoj podílu mobilních zařízení](dist/images/original/prohlizece-mobily-podil.jpg)
+[Data z Gemius](http://ranking.gemius.com/cz/ranking/platforms/) k srpnu 2018 ukazují tyto podíly:
 
-Na pětinovém podílu ze zhlédnutých stránek se mobily samozřejmě nezastaví. Za rok budou mít minimálně čtvrtinu a tak dále. Čísla ze Západu ukazují, že to půjde přes polovinu a výše. Ale vy už jistě dávno neváháte, že budoucnost webu je v mobilech.
+- PC: 61,82 %
+- Telefony: 33,41 %
+- Tablety: 4,57 %
 
-![Trh mobilních prohlížečů](dist/images/original/prohlizece-mobily-kolac.jpg)
+Mobilní zařízení jsou tedy už i v ČR na podílu ke čtyřiceti procentům.
 
-Podíly mobilních prohlížečů mám z Google Analytics cestovky Rekrea, protože Rankings.cz neumí rozumně rozeznat jednotlivé mobilní prohlížeče.
+Čísla ze Západu ukazují, že to půjde přes polovinu a výše. Ale vy už jistě dávno neváháte, že budoucnost webu je v mobilech.
 
-Data k relativně novému prohlížeči Samsung Internet odhaduji. V Analytics jsou schovaná za čísly mobilního Chrome. [vrdl.cz/b/71-samsung-internet](https://www.vzhurudolu.cz/blog/71-samsung-internet)
+<figure>
+<img src="../dist/images/original/prohlizece-mobily.jpg" alt="">
+<figcaption markdown="1">
+*Obrázek: Podíl mobilních prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
+</figcaption>
+</figure>
 
-Mezi mobilními prohlížeči tedy vede Chrome Mobile s 18,1 procenty podílu. Druhé je Safari Mobile (5,5 %), třetí Android Browser (3,1 %). Dle mých odhadů následuje Samsung Internet (kolem 3 %), Internet Explorer Mobile (0,7 %) a další méně významné prohlížeče jako Opery a zatím i mobilní Edge. 
 
-Mobilní Chrome samozřejmě v budoucnu statistiky ovládne ještě výrazněji, protože je to nyní hlavní prohlížeč na Androidu. Ano, na té platformě, která dnes vlastně na mobilech nemá masově zaměřenou konkurenci. 
+- Mezi mobilními prohlížeči tedy vede Chrome Mobile. 
+- Druhé je Safari Mobile. 
+- Jaké třetí ukazují Analytics „Android Webview“, což by dle všeho měl být Chrome nebo něco postavené na Chromiu. [Dříve](https://www.quirksmode.org/blog/archives/2015/02/android_webview.html) to mohl být také stařičký Android Browser, což už snad neplatí. V Google Anylytics je uváděný zvlášť se zanedbatelným podílem 1,12 %.
+- Nezapomeňte na Samsung Internet a Seznam.cz. Oba dva jsou velmi podobné Chrome.
+
+Mobilní Chrome samozřejmě v budoucnu statistiky ovládne ještě výrazněji, protože je to nyní hlavní prohlížeč na Androidu. Ano, na té platformě, která dnes vlastně na mobilech nemá masově zaměřenou konkurenci.
+
+## Trendy: Roste mobilní Chrome a nové menší prohlížeče
+
+<figure>
+<img src="../dist/images/original/prohlizece-trendy.jpg" alt="">
+<figcaption markdown="1">
+*Obrázek: Trendy podílu prohlížečů na českém trhu pro „velké“ i „malé“ prohlížeče. Zdroj: Gemius mezi dubnem 2016 a srpnem 2018, [ranking.gemius.com](http://ranking.gemius.com/)
+</figcaption>
+</figure>
+
+Poznámky:
+- Na prvním grafu je hezky vidět, že zatímco desktopový Chrome stagnuje, ten mobilní hodně roste.
+- Firefox a Internet Explorer verze 11 bezútěšně klesají. Nyní jsou na 14 a 12 procentech, přičemž toho prvního je trochu škoda.
+- A menší prohlížeče? Opera zdá se neustále mírně klesá. Roste prohlížeč od Seznamu, to je v Česku novinka a Samsung Browser, což je novinka globání.
+- Skoky v grafu si vysvětluji změnami v měření Gemiusu. Je vidět, že prohlížeč od Seznamu začali rozlišovat až poměrně pozdě.
 
 ## K jednotlivým prohlížečům: ke dnešku je jich minimálně 16
 
@@ -135,4 +164,6 @@ K polovině prázdnin 2016 má jádro Blink (Chrome, Opera) podíl na trhu 48 pr
 - … a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. 
 
 
+Atd:
 
+- Podíly mobilních prohlížečů mám z Google Analytics cestovky Rekrea, protože Rankings.cz neumí rozumně rozeznat jednotlivé mobilní prohlížeče.
