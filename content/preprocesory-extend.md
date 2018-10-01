@@ -1,6 +1,6 @@
-# @extend v preprocesorech: Utíkejte od něj co nejdál umíte
+# @extend v preprocesorech: Bacha na něj!
 
-V CSS preprocesorech jako LESS a Sass můžete použít `@extend`. Asi tak ve dvou případech z tisíce to může být užitečné, ale v textu se vás od toho chystám odradit.
+V CSS preprocesorech jako LESS a Sass můžete použít direktivu `@extend`. Asi tak ve dvou případech z tisíce to může být užitečné, ale v textu se vás od toho chystám odradit.
 
 Definice: `@extend` umí vzít deklarace jedné třídy a použít je v jiné třídě.
 
@@ -174,14 +174,27 @@ Podobné příklady [uvádí Harry Roberts](https://csswizardry.com/2014/11/when
 Čtete zkompilované CSS? Měli byste. Ono se to občas hodí, nejen kvůli debugování, ale také kontrole, zda v preprocesoru neděláte prohřešky proti stylové lidskosti. Na to je `@extend` úplný expert:
 
 ```css
-.product .single_add_to_cart_button, .cart .button, input.checkout-button.alt.button, .shipping-calculator-form .button, .multistep_step .button, #place_order.button, .single-product .single_add_to_cart_button.button.alt, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button {
+.product .single_add_to_cart_button, .cart .button,
+input.checkout-button.alt.button, .shipping-calculator-form .button,
+.multistep_step .button, #place_order.button,
+.single-product .single_add_to_cart_button.button.alt,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce input.button, .woocommerce #respond input#submit,
+.woocommerce #content input.button,
+.woocommerce-page a.button, .woocommerce-page button.button,
+.woocommerce-page input.button, .woocommerce-page #respond input#submit,
+.woocommerce-page #content input.button {
   background-color: #605f5e;
 }
 ```
 
-Je prý o CSS z WordPress pluginu WooCommerce. Tak a teď se pokuste pochopit, co tím autor nebo autorka zamýšleli. Ano správně – možná, že sami nevěděli. Prostě extendovali „páč to vypadalo užitečně“.
+Nebudu samozřejmě prozrazovat, ze kterého pluginu pro WordPress ta ukázka je. Ale vážně: Pokuste se pochopit, co tím autor nebo autorka zamýšleli. Ano správně – možná, že sami nevěděli. Prostě extendovali „páč to vypadalo užitečně“.
 
 Příklad jsem si vypůjčil z článku [Don’t Over-@extend Yourself in Sass (Or: There’s a Class for That!)](http://pressupinc.com/blog/2014/11/dont-overextend-yourself-in-sass/) od Freda Meyera.
+
+Mimochodem všimli jste si, že nejsem sám, kdo extendování v CSS hejtuje. Náhoda? Nemyslím si.
+
+Ale konec vtipkování a pojďme na poslední nevýhodu.
 
 ### 3) Nelze extendovat v zavináčových pravidlech {#nevyhoda-zavinacova}
 
@@ -208,7 +221,7 @@ Vidíte pořád nějaké rozumné využití extendování bez vedlejších úči
 
 ## Používejte raději proměnné nebo mixiny {#radeji-promenne-mixiny}
 
-Pokud potřebujete zobecňovat v kódu, zvažte zda vám nestačí proměnná. V naprosté většině situací bude stačit.
+Pokud potřebujete zobecňovat v kódu, zvažte zda vám nestačí proměnná. V naprosté většině situací bude.
 
 Nestačí proměnná? Volte mixin. Jejich výhody sumarizuje Sitepoint v článku [Why You Should Avoid Sass @extend](https://www.sitepoint.com/avoid-sass-extend/):
 
