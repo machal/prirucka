@@ -18,7 +18,7 @@ Nejdřív ale – co vlastně sakra ten `@extend` dělá?
 }
 
 .mat {
-  @extend .pel;
+  @extend .pat;
   background: black;
 }
 ```
