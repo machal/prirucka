@@ -25,14 +25,18 @@ Používáme ji vesele globálně pro celý projekt. Když tu nám náladu zkaz�
 </div>
 ```
 
+Její CSS kód nám říká, že barva „tlačítková zelená“ nepůjde se zlatou příliš dohromady:
+
 ```css
+/* section.css: */
+
 .section {
   background: gold;
   padding: 2rem;
 }
 ```
 
-Její CSS kód nám říká, že barva „tlačítková zelená“ nepůjde se zlatou příliš dohromady. Začneme se hroutit, protože opět přichází ta chvíle, kdy si pokazíme komponentový přístup, dosud čistý jako studánku.
+Začneme se kroutit (a někteří hroutit), protože už zase přišla ta chvíle, kdy si pokazíme komponentový přístup, dosud čistý jako studánku.
 
 <iframe height='300' scrolling='no' title='Component vs. context in CSS' src='//codepen.io/machal/embed/JmdRaa/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/JmdRaa/'>Component vs. context in CSS</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -49,11 +53,11 @@ Pokud bychom se chtěli úzkostlivě držet předpisů [metodiky OOCSS](oocss.md
 }
 ```
 
-Tohle by bylo naprosto v pořádku, pokud jde o *znovupoužitelný* modifikátor komponenty Button.
+Tohle by bylo naprosto v pořádku, pokud by šlo o *znovupoužitelný* modifikátor komponenty Button.
 
-Co ale v případě jednorázové modifikace pro konkrétní kontext – není to už pak  trochu přitažené za vlasy? Vytváříme modifikátor komponenty *jen* pro potřeby jednoho kontextu. Nemluvě o tom, že design našeho projektu *vůbec nemusí* být vymyšlený komponentově… Že v tom designér nebo designérka žádný systém nemají, i když byste móóc chtěli.
+Co ale v případě jednorázové modifikace pro konkrétní kontext – není to už pak  trochu přitažené za vlasy? Vytváříme modifikátor komponenty *jen* pro potřeby jednoho kontextu. Nemluvě o tom, že design našeho projektu *vůbec nemusí* být vymyšlený komponentově… Že v tom designér nebo designérka žádný systém nemají, i když bychom móóc chtěli.
 
-Pak se stane ještě něco horšího. Náš milý kolega programátor uvidí HTML, které mu navrhujeme…
+Pak se stane něco špatného. Náš milý kolega programátor si přečte HTML, které mu navrhujeme…
 
 ```html
 <div class="section">
@@ -63,7 +67,7 @@ Pak se stane ještě něco horšího. Náš milý kolega programátor uvidí HTM
 </div>
 ```
 
-…vyleze kvůli tomu ze své temné sluje, aby nám mlčky zaťukal na rameno a pak sám sobě na čelo. Načež prohlásí něco ve smyslu, že přeci nebude přidávat třídu na tlačítko podle toho, kde se zrovna vyskytuje. Že to je složitá logika a že tohle si má řešit CSS, potažmo my. A v mnoha případech má pravdu.
+…vyleze kvůli tomu ze své temné sluje, aby nám mlčky zaťukal na rameno a pak sám sobě na čelo. Načež prohlásí něco ve smyslu, že přeci nebude přidávat třídu na tlačítko podle toho, kde se zrovna vyskytuje. Že to je složitá logika a že tohle si má řešit CSS, potažmo my. A v tomto případě má pravdu.
 
 ## Kontextový přístup {#kontexty}
 
@@ -77,7 +81,7 @@ Ten se sám nabízí:
 }
 ```
 
-Někdo by mohl říct, že to není *čisté* řešení. Odpovídám, že to určitě není čistě komponentové, jenže většina navržených rozhraní *čistě komponentově* navržená není.
+Někdo by mohl říct, že to není *čisté* řešení. Odpovídám, že to určitě není čistě komponentové, jenže většina uživatelských rozhraní *čistě komponentově* navržená není.
 
 Nevýhoda leží v tom, že kód jedné komponenty (Button) bude závislý na kódu druhé komponenty (Section). Když tu druhou začneme refaktorovat, budeme si muset vzpomenout na všechny výskyty v cizích komponentách.
 
@@ -91,7 +95,7 @@ Klíčový selektor je vždy ten poslední vpravo. V našem případě `.button`
 
 <!-- AdSnippet -->
 
-Docela nerad v souvislosti s CSS používám pojmy z programátorských klasik, ale tady se mi líbí označení `button.css` jako „Single source of truth“ pro tuto komponentu. Používá ho [Ben Frain v Enduring CSS](http://ecss.io/chapter4.html). Prostě: Všechno co souvisí s komponentou, dávejte do souboru o jejím názvu.
+Docela nerad v souvislosti s CSS používám pojmy z programátorských klasik, ale tady se mi líbí označení `button.css` jako „Single source of truth“ pro tuto komponentu. Používá ho [Ben Frain v Enduring CSS](http://ecss.io/chapter4.html). Prostě: Všechno co souvisí s komponentou, dávejte do souboru, který nese její název.
 
 Pojďme ještě ale ukázat třetí řešení.
 
