@@ -3,31 +3,23 @@
 Lidsky řečeno slouží k informování prohlížeče o tom, zda a jak jste web připravili pro mobilní zařízení.
 
 <figure>
-<img src="dist/images/original/meta-viewport-mobile.jpg" alt="Meta Viewport">
+<img src="../dist/images/original/meta-viewport-mobile.jpg" alt="Meta Viewport">
 <figcaption markdown="1">    
 *Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířka layoutového viewportu nastaví na velikost rozlišení v CSS pixelech*
 </figcaption>
 </figure>
 
-Začnu bez vysvětlování zápisem meta tagu pro viewport, který je v pořádku:
+## Jednoduchá varianta {#varianta-jednoducha}
+
+Dnes už nebude takový problém, pokud použijete následující zápis:
 
 ```html
-<meta name="viewport" 
-  content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
 ```
 
-K tomu si do CSS doplňte:
-
-```css
-@-ms-viewport { 
-  width: device-width; 
-}
-```
-
-Tohle vám u drtivé většiny responzivních webů bude stačit. Pokud ale máte chvilku času navíc, pojďte se o meta značce dozvědět něco víc.
+Když byste ale moc stáli o podporu všech starších a méně významných kontextů, volte spíše složitější zápis, který uvádím na konci tohoto textu.
 
 ## Parametry meta značky pro viewport {#parametry}
-
 
 Do atributu `content` je možné dávat různé vlastnosti a jejich hodnoty.
 
@@ -69,22 +61,6 @@ Stručně popsané řešení pro vaše weby: Pro layout s jednobarevným pozadí
   content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
-## Proč `width=device-width` a zároveň `initial-scale=1`? {#proc-oba}
-
-Jak už jsem psal, `width=device-width` je instrukce pro sjednocení layoutového viewportu s ideálním.
-
-`width=device-width` má ovšem jednu známou nevýhodu: Safari na iOS pak jako ideální viewport v režimu zobrazení na šířku použije ideální viewport pro výšku. Ano, přesně tohle je příčinou toho problému se „zvětšováním“ stránky v landscape režimu na iOS.
-
-Je zde jedna záchrana: použít namísto toho zápis `initial-scale=1`. Světe, div se, na všech mobilních zařízeních má ten samý efekt jako `width=device-width`. Světe, div se, podruhé, Safari na iOS už v režimu landscape renderuje do ideálního landscape viewportu. A světe, div se, má to svoje nevýhody! Internet Explorer se na mobilních Windows 8 totiž začne chovat úplně stejně špatně jako mobilní Safari.
-
-Nevadí. Problémy vyřešíme tím, že použijeme obě hodnoty.
-
-
-## Zavináčové pravidlo `@viewport` v CSS {#zavinac}
-
-Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišla Opera, která ovšem následně zběhla k renderovacímu jádru Blink, takže jej už zase nejspíš neumí. V praxi je ten zápis nyní potřeba hlavně pro Internet Explorer na Windows Phone 8. [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)
-
-
 ## Meta viewport raději moc nenastavujte Javascriptem  {#js}
 
 Hodí se to, jen když nemáte přístup do `<head>`. Teoreticky jde Javascriptem meta značka pro viewport i měnit, ale nedělejte to. Je to náročné na překreslování stránky. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
@@ -93,6 +69,35 @@ Hodí se to, jen když nemáte přístup do `<head>`. Teoreticky jde Javascripte
 ## Odstranění 300ms prodlevy  {#300ms}
 
 Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče prodlevu dělaly proto, že po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)
+
+## Zavináčové pravidlo `@viewport` v CSS {#zavinac}
+
+Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišlo W3C, ale moderní prohlížeče jej zatím nezvládají. Výjimkou je Internet Explorer a Edge, které pravidlo využívají v takzvaném „snap“ módu na desktopových Windows. <span class="ebook-only" markdown="1"> [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)</span> <span class="web-only" markdown="1">Psal jsem o tom [ve starším článku](https://www.vzhurudolu.cz/prirucka/viewport-windows).</span>
+
+
+## Varianta meta značky s podporou všech zařízení {#varianta-plna}
+
+V HTML hlavičce:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+K tomu si do CSS doplňte:
+
+```css
+@-ms-viewport {
+  width: device-width;
+}
+```
+
+Proč takhle složitě?
+
+- Bez `initial-scale=1` totiž Safari na iOS 8 a starších, když otočíte zařízení na šířku, renderuje stránku do rozlišení jako by bylo otočené na výšku. 
+- Mimochodem, bez `width=device-width` se zase totožně chová Internet Explorer na mobilních Windows 8.
+- Bez `@-ms-viewport` v CSS vám Internet Explorer a Edge nespočítají správn viewport v takzvaném „snap“ módu, přichycení ke kraji obrazovky. Zmiňoval jsem to už o pár odstavců výše.
+
+Jak už jsem na začátku textu naznačil – svět se nezboří, když na tohle zapomenete. Mobilní Windows jsou v roce 2018 i z pohledu uživatelské základy prakticky mrtvá platforma. „Snap“ mód ve Windows zase dle mého názoru skoro nikdo nepoužívá.
 
 <div class="ebook-only" markdown="1">
 
