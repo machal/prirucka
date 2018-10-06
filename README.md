@@ -173,6 +173,8 @@ Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně
 
 HTML značky lze opsat kapitálkami („Značka HTML slouží…“). JS a CSS kód prostě uvedeme bez `<code>` tak jak je. Vyplývá z toho samozřejmě, že je lepší se kódu na takovýchto místech vyhnout.
 
+Kvůli e-bookům by bloková ukázka kódu měla mít maximální délku kódu kolem 60 znaků na řáku.
+
 
 ### Zobrazení jen na webu
 
