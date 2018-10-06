@@ -28,6 +28,10 @@ Pojďme teď na ty konkrétní vlastnosti kaskády.
 
 Začneme tím nejjednodušším: Pokud mají selektory dvou deklarací stejnou váhu (specificitu), pak prohlížeč aplikuje ten, který je v kódu pozdější.
 
+[Dušan Janovský](https://www.jakpsatweb.cz/css/css-kaskadovani.html) tohle pravidlo vyjádřil hezky:
+
+> Kdo se směje naposled, ten se směje nejlíp.
+
 Vezměme tohle CSS:
 
 ```css
@@ -57,7 +61,7 @@ I pouhé špatně zvolené pořadí souborů v projektu může nadělat paseku. 
 
 ## Specificita selektorů {#specificita}
 
-Specificitu předpokládám znáte, nebo alespoň většina z vás. Jde o to, že každý selektor má svoji váhu. 
+Specificitu předpokládám znáte, nebo alespoň většina z vás. Jde o to, že každý selektor má svoji váhu.
 
 ### Váhy selektorů
 
@@ -93,7 +97,7 @@ body .first {
 }
 ```
 
-HTML je stejné: 
+HTML je stejné:
 
 ```html
 <div class="second first">
@@ -115,7 +119,6 @@ Spolu s milou specificitou selektorů si vám dovolím dát tyhle rady do život
 - Pro komponenty volte třídy. Pro základní styly elementy. Vždy co nejméně. 
 - Ve Stylelintu si nastavte maximální specificitu. Já dávám 3 třídy.
 - Používejte metodiku BEM nebo podobnou.
-
 
 ## Důležitost pravidel {#dulezitost}
 
