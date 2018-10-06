@@ -43,6 +43,8 @@ Proč takhle složitě?
 
 Teoreticky dělá `initial-scale=1` na všech zařízeních totéž co `width=device-width`, ale bez toho druhého chybuje Internet Explorer na mobilních Windows 8 stejným způsobem jako osmá a starší verze mobilního operačního systému od Apple.
 
+<!-- AdSnippet -->
+
 Jak už jsem na začátku textu naznačil – svět se nezboří, když na tohle zapomenete. Mobilní Windows jsou v roce 2018 i z pohledu uživatelské základy prakticky mrtvá platforma. „Snap“ mód ve Windows zase dle mého názoru skoro nikdo nepoužívá. iOS 8 a starší je podobný případ.
 
 ## Parametry meta značky pro viewport {#parametry}
@@ -78,6 +80,8 @@ Nová vlastnost, která řeší způsob zobrazování na zařízeních s jinou n
 - `cover` - roztáhne viewport pro stránku tak, aby nikde „nevyčuhovaly“ neobarvené části rozhraní prohlížeče. S tím rizikem, že kulaté rohy nebo výčnělky na displeji zařízení některé části stránky překryjí.
 
 Prakticky o tom píšu  i s příklady pro konkrétní weby na blogu v článku o iPhone X. [vrdl.cz/p/iphone-x](https://www.vzhurudolu.cz/prirucka/iphone-x)
+
+<!-- AdSnippet -->
 
 Stručné řešení pro vaše weby: Pro layout s jednobarevným pozadím si jen zkontrolujte nastavení `background-color` na `body`. Pro weby s různobarevnými prvky zabírajícími celou šířku si přidejte parametr do meta značky pro viewport:
 
@@ -117,3 +121,5 @@ Více o [webech na WatchOS](weby-watchos.md) píšu ve zvláštní kapitole.
 Teď se pojďme podívat na jeden parametr webů, jehož podcenění může mít daleko horší důsledky – rychlost načítání. Nepatří sem jen zdánlivě. V průběhu práce na projektu ji totiž nesmíme nechat na závěr.
 
 </div>
+
+<!-- AdSnippet -->
