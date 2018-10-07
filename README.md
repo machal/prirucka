@@ -119,7 +119,7 @@ Složitější tabulky ideálně jako `<figure>`:
 ```html
 <figure>
 
-<div class="rwd-scrollable"  markdown="1"> 
+<div class="rwd-scrollable"  markdown="1">
 | Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
 |------------|:------:|:----------:|:-----:|:------:|:--------:|
 | `<span>`   |  +     |      +     |       |        |          |

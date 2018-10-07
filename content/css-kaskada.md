@@ -1,12 +1,14 @@
 # Kaskáda v CSS: skrytý „nepřítel“
 
-Možná se divíte, proč se na blogu, kde řešívám spíše pokročilejší záležitosti v CSS, vrhám na začátečnické téma. Jenže… Moc dobře vím, že to tak snadné není. Když jsem připravoval školení [CSS kód](https://www.vzhurudolu.cz/kurzy/css-kod) a osvěžoval si „kaskádu“ v paměti a zjistil, že jedna věc mě tam úplně unikala. Chcete vědět jaká?
+Možná se divíte, proč se na blogu, kde řešívám spíše pokročilejší záležitosti v CSS, vrhám na začátečnické téma. Jenže… Moc dobře vím, že správné chápání kaskády je rozšířené daleko méně než byste možná čekali.
+
+Když jsem asi před rokem začal připravovat školení [CSS kód](https://www.vzhurudolu.cz/kurzy/css-kod), osvěžoval si kaskádu v paměti a zjistil, že jedna věc mě tam úplně unikala. Chcete vědět jaká?
 
 Vyzkoušejte sami sebe: Definujte kaskádu v CSS.
 
 Teď.
 
-Nepodvádějte a nerolujte stránkou dolů.
+Nepodvádějte a nerolujte stránkou dolů. Vidím vás!
 
 Dám vám ještě čas. Reklamní přestávkou:
 
@@ -20,7 +22,7 @@ Máte?
 - [Specificita selektorů](#specificita)
 - [Důležitost pravidel](#dulezitost)
 
-Naopak do specifity nepatří *dědičnost*, další *obávaná* vlastnosti CSS. Když byste se mě před rokem zeptali, do kaskády bych ji zahrnul. Chybně. Stejně jako jste ji do kaskády předpokládám zahrnuli vy.
+Naopak do specifity nepatří *dědičnost*, další *obávaná* vlastnost CSS. Když byste se mě před rokem zeptali, do kaskády bych ji zahrnul. Chybně. Stejně jako jste ji do kaskády předpokládám zahrnuli vy. O dědičnosti ale napíšu jindy.
 
 Pojďme teď na ty konkrétní vlastnosti kaskády.
 
@@ -28,11 +30,9 @@ Pojďme teď na ty konkrétní vlastnosti kaskády.
 
 Začneme tím nejjednodušším: Pokud mají selektory dvou deklarací stejnou váhu (specificitu), pak prohlížeč aplikuje ten, který je v kódu pozdější.
 
-[Dušan Janovský](https://www.jakpsatweb.cz/css/css-kaskadovani.html) tohle pravidlo vyjádřil hezky:
+[Dušan Janovský](https://www.jakpsatweb.cz/css/css-kaskadovani.html) tohle pravidlo vyjádřil hezkým českým *„Kdo se směje naposled, ten se směje nejlíp“*.
 
-> Kdo se směje naposled, ten se směje nejlíp.
-
-Vezměme tohle CSS:
+Nejlíp se směje poslední deklarace. Vezměme tohle CSS:
 
 ```css
 .first {
@@ -53,11 +53,14 @@ A tohle HTML:
 
 Jakou bude mít blok barvu?
 
-Ano, přesně tak – zelenou. Rozhoduje pořadí v CSS. Na pořadí uvední tříd v HTML naopak vůbec nezáleží. Omlouváme se ti, milé HTML.
+Ano, přesně tak – zelenou. Rozhoduje pořadí v CSS. Na pořadí uvedení tříd v HTML naopak vůbec nezáleží. Omlouváme se ti, milé HTML.
 
-Více v CodePenu: https://codepen.io/machal/pen/YVgOZY
+<p data-height="300" data-theme-id="502" data-slug-hash="YVgOZY" data-default-tab="css,result" data-user="machal" data-pen-title="CSS Cascade: Source Order Demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/YVgOZY/">CSS Cascade: Source Order Demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-I pouhé špatně zvolené pořadí souborů v projektu může nadělat paseku. Doporučuji k tomu nastudovat principy metodiky ITCSS od Harryho Robertse.
+Viz CodePen: [cdpn.io/e/YVgOZY](https://codepen.io/machal/pen/YVgOZY)
+
+Co z toho vyplývá? I pouhé špatně zvolené pořadí souborů v projektu může nadělat paseku. Doporučuji k tomu nastudovat principy metodiky ITCSS od Harryho Robertse.
 
 ## Specificita selektorů {#specificita}
 
@@ -65,25 +68,33 @@ Specificitu předpokládám znáte, nebo alespoň většina z vás. Jde o to, ž
 
 ### Váhy selektorů
 
-|* Typ selektoru                              *|* Specificita *|
+<div class="rwd-scrollable"  markdown="1">
+|* Typ selektoru a příklady                   *|* Specificita *|
 |:---------------------------------------------|--------------:|
 | Elementy, pseudoelementy, atributy (`p`, `::before`, `[lang=cs]`)  |     `0,0,0,1` |
 | Třídy a pseudotřídy (`.box`, `:hover`)       |     `0,0,1,0` |
 | Identifikátory (`#box`)                      |     `0,1,0,0` |
-| Inline style (`style="…"`)                   |     `1,0,0,0` |
+| Inline styly (`style="…"`)                   |     `1,0,0,0` |
+</div>
 
-Příklady
+<!-- AdSnippet -->
 
+Podívejme se na pár složitějších ukázek, ze kterých to bude snad ještě jasnější.
+
+### Příklady
+
+<div class="rwd-scrollable"  markdown="1">
 |* Selektor                                   *|* Specificita *|
 |:---------------------------------------------|--------------:|
 | `h3 + p::first-letter`                       |       `0,0,3` |
-| `nav > a:hover::before`                      |       `0,1,3` |
+| `nav a:hover::before`                        |       `0,1,3` |
 | `p[lang=en] + *`                             |       `0,0,2` |
+</div>
 
 Poznámky:
 
-- Jak jste si asi všimli, univerzální selektor (`*`), kombinátory (`+`, `>`, `~`, mezera) a pseudotřída negace (`:not`) nemají na specificitu dopad.
-- Je dobré zmínit, že spočítaná specificita není v desítkové ani jiné soustavě. Takže deset tříd nemá stejnou specificitu jako jeden identifikátor. Třídy prostě id vždy porazí.
+- Jak jste si asi všimli, univerzální selektor (`*`), kombinátory (`+`, `>`, `~`, mezera) a pseudotřída negace (`:not`) nemají na specificitu žádný vliv.
+- Je dobré zmínit, že spočítaná specificita není v desítkové ani jiné soustavě. Takže deset tříd nemá stejnou specificitu jako jeden identifikátor. Třídy prostě identifikátor vždy porazí.
 
 Pojďme si dát příklad:
 
@@ -106,25 +117,32 @@ HTML je stejné:
 
 Výsledek bude modrý, no jasně.
 
-Ukázka je zde: https://codepen.io/machal/pen/mLbrzv
+<p data-height="300" data-theme-id="502" data-slug-hash="mLbrzv" data-default-tab="css,result" data-user="machal" data-pen-title="CSS Cascade: Specificity Demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/mLbrzv/">CSS Cascade: Specificity Demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Viz CodePen: [cdpn.io/e/mLbrzv](https://codepen.io/machal/pen/mLbrzv)
 
 Pokud si nejste jistí, použijte skvělý kalkulátor specificity od Keegan Street: [specificity.keegan.st](http://specificity.keegan.st/)
 
-<!-- AdSnippet -->
+<div class="related" markdown="1">
+- [Kaskáda a další „problémy“ CSS: Jak je řešit?](css-jazyk-problemy.md)
+- [Stylelint, protože pořádek musí být](stylelint.md)
+</div>
 
 Spolu s milou specificitou selektorů si vám dovolím dát tyhle rady do života:
 
 - Držte specificitu co nejníže.
 - V CSS nepoužívejte identifikátory.
-- Pro komponenty volte třídy. Pro základní styly elementy. Vždy co nejméně. 
+- Pro komponenty volte třídy. Pro základní styly elementy. 
+- Vždy mějte co nejjednodušší selektory.
 - Ve Stylelintu si nastavte maximální specificitu. Já dávám 3 třídy.
 - Používejte metodiku BEM nebo podobnou.
 
 ## Důležitost pravidel {#dulezitost}
 
-Ano, jde o `!important`. Legendární univerzální náprava všeho. Tabletka proti bolehlavu ošklivého CSS, které jsme zdědili od svých předchůdců. 
+Ano, jde o `!important`. Legendární univerzální náprava všeho. Tabletka proti bolehlavu ošklivého CSS, které jsme zdědili od svých předchůdců.
 
-Dělám si legraci. To, jak často v CSS nacházíme `!important` svědčí o smutném faktu, že kaskádovým stylům většinou málo rozumíme a jsme ochotní věnovat jen málo energie do vnesení systému sem. 
+Dělám si legraci. To, jak často v CSS píšeme `!important` občas svědčí o smutném faktu, že kaskádovým stylům většinou málo rozumíme a jsme ochotní věnovat jen málo energie do vnesení systému sem.
 
 Konec vzdychání, pojďme na příklad. Tady nic složitého není. CSS kód:
 
@@ -147,7 +165,10 @@ HTML zůstává stejné:
 
 Výsledek bude modrý, jistě.
 
-Zde je ukázka: https://codepen.io/machal/pen/XqrjBR
+<p data-height="300" data-theme-id="502" data-slug-hash="XqrjBR" data-default-tab="css,result" data-user="machal" data-pen-title="CSS Cascade: Importance Demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/XqrjBR/">CSS Cascade: Importance Demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Viz CodePen: [cdpn.io/e/XqrjBR](https://codepen.io/machal/pen/XqrjBR)
 
 Asi vás nepřekvapí, že `!important` doporučuji používat jen když to máte dobře rozmyšleno nebo to zapadá do vaší vlastní metodiky psaní kaskádových stylů.
 
