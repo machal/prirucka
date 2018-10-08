@@ -94,7 +94,7 @@ Podívejme se na pár složitějších ukázek, ze kterých to bude snad ještě
 Poznámky:
 
 - Jak jste si asi všimli, univerzální selektor (`*`), kombinátory (`+`, `>`, `~`, mezera) a pseudotřída negace (`:not`) nemají na specificitu žádný vliv.
-- Je dobré zmínit, že spočítaná specificita není v desítkové ani jiné soustavě. Takže deset tříd nemá stejnou specificitu jako jeden identifikátor. Třídy prostě identifikátor vždy porazí.
+- Je dobré zmínit, že spočítaná specificita není v desítkové ani jiné soustavě. Takže deset tříd nemá stejnou specificitu jako jeden identifikátor. Selektor typu identifikátor (`#id`) nad třídami (`.class`) prostě vždy vyhrává.
 
 Pojďme si dát příklad:
 
