@@ -71,11 +71,13 @@ Specificitu předpokládám znáte, nebo alespoň většina z vás. Jde o to, ž
 <div class="rwd-scrollable"  markdown="1">
 |* Typ selektoru a příklady                   *|* Specificita *|
 |:---------------------------------------------|--------------:|
-| Elementy, pseudoelementy, atributy (`p`, `::before`, `[lang=cs]`)  |     `0,0,0,1` |
-| Třídy a pseudotřídy (`.box`, `:hover`)       |     `0,0,1,0` |
+| Elementy, pseudoelementy (`p`, `::before`)   |     `0,0,0,1` |
+| Třídy, pseudotřídy, atributy (`.box`, `:hover`, `[lang=cs]`)   |     `0,0,1,0` |
 | Identifikátory (`#box`)                      |     `0,1,0,0` |
 | Inline styly (`style="…"`)                   |     `1,0,0,0` |
 </div>
+
+Robin Pokorný v komentářích doplňuje, že inline styly nejsou od specifikace [CSS Selectors Level 4](https://www.w3.org/TR/selectors/#specificity) součástí specificity (jako čtvrté číslo), ale jsou prostě nadřazeny uživatelským stylům. Zatím to ale pro přehlednost nechávám v téhle tabulce, protože se mi to jinak zdá matoucí pro méně zkušené.
 
 <!-- AdSnippet -->
 
@@ -88,7 +90,7 @@ Podívejme se na pár složitějších ukázek, ze kterých to bude snad ještě
 |:---------------------------------------------|--------------:|
 | `h3 + p::first-letter`                       |       `0,0,3` |
 | `nav a:hover::before`                        |       `0,1,3` |
-| `p[lang=en] + *`                             |       `0,0,2` |
+| `p[lang=en] + *`                             |       `0,1,1` |
 </div>
 
 Poznámky:
