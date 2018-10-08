@@ -69,7 +69,18 @@ Minimální a maximální možný zoom. `maximum-scale=1` ruší možnost přibl
 
 ### `shrink-to-fit` {#shrink-to-fit}
 
-Pokud by váš layout bláznil na iPadech s iOS od verze 9, zkuste ještě přidat atribut s hodnotou `shrink-to-fit=no`. Proč? To vlastně skoro nikdo neví. Maximiliano Firtman o tom píše v textu „The new viewport shrink-to-fit attribute (that nobody understands)“. [vrdl.in/xpub9](http://www.mobilexweb.com/blog/safari-on-ios-9-3-picture-shrink-fit-iphone-se)
+Pokud nějaké prvky pozicujete částečně mimo viewport (například pomocí `position: absolute`), na zařízeních s iOS se vizuální viewport zmenší tak, aby se zobrazil i onen pozicovaný element.
+
+Může se ale stát, že si to takhle nepřejete. Třeba jen chcete, aby byl element částečně odřízlý mimo viewport. Od iOS 9 můžete použít deklaraci `shrink-to-fit=no`, kterou to zařídíte.
+
+Hezky je to vysvětlené na Stack Overflow, i s ukázkou v CodePen: [https://stackoverflow.com/a/33949647/889682](https://stackoverflow.com/a/33949647/889682)
+
+Váš meta tag pro viewport by pak měl vypadat takto:
+
+```html
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+```
 
 ### `viewport-fit` {#viewport-fit}
 
@@ -78,6 +89,13 @@ Nová vlastnost, která řeší způsob zobrazování na zařízeních s jinou n
 - `auto` - výchozí stav, který vše nechává na prohlížeči. U iPhone X například odpovídá hodnotě `contain`.
 - `contain` - zmenší viewport pro stránku tak, aby byla vidět celá. Jakou barvu vykreslí po stranách, záleží na prohlížeči. iPhone X v `background-color` z `body`.
 - `cover` - roztáhne viewport pro stránku tak, aby nikde „nevyčuhovaly“ neobarvené části rozhraní prohlížeče. S tím rizikem, že kulaté rohy nebo výčnělky na displeji zařízení některé části stránky překryjí.
+
+<figure>
+<img src="../dist/images/original/viewport-fit-cover.jpg" alt="Viewport Fit">
+<figcaption markdown="1">
+*Pokud má stránka různobarevné pozadí, jako Vzhůru dolů, hodí se do meta značky přidate ještě viewport-fit=cover*
+</figcaption>
+</figure>
 
 Prakticky o tom píšu  i s příklady pro konkrétní weby na blogu v článku o iPhone X. [vrdl.cz/p/iphone-x](https://www.vzhurudolu.cz/prirucka/iphone-x)
 
@@ -96,7 +114,7 @@ Stručné řešení pro vaše weby: Pro layout s jednobarevným pozadím si jen 
 
 Hodí se to, jen když nemáte přístup do `<head>`. Teoreticky jde Javascriptem meta značka pro viewport i měnit, ale nedělejte to. Je to náročné na překreslování stránky. Vyrobte raději normální responzivní web s jedním meta tagem pro viewport.
 
-### Odstranění 300ms prodlevy  {#300ms}
+### Odstranění prodlevy mezi tapnutím a akcí trvající 300 ms  {#300ms}
 
 Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče prodlevu dělaly proto, že po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)
 
@@ -104,7 +122,7 @@ Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální 
 
 Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišlo W3C, ale moderní prohlížeče jej zatím nezvládají. Výjimkou je Internet Explorer a Edge, které pravidlo využívají v takzvaném „snap“ módu na desktopových Windows. <span class="ebook-only" markdown="1"> [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)</span> <span class="web-only" markdown="1">Psal jsem o tom [ve starším článku](https://www.vzhurudolu.cz/prirucka/viewport-windows).</span>
 
-### Weby na WatchOS
+### Weby na WatchOS – pokud máte web optimalizovaný pro viewporty menší než 320px {#watch-os}
 
 Chytré hodinky od Appple vynucují zobrazení našich webových dílek  na zápěstí uživatelů ve viewportu širokém 320 CSS pixelů. Pokud bychom tomu chtěli zabránit a zobrazit je ve výchozím CSS rozlišení (o šířce 272 nebo 312 pixelů podle typu hodinek), musíme si dupnout následujícím kódem:
 
