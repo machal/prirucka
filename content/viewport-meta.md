@@ -5,9 +5,11 @@ Lidsky řečeno slouží k informování prohlížeče o tom, zda a jak jste web
 <figure>
 <img src="../dist/images/original/meta-viewport-mobile.jpg" alt="Meta Viewport">
 <figcaption markdown="1">
-*Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířka layoutového viewportu nastaví na velikost rozlišení v CSS pixelech*
+*Obrázek: Po vložení meta značky pro viewport se z desktopového rozlišení stane mobilní*
 </figcaption>
 </figure>
+
+Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířka [layoutového viewportu](viewport-mobily.md) nastaví na velikost rozlišení v [CSS pixelech](css-pixel.md).
 
 ## Jednoduchá varianta {#varianta-jednoducha}
 
@@ -17,7 +19,7 @@ Dnes už nebude takový problém, pokud použijete následující zápis:
 <meta name="viewport" content="width=device-width">
 ```
 
-Když byste ale moc stáli o podporu všech starších a méně významných kontextů (iOS 8, Windows Phone nebo „snap“ mód v desktopových Windows), volte spíše následující verzi.
+Když byste ale moc stáli o podporu všech starších a méně významných kontextů (iOS 8, Windows Phone nebo přilepení ke kraji obrazovky – „snap“ mód – v desktopových Windows), volte spíše následující verzi.
 
 ## Varianta s podporou všech zařízení {#varianta-plna}
 
@@ -45,7 +47,7 @@ Teoreticky dělá `initial-scale=1` na všech zařízeních totéž co `width=de
 
 <!-- AdSnippet -->
 
-Jak už jsem na začátku textu naznačil – svět se nezboří, když na tohle zapomenete. Mobilní Windows jsou v roce 2018 i z pohledu uživatelské základy prakticky mrtvá platforma. „Snap“ mód ve Windows zase dle mého názoru skoro nikdo nepoužívá. iOS 8 a starší je podobný případ.
+Jak už jsem na začátku textu naznačil – svět se nezboří, když na tohle zapomenete. Mobilní Windows jsou v roce 2018 i z pohledu uživatelské základny prakticky mrtvá platforma. „Snap“ mód ve Windows zase dle mého názoru skoro nikdo nepoužívá. iOS 8 a starší je podobný případ.
 
 ## Parametry meta značky pro viewport {#parametry}
 
@@ -61,7 +63,7 @@ Nastaví výchozí zoom, ale také šířku layoutového viewportu. Ve výsledku
 
 ### `user-scalable` {#user-scalable}
 
-Hodnota `no` zakazuje uživateli jakkoliv zoomovat.  Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení fakt potřeba. Ať už jde o zvětšení textu v horších světelných podmínkách, nebo jen touhu vidět detaily z nějakého obrázku, přibližování obsahu prostě potřebují všichni uživatelé. Safari na iOS 10 navíc zákaz zoomování úplně ignorují. <span class="ebook-only">Více o tom píšu [v kapitole o častých chybách](responzivni-ui-caste-chyby.md).</span>
+Hodnota `no` zakazuje uživateli jakkoliv zoomovat.  Prosím, nepoužívejte ji. Zoomování je na mobilních zařízení fakt potřeba. Ať už jde o zvětšení textu v horších světelných podmínkách, nebo jen touhu vidět detaily z nějakého obrázku, přibližování obsahu prostě potřebují všichni uživatelé. Safari na iOS 10 a novějších navíc zákaz zoomování úplně ignoruje. <span class="ebook-only">Více o tom píšu [v kapitole o častých chybách](responzivni-ui-caste-chyby.md).</span>
 
 ### `minimum-scale`/`maximum-scale` {#scale}
 
@@ -69,9 +71,9 @@ Minimální a maximální možný zoom. `maximum-scale=1` ruší možnost přibl
 
 ### `shrink-to-fit` {#shrink-to-fit}
 
-Pokud nějaké prvky pozicujete částečně mimo viewport (například pomocí `position: absolute`), na zařízeních s iOS se vizuální viewport zmenší tak, aby se zobrazil i onen pozicovaný element.
+Pokud nějaké prvky pozicujete částečně mimo viewport (například pomocí `position: absolute`), na zařízeních s iOS se vizuální viewport přepočítá tak, aby se zobrazil i onen pozicovaný element.
 
-Může se ale stát, že si to takhle nepřejete. Třeba jen chcete, aby byl element částečně odřízlý mimo viewport. Od iOS 9 můžete použít deklaraci `shrink-to-fit=no`, kterou to zařídíte.
+Může se ale stát, že si to takhle nepřejete. Třeba jen chcete, aby byl element částečně ořízlý a mimo viewport. Od iOS 9 můžete použít deklaraci `shrink-to-fit=no`, kterou to zařídíte.
 
 Hezky je to vysvětlené na Stack Overflow, i s ukázkou v CodePen: [https://stackoverflow.com/a/33949647/889682](https://stackoverflow.com/a/33949647/889682)
 
@@ -93,11 +95,17 @@ Nová vlastnost, která řeší způsob zobrazování na zařízeních s jinou n
 <figure>
 <img src="../dist/images/original/viewport-fit-cover.jpg" alt="Viewport Fit">
 <figcaption markdown="1">
-*Pokud má stránka různobarevné pozadí, jako Vzhůru dolů, hodí se do meta značky přidate ještě viewport-fit=cover*
+*Pokud má stránka různobarevné pozadí, jako Vzhůru dolů, hodí se do meta značky přidat ještě viewport-fit=cover*
 </figcaption>
 </figure>
 
-Prakticky o tom píšu  i s příklady pro konkrétní weby na blogu v článku o iPhone X. [vrdl.cz/p/iphone-x](https://www.vzhurudolu.cz/prirucka/iphone-x)
+<div class="web-only" markdown="1">
+Více o tom píšu [v článku o iPhone X](https://www.vzhurudolu.cz/prirucka/iphone-x).
+</div>
+
+<div class="ebook-only" markdown="1">
+Více o tom píšu na blogu v článku o iPhone X. [vrdl.cz/p/iphone-x](https://www.vzhurudolu.cz/prirucka/iphone-x)
+</div>
 
 <!-- AdSnippet -->
 
@@ -116,7 +124,7 @@ Hodí se to, jen když nemáte přístup do `<head>`. Teoreticky jde Javascripte
 
 ### Odstranění prodlevy mezi tapnutím a akcí trvající 300 ms  {#300ms}
 
-Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče prodlevu dělaly proto, že po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)
+Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče prodlevu dělaly proto, že po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst <span class="ebook-only" markdown="1">na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)</span> <span class="ebook-only" markdown="1">[na blogu vývojářů WebKitu](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/).</span>
 
 ### Zavináčové pravidlo `@viewport` v CSS {#zavinac}
 
@@ -130,7 +138,7 @@ Chytré hodinky od Appple vynucují zobrazení našich webových dílek  na záp
 <meta name="disabled-adaptations" content="watch">
 ```
 
-Vtipné je, že WatchOS ve výchozím režimu vynucují přepočítaný viewport uvnitř přepočítaného viewportu. Ale co už – my léta víme, že viewporty na mobilních zařízeních jsou jako teorie relativity. Všichni o nich víme, všichni je používáme, ale skoro nikdo jim nerozumí.
+Vtipné je, že WatchOS ve výchozím režimu vynucují přepočítaný viewport uvnitř přepočítaného viewportu. Ale co už – my léta víme, že viewporty na mobilních zařízeních jsou jako teorie relativity. Vím, že existují, víme že jsou složité, ale skoro nikdo jim přesně nerozumí.
 
 <div class="ebook-only" markdown="1">
 
