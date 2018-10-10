@@ -19,7 +19,7 @@ Dnes už nebude takový problém, pokud použijete následující zápis:
 <meta name="viewport" content="width=device-width">
 ```
 
-Když byste ale moc stáli o podporu všech starších a méně významných kontextů (iOS 8, Windows Phone nebo přilepení ke kraji obrazovky – „snap“ mód – v desktopových Windows), volte spíše následující verzi.
+Když byste ale moc stáli o podporu všech starších a méně významných kontextů (iOS 8, Windows Phone) volte spíše následující verzi.
 
 ## Varianta s podporou všech zařízení {#varianta-plna}
 
@@ -30,24 +30,13 @@ V HTML hlavičce:
   content="width=device-width, initial-scale=1">
 ```
 
-K tomu si do CSS doplňte:
-
-```css
-@-ms-viewport {
-  width: device-width;
-}
-```
-
-Proč takhle složitě?
-
-- Bez `initial-scale=1` totiž Safari na iOS 8 a starších renderuje stránku do rozlišení jako by bylo otočené na výšku, i když jej používáme na šířku.
-- Bez `@-ms-viewport` v CSS vám Internet Explorer a Edge nespočítají správný viewport v takzvaném „snap“ módu, přichycení ke kraji obrazovky na desktopových Windows.
+Bez `initial-scale=1` totiž Safari na iOS 8 a starších renderuje stránku do rozlišení jako by bylo otočené na výšku, i když jej používáme na šířku.
 
 Teoreticky dělá `initial-scale=1` na všech zařízeních totéž co `width=device-width`, ale bez toho druhého chybuje Internet Explorer na mobilních Windows 8 stejným způsobem jako osmá a starší verze mobilního operačního systému od Apple.
 
 <!-- AdSnippet -->
 
-Jak už jsem na začátku textu naznačil – svět se nezboří, když na tohle zapomenete. Mobilní Windows jsou v roce 2018 i z pohledu uživatelské základny prakticky mrtvá platforma. „Snap“ mód ve Windows zase dle mého názoru skoro nikdo nepoužívá. iOS 8 a starší je podobný případ.
+Jak už jsem na začátku textu naznačil – svět se nezboří, když na tohle zapomenete. Mobilní Windows jsou v roce 2018 i z pohledu uživatelské základny prakticky mrtvá platforma. iOS 8 a starší je podobný případ.
 
 ## Parametry meta značky pro viewport {#parametry}
 
@@ -128,7 +117,7 @@ Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální 
 
 ### Zavináčové pravidlo `@viewport` v CSS {#zavinac}
 
-Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišlo W3C, ale moderní prohlížeče jej zatím nezvládají. Výjimkou je Internet Explorer a Edge, které pravidlo využívají v takzvaném „snap“ módu na desktopových Windows. <span class="ebook-only" markdown="1"> [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)</span> <span class="web-only" markdown="1">Psal jsem o tom [ve starším článku](https://www.vzhurudolu.cz/prirucka/viewport-windows).</span>
+Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišlo W3C, ale moderní prohlížeče jej zatím nezvládají. Výjimkou je Internet Explorer 11 a Edge, kde je to ale potřeba zapnout. Pravidlo tedy využívá jen IE11 v takzvaném „snap“ módu na desktopových Windows. V roce 2018 to tedy podle mě k ničemu není. <span class="ebook-only" markdown="1"> [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)</span> <span class="web-only" markdown="1">Psal jsem o tom [ve starším článku](https://www.vzhurudolu.cz/prirucka/viewport-windows).</span>
 
 ### Weby na WatchOS – pokud máte web optimalizovaný pro viewporty menší než 320px {#watch-os}
 
