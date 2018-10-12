@@ -76,52 +76,24 @@ Dnes už jsou běžné 3× a 4× displeje. Tam ani obrázek ve dvojnásobném ro
 
 Vezměme si pár oblíbených zařízení. Jaký je tam poměr mezi HW (hardwarovým) a CSS rozlišením?
 
-<table class="margin-bottom-xs web-only"><caption>Poměr mezi HW a CSS rozlišením u vybraných zařízení</caption>
-<tbody>
-<tr>
-<th>Zařízení</th>
-<th>HW rozlišení</th>
-<th>CSS rozlišení</th>
-<th>device-pixel-ratio</th>
-</tr>
-<tr>
-<td>iPad Mini</td>
-<td>768 × 1024</td>
-<td>768 × 1024</td>
-<td>1</td>
-</tr>
-<tr>
-<td>iPhone 4</td>
-<td>640 × 960</td>
-<td>320 × 480</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Google Nexus 7</td>
-<td>800 × 1280</td>
-<td>604 × 966</td>
-<td>1.325</td>
-</tr>
-<tr>
-<td>HTC One</td>
-<td>1080 × 1920</td>
-<td>360 × 640</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Xiaomi Mi3</td>
-<td>1080 × 1920</td>
-<td>270 × 480</td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
+Aby to bylo jasnější, podívejme se na rozdíly mezi rozlišením hardwarovým a přepočteným do CSS pixelů u několika skutečných zařízení:
 
-<p class="ebook-only" markdown="1">
-![Poměr mezi HW a CSS rozlišením u vybraných zařízení](dist/images/original/hw-css-pixely-tabulka.jpg)
-</p>
+<figure markdown="1">
+<div class="rwd-scrollable" markdown="1">
 
-Další zařízení najdete na [canbike.org/CSSpixels](http://www.canbike.org/CSSpixels/).
+| Zařízení                   | HW rozlišení  |  CSS rozlišení    | DPR |
+|----------------------------|:-------------:|:-----------------:|----:|
+| Apple iPhone X             | 1125 × 2436   | 375 × 812         |  3  |
+| Apple iPhone 3             |  320 × 480    | 320 × 480         |  1  |
+| Apple iPad 3 a starší      | 1536 × 2048   | 768 × 1024        |  2  |
+| Samsung Galaxy S8+         | 1440 × 2960   | 360 × 740         |  4  |
+| Samsung Galaxy S4 mini     | 540 × 960     | 360 × 360         | 1.5 |
+
+</div>
+<figcaption markdown="1">
+*Obrázek: Rozlišení ve fyzických (hardwarových) pixelech a v CSS pixelech, ze kterého se počítá ideální viewport. Ve třetím sloupečku je „Device Pixel Ratio“, tedy podíl těchto dvou hodnot. Zdroj: [MyDevice.io](https://www.mydevice.io/)*
+</figcaption>
+</figure>
 
 Ježíši, to je průšvih, co? Budeme vytvářet obrázky pro každé `device-pixel-ratio`?
 

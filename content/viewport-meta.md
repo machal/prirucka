@@ -1,4 +1,4 @@
-# Meta značka pro viewport
+# Meta značka pro viewport: Vše co potřebujete vědět
 
 Lidsky řečeno slouží k informování prohlížeče o tom, zda a jak jste web připravili pro mobilní zařízení.
 
