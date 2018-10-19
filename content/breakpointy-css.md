@@ -4,12 +4,17 @@ Ukládání breakpointů a rozmezí do proměnných preprocesoru velmi doporuču
 
 Příklady níže využívají CSS preprocesoru Sass v SCSS syntaxi. Ale podíváme se také na PostCSS (a CSSnext) nebo očekávaný vývoj specifikací.
 
+<div class="web-only" markdown="1">
+
 Možností, jak pracovat s breakpointy je více:
-[Proměnné](#promenne) –
-[Mixiny](#mixiny) –
-[Knihovna Sass MQ](#sass-mq) –
-[Media Queries Level 4](#media-queries-4) –
-[PostCSS a CSSnext]({#postcss)
+
+- [Proměnné](#promenne)
+- [Mixiny](#mixiny)
+- [Knihovna Sass MQ](#sass-mq)
+- [Media Queries Level 4](#media-queries-4)
+- [PostCSS a CSSnext]({#postcss)
+
+</div>
 
 ## Jednoduše v proměnných {#promenne}
 
@@ -26,9 +31,9 @@ $vd-screen-lg: 1100px;
 Definice rozmezí:
 
 ```scss
-$vd-screen-sm-up: "only screen and (min-width: #{$vd-screen-sm})";
-$vd-screen-md-up: "only screen and (min-width: #{$vd-screen-md})";
-$vd-screen-lg-up: "only screen and (min-width: #{$vd-screen-lg})";
+$vd-screen-sm-up: "(min-width: #{$vd-screen-sm})";
+$vd-screen-md-up: "(min-width: #{$vd-screen-md})";
+$vd-screen-lg-up: "(min-width: #{$vd-screen-lg})";
 
 $vd-screen-sm-down: "(max-width: #{$vd-screen-sm - 1})";
 $vd-screen-md-down: "(max-width: #{$vd-screen-md - 1})";
@@ -41,11 +46,11 @@ A ještě použití:
 @media #{$vd-screen-sm-up} { }
 ```
 
-Jak vidíte, zápis použití je díky specifikům Sassu poněkud krkolomnější a celkově jednoduchá implementace vám u větších projektů nemusí stačit. Pojďme se podívat na další.
+Jak vidíte, zápis použití je díky specifikům Sassu poněkud krkolomnější a celkově jednoduchá implementace vám u větších projektů nemusí stačit. Pojďme se podívat na další, propracovanější metody.
 
 ## Pomocí mixinů {#mixiny}
 
-Další možnost je vytvořit si mixiny práci s rozmezími platnosti mixinů. Pojďme rovnou k použití, tam je to vidět přímočařeji.
+Další možnost je vytvořit si mixiny pro práci s rozmezími platnosti mixinů. Pojďme rovnou k použití, tam je to vidět přímočařeji.
 
 ```scss
 /* Breakpoint "sm" a větší šířka viewportu: */
@@ -54,14 +59,14 @@ Další možnost je vytvořit si mixiny práci s rozmezími platnosti mixinů. P
 /* Breakpoint "lg" a menší šířka viewportu: */
 @include media-breakpoint-down(lg) { }
 
-/* Jen rozmezí následující za breakpoitem "sm" */
+/* Jen rozmezí následující za breakpointem "sm" */
 @include media-breakpoint-only(sm) { }
 
 /* Vše mezi breakpointy "sm" a "lg": */
 @include media-breakpoint-between(sm, lg) { }
 ```
 
-Definování mixinů si případně nastudujte ve zdrojácích Bootstrapu.
+Definování mixinů si případně nastudujte ve zdrojácích Bootstrapu. [vrdl.in/bootstrapbreak](http://vrdl.in/bootstrapbreak)
 
 <!-- AdSnippet -->
 
@@ -80,7 +85,7 @@ $mq-breakpoints: (
 ) !default;
 ```
 
-Následují možnosti použití, odpovídající příkladu s Bootstrapem výše. Prostě zavoláte mixin `mq()`:
+Následují možnosti použití, odpovídající předchozímu příkladu. Prostě zavoláte mixin `mq()`:
 
 ```scss
 /* Breakpoint "mobile" a větší šířky viewportu: */
@@ -89,7 +94,7 @@ Následují možnosti použití, odpovídající příkladu s Bootstrapem výše
 /* Breakpoint "tablet" a menší šířky viewportu: */
 @include mq($until: tablet) { }
 
-/* Jen rozmezí následující za breakpoitem "tablet" */
+/* Jen rozmezí následující za bodem zlomu "tablet" */
 @include mq(tablet) { }
 
 /* Vše mezi breakpointy "mobile" a "desktop": */
@@ -107,7 +112,7 @@ Je navíc možné pracovat s vlastními breakpointy, takže způsob volání zů
 
 Funkcí a možností využití je zde ale více. Pro více  informací vás odkážu na web knihovny: [github.com/sass-mq/sass-mq](https://github.com/sass-mq/sass-mq)
 
-Všechna zmíněná řešení mají jednu poměrně citelnou nevýhodu. Používají preprocesor, takže zavádějí nové jazykové prvky do kódu projektu, což zhoršuje čitelnost kódu.
+Všechna zmíněná řešení mají jednu poměrně citelnou nevýhodu. Používají preprocesor, takže zavádějí nové jazykové prvky do kódu projektu, což může zhoršovat čitelnost kódu.
 
 <!-- AdSnippet -->
 
@@ -127,7 +132,7 @@ Pokud je mi známo, v době psaní článku tohle žádný prohlížeč neumí. 
 
 ## Pomocí PostCSS, což je bohužel jen polovičatý preprocesor  {#postcss}
 
-Mnoho vývojářů se nechalo zlákat postprocesorem PostCSS a snaží se jím nahrazovat preprocesory. V mnohých případech do dává smysl, ale zrovna u definice breakpointů bych se touhle cestou nevydal. Zápis definice i použití vypadá hezky:
+Mnoho vývojářů se nechalo zlákat postprocesorem PostCSS a snaží se jím nahrazovat preprocesory. V mnohých případech do dává smysl, ale zrovna u definice breakpointů bych se touhle cestou nevydal. Zápis definice i použití vypadá nadějně:
 
 ```css
 @custom-media --small-viewport (max-width: 30em);
@@ -135,14 +140,9 @@ Mnoho vývojářů se nechalo zlákat postprocesorem PostCSS a snaží se jím n
 @media (--small-viewport) { }
 ```
 
-Ovšem pozor – potřebujete CSSnext. To je transpilátor budoucího CSS do stylů, kterým rozumí dnešní prohlížeče. CSSnext v případě uvedeného zápisu ale vychází z draftu (!) specifikace Media Queries 5. To je věc, která se může ještě mnohokrát změnit a do prohlížečů dorazí asi tak… až naprší a uschne.
+Ovšem pozor – dnešní prohlížeče tomu nerozumí. Potřebujete tedy CSSnext, transpilátor budoucího CSS do stylů, kterým rozumí dnešní prohlížeče. CSSnext v případě uvedeného zápisu ale vychází z draftu (!) specifikace Media Queries 5. To je věc, která se může ještě mnohokrát změnit a do prohlížečů dorazí asi tak… až naprší a uschne.
 
-V PostCSS bude ve srovnání s preprocesory navíc dost složité připravit logiku, kterou pro práci s kódem v Media Queries potřebujete.
-
-O odkazy vás ale nepřipravím:
-
-- CSSnext: [cssnext.io/features](http://cssnext.io/features/#custom-media-queries)
-- Můj článek o PostCSS (a CSSnext): [vrdl.cz/p/postcss](https://www.vzhurudolu.cz/prirucka/postcss)
+V PostCSS bude ve srovnání s preprocesory navíc dost složité připravit logiku, kterou pro práci s kódem v Media Queries potřebujete. Tuhle cestu tedy zatím nedopouručuji. Pro zájemce je zde ještě můj článek o PostCSS (a CSSnext): [vrdl.cz/p/postcss](https://www.vzhurudolu.cz/prirucka/postcss)
 
 Můj závěr je tedy jasný:
 

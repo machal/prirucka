@@ -6,7 +6,11 @@ Kromě velikosti okna můžeme také mluvit o velikosti [viewportu](viewport-mob
 
 <!-- AdSnippet -->
 
+<div class="web-only" markdown="1">
+
 Podívejme se, jak vše zjišťovat v [JavaScriptu](#JS) a [CSS](#CSS).
+
+</div>
 
 ## JavaScript {#JS}
 
@@ -56,7 +60,7 @@ Dalším viditelným odlišením je chování prohlížečů na iOS: Pokud je st
 
 Rozdíly mezi `innerWidth` a `clientWidth` si můžete vyzkoušet také na mém CodePenu: [cdpn.io/e/rrXNWO](https://codepen.io/machal/pen/rrXNWO/).
 
-<iframe height='300' scrolling='no' title='JavaScript: innerWidth vs. clientWidth' src='//codepen.io/machal/embed/rrXNWO/?height=300&theme-id=502&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/rrXNWO/'>JavaScript: innerWidth vs. clientWidth</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe class="web-only" height='300' scrolling='no' title='JavaScript: innerWidth vs. clientWidth' src='//codepen.io/machal/embed/rrXNWO/?height=300&theme-id=502&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/rrXNWO/'>JavaScript: innerWidth vs. clientWidth</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> 
 
 Pro zjištění viewportu jsou výhodnější vlastnosti `innerWidth` a `innerHeight`, protože na všech platformách dostanete shodně vypočtená čísla. Pokud potřebujete zjistit velikost prostoru dostupného pro váš design, musíte pracovat s `clientWidth` a `clientHeight`.
@@ -73,15 +77,6 @@ V CSS máme [Media Queries](css3-media-queries.md), kterými se na šířku nebo
 @media only screen and (max-height: 10em) { … }
 ```
 
-Tyhle hodnoty se v CSS počítají jako velikost viewportu, tedy včetně posuvníků.
+Tyhle hodnoty se v CSS počítají jako velikost viewportu, tedy včetně šířky posuvníků.
 
 <!-- AdSnippet -->
-
-
-
-
-
-
-
-
-

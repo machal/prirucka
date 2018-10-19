@@ -17,7 +17,7 @@ Zapamatujte si hlavně následující šestici.
 | -------- | --------------------------------------------- |
 | `rem`    | relativně k velikosti písma na prvku `<html>` |
 | `em`     | relativně k velikosti písma na elementu       |
-| `px`     | CSS pixel                                     |
+| `px`     | přepočtený pixel, CSS pixel                   |
 | `%`      | procenta relativně k rodičovskému elementu    |
 | `vw`     | procento ze šířky okna prohlížeče             |
 | `vh`     | procento z výšky okna prohlížeče              |
@@ -29,8 +29,8 @@ Existují samozřejmě ještě další: namátkou `pt`, `ex` nebo `vmax`. Buď j
 V tomhle textu dost dbám na to, abychom si nerozbili přirozenou dědičnost velikosti písma v prohlížečích. Kromě nás, autorů stránek, si ji totiž může chtít změnit uživatel a občas ji mění i prohlížeče. Proto vám pro různá použití doporučuji různé jednotky:
 
 - Základní velikost písma v dokumentu: [%](#velikost-pisma-html)
-- Rozměry vycházející z velikosti písma: [rem](#rem)
-- Rozměry pružných komponent: [em](#em)
+- Rozměry vycházející z velikosti písma dokumentu: [rem](#rem)
+- Rozměry vycházející z velikosti písma rodiče: [em](#em)
 - Media Queries: [em](#media-queries)
 - Výška řádku: [číslem bez jednotky](#vyska-radku)
 - Rámečky, dekorace: [px](#dekorace)
@@ -38,8 +38,7 @@ V tomhle textu dost dbám na to, abychom si nerozbili přirozenou dědičnost ve
 
 Je ale možné, že si skoro všude vystačíte s `px`. K tomu se dostávám [na konci textu](#px).
 
-Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější scénáře nastavování rozměrů v CSS. Projdeme si to v textu, ale tady je ještě online: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
-
+Připravil jsem jednoduché demo, ve kterém jsou všechny nejčastější scénáře nastavování rozměrů v CSS. Projdeme si to v textu, ale je také online: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
 
 ## Základní velikost písma v dokumentu: %  {#velikost-pisma-html}
 
@@ -53,20 +52,22 @@ html {
 }
 ```
 
-Nastavíte tak o čtvrtinu větší písmo, než je výchozí. Skoro u všech prohlížečů tedy `20px`. V Kindle 3 by to bylo `33px`. Je důležité si uvědomit, že je to v pořádku. Pokud prohlížeč nastavuje jinak veliké písmo, dělá to z rozumných důvodů.
+Nastavíte tak o čtvrtinu větší písmo, než je výchozí. Skoro u všech prohlížečů tedy `20px`. V Kindle 3 by to bylo `33px`. Je důležité si uvědomit, že je to v pořádku. Pokud prohlížeč nastavuje jinak velké písmo, dělá to z rozumných důvodů.
 
 ### Proč ne px? Protože lidé si zvětšují písmo v prohlížečích  {#proc-ne-px}
 
-Pokud bychom už tady použili `ps`, našim milým uživatelům bychom zakázali měnit si výchozí velikost písma v prohlížečích.
+Pokud bychom už tady použili `px`, našim milým uživatelům bychom zakázali měnit si výchozí velikost písma v prohlížečích.
 
 Pozor, nebavíme se o „zoomování“, ale zvětšení velikosti písma pro všechny weby. Taková věc stále existuje v prohlížečích nebo v operačních systémech. A ano, lidé to používají. Asi taky jednou budeme. Dělají to totiž lidé s horším zrakem nebo třeba jen méně kvalitními displeji.
 
 Vývojář z Archive.org Evan Minto to měřil a zjistil, že velikost písma si v prohlížeči změnilo 3 % jejich uživatelů. Jak trefně přirovnává, je to více než podíl návštěvníků používajících Internet Explorer, Edge, nebo Operu Mini. Protože chceme vytvářet řešení s co nejširším uživatelským zásahem, neměli bychom to ignorovat. Zdroj: [medium.com/@vamptvo/5cfb20831773](https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773)
 
 
-## Rozměry vycházející z velikosti písma: rem  {#rem}
+## Rozměry vycházející z velikosti písma dokumentu: rem  {#rem}
 
-Velikost písma, vnější a vnitřní okraje, ale i další vlastnosti v dokumentu a komponentách prostě nastavuji v `rem`. `1rem` (1 root `em`) obsahuje výchozí velikost písma nastavenou autorem pro dokument (a případně ještě upravenou uživatelem nebo prohlížečem, jak už jsme viděli). Pokud to nezměníme pomocí `%`, platí tedy, že `1rem = 16px`.
+Velikost písma, vnější a vnitřní okraje, ale i další vlastnosti v dokumentu a komponentách prostě nastavuji v `rem`. `1rem` (1 root `em`) obsahuje výchozí velikost písma nastavenou autorem pro dokument a případně ještě upravenou uživatelem nebo prohlížečem, jak už jsme viděli.
+
+Pokud ji na dokumentu nezměníme, platí, že `1rem = 16px`.
 
 ```css
 p { margin-bottom: 1rem; }
@@ -83,10 +84,9 @@ Používat `rem` je výhodné i z pohledu vývojáře:
 - Šířka layoutu nastavená v `rem` bude dodržovat optimální délku textu, i když si uživatel písmo zvětší. <span class="ebook-only" markdown="1">(Vzpomeňte si na text o [typografii](typografie.md).)</span>
 - Díky `rem` je také možné zvětšit celý dokument na konkrétních rozmezích designu. <span class="ebook-only" markdown="1">(Budeme rozebírat v části o [autorském „zoomování“ dokumentu](rem-em-zoom.md).</span>
 
-
 ### Co když dostávám podklady v px? {#podklady-v-px}
 
-Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože grafici dodávají podklady v takových jednotkách. Jak už jsem ale napsal, nastavovat v `px` cokoliv odvozeného od hlavní velikosti písma komplikuje život mnohým uživatelů.
+Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože grafici a grafičky dodávají podklady v takových jednotkách. Jak už jsem ale napsal, nastavovat v `px` cokoliv odvozeného od hlavní velikosti písma komplikuje život mnohým uživatelů.
 
 Jak z konfliktu design versus přístupnost ven? Může vám pomoci automatická úprava CSS. Existují minimálně dva pluginy do PostCSS, které kód napsaný v `px` převedou do `rem`:
 
@@ -95,8 +95,7 @@ Jak z konfliktu design versus přístupnost ven? Může vám pomoci automatická
 
 `rem` tedy považuji za hlavní jednotku pro tvorbu rozhraní. Velmi se nám ale také hodí `em`.
 
-
-## Rozměry pružných komponent: em {#em}
+## Rozměry vycházející z velikosti písma rodiče: em {#em}
 
 Jednotka `em` obsahuje velikost písma elementu, nikoliv dokumentu.
 
@@ -123,8 +122,7 @@ Ale vývojářům se s „emky“ samozřejmě pracuje trošku hůř než s „r
 
 „Čtverčík“ je typografická jednotka, která se počítá ze šířky velkého „M“. `em` se občas nepřesně jako čtverčík označuje. Jenže to by pak bylo pro různá písma různě velké.  
 
-Není. W3C `em` definovalo jinak. Jeho velikost v kořeni dokumentu je ve všech prohlížečích a při použití jakéhokoliv písma stejná – `16px`. Pokud to ovšem nezmění někdo ze zákeřné trojice uživatel, prohlížeč či autor stránky. [vrdl.in/oyqwn](https://diskuse.jakpsatweb.cz/?action=vthread&forum=19&topic=138070)
-
+Není. W3C `em` definovalo jinak. Jeho velikost v kořeni dokumentu je ve všech prohlížečích a při použití jakéhokoliv písma stejná – `16px`. Pokud to ovšem nezmění někdo ze zákeřné trojice uživatel, prohlížeč či autor stránky. Vysvětlují to například uživatelé diskuze na JakPsátWeb: [vrdl.in/oyqwn](https://diskuse.jakpsatweb.cz/?action=vthread&forum=19&topic=138070)
 
 ## Media Queries: em {#media-queries}
 
@@ -135,7 +133,6 @@ V textu [o Media Queries](media-queries-tipy.md) píšu, proč nepoužít `px` (
 ```
 
 Opět je ale možné použít automatický převod z `px`, protože (i mě) se tady s CSS pixely pracuje lépe. Pomůže plugin do PostCSS jménem „postcss-em-media-query“. [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
-
 
 ## Výška řádku: číslem bez jednotky {#vyska-radku}
 
@@ -149,12 +146,11 @@ h1 {
 
 V ukázce je výška řádku prostě jedenapůlnásobek velikosti písma nadpisu první úrovně. A je nám pak úplně jedno, jak si který čert nastaví velikost písma.
 
-Proč je to lepší než nastavení „natvrdo“ v `rem`, `em` nebo `px`? Pokud se autorsky nebo uživatelsky v některém kontextu změní velikost písma, nemusíte pak už měnit nastavní výšky řádku.
-
+Proč je to lepší než nastavení „natvrdo“ v `rem`, `em` nebo `px`? Pokud se autorsky nebo uživatelsky v některém kontextu změní velikost písma, nemusíte pak už měnit nastavení výšky řádku.
 
 ## Layout: procenta, ale i další jednotky {#layout}
 
-Pro layout se dobře hodí procenta. Raději připomínám, že se vždy počítají ze šířky rodiče:
+Pro layout se dobře hodí procenta. Například:
 
 ```css
 .layout-col {
@@ -162,13 +158,15 @@ Pro layout se dobře hodí procenta. Raději připomínám, že se vždy počít
 }
 ```
 
+Raději připomínám, že se vždy počítají ze šířky nejbližšího rodičovského prvku. 
+
 Použitelných jednotek pro layout je ale více:
 
 - Procenta nebo `vw` se roztahují podle šířky okna, `vh` podle jeho šířky.
 - `rem` a `em` podle velikosti písma.
-- Občas se hodí i `px`.
 - Ve flexboxu je možné používat také absolutní jednotky (`flex: 1`).
 - V CSS Grid zase takzvané podílové jednotky (`grid-template-columns: 3fr 1fr`).
+- Občas se hodí i fixní rozměry v `px`.
 
 
 ## Rámečky, dekorace: px {#dekorace}
@@ -206,7 +204,7 @@ Triky s responzivní typografií se více zabývám v přespříští podkapitol
 </div>
 
 <div class="web-only" markdown="1">
-Další triky s responzivní typografií se více zabývám například v článku o [elastická typografii](reseni-elasticka-typografie.md).
+Dalšími triky s responzivní typografií se více zabývám například v článku o [elastické typografii](reseni-elasticka-typografie.md).
 </div>
 
 A ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
@@ -215,9 +213,10 @@ A ještě jeden odkaz na příklad: [cdpn.io/e/dvdxWG](https://codepen.io/machal
 
 Nemyslím si, že zemře mnoho koťátek, když to uděláte. Použití `px` je u velké části typů designu na implementaci výrazně pohodlnější.
 
-Přesto si udělejte před začátkem kódování jasno, zda vám nevadí nic z následujícího seznamu:
+Přesto se ujistěte, že písmo v návrhu je dostatečně veliké tak, aby je přečetla většina uživatelů. Jako základ se obecně doporučuje alespoň oněch `16px`.
 
-- Písmo je dostatečně veliké tak, aby je přečetla většina uživatelů. Jako základ se obecně doporučuje alespoň oněch `16px`.
+Raději se také sami sebe zeptejte, zda vám nevadí nic z následujícího seznamu:
+
 - Uživatelům, kteří si změnili písmo v systému nebo prohlížeči (na Archive.org asi 3 %), se jejich nastavení na vašem webu neprojeví. Zůstává jim možnost zoomovat celou stránku.
 - Nevadí vám, že změna velikosti písma nebude správně reflektována v Media Queries. <span class="ebook-only" markdown="1">(Řešíme v [tipech k Media Queries](media-queries-tipy.md).</span>
 - V návrhu designu se nepočítá s elastickou typografií, zvětšující se podle viewportu.

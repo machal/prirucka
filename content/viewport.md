@@ -4,7 +4,7 @@ Dozvíte se, co je layoutový, co vizuální a co ideální viewport. A také pr
 
 Co to ale ten *viewport* vlastně je? V kontextu webdesignu jde o označení pro výřez stránky viditelný v okně prohlížeče. Na zařízeních, kde je možné měnit velikost okna (typicky počítačích), tedy viewport představuje šířku a výšku okna bez rozhraní prohlížeče.
 
-Na mobilních zařízeních potřebují webaři viewportů více, protože průzor je malý. A pak ještě:
+Na mobilních zařízeních potřebují webaři viewportů více, protože obrazovka je malá. Z toho pak vyplývá:
 
 - weby se mu chtějí přizpůsobovat různým způsobem,
 - uživatelé zase stránku hodlají zvětšovat nebo zmenšovat.
@@ -13,7 +13,7 @@ Na mobilních zařízeních potřebují webaři viewportů více, protože průz
 
 Od výrobců zařízení jsme tedy dostali dva viewporty a ještě jeden navíc. Jako bonus. Nejdříve ale k historickému kontextu.
 
-## Proč není jen jeden viewport a za co může první iPhone {#proc-ne-jeden}
+## Proč neexistuje jen jeden viewport a za co může první iPhone {#proc-ne-jeden}
 
 První iPhone přišel v roce 2006 do situace, kdy byl prakticky každý web navržený jen pro velké displeje. S tím se dítko Steva Jobse snažilo vypořádat zmenšením layoutu webu a přidáním možnosti konkrétní části zvětšovat.
 
@@ -30,7 +30,7 @@ Zpět tedy k našim viewportům. Budeme používat terminologii Petera-Paula Koc
 <figure>
 <img src="../dist/images/original/viewport-layoutovy-vizualni.jpg" alt="Layoutový a vizuální viewport">
 <figcaption markdown="1">
-*Obrázek: Viewport layoutový a vizuální. Při použití správné meta značky jsou oba při načtení responzivní stránky na všech zařízeních stejně velké*
+*Obrázek: Viewport layoutový a vizuální. Při použití správné meta značky jsou oba při načtení responzivní stránky na všech zařízeních stejně široké*
 </figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ Hodnotu ideálního viewportu získáte, když vydělíte hardwarové rozlišen�
 
 Takový iPhone X má hardwarové rozlišení kratší strany 1 125 pixelů, ale v CSS pixelech je to 375 (Device Pixel Ratio je  3). Ideální viewport je tedy široký 375 pixelů.
   
-Více informací je k dispozici ve zvlášním textu <span class="ebook-only" markdown="1">[o CSS pixelu](zmeny-css-pixel.md)</span> <span class="web-only" markdown="1">[o CSS pixelu](css-pixel.md)</span>. 
+Více informací je k dispozici ve zvláštním textu <span class="ebook-only" markdown="1">[o CSS pixelu](zmeny-css-pixel.md)</span> <span class="web-only" markdown="1">[o CSS pixelu](css-pixel.md)</span>. 
 
 
 <div class="web-only" markdown="1">

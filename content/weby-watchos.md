@@ -4,15 +4,15 @@ Mezi zařízeními, které nějak zobrazují weby, už určitou dobu figurují i
 
 ## Budou lidé weby používat na chytrých hodinkách? {#budoucnost}
 
-Občas dostanu obrázek webu Vzhůru dolů z nějakých hodinek, ale bral jsem to spíše za kuriozitu a masovému používaní nevěřil.
+Občas dostanu obrázek webu Vzhůru dolů z nějakých hodinek, ale bral jsem to spíše za kuriozitu a masovému používání nevěřil.
 
 Do první verze knížky „Vzhůru do (responzivního) designu“ jsem ostatně napsal:
 
 > Myslím, že je to nepoužitelné, a masovému přijetí nevěřím. Plocha je pro weby příliš malá na konzumaci obsahu, natož pak rozumnou interakci s ním.
 
-Jenže hodinky se zvětšují a způsob jejich ovládání je stále pohodlnější. Stále platí, že nevěřím, že používaní webů na hodinkách bude *masovou* záležitostí.
+Jenže hodinky se zvětšují a způsob jejich ovládání je stále pohodlnější. Stále sice platí, že nevěřím, že používání webů na hodinkách bude *masovou* záležitostí. V tom ostatním jsem se však pravděpodobně mýlil.
 
-Ve všem ostatním jsem se však pravděpodobně mýlil. Do hry už vstoupil i Apple s hodinkami Watch, respektive operačním systémem na nich – watchOS.
+Do hry už vstoupil i Apple s hodinkami Watch, respektive operačním systémem na nich – watchOS.
 
 Píšu o tom proto, že Apple je známý tím, že kroky nemívá nepodložené reálnými testy uživatelů a jejich chování. To je něco jiného, než když menší výrobce hodinek do systému *narve* prohlížeč, protože — no proč ne, že?
 
@@ -22,10 +22,9 @@ Počínaje tímto krokem Apple (platí od roku 2018 a watchOS verze 5) je potře
 
 Ale čtěte dále, všechno se dozvíte.
 
-
 ## Pohledem uživatele {#uzivatelsky}
 
-Pokud se nepletu, prohlížeč na WatchOS není nainstalovaný jako samostatná aplikace. Jde spíše o možnost otevírat sdílené odkazy:
+Prohlížeč na WatchOS není nainstalovaný jako samostatná aplikace. Jde tam spíše o možnost otevírat sdílené odkazy:
 
 - V aplikacích Mail a Messages vám může přijít odkaz na web.
 - Odkaz pak můžete otevřít v prohlížeči, stránka je v něm uměle upravena.
@@ -44,15 +43,17 @@ Stránku je možné základním způsobem používat:
 - Prohlížeč je Safari, postavený na Webkitu.
 - Některé vlastnosti jsou vypnuté: zmiňuje se hlavně video, Service worker, webové fonty…
 
-### Výchozí stav prohlížení: vynucený initial scale {#vychozi-stav}
+### Výchozí stav prohlížení: vynucený initial-scale {#vychozi-stav}
 
-Pokud to dobře chápu, prohlížeč se snaží weby za každou cenu zobrazit v šířce viewportu 320px. Nejspíš proto, že Apple nevěří, že jsou naše díla připravené na menší rozlišení. Dobře dělá. Technicky to funguje následovně:
+Pokud to dobře chápu, prohlížeč se snaží weby za každou cenu zobrazit v šířce viewportu 320px. Nejspíš proto, že Apple nevěří, že jsou naše díla připravené na menší rozlišení. Dobře dělá. 
+
+Technicky to funguje následovně:
 
 - Vynutí hodnotu vlastnosti `initial-scale` [meta značky pro viewport](viewport-meta.md) na `0.49`.
 - Prohlížeč pak hlásí rozlišení 320×357 (v CSS pixelech).
 
 <figure>
-<img src="dist/images/original/watchos-weby-shrink.jpg" alt="shrink-to-fit na watchos">
+<img src="../dist/images/original/watchos-weby-shrink.jpg" alt="shrink-to-fit na watchos">
 <figcaption markdown="1">
 *Obrázek: Jak fungují výchozí adaptace webů na watchOS 5. Zdroj: Apple*
 </figcaption>
@@ -71,7 +72,7 @@ V takovém případě nebude Safari na watchOS provádět výchozí adaptace a p
 - 272×340px pro 38mm hodinky Apple Watch
 - 312×390px pro 42mm hodinky Apple Watch
 
-Pojďme se podívat i na další použité technologie. Není to vlastně nic nového a je dobře, že Apple zůstal u standardních a jinde zavedených technnologií.  
+Pojďme se podívat i na další použité technologie. Není to vlastně nic nového a je dobře, že Apple zůstal u standardního a jinde zavedeného kódu.
 
 <!-- AdSnippet -->
 
@@ -95,7 +96,7 @@ Předpokládám ale, že je už na webu máte, kvůli zobrazení náhledů na so
 Mile mě překvapilo, že na hodinkách od Apple je možné dělat také interakce s formuláři. Když se ale podíváte na následující obrázek, dává to smysl. Uživatelský vstup je vyřešený vážně hezky:
 
 <figure>
-<img src="dist/images/original/watchos-weby-forms.jpg" alt="Formuláře na watchos">
+<img src="../dist/images/original/watchos-weby-forms.jpg" alt="Formuláře na watchos">
 <figcaption markdown="1">
 *Obrázek: Formulářové prvky na watchOS 5. Zdroj: Apple*
 </figcaption>

@@ -1,11 +1,11 @@
-# Meta značka pro viewport: Vše co potřebujete vědět
+# Meta značka pro viewport: Vše co o ní potřebujete vědět
 
 Lidsky řečeno slouží k informování prohlížeče o tom, zda a jak jste web připravili pro mobilní zařízení.
 
 <figure>
 <img src="../dist/images/original/meta-viewport-mobile.jpg" alt="Meta Viewport">
 <figcaption markdown="1">
-*Obrázek: Po vložení meta značky pro viewport se z desktopového rozlišení stane mobilní*
+*Obrázek: Po vložení meta značky pro viewport se z desktopového rozlišení stane mobilní. Zjednodušeně řečeno. Ale prsty v tom mají viewporty*
 </figcaption>
 </figure>
 
@@ -75,16 +75,16 @@ Váš meta tag pro viewport by pak měl vypadat takto:
 
 ### `viewport-fit` {#viewport-fit}
 
-Nová vlastnost, která řeší způsob zobrazování na zařízeních s jinou než hranatou obrazovkou. Jako příklad vezměme chytré hodinky nebo iPhone X. Vlastnost může mít následující hodnoty (už znáte z `background-size`):
+Nová vlastnost, která řeší způsob zobrazování na zařízeních s jinou než hranatou obrazovkou. Jako příklad vezměme chytré hodinky nebo iPhone X a novějších. Vlastnost může mít následující hodnoty (už znáte z `background-size`):
 
-- `auto` - výchozí stav, který vše nechává na prohlížeči. U iPhone X například odpovídá hodnotě `contain`.
-- `contain` - zmenší viewport pro stránku tak, aby byla vidět celá. Jakou barvu vykreslí po stranách, záleží na prohlížeči. iPhone X v `background-color` z `body`.
+- `auto` - výchozí stav, který vše nechává na prohlížeči. U iPhone X a novějších to například odpovídá hodnotě `contain`.
+- `contain` - zmenší viewport pro stránku tak, aby byla vidět celá. Jakou barvu vykreslí po stranách, záleží na prohlížeči. U nových iPhonů je to `background-color` z `body`.
 - `cover` - roztáhne viewport pro stránku tak, aby nikde „nevyčuhovaly“ neobarvené části rozhraní prohlížeče. S tím rizikem, že kulaté rohy nebo výčnělky na displeji zařízení některé části stránky překryjí.
 
 <figure>
 <img src="../dist/images/original/viewport-fit-cover.jpg" alt="Viewport Fit">
 <figcaption markdown="1">
-*Pokud má stránka různobarevné pozadí, jako Vzhůru dolů, hodí se do meta značky přidat ještě viewport-fit=cover*
+*Pokud má stránka různobarevné pozadí, jako Vzhůru dolů, hodí se do meta značky přidat viewport-fit=cover*
 </figcaption>
 </figure>
 
@@ -113,27 +113,27 @@ Hodí se to, jen když nemáte přístup do `<head>`. Teoreticky jde Javascripte
 
 ### Odstranění prodlevy mezi tapnutím a akcí trvající 300 ms  {#300ms}
 
-Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče prodlevu dělaly proto, že po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst <span class="ebook-only" markdown="1">na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)</span> <span class="ebook-only" markdown="1">[na blogu vývojářů WebKitu](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/).</span>
+Když budete mít viewport nastavený správně, s hodnotou `width`, aktuální prohlížeče postavené na jádrech WebKit a Blink samy odstraní prodlevu mezi tapnutím a akcí. Starší prohlížeče totiž po tapnutí prstem čekaly, zda nepřidáte prst druhý a nemáte tedy v úmyslu stránku zvětšovat. Více si o tom můžete přečíst <span class="ebook-only" markdown="1">na blogu vývojářů WebKitu. [vrdl.in/l72eg](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/)</span> <span class="ebook-only" markdown="1">[na blogu vývojářů WebKitu](https://webkit.org/blog/5610/more-responsive-tapping-on-ios/).</span>
 
 ### Zavináčové pravidlo `@viewport` v CSS {#zavinac}
 
-Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišlo W3C, ale moderní prohlížeče jej zatím nezvládají. Výjimkou je Internet Explorer 11 a Edge, kde je to ale potřeba zapnout. Pravidlo tedy využívá jen IE11 v takzvaném „snap“ módu na desktopových Windows. V roce 2018 to tedy podle mě k ničemu není. <span class="ebook-only" markdown="1"> [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)</span> <span class="web-only" markdown="1">Psal jsem o tom [ve starším článku](https://www.vzhurudolu.cz/prirucka/viewport-windows).</span>
+Instrukce pro způsob zobrazování by se měla dávat do CSS, že ano? S logičtěji umístěným zápisem `@viewport { }` přišlo W3C, ale moderní prohlížeče jej zatím nezvládají. Výjimkou je Internet Explorer 11 a Edge, kde je to ale potřeba zapnout. Pravidlo tedy využívá jen IE11 v takzvaném „snap“ módu na desktopových Windows. V roce 2018 to tedy podle mě k ničemu není. <span class="ebook-only" markdown="1"> Psal jsem o tom ve starším článku. [vrdl.cz/p/viewport-windows](https://www.vzhurudolu.cz/prirucka/viewport-windows)</span> <span class="web-only" markdown="1">Psal jsem o tom [ve starším článku](https://www.vzhurudolu.cz/prirucka/viewport-windows).</span>
 
 ### Weby na WatchOS – pokud máte web optimalizovaný pro viewporty menší než 320px {#watch-os}
 
-Chytré hodinky od Appple vynucují zobrazení našich webových dílek  na zápěstí uživatelů ve viewportu širokém 320 CSS pixelů. Pokud bychom tomu chtěli zabránit a zobrazit je ve výchozím CSS rozlišení (o šířce 272 nebo 312 pixelů podle typu hodinek), musíme si dupnout následujícím kódem:
+Chytré hodinky od Apple vynucují zobrazení našich webových dílek  na zápěstí uživatelů ve viewportu širokém 320 CSS pixelů. Pokud bychom tomu chtěli zabránit a zobrazit je ve výchozím CSS rozlišení (o šířce 272 nebo 312 pixelů podle typu hodinek), musíme si dupnout následujícím kódem:
 
 ```html
 <meta name="disabled-adaptations" content="watch">
 ```
 
-Vtipné je, že WatchOS ve výchozím režimu vynucují přepočítaný viewport uvnitř přepočítaného viewportu. Ale co už – my léta víme, že viewporty na mobilních zařízeních jsou jako teorie relativity. Vím, že existují, víme že jsou složité, ale skoro nikdo jim přesně nerozumí.
+Vtipné je, že WatchOS ve výchozím režimu vynucují přepočítaný viewport uvnitř přepočítaného viewportu. Ale co už – my léta víme, že viewporty na mobilních zařízeních jsou jako teorie relativity. Víme, že existují, víme že jsou složité, ale skoro nikdo jim nerozumí.
 
 <div class="ebook-only" markdown="1">
 
 Více o [webech na WatchOS](weby-watchos.md) píšu ve zvláštní kapitole.
 
-Teď se pojďme podívat na jeden parametr webů, jehož podcenění může mít daleko horší důsledky – rychlost načítání. Nepatří sem jen zdánlivě. V průběhu práce na projektu ji totiž nesmíme nechat na závěr.
+Teď se pojďme podívat na jeden parametr webů, jehož podcenění může mít daleko horší důsledky – zhoršení rychlosti načítání. Nepatří sem jen zdánlivě. V průběhu práce na projektu ji totiž nesmíme nechat na závěr.
 
 </div>
 

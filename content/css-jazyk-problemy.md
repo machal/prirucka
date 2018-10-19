@@ -150,7 +150,7 @@ Tady se dotýkáme i toho, že aby to celé dávalo smysl, i design musí být k
 ## Globální platnost – komponentový přístup a metodiky to řeší {#globalni-platnost}
 
 
-To, že každý selektor platí globálně, byl svého času první argument pro používaní [CSS v JS.](https://www.vzhurudolu.cz/podcast/77-css-v-js)  Vlastně jsem mu ale nikdy úplně plně nerozumněl, hlavně omílanému srovnání s globálními konstantami v programovacích jazycích. 
+To, že každý selektor platí globálně, byl svého času první argument pro používání [CSS v JS.](https://www.vzhurudolu.cz/podcast/77-css-v-js)  Vlastně jsem mu ale nikdy úplně plně nerozumněl, hlavně omílanému srovnání s globálními konstantami v programovacích jazycích. 
 
 
 
