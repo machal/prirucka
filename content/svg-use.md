@@ -38,7 +38,7 @@ Pár komentářů:
 
 A teď náš čtverec slavnostně použijeme:
 
-```
+```svg
 <use xlink:href="#svg-square" fill="LimeGreen">
 ```
 
@@ -62,7 +62,7 @@ Může stačit `display:none`? To si pište, že ne.
 
 Tím byste zdroj schovali před lidmi, ale i stroji. Taková slepecká čtečka vám jej pak nepřečte. Musíme na to fikaněji. Ale nic nového vám neřeknu, třídu `sr-only` asi znáte a používáte:
 
-```
+```html
 <p class="sr-only">
 	<svg>
 	  <symbol id="svg-square">
@@ -117,7 +117,7 @@ To by byl praktický pohled do hloubky značky `<use>`. Ještě se mrkneme na at
 
 ## Atributy {#atributy}
 
-```
+```svg
 <use xlink:href="#svg-square"
   width="100" height="100">
 ```
@@ -143,11 +143,11 @@ V případě pochybností prostě [testujte přímo ve čtečkách](testovani-od
 
 Tohle by mohlo být super:
 
-```
+```svg
 <use xlink:href="sprite.svg#icon-1">
 ```
 
-Umožnilo by to ukládat ikonky [do jednoho externího souboru](https://css-tricks.com/svg-sprites-use-better-icon-fonts/), podobně jako se to dělávalo s ikonfonty. Zároveň by zůstala výhoda existence SVG v rámci DOMu – tedy stylování.
+Umožnilo by to ukládat ikonky [do jednoho externího souboru](https://css-tricks.com/svg-sprites-use-better-icon-fonts/), podobně jako se to dělávalo [s ikonfonty](ikonfonty-vs-svg.md). Zároveň by zůstala výhoda existence SVG v rámci DOMu – tedy stylování.
 
 Jenže… nebude to fungovat v Internet Exploreru 11. (A taky do Safari 6 a Edge 12, ale to nás tak moc nepálí.)
 

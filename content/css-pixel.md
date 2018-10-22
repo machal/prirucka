@@ -107,7 +107,7 @@ Jsou dva typy obrázků na webech: vektorové a bitmapové.
 
 ### Obrázky v rozhraní: ikony, logotypy, dekorace
 
-Tady je rozhodně jedinou možnou cestou použít vektorovou grafiku. „Ikonfonty“ považuji za dobré, ale spíše dočasné řešení. Zajímavější možnosti nabízí SVG. [vrdl.cz/p/svg](https://www.vzhurudolu.cz/prirucka/svg) 
+Tady je rozhodně jedinou možnou cestou použít vektorovou grafiku. „Ikonfonty“ považuji za dobré, ale spíše dočasné řešení. Zajímavější možnosti nabízí SVG. [vrdl.cz/p/ikonfonty-vs-svg](https://www.vzhurudolu.cz/prirucka/ikonfonty-vs-svg)
 
 Pro dekorace v rozhraní (vlastní stíny, vlastní vzhled tlačítek nebo rámečků…) je určitě nejvýhodnější využít možností [CSS3](css3.md). Pokud jeho možnosti nestačí, zkuste SVG.
 

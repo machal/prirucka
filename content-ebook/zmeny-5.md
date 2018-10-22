@@ -10,7 +10,7 @@ Tady je rozhodně jedinou udržitelnou cestou použít vektorovou grafiku.
 
 Takzvané ikonfonty – tedy ikony vkládané jako znaky ve speciálních webových fontech – považuji za dobré, ale spíše dočasné řešení. Hlavně proto, že fonty nebyly navrženy jako náhrada vektorové grafiky. S ikonfonty jsou spojené problémy s vykreslováním, ale ani práce s nimi nebývá příliš pohodlná.
 
-Zajímavější možnosti nabízí vektorový formát SVG. [vrdl.cz/prirucka/svg](http://www.vzhurudolu.cz/prirucka/svg)
+Zajímavější možnosti nabízí vektorový formát SVG. [vrdl.cz/prirucka/ikonfonty-vs-svg](http://www.vzhurudolu.cz/prirucka/ikonfonty-vs-svg)
 
 Pro dekorace v rozhraní (vlastní stíny, vlastní vzhled tlačítek nebo rámečků…) je určitě nejvýhodnější využít možností CSS3, alternativně opět SVG.
 

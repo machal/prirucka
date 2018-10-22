@@ -26,7 +26,7 @@ Klíčové slovo `cover` zajistí, aby obrázek pokryl celou plochu elementu. `c
 
 `background-size: contain` zase v situaci, kdy máte ikonku na pozadí elementu, jenž bude na různých rozlišeních obrazovky různě velký. Nebo když chcete prohlížeči poslat dvojnásobně nebo třeba trojnásobně velký obrázek kvůli vysokokapacitním displejům. [vrdl.in/ef6cp](http://www.studiopress.com/design/css-background-size-graphics.htm)
 
-Tip: Pokud máte tendenci takto pracovat s ikonami, porozhlédněte se po vektorovém řešení (SVG nebo ikonfonty). [css-tricks.com/icon-fonts-vs-svg](http://css-tricks.com/icon-fonts-vs-svg/)
+Tip: Pokud máte tendenci takto pracovat s ikonami, porozhlédněte se po vektorovém řešení – [SVG nebo ikonfonty](ikonfonty-vs-svg.md).
 
 ### Rozměry v `px` nebo procentech
 

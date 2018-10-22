@@ -82,7 +82,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### SVG
 
-* **[nové] **[Základy](https://www.vzhurudolu.cz/prirucka/svg) pro statickou grafiku: způsoby vložení do stránky, fallbacky, vytvoření SVG, srovnání s ikonfonty.
+* **[nové] **[Základy](https://www.vzhurudolu.cz/prirucka/svg) pro statickou grafiku: způsoby vložení do stránky, fallbacky, vytvoření SVG, srovnání [s ikonfonty](ikonfonty-vs-svg.md).
 * **[nové] **Typy využití a jejich technické provedení: ilustrace, ikony, celé UI komponenty, stylování formulářů, grafy, animace, efekty textu.
 
 #### Animace

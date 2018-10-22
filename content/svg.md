@@ -35,7 +35,7 @@ Malá nevýhoda je nutnost řešit [fallbacky ve starších prohlížečích](sv
 
 ## Využití? Od ikonek až po interaktivní schémata
 
-Formát má velmi širokou škálu nasazení. Výborně se samozřejmě hodí na vkládání logotypů nebo ikonek. U těch jde samozřejmě o principiálně správnější řešení než vkládání pomocí [ikonfontů](https://css-tricks.com/examples/IconFont/), které je potřeba považovat za dočasný hack. 
+Formát má velmi širokou škálu nasazení. Výborně se samozřejmě hodí na vkládání logotypů nebo ikonek. U těch jde samozřejmě o principiálně správnější řešení než vkládání pomocí [ikonfontů](ikonfonty-vs-svg.md), které je potřeba považovat za dočasný hack. 
 
 Další možnosti ovšem začínají být zajímavé:
 

@@ -34,7 +34,7 @@ Jako všechny komponenty stránky, i obsahové obrázky můžete samozřejmě zm
 
 ### 2) Ikony, loga: použijte vektory
 
-Cokoliv co lze vyjádřit vektorem, vyjádřete vektorem. Ideálně pomocí [SVG](svg.md), alternativně [ikonfonty](https://css-tricks.com/examples/IconFont/).
+Cokoliv co lze vyjádřit vektorem, vyjádřete vektorem. Ideálně pomocí [SVG](svg.md), alternativně [ikonfonty](ikonfonty-vs-svg.md).
 
 ### 3) Javascript: rozdělte na kritický a zbytný
 
