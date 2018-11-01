@@ -219,22 +219,7 @@ To je vlastně totéž, co aktuálně obsahuje adresář `node_modules/`. A tak�
 }
 ```
 
-### Odbočka druhá: Semver, sémantické verzování
-
-Všimněte si, že instalované verze začínají stříškou `^`. Ano, hádáte správně, něco to znamená.
-
-Vycházíme zde ze sémantického verzování, který říká: 
-
-- první číslovka je určená pro *major* verze, které mohou do software přinášet zlomové změny (např. u Bootstrapu v našem výpise je to `4`)
-- druhá označuje *minor* verze pro nové funkčnosti, které jsou zpětně kompatibilní (u Bootstrapu číslo `1`)
-- třetí pak *patch*, číslovka která se mění při opravách chyb (u Bootstrapu číslo `3`)
-
-A co tedy ta stříška? Jde o znak určující, jak moc dovolujeme danému balíčku, aby jej NPM aktualizovalo:
-
-- `^` stříška (caret) umožňuje aktualizovat „minor“ verze
-- `~` vlnovka (tilde) aktualizuje jen nové „patch“ verze
-- balíčky bez speciálního znaku se udržují v dané verzi bez možnosti samostatné aktualizace
-- balíčky označené `*` se aktualizují zcela libovoně, včeetně „major“ verze (což ale moc nedoporučuji dělat)
+Co znamenají ty stříšky? Více o způsobu verzování a nastavování závislostí v package.json najdete v článku o [SemVer, sémantickém verzování](semver.md).
 
 ### Odbočka třetí: Typy závislostí
 
