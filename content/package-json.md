@@ -4,6 +4,8 @@ Jedná se o soubor, který využívá NPM a další balíčkovací systémy jako
 
 Asi nejlepší definice `package.json` zní: Manifest projektu.
 
+Spolu s `package-lock.json` patří k základní výbavě každého projektu, který používá jeden ze zmíněných balíčkovacích manažerů. O tomhle jeho parťákovi ale někdy příště.
+
 <!-- AdSnippet -->
 
 Tenhle soubor může obsahovat různé meta informace o projektu:
