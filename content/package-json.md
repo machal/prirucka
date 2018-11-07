@@ -1,8 +1,8 @@
-# package.json: Vývojářský manifest projektu
+# package.json: Manifest závislostí projektu
 
-Jedná se o soubor, který využívá NPM a další balíčkovací systémy jako Yarn pro svou konfiguraci.
+Dneska o tomhle populárním souboru, o NPM skriptech a taky o závislostech.
 
-Asi nejlepší definice `package.json` zní: Manifest projektu.
+Asi nejlepší definice `package.json` zní: Manifest závislostí projektu. Jedná se o soubor, který využívá NPM a další balíčkovací systémy jako Yarn pro svou konfiguraci. 
 
 Spolu s `package-lock.json` patří k základní výbavě každého projektu, který používá jeden ze zmíněných balíčkovacích manažerů. O tomhle jeho parťákovi ale někdy příště.
 
@@ -10,18 +10,18 @@ Spolu s `package-lock.json` patří k základní výbavě každého projektu, kt
 
 Tenhle soubor může obsahovat různé meta informace o projektu:
 
-- název, popis nebo verzi projektu
-- seznam software, na kterém je projekt závislý
-- skripty, které mohou vývojáři spouštět
-- specifikaci verzí prohlížečů, pro které se projekt uzpůsobuje
+- [Název, popis nebo verzi projektu](#informace-o-projektu)
+- [Závislosti projektu](#zavislosti)
+- [Podporované prohlížeče](#browserlist)
+- [Skripty pro usnadnění práce vývojářů](#scripts)
 
-Nic kromě názvu a verze není povinné. Jediná jistota je, že se jedná o soubor ve formátu JSON. Pojďme si to teď všechno projít na ukázkovém `package.json`:
+Žádná položka není povinná. Jediná výjimka je název a verze a to jen u veřejných projektů.  Jistota je, že se jedná o soubor ve formátu JSON. Pojďme si to teď všechno projít na ukázkovém `package.json`:
 
 ```json
 {
   "name": "polaroid-example",
   "author": "Martin Michálek <martin@vzhurudolu.cz> (https://vrdl.cz/martin)",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -57,7 +57,7 @@ Nejprve ukázka:
 ```json
 "name": "polaroid-example",
 "author": "Martin Michálek <martin@vzhurudolu.cz> (https://vrdl.cz/martin)",
-"version": "0.5.0",
+"version": "1.0.0",
 "private": true,
 "repository": {
   "type": "git",
@@ -67,13 +67,13 @@ Nejprve ukázka:
 
 Kromě názvu a verze není nic pro neveřejné projekty povinné, ale pro pořádek se tady hodí mít ty informace, které mohou být užitečné pro další členy týmu:
 
-- `name` – Jméno projektu. Obvykle název repozitáře. Povolené jsou tady jen znaky, které jsou povolené v URL adresách. Je to povinná položka.
+- `name` – Jméno projektu. Obvykle název repozitáře. Povolené jsou tady jen znaky, které můžeme uvádět v URL adresách. Je to povinná položka.
 - `title` – Titulek projektu. Už bez nutnosti vyhýbat se nepovoleným znakům. Např. `"title": "jQuery"`.
 - `author` – Autor projektu. Pokud jsou zde i vedlejší přispěvovatelé, využijte pole `contributors`.
 - `homepage` a `bugs` – Adresy pro web projektu a místo, kam se hlásí chyby. Například `"homepage": "https://jquery.com/"`.
 - `version` – Verze projektu, která se řídí [SemVer](semver.md). Opět povinná položka.
 - `licence` – Jakou licenci projekt využívá. Např. `"license": "MIT"`.
-- `keywords` – Klíčová slova pro vyhledávání projektu na [npmjs.com](https://www.npmjs.com/), pokud je veřejný. Například `"keywords": [ "jquery", "javascript", "library" ]`.
+- `keywords` – Klíčová slova pro nalezení projektu na [npmjs.com](https://www.npmjs.com/), pokud je veřejný. Například `"keywords": [ "jquery", "javascript", "library" ]`.
 - `description` – Popis projektu. Např. `"description": "JavaScript library for DOM operations"`.
 - `repository` – Adresa repozitáře a jeho typ. Například `"repository": { "type": "git", "url": "https://github.com/jquery/jquery.git" }`.
 - `main` – Vstupní bod. Důležité pro javascriptové aplikace. Zde se budou hledat exporty modulů. Příklad: `"main": "src/main.js"`.
@@ -83,7 +83,7 @@ Pojďme ale na důležitější, nebo asi úplně nejdůležitější sekci `pac
 
 ## Závislosti {#zavislosti}
 
-Stejně jako lidé, váš projekt může mít skrze `package.json` různé typy závislostí.
+Stejně jako lidé, váš projekt může mít závislosti různých typů.
 
 Nejprve ukázka:
 
@@ -103,7 +103,7 @@ Nejprve ukázka:
 
 Možná je lepší říkat *uživatelské* závislosti. Jde o balíčky software, které využijí uživatelé, ale nikoliv vývojáři našeho projektu. Prostě lidé, kteří se nebudou hrabat ve zdrojovém kódu.
 
-Pokud bych dělal veřejný web, budou zde knihovny typu jQuery nebo Bootstrap. Prostě ty, které potřebují uživatelé k plné funkčnosti projektu:
+Pokud bych dělal veřejný web, budou zde knihovny typu jQuery nebo jQuery pluginy. Prostě ty, které potřebují uživatelé k plné funkčnosti projektu. Příklad:
 
 ```json
 "dependencies": {
@@ -112,7 +112,7 @@ Pokud bych dělal veřejný web, budou zde knihovny typu jQuery nebo Bootstrap. 
 }
 ```
 
-Pokud bychom naopak pracovali na knihovně užitečné pro další vývojáře, velmi pravděpodobně v `dependencies` nic mít nebudeme. Však se podívejte na dotčený soubor [v Bootstrapu](https://github.com/twbs/bootstrap/blob/v4-dev/package.json) nebo [jQuery](https://github.com/jquery/jquery/blob/master/package.json). Sekce uživatelských závislostí nic neobsahují.
+Pokud bychom naopak pracovali na knihovně užitečné pro další vývojáře, velmi pravděpodobně v `dependencies` nic mít nebudeme. Však se podívejte na dotčený soubor [v repozitáři Bootstrapu](https://github.com/twbs/bootstrap/blob/v4-dev/package.json) nebo [totéž u jQuery](https://github.com/jquery/jquery/blob/master/package.json). Sekce uživatelských závislostí nic neobsahují.
 
 Přidat sem knihovnu můžu ručním zápisem nebo z příkazové řádky jedním z nástrojů, které `package.json` zpracovávají:
 
@@ -158,7 +158,7 @@ Rozsah povolených verzí se u všech typů závislostí řídí pravidly vychá
 
 Více informací je na [docs.npmjs.com/files/package.json](https://docs.npmjs.com/files/package.json).
 
-Dál se už budu zabývat položkami, které v manifestu souboru mít můžete, ale nemusíte.
+Dál se už budu zabývat položkami, které v manifestu mít můžete, ale nemusíte.
 
 ## browserslist – Seznam podporovaných prohlížečů {#browserslist}
 
@@ -181,7 +181,7 @@ Více informací je na [github.com/browserslist/browserslist](https://github.com
 
 NPM skripty mě zbyly na závěr a není ani předmětem tohodle textu se v nich příliš hrabat. 
 
-Jedno vám ale musím říct – tohle je skvělá věc a spoustě z nás nahradí současná řešení automatizace pomocí Gruntu, ale hlavně Gulpu. Než o tom napíšu více, spokojme se s ukázkou a stručným popisem:
+Jedno vám ale musím říct – tohle je skvělá věc a spoustě z nás nahradí současná řešení automatizace pomocí [Gruntu](grunt.md), ale hlavně Gulpu. Než o tom napíšu více, spokojme se s ukázkou a stručným popisem:
 
 ```json
 "scripts": {
@@ -214,7 +214,7 @@ Ukončím zde i povídání o `package.json`. Shrňme si ale ty nejpodstatnějš
 - Používejte `browserslist`.
 - Vy zkušenější se zajímejte o NPM skripty.
 
-Je dobré ještě zmínit, že další položky si do manifestu můžeme přidávat sami.
+Je dobré ještě zmínit, že další položky si do manifestu závislostí můžeme přidávat sami.
 
 Pokud by vás zajímaly detailní informace nad rámec tohoto textu, jděte na oficiální dokumentaci [docs.npmjs.com/files/package.json](https://docs.npmjs.com/files/package.json).
 
