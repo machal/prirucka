@@ -1,6 +1,6 @@
 # Gutenberg: Co je zač ten emoce vyvolávající editor (nejen) pro WordPress?
 
-[Gutenberg](https://wordpress.org/gutenberg/) je plugin pro vizuální tvorbu strukturovaného obsahu, který může přinést výraznou inovaci do tvorby webů nejen prostřednictvím WordPressu.
+[Gutenberg](https://wordpress.org/gutenberg/) je plugin pro vizuální tvorbu strukturovaného obsahu. Myslím, že může přinést výraznou inovaci do tvorby webů nejen prostřednictvím WordPressu.
 
 Zaujal mě, protože je to logický a moderní způsob tvorby obsahu. S návaznostmi na nejpopulárnější redakční systém mi zde pomáhá [Honza Bien](https://www.vzhurudolu.cz/lektori/jan-bien), lektor našeho [školení WordPressu](https://www.vzhurudolu.cz/kurzy/wordpress). Sám totiž s WordPressem nepracuji, takže mě v tomhle textu bude Gutenberg zajímat spíše z pohledu webaře nespecializovaného na konkrétní CMS.
 
@@ -16,7 +16,7 @@ Gutenberg umožňuje definovat stránky jako sadu upravitelných bloků. Bloky p
 
 Gutenberg navazuje na současný stav editací ve webdesignu. Jak píší v detailním textu [na Smashing Magazine](https://www.smashingmagazine.com/2018/08/complete-anatomy-gutenberg-wordpress-editor/):
 
-> Gutenberg kombinuje ty nejlepší vlastnosti z page-builderů jako jsou **[Div*i](https://www.elegantthemes.com/gallery/divi/)* a**[ Visual Compose*r](https://visualcomposer.io/)*, stejně jako z platforem jako jsou Medium, Wix and Squarespace, které uplatňují princip udělej si sám (DIY).
+> Gutenberg kombinuje ty nejlepší vlastnosti z page-builderů jako jsou [Divi](https://www.elegantthemes.com/gallery/divi/) a [ Visual Composer](https://visualcomposer.io/), stejně jako z platforem jako jsou Medium, Wix and Squarespace, které uplatňují princip udělej si sám (DIY).
 
 Ano, Medium uvnitř WordPressu, říkal jsem si, když jsem viděl první dema. [David Bíňovec](https://davidbinda.wordpress.com/2018/02/26/gutenberg-bloky-a-sablony-obsahu/) to pak rozebírá z pohledu tvůrce šablon. Ty krásné nové věci, které Gutenberg přináší, obnášejí:
 
@@ -27,6 +27,8 @@ Ano, Medium uvnitř WordPressu, říkal jsem si, když jsem viděl první dema. 
 ## Reakce jsou rozporuplné, ale vidina potenciálu převažuje  {#reakce}
 
 Jako každá nová věc, která toho hodně mění, i Gutenberg dostává od části komunity za uši. Aktuálně má například v repozitáři pluginů velmi nízké hodnocení – [2,5 hvězdičky](https://wordpress.org/plugins/gutenberg/). 
+
+<!-- AdSnippet -->
 
 Bodejť by neměl, skupina uživatelů WordPressu se hloubkou zainteresování pohybuje na stupnici od špičkových technických expertů až po uživatele, kteří kódu a věcem uvnitř nerozumí a rozumět nechtějí. 
 
