@@ -10,15 +10,15 @@ Do první verze knížky „Vzhůru do (responzivního) designu“ jsem ostatně
 
 > Myslím, že je to nepoužitelné, a masovému přijetí nevěřím. Plocha je pro weby příliš malá na konzumaci obsahu, natož pak rozumnou interakci s ním.
 
-Jenže hodinky se zvětšují a způsob jejich ovládání je stále pohodlnější. Stále sice platí, že nevěřím, že používání webů na hodinkách bude *masovou* záležitostí. V tom ostatním jsem se však pravděpodobně mýlil.
+Jenže hodinky se zvětšují a způsob jejich ovládání je stále pohodlnější. Stále sice platí, že nevěřím, že používání webů na hodinkách bude *masovou* záležitostí, ale v tom ostatním jsem se pravděpodobně mýlil.
 
 Do hry už vstoupil i Apple s hodinkami Watch, respektive operačním systémem na nich – watchOS.
 
-Píšu o tom proto, že Apple je známý tím, že kroky nemívá nepodložené reálnými testy uživatelů a jejich chování. To je něco jiného, než když menší výrobce hodinek do systému *narve* prohlížeč, protože — no proč ne, že?
+Píšu o tom proto, že Apple je známý tím, že kroky nemívá nepodložené reálnými testy uživatelů a jejich chování. To je něco jiného, než když menší výrobce hodinek do systému *narve* prohlížeč, protože – no proč ne, že?
 
 <!-- AdSnippet -->
 
-Počínaje tímto krokem Apple (platí od roku 2018 a watchOS verze 5) je potřeba věřit tomu, že lidé weby na hodinkách nějak používat budou. Rozdíl oproti mobilům nebo desktopu bude pravděpodobně v intenzitě toho použití. V textu vycházím hlavně z prezentace „Designing Web Content for watchOS“ přímo od Apple. [vrdl.in/webwatchos](http://vrdl.in/webwatchos)
+Počínaje tímto krokem Apple (platí od roku 2018 a watchOS verze 5) je potřeba věřit tomu, že lidé weby na hodinkách nějak používat budou. Rozdíl oproti mobilům nebo desktopu bude pravděpodobně v intenzitě toho používání. V textu vycházím hlavně z prezentace „Designing Web Content for watchOS“ přímo od Applu. [vrdl.in/webwatchos](http://vrdl.in/webwatchos)
 
 Ale čtěte dále, všechno se dozvíte.
 
@@ -27,7 +27,7 @@ Ale čtěte dále, všechno se dozvíte.
 Prohlížeč na WatchOS není nainstalovaný jako samostatná aplikace. Jde tam spíše o možnost otevírat sdílené odkazy:
 
 - V aplikacích Mail a Messages vám může přijít odkaz na web.
-- Odkaz pak můžete otevřít v prohlížeči, stránka je v něm uměle upravena.
+- Odkaz pak můžete otevřít v prohlížeči, přičemž stránka je v něm uměle upravena.
 
 Stránku je možné základním způsobem používat:
 
@@ -45,12 +45,12 @@ Stránku je možné základním způsobem používat:
 
 ### Výchozí stav prohlížení: vynucený initial-scale {#vychozi-stav}
 
-Pokud to dobře chápu, prohlížeč se snaží weby za každou cenu zobrazit v šířce viewportu 320px. Nejspíš proto, že Apple nevěří, že jsou naše díla připravené na menší rozlišení. Dobře dělá. 
+Pokud to dobře chápu, prohlížeč se snaží weby za každou cenu zobrazit v šířce viewportu 320px. Nejspíš proto, že Apple nevěří, že jsou naše díla připravená na menší rozlišení. Dobře dělá.
 
 Technicky to funguje následovně:
 
 - Vynutí hodnotu vlastnosti `initial-scale` [meta značky pro viewport](viewport-meta.md) na `0.49`.
-- Prohlížeč pak hlásí rozlišení 320×357 (v CSS pixelech).
+- Prohlížeč pak hlásí rozlišení 320 × 357 (v CSS pixelech).
 
 <figure>
 <img src="../dist/images/original/watchos-weby-shrink.jpg" alt="shrink-to-fit na watchos">
@@ -61,7 +61,7 @@ Technicky to funguje následovně:
 
 ### Vypnutí výchozího stavu a meta značka disabled-adaptations {#disabled-adaptations}
 
-V případě, že si jste jistí, že váš web zvládne i menší rozlišení, lze vynucenou adaptaci vypnout:
+V případě, že jste si jistí, že váš web zvládne i menší rozlišení, lze vynucenou adaptaci vypnout:
 
 ```html
 <meta name="disabled-adaptations" content="watch">
@@ -69,15 +69,14 @@ V případě, že si jste jistí, že váš web zvládne i menší rozlišení, 
 
 V takovém případě nebude Safari na watchOS provádět výchozí adaptace a pracovat s běžným rozlišením v CSS pixelech:
 
-- 272×340px pro 38mm hodinky Apple Watch
-- 312×390px pro 42mm hodinky Apple Watch
+- 272 × 340 px pro 38mm hodinky Apple Watch
+- 312 × 390 px pro 42mm hodinky Apple Watch
 
 Pojďme se podívat i na další použité technologie. Není to vlastně nic nového a je dobře, že Apple zůstal u standardního a jinde zavedeného kódu.
 
 <!-- AdSnippet -->
 
 Následující kousky kódu vám doporučuji přidat na všechny veřejně dostupné obsahové weby. „Riziko“ zobrazení na chytrých hodinkách totiž od letoška poroste.
-
 
 ### Open Graph pro náhled obrázku {#open-graph}
 
@@ -88,12 +87,11 @@ Abyste dosáhli hezkého náhledu odkazu v aplikacích pro práci s e-maily a ch
 <meta property="og:image" content="https://www.example.com/nahledovy-obrazek.jpg">
 ```
 
-Předpokládám ale, že je už na webu máte, kvůli zobrazení náhledů na sociálních sítích nebo v chatovacích aplikacích.
-
+Předpokládám ale, že je už na webu máte, a to kvůli zobrazení náhledů na sociálních sítích nebo v chatovacích aplikacích.
 
 ### Formuláře {#formulare}
 
-Mile mě překvapilo, že na hodinkách od Apple je možné dělat také interakce s formuláři. Když se ale podíváte na následující obrázek, dává to smysl. Uživatelský vstup je vyřešený vážně hezky:
+Mile mě překvapilo, že na hodinkách od Applu je možné dělat také interakce s formuláři. Když se ale podíváte na následující obrázek, dává to smysl. Uživatelský vstup je vyřešený vážně hezky:
 
 <figure>
 <img src="../dist/images/original/watchos-weby-forms.jpg" alt="Formuláře na watchos">
@@ -102,7 +100,7 @@ Mile mě překvapilo, že na hodinkách od Apple je možné dělat také interak
 </figcaption>
 </figure>
 
-Jako webmasteři jen musíte použít správné typy pro značku `<input>` nebo nativní `<select>`:
+Jako webmasteři jen musíte použít správné typy pro značku `<input>` nebo nativní prvek pro výběr `<select>`:
 
 ```html
 <input type="tel">
@@ -121,7 +119,7 @@ Apple navíc doporučuje přidávat popisek `aria-label` (také standardizovaný
 
 ### Mód čtení {#reader-mode}
 
-Na delších textových stránkách se Safari na watchOS automaticky přepíná do „Reader Mode“. V něm vnucuje stylování stránce tak, aby se dobře četla. To není opět nic nového, podobný režim má Safari na všech zařízeních. Jen nevnucuje.
+Na delších textových stránkách se Safari na watchOS automaticky přepíná do „Reader Mode“. V něm vnucuje stylování stránce tak, aby se dobře četla. To opět není nic nového, protože podobný režim má Safari na všech zařízeních. Jen ho nevnucuje.
 
 Webmasteři mohou pro lepší uživatelský prožitek udělat následující:
 

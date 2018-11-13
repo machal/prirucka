@@ -2,7 +2,7 @@
 
 Na rozdíl od [rozlišení displeje](rozliseni-displeje.md) poskytuje velikost okna pro [responzivní design](https://www.vzhurudolu.cz/responzivni-design) webu velmi zajímavé informace.
 
-Kromě velikosti okna můžeme také mluvit o velikosti [viewportu](viewport-mobily.md). A protože existují minimálně dva různé viewporty – vizuální a layoutový – prohlížeče vracejí v různých vlastnostech různé hodnoty.
+Kromě velikosti okna můžeme také mluvit o velikosti [viewportu](viewport-mobily.md). A protože existují minimálně dva různé viewporty, vizuální a layoutový, prohlížeče vracejí v různých vlastnostech různé hodnoty.
 
 <!-- AdSnippet -->
 
@@ -56,7 +56,7 @@ Většina dnešních operačních systémů „scrollbary“ na stránce schová
 
 Jednou z podstatných výjimek jsou desktopové Windows, které posuvníky zobrazují a do `clientWidth` pak nepočítají.
 
-Dalším viditelným odlišením je chování prohlížečů na iOS: Pokud je stránka díky přetečení textu širší než viditelný viewport, Safari počítá `clientWidth` pro celý dokument. Chrome na Androidu naproti tomu v obě hodnoty ponechává stejné.
+Dalším viditelným odlišením je chování prohlížečů na iOS: Pokud je stránka díky přetečení textu širší než viditelný viewport, Safari počítá `clientWidth` pro celý dokument. Chrome na Androidu naproti tomu obě hodnoty ponechává stejné.
 
 Rozdíly mezi `innerWidth` a `clientWidth` si můžete vyzkoušet také na mém CodePenu: [cdpn.io/e/rrXNWO](https://codepen.io/machal/pen/rrXNWO/).
 
