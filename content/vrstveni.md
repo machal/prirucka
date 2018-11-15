@@ -3,7 +3,7 @@
 Tak bych jedním slovem popsal svůj proces návrhu a implementace webových rozhraní. První z vrstev je dokumentový základ.
 
 <figure>
-<img src="dist/images/original/vdwd/zakladna-komponenty.jpg" alt="">
+<img src="../dist/images/original/vdwd/zakladna-komponenty.jpg" alt="">
 <figcaption markdown="1">    
 *Dokumentová vrstva obsahuje společné elementy grafického designu: barvy, typografii, velikostní stupnici, grafický styl a další prvky. Z nich pak vychází komponenty uživatelského rozhraní, obohacené o layout a chování*
 </figcaption> 
@@ -22,7 +22,7 @@ To, že vidíme nějakou webovou stránku, je možné jen díky správnému fung
 My ale tak hluboko nepůjdeme. Potřebujeme znát hlavně vrstvení tří hlavních technologií pro tvorbu webu: HTML, CSS a Javascriptu.
 
 <figure>
-<img src="dist/images/original/vdwd/html-css-js.jpg" alt="">
+<img src="../dist/images/original/vdwd/html-css-js.jpg" alt="">
 <figcaption markdown="1">    
 *HTML slouží k vyznačení toho nejdůležitějšího: obsahu, jeho struktury a významu. CSS nastavuje vzhled a Javascript zase definuje chování stránky*
 </figcaption> 

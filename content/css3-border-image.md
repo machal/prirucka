@@ -29,7 +29,7 @@ Obsahuje jedno, dvě (vodorovný a svislý řez) nebo čtyři čísla (řez horn
 
 Pokud je přítomno klíčové slovo `fill`, vezme se ze zdrojového obrázku i jeho střední část a vykreslí se přes pozadí elementu.
 
-![Rozměry řezů v border-image](dist/images/original/border-image.svg)
+![Rozměry řezů v border-image](../dist/images/original/border-image.svg)
 
 ### Šířka rámečku
 

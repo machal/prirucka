@@ -43,7 +43,7 @@ Například u e-shopů mám ve zvyku testovat některý z nejnavštěvovanějš�
 
 ## Co PSI ukazuje a proč? {#vlastnosti}
 
-![Analýza Smarty.cz v PageSpeed Insights](dist/images/original/pagespeed-insights-numbers-1.jpg)
+![Analýza Smarty.cz v PageSpeed Insights](../dist/images/original/pagespeed-insights-numbers-1.jpg)
 
 ### 1) Mobilní zařízení / Počítač {#vlastnosti-1}
 
@@ -90,7 +90,7 @@ Přesněji řečeno: Jaké části uživatelů vašeho webu spadají u obou metr
 
 A zbývá nám pátý bod. Doporučení k úpravám webu.
 
-![PageSpeed Insights - bod 5](dist/images/original/pagespeed-insights-numbers-2.jpg)
+![PageSpeed Insights - bod 5](../dist/images/original/pagespeed-insights-numbers-2.jpg)
 
 ### 5) Optimalizační návrhy {#vlastnosti-5}
 

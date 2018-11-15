@@ -80,7 +80,7 @@ Univerzální aplikací bychom mohli ukončit slovník dnešních typů aplikac�
 
 Občas je totiž stále slyšet, že „když máme aplikaci, nepotřebujeme web“. To ale není pravda. Ze všech možných příkladů vyberu web restaurace v sousední vesnici. Slyšte příběh o tom, jak jsem se v El Asador nenajedl, i když jsem chtěl. On vlastně asi stačí obrázek:
 
-![Web restaruace El Asador](dist/images/original/vdwd/el-asador.png)
+![Web restaruace El Asador](../dist/images/original/vdwd/el-asador.png)
 
 *Web restaurace El Asador na desktopu a mobilech. Příklad za všechny weby, které na mobilech nezdravě upřednostňují reklamu na aplikaci namísto informací samotných*
 
@@ -97,7 +97,7 @@ Víte, co jsem udělal? Šli jsme se ženou do Lokálu U Zavadilů. Jako vždy.
 
 Je tu ještě jedna věc. Z průzkumů vychází, že uživatelé zase tak moc nativních aplikací na mobilech nevyužívají a snížila se jejich ochota instalovat si aplikace nové.
 
-![Uživatelé tráví 88 % svého času jen v pěti aplikacích](dist/images/original/vdwd/forrester-cas.png)
+![Uživatelé tráví 88 % svého času jen v pěti aplikacích](../dist/images/original/vdwd/forrester-cas.png)
 
 *Podle Forrester Research uživatelé tráví 88 % svého času na mobilních zařízení jen v pěti aplikacích. [vrdl.in/en8rk](http://blogs.forrester.com/nicole_dvorak/16-01-28-data_digest_just_a_handful_of_apps_account_for_nearly_all_app_time_on_smartphones)*
 
@@ -122,7 +122,7 @@ Obecně platí, že weby mají na mobilech skvělý *záběr*. Nemusí se instal
 
 Pokud jste firma, co má věrné uživatele, aplikací jste zase schopní je více *zapřáhnout*. Díky snadnějšímu ovládání a rychlé dostupnosti budou daleko aktivnější než uživatelé webu. 
 
-![Reach (web) vs. Rich (native)](dist/images/original/vdwd/lukew-reach-rich.png)
+![Reach (web) vs. Rich (native)](../dist/images/original/vdwd/lukew-reach-rich.png)
 
 *„Reach (web) vs. Rich (native) OR why you want both.“ Zdroj: Luke Wroblewski na Twitteru. [vrdl.in/8lh4f](https://twitter.com/lukew/status/649255909420503041)*
 

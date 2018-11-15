@@ -3,7 +3,7 @@
 Vlastně se my webdesignéři chováme jako správní rodiče. Pipláme se s těmi roztomilými, mrňavými telefony. Jenže jsme zapomněli, že z našich dalších dětí, desktopových monitorů, mezitím vyrostli pěkní čahouni. Nebo vlastně cvalíci, protože se nám roztáhli hlavně do šířky.
 
 <figure>
-<img src="dist/images/original/vdwd/vzhurudolu-podil-velkych.jpg" alt="">
+<img src="../dist/images/original/vdwd/vzhurudolu-podil-velkych.jpg" alt="">
 <figcaption markdown="1">    
 *Na blog Vzhůru dolů v lednu 2017 přišlo 42 % návštěv s rozlišením obrazovky 1921 pixelů a širším. Z tabletů a mobilů jen 15 %* 
 </figcaption> 

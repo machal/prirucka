@@ -17,7 +17,7 @@ Poradím alespoň několik knihoven, které to s responzivními grafy umí.
 Z mého pohledu nejzajímavější knihovna pro jednodušší grafy. Protože používá formát SVG, umí kromě přizpůsobení velikosti okna také přizpůsobovat obsah grafů. [gionkunz.github.io/chartist-js/](https://gionkunz.github.io/chartist-js/)
 
 <figure>
-<img src="dist/images/original/chartist-js.jpg" alt="Chartist.js">
+<img src="../dist/images/original/chartist-js.jpg" alt="Chartist.js">
 <figcaption markdown="1">    
 *Chartist.js se umí menším displejům přizpůsobovat nejen velikostně, ale i hustotou dat a typem  zobrazení*
 </figcaption> 

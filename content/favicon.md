@@ -4,7 +4,7 @@ Ikona webu. Kromě tradiční `favicon.ico`, ikony na záložce rozhraní prohl�
 
 Proto už ani ona *pitomá favikona* není téma triviální jako před lety. 
 
-![Favicony](dist/images/original/favicon.jpg)
+![Favicony](../dist/images/original/favicon.jpg)
 
 ## Jednoduché řešení: použijte generátor
 

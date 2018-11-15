@@ -3,7 +3,7 @@
 Ano, je to tak. Příklad můžeme pro naše potřeby považovat za hotový. V [textu o přípravě fotogalerie](priklad-navrh-komponenty.md) jsme si ukázali proces návrhu skicováním a prototypováním ukázkové komponenty. Než jsme se dostali sem, imaginární designér přemýšlel, skicoval, prototypoval a kódoval všechny ostatní komponenty uživatelského rozhraní. Až z něj kouřilo. 
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-hotovo.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-hotovo.jpg" alt="">
 <figcaption markdown="1">    
 *Takhle stránka příkladu vypadá v celé své kráse*
 </figcaption> 

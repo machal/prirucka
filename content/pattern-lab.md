@@ -26,7 +26,7 @@ Video: <a href="https://www.youtube.com/watch?v=FvTzAwebUjQ">Úvod do Style Guid
 
 Budu se tady odkazovat na svůj aktuální projekt – přípravu systému atomického designu pro nový [Webmium e-Shop](http://www.webmium.cz/eshopy).
 
-![Webmium - systém atomického designu](dist/images/original/atomicky-design-webmium.jpg)
+![Webmium - systém atomického designu](../dist/images/original/atomicky-design-webmium.jpg)
 
 Systémy jsou super:
 
@@ -54,7 +54,7 @@ Brad je velká hvězda dnešního frontend designu, která má díky úspěšný
 
 Já vím, sázet při výběru nástroje na jméno tvůrce není stoprocentně spolehlivé. Brad ale v tuhle chvíli nemá konkurenci a ta knížka to pojistí, uvidíte.
 
-![Atomic Design](dist/images/original/atomic-design.jpg)
+![Atomic Design](../dist/images/original/atomic-design.jpg)
 
 Frost přišel s tříděním prvků na stránce do úrovní vycházejících celkem chytře z chemické terminologie. Projdeme ji i s příklady z našeho e-shopu:
 
@@ -121,7 +121,7 @@ Asi budete souhlasit, že obsah a design spolu dost úzce souvisejí. Při prác
 
 Pattern Lab nabízí úžasnou věc – vkládání reálného obsahu přímo do designu. Už ve fázi návrhu! Pokud obsah někde máte, necháte si ho nalít do JSON souboru a napojíte na něj Pattern Lab. Lusknutí prstem a v prohlížeči testujete víceméně reálný web. Nebo v případě rozpracovaného projektu pro Webmium více webů na jednom systému designu:
 
-![Varianty Webmium](dist/images/original/atomicky-design-webmium-eshopy.jpg)
+![Varianty Webmium](../dist/images/original/atomicky-design-webmium-eshopy.jpg)
 
 
 ### Pseudošablony: testování variant obsahu

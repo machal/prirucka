@@ -5,7 +5,7 @@ V dalších kapitolách budeme navrhovat a psát kód jednoduché responzivní w
 Celý proces tvorby webu zjednoduším do dvou kroků. Ony to vlastně kroky nejsou. Je to nekonečný koloběh, jehož fáze se v praxi velmi prolínají.
 
 <figure>
-<img src="dist/images/original/vdwd/proces-tvorby.jpg" alt="">
+<img src="../dist/images/original/vdwd/proces-tvorby.jpg" alt="">
 <figcaption markdown="1">    
 *Zjednodušený koloběh tvorby webu. V knížce se budeme zabývat hlavně fází řemeslnou: návrhem a realizací*
 </figcaption> 

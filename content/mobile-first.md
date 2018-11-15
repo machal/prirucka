@@ -13,7 +13,7 @@ Autor myšlenky, Luke Wroblewski, ji definoval asi takto:
 Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé příručních přístrojů budou jednou tvořit většinu návštěvnosti téměř jistě i na vašem webu. Proto „nejdříve mobily“.
 
 <figure>
-<img src="dist/images/original/mobile-facebook-graph.jpg" alt="VašeČočky.cz - dvě skici">
+<img src="../dist/images/original/mobile-facebook-graph.jpg" alt="VašeČočky.cz - dvě skici">
 <figcaption markdown="1">    
 *94 % uživatelů přistupovalo ke konci roku 2016 na Facebook přes mobilní zařízení. 62 % jich používalo dokonce výlučně mobilní zařízení. Zdroj: Luke Wroblewski. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)*
 </figcaption> 
@@ -28,7 +28,7 @@ Návrh rozhraní v desktopovém světě počítal s tím, že máme k dispozici 
 Pro mnohé designéry, včetně mě, je proto lepší si rozhraní navrhnout nejprve pro ty nejmenší displeje. 
 
 <figure>
-<img src="dist/images/original/vdwd/vase-cocky-dve-skici.jpg" alt="">
+<img src="../dist/images/original/vdwd/vase-cocky-dve-skici.jpg" alt="">
 <figcaption markdown="1">    
 *Rychlé ruční skici „Mobile First“ návrhů pro VašeČočky.cz*
 </figcaption> 
@@ -75,7 +75,7 @@ Příkladů řešení „Desktop First“ najdeme v Česku hodně. Vezměme Alzu
 Jen si například spočítejte, kolik různých navigací má desktopová verze Alzy. Už to samo o sobě nevěstí nic dobrého pro „převod“ do mobilní podoby. V mobilní verzi pak některé navigace „zmizí“, jiné zase vypadají výrazně jinak než na desktopu. Rozhraní tedy z pohledu uživatele trpí nekonzistencí. 
 
 <figure>
-<img src="dist/images/original/vdwd/alza-cz.jpg" alt="">
+<img src="../dist/images/original/vdwd/alza-cz.jpg" alt="">
 <figcaption markdown="1">    
 *Nynější Alza.cz jako příklad „Desktop First“ přístupu. Mobilní verze je  samostatný web na jiné doméně. Rozhraní na obou typech zařízení trpí nejednotností*
 </figcaption> 
@@ -88,7 +88,7 @@ Na druhé straně spektra stojí Maternia, provozovatel e-shopů jako VašeČoč
 Postupem Mobile First jsme postupně přepracovali celý web. Všechny komponenty rozhraní webu jsou co možná nejjednotnější z pohledu uživatele všech zařízení, ale i z pohledu návrhu a technologie.
 
 <figure>
-<img src="dist/images/original/vdwd/vasecocky-mobil-desktop.jpg" alt="">
+<img src="../dist/images/original/vdwd/vasecocky-mobil-desktop.jpg" alt="">
 <figcaption markdown="1">    
 *VašeČočky.cz jako příklad „Mobile First“ přístupu*
 </figcaption> 

@@ -20,7 +20,7 @@ Nejjednodušší varianta. Prostě tabulce přikážete, ať se roluje do strany
 Uživatel si pak onen posun obstará palcem. Důležité je, aby byla možnost posunu indikována useknutím obsahu zprava. „Scrollbar“, indikátor možnosti posunu, totiž sám o sobě nestačí. Na mobilech nebývá vidět, dokud uživatel na tabulku nezaútočí prstem.
 
 <figure>
-<img src="dist/images/original/tabulky_1.jpg" alt="Posun do stran">
+<img src="../dist/images/original/tabulky_1.jpg" alt="Posun do stran">
 <figcaption markdown="1">    
 *Obsah tabulky se na malém displeji posouvá do stran*
 </figcaption> 
@@ -45,7 +45,7 @@ Tablesaw je jQuery plugin, který zvládá téměř všechny zde popsané možno
 Varianta pro tabulky s popisem dat ve svislém směru a klidně i příšerně moc sloupci s daty samotnými. Na malém displeji prstem posunujete do stran jen sloupce s daty. Popis zůstává na místě.
 
 <figure>
-<img src="dist/images/original/tabulky_2.jpg" alt="Posun do stran s fixním sloupcem">
+<img src="../dist/images/original/tabulky_2.jpg" alt="Posun do stran s fixním sloupcem">
 <figcaption markdown="1">    
 *Tabulka s pevně ukotveným prvním sloupcem na mobilu a možností posouvat gestem „swipe“. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
 </figcaption> 
@@ -66,7 +66,7 @@ No jo, ale co když máte tabulku toho typu, kterému programátoři říkají �
 Datagrid není žádná vzácnost. Každá webová aplikace pro interní systémy je datagridů plná. Je to případ i vašeho projektu? Pak bych vám doporučil přestylovat tabulku na mobilech do podoby netabulkového, kartičkového zobrazení. Říkám tomu *stohování*.
 
 <figure>
-<img src="dist/images/original/tabulky_3.jpg" alt="Stohování">
+<img src="../dist/images/original/tabulky_3.jpg" alt="Stohování">
 <figcaption markdown="1">    
 *Stohování tabulky na menších displejích. [github.com/filamentgroup/tablesaw](https://github.com/filamentgroup/tablesaw)*
 </figcaption> 
@@ -93,7 +93,7 @@ Stohování se hodí i pro tabulky se složitějším obsahem v buňkách: odsta
 Často se stává, že se pro malé displeje hodí jiný směr zobrazení tabulky než u velkých. Podívejte se na obrázek, hned pochopíte.
 
 <figure>
-<img src="dist/images/original/tabulky_4.jpg" alt="Změna směru tabulky">
+<img src="../dist/images/original/tabulky_4.jpg" alt="Změna směru tabulky">
 <figcaption markdown="1">    
 *Změna směru tabulky. Vyzkoušejte si to na CodePenu. [cdpn.io/rjmyx](http://s.codepen.io/JasonAGross/full/rjmyx)*
 </figcaption> 
@@ -110,7 +110,7 @@ Na mobilech můžete samozřejmě tabulku hodně zjednodušit a přiložit odkaz
 Za fajn nápad také považuji vložit do stránky namísto tabulky jen jakýsi zástupný symbol. Vidíte to na obrázku a zkoumat můžete v přiložené ukázce. [jsbin.com/apane6/14](http://output.jsbin.com/apane6/14)
 
 <figure>
-<img src="dist/images/original/tabulky_5.jpg" alt="Odkaz na plnou tabulku">
+<img src="../dist/images/original/tabulky_5.jpg" alt="Odkaz na plnou tabulku">
 <figcaption markdown="1">    
 *Tabulku na mobilu uprostřed obsahu nahradíme zástupným symbolem. Kliknutím se zobrazí plná verze*
 </figcaption> 

@@ -44,7 +44,7 @@ I tady to může být jednoduché. Klíč je [v meta značce pro viewport](viewp
 
 Hodnotou `cover` vlastnosti [viewport-fit](viewport-meta.md#viewport-fit) říkáte, že se stránka má roztáhnout na celou šířku dostupné plochy v okně prohlížeče. A že vám nevadí, že něktré její části budou překryté kulatými rohy nebo výčnělkem.
 
-![Úprava Vzhůru dolů pro iPhone X](dist/images/original/iphone-x.jpg)
+![Úprava Vzhůru dolů pro iPhone X](../dist/images/original/iphone-x.jpg)
 
 Pokud váš podbarvený obsah drží nějakou postranní ochrannou zónu, asi už nic dalšího nepotřebujete udělat.
 

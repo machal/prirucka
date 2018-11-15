@@ -4,7 +4,7 @@ Grunt si říká „The JavaScript Task Runner“. Není to nic jiného než skr
 
 Pokud si rádi šetříte práci, je Grunt naprosto návyková záležitost.
 
-![Grunt.js](dist/images/original/grunt.jpg)
+![Grunt.js](../dist/images/original/grunt.jpg)
 
 ## Jak Grunt funguje?
 

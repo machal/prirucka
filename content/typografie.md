@@ -19,7 +19,7 @@ Vypadají triviálně, ale weby jsou jich plné. Příliš dlouhé řádky, špa
 Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl obsahovat více než 75 znaků, aby oči nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
 
 <figure>
-<img src="dist/images/original/typografie-16.jpg" alt="">
+<img src="../dist/images/original/typografie-16.jpg" alt="">
 <figcaption markdown="1">    
 *Wikipedie na počítačovém rozlišení obrazovky*
 </figcaption> 
@@ -31,7 +31,7 @@ Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl ob
 Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou variantu díky kombinaci několika faktorů. 
 
 <figure>
-<img src="dist/images/original/typografie-17.jpg" alt="">
+<img src="../dist/images/original/typografie-17.jpg" alt="">
 <figcaption markdown="1">    
 *Zdroják.cz má bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků*
 </figcaption> 
@@ -44,7 +44,7 @@ Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastch
 Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv spojovník, který na klávesnici můžete považovat za minus) nebo výpustku (nikoliv tři běžné tečky). 
 
 <figure>
-<img src="dist/images/original/typografie-18.jpg" alt="">
+<img src="../dist/images/original/typografie-18.jpg" alt="">
 <figcaption markdown="1">    
 *Aktuálně.cz používá nesprávné znaky*
 </figcaption> 

@@ -10,7 +10,7 @@ Mrkneme se jak Gutenberg reflektuje současný stav tvorby obsahu na webu a kam 
 
 Bylo by možné jej vnímat jako náhradu WYSIWYG editoru TinyMCE, od webového pravěku zadrátovaného do WordPressu. Jenže on to není jen editor obsahu, měl by to být editor webů.
 
-![Editor Gutenberg](dist/images/original/gutenberg.jpg)
+![Editor Gutenberg](../dist/images/original/gutenberg.jpg)
 
 Gutenberg umožňuje definovat stránky jako sadu upravitelných bloků. Bloky pak autoři designu nastaví tak, aby úpravy jejich obsahu byly pro uživatele příjemné a výstupem byla vývojářsky dobře zpracovatelná struktura. Prostě konec bordelu, který produkují WYSIWYG editory.
 

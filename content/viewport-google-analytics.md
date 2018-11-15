@@ -8,7 +8,7 @@ Jenže z veřejně dostupných dat tady vyjít nemůžeme: [Gemius](http://ranki
 
 Ukážu vám ale způsob, jak z Google Analytics (GA) data vytáhnout a prezentovat v jakžtakž použitelné podobě. Jako na následujícím obrázku.
 
-![Počet uživatelů podle šířky okna](dist/images/original/ga-viewport-3.jpg)
+![Počet uživatelů podle šířky okna](../dist/images/original/ga-viewport-3.jpg)
 
 Je jen potřeba si v GA připravit vlastní report a data z něj pak vybrousit přes Google tabulku. Chcete si to zkusit na svých datech? Pojďme si to projít postupně.
 
@@ -34,14 +34,14 @@ Všechna ostatní nastavení klidně ponechte ve výchozím stavu.
 
 V angličtině je to popsáno například na [CSS Tricks](https://css-tricks.com/google-analytics-can-show-screen-resolution-%E2%89%A0-browser-window/).
 
-![Krok 1: Vytvoření vlastního přehledu](dist/images/original/ga-viewport-1.jpg)
+![Krok 1: Vytvoření vlastního přehledu](../dist/images/original/ga-viewport-1.jpg)
 
 
 ### 2) Uložte do Google tabulky {#navod-2}
 
 Po otevření reportu (*Přizpůsobení → Vlastní přehledy*) uvidíte přehled po velikostech okna, ale ten vám nicmoc neřekne. 
 
-![Krok 2: Vložení do Google tabulky](dist/images/original/ga-viewport-2.jpg)
+![Krok 2: Vložení do Google tabulky](../dist/images/original/ga-viewport-2.jpg)
 
 Já si vše uložil do Google tabulky a dále s tím pracoval tam:
 
@@ -87,7 +87,7 @@ Výsledná tabulka s grafem: [Ukázka](https://docs.google.com/spreadsheets/d/18
 
 Dostaneme se k docela hezky vypovídajícím grafu.
 
-![Krok 3: Hotový graf](dist/images/original/ga-viewport-3.jpg)
+![Krok 3: Hotový graf](../dist/images/original/ga-viewport-3.jpg)
 
 Na jeho základě můžu vymýšlet body zlomu designu (breakpointy) nebo minimálně ověřovat jejich nastavení.
 

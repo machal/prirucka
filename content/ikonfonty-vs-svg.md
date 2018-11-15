@@ -15,7 +15,7 @@ V tomto textu se podíváme na nevýhody ikonfontů a doporučím vám je přest
 Chcete vidět hlavní nevýhody ikonfontů v jednom obrázku? Tady je:
 
 <figure>
-<img src="dist/images/original/ikonfonty.jpg" alt="">
+<img src="../dist/images/original/ikonfonty.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Průběh vykreslování ikon na starší verzi webu mého skvělého klienta Smarty.cz. Místa pro ikonfonty jsou zvýrazněné zelenou. V nové verzi to už bude jinak*
 </figcaption>
@@ -84,7 +84,7 @@ V tom byly ikonfonty dlouho nepřekonatelné. Prostě si od poskytovatelů ikonf
 Jenže dneska už to tak není. Prošel jsem weby nejznámějších ikonfontů a myslím, že nasazení SVG je skoro stejně jednoduché.
 
 <figure>
-<img src="dist/images/original/ikonfonty-icomoon.jpg" alt="">
+<img src="../dist/images/original/ikonfonty-icomoon.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Většina poskytovatelů ikonfontů, jako IcoMoon, nabízí stažení SVG jako plnohodnotnou variantu. Teď ještě odstranit tu možnost stahovat ikonfonty*
 </figcaption>

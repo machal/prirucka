@@ -37,7 +37,7 @@ Vezměme gradient, jehož část chceme definovat stabilní šířkou a ostatní
 
 Více řekne obrázek. Černá část bude mít stabilní šířku. Bílá plocha se zmenšuje a zvětšuje podle dostupného místa.
 
-![CSS funkce calc() na gradientu](dist/images/original/css3-calc-gradient.jpg)
+![CSS funkce calc() na gradientu](../dist/images/original/css3-calc-gradient.jpg)
 
 Takto vypadá kód:
 

@@ -6,7 +6,7 @@ Mám fotku a chci ji udělat specifický výřez v přímo v kódu. Pomocí CSS 
 
 Po čase pro vás mám další z příkladů, které jsem ukazoval na přednášce [„10 praktických CSS3 a SVG řešení“](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246) na Webexpo 2016.
 
-![Vlastní výřez pomocí SVG](dist/images/original/reseni-svg-vyrezy.jpg)
+![Vlastní výřez pomocí SVG](../dist/images/original/reseni-svg-vyrezy.jpg)
 
 [Možností](https://codepen.io/yoksel/full/fsdbu/) je víc, ale když chci, aby to fungovalo prakticky ve všech prohlížečích, zvolím [SVG](svg.md). Výřez nezvládne jen Internet Explorer 8 a starší. Ale uděláme pro ně docela vyčůrané náhradní řešení, vydržte.
 

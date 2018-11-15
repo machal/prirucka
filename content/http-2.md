@@ -19,7 +19,7 @@ Frontendu webu se přechod na HTTP/2 dotkne kromě jiného tak, že přestává 
 - Umí [prioritizaci](https://nghttp2.org/blog/2014/11/16/visualization-of-http-slash-2-priority/), takže prohlížeče mohou například upřednostnit stahování CSS před obrázky.
 - V praxi ale nejdřív musíte běžet na HTTPS.
 
-![HTTP/2 versus HTTP/1.1](dist/images/original/http-1-vs-2.jpg)
+![HTTP/2 versus HTTP/1.1](../dist/images/original/http-1-vs-2.jpg)
 
 <small markdown="1">
 Více informací: [Michal Špaček o HTTP/2](https://www.michalspacek.cz/prednasky/http2-develcz), [Jak funguje HTTP/2](https://www.root.cz/clanky/jak-funguje-novy-protokol-http-2/), [E-book o HTTP/2](https://daniel.haxx.se/http2/).  

@@ -8,6 +8,6 @@ Autoři webů se ale nemusejí bát zobrazování v hardwarových rozlišeních.
 
 Pro přepočet mezi hardwarovým a CSS rozlišením se užívá technického pojmenování `device-pixel-ratio` nebo nověji `resolution`. To druhé je v českém prostředí docela matoucí, takže v textech zůstaneme u prvního.
 
-![Poměr mezi HW a CSS rozlišením u vybraných zařízení](dist/images/original/hw-css-pixely-tabulka.jpg)
+![Poměr mezi HW a CSS rozlišením u vybraných zařízení](../dist/images/original/hw-css-pixely-tabulka.jpg)
 
 A teď ještě — jaký vliv má `device-pixel-ratio` na práci vývojáře uživatelského rozhraní? To se dozvíte v následujícím odstavci.

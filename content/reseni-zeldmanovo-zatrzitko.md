@@ -8,7 +8,7 @@ Proč Zeldmanovo? Řešení jsem poprvé viděl na [studio.zeldman.com](http://s
 
 Podívejte se: [cdpn.io/e/ozgPwm](https://codepen.io/machal/pen/ozgPwm).
 
-![Zeldmanovo zatržítko](dist/images/original/reseni-zeldman-checkbox.jpg)
+![Zeldmanovo zatržítko](../dist/images/original/reseni-zeldman-checkbox.jpg)
 
 Jak na to? 
 

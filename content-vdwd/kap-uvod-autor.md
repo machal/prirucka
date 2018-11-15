@@ -1,6 +1,6 @@
 # Autor
 
-![Martin Michálek](dist/images/original/autor.jpg)
+![Martin Michálek](../dist/images/original/autor.jpg)
 
 Martin Michálek je frontend designér na volné noze s takřka dvacetiletou praxí. Navrhuje, implementuje a radí s uživatelskými rozhraními responzivních webů. V poslední době spolupracoval se značkami, jako je Česká televize, VašeČočky.cz nebo Svobodná Evropa.
 

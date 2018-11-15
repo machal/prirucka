@@ -54,7 +54,7 @@ Není bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 min
 V roce 2013 se Steven Hoober sebral a šel se podívat, jak lidé na ulicích drží své mobilní telefony. Asi vás to nepřekvapí, ale my lidé jsme se nesjednotili ani ve způsobu držení těch malých svítících krabiček. 
 
 <figure>
-<img src="dist/images/original/mobily-drzeni.jpg" alt="">
+<img src="../dist/images/original/mobily-drzeni.jpg" alt="">
 <figcaption markdown="1">    
 *Výsledek výzkumu Stevena Hoobera: 49 % lidí drželo mobilní zařízení v jedné ruce a šátralo po něm palcem. 36 % lidí dávalo přednost „kolébkovému“ chvatu (držení v jedné ruce a ovládání prstem druhé ruky) a 15 % drželo krabičky obouruč a ovládalo dvěma palci*
 </figcaption> 
@@ -81,7 +81,7 @@ Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovlá
 Prodávají se stále větší chytré telefony, takže bychom při návrhu rozhraní měli myslet na to, že palcem je u nich dosažitelná daleko menší část obrazovky.
 
 <figure>
-<img src="dist/images/original/vdwd/palce-mobily.jpg" alt="">
+<img src="../dist/images/original/vdwd/palce-mobily.jpg" alt="">
 <figcaption markdown="1">    
 *Mobily jsou větší, ale plocha ovládatelná palcem se zmenšuje. Větší zařízení totiž také mívají silnější šasi. Uprostřed zvýrazněná zelená je palcem dosažitelná snadno, žlutá hůř a zbylá červená skoro vůbec*
 </figcaption> 
@@ -104,7 +104,7 @@ Na otázku, jestli lidé tablety častěji používají na výšku, nebo na ší
 Znovu se zde budu odkazovat na data, která sesbíral Josh Clark. Malé tablety držíme v ruce, ale zóny pohodlného ovládání palci vypadají zcela jinak.
 
 <figure>
-<img src="dist/images/original/vdwd/palce-tablet.jpg" alt="">
+<img src="../dist/images/original/vdwd/palce-tablet.jpg" alt="">
 <figcaption markdown="1">    
 *Na malých tabletech držených obouruč jsou palci nejlépe dosažitelné okraje od středu nahoru. Spodní okraj a střed jsou naopak dosažitelné nejhůře*
 </figcaption> 
@@ -125,7 +125,7 @@ O tom, zda lidé budou vůbec někdy chtít ovládat zařízení stojící na st
 Lidé totiž dotykové obrazovky notebooků a podobných zařízení neovládají ukazováčkem, ale znovu palcem. Únavě paží zabraňují tak, že si ruce opřou o stůl pod hranou displeje. Ukazováčkem ohmatávají obrazovky jen uživatelé méně zkušení, kteří většinou časem přejdou znovu na palce.
 
 <figure>
-<img src="dist/images/original/vdwd/palce-notebook.jpg" alt="">
+<img src="../dist/images/original/vdwd/palce-notebook.jpg" alt="">
 <figcaption markdown="1">    
 *U notebooků s dotykovou obrazovkou a hybridních zařízení jsou palcem nejlépe dostupné plochy spodních rohů*
 </figcaption> 

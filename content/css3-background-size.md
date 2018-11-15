@@ -20,7 +20,7 @@ Podobně jako u ostatních CSS vlastností můžeme zapsat výšku i šířku na
 
 Klíčové slovo `cover` zajistí, aby obrázek pokryl celou plochu elementu. `contain` obstará to, aby byl obrázek vidět celý.
 
-![background-size: cover/contain](dist/images/original/background-size-cover-contain.svg)
+![background-size: cover/contain](../dist/images/original/background-size-cover-contain.svg)
 
 `background-size: cover` použijete například pro zajištění, aby obrázek na pozadí stránky pokryl celou její plochu. [vrdl.in/ognci](http://alistapart.com/d/supersize-that-background-please/index3.html)
 

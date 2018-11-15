@@ -117,7 +117,7 @@ V responzivním layoutu obvykle přesně nevíme, jaké rozměry budou mít obr�
 Pojďme si nejprve vizuálně přiblížit layout pro další ukázku:
 
 <figure>
-<img src="dist/images/original/rwd-obrazky-priklad-layout.jpg" alt="">
+<img src="../dist/images/original/rwd-obrazky-priklad-layout.jpg" alt="">
 <figcaption markdown="1">    
 *Layout příkladu pro demonstraci srcset/sizes*
 </figcaption> 

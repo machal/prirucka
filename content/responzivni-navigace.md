@@ -7,7 +7,7 @@ Projdeme si osm možností, jak navrhnout navigaci na responzivních webech. Od 
 Většina webů si ale vystačí se dvěma: upřednostňujícím a přepínacím vzorem. Podívejme se nejprve na ně.
 
 <figure>
-<img src="dist/images/original/responzivni-navigace.jpg" alt="">
+<img src="../dist/images/original/responzivni-navigace.jpg" alt="">
 <figcaption markdown="1">    
 *Hlavní návrhové vzory pro responzivní navigace: zapínač (také přepínač nebo Toggle) a upřednostňování se schováváním (Priority+)*
 </figcaption> 

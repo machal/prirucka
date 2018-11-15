@@ -66,14 +66,14 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 Standardně vkládáme jako obrázek:
 
 ```markdown
-![Podíl mobilů](dist/images/original/statistika-mobily.jpg)
+![Podíl mobilů](../dist/images/original/statistika-mobily.jpg)
 ```
 
 Alternativně s popiskem jako `<figure>`:
 
 ```html
 <figure>
-<img src="dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
 <figcaption markdown="1">
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
 </figcaption>

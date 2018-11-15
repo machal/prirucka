@@ -29,7 +29,7 @@ Ale bavme se i o nevýhodách:
 ## Co umí analyzovat? {#co-umi}
 
 <figure>
-<img src="dist/images/original/lighthouse-online.jpg" alt="Lighthouse online">
+<img src="../dist/images/original/lighthouse-online.jpg" alt="Lighthouse online">
 <figcaption markdown="1">    
 *Obrázek: Ukázkový report pro Vzhůru dolů. Vidíte celkové skóre, výsledky pro danou oblast a pak velmi rozumná doporučení ke zlepšení. 
 </figcaption>
@@ -58,7 +58,7 @@ Ligthouse je balíček pro Node.js, proto je způsobů jeho použití fakt hodn�
 Lighthouse se ve většině případu použití spouští na vašem počítači a dělá se jen jeden test, takže se výsledky testů mohou lišit podle momentálního vytížení. Hlavně v oblasti *Performance*.
 
 <figure>
-<img src="dist/images/original/lighthouse-chrome.jpg" alt="Lighthouse v Google Chrome">
+<img src="../dist/images/original/lighthouse-chrome.jpg" alt="Lighthouse v Google Chrome">
 <figcaption markdown="1">
 *Obrázek: Nastavení Lighthouse před spuštěním auditu v prohlížeči Chrome*
 </figcaption>

@@ -13,7 +13,7 @@ Sestavovací nástroje pro webový frontend jsou dvojího typu:
 
 Zástupce zjednodušených buildovacích nástrojů. Obvykle doporučuji začít s ním, protože je multiplatformní a pro jeho ovládání je jen potřeba umět klikat.
 
-![Prepros](dist/images/original/prepros.jpg)
+![Prepros](../dist/images/original/prepros.jpg)
 
 Kromě všech základních úkolů nad CSS, Javascripty a obrázky umí aktualizovat weby přes FTP a provádět synchronizované prohlížení webu na více zařízeních.
 

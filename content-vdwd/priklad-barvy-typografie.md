@@ -15,7 +15,7 @@ Z výběru barevného schématu pro zjednodušení nebudeme dělat vědu, přest
 Hledáme barevné schéma se třemi a více barvami, které ladí s ženskou cílovou skupinou. A také nás výrazně odlišují od konkurence, která vždy spoléhá na zelené asociace s lesem. ForestKid.cz tedy jako uniforma hajného vypadat nebude. 
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-barvy.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-barvy.jpg" alt="">
 <figcaption markdown="1">    
 *Vybrané barevné schéma. [coolors.co](https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c)*
 </figcaption> 
@@ -42,7 +42,7 @@ Druhá možnost je najít výrazné a neobvyklé *značkové* písmo a k němu d
 Zbývá nám písmo pro texty a rozhraní. Pro delší texty, které na webu mít jistě budeme (vzpomeňte na plánovaný blog), je vhodnější patkové písmo. Jenže to by pak znamenalo hledat třetí rodinu pro uživatelské rozhraní, kde se patky nehodí kvůli prostorové neúspornosti. Vybraný *PT Sans* je naopak velmi úsporný, taková méně velkorysá Verdana. A má hezkou kurzívu, kterou budeme spolu s tučným řezem potřebovat v delších textech. [fonts.google.com/specimen/PT+Sans](https://fonts.google.com/specimen/PT+Sans)
 
 <figure>
-<img src="dist/images/original/vdwd/priklady-typografie.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklady-typografie.jpg" alt="">
 <figcaption markdown="1">    
 *Vybraná písma Yeseva One a PT Sans*
 </figcaption> 
@@ -61,7 +61,7 @@ Pro vyhledání grafického stylu jsem využil Iconfinder. Hledal jsem minimalis
 Některé z nich jsem tedy pro naše potřeby zakoupil a barevně upravil.
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-ikony.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-ikony.jpg" alt="">
 <figcaption markdown="1">    
 *Upravené ikony Maxe Gribojedova, které využijeme pro komunikaci benefitů e-shopu. [iconfinder.com/enotmaks](https://www.iconfinder.com/enotmaks)*
 </figcaption> 
