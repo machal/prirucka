@@ -2,30 +2,25 @@
 
 Během psaní „Vzhůru do (responzivního) webdesignu“ jsem myslel hlavně na tři skupiny webařů a webařek:
 
-
 ## 1) Vývojáři a kodéři
 
-Vy z knížky využijete největší část. Získáte přehled o postupech a technologiích používaných pro tvorbu dnešních responzivních webů. Ovšem – každý frontend kodér a skoro každý vývojář dotváří, nebo dokonce navrhuje i nějaké části uživatelských rozhraní. Mezi řádky a v netechnických kapitolách se tedy můžete inspirovat tipy pro tvorbu a úpravy responzivních rozhraní. 
-
+Vy z knížky využijete největší část. Získáte přehled o postupech a technologiích používaných pro tvorbu dnešních responzivních webů. Ovšem – každý frontend kodér a skoro každý vývojář dotváří, nebo dokonce navrhuje i nějaké části uživatelských rozhraní. Mezi řádky a v netechnických kapitolách se tedy můžete inspirovat tipy pro tvorbu a úpravy responzivních rozhraní.
 
 ## 2) Designéři, grafici, marketéři
 
-Vaší pozornosti doporučím hlavně kapitoly [o statistikách](kap-prostredi.md), [rychlosti načítání](kap-rychlost.md), [návrhu rozhraní v éře mobilů](kap-ui.md), [procesu návrhu UI](kap-ui-proces.md) a [responzivních navigacích](kap-navigace.md).  Věřím ale, že vás nalákám i do dalších textů a získáte tak hrubý přehled o technologických základech, na kterých weby společně stavíme. 
-
+Vaší pozornosti doporučím hlavně kapitoly [o statistikách](kap-prostredi.md), [rychlosti načítání](kap-rychlost.md), [návrhu rozhraní v éře mobilů](kap-ui.md), [procesu návrhu UI](kap-ui-proces.md) a [responzivních navigacích](kap-navigace.md).  Věřím ale, že vás nalákám i do dalších textů a získáte tak hrubý přehled o technologických základech, na kterých weby společně stavíme.
 
 ## 3) Začátečníci a méně zkušení
 
 Text knihy jsem psal tak, aby se dal číst i jako učebnice tvorby webových uživatelských rozhraní. Vynechávám všechny pokročilé nástroje, nezmiňuji složité techniky a občas sám skřípu zuby nad tím, jak moc musím zjednodušovat. Přeji si ale, aby kniha dávala smysl i lidem, kteří se k tvorbě webu dostali teprve nedávno a třeba ještě neví, do které ze škatulek „designéři“ a „vývojáři“ se časem zařadí.
 
-
 ## Co předpokládám, že čtenáři umí?
 
 Pro pochopení technických částí budete potřebovat dobrou znalost HTML a CSS a hrubý přehled o moderních technologiích zmíněných v e-booku „Vzhůru do CSS3“. Netechnické části předpokládají jen to, že máte základní přehled o procesu návrhu webu.
 
-
 ## To podstatné vyzkoušíme na příkladu
 
-V textu často ukazuji principy, které se špatně vysvětlují na umělých ukázkách. Proto se knihou jako červená nit táhne příklad. 
+V textu často ukazuji principy, které se špatně vysvětlují na umělých ukázkách. Proto se knihou jako červená nit táhne příklad.
 
 Kvůli zachování tempa vyprávění jsem se samozřejmě i v procesu jeho tvorby dopustil mnoha zjednodušení. Na příkladu ale ukážu mnoho věcí:
 
@@ -38,6 +33,3 @@ Kvůli zachování tempa vyprávění jsem se samozřejmě i v procesu jeho tvor
 7. [Rozvržení stránky](priklad-layout.md)
 
 Jednotlivé kroky, ale i [hotovou verzi](priklad-hotovo.md) si samozřejmě můžete stáhnout, zkoušet nebo využít pro vaše potřeby.
-
-Teď už mi nezbývá než vám popřát, ať se vám knížka dobře čte. 
-
