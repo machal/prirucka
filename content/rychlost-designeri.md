@@ -22,14 +22,14 @@ Ale nebojte se, v textu je informací daleko více. Teď už se pojďme podívat
 - Mobilní sítě nikdy nebudou tak rychlé, jak bychom chtěli. Bodejď by byly, když v jejich případě data létají vzduchem.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Pravděpodobnost odchodu ze stránky v závislosti na rychlosti webu dle Google ukazuje <a href="https://twitter.com/machal">@machal</a> na <a href="https://twitter.com/hashtag/uxcrosummit?src=hash">#uxcrosummit</a> <a href="https://t.co/wUntZFW7rM">pic.twitter.com/wUntZFW7rM</a></p>&mdash; Pavel Ungr 🔍 🇨🇿 (@PavelUngr) <a href="https://twitter.com/PavelUngr/status/857895259254206464">April 28, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Všechny důvody jsem detailně rozebral v článku [„Proč řešit rychlost načítání webu?“](rychlost-nacitani-proc.md).
 
 
 ## Nástroje a metriky
 
-Jako designéři a marketéři nemusíte jít moc do hloubky. Pro začátek stačí Google Analytics a PageSpeed Insights.
+Jako designéři a marketéři nemusíte jít moc do hloubky. Pro začátek stačí Google Analytics a [PageSpeed Insights](pagespeed-insights.md).
 
 ### Nástroje pro analýzu rychlosti
 
@@ -113,7 +113,7 @@ Je prokázáno, že lidé jsou schopní rozeznat dvacetiprocentní a vyšší ro
 Více je v článku [„How To Make A Performance Budget“](http://v3.danielmall.com/articles/how-to-make-a-performance-budget/) od Dana Malla.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Je dobré mít o 20 % rychlejší načítání webu než konkurence. Je to rozdíl, který uživatelé poznaji. <a href="https://twitter.com/machal">@machal</a> <a href="https://twitter.com/hashtag/uxcrosummit?src=hash">#uxcrosummit</a> <a href="https://t.co/vXK0HvXiCH">pic.twitter.com/vXK0HvXiCH</a></p>&mdash; Michal Voják (@MichalVojak) <a href="https://twitter.com/MichalVojak/status/857898785661480961">April 28, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ### 3. Klíč pro zavedení kultury rychlosti je ve spolupráci s vývojáři {#spoluprace}
@@ -226,7 +226,7 @@ Je ale nutné, aby vývojář převzal kontrolu a způsob servírování sjednot
 Příklad z praxe? Kolegové z VašeČočky.cz snížili nasazením FontFaceObserveru hodnotu metriky Start Render Time na polovinu (13,2 s → 6,6 s).
 
 
-### Zvažte nasazení technologie AMP {#amp}
+### Zvažte nasazení technologie AMP {#amp-heading}
 
 [Accelerated Mobile Pages Project](https://www.ampproject.org/) je technologie pro tvorbu speciální verze stránek od Google.
 
@@ -244,12 +244,12 @@ O AMP jsem už [tady dříve psal](https://www.vzhurudolu.cz/blog/40-amp).
 Je prokázáno, že lidé daleko lépe vnímají proces načítání stránky, pokud se během něj nemusejí dívat na prázdné okno prohlíže nebo jen točící se indikátor načítání.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Skeletony (zástupná konstrukce): &quot;Ono se to načte třeba stejně rychle, ale ten pocit z toho je jiný.&quot; A vo to nám de ;) <a href="https://twitter.com/hashtag/UX?src=hash">#UX</a> <a href="https://twitter.com/hashtag/UXCROsummit?src=hash">#UXCROsummit</a> <a href="https://t.co/Zt3j7tvGxB">pic.twitter.com/Zt3j7tvGxB</a></p>&mdash; BoB Marvan (@BoBMarvan) <a href="https://twitter.com/BoBMarvan/status/857903734877302784">April 28, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Zástupné symboly a skeletony znáte z prostředí velkých aplikací – Facebooku nebo LinkedIn. 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The new <a href="https://twitter.com/LinkedIn">@LinkedIn</a> design utilizing “Skeleton Screens” for loading. cc <a href="https://twitter.com/lukew">@lukew</a> <a href="https://twitter.com/hashtag/ux?src=hash">#ux</a> <a href="https://twitter.com/hashtag/design?src=hash">#design</a> <a href="https://t.co/OqHIN041yD">pic.twitter.com/OqHIN041yD</a></p>&mdash; Joe Johnston (@merhl) <a href="https://twitter.com/merhl/status/829075715488415744">February 7, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 U javascriptových aplikací se skeletony nasazují lépe než u běžných webů, protože prohlížeče nemají vestavěné techniky pro práci s nimi. 
 

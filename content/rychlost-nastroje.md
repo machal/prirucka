@@ -1,7 +1,6 @@
 # Nástroje pro analýzu rychlosti načtení stránky
 
-Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebPageTest.org. Vývojářům se také budou hodit vývojářské nástroje v Chrome nebo jiných prohlížečích. 
-
+Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebPageTest.org. Vývojářům se také budou hodit vývojářské nástroje v Chrome nebo jiných prohlížečích.
 
 ## Google PageSpeed Insights
 
@@ -20,6 +19,21 @@ Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů n
 
 Zároveň není nutné bojovat za dosažení stovky. PSI je prostě jen automat, a tak vám strhne body i za rozumné věci. Upozorní vás například na „špatně“ nastavenou dobu kešování měřicího skriptu Google Analytics. Jinak je to ale skvělý nástroj.  [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
 
+<span class="web-only" markdown="1">
+V příručce najdete samostaný [článek o PageSpeed Insights](pagespeed-insights.md).
+</span>
+
+## Google Lighthouse
+
+Nepostradatelný nástroj pro analýzu rychlosti, ale také přístupnosti, technického SEO a obecných doporučení.
+
+Je možné jej používat přímo v Google Chrome (DevTools a záložka „Audits“), ale také mnoha dalšími způsoby. Online verze je zde: [developers.google.com/web/tools/lighthouse/run](https://developers.google.com/web/tools/lighthouse/run).
+
+Velmi doporučuji právě Lighthouse pouštět pravidelně a řídit se jeho doporučeními.
+
+<span class="web-only" markdown="1">
+Také [Lighthouse](lighthouse.md) zde má samostatný článek.
+</span>
 
 ## Google Analytics
 

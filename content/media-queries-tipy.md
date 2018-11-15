@@ -1,59 +1,6 @@
 # Tipy a triky k Media Queries
 
-Doporučím vám nastavovat body zlomu podle obsahu a dávat přednost komponentovým před globálními. V produkčním kódu byste měli u Media Queries mít jednotku `em`. Podíváme se na způsob psaní Mobile First a povíme si něco o budoucnosti – o Element Queries.
-
-
-## Body zlomu se vždy snažte nastavovat podle obsahu
-
-Častou chybou je vymýšlení breakpointů „podle zařízení“. Dejme tomu, že chceme oslovit všechny tablety. Usmyslíme si, že to zařídíme následující podmínkou:
-
-```css
-/* Bod zlomu „pro tablety“ (špatně) */
-@media only screen 
-  and (min-width: 40em) and (max-width: 48em) { 
-    /* Kod pro obrazovky mezi 640 a 768 px */
-}
-```
-
-Vypadá to hezky, ale je to konina. Jak už jsem psal, rozlišení mobilů i tabletů je tolik, že se nelze na nějaké rozmezí pro tablety nebo mobily spoléhat. V naší ukázce tak některé tablety podmínku splní, jiné zase ne. 
-
-Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů, jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
-
-Vždy se při vymýšlení bodu zlomů snažte zaměřit na obsah a jeho rozvržení na obrazovce. Media Queries mají vyplynout z obsahu.
-
-Dejme tomu, že máme jednoduchou vodorovnou navigaci, jejíž obsah se nemění. Rozhodujeme se o hodnotě bodu zlomu šířky okna, kdy se navigace z vodorovné stane svislou pro menší displeje.
-
-```css
-/* Bod zlomu nastavený podle obsahu */
-@media only screen and (min-width: 27.5em) { … }
-```
-
-Zvolili jsme `27.5em` (440 pixelů) podle šířky okna, kdy se položky navigace ještě vejdou vedle sebe. Více na CodePenu: [cdpn.io/e/bBPdgQ](https://codepen.io/machal/pen/bBPdgQ)
-
-Jsou ale situace, kdy je nastavení bodů zlomu podle obsahu nemožné. Někdy obsah prostě při tvorbě layoutu neznáme: Například když pracujeme na frameworku nebo připravujeme šablonu pro obsah, který má v rukách až koncový uživatel našeho redakčního systému. Jako příklad můžu opět jmenovat Bootstrap, který má body zlomu nastavené pevně. Naštěstí jdou měnit a vždy můžete přidat nějaké vlastní. 
-
-
-## Komponentové a globální body zlomu
-
-Obsahové body zlomu nejčastěji definuji podle obsahu konkrétních komponent. Říkám jim *komponentové*. Jako příklad vezměme záložkovou navigaci:
-
-```css
-/* Komponentový bod zlomu */
-@media only screen and (min-width: 16em) { 
-  .tabs { display: flex; }
-}
-```
-
-To ale neznamená, že nepotřebujete body zlomu *globální*. Ty se nejčastěji hodí pro nastavení layoutu stránky:
-
-```css
-/* Komponentový bod zlomu */
-@media only screen and (min-width: 40em) { 
-  .page-layout { display: flex; }
-}
-```
-
-Globální breakpointy jsou obvykle uložené v nějaké hodnotě sdílené napříč projektem – v proměnné CSS preprocesoru a podobně. Mohou je pak samozřejmě přebírat i komponenty.
+V produkčním kódu byste měli u Media Queries mít jednotku `em`. Podíváme se na způsob psaní Mobile First a povíme si něco o budoucnosti – o Element Queries.
 
 
 ## Správné je použít `em`, ale autorům se obvykle lépe pracuje s `px`
@@ -71,7 +18,7 @@ Proto se i vám může hodit ve vývojářském kódu používat pixely a pro pr
 
 ## Zanořování Media Queries
 
-Doporučoval jsem vymýšlet body zlomu vždy pro obsah konkrétní komponenty. V kódu bych pak podmínku chtěl vyjádřit jako podmnožinu selektoru komponenty, abych tím i vizuálně v kódu vyjádřil jejich vztah:
+Doporučuji vymýšlet body zlomu nejlépe vždy pro obsah a design konkrétní komponenty. V kódu bych pak podmínku chtěl vyjádřit jako podmnožinu selektoru komponenty, abych tím i vizuálně v kódu vyjádřil jejich vztah:
 
 ```css
 .el {

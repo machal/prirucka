@@ -16,22 +16,19 @@ WebP je také prý pomalejší pro dekódování a více zatěžuje procesor. Al
 
 > Back in 2013, the compression speed of WebP was ~10× slower than JPEG but is now negligible (some images may be 2× slower). For static images that are processed as part of your build, this shouldn’t be a large issue. Dynamically generated images will likely cause a perceivable CPU overhead and will be something you will need to evaluate.
 
-
 Takže by to mělo být ke zvážení, jen pokud obrázky generujete v reálném čase.
 
+## Podpora v prohlížečích: Partička kolem Chrome a Edge {#podpora}
 
-## Podpora v prohlížečích: Jen partička kolem Google {#podpora}
+Jde o formát z dílny Google, takže jej podporují všechny prohlížeče postavené na Chrome, ale [nově také Edge](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webpimageformat/) od Microsoftu. Pokud to od oka dobře počítám, může jít ke dni psaní textu v Česku kolem 65 - 75 % uživatelů.
 
-Jde o formát z dílny Google, takže jej aktuálně finálně podporují pouze všechny prohlížeče postavené na Chrome. Pokud to dobře počítám, může jít ke dni psaní textu v Česku kolem 60 - 70 % uživatelů.
-
-- Chrome, Opera, Samsung Internet a stařičký Android Browser jej umí
-- Edge nedávno ohlásil, že [na podpoře začíná pracovat](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webpimageformat/)
-- Safari a Firefox mají nějakou formu podpory na úrovni betaverze
+- Umí: Chrome, Opera, Samsung Internet, stařičký Android Browser a nově Microsoft Edge 
+- Připravují podporu: [Firefox to oznámil](https://www.cnet.com/news/firefox-to-support-googles-webp-image-format-for-a-faster-web/) v říjnu 2018
+- Zvažují podporu: [Apple pro svoje Safari formát WebP zatím testuje](https://www.cnet.com/news/apple-ios-macos-tests-googles-webp-graphics-to-speed-up-web/) 
 
 Více informací o podpoře: [caniuse.com/webp](https://caniuse.com/#feat=webp).
 
-Jenže – co uděláme s třetinou uživatelů, kteří používají prohlížeče bez podpory WebP? Žádné stresy, web bez obrázků jim dodávat nemusíme.
-
+Jenže – co uděláme s menší částí uživatelů, kteří používají prohlížeče bez podpory nového formátu? Žádné stresy, web bez obrázků jim dodávat nemusíme.
 
 ## Fallback do JPEG {#fallback}
 

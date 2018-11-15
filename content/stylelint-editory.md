@@ -40,6 +40,16 @@ Po instalaci se vám začnou zvýrazňovat prohřešky přímo v kódu. Detaily 
 
 <!-- AdSnippet -->
 
+## Visual Studio 2017 {#visual-studio}
+
+Ve „velkém“ Visual Studiu máte dvě možnosti prostřednictvím doplňků:
+
+- [NPM Task Runner](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner) - v okně Task Runner Explorer ukazuje výstupy, ale o opravdová integrace Stylelint to není.
+- [MultiLinter](https://marketplace.visualstudio.com/items?itemName=glat.MultiLinter) - wrapper pro další lintery, který umí i Stylelint. Ukazuje výstupy v okně Output a přímo u kódu, což chcete. Náročnější je trochu jeho nastavení.
+
+Detailní návod pro obě možnosti hledejte [v textu](https://gist.github.com/martindybal/bf947805551210440ab4a2b12e667b2e/#file-vs-stylelint-md) od [Martin Dybala](https://www.linkedin.com/in/martin-dybal-b1062277), kterému tímto děkuji.
+
+<!-- AdSnippet -->
 
 ## Další
 

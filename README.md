@@ -65,18 +65,18 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 
 Standardně vkládáme jako obrázek:
 
-```html
+```markdown
 ![Podíl mobilů](dist/images/original/statistika-mobily.jpg)
 ```
 
 Alternativně s popiskem jako `<figure>`:
 
-```
+```html
 <figure>
 <img src="dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
-</figcaption> 
+</figcaption>
 </figure>
 ```
 
@@ -98,6 +98,10 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
+### CodePen
+
+Ukázky vkládáme v `<iframe>`. Doporučované vložení přes HTML není kompatibiliní s AMP.
+
 ### Tabulka
 
 Jednodušší:
@@ -115,7 +119,7 @@ Složitější tabulky ideálně jako `<figure>`:
 ```html
 <figure>
 
-<div class="rwd-scrollable"  markdown="1"> 
+<div class="rwd-scrollable"  markdown="1">
 | Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
 |------------|:------:|:----------:|:-----:|:------:|:--------:|
 | `<span>`   |  +     |      +     |       |        |          |
@@ -168,6 +172,8 @@ Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně
 - V citacích (`blockquote` a `cite`) a `figcaption`, protože jsou vyvedené kurzívou.
 
 HTML značky lze opsat kapitálkami („Značka HTML slouží…“). JS a CSS kód prostě uvedeme bez `<code>` tak jak je. Vyplývá z toho samozřejmě, že je lepší se kódu na takovýchto místech vyhnout.
+
+Kvůli e-bookům by bloková ukázka kódu měla mít maximální délku kódu kolem 60 znaků na řáku.
 
 
 ### Zobrazení jen na webu

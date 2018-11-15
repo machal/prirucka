@@ -94,4 +94,4 @@ Aplikace IcoMoon vám vygeneruje fonty s ikonami na míru – [icomoon.io](http:
 
 Hezké využití ikonfontů je vektorová mapa Česka – [cezetmap.cz](http://cezetmap.cz).
 
-Než se do používání ikonfontů pustíte, zvažte, zda pro vás není lepší použít rovnou vektorový formát SVG – [css-tricks.com/icon-fonts-vs-svg](http://css-tricks.com/icon-fonts-vs-svg/).
+Než se do používání ikonfontů pustíte, zvažte, zda pro vás není lepší použít rovnou vektorový formát SVG – [vrdl.cz/p/ikonfonty-vs-svg](https://www.vzhurudolu.cz/prirucka/ikonfonty-vs-svg).

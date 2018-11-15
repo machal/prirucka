@@ -6,9 +6,6 @@ V Google mají jasno. Tohle prohlásil v roce 2010 Eric Schmidt, tehdejší šé
 
 Ale nemusíte být Google. Rychlejší načtení vylepší uživatelský prožitek a pomůže tak cílům každého webu.
 
-<!-- AdSnippet -->
-
-
 ## My lidé to zkrátka rychlé chceme
 
 Uživatelé jsou prostě jen lidé. Jejich trpělivost při čekání na reakci rozhraní po provedení akce není nekonečná.
@@ -19,13 +16,13 @@ Uživatelé jsou prostě jen lidé. Jejich trpělivost při čekání na reakci 
 
 Více se dozvíte v článku „Response Times: The 3 Important Limits“ od Jacoba Nielsena. [vrdl.in/4o3d7](https://www.nngroup.com/articles/response-times-3-important-limits/)
 
+<!-- AdSnippet -->
+
 ## Rychlost načtení stránky má vliv na úspěšnost webu
 
 Říkají to alespoň studie a testy, které o tom byly publikovány.
 
 Walmart si například spočítal, že každé zrychlení načtení stránky o vteřinu  zvýší konverze jejich webu o dva procentní body. To nebude úplně špatný výdělek, že ano? [vrdl.in/ziud9](http://www.slideshare.net/devonauerswald/walmart-pagespeedslide/46)
-
-<!-- AdSnippet -->
 
 I v Česku rychlost zabírá. Portálu Srovname.cz jsem osobně pomáhal se zrychlením důležitých vstupních stránek. Poměrně jednoduchými kroky jsme na mobilních zařízeních zvýšili konverzní poměr o čtvrtinu. [vrdl.cz/b/58-rychlost-srovname-cz](https://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)
 
@@ -42,7 +39,7 @@ Cituji z článku „Landing page load time now affects keywords' Quality Scores
 
 Google říká, že rychlost webu má vliv na zobrazování ve výsledcích vyhledávání. Na pořadí ve výsledcích má přímý vliv hlavně rychlost vygenerování stránky na serveru. Zájemce odkážu na detailní popis na Moz.com. [vrdl.in/zhrkp](https://moz.com/blog/how-website-speed-actually-impacts-search-ranking)
 
-Od poloviny roku 2018 bude také rychlost nově řadícím signálem v mobilních výsledcích vyhledávání. Google to uvedl v lednu blogpostem „Using page speed in mobile search ranking“. [vrdl.in/f7b80](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html)
+Od poloviny rok 2018 je také rychlost nově řadícím signálem v mobilních výsledcích vyhledávání. Google to píše v blogpostu „Using page speed in mobile search ranking“. [vrdl.in/f7b80](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html)
 
 Rychlost tedy ovlivňuje nejen konverze, ale i pravděpodobnost, že se na web člověk vůbec dostane. 
 
@@ -81,3 +78,5 @@ Co dál? Přečíst si [článek o nástrojích](https://www.vzhurudolu.cz/priru
 <div class="ebook-only" markdown="1">
 Rychlost je důležitá. Jak ji ale dostat do vašich projektů?
 </div>
+
+<!-- AdSnippet -->

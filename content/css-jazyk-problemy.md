@@ -88,7 +88,7 @@ Máte? Tak a teď vezměme, že cílem bylo, aby nadpis `<h2>` byl v boxíku zel
 * díky pořadí v kódu vyhraje selektor `.tabs h2` a ten nastaví modrou barvu
 * díky specificitě nezafunguje  helper `.mb-0` a `<h2>` bude mít spodní vnější okraj o velikosti `1rem`
 
-Kaskáda nám to pokazila. Tady pardon – ne kaskáda, ale špatně napsaný kód, který kaskádu nerespektoval.
+[Kaskáda](css-kaskada.md) nám to pokazila. Tady pardon – ne kaskáda, ale špatně napsaný kód, který kaskádu nerespektoval.
 
 <!-- AdSnippet -->
 
@@ -139,6 +139,7 @@ Občas je také výhodnější utilitám zvýšit specificitu nebo použít `!im
 Je dobré používat komponentový přístup a zbavit elementy závislosti na kontejneru. Prostě používat [OOCSS](oocss.md), abychom se vyhnuli problémům s kaskádou.
 
 <div class="related" markdown="1">
+- [Kaskáda v CSS](kaskada.md)
 - [Atomický design a Pattern Lab](pattern-lab.md)
 </div>
 
@@ -149,7 +150,7 @@ Tady se dotýkáme i toho, že aby to celé dávalo smysl, i design musí být k
 ## Globální platnost – komponentový přístup a metodiky to řeší {#globalni-platnost}
 
 
-To, že každý selektor platí globálně, byl svého času první argument pro používaní [CSS v JS.](https://www.vzhurudolu.cz/podcast/77-css-v-js)  Vlastně jsem mu ale nikdy úplně plně nerozumněl, hlavně omílanému srovnání s globálními konstantami v programovacích jazycích. 
+To, že každý selektor platí globálně, byl svého času první argument pro používání [CSS v JS.](https://www.vzhurudolu.cz/podcast/77-css-v-js)  Vlastně jsem mu ale nikdy úplně plně nerozumněl, hlavně omílanému srovnání s globálními konstantami v programovacích jazycích. 
 
 
 
