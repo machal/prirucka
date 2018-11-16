@@ -9,7 +9,7 @@ Kdybyste ale moc stáli o podporu všech starších a méně významných kontex
 </figcaption>
 </figure>
 
-Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířka [layoutového viewportu](viewport-mobily.md) nastaví na velikost rozlišení v [CSS pixelech](css-pixel.md).
+Bez použití meta značky se web vykreslí do výchozího layoutového viewportu, který má většinou šířku 980 pixelů. Web bude vypadat „jako na počítači, jen zmenšený“. S použitím meta značky pro viewport se šířka [layoutového viewportu](viewport.md) nastaví na velikost rozlišení v [CSS pixelech](css-pixel.md).
 
 ## Jednoduchá varianta {#varianta-jednoducha}
 
@@ -132,8 +132,6 @@ Vtipné je, že WatchOS ve výchozím režimu vynucují přepočítaný viewport
 <div class="ebook-only" markdown="1">
 
 Více o [webech na WatchOS](weby-watchos.md) píšu ve zvláštní kapitole.
-
-Teď se pojďme podívat na jeden parametr webů, jehož podcenění může mít daleko horší důsledek – zhoršení rychlosti načítání. Tento parametr sem nepatří jen zdánlivě. V průběhu práce na projektu jej totiž nesmíme nechat na závěr.
 
 </div>
 

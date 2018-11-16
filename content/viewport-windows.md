@@ -20,7 +20,7 @@ Pokud  použijeme [meta viewport](viewport-meta.md) s hodnotami `width=device-wi
 
 Tady je oprava jednoduchá, stačí do CSS přidat už zmíněné `@-ms-viewport { width: device-width; }`.
 
-Po použití tohoto pravidla začne zmiňovaná Lumia 630 na Windows Phone 8.1 zobrazovat stránky ve svém [ideálním viewportu](viewport-mobily.md) – 338 × 512 pixelů. Oukej, to bychom měli.
+Po použití tohoto pravidla začne zmiňovaná Lumia 630 na Windows Phone 8.1 zobrazovat stránky ve svém [ideálním viewportu](viewport.md) – 338 × 512 pixelů. Oukej, to bychom měli.
 
 ## Větší problémy na Windows Phone 8
 

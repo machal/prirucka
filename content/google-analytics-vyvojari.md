@@ -14,7 +14,7 @@ Pokud si do Analytics [přidáte tuto palubní desku](https://analytics.google.c
 
 Mimochodem, Viget jsou také autory  pluginu [Trackomatic](https://www.viget.com/articles/making-cross-client-google-analytics-tracking-easy-with-trackomatic). Ten vám bude do událostí v Analytics ukládat další zajímavé hodnoty. Například:
 
-- Velikost [viewportu](viewport-mobily.md): rozměry vnitřku okna prohlížeče, nikoliv rozlišení obrazovky, které nás příliš nezajímá.
+- Velikost [viewportu](viewport.md): rozměry vnitřku okna prohlížeče, nikoliv rozlišení obrazovky, které nás příliš nezajímá.
 - First Input: čím uživatelé „klikají“ na vaší stránce – myší, dotykem, klávesnicí… ?
 - Site Exit: kam uživatelé odcházejí?
 - Javascript Error: výborný report návštěv, které skončily chybou ve skriptu.
