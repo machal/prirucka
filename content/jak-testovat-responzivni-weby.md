@@ -4,20 +4,18 @@ Jak si poradit s dnešní škálou prohlížečů a zařízení? A jak s nepří
 
 Mé testování je čtyřfázové:
 
-1. Prototypování 
+1. Prototypování
 2. Vývojářský desktopový prohlížeč
-3. Alternativní prohlížeče pomocí nástroje BrowserStack 
+3. Alternativní prohlížeče pomocí nástroje BrowserStack
 4. Reálná zařízení
 
 ## 1) Prototypování (na CodePenu)
 
-
 <span class="ebook-only" markdown="1">O prototypování jsem už psal [ve zvláštní kapitole](html-prototypovani.md).</span> Ještě než začnu něco finálně implementovat, procházím touto první, prototypovací fází. Na prototypu si vyzkouším nejkritičtější designérské i kodérské problémy. Používám CodePen, kde je to za chvilku hotové a výsledek můžu rychle otestovat ve všech možných prohlížečích. Dále pak Bootstrap nebo prostě HTML, CSS a Javascript.
-
 
 ## 2) Vývojářský desktopový prohlížeč (s Chrome DevTools)
 
-V téhle fázi trávím samozřejmě nejvíce času. Kvůli DevTools používám Chrome. 
+V téhle fázi trávím samozřejmě nejvíce času. Kvůli DevTools používám Chrome.
 
 Občas se podívám do ostatních desktopových prohlížečů: Firefoxu, Explorerů, Safari a Edge. Méně často do Opery, která obvykle renderuje stejně jako Chrome.
 
@@ -33,7 +31,7 @@ Něco *podobného* existuje ve Firefoxu (Responsive Design View – `Ctrl/Cmd+Al
 
 Při testování v Chrome si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bratry, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
 
-V Chrome obvykle oknem prohlížeče hýbu a upravuji kód, dokud se mně design alespoň trochu nelíbí ve *všech* rozlišeních. 
+V Chrome obvykle oknem prohlížeče hýbu a upravuji kód, dokud se mně design alespoň trochu nelíbí ve *všech* rozlišeních.
 
 V další fázi potřebuji testovat v reálnějším prostředí. Ano, jde o jiná vykreslovací nebo javascriptová jádra. Pomůže BrowserStack nebo simulátory.
 
@@ -101,13 +99,10 @@ Browsersync je obecně velmi přínosný nástroj pro testování responzivních
 
 <figure>
 <img src="../dist/images/original/browsersync-browserstack.jpg" alt="">
-<figcaption markdown="1">    
-*Browsersync v kombinaci s BrowserStack. Browsersync a Weinre umožňují kombinovat platformy. Takže třeba Firefox na Macu propojit s Explorerem na Windows Phone*
-</figcaption> 
+<figcaption markdown="1">
+*Browsersync v kombinaci s BrowserStack. Browsersync a Weinre umožňují kombinovat platformy. Takže třeba Firefox na Macu propojit s Explorerem na Windows Phone. Tedy ne, že byste to v roce 2018 moc často potřebovali*
+</figcaption>
 </figure>
-
-
- 
 
 Weinre jsou ale jen *něco* jako DevTools.  Plnohodnotným vývojářským nástrojům dnešních prohlížečů konkurovat nemohou.
 

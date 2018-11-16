@@ -14,7 +14,7 @@ Podobné je to s tématy, která budeme rozebírat v této knize. Google byl jed
 
 - Radí stavět web jako responzivní, tedy s jednou URL adresou pro všechny typy zařízení. [vrdl.in/googlerwd](https://developers.google.com/webmasters/mobile-sites/mobile-seo/responsive-design)
 - Od ledna 2017 znevýhodňuje weby s obtěžujícími překryvnými vrstvami, které jsou špatně použitelné hlavně na mobilech. [vrdl.in/googlepopup](http://blog.bloxxter.cz/google-od-ledna-2017-penalizuje-weby-s-obtezujicimi-popupy/)
-- V průběhu roku 2017 začne zkoušet posuzovat weby hlavně podle toho, jak vypadají na mobilech. [vrdl.cz/b/73-google-mobile-first](https://www.vzhurudolu.cz/blog/73-google-mobile-first)
+- V průběhu let 2017 a 2018 začal posuzovat některé weby hlavně podle toho, jak vypadají na mobilech. [vrdl.cz/b/73-google-mobile-first](https://www.vzhurudolu.cz/blog/73-google-mobile-first)
 
 Mohli bychom pokračovat dále. Google chápe web jako *zejména* mobilní, a je tedy poměrně oddaným fanouškem filozofie návrhu nejprve pro mobily ([Mobile First](mobile-first.md)), o které budu psát v druhé polovině knihy.
 

@@ -6,16 +6,9 @@ Na jakých zařízeních budou lidé používat prohlížeče a zobrazovat naše
 
 Budeme si na nich prohlížet weby?
 
-
-## Chytré hodinky: NE
-
-Hodinky obvykle prohlížeč instalovaný nemají. Na některých platformách si nějaký ten neoficiální stáhnout můžete. Zkoušel jsem, ale myslím, že je to nepoužitelné, a masovému přijetí nevěřím. Plocha je pro weby příliš malá na konzumaci obsahu, natož pak rozumnou interakci s ním.
-
-
 ## Televize: NE
 
 I vaše chytrá domácí televize nejspíš nějaký ten prohlížeč obsahuje. Moc je ale lidé nepoužívají. Zakopaný pes vězí v uživatelském ovládání. Budoucnost v případě televizí vidím v gestech a hlasovém rozhraní. Interakce s běžnými webovými stránkami na televizi budou do té doby nepohodlné. To ale neznamená, že nevznikají nativní TV aplikace vytvářené pomocí webových technologií. Ostatně i HbbTV aplikace jsou vyrobené webovými technologiemi. [vrdl.in/hbbtv](http://www.hbbtv-developer.com/site/wiki/index.php/Hello_world) 
-
 
 ## Ledničky: NE  
 
@@ -28,6 +21,10 @@ Myslím ty malé potvůrky do ruky. Jsou to jen převlečené chytré telefony, 
 ## Auta: ANO
 
 S rozmachem (polo)automatického řízení poroste význam velkých dotykových obrazovek. Nejspíš v těch místech, kde teď v autě máte výstupy z ventilátorů. Číst si Blesk.cz v dopravní zácpě? Já to dělat nebudu, ale dává mi to dokonalý smysl. Jen doufejme, že ta auta budou fakt chytrá, aby zvládla řídit, protože nás od palubních displejů už nic neodtrhne. Mají to už odzkoušeno v Tesla Motors: [vrdl.in/rlwn0](https://www.tesla.com/support/touchscreen-web-browser).
+
+## Chytré hodinky: Trochu ANO
+
+„Zkoušel jsem, ale myslím, že je to nepoužitelné, a masovému přijetí nevěřím.“ psal jsem zde pro první verzi knížky. Jenže autoři míní, ale uživatelé mění. V textu [o webech na hodinkách od Apple](weby-watchos.md) uvidíte, že lidé si už dnes naše dílka začínají prohlížet i na hodinkách.
 
 ## Revoluce nejspíš ne. Weby budou ale ještě více responzivní
 
