@@ -41,6 +41,7 @@ V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), co�
 
 Pro konkrétní projekty samozřejmě nebudou tyto konkrétní hodnoty použitelné. Body zlomu je vždy lepší definovat podle obsahu konkrétních komponent než takto centrálně. Body zlomu Boostrapu berte jen jako ilustraci pojmu.
 
+[Tvorbou breakpointů](breakpointy.md) z pohledu designéra se zabývám ve zvláštním textu.
 
 ## Minimální nebo maximální výška a šířka
 
