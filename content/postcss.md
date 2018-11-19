@@ -106,7 +106,7 @@ margin-bottom: 3rem;
 
 ## Instalace a nastavení
 
-Pokud používáte [Grunt](grunt.md) nebo Gulp, nejdříve přes NPM nainstalujte naše pluginy:
+Pokud používáte [Grunt](grunt.md) nebo Gulp, nejdříve přes [NPM](npm.md) nainstalujte naše pluginy:
 
 ```bash
 npm install 

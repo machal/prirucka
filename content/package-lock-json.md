@@ -1,6 +1,6 @@
 # package-lock.json: Proč potřebujeme „lockfile“?
 
-Co je hernajs ten `package-lock.json`, který se vám objevuje v hlavní složce repozitáře, když používáte balíčkovací manažer NPM?
+Co je hernajs ten `package-lock.json`, který se vám objevuje v hlavní složce repozitáře, když používáte [balíčkovací manažer NPM](npm.md)?
 
 Jedná se o soubor, který uchovává přesné informace o instalovaných balíčcích. Vedle [package.json](package-json.md) je to klíčový prvek definice závislostí projektu. A stejně jako tenhle jeho brácha by měl být commitovaný do repozitáře. Na rozdíl od něj se ale neupravuje ručně. 
 

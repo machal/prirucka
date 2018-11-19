@@ -18,7 +18,7 @@ Navíc jeho konfigurační soubor (`Gruntfile.js`) verzujete, takže nastavení 
 
 Je dobré hned na začátku zmínit, že pro používání Gruntu musíte alespoň trochu kamarádit s příkazovou řádkou. Žádné pokročilé vědomosti ale potřeba nejsou. Kolem příkazové řádky chodím po špičkách, s Gruntem jsem se ale spřátelil docela rychle.
 
-Budete potřebovat [nainstalovaný Node.js](node-instalace.md) a Node Package Manager (NPM):
+Budete potřebovat [nainstalovaný Node.js](node-instalace.md) a [Node Package Manager (NPM)](npm.md):
 
 Globálně si pomocí NPM nainstalujete rozhraní Gruntu pro příkazovou řádku:
 

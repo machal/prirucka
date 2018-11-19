@@ -2,7 +2,7 @@
 
 Dneska o tomhle populárním souboru, o NPM skriptech a taky o závislostech.
 
-Asi nejlepší definice `package.json` zní: Manifest závislostí projektu. Jedná se o soubor, který využívá NPM a další balíčkovací systémy jako Yarn pro svou konfiguraci. 
+Asi nejlepší definice `package.json` zní: Manifest závislostí projektu. Jedná se o soubor, který využívá [NPM](npm.md) a další balíčkovací systémy jako Yarn pro svou konfiguraci. 
 
 Spolu s `package-lock.json` patří k základní výbavě každého projektu, který používá jeden ze zmíněných balíčkovacích manažerů. O tomhle jeho parťákovi ale někdy příště.
 
