@@ -40,7 +40,7 @@ Nikdy nevíte, kdo a s jakým vybavením přijde zrovna na váš web. Rozdělen�
 
 > Když selže výtah, je nepoužitelný. Když ale selžou jezdící schody, stanou se z nich prostě schody. Měli bychom budovat jezdící schody, ne výtahy.
 
-Jeremyho přednáška „Enhance!“, která se těmito principy detailně zabývá, je dostupná online. [vrdl.in/enhance](https://www.webexpo.cz/praha2015/prednaska/enhance/)
+Jeremyho přednáška „Enhance!“, která se těmito principy detailně zabývá, je dostupná online. [slideslive.com/38894415/enhance](https://slideslive.com/38894415/enhance)
 
 ### Weby závislé na Javascriptu? Opatrně s tím
 

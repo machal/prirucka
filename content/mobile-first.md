@@ -14,9 +14,9 @@ Jak už jsem mnohokrát zmínil, podíl mobilů na trhu roste. Uživatelé pří
 
 <figure>
 <img src="../dist/images/original/mobile-facebook-graph.jpg" alt="VašeČočky.cz - dvě skici">
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *94 % uživatelů přistupovalo ke konci roku 2016 na Facebook přes mobilní zařízení. 62 % jich používalo dokonce výlučně mobilní zařízení. Zdroj: Luke Wroblewski. [vrdl.in/6xnd5](https://twitter.com/lukew/status/758433206882361345)*
-</figcaption> 
+</figcaption>
 </figure>
 
 
