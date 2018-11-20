@@ -31,7 +31,7 @@ Pojďme si vzniklou situaci ještě ukázat na obrázku:
 
 Technicky vzato má totiž každá položka vlastnost `flex` a její výchozí nastavení na `initial`. Jak si ukážeme v referenční příručce, `flex` je zkratka pro další vlastnosti. Hodnota `initial` znamená, že se položka umí s ubývajícím prostorem smršťovat, ale neroztáhne se, ani když dostane dostatek volného místa.
 
-Příklad si můžete vyzkoušet na CodePenu [http://cdpn.io/e/raqXZX](http://cdpn.io/e/raqXZX).
+Příklad si můžete vyzkoušet na CodePenu [cdpn.io/e/raqXZX](http://cdpn.io/e/raqXZX).
 
 ## Příklad druhý: kombinování jednotek
 
@@ -45,7 +45,7 @@ Náš formulář rozšíříme. Podívejte se hlavně na poslední řádek. V to
 
 Všimněte si, že jsme přepínači a textu nastavili `flex: none`. Nechceme totiž aby se smršťovaly nebo roztahovaly. Prostě drží šířku za každou cenu. A naopak – textovému formulářovému políčku jsme pomocí `flex: auto` přikázali, aby se vždy smršťovalo a roztahovalo co mu šířka rodiče dovolí.
 
-Příklad si opět můžete vyzkoušet na CodePenu [http://cdpn.io/e/jEJbmg](http://cdpn.io/e/jEJbmg).
+Příklad si opět můžete vyzkoušet na CodePenu [cdpn.io/e/jEJbmg](http://cdpn.io/e/jEJbmg).
 
 ## Příklad třetí: svislé centrování boxu neznámé výšky
 
@@ -55,7 +55,7 @@ Také jste se s tímto úkolem dřív trápili? S flexboxem už nebudete! Z `<bo
 
 Centrování v obou směrech je s flexboxem bezproblémové. Kromě `align-self` se do následující referenční příručky podívejte i na vlastnosti `justify-content` a `align-items`.
 
-CodePen ukázka je na [http://cdpn.io/e/zxydom](http://cdpn.io/e/zxydom).
+CodePen ukázka je na [cdpn.io/e/zxydom](http://cdpn.io/e/zxydom).
 
 ## Příklad čtvrtý: změna vizuálního pořadí položek
 
@@ -69,7 +69,7 @@ V kódu máme pořadí: A) C) B). Na malých displejích ale chceme vizuální p
 .item-C { order: 2 }
 ```
 
-V prohlížeči vyzkoušíte na adrese [http://cdpn.io/e/JoqxJe](http://cdpn.io/e/JoqxJe).
+V prohlížeči vyzkoušíte na adrese [cdpn.io/e/JoqxJe](http://cdpn.io/e/JoqxJe).
 
 Změna vizuálního pořadí se hodí i třeba pro řazení od konce abecedy. Do příručky se podívejte na vlastnost flex-direction.
 
@@ -120,4 +120,4 @@ Co je absolutní model pružnosti? Podíl pro rozšiřování položky do volné
 
 ![navigace s přidanou položkou](../dist/images/original/flexbox-priklady-9.jpg)
 
-Takhle nám to vyhovuje. V prohlížeči vyzkoušíte na adrese [http://cdpn.io/e/NPevjg](http://cdpn.io/e/NPevjg).
+Takhle nám to vyhovuje. V prohlížeči vyzkoušíte na adrese [cdpn.io/e/NPevjg](http://cdpn.io/e/NPevjg).

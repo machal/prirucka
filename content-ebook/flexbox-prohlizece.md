@@ -78,4 +78,4 @@ Snadno se například dělá fallback pomocí vlastnosti `float`, protože ta se
 
 Jak už jste si jistě všimli, flexbox je dost složitý standard a to – spolu s jeho relativní čerstvostí – způsobuje řadu drobných chyb v prohlížečích.
 
-Kromě standardního hledání na Google nebo StackOverflow doporučuji projekt **flexbugs**. Phillip Walton a komunita tam sbírá, dokumentuje a hledá řešení nejčastějších chyb. [https://github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
+Kromě standardního hledání na Google nebo StackOverflow doporučuji projekt **flexbugs**. Phillip Walton a komunita tam sbírá, dokumentuje a hledá řešení nejčastějších chyb. [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)

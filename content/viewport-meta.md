@@ -64,7 +64,7 @@ Pokud nějaké prvky pozicujete částečně mimo viewport (například pomocí 
 
 Může se ale stát, že si to takhle nepřejete. Třeba jen chcete, aby byl element částečně oříznutý a mimo viewport. Od iOS 9 můžete použít deklaraci `shrink-to-fit=no`, kterou to zařídíte.
 
-Hezky je to vysvětlené na Stack Overflow, i s ukázkou v CodePen: [https://stackoverflow.com/a/33949647/889682](https://stackoverflow.com/a/33949647/889682)
+Hezky je to vysvětlené na Stack Overflow, i s ukázkou v CodePen: [stackoverflow.com/a/33949647/889682](https://stackoverflow.com/a/33949647/889682)
 
 Váš meta tag pro viewport by pak měl vypadat takto:
 
