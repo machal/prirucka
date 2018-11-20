@@ -30,8 +30,8 @@ Ale bavme se i o nevýhodách:
 
 <figure>
 <img src="../dist/images/original/lighthouse-online.jpg" alt="Lighthouse online">
-<figcaption markdown="1">    
-*Obrázek: Ukázkový report pro Vzhůru dolů. Vidíte celkové skóre, výsledky pro danou oblast a pak velmi rozumná doporučení ke zlepšení. 
+<figcaption markdown="1">
+*Obrázek: Ukázkový report pro Vzhůru dolů. Vidíte celkové skóre, výsledky pro danou oblast a pak velmi rozumná doporučení ke zlepšení.
 </figcaption>
 </figure>
 
