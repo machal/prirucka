@@ -71,6 +71,10 @@ package-lock.json
 - `package.json` v kořenovém adresáři je soubor s konfigurací NPM. Obsahuje informace o projektu a seznam potřebných balíčků. Více [ve zvláštním textu](package-json.md).
 - `package-lock.json` uchovává informace o instalovaných verzích balíčků, aby to bylo jednotné pro všechny, kteří na projektu pracují. I tady píšu [více ve zvláštním textu](package-json-lock.md).
 
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
+
 Pojďme se teď podívat ale na hlavní část článku – základní příkazy, které se mohou hodit opravdu každému webovému vývojáři a webové vývojářce.
 
 ## Základní příkazy {#prikazy}

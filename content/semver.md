@@ -2,6 +2,10 @@
 
 SemVer je specifikace, jejímž cílem je sjednocení způsobu verzování software.
 
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
+
 Autorům prostě předepisuje, jakým způsobem označovat nové verze jejich programů.
 
 ## Major.Minor.Patch

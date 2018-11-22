@@ -2,7 +2,11 @@
 
 Co je hernajs ten `package-lock.json`, který se vám objevuje v hlavní složce repozitáře, když používáte [balíčkovací manažer NPM](npm.md)?
 
-Jedná se o soubor, který uchovává přesné informace o instalovaných balíčcích. Vedle [package.json](package-json.md) je to klíčový prvek definice závislostí projektu. A stejně jako tenhle jeho brácha by měl být commitovaný do repozitáře. Na rozdíl od něj se ale neupravuje ručně. 
+Jedná se o soubor, který uchovává přesné informace o instalovaných balíčcích. Vedle [package.json](package-json.md) je to klíčový prvek definice závislostí projektu. A stejně jako tenhle jeho brácha by měl být commitovaný do repozitáře. Na rozdíl od něj se ale neupravuje ručně.
+
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
 
 V NPM se `package-lock.json` používá od verze 5. „Lockfile“ je poměrně nová věc, převzatá z konkurenčního nástroje Yarn.
 

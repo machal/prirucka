@@ -45,6 +45,9 @@ Styledocco nebo KSS, které tahle úloha využívá, vytvářejí příručky st
 
 To už všichni znáte, vím. [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less), [grunt-sass](https://github.com/sindresorhus/grunt-sass) a [grunt-contrib-stylus](https://github.com/gruntjs/grunt-contrib-stylus) pro kompilaci [CSS preprocesorů](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) jsou naprosto obligátní. 
 
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
 
 
 ## Javascript
