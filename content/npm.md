@@ -345,12 +345,7 @@ found 0 vulnerabilities
 
 Stáhne tedy novou verzi, uloží ji do adresáře node_modules/ a co je důležité – změní soubor package-lock.json. Ten, jak už víme, obsahuje informace o reálně instalovaných verzích balíčků. Změny v něm pak commitneme do repozitáře a máme aktualizováno.
 
-### install vs. update - rozdíly {#install-vs-update}
-
-Rozdílů mezi oběma příkazy je ale více:
-
-- `npm install` neaktualizuje nové verze definované pomocí SemVer předpisu [v package.json](package-json.md). Výjimkou jsou verze definované jako napří. `*` nebo `latest`. Ty pak aktualizuje i příkaz `install`.
-- `npm install` na rozdíl od `update` umí instalovat nové balíčky.
+Jak už název příkazů napovídá, `npm install` používejte pro instalaci nových balíčků, `npm update` pak pro aktualizaci na poslední dostupné verze podle předpisu zápisem [SemVer](semver.md) [v package.json](package-json.md).
 
 ## npm help: Nápověda {#npm-help}
 
