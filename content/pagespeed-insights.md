@@ -2,9 +2,9 @@
 
 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs) je asi nejznámější nástroj pro analýzu rychlosti načítání webů.
 
-Je skvělý pro získání základního přehledu, jak na tom web je. Vytahuje rychlostní ukazatele od reálných uživatelů a porovnává zdrojový kód webu s obecně osvědčenými postupy.
-
 Obsah článku: [Použití](#pouziti) – [Dvě rady](#rady) – [Co ukazuje a proč](#vlastnosti)
+
+Je skvělý pro získání základního přehledu, jak na tom web je. Vytahuje rychlostní ukazatele od reálných uživatelů a porovnává zdrojový kód webu s obecně osvědčenými postupy.
 
 <!-- AdSnippet -->
 

@@ -2,11 +2,11 @@
 
 Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak vyzrát na Google.
 
+Obsah článku: [Proč jej používat?](#proc) – [Co umí analyzovat](#co-umi) – [Jak jej používat](#jak-pouzivat) – [Jak funguje](#jak-funguje) – [Příkazová řádka](#prikazovka) – [Pravidelné spouštění](#pravidelne)
+
 Používám jej hlavně pro analýzu [rychlosti načítání](rychlost-nacitani-proc.md), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
 
 Velmi doporučuji jej používat pro vaše weby a webové aplikace  a nejlépe to dělat pravidelně a automaticky.
-
-Obsah článku: [Proč jej používat?](#proc) – [Co umí analyzovat](#co-umi) – [Jak jej používat](#jak-pouzivat) – [Jak funguje](#jak-funguje) – [Příkazová řádka](#prikazovka) – [Pravidelné spouštění](#pravidelne)
 
 ## Proč jej používat? {#proc}
 

@@ -1,11 +1,13 @@
 # GDPR pro webaře: Všechno, co o tom vím (pod dohledem advokáta)
 
-O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmu tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší. 
+O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmu tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší.
 
-Proto jsem se rozhodl dokončit i článek, který mám rozepsaný mnoho měsíců. Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
+<small markdown="1" id="toc">
+Obsah:
+[Co je GDPR](#co-je-gdpr) – [Rozdíl mezi GDPR a ePrivacy](#gdpr-eprivacy) – [Co je osobní údaj](#osobni-udaj) – [Jak se to týká frontendu a designu](#frontend) – [Jak se to týká backendu](#backend) – [Jak se to týká majitelů webů](#majitele-webu) [Newslettery](#newslettery) – [Souhlas se sledováním a „cookie lišta“](#cookie-lista)
+</small>
 
-Obsah: [Co je GDPR](#co-je-gdpr) – [Rozdíl mezi GDPR a ePrivacy](#gdpr-eprivacy) – [Co je osobní údaj](#osobni-udaj) – [Jak se to týká frontendu a designu](#frontend) – [Jak se to týká backendu](#backend) – [Jak se to týká majitelů webů](#majitele-webu) [Newslettery](#newslettery) – [Souhlas se sledováním a „cookie lišta“](#cookie-lista)
-
+Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
 
 ## Co je GDPR? {#co-je-gdpr}
 
