@@ -50,7 +50,7 @@ Je dobré zmínit, že nejde jen o text ve stránce, ale také text v grafickýc
 
 Máte? Pojďme teď ověřit, jestli je na vašem webu kontrast dostatečný.
 
-## Nástroje pro testování kontrastu {#nastroje-testovani}
+## Nástroje pro vývojáře {#nastroje-vyvojari}
 
 Začneme tím nejjednodušším, dostupným online.
 
@@ -80,7 +80,7 @@ Po zapnutí Chrome DevTools (Ctrl/Cmd+Alt+i) najeďte v záložce Inspect na ně
 
 Také [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector#Highlighting_of_UI_items) umožňuje najít kontrastní poměr ve svých nástrojích pro vývojáře. Ke dni psaní textu ovšem musíte zapnout „Accessibility Features“.
 
-Online nástrojů a rozšíření pro prohlížeče je samozřejmě jako dříví v lese. Z dalších vyjmenujme alespoň následující. 
+Online nástrojů a rozšíření pro prohlížeče je samozřejmě jako dříví v lese. Z dalších vyjmenujme alespoň následující.
 
 ### Kontrola barev {#kontrola-barev}
 
@@ -90,19 +90,22 @@ Online nástrojů a rozšíření pro prohlížeče je samozřejmě jako dřív�
 
 ### Kontrola celých stránek {#kontrola-stranek}
 
+- [Color Contrast Analyzer](https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll/related) je užitečné rozšíření Chrome pro testování webů.
 - [WAVE](http://wave.webaim.org/) ukazuje chyby v kontrastu v záložce „Contrast“ na výsledcích.
 - Nástroj [Lighthouse](lighthouse.md), o kterém jsem na Vzhůru dolů už psal.
 
 Pojďme se ale ještě mrknout na jinou sadu nástrojů, užitečnou spíše pro grafiky a designéry. Pomohou totiž už s *výběrem* barev pro připravovaný projekt.
 
-## Nástroje pro výběr barev {#nastroje-vyber}
+## Nástroje pro designéry {#nastroje-designeri}
 
 Pokud začínáte nový projekt, rozhodně je dobré na kontrast myslet už ve fázi výběru barev.
 
-Vyjdu tady opět [z přehledu Radka Pavlíčka](http://poslepu.cz/jak-vybrat-barvy-pro-graficky-navrh/) a doporučím několik nástrojů:
+Vyjdu tady kromě jiného [z přehledu Radka Pavlíčka](http://poslepu.cz/jak-vybrat-barvy-pro-graficky-navrh/) a doporučím několik nástrojů:
 
 - [Color Safe](http://colorsafe.co/) umožňuje vybírat paletu z barev, které mají dostatečný kontrast s vaší barvou pozadí. A zároveň nejsou ošklivé.
 - [Tanaguru Contrast Finder](http://contrast-finder.tanaguru.com/) zase hledá vyhovující kontrastní odstíny „vašich“ barev. Cool nástroj, který jsem několikrát použit pro korekci nedostatečných kontrastů.
 - [Paletton](http://www.paletton.com/) od Petra Staníčka je nástroj pro geeky do barev, který asi znáte. Kromě jiného umí z dostupných barev filtrovat podle nastaveného minimálního kontrastu. Mrkněte se do sekce „Tables / Export…“.
+
+Dále ještě designérům a designérkám doporučím text Lukáše Augusty [Jak navrhnout dobře čitelný a přístupný web ve Sketchi](https://medium.com/@lukasaugusta/jak-navrhnout-dob%C5%99e-%C4%8Diteln%C3%BD-a-p%C5%99%C3%ADstupn%C3%BD-web-ve-sketchi-aneb-kontrast-je-n%C3%A1%C5%A1-p%C5%99%C3%ADtel-7ce327f6bf1b), ve kterém doporučuje plugin do Sketche jménem [Stark](https://www.getstark.co/).
 
 <!-- AdSnippet -->
