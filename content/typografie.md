@@ -32,12 +32,12 @@ Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čiteln
 
 <figure>
 <img src="../dist/images/original/typografie-17.jpg" alt="">
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Zdroják.cz má bezpatkové písmo s horším kontrastem a délkou řádků kolem 120 znaků*
-</figcaption> 
+</figcaption>
 </figure>
 
-Kontrast si můžete zkontrolovat v nástroji WCAG Contrast Checker. [contrastchecker.com](http://contrastchecker.com/).
+Více o kontrastu barev píšu na Vzhůru dolů. [vrdl.cz/p/kontrast](https://www.vzhurudolu.cz/prirucka/kontrast)
 
 ### 3) Nesprávné znaky
 

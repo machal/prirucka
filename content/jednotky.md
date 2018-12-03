@@ -74,7 +74,9 @@ h1 { font-size: 2rem; }
 
 Odstavcům tímto kódem nastavím spodní vnější okraj na výšku písma. Nadpisy první úrovně budou dvojnásobně velké oproti standardní velikosti písma.
 
-<!-- AdSnippet -->
+<div class="related" markdown="1">
+- [CSS3 jednotky](css3-jednotky.md)
+</div>
 
 Používat `rem` je výhodné i z pohledu vývojáře:
 
@@ -124,7 +126,13 @@ Není. W3C `em` definovalo jinak. Jeho velikost v kořeni dokumentu je ve všech
 
 ## Media Queries: em {#media-queries}
 
+<div class="web-only" markdown="1">
+Proč nepoužít `px`? Opět kvůli možnosti zvětšování písma. A `rem`? Kvůli [chybě v Safari](https://zellwk.com/blog/media-query-units/). Proto nám zbývají `em`:
+</div>
+
+<div class="ebook-only" markdown="1">
 V textu [o Media Queries](media-queries-tipy.md) píšu, proč nepoužít `px` (opět kvůli zvětšování písma) a `rem` (kvůli chybě v Safari). Proto nám zbývají `em`:
+</div>
 
 ```css
 @media screen and (min-width: 30em) { }

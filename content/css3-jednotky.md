@@ -8,7 +8,13 @@ Rozměr, který odpovídá hodnotě `font-size` na root elementu, tedy `<html>`.
 
 Velikost písma pro `<html>` element je v prohlížečích obvykle nastavená tak, aby odpovídala `16px`.
 
+<div class="related" markdown="1">
+- [Jednotky pro tvorbu webu: Kde použít jakou?](jednotky.md)
+</div>
+
 Pokud všechny rozměry týkající se typografie (nebo klidně i layoutu) nastavíte v `rem` jednotkách, můžete si snadno zvětšit celý dokument pouhou změnou hodnoty ve vlastnosti `html { font-size: … }` a vytvářet tak elastické layouty.
+
+<!-- AdSnippet -->
 
 Podobně jako v příkladu výše můžete změnu velikosti písma celého dokumentu a s ním i elastické zvětšení layoutu provést pomocí [media query](css3-media-queries.md).
 
@@ -115,7 +121,4 @@ Je to ovšem trochu složitější:
 * Safari na iOS6+7 má hned několik chyb souvisejících s jednotkami viewportu.  Sledujte odkazy na [caniuse.com/viewport-units](https://caniuse.com/viewport-units).
 * IE8, Android Browser až do verze 4.3 a Opera Mini tyto jednotky neumí vůbec.
 
-
-
-
-
+<!-- AdSnippet -->

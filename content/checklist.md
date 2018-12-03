@@ -56,7 +56,7 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 - Správné typy inputů ve formulářích  
 <small>`<input type="email">` a další usnadňují zadávání obsahu na mobilních zařízeních. Užitečné naprosto pro všechny. [Článek na Zdrojáku](https://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/).</small>
 - Barevný kontrast je dostatečný  
-<small>Ocení nejen zrakově postižení, ale také majitelé horších displejů. Prakticky každý při horších světelných podmínkách na mobilech. Pomůže nástroj [Check My Colours](http://www.checkmycolours.com/).</small>
+<small>Ocení nejen zrakově postižení, ale také majitelé horších displejů. Prakticky každý při horších světelných podmínkách na mobilech. Článek [o kontrastu](kontrast.md).</small>
 - Hlavní obsah a navigace jsou dostupné bez Javascriptu  
 <small>Obsah vám jinak nezaindexují vyhledávače. Testujte vypnutím Javascriptu v Developer Tools.</small>
 

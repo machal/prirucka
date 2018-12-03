@@ -110,7 +110,7 @@ Znovu se zde budu odkazovat na data, která sesbíral Josh Clark. Malé tablety 
 </figcaption> 
 </figure> 
 
-Aktivní prvky, které mají být snadno dosažitelné, bychom tedy měli umísťovat ke kraji. Nejlépe pravému, vzhledem k přesile praváků v populaci. 
+Aktivní prvky, které mají být snadno dosažitelné, bychom tedy měli umísťovat ke kraji. Nejlépe pravému, vzhledem k přesile praváků v populaci.
 
 Zóny pohodlného ovládání na malých tabletech jsou dost v kontrastu s dnes běžným umísťováním málo důležitých prvků na fixní pozice ke krajím obrazovky. Ano, vy lišty z Heureka.cz nebo výzvy ke kliknutí na online chaty, dívám se právě na vás!
 

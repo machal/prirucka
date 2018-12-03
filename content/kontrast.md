@@ -80,11 +80,18 @@ Po zapnutí Chrome DevTools (Ctrl/Cmd+Alt+i) najeďte v záložce Inspect na ně
 
 Také [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector#Highlighting_of_UI_items) umožňuje najít kontrastní poměr ve svých nástrojích pro vývojáře. Ke dni psaní textu ovšem musíte zapnout „Accessibility Features“.
 
-Online nástrojů a rozšíření pro prohlížeče je samozřejmě jako dříví v lese. Z dalších vyjmenujme alespoň následující:
+Online nástrojů a rozšíření pro prohlížeče je samozřejmě jako dříví v lese. Z dalších vyjmenujme alespoň následující. 
 
+### Kontrola barev {#kontrola-barev}
+
+- [Contrast Checker](https://contrastchecker.com/)
 - [WebAIM: Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [Jonathan Snook: Colour Contrast Check](https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)
-- Kontrast kontroluje také nástroj [Lighthouse](lighthouse.md), o kterém jsem na Vzhůru dolů už psal.
+
+### Kontrola celých stránek {#kontrola-stranek}
+
+- [WAVE](http://wave.webaim.org/) ukazuje chyby v kontrastu v záložce „Contrast“ na výsledcích.
+- Nástroj [Lighthouse](lighthouse.md), o kterém jsem na Vzhůru dolů už psal.
 
 Pojďme se ale ještě mrknout na jinou sadu nástrojů, užitečnou spíše pro grafiky a designéry. Pomohou totiž už s *výběrem* barev pro připravovaný projekt.
 
