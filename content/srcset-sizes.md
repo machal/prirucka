@@ -8,7 +8,7 @@ Změna kontextu v tomto případě nejčastěji vypadá jako změna layoutu pro 
 
 Na atributech `srcset` a `sizes` je hezké, že poměrně složité rozhodování, který obrázek ve které situaci použít, necháváme na prohlížeči. 
 
-Jako autoři stránky mu jen řekneme, jaké varianty obrázku má k dispozici (`srcset`) a jak jsou veliké na jednotlivých breakpointech layoutu (`sizes`).
+Jako autoři stránky mu jen řekneme, jaké varianty obrázku má k dispozici (`srcset`) a jak jsou veliké na jednotlivých [breakpointech layoutu](breakpointy.md) (`sizes`).
 
 ## `srcset`: Sada zdrojů obrázku a jejich vlastností
 

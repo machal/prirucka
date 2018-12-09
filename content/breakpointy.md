@@ -4,7 +4,7 @@ Breakpointy jsou velikosti okna ([viewportu](viewport.md)) prohlížeče, ve kte
 
 <div class="web-only" markdown="1">
 
-Obsah:
+## Obsah článku
 
 - [Body zlomu vs. rozmezí](#breakpoint-range)
 - [Návrh breakpointů podle designu](#vymysleni)
@@ -41,6 +41,11 @@ Vypadá to hezky, ale je to konina. Různých rozlišení mobilů i tabletů je 
 
 Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
 
+<div class="related" markdown="1">
+- [Velikost okna prohlížeče](velikost-okna-css-js.md)
+- [Rozlišení displeje](rozliseni-displeje.md)
+</div>
+
 Vždy se při vymýšlení bodů zlomu snažte zaměřit na obsah a jeho rozvržení na obrazovce. Body zlomu mají vyplynout z obsahu a jeho designu.
 
 Musím tady citovat klasika Stephena Haye:
@@ -71,9 +76,9 @@ Nejčastěji se prefabrikované body zlomu designu přebírají z populárních 
 
 Lepším řešením může být nastavení podle textu Davida Gilbertsona „The 100% correct way to do CSS breakpoints“. [vrdl.in/correctbreakpoints](http://vrdl.in/correctbreakpoints)
 
-Tomu se na breakpointech Bootstrapu nelíbily dvě věci. 
+Tomu se na breakpointech Bootstrapu nelíbily dvě věci.
 
-Za prvé – nedělí uživatele do rovnoměrných skupin a obecně spíše vycházejí ze šířky obrazovek existujících zařízení než z dat od uživatelů. 
+Za prvé – nedělí uživatele do rovnoměrných skupin a obecně spíše vycházejí ze šířky obrazovek existujících zařízení než z dat od uživatelů.
 
 A ta druhá věc? Není dobré udělat z konkrétního rozlišení konkrétního zařízení breakpoint. Zde se bavíme hlavně o hodnotě 768 CSS pixelů pro bod zlomu „sm“. Určitě jste to sami zažili: Designérka řekne „pro breakpoint 768…“ a vývojář rovnou píše kód zaměřující se *přesně* na 768 pixelů. Jenže designérka myslela 768 pixelů a výše. A to mohla myslet také rozmezí mezi 768 a 992 pixely, že ano?
 
@@ -131,6 +136,10 @@ Z tabulky můžeme například vyčíst, že na projektu *Vzhůru dolů* je hodn
 
 Poznámka k těmto dvěma projektům – ve skutečnosti mají nastaveny body zlomu trochu jinak, podle designu. Zde je uvádím proto, že se výrazně liší v cílové skupině a při hypotetické situaci nasazení univerzálních breakpointů je hezky vidět, že uživatele nerozdělují rovnoměrně a že bychom v dalším kroku museli body zlomu upravovat.
 
+<div class="related" markdown="1">
+- [Google Analytics: S jakými viewporty navštěvují uživatelé můj web?](viewport-google-analytics.md)
+</div>
+
 Pro větší projekty vám velmi doporučím vytáhnout si tahle data o rozlišeních obrazovky vašich uživatelů. Pomůže vám to minimálně prioritizovat intenzitu práce pro jejich skupiny odvozené z rozmezí šířek obrazovky.
 
 Tím se dostáváme k dalšímu zajímavého bodu – jak breakpointy pojmenovávat.
@@ -177,8 +186,22 @@ $md-breakpoint: 600px;
 ```
 
 <div class="ebook-only" markdown="1">
+
 V dalším textu se podíváme na to, jaké jsou možnosti implementace breakpointů a rozmezí v kódu.
+
 </div>
 
+<div class="web-only" markdown="1">
+
+Pojďme si text shrnout do několika dobře míněných rad:
+
+1. Rozlišujte breakpointy (body zlomu) a rozmezí platnosti designu.
+2. Nefixujte se na rozlišení různých zařízení.
+3. Z obsahu vyplývá design, z designu vyplývají breakpointy.
+4. Snažte se vytvářet breakpointy na míru projektu. Podle obsahu a dat o používaných velikostech okna.
+5. Pojmenovávejte raději abstraktně (*xs*) než s vazbou na zařízení (*tablet*).
+6. Rozlišujte globální breakpointy (pro celý projekt) a lokální (pro komponenty).
+
+</div>
 
 <!-- AdSnippet -->

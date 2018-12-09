@@ -38,7 +38,7 @@ Kontejnerů můžete mít na stránce samozřejmě víc. V ukázce je porovnán�
 
 <!-- AdSnippet -->
 
-Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden bod breakpoint pro mobilní zařízení. Psal jsem o tom v článku [o chystaných novinkách](https://www.vzhurudolu.cz/blog/39-bootstrap-4#nova-mrizka-a-flexbox) ve čtyřce.
+Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden [breakpoint](breakpointy.md) pro mobilní zařízení. Psal jsem o tom v článku [o chystaných novinkách](https://www.vzhurudolu.cz/blog/39-bootstrap-4#nova-mrizka-a-flexbox) ve čtyřce.
 
 V dalších ukázkách kódu už budu `.container` pro zjednodušení vynechávat.
 

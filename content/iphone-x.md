@@ -52,7 +52,7 @@ V režimu na šířku vám iPhone X zobrazí stránku v plné šířce 812 [CSS 
 
 <!-- AdSnippet -->
 
-Na obrázku je vidět ještě jeden krok, který jsem musel udělat v případě layoutu Vzhůru dolů. Posunul jsem breakpoint roztažení stránky na plnou šířku z `768px` na `813px`. U ostatních zařízení je to jedno, ale na iPhone X vypadá layout bez okrajů lépe.
+Na obrázku je vidět ještě jeden krok, který jsem musel udělat v případě layoutu Vzhůru dolů. Posunul jsem [breakpoint](breakpointy.md) roztažení stránky na plnou šířku z `768px` na `813px`. U ostatních zařízení je to jedno, ale na iPhone X vypadá layout bez okrajů lépe.
 
 
 ## Weby s různobarevnými prvky bez ochranné zóny {#weby-bez-zony}

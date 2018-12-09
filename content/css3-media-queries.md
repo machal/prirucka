@@ -2,7 +2,7 @@
 
 Jde o podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
 
-Dejme si rychlý příklad: 
+Dejme si rychlý příklad:
 
 ```css
 h1 { font-size: 2em }
@@ -24,15 +24,14 @@ Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*
 
 <figure>
 <img src="../dist/images/original/media-query.jpg" alt="">
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování podmínky vyloučí starší Internet Explorery*
-</figcaption> 
+</figcaption>
 </figure>
-
 
 ## Body zlomu
 
-V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), což je hodnota vlastnosti média. O „breakpointech“ mluvíme jako o sadě hodnot pro konkrétní web nebo systém designu. Knihovna Bootstrap má například body zlomu přednastavené takto: 
+V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), což je hodnota vlastnosti média. O „breakpointech“ mluvíme jako o sadě hodnot pro konkrétní web nebo systém designu. Knihovna Bootstrap má například body zlomu přednastavené takto:
 
 - extra small (šířka okna do `767px`)
 - small (768–991)
@@ -41,7 +40,11 @@ V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), co�
 
 Pro konkrétní projekty samozřejmě nebudou tyto konkrétní hodnoty použitelné. Body zlomu je vždy lepší definovat podle obsahu konkrétních komponent než takto centrálně. Body zlomu Boostrapu berte jen jako ilustraci pojmu.
 
+<div class="web-only ebook-vdwd-only" markdown="1">
+
 [Tvorbou breakpointů](breakpointy.md) z pohledu designéra se zabývám ve zvláštním textu.
+
+</div>
 
 ## Minimální nebo maximální výška a šířka
 

@@ -2,7 +2,7 @@
 
 Data o velikostech okna (nebo viewportu) dodávají na rozdíl od [rozlišení displeje](rozliseni-displeje.md) do [responzivního designu](https://www.vzhurudolu.cz/responzivni-design) informaci, bez které se nedá rozumně vymýšlet design webu. 
 
-Jde o nejdůležitější uživatelský kontext, kterému se weby přizpůsobují. Mají vliv na tvorbu breakpointů, hojně se s nimi pracuje [v CSS a JavaScriptu](velikost-okna-css-js.md).
+Jde o nejdůležitější uživatelský kontext, kterému se weby přizpůsobují. Mají vliv na [tvorbu breakpointů](breakpointy.md), hojně se s nimi pracuje [v CSS a JavaScriptu](velikost-okna-css-js.md).
 
 Jenže z veřejně dostupných dat tady vyjít nemůžeme: [Gemius](http://ranking.gemius.com/cz/), [Statcounter](http://gs.statcounter.com/) nebo i [Google Analytics](google-analytics-vyvojari.md) standardně nabízejí jen přehled pro rozlišení obrazovky, který je webařům tak nějak *na pytel*.
 
