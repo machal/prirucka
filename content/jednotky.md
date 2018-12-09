@@ -168,7 +168,7 @@ Raději připomínám, že se vždy počítají ze šířky nejbližšího rodi�
 
 Použitelných jednotek pro layout je ale více:
 
-- Procenta nebo `vw` se roztahují podle šířky okna, `vh` podle jeho šířky.
+- Procenta nebo `vw` se roztahují podle šířky okna, `vh` podle jeho výšky.
 - `rem` a `em` podle velikosti písma.
 - Ve flexboxu je možné používat také absolutní jednotky (`flex: 1`).
 - V CSS Grid zase takzvané podílové jednotky (`grid-template-columns: 3fr 1fr`).
@@ -225,7 +225,7 @@ Raději se také sami sebe zeptejte, zda vám nevadí nic z následujícího sez
 - Uživatelům, kteří si změnili písmo v systému nebo prohlížeči (na Archive.org asi 3 %), se jejich nastavení na vašem webu neprojeví. Zůstává jim možnost zoomovat celou stránku.
 - Změna velikosti písma nebude správně reflektována v Media Queries. <span class="ebook-only" markdown="1">(Řešíme v [tipech k Media Queries](media-queries-tipy.md)).</span>
 - V návrhu designu se nepočítá s elastickou typografií, zvětšující se podle viewportu.
-- Designér nebo designérka rovněž nepočítali s pružnou změnou velikosti komponenty podle velikosti písma rodiče ani s globální změnou velikosti písma v určitých breakpointech designu.
+- Designér nebo designérka rovněž nepočítali s pružnou změnou velikosti komponenty podle velikosti písma rodiče ani s globální změnou velikosti písma v určitých [breakpointech designu](breakpointy.md).
 
 <div class="ebook-only" markdown="1">
 Způsob práce při návrhu designu, který v knížce ukazuji, by v mnoha položkách tohoto kontrolního seznamu úpěl, skřípal nebo přímo selhal. Budeme se proto v dalších textech `px` spíše vyhýbat.
