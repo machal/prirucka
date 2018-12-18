@@ -41,7 +41,8 @@ Vypadá to hezky, ale je to konina. Různých rozlišení mobilů i tabletů je 
 
 Takový Samsung Nexus 10 má rozlišení na delší straně v hodnotě 1280 pixelů, takže podmínku nesplní. Splní ji naopak mnoho chytrých telefonů jako třeba iPhone 6 v režimu na šířku se 736 pixely. Media Queries proto k detekci zařízení vůbec nepoužívejte.
 
-<div class="related" markdown="1">
+<div class="related web-only" markdown="1">
+- [Breakpointy v CSS](breakpointy-css.md)
 - [Velikost okna prohlížeče](velikost-okna-css-js.md)
 - [Rozlišení displeje](rozliseni-displeje.md)
 </div>

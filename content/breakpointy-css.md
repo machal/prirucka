@@ -4,6 +4,10 @@ Ukládání breakpointů a rozmezí do proměnných preprocesoru velmi doporuču
 
 Příklady níže využívají CSS preprocesoru Sass v SCSS syntaxi. Ale podíváme se také na PostCSS (a CSSnext) nebo očekávaný vývoj specifikací.
 
+<div class="related web-only" markdown="1">
+- [Jak nastavovat breakpointy?](breakpointy.md)
+</div>
+
 <div class="web-only" markdown="1">
 
 Možností, jak pracovat s breakpointy, je více:
@@ -12,7 +16,7 @@ Možností, jak pracovat s breakpointy, je více:
 - [Mixiny](#mixiny)
 - [Knihovna Sass MQ](#sass-mq)
 - [Media Queries Level 4](#media-queries-4)
-- [PostCSS a CSSnext]({#postcss)
+- [PostCSS a CSSnext](#postcss)
 
 </div>
 
@@ -148,5 +152,11 @@ Můj závěr je tedy jasný:
 
 - Pokud můžete, využijte preprocesor a Sass MQ nebo podobnou malou knihovnu.
 - Těšte se na Media Queries čtvrté generace.
+
+<div class="web-only">
+
+Máte ještě jiné tipy ke správně breakpointů? Napište mi nebo přidejte komentář.
+
+</div>
 
 <!-- AdSnippet -->
