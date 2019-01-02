@@ -90,9 +90,9 @@ Vlastnosti `grid-template-columns` a `grid-template-rows`. Akceptují různé je
   grid-template-columns: 25% 1fr 25%;
   grid-template-rows: 100px 1fr 100px;
 }
-```  
+```
 
-Vytvoří to layout, kde první a poslední sloupec zabírá čtvrtinu šířky rodiče. První a poslední řádek pak `100px` z jeho výšky. Prostřední pak zbytek. Je to vidět v živé ukázce: 
+Vytvoří to layout, kde první a poslední sloupec zabírá čtvrtinu šířky rodiče. První a poslední řádek pak `100px` z jeho výšky. Prostřední pak zbytek. Je to vidět v živé ukázce:
 
 <iframe height='300' scrolling='no' title='CSS Grid: Combining units in template-columns/rows' src='//codepen.io/machal/embed/QmqOeY/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/QmqOeY/'>CSS Grid: Combining units in template-columns/rows</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
