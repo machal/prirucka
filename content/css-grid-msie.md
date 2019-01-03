@@ -1,33 +1,68 @@
-# Grid v MSIE 11
+# CSS Grid v Internet Exploreru: Jde to, alespoň z velké části
 
 „Neumí to Explorer“ je na prvních devíti místech z 10 důvodů, proč lidé ještě na začátku roku 2019 nepoužívají [CSS Grid](css-grid.md).
 
+## Obsah článku {#obsah}
+
+- [Proč se tím zabývat?](#proc)
+- [Podpora Gridu](#podpora)
+- [Demo](#demo)
+- [Autoprefixer: na co nezapomenout?](#autoprefixer)
+- [Autoprefixer: podporované vlastnosti](#autoprefixer-vlastnosti)
+
 Asi už víte, že *něco* z gridu v Exploreru funguje. Ale taky asi víte, že náš „nejoblíbenější“ prohlížeč nepodporuje důležité vlastnosti jako je `grid-gap` (mezera mezi buňkami), `grid-template-areas` (pojmenované oblasti) nebo třeba automatické umísťování prvků do mřížky.
 
-Na vědomí se tímto dává, že díky [zásadním aktualizacím](https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/) v Autoprefixeru je možné první dvě vcelku pokojně začít používat ve všech prohlížečích. A automatické umísťování? Tak trochu jde taky. Ale to je složitější, však uvidíte.
+<!-- AdSnippet -->
 
-Pojďme ale Gridu v MSIE, prohlížeči který stále většina zdejších webařů musí podporovat, pořádně probrat v tomhle textu.
+Na vědomí se tímto dává, že díky [zásadním aktualizacím](https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/) v [Autoprefixeru](https://github.com/postcss/autoprefixer) je možné první dvě vcelku pokojně začít používat ve všech prohlížečích. A automatické umísťování? Tak trochu jde taky. Ale to je složitější, však uvidíte v dalším textu.
 
 ## Proč se tím zabývat? {#proc}
 
 FAQ pro nedůvěřivé frontendové občany a občanky:
 
-*„Na Explorer se můžu víte co.“* — Pravděpodobně nemůžete. IE 10 asi už mizí v prachu dějin, na většině projektů má ale velmi silné zastoupení jedenáctá verze Exploreru. V průměru to může být mezi [10-15 procenty uživatelů](prohlizece.md).
+*„Na Explorer se můžu víte co.“* — Pravděpodobně nemůžete. IE 10 už asi všude zmizel v prachu dějin, na většině projektů má ale velmi silné zastoupení jedenáctá verze Exploreru. V průměru to může být mezi [10-15 procenty uživatelů](prohlizece.md).
 
 *„Explorer to neumí.“* – Umí. Byl to první prohlížeč, který CSS Grid naimplementoval.
 
 *„Explorer toho z Gridu umí děsně málo.“* – Teď už ne, čtete dál.
 
-*„Udělám to flexboxem a hotovo.“* – Ano, spoustu layoutů vyřešíte flexboxem. Jenže flexbox nefunguje dobře u layoutů, kdy potřebujete vnutit jednotnou mřížku a neohlížet se na obsah. CSS Grid vám ušetří spoustů drbání levou rukou za pravým uchem. A možnosti jeho využití se teď díky Autoprefixeru rozšířily.
+*„Udělám to flexboxem a hotovo.“* – Ano, spoustu situací vyřešíte flexboxem. Jenže [flexbox](css3-flexbox.md) nefunguje dobře u rozvržení, u nichž potřebujete prvkům vnutit jednotnou mřížku a neohlížet se na jejich obsah. CSS Grid vám často ušetří drbání levou rukou za pravým uchem. Prostě napíšete méně kódu. A možnosti jeho využití se teď díky Autoprefixeru rozšířily.
 
 Pojďme dát Gridu novou šanci.
 
-## Třísloupcové demo {#demo}
+## Podpora Gridu: Internet Explorer versus zbytek světa {#podpora}
+
+Grid aktuálně podporují [úplně všechny v Česku používané prohlížeče](https://caniuse.com/#feat=css-grid).
+
+Ale ano, jisté rozdíly mezi IE a ostatními zde jsou. Z těch důležitých například napráskejme, že Internet Explorer nativně neumí:
+
+- automatické umísťování prvků do mřížky („auto-placement“),
+- pojmenovávání oblastí mřížky (vlastnosti jako `grid-template-areas`),
+- mezery mezi buňkami mřížky (např. `grid-gap`).
+
+Velká část uvedeného pro vás ale přečtením tohodle dlouhého textu přestane platit.
+
+<!-- AdSnippet -->
+
+Naopak se málo ví, že stařičký IE nativně podporuje:
+
+- nějakou formu implicitní (nepředdefinované) mřížky,
+- funkci `repeat()`, jen jinak: `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`,
+- další skvělou funkci – `minmax()`,
+- klíčová slova `min-content` a `max-content`.
+
+To myslím není zlé. Více je v textu [CSS Grid in IE: Debunking Common IE Grid Misconceptions](https://css-tricks.com/css-grid-in-ie-debunking-common-ie-grid-misconceptions/) na CSS-Tricks.
+
+Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“. Jejich příčinou je rychlá implementace Gridu v ranné fázi specifikace. Ta se ovšem časem změnila, ale Grid v Exploreru zůstal v původní variantě.
+
+## Třísloupcové demo aneb „Jak to kurnikšopa funguje?“ {#demo}
+
+Podívejme se na jednoduchý layout, u kterého si ukážeme jak přesně Autoprefixer zařídí fungování Gridu v Internet Exploreru.
 
 <iframe height='317' scrolling='no' title='CSS Grid Basics demo: IE support with Autoprefixer ' src='//codepen.io/machal/embed/BvJjdz/?height=317&theme-id=light&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/BvJjdz/'>CSS Grid Basics demo: IE support with Autoprefixer </a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-Jde o třísloupcový layout definovaný následujícím způsobem:
+Jde o rozvržení definované následujícím způsobem:
 
 ```css
 .container {
@@ -38,8 +73,6 @@ Jde o třísloupcový layout definovaný následujícím způsobem:
 }
 ```
 
-Teď to nejlepší. Tenhle kód nám Autoprefixer přeloží tak, aby v pohodě fungoval v Internet Exploreru 11. Včetně mezer (`-gap`) a pojmenovaných oblastí (`-areas`), vlastností, které tenhle pravěký prohlížeč neumí.
-
 Pro zájemce polopaticky:
 
 - `display: grid` asi vysvětlovat nemusím. Definujeme prostě kontejner mřížky.
@@ -47,7 +80,9 @@ Pro zájemce polopaticky:
 - `grid-column-gap: 0.5em` je zápis pro mezeru mezi sloupci layoutu.  
 - `grid-template-areas` je šablona pojmenování oblastí pro následné využití v CSS.
 
-### Proč takhle složitě? Protože Autoprefixer!
+Teď to nejlepší. Tenhle kód nám Autoprefixer přeloží tak, aby v pohodě fungoval v Internet Exploreru 11. Včetně mezer (`-gap`) a pojmenovaných oblastí (`-areas`). Tedy vlastností, které tenhle pravěký prohlížeč neumí.
+
+### Proč takhle složitě? Protože Autoprefixer
 
 Vy znalejší jste si jistě všimli, že pro takto jednoduchý layout by bylo zbytečné definovat šablonu pojmenování oblastí – `grid-template-areas`. To je ale oběť na oltář podpory v Internet Exploreru.
 
@@ -69,7 +104,7 @@ Dalším kódem už jen umístíme sloupečky do pojmenovaných oblastí:
 
 A šup! V další fázi se můžeme kochat kódem, který vypotí Autoprefixer.
 
-## Kód produkovaný Autoprefixerem
+### Kód produkovaný Autoprefixerem
 
 Nejprve rodič layoutu:
 
@@ -83,7 +118,7 @@ Nejprve rodič layoutu:
 Následuje samozřejmě výše uvedený kód pro moderní prohlížeče. Ten pro zjednodušení vynechávám. Opět ale oba řádky vysvětlím:
 
 - `display: -ms-grid` – prefixovaný zapínač Gridu v Exploreru.
-- `-ms-grid-columns: 1fr 0.5em 3fr 0.5em 1fr` – magie. Autoprefixer spojil definici mřížky s definicí mezer (`grid-column-gap`), abychom ty (sakramentsky návykové) díry v layoutu mohli využívat i v Exploreru, který žádou z „gap vlastností“ nepodporuje.
+- `-ms-grid-columns: 1fr 0.5em 3fr 0.5em 1fr` – magie. Autoprefixer spojil definici mřížky s definicí mezer (`grid-column-gap`), abychom ty (sakramentsky návykové) díry v layoutu mohli využívat i v Exploreru, který žádnou z „gap vlastností“ nepodporuje.
 
 Kód prvků layoutu, jež Autoprefixer vyrobí pro potřeby Exploreru, vypadá takhle:
 
@@ -104,19 +139,21 @@ Kód prvků layoutu, jež Autoprefixer vyrobí pro potřeby Exploreru, vypadá t
 }
 ```
 
-Ano, IE totiž neumí ani žádnou z „area vlastností“. Autoprefixer tak „ručně“ spočítá umístění do patričních sloupečků.
+Ano, IE totiž neumí ani žádnou z „area vlastností“. Autoprefixer tak „ručně“ spočítá umístění do patřičných sloupečků.
 
-Pokud vám nesedí počty, protože jsme původně měli jen třísloupcový layout, pak upozorňuji, že Autoprefixer uměle přidává sloupečky, abychom mohli používat mezery `-gap`.
+Pokud vám nesedí počty sloupců u vlastnosti `-ms-grid-column`, pak raději zopakuji, že Autoprefixer uměle přidává sloupečky, abychom mohli používat mezery `-gap`.
 
 Demo jsme snad rozebrali do posledního kamínku. Tady je ještě v celé kráse: [cdpn.io/e/BvJjdz](https://codepen.io/machal/pen/BvJjdz).
 
 ## Autoprefixer: Na co nesmíte zapomenout {#autoprefixer-nastaveni}
 
+Nejprve se ujistěte, zda vaše deklarace podpory prohlížečů ([Browserslist](https://github.com/browserslist/browserslist)) zahrnuje IE 11 nebo případně také desátou verzi.
+
 V Autoprefixeru si povolte generování prefixů pro mřížku – `grid: true`.
 
 V mém [demu na Githubu](https://github.com/machal/css-grid-demos/blob/master/gulpfile.js#L12-L20) to mám například pro Gulp takto:
 
-```javascript
+```js
 gulp.task('autoprefixer', () =>
   {
     return gulp.src('src/css/*.css')
@@ -145,13 +182,15 @@ Pozor také na správné verze používaných nástrojů:
 
 Občas se může hodit vypnutí generování prefixů v konkrétním místě kódu. 
 
-Pro ten účel použijte řídící komentáře `/* autoprefixer: off */` nebo `/* autoprefixer: ignore next */`.
+Pro ten účel použijte řídící komentáře `/* autoprefixer: off */` nebo `/* autoprefixer: ignore next */` či `/* autoprefixer grid */`. 
+
+Více je v dokumentaci: [github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer).
 
 ## Co Autoprefixer umí? {#autoprefixer-vlastnosti}
 
-Následuje sumář aktuálně podporovaných a nepodprovaných vlastností Gridu. 
+Následuje sumář aktuálně podporovaných a nepodporovaných vlastností Gridu.
 
-Dobrá zpráva: Těch druhých je poměrně málo. Špatná zpráva: Má to svoje mouchy.
+Dobrá zpráva: Těch druhých je poměrně málo.
 
 ### Umí: Definování šablony mřížky {#autoprefixer-vlastnosti-sablona}
 
@@ -167,7 +206,7 @@ Dobrá zpráva: Těch druhých je poměrně málo. Špatná zpráva: Má to svoj
 
 ### Částečně umí: Umístění položky do mřížky {#autoprefixer-vlastnosti-sablona}
 
-Předklad následujících vlastností funguje, ale nesmíte v nich použít záporná čísla:
+Překlad následujících vlastností funguje, ale nesmíte v nich použít záporná čísla:
 
 - `grid-row-start` se přeloží do `-ms-grid-row`. Pokud chcete použít `span`, musíte definovat `grid-row-end`.
 - `grid-column-start` se přeloží do `-ms-grid-column`. Pokud chcete použít `span`, musíte definovat `grid-row-end`.
@@ -178,7 +217,7 @@ Předklad následujících vlastností funguje, ale nesmíte v nich použít zá
 
 ### Částečně umí: Definice pojmenovaných oblastí {#autoprefixer-vlastnosti-oblasti}
 
-Následující vlastnost funguje, ale každý potomek gridu umí mít unikátní jméno oblasti:
+Následující vlastnost funguje, ale každý potomek gridu musí mít unikátní jméno oblasti:
 
 - `grid-area` - Autoprefixer z oblastí udělá explicitní zápis pomocí `grid-row-end` a `grid-column-end`.
 
@@ -190,13 +229,13 @@ Autoprefixer namísto `-gap` vygeneruje extra řádky nebo sloupečky. Fajn ře�
 
 ### Neumí vůbec: Vlastnost grid a automatické umístění {#autoprefixer-vlastnosti-neumi}
 
+Tady máte zatím smůlu:
+
 - `grid` je zkratka pro `grid-template-rows`, `grid-template-columns` a `grid-template-areas`. [Doporučuje](https://github.com/postcss/autoprefixer/issues/1023) se namísto ní použí `grid-template`.
 - Automatické umístění: `grid-auto-columns`, `grid-auto-rows` nebo `grid-auto-flow`.
 
-## Pozor na příkazovou řádku {#postcss-cli}
+[Automatické umísťování](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie) ale u jednodušších layoutů udělat jde. Počkejte si na další článek.
 
-Během hrátek s Autoprefixerem a Gridem jsem narazil na nefungující podporu na příkazové řádce.
+<!-- AdSnippet -->
 
-Dobře to funguje v Gruntu [a Gulpu](https://github.com/machal/css-grid-demos/blob/master/gulpfile.js#L12-L20). 
-
-Nepovedlo se mi přidávat prefixy přes [příkazovou řádku](https://github.com/machal/css-grid-demos/blob/master/package.json#L29) (používá [postcss-cli](https://github.com/postcss/postcss-cli)).
+Tak co? Dáte [Gridu](css-grid.md) novou šanci?
