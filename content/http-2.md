@@ -2,14 +2,16 @@
 
 HTTP/2 je nová verze protokolu, která dokáže urychlit načítání vašich webů.
 
-Je prakticky plně podporovaná na straně prohlížečů i serverového software, takže vám nic nebrání ji nasadit, což vám vřele doporučuji.
+<div class="toc web-only" markdown="1">
 
-## Obsah článku {#toc}
-
-- [Co je HTTP/2, rozdíly od HTTP/1.1](#rozdily)
+- [Co je HTTP/2, odlišnosti od HTTP/1.1](#rozdily)
 - [Jak HTTP/2 nasadit](#jak-nasadit)
 - [Optimalizace frontendu](#frontend)
 - [Podpora: Prohlížeče a servery](#podpora)
+
+</div>
+
+Je prakticky plně podporovaná na straně prohlížečů i serverového software, takže vám nic nebrání ji nasadit, což vám vřele doporučuji.
 
 Frontendu webu se přechod na HTTP/2 dotkne i tak, že přestává být potřeba slučovat více vývojářských souborů do jednoho distribučního. S frontendem pak je možné pracovat daleko kreativněji.
 
@@ -109,19 +111,24 @@ Pokud máte vlastní nebo pronajatý server, nebude problém *zapnutí* HTTP/2 d
 
 V lednu 2019 jsem prošel velké české hostingy a zajímal se, zda novou verzi protokolu nabízejí svým zákazníkům.
 
-- Active24 - [ano](https://www.active24.cz/webhosting/auto-ssl-a-ssl-certifikaty)
-- Blueboard – [ano](https://twitter.com/hostingBB/status/849263004751417344) 
-- Český hosting – [ano](https://www.cesky-hosting.cz/webhosting/parametry-webhostingu/)
-- Forpsi – nenašel jsem
-- G-hosting – [ano](https://www.facebook.com/GHosting.cz/posts/u%C5%BE-n%C3%A1m-funguje-php-72-http2-pro-nov%C3%BD-webserver-pojmenovan%C3%BD-debb-m%C3%A1me-i-p%C4%9Bknou-ip/2060349573980736/)
-- Gigaserver – nenašel jsem
-- Ignum – nenašel jsem
-- ONEBit – [ano](https://www.onebit.cz/cz/webhosting/) 
-- Savana – [ano](https://www.savana.cz/napoveda/ostatni/ostatni/aktivace-http2/)
-- Stable.cz – [ano](https://www.stable.cz/servery/technologie/)
-- Tele3 – [ano](https://www.tele3.cz/)
-- Web4You - nenašel jsem
-- Wedos – [ano](https://hosting.wedos.com/cs/newsletters/2016/05/01.html)
+| Hosting    | Podporuje HTTP/2? |
+|:-----------|:-----------------:|
+|  Active24  | [ano](https://www.active24.cz/webhosting/auto-ssl-a-ssl-certifikaty) |
+| Blueboard | [ano](https://twitter.com/hostingBB/status/849263004751417344) |
+| Český hosting | [ano](https://www.cesky-hosting.cz/webhosting/parametry-webhostingu/) |
+| Forpsi | nenašel jsem |
+| G-hosting | [ano](https://www.facebook.com/GHosting.cz/posts/u%C5%BE-n%C3%A1m-funguje-php-72-http2-pro-nov%C3%BD-webserver-pojmenovan%C3%BD-debb-m%C3%A1me-i-p%C4%9Bknou-ip/2060349573980736/) |
+| Gigaserver | nenašel jsem |
+| Ignum | nenašel jsem |
+| ONEBit | [ano](https://www.onebit.cz/cz/webhosting/) |
+| Nethost | nenašel jsem |
+| Savana | [ano](https://www.savana.cz/napoveda/ostatni/ostatni/aktivace-http2/) |
+| Stable.cz | [ano](https://www.stable.cz/servery/technologie/) |
+| Tele3 | [ano](https://www.tele3.cz/) |
+| Web4U | [nejspíš ano](https://www.facebook.com/VzhuruDolu/posts/2115245728591560?comment_id=2115347885248011&comment_tracking=%7B%22tn%22%3A%22R%22%7D) |
+| Wedos | [ano](https://hosting.wedos.com/cs/newsletters/2016/05/01.html) |
+
+Z méně známých hostingů podle vašich komentářů pak nový protokol podporují: [Hosting90](https://www.hosting90.cz/), [VS hosting](https://www.vshosting.cz/), [Váš hosting](https://www.vas-hosting.cz/), [Websupport](https://www.websupport.sk/blog/2016/01/nasadili-sme-rychlejsie-a-bezpecnejsie-http2/) a spousta dalších.
 
 Jak vidíte, ne všechny hostingy podporu nabízejí nebo se jí prostě nechlubí. Budu rád, když mi stránku pomůžete aktualizovat.
 
