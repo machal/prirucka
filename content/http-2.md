@@ -2,12 +2,12 @@
 
 HTTP/2 je nová verze protokolu, která dokáže urychlit načítání vašich webů.
 
-<div class="toc web-only" markdown="1">
+<div class="toc web-only f-6" markdown="1">
 
-- [Co je HTTP/2, odlišnosti od HTTP/1.1](#rozdily)
-- [Jak HTTP/2 nasadit](#jak-nasadit)
+- [Co je HTTP/2](#rozdily)
+- [Jak nasadit](#jak-nasadit)
 - [Optimalizace frontendu](#frontend)
-- [Podpora: Prohlížeče a servery](#podpora)
+- [Podpora](#podpora)
 
 </div>
 
