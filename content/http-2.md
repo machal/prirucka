@@ -1,6 +1,6 @@
 # Rychlý protokol HTTP/2: S nasazením na weby už na nic nečekejte
 
-HTTP/2 je nová verze protokolu, která dokáže urychlit načítání vašich webů.
+HTTP/2 je nová verze protokolu, díky které můžeme urychlit načítání vašich webů. Možná i hodně.
 
 <div class="toc web-only f-6" markdown="1">
 
