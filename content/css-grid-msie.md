@@ -28,6 +28,10 @@ FAQ pro nedůvěřivé frontendové občany a občanky:
 
 *„Udělám to flexboxem a hotovo.“* – Ano, spoustu situací vyřešíte flexboxem. Jenže [flexbox](css3-flexbox.md) nefunguje dobře u rozvržení, u nichž potřebujete prvkům vnutit jednotnou mřížku a neohlížet se na jejich obsah. CSS Grid vám často ušetří drbání levou rukou za pravým uchem. Prostě napíšete méně kódu. A možnosti jeho využití se teď díky Autoprefixeru rozšířily.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=JjmXOB01Yq0">CSS Grid v Internet Exploreru</a> ~ Základy a krátké demo podle obsahu článku.
+</p>
+
 Pojďme dát Gridu novou šanci.
 
 ## Podpora Gridu: Internet Explorer versus zbytek světa {#podpora}

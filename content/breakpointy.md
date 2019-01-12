@@ -14,6 +14,10 @@ Breakpointy jsou velikosti okna ([viewportu](viewport.md)) prohlížeče, ve kte
 
 </div>
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=6sdcrsotee4">Breakpointy</a> ~ Stručně podle obsahu článku.
+</p>
+
 ## Body zlomu a rozmezí: Bavme se o dvou různých věcech {#breakpoint-range}
 
 Všímám si, že se weboví lidé občas neshodnou v definici „breakpointu“.

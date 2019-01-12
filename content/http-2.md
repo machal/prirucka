@@ -13,6 +13,10 @@ HTTP/2 je nová verze protokolu, díky které můžeme urychlit načítání va�
 
 Je prakticky plně podporovaná na straně prohlížečů i serverového software, takže vám nic nebrání ji nasadit, což vám vřele doporučuji.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=ze0wu-HLRKQ">HTTP/2</a> ~ K čemu je to dobré pro webaře?
+</p>
+
 Frontendu webu se přechod na HTTP/2 dotkne i tak, že přestává být potřeba slučovat více vývojářských souborů do jednoho distribučního. S frontendem pak je možné pracovat daleko kreativněji.
 
 ## Co je HTTP/2 a jak se liší od HTTP/1.1? {#rozdily}

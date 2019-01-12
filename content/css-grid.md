@@ -10,6 +10,9 @@ Nevýhoda je v aktuální podpoře, ale to bude brzy vyřešeno. V době psaní 
 
 Problém je jen v Internet Exploreru 11, který podporuje jen starší verzi Gridu, ale i tam je mřížku díky Autoprefixeru [možné hezky použít](css-grid-msie.md).
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=9M5RGjlAkeY">CSS Grid</a> ~ Úplné základy ve videu.
+</p>
 
 ## Jednoduchý příklad {#priklad}
 
