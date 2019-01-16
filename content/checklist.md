@@ -68,6 +68,10 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 <small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat jako z reklamy na zubní pastu, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
 - Tisková verze stránky  
 <small>Je potřeba  hlavně zajistit vypnutí pro tisk nepotřebných částí. [Článek na Je čas](http://jecas.cz/tisk "Tisk stránky").</small>
+- Kontexty blokovačů reklamy  
+<small>Neblokuje Adblock i nevinné třídy z vašeho CSS? [Tweet](https://twitter.com/machal/status/1084773644331597824).</small>
+- Kontexty bez CSS  
+<small>Není to časté, ale i bez stylů mohou vaši stránku lidé vidět. [Článek](https://www.vzhurudolu.cz/prirucka/weby-bez-css).</small>
 
 ## Ostatní
 
