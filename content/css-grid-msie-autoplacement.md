@@ -49,4 +49,19 @@ Pro něj nám ale Autoprefixer přidá pseudotřídy:
 
 Neřeší to všechno, ale máme tady o jeden silný důvod navíc použít [CSS Grid](https://www.vzhurudolu.cz/prirucka/css-grid).
 
+## Co potřebujete?
+
+V předchozím textu jsem psal [o podmínkách](css-grid-msie.md#autoprefixer-nastaveni) pro nastavení podpory MSIE. Stručně to zopakuji:
+
+- Potřebujete Gulp, Grunt, skripty v NPM nebo podobné nástroje.
+- V Browserslist, seznamu podporovaných prohlížečů, specifikovat také IE 11, případně i desátou verzi.
+- Zavolat Autoprefixer s parametrem `grid: 'autoplace'`, který zařídí podporu právě pro automatické umístění.
+
+Hotové a funkční nastavení je [v Gulpfile.js](https://github.com/machal/css-grid-demos/blob/master/gulpfile.js) mého demonstračního repozitáře. 
+
+<small markdown="1">
+Mimochodem, řešení v [NPM skriptu](https://github.com/machal/css-grid-demos/blob/master/package.json#L29) tam zatím nefunguje. Stejně tak se mi nedaří zařídit podporu autoplacementu [v Codepenu](https://codepen.io/machal/pen/aPRVOV).
+</small>
+
+## Pozor na výjimky
 
