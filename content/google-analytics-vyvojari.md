@@ -127,7 +127,7 @@ Vždy analyzujte větší časový úsek. Při porovnávání období také vedl
 
 V rámci jedné služby si můžete nastavit různé *Výběry dat*. Zde si můžete sestavit přehledy, provést jiná nastavení, přičemž výchozí výběr dat zůstane zachován. Můžete si pak třeba:
 
-* nastavit jiné cíle – třeba konkrétní rychlost načtení stránky
+* nastavit jiné cíle – třeba konkrétní [rychlost načtení](rychlost-nacteni.md) stránky
 * použít jiné poznámky, filtrace, upozornění
 * nastavit uživatele pouze do vymezeného výběru dat
 

@@ -4,7 +4,7 @@ Vlastně nic. Taková věc totiž neexistuje.
 
 Rychlost webu není moment v čase. Je to krátká, ale významná časová epizoda, ve které uživatelé prožívají seznamování s vaším webem.
 
-Představte si rychlost webu jako animaci. 
+Představte si rychlost webu jako animaci.
 
 Nebo jako krátký, ale důležitý předfilm, který se odehrává před očima uživatele ve chvílích, kdy čeká na stažení a vykreslení stránky.
 
@@ -36,7 +36,7 @@ Tímhle úvodem se vám snažím vnuknout myšlenku, že načítání webu není
 
 ## Jistě, je to UX
 
-Rychlost webu definuji jako: Uživatelský prožitek během načítání a vykreslování viditelné části stránky.
+Rychlost webu definuji jako: Uživatelský prožitek během načítání a vykreslování viditelné části stránky.
 
 To je dost dlouhé pojmenování, vím. Ale snad docela přesné.
 
@@ -50,7 +50,7 @@ Jak ale zjistit spokojenost uživatele s tímto krátkým úsekem uživatelskéh
 
 Musíme se zde spokojit se selským rozumem, který říká: Čím rychlejší, tím lepší. A pokud selský rozum nestačí, podívejte se [na případové studie](https://wpostats.com/) velkých firem. Všechny došly k překvapivému závěru: Čím rychlejší, tím lepší.
 
-Ale vážně: Naše touha podívat se rychlosti na zoubky trochu zblízka je na místě. Během vykreslování webu totiž nastává mnoho důležitých událostí, které je možné měřit. Ty nám o průběhu vykreslování dokáží podat lepší obrázek.
+Ale vážně: Naše touha podívat se rychlosti na zoubky trochu zblízka je na místě. Během vykreslování webu totiž nastává mnoho důležitých událostí, které je možné měřit. Ty nám umí o průběhu vykreslování podat lepší obrázek.
 
 ## Prožitek jde vyjádřit metrikami
 
@@ -63,7 +63,7 @@ Ale vážně: Naše touha podívat se rychlosti na zoubky trochu zblízka je na 
 </figcaption>
 </figure>
 
-Metriky měří různé věci. Například čas serveru (TTFB), první vykreslení obsahu (FCP), první možnou interaktivitu uživatele (TTI) a další. Důležité je, že to jsou metriky závislé na kontextu. Výstupem každého nástroje a každého jeho nastavení budou jiné hodnoty těchto metrik.
+Metriky měří různé věci. Například čas serveru (TTFB), první vykreslení obsahu (FCP), první možnou interaktivitu uživatele (TTI) a další. Důležité je, že to jsou metriky závislé na kontextu. Výstupem každého nástroje a aždého jeho nastavení budou jiné hodnoty těchto metrik.
 
 ## „Rychlost načtení našeho webu je 1,2 s“ Pardon? Nerozumím vám…
 
@@ -71,6 +71,6 @@ Proto: Nemůžeme říci něco jako *„Rychlost načtení našeho webu je 1,2 s
 
 *„Speed Index úvodní stránky webu je 1,2 s, měřeno pomocí WebpageTest na rychlosti 3G fast se zařízením Nexus 5”*. To zní líp.
 
-Děkuji vám za pozornost.
+Děkuji vám za pozornost. Text pokračuje [7 mýty spojenými s rychlosti načítání](rychlost-myty.md).
 
 <!-- AdSnippet -->

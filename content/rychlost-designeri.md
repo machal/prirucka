@@ -75,7 +75,7 @@ Měření a „optimalizace“ se nemá dělat jednorázově. Musíte to měřit
 
 ## Jak můžete pomoci vývojářům?
 
-Rychlost načítání je brána jako technická metrika. Ano, může být. Jenže rozhodnutí designérů, marketérů a majitelů webů na ni mohou mít ohromný vliv. 
+[Rychlost načítání](rychlost-nacteni.md) je brána jako technická metrika. Ano, může být. Jenže rozhodnutí designérů, marketérů a majitelů webů na ni mohou mít ohromný vliv. 
 
 Proto je dobré přijmout něco jako „kulturu rychlosti“ – zvažování dopadů vašich rozhodnutí právě na rychlost načítání.
 
