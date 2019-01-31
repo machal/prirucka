@@ -16,7 +16,7 @@ V praxi poradce k rychlosti webů musím často vysvětlovat některá koncepčn
 
 <!-- AdSnippet -->
 
-Z [dřívějšího textu](rychlost-nacteni.md) už víme, že rychlost načítání není bod v čase. Že jde o časový úsek – uživatelský prožitek během načítání a vykreslování stránky. Pokud tohle přijmeme, můžeme společně konstatovat konstatovat, že následujícím sedm vět jsou vážně – *ehm* – blbosti.
+Z [dřívějšího textu](rychlost-nacteni.md) už víme, že rychlost načítání není bod v čase. Že jde o časový úsek – uživatelský prožitek během načítání a vykreslování stránky. Pokud tohle přijmeme, můžeme společně konstatovat, že uvedených sedm prohlášení jsou vážně – *ehm* – blbosti.
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=u0UhPmLpZnc">Blbosti kolem webové rychlosti</a> ~ Téma textu v přednášce z brněnského srazu Frontendisti.cz.
@@ -26,7 +26,7 @@ V textu diskutuji s „imaginárním vymlouvačem“. Představme si sedm reakc�
 
 ## 1) „Pomůže zlepšit čas načtení (load time)“ {#1}
 
-Ale jistě, je dobré o něj usilovat, ale nestačí to. Load time je [ze všech událostí](metriky-rychlosti.md), které vznikají na časové ose vykreslování webu, jedna z nejméně zajímavých.
+Ale jistě, je dobré o něj usilovat, ale nestačí to. Load time patří mezi [všemi událostmi](metriky-rychlosti.md), které vznikají na časové ose vykreslování webu, k těm méně zajímavým.
 
 Vzniká až ve chvíli, kdy prohlížeč stáhl všechny zdroje, které ke stránce stáhnout měl – styly, skripty, ale i obrázky. Jenže to už může být stránka velmi dlouho vykreslená.
 
@@ -39,7 +39,7 @@ Tato konkrétní metrika je navíc technicky zaměřená a neříká nic o uživ
 </figcaption>
 </figure>
 
-Srovnejme na obrázku uvedené časové osy renderingu: U druhé sice nastane událost Load dříve, ale uživatelský prožitek z vykreslování bude vážně o ničem. Zvýší se pravděpodobnost, že někteří uživatelé po vteřinách sledování bílé obrazovky utečou.
+Srovnejme na obrázku uvedené časové osy renderingu: U druhé sice nastane událost Load dříve, ale uživatelský prožitek z vykreslování bude vážně o ničem. Zvýší se pravděpodobnost, že někteří uživatelé po vteřinách sledování bílé obrazovky utečou.
 
 ## 2) „Je to problém backendu“ {#2}
 
@@ -50,11 +50,11 @@ Zato na frontendovou mašinerii musejí nebozí uživatelé čekat *dloooouhé* 
 <blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Zajímavé, jak rozšířená je myšlenka „náš web je pomalý, protože běží na pomalé platformě [dosaďte oblíbenou]“.<br>90 % problémů je přitom na frontendu.</p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1047423382017462272?ref_src=twsrc%5Etfw">October 3, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Moje tvrzení na Twitteru sice není založené na širších výzkumu, ale praxe mě českých a slovenských webů mě  ho stále potvrzuje.
+Moje tvrzení na Twitteru sice není založené na širším výzkumu, ale praxe českých a slovenských webů mě ho stále potvrzuje.
 
 <!-- AdSnippet -->
 
-Opět navíc platí – backendový čas je technická metrika, která na celkovou rychlost webu vliv má, ale není jediná určující. Má vliv na prožitek při procházení webu. Velká část frontendu se vám načte při otevření první stránky, takže při přechodu na další stránku nezpomaluje. Po kliknutí na další stránku už začíná být rychlost backendu důležitá u všech webů.
+Opět navíc platí – backendový čas je technická metrika, která na vnímanou rychlost webu vliv má, ale není jediná určující. Má vliv na prožitek při procházení webu. Velká část frontendu se vám načte při otevření první stránky, takže při přechodu na další stránku nezpomaluje. Po kliknutí na další stránku už začíná být rychlost backendu důležitá u všech webů.
 
 Mýtus zaměření se na rychlost backendu (jinak také [Time To First Byte, TTFB](metriky-rychlosti.md#TTFB)) uvádím záměrně hned za událostí Load (celkové načtení webu). Představují totiž dva extrémy v časové ose, kterým lidé přikládají zbytečnou důležitost.
 
@@ -69,9 +69,9 @@ Daleko zajímavější jsou z pohledu prožitku uživatele [události](metriky-r
 
 ## 3) „Může za to WordPress (nebo jiná platforma), my s tím nic nenaděláme“ {#2}
 
-*„Když už nevíte kudy kam, hoďte to na WordPress.“* (Citace z Babicovy kuchařky líného webového vývojáře)
+*„Když už nevíte kudy kam, hoďte to na WordPress.“* (Cituje z Babicovy kuchařky líného webového vývojáře.)
 
-WordPress (a platformy) obecně bývají často obviňovány z pomalosti. Ale jsou to opět jen mýty a předsudky. 
+WordPress (a platformy) obecně bývají často obviňovány z pomalosti. Ale jsou to opět jen mýty a předsudky.
 
 Jeden nedávný průzkum, kde WordPress „vyšel“ jako „nejpomalejší platforma“ jsem [nedávno komentovat a porovnával](https://www.vzhurudolu.cz/blog/125-wordpress-richman) s čistými instalacemi WordPressu, které poskytl [Honza Bien](https://www.vzhurudolu.cz/lektori/jan-bien). Výsledky vás jistě nepřekvapí:
 
@@ -102,7 +102,7 @@ Na druhou stranu – na Analytics je skvělé, že tyto hodnoty ukazují od reá
 
 Je také výborné, že si do nich můžete sami ukládat [uživatelská časování](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings). Takže se v GA můžete směle dívat na rozumnější metriky, stačí si to doprogramovat.
 
-Věřím také, že Google pravděpodobně časem do Analytics přidá podobné vlastnosti jaké jsou k dispozici v nových PageSpeed Insights – metriky FCP (First Contentful Paint) a TTI (Time To Interactive) přímo od uživatelů [z Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/).
+Věřím také, že Google pravděpodobně časem do Analytics přidá podobné vlastnosti jaké jsou k dispozici v nových PageSpeed Insights – metriky FCP (First Contentful Paint) a TTI (Time To Interactive) přímo od uživatelů [z Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/).
 
 Takže: Výchozí hodnoty nepřeceňujme, ale Analytics jako nástroj rozhodně nezavrhujme.
 
@@ -152,7 +152,7 @@ Optimalizací obrázků můžeme web zrychlit, ale až v pozdějších fázích 
 
 Obrázky jsou zdroj, na který prohlížeč při optimalizaci webu nečeká. Daleko větší službu udělá datové optimalizace CSS a synchronních JavaScriptů, hlavních kritických zdrojů pro vykreslení stránky.
 
-Optimalizaci *servírování* obrázků ale udělejte. Obsah `<img>` sice má nízkou prioritu stahování, může ale odsouvat některé důležité  zdroje odkazované v CSS: webfonty, ikony a tak dále.
+Optimalizaci *servírování* obrázků ale udělejte. Obsah `<img>` sice má nízkou prioritu stahování, může ale odsouvat některé důležité  zdroje odkazované v CSS: webfonty, ikony a tak dále.
 
 Nasaďte [lazy loading](lazy-loading.md) na všechny obrázky, které nepotřebujete indexovat vyhledávači. Servírujte obrázky v alternativním úsporném formátu [WebP](webp.md). JPEG a PNG soubory zmenšete progresivními službami jako je knihovna [MozJPEG](https://github.com/mozilla/mozjpeg) nebo komerční řešení [Kraken.io](https://kraken.io/).
 
