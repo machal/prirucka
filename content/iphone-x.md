@@ -9,7 +9,7 @@ Můžete z toho být nešťastní, ale asi to ničemu nepomůže. Lepší je vz�
 
 Nebo ještě lépe: Zjistit důvody, proč je potřeba nehranaté obrazovky řešit a podle toho uzpůsobit své weby. Od toho jsem tady já a tenhle článek.
 
-Stačí si představit chytré hodinky s prohlížečem a hned víte, že za to nějaký Apple s iPhone X nemůže. 
+Stačí si představit [chytré hodinky s prohlížečem](weby-watchos.md) a hned víte, že za to nějaký Apple s iPhone X nemůže. 
 
 <!-- AdSnippet -->
 

@@ -63,7 +63,7 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 ## Prohlížeče a kompatibilita
 
 - Plné zobrazení napříč prohlížeči a zařízeními  
-<small>Mezi moderními [prohlížeči](prohlizece.md "Webdesignérův průvodce světem prohlížečů v Česku") už tolik rozdílů není. Prohlížečů je ale hodně, pacholků. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby).</small>
+<small>Mezi moderními [prohlížeči](prohlizece.md "Webdesignérův průvodce světem prohlížečů v Česku") už tolik rozdílů není. Prohlížečů je ale hodně, pacholků. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby). Nezapomeňte ošetřit [i chytré hodinky](weby-watchos.md).</small>
 - Dostupnost hlavního obsahu ve starších prohlížečích  
 <small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat jako z reklamy na zubní pastu, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
 - Tisková verze stránky  

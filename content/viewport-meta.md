@@ -75,7 +75,13 @@ Váš meta tag pro viewport by pak měl vypadat takto:
 
 ### `viewport-fit` {#viewport-fit}
 
-Tohle je nová vlastnost, která řeší způsob zobrazování na zařízeních s jinou než hranatou obrazovkou. Jako příklad vezměme chytré hodinky nebo iPhone X a novější. Vlastnost může mít následující hodnoty (už znáte z `background-size`):
+Tohle je nová vlastnost, která řeší způsob zobrazování na zařízeních s jinou než hranatou obrazovkou.
+
+<div class="web-only" markdown="1">
+Jako příklad vezměme [chytré hodinky](weby-watchos.md) nebo [iPhone X](iphone-x.md) a novější.
+</div>
+
+Vlastnost může mít následující hodnoty (už znáte z `background-size`):
 
 - `auto` – výchozí stav, který vše nechává na prohlížeči. U iPhone X a novějších to například odpovídá hodnotě `contain`.
 - `contain` – zmenší viewport pro stránku tak, aby byla vidět celá. Jakou barvu vykreslí po stranách, záleží na prohlížeči. U nových iPhonů je to `background-color` z `body`.
