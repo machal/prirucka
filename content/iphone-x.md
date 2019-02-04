@@ -88,7 +88,7 @@ Už dlouho říkám, že fixní pozicování prvků je na mobilech dost nebezpe�
 - [Efektivní ladění responzivních webů](/prirucka/jak-testovat-responzivni-weby)
 </div>
 
-[Browserstack](https://www.browserstack.com/s) sice iPhone X testovat umí, ale v době psaní článku jen v režimu na výšku.
+[Browserstack](https://www.browserstack.com/) sice iPhone X testovat umí, ale v době psaní článku jen v režimu na výšku.
 
 Jste tedy odkázáni [na simulátor vestavěný v Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html), pokud máte Maca. 
 
