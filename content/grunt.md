@@ -4,11 +4,15 @@ Grunt si říká „The JavaScript Task Runner“. Není to nic jiného než skr
 
 Pokud si rádi šetříte práci, je Grunt naprosto návyková záležitost.
 
-![Grunt.js](dist/images/original/grunt.jpg)
+![Grunt.js](../dist/images/original/grunt.jpg)
 
 ## Jak Grunt funguje?
 
 V praxi to vypadá tak, že si něco spustíte na příkazové řádce, ono vám to hlídá změny v souborech a po jejich provedení vyvolá nějaké akce. Další úlohy, třeba nahrání webu na server, se zase spouštějí ručně.
+
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
 
 Jednoduchým příkladem budiž minifikace CSS, JS souborů. Nebo jejich spojování do jednoho kvůli šetření requestů pro zvýšení rychlosti načítání. Nebo zpracování preprocesorového kódu do CSS. Grunt sám o sobě nic neumí, to až stovky existujících pluginů z něj dělají tu velkou věc.
 
@@ -18,7 +22,7 @@ Navíc jeho konfigurační soubor (`Gruntfile.js`) verzujete, takže nastavení 
 
 Je dobré hned na začátku zmínit, že pro používání Gruntu musíte alespoň trochu kamarádit s příkazovou řádkou. Žádné pokročilé vědomosti ale potřeba nejsou. Kolem příkazové řádky chodím po špičkách, s Gruntem jsem se ale spřátelil docela rychle.
 
-Budete potřebovat [nainstalovaný Node.js](node-instalace.md) a Node Package Manager (NPM):
+Budete potřebovat [nainstalovaný Node.js](node-instalace.md) a [Node Package Manager (NPM)](npm.md):
 
 Globálně si pomocí NPM nainstalujete rozhraní Gruntu pro příkazovou řádku:
 

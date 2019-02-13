@@ -1,1 +1,1 @@
-Verze 1.1, srpen 2017
+Verze 1.2, listopad 2018

@@ -2,9 +2,9 @@
 
 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs) je asi nejznámější nástroj pro analýzu rychlosti načítání webů.
 
-Je skvělý pro získání základního přehledu, jak na tom web je. Vytahuje rychlostní ukazatele od reálných uživatelů a porovnává zdrojový kód webu s obecně osvědčenými postupy.
+[Použití](#pouziti) – [Dvě rady](#rady) – [Co ukazuje a proč](#vlastnosti)
 
-Obsah článku: [Použití](#pouziti) – [Dvě rady](#rady) – [Co ukazuje a proč](#vlastnosti)
+Je skvělý pro získání základního přehledu, jak na tom web je. Vytahuje rychlostní ukazatele od reálných uživatelů a porovnává zdrojový kód webu s obecně osvědčenými postupy.
 
 <!-- AdSnippet -->
 
@@ -43,7 +43,7 @@ Například u e-shopů mám ve zvyku testovat některý z nejnavštěvovanějš�
 
 ## Co PSI ukazuje a proč? {#vlastnosti}
 
-![Analýza Smarty.cz v PageSpeed Insights](dist/images/original/pagespeed-insights-numbers-1.jpg)
+![Analýza Smarty.cz v PageSpeed Insights](../dist/images/original/pagespeed-insights-numbers-1.jpg)
 
 ### 1) Mobilní zařízení / Počítač {#vlastnosti-1}
 
@@ -90,7 +90,7 @@ Přesněji řečeno: Jaké části uživatelů vašeho webu spadají u obou metr
 
 A zbývá nám pátý bod. Doporučení k úpravám webu.
 
-![PageSpeed Insights - bod 5](dist/images/original/pagespeed-insights-numbers-2.jpg)
+![PageSpeed Insights - bod 5](../dist/images/original/pagespeed-insights-numbers-2.jpg)
 
 ### 5) Optimalizační návrhy {#vlastnosti-5}
 

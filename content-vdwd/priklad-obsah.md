@@ -3,7 +3,7 @@
 Jako ukázkový produkt pro náš proces návrhu uživatelského rozhraní jsem vybral tyhle krásné kotníkové boty značky Fare, v jejichž poněkud zabahněných variantách se v Kunratickém lese prohánějí mladí Michálci. 
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-boty.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-boty.jpg" alt="">
 <figcaption markdown="1">    
 *Ukázkový produkt, se kterým budeme v příkladu fiktivního e-shopu pracovat. Zdroj: [fare.cz](https://www.fare.cz/detska-obuv-827263.htm)*
 </figcaption> 
@@ -23,7 +23,7 @@ Využijeme také *CodePen*. Jednoduchý online editor, kde si stránku napíšet
 ## Obsah příkladu převedeme rovnou do kódu
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-markdown.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-markdown.jpg" alt="">
 <figcaption markdown="1">    
 *Použil jsem CodePen a šup! Máme tady první iteraci stránky detailu produktu našeho e-shopu. [cdpn.io/e/MJwGXK](https://codepen.io/machal/pen/MJwGXK?editors=1000)*
 </figcaption> 
@@ -41,7 +41,7 @@ Testujeme kvalitu obsahu samotného a jeho hierarchii. Konfrontujeme text s naš
 Pojďme tento moment nepromeškat a pořádně se na texty podívat. Našel jsem v nich pár problémů, ale nejdřív vám rovnou ukážu druhou iteraci obsahu:
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-markdown-2.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-markdown-2.jpg" alt="">
 <figcaption markdown="1">    
 *Změny, které jsme provedli v druhé iteraci práce s obsahem. Doplnili jsme dostupnost velikostí a informace o ceně dopravy. [cdpn.io/e/XpbBJy](https://codepen.io/machal/pen/XpbBJy?editors=1000)*
 </figcaption> 

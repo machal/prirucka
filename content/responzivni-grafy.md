@@ -8,12 +8,16 @@ OK, nebudu vám kazit krásné chvíle s mými texty těmito rádoby vtipnými o
 
 Budeme se bavit o opravdových grafech v opravdových responzivních stránkách. Zase tak často se nepoužívají, proto to vezmu letem světem.
 
+Pokud s grafy pracujete často, pak to hlavní co byste si měli odnést je: V responzivním rozhraní nestačí grafy přizpůsobit šířkou layoutu stránky. Obvykle je potřeba změnit hustotu dat. Někdy dokonce připravit zcela jiné zobrazení pro malé a jiné pro velké displeje.
+
+Poradím alespoň několik knihoven, které to s responzivními grafy umí.
+
 ## Chartist.js
 
 Z mého pohledu nejzajímavější knihovna pro jednodušší grafy. Protože používá formát SVG, umí kromě přizpůsobení velikosti okna také přizpůsobovat obsah grafů. [gionkunz.github.io/chartist-js/](https://gionkunz.github.io/chartist-js/)
 
 <figure>
-<img src="dist/images/original/chartist-js.jpg" alt="Chartist.js">
+<img src="../dist/images/original/chartist-js.jpg" alt="Chartist.js">
 <figcaption markdown="1">    
 *Chartist.js se umí menším displejům přizpůsobovat nejen velikostně, ale i hustotou dat a typem  zobrazení*
 </figcaption> 

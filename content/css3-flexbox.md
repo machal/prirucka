@@ -1,7 +1,6 @@
 CSS3 Flexbox: layout pomocí pružných boxů
 =========================================
 
-
 <div class="nav web-only">
   <h2 class="nav__heading sr-only">Navigace: vše o flexboxu</h2>
   <ul class="nav__list">
@@ -17,10 +16,9 @@ CSS3 Flexbox: layout pomocí pružných boxů
   </ul>
 </div>
 
-
 ## Co je flexbox?
 
-Nová cesta pro tvorbu layoutu, zarovnání a distribuci volné plochy.
+Jeden z nových způsobů, jak v CSS zapisovat layout, ale také zarovnání a distribuci volné plochy.
 
 *Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor bez nutnosti přepočítávání Javascriptem.
 
@@ -87,7 +85,7 @@ Všechny `<li>` se tady stávají flex položkami.
 
 Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
 
-![flexbox schéma](dist/images/original/flexbox-schema.jpg)
+![flexbox schéma](../dist/images/original/flexbox-schema.jpg)
 
 * flex kontejner – rodičovský element
 * flex položka – všichni přímí potomci flex kontejneru

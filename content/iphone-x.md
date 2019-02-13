@@ -9,7 +9,7 @@ Můžete z toho být nešťastní, ale asi to ničemu nepomůže. Lepší je vz�
 
 Nebo ještě lépe: Zjistit důvody, proč je potřeba nehranaté obrazovky řešit a podle toho uzpůsobit své weby. Od toho jsem tady já a tenhle článek.
 
-Stačí si představit chytré hodinky s prohlížečem a hned víte, že za to nějaký Apple s iPhone X nemůže. 
+Stačí si představit [chytré hodinky s prohlížečem](weby-watchos.md) a hned víte, že za to nějaký Apple s iPhone X nemůže. 
 
 <!-- AdSnippet -->
 
@@ -44,7 +44,7 @@ I tady to může být jednoduché. Klíč je [v meta značce pro viewport](viewp
 
 Hodnotou `cover` vlastnosti [viewport-fit](viewport-meta.md#viewport-fit) říkáte, že se stránka má roztáhnout na celou šířku dostupné plochy v okně prohlížeče. A že vám nevadí, že něktré její části budou překryté kulatými rohy nebo výčnělkem.
 
-![Úprava Vzhůru dolů pro iPhone X](dist/images/original/iphone-x.jpg)
+![Úprava Vzhůru dolů pro iPhone X](../dist/images/original/iphone-x.jpg)
 
 Pokud váš podbarvený obsah drží nějakou postranní ochrannou zónu, asi už nic dalšího nepotřebujete udělat.
 
@@ -52,7 +52,7 @@ V režimu na šířku vám iPhone X zobrazí stránku v plné šířce 812 [CSS 
 
 <!-- AdSnippet -->
 
-Na obrázku je vidět ještě jeden krok, který jsem musel udělat v případě layoutu Vzhůru dolů. Posunul jsem breakpoint roztažení stránky na plnou šířku z `768px` na `813px`. U ostatních zařízení je to jedno, ale na iPhone X vypadá layout bez okrajů lépe.
+Na obrázku je vidět ještě jeden krok, který jsem musel udělat v případě layoutu Vzhůru dolů. Posunul jsem [breakpoint](breakpointy.md) roztažení stránky na plnou šířku z `768px` na `813px`. U ostatních zařízení je to jedno, ale na iPhone X vypadá layout bez okrajů lépe.
 
 
 ## Weby s různobarevnými prvky bez ochranné zóny {#weby-bez-zony}
@@ -88,7 +88,7 @@ Už dlouho říkám, že fixní pozicování prvků je na mobilech dost nebezpe�
 - [Efektivní ladění responzivních webů](/prirucka/jak-testovat-responzivni-weby)
 </div>
 
-[Browserstack](https://www.browserstack.com/s) sice iPhone X testovat umí, ale v době psaní článku jen v režimu na výšku.
+[Browserstack](https://www.browserstack.com/) sice iPhone X testovat umí, ale v době psaní článku jen v režimu na výšku.
 
 Jste tedy odkázáni [na simulátor vestavěný v Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html), pokud máte Maca. 
 

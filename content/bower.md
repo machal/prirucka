@@ -28,6 +28,10 @@ bower install jquery-smooth-scroll --save
 
 Bower jej začne stahovat z repozitářů. A protože plugin má ve svém Bower konfiguráku (`bower.json`) informaci, že závisí na jQuery, Bower stáhne i tuto knihovnu.
 
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
+
 Obsahy repozitářů obou knihoven se pak uloží do adresáře `bower_components/`.
 
 ## Adresář `bower_components/`

@@ -22,7 +22,7 @@ Zájmem provozovatele webu je, aby uživatel nepřišel o nic zajímavého. A pr
 Zeptejme se teď sami sebe: Jak dobře tyto tři úkoly plní schovaná navigace? Že je neplní vůbec? Bingo!
 
 <figure>
-<img src="dist/images/original/hamburger-variants.jpg" alt="">
+<img src="../dist/images/original/hamburger-variants.jpg" alt="">
 <figcaption markdown="1">    
 *Dobré a špatné hamburgery*
 </figcaption> 
@@ -72,7 +72,7 @@ Ikona hamburgeru je nová a pro autory webů je výhodné, abychom ji (stejně j
 Každá ikona je zjednodušenou abstrakcí obsahu, který následuje po její aktivaci. V případě ikony hamburgeru jde o seznam položek řazených pod sebou. Odpovídá to ale třeba víceúrovňové navigaci nebo celé liště sekundárního obsahu, na který se dostanete kliknutím na hamburger například u jinak výborného webu Respektu?
 
 <figure>
-<img src="dist/images/original/hamburger-abstraction.jpg" alt="">
+<img src="../dist/images/original/hamburger-abstraction.jpg" alt="">
 <figcaption markdown="1">    
 *Bylo by lepší, kdyby „hamburger“ vždy otevíral totéž, tedy seznam položek. Bohatší obsah, jaký otevírá na webu Respektu, by bylo vhodnější ikonou neopatřovat*
 </figcaption> 

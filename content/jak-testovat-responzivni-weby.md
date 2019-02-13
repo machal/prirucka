@@ -4,22 +4,20 @@ Jak si poradit s dnešní škálou prohlížečů a zařízení? A jak s nepří
 
 Mé testování je čtyřfázové:
 
-1. Prototypování 
+1. Prototypování
 2. Vývojářský desktopový prohlížeč
-3. Alternativní prohlížeče pomocí nástroje BrowserStack 
+3. Alternativní prohlížeče pomocí nástroje BrowserStack
 4. Reálná zařízení
 
 ## 1) Prototypování (na CodePenu)
 
-
 <span class="ebook-only" markdown="1">O prototypování jsem už psal [ve zvláštní kapitole](html-prototypovani.md).</span> Ještě než začnu něco finálně implementovat, procházím touto první, prototypovací fází. Na prototypu si vyzkouším nejkritičtější designérské i kodérské problémy. Používám CodePen, kde je to za chvilku hotové a výsledek můžu rychle otestovat ve všech možných prohlížečích. Dále pak Bootstrap nebo prostě HTML, CSS a Javascript.
-
 
 ## 2) Vývojářský desktopový prohlížeč (s Chrome DevTools)
 
-V téhle fázi trávím samozřejmě nejvíce času. Kvůli DevTools používám Chrome. 
+V téhle fázi trávím samozřejmě nejvíce času. Kvůli DevTools používám Chrome.
 
-Občas se podívám do ostatních desktopových prohlížečů: Firefoxu, Explorerů, Safari a Edge. Méně často do Opery, která má obvykle podobné renderování jako Chrome.
+Občas se podívám do ostatních desktopových prohlížečů: Firefoxu, Explorerů, Safari a Edge. Méně často do Opery, která obvykle renderuje stejně jako Chrome.
 
 Protože se ale bavíme hlavně o mobilních zařízeních, v Chrome mám puštěný Device Mode. Neznám lepší nástroj na emulaci všeho možného mobilního a díky tomu v Chrome trávím během procesu návrhu i kódování webu nejvíce času. 
 
@@ -33,7 +31,7 @@ Něco *podobného* existuje ve Firefoxu (Responsive Design View – `Ctrl/Cmd+Al
 
 Při testování v Chrome si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bratry, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
 
-V Chrome obvykle oknem prohlížeče hýbu a upravuji kód, dokud se mně design alespoň trochu nelíbí ve *všech* rozlišeních. 
+V Chrome obvykle oknem prohlížeče hýbu a upravuji kód, dokud se mně design alespoň trochu nelíbí ve *všech* rozlišeních.
 
 V další fázi potřebuji testovat v reálnějším prostředí. Ano, jde o jiná vykreslovací nebo javascriptová jádra. Pomůže BrowserStack nebo simulátory.
 
@@ -62,16 +60,9 @@ Následující část čtěte, jen pokud hodně chcete šetřit a máte vysokou 
 
 ### Simulátory a emulátory (levná alternativa k BrowserStacku, kterou nedoporučuji)
 
-Mobilní Chrome jakžtakž odpovídá tomu desktopovému, takže potřebujete otestovat hlavně Android Browser a pak mobilní Safari. Občas také mobilní Operu, Firefox nebo Explorer. Mrkněte do statistik, jak si u vás tyhle prohlížeče stojí. 
+Mobilní Chrome jakžtakž odpovídá tomu desktopovému, takže potřebujete otestovat hlavně mobilní Safari.
 
-- *Mobilní Safari*  
-Simulátorem je možné na Macu testovat iOS (nebo také watchOS a tvOS, ale tam není žádný prohlížeč), takže mobilní Safari. Nicméně pokud jste na Windowsech nebo Linuxu, emulaci mobilního Safari nespustíte. [vrdl.in/sgo6c](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html)
-- *Android Browser*   
-Android emulátorem jste si dříve mohli pustit verzi Androidu s aktuálním Android Browserem. Dřív byl Android Emulator pomalý, což je pořád a navíc je teď docela věda ho nainstalovat. [vrdl.in/1m26i](https://developer.android.com/studio/run/emulator.html)
-- *Mobilní Explorer*   
-Spustíte v emulátoru od Microsoftu. Samozřejmě jen na Windows. [vrdl.in/s72hb](https://msdn.microsoft.com/en-us/library/windows/apps/ff402563%28v=vs.105%29.aspx)
-- *Mobilní Opery*  
-Emulátor aktuální verze mobilní Opery neexistuje, ale má jádro velice podobné Chrome. Je dobré web vidět v Opeře Mini, kterou lze nainstalovat na desktop. [vrdl.in/xba60](https://dev.opera.com/articles/installing-opera-mini-on-your-computer/)
+Simulátorem je možné na Macu testovat iOS (nebo také watchOS a tvOS), ale také mobilní Safari. [vrdl.in/sgo6c](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html)
 
 ## 4) Testování na fyzických zařízeních
 
@@ -90,15 +81,14 @@ Budete potřebovat hlavně smartphony i tablety z obou nejrozšířenějších p
 Telefony:
 
 * iPhone 6 Plus s iOS 10 jako zástupce moderních phabletů. 
-* Samsung Galaxy S III Mini s Androidem 4, Chrome a Android Browserem. Podprůměrný starší Android.
-* Nokia Lumia 520 pro testování Exploreru na Windows Phone 8.1. Levný Windows Phone.
+* Samsung Galaxy S III Mini s Androidem 4, Chrome a Android Browserem. Podprůměrný starý Android.
 * iPhone 4 s iOS 7 jako zástupce starých a pomalu vykreslujících iOS zařízení.
 * Vodafone 945 se starým Androidem 2.1 a rozlišením 240 × 400 pixelů. Ano, i na vaše weby se možná občas dívám přes jeden z nejhorších mobilů, jaké si umíte představit.
 
 Tablety:
 
 * iPad Mini s iOS 8. Jeden z menších tabletů, přitom plnohodnotně použitelný (a u nás doma používaný). Také velmi prodávaný. Určitě doporučuji pořídit, hlavně kvůli otestování dostatečné velikosti aktivních prvků v uživatelském rozhraní. Rozlišení 1024 × 768 na sedmi palcích: Garantuji, že se váš grafik zapotí.
-* Tablet Lenovo TAB 2. Klasický desetipalec s Androidem 5. 
+* Tablet Lenovo TAB 2. Klasický desetipalec s nejnovějším Androidem. 
 * Sencor Element 7 s Androidem 4.1, nechutně pomalým prohlížečem a rozlišením 480 × 800 pixelů. A také displejem prasklým od našeho mladšího chlapečka. To je prosím simulace těžkých podmínek pro prohlížení webu.
 
 A nezapomeňte na *guerilla* testování – takové prodejny Alzy nebo Datartu bývají plné zařízení, na kterých si můžete leccos vyzkoušet. Z pohledu designéra je zajímavé každé nové zařízení, takže kdybyste se kolem mě s nějakým takovým vyskytli, pravděpodobně vám ho na chvíli ukradnu a budu na něm své weby testovat.
@@ -108,14 +98,11 @@ A nezapomeňte na *guerilla* testování – takové prodejny Alzy nebo Datartu 
 Browsersync je obecně velmi přínosný nástroj pro testování responzivních webů. Teď nás ale zajímá hlavně jeho schopnost poskytnout *něco jako DevTools*, ovšem multiplatformně. Obsahuje nástroj jménem Weinre, se kterým je ladění webů na mobilech velmi příjemné. [vrdl.cz/p/browsersync](https://www.vzhurudolu.cz/prirucka/browsersync)
 
 <figure>
-<img src="dist/images/original/browsersync-browserstack.jpg" alt="">
-<figcaption markdown="1">    
-*Browsersync v kombinaci s BrowserStack. Browsersync a Weinre umožňují kombinovat platformy. Takže třeba Firefox na Macu propojit s Explorerem na Windows Phone*
-</figcaption> 
+<img src="../dist/images/original/browsersync-browserstack.jpg" alt="">
+<figcaption markdown="1">
+*Browsersync v kombinaci s BrowserStack. Browsersync a Weinre umožňují kombinovat platformy. Takže třeba Firefox na Macu propojit s Explorerem na Windows Phone. Tedy ne, že byste to v roce 2018 moc často potřebovali*
+</figcaption>
 </figure>
-
-
- 
 
 Weinre jsou ale jen *něco* jako DevTools.  Plnohodnotným vývojářským nástrojům dnešních prohlížečů konkurovat nemohou.
 
@@ -126,8 +113,6 @@ Weinre jsou ale jen *něco* jako DevTools.  Plnohodnotným vývojářským nást
 S jeho desktopovým sourozencem propojíte od Androidu verze 4. Mobilní zařízení stačí propojit USB kabelem a pak ještě nastavit pár věcí podle následujícího návodu. [vrdl.in/7ztbj](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/)
 - *Mobilní Safari*  
 S desktopovým Safari propojíte samozřejmě jen na Macu. Musíte si také nainstalovat Xcode, což obecně doporučuji, pokud na Macu děláte jakoukoliv vývojařinu. Po propojení zařízení kabelem se pak podívejte do nové položky v menu prohlížeče Safari, která se bude jmenovat „Developer“. V druhé sekci jsou připojená zařízení. Následuje podrobnější návod.  [vrdl.in/u60bs](https://blog.idrsolutions.com/2015/02/remote-debugging-ios-safari-on-os-x-windows-and-linux/)
-- *Mobilní Explorer/Edge*  
-Pomocí Visual Studia je možné nějak propojit s desktopovým Edge. I tady případné zájemce pošlu na návod.[vrdl.in/l4uxy](https://blogs.msdn.microsoft.com/visualstudioalm/2014/04/04/diagnosing-mobile-website-issues-on-windows-phone-8-1-with-visual-studio/)
 
 <div class="web-only" markdown="1">
 Bylo toho hodně, takže ještě jednou zopakuji to podstatné.

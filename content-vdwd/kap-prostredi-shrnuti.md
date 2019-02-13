@@ -1,6 +1,6 @@
 # Zapamatujte si
 
-- Přístupy z mobilních zařízení měly v roce 2016 na webech v ČR v průměru pětinový podíl, ale ten pořád roste.
+- Přístupy z mobilních zařízení měly v roce 2016 na webech v ČR v průměru pětinový podíl. Od té doby se leccos změnilo, ale růst téhle statistiky ne.
 - Nesmíme zapomenout na velké displeje. Jejich podíl je podobným mobilním zařízením.
 - Roste podíl větších dotykových zařízení, hybridních notebooků a velkých dotykových tabletů.
 - Klesá prodej dnešních tabletů a nedotykových počítačů.

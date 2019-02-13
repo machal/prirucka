@@ -19,7 +19,7 @@
 
 Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo –  například když uživatel zvětší okno prohlížeče. 
 
-![vlastnost flex-grow](dist/images/original/flexbox-flex-grow.jpg)
+![vlastnost flex-grow](../dist/images/original/flexbox-flex-grow.jpg)
 
 Možné hodnoty:
 
@@ -33,7 +33,7 @@ Možné hodnoty:
 
 Jakým podílem vzhledem k ostatním položkám se může definovaná položka zmenšovat, pokud v rodičovském kontejneru místo ubylo –  když uživatel zmenšil okno nebo třeba přibyla nová položka. 
 
-![vlastnost flex-shrink](dist/images/original/flexbox-flex-shrink.jpg)
+![vlastnost flex-shrink](../dist/images/original/flexbox-flex-shrink.jpg)
 
 Možné hodnoty: 
 
@@ -46,7 +46,7 @@ Možné hodnoty:
 
 Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: column`.
 
-![vlastnost flex-basis](dist/images/original/flexbox-flex-basis.jpg)
+![vlastnost flex-basis](../dist/images/original/flexbox-flex-basis.jpg)
 
 * `auto` (výchozí) – rozměr určuje obsah podobně jako u `width: auto`. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se pak bude týkat jen místa, které položky okupují nad rámec svého obsahu – tzv. relativní model pružnosti.
 * `0` – nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se bude týkat celé šířky položky – absolutní model pružnosti.
@@ -83,7 +83,7 @@ flex: 1 1 150px
 
 Myslím, že častěji se ale budou hodit přednastavené „inteligentní“ hodnoty:
 
-![vlastnost flex](dist/images/original/flexbox-reference-flex.jpg)
+![vlastnost flex](../dist/images/original/flexbox-reference-flex.jpg)
 
 * `flex: auto`
 Odpovídá `flex: 1 1 auto` a dotčené položky se stanou plně pružnými s výchozím rozměrem podle svého obsahu. Asi nejčastější případ.

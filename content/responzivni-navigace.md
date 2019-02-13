@@ -7,7 +7,7 @@ Projdeme si osm možností, jak navrhnout navigaci na responzivních webech. Od 
 Většina webů si ale vystačí se dvěma: upřednostňujícím a přepínacím vzorem. Podívejme se nejprve na ně.
 
 <figure>
-<img src="dist/images/original/responzivni-navigace.jpg" alt="">
+<img src="../dist/images/original/responzivni-navigace.jpg" alt="">
 <figcaption markdown="1">    
 *Hlavní návrhové vzory pro responzivní navigace: zapínač (také přepínač nebo Toggle) a upřednostňování se schováváním (Priority+)*
 </figcaption> 
@@ -28,7 +28,7 @@ Návrhový vzor *přepínač* zpopularizoval například framework Bootstrap a n
 
 ### Speciální varianta přepínače: vyjíždění do obrazovky (Off Canvas)
 
-Chování, které znáte z nativních aplikací. Nejobvyklejší je vyjíždění ze strany, které je vhodné pro schovávání bohatého obsahu. V tom případě ale není dobrý nápad použít ikonu hamburgeru. Podívejte se na živé demo Jasona Weavera. [jasonweaver.name/lab/offcanvas](http://jasonweaver.name/lab/offcanvas/)
+Chování, které znáte z nativních aplikací. Nejobvyklejší je vyjíždění ze strany, které je vhodné pro schovávání bohatého obsahu. V tom případě ale není dobrý nápad použít ikonu hamburgeru. Podívejte se na ukázky od Luka Wroblewskiho. [lukew.com/ff/entry.asp?1569](https://www.lukew.com/ff/entry.asp?1569)
 
 ### Víceúrovňové navigace: speciální varianta a speciální úroveň ošemetnosti
 

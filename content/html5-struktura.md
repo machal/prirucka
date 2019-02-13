@@ -21,7 +21,7 @@ Jenže doba se změnila a kunratické proti-sekčně-tagové hnutí vychladlo.
 
 Internet Explorer 8 a starší dnes nejsou na návštěvnosti většiny webů zastoupené [více než půlprocentním podílem](prohlizece.md). A míra podpory HTML5 tagů prohlížeči a slepeckými čtečkami je už velmi podobná podpoře WAI-ARIA atributů. 
 
-![Podpora přístupnosti HTML5 tagů v prohlížečích](dist/images/original/html5-accessibility.jpg)
+![Podpora přístupnosti HTML5 tagů v prohlížečích](../dist/images/original/html5-accessibility.jpg)
 
 Když se totiž podíváte na data z [HTML5accessibility.com](http://www.html5accessibility.com/), sekční HTML5 elementy neumí především Explorer 11. Pak tam jsou jen dvě výjimky pro `<header>` u Chrome a [`<figure>`](figure-figcaption.md) u Safari.
 
@@ -43,7 +43,7 @@ Proto **doporučuji používat obě varianty**: HTML5 tag kvůli dopředné komp
 Pokud oblasti ve stránce takto nakódujete, umožní dnešní čtečky zrakově postiženým procházet stránkou strukturovaně. To je rychlejší a efektivněji než sekvenční procházení pomocí nadpisů či jiných prvků.
 
 <figure>
-<img src="dist/images/original/html5-role.jpg" alt="Oblasti stránky z WAI-ARIA a HTML5">
+<img src="../dist/images/original/html5-role.jpg" alt="Oblasti stránky z WAI-ARIA a HTML5">
 <figcaption markdown="1">    
 *Šest hlavních oblastí stránky podle specifikací HTML5 a WAI-ARIA: hlavička, navigace, vyhledávací pole, hlavní obsah, méně důležitý obsah a patička.*
 </figcaption> 

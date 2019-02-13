@@ -79,7 +79,7 @@ Pojďme to udělat na velkém displeji vedle sebe, na malém pak pod sebou:
 
 Vysvětlím jen ty nově přidané třídy:
 
-- Kombinace tříd `flex-column flex-md-row` říká, že výchozí směr layoutu je svislý (`flex-direction: column`) a od `md` („medium“) breakpointu (768px) se mění na vodorovný (`flex-direction: row`).
+- Kombinace tříd `flex-column flex-md-row` říká, že výchozí směr layoutu je svislý (`flex-direction: column`) a od `md` („medium“) [breakpointu](breakpointy.md) (768px) se mění na vodorovný (`flex-direction: row`).
 - Kombinaci `mb-3 mb-md-0 mr-md-3` si už asi odvodíte. Na malých displejích dělá odsazení zezdola (`mb-3`), která se od bodu zlomu `md` ruší (`mb-md-0`) a mění na odsazení zprava (`mr-md-3`).
 
 Opět jsem nemusel napsat ani řádku vlastního CSS. Podívejte se na Codepen: [cdpn.io/e/mqmNyz](https://codepen.io/machal/pen/mqmNyz).

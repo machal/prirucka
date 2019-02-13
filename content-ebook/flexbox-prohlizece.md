@@ -22,13 +22,13 @@ Je ale dobré si ujasnit a v praxi vyzkoušet, co to znamená „neřešit podpo
 
 Vidět je to na následujícím obrázku. Pro layout formuláře se tam docela hojně využívá flexbox. V Safari se zobrazuje, tak jako bylo plánováno. V IE8 nevyplní textový input celou zbývající plochu a popisek „Jiné“ se nebude zvětšovat se zvětšující se velikostí písma:
 
-![Fallback pro IE8](dist/images/original/flexbox-ie8-fallback.jpg)
+![Fallback pro IE8](../dist/images/original/flexbox-ie8-fallback.jpg)
 
 Je to příklad, který už známe z [cdpn.io/e/jEJbmg](http://cdpn.io/e/jEJbmg).
 
 Formulář tedy zůstává použitelný. Jen některé prvky nebudou uživatelsky tak přívětivé. No jistě. Nejen zaoblené rohy, ale i layout můžeme brát jako vylepšení uživatelského prožitku:
 
-![Layout jako enhancement](dist/images/original/flexbox-layout-as-enhancement.jpg)
+![Layout jako enhancement](../dist/images/original/flexbox-layout-as-enhancement.jpg)
 
 ### Detekce vlastností a alternativní řešení
 
@@ -78,4 +78,4 @@ Snadno se například dělá fallback pomocí vlastnosti `float`, protože ta se
 
 Jak už jste si jistě všimli, flexbox je dost složitý standard a to – spolu s jeho relativní čerstvostí – způsobuje řadu drobných chyb v prohlížečích.
 
-Kromě standardního hledání na Google nebo StackOverflow doporučuji projekt **flexbugs**. Phillip Walton a komunita tam sbírá, dokumentuje a hledá řešení nejčastějších chyb. [https://github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
+Kromě standardního hledání na Google nebo StackOverflow doporučuji projekt **flexbugs**. Phillip Walton a komunita tam sbírá, dokumentuje a hledá řešení nejčastějších chyb. [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)

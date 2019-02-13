@@ -2,6 +2,10 @@
 
 SemVer je specifikace, jejímž cílem je sjednocení způsobu verzování software.
 
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
+
 Autorům prostě předepisuje, jakým způsobem označovat nové verze jejich programů.
 
 ## Major.Minor.Patch
@@ -35,7 +39,7 @@ Třetí číslovka je *patch*. Ta se mění při opravách chyb. V ukázce výš
 
 Nicmoc složitého na tom není. Specifikace je v českém překladu dostupná zde: [semver.org/lang/cs/](https://semver.org/lang/cs/)
 
-Protože jsme ale na blogu, který se věnuje převážně webového frontendovému vývoji, musíme se podívat, jaký má SemVer vliv na vyžadování verzí v konfiguraci NPM – `package.json`.
+Protože jsme ale na blogu, který se věnuje převážně webového frontendovému vývoji, musíme se podívat, jaký má SemVer vliv na vyžadování verzí v konfiguraci [NPM](npm.md) – [package.json](package-json.md).
 
 ## SemVer a package.json {#package-json}
 

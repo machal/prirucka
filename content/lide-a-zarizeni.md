@@ -54,7 +54,7 @@ Není bez zajímavosti, že uživatelé v průzkumu strávili v průměru 75 min
 V roce 2013 se Steven Hoober sebral a šel se podívat, jak lidé na ulicích drží své mobilní telefony. Asi vás to nepřekvapí, ale my lidé jsme se nesjednotili ani ve způsobu držení těch malých svítících krabiček. 
 
 <figure>
-<img src="dist/images/original/mobily-drzeni.jpg" alt="">
+<img src="../dist/images/original/mobily-drzeni.jpg" alt="">
 <figcaption markdown="1">    
 *Výsledek výzkumu Stevena Hoobera: 49 % lidí drželo mobilní zařízení v jedné ruce a šátralo po něm palcem. 36 % lidí dávalo přednost „kolébkovému“ chvatu (držení v jedné ruce a ovládání prstem druhé ruky) a 15 % drželo krabičky obouruč a ovládalo dvěma palci*
 </figcaption> 
@@ -81,7 +81,7 @@ Takže my lidé jsme vlastně jen složité mechanismy pro přenášení a ovlá
 Prodávají se stále větší chytré telefony, takže bychom při návrhu rozhraní měli myslet na to, že palcem je u nich dosažitelná daleko menší část obrazovky.
 
 <figure>
-<img src="dist/images/original/vdwd/palce-mobily.jpg" alt="">
+<img src="../dist/images/original/vdwd/palce-mobily.jpg" alt="">
 <figcaption markdown="1">    
 *Mobily jsou větší, ale plocha ovládatelná palcem se zmenšuje. Větší zařízení totiž také mívají silnější šasi. Uprostřed zvýrazněná zelená je palcem dosažitelná snadno, žlutá hůř a zbylá červená skoro vůbec*
 </figcaption> 
@@ -104,13 +104,13 @@ Na otázku, jestli lidé tablety častěji používají na výšku, nebo na ší
 Znovu se zde budu odkazovat na data, která sesbíral Josh Clark. Malé tablety držíme v ruce, ale zóny pohodlného ovládání palci vypadají zcela jinak.
 
 <figure>
-<img src="dist/images/original/vdwd/palce-tablet.jpg" alt="">
+<img src="../dist/images/original/vdwd/palce-tablet.jpg" alt="">
 <figcaption markdown="1">    
 *Na malých tabletech držených obouruč jsou palci nejlépe dosažitelné okraje od středu nahoru. Spodní okraj a střed jsou naopak dosažitelné nejhůře*
 </figcaption> 
 </figure> 
 
-Aktivní prvky, které mají být snadno dosažitelné, bychom tedy měli umísťovat ke kraji. Nejlépe pravému, vzhledem k přesile praváků v populaci. 
+Aktivní prvky, které mají být snadno dosažitelné, bychom tedy měli umísťovat ke kraji. Nejlépe pravému, vzhledem k přesile praváků v populaci.
 
 Zóny pohodlného ovládání na malých tabletech jsou dost v kontrastu s dnes běžným umísťováním málo důležitých prvků na fixní pozice ke krajím obrazovky. Ano, vy lišty z Heureka.cz nebo výzvy ke kliknutí na online chaty, dívám se právě na vás!
 
@@ -125,7 +125,7 @@ O tom, zda lidé budou vůbec někdy chtít ovládat zařízení stojící na st
 Lidé totiž dotykové obrazovky notebooků a podobných zařízení neovládají ukazováčkem, ale znovu palcem. Únavě paží zabraňují tak, že si ruce opřou o stůl pod hranou displeje. Ukazováčkem ohmatávají obrazovky jen uživatelé méně zkušení, kteří většinou časem přejdou znovu na palce.
 
 <figure>
-<img src="dist/images/original/vdwd/palce-notebook.jpg" alt="">
+<img src="../dist/images/original/vdwd/palce-notebook.jpg" alt="">
 <figcaption markdown="1">    
 *U notebooků s dotykovou obrazovkou a hybridních zařízení jsou palcem nejlépe dostupné plochy spodních rohů*
 </figcaption> 
@@ -133,7 +133,12 @@ Lidé totiž dotykové obrazovky notebooků a podobných zařízení neovládaj�
 
 I u těchto zařízení jsou tedy nejsnáze dosažitelné kraje uživatelského rozhraní. Jen nezapomeňte, že je u nich uživatelům potřeba nechat trochu volného místa pro rolování stránky.
 
-V jednom se tedy dotyky na všechna zařízení shodují. Většinou před ostatními prsty upřednostňujeme ovládání palcem. Palce jsou přesné a pro mobilní zařízení univerzálně použitelné prsty. 
+V jednom se tedy dotyky na všechna zařízení shodují. Většinou před ostatními prsty upřednostňujeme ovládání palcem. Palce jsou přesné a pro mobilní zařízení univerzálně použitelné prsty. Primárně bychom tedy měli rozhraní navrhovat pro ně.
+
+## Z „touch first“ rozhraní profitují všichni
+
+Nerad bych, aby zapadla důležitá věc. Pokud navrhneme jednotné uživatelské rozhraní a uzpůsobíme je hlavně dotykovému ovládání palci, budou profitovat i majitelé dalších ovládacích prvků: ukazováčků nebo klidně prostředníčků, ale hlavně kurzorů ovládaných myší. Větší aktivní plocha znamená větší pohodlí při ovládání rozhraní.
+
 
 <div class="f-6 web-only" markdown="1">
   *Text je součástí kapitoly „Návrh rozhraní v éře mobilů“ knihy [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/ebook-responzivni).*

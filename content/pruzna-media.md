@@ -28,8 +28,7 @@ Uvést musíme, aby si obrázek zároveň zachoval poměr stran. V opačném př
 
 <!-- AdSnippet -->
 
-Vyzkoušet si to můžete na CodePen, kde je to ještě doplněno o drobné ošetření  občas neposlušného Internet Exploreru 8. [cdpn.io/e/jWebge](https://codepen.io/machal/pen/jWebge)
-
+Vyzkoušet si to můžete na CodePenu: [cdpn.io/e/jWebge](https://codepen.io/machal/pen/jWebge)
 
 ## Pružné vkládané elementy se zachovaním poměru stran
 

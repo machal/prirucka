@@ -2,7 +2,7 @@
 
 Dneska o tomhle populárním souboru, o NPM skriptech a taky o závislostech.
 
-Asi nejlepší definice `package.json` zní: Manifest závislostí projektu. Jedná se o soubor, který využívá NPM a další balíčkovací systémy jako Yarn pro svou konfiguraci. 
+Asi nejlepší definice `package.json` zní: Manifest závislostí projektu. Jedná se o soubor, který využívá [NPM](npm.md) a další balíčkovací systémy jako Yarn pro svou konfiguraci. 
 
 Spolu s `package-lock.json` patří k základní výbavě každého projektu, který používá jeden ze zmíněných balíčkovacích manažerů. O tomhle jeho parťákovi ale někdy příště.
 
@@ -78,6 +78,10 @@ Kromě názvu a verze není nic pro neveřejné projekty povinné, ale pro poř�
 - `repository` – Adresa repozitáře a jeho typ. Například `"repository": { "type": "git", "url": "https://github.com/jquery/jquery.git" }`.
 - `main` – Vstupní bod. Důležité pro javascriptové aplikace. Zde se budou hledat exporty modulů. Příklad: `"main": "src/main.js"`.
 - `private` – Zda je adresář soukromý. Může zamezit nechtěnému publikování ve veřejném repozitáři na npmjs.com, takže je asi dobré tohle uvádět: `"private": true`.
+
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
 
 Pojďme ale na důležitější, nebo asi úplně nejdůležitější sekci `package.json` – závislosti. Vynecháme přitom překvapivě alkohol, drogy a veškeré další lidské nešvary. Budeme se totiž bavit o závislostech našeho software na  software jiných autorů a autorek.
 

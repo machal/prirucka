@@ -9,7 +9,7 @@ Jde tedy o odložené načítání. Nejčastěji je navázané na scrollování 
 Nejčastěji lazy loading aplikujeme na obrázky, ale je vhodné jej využít i na vkládané prvky – iframe s Youtube videi, mapami od Google nebo Seznamu, sdílecími Facebooku nebo Twitteru… Odložené načítání se ale může týkat i vašeho vlastního obsahu.
 
 <figure>
-<img src="dist/images/original/lazyloading.jpg" alt="Lazy loading obrázků">
+<img src="../dist/images/original/lazyloading.jpg" alt="Lazy loading obrázků">
 <figcaption markdown="1">    
 *Odložené načtení obrázků, které nejsou viditelné ve viewportu uživatele. Ušetří to data a může zrychlit vykreslení stránky.*
 </figcaption> 
@@ -187,7 +187,7 @@ Jsem přesvědčený, že na uživatele působí daleko lépe, když na místě 
 Druhá věc: při nasazování lazy loading na Vzhůru dolů jsem namísto obrázků používal zástupný symbol v podobě průhledného PNG. Zjistil jsem ale, že pokud jako uživatel část stránky zastihnu bez obrázků, vypadá to, jako by dále nepokračovala. Proto preferuji poloprůhledné barevné PNG, u kterého je poznat, že na daném místě jednou něco bude.
 
 <figure>
-<img src="dist/images/original/lazy-loading-placeholders.jpg" alt="Lazy loading - ukázka tří různých přístupů">
+<img src="../dist/images/original/lazy-loading-placeholders.jpg" alt="Lazy loading - ukázka tří různých přístupů">
 <figcaption markdown="1">    
 *Tři různé přístupy pro zástupné symboly: animované na prvním obrázku (iRozhlas.cz) sice dobře informují o stavu části stránky, ale dle mého názoru až příliš poutají pozornost. Druhý obrázek je ze Vzhůru dolů při použití průhledných placeholderů. Uživatel nemá žádnou informaci o tom, že by na tomto místě měl něco očekávat. Poslední verze se statickými poloprůhlednými zástupnými obrázky je dle mého názoru nejlepší.*
 </figcaption> 

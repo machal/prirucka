@@ -5,12 +5,12 @@ Node.js na frontendu potřebujeme hlavně kvůli usnadnění vývojářské prá
 ## Nástroje, které si nainstalujeme
 
 - Node.js – běh Javascriptu na příkazové řádce.
-- NPM (Node Package Manager)  – správce javascriptových balíčků.
+- [NPM (Node Package Manager)](npm.md)  – správce javascriptových balíčků.
 - [Grunt](grunt.md) – sestavovač nebo buildovač; nástroj pro běh vývojářských úloh.
 
 Někdo si může oblíbit i další nástroje tohoto ekosystému, třeba Bower, správce frontend balíčků. Nebo například automatizátor Yeoman, Gulp nebo WebPack. Mohou být velmi užitečné, ale pro zjednodušení se jim tady nebudeme věnovat.
 
-![Node.js](dist/images/original/node-js.svg)
+![Node.js](../dist/images/original/node-js.svg)
 
 Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy: 
 
@@ -19,7 +19,11 @@ Budeme pracovat s příkazovou řádkou, takže se hodí znát její základy:
 
 ## Node.js a NPM
 
-NPM (Node Package Manager) je balíčkovací systém Node.js. Ten musíte stáhnout a nainstalovat jako první. 
+NPM (Node Package Manager) je balíčkovací systém Node.js. Ten musíte stáhnout a nainstalovat jako první.
+
+<div class="related web-only" markdown="1">
+- [NPM a Node.js: Rozcestník odkazů](rozcestnik-npm-node.md)
+</div>
 
 Jednoduchý postup instalace pro všechny platformy je popsaný na webu Node.js: [nodejs.org/en/download](https://nodejs.org/en/download/). 
 
@@ -68,7 +72,9 @@ npm install <nazev-pluginu> --save-dev
 
 Všimněte si, že už neinstalujeme globálně – bez přepínače `-g`. Ano, Grunt pluginy nebo třeba Bower balíčky instalujeme ke konkrétnímu projektu. Zároveň je chceme uložit do konfiguračních souborů balíčkovacího systému (`packages.json`).
 
-Pro inspiraci: Moje tipy na Grunt pluginy. [vrdl.cz/p/grunt-pluginy](https://www.vzhurudolu.cz/prirucka/grunt-pluginy) 
+Pro inspiraci: Moje tipy na Grunt pluginy. [vrdl.cz/p/grunt-pluginy](https://www.vzhurudolu.cz/prirucka/grunt-pluginy)
+
+<!-- AdSnippet -->
 
 Jste na Windows? Pak pozor, některé Grunt pluginy vyžadují poněkud speciální péči. Například tyto dva:
 
@@ -135,3 +141,4 @@ npm help
 
 Nainstalováno? Pokud nemáte nic lepšího po ruce, vezměte příklad ze školení Dnešní webová kodéřina a postupujte podle návodu. [git.io/vMqaj](https://github.com/machal/polaroid-example#instalace-projektu)
 
+<!-- AdSnippet -->

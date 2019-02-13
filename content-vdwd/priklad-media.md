@@ -3,7 +3,7 @@
 Abychom použili vědomosti nasáté v téhle kapitole, vložil jsem do příkladu veškerý mediální obsah. Podívejme se teď na něj v rozlišení dnešních běžných mobilů. 
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-media-pred.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-media-pred.jpg" alt="">
 <figcaption markdown="1">    
 *Příklad před aplikováním přizpůsobivosti médií*
 </figcaption> 

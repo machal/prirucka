@@ -13,11 +13,11 @@ Optimalizovat pro všechny tyhle prohlížeče? Nebojte se. Zajistit dostupnost 
 
 Mrkněme ještě na aktuální podíly návštěvnosti na velkých českých webech podle Gemiusu (rankings.cz):
 
-![Statistiky pro desktopové prohlížeče](dist/images/original/statistiky-prohlizece-desktop.jpg)
+![Statistiky pro desktopové prohlížeče](../dist/images/original/statistiky-prohlizece-desktop.jpg)
 
 Na mobilech je pak situace taková:
 
-![Statistiky pro mobilní prohlížeče](dist/images/original/statistiky-prohlizece-mobil.jpg)
+![Statistiky pro mobilní prohlížeče](../dist/images/original/statistiky-prohlizece-mobil.jpg)
 
 Verze Internet Exploreru je na rozdíl od ostatních prohlížečů potřeba oddělovat, protože se u některých CSS3 vlastností chovají trochu jinak. Druhý důvod je chybějící automatická aktualizace známá z ostatních prohlížečů.
 

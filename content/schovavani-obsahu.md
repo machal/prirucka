@@ -95,7 +95,7 @@ Všechny stroje obsah v `.nav` uvidí. A Google? Protože stránku „vidí“, 
 
 ## Trvalé schování vizuálně, ale ne ve čtečkách {#trvale-vizualne}
 
-Nejčastěji se používá nějaká metoda napozicování mimo [viewport](viewport-mobily.md). A jeden z nějčastějších scénářů použití je odkaz pro skok na hlavní obsah. Ten je důležitý pro starší čtečky, ale kupodivu také pro uživatele, kteří normálně vidí, ale zrovna prostě nemohou použít myš nebo dotykové ovládání. HTML vypadá takto:
+Nejčastěji se používá nějaká metoda napozicování mimo [viewport](viewport.md). A jeden z nějčastějších scénářů použití je odkaz pro skok na hlavní obsah. Ten je důležitý pro starší čtečky, ale kupodivu také pro uživatele, kteří normálně vidí, ale zrovna prostě nemohou použít myš nebo dotykové ovládání. HTML vypadá takto:
 
 ```html
 <a href="#main" class="skip-link">

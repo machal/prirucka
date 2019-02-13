@@ -25,7 +25,7 @@ Pokud vám Axure RP a podobné *wireframovací* nástroje vyhovují, není důvo
 HTML prototypy, o kterých tady mluvím, jsou prostě plnohodnotné webové stránky vytvořené technologiemi, které jsou v dnešních prohlížečích po ruce. Jen jsou cíleně zjednodušené – ořezané o některé atributy, které by finální stránka mít měla a prototyp nemusí.
 
 <figure>
-<img src="dist/images/original/html-prototypovani-1.jpg" alt="">
+<img src="../dist/images/original/html-prototypovani-1.jpg" alt="">
 <figcaption markdown="1">    
 *Jeden z raných HTML prototypů VašeČočky.cz a tatáž stránka na finálním webu, ke které jsme dospěli iterativním procesem*
 </figcaption> 

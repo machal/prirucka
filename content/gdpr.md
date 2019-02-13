@@ -1,11 +1,13 @@
 # GDPR pro webaře: Všechno, co o tom vím (pod dohledem advokáta)
 
-O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmu tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší. 
+O GDPR toho bylo napsáno hodně, zavedení do praxe už je za námi a hlavní vlna zájmu tedy opadla. Proč další článek o GDPR? Je to jednoduché – pořád vidím weby, které tu věc nijak neřeší.
 
-Proto jsem se rozhodl dokončit i článek, který mám rozepsaný mnoho měsíců. Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
+<small markdown="1" id="toc">
+Obsah:
+[Co je GDPR](#co-je-gdpr) – [Rozdíl mezi GDPR a ePrivacy](#gdpr-eprivacy) – [Co je osobní údaj](#osobni-udaj) – [Jak se to týká frontendu a designu](#frontend) – [Jak se to týká backendu](#backend) – [Jak se to týká majitelů webů](#majitele-webu) [Newslettery](#newslettery) – [Souhlas se sledováním a „cookie lišta“](#cookie-lista)
+</small>
 
-Obsah: [Co je GDPR](#co-je-gdpr) – [Rozdíl mezi GDPR a ePrivacy](#gdpr-eprivacy) – [Co je osobní údaj](#osobni-udaj) – [Jak se to týká frontendu a designu](#frontend) – [Jak se to týká backendu](#backend) – [Jak se to týká majitelů webů](#majitele-webu) [Newslettery](#newslettery) – [Souhlas se sledováním a „cookie lišta“](#cookie-lista)
-
+Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
 
 ## Co je GDPR? {#co-je-gdpr}
 
@@ -75,7 +77,7 @@ Obojí rozebereme. Nejprve ale ke způsobu komunikace těchto věcí na webu. [M
 3. Plné znění podmínek na informativní stránce „Zásady ochrany osobních údajů“.
 
 <figure>
-<img src="dist/images/original/gdpr-3-kroky.jpg" alt="">
+<img src="../dist/images/original/gdpr-3-kroky.jpg" alt="">
 <figcaption markdown="1">    
 *Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: [cdpn.io/e/PeJPNx](https://codepen.io/machal/pen/PeJPNx?editors=1100)*
 </figcaption> 
@@ -123,7 +125,7 @@ Aktivní souhlas potřebujete především v situacích, kdy po uživateli chcet
 Příkladem může být přihlášení k newsletteru, registrace, objednávka, odeslání příspěvku do diskuze nebo recenze produktu.
 
 <figure>
-<img src="dist/images/original/gdpr-shopsys.jpg" alt="">
+<img src="../dist/images/original/gdpr-shopsys.jpg" alt="">
 <figcaption markdown="1">    
 *Obrázek: Ukázky formulářů, kde potřebujete aktivní souhlas. Zdroj [APEK & ShopSys](https://docs.google.com/document/d/1gECJnkfHlYe58EHg4af-QAxqqD1HnMAXnaJHzEAS0Sk/edit#)*
 </figcaption> 

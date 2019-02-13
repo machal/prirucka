@@ -156,7 +156,7 @@ Ale nekomplikujme to ještě více. Podívejme se na náš e-shop.
 E-shop teď získal základní grafický styl.
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-dokument.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-dokument.jpg" alt="">
 <figcaption markdown="1">    
 *Dokument se základním grafickým stylem, barvami a typografií. [vrdl.in/vdwddok](https://vrdl.in/vdwddok)*
 </figcaption> 

@@ -7,7 +7,7 @@ Vlastně dnes máme jen dvě možnosti, jak udělat web pro všechna zařízení
 Občas se říká „m tečka web“. Ano, jsou to ty weby, které pro přístupy z počítačů používají adresu jako `www.example.cz` a pro přístupy z mobilů něco jako `m.example.cz`. Z pohledu návštěvníka i provozovatele jsou to vlastně dva weby, které servírují stejný nebo případně i upravený obsah.
 
 <figure>
-<img src="dist/images/original/vdwd/moneta.jpg" alt="">
+<img src="../dist/images/original/vdwd/moneta.jpg" alt="">
 <figcaption markdown="1">    
 *Příklad mobilního webu: [m.moneta.cz](http://m.moneta.cz) a [www.moneta.cz](http://www.moneta.cz)*
 </figcaption> 
@@ -48,7 +48,7 @@ Desktopový Scuk.cz byl totiž *vymyšlený* pro desktop. Když je něco vymyšl
 Scuk byl postavený na mapách Google, takže rozhraní bylo poměrně složité a řešení z pohledu tehdejších frontend technologií relativně těžkopádné. Na mobilech, kde potřebujete rychlé načtení a na pohodlnost ovládání má uživatel vyšší nároky, by bylo ještě těžkopádnější.
 
 <figure>
-<img src="dist/images/original/vdwd/scuk.jpg" alt="">
+<img src="../dist/images/original/vdwd/scuk.jpg" alt="">
 <figcaption markdown="1">    
 *Původní verze Scuk.cz a zpětně dodělaná mobilní verze*
 </figcaption> 
@@ -57,7 +57,7 @@ Scuk byl postavený na mapách Google, takže rozhraní bylo poměrně složité
 Nakonec jsme se rozhodli vytvořit ještě jeden web: právě „m tečka“ verzi pro mobily. Už v době příprav jsme ale věděli, že bude dočasná. Po několika letech se oba staré weby zahodily a vznikl nový, jednotný responzivní web. Už beze mě, protože naše domácnost se v té době rozrůstala o děti. Ale povedl se, že ano?
 
 <figure>
-<img src="dist/images/original/vdwd/scuk-responzivni.jpg" alt="">
+<img src="../dist/images/original/vdwd/scuk-responzivni.jpg" alt="">
 <figcaption markdown="1">    
 *Poslední, již plně responzivní generace Scuk.cz*
 </figcaption> 
@@ -81,7 +81,7 @@ Jen pozor, bez nevýhod to není: Responzivní redesign vyžaduje nezanedbateln�
 Dalšího klienta, firmu Maternia, se mi hned v počátcích spolupráce (někdy v roce 2015) povedlo přesvědčit, aby myšlenku na mobilní web opustil. Rok a půl jsme pak pracovali na pořádném responzivním redesignu všech jeho e-shopů. Nyní ale má dlouhodobě udržitelné řešení, které jedním kódem obsluhuje všechna relevantní zařízení.
 
 <figure>
-<img src="dist/images/original/vdwd/vase-cocky.jpg" alt="">
+<img src="../dist/images/original/vdwd/vase-cocky.jpg" alt="">
 <figcaption markdown="1">    
 *VašeČočky.cz jako příklad responzivního webu*
 </figcaption> 
@@ -95,12 +95,14 @@ Tady bychom mohli skončit, ale dlužím vám ještě poznámku k přídavnému 
 
 ## Adaptivní web
 
-Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Potřebujeme například řešit rychlost načítání nebo měníme pracovní postupy. Mimo jiné potřebujeme poslat každému zařízení jiný obrázek. Nebo zvýraznit telefonní číslo jen na mobilech. [vrdl.cz/b/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
+Technické prostředky původní definice responzivního designu dnes už k výrobě dobrého webu nestačí. Dnes už nestačí přizpůsobit rozvržení stránky a mediální obsah pružnému rozvržení. 
+
+Máme zde také řadu situací, kdy je potřeba měnit věci už na serveru:  Často například v kontextu řešení rychlosti načítání. Můžeme také potřebovat poslat každému zařízení jiný obrázek. Nebo zajistit, aby telefonní číslo bylo aktivní jen na mobilech. Zájemci najdou řešení toho posledního v článku „Průvodce odkazy na telefonní čísla“ na Vzhůru dolů. [vrdl.cz/b/57-href-tel](http://www.vrdl.cz/blog/57-href-tel)
 
 Téhle širší kategorii řešení můžeme říkat adaptivní webdesign. 
 
 <figure>
-<img src="dist/images/original/vdwd/adaptivni.jpg" alt="">
+<img src="../dist/images/original/vdwd/adaptivni.jpg" alt="">
 <figcaption markdown="1">    
 *Do adaptivního webdesignu patří kromě technik responzivního designu také například řešení rychlosti načítání nebo technologie responzivních obrázků*
 </figcaption> 
@@ -118,6 +120,8 @@ Ono na tom vlastně v dlouhodobé perspektivě nezáleží. Fáze webdesignu, ve
 Slovem *responzivní* se totiž dnes už hlavně vyhraňujeme vůči předchozímu způsobu tvorby webů. *Responzivní* je tedy více pojmenování pro aktuální způsob tvorby. Pro aktuální etapu webdesignu. A tahle etapa skončí.
 
 Za pár let už slova „responzivní“ nebo „adaptivní“ potřebovat nebudeme. Všechny weby budou responzivní, jen budované prostředky adaptivního designu. Nebude responzivní webdesign, zůstane zase jen *webdesign*. 
+
+Mimochodem, adaptivní webdesign popsal a příklady moc hezky doplnil Aaron Gustafson v knížce, jejíž název byste neuhádli. „Adaptive Web Design“. [adaptivewebdesign.info](https://adaptivewebdesign.info/)
 
 <p class="ebook-only">
   Pojmologii už ale uzavřeme. V další kapitole budeme pracovat na příkladu konkrétního (responzivního) webu, takže nás čeká praxe. Začít ale musíme zeširoka, protože rozumný návrh (responzivního) uživatelského rozhraní vzniká až na základě informací získaných z analytické fáze projektu. Víte vy co? Pojďme si raději povědět něco o tom, jak se dneska tvoří weby. Slibuji, že to bude stručné.

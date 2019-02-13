@@ -59,7 +59,7 @@ Správnou meta značku pro viewport rozebírám v jiném článku. [vrdl.cz/p/vi
 
 Ještě mi rozumíte? Výborně, trochu to zkomplikujeme.
 
-![device-pixel-ratio](dist/images/original/device-pixel-ratio.png)
+![device-pixel-ratio](../dist/images/original/device-pixel-ratio.png)
 
 Poměr mezi hardwarovým a CSS rozlišením udává vlastnost `resolution` (dříve `device-pixel-ratio`. Mimochodem, pomocí [Media Queries](css3-media-queries.md) je možné zacílit zařízení s displeji v určitém poměru i v CSS:
 

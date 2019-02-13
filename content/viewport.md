@@ -17,7 +17,7 @@ Od výrobců zařízení jsme tedy dostali dva viewporty a ještě jeden navíc.
 
 První iPhone přišel v roce 2006 do situace, kdy byl prakticky každý web navržený jen pro velké displeje. S tím se dítko Steva Jobse snažilo vypořádat zmenšením layoutu webu a přidáním možnosti konkrétní části zvětšovat.
 
-Zároveň v Apple doufali, že začnou vznikat weby přizpůsobené malým obrazovkám. Proto přišli s možností, jak  webaři mohou mobilním  zařízením  sdělit, že pro ně web upravili. My pro to dnes už rutinně používáme [meta značku pro viewport](viewport-meta.md):
+Zároveň v Applu doufali, že začnou vznikat weby přizpůsobené malým obrazovkám. Proto přišli s možností, jak  webaři mohou mobilním  zařízením  sdělit, že pro ně web upravili. My pro to dnes už rutinně používáme [meta značku pro viewport](viewport-meta.md):
 
 ```html
 <meta name="viewport" content="width=device-width">
@@ -36,7 +36,7 @@ Zpět tedy k našim viewportům. Budeme používat terminologii Petera-Paula Koc
 
 ## Layoutový viewport {#layoutovy}
 
-Plocha, do které se vykresluje layout stránky napsaný v CSS.
+To je plocha, do které se vykresluje layout stránky napsaný v CSS.
 
 Pokud vložíte meta značku pro viewport, má stejné rozměry jako vnitřní část okna prohlížeče. Svou velikost ale mění, když uživatel zoomuje, zvětšuje nebo zmenšuje viditelnou část stránky.
 
@@ -48,9 +48,9 @@ Javascriptem zjistíte rozměry layoutového viewportu pomocí `document.documen
 
 ## Vizuální viewport {#vizualni}
 
-„Průzor“, přes který se díváte na layoutový viewport, a tedy stránku samotnou.
+Jedná se o „průzor“, přes který se díváte na layoutový viewport, a tedy stránku samotnou.
 
-Do rozměrů se nezahrnují ovládací prvky prohlížeče. Vizuální viewport zůstává pořád stejný. 
+Do rozměrů se nezahrnují ovládací prvky prohlížeče. Vizuální viewport zůstává pořád stejný.
 
 Javascriptem zjistíte rozměry vizuálního viewportu pomocí `window.innerWidth` a `innerHeight`. Bez posuvníku pak díky `document.documentElement.clientWidth` a `clientHeight`. Více najdete [v textu o velikosti okna](velikost-okna-css-js.md).
 
@@ -60,7 +60,7 @@ Ideální viewport je trochu z jiné kategorie než dva předchozí. Hodnotu tot
 
 Hodnotu ideálního viewportu získáte, když vydělíte hardwarové rozlišení hodnotou `resolution` (nebo postaru `device-pixel-ratio`).
 
-Takový iPhone X má hardwarové rozlišení kratší strany 1 125 pixelů, ale v CSS pixelech je to 375 (Device Pixel Ratio je  3). Ideální viewport je tedy široký 375 pixelů.
+Takový iPhone X má hardwarové rozlišení kratší strany 1125 pixelů, ale v CSS pixelech je to 375 (Device Pixel Ratio je  3). Ideální viewport je tedy široký 375 pixelů.
   
 Více informací je k dispozici ve zvláštním textu <span class="ebook-only" markdown="1">[o CSS pixelu](zmeny-css-pixel.md)</span> <span class="web-only" markdown="1">[o CSS pixelu](css-pixel.md)</span>. 
 

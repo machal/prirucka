@@ -6,8 +6,13 @@ Síla Gridu je v tom, že můžeme mřížku definovat v obou směrech: v řádc
 
 <!-- AdSnippet -->
 
-Nevýhoda je v aktuální podpoře, ale to bude brzy vyřešeno. V době psaní textu zvládnou Grid aktuální verze všech relevantních [prohlížečů](prohlizece.md). Problém je jen v Internet Exploreru 11, který podporuje jen starší verzi Gridu.
+Nevýhoda je v aktuální podpoře, ale to bude brzy vyřešeno. V době psaní textu zvládnou Grid aktuální verze všech relevantních [prohlížečů](prohlizece.md). 
 
+Problém je jen v Internet Exploreru 11, který podporuje jen starší verzi Gridu, ale i tam je mřížku díky Autoprefixeru [možné hezky použít](css-grid-msie.md).
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=9M5RGjlAkeY">CSS Grid</a> ~ Úplné základy ve videu.
+</p>
 
 ## Jednoduchý příklad {#priklad}
 
@@ -90,9 +95,9 @@ Vlastnosti `grid-template-columns` a `grid-template-rows`. Akceptují různé je
   grid-template-columns: 25% 1fr 25%;
   grid-template-rows: 100px 1fr 100px;
 }
-```  
+```
 
-Vytvoří to layout, kde první a poslední sloupec zabírá čtvrtinu šířky rodiče. První a poslední řádek pak `100px` z jeho výšky. Prostřední pak zbytek. Je to vidět v živé ukázce: 
+Vytvoří to layout, kde první a poslední sloupec zabírá čtvrtinu šířky rodiče. První a poslední řádek pak `100px` z jeho výšky. Prostřední pak zbytek. Je to vidět v živé ukázce:
 
 <iframe height='300' scrolling='no' title='CSS Grid: Combining units in template-columns/rows' src='//codepen.io/machal/embed/QmqOeY/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/QmqOeY/'>CSS Grid: Combining units in template-columns/rows</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -150,14 +155,16 @@ Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `e
 
 Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No mohli bychom pokračovat.
 
-Díky tomu neexistuje automatizované řešení pro zpětnou kompatibilitu typu Autoprefixeru. Na druhou stranu nám existence „explorerového“ Gridu v mnoha případech umožní mřížku vcelku bez problémů používat už dnes. Jen je potřeba se kromě základních vlastností dnešního Gridu naučit i ten starší.
+Naštěstí je tady Autoprefixer a dnes už je možné svěřit [řešení Gridu pro IE](css-grid-msie.md) jemu.
+
+Existence „explorerového“ Gridu nám ale v mnoha případech umožní mřížku vcelku bez problémů používat i bez Autoprefixeru. Jen je potřeba se kromě základních vlastností dnešního Gridu naučit i ten starší.
 
 Vezměme příklad třísloupcového layoutu z prvního dema na této stránce:
 
 <iframe height='300' scrolling='no' title='CSS Grid Basics demo (with IE11 support)' src='//codepen.io/machal/embed/XZbrEY/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/XZbrEY/'>CSS Grid Basics demo (with IE11 support)</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-Začneme tím nejjednodušším. 
+Začneme tím nejjednodušším.
 
 ```css
 display: -ms-grid
@@ -177,10 +184,10 @@ IE11 nepodporuje automatické umísťování do mřížky, takže to u jednotliv
 
 ```css
 .content {
-	-ms-grid-column: 2;
-	-ms-grid-column-span: 1;    
-	margin-right: .5em;    
-}  
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  margin-right: .5em;
+}
 ```
 
 `content` umísťujeme do druhého sloupečku mřížky (`-ms-grid-column: 2`) a říkáme, že zabere jen jeden sloupeček té mřížky (`-ms-grid-column-span: 1`).
@@ -188,14 +195,6 @@ IE11 nepodporuje automatické umísťování do mřížky, takže to u jednotliv
 Asi si všimnete vlastnosti `margin-right`. Přesně tak, mezeru mezi sloupečky musíme dělat starými prostředky, protože s vlastností `grid-gap` zde neuspějeme.
   
 Živé demo, které je funkční i v IE11: [cdpn.io/e/XZbrEY](https://codepen.io/machal/pen/XZbrEY)
-
-Ke studiu náhradních řešení pro Explorer a tamní verzi Gridu doporučuji tyhle články:
-
-- [MDN: CSS Grid Layout and Progressive Enhancement](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement)
-- [Rachel Andrew: Should I try to use the IE implementation of CSS Grid Layout?](https://rachelandrew.co.uk/archives/2016/11/26/should-i-try-to-use-the-ie-implementation-of-css-grid-layout/)
-
-Podpora v IE11 je bídná, s tím se asi polemizovat nedá. Nicméně pro jednodušší layouty je přítomnost alespoň nějakého Gridu v tomhle starém ale pořád ještě používaném prohlížeči skvělá zpráva. Rozšiřuje to škálu možností [náhradních řešení](fallback.md).
-
 
 ## Kde se učit? {#ucit}
 
@@ -205,7 +204,6 @@ Než vše detailně připravím pro Vzhůru dolů a [e-booky](https://www.vzhuru
 * Hra [CSS Grid Garden](http://cssgridgarden.com/).
 * Web [CSSGrid.io](https://cssgrid.io/).
 * Detailní vlastnosti pak studujte na [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) nebo [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/).
-
 
 Tohle je jen začátek. Grid samozřejmě dále zkoumám, takže nalaďte všechny [kanály Vzhůru dolů](#touch) nebo doražte na [školení Dnešní webová kodéřina](https://www.vzhurudolu.cz/kurzy/webova-koderina), kde se mu – kromě jiného – věnuji.
 

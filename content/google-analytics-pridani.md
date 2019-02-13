@@ -9,7 +9,7 @@ Pravděpodobně máte po ruce markeťáka, analytika nebo jiného specialistu na
 Z pohledu vývojáře to je skript umožňující vkládat další skripty. Tag Manager je ovšem mince o dvou stranách: 
 
 * Z pohledu *markeťáka* výborná věc, která umožní vkládat kódy měřících, remarketingových nebo testovacích služeb přímo do kódu. Tedy bez vývojářů, což má nesporné výhody. Ale těch [důvodů je z pohledu markeťáka více](http://miroslavpecka.cz/blog/5-duvodu-pro-google-tag-manager/).
-* Očima *vývojáře* je to ale potenciální problém, který při špatném nastavení může neblaze ovlivnit rychlost načítání stránky. No a tu by na starost měli mít především vývojáři. Ostatně je v zájmu všech účastníků vývoje webu [rychlost řešit](https://www.vzhurudolu.cz/prirucka/rychlost-nacitani-proc). 
+* Očima *vývojáře* je to ale potenciální problém, který při špatném nastavení může neblaze ovlivnit [rychlost načítání](rychlost-nacteni.md) stránky. No a tu by na starost měli mít především vývojáři. Ostatně je v zájmu všech účastníků vývoje webu [rychlost řešit](rychlost-nacitani-proc.md). 
 
 <!-- AdSnippet -->
 

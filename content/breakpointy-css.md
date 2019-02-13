@@ -1,18 +1,22 @@
 # Responzivní breakpointy: Realizace v kódu (CSS, Sass i PostCSS)
 
-Ukládání breakpointů a rozmezí do proměnných preprocesoru velmi doporučuji, zpřehlední to kód a zefektivní psaní.
+Ukládání breakpointů a rozmezí do proměnných preprocesoru velmi doporučuji, protože to zpřehlední kód a zefektivní psaní.
 
 Příklady níže využívají CSS preprocesoru Sass v SCSS syntaxi. Ale podíváme se také na PostCSS (a CSSnext) nebo očekávaný vývoj specifikací.
 
+<div class="related web-only" markdown="1">
+- [Jak nastavovat breakpointy?](breakpointy.md)
+</div>
+
 <div class="web-only" markdown="1">
 
-Možností, jak pracovat s breakpointy je více:
+Možností, jak pracovat s breakpointy, je více:
 
 - [Proměnné](#promenne)
 - [Mixiny](#mixiny)
 - [Knihovna Sass MQ](#sass-mq)
 - [Media Queries Level 4](#media-queries-4)
-- [PostCSS a CSSnext]({#postcss)
+- [PostCSS a CSSnext](#postcss)
 
 </div>
 
@@ -110,9 +114,9 @@ Je navíc možné pracovat s vlastními breakpointy, takže způsob volání zů
 @include mq('only screen and (min-width: 1440px)') { }
 ```
 
-Funkcí a možností využití je zde ale více. Pro více  informací vás odkážu na web knihovny: [github.com/sass-mq/sass-mq](https://github.com/sass-mq/sass-mq)
+Funkcí a možností využití je zde ale více. Chcete-li více informací, odkážu vás na web knihovny: [github.com/sass-mq/sass-mq](https://github.com/sass-mq/sass-mq)
 
-Všechna zmíněná řešení mají jednu poměrně citelnou nevýhodu. Používají preprocesor, takže zavádějí nové jazykové prvky do kódu projektu, což může zhoršovat čitelnost kódu.
+Všechna zmíněná řešení mají jednu poměrně citelnou nevýhodu: Používají preprocesor, takže zavádějí nové jazykové prvky do kódu projektu, což může zhoršovat jeho čitelnost.
 
 <!-- AdSnippet -->
 
@@ -132,7 +136,7 @@ Pokud je mi známo, v době psaní článku tohle žádný prohlížeč neumí. 
 
 ## Pomocí PostCSS, což je bohužel jen polovičatý preprocesor  {#postcss}
 
-Mnoho vývojářů se nechalo zlákat postprocesorem PostCSS a snaží se jím nahrazovat preprocesory. V mnohých případech do dává smysl, ale zrovna u definice breakpointů bych se touhle cestou nevydal. Zápis definice i použití vypadá nadějně:
+Mnoho vývojářů se nechalo zlákat postprocesorem PostCSS a snaží se jím nahrazovat preprocesory. V mnoha případech to dává smysl, ale zrovna u definice breakpointů bych se touhle cestou nevydával. Zápis definice i použití vypadá nadějně:
 
 ```css
 @custom-media --small-viewport (max-width: 30em);
@@ -140,13 +144,19 @@ Mnoho vývojářů se nechalo zlákat postprocesorem PostCSS a snaží se jím n
 @media (--small-viewport) { }
 ```
 
-Ovšem pozor – dnešní prohlížeče tomu nerozumí. Potřebujete tedy CSSnext, transpilátor budoucího CSS do stylů, kterým rozumí dnešní prohlížeče. CSSnext v případě uvedeného zápisu ale vychází z draftu (!) specifikace Media Queries 5. To je věc, která se může ještě mnohokrát změnit a do prohlížečů dorazí asi tak… až naprší a uschne.
+Ovšem pozor – dnešní prohlížeče tomu nerozumí. Potřebujete tedy CSSnext, transpilátor budoucího CSS do stylů, kterým rozumí dnešní prohlížeče. CSSnext v případě uvedeného zápisu ale vychází z draftu (!) specifikace Media Queries 5. To je věc, která se může ještě mnohokrát změnit a do prohlížečů dorazí… až naprší a uschne.
 
-V PostCSS bude ve srovnání s preprocesory navíc dost složité připravit logiku, kterou pro práci s kódem v Media Queries potřebujete. Tuhle cestu tedy zatím nedopouručuji. Pro zájemce je zde ještě můj článek o PostCSS (a CSSnext): [vrdl.cz/p/postcss](https://www.vzhurudolu.cz/prirucka/postcss)
+V PostCSS bude ve srovnání s preprocesory navíc dost složité připravit logiku, kterou pro práci s kódem v Media Queries potřebujete. Tuhle cestu tedy zatím nedoporučuji. Pro zájemce je zde ještě můj článek o PostCSS (a CSSnext): [vrdl.cz/p/postcss](https://www.vzhurudolu.cz/prirucka/postcss)
 
 Můj závěr je tedy jasný:
 
 - Pokud můžete, využijte preprocesor a Sass MQ nebo podobnou malou knihovnu.
 - Těšte se na Media Queries čtvrté generace.
+
+<div class="web-only">
+
+Máte ještě jiné tipy ke správně breakpointů? Napište mi nebo přidejte komentář.
+
+</div>
 
 <!-- AdSnippet -->

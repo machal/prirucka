@@ -56,24 +56,28 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 - Správné typy inputů ve formulářích  
 <small>`<input type="email">` a další usnadňují zadávání obsahu na mobilních zařízeních. Užitečné naprosto pro všechny. [Článek na Zdrojáku](https://www.zdrojak.cz/clanky/formulare-html5-nove-inputy/).</small>
 - Barevný kontrast je dostatečný  
-<small>Ocení nejen zrakově postižení, ale také majitelé horších displejů. Prakticky každý při horších světelných podmínkách na mobilech. Pomůže nástroj [Check My Colours](http://www.checkmycolours.com/).</small>
+<small>Ocení nejen zrakově postižení, ale také majitelé horších displejů. Prakticky každý při horších světelných podmínkách na mobilech. Článek [o kontrastu](kontrast.md).</small>
 - Hlavní obsah a navigace jsou dostupné bez Javascriptu  
 <small>Obsah vám jinak nezaindexují vyhledávače. Testujte vypnutím Javascriptu v Developer Tools.</small>
 
 ## Prohlížeče a kompatibilita
 
 - Plné zobrazení napříč prohlížeči a zařízeními  
-<small>Mezi moderními [prohlížeči](prohlizece.md "Webdesignérův průvodce světem prohlížečů v Česku") už tolik rozdílů není. Prohlížečů je ale hodně, pacholků. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby).</small>
+<small>Mezi moderními [prohlížeči](prohlizece.md "Webdesignérův průvodce světem prohlížečů v Česku") už tolik rozdílů není. Prohlížečů je ale hodně, pacholků. Proto pomohou nástroje jako [Browserstack](https://www.browserstack.com/). Viz také můj článek [Jak testovat responzivní weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby). Nezapomeňte ošetřit [i chytré hodinky](weby-watchos.md).</small>
 - Dostupnost hlavního obsahu ve starších prohlížečích  
 <small>Záleží to na projektu a cílové skupině. Ve starších prohlížečích web nemusí vypadat jako z reklamy na zubní pastu, důležitá je ale čitelnost hlavního obsahu a dostupnost navigace.</small>
 - Tisková verze stránky  
 <small>Je potřeba  hlavně zajistit vypnutí pro tisk nepotřebných částí. [Článek na Je čas](http://jecas.cz/tisk "Tisk stránky").</small>
+- Kontexty blokovačů reklamy  
+<small>Neblokuje Adblock i nevinné třídy z vašeho CSS? [Tweet](https://twitter.com/machal/status/1084773644331597824).</small>
+- Kontexty bez CSS  
+<small>Není to časté, ale i bez stylů mohou vaši stránku lidé vidět. [Článek](https://www.vzhurudolu.cz/prirucka/weby-bez-css).</small>
 
 ## Ostatní
 
 - Grafika podporuje HD displeje typu Retina  
 <small>Obyčejná grafika nebude na vysokopacitních displejích vypadat dobře. Trochu teorie [o problému v článku](https://www.vzhurudolu.cz/prirucka/css-pixel "CSS pixel"). V praxi potřebujete [SVG](svg.md) a [atribut `srcset`](srcset-sizes.md).</small>
-- Rychlost načítání: požadované skóre v PageSpeedInsights  
+- [Rychlost načítání](rychlost-nacteni.md): požadované skóre v PageSpeedInsights  
 <small>S optimalizací pomůže [Pagespeed Insights tester](pagespeed-insights.md). Čím vyšší skóre, tím líp. 100/100 tam ale dosáhnout obvykle nejde.</small>
 - Rychlost načítání: požadovaný SpeedIndex z WebpageTest.org  
 <small>[SpeedIndex](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) číslo, které se pokouší vyjádřit rychlost webu. Čím vyšší, tím horší. Ideální stav je někdo kolem 1000. Testujte na [WebpageTest.org](http://www.webpagetest.org/).</small>

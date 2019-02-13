@@ -186,7 +186,7 @@ Co ale ještě zmínit chci, je podpora nových atributů a značky `<picture>` 
 
 ## Podpora `srcset`, `sizes` a `<picture>` v&nbsp;prohlížečích  {#podpora}
 
-Podporují je všechny moderní prohlížeče. Responzivní obrázky nám chybí hlavně ve všech verzích Exploreru a Android Browseru do čtyřkových verzí Androidu. [caniuse.com/srcset](https://caniuse.com/#search=srcset) 
+Podporují je všechny moderní prohlížeče. Responzivní obrázky nám chybí hlavně ve všech verzích Exploreru (a taky Android Browseru do čtyřkových verzí Androidu, ale to už nás asi nemusí trápit). [caniuse.com/srcset](https://caniuse.com/#search=srcset) 
 
 Obzvlášť IE ve verzi 11 je ke dni psaní textu ještě velmi silně zastoupený. Je však dobré si uvědomit, jaké je v tomto případě chování „nepodporujících prohlížečů“.
 

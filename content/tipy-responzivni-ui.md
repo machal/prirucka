@@ -3,7 +3,7 @@
 Odstraňte zbytečnosti, šetřete ikonkami a rozbalovacími nabídkami. Otevírejte správné klávesnice, používejte našeptávače. Ale mám i další. Jen čtěte.
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-7.jpg" alt="">
+<img src="../dist/images/original/vdwd/triky-ui-7.jpg" alt="">
 <figcaption markdown="1">    
 *Zbytečné ikony sociálních sítí na Albert.cz a podlehnutí ikonománii na EquaBank.cz*
 </figcaption> 
@@ -22,7 +22,7 @@ Podívejme se na web EquaBank.cz na dalším obrázku a udělejme si kvíz: Co m
 Na většinu ikon se nedá spolehnout. Doplňte je textovými popisy. Více v textu „UX Myth: Icons enhance usability“ na UXMyths.com. [vrdl.in/7qc2n](http://uxmyths.com/post/715009009/myth-icons-enhance-usability)
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-8.jpg" alt="">
+<img src="../dist/images/original/vdwd/triky-ui-8.jpg" alt="">
 <figcaption markdown="1">    
 *Špatně použitelný seznam poboček v rozbalovací nabídce na FotoSkoda.cz a chytřejší výběr položek na CSOBpoj.cz*
 </figcaption> 
@@ -37,7 +37,7 @@ Ani autoři webu FotoSkoda.cz se nevyhnuli nasypání ohromného seznamu poboče
 Více také v textu od Luke Wroblewskiho „Dropdowns Should be the UI of Last Resort“. [vrdl.in/gad1e](http://www.lukew.com/ff/entry.asp?1950)
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-9.jpg" alt="">
+<img src="../dist/images/original/vdwd/triky-ui-9.jpg" alt="">
 <figcaption markdown="1">    
 *Špatně použitelná alfanumerická klávesnice na CSOBpoj.cz a lepší numerická na SmileBox.cz*
 </figcaption> 
@@ -52,7 +52,7 @@ Kdykoliv po uživateli chcete vyplnit telefonní číslo, volte specifický typ 
 A ještě, prosím: Telefonní čísla na stránce vždy na mobilních zařízeních vypisujte jako odkazy. [vrdl.cz/b/57-href-tel](https://www.vzhurudolu.cz/blog/57-href-tel)
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-10.jpg" alt="">
+<img src="../dist/images/original/vdwd/triky-ui-10.jpg" alt="">
 <figcaption markdown="1">    
 *Krokovač na CSOBpoj.cz a našeptávač u vyhledávání na VaseCocky.cz*
 </figcaption> 
@@ -70,7 +70,7 @@ Je velmi dobrým pomocníkem ve formulářových polích, kde je velké množstv
 V HTML pro ten účel existuje prvek `&lt;datalist&gt;`. Jeho využití je ale omezené. Běžné našeptávače jsou v podobně pluginů dostupné pro každý moderní javascriptový framework.
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-11.jpg" alt="">
+<img src="../dist/images/original/vdwd/triky-ui-11.jpg" alt="">
 <figcaption markdown="1">    
 *Nutnost psát na SmileBox.cz a rozbalování méně významného obsahu na VaseCocky.cz*
 </figcaption> 
@@ -85,7 +85,7 @@ Tohle by stálo na webu SmileBox.cz za vylepšení. Web po uživateli chce ručn
 Spoléhám na to, že uživatelé stránku posunovat umí. To ano. Neznamená to ale, že stránka by měla být dlouhá jako ponožky Pipi dlouhé punčochy. Hezký objev od UX konzultanta Jana Kvasničky vidíte na dalším obrázku.
 
 <figure>
-<img src="dist/images/original/vdwd/triky-ui-12.jpg" alt="">
+<img src="../dist/images/original/vdwd/triky-ui-12.jpg" alt="">
 <figcaption markdown="1">    
 *Pro použití některých stránek bychom potřebovali trošku vyšší telefon. Tady je vidět předkošík na Smarty.cz. Je to modální okno, které se objeví po přidání zboží do košíku. Důležité aktivní prvky jsou červeně orámované. Zdroj: Jan Kvasnička. [kvasnickajan.cz](http://blog.kvasnickajan.cz)*
 </figcaption> 

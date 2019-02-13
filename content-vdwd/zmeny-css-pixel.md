@@ -36,7 +36,7 @@ Dejme tomu, že jsme si v grafickém programu připravili obrázek kružnice. Od
 ```  
 
 <figure>
-<img src="dist/images/original/bezny-vs-retina.jpg" alt="">
+<img src="../dist/images/original/bezny-vs-retina.jpg" alt="">
 <figcaption markdown="1">    
 *Hustota hardwarových pixelů je na „Retina“ displeji násobně vyšší*
 </figcaption> 

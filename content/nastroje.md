@@ -64,7 +64,7 @@ Jednodušší alternativou jsou zase klikací apky jako Prepros nebo CodeKit (te
 
 ## NPM, Bower pro instalaci závislostí
 
-[NPM](https://www.npmjs.com/) a [Bower](bower.md) jsou balíčkovače, které vám ušetří energii pro správu závislostí frontend balíčků, které při vývoji používáte.
+[NPM](npm.md) a [Bower](bower.md) jsou balíčkovače, které vám ušetří energii pro správu závislostí frontend balíčků, které při vývoji používáte.
 
 NPM obvykle používám pro instalaci vývojářských balíčků jako jsou Grunt pluginy, Bower pro instalaci závislostí webu – jQuery atd.
 

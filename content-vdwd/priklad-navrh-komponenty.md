@@ -30,7 +30,7 @@ A ještě na jednu věc nesmíme zapomenout, a sice na variabilitu obsahu. V na�
 Zpět ke skicám. Já ze sebe dostal šest možností, co vy?
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-skici.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-skici.jpg" alt="">
 <figcaption markdown="1">    
 *Šest řešení ve skicách komponenty fotogalerie*
 </figcaption> 
@@ -61,7 +61,7 @@ Rychlé demo si vytvoříme na už zmíněném online editoru *CodePen* a použi
 Aktuální stav prototypu vidíte na obrázku nebo naživo na CodePenu. [cdpn.io/e/JEKxEK](https://codepen.io/machal/pen/JEKxEK).
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-komponenta-review-1.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-komponenta-review-1.jpg" alt="">
 <figcaption markdown="1">    
 *Komparativní pohled na vybraná rozlišení mobilních zařízení s Androidem přes Re:view*
 </figcaption> 
@@ -107,7 +107,7 @@ Když kód pro režim na šířku hodně zjednodušíme, bude vypadat následovn
 Využíváme `orientation: landscape`, jednu z [Media Queries](css3-media-queries.md), o kterých budeme mluvit v další kapitole.
 
 <figure>
-<img src="dist/images/original/vdwd/priklad-komponenta-review-2.jpg" alt="">
+<img src="../dist/images/original/vdwd/priklad-komponenta-review-2.jpg" alt="">
 <figcaption markdown="1">    
 *Výsledný prototyp designu fotogalerie*
 </figcaption> 
@@ -122,7 +122,7 @@ Je dobré ale na tomto místě zopakovat, že děláme prototypování *designu*
 Snad byly na příkladu dobře vidět výhody prototypů přímo v kódu, o kterých jsem už psal.
 
 * Bylo to *brzy v prohlížeči*, takže jsme na nevýhody původně vybraného řešení nepřišli až při drahé technické implementaci.
-* Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom CodePen mohli testovat na uživatelích.
+* Je to *plnohodnotná* webová stránka, takže jsme mohli testovat jakýkoliv kontext. V tomto případě stačily různě velké obrazovky mobilních zařízení. Stejně tak bychom CodePen mohli testovat s uživateli.
 * Kód je zčásti *znovu použitelný* a při následné implementaci jej použijeme jako základ.
 
 Jde ovšem pořád jen o mou designérsko-kodérskou hypotézu, kterou bych měl ověřit uživatelským testováním. To je ale téma, které se nám do knížky už nevejde. Zájemce odkážu na už zmíněný kurz „Human-Centered Design: Design zaměřený na člověka“, který je dostupný zdarma. [seduo.cz/human-centered-design](https://www.seduo.cz/human-centered-design)

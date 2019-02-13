@@ -2,7 +2,7 @@
 
 Jde o podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
 
-Dejme si rychlý příklad: 
+Dejme si rychlý příklad:
 
 ```css
 h1 { font-size: 2em }
@@ -23,16 +23,15 @@ Z CSS2 budete znát podmínky pro typy médií jako třeba `@media print`. Norma
 Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
 
 <figure>
-<img src="dist/images/original/media-query.jpg" alt="">
-<figcaption markdown="1">    
+<img src="../dist/images/original/media-query.jpg" alt="">
+<figcaption markdown="1">
 *Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování podmínky vyloučí starší Internet Explorery*
-</figcaption> 
+</figcaption>
 </figure>
-
 
 ## Body zlomu
 
-V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), což je hodnota vlastnosti média. O „breakpointech“ mluvíme jako o sadě hodnot pro konkrétní web nebo systém designu. Knihovna Bootstrap má například body zlomu přednastavené takto: 
+V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), což je hodnota vlastnosti média. O „breakpointech“ mluvíme jako o sadě hodnot pro konkrétní web nebo systém designu. Knihovna Bootstrap má například body zlomu přednastavené takto:
 
 - extra small (šířka okna do `767px`)
 - small (768–991)
@@ -41,6 +40,11 @@ V responzivním webdesignu nemůžeme minout pojem bod zlomu (*breakpoint*), co�
 
 Pro konkrétní projekty samozřejmě nebudou tyto konkrétní hodnoty použitelné. Body zlomu je vždy lepší definovat podle obsahu konkrétních komponent než takto centrálně. Body zlomu Boostrapu berte jen jako ilustraci pojmu.
 
+<div class="web-only ebook-vdwd-only" markdown="1">
+
+[Tvorbou breakpointů](breakpointy.md) z pohledu designéra se zabývám ve zvláštním textu.
+
+</div>
 
 ## Minimální nebo maximální výška a šířka
 
@@ -204,18 +208,6 @@ Vývojáři si dělí kód podle typu zařízení: Například do `mobile.css`, 
 Jediný rozumný hlavní způsob organizace souborů se styly je podle komponent uživatelského rozhraní, jako jsou navigace, tlačítka atd. Píšete totiž kód pro jednu komponentu, nikoliv pro jeden bod zlomu. Pokud je to pro vás nové, čtěte můj blogpost o organizaci CSS. [vrdl.cz/b/29-organizace-css-2014](https://www.vzhurudolu.cz/blog/29-organizace-css-2014)
 
 
-## Podpora ve starších prohlížečích: nejlépe s Respond.js
-
-Internet Explorer 8 a starší, budiž jim země lehká, neumějí ani základní vlastnosti médií z CSS3 Media Queries. Pokud to na svém projektu potřebujete řešit, doporučuji použít polyfill Respond.js. Je odzkoušený a dostatečně rychlý. Používá jej například i populární frontend framework Bootstrap. [vrdl.in/respond](https://github.com/scottjehl/Respond)
-
-```html
-<!--[if lte IE 8]>
-<script src="respond.js"></script>
-<![endif]-->
-```
-
-Dejte si pozor na místo vložení. Skript by měl být hned za odkazem na CSS soubor.
-
 ## Media Queries v Javascriptu
 
 V Javascriptu používejte funkci `matchMedia()`, která přijímá stejné podmínky jako CSS:
@@ -226,4 +218,4 @@ if (matchMedia('only screen and (max-width: 40em)').matches) {
 }
 ```
 
-Častou chybou je detekce podle šířky nebo výšky okna a následné spoléhání na událost `onresize`. Je to v kódu zbytečně složité a při zmenšování nebo zvětšování okna výkonnostně problematické. `matchMedia()` sice opět nemá podporu v IE8 a starších, ale na to máme polyfill, který je také součástí Respond.js. [vrdl.in/matchm](https://github.com/paulirish/matchMedia.js/)
+Častou chybou je detekce podle šířky nebo výšky okna a následné spoléhání na událost `onresize`. Je to v kódu zbytečně složité a při zmenšování nebo zvětšování okna výkonnostně problematické. 

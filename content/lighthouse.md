@@ -2,11 +2,11 @@
 
 Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak vyzrát na Google.
 
+[Proč jej používat?](#proc) – [Co umí analyzovat](#co-umi) – [Jak jej používat](#jak-pouzivat) – [Jak funguje](#jak-funguje) – [Příkazová řádka](#prikazovka) – [Pravidelné spouštění](#pravidelne)
+
 Používám jej hlavně pro analýzu [rychlosti načítání](rychlost-nacitani-proc.md), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
 
 Velmi doporučuji jej používat pro vaše weby a webové aplikace  a nejlépe to dělat pravidelně a automaticky.
-
-Obsah článku: [Proč jej používat?](#proc) – [Co umí analyzovat](#co-umi) – [Jak jej používat](#jak-pouzivat) – [Jak funguje](#jak-funguje) – [Příkazová řádka](#prikazovka) – [Pravidelné spouštění](#pravidelne)
 
 ## Proč jej používat? {#proc}
 
@@ -29,9 +29,9 @@ Ale bavme se i o nevýhodách:
 ## Co umí analyzovat? {#co-umi}
 
 <figure>
-<img src="dist/images/original/lighthouse-online.jpg" alt="Lighthouse online">
-<figcaption markdown="1">    
-*Obrázek: Ukázkový report pro Vzhůru dolů. Vidíte celkové skóre, výsledky pro danou oblast a pak velmi rozumná doporučení ke zlepšení. 
+<img src="../dist/images/original/lighthouse-online.jpg" alt="Lighthouse online">
+<figcaption markdown="1">
+*Obrázek: Ukázkový report pro Vzhůru dolů. Vidíte celkové skóre, výsledky pro danou oblast a pak velmi rozumná doporučení ke zlepšení.
 </figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Ligthouse je balíček pro Node.js, proto je způsobů jeho použití fakt hodn�
 Lighthouse se ve většině případu použití spouští na vašem počítači a dělá se jen jeden test, takže se výsledky testů mohou lišit podle momentálního vytížení. Hlavně v oblasti *Performance*.
 
 <figure>
-<img src="dist/images/original/lighthouse-chrome.jpg" alt="Lighthouse v Google Chrome">
+<img src="../dist/images/original/lighthouse-chrome.jpg" alt="Lighthouse v Google Chrome">
 <figcaption markdown="1">
 *Obrázek: Nastavení Lighthouse před spuštěním auditu v prohlížeči Chrome*
 </figcaption>

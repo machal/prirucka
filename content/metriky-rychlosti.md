@@ -22,7 +22,7 @@ Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní 
 Daleko lepší způsob metodika: Do stránky si vložíte skript, který měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou nastavené spíše na velké weby a firmy. Prostě na ně potřebujete peněz jako šlupek. U velkých webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights. 
 
 <figure>
-<img src="dist/images/original/pagespeed-insights-chrome-ux.jpg" alt="">
+<img src="../dist/images/original/pagespeed-insights-chrome-ux.jpg" alt="">
 <figcaption markdown="1">
 *Nástroj PageSpeed Insights zobrazuje údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup*
 </figcaption> 
@@ -47,7 +47,7 @@ Většina rychlostních metrik (kromě Speed Indexu) jsou prostě události, kte
 | [Load](#Load)                       | Načtení všeho       | 
 
 <figure>
-<img src="dist/images/original/metriky-rychlosti.jpg" alt="">
+<img src="../dist/images/original/metriky-rychlosti.jpg" alt="">
 <figcaption markdown="1">    
 *Ukázka postupného vzniku událostí pro vykreslování stránky. Zde je jako příklad Vzhůru dolů*
 </figcaption> 
@@ -115,7 +115,7 @@ A je to také jediná metrika, která něco říká o uživatelském prožitku v
 Chcete-li být na sebe přísní, držte SpeedIndex pod 1 000 bodů. Většině běžných webů bude ale dnes stačit dostat se do pětitisícové hranice na rychlosti 3G Slow.
 
 <figure>
-<img src="dist/images/original/speed-index.jpg" alt="">
+<img src="../dist/images/original/speed-index.jpg" alt="">
 <figcaption markdown="1">    
 *1) Vezměme jeden web se dvěmi různými postupy vykreslování. 2) Do grafu si vykreslíme postup vykreslování obou případů. Ve vodorovné ose je čas, ve svislé procenta vykreslení viditelné části obrazovky. 3) Speed Index je plocha nad průběhem grafu. (Zdroj obrázku: WebpageTest.org)*
 </figcaption> 
@@ -160,7 +160,7 @@ Je to tradičně nejpoužívanější metrika. Nic proti ní a vylepšování je
 Metriku uvidíte například v záložkách Network vývojářských nástrojů Firefoxu nebo Chrome jako červenou čáru. Ale nějak ji uvádějí vlastně všechny měřící nástroje.
 
 <figure>
-<img src="dist/images/original/devtools-load.jpg" alt="">
+<img src="../dist/images/original/devtools-load.jpg" alt="">
 <figcaption markdown="1">    
 *Chrome DevTools s vyznačenou událostí Load (červená). Událost DOMContentReady je modrá*
 </figcaption> 

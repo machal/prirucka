@@ -13,13 +13,10 @@ Je to má výchozí šablona pro dokument. Když ji zjednoduším, aby se vešla
 
 ```html
 <!doctype html>
-<!--[if lte IE 8]><html class="no-js old-ie" lang="cs"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="cs">
-<!--<![endif]-->
 ```
 
-Máme zde správný typ dokumentu a nastavený jazyk (`lang="cs"`). Připravili jsme si detekci starších Explorerů (`class="old-ie"`) nebo situace, kdy ve stránce nefunguje Javascript (`class="no-js"`). Můžeme využít při stylování komponent.
+Máme zde správný typ dokumentu a nastavený jazyk (`lang="cs"`). Připravili jsme si detekci situace, kdy ve stránce nefunguje Javascript (`class="no-js"`). Můžeme využít při stylování komponent.
 
 Teď pojďme k hlavičce:
 
@@ -27,7 +24,6 @@ Teď pojďme k hlavičce:
 <head>
   <meta charset="utf-8">
   <title>____Title____</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
     document.documentElement.className =

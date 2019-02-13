@@ -8,7 +8,6 @@ Knížka by nikdy v této podobě nevyšla, nebýt podpory (a přiměřené krit
 
 Za poskytnutí materiálů k produktům ukázkového e-shopu děkuji panu Jaroslavu Naňákovi ze společnosti Fare.
 
-Foto autora je od [Jana Forejta](https://about.me/janforejt). 
+Foto autora je od [Jana Forejta](https://about.me/janforejt).
 
-Za připomínky k verzi 1.1 děkuji těmto dobrým duším: Michal Horáček, Jakub Honíšek, Martin Kavík, Ondřej Konečný, Lubomír Merta, Vojtěch Sláma, Ladislav Suchánek a Martin Pešout.  
-
+Za připomínky k verzím 1.1 a 1.2 děkuji těmto dobrým duším: Ivan Boukal, Jiří Černý, Jakub Honíšek, Michal Horáček, Martin Kavík, Ondřej Konečný, Michal Maňák, Lubomír Merta, Mário Raček, Vojtěch Sláma, Ladislav Suchánek, Zuzana Štočková a její studenti, Martin Pešout. Díky!

@@ -4,7 +4,7 @@ Texty o technikách a technologiích moderní webové kodéřiny.
 
 ## Autorství
 
-Autorem Příručky je Martin Michálek: [vrdl.cz/martin]([http://www.vzhurudolu.cz/martin).
+Autorem Příručky je Martin Michálek: [vrdl.cz/martin]([www.vzhurudolu.cz/martin).
 
 Opravy, bugreporty, změny jsou vítány: [github.com/machal/prirucka/issues](https://github.com/machal/prirucka/issues).
 
@@ -49,7 +49,7 @@ Lorem ipsum lorem ipsum:
 ```
 - **Méně důležité** - bez odkazu (máme Google, že…)
 
-A pozor, zápis odkazu na konci odstavce nesmí začínat `http://` např. `[http://vrdl.cz…]`. Vždy `[vrdl.cz…]`. Jednak kvůli stručnosti a jednak kvůli možným chybám v XHTML pro ePub.
+A pozor, zápis odkazu na konci odstavce nesmí začínat `http://` např. `[vrdl.cz…]`. Vždy `[vrdl.cz…]`. Jednak kvůli stručnosti a jednak kvůli možným chybám v XHTML pro ePub.
 
 Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům tedy dávat do textu shrnutí.
 
@@ -66,14 +66,14 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 Standardně vkládáme jako obrázek:
 
 ```markdown
-![Podíl mobilů](dist/images/original/statistika-mobily.jpg)
+![Podíl mobilů](../dist/images/original/statistika-mobily.jpg)
 ```
 
 Alternativně s popiskem jako `<figure>`:
 
 ```html
 <figure>
-<img src="dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
 <figcaption markdown="1">
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
 </figcaption>

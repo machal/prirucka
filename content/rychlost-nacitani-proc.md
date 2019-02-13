@@ -31,7 +31,7 @@ Další analýzy dokazují, že se zrychlení webu pozitivně promítá do všec
 
 ## Rychlost ovlivňuje řazení inzerátů AdWords a přirozených výsledků ve vyhledávání přes Google
 
-Ano, rychlost načítání je jedním z řadicích parametrů AdWords kampaní. Už od roku 2008. Na oficiálním blogu AdWords se píše:
+Ano, [rychlost načítání](rychlost-nacteni.md) je jedním z řadicích parametrů AdWords kampaní. Už od roku 2008. Na oficiálním blogu AdWords se píše:
 
 >  Pokud výrazně vylepšíte čas načtení vaší cílové stránky, měli byste vidět lepší Quality Score a nižší nabídky pro minimální cenu za proklik (CPC).
 

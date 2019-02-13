@@ -136,11 +136,11 @@ Opakujícími se barevnými a zelenými plochami se nám vykreslí „terč“. 
 
 ## Podpora v prohlížečích
 
-Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini. Android Browser 2.3 opakované gradienty nezvládne vůbec a v podpoře běžných gradientů má také mezery: [caniuse.com/gradients](https://caniuse.com/gradients).
+Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini.  [caniuse.com/gradients](https://caniuse.com/gradients).
 
 <!-- AdSnippet -->
 
-Nezapomeňte tedy vždy definovat fallback. Gradient se považuje za obrázek na pozadí, takže si můžete fallback definovat jako běžnou barvu:
+Pokud je to pro vás problém, nezapomeňte vždy definovat fallback. Gradient se považuje za obrázek na pozadí, takže si můžete fallback definovat jako běžnou barvu:
 
 ```css
 color: #fff;
@@ -148,35 +148,6 @@ background-color: green;
 background-image:
   linear-gradient(lightgreen, darkgreen);
 ```
-
-
-### Gradient, dříve čert z prefixového pekla
-
-Dnes už to takový problém není, ale každý prohlížeč v různých fázích vývoje implementoval různé fáze vývoje specifikace. Nebo vlastní návrh syntaxe. Takže pokud chcete podporovat i starší verze moderních prohlížečů, věnujte zvýšenou pozornost prefixovým variantám.
-
-### Starší syntaxe prohlížečů postavených na Webkitu
-
-Pokud někde chcete plně podporovat starší Chrome, Safari do verze 5, iOS Safari do verze 4, Android Browser do verze 3 a dalších několik prohlížečů, musíte použít jejich starší syntaxi. Jen pozor, liší se nejen prefixem, ale také způsobem zápisu. Například směr osy se určuje deklarováním růžku nebo strany, ze které gradient začíná:
-
-```css
-background-image:
-  -webkit-linear-gradient(top, lightgreen, green);
-```
-
-U většiny webů to asi nebudete muset řešit a spokojíte se s fallbackem pomocí definované barvy. Poslední verze všech prohlížečů se shodují na W3 syntaxi, kterou používáme v příkladech. A bez prefixů!
-
-
-### `filter` v IE8 a IE9
-
-Jednoduché, dvoubarevné lineární gradienty lze ve starších Explorerech zařídit s pomocí proprietární vlastnosti filter:
-
-```css
--ms-filter:
-  "progid:DXImageTransform.Microsoft.gradient(
-    GradientType=0, startColorstr=#00ff00, endColorstr=#008800)";
-```
-
-V parametru `GradientType` nastavujete svislý (`0`) nebo vodorovný (`1`) směr gradientu. U filtrů jen pozor na pomalejší vykreslování a na fakt, že `background-image` účinnost filtrů ruší.
 
 
 ## Tipy, triky a nástroje

@@ -7,7 +7,7 @@ Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebP
 Validátor základních technických problémů, které komplikují rychlost webu. Zde začněte. Otestujte si tady všechny důležité vstupní šablony. 
 
 <figure>
-<img src="dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
 <figcaption markdown="1">    
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
 </figcaption> 
@@ -55,7 +55,7 @@ Pro mě nástroj číslo jedna. Dělá pokročilou analýzu a testuje detailněj
 Umožňuje testování z jiné lokality, testování pomalého připojení a v prohlížečích, ve kterých nemáte pokročilé vývojářské nástroje. Třeba v těch mobilních nebo ve starých Internet Explorerech.
 
 <figure>
-<img src="dist/images/original/webpagetest-schema.jpg" alt="WebPagetest.org stránka s výsledkem testu">
+<img src="../dist/images/original/webpagetest-schema.jpg" alt="WebPagetest.org stránka s výsledkem testu">
 <figcaption markdown="1">    
 *WebpageTest.org: kromě vysvědčení (1) vidíme i Speed Index (2), vodopádový pohled (3) nebo se můžeme prokliknout na filmový pás (4)*
 </figcaption> 
@@ -90,7 +90,7 @@ Dívám se samozřejmě i na další čísla. WebPagetest má mnoho zákoutí k 
 Pokročilá analýza a detailní testování procesů načítání v Chrome. Velmi podobný nástroj mají i ostatní moderní prohlížeče.
 
 <figure>
-<img src="dist/images/original/devtools-rychlost-schema.jpg" alt="DevTools">
+<img src="../dist/images/original/devtools-rychlost-schema.jpg" alt="DevTools">
 <figcaption markdown="1">    
 *Chrome DevTools a analýza rychlosti*
 </figcaption> 

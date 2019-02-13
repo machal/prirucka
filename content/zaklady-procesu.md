@@ -5,7 +5,7 @@ V dalších kapitolách budeme navrhovat a psát kód jednoduché responzivní w
 Celý proces tvorby webu zjednoduším do dvou kroků. Ony to vlastně kroky nejsou. Je to nekonečný koloběh, jehož fáze se v praxi velmi prolínají.
 
 <figure>
-<img src="dist/images/original/vdwd/proces-tvorby.jpg" alt="">
+<img src="../dist/images/original/vdwd/proces-tvorby.jpg" alt="">
 <figcaption markdown="1">    
 *Zjednodušený koloběh tvorby webu. V knížce se budeme zabývat hlavně fází řemeslnou: návrhem a realizací*
 </figcaption> 
@@ -24,7 +24,7 @@ V této fázi pracují hlavně designéři, produktoví manažeři, datoví, mar
 
 Na základě předchozí fáze navrhneme drátěné modely rozhraní, prototypy a grafické zpracování. Pracují tady weboví designéři, grafici, frontend kodéři, programátoři. Prostě řemeslníci. A, ano, hlavně této fázi se v textech věnuji.
 
-Ve chvíli, kdy odtud vyjde něco hmatatelného, přecházíme opět do fáze průzkumu a definice. Testujeme výsledky na uživatelích, analyzujeme podle dat z Google Analytics nebo prostě podrobujeme vlastnímu kritickému pohledu. Vyhodnocujeme. Začali jsme tím další kolečko průzkumu, definice a následného návrhu s realizací.
+Ve chvíli, kdy odtud vyjde něco hmatatelného, přecházíme opět do fáze průzkumu a definice. Testujeme výsledky s uživateli, analyzujeme podle dat z Google Analytics nebo prostě podrobujeme vlastnímu kritickému pohledu. Vyhodnocujeme. Začali jsme tím další kolečko průzkumu, definice a následného návrhu s realizací.
 
 Takhle stručně mně to pro potřeby knížky stačí. Výhrady zkušených webařů, nespokojených s mou zjednodušující interpretací, tady asi slyšíte až k vám domů. My ale můžeme pokračovat dál, protože ty zvědavé pošlu k dalším zdrojům.
 

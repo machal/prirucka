@@ -21,7 +21,7 @@ Nebyl [na školení](https://www.vzhurudolu.cz/kurzy/rychlost-nacitani), nečte.
 Rychlost neřeší. Proč by měl? To je přece úkol vývojáře. Do stránky vloží čtyři monitorovací a A/B testovací skripty. Poběží pořád a na všech stránkách. I když se zrovna nic netestuje. Přidá chatovací lištu a vývojáře poprosí o plugin pro marketingový splash screen, který viděl na Alze.
 
 <figure>
-<img src="dist/images/original/amp-webari.jpg" alt="">
+<img src="../dist/images/original/amp-webari.jpg" alt="">
 <figcaption markdown="1">    
 *Obrázek: Tři rychlostní mimoni: grafik, marketér a vývojář*
 </figcaption> 
@@ -76,7 +76,7 @@ Zatímco totiž koukáte na výsledky vyhledávání Google, prohlížeč nelen�
 Zkoušel jsem otestovat dva z českých AMP webů – blog váženého klienta [Bella Rose](https://atmosfera.bellarose.cz/) a [recepty na Cuketka.cz](https://recepty.cuketka.cz/):
 
 <figure>
-<img src="dist/images/original/amp-bella-cuketka.jpg" alt="">
+<img src="../dist/images/original/amp-bella-cuketka.jpg" alt="">
 <figcaption markdown="1">    
 *Obrázek: Nahoře Bella Rose a jejich původní článek na blogu, pak jeho umístění v Google hledání a nakonec AMP verze téhož, řešená WordPress pluginem. Totéž dole u pana Cuketky.*
 </figcaption> 

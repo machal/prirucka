@@ -4,7 +4,7 @@
 
 A zároveň samozřejmě jeden z nejsilnějších nástrojů z pohledu HTML kódu jednotlivých stránek pro získávání konkurenční výhody ve vyhledávači.
 
-![Rich Snippets dostupné na českém Google](dist/images/original/rich-snippets.jpg)
+![Rich Snippets dostupné na českém Google](../dist/images/original/rich-snippets.jpg)
 
 Jak je z obrázku patrné, máte [na českém Google](https://www.facebook.com/media/set/?set=a.384585593913.164660.250810683913&type=1) šanci nechat zobrazovat recenze, recepty, události a třeba informaci zda je produkt na skladě.
 
