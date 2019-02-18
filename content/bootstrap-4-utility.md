@@ -2,10 +2,18 @@
 
 O novinkách v Bootstrapu 4 jsem [už psal](/blog/39-bootstrap-4). Dneska vám ale chci ukázat věc, která se mi na čtyřce líbí nejvíc. Utility třídy.
 
-
 ## Utility třídy?
 
-Nebo jinak *užitkové*, *subatomické* nebo *helper* třídy. Zatím přesně nevím, jak jim říkat. 
+Nebo jinak *užitkové*, *subatomické* nebo *helper* třídy. Zatím přesně nevím, jak jim říkat.
+
+<small markdown="1">
+
+Poznámka: Zatím jim říkám utility a více o nich píšu ve dvou zvláštních textech:
+
+- [Utility CSS: K čemu jsou dobré systémy jednoúčelových tříd?](css-utility.md)
+- [Uti­li­ty třídy a kom­po­nen­ty v CSS: Jak najít rov­no­váhu?](css-utility-komponenty.md)
+
+</small>
 
 Jde o třídu, ve které je uloženo často používané CSS. Některé znáte a asi i sami používáte. Například:
 

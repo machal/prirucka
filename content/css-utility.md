@@ -77,7 +77,7 @@ Ale abychom jen netlachali, vyzkoušejte si moc pěknou službu autorů Tachyons
 Tenhle analyzátor počítá výskyt různých typů deklarací a také duplicity v kódu.
 
 <figure>
-<img src="dist/images/original/css-stats.jpg" alt="">
+<img src="../dist/images/original/css-stats.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Aktuální homepage Apple.com. Ohromná datová velikost, patnáct tisíc deklarací, 1 363 krát vlastnost height. Zdroj: [CSSStats.com](https://cssstats.com/stats?url=http%3A%2F%2Fapple.com&name=Apple)*
 </figcaption>
@@ -96,7 +96,7 @@ Asi nejčastější dotaz, když o utilitách mluvím před neznalým publikem, 
 Je tam. Dost velký. V utility třídách je schovaný systém designu. Ne moc robustní, spíše nízkoúrovňový, ale je tam. Takže třeba velikosti písem nemůžete použít nekonečné množství, ale jen předem definovanou stupnici. Takovou, na jaké se dohodnete nebo vám ji přidělí designéři.
 
 <figure>
-<img src="dist/images/original/tachyons-font-size.jpg" alt="">
+<img src="../dist/images/original/tachyons-font-size.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Stupnice textu z frameworku [Tachyons](https://tachyons.io/docs/typography/scale/)*
 </figcaption>
@@ -105,7 +105,7 @@ Je tam. Dost velký. V utility třídách je schovaný systém designu. Ne moc r
 Stejné to je například u vnitřních a vnějších okrajů. Projekt by měl být definovanou stupnici, založenou ideálně na typografii. Takže ani u paddingů, ani marginů nemůžete uvést libovolnou hodnotu.
 
 <figure>
-<img src="dist/images/original/vd-margin-padding-utils.jpg" alt="">
+<img src="../dist/images/original/vd-margin-padding-utils.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Systém pro pojmenovávání užitkových tříd pro marginy a paddingy na Vzhůru dolů*
 </figcaption>
@@ -116,7 +116,7 @@ Když se vrátíme k otázce na třídu `.text-blue` a její inline stylovou alt
 Prostě: `.text-primary` dává větší smysl než `.text-blue`. V `.text-primary` totiž vidíme odraz designérského systému, takže otázka na inline-stylovou alternativu přestává být relevantní. Takové věci pomocí inline stylů nedokážeme.
 
 <figure>
-<img src="dist/images/original/bootstrap-utils-color.jpg" alt="">
+<img src="../dist/images/original/bootstrap-utils-color.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Vzorník tříd pro barvy pozadí [v Bootstrapu](https://getbootstrap.com/docs/4.1/utilities/colors/)*
 </figcaption>
@@ -167,7 +167,7 @@ BEM komponenta:
   <h2 class="box__heading">
 ```
 
-Komponenta v utility CSS:
+Komponenta v užitkovém CSS:
 
 ```html
 <div class="box padding-2 display-flex">
@@ -243,10 +243,10 @@ Jedete klasický BEM nebo něco podobného. Doplníte to utilitami, zpočátku s
 * *Frameworky pro tvorbu webů.* Asi už víte, že utility třídy považuji za nejzajímavější [inovaci v Bootstrapu 4](bootstrap-4-utility.md). Základy Bootstrapu stojí na komponentách, klasika. Ale právě kvůli prototypování a UI webových aplikací je skvělé, že jsou zde k dispozici také jednoúčelové třídy.
 * *Weby.* S utilitami mám zajímavé zkušenosti například i na Vzhůru dolů, ale i dalších klientských zakázkách. Ale vždy to stojí na komponentách, utility tu věc doplňují.
 
-Kombinování s komponentami bych rád rozebral ještě v jednom detailnějším textu. Vydržte, brzy snad vyjde.
+[Kombinování s komponentami](css-utility-komponenty.md) rozebírám v podrobnějším textu.
 
 ## Frameworky a hotové systémy utility tříd
 
-Je jich už celá řada, podrobně mám prozkoumané zejména [Tachyons](https://tachyons.io/) – první framework tohoto typu. Považuji ho za překonaný následníkem, [Tailwindem](https://tailwindcss.com). To abyste měli co zkoumat, než na Vzhůru dolů vyjde pokračování tohoto textu.
+Je jich už celá řada, podrobně mám prozkoumané zejména [Tachyons](https://tachyons.io/) – první framework tohoto typu. Považuji ho za překonaný následníkem, [Tailwindem](https://tailwindcss.com). To abyste měli co zkoumat, než se pustíte [do pokračování](css-utility-komponenty.md).
 
 <!-- AdSnippet -->
