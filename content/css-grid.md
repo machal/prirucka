@@ -126,7 +126,7 @@ Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `e
 
 ## Co je to vlastně mřížka? {#mrizka}
 
-* Nic nového. Do pravidelné mřížky se už staletí sází velká část knížek, dnes i novin a tiskovin obecně. 
+* Nic nového. Do pravidelné mřížky se už staletí sází velká část knížek, dnes i novin a tiskovin obecně.
 * Veteránům lze CSS Grid přiblížit jako tabulkový layout, jen daleko lépe udělaný a zbavený nevýhod.
 * Těm, kteří znají Bootstrap a podobné frameworky, lze Grid podat jako zdokonalený Bootstrap grid vestavěný v prohlížečích. 
 * Všechno by to ale byla pravda jen částečně. Grid je daleko silnější než uvedené příklady.
@@ -156,6 +156,11 @@ Jde o „zlomkovou“ jednotku. Prostor neobsazený jinými jednotkami (`px`, `e
 Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No mohli bychom pokračovat.
 
 Naštěstí je tady Autoprefixer a dnes už je možné svěřit [řešení Gridu pro IE](css-grid-msie.md) jemu.
+
+<div class="related" markdown="1">
+- [CSS Grid v IE: Oblasti a mezery](css-grid-msie.md)
+- [CSS Grid v IE: Automatické umístění](css-grid-msie-autoplacement.md)
+</div>
 
 Existence „explorerového“ Gridu nám ale v mnoha případech umožní mřížku vcelku bez problémů používat i bez Autoprefixeru. Jen je potřeba se kromě základních vlastností dnešního Gridu naučit i ten starší.
 

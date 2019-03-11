@@ -12,7 +12,10 @@
 
 Asi už víte, že *něco* z gridu v Exploreru funguje. Ale taky asi víte, že náš „nejoblíbenější“ prohlížeč nepodporuje důležité vlastnosti jako je `grid-gap` (mezera mezi buňkami), `grid-template-areas` (pojmenované oblasti) nebo třeba automatické umísťování prvků do mřížky.
 
-<!-- AdSnippet -->
+<div class="related" markdown="1">
+- [CSS Grid](css-grid.md)
+- [CSS Grid v IE: Automatické umístění](css-grid-msie-autoplacement.md)
+</div>
 
 Na vědomí se tímto dává, že díky [zásadním aktualizacím](https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/) v [Autoprefixeru](https://github.com/postcss/autoprefixer) je možné první dvě vcelku pokojně začít používat ve všech prohlížečích. A automatické umísťování? Tak trochu jde taky. Ale to je složitější, však uvidíte v dalším textu.
 
@@ -238,8 +241,8 @@ Tady máte zatím smůlu:
 - `grid` je zkratka pro `grid-template-rows`, `grid-template-columns` a `grid-template-areas`. [Doporučuje](https://github.com/postcss/autoprefixer/issues/1023) se namísto ní použí `grid-template`.
 - Automatické umístění: `grid-auto-columns`, `grid-auto-rows` nebo `grid-auto-flow`.
 
-[Automatické umísťování](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie) ale u jednodušších layoutů udělat jde. Počkejte si na další článek.
-
-<!-- AdSnippet -->
+[Automatické umísťování](css-grid-autoplacement.md) ale u jednodušších layoutů udělat  jde.
 
 Tak co? Dáte [Gridu](css-grid.md) novou šanci?
+
+<!-- AdSnippet -->

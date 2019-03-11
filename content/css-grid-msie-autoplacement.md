@@ -1,10 +1,15 @@
-# CSS Grid v MSIE: Můžete mít i automatické umísťování do mřížky
+# CSS Grid v MSIE: Mů­že­te mít i au­to­ma­tic­ké umís­ťo­vá­ní do mříž­ky
 
 Pokud Vzhůru dolů čtete pravidelně, už víte, že CSS Grid je možné v řadě případů [použít i v Internet Exploreru](css-grid-msie.md).
 
 Vděčíme za to nedávným změnám v Autoprefixeru, který se naučil generovat kód tak, abychom mohli používat i vlastnosti jako `grid-gap` (mezera mezi buňkami) nebo  `grid-template-areas` (pojmenované oblasti).
 
 O čem jsem ale zatím nepsal, jsou nové možnosti automatického umísťování prvků v mřížce. *Autoplacement* je další důležitá vlastnost [Gridu](css-grid.md). A Explorer, který stále používá minimálně [desetina českých uživatelů](prohlizece.md), ji nativně neumí.
+
+<div class="related" markdown="1">
+- [CSS Grid](css-grid.md)
+- [CSS Grid v IE: Oblasti a mezery](css-grid-msie.md)
+</div>
 
 Pojďme tradičně na příklad. Chceme layout 2 × 2. HTML kód vypadá takto:
 
@@ -36,7 +41,7 @@ Prvky se nám pěkně rozmístí. Jenže smůla, tohle nebude fungovat v Intern
 </figcaption>
 </figure>
 
-Pro MSIE 10 a 11, ve kterých nějaká verze CSS Gridu funguje, nám ale Autoprefixer přidá pseudotřídy:
+Existuje záchrana – [Autoprefixer](https://github.com/postcss/autoprefixer). Pro MSIE 10 a 11, ve kterých nějaká verze CSS Gridu funguje, nám přidá pseudotřídy:
 
 ```css
 .container > *:nth-child(1) {
@@ -67,6 +72,8 @@ Zavolat Autoprefixer s parametrem `grid: 'autoplace'`, který zařídí podporu 
 
 Hotové a funkční nastavení je například [v Gulpfile.js](https://github.com/machal/css-grid-demos/blob/master/gulpfile.js) mého demonstračního repozitáře.
 
+<!-- AdSnippet -->
+
 <small markdown="1">
 Mimochodem, řešení v [NPM skriptu](https://github.com/machal/css-grid-demos/blob/master/package.json#L29) tam zatím nefunguje. Stejně tak se mi nedaří zařídit podporu autoplacementu [v Codepenu](https://codepen.io/machal/pen/aPRVOV). Nevím proč. Pokud vy ano, napište mi, prosím.
 </small>
@@ -81,7 +88,7 @@ Je možné tedy automatizace použít jen pro explicitní mřížky definované 
 Doporučení zní: Nechte grid vypnutý a pomocí CSS komentářů jej zapínejte pouze pro nové deklarace.
 - *Neumí to repeat() v kombinaci a auto-fill, auto-fit*  
 I když IE funkci `repeat()` zvládá, klíčová slova `auto-fill` a `auto-fit` bohužel ne.
-- *Vyberte si: Buď autoplacement nebo manuální umístění v gridu*  
+- *Vyberte si: Buď autoplacement nebo manuální umístění v gridu*  
 V moderních prohlížečích lze obojí kombinovat, v IE bohužel ne. Buď tedy budete všechny prvky gridu umísťovat ručně (použijte vlastnost `grid-template-areas` v definici gridu) nebo automaticky (bez `*-areas`).
 - *Pozor na pseudoelementy*  
 `::before` a `::after` uvnitř Gridu vám v IE rozbijí mřížku, to se vsaďte.
@@ -89,3 +96,7 @@ V moderních prohlížečích lze obojí kombinovat, v IE bohužel ne. Buď tedy
 Namísto toho je Autoprefixeru potřeba znovu deklarovat explicitní mřížku pomocí vlastností `grid-template-*`.
 
 Více najdete [v dokumentaci Autoprefixeru](https://github.com/postcss/autoprefixer#grid-autoplacement-support-in-ie). 
+
+Celkově vzato je tohle pseudo-automatické umísťování prvků do mřížky spolu [s možností použít oblasti (areas) a mezery (gap)](css-grid-msie.md) moc fajn posun vpřed. Určitě tedy [Grid](css-grid.md) vyzkoušejte.
+
+<!-- AdSnippet -->
