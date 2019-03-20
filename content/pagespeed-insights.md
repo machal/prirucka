@@ -1,4 +1,4 @@
-# PageSpeed Insights: Kompletní průvodce testem rychlosti webu
+# PageSpeed Insights: Kompletní průvodce testem rychlosti webu
 
 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs) (PSI) od Google je asi nejznámější nástroj pro testování a analýzu rychlosti webů.
 
@@ -18,7 +18,7 @@ Nástroj vám také rovnou nahlásí největší příležitosti, které na str�
 
 Teď ale šup na testování:
 
-→ [developers.google.com/speed/pagespeed/insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
+→ [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
 
 V dalším textu se vám pokusím pomoci s interpretací výsledků.
 
@@ -50,10 +50,10 @@ Jde o metriky od skutečných uživatelů vašeho webu. Alespoň těch, kteří 
 
 Tohle je důležité a ukazuje to krásy měření na reálných uživatelích (s nádhernou zkratkou RUM = Real User Monitoring).
 
-Vídíme zde distribuci uživatelů pro dvě [rychlostní metriky](metriky-rychlost.md):
+Vidíme zde distribuci uživatelů pro dvě [rychlostní metriky](metriky-rychlosti.md):
 
 1. *První vykreslení obsahu*  
-[First Contentful Paint](metriky-rychlost.md#FCP) (FCP) – kdy se vašemu uživateli poprvé zobrazí obsah?
+[First Contentful Paint](metriky-rychlosti.md#FCP) (FCP) – kdy se vašemu uživateli poprvé zobrazí obsah?
 2. *Prodleva prvního vstupu*  
 First Input Delay (FID) – za jak dlouho od prvního kliku stránka zareaguje?
 
@@ -73,6 +73,8 @@ Pravděpodobně se v přehledu „Data pole“ dozvíte, že váš web patří m
 
 Při psaní článku přemýšlím, které české nebo slovenské weby mají v přehledu uživatelského dojmu zelenou barvu. A přemýšlím marně. Pokud tedy nějaký větší znáte, napište mi, prosím.
 
+<!-- AdSnippet -->
+
 Hodí se vědět, že [Chrome UX report se aktualizuje jednou za měsíc](https://twitter.com/rick_viscomi/status/1022828987490426880?ref_src=twsrc%5Etfw), kdežto reporty PSI každý den. Je tedy užitečné se na data od uživatelů chodit koukat sem.
 
 ## Laboratorní data {#lab}
@@ -88,14 +90,14 @@ Měření strojem? Prostě se pustí dva virtuální počítače – desktop (za
 </figcaption>
 </figure>
 
-Jak si stojíte s důležitými [rychlostními metrikami](metriky-rychlost.md)?
+Jak si stojíte s důležitými [rychlostními metrikami](metriky-rychlosti.md)?
 
 1. *První vykreslení obsahu*  
-[First Contentful Paint](metriky-rychlost.md#FCP) (FCP) – kdy se vašemu uživateli poprvé nějaký obsahový text nebo obrázek?
+[First Contentful Paint](metriky-rychlosti.md#FCP) (FCP) – kdy se vašemu uživateli poprvé nějaký obsahový text nebo obrázek?
 2. *První smysluplné vykreslení*  
 First Meaningful Paint (FMP) – kdy začíná být viditelný primární obsah stránky?
 3. *Index rychlosti*  
-[Speed Index](metriky-rychlost.md#SpeedIndex) (SI) – kdy se vykreslí celá obrazovka nad zlomem stránky?
+[Speed Index](metriky-rychlosti.md#SpeedIndex) (SI) – kdy se vykreslí celá obrazovka nad zlomem stránky?
 4. *První nečinnost procesoru*  
 First CPU Idle (FCI) – kdy přestane hlavní proces pracovat a je možné zpracovat vstupy od uživatele?
 5. *Doba do interaktivity*  
@@ -120,22 +122,24 @@ Po začínající až středně pokročilé optimalizátory to je skvělý zdroj
 
 Pojďme si ale okomentovat některé z návrhů. Schválně vybírám ty, u kterých se stává, že se osvědčené postupy míjejí s praxí na části webů:
 
-* *Eliminujte zdroje, které blokují vykreslení*
+* *Eliminujte zdroje, které blokují vykreslení*  
 U JavaScriptu je ta rada obvykle v pořádku, ale u CSS to bez blokování vykreslení nepůjde. PSI to ale radí co nejvíce omezit, což je správné.
-* *Statické podklady zobrazujte s efektivními zásadami pro mezipaměť*
-PSI vám právě zde budou hlásit i „špatně“ nastavené kešování na doménách dodavatelů analytických a jiných řešení. Já zde například vídám `https://www.google-analytics.com/analytics.js (2 hodiny)`, což chyba není.
-* *Používejte efektivní kódování obrázků*
+* *Statické podklady zobrazujte s efektivními zásadami pro mezipaměť*  
+PSI vám právě zde budou hlásit i „špatně“ nastavené kešování na doménách dodavatelů analytických a jiných řešení. Já zde například vídám *„google-analytics.com/analytics.js (2 hodiny)“*, což chyba není.
+* *Používejte efektivní kódování obrázků*  
 Obvykle jsou rady v této sekci na místě, ale může se stát, že jste provedli poctivou analýzu komprese obrázků a aktuální nastavení kvality je pro vás vyhovující.
 
 Už jsme na konci. Ještě malá připomínka k časté chybě při testování webů.
 
-## „Homepage slepota“: Co lze pokazit ještě než začnete testovat {#slepota} {#slepota}
+## „Homepage slepota“: Co lze pokazit ještě než začnete testovat {#slepota}
 
 Už při zadávání adresy můžete udělat chybu. Jak? Tím, že testujete jen adresu homepage webu.
 
 Mrkněte se do Google Analytics na nejčastější vstupní stránky webu a otestujte je všechny. Pravděpodobně budou vykazovat velmi podobné problémy, ale také narazíte na unikátní potíže, které vám analýza homepage nevyplivne.
 
-Měření rychlosti se týká stránek, nikoliv celého webu. Přílišné zaměření na – často velmi málo důležitou – domovskou stránku je tak rozšířené, že jsem mu začal říkal „homepage slepota“.
+Měření rychlosti se týká stránek, nikoliv celého webu. Přílišné zaměření na – často velmi málo důležitou – domovskou stránku je tak rozšířené, že jsem mu začal říkat „homepage slepota“.
+
+<!-- AdSnippet -->
 
 Testujte prostě adresy všech důležitých vstupních stránek. U Vzhůru dolů jde například o tyhle unikátní stránky nebo zástupce typových šablon:
 
@@ -158,3 +162,5 @@ Shrňme si, co jste se (doufejme) dozvěděli o testování rychlosti webů v Pa
 * Každá zelená hodnota je skvělý výsledek.
 * Dlouhodobě sledujte hlavně pokroky v ukazatelích od reálných uživatelů v sekci „Data pole“.
 * Poslouchejte rady v sekci Příležitosti a Diagnostika, jsou velmi rozumné.
+
+<!-- AdSnippet -->
