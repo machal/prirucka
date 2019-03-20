@@ -3,7 +3,7 @@
 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs) (PSI) od Google je asi nejznámější nástroj pro testování a analýzu rychlosti webů.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Skóre od PSI je velmi dobrý ukazatel rychlosti. V textu se ale dozvíte, co za ním je a jak nástroj používat*
 </figcaption>
@@ -22,12 +22,12 @@ Teď ale šup na testování:
 
 V dalším textu se vám pokusím pomoci s interpretací výsledků.
 
-## Celkové skóre
+## Celkové skóre {#skore}
 
 PSI vám tady barvou nahlásí, jak si stojíte.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights-skore.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Skóre rychlosti. Zelená je super, oranžová ujde, červená znamená, že je potřeba se rychlosti webu věnovat. Výsledky pod dvacet bodů by měly spouštět rychlostní paniku*
 </figcaption>
@@ -37,12 +37,12 @@ Zajímavé je samozřejmě také konkrétní číslo, které vám nástroj sděl
 
 Samozřejmě je také důležité, jak si vede vaše konkurence. Ale pokud o rychlý web opravdu stojíte, měli byste se zde prostě u klíčových stránek pohybovat v zelených číslech.
 
-## Data pole aneb rychlost u skutečných uživatelů
+## Data pole aneb rychlost u skutečných uživatelů {#crux}
 
 Jde o metriky od skutečných uživatelů vašeho webu. Alespoň těch, kteří používají Google Chrome. Zdrojová databáze se jmenuje [Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/), pokud by vás to zajímalo. A mělo by zajímat.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights-crux.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: „Data pole“, metriky přímo od uživatelů Chrome a jejich shrnutí pro celou doménu v „Origin Summary“*
 </figcaption>
@@ -75,14 +75,14 @@ Při psaní článku přemýšlím, které české nebo slovenské weby mají v 
 
 Hodí se vědět, že [Chrome UX report se aktualizuje jednou za měsíc](https://twitter.com/rick_viscomi/status/1022828987490426880?ref_src=twsrc%5Etfw), kdežto reporty PSI každý den. Je tedy užitečné se na data od uživatelů chodit koukat sem.
 
-## Laboratorní data
+## Laboratorní data {#lab}
 
 Nebo také měření strojem, která [od listopadu 2018](https://webmasters.googleblog.com/2018/11/pagespeed-insights-now-powered-by.html) tester PSI provádí vynikajícím nástrojem [Lighthouse](lighthouse.md). 
 
 Měření strojem? Prostě se pustí dva virtuální počítače – desktop (zařízení šířce viewportu 1366 px) a mobil (šířka 412 px) – a testuje se v nich váš web. 
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights-lab.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Laboratorní data ze syntetických měření počítačem. Neukazují obrázek o rychlosti v cílové skupině, ale za to jsou podrobnější*
 </figcaption>
@@ -96,19 +96,19 @@ Jak si stojíte s důležitými [rychlostními metrikami](metriky-rychlost.md)?
 First Meaningful Paint (FMP) – kdy začíná být viditelný primární obsah stránky?
 3. *Index rychlosti*  
 [Speed Index](metriky-rychlost.md#SpeedIndex) (SI) – kdy se vykreslí celá obrazovka nad zlomem stránky?
-4. *První nečinnost procesoru
-*First CPU Idle (FCI) – kdy přestane hlavní proces pracovat a je možné zpracovat vstupy od uživatele?
-5. *Doba do interaktivity *  
+4. *První nečinnost procesoru*  
+First CPU Idle (FCI) – kdy přestane hlavní proces pracovat a je možné zpracovat vstupy od uživatele?
+5. *Doba do interaktivity*  
 Time to Interactive (TTI) – kdy začne být stránka plně interaktivní?
 6. *Odhadovaná latence vstupu*  
 Jak rychle bude stránka reagovat na vstup uživatele?
 
 [Ideální hodnoty metrik](https://www.vzhurudolu.cz/blog/112-metriky-cile) jsem zkoumal ve zvláštním textu na blogu.
 
-## Optimalizační návrhy: Příležitosti a diagnostika
+## Optimalizační návrhy: Příležitosti a diagnostika {#prilezitosti}
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights-prilezitosti.jpg" alt="">
 <figcaption markdown="1">
 *Obrázek: Příležitosti ke zrychlení stránky. Většinou se to vyplatí poslechnout*
 </figcaption>
@@ -129,7 +129,7 @@ Obvykle jsou rady v této sekci na místě, ale může se stát, že jste proved
 
 Už jsme na konci. Ještě malá připomínka k časté chybě při testování webů.
 
-## „Homepage slepota“: Co lze pokazit ještě než začnete testovat {#slepota}
+## „Homepage slepota“: Co lze pokazit ještě než začnete testovat {#slepota} {#slepota}
 
 Už při zadávání adresy můžete udělat chybu. Jak? Tím, že testujete jen adresu homepage webu.
 
