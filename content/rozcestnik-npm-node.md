@@ -77,9 +77,9 @@ Co všechno je možné pomocí Gruntu dělat: Spojovat CSS, JS souboury, zmenšo
 <small>
 Gulp je spouštěč úloh na příkazové řádce podobný Gruntu, který se hodí na komplexnější projekty. V článku je pěkný úvod krok za krokem včetně popisu konfigurace.
 </small>
-- [Devstack postavený na Gulpu](https://github.com/actum/gulp-dev-stack) [Actum, EN]  
+- [Devstacky](devstacky.md)
 <small>
-Jeden z devstacků (nastavení vývojářského workflow), který je dobře zdokumentovaný a je možné jej využít pro inspiraci.
+In­spi­rač­ní ka­ta­log fron­ten­do­vých zá­kla­den.
 </small>
 - [NPM skripty](https://css-tricks.com/why-npm-scripts/) [CSSTricks.com, EN]  
 <small>
