@@ -6,6 +6,10 @@ Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho pros
 
 Používám jej hlavně pro analýzu [rychlosti načítání](rychlost-nacitani-proc.md), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=2VIJU7NNKYw">Lighthouse: Základní představení</a> ~ Jak si otestovat web v tomhle výborném nástroji.
+</p>
+
 Velmi doporučuji jej používat pro vaše weby a webové aplikace  a nejlépe to dělat pravidelně a automaticky.
 
 ## Proč jej používat? {#proc}
