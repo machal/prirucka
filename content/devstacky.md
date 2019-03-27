@@ -26,6 +26,10 @@ Moc hezky zdokumentovaný a už vcelku pokročilejší stack od lidí [z Actum](
 
 Asi nejznámější základna pro vznik nových projektů. Na mě sice až moc robustní a vše pokrývajících, ale nic proti gustu jiných. Ostatně hezký příklad zneužití označení „boilerplate". [h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
 
+### DS Boilerplate
+
+Opět Dan Střelec. Zde jde ale o komplexnější řešení, které využívá pro práci na klientských webech. Kromě už uvedeného pokrývá automatické úpravy CSS pomocí CSScomb, lintování se [Stylelint](stylelint.md), spojování a lintování JavaScriptu, optimalizaci obrázků, práci s SVG ikonami, jejich převod do sprajtů a další legrace. [danielstrelec/ds-boilerplate/](https://github.com/danielstrelec/ds-boilerplate/)
+
 <!-- AdSnippet -->
 
 Další sady:
@@ -59,7 +63,7 @@ Jen základy. Preprocesor LESS, Autoprefixer, a Browsersync. Viz dotčené řád
 
 ### DS-Grunt
 
-Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky česky zdokumentovaný. [danielstrelec/ds-grunt](https://github.com/danielstrelec/ds-npm)
+Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky česky zdokumentovaný. [danielstrelec/ds-grunt](https://github.com/danielstrelec/ds-grunt)
 
 <!-- AdSnippet -->
 
