@@ -67,6 +67,11 @@ Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky čes
 
 <!-- AdSnippet -->
 
+## Webpack
+
+- [PilulkaDistribuce/webpack-boilerplate-es6-sass](https://github.com/PilulkaDistribuce/webpack-boilerplate-es6-sass) – Webpack 4, SASS, fonty, SVG a obrázky, ES6 moduly.
+- [laravel-mix.com](https://laravel-mix.com/) – Webpack atd. Složitější a anglicky, ale důsledně zdokumentováno.
+
 ## Další možnosti
 
 * [ondras/es6-boilerplate](https://github.com/ondras/es6-boilerplate) – základní sada Ondřeje Žáry, která využívá Make pro buildování, Rollup pro bundlování, Babel pro JS, LESS pro CSS.
