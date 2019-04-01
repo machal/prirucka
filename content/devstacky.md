@@ -70,7 +70,9 @@ Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky čes
 ## Webpack
 
 - [PilulkaDistribuce/webpack-boilerplate-es6-sass](https://github.com/PilulkaDistribuce/webpack-boilerplate-es6-sass) – Webpack 4, SASS, fonty, SVG a obrázky, ES6 moduly.
+- [trainit/2018-03-nette-webpack](https://github.com/trainit/2018-03-nette-webpack) – Zakladní Webpack nakonfirugovaný pro použití [s Nette](https://nette.org/cs/) a JS knihovnou [Naja](https://naja.js.org).
 - [laravel-mix.com](https://laravel-mix.com/) – Webpack atd. Složitější a anglicky, ale důsledně zdokumentováno.
+
 
 ## Další možnosti
 
