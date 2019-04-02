@@ -34,6 +34,8 @@ Opět Dan Střelec. Zde jde ale o komplexnější řešení, které využívá p
 
 Další sady:
 
+* [yeoman/generator-webapp](https://github.com/yeoman/generator-webapp) – Robustní Gulp workflow podle vašeho nastavení generované nástrojem Yeoman. Možné dále upravovat pomocí [receptů](https://github.com/yeoman/generator-webapp/blob/master/docs/recipes/README.md).
+* [vigetlabs/blendid](https://github.com/vigetlabs/blendid) – Známý devstack postavený na Gulpu včetně „static site builder“, generátoru statických stránek.
 * [johnjarosczech/boilerplate](https://github.com/johnjarosczech/boilerplate) – NPM, Gulp, ale samotný build proces je definovaný v JS.
 * [eduardstula/frontend-devstack](https://github.com/eduardstula/frontend-devstack) – stack v Gulpu navazující na [Bootstrap](https://www.vzhurudolu.cz/bootstrap).
 
