@@ -80,6 +80,10 @@ Se zajímavou možností přišel Lighthouse [ve verzi 3](https://developers.goo
 
 No a poslední možnost – *Clear storage* – před testy smaže obsah lokálních úložišť, aby Lighthouse dokázal zachytit prožitek úplně nového uživatele.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=zkbzYJ7xNKw">Lighthouse: Test rychlosti webu</a> ~ Na videu procházíme výstupy záložky „Performance“.
+</p>
+
 ## Příkazová řádka {#prikazovka}
 
 Jak už víte, Lighthouse je možné nainstalovat na příkazovou řádku:
