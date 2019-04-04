@@ -85,7 +85,7 @@ Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky čes
 
 Jak jste si asi všimli, Dan Střelec připravil skvělou sadu devstacků, díky kterým si můžete porovnat nejčastější automatizační nástroje:
 
-* [danielstrelec/ds-grunt](https://github.com/danielstrelec/ds-npm)
+* [danielstrelec/ds-grunt](https://github.com/danielstrelec/ds-grunt)
 * [danielstrelec/ds-gulp](https://github.com/danielstrelec/ds-gulp)
 * [danielstrelec/ds-npm](https://github.com/danielstrelec/ds-npm)
 
