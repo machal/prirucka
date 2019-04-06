@@ -27,7 +27,7 @@ V dalším textu se vám pokusím pomoci s interpretací výsledků.
 PSI vám tady barvou nahlásí, jak si stojíte.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights-skore.jpg" alt="">
+<img src="../dist/images/original/pagespeed-insights-skore.jpg" width="1920" height="540" alt="PageSpeed Insights Skóre">
 <figcaption markdown="1">
 *Obrázek: Skóre rychlosti. Zelená je super, oranžová ujde, červená znamená, že je potřeba se rychlosti webu věnovat. Výsledky pod dvacet bodů by měly spouštět rychlostní paniku*
 </figcaption>
