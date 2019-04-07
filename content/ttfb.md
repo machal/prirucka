@@ -108,6 +108,11 @@ Jasně, před vysláním prvního bajtu Gzip opravdu věci zpomalí. Jenže pak 
 
 Takže ne, tohle nemá být návod na vypnutí Gzip. Raději se prosím ujistěte, zda jej máte všude zapnutý.
 
-Více [o TTFB je na Wikipedii](https://en.wikipedia.org/wiki/Time_to_first_byte).
+Shrnu teď to nejdůležitější:
+
+- TTFB je nejlepší způsob jak měřit výkon serveru.
+- Pro měření rychlosti webu je velmi nedostačující, mrkněte se na [jiné metriky](metriky-rychlosti.md).
+- Do měření TTFB se může projevovat pomalé internetové připojení. 
+- TTFB může být pro různá měření a různé stránky webu velmi různě vysoké. Má tedy smysl sledovat jen jeho dlouhodobý trend.
 
 
