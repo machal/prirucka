@@ -16,6 +16,10 @@ Na testeru PageSpeed Insights je skvělé, že kombinuje dva důležité pohledy
 
 Nástroj vám také rovnou nahlásí největší příležitosti, které na stránce našel a jejichž odstranění vám vylepší hodnocení a ve výsledku samozřejmě zrychlí web. K tomu se ještě dostaneme.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=nCNLRML_Yw8">PageSpeed Insights: Představení</a> ~ Online test rychlosti webu.
+</p>
+
 Teď ale šup na testování:
 
 → [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
@@ -27,7 +31,7 @@ V dalším textu se vám pokusím pomoci s interpretací výsledků.
 PSI vám tady barvou nahlásí, jak si stojíte.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights-skore.jpg" width="1920" height="540" alt="PageSpeed Insights Skóre">
+<img src="../dist/images/original/pagespeed-insights-skore.jpg" height="540" width="1920" alt="PageSpeed Insights Skóre">
 <figcaption markdown="1">
 *Obrázek: Skóre rychlosti. Zelená je super, oranžová ujde, červená znamená, že je potřeba se rychlosti webu věnovat. Výsledky pod dvacet bodů by měly spouštět rychlostní paniku*
 </figcaption>
