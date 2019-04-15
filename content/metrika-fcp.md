@@ -1,8 +1,8 @@
 # Metrika „První vykreslení obsahu“ (First Contentful Paint, FCP)
 
-[Metrika rychlosti webu](metriky-rychlosti.md), která vzniká v okamžiku vykreslení prvního textu nebo obrázku (včetně těch natahovaných přes CSS vlastnost `background`). 
+[Metrika rychlosti webu](metriky-rychlosti.md), která vzniká v okamžiku vykreslení prvního textu nebo obrázku (včetně těch natahovaných přes CSS vlastnost `background`).
 
-Může vzniknout také vykreslením obsahu v prvku `canvas` nebo obashu [SVG](svg.md), které mají jinou než bílou barvu. Metrika FCP vzniká i při vykreslení textu, který se zatím nerenderuje pomocí webfontů. Nečeká ale na jakýkoliv obsah prvku `iframe`.
+Může vzniknout také vykreslením obsahu v prvku `canvas` nebo obsahu [SVG](svg.md), které mají jinou než bílou barvu. Metrika FCP vzniká i při vykreslení textu, který se zatím nerenderuje pomocí webfontů. Nečeká ale na jakýkoliv obsah prvku `iframe`.
 
 Jde o důležitý milník, protože udržuje pozornost uživatele. Dává mu první informaci o tom, že se stránka opravdu načítá a že může začít konzumovat obsah stránky.
 

@@ -1,8 +1,15 @@
-# Metrika „Čas do interaktivity“ (Time to Interactive, TTI)
+# Metrika „Čas do interaktivity“ (Time To Interactive, TTI)
 
-Chvíle, kdy je stránka renderovaná a zároveň schopná spolehlivě reagovat na uživatelský vstup.
+[Metrika rychlosti webu](metriky-rychlosti.md), která říká kdy je stránka renderovaná a zároveň schopná spolehlivě reagovat na uživatelský vstup.
 
 Ptáte se, kdy stránka reaguje *spolehlivě*? Je to v momentě, kdy se načetly a spustily javascripty, které jsou k tomu potřeba. A když prohlížeč není „zaseknutý“ nebo „nalaguje“.
+
+<figure>
+<img src="../dist/images/original/metrika-tti.jpg" alt="FCP">
+<figcaption markdown="1">
+*Obrázek: Kdy vzniká TTI nebo taky „Time To Interactive“*
+</figcaption>
+</figure>
 
 Odborně vzato nesmí být vykreslovací jádro prohlížeče zatíženo dlouhotrvajícími úkoly. „[Long task](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics#long_tasks)“ je definován jako zaseknutí vykreslovacího jádra na více než 50 ms.
 

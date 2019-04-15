@@ -2,7 +2,7 @@
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která informuje, kdy začne být viditelný primární obsah stránky.
 
-Jde o událost vykreslení takzvaného „hero elementu“, tedy hlavního prvku obsahu. Obvykle jde o nadpis `<h1>` nebo hlavní obrázek. V případě YouTube a podobných portálů by šlo zase o vykreslení oblasti s videem. 
+Jde o událost vykreslení takzvaného „hero elementu“, tedy hlavního prvku obsahu. Obvykle jde o nadpis `<h1>` nebo hlavní obrázek. V případě YouTube a podobných portálů by šlo zase o vykreslení oblasti s videem.
 
 Pokud jde o text, čeká se zde na stažení a vykreslení pomocí webfontů, na rozdíl od [FCP](metrika-fcp.md).
 

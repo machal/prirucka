@@ -9,9 +9,9 @@
 </figcaption>
 </figure>
 
-Předstame si třeba uživatelku, dívající se na výsledky vyhledávání Google. Následně díkybohu klikne na položku s vaším webem. First Paint vzniká ve chvíli, kdy uživatelka vidí něco jiného než výsledky vyhledávání.
+Předstame si třeba uživatelku, dívající se na výsledky vyhledávání Google. Co když klikne na položku s vaším webem? First Paint vzniká ve chvíli, kdy uživatelka vidí něco jiného než výsledky vyhledávání.
 
-FP odpovídá na nevyřčenou otázku uživatele: „Děje se to?“
+FP odpovídá na její nevyřčenou otázku: „Děje se to?“
 
 Dnes se dává přednost metrikám „První vykreslení obsahu“ ([FCP](metrika-fcp.md)) a „První smysluplné vykreslení“ ([FMP](metrika-fmp.md)). FP totiž říká „něco se vykreslilo“. Nás ale zajímá, kdy se začal vykreslovat obsah.
 
