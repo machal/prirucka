@@ -1,4 +1,4 @@
-## Metrika „První smysluplné vykreslení“ (First Meaningful Paint, FMP)
+# Metrika „První smysluplné vykreslení“ (First Meaningful Paint, FMP)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která informuje, kdy začne být viditelný primární obsah stránky.
 

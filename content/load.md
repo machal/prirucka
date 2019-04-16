@@ -13,7 +13,7 @@ window.addEventListener("load", function(event) { … });
 Je to tradičně nejpoužívanější [metrika rychlosti webu](metriky-rychlosti.md). Nic proti ní a vylepšování jejich hodnot. Zhola nic vám ale neřekne o uživatelském prožitku. 
 
 <figure>
-<img src="../dist/images/original/metriky-load.jpg" alt="Událost Load na časové ose vykreslování">
+<img src="../dist/images/original/metrika-load.jpg" alt="Událost Load na časové ose vykreslování">
 <figcaption markdown="1">
 *Obrázek: Kdy vzniká událost Load*
 </figcaption>
@@ -27,7 +27,7 @@ Když totiž například bude stránka zobrazená, interaktivní (a už dávno k
 Metriku uvidíte například v záložkách Network vývojářských nástrojů Firefoxu nebo Chrome jako červenou čáru. Ale nějak ji uvádějí vlastně všechny [měřící nástroje](rychlost-nastroje.md).
 
 <figure>
-<img src="../dist/images/original/devtools-load.jpg" alt="">
+<img src="../dist/images/original/devtools-load.jpg"  height="540"  width="1920" alt="Událost Load v Chrome">
 <figcaption markdown="1">
 *Chrome DevTools s vyznačenou událostí Load (červená). Událost DOMContentReady je modrá*
 </figcaption>

@@ -85,8 +85,10 @@ Alternativně s popiskem jako `<figure>`:
 Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají jiný poměr stran než 16:9, uvádět rozměry explicitně. Stačí poměr stran. Například pro výškou poloviční obrázky – 32:9:
 
 ```html
-<img src="../dist/images/original/pagespeed-insights-skore.jpg" width="1920" height="540" alt="PageSpeed Insights Skóre">
+<img src="../dist/images/original/pagespeed-insights-skore.jpg" height="540"  width="1920" alt="PageSpeed Insights Skóre">
 ```
+
+`height` je kvůli bugu v PHP Simple HTML DOM Parser potřeba uvádět jako první.
 
 ### Video
 

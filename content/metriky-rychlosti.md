@@ -47,7 +47,7 @@ Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní 
 
 Daleko lepší metodika. Do stránky si obvykle vložíte skript, který měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou nastavené spíše na velké weby a firmy. Prostě na ně potřebujete peněz jako želez.
 
-U většiny webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights a to z veřejné databáze Chrome UX Report. Dále umí schraňovat data od uživatelů i SpeedCurve, ale to je drahé.
+U většiny webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights a to z veřejné databáze Chrome UX Report (CrUX). Dále umí schraňovat data od uživatelů i SpeedCurve, ale to je drahé.
 
 <figure>
 <img src="../dist/images/original/pagespeed-insights-crux.jpg" alt="">
@@ -56,14 +56,14 @@ U většiny webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights a to z
 </figcaption>
 </figure>
 
-Teď se budeme věnovat jednotlivým metrikám. Zatím většinou vznikají syntetickým měřením, ale neberu na to ohled.
+Metriky zatím většinou vznikají syntetickým měřením. RUM nástroje jsou drahé. Kromě CrUX, kam je možné dostat se bezplatně.
 
 ## Doporučení {#doporuceni}
 
 Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatovali metriky všechny a lpěli na nich. Zkusím vám na závěr doporučit jednoduchou strategii:
 
 - Hlídejte si hlavně Lighthouse skóre pro oblast Performace, které zobrazuje také PageSpeed Insight. [Po nedávné aktualizaci](https://www.vzhurudolu.cz/blog/112-metriky-cile) se totiž skládá ze všech významných renderovacích metrik.
-- V dlouhodobém horizontu usilujte o zlepšení v metrikách od reálných uživatelů. Nejlépe je získáte od Chrome UX Reportu nebo [PageSpeed Insights](pagespeed-insights.md).
+- V dlouhodobém horizontu usilujte o zlepšení v metrikách od reálných uživatelů. Nejlépe je získáte od Chrome UX Reportu, odkud je umí vytáhnout [PageSpeed Insights](pagespeed-insights.md).
 - Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a marketéry.
 - Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org. Viz můj [článek o nástrojích](rychlost-nastroje.md).
 
