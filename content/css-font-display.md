@@ -26,7 +26,7 @@ V článku dále následují detaily pro ty z vás, kteří máte více než jed
 
 ## Jaký problémy to řeší? Rozličné výchozí nastavení prohlížečů a potřeby projektů {#problemy}
 
-Různé [prohlížeče](prohlizece.md) totiž k vykresování během stahování fontů přistupují různě. Například:
+Různé [prohlížeče](prohlizece.md) totiž k vykreslování během stahování fontů přistupují různě. Například:
 
 * _Firefox, novější Safari, Chrome a z něj vycházející prohlížeče_ \
 Pokud zjistí přítomnost webfontu, a ten se nestihne načíst do tří sekund, celou tu dobu prohlížeč nezobrazí vůbec žádný text (proběhne FOIT, Flash of Invisible Text). To je z pohledu optimalizace vykreslování u většiny webu dost nepříjemné.
@@ -35,7 +35,7 @@ Pokud zjistí přítomnost webfontu, a ten se nestihne načíst do tří sekund,
 * _Internet Explorer a starý Edge_ \
 Vykreslí systémové písmo a webfont až v momentě, kdy se stáhne. Říkáme tomu FOUT, Flash of Unstyled Text.
 
-Druhá svízel leží v tom, že pro různé weby se hodí různé přístupy. E-shopům a obsahovým webům bude například vyhovovat chování Firefoxu a Chrome. Hodně „vydyzajnovaným“ webům zase spíše to starší Safari.
+Druhá svízel leží v tom, že pro různé weby se hodí různé přístupy. E-shopům a obsahovým webům bude například vyhovovat chování Firefoxu a Chrome. Hodně „vydizajnovaným“ webům zase spíše to starší Safari.
 
 Právě proto je skvělé, že vlastnost `font-display` máme.
 
