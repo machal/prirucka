@@ -1,105 +1,140 @@
-# Jak AMP funguje?
+# Jak funguje distribuce AMP stránky?
 
-AMP dělá dvě věci:
+Proces mezi publikováním a momentem dostupnosti stránky na platformách, které používají AMP, mírně zjednodušíme a technické detaily si necháme na později. Podívejte se nejprve na schéma:
 
-- Zčásti omezuje a zčásti rozšiřuje možnosti tvorby webů pomocí HTML, CSS a JavaScriptu.
-- Inovuje distribuci. Stránky se automaticky optimalizují a jsou dostupné na serverech platforem, nikoliv našem hostingu.
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Jak-funguje0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-Proces mezi publikováním a zveřejněním stránky probíhá asi takhle:
 
-1. [Vyrobíte AMP verzi stránky](#1)
-2. [Řeknete robotům, že máte AMP](#2)
-3. [Roboti uloží AMP stránku na CDN](#3)
-4. [Stránku přechroustá AMP optimalizátor](#4)
-5. [Stránka je připravená pro distribuci platformami](#5)
+![alt_text](images/Jak-funguje0.png "image_tooltip")
 
-Mírně to zjednodušíme, technické detaily necháme na později. Podívejte se na schéma:
 
-*TODO IMG Schéma fungování AMP*
+_Obrázek: Čím se liší distribuce běžné stránky od AMP?_
 
-## 1) Vyrobíte AMP verzi stránky {#1}
+Ještě to pojďme popsat slovy. Zatímco u běžné HTML stránky „vyplivne“ váš redakční systém (CMS) nějaký obsah, který je hned k dispozici pro zobrazení v prohlížečích vašich nedočkavých uživatelů, u AMP je distribuce složitější:
 
-Za pomocí prostředků, které zmiňuji v dalším textu vyrobíte zvláštní verzi stránky. Trik je v tom, že může (a myslím, že by *měla*) vycházet z vaší současné stránky. Prostě jen některé věci vyměníte.
+1. AMP stránku objeví robot platformy, která stránky ukládá. V našich končinách je to nejčastěji Googlebot od Googlu.
+2. Kešovací platforma si AMP stránku stáhne do vlastní mezipaměti, provede na níi optimalizace a vystaví uživatelům. O [AMP Cache](https://drive.google.com/open?id=155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI) píšu hned v dalším textu.
+3. Stránka je (přes [AMP Viewer](https://drive.google.com/open?id=1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc), webovou stránku, která zobrazuje AMP stránky) k dispozici uživatelům.
 
-V HTML máme například kód pro vložení obrázku takovýto:
+Distribuce je tady pěkně složitá, že? Podstatný je ale výsledek – zobrazení stránky je rychlejší. Kromě jiného proto, že se vyhýbáme pomalým serverům.
+
+Jak to probíhá z pohledu provozovatele webu? Následuje troška kódu, ale snažím se zde psát tak, abyste mi vy méně techničtí neutekli pryč. Dejte kódu šanci, je to vcelku zajímavé.
+
+## Vyrobíte AMP verzi stránky
+
+AMP stránku vytvoříte ve standardu pro AMP HTML. O něm píšeme více [později](https://docs.google.com/document/d/1kdSK7Q0LxoeU6DblzhJ-1EOtaCBD5IVSQwecr5gZyqQ/edit#). V tuhle chvíli se spokojme s konstatováním, že to je běžné HTML ořezané o malou část prvků a atributů a na druhou stranu doplněné o nové zajímavé komponenty. Také k nim se dostaneme.
+
+Také bych rád zdůraznil, že výroba zvláštní verze stránky nemusí probíhat tak, že kód stránky napíšete úplně odznova. O [možnostech implementace](https://docs.google.com/document/d/1ldmb0EuTf0WchRLBOIqq6DzNoTfTZlnJWvkTZ3weZiQ/edit) se dozvíte dále.
+
+Čím se AMP HTML liší? V HTML vypadá například kód pro vložení obrázku takto:
+
 
 ```html
 <img src="obrazek.jpg" alt="…">
 ```
 
-V AMP verzi jej pak vložíme takhle:
+
+V AMP verzi jej vložíme takhle:
+
 
 ```html
 <amp-img src="obrazek.jpg" alt="…"
-  layout="responsive" width="1" height="1">
+  layout="responsive" width="640" height="480">
 ```
 
-O detaily nepřijdete, vydržte do dalšího textu. 
 
-Pak samozřejmě AMP stránku publikujeme na nějaké zvláštní adrese. Na Vzhůru dolů je například příručka pro CSS vlastnost Flexbox dostupná na této adrese:
+Stejně postupujete i s dalšími vkládanými prvky, jako jsou videa, iframe nebo webfonty. Detaily se dozvíte později.
 
-```url
-https://www.vzhurudolu.cz/prirucka/css3-flexbox
+Řekněme, že máme hotovo. Teď samozřejmě AMP stránku publikujeme na zvláštní adrese. Na Vzhůru dolů je například text o nástroji Grunt dostupný na tomto URL:
+
 ```
+https://www.vzhurudolu.cz/prirucka/grunt
+```
+
 
 AMP verze je pod „lomítko AMP“:
 
-```url
-https://www.vzhurudolu.cz/amp/prirucka/css3-flexbox
+```
+https://www.vzhurudolu.cz/amp/prirucka/grunt
 ```
 
-Znění adresy je pak zcela na vás. To uvidíte hned v dalším kroku.
+Znění adresy je zcela na vás, jak uvidíte hned v dalším kroku.
 
-## 2) Řeknete robotům, že máte AMP {#2}
+## Řeknete robotům, že máte AMP
 
-Do původní verzi stránky vložíme meta značku informující o tom, že AMP máme:
+Do původní verze stránky vložíme metaznačku informující o tom, že AMP máme:
+
 
 ```html
 <link rel="amphtml"
   href="https://www.vzhurudolu.cz/amp/prirucka/grunt">
 ```
 
-Do AMP verze pak informaci kanonické adrese, naší původní stránce:
+
+Do AMP verze pak informaci o kanonické adrese, naší původní stránce:
+
 
 ```html
 <link rel="canonical"
-  href="https://www.vzhurudolu.cz/prirucka/css3-flexbox">
+  href="https://www.vzhurudolu.cz/prirucka/grunt">
 ```
 
-Ano, je to stejná kanonická adresa jako v případě, že chcete zabránit duplicitám při optimalizaci pro vyhledavače.
+Ano, je to stejná značka jako v případě, že chcete zabránit duplicitám při optimalizaci pro vyhledávače. Pokud ji neznáte, nevadí. Díky AMP ji poznáte. Lidsky řečeno kanonická adresa určuje, kde leží původní obsah.
 
-Kanonická adresa zde slouží k tomu, aby distribuční platformy mohly například nabídnout odkaz na původní adresu. Může se hodit pro případ, že uživatel chce obsah sdílet.
+Kanonická adresa zde slouží k tomu, aby mohly distribuční platformy nabídnout odkaz nebo přesměrování na původní adresu. Může se hodit také pro případ, že uživatel chce sdílet AMP obsah v místě, kde zobrazování AMP stránky není tak výhodné, jako třeba na Facebooku, který AMP v době psaní tohoto textu nepodporuje.
 
-## 3) Roboti uloží AMP stránku na CDN {#3}
+A v neposlední řadě: uvedení kanonické adresy jednoznačně definuje původní obsah pro vyhledávače. Ty tak mají jasno: vyhledávat se bude obsah právě jen na oné kanonické adrese.
 
-Googlebot nebo roboti jiných platforem pak prostě stránku stáhnou a následně uloží na CDN. U Google a českým AMP webů to bude na adresu obsahující `https://www.google.cz/amp/s/`.
 
-## 4) Stránku přechroustá AMP optimalizátor {#4}
+## Roboti uloží AMP stránku na AMP Cache
 
-AMP optimalizátor je software, který má na starosti převést určité části předepsaného kódu do podoby, která bude výhodná pro použití na CDN.
+Googlebot nebo roboti jiných platforem pak prostě stránku stáhnou a následně uloží na CDN. 
+
+U Googlu a českých webů AMP to bude na adresu obsahující `https://example-com.cdn.ampproject.org/s/…`.
+
+Poznámka pro neobeznámené: CDN je Content Delivery Network. Jde o síť serverů, které obvykle pokrývají celou zeměkouli a distribuují obsah tak, aby se k uživateli dostal z blízkého serveru. Dělá i další kejkle, primárním cílem je ale rychlé zobrazení obsahu. 
+
+Běžně si takovou službu mohou dovolit spíše větší weby, u AMP je to zadarmo pro všechny, byť zdaleka ne se všemi možnostmi, které komerční CDN nabízí.
+
+
+## Stránka na AMP Cache projde optimalizacemi
+
+Určité části předepsaného kódu AMP HTML se musejí převést do podoby, která bude výhodná pro zobrazování stránky na AMP Cache.
 
 Vezměme například povinný kód pro vložení základních stylů do AMP stránky. Zjednodušeně vypadá takto:
+
 
 ```html
 <style amp-boilerplate>…</style>
 ```
 
-To, že jsou AMP styly vložené přímo do HTML je výhodné jen pokud je dokument umístěný na vašem hostingu.
 
-AMP optimalizátor ale uvedené převede na následující:
+Vložení povinných stylů přímo do HTML je výhodné, jen pokud je dokument umístěný na vašem serveru. Více o tom píšeme v textu [o CSS v AMP](https://docs.google.com/document/d/1bTJ-tvBCEEFIQkwp-_KCgCV720L27BQ4u8TPEui7Kdc/edit#).
 
-```html
-<link rel="stylesheet" href="https://cdn.ampproject.org/v0.css">
-```  
+AMP Cache ovšem uvedený kód odstraní, protože při zobrazování stránky z ní není potřeba. Naopak k `<html>` přidá třídu `i-amphtml-no-boilerplate`. Takových transformací se ovšem provede celá řada, včetně takových, které prospívají rychlosti webu – jako je náhrada obrázků ve formátu JPEG za WebP.
 
-Na CDN se totiž počítá s tím, že servírování externích stylů nebude vadit tak jako na vaší doméně. Předpokládám, že se tady dělá nějaký preload a že se očekává, že uživatelé budou mít tento externí stylopis v dočasné paměti prohlížeče z dřívějších návštěv jiných AMP webů.
 
-Pak už je to připravené a dané k dispozici všem distributorům AMP.
+## Kopie z AMP Cache je připravená k zobrazování
 
-Pokud na webu zveřejníte AMP verzi, celý proces by měl trvat hodiny až maximálně nízké jednotky dní. K tomu se ale ještě také vrátíme.
+Nyní už můžete na verzi stránky z AMP Cache narazit na místech, kde se obvykle setkáváme s běžnými HTML stránkami. Například ve vyhledávání Google, v aplikacích LinkedIn, Twitter nebo Pinterest. Na [místa výskytu AMP](https://docs.google.com/document/d/1W57NJXoq7-EFpKOvdnelft4Qg3xl9KAjp5aFBExlmqc/edit#) se podíváme už za chvíli.
 
-## 5) Stránka je připravená pro distribuci platformami {#5}
+V ideální distribuční cestě se ale AMP stránka načte z AMP Vieweru, který pomáhá prohlížeči s vykreslením. Tady ji najdete už na známé adrese pod doménou Googlu: `https://google.com/amp/s/…`.
 
-Aktuálně AMP používá Google ve svém Search, vyhledavač Bing stejným způsobem. LinkedIn, Twitter a Pinterest pak ve svých mobilních aplikacích. 
 
-Jakým přesně způsobem? Ptáte se správně, je zde další text.
+## Tři místa výskytu AMP stránek
+
+Zatím jsme čekali na příležitost pro vysvětlení rozdílu mezi různými umístěními AMP stránek. Sláva – právě nastává. V ideální distribuci se stránka vyskytuje na třech místech:
+
+1. Zdroj, „origin“, prostě váš server, například:  
+`https://example.com/stranka.amp.html`
+2. [AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#heading=h.bv7h5ckbspk7), adresa na distribuční CDN, například:  
+`https://example-com.cdn.ampproject.org/s/example.com/stranka.amp.html`
+3. [AMP Viewer](https://docs.google.com/document/d/1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc/edit#heading=h.fcehdvjcsrf3), zobrazovač, například:  
+`https://google.com/amp/s/example.com/stranka.amp.html`
+
+Setkání uživatele s AMP stránkou by mělo proběhnout v AMP Vieweru. Ten očekává, že bude mít k dispozici upravenou stránku umístěnou na AMP Cache. A ta si pro zdroje sahá na náš server.
+
+Je možné, že některé zobrazovací kontexty povedou uživatele přímo na zdroj, tedy na doménu majitele obsahu (`https://example.com/stranka.amp.html`), jak to dělá například Twitter. Takhle se ale zdaleka nevyužívá potenciálu AMP. Ten je v mixu frameworku pro tvorbu stránek a specifické distribuční cesty.
+
+Teď si musíme říct více o oné mezipaměti pro ukládání stránek AMP – o AMP Cache.
+
