@@ -28,7 +28,7 @@ Ptáte se na rozdíl oproti výchozímu chování ve většině moderních prohl
 
 V článku dále následují detaily pro ty z vás, kteří máte více než jednu minutu času.
 
-## Jaký problémy to řeší? Rozličné výchozí nastavení prohlížečů a potřeby projektů {#problemy}
+## Jaké problémy to řeší? Rozličné výchozí nastavení prohlížečů a potřeby projektů {#problemy}
 
 Různé [prohlížeče](prohlizece.md) totiž k vykreslování během stahování fontů přistupují různě. Například:
 
@@ -132,10 +132,23 @@ Při vkládání odkazu, který generuje CSS, je potřeba jen uvést parametr `d
 
 Další „vendoři“, jako Adobe Fonts nebo Fonts.com, se zatím nepřidali. Sleduje to a průběžně o tom informuje [Zach Leatherman](https://www.zachleat.com/web/google-fonts-display/).
 
-## Podpora a javascriptová řešení {#podpora}
+## Podpora v prohlížečích {#podpora}
 
 Podle [CanIUse](https://caniuse.com/#feat=css-font-rendering-controls) je podpora deskriptoru `font-display` mezi moderními prohlížeči takřka stoprocentní. Po přechodu Edge na jádro Chromium chybí podpora z relevantních prohlížečů už jen v Internet Exploreru. Jeho výchozí nastavení ale pracuje s něčím jako hodnotou `swap`, ovšem [zcela bez intervalu blokování](https://font-display.glitch.me/). Na stránce je prostě vykreslený fallbackový font a jakmile se stáhne webfont, dojde k překreslení.
 
-Asi je dobré zmínit, že dříve se tento problém řešívala javascriptovými knihovnami – [FontFaceObserver](https://github.com/bramstein/fontfaceobserver) nebo [WebFontLoader](https://github.com/typekit/webfontloader). Ve většině případů už nebudou potřeba, nativní řešení s `font-display` je samozřejmě lepší. Mohou se hodit v kombinaci s externími dodavateli webfontů, jako je Adobe Fonts, ale obecně je lepší přesunout soubory s fonty na vlastní doménu a použít deskriptor `font-display`.
+## Řešení JavaScriptem? Stále se nám může hodit {#js}
+
+Asi je dobré zmínit, že dříve se tento problém dal vyřešit jen pomocí javascriptových knihoven, např. [FontFaceObserver](https://github.com/bramstein/fontfaceobserver) nebo [WebFontLoader](https://github.com/typekit/webfontloader). Ve velkém množství případů už nebudou potřeba, nativní řešení s `font-display` je samozřejmě efektivější.
+
+Jak mě ale [upozornil Michal Matuška](https://twitter.com/fireball_/status/1130829875298865153), je zde stále několik důvodů, proč u řešení JavaScriptem můžete chtít zůstat:
+
+1. *Vícenásobná překreslení*  
+Jsou nepříjemná hlavně pokud jsou různé řezy jednoho písma v jednom textu (italic, bold…) stažená různě nebo za pomocí různých strategií `font-display`. JavaScript umožní počkat na stažení všech a překreslovat stránku najednou. (Problém se dá řešit i pomocí `font-display:optional`.)
+2. *Detekce pomalejšího připojení*  
+JavaScriptem lze například také vypnout webfonty v režimu [Spořiče dat](https://support.google.com/chrome/answer/2392284?co=GENIE.Platform%3DAndroid&hl=cs) (prohlížeč vrací `navigator.connection.saveData === true`) nebo na pomalém připojení (`navigator.connection.effectiveType === "slow-2g"`).
+3. *Externí dodavatelé webfontů*  
+JS se může hodit například také v kombinaci pro spolupráci stránky s externími dodavateli webfontů, kteří `font-display` neumí, jako je výše uvedený Adobe Fonts. Obecně je však lepší přesunout soubory s fonty na vlastní doménu, pokud je to možné.
+
+Více je v textu [Should I Use JavaScript to Load My Web Fonts?](https://www.filamentgroup.com/lab/js-web-fonts.html) od Filament Group.
 
 <!-- AdSnippet -->
