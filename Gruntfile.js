@@ -33,23 +33,6 @@ module.exports = function(grunt) {
       },
     },
 
-    // SVG2PNG
-    // -------
-    // Z SVG obrazku v src renderuje PNG kopie pro fallbacky.
-    // na Windows musi mit zdrojove SVG XML hlavicku (staci <?xml version="1.0"?>)
-
-    svg2png: {
-      images: {
-        files: [
-            {
-              cwd: 'src/images/',
-              src: ['*.svg'],
-              dest: 'dist/images/original/'
-            }
-        ]
-      }
-    },
-
     // responsive_images: vyroba zmensenin obrazku
     // -------------------------------------------
 
@@ -113,8 +96,8 @@ module.exports = function(grunt) {
 
 
   // pust po zmene obrazku (resi i svg)
-  grunt.registerTask('img', ['copy', 'svg2png', 'responsive_images:default']);
-  grunt.registerTask('imgall', ['copy', 'svg2png', 'responsive_images:all']);
+  grunt.registerTask('img', ['copy', 'responsive_images:default']);
+  grunt.registerTask('imgall', ['copy', 'responsive_images:all']);
 
   grunt.registerTask('default', ['img']);
 

@@ -1,10 +1,10 @@
 # Rychlost webů? Problém i příležitost v jednom
 
-AMP je především pokus radikálně zrychlit vykreslování webů v prohlížečích uživatelů. Dostupné studie totiž v posledním desetiletí ukazují na neuspokojivou rychlost webů. 
+AMP je především pokus radikálně zrychlit vykreslování webů v prohlížečích uživatelů. Dostupné studie totiž v posledním desetiletí ukazují na neuspokojivou rychlost webů.
 
 ## Většina webů je stále pomalá
 
-Za všechny zmíním například rok 2016, kdy vyšlo najevo, že průměrná velikost stránky je zhruba 2,25 MB. Tedy stejně, jako mělo první vydání legendární hry Doom. 
+Za všechny zmíním například rok 2016, kdy vyšlo najevo, že průměrná velikost stránky je zhruba 2,25 MB. Tedy stejně, jako mělo první vydání legendární hry Doom.
 
 _„The web is Doomed,“_ napsal k tomu na své mnohamegabajtové stránce magazín Wired.
 
@@ -25,7 +25,7 @@ Z většiny stránek jsou prostě nevychovaní Otesánci, kteří konzumují bat
 Z dalších studií ovšem vychází, že uživatelé nemají s weby zase takovou trpělivost. Výzkumník R. B. Miller přišel už v roce 1968 na to, že lidé považují za okamžitou reakci takovou, která netrvá déle než 100 milisekund.
 
 <figure>
-<img src="../dist/images/original/rychlost-nielsen.jpg" alt="">
+<img src="../dist/images/original/rychlost-nielsen.svg" alt="">
 <figcaption markdown="1">
 _Obrázek: Tři milníky ve vnímání rychlosti webů. Zdroj: Nielsen Norman Group, [vrdl.in/4o3d7](https://www.nngroup.com/articles/response-times-3-important-limits/)_
 </figcaption>

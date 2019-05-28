@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1920" height="540" viewBox="0, 0, 1920, 540">
+  <g id="Background">
+    <rect x="0" y="0" width="1920" height="540" fill="#FFFFFF"/>
+  </g>
+  <defs>
+    <clipPath id="Clip_1">
+      <path d="M73.051,451.547 L423.901,451.547 L423.901,258.787 L73.051,258.787 z"/>
+    </clipPath>
+    <clipPath id="Clip_2">
+      <path d="M738.79,451.547 L1190.08,451.547 L1190.08,258.787 L738.79,258.787 z"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1">
+    <path d="M0,0 L1920,0 L1920,1080 L0,1080 z" fill="#FFFFFF"/>
+    <g clip-path="url(#Clip_1)">
+      <path d="M99.801,278.167 L389.771,278.167 L389.771,355.167 L99.801,355.167 z" fill="#FFFFFF"/>
+      <path d="M142.911,355.167 L339.291,355.167 L339.291,432.167 L142.911,432.167 z" fill="#FFFFFF"/>
+      <text transform="matrix(1, 0, 0, 1, 183.43, 317.5)">
+        <tspan x="-83.43" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">o</tspan>
+        <tspan x="-46.53" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.42" fill="#2E2C09">k</tspan>
+        <tspan x="-9.87" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">a</tspan>
+        <tspan x="26.13" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">m</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 283.87, 317.5)">
+        <tspan x="-16.59" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">ž</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 341.38, 317.5)">
+        <tspan x="-40.92" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">i</tspan>
+        <tspan x="-18.72" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.24" fill="#2E2C09">t</tspan>
+        <tspan x="4.38" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0.54" fill="#2E2C09">á</tspan>
+        <tspan x="40.92" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09"> </tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 426.34, 316)"/>
+      <text transform="matrix(1, 0, 0, 1, 241.385, 394.5)">
+        <tspan x="-98.385" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-1.29" fill="#2E2C09">r</tspan>
+        <tspan x="-74.175" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="1.02" fill="#2E2C09">e</tspan>
+        <tspan x="-39.855" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">a</tspan>
+        <tspan x="-3.855" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.54" fill="#2E2C09">k</tspan>
+        <tspan x="32.445" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.12" fill="#2E2C09">c</tspan>
+        <tspan x="64.545" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">e</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M109.461,115.833 L372.741,115.833 L372.741,270.833 L109.461,270.833 z" fill="#FFFFFF"/>
+      <text transform="matrix(1, 0, 0, 1, 240.64, 194)">
+        <tspan x="-131.64" y="42" font-family="Foro-ExtraBold" font-size="120" fill="#005AF0">0,1 </tspan>
+        <tspan x="69.12" y="42" font-family="Foro-ExtraBold" font-size="120" kerning="0" fill="#005AF0">s</tspan>
+      </text>
+    </g>
+    <g clip-path="url(#Clip_2)">
+      <path d="M771.42,278.167 L1161.83,278.167 L1161.83,355.167 L771.42,355.167 z" fill="#FFFFFF"/>
+      <path d="M758.67,355.167 L1161.33,355.167 L1161.33,432.167 L758.67,432.167 z" fill="#FFFFFF"/>
+      <text transform="matrix(1, 0, 0, 1, 825.945, 317.5)">
+        <tspan x="-54.945" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.45" fill="#2E2C09">n</tspan>
+        <tspan x="-16.155" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">e</tspan>
+        <tspan x="17.685" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">p</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 895.38, 317.5)">
+        <tspan x="-14.04" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">ř</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 956.94, 317.5)">
+        <tspan x="-50.1" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">e</tspan>
+        <tspan x="-16.26" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0.24" fill="#2E2C09">r</tspan>
+        <tspan x="12.06" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">u</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1022.91, 317.5)">
+        <tspan x="-15.63" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">š</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1074.87, 317.5)">
+        <tspan x="-36.99" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">e</tspan>
+        <tspan x="-3.15" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">n</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1129.83, 317.5)">
+        <tspan x="-18.33" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">ý</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1178.16, 317.5)">
+        <tspan x="-30" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09"> </tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1191.9, 316)"/>
+      <text transform="matrix(1, 0, 0, 1, 861.735, 394.5)">
+        <tspan x="-102.735" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.24" fill="#2E2C09">t</tspan>
+        <tspan x="-79.635" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">ok </tspan>
+        <tspan x="8.925" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.15" fill="#2E2C09">m</tspan>
+        <tspan x="66.075" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">y</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 979.89, 394.5)">
+        <tspan x="-15.63" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">š</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1078.35, 394.5)">
+        <tspan x="-82.83" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.03" fill="#2E2C09">l</tspan>
+        <tspan x="-61.56" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">e</tspan>
+        <tspan x="-27.72" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.45" fill="#2E2C09">n</tspan>
+        <tspan x="11.07" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">e</tspan>
+        <tspan x="44.91" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">k</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M879.3,115.833 L1040.7,115.833 L1040.7,270.833 L879.3,270.833 z" fill="#FFFFFF"/>
+      <text transform="matrix(1, 0, 0, 1, 959.7, 194)">
+        <tspan x="-80.7" y="42" font-family="Foro-ExtraBold" font-size="120" fill="#005AF0">1 </tspan>
+        <tspan x="18.18" y="42" font-family="Foro-ExtraBold" font-size="120" kerning="0" fill="#005AF0">s</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M1539.163,278.167 L1830.643,278.167 L1830.643,355.167 L1539.163,355.167 z" fill="#FFFFFF"/>
+      <path d="M1515.403,355.167 L1840.663,355.167 L1840.663,432.167 L1515.403,432.167 z" fill="#FFFFFF"/>
+      <text transform="matrix(1, 0, 0, 1, 1677.405, 317.5)">
+        <tspan x="-138.405" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">u</tspan>
+        <tspan x="-100.365" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.15" fill="#2E2C09">c</tspan>
+        <tspan x="-68.595" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.3" fill="#2E2C09">h</tspan>
+        <tspan x="-30.375" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.15" fill="#2E2C09">o</tspan>
+        <tspan x="5.175" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.33" fill="#2E2C09">v</tspan>
+        <tspan x="40.065" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">ání</tspan>
+        <tspan x="138.405" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09"> </tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 1677.24, 394.5)">
+        <tspan x="-162.24" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">po</tspan>
+        <tspan x="-88.08" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.39" fill="#2E2C09">z</tspan>
+        <tspan x="-56.07" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">o</tspan>
+        <tspan x="-19.17" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0.09" fill="#2E2C09">r</tspan>
+        <tspan x="9.18" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="-0.54" fill="#2E2C09">n</tspan>
+        <tspan x="47.88" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">o</tspan>
+        <tspan x="84.78" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0.06" fill="#2E2C09">s</tspan>
+        <tspan x="116.22" y="20.5" font-family="Foro-ExtraBold" font-size="60" fill="#2E2C09">t</tspan>
+        <tspan x="140.04" y="20.5" font-family="Foro-ExtraBold" font-size="60" kerning="0" fill="#2E2C09">i</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M1561.633,115.833 L1794.433,115.833 L1794.433,270.833 L1561.633,270.833 z" fill="#FFFFFF"/>
+      <text transform="matrix(1, 0, 0, 1, 1678.4, 194)">
+        <tspan x="-116.4" y="42" font-family="Foro-ExtraBold" font-size="120" fill="#005AF0">10 </tspan>
+        <tspan x="53.88" y="42" font-family="Foro-ExtraBold" font-size="120" kerning="0" fill="#005AF0">s</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
