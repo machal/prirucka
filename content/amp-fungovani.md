@@ -2,13 +2,12 @@
 
 Proces mezi publikováním a momentem dostupnosti stránky na platformách, které používají AMP, mírně zjednodušíme a technické detaily si necháme na později. Podívejte se nejprve na schéma:
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Jak-funguje0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Jak-funguje0.png "image_tooltip")
-
-
+<figure>
+<img src="../dist/images/original/amp-fungovani-distribuce.svg" alt="">
+<figcaption markdown="1">
 _Obrázek: Čím se liší distribuce běžné stránky od AMP?_
+</figcaption>
+</figure>
 
 Ještě to pojďme popsat slovy. Zatímco u běžné HTML stránky „vyplivne“ váš redakční systém (CMS) nějaký obsah, který je hned k dispozici pro zobrazení v prohlížečích vašich nedočkavých uživatelů, u AMP je distribuce složitější:
 
