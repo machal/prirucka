@@ -1,8 +1,8 @@
 # Favikony webu s RealFaviconGenerator
 
-Ikona webu. Kromě tradiční `favicon.ico`, ikony na záložce rozhraní prohlížeče, se dnes „favikony“ zobrazují v celé řadě dalších kontextů: na ploše mobilních operačního systémů nebo jako součást širšího nastavení zobrazování na dlaždicích novějších Windows. 
+Ikona webu. Kromě tradiční `favicon.ico`, ikony na záložce rozhraní prohlížeče, se dnes „favikony“ zobrazují v celé řadě dalších kontextů: na ploše mobilních operačního systémů, ve vyhledávání Googlu nebo jako součást širšího nastavení zobrazování na dlaždicích novějších Windows.
 
-Proto už ani ona *pitomá favikona* není téma triviální jako před lety. 
+Proto už ani ona *pitomá favikona* není téma triviální jako před lety.
 
 ![Favicony](../dist/images/original/favicon.jpg)
 
@@ -23,12 +23,11 @@ Některé další detaily najdete také na JeČas.cz. [jecas.cz/favicon](http://
 **Touch ikonu** uvidíte na Androidu nebo iOS, když si web umístíte na plochu. Těchto ikon je ve skutečnosti daleko, daleko více. Jsou to všechny, které v [kompletním seznamu ikon](https://realfavicongenerator.net/faq) začínají na `apple-touch-icon-` nebo `android-chrome-`. Napočítal jsem sedmnáct souborů. Podle RealFaviconGenerator.net stačí soubory vytvořit a do HTML vložit tento kód:
 
 ```html
-<link rel="apple-touch-icon" sizes="180x180" 
+<link rel="apple-touch-icon" sizes="180x180"
   href="/favicon/apple-touch-icon.png">
 ```
 
 Dále tady máme standardizovaný **Web App Manifest**, který kromě ikon definuje  barvy a způsob zobrazení. Používá jej Chrome na Androidu. Více na [w3.org](http://www.w3.org/2008/webapps/manifest/):
-
 
 ```html
 <link rel="manifest" href="/favicon/manifest.json">
@@ -42,7 +41,6 @@ V Chrome na Androidu můžete také upravit **barvy rozhraní prohlížeče**. V
 
 Ikona pro **připnutou záložku v Safari na Mac OS**. Více na [developer.apple.com](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html):
 
-
 ```html
 <link rel="mask-icon" 
   href="/favicon/safari-pinned-tab.svg" color="#1e3307">
@@ -50,11 +48,10 @@ Ikona pro **připnutou záložku v Safari na Mac OS**. Více na [developer.apple
 
 Další manifest, tentokrát používaný **Internet Explorerem 11**:
 
-
 ```html
-<meta name="msapplication-config" 
+<meta name="msapplication-config"
   content="/favicon/browserconfig.xml">
-<meta name="application-name" 
+<meta name="application-name"
   content="Vzhůru dolů">
 ```
 
@@ -66,7 +63,6 @@ Další manifest, tentokrát používaný **Internet Explorerem 11**:
 
 Favicona pro **Safari na Mac OS**:
 
-
 ```html
 <link rel="icon" type="image/png" 
   href="/favicon/favicon-32x32.png" sizes="32x32">
@@ -74,15 +70,17 @@ Favicona pro **Safari na Mac OS**:
 
 Klasická 16 × 16 ikona pro **všechny ostatní prohlížeče**:
 
-
 ```html
 <link rel="icon" type="image/png" 
   href="/favicon/favicon-16x16.png" sizes="16x16">
 ```
 
-
 ## Dát je do adresáře nebo ne?
 
-Dávám je tam všechny kromě `favicon.ico`. Proto, abych si hlavní adresář projektu nezaplevelil desítkami obrázků. Jenže některé prohlížeče a vyhledávače si favikony  chtějí stahovat právě z hlavního adresáře. Když si k nim ale nadefinujete meta značky, mělo by to být v pořádku. 
+Dávám je tam všechny kromě `favicon.ico`. Proto, abych si hlavní adresář projektu nezaplevelil desítkami obrázků. Jenže některé prohlížeče a vyhledávače si favikony  chtějí stahovat právě z hlavního adresáře. Když si k nim ale nadefinujete meta značky, mělo by to být v pořádku.
 
 `favicon.ico` je výjimka, protože si pro ni do hlavního adresáře sahají starší Explorery a taky roboti vyhledávačů. Tu v rootu nechávám vždy, aby server zbytečně nevracel chyby „404 Nenalezeno“.
+
+## Vyhledávání Google
+
+Nejnovější výskyt favikony se hlásí z mobilních výsledků vyhledávání na Googlu. Ten po vás bude chtít opět soubor `favicon.ico`, Jako zdroje bere jakékoliv favikony definované [zde](https://en.wikipedia.org/wiki/Favicon#File_format_support), u bitmapových obrázků ovšem jen ve velikosti 48 × 48 pixelů a jejich násobcích. Více informací najdete v textu [„Define a favicon to show in search results“](https://support.google.com/webmasters/answer/9290858).
