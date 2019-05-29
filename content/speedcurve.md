@@ -34,7 +34,7 @@ _Obrázek: Průběžný vývoj vykreslovacích a načítacích metrik. Výkyvy j
 </figcaption>
 </figure>
 
-Podívejte se také na [živé demo](https://speedcurve.com/demo/site/?b=apple-iphone-7&cs=lg&d=30&dc=2&de=1&ds=1&r=us-west-1&s=299&u=908) pro britské noviny Guardian.
+Podívejte se také na [živé demo](https://speedcurve.com/demo/site/?b=apple-ipad&cs=lg&d=30&dc=2&de=1&ds=1&r=us-west-1&s=299&u=908&share=39tfnozeq94p1o0hndk1kpbg4vb7cg) pro britské noviny Guardian. 
 
 ### 2) Porovnání s konkurencí {#vlastnosti-2}
 
@@ -47,7 +47,7 @@ _Obrázek: Srovnání aktuálně měřených konkurentů pro Rohlík.cz. Toho je
 </figcaption>
 </figure>
 
-[Demo](https://speedcurve.com/demo/benchmark/?b=apple-iphone-7&cs=lg&d=30&dc=2&de=1&ds=1&l=article&m=speedindex&r=us-west-1) pro Guardian.
+[Demo](https://speedcurve.com/demo/benchmark/?b=apple-ipad&cs=lg&d=30&dc=2&de=1&ds=1&l=article&m=speedindex&r=us-west-1&share=39tfnozeq94p1o0hndk1kpbg4vb7cg) pro Guardian.
 
 ### 3) Hlídání rychlostních limitů {#vlastnosti-3}
 
@@ -65,7 +65,7 @@ _Obrázek: Červená laťka aneb rychlostní limity ve SpeedCurve._
 Limity je možné kontrolovat také ve speciálním pohledu, který je možné si vystavit ve firemním kontrolním panelu:
 
 <figure>
-<img src="../dist/images/original/speedcurve-budgets-dashboard.jpg" height="540"  width="1920" alt="SpeedCurve: Performance Budgets Dashboard">
+<img src="../dist/images/original/speedcurve-budgets-dashboard.jpg" width="1920" height="540"  alt="SpeedCurve: Performance Budgets Dashboard">
 <figcaption markdown="1">
 _Obrázek: Zelené plochy rychlostních limitů říkají, že tady je vše v pořádku._
 </figcaption>
@@ -74,15 +74,15 @@ _Obrázek: Zelené plochy rychlostních limitů říkají, že tady je vše v po
 Míst, kam se do SpeedCurve dívám, je opravdu hodně. Mimo uváděné tři zásadní si pak pochvaluji například tyto:
 
 * _Tipy na vylepšení_  
-SpeedCurve sbírá a seskupuje tipy na vylepšení od známého nástroje [Lighthouse](lighthouse.md), jehož autorem je Google. Průběžně tedy vidíte, co je možné vylepšit a jakou prioritu to má. Viz [demo](https://speedcurve.com/demo/improve/?cs=lg&s=299).
+SpeedCurve sbírá a seskupuje tipy na vylepšení od známého nástroje [Lighthouse](lighthouse.md), jehož autorem je Google. Průběžně tedy vidíte, co je možné vylepšit a jakou prioritu to má. Viz [demo](https://speedcurve.com/demo/improve/?cs=lg&s=299&share=39tfnozeq94p1o0hndk1kpbg4vb7cg).
 * _Aktuální testy: Filmový pás_  
-Každý jednotlivý test je dělaný pomocí nesmrtelného WebpageTestu. Pokud tento nástroj znáte, ale nevyhovuje vám zobrazení průběhu načítání, SpeedCurve se vám bude líbit. Jeho výstupy jsou o řád přehlednější. [Demo](https://speedcurve.com/demo/test/190527_5J_04314c486f600994e15e45519f7d1894/).
+Každý jednotlivý test je dělaný pomocí nesmrtelného WebpageTestu. Pokud tento nástroj znáte, ale nevyhovuje vám zobrazení průběhu načítání, SpeedCurve se vám bude líbit. Jeho výstupy jsou o řád přehlednější. [Demo](https://speedcurve.com/demo/test/190528_BY_19a28d49946b7af766b39efedeca6627/?share=39tfnozeq94p1o0hndk1kpbg4vb7cg).
 * _Deploy a porovnání před a po_  
-Do [API od SpeedCurve](https://api.speedcurve.com/) můžete automaticky posílat publikování každé nové verze (deploy) vašeho webu. Je pak možné snadno srovnávat stav před a po jejím zveřejněním. Viz [demo](https://speedcurve.com/demo/deploy/?b=chrome&cs=lg&dl=419933&dp=283369&r=us-west-1&s=299&u=906).
+Do [API od SpeedCurve](https://api.speedcurve.com/) můžete automaticky posílat publikování každé nové verze (deploy) vašeho webu. Je pak možné snadno srovnávat stav před a po jejím zveřejněním. Viz [demo](https://speedcurve.com/demo/deploy/?b=apple-ipad&cs=lg&dl=246598&dp=419933&r=us-west-1&s=299&u=908&share=39tfnozeq94p1o0hndk1kpbg4vb7cg).
 * _Third party dashboard_  
-Nově představený panel pro kontrolu dopadu komponent třetích stran na výkon vašeho webu. [Demo](https://speedcurve.com/demo/thirdparty/?b=apple-ipad&cs=lg&d=30&dc=2&de=1&ds=1&r=us-west-1&s=299&u=908).
+Nově představený panel pro kontrolu dopadu komponent třetích stran na výkon vašeho webu. [Demo](https://speedcurve.com/demo/thirdparty/?b=apple-ipad&cs=lg&d=30&dc=2&de=1&ds=1&r=us-west-1&s=299&u=908&share=39tfnozeq94p1o0hndk1kpbg4vb7cg).
 
-Zatím by to mohlo stačit. Pro bližší představu si [proklikejte demo](https://speedcurve.com/demo/thirdparty/?b=apple-ipad&cs=lg&d=30&dc=2&de=1&ds=1&r=us-west-1&s=299&u=908) a s dotazy se ozvěte do komentářů či do e-mailu.
+Zatím by to mohlo stačit. Pro bližší představu si proklikejte demo a s dotazy se ozvěte do komentářů či do e-mailu.
 
 <!-- AdSnippet -->
 
@@ -113,7 +113,8 @@ U projektů, které nemají problém si na sebe vydělat a zároveň řeší ryc
 Existují, jistě. Jen jim vždycky něco chybí. Ale pokud toužíte ušetřit nebo vám více vyhovuje vlastní či úplně jiná řešení, alespoň pár vám jich nabídnu:
 
 * [Lighthouse](lighthouse.md) můžete pouštět automaticky a nově podporuje také [Performance Budgets](https://developers.google.com/web/tools/lighthouse/audits/budgets).
-* [Speed Demon](https://docs.google.com/spreadsheets/d/18myAm-hVhlcdushkMFcljgWeUe4zxZGzA7gWOUiCHic/edit#gid=0) je jednoduchý nástroj, který automaticky pouští WebpageTest a kontroluje rychlostní limity.
+* [Speed Demon](https://medium.com/dev-channel/introducing-speed-demon-a36d95dd0174) je jednoduchý nástroj, který automaticky pouští WebpageTest a kontroluje rychlostní limity.
+* [New Relic Browser](https://newrelic.com/products/browser-monitoring) – známý monitorovací software má také funkčnost pro sledování rychlosti frontendu. (Za upozornění děkuji Lukáši Konarovskému.)
 
 Jistě si vzpomenete i na další rychlostní monitorovače. Neváhejte je navrhnout, rád je zde doplním.
 
