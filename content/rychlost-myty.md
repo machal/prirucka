@@ -160,7 +160,7 @@ Takže už víme, kudy při optimalizaci rychlosti webu cesta nevede. Pojďme si
 
 Ještě jsem vás neotrávil? Skvělé, pak přidávám pozitivní doporučení na závěr:
 
-1. Měřte rychlost průběžně a dlouhodobě. Například nástroji [SpeedCurve](https://speedcurve.com/) nebo [Speed Demon](https://medium.com/dev-channel/introducing-speed-demon-a36d95dd0174).
+1. Měřte rychlost průběžně a dlouhodobě. Například nástroji [SpeedCurve](speedcurve.md) nebo [Speed Demon](https://medium.com/dev-channel/introducing-speed-demon-a36d95dd0174).
 2. Sledujte [metriky průběhu vykreslování](metriky-rychlosti.md): Start Render, Speed Index, Time To Interactive a další.
 3. Sledujte vývoj metrik od reálných uživatelů, například [z Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/), který je dostupný také [v nových PageSpeed Insights](pagespeed-insights.md).
 4. Optimalizujte podle doporučení nástroje [Lighthouse](lighthouse.md) a časové osy vykreslování, opět z Lighthouse nebo [z WebpageTest.org](https://www.webpagetest.org/).

@@ -123,7 +123,7 @@ Kromě vlastního řešení postaveného na příkazové řádce tady máme něk
 
 - Integrace do lokální automatizace – Gulpu ([ukázka](https://github.com/GoogleChrome/lighthouse/tree/master/docs/recipes/gulp), Gruntu (pomocí [grunt-shell](https://github.com/sindresorhus/grunt-shell), Webpacku (asi pomocí [webpack-lighthouse-plugin](https://github.com/addyosmani/webpack-lighthouse-plugin))).
 - Řešení pomocí CI (Continuous integration) – například pomocí [Lighthouse CI](https://github.com/ebidel/lighthouse-ci).
-- Hotové vizualizační nástroje jako [SpeedCurve](https://speedcurve.com/), [Calibre](https://calibreapp.com/), [Treo](https://treo.sh/) a jim podobné.
+- Hotové vizualizační nástroje jako [SpeedCurve](speedcurve.md), [Calibre](https://calibreapp.com/), [Treo](https://treo.sh/) a jim podobné.
 
 ## Shrnutí
 

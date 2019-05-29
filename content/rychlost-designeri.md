@@ -70,7 +70,7 @@ Pokud byste to chtěli ještě více zjednodušit, sledujte hlavně [Speed Index
 
 ### Průběžné měření rychlosti {#prubezne}
 
-Měření a „optimalizace“ se nemá dělat jednorázově. Musíte to měřit pravidelně. Všechny měřící služby mají nějaké API, takže si jejich výstupy můžete nechat zařadit do interních měřících nástrojů. Nebo využijte hotové řešení jako je [SpeedCurve.com](https://speedcurve.com/).
+Měření a „optimalizace“ se nemá dělat jednorázově. Musíte to měřit pravidelně. Všechny měřící služby mají nějaké API, takže si jejich výstupy můžete nechat zařadit do interních měřících nástrojů. Nebo využijte hotové řešení jako je [SpeedCurve](speedcurve.md).
 
 
 ## Jak můžete pomoci vývojářům?

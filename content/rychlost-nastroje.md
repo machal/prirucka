@@ -8,9 +8,9 @@ Validátor základních technických problémů, které komplikují rychlost web
 
 <figure>
 <img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
-</figcaption> 
+</figcaption>
 </figure>
 
 Dokud v PageSpeed Insights (PSI) nedosáhnete skóre dejme tomu kolem 80 bodů na desktopu i mobilu, nemá smysl učit se další nástroje. Vyřešit je potřeba hlavně červeně zvýrazněné problémy vašeho webu.
@@ -116,7 +116,21 @@ Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: an
 
 Používám jen jako doplněk, ale někteří mu dávají přednost před PageSpeed Insights. Obsahuje totiž analýzu z tohoto nástroje a zároveň ještě dříve velmi známou metodiku YSlow v jednom reportu.
 
-<!-- AdSnippet -->
-
 Umí toho hodně. Ukáže timeline, zvládne emulaci pomalého připojení. Testovací lokality má GTmetrix ale pro ČR horší než WebPagetest.org a s méně možnostmi nastavení. Hezké je monitorování a nastavení připomínek do e-mailu. [gtmetrix.com](https://gtmetrix.com/)
 
+## SpeedCurve
+
+[SpeedCurve](https://speedcurve.com) je nástroj pro automatický průběžný monitoring rychlosti, který zobrazuje reporty, sloužící jako podklad pro optimalizaci.
+
+<figure>
+<img src="../dist/images/original/speedcurve.jpg" alt="SpeedCurve">
+<figcaption markdown="1">
+*Obrázek: Úvodní stránka SpeedCurve nabízí základní měření a porovnání s konkurencí.*
+</figcaption>
+</figure>
+
+<span class="web-only" markdown="1">
+V příručce najdete samostaný [článek i o SpeedCurve](speedcurve.md).
+</span>
+
+<!-- AdSnippet -->

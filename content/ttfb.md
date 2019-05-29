@@ -31,7 +31,7 @@ TTFB ukazují asi všechny pořádnější nástroje:
 
 - [PageSpeed Insights](pagespeed-insights.md) (jako „dobu odezvy serverů“)
 - [WebpageTest.org](https://www.webpagetest.org/) (jako „First Byte“)
-- [SpeedCurve](https://speedcurve.com) a další monitorovací nástroje.
+- [SpeedCurve](speedcurve.md) a další monitorovací nástroje.
 
 První uvedený je postavený na analyzátoru [Lighthouse](lighthouse.md), takže vám rovnou nahlásí, pokud je váš serverový čas příliš vysoký.
 

@@ -47,7 +47,7 @@ Na web pošlete robota, který simuluje reálného uživatele, jeho konkrétní 
 
 Daleko lepší metodika. Do stránky si obvykle vložíte skript, který měří vaše reálné uživatele. Rozumné analytické nástroje to už dnes umí, jen jsou nastavené spíše na velké weby a firmy. Prostě na ně potřebujete peněz jako želez.
 
-U většiny webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights a to z veřejné databáze Chrome UX Report (CrUX). Dále umí schraňovat data od uživatelů i SpeedCurve, ale to je drahé.
+U většiny webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights a to z veřejné databáze Chrome UX Report (CrUX). Dále umí schraňovat data od uživatelů i [SpeedCurve](speedcurve.md), ale to je drahé.
 
 <figure>
 <img src="../dist/images/original/pagespeed-insights-crux.jpg" alt="">
