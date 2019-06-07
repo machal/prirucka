@@ -9,7 +9,7 @@ Podívejme se, kde všude vám pomůže vytvoření rychle se načítající str
 Nejznámější a pro provozovatele webu v Česku určitě nejzajímavější oblast využití. Pokud má stránka AMP verzi, roboti ji nahrají na servery Googlu. Pak to celé vypadá jako na následujícím obrázku.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-platformy-cuketka.png" alt="">
 <figcaption markdown="1">
 _Obrázek: AMP verze receptu z Cuketka.cz ve vyhledávání Googlu._
 </figcaption>
@@ -32,7 +32,7 @@ Jak si to vyzkoušet? Hledejte na Googlu třeba „flexbox“. Mezi výsledky by
 News OneBox je označení pro různé grafické prvky. Ve výsledcích vyhledávání se zobrazí v odpovědi na dotaz týkajícího se aktuálního zpravodajství.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-platformy-udalosti.png" alt="">
 <figcaption markdown="1">
 _Obrázek: AMP z Reflex.cz při vyhledávání zpravodajské události v Hlavních událostech ve výsledcích Googlu._
 </figcaption>
@@ -54,7 +54,7 @@ Jde o výběr článků zobrazovaných na výchozí stránce prohlížeče Googl
 Podobně jako u Twitteru, který uvádíme v dalším textu, nevede odkaz na optimalizovanou verzi stránky na CDN, ale na AMP stránku hostovanou na vašem serveru.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-platformy-chrome.png" alt="">
 <figcaption markdown="1">
 _Obrázek: AMP verze článku ze SmartMania.cz je k dispozici v doporučených článcích mobilního Google Chrome._
 </figcaption>
@@ -67,7 +67,7 @@ V českém prostředí jsme se odtud několikrát na AMP dostali. Na Západě m�
 Pokud si na webu zprovozníte AMP, dostanete se na Google AMP Cache i z mobilních aplikací LinkedIn.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-platformy-linkedin.png" alt="">
 <figcaption markdown="1">
 _Obrázek: V příspěvcích na profesionální sociální síti LinkedIn je možné dostat se na AMP stránku hostovanou na Google CDN._
 </figcaption>
@@ -86,7 +86,7 @@ Více informací se dozvíte přímo od autorů Pinterest Engineering v článku
 Twitter naši milou technologii rychlých stránek používá zatím jen na nepříliš honosném místě – dostanete se na ně z mobilní verze Moments.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-platformy-twitter.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Odkaz na AMP verzi článku z The Verge v Twitter Moments._
 </figcaption>
@@ -99,7 +99,7 @@ Stránky se navíc bohužel nenačítají z mezipaměti u Googlu, dostanete se j
 Vyhledávač od Microsoftu má v Česku jen miniaturní podíl na trhu, ale například v USA je důležitý. Nové využití AMP je vlastně velmi podobné tomu ve vyhledávání Googlu.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-platformy-bing.png" alt="">
 <figcaption markdown="1">
 _ Obrázek: Bing má vlastní servery upravující a hostující AMP stránky. Pro cílovku například v USA je to dost významné._
 </figcaption>
@@ -113,7 +113,7 @@ Autoři doporučují přidat robota Bingu (Bingbot) a doménu `bing-amp.com` do 
 
 Pokud používáte Google Chrome, je možné testovat AMP stránky z počítače takto:
 
-* _Rozšíření AMP Validator  
+* _Rozšíření AMP Validator_  
 Ukazuje, které navštívené stránky mají AMP verzi s možností přejít na ni.
 * _Developer Tools a emulace_  
 Zobrazte si vývojářské nástroje pomocí Ctrl (Cmd) + Alt + I. Zapněte „Device Toolbar“ pomocí Ctrl (Cmd) + Shift + M. Nahoře zvolte mobilní zařízení, např. „Galaxy S5“, přejděte na Google.com a vyhledejte si například „Vzhůru dolů Flexbox“. Jako první by na vás měla vyskočit AMP verze článku.

@@ -26,7 +26,7 @@ Dřív než se podíváme na způsoby, kterými AMP takové zrychlení zajišťu
 Je to HTML, CSS (a trochu i javascriptový) framework určený ke zrychlení načtení webových stránek díky jejich specifické distribuci.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-framework-distribuce.png" alt="">
 <figcaption markdown="1">
 _Obrázek: AMP jsou dvě věci. Frontendový framework a specifická distribuce – rozmístění stránek po optimalizovaných serverech._
 </figcaption>
@@ -62,7 +62,7 @@ Pokud chcete dostat zobrazení stránky na stovky milisekund, je nutné změnit 
 Pro zobrazení běžného webu je potřeba navázat spojení (už teď jsou stovky milisekund v čudu), vygenerovat HTML na serveru (opět stovky milisekund, ale někdy až sekundy), stáhnout blokující zdroje (CSS a některé JavaScripty, což trvá u většiny webů další dlouhé vteřiny).
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/ttfb.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Co musí prohlížeč provést u běžného webu, než stáhne první bajt z HTML. Nejvíce času obvykle zaberou operace kolem bezpečnostního certifikátu (SSL) a vygenerování stránky na serveru (Wait). Náročnost těchto operací je u servírování z AMP Cache výrazně snížená._
 </figcaption>
@@ -81,7 +81,7 @@ Pokud už stránka „sedí“ na AMP Cache, je možné s ní provádět další
 AMP stránka by se z AMP Cache zobrazila rychleji než na našem hostingu, ale ne okamžitě. Tím trikem je přednačtení.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-devtools.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Jedním ze zdrojů načtených v relevantním výsledku vyhledávání na Googlu (1) je také ta AMP stránka, u níž je největší šance, že na ni uživatel klikne (2)._
 </figcaption>
@@ -124,7 +124,7 @@ Webaři mezi námi vědí, že validovat si můžete HTML kód i u běžného we
 Jenže AMP musí být validní. Ne podle HTML standardu, ale podle AMP HTML standardu, který jej rozšiřuje a zpřísňuje. Proč? Validní AMP stránka nejenže neobsahuje chyby v kódu, ale také je rychlá a uživatelsky přívětivá.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-validator.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Ajaj, tady to nevyšlo. Neznamená to ale, že by stránka vypadla z výsledků vyhledávání Googlu. Jen se prostě nezobrazí její AMP verze._
 </figcaption>

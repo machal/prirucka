@@ -5,7 +5,7 @@ AMP se občas vytýká, že ve skutečnosti tak rychlé není. V řadě konkrét
 Jak už víme, než se AMP dostane do této ideální distribuční formy, prochází různými jinými umístěními, nebo také fázemi distribuce. Pojďme si je teď všechny projít a podívat se, jak jsou v nich konkrétní stránky rychlé.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-faze.png"  height="540"  width="1920" alt="">
 <figcaption markdown="1">
 _Obrázek: Pět fází distribuce AMP stránky._
 </figcaption>
@@ -19,7 +19,7 @@ Tady vycházíme už z poměrně slušně optimalizované stránky, navíc s vel
 Pro použití AMP jde o daleko příhodnější a typičtější případ: Nijak zvlášť rychlá stránka, navíc zatížená reklamou, velký vydavatel… Přesně pro tyto typy stránek bylo AMP původně určeno. V tomto případě není vzhled obou verzí jednotný, ale to je pro tyto weby také typické.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-faze-vd-reflex.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Non-AMP verze obou článků na Vzhůru dolů a Reflexu._
 </figcaption>
@@ -68,7 +68,7 @@ https://www.reflex.cz/clanek/rozhovory/95433/chybejici-goly-cesky-hokej-ma-probl
 Ptáte se, jak vypadají?
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-faze-vd-reflex-amp.png" alt="">
 <figcaption markdown="1">
 _Obrázek: AMP verze obou článků._
 </figcaption>
@@ -184,7 +184,7 @@ Ano, tohle je ten důvod, proč AMP použít. K takovým hodnotám jednoduše ne
 Vyjádřeme si ještě rychlost vykreslení stránky ve třech nejzajímavějších fázích distribuce pomocí obrázku.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-faze-filmstrip.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Porovnání rychlosti vykreslení tří různých forem článku na Reflex.cz. Zdroj: WebpageTest.org [vrdl.in/ampwptf](https://www.webpagetest.org/video/compare.php?tests=190516_FD_f125772934ff0cc7283623273a2dc9fb%2C190516_6B_4b9564a1c50c3e7bc5215cbaca235066%2C190516_WW_596910a9028eae6491f55ed6ff4d8239&thumbSize=200&ival=1000&end=visual)_
 </figcaption>

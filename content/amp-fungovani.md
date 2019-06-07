@@ -3,7 +3,7 @@
 Proces mezi publikováním a momentem dostupnosti stránky na platformách, které používají AMP, mírně zjednodušíme a technické detaily si necháme na později. Podívejte se nejprve na schéma:
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-fungovani.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Čím se liší distribuce běžné stránky od AMP?_
 </figcaption>

@@ -9,7 +9,7 @@ Můžete to tak vnímat. AMP vám sice samo o sobě nezaručí lepší pozice a 
 Vyšší míra prokliku pak může znamenat lepší pozice, protože jde o jeden ze signálů, podle nichž Google řadí výsledky.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-kritika-tri.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Výsledky vyhledávání Googlu. Zvýšený výskyt AMP je možné sledovat hlavně v místech, která se týkají aktuálních událostí._
 </figcaption>
@@ -38,7 +38,7 @@ Možných rizik při umístění běžných webů na doméně Googlu není málo
 V neposlední řadě by také weby s vlastním JavaScriptem mohly nechtěně zaměstnat procesor (nebo chtěně třeba těžením kryptoměn), až by se ta jednoduchá, čistá stránka s výsledky vyhledávání Googlu stala nepoužitelně pomalou. Koho by asi uživatelé vinili?
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/crux.png" alt="">
 <figcaption markdown="1">
 _Obrázek: První vykreslení obsahu je u skutečných uživatelů na Vzhůru dolů slušné. Google by si mohl začít myslet, že jde o rychlý web. Co když tu rychlost ale z minuty na minutu pokazíme? Zdroj: Chrome UX Report Dashboard_
 </figcaption>
@@ -87,7 +87,7 @@ Autoři technologie v jednom ze svých materiálů píší, že 80 % týmů, kte
 Pro každého vývojáře je výroba a správa dvou verzí otrava. Někteří máme ještě v neblahé paměti opletačky s údržbou desktopových a „m tečka“ webů. Stejně jako u responzivních webů vám proto i tady radíme: Pokud můžete, vyrobte jen jednu verzi. Udělejte AMP stránku, je to běžný web, který můžete publikovat všemi současnými kanály.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-vzhuru-dolu.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Vzhůru dolů má také AMP verzi. Ve skutečnosti je ovšem naprostá většina kódu pro obě stránky shodná._
 </figcaption>
@@ -104,7 +104,7 @@ Možnosti pro zvýšení efektivity výroby a správy AMP verze tady prostě jso
 Slovo „Pages“, dříve používané v názvu technologie, zní dost jednoznačně, že? Původním záměrem AMP opravdu bylo vyřešit problém s pomalým načítáním článků. Nějak se to ale vymklo – protože od textu je to jen kousek třeba k takovému detailu produktu v e-shopu, kde už nějakou interaktivitu očekáváme. Technologie s bleskem v logu dnes už tyhle věci umí podchytit.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-eshopy.jpg" alt="">
 <figcaption markdown="1">
 _Obrázek: Některé z e-shopů, které mají alespoň částečnou AMP verzi. Prostředky ze strany AMP tady jsou._
 </figcaption>

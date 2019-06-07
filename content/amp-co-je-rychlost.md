@@ -9,7 +9,7 @@ Za všechny zmiňme například rok 2016, kdy vyšlo najevo, že průměrná vel
 _„The web is Doomed,“_ napsal k tomu na své mnohamegabajtové stránce magazín Wired.
 
 <figure>
-<img src="../dist/images/original/amp-co-je-rychlost-doomed.jpg" alt="">
+<img src="../dist/images/original/vdamp/rychlost-doom.jpg" alt="">
 <figcaption markdown="1">
 _Obrázek: Už v roce 2016 byla průměrná webová stránka velká jako 3D střílečka Doom. Zdroj: Ronan Cremin, [mobiforge.com](https://mobiforge.com/research-analysis/the-web-is-doom)_
 </figcaption>
@@ -24,7 +24,7 @@ Z většiny stránek jsou prostě nevychovaní otesánci, kteří konzumují bat
 Z dalších studií ovšem vychází, že uživatelé nemají s weby zase takovou trpělivost. Výzkumník R. B. Miller přišel už v roce 1968 na to, že lidé považují za okamžitou reakci takovou, která netrvá déle než 100 milisekund.
 
 <figure>
-<img src="../dist/images/original/rychlost-nielsen.png" alt="">
+<img src="../dist/images/original/vdamp/rychlost-nielsen.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Tři milníky ve vnímání rychlosti webů. Zdroj: Nielsen Norman Group, [vrdl.in/4o3d7](https://www.nngroup.com/articles/response-times-3-important-limits/)_
 </figcaption>

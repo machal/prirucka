@@ -1,6 +1,6 @@
 # Autoři
 
-*TODO Obrázek*
+![Martin Michálek a Robin Pokorny](../dist/images/original/vdamp/autori.jpg)
 
 ## Martin Michálek
 

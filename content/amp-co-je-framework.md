@@ -24,7 +24,7 @@ Přidáte javascriptovou knihovnu a je to. Karusel má už výchozí vzhled i ch
 Pokud se pohybujeme v zastarávajícím, ale stále existujícím světě knihovny jQuery a jejích pluginů, můžeme si vybrat mezi desítkami různých karuselů. Však to také vidíte z obrázku. A vidíte i to, o jak velké soubory jde.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/slick-carousel.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Porovnání velikost jQuery karuselů. Ty nejmenší prostě nejsou nejpopulárnější. Hádejte proč. Zdroj: [voidcanvas.com](http://voidcanvas.com/20-best-jquery-slidercarousel-plugin-comparison-with-demo/)_
 </figcaption>

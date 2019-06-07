@@ -11,7 +11,7 @@ https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/www.vzhurudolu.cz/amp/prirucka/
 Je to jeden z důležitých článků řetězce, který plní rychlostní cíle AMP. Mezipaměť AMP Cache kromě ukládání zařizuje další optimalizace stránky (jako by jich v AMP formátu nebylo dost, že?).
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="0">
+<img src="../dist/images/original/amp-cache.png" height="540" width="1920" alt="">
 <figcaption markdown="1">
 _Obrázek: Než se AMP stránka dostane k uživateli, musí se uložit do serverové keše, projít optimalizacemi a po vyžádání uživatelem se zobrazit v zobrazovači AMP Viewer._
 </figcaption>
@@ -115,7 +115,7 @@ Jak také upozorňuje bezpečnostní expert Michal Špaček, phishingovým podvo
 Tuto nevýhodu by měly řešit nový standard a Signed HTTP Exchanges (SXG), který je součástí širšího návrhu Web Packaging. SXG umožňuje publikování vašeho obsahu na cizím serveru a dovoluje prohlížeči zobrazit vaši URL adresu.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-bbc-url.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Výhody AMP Cache na vlastním URL? To nezní špatně. Zdroj: [Cloudflare](https://blog.cloudflare.com/announcing-amp-real-url/) _
 </figcaption>
