@@ -68,10 +68,10 @@ Ano, zrychlení webu vždycky pomůže, ale na uživatelskou zkušenost člověk
 
 <figure>
 <div class="rwd-scrollable"  markdown="1">
-||Běžný web|AMP po přednačtení|
-||--------:|-----------------:|
-|Lékárna.cz (produkt)|7 s|0,21 s|
-|Vzhůru dolů (článek)|4,4 s|0,24 s|
+|                    |Běžný web|AMP po přednačtení|
+|--------------------|--------:|-----------------:|
+|Lékárna.cz (produkt)|   7 s|0,21 s|
+|Vzhůru dolů (článek)| 4,4 s|0,24 s|
 </div>  
 <figcaption markdown="1">
 *Tabulka: Přidáním třídy můžeme nastavit vzhled tlačítka na jakýkoliv element*

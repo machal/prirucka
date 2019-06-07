@@ -11,7 +11,7 @@ Nemělo by se vám například stát, že cílový dokument bude vyžadovat velk
 U externích prvků, jako jsou obrázky, mapy, videa a další, zase potřebujete znát prostor, který v layoutu cílové stránky zaberou. Jinak se vám stane, že přednačtete špatnou verzi rozvržení stránky. Očima uživatele by prostě po stažení stránky došlo k nechtěným překreslením, způsobujícím poskakování obsahu.
 
 <figure>
-<img src="../dist/images/original/amp-staticky-layout.png" alt="">
+<img src="../dist/images/original/vdamp/amp-staticky-layout.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Všechny prvky v AMP mají statický layout, takže prohlížeč (za pomocí knihovny AMP runtime) přesně ví, jaký prostor jim má ve stránce ponechat._
 </figcaption>

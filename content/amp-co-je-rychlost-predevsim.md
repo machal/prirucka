@@ -16,6 +16,7 @@ Výsledky porovnal s běžným webem. U všech stránek to bylo stejné:
 <figcaption markdown="1">
 _Tabulka: Porovnání metriky Speed Index pro články na obou webech. Měřeno pomocí WebpageTest na rychlosti „3G Slow“._
 </figcaption>
+</figure>
 
 Výsledky v řádu nízkých stovek milisekund jsou fantastické, s běžnými weby na ně ale prakticky nelze dosáhnout. Proč? I o tom je tato knížka.
 

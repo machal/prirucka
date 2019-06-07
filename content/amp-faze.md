@@ -33,16 +33,15 @@ Testovat budeme tyto dvě URL adresy:
 
 ```url
 https://www.vzhurudolu.cz/prirucka/http-2
-
-https://www.reflex.cz/clanek/rozhovory/95433/chybejici-goly-cesky-hokej-ma-problem-jinde-rika-trener-milos-riha.html
+https://www.reflex.cz/clanek/rozhovory/95433/
 ```
 
 Poslouží nám jako základní míra, kterou použijeme pro další srovnání. Naměřené metriky rychlosti vykreslování uvidíme vždy v jednoduché tabulce. V tomto případě je stav následující:
 
-|   |První vykreslení|Index rychlosti|První interaktivita|
-|-- |---------------:|--------------:|------------------:|
-|Vzhůru dolů|5,6 s| 6,9 s| 1,5 s|
-|Reflex     |8,2 s|19,8 s|25,0 s|
+|            |První vykreslení|Index rychlosti|První interaktivita|
+|------------|---------------:|--------------:|------------------:|
+|Vzhůru dolů |5,6 s| 6,9 s| 1,5 s|
+|Reflex      |8,2 s|19,8 s|25,0 s|
 
 Mezi námi je jistě mnoho takových, kterým uvedené metriky nic neříkají. Nevadí, vše vysvětlíme. Jde o události, které vznikají během vykreslování stránky:
 
@@ -62,7 +61,7 @@ AMP verze obou stránek jsou umístěné na následujících adresách:
 
 ```url
 https://www.vzhurudolu.cz/amp/prirucka/http-2
-https://www.reflex.cz/clanek/rozhovory/95433/chybejici-goly-cesky-hokej-ma-problem-jinde-rika-trener-milos-riha.html?amp=1
+https://www.reflex.cz/clanek/rozhovory/95433/?amp=1
 ```
 
 Ptáte se, jak vypadají?
@@ -76,8 +75,8 @@ _Obrázek: AMP verze obou článků._
 
 A jak se změnila čísla?
 
-||První vykreslení|Index rychlosti|První interaktivita|
-|----|---:|---:|---:|
+|            |První vykreslení|Index rychlosti|První interaktivita|
+|------------|---------------:|--------------:|------------------:|
 |Vzhůru dolů|5,6 s|8,6 s|3,7 s|
 |Reflex|2,8 s|3,2 s|2,8 s|
 
@@ -103,15 +102,17 @@ Metriky AMP stránky z webu Reflexu asi nepotřebují komentáře. Došlo k nás
 Podívat se na verzi stránek umístěnou právě na tomto místě bude zajímavé:
 
 ```url
-https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/www.vzhurudolu.cz/amp/prirucka/http-2
+https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/ ↵
+  www.vzhurudolu.cz/amp/prirucka/http-2
 
-https://www-reflex-cz.cdn.ampproject.org/v/s/www.reflex.cz/clanek/rozhovory/95433/chybeji...lem-jinde-rika-trener-milos-riha.html
+https://www-reflex-cz.cdn.ampproject.org/v/s/ ↵
+  www.reflex.cz/clanek/rozhovory/95433/…
 ```
 
 A čísla?
 
-||První vykreslení|Index rychlosti|První interaktivita|
-|----|---:|---:|---:|
+|            |První vykreslení|Index rychlosti|První interaktivita|
+|------------|---------------:|--------------:|------------------:|
 |Vzhůru dolů|5,5 s|6,4 s|3,1 s|
 |Reflex|3,2 s|3,3 s|3,2 s|
 
@@ -124,15 +125,17 @@ Celkový obrázek metrik zůstává zhruba na stejné úrovni jako na hostingu, 
 [AMP Viewer](https://drive.google.com/open?id=1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc) má za úkol zobrazit weby z AMP Cache, přidat informační lištu s adresou původního webu a ovládacími prvky. Dále by měl pomoci s vykreslením a přednačtením stránky. Adresy našich stránek jsou nyní následující: \
 
 ```url
-https://www.google.com/amp/s/www.vzhurudolu.cz/amp/prirucka/http-2
+https://www.google.com/amp/s/ ↵
+  www.vzhurudolu.cz/amp/prirucka/http-2
 
-https://www.google.com/amp/s/www.reflex.cz/clanek/rozhovory/95433/chybejici-goly-cesky-hokej-ma-problem-jinde-rika-trener-milos-riha.html%3famp=1
+https://www.google.com/amp/s/ ↵
+  www.reflex.cz/clanek/rozhovory/95433/…%3famp=1
 ```
 
 Ukažme si také čísla:
 
-||První vykreslení|Index rychlosti|První interaktivita|
-|----|---:|---:|---:|
+|            |První vykreslení|Index rychlosti|První interaktivita|
+|------------|---------------:|--------------:|------------------:|
 |Vzhůru dolů|5,6 s|7,5 s|1,8 s|
 |Reflex|1,1 s|4,0 s|2,1 s|
 
@@ -167,15 +170,17 @@ Většina zobrazení AMP stránek by měla pocházet z ideální fáze distribuc
 Adresa bude stejná jako v předchozím případě:
 
 ```url
-https://www.google.com/amp/s/www.vzhurudolu.cz/amp/prirucka/http-2
+https://www.google.com/amp/s/ ↵
+  www.vzhurudolu.cz/amp/prirucka/http-2
 
-https://www.google.com/amp/s/www.reflex.cz/clanek/rozhovory/95433/chybejici-goly-cesky-hokej-ma-problem-jinde-rika-trener-milos-riha.html%3famp=1
+https://www.google.com/amp/s/ ↵
+  www.reflex.cz/clanek/rozhovory/95433/…%3famp=1
 ```
 
 Zde ovšem předpokládáme, že AMP Viewer stihl stránku přednačíst, což se děje ve většině případů. Čísla jsou pak na zcela jiné úrovni:
 
-||První vykreslení|Index rychlosti|První interaktivita|
-|----|---:|---:|---:|
+|            |První vykreslení|Index rychlosti|První interaktivita|
+|------------|---------------:|--------------:|------------------:|
 |Vzhůru dolů|0,1 s|0,2 s|> 0,1 s|
 |Reflex|0,1 s|0,2 s|> 0,1 s|
 

@@ -11,7 +11,7 @@ https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/www.vzhurudolu.cz/amp/prirucka/
 Je to jeden z důležitých článků řetězce, který plní rychlostní cíle AMP. Mezipaměť AMP Cache kromě ukládání zařizuje další optimalizace stránky (jako by jich v AMP formátu nebylo dost, že?).
 
 <figure>
-<img src="../dist/images/original/amp-cache.png" height="540" width="1920" alt="">
+<img src="../dist/images/original/vdamp/amp-cache.png" height="540" width="1920" alt="">
 <figcaption markdown="1">
 _Obrázek: Než se AMP stránka dostane k uživateli, musí se uložit do serverové keše, projít optimalizacemi a po vyžádání uživatelem se zobrazit v zobrazovači AMP Viewer._
 </figcaption>
@@ -33,7 +33,8 @@ Teď ale přeskočme od účelu AMP Cache k jejím provozovatelům. V době psan
 AMP stránky si k sobě stahuje také vyhledávač od Microsoftu – Bing. Jedna ze stránek dostupných z výsledků vyhledávání v AMP Vieweru od Microsoftu má například následující adresu:
 
 ```url
-https://www.bing.com/amp/s/amp.usatoday.com/amp/2682535002
+https://www.bing.com/amp/s/ ↵
+  amp.usatoday.com/amp/2682535002
 ```
 
 Dalším provozovatelem AMP Cache je Cloudflare, známý poskytovatel distribuční sítě CDN. Tím končí výčet míst, kam se _mohou_ ukládat naše AMP stránky.
@@ -45,7 +46,8 @@ Všimněte si důrazu na „mohou“. Nejde o zásah nejistého editora textu, a
 Následující adresu například na Bingu v době psaní textu nenajdete:
 
 ```url
-https://www.bing.com/amp/s/www.vzhurudolu.cz/amp/prirucka/http-2
+https://www.bing.com/amp/s/ ↵
+  www.vzhurudolu.cz/amp/prirucka/http-2
 ```
 
 Proč? Protože pro Bing není doména Vzhůru dolů zajímavá. A její provozovatel by rád přidal poznámku, že je to ke škodě společnosti Microsoft…
@@ -85,13 +87,15 @@ V předchozím textu jste se dozvěděli, že kromě adresy původního dokument
 URL pro AMP Cache:
 
 ```url
-https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/www.vzhurudolu.cz/amp/prirucka/http-2
+https://www-vzhurudolu-cz.cdn.ampproject.org/ ↵
+  v/s/www.vzhurudolu.cz/amp/prirucka/http-2
 ```
 
 URL pro AMP Viewer:
 
 ```url
-https://www.google.com/amp/s/www.vzhurudolu.cz/amp/prirucka/http-2
+https://www.google.com/amp/s/ ↵
+  www.vzhurudolu.cz/amp/prirucka/http-2
 ```
 
 Na první adresu uživatel běžně nenarazí, ale je to URL, kde reálně dokument najdeme. Na druhé se zobrazuje uvnitř `<iframe>` v AMP Vieweru a takto je i viditelná uživatelům.
@@ -169,7 +173,9 @@ Prakticky vzato: Když dělal Martin testy se změnou v článcích Vzhůru dol�
 Provedete ji dotazem podobným tomu následujícímu:
 
 ```url
-https://example-com.<cache.updateCacheApiDomainSuffix>/update-cache/c/s/example.com/article?amp_action=flush&amp_ts=<ts_val>&amp_url_signature=<sig_val>
+https://example-com.<cache.updateCacheApiDomainSuffix>/ ↵
+  update-cache/c/s/example.com/article?amp_action=flush ↵  
+  &amp_ts=<ts_val>&amp_url_signature=<sig_val>
 ```
 
 Je potřeba mít vygenerovaný RSA klíč pro podepisování automatizovaných výzev k aktualizaci. Jinak na tom ale není nic složitého. Více informací najdete na [google.com/amp/cache/update-cache](https://developers.google.com/amp/cache/update-cache).
