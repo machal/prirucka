@@ -8,14 +8,14 @@
     }
   ],
   "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-imagemin": "^2.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
     "grunt-responsive-images": "^1.10.0",
     "grunt-svg2png": "^0.2.8",
+    "grunt": "^1.0.4",
+    "imagemin-mozjpeg": "^8.0.0",
     "jit-grunt": "^0.10.0",
-    "stylelint": "^9.6.0",
-    "stylelint-order": "^1.0.0",
-    "time-grunt": "^1.4.0"
+    "stylelint-order": "^3.0.0",
+    "stylelint": "^10.0.1",
+    "time-grunt": "^2.0.0"
   }
 }

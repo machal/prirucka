@@ -4,6 +4,8 @@ Grunt tasky
 
 */
 
+const imageminMozjpeg = require('imagemin-mozjpeg');
+
 module.exports = function(grunt) {
   "use strict";
 
@@ -17,21 +19,23 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    // Kopirovani bitmapovych obrazku
-    // ------------------------------
 
-    copy: {
-      main: {
-        files: [
-          {
-            expand: true,
-            cwd: 'src/images/',
-            src: ['**/**.{jpg,gif,png,svg}'],
-            dest: 'dist/images/original/'
-          },
-        ],
-      },
-    },
+    // Obrazky: Imagemin a kopirovani vystupu
+    // --------------------------------------
+
+    imagemin: {
+      default: {
+        options: {
+          use: [imageminMozjpeg()]
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/images/',
+          src: ['**/**.{jpg,gif,png,svg}'],
+          dest: 'dist/images/original/'
+        }]
+      }
+    },    
 
     // responsive_images: vyroba zmensenin obrazku
     // -------------------------------------------
@@ -96,8 +100,8 @@ module.exports = function(grunt) {
 
 
   // pust po zmene obrazku (resi i svg)
-  grunt.registerTask('img', ['copy', 'responsive_images:default']);
-  grunt.registerTask('imgall', ['copy', 'responsive_images:all']);
+  grunt.registerTask('img', ['imagemin', 'responsive_images:default']);
+  grunt.registerTask('imgall', ['imagemin', 'responsive_images:all']);
 
   grunt.registerTask('default', ['img']);
 
