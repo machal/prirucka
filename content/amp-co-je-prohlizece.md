@@ -43,7 +43,7 @@ Nechápejte nás ale špatně. Obrázky, videa, „ajfrejmy“ a další prvky v
 
 Lazy loading je technika, která odloží stažení externích prvků až do chvíle, kdy je uživatelé potřebují, protože k nim posunuli stránku nebo provedli jinou související akci.
 
-V AMP jsou odloženě stahovány všechny externí prvky počínaje obrázkem (komponenta `amp-img`) a reklamou konče (`amp-ad`), nebo vkládáným rámem (`iframe`). Ušetří to dost zbytečně stahovaných dat.
+V AMP jsou odloženě stahovány všechny externí prvky počínaje obrázkem (komponenta `amp-img`) a reklamou konče (`amp-ad`), nebo vkládaným rámem (`iframe`). Ušetří to dost zbytečně stahovaných dat.
 
 Více informací o odloženém načtení najdete samozřejmě zase na Vzhůru dolů. [vrdl.cz/p/lazy-loading](https://www.vzhurudolu.cz/prirucka/lazy-loading)
 

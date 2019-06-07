@@ -73,7 +73,7 @@ Alternativně s popiskem jako `<figure>`:
 
 ```html
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/todo.jpg" alt="">
 <figcaption markdown="1">
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
 </figcaption>
@@ -137,9 +137,9 @@ Složitější tabulky ideálně jako `<figure>`:
 | `<button>` |  +     |      +     |    +  |    +   |      +   |
 </div>  
 
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Tabulka: Přidáním třídy můžeme nastavit vzhled tlačítka na jakýkoliv element*
-</figcaption> 
+</figcaption>
 
 </figure>
 ```

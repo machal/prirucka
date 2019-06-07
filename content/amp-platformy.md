@@ -1,125 +1,123 @@
 # Kde je možné potkat AMP stránky?
 
-Těch míst je docela hodně. A ne všechny obstarává Google. AMP využívá třeba LinkedIn, Pinterest, Bing a trochu i Twitter.
+AMP využívá hlavně Google, ale také třeba LinkedIn, Pinterest, Bing a trochu i Twitter.
 
-Podívejme se, kde všude vám pomohou rychle se načítající stránky vytvořené touto technologií.
+Podívejme se, kde všude vám pomůže vytvoření rychle se načítající stránky pomocí téhle technologie.
 
-1. [Google: Výsledky vyhledávání](#1)
-2. [Google: News OneBox](#2)
-3. [Google: Články na homepage Chrome](#3)
-4. [LinkedIn: Články v mobilní aplikaci](#4)
-5. [Pinterest: Odkazy v mobilní aplikaci](#5)
-6. [Twitter: Moments v mobilní aplikaci](#6)
-7. [Bing: Výsledky vyhledávání](#7)
+## 1) Google: Výsledky vyhledávání
 
-## 1) Google: Výsledky vyhledávání {#1}
-
-Nejznámější a pro provozovatele webu v Česku určitě nejzajímavější oblast využití. Pokud má stránka AMP verzi, roboti ji nahrají na servery Google. Pak to celé vypadá jako na následujícím obrázku.
+Nejznámější a pro provozovatele webu v Česku určitě nejzajímavější oblast využití. Pokud má stránka AMP verzi, roboti ji nahrají na servery Googlu. Pak to celé vypadá jako na následujícím obrázku.
 
 <figure>
-<img src="../dist/images/original/amp-platformy-google-search.jpg" alt="">
+<img src="../dist/images/original/todo.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: AMP verze receptu z Cuketka.cz ve vyhledávání Google*
+_Obrázek: AMP verze receptu z Cuketka.cz ve vyhledávání Googlu._
 </figcaption>
 </figure>
 
 Vysvětlíme si to na číslech, která vidíte na schématu:
 
-1. AMP stránka je zvýrazněná ikonkou. To myslím u velké části uživatelů zvyšuje pravděpodobnost prokliknutí.
-2. První AMP stránka se na pozadí přednačítá, což zvyšuje rychlost jejího zobrazení.
-3. Po klinutí se uživateli stránka zobrazí na adrese začínající `https://www.google.cz/amp/s/…`.
-4. Všimněte si horní lišty, která obsahuje původní adresu a možnost sdílet (opět s původní URL adresou stránky). Dále nějakou navigaci, která se ale podobná navigaci prohlížeče, takže ji považuji mírně za matoucí. Její obsah? Vysvětlení, co to ten AMP je.
-5. Uživateli se může zobrazit také informace o přihlášení do Google, což může být opět matoucí, ale nevím o tom, že by to šlo nějak vypnout.
+1. AMP stránka je zvýrazněná ikonkou. U určité části uživatelů to zvyšuje pravděpodobnost prokliknutí.
+2. Výsledky s AMP stránkami, u kterých je pravděpodobné, že na ně uživatelé kliknou, se přednačítají, což razantně zvyšuje rychlost jejich zobrazení.
+3. Po kliknutí se stránka zobrazí uživateli na adrese začínající `https://www.google.cz/amp/s/….`
+4. Horní lišta, která obsahuje původní adresu a možnost sdílet. Součást AMP Vieweru.
+5. Uživateli se může zobrazit také informace o přihlášení do Googlu, což může být opět matoucí, ale nevíme o tom, že by ji šlo nějak vypnout.
 
-V tomto kontextu se tedy AMP stránky míchají s běžnými stránkami. Pokud vím, v tuhle chvíli ale přítomnost téhle technologie pozice vašich stránek nijak nezlepšuje.
+V tomto kontextu se tedy AMP stránky míchají s běžnými stránkami. Přítomnost této technologie ale podle nás pozice vašich stránek ve výsledcích vyhledávání nijak nezlepšuje.
 
-<!-- AdSnippet -->
+Jak si to vyzkoušet? Hledejte na Googlu třeba „flexbox“. Mezi výsledky by mělo být i Vzhůru dolů, označené ikonkou AMP. Ke dni psaní tohoto textu to takto funguje na mobilním vyhledávání.
 
-Jak si to vyzkoušet? Hledejte na mobilním vyhledávání Google třeba „flexbox“. Mezi výsledky by mělo být i Vzhůru dolů, označené ikonkou AMP.
+## 2) Google: News OneBox
 
-## 2) Google: News OneBox {#2}
-
-News OneBox je označení pro různé grafické prvky, který se ve výsledcích vyhledávání zobrazí na frázi týkají se aktuálního zpravodajství.
+News OneBox je označení pro různé grafické prvky. Ve výsledcích vyhledávání se zobrazí v odpovědi na dotaz týkajícího se aktuálního zpravodajství.
 
 <figure>
-<img src="../dist/images/original/amp-platformy-google-news.jpg" alt="">
+<img src="../dist/images/original/todo.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: AMP z Reflex.cz při vyhledávání zpravodajské události v Hlavních událostech ve výsledcích Google*
+_Obrázek: AMP z Reflex.cz při vyhledávání zpravodajské události v Hlavních událostech ve výsledcích Googlu._
 </figcaption>
 </figure>
 
-Jsou zde tři možnosti:
+Jsou zde dvě možnosti zobrazení:
 
-- Karusel: V českém Google jsem tam zatím na stránku vytvořenou dotčenou technologií nenarazil. V západní Evropě a USA je kolem 90 % zde zobrazovaných stránek právě AMP.
-- Hlavní události (Top Stories): Na Západě to vypadá na 20 % podíl obsahu vytvořeného pomocí AMP.
-- Headline: Z ČR zatím neznám. Na Západě se zdá, že zde se AMP moc nevyskytuje.
+* Karusel: V západní Evropě a USA je kolem 90 % tam zobrazovaných stránek vytvořeno právě v AMP.
+* Hlavní události (Top Stories): V anglicky mluvícím světě to vypadá na 20% podíl obsahu vytvořeného pomocí AMP.
 
-Čísla mám z článku [How do AMP articles perform in the mobile SERP for Google News OneBoxes? od NewsDashboard](https://newsdashboard.com/en/how-do-amp-articles-perform-in-the-mobile-serp-for-google-news-oneboxes/).
+Čísla pocházejí z článku „How do AMP articles perform in the mobile SERP for Google News OneBoxes?“ od NewsDashboard. [vrdl.in/ampnewsbox](https://newsdashboard.com/en/how-do-amp-articles-perform-in-the-mobile-serp-for-google-news-oneboxes/)
 
-<!-- AdSnippet -->
+Jak to vyzkoušet? Zadejte si název nějaké aktuální zpravodajské kauzy do mobilního vyhledávání Googlu. Zřejmě uvidíte jen onen karusel, ale je možné, že tam budou prakticky jen výsledky ze stránek AMP. Tohle je mimochodem častým [terčem kritiky](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#). Ještě se k tomu dostaneme.
 
-Jak to vyzkoušet? Zadejte si název nějaké aktuální zpravodajské kauzy do Google. Zřejmě ale uvidíte jen Karusel a zřejmě zatím bez výsledků používajících AMP.
+## 3) Google: Navrhované články v novém okně mobilního Chromu
 
-## 3) Google: Navrhované články v novém tabu mobilního Chrome {#3}
+Jde o výběr článků zobrazovaných na výchozí stránce prohlížeče Google Chrome (Discovery Feed, česky jako „kanál Objevit“). Stránky AMP se zde opět míchají s běžnými stránkami.
 
-Jde o výběr článků zobrazovaných na výchozí stránce prohlížeče Google Chrome. Opět se zde Accelerated Mobile Pages míchají s běžnými stránkami. 
-
-Podobně jako u Twitteru nevede odkaz na optimalizovanou verzi stránky na CDN, ale na vašem serveru hostovanou AMP stránku.
+Podobně jako u Twitteru, který uvádíme v dalším textu, nevede odkaz na optimalizovanou verzi stránky na CDN, ale na AMP stránku hostovanou na vašem serveru.
 
 <figure>
-<img src="../dist/images/original/amp-platformy-google-chrome.jpg" alt="">
+<img src="../dist/images/original/todo.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: AMP verze článku ze SmartMania.cz je k dispozici v doporučených článcích mobilního Google Chrome*
+_Obrázek: AMP verze článku ze SmartMania.cz je k dispozici v doporučených článcích mobilního Google Chrome._
 </figcaption>
 </figure>
 
-V českém prostředí jsem se odtud několikrát na AMP dostal. Na Západě může být kolem tří čtvrtin zde zobrazených článků v AMP verzi. Můj zdroj je článek [Optimizing for Chrome’s “Articles for You” Content Suggestions“](https://www.clickseed.com/chrome-articles-for-you-content-suggestions/) z ClickSeed.
+V českém prostředí jsme se odtud několikrát na AMP dostali. Na Západě může být kolem tří čtvrtin zde zobrazených článků v AMP verzi. Naším zdrojem je článek „Optimizing for Chrome’s “Articles for You” Content Suggestions“ z ClickSeed. [vrdl.in/ampartsugg](https://www.clickseed.com/chrome-articles-for-you-content-suggestions/)
 
-## 4) LinkedIn: Články v mobilní aplikaci {#4}
+## 4) LinkedIn: Články v mobilní aplikaci
 
-Pokud si na webu zprovozníte AMP, dostanete se na Google cache i z mobilních aplikací LinkedIn.  
+Pokud si na webu zprovozníte AMP, dostanete se na Google AMP Cache i z mobilních aplikací LinkedIn.
 
 <figure>
-<img src="../dist/images/original/amp-platformy-linkedin.jpg" alt="">
+<img src="../dist/images/original/todo.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: V příspěvcích na profesionální sociální síti LinkedIn je možné dostat se na AMP stránku, hostovanou na Google CDN*
+_Obrázek: V příspěvcích na profesionální sociální síti LinkedIn je možné dostat se na AMP stránku hostovanou na Google CDN._
 </figcaption>
 </figure>
 
-## 5) Pinterest: Odkazy v mobilní aplikaci {#5}
+V ČR je tahle sociální síť samozřejmě hluboko ve stínu Facebooku, ale v profesionálních komunitách je vcelku hojně používaná, takže nasazení AMP není od věci i pro publikování obsahu na LinkedIn.
 
-I v mobilních aplikací od Pinterestu, můžete jít rovnou na AMP.
+## 5) Pinterest: Odkazy v mobilní aplikaci
 
-Více informací můžete dostat přímo od autorů Pinterestu v článku [Building a faster mobile web experience with AMP](https://medium.com/@Pinterest_Engineering/building-a-faster-mobile-web-experience-with-amp-a73c651ded7) od Pinterest Engineering.
+I v mobilních aplikacích od Pinterestu můžete jít rovnou na AMP. V Česku je ovšem tahle sociální síť využívána jen velmi málo.
 
-## 6) Twitter: Moments v mobilní aplikaci {#6}
+Více informací se dozvíte přímo od autorů Pinterest Engineering v článku „Building a faster mobile web experience with AMP“. [vrdl.in/amppin](https://medium.com/@Pinterest_Engineering/building-a-faster-mobile-web-experience-with-amp-a73c651ded7)
 
-Twitter naši milou technologii rychlých stránek používá zatím jen na nepříliš honosném místě - dostanete se na ně z mobilní verze Moments.
+## 6) Twitter: Moments v mobilní aplikaci
+
+Twitter naši milou technologii rychlých stránek používá zatím jen na nepříliš honosném místě – dostanete se na ně z mobilní verze Moments.
 
 <figure>
-<img src="../dist/images/original/amp-platformy-twitter.jpg" alt="">
+<img src="../dist/images/original/todo.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Odkaz na AMP verzi článku z The Verge v Twitter Moments*
+_Obrázek: Odkaz na AMP verzi článku z The Verge v Twitter Moments._
 </figcaption>
 </figure>
 
-Bohužel se stránky navíc nenačítají z mezipaměti u Google, ale dostanete se jen na původní verzi stránky přímo na server autora obsahu. Vzhledem k tomu, že už [víte jak AMP funguje](amp-fungovani.md), budete asi souhlasit, že tyhle způsoby použití trochu kouzlo.
+Stránky se navíc bohužel nenačítají z mezipaměti u Googlu, dostanete se jen na původní verzi AMP stránky přímo na serveru autora obsahu. Což je z pohledu potenciálu této technologie dost o ničem, jak už víte.
 
-## 7) Bing: Výsledky vyhledávání {#7}
+## 7) Bing: Výsledky vyhledávání
 
-Vyhledavač od Microsoftu má Česku jen miniaturní podíl na trhu, ale například v USA důležitý je. Nové využití Accelerated Mobile Pages je vlastně velmi podobné tomu ve vyhledávání Google.
+Vyhledávač od Microsoftu má v Česku jen miniaturní podíl na trhu, ale například v USA je důležitý. Nové využití AMP je vlastně velmi podobné tomu ve vyhledávání Googlu.
 
 <figure>
-<img src="../dist/images/original/amp-platformy-bing.jpg" alt="">
+<img src="../dist/images/original/todo.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Bing má vlastní servery upravující a hostující AMP stránky. Pro cílovku na Západě je to dost významné*
+_ Obrázek: Bing má vlastní servery upravující a hostující AMP stránky. Pro cílovku například v USA je to dost významné._
 </figcaption>
 </figure>
 
-Jak vidíte z obrázku, Bing má vlastní AMP prohlížeč (AMP Viewer), s doplněním horní lišty, která vypadá podobně jako ta od Google.
+Jak už víte, Bing má vlastní AMP Viewer, s doplněním horní lišty, která vypadá podobně jako ta od Googlu.
 
-Stránky samozřejmě běží přímo na doméně vyhledavače od Microsoftu – adresy začínají `https://www.bing.com/amp/s/…`. 
+Autoři doporučují přidat robota Bingu (Bingbot) a doménu `bing-amp.com` do CORS (Cross-Origin Resource Sharing), které povoluje sdílení obsahu z jedné domény na jiné. Pokud je pro vás Bing zajímavý, doporučujeme vám ho na serveru povolit. Podívejte se například na návody z [enable-cors.org](https://enable-cors.org/server.html).
 
-Autoři doporučují přidat robota Bingu (Bingbot) a doménu `bing-amp.com` do CORS – Cross-Origin Resource Sharing. Pokud je pro vás Bing zajímavý, doporučuji si to na serveru povolit. Podívejte se například na návody z [enable-cors.org](https://enable-cors.org/server.html).
+## Jak najít AMP a testovat stránky?
 
-<!-- AdSnippet -->
+Pokud používáte Google Chrome, je možné testovat AMP stránky z počítače takto:
+
+* _Rozšíření AMP Validator  
+Ukazuje, které navštívené stránky mají AMP verzi s možností přejít na ni.
+* _Developer Tools a emulace_  
+Zobrazte si vývojářské nástroje pomocí Ctrl (Cmd) + Alt + I. Zapněte „Device Toolbar“ pomocí Ctrl (Cmd) + Shift + M. Nahoře zvolte mobilní zařízení, např. „Galaxy S5“, přejděte na Google.com a vyhledejte si například „Vzhůru dolů Flexbox“. Jako první by na vás měla vyskočit AMP verze článku.
+
+Na mobilu je to jednodušší. Většina míst, kde se zobrazují stránky AMP, souvisí právě se zobrazením na mobilech. Stačí si prostě zadat nějaké fráze do vyhledávání Googlu a na nějaký výsledek s ikonkou blesku dříve či později narazíte.
+
+Známe už tedy všechna aktuální místa výskytu AMP stránek. Každá technologická knížka by teď přešla do implementačních detailů. V případě naší technologie bychom se ale měli zabývat ještě jedním specifickým fenoménem – silnou kritikou z mnoha různých stran. Tohle důležité téma bychom přeskočili neradi.
