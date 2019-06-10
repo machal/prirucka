@@ -116,7 +116,7 @@ Ukázky vkládáme v `<iframe>`. Doporučované vložení přes HTML není kompa
 
 Jednodušší:
 
-```
+```markdown
 | Prvek      | Vzhled | Klik/touch |
 |------------|:------:|:----------:|
 | `<span>`   |  +     |            |
