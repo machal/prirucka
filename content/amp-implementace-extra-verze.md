@@ -1,21 +1,36 @@
-# Implementace AMP: Zvláštní verze webu {#zvlastni-verze}
+# Dvě oddělené verze webu
 
-Po zvláštní AMP verzi webu sáhnou nejspíše ti, kteří z nějakého důvodu nemohou nebo nechtějí radikálně upravovat stávající web.
+Po tomhle řešení sáhnou nejspíš ti, kteří z nějakého důvodu nemohou nebo nechtějí radikálně upravovat stávající web.
 
-Důvodů může být více: Je například možné, že vývojářské a designérské zásahy by ve výsledku byly dražší než vytvoření nové verze. Také se může stát, že na AMP stránkách chcete plnit jiné cíle a že by tedy měly vypadat jinak. (Ale to zase tak pravděpodobné není.)
+Důvodů může být více: Je například možné, že vývojářské a designérské zásahy do webu by byly ve výsledku dražší než vytvoření nové verze. Také se může stát, že na vstupních stránkách AMP chcete plnit jiné cíle a že by tedy měly vypadat jinak.
 
-Jde ostatně o původně jediný a nyní převažující způsob tvorby AMP. Jenže, co ušetříte při tvorbě extra verze, propálíte při následné správě webu a více místech.
+<figure>
+<img src="../dist/images/original/vdamp/vazby-oddelene.png" alt="">
+<figcaption markdown="1">
+_Obrázek: Schéma vytvoření zvláštní AMP verze webu_.
+</figcaption>
+</figure>
 
-Vypráví se zde stejný příběh jako v případě takzvaných „m tečka“ webů – zvláštních mobilních verzí fungujících vedle tehdy běžných webů pro desktopové počítače. Autorům poměrně rychle vyřeší problém – poskytnutí obsahu mobilním uživatelům. Jenže díky neefektivitě aktualizací dvou webů zvažují přechod na sjednocující verzi, což je responzivní web.
+Jde ostatně o původně jediný a nyní stále převažující způsob tvorby AMP. Za chvíli si přečtete [o přístupech upřednostňujících AMP](https://docs.google.com/document/d/1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs/edit#), které jsou z pohledu dlouhodobé správy efektivnější. Ale teď ještě pár slov o tomto způsobu řešení implementace AMP. Opravdu jen pár, protože na něm není nic složitého.
 
-Následující AMP-First a AMP-Only přístup je ostatně stejné myšlenkové paradigma jako [Mobile-First](mobile-first.md): Udělej jednu verzi tak, že přizpůsobíš řešení nejvíce omezujícímu kontextu. Před jsme takto začali uvažovat o řešení pro mobily, dnes o distribuci obsahu pomocí AMP.
+## Ukázky: Reflex.cz, Ábíčko.cz nebo Alza
 
-Jak už jste asi pochopili, zvláštní verze webu považuji za fajn dočasné řešení. Efektivita ale týmy požene ke stále většímu sjednocování obou verzí do jedné.
+Na českém internetu nebylo těžké najít příklady tohoto řešení. Z velkých vydavatelů má asi nejpropracovanější AMP verzi webu časopis Reflex.cz.
+<figure>
+<img src="../dist/images/original/vdamp/vazby-reflex.png" alt="">
+<figcaption markdown="1">
+_Obrázek: HTML a AMP verze webu Reflex.cz._
+</figcaption>
+</figure>
 
-## Ukázky: Reflex.cz a Abicko.cz
+Pro další příklad nemusíme daleko. Je jím Ábíčko.cz, v našich dětských letech populární časopis ABC, pocházející ze stejného vydavatelství.
 
-*TODO https://www.abicko.cz/app_export/difflayout/amp/clanek/21018 a nebo ještě Alza.cz*
+V době psaní tohoto textu experimentoval s AMP pomocí vytvoření extra verze také největší český e-shop Alza.cz. Technologii, o které zde píšeme, mají ale nasazenou jen na stránkách produktů, které momentálně nemají na skladě.
 
-## Výhody a nevýhody zvláštní verze
+## Výhody a nevýhody dvou oddělených verzí
 
-Výhodné je, že nemusíte sahat do současného webu a „problém AMP“ vyřešíte relativně rychle. Nevýhodou je nutnost údržby dvou verzí webu a pak samozřejmě to, že obě verze mohou vypadat a fungovat odlišně, což bude pro uživatele matoucí.
+Výhodné v tomto způsobu tvorby je, že nemusíte sahat do současného webu a „problém AMP“ vyřešíte relativně rychle.
+
+Nevýhodou je nutnost údržby dvou verzí webu a pak samozřejmě to, že obě verze mohou vypadat a fungovat odlišně, což bude pro uživatele při přecházení mezi AMP a HTML matoucí.
+
+Podívejme se teď na způsob implementace, který si v základu vystačí s jedinou verzí.

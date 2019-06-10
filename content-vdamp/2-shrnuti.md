@@ -39,7 +39,7 @@ a. `<amp-iterate-json>`
 b. `<amp-xpath expr="/items/text()">`  
 c. `<amp-list>`  
 d. `<amp-for>`
-8. Jak získáme data známá jen na straně klienta (např. šířka viewportu)?
+8. Jak získáme data známá jen na straně klienta (např. šířka viewportu)?  
 a. náhradou speciálních proměnných  
 b. voláním funkce `AMP.env()`  
 c. na serveru z HTTP hlaviček  
