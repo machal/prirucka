@@ -1,8 +1,10 @@
-# Předmluva
+# Na úvod
+
+## Předmluva
 
 Milé čtenářky, milí čtenáři,
 
-k technologii, která je předmětem této knížky, mě přivedly dvě cesty. 
+k technologii, která je předmětem této knížky, mě přivedly dvě cesty.
 
 První byla přímočará. Vedla z mé aktuálně nejčastější praxe – poradenství ke zrychlování webů. Pokud se o tuto problematiku zajímáte, nemůžete AMP minout. Tato technologie totiž nabízí dříve prakticky nedosažitelnou rychlost vykreslení webu.
 

@@ -176,10 +176,16 @@ Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně
 - Uvnitř textu. Např. „Značka `<html>` slouží…“. Možné to je uvnitř odstravců, odrážek, ale i uvnitř tabulek.
 
 
-`<code>` naopak nepoužíváme:
+`<code>` naopak nepoužíváme v nadpisech:
 
-- V nadpisech, protože jsou vyvedené tučným řezem (kód není), vypadají nehezky atd. Jediná výjimka jsou situace, kdy nadpis tvoří jen samotný kód. [Příklad](https://www.vzhurudolu.cz/prirucka/pruzna-media)
-- V citacích (`blockquote` a `cite`) a `figcaption`, protože jsou vyvedené kurzívou.
+- V nadpisech, protože jsou vyvedené tučným řezem (kód není), vypadají nehezky atd.
+- Rozbijou mPDF proces tvorby PDF e-booku.
+- Jediná výjimka jsou situace, kdy nadpis tvoří jen samotný kód. [Příklad](https://www.vzhurudolu.cz/prirucka/pruzna-media)
+  
+Kód nepoužíváme i na dalších místech:
+
+- V citacích (`blockquote` a `cite`). 
+- `figcaption`, protože jsou vyvedené kurzívou.
 
 HTML značky lze opsat kapitálkami („Značka HTML slouží…“). JS a CSS kód prostě uvedeme bez `<code>` tak jak je. Vyplývá z toho samozřejmě, že je lepší se kódu na takovýchto místech vyhnout.
 
