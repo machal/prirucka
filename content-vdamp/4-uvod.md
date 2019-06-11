@@ -1,4 +1,4 @@
-# Kapitola 4: Weby, které AMP nasadily
+# Kapitola 4: AMP v různých oborech webařiny
 
 „Neznáme nikoho, kdo by AMP nasadil.“ Tak zní jeden z nejčastějších důvodů, proč webaři s AMP otálejí.
 

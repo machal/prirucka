@@ -1,4 +1,4 @@
-# Kapitola 3: Vazby AMP a non-AMP verze
+# Kapitola 3: Vazby mezi AMP a vaším webem
 
 AMP verze vaší stránky musí nějak koexistovat vedle běžného responzivního webu a přitom se dělit o stejného rodiče – backendový kód a databázi.
 
