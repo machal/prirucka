@@ -1,8 +1,12 @@
 # Na závěr
 
-## Děkujeme!
-
 Právě jste dočetli „Vzhůru do AMP“. Díky, že jste knize věnovali svůj čas, a jsme napjatí, zda se vám líbila.
+
+Doufáme, že jsme zpřesnili nebo snad i změnili váš názor na AMP. V každém případě vám přejeme, abyste tuto technologii s pomocí knížky úspěšně vyzkoušeli hned na dalším projektu.
+
+Budeme rádi za sdílení vašich zkušeností.
+
+## Zpětná vazba, pochvaly, hlášení chyb
 
 ### Dáte nám prosím zpětnou vazbu?
 
