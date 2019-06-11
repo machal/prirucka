@@ -175,7 +175,7 @@ V AMP jsou zakázané i některé atributy. Příklady:
 
 AMP naopak přichází s novými atributy:
 
-* `layout`, `width`, `height`,` media`, `placeholder`, `fallback` slouží k definování parametrů layoutu, o kterém ještě budeme psát. Některé znáte z běžného HTML. Tady jsou ovšem povinné u elementů, které mají něco společného s rozložením stránky.
+* `layout`, `width`, `height`, `media`, `placeholder`, `fallback` slouží k definování parametrů layoutu, o kterém ještě budeme psát. Některé znáte z běžného HTML. Tady jsou ovšem povinné u elementů, které mají něco společného s rozložením stránky.
 * `on` – atribut, ve kterém je možné při použití AMP komponent přidávat interaktivitu. 
 
 Důležité změny jsme vyjmenovali. Je toho samozřejmě trošku více, ale nechceme zvídavé čtenáře unavovat. Ty hloubavé, pokročilé a dlouhých textů chtivé nasměrujeme do specifikace AMP HTML. [vrdl.in/ampspec](https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml)

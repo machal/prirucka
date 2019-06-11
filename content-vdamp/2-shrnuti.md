@@ -41,7 +41,7 @@ b. voláním funkce `AMP.env()`
 c. na serveru z HTTP hlaviček  
 d. z CSS proměnných `var(--amp-*)`
 
-# Shrnutí kapitoly
+## Řešení
 
 1. Který z uvedených kořenových elementů definuje AMP stránku?  
 c. `<html ⚡>`

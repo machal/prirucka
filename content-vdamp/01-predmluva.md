@@ -1,6 +1,4 @@
-# Na úvod
-
-## Předmluva
+# Předmluva
 
 Milé čtenářky, milí čtenáři,
 
