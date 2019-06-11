@@ -1,85 +1,98 @@
-## AMP Stories
+# AMP Stories: Příběhy ve výsledcích vyhledávání
 
-Předpokládám, že formát Stories nebo prostě *příběhů* znáte z mobilního Instagramu a Facebooku nebo původně ze Snapchatu. 
+Je možné, že formát Stories nebo prostě příběhů znáte z mobilního Instagramu a Facebooku nebo původně ze Snapchatu.
 
-Ano, mám na mysli ty mizející příspěvky, které se aktivují kliknutím na avatara člověka nebo firmy. Zobrazují se na celou plochu displeje zařízení, animují se a umožňují také drobnou interaktivitu.
-
-<!-- AdSnippet -->
-
-Vyprávějí krátké příběhy. A pokud autor nebo autorka vyprávět umí, jsou poutavé. Jako příběhy. Je to formát, který spojuje texty, fotky, videa do formy interaktivních prezentací. Výsledek je zábavný a efektivní.
-
-Není divu, že se koncept líbil v Google a že si tamní osazenstvo přálo tohle mít ve výsledcích vyhledávání, ale i dalších kontextech.
-
-Však si představte, že hledáte recept na jednodušší jídlo nebo aktuální politickou kauzu a dostanete to v jednoduché a atraktivní formě příběhu. Za mě palec nahoru. Formátu větším velkou budoucnost, hlavně na mobilech.
-
-## Jak se příběhy zobrazují?
+Ano, máme na mysli ty mizející příspěvky, které se aktivují kliknutím na avatara člověka nebo firmy. Zobrazují se na celou plochu displeje zařízení, animují se a umožňují také drobnou interaktivitu. Taková powerpointová prezentace pro éru sociálních sítí.
 
 <figure>
-<img src="../dist/images/original/amp-stories-google.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-stories.png" alt="">
 <figcaption markdown="1">
-*Obrázek: Story v Google Search*
+_Obrázek: AMP Story od BBC o věcech, které nechali zapomnětliví kosmonauti na Měsíci. Zdroj: [amp.dev](https://amp.dev/about/stories)_
 </figcaption>
 </figure>
 
-Stačí zadat jméno vydavatele a jeho „homepage na Google“ vám zobrazí seznam všech příběhů, které jsou aktuálně k dispozici. Kromě technologický vydavatelů jako je Wired nebo Mashable si můžete nechat vyprávět příběhy také například od The Washington Post nebo CNN.
+Stories prostě vyprávějí krátké příběhy. A pokud autor nebo autorka vyprávět umí, jsou poutavé. Jako příběhy. Je to formát, který spojuje texty, fotky, videa do formy interaktivních prezentací. Výsledek je zábavný a efektivní.
 
-V Česku ke dni psaní textu bohužel o žádném použití významnějším médiem nevím. Předpokládám ale, že ke dni *vydání* už tomu bude jinak. Každopádně – pokud o nějakém využití v ČR nebo na Slovensku víte, sem s ním.
+Není divu, že se koncept líbil v Googlu a že si tamní osazenstvo přálo mít tohle ve výsledcích vyhledávání, ale i dalších kontextech.
+
+Však si představme, že hledáme recept na jednodušší jídlo nebo aktuální politickou kauzu a dostaneme je v jednoduché a atraktivní formě příběhu. Za nás palec nahoru. Formátu věštíme budoucnost, hlavně na mobilech.
+
+## Jak se AMP Stories zobrazují?
 
 <figure>
-<img src="../dist/images/original/amp-stories-desktop.jpg" alt="">
+<img src="../dist/images/original/vdamp/amp-stories-kroky.png" alt="">
 <figcaption markdown="1">
-*Obrázek: Anatomie AMP příběhu*
+_Obrázek: Story o důležité zpravodajské kauze v Google Search._
 </figcaption>
 </figure>
 
-Pojďme si teď zapitvat. Anatomie AMP Story vypadá následovně:
+Do Google.com stačí zadat jméno vydavatele a jeho „homepage na Googlu“ vám zobrazí seznam všech příběhů, které jsou aktuálně k dispozici. Kromě technologických vydavatelů jako Wired nebo Mashable si můžete nechat vyprávět příběhy také například od The Washington Post nebo CNN.
+
+Video: [Introducing AMP Stories](https://www.youtube.com/watch?v=6zcYgQhH5TE) – představení formátu přímo od jeho autorů.
+
+V Česku ke dni psaní textu bohužel o žádném využití příběhů významnějším médiem nevíme. Předpokládáme ale, že ke dni vydání už tomu bude jinak. Každopádně – pokud o nějakém využití v ČR nebo na Slovensku víte, sem s ním.
+
+<figure>
+<img src="../dist/images/original/vdamp/amp-stories-desktop.png" alt="">
+<figcaption markdown="1">
+_Obrázek: Anatomie AMP příběhu._
+</figcaption>
+</figure>
+
+Pojďme si teď zapitvat. Vnitřní struktura AMP Story vypadá následovně:
 
 1. Aktuální „slajd“
 2. Posun vpřed a vzad
 3. Možnost sdílení
 4. Navigace
 
-Jak je vidno, jde o „mobile first“ koncept. Příběhy jsou vymyšlené primárně pro mobily, ale jakž takž se zobrazí také na počítačích.
+Jak je z obrázku vidět, jde o koncept „Mobile First“. Příběhy jsou vymyšlené primárně pro mobily, ale jakž takž se zobrazí i na počítačích.
 
-- Vyzkoušejte si to na mobilu: [g.co/ampstories ](https://g.co/ampstories)
-- Další ukázky: [ampproject.org/stories](https://www.ampproject.org/stories/)
-
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=6zcYgQhH5TE">Introducing AMP Stories</a> ~ Představení formátu přímo od jeho autorů.
-</p>
-
-## Ukázky možností
+* Vyzkoušejte si to (odkaz funguje jen na mobilu): [g.co/ampstories](https://g.co/ampstories)
+* Další ukázky: [amp.dev/about/stories](https://amp.dev/about/stories)
 
 Několik vybraných existujících příběhů:
 
-- People.com: Grammys Red Carpet – [people.com/amp-stories/red-carpet-grammys](https://people.com/amp-stories/red-carpet-grammys/)
-- People.com: Harry & Meghan – [people.com/amp-stories/royal-a-to-z/](https://people.com/amp-stories/royal-a-to-z/)
-- Mashable.com: Black Panter – [vrdl.in/ampspanther](https://mashable.com/2018/02/13/reels-guide-to-black-panther.amp/?europe=true)
-- WashingtonPost.com: The evolution of Thump's wall [vrdl.in/ampstrump](https://www.washingtonpost.com/graphics/2018/national/amp-stories/border-wall/??noredirect=on)
+* People.com: Grammys Red Carpet: [people.com/amp-stories/red-carpet-grammys](https://people.com/amp-stories/red-carpet-grammys/)
+* People.com: Harry & Meghan: [people.com/amp-stories/royal-a-to-z/](https://people.com/amp-stories/royal-a-to-z/)
+* Mashable.com: Black Panter: [vrdl.in/ampspanther](https://mashable.com/2018/02/13/reels-guide-to-black-panther.amp/?europe=true)
+* WashingtonPost.com: Trump's wall: [vrdl.in/ampstrump](https://www.washingtonpost.com/graphics/2018/national/amp-stories/border-wall/??noredirect=on)
 
-Pokud byste AMP Stories chtěli vyzkoušet přímo ve vyhledávání Google, postupujte následovně:
+## Kde se to zobrazuje?
 
-1. Přepněte si vyhledavač do angličtiny (odkaz dole v patičce)
-2. Hledejte například „CNN“, „Wired“ nebo “The Washington Post“.
+Google v první polovině roku 2019 oznámil, že pro „Visual Stories“ vytvoří speciální blok ve výsledcích vyhledávání. Stories bude zobrazovat v oblasti cestování a dále je plánuje „zapnout“ také pro následující oblasti: hry, filmy, televizi a módu.
 
-## Jak to funguje vevnitř?
+Pokud bychom chtěli vyzkoušet AMP Stories přímo ve vyhledávání Googlu, postupovat budeme následovně:
 
-Je to rozšíření HTML stejného typu, jaké se používá v „běžném“ AMP:
+1. Přepnout si vyhledávač do angličtiny (odkaz dole v patičce).
+2. Hledat vydavatele jako například „CNN“, „Wired“ nebo „The Washington Post“.
+
+O dostupnosti pro české vyhledávání nemáme v době psaní informace.
+
+## Naklikejme si svou Story
+
+AMP Stories mají tu výhodu, že pro jejich tvorbu nemusíme vládnout technologiím. Je zde řada nástrojů, které umožňují vizuální tvorbu:
+
+* MakeStories, nástroj zdarma, který je již dnes k dispozici. [makestories.io](https://makestories.io/)
+* Unfold, známý nástroj pro tvorbu příběhů, na podpoře pracuje. [unfoldstori.es](https://unfoldstori.es/)
+* I plugin pro WordPress obsahuje vizuální editor pro příběhy. [amp-wp.org](https://amp-wp.org/)
+
+## Technikálie: Jak to funguje uvnitř?
+
+Jde o rozšíření HTML stejného typu, jaké se používá v „běžném“ AMP:
 
 ```html
 <body>
   <amp-story standalone
-    title="Joy of Pets"
-    publisher="AMP tutorials"
-    publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
-    poster-portrait-src="assets/cover.jpg">
+    title="Co je to AMP?"
+    publisher="Vzhůru dolů"
+    publisher-logo-src="logo.svg"
+    poster-portrait-src="obrazek.jpg">
   </amp-story>
 </body>
 ```
 
-`<amp-story>` je kontejner pro celý příběh. Z názvu atributů je asi jasné, k čemu slouží. `title` je pochopitelně název příběhu, další si jistě domyslíte.
-
-<!-- AdSnippet -->
+`<amp-story>` je kontejner pro celý příběh. Z názvu atributů je zde asi jasné, k čemu slouží.
 
 Dovnitř pak vkládáme jednotlivé stránky příběhu:
 
@@ -87,7 +100,7 @@ Dovnitř pak vkládáme jednotlivé stránky příběhu:
 <amp-story standalone …>
   <amp-story-page id="cover">
     <amp-story-grid-layer template="fill">
-      <amp-img src="assets/cover.jpg"
+      <amp-img src="obrazek.jpg"
           width="720" height="1280"
           layout="responsive">
       </amp-img>
@@ -96,24 +109,27 @@ Dovnitř pak vkládáme jednotlivé stránky příběhu:
 </amp-story>
 ```
 
-Vysvětlím podrobněji:
+Tohle už si pojďme vysvětlit podrobněji:
 
 ### Stránka
 
-`<amp-story-page>` je stránka, která by měla mít unikátní `id`. Možná je lepší si to představit jako „slajd“ v prezentaci. Tedy jedno okno v PowerPointu nebo Keynote. Ve stránce ale ještě potřebujeme mít nějaký obsah. Ten vytvoříme vrstvami. 
+`<amp-story-page>` je stránka, která by měla mít unikátní `id`. Možná je lepší si to představit jako „slajd“ v prezentaci. Tedy jedno okno v PowerPointu nebo Keynote. Ve stránce ale ještě potřebujeme mít nějaký obsah. Ten vytvoříme vrstvami.
 
 ### Vrstva
 
-`<amp-story-grid-layer>` si můžeme představit jako vrstvu v grafickém editoru (ostatní i v prezentačních editorech vrstvy máme). Parametr s hodnotou `template="fill"` říká, že se má použít šablona, která obsah roztáhne do celé plochy stránky.
+`<amp-story-grid-layer>` je jako vrstva v grafickém editoru (ostatně i v editorech máme prezentační vrstvy). Parametr s hodnotou `template="fill"` říká, že se má použít šablona, která roztáhne obsah do celé plochy stránky.
 
-Předpřiravených šablon je zde povícero, jejich layout asi odhadnete z názvů hodnot: `vertical`, `horizontal` nebo `thirds`. Vrstva jedy mimojiné nositelem layoutu. Chybí nám tam ještě ale obsah.
+Předpřipravených šablon je zde více, jejich layout asi lze odhadnout z názvů hodnot: `vertical`, `horizontal` nebo `thirds`. Vrstva je tedy mj. nositelem layoutu. Chybí nám tam ale ještě obsah.
 
 ### Obsah
 
-`<amp-image>`, tedy obrázek, v tomto příkladu tvoří samotný obsah. Můžeme použít ale běžný text (`<h1>`, `<p>` …).
+`<amp-image>`, tedy obrázek, už většinou známe z AMP Websites. V tomto příkladu tvoří samotný obsah. Můžeme použít ale běžné HTML značky pro text (`<h1>`, `<p>`).
 
-V základu bychom tady mohli skončit. Formát AMP Stories je samozřejmě daleko bohatší. V tutoriálu, ze kterého vycházím, si ještě vyzkoušíte přidání animace nebo závěrečného „slajdu“ s možnostmi sdílení a zobrazení podobného obsahu.
+V základu bychom tady mohli skončit. Formát AMP Stories je samozřejmě daleko bohatší.  Dále je zde možnost například přidání animace nebo závěrečného „slajdu“ s možnostmi sdílení a zobrazením podobného obsahu.
 
-Více zkoušejte na [ampproject.org/docs/getting_started/visual_story](https://www.ampproject.org/docs/getting_started/visual_story)
+I tady by to mohlo na úvod stačit. Ještě si ale přiložme několik odkazů:
 
-<!-- AdSnippet -->
+* Tutoriál na amp.dev: [vrdl.in/ampst](https://amp.dev/documentation/guides-and-tutorials/start/visual_story/)
+* Dokumentace komponent: [vrdl.in/ampsc](https://amp.dev/documentation/components/?format=stories)
+
+A teď nastává to, co jednou muselo přijít. Konec povídání o AMP Stories, závěr šesté kapitoly a také finále celé knížky.
