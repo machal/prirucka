@@ -1,8 +1,8 @@
 # Tiráž
 
-* Redakce a jazyková korektura: Petr Jediný Novotný, [pjnovotny.cz](http://pjnovotny.cz/)
+* Redakce a jazyková korektura: Petr Jediný Novotný ([pjnovotny.cz](http://pjnovotny.cz/))
 * Obrázky, schémata a vnitřní sazba: Martin Michálek
-* Spolupráce na obálce a grafice knihy: Petr Šťastný, [raist.cz](https://raist.cz/)
+* Spolupráce na obálce a grafice knihy: Petr Šťastný ([raist.cz](https://raist.cz/))
 * Písma: Capita a Foro od Dietera Hofrichtera ([hoftype.com](http://hoftype.com/)) a InconsolataGo od Rapha Leviena ([levien.com](https://levien.com/))
 * Foto autorů: WebExpo
 * Spolupráce na webu: Daniel Střelec ([danielstrelec.cz](https://www.danielstrelec.cz/)), Přemek Koch ([tapkis.com](http://tapkis.com))
