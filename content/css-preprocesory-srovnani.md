@@ -155,7 +155,7 @@ bordered() {
 LESS:
 
 ```
-.box-shadow(...) {
+.box-shadow(…) {
   -webkit-box-shadow: @arguments;
   box-shadow: @arguments;
 }
@@ -169,7 +169,7 @@ SASS:
 
 
 ```
-@mixin box-shadow($par...) {
+@mixin box-shadow($par…) {
   -webkit-box-shadow: $par;
   box-shadow: $par;
 }

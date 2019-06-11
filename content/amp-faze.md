@@ -102,10 +102,10 @@ Metriky AMP stránky z webu Reflexu asi nepotřebují komentáře. Došlo k nás
 Podívat se na verzi stránek umístěnou právě na tomto místě bude zajímavé:
 
 ```url
-https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/ ↵
+https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/
   www.vzhurudolu.cz/amp/prirucka/http-2
 
-https://www-reflex-cz.cdn.ampproject.org/v/s/ ↵
+https://www-reflex-cz.cdn.ampproject.org/v/s/
   www.reflex.cz/clanek/rozhovory/95433/…
 ```
 
@@ -122,13 +122,13 @@ Celkový obrázek metrik zůstává zhruba na stejné úrovni jako na hostingu, 
 
 ## 4) AMP stránka v AMP Vieweru
 
-[AMP Viewer](https://drive.google.com/open?id=1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc) má za úkol zobrazit weby z AMP Cache, přidat informační lištu s adresou původního webu a ovládacími prvky. Dále by měl pomoci s vykreslením a přednačtením stránky. Adresy našich stránek jsou nyní následující: \
+[AMP Viewer](https://drive.google.com/open?id=1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc) má za úkol zobrazit weby z AMP Cache, přidat informační lištu s adresou původního webu a ovládacími prvky. Dále by měl pomoci s vykreslením a přednačtením stránky. Adresy našich stránek jsou nyní následující:
 
 ```url
-https://www.google.com/amp/s/ ↵
+https://www.google.com/amp/s/
   www.vzhurudolu.cz/amp/prirucka/http-2
 
-https://www.google.com/amp/s/ ↵
+https://www.google.com/amp/s/
   www.reflex.cz/clanek/rozhovory/95433/…%3famp=1
 ```
 
@@ -170,10 +170,10 @@ Většina zobrazení AMP stránek by měla pocházet z ideální fáze distribuc
 Adresa bude stejná jako v předchozím případě:
 
 ```url
-https://www.google.com/amp/s/ ↵
+https://www.google.com/amp/s/
   www.vzhurudolu.cz/amp/prirucka/http-2
 
-https://www.google.com/amp/s/ ↵
+https://www.google.com/amp/s/
   www.reflex.cz/clanek/rozhovory/95433/…%3famp=1
 ```
 

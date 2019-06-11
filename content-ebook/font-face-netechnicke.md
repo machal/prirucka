@@ -24,7 +24,7 @@ Typekit, Fonts a další služby zaměstnávají špičkové typografy i technik
 
 Dobré je hledat přímo u typografů. V Česku vyrábí kvalitní webfonty třeba Tomáš Brousil ([suitcasetype.com](http://www.suitcasetype.com/)) nebo František Štorm ([stormtype.com](http://www.stormtype.com/)).
 
-### Docela dobré alternativy: Google Fonts, Fontsquirrel, ...
+### Docela dobré alternativy: Google Fonts, Fontsquirrel, …
 
 **Google Fonts** je fajn služba nabízející velké množství rodin písem zdarma. Ne všechny jsou ale bůhvíjak kvalitní a ne všechny mají českou lokalizaci. [google.com/fonts](http://www.google.com/fonts/)
 

@@ -17,7 +17,7 @@ Navíc – české e-shopy, které s AMP experimentují, nejsou žádní pidižv
 Velký český e-shop s léčivy má AMP verzi nasazenou asi nejdéle ze všech tuzemských elektronických obchodů.
 
 <figure>
-<img src="../dist/images/original/vdamp/amp-lekarna.png" alt="">
+<img src="../dist/images/original/vdamp/obory-lekarna.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Zatím nejpropracovanější implementaci na českých elektronických obchodech nabízí Lékárna.cz._
 </figcaption>
@@ -32,7 +32,7 @@ Ve výsledcích vyhledávání Googlu se ale jejich AMP stránky zobrazují už 
 S AMP experimentuje i největší značka českého e-commerce. AMP zkoušeli nasadit na méně navštěvovaný typ stránek – šablonu produktu, který už není v prodeji.
 
 <figure>
-<img src="../dist/images/original/vdamp/amp-alza.png" alt="">
+<img src="../dist/images/original/vdamp/obory-alza.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Také náš největší e-shop to zkouší s AMP._
 </figcaption>
@@ -50,7 +50,7 @@ Porovnejte si obě verze experimentů:
 Prodejce zájezdů Relaxos.sk (v české verzi na Relaxos.cz) nasadil AMP v roce 2018 na 80 % vstupních stránek.
 
 <figure>
-<img src="../dist/images/original/vdamp/amp-relaxos.png" alt="">
+<img src="../dist/images/original/vdamp/obory-relaxos.png" alt="">
 <figcaption markdown="1">
 _Obrázek: Velmi podobné, ale stále ne totožné pojetí HTML a AMP HTML varianty na Relaxos.sk._
 </figcaption>

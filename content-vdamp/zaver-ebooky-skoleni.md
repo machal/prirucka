@@ -19,7 +19,7 @@ Základy CSS3 vlastností a flexbox do hloubky. Vydáno v roce 2015, naposledy a
 Vzhůru dolů pořádá kurzy moderních frontendových technologií pro profesionální webové vývojáře.
 
 <figure>
-<img src="../dist/images/original/vd-skoleni.jpg" alt="">
+<img src="../dist/images/original/vdamp/vd-skoleni.jpg" alt="">
 <figcaption markdown="1">
 _Obrázek: Školení „Optimalizace rychlosti webu“ v Brně. Foto: Zuzana Šumlanská, SUPERKODERS_
 </figcaption>

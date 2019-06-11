@@ -254,7 +254,7 @@ Hurá! Máme plně validní AMP verzi našeho blogového zápisku:
 * Otevření AMP stránky v prohlížeči: [vrdl.in/vdampj1](https://www.vzhurudolu.cz/files/vdamp/jednoduchy-1/blogpost.amp.html)
 * Stažení v ZIPu: [vrdl.in/vdampj1z](https://www.vzhurudolu.cz/files/vdamp/vdamp-jednoduchy-1.zip)
 
-Už se těšíme na pochvalné komentáře od uživatelů webu ForestKid...
+Už se těšíme na pochvalné komentáře od uživatelů webu ForestKid…
 
 ## A ještě pár drobných vylepšení
 
