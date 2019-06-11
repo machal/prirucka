@@ -1,4 +1,4 @@
-# Kritika AMP: Google, otevřenost a webové standardy
+# Kritika AMP vzhledem ke standardům 
 
 Chyby, které autoři AMP udělali hned na začátku, přivedly část odborné veřejnosti v lednu 2018 k  publikování otevřeného dopisu, jenž vyjadřuje rozladění z projektu.
 

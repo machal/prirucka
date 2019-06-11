@@ -1,4 +1,4 @@
-# AMP = rychlost především
+# AMP, rychlost především
 
 Jak dostat rychlost vykreslení jakéhokoliv webu z vteřin na požadované nízké stovky milisekund, abychom se dostali do mezí lidského vnímání „okamžitého zobrazení“? AMP stránce se to může za jistých okolností podařit.
 

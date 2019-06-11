@@ -1,4 +1,4 @@
-# AMP Email: Tohle může být revoluce ve tvorbě e-mailů
+# AMP Email
 
 AMP Email je podmnožina frameworku, která slouží ke tvorbě interaktivních e-mailů.
 

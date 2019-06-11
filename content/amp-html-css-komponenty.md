@@ -1,4 +1,4 @@
-# AMP z pohledu frontendu: Upravené HTML, CSS, žádný JavaScript, ale spousta komponent
+# AMP v kontextu frontendu
 
 Co vlastně obnáší AMP z pohledu frontendistů, frontendistek, anebo prostě webových vývojářů a vývojářek?
 

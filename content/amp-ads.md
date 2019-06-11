@@ -1,4 +1,4 @@
-# AMP Ads: Jak mění AMP reklamu?
+# AMP Ads
 
 Ať se nám to líbí, nebo ne, reklama je aktuálně nejdůležitějším zdrojem příjmů pro větší obsahové weby. A reklamní systémy jsou závislé na JavaScriptu, který je v AMP na černé listině.
 

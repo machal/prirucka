@@ -1,4 +1,4 @@
-# Komponenty AMP pro multimediální obsah
+# Komponenty pro multimediální obsah
 
 Obstarávají vkládání externího multimediálního obsahu – obrázky, video a audio.
 

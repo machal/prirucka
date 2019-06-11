@@ -1,4 +1,4 @@
-# Implementace AMP s PWA
+# AMP a PWA
 
 Hodně zajímavé možnosti nabízí kombinace technologií AMP s PWA, progresivními webovými aplikacemi.
 

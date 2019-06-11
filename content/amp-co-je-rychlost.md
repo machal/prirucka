@@ -1,4 +1,4 @@
-# Rychlost webů? Problém i příležitost v jednom
+# Rychlost webů? Stále nedostatečná
 
 AMP je především pokus radikálně zrychlit vykreslování webů v prohlížečích uživatelů. Dostupné studie totiž v posledním desetiletí ukazují na neuspokojivou rychlost webů.
 

@@ -19,12 +19,18 @@ Texty zde vložené se čtou nebo mohou být čteny na různých místech:
 
 1. V tomto veřejném repozitáři.
 2. V Příručce na VzhůruDolů.cz: [vrdl.cz/prirucka/css3](http://www.vzhurudolu.cz/prirucka/css3).
-3. V eboocích, nyní jen „Vzhůru do CSS3”: [vrdl.cz/ebook](http://www.vzhurudolu.cz/ebook)
-4. V tištěných knihách, což je zatím jen v plánu.
+3. V e-boocích: [vrdl.cz/ebooky](http://www.vzhurudolu.cz/ebooky)
+4. V tištěných knihách.
 
-Před každým zveřejněním na těchto místech prochází Markdown obsah určitými transformacemi a proto je potřeba držet se jednotného způsobu psaní. 
+Před každým zveřejněním na těchto místech prochází Markdown obsah určitými transformacemi a proto je potřeba držet se jednotného způsobu psaní.
 
 V prvé řadě je potřeba psát obecně ve stylu například „v době psaní tohoto textu“, nikoliv „v době psaní tohoto článku“.
+
+### Název článku
+
+Měl by být maximálně stručný, stroze technický. Primárně pro e-booky a jejich obsah. Např. e-book o AMP je dost komplexní, takže se do něj obsah knížky (TOC) vkládá na úrovni podkapitol, tedy samotných článků.
+
+Šťavnatější a pro SEO upravené názvy pro online výskyt na Vzhůru dolů se používají názvy vložené do administrace při zveřejnění textu.
 
 ### Formátování
 

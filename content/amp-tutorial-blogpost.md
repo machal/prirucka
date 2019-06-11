@@ -1,4 +1,4 @@
-# Tutoriál: Jak převést do AMP blogpost?
+# Tutoriál: Blogpost do AMP
 
 Představu o AMP už máte. Teď nastal čas si ho pořádně vyzkoušet. Prostě se ponořit do příkladu a vyzkoušet teorii v praxi.
 

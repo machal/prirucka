@@ -1,4 +1,4 @@
-# AMP Viewer: Co je zač ten „zobrazovač“ AMP stránek?
+# AMP Viewer
 
 Když to zjednodušíme, AMP Viewer je vlastně HTML stránka, která zobrazuje AMP stránky. Je to zkrátka něco jako lightbox, ale pro AMP stránky.
 

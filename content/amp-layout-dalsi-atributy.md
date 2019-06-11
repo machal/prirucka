@@ -1,4 +1,4 @@
-# AMP layout: Atributy width, height, sizes, heights, media
+# Atributy width, height, sizes, heights, media
 
 Podívejme se teď na další důležitou součást layoutu externího obsahu v AMP – atributy, které definují rozměry prvků mezi jednotlivými breakpointy v responzivním layoutu.
 

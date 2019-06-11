@@ -1,4 +1,4 @@
-# AMP komponenty pro sociální sítě
+# Komponenty pro sociální sítě
 
 Sdílecí tlačítka. Ani bez nich nedokáže spousta webů existovat. I pro ně má proto AMP vlastní komponenty.
 

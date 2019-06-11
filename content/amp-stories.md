@@ -1,4 +1,4 @@
-# AMP Stories: Příběhy ve výsledcích vyhledávání
+# AMP Stories
 
 Je možné, že formát Stories nebo prostě příběhů znáte z mobilního Instagramu a Facebooku nebo původně ze Snapchatu.
 

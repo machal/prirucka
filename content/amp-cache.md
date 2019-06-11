@@ -1,4 +1,4 @@
-# AMP Cache, URL stránky a rychlost aktualizací
+# AMP Cache a URL stránky
 
 Teď se budeme bavit o úložišti pro AMP stránky, kam se stahují, aby byly blíž uživateli a zobrazovaly se mu [v AMP Vieweru](amp-viewer.md).
 

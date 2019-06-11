@@ -1,4 +1,4 @@
-# Kritika: Ne, že by nebyla na místě. Ale jen někde
+# Kritika AMP
 
 _„AMP je pro budoucnost webu dobré asi tak jako Trump pro zeměkouli,“_ napsal nám jeden z kritiků.
 

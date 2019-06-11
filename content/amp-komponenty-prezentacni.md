@@ -1,4 +1,4 @@
-# AMP: Prezentační komponenty
+# Prezentační komponenty
 
 Tato kategorie působí trochu jako „atakdále“, směska menších věcí, které se jinam nevešly. Očekávejte komponenty pro animování, vkládání webfontů, vizualizací, nebo třeba odpočet času a data.
 

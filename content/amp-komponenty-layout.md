@@ -1,4 +1,4 @@
-# Komponenty AMP pro uživatelské rozhraní
+# Komponenty pro uživatelské rozhraní
 
 Tyto komponenty zajišťují kromě rozvržení stránky také nejrůznější prvky uživatelského rozhraní, jako jsou karusely nebo lightboxy.
 

@@ -1,4 +1,4 @@
-# Předávání stavu mezi AMP a non-AMP stránkami
+# Předávání stavu mezi AMP a non-AMP
 
 Jak už víte, AMP stránky děláme hlavně proto, aby se dostaly do AMP Cache. Budou tedy „sedět“ na jiných adresách, než je původní URL webu.
 

@@ -1,4 +1,4 @@
-# AMP komponenty pro reklamu a analytiku
+# Komponenty pro reklamu a analytiku
 
 Jak asi čekáte, u reklamních komponent půjde o vkládání bannerů do stránky a jejich ovládání:
 

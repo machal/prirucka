@@ -1,4 +1,4 @@
-# AMP komponenty pro dynamickou práci s obsahem
+# Dynamické komponenty
 
 Důležitá a pro leckoho překvapivá směsice komponent, které nějakým způsobem pracují na dynamičnosti uživatelského prožitku.
 

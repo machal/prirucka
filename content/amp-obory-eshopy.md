@@ -1,4 +1,4 @@
-# České a slovenské e-shopy
+# E-shopy
 
 Jak už padlo na jiných místech, ono „Pages“ v AMP ukazuje na původní záměr nasazení hlavně na statické obsahové stránky.
 

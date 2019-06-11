@@ -1,4 +1,4 @@
-# Google Analytics a měření návštěvnosti v AMP
+# Měření návštěvnosti v AMP
 
 V AMP je možné sledovat chování návštěvníků mnoha způsoby, podobně jako u běžných stránek. Předpokládáme, že měříte pomocí Google Analytics, jehož nastavení je hlavním obsahem tohoto textu. Nejdříve se ale mrkneme na všechny možnosti.
 

@@ -1,4 +1,4 @@
-# Implementace AMP: Pluginy redakčních systémů
+# Pluginy redakčních systémů
 
 Pokud používáte známé redakční systémy jako WordPress nebo Drupal, vytvoření AMP stránek pro vás může být relativně snadné. Jsou zde totiž pluginy, které práci převezmou alespoň částečně za vás.
 

@@ -1,4 +1,4 @@
-# Další kritika AMP a časté mýty: Nefér výhoda? A je to vůbec rychlejší?
+# Další kritika AMP a časté mýty
 
 Hlavnímu bodu kritiky, milostné trojici AMP, Googlu a webových standardů, jsme věnovali celou předchozí část. Všechny ostatní body kritiky shrneme do devíti bodů.
 
