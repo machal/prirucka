@@ -31,4 +31,6 @@ _Obrázek: Školení „Optimalizace rychlosti webu“ v Brně. Foto: Zuzana Šu
 
 ## Vzhůru dolů
 
-[vzhurudolu.cz](https://www.vzhurudolu.cz/) – [facebook.com/vzhurudolu](https://www.facebook.com/VzhuruDolu/) – [twitter.com/vzhurudolu](https://twitter.com/vzhurudolu)
+[vzhurudolu.cz](https://www.vzhurudolu.cz/)  
+[facebook.com/vzhurudolu](https://www.facebook.com/VzhuruDolu/)  
+[twitter.com/vzhurudolu](https://twitter.com/vzhurudolu)

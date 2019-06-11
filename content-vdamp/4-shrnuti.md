@@ -1,8 +1,4 @@
-# Shrnutí a test
-
-## Test
-
-Výsledky testu najdete na další stránce.
+# Shrnutí kapitoly formou kvízu
 
 1. Kde všude můžete na českém internetu potkat AMP?  
 a. na obsahových webech, ale ne na e-shopech  
@@ -25,7 +21,7 @@ b. lze měřit jen uživatele, kteří si zobrazili obě varianty
 c. lze srovnávat jen verze se stejným vzhledem a funkčností  
 d. není třeba měřit, AMP vyhrává kontumačně
 
-# Řešení
+## Řešení
 
 1. Kde všude můžete na českém internetu potkat AMP?  
 b. na blozích, větších obsahových webech i e-shopech

@@ -1,6 +1,4 @@
-# Shrnutí a test
-
-Výsledky testu najdete na další stránce.
+# Shrnutí kapitoly formou kvízu
 
 1. Který z následujících důvodů *není* indikátorem, že byste měli zvážit AMP?  
 a. máte hodně obsahu a hodně konkurence  
@@ -23,7 +21,7 @@ b. jednotky, ty největší dodavatele
 c. desítky, všechny významné dodavatele  
 d. každého, kdo má měřicí koncový bod
 
-# Řešení
+## Řešení
 
 1. Který z následujících důvodů *není* indikátorem, že byste měli zvážit AMP?  
 c. máte flexibilní pracovní dobu

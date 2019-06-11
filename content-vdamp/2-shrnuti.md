@@ -1,8 +1,4 @@
-# Shrnutí kapitoly a test
-
-## Test
-
-Výsledky testu najdete na další stránce.
+# Shrnutí kapitoly formou kvízu
 
 1. Který z uvedených kořenových elementů definuje AMP stránku?  
 a. `<amphtml>`  

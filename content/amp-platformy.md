@@ -101,7 +101,7 @@ Vyhledávač od Microsoftu má v Česku jen miniaturní podíl na trhu, ale nap�
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-bing.png" alt="">
 <figcaption markdown="1">
-_ Obrázek: Bing má vlastní servery upravující a hostující AMP stránky. Pro cílovku například v USA je to dost významné._
+_Obrázek: Bing má vlastní servery upravující a hostující AMP stránky. Pro cílovku například v USA je to dost významné._
 </figcaption>
 </figure>
 

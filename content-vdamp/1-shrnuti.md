@@ -1,6 +1,6 @@
-# Test
+# Shrnutí kapitoly formou kvízu
 
-Řešení testu najdete na další stránce.
+Shrnutí všech kapitol jsme připravili ve formě kvízu. Jeho řešení najdete hned pod ním a zároveň slouží jako shrnutí kapitoly, pokud byste snad nechtěli testovat svou znalost problematiky.
 
 1. Co je to AMP v souvislosti s obsahem knížky?  
 a. online nástroj pro návrh a hostování webových stránek  
@@ -14,14 +14,14 @@ c. rychlost načítání
 d. délka stránky
 3. Co umožňuje bleskové zobrazení AMP ve výsledcích vyhledávání Googlu?  
 a. CDN, optimalizace a přednačtení  
-b.  SPA, normalizace a předurčení  
-c.  SEO, metadata a propojení s AdSense  
-d.  CORS, manifest a atribut prefetch
+b. SPA, normalizace a předurčení  
+c. SEO, metadata a propojení s AdSense  
+d. CORS, manifest a atribut prefetch
 4. Který prvek je v AMP zakázán?  
 a. animované obrázky  
-b.  neanimované obrázky  
-c.  CSS animace  
-d.  uživatelský JavaScript
+b. neanimované obrázky  
+c. CSS animace  
+d. uživatelský JavaScript
 5. Jak objeví roboti AMP verzi běžné stránky?  
 a. vycítí rychlé AMP vibrace  
 b. z organického procházení  
@@ -29,9 +29,9 @@ c. neobjeví, stránky se musí zaregistrovat
 d. pomocí linku z běžné stránky
 6. Kolik AMP keší existuje v době psaní textu?  
 a. jedna od Googlu a dvě její kopie  
-b.  tři, od Googlu, Microsoftu a Cloudflare  
-c.  pět, na cloudu od Googlu, AWS, Azure, IBM a Oraclu  
-c.  tři tisíce, každý doménových registrátor musí mít jednu
+b. tři, od Googlu, Microsoftu a Cloudflare  
+c. pět, na cloudu od Googlu, AWS, Azure, IBM a Oraclu  
+d. tři tisíce, každý doménových registrátor musí mít jednu
 7. Jak jsou ve výsledcích vyhledávání označené AMP stránky?  
 a. bleskem  
 b. raketou  
@@ -41,9 +41,9 @@ d. `<marquee>`
 a. pomocí výborů a pracovních skupin  
 b. vlastním produktovým oddělením v Googlu  
 c. komunitou, pomocí hlasování na GitHubu  
-c. umělou inteligencí v cloudu
+d. umělou inteligencí v cloudu
 
-# Řešení
+## Řešení
 
 1. Co je to AMP v souvislosti s obsahem knížky?  
 b. framework a distribuční cesta pro tvorbu webových stránek

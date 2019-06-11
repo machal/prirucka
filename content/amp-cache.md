@@ -5,7 +5,8 @@ Teď se budeme bavit o úložišti pro AMP stránky, kam se stahují, aby byly b
 Kopie vaší AMP stránky je prostě stažená na adrese pod cizí doménou. Například:
 
 ```url
-https://www-vzhurudolu-cz.cdn.ampproject.org/v/s/www.vzhurudolu.cz/amp/prirucka/grunt
+https://www-vzhurudolu-cz.cdn.ampproject.org/
+  v/s/www.vzhurudolu.cz/amp/prirucka/grunt
 ```
 
 Je to jeden z důležitých článků řetězce, který plní rychlostní cíle AMP. Mezipaměť AMP Cache kromě ukládání zařizuje další optimalizace stránky (jako by jich v AMP formátu nebylo dost, že?).

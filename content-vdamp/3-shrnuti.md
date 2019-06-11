@@ -1,8 +1,4 @@
-# Shrnutí a test
-
-## Test
-
-Výsledky testu najdete na další stránce.
+# Shrnutí kapitoly formou kvízu
 
 1. Jaký je původní a stále převažující způsob tvorby AMP?  
 a. nejprve AMP, potom HTML  

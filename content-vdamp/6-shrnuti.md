@@ -1,6 +1,4 @@
-# Test
-
-Výsledky testu najdete na další stránce.
+# Shrnutí kapitoly formou kvízu
 
 1. Jakou výhodu má AMP reklama na AMP stránce?  
 a. AMP runtime centrálně řídí zobrazování obou  
@@ -28,7 +26,7 @@ b. stránka s kořenovým tagem `<html ⚡4story>`
 c. tělo s jediným elementem `<amp-carousel>`  
 d. tělo s obrázky slajdů jako položky nečíslovaného seznamu
 
-# Řešení
+## Řešení
 
 1. Jakou výhodu má AMP reklama na AMP stránce?  
 a. AMP runtime centrálně řídí zobrazování obou
