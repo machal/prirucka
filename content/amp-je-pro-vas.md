@@ -12,7 +12,7 @@ Položíme vám sadu otázek. Čím víc kladných odpovědí nasbíráte, tím 
 
 Možná děláte zpravodajství, recepty nebo v konkurenčních segmentech v e-shopech. Pak je jasné, že máte hodně konkurence na Googlu, Facebooku a dalších platformách, ze kterých uživatelé na web přistupují.
 
-V takovém případě pro vás může AMP znamenat nezanedbatelnou konkurenční výhodu, jak už víte z textu [o přínosech nasazení AMP](https://docs.google.com/document/d/1suLlfSI9Fkjn4WxG0JU2s82C3W02nK49J-zaTAtg63g/edit) v první kapitole. Pravděpodobně získáte vyšší návštěvnost z mobilních výsledků vyhledávání na Googlu, budete zastoupení na místech, kde bez AMP máte nižší šanci se dostat (zpravodajský karusel), a hlavně dostanete příležitost vylepšit si klíčové obchodní ukazatele stránek enormně rychlým vstupem.
+V takovém případě pro vás může AMP znamenat nezanedbatelnou konkurenční výhodu, jak už víte z textu [o přínosech nasazení AMP](amp-co-je-pripadovky.md) v první kapitole. Pravděpodobně získáte vyšší návštěvnost z mobilních výsledků vyhledávání na Googlu, budete zastoupení na místech, kde bez AMP máte nižší šanci se dostat (zpravodajský karusel), a hlavně dostanete příležitost vylepšit si klíčové obchodní ukazatele stránek enormně rychlým vstupem.
 
 <figure>
 <img src="../dist/images/original/vdamp/nasazeni-brexit.png" alt="">
@@ -25,7 +25,7 @@ _Obrázek: V českém Googlu jsou AMP stránky zatím relativně vzácné. O to 
 
 Ať už vás zajímají nákupní konverze, nebo jiné cíle, jako je třeba počet zhlédnutých stránek, rychlý vstup na web z AMP Cache vaši uživatelé ocení.
 
-Už z textu [Kde je možné potkat AMP stránky?](https://drive.google.com/open?id=1W57NJXoq7-EFpKOvdnelft4Qg3xl9KAjp5aFBExlmqc) víte, že tohle platí v českém prostředí zejména pro vstupy z Googlu – hlavně z jeho výsledků vyhledávání nebo z navrhovaných článků v Chromu. Dále pak z mobilní aplikace od LinkedIn nebo z některých částí mobilního Twitteru.
+Už z textu [Kde je možné potkat AMP stránky?](amp-platformy.md) víte, že tohle platí v českém prostředí zejména pro vstupy z Googlu – hlavně z jeho výsledků vyhledávání nebo z navrhovaných článků v Chromu. Dále pak z mobilní aplikace od LinkedIn nebo z některých částí mobilního Twitteru.
 
 Pro celosvětový trh je ještě zajímavý vyhledávač Bing nebo mobilní aplikace od Pinterest. Navíc předpokládáme, že míst, kde se použije zakešovaný obsah, bude přibývat.
 
@@ -33,7 +33,7 @@ Pro celosvětový trh je ještě zajímavý vyhledávač Bing nebo mobilní apli
 
 Otázku pokládáme především z pohledu řešení pro správu obsahu. Dokážete snadno produkovat upravenou verzi webu?
 
-Z [druhé kapitoly](https://drive.google.com/open?id=1ldmb0EuTf0WchRLBOIqq6DzNoTfTZlnJWvkTZ3weZiQ) víte, že například WordPress nebo Drupal umožňují vytvářet AMP verzi na jedno kliknutí. Zároveň  to ale není kvůli odlišnému designu nejlepší řešení. Pravděpodobně budete potřebovat upravit výchozí šablony webu, zajistit produkování AMP i non-AMP varianty.
+Ze [třetí kapitoly](3-uvod.md) víte, že například WordPress nebo Drupal umožňují vytvářet AMP verzi na jedno kliknutí. Zároveň  to ale není kvůli odlišnému designu nejlepší řešení. Pravděpodobně budete potřebovat upravit výchozí šablony webu, zajistit produkování AMP i non-AMP varianty.
 
 Pokud dodavatel vašeho redakčního systému AMP nepodporuje, hned mu napište.
 
@@ -43,7 +43,7 @@ Tohle je samozřejmě bod, který přebíjí vše. Pokud začínáte pracovat na
 
 ### 5) Oceníte zkratku ke zrychlení webu?
 
-AMP také může znamenat rychlou výrobu rychlého webu. Neradi bychom zapomněli ani na tento důležitý argument pro nasazení technologie s bleskem v logu. Jak jsme psali v první kapitole, [složitost současného webdesignu](https://docs.google.com/document/d/1HN4Y1Pr7O8mKVobUZbri_CwbJH5fG1wSLPP8XcETl8A/edit#heading=h.e61oil9g090r) často komplikuje cestu za rychlejším webem. Někteří Martinovi klienti by mohli vyprávět… Vytvoření zvláštní AMP verze tak může být u komplexních webů právě zkratkou k výrobě výrazně rychlejší verze.
+AMP také může znamenat rychlou výrobu rychlého webu. Neradi bychom zapomněli ani na tento důležitý argument pro nasazení technologie s bleskem v logu. Jak jsme psali v první kapitole, [složitost současného webdesignu](amp-co-je-webdesign.md) často komplikuje cestu za rychlejším webem. Někteří Martinovi klienti by mohli vyprávět… Vytvoření zvláštní AMP verze tak může být u komplexních webů právě zkratkou k výrobě výrazně rychlejší verze.
 
 Jdete do toho?
 
@@ -99,4 +99,4 @@ Google Ads nabízí hezký návod „Testování kampaní AMP“, kde je možné
 
 Další problém může nastat při měření. O tom bychom vám mohli vyprávět! Můžete třeba zkoušet porovnávat konverzní čísla AMP verze nasazené na omezeném počtu stránek se všemi stránkami běžného webu. Nebo si neuvědomíte, že čím dále je AMP stránka od místa skutečných konverzí, tím hůř je možné posuzovat její vliv na obchodní výkon. Pomoci vám může skvělý text „So your AMP test doesn’t perform — now what?“. [vrdl.in/oesnter](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%E2%80%8A-%E2%80%8Anow-what/)
 
-V tuto chvíli snad už víte všechno, abyste mohli AMP nasadit. O způsobech technické implementace píšeme [ve třetí kapitole](https://docs.google.com/document/d/1ldmb0EuTf0WchRLBOIqq6DzNoTfTZlnJWvkTZ3weZiQ/edit#heading=h.m7vqjp3s0dt), takže pokud jste jí dosud nevěnovali pozornost, předejte ji alespoň svým vývojářům. A my se teď podíváme na samotné měření návštěvnosti v AMP verzi.
+V tuto chvíli snad už víte všechno, abyste mohli AMP nasadit. O způsobech technické implementace píšeme [ve třetí kapitole](3-uvod.md), takže pokud jste jí dosud nevěnovali pozornost, předejte ji alespoň svým vývojářům. A my se teď podíváme na samotné měření návštěvnosti v AMP verzi.

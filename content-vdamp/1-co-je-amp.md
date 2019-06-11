@@ -15,6 +15,6 @@ Ani to není zcela přesné. Pomocí technologie lze vytvářet plnohodnotné re
 
 Vtipné je, že zprávu o tom, že už nebudou uvádět pojmenování „Accelerated Mobile Pages“, ale vždy jen „AMP“, vydali autoři v době finálních prací na tomto textu. Čteme si na dálku myšlenky.
 
-Příběh AMP začneme zeširoka, takřka filozoficky. Podíváme se na problémy současného webdesignu, které tato technologie řeší, a skrze ně se dobereme k její širší definici. Pokud by vás spíše zajímalo, [jak funguje AMP technicky](https://docs.google.com/document/d/1XMh2nfYmtF-6FOnurl5Lthh1DrSp-YpLH-C2hHT2z_s/edit#heading=h.jijewz14pjdl), tuto podkapitolu neváhejte přeskočit.
+Příběh AMP začneme zeširoka, takřka filozoficky. Podíváme se na problémy současného webdesignu, které tato technologie řeší, a skrze ně se dobereme k její širší definici. Pokud by vás spíše zajímalo, [jak funguje AMP technicky](amp-fungovani.md), tuto podkapitolu neváhejte přeskočit.
 
 A teď už přijde slíbená odpověď na otázku, co je to vlastně Accelerated…  pardon… AMP.

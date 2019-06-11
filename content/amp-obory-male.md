@@ -6,7 +6,7 @@ Všichni víme, že z několikastránkových webů průkazné případové studi
 
 Nejzajímavější příklad nasazení na českém osobním webu pochází od Honzy Biena, experta na WordPress.
 
-Honza se rozhodl jít cestou [exkluzivního využití AMP](https://docs.google.com/document/d/1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs/edit#), tedy architektury postavené čistě na technologii modrého blesku a jeho komponentách. Navíc byl tak hodný a nasdílel své zkušenosti.
+Honza se rozhodl jít cestou [exkluzivního využití AMP](amp-implementace-jen-amp.md), tedy architektury postavené čistě na technologii modrého blesku a jeho komponentách. Navíc byl tak hodný a nasdílel své zkušenosti.
 
 <figure>
 <img src="../dist/images/original/vdamp/obory-bien.png" alt="">
@@ -17,7 +17,7 @@ _Obrázek: WTF?! Na téhle doméně najdete „AMP Only“ web experta na WordPr
 
 Jaká jsou pozitiva tohoto řešení? Honza oceňuje komponenty uživatelského rozhraní  předpřipravené v AMP: „Takhle to dělej, nad ničím nešpekuluj a můžeš být v klidu, že to bude fungovat.“
 
-A nevýhody? „Nechtěl jsem použít žádný plugin, všechno si pořádně osahat a nakódovat si vlastní šablonu v čistém AMP, což byla nakonec docela fuška.“ Nedivme se – Honza vyráběl web někdy v první polovině roku 2018, tedy v době, kdy práce s AMP nebyla v šablonách WordPressu ještě tak flexibilní jako [s novou verzí pluginu](https://docs.google.com/document/d/1rc3Ntq4w8eKdFS2QnjsbmV0Vpz67VS5Vi624123f3LY/edit#), který uvádíme v předchozí kapitole.
+A nevýhody? „Nechtěl jsem použít žádný plugin, všechno si pořádně osahat a nakódovat si vlastní šablonu v čistém AMP, což byla nakonec docela fuška.“ Nedivme se – Honza vyráběl web někdy v první polovině roku 2018, tedy v době, kdy práce s AMP nebyla v šablonách WordPressu ještě tak flexibilní jako [s novou verzí pluginu](amp-implementace-pluginy.md), který uvádíme v předchozí kapitole.
 
 Výsledek Honzova křížení AMP s WordPressem je moc fajn. [webmistr.wtf](https://www.webmistr.wtf/)
 
@@ -27,6 +27,6 @@ Také spoluautor tohoto e-booku a podcastový parťák Robin si AMP zkoušel nej
 
 Robin ve zrychlovací technologii vytvořil také prezentační stránku pro svůj projekt Git3Moji, specifikaci krátkých zkratek pro vkládání emoji pro vývojáře. Na projektu je zajímavé použití generátoru statických stránek Jekyll a jeho přizpůsobení pro generování AMP validního výstupu. Na výsledek se podívejte sami: [robinpokorny.github.io/git3moji](https://robinpokorny.github.io/git3moji/)
 
-I architektura obou Robinových webů je navržená jako „[jen AMP](https://drive.google.com/open?id=1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs)“.
+I architektura obou Robinových webů je navržená jako „[jen AMP](amp-implementace-jen-amp.md)“.
 
 Ačkoliv na vyzkoušení a snadné naučení základů AMP jsou malé jednostránkové weby ideální, větší přínos bude mít pro blogery.

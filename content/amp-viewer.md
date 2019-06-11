@@ -23,7 +23,7 @@ Na obrázku je pozoruhodné i leccos dalšího.
 
 ## URL na cizí doméně
 
-Adresa webu zde neodpovídá adrese autora obsahu. Obvykle sídlí na doméně `google.com` nebo `bing.com`, jak píšeme [v textu o AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#).
+Adresa webu zde neodpovídá adrese autora obsahu. Obvykle sídlí na doméně `google.com` nebo `bing.com`, jak píšeme [v textu o AMP Cache](amp-cache.md).
 
 ## Ošklivá šedivá horní lišta
 
@@ -31,7 +31,7 @@ Kvůli cizímu URL je v horní části prohlížeče poměrně otravná lišta s
 
 S postupem technologií snad toto zmizí a obsah bude možné zobrazit na původní adrese. Opět vás odkazujeme na technologii Signed HTTP Exchange zmíněnou v předchozí podkapitole.
 
-Jen připomínáme, že na všechny pohledy z obrázku jsme se dostali z výsledků vyhledávání Googlu nebo Bingu. Jsou ale i [jiná místa](https://docs.google.com/document/d/1W57NJXoq7-EFpKOvdnelft4Qg3xl9KAjp5aFBExlmqc/edit#heading=h.d9jm85p3nf2t), odkud je možné potěšit AMP stránku svou návštěvou.
+Jen připomínáme, že na všechny pohledy z obrázku jsme se dostali z výsledků vyhledávání Googlu nebo Bingu. Jsou ale i [jiná místa](amp-platformy.md), odkud je možné potěšit AMP stránku svou návštěvou.
 
 ## AMP Viewer a prerendering
 

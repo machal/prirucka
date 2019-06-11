@@ -78,7 +78,7 @@ Ano, zrychlení webu vždycky pomůže, ale na uživatelskou zkušenost člověk
 </figcaption>
 </figure>
 
-Samozřejmě se může stát, že mimo tento optimální způsob zobrazení stránky s přednačtením bude AMP verze pomalejší než původní web. Ale pro přednačtení je potřeba mít dvě věci – validní AMP stránku umístěnou v AMP Cache. Nic z toho zatím není běžným webům dostupné. Více jsme se tomu věnovali v textu [o rychlosti AMP stránek v různých fázích distribuce](https://docs.google.com/document/d/13dzdVcvJj_Pk0ImtpP8_cRnk_8rYTQBgJUsd7kV3LYE/edit#).
+Samozřejmě se může stát, že mimo tento optimální způsob zobrazení stránky s přednačtením bude AMP verze pomalejší než původní web. Ale pro přednačtení je potřeba mít dvě věci – validní AMP stránku umístěnou v AMP Cache. Nic z toho zatím není běžným webům dostupné. Více jsme se tomu věnovali v textu [o rychlosti AMP stránek v různých fázích distribuce](amp-faze.md).
 
 ## 4) AMP je práce navíc, spravovat dvě verze je drahé
 
@@ -95,7 +95,7 @@ _Obrázek: Vzhůru dolů má také AMP verzi. Ve skutečnosti je ovšem naprost�
 
 Je samozřejmě pravděpodobné, že současný stav věcí na vašich projektech tuhle ideální variantu znemožňuje. Weby mohou být už hotové, navíc technologicky komplexní nebo používající hodně interaktivních javascriptových prvků a tak dále.
 
-Různými přístupy k tvorbě AMP se zabýváme [ve třetí kapitole](https://docs.google.com/document/d/1ldmb0EuTf0WchRLBOIqq6DzNoTfTZlnJWvkTZ3weZiQ/edit). Z pohledu správy je nejefektivnější právě přístup [AMP-only (pouze AMP)](https://docs.google.com/document/d/1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs/edit#), ale je dobré vědět i o existenci kompromisních variant. Zmiňme ještě řadu [pluginů do populárních redakčních systémů](https://docs.google.com/document/d/1rc3Ntq4w8eKdFS2QnjsbmV0Vpz67VS5Vi624123f3LY/edit#), jako je WordPress. Ty mohou pomoci.
+Různými přístupy k tvorbě AMP se zabýváme [ve třetí kapitole](3-uvod.md). Z pohledu správy je nejefektivnější právě přístup [AMP-only (pouze AMP)](amp-implementace-jen-amp.md), ale je dobré vědět i o existenci kompromisních variant. Zmiňme ještě řadu [pluginů do populárních redakčních systémů](amp-implementace-pluginy.md), jako je WordPress. Ty mohou pomoci.
 
 Možnosti pro zvýšení efektivity výroby a správy AMP verze tady prostě jsou. Přesto je nutné říct to na rovinu: Pokud chcete AMP pojmout kvalitně a plnohodnotně, u většiny projektů se neobejdete bez nemalého úsilí a většinou také výrazné změny myšlení v celém širším týmu, přinejmenším v dlouhodobém horizontu.
 
@@ -112,7 +112,7 @@ _Obrázek: Některé z e-shopů, které mají alespoň částečnou AMP verzi. P
 
 Dave Besbris na AMP Conf 2018 prohlásil, že přes 60 % stránek vyrobených touto technologií odkazovaných z výsledků vyhledávání Googlu nejsou zpravodajské weby. [youtu.be/TX3sFXHwXjo](https://youtu.be/TX3sFXHwXjo)
 
-Chcete důkaz? Podívejte se do druhé kapitoly, jaká kouzla [umí dynamické komponenty z AMP](https://docs.google.com/document/d/1SvRGnlOZwVn0kxR4syJ7B0zjtKe0uS5tzniOcPoMO5U/edit#heading=h.lauhzlmhd7i2).
+Chcete důkaz? Podívejte se do druhé kapitoly, jaká kouzla [umí dynamické komponenty z AMP](amp-komponenty-dynamicke.md).
 
 ## 6) AMP je jenom pro mobily
 
@@ -138,7 +138,7 @@ Nový je zde výraznější tlak na to, aby se designéři, designérky, grafici
 
 Jenže AMP stránka je buď validní, nebo ne. V druhém případě nedostane benefity symbolizované ikonou blesku. Proto je zde tlak na dodržení možností frameworku daleko silnější.
 
-Může se zdát, že některé AMP stránky jsou si podobné. Obvykle je to využitím [pluginů do redakčních systémů](https://docs.google.com/document/d/1rc3Ntq4w8eKdFS2QnjsbmV0Vpz67VS5Vi624123f3LY/edit#), které umožňují rychlé vytvoření AMP verzí stránek pouhým zmáčknutím tlačítka. Výstupní šablony je často možné si jen barevně upravit, jinak jsou jedna druhé podobné.
+Může se zdát, že některé AMP stránky jsou si podobné. Obvykle je to využitím [pluginů do redakčních systémů](amp-implementace-pluginy.md), které umožňují rychlé vytvoření AMP verzí stránek pouhým zmáčknutím tlačítka. Výstupní šablony je často možné si jen barevně upravit, jinak jsou jedna druhé podobné.
 
 Tento způsob tvorby AMP obsahu ale obecně nepovažujeme za šťastný, protože vede k uživatelskému prožitku odlišnému od původního webu.
 
@@ -152,7 +152,7 @@ AMP stránky používají jednotné knihovny servírované z jednoho místa. I t
 
 Co když dojde k hackerskému útoku? Co když distribuční cesta k takovýmto souborům prostě selže? Tady je potřeba si uvědomit, že soubory z nějakého CDN dnes stahuje každý druhý web. V této úrovni se tedy nejedná o nový problém – nové je pouze množství webů, které využívají komponentu z jednoho zdroje.
 
-Předmětem kritiky je samozřejmě i společná adresa začínající `https://www.google.com/amp/s/…` Lidé si představují, jak by bylo pro autoritářské režimy na světě snadné omezit přístupy na tyto adresy a novináři by měli po ptákách. Ano, možné to je, ale v textu [o AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#) jsme zmínili, že „problém s URL“ se možná brzy dočká svého řešení.
+Předmětem kritiky je samozřejmě i společná adresa začínající `https://www.google.com/amp/s/…` Lidé si představují, jak by bylo pro autoritářské režimy na světě snadné omezit přístupy na tyto adresy a novináři by měli po ptákách. Ano, možné to je, ale v textu [o AMP Cache](amp-cache.md) jsme zmínili, že „problém s URL“ se možná brzy dočká svého řešení.
 
 Kritika centralizovanosti je postavená na křehkosti takovéhoto systému: Jeden dodavatel frameworku, omezený počet distribučních sítí (AMP keší). Je ovšem nutné zmínit to, že každá AMP stránka má svou kanonickou verzi. I ve chvíli teoretického výpadku celé AMP sítě dál běží původní weby. AMP je tedy vlastně „progressive enhancement“, nepovinné vylepšení distribuce webů.
 

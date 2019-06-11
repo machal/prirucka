@@ -15,7 +15,7 @@ Tady prostě pro „normální HTML“ není místo. Veškerý frontend je reali
 
 ## Proč tak radikálně?
 
-Důvody, proč může být tento postup výhodnější oproti [výrobě zvláštní verze](https://docs.google.com/document/d/1wY4VwtXLwg-3R84OL0cYc5HP9unQXQCVpkO8yNI5mZE/edit#), jsou stejné jako ty, kterými jsme hájili tvorbu responzivních webů oproti údržbě mobilní a desktopové verze stojící vedle sebe: Efektivita, efektivita a ještě jednou efektivita.
+Důvody, proč může být tento postup výhodnější oproti [výrobě zvláštní verze](amp-implementace-extra-verze.md), jsou stejné jako ty, kterými jsme hájili tvorbu responzivních webů oproti údržbě mobilní a desktopové verze stojící vedle sebe: Efektivita, efektivita a ještě jednou efektivita.
 
 ## Mobilní webe, už jsi tady zase?
 
@@ -102,12 +102,12 @@ Tento problém má řešit projekt „Bento AMP“, oznámený na konferenci AMP
 
 ### AMP Optimizer: Na vašem serveru jako v bavlnce (nebo v keši)
 
-Vzpomenete si ještě, že jsme v textu [o AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#) zmiňovali jednu její součást – Optimizer? Připomínáme jen, že jde o nástroj, který automaticky přechroustá zdrojový kód AMP stránky a upraví jej tak, aby podávala lepší výkon.
+Vzpomenete si ještě, že jsme v textu [o AMP Cache](amp-cache.md) zmiňovali jednu její součást – Optimizer? Připomínáme jen, že jde o nástroj, který automaticky přechroustá zdrojový kód AMP stránky a upraví jej tak, aby podávala lepší výkon.
 
 AMP stránky jsou považované za zdroje k dalšímu zpracování. To se děje právě za pomocí AMP Optimizeru:
 
 * Důležité zdroje jsou prioritizovány pomocí značky `<link rel="preload">`.
-* Odstraňuje [„AMP Boilerplate“](https://docs.google.com/document/d/1kdSK7Q0LxoeU6DblzhJ-1EOtaCBD5IVSQwecr5gZyqQ/edit), kód určený pro zobrazování stránky v neoptimalizovaných prostředích.
+* Odstraňuje [„AMP Boilerplate“](amp-html.md), kód určený pro zobrazování stránky v neoptimalizovaných prostředích.
 * Automaticky vkládá CSS jako „kritické“ do značky `<style>`.
 
 Více je v textu článku „How to make AMP even faster“. [vrdl.in/ampopt](https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/optimize_amp)

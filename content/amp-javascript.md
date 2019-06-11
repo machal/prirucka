@@ -1,6 +1,6 @@
 # JavaScript v AMP
 
-Chcete psát JS na AMP stránce? [Z úvodního představení](https://docs.google.com/document/d/1NwUeWWvrdOVgtg5Y6j7hWvvQ0JcVi0KsqWfbthBg54M/edit#) technologie už asi víte, že máte smůlu.
+Chcete psát JS na AMP stránce? [Z úvodního představení](amp-co-je-rychlost-predevsim.md) technologie už asi víte, že máte smůlu.
 
 Autorský JavaScript je zde zcela zakázaný, což se projevuje zejména tím, že stránka obsahující značku `<script>` bude (s výjimkou vkládání AMP komponent a jejich konfigurací) nevalidní. Neumístí se tedy do AMP Cache, čímž tvorba AMP stránek ztrácí hlavní smysl.
 
@@ -11,7 +11,7 @@ AMP jde především o rychlost. Tu může garantovat hlavně u validních strá
 1. Bezpečnost – zakešované stránky se zobrazují na cizích doménách, tedy např. Google.com. Spouštění cizích skriptů by zde mohlo být nebezpečné.
 2. Rychlost – v případě neomezeného JavaScriptu není možné zajistit, aby se stránka vykreslovala dostatečně rychle.
 
-Do detailů nebudeme zacházet, protože už jsme téma probrali i v části první kapitoly věnující [se kritice této technologie](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#).
+Do detailů nebudeme zacházet, protože už jsme téma probrali i v části první kapitoly věnující [se kritice této technologie](amp-kritika-myty.md).
 
 Na druhou stranu – AMP dává autorům do ruky řadu nástrojů, kterými mohou nevýhody chybějící javascriptové části tvorby dnešních webů zredukovat.
 
@@ -41,7 +41,7 @@ Nemusíte napsat ani řádku javascriptového kódu, což je příjemné zejmén
 
 Autoři AMP připravili ke stovce komponent, které vám budou velice pravděpodobně pro výrobu běžného webu stačit.
 
-K vašim službám jsou [v textu o komponentách](https://docs.google.com/document/d/1TukezqeSpA8sHZKZwpsRKOqcZHHQL8UT9ZuV4RNeN5k/edit#).
+K vašim službám jsou [v textu o komponentách](amp-komponenty.md).
 
 ### Interaktivita, uchování stavu
 
@@ -59,7 +59,7 @@ Pro ilustraci – dynamická změna CSS třídy se provede následovně:
 </button>
 ```
 
-Více najdete dál v této kapitole [v textu o dynamických komponentách](https://docs.google.com/document/d/1SvRGnlOZwVn0kxR4syJ7B0zjtKe0uS5tzniOcPoMO5U/edit#heading=h.lauhzlmhd7i2).
+Více najdete dál v této kapitole [v textu o dynamických komponentách](amp-komponenty-dynamicke.md).
 
 ### Systém akcí a událostí
 
@@ -109,7 +109,7 @@ Ukázka:
 </amp-iframe>
 ```
 
-Pro více informací o `amp-iframe` jděte na [text o layoutových komponentách](https://docs.google.com/document/d/1OlhPzDZg_xs583ARIy2vfn5DS-Pq_kDzX6NKGYFlAu0/edit#heading=h.ypc0bzifdqve).
+Pro více informací o `amp-iframe` jděte na [text o layoutových komponentách](amp-komponenty-layout.md).
 
 ## Autorský JavaScript možná nakonec povolený bude. Jen jinak
 

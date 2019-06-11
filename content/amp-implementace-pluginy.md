@@ -27,15 +27,15 @@ Klasický režim, kdy k článkům dostanete AMP verzi automaticky. Je vytvořen
 
 ### Transitional
 
-Na zvláštní URL adrese vytvoří plugin AMP verzi všech stránek, ale použita bude aktuální šablona. Pokud tedy uděláte chybu a AMP verze neprojde validací, jako alternativní řešení je k dispozici běžná verze webu. Jedná se tudíž o implementaci architektury „[nejprve HTML, pak AMP](https://docs.google.com/document/d/1c1Rf5sfu9rTTh9taijEnO-gn6WlCRBDYKdZpzWAxsJQ/edit#)“ v podání WordPressu.
+Na zvláštní URL adrese vytvoří plugin AMP verzi všech stránek, ale použita bude aktuální šablona. Pokud tedy uděláte chybu a AMP verze neprojde validací, jako alternativní řešení je k dispozici běžná verze webu. Jedná se tudíž o implementaci architektury „[nejprve HTML, pak AMP](amp-implementace-vyjimky.md)“ v podání WordPressu.
 
 ### Native
 
-Totéž jaké „transitional“, ale neexistují zde zvláštní URL pro AMP verze. Stránka prostě odkazuje sama na sebe. Předpokladem je, že na straně HTML máte [řešení kanonických AMP stránek](https://docs.google.com/document/d/1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs/edit#), ve kterém jsme byli ponoření před chvílí.
+Totéž jaké „transitional“, ale neexistují zde zvláštní URL pro AMP verze. Stránka prostě odkazuje sama na sebe. Předpokladem je, že na straně HTML máte [řešení kanonických AMP stránek](amp-implementace-jen-amp.md), ve kterém jsme byli ponoření před chvílí.
 
 Jak vidíte, možností máme dostatek. Při jejich volbě ale sakramentsky záleží na tom, zda a jak vaše šablona pro WordPress podporuje AMP. Být vámi, velmi se na to při výběru šablony soustředíme.
 
-Plugin se velmi rychle vyvíjí vpřed. V poslední verzi přidal mj. podporu pro Service Worker nebo [AMP Stories](https://drive.google.com/open?id=153ZUrZcC--u1g2YEzqWMOPcD8F5dFk5-BClJto34Uwc). Více najdete na jeho oficiálním webu: [amp-wp.org](https://amp-wp.org/documentation/how-the-plugin-works/amp-plugin-serving-strategies/).
+Plugin se velmi rychle vyvíjí vpřed. V poslední verzi přidal mj. podporu pro Service Worker nebo [AMP Stories](amp-stories.md). Více najdete na jeho oficiálním webu: [amp-wp.org](https://amp-wp.org/documentation/how-the-plugin-works/amp-plugin-serving-strategies/).
 
 Následuje příklad toho, že na pluginu pro WordPress může vzniknout úspěšný web AMP.
 

@@ -40,7 +40,7 @@ Další možné atributy jsou například:
 
 Za prvé lazy loading, tedy načtení odložené na moment, kdy uživatel posune stránku směrem k obrázku, což mu ušetří stahování nemalého množství dat.
 
-A pak také rezervaci místa v rozvržení stránky, pomocí atributu `layout`, který už znáte [z dřívějšího textu](https://docs.google.com/document/d/1_YjH3UxCrJAd9KTH0laO5YXMaFTv3hD7zkVP3fwMJhw/edit#heading=h.cy8vp2n39jw6). Tedy zamezení poskakování stránky při jejím vykreslování.
+A pak také rezervaci místa v rozvržení stránky, pomocí atributu `layout`, který už znáte [z dřívějšího textu](amp-layout-atribut.md). Tedy zamezení poskakování stránky při jejím vykreslování.
 
 Běžná značka `<img>` má také jednu tradiční nevýhodu. V prohlížečích existuje funkce známá jako preload scanner, který rychle přečte HTML a hned začne stahovat důležité zdroje: CSS, JavaScript a také obrázky v `<img>`.
 

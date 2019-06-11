@@ -2,7 +2,7 @@
 
 AMP nabízí ke dnešku kolem stovky komponent, které by měly plně stačit na vše, co potřebujete na běžných obsahových webech nebo e-shopech.
 
-Komponenty pokrývají tvorbu layoutu, multimédia (např. YouTube přehrávač), komponenty rozhraní (karusely, navigace), dynamický obsah (stahování informací z API), animace, ale také nepostradatelnou analytiku a reklamu. Více o nich píšeme v dalších textech [kapitoly o komponentách](https://docs.google.com/document/d/1TukezqeSpA8sHZKZwpsRKOqcZHHQL8UT9ZuV4RNeN5k/edit#).
+Komponenty pokrývají tvorbu layoutu, multimédia (např. YouTube přehrávač), komponenty rozhraní (karusely, navigace), dynamický obsah (stahování informací z API), animace, ale také nepostradatelnou analytiku a reklamu. Více o nich píšeme v dalších textech [kapitoly o komponentách](amp-komponenty.md).
 
 ## Konec s plněním všech klientských přání
 

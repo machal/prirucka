@@ -25,7 +25,7 @@ Například následující prvek drží v layoutu prostor o poměru stran 4 : 3,
 </amp-img>
 ```
 
-[Systém layoutu](https://docs.google.com/document/d/1_YjH3UxCrJAd9KTH0laO5YXMaFTv3hD7zkVP3fwMJhw/edit#heading=h.cy8vp2n39jw6) rozepisujeme v samostatném textu.
+[Systém layoutu](amp-layout-atribut.md) rozepisujeme v samostatném textu.
 
 ## Pořádek v prioritách
 

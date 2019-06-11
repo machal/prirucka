@@ -42,7 +42,7 @@ Nepovolený je také `@charset`, `@namespace` nebo `@document`. Kvůli těmto pr
 
 Další zákaz `!important` může bolet, protože v CSS je tohle pravidlo jako droga. Všichni vědí, že užívat ji je nebezpečné, ale jsme jen lidi a každý má někdy slabou chvilku, že ano…?
 
-Proč je to zakázané? Předpokládá se, že AMP dokumenty budou procházet úpravami [v AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#heading=h.bv7h5ckbspk7) a zobrazovat se [v AMP Vieweru](https://docs.google.com/document/d/1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc/edit#). Během toho se upraví jejich HTML kód. Řada vlastností, které pro potřeby jednoduššího psaní stránek zapisují jako atributy (např. `layout="responsive"`), se ve veřejně publikované AMP stránce přepíší do CSS.
+Proč je to zakázané? Předpokládá se, že AMP dokumenty budou procházet úpravami [v AMP Cache](amp-cache.md) a zobrazovat se [v AMP Vieweru](amp-viewer.md). Během toho se upraví jejich HTML kód. Řada vlastností, které pro potřeby jednoduššího psaní stránek zapisují jako atributy (např. `layout="responsive"`), se ve veřejně publikované AMP stránce přepíší do CSS.
 
 AMP Cache tedy musí přepisovat naše styly. A jediný způsob, jakým může zaručit stoprocentní jistotu přepisu, je právě `!important`.
 
@@ -128,6 +128,6 @@ Nic nového, to by mohla být dobrá zpráva. Jenže je tu ještě ta špatná: 
 
 Samozřejmě – není příliš pravděpodobné, že budete potřebovat jiné dodavatele. Většina menších písmolijen například umožňuje instalaci webfontů na vlastní doménu.
 
-I tak to ale omezuje svobodu volby a spadá do bodů, jež na AMP [vnímáme kriticky](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#). Snad i volbu dodavatele webfontové infrastruktury autoři časem otevřou každému, kdo bude schopný splnit jejich přísné podmínky.
+I tak to ale omezuje svobodu volby a spadá do bodů, jež na AMP [vnímáme kriticky](amp-kritika-myty.md). Snad i volbu dodavatele webfontové infrastruktury autoři časem otevřou každému, kdo bude schopný splnit jejich přísné podmínky.
 
 Probrali jsme vše, co jsme měli ke stylům na srdci. Teď ještě pár slov k dalšímu členovi triumvirátu, k JavaScriptu. O čem ale psát, když ten je v AMP  zakázaný? Uvidíte sami.

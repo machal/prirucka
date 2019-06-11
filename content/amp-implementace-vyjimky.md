@@ -9,7 +9,7 @@ _Obrázek: Implementace AMP výjimkami v kódu. Základ aplikace a HTML kódu je
 </figcaption>
 </figure>
 
-Jak už [víte z druhé kapitoly](https://docs.google.com/document/d/1tjmhyMFuW5Ml8CBeyqPt8T4KRE-6eLzKYAICfs-698Y/edit#), je zde řada věcí, ve kterých musí kód AMP stránky vypadat jinak než v případě non-AMP verze. Měli byste například do hlavičky vložit „AMP Boilerplate“ (`<style amp-boilerplate>`). Změn oproti non-AMP verzi je samozřejmě více. Ale jsou to pořád výjimky. To znamená, že velká část kódu může být totožná pro obě verze.
+Jak už [víte z druhé kapitoly](amp-html-css-komponenty.md), je zde řada věcí, ve kterých musí kód AMP stránky vypadat jinak než v případě non-AMP verze. Měli byste například do hlavičky vložit „AMP Boilerplate“ (`<style amp-boilerplate>`). Změn oproti non-AMP verzi je samozřejmě více. Ale jsou to pořád výjimky. To znamená, že velká část kódu může být totožná pro obě verze.
 
 Toho můžete využít a připravit nové adresy AMP stránek, ve kterých budete ošetřovat právě jen tyto zvláštní případy.
 
@@ -38,7 +38,7 @@ AMP verze pak budou mít v případě Vzhůru dolů vždy tuto adresu:
 https://www.vzhurudolu.cz/amp/prirucka/css3-flexbox
 ```
 
-AMP stránka i kanonická HTML stránka na sebe odkazují formou metaznaček. To už víte [z první kapitoly](https://docs.google.com/document/d/1XMh2nfYmtF-6FOnurl5Lthh1DrSp-YpLH-C2hHT2z_s/edit#heading=h.jijewz14pjdl).
+AMP stránka i kanonická HTML stránka na sebe odkazují formou metaznaček. To už víte [z první kapitoly](amp-fungovani.md).
 
 ### Úprava hlavičky HTML kódu
 
@@ -84,7 +84,7 @@ V předchozím PHP kódu se děje toto:
 
 * Najdeme všechny tagy `<img>` (`$html->find('img')` – používáme zde knihovnu „PHP Simple HTML DOM Parser“) a procházíme je cyklem.
 * Pokud je uživatel na AMP verzi, měníme značku z `<img>` na `<amp-img>`.
-* Přidáváme také atributy s hodnotami `layout=responsive`, které znáte [z textu o layoutu](https://docs.google.com/document/d/1ZbAQLMuSgFtV6j8io-uLTNNPXTYIesdVA6mMp8BJOB8/edit#).
+* Přidáváme také atributy s hodnotami `layout=responsive`, které znáte [z textu o layoutu](amp-layout.md).
 * Pak také související poměr stran: `width=1.6` a `height=0.9`, protože všechny obrázky na blogu mají poměr stran 16 : 9. Nakonec to celé v části `$element->outertext` poskládáme dohromady.
 
 S výsledkem by už měl být AMP validátor spokojený:

@@ -2,7 +2,7 @@
 
 Na tuhle část knížky jsme se obzvlášť těšili. Ukazuje dynamickou část AMP, tu, která je zatím vývojářům málo známá.
 
-Připravili jsme zde jednoduchou šablonu produktu v e-shopu navazující [na blogpost z předchozího tutoriálu](https://docs.google.com/document/d/1dogQaxiOZsx-Yf-cwBz2zpYlQzE8dvQSvAYuFwii9E8/edit#).
+Připravili jsme zde jednoduchou šablonu produktu v e-shopu navazující [na blogpost z předchozího tutoriálu](amp-tutorial-blogpost.md).
 
 <figure>
 <img src="../dist/images/original/vdamp/priklad-produkt-1.png" alt="">
@@ -57,8 +57,8 @@ Zjednodušený kód karuselu (číslo 1 v obrázku) vypadá asi takto:
 Pojďme si to vysvětlit:
 
 * `<amp-carousel>` je komponenta sloužící k zobrazení karuselů, slajderů, prezentací… Je to všechno podobné, ale každý tomu říká trochu jinak. Atribut `controls` zajistí stálé zobrazení ovládacích prvků – postranních šipek. `type="slides"` označuje, že tohle je ze všech typů karuselů právě _slajder_. Prostě taková ta věc, kde je vidět vždy jen jeden _slajd_.
-* Layout v AMP [už umíme](https://docs.google.com/document/d/1_YjH3UxCrJAd9KTH0laO5YXMaFTv3hD7zkVP3fwMJhw/edit#heading=h.cy8vp2n39jw6), takže jen pro jistotu vysvětlím, že `width="1" height="1"` u jednotlivých obrázků značí poměr stran 1 : 1 a přizpůsobení šířce rodičovského elementu máme ošetřeno pomocí `layout="responsive"`.
-* `on="tap:lightbox1"` čeká na „tapnutí“ uživatele, načež spustí `lightbox1`, což je název zde registrované komponenty `amp-lightbox`. Základy fungování akcí a událostí v AMP jsme načrtli v textu [o JavaScriptu v AMP](https://docs.google.com/document/d/1TE1Oxixxvanx4jLjMqSjstt5f8DXDdBZnFd9z7H4Yog/edit#heading=h.r9n5d33e1v0n).
+* Layout v AMP [už umíme](amp-layout-atribut.md), takže jen pro jistotu vysvětlím, že `width="1" height="1"` u jednotlivých obrázků značí poměr stran 1 : 1 a přizpůsobení šířce rodičovského elementu máme ošetřeno pomocí `layout="responsive"`.
+* `on="tap:lightbox1"` čeká na „tapnutí“ uživatele, načež spustí `lightbox1`, což je název zde registrované komponenty `amp-lightbox`. Základy fungování akcí a událostí v AMP jsme načrtli v textu [o JavaScriptu v AMP](amp-javascript.md).
 * Nesmíme zapomenout ani na přístupnost ve čtečkách obrazovky pro zrakově postižené. `role="button"` deklaruje, že jde o aktivní prvek. `tabindex="0"` jej umožní zaměřit při ovládání z klávesnice. Obojí musíme udělat u všech „klikatelných“ AMP komponent, protože na rozdíl od `<a>` nebo `<button>` je prohlížeče neznají, a tudíž jim nepřisoudí správné chování ve čtečkách. Z podobného důvodu nezapomínejme ani na obsah atributu `alt=""`, který jsme kvůli čitelnosti vynechali.
 
 Bezva! Tohle nám zajistí zobrazení karuselu a možnost překlikávání mezi fotografiemi pomocí šipek.
@@ -100,24 +100,24 @@ To, co v obrázku vidíme pod číslem 2, je v kódu zapsáno zhruba následovn�
 
 Pro zájemce opět následuje komentovaná prohlídka:
 
-* Komponenta `amp-selector` obstará jakýkoliv výpis položek, kde nás pro další použití zajímá výběr jedné z nich. Už jsme ji naťukli [v textu o dynamických komponentách](https://docs.google.com/document/d/1SvRGnlOZwVn0kxR4syJ7B0zjtKe0uS5tzniOcPoMO5U/edit#heading=h.lauhzlmhd7i2). Zde má na starosti výpis náhledů fotek a výběr jedné z nich kliknutím.
+* Komponenta `amp-selector` obstará jakýkoliv výpis položek, kde nás pro další použití zajímá výběr jedné z nich. Už jsme ji naťukli [v textu o dynamických komponentách](amp-komponenty-dynamicke.md). Zde má na starosti výpis náhledů fotek a výběr jedné z nich kliknutím.
 * `on="select:image-carousel.goToSlide(index=event.targetOption)"` čeká na událost `select`, aby na prvku `image-carousel` (to je `id` výše uvedeného karuselu) provedl akci `goToSlide()`, která obstará přesun na konkrétní „slajd“ odpovídající hodnotě parametru option vybraného prvku (`event.targetOption`). (Uf! Snad jste tohle megasouvětí zvládli i vy, méně programátorsky zdatní. Ubezpečujeme vás ale, že složitější větu už ve „Vzhůru do AMP“ nepotkáte.)
 
 Tenhle kód zajistí, že se nám po klikání na položky komponenty `amp-selector` budou zobrazovat odpovídající obrázky v horní části.
 
 Další kousky v uvedené ukázce kódu jsou podobné jiným, které jsme už společně rozebírali dříve. Namísto toho, co zde _je_, se proto budeme věnovat tomu, co zde _není_. Pravděpodobně bychom totiž chtěli, aby interakce fungovaly i opačně – po změně velkého obrázku v karuselu by se měl zvýraznit odpovídající malý náhled v selektoru, že ano?
 
-To je něco, co naše řešení neumí. Demonstrujeme si zde totiž propojení komponent s vědomím, že hotové řešení nebude dokonalé z pohledu uživatelského. Pokud bychom něco takového nasazovali na reálném projektu, mohli bychom cíle dosáhnout po použití `amp-bind` ze sady [dynamických komponent](https://docs.google.com/document/d/1SvRGnlOZwVn0kxR4syJ7B0zjtKe0uS5tzniOcPoMO5U/edit#heading=h.lauhzlmhd7i2).
+To je něco, co naše řešení neumí. Demonstrujeme si zde totiž propojení komponent s vědomím, že hotové řešení nebude dokonalé z pohledu uživatelského. Pokud bychom něco takového nasazovali na reálném projektu, mohli bychom cíle dosáhnout po použití `amp-bind` ze sady [dynamických komponent](amp-komponenty-dynamicke.md).
 
 Pojďme probrat další zajímavé věci. Co takhle stahovat aktuální obsah z vašeho serveru do AMP stránky sídlící na AMP Cache?
 
 ## Stahování obsahu ze serveru
 
-Asi si vzpomenete, že [AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#heading=h.bv7h5ckbspk7) používá model „stale-while-revalidate“, který zajišťuje, že starou verzi obsahu vidí vždy jen první uživatel. Ten zároveň vyvolá aktualizaci a druhý už dostane aktuální verzi.
+Asi si vzpomenete, že [AMP Cache](amp-cache.md) používá model „stale-while-revalidate“, který zajišťuje, že starou verzi obsahu vidí vždy jen první uživatel. Ten zároveň vyvolá aktualizaci a druhý už dostane aktuální verzi.
 
 Jenže u některých typů obsahu může být i tento docela fajn způsob zneplatnění mezipaměti příliš pomalý. Vždyť kdo by chtěl mít na telefonu například rozhořčeného prvního uživatele „aktuálních informací z newyorské burzy“, že?
 
-Stahovat aktuální data pro každého uživatele lze například pomocí komponenty `amp-list`, jak víte právě z textu o [dynamických komponentách](https://docs.google.com/document/d/1SvRGnlOZwVn0kxR4syJ7B0zjtKe0uS5tzniOcPoMO5U/edit#heading=h.lauhzlmhd7i2). A není to zajímavé jen pro zobrazování aktuální ceny akcií. Můžete například chtít informace personalizovat přes [AMP Client ID](https://docs.google.com/document/d/1abz4vezq7yEdaL89MLHTmZ7OrmD5hC8SGWOlUNzcIGU/edit).
+Stahovat aktuální data pro každého uživatele lze například pomocí komponenty `amp-list`, jak víte právě z textu o [dynamických komponentách](amp-komponenty-dynamicke.md). A není to zajímavé jen pro zobrazování aktuální ceny akcií. Můžete například chtít informace personalizovat přes [AMP Client ID](amp-predavani.md).
 
 V našem případě stahujeme celou tabulku s aktuálními rozměry bot a jejich dostupností. Řekněme, že to není nejlepší příklad použití, ale vy nám jistě toto zjednodušení pro potřeby demonstrace následující techniky prominete.
 
@@ -199,7 +199,7 @@ Ještě než se dostaneme k oběma číslovaným položkám, musíme si ukázat 
 
 ### Evidence stavu
 
-Stav je hezká věc, která je v moderních frontendových frameworcích naprosto nepostradatelná. AMP v tom není výjimkou. Pomocí komponenty `amp-state`, kterou už také znáte [z textu o dynamických komponentách](https://docs.google.com/document/d/1SvRGnlOZwVn0kxR4syJ7B0zjtKe0uS5tzniOcPoMO5U/edit#heading=h.lauhzlmhd7i2), si na téhle naší pidistránce budeme ukazovat jen ty nejzákladnější vlastnosti:
+Stav je hezká věc, která je v moderních frontendových frameworcích naprosto nepostradatelná. AMP v tom není výjimkou. Pomocí komponenty `amp-state`, kterou už také znáte [z textu o dynamických komponentách](amp-komponenty-dynamicke.md), si na téhle naší pidistránce budeme ukazovat jen ty nejzákladnější vlastnosti:
 
 ```html
 <amp-state id="myState">
@@ -274,7 +274,7 @@ Teď to ještě nějak potřebujeme odeslat na server. Pro jistotu upozorňujeme
 
 `amp-form` je důležitá komponenta, kterou jsme v předchozích textech ještě nerozebírali. Pojďme na to:
 
-* Atribut `action-xhr` specifikuje serverový endpoint, čili URL adresu, která čeká vstupy v určitém formátu. Na ní mají data z formuláře odejít pomocí AJAXu, tedy na pozadí. Backendová implementace už v příkladu zahrnutá není, ale za běžného provozu bychom právě tímto způsobem ukládali data košíku pro další použití. Asi si vzpomenete, že jsme to řešili v předchozím textu [o ukládání dat z webů AMP](https://docs.google.com/document/d/1abz4vezq7yEdaL89MLHTmZ7OrmD5hC8SGWOlUNzcIGU/edit). Cílová adresa musí mít povolený přístup z AMP Cache pomocí bezpečnostní instrukce CORS.
+* Atribut `action-xhr` specifikuje serverový endpoint, čili URL adresu, která čeká vstupy v určitém formátu. Na ní mají data z formuláře odejít pomocí AJAXu, tedy na pozadí. Backendová implementace už v příkladu zahrnutá není, ale za běžného provozu bychom právě tímto způsobem ukládali data košíku pro další použití. Asi si vzpomenete, že jsme to řešili v předchozím textu [o ukládání dat z webů AMP](amp-predavani.md). Cílová adresa musí mít povolený přístup z AMP Cache pomocí bezpečnostní instrukce CORS.
 * Pokud se povede data úspěšně odeslat (`on="submit-success: …"`), změníme navíc hodnoty `cart` i `count` v našem stavu. Pojmenovali jsme jej prozaicky `myState`, ale vězte, že to je stav určený nám všem.
 
 Tak! Máme to hotové. Leccos jsme vynechali, leccos zjednodušili, ale snad je z toho patrný alespoň směr, kterým může jít efektivní implementace dynamických vlastností šablony produktu v e-shopu.

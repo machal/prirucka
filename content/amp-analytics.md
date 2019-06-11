@@ -4,7 +4,7 @@ V AMP je možné sledovat chování návštěvníků mnoha způsoby, podobně ja
 
 ## Dva typy měření
 
-Pro analytiku jsou v technologii AMP k dispozici dvě komponenty, `amp-pixel` a `amp-analytics`. Možná si na ně vzpomenete [z druhé kapitoly](https://docs.google.com/document/d/11f3LQGb-u04WPfER8vjkyaMokmx73jwITJ0LvlKI1u4/edit#heading=h.wutuzesubwzw).
+Pro analytiku jsou v technologii AMP k dispozici dvě komponenty, `amp-pixel` a `amp-analytics`. Možná si na ně vzpomenete [z druhé kapitoly](amp-komponenty-reklama-analytika.md).
 
 ### amp-pixel
 
@@ -19,7 +19,7 @@ Je určený pro základní analytiku, která se chová jako měřicí pixel:
 Vysvětlíme:
 
 * `<adresa-pro-mereni>` — adresa měřicího koncového bodu vaší aplikace. Nemusí to být samozřejmě pixelový obrázek, ale třeba `https://example.com/mereni/zmer-me.`
-* `layout="nodisplay"` – prvek, který se spustí, ale nezobrazí. To už asi víte z textu [o layoutu v AMP](https://docs.google.com/document/d/1OlhPzDZg_xs583ARIy2vfn5DS-Pq_kDzX6NKGYFlAu0/edit#heading=h.ypc0bzifdqve).
+* `layout="nodisplay"` – prvek, který se spustí, ale nezobrazí. To už asi víte z textu [o layoutu v AMP](amp-komponenty-layout.md).
 
 Více o pixelu je na [vrdl.in/amppixel](https://amp.dev/documentation/components/amp-pixel).
 

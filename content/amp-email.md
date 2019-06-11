@@ -71,7 +71,7 @@ Minimální HTML je velmi podobné svému sourozenci u klasického AMP:
 </html>
 ```
 
-Respektive – jak sami vidíte, jde o směsici prvků použitých u AMP Websites s tím, co známe [od AMP Ads](https://docs.google.com/document/d/18rnJuIl-BGSa1wjRysuBNN4gset5As4MpN4h5Brjpps/edit#heading=h.jieilt526eue).
+Respektive – jak sami vidíte, jde o směsici prvků použitých u AMP Websites s tím, co známe [od AMP Ads](amp-ads.md).
 
 Kromě vám již známých pravidel tady například platí:
 

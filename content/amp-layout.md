@@ -48,11 +48,11 @@ Jinak řečeno: AMP layout prostě není náhražkou rozvržení v CSS. Doplňuj
 Jak to AMP zařídí? Objevily se zde nové atributy nebo je upravený význam těch existujících. Více se dozvíte v následujících třech sekcích:
 
 * `layout`  
-V atributu se uvádí, jakým způsobem se bude prvek přizpůsobovat šířce a výšce rodiče. Je o tom hned [další text](https://docs.google.com/document/d/1_YjH3UxCrJAd9KTH0laO5YXMaFTv3hD7zkVP3fwMJhw/edit#heading=h.cy8vp2n39jw6).
+V atributu se uvádí, jakým způsobem se bude prvek přizpůsobovat šířce a výšce rodiče. Je o tom hned [další text](amp-layout-atribut.md).
 * `width`, `height`, `sizes`, `heights` a `media`  
-[Atributy](https://docs.google.com/document/d/19aD8KRybwfiNxZmCCU_0RkjJqMng6wHEvNn9IkboYqQ/edit#heading=h.jpyblol26v7v), které zajišťují prostor pro vykreslení nebo jen poměr stran. Určují, jaké šířky nebo výšky může prvek mít na různě velkých obrazovkách.
+[Atributy](amp-layout-dalsi-atributy.md), které zajišťují prostor pro vykreslení nebo jen poměr stran. Určují, jaké šířky nebo výšky může prvek mít na různě velkých obrazovkách.
 * `placeholder`, `fallback`  
-Tyto [atributy](https://docs.google.com/document/d/1ZXgKbZ6yGbDpaCD4Ea_EsMx-jNdupBOj8O9X7hZo6vI/edit#heading=h.g6ezh2bcyeoy) definují dočasný nebo alternativní obsah pro případ krátkodobé nebo i dlouhodobé nepřítomnosti zmíněných prvků v HTML.
+Tyto [atributy](amp-layout-placeholder.md) definují dočasný nebo alternativní obsah pro případ krátkodobé nebo i dlouhodobé nepřítomnosti zmíněných prvků v HTML.
 
 Uváděné atributy pak zpracuje AMP runtime, onen kousek JavaScriptu, který musíte vložit do každé stránky. Ve výsledku se uvedené atributy překládají do sady CSS vlastností a HTML prvků, aby tomu rozuměly dnešní prohlížeče.
 

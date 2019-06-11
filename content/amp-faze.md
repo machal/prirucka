@@ -1,6 +1,6 @@
 # Rychlost AMP stránky ve fázích distribuce
 
-AMP se občas vytýká, že ve skutečnosti tak rychlé není. V řadě konkrétních případů to může být pravda, ale při zobrazení [v AMP Vieweru](https://drive.google.com/open?id=1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc) s přednačtením hledá tato technologie konkurenci opravdu jen těžko.
+AMP se občas vytýká, že ve skutečnosti tak rychlé není. V řadě konkrétních případů to může být pravda, ale při zobrazení [v AMP Vieweru](amp-viewer.md) s přednačtením hledá tato technologie konkurenci opravdu jen těžko.
 
 Jak už víme, než se AMP dostane do této ideální distribuční formy, prochází různými jinými umístěními, nebo také fázemi distribuce. Pojďme si je teď všechny projít a podívat se, jak jsou v nich konkrétní stránky rychlé.
 
@@ -89,9 +89,9 @@ Je potřeba si uvědomit dvě věci:
 1. Už původní verze článku je velice minimalistická z pohledu použití JavaScriptu. Vystačí si s knihovnou jQuery a dvěma, třemi pluginy. Dohromady nějakých 50 kB kódu.
 2. Každá AMP stránka vyžaduje vložení AMP knihovny, ve které prohlížeč stahuje a spouští téměř 80 kB kódu, a to nepočítáme javascriptový kód pro jednotlivé komponenty.
 
-K druhému bodu je potřeba říci, že nutnost vkládání komponent je aktuálně jedním z problémů AMP. Autoři ovšem pracují na jeho odstranění. O projektu „Bento“ najdete více v textu [o kanonických AMP stránkách](https://docs.google.com/document/d/1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs/edit#) třetí kapitoly.
+K druhému bodu je potřeba říci, že nutnost vkládání komponent je aktuálně jedním z problémů AMP. Autoři ovšem pracují na jeho odstranění. O projektu „Bento“ najdete více v textu [o kanonických AMP stránkách](amp-implementace-jen-amp.md) třetí kapitoly.
 
-Dobré to tady pro AMP úplně není. Trápilo by nás to ale, jen pokud bychom pomocí AMP vytvářeli i klasickou verzi webu. Varianta stránky AMP umístěné na hostingu totiž není určená pro lidské návštěvníky, ale jen pro zpracování roboty a nahrání do [AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI).
+Dobré to tady pro AMP úplně není. Trápilo by nás to ale, jen pokud bychom pomocí AMP vytvářeli i klasickou verzi webu. Varianta stránky AMP umístěné na hostingu totiž není určená pro lidské návštěvníky, ale jen pro zpracování roboty a nahrání do [AMP Cache](amp-cache.md).
 
 ### Reflex
 
@@ -116,13 +116,13 @@ A čísla?
 |Vzhůru dolů|5,5 s|6,4 s|3,1 s|
 |Reflex|3,2 s|3,3 s|3,2 s|
 
-Na [AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#heading=h.bv7h5ckbspk7) už proběhly automatické úpravy kódu stránky a prvků, které jsou v ní vložené, jako například obrázky.
+Na [AMP Cache](amp-cache.md) už proběhly automatické úpravy kódu stránky a prvků, které jsou v ní vložené, jako například obrázky.
 
 Celkový obrázek metrik zůstává zhruba na stejné úrovni jako na hostingu, některé se zlepšily, jiné zhoršily… Ale víte co? Na tom ještě pořád nesejde, stále nejsme u cíle a ani na této adrese by stránku uživatelé navštěvovat neměli.
 
 ## 4) AMP stránka v AMP Vieweru
 
-[AMP Viewer](https://drive.google.com/open?id=1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc) má za úkol zobrazit weby z AMP Cache, přidat informační lištu s adresou původního webu a ovládacími prvky. Dále by měl pomoci s vykreslením a přednačtením stránky. Adresy našich stránek jsou nyní následující:
+[AMP Viewer](amp-viewer.md) má za úkol zobrazit weby z AMP Cache, přidat informační lištu s adresou původního webu a ovládacími prvky. Dále by měl pomoci s vykreslením a přednačtením stránky. Adresy našich stránek jsou nyní následující:
 
 ```url
 https://www.google.com/amp/s/
@@ -139,7 +139,7 @@ Ukažme si také čísla:
 |Vzhůru dolů|5,6 s|7,5 s|1,8 s|
 |Reflex|1,1 s|4,0 s|2,1 s|
 
-Jak je tady vidět, metrika _První interaktivita_ během optimalizací prováděných v jednotlivých krocích klesá. Naopak se zde zhoršil _Index rychlosti_, zobrazení hotové první obrazovky. Příčinou je nutnost vykreslení celé stránky v `<iframe>` a přidání lišty informující o původní adrese webu. Technologie „Signed HTTP Exchanges“ (viz předchozí text o [AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI)) ale tento problém pravděpodobně odstraní.
+Jak je tady vidět, metrika _První interaktivita_ během optimalizací prováděných v jednotlivých krocích klesá. Naopak se zde zhoršil _Index rychlosti_, zobrazení hotové první obrazovky. Příčinou je nutnost vykreslení celé stránky v `<iframe>` a přidání lišty informující o původní adrese webu. Technologie „Signed HTTP Exchanges“ (viz předchozí text o [AMP Cache](amp-cache.md)) ale tento problém pravděpodobně odstraní.
 
 V AMP Vieweru už mohou uživatelé na AMP stránku narazit. Další krok – přednačtení – totiž nemusí „klapnout“, takže se stránka v nejhorším případě opravdu může vykreslovat s těmito hodnotami.
 
@@ -195,7 +195,7 @@ _Obrázek: Porovnání rychlosti vykreslení tří různých forem článku na R
 </figcaption>
 </figure>
 
-Pokud by vás snad napadlo, že takhle rychlá by mohla být každá přednačtená stránka, máte pravdu. Jenže přednačítat běžné weby zkrátka možné není. O bezpečnostních a výkonnostních rizicích budeme mluvit ještě v textu [o častých mýtech](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#).
+Pokud by vás snad napadlo, že takhle rychlá by mohla být každá přednačtená stránka, máte pravdu. Jenže přednačítat běžné weby zkrátka možné není. O bezpečnostních a výkonnostních rizicích budeme mluvit ještě v textu [o častých mýtech](amp-kritika-myty.md).
 
 Všechny zdrojové testy jsou k dispozici na [vrdl.in/ampwpt](https://docs.google.com/document/d/1zz3MtDQ-EhGRWyRA5EQWgyPXbtDF5o5gTpCtjyxhZDI).
 

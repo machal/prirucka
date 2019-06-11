@@ -15,7 +15,7 @@ _Obrázek: Schéma fungování implementace „AMP First“._
 </figcaption>
 </figure>
 
-Jde vlastně o obrácený model k implementaci [upřednostněním HTML](https://docs.google.com/document/d/1c1Rf5sfu9rTTh9taijEnO-gn6WlCRBDYKdZpzWAxsJQ/edit#heading=h.intjgxovbb2).
+Jde vlastně o obrácený model k implementaci [upřednostněním HTML](amp-implementace-vyjimky.md).
 
 ## Příklad s obrázky imaginárního e-shopu
 

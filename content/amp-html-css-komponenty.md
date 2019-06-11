@@ -6,9 +6,9 @@ Na tomhle místě se zaměříme na frontendové technologie a vypíchneme rozd�
 
 Podstatné změny si rovnou uveďme:
 
-* [V AMP HTML](https://docs.google.com/document/d/1kdSK7Q0LxoeU6DblzhJ-1EOtaCBD5IVSQwecr5gZyqQ/edit#) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy.
-* [CSS](https://docs.google.com/document/d/1bTJ-tvBCEEFIQkwp-_KCgCV720L27BQ4u8TPEui7Kdc/edit#) se vkládá dovnitř HTML, nesmí být větší než 50 kB a je zakázáno používat oblíbenou direktivu `!important`. Webfonty z cizích domén jsou povolené jen u některých dodavatelů.
-* Stránka musí [projít validací](https://docs.google.com/document/d/1YjRVRHiaRMX4KKmo8CmVpv62sDSSGHaMr_d9URw2H8U/edit#) AMP formátu a nejde jinak, než aby běžela na protokolu HTTPS.
-* A co JavaScript? Ten náš, autorský, je zcela zakázaný. Na druhou stranu – máme k dispozici zhruba stovku komponent, které ho docela hezky nahrazují. Píšeme o nich [ve zvláštní kapitole](https://docs.google.com/document/d/1TukezqeSpA8sHZKZwpsRKOqcZHHQL8UT9ZuV4RNeN5k/edit#).
+* [V AMP HTML](amp-html.md) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy.
+* [CSS](amp-css.md) se vkládá dovnitř HTML, nesmí být větší než 50 kB a je zakázáno používat oblíbenou direktivu `!important`. Webfonty z cizích domén jsou povolené jen u některých dodavatelů.
+* Stránka musí [projít validací](amp-validace.md) AMP formátu a nejde jinak, než aby běžela na protokolu HTTPS.
+* A co JavaScript? Ten náš, autorský, je zcela zakázaný. Na druhou stranu – máme k dispozici zhruba stovku komponent, které ho docela hezky nahrazují. Píšeme o nich [ve zvláštní kapitole](amp-komponenty.md).
 
 Tak a teď vzhůru na tu divnou změť znaků „větší než“ a „menší než“, které už téměř čtvrt století říkáme HyperText Markup Language. I v technologii s bleskem v logu hraje HTML zásadní roli.

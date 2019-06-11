@@ -50,7 +50,7 @@ Autoři mysleli i na podporu sdílecích tlačítek pro sítě, které v AMP ves
 </amp-social-share>
 ```
 
-Kapitálky u `TITLE` a `CANONICAL_URL` nejsou v ukázce úplně náhodou. Je to přesně to, jak to vypadá – proměnné. K náhradám proměnných na AMP Cache se dostaneme [hned v dalším textu](https://docs.google.com/document/d/1abz4vezq7yEdaL89MLHTmZ7OrmD5hC8SGWOlUNzcIGU/edit), takže knížku ještě neodkládejte a neutíkejte na Facebook sdílet něco užitečného.
+Kapitálky u `TITLE` a `CANONICAL_URL` nejsou v ukázce úplně náhodou. Je to přesně to, jak to vypadá – proměnné. K náhradám proměnných na AMP Cache se dostaneme [hned v dalším textu](amp-predavani.md), takže knížku ještě neodkládejte a neutíkejte na Facebook sdílet něco užitečného.
 
 ## Další komponenty pro sociální sítě
 
@@ -78,7 +78,7 @@ Je jich ale k dispozici daleko více:
 
 Když se  díváme na seznam patnácti komponent v téhle kategorii, nemuseli bychom se divit lidem, kteří AMP zazlívají výlučnost a neotevřenost. Do seznamu se dostaly nejdůležitější sítě jako Facebook, Twitter, Pinterest nebo ruské VK, jenže spousta jiných – například LinkedIn – zde v době, kdy vzniká teto text, vlastní komponenty nemá.
 
-Jak už jsme psali v části první kapitoly [o kritice AMP](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#), pevně doufáme, že i zde se povede vymyslet jednotný framework požadavků na tento typ prvků stránky a přidání nového poskytovatele nebude vyžadovat tvorbu nové komponenty.
+Jak už jsme psali v části první kapitoly [o kritice AMP](amp-kritika-myty.md), pevně doufáme, že i zde se povede vymyslet jednotný framework požadavků na tento typ prvků stránky a přidání nového poskytovatele nebude vyžadovat tvorbu nové komponenty.
 
 Autoři AMP ovšem umožňují přidání komponenty komukoliv. Stačí vytvořit pull request do repozitáře na Githubu.
 

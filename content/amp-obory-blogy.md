@@ -42,7 +42,7 @@ Pokud jste to nestihli v rámci knížky už dříve, podívejte se na detail č
 * HTML: [vzhurudolu.cz/prirucka/css-grid](https://www.vzhurudolu.cz/prirucka/css-grid)
 * AMP: [vzhurudolu.cz/amp/prirucka/css-grid](https://www.vzhurudolu.cz/amp/prirucka/css-grid)
 
-Jak už víte, na Vzhůru dolů je v tuto chvíli aplikována architektura „[nejprve HTML, potom AMP](https://docs.google.com/document/d/1c1Rf5sfu9rTTh9taijEnO-gn6WlCRBDYKdZpzWAxsJQ/edit#)“.
+Jak už víte, na Vzhůru dolů je v tuto chvíli aplikována architektura „[nejprve HTML, potom AMP](amp-implementace-vyjimky.md)“.
 
 ## Bella Rose
 

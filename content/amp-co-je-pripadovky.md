@@ -38,6 +38,6 @@ _Obrázek: AMP verze Zillertaler Zeitung zvýšila počet zhlédnutých stránek
 </figcaption>
 </figure>
 
-I přesto je zajímavé projít si české AMP weby a zamyslet se nad tím. V knížce se tuzemským zástupcům věnujeme více v kapitole [o webech, které AMP nasadily](https://docs.google.com/document/d/1ulNvM22oaN7hNhPTuTjqdhQtHu_T5I0xeuL_SuR4Np4/edit#heading=h.5fr9yyvrote7).
+I přesto je zajímavé projít si české AMP weby a zamyslet se nad tím. V knížce se tuzemským zástupcům věnujeme více v kapitole [o webech, které AMP nasadily](4-uvod.md).
 
 Teď už se ale pojďme zaměřit na to, jak tahle technologie přesně funguje.

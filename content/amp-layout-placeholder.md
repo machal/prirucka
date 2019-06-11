@@ -103,7 +103,7 @@ Připomeňme, že v běžném HTML by zápis (bez ošetření layoutu) vypadal n
 </picture>
 ```
 
-Aktuální řešení tohoto problému v AMP je trochu ošemetné, protože například Safari stáhne oba obrázky: WebP i JPEG. Jak víte [z předchozí podkapitoly](https://docs.google.com/document/d/19aD8KRybwfiNxZmCCU_0RkjJqMng6wHEvNn9IkboYqQ/edit#), značku `<picture>`, která tyto nevýhody nemá, není možné v AMP používat. Doufáme, že se tento problém podaří autorům AMP vyřešit.
+Aktuální řešení tohoto problému v AMP je trochu ošemetné, protože například Safari stáhne oba obrázky: WebP i JPEG. Jak víte [z předchozí podkapitoly](amp-layout-dalsi-atributy.md), značku `<picture>`, která tyto nevýhody nemá, není možné v AMP používat. Doufáme, že se tento problém podaří autorům AMP vyřešit.
 
 Pokud by vás čirou náhodu zajímal formát WebP více, jděte na Vzhůru dolů. [vrdl.cz/p/webp](https://www.vzhurudolu.cz/prirucka/webp)
 

@@ -27,7 +27,7 @@ Tudíž se nabízí využít technologii bleskurychlých stránek jako základ n
 * _Snadnost objevení_  
 AMP je optimalizovaný pro stroje vyhledávačů. A jak víte, na některých místech může dostat přednost oproti non-AMP obsahu. PWA jsou na tom díky velkému podílu JavaScriptu na renderování stránky s objevitelností daleko hůř.
 * _Rychlost doručení k uživateli_  
-AMP je [z Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#heading=h.bv7h5ckbspk7) zobrazený okamžitě, PWA to může napoprvé nějakou dobu trvat, protože obvykle stahuje velké javascriptové frameworky se spoustou funkčností.
+AMP je [z Cache](amp-cache.md) zobrazený okamžitě, PWA to může napoprvé nějakou dobu trvat, protože obvykle stahuje velké javascriptové frameworky se spoustou funkčností.
 * _Uživatelské skriptování_  
 AMP neumožňuje vlastní skripty, PWA je plnohodnotná javascriptová aplikace.
 * _Dynamičnost obsahu_  
@@ -40,7 +40,7 @@ Snad je z toho vidět, že AMP a PWA tvoří vcelku vydařený pár. AMP je stat
 V zásadě jsou tři:
 
 1. _AMP s výjimkami pro PWA_  
-Jde o přístup, jaký jsme ukazovali v povídání o [řešení na Vzhůru dolů](https://docs.google.com/document/d/1c1Rf5sfu9rTTh9taijEnO-gn6WlCRBDYKdZpzWAxsJQ/edit#heading=h.intjgxovbb2). Do AMP distribuce zkrátka pošlete mírně modifikovaný kód, například neobsahující JavaScripty, s vlastnostmi PWA.
+Jde o přístup, jaký jsme ukazovali v povídání o [řešení na Vzhůru dolů](amp-implementace-vyjimky.md). Do AMP distribuce zkrátka pošlete mírně modifikovaný kód, například neobsahující JavaScripty, s vlastnostmi PWA.
 2. _AMP jako zdroj dat pro PWA_  
 V tomhle případě vložíte své AMP stránky do plnohodnotné verze a jejich obsah použijete jako datový zdroj pro progresivní webovou aplikaci.
 3. _AMP jako vstupní bod pro PWA_  
@@ -57,7 +57,7 @@ Uživatelský prožitek může při zapojení AMP i PWA vypadat třeba následov
 
 ### 1) Objeví váš web
 
-„Tohle vypadá dobře!“ mumlá si uživatelka pod vousy (pardon, neodolali jsme), když kliká na náš web, který objevila ve výsledcích vyhledávání Googlu nebo na [dalších místech](https://docs.google.com/document/d/1W57NJXoq7-EFpKOvdnelft4Qg3xl9KAjp5aFBExlmqc/edit#), kde je možné se s AMP potkat.
+„Tohle vypadá dobře!“ mumlá si uživatelka pod vousy (pardon, neodolali jsme), když kliká na náš web, který objevila ve výsledcích vyhledávání Googlu nebo na [dalších místech](amp-platformy.md), kde je možné se s AMP potkat.
 
 ### 2) Prakticky okamžitě se jí otevře AMP verze a do hry vstupuje Service Worker
 

@@ -1,6 +1,6 @@
 # AMP Cache, URL stránky a rychlost aktualizací
 
-Teď se budeme bavit o úložišti pro AMP stránky, kam se stahují, aby byly blíž uživateli a zobrazovaly se mu [v AMP Vieweru](https://docs.google.com/document/d/1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc/edit#).
+Teď se budeme bavit o úložišti pro AMP stránky, kam se stahují, aby byly blíž uživateli a zobrazovaly se mu [v AMP Vieweru](amp-viewer.md).
 
 Kopie vaší AMP stránky je prostě stažená na adrese pod cizí doménou. Například:
 
@@ -24,7 +24,7 @@ Její součástí je optimalizované úložiště, které by mělo být blízko 
 * _Optimalizace_  
 Kód stránky je potřeba pro zobrazování z keše upravit. Za chvíli se dostaneme k tomu, co všechno vlastně AMP Cache upravuje.
 * _AMP Viewer_  
-Pomocník prohlížeče pro vykreslování AMP stránek. Více o něm píšeme [v následujícím textu](https://docs.google.com/document/d/1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc/edit#heading=h.fcehdvjcsrf3).
+Pomocník prohlížeče pro vykreslování AMP stránek. Více o něm píšeme [v následujícím textu](amp-viewer.md).
 
 Teď ale přeskočme od účelu AMP Cache k jejím provozovatelům. V době psaní textu víme o třech.
 
@@ -112,7 +112,7 @@ Pro mnohé může být. Někteří uživatelé mohou váhat, zda jsou opravdu na
 
 Jak také upozorňuje bezpečnostní expert Michal Špaček, phishingovým podvodům, využívajícím vzhled známého webu, jen na cizí doméně, to může usnadňovat život: „Web s falešným loginem do Googlu bude těžší rozeznat od toho skutečného jen podle adresy, protože domény budou podobné a významně lišit se bude až kousek URL adresy daleko za doménou.“
 
-Řešení problému je na cestě, ale zatím se to u většiny webů AMP vyřešit nedá. [AMP Viewer](https://docs.google.com/document/d/1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc/edit#), který má na starosti zobrazování těchto stránek, se snaží nevýhodu potlačit přidáním lišty s odkazem na původní adresu. To je vidět hned na dalším obrázku.
+Řešení problému je na cestě, ale zatím se to u většiny webů AMP vyřešit nedá. [AMP Viewer](amp-viewer.md), který má na starosti zobrazování těchto stránek, se snaží nevýhodu potlačit přidáním lišty s odkazem na původní adresu. To je vidět hned na dalším obrázku.
 
 ### Signed HTTP Exchanges
 
@@ -144,7 +144,7 @@ Je dobré vědět, že cache se nespokojuje s dodanou AMP stránkou, ale dál ji
 * Minifikuje HTML a CSS.
 * Může také předrenderovávat webové stránky na pozadí.
 
-Před tím vším ovšem stránku validuje. Pokud ta totiž není platná podle AMP specifikace, máte smůlu – žádné umístění v keši nedostanete a uživatelé budou posíláni „postaru“ na vaši standardní HTML stránku. I [validaci](https://docs.google.com/document/d/1YjRVRHiaRMX4KKmo8CmVpv62sDSSGHaMr_d9URw2H8U/edit) se budeme věnovat, žádný strach.
+Před tím vším ovšem stránku validuje. Pokud ta totiž není platná podle AMP specifikace, máte smůlu – žádné umístění v keši nedostanete a uživatelé budou posíláni „postaru“ na vaši standardní HTML stránku. I [validaci](amp-validace.md) se budeme věnovat, žádný strach.
 
 K dispozici je veřejně a volně dostupná implementace úprav, které AMP Cache dělá. O ní si teď něco povíme.
 
@@ -152,7 +152,7 @@ K dispozici je veřejně a volně dostupná implementace úprav, které AMP Cach
 
 Je to software, který provádí výše uvedené úpravy AMP stránek. Je napsaný hlavně pro tvůrce dalších AMP Cache. Mezi ty se ale asi ještě počítat nebudeme, že?
 
-Pro vás může být Optimizer zajímavý, pokud se rozhodnete nechat zobrazovat AMP stránky přímo z vašeho hostingu, například když chcete na AMP [postavit i běžnou verzi webu](https://drive.google.com/open?id=1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs). Více o AMP Optimizeru: [vrdl.in/ampoptimizer](https://github.com/ampproject/amp-toolbox/tree/master/packages/optimizer).
+Pro vás může být Optimizer zajímavý, pokud se rozhodnete nechat zobrazovat AMP stránky přímo z vašeho hostingu, například když chcete na AMP [postavit i běžnou verzi webu](amp-implementace-jen-amp.md). Více o AMP Optimizeru: [vrdl.in/ampoptimizer](https://github.com/ampproject/amp-toolbox/tree/master/packages/optimizer).
 
 Znovu se ale vraťme ke keši. Tentokrát k té, která nás v české praxi zajímá nejvíce, AMP Cache od Googlu. Zůstala nám tady jedna nezodpovězená otázka. Jako bychom vás slyšeli: „Tohle všechno je hezké. Ale co když udělám změnu na stránce – jak dlouho budu čekat na aktualizaci AMP Cache?“
 

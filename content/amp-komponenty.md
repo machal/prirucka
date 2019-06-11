@@ -16,9 +16,9 @@ Protože se nám slovo „vestavěnost“ zalíbilo, musíme vám sdělit, že _
 
 Komponenty, které jsou přímo v základní javascriptové knihovně. V tuto chvíli má tato kategorie pouhé tři členy:
 
-* `amp-layout` – vykreslovací layout, který jsme zmiňovali už v podkapitole [o layoutu](https://docs.google.com/document/d/1_YjH3UxCrJAd9KTH0laO5YXMaFTv3hD7zkVP3fwMJhw/edit).
-* `amp-img` – vložení obrázku, o kterém si něco povíme v podkapitole [o mediálních komponentách](https://docs.google.com/document/d/1Csl_K3hAJqeiF_kauKRmvf9te6bYGSGSlpRCwps-J3A/edit).
-* `amp-pixel` – měření návštěvnosti, kterému se budeme věnovat v podkapitole [o analytice](https://docs.google.com/document/d/1wU9f1eK9gfV09AVCkB_zNOAzmMn9IgDB9RWCi_vlGBo/edit).
+* `amp-layout` – vykreslovací layout, který jsme zmiňovali už v podkapitole [o layoutu](amp-layout-atribut.md).
+* `amp-img` – vložení obrázku, o kterém si něco povíme v podkapitole [o mediálních komponentách](amp-komponenty-multimedia.md).
+* `amp-pixel` – měření návštěvnosti, kterému se budeme věnovat v podkapitole [o analytice](amp-analytics.md).
 
 ### Rozšiřující (extended)
 

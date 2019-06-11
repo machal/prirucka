@@ -20,7 +20,7 @@ _Tabulka: Porovnání metriky Speed Index pro články na obou webech. Měřeno 
 
 Výsledky v řádu nízkých stovek milisekund jsou fantastické, s běžnými weby na ně ale prakticky nelze dosáhnout. Proč? I o tom je tato knížka.
 
-Dřív než se podíváme na způsoby, kterými AMP takové zrychlení zajišťuje, musíme vás upozornit, že „AMP = rychlost“ neplatí vždy a všude. Některé AMP stránky se mohou v některých zobrazovacích kontextech vykreslovat ještě pomaleji než původní web. Obvykle si za to ale mohou autoři webů sami – píšeme o tom [v textu o častých mýtech kolem AMP](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#). Bylo by tedy férovější říkat: „AMP = všechny předpoklady pro rychlý web“.
+Dřív než se podíváme na způsoby, kterými AMP takové zrychlení zajišťuje, musíme vás upozornit, že „AMP = rychlost“ neplatí vždy a všude. Některé AMP stránky se mohou v některých zobrazovacích kontextech vykreslovat ještě pomaleji než původní web. Obvykle si za to ale mohou autoři webů sami – píšeme o tom [v textu o častých mýtech kolem AMP](amp-kritika-myty.md). Bylo by tedy férovější říkat: „AMP = všechny předpoklady pro rychlý web“.
 
 ## Co je to tedy AMP?
 
@@ -73,7 +73,7 @@ AMP stránka je umístěná na dočasné paměti u Googlu nebo jiných poskytova
 
 Druhá výhoda spočívá v tom, že stránky se do ní umísťují již jako hotové HTML a CSS. Není tedy nutné čekat na backendové zpracování na našem serveru, které může být při větším vytížení velmi pomalé. Už tady ušetříte stovky milisekund, u většiny webů a na pomalých připojeních dokonce celé vteřiny.
 
-Na to, [jak funguje distribuce AMP](https://docs.google.com/document/d/1XMh2nfYmtF-6FOnurl5Lthh1DrSp-YpLH-C2hHT2z_s/edit#heading=h.jijewz14pjdl) a co dělá [AMP Cache](https://docs.google.com/document/d/155OVlQsp8SBCFOT5qmvwnpgbN42TJ4FtqE5ZVs59thI/edit#heading=h.bv7h5ckbspk7), se podíváme více v dalších textech.
+Na to, [jak funguje distribuce AMP](amp-fungovani.md) a co dělá [AMP Cache](amp-cache.md), se podíváme více v dalších textech.
 
 ## Stránky optimalizuje a případně přednačítá
 
@@ -88,11 +88,11 @@ _Obrázek: Jedním ze zdrojů načtených v relevantním výsledku vyhledáván�
 </figcaption>
 </figure>
 
-V určitých vstupních kontextech se totiž může AMP rozhodnout, že stránku stáhne ještě předtím, než uživatel klikne na odkaz, který k ní vede. Pak je zobrazení skutečně okamžité. Děje se to asi v nejznámějším vstupním prostředí – ve výsledcích vyhledávání Googlu. O dalších místech výskytu AMP stránek píšeme v textu [Kde je možné AMP potkat](https://docs.google.com/document/d/1W57NJXoq7-EFpKOvdnelft4Qg3xl9KAjp5aFBExlmqc/edit).
+V určitých vstupních kontextech se totiž může AMP rozhodnout, že stránku stáhne ještě předtím, než uživatel klikne na odkaz, který k ní vede. Pak je zobrazení skutečně okamžité. Děje se to asi v nejznámějším vstupním prostředí – ve výsledcích vyhledávání Googlu. O dalších místech výskytu AMP stránek píšeme v textu [Kde je možné AMP potkat](amp-platformy.md).
 
-Přednačtení má na starosti „zobrazovač“ AMP stránek, [AMP Viewer](https://docs.google.com/document/d/1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc/edit#heading=h.fcehdvjcsrf3), ke kterému se také dostaneme.
+Přednačtení má na starosti „zobrazovač“ AMP stránek, [AMP Viewer](amp-viewer.md), ke kterému se také dostaneme.
 
-Tady mnozí z vás začnou uvažovat, proč tenhle přednačítací trik nepoužije vyhledávač i pro běžné stránky. Nejde to, alespoň prozatím. Přednačtení je možné jen za určitých podmínek, ve kterých jde hlavně opět o zajištění dobrého uživatelského prožitku. Ještě se k tomu vrátíme v textu [o kritice a mýtech o AMP](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#).
+Tady mnozí z vás začnou uvažovat, proč tenhle přednačítací trik nepoužije vyhledávač i pro běžné stránky. Nejde to, alespoň prozatím. Přednačtení je možné jen za určitých podmínek, ve kterých jde hlavně opět o zajištění dobrého uživatelského prožitku. Ještě se k tomu vrátíme v textu [o kritice a mýtech o AMP](amp-kritika-myty.md).
 
 ## Omezuje možnosti HTML, CSS
 
@@ -102,7 +102,7 @@ Je dobré si připomenout, že technologie vznikla jako konkurence pro Facebook 
 
 V AMP jsou možnosti HTML i CSS pozměněné. Není například možné používat HTML značky, které nejsou dobře navržené z hlediska požadavků AMP na rychlost a postup vykreslování – příkladem budiž značka pro vložení obrázku `<img>`. V AMP je nahrazena komponentou `<amp-img>`. CSS je potřeba vkládat přímo do HTML – opět kvůli rychlosti vykreslení.
 
-Vše rozvedeme více, nebojte se. O [HTML](https://docs.google.com/document/d/1kdSK7Q0LxoeU6DblzhJ-1EOtaCBD5IVSQwecr5gZyqQ/edit#heading=h.hldf48yj106t) a [CSS](https://docs.google.com/document/d/1bTJ-tvBCEEFIQkwp-_KCgCV720L27BQ4u8TPEui7Kdc/edit#heading=h.3xhk2sci33e8) v AMP máme zvláštní texty. Dostaneme se k nim zanedlouho.
+Vše rozvedeme více, nebojte se. O [HTML](amp-html.md) a [CSS](amp-css.md) v AMP máme zvláštní texty. Dostaneme se k nim zanedlouho.
 
 ## Skoro úplně zakazuje vlastní JavaScript
 
@@ -116,7 +116,7 @@ Hodí se tedy AMP jen na statické stránky? Ani náhodou. To, že je zde zakáz
 
 Pro běžné komponenty uživatelského rozhraní můžete využít AMP komponenty. Je zde také jistá forma uchovávání stavu. I ke komponentě `amp-state` se ještě dostaneme. V polovině roku 2019 to navíc vypadá, že v pozměněné a omezené formě bude možné psát vlastní skripty.
 
-Více si o tom řekneme v textu [o JavaScriptu v AMP](https://docs.google.com/document/d/1TE1Oxixxvanx4jLjMqSjstt5f8DXDdBZnFd9z7H4Yog/edit#).
+Více si o tom řekneme v textu [o JavaScriptu v AMP](amp-javascript.md).
 
 ## Odmítne nevalidní kód
 

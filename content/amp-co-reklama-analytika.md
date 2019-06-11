@@ -23,7 +23,7 @@ AMP reklama funguje asi takto: Banner může být nakódovaný ve striktně dan�
 
 Tím se dostáváme k měření. Kromě přítomnosti optimalizovaných komponent jako `amp-analytics` je zde zamezeno negativnímu dopadu na rychlost principem „změř jednou, pošli všem“. Nedochází tedy k tomu, že deset externích služeb využije desetkrát výkon uživatelského zařízení, aby desetkrát změřily to samé.
 
-Pokud vás to zajímá, můžete hned skočit na text o komponentách [pro reklamu a analytiku](https://docs.google.com/document/d/11f3LQGb-u04WPfER8vjkyaMokmx73jwITJ0LvlKI1u4/edit#). Ještě více píšeme [o reklamě v AMP](https://docs.google.com/document/d/18rnJuIl-BGSa1wjRysuBNN4gset5As4MpN4h5Brjpps/edit#) v šesté kapitole.
+Pokud vás to zajímá, můžete hned skočit na text o komponentách [pro reklamu a analytiku](amp-komponenty-reklama-analytika.md). Ještě více píšeme [o reklamě v AMP](amp-ads.md) v šesté kapitole.
 
 ## Je to vyladěné, ale není zde vše
 
@@ -35,6 +35,6 @@ Navíc – o některých typech komponent si zde zatím můžeme jen nechat zdá
 
 Na druhou stranu – právě tyto komponenty patří mezi ty, jež nejvíce zatěžují výkon stránky a pod záminkou měření zhoršují uživatelský prožitek. Pokud chtějí autoři AMP udržet nejpřísnější standardy pro rychlost, výběr komponent zde bude vždy menší.
 
-O [měření](https://docs.google.com/document/d/1wU9f1eK9gfV09AVCkB_zNOAzmMn9IgDB9RWCi_vlGBo/edit) (hlavně pomocí Google Analytics) píšeme i v závěrečné kapitole.
+O [měření](amp-analytics.md) (hlavně pomocí Google Analytics) píšeme i v závěrečné kapitole.
 
 AMP přichází s inovacemi také v jiné poměrně důležité oblasti, v chování prohlížečů.

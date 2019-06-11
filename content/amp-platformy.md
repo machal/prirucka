@@ -45,7 +45,7 @@ Jsou zde dvě možnosti zobrazení:
 
 Čísla pocházejí z článku „How do AMP articles perform in the mobile SERP for Google News OneBoxes?“ od NewsDashboard. [vrdl.in/ampnewsbox](https://newsdashboard.com/en/how-do-amp-articles-perform-in-the-mobile-serp-for-google-news-oneboxes/)
 
-Jak to vyzkoušet? Zadejte si název nějaké aktuální zpravodajské kauzy do mobilního vyhledávání Googlu. Zřejmě uvidíte jen onen karusel, ale je možné, že tam budou prakticky jen výsledky ze stránek AMP. Tohle je mimochodem častým [terčem kritiky](https://docs.google.com/document/d/1ay0dVSsOg0Xb7F6CH9GUXzHx3GQMp7nnnS0zGnUn_RM/edit#). Ještě se k tomu dostaneme.
+Jak to vyzkoušet? Zadejte si název nějaké aktuální zpravodajské kauzy do mobilního vyhledávání Googlu. Zřejmě uvidíte jen onen karusel, ale je možné, že tam budou prakticky jen výsledky ze stránek AMP. Tohle je mimochodem častým [terčem kritiky](amp-kritika-myty.md). Ještě se k tomu dostaneme.
 
 ## 3) Google: Navrhované články v novém okně mobilního Chromu
 

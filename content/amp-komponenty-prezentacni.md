@@ -15,7 +15,7 @@ _Obrázek: Zajímavá je komponenta amp-fit-text, která využívá schopnosti t
 
 ## amp-animation
 
-Jak už víte z textu [o CSS v HTML](https://docs.google.com/document/d/1bTJ-tvBCEEFIQkwp-_KCgCV720L27BQ4u8TPEui7Kdc/edit#heading=h.3xhk2sci33e8), na úrovni CSS je možné animovat pouze vlastnosti `opacity` a `transform`. Ani pořádné animace nám tu ale nejsou upřeny. `amp-animation` je dosti silná komponenta. Silná proto, že využívá Web Animations API.
+Jak už víte z textu [o CSS v HTML](amp-css.md), na úrovni CSS je možné animovat pouze vlastnosti `opacity` a `transform`. Ani pořádné animace nám tu ale nejsou upřeny. `amp-animation` je dosti silná komponenta. Silná proto, že využívá Web Animations API.
 
 Pro příklad si tentokrát zajdeme na CodePen, web plný jednoduchých demíček. Jde o animaci kolečka, které se po zmáčknutí tlačítka posune o dvacet procent šířky okna doprava:
 
@@ -57,7 +57,7 @@ Balík prezentačních komponent čítá následující položky:
 * `amp-date-countdown` – odpočet data. Třeba do startu rakety, kdybyste to náhodou potřebovali.
 * `amp-date-display` – zobrazení data a času v lokálním formátu.
 * `amp-timeago` – zobrazení uběhlého času. Například pro sdělení o čerstvosti stránky. Pomocí této komponenty můžete prostě vložit něco jako „Aktualizováno před 1587 lety“.
-* `amp-dynamic-css-classes` – docela užitečná věc, jež vám do stránky přidá třídu, díky níž můžete zjistit, odkud k vám uživatel přišel, a podle toho AMP stránku upravit. Třída `amp-viewer` například oznamuje, že se prohlížení stránky odehrává  – hádejte kde, no ano – v zobrazovači, [AMP Vieweru](https://docs.google.com/document/d/1K0kr6Z2EuRUBbf_K3J8WsETmv0n5V210MStIyzxqCSc/edit#). Třída `amp-referrer-google-com` zase napráská, odkud uživatel přišel.
+* `amp-dynamic-css-classes` – docela užitečná věc, jež vám do stránky přidá třídu, díky níž můžete zjistit, odkud k vám uživatel přišel, a podle toho AMP stránku upravit. Třída `amp-viewer` například oznamuje, že se prohlížení stránky odehrává  – hádejte kde, no ano – v zobrazovači, [AMP Vieweru](amp-viewer.md). Třída `amp-referrer-google-com` zase napráská, odkud uživatel přišel.
 * `amp-fit-text` – umožňuje vložit text a říct mu, ať vyplní celou plochu rodičovského prvku. To vidíte na obrázku. Velikost písma si prohlížeč určí sám podle velikosti viewportu a definovaných parametrů.
 * `amp-font` – definuje způsob zobrazení webfontů během jejich stahování. V zásadě to ale dnes řeší CSS vlastnost `font-display`, takže této komponentě bychom nepřikládali velký význam.
 * `amp-mathml` – vkládá matematické výrazy pomocí MathML.

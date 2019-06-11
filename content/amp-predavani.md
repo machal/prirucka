@@ -25,7 +25,7 @@ Zkusme to vymyslet jinak. AMP pro to prostředky má.
 
 ## Komunikace s vaším backendem přes API
 
-Jak už víte z dřívějších částí této kapitoly, [většina dynamických komponent](https://docs.google.com/document/d/1SvRGnlOZwVn0kxR4syJ7B0zjtKe0uS5tzniOcPoMO5U/edit#heading=h.lauhzlmhd7i2) umí přebírat data z koncových bodů na vašem serveru.
+Jak už víte z dřívějších částí této kapitoly, [většina dynamických komponent](amp-komponenty-dynamicke.md) umí přebírat data z koncových bodů na vašem serveru.
 
 Zhruba takhle by vypadalo vypsání aktuálního seznamu článků do AMP stránky pomocí komponenty `amp-list`:
 
@@ -154,7 +154,7 @@ Problémem ale zůstává identifikace uživatele při přechodu mezi AMP a naš
 
 Rovnou říkáme, že to jde, ale v tuto chvíli to není zcela triviální. Pes je zakopaný v tom, že stránky nemohou nahlížet do cookies nebo jiných lokálních úložišť stránek běžících na jiné adrese. Přestože  z našeho pohledu jde o tytéž stránky, jen jinde umístěné.
 
-Trochu jiná situace je u analytiky nebo přihlášeného uživatele. Google Analytics jsou na tuto situaci připravené, a tak stačí drobně nastavit měření na kanonické i AMP stránce a uživatele přecházejícího tam i zpět identifikují jednotně. Více o tom píšeme v části „Měření v jednom profilu“ textu [o Google Analytics](https://docs.google.com/document/d/1wU9f1eK9gfV09AVCkB_zNOAzmMn9IgDB9RWCi_vlGBo).
+Trochu jiná situace je u analytiky nebo přihlášeného uživatele. Google Analytics jsou na tuto situaci připravené, a tak stačí drobně nastavit měření na kanonické i AMP stránce a uživatele přecházejícího tam i zpět identifikují jednotně. Více o tom píšeme v části „Měření v jednom profilu“ textu [o Google Analytics](amp-analytics.md).
 
 Podobné je to u komponent pracujících s přihlášením uživatele – `amp-access` i `amp-subscriptions`. U nich je možné pracovat s přihlášením třetí strany, například Googlu, a uživatele tak identifikovat na straně AMP i non-AMP webu. Nebo pomocí konceptu „Reader ID“ dovolují mapovat uživatele obou webů do jednoho profilu.
 

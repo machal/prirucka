@@ -6,6 +6,6 @@ V obou případech už víme, že je tu technologie, která má všechny předpo
 
 Nenapadne vás teď, že by se taková věc dala použít i jinde? Jasně že ano! Však se podívejme, kde všude se – kromě tvorby webů – AMP může uchytit:
 
-* Reklama. Ta si revoluci zaslouží jako sůl. Myslí si to odhadem devět z deseti uživatelů AdBlocku. Ale vážně – [AMP Ads](https://docs.google.com/document/d/18rnJuIl-BGSa1wjRysuBNN4gset5As4MpN4h5Brjpps/edit#heading=h.jieilt526eue) za pozornost určitě stojí.
-* [AMP Email](https://docs.google.com/document/d/1ytvx06jLJeu3n3eEPPoWaeFXQBc7I9Tnb7bfUwvb48U/edit#) zase může změnit způsob tvorby newsletterů a transakčních e-mailů. Představte si plně interaktivní, automaticky aktualizované zprávy ve vašem inboxu. Co vy na to?
-* [AMP Stories](https://docs.google.com/document/d/153ZUrZcC--u1g2YEzqWMOPcD8F5dFk5-BClJto34Uwc/edit#heading=h.7yrrm01o9505) je úplně nový formát. Těžko říct, zda se u Googlu ujme, ale na Instagramu mají příběhy fenomenální úspěch. Proč tedy pro jejich tvorbu nevyužít AMP?
+* Reklama. Ta si revoluci zaslouží jako sůl. Myslí si to odhadem devět z deseti uživatelů AdBlocku. Ale vážně – [AMP Ads](amp-ads.md) za pozornost určitě stojí.
+* [AMP Email](amp-email.md) zase může změnit způsob tvorby newsletterů a transakčních e-mailů. Představte si plně interaktivní, automaticky aktualizované zprávy ve vašem inboxu. Co vy na to?
+* [AMP Stories](amp-email.md) je úplně nový formát. Těžko říct, zda se u Googlu ujme, ale na Instagramu mají příběhy fenomenální úspěch. Proč tedy pro jejich tvorbu nevyužít AMP?

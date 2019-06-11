@@ -2,7 +2,7 @@
 
 Tyto komponenty zajišťují kromě rozvržení stránky také nejrůznější prvky uživatelského rozhraní, jako jsou karusely nebo lightboxy.
 
-Je možné je rozdělit do několika podkategorií: [Layout](https://docs.google.com/document/d/1_YjH3UxCrJAd9KTH0laO5YXMaFTv3hD7zkVP3fwMJhw/edit#), o kterém už jsme psali dříve v této kapitole, komponenty uživatelského rozhraní, observery (pozorovače), efekty a – tramtadadá – iframe. Jenže neobyčejný iframe.
+Je možné je rozdělit do několika podkategorií: [Layout](amp-layout-atribut.md), o kterém už jsme psali dříve v této kapitole, komponenty uživatelského rozhraní, observery (pozorovače), efekty a – tramtadadá – iframe. Jenže neobyčejný iframe.
 
 ## Komponenty uživatelského rozhraní
 

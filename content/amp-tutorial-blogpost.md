@@ -11,7 +11,7 @@ _Obrázek: Blog fiktivního e-shopu ForestKid.cz. Tohle už možná znáte, že?
 </figcaption>
 </figure>
 
-Plán je následující: Vezmeme existující HTML stránku a převedeme ji do AMP. Bude to taková ruční implementace přístupu [„nejprve HTML, pak AMP“](https://docs.google.com/document/d/1c1Rf5sfu9rTTh9taijEnO-gn6WlCRBDYKdZpzWAxsJQ/edit#), ke které se dostaneme ve třetí kapitole.
+Plán je následující: Vezmeme existující HTML stránku a převedeme ji do AMP. Bude to taková ruční implementace přístupu [„nejprve HTML, pak AMP“](amp-implementace-vyjimky.md), ke které se dostaneme ve třetí kapitole.
 
 Doporučujeme vám, abyste si při čtení sedli k počítači a vše postupně zkoušeli. Výchozí zdrojový kód najdete pod následujícími odkazy.
 
@@ -38,7 +38,7 @@ No a… neuvidíme žádný rozdíl. Jak bychom také mohli, samotné přejmenov
 
 Zbývá udělat poslední krok, abychom mohli AMP stránku „debugovat“, hledat v ní problémy. Upravíme jediný řádek a uvidíme všechny chyby. Ty budeme dále odstraňovat. Který řádek to ale bude, to záleží na způsobu, jak chceme chyby zobrazovat.
 
-Můžeme použít přinejmenším dva způsoby spuštění validátoru. V konzoli nebo rozšířením do prohlížeče. O obou jsme informovali v jednom z předchozích textů – [o validaci](https://docs.google.com/document/d/1YjRVRHiaRMX4KKmo8CmVpv62sDSSGHaMr_d9URw2H8U/edit).
+Můžeme použít přinejmenším dva způsoby spuštění validátoru. V konzoli nebo rozšířením do prohlížeče. O obou jsme informovali v jednom z předchozích textů – [o validaci](amp-validace.md).
 
 ### Ladění v konzoli prohlížeče
 
@@ -102,7 +102,7 @@ Začněme s obrázkem uprostřed textu. Jedná se o běžný JPEG, tedy rastrov�
   src="img/content/boty-2_889.jpg" alt="Dětské…">
 ```
 
-Jak už víte z textu [o HTML v AMP](https://docs.google.com/document/d/1kdSK7Q0LxoeU6DblzhJ-1EOtaCBD5IVSQwecr5gZyqQ/edit#heading=h.hldf48yj106t), je nutné tag `<img>` přepsat na `<amp-img>`. Ale pozor! Samotné přepsání by nestačilo. Skrývá se tady jedna nenápadná past.
+Jak už víte z textu [o HTML v AMP](amp-html.md), je nutné tag `<img>` přepsat na `<amp-img>`. Ale pozor! Samotné přepsání by nestačilo. Skrývá se tady jedna nenápadná past.
 
 Zatímco `<img>` je tzv. _void_ element a nesmí mít koncový tag `</img>`, `<amp-img>` je právě naopak párový a koncový tag `</amp-img>` mít musí. Pokud koncový tag neuvedete, neuvidíte chybovou hlášku v konzoli ani ve validátoru, prohlížeč si totiž konec tagu domyslí. Můžeme vám ovšem garantovat, že až si ji jednou domyslí jinak, než jste předpokládali, čeká vás dlouhé debugování. Věřte nám, mluvíme z vlastní zkušenosti.
 
@@ -114,7 +114,7 @@ Po správném převedení vypadá zápis takto:
 </amp-img>
 ```
 
-Podíváme se do prohlížeče: obrázek tam vůbec není, přibyla však chyba ve validátoru. Hláška nás upozorňuje na nekompletní atributy pro layout. Z předchozí podkapitoly víme, že náhradou pružného obrázku (šířka se přizpůsobuje šířce rodičovského prvku) je [layout „responsive“](https://docs.google.com/document/d/1_YjH3UxCrJAd9KTH0laO5YXMaFTv3hD7zkVP3fwMJhw/edit#heading=h.cy8vp2n39jw6). Fyzické rozměry obrázku jsou 889 × 889, zapíšeme je také. Třídu `img-fluid`, která se starala o onu _responzivnost, _můžeme odstranit.
+Podíváme se do prohlížeče: obrázek tam vůbec není, přibyla však chyba ve validátoru. Hláška nás upozorňuje na nekompletní atributy pro layout. Z předchozí podkapitoly víme, že náhradou pružného obrázku (šířka se přizpůsobuje šířce rodičovského prvku) je [layout „responsive“](amp-layout-atribut.md). Fyzické rozměry obrázku jsou 889 × 889, zapíšeme je také. Třídu `img-fluid`, která se starala o onu _responzivnost, _můžeme odstranit.
 
 Finální podoba zápisu obrázku vypadá takto:
 
@@ -178,7 +178,7 @@ A umístíme jej za odkaz s obrázkem:
 </li>
 ```
 
-Můžeme si oddechnout. Mohlo se také stát, že bychom museli upravit CSS, a to by mohlo být složitější. Je dobré připomenout dobrou radu [z textu o CSS v AMP](https://docs.google.com/document/d/1bTJ-tvBCEEFIQkwp-_KCgCV720L27BQ4u8TPEui7Kdc/edit#) – runtime si umanutě vkládá vlastní styly, které mají tu vlastnost, že skoro vždy přepíší ty naše.
+Můžeme si oddechnout. Mohlo se také stát, že bychom museli upravit CSS, a to by mohlo být složitější. Je dobré připomenout dobrou radu [z textu o CSS v AMP](amp-css.md) – runtime si umanutě vkládá vlastní styly, které mají tu vlastnost, že skoro vždy přepíší ty naše.
 
 Technicky je na stránce ještě jeden obrázek. Ano, správně, logo webu. Logo je v dokumentu vložené jako SVG element pomocí tagu `<svg>`, který AMP bez problémů podporuje. Tady nás žádná práce nečeká.
 
@@ -188,7 +188,7 @@ Nyní nám validátor ukazuje už jen pět chyb. Jsme za půlkou! Jak opravit i 
 
 ### Přidáváme povinné AMP Boilerplate
 
-Hned tři chyby se týkají stejné záležitosti: AMP Boilerplate. Pokud si nalistujete podkapitolu o [AMP HTML](https://docs.google.com/document/d/1kdSK7Q0LxoeU6DblzhJ-1EOtaCBD5IVSQwecr5gZyqQ), uvidíte, že v hlavičce dokumentu musí být vložen speciální řádek.
+Hned tři chyby se týkají stejné záležitosti: AMP Boilerplate. Pokud si nalistujete podkapitolu o [AMP HTML](amp-html.md), uvidíte, že v hlavičce dokumentu musí být vložen speciální řádek.
 
 ```html
 <style amp-boilerplate>body{ -webkit-animation:-amp-start…
@@ -334,7 +334,7 @@ Do stránky, třeba zase někam ke konci, vložíme element s konfigurací, kter
 </amp-analytics>
 ```
 
-Hlubší vysvětlení kódu tu nejspíš není nutné, případné zájemce tedy odkážeme na pátou kapitolu a [text o měření pomocí Google Analytics](https://docs.google.com/document/d/1wU9f1eK9gfV09AVCkB_zNOAzmMn9IgDB9RWCi_vlGBo/edit).
+Hlubší vysvětlení kódu tu nejspíš není nutné, případné zájemce tedy odkážeme na pátou kapitolu a [text o měření pomocí Google Analytics](amp-analytics.md).
 
 Ale počkat, co to vidíme – element `<script>`. O tom jsme říkali, že na stránce být nesmí, nebo ne? Tohle je jedna z výjimek, kdy typ je nastaven na JSON, tedy přesněji na `application/json`. Zápis jako tento se používá pro předání strukturovaných dat komponentě, ve chvíli, kdy by byl zápis přes atributy komplikovaný.
 

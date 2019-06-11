@@ -11,7 +11,7 @@ _Obrázek: Schéma vytvoření zvláštní AMP verze webu_.
 </figcaption>
 </figure>
 
-Jde ostatně o původně jediný a nyní stále převažující způsob tvorby AMP. Za chvíli si přečtete [o přístupech upřednostňujících AMP](https://docs.google.com/document/d/1dMX8R881Xds7cpCCyYfAZm_tp-lz3rmEFZiKjZdxVOs/edit#), které jsou z pohledu dlouhodobé správy efektivnější. Ale teď ještě pár slov o tomto způsobu řešení implementace AMP. Opravdu jen pár, protože na něm není nic složitého.
+Jde ostatně o původně jediný a nyní stále převažující způsob tvorby AMP. Za chvíli si přečtete [o přístupech upřednostňujících AMP](amp-implementace-jen-amp.md), které jsou z pohledu dlouhodobé správy efektivnější. Ale teď ještě pár slov o tomto způsobu řešení implementace AMP. Opravdu jen pár, protože na něm není nic složitého.
 
 ## Ukázky: Reflex.cz, Ábíčko.cz nebo Alza
 
