@@ -6,7 +6,7 @@ Analogie s rodičem je tady docela na místě. AMP a váš běžný web mají vl
 
 * [Dvě oddělené verze](amp-implementace-extra-verze.md) – AMP a HTML jsou oddělení sourozenci, kteří o sobě prakticky nevědí. Vám se ale může brzy začít protivit, že na péči o ně potřebujete dvakrát tolik času.
 * [Nejprve HTML, pak AMP](amp-implementace-vyjimky.md) – vaše AMP sdílí podstatnou část frontendového i backendového kódu s běžným webem. Je to vlastně klon. Vy jen během klonování upravíte některé části (DNA) kódu.
-* [Nejprve AMP, pak HTML](amp-implementace-nejprve-amp.md)– tady to platí naopak. Prvorozená je v tomhle případě AMP verze. Pomocí výjimek v kódu z ní pak vytvoříte plnohodnotnou responzivní verzi.
+* [Nejprve AMP, pak HTML](amp-implementace-nejprve-amp.md) – tady to platí naopak. Prvorozená je v tomhle případě AMP verze. Pomocí výjimek v kódu z ní pak vytvoříte plnohodnotnou responzivní verzi.
 * [Jen AMP](amp-implementace-jen-amp.md) – nejefektivnější cesta, ale ne pro každého. Prostě si nadělíte jedináčka. Frontendový kód vycházející striktně z AMP vám řeší obě varianty distribuce.
 
 I když to z názvů metod soužití obou verzí nemusí být patrné, jde vlastně o míru upřednostnění AMP a velikosti sdíleného kódu.

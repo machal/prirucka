@@ -21,7 +21,7 @@ Podívejme se na možnosti, jak AMP stránku validovat.
 
 ## Online validátor
 
-AMP má svůj validátor, stačí jít na [https://validator.amp.dev/](https://validator.amp.dev/).
+AMP má svůj validátor, stačí jít na [validator.amp.dev/](https://validator.amp.dev/).
 
 Svět je zachráněn…
 

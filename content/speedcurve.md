@@ -92,7 +92,7 @@ Zásadní otázka ale zní: Co za to?
 
 Jak už jsem říkal na výše uvedené přednášce v Rohlík.cz, SpeedCurve znám už léta, ale dlouho mě unikal cenový tarif Pay-As-You-Go, kde platíte jeden cent za jeden syntetický test. Ani u středně velkých projektů se obvykle s cenou nedostanete nad 25 až 30 dolarů měsíčně.
 
-Pokud byste ovšem stáli o monitoring reálných uživatelů, bude to už _darda_. Pak se připravte cenu od dvanácti tisíc dolarů ročně. [https://speedcurve.com/pricing/](https://speedcurve.com/pricing/)
+Pokud byste ovšem stáli o monitoring reálných uživatelů, bude to už _darda_. Pak se připravte cenu od dvanácti tisíc dolarů ročně. [speedcurve.com/pricing/](https://speedcurve.com/pricing/)
 
 Základní měření reálných uživatelů ovšem dostanete i zadarmo od Googlu. Podívejte se na moje video o Chrome UX Reportu (CrUX).
 
