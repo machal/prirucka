@@ -6,7 +6,7 @@ CSS je zdroj, který vždy blokuje vykreslení stránky a proto se každý jeho 
 Video: <a href="https://www.youtube.com/watch?v=Ibg7FbDnQJE">CSS: techniky optimalizace datové velikosti</a> ~ Během akce „Livesport talk VIII“ jsem se podíval na nejproblematičtější zdroje blokující zobrazení webů.
 </p>
 
-## První zobrazení stránky a jeho ideální hodnota
+## První zobrazení stránky a jeho ideální hodnota {#prvni-zobrazeni-ideal}
 
 Ještě než prohlížeč stránku vykreslí, musí proběhnout úkony, která provádí server a síť (čas známe jako [„Time To First Byte“ aneb TTFB](ttfb.md)). Prohlížeč pak obdrží HTML, následně CSS musí je zpracovat.
 
@@ -27,9 +27,11 @@ Podívejme se nejprve na [ideální hodnoty metrik](https://www.vzhurudolu.cz/bl
 
 Pokud bychom chtěli být ještě přísnější, měli bychom se vejít do prvního okna na TCP spojení ([TCP Initial Window](https://tylercipriani.com/blog/2016/09/25/the-14kb-in-the-tcp-initial-window/)), což je první balíček dat, který putuje ze serveru na prohlížeč a je tedy nejrychlejší. To by znamenalo stahovat v HTML a CSS jen _14 kB dat_.
 
+<!-- AdSnippet -->
+
 Čtrnáct kilobajtů je vážně dost málo. Podívejme se, jak si v porovnání s touto ideální hranicí stojí skutečné weby.
 
-## Jak velké je HTML a CSS u vybraných webů?
+## Jak velké je HTML a CSS u vybraných webů? {#velikost-u-webu}
 
 Před přednáškou, na kterou odkazuji v textu výše, jsem měřil velikost HTML a CSS u několika webů:
 
@@ -64,7 +66,7 @@ Budu předpokládat, že ve výchozím stavu máte do všech stránek vložené 
 <link href="style.css" rel="stylesheet">
 ```
 
-## Krok 1: Mažeme
+## Krok 1: Mažeme {#mazeme}
 
 CSS kód většiny projektů, které se nějakou dobu vyvíjejí, má jednu specifickou vlastnost. _Bobtnavost_. Zdroják obvykle roste, roste a roste. Nově věci se přidávají, ale staré se nemažou. A nemažou se proto, že se vývojáři bojí, že tím něco rozbijí. Co s tím?
 
@@ -77,7 +79,7 @@ Je to nepříjemné, protože časově náročně, ale u větších projektů se
 
 Během mazání je možné datovou velikost CSS zmenšit, ale obvykle se po prvních snadných úlovcích zjistí, že dotažení tohoto procesu bude vyžadovat čas, peníze a dlouhodobé soustředění na úkol. Takže ano, v refaktoringu je potřeba pokračovat, ale nedá se někde velikost stylů optimalizovat rychleji?
 
-## Krok 2: CSS dělíme podle šablon
+## Krok 2: CSS dělíme podle šablon {#podle-sablon}
 
 Dříve platilo: Zabalme všechno CSS pro web do jednoho souboru. Zpomalíme tím sice vstup uživatelů do stránky, ale použití dalších stránek už bude rychlé, protože veškeré styly jsou umístěné v prohlížečové cache.
 
@@ -97,7 +99,7 @@ Dneska už nevidím důvod, proč by například uživatel úvodní stránky e-s
 
 Jak později uvidíte, zahájili jsme proces rozbíjení CSS na atomy. Abychom mohli rozumně pokračovat, musíme si na webu něco zapnout.
 
-## Krok 3: Zapínáme HTTP/2
+## Krok 3: Zapínáme HTTP/2 {#http-2}
 
 [HTTP/2](http-2.md), rychlejší verzi protokolu, už znáte. V tomto bodě vám jen doporučím ověřit, zda jej máte zprovozněný i na vašem webu. Pomůže vám v tom například rozšíření pro Chrome [HTTP/2 and SPDY indicator](https://chrome.google.com/webstore/detail/http2-and-spdy-indicator/mpbpobfflnpcgagjijhmgnchggcjblin).
 
@@ -105,7 +107,7 @@ Připomínám, že hlavní výhodou HTTP/2 je možnost souběžného stahování
 
 Máme zapnuto? Pojďme si ještě správně nastavit práci s mezipamětí v prohlížeči.
 
-## Krok 4: Upravujeme cache v prohlížeči a její invalidaci
+## Krok 4: Upravujeme cache v prohlížeči a její invalidaci {#cache}
 
 Nejprve si nastavíme v `.htaccess` nebo podobném serverovém konfiguračním souboru instrukci pro dlouhou dobu ukládání. Jeden rok:
 
@@ -128,7 +130,7 @@ Co je ovšem podstatné – hash nebo verze by se měla měnit jen na základě 
 
 Doporučuji toto nastavit nejen pro CSS, ale ideálně také pro všechny frontendové soubory.
 
-## Krok 5: Dělíme CSS podle typu
+## Krok 5: Dělíme CSS podle typu {#podle-typu}
 
 Když už tedy máme připravené HTTP/2 a správné ukládání do cache prohlížeče, můžeme CSS soubory rozdělit nejen podle šablon, ale také podle typu:
 
@@ -151,9 +153,11 @@ Díky tomu, že soubory ukládáme do mezipaměti prohlížeče na dlouhou dobu 
 
 V CSS se obvykle často mění komponenty (`components.v2.css`), méně často už například základní typografie (`base.v1.css`). A je škoda, když v případě spojování do jednoho souboru uživatel po každé změně stahuje znovu všechno.
 
+<!-- AdSnippet -->
+
 Rozbíjení tady ovšem skončit nemusí.
 
-## Krok 6: Dělíme podle komponent
+## Krok 6: Dělíme podle komponent {#podle-komponent}
 
 Zaměříme se teď na `components.v2.css`. Soubory s komponentami jsou zpravidla největší, protože obsahují větší část designu webu a tudíž budou datově nejobjemnější.
 
@@ -176,7 +180,7 @@ Na šabloně nákupního košíku potřebujeme kromě obecných stylů šablony 
 
 Tohle řešení ovšem vyžaduje vytvoření nějaké logiky pro spolupráci backendu a frontendu, takže může být vcelku náročně na realizaci. Zkusme to ještě jinak.
 
-## Krok 7: CSS v prvku BODY
+## Krok 7: CSS v prvku BODY {#css-v-body}
 
 Přidávání `<link>` do těla dokumentu je poměrně stará myšlenka. Ve [známém článku](https://jakearchibald.com/2016/link-in-body/) se jí už před třemi lety zabýval Jake Archibald. Od té doby se takto se styly naučil pracovat Chrome a Safari, takže je myšlenka dnes už široce použitelná:
 
@@ -192,7 +196,7 @@ Vezměme náš příklad s oddělením komponent `table.css` a `form.css` do sam
 
 Odstranili bychom tím zbytečnou logiku na straně backendu. Prostě CSS přiložíme vždycky k výskytu komponenty v šablonách, což by ideálně na straně backendu mělo obnášet jeden sdílený kus kódu.
 
-Tento způsob servírování CSS podporuje kromě Chrome (a z něj vycházejích prohlížečů) také zmíněné Safari a překvapivě i Internet Explorer.
+Tento způsob servírování CSS podporuje kromě Chrome (a z něj vycházejících prohlížečů) také zmíněné Safari a překvapivě i Internet Explorer.
 
 ### Ošetření Firefoxu
 
@@ -223,7 +227,7 @@ Za normálních okolností by prohlížeč stáhl všechna CSS a pak teprve zač
 
 Tím bychom mohli skončit, ale je tady ještě jeden možný krok.
 
-## Krok 8: Zrychlíme základní CSS
+## Krok 8: Zrychlíme základní CSS {#zakladni-css}
 
 Řekněme, že se nám povedlo rozdělit CSS podle komponent i podle typů a do šablon posíláme jen styly určené právě jim. Komponenty navíc posíláme z těla dokumentu.
 
@@ -239,7 +243,7 @@ Pokud bychom chtěli zrychlit poslání CSS společného pro celý web, můžeme
 
 Teď už jsme vyčerpali všechny možnosti, proto si text už jen pojďme převyprávět jinými slovy.
 
-## Shrnutí
+## Shrnutí {#shrnuti}
 
 * Datová velikost CSS je důležitá. Každý bajt se počítá. Ideální maximum je 14 kB i s HTML pro prvotní zobrazení.
 * Zařiďte si HTTP/2 a přidávání antikešovacích příznaků k názvům souborů podle data jejich změny. V prohlížeči kešujte jeden rok nebo delší dobu.
@@ -247,3 +251,5 @@ Teď už jsme vyčerpali všechny možnosti, proto si text už jen pojďme přev
 * CSS dělte podle šablon, ale i jinak zařiďte, aby se na konkrétní stránce nestahovalo příliš nevyužitého kódu.
 * Pokud vám to backend dovolí, rozdělte CSS na malé části a vkládejte přímo k HTML komponent do značky `<body>`.
 * Je společné CSS velké jen pár kilobajtů? Zvažte vložení do inline `<style>` nebo použití HTTP/2 Server Push.
+
+<!-- AdSnippet -->
