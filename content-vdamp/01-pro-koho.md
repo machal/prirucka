@@ -4,7 +4,7 @@ Knížka je psána tak, aby z ní měli užitek techničtí i netechničtí lid�
 
 ## Netechnici
 
-Milí marketéři, designéři, majitelé webů:
+Milí marketéři, designéři, majitelé webů a lidé z dalších netechnických profesí:
 
 * Pro vás je zásadní první kapitola, protože ukazuje, jak AMP funguje.
 * Pokud se nechcete zabývat kódem AMP, v druhé kapitole asi leccos přeskočíte, my se na vás za to určitě zlobit nebudeme.
@@ -13,7 +13,7 @@ Milí marketéři, designéři, majitelé webů:
 
 ## Technici
 
-Milí, weboví vývojáři a kodéři:
+Milí weboví vývojáři a kodéři:
 
 * Pro vás je jádro knížky v technické druhé kapitole, ale nejlepší bude, když si najdete čas a pročtete i tu první. AMP je totiž zcela nový typ technologie, špatně porovnatelný s čímkoliv jiným. A právě první kapitola vám to (doufejme!) vyjasní. Pokud ale nepotřebujete nic vyjasňovat a AMP se chcete naučit, přečtěte si jen, [jak AMP funguje](amp-fungovani.md), a pak rovnou skočte [do druhé kapitoly](2-uvod.md).
 * Ve třetí kapitole se zaměříme na způsoby implementace do současného webu.
