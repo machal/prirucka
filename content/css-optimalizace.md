@@ -15,7 +15,7 @@ Zde vznikají metriky prvního vykreslení: [First Paint (FP)](metrika-fp.md), [
 Jaká je ale cílová hodnota těchto metrik?
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/css-optimalizace-limity.png" height="540" width="1920" alt="">
 <figcaption markdown="1">
 _Obrázek: První verzi obsahu stránky bychom měli zobrazit do 1,3 vteřiny. To se nejsnadněji zařídí, pokud HTML a CSS dostaneme do limitu 14 kB_
 </figcaption>
@@ -157,11 +157,9 @@ Rozbíjení tady ovšem skončit nemusí.
 
 Zaměříme se teď na `components.v2.css`. Soubory s komponentami jsou zpravidla největší, protože obsahují větší část designu webu a tudíž budou datově nejobjemnější.
 
-
 Ideální stav je takový, že do konkrétních šablon posíláme jen ty komponenty, které se v nich používají:
 
-
-```
+```html
 <!-- Vše: -->
 <link href="base.v1.css" rel="stylesheet">
 <link href="components.v2.css" rel="stylesheet">
@@ -174,11 +172,9 @@ Ideální stav je takový, že do konkrétních šablon posíláme jen ty kompon
 <link href="components/form.v2.css" rel="stylesheet">
 ```
 
-
 Na šabloně nákupního košíku potřebujeme kromě obecných stylů šablony (`cart.css`) také komponenty `table.css` a `form.css`. Díky tomu je pak nemusí obsahovat soubor se sadou všech komponent (`components.css`).
 
 Tohle řešení ovšem vyžaduje vytvoření nějaké logiky pro spolupráci backendu a frontendu, takže může být vcelku náročně na realizaci. Zkusme to ještě jinak.
-
 
 ## Krok 7: CSS v prvku BODY
 
@@ -186,20 +182,17 @@ Přidávání `<link>` do těla dokumentu je poměrně stará myšlenka. Ve [zn�
 
 Vezměme náš příklad s oddělením komponent `table.css` a `form.css` do samostatných souborů. Co kdybychom CSS umístili až k výskytu komponent v HTML?
 
-
-```
+```html
 <link href="components/table.v1.css" rel="stylesheet">
-<table class="table"> … </table> 
+<table class="table"> … </table>
 
 <link href="components/form.v2.css" rel="stylesheet">
 <form class="form"> … </form>
 ```
 
-
 Odstranili bychom tím zbytečnou logiku na straně backendu. Prostě CSS přiložíme vždycky k výskytu komponenty v šablonách, což by ideálně na straně backendu mělo obnášet jeden sdílený kus kódu.
 
-Tento způsob servírování CSS podporuje kromě Chrome (a z něj vycházejích prohlížečů) také zmíněné Safari a překvapivě i Internet Explorer. 
-
+Tento způsob servírování CSS podporuje kromě Chrome (a z něj vycházejích prohlížečů) také zmíněné Safari a překvapivě i Internet Explorer.
 
 ### Ošetření Firefoxu
 
@@ -219,30 +212,26 @@ Problém ve Firefoxu se snad povede vyřešit a osobně doufám, že se tento zp
 
 Práce s prioritizací už se ostatně děje. Když jsem zkoušel nasazovat tuto techniku zde, na Vzhůru dolů, v záložce Performance vývojářských nástrojů Chrome na mě čekalo příjemné překvapení:
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Optimalizace-datov-1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Optimalizace-datov-1.png "image_tooltip")
-
-
+<figure>
+<img src="../dist/images/original/css-optimalizace-devtools.png" alt="">
+<figcaption markdown="1">
 _Obrázek: Postup vykreslování stránky knížky „Vzhůru do (responzivního) webdesignu“ v záložce Performance vývojářských nástrojů Chrome_
+</figcaption>
+</figure>
 
 Za normálních okolností by prohlížeč stáhl všechna CSS a pak teprve začal uvažovat o zbytku zdrojů stránky. Tady ovšem stáhne zdroje obsažené v hlavičce (`<head>`) a následně také obrázky vložené ve stránce nahoře. Až pak stahuje CSS pro jednotlivé komponenty v `<body>`. Dostanou tedy přednost prvky umístěné v horní částí obrazovky, což je přesně to co chceme.
 
 Tím bychom mohli skončit, ale je tady ještě jeden možný krok.
 
-
 ## Krok 8: Zrychlíme základní CSS
 
-Řekněme, že se nám povedlo rozdělit CSS podle komponent i podle typů a do šablon posíláme jen styly určené právě jim. Komponenty navíc posíláme z těla dokumentu. 
+Řekněme, že se nám povedlo rozdělit CSS podle komponent i podle typů a do šablon posíláme jen styly určené právě jim. Komponenty navíc posíláme z těla dokumentu.
 
 V dalším kroku bychom se pak mohli zaměřit na styly společné pro celý web. Může nás začít trápit to, že prohlížeč je začne stahovat až během parsování HTML. Dalo by se to nějak zrychlit? Nejspíš ano.
 
-
-### Umístit základní styly do <style>
+### Umístit základní styly do STYLE
 
 Můžeme vzít obsah `base.css` a dalších stylů společných pro celý web a vložit je přímo do HTML, do značky `<style>`. Zrychlíme to o dotaz a stažení externího souboru. Přijdeme však o jeho kešování v prohlížečích. Tohle se tedy bude hodit jen pro opravdu malé základny CSS, řekněme pod pět kilobajtů.
-
 
 ### HTTP/2 Server Push
 
@@ -250,10 +239,7 @@ Pokud bychom chtěli zrychlit poslání CSS společného pro celý web, můžeme
 
 Teď už jsme vyčerpali všechny možnosti, proto si text už jen pojďme převyprávět jinými slovy.
 
-
 ## Shrnutí
-
-
 
 * Datová velikost CSS je důležitá. Každý bajt se počítá. Ideální maximum je 14 kB i s HTML pro prvotní zobrazení.
 * Zařiďte si HTTP/2 a přidávání antikešovacích příznaků k názvům souborů podle data jejich změny. V prohlížeči kešujte jeden rok nebo delší dobu.
@@ -261,4 +247,3 @@ Teď už jsme vyčerpali všechny možnosti, proto si text už jen pojďme přev
 * CSS dělte podle šablon, ale i jinak zařiďte, aby se na konkrétní stránce nestahovalo příliš nevyužitého kódu.
 * Pokud vám to backend dovolí, rozdělte CSS na malé části a vkládejte přímo k HTML komponent do značky `<body>`.
 * Je společné CSS velké jen pár kilobajtů? Zvažte vložení do inline `<style>` nebo použití HTTP/2 Server Push.
-
