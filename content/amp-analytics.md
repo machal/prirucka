@@ -70,7 +70,7 @@ Do AMP stránky nejprve vložíme měřicí komponentu. To už jsme udělali v t
 `<VASE_ID>` je nutné nahradit vaším měřicím ID. Samozřejmě je možné používat snad všechna speciální nastavení – měření událostí, změnu parametrů, prolinkovávání více domén do jednoho měření a tak dále. Za těmito specialitami vás ale odkazujeme na dokumentaci:
 
 * „Měření stránek AMP“: [vrdl.in/ampmer](https://support.google.com/analytics/answer/6343176)
-* „Add Analytics to AMP pages“:  [vrdl.in/ampanalyticsnast](https://developers.google.com/analytics/devguides/collection/amp-analytics/ )
+* „Add Analytics to AMP pages“: [vrdl.in/ampanalyticsnast](https://developers.google.com/analytics/devguides/collection/amp-analytics/)
 
 Teď si možná kladete otázku, zda AMP měřit ve stejném profilu Google Analytics jako běžný web, nebo ne. Ukážeme vám obě možnosti.
 
