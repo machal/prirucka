@@ -13,8 +13,8 @@ _Obrázek: To je ona, stránka smyšleného e-shopu ForestKid.cz._
 
 Je viditelná online nebo si ji můžete stáhnout:
 
-* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampp0](https://www.vzhurudolu.cz/files/vdamp/pokrocily-0/product.amp.html)
-* Stažení v ZIPu: [vrdl.in/vdampp0z](https://www.vzhurudolu.cz/files/vdamp/vdamp-pokrocily-0.zip)
+* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampp0](https://www.vzhurudolu.cz/files/vdamp/pokrocily-0/product.amp.html)
+* Stažení v ZIPu: [vrdl.in/vdampp0z](https://www.vzhurudolu.cz/files/vdamp/vdamp-pokrocily-0.zip)
 
 Zprovoznění lightboxu nad obrázkem už jsme se naučili, ale ještě neumíme ovládat galerii fotografií a provázat ji s malými náhledy. Stáhneme si data z externího JSON souboru a vypíšeme je do stránky. A pak si ukážeme, jak přidávat produkty do košíku.
 
@@ -281,7 +281,7 @@ Tak! Máme to hotové. Leccos jsme vynechali, leccos zjednodušili, ale snad je 
 
 Chcete si to zkusit? K vašim službám:
 
-* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampp0](https://www.vzhurudolu.cz/files/vdamp/pokrocily-0/product.amp.html)
-* Stažení v ZIPu: [vrdl.in/vdampp0z](https://www.vzhurudolu.cz/files/vdamp/vdamp-pokrocily-0.zip)
+* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampp0](https://www.vzhurudolu.cz/files/vdamp/pokrocily-0/product.amp.html)
+* Stažení v ZIPu: [vrdl.in/vdampp0z](https://www.vzhurudolu.cz/files/vdamp/vdamp-pokrocily-0.zip)
 
 Tady se rozloučíme s druhou kapitolou a psaním kódu. Dále se zamyslíme nad možnostmi implementace AMP do vašeho webu. Ale nejprve kapitolu shrneme prostřednictvím testu.

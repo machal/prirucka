@@ -15,8 +15,8 @@ Plán je následující: Vezmeme existující HTML stránku a převedeme ji do A
 
 Doporučujeme vám, abyste si při čtení sedli k počítači a vše postupně zkoušeli. Výchozí zdrojový kód najdete pod následujícími odkazy.
 
-* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampj0](https://www.vzhurudolu.cz/files/vdamp/jednoduchy-0/blogpost.html)
-* Stažení v ZIPu: [vrdl.in/vdampj0z](https://www.vzhurudolu.cz/files/vdamp/vdamp-jednoduchy-0.zip)
+* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampj0](https://www.vzhurudolu.cz/files/vdamp/jednoduchy-0/blogpost.html)
+* Stažení v ZIPu: [vrdl.in/vdampj0z](https://www.vzhurudolu.cz/files/vdamp/vdamp-jednoduchy-0.zip)
 
 ## Příprava vývojového prostředí
 
@@ -344,8 +344,8 @@ Máme hotovo! Na výběr je sice řada dalších komponent, které bychom mohli 
 
 Výsledek našeho snažení si můžete prohlédnout nebo stáhnout na následujících odkazech.
 
-* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampj2](https://www.vzhurudolu.cz/files/vdamp/jednoduchy-2/blogpost.amp.html)
-* Stažení v ZIPu: [vrdl.in/vdampj2z](https://www.vzhurudolu.cz/files/vdamp/vdamp-jednoduchy-2.zip)
+* Otevření AMP stránky v prohlížeči: [vrdl.in/vdampj2](https://www.vzhurudolu.cz/files/vdamp/jednoduchy-2/blogpost.amp.html)
+* Stažení v ZIPu: [vrdl.in/vdampj2z](https://www.vzhurudolu.cz/files/vdamp/vdamp-jednoduchy-2.zip)
 
 Nyní se zaměříme na komponenty dostupné v AMP.
 
