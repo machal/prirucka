@@ -26,7 +26,7 @@ Pokud se pohybujeme v zastarávajícím, ale stále existujícím světě knihov
 <figure>
 <img src="../dist/images/original/vdamp/slick-carousel.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Porovnání velikost jQuery karuselů. Ty nejmenší prostě nejsou nejpopulárnější. Hádejte proč. Zdroj: [voidcanvas.com](http://voidcanvas.com/20-best-jquery-slidercarousel-plugin-comparison-with-demo/)_
+_Porovnání velikost jQuery karuselů. Ty nejmenší prostě nejsou nejpopulárnější. Hádejte proč. Zdroj: [voidcanvas.com](http://voidcanvas.com/20-best-jquery-slidercarousel-plugin-comparison-with-demo/)_
 </figcaption>
 </figure>
 

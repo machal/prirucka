@@ -11,7 +11,7 @@ AMP stránka totiž _musí_ být validní. Jinak nemáte šanci ji dostat do AMP
 <figure>
 <img src="../dist/images/original/vdamp/amp-validator.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Ajaj, tady někdo něco pokazil. AMP validátor je neúprosný a tahle stránka může na umístění v Google AMP Cache zapomenout._
+_Ajaj, tady někdo něco pokazil. AMP validátor je neúprosný a tahle stránka může na umístění v Google AMP Cache zapomenout._
 </figcaption>
 </figure>
 

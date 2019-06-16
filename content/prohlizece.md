@@ -13,7 +13,7 @@ Poznámka: Níže uvedené podíly prohlížečů mám z dat Google Analytics pr
 <figure>
 <img src="../dist/images/original/prohlizece-desktop.jpg?3" alt="Podíl desktopových prohlížečů">
 <figcaption markdown="1">
-*Obrázek: Podíl desktopových prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
+*Podíl desktopových prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
 </figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ Mobilní zařízení jsou tedy už i v ČR na podílu ke čtyřiceti procentům.
 <figure>
 <img src="../dist/images/original/prohlizece-mobily.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Podíl mobilních prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
+*Podíl mobilních prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
 </figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Když sečteme všechny prohlížeče postavená na jádru Chrome („Chromium�
 <figure>
 <img src="../dist/images/original/prohlizece-trendy.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Trendy podílu prohlížečů na českém trhu pro ty „velké“ (s větším podílem na trhu) i „malé“. Zdroj: Gemius mezi dubnem 2016 a srpnem 2018, [ranking.gemius.com](https://ranking.gemius.com/)*
+*Trendy podílu prohlížečů na českém trhu pro ty „velké“ (s větším podílem na trhu) i „malé“. Zdroj: Gemius mezi dubnem 2016 a srpnem 2018, [ranking.gemius.com](https://ranking.gemius.com/)*
 </figcaption>
 </figure>
 

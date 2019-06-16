@@ -7,7 +7,7 @@ Ptáte se, kdy stránka reaguje *spolehlivě*? Je to v momentě, kdy se načetly
 <figure>
 <img src="../dist/images/original/metrika-tti.jpg" alt="FCP">
 <figcaption markdown="1">
-*Obrázek: Kdy vzniká TTI nebo taky „Time To Interactive“*
+*Kdy vzniká TTI nebo taky „Time To Interactive“*
 </figcaption>
 </figure>
 

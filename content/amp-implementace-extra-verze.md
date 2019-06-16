@@ -7,7 +7,7 @@ Důvodů může být více: Je například možné, že vývojářské a design�
 <figure>
 <img src="../dist/images/original/vdamp/vazby-oddelene.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Schéma vytvoření zvláštní AMP verze webu_.
+_Schéma vytvoření zvláštní AMP verze webu_.
 </figcaption>
 </figure>
 
@@ -19,7 +19,7 @@ Na českém internetu nebylo těžké najít příklady tohoto řešení. Z velk
 <figure>
 <img src="../dist/images/original/vdamp/vazby-reflex.png" alt="">
 <figcaption markdown="1">
-_Obrázek: HTML a AMP verze webu Reflex.cz._
+_HTML a AMP verze webu Reflex.cz._
 </figcaption>
 </figure>
 

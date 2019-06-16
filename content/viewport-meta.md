@@ -5,7 +5,7 @@ Kdybyste ale moc stáli o podporu všech starších a méně významných kontex
 <figure>
 <img src="../dist/images/original/meta-viewport-mobile.jpg" alt="Meta Viewport">
 <figcaption markdown="1">
-*Obrázek: Po vložení meta značky pro viewport se z desktopového rozlišení stane mobilní. Zjednodušeně řečeno. Ale prsty v tom mají viewporty*
+*Po vložení meta značky pro viewport se z desktopového rozlišení stane mobilní. Zjednodušeně řečeno. Ale prsty v tom mají viewporty*
 </figcaption>
 </figure>
 

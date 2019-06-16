@@ -82,7 +82,7 @@ Netušíte, proč by se měl element potomka přizpůsobovat výškou i šířko
 <figure>
 <img src="../dist/images/original/vdamp/amp-layout-6.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Když se layout="fill" dá dohromady s hodnotami CSS vlastnosti object-fit._
+_Když se layout="fill" dá dohromady s hodnotami CSS vlastnosti object-fit._
 </figcaption>
 </figure>
 
@@ -123,7 +123,7 @@ Podmínkou pro toto zobrazení je přidání `display:flex` na rodičovský elem
 <figure>
 <img src="../dist/images/original/vdamp/amp-layout-8.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Dva ošklivě deformované amp-img, které mají nastavený layout="flex-item"._
+_Dva ošklivě deformované amp-img, které mají nastavený layout="flex-item"._
 </figcaption>
 </figure>
 

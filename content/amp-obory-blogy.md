@@ -11,7 +11,7 @@ Jeden z prvních blogerů, který v Česku nasadil AMP, byl pan Cuketka, uznáva
 <figure>
 <img src="../dist/images/original/vdamp/obory-cuketka.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Recepty pana Cuketky._
+_Recepty pana Cuketky._
 </figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ Bylo by samozřejmě trapné, kdyby technologie AMP nebyla nasazená na webu aut
 <figure>
 <img src="../dist/images/original/vdamp/amp-vzhuru-dolu.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Nevěřili byste tomu, ale také Vzhůru dolů má vlastní AMP…_
+_Nevěřili byste tomu, ale také Vzhůru dolů má vlastní AMP…_
 </figcaption>
 </figure>
 

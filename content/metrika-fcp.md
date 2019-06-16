@@ -9,7 +9,7 @@ Jde o důležitý milník, protože udržuje pozornost uživatele. Dává mu prv
 <figure>
 <img src="../dist/images/original/metrika-fcp.jpg" alt="FCP">
 <figcaption markdown="1">
-*Obrázek: Kdy vzniká FCP nebo taky „First Contentful Paint“*
+*Kdy vzniká FCP nebo taky „First Contentful Paint“*
 </figcaption>
 </figure>
 

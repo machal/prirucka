@@ -23,7 +23,7 @@ Rychlost neřeší. Proč by měl? To je přece úkol vývojáře. Do stránky v
 <figure>
 <img src="../dist/images/original/amp-webari.jpg" alt="">
 <figcaption markdown="1">    
-*Obrázek: Tři rychlostní mimoni: grafik, marketér a vývojář*
+*Tři rychlostní mimoni: grafik, marketér a vývojář*
 </figcaption> 
 </figure>
 
@@ -78,7 +78,7 @@ Zkoušel jsem otestovat dva z českých AMP webů – blog váženého klienta [
 <figure>
 <img src="../dist/images/original/amp-bella-cuketka.jpg" alt="">
 <figcaption markdown="1">    
-*Obrázek: Nahoře Bella Rose a jejich původní článek na blogu, pak jeho umístění v Google hledání a nakonec AMP verze téhož, řešená WordPress pluginem. Totéž dole u pana Cuketky.*
+*Nahoře Bella Rose a jejich původní článek na blogu, pak jeho umístění v Google hledání a nakonec AMP verze téhož, řešená WordPress pluginem. Totéž dole u pana Cuketky.*
 </figcaption> 
 </figure>
 

@@ -15,7 +15,7 @@ Je to tradičně nejpoužívanější [metrika rychlosti webu](metriky-rychlosti
 <figure>
 <img src="../dist/images/original/metrika-load.jpg" alt="Událost Load na časové ose vykreslování">
 <figcaption markdown="1">
-*Obrázek: Kdy vzniká událost Load*
+*Kdy vzniká událost Load*
 </figcaption>
 </figure>
 

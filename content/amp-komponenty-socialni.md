@@ -5,7 +5,7 @@ Sdílecí tlačítka. Ani bez nich nedokáže spousta webů existovat. I pro ně
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-social.png"  height="540"  width="1920" alt="">
 <figcaption markdown="1">
-_Obrázek: Základní sdílecí komponenty, jedna univerzální a jedna specifická, využívající službu AddThis.com._
+_Základní sdílecí komponenty, jedna univerzální a jedna specifická, využívající službu AddThis.com._
 </figcaption>
 </figure>
 

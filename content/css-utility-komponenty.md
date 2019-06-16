@@ -41,7 +41,7 @@ V rozhraní komponenta vypadá na různých rozmezích designu asi takhle:
 <figure>
 <img src="../dist/images/original/css-utility-vd-skoleni.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Komponenta pro položku ve výpisu školení*
+*Komponenta pro položku ve výpisu školení*
 </figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ Znamená to prostě přejít zpět z utilit na komponenty? To v žádném př�
 <figure>
 <img src="../dist/images/original/css-utility-vd-machrovani.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Komponenta pro machrování čísly*
+*Komponenta pro machrování čísly*
 </figcaption>
 </figure>
 

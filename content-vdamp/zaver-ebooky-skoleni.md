@@ -21,7 +21,7 @@ Vzhůru dolů pořádá kurzy moderních frontendových technologií pro profesi
 <figure>
 <img src="../dist/images/original/vdamp/vd-skoleni.jpg" alt="">
 <figcaption markdown="1">
-_Obrázek: Školení „Optimalizace rychlosti webu“ v Brně. Foto: Zuzana Šumlanská, SUPERKODERS_
+_Školení „Optimalizace rychlosti webu“ v Brně. Foto: Zuzana Šumlanská, SUPERKODERS_
 </figcaption>
 </figure>
 

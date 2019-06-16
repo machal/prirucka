@@ -11,7 +11,7 @@ Honza se rozhodl jít cestou [exkluzivního využití AMP](amp-implementace-jen-
 <figure>
 <img src="../dist/images/original/vdamp/obory-bien.png" alt="">
 <figcaption markdown="1">
-_Obrázek: WTF?! Na téhle doméně najdete „AMP Only“ web experta na WordPress Honzy Biena._
+_WTF?! Na téhle doméně najdete „AMP Only“ web experta na WordPress Honzy Biena._
 </figcaption>
 </figure>
 

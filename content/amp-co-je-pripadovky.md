@@ -34,7 +34,7 @@ V Česku se o číslech, která produkují AMP stránky, příliš nemluví. Pok
 <figure>
 <img src="../dist/images/original/vdamp/zillertaller.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP verze Zillertaler Zeitung zvýšila počet zhlédnutých stránek o jednu desetinu. Autorem je české studio Creox.cz._
+_AMP verze Zillertaler Zeitung zvýšila počet zhlédnutých stránek o jednu desetinu. Autorem je české studio Creox.cz._
 </figcaption>
 </figure>
 

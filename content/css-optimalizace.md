@@ -17,7 +17,7 @@ Jaká je ale cílová hodnota těchto metrik?
 <figure>
 <img src="../dist/images/original/css-optimalizace-limity.png" height="540" width="1920" alt="">
 <figcaption markdown="1">
-_Obrázek: První verzi obsahu stránky bychom měli zobrazit do 1,3 vteřiny. To se nejsnadněji zařídí, pokud HTML a CSS dostaneme do limitu 14 kB_
+_První verzi obsahu stránky bychom měli zobrazit do 1,3 vteřiny. To se nejsnadněji zařídí, pokud HTML a CSS dostaneme do limitu 14 kB_
 </figcaption>
 </figure>
 
@@ -219,7 +219,7 @@ Práce s prioritizací už se ostatně děje. Když jsem zkoušel nasazovat tuto
 <figure>
 <img src="../dist/images/original/css-optimalizace-devtools.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Postup vykreslování stránky knížky „Vzhůru do (responzivního) webdesignu“ v záložce Performance vývojářských nástrojů Chrome_
+_Postup vykreslování stránky knížky „Vzhůru do (responzivního) webdesignu“ v záložce Performance vývojářských nástrojů Chrome_
 </figcaption>
 </figure>
 

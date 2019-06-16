@@ -7,7 +7,7 @@
 <figure>
 <img src="../dist/images/original/metrika-si.jpg" alt="SpeedIndex">
 <figcaption markdown="1">
-*Obrázek: Kdy vzniká TTI nebo taky „Time To Interactive“*
+*Kdy vzniká TTI nebo taky „Time To Interactive“*
 </figcaption>
 </figure>
 

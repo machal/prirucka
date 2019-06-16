@@ -29,7 +29,7 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 <figure>
 <img src="../dist/images/original/metriky-rychlosti.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Postupný vznik událostí pro vykreslování stránky*
+*Postupný vznik událostí pro vykreslování stránky*
 </figcaption>
 </figure>
 

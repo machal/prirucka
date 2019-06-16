@@ -7,7 +7,7 @@ Frontendové řešení pro způsob implementace „AMP Only“ je postavené opr
 <figure>
 <img src="../dist/images/original/vdamp/vazby-amp-first.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Schéma návrhu architektury „AMP Only“._
+_Schéma návrhu architektury „AMP Only“._
 </figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ Nesmíme tady zapomenout na ukázky webů postavených pouze na AMP.
 <figure>
 <img src="../dist/images/original/vdamp/vazby-amp-first-ukazky.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Velký „receptový“ web Tasty.co a dva české osobní weby jako příklady totálního upřednostnění AMP._
+_Velký „receptový“ web Tasty.co a dva české osobní weby jako příklady totálního upřednostnění AMP._
 </figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ Při otevírání stránky z AMP Cache nás to sice nemusí až tak trápit, ale
 <figure>
 <img src="../dist/images/original/vdamp/bento-amp.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Interní projekt Bento AMP slibuje rozporcování._
+_Interní projekt Bento AMP slibuje rozporcování._
 </figcaption>
 </figure>
 

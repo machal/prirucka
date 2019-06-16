@@ -17,7 +17,7 @@ Chcete vidět hlavní nevýhody ikonfontů v jednom obrázku? Tady je:
 <figure>
 <img src="../dist/images/original/ikonfonty.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Průběh vykreslování ikon na starší verzi webu mého skvělého klienta Smarty.cz. Místa pro ikonfonty jsou zvýrazněné zelenou. V nové verzi to už bude jinak*
+*Průběh vykreslování ikon na starší verzi webu mého skvělého klienta Smarty.cz. Místa pro ikonfonty jsou zvýrazněné zelenou. V nové verzi to už bude jinak*
 </figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Srovnejme si možnosti posílání SVG a ikonfontů do prohlížeče:
 | CSS sprite               |    4     |     -     |  +  |
 
 <figcaption markdown="1">
-*Obrázek: Srovnání možností servírování ikonfontů a SVG a priorita jejich stažení a vykreslení. Bylo jasné, která technika to vyhraje, že?*
+*Srovnání možností servírování ikonfontů a SVG a priorita jejich stažení a vykreslení. Bylo jasné, která technika to vyhraje, že?*
 </figcaption>
 
 </figure>
@@ -86,7 +86,7 @@ Jenže dneska už to tak není. Prošel jsem weby nejznámějších ikonfontů a
 <figure>
 <img src="../dist/images/original/ikonfonty-icomoon.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Většina poskytovatelů ikonfontů, jako IcoMoon, nabízí stažení SVG jako plnohodnotnou variantu. Teď ještě odstranit tu možnost stahovat ikonfonty*
+*Většina poskytovatelů ikonfontů, jako IcoMoon, nabízí stažení SVG jako plnohodnotnou variantu. Teď ještě odstranit tu možnost stahovat ikonfonty*
 </figcaption>
 </figure>
 

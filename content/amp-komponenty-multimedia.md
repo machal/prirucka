@@ -7,7 +7,7 @@ Tohle je zvláštní směska obecných komponent s těmi velmi konkrétními, ur
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-img.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Dvě fáze načítání komponent amp-img a amp-youtube. Nejdříve zástupný symbol, pak obsah. Je tady krásně vidět, že prohlížeč na pomalém připojení díky AMP nestáhne média hned. Tím šetří výkon. A vaše data, samozřejmě._
+_Dvě fáze načítání komponent amp-img a amp-youtube. Nejdříve zástupný symbol, pak obsah. Je tady krásně vidět, že prohlížeč na pomalém připojení díky AMP nestáhne média hned. Tím šetří výkon. A vaše data, samozřejmě._
 </figcaption>
 </figure>
 

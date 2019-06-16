@@ -5,7 +5,7 @@
 <figure>
 <img src="../dist/images/original/metrika-fcp.jpg" alt="FCP">
 <figcaption markdown="1">
-*Obrázek: FCP nebo taky „First Contentful Paint“*
+*FCP nebo taky „First Contentful Paint“*
 </figcaption>
 </figure>
 

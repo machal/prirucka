@@ -9,7 +9,7 @@ Pojďme si tu věc ukázat. Nejlépe na obrázku.
 <figure>
 <img src="../dist/images/original/vdamp/amp-viewer-tri.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Každý zpracovatel AMP si vytváří vlastní Viewer. První dva jsou od Googlu, poslední vytvořil Microsoft pro svůj Bing._
+_Každý zpracovatel AMP si vytváří vlastní Viewer. První dva jsou od Googlu, poslední vytvořil Microsoft pro svůj Bing._
 </figcaption>
 </figure>
 

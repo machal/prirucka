@@ -11,7 +11,7 @@ Z tvorby běžných webů znáte komponenty pro tvorbu složitějších prvků u
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-carousel.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Tři z obvyklých komponent uživatelských rozhraní webů, tentokrát v podání AMP._
+_Tři z obvyklých komponent uživatelských rozhraní webů, tentokrát v podání AMP._
 </figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Je možné najít příklady, ve kterých se tato komponenta používá k výpis
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-carousel-nav.png" alt="">
 <figcaption markdown="1">
-_Obrázek: amp-carousel použitý pro zobrazení responzivní posuvné navigace._
+_amp-carousel použitý pro zobrazení responzivní posuvné navigace._
 </figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ Jde o kombinaci animací s různými dalšími styly prvků.
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-fx.png" alt="">
 <figcaption markdown="1">
-_Obrázek: amp-fx-flying-carpet, čili efekt létajícího koberce na webu. Zelené šipky  znázorňují směr rolování tyrkysového obsahu stránky._
+_amp-fx-flying-carpet, čili efekt létajícího koberce na webu. Zelené šipky  znázorňují směr rolování tyrkysového obsahu stránky._
 </figcaption>
 </figure>
 

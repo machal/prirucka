@@ -35,7 +35,7 @@ Tato konkrétní metrika je navíc technicky zaměřená a neříká nic o uživ
 <figure>
 <img src="../dist/images/original/rychlost-myty-dve-timeline.jpg" alt="Dvě timeline rychlosti vykreslování">
 <figcaption markdown="1">
-*Obrázek: Dva příklady vykreslování stránky. Oba mají stejný datový objem, stejnou událost Load, ale vykreslují se různě*
+*Dva příklady vykreslování stránky. Oba mají stejný datový objem, stejnou událost Load, ale vykreslují se různě*
 </figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Mýtus zaměření se na rychlost backendu (jinak také [Time To First Byte, TTF
 <figure>
 <img src="../dist/images/original/rychlost-myty-backend-load.jpg" alt="Události backend a load a timeline vykreslování">
 <figcaption markdown="1">
-*Obrázek: Backend a Load time, dvě krajní (a ne až tak zajímavé) metriky na časové ose*
+*Backend a Load time, dvě krajní (a ne až tak zajímavé) metriky na časové ose*
 </figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ To je fajn, ale Analytics ukazují jen backendový, síťový čas a celkovou do
 <figure>
 <img src="../dist/images/original/rychlost-myty-google-analytics.jpg" alt="Rychlostní metriky v Google Analytics">
 <figcaption markdown="1">
-*Obrázek: Co vám o rychlosti ukazují Google Analytics? V základním nastavení nic úžasného*
+*Co vám o rychlosti ukazují Google Analytics? V základním nastavení nic úžasného*
 </figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Optimalizací obrázků můžeme web zrychlit, ale až v pozdějších fázích 
 <figure>
 <img src="../dist/images/original/rychlost-myty-obrazky.jpg" alt="Obrázky v timeline z WebpageTest.org">
 <figcaption markdown="1">
-*Obrázek: Obrázkový obsah má nízkou prioritu, takže se stahuje až po stylech a skriptech*
+*Obrázkový obsah má nízkou prioritu, takže se stahuje až po stylech a skriptech*
 </figcaption>
 </figure>
 

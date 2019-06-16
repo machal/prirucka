@@ -13,7 +13,7 @@ U externích prvků, jako jsou obrázky, mapy, videa a další, zase potřebujet
 <figure>
 <img src="../dist/images/original/vdamp/amp-staticky-layout.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Všechny prvky v AMP mají statický layout, takže prohlížeč (za pomocí knihovny AMP runtime) přesně ví, jaký prostor jim má ve stránce ponechat._
+_Všechny prvky v AMP mají statický layout, takže prohlížeč (za pomocí knihovny AMP runtime) přesně ví, jaký prostor jim má ve stránce ponechat._
 </figcaption>
 </figure>
 

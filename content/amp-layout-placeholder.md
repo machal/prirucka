@@ -11,7 +11,7 @@ Podívejme se na obrázek, ten to snad osvětlí.
 <figure>
 <img src="../dist/images/original/vdamp/amp-placeholder.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Standardní vykreslování obrázku s indikátorem načítání v AMP (tři animované tečky) a pak vykreslení se zástupným symbolem._
+_Standardní vykreslování obrázku s indikátorem načítání v AMP (tři animované tečky) a pak vykreslení se zástupným symbolem._
 </figcaption>
 </figure>
 

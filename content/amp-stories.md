@@ -7,7 +7,7 @@ Ano, máme na mysli ty mizející příspěvky, které se aktivují kliknutím n
 <figure>
 <img src="../dist/images/original/vdamp/amp-stories.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP Story od BBC o věcech, které nechali zapomnětliví kosmonauti na Měsíci. Zdroj: [amp.dev](https://amp.dev/about/stories)_
+_AMP Story od BBC o věcech, které nechali zapomnětliví kosmonauti na Měsíci. Zdroj: [amp.dev](https://amp.dev/about/stories)_
 </figcaption>
 </figure>
 
@@ -22,7 +22,7 @@ Však si představme, že hledáme recept na jednodušší jídlo nebo aktuáln�
 <figure>
 <img src="../dist/images/original/vdamp/amp-stories-kroky.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Story o důležité zpravodajské kauze v Google Search._
+_Story o důležité zpravodajské kauze v Google Search._
 </figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ V Česku ke dni psaní textu bohužel o žádném využití příběhů významn
 <figure>
 <img src="../dist/images/original/vdamp/amp-stories-desktop.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Anatomie AMP příběhu._
+_Anatomie AMP příběhu._
 </figcaption>
 </figure>
 

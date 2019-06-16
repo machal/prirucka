@@ -11,7 +11,7 @@ Pak pomocí výjimek v backendovém kódu ošetříte místa, kde by bylo vhodn�
 <figure>
 <img src="../dist/images/original/vdamp/vazby-vyjimky.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Schéma fungování implementace „AMP First“._
+_Schéma fungování implementace „AMP First“._
 </figcaption>
 </figure>
 

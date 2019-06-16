@@ -79,7 +79,7 @@ Obojí rozebereme. Nejprve ale ke způsobu komunikace těchto věcí na webu. [M
 <figure>
 <img src="../dist/images/original/gdpr-3-kroky.jpg" alt="">
 <figcaption markdown="1">    
-*Obrázek: Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: [cdpn.io/e/PeJPNx](https://codepen.io/machal/pen/PeJPNx?editors=1100)*
+*Třívrstvé informování  o zpracování osobních údajů. Vzor je zde: [cdpn.io/e/PeJPNx](https://codepen.io/machal/pen/PeJPNx?editors=1100)*
 </figcaption> 
 </figure>
 
@@ -127,7 +127,7 @@ Příkladem může být přihlášení k newsletteru, registrace, objednávka, o
 <figure>
 <img src="../dist/images/original/gdpr-shopsys.jpg" alt="">
 <figcaption markdown="1">    
-*Obrázek: Ukázky formulářů, kde potřebujete aktivní souhlas. Zdroj [APEK & ShopSys](https://docs.google.com/document/d/1gECJnkfHlYe58EHg4af-QAxqqD1HnMAXnaJHzEAS0Sk/edit#)*
+*Ukázky formulářů, kde potřebujete aktivní souhlas. Zdroj [APEK & ShopSys](https://docs.google.com/document/d/1gECJnkfHlYe58EHg4af-QAxqqD1HnMAXnaJHzEAS0Sk/edit#)*
 </figcaption> 
 </figure>
 

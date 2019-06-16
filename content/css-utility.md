@@ -79,7 +79,7 @@ Tenhle analyzátor počítá výskyt různých typů deklarací a také duplicit
 <figure>
 <img src="../dist/images/original/css-stats.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Aktuální homepage Apple.com. Ohromná datová velikost, patnáct tisíc deklarací, 1 363 krát vlastnost height. Zdroj: [CSSStats.com](https://cssstats.com/stats?url=http%3A%2F%2Fapple.com&name=Apple)*
+*Aktuální homepage Apple.com. Ohromná datová velikost, patnáct tisíc deklarací, 1 363 krát vlastnost height. Zdroj: [CSSStats.com](https://cssstats.com/stats?url=http%3A%2F%2Fapple.com&name=Apple)*
 </figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Je tam. Dost velký. V utility třídách je schovaný systém designu. Ne moc r
 <figure>
 <img src="../dist/images/original/tachyons-font-size.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Stupnice textu z frameworku [Tachyons](https://tachyons.io/docs/typography/scale/)*
+*Stupnice textu z frameworku [Tachyons](https://tachyons.io/docs/typography/scale/)*
 </figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Stejné to je například u vnitřních a vnějších okrajů. Projekt by měl b
 <figure>
 <img src="../dist/images/original/vd-margin-padding-utils.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Systém pro pojmenovávání užitkových tříd pro marginy a paddingy na Vzhůru dolů*
+*Systém pro pojmenovávání užitkových tříd pro marginy a paddingy na Vzhůru dolů*
 </figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ Prostě: `.text-primary` dává větší smysl než `.text-blue`. V `.text-prima
 <figure>
 <img src="../dist/images/original/bootstrap-utils-color.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Vzorník tříd pro barvy pozadí [v Bootstrapu](https://getbootstrap.com/docs/4.1/utilities/colors/)*
+*Vzorník tříd pro barvy pozadí [v Bootstrapu](https://getbootstrap.com/docs/4.1/utilities/colors/)*
 </figcaption>
 </figure>
 

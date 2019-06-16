@@ -7,7 +7,7 @@ Jak už víme, než se AMP dostane do této ideální distribuční formy, proch
 <figure>
 <img src="../dist/images/original/vdamp/amp-faze.png"  height="540"  width="1920" alt="">
 <figcaption markdown="1">
-_Obrázek: Pět fází distribuce AMP stránky._
+_Pět fází distribuce AMP stránky._
 </figcaption>
 </figure>
 
@@ -21,7 +21,7 @@ Pro použití AMP jde o daleko příhodnější a typičtější případ: Nijak
 <figure>
 <img src="../dist/images/original/vdamp/amp-faze-vd-reflex.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Non-AMP verze obou článků na Vzhůru dolů a Reflexu._
+_Non-AMP verze obou článků na Vzhůru dolů a Reflexu._
 </figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Ptáte se, jak vypadají?
 <figure>
 <img src="../dist/images/original/vdamp/amp-faze-vd-reflex-amp.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP verze obou článků._
+_AMP verze obou článků._
 </figcaption>
 </figure>
 
@@ -191,7 +191,7 @@ Vyjádřeme si ještě rychlost vykreslení stránky ve třech nejzajímavějš�
 <figure>
 <img src="../dist/images/original/vdamp/amp-faze-filmstrip.png" alt="">
 <figcaption markdown="1">
-*Obrázek: Porovnání rychlosti vykreslení tří různých forem článku na Reflex.cz. Zdroj: WebpageTest.org [vrdl.in/ampwptf](https://www.webpagetest.org/video/compare.php?tests=190516_FD_f125772934ff0cc7283623273a2dc9fb%2C190516_6B_4b9564a1c50c3e7bc5215cbaca235066%2C190516_WW_596910a9028eae6491f55ed6ff4d8239&thumbSize=200&ival=1000&end=visual)*
+*Porovnání rychlosti vykreslení tří různých forem článku na Reflex.cz. Zdroj: WebpageTest.org [vrdl.in/ampwptf](https://www.webpagetest.org/video/compare.php?tests=190516_FD_f125772934ff0cc7283623273a2dc9fb%2C190516_6B_4b9564a1c50c3e7bc5215cbaca235066%2C190516_WW_596910a9028eae6491f55ed6ff4d8239&thumbSize=200&ival=1000&end=visual)*
 </figcaption>
 </figure>
 

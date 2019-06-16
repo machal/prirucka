@@ -7,7 +7,7 @@ Ukazuje tedy rychlost serveru a backendové části aplikace. A taky samozřejm�
 <figure>
 <img src="../dist/images/original/metrika-ttfb.jpg" alt="TTFB">
 <figcaption markdown="1">
-*Obrázek: TTFB nebo taky „Time To First Byte“*
+*TTFB nebo taky „Time To First Byte“*
 </figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Pro netechniky může být zajímavý tenhle online nástroj:
 <figure>
 <img src="../dist/images/original/ttfb-bytecheck.jpg" alt="TTFB od ByteCheck">
 <figcaption markdown="1">
-*Obrázek: TTFB rozebraný na jednotlivé části procesu od ByteCheck.com*
+*TTFB rozebraný na jednotlivé části procesu od ByteCheck.com*
 </figcaption>
 </figure>
 

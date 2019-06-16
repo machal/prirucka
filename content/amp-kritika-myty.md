@@ -11,7 +11,7 @@ Vyšší míra prokliku pak může znamenat lepší pozice, protože jde o jeden
 <figure>
 <img src="../dist/images/original/vdamp/amp-kritika-tri.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Výsledky vyhledávání Googlu. Zvýšený výskyt AMP je možné sledovat hlavně v místech, která se týkají aktuálních událostí._
+_Výsledky vyhledávání Googlu. Zvýšený výskyt AMP je možné sledovat hlavně v místech, která se týkají aktuálních událostí._
 </figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ V neposlední řadě by také weby s vlastním JavaScriptem mohly nechtěně zam
 <figure>
 <img src="../dist/images/original/vdamp/crux.png" alt="">
 <figcaption markdown="1">
-_Obrázek: První vykreslení obsahu je u skutečných uživatelů na Vzhůru dolů slušné. Google by si mohl začít myslet, že jde o rychlý web. Co když tu rychlost ale z minuty na minutu pokazíme? Zdroj: Chrome UX Report Dashboard_
+_První vykreslení obsahu je u skutečných uživatelů na Vzhůru dolů slušné. Google by si mohl začít myslet, že jde o rychlý web. Co když tu rychlost ale z minuty na minutu pokazíme? Zdroj: Chrome UX Report Dashboard_
 </figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ Pro každého vývojáře je výroba a správa dvou verzí otrava. Někteří m�
 <figure>
 <img src="../dist/images/original/vdamp/amp-vzhuru-dolu.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Vzhůru dolů má také AMP verzi. Ve skutečnosti je ovšem naprostá většina kódu pro obě stránky shodná._
+_Vzhůru dolů má také AMP verzi. Ve skutečnosti je ovšem naprostá většina kódu pro obě stránky shodná._
 </figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ Slovo „Pages“, dříve používané v názvu technologie, zní dost jednozna
 <figure>
 <img src="../dist/images/original/vdamp/amp-eshopy.jpg" alt="">
 <figcaption markdown="1">
-_Obrázek: Některé z e-shopů, které mají alespoň částečnou AMP verzi. Prostředky ze strany AMP tady jsou._
+_Některé z e-shopů, které mají alespoň částečnou AMP verzi. Prostředky ze strany AMP tady jsou._
 </figcaption>
 </figure>
 

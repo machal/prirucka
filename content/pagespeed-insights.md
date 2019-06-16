@@ -5,7 +5,7 @@
 <figure>
 <img src="../dist/images/original/pagespeed-insights.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Skóre od PSI je velmi dobrý ukazatel rychlosti. V textu se ale dozvíte, co za ním je a jak nástroj používat*
+*Skóre od PSI je velmi dobrý ukazatel rychlosti. V textu se ale dozvíte, co za ním je a jak nástroj používat*
 </figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ PSI vám tady barvou nahlásí, jak si stojíte.
 <figure>
 <img src="../dist/images/original/pagespeed-insights-skore.jpg" height="540" width="1920" alt="PageSpeed Insights Skóre">
 <figcaption markdown="1">
-*Obrázek: Skóre rychlosti. Zelená je super, oranžová ujde, červená znamená, že je potřeba se rychlosti webu věnovat. Výsledky pod dvacet bodů by měly spouštět rychlostní paniku*
+*Skóre rychlosti. Zelená je super, oranžová ujde, červená znamená, že je potřeba se rychlosti webu věnovat. Výsledky pod dvacet bodů by měly spouštět rychlostní paniku*
 </figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Jde o metriky od skutečných uživatelů vašeho webu. Alespoň těch, kteří 
 <figure>
 <img src="../dist/images/original/pagespeed-insights-crux.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: „Data pole“, metriky přímo od uživatelů Chrome a jejich shrnutí pro celou doménu v „Origin Summary“*
+*„Data pole“, metriky přímo od uživatelů Chrome a jejich shrnutí pro celou doménu v „Origin Summary“*
 </figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ Měření strojem? Prostě se pustí dva virtuální počítače – desktop (za
 <figure>
 <img src="../dist/images/original/pagespeed-insights-lab.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Laboratorní data ze syntetických měření počítačem. Neukazují obrázek o rychlosti v cílové skupině, ale za to jsou podrobnější*
+*Laboratorní data ze syntetických měření počítačem. Neukazují obrázek o rychlosti v cílové skupině, ale za to jsou podrobnější*
 </figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ Jak rychle bude stránka reagovat na vstup uživatele?
 <figure>
 <img src="../dist/images/original/pagespeed-insights-prilezitosti.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Příležitosti ke zrychlení stránky. Většinou se to vyplatí poslechnout*
+*Příležitosti ke zrychlení stránky. Většinou se to vyplatí poslechnout*
 </figcaption>
 </figure>
 

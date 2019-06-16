@@ -14,7 +14,7 @@ I když to z názvů metod soužití obou verzí nemusí být patrné, jde vlast
 <figure>
 <img src="../dist/images/original/vdamp/vazby.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Zjednodušené schéma přístupů k implementaci AMP._
+_Zjednodušené schéma přístupů k implementaci AMP._
 </figcaption>
 </figure>
 

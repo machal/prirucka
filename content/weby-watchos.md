@@ -64,7 +64,7 @@ Technicky to funguje následovně:
 <figure>
 <img src="../dist/images/original/watchos-weby-shrink.jpg" alt="shrink-to-fit na watchos">
 <figcaption markdown="1">
-*Obrázek: Jak fungují výchozí adaptace webů na watchOS 5. Zdroj: Apple*
+*Jak fungují výchozí adaptace webů na watchOS 5. Zdroj: Apple*
 </figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ Mile mě překvapilo, že na hodinkách od Applu je možné dělat také interak
 <figure>
 <img src="../dist/images/original/watchos-weby-forms.jpg" alt="Formuláře na watchos">
 <figcaption markdown="1">
-*Obrázek: Formulářové prvky na watchOS 5. Zdroj: Apple*
+*Formulářové prvky na watchOS 5. Zdroj: Apple*
 </figcaption>
 </figure>
 

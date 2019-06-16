@@ -15,7 +15,7 @@ V polovině roku 2019 je tato věc nasazená na webových e-mailových klientech
 <figure>
 <img src="../dist/images/original/vdamp/amp-email.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Naše první setkání s AMP e-mailem. Zpráva od Dokumentů Google během práce na knížce… Hádejte o čem? 1) Označení dynamického e-mailu. 2) Komentáře se průběžně aktualizují. 3) Přímo z e-mailu je také možné odpovědět._
+_Naše první setkání s AMP e-mailem. Zpráva od Dokumentů Google během práce na knížce… Hádejte o čem? 1) Označení dynamického e-mailu. 2) Komentáře se průběžně aktualizují. 3) Přímo z e-mailu je také možné odpovědět._
 </figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ Nebojte, kompatibilita je zajištěná. E-mail ve formátu AMP může být odes�
 <figure>
 <img src="../dist/images/original/vdamp/amp-email-schema.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Tři v jednom. Zajištění zpětné kompatibility AMP e-mailů._
+_Tři v jednom. Zajištění zpětné kompatibility AMP e-mailů._
 </figcaption>
 </figure>
 

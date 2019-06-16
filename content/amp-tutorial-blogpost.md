@@ -7,7 +7,7 @@ Budeme pracovat na ukázkovém blogovém příspěvku fiktivního e-shopu Forest
 <figure>
 <img src="../dist/images/original/vdamp/priklad-blog-1.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Blog fiktivního e-shopu ForestKid.cz. Tohle už možná znáte, že?_
+_Blog fiktivního e-shopu ForestKid.cz. Tohle už možná znáte, že?_
 </figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ Nyní už v konzoli vidíme červené chyby.
 <figure>
 <img src="../dist/images/original/vdamp/priklad-blog-2.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Zatím to není úplně dokonalé, proto se na nás AMP validátor zlobí._
+_Zatím to není úplně dokonalé, proto se na nás AMP validátor zlobí._
 </figcaption>
 </figure>
 
@@ -289,7 +289,7 @@ Můžeme si to vyzkoušet, vše krásně funguje.
 <figure>
 <img src="../dist/images/original/vdamp/priklad-blog-2.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Lightbox otevřený na naší stránce._
+_Lightbox otevřený na naší stránce._
 </figcaption>
 </figure>
 

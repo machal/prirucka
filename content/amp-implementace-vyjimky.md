@@ -5,7 +5,7 @@ Tohle je tak trochu hybridní řešení: Vezmete stávající web, a pokud zjist
 <figure>
 <img src="../dist/images/original/vdamp/vazby-amp-first.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Implementace AMP výjimkami v kódu. Základ aplikace a HTML kódu je totožný. Pro AMP distribuci se však udělá na úrovni backendu několik výjimek._
+_Implementace AMP výjimkami v kódu. Základ aplikace a HTML kódu je totožný. Pro AMP distribuci se však udělá na úrovni backendu několik výjimek._
 </figcaption>
 </figure>
 
@@ -22,7 +22,7 @@ Ano, tenhle způsob implementace aktuálně používá Martin na svém vlastním
 <figure>
 <img src="../dist/images/original/vdamp/amp-vzhuru-dolu.png" alt="">
 <figcaption markdown="1">
-_Obrázek: non-AMP a AMP verze článku o… no hádejte!_
+_non-AMP a AMP verze článku o… no hádejte!_
 </figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ Nasazení technologie s bleskem v logu na web vám doporučujeme sledovat v nás
 <figure>
 <img src="../dist/images/original/vdamp/vazby-vd-sc.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Chyby na AMP stránkách ve starém rozhraní Search Console chvíli po nasazení AMP na Vzhůru dolů. Počet indexovaných stránek je skoro stejně vysoký jako počet chyb._
+_Chyby na AMP stránkách ve starém rozhraní Search Console chvíli po nasazení AMP na Vzhůru dolů. Počet indexovaných stránek je skoro stejně vysoký jako počet chyb._
 </figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ Po úpravách je to následovně:
 <figure>
 <img src="../dist/images/original/vdamp/vazby-vd-sc-after.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Pohled už z nové Search Console: Počet chyb je minimální._
+_Pohled už z nové Search Console: Počet chyb je minimální._
 </figcaption>
 </figure>
 

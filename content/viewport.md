@@ -30,7 +30,7 @@ Zpět tedy k našim viewportům. Budeme používat terminologii Petera-Paula Koc
 <figure>
 <img src="../dist/images/original/viewport-layoutovy-vizualni.jpg" alt="Layoutový a vizuální viewport">
 <figcaption markdown="1">
-*Obrázek: Viewport layoutový a vizuální. Při použití správné meta značky jsou oba při načtení responzivní stránky na všech zařízeních stejně široké*
+*Viewport layoutový a vizuální. Při použití správné meta značky jsou oba při načtení responzivní stránky na všech zařízeních stejně široké*
 </figcaption>
 </figure>
 

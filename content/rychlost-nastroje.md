@@ -125,7 +125,7 @@ Umí toho hodně. Ukáže timeline, zvládne emulaci pomalého připojení. Test
 <figure>
 <img src="../dist/images/original/speedcurve.jpg" alt="SpeedCurve">
 <figcaption markdown="1">
-*Obrázek: Úvodní stránka SpeedCurve nabízí základní měření a porovnání s konkurencí.*
+*Úvodní stránka SpeedCurve nabízí základní měření a porovnání s konkurencí.*
 </figcaption>
 </figure>
 

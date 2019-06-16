@@ -7,7 +7,7 @@ Je to událost, kterou ovlivňuje hlavně JavaScript. Stránka je zobrazená a u
 <figure>
 <img src="../dist/images/original/metrika-fid.jpg" alt="FID">
 <figcaption markdown="1">
-*Obrázek: Kdy vzniká FID nebo taky „First Input Delay“*
+*Kdy vzniká FID nebo taky „First Input Delay“*
 </figcaption>
 </figure>
 

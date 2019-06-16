@@ -34,7 +34,7 @@ Ovšem pozor, pro nasazení HTTP/2 nejdříve musí web běžet na [HTTPS](https
 <figure>
 <img src="../dist/images/original/http-1-vs-2.jpg" alt="HTTP/2 versus HTTP/1.1">
 <figcaption markdown="1">
-*Obrázek: Zatímco na HTTP/1.1 tvoří prvky stránky „frontu na banány“, na nové verzi protokolu je může prohlížeč stahovat prakticky najednou*
+*Zatímco na HTTP/1.1 tvoří prvky stránky „frontu na banány“, na nové verzi protokolu je může prohlížeč stahovat prakticky najednou*
 </figcaption>
 </figure>
 

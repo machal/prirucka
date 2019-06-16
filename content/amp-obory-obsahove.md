@@ -13,7 +13,7 @@ Přišel za ním Lukáš Říha z vydavatelství CNC (Czech News Center) s tím,
 <figure>
 <img src="../dist/images/original/vdamp/obory-reflex.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Jedna z největších českých implementací je na Reflex.cz._
+_Jedna z největších českých implementací je na Reflex.cz._
 </figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ Není samozřejmě obecně úplně snadné dostat z provozovatelů webů čísla
 <figure>
 <img src="../dist/images/original/vdamp/obory-zillertaler.png" alt="">
 <figcaption markdown="1">
-_Obrázek: HTML a AMP HTML verze článku na Zillertaler Zeitung._
+_HTML a AMP HTML verze článku na Zillertaler Zeitung._
 </figcaption>
 </figure>
 

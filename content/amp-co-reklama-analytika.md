@@ -9,7 +9,7 @@ Nejspíš je vám jasné, že hezké rychlostní metriky odcházejí v tuhle chv
 <figure>
 <img src="../dist/images/original/vdamp/amp-analytika-reklama.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Co se stahuje pro samotný web a co pro analytiku a reklamu třetích stran? Ilustrační vodopád načítání externích zdrojů z jednoho velkého českého zpravodajského webu._
+_Co se stahuje pro samotný web a co pro analytiku a reklamu třetích stran? Ilustrační vodopád načítání externích zdrojů z jednoho velkého českého zpravodajského webu._
 </figcaption>
 </figure>
 

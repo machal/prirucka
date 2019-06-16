@@ -5,7 +5,7 @@ Pojďme si dnes něco povědět o hlavním nástroji, který u klientů použív
 <figure>
 <img src="../dist/images/original/speedcurve.jpg" alt="SpeedCurve">
 <figcaption markdown="1">
-*Obrázek: Úvodní stránka SpeedCurve nabízí základní měření a porovnání s konkurencí.*
+*Úvodní stránka SpeedCurve nabízí základní měření a porovnání s konkurencí.*
 </figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ Report ukazuje, jak si web stojí v čase. SpeedCurve obvykle máme nastavený t
 <figure>
 <img src="../dist/images/original/speedcurve-site.jpg" alt="SpeedCurve: Site">
 <figcaption markdown="1">
-_Obrázek: Průběžný vývoj vykreslovacích a načítacích metrik. Výkyvy jsou běžné, důležité je mít zlepšující se dlouhodobý trend._
+_Průběžný vývoj vykreslovacích a načítacích metrik. Výkyvy jsou běžné, důležité je mít zlepšující se dlouhodobý trend._
 </figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ Jak už jsem mnohokrát psal, usilovat o ideální hodnoty [metrik rychlosti](me
 <figure>
 <img src="../dist/images/original/speedcurve-benchmark.jpg" alt="SpeedCurve: Benchmark">
 <figcaption markdown="1">
-_Obrázek: Srovnání aktuálně měřených konkurentů pro Rohlík.cz. Toho je ovšem jen jeden kontext z mnoha, mobilní úvodní stránka._
+_Srovnání aktuálně měřených konkurentů pro Rohlík.cz. Toho je ovšem jen jeden kontext z mnoha, mobilní úvodní stránka._
 </figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ SpeedCurve kontroluje, zda se dlouhodobě (po dobu alespoň tří dnů) nepřekr
 <figure>
 <img src="../dist/images/original/speedcurve-budgets.jpg" alt="SpeedCurve: Performance Budgets">
 <figcaption markdown="1">
-_Obrázek: Červená laťka aneb rychlostní limity ve SpeedCurve._
+_Červená laťka aneb rychlostní limity ve SpeedCurve._
 </figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ Limity je možné kontrolovat také ve speciálním pohledu, který je možné s
 <figure>
 <img src="../dist/images/original/speedcurve-budgets-dashboard.jpg" width="1920" height="540"  alt="SpeedCurve: Performance Budgets Dashboard">
 <figcaption markdown="1">
-_Obrázek: Zelené plochy rychlostních limitů říkají, že tady je vše v pořádku._
+_Zelené plochy rychlostních limitů říkají, že tady je vše v pořádku._
 </figcaption>
 </figure>
 

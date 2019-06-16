@@ -35,7 +35,7 @@ Ale bavme se i o nevýhodách:
 <figure>
 <img src="../dist/images/original/lighthouse-online.jpg" alt="Lighthouse online">
 <figcaption markdown="1">
-*Obrázek: Ukázkový report pro Vzhůru dolů. Vidíte celkové skóre, výsledky pro danou oblast a pak velmi rozumná doporučení ke zlepšení.
+*Ukázkový report pro Vzhůru dolů. Vidíte celkové skóre, výsledky pro danou oblast a pak velmi rozumná doporučení ke zlepšení.
 </figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ Lighthouse se ve většině případu použití spouští na vašem počítači 
 <figure>
 <img src="../dist/images/original/lighthouse-chrome.jpg" alt="Lighthouse v Google Chrome">
 <figcaption markdown="1">
-*Obrázek: Nastavení Lighthouse před spuštěním auditu v prohlížeči Chrome*
+*Nastavení Lighthouse před spuštěním auditu v prohlížeči Chrome*
 </figcaption>
 </figure>
 

@@ -29,7 +29,7 @@ Je to HTML, CSS (a trochu i javascriptový) framework určený ke zrychlení na�
 <figure>
 <img src="../dist/images/original/vdamp/amp-framework-distribuce.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP jsou dvě věci. Frontendový framework a specifická distribuce – rozmístění stránek po optimalizovaných serverech._
+_AMP jsou dvě věci. Frontendový framework a specifická distribuce – rozmístění stránek po optimalizovaných serverech._
 </figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Pro zobrazení běžného webu je potřeba navázat spojení (už teď jsou stov
 <figure>
 <img src="../dist/images/original/vdamp/ttfb.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Co musí prohlížeč provést u běžného webu, než stáhne první bajt z HTML. Nejvíce času obvykle zaberou operace kolem bezpečnostního certifikátu (SSL) a vygenerování stránky na serveru (Wait). Náročnost těchto operací je u servírování z AMP Cache výrazně snížená._
+_Co musí prohlížeč provést u běžného webu, než stáhne první bajt z HTML. Nejvíce času obvykle zaberou operace kolem bezpečnostního certifikátu (SSL) a vygenerování stránky na serveru (Wait). Náročnost těchto operací je u servírování z AMP Cache výrazně snížená._
 </figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ AMP stránka by se z AMP Cache zobrazila rychleji než na našem hostingu, ale n
 <figure>
 <img src="../dist/images/original/vdamp/amp-devtools.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Jedním ze zdrojů načtených v relevantním výsledku vyhledávání na Googlu (1) je také ta AMP stránka, u níž je největší šance, že na ni uživatel klikne (2)._
+_Jedním ze zdrojů načtených v relevantním výsledku vyhledávání na Googlu (1) je také ta AMP stránka, u níž je největší šance, že na ni uživatel klikne (2)._
 </figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ Jenže AMP musí být validní. Ne podle HTML standardu, ale podle AMP HTML stan
 <figure>
 <img src="../dist/images/original/vdamp/amp-validator.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Ajaj, tady to nevyšlo. Neznamená to ale, že by stránka vypadla z výsledků vyhledávání Googlu. Jen se prostě nezobrazí její AMP verze._
+_Ajaj, tady to nevyšlo. Neznamená to ale, že by stránka vypadla z výsledků vyhledávání Googlu. Jen se prostě nezobrazí její AMP verze._
 </figcaption>
 </figure>
 

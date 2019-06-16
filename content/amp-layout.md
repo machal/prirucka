@@ -16,7 +16,7 @@ Nebo jinak – že vám nebude při načítání ani používání „poskakovat
 <figure>
 <img src="../dist/images/original/vdamp/amp-layout.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Rozdíly ve vykreslování běžné HTML stránky a AMP stránky._
+_Rozdíly ve vykreslování běžné HTML stránky a AMP stránky._
 </figcaption>
 </figure>
 

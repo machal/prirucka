@@ -15,7 +15,7 @@ Blíže se podíváme na první jmenované rozšíření do nejpopulárnějšíh
 <figure>
 <img src="../dist/images/original/vdamp/wordpress-plugin.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP plugin pro redakční systém, který někteří vývojáři nemohou vystát, ale skoro všichni uživatelé milují._
+_AMP plugin pro redakční systém, který někteří vývojáři nemohou vystát, ale skoro všichni uživatelé milují._
 </figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ Dotekománie patří k velkým českým webům přinášejícím technologické 
 <figure>
 <img src="../dist/images/original/vdamp/vazby-dotekomanie.png" alt="">
 <figcaption markdown="1">
-_Obrázek: HTML a AMP verze Dotekománie.cz._
+_HTML a AMP verze Dotekománie.cz._
 </figcaption>
 </figure>
 

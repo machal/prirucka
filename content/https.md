@@ -29,7 +29,7 @@ Tlaky pro přechod na HTTPS ale nepřicházejí jen ze strany prohlížečů:
 <figure markdown="1">
 ![flexbox schéma](../dist/images/original/https.jpg)
 <figcaption markdown="1">    
-*Obrázek: Jak Firefox a Chrome na Macu označují nezabezpečený web a formuláře v něm. A podle slov výrobců prohlížečů se to bude postupně přitvrzovat.*
+*Jak Firefox a Chrome na Macu označují nezabezpečený web a formuláře v něm. A podle slov výrobců prohlížečů se to bude postupně přitvrzovat.*
 </figcaption> 
 </figure>
 

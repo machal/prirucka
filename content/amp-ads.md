@@ -32,7 +32,7 @@ Co je to AMP Ads? Obrázek napoví.
 <figure>
 <img src="../dist/images/original/vdamp/amp-ads-schema.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Schéma fungování AMPHTML ad. Zdroj: [amp.dev](https://amp.dev/documentation/guides-and-tutorials/learn/intro-to-amphtml-ads)_
+_Schéma fungování AMPHTML ad. Zdroj: [amp.dev](https://amp.dev/documentation/guides-and-tutorials/learn/intro-to-amphtml-ads)_
 </figcaption>
 </figure>
 

@@ -17,7 +17,7 @@ V takovém případě pro vás může AMP znamenat nezanedbatelnou konkurenční
 <figure>
 <img src="../dist/images/original/vdamp/nasazeni-brexit.png" alt="">
 <figcaption markdown="1">
-_Obrázek: V českém Googlu jsou AMP stránky zatím relativně vzácné. O to zajímavější je to pro jejich majitele. Do karuselu s obrázky se jiné než AMP stránky skoro nedostanou._
+_V českém Googlu jsou AMP stránky zatím relativně vzácné. O to zajímavější je to pro jejich majitele. Do karuselu s obrázky se jiné než AMP stránky skoro nedostanou._
 </figcaption>
 </figure>
 

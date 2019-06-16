@@ -19,7 +19,7 @@ Velký český e-shop s léčivy má AMP verzi nasazenou asi nejdéle ze všech 
 <figure>
 <img src="../dist/images/original/vdamp/obory-lekarna.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Zatím nejpropracovanější implementaci na českých elektronických obchodech nabízí Lékárna.cz._
+_Zatím nejpropracovanější implementaci na českých elektronických obchodech nabízí Lékárna.cz._
 </figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ S AMP experimentuje i největší značka českého e-commerce. AMP zkoušeli na
 <figure>
 <img src="../dist/images/original/vdamp/obory-alza.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Také náš největší e-shop to zkouší s AMP._
+_Také náš největší e-shop to zkouší s AMP._
 </figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ Prodejce zájezdů Relaxos.sk (v české verzi na Relaxos.cz) nasadil AMP v roce
 <figure>
 <img src="../dist/images/original/vdamp/obory-relaxos.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Velmi podobné, ale stále ne totožné pojetí HTML a AMP HTML varianty na Relaxos.sk._
+_Velmi podobné, ale stále ne totožné pojetí HTML a AMP HTML varianty na Relaxos.sk._
 </figcaption>
 </figure>
 

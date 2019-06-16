@@ -17,7 +17,7 @@ Prostě jinak než jako u většiny dnešních e-shopů využívajících AMP.
 <figure>
 <img src="../dist/images/original/vdamp/amp-propojeni-kosik.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Funkcionalita přidání do košíku na AMP stránce obvykle chybí. Tlačítko slouží pouze pro přechod na non-AMP verzi. To bolí! Takhle prosím ne…_
+_Funkcionalita přidání do košíku na AMP stránce obvykle chybí. Tlačítko slouží pouze pro přechod na non-AMP verzi. To bolí! Takhle prosím ne…_
 </figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ Situace už je tedy lepší. Pro přidání do košíku nemusíme uživatele pos
 <figure>
 <img src="../dist/images/original/vdamp/amp-propojeni-kosik-2.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Tohle je lepší. Produkt přidáme do košíku už na AMP stránce a taky nám tady vydrží. Díky za „AMP Client ID“!_
+_Tohle je lepší. Produkt přidáme do košíku už na AMP stránce a taky nám tady vydrží. Díky za „AMP Client ID“!_
 </figcaption>
 </figure>
 

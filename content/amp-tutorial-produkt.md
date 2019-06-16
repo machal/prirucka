@@ -7,7 +7,7 @@ Připravili jsme zde jednoduchou šablonu produktu v e-shopu navazující [na bl
 <figure>
 <img src="../dist/images/original/vdamp/priklad-produkt-1.png" alt="">
 <figcaption markdown="1">
-_Obrázek: To je ona, stránka smyšleného e-shopu ForestKid.cz._
+_To je ona, stránka smyšleného e-shopu ForestKid.cz._
 </figcaption>
 </figure>
 
@@ -25,7 +25,7 @@ Na galerii s náhledy, kterou vidíte na obrázcích, už nám jedna komponenta 
 <figure>
 <img src="../dist/images/original/vdamp/priklad-produkt-2.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Fotogalerie v detailu produktu. Velký obrázek v karuselu (1) je doplněný náhledy (2)._
+_Fotogalerie v detailu produktu. Velký obrázek v karuselu (1) je doplněný náhledy (2)._
 </figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ V našem případě stahujeme celou tabulku s aktuálními rozměry bot a jejich
 <figure>
 <img src="../dist/images/original/vdamp/priklad-produkt-3.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Tabulka velikostí je stahována z externího zdroje, takže i v AMP Cache bude vždy čerstvá._
+_Tabulka velikostí je stahována z externího zdroje, takže i v AMP Cache bude vždy čerstvá._
 </figcaption>
 </figure>
 
@@ -191,7 +191,7 @@ Ano, ForestKid.cz je jen imaginární e-shop. Ale co by to bylo za e-shop, pokud
 <figure>
 <img src="../dist/images/original/vdamp/priklad-produkt-4.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Vizualizace přidávání zboží do košíku. Košík ukazuje počet vložených kusů (1) a uživatel přes formulář přidává položky (2)._
+_Vizualizace přidávání zboží do košíku. Košík ukazuje počet vložených kusů (1) a uživatel přes formulář přidává položky (2)._
 </figcaption>
 </figure>
 

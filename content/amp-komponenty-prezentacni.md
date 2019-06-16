@@ -9,7 +9,7 @@ Teď ale vážně, pojďme si to všechno projít.
 <figure>
 <img src="../dist/images/original/vdamp/amp-fit-text.png"  height="540"  width="1920" alt="">
 <figcaption markdown="1">
-_Obrázek: Zajímavá je komponenta amp-fit-text, která využívá schopnosti technologie mít pod kontrolou layout v prohlížeči. Definujete poměr stran vnějšího prvku a další parametry, velikost textu už je na prohlížeči. Demo: [jsbin.com/gidoxuw](https://output.jsbin.com/gidoxuw)_
+_Zajímavá je komponenta amp-fit-text, která využívá schopnosti technologie mít pod kontrolou layout v prohlížeči. Definujete poměr stran vnějšího prvku a další parametry, velikost textu už je na prohlížeči. Demo: [jsbin.com/gidoxuw](https://output.jsbin.com/gidoxuw)_
 </figcaption>
 </figure>
 

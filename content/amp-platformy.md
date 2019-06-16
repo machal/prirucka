@@ -11,7 +11,7 @@ Nejznámější a pro provozovatele webu v Česku určitě nejzajímavější ob
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-cuketka.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP verze receptu z Cuketka.cz ve vyhledávání Googlu._
+_AMP verze receptu z Cuketka.cz ve vyhledávání Googlu._
 </figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ News OneBox je označení pro různé grafické prvky. Ve výsledcích vyhledáv
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-udalosti.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP z Reflex.cz při vyhledávání zpravodajské události v Hlavních událostech ve výsledcích Googlu._
+_AMP z Reflex.cz při vyhledávání zpravodajské události v Hlavních událostech ve výsledcích Googlu._
 </figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Podobně jako u Twitteru, který uvádíme v dalším textu, nevede odkaz na opt
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-chrome.png" alt="">
 <figcaption markdown="1">
-_Obrázek: AMP verze článku ze SmartMania.cz je k dispozici v doporučených článcích mobilního Google Chrome._
+_AMP verze článku ze SmartMania.cz je k dispozici v doporučených článcích mobilního Google Chrome._
 </figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Pokud si na webu zprovozníte AMP, dostanete se na Google AMP Cache i z mobilní
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-linkedin.png" alt="">
 <figcaption markdown="1">
-_Obrázek: V příspěvcích na profesionální sociální síti LinkedIn je možné dostat se na AMP stránku hostovanou na Google CDN._
+_V příspěvcích na profesionální sociální síti LinkedIn je možné dostat se na AMP stránku hostovanou na Google CDN._
 </figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ Twitter naši milou technologii rychlých stránek používá zatím jen na nep�
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-twitter.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Odkaz na AMP verzi článku z The Verge v Twitter Moments._
+_Odkaz na AMP verzi článku z The Verge v Twitter Moments._
 </figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ Vyhledávač od Microsoftu má v Česku jen miniaturní podíl na trhu, ale nap�
 <figure>
 <img src="../dist/images/original/vdamp/amp-platformy-bing.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Bing má vlastní servery upravující a hostující AMP stránky. Pro cílovku například v USA je to dost významné._
+_Bing má vlastní servery upravující a hostující AMP stránky. Pro cílovku například v USA je to dost významné._
 </figcaption>
 </figure>
 

@@ -9,7 +9,7 @@ Když vezmeme trh počítačů, mezi prohlížeči už jednoznačně vede Chrome
 <figure>
 <img src="../dist/images/original/prohlizece-desktop.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Podíl desktopových prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
+*Podíl desktopových prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
 </figcaption>
 </figure>
 
@@ -20,7 +20,7 @@ Na mobilech musíme počítat s Google Chrome a Safari. Menší podíl mají dal
 <figure>
 <img src="../dist/images/original/prohlizece-mobily.jpg" alt="">
 <figcaption markdown="1">
-*Obrázek: Podíl mobilních prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
+*Podíl mobilních prohlížečů. Zdroj: Google Analytics pro weby cestovky Rekrea v červnu 2018*
 </figcaption>
 </figure>
 

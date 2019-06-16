@@ -5,7 +5,7 @@ Proces mezi publikováním a momentem dostupnosti stránky na platformách, kter
 <figure>
 <img src="../dist/images/original/vdamp/amp-fungovani.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Čím se liší distribuce běžné stránky od AMP?_
+_Čím se liší distribuce běžné stránky od AMP?_
 </figcaption>
 </figure>
 

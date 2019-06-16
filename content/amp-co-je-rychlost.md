@@ -11,7 +11,7 @@ _„The web is Doomed,“_ napsal k tomu na své mnohamegabajtové stránce maga
 <figure>
 <img src="../dist/images/original/vdamp/rychlost-doom.jpg" alt="">
 <figcaption markdown="1">
-_Obrázek: Už v roce 2016 byla průměrná webová stránka velká jako 3D střílečka Doom. Zdroj: Ronan Cremin, [mobiforge.com](https://mobiforge.com/research-analysis/the-web-is-doom)_
+_Už v roce 2016 byla průměrná webová stránka velká jako 3D střílečka Doom. Zdroj: Ronan Cremin, [mobiforge.com](https://mobiforge.com/research-analysis/the-web-is-doom)_
 </figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Z dalších studií ovšem vychází, že uživatelé nemají s weby zase takovo
 <figure>
 <img src="../dist/images/original/vdamp/rychlost-nielsen.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Tři milníky ve vnímání rychlosti webů. Zdroj: Nielsen Norman Group, [vrdl.in/4o3d7](https://www.nngroup.com/articles/response-times-3-important-limits/)_
+_Tři milníky ve vnímání rychlosti webů. Zdroj: Nielsen Norman Group, [vrdl.in/4o3d7](https://www.nngroup.com/articles/response-times-3-important-limits/)_
 </figcaption>
 </figure>
 

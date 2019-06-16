@@ -46,7 +46,7 @@ Právě proto je skvělé, že vlastnost `font-display` máme.
 <figure>
 <img src="../dist/images/original/font-display-uprava.jpg" alt="font-display před a po úpravě na Vzhůru dolů">
 <figcaption markdown="1">
-*Obrázek: Před nějakým časem proběhla optimalizace vykreslování webfontů i tady, na Vzhůru dolů. Zdroj: [WebpageTest.org](https://www.webpagetest.org/video/compare.php?tests=180202_C6_72249cb14e4d83425fed89aa08f505d9-r%3A1-c%3A0%2C180202_FW_26ca4048d675991c4b12f67e7aaecf8e-r%3A1-c%3A0&thumbSize=200&ival=500&end=visual)*
+*Před nějakým časem proběhla optimalizace vykreslování webfontů i tady, na Vzhůru dolů. Zdroj: [WebpageTest.org](https://www.webpagetest.org/video/compare.php?tests=180202_C6_72249cb14e4d83425fed89aa08f505d9-r%3A1-c%3A0%2C180202_FW_26ca4048d675991c4b12f67e7aaecf8e-r%3A1-c%3A0&thumbSize=200&ival=500&end=visual)*
 </figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ V následujícím grafu pracuji jen s prvními dvěma intervaly – blokování 
 <figure>
 <img src="../dist/images/original/font-display-hodnoty.jpg" alt="font-display hodnoty">
 <figcaption markdown="1">
-*Obrázek: Hodnoty deskriptoru font-display*
+*Hodnoty deskriptoru font-display*
 </figcaption>
 </figure>
 

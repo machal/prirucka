@@ -11,7 +11,7 @@ Důležitá komponenta pro „bajndování“, provázání jednotlivých část
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-bind.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Výchozí text „Hello World“ se po kliknutí na tlačítko změní na „Hello AMP“. Bezva, právě jsme si zaprogramovali v AMP._
+_Výchozí text „Hello World“ se po kliknutí na tlačítko změní na „Hello AMP“. Bezva, právě jsme si zaprogramovali v AMP._
 </figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ Vsadíme boty, že mnohým z vás právě teď docvaklo, že zákaz autorského
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-datepicker.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Některé další dynamické komponenty._
+_Některé další dynamické komponenty._
 </figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ Do téhle kategorie patří i další komponenty, které s dynamičností strán
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-subscribtions.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Různé komponenty pro ošetřování přístupu k obsahu na webu The Washington Post._
+_Různé komponenty pro ošetřování přístupu k obsahu na webu The Washington Post._
 </figcaption>
 </figure>
 

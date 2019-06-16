@@ -91,7 +91,7 @@ Aby to bylo jasnější, podívejme se na rozdíly mezi rozlišením hardwarový
 
 </div>
 <figcaption markdown="1">
-*Obrázek: Rozlišení ve fyzických (hardwarových) pixelech a v CSS pixelech, ze kterého se počítá ideální viewport. Ve třetím sloupečku je „Device Pixel Ratio“, tedy podíl těchto dvou hodnot. Zdroj: [MyDevice.io](https://www.mydevice.io/)*
+*Rozlišení ve fyzických (hardwarových) pixelech a v CSS pixelech, ze kterého se počítá ideální viewport. Ve třetím sloupečku je „Device Pixel Ratio“, tedy podíl těchto dvou hodnot. Zdroj: [MyDevice.io](https://www.mydevice.io/)*
 </figcaption>
 </figure>
 

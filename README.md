@@ -86,6 +86,8 @@ Alternativně s popiskem jako `<figure>`:
 </figure>
 ```
 
+Popisek (`figcaption`) není potřeba uvádět jako: „Obrázek: …“, protože je ve všech místech výskytu vizuálně oddělený od zbytku obsahu.
+
 ### Jiný poměr stran než 16:9
 
 Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají jiný poměr stran než 16:9, uvádět rozměry explicitně. Stačí poměr stran. Například pro výškou poloviční obrázky – 32:9:

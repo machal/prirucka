@@ -37,7 +37,7 @@ Prvky se nám pěkně rozmístí. Jenže smůla, tohle nebude fungovat v Intern
 <figure>
 <img src="../dist/images/original/msie-grid-autoplacement-browsers.jpg" alt="PageSpeed Insights">
 <figcaption markdown="1">
-*Obrázek: Ale to je nepříjemné, automatické umístění v MSIE nefunguje*
+*Ale to je nepříjemné, automatické umístění v MSIE nefunguje*
 </figcaption>
 </figure>
 

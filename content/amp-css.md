@@ -49,7 +49,7 @@ AMP Cache tedy musí přepisovat naše styly. A jediný způsob, jakým může z
 <figure>
 <img src="../dist/images/original/vdamp/amp-css-ukazka.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Světový rekord v počtu klíčových slov !important právě padl ve výchozích stylech pro Google AMP Viewer._
+_Světový rekord v počtu klíčových slov !important právě padl ve výchozích stylech pro Google AMP Viewer._
 </figcaption>
 </figure>
 

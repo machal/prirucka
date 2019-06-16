@@ -12,7 +12,7 @@ Jak asi čekáte, u reklamních komponent půjde o vkládání bannerů do strá
 <figure>
 <img src="../dist/images/original/vdamp/komponenty-amp-ad.png" alt="">
 <figcaption markdown="1">
-_Obrázek: Reklamní komponenty v akci. amp-ad na webu Reflexu zobrazuje Google Ads. Druhá část ukazuje demíčko pro komponentu amp-sticky-ad. Ano, jde o tu hrůzu přilepenou ke spodní hraně obrazovky._
+_Reklamní komponenty v akci. amp-ad na webu Reflexu zobrazuje Google Ads. Druhá část ukazuje demíčko pro komponentu amp-sticky-ad. Ano, jde o tu hrůzu přilepenou ke spodní hraně obrazovky._
 </figcaption>
 </figure>
 

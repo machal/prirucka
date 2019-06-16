@@ -92,7 +92,7 @@ Zpět k Davidu Gilbertsonovi. Ten z globálních statistik vytáhl taková čís
 <figure>
 <img src="../dist/images/original/breakpointy-gilbertson.jpg" alt="Breakpointy Davida Gilbertsona">
 <figcaption markdown="1">
-*Obrázek: Návrh rozložení breakpointů tak, aby v rozmezích byly rovnoměrně zastoupeny různé skupiny zařízení. Oranžové tečky představují nejčastější rozlišení. Zdroj: David Gilbertson*
+*Návrh rozložení breakpointů tak, aby v rozmezích byly rovnoměrně zastoupeny různé skupiny zařízení. Oranžové tečky představují nejčastější rozlišení. Zdroj: David Gilbertson*
 </figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ Získáte z něj grafy podobné těmto:
 <figure>
 <img src="../dist/images/original/breakpointy-vd-rekrea.jpg" alt="PageSpeed Insights">
 <figcaption markdown="1">
-*Obrázek: Rozložení breakpointů pro můj web Vzhůru dolů a na webech cestovky Rekrea za první polovinu roku 2018*
+*Rozložení breakpointů pro můj web Vzhůru dolů a na webech cestovky Rekrea za první polovinu roku 2018*
 </figcaption>
 </figure>
 
