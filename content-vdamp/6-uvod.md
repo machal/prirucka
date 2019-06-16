@@ -1,4 +1,4 @@
-# Kapitola 6: E-mail, Stories, Ads
+# Kapitola 6: Ads, E-mail, Stories
 
 AMP. Představme si, že jsme celou tu věc vymysleli. Nebo reálněji – představme si, že jsme přečetli všech předchozích pět kapitol „Vzhůru do AMP“. (Jako autoři si takové čtenáře představujeme velice rádi, co vám budeme povídat.)
 
