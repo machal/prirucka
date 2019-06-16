@@ -56,4 +56,4 @@ _HTML a AMP verze Dotekománie.cz._
 
 Lesk pluginů může být v jednoduchosti nasazení AMP. Bída pak znovu v oné jednoduchosti: viz třeba režim „Reader“ u rozšíření pro WordPress, kde pro vás nebude možné dosáhnout stejného vzhledu a funkčnosti, jako má váš plnohodnotný web.
 
-To by pro základní přehled o tomto specifickém způsobu implementace mohlo stačit. Došli jsme až na konec třetí kapitoly. Načerpali jsme znalosti o možnosti návrhu architektury zahrnutí AMP do vašich webů a po krátkém testu si prohlédneme weby, které AMP implementovaly.
+To by pro základní přehled o tomto specifickém způsobu implementace mohlo stačit. Došli jsme až na konec třetí kapitoly. Načerpali jsme znalosti o možnosti návrhu architektury zahrnutí AMP do vašich webů a po krátkém kvízu si prohlédneme weby, které AMP implementovaly.

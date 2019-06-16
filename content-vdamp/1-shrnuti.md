@@ -2,7 +2,7 @@
 
 Shrnutí všech kapitol jsme připravili ve formě kvízu. Jeho řešení najdete hned pod ním a zároveň slouží jako shrnutí kapitoly, pokud byste snad nechtěli testovat svou znalost problematiky.
 
-V1. **Co je to AMP v souvislosti s obsahem knížky?**  
+1. **Co je to AMP v souvislosti s obsahem knížky?**  
 a. online nástroj pro návrh a hostování webových stránek  
 b. framework a distribuční cesta pro tvorbu webových stránek  
 c. nástupce HTML s asynchronním nahráváním elementů  

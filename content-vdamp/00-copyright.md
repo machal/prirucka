@@ -1,5 +1,5 @@
 © Martin Michálek, 2019  
-Příklad, testy, text „Tutoriál: blogpost“ © Robin Pokorný, 2019  
+Příklad, kvízy, text „Tutoriál: blogpost“ © Robin Pokorný, 2019  
 © Nakladatelství Martin Michálek – Vzhůru dolů, 2019  
 All rights reserved.
 

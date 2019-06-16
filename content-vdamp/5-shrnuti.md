@@ -1,6 +1,6 @@
 # Shrnutí kapitoly formou kvízu
 
-1. **Který z následujících důvodů *není* indikátorem, že byste měli zvážit AMP?**  
+1. **Který z následujících důvodů není indikátorem, že byste měli zvážit AMP?**  
 a. máte hodně obsahu a hodně konkurence  
 b. jsou pro vás klíčové vstupy, kde se používá AMP Cache  
 c. máte flexibilní pracovní dobu  
@@ -23,7 +23,7 @@ d. každého, kdo má měřicí koncový bod
 
 ## Řešení
 
-1. **Který z následujících důvodů *není* indikátorem, že byste měli zvážit AMP?**  
+1. **Který z následujících důvodů není indikátorem, že byste měli zvážit AMP?**  
 c. máte flexibilní pracovní dobu
 2. **O co je dobré usilovat při tvorbě AMP verze webu?**  
 b. aby AMP verze vypadala a používala se stejně jako běžný web

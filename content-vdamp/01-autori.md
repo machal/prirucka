@@ -12,7 +12,7 @@ Martin je webový expert na volné noze s více než dvacetiletou praxí a zam
 Robin je javascriptový vývojář ve společnosti NewStore. V minulosti se podílel na responzivním redesignu portálu Jobs.cz. S Martinem spoluzakládal spolek Frontendisti.cz, nyní spolu zpovídají hosty v podcastu. Žije a pracuje v Berlíně, kde také organizuje srazy a přednáší. Na svém YouTube kanále pravidelně zveřejňuje videa pro webové vývojáře.  
 [robinpokorny.com](https://robinpokorny.com/)
 
-Robin připravil pro knihu příklady, testy na konci kapitol a text podkapitoly „Tutoriál: Jak převést do AMP blogpost?“. Obsahu také výrazně pomohl odbornými konzultacemi a jako hlavní obsahový recenzent.
+Robin připravil pro knihu příklady, kvízy na konci kapitol a text podkapitoly „Tutoriál: Jak převést do AMP blogpost?“. Obsahu také výrazně pomohl odbornými konzultacemi a jako hlavní obsahový recenzent.
 
 ## Odborné připomínky
 

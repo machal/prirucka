@@ -180,4 +180,4 @@ AMP pak totiž působí dojmem uzavřenosti, exkluzivity pro velké dodavatele k
 
 Tady se už ale pojďme rozloučit s kritikou a zároveň s první kapitolou.
 
-Své znalosti si ještě můžete prověřit v testu a pak už si povíme něco o možnostech implementace AMP.
+Své znalosti si ještě můžete prověřit v kvízu a pak už si povíme něco o možnostech implementace AMP.

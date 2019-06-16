@@ -284,4 +284,4 @@ Chcete si to zkusit? K vašim službám:
 * Otevření AMP stránky v prohlížeči: [vrdl.in/vdampp0](https://www.vzhurudolu.cz/files/vdamp/pokrocily-0/product.amp.html)
 * Stažení v ZIPu: [vrdl.in/vdampp0z](https://www.vzhurudolu.cz/files/vdamp/vdamp-pokrocily-0.zip)
 
-Tady se rozloučíme s druhou kapitolou a psaním kódu. Dále se zamyslíme nad možnostmi implementace AMP do vašeho webu. Ale nejprve kapitolu shrneme prostřednictvím testu.
+Tady se rozloučíme s druhou kapitolou a psaním kódu. Dále se zamyslíme nad možnostmi implementace AMP do vašeho webu. Ale nejprve kapitolu shrneme prostřednictvím kvízu.

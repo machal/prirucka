@@ -68,4 +68,4 @@ I další případová studie je zajímavá. Francouzský online prodejce biopot
 
 To nezní špatně, že? Přítomnost AMP v e-commerce je každopádně téma, o kterém toho ještě hodně uslyšíme.
 
-Zde ukončíme čtvrtou kapitolu. Dostali jste zde chuť vytvářet vlastní web na AMP? Po testu a jeho vyhodnocení vám doporučíme jak na to.
+Zde ukončíme čtvrtou kapitolu. Dostali jste zde chuť vytvářet vlastní web na AMP? Po kvízu a jeho vyhodnocení vám doporučíme jak na to.
