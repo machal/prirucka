@@ -31,7 +31,7 @@ Vidět často nestačí, takže ještě vše vysvětlíme:
 
 * Stránka ve výchozím stavu zobrazuje odstavec s textem „Hello World“ a tlačítko.
 * Kliknutím nebo tapnutím na tlačítko (`on="tap:…"`) se mění stav stránky, konkrétně proměnná `foo` v něm.
-* V odstavci `<p>` pak atribut `[text]` ukazuje dynamickou vazbu. Prostě to, jak má vypadat obsah po vyvolání změny. `'Hello ' + foo` je výraz popisující konkrétní obsah po vyvolání změny.
+* V odstavci `<p>` pak atribut `[text]` ukazuje dynamickou vazbu. Prostě to, jak má vypadat obsah po vyvolání změny. `'Hello ' + foo` je výraz popisující konkrétní obsah po vyvolání změny.
 
 Vyzkoušet můžete zde: [jsbin.com/gulegul](https://jsbin.com/gulegul/edit?html,output)
 

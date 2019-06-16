@@ -6,7 +6,7 @@
 
 ### Vzhůru do (responzivního) webdesignu
 
-Kompletní průvodce návrhem a implementací designu responzivních webů. Vydáno v roce 2017, aktualizováno 2018. 311 stránek. E-book i tištěná kniha.  
+Kompletní průvodce návrhem a implementací designu responzivních webů. Vydáno v roce 2017, aktualizováno 2018. 311 stránek. E-book i tištěná kniha.  
 [vzhurudolu.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
 
 ### Vzhůru do CSS3

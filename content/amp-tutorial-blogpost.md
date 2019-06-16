@@ -191,7 +191,8 @@ Nyní nám validátor ukazuje už jen pět chyb. Jsme za půlkou! Jak opravit i 
 Hned tři chyby se týkají stejné záležitosti: AMP Boilerplate. Pokud si nalistujete podkapitolu o [AMP HTML](amp-html.md), uvidíte, že v hlavičce dokumentu musí být vložen speciální řádek.
 
 ```html
-<style amp-boilerplate>body{ -webkit-animation:-amp-start…
+<style amp-boilerplate>
+  body{ -webkit-animation:-amp-start…
 ```
 
 Předchozí výpis je jen ukázka, celý povinný kód je skoro 800 znaků dlouhý. Naštěstí nikdo nikoho nenutí si jej pamatovat. Zkopírujte jej jako my z výchozích šablon pro AMP stránky a vložte do tagu `<head>`. [amp.dev/boilerplate](https://amp.dev/boilerplate/) 

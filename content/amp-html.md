@@ -41,7 +41,7 @@ Ukazujeme vám zde opravdu minimální HTML. Autoři AMP doporučují ještě na
 Mimochodem, určitě vás bude zajímat, jak napsat symbol blesku:
 
 * Na Windows většinou stačí podržet klávesu Alt a pak napsat „26A1“.
-* Na Macu si otevřete okno pro vkládání emoji (Ctrl + Cmd + Space) a hledejte „lightning bolt“.
+* Na Macu si otevřete okno pro vkládání emoji (Ctrl + Cmd + Space) a hledejte „lightning bolt“.
 
 Další informace o základním AMP HTML najdete na následujících odkazech:
 
