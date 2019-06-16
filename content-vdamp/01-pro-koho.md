@@ -19,4 +19,4 @@ Milí weboví vývojáři a kodéři:
 * Ve třetí kapitole se zaměříme na způsoby implementace do současného webu.
 * Další kapitoly jsou už méně technické, ale věnují se věcem, které tak či tak pravděpodobně budete řešit – [nasazení AMP](amp-je-pro-vas.md), měření návštěvnosti nebo třeba nasazení AMP v e-mailech či reklamě.
 
-Pro pochopení technických částí budete potřebovat dobrou znalost HTML, CSS a základních principů programování v JavaScriptu. Text také vyžaduje hrubý přehled o moderních webařských technologiích a postupech. Pokud je to možné, vždy odkazujeme na bližší vysvětlení ve zdrojích na webu.
+Pro pochopení technických částí budete potřebovat dobrou znalost HTML, CSS a základních principů programování v JavaScriptu. Text také vyžaduje hrubý přehled o moderních webařských technologiích a postupech. Pokud je to možné, vždy odkazujeme na bližší vysvětlení ve zdrojích na webu.
