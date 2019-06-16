@@ -114,7 +114,7 @@ Po správném převedení vypadá zápis takto:
 </amp-img>
 ```
 
-Podíváme se do prohlížeče: obrázek tam vůbec není, přibyla však chyba ve validátoru. Hláška nás upozorňuje na nekompletní atributy pro layout. Z předchozí podkapitoly víme, že náhradou pružného obrázku (šířka se přizpůsobuje šířce rodičovského prvku) je [layout „responsive“](amp-layout-atribut.md). Fyzické rozměry obrázku jsou 889 × 889, zapíšeme je také. Třídu `img-fluid`, která se starala o onu _responzivnost, _můžeme odstranit.
+Podíváme se do prohlížeče: obrázek tam vůbec není, přibyla však chyba ve validátoru. Hláška nás upozorňuje na nekompletní atributy pro layout. Z předchozí podkapitoly víme, že náhradou pružného obrázku (šířka se přizpůsobuje šířce rodičovského prvku) je [layout „responsive“](amp-layout-atribut.md). Fyzické rozměry obrázku jsou 889 × 889, zapíšeme je také. Třídu `img-fluid`, která se starala o onu _responzivnost_, můžeme odstranit.
 
 Finální podoba zápisu obrázku vypadá takto:
 

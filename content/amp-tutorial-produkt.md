@@ -154,21 +154,25 @@ Tady asi není co vysvětlovat. V dalším kroku už budeme data zpracovávat a 
 ```html
 <amp-list src="boty.json">
   <template type="amp-mustache">
-    <tr>
-      <td>
-        <input type="radio" name="size"
-          id="size-{{size}}" value="{{size}}">
-      </td>
-      <td>
-        <label for="size-{{size}}">{{size}}</label>
-      </td>
-      <td>
-        {{width}} mm
-      </td>
-      <td>
-        {{delivery}}
-      </td>
-    </tr>
+    <!--{{#products}}-->
+      <tr class="available-{{available}}">
+        <td class="variants-table-radio">
+          <input type="radio" name="size"
+            id="size-{{size}}" value="{{size}}">
+        </td>
+        <td class="variants-table-size">
+          <label for="size-{{size}}">
+            {{size}}
+          </label>
+        </td>
+        <td class="variants-table-width">
+          {{width}} mm
+        </td>
+        <td class="variants-table-delivery">
+          {{delivery}}
+        </td>
+      </tr>
+    <!--{{/products}}-->
   </template>
 </amp-list>
 ```
@@ -178,7 +182,7 @@ Tady už _je_ co vysvětlovat, takže vzhůru do toho!
 * Komponenta `amp-list` vypisuje seznam položek, nejčastěji z externího zdroje (např. `example.com/api/vypis-bot?id=fare01` pro konkrétní model). V našem případě ze souboru `boty.json`.
 * `<template type="amp-mustache">` se stará o výpis v jednoduchém šablonovacím jazyku Mustache, který je známý i mimo svět AMP. Zde probíhá cyklus, který vytáhne všechny položky ze souboru JSON a vypíše hodnoty pro jednotlivé klíče. Mustache je vypisuje na místa uzavřená do dvou složených závorek – `{{size}}`.
 
-Připomínáme, že výsledek můžete vidět v živé ukázce. [vrdl.in/vdampp0](https://www.vzhurudolu.cz/files/vdamp/pokrocily-0/product.amp.html)
+Zobrazujeme tady jen podstatný výsek kódu. Připomínáme, že výsledek i celý kód můžete vidět v živé ukázce. [vrdl.in/vdampp0](https://www.vzhurudolu.cz/files/vdamp/pokrocily-0/product.amp.html)
 
 Sledujte, že stránka se nejprve vykreslí bez oblasti s tabulkou. Na jejím místě se vykreslují tři „nervózní tečky“, charakteristický načítací symbol pro externí komponenty AMP. Jakmile se však externí data stáhnou a zpracují, dostaneme požadovanou tabulku.
 
