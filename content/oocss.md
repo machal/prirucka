@@ -72,9 +72,9 @@ Klazule `!important` je víceméně také zapovězená. Tu si necháváme pro de
 Kvůli zachování nízké specifičnosti se také snažíme co nejméně používat následující:
 
 - selektorů potomka  
-`.button .button-icon → .button-icon`
+`.button .button-icon › .button-icon`
 - kombinované selektory  
-`.button.button-primary → .button-primary`
+`.button.button-primary › .button-primary`
 
 Více o specifičnosti v CSS: 
 

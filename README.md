@@ -220,6 +220,15 @@ Totéž jen pro e-booky pomocí `.ebook-only`:
 
 Pozor, není možné totéž udělat inline pomocí `<span class="ebook-only" markdown="1">`. Nějak to prostě nefunguje.
 
+### Speciální znaky
+
+mPDF jako generátor PDF verze e-booků neumí fallback pro znaky, které nejsou ve fontech. Respektive, [měl by umět](https://mpdf.github.io/reference/mpdf-variables/usesubstitutions.html), ale vrací to chyby.
+
+V textech pro e-booky je tedy potřeba se vyhnout speciálním znakům jako je → nebo ⚡.
+
+- *Navigace v menu UI*  
+Původně se používalo →, ale nově lépe › (_Správce (Admin) › Služba (Property) › Údaje o měření (Tracking info))
+
 ### Umístění reklamy na webu
 
 Standardně po druhém odstavci. Lze změnit jednou nebo více kotvami `<!-- AdSnippet -->` v obsahu.

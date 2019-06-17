@@ -38,7 +38,7 @@ _Schéma fungování AMPHTML ad. Zdroj: [amp.dev](https://amp.dev/documentation/
 
 Vezměme graf trochu nezvykle zprava doleva:
 
-1. Z pohledu tvůrce banneru jde o HTML dokument, který začíná zvláštním parametrem `<html ⚡4ads>`. K dispozici je také podmnožina AMP komponent. Detaily je možné najít ve specifikaci odkazované níže.
+1. Z pohledu tvůrce banneru jde o HTML dokument, který začíná zvláštním parametrem `<html amp4ads>`. K dispozici je také podmnožina AMP komponent. Detaily je možné najít ve specifikaci odkazované níže.
 2. Reklama je umístěná na specializovaný reklamní server. Projde automatickou validací, kterou známe z AMP stránek. Následně je pomocí různých technických kejklí zaručujících rychlost dodána do stránky s reklamními pozicemi.
 3. Zobrazení na AMP stránce se zajišťuje vložením značky `<amp-ad>`.
 
@@ -64,7 +64,7 @@ Pro techniky mezi námi nebude od věci ukázat výchozí HTML šablonu pro AMP 
 
 ```html
 <!doctype html>
-<html ⚡4ads>
+<html amp4ads>
 <head>
   <meta charset="utf-8">
   <title>Moje reklama</title>
@@ -90,7 +90,7 @@ Pro techniky mezi námi nebude od věci ukázat výchozí HTML šablonu pro AMP 
 
 Vysvětlíme si to zajímavé:
 
-* `<html ⚡4ads>` – určitě jste si všimli jiného typu dokumentu. I tady můžeme vynechat emoji a nahradit jej `amp4ads`.
+* `<html amp4ads>` – určitě jste si všimli jiného typu dokumentu. I tady můžeme vynechat použít emoji se symbolem blesku.
 * `amp4ads-v0.js` – přesně tak, tento formát má vlastní AMP runtime.
 * `<style amp4ads-boilerplate>` – šablona AMP Ads má vcelku vtipné výchozí styly, že? Nápověda pro zvědavé: AMP Ads nutně potřebuje pro své zobrazení JavaScript.
 * Může se vám také hodit informace, že vlastní CSS nemohou být větší než 20 kB.

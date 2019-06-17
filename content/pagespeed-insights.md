@@ -22,7 +22,7 @@ Video: <a href="https://www.youtube.com/watch?v=nCNLRML_Yw8">PageSpeed Insights:
 
 Teď ale šup na testování:
 
-→ [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
+› [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs)
 
 V dalším textu se vám pokusím pomoci s interpretací výsledků.
 

@@ -69,7 +69,7 @@ Má kvůli WebP smysl zdvojovat obrázky? Záleží od situace, ale hlavně u v�
 
 O případu mého klienta, e-shopu VašeČočky.cz jsem [nedávno psal](rychlost-designeri.md#data):
 
-> Když kolegové nasadili WebP obrázky, ušetřili 30 % datového objemu úvodní stránky (1250 kB → 950 kB) a o pětinu snížili čas pro Page Load (19,8 s → 16,8 s).
+> Když kolegové nasadili WebP obrázky, ušetřili 30 % datového objemu úvodní stránky (1250 kB › 950 kB) a o pětinu snížili čas pro Page Load (19,8 s › 16,8 s).
 
 Podobné zkušenosti mám i z jiných testů a klientských projektů. Není výjimkou ani větší než poloviční ušetření obrázkových dat.
 

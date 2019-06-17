@@ -57,7 +57,7 @@ Minimální HTML je velmi podobné svému sourozenci u klasického AMP:
 
 ```html
 <!doctype html>
-<html ⚡4email>
+<html amp4email>
   <head>
     <meta charset="utf-8">
     <style amp4email-boilerplate>
@@ -75,7 +75,7 @@ Respektive – jak sami vidíte, jde o směsici prvků použitých u AMP Website
 
 Kromě vám již známých pravidel tady například platí:
 
-* Jiný typ dokumentu: `<html ⚡4email>` nebo `<html amp4email>`.
+* Jiný typ dokumentu: `<html amp4email>` nebo emoji „High Voltage“ namísto `amp`.
 * Optimální šířka layoutu je 800 pixelů nebo méně. Autoři upozorňují, že širší obsah se může v některých e-mailových klientech oříznout.
 * Pokročilé trackování příjemců e-mailů jako na webech – například pomocí `<amp-analytics>` – v tuhle chvíli možné není. Zůstaneme u klasického měřicího pixelu známého z HTML e-mailů.
 

@@ -4,7 +4,7 @@ Když se podíváte na základní kostru dokumentu, bude vypadat následovně:
 
 ```html
 <!doctype html>
-<html ⚡ lang="cs">
+<html amp lang="cs">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1">

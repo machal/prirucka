@@ -22,7 +22,7 @@ c. zobrazí AMP bez runtime, lze použít `<noscript>`
 d. zobrazí hlášku, že klient tento typ e-mailu nepodporuje
 5. **Jaký formát má AMP Story?**  
 a. tělo s jediným elementem `<amp-story>`  
-b. stránka s kořenovým tagem `<html ⚡4story>`  
+b. stránka s kořenovým tagem `<html amp4story>`  
 c. tělo s jediným elementem `<amp-carousel>`  
 d. tělo s obrázky slajdů jako položky nečíslovaného seznamu
 

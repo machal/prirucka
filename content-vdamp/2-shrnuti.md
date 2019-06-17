@@ -3,7 +3,7 @@
 1. **Který z uvedených kořenových elementů definuje AMP stránku?**  
 a. `<amphtml>`  
 b. `<html data-amp>`  
-c. `<html ⚡>`  
+c. `<html amp>`  
 d. `<html class="amp">`
 2. **Pomocí kterého elementu se v AMP zapisuje obrázek?**  
 a. `<picture>`  
@@ -44,7 +44,7 @@ d. z CSS proměnných `var(--amp-*)`
 ## Řešení
 
 1. **Který z uvedených kořenových elementů definuje AMP stránku?**  
-c. `<html ⚡>`
+c. `<html amp>`
 2. **Pomocí kterého elementu se v AMP zapisuje obrázek?**  
 b. `<amp-img>`
 3. **Autorské styly pro AMP stránky musí být:**  

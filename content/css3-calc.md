@@ -17,7 +17,7 @@ Není. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat
 
 ```sass
 width: (100% / 3)
-// → width: 33.33333333%
+// › width: 33.33333333%
 ```
 
 Jenže preprocesoru dochází dech v momentě, kdy potřebuji kombinovat více jednotek. Vezměme příklad třísloupcového rozvržení s vnějším okrajem o šířce `1em`:
@@ -30,7 +30,7 @@ width: calc(100% / 3 - (2 * 1em))
 
 ## Podpora v prohlížečích
 
-Funkci `calc()` nepodporuje hlavně Internet Explorer 8, jeho starší sourozenci a ani Android Browser. V době psaní textu mohou u průměrného českého webu tvořit maximálně něco kolem 3–4 % návštěvnosti. 
+Funkci `calc()` nepodporuje hlavně Internet Explorer 8, jeho starší sourozenci a ani Android Browser. V době psaní textu mohou u průměrného českého webu tvořit maximálně něco kolem 3–4 % návštěvnosti.
 
 Pokud funkci používáte, myslete na tyto uživatele, a pokud je to potřeba, poskytněte jim alternativu v podobě definovaného fallbacku. Může vypadat mírně jinak. Je to lepší, než když se ve starém prohlížeči rozpadnou důležité věci.
 

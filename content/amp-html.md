@@ -10,7 +10,7 @@ Když se podíváte na základní kostru dokumentu, bude vypadat následovně:
 
 ```html
 <!doctype html>
-<html ⚡ lang="cs">
+<html amp lang="cs">
   <head>
     <meta charset="utf-8">
     <meta name="viewport"
@@ -31,14 +31,18 @@ Když se podíváte na základní kostru dokumentu, bude vypadat následovně:
 
 Podívejme se hlavně na rozdíly oproti běžnému HTML:
 
-* `<html ⚡>` je označení AMP stránky. Můžete také použít `<html amp>`.
+* `<html amp>` je označení AMP stránky. 
 * `<script async src="https://cdn.ampproject.org/v0.js">` asynchronně stahuje povinnou hlavní javascriptovou knihovnu AMP.
 * `<style amp-custom>` je místo, kam vložíte vlastní CSS pro tuhle stránku.
 * `<style amp-boilerplate>` obsahuje povinné styly, které pomáhají prohlížeči s vykreslením stránky.
 
 Ukazujeme vám zde opravdu minimální HTML. Autoři AMP doporučují ještě například vložit strukturovaná data v JSON-LD, která se ve výsledcích vyhledávání zobrazují jako Rich Snippets. Martin o nich psal na Vzhůru dolů. [vrdl.cz/p/rich-snippets](https://www.vzhurudolu.cz/prirucka/rich-snippets)
 
-Mimochodem, určitě vás bude zajímat, jak napsat symbol blesku:
+### Symbol blesku
+
+Namísto `amp` můžete v řádku `<html>` použít také emoji symbol „High Voltage“, ale v textech se mu budeme kvůli kompatibilitě zobrazení na různých zařízeních vyhýbat. [emojipedia.org/high-voltage-sign/](https://emojipedia.org/high-voltage-sign/)
+
+Může vás bude zajímat, jak jej napsat:
 
 * Na Windows většinou stačí podržet klávesu Alt a pak napsat „26A1“.
 * Na Macu si otevřete okno pro vkládání emoji (Ctrl + Cmd + Space) a hledejte „lightning bolt“.

@@ -44,7 +44,7 @@ Tasty.co je krásný příklad „kanonické“ implementace AMP, jak o tomto zp
 
 ```html
 <!DOCTYPE html>
-  <html ⚡…>
+  <html amp…>
 ```
 
 Ano, AMP HTML je jediná verze řešící oba způsoby distribuce.

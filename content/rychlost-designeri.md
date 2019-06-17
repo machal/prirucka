@@ -174,7 +174,7 @@ Datový objem je evergreen, tam se dá vždycky něco vylepšit. Zaměřím se t
 - Zvažte použití formátu [WebP](webp.md). Je to lépe komprimovaná náhrada JPEG. Umí jej sice jen Chrome a Opera, ale není těžké servírovat WebP i JPEG najednou. Detaily naleznete v článku [o HTML značce Picture](picture.md).
 - Když už využíváte JPEG, zvažte náhradu open source řešení pro zmenšování datového objemu obrázků. Doporučuji například [Kraken.io](https://kraken.io/).
 
-Chcete příklad z praxe? Když kolegové z [VašeČočky.cz](https://www.vasecocky.cz/) nasadili WebP obrázky, ušetřili 30 % datového objemu úvodní stránky (1250 kB → 950 kB) a o pětinu snížili čas pro Page Load (19,8 s → 16,8 s).
+Chcete příklad z praxe? Když kolegové z [VašeČočky.cz](https://www.vasecocky.cz/) nasadili WebP obrázky, ušetřili 30 % datového objemu úvodní stránky (1250 kB › 950 kB) a o pětinu snížili čas pro Page Load (19,8 s › 16,8 s).
 
 ### Javascript: Odstraňte blokování parsování  {#blokujici-js}
 
@@ -223,7 +223,7 @@ Po obrázcích a Javascriptu bývají webové fonty třetím největším datov�
 
 Je ale nutné, aby vývojář převzal kontrolu a způsob servírování sjednotil napříč všemi přohlížeči. Osobně k tomu používám knihovnu [FontFaceObserver](https://fontfaceobserver.com/).
 
-Příklad z praxe? Kolegové z VašeČočky.cz snížili nasazením FontFaceObserveru hodnotu metriky Start Render Time na polovinu (13,2 s → 6,6 s).
+Příklad z praxe? Kolegové z VašeČočky.cz snížili nasazením FontFaceObserveru hodnotu metriky Start Render Time na polovinu (13,2 s › 6,6 s).
 
 
 ### Zvažte nasazení technologie AMP {#amp-heading}

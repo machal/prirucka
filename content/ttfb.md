@@ -65,7 +65,7 @@ Total time: 1.886265
 
 Pro netechniky může být zajímavý tenhle online nástroj:
 
-→ [bytecheck.com](http://www.bytecheck.com)
+› [bytecheck.com](http://www.bytecheck.com)
 
 <figure>
 <img src="../dist/images/original/ttfb-bytecheck.jpg" alt="TTFB od ByteCheck">

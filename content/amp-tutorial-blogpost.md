@@ -56,7 +56,7 @@ Ta zmíněná jednořádková změna znamená v tomto případě přidání nás
 
 Že jsme to provedli správně, poznáme, když si otevřeme konzoli prohlížeče pomocí Ctrl (Cmd) + Alt + J a znovu načteme stránku. V konzoli se objeví výpis:
 
-> Powered by AMP ⚡ HTML
+> Powered by AMP HTML
 
 Hurá! Máme AMP stránku!
 
@@ -85,7 +85,7 @@ Rozšíření „AMP Validator“ najdete v internetovém obchodě Chromu. [vrdl
 
 Pokud máte toto rozšíření nainstalované, všimnete si jistě jedné podivnosti: na článku není aktivní, jeho ikonka je šedivá jako na obyčejné stránce. To je proto, že rozšíření rozpoznává stránky ne podle přidaného skriptu, ale podle atributu na tagu `<html>`.
 
-Abychom dostali výpis chyb, stačí upravit kořenový tag na `<html ⚡>`. Popřípadě, když třeba nevíte, jak toto emoji zapsat, funguje i `<html amp>`. To je ona druhá jednořádková úprava.
+Abychom dostali výpis chyb, stačí upravit kořenový tag na `<html amp>`. Popřípadě emoji „High Voltage“ namísto `amp`. To je ona druhá jednořádková úprava.
 
 Pro shrnutí: do HTML musíte přidat buď AMP skript, nebo `amp` atribut. Teprve pak budete moci stránku validovat. A protože tyto dvě změny jsou povinné, uděláme oboje a půjdeme opravovat nalezené chyby.
 

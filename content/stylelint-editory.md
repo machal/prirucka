@@ -6,11 +6,11 @@ Pojďme si rozjet [Stylelint](stylelint.md) přímo v editoru. Je to totiž to p
 ## Sublime Text {#atom}
 
 - Přes Package Control si nainstalujte [SublimeLinter](http://sublimelinter.readthedocs.io):  
-  `Ctrl/Cmd + Shift + p` → „Package Control: Install Package“  → „SublimeLinter“  
+  `Ctrl/Cmd + Shift + p` › „Package Control: Install Package“  › „SublimeLinter“  
 - V příkazové řádce si globálně nainstalujte balíček [stylelint_d](https://github.com/jo-sm/stylelint_d):  
   `npm install stylelint_d -g`
 - Přes Package Control si nainstalujte [SublimeLinter-contrib-stylelint_d](https://github.com/jo-sm/SublimeLinter-contrib-stylelint_d):  
-  `Ctrl/Cmd + Shift + p` → „Package Control: Install Package“  → „SublimeLinter-stylelint_d“  
+  `Ctrl/Cmd + Shift + p` › „Package Control: Install Package“  › „SublimeLinter-stylelint_d“  
 
 To, že vám Stylelint funguje, poznáte tak, že před problematickými řádky řádcích kódu se začne zobrazovat tečka s chybovou hláškou.
 

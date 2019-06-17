@@ -157,7 +157,7 @@ To, že každý selektor platí globálně, byl svého času první argument pro
 Na kódu výše je vidět, jak bojujeme se stylováním `<h2>`. Jenže při použití OOCSS nebo ještě lépe BEM problémy s globálností neplatí. Všechny komponenty, jejich podelementy nebo modifikátory mají prefix s název komponety:
 
 ```
-.box h2 → .head--green
+.box h2 › .head--green
 ```
 
 Zůstává jen jediný problém – s vymýšlením unikátních prefixů a pojmenováním komponent. 
