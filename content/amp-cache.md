@@ -179,6 +179,6 @@ https://example-com.<cache.updateCacheApiDomainSuffix>/
   &amp_ts=<ts_val>&amp_url_signature=<sig_val>
 ```
 
-Je potřeba mít vygenerovaný RSA klíč pro podepisování automatizovaných výzev k aktualizaci. Jinak na tom ale není nic složitého. Více informací najdete na [google.com/amp/cache/update-cache](https://developers.google.com/amp/cache/update-cache).
+Je potřeba mít vygenerovaný RSA klíč pro podepisování automatizovaných výzev k aktualizaci. Jinak na tom ale není nic složitého. Více informací najdete na [developers.google.com/amp/cache/update-cache](https://developers.google.com/amp/cache/update-cache).
 
 AMP Cache teď opustíme a podíváme se na software, který s keší velmi souvisí – zobrazovač AMP, známý též jako AMP Viewer.
