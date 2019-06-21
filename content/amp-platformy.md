@@ -116,7 +116,7 @@ Pokud používáte Google Chrome, je možné testovat AMP stránky z počítače
 * _Rozšíření AMP Validator_  
 Ukazuje, které navštívené stránky mají AMP verzi s možností přejít na ni.
 * _Developer Tools a emulace_  
-Zobrazte si vývojářské nástroje pomocí Ctrl (Cmd) + Alt + I. Zapněte „Device Toolbar“ pomocí Ctrl (Cmd) + Shift + M. Nahoře zvolte mobilní zařízení, např. „Galaxy S5“, přejděte na Google.com a vyhledejte si například „Vzhůru dolů Flexbox“. Jako první by na vás měla vyskočit AMP verze článku.
+Zobrazte si vývojářské nástroje pomocí F12 (na Macu Cmd + Option + I). Zapněte „Device Toolbar“ pomocí Ctrl (Cmd) + Shift + M. Nahoře zvolte mobilní zařízení, např. „Galaxy S5“, přejděte na Google.com a vyhledejte si například „Vzhůru dolů Flexbox“. Jako první by na vás měla vyskočit AMP verze článku.
 
 Na mobilu je to jednodušší. Většina míst, kde se zobrazují stránky AMP, souvisí právě se zobrazením na mobilech. Stačí si prostě zadat nějaké fráze do vyhledávání Googlu a na nějaký výsledek s ikonkou blesku dříve či později narazíte.
 
