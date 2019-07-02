@@ -66,7 +66,7 @@ Jak už jsem na více místech zmínil, postcss může časem v některých aspe
 
 Budete se možná divit, ale po letech mrtvolného spánku se dnes standard CSS vyvíjí i v rovině syntaxe jazyka.
 
-V postcss tedy tenhle kód používající CSS proměnné a pojmenovaná média…
+V postcss tedy tenhle kód používající [CSS proměnné](css-promenne.md) a pojmenovaná média…
 
 ```css
 :root {

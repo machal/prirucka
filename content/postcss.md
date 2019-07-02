@@ -55,7 +55,7 @@ Ještě chci zmínit, že jakmile váš web poběží na [HTTP/2](http-2.md), vy
 
 ### Proměnné
 
-Proměnné se v CSS zapisují tímto způsobem:
+[Proměnné](css-promenne.md) se v CSS zapisují tímto způsobem:
 
 ```css
 :root {
