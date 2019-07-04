@@ -108,7 +108,7 @@ _Čím se liší distribuce běžné stránky od AMP?_
 
 Roboti se o AMP stránce dozví prostřednictvím odkazu v HTML stránce (1), pak ji umístí na celosvětovou síť optimalizovaných serverů AMP Cache (2), kde je k dispozici platformám, které AMP dokáží využít (3).
 
-Mezi platformy využívající AMP patří kromě Googlu také Bing, LinkedIn, Pinterest nebo  Twitter.
+Mezi [platformy](amp-platformy.md) využívající AMP patří kromě Googlu také Bing, LinkedIn, Pinterest nebo  Twitter.
 
 ## Proč nás má AMP zajímat? {#proc}
 
