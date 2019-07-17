@@ -120,6 +120,17 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 
 Ukázky vkládáme v `<iframe>`. Doporučované vložení přes HTML není kompatibiliní s AMP.
 
+```html
+<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/POajOd/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+```
+
+Pozor na:
+
+- `https:` na začátku adresy - není ne výchozím
+- `theme-id=light` - světlé barvy
+- `default-tab=result,css` - nejprve výsledek, pak podstatný kód
+
 ### Tabulka
 
 Jednodušší:

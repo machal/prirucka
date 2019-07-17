@@ -287,19 +287,6 @@ Samozřejmě můžete využít i pravidlo `@supports`:
 }
 ```
 
-## Praktické využití {#prakticke-vyuziti}
-
-S CSS proměnnými jsem si ve své době dost hrál, takže je můj CodePen plný tématických demíček. Upozorním vás na ty nejzajímavější příklady praktického využití a časem o tom napíšu samostatný text:
-
-* Sdílení hodnot breakpointů mezi JS a CSS. [cdpn.io/e/JOZpKV](https://codepen.io/machal/pen/JOZpKV)
-* Změna parametrů flexboxového layoutu na některých breakpointech. [cdpn.io/e/XzYzXJ](https://codepen.io/machal/pen/XzYzXJ)
-* Typografický rytmus založený na násobcích základní veličiny. [cdpn.io/e/wPXqYG](https://codepen.io/machal/pen/wPXqYG)
-* Inverzní barevné schéma pro komponentu. [cdpn.io/e/POajOd](https://codepen.io/machal/pen/POajOd)
-* Změna jediného parametry box-shadow na najetí myši. [cdpn.io/e/KyeqzE](https://codepen.io/machal/pen/KyeqzE)
-* Obarvení SVG vloženého do HTML z CSS. [cdpn.io/e/POaKNv](https://codepen.io/machal/pen/POaKNv)
-
-Chcete všechny? Vzhůru sem: [codepen.io/collection/DmROBE](https://codepen.io/collection/DmROBE/).
-
 Tolik k volitelným vlastnostem a CSS proměnným. Teď už vám můžu nabídnout jen sumarizaci toho nejdůležitějšího.
 
 ## Shrnutí {#shrnuti}
@@ -309,5 +296,7 @@ Pojďme si sesumírovat klady a zápory volitelných vlastností a jejich použi
 * Plus: Počítají se v prohlížeči a jsou dostupné z CSS, HTML i JS.
 * Minus: Není je možné použít na jakémkoliv místě v kódu jako preprocesorové proměnné.
 * Minus: Nepodporuje je Internet Explorer 11. Ale možnosti, jak si s tím poradit, zde jsou.
+
+Pro [ukázky praktického použití](css-promenne-priklady.md) jděte na další článek.
 
 <!-- AdSnippet -->
