@@ -12,7 +12,7 @@ https://www-vzhurudolu-cz.cdn.ampproject.org/
 Je to jeden z důležitých článků řetězce, který plní rychlostní cíle AMP. Mezipaměť AMP Cache kromě ukládání zařizuje další optimalizace stránky (jako by jich v AMP formátu nebylo dost, že?).
 
 <figure>
-<img src="../dist/images/original/vdamp/amp-cache.png" height="540" width="1920" alt="">
+<img src="../dist/images/original/vdamp/amp-cache.png" width="1920" height="540" alt="">
 <figcaption markdown="1">
 _Než se AMP stránka dostane k uživateli, musí se uložit do serverové keše, projít optimalizacemi a po vyžádání uživatelem se zobrazit v zobrazovači AMP Viewer._
 </figcaption>

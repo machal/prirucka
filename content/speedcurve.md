@@ -65,7 +65,7 @@ _Červená laťka aneb rychlostní limity ve SpeedCurve._
 Limity je možné kontrolovat také ve speciálním pohledu, který je možné si vystavit ve firemním kontrolním panelu:
 
 <figure>
-<img src="../dist/images/original/speedcurve-budgets-dashboard.jpg" width="1920" height="540"  alt="SpeedCurve: Performance Budgets Dashboard">
+<img src="../dist/images/original/speedcurve-budgets-dashboard.jpg" width="1920" height="540" alt="SpeedCurve: Performance Budgets Dashboard">
 <figcaption markdown="1">
 _Zelené plochy rychlostních limitů říkají, že tady je vše v pořádku._
 </figcaption>
