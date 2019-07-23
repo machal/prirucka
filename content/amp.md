@@ -74,11 +74,11 @@ Je zde však několik rozdílů. Jednak označení AMP stránky pomocí blesku (
 * Místo pro vložení vlastních stylů: `<style amp-custom>`
 * Základní povinné styly pro AMP: `<style amp-boilerplate>`
 
-Více informací [o AMP HTML](https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup), stejně jako plnohodnotnou dokumentaci frameworku najdete na [amp.dev](https://amp.dev/).
+Více informací [o AMP HTML](amp-html.md) je na Vzhůru dolů. Plnohodnotnou dokumentaci frameworku najdete na [amp.dev](https://amp.dev/).
 
 Čím se liší vývoj v AMP oproti vývoji běžných webů? Je toho více, ale zůstaňme u těch nejdůležitějších rozdílů:
 
-* V [AMP HTML](https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy. V tomto případě `<amp-img>`. Je to proto, že technologie vycházející z webových standardů zatím neobsahují věci důležité pro rychlé zobrazení stránek, jako třeba [statický layout](https://amp.dev/documentation/guides-and-tutorials/learn/amp-html-layout/) nebo inteligentní prioritizaci stahování zdrojů.
+* V [AMP HTML](amp-html.md) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy. V tomto případě `<amp-img>`. Je to proto, že technologie vycházející z webových standardů zatím neobsahují věci důležité pro rychlé zobrazení stránek, jako třeba [statický layout](https://amp.dev/documentation/guides-and-tutorials/learn/amp-html-layout/) nebo inteligentní prioritizaci stahování zdrojů.
 * [CSS](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/) se vkládá dovnitř HTML, nesmí být větší než 50 kB a je zakázáno používat oblíbenou direktivu `!important`, která je rezervována pro styly vkládané frameworkem AMP. Webfonty z cizích domén jsou povolené jen od některých dodavatelů.
 * Stránka musí projít [validací](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp) AMP formátu a nejde jinak, než aby běžela na protokolu HTTPS.
 * A co JavaScript? Ten náš, autorský, je zcela zakázaný. Na druhou stranu – máme k dispozici zhruba stovku [komponent](https://amp.dev/documentation/components/?), které ho docela hezky nahrazují.
