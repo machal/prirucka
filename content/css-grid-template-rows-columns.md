@@ -33,14 +33,117 @@ Vysvětleme:
 
 Tady je CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
 
-*TODO poznámka:*
+## Co když je položek více než definuje grid? (Implicitní vs. explicitní grid)
 
-- implicitní grid (změna počtu položek)
+Vezměme, že nám zákeřný frontend kodér do HTML přidá pátou položku:
 
-*TODO stručně a pak rozepsat:*
+```html
+<div class="container">
+  <p class="column">1</p>
+  <p class="column">2</p>
+  <p class="column">3</p>
+  <p class="column">4</p>
+  <p class="column">5</p>
+</div>
+```
 
-- jednotky, včetně kombinací a fr
-- repeat()
-- auto-fill() / auto-fit()
-- explicitně pojmenované (a grid-template-areas)
-- 
+Jak bude vypadat pátá položka zobrazená v gridu? V tomto případě stejně jako předchozí čtyři. Algoritmus gridu ji přidělí 50% šířku a automatickou výšku.
+
+Jiná by byla situace, pokud bychom změnili definici výšky položek gridu:
+
+```css
+.container {
+  grid-template-rows: 2rem 2rem;  
+}
+```
+
+Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výchozí, v tomto případě opět `auto`.
+
+Tady je CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
+
+Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns` je možné určit vlastnostmi `grid-auto-columns` a `grid-auto-rows`. Ty definují implicitní grid.
+
+## Další možnosti zápisu gridu
+
+Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`.
+
+| Možnost                            | Ukázka hodnoty                              |
+|------------------------------------|---------------------------------------------|
+| [Bez explicitního gridu](#none)    | `none` |
+| [Kombinace jednotek](#jednotky)    | `150px auto 1fr 1fr` |
+| [Pojmenovávání stop](#pojmenovani) | `[first] 150px [second] 1fr [end]` |
+| [Opakování](#opakovani)            | `repeat(12, 1fr)`    |
+
+<!-- TODO možných hodnot je daleko více: https://www.w3.org/TR/css-grid-1/#track-sizing minmax, autofit, autofill, content-min, content-max … -->
+
+### Bez explicitního gridu {#none}
+
+Toto je výchozí stav:
+
+```css
+.container {
+  grid-template-columns: none;
+}
+```
+
+Občas se to ale může hodit použít i ve vlastním kódu, například když rušíme explicitní grid. Pokud to provedeme, platí pravidla pro implicitní, tedy nepřímo vyjádřenou mřížku – `grid-auto-columns` a `grid-auto-rows`.
+
+### Kombinace jednotek a jednotka fr {#jednotky}
+
+V gridu je možné pro definici řádků a sloupečků používat všechny možné [jednotky](jednotky.md), které už pro rozvržení v CSS používáte.
+
+Je tady ale jedna novinka – jednotka `fr`. Jde o *flex fraction* a dá se o něm mluvit jako o podílu na zbytku.
+
+Zápis může vypadat například takto:
+
+```css
+.container {
+  grid-template-columns: 150px 1fr 1fr 150px;
+}
+```
+
+Tady je CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
+
+`1fr` je v chování velice podobné číslu `1`, které používáte ve vlastnosti `flex` u [flexboxu](css3-flexbox-polozky.md).
+
+### Pojmenovávání stop {#pojmenovavani}
+
+Pojmenovávání stop se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu jako je `grid-column`, `grid-row` nebo `grid-area`.
+
+Každý sloupec nebo řádka je v gridu definovaná dvěma stopami.
+
+*TODO obrázek*
+
+Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v tabulce. Stopy jsou rámečky kolem buněk tabulky.
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: [first-col] 50% [second-col] 50% [last-col];
+  grid-template-rows: [first-row] auto [second-row] auto [last-row];  
+}
+```
+
+V ukázce je tedy první položka gridu umístěná vodorovně na pozici mezi `first-col` a `second-col`. Svisle pak mezi `first-row` a `second-row`.
+
+Tady je CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
+
+### Opakování {#opakovani}
+
+U složitějších mřížek by bylo nepříjemné zapisovat řadu stejných hodnot do řádky. Vezměme například dvanáctisloupcovou mřížku:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+```
+
+Proto je tady funkce `repeat()`, která opakování zamezuje:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+```
