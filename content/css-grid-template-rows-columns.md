@@ -147,3 +147,9 @@ Proto je tady funkce `repeat()`, která opakování zamezuje:
   grid-template-columns: repeat(6, 1fr);
 }
 ```
+
+## Podpora v prohlížečích {#podpora}
+
+Internet Explorer 11 tyto vlastnosti nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md).
+
+Tento stařičký, ale stále ještě [používaný prohlížeč](prohlizece.md), také nezvládá automatické umísťování položek do mřížky. I to je možné [alespoň částečně vyřešit](css-grid-msie-autoplacement.md).
