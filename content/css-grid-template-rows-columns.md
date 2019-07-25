@@ -71,7 +71,7 @@ Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-colu
 |------------------------------------|---------------------------------------------|
 | [Bez explicitního gridu](#none)    | `none` |
 | [Kombinace jednotek](#jednotky)    | `150px auto 1fr 1fr` |
-| [Pojmenovávání stop](#pojmenovani) | `[first] 150px [second] 1fr [end]` |
+| [Pojmenovávání stop](#pojmenovane-stopy) | `[first] 150px [second] 1fr [end]` |
 | [Opakování](#opakovani)            | `repeat(12, 1fr)`    |
 
 <!-- TODO možných hodnot je daleko více: https://www.w3.org/TR/css-grid-1/#track-sizing minmax, autofit, autofill, content-min, content-max … -->
@@ -106,7 +106,7 @@ Tady je CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors
 
 `1fr` je v chování velice podobné číslu `1`, které používáte ve vlastnosti `flex` u [flexboxu](css3-flexbox-polozky.md).
 
-### Pojmenovávání stop {#pojmenovavani}
+### Pojmenovávání stop {#pojmenovane-stopy}
 
 Pojmenovávání stop se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu jako je `grid-column`, `grid-row` nebo `grid-area`.
 

@@ -34,6 +34,25 @@ Vysvětleme:
 
 CodePen: [cdpn.io/e/bXeWjb](https://codepen.io/machal/pen/bXeWjb?editors=1100)
 
+Následuje pár poznámek ze [čtení specifikace](https://www.w3.org/TR/css-grid-1/#grid-template-areas-property).
+
+## Definování mřížky oblastmi {#definovani-gridu}
+
+Pojmenovanými oblastmi je možné definovat samotný grid. V některých případech tedy nemusíte potřebovat vlastnosti [grid-template-rows a grid-template-columns](css-grid-template-rows-columns.md). Viz CodePen: [cdpn.io/e/ymJXaX](https://codepen.io/machal/pen/ymJXaX?editors=1100)
+
+## Implicitně vytvořené oblasti a stopy {#implicitne}
+
+Pojmenované oblasti souvisí s [pojmenovanými stopami](css-grid-template-rows-columns.md#pojmenovane-stopy). 
+
+Například definování pojmenované oblasti pojmenované například `head`, vytvoří dvě stopy `head-start` a `head-end`.
+
+A co je ještě lepší – definováním stop `head-start` a `head-end` ve vlastnostech [grid-template-rows a grid-template-columns](css-grid-template-rows-columns.md) vytvoříte oblast `head`.  
+
+<!--TODO opravdu stopami? ("lines") -->
+
+
+## Výhody definování oblastí mřížky {#vyhody}
+
 Oblasti gridu samozřejmě není nutné definovat pokaždé. Hodit se ale budou pro komplexnější layouty, které zároveň potřebujeme definovat a spravovat ručně. Typickým příkladem jsou rozvržení celostránkové.
 
 Vlastnost `grid-template-areas` je ale užitečná ještě ve dvou směrech. Za prvé zlidšťuje zápis layoutu. Je totiž lepší mluvit o oblasti `heading` než o „oblasti mezi první a osmou buňkou prvního řádku gridu“. Za druhé umožňuje pěkné kejkle s Media Queries.
