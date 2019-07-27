@@ -59,7 +59,7 @@ CodePen: [cdpn.io/e/voXWGv](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
 ## Příklad: zahuštěné vykreslování pomocí grid-auto-flow:dense {#priklad-dense}
 
-Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstavaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu. 
+Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstavaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu.
 
 Důležité je, že prohlížeč může po nastavení `grid-auto-flow:dense` změnit pořadí vykreslení prvků.
 
