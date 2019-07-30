@@ -88,7 +88,7 @@ Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V Gridu pro ty potř
 
 ### Definice mřížky {#mrizka}
 
-Vlastnosti `grid-template-columns` a `grid-template-rows`. Akceptují různé jednotky. Když bychom chtěli nastavit mřížku 3 × 3 buňky s využitím procent, pixelů i pružných jednotek, bude vypadat takto:
+Vlastnosti [`grid-template-columns` a `grid-template-rows`](css-grid-template-rows-columns.md). Akceptují různé jednotky. Když bychom chtěli nastavit mřížku 3 × 3 buňky s využitím procent, pixelů i pružných jednotek, bude vypadat takto:
 
 ```css
 .layout {

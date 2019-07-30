@@ -201,8 +201,8 @@ Dobrá zpráva: Těch druhých je poměrně málo.
 
 ### Umí: Definování šablony mřížky {#autoprefixer-vlastnosti-sablona}
 
-- `grid-template-columns` se přeloží do `-ms-grid-columns`.
-- `grid-template-rows` se přeloží do `-ms-grid-rows`.
+- [`grid-template-columns`](css-grid-template-rows-columns.md) se přeloží do `-ms-grid-columns`.
+- [`grid-template-rows`](css-grid-template-rows-columns.md) se přeloží do `-ms-grid-rows`.
 - `grid-template-areas` slouží k tomu, aby Autoprefixer pochopil, jak vypadá váš layout. Žádný kód ale negeneruje.
 - `grid-template` je jen zkratka pro `grid-template-columns`, `grid-template-rows` a `grid-template-areas`. Přeloží se tedy do nich.
 

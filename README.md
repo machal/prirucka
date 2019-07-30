@@ -194,7 +194,6 @@ Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně
 - V bloku kódu.
 - Uvnitř textu. Např. „Značka `<html>` slouží…“. Možné to je uvnitř odstravců, odrážek, ale i uvnitř tabulek.
 
-
 `<code>` naopak nepoužíváme v nadpisech:
 
 - V nadpisech, protože jsou vyvedené tučným řezem (kód není), vypadají nehezky atd.
@@ -209,7 +208,6 @@ Kód nepoužíváme i na dalších místech:
 HTML značky lze opsat kapitálkami („Značka HTML slouží…“). JS a CSS kód prostě uvedeme bez `<code>` tak jak je. Vyplývá z toho samozřejmě, že je lepší se kódu na takovýchto místech vyhnout.
 
 Kvůli e-bookům by bloková ukázka kódu měla mít maximální délku kódu kolem 60 znaků na řáku.
-
 
 ### Zobrazení jen na webu
 

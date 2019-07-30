@@ -1,10 +1,10 @@
-# Vlastnosti grid-template-rows a grid-template-columns
+# Vlastnosti grid-template-rows a grid-template-columns: definice explicitního gridu
 
-CSS vlastnosti `grid-template-rows` a `grid-template-columns` slouží k definování explicitní (tedy námi výslovně definované) mřížky v [CSS gridu](css-grid.md).
+CSS vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení explicitní (tedy námi výslovně definované) mřížky v [CSS gridu](css-grid.md).
 
 ## Jednoduchý příklad
 
-Vezměne tento jednoduchý příklad:
+Vezměne toto HTML:
 
 ```html
 <div class="container">
@@ -15,7 +15,7 @@ Vezměne tento jednoduchý příklad:
 </div>
 ```
 
-Pokud bychom chtěli rozvržení do mřížky 4 × 4, použijeme následující CSS kód:
+Pokud bychom chtěli zajistit rozvržení do mřížky 4 × 4, použijeme následující CSS kód:
 
 ```css
 .container {
@@ -27,15 +27,18 @@ Pokud bychom chtěli rozvržení do mřížky 4 × 4, použijeme následující 
 
 Vysvětleme:
 
-- `display: grid` „zapíná“ mřížkové zobrazení. Možná je také řádková hodnota `inline-grid`.
+- `display: grid` – „zapíná“ mřížkové zobrazení. Možná je také řádková hodnota `inline-grid`.
 - `grid-template-columns: 50% 50%` – definujeme dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
-- `grid-template-rows: auto auto` – definujeme dva sloupce mřížky. Hodnota `auto` říká, že se výška počítá automaticky podle výšky obsahu. Grid sjednocuje výšky položek v každém, takže když změníme výšku jedné položky, její kolegyně se přízpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
+- `grid-template-rows: auto auto` – definujeme dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu. Grid sjednocuje výšky položek v každém, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
 
-Tady je CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
+<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/jgWrmz/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
-## Co když je položek více než definuje grid? (Implicitní vs. explicitní grid)
+CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
 
-Vezměme, že nám zákeřný frontend kodér do HTML přidá pátou položku:
+### Co když je položek více než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
+
+Teď se stane ošlivá a zlá věc – zákeřný frontend kodér do HTML přidá pátou položku:
 
 ```html
 <div class="container">
@@ -47,7 +50,9 @@ Vezměme, že nám zákeřný frontend kodér do HTML přidá pátou položku:
 </div>
 ```
 
-Jak bude vypadat pátá položka zobrazená v gridu? V tomto případě stejně jako předchozí čtyři. Algoritmus gridu ji přidělí 50% šířku a automatickou výšku.
+Jak bude vypadat pátá položka zobrazená v gridu 2 × 2? V tomto případě stejně jako předchozí čtyři. Algoritmus gridu ji přidělí 50% šířku a automatickou výšku.
+
+<!-- AdSnippet -->
 
 Jiná by byla situace, pokud bychom změnili definici výšky položek gridu:
 
@@ -59,9 +64,12 @@ Jiná by byla situace, pokud bychom změnili definici výšky položek gridu:
 
 Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výchozí, v tomto případě opět `auto`.
 
-Tady je CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
+<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/qeZqbV/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
-Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns` je možné určit vlastnostmi `grid-auto-columns` a `grid-auto-rows`. Ty definují implicitní grid.
+CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
+
+Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns` je možné určit vlastnostmi `grid-auto-columns` a `grid-auto-rows`. Ty definují implicitní grid a o těch napíšeme později.
 
 ## Další možnosti zápisu gridu
 
@@ -102,7 +110,10 @@ Zápis může vypadat například takto:
 }
 ```
 
-Tady je CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
+<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/VgKaMB/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
 
 `1fr` je v chování velice podobné číslu `1`, které používáte ve vlastnosti `flex` u [flexboxu](css3-flexbox-polozky.md).
 
@@ -112,7 +123,7 @@ Pojmenovávání stop se může hodit pro použití ve vlastnostech, které defi
 
 Každý sloupec nebo řádka je v gridu definovaná dvěma stopami.
 
-*TODO obrázek*
+<!-- TODO obrázek -->
 
 Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v tabulce. Stopy jsou rámečky kolem buněk tabulky.
 
@@ -126,7 +137,10 @@ Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v ta
 
 V ukázce je tedy první položka gridu umístěná vodorovně na pozici mezi `first-col` a `second-col`. Svisle pak mezi `first-row` a `second-row`.
 
-Tady je CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
+<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/wVGgaW/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
 
 ### Opakování {#opakovani}
 
@@ -153,3 +167,5 @@ Proto je tady funkce `repeat()`, která opakování zamezuje:
 Internet Explorer 11 tyto vlastnosti nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md).
 
 Tento stařičký, ale stále ještě [používaný prohlížeč](prohlizece.md), také nezvládá automatické umísťování položek do mřížky. I to je možné [alespoň částečně vyřešit](css-grid-msie-autoplacement.md).
+
+<!-- AdSnippet -->
