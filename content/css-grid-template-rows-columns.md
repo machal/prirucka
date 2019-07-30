@@ -71,7 +71,7 @@ CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
 Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns` je možné určit vlastnostmi `grid-auto-columns` a `grid-auto-rows`. Ty definují implicitní grid a o těch napíšeme později.
 
-## Další možnosti zápisu gridu
+## Další možnosti zápisu gridu {#hodnoty}
 
 Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`.
 
