@@ -53,7 +53,7 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 
 <!-- TODO: obrázek https://codepen.io/machal/pen/voXWGv?editors=1100 -->
 
-V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
+V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
 
 CodePen: [cdpn.io/e/voXWGv](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
@@ -89,7 +89,7 @@ Layout je definovaný takto:
 
 Vysvětleme:
 
-- Ve vlastnosti [`grid-template-columns`](grid-template-rows-columns.md) uvádíme, že je možný libovoný počet sloupečku (funkce `repeat()`) ale každý musí být minimálně 120px široký `minmax(120px, 1fr)`.
+- Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovoný počet sloupečku (funkce `repeat()`) ale každý musí být minimálně 120px široký `minmax(120px, 1fr)`.
 - `grid-auto-flow: dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
 
 <!-- TODO obrázek porovnání breakpointů bez dense a s ním https://codepen.io/machal/pen/VoKroo?editors=1100 -->

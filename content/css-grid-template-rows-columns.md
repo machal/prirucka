@@ -77,10 +77,10 @@ Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-colu
 
 | Možnost                            | Ukázka hodnoty                              |
 |------------------------------------|---------------------------------------------|
-| [Bez explicitního gridu](#none)    | `none` |
-| [Kombinace jednotek](#jednotky)    | `150px auto 1fr 1fr` |
+| [Bez explicitního gridu](#none)    | `none`                                   |
+| [Kombinace jednotek](#jednotky)    | `150px auto 1fr 1fr`                     |
 | [Pojmenovávání stop](#pojmenovane-stopy) | `[first] 150px [second] 1fr [end]` |
-| [Opakování](#opakovani)            | `repeat(12, 1fr)`    |
+| [Opakování](#opakovani)            | `repeat(12, 1fr)`                        |
 
 <!-- TODO možných hodnot je daleko více: https://www.w3.org/TR/css-grid-1/#track-sizing minmax, autofit, autofill, content-min, content-max … -->
 

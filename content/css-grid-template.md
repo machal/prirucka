@@ -2,11 +2,11 @@
 
 Vlastnost `grid-template` slouží k definování mřížky v [CSS gridu](css-grid.md).
 
-Jde o zkratku (shorthand) pro vlastnosti [`grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md) a také [grid-template-areas](grid-template-areas.md).
+Jde o zkratku (shorthand) pro vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md) a také [grid-template-areas](css-grid-template-areas.md).
 
 ## Definování sloupečků a řádků {#cols-rows}
 
-V jednoduchém demu si ukážeme `grid-template` jako zkratku pro vlastnosti [`grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md):
+V jednoduchém demu si ukážeme `grid-template` jako zkratku pro vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md):
 
 ```css
 .container {
@@ -28,7 +28,7 @@ CodePen: [cdpn.io/e/YmWxzw](https://codepen.io/machal/pen/YmWxzw?editors=1100)
 
 ## Sloupečky, řádky a pojmenované stopy {#cols-rows-stopy}
 
-V hranatých závorkách zde můžeme uvést také pojmenované řádky a sloupce jak o nich píšeme v textu o vlastnostech [`grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md#pojmenovane-stopy)
+V hranatých závorkách zde můžeme uvést také pojmenované řádky a sloupce jak o nich píšeme v textu o vlastnostech [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md#pojmenovane-stopy)
 
 ```css
 .container {

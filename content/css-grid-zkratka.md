@@ -4,8 +4,8 @@
 
 V jedné deklaraci můžete nastavit jen jeden z obou možných gridů:
 
-- *explicitní*, výslovně definovaný pomocí vlastností [`grid-template-rows`, `grid-template-columns`](grid-template-rows-columns.md) a [`grid-template-areas`](grid-template-areas.md),
-- *implicitní*, definovaný pomocí vlastností [`grid-auto-rows`, `grid-auto-columns`](grid-auto-rows-columns.md) a [`grid-auto-flow`](grid-auto-flow.md)
+- *explicitní*, výslovně definovaný pomocí vlastností [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
+- *implicitní*, definovaný pomocí vlastností [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md)
 
 ## Definice explicitního gridu {#explicitni}
 
@@ -33,7 +33,7 @@ Odpovídá tomuto zápisu:
 }
 ```
 
-Je to prostě úplně stejné jako u zkratky [`grid-template`](grid-template.md).
+Je to prostě úplně stejné jako u zkratky [`grid-template`](css-grid-template.md).
 
 ## Implicitní grid a auto-flow {#implicitni-auto-flow}
 
@@ -60,7 +60,7 @@ Zápis je ekvivalentní tomuto:
 
 Vysvětlíme:
 
-- `grid-auto-flow: row` – grid se bude vykreslovat po řádcích. Jak můžete vědět ze studia vlastnosti [`grid-auto-flow`](grid-auto-flow.md), hodnota `grid-auto-flow:row` je v prohlížečích výchozí, takže bychom ji nemuseli nastavovat.
+- `grid-auto-flow: row` – grid se bude vykreslovat po řádcích. Jak můžete vědět ze studia vlastnosti [`grid-auto-flow`](css-grid-auto-flow.md), hodnota `grid-auto-flow:row` je v prohlížečích výchozí, takže bychom ji nemuseli nastavovat.
 - `grid-auto-rows: 1fr` – že implicitní grid bude mít výšku řádků `1fr`.
 - `grid-auto-columns: auto` – implicitní grid nemá definované sloupce, takže se budou řídit šířkou obsahu buňky.
 - `grid-template-rows: none` – buňky gridu nemají ve směru řádků nijak nastavené rozměry.
@@ -91,7 +91,7 @@ Ten je ekvivalentní následujícímu:
 
 ### Zahuštěné vykreslování, klíčové slovo dense
 
-Pokud jste viděli vlastnost `grid-auto-flow`, určitě vás zaujala hodnota [`dense`](grid-auto-flow.md#priklad-dense).
+Pokud jste viděli vlastnost `grid-auto-flow`, určitě vás zaujala hodnota [`dense`](css-grid-auto-flow.md#priklad-dense).
 
 Můžeme ji nastavit i pomocí zkratky `grid`. Následující dva kousky kódu budou totožné:
 
@@ -116,4 +116,4 @@ Můžeme ji nastavit i pomocí zkratky `grid`. Následující dva kousky kódu b
 
 ## Podpora v prohlížečích {#podpora}
 
-Zkratku `grid` zvládají všechny prohlížeče, kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat [CSS grid](css-grid.md) i tento prohlížeč, doporučuji se zkratce `grid` vyhnout. Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v IE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](grid-template.md).
+Zkratku `grid` zvládají všechny prohlížeče, kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat [CSS grid](css-grid.md) i tento prohlížeč, doporučuji se zkratce `grid` vyhnout. Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v IE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).

@@ -2,13 +2,13 @@
 
 Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, tedy výslovně nedefinovaného [gridu v CSS](css-grid.md).
 
-Jsou tedy doplňkem vlastností [`grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, tedy autorsky definovaného.
+Jsou tedy doplňkem vlastností [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, tedy autorsky definovaného.
 
 Použijete jej hlavně pro řádky (`grid-auto-rows`), a to v případech, kdy máte v HTML neznámý počet položek. 
 
 ## Možné hodnoty {#hodnoty}
 
-Vlastnostem `grid-auto-rows` a `grid-auto-columns` můžete přiřazovat stejné hodnoty jako jejich explicitním kolegyním – [`grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md).
+Vlastnostem `grid-auto-rows` a `grid-auto-columns` můžete přiřazovat stejné hodnoty jako jejich explicitním kolegyním – [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md).
 
 ### Klíčová slova
 

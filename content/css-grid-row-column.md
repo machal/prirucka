@@ -20,9 +20,7 @@ grid-column: <grid-column-start> / <grid-column-end>;
 | [Rozsah](#span)               | `1 / span 2`               |
 | [Jedno číslo](#jedno)         | `3`                        |
 | [Záporná čísla](#zaporna)     | `-1 / -3`                  |
-| [Automatické umístění](#auto) | `auto`                     |  
-
-<!-- TODO záporná čísla, jedno číslo -->
+| [Automatické umístění](#auto) | `auto`                     |
 
 ### Čísla stop {#cisla-stop}
 
