@@ -1,5 +1,9 @@
 # Co přineslo firmám nasazení AMP?
 
+<div class="web-only" markdown="1">
+Podívejme se na několik případových studií úspěšného nasazení [AMP](amp.md).
+</div>
+
 Předností zrychlovací technologie je zrychlení webů, to víme. A víme i to, že zrychlením webu můžeme zvýšit jeho úspěšnost při plnění obchodních nebo jiných cílů.
 
 Už jsme se rovněž dozvěděli, že Google a další dodavatelé návštěvnosti používají rychlost jako jeden ze signálů kvality webu. Je tedy možné očekávat, že se správně nasazená a měřená AMP stránka nějak pozitivně projeví v číslech. A to si pište.
@@ -29,15 +33,19 @@ Vývoj v našich zemích sledujeme dlouhodobě a máme radost, že v době psan�
 * Mezi obsahovými weby je například _Reflex.cz_, anebo _Seznam Zprávy_ či _ProŽeny.cz_ z dílny Seznam.cz.
 * Z větších e-shopů je to například _Lékárna.cz_, cestovka _Relaxos.cz_, s technologií ale experimentuje i _Alza.cz_.
 
-V Česku se o číslech, která produkují AMP stránky, příliš nemluví. Pokud ano, zapomíná se odfiltrovat nasazení AMP od dalších vlivů. Čest výjimkám, kterých je ale velmi málo.
+V Česku se o číslech, která produkují AMP stránky, příliš nemluví. Pokud ano, zapomíná se odfiltrovat nasazení AMP od dalších vlivů nebo se dělají jiné chyby v měření. Čest výjimkám, kterých je ale velmi málo.
 
 <figure>
 <img src="../dist/images/original/vdamp/zillertaller.png" alt="">
 <figcaption markdown="1">
-_AMP verze Zillertaler Zeitung zvýšila počet zhlédnutých stránek o jednu desetinu. Autorem je české studio Creox.cz._
+_AMP verze Zillertaler Zeitung zvýšila počet zhlédnutých stránek o jednu desetinu. Autorem je české studio [Creox.cz](https://www.creox.cz/)._
 </figcaption>
 </figure>
+
+<div class="ebook-only" markdown="1">
 
 I přesto je zajímavé projít si české AMP weby a zamyslet se nad tím. V knížce se tuzemským zástupcům věnujeme více v kapitole [o webech, které AMP nasadily](4-uvod.md).
 
 Teď už se ale pojďme zaměřit na to, jak tahle technologie přesně funguje.
+
+</div>
