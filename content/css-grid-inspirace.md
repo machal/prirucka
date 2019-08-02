@@ -50,10 +50,7 @@ Hodnota `span 4` znamená:
 
 Podívejte se na to ještě v CodePenu:
 
-<iframe height='265' scrolling='no' title='Bootstraps grid in CSS grid: 4 / 8 Layout' src='//codepen.io/machal/embed/vzxYYN/?height=265&theme-id=light&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/vzxYYN/'>Bootstrap's grid in CSS grid: 4 / 8 Layout </a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-CodePen: [cdpn.io/e/vzxYYN](https://codepen.io/machal/pen/vzxYYN?editors=11100).
+CodePen: [cdpn.io/e/vzxYYN](https://codepen.io/machal/pen/vzxYYN?editors=1100).
 
 
 ## 2) Pojmenované oblasti {#2}
@@ -94,9 +91,6 @@ Asi se hodí připomenout i jinou milou věc: Gridu už pak moc nezáleží, kde
 
 A je hotovo:
 
-<iframe height='265' scrolling='no' title='CSS Grid: Application Design Demo with Grid Areas' src='//codepen.io/machal/embed/ppVzrg/?height=265&theme-id=light&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/ppVzrg/'>CSS Grid: Application Design Demo with Grid Areas</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
 Odkaz na CodePen: [cdpn.io/e/ppVzrg](https://codepen.io/machal/pen/ppVzrg?editors=1100).
 
 
@@ -105,9 +99,6 @@ Odkaz na CodePen: [cdpn.io/e/ppVzrg](https://codepen.io/machal/pen/ppVzrg?editor
 Tady se podívejme nejprve na CodePen: [cdpn.io/e/NMyjpb](https://codepen.io/machal/pen/NMyjpb?editors=1100).
 
 Zvětšujte a zmenšujte si šířku části „Result“ a všimněte si, jak černá položka mění pořadí. Někdy je čtvrtá, někdy pátá.
-
-<iframe height='265' scrolling='no' title='CSS grid:  grid-auto-flow: dense' src='//codepen.io/machal/embed/NMyjpb/?height=265&theme-id=light&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/NMyjpb/'>CSS grid:  grid-auto-flow: dense</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
 
 Ano, tohle dělá grid automaticky. Jen je potřeba mu to nakázat:
 
@@ -134,7 +125,7 @@ Hned si to vysvětíme:
 - Funkce `minmax()` definuje šířku položky mezi určitými hranicemi.
 - `1fr` je „fraction unit“. Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`. 
 
-Ještě jednou CodePen: [cdpn.io/e/NMyjpb](https://codepen.io/machal/pen/NMyjpb?editors=1100).
+CodePen: [cdpn.io/e/NMyjpb](https://codepen.io/machal/pen/NMyjpb?editors=1100).
 
 
 ## 4) Náhradní řešení se @supports {#4}
@@ -169,8 +160,7 @@ Hotovo. Nějaký layout se teď zobrazí v prohlížečích s podporou gridu i b
 
 Celá ukázka:
 
-<iframe height='265' scrolling='no' title='CSS grid:  grid-auto-flow: dense with @supports fallback' src='//codepen.io/machal/embed/NLpWXY/?height=265&theme-id=light&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/NLpWXY/'>CSS grid:  grid-auto-flow: dense with @supports fallback</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+CodePen: [cdpn.io/e/NLpWXY](https://codepen.io/machal/pen/NLpWXY?editors=1100).
 
 Takhle půjde udělat spousta fallbacků pro naše řešení s gridem. Takže se nebojte a začněte ho směle používat.
 

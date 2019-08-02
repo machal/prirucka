@@ -66,8 +66,7 @@ Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro 
 
 Podívejme se na jednoduchý layout, u kterého si ukážeme jak přesně Autoprefixer zařídí fungování Gridu v Internet Exploreru.
 
-<iframe height='317' scrolling='no' title='CSS Grid Basics demo: IE support with Autoprefixer ' src='//codepen.io/machal/embed/BvJjdz/?height=317&theme-id=light&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/BvJjdz/'>CSS Grid Basics demo: IE support with Autoprefixer </a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+CodePen: [cdpn.io/e/BvJjdz](https://codepen.io/machal/pen/BvJjdz?editors=1100).
 
 Jde o rozvržení definované následujícím způsobem:
 

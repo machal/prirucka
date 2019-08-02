@@ -56,10 +56,9 @@ Jednou z podstatných výjimek jsou desktopové Windows, které posuvníky zobra
 
 Dalším viditelným odlišením je chování prohlížečů na iOS: Pokud je stránka díky přetečení textu širší než viditelný viewport, Safari počítá `clientWidth` pro celý dokument. Chrome na Androidu naproti tomu obě hodnoty ponechává stejné.
 
-Rozdíly mezi `innerWidth` a `clientWidth` si můžete vyzkoušet také na mém CodePenu: [cdpn.io/e/rrXNWO](https://codepen.io/machal/pen/rrXNWO/).
+Rozdíly mezi `innerWidth` a `clientWidth` si můžete vyzkoušet také na v živé ukázce.
 
-<iframe class="web-only" height='300' scrolling='no' title='JavaScript: innerWidth vs. clientWidth' src='//codepen.io/machal/embed/rrXNWO/?height=300&theme-id=502&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/rrXNWO/'>JavaScript: innerWidth vs. clientWidth</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+CodePen: [cdpn.io/e/rrXNWO](https://codepen.io/machal/pen/rrXNWO?editors=1110)
 
 Pro zjištění viewportu jsou výhodnější vlastnosti `innerWidth` a `innerHeight`, protože na všech platformách dostanete shodně vypočtená čísla. Pokud potřebujete zjistit velikost prostoru dostupného pro váš design, musíte pracovat s `clientWidth` a `clientHeight`.
 

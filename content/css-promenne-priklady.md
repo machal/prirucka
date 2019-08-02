@@ -67,9 +67,6 @@ No není to hezké?
 
 CodePen: [cdpn.io/e/KyeqzE](https://codepen.io/machal/pen/KyeqzE?editors=1100#0)
 
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/KyeqzE/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
-
 ## 2) Úprava barevného schématu  {#2}
 
 Na podobném principu je postavený příklad se změnou barevného schématu pro lokální kontext.
@@ -143,9 +140,6 @@ V HTML se pak komponenta `.box.inverted` sama „bezbolestně“ přebarví.
 
 CodePen: [cdpn.io/e/POajOd](https://codepen.io/machal/pen/POajOd?editors=1100)
 
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/POajOd/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
-
 Připomínám, že jsme ušetřili docela hodně kódu nutného k „přebíjení“ barev v inverzních komponentách bez použití CSS proměnných. Celá věc se nám tedy bude [lépe spravovat](https://www.vzhurudolu.cz/kurzy/css-kod).
 
 ## 3) Obarvení SVG vloženého do HTML {#3}
@@ -174,10 +168,7 @@ V HTML pak vlastnost použijeme v podobě CSS proměnné. Uvedu zjednodušený z
 
 Raději upozorňuji, že zdrojový kód [SVG](svg.md) souboru je nutné vložit přímo do HTML. Jinak nebudete přístup k proměnným mít.
 
-CodePen: [cdpn.io/e/POaKNv](https://codepen.io/machal/pen/POaKNv)
-
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/POaKNv/?height=265&theme-id=light&default-tab=result,html" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
+CodePen: [cdpn.io/e/POaKNv](https://codepen.io/machal/pen/POaKNv?editors=1000)
 
 Pojďme teď na další příklad, už složitější.
 
@@ -239,9 +230,6 @@ A hotovo. Celá typografie se přepočte jako v obrázku nahoře.
 Žádné trapné přepočítávání rozměrů všech typografických elementů pro tento daný breakpoint. Udělá se to „samo“. Změnou `--baseline-multiplier` se přepočte `--line-height` a z ní se přepočte `--font-size`. Vše stále pasuje do čtyřpixelové typografické mřížky.
 
 CodePen: [cdpn.io/e/zVQQKN](https://codepen.io/machal/pen/zVQQKN?editors=1100)
-
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/zVQQKN/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
 
 Tohle řešení typografie zatím není u webových projektů běžné, ale vychází ze starých principů sázení písma. Takže věřím, že mnohým z vás bude časem k užitku.
 
@@ -345,9 +333,6 @@ Hodí se to hlavně v případech, kdy jsou na webu změny layoutu časté a opa
 
 CodePen: [cdpn.io/e/XzYzXJ](https://codepen.io/machal/pen/XzYzXJ?editors=1100)
 
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/XzYzXJ/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
-
 ### Poznámka k náhradním řešením
 
 Tady nebude ani složité navrhnout [fallback](fallback.md). Jako výchozí stav bychom napsali desktopové zobrazení, takže Internet Explorer 11 zobrazí layout v pořádku. Připomínám, že aktuálně jde o nejrozšířenější [z prohlížečů](prohlizece.md) bez podpory CSS proměnných.
@@ -390,7 +375,7 @@ Do proměnných si prostě uložíme [breakpointy responzivního designu](breakp
 
 Pro fungování příkladu musíme javascriptového kódu napsat o fous více, ale nechci to komplikovat. Prostě se na něj podívejte do CodePenu, pokud budete mít zájem.
 
-CodePen: [cdpn.io/e/JOZpKV](https://codepen.io/machal/pen/JOZpKV)
+CodePen: [cdpn.io/e/JOZpKV](https://codepen.io/machal/pen/JOZpKV?editors=1110)
 
 V příkladu pak máme breakpointy pro styly i skripty uložené v CSS, ale tam je nedefinujeme na jednom místě. Hned o pár řádku níže máme ve stylech toto:
 

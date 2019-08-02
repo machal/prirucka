@@ -31,9 +31,6 @@ Vysvětleme:
 - `grid-template-columns: 50% 50%` – definujeme dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
 - `grid-template-rows: auto auto` – definujeme dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu. Grid sjednocuje výšky položek v každém, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
 
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/jgWrmz/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
-
 CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
 
 ### Co když je položek více než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
@@ -63,9 +60,6 @@ Jiná by byla situace, pokud bychom změnili definici výšky položek gridu:
 ```
 
 Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výchozí, v tomto případě opět `auto`.
-
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/qeZqbV/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
 
 CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
@@ -110,9 +104,6 @@ Zápis může vypadat například takto:
 }
 ```
 
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/VgKaMB/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
-
 CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
 
 `1fr` je v chování velice podobné číslu `1`, které používáte ve vlastnosti `flex` u [flexboxu](css3-flexbox-polozky.md).
@@ -136,9 +127,6 @@ Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v ta
 ```
 
 V ukázce je tedy první položka gridu umístěná vodorovně na pozici mezi `first-col` a `second-col`. Svisle pak mezi `first-row` a `second-row`.
-
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/wVGgaW/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
 
 CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
 

@@ -67,10 +67,7 @@ Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V Gridu pro ty potř
 }
 ```
 
-CodePen: [cdpn.io/e/QaxGqX](https://codepen.io/machal/pen/QaxGqX)
-
-<iframe height='300' scrolling='no' title='CSS Grid Basics demo' src='//codepen.io/machal/embed/QaxGqX/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/QaxGqX/'>CSS Grid Basics demo</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+CodePen: [cdpn.io/e/QaxGqX](https://codepen.io/machal/pen/QaxGqX?editors=1100)
 
 ## Důležité vlastnosti Gridu {#vlastnosti}
 
@@ -149,9 +146,6 @@ Existence „explorerového“ Gridu nám ale v mnoha případech umožní mří
 
 Vezměme příklad třísloupcového layoutu z prvního dema na této stránce:
 
-<iframe height='300' scrolling='no' title='CSS Grid Basics demo (with IE11 support)' src='//codepen.io/machal/embed/XZbrEY/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/XZbrEY/'>CSS Grid Basics demo (with IE11 support)</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
 Začneme tím nejjednodušším.
 
 ```css
@@ -182,7 +176,7 @@ IE11 nepodporuje automatické umísťování do mřížky, takže to u jednotliv
 
 Asi si všimnete vlastnosti `margin-right`. Přesně tak, mezeru mezi sloupečky musíme dělat starými prostředky, protože s vlastností `grid-gap` zde neuspějeme.
   
-Živé demo, které je funkční i v IE11: [cdpn.io/e/XZbrEY](https://codepen.io/machal/pen/XZbrEY)
+CodePen: [cdpn.io/e/XZbrEY](https://codepen.io/machal/pen/XZbrEY?editors=1100)
 
 ## Kde se učit? {#ucit}
 

@@ -44,10 +44,7 @@ A teď náš čtverec slavnostně použijeme:
 
 Zavoláme původní objekt a rovnou si jej obarvíme, to pomocí `fill="LimeGreen"`.
 
-<iframe height='300' scrolling='no' title='SVG <use> - basics' src='//codepen.io/machal/embed/BrKvwv/?height=300&theme-id=502&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/BrKvwv/'>SVG &lt;use&rt; - basics</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-Odkaz na Codepen: [cdpn.io/e/BrKvwv](https://codepen.io/machal/pen/BrKvwv?editors=1100)
+CodePen: [cdpn.io/e/BrKvwv](https://codepen.io/machal/pen/BrKvwv?editors=1100)
 
 Až si jej budete pozorně prohlížet, všimněte si ještě, že pro zajištění pružného chování „esvégéček“ v Internet Exploreru 11 na různých rozlišeních používáme trik z textu [o responzivních SVG](responzivni-svg.md). Ale to už je jen detail a trochu i nutný kolorit, abychom neměli pocit, že všechno může jít bez potíží.
 
@@ -74,10 +71,7 @@ Tím byste zdroj schovali před lidmi, ale i stroji. Taková slepecká čtečka 
 
 Všimněte si, že jsem zde také nepoužil skupinu `<g>`, ale symbol `<symbol>`. Ten se totiž podobně jako třeba sekce `<def>` v prohlížečích nevykresluje. Hodí se mi to pro případ, kdy se stránka zobrazuje [bez CSS](weby-bez-css.md) a já nechci zdroj vykreslit ani v tomto případě.
 
-<iframe height='300' scrolling='no' title='SVG <use> - invisible source in <def>' src='//codepen.io/machal/embed/WzwPdG/?height=300&theme-id=502&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/WzwPdG/'>SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-Odkaz na Codepen: [cdpn.io/e/WzwPdG](https://codepen.io/machal/pen/WzwPdG?editors=1100)
+CodePen: [cdpn.io/e/WzwPdG](https://codepen.io/machal/pen/WzwPdG?editors=1100)
 
 
 ## Stylování… není taková prča {#stylovani}
@@ -101,16 +95,13 @@ Může za to milá fíčurka CSS, o které [píší na MDN](https://developer.mo
 
 Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Druhá je ručně nastavit dědičnost na hodnotu, které je výchozí v běžném DOMu: `stroke:inherit`.
 
-V dalším Codepenu si vyzkoušejme všechny možnosti. 
-
-<iframe height='300' scrolling='no' title='SVG <use> - invisible source in <def>' src='//codepen.io/machal/embed/WzwPdG/?height=300&theme-id=502&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/WzwPdG/'>SVG &lt;use&rt; - invisible source in <def></a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+V dalším Codepenu si vyzkoušejme všechny možnosti.
 
 - `fill` není na původním objektu definován, takže jej mohou klony používat.
 - `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz.
 - `stroke-with` je definován, ale nastavili jsme dědičnost pomocí CSS hodnoty `inherit`.
 
-Odkaz na Codepen: [cdpn.io/e/EEKrde](https://codepen.io/machal/pen/EEKrde?editors=1100)
+CodePen: [cdpn.io/e/EEKrde](https://codepen.io/machal/pen/EEKrde?editors=1100)
 
 To by byl praktický pohled do hloubky značky `<use>`. Ještě se mrkneme na atributy a taky používání externích zdrojů.
 

@@ -118,18 +118,17 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 
 ### CodePen
 
-Ukázky vkládáme v `<iframe>`. Doporučované vložení přes HTML není kompatibiliní s AMP.
+Ukázky vkládáme jako běžný odstavec v Markdownu:
 
-```html
-<iframe height="265" style="width: 100%;" scrolling="no" src="https://codepen.io/machal/embed/POajOd/?height=265&theme-id=light&default-tab=result,css" frameborder="no" allowtransparency="true" allowfullscreen="true">
-</iframe>
+```markdown
+CodePen: [cdpn.io/e/XzYzXJ](https://codepen.io/machal/pen/XzYzXJ?editors=1100)
 ```
 
-Pozor na:
+Na webu se to pak přepíše vkládaného `<iframe>`.
 
-- `https:` na začátku adresy - není ne výchozím
-- `theme-id=light` - světlé barvy
-- `default-tab=result,css` - nejprve výsledek, pak podstatný kód
+-  Důležité je uvést první adresu jako zkratku, kvůli kontextům mimo web, jako jsou e-booky nebo Github.
+-  Odkaz ale vede na plné URL na CodePenu.
+-  V `?editors=` jsou záložky se záložkou a typem kódu, který má být otevřený. Je to v řadě HTML, CSS, JS kód a konzole.
 
 ### Tabulka
 

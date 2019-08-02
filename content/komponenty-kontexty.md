@@ -38,8 +38,7 @@ Její CSS kód nám říká, že barva „tlačítková zelená“ nepůjde se z
 
 Začneme se kroutit (a někteří hroutit), protože už zase přišla ta chvíle, kdy si pokazíme komponentový přístup, dosud čistý jako studánku.
 
-<iframe height='300' scrolling='no' title='Component vs. context in CSS' src='//codepen.io/machal/embed/JmdRaa/?height=300&theme-id=502&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/machal/pen/JmdRaa/'>Component vs. context in CSS</a> by Martin Michálek (<a href='https://codepen.io/machal'>@machal</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+CodePen: [cdpn.io/e/JmdRaa](https://codepen.io/machal/pen/JmdRaa?editors=1100).
 
 ## Komponentový přístup {#komponenty}
 
