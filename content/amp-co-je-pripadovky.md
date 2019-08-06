@@ -8,13 +8,34 @@ Předností zrychlovací technologie je zrychlení webů, to víme. A víme i to
 
 Už jsme se rovněž dozvěděli, že Google a další dodavatelé návštěvnosti používají rychlost jako jeden ze signálů kvality webu. Je tedy možné očekávat, že se správně nasazená a měřená AMP stránka nějak pozitivně projeví v číslech. A to si pište.
 
-Uveďme několik příkladů:
+<figure>
+<img src="../dist/images/original/amp-pripadovky.png" alt="">
+<figcaption markdown="1">
+_AMP pomůže obsahovým webům slovutných značek, velkým novinám i e-shopům._
+</figcaption>
+</figure>
 
-* _BMW.com_ nasadilo AMP a na novém webu díky tomu získalo o 49 % vyšší návštěvnost z vyhledávačů.
-* _The Washington Post_, velké americké noviny, nasadily AMP už v polovině roku 2015. Jejich webový tým tím dosáhl o 88 % rychlejšího načtení webu a o 23 % více mobilních uživatelů, kteří se k nim během týdne vraceli.
-* _Greenweez_, francouzský online prodejce ekovýrobků, získal nasazením AMP dokonce pětinásobné zrychlení mobilního uživatelského prožitku. Dále ještě uvádějí 80% zvýšení konverzního poměru na mobilech a snížení nákladů na akvizici mobilního uživatele o 66 %.
+Zaměřme se teď na jednotlivé případové studie.
 
-Případové studie z celého světa najdete na [amp.dev/success-stories](https://amp.dev/success-stories/).
+## BMW.com: AMP jako urychlovač vstupu na plnohodnotný web a o 49 % vyšší návštěvnost {#BMW}
+
+BMW.com nasadilo AMP na novém hlavním webu. Slouží k urychlení vstupu do plnohodnotného webu vyrobeného pomocí přístupu PWA (progresivní webová aplikace). Vývoj trval šest měsíců a poté naměřili troj- až čtyřnásobně vyšší rychlost webu a díky tomu kromě jiného o 49 % vyšší návštěvnost z vyhledávačů.
+
+## The Washington Post: snadný vývoj s AMP {#the-washington-post}
+
+The Washington Post, velké americké noviny, nasadily AMP už v polovině roku 2015. Jejich webový tým tím podle případové studie zajistil o 88 % rychlejšího načtení webu (v průměru se dostanou na 400ms načtení). Zajímavý je také 23% nárust mobilních uživatelů, kteří se k nim během týdne vraceli, když předtím ve vyhledávači viděli některou z AMP Stories.
+
+David Merrell, Senior Product Manager z těchto novin, se v případové studii navíc nechal slyšet, že začít pracovat s AMP bylo snadné, protože je postaveno na tradičních webových technologiích.
+
+## E-shop Greenweez: 5× rychlejší web za dva měsíce práce {##greenweez}
+
+Greenweez, francouzský online prodejce ekovýrobků, získal nasazením AMP dokonce pětinásobné zrychlení mobilního uživatelského prožitku. Před nasazením AMP dosahoval konverzní poměr na mobilech pouhé čtvrtiny desktopové hodnoty. V Greenweez předpokládali, že je to mimojiné pomalým načtením webu, které v té době zabralo v průměru 10 vteřin.
+
+Na začátku roku 2017 AMP nasadili na produktové stránky a následně na šablonu výpisu produktu v kategoriích. Už v dubnu téhož roku tvořily přístupy přes AMP téměř polovinu celé návštěvnosti webu. Dále ještě uvádějí 80% zvýšení konverzního poměru na mobilech a snížení nákladů na akvizici mobilního uživatele o 66 %. CEO firmy, Simon Le Fur, přitom v případové studii akcentuje, že to celé bylo snadné – migrace na AMP jim trvala jen dva měsíce.
+
+<!-- AdSnippet -->
+
+Případové studie z celého světa a různých oborů činnosti najdete na [amp.dev/success-stories](https://amp.dev/success-stories/).
 
 ## Dopady na marketing ve vyhledávačích
 
@@ -42,6 +63,14 @@ _AMP verze Zillertaler Zeitung zvýšila počet zhlédnutých stránek o jednu d
 </figcaption>
 </figure>
 
+<div class="web-only" markdown="1">
+
+Čísla ze světových případových studií jsou působivá, že ano? Ale není se čemu divit. [Už dlouho víme](rychlost-nacitani-proc.md), že razantní zrychlení webu má vliv prakticky na všechny klíčové obchodní ukazatele. [AMP](amp.md) navíc ve zvyšování rychlosti načtení webu těžko hledá konkurenci.
+
+Máte už nasazení AMP za sebou a rádi byste se pochlubili čísly? Neváhejte napsat do komentářů nebo se zmínit [e-mailem](mailto:martin@vzhurudolu.cz).
+
+</div>
+
 <div class="ebook-only" markdown="1">
 
 I přesto je zajímavé projít si české AMP weby a zamyslet se nad tím. V knížce se tuzemským zástupcům věnujeme více v kapitole [o webech, které AMP nasadily](4-uvod.md).
@@ -49,3 +78,5 @@ I přesto je zajímavé projít si české AMP weby a zamyslet se nad tím. V kn
 Teď už se ale pojďme zaměřit na to, jak tahle technologie přesně funguje.
 
 </div>
+
+<!-- AdSnippet -->
