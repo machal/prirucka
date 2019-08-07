@@ -6,12 +6,12 @@ Podívejme se na několik případových studií úspěšného nasazení [AMP](a
 
 Předností zrychlovací technologie je zrychlení webů, to víme. A víme i to, že zrychlením webu můžeme zvýšit jeho úspěšnost při plnění obchodních nebo jiných cílů.
 
-Už jsme se rovněž dozvěděli, že Google a další dodavatelé návštěvnosti používají rychlost jako jeden ze signálů kvality webu. Je tedy možné očekávat, že se správně nasazená a měřená AMP stránka nějak pozitivně projeví v číslech. A to si pište.
+Už jsme se rovněž dozvěděli, že Google a další dodavatelé návštěvnosti používají rychlost jako jeden ze signálů kvality webu. Je tedy možné očekávat, že se správně nasazená a měřená AMP stránka nějak pozitivně projeví v číslech. A to si pište, že projeví.
 
 <figure>
 <img src="../dist/images/original/amp-pripadovky.png" alt="">
 <figcaption markdown="1">
-_AMP pomůže obsahovým webům slovutných značek, velkým novinám i e-shopům._
+_Nasazení AMP pomohlo obsahovým webům slovutných značek, velkým novinám i e-shopům._
 </figcaption>
 </figure>
 
@@ -23,15 +23,15 @@ BMW.com nasadilo AMP na novém hlavním webu. Slouží k urychlení vstupu do pl
 
 ## The Washington Post: snadný vývoj s AMP {#the-washington-post}
 
-The Washington Post, velké americké noviny, nasadily AMP už v polovině roku 2015. Jejich webový tým tím podle případové studie zajistil o 88 % rychlejšího načtení webu (v průměru se dostanou na 400ms načtení). Zajímavý je také 23% nárust mobilních uživatelů, kteří se k nim během týdne vraceli, když předtím ve vyhledávači viděli některou z AMP Stories.
+The Washington Post, velké americké noviny, nasadily AMP už v polovině roku 2015. Jejich webový tým tím podle případové studie zajistil o 88 % rychlejšího načtení webu (v průměru se dostanou na 400ms načtení). Zajímavý je také 23% nárůst mobilních uživatelů, kteří se k nim během týdne vraceli, když předtím ve vyhledávači viděli některou z AMP Stories.
 
-David Merrell, Senior Product Manager z těchto novin, se v případové studii navíc nechal slyšet, že začít pracovat s AMP bylo snadné, protože je postaveno na tradičních webových technologiích.
+David Merrell, Senior Product Manager z těchto novin, se v případové studii navíc nechal slyšet, že začít pracovat s AMP bylo snadné, protože je postaveno na tradičních webových technologiích.
 
-## E-shop Greenweez: 5× rychlejší web za dva měsíce práce {##greenweez}
+## E-shop Greenweez: 5× rychlejší web za dva měsíce práce {#greenweez}
 
-Greenweez, francouzský online prodejce ekovýrobků, získal nasazením AMP dokonce pětinásobné zrychlení mobilního uživatelského prožitku. Před nasazením AMP dosahoval konverzní poměr na mobilech pouhé čtvrtiny desktopové hodnoty. V Greenweez předpokládali, že je to mimojiné pomalým načtením webu, které v té době zabralo v průměru 10 vteřin.
+Greenweez, francouzský online prodejce ekovýrobků, získal nasazením AMP dokonce pětinásobné zrychlení mobilního uživatelského prožitku. Před nasazením AMP dosahoval konverzní poměr na mobilech pouhé čtvrtiny desktopové hodnoty. V Greenweez předpokládali, že je to mimo jiné pomalým načtením webu, které v té době zabralo v průměru 10 vteřin.
 
-Na začátku roku 2017 AMP nasadili na produktové stránky a následně na šablonu výpisu produktu v kategoriích. Už v dubnu téhož roku tvořily přístupy přes AMP téměř polovinu celé návštěvnosti webu. Dále ještě uvádějí 80% zvýšení konverzního poměru na mobilech a snížení nákladů na akvizici mobilního uživatele o 66 %. CEO firmy, Simon Le Fur, přitom v případové studii akcentuje, že to celé bylo snadné – migrace na AMP jim trvala jen dva měsíce.
+Na začátku roku 2017 AMP nasadili na produktové stránky a následně na šablonu výpisu produktu v kategoriích. Už v dubnu téhož roku tvořily přístupy přes AMP téměř polovinu celé návštěvnosti webu. Dále ještě uvádějí 80% zvýšení konverzního poměru na mobilech a snížení nákladů na akvizici mobilního uživatele o 66 %. CEO firmy, Simon Le Fur, přitom v případové studii akcentuje, že to celé bylo snadné – migrace na AMP jim trvala jen dva měsíce.
 
 <!-- AdSnippet -->
 
@@ -39,7 +39,7 @@ Případové studie z celého světa a různých oborů činnosti najdete na [am
 
 ## Dopady na marketing ve vyhledávačích
 
-Zajímavou případovou studii, navíc z nezávislého zdroje, nabízí analýza 26 webů AMP od Stone Temple. Změny v metrikách chování uživatelů v přirozených výsledcích vyhledávání na mobilech byly oproti běžným webům následující:
+Zajímavou případovou studii, navíc z nezávislého zdroje, nabízí analýza 26 webů AMP od Stone Temple. Změny v metrikách chování uživatelů v přirozených výsledcích vyhledávání na mobilech byly oproti běžným webům následující:
 
 * Přístupy uživatelů na web se zvedly o 27 %.
 * Zobrazení stránek ve výsledcích bylo o 34 % více.

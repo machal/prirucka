@@ -205,7 +205,7 @@ Poslední velký důvod pro využití AMP vychází z toho prvního. Rychlé web
 
 Už víme, že [rychlý web zlepšuje konverze](https://www.vzhurudolu.cz/prirucka/rychlost-nacitani-proc). Francouzský online prodejce biopotravin _Greenweez_ nasazením AMP [takřka zdvojnásobil konverzní poměr](https://amp.dev/success-stories/greenweez) na mobilech.
 
-_BMW.com_ nasadilo AMP a na novém webu díky tomu získalo o 49 % vyšší návštěvnost z vyhledávačů. Zajímavé jsou ale i [další případové studie](https://amp.dev/success-stories/).
+_BMW.com_ nasadilo AMP a na novém webu díky tomu získalo o 49 % vyšší návštěvnost z vyhledávačů. Zajímavé jsou ale i [další případové studie](amp-co-je-pripadovky.md).
 
 V Česku AMP používá například _Reflex.cz_, anebo _Seznam Zprávy_ či _ProŽeny.cz_ z dílny _Seznam.cz_. Z větších e-shopů je to kromě _Lékárna.cz_ také například cestovka _Relaxos.cz_, s technologií ale experimentuje i _Alza.cz_.
 
