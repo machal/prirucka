@@ -1,12 +1,65 @@
 # Lazy loading obrázků na webu
 
-Připomeňme, že [lazy loading](lazy-loading.md) je technika pro načtení prvků webu až na moment, kdy jsou opravdu potřeba.
+Připomeňme, že [lazy loading](lazy-loading.md) je technika pro odložení načtení prvků webu až na moment, kdy jsou opravdu potřeba. V předchozím textu jsme se zabývali hlavně důvody pro jeho použití.
 
-V tomto textu se zaměříme hlavně na „líné“ načtení obrázků (a trochu `<iframe>`), ale zaměříme se také na konkrétní možnosti implementace lazy loadingu do vašich webů.
+V textu, který jste právě začali číst, se zaměříme hlavně na „líné“ načtení obrázků (a trochu `<iframe>`). Podíváme se také na konkrétní možnosti implementace lazy loadingu do vašich webů.
+
+Začneme novinkou, která je v době aktualizace textu úplně čerstvá.
+
+## Nativní lazy loading {#nativni}
+
+Od Chrome [verze 76](https://web.dev/native-lazy-loading) je možné nastavit líné načtení přímo v HTML, načež jej provede sám prohlížeč:
+
+```html
+<img src="obrazek.jpg" loading="lazy"
+  alt="…" width="200" height="200">
+```
+
+Kromě obrázků je to možné nastavit i pro vkládané rámce:
+
+```html
+<iframe src="https://example.com" loading="lazy"></iframe>
+```
+
+### Hodnoty atributu loading {#nativni-hodnoty}
+
+| Hodnota        | Jak funguje?                |
+|----------------|-----------------------------|
+| `lazy`         | Odlož stažení prvku, dokud na něj uživatel neposune stránku |
+| `eager`        | Stáhni prvek hned |
+| `auto`         | Necháváme to na prohlížeči. V tuto chvíli se chová jako `eager` |
+
+### Hranice stažení obrázku {#nativni-hranice}
+
+Se stažením obrázku by nebylo výhodné čekat až na moment, kdy uživatel naroluje přímo na něj. Nemuselo by se to totiž stihnout.
+
+Proto je tady *treshold* (hranice stažení obrázku), tedy náskok, který prohlížeči dáváme pro stažení obrázku. Řekněme, že horní hrana obrázku je umístěná 1 000 pixelů od začátku stánky. Prohlížeč jej ale začne stahovat už při posunu stránky na zhruba 700 či 800 pixelů.
+
+Ta hranice je ovšem nastavená různě. V případě nativního lazy loadingu ji počítá prohlížeče. Záleží na mnoha faktorech:
+
+- zda se stahuje obrázek nebo iframe,
+- zda je aktivní [Lite mód](https://blog.chromium.org/2019/04/data-saver-is-now-lite-mode.html) (režim šetřetní dat) prohlížeče,
+- jaký je [typ připojení](https://googlechrome.github.io/samples/network-information/) (obsah `navigator.connection`).
+
+### Demo pro obrázky {#nativni-demo-obrazky}
+
+V demu jsem prvním dvěma (zeleným) obrázkům nastavil `loading="eager"`, takže se stahují běžným způsobem. Ostatní (šedivé) obrázky se pak stahují líně, pomocí `loading="lazy"`.
+
+CodePen: [cdpn.io/e/RXevwJ](https://codepen.io/machal/pen/RXevwJ?editors=1000)
+
+Je zajímavé, že když jsem totéž zkoušel pro menší obrázky, zhruba mezi 20-30 kB, prohlížeč usoudil, že lazy loading je zbytečné dělat a stáhl všechny obrázky. 
+
+Někde jsem četl, že prohlížeč tak či tak stahuje prvních několik kilobajtů obrázku, aby si přečetl informace například o jejich pixelové velikosti. U datově málo objemných obrázků tedy zřejmě usoudil, že je prostě efektivnější je rovnou stáhnout celé.
+
+### Demo pro iframe {#nativni-demo-iframe}
+
+### Podpora  {#nativni-podpora}
+
+<!-- TODO: Firefox, Safari? Fallback na náhradní řešení  -->
 
 ## Jak to funguje? {#jak}
 
-Nejčastěji se odkládá načítání obrázků. Tak, že cestu k souborům nevložíte do parametru `src` nebo [`srcset`](srcset-sizes.md). Všechny soubory,  které jsou v nich vložené, totiž mají v seznamu načítání poměrně vysokou prioritu a prohlížeč při jejich stahování nezastavíte.
+Cestu k souborům při implementaci nevložíte do parametru `src` nebo [`srcset`](srcset-sizes.md). Všechny soubory,  které jsou v nich vložené, totiž mají v seznamu načítání poměrně vysokou prioritu a prohlížeč při jejich stahování nezastavíte.
 
 Pomůžeme si vlastním data atributem:
 
