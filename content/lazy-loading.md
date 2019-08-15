@@ -11,15 +11,12 @@ Jde tedy o skutečně o „líné“ načtení. Prohlížeč prvky stáhne až k
 </figcaption>
 </figure>
 
-<!-- TODO Nejčastěji se ve webdesignu lazy loading týká [obrázků](lazy-loading-obrazky.md) a je  navázaný na posun stránky. Tento text je ale zaměřený obecněji, proto si pojďme nejprve připomenout různé typy obsahu stránky, které je vhodné načíst tímto způsobem.
- -->
-
-Nejčastěji se ve webdesignu lazy loading týká obrázků a je  navázaný na posun stránky. Tento text je ale zaměřený obecněji, proto si pojďme nejprve připomenout různé typy obsahu stránky, které je vhodné načíst tímto způsobem.
+Nejčastěji se ve webdesignu lazy loading týká [obrázků](lazy-loading-obrazky.md) a je  navázaný na posun stránky. Tento text je ale zaměřený obecněji, proto si pojďme nejprve připomenout různé typy obsahu stránky, které je vhodné načíst tímto způsobem.
 
 ## Co a jak je možné načítat „líně“? {#co}
 
 - *Obrázky*  
-Stažení obrázků až po posunu stránky je nejčastější scénář, kterému bude věnován zvláštní text. <!-- TODO Stažení obrázků až po posunu stránky je nejčastější scénář, kterému věnuji [zvláštní text](lazy-loading-obrazky.md). -->
+Stažení obrázků až po posunu stránky je nejčastější scénář, kterému věnuji [zvláštní text](lazy-loading-obrazky.md).
 - *Iframe a externí obsah*  
 Velmi vhodným kandidátem na líné stažení je vkládaný obsah třetích stran – YouTube videí, map od Google nebo Seznamu, obsah z Facebooku či Twitteru vkládaný přes `<iframe>`…  
 - *Složitější struktury DOM*  
@@ -68,8 +65,6 @@ Obrázek vložený ve značce `<img>` má totiž z pohledu fronty stahování v 
 
 Uživatel ušetří data, vývojáři servery. Technika lazy loadingu totiž předpokládá, že velká část uživatelů líně načítaný obsah vůbec nestáhne. Servery se tak mohou věnovat jiným, důležitějším věcem.
 
-<!-- TODO Tímto bych rád ukončil teoretický úvod do lazy loadingu v kontextu webu. [V další části](lazy-loading-obrazku.md) se zaměříme na obrázky a rovnou také možnosti implementace této techniky – nativně v prohlížečích, pomocí hotových knihoven nebo vlastními řešeními s Intersection Observerem či jinak. -->
-
-Tímto bych rád ukončil teoretický úvod do lazy loadingu v kontextu webu. V další části se zaměříme na obrázky a rovnou také možnosti implementace této techniky – nativně v prohlížečích, pomocí hotových knihoven nebo vlastními řešeními s Intersection Observerem či jinak.
+Tímto bych rád ukončil teoretický úvod do lazy loadingu v kontextu webu. [V další části](lazy-loading-obrazku.md) se zaměříme na obrázky a rovnou také možnosti implementace této techniky – nativně v prohlížečích, pomocí hotových knihoven nebo vlastními řešeními s Intersection Observerem či jinak.
 
 <!-- AdSnippet -->
