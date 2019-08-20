@@ -1,12 +1,28 @@
 # CSS a webfonty v AMP
 
+<div class="web-only" markdown="1">
+
+Už víme, [co je AMP](amp.md) a známe omezení, která tato technologie pro tvorbu velmi rychlých webů aplikuje [na HTML kód](amp-html.md).
+
+Dnes se podíváme na kaskádové styly, animace a webfonty v AMP stránkách. 
+
+</div>
+
 I na úrovni CSS nás podobně jako v případě HTML čeká pár zákazů. Nebo jim budeme říkat _inovace_? Těžko říct, jak o tom vlastně psát. Uvidíte, že záleží případ od případu.
+
+<div class="web-only" markdown="1">
+
+Aby bylo dosaženo kýženého výkonu, CSS je nutné vkládat přímo do HTML, animace je možné použít jen ty akcelerované přes GPU a webfonty jen od určitých dodavatelů.
+
+</div>
 
 Některé zde uvedené body jsou rozumné a daly by se doporučit přinejmenším některým webům realizovaným běžnými technologiemi. Do této kategorie patří zákaz stahování externích skriptů pomocí `@import` v CSS, omezení animací a částečně také vkládání stylů přímo do HTML.
 
+<!-- AdSnippet -->
+
 Jiné body bychom jako inovaci neoznačili, spíše je považujeme za z nouze ctnost. Sem patří zákaz důležitosti v CSS (`!important`) nebo omezení dodavatelů externích webových fontů na pouhé čtyři.
 
-Ale konec řečí, pojďme se podívat na kód, který je v AMP stylech jiný než v běžném CSS.
+Ale konec řečí, pojďme se podívat na kód, který je v AMP stylech jiný než v běžném CSS.
 
 ## Veškeré styly musí být v HTML
 
@@ -24,7 +40,7 @@ Velikost je omezená na 50 kB. Proč tomu tak je?
 
 Když jsme nad tím přemýšleli, Martina napadlo, že jde o součást validační strategie. AMP stránka musí být jedním _validním_ celkem. Validováním dvou a více souborů by se věci komplikovaly.
 
-Druhým důvodem bude samozřejmě rychlost. Styly jsou hned po HTML druhým nejkritičtějším zdrojem potřebným k prvnímu renderování stránky. Proto je (i na běžných webech) doporučováno, aby stránka stahovala jen ty styly, které sama potřebuje, a ne o moc víc. Pokud se povede takovou distribuci připravit, dostaneme se na hodnoty kolem 5–10 kB. U takto malých externích kritických zdrojů je už doporučováno přímé vložení do dokumentu, protože zde nebude přínos kešování externího souboru v prohlížeči uživatele tak velký.
+Druhým důvodem bude samozřejmě rychlost. Styly jsou hned po HTML druhým nejkritičtějším zdrojem potřebným k prvnímu renderování stránky. Proto je (i na běžných webech) doporučováno, aby stránka stahovala jen ty styly, které sama potřebuje, a ne o moc víc. Pokud se povede takovou distribuci připravit, dostaneme se na hodnoty kolem 5–10 kB. U takto malých externích kritických zdrojů je už doporučováno přímé vložení do dokumentu, protože zde nebude přínos kešování externího souboru v prohlížeči uživatele tak velký.
 
 Třetím argumentem pro vkládání stylů přímo do HTML je v případě AMP „balíčkování“. Je to jediný soubor, který funguje – a je distribuovaný – vcelku. Stačí k němu na AMP Cache přiložit AMP komponenty a máme funkční stránku.
 
@@ -34,7 +50,7 @@ Dodáváme, že jako limit se počítá datová velikost kódu uvnitř `<style>`
 
 Pravidlo `@import` je zde samozřejmě zakázané, ze stejného důvodu jako v předchozím odstavci. Nechceme přece v kritické vykreslovací cestě stahovat přes síť další soubory.
 
-Povolená pravidla jsou tato: `@font-face`, `@keyframes`, `@media`, `@page` a `@supports`.
+Povolená pravidla jsou tato: `@font-face`, `@keyframes`, `@media`, `@page` a `@supports`.
 
 Nepovolený je také `@charset`, `@namespace` nebo `@document`. Kvůli těmto pravidlům už ale nejspíš ronit slzy nebudeme. Navíc je možné, že je autoři do AMP nakonec přidají.
 
@@ -42,7 +58,17 @@ Nepovolený je také `@charset`, `@namespace` nebo `@document`. Kvůli těmto pr
 
 Další zákaz `!important` může bolet, protože v CSS je tohle pravidlo jako droga. Všichni vědí, že užívat ji je nebezpečné, ale jsme jen lidi a každý má někdy slabou chvilku, že ano…?
 
+<div class="ebook-only" markdown="1">
+
 Proč je to zakázané? Předpokládá se, že AMP dokumenty budou procházet úpravami [v AMP Cache](amp-cache.md) a zobrazovat se [v AMP Vieweru](amp-viewer.md). Během toho se upraví jejich HTML kód. Řada vlastností, které pro potřeby jednoduššího psaní stránek zapisují jako atributy (např. `layout="responsive"`), se ve veřejně publikované AMP stránce přepíší do CSS.
+
+</div>
+
+<div class="web-only" markdown="1">
+
+Proč je to zakázané? Předpokládá se, že AMP dokumenty budou procházet úpravami [v AMP Cache](https://medium.com/@pbakaus/why-amp-caches-exist-cd7938da2456) a zobrazovat se [v AMP Vieweru](https://developers.google.com/search/docs/guides/about-amp). Během toho se upraví jejich HTML kód. Řada vlastností, které pro potřeby jednoduššího psaní stránek zapisují jako atributy (např. `layout="responsive"`), se ve veřejně publikované AMP stránce přepíší do CSS.
+
+</div>
 
 AMP Cache tedy musí přepisovat naše styly. A jediný způsob, jakým může zaručit stoprocentní jistotu přepisu, je právě `!important`.
 
@@ -77,7 +103,7 @@ Nestylujte tedy přímo komponentu:
 <amp-img class="muj-obrazek">…</amp-img>
 ```
 
-## Animace: Jen ty akcelerované pomocí GPU a raději do zvláštního bloku
+## Animace: Jen ty akcelerované pomocí GPU a raději do zvláštního bloku
 
 Aktuálně můžete pomocí `transition` nebo `@keyframes` animovat pouze vlastnosti `opacity` a `transform`. Je jich tedy relativně málo, na druhou stranu jsou poměrně silné, takže by to zásadně vadit nemělo.
 
@@ -92,7 +118,7 @@ Pokud animujete pomocí `@keyframes`, autoři navíc doporučují umístit dekla
 </body>
 ```
 
-Parsování těchto pravidel prohlížečem je totiž relativně pomalé. Umístění v hlavičce dokumentu by oddálilo zobrazení stránky. I zde máme velikostní limit, v tomhle případě velkorysých 500 kB.
+Parsování těchto pravidel prohlížečem je totiž relativně pomalé. Umístění v hlavičce dokumentu by oddálilo zobrazení stránky. I zde máme velikostní limit, v tomhle případě velkorysých 500 kB.
 
 ## Webfonty: Jen od povolených dodavatelů
 
@@ -100,7 +126,9 @@ Podobně jako u běžných webů máte i zde svobodnou volbu ve výběru písma,
 
 ### První možnost: @font-face
 
-Soubory s webfonty umístíte na svůj server a v CSS je použijete pomocí pravidla `@font-face`. Doporučujeme vám to, protože vlastní písmo obvykle představuje kritický zdroj ke správnému vykreslení stránky. Umístění na vaší doméně nic nebrzdí, není potřeba navazovat nové síťové spojení. V případě nahrání do AMP Cache si stránka s sebou vezme také důležité obrázky a webfonty, takže i tam jsou všechny umístěné na stejné doméně.
+Soubory s webfonty umístíte na svůj server a v CSS je použijete pomocí pravidla `@font-face`. Doporučujeme vám to, protože vlastní písmo obvykle představuje kritický zdroj ke správnému vykreslení stránky. Umístění na vaší doméně nic nebrzdí, není potřeba navazovat nové síťové spojení. V případě nahrání do AMP Cache si stránka s sebou vezme také důležité obrázky a webfonty, takže i tam jsou všechny umístěné na stejné doméně.
+
+<!-- AdSnippet -->
 
 Více o vlastnostnosti `@font-face` píše Martin pro zájemce na Vzhůru dolů: [vrdl.cz/p/css3-font-face](https://www.vzhurudolu.cz/prirucka/css3-font-face)
 
@@ -128,6 +156,19 @@ Nic nového, to by mohla být dobrá zpráva. Jenže je tu ještě ta špatná: 
 
 Samozřejmě – není příliš pravděpodobné, že budete potřebovat jiné dodavatele. Většina menších písmolijen například umožňuje instalaci webfontů na vlastní doménu.
 
+<div class="web-only" markdown="1">
+
+I tak to ale omezuje svobodu volby a spadá do bodů, jež na AMP vnímáme kriticky. Snad i volbu dodavatele webfontové infrastruktury autoři časem otevřou každému, kdo bude schopný splnit jejich přísné podmínky.
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
 I tak to ale omezuje svobodu volby a spadá do bodů, jež na AMP [vnímáme kriticky](amp-kritika-myty.md). Snad i volbu dodavatele webfontové infrastruktury autoři časem otevřou každému, kdo bude schopný splnit jejich přísné podmínky.
 
 Probrali jsme vše, co jsme měli ke stylům na srdci. Teď ještě pár slov k dalšímu členovi triumvirátu, k JavaScriptu. O čem ale psát, když ten je v AMP  zakázaný? Uvidíte sami.
+
+</div>
+
+
+<!-- AdSnippet -->

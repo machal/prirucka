@@ -51,7 +51,7 @@ Zaměřme se hlavně na rozdíly oproti běžnému HTML:
 
 - `<html amp>` je označení AMP stránky.
 - `<script async src="https://cdn.ampproject.org/v0.js">` asynchronně stahuje povinnou hlavní javascriptovou knihovnu AMP.
-- `<style amp-custom>` je místo, kam vložíte vlastní CSS pro tuhle stránku.
+- `<style amp-custom>` je místo, kam vložíte [vlastní CSS](amp-css.md) pro tuhle stránku.
 - `<style amp-boilerplate>` obsahuje povinné styly, které pomáhají prohlížeči s vykreslením stránky.
 
 <div class="ebook-only" markdown="1">
