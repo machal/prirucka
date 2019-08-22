@@ -82,7 +82,7 @@ Jde o rozvržení definované následujícím způsobem:
 Pro zájemce polopaticky:
 
 - `display: grid` asi vysvětlovat nemusím. Definujeme prostě kontejner mřížky.
-- `grid-template-columns: 1fr 3fr 1fr` specifikuje samotnou mřížku. Co je `fr`? Vzpomeňte si na zlomkovou jednotku [z textu o Gridu](css-grid.md). Tady říkáme, že chceme třísloupcový layout, jehož prostřední sloupec zabírá trojnásobnou délku oproti těm krajním.
+- `grid-template-columns: 1fr 3fr 1fr` specifikuje samotnou mřížku. O [jednotce `fr`](css-jednotka-fr.md) píšu v jiném textu.
 - `grid-column-gap: 0.5em` je zápis pro mezeru mezi sloupci layoutu.  
 - `grid-template-areas` je šablona pojmenování oblastí pro následné využití v CSS.
 

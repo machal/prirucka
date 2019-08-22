@@ -123,7 +123,7 @@ Hned si to vysvětíme:
 - Funkci `repeat()` už znáte – generuje určitý počet položek, tady sloupečků gridu.
 - `auto-fill` – když dostane volný prostor, vloží novou prázdnou buňku.
 - Funkce `minmax()` definuje šířku položky mezi určitými hranicemi.
-- `1fr` je „fraction unit“. Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`. 
+- `1fr` je [„fraction unit“](css-jednotka-fr.md). Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`.
 
 CodePen: [cdpn.io/e/NMyjpb](https://codepen.io/machal/pen/NMyjpb?editors=1100).
 

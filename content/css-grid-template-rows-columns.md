@@ -94,7 +94,7 @@ Občas se to ale může hodit použít i ve vlastním kódu, například když r
 
 V gridu je možné pro definici řádků a sloupečků používat všechny možné [jednotky](jednotky.md), které už pro rozvržení v CSS používáte.
 
-Je tady ale jedna novinka – jednotka `fr`. Jde o *flex fraction* a dá se o něm mluvit jako o podílu na zbytku.
+Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *flex fraction* a dá se o něm mluvit jako o podílu na zbytku.
 
 Zápis může vypadat například takto:
 

@@ -63,9 +63,9 @@ Pod názvem vlastnosti se skrývá samostatný text s příklady.
 
 </div>
 
-Brzy napíšu texty příruček k dalším vlastnostem. Přidávám je zatím s odkazem na anglické zdroje:
+Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám zatím s odkazem na anglické zdroje:
 
-- [jednotka `fr`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value)
+- [jednotka `fr`](css-jednotka-fr.md)
 - [funkce `repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat)
 - [funkce `minmax()`](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
 - [klíčová slova `auto-fill`, `auto-fit`](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)
