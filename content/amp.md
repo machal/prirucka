@@ -6,6 +6,10 @@ Dozvíte se, že AMP je technologie pro bleskurychlé zobrazení stránek. Jde o
 
 AMP je pro webaře zajímavé především proto, že jeho bezkonkurenční rychlost má pozitivní dopad na konverzní poměr webů. Nerad bych také vynechal možnost efektivní tvorby webů, která se v AMP skrývá.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=a9E-gL8NOqs">AMP: Základy technologie pro rychlé weby</a> ~ Proč AMP potřebujeme a z čeho je vlastně tahle technologie složená?
+</p>
+
 Pojďme si to teď všechno rozebrat.
 
 ## Co je AMP? {#co}
