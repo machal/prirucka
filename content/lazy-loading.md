@@ -57,6 +57,11 @@ Odložením načtení knihoven třetích stran ale neděláme primárně kvůli 
 
 Jako vývojáři můžeme pomocí lazy loadingu také zvýšit prioritu stažení jiných prvků.
 
+<div class="related" markdown="1">
+- [Lazy loading obrázků a iframe](/prirucka/lazy-loading-obrazku)
+- [Knihovna MiniLazyload](https://www.vzhurudolu.cz/blog/148-minilazyload)
+</div>
+
 Obrázek vložený ve značce `<img>` má totiž z pohledu fronty stahování v prohlížečích přednost před obsahem linkovaným v CSS.
 
 Čím méně těchto obrázků ze značky `<img>` začně prohlížeč stahovat hned před prvním vykreslování stránky, tím rychleji se dostane na další zdroje, odkazované až v CSS, které jsou ale z našeho pohledu poměrně důležité – webfonty, ikony, obrázky obsahující design webu…

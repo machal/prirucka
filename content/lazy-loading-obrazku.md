@@ -57,6 +57,11 @@ Líné načtení tak ošéfuje samotný prohlížeče, hurá! Ale není to takhl
 
 Se stažením obsahu by nebylo výhodné čekat až na moment, kdy uživatel naroluje přímo na něj. Nemuselo by se to totiž stihnout.
 
+<div class="related" markdown="1">
+- [Co je to lazyloading](/prirucka/lazy-loading)
+- [Knihovna MiniLazyload](https://www.vzhurudolu.cz/blog/148-minilazyload)
+</div>
+
 Proto je tady *treshold* (hranice stažení obrázku), tedy náskok, který prohlížeči dáváme pro stažení obrázku. Řekněme, že horní hrana obrázku je umístěná 1 000 pixelů od začátku stránky. Prohlížeč jej ale začne stahovat už při posunu stránky na zhruba pozici 700 či 800 pixelů.
 
 Ta hranice je ovšem nastavená různě. V případě nativního lazy loadingu ji počítá prohlížeč. Záleží na mnoha faktorech, ke dni psaní textu například na těchto:
@@ -207,12 +212,12 @@ Zde je seznam knihoven, které odložené načtení usnadňují.
 
 | Knihovna                                                  | Velikost | jQuery/JS     | Obsah         | Int. Observer | Nativní | Update |
 |-----------------------------------------------------------|---------:|:--------------|:--------------|:-------------:|:-------:|:-------:
-| [Unveil](http://luis-almeida.github.io/unveil/)           |  0,6 kB  | jQuery, Zepto | img           |               |         |  2014  |
+| [MiniLazyload](https://github.com/VelociraptorCZE/MiniLazyload) | 1,6 kB | JS        | img, srcset, bg, iframe |   +     |    +    |  2019  |
 | [Recliner](https://github.com/sourcey/recliner)           |  1,5 kB  | jQuery        | img, iframe, ajax |           |         |  2018  |
 | [LazyLoad](https://github.com/verlok/lazyload)            |  5,5 kB  | JS            | img, srcset, bg, iframe   |       +       |    +    |  2019  |
 | [jQuery Lazy](http://jquery.eisbehr.de/lazy/)             |  5,1 kB  | jQuery, Zepto | img, iframe   |               |         |  2019  |
-| [Lazyframe](https://github.com/viktorbergehall/lazyframe) |  5,9 kB  | JS, jQuery    | iframe        |               |         |  2019  |
 | [lazySizes](http://afarkas.github.io/lazysizes/)          |  7,1 kB  | JS            | img, srcset, [bg, iframe, ajax…](https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/unveilhooks)  |         |    [+](https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/native-loading)    |  2019  |
+
 
 </div>
 
@@ -224,7 +229,7 @@ Poznámky k tabulce:
 - *Int. Observer* říká, zda umí využít Intersection Observer.
 - *Nativní* – umí nativní lazy loading?
 
-Z mého pohledu je ideální knihovna [LazyLoad](https://github.com/verlok/lazyload) od Andrea Verlicchiho. Pokud už na webu máte jQuery a nehodláte bez něj existovat, jako vhodnou alternativu doporučuji knihovnu [lazySizes](http://afarkas.github.io/lazysizes/) od Alexandera Farkase.
+Z mého pohledu jsou ideální knihovny [LazyLoad](https://github.com/verlok/lazyload) od Andrea Verlicchiho a [MiniLazyload](https://github.com/VelociraptorCZE/MiniLazyload) od Šimona Raichla. Pokud už na webu máte jQuery a nehodláte bez něj existovat, jako vhodnou alternativu doporučuji knihovnu [lazySizes](http://afarkas.github.io/lazysizes/) od Alexandera Farkase.
 
 Knihovny ale mají daleko více parametrů než ty v tabulce uvedené. Raději si udělejte hlubší analýzu než některou vyberete.
 
