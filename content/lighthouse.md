@@ -109,6 +109,7 @@ lighthouse https://www.vzhurudolu.cz --output json  --output-path vzhurudolu-rep
 <div class="related web-only" markdown="1">
 - [Nástroje pro analýzu rychlosti](rychlost-nastroje.md)
 - [PageSpeed Insights](pagespeed-insights.md)
+- [Lighthouse Performance Score](metriky-lps.md)
 </div>
 
 Zpracování JSONu (nebo CSV, který Lighthouse nabízí také) pak je možné dělat automaticky. Toho je možné využít při pravidelném spouštění.

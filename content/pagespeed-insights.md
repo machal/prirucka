@@ -3,9 +3,9 @@
 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=cs) (PSI) od Google je asi nejznámější nástroj pro testování a analýzu rychlosti webů.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="">
+<img src="../dist/images/original/pagespeed-insights.png" alt="" width="1080" height="540">
 <figcaption markdown="1">
-*Skóre od PSI je velmi dobrý ukazatel rychlosti. V textu se ale dozvíte, co za ním je a jak nástroj používat*
+*Skóre od PSI je velmi dobrý ukazatel rychlosti. V textu se ale dozvíte, co za ním je a jak nástroj používat.*
 </figcaption>
 </figure>
 
@@ -31,9 +31,9 @@ V dalším textu se vám pokusím pomoci s interpretací výsledků.
 PSI vám tady barvou nahlásí, jak si stojíte.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights-skore.jpg" width="1920" height="540" alt="PageSpeed Insights Skóre">
+<img src="../dist/images/original/pagespeed-insights-skore.png" width="1920" height="540" alt="PageSpeed Insights Skóre">
 <figcaption markdown="1">
-*Skóre rychlosti. Zelená je super, oranžová ujde, červená znamená, že je potřeba se rychlosti webu věnovat. Výsledky pod dvacet bodů by měly spouštět rychlostní paniku*
+*Skóre rychlosti. Zelená je super, oranžová velmi dobrá, červená znamená, že je potřeba se rychlosti webu věnovat. Výsledky pod dvacet bodů by měly spouštět rychlostní paniku.*
 </figcaption>
 </figure>
 
@@ -41,14 +41,16 @@ Zajímavé je samozřejmě také konkrétní číslo, které vám nástroj sděl
 
 Samozřejmě je také důležité, jak si vede vaše konkurence. Ale pokud o rychlý web opravdu stojíte, měli byste se zde prostě u klíčových stránek pohybovat v zelených číslech.
 
+Více o [Lighthouse Performance Score](metrika-lps.md).
+
 ## Data pole aneb rychlost u skutečných uživatelů {#crux}
 
 Jde o metriky od skutečných uživatelů vašeho webu. Alespoň těch, kteří používají Google Chrome. Zdrojová databáze se jmenuje [Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/), pokud by vás to zajímalo. A mělo by zajímat.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights-crux.jpg" alt="">
+<img src="../dist/images/original/pagespeed-insights-crux.png" alt="">
 <figcaption markdown="1">
-*„Data pole“, metriky přímo od uživatelů Chrome a jejich shrnutí pro celou doménu v „Origin Summary“*
+*„Data pole“, metriky přímo od uživatelů Chrome a jejich shrnutí pro celou doménu v „Origin Summary“.*
 </figcaption>
 </figure>
 
@@ -88,9 +90,9 @@ Nebo také měření strojem, která [od listopadu 2018](https://webmasters.goog
 Měření strojem? Prostě se pustí dva virtuální počítače – desktop (zařízení šířce viewportu 1366 px) a mobil (šířka 412 px) – a testuje se v nich váš web. 
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights-lab.jpg" alt="">
+<img src="../dist/images/original/pagespeed-insights-lab.png" alt="">
 <figcaption markdown="1">
-*Laboratorní data ze syntetických měření počítačem. Neukazují obrázek o rychlosti v cílové skupině, ale za to jsou podrobnější*
+*Laboratorní data ze syntetických měření počítačem. Neukazují obrázek o rychlosti v cílové skupině, ale za to jsou podrobnější.*
 </figcaption>
 </figure>
 
@@ -114,9 +116,9 @@ Jak rychle bude stránka reagovat na vstup uživatele?
 ## Optimalizační návrhy: Příležitosti a diagnostika {#prilezitosti}
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights-prilezitosti.jpg" alt="">
+<img src="../dist/images/original/pagespeed-insights-prilezitosti.png" alt="">
 <figcaption markdown="1">
-*Příležitosti ke zrychlení stránky. Většinou se to vyplatí poslechnout*
+*Příležitosti ke zrychlení stránky. Většinou se to vyplatí poslechnout.*
 </figcaption>
 </figure>
 
