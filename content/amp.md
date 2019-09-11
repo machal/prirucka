@@ -80,6 +80,10 @@ Je zde však několik rozdílů. Jednak označení AMP stránky pomocí blesku (
 
 Více informací [o AMP HTML](amp-html.md) je na Vzhůru dolů. Plnohodnotnou dokumentaci frameworku najdete na [amp.dev](https://amp.dev/).
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=_vp-BVgYU98">AMP pro frontendisty</a> ~ HTML, CSS a přes 100 komponent v jednom frameworku.
+</p>
+
 Čím se liší vývoj v AMP oproti vývoji běžných webů? Je toho více, ale zůstaňme u těch nejdůležitějších rozdílů:
 
 * V [AMP HTML](amp-html.md) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy. V tomto případě `<amp-img>`. Je to proto, že technologie vycházející z webových standardů zatím neobsahují věci důležité pro rychlé zobrazení stránek, jako třeba [statický layout](https://amp.dev/documentation/guides-and-tutorials/learn/amp-html-layout/) nebo inteligentní prioritizaci stahování zdrojů.
@@ -98,6 +102,10 @@ AMP stránka je nejčastěji upravená verze už existující stránky vašeho w
 ```
 
 Za pár hodin až dní bude stránka `example.amp.html` umístěná v AMP Cache, na zvláštní adrese. AMP Cache poskytuje Microsoft pro svůj vyhledávač Bing, dále Cloudflare nebo samozřejmě Google. U toho posledního jmenovaného bude adresa vaší AMP stránky začínat řetězcem `https://google.com/amp/s/…`.
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=l751Or7iZCA">AMP ekosystém</a> ~ Co je AMP Cache, co Optimizer a co Viewer?
+</p>
 
 Díky tomu má vaše AMP stránka adresu na jiné doméně, což je terčem poměrně oprávněné kritiky. Autoři AMP pro toto nabízejí řešení v podobě standardu [Signed HTTP Exchanges](https://digichef.cz/signed-http-exchanges-aneb-vyuzivejte-amp-s-originalni-url), který zajistí zobrazení stránky pod vaší adresou, i když je fyzicky umístěná jinde. Uvidíme, zda se standard ujme.
 
