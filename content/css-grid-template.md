@@ -81,7 +81,7 @@ CodePen: [cdpn.io/e/JgKyxK](https://codepen.io/machal/pen/JgKyxK?editors=1100)
 ## Co je dobré vědět? {#dobre-vedet}
 
 - Všimněte si, že `grid-template` nastavuje `grid-template-areas: none`, takže resetuje i případné dříve nastavené oblasti.
-- Funkce `repeat()` zde není povolena, protože se zde dává přednost vizuálnímu vyjádření mřížky, takzvanému „ASCII artu“.
+- [Funkce `repeat()`](css-repeat.md) zde není povolena, protože se zde dává přednost vizuálnímu vyjádření mřížky, takzvanému „ASCII artu“.
 - Stejnou syntaxi má vlastnost `grid`, která ovšem navíc umožňuje nastavení rozměrů implicitního gridu (vlastnosti `grid-auto-columns`, `grid-auto-rows`, and `grid-auto-flow`), takže je pravděpodobné, že můžete chtít použít spíše právě ji.
 
 ## Podpora v prohlížečích {#podpora}

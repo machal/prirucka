@@ -87,7 +87,7 @@ Je možné tedy automatizace použít jen pro explicitní mřížky definované 
 - *Pozor na zpětné nasazení na starých projektech*   
 Doporučení zní: Nechte grid vypnutý a pomocí CSS komentářů jej zapínejte pouze pro nové deklarace.
 - *Neumí to repeat() v kombinaci a auto-fill, auto-fit*  
-I když IE funkci `repeat()` zvládá, klíčová slova `auto-fill` a `auto-fit` bohužel ne.
+I když IE [funkci `repeat()`](css-repeat.md) zvládá, klíčová slova `auto-fill` a `auto-fit` bohužel ne.
 - *Vyberte si: Buď autoplacement nebo manuální umístění v gridu*  
 V moderních prohlížečích lze obojí kombinovat, v IE bohužel ne. Buď tedy budete všechny prvky gridu umísťovat ručně (použijte vlastnost `grid-template-areas` v definici gridu) nebo automaticky (bez `*-areas`).
 - *Pozor na pseudoelementy*  

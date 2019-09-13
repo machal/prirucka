@@ -54,7 +54,7 @@ Velká část uvedeného pro vás ale přečtením tohodle dlouhého textu přes
 Naopak se málo ví, že stařičký IE nativně podporuje:
 
 - nějakou formu implicitní (nepředdefinované) mřížky,
-- funkci `repeat()`, jen jinak: `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`,
+- [funkci `repeat()`](css-repeat.md), jen jinak: `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`,
 - další skvělou funkci – `minmax()`,
 - klíčová slova `min-content` a `max-content`.
 

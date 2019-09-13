@@ -120,7 +120,7 @@ V CodePenu si všimněte i jiné zajímavé deklarace:
 
 Hned si to vysvětíme:
 
-- Funkci `repeat()` už znáte – generuje určitý počet položek, tady sloupečků gridu.
+- [Funkci `repeat()`](css-repeat.md) už znáte – generuje určitý počet položek, tady sloupečků gridu.
 - `auto-fill` – když dostane volný prostor, vloží novou prázdnou buňku.
 - Funkce `minmax()` definuje šířku položky mezi určitými hranicemi.
 - `1fr` je [„fraction unit“](css-jednotka-fr.md). Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex: 1`.

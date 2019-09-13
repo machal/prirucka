@@ -141,7 +141,7 @@ U složitějších mřížek by bylo nepříjemné zapisovat řadu stejných hod
 }
 ```
 
-Proto je tady funkce `repeat()`, která opakování zamezuje:
+Proto je tady [funkce `repeat()`](css-repeat.md), která opakování zamezuje:
 
 ```css
 .container {
