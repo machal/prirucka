@@ -4,35 +4,27 @@ CSS Grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mří�
 
 Síla gridu je v tom, že můžeme mřížku definovat v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css3-flexbox.md) je tedy vhodnější pro celostránkové a komplexnější layouty.
 
-<!-- AdSnippet -->
+Grid zvládají všechny dnešní prohlížeče. Internet Exploreru 11 ale podporuje jen starší verzi Gridu. Nevadí, i v něm je mřížku s kompromisy [možné použít](css-grid-msie.md).
 
-V době psaní textu zvládnou Grid aktuální verze všech relevantních [prohlížečů](prohlizece.md). Problém zůstává v Internet Exploreru 11, který podporuje jen starší verzi Gridu. Ale i v tomto prohlížeči je mřížku díky nástroji Autoprefixer [možné použít](css-grid-msie.md).
+<!-- AdSnippet -->
 
 Pokud sháníte kompletní příručku ke všem vlastnostem gridu, jste na správném místě. V tomto textu vás čeká:
 
 - [Příručka k vlastnostem](#vlastnosti)
-- [Jednoduchý příklad](#priklad)
+- [Základy a příklad](#priklad)
 - [Co je to vlastně mřížka?](#mrizka)
 - [Jak se grid liší od flexboxu?](#flexbox)
 - [Zásadní plusy a minusy](#plusy-minusy)
 - [Grid v Internet Exploreru 11](#ie11)
 - [Kde se učit?](#ucit)
 
-Nejprve ale pojďme na představovací video.
-
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=9M5RGjlAkeY">CSS Grid</a> ~ Úplné základy ve videu.
-</p>
-
-## Příručka vlastností {#vlastnosti}
+## Příručka k vlastnostem {#vlastnosti}
 
 Podívejte se na detailní příručku k jednotlivým vlastnostem gridu.
 
 ### Nastavení rodiče mřížky {#grid}
 
-`display: grid`. Jak už jsem psal – sám o sobě nic nedělá. Jen nastaví „grid formatting context“, takže jeho přímí potomkové mohou mít specifické vlastnosti.
-
-Možná je také „inline“ hodnota: `inline-grid`.
+`display: grid`. Nastaví „grid formatting context“, takže jeho přímí potomkové mohou mít specifické vlastnosti. Možná je také „inline“ hodnota: `inline-grid`.
 
 ### Definice mřížky {#vlastnosti-definice}
 
@@ -42,37 +34,52 @@ Pod názvem vlastnosti se skrývá samostatný text s příklady.
 
 | Vlastnost                | Co umí?  |
 |--------------------------|----------|
-| [`grid-template-columns/rows`](css-grid-template-rows-columns.md) | Definice explicitní mřížky |
-| [`grid-template-areas`](css-grid-template-areas.md)  | Pojmenování oblastí |
-| [`grid-template`](css-grid-template.md)  | Zkratka pro definici explicitní mřížky |
-| [`grid-auto-columns/rows`](css-grid-auto-rows-columns.md) | Definice implicitní mřížky |
-| [`grid-auto-flow`](css-grid-auto-flow.md)        | Způsob automatického umísťování do mřížky |
-| [`grid`](css-grid-zkratka.md)        | Zkratka pro definici všeho |
-| [`gap`](css-gap.md)        | Definice mezery mezi buňkami |
+| [`grid-template-columns/rows`](css-grid-template-rows-columns.md) | Definice explicitní mřížky  <br> `grid-template-columns: 150px 1fr 1fr` |
+| [`grid-template-areas`](css-grid-template-areas.md)  | Pojmenování oblastí <br> `grid-template-areas: "first first"` |
+| [`grid-template`](css-grid-template.md)  | Zkratka pro definici explicitní mřížky <br> `grid-template: auto auto / 2fr 1fr` |
+| [`grid-auto-columns/rows`](css-grid-auto-rows-columns.md) | Definice implicitní mřížky <br> `grid-auto-rows: 1fr` |
+| [`grid-auto-flow`](css-grid-auto-flow.md)        | Způsob automatického umísťování do mřížky <br> `grid-auto-flow: column` |
+| [`grid`](css-grid-zkratka.md)        | Zkratka pro definici všeho <br> `grid: auto-flow 1fr / 100px` |
+| [`gap`](css-gap.md)        | Definice mezery mezi buňkami  <br> `gap: 1rem` |
 
 </div>
 
-### Umístění do mřížky {#vlastnosti-umiseni}
+### Umístění do mřížky {#vlastnosti-umisteni}
 
 <div class="rwd-scrollable f-6"  markdown="1">
 
 | Vlastnost                | Co umí?  |
 |--------------------------|----------|
-| [`grid-column/row`](css-grid-row-column.md) | Umístění do explicitní mřížky |
-| [`grid-area`](css-grid-area.md)  | Umístění do pojmenované oblasti |
+| [`grid-column/row`](css-grid-row-column.md) | Umístění do explicitní mřížky <br> `grid-column: 2 / 3` |
+| [`grid-area`](css-grid-area.md)  | Umístění do pojmenované oblasti <br> `grid-area: first` |
 
 </div>
 
+### Funkce a klíčová clova {#vlastnosti-funkce}
+
 Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám zatím s odkazem na anglické zdroje:
 
-- [jednotka `fr`](css-jednotka-fr.md)
-- [funkce `repeat()`](css-repeat.md)
-- [funkce `minmax()`](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
-- [klíčová slova `auto-fill`, `auto-fit`](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)
+<div class="rwd-scrollable f-6"  markdown="1">
 
-## Jednoduchý příklad {#priklad}
+| Vlastnost                | Co umí?  |
+|--------------------------|----------|
+| [jednotka `fr`](css-jednotka-fr.md) | Jednotka pro podíl na celku <br>  `grid-template-columns: 1fr 2fr` |
+| [funkce `repeat()`](css-repeat.md)  | Funkce zkrácení opakujících se zápisů <br>  `grid-template-columns: repeat(4, 1fr)` |
+| funkce `minmax()` ([MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax))  | Omezení minima a maxima v rozměru <br>  `grid-template-columns: minmax(100px, 1fr)` |
+| klíčová slova `auto-fill`, `auto-fit` ([CSS-Tricks](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/))  | Způsob roztahování buněk mřížky <br>  `grid-template-columns: repeat(auto-fill, minmax(200px,1fr))` |
 
-Řekněme, že naše HTML vypadá takto:
+</div>
+
+## Základy gridu a příklad {#priklad}
+
+Nejprve pojďme na představovací video.
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=9M5RGjlAkeY">CSS Grid</a> ~ Úplné základy ve videu.
+</p>
+
+
+A teď ten příklad. Řekněme, že naše HTML vypadá takto:
 
 ```html
 <div class="container">
