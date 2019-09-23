@@ -4,17 +4,23 @@ Delší, hlubší a propracovanější odpověď na otázku „Co je AMP a proč
 
 Dozvíte se, že AMP je technologie pro bleskurychlé zobrazení stránek. Jde o frontendový framework a zároveň způsob distribuce stránek, který se vyhýbá pomalé síti a pomalým serverům.
 
-AMP je pro webaře zajímavé především proto, že jeho bezkonkurenční rychlost má pozitivní dopad na konverzní poměr webů. Nerad bych také vynechal možnost efektivní tvorby webů, která se v AMP skrývá.
+## Obsah článku {#obsah}
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=a9E-gL8NOqs">AMP: Základy technologie pro rychlé weby</a> ~ Proč AMP potřebujeme a z čeho je vlastně tahle technologie složená?
-</p>
+- [Co je AMP?](#co)
+- [Proč nás má AMP zajímat?](#proc)
+- [Nevýhody AMP](#nevyhody)
+
+AMP je pro webaře zajímavé především proto, že jeho bezkonkurenční rychlost má pozitivní dopad na konverzní poměr webů. Nerad bych také vynechal možnost efektivní tvorby webů, která se v AMP skrývá.
 
 Pojďme si to teď všechno rozebrat.
 
 ## Co je AMP? {#co}
 
 Začneme pohledem uživatele: AMP stránky jsou rychlé jako blesk.
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=a9E-gL8NOqs">AMP: Základy technologie pro rychlé weby</a> ~ Proč AMP potřebujeme a z čeho je vlastně tahle technologie složená?
+</p>
 
 ### Rychlé stránky
 
@@ -37,7 +43,7 @@ V další části textu se také zaměřuji na číselné vyjádření této ryc
 
 ### AMP z technického pohledu
 
-Z pozice technika by definice AMP mohla znít následovně: Je to [HTML](amp-html.md), [CSS](amp-css.md) (a trochu i javascriptový) framework určený ke zrychlení načítání webových stránek prostřednictvím jejich umístění na [AMP Cache](https://amp.dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/how_amp_pages_are_cached), což je sada optimalizovaných serverů. Takové specificky nastavené [CDN](http://jecas.cz/cdn).
+Z pozice technika by definice AMP mohla znít následovně: Je to [HTML](amp-html.md), [CSS](amp-css.md) a JS framework určený ke zrychlení načítání webových stránek prostřednictvím jejich umístění na [AMP Cache](https://amp.dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/how_amp_pages_are_cached), což je sada optimalizovaných serverů. Takové specificky nastavené [CDN](http://jecas.cz/cdn).
 
 <figure>
 <img src="../dist/images/original/vdamp/amp-framework-distribuce.png" alt="">
@@ -89,7 +95,7 @@ Video: <a href="https://www.youtube.com/watch?v=_vp-BVgYU98">AMP pro frontendist
 * V [AMP HTML](amp-html.md) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy. V tomto případě `<amp-img>`. Je to proto, že technologie vycházející z webových standardů zatím neobsahují věci důležité pro rychlé zobrazení stránek, jako třeba [statický layout](https://amp.dev/documentation/guides-and-tutorials/learn/amp-html-layout/) nebo inteligentní prioritizaci stahování zdrojů.
 * [CSS](amp-css.md) se vkládá dovnitř HTML, nesmí být větší než 50 kB a je zakázáno používat oblíbenou direktivu `!important`, která je rezervována pro styly vkládané frameworkem AMP. Webfonty z cizích domén jsou povolené jen od některých dodavatelů.
 * Stránka musí projít [validací](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp) AMP formátu a nejde jinak, než aby běžela na protokolu HTTPS.
-* A co JavaScript? Ten náš, autorský, je zcela zakázaný. Na druhou stranu – máme k dispozici zhruba stovku [komponent](https://amp.dev/documentation/components/?), které ho docela hezky nahrazují.
+* A co JavaScript? Ten náš, autorský, je řešený specificky – komponentou [amp-script](https://amp.dev/documentation/components/amp-script/). A navíc – máme k dispozici zhruba stovku hotových [komponent](https://amp.dev/documentation/components/).
 
 Tolik k pohledu frontendisty. Pojďme se ale také zabývat už zmíněnou distribucí AMP stránek od autora obsahu k uživateli.
 
@@ -151,7 +157,7 @@ Aktuálně je takto na stránky AMP možné vstoupit z výsledků vyhledávání
 
 AMP je také framework pro vývoj webů. Obsahuje zhruba [stovku komponent](https://amp.dev/documentation/components/?format=websites) určených pro snadné poskládání obsahových webů nebo také e-shopů.
 
-Komponenty suplují to, že autoři webů zatím v AMP nemohou psát vlastní JavaScript. To se ale může z velké části změnit, pokud se v prosadí komponenta `amp-script`:
+Komponenty suplují to, že autoři webů v AMP nemohou psát JavaScript tak jak jsou zvyklí. To se ale změnilo s nástupem komponenty `amp-script`:
 
 <div class="rwd-media">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sYXkVOiz77I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -180,7 +186,7 @@ Pak už karusel jen stačí vložit a konfigurovat na úrovni HTML:
 </amp-carousel>
 ```
 
-Jak vidíte, nic složitého na tom není. A navíc – v AMP autoři webů nepíší v JavaScriptu, takže jde o technologii přívětivou i pro začátečníky a méně programátorsky zdatné. Autoři frameworku si to uvědomují a v poslední době vzniká hodně materiálu [právě pro začátečníky](https://blog.amp.dev/2019/06/20/learn-web-development-with-amp/).
+Jak vidíte, nic složitého na tom není. V AMP autoři webů často vůbec nemusí psát v JavaScriptu, takže jde o technologii přívětivou i pro začátečníky a méně programátorsky zdatné. Autoři frameworku si to uvědomují a v poslední době vzniká hodně materiálu [právě pro začátečníky](https://blog.amp.dev/2019/06/20/learn-web-development-with-amp/).
 
 <!-- AdSnippet -->
 
@@ -215,9 +221,13 @@ Poslední velký důvod pro využití AMP vychází z toho prvního. Rychlé web
 
 ### Vynikající výsledky
 
-Už víme, že [rychlý web zlepšuje konverze](https://www.vzhurudolu.cz/prirucka/rychlost-nacitani-proc). Francouzský online prodejce biopotravin _Greenweez_ nasazením AMP [takřka zdvojnásobil konverzní poměr](https://amp.dev/success-stories/greenweez) na mobilech.
+Už víme, že [rychlý web zlepšuje konverze](rychlost-nacitani-proc.md). Francouzský online prodejce biopotravin _Greenweez_ nasazením AMP [takřka zdvojnásobil konverzní poměr](https://amp.dev/success-stories/greenweez) na mobilech.
 
 _BMW.com_ nasadilo AMP a na novém webu díky tomu získalo o 49 % vyšší návštěvnost z vyhledávačů. Zajímavé jsou ale i [další případové studie](amp-co-je-pripadovky.md).
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=miNJbjfffPs">Weby postavené na AMP</a> ~ Proč AMP používají weby jako The Washington Post, BMW.com, Reflex.cz nebo Vzhůru dolů?
+</p>
 
 V Česku AMP používá například _Reflex.cz_, anebo _Seznam Zprávy_ či _ProŽeny.cz_ z dílny _Seznam.cz_. Z větších e-shopů je to kromě _Lékárna.cz_ také například cestovka _Relaxos.cz_, s technologií ale experimentuje i _Alza.cz_.
 
@@ -228,13 +238,33 @@ _Cuketka.cz, Reflex.cz, Webmistr.wtf, Relaxos a Lékarna.cz – některé z čes
 </figcaption>
 </figure>
 
-Ale samozřejmě – AMP nemusí fungovat všem. Je to vcelku nevídaná technologie a je tedy netriviální ji správně zasadit do velkých projektů, tak aby přinesla kýžený výsledek. Díky specifikům AMP je také netriviální [měření vlivu na konverze](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%E2%80%8A-%E2%80%8Anow-what/), ale výukový materiál pro správné nasazení i vyhodnocení [zde už je](https://www.vzhurudolu.cz/ebook-amp/). :-)
+Ale samozřejmě – AMP nemusí fungovat všem. Je to vcelku nevídaná technologie a je tedy netriviální ji správně zasadit do velkých projektů, tak aby přinesla kýžený výsledek. Díky specifikům AMP je také netriviální [měření vlivu na konverze](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%E2%80%8A-%E2%80%8Anow-what/), ale výukový materiál pro správné nasazení i vyhodnocení [zde už je](https://www.vzhurudolu.cz/ebook-amp/). 
+
+## Nevýhody AMP {#nevyhody}
+
+1. *URL na AMP Cache*  
+Lidem často vadí adresa ve formátu `google.com/amp/s`, na které visí jejich obsah. Google má dobře vymyšlené problémy se sdílením – prostě přesměrovává na původní web. Umístění obsahu na cizí doméně je ale obecně problematické. Měl by to vyřešit standard [Signed HTTP Exchanges](https://digichef.cz/signed-http-exchanges-aneb-vyuzivejte-amp-s-originalni-url?).
+1. *Nutnost vytvářet a spravovat zvláštní verzi webu*  
+To platí především pro dopracování AMP verze do existujících webů. Nové obsahové weby a e-shopy je ale možné stavět jen na AMP a vyhnout se nepříjemné správě dvou verzí.
+1. *Jiný vývoj*  
+AMP HTML framework, takže se pro vývojáře nejedná o nic nového. Ale v rovině JavaScriptu se věci v AMP dělají více či méně jinak.
+1. *Omezený výběr komponent*  
+Designéři si musí vystačit s vestavěnými komponentami. Například [karusel](https://amp.dev/documentation/examples/components/amp-carousel/) je zde jen jeden. Dle názoru autora textu to je v zásadě dobře, ale můžete narazit na vlastnosti, které vám AMP komponenty neposkytnou.
+1. *Jednodušší analytika*  
+Některým analytikům vadí poněkud omezenější možnosti měření – například čísel z e-commerce. Něco z problému už ale jde [jakžtakž vyřešit](https://teahouse.fifty-five.com/en/amp-how-to-collect-advanced-e-commerce-data-part-2/).
 
 Shrnutí na závěr:
 
-* AMP je frontendový framework a optimalizovaná distribuční cesta mezi autorem a uživatelem.
+* AMP je frontendový framework a optimalizovaná distribuční cesta pro obsah mezi autorem a uživatelem.
 * Přináší razantní zrychlení stránek díky možnosti jejich přednačtení.
 * Zajímavá je také efektivita vývoje, zajištěná frontendovým frameworkem.
 * Správně navržená a změřená AMP verze dokáže vylepšit byznys provozovatele.
+
+Kam dále?
+
+* E-book [Vzhůru do AMP](https://www.vzhurudolu.cz/ebook-amp/)
+* Všechny videa [v jednom playlistu](https://www.youtube.com/watch?v=a9E-gL8NOqs&list=PLIdlKRR9lxIerO6Y3-_RxhB0fp0W3Je5J)
+* [Kde všude](amp-platformy.md) se AMP stránky zobrazují?
+* [Případové studie](amp-co-je-pripadovky.md) k nasazení AMP
 
 <!-- AdSnippet -->
