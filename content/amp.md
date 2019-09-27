@@ -203,7 +203,7 @@ Ani pokud na stránce potřebujete programovat, nemusíte AMP vzdávat. Ostatně
 </amp-list>
 ```
 
-AMP je také možné použít jako základ pro technologicky pokročilý web napsaný v JavaScriptu. O kombinaci AMP [s progresivními webovými aplikacemi (PWA)](https://instapage.com/blog/pwa-vs-amp) se v poslední době dost píše. AMP se prostě použije jako základ, PWA rozšiřuje možnosti pro stránky, které nemusí být v AMP Cache jako je nákupní košík nebo proces nákupu.
+AMP je také možné použít jako základ pro technologicky pokročilý web napsaný v JavaScriptu. O kombinaci AMP [s progresivními webovými aplikacemi (PWA)](pwa.md) se v poslední době dost píše. AMP se prostě použije jako základ, PWA rozšiřuje možnosti pro stránky, které nemusí být v AMP Cache jako je nákupní košík nebo proces nákupu.
 
 AMP tímto v poslední době rozšířilo pole působnosti směrem k dynamičtějším webům z oblasti e-commerce. Příkladem budiž česká Lékarna.cz.
 

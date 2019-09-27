@@ -16,7 +16,7 @@ To jen pro ukázku. PWA je sada technologií (Service Worker, Web App Manifest, 
 
 PWA je velmi těžko přesně definovatelné. V zásadě jde o moderní webové aplikace s uvedenými vlastnostmi.
 
-Na rozdíl od AMP jde spíše o zastřešující pojem, který pomůže zpopularizovat určitý způsob tvorby webů a webových aplikací. Na vašem webu samozřejmě můžete převzít pouze jednu z uvedených vlastností. Dobrý úvod do PWA je například v textu „Getting Started With Progressive Web Apps (PWA)“ na Medium.com. [vrdl.in/pwa](https://medium.com/codingthesmartway-com-blog/ab05bcc25bfd)
+Na rozdíl od AMP jde spíše o zastřešující pojem, který pomůže zpopularizovat určitý způsob tvorby webů a webových aplikací. Na vašem webu samozřejmě můžete převzít pouze jednu z uvedených vlastností. Úvod do PWA je na Vzhůru dolů. [vrdl.cz/p/pwa](https://www.vzhurudolu.cz/prirucka/pwa)
 
 A jak to jde dohromady s AMP? Jde to dohromady s oním „P“ – jako „Pages“. Zatímco u AMP se předpokládá nasazení na jednodušší, statičtější typ obsahu (webové _stránky_), PWA je zase sada technologií zaměřená na složitější, dynamičtější a interaktivnější typ projektů (webové _aplikace_).
 

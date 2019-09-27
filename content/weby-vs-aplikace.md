@@ -61,7 +61,9 @@ Moc se mě to líbí, protože to dělá příjemný kompromis mezi webem a nati
 
 V Česku jsem během psaní textu příklad nenašel, ale ve světě je jich už hodně. Na PWA.rock jsou seřazené ty nejlepší. [pwa.rocks](https://pwa.rocks/)
 
-Detaily o progresivních webových aplikacích hledejte u Jasona Grigsbyho v textu „The Business Case for Progressive Web Apps“. [vrdl.in/aklr5](https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/)
+Základní vhled do PWA najdete na Vzhůru dolů. [vrdl.cz/p/pwa](https://www.vzhurudolu.cz/prirucka/pwa)
+
+Detaily o progresivních webových aplikacích pak hledejte u Jasona Grigsbyho v textu „The Business Case for Progressive Web Apps“. [vrdl.in/aklr5](https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/)
 
 ### Univerzální aplikace
 
