@@ -65,7 +65,7 @@ Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám
 |--------------------------|----------|
 | [jednotka `fr`](css-jednotka-fr.md) | Jednotka pro podíl na celku <br>  `grid-template-columns: 1fr 2fr` |
 | [funkce `repeat()`](css-repeat.md)  | Funkce zkrácení opakujících se zápisů <br>  `grid-template-columns: repeat(4, 1fr)` |
-| funkce `minmax()` ([MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax))  | Omezení minima a maxima v rozměru <br>  `grid-template-columns: minmax(100px, 1fr)` |
+| [funkce `minmax()`](css-minmax.md)  | Omezení minima a maxima v rozměru <br>  `grid-template-columns: minmax(100px, 1fr)` |
 | klíčová slova `auto-fill`, `auto-fit` ([CSS-Tricks](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/))  | Způsob roztahování buněk mřížky <br>  `grid-template-columns: repeat(auto-fill, minmax(200px,1fr))` |
 
 </div>

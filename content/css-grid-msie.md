@@ -55,7 +55,7 @@ Naopak se málo ví, že stařičký IE nativně podporuje:
 
 - nějakou formu implicitní (nepředdefinované) mřížky,
 - [funkci `repeat()`](css-repeat.md), jen jinak: `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`,
-- další skvělou funkci – `minmax()`,
+- další skvělou funkci – [`minmax()`](css-minmax.md),
 - klíčová slova `min-content` a `max-content`.
 
 To myslím není zlé. Více je v textu [CSS Grid in IE: Debunking Common IE Grid Misconceptions](https://css-tricks.com/css-grid-in-ie-debunking-common-ie-grid-misconceptions/) na CSS-Tricks.
