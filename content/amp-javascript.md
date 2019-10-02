@@ -1,27 +1,41 @@
 # JavaScript v AMP
 
-Chcete psát JS na AMP stránce? [Z úvodního představení](amp-co-je-rychlost-predevsim.md) technologie už asi víte, že máte smůlu.
+Už asi víte, že na psaní JavaScriptu musíte v AMP jít trochu jinak než u obyčejných webových stránek.
 
-Autorský JavaScript je zde zcela zakázaný, což se projevuje zejména tím, že stránka obsahující značku `<script>` bude (s výjimkou vkládání AMP komponent a jejich konfigurací) nevalidní. Neumístí se tedy do AMP Cache, čímž tvorba AMP stránek ztrácí hlavní smysl.
+Běžný autorský JavaScript je zde zcela zakázaný. To se projevuje zejména tím, že stránka obsahující značku `<script>` bude (s výjimkou vkládání AMP komponent a jejich konfigurací) nevalidní.
 
-## Proč to AMP dělá?
+Neumístí se tedy do AMP Cache, čímž tvorba AMP stránek ztrácí hlavní smysl.
 
-AMP jde především o rychlost. Tu může garantovat hlavně u validních stránek umístěných v Cache. A jsou zde přinejmenším dva důvody, proč v ní není možné spouštět jakékoliv skripty:
+## Proč se AMP vyhýbá běžnému JS jako čert kříži? {#proc}
 
-1. Bezpečnost – zakešované stránky se zobrazují na cizích doménách, tedy např. Google.com. Spouštění cizích skriptů by zde mohlo být nebezpečné.
-2. Rychlost – v případě neomezeného JavaScriptu není možné zajistit, aby se stránka vykreslovala dostatečně rychle.
+AMP jde především o rychlost. Tu může garantovat hlavně u validních stránek umístěných v AMP Cache, kde mimojiné dochází k přednačtení stránek, které uživatel ještě nevidí.
 
-Do detailů nebudeme zacházet, protože už jsme téma probrali i v části první kapitoly věnující [se kritice této technologie](amp-kritika-myty.md).
+Z toho vyplývají přinejmenším tři důvody, proč v AMP Cache není možné spouštět jakékoliv skripty:
 
-Na druhou stranu – AMP dává autorům do ruky řadu nástrojů, kterými mohou nevýhody chybějící javascriptové části tvorby dnešních webů zredukovat.
+1. *Bezpečnost*  
+Zakešované stránky se zobrazují na cizích doménách, tedy např. Google.com. Spouštění cizích skriptů by zde mohlo být nebezpečné.
+2. *Soukromí*  
+Z důvodu přednačítání na pozadí by uživatele mohla sledovat i stránka, kterou ještě ani neviděl.
+3. *Rychlost*  
+V případě povolení neomezeného JavaScriptu není možné zajistit, aby se stránka vykreslovala dostatečně rychle. Mohl bych vám vyprávět, jak moc dokážeme my webaři zatopit rychlosti webů, když se pustíme do psaní JS.
 
-## Jak nahrazuje AMP nepřítomnost JavaScriptu?
+<div class="ebook-only">
 
-Namísto komponent napsaných vlastním JavaScriptem můžete používat velké množství interaktivních AMP komponent. Je zde také řada možností, jak si naprogramovat vlastní interaktivní chování. Například s pomocí komponenty `amp-bind`. Můžete také vložit `amp-iframe`, ve kterém – světe, div se – můžete nejpopulárnější programovací jazyk použít.
+Do detailů zde nebudeme zacházet, protože už jsme téma probrali i v části první kapitoly věnující [se kritice této technologie](amp-kritika-myty.md).
 
-### Komponenty uživatelského rozhraní
+</div>
 
-Karusely, záložkové navigace, lightboxy, sdílecí ikonky, komentářové služby… K dispozici jsou vám dokonce i nástroje pro spouštění reklamy a analytiky.
+Na druhou stranu – AMP dává autorům do ruky řadu nástrojů, kterými mohou omezit nevýhody vyloučení značky `<script>` a jeho obsahu z nástrojové sady, kterou se tvoří dnešní weby.
+
+## Jak nahrazuje AMP nepřítomnost JavaScriptu? {#jak-nahrazuje}
+
+Z pohledu šíře možností pro tvorbu moderních interaktivních webů v AMP vlastně už dnes moc omezení není. Jen je potřeba dělat věci jinak.
+
+Však čtěte. Možná, že budete příjemně překvapení.
+
+### Komponenty uživatelského rozhraní {#komponenty}
+
+Karusely, záložkové navigace, lightboxy, sdílecí ikonky, komentářové služby… K dispozici jsou vám i nástroje pro spouštění reklamy a analytiky.
 
 Chcete například lightbox? Je to jednoduché:
 
@@ -41,13 +55,19 @@ Nemusíte napsat ani řádku javascriptového kódu, což je příjemné zejmén
 
 Autoři AMP připravili ke stovce komponent, které vám budou velice pravděpodobně pro výrobu běžného webu stačit.
 
+<div class="ebook-only">
 K vašim službám jsou [v textu o komponentách](amp-komponenty.md).
+</div>
 
-### Interaktivita, uchování stavu
+<div class="web-only">
+Seznam komponet najdete v dokumentaci na [amp.dev](https://amp.dev/documentation/components/).
+</div>
 
-`amp-bind`, `amp-state` a další komponenty pro dynamickou práci s obsahem posunují dále naše možnosti. Hlavně v situacích, kde vám přestávají stačit běžné moduly.
+### Interaktivita, uchování stavu {#bind-state}
 
-Pro ilustraci – dynamická změna CSS třídy se provede následovně:
+`amp-bind`, `amp-state` a další komponenty pro dynamickou práci s obsahem posunují naše možnosti dále.
+
+Pro ilustraci – dynamická změna CSS třídy se může provést následovně:
 
 ```html
 <p class="background-red" [class]="myClass">
@@ -59,11 +79,23 @@ Pro ilustraci – dynamická změna CSS třídy se provede následovně:
 </button>
 ```
 
+<div class="ebook-only">
 Více najdete dál v této kapitole [v textu o dynamických komponentách](amp-komponenty-dynamicke.md).
+</div>
 
-### Systém akcí a událostí
+<div class="web-only">
+O komponentách pro dynamické chování si můžete opět přečíst v dokumentaci na [amp.dev](https://amp.dev/documentation/components/). Vyzdvihnu některé z nich:
 
-AMP nabízí možnost vyvolání události na základě akce uživatele přes atribut `on=""`:
+- [amp-bind a amp-state](https://amp.dev/documentation/components/amp-bind/?format=websites) – „bajndování“ a ukládání stavu.
+- [amp-form](https://amp.dev/documentation/components/amp-form/?format=websites) – dynamické formuláře.
+- [amp-list](https://amp.dev/documentation/components/amp-list/?format=websites) – stažení aktuálních dat z vašeho API pro zobrazení v AMP stránce.
+- [amp-mustache](https://amp.dev/documentation/components/amp-mustache/?format=websites) – šablonovací jazych Mustache pro výpis dynamických části stránky.
+- [amp-selector](https://amp.dev/documentation/components/amp-selector/?format=websites) – uživatel vybere z několika položek a jeho výběr někam pošlete.
+</div>
+
+### Systém akcí a událostí {#akce-udalosti}
+
+AMP také nabízí možnost vyvolání události na základě akce uživatele přes atribut `on=""`:
 
 ```html
 <button on="eventName:targetId.methodName(arg1=value, arg2=value)">
@@ -73,10 +105,10 @@ AMP nabízí možnost vyvolání události na základě akce uživatele přes at
 
 Vše vysvětlíme:
 
-* `eventName` je vyžadované jméno akce. Globálně dostupné akce jsou: `tap` (tapnutí nebo kliknutí na element), dále pak akce související se zobrazováním či schováváním prvků: `hide`, `show` a `toggleVisibility`.
-* `targetId` je vyžadovaná hodnota atributu `id` prvku, který hodláme ovlivňovat. V AMP jsou k dispozici také speciální cíle jako `navigateTo()` pro přechod na URL nebo rodiče iframe a dále mj. také `goBack`, `print` nebo `scrollTo()` pro skok zpět v historii prohlížení, tisk stránky nebo posun na určitý prvek.
-* `methodName` je volitelný název metody cílového objektu. Většina komponent má nějaké metody k dispozici, viz dokumentace. Pokud ji nedefinujeme, použije se výchozí metoda objektu.
-* `arg=value`  jsou volitelné parametry metody.
+- `eventName` je vyžadované jméno akce. Globálně dostupná akce je například `tap` (tapnutí nebo kliknutí na element), dále pak akce související se zobrazováním či schováváním prvků: `hide`, `show` a `toggleVisibility`.
+- `targetId` je vyžadovaná hodnota atributu `id` prvku, který hodláme ovlivňovat. V AMP jsou k dispozici také speciální cíle jako `navigateTo()` pro přechod na URL nebo rodiče iframe a dále mj. také `goBack`, `print` nebo `scrollTo()` pro skok zpět v historii prohlížení, tisk stránky nebo posun na určitý prvek.
+- `methodName` je volitelný název metody cílového objektu. Většina komponent má nějaké metody k dispozici, viz dokumentace. Pokud ji nedefinujeme, použije se výchozí metoda objektu.
+- `arg=value` jsou volitelné parametry metody.
 
 A ještě pár příkladů:
 
@@ -85,7 +117,9 @@ A ještě pár příkladů:
 <button on="tap:photo-slides">Ukaž obrázky</button>
 ```
 
-V `on="tap:photo-slides"` říkáme, že se po kliknutí na tlačítko (`tap`) má oslovit prvek identifikovaný jako `photo-slides` a provést výchozí akce takto označené komponenty (`amp-lightbox`). Z dokumentace bychom vyčetli, že jde o akci `open`, která dotčený lightbox otevírá.
+V `on="tap:photo-slides"` říkáme, že se po kliknutí na tlačítko (`tap`) má oslovit prvek identifikovaný jako `photo-slides` a provést výchozí akce takto označené komponenty (`amp-lightbox`).
+
+Z dokumentace bychom vyčetli, že jde o akci `open`, která dotčený lightbox otevírá.
 
 ```html
 <div id="warning-message">Ahoj!</div>
@@ -94,9 +128,15 @@ V `on="tap:photo-slides"` říkáme, že se po kliknutí na tlačítko (`tap`) m
 
 Zde jsme prostřednictvím `on="tap:warning-message.hide"` nakázali, ať se po kliknutí (`tap`) schová (provede akce `hide`) prvek `warning-message`.
 
+<div class="ebook-only">
 Detaily jsou i v tomto případě nad rámec obsahu knížky, ale najdete je na amp.dev. [vrdl.in/ampact](https://amp.dev/documentation/guides-and-tutorials/learn/amp-actions-and-events#)
+</div>
 
-### amp-iframe
+<div class="web-only">
+Detaily o systému akcí a událostí najdete na [amp.dev](https://amp.dev/documentation/guides-and-tutorials/learn/amp-actions-and-events).
+</div>
+
+### amp-iframe {#amp-iframe}
 
 Komponenta poslední záchrany. V `amp-iframe` můžete za určitých okolností použít JavaScript tak, jak jste zvyklí. Alespoň omezeně. Velmi se to hodí při vkládání kódu třetí strany, třeba map od Seznamu nebo Googlu.
 
@@ -109,22 +149,19 @@ Ukázka:
 </amp-iframe>
 ```
 
+<div class="ebook-only">
 Pro více informací o `amp-iframe` jděte na [text o layoutových komponentách](amp-komponenty-layout.md).
+</div>
 
-## Autorský JavaScript možná nakonec povolený bude. Jen jinak
+<div class="web-only">
+Pro více informací o `amp-iframe` jděte i v tomto případě na [amp.dev](https://amp.dev/documentation/components/amp-iframe/?format=websites).
+</div>
 
-Komponenta `amp-script` by mohla razantně změnit způsob tvorby AMP stránek.
+## Autorský JavaScript v amp-script {#amp-script}
 
-Autoři AMP nám tady trochu kazí knížku, protože v době jejího psaní je tato revoluční komponenta v experimentální fázi a celá její budoucnost se vyjasní pravděpodobně až v druhé polovině roku 2019.
+Komponenta `amp-script` je vcelku nová, ale myslím si, že razantně změní způsob tvorby AMP stránek, ale i to, jak se o AMPu uvažuje.
 
-Co o ní aktuálně víme?
-
-* Kód by měl být uložený v prohlížeči (pomocí technologie Service Worker). Bude tak mít svou „vymezenou parcelu na pískovišti“.
-* Podobně jako moderní javascriptové frameworky bude kvůli rychlosti pracovat s virtuálním DOM stromem, ovšem technologií Web Worker bude zpracovávaný mimo hlavní vlákno prohlížeče.
-* Bude podporovat velké javascriptové frameworky jako React nebo Vue.js.
-* K dispozici nebudou všechny vlastnosti známé z běžného JavaScriptu. Autoři zmiňují například částečnou podporu u funkcí pro vyhledávání v DOM, jako je `querySelector`.
-
-Pojďme si ještě ukázat, jak by to mělo fungovat:
+Pojďme si ještě ukázat, jak JS v AMP funguje:
 
 ```html
 <!-- ahoj.html -->
@@ -143,6 +180,37 @@ button.addEventListener('click', () => {
 });
 ```
 
+Kód tedy umístíme na do souboru `ahoj.js` na naši doméně. Pokud JavaScriptu rozumíte ještě méně než já, pak vězte, že kód obstarává čekání na kliknutí na tlačítko (`button`). Když se tohle přihodí, vymění text „Ahoj!“ za „Nazdar!“.
+
+Takhle to vypadá jako starý dobrý běžný JavaScript ve starých dobrých běžných stránkách, že ano? Nenechte se mýlit, funguje to úplně jinak.
+
+`amp-script` cílí zejména na dva problémy současného JavaScriptu.
+
+První je to, že prohlížeč vždy pracuje v jednom vlákně. V jedné frontě zároveň zpracovává JavaScipt, CSS a další prvky stránky, zároveň vykresluje a ještě k tomu musí reagovat na pokusy uživatele o interakci. To je pomalé.
+
+Druhý problém je v šíři možností. Ani zkušení javascriptoví vývojáři si často neuvědomují, jaké dopady bude mít kód, který píší, na výkon stránky.
+
+Jak to tedy komponenta `amp-script` řeší?
+
+<!-- TOOD: -->
+
+- Kód by měl být uložený v prohlížeči (pomocí technologie Service Worker). Bude tak mít svou „vymezenou parcelu na pískovišti“.
+- Podobně jako moderní javascriptové frameworky bude kvůli rychlosti pracovat s virtuálním DOM stromem, ovšem technologií Web Worker bude zpracovávaný mimo hlavní vlákno prohlížeče.
+- Bude podporovat velké javascriptové frameworky jako React nebo Vue.js.
+- K dispozici nebudou všechny vlastnosti známé z běžného JavaScriptu. Autoři zmiňují například částečnou podporu u funkcí pro vyhledávání v DOM, jako je `querySelector`.
+
+<!-- TOOD: obrázek -->
+
+<!-- TOOD Vue, React, Angular… viz moje slajdy -->
+
 Více informací najdete v dokumentaci, v této fázi vývoje komponenty není třeba vás tím více zatěžovat. [vrdl.in/ampscript](https://amp.dev/documentation/components/amp-script)
 
+<!-- TODO 
+- amp-script přednáška 
+- Paul Bakaus: https://slideslive.com/38919320/maximizing-web-developer-productivity-with-amp 
+-->
+
+<div class="ebook-only">
 Mluvili jsme o triumvirátu webových technologií. HTML, CSS a JavaScriptu. V případě AMP jsou to ale jen loutkoví vládci. Ve skutečnosti jim vládne někdo jiný. Král všech králů. Validátor první.
+</div>
+
