@@ -2,7 +2,7 @@
 
 <div class="web-only" markdown="1">
 
-Už asi víte, že na psaní JavaScriptu musíte v [AMP](amp.md) jít trochu jinak než u obyčejných webových stránek.
+Už asi víte, že na psaní JavaScriptu musíte v [AMP](amp.md) jít trochu jinak než u obyčejných webových stránek.
 
 </div>
 
@@ -37,7 +37,7 @@ V případě povolení neomezeného JavaScriptu není možné zajistit, aby se s
 
 <div class="ebook-only" markdown="1">
 
-Do detailů zde nebudeme zacházet, protože už jsme téma probrali i v části první kapitoly věnující [se kritice této technologie](amp-kritika-myty.md).
+Do detailů zde nebudeme zacházet, protože už jsme téma probrali i v části první kapitoly věnující [se kritice této technologie](amp-kritika-myty.md).
 
 </div>
 
@@ -49,7 +49,7 @@ Však čtěte. Možná, že budete příjemně překvapení.
 
 ## Komponenty uživatelského rozhraní {#komponenty}
 
-Karusely, záložkové navigace, lightboxy, sdílecí ikonky, komentářové služby… K dispozici jsou vám i nástroje pro spouštění reklamy a analytiky.
+Karusely, záložkové navigace, lightboxy, sdílecí ikonky, komentářové služby… K dispozici jsou vám i nástroje pro spouštění reklamy a analytiky.
 
 Chcete například lightbox? Je to jednoduché:
 
@@ -147,7 +147,7 @@ Z dokumentace bychom vyčetli, že jde o akci `open`, která dotčený lightbox 
 Zde jsme prostřednictvím `on="tap:warning-message.hide"` nakázali, ať se po kliknutí (`tap`) schová (provede akce `hide`) prvek `warning-message`.
 
 <div class="ebook-only" markdown="1">
-Detaily jsou i v tomto případě nad rámec obsahu knížky, ale najdete je na amp.dev. [vrdl.in/ampact](https://amp.dev/documentation/guides-and-tutorials/learn/amp-actions-and-events#)
+Detaily jsou i v tomto případě nad rámec obsahu knížky, ale najdete je na amp.dev. [vrdl.in/ampact](https://amp.dev/documentation/guides-and-tutorials/learn/amp-actions-and-events#)
 </div>
 
 <div class="web-only" markdown="1">
@@ -226,7 +226,7 @@ JS kód v AMPu běží [ve Web Worker](https://www.zdrojak.cz/clanky/webdesigner
 - *Worker DOM*  
 Podobně jako moderní javascriptové frameworky bude kvůli rychlosti pracovat s virtuálním DOM stromem, ovšem technologií Web Worker bude zpracovávaný mimo hlavní vlákno prohlížeče. To je dvakrát dobrá zpráva, protože obyčejně není z Web Workeru možné do DOMu přistupovat. Více o [Worker DOM](https://github.com/ampproject/worker-dom/).
 - *Omezení*  
-Jeden `amp-script` může mít maximální 10 kB, všechny dohromady ve stránce pak 150 kB. Je možné kód spouštět jen na akci uživatele. K dispozici také nejsou všechny vlastnosti známé z běžného JavaScriptu. Podívejte se na [tabulku kompatibility](https://github.com/ampproject/worker-dom/blob/master/web_compat_table.md).
+Jeden `amp-script` může mít maximální 10 kB, všechny dohromady ve stránce pak 150 kB. Je možné kód spouštět jen na akci uživatele. K dispozici také nejsou všechny vlastnosti známé z běžného JavaScriptu. Podívejte se na [tabulku kompatibility](https://github.com/ampproject/worker-dom/blob/master/web_compat_table.md).
 
 Komponenta `amp-script` podporuje populární javascriptové frameworky jako React, Angular, Vue.js… nebo jQuery, pokud jinak nedáte.
 

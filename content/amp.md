@@ -95,7 +95,7 @@ Video: <a href="https://www.youtube.com/watch?v=_vp-BVgYU98">AMP pro frontendist
 * V [AMP HTML](amp-html.md) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy. V tomto případě `<amp-img>`. Je to proto, že technologie vycházející z webových standardů zatím neobsahují věci důležité pro rychlé zobrazení stránek, jako třeba [statický layout](https://amp.dev/documentation/guides-and-tutorials/learn/amp-html-layout/) nebo inteligentní prioritizaci stahování zdrojů.
 * [CSS](amp-css.md) se vkládá dovnitř HTML, nesmí být větší než 50 kB a je zakázáno používat oblíbenou direktivu `!important`, která je rezervována pro styly vkládané frameworkem AMP. Webfonty z cizích domén jsou povolené jen od některých dodavatelů.
 * Stránka musí projít [validací](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp) AMP formátu a nejde jinak, než aby běžela na protokolu HTTPS.
-* A co JavaScript? Ten náš, autorský, je řešený specificky – komponentou [amp-script](https://amp.dev/documentation/components/amp-script/). A navíc – máme k dispozici zhruba stovku hotových [komponent](https://amp.dev/documentation/components/).
+* A co JavaScript? Ten náš, autorský, je řešený specificky – komponentou [amp-script](amp-javascript.md). A navíc – máme k dispozici zhruba stovku hotových [komponent](https://amp.dev/documentation/components/).
 
 Tolik k pohledu frontendisty. Pojďme se ale také zabývat už zmíněnou distribucí AMP stránek od autora obsahu k uživateli.
 
@@ -157,7 +157,7 @@ Aktuálně je takto na stránky AMP možné vstoupit z výsledků vyhledávání
 
 AMP je také framework pro vývoj webů. Obsahuje zhruba [stovku komponent](https://amp.dev/documentation/components/?format=websites) určených pro snadné poskládání obsahových webů nebo také e-shopů.
 
-Komponenty suplují to, že autoři webů v AMP nemohou psát JavaScript tak jak jsou zvyklí. To se ale změnilo s nástupem komponenty `amp-script`:
+Komponenty suplují to, že autoři webů v AMP nemohou psát JavaScript tak jak jsou zvyklí. To se ale změnilo s nástupem [komponenty `amp-script`](amp-javascript.md):
 
 <div class="rwd-media">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sYXkVOiz77I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -247,7 +247,7 @@ Lidem často vadí adresa ve formátu `google.com/amp/s`, na které visí jejich
 1. *Nutnost vytvářet a spravovat zvláštní verzi webu*  
 To platí především pro dopracování AMP verze do existujících webů. Nové obsahové weby a e-shopy je ale možné stavět jen na AMP a vyhnout se nepříjemné správě dvou verzí.
 1. *Jiný vývoj*  
-AMP HTML framework, takže se pro vývojáře nejedná o nic nového. Ale v rovině JavaScriptu se věci v AMP dělají více či méně jinak.
+AMP HTML framework, takže se pro vývojáře nejedná o nic nového. Ale v rovině [JavaScriptu](amp-javascript.md) se věci v AMP dělají více či méně jinak.
 1. *Omezený výběr komponent*  
 Designéři si musí vystačit s vestavěnými komponentami. Například [karusel](https://amp.dev/documentation/examples/components/amp-carousel/) je zde jen jeden. Dle názoru autora textu to je v zásadě dobře, ale můžete narazit na vlastnosti, které vám AMP komponenty neposkytnou.
 1. *Jednodušší analytika*  
