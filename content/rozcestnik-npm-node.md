@@ -63,7 +63,7 @@ Už [mrtvý nástroj](https://www.vzhurudolu.cz/blog/91-bower-mrtvy), který slo
 
 ## Sestavovače a spouštěče {#nastroje}
 
-Spouštěče úloh na příkazové řádce jako Grunt a Gulp nebo sestavovače jako je Webpack.
+Spouštěče úloh na příkazové řádce jako Grunt a Gulp nebo sestavovače jako je [Webpack](webpack.md).
 
 - [Grunt](grunt.md)  
 <small>
@@ -85,7 +85,7 @@ In­spi­rač­ní ka­ta­log fron­ten­do­vých zá­kla­den.
 <small>
 Také přímo v NPM si můžete napsat skripty, které usnadňují práci s nástroji příkazové řádky. 
 </small>
-- [Webpack](https://www.ackee.cz/blog/moderni-web-development-webpack/) [Ackee.cz]  
+- [Webpack](webpack.md)  
 <small>
 Webpack je sestavovač, „bundler“: Nástroj pro práci s JS, CSS nebo obrázkovými zdroji a vytváření balíčků pro prohlížeč.
 </small>

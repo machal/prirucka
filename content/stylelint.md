@@ -47,7 +47,7 @@ O pravidlech si ještě něco řekneme, vydržte. Teď se chci vrátit k možný
 
 * Na [příkazové řádce](https://stylelint.io/user-guide/cli/). 
 * [V editorech](stylelint-editory.md): nabízí se Sublime, Atom, VS Code, Vim a Emacs.
-* Jako [plugin pro sestavovače](https://stylelint.io/user-guide/complementary-tools/#build-tool-plugins) typu Grunt, Gulp nebo Webpack.
+* Jako [plugin pro sestavovače](https://stylelint.io/user-guide/complementary-tools/#build-tool-plugins) typu [Grunt](grunt.md), Gulp nebo [Webpack](webpack.md).
 * Jako [plugin pro PostCSS](https://stylelint.io/user-guide/postcss-plugin/).
 
 Na příkazové řádce jej občas používám, k tomu se vrátím. 

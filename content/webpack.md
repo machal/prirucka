@@ -1,4 +1,4 @@
-# Webpack: Úplné základy s tutoriálem
+# Webpack: Úplné základy a tutoriál k tomu
 
 Webpack je nástroj pro zpracování souborů a usnadnění práci vývojářů. Jde o kombinaci balíčkovače (*module bundler* jako je Browserify) se spouštěčem úloh (*task runner* jako jsou Gulp nebo Grunt.
 
@@ -98,7 +98,7 @@ Můžeme si jej tedy spustit v adresáři s projektem:
 npx webpack
 ```
 
-Pokud neznáte příkaz [npx](https://www.npmjs.com/package/npx): Spustí NPM balíček, který nemáte nainstalovaný na svém kompůtru nebo jej nemáte v aktuálním adresáři.
+Pokud neznáte příkaz [npx](https://www.npmjs.com/package/npx): Spustí NPM balíček, který nemáte nainstalovaný na svém kompjůtru nebo jej nemáte v aktuálním adresáři.
 
 Pokud ale budete Webpack používat intenzivně, doporučuji jednorázovou globální instalaci: `npm install webpack-cli -g`. Pak je možné nástroj pouštět ze všech adresářů jednoduchým příkazem `webpack`.
 
@@ -119,12 +119,12 @@ The 'mode' option has not been set, webpack will fallback to 'production' for th
 You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
 ```
 
-Asi jste si všimli, že jsme Webpacku neposkytli žádnou konfiguraci. V tomhle případě běží ve výchozím módu. Co přesně udělal?
+Asi jste si všimli, že jsme Webpacku neposkytli žádnou konfiguraci. V tomhle případě běží ve výchozím módu. Co přesně udělal?
 
 - Podíval se do adresáře `src/`, zda nenajde soubor `index.js`. A ano, byl tam.
 - Sestavil si interní [strom závislostí](#pojmy-dependency-graph), v tomto případě  spíše *bonsai* závislostí.
 - Výstup uložil do `dist/main.js`, což je výchozí nastavení pro výstupní soubor.
-- Vypočítal hash, unikátní kód pro toto sestavení (`4fa48f2cc331e12d15a4`), a spolu s ním pro nás vypotil nějaké další statistiky.
+- Vypočítal hash, unikátní kód pro toto sestavení (`4fa48f2cc331e12d15a4`), a spolu s ním pro nás vypotil nějaké další statistiky.
 - Seřval nás, že si máme nastavit [mód práce](#pojmy-mode). Ve výchozím režimu předpokládá, že tvoří výstupy produkční prostředí, tedy veřejný běh webové aplikace.
 
 ### Krok 4: Kompilujeme Sass {#tutorial-4}
@@ -161,7 +161,7 @@ Co jsme nainstalovali?
 - [css-loader](https://github.com/webpack-contrib/css-loader) – převaděč direktiv `@import` z CSS do importů, kterým rozumí JavaScript
 - [style-loader](https://github.com/webpack-contrib/style-loader) – vkládání CSS do DOMu
 
-Pak zde máme minimální konfiguaci Webpacku. Najdete ji většinou v souboru `webpack.config.js`:
+Pak zde máme minimální konfiguaci Webpacku. Najdete ji většinou v souboru `webpack.config.js`:
 
 ```js
 module.exports = {
@@ -198,7 +198,13 @@ Vytvořili jsme pravidlo (objekty uvnitř `rules`), které vezme soubory končí
 
 Můžeme si teď zkusmo pustit příkaz `webpack`. Jenže se nic nestane.
 
-Tohle je právě jeden z rozdílů mezi [Gruntem](grunt.js), Gulpem a Webpackem. Webpack je JS-centrický, vše se u něj točí kolem javascriptových balíčků.
+<div class="related" markdown="1" class="web-only">
+- [NPM a Node.js: Rozcestník](rozcestnik-npm-node.md)
+- [Katalog devstacků](devstacky.md)
+- [Grunt.js](grunt.md)
+</div>
+
+Tohle je právě jeden z rozdílů mezi [Gruntem](grunt.md), Gulpem a Webpackem. Webpack je JS-centrický, vše se u něj točí kolem javascriptových balíčků.
 
 To, co jsme vytvořili, je CSS balíček připravený pro distribuci uvnitř JS balíčku.
 
@@ -231,7 +237,7 @@ Nainstalujeme si [plugin](#pojmy-plugin) pro extrakci CSS do souboru – [mini-c
 npm install --save-dev mini-css-extract-plugin
 ```
 
-A nyní jej zadrátujeme do konfigurace Webpacku. Vzhledem k tomu, že jde o poslední krok, tady je celý finální `webpack.config.js`:
+A nyní jej zadrátujeme do konfigurace Webpacku. Vzhledem k tomu, že jde o poslední krok, tady je celý finální `webpack.config.js`:
 
 ```js
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -275,7 +281,7 @@ Celé demo si můžete projít na [github.com/machal/webpack-demo](https://githu
 
 <!-- AdSnippet -->
 
-Dále bychom mohli zapracovat například prohnání výsledného CSS Autoprefixerem, přidání [HMR (Hot Module Reloadingu)](#pojmy-hot-module-replacement) – automatického obnovování stylů v prohlížeči, detekci produkčního a vývojového prostředí a spoustu dalších věcí.
+Dále bychom mohli zapracovat například prohnání výsledného CSS Autoprefixerem, přidání [HMR (Hot Module Reloadingu)](#pojmy-hot-module-replacement) – automatického obnovování stylů v prohlížeči, detekci produkčního a vývojového prostředí a spoustu dalších věcí.
 
 Pojďme si teď ale zopakovat pojmy, kterými jsem vás během popisu tutoriálu zasypal.
 
@@ -283,7 +289,7 @@ Pojďme si teď ale zopakovat pojmy, kterými jsem vás během popisu tutoriálu
 
 ### Entry (vstup) {#pojmy-entry}
 
-Zdrojové soubory, nad kterými bude Webpack provádět své operace. Výchozí je `index.js` v adresáři `src`. Je možné zde použít jeden soubor…
+Zdrojové soubory, nad kterými bude Webpack provádět své operace. Výchozí je `index.js` v adresáři `src`. Je možné zde použít jeden soubor…
 
 ```js
 entry: {
@@ -333,7 +339,7 @@ Takový [html-loader](https://webpack.js.org/loaders/html-loader/) umí zpracov�
 
 ### Plugin {#pojmy-plugin}
 
-Pluginem se ve Webpacku rozumí cokoliv, co má širší funkčnost než jen zpracování souborů. Pluginy se typicky integrují do procesu sestavování a nějak jej ovlivňují. To loadery neumí.
+Pluginem se ve Webpacku rozumí cokoliv, co má širší funkčnost než jen zpracování souborů. Pluginy se typicky integrují do procesu sestavování a nějak jej ovlivňují. To loadery neumí.
 
 Plugin [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) z našeho příkladu zařídil ukládání stylů do zvláštního CSS souboru.
 
@@ -341,11 +347,11 @@ Plugin [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-ext
 
 Modulem se rozumí kousek kódu, který slouží jako samostatná komponenta.
 
-Nemusí jím být jen soubor volaný [zápisem `import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) v JavaScriptu, ale cokoliv podobného, i v jiných jazycích. Například `@import` v LESSu či Sassu nebo obrázek stahovaný díky tomu, že v HTML zapíšeme `<img src="…">`.
+Nemusí jím být jen soubor volaný [zápisem `import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) v JavaScriptu, ale cokoliv podobného, i v jiných jazycích. Například `@import` v LESSu či Sassu nebo obrázek stahovaný díky tomu, že v HTML zapíšeme `<img src="…">`.
 
 ### Dependency graph (strom závislostí) {#pojmy-dependency-graph}
 
-Webpack si interně vede strom závislostí, tedy vztahy jednotlivých souborů. Netýká se to opět jen těch javascriptových, ale jakýchkoliv jiných, které se v aplikaci používají.
+Webpack si interně vede strom závislostí, tedy vztahy jednotlivých souborů. Netýká se to opět jen těch javascriptových, ale jakýchkoliv jiných, které se v aplikaci používají.
 
 ### Hot Module Replacement {#pojmy-hot-module-replacement}
 
@@ -357,7 +363,7 @@ Zároveň to vkládá všechny změny kódu rovnou do verze běžící v prohlí
 
 Webpack umožňuje běh v produkčním režimu (`production`), kdy výstupní soubory například automaticky minifikuje. To se hodí pro běh v ostrých, veřejných prostředích.
 
-Můžeme si to ale přepnout do vývojářského režimu (`development`), kdy se neminifikuje a obecně dovoluje snažší ladění chyb.
+Můžeme si to ale přepnout do vývojářského režimu (`development`), kdy se neminifikuje a obecně dovoluje snadnější ladění chyb.
 
 V konfiguračním souboru to vypadá takto:
 
@@ -389,6 +395,8 @@ V angličtině:
 
 - [Webpack.js.org](https://webpack.js.org)
 - [CreateApp.dev: Naklikatelná konfigurace](https://createapp.dev/)
+- [Tutoriál od The Net Ninja na YouTube](https://www.youtube.com/watch?v=ytRnPV0kRN0&list=PL4cUxeGkcC9iTQ3J5oa6orDIMQKKxl8dC&fbclid=IwAR1a1vBixjYPFs8R3gcjwUAjtDNN9PM15QmpWiohaZmTLpYUJkFXnIAigyE)
+- [Kniha od SurviveJS](https://survivejs.com/webpack/)
 - [Tutoriál: Webpack Encore](https://symfonycasts.com/screencast/webpack-encore)
 - [Bharat Tiwari: Webpack Loaders, CSS and Style Loaders](https://medium.com/a-beginners-guide-for-webpack-2/webpack-loaders-css-and-sass-2cc0079b5b3a)
 - [petehunt/webpack-howto](https://github.com/petehunt/webpack-howto)

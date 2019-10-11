@@ -8,7 +8,7 @@ Pojďme si na tedy trochu zadefinovat.
 
 Z „development stack". Sada nástrojů používaných pro vývoj v daném ekosystému.
 
-V případě webového frontendu v ní bývají nástroje pro automatizaci (např. Gulp), zpracování kódu do distribuční verze (např. Webpack),  nástroje pro zpracování CSS a JS kódu (CSS preprocesory, PostCSS, Babel…) a další.
+V případě webového frontendu v ní bývají nástroje pro automatizaci (např. Gulp), zpracování kódu do distribuční verze (např. [Webpack](webpack.md)),  nástroje pro zpracování CSS a JS kódu (CSS preprocesory, PostCSS, Babel…) a další.
 
 V zásadě se ale „devstack" netýká samotného kódu v HTML, CSS nebo JS. Nějaký kód ukazuje boilerplate.
 
