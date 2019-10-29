@@ -2,6 +2,10 @@
 
 PWA (progresivní webové aplikace) je označení pro weby, které přebírají některé vlastnosti nativních aplikací: umí například běžet offline, mají přístup k hardwaru a posílají notifikace uživateli.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=-TvcSwA5oC8">Co to je PWA</a> ~ Martin popisuje progresivní webové aplikace i pro netechnické diváky.
+</p>
+
 PWA tak kombinují výhody světa webů se světem nativních aplikací. Jak jsem psal v textu [Weby versus aplikace](weby-vs-aplikace.md):
 
 * síla webů je v _záběru_ (možnost získat slušnou návštěvnost za málo peněz),
