@@ -22,7 +22,7 @@ Máte?
 - [Specificita selektorů](#specificita)
 - [Důležitost pravidel](#dulezitost)
 
-Naopak do specifity nepatří *dědičnost*, další *obávaná* vlastnost CSS. Když byste se mě před rokem zeptali, do kaskády bych ji zahrnul. Chybně. Stejně jako jste ji do kaskády předpokládám zahrnuli vy. O dědičnosti ale napíšu jindy.
+Naopak do specifity nepatří [dědičnost](css-dedicnost.md), další *obávaná* vlastnost CSS. Když byste se mě před rokem zeptali, do kaskády bych ji zahrnul. Chybně. Stejně jako jste ji do kaskády předpokládám zahrnuli vy.
 
 Pojďme teď na ty konkrétní vlastnosti kaskády.
 

@@ -60,7 +60,7 @@ Protože to jsou dvě odlišné věci. Volitelné vlastnosti z CSS se od preproc
 
 * jsou dynamické, počítají se až v prohlížeči,
 * můžete k nim přistupovat nebo je číst také z HTML a JS,
-* řídí se dědičností, kaskádou a dalšími přirozenými vlastnostmi CSS
+* řídí se [dědičností](css-dedicnost.md), [kaskádou](css-kaskada.md) a dalšími přirozenými vlastnostmi CSS
 
 Přinášejí tedy vlastnosti, která preprocesorové proměnné neumí. Na druhou stranu – CSS proměnné nemají jiné vlastnosti, kterými naopak disponují ty preprocesorové. Jak už jsem ukazoval, neumožní vám například vložit proměnnou kamkoliv do CSS kódu. Hlavně u větších projektů se bez CSS preprocesorů stále neobejdete.
 

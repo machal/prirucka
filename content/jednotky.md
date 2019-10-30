@@ -25,7 +25,7 @@ Existují samozřejmě ještě další: namátkou `pt`, `ex` nebo `vmax`. Buď j
 
 ## Které jednotky v jakých situacích použít? {#scenare}
 
-V tomhle textu dost dbám na to, abychom si nerozbili přirozenou dědičnost velikosti písma v prohlížečích. Kromě nás, autorů stránek, si ji totiž může chtít změnit uživatel a občas ji mění i prohlížeče. Proto vám pro různá použití doporučuji různé jednotky:
+V tomhle textu dost dbám na to, abychom si nerozbili přirozenou [dědičnost](css-dedicnost.md) velikosti písma v prohlížečích. Kromě nás, autorů stránek, si ji totiž může chtít změnit uživatel a občas ji mění i prohlížeče. Proto vám pro různá použití doporučuji různé jednotky:
 
 - Základní velikost písma v dokumentu: [%](#velikost-pisma-html)
 - Rozměry vycházející z velikosti písma dokumentu: [rem](#rem)

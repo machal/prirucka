@@ -47,7 +47,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * Znalost všech prakticky použitelných vlastností ze specifikace [CSS2](http://www.jakpsatweb.cz/css/css-vlastnosti-hodnoty-prehled.html).
 * **[nové] **[CSS3](https://www.vzhurudolu.cz/prirucka/css3) vlastnosti, které jsou [podle CSS Working Group](http://www.w3.org/Style/CSS/current-work.en.html) ve fázi W3C Recommendation (REC) nebo Proposed Recommendation (PR). ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * Stavba [layoutu pomocí CSS](http://learnlayout.com/toc.html): kategorizace podle technologických prostředků – float, inline-block, display:table, position:absolute, flexbox; kategorizace podle typu layoutu: fixní, fluidní, responzivní.
-* [Kaskáda](css-kaskada.md), dědičnost, specifičnost v kontextu CSS.
+* [Kaskáda](css-kaskada.md) (specifičnost selektoru, důležitost a pořadí vlastností), [dědičnost](css-dedicnost.md) v kontextu CSS.
 * [Jednotky](jednotky.md) (např. px, em, rem, procenta, cm, atd.): jejich klady, zápory a možné scénáře použití.
 * Prakticky použitelné CSS selektory.
 

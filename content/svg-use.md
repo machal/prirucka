@@ -93,7 +93,7 @@ Může za to milá fíčurka CSS, o které [píší na MDN](https://developer.mo
 
 > CSS attributes are not guaranteed to be inherited by the hidden, cloned DOM unless you explicitly request it using CSS inheritance.
 
-Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Druhá je ručně nastavit dědičnost na hodnotu, které je výchozí v běžném DOMu: `stroke:inherit`.
+Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Druhá je ručně nastavit [dědičnost](css-dedicnost.md) na hodnotu, které je výchozí v běžném DOMu: `stroke:inherit`.
 
 V dalším Codepenu si vyzkoušejme všechny možnosti.
 
