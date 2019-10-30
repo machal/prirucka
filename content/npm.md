@@ -184,7 +184,7 @@ Jelikož jde o takzvané „peer dependencies“, tedy závislost balíčků na 
 Takže vzhůru do toho:
 
 ```bash
-npm install jquery popper
+npm install jquery popper.js
 ```
 
 Dostaneme pak něco takového:
