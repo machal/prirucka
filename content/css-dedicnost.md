@@ -32,7 +32,7 @@ p {
 
 Obsah prvku `<span>` prostě podědí obsah vlastnosti `color` definované na rodiči.
 
-CodePen: [https://codepen.io/machal/pen/eYYEOEd](https://codepen.io/machal/pen/eYYEOEd)
+CodePen: [https://codepen.io/machal/pen/eYYEOEd](https://codepen.io/machal/pen/eYYEOEd?editors=1100)
 
 To nejjednodušší bychom měli za sebou. Co když se do toho ale připletou vlastnosti kaskády?
 
@@ -44,7 +44,9 @@ Připomeňme si, že [kaskádu](css-kaskada.md) v CSS definují tři pravidla:
 2. selektor s vyšší váhou (specificitou) vyhrává
 3. pravidlo označené jako důležité (`!important`) vyhrává
 
-A teď to důležité – pokud je možné se k hodnotě dopočítat kaskádou, vždy dostane přednost před dědičností. Podívejme se na další příklad, abychom si to vizualizovali.
+A teď to důležité – pokud je možné se k hodnotě dopočítat kaskádou, vždy dostane přednost před dědičností. 
+
+Podívejme se na další příklad, abychom si to vizualizovali.
 
 ```html
 <p>
@@ -57,7 +59,7 @@ Ačkoliv opět definujeme styl všech odstavců zelenou barvou, prvek `<a>` se z
 <figure>
 <img src="../dist/images/original/css-dedicnost-specificita.png" alt="">
 <figcaption markdown="1">
-*Obrázek: Vybraný prvek [1] sice zdědí barvu od rodičovského prvku [2], jenže vyhraje to styl prohlížeče s vyšší specificitou [3].*
+*Obrázek: Vybraný prvek [1] sice zdědí barvu od rodičovského prvku [2], jenže vyhraje to selektor definovaný v kaskádě [3].*
 </figcaption>
 </figure>
 
@@ -79,18 +81,13 @@ a:-webkit-any-link {
 }
 ```
 
-Do hry tady, jako skoro vždy, tedy vstupuje specificita selektoru:
+Do hry tady, jako skoro vždy, tedy vstupuje kaskáda. Je to větší brácha, který skoro vždy přepere toho menšího.
 
-* Selektor `p` obsahuje jeden element, proto má specificitu `0,0,1`.
-* Selektor `a:-webkit-any-link` obsahuje jeden element a jednu pseudotřídu, proto má specificitu `0,1,1`.
+CodePen: [https://codepen.io/machal/pen/dyyzbWd](https://codepen.io/machal/pen/dyyzbWd?editors=1100)
 
-Výchozí styly prohlížeče mají vyšší specificitu a proto vyhrávají. Je to větší brácha, který skoro vždy přepere toho menšího.
+Je ale dobré vědět, že kaskáda se týká vždy jen aktuálního prvku. Například rodič s vyšší váhou selektoru nepřebije styl potomka. Náš pokus o odstranění kurzívy na vnitřním prvku pomocí zvýšení specificity rodiče proto nemohl být úspěšný. Však se podívejte na ukázku.
 
-CodePen: [https://codepen.io/machal/pen/dyyzbWd](https://codepen.io/machal/pen/dyyzbWd)
-
-Je ale dobré vědět, že specificita se týká vždy jen aktuálního prvku. Rodič s vyšší váhou selektoru nepřebije styl potomka. Náš pokus o odstranění kurzívy na vnitřním prvku pomocí zvýšení specificity rodiče proto nemohl být úspěšný. Však se podívejte na ukázku.
-
-CodePen: [https://codepen.io/machal/pen/GRRvYgQ](https://codepen.io/machal/pen/GRRvYgQ)
+CodePen: [https://codepen.io/machal/pen/GRRvYgQ](https://codepen.io/machal/pen/GRRvYgQ?editors=1100)
 
 ## Vlastnosti, které dědí: styly textu, rámečků, seznamů a viditelnost {#vlastnosti}
 
