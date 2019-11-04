@@ -59,6 +59,10 @@ Jsou to opravdu jen ty nejzákladnější vlastnosti PWA, ale pro začátek to n
 
 Nástroj pro testování technické kvality webů [Lighthouse](lighthouse.md) znáte už z jiných zdejších textů.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=cYdek3ZUS-c">PWA pro vývojáře</a> ~ Jak udělat z webu progresivní webovou aplikaci a získat maximální hodnocení na Lighthouse?
+</p>
+
 Kromě [rychlosti webů](https://www.vzhurudolu.cz/rychlost-nacitani), technického SEO a dalších okruhů Lighthouse také ukazuje, jak moc váš web splňuje základní požadavky kladené na PWA.
 
 <figure>
