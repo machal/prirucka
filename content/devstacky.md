@@ -71,6 +71,9 @@ Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky čes
 
 ## Webpack
 
+[Webpack](webpack.md) je nepostradatelný pro svět javascriptových aplikací, ale je na něm také možné stavět moc hezké devstacky i pro statické weby.
+
+- [zmrhaljiri/superdevstack](https://github.com/zmrhaljiri/superdevstack) – Běží na Reactu, ale používá statické šablony. Využitelné pro server side rendering pomocí Gatsby, Create React App nebo Next.js.
 - [PilulkaDistribuce/webpack-boilerplate-es6-sass](https://github.com/PilulkaDistribuce/webpack-boilerplate-es6-sass) – Webpack 4, SASS, fonty, SVG a obrázky, ES6 moduly.
 - [trainit/2018-03-nette-webpack](https://github.com/trainit/2018-03-nette-webpack) – Zakladní [Webpack](webpack.md) nakonfirugovaný pro použití [s Nette](https://nette.org/cs/) a JS knihovnou [Naja](https://naja.js.org).
 - [laravel-mix.com](https://laravel-mix.com/) – Webpack atd. Složitější a anglicky, ale důsledně zdokumentováno.
