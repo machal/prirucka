@@ -44,7 +44,7 @@ Připomeňme si, že [kaskádu](css-kaskada.md) v CSS definují tři pravidla:
 2. selektor s vyšší váhou (specificitou) vyhrává
 3. pravidlo označené jako důležité (`!important`) vyhrává
 
-A teď to důležité – pokud je možné se k hodnotě dopočítat kaskádou, vždy dostane přednost před dědičností. 
+A teď to důležité – pokud je možné se k hodnotě dopočítat kaskádou, vždy dostane přednost před dědičností.
 
 Podívejme se na další příklad, abychom si to vizualizovali.
 
@@ -172,5 +172,7 @@ Pojďme si tedy zopakovat, co víme o dědičnost, jedné ze dvou základních v
 * Díky dědičnosti není nutné psát ke každému elementu všechny jeho vlastnosti. Část se přebere od rodičovských prvků.
 * Kaskáda (a hlavně specificita selektorů) nad dědičností vždycky vyhrává.
 * Dědičnost se vztahuje jen na vlastnosti textu, barvu, některé vlastnosti seznamů a rámečků a viditelnost.
+
+V dalším textu se podíváme na nastavování zděděných a výchozích hodnot pomocí klíčových slov `inherit`, `initial`, `unset`, `revert` a [vlastnosti `all`](css-all-inherit-initial-unset-revert.md).
 
 <!-- AdSnippet -->

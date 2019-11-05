@@ -97,14 +97,13 @@ Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Dr
 
 V dalším Codepenu si vyzkoušejme všechny možnosti.
 
-- `fill` není na původním objektu definován, takže jej mohou klony používat.
-- `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz.
-- `stroke-with` je definován, ale nastavili jsme dědičnost pomocí CSS hodnoty `inherit`.
+* `fill` není na původním objektu definován, takže jej mohou klony používat.
+* `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz.
+* `stroke-with` je definován, ale nastavili jsme [dědičnost](css-dedicnost.md) pomocí CSS [hodnoty `inherit`](css-all-inherit-initial-unset-revert.md).
 
 CodePen: [cdpn.io/e/EEKrde](https://codepen.io/machal/pen/EEKrde?editors=1100)
 
 To by byl praktický pohled do hloubky značky `<use>`. Ještě se mrkneme na atributy a taky používání externích zdrojů.
-
 
 ## Atributy {#atributy}
 
