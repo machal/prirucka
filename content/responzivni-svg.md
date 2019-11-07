@@ -12,31 +12,29 @@
 
 <!-- AdSnippet -->
 
-Abychom ale pochopili, proč není dosažení pružnosti SVG jednoduché jako facka, musíme na světlo Boží vytáhnout jednu překvapivou a možná i nepříjemnou pravdu. Nádech… 
+Abychom ale pochopili, proč není dosažení pružnosti SVG jednoduché jako facka, musíme na světlo Boží vytáhnout jednu překvapivou a možná i nepříjemnou pravdu. Nádech…
 
-SVG není obrázek. 
+SVG není obrázek.
 
 … výdech! No jasně, SVG je vektorový dokument, který vkládáme do stránky. Právě proto jej do HTML můžeme dát nejen ve formě obrázku (`<img>`), ale také jako externí zdroj (`<iframe>`, `<object>`) nebo vektory vykreslit přímo (`<svg>`).
 
 Bitmapy mají jasně definovanou výšku i šířku. Je proto velmi snadné jejich poměr stran zachovat. Jaká je ale výška nebo poměr stran dokumentu?
 
-
 ## Nastavení šířky a výšky je k ničemu, použijte `viewbox`
 
-Mnoho kodérů se domnívá, že u značky `<svg>` nastaví parametry `width` a `height` – a SVG začne poslouchat. Je to tak ale jen v některých prohlížečích a některých typech vložení do stránky. Celá pravda ovšem je, že nastavením výšky a šířky si mnoho věcí zkomplikujeme. 
+Mnoho kodérů se domnívá, že u značky `<svg>` nastaví parametry `width` a `height` – a SVG začne poslouchat. Je to tak ale jen v některých prohlížečích a některých typech vložení do stránky. Celá pravda ovšem je, že nastavením výšky a šířky si mnoho věcí zkomplikujeme.
 
 Vysvětlení je složité, takže vás odkážu na článek, který to rozebírá lépe, než bych to dokázal udělat já. Než se ale do čtení textu „How to Scale SVG“ na CSS Tricks pustíte, ujistěte se, že doma máte dostatečnou zásobu brufenů. [css-tricks.com/scale-svg](https://css-tricks.com/scale-svg/#article-header-id-2)
 
 S brufeny nebo bez, výsledek je stejný. Prostě použijeme parametr `viewbox`:
 
-```css
+```html
 <svg viewbox="0 0 100 50">
 ```
 
 Kód říká, že výchozí velikost SVG dokumentu je 100 na 50 pixelů, že souřadnicový systém začíná klasicky na bodě nula nula a že si má dokument držet poměr stran.
 
 Jak teď zajistit pružné chování SVG při různých typech vložení do stránky?
-
 
 ## Pružné SVG vložené do HTML dokumentu pomocí `<svg>`
 
@@ -49,7 +47,6 @@ V moderních prohlížečích je to v případě dodržení výše uvedeného op
 ```
 
 Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachování poměru stran, stejně jako to děláme u vkládaných elementů [v textu o obrázcích](pruzna-media.md):
-
 
 ```css
 .svg-container {
