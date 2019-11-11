@@ -16,7 +16,7 @@ Běžný autorský JavaScript je zde zcela zakázaný. Prostě smůla.
 
 To se projevuje zejména tím, že stránka obsahující značku `<script>` bude (s výjimkou vkládání AMP komponent a jejich konfigurací) nevalidní.
 
-Nevalidní AMP stránka se neumístí do AMP Cache, čímž tvorba AMP stránek ztrácí hlavní smysl.
+Nevalidní AMP stránka se neumístí do [AMP Cache](amp-cache.md), čímž tvorba AMP stránek ztrácí hlavní smysl.
 
 <!-- AdSnippet -->
 

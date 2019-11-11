@@ -46,7 +46,7 @@ Když jsme nad tím přemýšleli, Martina napadlo, že jde o součást validač
 
 Druhým důvodem bude samozřejmě rychlost. Styly jsou hned po HTML druhým nejkritičtějším zdrojem potřebným k prvnímu renderování stránky. Proto je (i na běžných webech) doporučováno, aby stránka stahovala jen ty styly, které sama potřebuje, a ne o moc víc. Pokud se povede takovou distribuci připravit, dostaneme se na hodnoty kolem 5–10 kB. U takto malých externích kritických zdrojů je už doporučováno přímé vložení do dokumentu, protože zde nebude přínos kešování externího souboru v prohlížeči uživatele tak velký.
 
-Třetím argumentem pro vkládání stylů přímo do HTML je v případě AMP „balíčkování“. Je to jediný soubor, který funguje – a je distribuovaný – vcelku. Stačí k němu na AMP Cache přiložit AMP komponenty a máme funkční stránku.
+Třetím argumentem pro vkládání stylů přímo do HTML je v případě AMP „balíčkování“. Je to jediný soubor, který funguje – a je distribuovaný – vcelku. Stačí k němu na [AMP Cache](amp-cache.md) přiložit AMP komponenty a máme funkční stránku.
 
 Dodáváme, že jako limit se počítá datová velikost kódu uvnitř `<style>`, takže minifikace kódu pomůže oddálit dosažení maxima.
 

@@ -116,17 +116,7 @@ HTML verze je pak k nalezení na adrese `https://www.vzhurudolu.cz/prirucka/css3
   href="https://www.vzhurudolu.cz/amp/prirucka/css3-flexbox">
 ```
 
-<div class="ebook-only" markdown="1">
-
 Jak už víte z předchozí kapitoly, odkaz z této verze na AMP vede proto, aby roboti Googlu a dalších provozovatelů [AMP Cache](amp-cache.md) dokázali tuto stránku najít a následně stáhnout.
-
-</div>
-
-<div class="web-only" markdown="1">
-
-Odkaz z této verze na AMP vede proto, aby roboti Googlu a dalších provozovatelů [AMP Cache](https://medium.com/@pbakaus/why-amp-caches-exist-cd7938da2456) dokázali tuto stránku najít a následně stáhnout.
-
-</div>
 
 ## Co je amp-boilerplate? {#amp-boilerplate}
 

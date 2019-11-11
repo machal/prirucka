@@ -51,7 +51,7 @@ Získáte tím:
 
 1. Možnost nainstalovat web jako samostatnou aplikaci. (Pokud používáte Chrome, zkuste na tomto webu použít tlačítko `+` v adresním řádku.)
 2. Možnost zobrazení vlastní offline stránky. (Vypněte si internet, Vzhůru dolů by vám mělo zobrazit specifickou chybovou stránku.)
-3. Možnost přednačíst část obsahu hlavního webu při vstupu z AMP Cache.
+3. Možnost přednačíst část obsahu hlavního webu při vstupu z [AMP Cache](amp-cache.md).
 
 Jsou to opravdu jen ty nejzákladnější vlastnosti PWA, ale pro začátek to nebudeme komplikovat.
 

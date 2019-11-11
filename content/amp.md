@@ -43,7 +43,7 @@ V další části textu se také zaměřuji na číselné vyjádření této ryc
 
 ### AMP z technického pohledu
 
-Z pozice technika by definice AMP mohla znít následovně: Je to [HTML](amp-html.md), [CSS](amp-css.md) a JS framework určený ke zrychlení načítání webových stránek prostřednictvím jejich umístění na [AMP Cache](https://amp.dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/how_amp_pages_are_cached), což je sada optimalizovaných serverů. Takové specificky nastavené [CDN](http://jecas.cz/cdn).
+Z pozice technika by definice AMP mohla znít následovně: Je to [HTML](amp-html.md), [CSS](amp-css.md) a JS framework určený ke zrychlení načítání webových stránek prostřednictvím jejich umístění na [AMP Cache](amp-cache.md), což je sada optimalizovaných serverů. Takové specificky nastavené [CDN](http://jecas.cz/cdn).
 
 <figure>
 <img src="../dist/images/original/vdamp/amp-framework-distribuce.png" alt="">
