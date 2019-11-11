@@ -4,9 +4,19 @@ Hodně zajímavé možnosti nabízí kombinace technologií AMP s PWA, progresiv
 
 Raději začneme úvodem do PWA, aby hned na začátku nenastalo nedorozumění. To bychom vážně neradi.
 
-## Co to safra je PWA?
+## Co to safra je PWA? {#pwa}
+
+<div class="ebook-only" markdown="1">
 
 Progresivní webová aplikace je sada technologií, která umožňuje webům, aby „ukradly“ některé vlastnosti nativním mobilním aplikacím. Co jsou ty odcizené vlastnosti?
+
+</div>
+
+<div class="web-only" markdown="1">
+
+[Progresivní webová aplikace (PWA)](pwa.md) je sada technologií, která umožňuje webům, aby „ukradly“ některé vlastnosti nativním mobilním aplikacím. Co jsou ty odcizené vlastnosti?
+
+</div>
 
 * Fungování offline.
 * Instalace na plochu mobilního telefonu.
@@ -16,16 +26,27 @@ To jen pro ukázku. PWA je sada technologií (Service Worker, Web App Manifest, 
 
 PWA je velmi těžko přesně definovatelné. V zásadě jde o moderní webové aplikace s uvedenými vlastnostmi.
 
-Na rozdíl od AMP jde spíše o zastřešující pojem, který pomůže zpopularizovat určitý způsob tvorby webů a webových aplikací. Na vašem webu samozřejmě můžete převzít pouze jednu z uvedených vlastností. Úvod do PWA je na Vzhůru dolů. [vrdl.cz/p/pwa](https://www.vzhurudolu.cz/prirucka/pwa)
+Na rozdíl od AMP jde spíše o zastřešující pojem, který pomůže zpopularizovat určitý způsob tvorby webů a webových aplikací. Na vašem webu samozřejmě můžete převzít pouze jednu z uvedených vlastností.
+
+<div class="ebook-only" markdown="1">
+
+Úvod do PWA je na Vzhůru dolů. [vrdl.cz/p/pwa](https://www.vzhurudolu.cz/prirucka/pwa)
+
+</div>
 
 A jak to jde dohromady s AMP? Jde to dohromady s oním „P“ – jako „Pages“. Zatímco u AMP se předpokládá nasazení na jednodušší, statičtější typ obsahu (webové _stránky_), PWA je zase sada technologií zaměřená na složitější, dynamičtější a interaktivnější typ projektů (webové _aplikace_).
 
+<div class="related web-only" markdown="1">
+- [Co je to AMP](amp.md)
+- [Weby vs. aplikace](weby-vs-aplikace.md)
+</div>
+
 Tudíž se nabízí využít technologii bleskurychlých stránek jako základ nebo datový zdroj či vstupní „portál“ pro PWA. K tomu se ještě dostaneme. Nejprve ale servírujeme obecné srovnání AMP a PWA.
 
-## Čím může AMP doplňovat PWA?
+## Čím může AMP doplňovat PWA? {#PWA}
 
 * _Snadnost objevení_  
-AMP je optimalizovaný pro stroje vyhledávačů. A jak víte, na některých místech může dostat přednost oproti non-AMP obsahu. PWA jsou na tom díky velkému podílu JavaScriptu na renderování stránky s objevitelností daleko hůř.
+AMP je optimalizovaný pro stroje vyhledávačů. A jak víte, na některých místech výsledků vyhledávání Google může dostat přednost oproti non-AMP obsahu. PWA jsou na tom díky velkému podílu JavaScriptu na renderování stránky s objevitelností roboty daleko hůř.
 * _Rychlost doručení k uživateli_  
 AMP je [z Cache](amp-cache.md) zobrazený okamžitě, PWA to může napoprvé nějakou dobu trvat, protože obvykle stahuje velké javascriptové frameworky se spoustou funkčností.
 * _Uživatelské skriptování_  
