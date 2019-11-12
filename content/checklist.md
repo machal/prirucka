@@ -1,8 +1,6 @@
 # Checklist před spuštěním webu
 
-K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-checklist.pdf) nebo [webová aplikace](https://www.vzhurudolu.cz/checklist).
-
-<!-- AdSnippet -->
+K dispozici je také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-checklist.pdf).
 
 ## Obsah a HTML
 
@@ -28,6 +26,8 @@ K dispozici také [jako PDF](https://www.vzhurudolu.cz/assets/files/webaruv-chec
 <small>Všem zajistí lepší čtivost obsahu. Profíci jsou na to citliví a zbytečně se před nimi typo-chybami shodíte. Dohlídněte alespoň na ty nejpodstanější. [Nejčastější typografické chyby](http://typografie.wz.cz/chyby.html).</small>
 - Odkazy z webu ven jsou platné  
 <small>Pro kontrolu použijte třeba [W3C Link Checker](http://validator.w3.org/checklink) nebo [Xenu](http://home.snafu.de/tilman/xenulink.html).</small>
+
+<!-- AdSnippet -->
 
 ## Kvalita CSS a JS kódu
 
