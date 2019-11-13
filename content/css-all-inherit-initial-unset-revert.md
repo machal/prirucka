@@ -87,7 +87,7 @@ CSS:
 }
 ```
 
-Výsledkem bude odstavec se zeleným textem a zeleným rámečkem. Podědila se tedy nejen hodnota vlastnosti `color`, ale i `border`, která by to normálně neudělala, protože v „genech“ dědičnost nemá. Podívejte se do přiloženého CodePenu.
+Výsledkem bude odstavec se zeleným textem a zeleným rámečkem. Podědila se tedy nejen hodnota vlastnosti `color`, ale i `border`, která by to normálně neudělala, protože v „genech“ dědičnost nemá. Podívejte se do CodePenu na konci článku.
 
 <!-- AdSnippet -->
 
@@ -112,7 +112,7 @@ Výsledkem bude černý text bez rámečku, ale raději to pojďme rozebrat:
 * Odstavec nebude mít žádný vnější, ani vnitřní okraj, protože vlastnosti <code>[margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)</code> a <code>[padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)</code> mají výchozí hodnotu vždy <code>0</code>.
 * Odstavec se bude zobrazovat jako <code>inline</code> prvek, protože to je výchozí nastavení vlastnosti <code>[display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)</code>.
 
-Ano, přesně tak, pomocí <code>initial</code> odstraníme všechny styly, ať už jsou definované námi nebo ve výchozím CSS prohlížeče. I tady platí, že v dříve vloženém CodePenu vše uvidíte lépe.
+Ano, přesně tak, pomocí <code>initial</code> odstraníme všechny styly, ať už jsou definované námi nebo ve výchozím CSS prohlížeče. I tady platí, že v CodePenu, který je na konci textu, vše uvidíte lépe.
 
 ## Hodnota unset: Odstranění všech deklarací {#unset}
 
@@ -163,6 +163,10 @@ Pojďme si to vysvětlit na našem příkladu:
 Když se na věc podíváme v Safari, které tuto vlastnost podporuje, uvidíme, že se zde použily výchozí styly prohlížeče s jedinou výjimkou – odstavec je zelený, protože barvu podědil od nadřazeného prvku `body`.
 
 Ano, je to tak – díky použití prohlížečového CSS by mohla být hodnota `revert` pro refaktoring ještě použitelnější než `unset`. Jenže zatím nemá plnou podporu.
+
+Podívejte se ještě na výsledný CodePen.
+
+CodePen: [cdpn.io/e/qBBPXPW](https://codepen.io/machal/pen/qBBPXPW?editors=1100)
 
 ## Podpora v prohlížečích
 
