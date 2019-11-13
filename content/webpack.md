@@ -23,6 +23,10 @@ Vyřešit se to ve Webpacku dá: Existuje hodně [loaderů](#pojmy-loader), zpra
 
 Pro zpracování čehokoliv mimo JavaScript jsou prostě lepší tradiční spouštěče jako [Grunt](grunt.md), [Gulp](https://gulpjs.com), [NPM skripty](https://www.freecodecamp.org/news/introduction-to-npm-scripts-1dbb2ae01633/) nebo třeba [Make](https://cs.wikipedia.org/wiki/Make).
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=nYg829xX8uo">Webpack</a> ~ Co to je a jak jej nakonfigurovat?
+</p>
+
 Ale mě to stejně nedalo. Vyzkoušel jsem si nastavit Webpack tak, aby zpracoval styly psané v [preprocesoru](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) SCSS do samostatného CSS. Bolelo to. Ale vznikl díky tomu alespoň pěkný tutoriál pro začátečníky.
 
 ## Tutoriál: Sass do CSS pomocí Webpacku {#tutorial}
