@@ -98,7 +98,7 @@ Další kroky jsou volitelné. Potřeboval jsem je udělat, protože ikony použ
 
 ## Ošetření zachování poměru stran
 
-Zachování poměru stran se hodí pro krátký čas než se načtou SVG ikony a pro prostředí bez Javascriptu.  Tohle nám trochu zkomplikuje HTML kód:
+Zachování [poměru stran](css-pomer-stran.md) se hodí pro krátký čas než se načtou SVG ikony a pro prostředí bez Javascriptu.  Tohle nám trochu zkomplikuje HTML kód:
 
 ```html
 <p class="icon">

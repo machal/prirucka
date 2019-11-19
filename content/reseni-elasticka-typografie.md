@@ -4,7 +4,7 @@ Pojďme si rozebrat jedno z řešení, které jsem ukazoval v přednášce [na W
 
 <!-- AdSnippet -->
 
-V komponentách, u kterých známe poměr stran, umožňuje nastavit svislý (typografický) rytmus v procentech z jejich výšky.
+V komponentách, u kterých známe [poměr stran](css-pomer-stran.md), umožňuje nastavit svislý (typografický) rytmus v procentech z jejich výšky.
 
 Typografické hlavičky se na webu dělají docela často. Jenže když chcete, aby na různě velkých displejích vypadaly hezky, musíte pro jednotlivé [breakpointy](breakpointy.md) dělat ruční zásahy pomocí [Media Queries](css3-media-queries.md):
 

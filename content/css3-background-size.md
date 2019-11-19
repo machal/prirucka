@@ -65,7 +65,7 @@ Nedělat nic. Pokud obrázek dobře vyberete, nemusíte se v některých situac�
 
 Detekce vlastností. Poskytnout alternativní verzi stylování pomocí Modernizru  – `.no-backgroundsize .element { … }`.
 
-Využít parametru `filter`. Hodí se jen pro situace, kdy obrázek na pozadí máte ve stejném poměru stran a zároveň stejně velký nebo větší než rodičovský objekt:
+Využít parametru `filter`. Hodí se jen pro situace, kdy obrázek na pozadí máte ve stejném [poměru stran](css-pomer-stran.md) a zároveň stejně velký nebo větší než rodičovský objekt:
 
 ```css
 .element {

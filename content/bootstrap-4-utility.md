@@ -101,7 +101,7 @@ V příkladu jsem využil jen dvě kategorie utility tříd – flex layout a od
 - [Clearfix](https://getbootstrap.com/docs/4.0/utilities/clearfix/) – `clearfix` pro vyčištění floatů.
 - [Barvy](https://getbootstrap.com/docs/4.0/utilities/colors/) – třídy pro významové obarvení textů (např. `text-primary`) i pozadí prvku (`bg-success`).
 - [Zobrazování](https://getbootstrap.com/docs/4.0/utilities/display/) – všechny možné hodnoty vlastnosti `display` (`d-none`) napříč breakpointy (`d-lg-block`).
-- [Vkládané prvky](https://getbootstrap.com/docs/4.0/utilities/embed/) – stylování responzivních vkládaných prvků (`embed-responsive`), včetně modifikátorů pro poměry stran (`embed-responsive-4by3`).
+- [Vkládané prvky](https://getbootstrap.com/docs/4.0/utilities/embed/) – stylování responzivních vkládaných prvků (`embed-responsive`), včetně modifikátorů pro [poměry stran](css-pomer-stran.md) (`embed-responsive-4by3`).
 - [Flexbox layout](https://getbootstrap.com/docs/4.0/utilities/flex/) – layout komponent, nepleťte si prosím s klasickou bootstrapovskou layoutovou mřížkou, která je určená pro rozvržení stránky. Obě jsou velmi užitečné.
 - [Floaty](https://getbootstrap.com/docs/4.0/utilities/float/) – například `float-left` nebo responzivní `float-lg-none`.
 - [Pozicování](https://getbootstrap.com/docs/4.0/utilities/position/) – `position-static` nebo zkratky typu `fixed-top`.

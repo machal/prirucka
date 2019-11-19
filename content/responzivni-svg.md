@@ -3,7 +3,7 @@
 <div class="ebook-only" markdown="1">
   Vektorové obrázky jsou fajn. Asi tady není potřeba zahltit vás celou řadou argumentů pro využívání SVG. Ty si případně nastudujte na Vzhůru dolů. [vrdl.cz/p/svg](https://www.vzhurudolu.cz/prirucka/svg)
 
-  Používání SVG pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté: V přizpůsobování šířce layoutu a zachování poměru stran. To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě.
+  Používání SVG pro ikony nebo logotypy namísto PNG či GIF obrázků hájím kam vkročím, ale v jedné věci jsou bitmapy zlaté: V přizpůsobování šířce layoutu a zachování [poměru stran](css-pomer-stran.md). To, čeho jsme tak snadno dosáhli v kapitole o pružných obrázcích, u SVG budeme dělat poměrně složitě.
 </div>
 
 <div class="web-only" markdown="1">

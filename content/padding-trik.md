@@ -1,6 +1,6 @@
 # Zachování poměru stran v CSS: Metoda s pading-top nebo padding-bottom
 
-Často se stává, že během načítání externích zdrojů stránky – jako jsou obrázky, video nebo obsah prvku `<iframe>` – potřebujeme držet poměr stran.
+Často se stává, že během načítání externích zdrojů stránky – jako jsou obrázky, video nebo obsah prvku `<iframe>` – potřebujeme držet [poměr stran](css-pomer-stran.md).
 
 Ze své podstaty se totiž načítají asynchronně, takže stránka může být vykreslená, uživatelka ji používá a ejhle… layout se jí překreslí, obsah se posune, protože prohlížeč stáhl externí médium.
 

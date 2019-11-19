@@ -16,7 +16,7 @@ Z tisku také víme, že text vysázený v mřížce účaří se lépe čte. Al
 
 Na webu používáme pružné rozvržení stránky. A jako na potvoru se web zobrazuje v různě velkých obrazovkách. 
 
-Představte si, že jsou vaše vkládané elementy navržené tak, že je nutné ve všech šířkách okna zachovat jejich poměr stran. To je velmi obvyklé, ale znamená to, že při zmenšení okna musíte buď porušit poměr stran vkládaného elementu nebo účaří.
+Představte si, že jsou vaše vkládané elementy navržené tak, že je nutné ve všech šířkách okna zachovat jejich [poměr stran](css-pomer-stran.md). To je velmi obvyklé, ale znamená to, že při zmenšení okna musíte buď porušit poměr stran vkládaného elementu nebo účaří.
 
 Nemyslím, že trvat na přísném dodržování mřížky účaří je v efektivních lidských silách. 
 
