@@ -37,15 +37,17 @@ Co je ale podstatné – tenhle problém se týká hlavně [pružných (aka resp
 
 ### Pružná média vs. média fixních rozměrů {#pruzna-fixni}
 
-U nejčastěji postižených značek `<img>`, `<video>` i `<iframe>` máme v HTML k dispozici parametry `width` a `height`. Ty skvěle fungují, takže u médií fixních rozměrů máme vystaráno.
+U nejčastěji postižených obrázků ve značce `<img>` máme v HTML k dispozici parametry `width` a `height`. Ty skvěle fungují, takže u médií fixních rozměrů máme vystaráno.
 
-Problém ovšem nastává, když použijeme deklaraci pro zajištění jejich pružnosti (responzivity) – `max-width:100%` a `height:auto`. 
+Problém ovšem nastává, když použijeme deklaraci pro zajištění jejich pružnosti (responzivity) – `max-width:100%` a `height:auto`.
 
 Problém s `height:auto` je ovšem v tom, že přebíjí hodnotu v HTML atributu `height`. U externích prvků s automatickou výškou prohlížeč neví, kolik prostoru v layoutu nechat, dokud nezjistí poměr stran. A ten se standardně dozví až z jeho přirozené velikosti, tedy po stažení hlavičky souboru.
 
 CodePen: [cdpn.io/e/WBRaPe](https://codepen.io/machal/pen/WBRaPe?editors=1100)
 
 V CodePenu má zelený obrázek nastaveno zpoždění a je hezky vidět, že před jeho plným stažením nezůstává rezervovaný prostor v rozvržení stránky.
+
+Pokud jde o prvky s externími médii – `<video>`, `<iframe>` nebo třeba `<embed>` – u těch se pružnost (responzivita) zajišťuje stejnými triky, jakými dosáhneme udržení poměru stran. Už za chvíli se k nim dostaneme, vydržte.
 
 ### Líně načítaný obsah {#lazy-load}
 
