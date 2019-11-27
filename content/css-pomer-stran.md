@@ -201,7 +201,7 @@ img {
 
 CodePen: [cdpn.io/e/ExxOjNj](https://codepen.io/machal/pen/ExxOjNj?editors=1100)
 
-Více o vlastnosti [object-fit](https://jecas.cz/object-fit) je na JeČas.cz.
+Více o vlastnosti [object-fit](css-object-fit-position.md) je na Vzhůru dolů.
 
 Metoda s `background-image` se hodí jen na obrázky „na pozadí“, které není vhodné používat pro obsah webu, ale spíše jako součást jeho designu. Nebudu ji ale v článku utajovat.
 

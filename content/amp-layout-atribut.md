@@ -93,6 +93,10 @@ Tahle vlastnost je tedy skvělá pro různé typy vyplnění rodičovského elem
 
 To vše si můžete vyzkoušet online: [jsbin.com/bafajez](https://output.jsbin.com/bafajez).
 
+<div class="web-only" markdown="1">
+Více o vlastnosti [object-fit](css-object-fit-position.md) je na Vzhůru dolů.
+</div>
+
 Snad už vám to dává smysl. Příkladem praktického užití může být přizpůsobení zástupného obrázku („placeholderu“) rozměru videa:
 
 ```html
