@@ -207,7 +207,6 @@ AMP je také možné použít jako základ pro technologicky pokročilý web nap
 
 AMP tímto v poslední době rozšířilo pole působnosti směrem k dynamičtějším webům z oblasti e-commerce. Příkladem budiž česká Lékarna.cz.
 
-
 <figure>
 <img src="../dist/images/original/vdamp/obory-lekarna.png" alt="">
 <figcaption markdown="1">
@@ -238,7 +237,17 @@ _Cuketka.cz, Reflex.cz, Webmistr.wtf, Relaxos a Lékarna.cz – některé z čes
 </figcaption>
 </figure>
 
-Ale samozřejmě – AMP nemusí fungovat všem. Je to vcelku nevídaná technologie a je tedy netriviální ji správně zasadit do velkých projektů, tak aby přinesla kýžený výsledek. Díky specifikům AMP je také netriviální [měření vlivu na konverze](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%E2%80%8A-%E2%80%8Anow-what/), ale výukový materiál pro správné nasazení i vyhodnocení [zde už je](https://www.vzhurudolu.cz/ebook-amp/). 
+Ale samozřejmě – AMP nemusí fungovat všem. Je to vcelku nevídaná technologie a je tedy netriviální ji správně zasadit do velkých projektů, tak aby přinesla kýžený výsledek. Díky specifikům AMP je také netriviální [měření vlivu na konverze](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%E2%80%8A-%E2%80%8Anow-what/), ale výukový materiál pro správné nasazení i vyhodnocení [zde už je](https://www.vzhurudolu.cz/ebook-amp/).
+
+### Další oblasti nasazení
+
+Autoři AMP po nezůstali u nasazení na tvorbu webů. Je zde tolik oblastí, kde se využívají HTML stránky, které si říkají o inovaci!
+
+- [AMP Email](https://amp.dev/about/email/) umožní vytvářet dynamické newslettery nebo transakční e-maily. Podporuje například Gmail nebo webová verze Outlooku. Více [v článku na Vzhůru dolů](amp-email.md).
+- [AMP Ads](https://amp.dev/about/ads/) je formát pro tvorbu reklamních jednotek, které jsou rychlé a obecně výrazně slušnější k uživateli.
+- [AMP Stories](https://amp.dev/about/stories/) dovolí tvorbu prezentací podobných Instagrame Stories. Google experimentuje s jejich zobrazováním ve výsledcích vyhledávání.
+
+Abychom byli úplní, musíme se také podívat na nevýhody technologie.
 
 ## Nevýhody AMP {#nevyhody}
 
@@ -255,16 +264,16 @@ Některým analytikům vadí poněkud omezenější možnosti měření – nap�
 
 Shrnutí na závěr:
 
-* AMP je frontendový framework a optimalizovaná distribuční cesta pro obsah mezi autorem a uživatelem.
-* Přináší razantní zrychlení stránek díky možnosti jejich přednačtení.
-* Zajímavá je také efektivita vývoje, zajištěná frontendovým frameworkem.
-* Správně navržená a změřená AMP verze dokáže vylepšit byznys provozovatele.
+- AMP je frontendový framework a optimalizovaná distribuční cesta pro obsah mezi autorem a uživatelem.
+- Přináší razantní zrychlení stránek díky možnosti jejich přednačtení.
+- Zajímavá je také efektivita vývoje, zajištěná frontendovým frameworkem.
+- Správně navržená a změřená AMP verze dokáže vylepšit byznys provozovatele.
 
 Kam dále?
 
-* E-book [Vzhůru do AMP](https://www.vzhurudolu.cz/ebook-amp/)
-* Všechny videa [v jednom playlistu](https://www.youtube.com/watch?v=a9E-gL8NOqs&list=PLIdlKRR9lxIerO6Y3-_RxhB0fp0W3Je5J)
-* [Kde všude](amp-platformy.md) se AMP stránky zobrazují?
-* [Případové studie](amp-co-je-pripadovky.md) k nasazení AMP
+- E-book [Vzhůru do AMP](https://www.vzhurudolu.cz/ebook-amp/)
+- Všechny videa [v jednom playlistu](https://www.youtube.com/watch?v=a9E-gL8NOqs&list=PLIdlKRR9lxIerO6Y3-_RxhB0fp0W3Je5J)
+- [Kde všude](amp-platformy.md) se AMP stránky zobrazují?
+- [Případové studie](amp-co-je-pripadovky.md) k nasazení AMP
 
 <!-- AdSnippet -->

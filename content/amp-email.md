@@ -1,7 +1,7 @@
 # AMP Email
 
 <div class="web-only" markdown="1">
-*U příležitosti [spuštění podpory AMP Emailu](https://gsuiteupdates.googleblog.com/2019/11/dynamic-mail-android-ios.html) v mobilních aplikacích Gmailu publikujeme ukázku z e-booku [Vzhůru do AMP](https://www.vzhurudolu.cz/ebook-amp/).*
+*U příležitosti [spuštění podpory AMP Emailu](https://gsuiteupdates.googleblog.com/2019/11/dynamic-mail-android-ios.html) v mobilních aplikacích Gmailu publikujeme ukázku z e-booku [Vzhůru do AMP](https://www.vzhurudolu.cz/ebook-amp/).*
 
 AMP Email je podmnožina [frameworku AMP](amp.md), která slouží ke tvorbě interaktivních e-mailů.
 </div>
@@ -10,9 +10,14 @@ AMP Email je podmnožina [frameworku AMP](amp.md), která slouží ke tvorbě in
 AMP Email je podmnožina frameworku, která slouží ke tvorbě interaktivních e-mailů.
 </div>
 
+<div class="web-only" markdown="1">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">AMP is powering a brand new way to do email with realtime information &amp; in-line actions. Starting today, email providers including Gmail, Yahoo, Outlook and <a href="https://t.co/Ixfs2ZNi4Q">https://t.co/Ixfs2ZNi4Q</a> are bringing <a href="https://twitter.com/hashtag/ampforemail?src=hash&amp;ref_src=twsrc%5Etfw">#ampforemail</a> to their users.<br>Learn more: <a href="https://t.co/Paf17Ne6vg">https://t.co/Paf17Ne6vg</a> <a href="https://t.co/7ZYHLO4C9k">pic.twitter.com/7ZYHLO4C9k</a></p>&mdash; AMP Project (@AMPhtml) <a href="https://twitter.com/AMPhtml/status/1110578205034012678?ref_src=twsrc%5Etfw">March 26, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
 V případě rozšíření by to mohla být opravdová revoluce. Představme si, že bychom jako autoři newsletterů nebo transakčních e-mailů mohli používat komponenty uživatelského rozhraní, jako je akordeon (díky komponentě `amp-accordion`) nebo obrázkový lightbox (`amp-image-lightbox`).
 
-Ale co víc: e-maily vyrobené pomocí AMP jsou plně dynamické – mohou si stáhnout data z vašeho API, mohou reagovat na akce uživatele. Z jeho pohledu je pak možné například:
+Ale co víc: e-maily vyrobené pomocí AMP jsou plně dynamické – mohou si stáhnout data z vašeho API, mohou reagovat na akce uživatele. Z jeho pohledu je pak možné například:
 
 * Odpovědět na komentář.
 * Přihlásit se na školení.
@@ -20,6 +25,8 @@ Ale co víc: e-maily vyrobené pomocí AMP jsou plně dynamické – mohou si st
 * Vyplnit krátký dotazník.
 
 A to vše přímo v e-mailovém klientu. Nemusí se tedy proklikávat pryč na web.
+
+Právě proto se pro AMP e-maily používá výraz „dynamický e-mail“. Je to vlastně malá webová aplikace uvnitř doručené zprávy.
 
 <figure>
 <img src="../dist/images/original/vdamp/amp-email.png" alt="">
@@ -39,6 +46,12 @@ Microsoft v září oznámil, že podpora vstupuje do fáze „Developer Preview
 
 Podle různých informací se na podpoře pracuje nebo je hotová i v dalších e-mailových klientech – například Yahoo Mail a Mail.Ru. Ty ale nejsou pro tuzemský trh tak zajímavé.
 
+<!-- AdSnippet -->
+
+Vytvářet AMP e-maily můžete začít už dnes. Jak uvidíte v dalším textu, jsou plně zpětně kompatibilní.
+
+Díky tomu, že technologie je v ukázkové fázi, musíte snést otravu s registrací, která je složitá a pomalá. Proces pro Gmail je popsaný v textu „Register with Google to send dynamic emails“. [vrdl.in/ampemr](https://developers.google.com/gmail/ampemail/register)
+
 ## Proč AMP? {#proc-amp}
 
 Google ve zprávě představující e-mailovou odnož AMP píše, že framework začal jako snaha pomoci vydavatelům, ale teď prý jde o jednu z nejlepších cest, jak vybudovat interaktivní weby.
@@ -49,8 +62,6 @@ Zrovna tohle se hodí také e-mailovým platformám – když nebudou muset ře�
 
 Více je možné najít v článku „Bringing the power of AMP to Gmail“ na hlavním blogu Googlu. [vrdl.in/ampembr](https://www.blog.google/products/g-suite/bringing-power-amp-gmail/)
 
-Pokud byste snad AMP Email chtěli využít, v tuto chvíli je potřeba se nejprve zaregistrovat u Googlu. [vrdl.in/ampemr](https://developers.google.com/gmail/ampemail/register)
-
 ## Kritika {#kritika}
 
 ### TechCrunch: „Dochází nám snad záložky v prohlížeči?“
@@ -58,6 +69,11 @@ Pokud byste snad AMP Email chtěli využít, v tuto chvíli je potřeba se nejpr
 „Dochází nám snad záložky v prohlížeči, že chce Google slučovat tyto dva kontexty?“ ptá se vtipně Devin Coldewey v textu „AMP for email is a terrible idea“ na TechCrunch. Podle něj interaktivitu v e-mailu nepotřebujeme. Je užitečné, že máme sdělování věcí v e-mailu oddělené od jiných aktivit na webech a v aplikacích.
 
 V určitých ohledech má pravdu, ale osobně neočekáváme rozvoj chatování, přenosu videa, složitějšího nakupování nebo dalších komplexních interakcí uvnitř e-mailu. Ony ty „jiné aktivity na internetu“ jsou jako skříň s mnoha šuplíky. Akce typu rychlá objednávka nebo filtrování obsahu patří do šuplíku, který naopak v e-mailu smysl má – rychlá a jednoduchá interakce na základě doručeného obsahu.
+
+<div class="web-only" markdown="1">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">And you thought email is old and outdated. A guide to building interactive emails with AMP email, including tips for getting started and a few code snippets. By <a href="https://twitter.com/leemunroe?ref_src=twsrc%5Etfw">@leemunroe</a>.<br><br>Currently supported by Gmail, Yahoo! Mail, Outlook, <a href="https://t.co/Vx9DzNpXZm">https://t.co/Vx9DzNpXZm</a>.<a href="https://t.co/zK7Xwjly2U">https://t.co/zK7Xwjly2U</a> <a href="https://t.co/Qx5TsxbND6">pic.twitter.com/Qx5TsxbND6</a></p>&mdash; Smashing Magazine (@smashingmag) <a href="https://twitter.com/smashingmag/status/1151584409616826369?ref_src=twsrc%5Etfw">July 17, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 Z tohoto pohledu rádi přirovnáváme AMP Email k notifikacím v moderních mobilních operačních systémech. Dříve to byly jen zprávy. Dnes je možné už přímo z nich vykonávat jednoduché akce – například odpovědět na zprávu. A zhruba v téhle oblasti vidíme místo pro dynamický e-mail.  
 
@@ -67,7 +83,9 @@ V článku na TechCrunch se dál bohužel argumentuje opakováním klišé „Go
 
 Jaina Mistry zase na blogu Litmusu zmiňuje jeden zajímavý potenciální problém: Možnost aktualizace e-mailů po odeslání.
 
-To je velmi zajímavý postřeh a opravdu to problém být může. Příklad: V e-mailovém klientovi hledám hotel v jižních Čechách, který mě zaujal v nabídce od Booking.com z minulého týdne. Jenže obsah e-mailu se mezitím změnil. Bude velmi záležet, jak s tím budou autoři e-mailů pracovat.
+<!-- AdSnippet -->
+
+To je velmi zajímavý postřeh a opravdu to problém být může. Příklad: V e-mailovém klientovi hledám hotel v jižních Čechách, který mě zaujal v nabídce od Booking.com z minulého týdne. Jenže obsah e-mailu se mezitím změnil. Bude velmi záležet, jak s tím budou autoři e-mailů pracovat.
 
 Více si můžete přečíst v článku „Marketers Can’t Wait to Use AMP for Email, But Here’s What Will Be Holding Them Back“. [vrdl.in/amplitmus](https://litmus.com/blog/marketers-cant-wait-to-use-amp-for-email-but-heres-what-will-be-holding-them-back)
 
@@ -91,7 +109,13 @@ Minimální HTML je velmi podobné svému sourozenci u klasického AMP:
 </html>
 ```
 
+<div class="ebook-only" markdown="1">
 Respektive – jak sami vidíte, jde o směsici prvků použitých u AMP Websites s tím, co známe [od AMP Ads](amp-ads.md).
+</div>
+
+<div class="web-only" markdown="1">
+Jde o směsici prvků použitých v jiných částech specifikace AMP – Websites a Ads.
+</div>
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=un9625xfRYg">AMP Email</a> ~ Tomáš Krejčí na brněnské minikonferenci Frontendisti.cz ukazuje krásné demo dynamických e-mailů, hlavně pro vývojáře.
@@ -101,7 +125,7 @@ Kromě vám již známých pravidel tady například platí:
 
 * Jiný typ dokumentu: `<html amp4email>` nebo emoji „High Voltage“ namísto `amp`.
 * Optimální šířka layoutu je 800 pixelů nebo méně. Autoři upozorňují, že širší obsah se může v některých e-mailových klientech oříznout.
-* Pokročilé trackování příjemců e-mailů jako na webech – například pomocí `<amp-analytics>` – v tuhle chvíli možné není. Zůstaneme u klasického měřicího pixelu známého z HTML e-mailů.
+* Pokročilé trackování příjemců e-mailů jako na webech – například pomocí `<amp-analytics>` – v tuhle chvíli možné není. Zůstaneme u klasického měřicího pixelu známého z HTML e-mailů.
 
 ### Co zpětná kompatibilita? {#kompatibilita}
 
@@ -125,4 +149,13 @@ To by mohlo pro základní zasvěcení stačit. Vidíte, jak daleko už v kníž
 * Text „Nová éra e-mailů“ od Superkodérů. [vrdl.in/ampemsk](https://medium.com/superkoders/amp-email-19c85071773b)
 
 A teď už vzhůru do příběhů!
+
 </div>
+
+<div class="web-only" markdown="1">
+
+Co si o dynamických e-mailech tvořených pomocí AMP myslíte? Napište nám to do komentářů.
+
+</div>
+
+<!-- AdSnippet -->
