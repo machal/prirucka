@@ -4,13 +4,15 @@ Dědičnost je spolu s [kaskádou](css-kaskada.md) jako dva bráchové. A my, we
 
 Občas nás děti dost zlobí, jindy se mezi sebou mlátí… prostě nám jednou za čas lezou na nervy. Jenže — co s tím naděláme?
 
- Nezbývá než se s nimi smířit, pochopit je a najít způsob, jak spolu všichni můžeme vycházet.
+Nezbývá než se s nimi smířit, pochopit je a najít způsob, jak spolu všichni můžeme vycházet.
 
 ## Co je dědičnost? {#co-je}
 
 Dědičnost v CSS je způsob, jakým se dostávají hodnoty vlastností od rodičovských elementů k potomkům.
 
-<!-- AdSnippet -->
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=bRZzF0rzfDw">Základy CSS: Dědičnost</a> ~ Pojďme si na ukázkách říct, co to ta dědičnost je.
+</p>
 
 Dědičnost umožňuje skvělou věc, kterou si už často ani zkušenější mezi námi neuvědomují – nemusíme totiž v každé deklaraci uvádět všechny vlastnosti, které mají element stylovat.
 
@@ -45,6 +47,8 @@ Připomeňme si, že [kaskádu](css-kaskada.md) v CSS definují tři pravidla:
 3. pravidlo označené jako důležité (`!important`) vyhrává
 
 A teď to důležité – pokud je možné se k hodnotě dopočítat kaskádou, vždy dostane přednost před dědičností.
+
+<!-- AdSnippet -->
 
 Podívejme se na další příklad, abychom si to vizualizovali.
 
