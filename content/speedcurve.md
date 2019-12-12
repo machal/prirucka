@@ -94,7 +94,7 @@ Jak už jsem říkal na výše uvedené přednášce v Rohlík.cz, SpeedCurve zn
 
 Pokud byste ovšem stáli o monitoring reálných uživatelů, bude to už _darda_. Pak se připravte cenu od dvanácti tisíc dolarů ročně. [speedcurve.com/pricing/](https://speedcurve.com/pricing/)
 
-Základní měření reálných uživatelů ovšem dostanete i zadarmo od Googlu. Podívejte se na moje video o Chrome UX Reportu (CrUX).
+Základní měření reálných uživatelů ovšem dostanete i zadarmo od Googlu. Podívejte se na moje video o [Chrome UX Reportu (CrUX)](chrome-ux-report.md).
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=wvVmumXPQPM">Chrome UX Report: Jak rychlý je web u skutečných uživatelů?</a> ~ Databáze o rychlosti webů. Co to je a jak získat informace o vašem webu?

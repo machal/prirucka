@@ -102,7 +102,7 @@ Na druhou stranu – na Analytics je skvělé, že tyto hodnoty ukazují od reá
 
 Je také výborné, že si do nich můžete sami ukládat [uživatelská časování](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings). Takže se v GA můžete směle dívat na rozumnější metriky, stačí si to doprogramovat.
 
-Věřím také, že Google pravděpodobně časem do Analytics přidá podobné vlastnosti jaké jsou k dispozici v nových PageSpeed Insights – metriky FCP (First Contentful Paint) a TTI (Time To Interactive) přímo od uživatelů [z Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/).
+Věřím také, že Google pravděpodobně časem do Analytics přidá podobné vlastnosti jaké jsou k dispozici v nových PageSpeed Insights – metriky FCP (First Contentful Paint) a TTI (Time To Interactive) přímo od uživatelů [z Chrome UX Report](chrome-ux-report.md).
 
 Takže: Výchozí hodnoty nepřeceňujme, ale Analytics jako nástroj rozhodně nezavrhujme.
 
@@ -162,7 +162,7 @@ Ještě jsem vás neotrávil? Skvělé, pak přidávám pozitivní doporučení 
 
 1. Měřte rychlost průběžně a dlouhodobě. Například nástroji [SpeedCurve](speedcurve.md) nebo [Speed Demon](https://medium.com/dev-channel/introducing-speed-demon-a36d95dd0174).
 2. Sledujte [metriky průběhu vykreslování](metriky-rychlosti.md): Start Render, Speed Index, Time To Interactive a další.
-3. Sledujte vývoj metrik od reálných uživatelů, například [z Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/), který je dostupný také [v nových PageSpeed Insights](pagespeed-insights.md).
+3. Sledujte vývoj metrik od reálných uživatelů, například [z Chrome UX Report](chrome-ux-report.md), který je dostupný také [v nových PageSpeed Insights](pagespeed-insights.md).
 4. Optimalizujte podle doporučení nástroje [Lighthouse](lighthouse.md) a časové osy vykreslování, opět z Lighthouse nebo [z WebpageTest.org](https://www.webpagetest.org/).
 
 <!-- AdSnippet -->

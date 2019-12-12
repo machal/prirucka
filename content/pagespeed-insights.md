@@ -45,7 +45,7 @@ Více o [Lighthouse Performance Score](metrika-lps.md).
 
 ## Data pole aneb rychlost u skutečných uživatelů {#crux}
 
-Jde o metriky od skutečných uživatelů vašeho webu. Alespoň těch, kteří používají Google Chrome. Zdrojová databáze se jmenuje [Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/), pokud by vás to zajímalo. A mělo by zajímat.
+Jde o metriky od skutečných uživatelů vašeho webu. Alespoň těch, kteří používají Google Chrome. Zdrojová databáze se jmenuje [Chrome UX Report](chrome-ux-report.md), pokud by vás to zajímalo. A mělo by zajímat.
 
 <figure>
 <img src="../dist/images/original/pagespeed-insights-crux.png" alt="">

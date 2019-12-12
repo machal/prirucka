@@ -56,7 +56,7 @@ Když tedy vezmeme výše uvedený příklad s měřením úvodní stránky Vzh�
 
 ## Co vše se projevuje do Lighthouse Performance Score? {#co-vse}
 
-Pokud Lighthouse nebo PageSpeed Insights používáte, asi vás zajímá, zda se do skóre projevují i další zobrazovaná čísla: například uživatelská Data pole z [Chrome UX Reportu](https://www.youtube.com/watch?v=wvVmumXPQPM) nebo příležitosti ke zlepšení.
+Pokud Lighthouse nebo PageSpeed Insights používáte, asi vás zajímá, zda se do skóre projevují i další zobrazovaná čísla: například uživatelská Data pole z [Chrome UX Reportu](chrome-ux-report.md) nebo příležitosti ke zlepšení.
 
 <figure>
 <img src="../dist/images/original/pagespeed-insights-prilezitosti.png" alt="Příležitosti v PSI">

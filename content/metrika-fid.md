@@ -15,7 +15,7 @@ Je to událost, kterou ovlivňuje hlavně JavaScript. Stránka je zobrazená a u
 
 Možná si všimnete podobnosti této metriky s [Time To Interactive (TTI)](metrika-tti.md). Zatímco FID měří prodlevu mezi akcí uživatele a jejím provedením, TTI počítá čas od startu načítání stránky po plnou interaktivitu stránky. Obě ve výsledku říkají podobnou informaci – jak rychle je možné se stránkou plně pracovat.
 
-FID je v zásadě lepší metrika. Poskytuje obrázek o reálné uživatelské zkušenosti. Proto je také měřená pomocí nástrojů pro monitoring reálných uživatelů (RUM) jako je [SpeedCurve](speedcurve.md) nebo [Chrome UX Report](https://developers.google.com/web/tools/chrome-user-experience-report/).
+FID je v zásadě lepší metrika. Poskytuje obrázek o reálné uživatelské zkušenosti. Proto je také měřená pomocí nástrojů pro monitoring reálných uživatelů (RUM) jako je [SpeedCurve](speedcurve.md) nebo [Chrome UX Report](chrome-ux-report.md).
 
 TTI pak měříme, když nemáme k dispozici uživatele. Například v nástrojích [Lighthouse](lighthouse.md) a díky tomu i [PageSpeed Insights](pagespeed-insights.md).
 
