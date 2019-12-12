@@ -34,6 +34,10 @@ Jak název napovídá, vlastnost `all` slouží ke změně způsobu přebírán�
 
 Jinak řečeno: Umožňuje resetovat dědičnost nebo přebírání výchozí hodnoty.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=FX_T9_1ZrAE">CSS: Vlastnost „all“</a> ~ Demo různých nastavení vlastnosti.
+</p>
+
 Pro pořádek je dobré uvést, že ani `all` neumí změnit výchozí nastavení u vlastností `direction`, `unicode-bidi` nebo autorských vlastností, alias [CSS proměnných](css-promenne.md).
 
 Vlastnost `all` může nabývat jen hodnoty, které se týkají práce s dědičností nebo přebíráním výchozí hodnoty:
