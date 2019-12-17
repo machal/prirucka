@@ -36,6 +36,8 @@ SEO je ovšem jen druhotný důvod. Google na rychlost dbá, protože je [dobrá
 
 Jak už jsem psal, [metrik](metriky-rychlosti.md) zde nemáme k dispozici tolik jako u syntetických testů. Myslím, že se to časem zlepší. Ostatně, autoři přidávají metriky stále nové.
 
+<div class="rwd-scrollable f-6" markdown="1">
+
 | Metrika                                                                        | Kdy vzniká?                       |
 | ------------------------------------------------------------------------------ | --------------------------------- |
 | [First Paint (FP)](metrika-fp.md)              | Vykreslení čehokoliv              |
@@ -44,17 +46,31 @@ Jak už jsem psal, [metrik](metriky-rychlosti.md) zde nemáme k dispozici tolik 
 | [DOM Content Loaded (DCL)](udalost-dcl.md)     | Rozparsování HTML prohlížečem     |
 | [Load](load.md)                                | Stažení všeho ve stránce          |
 
+</div>
+
 V experimentální podobě se v době psaní textu CrUX ukládá také [Time To First Byte (TTFB)](ttfb.md), [First Input Delay (FID)](metrika-fid.md) a Cumulative Layout Shift.
 
 Nejdůležitější metriky jsou FCP a FID, soudě podle toho, že Google je zobrazuje ve svých měřících nástrojích. V tabulce můžeme vidět, jaké jejich hodnoty považuje za rychlé, průměrné a pomalé.
 
+<figure>
+
+<div class="rwd-scrollable f-6" markdown="1">
+
 | Uživatelský prožitek     | FCP        | FID         |
 | ------------------------ | ---------- | ----------- |
-| Rychlý (Fast)            | 0 – 1 s    | 0 – 0,1 s   |
-| Průměr (Moderate)        | 1 – 3 s    | 0,1 - 0,3 s |
-| Pomalý (Slow)            | 3 s a více | 3 s a více  |
+| Rychlý (Fast)            | 0 – 1 s    | 0 – 0,1 s   |
+| Průměr (Moderate)        | 1 – 3 s    | 0,1 - 0,3 s |
+| Pomalý (Slow)            | 3 s a více | 0,3 s a více  |
+
+</div>  
+
+<figcaption markdown="1">
 
 _Tabulka: Jak Crome UX Report zařazuje uživatelských prožitek u metrik First Contentful Paint (FCP) a First Input Delay (FID). Více je [v metodice](https://developers.google.com/speed/docs/insights/v5/about#faq)._
+
+</figcaption>
+
+</figure>
 
 Kromě rychlostních metrik zde také najdeme informace o kategorii rychlosti připojení a typu zařízení (mobil, tablet, desktop).
 
