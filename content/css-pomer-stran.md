@@ -39,6 +39,10 @@ Co je ale podstatné – tenhle problém se týká hlavně [pružných (aka resp
 
 U nejčastěji postižených obrázků ve značce `<img>` máme v HTML k dispozici parametry `width` a `height`. Ty skvěle fungují, takže u médií fixních rozměrů máme vystaráno.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=Y-TsHd1haUI">Poměr stran v CSS</a> ~ Jak zabránit poskakování layoutu webu a proč je to vlastně problém?
+</p>
+
 Problém ovšem nastává, když použijeme deklaraci pro zajištění jejich pružnosti (responzivity) – `max-width:100%` a `height:auto`.
 
 Problém s `height:auto` je ovšem v tom, že přebíjí hodnotu v HTML atributu `height`. U externích prvků s automatickou výškou prohlížeč neví, kolik prostoru v layoutu nechat, dokud nezjistí poměr stran. A ten se standardně dozví až z jeho přirozené velikosti, tedy po stažení hlavičky souboru.
