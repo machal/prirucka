@@ -15,7 +15,7 @@ Než ale začneme, pojďme si nadefinovat, o čem to tady mluvím a jaký probl�
 ## 94 % webů obsahuje nějakou komponentu třetí strany {#problem}
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-web.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Samotný web může v některých případech představovat jen menší část toho, co prohlížeč stahuje a provádí. Následují čtyři obvyklí podezřelí.*
 </figcaption>
@@ -40,7 +40,7 @@ Jak asi víte nebo alespoň tušíte, u různých typů webů jsou 3P komponenty
 
 * 94 % desktopových stránek obsahuje alespoň jednu 3P komponentu.
 * 56 % z nich obsahuje alespoň jednu reklamu.
-* 49 % requestů a 28 % datového přenosu měřených stránek jde na vrub 3P.
+* 49 % requestů a 28 % datového přenosu měřených stránek jde na vrub 3P.
 * 57 % času spouštění javascriptů pochází od  third-party komponent.
 
 Ne, před komponentami třetích stran se u vývoje webu neschováme. Jak to ale vyřešit?
@@ -60,7 +60,7 @@ Tohle je nejjednodušší cesta. V [Lighthouse](lighthouse.md) nebo [PageSpeed I
 První report, který vám ukážu, je zaměřený přímo na komponenty třetích stran. Pokud se to týká vašeho webu, uvidíte v diagnostice sekci „Snižte vliv kódu třetích stran“ („Reduce the impact of third party code“).
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-lighthouse.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Kdo nám tady loupe perníček? Tenhle report odhalí největší žrouty dat (Size) a blokátory hlavního procesu prohlížeče (Main-Thread Blocking Time). Zásadnější je to obvykle to druhé, pokud by vás to zajímalo.*
 </figcaption>
@@ -69,7 +69,7 @@ První report, který vám ukážu, je zaměřený přímo na komponenty třetí
 Lighthouse ale umí i podrobnější analýzu, například o čase, který potřebují jednotlivé JavaScripty. V mnoha reportech jde totiž zapnout zobrazování statistik také o třetích stranách, jako například v tom s názvem „Reduce JavaScript execution time“.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-lighthouse-js.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Kdo nám tady loupe javascriptový perníček? Všimněte si zatržítka „Show 3rd-party resources“.*
 </figcaption>
@@ -86,7 +86,7 @@ Chci tady vypíchnout jeho možnost srovnání více testů. Aneb: Jak zjistit, 
 Udělejte prostě jeden test standardně a druhý pak s blokováním konkrétní třetí strany. A dbejte na to, aby měly podobný backendový čas ([TTFB](ttfb.md)), aby se daly porovnávat.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-webpagetest-block.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Kdo neblokuje, jako by nebyl. Ve WebpageTestu je možné zablokovat všechny domény, ze kterých přicházejí komponenty třetích stran. To budou ale krásné výsledky! Nebo ne?*
 </figcaption>
@@ -95,7 +95,7 @@ Udělejte prostě jeden test standardně a druhý pak s blokováním konkrétní
 Až se pak v testu proklikáte na obrazovku časové osy, můžete do URL přidat čárku a za ní ID dalšího testu.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-webpagetest-comma.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Složité nastavení WebpageTestu, ze kterého nás zajímá jediná čárka.*
 </figcaption>
@@ -108,7 +108,7 @@ _Tip:_ Alternativně je možné to udělat výběrem dvou testů z vaší testov
 Taková data jsou skvělý podklad pro argumentaci směrem ke klientovi nebo přímo vývojářům třetí strany.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-webpagetest-graph.png" alt="">
 <figcaption markdown="1">
 *Obrázek: A máme ho, milý Watsone! Nejužitečnější graf z WebpageTestu porovnává metriky obou testů. To už je vcelku jasný důkaz usvědčující pachatele.*
 </figcaption>
@@ -123,7 +123,7 @@ Ale za analýzou komponent třetích stran nemusíme chodit daleko. Leccos se do
 V Chrome DevTools si zapněte zobrazování „third party badges“. (Ctrl/Cmd+Alt+J > Ctrl/Cmd+Shift+P > Show third party badges).
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-devtools-on.png" alt="">
 <figcaption markdown="1">
 *Obrázek: My si na vás posvítíme, potvory! (DevTools > Network)*
 </figcaption>
@@ -134,7 +134,7 @@ Pusťte si pak nahrávání průběhu stahování v záložce „Network“. Zap
 Další příjemná analýza je k dispozici v záložce „Performance“:
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-devtools-performance.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Tak, kdo tady krade prohlížeči nejvíce času? (DevTools > Performance)*
 </figcaption>
@@ -147,7 +147,7 @@ Podobně jako v Lighthouse, i v záložce „Performance“ prohlížeče může
 Z mého pohledu poskytuje nejpraktičtější analýzu můj oblíbený nástroj [SpeedCurve](speedcurve.md).
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-speedcurve-history.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Historie ukáže nejednu tragédii. Vývoj vlivu komponent třetích stran v čase.*
 </figcaption>
@@ -158,7 +158,7 @@ Na grafu je vidět čas blokování hlavního procesu („Third Party Blocking C
 Další graf je pak mým soukromý vítězem celého zápolení grafů v tomto článku.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-speedcurve-compare.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Kolik času prohlížeče si přivlastní každá komponenta třetí strany?*
 </figcaption>
@@ -203,7 +203,7 @@ V řadě případů můžeme na místo zlobivé komponenty vykreslit zástupný 
 Pojďme na příklad. Na [Smarty.cz](https://www.smarty.cz/) jsme například řešili [zlobící chatovací nástroj Freshchat](https://www.vzhurudolu.cz/blog/123-freshchat). S jeho autory se bohužel v té době nedalo rozumně domluvit.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="https://www.vzhurudolu.cz/perch-content/admin/freshchat.jpg" width="1920" height="540" alt="">
 <figcaption markdown="1">
 *Obrázek: Vylétlo to vysoko. Máme problém, Houstone!*
 </figcaption>
@@ -218,7 +218,7 @@ Vývojář Adam Košťálek ale přišel s krásným řešením:
 Řešení by bylo možné dále vylepšit přednačtením souborů Freshchatu v momentě, kdy se prohlížeč nudí (např. [onload](load.md)). Nebo čekáním na přiblížení ukazatele myši do oblasti kolem, abychom se zbavili prodlevy mezi proklikem a otevřením okna alespoň na desktopu.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/thirdparty-smarty-placeholder.png" alt="">
 <figcaption markdown="1">
 *Obrázek: Vypadá to jako Freshchat, ale není to Freshchat. Zároveň to nemálo zrychlí vykreslení stránky uživateli.*
 </figcaption>

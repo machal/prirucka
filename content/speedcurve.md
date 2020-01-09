@@ -80,7 +80,7 @@ Každý jednotlivý test je dělaný pomocí nesmrtelného WebpageTestu. Pokud t
 * _Deploy a porovnání před a po_  
 Do [API od SpeedCurve](https://api.speedcurve.com/) můžete automaticky posílat publikování každé nové verze (deploy) vašeho webu. Je pak možné snadno srovnávat stav před a po jejím zveřejněním. Viz [demo](https://speedcurve.com/demo/deploy/?b=apple-ipad&cs=lg&dl=246598&dp=419933&r=us-west-1&s=299&u=908&share=39tfnozeq94p1o0hndk1kpbg4vb7cg).
 * _Third party dashboard_  
-Nově představený panel pro kontrolu dopadu komponent třetích stran na výkon vašeho webu. [Demo](https://speedcurve.com/demo/thirdparty/?b=apple-ipad&cs=lg&d=30&dc=2&de=1&ds=1&r=us-west-1&s=299&u=908&share=39tfnozeq94p1o0hndk1kpbg4vb7cg).
+Nově představený panel pro kontrolu dopadu [komponent třetích stran](third-party.md) na výkon vašeho webu. [Demo](https://speedcurve.com/demo/thirdparty/?b=apple-ipad&cs=lg&d=30&dc=2&de=1&ds=1&r=us-west-1&s=299&u=908&share=39tfnozeq94p1o0hndk1kpbg4vb7cg).
 
 Zatím by to mohlo stačit. Pro bližší představu si proklikejte demo a s dotazy se ozvěte do komentářů či do e-mailu.
 
