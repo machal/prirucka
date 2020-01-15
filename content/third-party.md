@@ -285,7 +285,7 @@ Parametr `async` lze samozřejmě vyměnit za `defer` nebo jiné metody, podle p
 
 ### Preconnect {#optimalizace-preconnect}
 
-Pokud už nevíte, jak komponentu urychlit, může pomoci [přednavázání spojení](https://www.keycdn.com/blog/resource-hints):
+Pokud už nevíte, jak komponentu urychlit, může pomoci [přednavázání spojení](preconnect.md):
 
 ```html
 <link href="https://cdn.example.com/" rel="preconnect">
