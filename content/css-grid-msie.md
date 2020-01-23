@@ -240,7 +240,7 @@ Tady máte zatím smůlu:
 - `grid` je zkratka pro `grid-template-rows`, `grid-template-columns` a `grid-template-areas`. [Doporučuje](https://github.com/postcss/autoprefixer/issues/1023) se namísto ní použí `grid-template`.
 - Automatické umístění: `grid-auto-columns`, `grid-auto-rows` nebo `grid-auto-flow`.
 
-[Automatické umísťování](css-grid-autoplacement.md) ale u jednodušších layoutů udělat  jde.
+[Automatické umísťování](css-grid-msie-autoplacement.md) ale u jednodušších layoutů udělat  jde.
 
 Tak co? Dáte [Gridu](css-grid.md) novou šanci?
 
