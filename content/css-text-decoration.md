@@ -2,11 +2,13 @@
 
 Když se pustíte do studia dříve jednoduchých vlastností v CSS, můžete být překvapení jejich robustností (a pro někoho také přílišnou složitostí). To se  stalo i mě právě teď u vlastnosti `text-decoration`.
 
+<!-- AdSnippet -->
+
 Pojďme to vzít ovšem čistě pragmaticky, jako příručku této rodiny vlastností. Budu vycházet z nejnovějších CSS specifikací pro dekoraci textu.
 
 ## Seznam vlastností {#vlastnosti}
 
-Ano, v rodině vlastností `text-decoration` sice jde hlavně o pouhé podtrhávání odkazů, ale celá rodina slouží pro všechny možné dekorace písma – užitečná je například také pro autory různých textových editorů tvořených webovými technologiemi.
+Ano, ve skupině vlastností `text-decoration` sice jde hlavně o pouhé podtrhávání odkazů, ale celá rodina slouží pro všechny možné dekorace písma – užitečná je například pro autory různých textových editorů, korektorů, autory technických nebo chemických textů a další.
 
 Nejprve ale ty vlastnosti:
 
@@ -18,6 +20,7 @@ Nejprve ale ty vlastnosti:
 - [`text-underline-position`](#text-underline-position)
 - [`text-underline-offset`](#text-underline-offset)
 - [`text-decoration-width` &amp; `text-decoration-thickness`](#text-decoration-width)
+- [`text-emphasis`](#text-emphasis)
 
 Ne vždy mají tyhle vlastnosti samozřejmě plnou podporu v prohlížečích. Zastaralý Internet Explorer je skoro vždy mimo hru, ale některé z vlastností nepodporují ani současné moderní prohlížeče. Však uvidíte.
 
@@ -69,9 +72,16 @@ V Exploreru s ním nic nenaděláme (což kvůli klesající podpoře vadí stá
 }
 ```
 
-CodePen: [cdpn.io/e/abzPKNB](https://codepen.io/machal/pen/abzPKNB)
+CodePen: [cdpn.io/e/abzPKNB](https://codepen.io/machal/pen/abzPKNB?editors=1100)
 
 Hlavní problém bychom tedy měli umět vyřešit. Pojďme se ještě podívat na jednotlivé vlastnosti určené pro dekoraci textu.
+
+<figure>
+<img src="../dist/images/original/css-text-decoration-level-3.png" alt="CSS vlastnosti pro dekoraci textu">
+<figcaption markdown="1">
+*Obrázek: Matice vlastností pro dekoraci textu a možných hodnot. Zde podle CSS Text Decoration Level 3.*
+</figcaption>
+</figure>
 
 ### `text-decoration-line` – typ dekorační linky {#text-decoration-line}
 
@@ -80,7 +90,7 @@ Udává, jaký typ linky bude přidán k textu.
 Možné hodnoty:
 
 ```css
-text-decoration-line: none | 
+text-decoration-line: none |
   [ underline || overline || line-through || blink ]
 ```
 
@@ -89,6 +99,8 @@ Ve středoevropském prostoru chcete asi většinou použít podtržení — `un
 Blikající hodnota `blink` je označená za zastaralou a moderní prohlížeče ji už neimplementují. Chválabohu.
 
 Zápis s hranatými závorkami a značkami logickým operátorem nebo (`||`), který jsem převzal ze specifikace, říká, že je možné použít více hodnot, například `text-decoration-line: underline overline`.
+
+Hodnotu `line-through` mají ve výchozích stylech prohlížečů nastavené HTML prvky `<s>`, `<strike>` nebo `<del>`.
 
 Tahle vlastnost má plnou podporu, když nebereme hodnotu `blink`.
 
@@ -118,6 +130,15 @@ text-decoration-color: <barva>
 
 Vlastnost umí všechny moderní prohlížeče.
 
+Podívejme se teď ještě na vlastnosti patřící do nejnovější CSS specifikace pro dekorování textu.
+
+<figure>
+<img src="../dist/images/original/css-text-decoration-level-4.png" alt="CSS vlastnosti pro dekoraci textu">
+<figcaption markdown="1">
+*Obrázek: Ty nejnovější vlastnosti z  CSS Text Decoration Level 4, které ale nebudou fungovat všude.*
+</figcaption>
+</figure>
+
 ### `text-decoration-skip-ink` – zamezení křížení linek {#text-decoration-skip-ink}
 
 Vlastnost, která určuje, zda se bude linka dekorační čáry (dekoračního inkoustu) přerušovat, aby nevzniklo křížení s křivkami textu.
@@ -143,9 +164,13 @@ text-underline-position: auto |
 
 Hodnoty `left` a `right` se týkají asijských jazyků, které se zapisují ve svislém směru (čínština, japonština, korejština…).
 
+<!-- AdSnippet -->
+
 Pro nás je zajímavá hodnota `under`, která zajistí vykreslení pod dolní dotažnice (to, co přečuhuje dolů u písmen jako p, y nebo j).
 
 Ve specifikaci je doporučení použít to v matemetických nebo chemických textech, aby dekorační linka nerušila čísla na spodních indexech.
+
+Vlastnost nepodporuje Safari.
 
 ### `text-underline-offset` – posun dekorace {#text-underline-offset}
 
@@ -156,6 +181,11 @@ text-underline-offset: auto | <šířka>
 ```
 
 Chová se různě podle `text-underline-position`. Při `underline` jde o posun dolů, ale při `overline` se offset počítá směrem nahoru.
+
+<div class="related" markdown="1">
+- [Jednotky pro tvorbu webu (em, rem, %, px, vh, vw): Kde použít jakou?](jednotky.md)
+- [CSS3 Text Shadow: stíny u textu](css3-text-shadow.md)
+</div>
 
 Hodnotu `<šířka>` je doporučováno uvádět v jednotkách `em`, aby se přizpůsobovala velikosti textu.
 
@@ -177,7 +207,7 @@ Přičemž:
 
 Pokud byste si s tím hráli, `<šířka>` je opět doporučovaná v `em`, aby se přizpůsobovala velikosti textu.
 
-### `text-emphasis` – umístění důrazu (v Česku nezajímavé)
+### `text-emphasis` – umístění důrazu (v Česku nezajímavé) {#text-emphasis}
 
 Tahle zkratka vlastností je užitečná opět jen pro východoasijské a jiné exotické jazyky, proto ji detailně vysvětlovat nebudu. Vykreslí akcentový čudlík nad textem, pod ním nebo vedle něj.
 
@@ -200,6 +230,8 @@ Podle tohoto seznamu bude prohlížeč řešit konfliky ve vykreslování křive
 
 V závěrečném CodePenu si všechny vlastnosti a jejich podporu v prohlížečích pěkně shrneme přehlednou tabulkovou formou:
 
-[cdpn.io/e/zYxMKJB](https://codepen.io/machal/pen/zYxMKJB?editors=0000)
+CodePen: [cdpn.io/e/zYxMKJB](https://codepen.io/machal/pen/zYxMKJB?editors=0000)
 
-Jak vidíte, v současném CSS může být i obyčejná vlastnost pro podtržení odkazu docela věda.
+Jak vidíte, v současném CSS může být i obyčejné dekorování textu docela věda.
+
+<!-- AdSnippet -->
