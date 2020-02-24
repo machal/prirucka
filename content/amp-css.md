@@ -40,7 +40,7 @@ Ale konec řečí, pojďme se podívat na kód, který je v AMP stylech jiný ne
 </head>
 ```
 
-Velikost je omezená na 50 kB. Proč tomu tak je?
+Velikost je omezená na 75 kB. Proč tomu tak je?
 
 Když jsme nad tím přemýšleli, Martina napadlo, že jde o součást validační strategie. AMP stránka musí být jedním _validním_ celkem. Validováním dvou a více souborů by se věci komplikovaly.
 
@@ -49,6 +49,8 @@ Druhým důvodem bude samozřejmě rychlost. Styly jsou hned po HTML druhým nej
 Třetím argumentem pro vkládání stylů přímo do HTML je v případě AMP „balíčkování“. Je to jediný soubor, který funguje – a je distribuovaný – vcelku. Stačí k němu na [AMP Cache](amp-cache.md) přiložit AMP komponenty a máme funkční stránku.
 
 Dodáváme, že jako limit se počítá datová velikost kódu uvnitř `<style>`, takže minifikace kódu pomůže oddálit dosažení maxima.
+
+Poznámka: Limit byl původně nastaven na 50 kB, ale Google jej na četné (a pochopitelné) žádosti o polovinu navýšil. Neznamená to ovšem, že je nutné tento limit využít celý. S CSS na stránce je potřeba šetřit. Více je tweetu Westona Rutera, jednoho z autorů AMP. [vrdl.in/ampcss75](https://twitter.com/westonruter/status/1229889170077712385)
 
 ## Zavináčová pravidla: Žádný @import prosím
 

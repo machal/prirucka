@@ -13,8 +13,8 @@ d. `<amp-iframe-img>`
 3. **Autorské styly pro AMP stránky musí být:**  
 a. zaslané přes Server Push a menší než 128 kB  
 b. na serveru s nastaveným CORS a menší než 100 kB  
-c. kdekoli, ale v součtu menší než 100 kB  
-d. součástí dokumentu a menší než 50 kB
+c. kdekoli, ale v součtu menší než 50 kB  
+d. součástí dokumentu a menší než 75 kB
 4. **Zákaz JavaScriptu je v AMP mj. nahrazen:**  
 a. programováním ve Web Workeru  
 b. vlastním funkcionálním AMP jazykem  
@@ -48,7 +48,7 @@ c. `<html amp>`
 2. **Pomocí kterého elementu se v AMP zapisuje obrázek?**  
 b. `<amp-img>`
 3. **Autorské styly pro AMP stránky musí být:**  
-d. součástí dokumentu a menší než 50 kB
+d. součástí dokumentu a menší než 75 kB
 4. **Zákaz JavaScriptu je v AMP nahrazen:**  
 c. zhruba stovkou AMP komponent
 5. **Do validačního a debugovacího módu se přepneme:**  

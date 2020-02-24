@@ -93,7 +93,7 @@ Video: <a href="https://www.youtube.com/watch?v=_vp-BVgYU98">AMP pro frontendist
 Čím se liší vývoj v AMP oproti vývoji běžných webů? Je toho více, ale zůstaňme u těch nejdůležitějších rozdílů:
 
 * V [AMP HTML](amp-html.md) jsou zakázané některé obvyklé značky – jako třeba `<img>`. Nahrazují je nové tagy. V tomto případě `<amp-img>`. Je to proto, že technologie vycházející z webových standardů zatím neobsahují věci důležité pro rychlé zobrazení stránek, jako třeba [statický layout](https://amp.dev/documentation/guides-and-tutorials/learn/amp-html-layout/) nebo inteligentní prioritizaci stahování zdrojů.
-* [CSS](amp-css.md) se vkládá dovnitř HTML, nesmí být větší než 50 kB a je zakázáno používat oblíbenou direktivu `!important`, která je rezervována pro styly vkládané frameworkem AMP. Webfonty z cizích domén jsou povolené jen od některých dodavatelů.
+* [CSS](amp-css.md) se vkládá dovnitř HTML, nesmí být větší než 75 kB a je zakázáno používat oblíbenou direktivu `!important`, která je rezervována pro styly vkládané frameworkem AMP. Webfonty z cizích domén jsou povolené jen od některých dodavatelů.
 * Stránka musí projít [validací](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp) AMP formátu a nejde jinak, než aby běžela na protokolu HTTPS.
 * A co JavaScript? Ten náš, autorský, je řešený specificky – komponentou [amp-script](amp-javascript.md). A navíc – máme k dispozici zhruba stovku hotových [komponent](https://amp.dev/documentation/components/).
 

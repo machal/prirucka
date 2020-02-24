@@ -55,7 +55,7 @@ AMP neslibuje jen rychlejší zobrazení. On slibuje zobrazení okamžité. Prot
 * Žádný vlastní Javascript
 * Žádné vlastní měřící skripty
 * Žádné vlastní reklamy
-* Velikost CSS maximálně 50 kB
+* Velikost CSS maximálně 75 kB
 
 …a taky AMP přidal několik vychytávek navíc:
 
