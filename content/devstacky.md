@@ -38,6 +38,7 @@ Další sady:
 * [vigetlabs/blendid](https://github.com/vigetlabs/blendid) – Známý devstack postavený na Gulpu včetně „static site builder“, generátoru statických stránek.
 * [johnjarosczech/boilerplate](https://github.com/johnjarosczech/boilerplate) – NPM, Gulp, ale samotný build proces je definovaný v JS.
 * [eduardstula/frontend-devstack](https://github.com/eduardstula/frontend-devstack) – stack v Gulpu navazující na [Bootstrap](https://www.vzhurudolu.cz/bootstrap).
+* [querycz/dev-stack](https://github.com/querycz/dev-stack) – Gulp v kombinaci s WordPressem od studia [Query](https://www.query.cz/).
 
 ## NPM skripty
 
