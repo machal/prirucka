@@ -8,7 +8,6 @@ Může to být užitečné pro ty z vás, kteří ještě na HTTPS nepřešli ne
 2. Tříkrokový [návod na přechod](#jak).
 3. [Moje zkušenosti](#zkusenosti): opruz s Disqus, Google Search Console a lokálním vývojem. Něco jsem i vyřešil.
 
-
 ## Proč mít web na HTTPS? {#proc}
 
 Důvody jsou dvou typů: bezpečnostní a praktické.
@@ -28,13 +27,12 @@ Tlaky pro přechod na HTTPS ale nepřicházejí jen ze strany prohlížečů:
 
 <figure markdown="1">
 ![flexbox schéma](../dist/images/original/https.jpg)
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Jak Firefox a Chrome na Macu označují nezabezpečený web a formuláře v něm. A podle slov výrobců prohlížečů se to bude postupně přitvrzovat.*
-</figcaption> 
+</figcaption>
 </figure>
 
 Pokud tedy weby nemáte na HTTPS, pojďme na to.
-
 
 ## Jak jednoduše přejít na HTTPS? {#jak}
 
@@ -85,13 +83,15 @@ Do Search Console tedy musíte přidat nový web s HTTPS adresou. A taky se smí
 
 ### Lokální vývoj {#zkusenosti-lokal}
 
-Jak ale po přechodu na HTTPS vyřešit lokální vývoj? Na vlastním počítači HTTPS nepotřebuji. Na druhou stranu si myslím, že by na lokální mašině měla aplikace běžet ve stejném prostředí jako na produkci. 
+Jak ale po přechodu na HTTPS vyřešit lokální vývoj? Na vlastním počítači HTTPS nepotřebuji. Na druhou stranu si myslím, že by na lokální mašině měla aplikace běžet ve stejném prostředí jako na produkci.
 
 Zeptal jsem se milých kolegů a kolegyň na naší [frontendistické diskuzi](https://www.facebook.com/groups/frontendisti/permalink/1943434769201371/) a dostal zajímavé možnosti:
 
 1. Nechat si [MAMPem vygenerovat](http://documentation.mamp.info/en/MAMP-PRO-Mac/Settings/Hosts/SSL/) „self-signed“ certifikát. Nemáte MAMP? Dejte tam [něco jiného](https://www.zdrojak.cz/clanky/vytvoreni-vlastni-certifikacni-autority-tvorba-vlastnich-self-signed-certifikatu/). Prohlížeč pak ale zobrazoval varovnou obrazovku – certifikát mu smrděl. To se na Macu vyřeší [přidáním certifikátu do Keychain Access](https://css-tricks.com/trusting-ssl-locally-mac/). Pokud jste to řešili i pro jiné platformy, napište mi prosím – přidám to sem. 
 2. Udělat si v `.htaccess` podmínku, která nepřesměruje na zabezpečený protokol na localhostu: `RewriteCond %{REMOTE_ADDR} !=127.0.0.1`. Další možnost [ukazuje David Grudl](https://www.facebook.com/groups/frontendisti/permalink/1943434769201371/?comment_id=1943589395852575&comment_tracking=%7B%22tn%22%3A%22R2%22%7D).
 3. S Dockerem je to jednoduché: „Kontejner aplikace jede na HTTP a TLS s přesměrování tam dodává až load balancer v produkci.“ píše Honza Pobořil.
+
+Aktualizace z března 2020: David Grudl podrobně píše, jak [HTTPS zprovoznit na localhostu](https://phpfashion.com/jak-zprovoznit-https-na-localhost).
 
 Docker zatím nepoužívám a chtěl jsem prostředí co nejpodobnější produkci, takže moje řešení je v bodě jedna.
 
