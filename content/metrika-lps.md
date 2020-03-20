@@ -17,7 +17,7 @@ Mimochodem, možná si někteří pamatujete, že jsem jako nejdůležitější 
 
 <!-- AdSnippet -->
 
-Obor měření rychlosti je velmi mladý a neustálený. [Metrik](metriky-rychlosti) rychlosti stahování a renderování stránky od doby [měření pomocí události Load](rychlost-myty#1) vzniklo daleko více. Zatím jsme se shodli zhruba na pěti až šesti hlavních metrikách. Pravděpodobně budou ještě přibývat, ale dobré je, že mohou být všechny obalené v jedné.
+Obor měření rychlosti je velmi mladý a neustálený. [Metrik](metriky-rychlosti.md) rychlosti stahování a renderování stránky od doby [měření pomocí události Load](rychlost-myty.md#1) vzniklo daleko více. Zatím jsme se shodli zhruba na pěti až šesti hlavních metrikách. Pravděpodobně budou ještě přibývat, ale dobré je, že mohou být všechny obalené v jedné.
 
 ## Lighthouse Performance Score: obal na všechny důležité metriky {#obal}
 

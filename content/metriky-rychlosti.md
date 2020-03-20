@@ -21,6 +21,7 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 | [First Paint (FP)](metrika-fp.md)              | První vykreslení              |
 | [First Contentful Paint (FCP)](metrika-fcp.md) | První vykreslení obsahu       |
 | [First Meaningful Paint (FMP)](metrika-fmp.md) | První smysluplné vykreslení   |
+| [Largest Contentful Paint (LCP)](metrika-lcp.md) | Největší vykreslení obsahu   |
 | [First Input Delay (FID)](metrika-fid.md)      | První nečinnost procesoru     |
 | [Time to Interactive (TTI)](metrika-tti.md)    | První možnost interaktivity   |
 | [Speed Index](speedindex.md)                   | Vykreslení celého viewportu   |

@@ -28,7 +28,9 @@ Chcete-li být na sebe přísní, držte SpeedIndex pod dvěma vteřinami.
 
 Speed Index je známý především z WebpageTest.org. Nástroj Lighthouse ukazuje podobnou veličinu [Perceptual Speed Index](https://developers.google.com/web/tools/lighthouse/audits/speed-index).
 
-Problémem Speed Indexu je to, že se aktuálně počítá z video-záznamu průběhu načítání stránky. Nelze jej tedy použít pro sbírání dat od všech uživatelů, jen pro syntetické testy. Další problém je v tom, že čeká na vizuální „hotovost“ stránky. Pokud tedy na stránce máte animované prvky, například automatický karusel, asi vám Speed Index naroste do nebeských výšin. Ale i tak je to ze všech metrik ta nejzajímavější.
+Problémem Speed Indexu je to, že se aktuálně počítá z video-záznamu průběhu načítání stránky. Nelze jej tedy použít pro sbírání dat od všech uživatelů, jen pro syntetické testy. Další problém je v tom, že čeká na vizuální „hotovost“ stránky. Pokud tedy na stránce máte animované prvky, například automatický karusel, asi vám Speed Index naroste do nebeských výšin.
+
+Pro měření reálných uživatelů není Index Rychlosti příliš vhodný, i proto vznikla v orce 2020 možná alternativa v podobě [Largest Contentful Paint (LCP)](metrika-lcp.md).
 
 Více o [Speed Indexu](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index).
 
