@@ -7,7 +7,7 @@ LCP se „dívá“, kdy byl prohlížeč zobrazil největší prvek ve stránce
 <figure>
 <img src="../dist/images/original/metrika-lcp-weby.png" alt="">
 <figcaption markdown="1">
-*Obrázek: A máme tě! Jak vidíte, FCP poměrně chytře odhalí obsahově nejpodstatnější část stránky. Zde je ilustrace na různých typech webů. Zdroj: [web.dev](https://web.dev/lcp/#measure-lcp-in-javascript).*
+*Obrázek: A máme tě! Jak vidíte, LCP poměrně chytře odhalí obsahově nejpodstatnější část stránky. Zde je ilustrace na různých typech webů. Zdroj: [web.dev](https://web.dev/lcp/#measure-lcp-in-javascript).*
 </figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ V profi-nástroji [SpeedCurve](speedcurve.md) je LCP k dispozici už nějakou do
 
 ### WebpageTest {#mereni-webpagetest}
 
-Mocný WebpageTest zatím přidání FCP do uživatelského rozhraní [jen zvažuje](https://github.com/WPO-Foundation/webpagetest/issues/1315) a čeká, zda se metrika ukáže jako užitečná.
+Mocný WebpageTest zatím přidání Largest Contentful Paint do uživatelského rozhraní [jen zvažuje](https://github.com/WPO-Foundation/webpagetest/issues/1315) a čeká, zda se metrika ukáže jako užitečná.
 
 ### Chrome UX Report {#mereni-crux}
 
