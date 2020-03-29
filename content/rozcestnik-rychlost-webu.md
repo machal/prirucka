@@ -1,19 +1,55 @@
 # Rozcestník pro rychlost webu
 
-## Obecně o rychlosti
+## Obecně o rychlosti webů
 
+- [Co je to rychlost načtení?](rychlost-nacteni.md)
 - [Proč řešit rychlost?](rychlost-nacitani-proc.md)
+- [Zrychlení Srovname.cz](https://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)
+- [Mýty rychlosti webu](rychlost-myty.md)
+- [Rychlost pro netechniky](rychlost-designeri.md)
+- [Konzultujte rychlost s vývojáři](https://www.vzhurudolu.cz/blog/123-freshchat)
 
 ## Měření rychlosti
 
-- [Chrome UX Report](https://www.vzhurudolu.cz/prirucka/chrome-ux-report)
+- [Nástroje pro měření](rychlost-nastroje.md)
+- [PageSpeed Insights](chrome-ux-report.md)
+- [Chrome UX Report](chrome-ux-report.md)
 - [Google Lighthouse](lighthouse.md)
+- [SpeedCurve](speedcurve.md)
 
 ## Metriky
 
-- [FCP](metrika-fcp.md)
-- [LCP](metrika-lcp.md)
+- [Všechny metriky rychlosti](metriky-rychlosti.md)
+- [Metrika Lighthouse score](metrika-lps.md)
+- [Metrika TTFB](ttfb.md)
+- [Metrika FCP](metrika-fcp.md)
+- [Metrika LCP](metrika-lcp.md)
+- [Metrika FID](metrika-fcp.md)
+- [Metrika TTI](metrika-tti.md)
+- [Ideální hodnoty metrik](https://www.vzhurudolu.cz/blog/112-metriky-cile)
+
+## Technické znalosti a tipy
+
+- [Lazy loading: co je?](lazy-loading.md)
+- [Lazy loading: jak na něj?](lazy-loading-obrazku.md)
+- [Lazy loading: knihovna MiniLazyload](css-pomer-stran.md)
+- [Meta značky preconnect & dns-prefetch](preconnect.md)
+- [CSS optimalizace](css-optimalizace.md)
+- [CSS kritické styly](https://www.vzhurudolu.cz/blog/35-critical-css)
+- [CSS: poměr stran](css-pomer-stran.md)
+- [Fonty: font-display](css-pomer-stran.md)
+- [Fonty: WOFF2](https://www.vzhurudolu.cz/blog/50-woff2)
+- [Ikonfonty: proč nepoužívat](https://www.vzhurudolu.cz/prirucka/ikonfonty-vs-svg)- 
+- [JavaScript: priority v prohlížečích](js-priority.md)
+- [JavaScript: Intersection Observer](intersection-observer.md)
+- [HTTP/2 protokol](http-2.md)
+- [Obrázky: průvodce](responzivni-obrazky.md)
+- [Obrázky: srcset a sizes](srcset-sizes.md)
+- [Obrázky WebP](webp.md)
+- [Third-party optimalizace](third-party.md)
 
 ## Atd.
 
+- [Je WordPress pomalý?](https://www.vzhurudolu.cz/blog/125-wordpress-richman)
+- [Co je PWA?](pwa.md)
 - [Podcast s Michalem Matuškou](https://www.vzhurudolu.cz/podcast/153-podcast-perfnow) 

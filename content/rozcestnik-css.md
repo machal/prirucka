@@ -43,25 +43,10 @@
 
 ### Layout
 
-- [Media Queries:](css3-media-queries.md)
+- [Media Queries](css3-media-queries.md)
 - [Vícesloupcový layout](css3-multicolumn.md)
-- [Flexbox](css3-flexbox.md): vlastnosti [kontejneru](css3-flexbox-kontejner.md) a [položky](css3-flexbox-polozky.md),  
-- [CSS grid](css-grid.md): vlastnosti
-[grid-template-columns/rows](css-grid-template-rows-columns.md),
-[grid-template-areas](css-grid-template-areas.md),
-[grid-template](css-grid-template.md),
-[grid-auto-columns/rows](css-grid-auto-rows-columns.md),
-[grid-auto-flow](css-grid-auto-flow.md),
-[grid](css-grid-zkratka.md),
-[gap](css-gap.md)
-[grid-column/row](css-grid-row-column.md),
-[grid-area](css-grid-area.md),
-[jednotka fr](css-jednotka-fr.md),
-[funkce repeat(), auto-fill a auto-fit](css-repeat.md),
-[funkce minmax()](css-minmax.md) –
-[Grid v MSIE](css-grid-msie.md),
-[Autoplacement v MSIE](css-grid-msie-autoplacement.md) –
-[Příklady použití gridu](css-grid-inspirace.md)
+- [Flexbox](css3-flexbox.md): vlastnosti [kontejneru](css3-flexbox-kontejner.md) a [položky](css3-flexbox-polozky.md)
+- [CSS grid](css-grid.md): [v MSIE](css-grid-msie.md), [příklady](css-grid-inspirace.md)
 
 ### Další vlastnosti
 
@@ -90,16 +75,10 @@
 - [PostCSS](postcss.md)
 - [Bootstrap Reboot](https://www.vzhurudolu.cz/blog/53-reboot)
 - [CSS Houdini](https://www.vzhurudolu.cz/blog/56-houdini-css)
-- Seriál o preprocesorech:
-[Co jsou preprocesory?](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
-[Vlastnosti preprocesorů](https://www.vzhurudolu.cz/blog/13-css-preprocesory-2)
-[Preprocesory a pracovní postupy](https://www.vzhurudolu.cz/blog/14-css-preprocesory-3)
-[Který vybrat?](https://www.vzhurudolu.cz/blog/15-css-preprocesory-4)
-[Od preprocesorů k postprocessingu?](https://www.vzhurudolu.cz/blog/34-css-postprocessing)
+- [CSS preprocesory](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1)
 
 ## Atd.
 
 - [Weby bez CSS](weby-bez-css.md)
+- [Co je „CSS pixel“?](css-pixel.md)
 - [Co by měl umět webový kodér?](webovy-koder.md)
-
-Mohou vás zajímat také kategorie [Organizace CSS](https://www.vzhurudolu.cz/organizace-css) a [Bootstrap](https://www.vzhurudolu.cz/bootstrap).
