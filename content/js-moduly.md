@@ -49,7 +49,7 @@ Předpokládejme, že `module.js` bude knihovna, kterou používáme v našem hl
 // Importujeme:
 import { foo } from './module.js';
 
-// Pouzivame:
+// Používáme:
 foo();
 ```
 
@@ -58,7 +58,7 @@ Vysvětleme:
 - Na druhém řádku (`import` …)  importujeme funkci `foo` ze souboru `module.js`.
 - Na čtvrtém řádku importovanou funkci voláme. Konzole prohlížeče nám tedy slavnostně vypíše řetězec `foo`.
 
-Pokud bychom ale například importovali funkci `bar()` (`import { bar }` …), prohlížeč by s námi nesouhlasil a v konzoli hlásil: _„The requested module './module.js' does not provide an export named 'bar'.“_No jistě, vždyť téhle funkci jsme pomocí klíčového slova `export`nedovolili, aby byla veřejně dostupná.
+Pokud bychom ale například importovali funkci `bar()` (`import { bar }` …), prohlížeč by s námi nesouhlasil a v konzoli hlásil: _„The requested module './module.js' does not provide an export named 'bar'.“_ No jistě, vždyť téhle funkci jsme pomocí klíčového slova `export`nedovolili, aby byla veřejně dostupná.
 
 ### Voláme moduly z HTML {#zaklady-volani}
 
@@ -92,8 +92,8 @@ Možností je ale více:
 V modulu (`module.js`) není potřeba klíčové slovo `export` uvádět vícekrát. Stačí vypsat seznam toho, co exportujeme: `export { foo, hello }`;
 2. _Hromadný import_  
 Pomocí znaku `*` je možné importovat všechny exportované prvky modulu: `import * from './module.js'`.
-3. _Přejmenování  
-_Klíčovým slovem `as` je možné původní objekty přejmenovat a přidělit jim jmenný prostor. Importujeme pomocí `import * as module from './module.js'` a dále používáme např. jako `module.foo()`.
+3. _Přejmenování_  
+Klíčovým slovem `as` je možné původní objekty přejmenovat a přidělit jim jmenný prostor. Importujeme pomocí `import * as module from './module.js'` a dále používáme např. jako `module.foo()`.
 4. _Výchozí exporty_  
 Náš `module.js` může mít nějaký výchozí výstup, označíme jej klíčovým slovem `default`. Například takto: `export default function() { … }`. Při importování je pak možné prostě jen uvést jméno pro importovaný modul: `import myModule from './module.js'`.
 
