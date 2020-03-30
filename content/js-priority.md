@@ -31,7 +31,7 @@ V některých situacích je ale takováto priorita potřeba. Obecně se doporuč
 
 Vysoká priorita stažení i spouštění, které přeruší HTML parser.
 
-`type="module"` je poměrně nový. Jde o vkládání ECMAScript modulů do stránky. Vysvětluje to [Jake Archibald](https://jakearchibald.com/2017/es-modules-in-browsers/) a má to takřka podporu všech [moderních prohlížečů](https://caniuse.com/#search=module).
+`type="module"` je poměrně nový. Jde o vkládání [ECMAScript modulů](js-moduly.md) do stránky. Vysvětluje to [Jake Archibald](https://jakearchibald.com/2017/es-modules-in-browsers/) a má to takřka podporu všech [moderních prohlížečů](https://caniuse.com/#search=module).
 
 Podle zdrojového článku je to vhodné pro skripty, které generují obsah pro FMP, který je až pod zlomem stránky. Nebo pro skripty, které stahují dynamický obsah. Příklad:
 
@@ -43,7 +43,7 @@ Nízká priorita stažení. Spouštění má ale vysokou prioritu a přeruší H
 
 `async` skripty při stahování nepřeruší parsování stránky. Stahují se asynchronně v jiném vlákně a prohlížeč na ně tedy nečeká pro zobrazení stránky. Jakmile je má ale stažené, spustí je okamžitě. To se ale může minimálně v Chrome změnit. Jeho autoři [zvažují změnu spouštěcí priority](https://docs.google.com/document/d/16rHWLu-0abC9WWLhLBFlIRtbSnOFzhKAXsCamsp0oAs/edit#) těchto skriptů na nízkou.
 
-Nevýhodou `async` skriptů je to, že není možné garantovat pořadí jejich provádění. Tohle nastavení není proto vhodné pro posílání knihoven a jejich závislostí v jednotlivých souborech. 
+Nevýhodou `async` skriptů je to, že není možné garantovat pořadí jejich provádění. Tohle nastavení není proto vhodné pro posílání knihoven a jejich závislostí v jednotlivých souborech.
 
 Příklad použití:
 
