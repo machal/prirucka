@@ -160,7 +160,7 @@ Existence ARIA `role="button"` by mohla napovídat, že bychom snad měli možno
 Je to samozřejmě blbost. Pojďme si na tabulce ukázat, jaké všechny funkce jsou skryté v prvku `<button>` a které prvky `<span>` ani `<a>` nemají.
 
 <figure>
-<div class="rwd-scrollable"  markdown="1"> 
+<div class="rwd-scrollable"  markdown="1">
 | Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
 |------------|:------:|:----------:|:-----:|:------:|:--------:|
 | `<span>`   |  +     |      +     |       |        |          |

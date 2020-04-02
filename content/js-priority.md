@@ -13,12 +13,13 @@ Jak je to s prioritami JavaScriptu při různých způsobech servírování?
 | [5) `<script>` na konci `<body>`](#5)       |   +++     | ++        |
 | [6) `<script defer>` na konci `<body>`](#6) |   +       | +         |
 
-
 Pojďme se teď na jednotlivé typy podívat podrobněji:
 
 ## 1) `<script>` uvnitř `<head>` {#1}
 
 Nejvyšší priorita všeho a zablokování parsování dokumentu během stahování i spouštění. Taková ta klasika když chcete zabít rychlost webu.
+
+<!-- AdSnippet -->
 
 V některých situacích je ale takováto priorita potřeba. Obecně se doporučuje pro skripty, které ovlivňují metriku [první zobrazení obsahu (FMP)](metriky-rychlosti.md#FCP) a jsou zároveň renderují prvky nad zlomem stránky. Dále pro knihovny, které musejí předcházet jiným. Příklady:
 
@@ -31,7 +32,7 @@ V některých situacích je ale takováto priorita potřeba. Obecně se doporuč
 
 Vysoká priorita stažení i spouštění, které přeruší HTML parser.
 
-`type="module"` je poměrně nový. Jde o vkládání [ECMAScript modulů](js-moduly.md) do stránky. Vysvětluje to [Jake Archibald](https://jakearchibald.com/2017/es-modules-in-browsers/) a má to takřka podporu všech [moderních prohlížečů](https://caniuse.com/#search=module).
+[Javascriptové moduly `type="module"`](js-moduly.md) jsou poměrně nové. Jde o vkládání ECMAScript modulů do stránky. Má to podporu takřka všech [moderních prohlížečů](https://caniuse.com/#search=module).
 
 Podle zdrojového článku je to vhodné pro skripty, které generují obsah pro FMP, který je až pod zlomem stránky. Nebo pro skripty, které stahují dynamický obsah. Příklad:
 
@@ -51,9 +52,11 @@ Příklad použití:
 
 ## 4) `<script defer>` {#4}
 
-Nízká priorita stahování. Velmi nízká priorita spuštění – Chrome tyhle skripty pouští až po těch, které jsou [na konci dokumentu](#5). 
+Nízká priorita stahování. Velmi nízká priorita spuštění – Chrome tyhle skripty pouští až po těch, které jsou [na konci dokumentu](#5).
 
 Na rozdíl od `async` je u `defer` skriptů garantováno pořadí provedení, tyhle skripty mají navíc nízkou prioritu spouštění. Stahují se ale opět asynchronně, takže nám nezablokují zobrazení stránky.
+
+<!-- AdSnippet -->
 
 V odkazovaném článku se obecně doporučuje použití pro skripty, které generují nekritický obsah nebo vlastnosti, které použije méně než polovina uživatelů webu. Zkusím ale raději nabídnout konkrétní příklad použití:
 
@@ -76,14 +79,4 @@ Je to vhodné pro skripty, které zajišťují zřídka používané vlastnosti 
 - Stažení podobných článků.
 - Widgety pro dávání zpětné vazby, zobrazení chatu s uživatelem a tak dále.
 
-## Pár poznámek
-
-- jen Chrome
-
-## Jak do toho vstupuje preload?
-
-- TODO
-
-## Rady pro prezentační weby typu e-shopů
-
-- TODO
+<!-- AdSnippet -->
