@@ -1,6 +1,6 @@
 # Vkládání JavaScriptu jako async, defer a type="module" versus rychlost webu
 
-Existuje několik možností, jak vložit JavaScript do HTML kódu. Z pohledu [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) je ale jeden úplně nejhorší – vkládání do `<head>` bez jakéhokoliv dalšího nastavení:
+Existuje několik možností, jak vložit JavaScript do HTML kódu. Z pohledu [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) je ale u statických webů jeden úplně nejhorší – vkládání do `<head>` bez jakéhokoliv dalšího nastavení:
 
 ```html
 <!-- Takhle to prosím nedělejte: -->
@@ -11,9 +11,9 @@ Existuje několik možností, jak vložit JavaScript do HTML kódu. Z pohledu [r
 </head>
 ```
 
-(Vynechme nyní prosím pro zjednodušení, že existují situace, kdy je takového vložení v pořádku. Vezměme příklad javascriptových aplikací – SPA.</small>)
+(Vynechme nyní prosím pro zjednodušení, že existují situace, kdy je takového vložení v pořádku, jako například javascriptových aplikací – SPA.</small>)
 
-Pokud JS vložíme tímto způsobem musí prohlížeč přestat parsovat HTML, soubory stáhnout a jeden po druhém spustit. Až pak může pokračovat v parsování, vyskládání DOMu a až poté může myslet na vykreslení čehokoliv na stránce. Čekat prostě musí, protože v externích skriptech může být kód, který může ovlivnit strukturu DOMu, například `document.write`.
+Pokud JS vložíme tímto způsobem, musí prohlížeč přestat parsovat HTML, soubory stáhnout a jeden po druhém spustit. Až pak může pokračovat v parsování, vyskládání DOMu a až poté může myslet na vykreslení čehokoliv na stránce. Čekat prostě musí, protože v externích skriptech může být kód, který může ovlivnit strukturu DOMu, například `document.write`.
 
 <!-- AdSnippet -->
 
@@ -77,7 +77,7 @@ Shrňme si to ve zjednodušené tabulce.
 ### Shrnutí různých typů vložení
 
 <figure>
-<div class="rwd-scrollable"  markdown="1">
+<div class="rwd-scrollable f-6"  markdown="1">
 
 | Způsob vložení                 | Neblokuje zobrazení? | Garantuje pořadí? | Priorita |
 |--------------------------------|:--------------------:|:-----------------:|:--------:|
@@ -86,7 +86,7 @@ Shrňme si to ve zjednodušené tabulce.
 | `<script async>`               |            +         |                   |  +++     |
 | `<script type="module">`       |            +         |         +         |  +++     |
 | `<script type="module" async>` |            +         |                   |  +++     |
-| `<script>` před `</body>`      |            +         |         +         |  +++     |
+| `<script>` před konec `<body>`      |            +         |         +         |  +++     |
 
 </div>  
 <figcaption markdown="1">
