@@ -116,6 +116,8 @@ Atribut `async` nefunguje pro klasické `<script>` s inline kódem (vloženým p
 6. _Výchozí servírování modulů je „defer“_  
 Vykonání skriptů modulu je ve výchozím nastavení odloženo až po rozparsování stránky. Není tedy nutné přidávat atribut `defer` ke značce `<script type="module">.`
 
+→ Dále také čtěte: [Vkládání JS jako async, defer, module](js-async-defer-module.md)  a vliv na rychlost webu.
+
 ## Tipy a doporučení {#tipy}
 
 ### Přípona souboru .mjs: Ano nebo ne? {#tipy-pripona}

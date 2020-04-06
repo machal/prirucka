@@ -1,6 +1,6 @@
 # Vkládání JavaScriptu jako async, defer a type="module" versus rychlost webu
 
-Existuje několik možností, jak vložit JavaScript do HTML kódu. Z pohledu rychlosti načítání je ale jeden úplně nejhorší – vkládání do `<head>` bez jakéhokoliv dalšího nastavení:
+Existuje několik možností, jak vložit JavaScript do HTML kódu. Z pohledu [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) je ale jeden úplně nejhorší – vkládání do `<head>` bez jakéhokoliv dalšího nastavení:
 
 ```html
 <!-- Takhle to prosím nedělejte: -->
@@ -11,20 +11,22 @@ Existuje několik možností, jak vložit JavaScript do HTML kódu. Z pohledu ry
 </head>
 ```
 
-<small>Vynechme nyní prosím pro zjednodušení, že existují situace, kdy je takového vložení v pořádku. Vezměme příklad javascriptových aplikací – SPA.</small>
+(Vynechme nyní prosím pro zjednodušení, že existují situace, kdy je takového vložení v pořádku. Vezměme příklad javascriptových aplikací – SPA.</small>)
 
-V případě takto vloženého JS musí prohlížeč přestat parsovat HTML, soubory stáhnout a jeden po druhém spustit. Až pak může pokračovat v parsování, vyskládání DOMu a až poté může myslet na vykreslení čehokoliv na stránce. Čekat prostě musí, protože v externích skriptech může být kód, který může ovlivnit HTML kód, například `document.write`.
+Pokud JS vložíme tímto způsobem musí prohlížeč přestat parsovat HTML, soubory stáhnout a jeden po druhém spustit. Až pak může pokračovat v parsování, vyskládání DOMu a až poté může myslet na vykreslení čehokoliv na stránce. Čekat prostě musí, protože v externích skriptech může být kód, který může ovlivnit strukturu DOMu, například `document.write`.
 
-Tento způsob vložení nám pak v [měřeních rychlosti webu](metriky-rychlosti.md) odsune události jako [First Paint (FP)](metrika-fp.md) a [First Contentful Paint (FCP)](metrika-fcp.md), které jsou důležité pro udržení pozornosti uživatelů a uživatelek našich webů.
+<!-- AdSnippet -->
+
+Tento způsob vložení nám pak v [měřeních rychlosti webu](metriky-rychlosti.md) odsune události jako [First Paint (FP)](metrika-fp.md) a [First Contentful Paint (FCP)](metrika-fcp.md), které jsou důležité pro udržení pozornosti uživatelů a uživatelek našich webů během vykreslování.
 
 ## Různé metody vložení JavaScriptu do stránky {#metody}
 
 Začněme grafem, který je v komunitě známý a populární.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/js-async-defer-module.png" alt="Vkládání JS jako async, defer, type=module a vliv na parsování HTML a stahování či spouštění JavaScriptu">
 <figcaption markdown="1">
-*Obrázek: Jak různé metody vložení souboru ovlivňují načasování stažení a provedení javascriptového kódu?. Zdroj: [HTML Living Standard](https://html.spec.whatwg.org/multipage/scripting.html).*
+*Obrázek: Jak různé metody vložení souboru ovlivňují načasování stažení a provedení javascriptového kódu? Zdroj: [HTML Living Standard](https://html.spec.whatwg.org/multipage/scripting.html).*
 </figcaption>
 </figure>
 
@@ -36,37 +38,39 @@ Je garantováno pořadí provedení podle pořadí uvedení v HTML kódu.
 
 ### `<script defer>` {#metody-script-defer}
 
-Odložené spuštění. Klasický skript, který se stáhne souběžně s parsováním. Je vyhodnocen, až prohlížeč skončí s parsováním stránky.
+Odložené spuštění. Klasický skript, který se stáhne souběžně s parsováním. Je vyhodnocen, až prohlížeč skončí s parsováním HTML kódu.
 
-Paké při tomto způsobu vložení je garantováno pořadí provedení.
+Také při tomto způsobu vložení je garantováno pořadí provedení.
 
-Atribut `defer` je určený jen pro klasické skripty, protože javascriptové moduly jsou „deferovány“ běžně.
+Atribut `defer` je určený jen pro klasické skripty, protože [javascriptové moduly](js-moduly.md) jsou „deferovány“ běžně.
 
 ### `<script async>` {#metody-script-async}
 
-Asynchronní spouštění. Klasický skript se stáhne souběžně s parsováním, ale je vyhodnocen, jakmile bude stažený, tedy  potenciálně před dokončením parsování HTML.
+Asynchronní spouštění. Klasický skript se stáhne souběžně s parsováním, ale je vyhodnocen hned po stažení, tedy  potenciálně před dokončením parsování HTML.
 
 Pozor, není zaručeno pořadí provedení.
 
 ### `<script type="module">` {#metody-script-module}
 
-[Javascriptový modul](js-moduly.md). Skript a jeho závislosti (tzn. další moduly) se stáhnout souběžně s parsováním. Je vyhodnocen, až prohlížeč skončí s parsováním stránky.
+[Javascriptový modul](js-moduly.md). Skript a jeho závislosti (tzn. další moduly) se stáhnou souběžně s parsováním. Je vyhodnocen, až prohlížeč skončí s parsováním stránky.
 
 Pořadí provedení je garantováno.
 
-Modul se tedy ve výchozím nastavení jako `defer`, takže není potřeba uvádět tento atribut.
+Modul je tedy ve výchozím nastavení jako `defer`, takže není potřeba uvádět tento atribut.
 
 ### `<script type="module" async>` {#metody-script-module-async}
 
-Modul, který se chová asynchronně. Skript a jeho závislosti (tzn. další moduly) se stáhnou souběžně s parsováním. Je vyhodnocen, jakmile bude k stažený (potenciálně před dokončením parsování).
+Modul, který se chová asynchronně. Skript a jeho závislosti (tzn. další moduly) se stáhnou souběžně s parsováním. Je vyhodnocen hned po stažení (potenciálně před dokončením parsování).
 
 ### Vložení `<script>` před `</body>` {#metody-script-module-async}
 
 Na závěr jsem si nechal speciální variantu, které je oprávněně velmi populární. Když JS vložíte na konec `<body>`, získáte tím odblokování parsování HTML – za JS už nenásleduje žádná struktura, kterou by javascriptový kód mohl změnit.
 
+<!-- AdSnippet -->
+
 Zároveň je garantováno pořadí provedení. Takto vložený kód se tedy chová jako `defer`, ale s jedním rozdílem – má vyšší prioritu stažení i provedení.
 
-[Priority stažení a provádění JavaScriptu](js-priority.md) jsou totiž další důležitý rozměr při rozhodování, jak JS do stránky vložit.
+Priority stažení a provádění JavaScriptu jsou totiž další důležitý rozměr při rozhodování, jak JS do stránky vložit. Brzy se k nim dostaneme.
 
 Shrňme si to ve zjednodušené tabulce.
 
@@ -86,12 +90,12 @@ Shrňme si to ve zjednodušené tabulce.
 
 </div>  
 <figcaption markdown="1">
-*Tabulka: Které skripty blokují zobrazení, garantují pořadí? Čím vyšší prioritu stahování a provádění v prohlížečích mají, tím víc hvezdiček dostanou.*
+*Tabulka: Jakým způsobem vložené skripty blokují zobrazení a garantují pořadí? Čím vyšší prioritu stahování a provádění v prohlížečích mají, tím víc hvezdiček dostanou.*
 </figcaption>
 
 </figure>
 
-→ [Prirority spouštění JS](js-priority.md) – které typy skriptů využít pro které případy?
+→ Čtěte: [Prirority spouštění JS](js-priority.md) – které typy skriptů využít pro které případy?
 
 ## Ukázka stránky {#ukazka}
 
@@ -154,15 +158,20 @@ Vezměme, že jde o jakousi esenci zdrojáku typického českého e-shopu, jak s
 
 Je to tady pochopitelně skoro všechno špatně. Máme sice garantováno pořadí provedení skriptů, což část z nich potřebuje; máme vše „přehledně“ umístěné v hlavičce HTML, ale tím počet výhod jaksi končí.
 
-Vynechme teď další aspekty, které jsem v ukázce se skřípěním zubů ponechal. Použití Slick karuselu je – vzhledem k jeho neblahým vlivům na rychlost renderování – vždy kontrovezní. [Líné načtení obrázků](lazy-loading-obrazku.md) tady děláme dle mého neoptimálně pomocí už vcelku zastaralé jQuery LazyLoad. A mohli bychom pokračovat, že… ale jak říkám: Jde o esenci českého e-shopu.
+Vynechme teď další aspekty, které jsem v ukázce se skřípěním zubů pro zjednodušení neřešil. Použití Slick karuselu je – vzhledem k jeho neblahým vlivům na rychlost renderování – vždy kontroverzní. [Líné načtení obrázků](lazy-loading-obrazku.md) tady děláme dle mého neoptimálně pomocí už vcelku zastaralé jQuery LazyLoad. A mohli bychom pokračovat, že… ale jak říkám: Jde o esenci českého e-shopu.
+
+<div class="related" markdown="1">
+- [Moduly v JavaScriptu](js-moduly.md)
+- [Priority stahování JavaScriptu](js-priority.md)
+</div>
 
 „Díky“ prvkům `<script>` v hlavičce jsme si zablokovali parsování HTML, odložili tvorbu DOMu a prvního renderingu stránky. Pojďme to přeskupit a odblokovat.
 
-V prvé řadě se ale musíme ujistit, že stránka chvilku „vydrží“ bez javascriptových komponent. Týká se to hlavně prvků viditelných v prvním renderovaném [viewportu](viewport.md) na mobilních zařízeních. Musíme napsat HTML a CSS tak, aby nevadilo, že JavaScriptu chvíli trvá než se stáhne a provede.
+V prvé řadě se ale musíme ujistit, že stránka chvilku „vydrží“ bez javascriptových komponent. Týká se to hlavně prvků viditelných v prvním renderovaném [viewportu](viewport.md) na mobilních zařízeních. Musíme napsat HTML a CSS tak, aby nevadilo, že JavaScriptu chvíli trvá než se stáhne a provede. Mimo jiné zajistit, aby prvky před svým plným zobrazením držely [poměr stran](css-pomer-stran.md).
 
 ### Knihovna jQuery a její pluginy {#ukazka-jquery}
 
-jQuery a spol. v tomto případě pomáhají se vzhledem stránky, a nebo podporují funkčnost prvků, které se nacházejí až pod prvním viewportem. Pojďme vykreslení stránky zbavit čekání na tuhle sadu javascriptů. Potřebujeme zachovat pořadí provádění a zanechat vyšší prioritu. Přesuneme je tedy na konec dokumentu, těsně před `</body>`.
+jQuery a spol. v tomto případě pomáhají se vzhledem stránky a nebo podporují funkčnost prvků, které se nacházejí až pod prvním viewportem. Pojďme vykreslení stránky zbavit čekání na tuhle sadu javascriptů. Potřebujeme zachovat pořadí provádění a zanechat vyšší prioritu. Přesuneme je tedy na konec dokumentu, těsně před `</body>`.
 
 ### Detekce vlastností a polyfilly {#ukazka-detekce-polyfilly}
 
@@ -173,9 +182,11 @@ jQuery a spol. v tomto případě pomáhají se vzhledem stránky, a nebo podpor
 - spojili do jediného souboru,
 - v případě malého datového objemu (pod 1-2 kB) přesunuli jako inline skript přímo do HTML zdrojáku.
 
+Tyhle kroky v příkladu vynecháme, soustřeďme se na rozhodování o způsobu vložení skriptů do stránky. 
+
 ### Kritická analytika před CSS, ostatní za něj {#ukazka-kriticka-analytika}
 
-Pokud se bavíme o měření návštěvnosti, zpravidla to nepředstavuje nic náročného pro vykreslení stránky. [V návodu](https://developers.google.com/analytics/devguides/collection/analyticsjs) na vložení Google Analytics do stránky se píše:
+Pokud se bavíme o měření návštěvnosti, zpravidla analytika nepředstavuje nic náročného pro vykreslení stránky. [V návodu](https://developers.google.com/analytics/devguides/collection/analyticsjs) na vložení Google Analytics do stránky se píše:
 
 > The Google Analytics tag should be added near the top of the HEAD tag and before any other script or CSS tags.
 
@@ -242,4 +253,6 @@ Výsledné HTML by mohlo vypadat takto:
 
 Samozřejme zde vyvstává řada otázek (použití [HTTP/2](http-2.md), nakládání s cache prohlížeče…), ale z pohledu zpracování JavaScriptu jsme na tom po úpravách u tohoto typu webu daleko lépe.
 
-Cílem je tedy poznat možnost vkládání `<script>` do stránky, naučit se pracovat s [priritami](js-priority.md) a samozřejmě sledovat způsob načítání u konkrétních na časových osách, které vidíme ve vývojářských nástrojích prohlížeče.
+Pro optimalizaci javascriptů ve stránce je tedy nutné pochopit všechny možnost vkládání `<script>` do stránky, naučit se pracovat s [prioritami](js-priority.md). Nakonec samozřejmě sledovat způsob načítání u konkrétních webů, které vidíme ve vývojářských nástrojích prohlížeče a podle toho upravovat priority jednotlivým prvkům `<script>`.
+
+<!-- AdSnippet -->

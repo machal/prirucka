@@ -39,7 +39,8 @@
 - [CSS: poměr stran](css-pomer-stran.md)
 - [Fonty: font-display](css-pomer-stran.md)
 - [Fonty: WOFF2](https://www.vzhurudolu.cz/blog/50-woff2)
-- [Ikonfonty: proč nepoužívat](https://www.vzhurudolu.cz/prirucka/ikonfonty-vs-svg)- 
+- [Ikonfonty: proč nepoužívat](https://www.vzhurudolu.cz/prirucka/ikonfonty-vs-svg)
+- [JavaScript: vložení jako async, defer, module](js-async-defer-module.md)
 - [JavaScript: priority v prohlížečích](js-priority.md)
 - [JavaScript: Intersection Observer](intersection-observer.md)
 - [HTTP/2 protokol](http-2.md)
