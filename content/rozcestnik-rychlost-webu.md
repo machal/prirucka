@@ -32,7 +32,7 @@
 
 - [Lazy loading: co je?](lazy-loading.md)
 - [Lazy loading: jak na něj?](lazy-loading-obrazku.md)
-- [Lazy loading: knihovna MiniLazyload](css-pomer-stran.md)
+- [Lazy loading: knihovna MiniLazyload](https://www.vzhurudolu.cz/blog/148-minilazyload)
 - [Meta značky preconnect & dns-prefetch](preconnect.md)
 - [CSS optimalizace](css-optimalizace.md)
 - [CSS kritické styly](https://www.vzhurudolu.cz/blog/35-critical-css)
