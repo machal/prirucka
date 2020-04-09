@@ -26,7 +26,7 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 | [Time to Interactive (TTI)](metrika-tti.md)    | První možnost interaktivity   |
 | [Speed Index](speedindex.md)                   | Vykreslení celého viewportu   |
 | [Load](load.md)                                | Stažení všeho                 |
-| [Lighthouse Performance Score](metriky-lps.md) | Všechny renderovací metriky   |
+| [Lighthouse Performance Score](metrika-lps.md) | Všechny renderovací metriky   |
 
 <figure>
 <img src="../dist/images/original/metriky-rychlosti.jpg" alt="">

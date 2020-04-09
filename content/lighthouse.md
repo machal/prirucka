@@ -52,10 +52,9 @@ Oblasti webařského pachtění, které Lighthouse pokrývá:
 Ligthouse je balíček pro Node.js, proto je způsobů jeho použití fakt hodně:
 
 - *Chrome DevTools* – stačí otevřít developerské nástroje Chrome (Ctrl/Cmd+Alt+I) a jít do záložky „Audits“.
-- *Online verze* – [developers.google.com/web/tools/lighthouse/run](https://developers.google.com/web/tools/lighthouse/run) ([ukázkový výstup](https://builder-dot-lighthouse-ci.appspot.com/report.1536812843174.html)).
+- *Online verze* – [web.dev/measure/](https://web.dev/measure/).
 - *V dalších nástrojích* – výstupy „majáku“ jsou dostupné z testů aplikací jako WebpageTest.org, SpeedCurve a dalších. K dispozici je [seznam integrací](https://github.com/GoogleChrome/lighthouse#lighthouse-integrations).
 - *Příkazová řádka* – právě jí vděčí za tolik možností použití: [github.com/GoogleChrome/lighthouse](https://github.com/GoogleChrome/lighthouse).
-
 
 ## Jak funguje? {#jak-funguje}
 
@@ -109,7 +108,7 @@ lighthouse https://www.vzhurudolu.cz --output json  --output-path vzhurudolu-rep
 <div class="related web-only" markdown="1">
 - [Nástroje pro analýzu rychlosti](rychlost-nastroje.md)
 - [PageSpeed Insights](pagespeed-insights.md)
-- [Lighthouse Performance Score](metriky-lps.md)
+- [Lighthouse Performance Score](metrika-lps.md)
 </div>
 
 Zpracování JSONu (nebo CSV, který Lighthouse nabízí také) pak je možné dělat automaticky. Toho je možné využít při pravidelném spouštění.
