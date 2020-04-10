@@ -194,7 +194,7 @@ Pokud se bavíme o měření návštěvnosti, zpravidla analytika nepředstavuje
 
 > The Google Analytics tag should be added near the top of the HEAD tag and before any other script or CSS tags.
 
-Dodržujete to? Měli byste. Umístění před CSS je důležité proto, aby se mohly oba soubory (Google Analytics i vaše kaskádové styly) stahovat souběžně, jak [ukazuje Harry Roberts](https://csswizardry.com/2018/11/css-and-network-performance/#dont-place-link-relstylesheet--before-async-snippets) ve svých testech. Tohle se ale týká jen asynchronních skriptů, které nemají žádný vztah k CSS.
+Dodržujete to? Měli byste. Umístění před CSS je důležité proto, aby se provedla synchronní část kódu ve `<script>` co nejdříve. Synchronní kód umístěný za CSS totiž vždy čeká na stažení stylů a vybudování CSSOM.
 
 O *kritické* analytice píšu v kontextu samotného měření návštěvnosti. Ostatní analytické nástroje by takto vysokou prioritu mít neměly, takže je vhodné je umístit do zdrojáku minimálně až za CSS.
 
