@@ -90,10 +90,10 @@ Možností je ale více:
 
 1. _Seznamy exportů_  
 V modulu (`module.js`) není potřeba klíčové slovo `export` uvádět vícekrát. Stačí vypsat seznam toho, co exportujeme: `export { foo, hello }`;
-2. _Hromadný import_  
-Pomocí znaku `*` je možné importovat všechny exportované prvky modulu: `import * from './module.js'`.
-3. _Přejmenování_  
-Klíčovým slovem `as` je možné původní objekty přejmenovat a přidělit jim jmenný prostor. Importujeme pomocí `import * as module from './module.js'` a dále používáme např. jako `module.foo()`.
+2. _Přejmenování_  
+Klíčovým slovem `as` je možné původní objekty přejmenovat a přidělit jim jmenný prostor. Importujeme pomocí `import { foo as myFoo } from './module.js'` a dále používáme např. jako `module.foo()`.
+3. _Hromadný import přejmenovaných_  
+Pomocí znaku `*` je možné importovat všechny exportované prvky modulu: `import { * as myFoo } from './module.js'`.
 4. _Výchozí exporty_  
 Náš `module.js` může mít nějaký výchozí výstup, označíme jej klíčovým slovem `default`. Například takto: `export default function() { … }`. Při importování je pak možné prostě jen uvést jméno pro importovaný modul: `import myModule from './module.js'`.
 
