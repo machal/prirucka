@@ -8,6 +8,7 @@
 - [Mobile First](mobile-first.md)
 - [Časté chyby](https://www.vzhurudolu.cz/blog/47-znicit-mobilistu-1) a [druhý díl](https://www.vzhurudolu.cz/blog/48-znicit-mobilistu-2)
 - [Pojmy „adaptivní“ a „responzivní“](https://www.vzhurudolu.cz/blog/23-adaptivni-responzivni)
+- [Proč neříkat „pixel-perfect“?](https://www.vzhurudolu.cz/blog/164-pixel-perfect)
 
 ## Zařízení
 

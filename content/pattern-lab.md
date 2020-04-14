@@ -9,7 +9,7 @@ Používám ho na aktuálním projektu a mám takový pocit, že jinak už vět�
 
 <!-- AdSnippet -->
 
-Nejprve si ale musíme povědět něco o systémech designu. 
+Nejprve si ale musíme povědět něco o systémech designu.
 
 <p class="podcast">
 Podcast: <a href="https://soundcloud.com/vzhurudolu/atomicky-design-a-pattern-lab" data-id="295697951">Atomický design a Pattern Lab</a>
@@ -132,7 +132,7 @@ Další hezká věc a přitom žádná velká věda. Pattern Lab nabízí možno
 
 Asi byste atomický systém dokázali implementovat bez Pattern Labu. Ale moc to nedoporučuji. Můžete ho navrhnout v Photoshopu, ale bude vám chybět možnost okamžitého otestování. Můžete ho zkusit napsat přímo v kódu, ale bude vám chybět nástroj pro snadný návrh a prezentaci.
 
-Ani v případě mé práce pro Webmium není Pattern Lab jediný nástroj. Grafické materiály dostávám v běžných celostránkových souborech z Photoshopu. S grafikem máme docela soulad, takže můžu prohlásit, že i takhle může atomický systém vznikat. Jen musíte vědět, že to co poskládáte z atomického designu nebude perfektně sedět s pé-es-déčky. Nicméně doufám, že v pixel-perfect návrhy už dávno nevěříte.
+Ani v případě mé práce pro Webmium není Pattern Lab jediný nástroj. Grafické materiály dostávám v běžných celostránkových souborech z Photoshopu. S grafikem máme docela soulad, takže můžu prohlásit, že i takhle může atomický systém vznikat. Jen musíte vědět, že to co poskládáte z atomického designu nebude perfektně sedět s pé-es-déčky. Nicméně doufám, že [v pixel-perfect návrhy](https://www.vzhurudolu.cz/blog/164-pixel-perfect) už dávno nevěříte.
 
 ## Zkusíte Pattern Lab a atomický design?
 
