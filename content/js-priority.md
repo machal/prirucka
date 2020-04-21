@@ -13,7 +13,7 @@ Jak je to s prioritami JavaScriptu při různých způsobech servírování?
 | [5) `<script>` na konci `<body>`](#5)       |   +++     | ++        |
 | [6) `<script defer>` na konci `<body>`](#6) |   +       | +         |
 
-→ Dále také čtěte: [Vkládání JS jako async, defer, module a vliv na rychlost webu](js-async-defer-module.md).
+→ *Související: [Vkládání JS jako async, defer, module a vliv na rychlost webu](js-async-defer-module.md)*.
 
 Pojďme se teď na jednotlivé typy podívat podrobněji:
 

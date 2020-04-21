@@ -36,6 +36,8 @@ Klasický skript, který přeruší parsování - stáhne se, vyhodnotí a pak t
 
 Je garantováno pořadí provedení podle pořadí uvedení v HTML kódu.
 
+→ *Související: [Značka SCRIPT: Vložení JavaScriptu do HTML](html-script.md)*
+
 ### `<script defer>` {#metody-script-defer}
 
 Odložené spuštění. Klasický skript, který se stáhne souběžně s parsováním. Je vyhodnocen, až prohlížeč skončí s parsováním HTML kódu.

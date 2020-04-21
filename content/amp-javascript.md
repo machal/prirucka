@@ -14,7 +14,7 @@ Už víte, že na psaní JavaScriptu musíte v AMP jít trochu jinak než u oby�
 
 Běžný autorský JavaScript je zde zcela zakázaný. Prostě smůla.
 
-To se projevuje zejména tím, že stránka obsahující značku `<script>` bude (s výjimkou vkládání AMP komponent a jejich konfigurací) nevalidní.
+To se projevuje zejména tím, že stránka obsahující [značku `<script>`](html-script.md) bude (s výjimkou vkládání AMP komponent a jejich konfigurací) nevalidní.
 
 Nevalidní AMP stránka se neumístí do [AMP Cache](amp-cache.md), čímž tvorba AMP stránek ztrácí hlavní smysl.
 

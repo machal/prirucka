@@ -72,6 +72,8 @@ Všimněte si onoho `type="module"`. Říkáme tím prohlížeči, aby s kódem 
 
 Druhý soubor, `module.js`, na který se odkazujeme uvnitř `script.js`, si prohlížeč stáhne a vykoná sám, to už je jeho práce.
 
+→ *Související: [Značka SCRIPT: Vložení JavaScriptu do HTML](html-script.md)*
+
 ### Další možnosti importů a exportů  {#zaklady-dalsi}
 
 Zpravidla chceme exportovat více než jednu část kódu modulu. Náš `module.js` tedy rozšíříme o konstantu:

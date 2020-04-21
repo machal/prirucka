@@ -57,7 +57,7 @@ Všimněte si několika věcí:
 
 <!-- AdSnippet -->
 
-Pokud se vám mikrodata v HTML úplně nelíbí (což bych se vám nedivil), můžete použít JSON-LD: 
+Pokud se vám mikrodata v HTML úplně nelíbí (což bych se vám nedivil), můžete použít JSON-LD ve [značce `<script>`](html-script.md): 
 
 ```
 <script type="application/ld+json">

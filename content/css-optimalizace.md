@@ -200,7 +200,7 @@ Tento způsob servírování CSS podporuje kromě Chrome (a z něj vycházejíc�
 
 ### Ošetření Firefoxu
 
-Z aktuálních prohlížečů zbývá jen Firefox, který to sice podporuje, ale zároveň při stahování CSS z `<body>` nezastaví vykreslování stránky. To se [dá vyřešit](http://css.chobits.ch/css-rychle-a-efektivne/) poměrně snadno přidáním značky `<script>`, která obsahuje prázdný znak:
+Z aktuálních prohlížečů zbývá jen Firefox, který to sice podporuje, ale zároveň při stahování CSS z `<body>` nezastaví vykreslování stránky. To se [dá vyřešit](http://css.chobits.ch/css-rychle-a-efektivne/) poměrně snadno přidáním [značky `<script>`](html-script.md), která obsahuje prázdný znak:
 
 ```html
 <link href="components/table.v1.css" rel="stylesheet">
