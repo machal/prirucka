@@ -117,6 +117,17 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
+Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md)
+
+```html
+<div class="rwd-media">
+  <video autoplay muted controls width="1600" height="900">
+    <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1587737526/vzhurudolu-video/img-aspect-ko_gdcr9f.mp4"
+      type="video/mp4">
+  </video>
+</div>
+```
+
 ### CodePen
 
 Ukázky vkládáme jako běžný odstavec v Markdownu:

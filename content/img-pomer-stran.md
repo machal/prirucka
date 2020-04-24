@@ -4,11 +4,29 @@ Nedávno jsem na Vzhůru dolů publikoval [text o nastavení poměru stran](css-
 
 Problém je v tom, že prohlížeče renderují stránku dříve než jsou tyto prvky stažené. Pokud neznají velikost ani poměr stran médií, dopadne to tak, že se stránka vykresluje vícekrát. Pro uživatele to znamená nepříjemné „poskakování“ obsahu v momentě, kdy už například čte text.
 
-<!-- TODO video, obrázek…? -->
+Takhle to vypadat nemá:
+
+<div class="rwd-media">
+  <video autoplay muted controls width="1600" height="900">
+    <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1587737526/vzhurudolu-video/img-aspect-ko_gdcr9f.mp4"
+      type="video/mp4">
+  </video>
+</div>
 
 V původním článku jsme na to šli přes různé hacky a sliboval jsem, že se blýská na lepší časy a snad to bude rovnou vestavěné v prohlížečích.
 
+<!-- AdSnippet -->
+
 No a ony lepší časy přicházejí, protože, jak jste se mohli už dočíst [na Smashing Magazine](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/), prohlížeče pro nastavení poměru stran prvků v `<img>` používají (Chrome a Firefox) nebo používat začnou (Safari) atributy pro nastavení výšky a šířky.
+
+Takhle to vypadat má:
+
+<div class="rwd-media">
+  <video autoplay muted controls width="1600" height="900">
+    <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1587737529/vzhurudolu-video/img-aspect-ok_jqylkx.mp4"
+      type="video/mp4">
+  </video>
+</div>
 
 ## Poměr stran obrázku nastavíte atributy `width` a `height` {#width-height}
 
@@ -56,6 +74,8 @@ Možná vás napadlo, že pokud atributy určují poměr stran, nemuseli byste s
 …a mě to napadlo určitě, protože přesně takhle elegantně funguje responzivní layout [v AMP](amp.md).
 
 Jenže to fungovat nebude. Pokud do `width` a `height` vložíte menší čísla než je aktuální potřeba layoutu, vykreslí se obrázek ve fixních rozměrech.
+
+<!-- AdSnippet -->
 
 Takže vkládaný rozměr musí být rovný nebo větší než je největší rozměr obrázku ve vašich layoutech. Pro zájemce přikládám [CodePen](https://codepen.io/machal/pen/jObBbKR?editors=1100) tohoto neúspěšného pokusu.
 
@@ -122,3 +142,5 @@ Pro nás ostatní to znamená, že můžeme z kódu odstranit [padding trik](pad
 Lidem, kteří nastavují `width` a `height` špatně, tedy ne v souladu s poměrem stran obrázků může tento krok prohlížečů rozbít layout stránky během vykreslování.
 
 No a pro úplně všechny webaře platí – vyplňujme prosím poctivě atributy `width` a `height` u `<img>`.
+
+<!-- AdSnippet -->
