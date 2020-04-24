@@ -184,7 +184,7 @@ Pokud kód dělíte do modulů i na produkci, zvažte přidání instrukce k př
 Aktuálně podporují moduly z ECMAScript  všechny prohlížeče kromě Internet Exploreru 11. Viz údaje na [CanIUse.com](https://caniuse.com/#feat=es6-module).
 
 <figure>
-<img src="https://caniuse.bitsofco.de/static/v1/es6-module-1585287008081.png" alt="JS moduly nemají podporu jen v MSIE">
+<img src="https://res.cloudinary.com/ireaderinokun/image/upload/w_1200/v1/caniuse-embed/static/es6-module-1585287008081.png" alt="JS moduly nemají podporu jen v MSIE">
 <figcaption markdown="1">
 *Obrázek: Podpora javascriptových modulů v prohlížečích. Zdroj: [CanIUse Embed](https://caniuse.bitsofco.de/).*
 </figcaption>
