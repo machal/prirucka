@@ -30,10 +30,6 @@ Dále platí:
 
 Pokud vám vadí, že to zatím nefunguje v Safari a starších prohlížečích, je potřeba znát také [alternativní metody](css-pomer-stran.md) pro nastavení poměru stran.
 
-### Video a ostatní média {#width-height-ostatni}
-
-S videem, `<iframe>` a dalšími externími médii vám zatím prohlížeče nepomohou, takže používejte [padding trik](padding-trik.md) nebo jiné [alternativní metody](css-pomer-stran.md) pro nastavení poměru stran.
-
 ## Ukázka {#ukazka}
 
 Obrázek v následujícím CodePenu má nastaveno spoždění načítání, takže byste měli vidět neprve šedivý zástupný symbol. Po čase se vám načte zelený obrázek:
@@ -42,10 +38,30 @@ CodePen: [codepen.io/e/WBRaPe](https://codepen.io/machal/pen/WBRaPe?editors=1100
 
 Všimněte si, že v Chrome a Firefoxu vám layout celou dobu drží jako přibitý. No a pak se podívejte, že v CSS pro toto nepoužíváme žádné speciální triky. Prohlížeči prostě stačily atributy `width` a `height`.
 
-Pro pořádek ještě dva jiné CodePeny:
+Pro pořádek ještě dodám dva jiné CodePeny:
 
 * [Bez atributu `width` a `height`](https://codepen.io/machal/pen/KKdNBew?editors=1100) - layout pak nehezky poskakuje.
 * [S oběma atributy a padding trik fallbackem](https://codepen.io/machal/pen/MWabBBK?editors=1100) - pro případ, že byste to chtěli mít pojištěné i ve starších prohlížečích. (Za mě to není nutné.)
+
+### Jaké rozměry dát do `width` a `height`? {#ukazka-rozmery}
+
+Možná vás napadlo, že pokud atributy určují poměr stran, nemuseli byste si s tím lámat hlavu a vložit do nich nějaké nízké číslo, které onen poměr stran vyjadřuje…
+
+```html
+<!-- Tohle fungovat nebude: -->
+<img src="image.jpg" alt="…"
+  width="16" height="9">
+```
+
+…a mě to napadlo určitě, protože přesně takhle elegantně funguje responzivní layout [v AMP](amp.md).
+
+Jenže to fungovat nebude. Pokud do `width` a `height` vložíte menší čísla než je aktuální potřeba layoutu, vykreslí se obrázek ve fixních rozměrech.
+
+Takže vkládaný rozměr musí být rovný nebo větší než je největší rozměr obrázku ve vašich layoutech. Pro zájemce přikládám [CodePen](https://codepen.io/machal/pen/jObBbKR?editors=1100) tohoto neúspěšného pokusu.
+
+### Video a ostatní média {#width-height-ostatni}
+
+S videem, `<iframe>` a dalšími externími médii vám zatím prohlížeče nepomohou, takže používejte [padding trik](padding-trik.md) nebo jiné [alternativní metody](css-pomer-stran.md) pro nastavení poměru stran.
 
 ## Podpora v prohlížečích {#prohlizece}
 
