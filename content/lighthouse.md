@@ -1,8 +1,19 @@
 # Lighthouse: Nepostradatelná analýza webu od Google
 
-Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak vyzrát na Google.
+Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak vyzrát na Google. 
 
-[Proč jej používat?](#proc) – [Co umí analyzovat](#co-umi) – [Jak jej používat](#jak-pouzivat) – [Jak funguje](#jak-funguje) – [Příkazová řádka](#prikazovka) – [Pravidelné spouštění](#pravidelne)
+Je to nástroj pro analýzu technické kvality webu, která důležitá jak pro návštěvníky, tak pro webu umístění právě ve výsledích vyhledávání Googlu.
+
+Obsah:
+
+<div markdown="1" id="toc" class="f-6">
+- [Proč jej používat?](#proc)
+- [Co umí analyzovat](#co-umi)
+- [Jak jej používat](#jak-pouzivat)
+- [Jak funguje](#jak-funguje)
+- [Příkazová řádka](#prikazovka)
+- [Pravidelné spouštění](#pravidelne)
+</div>
 
 Používám jej hlavně pro analýzu [rychlosti načítání](rychlost-nacitani-proc.md), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
 
