@@ -28,7 +28,7 @@ Začneme novinkou, která je v době aktualizace textu úplně čerstvá.
 
 ## Nativní lazy loading {#nativni}
 
-Od Chrome [verze 76](https://web.dev/native-lazy-loading) je možné nastavit líné načtení přímo v HTML pomocí atributu `loading`:
+Od Chrome [verze 76](https://web.dev/native-lazy-loading) a [Firefoxu 75](https://wiki.developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/75) je možné nastavit líné načtení přímo v HTML pomocí atributu `loading`:
 
 ```html
 <img src="obrazek.jpg" loading="lazy"
@@ -113,9 +113,7 @@ Prohlížeč se navíc během stahování iframe pokouší zobrazit zástupný s
 
 ### Podpora v prohlížečích a fallbacky  {#nativni-podpora}
 
-Nativní lazy loading podporuje Chrome od verze 76. Ostatní [prohlížeče](prohlizece.md), které z Chrome vycházejí (Edge, Opera, Seznam) budou následovat během několika týdnů až měsíců. Tato skupina tvoří na českých webech něco mezi polovinou až třemi čtvrtinami návštěvnosti.
-
-Z důležitých prohlížečů tuhle vlastnost zatím nepodporuje Firefox ([pracuje se na tom](https://bugzilla.mozilla.org/show_bug.cgi?id=1542784)) a Safari (autoři mají také [otevřený úkol](https://bugs.webkit.org/show_bug.cgi?id=196698)).
+Nativní lazy loading podporuje Chrome od verze 76 a Firefox od verze 75. Z důležitých prohlížečů tuhle vlastnost zatím nepodporuje Safari (autoři mají také [otevřený úkol](https://bugs.webkit.org/show_bug.cgi?id=200764)).
 
 K mému překvapení [podporoval Internet Explorer](https://msdn.microsoft.com/en-us/ie/dn369270(v=vs.94)) atribut `lazyload` jako úplně první prohlížeč. Jenže funkčnost atributu je tam odlišná od nové specifikace, takže také IE musíme počítat do skupiny prohlížečů bez podpory.
 
