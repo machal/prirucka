@@ -8,7 +8,7 @@ Video: <a href="https://www.youtube.com/watch?v=bi6Y6UqPEZU">Padding trik v CSS
 
 Ze své podstaty se totiž načítají asynchronně, takže stránka může být vykreslená, uživatelka ji používá a ejhle… layout se jí překreslí, obsah se posune, protože prohlížeč stáhl externí médium.
 
-<!-- AdSnippet -->
+→ *Související: [Poměr stran nativně ve značce IMG](img-pomer-stran.md)*
 
 Problém se týká zejména těch médií, které chceme vkládat jako [pružná (responzivní)](pruzna-media.md), takže se přizpůsobují šířce rodiče.
 
@@ -54,6 +54,11 @@ A co vnitřní prvek `aspect-ratio-box__in`?
 
 - `position:absolute` nám umožní umísťování do prostoru relativně pozicovaného rodiče.
 - `width:100%` a `height:100%` dokoná dílo tím, že zajistí, aby se potomek roztáhl do celé plochy nadřazeného elementu.
+
+<div class="related" markdown="1">
+- [Poměr stran obrázků](img-pomer-stran.md)
+- [Poměr stran: alternativní metody](css-pomer-stran.md)
+</div>
 
 Možná jste si všimli, že v příkladu máme obrázek o rozměrech 320 × 180 pixelů, což naznačuje poměr stran 16:9, nikoliv 4:3. Vytvoříme si tedy ještě jednu modifikační třídu (podle BEM):
 

@@ -60,7 +60,8 @@
 
 ## CSS triky a řešení
 
-- [Zachování poměru stran](css-pomer-stran.md)
+- [Poměr stran obrázků](img-pomer-stran.md)
+- [Poměr stran médií](css-pomer-stran.md)
 - [Padding trik](padding-trik.md)
 - [Optimalizace dat CSS](css-optimalizace.md)
 - [Velikost okna v CSS](velikost-okna-css-js.md)

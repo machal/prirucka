@@ -2,6 +2,8 @@
 
 Jak v CSS udržet poměr stran než se vykreslí složitější komponenta nebo responzivní médium? V textu jsou popsané nejznámější metody, včetně triků s paddingem, s autorskými vlastnostmi a napřímo vloženým SVG.
 
+Pokud však jde o obrázky, máme už zde [nativní řešení](img-pomer-stran.md), kde jen stačí správně vyplnit atributy `width` a `height`.
+
 ## V čem je problém? {#problem}
 
 Představte si, že na mobilu používáte web a chcete kliknout na odkaz v textu. Jenže mezitím se vám nahoře stáhl obrázek, celý layout se posunul, vy omylem klikáte na reklamu a klejete. Komu by se to nestalo, že…?
@@ -17,7 +19,14 @@ Je to nepříjemné. Stabilita rozvržení stránky je proto jedním z důležit
 
 ## Obvyklí podezřelí: responzivní komponenty a externí média {#obvykli-podezreli}
 
-Problém s poskakováním layoutu se v malé míře týká webfontů, ale v daleko větší různého obsahu vykreslovaného jako multimediální obsah nebo javascriptové komponenty. Například:
+Problém s poskakováním layoutu se v malé míře týká webfontů, ale v daleko větší různého obsahu vykreslovaného jako multimediální obsah nebo javascriptové komponenty. 
+
+<div class="related" markdown="1">
+- [Poměr stran obrázků](img-pomer-stran.md)
+- [Padding trik](padding-trik.md)
+</div>
+
+Například:
 
 - Obrázky vkládané přes `<img>`.
 - Video a další multimédia.
@@ -295,6 +304,8 @@ img {
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Mě se to moc líbí. Tohle bych považoval za ideální, co vy? Ale neradujme se předčasně – velká část obrázků, videí, vkládaných rámců nebo javascriptových komponent bude dále vyžadovat ruční opečování ze strany kodérů a metody z článku tedy ještě léta využijeme.
+
+→ *Související: [Poměr stran nativně ve značce IMG](img-pomer-stran.md)*
 
 ## Nezapomeňte na zástupné symboly {#placeholder}
 

@@ -1,10 +1,10 @@
-# Poměr stran obrázků pomocí atributů WITH a HEIGHT ve značce IMG
+# Poměr stran obrázků jednoduše (pomocí atributů WITH a HEIGHT ve značce IMG)
 
-Nedávno jsem na Vzhůru dolů publikoval [text o nastavení poměru stran](css-pomer-stran.md) pro obrázky, video, iframy a další obsah vkládaný do HTML zvenčí, říkejme jim média.
+Nedávno jsem na Vzhůru dolů publikoval [text o nastavení poměru stran](css-pomer-stran.md) pro obrázky, video, iframy a další obsah vkládaný do HTML zvenčí. Říkejme mu média.
 
-Problém je v tom, že prohlížeče renderují stránku dříve než jsou tyto prvky stažené. Pokud neznají velikost ani poměr stran médií, dopadne to tak, že se stránka vykresluje vícekrát. Pro uživatele to znamená nepříjemné „poskakování“ obsahu v momentě, kdy už například čte text.
+Problém je v tom, že prohlížeče vykreslují stránku dříve než jsou tyto prvky stažené. Pokud neznají velikost ani poměr stran médií, dopadne to tak, že se stránka vykresluje vícekrát. Pro uživatele to znamená nepříjemné „poskakování“ obsahu v momentě, kdy už například čte text.
 
-Takhle to vypadat nemá:
+Takhle to na webech vypadat nemá, ale skoro vždy vypadá:
 
 <div class="rwd-media">
   <video autoplay muted controls width="1600" height="900">
@@ -13,11 +13,11 @@ Takhle to vypadat nemá:
   </video>
 </div>
 
-V původním článku jsme na to šli přes různé hacky a sliboval jsem, že se blýská na lepší časy a snad to bude rovnou vestavěné v prohlížečích.
+V původním článku jsme na to šli přes různé hacky a sliboval jsem, že se blýská na lepší časy. Zmiňoval jsem, že to snad bude brzy rovnou vestavěné v prohlížečích.
 
 <!-- AdSnippet -->
 
-No a ony lepší časy přicházejí, protože, jak jste se mohli už dočíst [na Smashing Magazine](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/), prohlížeče pro nastavení poměru stran prvků v `<img>` používají (Chrome a Firefox) nebo používat začnou (Safari) atributy pro nastavení výšky a šířky.
+Ty lepší časy teď přicházejí, protože, jak jste se mohli už dočíst [na Smashing Magazine](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/) nebo slyšet [v podcastu](https://www.vzhurudolu.cz/podcast/165-podcast-na-dalku), prohlížeče pro nastavení poměru stran prvků `<img>` používají (Chrome a Firefox) nebo používat začnou (Safari) atributy pro nastavení výšky a šířky.
 
 Takhle to vypadat má:
 
@@ -27,6 +27,8 @@ Takhle to vypadat má:
       type="video/mp4">
   </video>
 </div>
+
+Zajímavé je, že nyní jde o řešení přímo na úrovni vykreslování v prohlížeče, takže se nepoužívá původně plánovaná [CSS vlastnost `aspect-ratio`](css-pomer-stran.md#aspect-ratio).
 
 ## Poměr stran obrázku nastavíte atributy `width` a `height` {#width-height}
 
@@ -44,17 +46,22 @@ U obrázků prostě vždy vyplňte atributy `width` a `height` u značky `<img>`
 Dále platí:
 
 * Pokud je obrázek fixních rozměrů, dejte do atributů pixelovou velikost, kterou má zabrat v layoutu.
-* Pokud je [obrázek pružný](pruzna-media.md), tzn. má v CSS nastavený atribut `width` nebo `height` na hodnoti `auto`), dejte do atributů poměr stran vycházející z reálné velikosti na nějakém populárním rozlišení.
+* Pokud je [obrázek pružný](pruzna-media.md), tzn. má v CSS nastavený atribut `width` nebo `height` na hodnotu `auto`), dejte do atributů poměr stran vycházející z maximální velikosti obrázků v responzivním layoutu.
 
 Pokud vám vadí, že to zatím nefunguje v Safari a starších prohlížečích, je potřeba znát také [alternativní metody](css-pomer-stran.md) pro nastavení poměru stran.
 
 ## Ukázka {#ukazka}
 
-Obrázek v následujícím CodePenu má nastaveno spoždění načítání, takže byste měli vidět neprve šedivý zástupný symbol. Po čase se vám načte zelený obrázek:
+Obrázek v následujícím CodePenu má nastaveno zpoždění načítání, takže byste měli vidět nejprve šedivý zástupný symbol. Po čase se vám načte zelený obrázek:
 
 CodePen: [codepen.io/e/WBRaPe](https://codepen.io/machal/pen/WBRaPe?editors=1100)
 
 Všimněte si, že v Chrome a Firefoxu vám layout celou dobu drží jako přibitý. No a pak se podívejte, že v CSS pro toto nepoužíváme žádné speciální triky. Prohlížeči prostě stačily atributy `width` a `height`.
+
+<div class="related" markdown="1">
+- [Poměr stran: alternativní metody](css-pomer-stran.md)
+- [Padding trik](padding-trik.md)
+</div>
 
 Pro pořádek ještě dodám dva jiné CodePeny:
 
@@ -91,11 +98,11 @@ Jak už bylo řečeno, všechny tři dnešní podstatné prohlížeče to umí n
 * Chrome vlastnost podporuje [od verze 79](https://chromestatus.com/feature/5695266130755584).
 * Safari ústy vývojáře deklaruje, že ji přidá do příštího [Tech Preview 99](https://twitter.com/smfr/status/1220051332767174656?s=20).
 
-Ostatní prohlížeče buď vycházejí z Chrome (Edge, Opera…) nebo jsou pro potřeby článku nerelevantní (V MSIE to už zasi nezapnou, na druhou stranu tenhle prohlížeč pozvolna odchází a na zařízeních s pomalým připojení se nevyskytuje.)
+Ostatní prohlížeče buď vycházejí z Chrome (Edge, Opera…) nebo jsou pro potřeby článku nerelevantní. V takovém MSIE to už asi nezapnou, na druhou stranu tenhle prohlížeč pozvolna odchází a na zařízeních s pomalým připojení se nevyskytuje.
 
 ## Problémy a nedořešenosti {#problemy}
 
-Jako každá nová metoda
+Jako každá nová metoda má i tahle zatím své mouchy. Dejte si pozor hlavně v případě použití následujících tří metod.
 
 ### Art direction {#problemy-art-direction}
 
@@ -121,11 +128,11 @@ S nativním lazy loadingem by „nativní poměr stran“ fungovat měl…
 
 …ale je zde jeden [bugísek v Chrome](https://bugs.chromium.org/p/chromium/issues/detail?id=1045745), který se hodí sledovat.
 
-Pokud nepoužíváte nativní líné načtení - je potřeba ošetřit přes aspect-ratio a ostatní metody
+Pokud nepoužíváte nativní líné načtení - je potřeba ošetřit přes `aspect-ratio` a ostatní metody
 
 → *Související: [Lazy loading obrázků a iframe](lazy-loading.md)*
 
-## Mimo obrázky {#problemy-mimo}
+## Nasazení mimo obrázky {#problemy-mimo}
 
 A co prvky `<video>`, `<iframe>`, `<object>` a další externí média? Tam by se poměr stran hodil také, že ano…?
 
@@ -135,7 +142,9 @@ Ostatní prvky jsou trochu jiné liga (dokumenty vkládané do dokumentu), takž
 
 ## Shrnutí {#shrnuti}
 
-Prohlížeče se teď tedy v případě značky `<img>` chovají tak, jak jsme asi dlouho všichni očekávali. Jak jsem říkal [v nedávném podcastu](https://www.vzhurudolu.cz/podcast/165-podcast-na-dalku), mnozí a mnohé z webařů a webařek si stavu, kdy byl poměr stran obrázků rozbitý, ani nevšimly. Pro ně se nic nemění.
+Prohlížeče se teď tedy v případě značky `<img>` chovají tak, jak jsme asi dlouho všichni očekávali.
+
+Jak jsem říkal [v nedávném podcastu](https://www.vzhurudolu.cz/podcast/165-podcast-na-dalku), mnozí z webařů a mnohé z webařek si stavu, kdy byl poměr stran obrázků rozbitý, ani nevšimly. Pro ně se nic nemění.
 
 Pro nás ostatní to znamená, že můžeme z kódu odstranit [padding trik](padding-trik.md) a další [hacky](css-pomer-stran.md). Alespoň ve většině případů, protože se bez nich nadále neobejdeme mimo obrázky.
 
