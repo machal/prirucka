@@ -1,10 +1,10 @@
 # Responzivní obrázky
 
-V responzivním designu máme na výběr poměrně hodně řešení možných problémů s obrázky. 
+V responzivním designu máme na výběr poměrně hodně řešení možných problémů s obrázky.
 
 Pojďme si nejprve udělat mapu těch problémů:
 
-- *Rychlost načítání*   
+- *Rychlost načítání*  
   Velký obrázek pro počítač je zbytečné posílat do mobilu. Datový objem je jeden z největších problémů bránících rychlému načtení.
 - *Retina displeje*  
   Pokud má displej dvojnásobnou a vyšší hustotu hardwarových pixelů, bude tam obyčejná bitmapa vypadat špatně. <span class="ebook-only">Znáte to z textu o <a href="zmeny-css-pixel.md">CSS pixelu</a>.</span><span class="web-only">Znáte to z textu o <a href="css-pixel.md">CSS pixelu</a>.</span>

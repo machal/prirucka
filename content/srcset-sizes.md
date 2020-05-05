@@ -2,11 +2,20 @@
 
 Nové atributy řeší potřebu autorů stránek zobrazovat v různých kontextech designu různé varianty obrázků.
 
-Změna kontextu v tomto případě nejčastěji vypadá jako změna layoutu pro jinou velikost obrazovky. Může ale jít také o zobrazení stránky na zařízeních s displeji typu Retina (různými poměry `device-pixel-ratio`). Do budoucna třeba ještě o změnu úrovně zoomu na stránce nebo uživatele na pomalém připojení. 
+Změna kontextu v může vypadat takto:
+
+1. Změna layoutu pro jinou velikost obrazovky.
+2. Zobrazení stránky na zařízeních s displeji typu Retina (různými poměry `device-pixel-ratio`).
+
+Do budoucna může jít třeba ještě o změnu úrovně zoomu na stránce nebo o kontext uživatelů na pomalém připojení. Zatím to ale, pokud vím, žádný prohlížeč takto nepoužívá.
 
 <!-- AdSnippet -->
 
-Na atributech `srcset` a `sizes` je hezké, že poměrně složité rozhodování, který obrázek ve které situaci použít, necháváme na prohlížeči. 
+Téma `srcset` a `sizes` je, jak brzy uvidíte, poměrně komplikované, takže je úplně nejlepší se tomu vyhnout. Následující článek by vám měl pomoci s výběrem řešení, ještě než se pustíte do tohoto.
+
+→ *Související: [Různé řešení vkládání obrázků na responzivních webech](responzivni-obrazky.md)*
+
+Ale zpět k našemu tématu. Na atributech `srcset` a `sizes` je hezké, že poměrně složité rozhodování, který obrázek ve které situaci použít, necháváme na prohlížeči.
 
 Jako autoři stránky mu jen řekneme, jaké varianty obrázku má k dispozici (`srcset`) a jak jsou veliké na jednotlivých [breakpointech layoutu](breakpointy.md) (`sizes`).
 
@@ -33,7 +42,11 @@ Prohlížeč vezme v potaz i aktuální `device-pixel-ratio`. Například na za�
 
 V potenciálu chytrého rozhodování prohlížeče vězí krása atributu `srcset`. Prohlížeč zváží všechny informace, které má o stavu stránky k dispozici a podle toho vybere nejvhodnější obrázek. Vy jako autoři jen vygenerujete dost variant a správně je popíšete. 
 
-Demo výše uvedeného kódu mám také na CodePenu. Nejlépe jej vyzkoušíte, když si zmenšíte okno ukázky, obnovíte stránku a pak budete okno postupně zvětšovat. [cdpn.io/e/WboGgE](https://codepen.io/machal/pen/WboGgE?editors=100)
+Demo výše uvedeného kódu mám také na CodePenu.
+
+CodePen: [cdpn.io/e/WboGgE](https://codepen.io/machal/pen/WboGgE?editors=100)
+
+Nejlépe jej vyzkoušíte, když si zmenšíte okno ukázky, obnovíte stránku a pak budete okno postupně zvětšovat. 
 
 
 ### Kolik variant obrázků vygenerovat?
@@ -74,6 +87,8 @@ Druhý deskriptor určuje připravenost souboru s obrázkem pro různé poměry 
 ```
 
 Tímto zápisem říkám, že `image@2x.png` má prohlížeč použít při `device-pixel-ratio` alespoň 2 a `image.png` ve všech hodnotách menších než 2. Když deskriptor neuvedete, výchozí je `1x`.
+
+Ve skutečnosti je to komplikovanější, protože prohlížeče si logiku za výběrem obrázků řeší samy. Zde například většina vybere obrázek `image@2x.png` už při `device-pixel-ratio` na hodnotě 1,5.
 
 Pojďme se teď ještě podívat na atribut `sizes`, který prohlížeči umožní vybírat nejen podle fyzických parametrů souborů s obrázky, ale i podle layoutu vaší stránky.
 
@@ -157,11 +172,11 @@ Takže celý zápis tagu `<img>` bude vypadat takto:
 ```html
 <img src="small_600.png"
   srcset="
-    small_600.png 600w, 
-    medium_1024.png 1024w, 
+    small_600.png 600w,
+    medium_1024.png 1024w,
     large_1600.png 1600w"
   sizes="
-    (min-width: 800px) calc((100vw - 2*8px) * 0.49), 
+    (min-width: 800px) calc((100vw - 2*8px) * 0.49),
     calc(100vw - 2*8px)"
   width="200" height="200" alt="…"  >
 ```
@@ -172,7 +187,7 @@ Pojďme si pro jistotu ještě shrnout celý zápis:
 2. V `srcset` máme seznam variant obrázku, které jsme předpřipravili a uložili na server.
 3. Atribut `sizes` říká: na šířkách okna od 800 pixelů výše bude mít obrázek velikost `calc((100vw - 2 * 8px) * 0.49)`. Ve všech ostatních případech – to znamená do 799 pixelů – pak `calc(100vw - 2 * 8px)`.
 
-Demo na CodePenu: [cdpn.io/e/azBmaX](https://codepen.io/machal/full/azBmaX?editors=110)
+CodePen: [cdpn.io/e/azBmaX](https://codepen.io/machal/full/azBmaX?editors=110)
 
 Nezapomínejte prosím na povinný atribut `alt`, který ocení vyhledávače a odečítače obrazovky pro zrakově hendikepované uživatele.
 
@@ -182,7 +197,7 @@ Doplňte i atribut `height`, který vylepší vykreslování stránky tím, že 
 
 Nedivím se samozřejmě žádným námitkám vůči estetice a zdánlivě zbytečné složitosti autorské práce s responzivními obrázky. Moje první reakce byly stejné. Když si ale zopakujeme, že informace z CSS prohlížeči v momentě parsování HTML nijak nepomohou, asi bychom došli k řešení stejnému nebo velmi podobnému. Pokud bychom jej tedy chtěli vymýšlet znovu, což nikomu nedoporučuji.
 
-V textu o [responzivních obrázcích](responzivni-obrazky.md) jsem zmiňoval i další alternativy. `<img srcset sizes>` ale považuji za výchozí řešení. Ta ostatní se hodí pro konkrétní a méně časté scénáře. 
+V textu o [responzivních obrázcích](responzivni-obrazky.md) zmiňuji i další alternativy.
 
 <div class="ebook-only" markdown="1">
   Pojďme si rozpitvat jednu z metod pro specifické situace – novou značku `<picture>`.
@@ -191,5 +206,3 @@ V textu o [responzivních obrázcích](responzivni-obrazky.md) jsem zmiňoval i 
 <div class="web-only" markdown="1">
   Podívejte se také na další možnosti jak zvládnout obrázky v responzivním designu: [Kompletní průvodce obrázky v responzivním designu](responzivni-obrazky.md).
 </div>
-
-

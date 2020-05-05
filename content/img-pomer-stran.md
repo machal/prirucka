@@ -28,7 +28,7 @@ Takhle to vypadat má:
   </video>
 </div>
 
-Zajímavé je, že nyní jde o řešení přímo na úrovni vykreslování v prohlížeče, takže se nepoužívá původně plánovaná [CSS vlastnost `aspect-ratio`](css-pomer-stran.md#aspect-ratio).
+Zajímavé je, že nyní jde o řešení přímo na úrovni vykreslování v prohlížeči, takže se nepoužívá původně plánovaná [CSS vlastnost `aspect-ratio`](css-pomer-stran.md#aspect-ratio).
 
 ## Poměr stran obrázku nastavíte atributy `width` a `height` {#width-height}
 
@@ -50,7 +50,7 @@ Dále platí:
 
 Pokud vám vadí, že to zatím nefunguje v Safari a starších prohlížečích, je potřeba znát také [alternativní metody](css-pomer-stran.md) pro nastavení poměru stran.
 
-## Ukázka {#ukazka}
+### Ukázka {#width-height-ukazka}
 
 Obrázek v následujícím CodePenu má nastaveno zpoždění načítání, takže byste měli vidět nejprve šedivý zástupný symbol. Po čase se vám načte zelený obrázek:
 

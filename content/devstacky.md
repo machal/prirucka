@@ -64,9 +64,8 @@ Mrkněme se i na několik předpřipravených stacků vyrobených v nejstarším
 
 Jen základy. Preprocesor LESS, Autoprefixer, a Browsersync. Viz dotčené řádky v [Gruntfile.js](https://github.com/machal/polaroid-example/blob/master/Gruntfile.js). [machal/polaroid-example](https://github.com/machal/polaroid-example)
 
-### DS-Grunt
-
-Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky česky zdokumentovaný. [danielstrelec/ds-grunt](https://github.com/danielstrelec/ds-grunt)
+* [danielstrelec/ds-grunt](https://github.com/danielstrelec/ds-grunt) – Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky česky zdokumentovaný. 
+* [htmlfactorycz/grunt-frontend-starter](https://github.com/htmlfactorycz/grunt-frontend-starter) – hezky zdokumentovaný pokročilý devstack od Vitalije Petráše.
 
 <!-- AdSnippet -->
 
