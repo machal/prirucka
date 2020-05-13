@@ -14,17 +14,17 @@ Dáme si rychlou ukázku řešení, které bude dobré pro většinu webů:
 }
 ```
 
-Podobně to funguje také u Google Fonts, pomocí parametru `display=`, což je v době psaní textu velká novinka:
+Podobně to funguje také u Google Fonts, pomocí parametru `display=`:
 
 ```html
 <link 
-  href="https://fonts.googleapis.com/css?family=Roboto&display=fallback"
+  href="https://fonts.googleapis.com/css2?family=Roboto&display=fallback"
   rel="stylesheet">
 ```
 
-Oba zápisy zajistí, aby prohlížeč čekal desetinu sekundy na stažení webfontu „Roboto“. Pokud to stihne, zobrazí texty rovnou tímto písmem. V opačném případě vykreslí obsah v systémovém písmu a Roboto se renderuje až po stažení potřebných souborů.
+Oba zápisy zajistí, aby prohlížeč čekal od momentu zpracování CSS desetinu sekundy na stažení webfontu „Roboto“. Pokud to stihne, zobrazí texty rovnou tímto písmem. V opačném případě vykreslí obsah v systémovém písmu a Roboto se renderuje až po stažení potřebných souborů.
 
-Ptáte se na rozdíl oproti výchozímu chování ve většině moderních prohlížečů? Na pomalých připojeních se text zobrazí skoro o tři vteřiny dříve.
+Ptáte se na rozdíl oproti výchozímu chování ve většině moderních prohlížečů? Na pomalých připojeních se text zobrazí většinou o tři vteřiny dříve.
 
 V článku dále následují detaily pro ty z vás, kteří máte více než jednu minutu času.
 
@@ -70,15 +70,33 @@ Po teoretické přípravě se můžeme pustit do toho hlavního, a totiž popis
 V následujícím grafu pracuji jen s prvními dvěma intervaly – blokování a náhrady. Interval selhání vždy následuje za nimi. Různé hodnoty deskriptoru mají různě dlouhé první dva intervaly:
 
 <figure>
-<img src="../dist/images/original/font-display-hodnoty.jpg" alt="font-display hodnoty">
+<img src="../dist/images/original/font-display-hodnoty.png" alt="font-display hodnoty">
 <figcaption markdown="1">
 *Hodnoty deskriptoru font-display*
 </figcaption>
 </figure>
 
+### font-display: block {#block}
+
+Dává prohlížeči k dispozici třísekundový interval blokování a pak nekonečný interval náhrady.
+
+Hodnota `block` odpovídá aktuálnímu chování většiny prohlížečů: Chrome, Firefoxu a Safari.
+
+<!-- AdSnippet -->
+
+Tohle nastavení by se mělo využívat k vykreslování kratších textů. Hlavně v případech, kdy vám záleží na tom, aby nedošlo k probliknutí systémového písma. Typicky třeba hlavní nadpisy stránky, když je webfont výrazně odlišný od fallbacku. Nebo pro vykreslování [ikonfontů](ikonfonty-vs-svg.md), pokud je ještě používáte.
+
+### font-display: swap {#swap}
+
+Zajistí velmi krátký interval blokování (obvykle `100ms` a méně) a nekonečný interval náhrady.
+
+Nějaké písmo je tedy kromě úvodní desetiny vteřiny vždy vidět. Nejdříve náhradní a po stažení pak zvolený webfont. Nevýhoda? I na rychlých připojeních často dojde k probliknutí náhradního písma.
+
+`swap` by se měl používat na kratší texty, ve kterých je důležité sdělení nevysázené příliš odlišným typem písma, například nadpisy článků nebo názvy produktů v detailu produktu na e-shopech.
+
 ### font-display: fallback {#fallback}
 
-Nařizuje velmi krátký blokující interval (obvykle `100ms`) následovaný krátkým intervalem náhrady (`3s`).
+Nařizuje velmi krátký blokující interval (obvykle `100ms`) následovaný dlouhým intervalem náhrady (doporučuje se `3s`, ale v praxi je myslím prakticky nekonečný).
 
 Jinými slovy: `100ms` se při vypnutém obsahu čeká na stažení fontu. Stihne se to? Po desetině vteřiny se zobrazí stažené písmo. Nestihne se to? Zobrazí se náhradní písmo. Pokud prohlížeč font nestihne zobrazit do dalších tří sekund, zůstane tam náhradní písmo navždy.
 
@@ -96,24 +114,6 @@ Toto nastavení se chová podobně jako `fallback`, takže 100ms „vidíme“ t
 
 Tahle hodnota je ideální opět pro delší texty, oproti `fallback` ale dáváme přednost stabilitě zobrazení. Tady prostě překreslení textu do staženého webfontu nenastane. Hodnota `optional` se hodí tam, kde je webfont opravu jen „nice to have“, čili vylepšení, které nic zásadního nepřináší.
 
-### font-display: swap {#swap}
-
-Zajistí velmi krátký interval blokování (obvykle `100ms` a méně) a nekonečný interval náhrady.
-
-Nějaké písmo je tedy kromě úvodní desetiny vteřiny vždy vidět. Nejdříve náhradní a po stažení pak zvolený webfont. Nevýhoda? I na rychlých připojeních často dojde k probliknutí náhradního písma.
-
-`swap` by se měl používat na kratší texty, ve kterých je důležité sdělení nevysázené příliš odlišným typem písma, například nadpisy článků nebo názvy produktů v detailu produktu na e-shopech.
-
-### font-display: block {#block}
-
-Dává prohlížeči k dispozici třísekundový interval blokování a pak nekonečný interval náhrady.
-
-Hodnota `block` odpovídá aktuálnímu chování většiny prohlížečů: Chrome, Firefoxu a Safari.
-
-<!-- AdSnippet -->
-
-Tohle nastavení by se mělo využívat k vykreslování kratších textů. Hlavně v případech, kdy vám záleží na tom, aby nedošlo k probliknutí systémového písma. Typicky třeba hlavní nadpisy stránky, když je webfont výrazně odlišný od fallbacku. Nebo pro vykreslování [ikonfontů](ikonfonty-vs-svg.md), pokud je ještě používáte.
-
 ### font-display: auto {#auto}
 
 Tady šéfuje prohlížeč. Strategii zobrazení fontu určuje on. Takže jsme v situaci jejich výchozího nastavení, popsané o pár odstavců výše, které většinou odpovídá hodnotě `block`.
@@ -125,8 +125,8 @@ Ačkoliv je CSS vlastnost `font-display` použitelná už přes rok, poměrně d
 Při vkládání odkazu, který generuje CSS, je potřeba jen uvést parametr `display`:
 
 ```html
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+<link 
+  href="https://fonts.googleapis.com/css2?family=Roboto&display=fallback"
   rel="stylesheet">
 ```
 

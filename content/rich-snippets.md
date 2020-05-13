@@ -1,6 +1,6 @@
 # Strukturovaná data (aneb Rich Snippets): Kódem za atraktivnější výsledky vyhledávání pro váš web
 
-Strukturovaná data (nebo také „strukturované úryvky“ či „Rich Snippets“) umí zajistit vizuálně zajímavý formát zobrazení ve výsledcích vyhledávání Google.
+Strukturovaná data (nebo také „strukturované úryvky“) umí zajistit vizuálně zajímavý formát zobrazení ve výsledcích vyhledávání Google – „Rich Snippets“.
 
 Zjednodušeně řečeno do stránky přidáte nějaký kus kódu ve formátu JSON-LD, jako v tomto případě strukturovaný popis události…
 
@@ -23,11 +23,12 @@ Zjednodušeně řečeno do stránky přidáte nějaký kus kódu ve formátu JSO
 </figcaption>
 </figure>
 
-Pojďme ale od tohoto zjednodušeného příkladu více do hloubky.
+Pojďme ale od tohoto triviálního příkladu více do hloubky.
 
 ## Obsah {#toc}
 
 <div markdown="1" id="toc" class="f-6">
+
 - [Typy strukturovaných dat](#typy)
 - [Vložení do stránky](#vlozeni)
 - [Příklad s událostí](#priklad)
@@ -36,6 +37,7 @@ Pojďme ale od tohoto zjednodušeného příkladu více do hloubky.
 - [Dynamické vložení dat](#dynamicky)
 - [A co Gmail?](#gmail)
 - [Závěr](#zaver)
+
 </div>
 
 Strukturovaná data jsou standardizovaný formát pro poskytování informací o stránce a pro třídění obsahu stránky. Vyhledávání Google také strukturovaná data používá k aktivaci zvláštních funkcí a vylepšení výsledků vyhledávání.
@@ -46,7 +48,7 @@ Zároveň jde z pohledu HTML kódu o jeden z nejsilnějších nástrojů pro zí
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=rv_HgfAJRec">Zvýší vám rich snippety návštěvnost?</a> ~ Tomáš Bukovský: Jaký efekt můžete po nasazení čekat?
-</p
+</p>
 
 ## Jaké typy strukturovaných dat můžeme do zdrojáku vložit? {#typy}
 
@@ -73,7 +75,7 @@ Do tabulky jsem vybral ty nejzajímavější „rich snippety“. Odkazy v tabul
 | [Logo](https://developers.google.com/search/docs/data-types/logo)                     | \+           | Logo firmy nebo organizace.                                                                               |
 | [Movie](https://developers.google.com/search/docs/data-types/movie)                   |              | Informace o filmu, se kterými je možné se dostat do „Movie Carousel“.                                     |
 | [Product](https://developers.google.com/search/docs/data-types/product)                         | \+           | Produkt, jeho název, cena a dostupnost.                                                                            |
-| [Q\&A](https://developers.google.com/search/docs/data-types/qapage)                             |              | Otázky a odpovědi. Podobné zobrazení jako u FAQ.                                                                   |
+| [Q&amp;A](https://developers.google.com/search/docs/data-types/qapage)                             |              | Otázky a odpovědi. Podobné zobrazení jako u FAQ.                                                                   |
 | [Recipe](https://developers.google.com/search/docs/data-types/recipe)                           | \+           | Recept, včetně obrázku, videa nebo délky trvání. Zobrazuje se ve zvláštním karuselu.                               |
 | [Review snippet](https://developers.google.com/search/docs/data-types/review-snippet)           | \+           | Shrnutí uživatelských recenzí. Lze používat u typů Book, Recipe, Movie, Product, Software App, and Local business. |
 | [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox) | \+           | Vyhledávání na webu přímo ze stránky výsledků Googlu.                                                              |
