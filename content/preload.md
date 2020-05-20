@@ -39,43 +39,129 @@ Už na prvním obrázku je například jedna nevýhoda vidět – díky tomu, ž
 
 Stále častěji totiž potkávám weby, kde byla aplikována tzv. Babicova přednačítací metoda: „Když už nevíš, co s tím, dej tam preload.“ Opatrně s tím.
 
-## atribut as - možnosti - js, webfonty…
-## atribut type - mime type
-## crossorigin - u webfontů nutný
-## atribut media - media queries
-## atd
-## http hlavička
-## JavaScript
-## prohlížeče
+## Atribut `as` – určení prioritizace {#atribut-as}
+
+Tento nepovinný atribut vám doporučuji k preload přidávat vždy. Přednačtené prvky stránky používající atribut `as` totiž budou mít stejnou prioritu jako typ zdroje, který je uvedený v hodnotě.
+
+Například `preload as="style"` získá nejvyšší prioritu, zatímco `as="script"` získá nízkou nebo střední prioritu. Tyto prvky pak také podléhají stejným zásadám [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) a do prohlížeče dorazí se správnou hlavičkou `Accept`.
+
+Možných hodnot atributu as je celá řada. Vybírám zde ty nejvíce použitelné:
+
+<div class="rwd-scrollable f-6"  markdown="1">
+
+| Hodnota   | Typ souboru                           |
+|-----------|---------------------------------------|
+| audio     | Audio, typicky v prvku `<audio>`.     |
+| document  | HTML dokument, typicky `<frame>` nebo `<iframe>` ([bug v Chrome](https://bugs.chromium.org/p/chromium/issues/detail?id=593267)). |
+| embed     | Prvek `<embed>`.                      |
+| fetch     | Prvek, který použijeme pomocí fetch nebo XHR, např. JSON soubor. |
+| font      | Soubor s fontem, např. WOFF2.         |
+| image     | Obrázek.                              |
+| object    | Prvek `<object>`.                     |
+| script    | Soubor s JavaScriptem.                |
+| style     | CSS soubor.                           |
+| worker    | Soubor s JavaScriptovým web workerem. |
+| video     | Video soubor, typicky v prvku `<video>`. |
+
+</div>
+
+Všechny možné hodnoty atributu `as` jsou [ve specifikaci](https://fetch.spec.whatwg.org/#concept-request-destination).
+
+## Atribut `type` - mime type {#atribut-type}
+
+Nepovinný atribut, který umožní prohlížeči zvážit, zda daný typ prvku podporuje a tedy zda jej chce stahovat nebo ne.
+
+Vezměme příklad:
+
+```html
+<link rel="preload" href="video.webm" as="video" type="video/webm">
+```
+
+Soubor `video.webm` přednačtou díky atributu `type="video/webm"` pouze prohlížeče, které formát WEBM zvládají, tedy všechny kromě Safari.
+
+## Atribut `crossorigin` – pravidla pro CORS, u webfontů nutné {#atribut-crossorigin}
+
+Pokud máte na webu nastaveno [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), můžete u `<link rel="preload">` uvést atribut `crossorigin`. Toto platí hlavně pro případy, kdy stahujete prvky z jiné domény než je ta, odkud se stahuje dokument.
+
+V případě přednačtení webfontů ale platí, že byste tento atribut [měli uvádět](https://drafts.csswg.org/css-fonts/#font-fetching-requirements), i když jsou soubory stahované ze stejné domény. Pokud byste `crossorigin` neuvedli, stáhnou se soubory s fonty dvakrát. Takže vždy takto:
+
+```html
+<link rel="preload" href="font-1.woff2" as="font" type="font/woff2" crossorigin>
+```
+
+## Atribut media - Media Queries {#atribut-media}
+
+Může se vám stát, že některý soubor potřebujete přednačíst jen v určitém responzivním nebo klidně jiném kontextu. Pak neváhejte využít volitený atribut `media`:
+
+```html
+<link rel="preload" as="image" href="obrazek.jpg" media="(min-width: 640px)">
+```
+
+Zde můžeme ukončit téma atributů a podívat se úplně jinam. Vlastně úplně mimo HTML.
+
+## HTTP hlavička {#http-hlavicka}
+
+Občas se hodí přidávat informace o dokumentu už rovnou na backendu, bez nutnosti zásahu do HTML. Je tudíž dobré vědět, že v HTTP hlavička vás ráda uvítá i s těmito potřebami.
+
+Následuje bambilión různých příkladů:
+
+```text
+Link: <https://example.com/font.woff2>; rel=preload; as=font; type="font/woff2"
+Link: <https://example.com/app/script.js>; rel=preload; as=script
+Link: <https://example.com/logo-hires.jpg>; rel=preload; as=image
+Link: <https://fonts.example.com/font.woff2>; rel=preload; as=font; crossorigin; type="font/woff2"
+```
+
+## JavaScriptem a dynamicky {#js}
+
+Jestliže se vám zachtělo přidávat `<link rel="preload">` naopak až při zpracování stránky na frontendu, JavaScriptem, možnosti tady jsou:
+
+```html
+<script>
+  var res = document.createElement("link");
+  res.rel = "preload";
+  res.as = "style";
+  res.href = "main.css";
+  document.head.appendChild(res);
+</script>
+```
+
+Uvedený kód do DOMu přidá následující:
+
+```html
+<link rel="preload" href="main.css" as="style">
+```
+
+### Detekce podpory
+
+Když už jsme u JS, mohla by se vám také hodit detekce podpory `<link rel="preload">`…
+
+```js
+var preloadSupported = function() {
+  var link = document.createElement('link');
+  var relList = link.relList;
+  if (!relList || !relList.supports)
+    return false;
+  return relList.supports('preload');
+}
+```
+
+…čímž se dostáváme k tématu podpory v prohlížečích.
+
+## Podpora v prohlížečích {#prohlizece}
+
+Kromě Exploreru zatím podle [CanIUse](https://caniuse.com/#feat=link-rel-preload) přednačtení nepodporuje Firefox. Podle [Bugzilly](https://bugzilla.mozilla.org/show_bug.cgi?id=1222633) vlastně trochu podporuje, ale nechávají to skryté za vlaječkovým nastavením. Takže v praxi nepodporuje. 
+
+Nemělo by to vadit, protože hrátky s přednačtením považuji za klasických příklad progressive enhancement, dobrovolného vylepšení uživatelského prožitku.
+
+<!-- TODO Caniuse obrázek -->
+
+
 ## možné scénáře
 
 <!-- 
 
-* atribut as - možnosti - js, webfonty…
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content - "what types"
-    * Preloaded resources using the “as” attribute will have the same resource priority as the type of resource they are requesting. For example, preload as=“style” will get the highest priority while as=”script” will get a low or medium priority. These resources are also subject to the same CSP policies (e.g script is subject to script-src). -medium
-    * https://fetch.spec.whatwg.org/#concept-request-destination
-* atribut type - mime type
-    * the browser will use the type attribute value to work out if it supports that resource
-    * viz příklad https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content
-* crossorigin - u webfontů nutný
-    * MDN: Because of various reasons, these have to be fetched using anonymous mode CORS
-    * https://drafts.csswg.org/css-fonts/#font-fetching-requirements
-* atribut media - media queries
-    * Responsive loading — <link rel=preload as=image href=“someimage.jpg" media="(max-width: 600px)">
-* atd
-    * Unused preloads trigger a console warning in Chrome, ~3 seconds after onload
-    *  Ensure you’re adding a crossorigin attribute when fetching fonts using preload otherwise they will be double downloaded.  - medium
-* http hlavička
-    * Link: <https://example.com/other/styles.css>; rel=preload; as=style
-    * https://www.w3.org/TR/preload/#introduction
-* JavaScript
-    * preload: https://www.w3.org/TR/preload/#example-1-using-markup
-    * detekce : TODO
-* prohlížeče
-    * https://caniuse.com/#feat=link-rel-preload
-        * firefox, IE ne
-* možné scénáře
+* možné scénáře* 
     * use link[rel=preload] to preload your critical fonts
     * next.js/amp + async
     * preloading their header image - Treebo
@@ -83,6 +169,7 @@ Stále častěji totiž potkávám weby, kde byla aplikována tzv. Babicova pře
     * (už bylo) Responsive loading — <link rel=preload as=image href=“someimage.jpg" media="(max-width: 600px)">
     * dále http://yoavweiss.github.io/link_htmlspecial_16/#53
     * spuštění na přání https://www.w3.org/TR/preload/#early-fetch-and-application-defined-execution
-
+* atd
+    * Unused preloads trigger a console warning in Chrome, ~3 seconds after onload
 
  -->

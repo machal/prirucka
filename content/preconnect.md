@@ -61,6 +61,12 @@ Link: <https://www.example.com/>; rel=preconnect
 Link: <https://www.example.com/>; rel=dns-prefetch
 ```
 
+Například CSS soubory přicházející z Google Fonts zrychlují následujícím způsobem spojení na doménu, ze které přicházejí soubory s fonty:
+
+```text
+link: <https://fonts.gstatic.com>; rel=preconnect; crossorigin
+```
+
 ## Kdy preconnect použít a osvědčené postupy  {#best-practices}
 
 Velmi často se vývojářky a vývojáři dostanou k nápadu na použití preconnect radami z nástroje [Lighthouse](lighthouse.md). Ten obvykle hlásí něco jako „Preconnect to required origins“ nebo „K potřebným zdrojům se připojujte předem“.
