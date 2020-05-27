@@ -28,7 +28,11 @@ Nečekejte od téhle techniky kdovíjaké zázraky, ale určitě je dobré ji zn
 
 <!-- AdSnippet -->
 
-Pojďme to probrat nejprve z technického pohledu.
+Preload se občas zaměňuje s jinou užitečnou meta značkou `<link rel="preload">`. O té ale píšeme na jiném místě.
+
+→ *Související: [Preload: přednačtení prvku stránky](preload.md)*
+
+Zpět k `preconnect`. Pojďme to probrat nejprve z technického pohledu.
 
 ## Preconnect a dns-prefetch technicky {#technicky}
 

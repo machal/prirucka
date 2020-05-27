@@ -34,6 +34,7 @@
 - [Lazy loading: jak na něj?](lazy-loading-obrazku.md)
 - [Lazy loading: knihovna MiniLazyload](https://www.vzhurudolu.cz/blog/148-minilazyload)
 - [Meta značky preconnect & dns-prefetch](preconnect.md)
+- [Meta značka preload](preload.md)
 - [CSS optimalizace](css-optimalizace.md)
 - [CSS kritické styly](https://www.vzhurudolu.cz/blog/35-critical-css)
 - [Poměr stran obrázků](img-pomer-stran.md)

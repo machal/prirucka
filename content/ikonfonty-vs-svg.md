@@ -58,7 +58,7 @@ Ano, chápete mě správně: Pohledem člověka, který pomáhá zrychlovat weby
 U zmíněného e-shopu by přechodem na SVG šel prožitek při vykreslování stránky šel vylepšit následovně:
 
 - Logo vložit přímo `<svg>` v HTML.
-- Kritické ikony v hlavičce do malého externího SVG sprite, který bude mít nastavený preload.
+- Kritické ikony v hlavičce do malého externího SVG sprite, který bude mít nastavený [preload](preload.md).
 - Ostatní ikony do většího externího SVG sprite.
 
 S SVG prostě můžu být kreativní. U ikonfontu maximálně dalšími hacky vylepšuji jeden velký hack.

@@ -2,11 +2,13 @@
 
 Preload je deklarace, které vyvolává dřívější stažení prvku stránky a v případě JavaScriptu odděluje stažení od spuštění.
 
-Vezměme jednoduchý příklad s webfonty. Pravděpodobně jich v CSS máme nalinkováno více. Dva konkrétní soubory včak chceme stáhnout s vyšší prioritou. Uděláme to takhle:
+Vezměme jednoduchý příklad s webfonty. Můžeme jich v CSS mít nalinkováno více. Dva konkrétní soubory včak chceme stáhnout s vyšší prioritou. Uděláme to takhle:
 
 ```html
-<link rel="preload" href="font-1.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="font-1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font-1.woff2"
+  as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font-1.woff2"
+  as="font" type="font/woff2" crossorigin>
 ```
 
 Prohlížeč těmto dvěma souborům zvýší prioritu stažení. Ve vodopádu průběhu stahování prvků ze stránky to bude vypadat jako na následujícím obrázku.
@@ -18,7 +20,7 @@ Prohlížeč těmto dvěma souborům zvýší prioritu stažení. Ve vodopádu p
 </figcaption>
 </figure>
 
-Díky tomuto triku pak dojde k rychlejšímu zobrazení písem ve správném fontu na důležitých místech stránky:
+Díky tomuto triku pak dojde k rychlejšímu zobrazení písem ve správném fontu na důležitých místech stránky. Například následovně:
 
 <figure>
 <img src="../dist/images/original/preload-filmstrip-ft.png" alt="Filmstrip Webpagetestu od Financial Times">
@@ -27,11 +29,35 @@ Díky tomuto triku pak dojde k rychlejšímu zobrazení písem ve správném fon
 </figcaption>
 </figure>
 
-Preload je užitečná pokročilá technika, kterou podporují všechny prohlížeče kromě Firefoxu a Internet Exploreru. Dejme ale důraz na slovo *pokročilá*.  
+O čem se v článku budeme bavit?
 
-## Opatrně s tím
+## Obsah {#obsah}
 
-Ve zkušených rukou je preload užitečná věc. Raději ale upozorním na to, že jako v mnoha jiných případech je to dobrý sluha, ale zlý pán.
+<div id="toc" class="f-6" markdown="1">
+
+- [Atribut `as` – určení prioritizace](#atribut-as)
+- [Atribut `type` - mime type](#atribut-type)
+- [Atribut `crossorigin` – pravidla pro CORS, u webfontů nutné](#atribut-crossorigin)
+- [Atribut media - Media Queries](#atribut-media)
+- [HTTP hlavička](#http-hlavicka)
+- [JavaScriptem a dynamicky](#javascriptem-a-dynamicky-js)
+- [Detekce podpory](#detekce)
+- [Podpora v prohlížečích](#prohlizece)
+- [Možné scénáře použití](#pouziti)
+
+</div>
+
+Preload se občas zaměňuje s jinou užitečnou meta značkou `<link rel="preconnect">`. O té ale píšeme na jiném místě.
+
+→ *Související: [Preconnect a dns-prefetch: Přednavázání spojení](preconnect.md)*
+
+Preload je užitečná pokročilá technika, kterou podporují všechny prohlížeče kromě (zatím ještě) Firefoxu a (bohužel už napořád) Internet Exploreru. Dejme ale důraz na slovo *pokročilá*.  
+
+## Opatrně s tím {#opatrne}
+
+Ve zkušených rukou může být preload silná zbraň věc. Raději ale upozorním na to, že jako v mnoha jiných případech je to dobrý sluha, ale zlý pán.
+
+<!-- AdSnippet -->
 
 Dokud si nejste zcela jistí, co děláte, s preloadem si raději nehrajte. Ono totiž porušení přirozeného vodopádu stahování frontendových souborů může být ke škodě.
 
@@ -41,17 +67,19 @@ Stále častěji totiž potkávám weby, kde byla aplikována tzv. Babicova pře
 
 V detekci zbytečných preloadů může pomoci sledování konzole prohlížeče. Chrome totiž hlásí nevyužité přednačtení:
 
-> The resource … was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.
+> The resource (…) was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.
 
-Tato informativní hláška se zobrazí zhruba [3 vteřiny](https://github.com/GoogleChromeLabs/preload-webpack-plugin/issues/8#issuecomment-277105884) po události [Load](load.md). Je pravděpodobné, že jde o zbytečný `<link rel="preload">`.
+Tato informativní hláška se zobrazí zhruba [3 vteřiny](https://github.com/GoogleChromeLabs/preload-webpack-plugin/issues/8#issuecomment-277105884) po události [Load](load.md). U takto označených zdrojů je pravděpodobné, že jde o zbytečný `<link rel="preload">`.
 
 ## Atribut `as` – určení prioritizace {#atribut-as}
 
-Tento nepovinný atribut vám doporučuji k preload přidávat vždy. Přednačtené prvky stránky používající atribut `as` totiž budou mít stejnou prioritu jako typ zdroje, který je uvedený v hodnotě.
+Tento nepovinný atribut vám doporučuji k preload přidávat vždy. Pomohou prohlížeči určit, o jaký prvek se jedná. 
+
+Přednačtené prvky stránky používající atribut `as` totiž budou mít stejnou prioritu jako typ zdroje, který je uvedený v hodnotě.
 
 Například `preload as="style"` získá nejvyšší prioritu, zatímco `as="script"` získá nízkou nebo střední prioritu. Tyto prvky pak také podléhají stejným zásadám [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) a do prohlížeče dorazí se správnou hlavičkou `Accept`.
 
-Možných hodnot atributu as je celá řada. Vybírám zde ty nejvíce použitelné:
+Možných hodnot atributu `as` je celá řada. Vybírám zde ty nejvíce použitelné:
 
 <div class="rwd-scrollable f-6"  markdown="1">
 
@@ -66,7 +94,7 @@ Možných hodnot atributu as je celá řada. Vybírám zde ty nejvíce použitel
 | object    | Prvek `<object>`.                     |
 | script    | Soubor s JavaScriptem.                |
 | style     | CSS soubor.                           |
-| worker    | Soubor s JavaScriptovým web workerem. |
+| worker    | Soubor s javascriptovým web workerem. |
 | video     | Video soubor, typicky v prvku `<video>`. |
 
 </div>
@@ -80,34 +108,39 @@ Nepovinný atribut, který umožní prohlížeči zvážit, zda daný typ prvku 
 Vezměme příklad:
 
 ```html
-<link rel="preload" href="video.webm" as="video" type="video/webm">
+<link rel="preload" href="video.webm"
+  as="video" type="video/webm">
 ```
 
-Soubor `video.webm` přednačtou díky atributu `type="video/webm"` pouze prohlížeče, které formát WEBM zvládají, tedy všechny kromě Safari.
+Soubor `video.webm` přednačtou díky atributu `type="video/webm"` pouze prohlížeče, které formát WEBM zvládají, tedy všechny kromě Exploreru a Safari.
 
 ## Atribut `crossorigin` – pravidla pro CORS, u webfontů nutné {#atribut-crossorigin}
 
 Pokud máte na webu nastaveno [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), můžete u `<link rel="preload">` uvést atribut `crossorigin`. Toto platí hlavně pro případy, kdy stahujete prvky z jiné domény než je ta, odkud se stahuje dokument.
 
-V případě přednačtení webfontů ale platí, že byste tento atribut [měli uvádět](https://drafts.csswg.org/css-fonts/#font-fetching-requirements), i když jsou soubory stahované ze stejné domény. Pokud byste `crossorigin` neuvedli, stáhnou se soubory s fonty dvakrát. Takže vždy takto:
+<!-- AdSnippet -->
+
+V případě přednačtení webfontů ale platí, že byste tento atribut [měli uvádět vždy](https://drafts.csswg.org/css-fonts/#font-fetching-requirements) – i když jsou soubory stahované ze stejné domény. Pokud byste `crossorigin` neuvedli, stáhnou se soubory s fonty dvakrát. Takže fonty vždy přednačítejte takto:
 
 ```html
-<link rel="preload" href="font-1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font-1.woff2"
+  as="font" type="font/woff2" crossorigin>
 ```
 
 ## Atribut media - Media Queries {#atribut-media}
 
-Může se vám stát, že některý soubor potřebujete přednačíst jen v určitém responzivním nebo klidně jiném kontextu. Pak neváhejte využít volitený atribut `media`:
+Může se vám stát, že některý soubor potřebujete přednačíst jen v určitém responzivním (nebo klidně jiném) kontextu [Media Queries](css3-media-queries.md). Pak neváhejte využít volitený atribut `media`:
 
 ```html
-<link rel="preload" as="image" href="obrazek.jpg" media="(min-width: 640px)">
+<link rel="preload" as="image" href="obrazek.jpg"
+  media="(min-width: 640px)">
 ```
 
 Zde můžeme ukončit téma atributů a podívat se úplně jinam. Vlastně úplně mimo HTML.
 
 ## HTTP hlavička {#http-hlavicka}
 
-Občas se hodí přidávat informace o dokumentu už rovnou na backendu, bez nutnosti zásahu do HTML. Je tudíž dobré vědět, že v HTTP hlavička vás ráda uvítá i s těmito potřebami.
+Občas se hodí přidávat informace o dokumentu už rovnou na backendu, bez nutnosti zásahu do HTML. Je tudíž dobré vědět, že v do HTTP hlavičky se toho vejde…
 
 Následuje bambilión různých příkladů:
 
@@ -138,7 +171,9 @@ Uvedený kód do DOMu přidá následující:
 <link rel="preload" href="main.css" as="style">
 ```
 
-### Detekce podpory
+Ptáte-li se, k čemu by vám bylo přednačtení vkládáné dynamicky až javascriptem, pak si uvědomme, že preload vždy vyvolává stažení souboru a je mu v zásadě jedno, kdy to udělá.
+
+## Detekce podpory {#detekce}
 
 Když už jsme u JS, mohla by se vám také hodit detekce podpory `<link rel="preload">`…
 
@@ -156,9 +191,9 @@ var preloadSupported = function() {
 
 ## Podpora v prohlížečích {#prohlizece}
 
-Kromě Exploreru zatím podle [CanIUse](https://caniuse.com/#feat=link-rel-preload) přednačtení nepodporuje Firefox. Podle [Bugzilly](https://bugzilla.mozilla.org/show_bug.cgi?id=1222633) vlastně trochu podporuje, ale nechávají to skryté za vlaječkovým nastavením. Takže v praxi nepodporuje. 
+Kromě Exploreru zatím podle [CanIUse](https://caniuse.com/#feat=link-rel-preload) přednačtení nepodporuje Firefox. Podle [Bugzilly](https://bugzilla.mozilla.org/show_bug.cgi?id=1222633) vlastně trochu podporuje, ale nechávají to skryté za vlaječkovým nastavením. Michal Špaček ale objevil, že se to ale brzy může změnit a na preload se můžeme [těšit i ve Firefoxu](https://groups.google.com/forum/m/#!msg/mozilla.dev.platform/MShUZ4VTa6s/E4XFYfL5AQAJ).
 
-Nemělo by to vadit, protože hrátky s přednačtením považuji za klasických příklad progressive enhancement, dobrovolného vylepšení uživatelského prožitku.
+Nemělo by to vadit, protože hrátky s přednačtením považuji za klasických příklad [progressive enhancement](https://www.zdrojak.cz/clanky/graceful-degradation-vs-progressive-enhancement/), dobrovolného vylepšení uživatelského prožitku.
 
 <figure>
 <img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1/caniuse-embed/static/link-rel-preload-1590381119841.png" alt="Podpora preload v prohlížečích">
@@ -169,16 +204,20 @@ Nemělo by to vadit, protože hrátky s přednačtením považuji za klasických
 
 ## Možné scénáře použití {#pouziti}
 
+Vybral jsem pár konkrétních příkladů, kdy se `<link rel="preload">` může hodit. Jen tak, pro inspiraci.
+
 ### Přednačtení kritických fontů {#pouziti-font}
 
-O použití pro potřeby webových fontů se v článku několikrát otíráme:
+O použití pro potřeby zrychlení webových fontů se v článku několikrát otíráme:
 
 ```html
-<link rel="preload" href="font-1.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="font-2.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font-1.woff2"
+  as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font-2.woff2"
+  as="font" type="font/woff2" crossorigin>
 ```
 
-Je ale dobré zdůraznit, že se tímto soubory s webfonty dostanou prioritou stahování ještě před naše CSS a zpozdí nám tím mírně [metriku FCP](metriky-fcp.md).
+Je ale dobré ještě jednou zdůraznit, že se tímto soubory s webfonty dostanou prioritou stahování ještě před naše CSS a zpozdí nám tím mírně [metriku FCP](metrika-fcp.md).
 
 Proto bychom takto neměli zvýhodňovat všechny řezy webfontů, ale jen ty opravdu podstatné právě pro první vykreslení stránky.
 
@@ -218,12 +257,13 @@ Web Treebo takto vykreslovací metriky zlepšil o 1 vteřinu. Píše to Addy Osm
 
 ### Asynchronní stažení CSS {#pouziti-async-css}
 
-Občas se může hodit soubory se styly načítat asynchronně, například při nějaké vlastní implementaci kritického CSS. 
+Občas se může hodit soubory se styly načítat asynchronně, například při nějaké vlastní implementaci [kritického CSS](https://www.vzhurudolu.cz/blog/35-critical-css).
 
 Preload tuto vlastnost nabízí díky tomuto elegantnímu triku:
 
 ```html
-<link rel="preload" href="style.css" onload="this.rel=stylesheet”>
+<link rel="preload" href="style.css"
+  onload="this.rel=stylesheet”>
 ```
 
 ### Spuštění JS definované vývojářem, nikoliv prohlížečem {#pouziti-spusteni-js}
@@ -234,7 +274,9 @@ Další hezký příklad využití jsem našel [ve specifikaci](https://www.w3.o
 <script>
   function preloadFinished(e) { ... }
 </script>
-<link rel="preload" href="app.js" as="script" onload="preloadFinished()">
+
+<link rel="preload" href="app.js"
+  as="script" onload="preloadFinished()">
 ```
 
 V tomto případě je spuštění nějakého kódu navázáno na dokončení stahování (`onload`). Spouštět však můžeme, kdykoliv si sami definujeme. Nemusíme prostě nechat čas spuštění přednačteného JavaScriptu na prohlížeči.
@@ -257,6 +299,13 @@ function runScript(src) {
 }
 ```
 
+Vysvětlení je prosté:
+
+- Funkce `downloadScript()` do DOMu přidá `<link rel="preload">` a tudíž vyvolá stažení prvku.
+- Funkce `runScript()` do DOMu přidá [prvek `<script>`](html-script.md) a tedy vyvolá spuštění skriptu.
+
 Tím jsme vyčerpal své vědomosti o `<link rel="preload">`. Budu rád za každý váš tip, trik nebo připomínku v komentářích.
 
-Preload může být výborná věc k doladění rychlosti vašeho webu, ale jak už jsem napsal – nepoužívejte jej bezhlavě a dobře testujte.
+Preload může být výborná věc k doladění rychlosti vašeho webu, ale jak už jsem napsal – nepoužívejte jej bezhlavě a dobře testujte své experimenty.
+
+<!-- AdSnippet -->
