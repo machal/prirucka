@@ -2,7 +2,30 @@
 
 Nedávno jsem na Vzhůru dolů publikoval [text o nastavení poměru stran](css-pomer-stran.md) pro obrázky, video, iframy a další obsah vkládaný do HTML zvenčí. Říkejme mu média.
 
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=zmkIvMSKU8U">Obrázky (IMG v HTML): Poměr stran jednoduše</a> ~ Zjednodušený obsah článku ve videu.
+</p>
+
 Problém je v tom, že prohlížeče vykreslují stránku dříve než jsou tyto prvky stažené. Pokud neznají velikost ani poměr stran médií, dopadne to tak, že se stránka vykresluje vícekrát. Pro uživatele to znamená nepříjemné „poskakování“ obsahu v momentě, kdy už například čte text.
+
+## Před responzivním designem to bylo v pořádku {#pred-rwd}
+
+Jak píše Jakub Vrána v komentářích:
+
+> Používat atributy `width` `height` jsem doporučoval už před dvaceti lety přesně z tohohle důvodu. To se na to postupně nějak zapomnělo?
+
+Nezapomnělo. Přišel totiž přišel [responzivní design](https://www.vzhurudolu.cz/responzivni-design) a [pružné obrázky](pruzna-media.md):
+
+```css
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+Díky `height:auto`, které přebilo parametr `height` z HTML, přestaly být prohlížeče schopné spočítat skutečnou výšku v responzivním layoutu.
+
+Takže uvádět atributy v HTML dříve stačilo, pak díky responzivnímu designu přestalo stačit a dnes prohlížeč mění chování, aby to zase stačil mohlo. A o tom posledním kroku je tento článek.
 
 Takhle to na webech vypadat nemá, ale skoro vždy vypadá:
 
