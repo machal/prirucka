@@ -64,7 +64,8 @@ Metriky zatím většinou vznikají syntetickým měřením. RUM nástroje jsou 
 
 Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatovali metriky všechny a lpěli na nich. Zkusím vám na závěr doporučit jednoduchou strategii:
 
-- Hlídejte si hlavně Lighthouse skóre pro oblast Performace, které zobrazuje také PageSpeed Insight. [Po nedávné aktualizaci](https://www.vzhurudolu.cz/blog/112-metriky-cile) se totiž skládá ze všech významných renderovacích metrik.
+- Zaměřte se zejména na metriky obsažené ve [Web Vitals](web-vitals.md): LCP, FID a CLS.
+- Dále si hlídejte [Lighthouse skóre](metrika-lps.md) pro oblast Performace, které zobrazuje také [PageSpeed Insights](pagespeed-insights.md).
 - V dlouhodobém horizontu usilujte o zlepšení v metrikách od reálných uživatelů. Nejlépe je získáte od Chrome UX Reportu, odkud je umí vytáhnout [PageSpeed Insights](pagespeed-insights.md).
 - Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a marketéry.
 - Pokud potřebujete optimalizovat, dívejte se do časové osy vykreslování v prohlížeči. Buď v Chrome DevTools nebo WebpageTest.org. Viz můj [článek o nástrojích](rychlost-nastroje.md).

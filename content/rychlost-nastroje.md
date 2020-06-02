@@ -7,7 +7,7 @@ Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebP
 Validátor základních technických problémů, které komplikují rychlost webu. Zde začněte. Otestujte si tady všechny důležité vstupní šablony. 
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights.jpg" alt="PageSpeed Insights">
+<img src="../dist/images/original/pagespeed-insights.png" alt="PageSpeed Insights">
 <figcaption markdown="1">
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
 </figcaption>

@@ -20,6 +20,7 @@
 ## Metriky
 
 - [Všechny metriky rychlosti](metriky-rychlosti.md)
+- [Web Vitals](web-vitals.md)
 - [Metrika Lighthouse score](metrika-lps.md)
 - [Metrika TTFB](ttfb.md)
 - [Metrika FCP](metrika-fcp.md)

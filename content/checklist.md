@@ -55,7 +55,7 @@ Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, kter�
 Design mají obvykle na starosti kolegyně a kolegové. Pojďme ale zkontrolovat alespoň to nejdůležitější.
 
 - Požadovaná rychlost webu  
-<small>Tohle je komplexní téma, takže alespoň stručně. S optimalizací [rychlosti načítání](rychlost-nacteni.md) pomůže například nástroj [Pagespeed Insights](pagespeed-insights.md) nebo jiné [nástroje](rychlost-nastroje.md). Testujte všechny vstupní šablony, testujte často a snažte se být rychlejší než konkurence.</small>
+<small>Tohle je komplexní téma, takže alespoň stručně. S optimalizací [rychlosti načítání](rychlost-nacteni.md) pomůže například nástroj [Pagespeed Insights](pagespeed-insights.md) nebo jiné [nástroje](rychlost-nastroje.md). Testujte všechny vstupní šablony, testujte často a snažte se být rychlejší než konkurence. Sledujte metriky [Web Vitals](web-vitals.md).</small>
 - Web je přátelský k mobilním uživatelům  
 <small>Pomůže test [Mobile Friendly](https://search.google.com/test/mobile-friendly) od Googlu. Vyčerpávající informace [o responzivní designu](https://www.vzhurudolu.cz/responzivni-design) jsou v knížce [Vzhůru do (responzivního) webdesignu](https://www.vzhurudolu.cz/kniha-responzivni-design/).</small>
 - Grafika podporuje HD displeje typu Retina  
