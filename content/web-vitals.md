@@ -35,11 +35,15 @@ Google také rozlišuje tři stavy metrik. Nově je označuje takto:
 
 Hranice pro stavy jednotlivých metrik jsou [podle Googlu](https://web.dev/defining-core-web-vitals-thresholds/) následující:
 
+<div class="rwd-scrollable f-6" markdown="1">
+
 | Metrika    |  Good     |  Needs Improvement  |  Poor     |
 |:-----------|----------:|--------------------:|----------:|
 | LCP        | ≤ 2,5 s   |   2,5 - 4 s         |  > 4 s    |
 | FID        | ≤ 100 ms  |   100 - 300 ms      |  > 300 ms |
 | CLS        | ≤ 0,1     |   0,1 - 0,25        |  > 0,25   |
+
+</div>
 
 Pokud si chcete stav jednotlivých metrik u vašeho webu převést do jediného čísla, měli byste podle Googlu použít hodnotu na 75. percentilu pro sadu měření všech uživatelů – na mobilech i u počítačů.
 
