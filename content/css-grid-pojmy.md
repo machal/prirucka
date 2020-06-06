@@ -1,4 +1,4 @@
-# Pojmy v CSS gridu
+# Pojmy v CSS gridu – rozborka
 
 V gridu se to hemží pojmy, které si musíme vyjasnit. Jsou totiž důležité a náchylné na záměnu, což nám může způsobit nejednu malou katastrofu.
 
@@ -25,7 +25,7 @@ Mřížku definujeme jako třísloupcovou, ale řádky necháme na automatice gr
 }
 ```
 
-První slupec má dvojnásobnou šířku oproti druhému a třetímu.
+První slupec má dvojnásobnou šířku oproti druhému a třetímu. Definujeme to [zlomkovou jednotkou `fr`](css-jednotka-fr.md).
 
 V prohlížeči bude naše mřížka vypadat následovně:
 
@@ -123,17 +123,62 @@ Když už tedy víme, co je mřížka a umíte ji vizualizovat, pojďme si říc
 
 ## Linka mřížky (grid line) {#linka}
 
+Základní prvek rozvržení mřížky. Čára, která mřížku dělí na řádky, sloupce a pak jednotlivé buňky.
+
+Jak je patrné z obrázku výše, linky mají svá čísla. Pozor, začíná se vždy od `1`, nikoliv od nuly.
+
+Při definici mřížky, například [vlastnostmi `grid-template-rows/columns`](css-grid-template-rows-columns.md) je možné si linky pojmenovat:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: [first] 2fr [second] 1fr [end];
+}
+```
+
+Uvedený zápis zařídí následující:
+
+* Pojmenuje vodorovné mřížky jako `first`, `second` a `end`.
+* Mezi linkami definuje dva sloupce, první je `2fr` široký a druhý `1fr`.
+
+Dostali jsme se díky tomu k dalšímu pojmu – sloupec mřížky. Než se k němu dostaneme, musíme se seznámit s jiným pojmem – stopa mřížky.
+
 ## Stopa mřížky (grid track) {#stopa}
+
+Stopa je prostor, který je definovaný dvěma stopami. Vede přitom od začátku mřížky k jejímu konci. Je to asi vidět na obrázku výše.
+
+Jde jen o obecný název pro řádek (vodorovnou stopu) nebo sloupec (svislou stopu).
 
 ## Řádek, sloupec mřížky (grid row, grid column) {#radek-sloupec}
 
+Vodorovné a svislé stopy mřížky jsou označovány jako řádky a sloupce, přesně jako to už znáte z tabulek.
+
 *TODO obrázek: Buňka*
+
+Poznámka pro pokročilé: Pokud bychom chtěli být přesní, měli bychom uvést ještě pojem osy mřížky. V pojmologii CSS Gridu se nemluví o vodorovné a svislé ose, ale *blokové ose* (block axis) a *inline ose* (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je ten náš), tak zápisem svislým. Pak se pojmy os prohodá, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale opravdu v textu nechci zatěžovat.
 
 ## Buňka mřížky (grid cell) {#bunka}
 
-## Oblast mřížky (grid area)  {#oblast}
+Buňka je prostor vymezený čtyřmi linkami mřížky, který už není možné dále dělit dalšími linkami. Je to nejmenší prostorová jednotka mřížky, odpovídající buňce tabulky.
 
-Pátou položku pak ručně umístíme na patřičnou pozici mřížky:
+Pozor, buňka mřížky zároveň není položkou mřížky. Mřížka má vždy obdélníkový tvar, takže je možné definovat nižší počet položek než má mřížka buněk.
+
+Je to patrné v následujícím příkladu, kde jsme ubrali poslední položku. 
+Mřížka má však stále tři sloupce a dva řádky:
+
+*TODO Obrázek: Některé buňky neuvidíte, ale jsou tam pořád, potvory.*
+
+CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
+
+Je dobré si uvědomit, že právě proto nejde buňku mřížky nijak zacílit pomocí CSS. Je to jen jakási interní stavební jednotka mřížky.
+
+Abychom mohli buňku ovlivnit z CSS, musíme z ní udělat oblast.
+
+## Oblast mřížky (grid area) {#oblast}
+
+Buňka je prostor vymezený čtyřmi linkami mřížky, který ale může být možé dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buňek mřížky.
+
+V našem příkladu jsme pátou položku ručně umístili na místo páté a šesté buňky mřížky:
 
 ```css
 .item--five {
@@ -142,5 +187,32 @@ Pátou položku pak ručně umístíme na patřičnou pozici mřížky:
 }
 ```
 
+Tento zápis přesně říká o umístění oblasti následující:
 
-https://codepen.io/machal/pen/vYLONWz?editors=1100
+* Svisle ji umísti mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, takže na místo druhého a třetího sloupce.
+* Vodorovně ji umísti mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, takže do druhého řádku.
+
+CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
+
+## Mezery mezi buňkami (gap, gutter) {#gutter}
+
+Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
+
+```css
+.container {
+  display: grid;
+  gap: 10px;
+}
+```
+
+„Gutter“ se se měl asi přeložit jako „žlab“, ale v kontextu webdesignu by to bylo dost neobvyklé. Slovo „gutter“ se v hovorové *webařštině* vcelku běžně používá, takže si s ním občas jako se synonymem vystačíme.
+
+Pojďme si desetipixelový „gutter“ nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
+
+*TODO: Obrázek z Firefoxu: Ale to je nemilé, linka mřížky už není jen linka.*
+
+Jak je vidět z obrázku, z linek mřížky se staly obdélníky. Nikoliv úsečky, ale linkové sloupce a řádky, které mají svůj začátek i konec.
+
+Ano, vlastnosti `gap` určuje šířku linek. Pokud ji nedefinujeme, jde o neviditelné úsečky tak jako tomu bylo v předchozích příkladech.
+
+CodePen: [cdpn.io/e/vYLONWz](https://codepen.io/machal/pen/vYLONWz?editors=1100)
