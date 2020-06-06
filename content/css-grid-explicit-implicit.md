@@ -5,6 +5,8 @@ V naprosté většině v CSS Gridu definujeme explicitní mřížku, předem uve
 
 Může se nám ale stát, že položku umístíme na místo, kam explicitní mřížka nesahá. V takovém případě se nám mřížka automaticky rozšíří o implicitní část. Budete se divit, ale i tu můžeme předem nadefinovat.
 
+*TODO obrázek: Mřížka s explicitní a implicitní částí.*
+
 Podívejme se, jaké vlastnosti obě mřížky definují:
 
 - *explicitní*, výslovně definovaná pomocí vlastností `grid-template-*` – [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
