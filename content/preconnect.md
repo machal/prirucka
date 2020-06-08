@@ -4,7 +4,9 @@ Docela často se stává, že na stránce potřebujeme stahovat prvky z jiných 
 
 Prohlížeč ovšem musí pro každou novou doménu zjednodušeně řečeno navázat spojení. A je blbé, když to dělá mnohokrát během procesu načítání stránky. Prostě to zdržuje.
 
-<!-- AdSnippet -->
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=_jdXSjkdDFQ">Zrychlení webu díky před-spojení</a> ~ Preconnect a DNS-prefetch v sedmi minutách.
+</p>
 
 Možným řešením je použití meta značek `preconnect` a `dns-prefetch`, které prohlížeč informují o našich úmyslech navazovat spojení na cizí domény:
 
@@ -74,6 +76,8 @@ link: <https://fonts.gstatic.com>; rel=preconnect; crossorigin
 ## Kdy preconnect použít a osvědčené postupy  {#best-practices}
 
 Velmi často se vývojářky a vývojáři dostanou k nápadu na použití preconnect radami z nástroje [Lighthouse](lighthouse.md). Ten obvykle hlásí něco jako „Preconnect to required origins“ nebo „K potřebným zdrojům se připojujte předem“.
+
+<!-- AdSnippet -->
 
 Lighthouse je ale stroj, takže vyhodnocení, na které domény je vhodné `preconnect` skutečně nasadit, už je na nás. Pokusím se pomoci.
 
