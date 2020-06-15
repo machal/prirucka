@@ -4,13 +4,32 @@ V metrikách a událostech, které se týkají načítání a vykreslování str
 
 Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledujete. Ostatní pošlu na konec článku do [závěrečných doporučení](#doporuceni).
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=fR9n_yi050g">Metriky rychlosti načítání</a> ~ O tématu jsem v březnu 2018 přednášel také na minikonferenci Frontendisti.cz
-</p>
-
 A teď už vzhůru na ty metriky. Tenhle text slouží totiž především jako rozcestník.
 
-## Jak jdou události v čase? {#v-case}
+## Metriky Web Vitals {#web-vitals}
+
+Web Vitals je označení pro metriky, které v roce 2020 vyhlásil Google. Jejich základní sadou jsou „Core Web Vitals“. 
+
+Podle Google by se měřením a optimalizací pro tyto ukazatele měl zabývat úplně každý, kdo se kolem webdesignu motá.
+
+Jde o následující tři metriky.
+
+| Metrika                                        |  Kdy vzniká?                  |
+|:-----------------------------------------------|:------------------------------|
+| [Largest Contentful Paint (LCP)](metrika-lcp.md) | Největší vykreslení obsahu  |
+| [First Input Delay (FID)](metrika-fid.md)      | První nečinnost procesoru     |
+| [Cumulative Layout Shift (CLS)](metrika-cls.md) | Kumulativní posun layoutu    |
+
+<figure>
+<img src="../dist/images/original/web-vitals.png" alt="Jednotlivé metriky Web Vitals">
+<figcaption markdown="1">
+*Obrázek: Jednotlivé metriky Web Vitals. Zdroj: [web.dev](https://web.dev/vitals/).*
+</figcaption>
+</figure>
+
+→ *Detailně: [Web Vitals](web-vitals.md)*
+
+## Další metriky {#dalsi}
 
 Většina rychlostních metrik jsou prostě události, které po splnění určitých podmínek vznikají na časové ose postupu vykreslování stránky.
 
@@ -21,8 +40,6 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 | [First Paint (FP)](metrika-fp.md)              | První vykreslení              |
 | [First Contentful Paint (FCP)](metrika-fcp.md) | První vykreslení obsahu       |
 | [First Meaningful Paint (FMP)](metrika-fmp.md) | První smysluplné vykreslení   |
-| [Largest Contentful Paint (LCP)](metrika-lcp.md) | Největší vykreslení obsahu   |
-| [First Input Delay (FID)](metrika-fid.md)      | První nečinnost procesoru     |
 | [Time to Interactive (TTI)](metrika-tti.md)    | První možnost interaktivity   |
 | [Speed Index](speedindex.md)                   | Vykreslení celého viewportu   |
 | [Load](load.md)                                | Stažení všeho                 |
@@ -38,6 +55,12 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 Metriky se dají získat různými způsoby a na to se teď zaměříme.
 
 ## Dva způsoby získávání metrik
+
+Ukazatele je možné získat strojem nebo spočítat z návštěv skutečných lidí.
+
+<p class="video">
+Video: <a href="https://www.youtube.com/watch?v=fR9n_yi050g">Metriky rychlosti načítání</a> ~ O tématu jsem v březnu 2018 přednášel také na minikonferenci Frontendisti.cz
+</p>
 
 ### Syntetická měření {#syntetika}
 

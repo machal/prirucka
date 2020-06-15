@@ -24,7 +24,7 @@ Celé se to točí kolem tří hlavních metrik:
 Největší vykreslení obsahu. Metrika, která popisuje rychlost načítání stránky – *načítací (loading)* výkon. Jde o něco mezi [FCP](metrika-fcp.md) a [SpeedIndexem](speedindex.md).
 * [*First Input Delay (FID)*](metrika-fid.md)  
 První nečinnost procesoru. Metrika, která popisuje jak rychle může uživatel na stránce začít provádět úlohy – výkon *interaktivity*. Jedná se tedy o metriku podobnou [TTI](metrika-tti.md).
-* *Cumulative Layout Shift (CLS)*  
+* [*Cumulative Layout Shift (CLS)*](metrika-cls.md)  
 Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layoutu během vykreslování, což je úplně nová metrika, kterou si na Vzhůru dolů brzy popíšeme.
 
 Google také rozlišuje tři stavy metrik. Nově je označuje takto:
