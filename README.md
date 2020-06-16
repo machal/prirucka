@@ -80,7 +80,7 @@ Alternativně s popiskem jako `<figure>`:
 
 ```html
 <figure>
-<img src="../dist/images/original/todo.jpg" alt="">
+<img src="../dist/images/original/todo.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Google PageSpeed Insights zobrazí skóre webu, ale také rovnou návrhy na vylepšení*
 </figcaption>
@@ -117,7 +117,7 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
-Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md)
+Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md). Ale je potřeba vložit jako MP4, protož např. Safari WEBM neumí. Pokud video stahuješ ze zdrojů od Googlu, stahuj v Safari.
 
 ```html
 <div class="rwd-media">
