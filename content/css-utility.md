@@ -210,7 +210,7 @@ Všimněte si tříd prefixovaných v předchozí ukázce pomocí sm: – `sm:fl
 
 Pro stylování stavů vytvářených pomocí pseudotříd je nutné přidat další specifický typ tříd. Viz například `hover:bg-purple` v předchozí ukázce. To samozřejmě úplně pohodlné není.
 
-Na pseudoelementy pak v systémech založených na užitkových třídách můžete prakticky zapomenout. Zatímco u běžných komponent je možné na pseudoelementy navázat různé stylovací obezličky, tady pro ně nemáme prostor. Takové CSS už prostě leze ven ze principů, na kterých jsou utility postavené:
+Na pseudoelementy pak v systémech založených na užitkových třídách můžete prakticky zapomenout. Zatímco u běžných komponent je možné na pseudoelementy navázat různé stylovací obezličky, tady pro ně nemáme prostor. Takové CSS už prostě leze ven z principů, na kterých jsou utility postavené:
 
 ```css
 .box::before {
