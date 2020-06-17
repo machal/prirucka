@@ -14,7 +14,7 @@
 - [Nástroje pro měření](rychlost-nastroje.md)
 - [PageSpeed Insights](chrome-ux-report.md)
 - [Chrome UX Report](chrome-ux-report.md)
-- [Google Lighthouse](lighthouse.md)
+- [Google Lighthouse](lighthouse.md) a [verze 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6)
 - [SpeedCurve](speedcurve.md)
 
 ## Metriky

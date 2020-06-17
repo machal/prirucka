@@ -33,6 +33,8 @@ Velmi doporučuji právě Lighthouse pouštět pravidelně a řídit se jeho dop
 
 <span class="web-only" markdown="1">
 Také [Lighthouse](lighthouse.md) zde má samostatný článek.
+
+→ *Související novinka: V květnu 2020 vyšel [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6).*
 </span>
 
 ## Google Analytics

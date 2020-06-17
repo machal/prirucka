@@ -1,8 +1,8 @@
 # Lighthouse: Nepostradatelná analýza webu od Google
 
-Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak vyzrát na Google. 
+Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak vyzrát na Google.
 
-Je to nástroj pro analýzu technické kvality webu, která důležitá jak pro návštěvníky, tak pro webu umístění právě ve výsledích vyhledávání Googlu.
+Je to nástroj pro analýzu technické kvality webu, která důležitá jak pro návštěvníky, tak pro umístění webu právě ve výsledích vyhledávání Googlu.
 
 Obsah:
 
@@ -15,13 +15,15 @@ Obsah:
 - [Pravidelné spouštění](#pravidelne)
 </div>
 
-Používám jej hlavně pro analýzu [rychlosti načítání](rychlost-nacitani-proc.md), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
+Používám jej hlavně pro analýzu [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=2VIJU7NNKYw">Lighthouse: Základní představení</a> ~ Jak si otestovat web v tomhle výborném nástroji.
 </p>
 
-Velmi doporučuji jej používat pro vaše weby a webové aplikace  a nejlépe to dělat pravidelně a automaticky.
+Velmi doporučuji pomocí Lighthouse testovat vaše weby a webové aplikace. A nejlépe to dělat pravidelně a automaticky.
+
+→ *Související novinka: V květnu 2020 vyšel [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6).*
 
 ## Proč jej používat? {#proc}
 
@@ -29,7 +31,7 @@ Lighthouse vám pomůže najít problémy na úrovni designu a frontendového k�
 
 <!-- AdSnippet -->
 
-Za jeho výhody považuji především:
+Za výhody Lighthouse považuji především:
 
 - Snadnou dostupnost komukoliv.
 - Rychlé výstupy.
@@ -39,7 +41,9 @@ Ale bavme se i o nevýhodách:
 
 - Dává spíše *základní přehled* a bez pokročilejších nástrojů se v případě vážnějších auditů neobejdeme. Psal jsem například o nástrojích pro [měření rychlosti](rychlost-nastroje.md).
 - Výsledky auditu rychlosti webu jsou obvykle *ovlivněné aktuálním výkonem*  počítače, na kterém jej spouštíme.
-- Dělá jen *syntetickou analýzu* v jednom umělém uživatelském kontextu. Zdaleka nám tedy nedá obrázek o celé šíři problémů v naší uživatelské základně. Data o rychlosti od uživatelů nám částečně poskytne například jiný nástroj od Google – [PageSpeed Insights](pagespeed-insights.md).
+- Dělá jen *syntetickou analýzu* v jednom umělém uživatelském kontextu. Zdaleka nám tedy nedá obrázek o celé šíři problémů na naší uživatelské základně. 
+
+Data o rychlosti od uživatelů nám částečně poskytne například jiný nástroj od Google – [PageSpeed Insights](pagespeed-insights.md).
 
 ## Co umí analyzovat? {#co-umi}
 
@@ -60,7 +64,7 @@ Oblasti webařského pachtění, které Lighthouse pokrývá:
 
 ## Jak jej používat? {#jak-pouzivat}
 
-Ligthouse je balíček pro Node.js, proto je způsobů jeho použití fakt hodně:
+Ligthouse je balíček pro Node.js, proto způsobů jeho použití existuje fakt hodně:
 
 - *Chrome DevTools* – stačí otevřít developerské nástroje Chrome (Ctrl/Cmd+Alt+I) a jít do záložky „Audits“.
 - *Online verze* – [web.dev/measure/](https://web.dev/measure/).

@@ -85,7 +85,7 @@ Hodí se vědět, že [Chrome UX report se aktualizuje jednou za měsíc](https:
 
 ## Laboratorní data {#lab}
 
-Nebo také měření strojem, která [od listopadu 2018](https://webmasters.googleblog.com/2018/11/pagespeed-insights-now-powered-by.html) tester PSI provádí vynikajícím nástrojem [Lighthouse](lighthouse.md). 
+Nebo také měření strojem, která [od listopadu 2018](https://webmasters.googleblog.com/2018/11/pagespeed-insights-now-powered-by.html) tester PSI provádí vynikajícím nástrojem [Lighthouse](lighthouse.md).
 
 Měření strojem? Prostě se pustí dva virtuální počítače – desktop (zařízení šířce viewportu 1366 px) a mobil (šířka 412 px) – a testuje se v nich váš web. 
 
@@ -111,7 +111,25 @@ Time to Interactive (TTI) – kdy začne být stránka plně interaktivní?
 6. *Odhadovaná latence vstupu*  
 Jak rychle bude stránka reagovat na vstup uživatele?
 
-[Ideální hodnoty metrik](https://www.vzhurudolu.cz/blog/112-metriky-cile) jsem zkoumal ve zvláštním textu na blogu.
+Aktualizace: V květnu 2020 vyšel [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6) a tudíž se leccos změnilo i v PageSpeed Insight. Podívejme se tady přehledně, jak se změnily metriky a jejich váhy při přechodu mezi verzemi Lighthouse 5 a 6:
+
+<div class="rwd-scrollable f-6"  markdown="1">
+
+| Metrika                         | Váha ve verzi 5 | Váha ve verzi 6 |
+|:--------------------------------|----------------:|----------------:|
+| [First Contentful Paint (FCP)](/prirucka/metrika-fcp)    | 	23 %            | 15 % |
+| [Speed Index (SI)](/prirucka/speedindex)                | 	27 %            | 15 % |
+| [First Meaningful Paint (FMP)](/prirucka/metrika-fmp)    | 	7 %             | -    |
+| [Largest Contentful Paint (LCP)](/prirucka/metrika-lcp)  | 	-               | 25 % |
+| [Time To Interactive (TTI)](/prirucka/metrika-tti)       | 	33 %            | 15 % |
+| First CPU Idle (FCI)            | 	13 %            | -    |
+| Total Blocking Time (TBT)       | 	-               | 25 % |
+| Max Potential FID               | 	0 %             | -    |
+| [Cumulative Layout Shift (CLS)](/prirucka/metrika-cls)   | -               | 5 %  |
+
+</div>
+
+[Ideální hodnoty metrik](https://www.vzhurudolu.cz/blog/112-metriky-cile) jsem zkoumal ve starším textu na blogu.
 
 ## Optimalizační návrhy: Příležitosti a diagnostika {#prilezitosti}
 

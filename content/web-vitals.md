@@ -100,7 +100,9 @@ Jednoduše měří přímo v prohlížeči.
 * [*JS knihovna web-vitals*](https://github.com/GoogleChrome/web-vitals)  
 Knihovna je skvělá pro případy, že byste si chtěli začít měřit sami a ukládat si data do [Google Analytics](google-analytics-vyvojari.md) nebo vlastní analytiky.
 
-Raději explicitně zmiňuji, že metrika FID se nedá sbírat jinak než od reálných uživatelů, z takzvaných RUM (Real User Monitoring) nástrojů. Pokud měříte synteticky strojem, což dělá například WebpageTest, [Lighthouse](lighthouse.md) nebo částečně PageSpeed Insights či [SpeedCurve](speedcurve.md), doporučuje se nahradit ji metrikou [Total Blocking Time (TBT)](https://web.dev/tbt/).
+Raději explicitně zmiňuji, že metrika FID se nedá sbírat jinak než od reálných uživatelů, z takzvaných RUM (Real User Monitoring) nástrojů. 
+
+Pokud měříte synteticky strojem, což dělá například WebpageTest, [Lighthouse](lighthouse.md) (od [verze 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6)) nebo částečně PageSpeed Insights či [SpeedCurve](speedcurve.md), doporučuje se nahradit ji metrikou [Total Blocking Time (TBT)](https://web.dev/tbt/).
 
 Google deklaruje, že chce, aby „Core Web Vitals“ byly stabilní a predikovatelné, a že se nebudou měnit častěji než jednou za rok. Zároveň ale dodává, že ani „Core Web Vitals“ nejsou perfektní a bude se na nich dále pracovat.
 
