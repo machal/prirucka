@@ -188,7 +188,7 @@ Různými přístupy k tvorbě AMP se zabýváme [ve třetí kapitole](3-uvod.md
 
 <div class="web-only" markdown="1">
 
-Z pohledu správy je nejefektivnější právě přístup AMP-only (pouze AMP), ale je dobré vědět i o existenci kompromisních variant. Zmiňme ještě řadu pluginů do populárních redakčních systémů, jako je [WordPress](https://amp-wp.org/). Ty mohou pomoci.
+Z pohledu správy je nejefektivnější právě přístup AMP-only (pouze AMP), ale je dobré vědět i o existenci kompromisních variant. Zmiňme ještě řadu pluginů do populárních redakčních systémů, jako je [WordPress](amp-wordpress.md). Ty mohou pomoci.
 
 </div>
 
@@ -244,7 +244,7 @@ Nový je zde výraznější tlak na to, aby se designéři, designérky, grafici
 Jenže AMP stránka je buď validní, nebo ne. V druhém případě nedostane benefity symbolizované ikonou blesku. Proto je zde tlak na dodržení možností frameworku daleko silnější.
 
 <div class="web-only" markdown="1">
-Může se zdát, že některé AMP stránky jsou si podobné. Obvykle je to využitím pluginů do redakčních systémů, konkrétně nejčastěji původní verze [pluginu pro WordPress](https://amp-wp.org/), které umožňují rychlé vytvoření AMP verzí stránek pouhým zmáčknutím tlačítka. Výstupní šablony je často možné si jen barevně upravit, jinak jsou jedna druhé podobné.
+Může se zdát, že některé AMP stránky jsou si podobné. Obvykle je to využitím pluginů do redakčních systémů, konkrétně nejčastěji původní verze [pluginu pro WordPress](amp-wordpress.md), které umožňují rychlé vytvoření AMP verzí stránek pouhým zmáčknutím tlačítka. Výstupní šablony je často možné si jen barevně upravit, jinak jsou jedna druhé podobné.
 </div>
 
 <div class="ebook-only" markdown="1">

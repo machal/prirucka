@@ -275,5 +275,9 @@ Kam dále?
 - Všechny videa [v jednom playlistu](https://www.youtube.com/watch?v=a9E-gL8NOqs&list=PLIdlKRR9lxIerO6Y3-_RxhB0fp0W3Je5J)
 - [Kde všude](amp-platformy.md) se AMP stránky zobrazují?
 - [Případové studie](amp-co-je-pripadovky.md) k nasazení AMP
+- [HTML v AMP](amp-html.md)
+- [CSS v AMP](amp-css.md)
+- [JavaScript v AMP](amp-javascript.md)
+- [AMP ve WordPressu](amp-wordpress.md)
 
 <!-- AdSnippet -->
