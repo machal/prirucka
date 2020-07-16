@@ -29,9 +29,9 @@ První slupec má dvojnásobnou šířku oproti druhému a třetímu. Definujeme
 
 V prohlížeči bude naše mřížka vypadat následovně:
 
-*TODO Obrázek: Máme tady jeden kontejner a pět položek*
+*TODO Obrázek: Byl jednou jeden kontejner.*
 
-Dostáváme se tím k pojmům. Zde je budu uvádět česky s anglickým ekvivalentem v závorce, v dalších textech už povětšinou jen česky.
+Na obrázku vidíme jeden kontejner a pět položek mřížky. Dostáváme se tím k pojmům. Zde je budu uvádět česky s anglickým ekvivalentem v závorce, v dalších textech už povětšinou jen česky.
 
 ## Kontejner mřížky (grid container) {#kontejner}
 
@@ -45,11 +45,11 @@ Jednou z vlastností formátovacích kontextu mřížky je, že každý z přím
 
 ## Položka mřížky (grid item) {#polozka}
 
-Položkou mřížky v ukázce jsou tedy všechny prvky `<p class="item">`.
+Položkou mřížky v ukázce jsou všechny prvky `<p class="item">`.
 
 Položka nemá žádné speciální vlastnosti, kromě toho, že je nesvobodná – prohlížeč se ji snaží vložit do definované mřížky.
 
-Nesbododnou položku ale můžete emancipovat tím, že i z ní uděláte kontejner (`display:grid`) a ona pak bude omezovat na svobodě své potomky. Ano, zanořování více mřížek do sebe je možné.
+Nesbododnou položku ale můžeme emancipovat tím, že i z ní uděláte kontejner (`display:grid`) a ona pak bude omezovat na svobodě své potomky. Ano, zanořování více mřížek do sebe je možné.
 
 ### Anonymní položky {#anonymni-polozka}
 
@@ -65,7 +65,7 @@ Do této kategorie patří také například obrázky nebo takzvané *anonymní 
 </div>
 ```
 
-V této ukázce prostě máme rovnou tři položky gridu a nějak si s nimi budeme muset poradit při definování mřížky. Já jsem to tady pojal jednoduše:
+V této ukázce prostě máme rovnou tři položky a nějak si s nimi budeme muset poradit při definování mřížky. Já jsem to tady pojal jednoduše:
 
 ```css
 .container {
@@ -74,36 +74,39 @@ V této ukázce prostě máme rovnou tři položky gridu a nějak si s nimi bude
 }  
 ```
 
-Rozdělil jsem plochu, kterou vymezuje kontejner, na tři rovnoměrné části. Na skutečné dělení měl vliv samotný obsah položek, ale o tom se budeme bavit později.
+Rozdělil jsem plochu, kterou vymezuje kontejner, na tři rovnoměrné části. Na skutečné šířky položek měl vliv samotný obsah položek, ale o tom se budeme bavit později.
 
+<figure>
+<img src="../dist/images/original/vdgrid/pojmy-anonymni-uzel.png" width="1600" height="450" alt="Anonymní uzel v CSS Gridu">
+<figcaption markdown="1">
 *TODO Obrázek: Takhle to nakonec vypadá. Obrázek i anonymní textový uzel jsou plnohodnotnými občany definované mřížky.*
+</figcaption>
+</figure>
 
-Tuto specialitu zmiňuji hlavně proto, abyste se dokázali vyhnout problémům, které to přináší. Obecně ale velmi doporučuji definovat každou položku gridu do samostatného a pojmenovaného HTML prvku. Už jen proto, aby se vám na něj lépe cílilo pomocí CSS selektorů.
+Tuto specialitu zmiňuji hlavně proto, abychom se dokázali vyhnout problémům, které to přináší. Obecně ale velmi doporučuji definovat každou položku gridu do samostatného a pojmenovaného HTML prvku. Už jen proto, aby se vám na něj lépe cílilo pomocí CSS selektorů.
 
 CodePen: [cdpn.io/e/ZEQGbgy](https://codepen.io/machal/pen/ZEQGbgy?editors=1100)
 
-Shrňme si, co víme: Kontejner mřížky je rodičovský prvek v HTML, který definuje, že tady se bude odehrávat formátování CSS gridem. Položka mřížky je každý jeho přímý potomek, včetně těch anonymních.
+Kontejner mřížky je tedy rodičovský prvek, který v HTML definuje, že tady se bude odehrávat formátování CSS gridem. Položka mřížky je každý jeho přímý potomek, včetně těch anonymních.
 
-Než dojdeme k dalším pojmům, uděláme našemu příkladu nepěknou a ošklivou věc. Zmenšíme plochu stránky tak, aby šířka položek přesáhla šířku kontejneru.
+Než dojdeme k dalším pojmům, spácháme na naší původní ukázce nepěknou a ošklivou věc. Zmenšíme plochu stránky tak, aby šířka položek přesáhla šířku kontejneru.
 
-*TODO obrázek: A je to venku.*
+Kontejner je teď menší než je samotná mřížka. Po vytečení „položek z kontejneru“ se dostáváme k dalším pojmům.
+
+*TODO obrázek s popisky mřížka a kontejner: Tady je vidět rozdíl mezi kontejnerem mřížky a mřížkou samotnou.*
 
 Mimochodem, s původně uvedeným CSS a HTML by to takhle udělat nešlo. Musel jsem styly trochu změnit tak, aby si položky kontejneru zachovávaly nějakou minimální šířku:
 
 ```css
 .container {
   grid-template-columns:
-    minmax(200px, 2fr)
-    minmax(100px, 1fr)
-    minmax(100px, 1fr);
+    minmax(500px, 2fr) minmax(250px, 1fr) minmax(250px, 1fr);
 }
 ```
 
 Je pravděpodobné, že [funkci `minmax()`](css-minmax.md) zatím neznáte. Ona ale dělá přesně to, na co byste ji tipli – v našem případě zakazuje zmenšení první položky pod 200 pixelů a druhé a třetí pod 100.
 
-Kontejner je teď menší než je samotná mřížka. Po vytečení „položek z kontejneru“ se dostáváme k dalším pojmům. 
-
-*TODO obrázek s popisky mřížka a kontejner: Tady je vidět rozdíl mezi kontejnerem mřížky a mřížkou samotnou.*
+CodePen: [cdpn.io/e/qBbjjoj](https://codepen.io/machal/pen/qBbjjoj?editors=1100)
 
 ## Mřížka (grid) {#mrizka}
 
@@ -111,11 +114,16 @@ Mřížka je ona neviditelná pravidelná síť, do které umísťujeme náš la
 
 Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési „okno“ pro vykreslování mřížky.
 
-Říkám, že je neviditelná, ale takto to být nemusí. Autoři prohlížečů Chrome a obzvlášťě Firefox jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkne vizualizovat v DevTools. 
+Říkám, že je neviditelná, ale takto to být nemusí. Autoři prohlížečů Chrome a obzvlášťě Firefox jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkne vizualizovat v DevTools.
 
+<figure>
+<img src="../dist/images/original/vdgrid/firefox-devtools-grid.png" width="1600" height="450" alt="CSS Grid Inspector ve Firefoxu">
+<figcaption markdown="1">
 *TODO obrázek: CSS Grid Inspector ve Firefoxu.*
+</figcaption>
+</figure>
 
-Vizualizace mřížky ve Firefoxu nebo i v Chrome pomůže pochopit, z čeho se váš grid skládá a jak to chápe prohlížeč. Velmi doporučuji to při práci na mřížkách používat. 
+Vizualizace mřížky ve Firefoxu nebo i v Chrome pomůže pochopit, z čeho se váš grid skládá a jak to chápe prohlížeč. Velmi doporučuji to při práci na mřížkách používat.
 
 Když už tedy víme, co je mřížka a umíte ji vizualizovat, pojďme si říct, z jakých stavebních prvků se přesně ta naše mřížka skládá.
 
@@ -152,8 +160,6 @@ Jde jen o obecný název pro řádek (vodorovnou stopu) nebo sloupec (svislou st
 ## Řádek, sloupec mřížky (grid row, grid column) {#radek-sloupec}
 
 Vodorovné a svislé stopy mřížky jsou označovány jako řádky a sloupce, přesně jako to už znáte z tabulek.
-
-*TODO obrázek: Buňka*
 
 Poznámka pro pokročilé: Pokud bychom chtěli být přesní, měli bychom uvést ještě pojem osy mřížky. V pojmologii CSS Gridu se nemluví o vodorovné a svislé ose, ale *blokové ose* (block axis) a *inline ose* (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je ten náš), tak zápisem svislým. Pak se pojmy os prohodá, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale opravdu v textu nechci zatěžovat.
 
