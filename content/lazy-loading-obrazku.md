@@ -70,7 +70,14 @@ Ta hranice je ovšem nastavená různě. V případě nativního lazy loadingu j
 - zda je aktivní [Lite mód](https://blog.chromium.org/2019/04/data-saver-is-now-lite-mode.html) (režim šetřetní dat) prohlížeče,
 - jaký je [typ připojení](https://googlechrome.github.io/samples/network-information/) (obsah `navigator.connection`).
 
+### Aktualizace v Chrome 77 a 79 {#nativni-update}
+
 [Autoři uvádějí](https://web.dev/native-lazy-loading), že od Chrome 77 budeme moci testovat různé hranice pomocí omezením rychlosti připojení ve vývojářských nástrojích prohlížeče.
+
+Od [července 2020 a Chrome 79](https://web.dev/native-lazy-loading/#improved-data-savings-and-distance-from-viewport-thresholds) v Chrome platí, že na rychlejších připojeních (4G a lepší) se stahují všechny obrázky vzdálené 1250 pixelů od [viewportu](viewport.md). Na 3G a pomalejších připojeních je hranice nastavená na 2500 pixelů. Je to trochu paradoxní, ale jen tak může prohlížeč zajistit dostatečně včasné stažení obrázků:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’ve improved &lt;img&gt; lazy-loading in Chrome! <a href="https://t.co/zx8sf7I86L">https://t.co/zx8sf7I86L</a> The new thresholds for when we load &lt;img loading=lazy&gt;:<br><br>* Offer *much* better data-savings<br>* Are closer to JavaScript lazy-loading libraries<br>* Are rolling out to Chrome 79+ <a href="https://t.co/3OHm2rnRAm">pic.twitter.com/3OHm2rnRAm</a></p>&mdash; Addy Osmani (@addyosmani) <a href="https://twitter.com/addyosmani/status/1284020009350701057?ref_src=twsrc%5Etfw">July 17, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Demo pro obrázky {#nativni-demo-obrazky}
 
