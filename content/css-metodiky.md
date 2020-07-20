@@ -10,7 +10,7 @@ Projdeme si jen ty metodiky, které jsem někdy používal v rámci své [organi
 
 Objektově orientované CSS byl dle mého první větší pokus o řešení velmi častých problémů při psaní stylů. 
 
-*TODO obrázek*
+[![OOCSS](../dist/images/original/oocss.jpg)](oocss.md)
 
 Hlavním cílem je zapouzdření stylů do samostatných objektů, nebo komponent chcete-li.
 
@@ -31,7 +31,7 @@ BEM (Block, Element, Modifier) je buď [plnohodnotná metodika](https://en.bem.i
 
 V denodenní kodérské praxi se ujala hlavně ta druhá varianta a o té zde taky chci psát. Skvěle totiž rozšiřuje OOCSS a vůbec si bez ní neumím představit psát dneska styly.
 
-*TODO obrázek*
+[![BEM CSS](../dist/images/original/bem.jpg)](bem.md)
 
 Každá komponenta se označuje a zapisuje jako *blok*, dceřinný prvek jako *element* a obměna komponenty jako *modifikátor*.
 
@@ -52,7 +52,7 @@ BEM je skvělý, ale má jednu nevýhodu – pokrývá sice nejdůležitější,
 
 Součástí sady SUIT CSS je také [preprocesor](https://github.com/suitcss/preprocessor), který se snaží zavádět syntaxi, jež by se dříve či později měla objevit v CSS, což už znáte z [PostCSS](postcss.md). Ale ten teď nechme stranou.
 
-*TODO obrázek*
+![SUIT CSS](../dist/images/original/suit-css.png)
 
 Tabulku v případě SUIT CSS můžeme rozšířit:
 
@@ -81,13 +81,16 @@ Poslední metodika, kterou na kterou si zde chci posvítit, na to jde jinak – 
 
 Metodika Harryho Robertse ITCSS (Inverted Triangle CSS) se primárně nezaměřuje na názvy salektorů ani psaní samotného kódu, ale na dělení a organizaci souborů s CSS kódem do jednotlivých typů.
 
-*TODO ITCSS logo*
+![ITCSS](../dist/images/original/itcss.png)
 
 Myšlenka ITCSS je v obráceném trojúhelníku. Prvky, které jsou nahoře mají nízkou [specificitu selektorů](css-kaskada.md), ale zároveň ovlivní větší množství prvků na stránce. Čím jdeme v trojúhelníků níže, tím méně prvků na stráce ovlivňujemme, ale tím vyšší je váha selektoru.
 
-*TODO ITCSS*
-
+<figure>
+<img src="../dist/images/original/itcss-triangle.png" width="1600" height="900" alt="Obrácený trojúhelník metodiky ITCSS">
+<figcaption markdown="1">
 *Obrázek: Zdá se, že ITCSS převrací věci vzhůru nohama, jenže ve skutečnosti dává CSS řád.*
+</figcaption>
+</figure>
 
 Základní typy prvků podle ITCSS:
 
