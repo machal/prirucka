@@ -100,21 +100,21 @@ Je několik možností jak Google poprosit o zobrazování vašeho obsahu v úry
 
 Možná už strukturované úryvky na webu máte a potřebovali byste jen ověřit, zda je vše v cajku. Tady pomohou následující nástroje.
 
-* [Google Search Console](google-search-console.md) v sekci „Strukturovaná data, která nelze analyzovat“ zobrazuje přehledný graf o počtu nepovedených Rich Snippets na vašem webu.
-* [Nástroj pro testování strukturovaných dat](http://www.google.com/webmasters/tools/richsnippets) vám velmi pomůže, protože je dostupný i bez Search Console.
+- [Google Search Console](google-search-console.md) v sekci „Strukturovaná data, která nelze analyzovat“ zobrazuje přehledný graf o počtu nepovedených Rich Snippets na vašem webu.
+- [Test rozšířených výsledků](https://search.google.com/test/rich-results) vám velmi pomůže, protože je dostupný i bez Search Console.
 
 ### Vložení pro klikače {#vlozeni-klikani}
 
-* [Zvýrazňovač dat](https://support.google.com/webmasters/answer/2692911) (Data Highlighter) je starší nástroj, kde se napojíte na weby, které máte v Search Console a v průvodci si na něm naklikáte některé Rich Snippets.
-* [Pomocník](https://www.google.com/webmasters/markup-helper/) je někde na půl cesty mezi klikáním a kódem. Umí také vygenerovat strukturované úryvky pro e-mailové klienty (asi jen Gmail).
+- [Zvýrazňovač dat](https://support.google.com/webmasters/answer/2692911) (Data Highlighter) je starší nástroj, kde se napojíte na weby, které máte v Search Console a v průvodci si na něm naklikáte některé Rich Snippets.
+- [Pomocník](https://www.google.com/webmasters/markup-helper/) je někde na půl cesty mezi klikáním a kódem. Umí také vygenerovat strukturované úryvky pro e-mailové klienty (asi jen Gmail).
 
 ### Vložení pro vývojáře {#vlozeni-vyvojari}
 
 Protože jsme na kodérském webu, ukážeme si jak lze strukturované úryvky vyznačit přímo v kódu:
 
-* [JSON-LD](http://json-ld.org/) – formát, který Google doporučuje, s čímž naprosto souhlasím. Do datového bloku v HTML kódu ve [značce `<script>`](html-script.md) vložíte strukturované informace ve formátu podobném JSONu.
-* [Microdata](https://www.w3.org/TR/microdata/) – starší formát, kdy se data vkládala do HTML značek, např. `<p itemprop="description">` se používal pro vložení popisu události.
-* [RDFa](https://www.w3.org/TR/rdfa-lite/) – ještě starší formát. Velmi podobný mikrodatům – `<span property="name">Martin Michálek</span>`.
+- [JSON-LD](http://json-ld.org/) – formát, který Google doporučuje, s čímž naprosto souhlasím. Do datového bloku v HTML kódu ve [značce `<script>`](html-script.md) vložíte strukturované informace ve formátu podobném JSONu.
+- [Microdata](https://www.w3.org/TR/microdata/) – starší formát, kdy se data vkládala do HTML značek, např. `<p itemprop="description">` se používal pro vložení popisu události.
+- [RDFa](https://www.w3.org/TR/rdfa-lite/) – ještě starší formát. Velmi podobný mikrodatům – `<span property="name">Martin Michálek</span>`.
 
 Pokud můžete, používejte JSON-LD. Oddělíte si tak data pro vyhledávač od HTML, což je výhodné.
 
@@ -154,8 +154,8 @@ Pojďme si zápis demonstrovat na schématu _Event_, které může označovat sp
 
 Všimněte si několika věcí:
 
-* `startDate` a jakékoliv časové údaje je potřeba stroji poskytnout v ISO formátu.
-* Schémata je do sebe možné zanořovat – viz zde vložené typy obsahu _Place_ a _Offer_.
+- `startDate` a jakékoliv časové údaje je potřeba stroji poskytnout v ISO formátu.
+- Schémata je do sebe možné zanořovat – viz zde vložené typy obsahu _Place_ a _Offer_.
 
 Ve výsledcích vyhledávání Googlu to pak může vypadat tak jako vidíte v první obrázku článku.
 
