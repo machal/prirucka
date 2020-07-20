@@ -9,8 +9,10 @@ Může se nám ale stát, že položku umístíme na místo, kam explicitní mř
 
 Podívejme se, jaké vlastnosti obě mřížky definují:
 
-- *explicitní*, výslovně definovaná pomocí vlastností `grid-template-*` – [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
-- *implicitní*, která obvykle předem není definovaná. Pokud ano, pak pomocí vlastností  `grid-auto-*` [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md).
+- *Explicitní*, výslovně definovanou, lze nastavit vlastnostmi obsahujícími slovo `template`:  
+Jde konkrétně o vlastnosti `grid-template-*` – [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
+- *Implicitní*, která obvykle není předem definovaná k vykreslení. Lze ji nastavit vlastnosti obsahujícími slovo `auto`:  
+Jde o vlastností  `grid-auto-*` [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md).
 
 ## Příklad s přidáním položky na novou řádku
 
