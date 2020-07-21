@@ -1,6 +1,6 @@
 # Metodiky pro organizaci CSS kódu
 
-CSS kód je snadné psát, ale špatně se spravuje jeho větší množství. 
+CSS kód je snadné psát, ale špatně se spravuje jeho větší množství.
 
 Proto pro psaní kaskádových stylů vznikla celá řada metodik, které mají za úkol problémy jazyka řešit.
 
@@ -43,12 +43,16 @@ Každá komponenta se označuje a zapisuje jako *blok*, dceřiný prvek jako *el
 
 Jednotlivé typy prvků jsou pak odlišeny způsobem zápisu třídy:
 
+<div class="rwd-scrollable"  markdown="1">
+
 | Typ třídy            | Způsob pojmenovávání |
 |----------------------|----------------------|
 | Blok                 | `.block`             |
 | Element              | `.block__element`    |
 | Modifikátor          | `.block--modifier`   |
 | Modifikátor elementu | `.block__element--modifier` |
+
+</div>
 
 BEM je skvělý, ale má jednu nevýhodu – pokrývá sice nejdůležitější, ale pořád relativně malý výsek typů prvků, které v CSS dneska můžeme popisovat. Ano, jsou to komponenty.
 
@@ -69,6 +73,8 @@ Součástí sady SUIT CSS je také [preprocesor](https://github.com/suitcss/prep
 
 Tabulku v případě SUIT CSS můžeme rozšířit:
 
+<div class="rwd-scrollable"  markdown="1">
+
 | Typ třídy               | Způsob pojmenovávání |
 |-------------------------|----------------------|
 | Komponenta              | `.MyComponent`       |
@@ -76,6 +82,8 @@ Tabulku v případě SUIT CSS můžeme rozšířit:
 | Modifikátor komponenty  | `.MyComponent--modifier`   |
 | Stav komponenty         | `.MyComponent.is-animating` |
 | Utilita                 | `.u-fontSmall` |
+
+</div>
 
 SUIT CSS tedy oproti BEM zavádí:
 
@@ -107,6 +115,8 @@ Myšlenka ITCSS je v obráceném trojúhelníku. Prvky, které jsou nahoře, maj
 
 Základní typy prvků podle ITCSS:
 
+<div class="rwd-scrollable"  markdown="1">
+
 | Název       | O co jde?          | Ukázky                   |
 |:------------|:-------------------|:-------------------------|
 | Settings    | Proměnné, config…  | `$color-primary`         |
@@ -116,9 +126,11 @@ Základní typy prvků podle ITCSS:
 | Components  | Komponenty          | `.button`, `.nav`       |
 | Trumps      | Utility, helpery…   | `.mb-0`, `.text-center` |
 
+</div>
+
 → V češtině ITCSS [výborně popsal Adam Kudrna](https://frontend.garden/proc-je-itcss-nejpokrocilejsi-metodika-organizace-css/), a angličtině asi nejlépe [Lubos Kmetko](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
 
-## Závěr: Když nevíte, používejte ITCSS a SUIT CSS {#zaver}
+## Závěr: Když nevíte, dejte tam ITCSS a SUIT CSS {#zaver}
 
 Pokud jste bedlivě četli, vidíte teď určitě nemalé rozdíly mezi prvními třemi metodikami a tou čtvrtou.
 
