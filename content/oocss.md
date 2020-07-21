@@ -2,6 +2,11 @@
 
 OOCSS je zkratka pro [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki). Je to koncept psaní kódu od Nicole Sullivan zaměřený na „komponentovou“ část CSS kódu.
 
+<div class="related" markdown="1">
+- [Metodiky psaní CSS](css-metodiky.md)
+- [BEM](bem.md)
+</div>
+
 CSS objekt je opakující se vizuální komponenta, která může být abstrahována kouskem HTML a CSS, případně JS. Je znovupoužitelná na jiném místě projektu. Ideálně pak i na dalších projektech. 
 
 Cílem OOCSS je kromě zajištění znovupoužitelnosti kódu i zlepšení jeho spravovatelnost a také zmenšení objemu CSS souboru.

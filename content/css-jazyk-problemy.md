@@ -97,7 +97,7 @@ Nezbývá než se s kaskádou smířit a přizpůsobit tomu dvě věci:
 * *Držet specifičnost co nejníže*  
 To je ostatně jedno z pravidel metodiky [OOCSS](https://www.vzhurudolu.cz/prirucka/oocss), ze kterého pak vychází [BEM](https://www.vzhurudolu.cz/prirucka/bem). V tomto příkladě jsou samozřejmě špatně selektory `.box h2` a `.tabs h2`.
 * *Nastavit pořadí kategorií stylů podle rostoucí specifičnosti*  
-To hlásá například metodika [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/). V tomto příkladu by se hodilo změnit pořadí v kódu tak, aby užitková třída (`.mb-0`) následovala až za komponentami.
+To hlásá například metodika [ITCSS](css-metodiky.md#itcss). V tomto příkladu by se hodilo změnit pořadí v kódu tak, aby užitková třída (`.mb-0`) následovala až za komponentami.
 
 Lépe napsaný kód vypadá takto:
 

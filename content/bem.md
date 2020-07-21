@@ -2,6 +2,11 @@
 
 BEM je způsob, jak pojmenovávat třídy v CSS tak, aby se vám nepletly jejich různé typy. 
 
+<div class="related" markdown="1">
+- [Metodiky psaní CSS](css-metodiky.md)
+- [OOCSS](oocss.md)
+</div>
+
 Na BEM můžeme nahlížet dvěma způsoby:
 
 1. Plnohodnotná metodika pro organizaci CSS. Viz plná dokumenace na [bem.info](https://en.bem.info/methodology/). Tu vymysleli a používají v ruském Yandexu.
@@ -12,8 +17,6 @@ BEM jako plnohodnotnou metodiku nepoužívám, častěji volím vlastní způsob
 <!-- AdSnippet -->
 
 V konvenci pro pojmenovávání tříd je myslím největší přínos BEMu. Na první pohled to může vypadat na hodně stručný článek, ale i tak je o čem psát. Však hned uvidíte.
-
-
 
 ## BEM jako Blok, Element, Modifikátor
 
@@ -115,7 +118,7 @@ Jak je z výše uvedených ukázek vidět, názvy bloků, elementů a modifikát
 
 ## BEM a systémy organizace CSS
 
-Jak jsem psal, BEM navazuje na [OOCSS](oocss.md). Je na něm také hezké, že se může pěkně doplňovat se šířeji definovanými systémy organizace CSS jako [SMACSS](smacss.md) nebo [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
+Jak jsem psal, BEM navazuje na [OOCSS](oocss.md). Je na něm také hezké, že se může pěkně doplňovat se šířeji definovanými systémy organizace CSS jako [SMACSS](smacss.md) nebo [ITCSS](css-metodiky.md#itcss).
 
 Raději si v těch metodikách udělejme pořádek:
 

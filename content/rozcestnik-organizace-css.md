@@ -19,6 +19,7 @@
 
 ## Metodiky
 
+- [Metodiky v CSS](css-metodiky.md)
 - [BEM](bem.md)
 - [BEM: časté chyby](https://www.vzhurudolu.cz/blog/63-bem-chyby)
 - [OOCSS](oocss.md)

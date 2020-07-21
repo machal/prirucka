@@ -97,7 +97,7 @@ Jeden problém řeší jeden soubor. Vyhýbáme se souborům míchajícím více
 
 ### 2.2) Soubory umísťujeme do adresářů podle kategorií, v nichž specificita roste a počet dotčených HTML elementů se snižuje {#2-kategorie}
 
-Tipy pro metody organizace: [jednoduché projekty](https://www.vzhurudolu.cz/blog/29-organizace-css-2014#adresarova-struktura-css-zdrojaku). Složitější podle [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
+Tipy pro metody organizace: [jednoduché projekty](https://www.vzhurudolu.cz/blog/29-organizace-css-2014#adresarova-struktura-css-zdrojaku). Složitější podle [ITCSS](css-metodiky.md#itcss).
 
 ```scss
 // Dobre:
