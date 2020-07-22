@@ -6,11 +6,59 @@ Browsersync je velmi užitečný nástroj pro lokální vývoj webů. Pomáhá h
 2. Synchronizace interakcí při testování webu.
 3. Ladění webu na mobilních zařízeních.
 
-Browsersync je Node.js komponenta, takže je kompatibilní [s Gruntem](grunt.md), Gulpem, ale i dalšími nástroji tohoto ekosystému. Je opensource a zdarma: [browsersync.io](https://www.browsersync.io/).
+Browsersync je Node.js komponenta, takže může běžet na příkazové řádce, ale je kompatibilní také s [s Gruntem](grunt.md), Gulpem, [Webpackem](webpack.md), ale i dalšími nástroji tohoto ekosystému.
 
 <!-- AdSnippet -->
 
-V textu budu jeho instalaci a základní vlastnosti ukazovat na příkladu. Zkušenější mohou skočit rovnou na poslední část „Další tipy pro práci s Browsersync“. 
+Je opensource a zdarma: [browsersync.io](https://www.browsersync.io/).
+
+## Instalace Browsersync pro použití na příkazové řádce
+
+Na lokální mašině předtím potřebujete rozchodit [Node ekosystém](node-instalace.md).
+
+### 1) Instalujte Browsersync globálně
+
+```text
+npm install -g browser-sync
+```
+
+[Správci balíčků NPM](npm.md) jsme tímto řekli, aby Browsersync instaloval globálně (parametr `-g`).
+
+Vrátit by se mělo info, že máme nástroj instalovaný v systému v aktuální verzi:
+
+```text
++ browser-sync@2.26.10
+```
+
+Ověřit, že máme nainstalováno, můžeme také příkazem `browser-sync help`, který vrátí jednoduchou nápovědu.
+
+### 2) Spustíme Browsersync
+
+V základu můžeme sledovat CSS soubor a změny v něm pak rovnou vkládat do prohlížeče.
+
+HTML a CSS soubor pro základní vyzkoušení si můžete stáhnout nebo naklonovat z mého [Gistu](https://gist.github.com/machal/05ed82cafb7644ff35c207dfbbcf5c8f).
+
+V adresáři si pak spustíte Browsersync:
+
+```text
+browser-sync start --server --files "*.css"
+```
+
+Spouštíme server (parametr `--server`), který sleduje všechny soubory, jež mají koncovku CSS (`--files "*.css"`).
+
+Browsersync nám teď náš `index.html` otevře ve výchozím prohlížeči na `http://localhost:3000/` a čeká na naše změny v CSS.
+
+*TODO video*
+
+Takto bychom řešili jednoduchou obsluhu statického webu. Většinou ale nám ale už nějaký server běží, například Apache, když projekt funguje na PHP. Pak bychom Browsersync pouštěli jen jako proxy nad už fungujícím lokálním serverem:
+
+```text
+browser-sync start --proxy "myproject.dev" --files "*.{css,js}”
+```
+
+Tímto startujeme Browsersync jako proxy k už běžícímu serveru `myproject.dev` a říkáme, že chceme sledovat soubory s koncovkou CSS a JS.
+
+Další možnosti práce na příkazové řádce jsou [v dokumentaci](https://www.browsersync.io/docs/command-line).
 
 ## Instalace ukázky krok za krokem
 
@@ -111,20 +159,7 @@ Co jsem tím nastavil?
 
 - V `bsFiles` je cesta k souborům, které se budou naživo vkládat do prohlížeče, jakmile je změníte.
 - `watchTask: true` v nastavení úlohy říká, že soubory sledujete ještě `watch` pluginem. Pravděpdobně totiž po změně souboru provádíte ještě další operace nad nimi – minifikaci, spojování atd. BrowserSync tomuto procesu nesmí stát v cestě.
-- V `proxy: 'vzhurudolu.localhost'` je adresa, na které mi projekt už na lokále běží. Využívám tedy jiný server (v mém případě Apache z MAMP balíčku). Je ale dobré vědět, že Browsersync nabízí vlastní server. Více v další části. 
-
-<div class="web-only text-center text-small">
-  <hr>
-    <p>
-      Text je součástí mého e-booku <a href="/ebook">Vzhůru do CSS3</a>, který 
-      exkluzivně obsahuje také další materiál 
-      o&nbsp;flexboxu, CSS3 a&nbsp;moderní webové kodéřině&nbsp;obecně.
-    </p>
-    <p>
-      <a class="button" href="/ebook#objednavka">Koupit e-book za 249&nbsp;Kč</a>
-    </p>
-  <hr>
-</div>
+- V `proxy: 'vzhurudolu.localhost'` je adresa, na které mi projekt už na lokále běží. Využívám tedy jiný server (v mém případě Apache z MAMP balíčku). Je ale dobré vědět, že Browsersync nabízí vlastní server. Více v další části.
 
 ## Další tipy pro práci s Browsersync
 
@@ -157,5 +192,3 @@ Pokud nepoužíváte Chrome, kde je možnost zpomalení rychlosti připojení ve
 Zobrazení obrysů prvků kvůli testování CSS layoutu můžete nastavit na `http://localhost:3001/remote-debug`. Layout je také možné testovat oproti  mřížce vykreslené na pozadí. Používá technologii Pesticide. [Pesticide.io](http://pesticide.io/).
 
 To by mohlo být všechno. Browsersync vám tedy pomůže zefektivnit práci s frontend technologiemi a testování na mobilních zařízeních. Patří k mým nejoblíbenějším nástrojům. Zkuste ho.
-
-
