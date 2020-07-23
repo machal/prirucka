@@ -5,7 +5,12 @@ V naprosté většině v CSS Gridu definujeme explicitní mřížku, předem uve
 
 Může se nám ale stát, že položku umístíme na místo, kam explicitní mřížka nesahá. V takovém případě se nám mřížka automaticky rozšíří o implicitní část. Budete se divit, ale i tu můžeme předem nadefinovat.
 
-*TODO obrázek: Mřížka s explicitní a implicitní částí.*
+<figure>
+<img src="../dist/images/original/vdgrid/grid-explicit-implicit.png" width="1600" height="900" alt="Explicitní a implicitní CSS Grid">
+<figcaption markdown="1">
+*Obrázek: Mřížka s explicitní (doslovně definovanou) a implicitní (automaticky definovanou) částí.*
+</figcaption>
+</figure>
 
 Podívejme se, jaké vlastnosti obě mřížky definují:
 
@@ -46,13 +51,13 @@ Co se ale stane, když do DOMu přidáme čvrtou položku?
 </div>
 ```
 
-Přidá se jako čtvrtá položka vedle třetí? Co myslíte? 
+Přidá se jako čtvrtá položka vedle třetí? Co myslíte?
 
-Samozřejmě, že ne. Vždyť jsme prohlížeči výslovně (explicitně) řekli, že chceme třísloupcový layout. 
+Samozřejmě, že ne. Vždyť jsme prohlížeči výslovně (explicitně) řekli, že chceme třísloupcový layout.
 
 V takovém případě prohlížeče layout zalomí a přidají nový řádek. Jenže počkat – vždyť jsme žádné řádky nedefinovali! Tohle je přesně místo, kde můžeme seznámit s implicitním gridem.
 
-Definují jej vlastnosti [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md), které mají výchozí hodnotu `auto`. To neznamená nic jiného než: „Přidávej směle nové řádky (nebo sloupce, pokud má layout opačný směr) a nic neřeš, nazdar.“
+Implicitní layout definují vlastnosti [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md), které mají výchozí hodnotu `auto`. To neznamená nic jiného než: „Přidávej směle nové řádky (nebo sloupce, pokud má layout opačný směr) a nic dalšího neřeš, nazdar.“
 
 Pokud bychom si ale přáli jiné parametry pro ty potenciální nové prvky mřížky, můžeme to prostě definovat:
 
@@ -62,9 +67,14 @@ Pokud bychom si ale přáli jiné parametry pro ty potenciální nové prvky mř
 }
 ```
 
-Mřížce tím nepřikazujeme, aby byla rovnou dvouřádková. Říme zhruba toto: „Zatím nic nevykresluj, ale pokud by tam náhodou přibyla položka na druhou řádku, vykresli ji dvakrát tak vysokou než jsou ty na prvním řádku.“ Tak tohle je ten slavný implicitní grid. 
+Mřížce tím nepřikazujeme, aby byla rovnou dvouřádková. Říkáme zhruba toto: „Zatím nic nevykresluj, ale pokud by náhodou přibyla položka na druhou řádku, vykresli ji dvakrát tak vysokou než jsou ty na prvním řádku.“ Tak tohle je ten slavný implicitní grid. Vypadá to teď jako na obrázku.
 
-Podívejte se na ukázku, dáme si pak ještě jednu.
+<figure>
+<img src="../dist/images/original/vdgrid/grid-explicit-implicit-example-1.png" width="1600" height="450" alt="Explicitní a implicitní CSS Grid - 1. příklad">
+<figcaption markdown="1">
+*Obrázek: A helemese, na druhém řádku je položka. Ta se zformátuje podle automatického, implicitního gridu.*
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/zYrGoqQ](https://codepen.io/machal/pen/zYrGoqQ?editors=1100)
 
@@ -89,11 +99,16 @@ Ve stylech sice zapneme formátovací kontext mřížky, nějakou tu mezeru pomo
 }
 ```
 
-Prohlížeč si řekne: „Hmm… grid, ale bez deklarace, takže to prostě vypíšu pod sebe.“ A jak řekl, tak udělal:
+Prohlížeč si řekne: „Hmm… grid! Ovšem pozor – nemá deklaraceci layoutu, takže to prostě vypíšu pod sebe.“ A jak řekl, tak udělá:
 
-*TODO obrázek*
+<figure>
+<img src="../dist/images/original/vdgrid/grid-explicit-implicit-example-2a.png" width="1600" height="450" alt="Explicitní a implicitní CSS Grid - 2. příklad">
+<figcaption markdown="1">
+*Obrázek: Tady žádný grid není, co jiného bychom měli čekat?*
+</figcaption>
+</figure>
 
-Jenže přesně na to vývojář čekal a prohlížeč jde zaskočit přidáním čtvrté položky do kontejneru s tímto předpisem:
+Jenže přesně na to vývojář čeká a prohlížeč jde zaskočit přidáním čtvrté položky do kontejneru s tímto předpisem:
 
 ```css
 .item--new {
@@ -104,11 +119,16 @@ Jenže přesně na to vývojář čekal a prohlížeč jde zaskočit přidáním
 
 Prohlížeč: „No toto! Máme tam přeci jen tři sloupce a jeden řádek. A ty mi tady něco umísťuješ do pátého slupce a druhého řádku!“
 
-Naštěstí si ale vzpomene, že kromě explicitního mřížky jej učili ještě implicitní. A že tam, kde chybí explicitní buňky, může vyskládat ty implicitní:
+Naštěstí si ale náš milý prohlížeč vzpomene, že kromě explicitního mřížky jej učili ještě implicitní. Tedy, že tam, kde chybí explicitní buňky, může vyskládat ty implicitní:
 
-*TODO obrázek*
+<figure>
+<img src="../dist/images/original/vdgrid/grid-explicit-implicit-example-2b.png" width="1600" height="450" alt="Explicitní a implicitní CSS Grid - příklad">
+<figcaption markdown="1">
+*Obrázek: Hele, grid!*
+</figcaption>
+</figure>
 
-Výchozí výška i šířka implicitních buněk je na hodnotě `auto`, takže podle obsahu. No a když žádný není… nemužeme se pak divit, že čtvrtý sloupec je méně široký než první tři a nový pátý. Nemá totiž žádný obsah. Mohli bychom to opravit přípravou implicitní mřížky, například takto:
+Výchozí výška i šířka implicitních buněk je na hodnotě `auto`, takže se rozměry určí podle obsahu položky. No a když tam žádný není… nemužeme se pak divit, že čtvrtý sloupec je méně široký než první tři a nový pátý. Nemá totiž žádný obsah. Mohli bychom to opravit přípravou implicitní mřížky, například takto:
 
 ```css
 .container {
