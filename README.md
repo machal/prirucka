@@ -101,6 +101,8 @@ Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají
 
 ### Video
 
+### Vložení z YouTube
+
 Ideální je vložení pomocí HTML kódu. Markdown je tady nespolehlivý:
 
 ```html
@@ -117,7 +119,11 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
-Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md). Ale je potřeba vložit jako MP4, protož např. Safari WEBM neumí. Pokud video stahuješ ze zdrojů od Googlu, stahuj v Safari.
+### Vložení MP4
+
+Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md).
+
+Ale je potřeba vložit jako MP4, protož např. Safari WEBM neumí. Při vytváření v QuickTime stačí po uložení do `.mov` přejmenovat koncovku na `.mp4`. Pokud video stahuješ ze zdrojů od Googlu, stahuj v Safari, tam se to uloží do MP4.
 
 ```html
 <div class="rwd-media">
