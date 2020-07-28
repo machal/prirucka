@@ -128,7 +128,7 @@ Další možnosti práce na příkazové řádce jsou [v dokumentaci](https://ww
 <figure>
 <img src="../dist/images/original/browsersync-ui.png" width="1600" height="900" alt="Uživatelské rozhraní Browsersync">
 <figcaption markdown="1">
-*Obrázek: Uživatelské rozhraní Browsersync, které běží na http://localhost:3001/*
+*Obrázek: Uživatelské rozhraní Browsersync, které běží na localhost:3001*
 </figcaption>
 </figure>
 
