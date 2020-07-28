@@ -1,13 +1,13 @@
 # Browsersync
 
-Browsersync je velmi užitečný nástroj pro lokální vývoj webů. Pomáhá se dvěma důležitými úkoly dnešních webových vývojářů:
+Browsersync je velmi užitečný nástroj pro lokální vývoj webů. Pomáhá se dvěma důležitými úkoly:
 
-1. Živé promítání změn ve zdrojácích do prohlížeče.
-2. Synchronizace interakcí při testování webu.
+1. Živé promítání změn ze zdrojových souborů do prohlížeče.
+2. Synchronizace interakcí napříč prohlížeči.
 
-Browsersync je Node.js komponenta, takže může běžet na příkazové řádce, ale je kompatibilní také s [s Gruntem](grunt.md), Gulpem, [Webpackem](webpack.md), ale i dalšími nástroji tohoto ekosystému.
+Browsersync je Node.js komponenta, takže může běžet na příkazové řádce, ale je kompatibilní také s [s Gruntem](grunt.md), Gulpem, [Webpackem](webpack.md) a dalšími nástroji tohoto ekosystému.
 
-<!-- TODO obrázek -->
+![Browsersync](../dist/images/original/browsersync.jpg)
 
 Je opensource a zdarma: [browsersync.io](https://www.browsersync.io/).
 
@@ -22,9 +22,11 @@ Je opensource a zdarma: [browsersync.io](https://www.browsersync.io/).
 
 ## Co Browsersync umí? {#co-umi}
 
+Tenhle prográmek zvládá řadu věcí, ale začneme dvěma nejdůležitějšími.
+
 ### Živé promítání změn do prohlížeče {#co-umi-live}
 
-Upravíte CSS nebo HTML soubor a změny se vám hned projeví v prohlížeči bez obnovení stránky. Možná už to znáte z jiných nástrojů. Původně s tím přišel nástroj [LiveReload](http://livereload.com/).
+Upravíte CSS nebo HTML soubor a změny se vám hned projeví v prohlížeči bez obnovení stránky. Možná už to znáte z jiných nástrojů. Původně s tím přišlo rozšíření [LiveReload](http://livereload.com/).
 
 Pokud živý náhled neznáte nebo nevěříte, že to nějak zásadně pomáhá, opravdu (ale *opravdu*) si to zkuste. Pomáhá to totiž *hodně*.
 
@@ -35,7 +37,9 @@ Pokud živý náhled neznáte nebo nevěříte, že to nějak zásadně pomáhá
   </video>
 </div>
 
-Změny se hned projeví v prohlížeči. Obnovení stránky netřeba. Úplně nejlepší je nastavit si editor, aby ukládal změny v otevřených souborech hned po přepnutí do jiné aplikace. Pak stačí přepínat mezi editorem a prohlížečem. Šetří to hrozně energie, fakt že jo.
+Změny se hned projeví v prohlížeči. Obnovení stránky dělat nemusíte.
+
+Úplně nejlepší je nastavit si editor, aby ukládal změny v otevřených souborech hned po přepnutí do jiné aplikace. Pak stačí přepínat mezi editorem a prohlížečem. Šetří to hrozně energie, fakt že jo.
 
 ### Synchronizace interakcí při testování webu {#co-umi-sync}
 
@@ -51,7 +55,7 @@ Browsersync vám během spuštění do příkazové řádky vypíše něco takov
 UI External: http://192.168.0.2:3001
 ------------------------------------
 ```
- 
+
 Co je to za adresy?
 
 - `Local` –  tam najdete svůj web.
@@ -60,6 +64,8 @@ Co je to za adresy?
 - `UI External` – rozhraní s nastavením na připojených zařízeních.
 
 Vezměte mobil připojený do stejné wifi a vyťukejte do tamního prohlížeče `External` adresu.  Teď když budete provádět uživatelské interakce v jednom zařízení, druhé bude dělat totéž za vás. Pěkné, ne? Browsersync to umí s klikáním, rolováním stránky nebo taky vyplňováním formulářů.
+
+<!-- AdSnippet -->
 
 Proč vám o takové *blbině* vyprávím? Protože ušetří vaši energii při testování responzivních webů na reálných zařízeních. [vrdl.cz/p/jak-testovat-responzivni-weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 
@@ -119,26 +125,33 @@ Tímto startujeme Browsersync jako proxy k už běžícímu serveru `myproject.d
 
 Další možnosti práce na příkazové řádce jsou [v dokumentaci](https://www.browsersync.io/docs/command-line).
 
+<figure>
+<img src="../dist/images/original/browsersync-ui.png" width="1600" height="900" alt="Uživatelské rozhraní Browsersync">
+<figcaption markdown="1">
+*Obrázek: Uživatelské rozhraní Browsersync, které běží na http://localhost:3001/*
+</figcaption>
+</figure>
+
+Předpokládám ale, že na příkazové řádce tenhle užitečný nástroj většinou používat nebudete. Podívejme se na jeho integraci s populárními spouštěči.
+
 ## Browsersync a automatizační nástroje {#automatizace}
 
 Výše uvedeným postupem jsme si Browsersync nainstalovali do příkazové řádky, takže jej můžeme volat z jakýchkoliv prográmků, které to používají.
 
 - *NPM skripty*  
-Nástroj, který je asi pro webaře nejbližší k příkazové řádce. Není potřeba nic dalšího instalovat. Mrkněte se jen na [nápovědu BrowserSync k příkazové řádce](https://www.browsersync.io/docs/command-line) a tady [návod na zprovoznění](https://maheshwaghmare.com/browser-sync/).
+Nástroj, který je asi pro webaře nejblíže k příkazové řádce. Není potřeba nic dalšího instalovat. Mrkněte se jen na [nápovědu BrowserSync k příkazové řádce](https://www.browsersync.io/docs/command-line) a tady [návod na zprovoznění](https://maheshwaghmare.com/browser-sync/).
 - *Gulp*  
-Je potřeba instalovat wrapper pro Gulp: `npm install browser-sync gulp --save-dev` a pak už vám asi vystačí [dokumentace BrowserSync pro Gulp](https://www.browsersync.io/docs/gulp).
+Je potřeba instalovat BrowserSync a Gulp: `npm install browser-sync gulp --save-dev` a pak už vám asi vystačí [dokumentace BrowserSync pro Gulp](https://www.browsersync.io/docs/gulp).
 - *Grunt*  
-Instalujte balíček: `` a pak mrkněte na [můj postup níže](#automatizace-grunt) nebo [dokumentaci BrowserSync](https://www.browsersync.io/docs/grunt).
+Instalujte plugin pro Grunt: `npm install grunt-browser-sync --save-dev` a pak mrkněte na [můj postup níže](#automatizace-grunt) nebo [dokumentaci BrowserSync](https://www.browsersync.io/docs/grunt).
 - *Webpack*  
 [V dokumentaci dole](https://www.browsersync.io/docs/recipes) je pár receptů pro [Webpack](webpack.md).
 - *Parcel*  
 Parcel ve výchozím nastavení nějaké automatické obnovování stránky dělá, ale pokročilé vlastnosti je možné dodat pomocí pluginu [parcel-browser-sync](https://www.npmjs.com/package/@zartsoft/parcel-browser-sync).
 
-<!-- TODO riki? -->
+Dřívější verze tohoto textu byla postavena na konfiguraci v nejstarším automatizačním nástroji – [Gruntu](grunt.md). Dneska už se moc nepoužívá, ale nechávám to zde pro případné zájemce. Vy ostatní můžete tuto část přeskočit.
 
 ### Grunt: Instalace ukázky a nastavení {#automatizace-grunt}
-
-Dřívější verze tohoto textu byla postavena na konfiguaci v nejstarším automatizačním nástroji – [Gruntu](grunt.md). Dneska už se moc nepoužívá, ale nechávám to zde pro případné zájemce.
 
 Vezmeme tento příklad z ukázek využití Browsersync, kterým říkají Recipes: [git.io/vKfhs](https://github.com/Browsersync/recipes/tree/master/recipes/grunt.html.injection).
 
@@ -173,10 +186,12 @@ browserSync: {
 Co jsem tím nastavil?
 
 - V `bsFiles` je cesta k souborům, které se budou naživo vkládat do prohlížeče, jakmile je změníte.
-- `watchTask: true` v nastavení úlohy říká, že soubory sledujete ještě `watch` pluginem. Pravděpdobně totiž po změně souboru provádíte ještě další operace nad nimi – minifikaci, spojování atd. BrowserSync tomuto procesu nesmí stát v cestě.
+- `watchTask: true` v nastavení úlohy říká, že soubory sledujete ještě `watch` pluginem. Pravděpodobně totiž po změně souboru provádíte ještě další operace nad nimi – minifikaci, spojování atd. BrowserSync tomuto procesu nesmí stát v cestě.
 - V `proxy: 'vzhurudolu.localhost'` je adresa, na které mi projekt už na lokále běží. Využívám tedy jiný server (v mém případě Apache z MAMP balíčku). Je ale dobré vědět, že Browsersync nabízí vlastní server. Více v další části.
 
 ## Pokročilejší tipy pro práci s Browsersync {#tipy}
+
+Naučíme se spouštět vlastní server, do živého náhledu reflektovat změny v HTML, odladit si CSS nebo přiškrtit rychlost připojení.
 
 ### Vlastní server {#tipy-server}
 
@@ -187,6 +202,8 @@ server: {
   baseDir: "./"
 }
 ```
+
+<!-- AdSnippet -->
 
 Viz také [browsersync.io/docs/grunt#grunt-server](https://www.browsersync.io/docs/grunt#grunt-server).
 
@@ -204,6 +221,17 @@ Pokud nepoužíváte Chrome, kde je možnost zpomalení rychlosti připojení ve
 
 ### Rychlé ladění CSS layoutu {#tipy-css}
 
-Zobrazení obrysů prvků kvůli testování CSS layoutu můžete nastavit na `http://localhost:3001/remote-debug`. Layout je také možné testovat oproti  mřížce vykreslené na pozadí. Používá technologii Pesticide. [Pesticide.io](http://pesticide.io/).
+Zobrazení obrysů prvků kvůli testování CSS layoutu můžete nastavit na `http://localhost:3001/remote-debug`.
 
-To by mohlo být všechno. Browsersync vám tedy pomůže zefektivnit práci s frontend technologiemi a testování na mobilních zařízeních. Patří k mým nejoblíbenějším nástrojům. Zkuste ho.
+<figure>
+<img src="../dist/images/original/browsersync-debug.png" width="1600" height="900" alt="Browsersync - debugování CSS">
+<figcaption markdown="1">
+*Obrázek: Ladění layoutu pomocí funkce „Remote Debug“ v Browsersync.*
+</figcaption>
+</figure>
+
+ Layout je také možné testovat oproti  mřížce vykreslené na pozadí. Používá technologii Pesticide. [Pesticide.io](http://pesticide.io/).
+
+To by mohlo být všechno. Browsersync vám  pomůže zefektivnit práci na webech. Patří k mým nejoblíbenějším nástrojům. Zkuste ho.
+
+<!-- AdSnippet -->
