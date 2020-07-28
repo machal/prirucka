@@ -230,7 +230,7 @@ Zobrazení obrysů prvků kvůli testování CSS layoutu můžete nastavit na `h
 </figcaption>
 </figure>
 
- Layout je také možné testovat oproti  mřížce vykreslené na pozadí. Používá technologii Pesticide. [Pesticide.io](http://pesticide.io/).
+ Layout je také možné testovat oproti  mřížce vykreslené na pozadí. Používá technologii [Pesticide](https://github.com/mrmrs/pesticide).
 
 To by mohlo být všechno. Browsersync vám  pomůže zefektivnit práci na webech. Patří k mým nejoblíbenějším nástrojům. Zkuste ho.
 
