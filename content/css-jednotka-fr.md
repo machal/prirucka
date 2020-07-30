@@ -33,11 +33,13 @@ Další problém je v *box modelu*, způsobu počítání šířky. Jak vidíte 
 
 ## Podíl na zbytku {#podil}
 
-Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou neokupují prvky s rozměry nastavenými běžnými [jednotkami délky](jednotky.md), jako jsou `%`, `px`, `em`, `rem` a další.
+Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou neokupují prvky s rozměry nastavenými běžnými [jednotkami délky](jednotky.md), jako jsou `%`, `px`, `em`, `rem` a další:
 
-CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
+<img src="../dist/images/original/vdgrid/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS Gridu">
 
 Pomocí `grid-template-columns: 80px 5em 2fr 1fr` definuje čtyřsloupcovou mřížku. První sloupec má fixní šířku `80px`. Druhý má šířku `5em`, takže [jeho šířka](jednotky.md#em) bude záležet na velikosti písma rodičovského prvku. Pokud nám zbude nějaký prostor, prohlížeč jej vydělí třemi (`2fr` + `1fr`) a rozpočítá na dvě buňky definované podílovou jednotkou.
+
+CodePen: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)
 
 ## Nulová a desetinná čísla. Hodnoty, se kterými je legrace {#hodnoty}
 

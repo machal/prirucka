@@ -39,9 +39,9 @@ Layout je definovaný jako mřížka o třech sloupcích a dvou řádcích:
 }
 ```
 
-Výchozí směr vykreslení je `grid-auto-flow:row`, tedy po řádcích:
+Výchozí směr vykreslení je `grid-auto-flow:row`, tedy po řádcích.
 
-<!-- TODO: obrázek s odstraněním auto-flow https://codepen.io/machal/pen/voXWGv?editors=1100 -->
+CodePen: [cdpn.io/e/KKVjvRm](https://codepen.io/machal/pen/KKVjvRm?editors=1100)
 
 Můžeme jej ale změnit do svislého (sloupcového) směru:
 
@@ -51,7 +51,7 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 }
 ```
 
-<!-- TODO: obrázek https://codepen.io/machal/pen/voXWGv?editors=1100 -->
+<img src="../dist/images/original/vdgrid/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column">
 
 V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
 
