@@ -78,9 +78,7 @@ Oblasti mřížky můžete snadno umístit do stejných míst a pomocí vám jis
 
 <!-- TODO CodePen a obrázek k z-index, pokud budu mít -->
 
-Samozřejmě je možné používat i vlastnost `position`, která snadno vytrhne položky mřížky z jejich původních pozic:
-
-<img src="../dist/images/original/vdgrid/css-grid-position.png" width="1920" height="540"  alt="CSS Grid a vlastnost position">
+Samozřejmě je možné používat i vlastnost `position`, která snadno vytrhne položky mřížky z jejich původních pozic.
 
 ## 8) Zanořování mřížek
 
