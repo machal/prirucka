@@ -2,10 +2,6 @@
 
 Texty o technikách a technologiích moderní webové kodéřiny.
 
-## Autorství
-
-Autorem Příručky je Martin Michálek: [vrdl.cz/martin]([www.vzhurudolu.cz/martin).
-
 Opravy, bugreporty, změny jsou vítány: [github.com/machal/prirucka/issues](https://github.com/machal/prirucka/issues).
 
 ## Používáme Markdown Extra
@@ -59,6 +55,8 @@ A pozor, zápis odkazu na konci odstavce nesmí začínat `http://` např. `[vrd
 
 Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům tedy dávat do textu shrnutí.
 
+## Komponenty ve stránce
+
 ### Obrázky
 
 - Zatím jen JPG nebo PNG.
@@ -89,7 +87,7 @@ Alternativně s popiskem jako `<figure>`:
 
 Popisek (`figcaption`) není potřeba uvádět jako: „Obrázek: …“, protože je ve všech místech výskytu vizuálně oddělený od zbytku obsahu.
 
-### Jiný poměr stran než 16:9
+#### Jiný poměr stran než 16:9
 
 Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají jiný poměr stran než 16:9, uvádět rozměry explicitně. Stačí poměr stran. Například pro výškou poloviční obrázky – 32:9:
 
@@ -101,7 +99,7 @@ Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají
 
 ### Video
 
-### Vložení z YouTube
+#### Vložení z YouTube
 
 Ideální je vložení pomocí HTML kódu. Markdown je tady nespolehlivý:
 
@@ -119,7 +117,7 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
-### Vložení MP4
+#### Vložení MP4
 
 Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md).
 
@@ -134,7 +132,7 @@ Ale je potřeba vložit jako MP4, protož např. Safari WEBM neumí. Při vytvá
 </div>
 ```
 
-### CodePen
+### CodePen s ukázkou
 
 Ukázky vkládáme jako běžný odstavec v Markdownu:
 
@@ -182,10 +180,9 @@ Složitější tabulky ideálně jako `<figure>`:
 
 Třída `rwd-scrollable` zajišťuje rolování do stran na blogu u širších tabulek.
 
-
 ### Podcast
 
-Vložení opět pomocí HTML kódu. 
+Vložení opět pomocí HTML kódu.
 
 ```html
 <p class="podcast">
@@ -195,7 +192,7 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/s-robinem-pokornym-o-css-v-j
 
 ### Související články
 
-Vložení opět pomocí HTML kódu. 
+Vložení opět pomocí HTML kódu.
 
 ```html
 <div class="related" markdown="1">
@@ -226,7 +223,7 @@ HTML značky lze opsat kapitálkami („Značka HTML slouží…“). JS a CSS k
 
 Kvůli e-bookům by bloková ukázka kódu měla mít maximální délku kódu kolem 60 znaků na řáku.
 
-### Zobrazení jen na webu
+### Zobrazení jen na webu nebo v e-boocích
 
 Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování textu odstraněno.
 
@@ -258,3 +255,19 @@ Původně se používalo →, ale nově lépe › (_Správce (Admin) › Služba
 ### Umístění reklamy na webu
 
 Standardně po druhém odstavci. Lze změnit jednou nebo více kotvami `<!-- AdSnippet -->` v obsahu.
+
+## Autorství
+
+Pokud není řečeno jinak, autorem všech textů Příručky je Martin Michálek: [vrdl.cz/martin]([www.vzhurudolu.cz/martin).
+
+### Externí autoři
+
+Toto platí jak pro příručku, tak pro blog: 
+
+- Do [této složky na Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/aac47b2dab0cb485cf86478fe48483fe) vložit obrázek autora, výřez jen s hlavou.
+- Do redakčního systému je potřeba vložit jméno autora, odkaz na jeho web a obrázek z Cloudinary.
+
+Ukázky:
+
+- Robin Pokorný: https://www.vzhurudolu.cz/podcast/169-podcast-next-js
+- Marek Čevelíček: https://www.vzhurudolu.cz/blog/166-ux-tipy
