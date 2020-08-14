@@ -144,7 +144,7 @@ Na webu se to pak přepíše vkládaného `<iframe>`.
 
 - Důležité je uvést první adresu jako zkratku, kvůli kontextům mimo web, jako jsou e-booky nebo Github.
 - Odkaz ale vede na plné URL na CodePenu.
-- V `?editors=` jsou záložky se záložkou a typem kódu, který má být otevřený. Je to v řadě HTML, CSS, JS kód a konzole.
+- V parametru `?editors=` jsou uvedeny záložky se záložkou a typem kódu, který má být otevřený. Je to v řadě HTML, CSS, JS kód a konzole.
 
 ### Tabulka
 

@@ -59,10 +59,7 @@ Jakou bude mít blok barvu?
 
 Ano, přesně tak – zelenou. Rozhoduje pořadí v CSS. Na pořadí uvedení tříd v HTML naopak vůbec nezáleží. Omlouváme se ti, milé HTML.
 
-<p data-height="300" data-theme-id="502" data-slug-hash="YVgOZY" data-default-tab="css,result" data-user="machal" data-pen-title="CSS Cascade: Source Order Demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/YVgOZY/">CSS Cascade: Source Order Demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-Viz CodePen: [cdpn.io/e/YVgOZY](https://codepen.io/machal/pen/YVgOZY)
+CodePen: [cdpn.io/e/YVgOZY](https://codepen.io/machal/pen/YVgOZY?editors=0100)
 
 Co z toho vyplývá? I pouhé špatně zvolené pořadí souborů v projektu může nadělat paseku. Doporučuji k tomu nastudovat principy metodiky ITCSS od Harryho Robertse.
 
@@ -123,10 +120,7 @@ HTML je stejné:
 
 Výsledek bude modrý, no jasně.
 
-<p data-height="300" data-theme-id="502" data-slug-hash="mLbrzv" data-default-tab="css,result" data-user="machal" data-pen-title="CSS Cascade: Specificity Demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/mLbrzv/">CSS Cascade: Specificity Demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-Viz CodePen: [cdpn.io/e/mLbrzv](https://codepen.io/machal/pen/mLbrzv)
+CodePen: [cdpn.io/e/mLbrzv](https://codepen.io/machal/pen/mLbrzv?editors=0100)
 
 Pokud si nejste jistí, použijte skvělý kalkulátor specificity od Keegan Street: [specificity.keegan.st](http://specificity.keegan.st/)
 
@@ -171,10 +165,7 @@ HTML zůstává stejné:
 
 Výsledek bude modrý, jistě.
 
-<p data-height="300" data-theme-id="502" data-slug-hash="XqrjBR" data-default-tab="css,result" data-user="machal" data-pen-title="CSS Cascade: Importance Demo" class="codepen">See the Pen <a href="https://codepen.io/machal/pen/XqrjBR/">CSS Cascade: Importance Demo</a> by Martin Michálek (<a href="https://codepen.io/machal">@machal</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-Viz CodePen: [cdpn.io/e/XqrjBR](https://codepen.io/machal/pen/XqrjBR)
+CodePen: [cdpn.io/e/XqrjBR](https://codepen.io/machal/pen/XqrjBR?editors=0100)
 
 Asi vás nepřekvapí, že `!important` doporučuji používat jen když to máte dobře rozmyšleno nebo to zapadá do vaší vlastní metodiky psaní kaskádových stylů.
 
