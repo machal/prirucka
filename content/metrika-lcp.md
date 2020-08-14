@@ -57,7 +57,7 @@ Bere se jen výchozí velikost a pozice prvků („initial size“). Pokud je po
 
 Pokud se tedy prvky během renderování umísťují do viewportu, nezapočtou se. Pokud se z viewportu pomocí JS odstraňují, naopak se  započtou.
 
-## Jak probíhá výběr kandidátů pro LCP? {#pocitani-vyber}
+### Jak probíhá výběr kandidátů pro LCP? {#pocitani-vyber}
 
 Je jasné, že viditelná část obrazovky se běheme renderování poměrně hodně mění. Existuje tedy pojem „LCP candidate“, prvek, který je v daném stavu obrazovky vždy považován za největší, ale ještě stále může být pro LCP nahrazen jiným.
 
