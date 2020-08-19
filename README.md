@@ -256,6 +256,27 @@ Původně se používalo →, ale nově lépe › (_Správce (Admin) › Služba
 
 Standardně po druhém odstavci. Lze změnit jednou nebo více kotvami `<!-- AdSnippet -->` v obsahu.
 
+### Vkládání statistik CanIUse
+
+Vložení obrázku nejlépe přes CanIUse Embed: [caniuse.bitsofco.de](https://caniuse.bitsofco.de/).
+
+Uvést ale adresu přímo z Cloudinary, přesměrování nemá rád náš lightbox:
+
+```html
+<figure>
+<img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1/caniuse-embed/static/link-rel-preload-1590381119841.png" alt="Podpora preload v prohlížečích">
+<figcaption markdown="1">
+*Obrázek: Podpora přednačtení prohlížečích. Zdroj: [CanIUse Embed](https://caniuse.bitsofco.de/).*
+</figcaption>
+</figure>
+```
+
+Odkaz pak například touto formou:
+
+```
+Viz také [caniuse.com/css-containment](https://caniuse.com/#feat=css-containment)
+```
+
 ## Autorství
 
 Pokud není řečeno jinak, autorem všech textů Příručky je Martin Michálek: [vrdl.cz/martin]([www.vzhurudolu.cz/martin).
