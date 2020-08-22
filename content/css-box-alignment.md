@@ -1,8 +1,8 @@
 # Zarovnání boxů v CSS
 
-Box Alignment v CSS specifikuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo Gridu.
+Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo Gridu.
 
-Specifikace [Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu a zpřístupnila ji ostatním modulům.
+Specifikace „Box Alignment Module Level 3“ v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout.
 
 Nijak se zde nezabýváme zarovnáváním textu (vlastnosti jako `text-align`, `vertical-align`), ani staršími metodami zarovnávání boxů (`margin`, `float`…).
 
@@ -58,7 +58,7 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 - *Předmět zarovnání* (alignment subject) je samotný boxík, který zarovnáváme. V rámci textů mu zde občas budeme říkat také „položka“.
 - *Kontejner zarovnání* (alignment container) je rámec, ve kterém předmět zarovnáváme. Obvykle jde o rodičovský element.
 
-*TODO příklad s obrázkem, alespoň viz https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment*
+<!-- *TODO příklad s obrázkem, alespoň viz https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment* -->
 
 ### Náhradní řešení zarovnání {#pojmy-fallback}
 
@@ -68,7 +68,7 @@ Například pro uplatnění hodnoty `space-between` u vlastnosti `justify-conten
 
 ## Typy zarovnání podle elementu {#typy-element}
 
-<!-- TODO vysvetleni -->
+Zkusme zabřednout trošku více do hloubky a zároveň si v tom neudělat nepořádek. Vlastnosti a hodnoty zarovnání boxů v CSS můžeme dělat podle dvou klíčů. Ten první je zaměřený na elementy, které ovlivňuje – všechny položky, samostatnou položku nebo prostor mezi nimi.
 
 ### Zarovnání položek {#polozky}
 
@@ -80,7 +80,7 @@ Patří sem všechny vlastnosti, které v názvu obsahují `-items`:
 - `align-items` - zarovnání na blokové ose
 - `place-items` - zkratka pro obě vlastnosti
 
-### Zarovnání sebe sama {#sebe-sama}
+### Zarovnání samostatné položky {#sebe-sama}
 
 Zarovnání konkrétního subjektu uvnitř kontejneru.
 
@@ -90,11 +90,9 @@ Jde o všechny vlastnosti, které v názvu obsahují `-self`:
 - `justify-self` – zarovnání na řádkové ose
 - `place-self` - zkratka pro obě vlastnosti
 
-### Distribuce obsahu {#distribuce-obsahu}
+### Distribuce prostoru mezi položkami {#distribuce-prosotru}
 
-Distribuce obsahu řídí zarovnání obsahu uvnitř boxu.
-
-<!-- TODO nerozumim -->
+Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejneru zůstává mezi položkami.
 
 Patří sem všechny vlastnosti, které v názvu obsahují `-content`:
 
@@ -104,15 +102,20 @@ Patří sem všechny vlastnosti, které v názvu obsahují `-content`:
 
 ## Klíčová slova pro zarovnání {#typy-klicova-slova}
 
-<!-- TODO uvod a vysvětleni -->
+Druhý typ rozdělení CSS Box Alignment do skupin se zaměřuje nikoliv na vlastnosti, ale jejich hodnoty – klíčová slova.
+
+Většinou potřebujeme vyřešit poziční zarovnání, ale známe také zarovnání na účaří, zarovnání zbylého prostoru, zarování pro možnost přetečení a nakonec definici mezery mezi položkami.
+
+Zní to asi složitě, takže bude rovnou lepší proniknout rovnou do jednotlivých typů klíčových slov. Tentokrát si je doplníme i ukázkami.
 
 ### Poziční zarovnání {#pozicni}
 
 Určování polohy předmětu vzhledem k jeho kontejneru zarovnání. Ve specifikaci se používá pojem „Positional Alignment“.
 
-Týká se těchto vlastností:
+Týká se to už uvedených vlastností:
 
-- Zarovnání sebe sama (`justify-self`, `align-self` a `place-self`).
+- Zarovnání všech položek (`justify-items`, `align-items` a `place-items`).
+- Zarovnání samostatné položky (`justify-self`, `align-self` a `place-self`).
 - Distribuce obsahu (`justify-content`, `align-content` a `place-content`).
 
 Můžete použít tyto hodnoty:
@@ -128,13 +131,61 @@ Můžete použít tyto hodnoty:
 - `self-end` <small>(`-self`)</small>  
   Zarovnává předmět k hraně začátku kontejneru, která odpovídá konci předmětu na patřičné ose.
 - `flex-start` <small>(`-self` i `-content`, jen pro flexbox)</small>  
-  *TODO.* Mimo flexbox se hodnota chová jako `start`.
+  Totéž jako `start`, jen pro položky flexboxu. Mimo flexbox se hodnota chová jako `start`.
 - `flex-end` <small>(`-self` i `-content`, jen pro flexbox)</small>  
-  *TODO.* Mimo flexbox se hodnota chová jako `end`.
+  Totéž jako `end`, jen pro položky flexboxu.  Mimo flexbox se hodnota chová jako `end`.
 - `left` <small>(jen `justify-*`)</small>  
-  *TODO.* Pokud se použije na řádkové ose, chová se jako `start`.
+  Pokud se použije na řádkové ose, chová se jako `start`.
 - `right` <small>(jen `justify-*`)</small>  
-  *TODO.* Pokud se použije na řádkové ose, chová se jako `end`.
+  Pokud se použije na řádkové ose, chová se jako `end`.
+
+Troufám si tvrdit, že naprostá většina z praktických použití CSS Box Alignment se týká právě pozičního zarovnání.
+
+Mrkněme se na jednoduchý příklad. Máme následující HTML připravené pro třísloupcové rozvržení:
+
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
+
+Layout je s pomocí CSS Gridu definovaný následovně:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  height: 5em;  
+}  
+```
+
+A teď přichází ono zarovnání:
+
+```css
+.container {
+  align-items: start;
+}
+
+.item--3 {
+  align-self: end;
+}
+```
+
+Na nic nečekejme a vše vysvětleme:
+
+- Přes kontejner rozvržení (`.container`) nastavíme po hlavní ose (`align-`) všem položkám (`-items`) zarovnání k horní hraně kontejneru (`start`), dohromady tedy `align-items:start`.
+- Třetí položce `.item--3` udělíme výjimku – bude zarovnaná ke spodní hradně kontejneru – `align-self:end`.
+
+CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
 ### Zarovnání na účaří {#ucari}
 
@@ -148,11 +199,35 @@ Týká se těchto vlastností:
 Můžete použít tyto hodnoty:
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. *TODO fallback?*
+  Zarovnání na účaří prvního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. *TODO fallback?*
+  Zarovnání na účaří posledního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
+
+V demíčku navážeme na strukturu HTML z předchozí ukázky.
+
+Tentokrát ovšem přidáme tuto deklaraci:
+
+```css
+.item--2,
+.item--3 {
+  align-self: baseline;
+}
+
+.item--2 {
+  padding-top: 3em;
+}
+```
+
+Totiž:
+
+- Na rozdíl od první položky zarovnáme druhou a třetí na účaří (`align-self:baseline`).
+- Druhé položce přidáme vnitří okraj (`padding-top:3em`), takže prohlížeči zkomplikujeme jeho snahu o zarovnání.
+
+Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku zezhora tak, aby druhá i třetí lícovala na účaří.
+
+CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 
 ### Zarovnání zbylého prostoru {#zbyly-prostor}
 
@@ -164,14 +239,34 @@ Týká se těchto vlastnotí:
 
 Můžete použít tyto hodnoty:
 
+- `stretch` (výchozí)  
+  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 - `space-between`  
   Volné místo se rovnoměrně rozdělí mezi položky, přičemž první a poslední je zarovnaná s hranou kontejneru.
 - `space-around`  
   Volné místo se rovnoměrně rozdělí mezi položky a polovina mezery mezi položkami se vloží mezi hrany kontejneru a první a poslední položku.
 - `space-evenly`  
   Volné místo se rovnoměrně rozdělí mezi položky i mezi první a poslední položku a okraje kontejneru.
-- `stretch`  
-  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
+
+Účinek je možné vidět v ukázce, která využívá stejné HTML jako ty předchozí. CSS jsme změnili, využijeme tentokrát flexbox:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+}
+```
+
+Jdeme na vysvětlování:
+
+- Tím, že jsme omezili šířku položky na `100px`, při roztažení rodiče (`.container`) vznikne volné místo.
+- Jak se s volným místem vedle položek naloží určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
+
+CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
 ### Zarovnání pro přetečení {#overflow}
 
