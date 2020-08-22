@@ -15,7 +15,7 @@ Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou h
 
 <div class="rwd-scrollable f-6"  markdown="1">
 
-|                                     | **Inline** (`justify-*`) | **Block** (`align-*`) |
+|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) |
 | **Zarovnání položek** (`*-items`)   |  `justify-items`     | `align-items`     |
 | **Zarovnání sebe sama** (`*-self`)  |  `justify-self`      | `align-self`      |
 | **Distribuce obsahu** (`*-content`) |  `justify-content`   | `align-content`   |
@@ -32,10 +32,10 @@ Než začneme, musíme si objasnit pár konceptů. Nebojte se, nebudu to s teori
 
 Prohlížeče nám většinou umožňují jen dvourozměrný zážitek a tak zarovnáváme na dvě osy.
 
-Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit:
+Osy pro potřeby layoutu v CSS:
 
-- Změníme mód psaní (`writing-mode`) nebo jazyk dokumentu. Japonština nebo arabština se čtou zcela v odlišných směrech.
-- Změníme směr toku layoutu, což například ve flexboxu často děláme pomocí vlastnosti `flex-direction`.
+- Hlavní nebo-li řádková osa (inline axis), u nás obvykle vodorovná.
+- Příčná nebo-li bloková osa (block axis), u nás obvykle svislá.
 
 <figure>
 <img src="../dist/images/original/todo.jpg" width="1600" height="900" alt="…">
@@ -44,10 +44,10 @@ Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr mů
 </figcaption>
 </figure>
 
-Osy se proto pro potřeby layoutu v CSS nejmenují „vodorovná“ a „svislá“, ale:
+Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit:
 
-- „bloková“ (block), u nás obvykle svislá
-- „řádková“ (inline), u nás obvykle vodorovná
+- Změníme mód psaní (`writing-mode`) nebo jazyk dokumentu. Japonština nebo arabština se čtou zcela v odlišných směrech.
+- Změníme směr toku layoutu, což například ve flexboxu často děláme pomocí vlastnosti `flex-direction`.
 
 Ze stejného důvodu nemůžeme například říci, že zarovnáváme „vlevo nahoru“, ale vždy na začátek nebo na konec určité osy. K tomu se ještě dostaneme.
 
@@ -86,8 +86,8 @@ Zarovnání konkrétního subjektu uvnitř kontejneru.
 
 Jde o všechny vlastnosti, které v názvu obsahují `-self`:
 
-- `align-self` - zarovnání na blokové ose
 - `justify-self` – zarovnání na řádkové ose
+- `align-self` - zarovnání na blokové ose
 - `place-self` - zkratka pro obě vlastnosti
 
 ### Distribuce prostoru mezi položkami {#distribuce-prosotru}
