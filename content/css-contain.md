@@ -1,12 +1,66 @@
 # CSS vlastnost contain
 
-Vlastností `contain` označujeme části stránky, které jsou izolované od zbytku. Pokud je dobře použitá, umožníme tím zásadní optimalizace rychlosti vykreslování stránky v prohlížečích.
+Vlastností `contain` označujeme části stránky, které jsou izolované od zbytku, proto, aby prohlížeč nemusel překreslovat celou stránku a ušetřil tak výkon.
+
+Prohlížeče se nějakým způsobem snaží nepřepočítávát vzhled celé stránky při každé změně samy. Kromě toho existují kódérské triky jak to udělat v běžném CSS ([Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)). No a poslední možností je použít vlastnost `contain`.
+
+<!-- AdSnippet -->
+
+Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `content-visibility`](https://web.dev/content-visibility/), ale než si o ni něco na Vzhůru dolů napíšeme, musíme si načrtnout tento úvod do problematiky.
+
+## Dva příklady {#priklad}
+
+Vlastnost `contain` může ušetřit výpočetní čas hlavně v případech, kdy náš DOM obsahuje tisíce uzlů. Následující příklady proto berte jako schématické a hodně zjednodušené.
+
+### Přidání prvku do DOMu
+
+Tuhle ukázku jsem převzal [z dokumentace od Googlu](https://developers.google.com/web/updates/2016/06/css-containment). Máme následující HTML:
+
+```html
+<section class="view">
+  Home
+</section>
+
+<section class="view">
+  About
+</section>
+
+<section class="view">
+  Contact
+</section>
+```
+
+A teď JavaScriptem přidáme nový prvek:
+
+```html
+<section class="view">
+  Home
+</section>
+
+<section class="view">
+  About
+  <div class="newly-added-element">Check me out!</div>
+</section>
+
+<section class="view">
+  Contact
+</section>
+```
+
+Přidání nového prvku spouští rovnou tři kroky procesu překreslování – styly, layout a paint. Blbé ovšem je, že se ten proces spouští pro celý DOM a celou stránku.
+
+<figure>
+<img src="../dist/images/original/css-contain.png" width="1600" height="900" alt="…">
+<figcaption markdown="1">
+*Ilustrační obrázek: Čas pro layout může být omezen díky omezení na konkrétní boxík menšímu počtu prvku k přepočítání. Zdroj [developers.google.com](https://developers.google.com/web/updates/2016/06/css-containment).*
+</figcaption>
+</figure>
+
+### Výpis článků mimo viditelnou část obrazovky
 
 Vezměme, že na stránce máme stovky nebo tisíce samostatných položek typu články, produkty nebo třeba tweety. Většinu z nich uživatelé neuvidí v prvním vykresleném [viewportu](viewport.md) a zároveň jde o samostatné, izolované prvky, které se se zbytkem stránky nijak vzájemně neovlivňují.
 
-## Jednoduchý příklad {#priklad}
-
-Vezměme, že máme výpis článků ve stránce:
+Vezměme jejich výpis ve stránce:
 
 ```html
 <h1>Výpis článků</h1>
@@ -28,7 +82,7 @@ Pomocí vlastnosti `contain` můžeme prohlížeč informovat, že tyto prvky je
 }
 ```
 
-Tímto prohlížeči sdělujeme, že prvky `.element`, které „nevidí“ ve viewportu může v klidu vynechat ze situací, kdy by běžně znovu počítal vzhled celé stránky.
+Prohlížeči tak dáváme instrukci, že prvky `.element`, které „nevidí“ ve viewportu může v klidu vynechat z počítání vzhledu celé stránky.
 
 Ušetříme tím v některých situacích slušný renderovací čas.
 
@@ -58,9 +112,14 @@ Všechny typy zapouzdření, kromě stylů. Totéž jako zápis `contain: size l
 - `content`  
 Všechny typy zapouzdření, kromě stylů a velikosti. Totéž jako `contain: layout paint`.
 
-Hodnota `content` je vcelku bezpečně nastavitelná skoro na jakoukoliv větší skupinu elementů, o kterých víme, že se budou vykreslovat mimo obrazovku a že si nejsme jistí jejich skutečnou velikostí.
+Hodnota `strict` ušetří prohlížeče  více času, ale zase musíme znát a definovat velikost prvku.
 
-Hodnota `strict` ušetří prohlížeče ještě více času, ale zase musíme a definovat znát velikost prvku.
+<!-- AdSnippet -->
+
+Pojďme se zde vrátit k druhé ukázce – renderování desítek či stovek článků mimo viditelnou část obrazovky:
+
+- Pokud bychom použili `contain:content`, nemusíme definovat výšku jednotlivých bloků, ale na druhou stranu ji prohlížeč bude při prvním vykreslení považovat za nulovou a nevykreslí například správně velká rolovátka.
+- Pokud bychom použili `contain:strict`, prohlížeči musíme výšku sdělit, ale zase nenastane přepočítání velikosti rolovátka.
 
 ## Podpora: v Safari máme smůlu, ale je nám to jedno {#podpora}
 
@@ -76,3 +135,7 @@ Ale nevadí nám ani chybějící podpora v Safari. „Containment“ je typick�
 </figure>
 
 Viz také [caniuse.com/css-containment](https://caniuse.com/#feat=css-containment)
+
+<small markdown="1">Za připomínky autor děkuje [Michalovi Matuškovi](https://www.vzhurudolu.cz/lektori/michal-matuska).</small>
+
+<!-- AdSnippet -->
