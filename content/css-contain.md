@@ -2,7 +2,7 @@
 
 Vlastností `contain` označujeme části stránky, které jsou izolované od zbytku, proto, aby prohlížeč nemusel překreslovat celou stránku a ušetřil tak výkon.
 
-Prohlížeče se nějakým způsobem snaží nepřepočítávát vzhled celé stránky při každé změně samy. Kromě toho existují kódérské triky jak to udělat v běžném CSS ([Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)). No a poslední možností je použít vlastnost `contain`.
+Prohlížeče se nějakým způsobem snaží nepřepočítávát vzhled celé stránky při každé změně samy. Kromě toho existují kodérské triky jak to udělat v běžném CSS (viz [Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)). No a poslední možností je použít vlastnost `contain`.
 
 <!-- AdSnippet -->
 
@@ -12,7 +12,7 @@ Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `
 
 Vlastnost `contain` může ušetřit výpočetní čas hlavně v případech, kdy náš DOM obsahuje tisíce uzlů. Následující příklady proto berte jako schématické a hodně zjednodušené.
 
-### Přidání prvku do DOMu
+### Přidání prvku do DOMu {#priklad-pridani}
 
 Tuhle ukázku jsem převzal [z dokumentace od Googlu](https://developers.google.com/web/updates/2016/06/css-containment). Máme následující HTML:
 
@@ -56,7 +56,9 @@ Přidání nového prvku spouští rovnou tři kroky procesu překreslování �
 </figcaption>
 </figure>
 
-### Výpis článků mimo viditelnou část obrazovky
+Může pak pomoci přidání vlastnosti `contain`.
+
+### Výpis článků mimo viditelnou část obrazovky {#priklad-vypis}
 
 Vezměme, že na stránce máme stovky nebo tisíce samostatných položek typu články, produkty nebo třeba tweety. Většinu z nich uživatelé neuvidí v prvním vykresleném [viewportu](viewport.md) a zároveň jde o samostatné, izolované prvky, které se se zbytkem stránky nijak vzájemně neovlivňují.
 
@@ -65,10 +67,10 @@ Vezměme jejich výpis ve stránce:
 ```html
 <h1>Výpis článků</h1>
 <article class="article">
-  <!-- Zde bude složitější DOM struktura -->
+  <!-- … -->
 </article>
 <article class="article">
-  <!-- Zde bude složitější DOM struktura -->
+  <!-- … -->
 </article>
 ```
 
@@ -88,7 +90,7 @@ Ušetříme tím v některých situacích slušný renderovací čas.
 
 ## Typy „containmentu“ {#typy}
 
-Zatím se mi nepovedlo najít vhodné české slovíčko pro teorii, o které se [ve specifikaci](https://www.w3.org/TR/css-contain-2/) mluví jako o „CSS containmentu“. Jde o soběstačné a nezávislé zapouzdření prvku.
+Zatím se mi nepovedlo najít vhodné české slovíčko pro teorii, o které se [ve specifikaci](https://www.w3.org/TR/css-contain-2/) mluví jako o „CSS containmentu“. Jde o soběstačné a nezávislé zapouzdření prvku, což je ale poněkud kostrbaté označení.
 
 Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastnosti `contain`:
 
@@ -135,6 +137,14 @@ Ale nevadí nám ani chybějící podpora v Safari. „Containment“ je typick�
 </figure>
 
 Viz také [caniuse.com/css-containment](https://caniuse.com/#feat=css-containment)
+
+## Odkazy {#odkazy}
+
+- [CSS Containment na MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Containment)
+- [Igalia: An introduction to CSS Containment](https://blogs.igalia.com/mrego/2019/01/11/an-introduction-to-css-containment/)
+- [Smashing Magazine: Helping Browsers Optimize With The CSS Contain Property](https://www.smashingmagazine.com/2019/12/browsers-containment-css-contain-property/)
+
+Používáte vlastnost `contain`? Napište nám, kde se vám osvědčila a kde naopak ne do komentářů.
 
 <small markdown="1">Za připomínky autor děkuje [Michalovi Matuškovi](https://www.vzhurudolu.cz/lektori/michal-matuska).</small>
 
