@@ -6,9 +6,9 @@ Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejn
 
 <!-- TODO obrázkové schéma: co a kde se zarovnává -->
 
-Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována. 
+Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
 
-U flexboxu můžeme pro zarovnání položek na využít jen klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. [cdpn.io/e/eYZgOwL?editors=1100](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
+U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. [cdpn.io/e/eYZgOwL?editors=1100](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
 ## Jednoduchý příklad
 
@@ -75,3 +75,5 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 Jak už padlo, ve flexboxových layoutech je vlastnost `justify-items` ignorována, takže můžeme i bez nadsázky říct, že ji při použití `display:flex` podporují úplně všechny prohlížeče, které kdy vznikly.
 
 Ale vážněji: při použití `display:grid` zde máme tradiční výjimku – Internet Explorer 11.
+
+Více na [caniuse.com/justify-items](https://caniuse.com/#search=justify-items).

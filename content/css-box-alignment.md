@@ -76,9 +76,9 @@ Na kontejneru definujeme, jak se budou zarovnávat položky.
 
 Patří sem všechny vlastnosti, které v názvu obsahují `-items`:
 
-- `justify-items` – zarovnání na řádkové ose
-- `align-items` - zarovnání na blokové ose
-- `place-items` - zkratka pro obě vlastnosti
+- [`justify-items`](css-justify-items.md) – zarovnání na řádkové ose
+- [`align-items`](css-align-items.md) - zarovnání na blokové ose
+- [`place-items`](css-place-items.md) - zkratka pro obě vlastnosti
 
 ### Zarovnání samostatné položky {#sebe-sama}
 
@@ -86,9 +86,9 @@ Zarovnání konkrétního subjektu uvnitř kontejneru.
 
 Jde o všechny vlastnosti, které v názvu obsahují `-self`:
 
-- `justify-self` – zarovnání na řádkové ose
-- `align-self` - zarovnání na blokové ose
-- `place-self` - zkratka pro obě vlastnosti
+- [`justify-self`](css-justify-self.md) – zarovnání na řádkové ose
+- [`align-self`](css-align-self.md) - zarovnání na blokové ose
+- [`place-self`](css-place-self.md) - zkratka pro obě vlastnosti
 
 ### Distribuce prostoru mezi položkami {#distribuce-prosotru}
 
