@@ -96,7 +96,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
 
 Patří sem všechny vlastnosti, které v názvu obsahují `-content`:
 
-- `justify-content` – zarovnání na řádkové ose
+- [`justify-content`](css-justify-content.md) – zarovnání na řádkové ose
 - `align-content` - zarovnání na blokové ose
 - `place-content` - zkratka pro obě vlastnosti
 
