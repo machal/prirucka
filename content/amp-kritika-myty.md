@@ -159,11 +159,7 @@ Ano, zrychlení webu vždycky pomůže, ale na uživatelskou zkušenost člověk
 
 Samozřejmě se může stát, že mimo tento optimální způsob zobrazení stránky s přednačtením bude AMP verze pomalejší než původní web. Ale pro přednačtení je potřeba mít dvě věci – validní AMP stránku umístěnou v AMP Cache. Nic z toho zatím není běžným webům dostupné.
 
-<div class="ebook-only" markdown="1">
-
 Více jsme se tomu věnovali v textu [o rychlosti AMP stránek v různých fázích distribuce](amp-faze.md).
-
-</div>
 
 ## 5) „AMP je práce navíc, spravovat dvě verze je drahé“ {#5}
 
