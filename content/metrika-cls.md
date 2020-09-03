@@ -60,11 +60,13 @@ V takovém případě se dívejte na 75. percentil všech návštěv, jak to u C
 
 <!-- AdSnippet -->
 
+## Jak se CLS počítá? {#pocitani}
+
+Cumulative Layout Shift představuje součet všech posunů layoutu. U každého posunu se měří, jak velkou část obrazovky posun ovlivnil a o jakou vzdálenost se zlobící blok posunul.
+
 Pokud by vás snad zajímaly detaily o tom, jak se tato metrika přesně počítá, zavítejte na [web.dev](https://web.dev/cls/#layout-shifts-in-detail), kde to lidé z Googlu rozebírají.
 
-Tady jen stručně: Cumulative Layout Shift představuje součet všech posunů layoutu. U každého posunu se měří, jak velkou část obrazovky posun ovlivnil a o jakou vzdálenost se zlobící blok posunul.
-
-Pro potřeby vlastních měření v prohlížečích vzniká [Layout Instability API](https://wicg.github.io/layout-instability/) s rozhraním [LayoutShift](https://developer.mozilla.org/en-US/docs/Web/API/LayoutShift), které má podporu v prohlížečích vycházejících z Chrome. To jen, pokud by vás to nějak moc zajímalo.
+Pro potřeby počítání této metriky, ale také vlastních měření vzniká [Layout Instability API](https://wicg.github.io/layout-instability/) s rozhraním [LayoutShift](https://developer.mozilla.org/en-US/docs/Web/API/LayoutShift), které má podporu v prohlížečích vycházejících z Chrome. To jen, pokud by vás to nějak moc zajímalo.
 
 ## Jak to měřit? {#mereni}
 
