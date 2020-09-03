@@ -10,7 +10,7 @@ Zapisuje se takto:
 place-self: <hodnota align-self> <hodnota justify-self>;
 ```
 
-Pokud není druhá hodnota přítomná, použije se první pro oba směry.
+Pokud není druhá hodnota přítomná, použije se první pro oba směry, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
 
 <!-- TODO obrázkové schéma: co a kde se zarovnává -->
 
@@ -24,7 +24,7 @@ V naší ukázce definujeme třísloupcový kontejner Gridu. Všechny tři polo�
 }
 ```
 
-Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně doprostřed prostoru buňky (`center`).
+Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně n buňky (`center`).
 
 CodePen: [cdpn.io/e/MWymbYw?editors=1100](https://codepen.io/machal/pen/MWymbYw?editors=1100)
 

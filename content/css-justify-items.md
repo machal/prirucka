@@ -42,7 +42,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 - `self-start`  
   Zarovnává všechny položky k hraně začátku kontejneru, která odpovídá začátku předmětu.
 - `self-end`  
-  Zarovnává všechny položky k hraně začátku kontejneru, která odpovídá konci předmětu.
+  Zarovnává všechny položky k hraně konce kontejneru, která odpovídá konci předmětu.
 - `flex-start`  
   Hodnota chová jako `start`.
 - `flex-end`  

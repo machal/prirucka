@@ -129,7 +129,7 @@ Můžete použít tyto hodnoty:
 - `self-start` <small>(`-self`)</small>  
   Zarovnává předmět k hraně začátku kontejneru, která odpovídá začátku předmětu na patřičné ose.
 - `self-end` <small>(`-self`)</small>  
-  Zarovnává předmět k hraně začátku kontejneru, která odpovídá konci předmětu na patřičné ose.
+  Zarovnává předmět k hraně konce kontejneru, která odpovídá konci předmětu na patřičné ose.
 - `flex-start` <small>(`-self` i `-content`, jen pro flexbox)</small>  
   Totéž jako `start`, jen pro položky flexboxu. Mimo flexbox se hodnota chová jako `start`.
 - `flex-end` <small>(`-self` i `-content`, jen pro flexbox)</small>  

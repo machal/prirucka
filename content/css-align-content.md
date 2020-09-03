@@ -49,7 +49,7 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých 
 - `start`  
   Položky se zarovnají k hraně začátku kontejneru, nefunguje ve flexboxu.
 - `end`  
-  Položky se zarovnají k hraně začátku kontejneru, nefunguje ve flexboxu.
+  Položky se zarovnají k hraně konce kontejneru, nefunguje ve flexboxu.
 - `flex-start`  
   Chová se jako `start`, použitelné hlavně ve flexboxu.
 - `flex-end`  

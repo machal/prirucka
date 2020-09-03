@@ -7,10 +7,10 @@ Jde totiž o zkratku pro vlastnosti [`justify-items`](css-justify-items.md) a [`
 Zapisuje se takto:
 
 ```css
-place-items: <hodnota justify-items> <hodnota align-items>;
+place-items: <hodnota align-items> <hodnota justify-items>;
 ```
 
-Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru.
+Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru. Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
 
 Dává smysl hlavně pro CSS Grid, protože ve flexboxu je vlastnost `justify-items` ignorována.
 
