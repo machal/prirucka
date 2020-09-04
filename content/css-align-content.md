@@ -66,7 +66,7 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých 
 
 Tyto hodnoty zatím nemají u této vlastnost dobrou podporu v prohlížečích při použití ve flexboxu. V IE není podporována vůbec.
 
-### Pro přetečení
+### Zarovnání pro přetečení
 
 - `safe`  
   Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.

@@ -1,8 +1,20 @@
 # Vlastnost gap: Mezera mezi sloupci a řádky layoutu
 
-Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených především pomocí [CSS gridu](css-grid.md). Téhle mezeře se občas podle anglického originálu říká „gutter“.
+Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas podle anglického originálu říká „gutter“.
 
-Vezměme příklad se čtyřmi položkami v layoutu:
+Dřívější zápisy „děrovacích“ vlastností byly ve specifikaci definovány jinak, s prefixem `grid-`: `grid-row-gap`, `grid-column-gap` a `grid-gap` a zaměřené čistě jen na CSS Grid. Nyní jsou ale z této části specifikace vyjmuté a vyvíjené pod samostatným modulem CSS Box Alignment. Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale také ve flexboxu nebo vícesloupcovém layoutu.
+
+Vlastnost `gap` je zkratkou pro vlastnosti `row-gap` a `column-gap`. Zapisuje se takto:
+
+```css
+gap: <hodnota row-gap> <hodnota column-gap>;
+```
+
+Jak je vidět, nastavujeme zde, jak je v CSS zvykem, nejprve svislý a pak až vodorovný směr. Druhá hodnota je volitelná. Pokud se neuvede, použije se jedna hodnota pro oba směry. To je ostatně železným zvykem ve stylech taky.
+
+## Příklad {#priklad}
+
+Vezměme ukázku se čtyřmi položkami v layoutu:
 
 ```html
 <div class="container">
@@ -19,41 +31,30 @@ Layout v CSS definujeme následovně:
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 10px;
+  gap: 2em 2em;
 }
 ```
 
-- `display: grid` zajistí zobrazení pomocí [CSS gridu](css-grid.md).
-- Vlastnosti `grid-template-` definují podobu mřížky. Zde dva sloupce o šířce `50%` a dva řádky s automatickou výškou, určenou obsahem.
-- `gap: 10px` je instrukce pro vložení mezery zezhora i zezdola.
+- `display: grid` zajistí zobrazení pomocí CSS gridu.
+- Vlastnosti `grid-template-` definují podobu mřížky. Zde jde sloupce o rovnoměrné šířce.
+- `gap: 2em 1em` je instrukce pro vložení mezery svisle a pak i vodorovně.
 
 CodePen: [cdpn.io/e/JgXWod](https://codepen.io/machal/pen/JgXWod?editors=1100)
 
-### Raději gap než margin či padding {#margin-padding}
-
-Vlastnost `gap` je pro definování mezer v layoutu daleko efektivnější než `padding` nebo `margin`. Nijak se totiž nepočítá do šířky a ni výšky položky layoutu a také se vždy vykresluje jen mezi položkami samotnými.
-
-### Zkratka {#zkratka}
-
-Jde o zkratku (shorthand) pro vlastnosti `row-gap` a `column-gap`. Pokud bychom chtěli definovat různé mezery pro vodorovný a svislý směr, zapíšeme to takto:
+Totéž bychom samozřejme mohli zapsat v nezkrácených deklaracích následovně:
 
 ```css
 .container {
-  row-gap: 10px;
-  column-gap: 20px;
+  row-gap: 2em;
+  column-gap: 2em;
 }
 ```
 
-CodePen: [cdpn.io/e/JgXWod](https://codepen.io/machal/pen/JgXWod?editors=1100)
+### Raději gap než margin či padding (ale nic proti nim!) {#margin-padding}
 
-Alternativně pak zkratkou `gap`:
+Vlastnost `gap` je pro definování mezer v layoutu daleko efektivnější než `padding` nebo `margin`. Nijak se totiž nepočítá do šířky a ni výšky položky layoutu a také se vždy vykresluje jen mezi položkami samotnými. Je také pěkné si nastavit mezery mezi prvky v layoutu globálně, z toho důvodu právě vlastnost `gap` vznikla.
 
-```css
-.container {
-  gap: 10px 20px;
-}
-```
+Je však samozřejmě možné a bezpečné zároveň nastavovat „gutter“ a také vnější i vnitřní okraje prvku. Toho se určitě nebojte.
 
 ## Možné hodnoty {#hodnoty}
 
@@ -74,9 +75,18 @@ gap: calc(10% + 20px);
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Explorer 11 vlastnost `gap` nepodporuje, ale to je možné dohnat [použitím nástroje Autoprefixer](css-grid-msie.md).
+Je to složitější, takže se to pokusíme zjednodušit.
 
-Je také dobré vědět, že dřívější zápisy „děrovacích“ vlastností byly ve specifikaci definovány jinak, s prefixem `grid-`: `grid-row-gap`, `grid-column-gap` a `grid-gap`. Nyní jsou také vyjmuté ze specifikace CSS gridu a vyvíjené pod [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/). Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale také do [flexboxu](css3-flexbox.md) nebo [vícesloupcového layoutu](css3-multicolumn.md).
+Vezměme to nejdříve podle typu layoutu:
+
+- CSS Grid: Prakticky plná podpora. Internet Explorer 11 vlastnost `gap` nepodporuje, ale to je možné dohnat [použitím nástroje Autoprefixer](css-grid-msie.md).
+- Flexbox: Nepodporuje IE 11 a Safari, takže zde zatím nevidím použití vlastnosti jako rozumné.
+- Vícesloupcový layout: Stejná situace jako u flexboxu.
+
+A navíc – Safari zatím napodporuje hodnoty s `calc()` a procenty a to ani v CSS Gridu
 
 Vlastnost `gap`, tedy bez prefixu `grid-` je podporována v Chrome 68+, Safari 11.2 Release 50+ a Opeře 54+.
 
+Raději se ale dívejte na aktuální stav na CanIUse.com nebo MDN.
+
+CanIUse: [caniuse.com/gap](https://caniuse.com/#search=gap)
