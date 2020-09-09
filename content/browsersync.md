@@ -147,7 +147,7 @@ Instalujte plugin pro Grunt: `npm install grunt-browser-sync --save-dev` a pak m
 - *Webpack*  
 [V dokumentaci dole](https://www.browsersync.io/docs/recipes) je pár receptů pro [Webpack](webpack.md).
 - *Parcel*  
-Parcel ve výchozím nastavení nějaké automatické obnovování stránky dělá, ale pokročilé vlastnosti je možné dodat pomocí pluginu [parcel-browser-sync](https://www.npmjs.com/package/@zartsoft/parcel-browser-sync).
+[Parcel](parcel-js.md) ve výchozím nastavení nějaké automatické obnovování stránky dělá, ale pokročilé vlastnosti je možné dodat pomocí pluginu [parcel-browser-sync](https://www.npmjs.com/package/@zartsoft/parcel-browser-sync).
 
 Dřívější verze tohoto textu byla postavena na konfiguraci v nejstarším automatizačním nástroji – [Gruntu](grunt.md). Dneska už se moc nepoužívá, ale nechávám to zde pro případné zájemce. Vy ostatní můžete tuto část přeskočit.
 

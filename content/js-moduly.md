@@ -190,7 +190,7 @@ Aktuálně podporují moduly z ECMAScript  všechny prohlížeče kromě Interne
 </figcaption>
 </figure>
 
-To může někomu vadit natolik, že se do jejich používání nepustí. My ostatní tady máme tooling, [nástrojařinu](https://www.vzhurudolu.cz/nastroje). Ve [Webpacku](https://www.vzhurudolu.cz/prirucka/webpack) je psaní modulů podle ECMAScript jednou z možností práce, dokonce [doporučovanou](https://webpack.js.org/api/module-methods/). Parcel tuto syntaxi [podporuje také](https://parceljs.org/javascript.html).
+To může někomu vadit natolik, že se do jejich používání nepustí. My ostatní tady máme tooling, [nástrojařinu](https://www.vzhurudolu.cz/nastroje). Ve [Webpacku](https://www.vzhurudolu.cz/prirucka/webpack) je psaní modulů podle ECMAScript jednou z možností práce, dokonce [doporučovanou](https://webpack.js.org/api/module-methods/). [Parcel](parcel-js.md) tuto syntaxi [podporuje také](https://parceljs.org/javascript.html).
 
 Můžeme psát kód moderním způsobem a nástroje nám exportují balíček kódu, který zvládnou staré prohlížeče. Nebo dva balíčky, jak teď uvidíte.
 

@@ -23,6 +23,7 @@
 ## Automatizační nástroje
 
 - [Webpack](webpack.md)
+- [Parcel](parcel-js.md)
 - [Grunt.js](grunt.md)
 - [Grunt.js: pluginy](https://www.vzhurudolu.cz/prirucka/grunt-pluginy)
 - [Automatizační devstacky](devstacky.md)

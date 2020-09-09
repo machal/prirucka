@@ -89,6 +89,10 @@ Také přímo v NPM si můžete napsat skripty, které usnadňují práci s nás
 <small>
 Webpack je sestavovač, „bundler“: Nástroj pro práci s JS, CSS nebo obrázkovými zdroji a vytváření balíčků pro prohlížeč.
 </small>
+- [Parcel](parcel-js.md)  
+<small>
+Jednodušší sestavovač, bez nutnosti konfigurace a rychlejší než Webpack.
+</small>
 
 </div>
 

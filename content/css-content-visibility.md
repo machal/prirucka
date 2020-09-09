@@ -2,9 +2,9 @@
 
 Už víme, že cílem CSS containmentu (a [vlastnosti `contain`](css-contain.md)) je umožnit vylepšení výkonu prohlížeče poskytnutím předvídatelné izolace části DOMu od zbytku stránky.
 
-Vlastnost `content-visibility` je na tom postavená. Na rozdíl od vlastnosti `contain` ale umožňuje určit, zda prohlížeče vůbec vykreslí obsah dotčeného prvku na obrazovku. Dovolí tak prohlížeči při vykreslování přeskočit náročné [fáze *layout* a *paint*](css-contain.md#typy).
+Vlastnost `content-visibility` je na tom postavená. Na rozdíl od `contain` ale umožňuje určit, zda prohlížeče vůbec vykreslí obsah dotčeného. Dovolí tak prohlížeči při počítání renderingu přeskočit náročné [fáze *layout* a *paint*](css-contain.md#typy).
 
-Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých obsahových celků. Obvykle může vhodné použití `content-visibility` například vylepšit čas úvodního vykreslení stránky tím, že přeskočí vykreslování obsahu mimo obrazovku.
+Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých obsahových celků. Obvykle může vhodné použití `content-visibility` například vylepšit čas úvodního zpracování stránky tím, že přeskočí vykreslování obsahu mimo obrazovku.
 
 ## Hodnoty {#hodnoty}
 
@@ -20,20 +20,26 @@ Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých 
 
 Výchozí hodnota `visible` nás zase tak moc nezajímá. Pojďme si však něco říct o těch dalších dvou.
 
+Dobře, prozradím to – nejzajímavější je hodnota `auto`, ale nejprve něco k té třetí vlastnosti.
+
 ## Hodnota hidden {#hodnota-hidden}
 
-Deklaraci `content-visibility:hidden` použijte, když chcete, aby obsah nebyl vyrenderován bez ohledu na to, zda je nebo není na obrazovce, a přitom využívat výhody uložení stavu vykreslování v mezipaměti.
+Deklaraci `content-visibility:hidden` použijte, když chcete, aby obsah nebyl vyrenderován bez ohledu na to, zda je nebo není na obrazovce. No a zároveň využívat výhody uložení stavu vykreslování v mezipaměti.
+
+Nebyl vyrenderován, nebyl vyrenderován… počkat nemáme pro tohle v CSS už jiné vlastnosti?
 
 ### Srovnání s jinými typy schovávání {#hodnota-hidden-schovavani}
 
 - `display:none`  
-  Skryje prvek a zničí jeho vykreslovací stav. To znamená, že skrytí prvku je z pohledu výkonu stejně drahé jako vykreslení nového prvku se stejným obsahem. `display:none` navíc neumožňuje na obsahu realizovat akce typu vyhledání na stránce atd.
+  Skryje prvek a zahodí jeho vykreslovací stav. To znamená, že skrytí prvku je z pohledu výkonu stejně drahé jako vykreslení nového prvku se stejným obsahem. `display:none` navíc neumožňuje na dotčeném obsahu realizovat akce typu vyhledání na stránce atd.
 - `visibillity:hidden`  
   Skryje prvek a udržuje jeho vykreslovací stav. To skutečně neodstraní prvek z dokumentu, protože na něj lze stále kliknout. Aktualizuje také stav vykreslování, kdykoli je to třeba, i když je skrytý. Nicméně, potomci prvku s `visibility:hidden` si mohou kdykoliv nastavit `visibility:visible` a začít se zobrazovat, což v případě `content-visibility:hidden` nehrozí.  Prvky s `visibility:hidden` stále zabírají původní prostor na stránce, což prvek s `content-visibility:hidden` nedělá, šetří rendering díky containmentu. `content-visibility` navíc nepodléhá průběžnému přepočítávání layoutu. Prohlížeč musí spočítat vzhled prvku s `content-visibility` až v momentě, kdy jej potřebuje znovu zobrazit. Podle specifikace pro `content-visibility` platí, že pokud jsou jeho omezení přijatelná, může to být spolehlivější a konzistentnější způsob, jak skrýt obsah prvku než u `visibility`.
 
 ### Příklad použití content-visibility:hidden {#hodnota-hidden-priklad}
 
-Chcete mít v DOMu připravený kus obsahu, který uživatel nevidí a zároveň už DOM není příliš složitý, takže není nutné jej načítat AJAXem. Může se to týkat JS aplikací (SPA), zobrazování panelů záložek a tak dále.
+Chcete mít v DOMu připravený kus obsahu, který uživatel nevidí a zároveň už DOM není příliš složitý, takže není nutné jej načítat AJAXem?
+
+Může se to týkat různých pohledů v JS aplikacích (SPA), zobrazování panelů záložek a tak dále.
 
 Pokud byste použili přepínání `display:none`/`display:block`, prohlížeč musí pokaždé prvek znovu celý přepočítat pro vykreslování a nebude k dispozici například pro hledání nebo tabulátorovou navigaci. Pokud byste prvek umístili mimo obrazovku přes `position:absolute`, k dispozici pro tyhle akce bude, ale zase tyto prvky bude muset prohlížeč při každé změně ve stránce přepočítávat.
 
@@ -51,11 +57,15 @@ Ve [specifikaci](https://www.w3.org/TR/css-contain-2/#using-cv-auto) uvádějí 
 
 Nebylo by v úplně pořádku aplikovat `content-visibility:auto` na celý rodičovský prvek pro tweety, ale na jednotlivé tweety se to naopak velmi hodí.
 
-Připomeňme si ale, že `content-visibility:auto` zapíná *size* containment, takže prohlížeč prvkům nerezervuje prostor ve stránce. Takto označeným prvkům ale nějak musíme nastavit alespoň výšku, aby prohlížeč věděl, jak velké má vykreslit rolovací lišty. K tomu slouží vlastnost `contain-intristic-size`.
+Připomeňme si ale, že `content-visibility:auto` zapíná *size* containment, takže prohlížeč prvkům nerezervuje prostor ve stránce.
+
+Takto označeným prvkům ale nějak musíme nastavit alespoň odhadovanou výšku pro vykreslení, aby prohlížeč věděl, jaké rozměry mají mít rolovací lišty. K tomu slouží vlastnost `contain-intristic-size`.
 
 ## Vlastnost contain-intristic-size {#contain-intristic-size}
 
-Vlastnost, která určuje přirozenou velikost prvku, pokud je prvek ovlivněn size containmentem. To jsou právě prvky, které mají nastaveno `content-visibility:auto` a vyskytují se mimo viditelnou část stránky.
+Vlastnost, která určuje přirozenou velikost prvku, pokud je prvek ovlivněn size containmentem.
+
+To jsou právě prvky, které mají nastaveno `content-visibility:auto` a vyskytují se mimo viditelnou část stránky.
 
 Prohlížeč je vynechá z renderování, ale nezná jejich velikost (chová se jako by měly `height:0`), což může při posunu stránky ovlivňovat právě například velikost rolovátek.
 
