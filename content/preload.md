@@ -234,7 +234,7 @@ Vezměme, že v hlavičce stránky máme obrázek. Ten je ale vložený v CSS na
 Je asi přirozené takto podobný typ obrázků vkládat, ale ve frontě stahování dostane nízkou prioritu. Pokud bychom obrázku chtěli pomoci k dřívějšímu zobrazení, zvážíme preload:
 
 ```html
-<link rel="preload" href="hero.jpg" as="preload">
+<link rel="preload" href="hero.jpg" as="image">
 ```
 
 ### Zvýšení priority asynchronního JS {#pouziti-async}
