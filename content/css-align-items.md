@@ -24,7 +24,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 
 - `normal` (výchozí)  
   Ve většině systémů layoutu, včetně Gridu nebo flexboxu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
-- `stretch` (výchozí)  
+- `stretch`  
   Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
 ### Poziční

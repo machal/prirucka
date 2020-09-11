@@ -10,11 +10,11 @@ Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost 
 
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. [cdpn.io/e/eYZgOwL?editors=1100](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
-## Jednoduchý příklad
+## Jednoduchý příklad s Gridem
 
 V naší ukázce definujeme třísloupcový kontejner Gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `justify-items`.
 
-CodePen: [cdpn.io/e/dyMOxdm?editors=1100](https://codepen.io/machal/pen/dyMOxdm?editors=1100)
+CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
 ## Možné hodnoty zarovnání
 
@@ -24,11 +24,11 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 
 ### Základní
 
-- `normal`  
-  Ve většině systémů layoutu, včetně Gridu, bude nastavený jako hodnota `start`, kterou popisujeme níže.
+- `normal` (výchozí)  
+  Ve většině systémů layoutu, včetně Gridu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
 - `auto`  
   Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`.
-- `stretch` (výchozí)  
+- `stretch`  
   Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
 ### Poziční
