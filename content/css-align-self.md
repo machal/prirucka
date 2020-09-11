@@ -1,8 +1,8 @@
 # Vlastnost align-self: Zarovnání položky na příčné ose
 
-Vlastnost `align-items` určuje zarovnání položky na příčné ose (jinak též blokové ose).
+Vlastnost `align-self` určuje zarovnání položky na příčné ose (jinak též blokové ose).
 
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
+![Vlastnost align-self](../dist/images/original/vdgrid/css-align-self-schema.png)
 
 V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky. Ve rozvržení tvořeném flexboxem jde o zarovnání položky na v celém prostoru příčné osy.
 

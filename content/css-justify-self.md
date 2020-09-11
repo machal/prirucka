@@ -1,8 +1,8 @@
 # Vlastnost justify-self: Zarovnání položky na hlavní ose
 
-Vlastnost `justify-items` určuje zarovnání položky na hlavní ose (jinak též řádkové ose).
+Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak též řádkové ose).
 
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
+![Vlastnost justify-self](../dist/images/original/vdgrid/css-justify-self-schema.png)
 
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 

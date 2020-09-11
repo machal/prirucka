@@ -2,6 +2,8 @@
 
 Úkolem vlastnosti `place-content` je specifikovat rozdělení prostoru mezi položkami na hlavní i příčné ose kontejneru pro layouty v CSS.
 
+![Vlastnost place-content](../dist/images/original/vdgrid/css-place-content-schema.png)
+
 `place-content` je zkratkou pro vlastnosti [`justify-content`](css-justify-content.md) a [`align-content`](css-align-content.md).
 
 Zapisuje se takto:
@@ -15,8 +17,6 @@ Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř konte
 Ve specifikaci se počítá s použitím pro Grid, vícesloupcový layout, ale také flexbox, ve kterém ovšem může být využití vlastnosti [`justify-content`](css-justify-content.md) vcelku omezené.
 
 Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
-
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
 
 ## Jednoduchý příklad
 

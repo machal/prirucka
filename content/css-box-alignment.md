@@ -98,7 +98,7 @@ Patří sem všechny vlastnosti, které v názvu obsahují `-content`:
 
 - [`justify-content`](css-justify-content.md) – zarovnání na řádkové ose
 - [`align-content`](css-align-content.md) - zarovnání na blokové ose
-- `place-content` - zkratka pro obě vlastnosti
+- [`place-content`](css-place-content.md) - zkratka pro obě vlastnosti
 
 ## Klíčová slova pro zarovnání {#typy-klicova-slova}
 

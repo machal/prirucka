@@ -2,9 +2,9 @@
 
 Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na příčné ose (jinak též blokové ose) pro layouty v CSS.
 
-Nastavuje výchozí hodnotu `align-self` pro všechny položky uvnitř kontejneru.
+![Vlastnost align-items](../dist/images/original/vdgrid/css-align-items-schema.png)
 
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
+Nastavuje výchozí hodnotu `align-self` pro všechny položky uvnitř kontejneru.
 
 Tuhle vlastnost není možné aplikovat na blokové elementy nebo na buňky tabulek.
 

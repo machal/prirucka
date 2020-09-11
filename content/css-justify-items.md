@@ -2,9 +2,9 @@
 
 Vlastnost `justify-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose (jinak též řádkové ose) pro layouty v CSS.
 
-Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejneru.
+![Vlastnost justify-items](../dist/images/original/vdgrid/css-justify-items-schema.png)
 
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
+Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejneru.
 
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
 

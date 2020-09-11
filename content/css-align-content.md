@@ -2,7 +2,7 @@
 
 Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél příčné (nebo blokové) osy kontejneru layoutu.
 
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
+![Vlastnost align-content](../dist/images/original/vdgrid/css-align-content-schema.png)
 
 Ve specifikaci se počítá s použitím pro flexbox, Grid, vícesloupcový layout, ale taky pro blokové prvky.
 

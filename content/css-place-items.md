@@ -2,6 +2,8 @@
 
 Vlastnost `place-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose i příčné ose pro layouty v CSS.
 
+![Vlastnost place-items](../dist/images/original/vdgrid/css-place-items-schema.png)
+
 Jde totiž o zkratku pro vlastnosti [`justify-items`](css-justify-items.md) a [`align-items`](css-align-items.md).
 
 Zapisuje se takto:
@@ -13,8 +15,6 @@ place-items: <hodnota align-items> <hodnota justify-items>;
 Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru. Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
 
 Dává smysl hlavně pro CSS Grid, protože ve flexboxu je vlastnost `justify-items` ignorována.
-
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
 
 ## Jednoduchý příklad
 

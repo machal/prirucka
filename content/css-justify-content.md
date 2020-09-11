@@ -2,7 +2,7 @@
 
 Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél hlavní (nebo řádkové) osy kontejneru layoutu.
 
-<!-- TODO obrázkové schéma: co a kde se zarovnává -->
+![Vlastnost justify-content](../dist/images/original/vdgrid/css-justify-content-schema.png)
 
 Ve specifikaci se počítá s použitím pro flexbox, Grid, ale také vícesloupcový layout.
 
