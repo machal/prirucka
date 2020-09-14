@@ -85,7 +85,18 @@ Na výše uvedeném příkladu Twitteru si např. můžeme říct, že průměrn
 }
 ```
 
-<!-- ## Příklady -->
+## Příklady a testy {#testy}
+
+Vlastnost prý může ušetřit desítky až stovky milisekund při počítání vykreslování stránky. [Una Kravets](https://web.dev/content-visibility/) udělala demo, kde je vidět sedmkrát méně času, spotřebovaného při renderingu. [Jan Šablatura](https://www.zdrojak.cz/clanky/content-visibility-jedna-css-vlastnost-vsem-rychle-vykresleni-kaze/) to vyzkoušel na webu českých Novinek a teoreticky by tam prý došlo k ušetření více než 40 % renderovacího času.
+
+Moje testy takto dobře ovšem zdaleka nedopadly. Testoval jsem například onu homepage Novinek. Udělal jsem tři testy před a tři po nastazení `content-visilibity:auto` a výsledek je takový, že po nasazení jsou průměrné výsledky naopak horší. Podívejte se na [tabulku](https://docs.google.com/spreadsheets/d/16RrVQn2C6ILugZ0fTdj3yiV2btYPAgdJbqQ5Tp0-YDE/edit#gid=0).
+
+Zde je metodika:
+
+- Testuji `https://www.novinky.cz/` v Chrome DevTools, záložce Performance. Emuluji zařízení „Moto G4“ a nastavuji Network na „Fast 3G“, CPU na „4× slowdown“.
+- Pomocí Local Overrides upravuji kód souboru `plum.min.css`. Obě verze testuji s Local Overrides, aby se neprojevilo zkreslení způsobené načtením stylů z lokálního adresáře. Ve verzi testů „před“ prostě jen deklaraci zakomentuji.
+- Vybral jsem tři velké části skryté mimo obrazovku na mobilech a nastavuji `.n_h7, tpl-king-bottom-content, .n_iD { content-visibility: auto; }`.
+- Ve výsledném profilu vybírám celou časovou osu, nikoliv předvolený výběr.
 
 ## Podpora v prohlížečích {#podpora}
 
