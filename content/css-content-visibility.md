@@ -126,7 +126,7 @@ Na výše uvedeném příkladu Twitteru si např. můžeme říct, že průměrn
 
 ## Podpora v prohlížečích a nástrojích {#podpora}
 
-Vlastnost `content-visibility` podporuje Chrome od verze 85. Přepodkládáme, že se to vztáhne na všechny prohlížeče založené na Chromiu, jako je Edge nebo Opera.
+Vlastnost `content-visibility` podporuje Chrome od verze 85. Předpokládáme, že se to vztáhne na všechny prohlížeče založené na Chromiu, jako je Edge nebo Opera.
 
 Firefox se jeví, že by vlastnost [rád naimplementoval](https://github.com/mozilla/standards-positions/issues/135). Safari se [neozývá](https://lists.webkit.org/pipermail/webkit-dev/2020-May/031217.html).
 
