@@ -2,9 +2,13 @@
 
 Už víme, že cílem CSS containmentu (a [vlastnosti `contain`](css-contain.md)) je umožnit vylepšení výkonu prohlížeče poskytnutím předvídatelné izolace části DOMu od zbytku stránky.
 
-Vlastnost `content-visibility` je na tom postavená. Na rozdíl od `contain` ale umožňuje určit, zda prohlížeče vůbec vykreslí obsah dotčeného. Dovolí tak prohlížeči při počítání renderingu přeskočit náročné [fáze *layout* a *paint*](css-contain.md#typy).
+Vlastnost `content-visibility` je na tom postavená a vývojáři zjednodušuje práci a nenutí ho chápat CSS containment do detailů.
 
-Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých obsahových celků. Obvykle může vhodné použití `content-visibility` například vylepšit čas úvodního zpracování stránky tím, že přeskočí vykreslování obsahu mimo obrazovku.
+Na rozdíl od vlastnosti `contain` umožňuje určit, zda prohlížeče vůbec vykreslí obsah dotčeného prvku. Její použití jim tak dovolí při počítání renderingu přeskočit náročné [fáze *layout* a *paint*](css-contain.md#typy).
+
+<!-- AdSnippet -->
+
+Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých obsahových celků. Obvykle může vhodné použití `content-visibility` například vylepšit čas úvodního zpracování stránky tím, že přeskočí vykreslování obsahu, který není vidět na obrazovce.
 
 ## Hodnoty {#hodnoty}
 
@@ -20,11 +24,11 @@ Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých 
 
 Výchozí hodnota `visible` nás zase tak moc nezajímá. Pojďme si však něco říct o těch dalších dvou.
 
-Dobře, prozradím to – nejzajímavější je hodnota `auto`, ale nejprve něco k té třetí vlastnosti.
+Dobře, prozradím to – nejzajímavější je hodnota `auto`, ale nejprve něco k té hodnotě zbývající.
 
-## Hodnota hidden {#hodnota-hidden}
+## Hodnota `hidden` {#hodnota-hidden}
 
-Deklaraci `content-visibility:hidden` použijte, když chcete, aby obsah nebyl vyrenderován bez ohledu na to, zda je nebo není na obrazovce. No a zároveň využívat výhody uložení stavu vykreslování v mezipaměti.
+Deklaraci `content-visibility:hidden` použijte, když chcete, aby obsah nebyl vyrenderován a zároveň využívat výhody uložení stavu vykreslování v mezipaměti a [CSS containmentu](css-contain.md).
 
 Nebyl vyrenderován, nebyl vyrenderován… počkat nemáme pro tohle v CSS už jiné vlastnosti?
 
@@ -32,20 +36,55 @@ Nebyl vyrenderován, nebyl vyrenderován… počkat nemáme pro tohle v CSS už 
 
 - `display:none`  
   Skryje prvek a zahodí jeho vykreslovací stav. To znamená, že skrytí prvku je z pohledu výkonu stejně drahé jako vykreslení nového prvku se stejným obsahem. `display:none` navíc neumožňuje na dotčeném obsahu realizovat akce typu vyhledání na stránce atd.
-- `visibillity:hidden`  
-  Skryje prvek a udržuje jeho vykreslovací stav. To skutečně neodstraní prvek z dokumentu, protože na něj lze stále kliknout. Aktualizuje také stav vykreslování, kdykoli je to třeba, i když je skrytý. Nicméně, potomci prvku s `visibility:hidden` si mohou kdykoliv nastavit `visibility:visible` a začít se zobrazovat, což v případě `content-visibility:hidden` nehrozí.  Prvky s `visibility:hidden` stále zabírají původní prostor na stránce, což prvek s `content-visibility:hidden` nedělá, šetří rendering díky containmentu. `content-visibility` navíc nepodléhá průběžnému přepočítávání layoutu. Prohlížeč musí spočítat vzhled prvku s `content-visibility` až v momentě, kdy jej potřebuje znovu zobrazit. Podle specifikace pro `content-visibility` platí, že pokud jsou jeho omezení přijatelná, může to být spolehlivější a konzistentnější způsob, jak skrýt obsah prvku než u `visibility`.
+- `visibility:hidden`  
+  Skryje prvek a udržuje jeho vykreslovací stav. Aktualizuje také stav vykreslování, kdykoli je to třeba, i když je skrytý. Nicméně, potomci prvku s `visibility:hidden` si mohou kdykoliv nastavit `visibility:visible` a začít se zobrazovat, což v případě `content-visibility:hidden` nehrozí.  Prvky s `visibility:hidden` stále zabírají původní prostor na stránce, což prvek s `content-visibility:hidden` nedělá, šetří rendering díky containmentu. `content-visibility` navíc nepodléhá průběžnému přepočítávání layoutu. Prohlížeč musí spočítat vzhled prvku s `content-visibility` až v momentě, kdy jej potřebuje znovu zobrazit.
 
-### Příklad použití content-visibility:hidden {#hodnota-hidden-priklad}
+<figure>
+
+<div class="rwd-scrollable f-6"  markdown="1">
+
+|                      | `display:none` | `visibility:hidden` | `content-visibility:hidden` |
+|:---------------------|:--------------:|:-------------------:|:---------------------------:|
+| Rezervace plochy     |  Neudržuje     | Udržuje             |  Udržuje                    |
+| Stav renderingu      |  Smaže         | Udržuje             |  Udržuje jen část           |
+| Mohou přebít potomci |  Ne            | Ano                 |  Ne                         |
+
+</div>  
+
+<figcaption markdown="1">
+*Tabulka: Srovnání vlastností pro schovávání obsahu v CSS*
+</figcaption>
+
+</figure>
+
+Podle specifikace pro `content-visibility` platí, že pokud jsou jeho omezení přijatelná, může to být spolehlivější a konzistentnější způsob jak skrýt obsah prvku než vlastnost `visibility`.
+
+### Příklad použití `content-visibility:hidden` {#hodnota-hidden-priklad}
 
 Chcete mít v DOMu připravený kus obsahu, který uživatel nevidí a zároveň už DOM není příliš složitý, takže není nutné jej načítat AJAXem?
 
+<!-- AdSnippet -->
+
 Může se to týkat různých pohledů v JS aplikacích (SPA), zobrazování panelů záložek a tak dále.
 
-Pokud byste použili přepínání `display:none`/`display:block`, prohlížeč musí pokaždé prvek znovu celý přepočítat pro vykreslování a nebude k dispozici například pro hledání nebo tabulátorovou navigaci. Pokud byste prvek umístili mimo obrazovku přes `position:absolute`, k dispozici pro tyhle akce bude, ale zase tyto prvky bude muset prohlížeč při každé změně ve stránce přepočítávat.
+Pokud byste použili přepínání `display:none`/`display:block`, prohlížeč musí pokaždé prvek znovu celý přepočítat pro vykreslování a nebude k dispozici například pro hledání nebo tabulátorovou navigaci.
 
-## Hodnota auto {#hodnota-auto}
+Pokud byste prvek umístili mimo obrazovku přes `position:absolute`, k dispozici pro tyhle akce bude, ale zase tyto prvky bude muset prohlížeč při každé změně ve stránce přepočítávat.
+
+Tohle je tedy příklad, kdy `content-visibility:hidden` využijete.
+
+## Hodnota `auto` {#hodnota-auto}
+
+Hodnota `auto` zapíná něco jako líný rendering pro části stránky, které nejsou na první pohled vidět.
 
 Element, který má `content-visibility:auto` spouští [containment pro vykreslovací fáze *layout*, *style* a *paint*](css-contain.md#typy), takže může ušetřit docela dost výkonu.
+
+<figure>
+<img src="../dist/images/original/content-visibility-auto.jpg" alt="content-visibility:auto">
+<figcaption markdown="1">
+*Obrázek: Vlastnost content-visibility s hodnotou auto může ušetřit dost renderovacícho výkonu. Zdroj: [web.dev](https://web.dev/content-visibility/).*
+</figcaption>
+</figure>
 
 Pokud je prvek mimo obrazovku (a není pro uživatele jinak relevantní - například tedy nemá fokus nebo není vybraný), získá také [*size* containment](css-contain.md#typy).
 
@@ -85,23 +124,66 @@ Na výše uvedeném příkladu Twitteru si např. můžeme říct, že průměrn
 }
 ```
 
-## Příklady a testy {#testy}
-
-Vlastnost prý může ušetřit desítky až stovky milisekund při počítání vykreslování stránky. [Una Kravets](https://web.dev/content-visibility/) udělala demo, kde je vidět sedmkrát méně času, spotřebovaného při renderingu. [Jan Šablatura](https://www.zdrojak.cz/clanky/content-visibility-jedna-css-vlastnost-vsem-rychle-vykresleni-kaze/) to vyzkoušel na webu českých Novinek a teoreticky by tam prý došlo k ušetření více než 40 % renderovacího času.
-
-Moje testy takto dobře ovšem zdaleka nedopadly. Testoval jsem například onu homepage Novinek. Udělal jsem tři testy před a tři po nastazení `content-visilibity:auto` a výsledek je takový, že po nasazení jsou průměrné výsledky naopak horší. Podívejte se na [tabulku](https://docs.google.com/spreadsheets/d/16RrVQn2C6ILugZ0fTdj3yiV2btYPAgdJbqQ5Tp0-YDE/edit#gid=0).
-
-Zde je metodika:
-
-- Testuji `https://www.novinky.cz/` v Chrome DevTools, záložce Performance. Emuluji zařízení „Moto G4“ a nastavuji Network na „Fast 3G“, CPU na „4× slowdown“.
-- Pomocí Local Overrides upravuji kód souboru `plum.min.css`. Obě verze testuji s Local Overrides, aby se neprojevilo zkreslení způsobené načtením stylů z lokálního adresáře. Ve verzi testů „před“ prostě jen deklaraci zakomentuji.
-- Vybral jsem tři velké části skryté mimo obrazovku na mobilech a nastavuji `.n_h7, tpl-king-bottom-content, .n_iD { content-visibility: auto; }`.
-- Ve výsledném profilu vybírám celou časovou osu, nikoliv předvolený výběr.
-
-## Podpora v prohlížečích {#podpora}
+## Podpora v prohlížečích a nástrojích {#podpora}
 
 Vlastnost `content-visibility` podporuje Chrome od verze 85. Přepodkládáme, že se to vztáhne na všechny prohlížeče založené na Chromiu, jako je Edge nebo Opera.
 
 Firefox se jeví, že by vlastnost [rád naimplementoval](https://github.com/mozilla/standards-positions/issues/135). Safari se [neozývá](https://lists.webkit.org/pipermail/webkit-dev/2020-May/031217.html).
 
-V tuto chvíli je pro nás ale podstatná podpora vlastnosti na pomalejších zařízeních, hlavně těch mobilních. A na těch běží právě Chrome. Z *nepodpory* v ostatních prohlížečích si tedy těžkou hlavu dělat nemusíme.
+V tuto chvíli je pro nás ale podstatná podpora vlastnosti na pomalejších zařízeních, hlavně těch mobilních. A na těch běží právě Chrome. Z *nepodpory* v ostatních prohlížečích si tedy těžkou hlavu dělat nemusíme. Tato vlastnost zařídí malé vylepšení pro majitele Chrome, ostatní zůstanou na původním stavu.
+
+Je dobré si uvědomit, že externí [měřící nástroje](rychlost-nastroje.md) ([PageSpeed Insights](pagespeed-insights.md), [SpeedCurve](speedcurve.md)) obvykle běží na starších jádrech prohlížečů, takže v době psaní textu vám žádné pokroky neukáží a radost neudělají.
+
+## Příklady a testy {#testy}
+
+Vlastnost prý může ušetřit desítky až stovky milisekund při počítání vykreslování stránky. [Una Kravets](https://web.dev/content-visibility/) udělala demo, kde je vidět sedmkrát méně času, spotřebovaného při renderingu. [Jan Šablatura](https://www.zdrojak.cz/clanky/content-visibility-jedna-css-vlastnost-vsem-rychle-vykresleni-kaze/) to vyzkoušel na webu českých Novinek a teoreticky by tam prý došlo k ušetření více než 40 % renderovacího času.
+
+### Moje testy {#testy-moje}
+
+Moje testy takto dobře ovšem nedopadly. Na sedminásobné ušetření renderingu se ne a ne dostat. Ale nějaká úspora zde být může, to ne že ne.
+
+Testoval jsem například homepage Novinky.cz a iRozhlas.cz:
+
+<div class="rwd-scrollable f-6"  markdown="1">
+
+|   Stránka     | Rendering před   | Rendering po     |
+|:--------------|-----------------:|-----------------:|
+|  Novinky.cz   |           113 ms |            82 ms |
+|  iRozhlas.cz  |           330 ms |           235 ms |
+
+</div>
+
+Udělal jsem tři testy před a tři po nasazení `content-visibility:auto` přes Lighthouse v DevTools Chromu. Podívejte se na [tabulku](https://docs.google.com/spreadsheets/d/16RrVQn2C6ILugZ0fTdj3yiV2btYPAgdJbqQ5Tp0-YDE/edit#gid=0).
+
+<small>
+
+Zde je kompletní metodika:
+
+- Testuji stránku v Chrome DevTools, záložce Lighthouse.
+- Z výsledků rozklikávám „View Trace“ a hodnoty tedy čtu ze záložky Performance.
+- Pomocí Local Overrides upravuji kód hlavního CSS souboru.
+- Obě verze testuji s Local Overrides, aby se neprojevilo zkreslení způsobené načtením stylů z lokálního adresáře. Ve verzi testů „před“ prostě jen deklaraci zakomentuji.
+- Pro nasazení `content-visibility:auto` jsem vybral vždy velké části skryté mimo obrazovku na mobilech.
+- Ve výsledném profilu vybírám celou časovou osu, nikoliv předvolený výběr.
+
+</small>
+
+## Kam se to hodí? {#kam}
+
+Určitě bych `content-visibility:auto` nenasazoval bezhlavě na cokoliv, o čem víte, že se bude vykreslovat mimo obrazovku. V některých mých testech vyšlo spíše zhoršení času renderingu.
+
+Určitě je vhodné se nad nasazením zamyslet v těchto případech:
+
+- Stránka má velmi komplexní DOM, např. nad 3 tisíce uzlů.
+- Čísla pro rendering jsou vysoká, obzvlášť na mobilech.
+- Mimo obrazovku jsou umístěné prvky, které spouští zlobivý JavaScript, například různé vkládané prvky sociálních sítí.
+
+Jako efektivnější alternativu zvažte [líné načtení](lazy-loading.md) celé oblasti DOMu s čekáním na narolování uživatele do dané oblasti pomocí [Intersection Observer](intersection-observer.md). Tahle metoda může ušetřit také datový objem stránky, zmenšit DOM a často také ulehčit backendu.
+
+V mnoha případech bude ale `content-visibility:auto` fungovat dobře a velmi ulehčí renderingu, hlavně na pomalých mobilech. Jen nezapomeňte testovat, testovat a testovat.
+
+<!-- AdSnippet -->
+
+Budu rád za každé vaše zjištění, neváhejte využít komentáře.
+
+<small markdown="1">Za připomínky autor děkuje [Michalovi Matuškovi](https://www.vzhurudolu.cz/lektori/michal-matuska).</small>

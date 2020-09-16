@@ -13,7 +13,7 @@ Jde tedy o skutečně o „líné“ načtení. Prohlížeč prvky stáhne až k
 
 Nejčastěji se ve webdesignu lazy loading týká [obrázků](lazy-loading-obrazku.md) a je  navázaný na posun stránky. Tento text je ale zaměřený obecněji, proto si pojďme nejprve připomenout různé typy obsahu stránky, které je vhodné načíst tímto způsobem.
 
-## Co a jak je možné načítat „líně“? {#co}
+## Co a jak je možné zpracovávat „líně“? {#co}
 
 - *Obrázky*  
 Stažení obrázků až po posunu stránky je nejčastější scénář, kterému věnuji [zvláštní text](lazy-loading-obrazku.md).
@@ -21,6 +21,8 @@ Stažení obrázků až po posunu stránky je nejčastější scénář, kterém
 Velmi vhodným kandidátem na líné stažení je vkládaný obsah třetích stran – YouTube videí, map od Google nebo Seznamu, obsah z Facebooku či Twitteru vkládaný přes `<iframe>`…  
 - *Složitější struktury DOM*  
 Často se zapomíná, že „líně” je možné načíst také komplexnější HTML v rámci obsahu stránky. Nejčastěji se to týká například navigací typu „megamenu“ viditelných až po akci uživatele nebo obsahu záložkové navigace uvnitř stránky.
+- *Rendering stránky*  
+Vlastnost [`content-visibility`](css-content-visibility.md) umožní odložit výpočet vykreslení prvků, které nejsou vidět v první obrazovce.
 
 ## K čemu je lazy loading dobrý? {#proc}
 

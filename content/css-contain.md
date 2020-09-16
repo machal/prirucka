@@ -2,11 +2,11 @@
 
 Vlastností `contain` označujeme části stránky, které jsou izolované od zbytku, proto, aby prohlížeč nemusel překreslovat celou stránku a ušetřil tak výkon.
 
-Prohlížeče se nějakým způsobem snaží nepřepočítávát vzhled celé stránky při každé změně samy. Kromě toho existují kodérské triky jak to udělat v běžném CSS (viz [Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)). No a poslední možností je použít vlastnost `contain`.
-
 <!-- AdSnippet -->
 
-Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `content-visibility`](https://web.dev/content-visibility/), ale než si o ni něco na Vzhůru dolů napíšeme, musíme si načrtnout tento úvod do problematiky.
+Prohlížeče se nějakým způsobem snaží nepřepočítávát vzhled celé stránky při každé změně samy. Kromě toho existují kodérské triky jak to udělat v běžném CSS (viz [Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)). No a poslední možností je použít vlastnost `contain`.
+
+→ *Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `content-visibility`](css-content-visibility.md)*.
 
 ## Dva příklady {#priklad}
 
