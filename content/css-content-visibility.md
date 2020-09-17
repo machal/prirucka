@@ -45,8 +45,8 @@ Nebyl vyrenderován, nebyl vyrenderován… počkat nemáme pro tohle v CSS už 
 
 |                      | `display:none` | `visibility:hidden` | `content-visibility:hidden` |
 |:---------------------|:--------------:|:-------------------:|:---------------------------:|
-| Rezervace plochy     |  Neudržuje     | Udržuje             |  Udržuje                    |
-| Stav renderingu      |  Smaže         | Udržuje             |  Udržuje jen část           |
+| Rezervace plochy     |  Neudržuje     | Udržuje             |  Neudržuje                  |
+| Stav renderingu      |  Smaže         | Udržuje             |  Udržuje poslední stav      |
 | Mohou přebít potomci |  Ne            | Ano                 |  Ne                         |
 
 </div>  
@@ -170,13 +170,13 @@ Zde je kompletní metodika:
 
 ## Kam se to hodí? {#kam}
 
-Určitě bych `content-visibility:auto` nenasazoval bezhlavě na cokoliv, o čem víte, že se bude vykreslovat mimo obrazovku. V některých mých testech vyšlo spíše zhoršení času renderingu.
+Určitě bych `content-visibility:auto` nenasazoval bezhlavě na cokoliv, o čem víte, že se bude vykreslovat mimo obrazovku. V některých mých testech vyšlo spíše zhoršení času renderingu a špatné nasazení bude mít vliv na metriku [Kumulativní posun layoutu (CLS)](metrika-cls.md), která je součástí důležitých [Core Web Vitals](web-vitals.md).
 
 Určitě je vhodné se nad nasazením zamyslet v těchto případech:
 
 - Stránka má velmi komplexní DOM, např. nad 3 tisíce uzlů.
 - Čísla pro rendering jsou vysoká, obzvlášť na mobilech.
-- Mimo obrazovku jsou umístěné prvky, které spouští zlobivý JavaScript, například různé vkládané prvky sociálních sítí.
+- Mimo obrazovku jsou umístěné prvky, které spouští zlobivý JavaScript, například různé vkládané prvky sociálních sítí, včetně `<iframe>`.
 
 Jako efektivnější alternativu zvažte [líné načtení](lazy-loading.md) celé oblasti DOMu s čekáním na narolování uživatele do dané oblasti pomocí [Intersection Observer](intersection-observer.md). Tahle metoda může ušetřit také datový objem stránky, zmenšit DOM a často také ulehčit backendu.
 
