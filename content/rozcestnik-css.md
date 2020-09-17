@@ -57,7 +57,7 @@
 - [RGBa barva](css3-rgba.md)
 - [Selektory v CSS](css3-selektory.md)
 - [Box Reflection: odlesk prvku](css3-box-reflection.md)
-- [contain](css-contain.md)
+- [contain](css-contain.md) + [content-visibility](css-content-visibility.md)
 
 ## CSS triky a řešení
 

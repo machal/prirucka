@@ -100,7 +100,7 @@ Připomeňme si ale, že `content-visibility:auto` zapíná *size* containment, 
 
 Takto označeným prvkům ale nějak musíme nastavit alespoň odhadovanou výšku pro vykreslení, aby prohlížeč věděl, jaké rozměry mají mít rolovací lišty. K tomu slouží vlastnost `contain-intristic-size`.
 
-## Vlastnost contain-intristic-size {#contain-intristic-size}
+## Vlastnost `contain-intristic-size` {#contain-intristic-size}
 
 Vlastnost, která určuje přirozenou velikost prvku, pokud je prvek ovlivněn size containmentem.
 
