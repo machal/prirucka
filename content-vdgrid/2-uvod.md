@@ -1,3 +1,3 @@
-# Kapitola 2: Vlastnosti pro definici mřížky
+# Kapitola 2: Příklady použití
 
 *TODO*

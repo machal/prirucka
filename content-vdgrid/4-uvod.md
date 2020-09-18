@@ -1,4 +1,3 @@
-# Kapitola 4: Funkce a klíčová slova
+# Kapitola 4: Reference – Vlastnosti pro definici mřížky
 
 *TODO*
-

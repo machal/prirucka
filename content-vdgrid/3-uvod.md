@@ -1,4 +1,4 @@
-# Kapitola 3: Vlastnosti pro umístění do mřížky
+# Kapitola 3: Technické speciality
 
 *TODO*
 
