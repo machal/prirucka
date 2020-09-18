@@ -22,7 +22,7 @@ Následuje několik užitečných vysvětlovacích odrážek:
 
 ## Možné hodnoty zarovnání
 
-<!-- TODO obrázkové schéma pro základní hodnoty v Gridu podle CodePenu -->
+![Hodnoty vlastnosti justify-self](../dist/images/original/vdgrid/css-justify-self-schema.png)
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

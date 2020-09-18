@@ -18,7 +18,7 @@ CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
 ## Možné hodnoty zarovnání
 
-<!-- TODO obrázkové schéma pro  základní hodnoty v Gridu podle CodePenu -->
+![Hodnoty vlastnosti justify-items](../dist/images/original/vdgrid/css-justify-items-schema.png)
 
 Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

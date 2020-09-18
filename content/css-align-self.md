@@ -33,7 +33,7 @@ CodePen: [cdpn.io/e/zYqwKer?editors=1100](https://codepen.io/machal/pen/zYqwKer?
 
 ## Možné hodnoty zarovnání
 
-<!-- TODO obrázkové schéma pro základní hodnoty v Gridu podle CodePenu -->
+![Hodnoty vlastnosti align-self](../dist/images/original/vdgrid/css-align-self-schema.png)
 
 Také vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

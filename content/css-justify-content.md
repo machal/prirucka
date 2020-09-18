@@ -22,7 +22,7 @@ CodePen: [cdpn.io/e/mdPmoVZ?editors=1100](https://codepen.io/machal/pen/mdPmoVZ?
 
 ## Možné hodnoty zarovnání
 
-<!-- TODO obrázkové schéma pro základní hodnoty v Gridu podle CodePenu -->
+![Hodnoty vlastnosti justify-content](../dist/images/original/vdgrid/css-justify-content-schema.png)
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

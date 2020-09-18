@@ -14,17 +14,17 @@ V naší ukázce definujeme třísloupcový kontejner Gridu. Jeho položky jsme 
 
 CodePen: [cdpn.io/e/ZEWKPvr?editors=1100](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
 
-Deklarace `justify-content:space-between` tedy zajistí rozdělení volného prostoru takovým způsobem… Ale vy víte, co? Raději se podívejte na na všechny možné hodnoty, i tuhle mezi nima najdete.
-
 Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát pro flexbox.
 
 CodePen: [cdpn.io/e/zYqwbpL?editors=1100](https://codepen.io/machal/pen/zYqwbpL?editors=1100)
 
+Deklarace `align-content:space-between` tedy zajistí rozdělení volného prostoru takovým způsobem… Ale vy víte, co? Raději se podívejte na na všechny možné hodnoty, i tuhle mezi nima najdete.
+
 ## Možné hodnoty zarovnání
 
-<!-- TODO obrázkové schéma pro základní hodnoty v Gridu podle CodePenu -->
+![Hodnoty vlastnosti align-content](../dist/images/original/vdgrid/css-align-content-schema.png)
 
-Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
+Vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
 ### Základní
 
