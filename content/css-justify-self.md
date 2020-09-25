@@ -12,7 +12,7 @@ U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou m
 
 V naší ukázce definujeme třísloupcový kontejner Gridu.
 
-CodePen: [cdpn.io/e/QWNvKQJ?editors=1100](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
+CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
 
 Následuje několik užitečných vysvětlovacích odrážek:
 
