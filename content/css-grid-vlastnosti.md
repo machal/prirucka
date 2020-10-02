@@ -52,7 +52,7 @@ Frontendové kodérky a kodéři museli vzhledu často obětovat strukturu HTML,
 
 Když vynecháme nepěkné triky s pozicováním, slibně zde vstupil flexbox. Co je to ale oproti Gridu!
 
-* Vlastnost `order`, která dovoluje změnit pořadí prvků v prohlížeči, už znáte z flexboxu. Ano, tady ji můžete použíž taky.
+* [Vlastnost `order`](css-order.md), která dovoluje změnit pořadí prvků v prohlížeči, už znáte z flexboxu. Ano, tady ji můžete použíž taky.
 * Pomocí [vlastnosti `grid-area`](css-grid-area.md) budete schopní umístit jakéhokoliv potomka na jakékoliv místo mřížky. A zahodit přitom svěrací kazajku struktury HTML.
 * Hodnota `dense` [vlastnosti `grid-auto-flow`](css-grid-auto-flow.md) částečně nechává vykreslení layout na prohlížeči, což oceníte u jednoduchých rozvržení typu „masonry“.
 

@@ -96,9 +96,9 @@ U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se v
 
 Je také dobré vědět, že se flex položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením `min-width` nebo `min-height` na nějakou nízkou hodnotu.
 
-##   `order` – změna pořadí prvků  {#order}
+## `order` – změna pořadí prvků  {#order}
 
-Pořadí flex položky standardně odpovídá zdrojovému kódu, ale to můžeme změnit pomocí vlastnosti order.
+Pořadí flex položky standardně odpovídá zdrojovému kódu, ale to můžeme změnit pomocí [vlastnosti `order`](css-order.md).
 
 Změna pořadí má vliv na vizuální pozici elementu a na pořadí jeho vykreslení prohlížečem. Nemá ale vliv například na pořadí čtení dokumentu čtečkami nebo na pořadí navigace pomocí klávesy tab.
 

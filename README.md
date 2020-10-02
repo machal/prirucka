@@ -117,6 +117,8 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
+Komponenta `.rwd-media` standardně dělá poměr stran 16:9, ale lze přidat různé modifikátory, např. `.rwd-media--160-45` pro poloviční výšku. Viz stejnojmenná komponenta u Vzhůru dolů webu.
+
 #### Vložení MP4
 
 Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md).

@@ -10,7 +10,7 @@ Video: <a href="https://www.youtube.com/watch?v=C82zB_yaGF8">Jen Simmons: HTML S
 
 Pojďme teď téma shrnout a doplnit vlastními postřehy.
 
-Jen Simmons o problematice mluví hlavně v kontextu nových layoutovacích nástrojů – [Flexboxu](css3-flexbox.md) a Gridu. Díky `order` a [dalším vlastnostem](css3-flexbox-polozky.md) totiž už nemusíte při vymýšlení pořadí prvků v HTML brát v potaz layout. Prostě pořadí plně uzpůsobíte „bezstylovým“ kontextům. Jaké známe?
+Jen Simmons o problematice mluví hlavně v kontextu nových layoutovacích nástrojů – [Flexboxu](css3-flexbox.md) a Gridu. Díky [`order`](css-order.md) a [dalším vlastnostem](css3-flexbox-polozky.md) totiž už nemusíte při vymýšlení pořadí prvků v HTML brát v potaz layout. Prostě pořadí plně uzpůsobíte „bezstylovým“ kontextům. Jaké známe?
 
 
 ## 8 bezstylových kontextů {#bez-css}

@@ -193,7 +193,7 @@ Kromě výše uvedených způsobů lze měnit pořadí sloupců layoutu pomocí 
 </div>
 ```
 
-Vychází to z flexboxí [vlastnosti `order`](css3-flexbox-polozky.md#order). Ukázka: [cdpn.io/e/dvqrZv](https://codepen.io/machal/pen/dvqrZv?editors=1000)
+Vychází to z flexboxí [vlastnosti `order`](css-order.md). Ukázka: [cdpn.io/e/dvqrZv](https://codepen.io/machal/pen/dvqrZv?editors=1000)
 
 To je věc nová pro čtvrtou verzi. Ale jak sami vidíte, pro změnu pořadí je to daleko příjemnější než metoda pomocí tříd `.pull` a `.push`.
 

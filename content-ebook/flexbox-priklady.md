@@ -59,7 +59,7 @@ CodePen ukázka je na [cdpn.io/e/zxydom](http://cdpn.io/e/zxydom).
 
 ## Příklad čtvrtý: změna vizuálního pořadí položek
 
-Potřebujete v HTML pořadí položek jedním způsobem, ale zobrazovat je zase jiným způsobem? I tady flexbox pomůže. Zapamatujte si vlastnost `order`, která slouží pro změnu pořadí flex položek.
+Potřebujete v HTML pořadí položek jedním způsobem, ale zobrazovat je zase jiným způsobem? I tady flexbox pomůže. Zapamatujte si [vlastnost `order`](css-order.md), která slouží pro změnu pořadí flex položek.
 
 ![změna pořadí](../dist/images/original/flexbox-priklady-6.jpg)
 
