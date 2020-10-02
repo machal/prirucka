@@ -20,10 +20,13 @@
 - [package.json](package-json.md)
 - [package-lock.json](package-lock-json.md)
 
-## Automatizační nástroje
+## Balíčkovací nástroje
 
 - [Webpack](webpack.md)
 - [Parcel](parcel-js.md)
+
+## Automatizační nástroje
+
 - [Grunt.js](grunt.md)
 - [Grunt.js: pluginy](https://www.vzhurudolu.cz/prirucka/grunt-pluginy)
 - [Automatizační devstacky](devstacky.md)

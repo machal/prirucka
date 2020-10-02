@@ -6,6 +6,8 @@
 
 Parcel.js slouží k vytváření balíčků (bundle) používaných na frontendu při vývoji webů a webových aplikací. Jde o nástroj podobné kategorie jako [Webpack](webpack.md), [Gulp](https://gulpjs.com/) nebo kdysi [Grunt](grunt.md).
 
+Jde o nástroj podobné kategorie jako [Webpack](webpack.md). Pokud hledáte alternativu ke [Gruntu](grunt.md) nebo [Gulpu](https://gulpjs.com/), zkuste raději [NPM skripty](https://css-tricks.com/why-npm-scripts/).
+
 Velkou výhodou Parcelu je rychlost, nulová konfigurace a široká škála podporovaných souborů.
 
 ## Proč Parcel.js a kam s ním? {#proc}

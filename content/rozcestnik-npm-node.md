@@ -91,7 +91,7 @@ Webpack je sestavovač, „bundler“: Nástroj pro práci s JS, CSS nebo obráz
 </small>
 - [Parcel](parcel-js.md)  
 <small>
-Jednodušší sestavovač, bez nutnosti konfigurace a rychlejší než Webpack.
+Jednodušší balíčkovač, bez nutnosti konfigurace. Rychlejší než Webpack.
 </small>
 
 </div>
