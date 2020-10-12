@@ -23,7 +23,7 @@ Celé se to točí kolem tří hlavních metrik:
 * [*Largest Contentful Paint (LCP)*](metrika-lcp.md)  
 Největší vykreslení obsahu. Metrika, která popisuje rychlost načítání stránky – *načítací (loading)* výkon. Jde o něco mezi [FCP](metrika-fcp.md) a [SpeedIndexem](speedindex.md).
 * [*First Input Delay (FID)*](metrika-fid.md)  
-První nečinnost procesoru. Metrika, která popisuje jak rychle může uživatel na stránce začít provádět úlohy – výkon *interaktivity*. Jedná se tedy o metriku podobnou [TTI](metrika-tti.md).
+První nečinnost procesoru. Metrika, která popisuje jak rychle může uživatel na stránce začít provádět úlohy – výkon *interaktivity*. Jedná se tedy o metriku podobnou [TBT](metrika-tbt.md).
 * [*Cumulative Layout Shift (CLS)*](metrika-cls.md)  
 Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layoutu během vykreslování, což je úplně nová metrika, kterou si na Vzhůru dolů brzy popíšeme.
 
@@ -102,7 +102,7 @@ Knihovna je skvělá pro případy, že byste si chtěli začít měřit sami a 
 
 Raději explicitně zmiňuji, že metrika FID se nedá sbírat jinak než od reálných uživatelů, z takzvaných RUM (Real User Monitoring) nástrojů. 
 
-Pokud měříte synteticky strojem, což dělá například WebpageTest, [Lighthouse](lighthouse.md) (od [verze 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6)) nebo částečně PageSpeed Insights či [SpeedCurve](speedcurve.md), doporučuje se nahradit ji metrikou [Total Blocking Time (TBT)](https://web.dev/tbt/).
+Pokud měříte synteticky strojem, což dělá například WebpageTest, [Lighthouse](lighthouse.md) (od [verze 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6)) nebo částečně PageSpeed Insights či [SpeedCurve](speedcurve.md), doporučuje se nahradit ji metrikou [Total Blocking Time (TBT)](metrika-tbt.md).
 
 Google deklaruje, že chce, aby „Core Web Vitals“ byly stabilní a predikovatelné, a že se nebudou měnit častěji než jednou za rok. Zároveň ale dodává, že ani „Core Web Vitals“ nejsou perfektní a bude se na nich dále pracovat.
 

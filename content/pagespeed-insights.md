@@ -123,7 +123,7 @@ Aktualizace: V květnu 2020 vyšel [Lighthouse 6](https://www.vzhurudolu.cz/blog
 | [Largest Contentful Paint (LCP)](/prirucka/metrika-lcp)  | 	-               | 25 % |
 | [Time To Interactive (TTI)](/prirucka/metrika-tti)       | 	33 %            | 15 % |
 | First CPU Idle (FCI)            | 	13 %            | -    |
-| Total Blocking Time (TBT)       | 	-               | 25 % |
+| [Total Blocking Time (TBT)](metrika-tbt.md)       | 	-               | 25 % |
 | Max Potential FID               | 	0 %             | -    |
 | [Cumulative Layout Shift (CLS)](/prirucka/metrika-cls)   | -               | 5 %  |
 

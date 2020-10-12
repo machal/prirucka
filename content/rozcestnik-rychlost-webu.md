@@ -22,12 +22,13 @@
 - [Všechny metriky rychlosti](metriky-rychlosti.md)
 - [Web Vitals](web-vitals.md)
 - [Metrika Lighthouse score](metrika-lps.md)
+- [Metrika TTFB](ttfb.md)
 - [Metrika FCP](metrika-fcp.md)
 - [Metrika FID](metrika-fcp.md)
 - [Metrika LCP](metrika-lcp.md)
-- [Metrika LPS](metrika-tti.md)
-- [Metrika TTFB](ttfb.md)
+- [Metrika TBT](metrika-tbt.md)
 - [Metrika TTI](metrika-tti.md)
+- [Metrika LPS](metrika-tti.md)
 - [Ideální hodnoty metrik](https://www.vzhurudolu.cz/blog/112-metriky-cile)
 
 ## Technické znalosti a tipy

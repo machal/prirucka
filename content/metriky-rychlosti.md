@@ -14,11 +14,15 @@ Podle Google by se měřením a optimalizací pro tyto ukazatele měl zabývat �
 
 Jde o následující tři metriky.
 
+<div class="rwd-scrollable f-6"  markdown="1">
+
 | Metrika                                        |  Kdy vzniká?                  |
 |:-----------------------------------------------|:------------------------------|
 | [Largest Contentful Paint (LCP)](metrika-lcp.md) | Největší vykreslení obsahu  |
 | [First Input Delay (FID)](metrika-fid.md)      | První nečinnost procesoru     |
 | [Cumulative Layout Shift (CLS)](metrika-cls.md) | Kumulativní posun layoutu    |
+
+</div>
 
 <figure>
 <img src="../dist/images/original/web-vitals.png" alt="Jednotlivé metriky Web Vitals">
@@ -33,6 +37,8 @@ Jde o následující tři metriky.
 
 Většina rychlostních metrik jsou prostě události, které po splnění určitých podmínek vznikají na časové ose postupu vykreslování stránky.
 
+<div class="rwd-scrollable f-6"  markdown="1">
+
 | Metrika                                        |  Kdy vzniká?                  |
 |:-----------------------------------------------|:------------------------------|
 | [Time To First Byte (TTFB)](ttfb.md)           | Rychlost serveru              |
@@ -40,10 +46,13 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 | [First Paint (FP)](metrika-fp.md)              | První vykreslení              |
 | [First Contentful Paint (FCP)](metrika-fcp.md) | První vykreslení obsahu       |
 | [First Meaningful Paint (FMP)](metrika-fmp.md) | První smysluplné vykreslení   |
+| [Total Blocking Time (TBT)](metrika-tbt.md)    | Celkový čas blokování JS      |
 | [Time to Interactive (TTI)](metrika-tti.md)    | První možnost interaktivity   |
 | [Speed Index](speedindex.md)                   | Vykreslení celého viewportu   |
 | [Load](load.md)                                | Stažení všeho                 |
 | [Lighthouse Performance Score](metrika-lps.md) | Všechny renderovací metriky   |
+
+</div>
 
 <figure>
 <img src="../dist/images/original/metriky-rychlosti.jpg" alt="">
