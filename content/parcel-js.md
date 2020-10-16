@@ -1,7 +1,5 @@
 # Parcel.js
 
-*Dnešní článek pro vás připravil Tomáš Smetka z [Pobo Page Builder](https://www.pobo.cz).*
-
 <!-- Autor: Tomáš Smetka (smetka.tomas90@gmail.com) -->
 
 Parcel.js slouží k vytváření balíčků (bundle) používaných na frontendu při vývoji webů a webových aplikací. Jde o nástroj podobné kategorie jako [Webpack](webpack.md), [Gulp](https://gulpjs.com/) nebo kdysi [Grunt](grunt.md).
