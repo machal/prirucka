@@ -286,6 +286,6 @@ Všechny zdrojové testy jsou k dispozici na [vrdl.in/ampwpt](https://docs.googl
 
 Přednačtení prostě potřebuje umístění v AMP Vieweru a ten potřebuje umístění v AMP Cache a ta potřebuje použití validního AMP.
 
-AMP stránka tedy _může_ být v určitých fázích pomalejší než ta původní, obvyklé ale nebude. Technologie AMP ovšem tvoří nutný předpoklad pro bezkonkurenčně rychlé zobrazení stránky. Snad je to po tomhle rozboru jednotlivých fází distribuce jasnější.
+AMP stránka tedy _může_ být v určitých fázích pomalejší než ta původní, obvykle ale nebude. Technologie AMP ovšem tvoří nutný předpoklad pro bezkonkurenčně rychlé zobrazení stránky. Snad je to po tomhle rozboru jednotlivých fází distribuce jasnější.
 
 <!-- AdSnippet -->
