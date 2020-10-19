@@ -1,62 +1,79 @@
 # Lighthouse Performance Score: metrika všech syntetických metrik
 
-Co je Lighthouse Performance Score? Jednoduše řečeno jde o číslo, kterým rychlost vaší stránky zhodnotí nástroje [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md).
+Co je Lighthouse Performance Score? Jednoduše řečeno jde o číslo, kterým rychlost vaší stránky zhodnotí testery vycházející z nástroje [Lighthouse](lighthouse.md).
 
-Všichni jej nejspíš znáte. Je to ta hodnota v kolečku, u které usilujeme o zelenou barvu.
+Všichni jej nejspíš znáte. Je to ta hodnota v kolečku, ve kterém usilujeme o zelenou barvu. Moje otázka ale zní, zda je to usilování smysluplné. Čtěte dále.
 
 <figure>
 <img src="../dist/images/original/pagespeed-insights-skore.png" width="1920" height="540" alt="PageSpeed Insights Skóre">
 <figcaption markdown="1">
-*Obrázek: Lighthouse Performance Score pro úvodní stránku Vzhůru dolů.*
+*Obrázek: Lighthouse Performance Score pro úvodní stránku Vzhůru dolů. Zelené to není, ale nijak mě to netrápí.*
 </figcaption>
 </figure>
 
-Lighthouse Performance Score (pojďme používat zkratku LPS) považuji u rychlosti webu za hlavní syntetickou metriku, tedy číslo měřené strojem, nikoliv z reálného provozu uživatelů.
-
-Mimochodem, možná si někteří pamatujete, že jsem jako nejdůležitější metriku dlouho uváděl [Index rychlosti](speedindex.md), pak ještě přidal [Time To Interactive](metrika-tti.md). A teď zase LPS? Ano, je to tak. A určitě vás zajímá důvod.
+Lighthouse Performance Score (pojďme používat zkratku LPS) považuji u rychlosti webu za hlavní syntetickou metriku. To znamená, že jde číslo měřené strojem, nikoliv z reálného provozu uživatelů (pro které se používá zkratka RUM).
 
 <!-- AdSnippet -->
 
-Obor měření rychlosti je velmi mladý a neustálený. [Metrik](metriky-rychlosti.md) rychlosti stahování a renderování stránky od doby [měření pomocí události Load](rychlost-myty.md#1) vzniklo daleko více. Zatím jsme se shodli zhruba na pěti až šesti hlavních metrikách. Pravděpodobně budou ještě přibývat, ale dobré je, že mohou být všechny obalené v jedné.
+Obor měření rychlosti je velmi mladý a neustálený. [Metrik](metriky-rychlosti.md) rychlosti stahování a renderování stránky od doby [měření pomocí události Load](rychlost-myty.md#1) vzniklo daleko více.
 
-## Lighthouse Performance Score: obal na všechny důležité metriky {#obal}
+Aktuálně se shodujeme na zhruba třech až šesti hlavních ukazatelích a je dobré, že se nám mohou všechny promítnout do jednoho čísla, skóre rychlosti nástroje Lighthouse.
 
-Vtip LPS je v tom, že všechny metriky aktuálně považované za důležité slučuje dohromady. 
+## LPS: obal na všechny důležité metriky {#obal}
+
+Vtip „Lighthouse skóre“ je v tom, že všechny metriky aktuálně považované za důležité slučuje dohromady.
 
 <figure>
+<!-- TODO metriky https://developers.google.com/speed/pagespeed/insights/?hl=cs&url=https%3A%2F%2Fwww.vzhurudolu.cz%2F -->
+<img src="../dist/images/original/…" alt="Metriky rychlosti v Lighthouse">
+<figcaption markdown="1">
+*Obrázek: Z těchto metrik se Lighthouse Performance Score počítá.*
+</figcaption>
+</figure>
+
+Nástroj Lighthouse změří každou z důležitých rychlostních metrik, přidá jim důležitost a váženým průměrem z nich vytvoří jedno číslo. A to je přesně to, co tento rychle se rozvíjející, ale navenek mírně zmatený obor potřeboval.
+
+Metriky obsažené v aktuální verzi LPS totiž velmi dobře pokrývají celou rychlostní část uživatelského zážitku.
+
+<figure>
+<!-- TODO vyměnit  -->
 <img src="../dist/images/original/metriky-lps.png" alt="Metriky, které tvoří LPS">
 <figcaption markdown="1">
-*Obrázek: Jednotlivé metriky obsažené v Lighthouse Performance Score na filmovém pásu vykreslování webu.*
+*Obrázek: Nejdůležitější metriky rychlosti webu na filmovém pásu vykreslování. Ty zvýrazněné jsou obsažené v Lighthouse Performance Score.*
 </figcaption>
 </figure>
 
-Změří každou z důležitých rychlostních metrik, přidá jim důležitost a váženým průměrem z nich vytvoří jedno číslo. A to je přesně to, co tento rychle se rozvíjející, ale navenek mírně zmatený obor potřeboval.
+Ne všechny ukazatel jsou ale významově ekvivalentní.
+
+Jednotlivé metriky mají svou váhu, na jejímž základě se do výsledného skóre započítávají.
+
+Skóre každé metriky pak samozřejmě záleží na odlišnosti od optimální hodnoty. Obojí uvádím v tabulce.
 
 <figure>
-
 <div class="rwd-scrollable f-6"  markdown="1">
-
-| Metrika                                        | Váha     | Doporučená hodnota v ms    |
-| ---------------------------------------------- | -------: | --------------------------: |
-| [First Contentful Paint (FCP)](metrika-fcp.md) | 3        | 1 000                       |
-| [First Meaningful Paint (FMP)](metrika-fmp.md) | 1        | 1 700                       |
-| [Speed Index](speedindex.md)                   | 4        | 2 500                       |
-| First CPU Idle (FCI)                           | 2        | 4 900                       |
-| [Time to Interactive (TTI)](metrika-tti.md)    | 5        | 5 100                       |
-
+| Metrika                                           | Váha | Ideální hodnota |
+|:--------------------------------------------------|-----:|----------------:|
+| [First Contentful Paint (FCP)](metrika-fcp.md)    | 15 % |           ≤ 2 s |
+| [Largest Contentful Paint (LCP)](metrika-lcp.md)  | 25 % |         ≤ 2,5 s |
+| [Time To Interactive (TTI)](metrika-tti.md)       | 15 % |         ≤ 3,8 s |
+| [Speed Index (SI)](speedindex.md)                 | 15 % |         ≤ 4,3 s |
+| [Total Blocking Time (TBT)](metrika-tbt.md)       | 25 % |         ≤ 0,3 s |
+| [Cumulative Layout Shift (CLS)](metrika-cls.md)   | 5 %  |           ≤ 0,1 |
 </div>  
-
 <figcaption markdown="1">
-*Tabulka: Metriky, jejich váhy a doporučené hodnoty pro získání 100 % hodnocení v Lighthouse Performance Score od Lighthouse verze 3. Zdroj: [Tabulka](https://docs.google.com/spreadsheets/d/1dXH-bXX3gxqqpD1f7rp6ImSOhobsT1gn_GQ2fGZp8UU/edit?ts=59fb61d2#gid=283330180) od autorů Lighthouse.*
+*Tabulka: Metriky, jejich váhy a ideální hodnoty pro získání 100 % hodnocení v Lighthouse Performance Score od Lighthouse verze 6.*
 </figcaption>
-
 </figure>
 
-Když tedy vezmeme výše uvedený příklad s měřením úvodní stránky Vzhůru dolů, čísla by nám po dosazení [do vlastní kopie tabulky](https://docs.google.com/spreadsheets/d/1lBGOHbJ3X3eYgXpvlvX6Q5Dmrod7jRfhifYqMzK3WX4/edit#gid=283330180) měla sedět k získanému celkovému skóre.
+Všimněte si, jak moc důležité jsou dvě z nových metrik Web Vitals – Largest Contentful Paint (LCP) a Total Blocking Time (TBT). Spolu s CLS, zatím ne tak důležitou metrikou, se na celkovém skóre podílejí z 55 %.
+
+Jak případné úspěchy v optimalizaci jednotlivých metrik pohnout s celkovým skóre si můžete vyzkoušet [na skvělém kalkulátoru](https://googlechrome.github.io/lighthouse/scorecalc/) z dílny autorů Lighthouse:
+
+<!-- TODO obrázek kalkulátor, viz VD metriky -->
 
 ## Co vše se projevuje do Lighthouse Performance Score? {#co-vse}
 
-Pokud Lighthouse nebo PageSpeed Insights používáte, asi vás zajímá, zda se do skóre projevují i další zobrazovaná čísla: například uživatelská Data pole z [Chrome UX Reportu](chrome-ux-report.md) nebo příležitosti ke zlepšení.
+Pokud nástroje pro měření LPS, asi vás zajímá, zda se do skóre projevují i další zobrazovaná čísla: například uživatelská Data pole z [Chrome UX Reportu](chrome-ux-report.md) nebo příležitosti ke zlepšení.
 
 <figure>
 <img src="../dist/images/original/pagespeed-insights-prilezitosti.png" alt="Příležitosti v PSI">
@@ -77,17 +94,48 @@ V tabulce si pojďme ukázat, jakých skóre musíte dosáhnout pro kýžený po
 
 <div class="rwd-scrollable f-6"  markdown="1">
 
-| Barva                | Skóre     |
-| -------------------- | --------: |
-| Zelená (rychlý web)  | 90 – 100  |
-| Oranžová (průměr)    | 50 – 89   |
-| Červená (pomalý web) | 0 – 49    |
+| Barva                        | Skóre     |
+|------------------------------|----------:|
+| Zelená (dobrá rychlost)      | 90 – 100  |
+| Oranžová (vyžaduje zlepšení) | 50 – 89   |
+| Červená (špatná ryhlost)     | 0 – 49    |
 
 </div>
 
-Co ale přesně znamená hodnocení 100? Autoři píší, že [distribuce skóre](https://github.com/GoogleChrome/lighthouse/blob/master/docs/scoring.md) je normální distribuce odvozená z metrik výkonu skutečných webů na HTTPArchive.
+Co ale přesně znamená hodnocení 100? Autoři píší, že [distribuce skóre](https://web.dev/performance-scoring/) je normální distribuce odvozená z metrik výkonu skutečných webů.
 
-Pokud máte skóre 100, pak jste podle na 98. percentilu rychlých webů, takže mezi 2 % nejrychlejších. Skóre 50 ale znamená, že jste na 75. percentilu, takže mezi 25 % z nejrychlejších.
+Když vychází nová verze Lighthouse, autoři dělají datovou studii na webech z HTTPArchive a zjišťují, jak se v oblasti skóringu pohybují ony. Výsledek vaší stránky je tedy porovnatelný se slušným vzorkem webových stránek.
+
+Ale nastavení skóringu může být trochu matoucí:
+
+- Se skórem 90 jste na 8. percentilu testovaných stránek, takže mezi 8 % nejrychlejších.
+- Skóre 50 znamená, že jste na 75. percentilu, takže mezi 25 % nejrychlejšími.
+
+<!-- TODO zvýraznit? -->
+
+Ano, skóre 50 bodů tedy není žádná tragédie, ale něco jako bronzová medaile.
+
+Je to trochu matoucí, že? A to není zdaleka konec zmatkům, které LPS mezi laiky vyvolává.
+
+## Zavádějící metrika
+
+<!-- A "perfect" score of 100 is extremely challenging to achieve and not expected. For example, taking a score from 99 to 100 needs about the same amount of metric improvement that would take a 90 to 94.
+https://web.dev/performance-scoring/
+ 
+  - kontexty (konkurence, viz eshopy), 
+  - uživatelská data jsou zásadnější!
+  - LSP je prostředník pro optimalizaci, nikoliv cíl
+ -->
+
+<!-- TODO
+
+## Nástroje
+
+- [Lighthouse](lighthouse.md)  
+- [PageSpeed Insights](pagespeed-insights.md)
+
+ -->
+
 
 ## Co když se čísla pro jednotlivá měření hodně liší? {#odlisna-cisla}
 
