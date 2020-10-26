@@ -1,6 +1,6 @@
 # Dědičnost v CSS: Co to je a kterých vlastností se týká?
 
-Dědičnost je spolu s [kaskádou](css-kaskada.md) jako dva bráchové. A my, weboví vývojáři, jejich rodiče.
+Dědičnost je spolu s [kaskádou](css-kaskada.md) jako dvě sestry. A my, weboví vývojáři, jejich rodiče.
 
 Občas nás děti dost zlobí, jindy se mezi sebou mlátí… prostě nám jednou za čas lezou na nervy. Jenže — co s tím naděláme?
 
@@ -38,7 +38,7 @@ CodePen: [https://codepen.io/machal/pen/eYYEOEd](https://codepen.io/machal/pen/e
 
 To nejjednodušší bychom měli za sebou. Co když se do toho ale připletou vlastnosti kaskády?
 
-## Kaskáda je jako starší brácha, vždycky vyhraje {#dedicnost-vs-kaskada}
+## Kaskáda je jako starší sestra, vždycky vyhraje {#dedicnost-vs-kaskada}
 
 Připomeňme si, že [kaskádu](css-kaskada.md) v CSS definují tři pravidla:
 
@@ -85,7 +85,7 @@ a:-webkit-any-link {
 }
 ```
 
-Do hry tady, jako skoro vždy, tedy vstupuje kaskáda. Je to větší brácha, který skoro vždy přepere toho menšího.
+Do hry tady, jako skoro vždy, tedy vstupuje kaskáda. Je to větší sestra, která skoro vždy přepere tu menší.
 
 CodePen: [https://codepen.io/machal/pen/dyyzbWd](https://codepen.io/machal/pen/dyyzbWd?editors=1100)
 
