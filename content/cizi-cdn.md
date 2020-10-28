@@ -42,53 +42,6 @@ Chtěl bych tady proklamovat, že ke dnešku je pravdivný už jen bod 1. Ano, j
 
 Už po nasazení HTTP/2 situaci přestalo být rozumné stahovat kritické zdroje, jako jsou CSS a vlastní JS, z CDN od Googlu, Microsoftu a dalších velkých firem.
 
-## Co když to ale má uživatel v cache prohlížeče už z jiného weub? {#cache-prohlizece}
-
-Dříve jste se mohli poměrně spolehnout, že uživatelé mají v cache prohlížeče soubory populárních knihoven už z jiných webů.
-
-Osobně jsem z téhle představy začal střízlivět poté, co jsem si přečetl [statistiky Stevea Souderse](https://www.stevesouders.com/blog/2013/03/18/http-archive-jquery/) z roku 2013. Ty ukazují, že roztříštěnost verzí jQuery na webech je obrovská. A představa, že vývojáři používají poslední verze je mylná.
-
-<figure class="f-6" markdown="1">
-| Verze jQuery   | Podíl na webech  |
-|----------------|-----------------:|
-| 1.4.2 (http)   | 1,7 % |
-| 1.7.2 (http)   | 1,6 % |
-| 1.7.1 (http)   | 1,6 % |
-| 1.3.2 (http)   | 1,2 % |
-| 1.7.2 (https)  | 1,1 % |
-<figcaption markdown="1">
-*Tabulka: Podíl jQuery na webech v roce 2013. V té době ještě navíc záleželo na tom, zda je používaná verze běžící na HTTP nebo [HTTPS](https.md).*
-</figcaption>
-</figure>
-
-To bylo v roce 2013, jež před druhou a třetí verzí jQuery. Nyní máme na světě zhruba [80 verzí jQuery](https://code.jquery.com/jquery/), přičemž v produkčním používání jich na světě, ale i v ČR a SR bude – no osmdesát, že ano. Soudě dle mé osobní zkušenosti, vývojáři zrovna tuhle knihovnu bohužel aktualizují překvapivě hodně málo.
-
-Šance, že uživatelé budou mít zrovna vaši verzi vaší oblíbené knihovny v keši prohlížeče, prostě byla i před rokem 2020 nevelká. A to ještě nepřišla poslední rána, hned o ni budu mluvit.
-
-## Dělená mezipaměť od Chrome 86
-
-Nově Chrome zavádí takzvané [cache partitioning](https://developers.google.com/web/updates/2020/10/http-cache-partitioning). Zatímco tyto dva soubory byly napříč doménami ukládány pod jednotným klíčem:
-
-```text
-https://cdn.jquery.com/jquery.latest.js
-https://cdn.example.cz/obrazek.png
-```
-
-Nyní jsou ukládány jako kombinace názvu a zdroje:
-
-```text
-https://cdn.jquery.com/jquery.latest.js-alza.cz
-https://cdn.example.cz/obrazek.png-alza.cz
-
-https://cdn.jquery.com/jquery.latest.js-mall.cz
-https://cdn.example.cz/obrazek.png-mall.cz
-```
-
-Není tedy možné sdílet zdroje napříč weby.
-
-Důvodem pro toto je bezpečnost a soukromí uživatele. V případě zdrojů sdílených napříč doménami bylo možné uživatele sledovat nebo provádět útok [Cross-site search attack](https://portswigger.net/daily-swig/new-xs-leak-techniques-reveal-fresh-ways-to-expose-user-information). Safari, které v oblasti soukromí vede peleton, toto [naimplementovalo už v roce 2013](https://bugs.webkit.org/show_bug.cgi?id=110269).
-
-Takže pokud stahujete soubory např. ono jQuery od Google, moduly z unpkg.com, fonty od Google fonts, nikdo vám to rozhodně nezakazuje, ale miminálně z důvodů sdílené cache už to smysl nedává.
 
 <!-- 
 TODO
