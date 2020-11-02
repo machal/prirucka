@@ -1,6 +1,6 @@
 # Dělená cache v prohlížečích: konec sdílení zdrojů jako CSS, JS a webfonty
 
-Chrome příchází od verze 86 s takzvanou dělenou mezipamětí ([partitioned cache](https://www.stefanjudis.com/notes/say-goodbye-to-resource-caching-across-sites-and-domains/)), která znemožňuje sdílení zdrojů z CDN mezi weby běžícími na různých doménách.
+Chrome přichází od verze 86 s takzvanou dělenou mezipamětí ([partitioned cache](https://www.stefanjudis.com/notes/say-goodbye-to-resource-caching-across-sites-and-domains/)), která znemožňuje sdílení zdrojů z CDN mezi weby běžícími na různých doménách.
 
 Aktuálně řada webů spoléhá na sdílení CSS, JS a webfontů ze společných adres, umístěných na velkých CDN. Vezměme pár typických příkladů:
 
@@ -13,6 +13,8 @@ https://cdn.example.cz/obrazek.png
 
 Pokud uživatel měl některý z těchto zdrojů v mezipaměti prohlížeče, na webu, který tento zdroj používal také, už jej prohlížeč nemusel stahovat.
 
+<!-- AdSnippet -->
+
 Nyní jsou ale soubory do prohlížečové cache ukládány jako kombinace URL zdroje a názvu domény:
 
 ```text
@@ -23,13 +25,15 @@ https://cdn.jquery.com/jquery.latest.js-mall.cz
 https://cdn.example.cz/obrazek.png-mall.cz
 ```
 
-Se sdílením souborů napříč doménami tímpádem máme utrum.
+Se sdílením souborů napříč doménami tím pádem máme utrum.
 
 Pokud na to spoléháte ve svých strategiích pro optimalizaci rychlosti webu, může to mít nemalý vliv na rychlost webu u uživatelů (RUM měření).
 
 ## Proč nám to dělají? {#proc}
 
 Pokrok nezastavíš. Aktuálně je mezi uživateli velká poptávka po bezpečnosti a soukromí. Safari, které je v této oblasti napřed, dělenou cache bez většího ohlasu naimplementovalo [už v roce 2013](https://bugs.webkit.org/show_bug.cgi?id=110269).
+
+<!-- AdSnippet -->
 
 Důvody, proč o izolaci dříve sdílených souborů uživatelé a tedy i tvůrci [prohlížečů](prohlizece.md) stojí mohou být zřejmé, ale raději uvedu příklady:
 
@@ -67,7 +71,7 @@ Autoři Chrome mluví o novém klíči „Network Isolation Key“, který obsah
 
 Podle textu [Gaining security and privacy by partitioning the cache](https://developers.google.com/web/updates/2020/10/http-cache-partitioning) od Googlu je podpora v prohlížečích následující:
 
-<div class="rwd-scrollable"  markdown="1">
+<div class="rwd-scrollable f-6"  markdown="1">
 
 | Prohlížeč | Podpora | Klíč domény | Klíč iframe |
 |-----------|:-------:|:-----------:|:------------|
@@ -97,7 +101,7 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 
 Je ale otázka, jestli lze zabít mrtvolu.
 
-Osobně jsem z představy takdo dělaných optimalizací začal střízlivět před mnoha lety. Poté, co jsem si přečetl [statistiky Stevea Souderse](https://www.stevesouders.com/blog/2013/03/18/http-archive-jquery/) z roku 2013. Ty ukazují, že roztříštěnost (například) verzí jQuery na webech je obrovská. 
+Osobně jsem z představy takto dělaných optimalizací začal střízlivět před mnoha lety. Poté, co jsem si přečetl [statistiky Stevea Souderse](https://www.stevesouders.com/blog/2013/03/18/http-archive-jquery/) z roku 2013. Ty ukazují, že roztříštěnost (například) verzí jQuery na webech je obrovská. 
 
 Rovněž mylná je představa, že vývojáři používají poslední verze, u kterých by byla vyšší pravděpodobnost výskytu na jiných webech.
 
@@ -120,7 +124,9 @@ Soudě i podle mé osobní zkušenosti, vývojáři zrovna tuhle knihovnu  aktua
 
 Šance, že uživatelé budou mít zrovna vaši verzi vaší oblíbené knihovny v mezipaměti prohlížeče, prostě byla i před rokem 2020 nevelká. A to ještě nepřišla poslední rána v podobě dělené cache.
 
-Takže pokud stahujete soubory např. ono jQuery od Google, moduly z `unpkg.com` nebo `cdnjs.com`, fonty od Google fonts, nikdo vám to rozhodně nezakazuje, protože CDN může být i tak přínosné, ale miminálně z důvodů sdílené cache už to smysl nedává.
+<!-- AdSnippet -->
+
+Takže pokud stahujete soubory např. ono jQuery od Google, moduly z `unpkg.com` nebo `cdnjs.com`, fonty od Google fonts, nikdo vám to rozhodně nezakazuje, protože CDN může být i tak přínosné, ale minimálně z důvodů sdílené cache už to smysl nedává.
 
 ## Co to pro webaře znamená? {#co-to-znamena}
 
@@ -130,6 +136,6 @@ Dopady jsou asi zřejmé, ale zkusím je ještě shrnout:
 - Webům, které používaly ty nejpopulárnější verze knihoven z větších CDN, může z důvodu nutnosti stahování poklesnout výkon webu měřený u uživatelů. Ale o nic zásadního většinou nepůjde.
 - U těch na druhé straně – u provozovatelů CDN, kteří obsluhují velké objemy mezipaměti zdrojů pro mnoho webů, dojde tímto ke zvýšení provozu.
 
-Nelíbí se vám to? Dobře, budu končit optimisticky i pro vás. 
+Nelíbí se vám to? Dobře, budu končit optimisticky i pro vás.
 
 Do budoucna se teoreticky ke sdílení zdrojů napříč weby můžeme obloukem vrátit například přes návrh specifikace [Web Shared Libraries](https://www.youtube.com/watch?v=cBY3ZcHifXw).

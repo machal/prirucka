@@ -50,6 +50,7 @@
 - [JavaScript: priority v prohlížečích](js-priority.md)
 - [JavaScript: Intersection Observer](intersection-observer.md)
 - [HTTP/2 protokol](http-2.md)
+- [Partitioned cache v prohlížečích](partitioned-cache.md)
 - [Obrázky: průvodce](responzivni-obrazky.md)
 - [Obrázky: srcset a sizes](srcset-sizes.md)
 - [Obrázky WebP](webp.md)
