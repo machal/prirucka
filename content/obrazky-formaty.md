@@ -122,6 +122,13 @@ U nejpopulárnějšího formátu se ale ještě pojďme podívat na nejznáměj�
 
 ## SVG {#svg}
 
+<figure>
+<img src="../dist/images/original/svg.png" width="1600" height="900" alt="…">
+<figcaption markdown="1">
+*Obrázek: Konečně pořádné logo. SVG nezklamalo.*
+</figcaption>
+</figure>
+
 - První standard pochází z roku 2001. SVG jako Scalable Vector Graphics.
 - Jde o vektorový formát, ne jen pro obrázky, ale celé vektorové dokumenty.
 - Chvíli trvalo než se prosadil, ale v současném světě webařiny je zcela nepostradatelný pro ikony, infografiky, animace a mnoho dalšího.
