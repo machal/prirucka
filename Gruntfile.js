@@ -45,6 +45,7 @@ module.exports = function(grunt) {
     responsive_images: {
       default: {
         options: {
+          engine: 'im',
           sizes: [{
             name: "small",
             width: 650, // Aby se v ODT veslo na sirku stranky
