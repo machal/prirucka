@@ -2,7 +2,13 @@
 
 [WebP](https://developers.google.com/speed/webp/) je formát bitmapových obrázků, který představil Google v roce 2010.
 
-Není sice podporovaný všemi prohlížeči, i tak je ale při vývoji dnešních webů velmi použitelný. Pojďme si projít hlavní přínosy:
+Není sice podporovaný všemi prohlížeči, i tak je ale při vývoji dnešních webů velmi použitelný. 
+
+<div class="related web-only" markdown="1">
+- [Průvodce formáty obrázků pro web](obrazky-formaty.md)
+</div>
+
+Pojďme si projít hlavní přínosy:
 
 - možnost výrazného snížení datového objemu v porovnání s JPEG i PNG
 - alfa průhlednost, kterou dosud nabízel jen formát PNG

@@ -8,6 +8,12 @@ Jeho širšímu uplatnění dlouho bránil Microsoft, který pomocí Internet Ex
 
 ## SVG je prostě XML
 
+<div class="related web-only" markdown="1">
+- [Průvodce formáty obrázků pro web](obrazky-formaty.md)
+- [SVG inspirace](svg-inspirace.md)
+- [Nepoužívejte ikonfonty](ikonfonty-vs-svg.md)
+</div>
+
 Jedno z kouzel SVG je v možnosti ručně ho zapsat. Je to jednoduše XML texťák:
 
 ```svg
