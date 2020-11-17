@@ -121,13 +121,15 @@ Komponenta `.rwd-media` standardně dělá poměr stran 16:9, ale lze přidat r�
 
 #### Vložení MP4
 
-Alternativně můžeme vložit přímo video, se zdrojem například na Cloudinary. viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md).
+Alternativně můžeme vložit přímo video, se zdrojem [na Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/32912d254fbd3f0fdb1571f58bb93817). viz např. [content/img-pomer-stran.md](content/img-pomer-stran.md).
 
 Ale je potřeba vložit jako MP4, protož např. Safari WEBM neumí. Při vytváření v QuickTime stačí po uložení do `.mov` přejmenovat koncovku na `.mp4`. Pokud video stahuješ ze zdrojů od Googlu, stahuj v Safari, tam se to uloží do MP4.
 
+Nedávej `autoplay`, žere ti to kredit na Cloudinary.
+
 ```html
 <div class="rwd-media">
-  <video autoplay muted controls width="1600" height="900">
+  <video muted controls width="1600" height="900">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1587737526/vzhurudolu-video/img-aspect-ko_gdcr9f.mp4"
       type="video/mp4">
   </video>
