@@ -44,8 +44,14 @@ Ukažme si proto kompletní přehled všech možných řešení, jejich výhod a
 
 </figure>
 
-Ve srovnání jsem leccos zjednodušil. Nevidíte tam, že jednotlivá řešení lze kombinovat. Třeba komprimované obrázky s technikou `srcset/sizes`. Ale to vám určitě došlo nebo dojde z dalšího textu. A teď už na jednotlivá řešení. 
+Ve srovnání jsem leccos zjednodušil. Nevidíte tam, že jednotlivá řešení lze kombinovat. Třeba komprimované obrázky s technikou `srcset/sizes`. Ale to vám určitě došlo nebo dojde z dalšího textu. A teď už na jednotlivá řešení.
 
+<div class="related web-only" markdown="1">
+- [Obrázkové formáty pro web](obrazky-formaty.md)
+- [Formát WebP](webp.md)
+- [Formát AVIF](avif.md)
+- [Značka PICTURE](picture.md)
+</div>
 
 ## 1. Vektory? SVG {#vektory}
 

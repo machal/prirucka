@@ -114,7 +114,7 @@ Původní pořadí (1, 2, 3, 4) se tedy v prohlížeči změní na 3, 1, 2, 4.
 Jenže navigační pořadí je prohlížečem stále bráno podle HTML. Však to uvidíte ve videu:
 
 <div class="rwd-media rwd-media--160-45">
-  <video autoplay muted controls width="1600" height="246">
+  <video muted controls width="1600" height="246">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1601351952/vzhurudolu-video/css-order-after-tabindex_zs68wq.mp4"
       type="video/mp4">
   </video>
@@ -148,7 +148,7 @@ Někteří z vás si určitě řekli, že situaci může přeci [zachránit `tab
 V prohlížeči to po přidání atributů `tabindex` vypadá nadějně:
 
 <div class="rwd-media rwd-media--160-45">
-  <video autoplay muted controls width="1600" height="246">
+  <video muted controls width="1600" height="246">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1601351951/vzhurudolu-video/css-order-before_iwltuj.mp4"
       type="video/mp4">
   </video>

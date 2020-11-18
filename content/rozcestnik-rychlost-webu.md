@@ -52,7 +52,7 @@
 - [HTTP/2 protokol](http-2.md)
 - [Partitioned cache v prohlížečích](partitioned-cache.md)
 - [Obrázky: formáty](obrazky-formaty.md)
-- [Obrázky: průvodce](responzivni-obrazky.md) ([SVG](svg.md), [WebP](webp.md))
+- [Obrázky: průvodce](responzivni-obrazky.md) ([SVG](svg.md), [WebP](webp.md), [AVIF](avif.md))
 - [Obrázky: srcset a sizes](srcset-sizes.md)
 - [Obrázky WebP](webp.md)
 - [Third-party optimalizace](third-party.md)

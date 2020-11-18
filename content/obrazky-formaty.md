@@ -118,7 +118,7 @@ U nejpopulárnějšího formátu se ještě pojďme podívat na nejznámější 
 - Zvládá ztrátovou i bezeztrátovou kompresi, alfa kanál, animace a mnoho dalšího.
 - Nevýhodou je nemožnost postupného vykreslování, dlouhá doba převodu obrázku a zatím slabší podpora v prohlížečích.
 - **Podpora v prohlížečích:** Chrome, Opera a brzy asi Firefox ([CanIUse.com](https://caniuse.com/avif)).
-- Více: [Wikipedie](https://cs.wikipedia.org/wiki/AV1), [Jake Archibald](https://jakearchibald.com/2020/avif-has-landed/).
+- Více: [AVIF na Vzhůru dolů](avif.md), [Jake Archibald](https://jakearchibald.com/2020/avif-has-landed/).
 
 ## SVG {#svg}
 
@@ -165,7 +165,7 @@ Jednak — GIF se mě dneska už zdá zbytečný. Máme HTML5 video, animace dě
 
 <!-- AdSnippet -->
 
-Moderní formáty jako [WebP](webp.md) nebo AVIF umí řešit scénáře určené dříve specificky pro JPEG (fotky) i PNG (bannery). Podpora WebP je už velmi slušná.
+Moderní formáty jako [WebP](webp.md) nebo [AVIF](avif.md) umí řešit scénáře určené dříve specificky pro JPEG (fotky) i PNG (bannery). Podpora WebP je už velmi slušná.
 
 Pokud by mi to tedy moje pracovní postupy dovolily, upřednostňoval bych WebP a konkrétní obrázky optimalizoval ještě jako AVIF, který má fantasticky nízký datový objem, ale dlouho trvá převod souboru.
 

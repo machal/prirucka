@@ -17,7 +17,7 @@ Všichni to známe. Stránka vypadá, že je vykreslená… už už se chystáme
 Vtipně to popisuje následující video od autorů metriky z Googlu:
 
 <div class="rwd-media">
-  <video autoplay muted controls width="1316" height="1020">
+  <video muted controls width="1316" height="1020">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1592182312/vzhurudolu-video/layout-instability2_p3ovza.mp4"
       type="video/mp4">
   </video>

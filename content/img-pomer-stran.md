@@ -30,7 +30,7 @@ Takže uvádět atributy v HTML dříve stačilo, pak díky responzivnímu desig
 Takhle to na webech vypadat nemá, ale skoro vždy vypadá:
 
 <div class="rwd-media">
-  <video autoplay muted controls width="1600" height="900">
+  <video muted controls width="1600" height="900">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/eo_4/v1587737526/vzhurudolu-video/img-aspect-ko_gdcr9f.mp4"
       type="video/mp4">
   </video>
@@ -45,7 +45,7 @@ Ty lepší časy teď přicházejí, protože, jak jste se mohli už dočíst [n
 Takhle to vypadat má:
 
 <div class="rwd-media">
-  <video autoplay muted controls width="1600" height="900">
+  <video muted controls width="1600" height="900">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/eo_4/v1587737529/vzhurudolu-video/img-aspect-ok_jqylkx.mp4"
       type="video/mp4">
   </video>

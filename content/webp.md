@@ -2,10 +2,13 @@
 
 [WebP](https://developers.google.com/speed/webp/) je formát bitmapových obrázků, který představil Google v roce 2010.
 
-Není sice podporovaný všemi prohlížeči, i tak je ale při vývoji dnešních webů velmi použitelný. 
+Dnes už je podporovaný prakticky všemi prohlížeči, když nepočítáme zastaralý a obvykle málo nepoužívaný Internet Explorer.
 
-<div class="related web-only" markdown="1">
-- [Průvodce formáty obrázků pro web](obrazky-formaty.md)
+<div class="related" markdown="1">
+- [Obrázkové formáty pro web](obrazky-formaty.md)
+- [Formát AVIF](avif.md)
+- [Značka PICTURE](picture.md)
+- [Responzivní obrázky](responzivni-obrazky.md)
 </div>
 
 Pojďme si projít hlavní přínosy:
@@ -26,10 +29,9 @@ Takže by to mělo být ke zvážení, jen pokud obrázky generujete v reálném
 
 ## Podpora v prohlížečích: Partička kolem Chrome a Edge {#podpora}
 
-Jde o formát z dílny Google, i proto jej podporují všechny prohlížeče postavené na jádru Chrome – například Microsoft Edge, Opera nebo prohlížeč od Seznam.cz – a Firefox. Pokud to od oka dobře počítám, může jít ke dni psaní textu v Česku mezi 80 - 90 % uživatelů.
+Jde o formát z dílny Google, i proto jej podporují všechny prohlížeče postavené na jádru Chrome – například Microsoft Edge, Opera nebo prohlížeč od Seznam.cz – a Firefox. Nově také Safari. Pokud to od oka dobře počítám, může jít ke dni psaní textu v Česku mezi 90 - 98 % uživatelů.
 
-- Podporují: Chrome a prohlížeče postavené na Chromiu a Firefox. 
-- Připravují podporu: [Safari ve verzi 14](https://developer.apple.com/documentation/safari-release-notes/safari-14-beta-release-notes#Media).
+- Podporují: Chrome a prohlížeče postavené na Chromiu, Firefox, [Safari od verze 14](https://developer.apple.com/documentation/safari-release-notes/safari-14-beta-release-notes#Media).
 - Nepodporují a podporovat nebudou: Internet Explorer všech verzí.
 
 Více informací o podpoře: [caniuse.com/webp](https://caniuse.com/#feat=webp).

@@ -31,7 +31,7 @@ Upravíte CSS nebo HTML soubor a změny se vám hned projeví v prohlížeči be
 Pokud živý náhled neznáte nebo nevěříte, že to nějak zásadně pomáhá, opravdu (ale *opravdu*) si to zkuste. Pomáhá to totiž *hodně*.
 
 <div class="rwd-media">
-  <video autoplay muted controls width="1920" height="1200">
+  <video muted controls width="1920" height="1200">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1595830619/vzhurudolu-video/browsersync_nkrnoo.mov"
       type="video/mp4">
   </video>
