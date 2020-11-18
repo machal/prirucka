@@ -2,7 +2,7 @@
 
 Chrome začal [od verze 85](https://developers.google.com/web/updates/2020/08/nic85) vcelku překvapivě a bez velkých oslav podporovat nový obrázkový formát AVIF.
 
-Inovativní formáty nás webaře zajímají hlavně z pohledu datové efektivity a nových vlastností. Obojí je zde splněno, takže se na AVIF pojďme podívat více zblízka. Chce
+Inovativní formáty nás webaře zajímají hlavně z pohledu datové efektivity a nových vlastností. Obojí je zde splněno, takže se na AVIF pojďme podívat více zblízka.
 
 <figure>
 <img src="../dist/images/original/jpeg-webp-avif.png" width="1600" height="900" alt="JPEG vs. WebP vs. AVIF">
@@ -147,7 +147,7 @@ Nicméně – pro proces optimalizace jednotlivých kusů obrázků toto problé
 
 Problémem WebP byla pomalá adopce prohlížeči. Ano, díváme se na tebe, Safari. Apple přidal podporu WebP až nedávno. 10 let po Chrome, ehm.
 
-Jak je to u WebP?
+Jak je to u AVIFu?
 
 - [Chrome 85](https://developers.google.com/web/updates/2020/08/nic85) již AVIF podporuje. V jiných prohlížečích založených na Chromu práce probíhá.
 - [Ve Firefoxu](https://bugzilla.mozilla.org/show_bug.cgi?id=1443863) na podpoře pracují.
@@ -160,9 +160,9 @@ Jak je to u WebP?
 </figcaption>
 </figure>
 
-Kodek AV1 si již nyní připisuje rychlejší přijetí relevantními formami než předchozí kodeky bez licenčních poplatků.
+Kodek AV1 si již nyní připisuje rychlejší přijetí relevantními firmami než předchozí kodeky bez licenčních poplatků. Nejnovější GPU od Nvidia, AMD a Intel již mají hardwarové dekódování pro AV1. 
 
-Nejnovější GPU od Nvidia, AMD a Intel již mají hardwarové dekódování pro AV1. Takže naděje na relativně rychlý postup party kolem Tima Cooka jsou nemalé.
+K tomu ta návaznost AVIFu na formát HEIF, který má Apple tak rád… Takže za mě jsou naděje na relativně rychlý postup party kolem Tima Cooka relativně slušné.
 
 ## Nasazení na web {#nasazeni}
 
