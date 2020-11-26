@@ -46,7 +46,7 @@
 - [Media Queries](css3-media-queries.md)
 - [Vícesloupcový layout](css3-multicolumn.md)
 - [Flexbox](css3-flexbox.md): vlastnosti [kontejneru](css3-flexbox-kontejner.md) a [položky](css3-flexbox-polozky.md)
-- [CSS grid](css-grid.md): [v MSIE](css-grid-msie.md), [příklady](css-grid-inspirace.md)
+- [CSS grid](css-grid.md): [v MSIE](css-grid-msie.md), [příklady](css-grid-inspirace.md) a [masonry v CSS](css-masonry.md).
 - [order: změna pořadí položek](css-order.md)
 
 ### Další vlastnosti

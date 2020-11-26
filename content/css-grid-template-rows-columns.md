@@ -75,6 +75,7 @@ Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-colu
 | [Kombinace jednotek](#jednotky)    | `150px auto 1fr 1fr`                     |
 | [Pojmenovávání stop](#pojmenovane-stopy) | `[first] 150px [second] 1fr [end]` |
 | [Opakování](#opakovani)            | `repeat(12, 1fr)`                        |
+| [Masonry](#masonry)                | `masonry`                                |
 
 Další řadu možností nabízí [funkce `minmax()`](css-minmax.md) a související hodnoty pro nastavení šířky podle obsahu jako je `min-content`, `max-content` nebo `fit-content`.
 
@@ -149,6 +150,19 @@ Proto je tady [funkce `repeat()`](css-repeat.md), která opakování zamezuje:
   grid-template-columns: repeat(6, 1fr);
 }
 ```
+
+## Masonry {#masonry}
+
+Hodnota `masonry` je speciální, protože by v budoucnu měla zařídit nativní [masonry (nebo zděný) layout](css-masonry.md).
+
+<figure>
+<img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
+<figcaption markdown="1">
+*Nativně vykreslený masonry layout. Zdroj: [Rachel Andrew](https://codepen.io/rachelandrew/pen/wvWmZWB).*
+</figcaption>
+</figure>
+
+Vzhledem k tomu, že na konci roku 2020 to zatím podporuje jen prohlížeč Firefox ve verzi Nightly, bude ještě chvíli trvat než se z takové věci budeme moci začít těšit v běžných prohlížečích.
 
 ## Podpora v prohlížečích {#podpora}
 

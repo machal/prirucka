@@ -66,6 +66,7 @@ Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám
 | [jednotka `fr`](css-jednotka-fr.md) | Jednotka pro podíl na celku <br>  `grid-template-columns: 1fr 2fr` |
 | [funkce `repeat()`, `auto-fill` a `auto-fit` ](css-repeat.md)  | Funkce zkrácení opakujících se zápisů <br>  `grid-template-columns: repeat(4, 1fr)` |
 | [funkce `minmax()`](css-minmax.md)  | Omezení minima a maxima v rozměru <br>  `grid-template-columns: minmax(100px, 1fr)` |
+| [`masonry`](css-masonry.md)  | Masonry (zděný) layout <br>  `grid-template-rows: masonry` |
 
 </div>
 
