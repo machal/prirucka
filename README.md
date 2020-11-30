@@ -97,6 +97,31 @@ Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají
 
 `width` je kvůli bugu v PHP Simple HTML DOM Parser potřeba vždy jako první.
 
+#### Široké obrázky
+
+Zabezpečí to třída `.img-wide`, ale pak už tam nesmí být `<figure>`.
+
+```html
+<img … class="img-wide">
+```
+
+Hodí se to na všechna možná podrobnější schémata atd.
+
+#### Obrázek v tabulce
+
+Možné to je, viz `/prirucka/css-box-alignment`:
+
+Je potřeba je vkládat ve `small` variantě.
+
+Příklad:
+
+```markdown
+|          | Vlastnost                               | Co dělá?  |
+|----------|-----------------------------------------|-----------|
+| ![Vlastnost justify-items](../dist/images/small/vdgrid/css-justify-items-schema.png) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
+| ![Vlastnost align-items](../dist/images/small/vdgrid/css-align-items-schema.png) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
+```
+
 ### Video
 
 #### Vložení z YouTube
