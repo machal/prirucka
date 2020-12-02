@@ -1,19 +1,26 @@
-# Teorie k zarovnání boxů v CSS
+# Teorie k zarovnání boxů v CSS (Box Alignment Module)
 
-Než se do pustíme do jednotlivých vlastnosí, musíme si objasnit pár konceptů. Nebojte se, nebudu to s teorií přehánět, vybral jsem jen takové pojmy, bez kterých se nemůžete obejít.
+Zde si objasníme pár konceptů k CSS Box Alignment Module. Nebojte se, nebudu to s teorií přehánět, vybral jsem jen takové pojmy, bez kterých se nemůžete obejít.
 
 ## Důležité pojmy {#pojmy}
 
-<!-- TODO -->
+Podíváme se na pojmy jako „směr rozvržení“, „kontejner“ a „předmět“ nebo „náhradní řešení zarovnání“.
 
 ### Směr rozvržení: bloková a řádková osa {#pojmy-osy}
 
-Prohlížeče nám naštěstí při tvorbě běžného rozvrtění umožňují jen dvourozměrný zážitek a tak zarovnáváme na dvě osy.
+Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek a tak naštěstí zarovnáváme jen na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
+
+<figure>
+<img src="../dist/images/original/vdgrid/css-box-alignment-osy.png" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
+<figcaption markdown="1">
+*Dvě osy v rozvržení.*
+</figcaption>
+</figure>
 
 Osy pro potřeby layoutu v CSS:
 
-- Hlavní nebo-li řádková osa (inline axis), u nás obvykle vodorovná.
-- Příčná nebo-li bloková osa (block axis), u nás obvykle svislá.
+- _Hlavní_ nebo-li _řádková_ osa (inline axis), ve středoevropských podmínkách obvykle vodorovná.
+- _Příčná_ nebo-li _bloková_ osa (block axis), u nás obvykle svislá.
 
 Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit:
 
@@ -21,9 +28,9 @@ Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr mů
 - Změníme směr toku layoutu, což například ve flexboxu často děláme pomocí vlastnosti `flex-direction`.
 
 <figure>
-<img src="../dist/images/original/todo.jpg" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdgrid/css-box-alignment-direction.png" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
-*TODO: Obrázek s výchozím směrem a pak změněným pomocí flex-direction, změny jazyka…*
+*Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti `flex-direction`. Zdroj: [cdnp.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)*
 </figcaption>
 </figure>
 
@@ -36,17 +43,26 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 - *Předmět zarovnání* (alignment subject) je samotný boxík, který zarovnáváme. V rámci textů mu zde občas budeme říkat také „položka“.
 - *Kontejner zarovnání* (alignment container) je rámec, ve kterém předmět zarovnáváme. Obvykle jde o rodičovský element.
 
-<!-- *TODO příklad s obrázkem, alespoň viz https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment* -->
+<figure>
+<img src="../dist/images/original/vdgrid/pojmy-grid-kontejner-polozky.png" width="1600" height="900" alt="Kontejner a položky">
+<figcaption markdown="1">
+*Kontejner a položky neboli předměty zarovnání.*
+</figcaption>
+</figure>
 
 ### Náhradní řešení zarovnání {#pojmy-fallback}
 
-„Fallback alignment“ nebo-li náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
+„Fallback alignment“, nebo také náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
 
 Například pro uplatnění hodnoty `space-between` u vlastnosti `justify-content` je nutné, aby se v kontejneru vyskytoval více než jeden předmět. Pokud tato podmínka není splněna, specifikace jako náhradní řešení předepisuje hodnotu `flex-start` nebo `start`.
 
 ## Typy zarovnání podle elementu {#typy-element}
 
-Zkusme zabřednout trošku více do hloubky a zároveň si v tom neudělat nepořádek. Vlastnosti a hodnoty zarovnání boxů v CSS můžeme dělat podle dvou klíčů. Ten první je zaměřený na elementy, které ovlivňuje – všechny položky, samostatnou položku nebo prostor mezi nimi.
+<!-- TODO zmiňovat to, když už je to v css-box-alignment.md přehnedněji? -->
+
+Zkusme zabřednout trošku více do hloubky a zároveň si v tom neudělat nepořádek. Vlastnosti a hodnoty zarovnání boxů v CSS můžeme dělit podle dvou klíčů.
+
+Ten první je zaměřený na elementy, které ovlivňuje – všechny položky, samostatnou položku nebo prostor mezi nimi.
 
 ### Zarovnání položek {#polozky}
 
@@ -54,9 +70,9 @@ Na kontejneru definujeme, jak se budou zarovnávat položky.
 
 Patří sem všechny vlastnosti, které v názvu obsahují `-items`:
 
-- [`justify-items`](css-justify-items.md) – zarovnání na řádkové ose
-- [`align-items`](css-align-items.md) - zarovnání na blokové ose
-- [`place-items`](css-place-items.md) - zkratka pro obě vlastnosti
+- [`justify-items`](css-justify-items.md) – zarovnání na řádkové ose.
+- [`align-items`](css-align-items.md) - zarovnání na blokové ose.
+- [`place-items`](css-place-items.md) - zkratka pro obě vlastnosti.
 
 ### Zarovnání samostatné položky {#sebe-sama}
 
@@ -64,9 +80,9 @@ Zarovnání konkrétního subjektu uvnitř kontejneru.
 
 Jde o všechny vlastnosti, které v názvu obsahují `-self`:
 
-- [`justify-self`](css-justify-self.md) – zarovnání na řádkové ose
-- [`align-self`](css-align-self.md) - zarovnání na blokové ose
-- [`place-self`](css-place-self.md) - zkratka pro obě vlastnosti
+- [`justify-self`](css-justify-self.md) – zarovnání na řádkové ose.
+- [`align-self`](css-align-self.md) - zarovnání na blokové ose.
+- [`place-self`](css-place-self.md) - zkratka pro obě vlastnosti.
 
 ### Distribuce prostoru mezi položkami {#distribuce-prostoru}
 
@@ -74,9 +90,9 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
 
 Patří sem všechny vlastnosti, které v názvu obsahují `-content`:
 
-- [`justify-content`](css-justify-content.md) – zarovnání na řádkové ose
-- [`align-content`](css-align-content.md) - zarovnání na blokové ose
-- [`place-content`](css-place-content.md) - zkratka pro obě vlastnosti
+- [`justify-content`](css-justify-content.md) – zarovnání na řádkové ose.
+- [`align-content`](css-align-content.md) - zarovnání na blokové ose.
+- [`place-content`](css-place-content.md) - zkratka pro obě vlastnosti.
 
 ## Klíčová slova pro zarovnání {#typy-klicova-slova}
 
@@ -257,7 +273,12 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-<!-- TODO obrázek: (https://www.w3.org/TR/css-align-3/#overflow-values -->
+<figure>
+<img src="../dist/images/original/vdgrid/overflow-position.png" width="1600" height="900" alt="Vlastnost overflow-position">
+<figcaption markdown="1">
+*Kontejner a položky neboli předměty zarovnání.*
+</figcaption>
+</figure>
 
 V době psaní textu (srpen 2020) se zdá, že naše milé prohlížeče s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
 

@@ -37,13 +37,13 @@ Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 
 |          | Vlastnost                               | Co dělá?  |
 |----------|-----------------------------------------|-----------|
-| ![Vlastnost justify-items](../dist/images/small/vdgrid/css-justify-items-schema.png) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
-| ![Vlastnost align-items](../dist/images/small/vdgrid/css-align-items-schema.png) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
-| ![Vlastnost place-items](../dist/images/small/vdgrid/css-place-items-schema.png) | [`place-items`](css-place-items.md)     | Zkratka pro obě vlastnosti. <br> Např. `align-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
+| [![Vlastnost justify-items](../dist/images/small/vdgrid/css-justify-items-schema.png)](css-justify-items.md) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
+| [![Vlastnost align-items](../dist/images/small/vdgrid/css-align-items-schema.png)](css-align-items.md) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
+| [![Vlastnost place-items](../dist/images/small/vdgrid/css-place-items-schema.png)](css-place-items.md) | [`place-items`](css-place-items.md)     | Zkratka pro obě vlastnosti. <br> Např. `align-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
 
 </div>
 
-### Zarovnání samostatné položky (`*-self`) {#sebe-sama}
+## Zarovnání samostatné položky (`*-self`) {#sebe-sama}
 
 Konkrétní položce definujeme, jak se bude zarovnávat.
 
@@ -51,13 +51,13 @@ Konkrétní položce definujeme, jak se bude zarovnávat.
 
 |          | Vlastnost                               | Co dělá?  |
 |----------|-----------------------------------------|-----------|
-| ![Vlastnost justify-self](../dist/images/small/vdgrid/css-justify-self-schema.png) | [`justify-self`](css-justify-self.md)   | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-self: center` vodorovně centruje položku. |
-| ![Vlastnost align-self](../dist/images/small/vdgrid/css-align-self-schema.png) | [`align-self`](css-align-self.md)   | Zarovnání na blokové ose (obvykle svisle). <br> Např. `justify-self: end` zarovná položku ke spodní hraně. |
-| ![Vlastnost place-self](../dist/images/small/vdgrid/css-place-self-schema.png) | [`place-self`](css-place-self.md)   | Zkratka pro zarovnání v obou směrech. <br> Např. `place-self: end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
+| [![Vlastnost justify-self](../dist/images/small/vdgrid/css-justify-self-schema.png)](css-justify-self.md) | [`justify-self`](css-justify-self.md)   | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-self: center` vodorovně centruje položku. |
+| [![Vlastnost align-self](../dist/images/small/vdgrid/css-align-self-schema.png)](css-align-self.md) | [`align-self`](css-align-self.md)   | Zarovnání na blokové ose (obvykle svisle). <br> Např. `justify-self: end` zarovná položku ke spodní hraně. |
+| [![Vlastnost place-self](../dist/images/small/vdgrid/css-place-self-schema.png)](css-place-self.md) | [`place-self`](css-place-self.md)   | Zkratka pro zarovnání v obou směrech. <br> Např. `place-self: end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
 
 </div>
 
-### Distribuce prostoru mezi položkami (`*-content`) {#distribuce-prostoru}
+## Distribuce prostoru mezi položkami (`*-content`) {#distribuce-prostoru}
 
 Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejneru zůstává mezi položkami.
 
@@ -65,9 +65,9 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
 
 |          | Vlastnost                               | Co dělá?  |
 |----------|-----------------------------------------|-----------|
-| ![Vlastnost justify-content](../dist/images/small/vdgrid/css-justify-content-schema.png) | [`justify-content`](css-justify-content.md) | Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. `justify-content: space-between` rozdělí prostor mezi položky. |
-| ![Vlastnost align-content](../dist/images/small/vdgrid/css-align-content-schema.png) | [`align-content`](css-align-content.md) | Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. `align-content: start` zajistí zarovnání položek k horní hraně kontejneru. |
-| ![Vlastnost place-content](../dist/images/small/vdgrid/css-place-content-schema.png) | [`place-content`](css-place-content.md) | Zkratka oba směry. <br> Např. `place-content: start space-between` zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky. |
+| [![Vlastnost justify-content](../dist/images/small/vdgrid/css-justify-content-schema.png)](css-justify-content.md) | [`justify-content`](css-justify-content.md) | Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. `justify-content: space-between` rozdělí prostor mezi položky. |
+| [![Vlastnost align-content](../dist/images/small/vdgrid/css-align-content-schema.png)](css-align-content.md) | [`align-content`](css-align-content.md) | Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. `align-content: start` zajistí zarovnání položek k horní hraně kontejneru. |
+| [![Vlastnost place-content](../dist/images/small/vdgrid/css-place-content-schema.png)](css-place-content.md) | [`place-content`](css-place-content.md) | Zkratka oba směry. <br> Např. `place-content: start space-between` zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky. |
 
 ## A co teorie? {#teorie}
 
