@@ -14,7 +14,13 @@ place-items: <hodnota align-items> <hodnota justify-items>;
 
 Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru. Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
 
+<!-- AdSnippet -->
+
 Dává smysl hlavně pro CSS Grid, protože ve flexboxu je vlastnost `justify-items` ignorována.
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduchý příklad
 
@@ -42,3 +48,5 @@ Podívejte se na referenční příručku k oběma vlastnostem, pro které je `p
 Použití ve flexboxu smysl nedává, ale v rámci CSS Gridu má `place-items` velmi slušnou podporu ve všech moderních prohlížečích kromě výjimek od Microsoftu – původního Edge, který již ale není příliš rozšířená a IE11, který je na tom podobně. Předpokládám ale, že Autoprefixer si s touhle vlastností poradí.
 
 Pro více informací se podívejte na [caniuse.com/place-items](https://caniuse.com/#search=place-items).
+
+<!-- AdSnippet -->

@@ -6,7 +6,13 @@ Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor m
 
 Ve specifikaci se počítá s použitím pro flexbox, Grid, ale také vícesloupcový layout.
 
+<!-- AdSnippet -->
+
 Po pořádek zmiňme, že tahle vlastnost nemusí být pro flexbox užitečná, protože zbylý prostor se rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů a až poté, co se započtou hodnoty délek položek rozvržení. Stačí tedy jedna flexboxová položka s `flex` nebo `flex-grow` nastavená na 1 a více a žádný volný prostor zde nezbude.
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduchý příklad
 
@@ -22,7 +28,7 @@ CodePen: [cdpn.io/e/mdPmoVZ?editors=1100](https://codepen.io/machal/pen/mdPmoVZ?
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-content](../dist/images/original/vdgrid/css-justify-content-schema.png)
+![Hodnoty vlastnosti justify-content](../dist/images/original/vdgrid/css-justify-content-hodnoty.png)
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
@@ -75,3 +81,5 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 V layoutech postavených na Gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
 
 Více na [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
+
+<!-- AdSnippet -->

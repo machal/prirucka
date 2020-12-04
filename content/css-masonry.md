@@ -1,6 +1,6 @@
 # Masonry layout nativně v CSS
 
-Rozvržení typu masonry je ve webdesignu populární jako zednická lžíce mezi zedníky.
+Rozvržení typu masonry je ve webdesignu stejně populární jako zednická lžíce mezi zedníky.
 
 Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu [flexboxu](css3-flexbox.md), ale plně to nevyřešil ani [grid](css-grid.md).
 
@@ -114,7 +114,7 @@ Další možnosti jsou podobné jako u vlastností `align-content` a `justify-co
 - Hodnota `normal` – u těchto vlastností se chová jako `start`.
 - Hodnota `stretch` - položky automatické velikosti v rozložení se roztáhnou.
 
-### Podpora v prohlížečích a implementace {#podpora}
+## Podpora v prohlížečích a implementace {#podpora}
 
 Standardizátoři mají CSS Grid Level 3 zatím rozpracovaný. V téhle fázi je tedy potřeba, aby vývojářky a vývojáři neváhali [dávat zpětnou vazbu](https://github.com/w3c/csswg-drafts/issues/).
 
@@ -137,9 +137,20 @@ Osobně nicméně věřím, že po připomínkovém řízení ke specifikaci doj
 
 Takže podpora naprosté většiny prohlížečů zde může přijít relativně brzy, ale teď je na nás, abychom to zkoušeli a připomínkovali.
 
-### Další možnosti jak řešit masonry {#dalsi}
+## Další možnosti jak řešit masonry {#dalsi}
 
-Do doby než se dokončí specifikace a prohlížeče nativní masonry naimplementují, přidávám sem také seznam alternativních metod. Mají dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScipt. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
+Do doby než se dokončí specifikace a prohlížeče nativní masonry naimplementují, přidávám sem také seznam alternativních metod.
+
+### JavaScriptové pluginy Davida DeSandra {#dalsi-desandro}
+
+Existují dvě varianty:
+
+- *[Masonry](https://masonry.desandro.com/)*  
+„JavaScript grid layout library“ je použitelná s jQuery nebo také s čistým JavaSciptem. Má spoustu [možností nastavení](https://masonry.desandro.com/options.html). 24 kB dat po minifikaci, 8 kB po gzipu.
+- *[Colcade](https://github.com/desandro/colcade)*  
+Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny jako spojování sloupečků (multi-column-spanning) nebo přechody (transitions). Za tip děkujeme Honzovi z komentářů.
+
+Další metody dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScipt. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
 
 ### Vícesloupcový layout {#dalsi-multicol}
 

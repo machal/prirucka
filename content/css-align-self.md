@@ -8,7 +8,13 @@ V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle bu�
 
 Hodnota `auto` u vlastnosti `margin` má ostatně před `align-self` přednost ve všech systémech rozvržení v CSS.
 
+<!-- AdSnippet -->
+
 Vlastnost `align-self` je určená pro flexbox, grid, absolutně pozicované prvky, ale ne pro buňky tabulky nebo blokový layout.
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduché příklady
 
@@ -33,7 +39,7 @@ CodePen: [cdpn.io/e/zYqwKer?editors=1100](https://codepen.io/machal/pen/zYqwKer?
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti align-self](../dist/images/original/vdgrid/css-align-self-schema.png)
+![Hodnoty vlastnosti align-self](../dist/images/original/vdgrid/css-align-self-hodnoty.png)
 
 Také vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
@@ -90,3 +96,5 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro Grid layout. V Internet Exploreru 11 je ovšem nutné použít prefix `-ms-align-self`, což ale doplní Autoprefixer.
 
 Více na [caniuse.com/align-self](https://caniuse.com/#search=align-self).
+
+<!-- AdSnippet -->

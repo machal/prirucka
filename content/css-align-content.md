@@ -6,7 +6,13 @@ Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi po
 
 Ve specifikaci se počítá s použitím pro flexbox, Grid, vícesloupcový layout, ale taky pro blokové prvky.
 
+<!-- AdSnippet -->
+
 Tato vlastnost nemá pochopitelně vliv na jednořádkové flexboxové kontejnery (tj. kontejnery s `flex-wrap:nowrap`).
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduchý příklad
 
@@ -22,7 +28,7 @@ Deklarace `align-content:space-between` tedy zajistí rozdělení volného prost
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti align-content](../dist/images/original/vdgrid/css-align-content-schema.png)
+![Hodnoty vlastnosti align-content](../dist/images/original/vdgrid/css-align-content-hodnoty.png)
 
 Vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
@@ -80,3 +86,5 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 V layoutech postavených na Gridu je u základních hodnot vlastnost plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
 
 Více na [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
+
+<!-- AdSnippet -->

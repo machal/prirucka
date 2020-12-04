@@ -6,7 +6,13 @@ Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak té�
 
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
+<!-- AdSnippet -->
+
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md). Hodnota `auto` u vnějších okrajů má ostatně před touto `justify-self` přednost ve všech systémech rozvržení v CSS.
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduchý příklad
 
@@ -22,7 +28,7 @@ Následuje několik užitečných vysvětlovacích odrážek:
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-self](../dist/images/original/vdgrid/css-justify-self-schema.png)
+![Hodnoty vlastnosti justify-self](../dist/images/original/vdgrid/css-justify-self-hodnoty.png)
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
@@ -81,3 +87,5 @@ Jak už padlo, ve flexboxových layoutech je vlastnost `justify-self` ignorován
 Při použití `display:grid` zde máme tradiční výjimku – Internet Explorer 11.
 
 Více na [caniuse.com/justify-self](https://caniuse.com/#search=justify-self).
+
+<!-- AdSnippet -->

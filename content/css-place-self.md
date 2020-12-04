@@ -6,6 +6,8 @@ Vlastnost `place-self` určí zarovnání položky na hlavní i příčné ose p
 
 Jde o zkratku pro vlastnosti [`align-self`](css-align-self.md) a [`justify-self`](css-justify-self.md).
 
+<!-- AdSnippet -->
+
 Zapisuje se takto:
 
 ```css
@@ -13,6 +15,10 @@ place-self: <hodnota align-self> <hodnota justify-self>;
 ```
 
 Pokud není druhá hodnota přítomná, použije se první pro oba směry, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduchý příklad
 
@@ -40,3 +46,5 @@ Podívejte se na referenční příručku k oběma vlastnostem, pro které je `p
 Vlastnost `place-self` bohužel v době psaní tohoto textu nepodporuje Internet Explorer, ale ani Safari.
 
 Aktuální informace hledejte na [caniuse.com/place-self](https://caniuse.com/#search=place-self).
+
+<!-- AdSnippet -->

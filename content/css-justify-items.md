@@ -6,9 +6,15 @@ Vlastnost `justify-items` na kontejneru layoutu definuje zarovnání položek na
 
 Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejneru.
 
+<!-- AdSnippet -->
+
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
 
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. [cdpn.io/e/eYZgOwL?editors=1100](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduchý příklad s Gridem
 
@@ -18,7 +24,7 @@ CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-items](../dist/images/original/vdgrid/css-justify-items-schema.png)
+![Hodnoty vlastnosti justify-items](../dist/images/original/vdgrid/css-justify-items-hodnoty.png)
 
 Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
@@ -77,3 +83,5 @@ Jak už padlo, ve flexboxových layoutech je vlastnost `justify-items` ignorová
 Ale vážněji: při použití `display:grid` zde máme tradiční výjimku – Internet Explorer 11.
 
 Více na [caniuse.com/justify-items](https://caniuse.com/#search=justify-items).
+
+<!-- AdSnippet -->

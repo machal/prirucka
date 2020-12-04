@@ -2,7 +2,15 @@
 
 Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo Gridu.
 
+<div class="related web-only" markdown="1">
+- [CSS Grid](css-grid.md)
+- [Flexbox](css3-flexbox.md)
+- [Vícesloupcový layout](css3-multicolumn.md)
+</div>
+
 Specifikace [Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout, což nás zajímá hlavně pro potřeby [CSS gridu](css-grid.md). O tom je tato příručka na Vzhůru dolů.
+
+<!-- AdSnippet -->
 
 Nijak se zde nezabýváme zarovnáváním textu (vlastnosti jako `text-align`, `vertical-align`), ani staršími (ale stále funkčními) metodami zarovnávání boxů s pomocí `margin` a tak dále.
 
@@ -69,6 +77,24 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
 | [![Vlastnost align-content](../dist/images/small/vdgrid/css-align-content-schema.png)](css-align-content.md) | [`align-content`](css-align-content.md) | Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. `align-content: start` zajistí zarovnání položek k horní hraně kontejneru. |
 | [![Vlastnost place-content](../dist/images/small/vdgrid/css-place-content-schema.png)](css-place-content.md) | [`place-content`](css-place-content.md) | Zkratka oba směry. <br> Např. `place-content: start space-between` zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky. |
 
+</div>
+
+<div class="web-only" markdown="1">
+
+## Odkazy pro další studium {#odkazy}
+
+Na závěr si neodpustím několik odkazů jinam:
+
+- Specifikace W3C pro CSS Box Alignment Module Level 3 – [w3.org/TR/css-align-3](https://www.w3.org/TR/css-align-3/)
+- Ahmad Shaheed: hra „Learn Box Alignment“ – [ishadeed.com/article/learn-box-alignment/](https://ishadeed.com/article/learn-box-alignment/)
+- Rachel Andrew: stručný tahák „Box Alignment Cheatsheet“ – [rachelandrew.co.uk/css/cheatsheets/box-alignment](https://rachelandrew.co.uk/css/cheatsheets/box-alignment)
+
+</div>
+
+<!-- AdSnippet -->
+
+<!--  
+
 ## A co teorie? {#teorie}
 
 V této části se pokouším být co nejvíce praktický. Poskytnout snadno použitelný rozcestník pro použití vlastností CSS Box Alignment. Cíleně jsem vám ale zamlčel teoretickou část, která je důležitá pro pochopení problematiky zarovnání v CSS. 
@@ -81,3 +107,5 @@ Pro pochopení zarovnání layoutu v CSS byste totiž ideálně měli znát:
 - Odkazy pro další studium.
 
 Tohle všechno jsem schoval [do teorie kolem CSS Box Alignment](css-box-alignment-teorie.md).
+
+-->

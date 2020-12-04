@@ -2,7 +2,7 @@
 
 Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas podle anglického originálu říká „gutter“.
 
-Dřívější zápisy „děrovacích“ vlastností byly ve specifikaci definovány jinak, s prefixem `grid-`: `grid-row-gap`, `grid-column-gap` a `grid-gap` a zaměřené čistě jen na CSS Grid. Nyní jsou ale z této části specifikace vyjmuté a vyvíjené pod samostatným modulem CSS Box Alignment. Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale také ve flexboxu nebo vícesloupcovém layoutu.
+Dřívější zápisy „děrovacích“ vlastností byly ve specifikaci definovány jinak, s prefixem `grid-`: `grid-row-gap`, `grid-column-gap` a `grid-gap` a zaměřené čistě jen na CSS Grid. Nyní jsou ale z této části specifikace vyjmuté a vyvíjené pod samostatným modulem [CSS Box Alignment](css-box-alignment.md). Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale také ve flexboxu nebo vícesloupcovém layoutu.
 
 Vlastnost `gap` je zkratkou pro vlastnosti `row-gap` a `column-gap`. Zapisuje se takto:
 

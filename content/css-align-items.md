@@ -6,7 +6,13 @@ Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na p
 
 Nastavuje výchozí hodnotu `align-self` pro všechny položky uvnitř kontejneru.
 
+<!-- AdSnippet -->
+
 Tuhle vlastnost není možné aplikovat na blokové elementy nebo na buňky tabulek.
+
+<div class="related web-only" markdown="1">
+- [CSS Box Alignment](css-box-alignment.md)
+</div>
 
 ## Jednoduchý příklad
 
@@ -16,7 +22,7 @@ CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti align-items](../dist/images/original/vdgrid/css-align-items-schema.png)
+![Hodnoty vlastnosti align-items](../dist/images/original/vdgrid/css-align-items-hodnoty.png)
 
 Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
@@ -66,3 +72,5 @@ Stav k srpnu 2020:
 - V rámci rozvržení pomocí Gridu tuto vlastnost nepodporuje jen IE11, ale tam by podporu této vlastnosti měl nahrazovat Autoprefixer.
 
 Pro více informací se podívejte na [caniuse.com/align-items](https://caniuse.com/#search=align-items).
+
+<!-- AdSnippet -->
