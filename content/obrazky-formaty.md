@@ -138,7 +138,7 @@ U nejpopulárnějšího formátu se ještě pojďme podívat na nejznámější 
 - První standard pochází z roku 2001. SVG je zkratka pro Scalable Vector Graphics.
 - Jde o vektorový formát, ne jen pro obrázky, ale pro celé vektorové dokumenty.
 - Chvíli trvalo než se prosadil, ale v současném světě webařiny je zcela nepostradatelný pro ikony, infografiky, animace a mnoho dalšího.
-- SVG se samozřejmě z důvodu výkonu nehodí pro foto-realistické detaily, neumí také pracovat s 3D objekty.
+- SVG se samozřejmě z důvodu výkonu nehodí pro foto-realistické detaily. Původně zde stálo, že SVG neumí pracovat s 3D objekty, ale to podle Roberta Másla z komentářů není pravda. Děkujeme za doplnění. ([Demo](http://www.qcd.cz/3d/dvanactisten.svg), které ale nyní funguje jen ve Firefoxu.)
 - **Podpora v prohlížečích:** Všechny ([CanIUse.com](https://caniuse.com/svg)).
 - Více: [SVG na Vzhůru dolů](https://www.vzhurudolu.cz/prirucka/svg), [Téma „SVG“ na Vzhůru dolů](https://www.vzhurudolu.cz/svg), [Wikipedie](https://cs.wikipedia.org/wiki/Scalable_Vector_Graphics).
 
