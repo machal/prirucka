@@ -71,6 +71,7 @@ module.exports = function(grunt) {
       },
       all: {
         options: {
+          engine: 'im',          
           newFilesOnly: false, // Zpracuje i upravene soubory
           sizes: [{
             name: "small",
