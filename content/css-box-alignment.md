@@ -8,7 +8,7 @@ Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech roz
 - [Vícesloupcový layout](css3-multicolumn.md)
 </div>
 
-Specifikace [Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout, což nás zajímá hlavně pro potřeby [CSS gridu](css-grid.md). O tom je tato příručka na Vzhůru dolů.
+Specifikace [Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout, což nás zajímá hlavně pro potřeby CSS gridu. O tom je tato příručka na Vzhůru dolů.
 
 <!-- AdSnippet -->
 
@@ -22,7 +22,7 @@ Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou h
 
 Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednoduchého klíče. Než vyberete tu správnou, musíte si ujasnit:
 
-- Směr zarovnávání (hlavní osa je obvykle vodorovná, příčná osa svislá).
+- Směr zarovnávání (hlavní osa je obvykle vodorovná, jinak též řádková; příčná osa svislá, jinak též bloková).
 - Co budete zarovnávat (všechny položky, jednu položku nebo obsah mezi nimi).
 
 <div class="rwd-scrollable f-6"  markdown="1">
@@ -35,7 +35,11 @@ Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednod
 
 </div>
 
-Je dobré vědět, že v tabulce nejsou obsaženy zdaleka všechny zarovnávací vlastnosti, na ty se pojďme podívat hned v další části textu.
+Jen připomínám, že směr hlavní a příčné osy se může změnit – například pomocí vlastnosti [`flex-direction` nastavené na `column`](css3-flexbox-kontejner.md).
+
+V tabulce nejsou obsaženy zdaleka všechny zarovnávací vlastnosti, na ty se pojďme podívat hned v další části textu.
+
+Každou vlastnost si zde můžete rozkliknout a dostat se tak na její specifikaci.
 
 ## Zarovnání položek (`*-items`) {#polozky}
 
@@ -47,21 +51,21 @@ Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 |----------|-----------------------------------------|-----------|
 | [![Vlastnost justify-items](../dist/images/small/vdgrid/css-justify-items-schema.png)](css-justify-items.md) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
 | [![Vlastnost align-items](../dist/images/small/vdgrid/css-align-items-schema.png)](css-align-items.md) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
-| [![Vlastnost place-items](../dist/images/small/vdgrid/css-place-items-schema.png)](css-place-items.md) | [`place-items`](css-place-items.md)     | Zkratka pro obě vlastnosti. <br> Např. `align-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
+| [![Vlastnost place-items](../dist/images/small/vdgrid/css-place-items-schema.png)](css-place-items.md) | [`place-items`](css-place-items.md)     | Zkratka pro zarovnání položek v obou směrech. <br> Např. `align-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
 
 </div>
 
 ## Zarovnání samostatné položky (`*-self`) {#sebe-sama}
 
-Konkrétní položce definujeme, jak se bude zarovnávat.
+Pro konkrétní položku definujeme, jak se bude zarovnávat.
 
 <div class="rwd-scrollable f-6" markdown="1">
 
 |          | Vlastnost                               | Co dělá?  |
 |----------|-----------------------------------------|-----------|
 | [![Vlastnost justify-self](../dist/images/small/vdgrid/css-justify-self-schema.png)](css-justify-self.md) | [`justify-self`](css-justify-self.md)   | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-self: center` vodorovně centruje položku. |
-| [![Vlastnost align-self](../dist/images/small/vdgrid/css-align-self-schema.png)](css-align-self.md) | [`align-self`](css-align-self.md)   | Zarovnání na blokové ose (obvykle svisle). <br> Např. `justify-self: end` zarovná položku ke spodní hraně. |
-| [![Vlastnost place-self](../dist/images/small/vdgrid/css-place-self-schema.png)](css-place-self.md) | [`place-self`](css-place-self.md)   | Zkratka pro zarovnání v obou směrech. <br> Např. `place-self: end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
+| [![Vlastnost align-self](../dist/images/small/vdgrid/css-align-self-schema.png?2)](css-align-self.md) | [`align-self`](css-align-self.md)   | Zarovnání na blokové ose (obvykle svisle). <br> Např. `justify-self: end` zarovná položku ke spodní hraně. |
+| [![Vlastnost place-self](../dist/images/small/vdgrid/css-place-self-schema.png)](css-place-self.md) | [`place-self`](css-place-self.md)   | Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. `place-self: end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
 
 </div>
 
@@ -75,7 +79,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
 |----------|-----------------------------------------|-----------|
 | [![Vlastnost justify-content](../dist/images/small/vdgrid/css-justify-content-schema.png)](css-justify-content.md) | [`justify-content`](css-justify-content.md) | Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. `justify-content: space-between` rozdělí prostor mezi položky. |
 | [![Vlastnost align-content](../dist/images/small/vdgrid/css-align-content-schema.png)](css-align-content.md) | [`align-content`](css-align-content.md) | Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. `align-content: start` zajistí zarovnání položek k horní hraně kontejneru. |
-| [![Vlastnost place-content](../dist/images/small/vdgrid/css-place-content-schema.png)](css-place-content.md) | [`place-content`](css-place-content.md) | Zkratka oba směry. <br> Např. `place-content: start space-between` zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky. |
+| [![Vlastnost place-content](../dist/images/small/vdgrid/css-place-content-schema.png)](css-place-content.md) | [`place-content`](css-place-content.md) | Zkratka pro rozdělení prostoru v obou směrech. <br> Např. `place-content: start space-between` zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky. |
 
 </div>
 
