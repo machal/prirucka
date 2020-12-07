@@ -94,4 +94,10 @@ Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě 
 * hlavní rozměr – výchozí je šířka, ale řídí se nastavením hlavní osy
 * příčný rozměr – výchozí je výška
 
+## Zarovnávání (CSS Box Alignment) {#css-box-alignment}
+
+Ke správnému zarovnávání ve flexboxu budete potřebova také vlastnosti jako [`justify-items`](css-justify-items.md), [`align-self`](css-align-self.md) a mnohé další. Ty jsou součástí samostatné příručky.
+
+→ *Související: [Zarovnání boxů v CSS (Box Alignment Module)](css-box-alignment.md) – Materiál k vlastnostem pro zarovnání boxů.*
+
 <!-- AdSnippet -->

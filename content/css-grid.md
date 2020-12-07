@@ -70,6 +70,12 @@ Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám
 
 </div>
 
+## Zarovnávání (CSS Box Alignment) {#css-box-alignment}
+
+Ke správnému zarovnávání v gridu budete potřebova také vlastnosti jako [`justify-items`](css-justify-items.md), [`align-self`](css-align-self.md) a mnohé další. Ty jsou součástí samostatné příručky.
+
+→ *Související: [Zarovnání boxů v CSS (Box Alignment Module)](css-box-alignment.md) – Materiál k vlastnostem pro zarovnání boxů.*
+
 ## Základy gridu a příklad {#priklad}
 
 Nejprve pojďme na představovací video.
