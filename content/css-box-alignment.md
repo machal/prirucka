@@ -51,7 +51,7 @@ Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 |----------|-----------------------------------------|-----------|
 | [![Vlastnost justify-items](../dist/images/small/vdgrid/css-justify-items-schema.png)](css-justify-items.md) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
 | [![Vlastnost align-items](../dist/images/small/vdgrid/css-align-items-schema.png)](css-align-items.md) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
-| [![Vlastnost place-items](../dist/images/small/vdgrid/css-place-items-schema.png)](css-place-items.md) | [`place-items`](css-place-items.md)     | Zkratka pro zarovnání položek v obou směrech. <br> Např. `align-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
+| [![Vlastnost place-items](../dist/images/small/vdgrid/css-place-items-schema.png)](css-place-items.md) | [`place-items`](css-place-items.md)     | Zkratka pro zarovnání položek v obou směrech. <br> Např. `place-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
 
 </div>
 
