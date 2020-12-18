@@ -230,6 +230,10 @@ Vložení opět pomocí HTML kódu.
 </div>
 ```
 
+Jednotlivé články zatím vkládáme takto:
+
+→ *Související: [Vkládání JavaScriptu jako async, defer a type="module"](js-async-defer-module.md)*
+
 ### Ukázky kódu
 
 Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně:
