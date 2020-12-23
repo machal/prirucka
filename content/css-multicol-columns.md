@@ -6,6 +6,10 @@ Pokud chcete pro rozvržení použít CSS Multi-column Layout, pak je nutné za�
 - `column-count` – vezmete to přes počet sloupcí, zde se naopak přizpůsobí jejich šířka.
 - `columns` – zkratka pro obě vlastnosti.
 
+<div class="related web-only" markdown="1">
+- [CSS Multi-column Layout](css-multicol.md)
+</div>
+
 Zejména vlastnost `column-width` je u vícesloupcového rozvržení v CSS kouzelná. Umožňuje totiž dělat něco jako automatický responzivní layout. Tedy určit počet sloupečků automaticky podle dostupného prostoru.
 
 ## `column-width`: doporučená šířka sloupce {#column-width}
