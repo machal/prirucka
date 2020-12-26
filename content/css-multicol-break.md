@@ -89,13 +89,8 @@ Nebo spíše nefunguje.
 
 Výše uvedený příklad mě plně funguje jen v nejnovějším Safari (verze 14). Firefox zvládne jen možnost `break-inside:avoid`, Chrome je u obou ukázek zcela chromý.
 
-Tabulky na webu CanIUse hovoří o různorodé podpoře. [caniuse.com/break-](https://caniuse.com/?search=break-%20multi-)
+Tabulky na webu CanIUse hovoří o různorodé podpoře, ale těm zeleným políčkům se na základě mých testů nedá příliš věřit. [caniuse.com/break-](https://caniuse.com/?search=break-%20multi-)
 
-Dívám se tam na vlastnosti, které jsou *údajně* podporované ve všech prohlížečích:
+Na jiném místě CanIUse se o Chrome uvádí, že ve všech zde zmíněných vlastnostech nyní (v prosinci 2020) nepodporuje hodnoty `avoid-column`, `column` a `avoid`, což jsou ty potenciálně nejužitečnější. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 
-- `break-inside` by mělo fungovat všude, ale moje zkušenosti z příkladu výše to příliš neprokazují.
-- `break-before`/`break-after` prý nefunguje jen ve Firefoxu na obrazovce, ale v tisku ano.
-
-Nic z toho se mi bohužel v testech na konci prosince 2020 nepodařilo prokázat.
-
-Vlastnosti `break-before`, `break-after` a `break-inside` pro mě při použití v CSS Multi-Column Layout zůstávají jako na papíře krásně vypadající, ale v praxi zatím nepříliš použitelné.
+Vlastnosti `break-before`, `break-after` a `break-inside` pro mě tedy při použití v CSS Multi-Column Layout zůstávají jako na papíře krásně vypadající, ale v praxi zatím nepříliš použitelné.
