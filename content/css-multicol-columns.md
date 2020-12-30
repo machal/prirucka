@@ -1,4 +1,4 @@
-# Počet sloupců a jejich šířka ve vícesloupcovém rozložení: vlastnosti column-width, column-count a columns
+# Vlastnosti column-width, column-count a columns: počet sloupců a jejich šířka ve vícesloupcovém rozložení
 
 Pokud chcete pro rozvržení použít CSS Multi-column Layout, pak je nutné začít alespoň jednou z následujících vlastností:
 

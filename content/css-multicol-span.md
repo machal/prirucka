@@ -1,4 +1,4 @@
-# Překlenutí ve vícesloupcovém rozložení: vlastnost column-span
+# Vlastnost column-span: Překlenutí ve vícesloupcovém rozložení
 
 Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik sloupců ve vícesloupcovém rozvržení.
 

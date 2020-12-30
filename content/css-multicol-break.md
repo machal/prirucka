@@ -1,4 +1,4 @@
-# Zalamování ve vícesloupcovém rozložení: vlastnosti break-before, break-after a break-inside
+# Vlastnosti break-before, break-after a break-inside: zalamování ve vícesloupcovém rozložení
 
 V automatickém vícesloupcovém layoutu můžete mít prvky, u kterých si nepřejete, aby prohlížeče udělaly zalomení z jednoho sloupce na druhý. Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – vlastně jakékoliv prvky, které mají potomky.
 

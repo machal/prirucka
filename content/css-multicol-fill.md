@@ -1,4 +1,4 @@
-# Vyvažování výšky sloupců: vlastnost column-fill
+# Vlastnost column-fill: vyvažování výšky sloupců ve vícesloupcovém rozvržení
 
 Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení do několika sloupečků tak, aby všechny zabíraly přibližně stejnou výšku.
 
