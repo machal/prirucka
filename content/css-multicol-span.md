@@ -13,6 +13,15 @@ Možné hodnoty jsou tyto:
 
 Jak přesně to funguje? To uvidíte nejlépe v příkladu nebo na obrázku.
 
+<figure>
+<img src="../dist/images/original/vdgrid/css-multicol-span.png" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
+<figcaption markdown="1">
+*Černý prvek se standardně spokojí jen s jedním sloupcem. Dokud mu nenastavíte `column-span:all`.*
+</figcaption>
+</figure>
+
+Vlastnost je velmi zajímavá pro použití na nadpisy a podobné prvky, které mají oddělovat sekce obsahu.
+
 ## Příklad {#priklad}
 
 Máme zde opět náš starý známý kontejner, tentokrát jen mírně upravený:

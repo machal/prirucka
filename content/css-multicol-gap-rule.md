@@ -11,6 +11,14 @@ Ve vícesloupcovém rozvržení (CSS Multi-column layout) je většinou potřeba
 
 Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače nikoliv. Oddělovač jakékoliv šířky neubírá místo mezerám nebo sloupcům v rozvržení. Nedává vám to smysl? Podívejte se na příklad na konci tohoto textu.
 
+<figure>
+<img src="../dist/images/original/vdgrid/css-multicol-gap-rule.png" width="1600" height="900" alt="CSS vlastnosti column-gap a column-rule">
+<figcaption markdown="1">
+*Na obrázku jsme definovali mezeru mezi sloupečky o šířce `3em` a k ní ještě přidali oddělující čáru v podobě světle šedivých teček.*
+<!-- TODO na obrázku jsou spíše čárky -->
+</figcaption>
+</figure>
+
 A co teď? No, co by…? Vzhůru na jednotlivé vlastnosti.
 
 ## `column-gap`: mezera mezi sloupci {#column-gap}

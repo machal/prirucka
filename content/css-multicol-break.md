@@ -14,6 +14,13 @@ Slouží k tomu následující tři vlastnosti, které znáte možná ještě z 
 
 Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jejich nedostatečné podpoře v prohlížečích.
 
+<figure>
+<img src="../dist/images/original/vdgrid/css-multicol-break.png" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
+<figcaption markdown="1">
+*Na obrázku je vidět, že jsme černému prvku zakázali, aby se jeho obsah rozbil do dvou sloupečků. Tím ďábelským nástrojem je zde právě `break-inside:avoid`.*
+</figcaption>
+</figure>
+
 Pojďme si to ale alespoň teoreticky rozebrat. Je možné, že v době, kdy toto čtete, už bude podpora lepší.
 
 ## `break-before` – zalamování před prvkem {#break-before}
@@ -86,6 +93,8 @@ Sami můžete posoudit, jak to v jednotlivých prohlížečích funguje.
 Nebo spíše nefunguje.
 
 ## Podpora v prohlížečích {#podpora}
+
+<!-- TODO podporu je potřeba detailnější -->
 
 Výše uvedený příklad mě plně funguje jen v nejnovějším Safari (verze 14). Firefox zvládne jen možnost `break-inside:avoid`, Chrome je u obou ukázek zcela chromý.
 

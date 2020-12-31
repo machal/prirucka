@@ -18,11 +18,11 @@ Kromě „novinové“ sazby textu se hodí také na položky seznamu. Třeba n�
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Vlastnosti                               | Co dělají a příklad  |
-|------------------------------------------|----------------------|
-| [`column-width`, `column-count` a `columns`](css-multicol-columns.md)    | Počet sloupců a jejich šířka. <br>`columns: 3 20em` – maximálně tři sloupce o šířce `20em`. |
-| [`column-gap`, `column-rule`](css-multicol-gap-rule.md)                  | Definice mezer a oddělovačů mezi sloupci. <br> `gap: 3em; column-rule: dotted lightgrey;` – mezera `3em`, oddělující čára tečkovaná a světle šedá. |
-| [`column-fill`](css-multicol-fill.md)                                    | Vyvažování výšky sloupců. <br> `column-fill: balance` – prvky se rozdělí do sloupců a jejich výška bude podobná. |
+| Vlastnosti                           |    | Co dělají a příklad  |
+|--------------------------------------|----|----------------------|
+| [`column-width`, `column-count` a `columns`](css-multicol-columns.md)    | [![Vlastnost column](../dist/images/small/vdgrid/css-multicol-columns-scheme.png)](css-multicol-columns.md)       | Počet sloupců a jejich šířka. <br>`columns: 3 20em` – maximálně tři sloupce o šířce `20em`. |
+| [`column-gap`, `column-rule`](css-multicol-gap-rule.md)                  | [![Vlastnost gap a rule](../dist/images/small/vdgrid/css-multicol-gap-rule-scheme.png)](css-multicol-gap-rule.md) | Definice mezer a oddělovačů mezi sloupci. <br> `gap: 3em; column-rule: dotted lightgrey;` – mezera `3em`, oddělující čára tečkovaná a světle šedá. |
+| [`column-fill`](css-multicol-fill.md)                                    | [![Vlastnost fill](../dist/images/small/vdgrid/css-multicol-fill-scheme.png)](css-multicol-fill.md)               | Vyvažování výšky sloupců. <br> `column-fill: balance` – prvky se rozdělí do sloupců a jejich výška bude podobná. |
 
 </div>
 
@@ -30,10 +30,10 @@ Kromě „novinové“ sazby textu se hodí také na položky seznamu. Třeba n�
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Vlastnosti                               | Co dělají a příklad  |
-|------------------------------------------|----------------------|
-| [`break-before`, `break-after` a `break-inside`](css-multicol-break.md)  | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
-| [`column-span`](css-multicol-span.md)                                    | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
+| Vlastnosti                               |    | Co dělají a příklad  |
+|------------------------------------------|----|----------------------|
+| [`break-before`, `break-after` a `break-inside`](css-multicol-break.md)  | [![Vlastnost break](../dist/images/small/vdgrid/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
+| [`column-span`](css-multicol-span.md)                                    | [![Vlastnost span](../dist/images/small/vdgrid/css-multicol-span-scheme.png)](css-multicol-span.md) | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
 
 </div>
 
