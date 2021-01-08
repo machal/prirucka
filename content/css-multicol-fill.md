@@ -21,7 +21,7 @@ Podívejme se na možné hodnoty:
 Rozdíl mezi `balance` a `balance-all` uvidíte jen ve vícestránkových kontextech jako je CSS pro tisk („paged media“ nebo také „fragmented contexts“). V případě `balance` se do sloupců má rozdělit jen poslední fragment, např. poslední stránka. U hodnoty `balance-all` se rozdělí všechny fragmenty či stránky.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-multicol-fill.png" width="1600" height="900" alt="CSS vlastnost column-fill">
+<img src="../dist/images/original/vdlayout/css-multicol-fill.png" width="1600" height="900" alt="CSS vlastnost column-fill">
 <figcaption markdown="1">
 *Na obrázku je rozdíl mezi hodnotami `auto` a `balance` snad dobře vidět.*
 </figcaption>

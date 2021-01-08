@@ -2,7 +2,7 @@
 
 Vlastnost `place-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose i příčné ose pro layouty v CSS.
 
-![Vlastnost place-items](../dist/images/original/vdgrid/css-place-items-schema.png)
+![Vlastnost place-items](../dist/images/original/vdlayout/css-place-items-schema.png)
 
 Jde totiž o zkratku pro vlastnosti [`justify-items`](css-justify-items.md) a [`align-items`](css-align-items.md).
 

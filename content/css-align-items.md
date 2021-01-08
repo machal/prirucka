@@ -2,7 +2,7 @@
 
 Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na příčné ose (jinak též blokové ose) pro layouty v CSS.
 
-![Vlastnost align-items](../dist/images/original/vdgrid/css-align-items-schema.png)
+![Vlastnost align-items](../dist/images/original/vdlayout/css-align-items-schema.png)
 
 Nastavuje výchozí hodnotu `align-self` pro všechny položky uvnitř kontejneru.
 
@@ -22,7 +22,7 @@ CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti align-items](../dist/images/original/vdgrid/css-align-items-hodnoty.png)
+![Hodnoty vlastnosti align-items](../dist/images/original/vdlayout/css-align-items-hodnoty.png)
 
 Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

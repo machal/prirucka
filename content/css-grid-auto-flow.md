@@ -51,7 +51,7 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 }
 ```
 
-<img src="../dist/images/original/vdgrid/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column">
+<img src="../dist/images/original/vdlayout/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column">
 
 V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
 

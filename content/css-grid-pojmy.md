@@ -30,7 +30,7 @@ První sloupec má dvojnásobnou šířku oproti druhému a třetímu. Definujem
 V prohlížeči bude naše mřížka vypadat následovně:
 
 <figure>
-<img src="../dist/images/original/vdgrid/pojmy-grid-kontejner-polozky.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.png" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Obrázek: Byl jednou jeden kontejner.*
 </figcaption>
@@ -82,7 +82,7 @@ V této ukázce máme tedy rovnou tři položky a nějak si s nimi budeme muset 
 Rozdělil jsem plochu, kterou vymezuje kontejner, na tři rovnoměrné části. Na skutečné šířky položek bude mít vliv samotný obsah položek, ale o tom se budeme bavit později.
 
 <figure>
-<img src="../dist/images/original/vdgrid/pojmy-anonymni.png" width="1600" height="450" alt="Anonymní uzel v CSS Gridu">
+<img src="../dist/images/original/vdlayout/pojmy-anonymni.png" width="1600" height="450" alt="Anonymní uzel v CSS Gridu">
 <figcaption markdown="1">
 *Obrázek: Obrázek i anonymní textový uzel jsou plnohodnotnými občany definované mřížky.*
 </figcaption>
@@ -99,7 +99,7 @@ Než dojdeme k dalším pojmům, spácháme na naší původní ukázce nepěkno
 Kontejner je teď menší než je samotná mřížka. Po vytečení „položek z kontejneru“ se dostáváme k dalším pojmům.
 
 <figure>
-<img src="../dist/images/original/vdgrid/pojmy-kontejner-mrizka.png" width="1600" height="900" alt="Kontejner a mřížka v CSS Gridu">
+<img src="../dist/images/original/vdlayout/pojmy-kontejner-mrizka.png" width="1600" height="900" alt="Kontejner a mřížka v CSS Gridu">
 <figcaption markdown="1">
 *Obrázek: Tady je vidět rozdíl mezi kontejnerem mřížky a mřížkou samotnou.*
 </figcaption>
@@ -127,7 +127,7 @@ Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési
 Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkne vizualizovat v DevTools.
 
 <figure>
-<img src="../dist/images/original/vdgrid/firefox-devtools-grid.png" width="1600" height="450" alt="CSS Grid Inspector ve Firefoxu">
+<img src="../dist/images/original/vdlayout/firefox-devtools-grid.png" width="1600" height="450" alt="CSS Grid Inspector ve Firefoxu">
 <figcaption markdown="1">
 *Obrázek: Grid v negližé, to je „CSS Grid Inspector“ ve Firefoxu.*
 </figcaption>
@@ -147,7 +147,7 @@ Jak na to?
 Když už tedy víme, co je mřížka a umíte ji vizualizovat, pojďme si říct, z jakých stavebních prvků se přesně ta naše mřížka skládá.
 
 <figure>
-<img src="../dist/images/original/vdgrid/pojmy-gridu.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/pojmy-gridu.png" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Obrázek: Mřížka, linka, oblast, řádek, sloupec.*
 </figcaption>
@@ -202,7 +202,7 @@ Pozor, buňka mřížky zároveň není položkou mřížky. Mřížka má vždy
 Je to patrné v následujícím příkladu, kde jsme ubrali poslední položku. Mřížka však má stále tři sloupce a dva řádky:
 
 <figure>
-<img src="../dist/images/original/vdgrid/pojmy-polozky-bunky.png" width="1600" height="900" alt="Položky a buňky v CSS Gridu">
+<img src="../dist/images/original/vdlayout/pojmy-polozky-bunky.png" width="1600" height="900" alt="Položky a buňky v CSS Gridu">
 <figcaption markdown="1">
 *Obrázek: Některé buňky neuvidíte, ale jsou tam pořád, potvory.*
 </figcaption>
@@ -250,7 +250,7 @@ Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost
 Pojďme si desetipixelový „gutter“ nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
 
 <figure>
-<img src="../dist/images/original/vdgrid/pojmy-grid-inspector.png" width="1600" height="900" alt="Inspektor CSS Gridu ve Firefoxu">
+<img src="../dist/images/original/vdlayout/pojmy-grid-inspector.png" width="1600" height="900" alt="Inspektor CSS Gridu ve Firefoxu">
 <figcaption markdown="1">
 *Obrázek: Obrázek z Firefoxu: Ale to je nemilé, linka mřížky už není jen linka.*
 </figcaption>

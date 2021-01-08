@@ -11,7 +11,7 @@ Podíváme se na pojmy jako „směr rozvržení“, „kontejner“ a „předm
 Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek a tak naštěstí zarovnáváme jen na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-box-alignment-osy.png" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
+<img src="../dist/images/original/vdlayout/css-box-alignment-osy.png" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
 <figcaption markdown="1">
 *Dvě osy v rozvržení.*
 </figcaption>
@@ -28,7 +28,7 @@ Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr mů
 - Změníme směr toku layoutu, což například ve flexboxu často děláme pomocí vlastnosti `flex-direction`.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-box-alignment-direction.png" width="1600" height="900" alt="Změna směru rozvržení">
+<img src="../dist/images/original/vdlayout/css-box-alignment-direction.png" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
 *Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti `flex-direction`. Zdroj: [cdnp.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)*
 </figcaption>
@@ -44,7 +44,7 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 - *Kontejner zarovnání* (alignment container) je rámec, ve kterém předmět zarovnáváme. Obvykle jde o rodičovský element.
 
 <figure>
-<img src="../dist/images/original/vdgrid/pojmy-grid-kontejner-polozky.png" width="1600" height="900" alt="Kontejner a položky">
+<img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.png" width="1600" height="900" alt="Kontejner a položky">
 <figcaption markdown="1">
 *Kontejner a položky neboli předměty zarovnání.*
 </figcaption>
@@ -274,7 +274,7 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
 <figure>
-<img src="../dist/images/original/vdgrid/overflow-position.png" width="1600" height="900" alt="Vlastnost overflow-position">
+<img src="../dist/images/original/vdlayout/overflow-position.png" width="1600" height="900" alt="Vlastnost overflow-position">
 <figcaption markdown="1">
 *Kontejner a položky neboli předměty zarovnání.*
 </figcaption>

@@ -2,7 +2,7 @@
 
 Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél hlavní (nebo řádkové) osy kontejneru layoutu.
 
-![Vlastnost justify-content](../dist/images/original/vdgrid/css-justify-content-schema.png)
+![Vlastnost justify-content](../dist/images/original/vdlayout/css-justify-content-schema.png)
 
 Ve specifikaci se počítá s použitím pro flexbox, Grid, ale také vícesloupcový layout.
 
@@ -28,7 +28,7 @@ CodePen: [cdpn.io/e/mdPmoVZ?editors=1100](https://codepen.io/machal/pen/mdPmoVZ?
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-content](../dist/images/original/vdgrid/css-justify-content-hodnoty.png)
+![Hodnoty vlastnosti justify-content](../dist/images/original/vdlayout/css-justify-content-hodnoty.png)
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

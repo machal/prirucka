@@ -2,7 +2,7 @@
 
 Vlastnost `align-self` určuje zarovnání položky na příčné ose (jinak též blokové ose).
 
-![Vlastnost align-self](../dist/images/original/vdgrid/css-align-self-schema.png)
+![Vlastnost align-self](../dist/images/original/vdlayout/css-align-self-schema.png)
 
 V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky. Ve rozvržení tvořeném flexboxem jde o zarovnání položky na v celém prostoru příčné osy.
 
@@ -39,7 +39,7 @@ CodePen: [cdpn.io/e/zYqwKer?editors=1100](https://codepen.io/machal/pen/zYqwKer?
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti align-self](../dist/images/original/vdgrid/css-align-self-hodnoty.png)
+![Hodnoty vlastnosti align-self](../dist/images/original/vdlayout/css-align-self-hodnoty.png)
 
 Také vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

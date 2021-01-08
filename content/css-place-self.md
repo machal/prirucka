@@ -2,7 +2,7 @@
 
 Vlastnost `place-self` určí zarovnání položky na hlavní i příčné ose pro layouty v CSS.
 
-![Vlastnost place-self](../dist/images/original/vdgrid/css-place-self-schema.png)
+![Vlastnost place-self](../dist/images/original/vdlayout/css-place-self-schema.png)
 
 Jde o zkratku pro vlastnosti [`align-self`](css-align-self.md) a [`justify-self`](css-justify-self.md).
 

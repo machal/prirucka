@@ -17,7 +17,7 @@ Slouží k tomu následující tři vlastnosti, které znáte možná ještě z 
 Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jejich nedostatečné podpoře v prohlížečích.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-multicol-break.png" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
+<img src="../dist/images/original/vdlayout/css-multicol-break.png" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
 <figcaption markdown="1">
 *Na obrázku je vidět, že jsme černému prvku zakázali, aby se jeho obsah rozbil do dvou sloupečků. Tím ďábelským nástrojem je zde právě `break-inside:avoid`.*
 </figcaption>

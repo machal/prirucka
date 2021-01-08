@@ -30,7 +30,7 @@ Pokud máte vyřešené problémy s kompatibilitou Gridu, o kterých píšu pozd
 Máme kladívko, takže paličkou dále už jen naklepávejme maso.
 
 <figure>
-<img src="../dist/images/original/vdgrid/palicka-vs-kladivo.jpg" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/palicka-vs-kladivo.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Obrázek: Jak říkaly naše babičky: „Paličkou na maso hřebíky nezatloukej, kladívkem neklepej maso a floaty nedělej layout v CSS“.*
 </figcaption>
@@ -49,7 +49,7 @@ Ale nějaké rozdíly zde jsou, podívejme se na ně.
 Grid autoři navrhli pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná, ať už svislá nebo vodorovná.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-grid-vs-flexbox-flexbox.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/css-grid-vs-flexbox-flexbox.png" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Obrázek: Flexbox zná jen jeden směr. Víceřádkový layout už pak například nezarovnáte do sloupců.*
 </figcaption>
@@ -58,7 +58,7 @@ Grid autoři navrhli pro dvourozměrné layouty – po svislé i vodorovné ose.
 Jakmile je váš layout víceřádkový a nevystačíte si s pouhým zalomením bez definice pravidel layoutu druhé řádky, je pravděpodobné, že potřebujete Grid.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-grid-vs-flexbox-grid.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/css-grid-vs-flexbox-grid.png" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Obrázek: Grid je mřížka. Dvojrozměrná mřížka.*
 </figcaption>
@@ -100,7 +100,7 @@ Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. I s pom
 Pokud nutně potřebujete obsloužit i uživatele těchto prohlížečů a není možné zajistit fallback k řešení v Gridu, pak může flexbox vaše problémy eliminovat.
 
 <figure>
-<img src="../dist/images/original/vdgrid/prohlizece-msie-vyvoj.png" width="1600" height="450" alt="Podíl MSIE na českém trhu - klesající graf, nyní je to 7 %">
+<img src="../dist/images/original/vdlayout/prohlizece-msie-vyvoj.png" width="1600" height="450" alt="Podíl MSIE na českém trhu - klesající graf, nyní je to 7 %">
 <figcaption markdown="1">
 *Obrázek: Pozor, prudké klesání! Podíl MSIE na českém trhu se setrvale snižuje. V polovině roku 2020 byl kolem sedmi procent. Zdroj: [rankings.cz](http://ranking.gemius.com/cz/ranking/browsers/).*
 </figcaption>
@@ -163,7 +163,7 @@ Bootstrap je skvělý. Kromě základních typografických principů a mřížky
 Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a často ani frontendového kodéra, představuje Bootstrap (a z něj vycházející frameworky jako Foundation nebo Semantic UI) hotový zázrak. Všechno co potřebují napíší v HTML a framework se nějak postará o zbytek.
 
 <figure>
-<img src="../dist/images/original/vdgrid/bootstrap.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/bootstrap.png" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Obrázek: Bootstrap je skvělý nástroj. Občas se ale používá pro nesprávné účely.*
 </figcaption>

@@ -17,7 +17,7 @@ Kontejner mřížky můžeme definovat kromě `display:grid` také jako `display
 Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) – *fraction unit*, která umožní snadné dělení volného místa.
 
 <figure>
-<img src="../dist/images/original/vdgrid/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS Gridu">
+<img src="../dist/images/original/vdlayout/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS Gridu">
 <figcaption markdown="1">
 *Obrázek: Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce EM odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou FR. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
 </figcaption>
@@ -68,7 +68,7 @@ V našich podmínkách čteme zleva doprava a pak dolů. Položky se samozřejm�
 
 Pokud bychom snad chtěli změnit směr budování mřížky na sezhora dolů a pak doprava, pomůžeme si [vlastností `grid-auto-flow`](css-grid-auto-flow.md) s hodnotou `column`.
 
-<img src="../dist/images/original/vdgrid/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column">
+<img src="../dist/images/original/vdlayout/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column">
 
 ## 7) Umísťování prvků přes sebe a vrstvení
 

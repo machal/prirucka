@@ -27,7 +27,7 @@ Webaři mezitím skřípou zuby u každého `float`. A pak si zvyknou.
 V Microsoftu se dějí věci. Plánují zaříznout Silverlight, zjednodušeně řečeno vlastní napodobeninu Flashe, a více šlápnout do webových technologií. Jde jim o využití HTML a CSS pro vlastní produkty, ale jejich vývojáři jsou nešťastní z nedostatku rozumného layoutování v CSS, oproti tomu, na co byli zvyklí v Silverlightu.
 
 <figure>
-<img src="../dist/images/original/vdgrid/silverlight.png" width="1920" height="540" alt="Microsoft Silverlight">
+<img src="../dist/images/original/vdlayout/silverlight.png" width="1920" height="540" alt="Microsoft Silverlight">
 <figcaption markdown="1">
 *Obrázek: To by člověk nečekal, na jak podivných místech najde inspirační zdroje dnešního moderního CSS. Tož děkujeme do Microsoftu!*
 </figcaption>

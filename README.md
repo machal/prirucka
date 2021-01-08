@@ -118,8 +118,8 @@ Příklad:
 ```markdown
 |          | Vlastnost                               | Co dělá?  |
 |----------|-----------------------------------------|-----------|
-| ![Vlastnost justify-items](../dist/images/small/vdgrid/css-justify-items-schema.png) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
-| ![Vlastnost align-items](../dist/images/small/vdgrid/css-align-items-schema.png) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
+| ![Vlastnost justify-items](../dist/images/small/vdlayout/css-justify-items-schema.png) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
+| ![Vlastnost align-items](../dist/images/small/vdlayout/css-align-items-schema.png) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
 ```
 
 ### Video

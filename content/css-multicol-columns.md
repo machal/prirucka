@@ -13,7 +13,7 @@ Pokud chcete pro rozvržení použít CSS Multi-column Layout, pak je nutné za�
 Zejména vlastnost `column-width` je u vícesloupcového rozvržení v CSS kouzelná. Umožňuje totiž dělat něco jako automatický responzivní layout. Tedy určit počet sloupečků automaticky podle dostupného prostoru.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-multicol-columns.png" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
+<img src="../dist/images/original/vdlayout/css-multicol-columns.png" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
 <figcaption markdown="1">
 *Tady je máme. Vlastnost `columns` je zkratkou pro dvě jiné, `column-width` a `column-count`. V tomto případě jsem vyrobili rozvržení, které obsahuje maximálně tři sloupce o šířce `20em`.*
 </figcaption>

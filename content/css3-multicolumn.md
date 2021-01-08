@@ -15,7 +15,7 @@ Na rozdíl od podobných layoutových modulů – CSS Gridu a flexboxu – navrh
 Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu.
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-multicol.png" width="1600" height="900" alt="CSS Multi-column Layout s nastavením columns:20em">
+<img src="../dist/images/original/vdlayout/css-multicol.png" width="1600" height="900" alt="CSS Multi-column Layout s nastavením columns:20em">
 <figcaption markdown="1">
 Kouzlo automatického přizpůsobení šířce okna. Vícesloupcový layout s nastavením `columns:20em`.
 </figcaption>
@@ -66,9 +66,9 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
 
 | Vlastnosti                           |    | Co dělají a příklad  |
 |--------------------------------------|----|----------------------|
-| [`column-width`, `column-count`, `columns`](css-multicol-columns.md)    | [![Vlastnost column](../dist/images/small/vdgrid/css-multicol-columns-scheme.png)](css-multicol-columns.md)       | Počet sloupců a jejich šířka. <br>`columns: 3 20em` – maximálně tři sloupce o šířce `20em`. |
-| [`column-gap`, `column-rule`](css-multicol-gap-rule.md)                  | [![Vlastnost gap a rule](../dist/images/small/vdgrid/css-multicol-gap-rule-scheme.png)](css-multicol-gap-rule.md) | Definice mezer a oddělovačů mezi sloupci. <br> `gap: 3em; column-rule: dotted lightgrey;` – mezera `3em`, oddělující čára tečkovaná a světle šedá. |
-| [`column-fill`](css-multicol-fill.md)                                    | [![Vlastnost fill](../dist/images/small/vdgrid/css-multicol-fill-scheme.png)](css-multicol-fill.md)               | Vyvažování výšky sloupců. <br> `column-fill: balance` – prvky se rozdělí do sloupců a jejich výška bude podobná. |
+| [`column-width`, `column-count`, `columns`](css-multicol-columns.md)    | [![Vlastnost column](../dist/images/small/vdlayout/css-multicol-columns-scheme.png)](css-multicol-columns.md)       | Počet sloupců a jejich šířka. <br>`columns: 3 20em` – maximálně tři sloupce o šířce `20em`. |
+| [`column-gap`, `column-rule`](css-multicol-gap-rule.md)                  | [![Vlastnost gap a rule](../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png)](css-multicol-gap-rule.md) | Definice mezer a oddělovačů mezi sloupci. <br> `gap: 3em; column-rule: dotted lightgrey;` – mezera `3em`, oddělující čára tečkovaná a světle šedá. |
+| [`column-fill`](css-multicol-fill.md)                                    | [![Vlastnost fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.png)](css-multicol-fill.md)               | Vyvažování výšky sloupců. <br> `column-fill: balance` – prvky se rozdělí do sloupců a jejich výška bude podobná. |
 
 </div>
 
@@ -80,8 +80,8 @@ Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamov
 
 | Vlastnosti                               |    | Co dělají a příklad  |
 |------------------------------------------|----|----------------------|
-| [`break-before`, `break-after` a `break-inside`](css-multicol-break.md)  | [![Vlastnost break](../dist/images/small/vdgrid/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
-| [`column-span`](css-multicol-span.md)                                    | [![Vlastnost span](../dist/images/small/vdgrid/css-multicol-span-scheme.png)](css-multicol-span.md) | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
+| [`break-before`, `break-after` a `break-inside`](css-multicol-break.md)  | [![Vlastnost break](../dist/images/small/vdlayout/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
+| [`column-span`](css-multicol-span.md)                                    | [![Vlastnost span](../dist/images/small/vdlayout/css-multicol-span-scheme.png)](css-multicol-span.md) | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
 
 </div>
 
@@ -109,7 +109,7 @@ Vícesloupcové rozložení zavádí kontext fragmentace tvořený anonymními f
 Kromě „novinové“ sazby textu se hodí také na položky seznamu. Třeba náhledy obrázků ve fotogalerii nebo položky e-shopu…
 
 <figure>
-<img src="../dist/images/original/vdgrid/css-multicol-weby.jpg" width="1600" height="900" alt="Weby používající vícesloupcové rozvržení">
+<img src="../dist/images/original/vdlayout/css-multicol-weby.jpg" width="1600" height="900" alt="Weby používající vícesloupcové rozvržení">
 <figcaption markdown="1">
 Weby používající vícesloupcové rozvržení: Learning Log Romana Veselého, program konference PyCon nebo rozvržení položek v navigaci webu OnlineSekáč.cz.
 </figcaption>

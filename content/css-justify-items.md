@@ -2,7 +2,7 @@
 
 Vlastnost `justify-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose (jinak též řádkové ose) pro layouty v CSS.
 
-![Vlastnost justify-items](../dist/images/original/vdgrid/css-justify-items-schema.png)
+![Vlastnost justify-items](../dist/images/original/vdlayout/css-justify-items-schema.png)
 
 Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejneru.
 
@@ -24,7 +24,7 @@ CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-items](../dist/images/original/vdgrid/css-justify-items-hodnoty.png)
+![Hodnoty vlastnosti justify-items](../dist/images/original/vdlayout/css-justify-items-hodnoty.png)
 
 Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 

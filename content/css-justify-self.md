@@ -2,7 +2,7 @@
 
 Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak též řádkové ose).
 
-![Vlastnost justify-self](../dist/images/original/vdgrid/css-justify-self-schema.png)
+![Vlastnost justify-self](../dist/images/original/vdlayout/css-justify-self-schema.png)
 
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
@@ -28,7 +28,7 @@ Následuje několik užitečných vysvětlovacích odrážek:
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-self](../dist/images/original/vdgrid/css-justify-self-hodnoty.png)
+![Hodnoty vlastnosti justify-self](../dist/images/original/vdlayout/css-justify-self-hodnoty.png)
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
 
