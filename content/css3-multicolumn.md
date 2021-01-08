@@ -10,6 +10,8 @@ Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-colum
 
 Na rozdíl od podobných layoutových modulů – CSS Gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro obsah, nikoliv pro layout stránek či komponent.
 
+<!-- AdSnippet -->
+
 Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu.
 
 <figure>
@@ -91,6 +93,8 @@ Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s poc
 
 Jiné metody rozložení v CSS, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení. Například při použití `display:grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky, `display:flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
 
+<!-- AdSnippet -->
+
 V případě CSS Multi-column Layout však podřízené prvky kontejneru s více sloupci pokračují v normálním toku a ten je uspořádán do několika sloupců. Tyto sloupce mají pružnou velikost ve směru řádků, a proto reagují na dostupné místo změnou velikosti nebo počtu zobrazených sloupců.
 
 Vícesloupcové rozložení zavádí kontext fragmentace tvořený anonymními fragmentačními kontejnery, které se nazývají sloupcové boxy (nebo zkráceně sloupce).
@@ -122,3 +126,5 @@ Podpora podstatných vlastností vícesloupcového rozvržení je vynikající. 
 Moderní prohlížeče si jen hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců, o čemž píšu v příručce k těmto vlastnostem.
 
 Více najdete na CanIUse. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
+
+<!-- AdSnippet -->

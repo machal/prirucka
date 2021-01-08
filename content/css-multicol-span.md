@@ -46,6 +46,8 @@ V přepínači nahoře je možné volit mezi dvěma hodnotami pro nadpisy `<h2>`
 
 Asi víte, že svislé vnější okraje (`margin-top` a `margin-bottom`) prvků v běžném textu splývají.
 
+<!-- AdSnippet -->
+
 Z příkladu výše pak hezky uvidíte, že v případě nadpisu majícího `column-span: all` to neplatí. Je to proto, že prohlížeč pokaždé když začne tvořit sloupečkové rozvržení, zároveň vytvoří nový blokový formátovací kontext.
 
 Pokud byste ale umístili dva nadpisy s nastavením `column-span: all` k sobě, jejich svislé vnější marginy by splývaly.
@@ -55,3 +57,5 @@ Pokud byste ale umístili dva nadpisy s nastavením `column-span: all` k sobě, 
 K mému překvapení je podpora vynikající. Demo z CodePen hezky funguje jak v Chrome, tak v Safari i Firefoxu.
 
 Podle webu CanIUse je vlastnost dostupná také v Internet Exploreru 10 a 11. No výborně. [caniuse.com/column-span](https://caniuse.com/?search=column-span)
+
+<!-- AdSnippet -->

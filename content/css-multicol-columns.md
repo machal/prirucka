@@ -84,3 +84,5 @@ V případě `column-width`, `column-count` i `columns` asi není potřeba s pod
 Tabulky na CanIUse jsou v případě těchto tří vlastností zelené jako pečlivě udržovaný fotbalový trávník. Tyto vlastnosti dobře zvládají dokonce Explorery verze 11 i 10 (!). [caniuse.com/column](https://caniuse.com/?search=column)
 
 Narazil jsem jen na menší vykreslovací bugy v Safari, takže vícesloupcový layout raději dobře testujte i v prohlížeči od Apple.
+
+<!-- AdSnippet -->

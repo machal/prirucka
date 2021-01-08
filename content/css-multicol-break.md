@@ -2,6 +2,8 @@
 
 V automatickém vícesloupcovém layoutu můžete mít prvky, u kterých si nepřejete, aby prohlížeče udělaly zalomení z jednoho sloupce na druhý. Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – vlastně jakékoliv prvky, které mají potomky.
 
+<!-- AdSnippet -->
+
 Slouží k tomu následující tři vlastnosti, které znáte možná ještě z CSS modulu pro ovlivnění stránkování během tisku stránky:
 
 - `break-before` – zalamování před prvkem.
@@ -101,5 +103,7 @@ Výše uvedený příklad mě plně funguje jen v nejnovějším Safari (verze 1
 Tabulky na webu CanIUse hovoří o různorodé podpoře, ale těm zeleným políčkům se na základě mých testů nedá příliš věřit. [caniuse.com/break-](https://caniuse.com/?search=break-%20multi-)
 
 Na jiném místě CanIUse se o Chrome uvádí, že ve všech zde zmíněných vlastnostech nyní (v prosinci 2020) nepodporuje hodnoty `avoid-column`, `column` a `avoid`, což jsou ty potenciálně nejužitečnější. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
+
+<!-- AdSnippet -->
 
 Vlastnosti `break-before`, `break-after` a `break-inside` pro mě tedy při použití v CSS Multi-Column Layout zůstávají jako na papíře krásně vypadající, ale v praxi zatím nepříliš použitelné.

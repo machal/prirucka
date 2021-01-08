@@ -25,6 +25,8 @@ A co teď? No, co by…? Vzhůru na jednotlivé vlastnosti.
 
 Šířka výchozí mezery je `1em`. Pokud to chcete změnit, je pro definici šířky mezery je možné použít vlastnost `column-gap`.
 
+<!-- AdSnippet -->
+
 Mezeru můžeme definovat také pomocí obecné [vlastnosti `gap`](css-gap.md), kterou asi znáte z flexboxu nebo CSS gridu. Ta zde ale nebude fungovat v Exploreru.
 
 Možné hodnoty jsou následující:
@@ -48,7 +50,7 @@ Je ale dobré zmínit, že jako výchozí barva se zde použije `currentcolor`, 
 
 Grafický styl oddělovače můžete určit stejnými klíčovými slovy jako určujete barvy rámečků: `dotted`, `dashed`, `solid`, `double`, `groove`, `ridge`, `inset` nebo `outset`.
 
-Možné je také samozřejmě grafické ztvránění vypnout pomocí hodnoty `none`, čímž se pochopitelně vypne i zobrazení odděleovače.
+Grafiku oddělovače je také samozřejmě možné vypnout pomocí hodnoty `none`, čímž se pochopitelně vypne i zobrazení oddělovače.
 
 ## `column-rule-width`: šířka oddělovače {#column-rule-width}
 
@@ -93,3 +95,5 @@ A jak tyhle legrace můžete využívat v dnešních prohlížečích?
 Zvládá je také Internet Explorer. Ten ovšem neumí nahradit `column-gap` pomocí `gap`. Ale to je jen malá bolístka jinak výborné podpory.
 
 Více je na CanIUse. [caniuse.com/column](https://caniuse.com/?search=column)
+
+<!-- AdSnippet -->
