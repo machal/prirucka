@@ -44,7 +44,7 @@
 ### Layout
 
 - [Media Queries](css3-media-queries.md)
-- [Vícesloupcový layout](css3-multicolumn.md)
+- [Vícesloupcový layout](css-multicolumn.md): [vlastnost `columns`](css-multicol-columns.md)
 - [Flexbox](css3-flexbox.md): vlastnosti [kontejneru](css3-flexbox-kontejner.md) a [položky](css3-flexbox-polozky.md)
 - [CSS grid](css-grid.md): [v MSIE](css-grid-msie.md), [příklady](css-grid-inspirace.md) a [masonry v CSS](css-masonry.md)
 - [CSS Box Alignment](css-box-alignment.md)

@@ -5,7 +5,7 @@ Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech roz
 <div class="related web-only" markdown="1">
 - [CSS Grid](css-grid.md)
 - [Flexbox](css3-flexbox.md)
-- [Vícesloupcový layout](css3-multicolumn.md)
+- [Vícesloupcový layout](css-multicolumn.md)
 </div>
 
 Specifikace [Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout, což nás zajímá hlavně pro potřeby CSS gridu. O tom je tato příručka na Vzhůru dolů.

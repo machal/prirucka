@@ -6,7 +6,7 @@ Ve vícesloupcovém rozvržení (CSS Multi-column layout) je většinou potřeba
 - `column-rule` – definice grafického oddělovače sloupců. Jde o zkratky pro vlastnosti `column-rule-color`, `column-rule-style`, `column-rule-width`.
 
 <div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicol.md)
+- [CSS Multi-column Layout](css-multicolumn.md)
 </div>
 
 Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače nikoliv. Oddělovač jakékoliv šířky neubírá místo mezerám nebo sloupcům v rozvržení. Nedává vám to smysl? Podívejte se na příklad na konci tohoto textu.
@@ -64,7 +64,7 @@ Oddělovač je samozřejmě možné vypnout pomocí hodnoty `none`.
 
 Všechny tři vlastnosti můžete použít v jedné zkratce:
 
-``css
+```css
 column-rule: <column-rule-width> <column-rule-style> <column-rule-color>
 ```
 
@@ -80,7 +80,7 @@ column-rule: solid blue;
 
 Připravil jsem pro vás CodePen, ve kterém si můžete přepínat mezi třemi různými deklaracemi. Slibuji si od toho, že vám to pomůže pochopit výše uvedené. I když v tomto případě se nejedná o nic složitého.
 
-CodePen: [cdpn.io/e/eYdGEKR](https://codepen.io/machal/pen/eYdGEKR?editors=0100)
+CodePen: [cdpn.io/e/eYdGEKR](https://codepen.io/machal/pen/eYdGEKR?editors=1100)
 
 1. První deklarace (`gap: auto; column-rule: none;`) nastavuje mezeru i oddělovač na výchozí hodnoty, tzn. mezera má šířku `1em` a oddělovač se nevykresluje. Všimněte si použití vlastnosti `gap` namísto `column-gap`. V moderních prohlížečích je to prostě synonymum.
 2. Druhá deklarace (`gap: 3em; column-rule: dotted lightgrey;`) – nastaví trojnásobnou mezeru a tečkovaný oddělovač. Jeho šířku jsem byl líný definovat, takže se použije `medium`.

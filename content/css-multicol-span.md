@@ -3,7 +3,7 @@
 Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik sloupců ve vícesloupcovém rozvržení.
 
 <div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicol.md)
+- [CSS Multi-column Layout](css-multicolumn.md)
 </div>
 
 Možné hodnoty jsou tyto:
@@ -35,7 +35,7 @@ Máme zde opět náš starý známý kontejner, tentokrát jen mírně upravený
 
 [Vlastnost `columns`](css-multicol-columns.md) jste už měli příležitost poznat, takže můžete vědět, že prohlížeč vytvoří maximálně tři sloupce a každému poskytne kolem `15em` prostoru.
 
-CodePen: [cdpn.io/e/jOMaYVg](https://codepen.io/machal/pen/jOMaYVg?editors=1100)
+CodePen: [cdpn.io/e/jOMaYVg](https://codepen.io/machal/pen/jOMaYVg?editors=1000)
 
 V přepínači nahoře je možné volit mezi dvěma hodnotami pro nadpisy `<h2>`:
 

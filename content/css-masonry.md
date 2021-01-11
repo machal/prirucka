@@ -154,7 +154,7 @@ Další metody dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřeb
 
 ### Vícesloupcový layout {#dalsi-multicol}
 
-[CSS Multi-column Layout](css3-multicolumn.md) je možné použít pro účely jednoduchého Masonry:
+[CSS Multi-column Layout](css-multicolumn.md) je možné použít pro účely jednoduchého Masonry:
 
 ```css
 .container {

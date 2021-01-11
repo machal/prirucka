@@ -8,9 +8,7 @@ Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-colum
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
-Na rozdíl od podobných layoutových modulů – CSS Gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro obsah, nikoliv pro layout stránek či komponent.
-
-<!-- AdSnippet -->
+Na rozdíl od podobných layoutových modulů – CSS Gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro obsah, nikoliv pro layout stránek nebo komponent.
 
 Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu.
 
@@ -50,9 +48,9 @@ Prohlížeč by pak měl vnitřní prvky kontejneru rozdělit do sloupců o ší
 
 Od této šířky sloupce v layoutu pořád přibývají.
 
-CodePen: [cdpn.io/e/rNMzwaN](https://codepen.io/machal/pen/rNMzwaN)
+CodePen: [cdpn.io/e/rNMzwaN](https://codepen.io/machal/pen/rNMzwaN?editors=1100)
 
-Když si v CodePenu budete klikat na tlačítka s přiblížením a oddálením (0.5…), uvidíte, jak to funguje v praxi.
+Když si v CodePenu budete klikat na tlačítka s přiblížením a oddálením (0.5×…), uvidíte, jak to funguje v praxi.
 
 Je to automaticky responzivní, aniž bychom museli definovat [Media Queries](css-media-queries.md).
 
@@ -80,7 +78,7 @@ Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamov
 
 | Vlastnosti                               |    | Co dělají a příklad  |
 |------------------------------------------|----|----------------------|
-| [`break-before`, `break-after` a `break-inside`](css-multicol-break.md)  | [![Vlastnost break](../dist/images/small/vdlayout/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
+| [`break-before`, `break-after`, `break-inside`](css-multicol-break.md)  | [![Vlastnost break](../dist/images/small/vdlayout/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
 | [`column-span`](css-multicol-span.md)                                    | [![Vlastnost span](../dist/images/small/vdlayout/css-multicol-span-scheme.png)](css-multicol-span.md) | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
 
 </div>

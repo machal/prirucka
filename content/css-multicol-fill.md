@@ -5,7 +5,7 @@ Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení
 V případě nastavení `column-fill:balance` se prohlížeče snaží minimalizovat odchylky výšky sloupců a zároveň ctít zalamování, ošetřovat typografické vdovy a sirotky a další vlastnosti.
 
 <div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicol.md)
+- [CSS Multi-column Layout](css-multicolumn.md)
 </div>
 
 Vlastnost se vám asi zatím bude používat hůře. Implementace v prohlížečích je různorodá.
@@ -42,7 +42,7 @@ Toto demo už znáte z jiných vlastností vícesloupcového rozvržení. Máme 
 
 V demu můžete přepínat mezi nastavením vlastnosti `column-fill` na hodnoty `auto` nebo `balance`. Poslední hodnotu, `balance-all`, jsem zatím nezahrnoval, protože ji prohlížeče zatím nepodporují a vzhledem k jejímu využití pro stránkovaná média by ani demonstrace v CodePenu nedávala smysl.
 
-CodePen: [cdpn.io/e/PoGEadq](https://codepen.io/machal/pen/PoGEadq)
+CodePen: [cdpn.io/e/PoGEadq](https://codepen.io/machal/pen/PoGEadq?editors=1000)
 
 Pokud byste si hráli s vlastnosti `height` u kontejneru, s obsahem prvku a šířkou okna, dojdete k témuž co já – v každém prohlížeči to funguje trochu jinak.
 

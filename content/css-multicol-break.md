@@ -11,7 +11,7 @@ Slouží k tomu následující tři vlastnosti, které znáte možná ještě z 
 - `break-inside` – zalamování uvnitř prvku.
 
 <div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicol.md)
+- [CSS Multi-column Layout](css-multicolumn.md)
 </div>
 
 Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jejich nedostatečné podpoře v prohlížečích.
@@ -73,7 +73,7 @@ Nepokouším se zde ale rozbít samotný layout, nýbrž prvek `<h2>`, který ob
 
 Když si patřičně upravíte šířku okna tak, aby druhý nadpis připadl na konec sloupce, prohlížeč by mohl usoudit, že někde v oblasti kolem `<br>` může prvek zalamovat.
 
-CodePen: [cdpn.io/e/jOMaMdq](https://codepen.io/machal/pen/jOMaMdq?editors=1100)
+CodePen: [cdpn.io/e/jOMaMdq](https://codepen.io/machal/pen/jOMaMdq?editors=1000)
 
 V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu bychom to nemuseli zapisovat, zde je ale potřeba smazat hodnoty dalších nastavení. Jen připomínám, že k tomu slouží hodnota `auto` u všech vlastností:
 

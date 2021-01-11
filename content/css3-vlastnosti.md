@@ -55,7 +55,7 @@
 
 ## Layout
   
-- [Multicolumn layout](css3-multicolumn.md)  
+- [Multicolumn layout](css-multicolumn.md)  
   Vícesloupcová sazba (nejen) textu.
 - [Flexbox](css3-flexbox.md)  
   Layout pomocí pružných boxů. 
