@@ -43,6 +43,7 @@
 
 ### Layout
 
+- [display: typ zobrazení prvku](css-display.md)
 - [Media Queries](css3-media-queries.md)
 - [Vícesloupcový layout](css-multicolumn.md): [vlastnost `columns`](css-multicol-columns.md)
 - [Flexbox](css3-flexbox.md): vlastnosti [kontejneru](css3-flexbox-kontejner.md) a [položky](css3-flexbox-polozky.md)

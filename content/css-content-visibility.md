@@ -35,7 +35,7 @@ Nebyl vyrenderován, nebyl vyrenderován… počkat nemáme pro tohle v CSS už 
 ### Srovnání s jinými typy schovávání {#hodnota-hidden-schovavani}
 
 - `display:none`  
-  Skryje prvek a zahodí jeho vykreslovací stav. To znamená, že skrytí prvku je z pohledu výkonu stejně drahé jako vykreslení nového prvku se stejným obsahem. `display:none` navíc neumožňuje na dotčeném obsahu realizovat akce typu vyhledání na stránce atd.
+  Skryje prvek a zahodí jeho vykreslovací stav. To znamená, že skrytí prvku je z pohledu výkonu stejně drahé jako vykreslení nového prvku se stejným obsahem. [`display:none`](css-display.md) navíc neumožňuje na dotčeném obsahu realizovat akce typu vyhledání na stránce atd.
 - `visibility:hidden`  
   Skryje prvek a udržuje jeho vykreslovací stav. Aktualizuje také stav vykreslování, kdykoli je to třeba, i když je skrytý. Nicméně, potomci prvku s `visibility:hidden` si mohou kdykoliv nastavit `visibility:visible` a začít se zobrazovat, což v případě `content-visibility:hidden` nehrozí.  Prvky s `visibility:hidden` stále zabírají původní prostor na stránce, což prvek s `content-visibility:hidden` nedělá, šetří rendering díky containmentu. `content-visibility` navíc nepodléhá průběžnému přepočítávání layoutu. Prohlížeč musí spočítat vzhled prvku s `content-visibility` až v momentě, kdy jej potřebuje znovu zobrazit.
 

@@ -49,6 +49,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * Stavba [layoutu pomocí CSS](http://learnlayout.com/toc.html): kategorizace podle technologických prostředků – float, inline-block, display:table, position:absolute, flexbox; kategorizace podle typu layoutu: fixní, fluidní, responzivní.
 * [Kaskáda](css-kaskada.md) (specifičnost selektoru, důležitost a pořadí vlastností), [dědičnost](css-dedicnost.md) v kontextu CSS. Hodnoty `inherit`, `initial`, `unset`, `revert` a [vlastnost `all`](css-all-inherit-initial-unset-revert.md).
 * [Jednotky](jednotky.md) (např. px, em, rem, procenta, cm, atd.): jejich klady, zápory a možné scénáře použití.
+* Hodnoty vlastnosti [`display`](css-display.md).
 * Prakticky použitelné CSS selektory.
 
 #### Přístupnost

@@ -24,7 +24,7 @@ Podívejte se na detailní příručku k jednotlivým vlastnostem gridu.
 
 ### Nastavení rodiče mřížky {#grid}
 
-`display: grid`. Nastaví „grid formatting context“, takže jeho přímí potomkové mohou mít specifické vlastnosti. Možná je také „inline“ hodnota: `inline-grid`.
+Hodnota [vlastnosti `display`](css-display.md)  `grid` nastaví „grid formatting context“, takže jeho přímí potomkové mohou mít specifické vlastnosti. Možná je také „inline“ hodnota: `inline-grid`.
 
 ### Definice mřížky {#vlastnosti-definice}
 

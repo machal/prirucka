@@ -55,7 +55,7 @@ Je to hezké, že? Jenže vám by se určitě hodilo mít někde ve stránce zdr
 
 ## Neviditelný zdroj {#neviditelny}
 
-Může stačit `display:none`? To si pište, že ne.
+Může stačit [`display:none`](css-display.md)? To si pište, že ne.
 
 Tím byste zdroj schovali před lidmi, ale i stroji. Taková slepecká čtečka vám jej pak nepřečte. Musíme na to fikaněji. Ale nic nového vám neřeknu, třídu `sr-only` asi znáte a používáte:
 

@@ -114,7 +114,7 @@ Výsledkem bude černý text bez rámečku, ale raději to pojďme rozebrat:
 * Černý text, protože se výchozí nastavení [vlastnosti color](https://developer.mozilla.org/en-US/docs/Web/CSS/color) nechává na prohlížečích a ty nastavují černou.
 * Rámeček zde nebude, protože vlastnost `border` se nedědí a výchozí hodnotu má `none`.
 * Odstavec nebude mít žádný vnější, ani vnitřní okraj, protože vlastnosti <code>[margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)</code> a <code>[padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)</code> mají výchozí hodnotu vždy <code>0</code>.
-* Odstavec se bude zobrazovat jako <code>inline</code> prvek, protože to je výchozí nastavení vlastnosti <code>[display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)</code>.
+* Odstavec se bude zobrazovat jako <code>inline</code> prvek, protože to je výchozí nastavení [vlastnosti `display`](css-display.md).
 
 Ano, přesně tak, pomocí <code>initial</code> odstraníme všechny styly, ať už jsou definované námi nebo ve výchozím CSS prohlížeče. I tady platí, že v CodePenu, který je na konci textu, vše uvidíte lépe.
 

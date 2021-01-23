@@ -89,7 +89,7 @@ Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s poc
 
 ### Anonymní fragmentačním kontejnery {#vice-kontejnery}
 
-Jiné metody rozložení v CSS, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení. Například při použití `display:grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky, `display:flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
+Jiné metody rozložení v CSS, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení. Například při použití hodnoty [vlastnosti `display`](css-display.md) `grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
 
 <!-- AdSnippet -->
 
