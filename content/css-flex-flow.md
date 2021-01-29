@@ -1,0 +1,47 @@
+# CSS vlastnost flex-flow: zkratka pro určení směru a zalamování flexboxu
+
+Vlastnost `flex-flow` je zkratkou pro dvě jiné:
+
+- [`flex-direction`](css-flex-direction.md) – určuje směr vykreslování flexboxového rozvržení.
+- [`flex-wrap`](css-flex-direction.md) – definuje, zda se budou položky zalamovat na více řádků layoutu.
+
+Níže to v textu rozebereme více, ale obrázek napoví. Jako vždy. Tramtadadá, tady jej máme!
+
+<!-- TODO obrázek -->
+
+<div class="related web-only" markdown="1">
+- [Flexbox](css3-flexbox.md)
+</div>
+
+V obecné rovině je tedy zápis následující:
+
+```css
+flex-flow: <hodnota flex-direction> <hodnota flex-wrap>;
+```
+
+Vzhledem k tomu, že obě vlastnosti používají jiná klíčová slova pro své hodnoty, je možné je uvádět v libovolném pořadí a samozřejmě úplně v klidu jednu z nich vynechat.
+
+<!-- AdSnippet -->
+
+Toto jsou příklady možných hodnot:
+
+- `column`  
+Jako `flex-direction:column`. Položky flexboxu se skládají do sloupce.
+- `wrap`  
+Odpovídá `flex-wrap:wrap`. Kontejner flexboxu umožní položkám, aby se zalomily na další řádek.
+- `column wrap`  
+Ekvivalentní k `flex-direction:column; flex-wrap:wrap`.
+- `row-reverse wrap`  
+Ekvivalentní k `flex-direction:row-reverse; flex-wrap:wrap`.
+
+Všechno je to dobře vidět v CodePenu, kde si také můžete měnit velikost písma, šířku viewportu nebo to jinak rozbíjet a přitom se to všechno naučit.
+
+CodePen: [cdpn.io/e/JjReqbB](https://codepen.io/machal/pen/JjReqbB?editors=0000)
+
+## Podpora v prohlížečích {#podpora}
+
+Podpora je přímo luxusní. Podívejte se na CanIUse a uvidíte samá zelená políčka, včetně Internet Exploreru. [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-flow)
+
+Jedinou pihou krásy je kombinace hodnot `display:inline-flex` a `flex-flow: column wrap`, nepříliš známá a nepříliš omezující chyba, kterou jsme se zabývali už [u vlastnosti `flex-direction`](css-flex-direction.md).
+
+<!-- AdSnippet -->

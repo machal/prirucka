@@ -21,7 +21,7 @@ Do sloupce, ale v opačném směru, tedy zdola nahoru.
 
 CodePen: [cdpn.io/e/NWREVGG](https://codepen.io/machal/pen/NWREVGG?editors=0000)
 
-## Zkratka flex-flow
+## Zkratka flex-flow {#flex-flow}
 
 Můžete použít také [vlastnost `flex-flow`](css-flex-flow.md), což je zkratka pro `flex-direction` a [`flex-wrap`](css-flex-wrap.md).
 
@@ -29,7 +29,7 @@ Můžete použít také [vlastnost `flex-flow`](css-flex-flow.md), což je zkrat
 flex-flow: column = flex-direction: column
 ```
 
-## Záludnosti změny pořadí
+## Záludnosti změny pořadí {#poradi}
 
 Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v japonštině zhora dolů. Závisí to také na nastavení vlastností `writing-mode` a `direction`.
 
@@ -41,11 +41,11 @@ Změna pořadí má ale vliv jen na výsledek vykreslení, nikoliv např. na po�
 
 Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „čtení“ dokumentu bude dávat smysl i při pořadí uvedeném v DOMu. Je to ostatně podobné jako u [vlastnosti `order`](css-order.md), kde tuto záludnost rozebírám více.
 
-## Vliv na `flex-basis`
+## Vliv na `flex-basis` {#flex-basis}
 
 Pokud je `flex-direction` nastaveno na hodnotu `column`, vlastnost `flex-basis` nastavuje výšku, tedy vlastnost `height`.
 
-## Podpora v prohlížečích
+## Podpora v prohlížečích {#podpora}
 
 Funguje to dobře. Jedinou mě známou výjimkou je flexbug číslo 14, kdy při použití `display:inline-flex` a `flex-flow: column wrap` prohlížeče neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. [https://github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs#flexbug-14)
 
