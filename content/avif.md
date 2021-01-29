@@ -1,6 +1,6 @@
 # Obrázkový formát AVIF
 
-Chrome začal [od verze 85](https://developers.google.com/web/updates/2020/08/nic85) vcelku překvapivě a bez velkých oslav podporovat nový obrázkový formát AVIF.
+Chrome začal od verze 85 a Firefox od verze 86 začaly vcelku nenápadně podporovat nový obrázkový formát AVIF.
 
 Inovativní formáty nás webaře zajímají hlavně z pohledu datové efektivity a nových vlastností. Obojí je zde splněno, takže se na AVIF pojďme podívat více zblízka.
 
@@ -19,7 +19,7 @@ Formát WebP už je starý více než 10 let a tak AVIF přináší opravu nejv�
 
 AVIF disponuje také zajímavými a pro web užitečnými vlastnosti. Jeho velkou výhodou je například je, že i při vysoké kompresi zachovává ostré hrany barevných přechodů.
 
-Podporuje jej zatím jen Chrome a Opera, ale s ostatními prohlížeči to vypadá, vzhledem k příznivým licenčním podmínkám, velmi dobře.
+Podporuje jej zatím jen Chrome, Opera a chystá se Firefox, ale s ostatními prohlížeči to vypadá, vzhledem k příznivým licenčním podmínkám, velmi dobře.
 
 ## Odkud se AVIF vzal {#odkud}
 
@@ -141,6 +141,8 @@ Daleko lepší výsledky samozřejmě budete mít při spouštění konverze na 
 
 Tenhle fakt je problematický zejména pro obrázkové CDN, které generují obrázky na vyžádání v reálném čase. Proto například [i Cloudinary uvádí](https://cloudinary.com/documentation/image_transformations#avif_note), že podpora AVIF je u nich aktuálně v beta-režimu.
 
+Na [Bunny.net](https://bunny.net/blog/lets-talk-avif-and-why-we-are-not-adding-support-just-yet/) kromě uvedených nevýhod zmiňují také, že AVIF měl v testech mírnou tendenci vyhlazovat šum, velmi jemné textury nebo přímo odstraňovat jemné detaily v grafice.
+
 Nicméně – pro proces optimalizace jednotlivých kusů obrázků toto problém není. A předpokládám, že se to časem bude zlepšovat, protože na podobné problémy jsme naráželi i při porodních bolestech formátu WebP.
 
 ## Podpora v prohlížečích {#podpora}
@@ -150,8 +152,8 @@ Problémem WebP byla pomalá adopce prohlížeči. Ano, díváme se na tebe, Saf
 Jak je to u AVIFu?
 
 - [Chrome 85](https://developers.google.com/web/updates/2020/08/nic85) již AVIF podporuje. V jiných prohlížečích založených na Chromu práce probíhá.
-- [Ve Firefoxu](https://bugzilla.mozilla.org/show_bug.cgi?id=1443863) na podpoře pracují.
-- Apple zatím neoznámil, zda bude v Safari AVIF podporovat. Tentokrát je však Apple jednou ze společností v Alliance for Open Media, tvůrců AVIF. 
+- [Ve Firefoxu](https://bugzilla.mozilla.org/show_bug.cgi?id=1443863) na podpoře pracují. Bude k dispozici od verze 86.
+- Apple zatím neoznámil, zda bude v Safari AVIF podporovat. Tentokrát je však Apple jednou ze společností v Alliance for Open Media, tvůrců AVIF.
 
 <figure>
 <img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1605530919962/caniuse-embed/all/avif.webp" alt="Podpora AVIF v prohlížečích">
@@ -160,7 +162,7 @@ Jak je to u AVIFu?
 </figcaption>
 </figure>
 
-Kodek AV1 si již nyní připisuje rychlejší přijetí relevantními firmami než předchozí kodeky bez licenčních poplatků. Nejnovější GPU od Nvidia, AMD a Intel již mají hardwarové dekódování pro AV1. 
+Kodek AV1 si již nyní připisuje rychlejší přijetí relevantními firmami než předchozí kodeky bez licenčních poplatků. Nejnovější GPU od Nvidia, AMD a Intel již mají hardwarové dekódování pro AV1.
 
 K tomu ta návaznost AVIFu na formát HEIF, který má Apple tak rád… Takže za mě jsou naděje na relativně rychlý postup party kolem Tima Cooka relativně slušné.
 
@@ -180,4 +182,3 @@ V takovém případě se nám AVIF ke dni psaní článku stáhne v Chrome a Ope
 
 Vzhledem k podpoře zatím nepředpokládám masivní nasazení na všechny obsahové obrázky některých webů. Ale pro jednotlivé obrázky se mě to zdá je výborný nápad, který jsem si několikrát ověřit, například zde, na Vzhůru dolů, na stránce [o e-booku „Vzhůru do AMP“](https://www.vzhurudolu.cz/ebook-amp/).
 
-→ *Související: [Záznam z webináře: WebP, AVIF nebo JPEG?](https://www.vzhurudolu.cz/video/webinar-variabilni-fonty) – rozšiřuje znalosti o nasazení WebP, AVIF, detailní srovnání těchto tří nástrojů a tipy na praktické nasazení.*
