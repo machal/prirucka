@@ -34,6 +34,7 @@
 
 - [box-shadow: stíny u prvku](css3-box-shadow.md)
 - [box-sizing: počítání velikosti prvku](css3-box-sizing.md)
+- [aspect-ratio: poměr stran](css-aspect-ratio.md)
 
 ### Transformace a animace
 

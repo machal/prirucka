@@ -121,6 +121,8 @@ Okna s poměrem stran 16 : 9 například zacílíme takto:
 
 Existují samozřejmě i varianty pro rozmezí hodnot:  `min-aspect-ratio` a `max-aspect-ratio`.
 
+→ *Související: [CSS aspect-ratio](css-aspect-ratio.md)*
+
 ### Detekce „Retina“ displejů 
 
 Moderní displeje s vyšší hustotou hardwarových pixelů můžeme detekovat takto:

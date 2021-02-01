@@ -60,6 +60,8 @@ A co vnitřní prvek `aspect-ratio-box__in`?
 - [Poměr stran: alternativní metody](css-pomer-stran.md)
 </div>
 
+→ *Související: [CSS aspect-ratio](css-aspect-ratio.md)*
+
 Možná jste si všimli, že v příkladu máme obrázek o rozměrech 320 × 180 pixelů, což naznačuje poměr stran 16:9, nikoliv 4:3. Vytvoříme si tedy ještě jednu modifikační třídu (podle BEM):
 
 ```css

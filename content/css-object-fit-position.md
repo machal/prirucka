@@ -41,6 +41,8 @@ A vysvětleme:
 
 CodePen: [cdpn.io/e/KKKYzqq](https://codepen.io/machal/pen/KKKYzqq?editors=1100)
 
+→ *Související: [CSS aspect-ratio](css-aspect-ratio.md)*
+
 ## Vlastnost object-fit – způsob napasování {#object-fit}
 
 Určuje, jakým způsobem se má externí médium vměstnat do plochy, která je mu určena vlastnostmi `width` a `height` v HTML nebo CSS.

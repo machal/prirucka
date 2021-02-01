@@ -51,7 +51,7 @@ Takhle to vypadat má:
   </video>
 </div>
 
-Zajímavé je, že nyní jde o řešení přímo na úrovni vykreslování v prohlížeči, takže se nepoužívá původně plánovaná [CSS vlastnost `aspect-ratio`](css-pomer-stran.md#aspect-ratio).
+Zajímavé je, že nyní jde o řešení přímo na úrovni vykreslování v prohlížeči, takže se nepoužívá původně plánovaná [CSS vlastnost `aspect-ratio`](css-aspect-ratio.md).
 
 ## Poměr stran obrázku nastavíte atributy `width` a `height` {#width-height}
 

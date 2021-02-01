@@ -178,16 +178,32 @@ Obsah `style="--aspect-ratio:16/9"` si v HTML upravíme podle potřebného pomě
 
 CodePen: [cdpn.io/e/dyyQoKz](https://codepen.io/machal/pen/dyyQoKz?editors=1100)
 
+## Čtvrté řešení: CSS vlastnost aspect-ratio {#aspect-ratio}
+
+Toto je od února 2021 nové. CSS [vlastnost `aspect-ratio`](css-aspect-ratio.md) je tady, aby nahradila trik s paddingem. Je to úplně jednoduché, jako hodnotu vlastnosti stačí uvést poměr stran:
+
+```css
+.box {
+  aspect-ratio: 4/3;
+}
+```
+
+Připravil jsem demo s obrázkem, ve kterém to snad půjde dobře vidět:
+
+CodePen: [cdpn.io/e/jOVEKqq](https://codepen.io/machal/pen/jOVEKqq)
+
+→ *Související: [CSS aspect-ratio](css-aspect-ratio.md)*
+
 ## Srovnání řešení {#srovnani}
 
 <figure>
 <div class="rwd-scrollable f-6"  markdown="1">
-|                                    | 1) Trik s paddingem | 2) Inline SVG | 3) CSS proměnné |
-|------------------------------------|:-------------------:|:-------------:|:---------------:|
-| Nutnost úpravy CSS                 | -                   | +             | +               |
-| Přehlednost HTML kódu              | +                   | -             | +               |
-| Nutnost použít JS                  | +                   | -             | +               |
-| Podpora v IE 11                    | +                   | +             | -               |
+|                                    | 1) Trik s paddingem | 2) Inline SVG | 3) CSS proměnné | 4) aspect-ratio |
+|------------------------------------|:-------------------:|:-------------:|:---------------:|:---------------:|
+| Nutnost úpravy CSS                 | -                   | +             | +               | +               |
+| Přehlednost HTML kódu              | +                   | -             | +               | +               |
+| Nutnost použít JS                  | +                   | -             | +               | +               |
+| Podpora v IE 11                    | +                   | +             | -               | -               |
 </div>  
 <figcaption markdown="1">
 *Tabulka: Srovnání výhod a nevýhod řešení pro držení poměru stran.*
@@ -249,7 +265,7 @@ Tím považuji přehled všech možných technik zachování poměru stran v HT
 
 My se teď ještě podíváme, jak se problém řeší v AMP a jak k tomu budeme asi přistupovat v budoucnu.
 
-## Jak se to řeší v AMP? {#amp-reseni}
+### Jak se to řeší v AMP? {#amp-reseni}
 
 V kontextu dalšího obsahu článku neodolám svrbění vám ukázat, jak tuhle věc řeší framework [AMP](amp.md).
 
@@ -285,27 +301,6 @@ Podobně jako `layout="responsive"` v AMP je [parametr intrinsicsize](https://go
 ```
 
 Zatím je ovšem skrytý za vlaječkovým nastavením v Chrome a další prohlížeče zdá se moc nereagují, viz [CanIUse](https://caniuse.com/#search=intrinsicsize).
-
-### CSS vlastnost aspect-ratio {#aspect-ratio}
-
-Velice podobnou věc navrhují autoři CSS, včetně Rachel Andrew, která o tom napsala hezký [článek pro Smashing Magazine](https://www.smashingmagazine.com/2019/03/aspect-ratio-unit-css/):
-
-```css
-img {
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
-```
-
-Řešení na úrovni CSS by mělo tu výhodu, že by se dalo použít nejen na externí média, ale také například na [gridové](css-grid.md) nebo [flexboxové](css3-flexbox.md) layouty. A nebo rovnou vmontovat do výchozích stylů prohlížečů!
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Chrome is implementing a change to avoid layout jank during image loading<br><br>This calculates aspect ratio using width/height attributes <br>(to size images using/CSS) before they have fully loaded. Already in Firefox<a href="https://t.co/6GpCeyGPm9">https://t.co/6GpCeyGPm9</a> ty <a href="https://twitter.com/jensimmons?ref_src=twsrc%5Etfw">@jensimmons</a> &amp; CSSWG! <a href="https://t.co/I1fhWv0Jqy">pic.twitter.com/I1fhWv0Jqy</a></p>&mdash; Addy Osmani (@addyosmani) <a href="https://twitter.com/addyosmani/status/1169813271009886208?ref_src=twsrc%5Etfw">September 6, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-Mě se to moc líbí. Tohle bych považoval za ideální, co vy? Ale neradujme se předčasně – velká část obrázků, videí, vkládaných rámců nebo javascriptových komponent bude dále vyžadovat ruční opečování ze strany kodérů a metody z článku tedy ještě léta využijeme.
-
-→ *Související: [Poměr stran nativně ve značce IMG](img-pomer-stran.md)*
 
 ## Nezapomeňte na zástupné symboly {#placeholder}
 
