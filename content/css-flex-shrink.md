@@ -1,8 +1,13 @@
 # CSS vlastnost flex-shrink: faktor smršťování položky flexboxu
 
-Jakým podílem vzhledem k ostatním položkám se může definovaná položka zmenšovat, pokud v rodičovském kontejneru místo ubylo –  když uživatel zmenšil okno nebo třeba přibyla nová položka? Od toho tady máme vlastnost [flex-shrink].
+Jakým podílem vzhledem k ostatním položkám se může definovaná položka zmenšovat, pokud v rodičovském kontejneru místo ubylo – když uživatel zmenšil okno nebo třeba přibyla nová položka? Od toho tady máme vlastnost [flex-shrink].
 
-<!-- TODO obrázek -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-shrink.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
+<figcaption markdown="1">
+*Vlastnost `flex-shrink` velí způsobu smršťování.*
+</figcaption>
+</figure>
 
 Také v jejím případě platí, že je obecně lepší namísto ní používat [zkratku `flex`](css-flex.md). Problematikou smršťování se ale zabývat budeme, to si pište, že ano.
 

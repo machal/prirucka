@@ -2,7 +2,12 @@
 
 Vlastnost `flex` nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat v rámci flexboxového layoutu.
 
-<!-- TODO obrázek -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex.png" width="1600" height="900" alt="CSS vlastnost flex">
+<figcaption markdown="1">
+*Přednastavené hodnoty vlastnosti `flex`. Zapište si je za uši, jsou hodně důležité.*
+</figcaption>
+</figure>
 
 <div class="related web-only" markdown="1">
 - [Flexbox](css3-flexbox.md)
@@ -73,7 +78,9 @@ U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se v
 
 Je také dobré vědět, že se flex položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením `min-width` nebo `min-height` na nějakou nízkou hodnotu.
 
-<!-- TODO CodePen -->
+Vyzkoušet si to opět můžete na našem interaktivním CodePenu.
+
+CodePen: [cdpn.io/e/vYyKaEp](https://codepen.io/machal/pen/vYyKaEp?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 

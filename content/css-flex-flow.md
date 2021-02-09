@@ -3,17 +3,13 @@
 Vlastnost `flex-flow` je zkratkou pro dvě jiné:
 
 - [`flex-direction`](css-flex-direction.md) – určuje směr vykreslování flexboxového rozvržení.
-- [`flex-wrap`](css-flex-direction.md) – definuje, zda se budou položky zalamovat na více řádků layoutu.
-
-Níže to v textu rozebereme více, ale obrázek napoví. Jako vždy. Tramtadadá, tady jej máme!
-
-<!-- TODO obrázek -->
+- [`flex-wrap`](css-flex-wrap.md) – definuje, zda se budou položky zalamovat na více řádků layoutu.
 
 <div class="related web-only" markdown="1">
 - [Flexbox](css3-flexbox.md)
 </div>
 
-V obecné rovině je tedy zápis následující:
+V obecné rovině je zápis následující:
 
 ```css
 flex-flow: <hodnota flex-direction> <hodnota flex-wrap>;
@@ -22,6 +18,24 @@ flex-flow: <hodnota flex-direction> <hodnota flex-wrap>;
 Vzhledem k tomu, že obě vlastnosti používají jiná klíčová slova pro své hodnoty, je možné je uvádět v libovolném pořadí a samozřejmě úplně v klidu jednu z nich vynechat.
 
 <!-- AdSnippet -->
+
+Níže to v textu rozebereme více, ale obrázky napoví. Jako vždy. Nejprve k `flex-direction`.
+
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-direction.png" width="1600" height="900" alt="CSS vlastnost flex-direction">
+<figcaption markdown="1">
+*Vlastnost `flex-direction` přikáže flexboxovému rozvržení směr vykreslování.*
+</figcaption>
+</figure>
+
+A co vlastnost `flex-wrap`? Tramtadadá, tady ji máme!
+
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-wrap.png" width="1600" height="900" alt="CSS vlastnost flex-wrap">
+<figcaption markdown="1">
+*Bude se to zalamovat, a pokud ano jakým směrem? Tomu velí vlastnost `flex-wrap`.*
+</figcaption>
+</figure>
 
 Toto jsou příklady možných hodnot:
 

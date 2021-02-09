@@ -6,7 +6,12 @@ Je to velice podobné jako vlastnosti `width` nebo `height`, ale s tím, že vel
 
 Většinou `flex-basis` určuje výchozí šířka položky, tedy jako `width`. Alternativně výšku, pokud je směr rozvržení flexboxu svislý, například pomocí nastavení [`flex-direction:column`](css-flex-direction.md).
 
-<!-- TODO obrázek -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-basis.png" width="1600" height="900" alt="CSS vlastnost flex-basis">
+<figcaption markdown="1">
+*Různé možnosti hodnot pro vlastnost `flex-basis`. Vysvětlujeme je v textu pod obrázkem.*
+</figcaption>
+</figure>
 
 <div class="related web-only" markdown="1">
 - [Flexbox](css3-flexbox.md)

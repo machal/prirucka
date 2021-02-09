@@ -2,7 +2,12 @@
 
 Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vyskládání položek tím, že nastaví směr hlavní osy flexboxu.
 
-<!-- TODO obrázek -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-direction.png" width="1600" height="900" alt="CSS vlastnost flex-direction">
+<figcaption markdown="1">
+*Vlastnost `flex-direction` přikáže flexboxovému rozvržení směr vykreslování.*
+</figcaption>
+</figure>
 
 <div class="related web-only" markdown="1">
 - [Flexbox](css3-flexbox.md)

@@ -2,7 +2,12 @@
 
 Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo –  například když uživatel zvětší okno prohlížeče? To určuje vlastnost `flex-grow`.
 
-<!-- TODO obrázek -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-shrink.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
+<figcaption markdown="1">
+*Jak se bude položka flexboxu roztahovat? Tomu vládne vlastnost `flex-grow`.*
+</figcaption>
+</figure>
 
 Specifikace a praktická zkušenost nás navádějí namísto používání `flex-grow` spíše ke [zkratce `flex`](css-flex.md), ale přesto považuji za nutné se o této vlastnosti zmínit.
 
