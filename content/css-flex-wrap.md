@@ -1,6 +1,6 @@
 # CSS vlastnost flex-wrap: zalamování položek flexboxu
 
-Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda se položky rozvržení mohou zalamovat na více řádků nebo nikoliv. Hodnotou `wrap-reverse` také můžeme otočit pořadí vyskládávání prvků na příčné ose layoutu.
+Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda se položky rozvržení mohou zalamovat na více řádků nebo nikoliv. Hodnotou `wrap-reverse` také můžeme otočit pořadí vyskládání prvků na příčné ose layoutu.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-wrap.png" width="1600" height="900" alt="CSS vlastnost flex-wrap">
@@ -61,7 +61,7 @@ I po nastavení hodnoty na `wrap` nebo `wrap-reverse` prohlížeč uvažuje, zda
 
 CodePen: [cdpn.io/e/WNoNrbB](https://codepen.io/machal/pen/WNoNrbB?editors=0000)
 
-Všimněte si také prosím chování hodnoty `wrap-reverse` – položky se vyskládávájí dle očekávání zdola, ale zleva doprava, nikoliv naopak, jak by mohl někdo očekávat.
+Všimněte si také prosím chování hodnoty `wrap-reverse` – položky se vyskládají dle očekávání zdola, ale zleva doprava, nikoliv naopak, jak by mohl někdo očekávat.
 
 Dává to ale smysl. Hodnota `wrap-reverse` totiž zalamuje naopak. Poslední položka řádku skočí nahoru a zařadí se nad první položku.
 

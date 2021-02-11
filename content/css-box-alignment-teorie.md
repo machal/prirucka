@@ -219,7 +219,7 @@ Totiž:
 - Na rozdíl od první položky zarovnáme druhou a třetí na účaří (`align-self:baseline`).
 - Druhé položce přidáme vnitří okraj (`padding-top:3em`), takže prohlížeči zkomplikujeme jeho snahu o zarovnání.
 
-Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku zezhora tak, aby druhá i třetí lícovala na účaří.
+Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku shora tak, aby druhá i třetí lícovala na účaří.
 
 CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 

@@ -27,7 +27,7 @@ Aby to nestačilo, máme k dispozici ještě například [funkci `minmax()`](css
 
 ## 3) Rozměry podle obsahu
 
-Někdy je lepší nenastavovat šířku a výšku sezhora, ale nechat obsah, aby do rozměrů mluvil sám. K tomu jsou zde klíčová slova použitelná [ve funkci `minmax()`](css-minmax.md):
+Někdy je lepší nenastavovat šířku a výšku shora, ale nechat obsah, aby do rozměrů mluvil sám. K tomu jsou zde klíčová slova použitelná [ve funkci `minmax()`](css-minmax.md):
 
 * `max-content` – nezmenšuj se pod minimální rozměr obsahu.
 * `max-content` – nezvětšuj se nad maximální rozměr obsahu.
@@ -66,7 +66,7 @@ Pokud totiž není definováno jinak, každý DOM uzel, který je přímým poto
 
 V našich podmínkách čteme zleva doprava a pak dolů. Položky se samozřejmě budou umísťovat ve stejném směru.
 
-Pokud bychom snad chtěli změnit směr budování mřížky na sezhora dolů a pak doprava, pomůžeme si [vlastností `grid-auto-flow`](css-grid-auto-flow.md) s hodnotou `column`.
+Pokud bychom snad chtěli změnit směr budování mřížky na shora dolů a pak doprava, pomůžeme si [vlastností `grid-auto-flow`](css-grid-auto-flow.md) s hodnotou `column`.
 
 <img src="../dist/images/original/vdlayout/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column">
 

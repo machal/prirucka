@@ -36,7 +36,7 @@ flex-flow: column = flex-direction: column
 
 ## Záludnosti změny pořadí {#poradi}
 
-Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v japonštině zhora dolů. Závisí to také na nastavení vlastností `writing-mode` a `direction`.
+Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v japonštině shora dolů. Závisí to také na nastavení vlastností `writing-mode` a `direction`.
 
 <!-- AdSnippet -->
 

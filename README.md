@@ -63,7 +63,7 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 - Bílé pozadí. Obsah až ke krajům.
 - Ideálně bez efektů jako stíny na pozadí screenshotů z Maca.
 - 16:9. Minimálně 2000 pixelů široké v 300dpi. Kvůli případnému tisku.
-- Zezhora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
+- Shora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
 - Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
 - Informace nebo jejich vazba nesmí být závislá jen na barvě. Kůli černobílým Kindle čtečkám.
 - Zdroje ukládáme buď přímo do příručky, nebo exterimentálně taháme z Cloudinary, ale to spíše pro články na blogu.

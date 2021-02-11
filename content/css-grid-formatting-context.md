@@ -10,7 +10,7 @@ Co se tedy v prohlížečích stane pěkného – nebo pro někoho nepěkného �
 
 ## Svislé vnější okraje se neslučují. Chválabohu
 
-Hodnoty vlastnosti `margin` sezhora a zdola se neslučují s hodnotami sousedních prvků. To, co znáte z blokových elementů, ve světě CSS Gridu neplatí.
+Hodnoty vlastnosti `margin` shora a zdola se neslučují s hodnotami sousedních prvků. To, co znáte z blokových elementů, ve světě CSS Gridu neplatí.
 
 Je to logické. Mřížka má tvořit rozvržení prvků stránky a při takové práci by nám slučování vnějších okrajů působilo ještě větší trable než nám působí u blokových prvků.
 
@@ -24,7 +24,7 @@ Chcete ukázku? Vezměme, že máme dva bloky se třemi vnitřními položkami. 
 
 Výsledek se různí podle formátovacího kontextu:
 
-- `display:block` slučuje svislé okraje, takže mezi položkami je sezhora i zdola mezera jen `1em`.
+- `display:block` slučuje svislé okraje, takže mezi položkami je shora i zdola mezera jen `1em`.
 - `display:grid` naproti tomu okraje neslučuje, takže mezi jednotlivými .`.item` tvoří mezeru dvakrát `margin`, tedy `2em`.
 
 <img src="../dist/images/original/vdlayout/margins-display-block-grid.png" width="1920" height="540"  alt="Marginy se v CSS gridu neslučují">

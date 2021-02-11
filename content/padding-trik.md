@@ -80,7 +80,7 @@ Mohli bychom to uzavřít, ale zkušenější jistě napadne řada vylepšení, 
 
 - Čitelnější kód by neuváděl hotový výsledek, ale výpočet pomocí [funkce `calc()`](css3-calc.md). Zde by vypadal takto: `padding-bottom: calc(9 / 16 * 100)`.
 - Můžeme si vytvořit [mixin v preprocesoru](https://www.vzhurudolu.cz/blog/13-css-preprocesory-2), které zápis zjednodušší.
-- Někdo pro tyto účely používá „`padding-top` trik“, tedy odsazení sezhora, nikoliv zdola. Kromě [jediné drobnosti](https://www.facebook.com/groups/frontendisti/permalink/2301797503365094/?comment_id=2305102236367954) to je asi jedno.
+- Někdo pro tyto účely používá „`padding-top` trik“, tedy odsazení shora, nikoliv zdola. Kromě [jediné drobnosti](https://www.facebook.com/groups/frontendisti/permalink/2301797503365094/?comment_id=2305102236367954) to je asi jedno.
 - Pokud toto řešení nasadíte pro držení poměru stran při [lazy loadingu obrázků](lazy-loading-obrazku.md) a jiných médií, doporučuji v CSS definovat nějakou barvu pozadí nebo třeba jednoduchou animaci, aby bylo jasné, že v daném místě se odehrává stahování externího prvku.
 
 <!-- AdSnippet -->

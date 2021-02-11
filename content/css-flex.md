@@ -42,7 +42,7 @@ Pokud chcete například nastavit, aby vaše položky zabíraly minimálně `150
 flex: 1 1 150px
 ```
 
-## Používejte flex raději než konkrétní vlastnosti
+## Používejte flex raději než konkrétní vlastnosti {#pouzivejte-flex}
 
 Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku `flex` proti konkrétním vlastnostem, které zastupuje.
 
@@ -50,7 +50,7 @@ Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku
 
 Důvodem mimojiné je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
 
-## Přednastavené hodnoty
+## Přednastavené hodnoty {#prednastavene}
 
 Jednoslovné hodnoty se vám budou hodit asi nejčastěji:
 
@@ -80,7 +80,7 @@ Je také dobré vědět, že se flex položky nikdy nezmenší pod minimální �
 
 Vyzkoušet si to opět můžete na našem interaktivním CodePenu.
 
-CodePen: [cdpn.io/e/vYyKaEp](https://codepen.io/machal/pen/vYyKaEp?editors=1100)
+CodePen: [cdpn.io/e/vYyKaEp](https://codepen.io/machal/pen/vYyKaEp?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 
