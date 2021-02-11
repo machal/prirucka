@@ -62,11 +62,11 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Vlastnosti                           |    | Co dělají a příklad  |
-|--------------------------------------|----|----------------------|
-| [`column-width`, `column-count`, `columns`](css-multicol-columns.md)    | [![Vlastnost column](../dist/images/small/vdlayout/css-multicol-columns-scheme.png)](css-multicol-columns.md)       | Počet sloupců a jejich šířka. <br>`columns: 3 20em` – maximálně tři sloupce o šířce `20em`. |
-| [`column-gap`, `column-rule`](css-multicol-gap-rule.md)                  | [![Vlastnost gap a rule](../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png)](css-multicol-gap-rule.md) | Definice mezer a oddělovačů mezi sloupci. <br> `gap: 3em; column-rule: dotted lightgrey;` – mezera `3em`, oddělující čára tečkovaná a světle šedá. |
-| [`column-fill`](css-multicol-fill.md)                                    | [![Vlastnost fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.png)](css-multicol-fill.md)               | Vyvažování výšky sloupců. <br> `column-fill: balance` – prvky se rozdělí do sloupců a jejich výška bude podobná. |
+| Vlastnosti                           | Co dělají a příklad  |
+|--------------------------------------|----------------------|
+| [`column-width`, `column-count`, `columns`](css-multicol-columns.md) <br> [![Vlastnost column](../dist/images/small/vdlayout/css-multicol-columns-scheme.png)](css-multicol-columns.md)       | Počet sloupců a jejich šířka. <br>`columns: 3 20em` – maximálně tři sloupce o šířce `20em`. |
+| [`column-gap`, `column-rule`](css-multicol-gap-rule.md)       <br> [![Vlastnost gap a rule](../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png)](css-multicol-gap-rule.md) | Definice mezer a oddělovačů mezi sloupci. <br> `gap: 3em; column-rule: dotted lightgrey;` – mezera `3em`, oddělující čára tečkovaná a světle šedá. |
+| [`column-fill`](css-multicol-fill.md) <br> [![Vlastnost fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.png)](css-multicol-fill.md)               | Vyvažování výšky sloupců. <br> `column-fill: balance` – prvky se rozdělí do sloupců a jejich výška bude podobná. |
 
 </div>
 
@@ -76,10 +76,10 @@ Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamov
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Vlastnosti                               |    | Co dělají a příklad  |
-|------------------------------------------|----|----------------------|
-| [`break-before`, `break-after`, `break-inside`](css-multicol-break.md)  | [![Vlastnost break](../dist/images/small/vdlayout/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
-| [`column-span`](css-multicol-span.md)                                    | [![Vlastnost span](../dist/images/small/vdlayout/css-multicol-span-scheme.png)](css-multicol-span.md) | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
+| Vlastnosti                               | Co dělají a příklad  |
+|------------------------------------------|----------------------|
+| [`break-before`, `break-after`, `break-inside`](css-multicol-break.md) <br> [![Vlastnost break](../dist/images/small/vdlayout/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
+| [`column-span`](css-multicol-span.md)    <br> [![Vlastnost span](../dist/images/small/vdlayout/css-multicol-span-scheme.png)](css-multicol-span.md) | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
 
 </div>
 

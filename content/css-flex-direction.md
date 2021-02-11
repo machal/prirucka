@@ -20,7 +20,7 @@ Toto jsou možné hodnoty:
 - `row-reverse`  
 Do řádky, ale v opačném směru, tedy zprava doleva.
 - `column`  
-Položky flexboxu se skládají do sloupce.
+Položky flexboxu se skládají shora dolů, do sloupce.
 - `column-reverse`  
 Do sloupce, ale v opačném směru, tedy zdola nahoru.
 
