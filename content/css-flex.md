@@ -10,7 +10,7 @@ Vlastnost `flex` nastaví výchozí velikost elementu a způsob, jakým se smí 
 </figure>
 
 <div class="related web-only" markdown="1">
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 </div>
 
 Jde o zkratku pro všechny vlastnosti definující pružnost flex položky:

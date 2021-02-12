@@ -12,7 +12,7 @@ Jakým podílem vzhledem k ostatním položkám se může definovaná položka z
 Také v jejím případě platí, že je obecně lepší namísto ní používat [zkratku `flex`](css-flex.md). Problematikou smršťování se ale zabývat budeme, to si pište, že ano.
 
 <div class="related web-only" markdown="1">
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 </div>
 
 Možné hodnoty:

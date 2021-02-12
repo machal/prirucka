@@ -4,7 +4,7 @@
   <h2 class="nav__heading sr-only">Navigace: vše o flexboxu</h2>
   <ul class="nav__list">
     <li class="nav__item">
-        <a class="nav__item-in" href="css3-flexbox.md">Flexbox</a>
+        <a class="nav__item-in" href="css-flexbox.md">Flexbox</a>
     </li>
     <li class="nav__item">
         <a class="nav__item-in" href="css3-flexbox-polozky.md">Položky</a>

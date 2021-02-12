@@ -40,7 +40,7 @@ Jedinou další technikou, kterou můžete potřebovat, je flexbox. Pojďme jej 
 
 ## Grid versus flexbox
 
-Předně chci zdůraznit, že Grid [flexbox](css3-flexbox.md) nenahrazuje. Potřebujete obojí. Naučte se obojí.
+Předně chci zdůraznit, že Grid [flexbox](css-flexbox.md) nenahrazuje. Potřebujete obojí. Naučte se obojí.
 
 Ale nějaké rozdíly zde jsou, podívejme se na ně.
 

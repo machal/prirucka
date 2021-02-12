@@ -4,7 +4,7 @@ Jsou věci, které grafici na CSS prostě nemůžou vystát. Jako třeba patičk
 
 ![Patička se má vždy přilepit ke spodní hraně okan](../dist/images/original/flexbox-footer.jpg)
 
-Zrovna tento problém se ale dá vyřešit velmi jednoduše. Pomocí nových [CSS jednotek](css3-jednotky.md) a [flexbox layoutu](css3-flexbox.md). 
+Zrovna tento problém se ale dá vyřešit velmi jednoduše. Pomocí nových [CSS jednotek](css3-jednotky.md) a [flexbox layoutu](css-flexbox.md). 
 
 Pojďme si přilepenou patičku rozpitvat jako další z řešení, která jsem ukazoval [během přednášky na WebExpo 2016](https://www.vzhurudolu.cz/prednaska/webexpo-2016-246).
 

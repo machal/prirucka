@@ -239,7 +239,7 @@ Pokud byste chtěli složitější příklad, kde se násobič základní mří�
 
 ## 5) Změna layoutu na breakpointech {#5}
 
-Layout potřebujeme v responzivním designu ovlivňovat dost často, ale měnit pokaždé všechny potřebné vlastnosti [flexboxu](css3-flexbox.md) nebo [gridu](css-grid.md) může být pruda. Pojďme na to jinak, opět s pomocí proměnných v CSS.
+Layout potřebujeme v responzivním designu ovlivňovat dost často, ale měnit pokaždé všechny potřebné vlastnosti [flexboxu](css-flexbox.md) nebo [gridu](css-grid.md) může být pruda. Pojďme na to jinak, opět s pomocí proměnných v CSS.
 
 Půjde o čtyřsloupcový layout, který se v jednotlivých [rozmezích layoutu](breakpointy.md) mění jako na obrázku.
 

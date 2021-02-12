@@ -33,7 +33,7 @@ Proto se nyní musíme smířit s tím, že e-mailový i webový systém designu
 Nelze tedy vzít šablony webového design systému a ty použít v e-mailu, protože tomu brání minimálně dvě věci, specifické pro newsletter:
 
 1. Omezená šířka layoutu v e-mailových klientech.
-2. Technologie, které (ne)zvládají e-mailové klienty (obrázky na pozadí nehrozí, záporné odsazování taky ne, na pozicování zapomeňte, [nové CSS vlastnosti](https://www.vzhurudolu.cz/prirucka/css3) se učit nemusíte; pro layout nepoužijete [flexbox](css3-flexbox.md) a [grid](css-grid.md), ale stále tabulky… no, raději nebudeme pokračovat).
+2. Technologie, které (ne)zvládají e-mailové klienty (obrázky na pozadí nehrozí, záporné odsazování taky ne, na pozicování zapomeňte, [nové CSS vlastnosti](https://www.vzhurudolu.cz/prirucka/css3) se učit nemusíte; pro layout nepoužijete [flexbox](css-flexbox.md) a [grid](css-grid.md), ale stále tabulky… no, raději nebudeme pokračovat).
 
 Mimochodem: Co funguje, nebo spíše nefunguje v jednotlivých e-mailových klientech zjistíte na [Can I Email](https://www.caniemail.com/) (případně na [školení](https://www.vzhurudolu.cz/kurzy/newslettery)).
 

@@ -57,7 +57,7 @@ Ne všechno, co se třpytí, je `calc()`. Pojďme se teď podívat na příklady
 ## Tři známá využití `calc()`, která naopak stojí za starou bačkoru
 
 1. **Dopočítávání zbytku výšky nebo šířky.**  
-Máme fixně vysokou hlavičku. Tělo dokumentu pak má zabrat zbytek výšky okna. Ano, dá se to udělat pomocí něčeho jako `height: calc(100% - {výška-hlavičky})`. Ale daleko elegantněji to uděláte [flexboxem](css3-flexbox.md), nástrojem, který byl pro účely tvorby layoutu vymyšlen. [vrdl.in/53f64](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-3)  
+Máme fixně vysokou hlavičku. Tělo dokumentu pak má zabrat zbytek výšky okna. Ano, dá se to udělat pomocí něčeho jako `height: calc(100% - {výška-hlavičky})`. Ale daleko elegantněji to uděláte [flexboxem](css-flexbox.md), nástrojem, který byl pro účely tvorby layoutu vymyšlen. [vrdl.in/53f64](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-3)  
 2. **Náhrada `box-sizing`.**  
 Ano, můžete použít něco jako `width: calc({width} + {padding} * 2)`. Ale proč byste to dělali? Změna počítání šířky a výšky pomocí [vlastnosti Box Sizing](css3-box-sizing.md) má daleko lepší podporu než `calc()`. [vrdl.in/53f64](https://css-tricks.com/a-couple-of-use-cases-for-calc/#article-header-id-7)  
 3. **Posun obrázku na pozadí zezdola a zprava.**  

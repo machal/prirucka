@@ -10,7 +10,7 @@ Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vy
 </figure>
 
 <div class="related web-only" markdown="1">
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 </div>
 
 Toto jsou možné hodnoty:

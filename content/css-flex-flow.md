@@ -6,7 +6,7 @@ Vlastnost `flex-flow` je zkratkou pro dvě jiné:
 - [`flex-wrap`](css-flex-wrap.md) – definuje, zda se budou položky zalamovat na více řádků layoutu.
 
 <div class="related web-only" markdown="1">
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 </div>
 
 V obecné rovině je zápis následující:

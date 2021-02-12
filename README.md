@@ -192,7 +192,7 @@ Složitější tabulky ideálně jako `<figure>`:
 ```html
 <figure>
 
-<div class="rwd-scrollable"  markdown="1">
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 | Prvek      | Vzhled | Klik/touch | Focus | Význam | Mezerník |
 |------------|:------:|:----------:|:-----:|:------:|:--------:|
 | `<span>`   |  +     |      +     |       |        |          |
@@ -207,7 +207,9 @@ Složitější tabulky ideálně jako `<figure>`:
 </figure>
 ```
 
-Třída `rwd-scrollable` zajišťuje rolování do stran na blogu u širších tabulek.
+- Třída `rwd-scrollable` zajišťuje rolování do stran na blogu u širších tabulek.
+- Třída `prop-table` zajistí stejné rozvržení pro všechny tabulky s vlastnostmi - viz CSS flexbox.
+- Třída `f-6` zmenší písmo pro větší tabulky.
 
 ### Podcast
 
@@ -262,7 +264,7 @@ Prostě odstavec s třídou `.web-only`. V ebooku bude při předzpracování te
 
 ```markdown
 <div class="web-only" markdown="1">
-Čtete referenční příručku vlastností, které je možné přiřadit položkám [flexboxu](css3-flexbox.md).
+Čtete referenční příručku vlastností, které je možné přiřadit položkám [flexboxu](css-flexbox.md).
 </div>
 ```
 
@@ -270,7 +272,7 @@ Totéž jen pro e-booky pomocí `.ebook-only`:
 
 ```markdown
 <div class="ebook-only" markdown="1">
-Čtete referenční příručku vlastností, které je možné přiřadit položkám [flexboxu](css3-flexbox.md).
+Čtete referenční příručku vlastností, které je možné přiřadit položkám [flexboxu](css-flexbox.md).
 </div>
 ```
 

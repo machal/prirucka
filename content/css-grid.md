@@ -2,7 +2,7 @@
 
 CSS Grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
 
-Síla gridu je v tom, že můžeme mřížku definovat v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css3-flexbox.md) je tedy vhodnější pro celostránkové a komplexnější layouty.
+Síla gridu je v tom, že můžeme mřížku definovat v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css-flexbox.md) je tedy vhodnější pro celostránkové a komplexnější layouty.
 
 Grid zvládají všechny dnešní prohlížeče. Internet Exploreru 11 ale podporuje jen starší verzi Gridu. Nevadí, i v něm je mřížku s kompromisy [možné použít](css-grid-msie.md).
 
@@ -30,7 +30,7 @@ Hodnota [vlastnosti `display`](css-display.md)  `grid` nastaví „grid formatti
 
 Pod názvem vlastnosti se skrývá samostatný text s příklady.
 
-<div class="rwd-scrollable f-6"  markdown="1">
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 
 | Vlastnost                | Co umí?  |
 |--------------------------|----------|
@@ -46,7 +46,7 @@ Pod názvem vlastnosti se skrývá samostatný text s příklady.
 
 ### Umístění do mřížky {#vlastnosti-umisteni}
 
-<div class="rwd-scrollable f-6"  markdown="1">
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 
 | Vlastnost                | Co umí?  |
 |--------------------------|----------|
@@ -59,7 +59,7 @@ Pod názvem vlastnosti se skrývá samostatný text s příklady.
 
 Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám zatím s odkazem na anglické zdroje:
 
-<div class="rwd-scrollable f-6"  markdown="1">
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 
 | Vlastnost                | Co umí?  |
 |--------------------------|----------|
@@ -149,7 +149,7 @@ CodePen: [cdpn.io/e/QaxGqX](https://codepen.io/machal/pen/QaxGqX?editors=1100)
 
 ## Jak se grid liší od flexboxu? {#flexbox}
 
-Předně chci zdůraznit, že Grid nenahrazuje [flexbox](css3-flexbox.md). Potřebujete obojí. Naučte se obojí. Ale nějaké rozdíly zde jsou:
+Předně chci zdůraznit, že Grid nenahrazuje [flexbox](css-flexbox.md). Potřebujete obojí. Naučte se obojí. Ale nějaké rozdíly zde jsou:
 
 - Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
 - Grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.

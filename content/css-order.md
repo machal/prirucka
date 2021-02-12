@@ -1,6 +1,6 @@
 # CSS vlastnost order
 
-Vlastnost `order` nastavuje pořadí položky v kontejneru [flexboxu](css3-flexbox.md) nebo [CSS Gridu](css-grid.md).
+Vlastnost `order` nastavuje pořadí položky v kontejneru [flexboxu](css-flexbox.md) nebo [CSS Gridu](css-grid.md).
 
 Občas se může kodérům a kodérkám  hodit proto, že zajistí odlišení *vizuálního* pořadí položek od pořadí *zdrojového* vycházejícího z HTML nebo lépe ze stromu DOM.
 

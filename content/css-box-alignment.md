@@ -4,7 +4,7 @@ Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech roz
 
 <div class="related web-only" markdown="1">
 - [CSS Grid](css-grid.md)
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 - [Vícesloupcový layout](css-multicolumn.md)
 </div>
 
@@ -25,7 +25,7 @@ Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednod
 - Směr zarovnávání (hlavní osa je obvykle vodorovná, jinak též řádková; příčná osa svislá, jinak též bloková).
 - Co budete zarovnávat (všechny položky, jednu položku nebo obsah mezi nimi).
 
-<div class="rwd-scrollable f-6"  markdown="1">
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 
 |                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) |
 |-------------------------------------|------------------------------|----------------------------|
@@ -45,7 +45,7 @@ Každou vlastnost si zde můžete rozkliknout a dostat se tak na její specifika
 
 Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                               | Co dělá?  |
 |-----------------------------------------|-----------|
@@ -59,7 +59,7 @@ Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 
 Pro konkrétní položku definujeme, jak se bude zarovnávat.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                               | Co dělá?  |
 |-----------------------------------------|-----------|
@@ -73,7 +73,7 @@ Pro konkrétní položku definujeme, jak se bude zarovnávat.
 
 Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejneru zůstává mezi položkami.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                               | Co dělá?  |
 |-----------------------------------------|-----------|

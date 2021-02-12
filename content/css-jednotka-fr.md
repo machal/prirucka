@@ -67,7 +67,7 @@ Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to
 
 ## Poznámky na závěr {#poznamky}
 
-* Asi jste postřehli, že `grid-template-columns: 1fr` se chová podobně jako bezjednotkový údaj ve [flexboxu](css3-flexbox.md), např. `flex: 1`.
+* Asi jste postřehli, že `grid-template-columns: 1fr` se chová podobně jako bezjednotkový údaj ve [flexboxu](css-flexbox.md), např. `flex: 1`.
 * `fr` není jednotka délky a nedá se s nimi ani kombinovat. Nemůžeme tedy použít funkci [calc()](css3-calc.md) a výraz jako `calc(1fr - 20px)`.
 
 ## Podpora v prohlížečích {#poznamky}

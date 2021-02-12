@@ -37,7 +37,7 @@ Web tohle „přebírání“ dělá od té doby, kdy lidé zjistili, že tahle 
 
 Bez téhle tendence by neexistovaly [API](http://www.webondevices.com/9-javascript-apis-accessing-device-sensors/) jako Geolocation, Device Orientation, Battery Manager a další.
 
-Ale když se zamyslíme znova, asi bychom v CSS neměli moduly pro tvorbu pokročilého layoutu, [Grid](css-grid.md) a [Flexbox](css3-flexbox.md). Bez snahy přiblížit weby appkám i v rychlosti by neexistoval [AMP](amp.md).
+Ale když se zamyslíme znova, asi bychom v CSS neměli moduly pro tvorbu pokročilého layoutu, [Grid](css-grid.md) a [Flexbox](css-flexbox.md). Bez snahy přiblížit weby appkám i v rychlosti by neexistoval [AMP](amp.md).
 
 <!-- AdSnippet -->
 

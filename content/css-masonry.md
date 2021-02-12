@@ -2,7 +2,7 @@
 
 Rozvržení typu masonry je ve webdesignu stejně populární jako zednická lžíce mezi zedníky.
 
-Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu [flexboxu](css3-flexbox.md), ale plně to nevyřešil ani [grid](css-grid.md).
+Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu [flexboxu](css-flexbox.md), ale plně to nevyřešil ani [grid](css-grid.md).
 
 <!-- AdSnippet -->
 
@@ -186,7 +186,7 @@ CodePen: [cdpn.io/e/mdExgmZ](https://codepen.io/rachelandrew/pen/mdExgmZ?editors
 
 ### Flexbox, `:nth-child` a `order` {#dalsi-flexbox-nthchild}
 
-[Tobias Ahlin Bjerrome](https://tobiasahlin.com/blog/masonry-with-css/) se pokusil o řešení [flexboxem](css3-flexbox.md), [selektorem `:nth-child(n)`](css3-selektory.md) a [vlastností `order`](css-order.md):
+[Tobias Ahlin Bjerrome](https://tobiasahlin.com/blog/masonry-with-css/) se pokusil o řešení [flexboxem](css-flexbox.md), [selektorem `:nth-child(n)`](css3-selektory.md) a [vlastností `order`](css-order.md):
 
 ```css
 /* Render items as columns */

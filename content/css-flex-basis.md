@@ -14,7 +14,7 @@ Většinou `flex-basis` určuje výchozí šířka položky, tedy jako `width`. 
 </figure>
 
 <div class="related web-only" markdown="1">
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 </div>
 
 Možné hodnoty:

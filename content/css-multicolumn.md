@@ -4,7 +4,7 @@ Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-colum
 
 <div class="related web-only" markdown="1">
 - [CSS Grid](css-grid.md)
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
@@ -60,7 +60,7 @@ Pomocí vlastnosti `columns` a dalších definujeme na rodičovském kontejneru 
 
 To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uvedenou vlastností.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnosti                           | Co dělají a příklad  |
 |--------------------------------------|----------------------|
@@ -74,7 +74,7 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
 
 Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamování obsahu do sloupců a nebo roztažení vnitřních prvků do všech sloupců.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnosti                               | Co dělají a příklad  |
 |------------------------------------------|----------------------|

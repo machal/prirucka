@@ -4,7 +4,7 @@
 
 Jeho podpora není plná. Internet Explorer 11, který má v Česku v době psaní podíl mezi 5 - 10 % uživatelů, umí jen základní vlastnosti gridu a to ještě jinak než ostatní prohlížeče.
 
-V posledním příkladu si proto ukážeme, jak udělat alespoň částečné náhradní řešení, zde pomocí [flexboxu](css3-flexbox.md) a podmínky `@supports`.
+V posledním příkladu si proto ukážeme, jak udělat alespoň částečné náhradní řešení, zde pomocí [flexboxu](css-flexbox.md) a podmínky `@supports`.
 
 <!-- AdSnippet -->
 

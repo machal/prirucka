@@ -3,7 +3,7 @@ CSS prefixy
 
 Předpony experimentálních implementací CSS vlastností od výrobců prohlížečů. 
 
-Nebo také podivná věc, která nás nutí duplikovat CSS kód. Dnes už prefixy nepáchají tak moc komplikací, ale kvůli novým vlastnostem jako je [flexbox](css3-flexbox.md) si s nimi nějak poradit musíme.
+Nebo také podivná věc, která nás nutí duplikovat CSS kód. Dnes už prefixy nepáchají tak moc komplikací, ale kvůli novým vlastnostem jako je [flexbox](css-flexbox.md) si s nimi nějak poradit musíme.
 
 Pojďme si to ukázat na příkladu. [CSS3 transformaci](css3-transforms.md) otočením bychom v době největší slávy prefixů měli zapsat takhle:
 

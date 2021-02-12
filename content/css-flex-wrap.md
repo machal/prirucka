@@ -10,7 +10,7 @@ Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda 
 </figure>
 
 <div class="related web-only" markdown="1">
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 </div>
 
 Toto jsou možné hodnoty:

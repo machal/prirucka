@@ -20,7 +20,7 @@ Zobrazení obrázku nebo elementu přes masku tvořenou jiným obrázkem. Hodilo
 
 ## Grid (mřížka)
 
-Layout do mřížky. Zatímco [flexbox](css3-flexbox.md) je vymyšlený pro design komponent uživatelského rozhraní, grid pro layout celých stránek. Podpora je v době psaní jen experimentální. Existuje sice polyfill, pro layout bych ho ovšem používat nedoporučoval. Každopádně grid layout bude po flexboxu další velká věc, takže doporučuji sledovat jeho vývoj. 
+Layout do mřížky. Zatímco [flexbox](css-flexbox.md) je vymyšlený pro design komponent uživatelského rozhraní, grid pro layout celých stránek. Podpora je v době psaní jen experimentální. Existuje sice polyfill, pro layout bych ho ovšem používat nedoporučoval. Každopádně grid layout bude po flexboxu další velká věc, takže doporučuji sledovat jeho vývoj. 
 
 - [caniuse.com/grid](https://caniuse.com/grid)
 - [w3.org/TR/css3-grid-layout](https://www.w3.org/TR/css3-grid-layout/)

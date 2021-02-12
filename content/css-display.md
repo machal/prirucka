@@ -11,7 +11,7 @@ Ale víte co? Začneme jednoduchým přehledem nejužitečnějších hodnot.
 | `inline`                  |  Řádkový element, který netvoří zalomení před sebou nebo po sobě. (výchozí)        |
 | `block`                   |  Blokový element. Zalomí řádky před sebou i po sobě. |
 | `inline-block`            |  Vnitřně se jedná o blokový element, zvnějšku inline, který netvoří zalomení.                 |
-| `flex`, `inline-flex`     |  Vytvoří [flexové rozvržení](css3-flexbox.md). Inline varianta nezalomí řádky před a po.  |
+| `flex`, `inline-flex`     |  Vytvoří [flexové rozvržení](css-flexbox.md). Inline varianta nezalomí řádky před a po.  |
 | `grid`, `inline-grid`     |  Vytvoří [rozvržení do mřížky](css-grid.md). Inline varianta opět nezalomí řádky.  |
 | `table`, `inline-table`   |  Rozvržení do tabulky. Inline varianta opět tvoří tabulku v řádce.  |
 | `none`                    |  Nevykreslí prvek, ale ani jeho potomky.  |
@@ -82,7 +82,7 @@ Hodnota `flow` zapíná formátování tokem (flow layout), což je běžný zp�
 - `flow-root`  
 Vytvoří kontejner blokového kontextu (jako `display:block`) a rozloží jeho obsah pomocí toku (flow layout). Hodnota `flow-root` ale vždy generuje nový kontext formátování bloku pro svůj obsah, takže není například nutné mazat „floaty“ pomocí [clearfixu](https://learnlayout.com/clearfix.html). Na této hodnotě je zajímavé, že ji podporují všechny moderní prohlížeče. Internet Explorer nikoliv. [caniuse.com/flow-root](https://caniuse.com/flow-root)
 - `flex`  
-Zapíná formátovací kontext [flexboxu](css3-flexbox.md). Ze stylovaného prvku udělá flex kontejner a z přímých potomků flex položky.
+Zapíná formátovací kontext [flexboxu](css-flexbox.md). Ze stylovaného prvku udělá flex kontejner a z přímých potomků flex položky.
 - `grid`  
 Spouští formátovací kontext [gridu](css-grid.md). Ze stylovaného prvku udělá  kontejner mřížky a z přímých potomků její položky.
 - `table`  

@@ -1,6 +1,6 @@
 # Flexbox: Vše o průžných layoutech v CSS
 
-Flexbox je jeden z nových nových způsobů, jak v CSS zapisovat layout, ale také zarovnání a distribuci volné plochy.
+Flexbox je jeden z nových způsobů, jak v CSS zapisovat layout, ale také zarovnání a distribuci volné plochy.
 
 <div class="related web-only" markdown="1">
 - [CSS Grid](css-grid.md)
@@ -8,14 +8,13 @@ Flexbox je jeden z nových nových způsobů, jak v CSS zapisovat layout, ale ta
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
+V této aktualizované příručce přibyly texty s příklady pro všechny vlastnosti, které ve flexboxu můžete používat.
+
 *Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
 
 <!-- AdSnippet -->
 
-Pokud sháníte příručku k vlastnostem flexboxu, tady je. Čeká nás v ní:
-
-- [Příručka k vlastnostem](#vlastnosti)
-- [Základy a příklad](#priklad)
+Pokud sháníte příručku k vlastnostem flexboxu, tady je.
 
 ## Všechny vlastnosti {#vlastnosti}
 
@@ -25,7 +24,7 @@ Vlastnosti se týkají buď kontejneru, tedy rodičovského prvku nebo položek.
 
 Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext formátování flexboxem, takže jeho přímí potomkové mohou mít specifické vlastnosti. Možná je také „inline“ hodnota: `inline-flex`.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                            | Co dělá a příklad    |
 |--------------------------------------|----------------------|
@@ -35,12 +34,12 @@ Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext for
 
 </div>
 
-<div class="web-only">
+<div class="web-only" markdown="1">
 <!-- Kopie z css-multicolumn.md -->
 
 Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (CSS Box Alignment)](css-box-alignment.md):
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                               | Co dělá a příklad  |
 |-----------------------------------------|--------------------|
@@ -52,7 +51,7 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
 
 K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného prostoru, který uvnitř kontejneru zůstává mezi položkami.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                               | Co dělá?  |
 |-----------------------------------------|-----------|
@@ -67,7 +66,7 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
 ### Položky flexboxu {#vlastnosti-polozky}
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                            | Co dělá a příklad    |
 |--------------------------------------|----------------------|
@@ -77,14 +76,14 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
 </div>
 
-<div class="web-only">
+<div class="web-only" markdown="1">
 <!-- Kopie z css-multicolumn.md -->
 
 Také na položky flexboxu můžeme aplikovat vlastnosti [zarovnání boxů](css-box-alignment.md):
 
 Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude zarovnávat.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable prop-table f-6" markdown="1">
 
 | Vlastnost                               | Co dělá?  |
 |-----------------------------------------|-----------|
@@ -97,29 +96,84 @@ Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude za
 <!-- /Kopie z css-multicolumn.md -->
 </div>
 
+Nyní známe vlastosti a teď pojďme prozkoumat jednoduchý příklad.
+
 ## Základy v jednoduchém příkladu {#priklad}
 
 Představme si triviální třísloupcový layout:
 
 ```html
 <div class="container">
-  <p class="mandatory-1">One</p>
-  <p class="content">Two<br/>…<br/>…</p>
-  <p class="mandatory-2">Three </p>
+  <p class="col col--1">First is loooooong.</p>
+  <p class="col col--2">Second is looooonger.<br/>…<br/>…</p>
+  <p class="col col--3">Third is short.</p>  
 </div>
 ```
 
 HTML je jednoduché. O to přísnější máme požadavky na design. A víte co? Ukážeme si rovnou, jak je splnit pomocí flexboxu.
 
+CodePen: [cdpn.io/e/jOVVeVL](https://cdpn.io/e/jOVVeVL)
+
+V dalším textu kód z CodePenu ještě poctivě vysvětlíme.
+
 <!-- AdSnippet -->
 
-1. **Všechny sloupce stejně vysoké.** Ano, i v případech kdy má ten jeden delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče udělat kontejner flexboxu – `.container { display: flex; }`.
-2. **Chceme pětinovou mřížku**. První a třetí sloupec má zabírat jednu pětinu – `.mandatory-1, .mandatory-2 { flex: 1; }`. A druhý pak tři pětiny – `.content { flex: 3 }`. Všimli jste si, že jsme nemuseli počítat s procenty? A že bychom nemuseli procenta přepočítávat, kdybychom přidali další sloupec?
-3. **Na menších rozlišeních chceme změnit pořadí elementů.** Prostě jen do media query napíšeme `.content { order: -1; }`, a sloupec s obsahem se přesune na první místo. Bomba pro responzivní design, že?
+### Všechny sloupce mají být stejně vysoké {#priklad-sloupce}
 
-Příklad si utíkejte vyzkoušet naživo na CodePen. [cdpn.io/e/LhGuD](https://cdpn.io/e/LhGuD)
+Ano, i v případech kdy má ten jeden delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče pomocí [vlastnosti `display`](css-display.md) udělat kontejner flexboxu:
 
-Je to hezké, že? Ale skeptik by zamručel, že se CSSko konečně naučilo to, co jsme uměli pomocí „tabulkového layoutu“ v roce 2001. Jenže pravdu by měl jen z velmi malé části. Flexbox toho totiž umí daleko (*daleko!*) více než tabulky.
+```css
+.container {
+  display: flex;
+}
+```
+
+### Layout se při nedostatku místa zalomí {#priklad-zalamovani}
+
+V případě, že zde nebude dost prostoru pro všechny položky, zalomíme. To definujeme pomocí [vlastnosti `flex-wrap`](css-flex-wrap.md):
+
+```css
+.container {
+  flex-wrap: wrap;
+}
+```
+
+### První dva sloupce jsou pružné, třetí nikoliv {#priklad-treti}
+
+Zároveň jsme si vymysleli, že první dva sloupce se budou změnšovat a zvětšovat, přičemž druhý dvakrát více než první. Třetí naopak nikoliv, zůstane vždy na svém. Tady pomůže [zkratka vlastností položky flexboxu, `flex`](css-flex.md):
+
+```css
+/* Pružná položka, zabírá jednu část volného místa: */
+.col--1 {
+  flex: 1;  
+}
+
+/* Pružná položka, zabírá dvě části volného místa: */
+.col--2 {
+  flex: 2;  
+}  
+
+/* Fixně široká položka: */
+.col--3 {
+  flex: none;
+}
+```
+
+### Na menších displejích se změní směr {#priklad-smer}
+
+Na mobilech zpravila není pro rozvržení prvků vedle sebe prostor. Přidáme proto změnu směru layoutu, což zajistíme [vlastností `flex-direction`](css-flex-direction.md):
+
+```css
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+  }
+}
+```
+
+Příklad si utíkejte vyzkoušet naživo na CodePen. [cdpn.io/e/jOVVeVL](https://cdpn.io/e/jOVVeVL)
+
+Je to hezké, že?
 
 ## Flexbox je mistr na layouty komponent {#layouty-komponent}
 

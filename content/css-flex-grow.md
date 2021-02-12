@@ -12,7 +12,7 @@ Jak moc může položka růst relativně k dalším položkám, pokud je k dispo
 Specifikace a praktická zkušenost nás navádějí namísto používání `flex-grow` spíše ke [zkratce `flex`](css-flex.md), ale přesto považuji za nutné se o této vlastnosti zmínit.
 
 <div class="related web-only" markdown="1">
-- [Flexbox](css3-flexbox.md)
+- [Flexbox](css-flexbox.md)
 </div>
 
 Možné hodnoty:

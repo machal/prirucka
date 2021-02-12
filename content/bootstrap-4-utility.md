@@ -117,6 +117,6 @@ Ale může to být dobré úplně pro všechny, kteří s Bootstrapem pracují:
 
 - Děsně to zrychluje vývoj. Většinu kódu totiž píšete přímo do HTML. 
 - Zmenšuje to velikost CSS kódu. Externí CSS je blokující zdroj, u kterého je výsledná velikost zásadní pro rychlost zobrazení stránky. (Ano, zvětší to velikost HTML, ale ne tolik jako to zmenší CSS.)
-- Není potřeba znát CSS vlastnosti do hloubky. Třeba [u flexboxu](css3-flexbox.md) to hodně pomáhá.
+- Není potřeba znát CSS vlastnosti do hloubky. Třeba [u flexboxu](css-flexbox.md) to hodně pomáhá.
 
 <!-- AdSnippet -->
