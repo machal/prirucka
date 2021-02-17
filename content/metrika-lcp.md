@@ -61,7 +61,7 @@ Pokud se tedy prvky během renderování umísťují do viewportu, nezapočtou s
 
 Je jasné, že viditelná část obrazovky se běheme renderování poměrně hodně mění. Existuje tedy pojem „LCP candidate“, prvek, který je v daném stavu obrazovky vždy považován za největší, ale ještě stále může být pro LCP nahrazen jiným.
 
-[Hledání nových kanditátů](https://web.dev/lcp/#when-is-largest-contentful-paint-reported) LCP končí v momentě, kdy uživatel provede interakci se stránkou (tapnutí, kliknutí, z klávesnice nebo scrollováním stránky) nebo [odejde ze stránky pryč](https://github.com/WICG/largest-contentful-paint#the-last-candidate), např. vložením nového URL. Poslední LCP kandidát vyhrává a jako LCP je reportován čas jeho renderování.
+[Hledání nových kanditátů](https://web.dev/lcp/#when-is-largest-contentful-paint-reported) LCP končí v momentě, kdy uživatel provede interakci se stránkou (tapnutí, kliknutí) nebo [odejde ze stránky pryč](https://github.com/WICG/largest-contentful-paint#the-last-candidate), např. vložením nového URL. Poslední LCP kandidát vyhrává a jako LCP je reportován čas jeho renderování.
 
 <!-- AdSnippet -->
 

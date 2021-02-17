@@ -12,8 +12,6 @@ V této aktualizované příručce přibyly texty s příklady pro všechny vlas
 
 *Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
 
-<!-- AdSnippet -->
-
 Pokud sháníte příručku k vlastnostem flexboxu, tady je.
 
 ## Všechny vlastnosti {#vlastnosti}
