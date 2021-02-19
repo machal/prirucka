@@ -17,7 +17,7 @@ Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých 
 | Hodnota      | Co dělá?                        |
 |:-------------|:--------------------------------|
 | `visible`    |  Bez efektu. Obsah elementu se vykreslí běžným způsobem. (Výchozí hodnota.)|
-| `hidden`     |  Obsah elementu není vidět. Je to podobné jako `visibility:hidden`. Element není dosupný pro funkce jako najít na stránce, procházení tabulátory; nelze jej označit ani jinak zaměřit přes `:focus`.  |
+| `hidden`     |  Obsah elementu není vidět. Je to podobné jako `visibility:hidden`. Element není dostupný pro funkce jako najít na stránce, procházení tabulátory; nelze jej označit ani jinak zaměřit přes `:focus`.  |
 | `auto`       |  Zapíná layout, style a paint containment. Na rozdíl od `hidden` jsou `auto` prvky stále k dispozici pro hledání, tabulátory i zaměření.  |
 
 </div>  
