@@ -1,3 +1,3 @@
-# Kapitola 7: Reference – CSS Box Alignment a vlastnost order
+# Kapitola 7: Reference - Flexbox
 
 *TODO*

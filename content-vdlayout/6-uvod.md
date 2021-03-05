@@ -1,4 +1,4 @@
-# Kapitola 5: Reference – Funkce a klíčová slova
+# Kapitola 6: Reference – Funkce a klíčová slova
 
 *TODO*
 

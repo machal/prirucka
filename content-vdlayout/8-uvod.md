@@ -1,3 +1,3 @@
-# Kapitola 8: Reference – CSS Multicolumn layout
+# Kapitola 8: Reference – CSS Box Align
 
 *TODO*
