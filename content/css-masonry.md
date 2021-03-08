@@ -120,7 +120,7 @@ Standardizátoři mají CSS Grid Level 3 zatím rozpracovaný. V téhle fázi je
 
 Jak už jsem zmínil – v době psaní je tato skvělá nová věc podporovaná jen v Nightly verzi Firefoxu. I tam je ale potřeba zapnout vlaječku `layout.css.grid-template-masonry-value` v `about:config`.
 
-Řešit [fallbacky](fallback.md) bude v případě nativní implementace technicky snadné řešit, protože máme podmínku podpory – `@supports`:
+Řešit [fallbacky](fallback.md) bude v případě nativní implementace technicky snadné řešit, protože máme [podmínku podpory – `@supports`](css-supports.md):
 
 ```css
 @supports (grid-template-rows: masonry) {

@@ -132,7 +132,7 @@ CodePen: [cdpn.io/e/NMyjpb](https://codepen.io/machal/pen/NMyjpb?editors=1100).
 
 Problém předchozího příkladu (stejně jako skoro všech příkladů s gridem) je v tom, že v MSIE 11 nebudou fungovat.
 
-Nevadí! Vezmeme si na pomoc závináčové pravidlo `@supports`, které nativním způsobem detekuje podporu moderních CSS vlastností v prohlížečích.
+Nevadí! Vezmeme si na pomoc závináčové [pravidlo `@supports`](css-supports.md), které nativním způsobem detekuje podporu moderních CSS vlastností v prohlížečích.
 
 Navrhneme nejprve zjednodušené řešení pomocí flexboxu:
 

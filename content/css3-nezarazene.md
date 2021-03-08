@@ -35,7 +35,7 @@ Definuje, zda budou v případě potřeby slova na konci řádků automaticky r
 
 ## @supports (detekce podpory vlastností)
 
-Testuje dostupnost CSS vlastností v prohlížeči. Standardizovaná náhrada javascriptové knihovny Modernizr. Dnes už podporují všechny moderní prohlížeče, jen ten Explorer to už nedožene. Doufám, že o `@supports` brzy napíšu více.
+Testuje dostupnost CSS vlastností v prohlížeči. Standardizovaná náhrada javascriptové knihovny Modernizr. Dnes už podporují všechny moderní prohlížeče, jen ten Explorer to už nedožene. Viz text [`@supports`](css-supports.md).
 
 - [caniuse.com/supports](https://caniuse.com/supports)
 - [jecas.cz/supports](http://jecas.cz/supports)

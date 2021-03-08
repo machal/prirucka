@@ -55,6 +55,7 @@
 ### Další vlastnosti
 
 - [Proměnné](css-promenne.md) [a příklady využití](css-promenne-priklady.md)
+- [@supports: feature queries](css-supports.md)
 - [Jednotky](jednotky.md) + [CSS3 jednotky](css3-jednotky.md)
 - [object-fit a object-position](css-object-fit-position.md)
 - [calc(): výpočty v CSS](css3-calc.md)

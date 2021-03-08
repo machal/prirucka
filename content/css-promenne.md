@@ -275,7 +275,7 @@ color: var(--my-color);
 
 ### Detekce podpory pomocí @supports {#podpora-fallbacky-supports}
 
-Samozřejmě můžete využít i pravidlo `@supports`:
+Samozřejmě můžete využít i [feature queries – `@supports`](css-supports.md):
 
 ```css
 @supports ( (--a: 0)) {

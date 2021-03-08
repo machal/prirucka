@@ -102,7 +102,7 @@ Nebo Multicolumn layout:
 
 ### Dotazy na vlastnosti
 
-Modernizr aktuálně dostává *něco jako* nativní podporu od W3C. Přichází v podobě dotazů na vlastnosti – CSS Feature Queries. Pomocí zavináčového pravidla `@supports` se ptáte na dostupnost konkrétní CSS vlastnosti:
+Modernizr aktuálně dostává *něco jako* nativní podporu od W3C. Přichází v podobě dotazů na vlastnosti – CSS Feature Queries. Pomocí [zavináčového pravidla `@supports`](css-supports.md) se ptáte na dostupnost konkrétní CSS vlastnosti:
 
 ```css
 .component {
