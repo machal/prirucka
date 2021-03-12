@@ -200,7 +200,7 @@ CSS hacky a dnes `@supports` jsou důležitou částí zásadní webařské tech
 
 Mezi jednotlivými řešeními je detekce vlastností (nikoliv prohlížeče!), například právě pomocí `@supports`.
 
-Výsledkem je, že nějaké řešení máte pro nejširší možnou zkupinu zařízení. Pro web ideální.
+Výsledkem je, že nějaké řešení máte pro nejširší možnou skupinu zařízení. Pro web ideální.
 
 ## Podpora `@supports` a limity použitelnosti {#podpora}
 
