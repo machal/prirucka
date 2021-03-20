@@ -6,15 +6,15 @@ Vlastnost `justify-items` na kontejneru layoutu definuje zarovnání položek na
 
 Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejneru.
 
-<!-- AdSnippet -->
-
-Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
-
-U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. [cdpn.io/e/eYZgOwL?editors=1100](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
-
 <div class="related web-only" markdown="1">
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
+
+Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
+
+U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme.
+
+CodePen: [cdpn.io/e/eYZgOwL](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
 ## Jednoduchý příklad s Gridem
 
@@ -67,6 +67,8 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 - `baseline`  
   Zkratka pro `first baseline`.
 
+<!-- AdSnippet -->
+
 ### Pro přetečení
 
 - `safe`  
@@ -74,7 +76,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-Pokud vím, v žádném prohlížeči toto zatím nefunguje.
+Pokud vím, v žádném prohlížeči ale toto zatím nefunguje.
 
 ## Podpora v prohlížečích
 

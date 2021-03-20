@@ -41,7 +41,6 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
 
 | Vlastnost                               | Co dělá a příklad  |
 |-----------------------------------------|--------------------|
-| [`justify-items`](css-justify-items.md) <br> [![Vlastnost justify-items](../dist/images/small/vdlayout/css-justify-items-schema.png)](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
 | [`align-items`](css-align-items.md) <br> [![Vlastnost align-items](../dist/images/small/vdlayout/css-align-items-schema.png)](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
 | [`place-items`](css-place-items.md) <br> [![Vlastnost place-items](../dist/images/small/vdlayout/css-place-items-schema.png)](css-place-items.md)     | Zkratka pro zarovnání položek v obou směrech. <br> Např. `place-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
 
