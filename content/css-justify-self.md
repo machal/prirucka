@@ -4,11 +4,13 @@ Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak té�
 
 ![Vlastnost justify-self](../dist/images/original/vdlayout/css-justify-self-schema.png)
 
-Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
+Je dobré zmínit, že uvnitř buněk tabulek je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
 <!-- AdSnippet -->
 
-U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md). Hodnota `auto` u vnějších okrajů má ostatně před touto `justify-self` přednost ve všech systémech rozvržení v CSS.
+U flexboxu můžeme pro zarovnání položek na hlavní ose využít také klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
+
+Hodnota `auto` u vnějších okrajů má ostatně před touto `justify-self` přednost ve všech systémech rozvržení v CSS.
 
 <div class="related web-only" markdown="1">
 - [CSS Box Alignment](css-box-alignment.md)
@@ -82,9 +84,9 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-Jak už padlo, ve flexboxových layoutech je vlastnost `justify-self` ignorována, takže i tady můžeme říct, že ji při použití `display:flex` podporují (ale neaplikují) úplně všechny prohlížeče.
+Při použití s `display:flex` zde máme tradiční výjimku – vlastnosti `justify-self` nepodporuje Internet Explorer 11.
 
-Při použití `display:grid` zde máme tradiční výjimku – Internet Explorer 11.
+<!-- TODO je to pravda? Viz CSS layout bugy -->
 
 Více na [caniuse.com/justify-self](https://caniuse.com/#search=justify-self).
 

@@ -8,6 +8,8 @@ Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Mu
 
 Jediným větším a hůř odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
 
+<!-- AdSnippet -->
+
 V textu vezmeme nové systémy layoutu jeden po druhém a k jejich podpoře v prohlížečích si něco povíme.
 
 ## Flexbox a „flexboty“ v IE11 {#flexbox}
@@ -28,6 +30,14 @@ Když jsem ale u příležitosti psaní tohoto textu srovnával současný stav 
 </figure>
 
 Je to tak. Takřka všechny chyby v moderních prohlížečích jsou opravené. Zůstaly jen ty navázané na Internet Explorer 11.
+
+Dnes už tedy můžete psát flexboxový kód, aniž byste se museli bát. Stačí se vyhnout určitým zápisům a bude to vše dobře fungovat i v Internet Exploreru 11.
+
+Když jsem se vývojářů ptal na jejich mentální zkratky, Daniel Střelec napsal jednou, se kterou se ztotožňuji:
+
+> U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default) a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
+
+Stačí málo a všechno to dobře funguje.
 
 ### Podpora flexboxu je prakticky plná {#flexbox-podpora}
 
@@ -71,6 +81,8 @@ Pojďme na ty chyby, ať tu nepříjemnost máme za sebou.
 9. Položky flexboxu neumí zarovnání pomocí `margin:auto` na příčné ose _(flexbug #15)_.
 
 Máte přečteno? A máte z toho depresi? Chvilku počkejte.
+
+<!-- AdSnippet -->
 
 Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohrozí. Stačí jen vědět, že si v případě _podivného_ chování IE11 u flexboxu musíte vzpomenout na existenci stránky Flexbugs nebo tohoto textu.
 
@@ -124,6 +136,8 @@ Prostě to s gridem v IE je složité a já se vůbec nedivím lidem, kteří ř
 
 Jo, to když Explorer podporovat nemusíte, to je jiná písnička…
 
+<!-- AdSnippet -->
+
 Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Exploreru](css-grid-msie.md) a pojďme dál.
 
 ### Gridbugs, boty v mřížce {#gridbugs}
@@ -155,9 +169,9 @@ Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních proh
 
 Chyby v Chrome a Firefoxu, které straší vývojáře, zde zůstávají už léta hlavně proto, že tahle část rozvržení v CSS není právě často používaná a tudíž tlak na programátory prohlížečů není tak velký.
 
-Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost, však se podívejte na obrázek.
+Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 
-<!-- TODO known issues u multicol -->
+<!-- TODO obrázek (možná) known issues u multicol -->
 
 Asi nejznámějším problémem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí.
 
@@ -169,16 +183,35 @@ Více informací najdete na našem oblíbeném webu.  [caniuse.com/multicolumn](
 
 Čtvrtou specifikací z party systémů rozvržení v CSS je [zarovnání boxů](css-box-alignment.md).
 
-Tahle specifikace bohužel samostatný záznam na CanIUse nemá. Je to proto, že původně šlo o součást specifikace flexboxu, kde také na tomto webu vlastnosti Box Alignment zůstaly.
+Tenhle systém layoutu bohužel samostatný záznam na CanIUse nemá. Je to proto, že původně šlo o součást specifikace flexboxu, kde také na tomto webu vlastnosti Box Alignment zůstaly.
 
 Najdete je zde jako jednotlivé vlastnosti, když budete hledat text `align-` nebo `justify-`.
 
-<!-- TODO CSS box align -->
+Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmínit, že v IE to tak není.
 
-Podpora je zde vynikající, ale je potřeba zmínit tyto důležité nedostatky:
+### Tabulky podpory CSS Box Align v Internet Exploreru
 
-1. `align-tracks`, `justify-tracks` a další části [layoutu typu masonry](css-masonry.md) v CSS zatím žádný prohlížeč nepodporuje.
-2. Vlastnost [`align-items`](css-align-items.md), [`align-content`](css-align-content.md), [` justify-items`](css-justify-items.md) v rámci gridu a [`justify-self`](css-justify-self.md) v rámci flexboxu nepodporuje Internet Explorer.
-3. Explorer také nepodporuje novější hodnoty některých vlastností: `baseline` a `stretch` vlastností [`align-self`](css-align-self.md) a [`justify-content`](css-justify-content.md) nebo také `space-evenly` u [`justify-content`](css-justify-content.md).
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 
-<!-- TODO -->
+|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*) |
+|-------------------------------------|------------------------------|----------------------------|--------------------------|
+| **Zarovnání položek** (`*-items`)   |  `justify-items`<br>IE: flex, ~~grid~~     | `align-items`<br>IE: flex, ~~grid~~      | `place-items`<br>IE: ~~flex~~, ~~grid~~ |
+| **Zarovnání sebe sama** (`*-self`)  |  `justify-self`<br>IE: ~~flex~~, grid      | `align-self`<br>IE: flex, grid       | `place-self`<br>IE: ~~flex~~, ~~grid~~ |
+| **Distribuce obsahu** (`*-content`) |  `justify-content`<br>IE: flex, ~~grid~~    | `align-content`<br>IE: flex, ~~grid~~    | `place-content`<br>IE: ~~flex~~, ~~grid~~ |
+
+</div>
+
+Jak je vidno, v moderních prohlížečích je to v pořádku.
+
+V případě, že podporujete IE:
+
+- U flexboxu si dávejte pozor na vlastnost `justify-self`.
+- V případě gridu je to celkově složitější, viz následující [pojednání o tom](css-grid-msie.md).
+
+Explorer také nepodporuje novější hodnoty některých vlastností: `baseline` a `stretch` vlastností [`align-self`](css-align-self.md) a [`justify-content`](css-justify-content.md) nebo také `space-evenly` u [`justify-content`](css-justify-content.md).
+
+### Na layout typu masonry zatím čekáme
+
+`align-tracks`, `justify-tracks` a další části [layoutu typu masonry](css-masonry.md) v CSS zatím žádný prohlížeč nepodporuje.
+
+Layouty typu Masonry v CSS zatím tedy sledujte, ale pro praktické nasazení využijte jinou cestu.
