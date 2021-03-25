@@ -84,7 +84,7 @@ Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude za
 
 | Vlastnost                               | Co dělá?  |
 |-----------------------------------------|-----------|
-| [`justify-self`](css-justify-self.md) <br> [![Vlastnost justify-self](../dist/images/small/vdlayout/css-justify-self-schema.png)](css-justify-self.md)   | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-self: center` vodorovně centruje položku. |
+
 | [`align-self`](css-align-self.md) <br> [![Vlastnost align-self](../dist/images/small/vdlayout/css-align-self-schema.png?2)](css-align-self.md)   | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-self: end` zarovná položku ke spodní hraně. |
 | [`place-self`](css-place-self.md)  <br> [![Vlastnost place-self](../dist/images/small/vdlayout/css-place-self-schema.png)](css-place-self.md)  | Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. `place-self: end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
 

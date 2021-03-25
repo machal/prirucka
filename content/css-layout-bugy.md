@@ -6,7 +6,7 @@ Autorovi téhle myšlenky bychom museli přiznat jistou dávku zdravého skeptic
 
 Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Musíme ovšem s úlevou prohlásit, že oproti dřívějšímu stavu je přítomnost chyb spojených s flexboxem nebo gridem v prohlížečích minimální.
 
-Jediným větším a hůř odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
+Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
 
 <!-- AdSnippet -->
 
@@ -16,9 +16,9 @@ V textu vezmeme nové systémy layoutu jeden po druhém a k jejich podpoře v pr
 
 Když jsem začal [flexbox](css-flexbox.md) před lety používat, bylo to trochu jako procházka minovým polem.
 
-Za každým řádkem kódu mohla číhat nekompatibilita v některém prohlížeči. Člověk potřeboval detektor min a tím se stala stránka „Flexbugs“ od Philipa Waltona. Jde o seznam 17 chyb v prohlížečích, které měl znát každý, kdo pokouší osud psaním flexboxového kódu. [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
+Za každým řádkem kódu mohla číhat nekompatibilita v některém prohlížeči. Člověk potřeboval detektor min a tím se stala stránka „Flexbugs“ od Philipa Waltona. Jde o seznam 17 chyb v prohlížečích, které tehdy potřeboval znát každý, kdo pokouší osud psaním flexboxového kódu. [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
 
-Znalost některých chyb byla tak zásadní, že jsem je svého času musel učit na svých školeních. A při té příležitosti jsem jim začal říkal česky. Flexboty. Boty, které zanechali výrobci prohlížečů při implementaci flexboxu.
+Znalost některých chyb byla tak zásadní, že jsem je svého času musel učit na svých školeních. A při té příležitosti jsem jim začal říkal česky: _flexboty_. Boty, které zanechali výrobci prohlížečů při implementaci flexboxu.
 
 Když jsem ale u příležitosti psaní tohoto textu srovnával současný stav s tím dřívějším, došel jsem k radostnému poznání.
 
@@ -33,6 +33,8 @@ Je to tak. Takřka všechny chyby v moderních prohlížečích jsou opravené. 
 
 Dnes už tedy můžete psát flexboxový kód, aniž byste se museli bát. Stačí se vyhnout určitým zápisům a bude to vše dobře fungovat i v Internet Exploreru 11.
 
+### Stačí se vyhnout {#vyhnout}
+
 Když jsem se vývojářů ptal na jejich mentální zkratky, Daniel Střelec napsal jednou, se kterou se ztotožňuji:
 
 > U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default) a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
@@ -43,7 +45,7 @@ Stačí málo a všechno to dobře funguje.
 
 Pojďme říct důležitou věc – fungování flexboxu napříč prohlížeči, včetně posledního Exploreru, je konzistentní a podporu považuji za takřka plnou.
 
-U chyb, které zde uvádím, se jedná o boty menší velikosti. Ale když už si o flexboxu povídáme takto detailně, je potřeba se o nich zmínit.
+U chyb, které v následujícím textu uvádím, se jedná o boty menší velikosti. Ale když už si o flexboxu povídáme takto detailně, je potřeba se o nich zmínit.
 
 ### Flexboty v moderních prohlížečích {#flexbox-moderni}
 
@@ -72,7 +74,7 @@ Pojďme na ty chyby, ať tu nepříjemnost máme za sebou.
 
 1. Vlastnost `flex-basis` nezohledňuje `box-sizing:border-box` _(flexbug #7)_.
 2. Vlastnost `flex` s nulovou `flex-basis` neplatí _(flexbug #4)_.
-3. Vlastnost `flex-basis` neumí funkci `calc()` :(flexbug #8)_.
+3. Vlastnost `flex-basis` neumí funkci `calc()` _(flexbug #8)_.
 4. Položky flexboxu nemohou být `display:inline` _(flexbug #12)_.
 5. Položky flexboxu se špatně zarovnají, když se užívá `max-width` _(flexbug #17)_.
 6. Položky flexboxu lezou z kontejneru, který má `align-items:center` _(flexbug #2)_.
@@ -107,7 +109,7 @@ Nebudeme si proto kazit den chybami historických prohlížečů a ty tři chyby
 
 Pokud by vás opravdu hodně zajímaly, podívejte se na tu svého času slavnou stránku Philipa Waltona. Flexbugs: [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
 
-Ještě si také jednou přidejme odkaz na informace o podpoře. [CanIUse.com/flexbox](https://caniuse.com/flexbox)
+Více informací o podpoře je na Can I Use. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
 ## Grid {#grid}
 
@@ -126,7 +128,7 @@ A pak na ty, kteří mají trochu smůlu.
 
 Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu. Obávám se, že za to může komplikace jménem podpora gridu v IE.
 
-Je potřeba říct, že tenhle prohlížeč grid podporuje a nepodporuje toho vůbec málo: implicitní mřížku, [funkci `repeat()`](css-repeat.md), funkci [`minmax()`](css-minmax.md) nebo klíčová slova `min-content` a `max-content`.
+Je potřeba říct, že i tenhle prohlížeč grid podporuje a nepodporuje toho z něj vůbec málo: implicitní mřížku, [funkci `repeat()`](css-repeat.md), funkci [`minmax()`](css-minmax.md) nebo klíčová slova `min-content` a `max-content`.
 
 Na druhou stranu – jde jen o menší podmnožinu současné šíře toho čemu říkáme CSS Grid Layout, navíc často jinak implementovanou.
 
@@ -150,13 +152,13 @@ Asi jste si všimli, že o té stránce píšu v minulém čase, a to jste si v�
 
 Během přípravy pro psaní tohoto textu jsem poctivě prošel všech 14 chyb a podle všeho zůstává aktivní jen jedna bota, _gridbug #3_ – chybějící podpora fragmentace.
 
-Jde o to, že prolížeče v layoutu dělaném gridem špatně implementují vlastnosti jako `break-*`, kterými můžeme vynucovat konec stránky například v tiskové verzi.
+Jde o to, že prohlížeče v layoutu dělaném gridem špatně implementují vlastnosti jako `break-*`, kterými můžeme vynucovat konec stránky například v tiskové verzi.
 
-Všechny ostatní chyby jsou, zdá se, opravené. Takže, když nebereme v úvahu Internet Explorer (jak úlevné!), CanIUse na nás zaplaví zelenou barvou jako louka na jaře. [caniuse.com/css-grid](https://caniuse.com/css-grid)
+Všechny ostatní chyby jsou, zdá se, opravené. Takže, když nebereme v úvahu Internet Explorer (jak úlevné!), CanIUse nás zaplaví zelenou barvou jako louka na jaře. [caniuse.com/css-grid](https://caniuse.com/css-grid)
 
 ## Vícesloupcové rozvržení, CSS Multiple Columns {#css-multicol}
 
-[Multicolumn layout](css-multicolumn.md) v CSS, takže sada specifikovaná kolem vlastnosti `column`, je na tom poměrně dobře.
+[Multicolumn layout](css-multicolumn.md) v CSS, takže sada specifikovaná kolem vlastnosti `column`, je na tom s podporou v prohlížečích poměrně dobře.
 
 Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních prohlížečích. Implementace v Exploreru je vlastně výborná.
 
@@ -167,37 +169,42 @@ Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních proh
 </figcaption>
 </figure>
 
-Chyby v Chrome a Firefoxu, které straší vývojáře, zde zůstávají už léta hlavně proto, že tahle část rozvržení v CSS není právě často používaná a tudíž tlak na programátory prohlížečů není tak velký.
+Chyby v Chrome a Firefoxu zde zůstávají už léta hlavně proto, že sloupcový systém rozvržení v CSS není právě často používaný a tudíž tlak na programátory prohlížečů není tak velký.
 
 Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 
-<!-- TODO obrázek (možná) known issues u multicol -->
+<figure>
+<img src="../dist/images/original/css-multicol-caniuse-issues.png" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse - záložka issues">
+<figcaption markdown="1">
+*Pytel blech. Drobné problémy ve vícesloupcovém layoutu. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
+</figcaption>
+</figure>
 
-Asi nejznámějším problémem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí.
+Asi nejznámějším bugem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí.
 
 Pokud bychom se ale dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl byl to grid ani flexbox. Černého Petra bohužel vyhrává vícesloupcové rozvržení.
 
-Více informací najdete na našem oblíbeném webu.  [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
+Více informací najdete na našem oblíbeném webu. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 
-## A co zarovnávání, CSS Box Align?
+## A co zarovnávání, CSS Box Align? {#box-align}
 
 Čtvrtou specifikací z party systémů rozvržení v CSS je [zarovnání boxů](css-box-alignment.md).
 
-Tenhle systém layoutu bohužel samostatný záznam na CanIUse nemá. Je to proto, že původně šlo o součást specifikace flexboxu, kde také na tomto webu vlastnosti Box Alignment zůstaly.
+Tenhle systém layoutu bohužel samostatný záznam na CanIUse nemá. Je to proto, že původně šlo o součást specifikace flexboxu, kde také na webu sledujícím podporu v prohlížečích vlastnosti ze specifikace CSS Box Alignment zůstaly.
 
 Najdete je zde jako jednotlivé vlastnosti, když budete hledat text `align-` nebo `justify-`.
 
-Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmínit, že v IE to tak není.
+### Tabulky podpory CSS Box Align v Internet Exploreru {#box-align-tabulka}
 
-### Tabulky podpory CSS Box Align v Internet Exploreru
+Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmínit, že i v tomto případě je Internet Explorer problematický. Opět hlavně v kombinaci s gridem.
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
 |                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*) |
 |-------------------------------------|------------------------------|----------------------------|--------------------------|
-| **Zarovnání položek** (`*-items`)   |  `justify-items`<br>IE: flex, ~~grid~~     | `align-items`<br>IE: flex, ~~grid~~      | `place-items`<br>IE: ~~flex~~, ~~grid~~ |
-| **Zarovnání sebe sama** (`*-self`)  |  `justify-self`<br>IE: ~~flex~~, grid      | `align-self`<br>IE: flex, grid       | `place-self`<br>IE: ~~flex~~, ~~grid~~ |
-| **Distribuce obsahu** (`*-content`) |  `justify-content`<br>IE: flex, ~~grid~~    | `align-content`<br>IE: flex, ~~grid~~    | `place-content`<br>IE: ~~flex~~, ~~grid~~ |
+| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>IE: flex, ~~grid~~     | [`align-items`](css-align-items.md)<br>IE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>IE: ~~flex~~, ~~grid~~ |
+| **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>IE: ~~flex~~, grid      | [`align-self`](css-align-self.md)<br>IE: flex, grid       | [`place-self`](css-place-self.md)<br>IE: ~~flex~~, ~~grid~~ |
+| **Distribuce obsahu** (`*-content`) |  [`justify-content`](css-justify-content.md)<br>IE: flex, ~~grid~~    | [`align-content`](css-align-content.md)<br>IE: flex, ~~grid~~    | [`place-content`](css-place-content.md)<br>IE: ~~flex~~, ~~grid~~ |
 
 </div>
 
@@ -215,3 +222,15 @@ Explorer také nepodporuje novější hodnoty některých vlastností: `baseline
 `align-tracks`, `justify-tracks` a další části [layoutu typu masonry](css-masonry.md) v CSS zatím žádný prohlížeč nepodporuje.
 
 Layouty typu Masonry v CSS zatím tedy sledujte, ale pro praktické nasazení využijte jinou cestu.
+
+## Shrnutí podpory
+
+Jak sami vidíte, o různých problémech systémů rozvržení v CSS v různých prohlížečích se dá popsat hodně papíru. A to jsem leccos vynechal.
+
+Nicméně, důležitý je celkový dojem. Pokusím se to shrnout takto:
+
+- [Flexbox](css-flexbox.md) je víceméně bezproblémový. Při použití ve Exploreru raději nahraďte `flex-basis` za `width` nebo `height`.
+- [Grid](css-grid.md) je v Exploreru problémový, musíte mít [zvláštní znalosti](css-grid-msie.md). V moderních prohlížečích skoro úplně bez potíží.
+- [Vícesloupcový layout](css-multicolumn.md) umí zkomplikovat život menšími chybami, ale je jich dost.
+- [Zarovnání boxů](css-box-alignment.md) je v případě flexboxu skoro bez zádrhelů všude, v případě gridu je to s IE opět složitější.
+
