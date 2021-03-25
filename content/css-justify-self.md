@@ -4,11 +4,11 @@ Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak té�
 
 ![Vlastnost justify-self](../dist/images/original/vdlayout/css-justify-self-schema.png)
 
-Je dobré zmínit, že uvnitř buněk tabulek je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
+Je dobré zmínit, že uvnitř buněk tabulek a ve flexboxu je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
 <!-- AdSnippet -->
 
-U flexboxu můžeme pro zarovnání položek na hlavní ose využít také klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
+U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
 
 Hodnota `auto` u vnějších okrajů má ostatně před touto `justify-self` přednost ve všech systémech rozvržení v CSS.
 
@@ -27,6 +27,10 @@ Následuje několik užitečných vysvětlovacích odrážek:
 - První dvě položky nemají vlastnost `justify-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé šířky prostoru buňky.
 - Poslední položka má nastaveno `justify-self:end`, takže by se měla „scvrknout“ na přirozenou šířku podle obsahu a zarovnat ke konci prostoru buňky, což je zároveň pravá hrana kontejneru.
 - Vyhrává ovšem deklarace `margin-right:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `justify-self:end`.
+
+V dalším CodePenu je vidět, že `justify-self` ve flexboxu opravu nefunguje. Pokouším se tam stylovat poslední položku pomocí `justify-self:end`. A nic.
+
+CodePen: [cdpn.io/e/MWJaVyZ](https://codepen.io/machal/pen/MWJaVyZ?editors=1100)
 
 ## Možné hodnoty zarovnání
 

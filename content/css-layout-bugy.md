@@ -202,7 +202,7 @@ Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmín
 
 |                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*) |
 |-------------------------------------|------------------------------|----------------------------|--------------------------|
-| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>IE: flex, ~~grid~~     | [`align-items`](css-align-items.md)<br>IE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>IE: ~~flex~~, ~~grid~~ |
+| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>IE: ~~flex~~, ~~grid~~     | [`align-items`](css-align-items.md)<br>IE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>IE: ~~flex~~, ~~grid~~ |
 | **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>IE: ~~flex~~, grid      | [`align-self`](css-align-self.md)<br>IE: flex, grid       | [`place-self`](css-place-self.md)<br>IE: ~~flex~~, ~~grid~~ |
 | **Distribuce obsahu** (`*-content`) |  [`justify-content`](css-justify-content.md)<br>IE: flex, ~~grid~~    | [`align-content`](css-align-content.md)<br>IE: flex, ~~grid~~    | [`place-content`](css-place-content.md)<br>IE: ~~flex~~, ~~grid~~ |
 
@@ -210,10 +210,9 @@ Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmín
 
 Jak je vidno, v moderních prohlížečích je to v pořádku.
 
-V případě, že podporujete IE:
+Nepodpora vlastností `justify-items` i `justify-self` v IE je vlastnost, nikoliv bug. Tyto vlastnosti s flexboxem bohužel nelze kombinovat v žádném prohlížeči.
 
-- U flexboxu si dávejte pozor na vlastnost `justify-self`.
-- V případě gridu je to celkově složitější, viz následující [pojednání o tom](css-grid-msie.md).
+V případě, že podporujete IE to je u gridu celkově složitější, viz následující [pojednání o tom](css-grid-msie.md).
 
 Explorer také nepodporuje novější hodnoty některých vlastností: `baseline` a `stretch` vlastností [`align-self`](css-align-self.md) a [`justify-content`](css-justify-content.md) nebo také `space-evenly` u [`justify-content`](css-justify-content.md).
 
