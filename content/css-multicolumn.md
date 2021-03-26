@@ -121,8 +121,15 @@ Vícesloupcový layout má sice z trojice Multi-column, Flexbox, Grid nejméně 
 
 Podpora podstatných vlastností vícesloupcového rozvržení je vynikající. Historicky zde exceloval i Internet Explorer, specifikaci CSS Multi-column Layout naimplementoval v podstatě celou už ve verzi 10.
 
+<figure>
+<img src="../dist/images/original/css-multicol-caniuse.png" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse">
+<figcaption markdown="1">
+*Podpora vícesloupcového layoutu v prohlížečích. Zelená je na místech, které byste možná nečekali. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
+</figcaption>
+</figure>
+
 Moderní prohlížeče si jen hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců, o čemž píšu v příručce k těmto vlastnostem.
 
-Více najdete na CanIUse. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
+Více najdete [v textu o podpoře](css-layout-bugy.md) nových systémů layoutu v prohlížečích.
 
 <!-- AdSnippet -->

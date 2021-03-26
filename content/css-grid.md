@@ -165,7 +165,22 @@ Předně chci zdůraznit, že Grid nenahrazuje [flexbox](css-flexbox.md). Potře
 <blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Podpora CSS Grid na dvou z projektů, o které se starám. <br>Zajímavost: problematické už v žádném případě nejsou starší Explorery (10-), ale starší verze Chrome a Safari. Zdroj: <a href="https://twitter.com/caniuse?ref_src=twsrc%5Etfw">@caniuse</a> a Google Analytics. <a href="https://t.co/yJ2tXmb5mF">pic.twitter.com/yJ2tXmb5mF</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/956447238770909184?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Grid v Internet Exploreru 11 {#ie11}
+## Podpora {#podpora}
+
+Podpora gridu v moderních prohlížečích je výborná, takřka bezchybná.
+
+<figure>
+<img src="../dist/images/original/css-grid-caniuse.png" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
+<figcaption markdown="1">
+*Podpora gridu v prohlížečích. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
+</figcaption>
+</figure>
+
+O podpoře moderních systémů layoutu v prohlížečích píšeme [ve zvláštním textu](css-layout-bugy.md), ale u gridu není v kontextu moderních prohlížečů téměř o čem psát.
+
+Horší je to ve stařičkém prohlížeči od Microsoftu.
+
+### Grid v Internet Exploreru 11 {#ie11}
 
 Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, mohli bychom pokračovat.
 

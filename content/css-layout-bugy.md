@@ -4,6 +4,13 @@
 
 Autorovi téhle myšlenky bychom museli přiznat jistou dávku zdravého skepticismu. Nebo dokonce nemalou životní zkušenost s vývojem webů.
 
+<div class="related web-only" markdown="1">
+- [CSS Flexbox](css-flexbox.md)
+- [CSS Grid](css-grid.md)
+- [CSS Multicol](css-multicolumn.md)
+- [CSS Box Align](css-box-alignment.md)
+</div>
+
 Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Musíme ovšem s úlevou prohlásit, že oproti dřívějšímu stavu je přítomnost chyb spojených s flexboxem nebo gridem v prohlížečích minimální.
 
 Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
@@ -35,7 +42,7 @@ Dnes už tedy můžete psát flexboxový kód, aniž byste se museli bát. Stač
 
 ### Stačí se vyhnout {#vyhnout}
 
-Když jsem se vývojářů ptal na jejich mentální zkratky, Daniel Střelec napsal jednou, se kterou se ztotožňuji:
+Když jsem se vývojářů ptal na jejich mentální zkratky, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
 
 > U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default) a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
 
@@ -200,7 +207,7 @@ Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmín
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
-|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*) |
+|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*`) |
 |-------------------------------------|------------------------------|----------------------------|--------------------------|
 | **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>IE: ~~flex~~, ~~grid~~     | [`align-items`](css-align-items.md)<br>IE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>IE: ~~flex~~, ~~grid~~ |
 | **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>IE: ~~flex~~, grid      | [`align-self`](css-align-self.md)<br>IE: flex, grid       | [`place-self`](css-place-self.md)<br>IE: ~~flex~~, ~~grid~~ |
@@ -233,3 +240,10 @@ Nicméně, důležitý je celkový dojem. Pokusím se to shrnout takto:
 - [Vícesloupcový layout](css-multicolumn.md) umí zkomplikovat život menšími chybami, ale je jich dost.
 - [Zarovnání boxů](css-box-alignment.md) je v případě flexboxu skoro bez zádrhelů všude, v případě gridu je to s IE opět složitější.
 
+<div class="web-only" markdown="1">
+
+A to je vše. Děkuji vám za pozornost.
+
+Setkali jste se někdy s jinou chybou v nových systémech layoutu v CSS? Napište to do komentářů.
+
+</div>

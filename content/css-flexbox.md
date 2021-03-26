@@ -214,6 +214,15 @@ Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě 
 
 Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s podporou přišel už Internet Explorer 10! Grafy na CanIUse jsou tedy pěkně zelené. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
-Konkrétní podporu je ale potřeba rozpadnout podle jednotlivých vlastností, uvedených výše v tabulce. Tam je situace už různorodější. Bojem s více či méně příjemnými chybami je provázena implementace v IE, protože jde o nejstarší dnes sloužící prohlížeče. Detailně se tím zabývá Philip Walton v repozitáři Flexbugs. [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
+<figure>
+<img src="../dist/images/original/css-flexbox-caniuse.png" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
+<figcaption markdown="1">
+*Jak je to krásně zelené! Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
+</figcaption>
+</figure>
+
+Konkrétní podporu je ale potřeba rozpadnout podle jednotlivých vlastností, uvedených výše v tabulce. Tam je situace už různorodější. Bojem s více či méně příjemnými chybami je provázena implementace v IE, protože jde o nejstarší dnes sloužící prohlížeče.
+
+Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích.
 
 <!-- AdSnippet -->
