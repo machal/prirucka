@@ -141,7 +141,7 @@ Na druhou stranu – jde jen o menší podmnožinu současné šíře toho čemu
 
 Máme zde sice Autoprefixer, který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 
-Prostě to s gridem v IE je složité a já se vůbec nedivím lidem, kteří říkají „skoro na všechno mě stačí flexbox“, i když pak flexbox používají pro situace, kde by byl [výhodnější grid](css-grid-versus.md).
+Prostě to s gridem v IE je složité a já se vůbec nedivím lidem, kteří říkají „skoro na všechno mě stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
 
 Jo, to když Explorer podporovat nemusíte, to je jiná písnička…
 
