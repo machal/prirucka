@@ -84,7 +84,7 @@ CodePen: [cdpn.io/e/vYyKaEp](https://codepen.io/machal/pen/vYyKaEp?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Explorery ve verzích 10 a 11 tuto vlastnost implementovaly jako `-ms-flexbox`, ale s pomocí Autoprefixeru není nutné na toto myslet.
+Internet Explorery ve verzích 10 a 11 tuto vlastnost implementovaly jako `-ms-flexbox`, ale s pomocí [Autoprefixeru](autoprefixer.md) není nutné na toto myslet.
 
 Všechny informace o podpoře jsou na [CanIUse](https://caniuse.com/mdn-css_properties_display_flex).
 

@@ -177,7 +177,7 @@ Obsahuje deklaraci prohlížečů, které na projektu podporuji:
 
 Tady říkáme, že chceme podporovat všechny [prohlížeče](prohlizece.md), které mají více než jednoprocentní podíl na globálním trhu a zároveň nás zajímají poslední čtyři verze. Tuhle deklaraci tam mám kvůli [prohlížeči od Seznam.cz](https://www.vzhurudolu.cz/podcast/120-podcast-seznam-prohlizec), který má v době psaní textu právě toto zpoždění oproti Chrome, ze kterého vychází.
 
-K čemu je to dobré? Z browserlistu vychází nástroje pro automatické uzpůsobování kódu starším prohlížečům. V CSS je to Autoprefixer, v JS pak Babel.
+K čemu je to dobré? Z browserlistu vychází nástroje pro automatické uzpůsobování kódu starším prohlížečům. V CSS je to [Autoprefixer](autoprefixer.md), v JS pak Babel.
 
 Více informací je na [github.com/browserslist/browserslist](https://github.com/browserslist/browserslist).
 

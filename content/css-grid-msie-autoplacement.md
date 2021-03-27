@@ -41,7 +41,7 @@ Prvky se nám pěkně rozmístí. Jenže smůla, tohle nebude fungovat v Intern
 </figcaption>
 </figure>
 
-Existuje záchrana – [Autoprefixer](https://github.com/postcss/autoprefixer). Pro MSIE 10 a 11, ve kterých nějaká verze CSS Gridu funguje, nám přidá pseudotřídy:
+Existuje záchrana – [Autoprefixer](autoprefixer.md). Pro MSIE 10 a 11, ve kterých nějaká verze CSS Gridu funguje, nám přidá pseudotřídy:
 
 ```css
 .container > *:nth-child(1) {

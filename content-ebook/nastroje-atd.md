@@ -14,7 +14,7 @@ Jsou to tabulky s informací o tom, které prohlížeče vaši vlastnost podporu
 
 ## Should I Prefix
 
-Musím u konkrétní CSS3 vlastnosti použít prefixované verze, nebo nemusím? Může se hodit, ale obecně je lepším řešením Autoprefixer zmíněný v předchozích částech webu. [shouldiprefix.com](http://shouldiprefix.com)
+Musím u konkrétní CSS3 vlastnosti použít prefixované verze, nebo nemusím? Může se hodit, ale obecně je lepším řešením [Autoprefixer](autoprefixer.md) zmíněný v předchozích částech webu. [shouldiprefix.com](http://shouldiprefix.com)
 
 ## Modernizr
 

@@ -100,4 +100,4 @@ CodePen: [cdpn.io/e/VoKroo](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
 Vlastnost `grid-auto-flow` a její hodnoty jsou plně podporovány ve všech prohlížečích s jedinou výjimkou – Internet Explorerem.
 
-V IE nám bohužel nepomůže v případě této vlastnosti nepomůže ani Autoprefixer nebo jiný nástroj. Můžeme na něj ale vyzrát vhodným napsáním kódu tak, abychom měli pod kontrolou desktopové zobrazení, které Explorer používá, a prohlížečích a vlastnosti `grid-auto-flow` nechali jen menší displeje.
+V IE nám bohužel nepomůže v případě této vlastnosti nepomůže ani [Autoprefixer](autoprefixer.md) nebo jiný nástroj. Můžeme na něj ale vyzrát vhodným napsáním kódu tak, abychom měli pod kontrolou desktopové zobrazení, které Explorer používá, a prohlížečích a vlastnosti `grid-auto-flow` nechali jen menší displeje.

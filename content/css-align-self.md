@@ -93,7 +93,7 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro Grid layout. V Internet Exploreru 11 je ovšem nutné použít prefix `-ms-align-self`, což ale doplní Autoprefixer.
+Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro Grid layout. V Internet Exploreru 11 je ovšem nutné použít prefix `-ms-align-self`, což ale doplní [Autoprefixer](autoprefixer.md).
 
 Více na [caniuse.com/align-self](https://caniuse.com/#search=align-self).
 

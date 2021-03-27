@@ -139,7 +139,7 @@ Je potřeba říct, že i tenhle prohlížeč grid podporuje a nepodporuje toho 
 
 Na druhou stranu – jde jen o menší podmnožinu současné šíře toho čemu říkáme CSS Grid Layout, navíc často jinak implementovanou.
 
-Máme zde sice Autoprefixer, který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
+Máme zde sice [Autoprefixer](autoprefixer.md), který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 
 Prostě to s gridem v IE je složité a já se vůbec nedivím lidem, kteří říkají „skoro na všechno mě stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
 

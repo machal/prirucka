@@ -79,7 +79,7 @@ Tyhle cool vlastnosti jsou ovšem dostupné jen v nativní podpoře. PostCSS plu
 
 ### Přidávání prefixů
 
-Předpokládám, že [Autoprefixer](https://github.com/postcss/autoprefixer) znáte. Na přidávání [prohlížečových prefixů](prefix.md) nic lepšího není. 
+Předpokládám, že [Autoprefixer](autoprefixer.md) znáte. Na přidávání [prohlížečových prefixů](prefix.md) nic lepšího není. 
 
 Konfiguraci podporovaných prohlížečů je i kvůli dalším nástrojům nejlepší dělat přímo v `package.json`:
 

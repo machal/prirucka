@@ -52,6 +52,6 @@ Nové vlastnosti teď výrobci prohlížečů přidávají pod „vlaječky“ (
 Jak si s prefixy poradit? Autoprefixerem
 ----------------------------------------
 
-Autoprefixer je nástroj, kterému řeknete jaké prohlížeče chcete podporovat. On se pak podívá do vašeho CSS kódu a doplní prefixy. Nejlépe se používá automaticky, v kombinaci [s Gruntem](grunt.md) nebo podobným nástrojem. [github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
+[Autoprefixer](autoprefixer.md) je nástroj, kterému řeknete jaké prohlížeče chcete podporovat. On se pak podívá do vašeho CSS kódu a doplní prefixy. Nejlépe se používá automaticky, v kombinaci [s Gruntem](grunt.md) nebo podobným nástrojem. [github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
 
 Alternativně je možné prefixy nechat doplňovat editorem kódu nebo CSS preprocesorem. To je ale postrádá kouzlo Autoprefixeru, který sám aktualizuje databázi prefixů podle jejich aktuální podpory v prohlížečích.

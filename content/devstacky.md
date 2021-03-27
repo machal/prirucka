@@ -12,7 +12,7 @@ Nejdříve ze všeho vrhneme na nástrojářské základny postavené na nejroz�
 
 ### DS Gulp
 
-Jednoduchý ukázkový devstack od [Dana Střelce](https://www.danielstrelec.cz/), který pokrývá: [Browsersync](browsersync.md), CSS s Autoprefixerem a CSSnano, JS s Uglify a základní optimalizaci obrázků s ImageMin a hlídání změn v souborech. [danielstrelec/ds-gulp](https://github.com/danielstrelec/ds-gulp)
+Jednoduchý ukázkový devstack od [Dana Střelce](https://www.danielstrelec.cz/), který pokrývá: [Browsersync](browsersync.md), CSS s [Autoprefixerem](autoprefixer.md) a CSSnano, JS s Uglify a základní optimalizaci obrázků s ImageMin a hlídání změn v souborech. [danielstrelec/ds-gulp](https://github.com/danielstrelec/ds-gulp)
 
 ### Polaroid example
 

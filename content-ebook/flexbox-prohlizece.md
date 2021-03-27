@@ -4,7 +4,7 @@ Není špatná. V době psaní článku je to v ČR 92–95 % a s pomocí rozumn
 
 ## Tři syntaxe v moderních prohlížečích
 
-Raději rovnou píšu, že plnou podporu v moderních prohlížečích vám zajistí dobře nakonfigurovaný Autoprefixer, o kterém byla řeč v úvodu ebooku. Dále proto čtěte, jen pokud vás zajímají detaily.
+Raději rovnou píšu, že plnou podporu v moderních prohlížečích vám zajistí dobře nakonfigurovaný [Autoprefixer](autoprefixer.md), o kterém byla řeč v úvodu ebooku. Dále proto čtěte, jen pokud vás zajímají detaily.
 
 V moderních prohlížečích má flexbox tři verze syntaxe.
 

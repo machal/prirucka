@@ -95,7 +95,7 @@ Představivost mřížky je zde zásadní. A úplně nejlepší je, když mří�
 
 Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z IE jedenácté verze. Pak je potřeba zvažovat, zda je možné Grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát.
 
-Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. I s pomocí nástroje Autoprefixer, který pro ně vygeneruje náhradní kód, vám tam budou fungovat spíše jen základní vlastnosti.
+Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. I s pomocí nástroje [Autoprefixer](autoprefixer.md), který pro ně vygeneruje náhradní kód, vám tam budou fungovat spíše jen základní vlastnosti.
 
 Pokud nutně potřebujete obsloužit i uživatele těchto prohlížečů a není možné zajistit fallback k řešení v Gridu, pak může flexbox vaše problémy eliminovat.
 

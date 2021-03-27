@@ -269,7 +269,7 @@ Další doporučení:
 
 ### 4.4) Kód píšeme podle specifikace, hacky automatizujeme {#4-hacky-automatizujeme}
 
-Kód píšeme vždy podle specifikací W3.org. Části, které potřebujeme pro ošetření specifických prohlížečů, automatizujeme. Například [vendor prefixy](prefix.md) přidáváme Autoprefixerem.
+Kód píšeme vždy podle specifikací W3.org. Části, které potřebujeme pro ošetření specifických prohlížečů, automatizujeme. Například [vendor prefixy](prefix.md) přidáváme [Autoprefixerem](autoprefixer.md).
 
 Další doporučení:
 

@@ -184,7 +184,7 @@ Horší je to ve stařičkém prohlížeči od Microsoftu.
 
 Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, mohli bychom pokračovat.
 
-Naštěstí je tady Autoprefixer a dnes už je možné svěřit [řešení Gridu pro IE](css-grid-msie.md) jemu.
+Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení Gridu pro IE](css-grid-msie.md) jemu.
 
 <div class="related" markdown="1">
 - [CSS Grid v IE: Oblasti a mezery](css-grid-msie.md)

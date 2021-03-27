@@ -285,7 +285,7 @@ Celé demo si můžete projít na [github.com/machal/webpack-demo](https://githu
 
 <!-- AdSnippet -->
 
-Dále bychom mohli zapracovat například prohnání výsledného CSS Autoprefixerem, přidání [HMR (Hot Module Reloadingu)](#pojmy-hot-module-replacement) – automatického obnovování stylů v prohlížeči, detekci produkčního a vývojového prostředí a spoustu dalších věcí.
+Dále bychom mohli zapracovat například prohnání výsledného CSS [Autoprefixerem](autoprefixer.md), přidání [HMR (Hot Module Reloadingu)](#pojmy-hot-module-replacement) – automatického obnovování stylů v prohlížeči, detekci produkčního a vývojového prostředí a spoustu dalších věcí.
 
 Pojďme si teď ale zopakovat pojmy, kterými jsem vás během popisu tutoriálu zasypal.
 
