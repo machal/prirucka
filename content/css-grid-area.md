@@ -76,3 +76,7 @@ Umísti do třetího sloupce a roztáhni se do všech řádků (od prvního (`1`
 ```
 
 Na různé další možnosti hodnot, včetně demíček na CodePenu, se podívejte do příručky ke zkratkám [`grid-column` a `grid-row`](css-grid-row-column.md). 
+
+## Přístupnost a pozor na změnu pořadí {#pristupnost}
+
+Pomocí vlastnosti `grid-area` můžete zcela odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to, dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).

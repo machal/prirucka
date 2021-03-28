@@ -96,6 +96,12 @@ Vysvětleme:
 
 CodePen: [cdpn.io/e/VoKroo](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
+## Přístupnost a pozor na změnu pořadí {#pristupnost}
+
+Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to! Dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Snažte se proto tuto deklaraci používat jen pro prvky, u kterých na pořadí zase tak moc nezáleží.
+
+Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+
 ## Podpora v prohlížečích {#podpora}
 
 Vlastnost `grid-auto-flow` a její hodnoty jsou plně podporovány ve všech prohlížečích s jedinou výjimkou – Internet Explorerem.

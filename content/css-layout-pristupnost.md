@@ -1,0 +1,171 @@
+# Přístupnost a CSS layout (grid nebo flexbox): pozor na vizuální pořadí
+
+Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí. Jen zdánlivě se týká hendikepovaných minorit.
+
+Velmi postatné je, že přístupný dokument není až tak nesnadné vytvořit. V nových CSS layoutech kromě „přístupnostních klasik“, jako je využití správných sémantických elementů, vstupuje do hry ještě poněkud kontroverzní možnost změny pořadí.
+
+## Přístupnost a pořadí ve flexboxu nebo gridu {#poradi}
+
+Musím vás upozornit na to, že jakmile odlišíte pořadí zobrazování od pořadí v kódu, může se stát, že při ovládání z klávesnice (tabulátorem) nebo použítí [s odečítači pro zrakově hendikepované](testovani-odecitace.md) přestane pořadí dávat smysl.
+
+Také proto je ve specifikaci obsaženo toto důrazné varování:
+
+> Autoři musí použít změnu pořadí pouze pro vizuální, nikoli logické přeskupování obsahu.
+
+Logické pořadí si můžete představit v těchto kontextech konzumace stránky:
+
+- _Roboti_  
+Například stroje vyhledávačů jako je Google. Roboti postupují podle pořadí v HTML nebo DOM.
+- _Sekvenční navigace stránkou_  
+Tento typ procházení provádějí pomocí odečítačů obrazovky slabozrací nebo pomocí tabulátoru občas i jiní uživatelé.
+- _Hlasově a jinými médii_  
+Přeskupení vizuálního pořadí nezmění řazení v nevizuálních médiích, například v řeči. Není to úplně běžné, ale stránku můžete stylovat také pro automtaické čtení pomocí podmínky `@media speech`.
+
+Může se tedy stát, že někdo, kdo se naviguje pomocí klávesnice, bude procházet odkazy na vašem webu a najednou odskočí z dolní do horní části dokumentu, protože tam je další položka logického pořadí.
+
+Ve specifikaci de dále píše:
+
+> CSS grid dává autorům velkou moc přeskupit dokument. Nejedná se však o náhradu za správné uspořádání zdroje dokumentu.
+
+Něco vám řeknu. Specifikace má pravdu.
+
+Pokud chcete pro přístupnost něco udělat, rozhodně dbejte na to, aby pořadí v kódu dávalo smysl, pokud byste stránku četli bez stylů.
+
+## Dotčené vlastnosti {#vlastnosti}
+
+Problém se týká všech CSS vlastností, které mohou v nových systémech rozvržení ovlivnit vizuální pořadí:
+
+- [Vlastnost `order`](css-order.md), která změní způsob automatického umisťování položek.
+- [Deklarace `grid-auto-flow: dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak než jsou uvedeny v DOM.
+- [Vlastnost `grid-area`](css-grid-area.md), která umístí položek do konkrétního místa mřížky a opět nerespektuje pořadí ve zdroji.
+
+Možností, jak přeskupit obsah je samozřejmě více a vztáhnout to můžeme i na starý dobrý `float`, takže tento text berte jako obecné varování.
+
+## Příklad {#priklad}
+
+Pojďme si to ukázat na jednoduchém demu postaveném na vlastnosti `order` a [flexboxu](css-flexbox.md) se čtyřmi položkami:
+
+```html
+<div class="container">
+  <a class="item item--1" href="#">
+    Item 1
+  </a>
+  <a class="item item--2" href="#">
+    Item 2
+  </a>
+  <a class="item item--3" href="#">
+    Item 3
+  </a>  
+  <a class="item item--4" href="#">
+    Item 4
+  </a>
+</div>
+```
+
+Jak vidíte, tentokrát jsem vyměnil DIVy za odkazy a to proto, abychom mohli obsahem navigovat pomocí tabulátoru.
+
+Kontejner (`.container`) je obyčejný flexbox, ale za ukázání kódu stojí předpis pro třetí položku:
+
+```css
+.item--3 {
+  order: -1;
+}
+```
+
+Původní pořadí (1, 2, 3, 4) se tedy v prohlížeči změní na 3, 1, 2, 4.
+
+Jenže navigační pořadí je prohlížečem stále bráno podle HTML. Však to uvidíte ve videu:
+
+<div class="rwd-media rwd-media--160-45">
+  <video muted controls width="1600" height="246">
+    <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1601351952/vzhurudolu-video/css-order-after-tabindex_zs68wq.mp4"
+      type="video/mp4">
+  </video>
+</div>
+
+Případně si to zkuste naživo v CodePenu: [cdpn.io/e/JjXxRoJ](https://codepen.io/machal/pen/JjXxRoJ).
+
+Blbý, že?
+
+## Zachránce tabindex? Leda kulový {#pristupnost-tabindex}
+
+Někteří z vás si určitě řekli, že situaci může přeci zachránit vlastnost `tabindex`, HTML atribut, který nastaví pořadí navigace pomocí tabulátorů:
+
+```html
+<div class="container">
+  <a class="item item--1" href="#" tabindex="2">
+    Item 1
+  </a>
+  <a class="item item--2" href="#" tabindex="3">
+    Item 2
+  </a>
+  <a class="item item--3" href="#" tabindex="1">
+    Item 3
+  </a>  
+  <a class="item item--4" href="#" tabindex="4">
+    Item 4
+  </a>
+</div>
+```
+
+V prohlížeči to po přidání atributů `tabindex` vypadá nadějně:
+
+<div class="rwd-media rwd-media--160-45">
+  <video muted controls width="1600" height="246">
+    <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1601351951/vzhurudolu-video/css-order-before_iwltuj.mp4"
+      type="video/mp4">
+  </video>
+</div>
+
+Pořadí navigace je nyní správné, protože odpovídá logickému uspořádání položek na obrazovce:
+
+<div class="rwd-scrollable f-6"  markdown="1">
+
+|  Typ řazení          | Pořadí     |
+|:---------------------|:-----------|
+| HTML, DOM            | 1, 2, 3, 4 |
+| Vizuální             | 3, 1, 2, 4 |
+| Navigační, logické   | 1, 2, 3, 4 |
+
+</div>
+
+Máme to vyřešeno? Nejspíš bohužel ne.
+
+Otázka, totiž zní – jak moc je `tabindex` pro tyto případy v praxi použitelný?
+
+<!-- AdSnippet -->
+
+Atribut `tabindex` totiž nastavuje pořadí pro *celý* dokument, takže jakmile bychom takto zapsali samostatnou komponentu a tu pak vkládali na různá místa DOMu, napácháme s `tabindex` více škody než užitku.
+
+Na druhou stranu – neumím si představit, že bychom kvůli jedné komponentě s `order` natvrdo měnili pořadí `tabindex` pro celou stránku.
+
+Takže z mého pohledu je `tabindex` pro opravu tohoto problému použitelný jen velmi omezeně.
+
+Ale zkusit si to v CodePenu klidně můžete:
+
+CodePen: [cdpn.io/e/PoNVgyv](https://codepen.io/machal/pen/PoNVgyv)
+
+## Pomůže aria-flowto? {#aria}
+
+Léonie Watson v článku „Flexbox & the keyboard navigation disconnect“ (odkaz níže) už před lety upozorňovala na vlastnost `aria-flowto`, která v rámci specifikace [WAI-ARIA](wai-aria.md) umožňuje právě lokální změnu navigačního pořadí. Je to prostě takový `tabindex` pro komponenty.
+
+Hned jsem to vyzkoušel, ale zdá se, že stále platí to, co píše Léonie v článku z roku 2016: Tahle vlastnost má extrémně špatnou podporu v prohlížečích. Alespoň něco se v prohlížečích nemění.  
+
+CodePen: [cdnp.io/e/zYqeXeE](https://codepen.io/machal/pen/zYqeXeE)
+
+## Pomůže nám vůbec něco? Ani ne {#neco}
+
+Odlišení pořadí navigačního od vizuálního je možné ve flexboxu a teď i Gridu mnoha různými způsoby, tedy nejen vlastností `order`.
+
+Bohužel se to zdá jako aktuálně nevyřešitelný problém, protože jej myslím nijak konkrétně neřeší specifikace, natož pak prohlížeče.
+
+Pošlu vás na další zdroje, ale nic veselého se tam nedozvíte:
+
+- Varování ve specifikaci flexboxu. [w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/#order-property)
+- Totéž ve specifikaci CSS Gridu. [drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/#order-accessibility)
+- Adrian Roselli: „Source Order Matters“. [adrianroselli.com](https://adrianroselli.com/2015/09/source-order-matters.html)
+- Manuel Matuzovic: „The Dark Side of the Grid (Part 2)“. [matuzo.at](https://www.matuzo.at/blog/the-dark-side-of-the-grid-part-2/)
+- Rachel Andrew: „Grid, content re-ordering and accessibility“. [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility)
+- Text „Flexbox & the keyboard navigation disconnect“. [tink.uk](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
+
+Komunitu, tedy vývojáře, lidi kolem webových specifikací a prohlížečů, zde ještě čeká dost práce. Jednoho by to v roce 2020 překvapilo.
