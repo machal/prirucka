@@ -1,12 +1,14 @@
-# Element Queries: proč je chceme a proč je jen tak nedostaneme
+# Element/Container Queries: Media Queries na rodiče
 
-[Element Queries](http://elementqueries.com/) (nebo [Container Queries](https://alistapart.com/article/container-queries-once-more-unto-the-breach)) jsou vlastně stejné typy podmínek jako [Media Queries](css3-media-queries.md). Jen se neptáte na parametry okna prohlížeče, ale na parametry samotného elementu. 
+[Element Queries](http://elementqueries.com/) (nebo [Container Queries](https://alistapart.com/article/container-queries-once-more-unto-the-breach)) jsou vlastně stejné typy podmínek jako [Media Queries](css3-media-queries.md). Jen se neptáte na parametry okna prohlížeče, ale na parametry samotného elementu.
 
-Je to věc, kterou ve webdesignu opravdu hodně chci. A věřte mi, že vy taky. 
-
-Zatím je Element Queries možné jen emulovat javascriptovými knihovnami. A bohužel není jisté, že se standardu, natož nějaké nativní implementace v dohledné době dočkáme. 
+Je to věc, kterou ve webdesignu opravdu hodně chci. A věřte mi, že vy taky.
 
 <!-- AdSnippet -->
+
+Zatím je Element Queries možné jen emulovat javascriptovými knihovnami. A bohužel není jisté, že se standardu, natož nějaké nativní implementace v dohledné době dočkáme.
+
+→ *Aktualizace v dubnu 2021: [Container Queries jsou teď experimentálně v Chrome Canary](https://www.vzhurudolu.cz/blog/194-container-queries-chrome-91). Zbylou část textu zde ale zatím nechávám, protože nyní máme jen experimentální implementaci.*
 
 Pokud design udržujete v nějakém [systému](pattern-lab.md), asi budete souhlasit, že parametry samotné komponenty jsou pro změnu layoutu nebo chování daleko důležitější než parametry okna prohlížeče. Myslím, že bychom tím Media Queries mohli skoro úplně nahradit.
 
