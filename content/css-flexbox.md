@@ -70,6 +70,7 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 | [`flex-grow`](css-flex-grow.md) <br> [![Vlastnost flex-grow](../dist/images/small/vdlayout/css-flex-grow-schema.png)](css-flex-grow.md)       | Jak moc může položka růst. Výchozí je `0`. <br>Např. `flex-grow: 1` – bere si podíl v hodnotě `1` z volného prostoru. |
 | [`flex-shrink`](css-flex-shrink.md) <br> [![Vlastnost flex-shrink](../dist/images/small/vdlayout/css-flex-shrink-schema.png)](css-flex-shrink.md)       | Faktor smršťování položky. Výchozí je `1`. <br>Např. `flex-shrink: 0` – položka se nesmršťuje. |
 | [`flex-basis`](css-flex-basis.md) <br> [![Vlastnost flex-basis](../dist/images/small/vdlayout/css-flex-basis-schema.png)](css-flex-basis.md)       | Výchozí velikost položky. Výchozí je `auto`, tzn. podle `width` nebo `height`. <br>Např. `flex-basis: 0` – nehledí se na rozměr obsahu ani `width` či `height`. |
+| [`flex`](css-flex.md) <br> [![Vlastnost flex-basis](../dist/images/small/vdlayout/css-flex-schema.png)](css-flex.md)       | Zkratka pro `flex-grow`, `flex-shrink` a `flex-basis`, plus speciální hodnoty. <br>Např. `flex: auto` – roste, smršťuje se a rozměr je nastavený na `auto`. |
 
 </div>
 
@@ -84,7 +85,6 @@ Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude za
 
 | Vlastnost                               | Co dělá?  |
 |-----------------------------------------|-----------|
-
 | [`align-self`](css-align-self.md) <br> [![Vlastnost align-self](../dist/images/small/vdlayout/css-align-self-schema.png?2)](css-align-self.md)   | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-self: end` zarovná položku ke spodní hraně. |
 | [`place-self`](css-place-self.md)  <br> [![Vlastnost place-self](../dist/images/small/vdlayout/css-place-self-schema.png)](css-place-self.md)  | Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. `place-self: end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
 
