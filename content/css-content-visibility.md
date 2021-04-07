@@ -2,7 +2,7 @@
 
 Už víme, že cílem CSS containmentu (a [vlastnosti `contain`](css-contain.md)) je umožnit vylepšení výkonu prohlížeče poskytnutím předvídatelné izolace části DOMu od zbytku stránky.
 
-Vlastnost `content-visibility` je na tom postavená a vývojáři zjednodušuje práci a nenutí ho chápat CSS containment do detailů.
+Vlastnost `content-visibility` je na tom postavená. Vývojářům zjednodušuje práci a nenutí je chápat CSS containment do detailů.
 
 Na rozdíl od vlastnosti `contain` umožňuje určit, zda prohlížeče vůbec vykreslí obsah dotčeného prvku. Její použití jim tak dovolí při počítání renderingu přeskočit náročné [fáze *layout* a *paint*](css-contain.md#typy).
 
@@ -24,7 +24,7 @@ Je to víceméně jako [lazy loading](lazy-loading.md) pro vykreslení velkých 
 
 Výchozí hodnota `visible` nás zase tak moc nezajímá. Pojďme si však něco říct o těch dalších dvou.
 
-Dobře, prozradím to – nejzajímavější je hodnota `auto`, ale nejprve něco k té hodnotě zbývající.
+Dobře, prozradím to – nejzajímavější je hodnota `auto`, ale nejprve něco k třetí hodnotě, která určitý potenciál má taky.
 
 ## Hodnota `hidden` {#hodnota-hidden}
 
