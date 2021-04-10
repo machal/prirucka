@@ -72,7 +72,10 @@ Je možné, že i v době, kdy toto čtete, budou Container Queries schované za
 2. Jděte do vlaječkového nastavení: `chrome://flags`.
 3. Povolte možnost „Enable CSS Container Queries”.
 
-## Náše komponenta v Container Queries
+Přidávám odkaz na draft specifikace podmínky `@container` od 
+Miriam Suzanne na Githubu. [vrdl.in/contdraft](https://github.com/w3c/csswg-drafts/issues/5796)
+
+## Naše komponenta v Container Queries
 
 Poďme si to poskládat dohromady na konkrétním příkladu, našeho „Media Objectu“:
 
