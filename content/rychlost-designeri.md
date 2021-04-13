@@ -77,6 +77,12 @@ Měření a „optimalizace“ se nemá dělat jednorázově. Musíte to měřit
 
 [Rychlost načítání](rychlost-nacteni.md) je brána jako technická metrika. Ano, může být. Jenže rozhodnutí designérů, marketérů a majitelů webů na ni mohou mít ohromný vliv. 
 
+<div class="related" markdown="1">
+- [Jak zrychlit web](jak-zrychlit-web.md)
+- [Proč řešit rychlost](rychlost-nacitani-proc.md)
+- [Metriky rychlosti](metriky-rychlosti.md)
+</div>
+
 Proto je dobré přijmout něco jako „kulturu rychlosti“ – zvažování dopadů vašich rozhodnutí právě na rychlost načítání.
 
 ### 1. Myslete na rychlost už v začátku projektu {#zacatek}

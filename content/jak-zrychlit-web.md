@@ -2,6 +2,11 @@
 
 V květnu letošního roku proběhne ve vyhledávání Googlu aktualizace zvaná [Page Experience](https://developers.google.com/search/docs/guides/page-experience), kde mají nový význam ukazatele uživatelského prožitku, včetně metrik rychlosti webu zvaných [Core Web Vitals](web-vitals.md).
 
+<div class="related" markdown="1">
+- [Mýty o rychlosti](rychlost-myty.md)
+- [Téma „Rychlost webů“](/rychlost-nacitani)
+</div>
+
 Podle všech vyjádření z Googlu, které jsem měl možnost číst, nepůjde o velký revoluční posun a pokud nemáte obzvlášť pomalý web, asi se nemusíte bát.
 
 V každém případě se ale mít rychlý web vyplatí. Důvody jsem kdysi sepisoval [na blogu](rychlost-nacitani-proc.md), ale detailněji také [na PageSpeed.cz](https://pagespeed.cz/blog/proc-mit-rychly-web). Kromě možných výhod ve vyhledávání k nim patří vliv na obchodní výkonnost webu, včetně konverzního poměru.

@@ -83,6 +83,12 @@ Jeden nedávný průzkum, kde WordPress „vyšel“ jako „nejpomalejší plat
 
 Ano, za pomalé weby nemůže WordPress, ale vývojáři – nebo častěji amatérští správci – konkrétních webů. A ano, nejčastěji se to pokazí bezhlavou instalací všech možných pluginů.
 
+<div class="related" markdown="1">
+- [Jak zrychlit web](jak-zrychlit-web.md)
+- [Proč řešit rychlost](rychlost-nacitani-proc.md)
+- [Metriky rychlosti](metriky-rychlosti.md)
+</div>
+
 Mluvím jen o WordPressu, ale vztahuje se to na všechny platformy, jejichž frontendové a backendové nastavení mají v moci vývojáři konkrétních webů.
 
 Srovnání rychlosti webů běžících na jednotlivých CMS [dělali v Reshoper](https://www.reshoper.cz/datablog/studie-jak-rychle-jsou-ceske-e-shopy/), jenže opět platí, že to spíše vypovídá něco o daných webech než o platformách. Mimochodem, „vyhrály“ to e-shopy běžící na Shoptetu. Jenže jak už jsem naznačil – může to říkat i spoustu jiných věcí, než že právě tenhle redakční systém je dobrou volbou pro vytvoření rychlého e-shopu.
