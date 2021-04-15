@@ -198,7 +198,7 @@ Google to ale začal více hlídat a [od roku 2019](https://webmasters.googleblo
 
 Pokud z nějaké důvodu nemůžete vložit datové úryvky přímo do HTML, je možné využít dynamického vložení. Existují dva způsoby:
 
-1. Google Tag Manager – pomocí funkce „Custom HTML“ vložíte strukturovaná data. [Více informací](https://developers.google.com/search/docs/guides/generate-structured-data-with-javascript#use-google-tag-manager).
+1. [Google Tag Manager](google-tag-manager.md) – pomocí funkce „Custom HTML“ vložíte strukturovaná data. [Více informací](https://developers.google.com/search/docs/guides/generate-structured-data-with-javascript#use-google-tag-manager).
 2. Vložení vlastním JavaScriptem – stáhnete data a dynamicky je vložíte do značky `<script>` v DOMu. [Více informací](https://developers.google.com/search/docs/guides/generate-structured-data-with-javascript#custom-javascript).
 
 Zatím jsem to nikde nezkoušel, ale je třeba si uvědomit, že zpracování JavaScriptu na straně uživatele bude vždy z principu pomalé, takže bych výrazně preferoval umístění dat do HTML už na serveru.

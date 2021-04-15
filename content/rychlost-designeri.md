@@ -151,7 +151,7 @@ I vkládané objekty je možné vývojářsky ošetřit: Přepsáním vkládací
 
 ### Měřící a A/B testovací služby: pokud je zrovna nepoužíváte, vypínejte je  {#testovaci-sluzby}
 
-Služby jako HotJar, Optimizely, Google Tag Manager dokáží v rukou netechnického uživatele napáchat velké škody na rychlosti načítání.
+Služby jako HotJar, Optimizely, [Google Tag Manager](google-tag-manager.md) dokáží v rukou netechnického uživatele napáchat velké škody na rychlosti načítání.
 
 Tyto skripty mají dva negativní dopady:
 

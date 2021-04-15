@@ -318,10 +318,10 @@ Pokud není řečeno jinak, autorem všech textů Příručky je Martin Michále
 
 ### Externí autoři
 
-Toto platí jak pro příručku, tak pro blog: 
+Toto platí jak pro příručku, tak pro blog:
 
 - Do [této složky na Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/aac47b2dab0cb485cf86478fe48483fe) vložit obrázek autora, výřez jen s hlavou.
-- Do redakčního systému je potřeba vložit jméno autora, odkaz na jeho web a obrázek z Cloudinary.
+- Do redakčního systému je potřeba vložit jméno autora, odkaz na jeho web (`[Marek Čevelíček](https://www.lqd.cz/nas-tym/marek-cevelicek)`) a obrázek z Cloudinary.
 
 Ukázky:
 

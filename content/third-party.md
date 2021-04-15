@@ -24,7 +24,7 @@ Než ale začneme, pojďme si nadefinovat, o čem to tady mluvím a jaký probl�
 Když mluvíme o komponentách třetích stran, myslíme zpravidla tyto čtyři jejich hlavní kategorie:
 
 1. _Analytika_  
-[Google Analytics](google-analytics-vyvojari.md), Google Tag Manager… obvykle nepředstavují velký problém.
+[Google Analytics](google-analytics-vyvojari.md), [Google Tag Manager](google-tag-manager.md)… obvykle nepředstavují velký problém.
 2. _Cizí UI komponenty_  
 Chatovací služby jako [Smartsupp](https://www.smartsupp.com/cs/), obecně ale jakékoliv cizí komponenty využívající CDN a vykreslující se v uživatelském rozhraní. Zde už se jedná obvykle o větší problém z pohledu optimalizace rychlosti.
 3. _Testování_  

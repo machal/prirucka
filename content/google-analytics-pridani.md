@@ -79,6 +79,7 @@ Dále budeme s přidáním nového webu pokračovat přímo v rozhraní Analytic
 <div class="related" markdown="1">
 - [Google Analytics: průvodce měřením](google-analytics-vyvojari.md)
 - [Google Analytics: statistiky viewportů](viewport-google-analytics.md)
+- [Google Tag Manager](google-tag-manager.md)
 </div>
 
 Pro své weby si asi vystačíte s jedním účtem. Jednotlivé weby pak máte jako služby. Weby klientů  je vhodné mít každý pod zvláštním účtem, kvůli případnému převodu na jinou osobu.

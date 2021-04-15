@@ -1,6 +1,6 @@
-# Google Tag Manager (GTM): Úvod pro vývojáře
+# Google Tag Manager (GTM)
 
-_[Martin Kolář](https://martinkolar.eu/) pro Vzhůru dolů píše o nástroji, který u vývojářů není právě populární. Přesto se bez něj na dnešních webech nedá obejít. Po rychlém úvodu si v textu vysvětlíme, proč je GTM tak důležitý a proč by se vývojáři neměli vzdávat zodpovědnosti za správu značek na svých webech._
+_[Martin Kolář](https://martinkolar.eu/) pro Vzhůru dolů píše o nástroji, který u vývojářů není právě populární. Přesto se bez Google Tag Manageru na většině dnešních webů nedá obejít. Po rychlém úvodu si v textu vysvětlíme, proč je GTM tak důležitý a proč by se vývojáři neměli vzdávat zodpovědnosti za správu značek na svých webech._
 
 <!-- Autor: Martin Kolář -->
 
@@ -33,7 +33,7 @@ Analytics jsou dostupné v GTM jako předdefinovaná značka. Můžete tedy pou�
 <figure>
 <img src="../dist/images/original/gtm-schema.png" width="1600" height="900" alt="Schéma fungování Google Tag Managera">
 <figcaption markdown="1">
-*Obrázek: Schéma vztahu Webu, datové vrstvy, Google Tag Managera a jednotlivých značek. GTM centralizuje správu dat o používání stránky.*
+*Obrázek: Schéma vztahu sebu, datové vrstvy, Google Tag Managera a jednotlivých značek. GTM centralizuje správu dat o používání stránky.*
 </figcaption>
 </figure>
 
@@ -72,6 +72,12 @@ Potřebujete rychle přidat kus JS kódu tak, aby se dostal ke všem? Ideální 
 
 Tohle „rychlo-přidání“ kódu můžete využít i pro automatizaci.
 
+<div class="related" markdown="1">
+- [Google Analytics: jak přidat web](google-analytics-pridani.md)
+- [Google Analytics: pro vývojáře](google-analytics-vyvojari.md)
+- [Google Search Console](google-Search-Console.md)
+</div>
+
 Máte třeba levnější tarif Hotjaru? Nevadí, nastavte si spuštění jen první 2 dny v měsíci.
 
 Nasadili jste novou věc a chcete vědět, zda funguje? Tadá! Stačí v GTM kliknout a až zjistíte, jak se věci mají, zase to vypnete.
@@ -104,7 +110,7 @@ U GTM je dobré vzájemně komunikovat a být spolu v kontaktu. Jasně, je těž
 Zopakujme, že značka je kód, který GTM provádí. Abychom si to zjednodušili, pojďme si rozdělit značky podle možných autorů:
 
 - Předdefinované od Googlu - ty jsou zcela bezpečné.
-- Značky třetích stran - Google je  schvaluje a zdrojové kódy jsou veřejně dostupné, ale myslete na to, že: „Google žádným způsobem nezaručuje funkčnost, kvalitu a obsah služeb a aplikací zajišťovaných těmito šablonami.“ abychom citovalii z nápovědy.
+- Značky třetích stran - Google je  schvaluje a zdrojové kódy jsou veřejně dostupné, ale myslete na to, že: „Google žádným způsobem nezaručuje funkčnost, kvalitu a obsah služeb a aplikací zajišťovaných těmito šablonami.“ abychom citovali z nápovědy.
 - Vlastní značky - ať už kus HTML kódu, obrázek nebo vlastní šablonu.
 
 Využití značek už tu zaznělo - většinou jde o marketingový nástroj (měřící kódy) nebo kus javascriptového kódu. Ty mohou spouštět nahrávání obrazovky, chaty nebo třeba Sentry.
@@ -134,7 +140,7 @@ Události nastávají přesně v tomto pořadí. Asi tušíte kdy přesně, ale 
 - _DOM Ready_ využijete pro scripty, které potřebují už celý DOM a není je potřeba spouštět co nejdříve.
 - _Okno načteno_ je vnitřní událost, která se spouští až ve chvíli, kdy se přestane nějaký obsah stahovat. Ideální pro nějaké chaty a další blokující nekritický JS.
 
-Mimo tyto eventy můžete používat také eventy na kliknutí, odeslání formuláře, posun stránky, viditelnost prvku apod.
+Mimo tyto eventy můžete používat také události na kliknutí, odeslání formuláře, posun stránky, viditelnost prvku apod.
 
 Vlastní kapitolou jsou pak vlastní eventy, které se posílají přes dataLayer. Můžete si tak například do datové vrstvy poslat událost „prohlédnutí obrázku“ a v GTM ho nějaký způsobem zpracovat do analytických nástrojů.
 
@@ -174,7 +180,7 @@ Vysvětlíme si to:
 - `event` - jakou událost v GTM spouštíme.
 - `view_item` - předdefinovaná událost pro měření prohlížení produktů (viz [dokumentace](https://developers.google.com/tag-manager/ecommerce-ga4#measure_productitem_list_viewsimpressions)).
 - `ecommerce` - data pro ecommerce vrstvu.
-- `items` - předdefinová struktura dat pro GTM.
+- `items` - předdefinovaná struktura dat pro GTM.
 
 V takovémto kódu může samozřejmě vznikat leckerý problém, který ovlivní rychlost webu.
 
@@ -221,4 +227,4 @@ Jak už jsem napsal, GTM je dobrý sluha, ale zlý pán. V rukou _jen_ markeťá
 
 V rukou obou těchto oborů to může být skvělý nástroj, který vám ušetří spoustu nervů.
 
-O GTM by se toho dalo napsat ještě spoustu dalšího. Například jak na vlastní šablony značek, jak na práci s proměnnými, verzování a workspaces… Pokud vás zajímá více, přihlašte na naši marketingo-frontendovou sérii webinářů o GTM na [gtmskoleni.cz](https://gtmskoleni.cz/).
+O GTM by se toho dalo napsat ještě spoustu dalšího. Například jak na vlastní šablony značek, jak na práci s proměnnými, verzování a workspaces… Pokud vás zajímá více, přihlaste na naši marketingo-frontendovou sérii webinářů o GTM na [gtmskoleni.cz](https://gtmskoleni.cz/).

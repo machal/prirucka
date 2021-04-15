@@ -69,6 +69,7 @@ Analytics standardně změří zhlédnutí stránky jen při konvenčním postup
 <div class="related" markdown="1">
 - [Google Analytics: jak přidat web](google-analytics-pridani.md)
 - [Google Analytics: statistiky viewportů](viewport-google-analytics.md)
+- [Google Tag Manager](google-tag-manager.md)
 </div>
 
 Pokud měníte URL z Javascriptu, pak to Analytics nepoznají a novou *pageview* nezapočtou. Musíte jim to výslovně říct. Takže ke každé změně URL javascriptem dávejte kód podobný tomuto:

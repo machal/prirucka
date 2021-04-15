@@ -24,9 +24,17 @@ Mohou se hodit i další nastavení. Třeba vyloučení parametrů v URL adresá
 
 ## Google Search Console už pak funguje sám, jen ji jednou za čas navštivte
 
-Pokud nástroj narazí na problém, který považuje za zásadní, pošle vám e-mail. Například i ve chvíli, kdy web vůbec nejede. 
+Pokud nástroj narazí na problém, který považuje za zásadní, pošle vám e-mail. Například i ve chvíli, kdy web vůbec nejede.
 
-Doporučuji Search Console navštívit alespoň jednou měsíčně a podívat se, jestli vám nezobrazuje zprávy, které jsou méně důležité. Ty se totiž vypisují jen v rozhraní. Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obvykle se o svém webu dozvíte něco zajímavého. Nebo zjistíte co Google chystá. V poslední době se třeba v rozhraní objevily nástroje pro bezpečnostní audit nebo [Google AMP stránky](https://www.vzhurudolu.cz/blog/40-amp), které ale v českém Google zatím nefungují.
+Doporučuji Search Console navštívit alespoň jednou měsíčně a podívat se, jestli vám nezobrazuje zprávy, které jsou méně důležité. Ty se totiž vypisují jen v rozhraní.
+
+<div class="related" markdown="1">
+- [Google Analytics: jak přidat web](google-analytics-pridani.md)
+- [Google Analytics: pro vývojáře](google-analytics-vyvojari.md)
+- [Google Tag Manager](google-tag-manager.md)
+</div>
+
+Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obvykle se o svém webu dozvíte něco zajímavého. Nebo zjistíte co Google chystá. V poslední době se třeba v rozhraní objevily nástroje pro bezpečnostní audit nebo [Google AMP stránky](amp.md), které ale v českém Google zatím nefungují.
 
 ## Jaké problémy vám může Search Console odhalit, když budete nástroj důsledně sledovat?
 
@@ -59,11 +67,13 @@ V části menu zvané *Kontrolní panel* získáte jen základní přehled pro r
 
 Informací, které můžete z Console vymámit je samozřejmě daleko více: díky ní můžete odhalit ruční penalizaci webu nebo špatně nastavené vícejazyčné weby. Podívejte se [na galerii screenshotů](https://www.optimalizace-stranek-pro-vyhledavace.cz/kategorie/search-console/), které shromažďuje Pavel Ungr a jeho kolegové.
 
+<!-- AdSnippet -->
+
 Na závěr: Search Console je zásadní nástroj pro získání informací o svém webu a řešení problémů. Google jej v rámci své [podpory pro webmastery](https://www.google.com/intl/cs/webmasters/#?modal_active=none) komunikuje jako první místo, kam byste se v případě potíží měli obrátit. Přeji vám, aby jich bylo co nejméně. 
 
 ## Alternativy pro další vyhledavače
 
-- **Seznam** zatím nabízí jen jednoduchý [kontrolní formulář](https://search.seznam.cz/kontrolni-formular). 
+- **Seznam** zatím nabízí jen jednoduchý [kontrolní formulář](https://search.seznam.cz/kontrolni-formular).
 - Pokud máte větší web nebo nezanedbatelnou návštěvnost **z Bingu**, doporučuji vaší pozornosti [Bing Toolbox](http://www.bing.com/toolbox/webmaster).
 
 <p class="text-small text-center" markdown="1"><small>
@@ -71,3 +81,4 @@ Na článku spolupracovali: [Daniel Střelec](https://www.danielstrelec.cz/) a [
 </small>
 </p>
 
+<!-- AdSnippet -->

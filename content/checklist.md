@@ -108,7 +108,7 @@ Už máme web hotový. Jdeme zmáčknout tlačítko pro zveřejnění? Raději j
 - Vývojářské soubory nejsou na produkci  
 <small>Hlavně adresáře typu `.git/`, `node_modules/,` zapomenutý ZIP s obsahem databáze nebo třeba veřejně přístupný [Adminer](https://www.adminer.org/cs/) či [phpMyAdmin](https://www.phpmyadmin.net/).</small>
 - Přidání a konfigurace Google Analytics  
-<small>Obchodní výkonnost webu všechny zajímá, nezapomněli jste [nastavit měření](google-analytics-pridani.md)? Alternativně přidejte kód Google Tag Managera, marketéři si přes potřebné kódy přidají. </small>
+<small>Obchodní výkonnost webu všechny zajímá, nezapomněli jste [nastavit měření](google-analytics-pridani.md)? Alternativně přidejte kód [Google Tag Managera](google-tag-manager.md), marketéři si přes potřebné kódy přidají. </small>
 - Registrace v nástrojích pro webmastery  
 <small>Pravidelně upozorní na časté chyby z pohledu vyhledávačů. Nejdůležitější je [Google Search Console](google-search-console.md): [Přidejte tam web](https://www.google.com/webmasters/tools/) hned po spuštění. A pak samozřejmě [Seznam Webmaster](https://reporter.seznam.cz/wm/). Pro zahraniční weby také například [Bing Webmaster Tools](https://www.bing.com/toolbox/webmaster).</small>
 - Přesměrování ze starých adres  

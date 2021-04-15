@@ -58,6 +58,7 @@
 - [Google Search Console](google-search-console.md)
 - [Google Analytics: přidání webu](google-analytics-pridani.md)
 - [Google Analytics pro vývojáře](google-analytics-vyvojari.md)
+- [Google Tag Manager](google-tag-manager.md)
 - [MiniLazyload](https://www.vzhurudolu.cz/blog/148-minilazyload)
 - [SemVer](semver.md)
 - [Co je polyfil?](polyfill.md)
