@@ -166,7 +166,7 @@ Pro pořádek ještě zmíním, že existují pokusy dosáhnout funkčnosti zde 
 
 Vezměme například „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Její výhodou je podpora ve všech moderních prohlížečích.
 
-Nevýhodou je krkolomnost. Když jsem o technice četl, připadal jsem si jako když krkolomný krkavec říká: „Strč prst skrz krk!“. Posuďte to sami z ukázky kódu:
+Nevýhodou je krkolomnost. Když jsem o technice četl, připadal jsem si jako když říkáte „krkolomný krkavec“ mnohokrát za sebou. Posuďte to sami z ukázky kódu:
 
 ```css
 --dyn_length: calc(

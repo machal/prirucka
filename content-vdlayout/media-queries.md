@@ -159,8 +159,8 @@ V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
          David franků pozadí ty narozen žádná…
       </p>
     </div>
-  </div>  
-</div>  
+  </div> 
+</div>
 ```
 
 Základní CSS bez rozvržení vypadá také vcelku jednoduše:
