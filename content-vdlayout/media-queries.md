@@ -1,10 +1,10 @@
 # Media Queries
 
-Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovém světu zavládly mobily. Jde o základní stavební kámen responzivního designu, takže v CSS layoutu bez nich nepostavíme ani cihlu.
+Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovém světu zavládly mobily. Jde o základní stavební kámen responzivního designu, takže při stavění CSS layoutů bez nich nestvoříme ani boudu pro psa.
 
-Dovolím si zde shrnout úplné základy, pro případ, že knihu čtete a v Media Queries plavete. Zkušenější mohou úvodní s čistým svědomím přeskočit jít rovnou na příklad níže, respektive část „Limity Media Qeuries“.
+Dovolím si zde shrnout úplné základy, pro případ, že knihu čtete a v Media Queries plavete. Vy zkušenější, kteří nestojíte o zopakování tématu, můžete úvodní část s čistým svědomím přeskočit, a rovnou jít na  část „Limity Media Qeuries“.
 
-Media Queries jsou podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
+Pojďme na ten základní stavební kámen. Media Queries jsou podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech.
 
 ## Příklad
 
@@ -24,13 +24,13 @@ h1 { font-size: 2em }
 }
 ```
 
-Možná i začátečníci už zde poznali, co se zde děje:
+Možná i začátečníci už poznali, co se zde děje:
 
 - Klíčové slovo `@media` oznamuje, že následuje dotaz na média.
-- Podmínka `(max-width: 40em)` říká, že vložený kód se má aplikovat jen pro šířky okna do `40em`, což je zde obvykle 640 pixelů. (40 × 16, což je výchozí velikost písma v dokumentu, není-li nastaveno jinak)
-- V podmínce nadpisu nastavujeme jinou velikost písma `font-size: 1.5em`. Pokud jste si to už nespočítali, půjde o 24 pixelů (16 × 1,5).
+- Podmínka `(max-width:40em)` říká, že vložený kód se má aplikovat jen pro šířky okna do `40em`, což je zde obvykle 640 pixelů. (40 × 16, při výchozí velikosti písma v dokumentu, není-li nastaveno jinak)
+- V podmínce nadpisu nastavujeme jinou velikost písma `font-size:1.5em`. Pokud jste si to už nespočítali, půjde o 24 pixelů (16 × 1,5).
 
-Mrkněme se na to ještě na živo v CodePenu.
+Zájemci se na to mohou ještě mrknout živě v CodePenu.
 
 CodePen: [cdpn.io/e/Bpajbz](https://codepen.io/machal/pen/Bpajbz)
 
@@ -52,7 +52,9 @@ Můžeme se ptát na výšku:
 }
 ```
 
-Můžeme detekovat typ média:
+(Ano, uvnitř dotazu je možné používat jakoukoliv jednotku, ale `em` nebo `px` jsou nejpraktičtější.)
+
+Můžeme také detekovat typ média:
 
 ```css
 @media screen { 
@@ -68,9 +70,9 @@ Můžeme podmínky kombinovat pomocí logického „a zároveň“:
 @media screen 
   and (min-width: 30em) 
   and (max-width: 40em) {  
-  /* Aplikuje se jen na viewport mezi 
-     30 a 40 em
-  */ 
+  /* Aplikuje se jen na viewport 
+     obrazovky mezi 30 a 40 em
+  */
 }
 ```
 
@@ -79,8 +81,8 @@ Můžeme aplikovat logické „nebo“, a to pomocí čárky:
 ```css
 @media screen and (max-width: 40em), 
   print {
-  /* Aplikuje na obrazovky od šířky viewportu
-     40 em nebo v tisku
+  /* Aplikuje na obrazovky od šířky 
+     viewportu 40 em nebo v tisku
   */ 
 }
 ```
@@ -118,30 +120,39 @@ Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*
 <figure>
 <img src="../dist/images/original/media-query.jpg" alt="">
 <figcaption markdown="1">
-*Anatomie Media Query. Pro zjednodušení jsem odstranil klíčové slovo „only“, které ze zpracování podmínky vyloučí starší Internet Explorery*
+*Anatomie Media Query.*
 </figcaption>
 </figure>
 
-## Chcete vědět více?
-
 V téhle podkapitole se snažím být velmi stručný, protože předpokládám, že většina čtenářů už nějakou zkušenost s dotazy na média má.
 
-Je to skutečně zcela nepostradatelná dovednost, každý webový vývojář i webová vývojářka píše Media Queries skoro denně. Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
+## Chcete vědět více?
+
+Ovládnutí dotazů na média je skutečně zcela nepostradatelná dovednost, každý profesionální webový vývojář i webová vývojářka píše Media Queries skoro denně.
+
+Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
 
 - Stránka o Media Queries na Vzhůru dolů: [vrdl.cz/p/css3-media-queries](https://www.vzhurudolu.cz/prirucka/css3-media-queries).
 - Jak v responzivní layoutu dělat breakpointy, body zlomu: [vrdl.cz/p/breakpointy](https://www.vzhurudolu.cz/prirucka/breakpointy).
 - Jak breakpointy řešit technicky: [vrdl.cz/p/breakpointy-css](https://www.vzhurudolu.cz/prirucka/breakpointy-css).
-- Celá knížka o responzivním designu. Prý je docela dobrá. [vrdl.cz/kniha-responzivni-design/](https://www.vzhurudolu.cz/kniha-responzivni-design)
+- Celý e-book o responzivním designu. Prý je docela dobrý, říkali to lidi. [vrdl.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
+
+V tomto bodě začnu předpokládat, že o Media Queries už něco víte a společně se tedy pustíme do jejich používání.
 
 ## Příklad: Media Object
 
-„Media Object“ je ve webdesignu velmi populární komponenta. Tak populární, že se bez ní nemůže obejít žádná knížka. A pokud jde o knížku o layoutu v CSS, tím tuplem nemůže.
+„Media Object“ je ve webdesignu velmi populární komponenta. Tak populární, že se bez ní nemůže obejít žádná knížka. A pokud jde o knížku o layoutu v CSS, tím tuplem ne.
 
-<!-- TODO obrázek https://codepen.io/machal/pen/RwKLdaN?editors=1100 -->
+<figure>
+<img src="../dist/images/original/vdlayout/media-object-mq.png" width="1600" height="900" alt="…">
+<figcaption markdown="1">
+„Ahoj, já jsem Media Object a teď vás budu trochu trápit.“
+</figcaption>
+</figure>
 
 V „objektu s médiem“ jsou tři základní prvky – obrázek (nebo jiné médium), nadpis a text. Na téhle komponentě sbírají webaři své responzivní ostruhy, je to krásný případ použití Media Queries.
 
-I my si je zde vyzkoušíme. Pokud se podle knížky učíte, zkuste si objekt nakódovat podle výše uvedeného obrázku. Vám, kteří raději čtete, to teď jdu sepsat. 
+I my si je zde vyzkoušíme. Pokud se podle knížky učíte, zkuste si objekt nakódovat podle výše uvedeného obrázku. Vám, kteří raději čtete, to teď jdu sepsat.
 
 V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
 
@@ -265,7 +276,12 @@ Tvorba breakpointů (bodů zlomu) je samostatné téma, ostatně odkázal jsem v
 2. Dotazy na media se vztahují k šířce viewportu, k šířce plochy, kterou má prohlížeč k dispozici. Jak uvidíte na obrázku níže, mezi okrajem viewportu a okrajem obrázku jsou ještě další prvky, které také mají své rozměry.
 3. Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (`margin` i `padding`) o celkové šířce `3em`. Jedno `em` je vždy `16px`, pokud jej nenastavíme jinak. Dále je zde vnitřní okraj `1em` u prvků `.item__text` a `.item__image`. Celkem tedy 4 krát 16, to je 64 a ještě krát 2, protože musíme vzít v úvahu obě strany. Vychází nám 128. Přidáme šířku obrázku a vyjde nám 428 pixelů.
 
-<!-- TODO obrázek viz uvedený výpočet https://codepen.io/machal/pen/RwKLdaN?editors=1100 -->
+<figure>
+<img src="../dist/images/original/vdlayout/media-object-mq-rozmery.png" width="1600" height="900" alt="…">
+<figcaption markdown="1">
+To je samý margin a padding. Kdo pak má ty Media Queries počítat?!
+</figcaption>
+</figure>
 
 Trápím vás tou matematikou úmyslně. Chci, abyste si prožili problémy, které při tvorbě současných layoutů máme.
 
