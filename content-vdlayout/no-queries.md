@@ -191,10 +191,49 @@ Dále už následuje jen obligátní CodePen.
 
 CodePen: [cdpn.io/e/ExZmRbM](https://codepen.io/machal/pen/ExZmRbM?editors=1100)
 
-<!-- TODO nevýhody -->
+Pro takzvaný No Queries Layout s pomocí vlastnosti `columns` zde máme ještě jednu demostrační ukázku.
 
-<!-- TODO další řešení s multicol -->
+Responzivní obrázková galerie je opět založena pouze na definici šířky sloupečku s pomocí `column-width`. Zde je řešení obohacené také o `break-inside:avoid`, což zabrání zalomení sloupečku uvnitř položky galerie. [cdpn.io/e/rraAgj](https://codepen.io/machal/pen/rraAgj?editors=1100)
 
-<!-- TODO další řešení mimo css layouty -->
+Řekl bych, že pro obrázkovou galerii je bezdotazový layout pomocí vlastnosti `column` vhodnější. V případě mediálního objektu byly až příliš patrné nevýhody jako nutnost stejné šířky sloupečků.
 
-<!-- TODO shrnutí -->
+Tak či tak, obě řešení využívají CSS Multicol Layout pro situace, na které nebyl tento modul navržen a vymyšlen. Nejlepších výsledků dosáhnete, když v případě hrátek s `column` zůstanete u textového obsahu.
+
+## No Queries mimo CSS layouty: Technika „The Fab Four“
+
+Není to úplně předmětem této knížky, ale nechci to přejít mlčením. Existují totiž i jiné způsoby, jak dělat rozvržení bez Media Queries, než ty, které nám umožní grid, flexbox a vícesloupcový layout.
+
+Trik „The Fab Four“, který Rémi Parmentier pojmenoval podle amerického revivalového bandu Beatles, byl původně určen pro tvorbu responzivních e-mailů. Jak možná mnozí víte, e-mailové klienty netvoří zrovna přátelskou partu co se Media Queries týče.
+
+Technika je založená na tomto kódu pro jednotlivé položky layoutu:
+
+```css
+.media-body,
+.media-img {  
+  min-width: 30%; /* [1] */
+  width: calc((400px - 100%) * 400); /* [2] */
+  max-width: 100%; /* [3] */
+}  
+```
+
+Vysvětlení:
+
+1. V `min-width:30%` je hodnota šířky pro rovržení v šířce rodiče menší než je breakpoint.
+2. V hodnotě `400px` je uložený breakpoint.
+3. V `max-width:100%` je hodnota pro šířky větší než breakpoint.
+
+Vidíte to? Žádný flexbox, žádný grid. A dokonce žádné dotazy v `@media`. Všechno postaru. Pracuje to dobře, jen je to trochu nepochopitelné až magické.
+
+Detailní vysvětlení toho, jak to celé funguje nechávám na samotném autorovi a jeho článku „The Fab Four technique to create Responsive Emails without Media Queries“. [vrdl.in/fabfour](https://www.freecodecamp.org/news/the-fab-four-technique-to-create-responsive-emails-without-media-queries-baf11fdfa848/)
+
+Dlužím vám ještě demo. Asi nejlepší je to následující, ze kterého mám také výše uvedenou ukázku kódu.
+
+CodePen: [cdpn.io/e/ZQgEoZ](https://codepen.io/thierry/pen/ZQgEoZ?editors=1100)
+
+Zde bychom odbočku k layoutům bez Media (a Container) Queries mohli ukončit. Než jsem tuto podklapitolu začal psát, přemýšlel jsem, zda se do toho vůbec pouštět.
+
+Proti bylo část mé osobnosti, které má ráda čistá řešení, která odmítá používat kladivo na klepání masa a paličku na přibíjení hřebíků, která ví, že tato řešení mají řadu nevýhod a složitostí, jež mohou například začátečníky svést na zcestí, kde po prvotním nadšení přijde kruté vystřízlivění v podobě zjištění, že pro jejich případ se toto řešení nehodí.
+
+Pro zveřejnění byla moje praktická část („Občas se to někomu může hodit, když ještě v prohlížečích nemáme Container Queries.“) a autorská část („Když už píšeš o layoutech, toto nemůžeš vynechat.“)
+
+To máte dvě části Michálka proti jedné. A vy už víte, jak hlasování dopadlo.
