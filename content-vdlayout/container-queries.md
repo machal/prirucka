@@ -1,26 +1,33 @@
 # Container Queries
 
-Z podkapitoly o Media Queries nám vykoukla nepříjemná omezení, která do současného layoutu v CSS a vlastně celého webdesginu přinášejí.
+Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, která do současného layoutu v CSS a vlastně celého webdesignu přinášejí.
 
-To, co dotazy na media dělají pro celou stránku, my potřebujeme pro její část. Budeme ji říkat komponenta. A právě to by nám mohly poskytnout Container Queries.
+To, co dotazy na media dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
 
-<!-- TODO IMG Media/Container rozdíl -->
+<figure>
+<img src="../dist/images/original/vdlayout/media-vs-containder.png" alt="">
+<figcaption markdown="1">
+Container Queries cílí jen na konkrétní část stránky. Říkáte „hurá“? Jen s tím počkejte.
+</figcaption>
+</figure>
+
+Skeptik by se mě na tomto místě zeptal, jaký to má háček. Ano, má to háček. V době psaní to nemá podporu v prohlížečích.
 
 ## Těžká hlava autora technické knížky
 
-Psaní knížek je běh na dlouhou trať. Pokud dlouho pracujete na technické knížce, může se vám stát, že v průběhu psaní vznikne technologie, která celý hotový materiál vezme a vyhodí jej do koše. Nebo vám na něj dá přinejmenším radikálně jiný pohled.
+Psaní knížek je běh na dlouhou trať. Pokud dlouho pracujete na technické knížce (a já na ni pracuji přes rok), může se vám stát, že v průběhu psaní vznikne technologie, která celý hotový materiál vezme a vyhodí jej do koše. Nebo vám na něj dá přinejmenším radikálně jiný pohled.
 
 To druhé se mi děje právě teď, v dubnu 2021, když píšu tyto řádky. Zhruba před třemi týdny se objevila první zkušební implementace Container Queries v Chrome Canary, verzi prohlížeče pro nedočkavé vývojáře.
 
-Mám se spolehnout na to, že zavádění téhle technologie bude tak rychlé jako se to děje u jiných? Že Google nebude čekat na specifikaci od W3C (která zatím není) a prostě to naimplementuje?
+Mám se spolehnout na to, že zavádění téhle technologie bude tak rychlé jako se to děje u jiných? Že Google nebude čekat na specifikaci od W3C (která zatím není) a prostě to naimplementuje a pustí mezi lidi?
 
 Odhaduji, že v případě takhle důležité a komplexní technologie to tak rychlé nebude, ale můžu se mýlit. Každopádně – v době, kdy tyhle řádky čtete, bude pravděpodobně jiný měsíc a jiný rok, takže vás oslovuji z minulosti a vy se možná potutelně usmíváte, jak jsem se pletl.
 
 V knížce budu zatím Container Queries považovat za technologii budoucnosti. Občas ji připomenu, ale stavět na ni zatím moc nebudu.
 
-## Container Queries jsme chtěli a mysleli si, že je nikdy nedostaneme
+## Container Queries jsme odjakživa chtěli a mysleli si, že je nikdy nedostaneme
 
-V roce 2017 se této technologii říkalo „Element Queries“, což dávalo smysl. Šlo o dotazy na parametry prvku stránky. Lidé přemýšleli, jak ji dostat do prohlížečů a já k tomu napsal:
+V roce 2017 se této technologii říkalo „Element Queries“, což dávalo smysl. Šlo o dotazy na rozměrové parametry konkrétního prvku stránky. Lidé přemýšleli, jak ji dostat do prohlížečů a já k tomu napsal:
 
 > Je to věc, kterou ve webdesignu opravdu hodně chci. A věřte mi, že vy taky.
 
@@ -38,7 +45,7 @@ Ale zpět k současnosti.
 
 ## Implementace Element Queries v Chrome Canary
 
-S tímto návrhem přišla Miriam Suzanne, ale je to jen jakýsi vrchol pyramidy, stavěné na práci mnoha dalších.
+S novým návrhem přišla v prosinci 2020 Miriam Suzanne, ale je to jen jakýsi vrchol pyramidy, postavený na práci mnoha dalších.
 
 Skládá se ze dvou kroků. První je definování kontejneru:
 
@@ -54,7 +61,7 @@ Hodnota `layout` udává „zapouzdření pro rozvržení“. Říkáme tím, ž
 
 Další hodnota `inline-size` říká, že půjde o layout rozvržení na inline ose, tedy v případě našich jazyků vodorovně.
 
-Pokud by princip zapouzdření zajímal více, mrkněte se na Vzhůru dolů. [vrdl.cz/p/css-contain](https://www.vzhurudolu.cz/prirucka/css-contain).
+Pokud by vás princip zapouzdření zajímal více, mrkněte se na Vzhůru dolů, ale pro potřeby pochopení Container Queries už víte dost. [vrdl.cz/p/css-contain](https://www.vzhurudolu.cz/prirucka/css-contain).
 
 Druhý krok je samotný dotaz na kontejner, Container Query:
 
@@ -68,12 +75,13 @@ Tohle je asi zřejmé. Pokud bude šířka rodičovského prvku alespoň `30em` 
 
 Je možné, že i v době, kdy toto čtete, budou Container Queries schované za vlaječkovým nastavení prohlížeče. Jak to tedy otestovat?
 
-1. Potřebujete Chromium vezre 91.0.4459.0 a vyšší.
+1. Potřebujete Chromium verze 91.0.4459.0 a vyšší.
 2. Jděte do vlaječkového nastavení: `chrome://flags`.
-3. Povolte možnost „Enable CSS Container Queries”.
+3. Povolte možnost „Enable CSS Container Queries“.
 
-Přidávám odkaz na draft specifikace podmínky `@container` od 
-Miriam Suzanne na Githubu. [vrdl.in/contdraft](https://github.com/w3c/csswg-drafts/issues/5796)
+Na závěr teoretického úvodu přidávám odkaz na draft specifikace podmínky `@container` od Miriam Suzanne na Githubu. [vrdl.in/contdraft](https://github.com/w3c/csswg-drafts/issues/5796)
+
+A nyní prakticky.
 
 ## Naše komponenta v Container Queries
 
@@ -101,13 +109,18 @@ Poďme si to poskládat dohromady na konkrétním příkladu, našeho „Media O
 }  
 ```
 
-Bezva! Zde už nejsou ty problémy, které způsobovaly Media Queries. Při nastavování hodnoty bodu zlomu (`30em`) se můžeme soustředit na samotný obsah a nemusíme do toho započítávat další hodnoty ve stránce.
+Bezva! Zde už řešení netrpí problémy, které způsobovaly Media Queries. Při nastavování hodnoty bodu zlomu (`30em`) se můžeme soustředit na samotný obsah a nemusíme do toho započítávat další hodnoty ve stránce.
 
 CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
-Prostě se zaměříme jen na danou komponentu a podmínky připravíme přímo pro ni. Ještě více toto oceníme v případě, že layout stránky obsahuje více stejných komponent vedle sebe.
+Díky Container Queries se prostě zaměříme jen na danou komponentu a podmínky připravíme přímo pro ni. Ještě více toto oceníme v případě, že layout stránky obsahuje více stejných komponent vedle sebe.
 
-<!-- TODO IMG dvě komponenty vedle sebe: https://codepen.io/machal/pen/xxgpLZo?editors=1100 -->
+<figure>
+<img src="../dist/images/original/vdlayout/container-queries-chrome.png" alt="">
+<figcaption markdown="1">
+Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jejich obsahu.“ Media Queries: „Uff!“
+</figcaption>
+</figure>
 
 Zde bychom už byli bez Container Queries namydlení. Buď bychom museli opravdu složitě nastavovat Media Queries pro různé případy výskytu komponenty ve stránce nebo se obejít úplně bez dotazů. O tom ostatně budu psát za chvilku.
 
@@ -140,19 +153,24 @@ Pomocí [`display:grid`](css-display.md), vlastnosti [`grid-template-columns`](c
 
 CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
-## Podpora a náhradní řešení
+## Podpora v prohlížečích a náhradní řešení
 
-Jak jsem už psal, zatím Container Queries nepodporuje žádný prohlížeč. Implementace v Chrome je zkušební. Aktuální podporu hledejte na webu CanIUse.
+Jak jsem už psal, na jaře 2021 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chrome je zkušební.
 
 Přepokládám ale, že někteří čtenáři na tenhle text narazí v době, kdy budou už existovat implementace v některých prohlížečích, v jiných naopak ne.
 
-Osobně bych očekával situaci, že prohlížeče postavené na Chromiu už dotazy na rodičovský element umí, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
+Osobně bych očekával situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí v řádu měsíců, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
 
 Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií. Pomocí postupné vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a horší nepodporujícím.
 
 Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili. Například v případě nepodpory Safari bude naše komponenta v tomto prohlížeči vypadat následovně.
 
-<!-- TODO IMG dvě komponenty vedle sebe v Safari: https://codepen.io/machal/pen/xxgpLZo?editors=1100 -->
+<figure>
+<img src="../dist/images/original/vdlayout/container-queries-safari.png" alt="">
+<figcaption markdown="1">
+Safari: „Tohle neumím, ale nějak to zobrazím.“
+</figcaption>
+</figure>
 
 Na mobilu vůbec nevadí, že podmínku `@container` prohlížeč neumí. Na větších obrazovkách dostane uživatel jiný vzhled komponenty. Vadí to? Nemusí.
 
@@ -160,7 +178,7 @@ Osobně bych přemýšlel, jak moc odlišný uživatelský prožitek zde lidé d
 
 Rozhodování, zda se vám vyplatí dělat náhradní řešení nebo zda vůbec Container Queries použít, je už na vás, milí čtenáři z budoucnosti.
 
-## Krkavčí technika
+## Něco pro alternativce: krkavčí technika
 
 Pro pořádek ještě zmíním, že existují pokusy dosáhnout funkčnosti zde popsané za pomocí přiohnutí už existujících vlastností.
 
@@ -176,4 +194,4 @@ Nevýhodou je krkolomnost. Když jsem o technice četl, připadal jsem si jako k
 );
 ```
 
-Ale nechci to úplně shazovat. Pokud něco jako podmínku `@container` na vašem projektu zoufale potřebujete a podpora v prohlížečích zatím pořád není, mrkněte se na celý článek „The Raven Technique: One Step Closer to Container Queries“. [vrdl.in/raven](https://css-tricks.com/the-raven-technique-one-step-closer-to-container-queries/)
+Ale nechci to úplně shazovat. Pokud něco jako podmínku `@container` na vašem projektu zoufale potřebujete a podpora v prohlížečích zatím pořád neexistuje, mrkněte se na celý článek „The Raven Technique: One Step Closer to Container Queries“. [vrdl.in/raven](https://css-tricks.com/the-raven-technique-one-step-closer-to-container-queries/)
