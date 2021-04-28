@@ -22,6 +22,7 @@
 - [background-clip: ořez pozadí](css3-background-clip.md)
 - [background-origin: způsob ořezu](css3-background-origin.md)
 - [background-size: velikost pozadí](css3-background-size.md)
+- [Více obrázků pomocí image-set()](css-image-set.md)
 - [Barevné přechody](css3-gradients.md)
 - [Vícenásobná pozadí](css3-multiple-backgrounds.md)
 

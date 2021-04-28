@@ -92,6 +92,22 @@ Ve skutečnosti je to komplikovanější, protože prohlížeče si logiku za v�
 
 Pojďme se teď ještě podívat na atribut `sizes`, který prohlížeči umožní vybírat nejen podle fyzických parametrů souborů s obrázky, ale i podle layoutu vaší stránky.
 
+### `image-set`: Jde to i u obrázku na pozadí
+
+Pokud potřebujete funkcionalitu `srcset`, ale nikoliv v HTML, ale v CSS, pak je tu [zápis `image-set()`](css-image-set.md):
+
+```css
+.box {
+  background-image: 
+    image-set(
+      "obrazek.png" 1x,
+      "vetsi-obrazek.png" 2x
+    );
+}
+```
+
+Od února 2021 to podporuje Firefox (zatím ve verzi Nightly). Díky je možné základní varianty zápisu `image-set()` používat ve všech moderních prohlížečích.
+
 ## `sizes`: Velikost obrázku ve stránce
 
 V praxi totiž tak často nepotřebujeme, aby prohlížeč vybral obrázek podle šířky okna. Spíše podle šířky prostoru pro obrázek v rámci aktuálního layoutu stránky. A právě od toho máme atribut `sizes`:
