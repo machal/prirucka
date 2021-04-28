@@ -26,8 +26,6 @@ Obrázky na pozadí v CSS občas potřebujeme prohlížečům poslat v různých
 
 ```css
 .box {
-  /* Fallback: */
-  background-image: url("http://satyr.io/300x300/");
   background-image: image-set( 
     "http://satyr.io/300x300/" 1x,
     "http://satyr.io/600x600/" 2x,
@@ -50,11 +48,80 @@ Není to jediná varianta, kterou bychom podle specifikace mohli použít.
 
 Specifikace je jedna věc, praxe ale velí vycházet z podpory v prohlížečích. Dále uváděné možnosti zůstávají na papíře. Jediný prohlížeč, který je podporuje, je právě nový Firefox Nighly.
 
-<!--
+### Výběr podle typu obrázku
 
-- https://codepen.io/machal/pen/ZELPqNY?editors=1100
-- https://codepen.io/machal/pen/MWJxzYw?editors=1100
-- https://codepen.io/machal/pen/NWdJEqm?editors=1100
+Podobně jako [u značky `<picture>`](picture.md) bychom i tady mohli prohlížeči nabídnout dva formáty pro jeden obrázek. To by bylo skvělé pro využití nových formátů jako [WebP](webp.md) nebo [AVIF](avif.md)…
 
--->
+```css
+.box {
+  background-image: 
+    image-set( 
+      "http://satyr.io/300x300?type=webp" type("image/webp"),
+      "http://satyr.io/300x300?type=png" type("image/png")
+    );
+}
+```
 
+…kdyby to ovšem podporovaly prohlížeče. Ke dni psaní s tímto zápisem uspějete jen  Firefox Nightly.
+
+Více je možné vidět [v CodePenu](https://codepen.io/machal/pen/ZELPqNY?editors=1100).
+
+### Kombinace obrázků s generovaným pozadím
+
+Občas by se kódérkám a kóderům mohla hodit kombinace obrázku s generovaným pozadím, např. přechody tvořenými pomocí [`linear-gradient()`](css3-gradients.md).
+
+```css
+.box {
+  background-image: 
+    image-set( 
+      linear-gradient(grey, white) 1x,
+      "http://satyr.io/300x300" 3x 
+    );
+} 
+```
+
+Podporuje opět jen nový Firefox ve vývojářské verzi Nightly. [CodePen](https://codepen.io/machal/pen/MWJxzYw?editors=1100) k hraní.
+
+### Deskriptor `w`
+
+V atributu `srcset` bychom teoreticky mohli mít možnost používat deskroptor `w`, jenž prohlížeč informuje o šířkách nabízených obrázků. To aby si lépe vybral.
+
+```css
+.box {
+  background-image: image-set( 
+    "http://satyr.io/300x300/" 300w,
+    "http://satyr.io/600x600/" 600w,
+    "http://satyr.io/900x900/" 900w
+  );
+} 
+```
+
+Tady ale pouštím imaginaci na plné obrátky a troufám si jít opravdu daleko, protože i ve specifikace o tomto mluví jako o přání a úkolu, nikoliv o navržené vlastnosti. Tak nic.
+
+Mrkněte se na [CodePen](https://codepen.io/machal/pen/NWdJEqm?editors=1100).
+
+Na vaše objevování zápisu `image-set()` se těší celá moje [kolekce CodePenů](https://codepen.io/collection/dbydGg).
+
+## Podpora
+
+Použitelnost zápisu `image-set()` díky implementaci ve Firefoxu bez pochyby v příštích měsících prudce stoupne. Jde totiž o poslední prohlížeč, který toto dosud neuměl.
+
+Jenže pokud jste se, jako já, nechali namlsat všemi zde uvedenými možnostmi zápisu, budete stejně zklamaní. Ale tak už to mezi námi webaři chodí. Jsme nadšení z implementace nový vlastností, abychom byli tentýž den zklamaní, co všechno ještě prohlížeče neumí.
+
+Při implementaci nezapomeňte na [Autoprefixer](autoprefixer.md), protože i moderní prohlížeče pro tuto vlastnost vyžadují prefixy – např. Chrome rozumí jen zápisu `-webkit-image-set()`.
+
+Internet Explorer je sice už téměř vymřelý druh, ale pokud byste potřebovali zajistit si fungování i v něm, musíte uvést [náhradní řešení](fallback.md). Je to vidět v mém prvním CodePenu:
+
+```css
+.box {
+  /* Fallback: */
+  background-image: url("http://satyr.io/300x300/");
+  background-image: image-set( 
+    "http://satyr.io/300x300/" 1x,
+    "http://satyr.io/600x600/" 2x,
+    "http://satyr.io/900x900/" 3x
+  );
+} 
+```
+
+Vše o podpoře `image-set()` najdete klasicky na CanIUse. [caniuse.com/css-image-set](https://caniuse.com/css-image-set)
