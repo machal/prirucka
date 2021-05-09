@@ -1,6 +1,6 @@
 # Obrázkový formát AVIF
 
-Chrome začal od verze 85 a Firefox od verze 86 začaly vcelku nenápadně podporovat nový obrázkový formát AVIF.
+Chrome od verze 85 a Firefox od verze 86 začaly vcelku nenápadně podporovat nový obrázkový formát AVIF.
 
 Inovativní formáty nás webaře zajímají hlavně z pohledu datové efektivity a nových vlastností. Obojí je zde splněno, takže se na AVIF pojďme podívat více zblízka.
 
@@ -78,7 +78,7 @@ Datovou velikostí výhody AVIF ale nekončí:
 - Přichází s novým typem komprese, které [říkají „chroma-from-luma“](https://blog.cloudflare.com/generate-avif-images-with-image-resizing/).
 - Podporuje 10- a 12bitové barvy v plném rozlišení a vysoký dynamický rozsah (HDR). Formát WebP je omezen na 8bitovou barevnou hloubku.
 
-Celkově vzato to znamená, že nový formát „nekostičkuje“ jako JPEG a AVIF a „nerozmazává“ ostré hrany.
+Celkově vzato to znamená, že nový formát „nekostičkuje“ jako JPEG a WebP a „nerozmazává“ ostré hrany.
 
 <figure>
 <img src="../dist/images/original/avif-hrany.png" width="1600" height="900" alt="AVIF nekazí hrany">
@@ -152,8 +152,8 @@ Problémem WebP byla pomalá adopce prohlížeči. Ano, díváme se na tebe, Saf
 Jak je to u AVIFu?
 
 - [Chrome 85](https://developers.google.com/web/updates/2020/08/nic85) již AVIF podporuje. V jiných prohlížečích založených na Chromu práce probíhá.
-- [Ve Firefoxu](https://bugzilla.mozilla.org/show_bug.cgi?id=1443863) na podpoře pracují. Bude k dispozici od verze 86.
-- Apple zatím neoznámil, zda bude v Safari AVIF podporovat. Tentokrát je však Apple jednou ze společností v Alliance for Open Media, tvůrců AVIF.
+- [Ve Firefoxu](https://bugzilla.mozilla.org/show_bug.cgi?id=1443863) na podpoře pracují. Bude k dispozici od verze 89.
+- Apple zatím neoznámil, zda bude v Safari AVIF podporovat. Tentokrát je však Apple jednou ze společností v Alliance for Open Media, tvůrců AVIF a tvůrci Webkitu, enginu, na kterém Safari běží, [na podpoře pracují](https://bugs.webkit.org/show_bug.cgi?id=207750).
 
 <figure>
 <img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1605530919962/caniuse-embed/all/avif.webp" alt="Podpora AVIF v prohlížečích">
@@ -181,4 +181,3 @@ Technické možnosti tady jsou. Máme [značku `<picture>`](picture.md), takže 
 V takovém případě se nám AVIF ke dni psaní článku stáhne v Chrome a Opeře, WebP ve všech prohlížečích kromě starších Safari a Internet Explorerů. No a JPEG právě tam, v jámě lvové.
 
 Vzhledem k podpoře zatím nepředpokládám masivní nasazení na všechny obsahové obrázky některých webů. Ale pro jednotlivé obrázky se mě to zdá je výborný nápad, který jsem si několikrát ověřit, například zde, na Vzhůru dolů, na stránce [o e-booku „Vzhůru do AMP“](https://www.vzhurudolu.cz/ebook-amp/).
-
