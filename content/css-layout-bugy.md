@@ -5,15 +5,32 @@
 Autorovi téhle myšlenky bychom museli přiznat jistou dávku zdravého skepticismu. Nebo dokonce nemalou životní zkušenost s vývojem webů.
 
 <div class="related web-only" markdown="1">
+
 - [CSS Flexbox](css-flexbox.md)
 - [CSS Grid](css-grid.md)
 - [CSS Multicol](css-multicolumn.md)
 - [CSS Box Align](css-box-alignment.md)
+
 </div>
 
 Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Musíme ovšem s úlevou prohlásit, že oproti dřívějšímu stavu je přítomnost chyb spojených s flexboxem nebo gridem v prohlížečích minimální.
 
-Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
+<figure>
+<img src="../dist/images/original/css-layout-podpora-celkem.png" width="1600" height="450" alt="Podpora flexboxu, gridu, multicol z CanIUse">
+<figcaption markdown="1">
+*Čím více zelené, tím více podpory. Zelenohnědá značí, že daný prohlížeč má nějaký problém. Zdroj: [CanIUse.com](https://caniuse.com/).*
+</figcaption>
+</figure>
+
+Flexbox, grid nebo vícesloupcový layout se na nás z CanIUse směje zeleně.
+
+Trošku nás zlobí Internet Explorer v poslední verzi 11, u gridu nás zlobí více.
+
+Co konkrétně znamenají ty zelenohnědé obdélníky?
+
+- Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
+- U flexboxu máme prakticky plnou podporu, jen v IE 11 si musíme dát pozor na pár chyb.
+- Podpora vícesloupcového layoutu je naopak v Exploreru výborná. Moderní prohlížeče si ale většinou  hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců.
 
 <!-- AdSnippet -->
 
