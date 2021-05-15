@@ -37,7 +37,7 @@ Tady je to jednoduché. Potřebujete dvě hodnoty – pro začátek a konec pozi
 }
 ```
 
-Pokud bychom položku chtěli umístit do druhého sloupce a do přes druhý a třetí řádek, zapíšeme to následovně:
+Pokud bychom položku chtěli umístit do druhého sloupce a přes druhý a třetí řádek, zapíšeme to následovně:
 
 ```css
 .item {
