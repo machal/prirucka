@@ -246,4 +246,4 @@ I zde je pro zájemce k dispozici ukázka na službě CodePen.
 
 CodePen: [cdpn.io/e/JjWXgNL](https://codepen.io/machal/pen/JjWXgNL?editors=1100)
 
-Pomocí Tinderu a prvního rande jsme se tedy seznámili se čtyřmi hlavními protagonisty knížky. Abychom je pochopili v širším kontextu, musíme se teď vypravit na výlet do historie.
+Prostřednictvím Tinderu a prvního rande jsme se tedy seznámili se třemi hlavními protagonisty knížky a jejich nejlepším kamarádem. Ještě se nám ale bude hodit lépe poznat dva nejžhavější kandidáty.
