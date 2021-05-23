@@ -15,9 +15,11 @@ Lídrem trhu bychom v této oblasti mohli s klidným srdcem jmenovat autory Fire
 </figcaption>
 </figure>
 
-Už v březnu 2017, zároveň s implementací CSS gridu obsahoval Firefox velmi propracovaný CSS Grid Inspector. [vrdl.in/griddevfir](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/52)
+Už v březnu 2017, zároveň s implementací CSS gridu do Firefoxu přibyl propracovaný CSS Grid Inspector. Jediný prohlížeč nezávislý na velké korporaci v té době patřil v oblasti vývojářského pohodlí mezi lídry trhu.
 
-Firefox od té doby bohužel prošel krizí, kdy musel snižovat počet lidí, kteří vývojářské nástroje spravují.
+Firefox ale od té doby bohužel prošel krizí, kdy musel snižovat počet lidí, kteří vývojářské nástroje navrhují a programují.
+
+Někde jsem pod dojmy z nevyváženosti množství vývojářů pracujících na Firefoxu a Chrome napsal, že prohlížeč od Googlu všechny dobré vlastnosti Firefoxu rychle zkopíruje.
 
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-chrome.png" width="1600" height="900" alt="Livesport.cz v DevTools Chrome">
@@ -26,17 +28,15 @@ Firefox od té doby bohužel prošel krizí, kdy musel snižovat počet lidí, k
 </figcaption>
 </figure>
 
-Někde jsem pod dojmy z nevyváženosti množství vývojářů pracujících na Firefoxu a Chrome napsal, že prohlížeč od Googlu všechny dobré vlastnosti Firefoxu rychle zkopíruje.
-
 V tomto případě to ale trvalo mnoho let, až do podzimu 2020. Tehdy přišli autoři Chrome s vlastní verzí, pojmenovanou „CSS Grid debugging tools“, velmi silně inspirovanou Firefoxem. [vrdl.in/griddevchr](https://developer.chrome.com/blog/new-in-devtools-87/)
 
-A co Safari? Jako skoro vždy – dlouho nic a pak to přišlo. V březnu 2021 představili velice podobný nástroj v článku „Introducing CSS Grid Inspector“. [vrdl.in/griddevsaf](https://webkit.org/blog/11588/introducing-css-grid-inspector/)
+A co Safari? Jako skoro vždy – dlouho nic a pak to přišlo. V březnu 2021 představili velice podobný nástroj.
 
 V květnu 2021 je možné zkoumat grid jen v Safari Technology Preview, ale myslím, že než tyhle texty vydám, bude to už dostupné v běžném Safari, které mají majitelé počítačů od Applu k dispozici.
 
 ## Co přesně můžete v prohlížečích zkoumat?
 
-Poďme se na tyhle nástroje podívat z větší blízkosti. 
+Poďme se na tyhle nástroje podívat z větší blízkosti.
 
 V Chrome zkoumání gridu nebo flexboxu zapnete takto:
 
@@ -58,7 +58,7 @@ Osobně se mi zdá, že Firefox má v této oblasti pořád alespoň malý násk
 
 V překryvné vrstvě gridu a flexboxu ve Firefoxu krásně vidím [linky, oblasti a další pojmy](css-grid-pojmy.md), které jsou při návrhu gridu podstatné.
 
-Chrome ale přišel s jedno novou vlastností, která se mi moc líbí. 
+Chrome ale přišel s jednou novou vlastností, která se mi moc líbí.
 
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-ikony.png" width="1600" height="900" alt="Vizualizace vlastností flexboxu v DevTools Chrome">
@@ -69,4 +69,10 @@ Chrome ale přišel s jedno novou vlastností, která se mi moc líbí.
 
 Ve velmi složité oblasti, kterou představují vlastnosti [gridu](css-grid.md), [flexboxu](css-flex.md) a [zarovnávání](css-box-alignment.md) je tohle dobrý směr. Bez vizuální ztvárnění začíná být velmi těžké si hodnoty vlastností zapamatovat.
 
-Těším se, co nám konkurence prohlížečů ještě v tomhle směru přinese a zda se Firefoxu podaří těmito chytrými vlastnostmi alespoň v některých věcech porážet rozjetý tým Chrome. 
+Těším se, co nám konkurence prohlížečů ještě v tomhle směru přinese a zda se Firefoxu podaří těmito chytrými vlastnostmi alespoň v některých věcech porážet rozjetý tým Chrome.
+
+Odkazy na texty představující tyto nástroje v jednotlivých prohlížečích:
+
+- „Firefox 52 for developers“ [vrdl.in/griddevfir](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/52)
+- „Chrome 87: What's New In DevTools“ [](https://developer.chrome.com/blog/new-in-devtools-87/)
+- „WebKit: Introducing CSS Grid Inspector“. [vrdl.in/griddevsaf](https://webkit.org/blog/11588/introducing-css-grid-inspector/)

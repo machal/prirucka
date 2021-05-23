@@ -1,6 +1,6 @@
-# Přístupnost a CSS layout (grid nebo flexbox): pozor na vizuální pořadí
+# Přístupnost a CSS layout: pozor na vizuální pořadí
 
-Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí. Jen zdánlivě se týká hendikepovaných minorit.
+Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí, a jen zdánlivě se týká hendikepovaných minorit jako jsou zrakově postižení.
 
 Velmi postatné je, že přístupný dokument není až tak nesnadné vytvořit. V nových CSS layoutech kromě „přístupnostních klasik“, jako je využití správných sémantických elementů, vstupuje do hry ještě poněkud kontroverzní možnost změny pořadí.
 
@@ -12,18 +12,18 @@ Také proto je ve specifikaci obsaženo toto důrazné varování:
 
 > Autoři musí použít změnu pořadí pouze pro vizuální, nikoli logické přeskupování obsahu.
 
-Logické pořadí si můžete představit v těchto kontextech konzumace stránky:
+Logické pořadí je zpravidla pořadí  zápisu kódu a jeho využití si můžete představit v těchto kontextech konzumace stránky:
 
 - _Roboti_  
 Například stroje vyhledávačů jako je Google. Roboti postupují podle pořadí v HTML nebo DOM.
 - _Sekvenční navigace stránkou_  
-Tento typ procházení provádějí pomocí odečítačů obrazovky slabozrací nebo pomocí tabulátoru občas i jiní uživatelé.
-- _Hlasově a jinými médii_  
-Přeskupení vizuálního pořadí nezmění řazení v nevizuálních médiích, například v řeči. Není to úplně běžné, ale stránku můžete stylovat také pro automtaické čtení pomocí podmínky `@media speech`.
+Tento typ procházení provádějí pomocí odečítačů obrazovky slabozrací nebo pomocí tabulátoru občas i běžní uživatelé.
+- _Hlasem a jinými médii_  
+Přeskupení vizuálního pořadí nezmění řazení v nevizuálních médiích, například v řeči. Není to úplně běžné, ale stránku můžete stylovat také pro automatické čtení pomocí podmínky `@media speech`.
 
 Může se tedy stát, že někdo, kdo se naviguje pomocí klávesnice, bude procházet odkazy na vašem webu a najednou odskočí z dolní do horní části dokumentu, protože tam je další položka logického pořadí.
 
-Ve specifikaci de dále píše:
+Ve specifikaci mřížky se dále píše:
 
 > CSS grid dává autorům velkou moc přeskupit dokument. Nejedná se však o náhradu za správné uspořádání zdroje dokumentu.
 
@@ -36,7 +36,7 @@ Pokud chcete pro přístupnost něco udělat, rozhodně dbejte na to, aby pořad
 Problém se týká všech CSS vlastností, které mohou v nových systémech rozvržení ovlivnit vizuální pořadí:
 
 - [Vlastnost `order`](css-order.md), která změní způsob automatického umisťování položek.
-- [Deklarace `grid-auto-flow: dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak než jsou uvedeny v DOM.
+- [Deklarace `grid-auto-flow:dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak než jsou uvedeny v DOM.
 - [Vlastnost `grid-area`](css-grid-area.md), která umístí položek do konkrétního místa mřížky a opět nerespektuje pořadí ve zdroji.
 
 Možností, jak přeskupit obsah je samozřejmě více a vztáhnout to můžeme i na starý dobrý `float`, takže tento text berte jako obecné varování.
@@ -72,9 +72,13 @@ Kontejner (`.container`) je obyčejný flexbox, ale za ukázání kódu stojí p
 }
 ```
 
-Původní pořadí (1, 2, 3, 4) se tedy v prohlížeči změní na 3, 1, 2, 4.
+Původní pořadí (1, 2, 3, 4) se tedy při prhlížení stránky v prohlížeči změní na 3, 1, 2, 4.
 
-Jenže navigační pořadí je prohlížečem stále bráno podle HTML. Však to uvidíte ve videu:
+Jenže navigační pořadí je prohlížečem stále bráno podle HTML.
+
+<div class="web-only">
+
+Však to uvidíte ve videu:
 
 <div class="rwd-media rwd-media--160-45">
   <video muted controls width="1600" height="246">
@@ -83,9 +87,9 @@ Jenže navigační pořadí je prohlížečem stále bráno podle HTML. Však to
   </video>
 </div>
 
-Případně si to zkuste naživo v CodePenu: [cdpn.io/e/JjXxRoJ](https://codepen.io/machal/pen/JjXxRoJ).
+</div>
 
-Blbý, že?
+Zkuste si to naživo v CodePenu: [cdpn.io/e/JjXxRoJ](https://codepen.io/machal/pen/JjXxRoJ).
 
 ## Zachránce tabindex? Leda kulový {#pristupnost-tabindex}
 
@@ -108,13 +112,19 @@ Někteří z vás si určitě řekli, že situaci může přeci zachránit vlast
 </div>
 ```
 
-V prohlížeči to po přidání atributů `tabindex` vypadá nadějně:
+V prohlížeči to po přidání atributů `tabindex` může vypadat nadějně.
+
+<div class="web-only">
+
+Video:
 
 <div class="rwd-media rwd-media--160-45">
   <video muted controls width="1600" height="246">
     <source src="https://res.cloudinary.com/vzhurudolu-cz/video/upload/v1601351951/vzhurudolu-video/css-order-before_iwltuj.mp4"
       type="video/mp4">
   </video>
+</div>
+
 </div>
 
 Pořadí navigace je nyní správné, protože odpovídá logickému uspořádání položek na obrazovce:
@@ -129,19 +139,19 @@ Pořadí navigace je nyní správné, protože odpovídá logickému uspořádá
 
 </div>
 
-Máme to vyřešeno? Nejspíš bohužel ne.
+Zdá se, že problém jsme vyřešili. Pořadí v HTML a pořadí navigační se neliší.
 
-Otázka, totiž zní – jak moc je `tabindex` pro tyto případy v praxi použitelný?
+Jenže chyba lávky! Otázka, totiž zní: Jak moc je `tabindex` pro tyto případy v praxi použitelný?
 
 <!-- AdSnippet -->
 
 Atribut `tabindex` totiž nastavuje pořadí pro *celý* dokument, takže jakmile bychom takto zapsali samostatnou komponentu a tu pak vkládali na různá místa DOMu, napácháme s `tabindex` více škody než užitku.
 
-Na druhou stranu – neumím si představit, že bychom kvůli jedné komponentě s `order` natvrdo měnili pořadí `tabindex` pro celou stránku.
+A pak – neumím si představit, že bychom kvůli jedné komponentě s `order` natvrdo měnili pořadí `tabindex` pro celou stránku.
 
 Takže z mého pohledu je `tabindex` pro opravu tohoto problému použitelný jen velmi omezeně.
 
-Ale zkusit si to v CodePenu klidně můžete:
+Ale zkusit si to v CodePenu klidně můžete.
 
 CodePen: [cdpn.io/e/PoNVgyv](https://codepen.io/machal/pen/PoNVgyv)
 
@@ -166,6 +176,8 @@ Pošlu vás na další zdroje, ale nic veselého se tam nedozvíte:
 - Adrian Roselli: „Source Order Matters“. [adrianroselli.com](https://adrianroselli.com/2015/09/source-order-matters.html)
 - Manuel Matuzovic: „The Dark Side of the Grid (Part 2)“. [matuzo.at](https://www.matuzo.at/blog/the-dark-side-of-the-grid-part-2/)
 - Rachel Andrew: „Grid, content re-ordering and accessibility“. [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility)
-- Text „Flexbox & the keyboard navigation disconnect“. [tink.uk](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
+- Léonie Watson: „Flexbox & the keyboard navigation disconnect“. [tink.uk](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
 
-Komunitu, tedy vývojáře, lidi kolem webových specifikací a prohlížečů, zde ještě čeká dost práce. Jednoho by to v roce 2020 překvapilo.
+Komunitu, tedy vývojáře, lidi kolem webových specifikací a prohlížečů, zde ještě čeká dost práce. Jednoho by to v roce 2021 překvapilo.
+
+Ponaučení do praxe zní: Jakmile použijete některou z vlastností, která rozpojuje pořadí vizuální od pořadí logického, přemýšlejte, jak velký vliv to bude mít na přístupnost a hlavně vaše uživatele tam venku.

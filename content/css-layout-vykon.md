@@ -1,8 +1,10 @@
 # CSS layout (grid a flexbox) a rychlost vykreslení stránky
 
-V diskuzích pokročilejších vývojářů a vývojářek se občas objevuje téma „performance“ CSS gridu a flexboxu. Mají tím na mysli rychlost vykreslování. 
+V diskuzích pokročilejších vývojářů a vývojářek se občas objevuje téma „performance“ CSS gridu a flexboxu. Mají tím na mysli rychlost vykreslování.
 
-Poměrně dost se to v komunitě řešilo, když byly tyhle systémy pro rozvržení stránek a komponent nové. Ale je to téma ještě dneska? Neřekl bych. Je zde však jedna věc, na kterou byste si měli dát pozor – použití flexboxu pro rozvržení celé stránky.
+Poměrně dost se to v komunitě řešilo, když byly tyhle systémy pro rozvržení stránek a komponent nové.Ale je to téma ještě dneska? Neřekl bych.
+
+Je zde však jedna věc, na kterou byste si měli dát pozor – použití flexboxu pro rozvržení celé stránky.
 
 ## Je rychlejší grid nebo flexbox? A není to jedno?
 
@@ -28,34 +30,34 @@ Ten složitý celostránkový layout italského testu nám ale může, když už
 
 ## Pokud nemusíte, nepoužívejte flexbox pro celostránkové layouty
 
-Jake Archibald, jeden z mých oblíbených odborníků na frontendový výkon, už v roce 2014 varoval před používáním flexboxu pro celostránkové layouty.
+Jake Archibald, jeden z mých oblíbených odborníků na výkon frontendových aplikací, už v roce 2014 varoval před používáním flexboxu pro celostránkové layouty.
 
 Ptáte se proč? Jeden důvod je výkon, ale daleko důležitější jsou neměnné principy, jak flexbox rozvržení počítá.
 
 Mrkněme se spolu na demo, které k tomu připravil. Zde je společné HTML:
 
 ```html
-  <div class="container">
-    <div class="site-header">
-      <div class="site-title">This is my site</div>
-      <!-- … -->
-    </div>
-    <div class="content">
-      <div class="main">
-        <h1>This is my article</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing…</p>
-      </div>
-      <nav id="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <!-- … -->
-        </ul>
-      </nav>
-      <aside>
-        <p>Hi, I'm Clarence Quince…</p>
-      </aside>
-    </div>
+<div class="container">
+  <div class="site-header">
+    <div class="site-title">This is my site</div>
+    <!-- … -->
   </div>
+  <div class="content">
+    <div class="main">
+      <h1>This is my article</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing…</p>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <!-- … -->
+      </ul>
+    </nav>
+    <aside>
+      <p>Hi, I'm Clarence Quince…</p>
+    </aside>
+  </div>
+</div>
 ```
 
 Ano, jde o klasické třísloupcové rozvržení s obsahem uprostřed.
@@ -128,9 +130,9 @@ Připomínám, že nechtěné překreslení layoutu uživatele rozhodně nepotě
 
 Jake Archibald ovšem varuje: „Nenechte se tímto příspěvkem vyděsit z flexboxu.“
 
-A má pravdu. Jeho test je postavený i na svou dobu na přespříliš zpomaleném výkonu stahování a vykreslování. Dnes už rychlost mobilního připojení 2G nemá smysl testovat. Jeho dema mě v roce 2021 už při sebevětším zpomalení testovacího zařízení a připojení k internetu žádné postřehnutelné nekalosti neukázala.
+Má pravdu. Jeho test je postavený i na svou dobu na silně zpomalené rychlosti stahování a vykreslování. Dnes už rychlost mobilního připojení 2G nemá smysl testovat. Jeho dema mě v roce 2021 už při sebevětším zpomalení testovacího zařízení a připojení k internetu žádné postřehnutelné nekalosti neukázala.
 
-Nicméně, je nezpochybnitelný fakt, že flexbox i grid jsou vykreslovány zcela jiným způsobem:
+Nicméně, je nezpochybnitelný fakt, že flexbox i grid jsou vykreslovány zcela jiným způsobem, takže připomenu, co už jsem psal:
 
 - Flexbox se vykresluje od obsahu až k layoutu. Prohlížeč nejprve musí znát obsah, spočítat jeho rozměry a pak teprve vykreslit layout.
 - Grid prohlížeče renderují tak, jak byste očekávali – nejprve layout, pak teprve obsah. Layout je proto vždy pevný jako beton.
@@ -139,7 +141,7 @@ Zcela konkrétně to popsal Bohumil Jahoda, autor skvělého JeČas.cz, kterého
 
 > Flexbox trpí tím, že musí čekat na stažení celého HTML nebo poskakuje. … Týká se to použití u dlouhého obsahu. Problém je v tom, že poslední element může totálně ovlivnit, jak se daná část vykreslí. Takže prohlížeč buď musí čekat na stažení celého potřebného HTML, nebo vykreslit neúplný obsah, což může vést k tomu poskakování.
 
-Vzal jsem to z Twitteru, kde si můžete pročíst celou diskuzi. [vrdl.in/flexposk](https://twitter.com/Jahoda/status/1367863896900505605)
+Vzal jsem to z Twitteru, jak jinak, kde si můžete pročíst celou diskuzi. [vrdl.in/flexposk](https://twitter.com/Jahoda/status/1367863896900505605)
 
 ### Nejde ani tak o flexbox, jako o přednost obsahu při skládání layoutu
 
@@ -165,7 +167,7 @@ Stručně to popišme:
 - Klíčové slovo `auto` zde odpovídá `minmax(min-content, max-content)`, takže nejmenší i největší možné rozměr této buňky layoutu je opět na prohlížeči.
 - Prvek `aside` není definován kontejnerem, který určuje jen třísloupcový layout. Tento nový je proto přidán danymicky, což způsobí nechtěné překreslení layoutu.
 
-Ale vraťme se k varování Jakea Archibalda a nenechme si tím flexbox zprotivit. Toto se projeví jen na velmi komplexních stránkách a ještě na pomalých zařízeních.
+Ale vraťme se k varování Jake Archibalda a nenechme si tím flexbox zprotivit. Problémy se pravděpodobně projeví jen na velmi komplexních stránkách a ještě na pomalých zařízeních.
 
 Vychází z toho ale jedno ponaučení – pokud kódujete celostránkový layout ve flexboxu, nezapomeňte to otestovat na nejhorším možném zařízení, které si ve vaší cílové skupině umíte představit.
 

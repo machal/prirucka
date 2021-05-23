@@ -1,4 +1,4 @@
-# Seznámení s gridem, flexem a multicolem
+# Seznamka
 
 Doba je rychlá a inovace zvýšily tempo řešení situací, které lidem dříve zabíraly velké množství času.
 

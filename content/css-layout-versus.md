@@ -1,4 +1,4 @@
-# Grid, flexbox a multicol v kontextu dalších systémů layoutu
+# Moderní a nemoderní layouty
 
 „Musíš se teď odnaučit, co tě dřív učili.“ říká mistr Yoda Lukovi Skywalkerovi v páté epizodě kultovních Star Wars.
 

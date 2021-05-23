@@ -1,5 +1,9 @@
 # Podpora flexboxu, gridu a vícesloupcového layoutu v prohlížečích
 
+<div class="ebook-only">
+To, že se v e-booku o layoutech v CSS zabýváme starým Explorerem, samozřejmě není jen tak. V této podkapitole se chceme zaměřit na problémy prohlížečů s podporou flexboxu, gridu a spol.
+</div>
+
 „Nové systémy layoutu v CSS jsou tak úžasné, že to jistě musí mít nějaký háček“, mohl by si někdo myslet.
 
 Autorovi téhle myšlenky bychom museli přiznat jistou dávku zdravého skepticismu. Nebo dokonce nemalou životní zkušenost s vývojem webů.
@@ -44,7 +48,7 @@ Za každým řádkem kódu mohla číhat nekompatibilita v některém prohlíže
 
 Znalost některých chyb byla tak zásadní, že jsem je svého času musel učit na svých školeních. A při té příležitosti jsem jim začal říkal česky: _flexboty_. Boty, které zanechali výrobci prohlížečů při implementaci flexboxu.
 
-Když jsem ale u příležitosti psaní tohoto textu srovnával současný stav s tím dřívějším, došel jsem k radostnému poznání.
+Když jsem během psaní tohoto textu srovnával současný stav s tím dřívějším, došel jsem k radostnému poznání.
 
 <figure>
 <img src="../dist/images/original/css-flexbox-caniuse.png" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
@@ -53,17 +57,9 @@ Když jsem ale u příležitosti psaní tohoto textu srovnával současný stav 
 </figcaption>
 </figure>
 
-Je to tak. Takřka všechny chyby v moderních prohlížečích jsou opravené. Zůstaly jen ty navázané na Internet Explorer 11.
+Je to tak, jak vidíte na obrázku. Takřka všechny chyby v moderních prohlížečích jsou opravené. Zůstaly jen ty navázané na Internet Explorer 11.
 
 Dnes už tedy můžete psát flexboxový kód, aniž byste se museli bát. Stačí se vyhnout určitým zápisům a bude to vše dobře fungovat i v Internet Exploreru 11.
-
-### Stačí se vyhnout {#vyhnout}
-
-Když jsem se vývojářů ptal na jejich mentální zkratky, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
-
-> U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default) a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
-
-Stačí málo a všechno to dobře funguje.
 
 ### Podpora flexboxu je prakticky plná {#flexbox-podpora}
 
@@ -92,7 +88,9 @@ A co náš dědeček mezi prohlížeči?
 
 Tohle je zajímavější. Internet Explorer byl sice první prohlížeč, který moderní layouty naimplementoval, ale stejně jako všechny ostatní „prvoimplementace“ šlo o pokus plný chyb.
 
-Problémem IE tedy není množství chyb, chyby dělají všichni programátoři prohlížečů, ale způsob aktualizace. Kdysi tak populární prohlížeč od Microsoftu vycházel v nových verzích z dnešního pohledu velmi pomalu, po letech, nikoliv měsících. A navíc – jedenáctá verze Exploreru je poslední a nikdo ji už aktualizovat nebude. Jenže vysvětlete to některým uživatelům. Ještě chvíli se s ním prostě budeme setkávat.
+Problémem IE tedy není množství chyb, chyby dělají všichni programátoři prohlížečů, ale způsob aktualizace.
+
+Kdysi tak populární prohlížeč od Microsoftu vycházel v nových verzích z dnešního pohledu velmi pomalu, po letech, nikoliv měsících. A navíc – jedenáctá verze Exploreru je poslední a nikdo ji už aktualizovat nebude.
 
 Pojďme na ty chyby, ať tu nepříjemnost máme za sebou.
 
@@ -110,16 +108,15 @@ Máte přečteno? A máte z toho depresi? Chvilku počkejte.
 
 <!-- AdSnippet -->
 
-Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohrozí. Stačí jen vědět, že si v případě _podivného_ chování IE11 u flexboxu musíte vzpomenout na existenci stránky Flexbugs nebo tohoto textu.
+Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohrozí. Stačí jen vědět, že si v případě _podivného_ chování IE11 u flexboxu musíte vzpomenout na existenci stránky Flexbugs nebo tohoto textu. A pak ještě jednu věc.
 
-### Řešení chyb v IE? Zkuste vynechat flex-basis {#flexbox-ie-basis}
+### Zkuste vynechat flex-basis
 
-Ani se tady nebudu pokoušet chyby vysvětlovat nebo nastiňovat možná řešení. Spíše nabídnu svůj postup, který jsem si vypracoval v době, kdy pracoval na projektech, vyžadujících podporu posledního Exploreru.
+Když jsem se vývojářů na Twitteru ptal na jejich mentální zkratky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
 
-1. Během práce v hlavním prohlížeči průběžně testuji také v dalších prohlížečích, včetně IE11. Pokud jej na počítači nemáte, zvažte Browserstack nebo podobná řešení.
-2. Velká část chyb v IE11 je navázaná na [vlastnost `flex-basis`](css-flex-basis.md), proto se jí snažím vyhnout a používám namísto ní `width` nebo `height`.
-3. Pokud narazím na jiný problém, zkonzultuji Flexbugs, kde pravděpodobně naleznu snadné řešení.
-4. Profit!
+> U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default) a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
+
+Často tedy stačí namísto [vlastnosti `flex-basis`](css-flex-basis.md) použít `width` nebo `height` a všechno to dobře funguje.
 
 Věřte mi. Nic komplikovaného na tom není a používat flexbox i s podporou IE11 je úplně v pohodě.
 
@@ -127,9 +124,7 @@ Věřte mi. Nic komplikovaného na tom není a používat flexbox i s podporou I
 
 Pokud jste počítali, do celkového počtu 17 chyb stále tři chybí. Ano, máte pravdu a vyhráváte… pobyt v Muzeu historie webových prohlížečů.
 
-Zbývající 3 boty má na svědomí Internet Explorer 10. To je ale prohlížeč, který má i v českých luzích a pod slovenskými horami prakticky nulovou přítomnost na zařízeních našich uživatelů.
-
-Nebudeme si proto kazit den chybami historických prohlížečů a ty tři chyby prostě zamlčíme.
+Zbývající 3 boty má na svědomí Internet Explorer 10 a ten, jak už jsem psal, dávno vyhynul.
 
 Pokud by vás opravdu hodně zajímaly, podívejte se na tu svého času slavnou stránku Philipa Waltona. Flexbugs: [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
 
@@ -150,11 +145,11 @@ A pak na ty, kteří mají trochu smůlu.
 </figcaption>
 </figure>
 
-Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu. Obávám se, že za to může komplikace jménem podpora gridu v IE.
+Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu před gridem. Obávám se, že za to může komplikace jménem podpora gridu v IE.
 
 Je potřeba říct, že i tenhle prohlížeč grid podporuje a nepodporuje toho z něj vůbec málo: implicitní mřížku, [funkci `repeat()`](css-repeat.md), funkci [`minmax()`](css-minmax.md) nebo klíčová slova `min-content` a `max-content`.
 
-Na druhou stranu – jde jen o menší podmnožinu současné šíře toho čemu říkáme CSS Grid Layout, navíc často jinak implementovanou.
+Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastností toho čemu říkáme CSS Grid Layout, navíc často jinak implementovanou.
 
 Máme zde sice [Autoprefixer](autoprefixer.md), který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 
@@ -164,7 +159,15 @@ Jo, to když Explorer podporovat nemusíte, to je jiná písnička…
 
 <!-- AdSnippet -->
 
+<div class="ebook-only">
+V další podkapitole si o podpoře gridu v IE povíme více.
+</div>
+
+<div class="web-only">
+
 Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Exploreru](css-grid-msie.md) a pojďme dál.
+
+</div>
 
 ### Gridbugs, boty v mřížce {#gridbugs}
 
@@ -172,7 +175,7 @@ Podobně jako první implementace flexboxu, také první napsané enginy pro vyk
 
 A tak se známá propagátorka moderních rozvržení v CSS, Rachel Andrew, nechala inspirovat stránkou Flexbugs a vytvořila svého času její obdobu pro mřížku. Vznikly Gridbugs. [github.com/rachelandrew/gridbugs](https://github.com/rachelandrew/gridbugs)
 
-Asi jste si všimli, že o té stránce píšu v minulém čase, a to jste si všimli dobře. Ke dni psaní zde vidím poslední commit ze září 2017. Podobně jako u flexboxu, také u gridu postupně prohlížeče chyby odstranily.
+Asi jste si všimli, že o té stránce píšu v minulém čase. Ke dni psaní zde vidím poslední commit ze září 2017. Podobně jako u flexboxu, také u gridu postupně prohlížeče chyby odstranily.
 
 Během přípravy pro psaní tohoto textu jsem poctivě prošel všech 14 chyb a podle všeho zůstává aktivní jen jedna bota, _gridbug #3_ – chybějící podpora fragmentace.
 
@@ -234,7 +237,7 @@ Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmín
 
 Jak je vidno, v moderních prohlížečích je to v pořádku.
 
-Nepodpora vlastností `justify-items` i `justify-self` v IE je vlastnost, nikoliv bug. Tyto vlastnosti s flexboxem bohužel nelze kombinovat v žádném prohlížeči.
+Nepodpora `justify-items` i `justify-self` v IE je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči.
 
 V případě, že podporujete IE to je u gridu celkově složitější, viz následující [pojednání o tom](css-grid-msie.md).
 
