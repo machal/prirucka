@@ -1,4 +1,4 @@
-# Metrika „První nečinnost procesoru“ (First Input Delay, FID)
+# Metrika „Prodleva prvního vstupu“ (First Input Delay, FID)
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která udává čas mezi interakcí uživatele se stránkou a jejím skutečným provedením. Je velmi důležitá, protože je součástí [Core Web Vitals](web-vitals.md).
 

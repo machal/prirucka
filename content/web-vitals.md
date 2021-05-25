@@ -23,9 +23,9 @@ Celé se to točí kolem tří hlavních metrik:
 * [*Largest Contentful Paint (LCP)*](metrika-lcp.md)  
 Největší vykreslení obsahu. Metrika, která popisuje rychlost načítání stránky – *načítací (loading)* výkon. Jde o něco mezi [FCP](metrika-fcp.md) a [SpeedIndexem](speedindex.md).
 * [*First Input Delay (FID)*](metrika-fid.md)  
-První nečinnost procesoru. Metrika, která popisuje jak rychle může uživatel na stránce začít provádět úlohy – výkon *interaktivity*. Jedná se tedy o metriku podobnou [TBT](metrika-tbt.md).
+Prodleva prvního vstupu. Metrika, která popisuje jak rychle může uživatel na stránce začít provádět úlohy – výkon *interaktivity*. Jedná se tedy o metriku podobnou synteticky měřené [TBT](metrika-tbt.md).
 * [*Cumulative Layout Shift (CLS)*](metrika-cls.md)  
-Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layoutu během vykreslování, což je úplně nová metrika, kterou si na Vzhůru dolů brzy popíšeme.
+Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layoutu během vykreslování.
 
 Google také rozlišuje tři stavy metrik. Nově je označuje takto:
 

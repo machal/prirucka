@@ -93,7 +93,7 @@ Vývojáři a vývojářky, naučte se používat Chrome DevTools, zejména nás
 Raději než na [Lighthouse skóre](metrika-lps.md) se v prvé řadě se zaměřte na Core Web Vitals získané od uživatelů – alespoň z Chrome UX Reportu. Ony totiž určují, jak si povedete v signálech Page Experience v Googlu.
 
 - [LCP](metrika-lcp.md) – největší vykreslení obsahu. Asi nejdůležitější metrika, protože udává rychlost načtení. Mám o ní také [video](https://www.vzhurudolu.cz/video/webinar-lcp).
-- [FID](metrika-fid.md) – první nečinnost procesoru, tedy zhruba jak moc máte pokažený javascriptový kód. Obvykle je na webech v pořádku, protože v rámci Core Web Vitals je nastavená málo přísně. V syntetických měřeních sledujte [TBT](metrika-tbt.md).
+- [FID](metrika-fid.md) – prodleva prvního vstupu, tedy zhruba jak moc máte pokažený javascriptový kód. Obvykle je na webech v pořádku, protože v rámci Core Web Vitals je nastavená málo přísně. V syntetických měřeních sledujte [TBT](metrika-tbt.md).
 - [CLS](metrika-cls.md) – kumulativní posun layoutu. Nová a poněkud zmatená a matoucí metrika. I o ní jsem natočil hodinové [video](https://www.vzhurudolu.cz/video/webinar-cls).
 
 <figure>

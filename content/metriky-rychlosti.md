@@ -19,7 +19,7 @@ Jde o následující tři metriky.
 | Metrika                                        |  Kdy vzniká?                  |
 |:-----------------------------------------------|:------------------------------|
 | [Largest Contentful Paint (LCP)](metrika-lcp.md) | Největší vykreslení obsahu  |
-| [First Input Delay (FID)](metrika-fid.md)      | První nečinnost procesoru     |
+| [First Input Delay (FID)](metrika-fid.md)      | Prodleva prvního vstupu     |
 | [Cumulative Layout Shift (CLS)](metrika-cls.md) | Kumulativní posun layoutu    |
 
 </div>
