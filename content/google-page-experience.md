@@ -70,7 +70,7 @@ Zaměřím se zde hlavně na Web Vitals, metriky LCP, FID a CLS, které jsou z u
 
 ### 1) Měří se u uživatelů
 
-Důležité je, že Google bude brát data od skutečných uživatelů, z [Chrome UX Reportu](chrome-ux-report.md).
+Důležité je, že se budou využívat data od skutečných uživatelů, z [Chrome UX Reportu](chrome-ux-report.md).
 
 Explicitně raději uvádím, že Google nezajímají syntetická měření v [Lighthouse](lighthouse.md) a už vůbec ne [Lighthouse skóre](metrika-lps.md). Ty slouží pro vývojáře a zjednodušení optimalizací, nikoliv pro zjištění, jak na tom web je u Googlu.
 
@@ -83,18 +83,93 @@ Další aspekty, které byly uváděny na Google.IO skvěle [v tweetu](https://m
 
 ### 2) Každá metrika samostatně jako signál
 
+Po Page Experience update bude Google hodnotit každou z Web Vitals samostatně jako signál pro hodnocení.
+
+Chápu to tak, že nemusíte mít všechny zelené, ale pro každou jednotlivou metriku budete porovnáváni s konkurencí.
+
+Takže pokud konkurence nebude mít zelené LCP a vy ano, můžete za tuto oblast získat zvýhodnění.
+
 ### 3) Zvýhodnění dostanete za zelené metriky
 
-<!-- TODO červená = no boost, zelená = boost -->
+Viz obrázek v Tweetu. John Mueller to podepřel půvabnou grafikou vytvořenou snad v Malování:
 
-### 4) Doména > Skupina stránek > URL
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Think of it like this. Graphic not to scale. <a href="https://t.co/6lLUYNM53A">pic.twitter.com/6lLUYNM53A</a></p>&mdash; 🍌 John 🍌 (@JohnMu) <a href="https://twitter.com/JohnMu/status/1395798952570724352?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote>
 
-<!-- TODO -->
+Systém vyhodnocování je nastavený na zvýhodňování. Pokud máte metriku v červené oblasti hodnot, nezískáváte žádné. 
+
+Pokud v oranžové oblasti hodnot, čím blíže bude hodnota optimu, tím vyšší zvýhodnění získáte.
+
+Nejvyšší „boost“ získáváte s metrikou v zeleném škále hodnot.
+
+### 4) Lepší než zelené už to být nemůže
+
+Google dále [píše](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021):
+
+> Dopad na hodnocení stránek bude stejný pro všechny stránky, které jsou v dobrém rozsahu u všech základních ukazatelů Web Vitals, bez ohledu na jejich individuální skóre v Core Web Vitals.
+
+To znamená, že když už máte zelené skóre, nemůže to být lepší.
+
+Google píše, že například stránka s LCP 1750 ms (lepší než „dobrá“ hranice pro LCP) a jiná stránka s 2500 ms (na úrovni „dobré“ hranice) by se na základě signálu LCP nerozlišovaly.
+
+Mimo dobrý rozsah by rozdílné hodnoty metriky Core Web Vital u dvou stránek mohly vést k rozdílnému hodnocení v rámci Page Experience.
 
 ### 5) Doména > Skupina stránek > URL
 
-<!-- TODO -->
+Když se podíváte na grafiku od Fabiana Krumbholze, měla by vás zaujmou část týkajících se domény (Origin) a skupiny stránek.
+
+Víte, že z CrUX dat často nejde vytáhnout informace pro konkrétních URL. Je zajímavé, že Google v tom případě nesáhne po datech pro celou doménu, ale po datech pro „skupinu stránek“.
+
+Skupinu stránek osobně chápu podle seskupení, které Google dělá v reportu Web Vitals v Search Console. Na jednu hromadu tam dává stránky, které jsou si podobné (např. všechny kategorie v e-shopu) a zároveň vidí, že mají problémy s podobnými metrikami.
+
+Takže, když nejsou data pro URL, vezmou se data pro skupinu stránek. Když nejsou data pro skupinu stránek, vezmou se data pro doménu. Přesně jak říká Babica.
+
+A co když nejsou data pro doménu? I to se stává, zejména u méně navštěvovaných webů. Myslím, že pak prostě výhodu na základě Page Experience signálů získat nemůžete.
 
 ### 6) Data se berou globálně
 
-<!-- TODO -->
+Zajímavé také je, že data se z CrUX nevezmou podle aktuální lokality, takže například pro Česko nebo Slovensko, ale z globální návštěvnosti.
+
+Takže pokud v ČR a SR máte dobré hodnoty Web Vitals, ale kazí vám je malá část návštěvníků kdesi na druhém konci světa, budete to muset vyřešit.
+
+### 7) Data se berou ze posledních 28 dní
+
+Google nebude pracovat s měsíčními daty, která např. na PageSpeed.cz zobrazujeme v [záložce Domény](https://pagespeed.cz/r/c8c4649e8e44#domeny), ale se stavem za posledních 28 dní, který znáte z PageSpeed Insights a který zobrazujeme [v záložce Shrnutí](https://pagespeed.cz/r/c8c4649e8e44#shrnuti).
+
+## Konec zvýhodnění AMP (a konec AMP?)
+
+Asi víte, že [AMP stránky](amp.md) dříve získávaly zvýhodnění na určitých místech ve vyhledávání Googlu.
+
+Určitě to platilo v takzvaném Top Stories karuselu, ale také nejspíš v Google News.
+
+<!-- TODO obrazek AMP v Top Stories -->
+
+Google za to byl terčem kritiky, že tímto způsobem tlačí lidem svou technologii, což asi chápu. Nicméně už v době, kdy toto implemtovali, mluvili v Googlu o dočasnosti tohoto řešení.
+
+Google totiž nebyl schopný dobře měřit rychlost webu u uživatelů, proto dal zvýhodnění webům psaným v technologii, která určitou rychlost dokáže garantovat.
+
+Nyní už to neplatí, takže zvýhodnění v Top Stories, Google News a na dalších místech může získat jakýkoliv web, který je dostatečně rychlý, respektive plní dostatečně signály z Page Experience.
+
+Respektive – v zásadě ani rychlý být nemusí, stačí když plní podmínky specifikované [v Google News policies](https://support.google.com/news/publisher-center/answer/6204050).
+
+## Konec AMP?
+
+Přání je otcem myšlenky, takže mnoho lidí, kteří AMPu nemohou přijít na jméno, sepsalo [články](https://www.lafoo.com/the-end-of-amp/) o [konci](https://plausible.io/blog/google-amp) AMPu.
+
+Proč by měly firmy publikovat v AMP, když „jediným důvodem“ pro použití AMP je právě přítomnost v exkluzivních místech SERPu?
+
+Přátelé, problém je s tím „jediným důvodem“.
+
+AMP je technologie, která dokáže garantovat vysokou kvalitu výstupu z pohledu rychlosti, uživatelské zkušenosti nebo například přístupnosti. Z mé zkušenosti konzultanta rychlosti webů můžu říct, že na takové úrovni to u běžných webových technologií dokáže jen velmi málo týmů.
+
+Mimochodem, uvedené potvrzují [i statistiky](https://blog.amp.dev/2020/10/13/meet-amps-page-experience-guide/):
+
+> 60% of AMP domains and 12% non AMP domains pass Web Vitals.
+
+Pokud se někdy přiblíží konec AMP, bude to z úplně jiných důvodů a bude pak velmi zajímavé o tom psát i diskutovat. Teď se to ale nestane.
+
+AMP stránky také pravděpodobně nebudou mít označení ve výsledcích vyhledávání. Pokud to chápu správně, Google uvažuje o zvýraznění webů, které splňují Core Web Vitals.
+
+
+<!-- signed exchanges -->
+
+<!-- co musím udělat? -->
