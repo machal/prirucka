@@ -15,7 +15,7 @@ Skeptik by se mě na tomto místě zeptal, jaký to má háček. Ano, má to há
 
 ## Těžká hlava autora technické knížky
 
-Psaní knížek je běh na dlouhou trať. Pokud dlouho pracujete na technické knížce (a já na ni pracuji přes rok), může se vám stát, že v průběhu psaní vznikne technologie, která celý hotový materiál vezme a vyhodí jej do koše. Nebo vám na něj dá přinejmenším radikálně jiný pohled.
+Psaní knížek je maraton. Pokud dlouho pracujete na technické knížce (a já na ni pracuji přes rok), může se vám stát, že v průběhu psaní vznikne technologie, která celý hotový materiál vezme a vyhodí jej do koše. Nebo vám na něj dá přinejmenším radikálně jiný pohled.
 
 To druhé se mi děje právě teď, v dubnu 2021, když píšu tyto řádky. Zhruba před třemi týdny se objevila první zkušební implementace Container Queries v Chrome Canary, verzi prohlížeče pro nedočkavé vývojáře.
 
@@ -37,7 +37,7 @@ Pořád si to myslím, ale tehdy to tak jednoduché nebylo:
 
 Proč to tehdy vypadalo, že tahle technologie se do prohlížečů nedostane? Lidé ze standardizační organizace W3C tehdy nad Container Queries přemýšleli a zdálo se jim, že je to špatně implementovatelné v prohlížečích.
 
-Pak debata na mnoho let utichla a zůstalo jen u JavaScriptových implementací, které jsou ale nejsou z pohledu rychlosti vykreslení doporučeníhodné.
+Pak debata na mnoho let utichla a zůstalo jen u javascriptových implementací, které jsou ale nejsou z pohledu rychlosti vykreslení doporučeníhodné.
 
 Pokud by vás to jako exkurze do minulosti zajímalo, zde je ten můj článek: [vrdl.cz/p/element-queries](https://www.vzhurudolu.cz/prirucka/element-queries).
 
@@ -55,11 +55,11 @@ Skládá se ze dvou kroků. První je definování kontejneru:
 }
 ```
 
-Vlastnost `contain` není v CSS nová. Definuje zapouzdření určité části stránky. Prohlížeči dáváme nápovědu, které části (komponenty) jsou izolovatelné od zbytku tak, aby se nemusela překreslovat celá stránku a šetřil se výkon.
+Vlastnost `contain` není v CSS nová. Definuje zapouzdření určité části stránky. Prohlížeči dáváme nápovědu, které části (komponenty) jsou izolovatelné od zbytku tak, aby nemusel překreslovat celou stránku a šetřil výkon.
 
 Hodnota `layout` udává „zapouzdření pro rozvržení“. Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují.
 
-Další hodnota `inline-size` říká, že půjde o layout rozvržení na inline ose, tedy v případě našich jazyků vodorovně.
+Další hodnota `inline-size` říká, že půjde o layout rozvržení na inline ose, tedy v případě evropských jazyků vodorovně.
 
 Pokud by vás princip zapouzdření zajímal více, mrkněte se na Vzhůru dolů, ale pro potřeby pochopení Container Queries už víte dost. [vrdl.cz/p/css-contain](https://www.vzhurudolu.cz/prirucka/css-contain).
 
@@ -79,13 +79,17 @@ Je možné, že i v době, kdy toto čtete, budou Container Queries schované za
 2. Jděte do vlaječkového nastavení: `chrome://flags`.
 3. Povolte možnost „Enable CSS Container Queries“.
 
+Než dojde na moje příklady, můžete si tam zatím vyzkoušet například CodePen „CSS Container Queries Demo“ od Bramuse Van Dammeho.
+
+CodePen: [cdpn.io/e/LYxNpeE](https://codepen.io/bramus/pen/LYxNpeE)
+
 Na závěr teoretického úvodu přidávám odkaz na draft specifikace podmínky `@container` od Miriam Suzanne na Githubu. [vrdl.in/contdraft](https://github.com/w3c/csswg-drafts/issues/5796)
 
-A nyní prakticky.
+A teď prakticky.
 
 ## Naše komponenta v Container Queries
 
-Poďme si to poskládat dohromady na konkrétním příkladu, našeho „Media Objectu“:
+Poďme si to poskládat dohromady na konkrétním příkladu našeho „Media Objectu“:
 
 ```css
 .container {
@@ -109,6 +113,8 @@ Poďme si to poskládat dohromady na konkrétním příkladu, našeho „Media O
 }  
 ```
 
+Rodičovskému prvku (`.container`) nejprve nastavíme izolaci na úrovni layoutu a prohlížeči napovíme, že rozvržení bude vodorovné. V dotazu `@container` je pak dotaz na šířku prvku `.container`.
+
 Bezva! Zde už řešení netrpí problémy, které způsobovaly Media Queries. Při nastavování hodnoty bodu zlomu (`30em`) se můžeme soustředit na samotný obsah a nemusíme do toho započítávat další hodnoty ve stránce.
 
 CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
@@ -118,7 +124,7 @@ Díky Container Queries se prostě zaměříme jen na danou komponentu a podmín
 <figure>
 <img src="../dist/images/original/vdlayout/container-queries-chrome.png" alt="">
 <figcaption markdown="1">
-Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jejich obsahu.“ Media Queries: „Uff!“
+Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jejich obsahu.“ Media Queries: „Uff!“, Container Queries: „Podrž mi to pivo…“
 </figcaption>
 </figure>
 
@@ -151,6 +157,8 @@ CSS:
 
 Pomocí [`display:grid`](css-display.md), vlastnosti [`grid-template-columns`](css-grid-template.md) a [`gap`](css-gap.md) definuji dvousloupcovou mřížku s mezerou mezi sloupci o šířce `1em`.
 
+Možná to vypadá trochu složitě, ale zatím layout vysvětlovat nebudu. Pokud jste v e-booku, pro detailní informace klidněte na název vlastnosti nebo si počkejte do další kapitoly, kde to vše trpělivě vysvětlíme.
+
 CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
 ## Podpora v prohlížečích a náhradní řešení
@@ -159,20 +167,20 @@ Jak jsem už psal, na jaře 2021 Container Queries nepodporuje žádný prohlí�
 
 Přepokládám ale, že někteří čtenáři na tenhle text narazí v době, kdy budou už existovat implementace v některých prohlížečích, v jiných naopak ne.
 
-Osobně bych očekával situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí v řádu měsíců, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
+Osobně bych očekával nějakou dobu trvající situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí v řádu měsíců, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
 
-Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií. Pomocí postupné vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a horší nepodporujícím.
+Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií. Pomocí postupného vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a horší nepodporujícím.
 
 Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili. Například v případě nepodpory Safari bude naše komponenta v tomto prohlížeči vypadat následovně.
 
 <figure>
 <img src="../dist/images/original/vdlayout/container-queries-safari.png" alt="">
 <figcaption markdown="1">
-Safari: „Tohle neumím, ale nějak to zobrazím.“
+Safari: „Container Queries neumím, ale nějak to zobrazím.“
 </figcaption>
 </figure>
 
-Na mobilu vůbec nevadí, že podmínku `@container` prohlížeč neumí. Na větších obrazovkách dostane uživatel jiný vzhled komponenty. Vadí to? Nemusí.
+Na mobilu nemusí vadit, že podmínku `@container` prohlížeč neumí. Tam layout často nepotřebujeme. Na větších obrazovkách dostane uživatel jiný vzhled komponenty. Vadí to? Nemusí.
 
 Osobně bych přemýšlel, jak moc odlišný uživatelský prožitek zde lidé dostávají a kolik lidí se to dotkne. Safari je ve střední Evropě populární hlavně na mobilech, jako desktopový prohlížeč jej používá jen pár jednotek procent uživatelů.
 
