@@ -20,9 +20,9 @@ Ve [videu](https://www.youtube.com/watch?v=h00kn5J-F2Q) z letošní konference G
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h00kn5J-F2Q?start=122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Je zajímavé, že se signály nyní třídí trochu jinak. Není to dokonalé, ale řekněme, že blíž k dokonalosti. Signály jsou roztříděné do následujících oblastí.
+Je zajímavé, že se signály nyní třídí trochu jinak. Není to dokonalé, ale řekněme, že blíž k dokonalosti. Signály jsou rozdělené do následujících oblastí.
 
-### Načítání
+### Načítání (rychlost)
 
 V originále se kategorie jmenuje „Loading“. Patří sem metriky:
 
@@ -42,9 +42,14 @@ Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layo
 * _Žádné otravné překryvné prvky_  
 V originále „no abusive interstitials“ znamená, že byste neměli přikrývat obsah stránky velkými modálními okny s reklamou. Více najdete v [textu od Googlu](https://developers.google.com/search/blog/2016/08/helping-users-easily-access-content-on).
 
-Všimněte si, že CLS, se neuvádí mezi rychlostními metrikami, což je samozřejmě dobře, protože s rychlostí zase tak nesouvisí.
+Všimněte si, že CLS se neuvádí mezi rychlostními metrikami, což je samozřejmě dobře, protože s rychlostí zase tak nesouvisí.
 
-<!-- TODO obrázek hodnoty metriky WV -->
+<figure>
+<img src="../dist/images/original/web-vitals.png" alt="Jednotlivé metriky Web Vitals">
+<figcaption markdown="1">
+*Obrázek: Metriky Web Vitals. Zdroj: [web.dev](https://web.dev/vitals/).*
+</figcaption>
+</figure>
 
 → *Související: [Metriky Web Vitals od Googlu](web-vitals.md)*.
 
@@ -55,14 +60,14 @@ V originále „Security & Privacy“. Hlídá se zde toto:
 * _[HTTPS](https.md)_  
 Měli byste na webu mít zapnutý bezpečný protokol HTTPS. Tohle už snad máte, ale pro jistotu odkaz na [podklady od Googlu](https://developers.google.com/search/blog/2016/11/heres-to-more-https-on-web).
 * _Žádná upozornění k bezpečnému prohlížení_  
-Lépe to asi vysvětlí originál - „No safe browsing flags“. Váš web nebo stránka nesmí být detekována jako ohrožující uživatele. Více [v textu od Googlu](https://developers.google.com/search/blog/2016/09/more-safe-browsing-help-for-webmasters).
+Lépe to asi vysvětlí originál - „No safe browsing flags“. Váš web nebo stránka nesmí být detekována jako ohrožující pro uživatele. Více [v textu od Googlu](https://developers.google.com/search/blog/2016/09/more-safe-browsing-help-for-webmasters).
 
 ### Přístupnost
 
 V originále pochopitelně říkají „Accessibility“ a patří sem jen jedna oblast:
 
 * _Přívětivost pro mobilní uživatele_  
-V originále „Mobile friendliness“. V této oblasti [Google sleduje](https://developers.google.com/search/blog/2015/02/finding-more-mobile-friendly-search) zda jsou stránky dobře optimalizované pro uživatele mobilních webů. Je možné si použitelnost na mobilech [otestovat](https://search.google.com/test/mobile-friendly).  
+V originále „Mobile friendliness“. V této části [Google sleduje](https://developers.google.com/search/blog/2015/02/finding-more-mobile-friendly-search) zda jsou stránky dobře optimalizované pro uživatele mobilních webů. Je možné si použitelnost na mobilech [otestovat](https://search.google.com/test/mobile-friendly).  
 
 ## Jak se to bude posuzovat?
 
@@ -73,6 +78,15 @@ Zaměřím se zde hlavně na Web Vitals, metriky LCP, FID a CLS, které jsou z u
 Důležité je, že se budou využívat data od skutečných uživatelů, z [Chrome UX Reportu](chrome-ux-report.md).
 
 Explicitně raději uvádím, že Google nezajímají syntetická měření v [Lighthouse](lighthouse.md) a už vůbec ne [Lighthouse skóre](metrika-lps.md). Ty slouží pro vývojáře a zjednodušení optimalizací, nikoliv pro zjištění, jak na tom web je u Googlu.
+
+Důležitý je proces počítání:
+
+1. Google vezme hodnoty u všech návštěv dané stránky za _posledních 28 dní_.
+2. V distribuci těchto čísel vytáhne hodnotu na _75. percentilu_.
+
+Posledních 28 dní znamená, že skokové aktualizace se projevují klouzavě, nikoliv hned. Zajímavé je soustřednění na 75. percentil, nikoliv například na průměr nebo medián. Je to ale dle mého správně – většina návštěv na webu (3 ze 4 lidí) pak má lepší než uvedenou hodnotu metriky.
+
+Co URL, která byla nedávno zveřejněna a ještě nemá data z 28 dní? Dojde pak k seskupení stránek, které jsou si podobné, jak píšu níže. Stránka dostane skóre podle skupiny stránek nebo podle celé domény.
 
 Data od uživatelů můžete nejjednodušším způsobem vytáhnout v [PageSpeed Insights](pagespeed-insights.md), podrobněji pak v našem [testeru na PageSpeed.cz](https://pagespeed.cz/). Doplňujte to vždy pohledem do [Google Search Console](google-search-console.md), ale o tom ještě psát v textu dále.
 
@@ -95,7 +109,7 @@ Viz obrázek v Tweetu. John Mueller to podepřel půvabnou grafikou vytvořenou 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Think of it like this. Graphic not to scale. <a href="https://t.co/6lLUYNM53A">pic.twitter.com/6lLUYNM53A</a></p>&mdash; 🍌 John 🍌 (@JohnMu) <a href="https://twitter.com/JohnMu/status/1395798952570724352?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote>
 
-Systém vyhodnocování je nastavený na zvýhodňování. Pokud máte metriku v červené oblasti hodnot, nezískáváte žádné. 
+Systém vyhodnocování je nastavený na zvýhodňování. Pokud máte metriku v červené oblasti hodnot, nezískáváte žádné.
 
 Pokud v oranžové oblasti hodnot, čím blíže bude hodnota optimu, tím vyšší zvýhodnění získáte.
 
@@ -135,6 +149,16 @@ Takže pokud v ČR a SR máte dobré hodnoty Web Vitals, ale kazí vám je malá
 
 Google nebude pracovat s měsíčními daty, která např. na PageSpeed.cz zobrazujeme v [záložce Domény](https://pagespeed.cz/r/c8c4649e8e44#domeny), ale se stavem za posledních 28 dní, který znáte z PageSpeed Insights a který zobrazujeme [v záložce Shrnutí](https://pagespeed.cz/r/c8c4649e8e44#shrnuti).
 
+### 8) Data od všech stránek, včetně blokovaných v robots.txt?
+
+Docela zmatek je v jedné věci: URL, které mají blokované indexování roboty pomocí direktivy „noindex“ nebo uvedením v souboru `robots.txt`. Budou hodnocené v rámci Page Experience nebo ne?
+
+Z principu by, dle mého názoru, mělo jejich skóre ovlivňovat minimálně skóre domény. Vyplývá to z prostého faktu, že hodnocení stránky se nesbírá robotem, ale od uživatelů.
+
+Google sám ale [ve své nápovědě uvádí](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021), že případě měření přes PageSpeed Insights se zobrazují pouze informace o veřejně indexovatelných stránkách, které zároveň splňují určitý práh návštěvnosti. V případě tahání dat přímo z Chrome UX Reportu pak mohou být zahrnuty souhrnné údaje ze všech veřejných i neveřejných stránek. Navíc se zdá, že v Google Search Console data o Page Experience z těchto stránek vůbec nejsou.
+
+Můj odhad? Pro tyto stránky se skóre počítá, výsledky v SERPu to ovlivňuje, ale měřící nástroje od Googlu v tom zatím dělají zmatky.
+
 ## Konec zvýhodnění AMP (a konec AMP?)
 
 Asi víte, že [AMP stránky](amp.md) dříve získávaly zvýhodnění na určitých místech ve vyhledávání Googlu.
@@ -159,7 +183,9 @@ Proč by měly firmy publikovat v AMP, když „jediným důvodem“ pro použit
 
 Přátelé, problém je s tím „jediným důvodem“.
 
-AMP je technologie, která dokáže garantovat vysokou kvalitu výstupu z pohledu rychlosti, uživatelské zkušenosti nebo například přístupnosti. Z mé zkušenosti konzultanta rychlosti webů můžu říct, že na takové úrovni to u běžných webových technologií dokáže jen velmi málo týmů.
+AMP je technologie, která dokáže garantovat vysokou kvalitu výstupu z pohledu rychlosti, uživatelské zkušenosti nebo například přístupnosti. 
+
+Z mé zkušenosti konzultanta rychlosti webů můžu říct, že na takové úrovni jako to dokáže zajistit AMP to u běžných webových technologií dokáže jen velmi málo týmů.
 
 Mimochodem, uvedené potvrzují [i statistiky](https://blog.amp.dev/2020/10/13/meet-amps-page-experience-guide/):
 
@@ -167,9 +193,48 @@ Mimochodem, uvedené potvrzují [i statistiky](https://blog.amp.dev/2020/10/13/m
 
 Pokud se někdy přiblíží konec AMP, bude to z úplně jiných důvodů a bude pak velmi zajímavé o tom psát i diskutovat. Teď se to ale nestane.
 
-AMP stránky také pravděpodobně nebudou mít označení ve výsledcích vyhledávání. Pokud to chápu správně, Google uvažuje o zvýraznění webů, které splňují Core Web Vitals.
+AMP stránky také pravděpodobně nebudou mít označení ve výsledcích vyhledávání. Pokud to chápu správně, Google naopak uvažuje o zvýraznění webů, které splňují Core Web Vitals. Pak bude jedno, jakou technologií jsou weby dělané.
 
+## Signed Exchanges (SXG) a přednačtení pro všechny
 
-<!-- signed exchanges -->
+Google ve výsledích vyhledávání poskytuje vybraným AMP stránkám přednačtení. HTML, CSS a JS soubory pro cílovou stránku se načítají už v momentě, kdy procházíte výsledky vyhledávání. To je jeden z důvodů, proč je zobrazení AMP stránek opravdu bleskurychlé.
 
-<!-- co musím udělat? -->
+Nyní Google otevírá tuto možnost všem stránkám a to pomocí [technologie Signed Exchanges](https://developers.google.com/search/docs/advanced/experience/signed-exchange).
+
+Použití technologie SXG podle Google není podmínkou pro získání výhod z oblasti Page Experience. Jde o nadstavbu a jednu z možností, jak zlepšit rychlost webů.
+
+Zájemci o vysvětlení Signed Exchanges nechť se podívají na přednášku Robina Pokorného:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UFopT4oc8eE?start=5386" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+
+V [rozhovoru o AMP](https://www.vzhurudolu.cz/blog/149-amp-paul-bakaus) mě Paul Bakaus, jeden z nejviditelnější lidí v komunitě kolem AMP, říkal:
+
+> Signed HTTP Exchanges jsou slibným standardem pro oddělení identity a doručování dokumentů a lze je použít k přednačtení non-AMP obsahu při zachování ochrany soukromí, pokud také vyřešíme problém s metrikami. A samozřejmě: Musely by do tohoto standardu jít všechny prohlížeče.
+
+Všimněte si té poslední věty. Mozilla, tvůrce Firefoxu, téhle technologii zatím [moc nevěří](https://mozilla.github.io/standards-positions/#http-origin-signed-responses). Apple, tvůrce Safari, to má podobně.
+
+Získat výhodu rychlého načtení ve výsledích vyhledávání Googlu, byť zatím výlučně v prohlížeči Chrome, zní jistě lákavě, ale kolem SXG čekám podobné kontroverze jako kolem AMP.
+
+## Jak pomáhá Google Search Console
+
+Search Console (GSC) je velmi dobrý pomocník pro vyhodnocování stavu Page Experience pro konkrétní weby.
+
+Nejdůležitější je nový report [Kvalita stránky (Page Experience)](https://support.google.com/webmasters/answer/10218333).
+
+Tento report kombinuje už dříve přidanou stránku Core Web Vitals s dalšími složkami signálů  uživatelského zážitku, jako je zabezpečení HTTPS, stav bezpečného prohlížení nebo přívětivost pro mobilní zařízení.
+
+<!-- TODO img graf https://search.google.com/search-console/page-experience?resource_id=https%3A%2F%2Fwww.vzhurudolu.cz%2F -->
+
+Na obrázku je nejdůležitější hodnota pro „Adresy URL s dobrými výsledky“, protože vidíte, kolik stránek podle GSC nevyhovuje z pohledu signálů Page Experience. V tomto případě je potřeba zapracovat na 2,5 % všech URL.
+
+Které metriky Page Experience máme špatně? To nám řekne report hned pod grafem:
+
+<!-- TODO img indikátory https://search.google.com/search-console/page-experience?resource_id=https%3A%2F%2Fwww.vzhurudolu.cz%2F -->
+
+Zde je vidět problém s použitelností v mobilních zařízeních. Proklikem se pak dostaneme na už známý report podílu vyhovujících a nevyhovujících stránek. 
+
+<!-- TODO img https://search.google.com/search-console/mobile-usability?resource_id=https%3A%2F%2Fwww.vzhurudolu.cz%2F -->
+
+Odtud už se pak proklikáme na konkrétní ukázkové URL a můžeme začít hledat konkrétní problém. 
+
+<!-- co teď mám udělat? -->
