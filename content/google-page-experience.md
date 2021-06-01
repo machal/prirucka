@@ -165,7 +165,12 @@ Asi víte, že [AMP stránky](amp.md) dříve získávaly zvýhodnění na urči
 
 Určitě to platilo v takzvaném Top Stories karuselu, ale také nejspíš v Google News.
 
-<!-- TODO obrazek AMP v Top Stories -->
+<figure>
+<img src="../dist/images/original/amp-platformy-google-news.jpg" width="1600" height="900" alt="AMP v hlavních událostech ve Vyhledávání Googlu">
+<figcaption markdown="1">
+*AMP v hlavních událostech ve Vyhledávání Googlu*
+</figcaption>
+</figure>
 
 Google za to byl terčem kritiky, že tímto způsobem tlačí lidem svou technologii, což asi chápu. Nicméně už v době, kdy toto implemtovali, mluvili v Googlu o dočasnosti tohoto řešení.
 
@@ -223,18 +228,68 @@ Nejdůležitější je nový report [Kvalita stránky (Page Experience)](https:/
 
 Tento report kombinuje už dříve přidanou stránku Core Web Vitals s dalšími složkami signálů  uživatelského zážitku, jako je zabezpečení HTTPS, stav bezpečného prohlížení nebo přívětivost pro mobilní zařízení.
 
-<!-- TODO img graf https://search.google.com/search-console/page-experience?resource_id=https%3A%2F%2Fwww.vzhurudolu.cz%2F -->
+<figure>
+<img src="../dist/images/original/gsc-page-experience.png" width="1600" height="900" alt="Report „Kvalita Stránky“ v Google Search Console">
+<figcaption markdown="1">
+*Google Search Console: Report „Kvalita Stránky“.*
+</figcaption>
+</figure>
 
 Na obrázku je nejdůležitější hodnota pro „Adresy URL s dobrými výsledky“, protože vidíte, kolik stránek podle GSC nevyhovuje z pohledu signálů Page Experience. V tomto případě je potřeba zapracovat na 2,5 % všech URL.
 
 Které metriky Page Experience máme špatně? To nám řekne report hned pod grafem:
 
-<!-- TODO img indikátory https://search.google.com/search-console/page-experience?resource_id=https%3A%2F%2Fwww.vzhurudolu.cz%2F -->
+<figure>
+<img src="../dist/images/original/gsc-page-experience-indik.png" width="1600" height="900" alt="Report „Indikátry kvality stránky“ v Google Search Console">
+<figcaption markdown="1">
+*Google Search Console: Report „Indikátory kvality stránky“.*
+</figcaption>
+</figure>
 
-Zde je vidět problém s použitelností v mobilních zařízeních. Proklikem se pak dostaneme na už známý report podílu vyhovujících a nevyhovujících stránek. 
+Zde je vidět problém s použitelností v mobilních zařízeních. Proklikem se pak dostaneme na už známý report podílu vyhovujících a nevyhovujících stránek.
 
-<!-- TODO img https://search.google.com/search-console/mobile-usability?resource_id=https%3A%2F%2Fwww.vzhurudolu.cz%2F -->
+<figure>
+<img src="../dist/images/original/crux-gsc.png" width="1600" height="900" alt="">
+<figcaption markdown="1">
+*Google Search Console: Report stránek, které vyhovují nebo nevyhovují metrikám Web Vitals.*
+</figcaption>
+</figure>
 
-Odtud už se pak proklikáme na konkrétní ukázkové URL a můžeme začít hledat konkrétní problém. 
+Odtud už se pak proklikáme na konkrétní ukázkové URL a můžeme začít hledat konkrétní problém.
 
-<!-- co teď mám udělat? -->
+<figure>
+<img src="../dist/images/original/crux-gsc-detail.png" width="1600" height="900" alt="">
+<figcaption markdown="1">
+*Google Search Console: Příklady stránek, které nevyhovují konkrétní metrice.*
+</figcaption>
+</figure>
+
+Search Console zobrazuje pro každý typ problému podmnožinu adres URL. Tyto URL představují různé typy stránek, které váš web může mít.
+
+Účelem této zprávy je pomoci uživatelům odhalit problematické typy stránek tak, aby je bylo možné ladit v nástrojích, jako je Page Speed Insights nebo Lighthouse.
+
+Vzorky stránek jsou vybrané tak, aby se jejich opravou zlepšilo celkové hodnocení typu stránky.  
+
+## Na závěr
+
+Nemyslím si, že Google svým updatem Page Experience spustí revoluci a výrazně zamíchá pořadím ve výsledích vyhledávání. Bude se to nasazovat opatrně a pomalu.
+
+Důvodů, proč [řešit rychlost webu](rychlost-nacitani-proc.md) ale najdete celou řadu. To, že ji prosazuje Google je jen důsledkem toho, že pro návštěvníka i provozovatele je výhodné mít rychlý web.
+
+Stále navíc platí, že Web Vitals splňuje jen menší část webů:
+
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Podíl webů, které splňují všechny Core Web Vitals:<br>— 11/2020: 23,5 %<br>— 12/2020: 23,4 %<br>— 01/2021: 23,7 %<br>— 01/2021: 21,98 %<br>Prostě to neroste. I proto si myslím, že od května Google revolučně nezmění význam <a href="https://twitter.com/hashtag/RychlostWebu?src=hash&amp;ref_src=twsrc%5Etfw">#RychlostWebu</a> v hodnocení.<br>Více o Web Vitals: <a href="https://t.co/BDPMJjKPxT">https://t.co/BDPMJjKPxT</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1372182620793139200?ref_src=twsrc%5Etfw">March 17, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Proto si myslím, že ve velmi konkurenčních oborech může jít i v rámci výsledků vyhledávání o nezanedbatelnou konkurenční výhodu.
+
+Na závěr vám poradím:
+
+1. V Google Search Console sledujte reporty Kvalita stránky (Page Experience) a Core Web Vitals. Snažte se odstraňovat problémy zde uvedené.
+2. Dlouhodobě sledujte rychlost typových stránek webu, i celé domény pomocí [testeru PageSpeed.cz](https://pagespeed.cz/).
+3. Naučte se, jak správně [měřit rychlost webu](https://www.vzhurudolu.cz/video/webinar-rychlost-mereni) a ladění metrik [CLS](https://www.vzhurudolu.cz/video/webinar-cls) a [LCP](https://www.vzhurudolu.cz/video/webinar-lcp). Tyto tři webináře teď můžete pořídit i najednou.
+4. Optimalizujte, optimalizujte, optimalizujte. Pomůže vám [checklist z PageSpeed.cz](https://pagespeed.cz/blog/checklist-2021) nebo moje tipy na novinky - [jak zrychlit web](https://www.vzhurudolu.cz/prirucka/jak-zrychlit-web).
+5. Vzdělávajte se v oblasti [performance](https://www.vzhurudolu.cz/rychlost-nacitani).
+6. Pokud si nevíte rady, [ozvěte se](https://www.vzhurudolu.cz/martin).
+
+Přeji vám rychlé weby!
