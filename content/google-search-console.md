@@ -40,7 +40,7 @@ Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obv
 
 V části menu zvané *Kontrolní panel* získáte jen základní přehled pro rychlou orientaci. Doporučuji ovšem proklikat vše a hlavně níže uvedené reporty:
 
-### Daří se googlebotu procházet váš web? 
+### Daří se googlebotu procházet váš web?
 
 * Jak Google indexuje obsah mapy webu (`sitemap.xml`)? Ideálně stejný počet u odesláno a indexováno.  
 <small>(*Procházení > Soubory Sitemap*)</small>

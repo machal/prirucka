@@ -6,7 +6,7 @@ Jedná se o jednu [z metrik rychlosti webu](metriky-rychlosti.md), i když v tom
 
 <!-- AdSnippet -->
 
-CLS je velmi důležitá metrika, protože je součástí [Core Web Vitals](web-vitals.md), které Google prosazuje jako základní ukazatele.
+Metrika Cumulative Layout Shift je velmi důležitá, protože je součástí [Core Web Vitals](web-vitals.md) a zohledňuje se v rámci signálů [Google Page Experience](google-page-experience.md).
 
 CLS udává součet posunů layoutu (*layout shift*) během vykreslování stránky. Cílem je pro ni zajistit co nejvyšší vizuální stabilitu.
 

@@ -3,6 +3,7 @@
 ## Obecně o rychlosti webů
 
 - [Jak zrychlit web](jak-zrychlit-web.md)
+- [Google Page Experience](google-page-experience.md)
 - [Co je to rychlost načtení?](rychlost-nacteni.md)
 - [Proč řešit rychlost?](rychlost-nacitani-proc.md)
 - [Zrychlení Srovname.cz](https://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)
@@ -27,6 +28,7 @@
 - [Metrika FCP](metrika-fcp.md)
 - [Metrika FID](metrika-fcp.md)
 - [Metrika LCP](metrika-lcp.md)
+- [Metrika CLS](metrika-cls.md)
 - [Metrika TBT](metrika-tbt.md)
 - [Metrika TTI](metrika-tti.md)
 - [Metrika LPS](metrika-tti.md)

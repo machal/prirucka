@@ -8,7 +8,7 @@ Aktuálně je totiž [měření rychlosti](rychlost-nastroje.md) (a UX) webu pom
 
 Nově tedy budeme měřit hlavně tři metriky – LCP, FID a CLS. Dostali jsme k tomu nástroje a příslib, že se to už nebude moc často měnit.
 
-Google tentokrát [zcela jasně říká](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html), že na tuto sadu metrik bude v budoucnu hledět při posuzování kvality webu. Je zde tedy jednoznačná vazba na SEO.
+Google tyto metriky zohledňuje v rámci oblasti signálů [Page Experience](google-page-experience.md). Je zde tedy jednoznačná vazba na SEO.
 
 Pojďme si v tomto textu dát rychlý úvod do metrik ve Vitals obsažených a do způsobů měření.
 

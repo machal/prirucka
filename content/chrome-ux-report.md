@@ -2,6 +2,8 @@
 
 Chrome UX Report (nebo také CrUX, v běžné mluvě klidně „krux“) je databáze dat o kvalitě uživatelského prožitku, kterou o webech sbírají všechny verze prohlížeče Chrome.
 
+CrUX je velmi důležitý zdroj metrik [Core Web Vitals](web-vitals.md), které Google zohledňuje v rámci oblasti [Page Experience](google-page-experience.md).
+
 Google takhle získaná data poctivě skladuje ve své olbřímí databázi [BigQuery](https://cloud.google.com/bigquery/). A víte co je nejlepší? Data jsou volně přístupná všem.
 
 <p class="video">
