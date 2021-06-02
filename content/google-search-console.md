@@ -36,7 +36,35 @@ Doporučuji Search Console navštívit alespoň jednou měsíčně a podívat se
 
 Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obvykle se o svém webu dozvíte něco zajímavého. Nebo zjistíte co Google chystá. V poslední době se třeba v rozhraní objevily nástroje pro bezpečnostní audit nebo [Google AMP stránky](amp.md), které ale v českém Google zatím nefungují.
 
+## Kvalita stránky (Page Experience)
+
+V části „Kvalita stránky“ zobrazuje Google Search Console stav metriky Core Web Vitals s dalšími složkami signálů  uživatelského zážitku, jako je zabezpečení HTTPS, stav bezpečného prohlížení nebo přívětivost pro mobilní zařízení.
+
+<figure>
+<img src="../dist/images/original/gsc-page-experience.png" width="1600" height="900" alt="Report „Kvalita Stránky“ v Google Search Console">
+<figcaption markdown="1">
+*Google Search Console: Report „Kvalita stránky“.*
+</figcaption>
+</figure>
+
+Na obrázku je nejdůležitější hodnota pro „Adresy URL s dobrými výsledky“, protože vidíte, kolik stránek podle GSC nevyhovuje z pohledu signálů Page Experience. V tomto případě je potřeba zapracovat na 2,5 % všech URL.
+
+V reportu „Core Web Vitals“ Google Search Console počet vyhovující a případně nevyhovujících URL z pohledu metrik [Web Vitals](web-vitals.md):
+
+<figure>
+<img src="../dist/images/original/crux-gsc.png" width="1600" height="900" alt="">
+<figcaption markdown="1">
+*Google Search Console: Report stránek, které vyhovují nebo nevyhovují metrikám Web Vitals.*
+</figcaption>
+</figure>
+
+Proklikem se pak dostaneme na už známý report podílu vyhovujících a nevyhovujících stránek.
+
+Více o této části najdete na stránce o [Google Page Experience](google-page-experience.md).
+
 ## Jaké problémy vám může Search Console odhalit, když budete nástroj důsledně sledovat?
+
+_(Pozn: Tato část zohledňuje spíše starší verzi Search Console. Aktualizace textu je v plánu.)_
 
 V části menu zvané *Kontrolní panel* získáte jen základní přehled pro rychlou orientaci. Doporučuji ovšem proklikat vše a hlavně níže uvedené reporty:
 

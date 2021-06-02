@@ -34,7 +34,7 @@ Změny začne Google aplikovat na své systémy od poloviny června 2021. Bude t
 
 <!-- AdSnippet -->
 
-Na jaké atributy stránek se v rámci Page Experience budou v Googlue ve svých automatizovaných hodnoceních dívat?
+Na jaké atributy stránek se v rámci Page Experience budou v Googlu ve svých automatizovaných hodnoceních dívat?
 
 ## Signály {#signaly}
 
@@ -93,7 +93,7 @@ V originále „Mobile friendliness“. V této části [Google sleduje](https:/
 
 Takže rychlost, (ne)otravování uživatele, bezpečnost, rychlost… jak už z názvu aktualizace „Page Experience“ vyplývá, Google se snaží automatizovat testování UX (User Experience).
 
-### Bude Google jednou testovat celé širší UX? (#ux)
+### Bude Google jednou testovat celé širší UX? {#ux}
 
 Pokud o UX něco víte, asi vám dojde, že tenhle update je jen začátek, protože pokrývá jen menší část celé oblasti.
 
@@ -101,9 +101,9 @@ Nemluvě o tom, že samotné metriky v tuto chvíli pokrývají jen malou část
 
 ## Jak se to bude posuzovat? {#jak}
 
-Kladl jsem si otázku, jak přesně bude signály pro Page Experience Google měřit.
+Kladl jsem si otázku, jak přesně bude signály pro Page Experience Google měřit.
 
-Zaměřím se zde hlavně na [Web Vitals](web-vitals.md) – metriky LCP, FID a CLS, které jsou z uvedeného seznamu nejnovější. A zároveň se mi zdá, že kolem [měření rychlosti](https://www.vzhurudolu.cz/video/webinar-rychlost-mereni) existuje celá řada [mýtů](rychlost-myty.md).
+Budu zde sledovat hlavně na [Web Vitals](web-vitals.md) – metriky LCP, FID a CLS, které jsou z uvedeného seznamu nejnovější. A zároveň se mi zdá, že kolem [měření rychlosti](https://www.vzhurudolu.cz/video/webinar-rychlost-mereni) existuje celá řada [mýtů](rychlost-myty.md).
 
 ### 1) Měří se u uživatelů {#jak-1}
 
@@ -113,7 +113,7 @@ Explicitně raději uvádím, že Google nezajímají syntetická měření v [L
 
 Důležitý je proces počítání:
 
-1. Google vezme hodnoty u všech návštěv dané stránky za _posledních 28 dní_.
+1. Google vezme hodnoty u všech návštěv dané stránky za _posledních 28 dní_.
 2. V distribuci těchto čísel vytáhne hodnotu na _75. percentilu_.
 
 Posledních 28 dní znamená, že skokové aktualizace se projevují klouzavě, nikoliv hned. Zajímavé je soustředění na 75. percentil, nikoliv například na průměr nebo medián. Je to ale dle mého správně – většina návštěv na webu (3 ze 4 lidí) pak má lepší než v percentilu uvedenou hodnotu metriky.
