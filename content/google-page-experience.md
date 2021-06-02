@@ -22,7 +22,7 @@ Důležité je si hned na začátku říct, že ani podle Google nepůjde o žá
 
 ## Obsah je stále král, zůstaňte v klidu {#obsah}
 
-Signály z oblasti Page Experince bude platforma používat spolu se stovkami dalších a nikdy [nebudou silnější](https://developers.google.com/search/blog/2020/05/evaluating-page-experience) než signály pro kvalitní obsah:
+Signály z oblasti Page Experience bude platforma používat spolu se stovkami dalších a nikdy [nebudou silnější](https://developers.google.com/search/blog/2020/05/evaluating-page-experience) než signály pro kvalitní obsah:
 
 > Our systems will continue to prioritize pages with the best information overall, even if some aspects of page experience are subpar. A good page experience doesn't override having great, relevant content.
 
@@ -40,7 +40,9 @@ Na jaké atributy stránek se v rámci Page Experience budou v Googlu ve svých 
 
 Ve [videu](https://www.youtube.com/watch?v=h00kn5J-F2Q) z letošní konference Google.IO ukazuje Jeffrey Jose všechny atributy, které má dobrá uživatelská zkušenost se stránkou a zároveň je Google bude v aktualizaci zohledňovat.
 
+<div class="rwd-media">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h00kn5J-F2Q?start=122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Je zajímavé, že se signály nyní třídí trochu jinak. Nová kategorizace dle mého není dokonalá, ale řekněme, že blíž k dokonalosti. Signály jsou rozdělené do následujících oblastí.
 
@@ -253,7 +255,9 @@ Použití technologie SXG podle Google není podmínkou pro získání výhod z 
 
 Zájemci o vysvětlení Signed Exchanges nechť se podívají na přednášku Robina Pokorného:
 
+<div class="rwd-media">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UFopT4oc8eE?start=5386" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
 
 V [rozhovoru o AMP](https://www.vzhurudolu.cz/blog/149-amp-paul-bakaus) mě Paul Bakaus, jeden z nejviditelnější lidí v komunitě kolem AMP, říkal:
 
