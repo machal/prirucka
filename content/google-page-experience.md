@@ -323,7 +323,7 @@ Vzorky stránek jsou vybrané tak, aby se jejich opravou zlepšilo celkové hodn
 
 Nemyslím si, že Google svým updatem Page Experience spustí revoluci a výrazně zamíchá pořadím ve výsledcích vyhledávání. Bude se to nasazovat opatrně a pomalu.
 
-Důvodů, proč [řešit rychlost webu](rychlost-nacitani-proc.md) ale najdete celou řadu. To, že ji prosazuje Google je jen důsledkem faktur, že pro návštěvníka i provozovatele je mít rychlý web prostě dobré.
+Důvodů, proč [řešit rychlost webu](rychlost-nacitani-proc.md) ale najdete celou řadu. To, že ji prosazuje Google, je jen důsledkem faktu, že pro návštěvníka i provozovatele je mít rychlý web prostě dobré.
 
 Stále navíc platí, že Web Vitals splňuje jen menší část webů:
 
