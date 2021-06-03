@@ -2,9 +2,9 @@
 
 Prošli jsme dva typy podmínek, podle nichž můžete přizpůsobovat rozložení stránky nebo její části v různě širokých rodičovských prvcích.
 
-Media Queries mají širokou podporu v prohlížečích, ale lidé ve standardizační organizaci je navrhli tak, aby řešily spíše rozložení celé stránky.
+Media Queries mají širokou podporu v prohlížečích, ale lidé ve standardizační organizaci je navrhli tak, aby řešily spíše rozložení celé stránky. Cílí totiž na šířku okna prohlížeče.
 
-Zato Container Queries jsou navržené pro větší část scénářů, kdy tyto dotazy potřebujeme – pro layout komponent ve stránce. Jenže v době psaní těchto textů podporu prakticky nemají.
+Zato Container Queries jsou navržené pro větší část scénářů, kdy tyto dotazy potřebujeme – pro layout komponent ve stránce, tedy jen výseku okna prohlížeče. Jenže v době psaní těchto textů Container Queries podporu prakticky nemají.
 
 V moderních systémech layoutu je ještě jedna možnost – zalamovat rovržení úplně bez podmínek, takzvané „No Queries“ layouty. Na první pohled to může znít skvěle, i mě to tak pořád zní, ale má to řadu háčků nebo přímo velrybářských harpun, abych byl přesný.
 
@@ -28,7 +28,7 @@ Nejprve si alespoň zjednodušeně připomeňme strukturu HMTL, která drží na
 </div>
 ```
 
-Na těchto základech budeme stavět. Umožní nám to jedna nenápadná vlastnost.
+Na těchto základech budeme stavět. Provedení bezdotazového rozvržení s pomocí flexboxu nám dovolí jedna nenápadná vlastnost.
 
 ### Kouzelný `flex-wrap`
 
@@ -65,7 +65,7 @@ Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku o
 </figcaption>
 </figure>
 
-Budeme si to muset vysvětlit, že?
+Budeme si ten kód muset vysvětlit, že?
 
 - `flex: 1 1 20%` – Obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
 - Základní velikost položek je nastavena níž než je celková šířka plochy (`20%` a  `40%`) a slouží jen k definování výchozího poměru stran. Je to jako bychom to uvedli [vlastností `flex-basis`](css-flex-basis.md).
@@ -73,21 +73,21 @@ Budeme si to muset vysvětlit, že?
 
 Ještě se teď více zaměřme na ten bod zlomu, abychom to celé opravdu pochopili.
 
-Jak už možná víte, flexboxové rozvržení se vždy přizpůsobuje velikost obsahu. Obrázek v tomto layoutu se chová pružně, takže by se ve zvětšování ani smršťování nikde nezastavil.
+Jak už víte, flexboxové rozvržení se vždy přizpůsobuje velikost obsahu. Obrázek v tomto layoutu se chová pružně, takže by se ve zvětšování ani smršťování nikde nezastavil.
 
 Definicí `max-width: 300px` jej omezíme a stanovíme s její pomocí také bod zlomu. Znamená to však, že jakmile layout splní požadavky výchozí šířky, tedy dosáhne oněch `20%` definovaných jako `flex-basis`, prostě prohlížeč vykreslí obě položky vedle sebe.
 
-Obrázek pak bude v prvních fázích toho rozložení vedle sebe opravdu malinký. Mohli bychom to změnit nastavením minimální šířky:
+Obrázek pak bude na nejmenších šířkách rodičovského prvku při rozložení vedle sebe opravdu malinký. Mohli bychom to změnit nastavením minimální šířky:
 
 ```css
 .item__image {
   flex: 1 1 20%;
-  min-width: 200px;
-  max-width: 300px;  /* Breakpoint */
+  min-width: 200px; /* Min. šířka */
+  max-width: 300px;
 }
 ```
 
-Tady nedovolíme obrázku menší šířku než 200 pixelů. Řeší to náš problém, ale zároveň jsem si tím zadělali na jiný. V mezikroku vznikne po straně obrázku prostor. To je moment, kdy už jsme došli k maximu jeho šířky ale ještě se nám vedle nevejde text. Jeho minimální šířka je totiž určená délkou nejdelšího slova.
+Tady nedovolíme obrázku menší šířku než 200 pixelů. Řeší to náš problém, ale zároveň jsem si tím zadělali na jiný. V mezikroku vznikne po straně obrázku prostor.
 
 <figure>
 <img src="../dist/images/original/vdlayout/no-queries-flex-wrap-min-width.png" width="1600" height="900" alt="">
@@ -96,9 +96,11 @@ Minimální šířka obrázku nám zde jeden problém vyřeší a druhý vyrobí
 </figcaption>
 </figure>
 
+Na obrázku je vidět moment, kdy už jsme došli k maximu jeho šířky ale ještě se nám vedle nevejde text. Jeho minimální šířka je totiž určená délkou nejdelšího slova.
+
 ### Alternativa bez `min-width` a `max-width`
 
-Řešení využívající flexbox je možné ořezat na kost a nepoužít přitom minimální a maximální šířku:
+Zkusme to namísto věčného komplikování spíše zjednodušit. Řešení využívající flexbox je možné ořezat na kost a nepoužít přitom minimální a maximální šířku:
 
 ```css
 .item__image {
@@ -116,7 +118,9 @@ CodePen: [cdpn.io/e/WNRjyoE](https://codepen.io/machal/pen/WNRjyoE?editors=1100)
 
 Jak vidíte, pomocí flexboxu se No Queries layouty dělají docela snadno. Klíčem je umožnit zalomení pomocí `flex-wrap` a pak si hrát s různými vlastnosti určujícími šířku.
 
-Oba příklady ale snad dobře demonstrují limity bezdotazových layoutů. V určitých šířkách prostě nebudou vypadat tak dobře, jako ty vypiplané pomocí Media nebo Container Queries. Existují ale situace, kdy to nevadí.
+Oba příklady ale snad dobře demonstrují limity bezdotazových layoutů. V určitých šířkách prostě nebudou vypadat tak dobře, jako ty vypiplané pomocí Media nebo Container Queries.
+
+Existují ale situace, kdy to nevadí nebo nevýhodu nepěkné „mezifáze“ rozvržení převáží možnost nepsát layoutové dotazy.
 
 ## Řešení pomocí gridu
 
@@ -161,8 +165,6 @@ Daleko zajímavější jsou bezdotazová řešení v gridu pro zápis rozvržen�
 
 V následujícím demu jsem vyšel z řešení Anthonyho Kuanga.
 
-CodePen: [cdpn.io/e/zYNaLjB](https://codepen.io/machal/pen/zYNaLjB?editors=1100)
-
 Kouzelník zde použil stejný trik…
 
 ```css
@@ -178,15 +180,17 @@ Kouzelník zde použil stejný trik…
 <figure>
 <img src="../dist/images/original/vdlayout/no-queries-grid-images.png" width="1600" height="900" alt="">
 <figcaption markdown="1">
-Mřížka vrací úder. V pravidelných rozvrženích se cítí jako doma.
+Mřížka vrací úder. V pravidelných layoutech se cítí jako doma.
 </figcaption>
 </figure>
 
 Tohle by asi nebylo marné používat v praxi, viďte? A pozor, během natáčení nebylo zraněno žádné Media Query!
 
+CodePen: [cdpn.io/e/zYNaLjB](https://codepen.io/machal/pen/zYNaLjB?editors=1100)
+
 ## Řešení pomocí vícesloupcového layoutu
 
-[Vlastnost `columns`](css-multicolumn.md) a ostatní, které z ní vycházejí (součást balíčku  CSS Multiple Column) je hotový ráj pro milovníky bezdotazových rozvržení. Má to ale háček, tahle specifikace je vymyšlená takřka výlučně pro sázení textového obsahu.
+[Vlastnost `columns`](css-multicolumn.md) a ostatní, které z ní vycházejí (součást balíčku  CSS Multiple Column), je hotový ráj pro milovníky bezdotazových rozvržení. Má to ale háček, tahle specifikace je vymyšlená takřka výlučně pro sázení textového obsahu.
 
 Pojďme to ale trochu hacknout a použít pro naši mediální komponentu. HTML zůstává stejné, styly jako vždy převlákají kabát:
 
