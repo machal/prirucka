@@ -1,6 +1,6 @@
 # Krkavčí technika
 
-Zde si rozebereme „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které v ale době psaní nemají podporu v prohlížečích.
+Zde si rozebereme „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které v ale době psaní této podkapitoly nemají podporu v prohlížečích.
 
 Její výhodou je podpora ve všech moderních prohlížečích. Nevýhodou je krkolomnost. Zkuste sedmkrát za sebou říct „krkolomný krkavec“. Přesně tak jsem si připadal, když jsem o té technice četl poprvé.
 
@@ -16,7 +16,7 @@ width: --dyn_length: calc(
 }
 ```
 
-Ale nechci to úplně shazovat. Pokud něco jako podmínku `@container` na vašem projektu zoufale potřebujete a podpora v prohlížečích zatím pořád neexistuje, věnujte mi ještě chvíli pozornosti.
+Ale nechci to úplně shazovat. Pokud něco jako podmínku `@container` a tedy Container Queries na vašem projektu zoufale potřebujete a podpora v prohlížečích zatím pořád neexistuje, věnujte mi ještě chvíli pozornosti.
 
 Havraní technika je založená na matematických funkcích a dalších novinkách v CSS:
 
