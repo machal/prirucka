@@ -21,8 +21,8 @@ Ale nechci to úplně shazovat. Pokud něco jako podmínku `@container` a tedy C
 Havraní technika je založená na matematických funkcích a dalších novinkách v CSS:
 
 - [Funkce `calc()`](css3-calc.md) umožní vložit namísto hodnoty matematický výraz.
-- Funkce `min()` a `max()` asi mají zjevný význam – vracení nejnižší, respektive nejvyšší hodnotu ze všech uvedených v argumentech.
-- Funkce `clamp()` je kombinací `min()` a `max()` pro tříčiselné hodnoty.
+- [Funkce `min()` a `max()`](css-min-max-clamp.md) asi mají zjevný význam – vracení nejnižší, respektive nejvyšší hodnotu ze všech uvedených v argumentech.
+- [Funkce `clamp()`](css-min-max-clamp.md) je kombinací `min()` a `max()` pro tříčiselné hodnoty.
 - [Proměnné v CSS](css-promenne.md) jako `--color:blue` zase umožňují udržovat a měnit hodnoty výpočtu, podobně jako v programovacích jazycích.
 
 V prvním kroku krkavčí techniky si definujeme proměnné se šířkou a s body zlomu layoutu:
