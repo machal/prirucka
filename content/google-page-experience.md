@@ -75,7 +75,7 @@ Všimněte si, že CLS se neuvádí mezi rychlostními metrikami, což je samoz�
 </figcaption>
 </figure>
 
-Zde bychom ukončili oblast, kterou pokrývají [metriky Web Vitals](web-vitals.md). Chtělo by se říct, „oblast rychlosti“, ale jak už jste asi pochopili, o rychlosti se zde, mininálně kvůli CLS, mluvit nedá.
+Zde bychom ukončili oblast, kterou pokrývají [metriky Web Vitals](web-vitals.md). Chtělo by se říct, „oblast rychlosti“, ale jak už jste asi pochopili, o rychlosti se zde, minimálně kvůli CLS, mluvit nedá.
 
 ### Bezpečnost a soukromí {#signaly-soukromi}
 
@@ -84,7 +84,7 @@ V originále „Security & Privacy“. Hlídá se zde toto:
 - *HTTPS*  
 Na webu byste měli mít zapnutý bezpečný protokol HTTPS. Tohle už snad máte, ale pro jistotu odkaz na [podklady od Googlu](https://developers.google.com/search/blog/2016/11/heres-to-more-https-on-web). Více o [HTTPS](https.md).
 - *Žádná upozornění k bezpečnému prohlížení*  
-Lépe to asi vysvětlí originál - „No safe browsing flags“. Váš web nebo stránka nesmí být detekována jako ohrožující pro uživatele. Více je [v textu od Googlu](https://developers.google.com/search/blog/2016/09/more-safe-browsing-help-for-webmasters).
+Lépe to asi vysvětlí originál, který zní „No safe browsing flags“. Váš web nebo stránka nesmí být detekována jako ohrožující pro uživatele. Více je [v textu od Googlu](https://developers.google.com/search/blog/2016/09/more-safe-browsing-help-for-webmasters).
 
 ### Přístupnost {#signaly-pristupnost}
 
@@ -97,9 +97,9 @@ Takže rychlost, (ne)otravování uživatele, bezpečnost, rychlost… jak už z
 
 ### Bude Google jednou testovat celé širší UX? {#ux}
 
-Pokud o UX něco víte, asi vám dojde, že tenhle update je jen začátek, protože pokrývá jen menší část celé oblasti.
+Pokud o UX něco víte, asi vám dojde, že tenhle update je jen začátek, protože pokrývá jen malilinkatou část celé oblasti.
 
-Nemluvě o tom, že samotné metriky v tuto chvíli pokrývají jen malou část celé oblasti. Očekávám tedy snahu rozšiřovat nejen signály Page Experience, ale také sadu metrik.
+Nemluvě o tom, že samotné metriky v tuto chvíli pokrývají ještě menší část celé oblasti. Očekávám tedy snahu rozšiřovat nejen signály Page Experience, ale také sadu metrik.
 
 ## Jak se to bude posuzovat? {#jak}
 
@@ -181,7 +181,7 @@ Zajímavé také je, že data se z CrUX nevezmou podle aktuální lokality, tak�
 
 Takže pokud v ČR a SR máte dobré hodnoty Web Vitals, ale kazí vám je malá část návštěvníků kdesi na druhém konci světa, budete to muset vyřešit.
 
-### 7) Data se berou ze posledních 28 dní {#jak-7}
+### 7) Data se berou za posledních 28 dní {#jak-7}
 
 Google nebude pracovat s měsíčními daty, která např. na PageSpeed.cz zobrazujeme v [záložce Domény](https://pagespeed.cz/r/c8c4649e8e44#domeny), ale se stavem za posledních 28 dní, který znáte z PageSpeed Insights a který zobrazujeme [v záložce Shrnutí](https://pagespeed.cz/r/c8c4649e8e44#shrnuti).
 
