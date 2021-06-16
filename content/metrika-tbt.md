@@ -64,7 +64,7 @@ Ve WebpageTestu najdete TBT jako jednu z nejdůležitějších metrik. Krátce p
 
 Abyste získali čas do interaktivity stránky od reálných uživatelů (RUM, Google poněkud sedlácky říká „data z pole“), měli byste namísto TBT měřit zpoždění prvního vstupu – [First Input Delay (FID)](metrika-fid.md).
 
-## Ideální hodnoty – zkuste se vejít to 300 ms {#idealni-hodnoty}
+## Ideální hodnoty – zkuste se vejít to 200 ms {#idealni-hodnoty}
 
 Podle Googlu byste se měli s TBT na průměrném mobilním zařízení vejít vždy do 300 milisekund.
 
