@@ -39,13 +39,17 @@ Z textu o [Web Vitals](web-vitals.md) už víte, že metriky mají své stavy. 
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-|  Vyhovuje |  Chce zlepšit       |  Špatná   |
-|:---------:|:-------------------:|:---------:|
-| ≤ 0,1     |   0,1 - 0,25        |  > 0,25   |
+| Hodnota LCP        |  Mobil   |  Desktop  |
+|:-------------------|---------:|----------:|
+| Dobrá              |  ≤ 0,1   |  ≤ 0,1    |
+| Vyžaduje zlepšení  |  ≤ 0,25  |  ≤ 0,25   |
+| Špatný             |  > 0,25  |  > 0,25   |
 
 </div>
 
 Cílem tedy je dostat se pod hodnotu `0,1` nebo v horším případě nepřekročit `0,25`.
+
+V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika CLS do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 15 %.
 
 <figure>
 <img src="../dist/images/original/metrika-cls.png" width="1600" height="450" alt="Cumulative Layout Shift">

@@ -70,19 +70,19 @@ Podle Googlu byste se měli s TBT na průměrném mobilním zařízení vejít v
 
 U většiny webů to bude velký problém, poněvadž s JavaScriptem se na stránkách vůbec (ale vůbec!) nešetří. Zde by z mé strany mělo následovat velice smutné emoji, ale nechci vám kazit čtení.
 
-Pojďme se ale mrknout na jednotlivé hranice, které pro vysvědčení [používá nástroj Lighthouse](https://web.dev/lighthouse-total-blocking-time/#how-lighthouse-determines-your-tbt-score):
+Pojďme se ale mrknout na jednotlivé hranice, které pro vysvědčení [používá nástroj Lighthouse](lighthouse.md):
 
-<div class="rwd-scrollable f-6"  markdown="1">
+<div class="rwd-scrollable f-6" markdown="1">
 
-|  Hodnota TBT v ms  | Vysvědčení (barva)   |
-|--------------------|----------------------|
-| 0 - 300            | Vyhovuje (zelená)    |
-| 300 - 600          | Vyžaduje zlepšení (oranžová)  |
-| 600 a více         | Pomalý (červená)     |
+| Hodnota LCP        |  Mobil   |  Desktop  |
+|:-------------------|---------:|----------:|
+| Dobrá              | ≤ 200 ms |  ≤ 150 ms |
+| Vyžaduje zlepšení  | ≤ 600 ms |  ≤ 350 ms |
+| Špatný             | > 600 ms |  > 350 ms |
 
 </div>
 
-Je dobré akcentovat, že těchto čísel byste měli dosáhnout na mobilním nastavení testů.
+V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika TBT do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 30 %.
 
 ## Jak TBT optimalizovat? {#optimalizace}
 

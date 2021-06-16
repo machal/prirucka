@@ -15,6 +15,18 @@ LCP se „dívá“, kdy byl prohlížeč zobrazil největší prvek ve stránce
 
 Dobré LCP by podle Googlu mělo proběhnout do 2,5 sekundy. V měřeních reálných uživatelů (RUM) byste měli podle stejného zdroje vyhodnocovat 75. precentil.
 
+<div class="rwd-scrollable f-6"  markdown="1">
+
+| Hodnota LCP        |  Mobil   |  Desktop  |
+|:-------------------|---------:|----------:|
+| Dobrá              |  ≤ 2,5 s |  ≤  1,2 s |
+| Vyžaduje zlepšení  |  ≤ 4,0 s |  ≤  2,4 s |
+| Špatný             |  > 4,0 s |  >  2,4 s |
+
+</div>
+
+V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika LCP do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 25 %.
+
 ## Proč LCP potřebujeme? {#proc}
 
 Asi si řeknete, že pro měření vykreslení hlavního obsahu stránky už nějaké metriky máme. Jenže ty jsou složité nebo nepřesné:

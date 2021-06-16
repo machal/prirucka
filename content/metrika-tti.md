@@ -19,3 +19,19 @@ TTI jsou vlastně dvě různé metriky:
 
 - [Consistently Interactive](https://developers.google.com/web/tools/lighthouse/audits/consistently-interactive), kterou ukazuje Lighthouse. Ta nepočítá s žádnými prodlevami v interakci se stránkou. Musí být vykreslená a reagující podle výše uvedených podmínek.
 - [First Interactive](https://github.com/WPO-Foundation/webpagetest/blob/master/docs/Metrics/TimeToInteractive.md), kterou uvádí WebpageTest. První moment, kdy stránka může reagovat na uživatelské vstupy. Počítá se ale s možnými prodlevami, protože některé části stránky se dále stahují.
+
+## Ideální hodnoty {#idealni-hodnoty}
+
+Hranice, které pro vysvědčení používá [nástroj Lighthouse](lighthouse.md):
+
+<div class="rwd-scrollable f-6" markdown="1">
+
+| Hodnota LCP        |  Mobil   |  Desktop  |
+|:-------------------|---------:|----------:|
+| Dobrá              |  ≤ 3,8 s |  ≤  2,5 s |
+| Vyžaduje zlepšení  |  ≤ 7,3 s |  ≤  3,5 s |
+| Špatný             |  > 7,3 s |  >  3,5 s |
+
+</div>
+
+V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika TTI do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 10 %.

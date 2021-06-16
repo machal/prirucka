@@ -51,19 +51,19 @@ Skóre každé metriky pak samozřejmě záleží na odlišnosti od optimální 
 <div class="rwd-scrollable f-6"  markdown="1">
 | Metrika                                           | Váha | Ideální hodnota |
 |:--------------------------------------------------|-----:|----------------:|
-| [First Contentful Paint (FCP)](metrika-fcp.md)    | 15 % |           ≤ 2 s |
+| [First Contentful Paint (FCP)](metrika-fcp.md)    | 10 % |           ≤ 1,8 s |
 | [Largest Contentful Paint (LCP)](metrika-lcp.md)  | 25 % |         ≤ 2,5 s |
-| [Time To Interactive (TTI)](metrika-tti.md)       | 15 % |         ≤ 3,8 s |
-| [Speed Index (SI)](speedindex.md)                 | 15 % |         ≤ 4,3 s |
-| [Total Blocking Time (TBT)](metrika-tbt.md)       | 25 % |         ≤ 0,3 s |
-| [Cumulative Layout Shift (CLS)](metrika-cls.md)   | 5 %  |           ≤ 0,1 |
+| [Speed Index (SI)](speedindex.md)                 | 10 % |         ≤ 3,4 s |
+| [Time To Interactive (TTI)](metrika-tti.md)       | 10 % |         ≤ 3,8 s |
+| [Total Blocking Time (TBT)](metrika-tbt.md)       | 30 % |         ≤ 0,2 s |
+| [Cumulative Layout Shift (CLS)](metrika-cls.md)   | 15 %  |           ≤ 0,1 |
 </div>  
 <figcaption markdown="1">
-*Tabulka: Metriky, jejich váhy a ideální hodnoty pro získání 100 % hodnocení v Lighthouse Performance Score od Lighthouse verze 6.*
+*Tabulka: Metriky, jejich váhy a ideální hodnoty pro získání 100 % hodnocení v Lighthouse Performance Score od Lighthouse [verze 8](https://www.vzhurudolu.cz/blog/199-lighthouse-8).*
 </figcaption>
 </figure>
 
-Všimněte si, jak moc důležité jsou dvě z nových metrik Web Vitals – Largest Contentful Paint (LCP) a Total Blocking Time (TBT). Spolu s CLS, zatím ne tak důležitou metrikou, se na celkovém skóre podílejí z 55 %.
+Všimněte si, jak moc důležité jsou metriky [Core Web Vitals](web-vitals.md). Mají 70 % vliv na celkové skóre.
 
 Jak případné úspěchy v optimalizaci jednotlivých metrik pohnou s celkovým skóre si můžete vyzkoušet [na skvělém kalkulátoru](https://googlechrome.github.io/lighthouse/scorecalc/) z dílny autorů Lighthouse:
 
@@ -189,7 +189,7 @@ Může se ovšem stát, že výrazně různá čísla bude vracet i Lighthouse p
 - se do měřené stránky dynamicky nevkládá reklama nebo jiné variabilní prvky;
 - na stránce neprobíhá A/B test, jehož jsou vaše měření obětí;
 - máte rovnoměrně vytížené připojení k internetu;
-- nezměnila se [verze Lighthouse](https://www.vzhurudolu.cz/blog/172-lighthouse-6) a tím také výpočet LPS.
+- nezměnila se [verze Lighthouse](https://www.vzhurudolu.cz/blog/199-lighthouse-8) a tím také výpočet LPS.
 
 Těch externích vlivů může být víc. Pro seriózní měření je vždy lepší testovat na jednotně nastaveném prostředí – například během procesu nasazování (CI – Continuous Integration) nebo využít už zmíněné nástroje, které měření od lokálních šumů izolují, jako je PageSpeed Insights, SpeedCurve či PageSpeed.cz.
 

@@ -7,12 +7,14 @@ Je to nástroj pro analýzu technické kvality webu, která důležitá jak pro 
 Obsah:
 
 <div markdown="1" id="toc" class="f-6">
+
 - [Proč jej používat?](#proc)
 - [Co umí analyzovat](#co-umi)
 - [Jak jej používat](#jak-pouzivat)
 - [Jak funguje](#jak-funguje)
 - [Příkazová řádka](#prikazovka)
 - [Pravidelné spouštění](#pravidelne)
+
 </div>
 
 Používám jej hlavně pro analýzu [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
@@ -23,7 +25,7 @@ Video: <a href="https://www.youtube.com/watch?v=2VIJU7NNKYw">Lighthouse: Základ
 
 Velmi doporučuji pomocí Lighthouse testovat vaše weby a webové aplikace. A nejlépe to dělat pravidelně a automaticky.
 
-→ *Související novinka: V květnu 2020 vyšel [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6).*
+→ *Související novinka: V červnu 2021 vyšel [Lighthouse 8](https://www.vzhurudolu.cz/blog/199-lighthouse-8).*
 
 ## Proč jej používat? {#proc}
 
@@ -41,7 +43,7 @@ Ale bavme se i o nevýhodách:
 
 - Dává spíše *základní přehled* a bez pokročilejších nástrojů se v případě vážnějších auditů neobejdeme. Psal jsem například o nástrojích pro [měření rychlosti](rychlost-nastroje.md).
 - Výsledky auditu rychlosti webu jsou obvykle *ovlivněné aktuálním výkonem*  počítače, na kterém jej spouštíme.
-- Dělá jen *syntetickou analýzu* v jednom umělém uživatelském kontextu. Zdaleka nám tedy nedá obrázek o celé šíři problémů na naší uživatelské základně. 
+- Dělá jen *syntetickou analýzu* v jednom umělém uživatelském kontextu. Zdaleka nám tedy nedá obrázek o celé šíři problémů na naší uživatelské základně.
 
 Data o rychlosti od uživatelů nám částečně poskytne například jiný nástroj od Google – [PageSpeed Insights](pagespeed-insights.md).
 
@@ -87,7 +89,7 @@ V testech jsou na výběr dvě zařízení:
 - *Desktop* – váš Chrome v aktuálním nastavení rozlišení, rychlosti připojení atd.
 - *Mobile* – ve výchozím nastavení jde o „Emulated Nexus 5X“ se simulovaným zpomalením procesoru (4×) a rychlosti připojení, které odpovídá zhruba „3G fast“ z nastavení WebpageTest.org („150 ms TCP RTT, 1,638.4 Kbps throughput“).
 
-Se zajímavou možností přišel Lighthouse [ve verzi 3](https://developers.google.com/web/updates/2018/05/lighthouse3) v nastavení zpomalení – *Throttling*:
+Zajímavá možnost je v nastavení zpomalení – *Throttling*:
 
 - *Simulated* – rychlejší test, navíc s lépe porovnatelnými výsledky. Znamená to, že se web otestuje na vašem aktuálním připojení i výkonu procesoru. Pak se čísla přepočítají, jak by asi vypadaly na slabším stroji. Tohle je myslím lepší používat.
 - *Applied* – přesnější, ale pomalý test. Připojení a procesor se uměle zpomalí a pak teprve Lighthouse operuje. Jde o původní metodu.

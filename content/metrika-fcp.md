@@ -13,6 +13,24 @@ Jde o důležitý milník, protože udržuje pozornost uživatele. Dává mu prv
 </figcaption>
 </figure>
 
+## Ideální hodnoty {#idealni-hodnoty}
+
+Pojďme se mrknout na jednotlivé hranice, které pro vysvědčení [používá nástroj Lighthouse](lighthouse.md):
+
+<div class="rwd-scrollable f-6" markdown="1">
+
+| Hodnota LCP        |  Mobil   |  Desktop  |
+|:-------------------|---------:|----------:|
+| Dobrá              |  ≤ 1,8 s |  ≤  0,9 s |
+| Vyžaduje zlepšení  |  ≤ 3,0 s |  ≤  1,6 s |
+| Špatný             |  > 3,0 s |  >  1,6 s |
+
+</div>
+
+V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika FCP do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 10 %.
+
+## Nástroje
+
 Metriku FCP ukazují moderní měřící nástroje: [Lighthouse](lighthouse.md) a díky tomu i [PageSpeed Insights](pagespeed-insights.md).
 
 Na časové ose je velmi blízko metrikám [FP](metrika-fp.md) (První vykreslení) a [FMP](metrika-fmp.md) (První smysluplné vykreslení).

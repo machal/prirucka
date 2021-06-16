@@ -98,38 +98,21 @@ Měření strojem? Prostě se pustí dva virtuální počítače – desktop (za
 
 Jak si stojíte s důležitými [rychlostními metrikami](metriky-rychlosti.md)?
 
-1. *První vykreslení obsahu*  
-[First Contentful Paint](metriky-rychlosti.md#FCP) (FCP) – kdy se vašemu uživateli poprvé nějaký obsahový text nebo obrázek?
-2. *První smysluplné vykreslení*  
-First Meaningful Paint (FMP) – kdy začíná být viditelný primární obsah stránky?
-3. *Index rychlosti*  
-[Speed Index](metriky-rychlosti.md#SpeedIndex) (SI) – kdy se vykreslí celá obrazovka nad zlomem stránky?
-4. *První nečinnost procesoru*  
-First CPU Idle (FCI) – kdy přestane hlavní proces pracovat a je možné zpracovat vstupy od uživatele?
-5. *Doba do interaktivity*  
-Time to Interactive (TTI) – kdy začne být stránka plně interaktivní?
-6. *Odhadovaná latence vstupu*  
-Jak rychle bude stránka reagovat na vstup uživatele?
-
-Aktualizace: V květnu 2020 vyšel [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6) a tudíž se leccos změnilo i v PageSpeed Insight. Podívejme se tady přehledně, jak se změnily metriky a jejich váhy při přechodu mezi verzemi Lighthouse 5 a 6:
-
+<figure>
 <div class="rwd-scrollable f-6"  markdown="1">
-
-| Metrika                         | Váha ve verzi 5 | Váha ve verzi 6 |
-|:--------------------------------|----------------:|----------------:|
-| [First Contentful Paint (FCP)](/prirucka/metrika-fcp)    | 	23 %            | 15 % |
-| [Speed Index (SI)](/prirucka/speedindex)                | 	27 %            | 15 % |
-| [First Meaningful Paint (FMP)](/prirucka/metrika-fmp)    | 	7 %             | -    |
-| [Largest Contentful Paint (LCP)](/prirucka/metrika-lcp)  | 	-               | 25 % |
-| [Time To Interactive (TTI)](/prirucka/metrika-tti)       | 	33 %            | 15 % |
-| First CPU Idle (FCI)            | 	13 %            | -    |
-| [Total Blocking Time (TBT)](metrika-tbt.md)       | 	-               | 25 % |
-| Max Potential FID               | 	0 %             | -    |
-| [Cumulative Layout Shift (CLS)](/prirucka/metrika-cls)   | -               | 5 %  |
-
-</div>
-
-[Ideální hodnoty metrik](https://www.vzhurudolu.cz/blog/112-metriky-cile) jsem zkoumal ve starším textu na blogu.
+| Metrika                                           | Váha | Ideální hodnota |
+|:--------------------------------------------------|-----:|----------------:|
+| [First Contentful Paint (FCP)](metrika-fcp.md)    | 10 % |           ≤ 1,8 s |
+| [Largest Contentful Paint (LCP)](metrika-lcp.md)  | 25 % |         ≤ 2,5 s |
+| [Speed Index (SI)](speedindex.md)                 | 10 % |         ≤ 3,4 s |
+| [Time To Interactive (TTI)](metrika-tti.md)       | 10 % |         ≤ 3,8 s |
+| [Total Blocking Time (TBT)](metrika-tbt.md)       | 30 % |         ≤ 0,2 s |
+| [Cumulative Layout Shift (CLS)](metrika-cls.md)   | 15 %  |           ≤ 0,1 |
+</div>  
+<figcaption markdown="1">
+*Tabulka: Metriky, jejich váhy a ideální hodnoty pro získání 100 % hodnocení v Lighthouse Performance Score od Lighthouse [verze 8](https://www.vzhurudolu.cz/blog/199-lighthouse-8).*
+</figcaption>
+</figure>
 
 ## Optimalizační návrhy: Příležitosti a diagnostika {#prilezitosti}
 
