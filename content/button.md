@@ -75,7 +75,7 @@ Vývojáři zase na prvku `<button>` oceňují nezávislost atributu `value` na 
 
 ### Nevýhoda: Problémy se starými Explorery, spíše pro zajímavost
 
-S `<button>` se pojily nějaké problémy v Internet Explorerech verzí 6-9. Zejména pak v situacích, když jste textovou hodnotu uvedenou v `<button>` chtěli poslat na server. Mě osobně to nevadí, protože to je velmi vzácný scénář a protože už i staré Explorery jsou dnes druh velmi vzácný, až vyhynulý. Problémy se starými Explorery přesně [popisuje Bohumil Jahoda](http://jecas.cz/button), ale nenechte se jimi odradit. 
+S `<button>` se pojily nějaké problémy v [Internet Explorerech](msie.md) verzí 6-9. Zejména pak v situacích, když jste textovou hodnotu uvedenou v `<button>` chtěli poslat na server. Mě osobně to nevadí, protože to je velmi vzácný scénář a protože už i staré Explorery jsou dnes druh velmi vzácný, až vyhynulý. Problémy se starými Explorery přesně [popisuje Bohumil Jahoda](http://jecas.cz/button), ale nenechte se jimi odradit. 
 
 ## Nepleťte si tlačítko s odkazem
 

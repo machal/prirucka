@@ -4,7 +4,7 @@ CSS Grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mří�
 
 Síla gridu je v tom, že můžeme mřížku definovat v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css-flexbox.md) je tedy vhodnější pro celostránkové a komplexnější layouty.
 
-Grid zvládají všechny dnešní prohlížeče. Internet Exploreru 11 ale podporuje jen starší verzi Gridu. Nevadí, i v něm je mřížku s kompromisy [možné použít](css-grid-msie.md).
+Grid zvládají všechny dnešní prohlížeče. [Internet Explorer](msie.md) 11 ale podporuje jen starší verzi Gridu. Nevadí, i v něm je mřížku s kompromisy [možné použít](css-grid-msie.md).
 
 <!-- AdSnippet -->
 

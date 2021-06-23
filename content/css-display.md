@@ -63,7 +63,7 @@ Vygeneruje boxík, který je „block-level“. Zjednodušeně to znamená, že 
 - `inline-block`  
 Generuje boxík, se zvnějšku chová jako řádkový a uvnitř generuje vždy nový blokový kontext. Mimochodem, specifikace s touto hodnotou do budoucna počítá jen jako jiným zápisem pro klíčová slova `inline flow-root`. O tom píšu později.
 - `run-in`  
-Vygeneruje typ „inline-level“ boxu se zvláštním chováním – pokusí se sloučit do následujícího blokového prvku. Pokud za „run-in“ prvkem následuje blokový prvek, „run-in“ se stane jeho prvním inline boxem. Pokud bude následovat inline pole, stane se z „run-in“ prvku blokový. Toto ale bohužel není podporováno jinde než v Internet Exploreru (!). [caniuse.com/run-in](https://caniuse.com/run-in)
+Vygeneruje typ „inline-level“ boxu se zvláštním chováním – pokusí se sloučit do následujícího blokového prvku. Pokud za „run-in“ prvkem následuje blokový prvek, „run-in“ se stane jeho prvním inline boxem. Pokud bude následovat inline pole, stane se z „run-in“ prvku blokový. Toto ale bohužel není podporováno jinde než v [Internet Exploreru](msie.md) (!). [caniuse.com/run-in](https://caniuse.com/run-in)
 
 V CodePenu si můžete vyzkoušet všechny možnosti.
 

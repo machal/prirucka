@@ -100,7 +100,7 @@ Na závěr si neodpustím několik odkazů jinam:
 Z textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích už víte, že Box Alignment v CSS má dva zádrhele:
 
 1. Ne všechny vlastnosti je možné použít ve všech systémech layoutu. Například `justify-items` a `justify-self` nefungují ve flexboxu.
-2. Internet Explorer těch vlastností nepodporuje více, ale je to problematické hlavně u gridu.
+2. [Internet Explorer](msie.md) těch vlastností nepodporuje více, ale je to problematické hlavně u gridu.
 
 <!-- AdSnippet -->
 

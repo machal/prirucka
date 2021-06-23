@@ -2,7 +2,7 @@
 
 MSIE dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné tento starý prohlížeč od Microsoftu podporovat.
 
-Text píšu v červnu 2021. A píšu ho proto, že pokud Internet Explorer stále ještě podporujete, myslím si, že byste od této praxe mohli začít upouštet.
+Text píšu v červnu 2021. A píšu ho proto, že pokud Internet Explorer stále ještě podporujete, myslím si, že byste od této praxe mohli začít upouštět.
 
 Velmi to záleží na cílové skupině konkrétního projektů, ale drtivá většina vývojářů si myslím ukončení podpory ke polovině roku 2021 může dovolit.
 
@@ -41,7 +41,7 @@ Blíží se doba, kdy IE nebude mít smysl tento prohlížeč podporovat na žá
 
 Bratrům Slovákům zde ale můžeme jen závidět. V zemi pod Tatrami je totiž zastoupení MSIE podle čísel Gemiusu už nyní nulové.
 
-## Výjimky povrzují pravidlo. Sledujte statistiky a příjmy
+## Výjimky potvrzují pravidlo. Sledujte statistiky a příjmy
 
 Jak zjistit, jestli můžu Explorer přestat podporovat?
 
@@ -71,7 +71,7 @@ Ve schopnost těchto hlášek snížit podíl zastoupení starých prohlížeč�
 
 ## Exploreru končí podpora od Microsoftu
 
-Oficální ukončení podpory mají v Microsoftu naplánované na polovinu června 2022.
+Oficiální ukončení podpory mají v Microsoftu naplánované na polovinu června 2022.
 
 <figure>
 <img src="../dist/images/original/msie-support-end.png" width="1600" height="900" alt="Konec podpory Exploreru - Microsoft to vidí na červen 2022">

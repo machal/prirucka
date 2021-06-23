@@ -253,7 +253,7 @@ CodePen: [cdpn.io/e/LOdPbR](https://codepen.io/machal/pen/LOdPbR?editors=1111).
 
 CSS proměnné podporují všechny moderní prohlížeče. Bez podpory jsme například v Opeře Mini a ve všech Internet Explorerech. Jasně, obvyklí podezřelí. Více o podpoře je na webu CanIUse. [https://caniuse.com/css-variables](https://caniuse.com/css-variables).
 
-Internet Explorer 11 ale mohou v době psaní textu i na vašich webech ještě tvořit významnou část návštěvníků. Následují tedy čtyři možnosti řešení této situace.
+[Internet Explorer](msie.md) 11 ale mohou v době psaní textu i na vašich webech ještě tvořit významnou část návštěvníků. Následují tedy čtyři možnosti řešení této situace.
 
 ### CSS proměnné jen pro vylepšení prožitku {#podpora-fallbacky-vylepseni}
 

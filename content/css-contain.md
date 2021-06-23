@@ -125,7 +125,7 @@ Pojďme se zde vrátit k druhé ukázce – renderování desítek či stovek č
 
 ## Podpora: v Safari máme smůlu, ale je nám to jedno {#podpora}
 
-Vlastnost `contain` nepodporuje Internet Explorer, ani původní MS Edge, což vůbec nevadí.
+Vlastnost `contain` nepodporuje [Internet Explorer](msie.md), ani původní MS Edge, což vůbec nevadí.
 
 Ale nevadí nám ani chybějící podpora v Safari. „Containment“ je typickým příkladem postupného vylepšení (progressive enhancement). V Safari prostě nedojde k očekávané úspoře v rychlosti renderování, ale stránka se tam bez problémů vykreslí.
 
