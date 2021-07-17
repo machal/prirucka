@@ -1,8 +1,8 @@
 # SMACSS
 
-## Scalable and Modular Architecture for CSS. 
+Starší style guide pro psaní CSS od Jonathana Snooka.
 
-Style guide od Jonathana Snooka.
+## Scalable and Modular Architecture for CSS
 
 Je to daleko propracovanější, ale základní myšlenka je v oddělení rozdělení CSS deklarací do těchto kategorií a k nim náležejícím označením ve stylech.
 
@@ -30,10 +30,8 @@ Je to daleko propracovanější, ale základní myšlenka je v oddělení rozdě
 </tr>
 </table>
 
-
 Pozn.: Jonathan neříká, že se mají třídy pro layout a stavy prefixovat zrovna takto. Je to na vás. Dělám to takhle na některých projektech a docela se osvědčilo.
 
-## Odkazy
+[smacss.com](http://smacss.com/)
 
-* [smacss.com](http://smacss.com/)
-* [tv.adobe.com/watch/adc-presents-smacss/smacss-introduction-to-a-scalable-and-modular-architecture-for-css](http://tv.adobe.com/watch/adc-presents-smacss/smacss-introduction-to-a-scalable-and-modular-architecture-for-css/)
+_Aktualizace k červenci 2021: SmaCSS dnes už beru za překonanou [metodiku organizace CSS](css-metodiky.md). Věnujte pozornost SuitCSS nebo [BEM](bem.md)._
