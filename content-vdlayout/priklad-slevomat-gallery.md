@@ -6,11 +6,21 @@ Oblasti jsme zde využili hlavně pro zjednodušení a zpřehlednění kódu. V 
 
 Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Ale takovou jste určitě už viděli i jinde nebo ji dokonce kódovali.
 
-<!-- TODO IMG v rozhraní Slevomatu -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-slevomat-live.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz">
+<figcaption markdown="1">
+*Co takhle si po všem tom kódování dopřát wellness?*
+</figcaption>
+</figure>
 
 Zadání je ale složitější – tentokrát budeme velmi intenzivně řešit responzivitu, různá zobrazení na různě velkých displejích.
 
-<!-- TODO IMG responzivní pohledy -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-slevomat-responsive.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - responzivní pohledy">
+<figcaption markdown="1">
+*Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wellness nebude, spíše galeje.*
+</figcaption>
+</figure>
 
 Chcete si to zkusit sami? „Forkněte“ CodePen a vzhůru do toho. [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
 
@@ -36,8 +46,6 @@ HTML jsem tentokrát nevymýšlel sám. Půjčil jsem si jej přímo od kodérů
 ## Oblasti mřížky
 
 V dalším kroku si napárujeme jednotlivé prvky HTML (nebo DOMu, když chcete) s oblastmi gridu.
-
-<!-- TODO IMG responzivní pohledy + oblasti gridu -->
 
 V CSS kódu to bude vypadat následovně:
 
@@ -153,10 +161,13 @@ CSS kód vypadá takto:
 
 Máme zde mřížku 2 × 3, dělenou na pětiny. Umístění oblastí do buněk gridu je asi zřejmé. V případě potřeby si je porovnejte s rozvržením z obrázků.
 
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-slevomat-firefox.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - Firefox">
+<figcaption markdown="1">
+*Vizualizace mřížky a jejích oblastí ve Firefoxu.*
+</figcaption>
+</figure>
+
+A máme hotovo! Srovnejte si svá díla s mým CodePenem.
+
 CodePen: [cdpn.io/e/bGqzwMy](https://codepen.io/machal/pen/bGqzwMy?editors=1100)
-
-## Přidáváme mezeru
-
-Zatím jsem vám zamlčel podstatnou věc. V příkladech jsem nepracoval s dvoupixelovou mezerou, která v původním rozvržení vklíněná mezi jednotlivými fotografiemi.
-
-<!-- TODO: Object-fit? calc? https://codepen.io/machal/pen/PopLrbZ?editors=1100 -->

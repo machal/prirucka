@@ -12,7 +12,12 @@ Jenže co je „svatý grál“ v oblasti webových layoutů? Nejlépe to opět 
 
 Svatý grál mezi layouty vypadá, prosím pěkně, takto:
 
-<!-- TODO img responsive design včetně neviditelné mřížky -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-holy-grail-zadani.png" width="1600" height="900" alt="Příklad - holy grail">
+<figcaption markdown="1">
+*Hurá, našli jsme svatý grál! Potřebujeme jej ale ještě vůbec?*
+</figcaption>
+</figure>
 
 Ano, znáte ho. Je to layout, ve kterém byla ještě před lety vysázena každá druhá webovka.
 
@@ -130,7 +135,12 @@ Asi jste si všimli, že oblasti `head` a `foot` zabírají vždy dvě buňky, c
 
 Pomocí inspekce mřížky ve Firefoxu se nám teď layout krásně vizualizuje i s pojmenovanými oblastmi:
 
-<!-- TODO img mřížka ve Firefoxu -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-holy-grail-firefox.png" width="1600" height="900" alt="Příklad - holy grail ve Firefoxu">
+<figcaption markdown="1">
+*Holy grail layout vizualizovaný ve Firefoxu.*
+</figcaption>
+</figure>
 
 ## Minimum, maximum, optimum s pomocí funkce `clamp()`
 

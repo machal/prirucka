@@ -4,7 +4,12 @@ Fotogalerie, nebo prostě seznam položek vyskládaný do mřížky, to je návr
 
 V tomto specifickém příkladu budeme předpokládat kodéra velmi lenivé nátury a pokusíme se vyhnout jakýmkoliv Media nebo Container Queries.
 
-<!-- TODO obrázek se zadáním -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-photogallery.png" width="1600" height="900" alt="Příklad s fotogalerií bez Media Queries">
+<figcaption markdown="1">
+*Tohle nakódujete za chvilku. Co ale responzivně a bez Media Queries?*
+</figcaption>
+</figure>
 
 Zadání je následující:
 
@@ -77,8 +82,6 @@ Zamysleme se však také nad nevýhodami volby vícesloupcového layoutu pro kó
 
 Ve spoustě situací to ale může být vhodné řešení, na obrázku uvidíte, že vizuálně působí dobře.
 
-<!-- TODO obrázek: https://codepen.io/machal/pen/ZEKKozg?editors=1100 -->
-
 Možná si při pohledu na obrázek vzpomenete na [„zděný layout“ (masonry)](css-masonry.md), o kterém píšu v kapitole s referenční příručkou ke gridu a který bude zřejmě jednou možné udělat bez JavaScriptu, s přímou pomocí CSS Gridu.
 
 No a když už jsme u gridu, pojďme si tu fotogalerii zkusit ještě navrhnout s jeho pomocí.
@@ -103,9 +106,14 @@ RAM, to je zkratka pro Repeat, Auto, Minmax. Vysvětlím to zevnitř:
 
 Jinak řečeno – zápisem `repeat(auto-fit, minmax(150px, 1fr))` říkáme: Dej na řádku libovolný počet položek. Roztáhni je klidně do jejich maximální obsahové šířky, ale nikdy je nesmršťuj pod 150 pixelů.
 
-Výsledek vypadá jinak než v řešení pomocí CSS Multicol:
+Výsledek vypadá jinak než v řešení pomocí CSS Multicol, na obrázku uvidíte srovnání.
 
-<!-- TODO obrázek: https://codepen.io/machal/pen/LYyydoZ?editors=1100 -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-photogallery-multicol-grid.png" width="1600" height="900" alt="Příklad s fotogalerií - dvě řešení">
+<figcaption markdown="1">
+*Kdo je váš favorit, pan Vícesloupec nebo paní Mřížka?*
+</figcaption>
+</figure>
 
 Položky jsou srovnané do řádků a je možné je číst zleva doprava.
 

@@ -6,7 +6,12 @@ V tomto jednoduchém příkladu otevřeme bránu do světa zarovnávání boxů,
 
 Cílem je to, co vidíte na obrázku. Boxík, který ve viditelné ploše obrazovky zůstane vycentrovaný vodorovně i svisle, i když se jeho obsah změní.
 
-<!-- TODO obrázek: https://codepen.io/machal/pen/VwbjBPB?editors=1100 a změnit obsah -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-centrovani.png" width="1600" height="900" alt="Centrování boxu na výšku i šířku">
+<figcaption markdown="1">
+*Centruj centruj, vykrúcaj!*
+</figcaption>
+</figure>
 
 Opět dám chvilku času těm z vás, kteří si řešení chcete vymyslet sami. Podmínky zadání jsou tyto:
 
@@ -58,8 +63,6 @@ Náš prví centrovací pokus učiníme s pomocí flexboxu:
 ```
 
 Je nám jasné, že toto žádné zázraky neučiní. Spíše naopak - vytvoří nám to problémy. Boxík je teď roztažený na celou výšku rodiče.
-
-<!-- TODO obrázek rozbitý -> upravený -->
 
 Je to častá potíž začátečníků s flexboxem. Výchozí hodnota vlastnosti, která určuje zarování na výšku, je totiž nastavená na maximální rozpínavost.
 

@@ -2,7 +2,12 @@
 
 V dalším relativně častém vzhoru z uživatelských rozhraní zkusíme využít layout mřížkou v jiném směru.
 
-<!-- TODO img responsive design včetně BEM pojmenování -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-pancake-zadani.png" width="1600" height="900" alt="Příklad - hromada lívanců">
+<figcaption markdown="1">
+*Dáte si to s džemem, ovocem, jogurtem nebo třeba nějakým CSS layoutem?*
+</figcaption>
+</figure>
 
 Tomuto návrhovéhom vzoru se říká „Pancake Stack“ takže „hromada lívanců“. V zadání je tato představa:
 
@@ -75,5 +80,3 @@ Ještě doplním, že v „nastavovacím“ kódu, který je v CodePenech schova
 Kromě okrajů v `margin` a `padding` si prosím povšimněte definice rozvržení flexboxem, umístěné na rodičovském prvku nad jednotlivými hromádkami lívanců. [`display:flex`](css-display.md) už znáte, ale [vlastnost `flex-wrap`](css-flex-wrap.md) jsme v příkladech ještě neměli. Je velmi důležitá, protože prvkům rozvržení umožňuje zalamovat se na další řádky.
 
 Všimněte si i deklarace `overflow: hidden`, která obsahu v prvku `.box__body` zabraňuje v přetečení mimo vyhrazený prostor výšky `20rem`.
-
-

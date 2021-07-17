@@ -127,7 +127,7 @@ Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési
 Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkne vizualizovat v DevTools.
 
 <figure>
-<img src="../dist/images/original/vdlayout/firefox-devtools-grid.png" width="1600" height="450" alt="CSS Grid Inspector ve Firefoxu">
+<img src="../dist/images/original/vdlayout/devtools-layout-firefox.png" width="1600" height="450" alt="CSS Grid Inspector ve Firefoxu">
 <figcaption markdown="1">
 *Obrázek: Grid v negližé, to je „CSS Grid Inspector“ ve Firefoxu.*
 </figcaption>

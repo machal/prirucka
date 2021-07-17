@@ -1,8 +1,13 @@
 # Příklad s bočním panelem
 
-V této ukázce využijeme jak flexbox, tak grid.
+V této ukázce zkusíme využít flexbox i grid. Jde o jeden z nejčastějších layoutů, které můžete na webu zahlédnout.
 
-<!-- TODO img responsive design včetně BEM pojmenování -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-sidebar-zadani.png" width="1600" height="900" alt="Příklad s bočním panelem">
+<figcaption markdown="1">
+*Tohle už jste na webu někde viděli, že ano?*
+</figcaption>
+</figure>
 
 Zadání je následující:
 

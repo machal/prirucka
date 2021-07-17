@@ -4,7 +4,12 @@ Pokud tento text nečtete v krytu, kde se mnoho let připravujete na zombie apok
 
 Tento frondendový framework se proslavil snadností stavby uživatelského rozhraní, zejména pro vývojáře nebo amatéry, kterým není CSS, HTML a JavaScript úplně blízké.
 
-<!-- TODO obrázek dokumentace Bootstrapu: https://getbootstrap.com/docs/5.0/layout/grid/  -->
+<figure>
+<img src="../dist/images/original/vdlayout/bootstrap-grid.png" width="1600" height="900" alt="Bootstrap - dokumentace ke gridu">
+<figcaption markdown="1">
+*Tohle určitě vidíte poprvé… Nebo taky ne.*
+</figcaption>
+</figure>
 
 Mnoho vývojářek a vývojářů však ze všech vlastností Bootstrapu používá jen jednu část - mřížku pro tvorbu rozvržení stránky. Je skvělé, že například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o dvou sloupcích třetinové a dvoutřetinové šířky:
 
@@ -20,8 +25,6 @@ Mnoho vývojářek a vývojářů však ze všech vlastností Bootstrapu použí
 ```
 
 Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definuje sloupec a pomocí třídy `.col-` s číslem podíl na výchozím dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Bootstrapu a šup — máte layout hotový.
-
-<!-- TODO obrázek: Rozvržení z CodePenu  -->
 
 CodePen: [cdpn.io/e/zYwBYjR](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
 
@@ -114,6 +117,13 @@ Na konec ještě shrňme kompletní CSS kód:
 ```
 
 CodePen: [cdpn.io/e/MWpzqdv](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
+
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-bootstrap-4-8.png" width="1600" height="900" alt="4/8 rozvržení jako v Bootstrapu">
+<figcaption markdown="1">
+*Rozvržení 4/8 jako v Bootstrapu s překryvnou vrstvou vyznačující neviditelné sloupečky gridu a mezery mezi nimi.*
+</figcaption>
+</figure>
 
 Určitě si umíte představit i možnou náhradu dalších variant používání layoutu v Bootstrapu, včetně responzivních tříd pro různě široké displeje. Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden CodePen s dalšími ukázkami.
 

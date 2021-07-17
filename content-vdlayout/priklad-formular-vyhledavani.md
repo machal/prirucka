@@ -4,7 +4,12 @@ V další ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzk
 
 Zadání obnáší návrhový vzor, na který každá kodérka a každý kodér jednou narazí.
 
-<!-- TODO obrázek s vysvětlením zadání -->
+<figure>
+<img src="../dist/images/original/vdlayout/priklad-vyhledavani-zadani.png" width="1600" height="900" alt="Příklad s vyhledáváním">
+<figcaption markdown="1">
+*Co budeme vyhledávat dneska? Co třeba řešení tohoto příkladu?*
+</figcaption>
+</figure>
 
 Jak asi vidíte, jde o vyhledávací formulář obnášející tři prvky – textovým popisek `<label>`, textovým vstupem `<input>` a tlačítkem `<button>`.
 
