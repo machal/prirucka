@@ -2,14 +2,14 @@
 
 V předchozí ukázce jsme poměrně intenzivně využili oblasti mřížky definované pomocí [`grid-template-areas`](css-grid-template-areas.md) a umísťované s vlastností [vlastností `grid-area`](css-grid-area.md).
 
-Oblasti jsme zde využili hlavně pro zjednodušení a zpřehlednění kódu. V této ukázce u oblastí zůstaneme, ale jejich využití tady bude ještě intenzivnější a zpřehlednění kódu větší.
+Oblasti jsme zde využili hlavně pro zjednodušení a zpřehlednění kódu. V této ukázce u oblastí zůstaneme, ale jejich využití tady bude ještě intenzivnější a uplatnění na zpřehlednění kódu větší.
 
 Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Ale takovou jste určitě už viděli i jinde nebo ji dokonce kódovali.
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-slevomat-live.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz">
 <figcaption markdown="1">
-*Co takhle si po všem tom kódování dopřát wellness?*
+*Co takhle si po tom všem kódování dopřát wellness?*
 </figcaption>
 </figure>
 
@@ -22,9 +22,11 @@ Zadání je ale složitější – tentokrát budeme velmi intenzivně řešit r
 </figcaption>
 </figure>
 
-Chcete si to zkusit sami? „Forkněte“ CodePen a vzhůru do toho. [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
+Chcete si to zkusit sami? „Forkněte“ CodePen a vzhůru do toho. 
 
-HTML jsem tentokrát nevymýšlel sám. Půjčil jsem si jej přímo od kodérů Slevomatu, protože používají metodiku BEM a já k ní nemám co dodat:
+CodePen: [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
+
+HTML jsem tentokrát nevymýšlel sám. Půjčil jsem si jej přímo od kodérů Slevomatu, protože používají metodiku BEM a já k jejich HTML téměř nemám co dodat:
 
 ```html
 <div class="gallery">
@@ -43,9 +45,11 @@ HTML jsem tentokrát nevymýšlel sám. Půjčil jsem si jej přímo od kodérů
 </div>
 ```
 
+Pokud by vás BEM, metodika zápisu tříd pro potřebu tvorby komponent, zajímal víc, mrkněte se na Vzhůru dolů. [vrdl.cz/p/bem](https://www.vzhurudolu.cz/prirucka/bem)
+
 ## Oblasti mřížky
 
-V dalším kroku si napárujeme jednotlivé prvky HTML (nebo DOMu, když chcete) s oblastmi gridu.
+V dalším kroku si spárujeme jednotlivé prvky HTML (nebo DOMu, když chcete) s oblastmi gridu.
 
 V CSS kódu to bude vypadat následovně:
 
@@ -67,7 +71,7 @@ V CSS kódu to bude vypadat následovně:
 }
 ```
 
-Jak už víte, toto samo o sobě ještě nic nevytvoří. Snad jen zmatenost prohlížeče, protože ten sice ví, kam chcete který prvek umístit, ale oblasti ani layout zatím nezná.
+Jak už víte, toto samo o sobě ještě nic nezařídí. Snad jen zmatenost prohlížeče, protože ten sice ví, kam chcete který prvek umístit, ale oblasti ani layout zatím nezná.
 
 ## Breakpointy
 
@@ -81,11 +85,11 @@ V příkladu jsem za vás pomocí [Media Queries](media-queries.md) definoval t�
 @media (min-width: 700px) { }
 ```
 
-Pojďme teď konečně zapracovat na jednotlivých rozvrženích. Mocně zde využijeme [zkratku `grid-template`](css-grid-template.md), které už víte, že jsem si ji poměrně oblíbil.
+Pojďme teď konečně zapracovat na jednotlivých rozvrženích. Mocně zde využijeme právě [zkratku `grid-template`](css-grid-template.md), o které už víte, že jsem si ji poměrně oblíbil.
 
 ## Layout na nejmenších displejích
 
-Layout na nejmenších displejích bude vypadat takto:
+Rozvržení pro nejmenší zařízení typu mobily na výšku bude vypadat takto:
 
 ```css
 @media (max-width: 399px) {
@@ -100,7 +104,7 @@ Layout na nejmenších displejích bude vypadat takto:
 
 Jde o mřížku 3 × 2, tři sloupce a dva řádky. Každý sloupec je stejně široký – `1fr 1fr 1fr` bychom samozřejmě mohli zapsat pomocí [funkce `repeat()`](css-repeat.md) jako `repeat(3, 1fr)`.
 
-Výšku řádků bychom mohli definovat hned za oblastmi. Pokud ji neurčíme, spočítá se podle obsahu, takže má hodnotu `auto`, takže zde podle výšky obrázků. Jen pro pořádek uvedu odpovídající zápis s definicí výšky řádku:
+Výšku řádků bychom mohli definovat hned za oblastmi. Pokud ji neurčíme, spočítá se podle obsahu, takže má hodnotu `auto`, zde podle výšky obrázků. Jen pro pořádek uvedu odpovídající zápis s definicí výšky řádků layoutu:
 
 ```css
 @media (max-width: 399px) {
@@ -113,12 +117,14 @@ Výšku řádků bychom mohli definovat hned za oblastmi. Pokud ji neurčíme, s
 }
 ```
 
+Všimněte si klíčového slova `auto`, které přibylo na konci obou řádků.
+
 Podstatné na této ukázce je ale umístění oblastí do mřížky:
 
-- Oblast `main` zabírá první tři buňky mřížky. Celý první řádek.
+- Oblast `main` zabírá první tři buňky mřížky, tedy celý první řádek.
 - Oblastem `thumb1` až `thumb3` jsme přidělili jednotlivé buňky na třetím řádku.
 
-Díky tomu, že jsem nejprve propojil elementy DOMu z oblastmi, nemusím nyní vůbec přemýšlet, jak vypadá moje HTML.
+Díky tomu, že jsem nejprve propojil elementy DOMu z oblastmi, nemusím nyní vůbec přemýšlet, jak vypadá moje HTML. Prostě umísťuji pojmenované oblasti do požadovaného rozvržení.
 
 ## Layout na středních displejích
 
@@ -140,13 +146,15 @@ Pojďme rovnou na kód:
 
 Zde musíme poslední náhled „vypnout“ pomocí `display:none`. Grafický návrh nám to káže.
 
-Samotný layout je tentokrát definovaný jako mřížka 2 × 2. První sloupec je dvoutřetinový (`2fr`), druhý zabírá třetinu prostoru (`1fr`).
+Zde jen umístím vsuvku způsobenou tím, že odborník na rychlost webu ve mě se nyní staví na zadní: „Vypnutí“ obrázku pomocí `display:none` prohlížeči nezakáže obrázek stáhnout. Může to vadit, ale v tomhle případě se budeme tvářit, že ne zase tak moc.
 
-Rozmístění oblastí `main`, `thumb1` a `thumb2` do buněk mřížky asi vidíte z „ASCII artu“.
+Samotný layout je tentokrát definovaný jako mřížka 2 × 2. První sloupec je dvoutřetinový (`2fr`), druhý zabírá zbylou třetinu prostoru (`1fr`).
+
+Rozmístění oblastí `main`, `thumb1` a `thumb2` do buněk mřížky asi vidíte z „ASCII artu“. Hlavní fotka zabírá celý první sloupec, další dvě jsou vlevo pod sebou.
 
 ## Layout na větších displejích
 
-CSS kód vypadá takto:
+Nyní k největšímu breakpointu. CSS kód vypadá takto:
 
 ```css
 @media (min-width: 700px) {

@@ -2,7 +2,7 @@
 
 Pokud tento text nečtete v krytu, kde se mnoho let připravujete na zombie apokalypsu, nebo pokud jste se právě teď dozvěděli, že existuje něco jako webová vývojařina, myslím, že můžu předpokládat, že znáte framework Bootstrap.
 
-Tento frondendový framework se proslavil snadností stavby uživatelského rozhraní, zejména pro vývojáře nebo amatéry, kterým není CSS, HTML a JavaScript úplně blízké.
+Tento frondendový framework se proslavil snadností stavby uživatelského rozhraní, zejména pro vývojáře nebo amatéry, kterým nejsou CSS, HTML a JavaScript úplně blízké.
 
 <figure>
 <img src="../dist/images/original/vdlayout/bootstrap-grid.png" width="1600" height="900" alt="Bootstrap - dokumentace ke gridu">
@@ -11,7 +11,9 @@ Tento frondendový framework se proslavil snadností stavby uživatelského rozh
 </figcaption>
 </figure>
 
-Mnoho vývojářek a vývojářů však ze všech vlastností Bootstrapu používá jen jednu část - mřížku pro tvorbu rozvržení stránky. Je skvělé, že například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o dvou sloupcích třetinové a dvoutřetinové šířky:
+Mnoho vývojářek a vývojářů však ze všech vlastností Bootstrapu používá jen jednu část - mřížku pro tvorbu rozvržení stránky. Tvořit layout pomocí tohoto nebo podobných frameworků je totiž úžasně jednoduché.
+
+Například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o dvou sloupcích třetinové a dvoutřetinové šířky:
 
 ```html
 <div class="row">
@@ -28,19 +30,19 @@ Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ 
 
 CodePen: [cdpn.io/e/zYwBYjR](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
 
-V přiloženém CSS souboru byste pak viděli, že layout je – alespoň v aktuální verzi 5 – tvořen pomocí flexboxu. Dříve to bylo pomocí `display:inline-block` a ještě dříve vlastnosti pro obtékání – `float`.
+V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v aktuální verzi 5 – tvořen pomocí flexboxu. Dříve to bylo pomocí `display:inline-block` a ještě dříve vlastnosti pro obtékání – `float`.
 
 ## Proč nepoužít Bootstrap?
 
 Pokud opravdu nejíte konzervy v krytu a neotevřeli jste knížku právě na této stránce, z dřívějších textů víte, že pro layout typu „mřížka“ by se daleko více hodila… No… Mřížka. Překvapivě.
 
-Boostrap zatím CSS grid nepodporuje, hlavně kvůli [kompatibilitě s Internet Explorerem](msie.md), ale to se v další verzi změní. Můžete mít ale i jiné důvody nepoužít pro rozvržení nejpopulárnější webové framework.
+Bootstrap zatím CSS grid nepodporuje, hlavně kvůli [kompatibilitě s Internet Explorerem](msie.md), ale to se v další verzi změní. Můžete však mít i jiné důvody nepoužít pro rozvržení nejpopulárnější webové framework.
 
-Prvním problémem může být zbytečných 20-30 kilobajtů CSS, které musíte v podobě Bootstrapu kvůli layoutu stahovat. Jestliže máte přísné požadavky na rychlost vykreslování, je to určitě nemalá nevýhody.
+Prvním problémem může být zbytečných 20-30 kilobajtů CSS, které musíte v podobě Bootstrapu kvůli layoutu stahovat. Jestliže máte přísné požadavky na rychlost načítání stránky, je to určitě nemalá nevýhoda.
 
-Druhým teoretickým problémem je vaše touha mít layout definovaný v CSS, nikoliv v HTML. Dobrých důvodů pro něco takového může být hodně – od nemožnosti upravovat HTML na vašem projektu, po přehlednost frontendového kódu.
+Druhým teoretickým problémem je vaše touha mít layout definovaný v CSS, nikoliv v HTML. Dobrých důvodů pro něco takového může být hodně – od nemožnosti upravovat HTML na vašem projektu, po specifický způsob organizace frontendového kódu.
 
-Nyní se tedy dostáváme k tomu, že bychom tento layout chtěli použít v CSS gridu.
+Nyní se tedy dostáváme k jádru pudla. Tento layout bychom chtěli napsat v CSS gridu a ušetřit tak stažení zbytečného frameworku.
 
 Zadání pro vás tedy zní: K HTML uvedenému výše napište CSS pomocí gridu tak, aby rozvržení vypadalo stejně.
 
@@ -56,7 +58,7 @@ Začneme s definicí mřížky na rodičovském prvku `.row`:
 }
 ```
 
-Pomocí [funkce `repeat()`](css-repeat.md) vykreslíme 12 prvků mřížky a [vlastností `gap`](css-gap.md) přidáme 30pixelovou mezeru mezi nimi.
+Pomocí [funkce `repeat()`](css-repeat.md) vykreslíme 12 prvků mřížky a zápisem [vlastnosti `gap`](css-gap.md) přidáme 30pixelovou mezeru mezi nimi.
 
 Díky autoplacementu, automatickému umístění potomků rodiče do mřížky, se nám oba vnitřní prvky `div` vloží na pozici prvního a druhého sloupečku. To ale nechceme, že?
 
@@ -72,7 +74,7 @@ Další deklarace v CSS budou směřovat k řešení tohoto problému:
 }
 ```
 
-První prvek jsme umístili mezi první a pátou linku gridu, tedy do prvních čtyř sloupců, druhý mezi pátou a poslední třináctoulinku, tedy do dalších osmi sloupců.
+První prvek jsme umístili mezi první a pátou linku gridu, tedy do prvních čtyř sloupců, druhý mezi pátou a poslední třináctou linku, tedy do dalších osmi sloupců.
 
 Toto řešení je ovšem nepraktické, protože explicitně umísťuje prvky na konkrétní místa mřížky. Co kdybychom například chtěli prvek s třídou `.col-8` umístit před prvek `.col-4`? Výše uvedeným řešením ztrácíme flexibilitu, kterou nám poskytuje Bootstrap, což je krok zpět.
 
@@ -88,9 +90,9 @@ Proto sáhneme k lepšímu řešení:
 }
 ```
 
-[Klíčové slovo `span`](css-grid-row-column.md) specifikuje rozsahu sloupečků, který v mřížce daná buňka zabírá. Vykreslovat se začne tam, kde končí předchozí prvek. A to je přesně ta flexibilita, kterou jsme chtěli mít.
+[Klíčové slovo `span`](css-grid-row-column.md) specifikuje počet sloupečků, který v mřížce daná buňka zabírá. Vykreslovat se začne tam, kde končí předchozí prvek. A to je přesně ta flexibilita, kterou jsme chtěli mít.
 
-Na konec ještě shrňme kompletní CSS kód:
+Shrňme si to v kompletním CSS kódu:
 
 ```css
 .row {
@@ -125,6 +127,10 @@ CodePen: [cdpn.io/e/MWpzqdv](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
 </figcaption>
 </figure>
 
-Určitě si umíte představit i možnou náhradu dalších variant používání layoutu v Bootstrapu, včetně responzivních tříd pro různě široké displeje. Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden CodePen s dalšími ukázkami.
+Určitě si umíte představit i možnou náhradu dalších variant používání layoutu v Bootstrapu, včetně responzivních tříd pro různě široké displeje.
+
+Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden CodePen s dalšími ukázkami.
 
 CodePen: [cdpn.io/e/dJxBGz](https://codepen.io/machal/pen/dJxBGz?editors=1100)
+
+Zpráva, která by se vám na konci tohoto příkladu měla zapsat do paměti zní: Pokud hledáte jednoduchou možnost tvorby layoutu v mřížce, jako nativně podporovanou alternativu k Bootstrapu a podobným frameworkům zvažte CSS grid.

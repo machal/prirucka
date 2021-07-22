@@ -1,6 +1,6 @@
 # Příklad s bočním panelem
 
-V této ukázce zkusíme využít flexbox i grid. Jde o jeden z nejčastějších layoutů, které můžete na webu zahlédnout.
+V této ukázce zkusíme využít flexbox i grid. Jde o jeden z nejčastějších layoutů, jaké můžete na webu zahlédnout.
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-sidebar-zadani.png" width="1600" height="900" alt="Příklad s bočním panelem">
@@ -11,8 +11,8 @@ V této ukázce zkusíme využít flexbox i grid. Jde o jeden z nejčastějšíc
 
 Zadání je následující:
 
-- Boční panel (`.sidebar`) má minimální šířku od `200px` po `20%`.
-- Oba prvky jsou vedle sebe až od šířky okna `600px`.
+- Boční panel (`.sidebar`) má minimální šířku `200px` a maximální `20%`.
+- Oba prvky jsou vedle sebe až od šířky okna `599px`, od `600px` je boční panel vlevo a obsah vpravo.
 
 HTML jsme navrhli takto:
 
@@ -20,22 +20,22 @@ HTML jsme navrhli takto:
 <div class="container">
   <aside class="sidebar">
     <h2>
-      Sidebar je minimálně 200px a maximálně 20 % široký.
+      Sidebar…
     </h2>
     <p>Lorem ipsum…</p>
   </aside>
-  <main class="content">    
+  <main class="content">
     <h2>
-       Obsah prostě vždy zabere zbylý prostor. 
+       Obsah…
     </h2>
-    <p>Lorem ipsum…</p>    
+    <p>Lorem ipsum…</p>
   </main>
 </div>
 ```
 
 Chcete si to zkusit sami? Pak neváhejte a využijte připravený prázdný CodePen: [cdpn.io/e/VwpgEQg](https://codepen.io/machal/pen/VwpgEQg?editors=1100)
 
-Můžete si pak porovnat svůj výsledek s mým.
+Můžete si pak porovnat svůj výsledek s mým, který teď právě představím.
 
 ## Varianta s flexboxem
 
@@ -54,9 +54,9 @@ CSS kód je následující:
 }
 ```
 
-Pomocí [vlastnosti `display`](css-display.md) nastavíme flexový layout. Už tím se potomkové naskládají vedle sebe. Pro definici hranic šířky prvku `.sidebar` pak použijeme klasiku – vlastnosti `min-width` a `max-width`.
+Pomocí [vlastnosti `display`](css-display.md) nastavíme flexový layout. To stačí k tomu, aby se vnitřní prvky naskládaly vedle sebe. Pro definici hranic šířky prvku `.sidebar` pak použijeme klasiku – vlastnosti `min-width` a `max-width`. Prohlédnout si to můžete na výsledném CodePenu.
 
-CodePen: [cdpn.io/e/VwpgEQg](https://codepen.io/machal/pen/VwpgEQg?editors=1100)
+CodePen: [cdpn.io/e/wvddxWd](https://codepen.io/machal/pen/wvddxWd?editors=1100)
 
 ## Varianta s gridem
 
@@ -71,12 +71,10 @@ Zde to máme ještě o trochu jednodušší:
 }
 ```
 
-Zápisem [`display:grid`](css-display.md) ještě žádný layout nevzniká. Ten začne platit až s definicí šablony, kterou nejjednodušeji udělám [vlastnostmi `grid-template-columns`](css-grid-template-rows-columns.md) (pro definici sloupců layoutu), případně `grid-template-rows` (pro definici řádek).
+Zápisem [`display:grid`](css-display.md) ještě žádný layout nevzniká. Ten začne platit až s definicí šablony, kterou nejsnadněji udělám použití [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md) (pro definici sloupců layoutu), případně `grid-template-rows` (pro definici jeho řádků).
 
-Využíváme zde drobné parádičky - [funkce `minmax()`](css-minmax.md), která funguje pro definici buněk gridu podobně jako `min-width` a `max-width`. V prvním parametru je minimální a v druhém maximální hodnota.
+Využíváme zde drobné parádičky - [funkce `minmax()`](css-minmax.md), která funguje pro definici buněk gridu podobně jako vám asi již známé vlastnosti `min-width` a `max-width`. V prvním parametru je minimální a v druhém maximální hodnota.
 
-[Jednotka `fr`](css-jednotka-fr.md) pak definuje rozdělení zbývající plochy a jelikož je zde použita jen jednou, druhý sloupeček si prostě vezme celou zbývající plochu.
+[Jednotka `fr`](css-jednotka-fr.md) pak definuje rozdělení zbývající plochy a jelikož je zde použita jen jednou, druhý sloupeček si prostě vezme celou zbývající plochu. Ještě se mrkněte na výsledný CodePen a tím to můžeme uzavřít. Došli jste ke stejnému řešení?
 
 CodePen: [cdpn.io/e/MWyMqwX](https://codepen.io/machal/pen/MWyMqwX?editors=1100)
-
-A to je vše. Došli jste ke stejnému řešení?

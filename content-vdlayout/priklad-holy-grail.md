@@ -1,16 +1,14 @@
 # Svatý grál mezi layouty
 
-V tomto speciálním případě začneme citací z Wikipedie:
+V tomto speciálním příkladu ze světa známých rozvržení začneme citací z Wikipedie:
 
 > Jako svatý grál bývají označovány nedosažitelné předměty nebo myšlenky, které se snaží člověk vyzkoumat nebo rozluštit, čímž by měl dosáhnout zásadního pokroku.
 
-Svatým grálem medicíny je například nalezení léku na rakovinu.
+Svatým grálem medicíny je například nalezení léku na rakovinu. Jenže co je „svatý grál“ v oblasti webových layoutů? Nejlépe to opět definuje největší světová encyklopedie:
 
-Jenže co je „svatý grál“ v oblasti webových layoutů? Nejlépe to opět definuje největší světová encyklopedie, takže ji pojďme využít:
+> Svatým grálem je rozvržení, které má více stejně vysokých sloupců. Je běžně žádané a implementované, ale po mnoho let měly různé způsoby jeho implementace všechny možné nevýhody. Z tohoto důvodu bylo nalezení optimální implementace přirovnáváno k hledání nepolapitelného svatého grálu.
 
-> Svatým grálem je rozvržení, které má více stejně vysokých sloupců. Je běžně žádané a implementované, ale po mnoho let měly různé způsoby jeho implementace všechny možná nevýhody. Z tohoto důvodu bylo nalezení optimální implementace přirovnáváno k hledání nepolapitelného svatého grálu.
-
-Svatý grál mezi layouty vypadá, prosím pěkně, takto:
+Pojďme to raději vizualizovat. Svatý grál mezi layouty vypadá takto:
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-holy-grail-zadani.png" width="1600" height="900" alt="Příklad - holy grail">
@@ -21,17 +19,19 @@ Svatý grál mezi layouty vypadá, prosím pěkně, takto:
 
 Ano, znáte ho. Je to layout, ve kterém byla ještě před lety vysázena každá druhá webovka.
 
-Implementovali jsme jej nejprve pomocí rámců, pak tabulkami, floaty nebo ještě jinak. Vzpomeňte na [exkurzi z první kapitoly](css-layout-versus.md). Mělo to tak moc nevýhod a optimální řešení bylo tak moc daleko, že jsme tomuto layoutu, my webaři, začali říkat „svatý grál“ nebo chcete-li „holy grail layout“.
+Toto rozvržení jsme implementovali  nejprve pomocí rámců, pak tabulkami, floaty nebo ještě jinak. Bylo to peklo. Vzpomeňte na [exkurzi z první kapitoly](css-layout-versus.md).
 
-Až nyní jsme se přiblížili k optimálnímu a dostatečně jednoduchému řešení. Jak už správně tušíte, umíme jej udělat pomocí [CSS gridu](css-grid.md).
+Až nyní jsme se přiblížili k optimálnímu a dostatečně jednoduchému řešení. Jak už správně tušíte, svatý grál umíme nakódovat pomocí [CSS gridu](css-grid.md).
 
-Historie má smysl pro ironii a v případě historie vývoje webdesignu tomu není jinak. Takže zhruba od roku 2020, kdy jsme mohli tento typ layoutu poprvé v historii nakódovat efektivně a elegantně, designérky a designéři od něj masově ustupují ve prospěch jiných, jednodušších typů layoutů.
+Historie má však smysl pro ironii a v případě historie vývoje webdesignu tomu není jinak. Zhruba v těch letech, kdy jsme začali mít možnost tento typ layoutu poprvé v historii nakódovat efektivně a elegantně, od něj  zároveň designérky a designéři začali masově ustupovat ve prospěch jiných, jednodušších typů layoutů.
 
-I přes to bych se svatým grálem mezi rozvrženími nějaký čas v knížce strávil. Jeho historická role nekončí. Například pro tvorbu rozhraní webových aplikací je, na rozdíl od tvorby rozhraní prezentačních webových stránek, holy grail pořád nezastupitelný.
+I přes to bych se svatým grálem mezi rozvrženími nějaký čas v knížce strávil. Historii zatím nepatří. Například pro tvorbu rozhraní webových aplikací je, na rozdíl od tvorby rozhraní prezentačních webových stránek, „holy grail“ pořád nezastupitelný.
 
 A pak… Skvěle se na něm ukazují silné stránky šablonování vlastnostmi začínajícími na `grid-template` v CSS gridu.
 
-Pokud byste v tuto chvíli chtěli odložit knížku a začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si „forkněte“ a vzhůru do kódování. [cdpn.io/e/ZEePyrM](https://codepen.io/machal/pen/ZEePyrM?editors=1100)
+Pokud byste v tuto chvíli chtěli začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si „forkněte“ a vzhůru do kódování.
+
+CodePen: [cdpn.io/e/ZEePyrM](https://codepen.io/machal/pen/ZEePyrM?editors=1100)
 
 HTML jsem vymyslel takto:
 
@@ -65,16 +65,18 @@ HTML jsem vymyslel takto:
 
 Nejprve je potřeba definovat, jak přesně má layout vypadat a chovat se. Leccos jste asi viděli na obrázku výše. Ještě to ale raději rozepíšu:
 
-- Na malých displejích, zde do šířky okna `599px`, chceme prostě a jednoduše vyskládat všechny prvky layoutu pod sebe přesně dle pořadí v kódu.
+- Na malých displejích, zde do šířky okna `599px`, chceme prostě a jednoduše vyskládat všechny prvky layoutu pod sebe dle pořadí v kódu.
 - Na větších obrazovkách je layout je roztažený na celou viditelnou výšku okna.
-- Na výšku bychom rádi drželi tato pravidla: hlavička a patička (prvky `.head` a `.foot`) jsou vysoké přesně `10em`, respektive `5em`. Prostředek zabere zbývající plochu.
+- Na výšku bychom rádi drželi tato pravidla: hlavička a patička (prvky `.head` a `.foot`) jsou vysoké přesně `10em` a `5em`. Prostředek zabere zbývající plochu.
 - Ve zbývající vnitřní ploše máme dva prvky. Postranní panel (`.side`) má šířku 30 %, ovšem s minimem `10em` a maximem `20em`. Obsahový blok (`.main`) už pak jen dostává zbytek viditelné plochy.
 
 Pakliže si chcete sami zkusit kódovat, teď je ta správná příležitost zavřít knížku a učit se prací.
 
 Čtenáři mezi vámi mohou pokračovat.
 
-Nejprve si napíšeme [Media Query](content-vdlayout/media-queries.md) a uděláme servisní nastavení:
+## Řešení příkladu
+
+Nejprve si napíšeme [Media Query](media-queries.md) a uděláme servisní nastavení:
 
 ```css
 @media screen and (min-width: 600px) { 
@@ -85,7 +87,7 @@ Nejprve si napíšeme [Media Query](content-vdlayout/media-queries.md) a udělá
 }
 ```
 
-Rodičovskému prvku `.container` jsme nastavili zobrazovací kontext pro CSS grid a výšku na `100vh`, což je sto procent výšky viewportu (viewport height). Layout tak bude vždy roztažený v celém okně.
+Rodičovskému prvku `.container` jsme nastavili zobrazovací kontext pro [CSS grid](css-grid.md) a výšku na `100vh`, což je sto procent výšky viewportu (viewport height). Layout tak bude vždy roztažený v celém okně.
 
 V tomto případě jsem se rozhodl, že budu používat oblasti (`grid-area`), takže do nich můžu prvky DOMu rovnou umístit:
 
@@ -107,7 +109,7 @@ V tomto případě jsem se rozhodl, že budu používat oblasti (`grid-area`), t
 }      
 ```
 
-Jak asi tušíte, toto samo o sobě nic nedělá. Normálně bych začínal od definice šablony layoutu (`grid-template`), ale právě to vám chci ukázat jako třešničku na dortu tohoto příkladu. Pojďme si ji dát na talíř:
+Jak asi tušíte, toto samo o sobě nic nedělá. Normálně bych začínal od definice šablony layoutu ([vlastnost `grid-template`](css-grid-template.md)), ale právě to vám chci ukázat jako třešničku na dortu tohoto příkladu. Pojďme si ji dát na talíř:
 
 ```css
 .container {
@@ -155,9 +157,7 @@ Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli.
   }
 ```
 
-Dělá to přesně to, co si myslíte: `30%` v prostředním argumentu je optimální velikost. První a poslední argument dodává minimum a maximum.
-
-Podpora této funkce v moderních prohlížečích je výborná.
+Dělá to přesně to, co si myslíte: `30%` v prostředním argumentu je optimální velikost. První a poslední argument dodává minimum a maximum. Podpora této funkce v moderních prohlížečích je výborná, takže ji neváhejte využít.
 
 Pojďme si to teď zjednodušit, nebo možná zkomplikovat. Záleží, jak se na to budete dívat.
 
@@ -178,7 +178,7 @@ Zaměříme se na kód, kterým definujeme rozvržení:
 
 Nyní se jej pokusíme zestručnit.
 
-Vlastnosti `grid-template-rows` a `grid-template-columns` můžeme zapsat zkratkou `grid-template`, která definuje oba směry a odděluje je lomítkem. Jako vždy v CSS i zde uvádíme jako první svislý směr, tedy definice řádků layoutu:
+[Vlastnosti `grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md) můžeme zapsat [zkratkou `grid-template`](css-grid-template.md), která definuje oba směry a odděluje je lomítkem. Jako vždy v CSS i zde uvádíme jako první svislý směr, tedy definice řádků layoutu:
 
 ```css
 .container {
@@ -190,7 +190,7 @@ Vlastnosti `grid-template-rows` a `grid-template-columns` můžeme zapsat zkratk
 }
 ```
 
-Jde to zjednodušit ještě více. Obě vlastnosti můžeme spojit do jediné zkratky, [vlastnosti `grid-template`](css-grid-template.md):
+Jde to zjednodušit ještě více. Také oblasti definované v `grid-template-areas` můžeme vložit do této zkratky – [`grid-template`](css-grid-template.md):
 
 ```css
 .container {
@@ -202,9 +202,9 @@ Jde to zjednodušit ještě více. Obě vlastnosti můžeme spojit do jediné zk
 }
 ```
 
-Dle mého to není úplně nepřehledné – k řádkům vždy nejprve uvádíme oblasti, pak  rozměry řádku, následuje lomítko a zapíšeme rozměry sloupců.
+K řádkům vždy nejprve uvádíme oblasti, pak rozměry řádku, následuje lomítko a zapíšeme rozměry sloupců. Dle mého to není úplně nepřehledné, ale proti gustu žádný dišputát.
 
-A mohli bychom to zkrátit ještě více. Do [vlastnosti `grid`](css-grid-zkratka.md):
+A mohli bychom to zkrátit ještě více. Do [zkratky `grid`](css-grid-zkratka.md):
 
 ```css
 .container {
@@ -216,11 +216,11 @@ A mohli bychom to zkrátit ještě více. Do [vlastnosti `grid`](css-grid-zkratk
 }
 ```
 
-Do `grid` se kromě vlastností pro šablonu (`grid-template`) dá uvádět ještě vlastnosti implicitního gridu, začínající na (`grid-auto`). To je už dost specifická a zapeklitá věc, takže ji zde zatím nechám bez vysvětlení. To pak najdete v kapitole o CSS gridu.
+Do zápisu `grid` se kromě vlastností pro šablonu (`grid-template`) dají uvádět ještě vlastnosti implicitního gridu, (začínající na [`grid-auto`](grid-auto-flow.md)). To je už dost specifická a zapeklitá věc, takže ji zde zatím nechám bez vysvětlení, která najdete v referenční příručce k CSS gridu.
 
-Je mi jasné, že pro jedny jsem to sice zjednodušil („hurá, méně kódu!“), jiným jsem zamotal hlavu („fuj, kód složitý jako assembler“). Máte však volbu, jak kód v gridu zapisovat a vyberte dle svých preferencí.
+Je mi jasné, že pro jedny jsem to sice zjednodušil („hurá, méně kódu!“), jiným jsem zamotal hlavu („fuj, kód složitý jako assembler“). Máte však volbu, jak kód v gridu zapisovat a vyberte si dle svých preferencí.
 
-Ještě vám dlužím finální CSS kód:
+Ještě vám dlužím finální CSS kód. Používám tu nejkratší variantu:
 
 ```css
 @media screen and (min-width: 600px) {
