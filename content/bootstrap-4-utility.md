@@ -6,14 +6,12 @@ O novinkách v Bootstrapu 4 jsem [už psal](/blog/39-bootstrap-4). Dneska vám a
 
 Nebo jinak *užitkové*, *subatomické* nebo *helper* třídy. Zatím přesně nevím, jak jim říkat.
 
-<small markdown="1">
-
-Poznámka: Zatím jim říkám utility a více o nich píšu ve dvou zvláštních textech:
-
-- [Utility CSS: K čemu jsou dobré systémy jednoúčelových tříd?](css-utility.md)
-- [Uti­li­ty třídy a kom­po­nen­ty v CSS: Jak najít rov­no­váhu?](css-utility-komponenty.md)
-
-</small>
+<div class="related" markdown="1">
+- [CSS utility](css-utility.md)
+- [CSS utility a komponenty](css-utility-komponenty.md)
+- [Framework Tailwind CSS](tailwind-css.md)
+- [Tachyons v NejŘemeslníci.cz](https://www.vzhurudolu.cz/blog/82-tachyons-nejremeslnici)
+</div>
 
 Jde o třídu, ve které je uloženo často používané CSS. Některé znáte a asi i sami používáte. Například:
 
@@ -46,8 +44,7 @@ No a právě pro tyhle typy použití je Bootstrap jak dělaný.
 
 Díky utility třídám prostě začnete CSS psát až výrazně později než bez nich.
 
-Ale zpět k Bootstrapu. 
-
+Ale zpět k Bootstrapu.
 
 ## Příklad s media objektem
 

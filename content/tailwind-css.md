@@ -8,26 +8,7 @@ Propaguje zápis pomocí utilitárních tříd, tedy více HTML a méně CSS. D�
 
 [Tailwindem](https://tailwindcss.com/) se pár měsíců zabývám a v mnohém se mi tenhle přístup líbí. V tomhle článku se pokusím shrnout, o co jde a kdo z vás by Tailwindu měl věnovat pozornost.
 
-## Popularita
-
-Z pohledu počtu hvězdiček na Githubu to ještě tak moc vidět není. [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) jich má asi 45 tisíc, podobně jako další nový framework Bulma ([jgthms/bulma](https://github.com/jgthms/bulma)). Kam se hrabou na Bootstrap se 150 tisíci hvězdičkami.
-
-Zajímavější je pohled do ankety [State of CSS 2021](https://2020.stateofcss.com/en-US/technologies/) – spokojenost uživatelů s Tailwindem je 90 %, jedna z nejvyšších vůbec.
-
-State of CSS 2020:
-
-<figure>
-<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1611634564/vzhurudolu-blog/State-of-CSS-2020_nmvbdn.png" width="1600" height="900" alt="State of CSS 2020">
-<figcaption markdown="1">
-*Zatím ne tak moc používaný, ale s velkou spokojeností uživatelů. Tailwind hledejte uprostřed levého horního čtverce.*
-</figcaption>
-</figure>
-
-Spokojenost s frameworkem Bulma je kolem 60 %. A s Bootstrapem je spokojená jen necelá polovina uživatelů.
-
-Díky dramatickému nárůstu uživatelské základy získal Tailwind v téhle anketě ocenění [Most Adopted Technology](https://2020.stateofcss.com/en-US/awards/).
-
-## Utility? Ne, utility-first framework
+## Utility? Ne, utility-first framework {#utility-first}
 
 Mě na Tailwindu nejvíc zaujalo zaměření na [utility](css-utility.md) (jinak též atomické nebo užitkové CSS). Jednotlivé třídy totiž reprezentují vlastnosti a jejich vybrané hodnoty:
 
@@ -49,7 +30,7 @@ Podmínkou pro správné využití atomických tříd je ovšem možnost abstrak
 
 A právě Tailwind dotáhl možnosti abstrakce ze všech utility frameworků nejdál.
 
-## Abstrakce a komponenty stále žijí
+## Abstrakce a komponenty stále žijí {#abstrakce}
 
 O Tailwindu nejde mluvit jako o „utility frameworku“, kam spadá třeba starší [Tachyons](https://tachyons.io/). V případě Tailwind CSS jde o „utility first“ framework.
 
@@ -97,7 +78,7 @@ Zde je zjednodušený příklad ve Vue.js:
 
 Další z možností abstrakce je napsání vlastního [pluginu do `tailwind.confing.js`](https://tailwindcss.com/docs/plugins#adding-components).
 
-## Jakýkoliv design
+## Jakýkoliv design {#design}
 
 V [podcastu o Tailwindu](https://www.vzhurudolu.cz/podcast/198-podcast-tailwind) jsme s Robinem Pokorným, Honzou Bienem a Adamem Kudrnou rozebírali rozdíly mezi [Bootstrapem](https://www.vzhurudolu.cz/bootstrap) a Tailwindem.
 
@@ -124,11 +105,11 @@ Jak ve své přednášce říká [Honza Bien](https://www.webmistr.wtf/): Tailwi
 
 Má pravdu, Webmistr.
 
-## Bootstrap versus Tailwind: komponenty versus utility?
+## Bootstrap versus Tailwind: komponenty versus utility? {#bootstrap}
 
 Možnost nakódovat jakýkoliv design je skvělá pro někoho, kdo CSSka velmi dobře zvládá a potřebuje zrychlit svou práci, ale ne pro typického uživatele Bootstrapu – vývojáře, který do detailů CSS až tak vidět nechce nebo nemůže.
 
-Zatímco Bootstrap je „component-first“ a až v posledních verzích začal hojně [přidávat utility](https://www.vzhurudolu.cz/prirucka/bootstrap-4-utility/), Tailwind na to jde z druhé strany – DNA frameworku tvoří právě utility a komponenty si buď postavíte sami nebo využijete některé předpřipravené externí nástroje, jako [Taiwind UI](https://tailwindui.com/), [Headless UI](https://headlessui.dev/) nebo [Heroicons](https://heroicons.com/) pro ikony.
+Zatímco Bootstrap je „component-first“ a až v posledních verzích začal hojně [přidávat utility](bootstrap-4-utility.md), Tailwind na to jde z druhé strany – DNA frameworku tvoří právě utility a komponenty si buď postavíte sami nebo využijete některé předpřipravené externí nástroje, jako [Taiwind UI](https://tailwindui.com/), [Headless UI](https://headlessui.dev/) nebo [Heroicons](https://heroicons.com/) pro ikony.
 
 I tyto dva přístupy jsme srovnávali [v květnovém vydání podcastu](https://www.vzhurudolu.cz/podcast/198-podcast-tailwind):
 
@@ -142,7 +123,7 @@ Bootstrap má však jiné DNA. Je postavený na [preprocesoru](https://www.vzhur
 
 V Tailwindu veškeré nastavování probíhá na úrovni JavaScriptu – jednak nad [PostCSS](postcss.md), ale také ve velmi mocném konfiguračním souboru.
 
-### Konfigurace: velká síla na pozadí
+### Konfigurace: velká síla na pozadí {#konfigurace}
 
 Soubor `tailwind.config.js` obstarává kompletní [konfiguraci Tailwindu](https://tailwindcss.com/docs/configuration). Díky použití JS se zde mohou vcelku silně rozšiřovat možnosti frameworku.
 
@@ -204,19 +185,40 @@ module.exports = {
 
 …nebo přidat vlastní. [V dokumentaci pluginů](https://tailwindcss.com/docs/plugins) uvidíte, jak mocný nástroj je možné vytvořit, když dovolíte konfiguraci na úrovni JavaScriptu, tedy plnohodnotného programovacího jazyka.
 
-## Varianty: stavy, pseudotřídy, breakpointy…
+## Varianty: stavy, pseudotřídy, breakpointy… {#varianty}
 
 I když v Tailwindu vzhled zapisujete pomocí tříd, existují jejich varianty, pro [responzivní breakpointy](breakpointy.md):
 
 ```html
-<button class="bg-black text-white p-2 sm:p-4 rounded" type="submit">Buy now</button>
+<button class="bg-black text-white p-2 sm:p-4 rounded" type="submit">
+  Buy now
+</button>
 ```
 
 V této ukázce bude mít tlačítko větší vnitřní okraj (`padding`) na šířkách obrazovky od breakpoitu `sm` – viz třída `sm:p-4`. Na menších poloviční – `p-2`. Viz demo: [play.tailwindcss.com/EoXdekog6A](https://play.tailwindcss.com/EoXdekog6A?size=554x720)
 
 Všem těmto podmínečným zobrazením, jako jsou konkrétní body zlomu designu, stav po najetí myši, mód tmavého zobrazení… říkají autoři tohoto frameworku [varianty](https://tailwindcss.com/docs/configuring-variants) a máte jich k dispozici téměř dvacet.
 
-## Pro koho to je a co já na to?
+## Popularita {#popularita}
+
+Z pohledu počtu hvězdiček na Githubu to ještě tak moc vidět není. [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) jich má asi 45 tisíc, podobně jako další nový framework Bulma ([jgthms/bulma](https://github.com/jgthms/bulma)). Kam se hrabou na Bootstrap se 150 tisíci hvězdičkami.
+
+Zajímavější je pohled do ankety [State of CSS 2021](https://2020.stateofcss.com/en-US/technologies/) – spokojenost uživatelů s Tailwindem je 90 %, jedna z nejvyšších vůbec.
+
+State of CSS 2020:
+
+<figure>
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1611634564/vzhurudolu-blog/State-of-CSS-2020_nmvbdn.png" width="1600" height="900" alt="State of CSS 2020">
+<figcaption markdown="1">
+*Zatím ne tak moc používaný, ale s velkou spokojeností uživatelů. Tailwind hledejte uprostřed levého horního čtverce.*
+</figcaption>
+</figure>
+
+Spokojenost s frameworkem Bulma je kolem 60 %. A s Bootstrapem je spokojená jen necelá polovina uživatelů.
+
+Díky dramatickému nárůstu uživatelské základy získal Tailwind v téhle anketě ocenění [Most Adopted Technology](https://2020.stateofcss.com/en-US/awards/).
+
+## Pro koho to je a co já na to? {#pro-koho}
 
 Pokud fandíte přístupu s psaním utility tříd, pak asi moc neváhejte - Tailwind je myslím v této oblasti ze všech frameworků nejdál.
 
@@ -240,6 +242,13 @@ Co se mi na Tailwindu líbí?
 
 Co se mi na Tailwindu nelíbí? Kromě jediné věci, té první v následujícím seznamu, asi nic.
 
+<div class="related" markdown="1">
+- [CSS utility](css-utility.md)
+- [CSS utility a komponenty](css-utility-komponenty.md)
+- [Utility v Bootstrapu](bootstrap-4-utility.md)
+- [Tachyons v NejŘemeslníci.cz](https://www.vzhurudolu.cz/blog/82-tachyons-nejremeslnici)
+</div>
+
 Zbytek je spíše o nevýhodách pro určitou skupinu lidí, vycházejících ze zcela jiného pojetí frameworku než na jaké jsme zvyklí např. u Bootstrapu.
 
 - Některé názvy utilit úplně nekorespondují s vlastnostmi v CSS (`leading` = `line-height`) a je tak nutné se učit nová pojmenování.
@@ -247,7 +256,7 @@ Zbytek je spíše o nevýhodách pro určitou skupinu lidí, vycházejících ze
 - Pro úspěšnou práci s Tailwindem byste měli znát CSS, což např. u Bootstrapu tak moc neplatí.
 - Zobecňování do komponent se neděje na úrovni CSS, takže kodérka či kodér musejí umět pracovat se šablonovacím jazykem.
 
-## Kam dál?
+## Kam dál? {#kam-dal}
 
 V článku jsem se pokusil o úvod pro nezasvěcené. Kam dál pokračovat?
 

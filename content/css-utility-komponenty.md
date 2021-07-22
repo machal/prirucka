@@ -4,7 +4,9 @@ Utility třídy jsou skvělé, ale když je nasadíte na složitější komponen
 
 Mají teda vůbec jednoúčelové třídy nějaký smysl? Kde v CSS použít utility a kde komponenty? Hádáte správně, tohle je hlavní téma tohoto textu.
 
-V předchozí části jsme se dívali na zoubek obecným výhodám [utilit v CSS](css-utility.md). Víte tedy, že jejich silná stránka je rychlé psaní kódu a tvorba unikátních částí uživatelského rozhraní. Naopak jsou trochu otravné, když dojde na složitější responzivitu a komplikují přehlednost HTML.
+V předchozí části jsme se dívali na zoubek obecným výhodám [utilit v CSS](css-utility.md).
+
+Víte tedy, že jejich silná stránka je rychlé psaní kódu a tvorba unikátních částí uživatelského rozhraní. Naopak jsou trochu otravné, když dojde na složitější responzivitu a komplikují přehlednost HTML.
 
 <!-- AdSnippet -->
 
@@ -147,7 +149,16 @@ Podobně, tedy na limitovanou sadu vlastností, používá jednoúčelové tří
 
 ### 3) Často se opakující BEM modifikátory nebo elementy
 
-Znáte to, některé BEM modifikátory byste snad měli u každé komponenty. Pokud to jde zobecnit, není důvod udržovat desítky tříd stejného názvu. Příklady:
+Znáte to, některé BEM modifikátory byste snad měli u každé komponenty. 
+
+<div class="related" markdown="1">
+- [CSS utility](css-utility.md)
+- [Utility v Bootstrapu](bootstrap-4-utility.md)
+- [Framework Tailwind CSS](tailwind-css.md)
+- [Tachyons v NejŘemeslníci.cz](https://www.vzhurudolu.cz/blog/82-tachyons-nejremeslnici)
+</div>
+
+Pokud to jde zobecnit, není důvod udržovat desítky tříd stejného názvu. Příklady:
 
 * `.mb-0` – vynulování spodního marginu u všech komponent.
 * `.bt-0` – vynulování horního rámečku.

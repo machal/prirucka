@@ -21,7 +21,9 @@ Ale bavme se také o celý systémech na tomhle principu postavených. Kód je 
 </button>
 ```
 
-Čtete dobře, každá vlastnost je už v názvu třídy následována její hodnotou. Podívejme se blíže na deklarace tří z tříd uvedených v ukázce. Nejprve deklarace barvy:
+Čtete dobře, každá vlastnost je už v názvu třídy následována její hodnotou.
+
+Podívejme se blíže na deklarace tří z tříd uvedených v ukázce. Nejprve deklarace barvy:
 
 ```css
 .bg-blue {
@@ -230,7 +232,16 @@ Už jsem to několikrát naznačil, ale kód postavený čistě na utility CSS s
 
 ### Převažující utility
 
-Oceníte v případě, že stále vyrábíte hodně nového CSS nebo v případě, že tento typ systému designu vyhovuje designérské části týmu. Vynikající je to pro tyhle účely:
+Oceníte v případě, že stále vyrábíte hodně nového CSS nebo v případě, že tento typ systému designu vyhovuje designérské části týmu. 
+
+<div class="related" markdown="1">
+- [CSS utility a komponenty](css-utility-komponenty.md)
+- [Utility v Bootstrapu](bootstrap-4-utility.md)
+- [Framework Tailwind CSS](tailwind-css.md)
+- [Tachyons v NejŘemeslníci.cz](https://www.vzhurudolu.cz/blog/82-tachyons-nejremeslnici)
+</div>
+
+Vynikající je to pro tyhle účely:
 
 * *Prototypování a mockupování webů.* Pro tyhle účely je to poměrně killer-scénář. Tady jsou vám nevýhody ukradené.
 * *Rozhraní webových aplikací.* Ty mají obvykle vysoké desítky až stovky šablon, navíc s mnoha různými stavy. To určitě nechcete designovat v grafickém editoru, ale kodérovi předat co nejjednodušší systém a pak třeba wireframy. V Česku takto utility [využívá Fakturoid](https://www.fakturoid.cz/blog/2018/05/21/fakturoidi-css). S Martinem Držkou jsme si o tom povídali [v podcastu](https://www.vzhurudolu.cz/podcast/103-podcast-fakturoid-css).
@@ -247,6 +258,6 @@ Jedete klasický BEM nebo něco podobného. Doplníte to utilitami, zpočátku s
 
 ## Frameworky a hotové systémy utility tříd
 
-Je jich už celá řada, podrobně mám prozkoumané zejména [Tachyons](https://tachyons.io/) – první framework tohoto typu. Považuji ho za překonaný následníkem, [Tailwindem](https://tailwindcss.com). To abyste měli co zkoumat, než se pustíte [do pokračování](css-utility-komponenty.md).
+Je jich už celá řada, podrobně mám prozkoumané zejména [Tachyons](https://tachyons.io/) – první framework tohoto typu. Považuji ho za překonaný následníkem, [Tailwindem](tailwind-css.md). To abyste měli co zkoumat, než se pustíte [do pokračování](css-utility-komponenty.md).
 
 <!-- AdSnippet -->
