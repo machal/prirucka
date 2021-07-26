@@ -1,6 +1,6 @@
-# Shrnutí páté kapitoly
+# Shrnutí čtvrté kapitoly
 
-Otesujte si, co jste se naučili ve druhé kapitole.
+Otesujte si, co jste se naučili.
 
 1. **K čemu slouží vlastnost `grid-template-columns`?**  
 a. definuje šablonu pro rozvržení sloupců gridu  
