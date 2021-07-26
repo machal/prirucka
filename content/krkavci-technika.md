@@ -1,8 +1,12 @@
 # Krkavčí technika
 
-Zde si rozebereme „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které v ale době psaní této podkapitoly nemají podporu v prohlížečích.
+V posledním příkladu mírně sejdeme z cesty poznávání CSS layoutů a vrátíme se k jednomu z našich témat – Container Queries versus Media Queries.
 
-Její výhodou je podpora ve všech moderních prohlížečích. Nevýhodou je krkolomnost. Zkuste sedmkrát za sebou říct „krkolomný krkavec“. Přesně tak jsem si připadal, když jsem o té technice četl poprvé.
+Rozebereme si totiž „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které v ale době psaní této podkapitoly nemají podporu v prohlížečích.
+
+Výhodou této techniky je podpora ve všech moderních prohlížečích. Nevýhodou je krkolomnost.
+
+Zkuste sedmkrát za sebou říct „krkolomný krkavec“. Přesně tak jsem si připadal, když jsem o té technice četl poprvé.
 
 Posuďte to sami z ukázky kódu:
 
@@ -16,16 +20,20 @@ width: --dyn_length: calc(
 }
 ```
 
-Ale nechci to úplně shazovat. Pokud něco jako podmínku `@container` a tedy Container Queries na vašem projektu zoufale potřebujete a podpora v prohlížečích zatím pořád neexistuje, věnujte mi ještě chvíli pozornosti.
+Žádné strachy, vše ještě poctivě vysvětlím. Jen jsem chtěl demostrovat, jak komplikovaná tato technika je.
+
+Ale nechci Raven Technique úplně shazovat. Pokud něco jako podmínku `@container` z Container Queries na vašem projektu zoufale potřebujete, věnujte mi ještě chvíli pozornosti.
 
 Havraní technika je založená na matematických funkcích a dalších novinkách v CSS:
 
 - [Funkce `calc()`](css3-calc.md) umožní vložit namísto hodnoty matematický výraz.
-- [Funkce `min()` a `max()`](css-min-max-clamp.md) asi mají zjevný význam – vracení nejnižší, respektive nejvyšší hodnotu ze všech uvedených v argumentech.
+- [Funkce `min()` a `max()`](css-min-max-clamp.md) vracejí nejnižší, respektive nejvyšší hodnotu ze všech uvedených v argumentech.
 - [Funkce `clamp()`](css-min-max-clamp.md) je kombinací `min()` a `max()` pro tříčiselné hodnoty.
 - [Proměnné v CSS](css-promenne.md) jako `--color:blue` zase umožňují udržovat a měnit hodnoty výpočtu, podobně jako v programovacích jazycích.
 
-V prvním kroku krkavčí techniky si definujeme proměnné se šířkou a s body zlomu layoutu:
+## Definujeme proměnné
+
+V prvním kroku budování krkavčí techniky si definujeme proměnné se šířkou a s body zlomu layoutu:
 
 ```css
 .breakpoints_1 {
@@ -35,7 +43,9 @@ V prvním kroku krkavčí techniky si definujeme proměnné se šířkou a s bod
   --breakpoint_wide: 1000px;
   --breakpoint_medium: 500px;
 }
-```  
+```
+
+## Breakpointy
 
 Dále definujeme šířky prvků pro tři rozmezí, která vznikla definicí breakpointů:
 
@@ -50,6 +60,8 @@ Dále definujeme šířky prvků pro tři rozmezí, která vznikla definicí bre
 
 Asi je zřetelné, že na nejmenších viewportech (`--length_4_small`) zabere celou šířku jeden boxík (`calc((100% / 1)`), zatímco největších už budou vedle sebe čtyři (`calc((100% / 4)`).
 
+## Dotazy na splnění podmínek pro šířku rodiče
+
 Magie probíhá v následujícím kroku. Tady pomocí matematických funkcí plníme proměnné, které indikují, na jakém breakpointu se aktuálně nalézáme:
 
 ```css
@@ -63,6 +75,8 @@ Proměnná `--is_wide` vrací `1px` pokud je `--base_size` větší než `--brea
 V `--base_size` máme uloženou hodnotu `100%`, což je ale skutečná šířka rodičovského prvku. Už chápete?
 
 Podobné to bude pro hodnoty `--is_medium` a `--is_small`.
+
+## Definujeme vlastnosti prvku v jednotlivých breakpointech
 
 Proměnné indikující breakpoint můžeme nakrásně využít v dalším kroku, kde nastavujeme šířku pro konkrétní prvky v layoutu:
 

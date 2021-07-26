@@ -1,8 +1,8 @@
 # Formulář pro vyhledávání
 
-V další ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkoušíme opět něco ze zarovnávání boxů (CSS Box Alignment) a oba systémy layoutu – flexbox i grid.
+V této ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkoušíme opět něco ze zarovnávání boxů ([CSS Box Alignment](css-box-alignment.md)) a oba systémy layoutu – [flexbox](css-flexbox.md) i [grid](css-grid.md).
 
-Zadání obnáší návrhový vzor, na který každá kodérka a každý kodér jednou narazí.
+Zadání přichází s návrhovým vzorem, na který každá kodérka a každý kodér jednou narazí.
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-vyhledavani-zadani.png" width="1600" height="900" alt="Příklad s vyhledáváním">
@@ -11,7 +11,7 @@ Zadání obnáší návrhový vzor, na který každá kodérka a každý kodér 
 </figcaption>
 </figure>
 
-Jak asi vidíte, jde o vyhledávací formulář obnášející tři prvky – textovým popisek `<label>`, textovým vstupem `<input>` a tlačítkem `<button>`.
+Jak asi vidíte, jde o vyhledávací formulář obsahující tři prvky – textovým popisek `<label>`, textovým vstup `<input>` a tlačítko `<button>`.
 
 HTML vypadá takto:
 
@@ -30,12 +30,12 @@ HTML vypadá takto:
 
 Zadání je následující:
 
-- Na menších displejích (do 499 pixelů šířky) budou prvky jednoduše pod sebou.
-- Na větších velikostech obrazovky (od 500 pixelů šířky) se vyskládají vedle sebe.
+- Na menších displejích (do `499px` šířky) budou prvky jednoduše pod sebou.
+- Na větších velikostech obrazovky (od `500px` šířky) se prvky vyskládají vedle sebe.
 - V druhém případě mají popisek a tlačítko šířku obsahu a textový vstup se roztahuje, aby vyplnil maximální šířku.
 - V obou případech je mezi prvky mezera o polovině `rem`.
 
-Přikládám výchozí CodePen. Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo e-book a začít.
+Přikládám výchozí CodePen. Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a začít.
 
 CodePen: [cdpn.io/e/qBZzMRW](https://codepen.io/machal/pen/qBZzMRW?editors=1100)
 
@@ -56,11 +56,11 @@ Rodičovský prvek musí být flexboxem a tak pomocí [vlastnosti `display`](css
 
 ### Zarovnání na účaří
 
-[Vlastnost `align-items`](css-align-items.md) nás možná přinutí si vzpomenout na tahák z dřívějších podklapitol. Zde chceme zarovnávat položky layoutu (`-items`) na příčné ose (`align-`).
+[Vlastnost `align-items`](css-align-items.md) nás možná přinutí si vzpomenout na tahák z předchozího příkladu. Zde chceme zarovnávat položky layoutu (`-items`) na příčné ose (`align-`).
 
 Hodnota `baseline` je velmi zajímavá – umožní nám zarovnávat prvky na _účaří_. Jde o typografický pojem, pod kterým si můžete představit neviditelnou linku, na kterou se zapisují jednotlivé znaky, asi jako jste to dělali ve škole do sešitu. Jinak se jí ještě říká _základní dotažnice_, případně anglicky _baseline_.
 
-Typografické prvky je pro lepší čitelnost lepší vedle sebe zarovnat právě na účaří, nikoliv třeba doprostřed.
+Typografické prvky, jako jsou také formulářové prvky, je pro lepší čitelnost lepší zarovnat právě na účaří, nikoliv třeba doprostřed.
 
 ### Menší displeje
 
@@ -84,10 +84,10 @@ Na menších displejích chceme, aby se všechny tři prvky vyskládaly pod sebe
 }  
 ```
 
-Komentáře:
+Moje komentáře:
 
 - [Vlastností `flex-direction`](css-flex-direction.md) a hodnotou `column` měníme směr rozvržení z výchozího vodorovného na svislý.
-- Mezeru mezi jednotlivými prvky děláme pomocí vnějšího okraje (`margin-bottom:0.5rem`), ve flexboxu (zatím) není možné použít vlastnost `gap`.
+- Mezeru mezi jednotlivými prvky děláme pomocí vnějšího okraje (`margin-bottom:0.5rem`). Ve flexboxu totiž (zatím) není možné použít vlastnost `gap`.
 - Pomocí `width:100%` roztáhneme všechny prvky na celou šířku a pomocí `box-sizing:border-box` prohlížeči sdělíme, že šířku chceme počítat i s vnitřním okrajem a rámečkem. Pokud tu druhou vlastnost neznáte, podívejte se na Vzhůru dolů. [vrdl.cz/p/css3-box-sizing](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
 
 ### Větší displeje
@@ -154,7 +154,7 @@ Celý kód flexboxového řešení je zde:
 
 CodePen: [cdpn.io/e/VwbpjKK](https://codepen.io/machal/pen/VwbpjKK?editors=1100)
 
-Pojďme si ale položit otázku, zda by zde nebylo vhodnější vyřešit úkol pomocí mřížky. Zmizel by nám minimálně problém s nutností nastavovat mezery mezi prvky vlastností `margin`, která je tak… _oldschool_!
+Pojďme si ale položit otázku, zda by i zde nebylo vhodnější vyřešit úkol pomocí mřížky. Zmizel by nám minimálně problém s nutností nastavovat mezery mezi prvky vlastností `margin`, která je tak… _oldschool_!
 
 Příjímám sázky. Umožní nám grid více sexy řešení?
 

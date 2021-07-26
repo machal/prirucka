@@ -14,7 +14,7 @@ V tomto specifickém příkladu budeme předpokládat kodéra velmi lenivé nát
 Zadání je následující:
 
 - Máme 12 náhledů fotek ve stránce.
-- Maximální šířka jedné fotky je 300 pixelů.
+- Maximální šířka jedné fotky je `300px`.
 - Fotky mají popisky, které se mohou roztáhnout do více řádků.
 - Mezera mezi jednotlivými sloupci layoutu má šířku `1rem`.
 - Připravte kód tak, aby jednotlivé náhledy co nejpravidelněji vyplnily prostor na výšku i šířku.
@@ -36,16 +36,17 @@ HTML vypadá zhruba takto:
       <strong>Image 2:</strong> Amet consectetur adipisicing elit. 
     </figcaption>
   </figure>
+  <!-- Další fotografie… -->
 </div>
 ```
 
 Píše se vám už v hlavě kód?
 
-Vlastně to nemusí být nic složitého, takže vám zde rovnou poskytnu výchozí CodePen a pusťte se do práce.
+Vlastně to nemusí být nic složitého, takže vám zde rovnou poskytnu výchozí CodePen.
 
 CodePen: [cdpn.io/e/eYWWrJY](https://codepen.io/machal/pen/eYWWrJY?editors=1100)
 
-Pracanti nechť zavřou knihu a v klidu pracují. My ostatní si rozdělíme funkce takto – já píšu, vy čtete.
+Pracanti nechť zavřou knihu a v klidu pracují. My ostatní si rozdělíme funkce takto: já píšu, vy čtete.
 
 ## Řešení pomocí CSS Multicolumn Layout
 
@@ -61,7 +62,7 @@ Pokud vás pro tyto případy napadl jako vhodný systém pro rozvržení [CSS M
 Vysvětlím to:
 
 - [Vlastností `columns`](css-multicol-columns.md), což je zkratka pro nastavení počtu sloupečků nebo jejich doporučené šířky, zde jako šířku nastavuji polovinu šířky sloupečku.
-- S pomocí druhé vlastnosi, [`gap`](css-gap.md), nastavuji šířku mezi sloupečky.
+- S pomocí druhé vlastnosi, [`gap`](css-gap.md), nastavuji šířku mezi sloupečky. To už znáte.
 
 Chybí mi tady ještě jedna věc a to zákaz zalomení uvnitř prvku `<figure>`, protože bychom velmi neradi viděli popisek z prvku `<figcaption>` mimo samotný obrázek, třeba hned na začátku následujícího sloupce:
 
@@ -84,7 +85,7 @@ Ve spoustě situací to ale může být vhodné řešení, na obrázku uvidíte,
 
 Možná si při pohledu na obrázek vzpomenete na [„zděný layout“ (masonry)](css-masonry.md), o kterém píšu v kapitole s referenční příručkou ke gridu a který bude zřejmě jednou možné udělat bez JavaScriptu, s přímou pomocí CSS Gridu.
 
-No a když už jsme u gridu, pojďme si tu fotogalerii zkusit ještě navrhnout s jeho pomocí.
+No a když už jsme u gridu, pojďme si tu fotogalerii zkusit ještě navrhnout s ním.
 
 ## Řešení pomocí CSS Grid a RAM
 
@@ -98,10 +99,10 @@ Pokud bychom nechtěli použít Media Queries, v CSS gridu máme možnost sáhno
 }
 ```
 
-RAM, to je zkratka pro Repeat, Auto, Minmax. Vysvětlím to zevnitř:
+RAM, to je zkratka pro Repeat, Auto, Minmax. V popisování začínám zevnitř závorek:
 
-- [Funkci `minmax()`](css-minmax.md) jsem zde už vysvětloval. Zde ji využíváme k nastavení minimální šířky elementu 150 pixelů a maximální `1fr`.
-- [Funkci `repeat()`](css-repeat.md) už také znáte. Zjednodušuje zápis opakovaných údajů v `grid-template`. 
+- [Funkci `minmax()`](css-minmax.md) jsem zde už vysvětloval. Zde ji využíváme k nastavení minimální šířky elementu na `150px` a maximální `1fr`.
+- [Funkci `repeat()`](css-repeat.md) už také znáte. Zjednodušuje zápis opakovaných údajů v `grid-template`.
 - Namísto čísla v prvním argumentu `repeat()` se na nás ale překvapeně kouká klíčové slovo `auto-fit`, které prohlížeči říká, aby prostor vyplnil maximálním možným roztažením buněk, které už na řádku existují.
 
 Jinak řečeno – zápisem `repeat(auto-fit, minmax(150px, 1fr))` říkáme: Dej na řádku libovolný počet položek. Roztáhni je klidně do jejich maximální obsahové šířky, ale nikdy je nesmršťuj pod 150 pixelů.
