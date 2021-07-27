@@ -1,6 +1,6 @@
-# Flexbox: Vše o průžných layoutech v CSS
+# Flexbox: referenční příručka všech vlastností
 
-Flexbox je jeden z nových způsobů, jak v CSS zapisovat layout, ale také zarovnání a distribuci volné plochy.
+*Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
 
 <div class="related web-only" markdown="1">
 - [CSS Grid](css-grid.md)
@@ -8,13 +8,9 @@ Flexbox je jeden z nových způsobů, jak v CSS zapisovat layout, ale také zaro
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
-V této aktualizované příručce přibyly texty s příklady pro všechny vlastnosti, které ve flexboxu můžete používat.
+Toto je referenční příručka s příklady pro všechny vlastnosti, které ve flexboxu můžete používat.
 
-*Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
-
-Pokud sháníte příručku k vlastnostem flexboxu, tady je.
-
-## Všechny vlastnosti {#vlastnosti}
+## Vlastnosti flexboxu {#vlastnosti}
 
 Vlastnosti se týkají buď kontejneru, tedy rodičovského prvku nebo položek.
 
@@ -24,11 +20,11 @@ Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext for
 
 <div class="rwd-scrollable prop-table f-6" markdown="1">
 
-| Vlastnost                            | Co dělá a příklad    |
+|                                      |  Vlastnost |
 |--------------------------------------|----------------------|
-| [`flex-wrap`](css-flex-wrap.md) <br> [![Vlastnost flex-wrap](../dist/images/small/vdlayout/css-flex-wrap-schema.png)](css-flex-wrap.md)       | Definuje, zda se položky mohou zalamovat na více řádků nebo ne. Výchozí je nezalamovat. <br>Např. `flex-wrap: wrap` – položky se mohou vykreslit na další řádek. |
-| [`flex-direction`](css-flex-direction.md) <br> [![Vlastnost flex-direction](../dist/images/small/vdlayout/css-flex-direction-schema.png)](css-flex-direction.md)       | Určí směr toku rozvržení. Výchozí je zleva doprava, do řádku. <br>Např. `flex-direction: column` – položky se skládají shora dolů, do sloupce. |
-| [`flex-flow`](css-flex-flow.md) <br> [![Vlastnost flex-flow](../dist/images/small/vdlayout/css-flex-flow-schema.png)](css-flex-flow.md)       | Zkratka pro `flex-wrap` a `flex-direction`. <br>Např. `flex-flow: wrap column` – položky se zalomují a skládají shora dolů. |
+| [![Vlastnost flex-wrap](../dist/images/small/vdlayout/css-flex-wrap-schema.png)](css-flex-wrap.md)       | **[`flex-wrap`](css-flex-wrap.md)** <br> Definuje, zda se položky mohou zalamovat. Výchozí je nezalamovat. <br>Např. `flex-wrap:wrap` – položky se mohou vykreslit na další řádek. |
+| [![Vlastnost flex-direction](../dist/images/small/vdlayout/css-flex-direction-schema.png)](css-flex-direction.md)       | **[`flex-direction`](css-flex-direction.md)** <br> Určí směr toku rozvržení. Výchozí je zleva doprava, do řádku. <br>Např. `flex-direction:column` – položky se skládají shora dolů, do sloupce. |
+| [![Vlastnost flex-flow](../dist/images/small/vdlayout/css-flex-flow-schema.png)](css-flex-flow.md)       | **[`flex-flow`](css-flex-flow.md)** <br> Zkratka pro `flex-wrap` a `flex-direction`. <br>Např. `flex-flow:wrap column` – položky se zalomují a skládají shora dolů. |
 
 </div>
 
@@ -39,10 +35,10 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
 
 <div class="rwd-scrollable prop-table f-6" markdown="1">
 
-| Vlastnost                               | Co dělá a příklad  |
+|                                         | Vlastnost  |
 |-----------------------------------------|--------------------|
-| [`align-items`](css-align-items.md) <br> [![Vlastnost align-items](../dist/images/small/vdlayout/css-align-items-schema.png)](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
-| [`place-items`](css-place-items.md) <br> [![Vlastnost place-items](../dist/images/small/vdlayout/css-place-items-schema.png)](css-place-items.md)     | Zkratka pro zarovnání položek v obou směrech. <br> Např. `place-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
+| [![Vlastnost align-items](../dist/images/small/vdlayout/css-align-items-schema.png)](css-align-items.md)     | **[`align-items`](css-align-items.md)** <br> Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
+| [![Vlastnost place-items](../dist/images/small/vdlayout/css-place-items-schema.png)](css-place-items.md)     | **[`place-items`](css-place-items.md)** <br> Zkratka pro zarovnání položek v obou směrech. <br> Např. `place-items: end center` zarovná položky ke spodní hraně a vodorovně na střed. |
 
 </div>
 
@@ -50,11 +46,11 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
 <div class="rwd-scrollable prop-table f-6" markdown="1">
 
-| Vlastnost                               | Co dělá?  |
+|                                         | Vlastnost  |
 |-----------------------------------------|-----------|
-| [`justify-content`](css-justify-content.md) <br> [![Vlastnost justify-content](../dist/images/small/vdlayout/css-justify-content-schema.png)](css-justify-content.md) | Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. `justify-content: space-between` rozdělí prostor mezi položky. |
-| [`align-content`](css-align-content.md) <br> [![Vlastnost align-content](../dist/images/small/vdlayout/css-align-content-schema.png)](css-align-content.md) | Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. `align-content: start` zajistí zarovnání položek k horní hraně kontejneru. |
-| [`place-content`](css-place-content.md) <br> [![Vlastnost place-content](../dist/images/small/vdlayout/css-place-content-schema.png)](css-place-content.md) | Zkratka pro rozdělení prostoru v obou směrech. <br> Např. `place-content: start space-between` zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky. |
+| [![Vlastnost justify-content](../dist/images/small/vdlayout/css-justify-content-schema.png)](css-justify-content.md) | **[`justify-content`](css-justify-content.md)** <br>Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. `justify-content:space-between` rozdělí prostor mezi položky. |
+| [![Vlastnost align-content](../dist/images/small/vdlayout/css-align-content-schema.png)](css-align-content.md) | **[`align-content`](css-align-content.md)** <br>Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. `align-content:start` zajistí zarovnání položek k horní hraně kontejneru. |
+| [![Vlastnost place-content](../dist/images/small/vdlayout/css-place-content-schema.png)](css-place-content.md) | **[`place-content`](css-place-content.md)** <br> Zkratka pro rozdělení prostoru v obou směrech. <br> Např. `place-content:start space-between` zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky. |
 
 </div>
 
@@ -65,12 +61,12 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
 <div class="rwd-scrollable prop-table f-6" markdown="1">
 
-| Vlastnost                            | Co dělá a příklad    |
+|                                      | Vlastnost    |
 |--------------------------------------|----------------------|
-| [`flex-grow`](css-flex-grow.md) <br> [![Vlastnost flex-grow](../dist/images/small/vdlayout/css-flex-grow-schema.png)](css-flex-grow.md)       | Jak moc může položka růst. Výchozí je `0`. <br>Např. `flex-grow: 1` – bere si podíl v hodnotě `1` z volného prostoru. |
-| [`flex-shrink`](css-flex-shrink.md) <br> [![Vlastnost flex-shrink](../dist/images/small/vdlayout/css-flex-shrink-schema.png)](css-flex-shrink.md)       | Faktor smršťování položky. Výchozí je `1`. <br>Např. `flex-shrink: 0` – položka se nesmršťuje. |
-| [`flex-basis`](css-flex-basis.md) <br> [![Vlastnost flex-basis](../dist/images/small/vdlayout/css-flex-basis-schema.png)](css-flex-basis.md)       | Výchozí velikost položky. Výchozí je `auto`, tzn. podle `width` nebo `height`. <br>Např. `flex-basis: 0` – nehledí se na rozměr obsahu ani `width` či `height`. |
-| [`flex`](css-flex.md) <br> [![Vlastnost flex-basis](../dist/images/small/vdlayout/css-flex-schema.png)](css-flex.md)       | Zkratka pro `flex-grow`, `flex-shrink` a `flex-basis`, plus speciální hodnoty. <br>Např. `flex: auto` – roste, smršťuje se a rozměr je nastavený na `auto`. |
+| [![Vlastnost flex-grow](../dist/images/small/vdlayout/css-flex-grow-schema.png)](css-flex-grow.md)       | **[`flex-grow`](css-flex-grow.md)** <br> Jak moc může položka růst. Výchozí je `0`. <br>Např. `flex-grow: 1` – bere si podíl v hodnotě `1` z volného prostoru. |
+| [![Vlastnost flex-shrink](../dist/images/small/vdlayout/css-flex-shrink-schema.png)](css-flex-shrink.md)       | **[`flex-shrink`](css-flex-shrink.md)** <br> Faktor smršťování položky. Výchozí je `1`. <br>Např. `flex-shrink:0` – položka se nesmršťuje. |
+| [![Vlastnost flex-basis](../dist/images/small/vdlayout/css-flex-basis-schema.png)](css-flex-basis.md)       | **[`flex-basis`](css-flex-basis.md)** <br> Výchozí velikost položky. Výchozí je `auto`, tzn. podle `width` nebo `height`. <br>Např. `flex-basis:0` – nehledí se na rozměr obsahu ani `width` či `height`. |
+| [![Vlastnost flex-basis](../dist/images/small/vdlayout/css-flex-schema.png)](css-flex.md)       | **[`flex`](css-flex.md)** <br> Zkratka pro `flex-grow`, `flex-shrink` a `flex-basis`, plus speciální hodnoty. <br>Např. `flex:auto` – roste, smršťuje se a rozměr je nastavený na `auto`. |
 
 </div>
 
@@ -83,17 +79,17 @@ Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude za
 
 <div class="rwd-scrollable prop-table f-6" markdown="1">
 
-| Vlastnost                               | Co dělá?  |
+|                                         | Vlastnost  |
 |-----------------------------------------|-----------|
-| [`align-self`](css-align-self.md) <br> [![Vlastnost align-self](../dist/images/small/vdlayout/css-align-self-schema.png?2)](css-align-self.md)   | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-self: end` zarovná položku ke spodní hraně. |
-| [`place-self`](css-place-self.md)  <br> [![Vlastnost place-self](../dist/images/small/vdlayout/css-place-self-schema.png)](css-place-self.md)  | Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. `place-self: end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
+| [![Vlastnost align-self](../dist/images/small/vdlayout/css-align-self-schema.png?2)](css-align-self.md)   | **[`align-self`](css-align-self.md)** <br> Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-self:end` zarovná položku ke spodní hraně. |
+| [![Vlastnost place-self](../dist/images/small/vdlayout/css-place-self-schema.png)](css-place-self.md)  | **[`place-self`](css-place-self.md)**  <br>Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. `place-self:end center` zarovná položku ke spodní hraně a vodorovně doprostřed. |
 
 </div>
 
 <!-- /Kopie z css-multicolumn.md -->
 </div>
 
-Nyní známe vlastosti a teď pojďme prozkoumat jednoduchý příklad.
+Nyní známe vlastnosti a teď pojďme prozkoumat jednoduchý příklad.
 
 ## Základy v jednoduchém příkladu {#priklad}
 
@@ -107,17 +103,23 @@ Představme si triviální třísloupcový layout:
 </div>
 ```
 
-HTML je jednoduché. O to přísnější máme požadavky na design. A víte co? Ukážeme si rovnou, jak je splnit pomocí flexboxu.
+HTML je jednoduché. O to přísnější máme požadavky na design:
 
-CodePen: [cdpn.io/e/jOVVeVL](https://cdpn.io/e/jOVVeVL)
+- Všechny sloupce mají být stejně vysoké.
+- Layout se při nedostatku místa zalomí.
+- První dva sloupce jsou pružné, třetí nikoliv.
+- Druhý sloupec se zvětšuje a zmenšuje dvakrát tolik než první.
+- Na menších displejích do `400px` se prvky vyskládají pod sebe.
 
-V dalším textu kód z CodePenu ještě poctivě vysvětlíme.
+Zkuste si to nakódovat sami, stačí forknout následující CodePen: [cdpn.io/e/BaRYjya](https://cdpn.io/e/BaRYjya).
+
+V dalším textu si ukážeme, jak bych postupoval já.
 
 <!-- AdSnippet -->
 
 ### Všechny sloupce mají být stejně vysoké {#priklad-sloupce}
 
-Ano, i v případech kdy má ten jeden delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče pomocí [vlastnosti `display`](css-display.md) udělat kontejner flexboxu:
+Stejná výška prvků platí i v případech kdy má jeden sloupec delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče pomocí [vlastnosti `display`](css-display.md) udělat kontejner flexboxu:
 
 ```css
 .container {
@@ -137,17 +139,17 @@ V případě, že zde nebude dost prostoru pro všechny položky, zalomíme. To 
 
 ### První dva sloupce jsou pružné, třetí nikoliv {#priklad-treti}
 
-Zároveň jsme si vymysleli, že první dva sloupce se budou změnšovat a zvětšovat, přičemž druhý dvakrát více než první. Třetí naopak nikoliv, zůstane vždy na svém. Tady pomůže [zkratka vlastností položky flexboxu, `flex`](css-flex.md):
+Dále jsme si vymysleli, že první dva sloupce se budou změnšovat a zvětšovat, přičemž druhý dvakrát více než první. Třetí naopak nikoliv, zůstane vždy na svém. Tady pomůže [zkratka vlastností položky flexboxu, `flex`](css-flex.md):
 
 ```css
 /* Pružná položka, zabírá jednu část volného místa: */
 .col--1 {
-  flex: 1;  
+  flex: 1;
 }
 
 /* Pružná položka, zabírá dvě části volného místa: */
 .col--2 {
-  flex: 2;  
+  flex: 2;
 }  
 
 /* Fixně široká položka: */
@@ -168,17 +170,20 @@ Na mobilech zpravila není pro rozvržení prvků vedle sebe prostor. Přidáme 
 }
 ```
 
-Příklad si utíkejte vyzkoušet naživo na CodePen. [cdpn.io/e/jOVVeVL](https://cdpn.io/e/jOVVeVL)
+Na obrázku je vidět, k čemu jsme se dopracovali:
 
-Je to hezké, že?
+<figure>
+<img src="../dist/images/original/flexbox-priklad.png" width="1600" height="900" alt="Příklad flexboxu">
+<figcaption markdown="1">
+*Takhle to dopadá, když si flexbox pustíte k tělu.*
+</figcaption>
+</figure>
 
-## Flexbox je mistr na layouty komponent {#layouty-komponent}
+Výsledný příklad si utíkejte vyzkoušet naživo:
 
-Je dobré zmínit, že flexbox je určený pro layout komponent uvnitř stránek. Tedy navigací, formulářů, stránkovacích komponent atd. atd.
+CodePen: [cdpn.io/e/jOVVeVL](https://cdpn.io/e/jOVVeVL)
 
-Pro celostránkové layouty se více hodí [CSS Grid Layout](css-grid.md). Užití flexboxu pro celostránkové layouty je samozřejmě možné. Jen se na velmi pomalých zařízeních nebo internetových připojeních nebude vykreslovat optimálně. Píše o tom třeba Jake Archibald. [vrdl.in/zuscj](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)
-
-## Šup na základní pojmy — flex kontejner a flex položka, hlavní a příčná osa {#pojmy}
+## Základní pojmy: flex kontejner, flex položka, hlavní a příčná osa {#pojmy}
 
 Flexbox tvoří nerozlučná dvojice dvou typů elementů – flex kontejner a flex položka. Flex položkou se stává každý přímý potomek kontejneru.
 
@@ -199,9 +204,14 @@ Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
 
 Všechny `<li>` se tady stávají flex položkami.
 
-Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
+Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si je na zjednodušeném schématu:
 
-![flexbox schéma](../dist/images/original/flexbox-schema.jpg)
+<figure>
+<img src="../dist/images/original/flexbox-schema.png" width="1600" height="900" alt="Schéma flexboxu">
+<figcaption markdown="1">
+*Schéma vnitřních struktur flexboxu.*
+</figcaption>
+</figure>
 
 - flex kontejner – rodičovský element
 - flex položka – všichni přímí potomci flex kontejneru
@@ -221,8 +231,8 @@ Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s po
 </figcaption>
 </figure>
 
-Konkrétní podporu je ale potřeba rozpadnout podle jednotlivých vlastností, uvedených výše v tabulce. Tam je situace už různorodější. Bojem s více či méně příjemnými chybami je provázena implementace v IE, protože jde o nejstarší dnes sloužící prohlížeče.
+Konkrétní podporu je ale potřeba rozpadnout podle jednotlivých vlastností, uvedených výše v tabulce. Tam je situace už různorodější. 
 
-Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích.
+Bojem s více či méně příjemnými chybami je provázena práce v Internet Exploreru, protože jde o nejstarší dnes sloužící prohlížeče. Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích. Není to ale nic vážného, tento prohlížeč od Microsoftu už prakticy vymřel a chyby v něm nejsou tak velké.
 
 <!-- AdSnippet -->
