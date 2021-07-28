@@ -1,9 +1,9 @@
 # CSS vlastnost flex-flow: zkratka pro určení směru a zalamování flexboxu
 
-Vlastnost `flex-flow` je zkratkou pro dvě jiné:
+Vlastnost `flex-flow` je zkratkou pro dvě už dříve uváděné:
 
-- [`flex-direction`](css-flex-direction.md) – určuje směr vykreslování flexboxového rozvržení.
-- [`flex-wrap`](css-flex-wrap.md) – definuje, zda se budou položky zalamovat na více řádků layoutu.
+- [`flex-direction`](css-flex-direction.md) – směr vykreslování flexboxového rozvržení.
+- [`flex-wrap`](css-flex-wrap.md) – zalamování položek layoutu na více řádků.
 
 <div class="related web-only" markdown="1">
 - [Flexbox](css-flexbox.md)
@@ -18,6 +18,8 @@ flex-flow: <hodnota flex-direction> <hodnota flex-wrap>;
 Vzhledem k tomu, že obě vlastnosti používají jiná klíčová slova pro své hodnoty, je možné je uvádět v libovolném pořadí a samozřejmě úplně v klidu jednu z nich vynechat.
 
 <!-- AdSnippet -->
+
+<div class="web-only" markdown="1">
 
 Níže to v textu rozebereme více, ale obrázky napoví. Jako vždy. Nejprve k `flex-direction`.
 
@@ -37,6 +39,9 @@ A co vlastnost `flex-wrap`? Tramtadadá, tady ji máme!
 </figcaption>
 </figure>
 
+<!-- .web-only -->
+</div>
+
 Toto jsou příklady možných hodnot:
 
 - `column`  
@@ -48,7 +53,7 @@ Ekvivalentní k `flex-direction:column; flex-wrap:wrap`.
 - `row-reverse wrap`  
 Ekvivalentní k `flex-direction:row-reverse; flex-wrap:wrap`.
 
-Všechno je to dobře vidět v CodePenu, kde si také můžete měnit velikost písma, šířku viewportu nebo to jinak rozbíjet a přitom se to všechno naučit.
+Všechno je to dobře vidět v online ukázce na CodePenu, kde si také můžete měnit velikost písma, šířku viewportu nebo to jinak rozbíjet a přitom se to všechno naučit.
 
 CodePen: [cdpn.io/e/JjReqbB](https://codepen.io/machal/pen/JjReqbB?editors=0000)
 

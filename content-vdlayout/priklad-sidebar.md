@@ -1,4 +1,4 @@
-# Příklad s bočním panelem
+# Boční panel
 
 V této ukázce zkusíme využít flexbox i grid. Jde o jeden z nejčastějších layoutů, jaké můžete na webu zahlédnout.
 

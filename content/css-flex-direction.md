@@ -5,7 +5,7 @@ Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vy
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-direction.png" width="1600" height="900" alt="CSS vlastnost flex-direction">
 <figcaption markdown="1">
-*Vlastnost `flex-direction` přikáže flexboxovému rozvržení směr vykreslování.*
+*Jakým směrem se flexboxové rozvržení vykreslí?*
 </figcaption>
 </figure>
 
@@ -24,36 +24,40 @@ Položky flexboxu se skládají shora dolů, do sloupce.
 - `column-reverse`  
 Do sloupce, ale v opačném směru, tedy zdola nahoru.
 
+V živé ukázce je možné interaktivě zkoušet všechny varianty hodnot vlastnosti.
+
 CodePen: [cdpn.io/e/NWREVGG](https://codepen.io/machal/pen/NWREVGG?editors=0000)
 
 ## Zkratka flex-flow {#flex-flow}
 
-Můžete použít také [vlastnost `flex-flow`](css-flex-flow.md), což je zkratka pro `flex-direction` a [`flex-wrap`](css-flex-wrap.md).
+Také u této vlastnosti můžete použít [zkratku `flex-flow`](css-flex-flow.md):
 
-```
-flex-flow: column = flex-direction: column
+```css
+.box {
+  flex-flow: column; /* = flex-direction: column */
+}
 ```
 
 ## Záludnosti změny pořadí {#poradi}
 
-Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v japonštině shora dolů. Závisí to také na nastavení vlastností `writing-mode` a `direction`.
+Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v japonštině shora dolů. Jak jsem [psal jinde](css-flexbox-dobre-vedet.md), záleží to také na nastavení vlastností `writing-mode` a `direction`.
 
 <!-- AdSnippet -->
 
 Pořadí vykreslení položek se v případě vlastností `row` a `column` bere z pořadí v kódu. Pokud chcete pořadí otočit, prostě zvolte hodnoty `row-reverse` nebo `column-reverse`. Pozorní si asi všimli, že vlastnost `flex-direction` lze tím pádem použít i pro změnu řazení seznamů.
 
-Změna pořadí má ale vliv jen na výsledek vykreslení, nikoliv např. na pořadí vykreslování a na procházení při navigaci klávesou Tab nebo čtečkami pro slabozraké.
+Změna pořadí má ale vliv jen na výsledek vykreslení, nikoliv např. na pořadí vykreslování a na procházení při navigaci klávesou `Tab` nebo čtečkami pro slabozraké.
 
-Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „čtení“ dokumentu bude dávat smysl i při pořadí uvedeném v DOMu. Je to ostatně podobné jako u [vlastnosti `order`](css-order.md), kde tuto záludnost rozebírám více.
+Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „čtení“ dokumentu bude dávat smysl i při pořadí uvedeném v DOMu. Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) a více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
 
 ## Vliv na `flex-basis` {#flex-basis}
 
-Pokud je `flex-direction` nastaveno na hodnotu `column`, vlastnost `flex-basis` nastavuje výšku, tedy vlastnost `height`.
+Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basis`](css-flex-basis.md) nastavujete výšku, tedy vlastnost `height`, nikoliv šířku a tedy `width`.
 
 ## Podpora v prohlížečích {#podpora}
 
-Funguje to dobře. Jedinou mě známou výjimkou je flexbug číslo 14, kdy při použití `display:inline-flex` a `flex-flow: column wrap` prohlížeče neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. [https://github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs#flexbug-14)
+Vlastnost `flex-direction` funguje to dobře. Jedinou mě známou výjimkou je flexbug číslo 14, kdy při použití `display:inline-flex` a `flex-flow:column wrap` prohlížeče neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md).
 
-V době psaní se na CanIUse uvádí potíže, které má Firefox s vlastností `flex-direction` v kombinaci s `overflow`, ale to už není pravda. [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-direction)
+Více o podpoře je na  [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-direction).
 
 <!-- AdSnippet -->
