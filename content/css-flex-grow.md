@@ -1,36 +1,53 @@
 # CSS vlastnost flex-grow: faktor zvětšování položky flexboxu
 
-Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo –  například když uživatel zvětší okno prohlížeče? To určuje vlastnost `flex-grow`.
-
-<figure>
-<img src="../dist/images/original/vdlayout/css-flex-shrink.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
-<figcaption markdown="1">
-*Jak se bude položka flexboxu roztahovat? Tomu vládne vlastnost `flex-grow`.*
-</figcaption>
-</figure>
-
-Specifikace a praktická zkušenost nás navádějí namísto používání `flex-grow` spíše ke [zkratce `flex`](css-flex.md), ale přesto považuji za nutné se o této vlastnosti zmínit.
+Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo – například když uživatel zvětší okno prohlížeče? To určuje vlastnost `flex-grow`.
 
 <div class="related web-only" markdown="1">
 - [Flexbox](css-flexbox.md)
 </div>
 
+Specifikace a praktická zkušenost nás – namísto používání vlastnosti `flex-grow` – navádejí spíše ke [zkratce `flex`](css-flex.md), ale přesto považuji za nutné se o této vlastnosti zmínit.
+
+<!-- AdSnippet -->
+
 Možné hodnoty:
 
 - `0` (výchozí)  
-Znamená, že položka nijak neroste.
+Znamená, že položka s přibývajícím volným místem nijak neroste.
 - Kladná čísla (např. `0.5`, `1`, `2`…)  
 Položky si rozdělují podíly z nově získaného místa nad rámec výchozí šířky.
 
-Záporná čísla zde nejsou validní, ale desetinná čísla jsou možná.
+Záporné hodnoty zde nejsou validní, ale desetinná čísla jsou povolená, což už jste viděli.
 
 ## Demo {#demo}
 
-V ukázce máme kontejner flexboxu (`display:flex`) a v něm tři položky, kterým jsme nenastavili žádnou šířku a ve výchozím stavu se tedy roztáhnou podle své přirozené velikosti.
+V interaktivní ukázce máme kontejner flexboxu (`display:flex`) a první položce přidáváme různě hodnoty vlastnosti `flex-grow`:
 
-CodePen: [cdpn.io/e/XWNbNQE](https://codepen.io/machal/pen/XWNbNQE?editors=0000)
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-grow.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
+<figcaption markdown="1">
+*Jak se bude položka flexboxu roztahovat do volného místa?*
+</figcaption>
+</figure>
 
-Pokud bude v rodičovském kontejneru dostatek volného místa, první položka, stylovaná přepínači nahoře si vezme tolik zbývajícího prostoru, kolik jsme jí ochotní dát právě nastavením vlastnosti `flex-grow`:
+Druhé a třetí položce jsme jsme nenastavili žádnou šířku. HTML vypadá následovně:
+
+```html
+<div class="container">
+  <p class="box box--one">
+    <strong>Item 1<br>(styled)</strong>
+  </p>
+  <p class="box box--two">
+    <strong>Item 2</strong>
+  </p>
+  <p class="box box--three">
+    <strong>Item 3</strong>
+  </p>  
+</div>
+```
+
+Ve výchozím stavu se všechny tři položky roztáhnou podle své přirozené velikosti.
+Pokud bude v rodičovském kontejneru dostatek volného místa, pak si první položka, stylovaná přepínači nahoře, vezme tolik zbývajícího prostoru, kolik jsme jí ochotní dát právě nastavením vlastnosti `flex-grow`:
 
 - `0` – zůstane na výchozí šířce.
 - `0.5` – vezme si polovinu volného prostoru.
@@ -43,10 +60,10 @@ U poslední možnosti, nastavení na `2` se pozastavme. Je zde vidět, že `flex
 
 Hodnota `2` by měla efekt pokud bychom v demu změnili nastavení růstu ostatních položek, například na `flex-grow:1`. V takovém případě by se stala poněkud obézní a zabrala by ze zbylého prostoru dvojnásobek oproti jejím dvěma sestrám.
 
+CodePen: [cdpn.io/e/XWNbNQE](https://codepen.io/machal/pen/XWNbNQE?editors=0000)
+
 ## Podpora v prohlížečích {#podpora}
 
-Prvním prohlížečem, který kdy flexbox podporoval, byl Internet Explorer 10. To bylo víceméně v pravěku. Proto zde myslím nepanuje napjaté očekávání, že by snad některé dnešní prohlížeče v implementaci `flex-grow` selhávaly. Ano, podpora je plná.
-
-Jen pro zajímavost zmiňuji, že v IE10 byla tato vlastnost pojmenována ještě `-ms-flex-positive`. Více je na webu [CanIUse](https://caniuse.com/mdn-css_properties_flex-grow).
+Podpora CSS vlastnosti `flex-grow` je plná. Jen pro zajímavost zmiňuji, že v Internet Exploreru 10 byla tato vlastnost pojmenována ještě jako `-ms-flex-positive`. Více o podpoře v prohlížečích najdete na webu [CanIUse](https://caniuse.com/mdn-css_properties_flex-grow).
 
 <!-- AdSnippet -->

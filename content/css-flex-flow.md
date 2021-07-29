@@ -59,7 +59,7 @@ CodePen: [cdpn.io/e/JjReqbB](https://codepen.io/machal/pen/JjReqbB?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 
-Podpora je přímo luxusní. Podívejte se na CanIUse a uvidíte samá zelená políčka, včetně Internet Exploreru. [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-flow)
+Podpora vlastnosti `flex-flow` je přímo luxusní. Podívejte se na CanIUse a uvidíte samá zelená políčka, včetně Internet Exploreru. [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-flow)
 
 Jedinou pihou krásy je kombinace hodnot `display:inline-flex` a `flex-flow: column wrap`, nepříliš známá a nepříliš omezující chyba, kterou jsme se zabývali už [u vlastnosti `flex-direction`](css-flex-direction.md).
 

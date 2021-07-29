@@ -1,15 +1,10 @@
 # CSS vlastnost flex-shrink: faktor smršťování položky flexboxu
 
-Jakým podílem vzhledem k ostatním položkám se může definovaná položka zmenšovat, pokud v rodičovském kontejneru místo ubylo – když uživatel zmenšil okno nebo třeba přibyla nová položka? Od toho tady máme vlastnost `flex-shrink`.
+Jakým podílem se může položka flexboxu zmenšovat, pokud v rodičovském kontejneru místo ubylo? Od toho tady máme vlastnost `flex-shrink`.
 
-<figure>
-<img src="../dist/images/original/vdlayout/css-flex-shrink.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
-<figcaption markdown="1">
-*Vlastnost `flex-shrink` velí způsobu smršťování.*
-</figcaption>
-</figure>
+<!-- AdSnippet -->
 
-Také v jejím případě platí, že je obecně lepší namísto ní používat [zkratku `flex`](css-flex.md). Problematikou smršťování se ale zabývat budeme, to si pište, že ano.
+Také v jejím případě platí, že je obecně lepší místo ní používat [zkratku `flex`](css-flex.md). Problematikou smršťování položek flexboxu se tady ale zabývat budeme, to si pište, že ano.
 
 <div class="related web-only" markdown="1">
 - [Flexbox](css-flexbox.md)
@@ -24,13 +19,36 @@ Položka si ze své šířky vezme podíl z ubrané části kontejneru odpovída
 - `0`  
 Položka je tvrdohlavá a smršťovat se nebude. A nebude!
 
+Možná to celé zní trošku zašmodrchaně a bude lepší ukázat si to na obrázku a interaktivním demu.
+
 ## Demo {#demo}
 
-Ani zde nevynecháme příklad. Pevně doufám, že když si pohrajete s přepínači v CodePenu, celou věc snáze pochopíte.
+Pevně doufám, že když se podíváte na obrázek, problematiku smršťování a vlastnosti `flex-shrink` snáze pochopíte.
 
-CodePen: [cdpn.io/e/GRNJNVg](https://codepen.io/machal/pen/GRNJNVg?editors=0000)
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-shrink.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
+<figcaption markdown="1">
+*Různé hodnoty vlastnosti na první položce dělají různé smršťování.*
+</figcaption>
+</figure>
 
-Připomenu základní nastavení těchto ukázek: Na rodiči (`.container` s nastavením `display:flex`) zde leží tíha udržet na uzdě tři potomky (`.box`). Zde jsme demo obohatili ještě o nastavení každého potomka tak, aby se pokoušel urvat co nejvíce prostoru z rodiče:
+Na rodiči (`.container` s nastavením `display:flex`) zde leží tíha udržet na uzdě tři potomky (`.box`):
+
+```html
+<div class="container">
+  <p class="box box--one">
+    <strong>Item 1<br>(styled)</strong>
+  </p>
+  <p class="box box--two">
+    <strong>Item 2</strong>
+  </p>
+  <p class="box box--three">
+    <strong>Item 3</strong>
+  </p>  
+</div>
+```
+
+Demo jsme obohatili ještě o nastavení každého potomka tak, aby se pokoušel urvat co nejvíce prostoru z rodiče:
 
 ```css
 .box {
@@ -38,21 +56,23 @@ Připomenu základní nastavení těchto ukázek: Na rodiči (`.container` s nas
 }
 ```
 
-Ta paralela se skutečným rodičovstvím je zde až mrazivá. Mámy a tátové mezi čtenáři vědí, takové děti nechceme, ale všechny jsou takové. Ale nic, zpět k CSS… 
+Ta paralela se skutečným rodičovstvím je zde až mrazivá. Mámy a tátové mezi čtenáři vědí, že takhle rozpínavé děti, bojující o každé volné místo naší pozornosti, nechceme, ale nakonec jsou takové nějakou chvíli všechny. Ale nic, zpět k CSS…
 
 <!-- AdSnippet -->
 
-Podívejme se na různé možnosti nastavení `flex-shrink`, které dostává první dítě, nebo raději položka jménem `.box`:
+Podívejme se na různé možnosti nastavení `flex-shrink`, které dostává první dítě  (nebo raději _potomek_) jménem `.box`:
 
 - `0` – nesmršťuje se. Nebude se za žádnou cenu omezovat. Jednou jsme řekli `width:100%`, tak co bychom také chtěli…? Podřídí se tomuto pravidlu a oba ostatní sourozence vytlačí ven. Vzhledem k tomu, že výchozí hodnota `flex-shrink` je `1`, sourozenci si poctivě ze své šířky ubrali.
 - `0.5` – ubere si polovinu oproti sourozencům, takže při zmenšování rodičovského prvku zabírá stále více místa.
-- `1` – v tomto případě se všichni potomkové spravedlivě smršťují stejným podílem. Z pohledu rodiče ideální stav.
+- `1` – v tomto případě se všichni potomkové spravedlivě smršťují stejným podílem. (Z pohledu rodiče ideální stav.)
 - `2` – první položka si ubírá dvojnásobek oproti zbylým dvěma.
 
-Je to trochu jasnější? Snad ano.
+Je to trochu jasnější? Snad ano. Živou ukázku hledejte na následujícím odkaze.
+
+CodePen: [cdpn.io/e/GRNJNVg](https://codepen.io/machal/pen/GRNJNVg?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 
-Podpora je – podobně jako [u vlastnosti `flex-grow`](css-flex-grow.md) – plná. Internet Explorer 10 jako výchozí hodnotu chybně používá `0`, ale tuto informaci už v 21. století asi potřebovat nebudete. Viz [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-shrink).
+Podpora vlastnosti `flex-shrink` je plná. Internet Explorer 10 jako výchozí hodnotu chybně používá `0`, ale tuto informaci už ve 21. století potřebovat nebudete. Vše o podpoře najdete na webu [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-shrink).
 
 <!-- AdSnippet -->
