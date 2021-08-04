@@ -107,21 +107,6 @@ Zabezpečí to třída `.img-wide`, ale pak už tam nesmí být `<figure>`.
 
 Hodí se to na všechna možná podrobnější schémata atd.
 
-#### Obrázek v tabulce
-
-Možné to je, viz `/prirucka/css-box-alignment`:
-
-Je potřeba je vkládat ve `small` variantě.
-
-Příklad:
-
-```markdown
-|          | Vlastnost                               | Co dělá?  |
-|----------|-----------------------------------------|-----------|
-| ![Vlastnost justify-items](../dist/images/small/vdlayout/css-justify-items-schema.png) | [`justify-items`](css-justify-items.md) | Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. `justify-items: center` centruje všechny položky. |
-| ![Vlastnost align-items](../dist/images/small/vdlayout/css-align-items-schema.png) | [`align-items`](css-align-items.md)     | Zarovnání na blokové ose (obvykle svisle). <br> Např. `align-items: end` zarovná položky ke spodní hraně kontejneru. |
-```
-
 ### Video
 
 #### Vložení z YouTube
@@ -235,6 +220,33 @@ Vložení opět pomocí HTML kódu.
 Jednotlivé články zatím vkládáme takto:
 
 → *Související: [Vkládání JavaScriptu jako async, defer a type="module"](js-async-defer-module.md)*
+
+
+### Seznam vlastností
+
+Možné to je, viz `/prirucka/css-flexbox`:
+
+Je potřeba je přímo v HTML a obrázky ve `small` variantě.
+
+Příklad:
+
+```html
+<div class="reference-items">
+
+  <article role="article">
+    <h4><a href="css-align-items.md"><code>align-items</code></a></h4>
+    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.png" alt="Vlastnost align-items" /></a></p>
+    <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>
+  </article>
+
+  <article role="article">
+    <h4><a href="css-place-items.md"><code>place-items</code></a></h4>
+    <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.png" alt="Vlastnost place-items" /></a></p>
+    <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items: end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
+  </article>
+
+</div>
+```
 
 ### Ukázky kódu
 
