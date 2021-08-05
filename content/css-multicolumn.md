@@ -10,12 +10,12 @@ Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-colum
 
 Na rozdíl od podobných layoutových modulů – CSS Gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro obsah, nikoliv pro layout stránek nebo komponent.
 
-Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu.
+Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu. Na obrázku vidíte vícesloupcový layout s nastavením `columns:20em`.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol.png" width="1600" height="900" alt="CSS Multi-column Layout s nastavením columns:20em">
 <figcaption markdown="1">
-Kouzlo automatického přizpůsobení šířce okna. Vícesloupcový layout s nastavením `columns:20em`.
+Kouzlo automatického přizpůsobení šířce okna.
 </figcaption>
 </figure>
 
@@ -60,13 +60,34 @@ Pomocí vlastnosti `columns` a dalších definujeme na rodičovském kontejneru 
 
 To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uvedenou vlastností.
 
-<div class="rwd-scrollable prop-table f-6" markdown="1">
+### Kontejner flexboxu {#vlastnosti-kontejner}
 
-| Vlastnosti                           | Co dělají a příklad  |
-|--------------------------------------|----------------------|
-| [`column-width`, `column-count`, `columns`](css-multicol-columns.md) <br> [![Vlastnost column](../dist/images/small/vdlayout/css-multicol-columns-scheme.png)](css-multicol-columns.md)       | Počet sloupců a jejich šířka. <br>`columns: 3 20em` – maximálně tři sloupce o šířce `20em`. |
-| [`column-gap`, `column-rule`](css-multicol-gap-rule.md)       <br> [![Vlastnost gap a rule](../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png)](css-multicol-gap-rule.md) | Definice mezer a oddělovačů mezi sloupci. <br> `gap: 3em; column-rule: dotted lightgrey;` – mezera `3em`, oddělující čára tečkovaná a světle šedá. |
-| [`column-fill`](css-multicol-fill.md) <br> [![Vlastnost fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.png)](css-multicol-fill.md)               | Vyvažování výšky sloupců. <br> `column-fill: balance` – prvky se rozdělí do sloupců a jejich výška bude podobná. |
+Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext formátování flexboxem, takže jeho přímí potomkové mohou mít specifické vlastnosti. Možná je také „inline“ hodnota: `inline-flex`.
+
+<div class="reference-items">
+
+  <article role="article">
+    <h4><a href="css-multicol-columns.md"><code>column-width</code>, <code>column-count</code>, <code>columns</code></a></h4>
+    <p><a href="css-multicol-columns.md"><img src="../dist/images/small/vdlayout/css-multicol-columns-scheme.png" alt="Vlastnost column"></a></p>
+    <p>
+      Počet sloupců a jejich šířka.
+      <br><code>columns:3 20em</code> – maximálně tři sloupce o šířce <code>20em</code>.
+    </p>
+  </article>  
+  <article role="article">
+    <h4><a href="css-multicol-gap-rule.md"><code>column-gap</code>, <code>column-rule</code></a></h4>
+     <p><a href="css-multicol-gap-rule.md"><img src="../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png" alt="Vlastnost gap a rule"></a></p>
+     <p>
+      Definice mezer a oddělovačů mezi sloupci. <br>
+      <code>gap:3em; column-rule:dotted lightgrey;</code> – mezera <code>3em</code>, oddělující čára tečkovaná a světle šedá.</p>
+   </article>  
+  <article role="article">
+    <h4><a href="css-multicol-fill.md"><code>column-fill</code></a></h4>
+    <p><a href="css-multicol-fill.md"><img src="../dist/images/small/vdlayout/css-multicol-fill-scheme.png" alt="Vlastnost fill"></a></p>
+    <p>
+      Vyvažování výšky sloupců. <br>
+      <code>column-fill:balance</code> – prvky se rozdělí do sloupců a jejich výška bude podobná.</p>
+  </article>  
 
 </div>
 
@@ -74,12 +95,25 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
 
 Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamování obsahu do sloupců a nebo roztažení vnitřních prvků do všech sloupců.
 
-<div class="rwd-scrollable prop-table f-6" markdown="1">
+<div class="reference-items">
 
-| Vlastnosti                               | Co dělají a příklad  |
-|------------------------------------------|----------------------|
-| [`break-before`, `break-after`, `break-inside`](css-multicol-break.md) <br> [![Vlastnost break](../dist/images/small/vdlayout/css-multicol-break-scheme.png)](css-multicol-break.md) | Zalamování prvků do sloupců. <br> `break-inside: avoid` – zabrání zalamování obsahu prvku do více sloupců. |
-| [`column-span`](css-multicol-span.md)    <br> [![Vlastnost span](../dist/images/small/vdlayout/css-multicol-span-scheme.png)](css-multicol-span.md) | Prvek může překlenout více sloupců. <br> `column-span: all` – prvek překlene všechny sloupce. |
+  <article role="article">
+    <h4><a href="css-multicol-break.md"><code>break-before</code>, <code>break-after</code>, <code>break-inside</code></a></h4>
+    <p><a href="css-multicol-break.md"><img src="../dist/images/small/vdlayout/css-multicol-break-scheme.png" alt="Vlastnost break"></a></p>
+    <p>
+      Zalamování prvků do sloupců. <br>
+      <code>break-inside:avoid</code> – zabrání zalamování obsahu prvku do více sloupců.
+    </p>
+  </article>
+
+  <article role="article">
+    <h4><a href="css-multicol-span.md"><code>column-span</code></a></h4>
+     <p><a href="css-multicol-span.md"><img src="../dist/images/small/vdlayout/css-multicol-span-scheme.png" alt="Vlastnost span"></a></p>
+     <p>
+      Prvek může překlenout více sloupců. <br>
+      <code>column-span:all</code> – prvek překlene všechny sloupce.
+    </p>
+  </article>
 
 </div>
 

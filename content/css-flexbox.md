@@ -23,7 +23,7 @@ Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext for
   <article role="article">
     <h4><a href="css-flex-wrap.md"><code>flex-wrap</code></a></h4>
     <p><a href="css-flex-wrap.md"><img src="../dist/images/small/vdlayout/css-flex-wrap-schema.png" alt="Vlastnost flex-wrap" /></a></p>
-    <p>Definuje, zda se položky mohou zalamovat. Výchozí je nezalamovat. <br>Např. <code>flex-wrap:wrap</code> – položky se mohou vykreslit na další řádek.</p>
+    <p>Mohou se položky zalamovat? Výchozí je nezalamovat. <br>Např. <code>flex-wrap:wrap</code> – položky se mohou vykreslit na další řádek.</p>
   </article>
 
   <article role="article">
@@ -107,13 +107,13 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
   <article role="article">
     <h4><a href="css-flex-basis.md"><code>flex-basis</code></a></h4>
     <p><a href="css-flex-basis.md"><img src="../dist/images/small/vdlayout/css-flex-basis-schema.png" alt="Vlastnost flex-basis" /></a></p>
-    <p>Výchozí velikost položky. Výchozí je <code>auto</code>, tzn. podle <code>width</code> nebo <code>height</code>. <br>Např. <code>flex-basis:0</code> – nehledí se na rozměr obsahu ani <code>width</code> či <code>height</code>.</p>
+    <p>Výchozí velikost položky. Výchozí je <code>auto</code>. <br>Např. <code>flex-basis:0</code> – nehledí se na rozměr obsahu ani <code>width</code> či <code>height</code>.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-flex.md"><code>flex</code></a></h4>
     <p><a href="css-flex.md"><img src="../dist/images/small/vdlayout/css-flex-schema.png" alt="Vlastnost flex-basis" /></a></p>
-    <p>Zkratka pro <code>flex-grow</code>, <code>flex-shrink</code> a <code>flex-basis</code>, plus speciální hodnoty. <br>Např. <code>flex:auto</code> – roste, smršťuje se a rozměr je nastavený na <code>auto</code>.</p>
+    <p>Zkratka pro vlastnosti <code>flex-grow</code>, <code>flex-shrink</code> a <code>flex-basis</code>. <br>Např. <code>flex:auto</code> – roste, smršťuje se a rozměr je nastavený na <code>auto</code>.</p>
   </article>
 
 </div>

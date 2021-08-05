@@ -30,28 +30,67 @@ Hodnota [vlastnosti `display`](css-display.md)  `grid` nastaví „grid formatti
 
 Pod názvem vlastnosti se skrývá samostatný text s příklady.
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="reference-items">
 
-| Vlastnost                | Co umí?  |
-|--------------------------|----------|
-| [`grid-template-columns/rows`](css-grid-template-rows-columns.md) | Definice explicitní mřížky  <br> `grid-template-columns: 150px 1fr 1fr` |
-| [`grid-template-areas`](css-grid-template-areas.md)  | Pojmenování oblastí <br> `grid-template-areas: "first first"` |
-| [`grid-template`](css-grid-template.md)  | Zkratka pro definici explicitní mřížky <br> `grid-template: auto auto / 2fr 1fr` |
-| [`grid-auto-columns/rows`](css-grid-auto-rows-columns.md) | Definice implicitní mřížky <br> `grid-auto-rows: 1fr` |
-| [`grid-auto-flow`](css-grid-auto-flow.md)        | Způsob automatického umísťování do mřížky <br> `grid-auto-flow: column` |
-| [`grid`](css-grid-zkratka.md)        | Zkratka pro definici všeho <br> `grid: auto-flow 1fr / 100px` |
-| [`gap`](css-gap.md)        | Definice mezery mezi buňkami  <br> `gap: 1rem` |
+  <article role="article">
+    <h4 id="grid-template-columnsrows"><a href="css-grid-template-rows-columns.md"><code>grid-template-columns/rows</code></a></h4>
+    <p><a href="css-grid-template-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-rows-columns.png" alt="CSS vlastnost grid-template-columns/rows" /></a></p>
+    <p>Definice explicitní mřížky <br> <code>grid-template-columns: 150px 1fr 1fr</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="grid-template-areas"><a href="css-grid-template-areas.md"><code>grid-template-areas</code></a></h4>
+    <p><a href="css-grid-template-areas.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-areas.png" alt="CSS vlastnost grid-template-areas" /></a></p>
+    <p>Pojmenování oblastí <br> <code>grid-template-areas: "first first"</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="grid-template"><a href="css-grid-template.md"><code>grid-template</code></a></h4>
+    <p><a href="css-grid-template.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template.png" alt="CSS vlastnost grid-template" /></a></p>
+    <p>Zkratka pro definici explicitní mřížky <br> <code>grid-template: auto auto / 2fr 1fr</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="grid-auto-columnsrows"><a href="css-grid-auto-rows-columns.md"><code>grid-auto-columns/rows</code></a></h4>
+    <p><a href="css-grid-auto-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-rows-columns.png" alt="CSS vlastnost grid-auto-columns/rows" /></a></p>
+    <p>Definice implicitní mřížky <br> <code>grid-auto-rows: 1fr</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="grid-auto-flow"><a href="css-grid-auto-flow.md"><code>grid-auto-flow</code></a></h4>
+    <p><a href="css-grid-auto-flow.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-flow.png" alt="CSS vlastnost grid-auto-flow" /></a></p>
+    <p>Způsob automatického umísťování do mřížky <br> <code>grid-auto-flow: column</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="grid"><a href="css-grid-zkratka.md"><code>grid</code></a></h4>
+    <p><a href="css-grid-zkratka.md"><img src="../dist/images/small/vdlayout/schema-css-grid-zkratka.png" alt="CSS zkratka grid" /></a></p>
+    <p>Zkratka pro definici všeho <br> <code>grid: auto-flow 1fr / 100px</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="gap"><a href="css-gap.md"><code>gap</code></a></h4>
+    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.png" alt="CSS vlastnost gap" /></a></p>
+    <p>Definice mezery mezi buňkami <br> <code>gap: 1rem</code></p>
+  </article>
 
 </div>
 
 ### Umístění do mřížky {#vlastnosti-umisteni}
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="reference-items">
 
-| Vlastnost                | Co umí?  |
-|--------------------------|----------|
-| [`grid-column/row`](css-grid-row-column.md) | Umístění do explicitní mřížky <br> `grid-column: 2 / 3` |
-| [`grid-area`](css-grid-area.md)  | Umístění do pojmenované oblasti <br> `grid-area: first` |
+  <article role="article">
+    <h4 id="grid-columnrow"><a href="css-grid-row-column.md"><code>grid-column/row</code></a></h4>
+    <p><a href="css-grid-row-column.md"><img src="../dist/images/small/vdlayout/schema-css-grid-row-column.png" alt="CSS vlastnost grid-column/row" /></a></p>
+    <p>Umístění do explicitní mřížky <br> <code>grid-column: 2 / 3</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="grid-area"><a href="css-grid-area.md"><code>grid-area</code></a></h4>
+    <p><a href="css-grid-area.md"><img src="../dist/images/small/vdlayout/schema-css-grid-area.png" alt="CSS vlastnost grid-area" /></a></p>
+    <p>Umístění do pojmenované oblasti <br> <code>grid-area: first</code></p>
+  </article>
 
 </div>
 
@@ -59,16 +98,34 @@ Pod názvem vlastnosti se skrývá samostatný text s příklady.
 
 Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám zatím s odkazem na anglické zdroje:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="reference-items">
 
-| Vlastnost                | Co umí?  |
-|--------------------------|----------|
-| [jednotka `fr`](css-jednotka-fr.md) | Jednotka pro podíl na celku <br>  `grid-template-columns: 1fr 2fr` |
-| [funkce `repeat()`, `auto-fill` a `auto-fit` ](css-repeat.md)  | Funkce zkrácení opakujících se zápisů <br>  `grid-template-columns: repeat(4, 1fr)` |
-| [funkce `minmax()`](css-minmax.md)  | Omezení minima a maxima v rozměru <br>  `grid-template-columns: minmax(100px, 1fr)` |
-| [`masonry`](css-masonry.md)  | Masonry (zděný) layout <br>  `grid-template-rows: masonry` |
+  <article role="article">
+    <h4 id="jednotka-fr"><a href="css-jednotka-fr.md">jednotka <code>fr</code></a></h4>
+    <p><a href="css-jednotka-fr.md"><img src="../dist/images/small/vdlayout/schema-css-jednotka-fr.png" alt="CSS jednotka fr" /></a></p>
+    <p>Jednotka pro podíl na celku <br> <code>grid-template-columns: 1fr 2fr</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="funkce-repeat-auto-fill-a-auto-fit"><a href="css-repeat.md">funkce <code>repeat()</code>, <code>auto-fill</code> a <code>auto-fit</code></a></h4>
+    <p><a href="css-repeat.md"><img src="../dist/images/small/vdlayout/schema-css-repeat.png" alt="CSS funkce repeat()" /></a></p>
+    <p>Funkce zkrácení opakujících se zápisů <br> <code>grid-template-columns: repeat(4, 1fr)</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="funkce-minmax"><a href="css-minmax.md">funkce <code>minmax()</code></a></h4>
+    <p><a href="css-minmax.md"><img src="../dist/images/small/vdlayout/schema-css-minmax.png" alt="CSS funkce minmax()" /></a></p>
+    <p>Omezení minima a maxima v rozměru <br> <code>grid-template-columns: minmax(100px, 1fr)</code></p>
+  </article>
+
+  <article role="article">
+    <h4 id="masonry"><a href="css-masonry.md"><code>masonry</code></a></h4>
+    <p><a href="css-masonry.md"><img src="../dist/images/small/vdlayout/schema-css-masonry.png" alt="CSS masonry laoyut" /></a></p>
+    <p>Masonry (zděný) layout <br> <code>grid-template-rows: masonry</code></p>
+  </article>
 
 </div>
+
 
 ## Zarovnávání (CSS Box Alignment) {#css-box-alignment}
 
