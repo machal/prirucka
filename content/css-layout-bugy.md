@@ -130,7 +130,7 @@ Pokud by vás opravdu hodně zajímaly, podívejte se na tu svého času slavnou
 
 Více informací o podpoře je na Can I Use. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
-## Grid {#grid}
+## grid {#grid}
 
 V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů.
 
@@ -169,11 +169,11 @@ Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Explor
 
 </div>
 
-### Gridbugs, boty v mřížce {#gridbugs}
+### gridbugs, boty v mřížce {#gridbugs}
 
 Podobně jako první implementace flexboxu, také první napsané enginy pro vykreslování gridu byly v prohlížečích plné chyb.
 
-A tak se známá propagátorka moderních rozvržení v CSS, Rachel Andrew, nechala inspirovat stránkou Flexbugs a vytvořila svého času její obdobu pro mřížku. Vznikly Gridbugs. [github.com/rachelandrew/gridbugs](https://github.com/rachelandrew/gridbugs)
+A tak se známá propagátorka moderních rozvržení v CSS, Rachel Andrew, nechala inspirovat stránkou Flexbugs a vytvořila svého času její obdobu pro mřížku. Vznikly gridbugs. [github.com/rachelandrew/gridbugs](https://github.com/rachelandrew/gridbugs)
 
 Asi jste si všimli, že o té stránce píšu v minulém čase. Ke dni psaní zde vidím poslední commit ze září 2017. Podobně jako u flexboxu, také u gridu postupně prohlížeče chyby odstranily.
 

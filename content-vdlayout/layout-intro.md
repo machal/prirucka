@@ -52,7 +52,7 @@ Tady se proto nabízí spíše paralela s přijímacím hovorem na pracovní poz
 My se teď pokusíme na jednoduchých příkladech ukázat, co je který systém rozvržený zač. Ostatně takhle to budeme dělat v celé knížce.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-layout-intro-examples.png" width="1600" height="900" alt="Zadání příkladů pro Flex, Grid, Multicol">
+<img src="../dist/images/original/vdlayout/css-layout-intro-examples.png" width="1600" height="900" alt="Zadání příkladů pro Flex, grid, Multicol">
 <figcaption markdown="1">
 *Tři systémy a tři zadání pro příklad.*
 </figcaption>
@@ -117,7 +117,7 @@ Zájemce ještě posílám na zdrojové kódy na službě CodePen, což ostatně
 
 CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
-## Grid: příklad s kartou produktu
+## grid: příklad s kartou produktu
 
 V obrázku se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2:1. Mezery mezi prvky jsou opět v šířce `1rem`.
 

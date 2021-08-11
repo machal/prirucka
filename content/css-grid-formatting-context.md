@@ -48,9 +48,9 @@ Brrr! Raději pojďme od „floatů“ pryč. Začalo se mi dělat nevolno…
 
 ## Pseudoelementy `::first-line` and `::first-letter` u kontejnerů mřížky nefungují
 
-I tohle je naprosto logické. Tyto vlastnosti dávají smysl u typografických bloků. Grid je šéf přes layout, nikoliv psaný text.
+I tohle je naprosto logické. Tyto vlastnosti dávají smysl u typografických bloků. grid je šéf přes layout, nikoliv psaný text.
 
-Pokud byste chtěli vidět tohle všechno v akci, neváhejte se podívat na můj CodePen, ve kterém jsem se Grid pokusil rozbít všemi zde uvedenými způsoby. A byl jsem neúspěšný.
+Pokud byste chtěli vidět tohle všechno v akci, neváhejte se podívat na můj CodePen, ve kterém jsem se grid pokusil rozbít všemi zde uvedenými způsoby. A byl jsem neúspěšný.
 
 CodePen: [cdpn.io/e/GRoJmgN](https://codepen.io/machal/pen/GRoJmgN?editors=1100)
 

@@ -16,9 +16,9 @@ U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou m
 
 CodePen: [cdpn.io/e/eYZgOwL](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
-## Jednoduchý příklad s Gridem
+## Jednoduchý příklad s gridem
 
-V naší ukázce definujeme třísloupcový kontejner Gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `justify-items`.
+V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `justify-items`.
 
 CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
@@ -31,7 +31,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 ### Základní
 
 - `normal` (výchozí)  
-  Ve většině systémů layoutu, včetně Gridu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
+  Ve většině systémů layoutu, včetně gridu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
 - `auto`  
   Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`.
 - `stretch`  

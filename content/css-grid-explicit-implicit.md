@@ -1,27 +1,28 @@
 # CSS grid: Explicitní a implicitní mřížka
 
-Kromě výslovně uvedené explicitní mřížky existuje ještě implicitní mřížka.
-V naprosté většině v CSS gridu definujeme explicitní mřížku, předem uvedenou.
+Kromě výslovně uvedené explicitní mřížky existuje v CSS gridu ještě implicitní mřížka.
+
+V naprosté většině případů definujeme explicitní mřížku, tedy _předem uvedenou_.
 
 Může se nám ale stát, že položku umístíme na místo, kam explicitní mřížka nesahá. V takovém případě se nám mřížka automaticky rozšíří o implicitní část. Budete se divit, ale i tu můžeme předem nadefinovat.
 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit.png" width="1600" height="900" alt="Explicitní a implicitní CSS grid">
 <figcaption markdown="1">
-*Obrázek: Mřížka s explicitní (doslovně definovanou) a implicitní (automaticky definovanou) částí.*
+*Mřížka se zelenou explicitní (doslovně definovanou) a bílou implicitní (automaticky definovanou) částí.*
 </figcaption>
 </figure>
 
-Podívejme se, jaké vlastnosti obě mřížky definují:
+Podívejme se, pomocí kterých CSS vlastností můžeme obě mřížky definovat:
 
-- *Explicitní*, výslovně definovanou, lze nastavit vlastnostmi obsahujícími slovo `template`:  
-Jde konkrétně o vlastnosti `grid-template-*` – [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
-- *Implicitní*, která obvykle není předem definovaná k vykreslení. Lze ji nastavit vlastnosti obsahujícími slovo `auto`:  
-Jde o vlastností  `grid-auto-*` [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md).
+- *Explicitní mřížku*, výslovně definovanou, lze nastavit vlastnostmi obsahujícími slovo `template`:  
+Jde konkrétně o `grid-template-*` – [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
+- *Implicitní mřížku*, která obvykle není předem definovaná k vykreslení,  můžete nastavit vlastnostmi obsahujícími slovo `auto`:  
+Konkrétně uspějete s  `grid-auto-*` – [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md).
 
 ## Příklad s přidáním položky na novou řádku
 
-Ve naprosté většině případů mřížku definujeme jako explicitní. Vezměme třeba tento jednoduchoučný kód:
+Jak už jsem psal, v naprosté většině případů mřížku definujeme jako explicitní. Vezměme třeba tento jednoduchoučný kód:
 
 ```html
 <div class="container">
@@ -55,9 +56,9 @@ Přidá se jako čtvrtá položka vedle třetí? Co myslíte?
 
 Samozřejmě, že ne. Vždyť jsme prohlížeči výslovně (explicitně) řekli, že chceme třísloupcový layout.
 
-V takovém případě prohlížeče layout zalomí a přidají nový řádek. Jenže počkat – vždyť jsme žádné řádky nedefinovali! Tohle je přesně místo, kde můžeme seznámit s implicitním gridem.
+V takovém případě prohlížeče layout zalomí a přidají nový řádek. Ale počkat – vždyť jsme žádné řádky nedefinovali! Tohle je přesně místo v textu, kde na scénu přichází implicitní grid.
 
-Implicitní layout definují vlastnosti [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md), které mají výchozí hodnotu `auto`. To neznamená nic jiného než: „Přidávej směle nové řádky (nebo sloupce, pokud má layout opačný směr) a nic dalšího neřeš, nazdar.“
+Už víte, že implicitní layout definují vlastnosti [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md), které mají výchozí hodnotu `auto`. To neznamená nic jiného než: „Přidávej směle nové řádky (nebo sloupce, pokud má layout opačný směr) a nic dalšího neřeš, nazdar.“
 
 Pokud bychom si ale přáli jiné parametry pro ty potenciální nové prvky mřížky, můžeme to prostě definovat:
 
@@ -72,7 +73,7 @@ Mřížce tím nepřikazujeme, aby byla rovnou dvouřádková. Říkáme zhruba 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-1.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 1. příklad">
 <figcaption markdown="1">
-*Obrázek: A helemese, na druhém řádku je položka. Ta se zformátuje podle automatického, implicitního gridu.*
+*A helemese, na druhém řádku je položka. Ta se zformátuje podle automatického, implicitního gridu.*
 </figcaption>
 </figure>
 
@@ -104,7 +105,7 @@ Prohlížeč si řekne: „Hmm… grid! Ovšem pozor – nemá deklaraceci layou
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2a.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 2. příklad">
 <figcaption markdown="1">
-*Obrázek: Tady žádný grid není, co jiného bychom měli čekat?*
+*Tady žádný grid není, co jiného bychom měli čekat?*
 </figcaption>
 </figure>
 
@@ -117,14 +118,14 @@ Jenže přesně na to vývojář čeká a prohlížeč jde zaskočit přidáním
 }
 ```
 
-Prohlížeč: „No toto! Máme tam přeci jen tři sloupce a jeden řádek. A ty mi tady něco umísťuješ do pátého slupce a druhého řádku!“
+Prohlížeč: „No toto! Máme tam přeci jen tři sloupce a jeden řádek. A ty mi tady něco umísťuješ do pátého sloupce a druhého řádku!“
 
 Naštěstí si ale náš milý prohlížeč vzpomene, že kromě explicitního mřížky jej učili ještě implicitní. Tedy, že tam, kde chybí explicitní buňky, může vyskládat ty implicitní:
 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2b.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - příklad">
 <figcaption markdown="1">
-*Obrázek: Hele, grid!*
+*Hele, grid!*
 </figcaption>
 </figure>
 

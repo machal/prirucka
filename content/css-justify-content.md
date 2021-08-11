@@ -4,7 +4,7 @@ Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor m
 
 ![Vlastnost justify-content](../dist/images/original/vdlayout/css-justify-content-schema.png)
 
-Ve specifikaci se počítá s použitím pro flexbox, Grid, ale také vícesloupcový layout.
+Ve specifikaci se počítá s použitím pro flexbox, grid, ale také vícesloupcový layout.
 
 <!-- AdSnippet -->
 
@@ -16,7 +16,7 @@ Po pořádek zmiňme, že tahle vlastnost nemusí být pro flexbox užitečná, 
 
 ## Jednoduchý příklad
 
-V naší ukázce definujeme třísloupcový kontejner Gridu. Jeho položky jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
+V naší ukázce definujeme třísloupcový kontejner gridu. Jeho položky jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
 
 CodePen: [cdpn.io/e/qBZmvEy?editors=1100](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
 
@@ -78,7 +78,7 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-V layoutech postavených na Gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
+V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
 
 Více na [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
 

@@ -29,7 +29,7 @@ Vysvětleme:
 
 - `display: grid` – „zapíná“ mřížkové zobrazení. Možná je také řádková hodnota `inline-grid`.
 - `grid-template-columns: 50% 50%` – definujeme dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
-- `grid-template-rows: auto auto` – definujeme dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu. Grid sjednocuje výšky položek v každém, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
+- `grid-template-rows: auto auto` – definujeme dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu. grid sjednocuje výšky položek v každém, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
 
 CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
 

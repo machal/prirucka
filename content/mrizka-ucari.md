@@ -1,10 +1,10 @@
-# Mřížka účaří (Baseline Grid)
+# Mřížka účaří (Baseline grid)
 
 Layout vysázený v pravidelné vodorovné mřížce asi znáte, protože jej velmi zpopularizoval framework Bootstrap. Mřížka účaří je vlastně totéž ve svislém směru. Je to svislá mřížka, jinak též typografický rytmus.
 
 Mezi webaři je často diskutována a já se vám tady bez mučení přiznám, že patřím do skupiny, která její použití považuje za zbytečnou komplikaci.
 
-![Baseline Grid](../dist/images/original/baseline-grid.jpg)
+![Baseline grid](../dist/images/original/baseline-grid.jpg)
 
 *Mřížku účaří na obrázku vidíte jako šedivé vodorovné čáry.  Zpopularizoval ji (na tehdejší dobu skvělý) framework pro tvorbu layoutu Blueprint. To ještě webdesign nebyl tak daleko od tištěných médií jako dnes. [blueprintcss.org](http://blueprintcss.org/)*
 

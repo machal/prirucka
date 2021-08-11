@@ -4,7 +4,7 @@ Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak té�
 
 ![Vlastnost justify-self](../dist/images/original/vdlayout/css-justify-self-schema.png)
 
-Je dobré zmínit, že uvnitř buněk tabulek a ve flexboxu je vlastnost `justify-self` ignorována. V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
+Je dobré zmínit, že uvnitř buněk tabulek a ve flexboxu je vlastnost `justify-self` ignorována. V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
 <!-- AdSnippet -->
 
@@ -18,7 +18,7 @@ Hodnota `auto` u vnějších okrajů má ostatně před touto `justify-self` př
 
 ## Jednoduchý příklad
 
-V naší ukázce definujeme třísloupcový kontejner Gridu.
+V naší ukázce definujeme třísloupcový kontejner gridu.
 
 CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
 

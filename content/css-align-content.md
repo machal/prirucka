@@ -4,7 +4,7 @@ Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi po
 
 ![Vlastnost align-content](../dist/images/original/vdlayout/css-align-content-schema.png)
 
-Ve specifikaci se počítá s použitím pro flexbox, Grid, vícesloupcový layout, ale taky pro blokové prvky.
+Ve specifikaci se počítá s použitím pro flexbox, grid, vícesloupcový layout, ale taky pro blokové prvky.
 
 <!-- AdSnippet -->
 
@@ -16,7 +16,7 @@ Tato vlastnost nemá pochopitelně vliv na jednořádkové flexboxové kontejner
 
 ## Jednoduchý příklad
 
-V naší ukázce definujeme třísloupcový kontejner Gridu. Jeho položky jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
+V naší ukázce definujeme třísloupcový kontejner gridu. Jeho položky jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
 
 CodePen: [cdpn.io/e/ZEWKPvr?editors=1100](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
 
@@ -83,7 +83,7 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-V layoutech postavených na Gridu je u základních hodnot vlastnost plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
+V layoutech postavených na gridu je u základních hodnot vlastnost plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
 
 Více na [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
 

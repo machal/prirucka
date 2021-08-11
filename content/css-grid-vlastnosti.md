@@ -1,6 +1,6 @@
 # Principy a vlastnosti CSS gridu
 
-CSS grid má mnoho skvělých vlastností. Ne všechny jsou unikátní, některé jste totiž mohli vidět už u flexboxu, ale Grid jejich seznam dále rozšiřuje.
+CSS grid má mnoho skvělých vlastností. Ne všechny jsou unikátní, některé jste totiž mohli vidět už u flexboxu, ale grid jejich seznam dále rozšiřuje.
 
 Podívejme se na ně prozatím velmi stručně, ale časem se k nim ještě vrátíme.
 
@@ -42,7 +42,7 @@ Už od flexboxu asi víte, že možnosti zarovnávání položek layoutu jsou vy
 
 Vlastnosti jako `justify-content`, `align-items` nebo `align-self` přinesly hotovou revoluci do oblasti, která se skoro celou historii kaskádových stylů obcházela různými nehezkými hacky.
 
-Stejné možnosti máme u Gridu, navíc kombinované s dalšími úžasnými vlastnostmi Gridu.
+Stejné možnosti máme u gridu, navíc kombinované s dalšími úžasnými vlastnostmi gridu.
 
 <!-- TODO obrázek až budu mít hotovou tuto podkapitolu -->
 
@@ -50,7 +50,7 @@ Stejné možnosti máme u Gridu, navíc kombinované s dalšími úžasnými vla
 
 Frontendové kodérky a kodéři museli vzhledu často obětovat strukturu HTML, což přinášelo komplikace v oblasti přístupnosti stránky například čtečkám pro nevidomé nebo robotům vyhledávačů.
 
-Když vynecháme nepěkné triky s pozicováním, slibně zde vstupil flexbox. Co je to ale oproti Gridu!
+Když vynecháme nepěkné triky s pozicováním, slibně zde vstupil flexbox. Co je to ale oproti gridu!
 
 * [Vlastnost `order`](css-order.md), která dovoluje změnit pořadí prvků v prohlížeči, už znáte z flexboxu. Ano, tady ji můžete použíž taky.
 * Pomocí [vlastnosti `grid-area`](css-grid-area.md) budete schopní umístit jakéhokoliv potomka na jakékoliv místo mřížky. A zahodit přitom svěrací kazajku struktury HTML.
@@ -60,7 +60,7 @@ Když vynecháme nepěkné triky s pozicováním, slibně zde vstupil flexbox. C
 
 ## 6) Automatické umístění položek do mřížky
 
-Díky vlastnosti známé jako „auto-placement“ není nutné položkám Gridu definovat, do kterých buněk mřížky je chceme umístit.
+Díky vlastnosti známé jako „auto-placement“ není nutné položkám gridu definovat, do kterých buněk mřížky je chceme umístit.
 
 Pokud totiž není definováno jinak, každý DOM uzel, který je přímým potomkem kontejneru mřížky, se umístí do jedné buňky.
 
@@ -88,4 +88,4 @@ Otevírá to další možnosti a prostor pro tvorbu precizně definovaných layo
 
 <!-- TODO CodePen a obrázek až budu mít -->
 
-Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako podmřížka (subgrid) nebo `display:contents`. I na ty se podíváme, když dojde na budoucnost Gridu.
+Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako podmřížka (subgrid) nebo `display:contents`. I na ty se podíváme, když dojde na budoucnost gridu.

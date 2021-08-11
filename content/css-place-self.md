@@ -22,7 +22,7 @@ Pokud není druhá hodnota přítomná, použije se první pro oba směry, ale j
 
 ## Jednoduchý příklad
 
-V naší ukázce definujeme třísloupcový kontejner Gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který zařídí vlastnost `place-self` na třetí položce:
+V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který zařídí vlastnost `place-self` na třetí položce:
 
 ```css
 .item--3 {

@@ -129,7 +129,7 @@ Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-firefox.png" width="1600" height="450" alt="CSS grid Inspector ve Firefoxu">
 <figcaption markdown="1">
-*Obrázek: Grid v negližé, to je „CSS grid Inspector“ ve Firefoxu.*
+*Obrázek: grid v negližé, to je „CSS grid Inspector“ ve Firefoxu.*
 </figcaption>
 </figure>
 

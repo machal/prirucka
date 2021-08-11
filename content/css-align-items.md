@@ -16,7 +16,7 @@ Tuhle vlastnost není možné aplikovat na blokové elementy nebo na buňky tabu
 
 ## Jednoduchý příklad
 
-V naší ukázce definujeme třísloupcový kontejner Gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `align-items`.
+V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `align-items`.
 
 CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?editors=1100)
 
@@ -29,7 +29,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 ### Základní
 
 - `normal` (výchozí)  
-  Ve většině systémů layoutu, včetně Gridu nebo flexboxu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
+  Ve většině systémů layoutu, včetně gridu nebo flexboxu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
 - `stretch`  
   Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
@@ -69,7 +69,7 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 Stav k srpnu 2020:
 
 - V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvojslovné pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
-- V rámci rozvržení pomocí Gridu tuto vlastnost nepodporuje jen IE11, ale tam by podporu této vlastnosti měl nahrazovat [Autoprefixer](autoprefixer.md).
+- V rámci rozvržení pomocí gridu tuto vlastnost nepodporuje jen IE11, ale tam by podporu této vlastnosti měl nahrazovat [Autoprefixer](autoprefixer.md).
 
 Pro více informací se podívejte na [caniuse.com/align-items](https://caniuse.com/#search=align-items).
 

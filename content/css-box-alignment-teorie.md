@@ -310,16 +310,16 @@ Jako hodnoty bere vlastnost `gap` všechny možné délkové jednotky a také pr
 
 ## Podpora v prohlížečích {#podpora}
 
-Na úrovni celé této velké specifikace je těžké mluvit o podpoře či nepodpoře. Různé prohlížeče mohou nepodporovat některé vlastnosti, některé mohou nepodporovat zase určité hodnoty nebo jejich kombinaci s různými systémy rozvržení, jako je Grid, flexbox nebo vícesloupcový layout.
+Na úrovni celé této velké specifikace je těžké mluvit o podpoře či nepodpoře. Různé prohlížeče mohou nepodporovat některé vlastnosti, některé mohou nepodporovat zase určité hodnoty nebo jejich kombinaci s různými systémy rozvržení, jako je grid, flexbox nebo vícesloupcový layout.
 
 Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zaměřme na konkrétní zásadnější nedostatky v podpoře, jež mají slabou podporu.
 
-- Internet Explorer 11 – pokud ještě musíte podporovat tento prehistorický prohlížeč, je třeba vědět, že vlastnosti pro zarovnání umí jen v kombinaci s flexboxem, nikoliv Gridem.
+- Internet Explorer 11 – pokud ještě musíte podporovat tento prehistorický prohlížeč, je třeba vědět, že vlastnosti pro zarovnání umí jen v kombinaci s flexboxem, nikoliv gridem.
 - Zkratky jako `place-self` neumí IE11, ale zatím bohužel také Safari, což je daleko nepříjemnější. Na druhou stranu, zkratku `place-content` Safari ovládá, což tuto vlastnost činí použitelnou na většině moderních projektů.
-- [Vlastnosti `gap`](css-gap.md) v Grid layoutu umí všechny prohlížeče, kromě IE11, ale v kombinaci s jinými systémy rozvržení je to daleko složitější.
+- [Vlastnosti `gap`](css-gap.md) v grid layoutu umí všechny prohlížeče, kromě IE11, ale v kombinaci s jinými systémy rozvržení je to daleko složitější.
 - Vlastnost `overflow-position` v době psaní textu neumí žádný prohlížeč.
 
-Nenechte se ale odradit, toto jsou jen malé věci. Celková podpora zarovnávání v Gridu a flexboxu je vynikající a ty nejužitečnější vlastnosti jsou plně podporovány.
+Nenechte se ale odradit, toto jsou jen malé věci. Celková podpora zarovnávání v gridu a flexboxu je vynikající a ty nejužitečnější vlastnosti jsou plně podporovány.
 
 ## Odkazy pro další studium {#odkazy}
 

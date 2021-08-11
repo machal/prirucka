@@ -87,7 +87,7 @@ Pak už jen říkáme, který prvek z DOMu kam patří:
 }
 ```
 
-Asi se hodí připomenout i jinou milou věc: Gridu už pak moc nezáleží, kde je onen `.head` umístěný v HTML.
+Asi se hodí připomenout i jinou milou věc: gridu už pak moc nezáleží, kde je onen `.head` umístěný v HTML.
 
 A je hotovo:
 

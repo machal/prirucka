@@ -16,7 +16,7 @@ Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř konte
 
 <!-- AdSnippet -->
 
-Ve specifikaci se počítá s použitím pro Grid, vícesloupcový layout, ale také flexbox, ve kterém ovšem může být využití vlastnosti [`justify-content`](css-justify-content.md) vcelku omezené.
+Ve specifikaci se počítá s použitím pro grid, vícesloupcový layout, ale také flexbox, ve kterém ovšem může být využití vlastnosti [`justify-content`](css-justify-content.md) vcelku omezené.
 
 Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
 
@@ -26,7 +26,7 @@ Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě 
 
 ## Jednoduchý příklad
 
-V ukázce si hrajeme s dvousloupcovým kontejnerem Gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `place-content`. Využíváme zde tuto hodnotu:
+V ukázce si hrajeme s dvousloupcovým kontejnerem gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `place-content`. Využíváme zde tuto hodnotu:
 
 ```css
 .container {

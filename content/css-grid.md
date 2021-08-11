@@ -227,23 +227,23 @@ Po představení všech vlastností a rychlém příkladu bych se rád pozastavi
 - Webařským veteránům lze CSS grid přiblížit jako tabulkový layout, jen daleko lépe udělaný a zbavený nevýhod.
 - Těm, kteří znají Bootstrap a podobné frameworky, lze grid podat jako zdokonalený Bootstrap grid vestavěný v prohlížečích.
 
-Všechno by to ale byla pravda jen částečně. Grid je daleko silnější než uvedené příklady.
+Všechno by to ale byla pravda jen částečně. grid je daleko silnější než uvedené příklady.
 
 ## Jak se grid liší od flexboxu? {#flexbox}
 
 Předně chci zdůraznit, že grid nenahrazuje [flexbox](css-flexbox.md). Potřebujete obojí. Naučte se obojí. Ale nějaké rozdíly zde jsou:
 
-- Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
-- Grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.
-- Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu. <!-- Více na [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/). -->
-- Grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje má funkcionalitu jako je automatický layout, funkce jako `minmax()`, `repeat()` nebo klíčová slova jako `auto-fill`. <!-- Píšou to na [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/). -->
+- grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
+- grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.
+- grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu. <!-- Více na [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/). -->
+- grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje má funkcionalitu jako je automatický layout, funkce jako `minmax()`, `repeat()` nebo klíčová slova jako `auto-fill`. <!-- Píšou to na [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/). -->
 
 Z mého pohledu má grid daleko širší možnosti stylování než flexboxem. Můžeme v něm dělat i dost neortodoxní layouty.
 
 ## Zásadní plusy a minusy {#plusy-minusy}
 
 - Hlavní výhoda: je stejná jako u flexboxu - jde o systém vymyšlený pro tvorbu layoutu. Zbavíme se hacků a desítek až stovek řádků zbytečného CSS i HTML kódu.
-- Hlavní nevýhoda: Podpora zatím není plná: IE 11 podporuje jen starší verzi Gridu, která zdaleka neodpovídá variantě podporované v moderních prohlížečích. [caniuse.com/grid](http://caniuse.com/#search=grid)
+- Hlavní nevýhoda: Podpora zatím není plná: IE 11 podporuje jen starší verzi gridu, která zdaleka neodpovídá variantě podporované v moderních prohlížečích. [caniuse.com/grid](http://caniuse.com/#search=grid)
 
 <div class="web-only" markdown="1">
 
@@ -267,18 +267,18 @@ O podpoře moderních systémů layoutu v prohlížečích píšeme [ve zvlášt
 
 Horší je to ve stařičkém prohlížeči od Microsoftu.
 
-### Grid v Internet Exploreru 11 {#ie11}
+### grid v Internet Exploreru 11 {#ie11}
 
-Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností Gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, mohli bychom pokračovat.
+Explorer a starší Edge podporují dnes už neplatnou specifikaci gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, mohli bychom pokračovat.
 
-Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení Gridu pro IE](css-grid-msie.md) jemu.
+Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení gridu pro IE](css-grid-msie.md) jemu.
 
 <div class="web-only related" markdown="1">
 - [CSS grid v IE: Oblasti a mezery](css-grid-msie.md)
 - [CSS grid v IE: Automatické umístění](css-grid-msie-autoplacement.md)
 </div>
 
-Existence „explorerového“ Gridu nám ale v mnoha případech umožní mřížku vcelku bez problémů používat i bez Autoprefixeru. Jen je potřeba se kromě základních vlastností dnešního Gridu naučit i ten starší.
+Existence „explorerového“ gridu nám ale v mnoha případech umožní mřížku vcelku bez problémů používat i bez Autoprefixeru. Jen je potřeba se kromě základních vlastností dnešního gridu naučit i ten starší.
 
 <div class="web-only" markdown="1">
 
@@ -292,7 +292,7 @@ Podívejte se na tyto zdroje:
 - Detailní vlastnosti pak studujte na [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) nebo [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/).
 - Specifikace [CSS grid 1](https://www.w3.org/TR/css-grid-1/).
 
-Kam pokračovat na Vzhůru dolů? Běžte se podívat ještě na [3 příklady použití Gridu](css-grid-inspirace.md) i s vysvětlením v kódu.
+Kam pokračovat na Vzhůru dolů? Běžte se podívat ještě na [3 příklady použití gridu](css-grid-inspirace.md) i s vysvětlením v kódu.
 
 </div>
 

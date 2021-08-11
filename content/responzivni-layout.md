@@ -43,9 +43,9 @@ Pomocí [Media Queries](css3-media-queries.md), které už známe, pak layout na
 
 Flexbox je plný užitečných vlastností, ale kvůli tomu relativně složitý. Pro jeho studium doporučuji buď jednodušší online příručku na Vzhůru dolů, nebo svůj e-book „Vzhůru do CSS3“, kde jej podrobně vysvětluji i s příklady.  [vrdl.cz/p/css3-flexbox](https://www.vzhurudolu.cz/prirucka/css3-flexbox) a [vrdl.cz/ebook](https://www.vzhurudolu.cz/ebook)
 
-## Brzy už i Grid Layout
+## Brzy už i grid Layout
 
-Flexbox je velmi mocná technologie pro jednosměrný typ layoutu. Pokud ale potřebujeme rozvržení po vodorovné i svislé ose, s flexboxem se pracuje hůře. Pro ty účely nově připravilo konsorcium W3.org koncept rozvržení do mřížky, Grid Layout. 
+Flexbox je velmi mocná technologie pro jednosměrný typ layoutu. Pokud ale potřebujeme rozvržení po vodorovné i svislé ose, s flexboxem se pracuje hůře. Pro ty účely nově připravilo konsorcium W3.org koncept rozvržení do mřížky, grid Layout. 
 
 V době vydání knihy už jej některé prohlížeče podporují ve svých veřejných verzích. Na implementaci „gridu“ ale pracují prohlížeče všechny, takže jej už brzy budeme moci začít používat.
 

@@ -135,7 +135,7 @@ Má pravdu. Jeho test je postavený i na svou dobu na silně zpomalené rychlost
 Nicméně, je nezpochybnitelný fakt, že flexbox i grid jsou vykreslovány zcela jiným způsobem, takže připomenu, co už jsem psal:
 
 - Flexbox se vykresluje od obsahu až k layoutu. Prohlížeč nejprve musí znát obsah, spočítat jeho rozměry a pak teprve vykreslit layout.
-- Grid prohlížeče renderují tak, jak byste očekávali – nejprve layout, pak teprve obsah. Layout je proto vždy pevný jako beton.
+- grid prohlížeče renderují tak, jak byste očekávali – nejprve layout, pak teprve obsah. Layout je proto vždy pevný jako beton.
 
 Zcela konkrétně to popsal Bohumil Jahoda, autor skvělého JeČas.cz, kterého zde prostě a jednoduše ocituji:
 

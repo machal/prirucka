@@ -64,7 +64,7 @@ Prvním frameworkem, který jsem v té době pro tyto účely využíval, byl Bl
 
 V té době šlo o zjevení. Dodnes si dobře vybavuji radost z krásných typografických principů, ale také z výrazně rychlejšího psaní kódu, protože jsem nemusel tak často přepínat mezi HTML a CSS.
 
-Následovaly frameworky jako 960 Grid System, YUI Grids, YAML… a v roce 2011 Twitter představil dosud nejkomplexnější knihovnu pro tvorbu uživatelských rozhraní – Bootstrap.
+Následovaly frameworky jako 960 grid System, YUI grids, YAML… a v roce 2011 Twitter představil dosud nejkomplexnější knihovnu pro tvorbu uživatelských rozhraní – Bootstrap.
 
 ### Éra Bootstrapu
 

@@ -2,7 +2,7 @@
 
 Pojďme se spolu podívat na nový systém pro tvorbu rozvržení stránky v chystané verzi Bootstrapu. Pořádně do hloubky. 
 
-Ten [flexbox](css-flexbox.md)! Grid systém nového Bootstrapu je na něm postavený a dost to pomáhá. Evolučně ale vychází z předchozí verze, takže tutoriál vlastně využijete i vy, trojkaři. Ve čtyřce je možné stáhnout CSS soubor s gridem samostatně, což je další plus. 
+Ten [flexbox](css-flexbox.md)! grid systém nového Bootstrapu je na něm postavený a dost to pomáhá. Evolučně ale vychází z předchozí verze, takže tutoriál vlastně využijete i vy, trojkaři. Ve čtyřce je možné stáhnout CSS soubor s gridem samostatně, což je další plus. 
 
 Ano, Bootstrap 4 je stále v alfa verzi. Nicméně, změny grid systému [chystané do první bety](https://github.com/twbs/bootstrap/issues/21568) jsou jen malinké, takže si troufnu napsat, že tahle stránka zůstane beze změn i po vydání betaverze a jednou i verze finální. Samotný grid systém bych se prostě už nebál používat.
 

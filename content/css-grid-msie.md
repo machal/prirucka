@@ -6,7 +6,7 @@ Problém to ale v realitě zase tak moc není, protože u většiny projektů u�
 
 A pokud Explorer podporovat musíte, vězte, že nějakou (a ne úplně malou podporu) gridu má. To je jedna věc.
 
-Druhá věc je, že tu podporu Exploreru můžete rozšířit pomocí chytrého hacku. V tomto textu se totiž budeme zabývat automatizovaným řešením pro zlepšení podpory Gridu pomocí nástroje [Autoprefixer](autoprefixer.md).
+Druhá věc je, že tu podporu Exploreru můžete rozšířit pomocí chytrého hacku. V tomto textu se totiž budeme zabývat automatizovaným řešením pro zlepšení podpory gridu pomocí nástroje [Autoprefixer](autoprefixer.md).
 
 <p class="video">
 Video: <a href="https://www.youtube.com/watch?v=JjmXOB01Yq0">CSS grid v Internet Exploreru</a> ~ Základy a krátké demo podle obsahu článku.
@@ -98,7 +98,7 @@ Nejprve rodič layoutu:
 
 Následuje samozřejmě výše uvedený kód pro moderní prohlížeče. Ten pro zjednodušení vynechávám. Opět ale oba řádky vysvětlím:
 
-- `display: -ms-grid` – prefixovaný zapínač Gridu v Exploreru.
+- `display: -ms-grid` – prefixovaný zapínač gridu v Exploreru.
 - `-ms-grid-columns: 1fr 0.5em 3fr 0.5em 1fr` – magie. Autoprefixer spojil definici mřížky s definicí mezer (`grid-column-gap`), abychom ty (sakramentsky návykové) díry v layoutu mohli využívat i v Exploreru, který žádnou z „gap vlastností“ nepodporuje.
 
 Kód prvků layoutu, jež Autoprefixer vyrobí pro potřeby Exploreru, vypadá takhle:
@@ -129,7 +129,7 @@ Demo jsme snad rozebrali do posledního kamínku. Tady je ještě v celé kráse
 
 ## Co Autoprefixer umí? {#autoprefixer-vlastnosti}
 
-Následuje sumář aktuálně podporovaných a nepodporovaných vlastností Gridu.
+Následuje sumář aktuálně podporovaných a nepodporovaných vlastností gridu.
 
 Dobrá zpráva zní, že těch druhých je poměrně málo.
 
@@ -242,7 +242,7 @@ I když IE [funkci `repeat()`](css-repeat.md) zvládá, klíčová slova `auto-f
 - *Vyberte si: Buď autoplacement nebo manuální umístění v gridu*  
 V moderních prohlížečích lze obojí kombinovat, v IE bohužel ne. Buď tedy budete všechny prvky gridu umísťovat ručně (použijte vlastnost `grid-template-areas` v definici gridu) nebo automaticky (bez `*-areas`).
 - *Pozor na pseudoelementy*  
-`::before` a `::after` uvnitř Gridu vám v IE rozbijí mřížku, to se vsaďte.
+`::before` a `::after` uvnitř gridu vám v IE rozbijí mřížku, to se vsaďte.
 - *V Media Qeuries nelze změnit jen grid-gap*  
 Namísto toho je Autoprefixeru potřeba znovu deklarovat explicitní mřížku pomocí vlastností `grid-template-*`.
 
@@ -256,7 +256,7 @@ Potřebujete tyto suroviny:
 Gulp, Grunt, skripty v NPM nebo podobné nástroje, které umí využít Autoprefixer.
 - *Zapnout podporu IE11*  
 V Browserslist, seznamu podporovaných prohlížečů, je nutné specifikovat také IE 11, případně i desátou verzi – např. takto `> 1%, IE 11, IE 10`.
-- *Zapnout Grid a auto-umístění*  
+- *Zapnout grid a auto-umístění*  
 Zavolat Autoprefixer s parametrem `grid: 'autoplace'`, který zařídí podporu právě pro automatické umístění. Alternativa jsou řídící komentáře přímo v CSS: `/* autoprefixer grid: autoplace */`.
 
 Takto může vypadat konfigurace v automatizačním nástroji Gulpu:

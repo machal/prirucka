@@ -45,5 +45,5 @@ Vybranou variantu pak musím ověřit ve světě, ve kterém komponenta bude ž�
 - Jako průvodce pro detailnější zkoumání si zvolte Michala Maňáka a jeho článek „Začněte efektivně navrhovat produkty díky skicování“.  [vrdl.in/8yd6f](http://www.manakmichal.cz/blog/user-experience/zacnete-efektivne-navrhovat-produkty-diky-skicovani/)
 - Styl a úroveň věrnosti skic jsou volitelné. Jak moc se mohou lišit skici designérů v rámci jedné firmy, hezky ukazuje článek „The different sketch styles of the designers at 37signals“ od Jasona Frieda. [vrdl.in/pmuio](https://signalvnoise.com/posts/1880-the-different-sketch-styles-of-the-designers-at-37signals)
 - Předtištěné šablony mobilních zařízení od SneakPeekIt. [sneakpeekit.com](http://sneakpeekit.com/)
-- Pěkný je také Gridzzly, nástroj Rostislava Blahy, který vám umožní tisk požadované mřížky na čistý papír. [gridzzly.com](http://gridzzly.com/)
+- Pěkný je také gridzzly, nástroj Rostislava Blahy, který vám umožní tisk požadované mřížky na čistý papír. [gridzzly.com](http://gridzzly.com/)
 

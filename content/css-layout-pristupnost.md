@@ -165,7 +165,7 @@ CodePen: [cdnp.io/e/zYqeXeE](https://codepen.io/machal/pen/zYqeXeE)
 
 ## Pomůže nám vůbec něco? Ani ne {#neco}
 
-Odlišení pořadí navigačního od vizuálního je možné ve flexboxu a teď i Gridu mnoha různými způsoby, tedy nejen vlastností `order`.
+Odlišení pořadí navigačního od vizuálního je možné ve flexboxu a teď i gridu mnoha různými způsoby, tedy nejen vlastností `order`.
 
 Bohužel se to zdá jako aktuálně nevyřešitelný problém, protože jej myslím nijak konkrétně neřeší specifikace, natož pak prohlížeče.
 
@@ -174,7 +174,7 @@ Pošlu vás na další zdroje, ale nic veselého se tam nedozvíte:
 - Varování ve specifikaci flexboxu. [w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/#order-property)
 - Totéž ve specifikaci CSS gridu. [drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/#order-accessibility)
 - Adrian Roselli: „Source Order Matters“. [adrianroselli.com](https://adrianroselli.com/2015/09/source-order-matters.html)
-- Manuel Matuzovic: „The Dark Side of the Grid (Part 2)“. [matuzo.at](https://www.matuzo.at/blog/the-dark-side-of-the-grid-part-2/)
+- Manuel Matuzovic: „The Dark Side of the grid (Part 2)“. [matuzo.at](https://www.matuzo.at/blog/the-dark-side-of-the-grid-part-2/)
 - Rachel Andrew: „Grid, content re-ordering and accessibility“. [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility)
 - Léonie Watson: „Flexbox & the keyboard navigation disconnect“. [tink.uk](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
 

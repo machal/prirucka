@@ -4,7 +4,7 @@ Vlastnost `align-self` určuje zarovnání položky na příčné ose (jinak té
 
 ![Vlastnost align-self](../dist/images/original/vdlayout/css-align-self-schema.png)
 
-V Grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky. Ve rozvržení tvořeném flexboxem jde o zarovnání položky na v celém prostoru příčné osy.
+V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky. Ve rozvržení tvořeném flexboxem jde o zarovnání položky na v celém prostoru příčné osy.
 
 Hodnota `auto` u vlastnosti `margin` má ostatně před `align-self` přednost ve všech systémech rozvržení v CSS.
 
@@ -18,7 +18,7 @@ Vlastnost `align-self` je určená pro flexbox, grid, absolutně pozicované prv
 
 ## Jednoduché příklady
 
-V první ukázce definujeme třísloupcový kontejner Gridu.
+V první ukázce definujeme třísloupcový kontejner gridu.
 
 CodePen: [cdpn.io/e/zYqwKer?editors=1100](https://codepen.io/machal/pen/zYqwKer?editors=1100)
 
@@ -93,7 +93,7 @@ Pokud vím, v žádném prohlížeči toto zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro Grid layout. V [Internet Exploreru 11](msie.md) je ovšem nutné použít prefix `-ms-align-self`, což ale doplní [Autoprefixer](autoprefixer.md).
+Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro grid layout. V [Internet Exploreru 11](msie.md) je ovšem nutné použít prefix `-ms-align-self`, což ale doplní [Autoprefixer](autoprefixer.md).
 
 Více na [caniuse.com/align-self](https://caniuse.com/#search=align-self).
 
