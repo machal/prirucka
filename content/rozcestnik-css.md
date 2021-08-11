@@ -60,6 +60,7 @@
 - [Jednotky](jednotky.md) + [CSS3 jednotky](css3-jednotky.md)
 - [object-fit a object-position](css-object-fit-position.md)
 - [calc(): výpočty v CSS](css3-calc.md)
+- [Funkce min(), max(), clamp()](css-min-max-clamp.md)
 - [RGBa barva](css3-rgba.md)
 - [Selektory v CSS](css3-selektory.md)
 - [Box Reflection: odlesk prvku](css3-box-reflection.md)

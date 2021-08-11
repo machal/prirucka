@@ -19,6 +19,10 @@ Možných hodnot je více:
 
 V tomhle textu řešíme vlastnosti pro nastavení rozměrů stop mřížky podle vlastních (obsahových nebo v angličtině *intrinsic*) velikostí prvků uvnitř.
 
+<div class="web-only related" markdown="1">
+- [CSS funkce `min()`, `max()` a `clamp()`](css-min-max-clamp.md)
+</div>
+
 Je dobré si uvědomit, že se to liší od nastavení rozměrů zvenčí – pomocí fixních [jednotek](jednotky.md) (`px`, `rem`, …) nebo podílové jednotky `fr`. Ty totiž obsah uvnitř příliš nezajímá.
 
 Projďeme si teď vše podrobně na příkladech.
