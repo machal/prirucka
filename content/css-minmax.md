@@ -142,7 +142,7 @@ Musíme zmínit, že pouze stopy mřížky s rozměry nastavenými na `auto` je
 
 ### Co když je ve stopě mřížky buněk více? {#vice-bunek}
 
-Považuji zde za vhodné připomenout, že naše příklady jsou hodně zjednodušené, protože v daném sloupci rozvržení pomocí CSS Gridu máme vždy jen jednu obsahovou buňku.
+Považuji zde za vhodné připomenout, že naše příklady jsou hodně zjednodušené, protože v daném sloupci rozvržení pomocí CSS gridu máme vždy jen jednu obsahovou buňku.
 
 Jak se ovšem bude `minmax()` chovat v případě použití u sloupečků (nebo řádků), kde je buněk více? U maxima vezme vždy tu nejmenší velikost z obsahu všech buňek, u minima pak největší.
 
@@ -160,7 +160,7 @@ Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených
 
 Ukázka: [cdpn.io/e/NWKZyrY](https://codepen.io/machal/pen/NWKZyrY?editors=1100).
 
-V CSS Gridu se `fit-content` používá s parametrem:
+V CSS gridu se `fit-content` používá s parametrem:
 
 ```css
 .container {

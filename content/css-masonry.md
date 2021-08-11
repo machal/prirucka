@@ -17,7 +17,7 @@ Teď už se ale blýská na lepší časy. Chystaná [třetí verze specifikace 
 
 Zatím to má podporu jen v Nightly verzi Firefoxu, ale předpokládáme, že se to ujme a že nás to zbaví dalšího nadbytečného javascriptového pluginu.
 
-Skvěle to (jako vždy) popisuje Rachel Andrew v textu [Native CSS Masonry Layout In CSS Grid](https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/) na Smashing Magazine, ze kterého tady budu vycházet.
+Skvěle to (jako vždy) popisuje Rachel Andrew v textu [Native CSS Masonry Layout In CSS grid](https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/) na Smashing Magazine, ze kterého tady budu vycházet.
 
 ## Co je to „masonry“? {#co}
 
@@ -30,7 +30,7 @@ Určitě zde jsou tací, kteří o masonry layoutu nic moc nevědí. „Masonry�
 </figcaption>
 </figure>
 
-Když se položky ve zděném rozvržení přesunou na další řádek, nezarovnávají se do rovné linky, ale přesunou se nahoru do mezer, které zanechají kratší položky v prvním řádku. Je to podobné jako u jedné z vlastností CSS Gridu, automatického umístění (autoplacement), ale bez přísného dodržení mřížky pro řádky.
+Když se položky ve zděném rozvržení přesunou na další řádek, nezarovnávají se do rovné linky, ale přesunou se nahoru do mezer, které zanechají kratší položky v prvním řádku. Je to podobné jako u jedné z vlastností CSS gridu, automatického umístění (autoplacement), ale bez přísného dodržení mřížky pro řádky.
 
 Však se podívejte na obrázek výše, z toho to bude asi vidět lépe. Hlavní směr typického masonry layoutu je inline, tedy po řádcích.
 
@@ -116,7 +116,7 @@ Další možnosti jsou podobné jako u vlastností `align-content` a `justify-co
 
 ## Podpora v prohlížečích a implementace {#podpora}
 
-Standardizátoři mají CSS Grid Level 3 zatím rozpracovaný. V téhle fázi je tedy potřeba, aby vývojářky a vývojáři neváhali [dávat zpětnou vazbu](https://github.com/w3c/csswg-drafts/issues/).
+Standardizátoři mají CSS grid Level 3 zatím rozpracovaný. V téhle fázi je tedy potřeba, aby vývojářky a vývojáři neváhali [dávat zpětnou vazbu](https://github.com/w3c/csswg-drafts/issues/).
 
 Jak už jsem zmínil – v době psaní je tato skvělá nová věc podporovaná jen v Nightly verzi Firefoxu. I tam je ale potřeba zapnout vlaječku `layout.css.grid-template-masonry-value` v `about:config`.
 
@@ -167,7 +167,7 @@ Nevýhodou je to, že směr layoutu bude vždy po sloupcích, nikoliv po řádc�
 
 CodePen: [cdpn.io/e/QWEmPvK](https://codepen.io/rachelandrew/pen/QWEmPvK?editors=1100)
 
-### CSS Grid a husté umístění {#dalsi-autoflow}
+### CSS grid a husté umístění {#dalsi-autoflow}
 
 [Vlastnost `grid-auto-flow`](css-grid-auto-flow.md) může mít hodnotou `dense`, která zajistí že prohlížeč může vyplnit mezery změnou pořadí prvků.
 

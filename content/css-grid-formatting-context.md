@@ -1,16 +1,16 @@
 # Formátovací kontext mřížky v CSS
 
-Další teoretická znalost o CSS Gridu, která se nám může velmi hodit, je formátovací kontext (grid formatting context).
+Další teoretická znalost o CSS gridu, která se nám může velmi hodit, je formátovací kontext (grid formatting context).
 
 Každá hodnota vlastnosti `display` totiž zapíná nový způsob zacházení s potomky prvku a může měnit vztahy prvku a jeho okolí.
 
-Tak jako `display:block` má od časů CSS 2.1 svůj *block formatting context*, CSS Grid má kontext svůj vlastní.
+Tak jako `display:block` má od časů CSS 2.1 svůj *block formatting context*, CSS grid má kontext svůj vlastní.
 
 Co se tedy v prohlížečích stane pěkného – nebo pro někoho nepěkného – když napíšeme `display:grid` nebo `display:inline-grid`?
 
 ## Svislé vnější okraje se neslučují. Chválabohu
 
-Hodnoty vlastnosti `margin` shora a zdola se neslučují s hodnotami sousedních prvků. To, co znáte z blokových elementů, ve světě CSS Gridu neplatí.
+Hodnoty vlastnosti `margin` shora a zdola se neslučují s hodnotami sousedních prvků. To, co znáte z blokových elementů, ve světě CSS gridu neplatí.
 
 Je to logické. Mřížka má tvořit rozvržení prvků stránky a při takové práci by nám slučování vnějších okrajů působilo ještě větší trable než nám působí u blokových prvků.
 
@@ -62,7 +62,7 @@ Pozicovat můžete samotný grid kontejner, ale i jeho položky, pokud z kontejn
 
 Vyzkoušel jsem to za vás, protože jsem byl zvědavý:
 
-<img src="../dist/images/original/vdlayout/css-grid-position.png" width="1920" height="540"  alt="CSS Grid a vlastnost position">
+<img src="../dist/images/original/vdlayout/css-grid-position.png" width="1920" height="540"  alt="CSS grid a vlastnost position">
 
 CodePen: [cdpn.io/e/qBbdmrd](https://codepen.io/machal/pen/qBbdmrd?editors=1100)
 

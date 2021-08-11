@@ -2,7 +2,7 @@
 
 Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas podle anglického originálu říká „gutter“.
 
-Dřívější zápisy „děrovacích“ vlastností byly ve specifikaci definovány jinak, s prefixem `grid-`: `grid-row-gap`, `grid-column-gap` a `grid-gap` a zaměřené čistě jen na CSS Grid. Nyní jsou ale z této části specifikace vyjmuté a vyvíjené pod samostatným modulem [CSS Box Alignment](css-box-alignment.md). Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale také ve flexboxu nebo vícesloupcovém layoutu.
+Dřívější zápisy „děrovacích“ vlastností byly ve specifikaci definovány jinak, s prefixem `grid-`: `grid-row-gap`, `grid-column-gap` a `grid-gap` a zaměřené čistě jen na CSS grid. Nyní jsou ale z této části specifikace vyjmuté a vyvíjené pod samostatným modulem [CSS Box Alignment](css-box-alignment.md). Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale také ve flexboxu nebo vícesloupcovém layoutu.
 
 Vlastnost `gap` je zkratkou pro vlastnosti `row-gap` a `column-gap`. Zapisuje se takto:
 
@@ -79,11 +79,11 @@ Je to složitější, takže se to pokusíme zjednodušit.
 
 Vezměme to nejdříve podle typu layoutu:
 
-- CSS Grid: Prakticky plná podpora. Internet Explorer 11 vlastnost `gap` nepodporuje, ale to je možné dohnat [použitím nástroje Autoprefixer](css-grid-msie.md).
+- CSS grid: Prakticky plná podpora. Internet Explorer 11 vlastnost `gap` nepodporuje, ale to je možné dohnat [použitím nástroje Autoprefixer](css-grid-msie.md).
 - Flexbox: Nepodporuje IE 11 a Safari, takže zde zatím nevidím použití vlastnosti jako rozumné.
 - Vícesloupcový layout: Stejná situace jako u flexboxu.
 
-A navíc – Safari zatím napodporuje hodnoty s `calc()` a procenty a to ani v CSS Gridu
+A navíc – Safari zatím napodporuje hodnoty s `calc()` a procenty a to ani v CSS gridu
 
 Vlastnost `gap`, tedy bez prefixu `grid-` je podporována v Chrome 68+, Safari 11.2 Release 50+ a Opeře 54+.
 

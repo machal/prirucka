@@ -151,7 +151,7 @@ Mrkněme se na jednoduchý příklad. Máme následující HTML připravené pro
 </div>
 ```
 
-Layout je s pomocí CSS Gridu definovaný následovně:
+Layout je s pomocí CSS gridu definovaný následovně:
 
 ```css
 .container {
@@ -284,7 +284,7 @@ V době psaní textu (srpen 2020) se zdá, že naše milé prohlížeče s imple
 
 ### Definování mezer mezi položkami {#gap}
 
-Vlastnosti a hodnoty umožňují nastavení konzistentní mezery mezi položkami v řádku nebo sloupci a hlavně uvnitř CSS Gridu.
+Vlastnosti a hodnoty umožňují nastavení konzistentní mezery mezi položkami v řádku nebo sloupci a hlavně uvnitř CSS gridu.
 
 Vlastnosti:
 

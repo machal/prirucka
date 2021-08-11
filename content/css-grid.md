@@ -1,4 +1,4 @@
-# CSS Grid
+# CSS grid
 
 CSS grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
 
@@ -169,7 +169,7 @@ Ke správnému zarovnávání v gridu budete potřebova také vlastnosti jako [`
 Nejprve pojďme na představovací video.
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=9M5RGjlAkeY">CSS Grid</a> ~ Úplné základy ve videu.
+Video: <a href="https://www.youtube.com/watch?v=9M5RGjlAkeY">CSS grid</a> ~ Úplné základy ve videu.
 </p>
 
 A teď ten příklad. Řekněme, že naše HTML vypadá takto:
@@ -247,7 +247,7 @@ Z mého pohledu má grid daleko širší možnosti stylování než flexboxem. M
 
 <div class="web-only" markdown="1">
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Podpora CSS Grid na dvou z projektů, o které se starám. <br>Zajímavost: problematické už v žádném případě nejsou starší Explorery (10-), ale starší verze Chrome a Safari. Zdroj: <a href="https://twitter.com/caniuse?ref_src=twsrc%5Etfw">@caniuse</a> a Google Analytics. <a href="https://t.co/yJ2tXmb5mF">pic.twitter.com/yJ2tXmb5mF</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/956447238770909184?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="cs" dir="ltr">Podpora CSS grid na dvou z projektů, o které se starám. <br>Zajímavost: problematické už v žádném případě nejsou starší Explorery (10-), ale starší verze Chrome a Safari. Zdroj: <a href="https://twitter.com/caniuse?ref_src=twsrc%5Etfw">@caniuse</a> a Google Analytics. <a href="https://t.co/yJ2tXmb5mF">pic.twitter.com/yJ2tXmb5mF</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/956447238770909184?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </div>
@@ -274,8 +274,8 @@ Explorer a starší Edge podporují dnes už neplatnou specifikaci Gridu. Má ji
 Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení Gridu pro IE](css-grid-msie.md) jemu.
 
 <div class="web-only related" markdown="1">
-- [CSS Grid v IE: Oblasti a mezery](css-grid-msie.md)
-- [CSS Grid v IE: Automatické umístění](css-grid-msie-autoplacement.md)
+- [CSS grid v IE: Oblasti a mezery](css-grid-msie.md)
+- [CSS grid v IE: Automatické umístění](css-grid-msie-autoplacement.md)
 </div>
 
 Existence „explorerového“ Gridu nám ale v mnoha případech umožní mřížku vcelku bez problémů používat i bez Autoprefixeru. Jen je potřeba se kromě základních vlastností dnešního Gridu naučit i ten starší.
@@ -287,10 +287,10 @@ Existence „explorerového“ Gridu nám ale v mnoha případech umožní mří
 Podívejte se na tyto zdroje:
 
 - Moc pěkný český článek od Pavla Satrapy [na Root.cz](https://www.root.cz/clanky/css-grid-revoluce-ve-web-designu/).
-- Hra [CSS Grid Garden](http://cssgridgarden.com/).
+- Hra [CSS grid Garden](http://cssgridgarden.com/).
 - Web [CSSGrid.io](https://cssgrid.io/).
 - Detailní vlastnosti pak studujte na [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) nebo [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/).
-- Specifikace [CSS Grid 1](https://www.w3.org/TR/css-grid-1/).
+- Specifikace [CSS grid 1](https://www.w3.org/TR/css-grid-1/).
 
 Kam pokračovat na Vzhůru dolů? Běžte se podívat ještě na [3 příklady použití Gridu](css-grid-inspirace.md) i s vysvětlením v kódu.
 

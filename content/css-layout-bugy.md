@@ -11,7 +11,7 @@ Autorovi téhle myšlenky bychom museli přiznat jistou dávku zdravého skeptic
 <div class="related web-only" markdown="1">
 
 - [CSS Flexbox](css-flexbox.md)
-- [CSS Grid](css-grid.md)
+- [CSS grid](css-grid.md)
 - [CSS Multicol](css-multicolumn.md)
 - [CSS Box Align](css-box-alignment.md)
 
@@ -149,7 +149,7 @@ Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že význ
 
 Je potřeba říct, že i tenhle prohlížeč grid podporuje a nepodporuje toho z něj vůbec málo: implicitní mřížku, [funkci `repeat()`](css-repeat.md), funkci [`minmax()`](css-minmax.md) nebo klíčová slova `min-content` a `max-content`.
 
-Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastností toho čemu říkáme CSS Grid Layout, navíc často jinak implementovanou.
+Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastností toho čemu říkáme CSS grid Layout, navíc často jinak implementovanou.
 
 Máme zde sice [Autoprefixer](autoprefixer.md), který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 

@@ -3,7 +3,7 @@
 *Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
 
 <div class="related web-only" markdown="1">
-- [CSS Grid](css-grid.md)
+- [CSS grid](css-grid.md)
 - [CSS Multicolumn](css-multicolumn.md)
 - [CSS Box Alignment](css-box-alignment.md)
 </div>

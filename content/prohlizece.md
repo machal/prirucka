@@ -99,7 +99,7 @@ Celosvětově postupně klesá. Teď má na světě podle Statcounter podíl 11 
 
 ### Internet Explorer 11 {#IE11}
 
-Oproti starším verzí IE je to relativně moderní kus software. Jenže na dnešní potřeby webařů nestačí. Blokuje nás zejména jeho [(ne)podpora CSS Gridu](css-grid.md). Předpokládám, že bude dále klesat ve prospěch Edge a ostatních prohlížečů. Mohl by ale předvádět rychlejší sešup, než dneska vidíme. [Wikipedia](https://en.wikipedia.org/wiki/Internet_Explorer_11)  
+Oproti starším verzí IE je to relativně moderní kus software. Jenže na dnešní potřeby webařů nestačí. Blokuje nás zejména jeho [(ne)podpora CSS gridu](css-grid.md). Předpokládám, že bude dále klesat ve prospěch Edge a ostatních prohlížečů. Mohl by ale předvádět rychlejší sešup, než dneska vidíme. [Wikipedia](https://en.wikipedia.org/wiki/Internet_Explorer_11)  
 <small>HTML5test.com: 312/555</small>
 
 ### Edge {#edge}
@@ -196,7 +196,7 @@ Pro zájemce je více informací [na Wikipedii](https://en.wikipedia.org/wiki/Br
 ## Závěrečná doporučení pro webaře {#doporuceni}
 
 - Zde uvedená obecná čísla berte s rezervou. Sledujte hlavně vlastní [Google Analytics](google-analytics-vyvojari.md).
-- Nebojte se nových technologií. [Flexbox](css-flexbox.md) má prakticky plnou podporu, [CSS Grid](css-grid.md) podporují všechny prohlížeče kromě IE 11, ten jen částečně. Obojí vám ušetří práci a nabídne nové možnosti. Fallbacky ve starých prohlížečích rozhodně nedělejte plnohodnotné se zobrazením v moderních prohlížečích. Obvykle se vám to nevyplatí.
+- Nebojte se nových technologií. [Flexbox](css-flexbox.md) má prakticky plnou podporu, [CSS grid](css-grid.md) podporují všechny prohlížeče kromě IE 11, ten jen částečně. Obojí vám ušetří práci a nabídne nové možnosti. Fallbacky ve starých prohlížečích rozhodně nedělejte plnohodnotné se zobrazením v moderních prohlížečích. Obvykle se vám to nevyplatí.
 - Nepodceňujte menší prohlížeče. Obstarávají minimálně čtvrtinu zhlédnutí stránek. Naučte se testovat tak, abyste s tím neměli moc práce. Doporučím zase svůj článek. [vrdl.cz/p/jak-testovat-responzivni-weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 
 …a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. Testujte ve všech relevantních prohlížečích, prosím. Díky za pozornost!

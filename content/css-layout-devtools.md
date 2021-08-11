@@ -11,11 +11,11 @@ Lídrem trhu bychom v této oblasti mohli s klidným srdcem jmenovat autory Fire
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-firefox.png" width="1600" height="900" alt="Livesport.cz v DevTools Firefoxu">
 <figcaption markdown="1">
-*CSS Grid Inspector v DevTools Firefoxu používaný na Livesport.cz.*
+*CSS grid Inspector v DevTools Firefoxu používaný na Livesport.cz.*
 </figcaption>
 </figure>
 
-Už v březnu 2017, zároveň s implementací CSS gridu do Firefoxu přibyl propracovaný CSS Grid Inspector. Jediný prohlížeč nezávislý na velké korporaci v té době patřil v oblasti vývojářského pohodlí mezi lídry trhu.
+Už v březnu 2017, zároveň s implementací CSS gridu do Firefoxu přibyl propracovaný CSS grid Inspector. Jediný prohlížeč nezávislý na velké korporaci v té době patřil v oblasti vývojářského pohodlí mezi lídry trhu.
 
 Firefox ale od té doby bohužel prošel krizí, kdy musel snižovat počet lidí, kteří vývojářské nástroje navrhují a programují.
 
@@ -28,7 +28,7 @@ Někde jsem pod dojmy z nevyváženosti množství vývojářů pracujících na
 </figcaption>
 </figure>
 
-V tomto případě to ale trvalo mnoho let, až do podzimu 2020. Tehdy přišli autoři Chrome s vlastní verzí, pojmenovanou „CSS Grid debugging tools“, velmi silně inspirovanou Firefoxem. [vrdl.in/griddevchr](https://developer.chrome.com/blog/new-in-devtools-87/)
+V tomto případě to ale trvalo mnoho let, až do podzimu 2020. Tehdy přišli autoři Chrome s vlastní verzí, pojmenovanou „CSS grid debugging tools“, velmi silně inspirovanou Firefoxem. [vrdl.in/griddevchr](https://developer.chrome.com/blog/new-in-devtools-87/)
 
 A co Safari? Jako skoro vždy – dlouho nic a pak to přišlo. V březnu 2021 představili velice podobný nástroj.
 
@@ -75,4 +75,4 @@ Odkazy na texty představující tyto nástroje v jednotlivých prohlížečích
 
 - „Firefox 52 for developers“ [vrdl.in/griddevfir](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/52)
 - „Chrome 87: What's New In DevTools“ [](https://developer.chrome.com/blog/new-in-devtools-87/)
-- „WebKit: Introducing CSS Grid Inspector“. [vrdl.in/griddevsaf](https://webkit.org/blog/11588/introducing-css-grid-inspector/)
+- „WebKit: Introducing CSS grid Inspector“. [vrdl.in/griddevsaf](https://webkit.org/blog/11588/introducing-css-grid-inspector/)

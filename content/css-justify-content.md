@@ -35,7 +35,7 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých 
 ### Základní
 
 - `normal` (výchozí)  
-  V CSS Gridu i flexboxu bude odpovídat hodnotě `start`. Položky se tedy zarovnají za začátek osy, takže obvykle doleva.
+  V CSS gridu i flexboxu bude odpovídat hodnotě `start`. Položky se tedy zarovnají za začátek osy, takže obvykle doleva.
 
 ### Zbylý prostor
 

@@ -35,7 +35,7 @@ Vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých ob
 ### Základní
 
 - `normal` (výchozí)  
-  V CSS Gridu odpovídat hodnotě `start`, ve flexboxu zase `stretch`.
+  V CSS gridu odpovídat hodnotě `start`, ve flexboxu zase `stretch`.
 
 ### Zbylý prostor
 

@@ -16,7 +16,7 @@ Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř konte
 
 <!-- AdSnippet -->
 
-Dává smysl hlavně pro CSS Grid, protože ve flexboxu je vlastnost `justify-items` ignorována.
+Dává smysl hlavně pro CSS grid, protože ve flexboxu je vlastnost `justify-items` ignorována.
 
 <div class="related web-only" markdown="1">
 - [CSS Box Alignment](css-box-alignment.md)
@@ -45,7 +45,7 @@ Podívejte se na referenční příručku k oběma vlastnostem, pro které je `p
 
 ## Podpora v prohlížečích
 
-Použití ve flexboxu smysl nedává, ale v rámci CSS Gridu má `place-items` velmi slušnou podporu ve všech moderních prohlížečích kromě výjimek od Microsoftu – původního Edge, který již ale není příliš rozšířená a IE11, který je na tom podobně. Předpokládám ale, že Autoprefixer si s touhle vlastností poradí.
+Použití ve flexboxu smysl nedává, ale v rámci CSS gridu má `place-items` velmi slušnou podporu ve všech moderních prohlížečích kromě výjimek od Microsoftu – původního Edge, který již ale není příliš rozšířená a IE11, který je na tom podobně. Předpokládám ale, že Autoprefixer si s touhle vlastností poradí.
 
 Pro více informací se podívejte na [caniuse.com/place-items](https://caniuse.com/#search=place-items).
 

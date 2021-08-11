@@ -124,19 +124,19 @@ V témže roce přijde Tab Atkins, další známá postava standardů kolem CSS,
 
 ## 2012: Přelom. Prohlížeče implementují flexbox, Microsoft předává grid do W3C
 
-Cupp prezentuje nový systém rozvržení konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konfrenci WebExpo 2016) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS Gridu.
+Cupp prezentuje nový systém rozvržení konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konfrenci WebExpo 2016) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS gridu.
 
 V čem byl ale tento pokus o implementaci rozvržení typu mřížky jiný než všechny předchozí? Je to jednoduché – Phil Cupp a jeho lidé zařídili implementaci v prohlížeči.
 
 Nejprve implementace, pak specifikace. Přesně tím postupem, který je dnes vyčítán Googlu. Historie má tendenci se opakovat.
 
-Ale v kontextu CSS Gridu se chce říct: hlavně, že to vyšlo.
+Ale v kontextu CSS gridu se chce říct: hlavně, že to vyšlo.
 
 Z flexboxu se stává „Candidate Recommendation“, což znamená, že specifikace je stabilní. Prohlížeče ji začínají implementovat.
 
 ## 2017: Nová a lepší specifikace gridu
 
-Vzniká specifikace „CSS Grid Layout Module Level 1“.
+Vzniká specifikace „CSS grid Layout Module Level 1“.
 
 Lidé z W3C ale původní specifikaci od Microsoftu radikálně předělali. Přidali například možnosti automatického umísťování do mřížky a rozšířili ji o lepší možnosti responzivity.
 
@@ -149,7 +149,7 @@ grid-template-areas:
   "col1 col2";
 ```
 
-„Je to jako ASCII art pro vytváření šablony“ řekla prý Elika Etemad, editorka pro modul CSS Grid Layout Module ve W3C, což sedí.
+„Je to jako ASCII art pro vytváření šablony“ řekla prý Elika Etemad, editorka pro modul CSS grid Layout Module ve W3C, což sedí.
 
 S výsledkem se právě teď můžete podrobně seznámit na následujících stránkách.
 
@@ -157,7 +157,7 @@ Myslím, že se po dočtení knížky shodneme, že je to takové malé zemětř
 
 Pokud byste se do historie chtěli ponořit více, doporučím vám tyto dva články:
 
-- „The Story of CSS Grid, from Its Creators“ od Aarona Gustafsona. [vrdl.in/vdghist](https://alistapart.com/article/the-story-of-css-grid-from-its-creators/)
+- „The Story of CSS grid, from Its Creators“ od Aarona Gustafsona. [vrdl.in/vdghist](https://alistapart.com/article/the-story-of-css-grid-from-its-creators/)
 - „A Look Back at the History of CSS“ od Jay Hoffmanna. [vrdl.in/csshist](https://css-tricks.com/look-back-history-css/)
 
 My se od historie specifikací CSS layoutů podíváme na dnešní možnosti tvorby rozvržení. Ano, myslím ty, které nejsou předmětem této knížky. Ty, o kterých se slušní frontendisti už dnes raději nebaví.

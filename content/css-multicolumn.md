@@ -3,12 +3,12 @@
 Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-column Layout můžeme obsah vysázet do více sloupců definované šířky podobně jako v novinové sazbě.
 
 <div class="related web-only" markdown="1">
-- [CSS Grid](css-grid.md)
+- [CSS grid](css-grid.md)
 - [Flexbox](css-flexbox.md)
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
-Na rozdíl od podobných layoutových modulů – CSS Gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro obsah, nikoliv pro layout stránek nebo komponent.
+Na rozdíl od podobných layoutových modulů – CSS gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro obsah, nikoliv pro layout stránek nebo komponent.
 
 Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu. Na obrázku vidíte vícesloupcový layout s nastavením `columns:20em`.
 

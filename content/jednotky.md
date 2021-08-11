@@ -171,7 +171,7 @@ Použitelných jednotek pro layout je ale více:
 - Procenta nebo `vw` se roztahují podle šířky okna, `vh` podle jeho výšky.
 - `rem` a `em` podle velikosti písma.
 - Ve flexboxu je možné používat také absolutní jednotky (`flex: 1`).
-- V CSS Grid zase takzvané [podílové jednotky `fr`](css-jednotka-fr.md) (`grid-template-columns: 3fr 1fr`).
+- V CSS grid zase takzvané [podílové jednotky `fr`](css-jednotka-fr.md) (`grid-template-columns: 3fr 1fr`).
 - Občas se hodí i fixní rozměry v `px`.
 
 ## Rámečky, dekorace: px {#dekorace}

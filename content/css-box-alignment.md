@@ -3,7 +3,7 @@
 Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo Gridu.
 
 <div class="related web-only" markdown="1">
-- [CSS Grid](css-grid.md)
+- [CSS grid](css-grid.md)
 - [Flexbox](css-flexbox.md)
 - [Vícesloupcový layout](css-multicolumn.md)
 </div>

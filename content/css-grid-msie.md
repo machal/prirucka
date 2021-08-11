@@ -1,6 +1,6 @@
-# CSS Grid v Internet Exploreru
+# CSS grid v Internet Exploreru
 
-„Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z 10 důvodů, proč lidé ještě v roce 2021 nepoužívají [CSS Grid](css-grid.md).
+„Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z 10 důvodů, proč lidé ještě v roce 2021 nepoužívají [CSS grid](css-grid.md).
 
 Problém to ale v realitě zase tak moc není, protože u většiny projektů už nejspíš [není MSIE nutné používat](msie.md).
 
@@ -9,7 +9,7 @@ A pokud Explorer podporovat musíte, vězte, že nějakou (a ne úplně malou po
 Druhá věc je, že tu podporu Exploreru můžete rozšířit pomocí chytrého hacku. V tomto textu se totiž budeme zabývat automatizovaným řešením pro zlepšení podpory Gridu pomocí nástroje [Autoprefixer](autoprefixer.md).
 
 <p class="video">
-Video: <a href="https://www.youtube.com/watch?v=JjmXOB01Yq0">CSS Grid v Internet Exploreru</a> ~ Základy a krátké demo podle obsahu článku.
+Video: <a href="https://www.youtube.com/watch?v=JjmXOB01Yq0">CSS grid v Internet Exploreru</a> ~ Základy a krátké demo podle obsahu článku.
 </p>
 
 Pojďme tedy dát kombinaci gridu s MSIE novou šanci.
@@ -213,7 +213,7 @@ Prvky se nám pěkně rozmístí. Jenže smůla, tohle nebude fungovat v Intern
 </figcaption>
 </figure>
 
-Pro MSIE 10 a 11, ve kterých nějaká verze CSS Gridu funguje, nám zde Autoprefixer přidá pseudotřídy:
+Pro MSIE 10 a 11, ve kterých nějaká verze CSS gridu funguje, nám zde Autoprefixer přidá pseudotřídy:
 
 ```css
 .container > *:nth-child(1) {

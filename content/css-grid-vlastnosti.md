@@ -1,6 +1,6 @@
-# Principy a vlastnosti CSS Gridu
+# Principy a vlastnosti CSS gridu
 
-CSS Grid má mnoho skvělých vlastností. Ne všechny jsou unikátní, některé jste totiž mohli vidět už u flexboxu, ale Grid jejich seznam dále rozšiřuje.
+CSS grid má mnoho skvělých vlastností. Ne všechny jsou unikátní, některé jste totiž mohli vidět už u flexboxu, ale Grid jejich seznam dále rozšiřuje.
 
 Podívejme se na ně prozatím velmi stručně, ale časem se k nim ještě vrátíme.
 
@@ -17,7 +17,7 @@ Kontejner mřížky můžeme definovat kromě `display:grid` také jako `display
 Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) – *fraction unit*, která umožní snadné dělení volného místa.
 
 <figure>
-<img src="../dist/images/original/vdlayout/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS Gridu">
+<img src="../dist/images/original/vdlayout/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
 <figcaption markdown="1">
 *Obrázek: Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce EM odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou FR. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
 </figcaption>

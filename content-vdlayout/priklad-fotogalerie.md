@@ -83,11 +83,11 @@ Zamysleme se však také nad nevýhodami volby vícesloupcového layoutu pro kó
 
 Ve spoustě situací to ale může být vhodné řešení, na obrázku uvidíte, že vizuálně působí dobře.
 
-Možná si při pohledu na obrázek vzpomenete na [„zděný layout“ (masonry)](css-masonry.md), o kterém píšu v kapitole s referenční příručkou ke gridu a který bude zřejmě jednou možné udělat bez JavaScriptu, s přímou pomocí CSS Gridu.
+Možná si při pohledu na obrázek vzpomenete na [„zděný layout“ (masonry)](css-masonry.md), o kterém píšu v kapitole s referenční příručkou ke gridu a který bude zřejmě jednou možné udělat bez JavaScriptu, s přímou pomocí CSS gridu.
 
 No a když už jsme u gridu, pojďme si tu fotogalerii zkusit ještě navrhnout s ním.
 
-## Řešení pomocí CSS Grid a RAM
+## Řešení pomocí CSS grid a RAM
 
 Pokud bychom nechtěli použít Media Queries, v CSS gridu máme možnost sáhnout po návrhovém vzoru RAM. Nejprve kód a pak vysvětlení:
 

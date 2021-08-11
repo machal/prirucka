@@ -24,7 +24,7 @@ V druhém testu, vykreslování složitého celostránkového layoutu, dopadl fl
 
 Takže pokud se nechystáte vykreslovat desítky tisíc prvků do layoutu eshopu nebo prezentančího webu, toto pro vás užitečná informace nebude.
 
-V případě zájmu běžte přímo na text „CSS Grid vs Flexbox: Performance Evaluation“ na smc.it. [vrdl.in/gridflexper](https://techblog.smc.it/en/2020-08-03/grid-vs-flexbox-performance)
+V případě zájmu běžte přímo na text „CSS grid vs Flexbox: Performance Evaluation“ na smc.it. [vrdl.in/gridflexper](https://techblog.smc.it/en/2020-08-03/grid-vs-flexbox-performance)
 
 Ten složitý celostránkový layout italského testu nám ale může, když už ne jinak, posloužit jako pěkný oslí můstek k zajímavějšímu testu.
 

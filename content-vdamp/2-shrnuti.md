@@ -26,7 +26,7 @@ b. přidáním atributu `debug` elementu `<html>`
 c. otevřením vývojářské konzole  
 d. zobrazením dokumentu z AMP Dev Cache
 6. **K čemu slouží atribut `layout`?**  
-a. nahrazuje zakázaný CSS Grid  
+a. nahrazuje zakázaný CSS grid  
 b. určuje pořadí při vykreslování  
 c. rezervuje prostor externímu obsahu  
 d. upravuje zobrazení na zařízeních s displejem typu Retina

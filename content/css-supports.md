@@ -37,7 +37,7 @@ Velice často se nám může hodit negace a klíčové slovo `not`:
 }
 ```
 
-Kód se aplikuje jen v těch prohlížečích, které _nepodporují_ [CSS Grid](css-grid.md).
+Kód se aplikuje jen v těch prohlížečích, které _nepodporují_ [CSS grid](css-grid.md).
 
 ### Operátor `and` {#operatory-and}
 
