@@ -184,7 +184,7 @@ Vodorovné a svislé stopy mřížky jsou označovány jako řádky a sloupce, p
 
 Poznámka pro pokročilé: Pokud bychom chtěli být přesní, měli bychom uvést ještě pojem „osa mřížky“, což je stejně jako v geometrii přímka, jež určuje směry. V případě CSS gridu jsou ty směry naštěstí jen dva.
 
-V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale *blokové ose* (block axis) a *inline ose* (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je ten náš), tak zápisem svislým. Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale opravdu v textu už nechci více zatěžovat.
+V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale *blokové ose* (block axis) a *inline ose* (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je čeština nebo slovenština), ale také se zápisem svislým (jako je japonština). Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale opravdu v textu už nechci více zatěžovat.
 
 ## Buňka mřížky (grid cell) {#bunka}
 
@@ -197,21 +197,21 @@ Je to patrné v následujícím příkladu, kde jsme ubrali poslední položku. 
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-polozky-bunky.png" width="1600" height="900" alt="Položky a buňky v CSS gridu">
 <figcaption markdown="1">
-*Obrázek: Některé buňky neuvidíte, ale jsou tam pořád, potvory.*
+*Některé buňky neuvidíte, ale jsou tam pořád, potvory.*
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
-
 Je dobré si uvědomit, že právě proto nejde buňku mřížky nijak zacílit pomocí CSS. Je to jen jakási interní stavební jednotka mřížky.
+
+CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 
 Abychom mohli buňku ovlivnit z CSS, musíme z ní udělat oblast.
 
 ## Oblast mřížky (grid area) {#oblast}
 
-Buňka je prostor vymezený čtyřmi linkami mřížky, který ale může být možné dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buňek mřížky.
+Oblast je prostor vymezený čtyřmi linkami mřížky, který ale může být možné dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buňek mřížky.
 
-V naší ukázce jsme pátou položku ručně umístili na místo páté a šesté buňky mřížky:
+V naší ukázce jsme pátou položku ručně umístili na místo páté a šesté buňky mřížky, tedy do prostoru, který v předchozím obrázku vidíte jako neobsazený.
 
 ```css
 .item--five {
@@ -222,8 +222,8 @@ V naší ukázce jsme pátou položku ručně umístili na místo páté a šest
 
 Tento zápis přesně říká o umístění oblasti následující:
 
-- Svisle ji umísti mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, takže na místo druhého a třetího sloupce.
-- Vodorovně ji umísti mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, takže do druhého řádku.
+* Svisle ji umísti mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, takže na místo druhého a třetího sloupce.
+* Vodorovně ji umísti mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, takže do druhého řádku.
 
 CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 
@@ -238,18 +238,18 @@ Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost
 }
 ```
 
-„Gutter“ by se měl asi přeložit jako „žlab“, ale v kontextu webdesignu by to bylo dost neobvyklé. Slovo „gutter“ se v hovorové *webařštině* vcelku běžně používá, takže si s ním občas jako se synonymem vystačíme.
+„Gutter“ by se měl asi přeložit jako „žlab“, ale v kontextu webdesignu by to bylo dost neobvyklé. Slovo „gutter“ se v hovorové *webařštině* vcelku běžně používá, takže si s ním jako se synonymem pro „žlab“ vystačíme.
 
 Pojďme si desetipixelový „gutter“ nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
 
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-grid-inspector.png" width="1600" height="900" alt="Inspektor CSS gridu ve Firefoxu">
 <figcaption markdown="1">
-*Obrázek: Obrázek z Firefoxu: Ale to je nemilé, linka mřížky už není jen linka.*
+*Obrázek z Firefoxu: Ale to je nemilé, linka mřížky už není jen linka.*
 </figcaption>
 </figure>
 
-Jak je vidět z obrázku, z linek mřížky se staly obdélníky. Nikoliv úsečky, ale linkové sloupce a řádky, které mají svůj začátek i konec.
+Jak je vidět z obrázku, z linek mřížky se staly obdélníky. Nikoliv úsečky, ale sloupce a řádky, které mají svůj začátek i konec.
 
 Ano, vlastnosti `gap` určuje šířku linek. Pokud ji nedefinujeme, jde o neviditelné úsečky tak jako tomu bylo v předchozích příkladech.
 
