@@ -1,4 +1,4 @@
-# grid versus flex
+# Grid versus flex
 
 Nyní se zaměříme na jednotlivé systémy rozvržení a povězme si více o rozdílech mezi nimi. Začneme vícesloupcovým layoutem, který se z těch tří trochu vyjímá.
 
@@ -8,7 +8,7 @@ Tohle bude rychlé. Už totiž víte, že [multicol](css-multicolumn.md) je urč
 
 Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobných, je možné jej omezeně využít pro tvorbu [„No Queries“ layoutů](no-queries.md), ale je dobré si uvědomit, že tím ohýbáme nástroj pro potřeby řešení.
 
-## grid (versus) flexbox
+## Grid (versus) flexbox
 
 Tyto dva systémy rozvržení dělají jádro knížky a proto se jim budeme věnovat s patřičnou péčí.
 

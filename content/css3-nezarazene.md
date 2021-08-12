@@ -18,7 +18,7 @@ Zobrazení obrázku nebo elementu přes masku tvořenou jiným obrázkem. Hodilo
 - [jecas.cz/mask](http://jecas.cz/mask)
 - [w3.org/TR/css-masking](https://www.w3.org/TR/css-masking/)
 
-## grid (mřížka)
+## Grid (mřížka)
 
 Layout do mřížky. Zatímco [flexbox](css-flexbox.md) je vymyšlený pro design komponent uživatelského rozhraní, grid pro layout celých stránek. Podpora je v době psaní jen experimentální. Existuje sice polyfill, pro layout bych ho ovšem používat nedoporučoval. Každopádně grid layout bude po flexboxu další velká věc, takže doporučuji sledovat jeho vývoj. 
 

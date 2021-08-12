@@ -117,7 +117,7 @@ Zájemce ještě posílám na zdrojové kódy na službě CodePen, což ostatně
 
 CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
-## grid: příklad s kartou produktu
+## Grid: příklad s kartou produktu
 
 V obrázku se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2:1. Mezery mezi prvky jsou opět v šířce `1rem`.
 

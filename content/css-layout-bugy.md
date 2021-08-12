@@ -130,7 +130,7 @@ Pokud by vás opravdu hodně zajímaly, podívejte se na tu svého času slavnou
 
 Více informací o podpoře je na Can I Use. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
-## grid {#grid}
+## Grid {#grid}
 
 V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů.
 
@@ -169,7 +169,7 @@ Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Explor
 
 </div>
 
-### gridbugs, boty v mřížce {#gridbugs}
+### Gridbugs, boty v mřížce {#gridbugs}
 
 Podobně jako první implementace flexboxu, také první napsané enginy pro vykreslování gridu byly v prohlížečích plné chyb.
 

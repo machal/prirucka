@@ -168,6 +168,6 @@ Vzhledem k tomu, že na konci roku 2020 to zatím podporuje jen prohlížeč Fir
 
 Internet Explorer 11 tyto vlastnosti nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md).
 
-Tento stařičký, ale stále ještě [používaný prohlížeč](prohlizece.md), také nezvládá automatické umísťování položek do mřížky. I to je možné [alespoň částečně vyřešit](css-grid-msie-autoplacement.md).
+Tento stařičký, ale občas ještě [používaný prohlížeč](msie.md), také nezvládá automatické umísťování položek do mřížky. I to je možné alespoň částečně vyřešit.
 
 <!-- AdSnippet -->
