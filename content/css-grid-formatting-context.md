@@ -35,20 +35,18 @@ CodePen: [cdpn.io/e/GRobVpz](https://codepen.io/machal/pen/GRobVpz?editors=1100)
 
 Pro formátovací kontext mřížky platí, že:
 
-* Vlastnosti `float` a `clear` nemají žádný efekt na položky mřížky. Radši si ani nepředstavuji, co by vývojáři dělali, kdyby tomu tak nebylo.
-* Plovoucí prvky (např. `float:left`), nijak nevstupují do kontejneru mřížky. Sousedící kontejner mohou posunout, zmenšit, ale nikdy nevstoupí dovnitř, aby rozbily položky.
+- Vlastnosti `float` a `clear` nemají žádný efekt na položky mřížky. Radši si ani nepředstavuji, co by vývojáři dělali, kdyby tomu tak nebylo.
+- Plovoucí prvky (např. `float:left`), nijak nevstupují do kontejneru mřížky. Sousední kontejner mohou posunout, zmenšit, ale nikdy nevstoupí dovnitř, aby rozbily položky.
 
 Brrr! Raději pojďme od „floatů“ pryč. Začalo se mi dělat nevolno…
 
 ## Vlastnost `vertical-align` nemá na položky mřížky žádný efekt
 
-`vertical-align` slouží ke svislému zarovnání textového obsahu. Pro zarovnání v mřížce zde máme jiné úžasné vlastnosti, o kterých bude ještě řeč.
-
-<!-- TODO odkaz na zarovnávací vlastnosti -->
+`vertical-align` slouží ke svislému zarovnání textového obsahu. Pro zarovnání v mřížce zde máme jiné úžasné vlastnosti, o kterých bude ještě řeč – [CSS Box Alignment](css-box-alignment.md).
 
 ## Pseudoelementy `::first-line` and `::first-letter` u kontejnerů mřížky nefungují
 
-I tohle je naprosto logické. Tyto vlastnosti dávají smysl u typografických bloků. grid je šéf přes layout, nikoliv psaný text.
+I tohle je naprosto logické. Tyto vlastnosti dávají smysl u typografických bloků. Grid je šéf přes layout, nikoliv psaný text.
 
 Pokud byste chtěli vidět tohle všechno v akci, neváhejte se podívat na můj CodePen, ve kterém jsem se grid pokusil rozbít všemi zde uvedenými způsoby. A byl jsem neúspěšný.
 

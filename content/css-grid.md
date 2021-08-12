@@ -231,7 +231,7 @@ Po představení všech vlastností a rychlém příkladu bych se rád pozastavi
 - Webařským veteránům lze CSS grid přiblížit jako tabulkový layout, jen daleko lépe udělaný a zbavený nevýhod.
 - Těm, kteří znají Bootstrap a podobné frameworky, lze grid podat jako zdokonalený Bootstrap grid vestavěný v prohlížečích.
 
-Všechno by to ale byla pravda jen částečně. grid je daleko silnější než uvedené příklady.
+Všechno by to ale byla pravda jen částečně. Grid je daleko silnější než uvedené příklady.
 
 ## Jak se grid liší od flexboxu? {#flexbox}
 

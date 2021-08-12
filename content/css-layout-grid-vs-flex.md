@@ -57,7 +57,7 @@ Tím, že je flexbox jednosměrný, bude se vám častěji hodit na zarovnáván
 
 Existují také studie, které zjistily, že flexbox se při použití obrovského množství elementů chová při vykreslování celé stránky [daleko líněji](css-layout-vykon.md). Ne, že by to bylo zvlášť podstatné, ale opět to ukazuje na podstatu flexboxu – vycházet z rozměrů vykreslených prvků.
 
-Náš milý grid je obousměrný, takže je vhodné s ním rozvrhnout například složitější formuláře, výpis produktů v kategorii e-shopu nebo celou stránku. grid je příhodnější pro layout větších celků.
+Náš milý grid je obousměrný, takže je vhodné s ním rozvrhnout například složitější formuláře, výpis produktů v kategorii e-shopu nebo celou stránku. Grid je příhodnější pro layout větších celků.
 
 Toto pravidlo samozřejmě neberte dogmaticky. Osobně, když se rozhodnuji, jestli použít grid nebo flexbox, kladu si otázku:
 
