@@ -98,7 +98,7 @@ Jak už jste vy zkušenější jistě pochopili, zápis výše je stejný jako b
 
 Konstrukce s `min-width` a `max-width` v CSS máme a mnozí známe už od pravěkých dob. Tak proč zavádět nový zápis v podobě funkcí `min()`, `max()` a `clamp()`?
 
-Za prvé je nový zápis stručnější a možná přehlednější. Podstatnější je ale druhý důvod - je _univerzální_. Je použití není limitované na délkové vlastnosti `width` a `height`. K tomu se ještě musíme vrátit.
+Za prvé je nový zápis stručnější a možná přehlednější. Podstatnější je ale druhý důvod - je _univerzální_. Jeho použití není limitované na délkové vlastnosti `width` a `height`. K tomu se ještě musíme vrátit.
 
 ## Demo: vizualizace výběru funkce {#demo-vizualizace}
 
@@ -136,7 +136,11 @@ h1 {
 
 CodePen: [cdpn.io/e/ExyYXaN](https://codepen.io/una/pen/ExyYXaN)
 
-K tomu asi není potřeba nic dalšího dodat. Snad jen to, že autorka nás nabádá, abychom si přitom dávali pozor na přístupnost. Omezení velikosti textu pomocí funkcí `max()` nebo `clamp()` může být proti pravidlům přístupnosti WCAG, která doporučují, aby si uživatelé mohli písmo libovolně zvětšovat sami.
+Čtenář Dan Srb nám poslal ještě jeden tip ke stupňovitému zvětšování písma:
+
+> Pokud chcete  například zajistit, aby se od 500px šířky viewportu začalo písmo zvětšovat z 1rem na 2rem až k hranici šířky viewportu 900px, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost padding.)
+
+Dodejme ještě, že autorka původního CodePenu nás nabádá, abychom si přitom dávali pozor na přístupnost. Omezení velikosti textu pomocí funkcí `max()` nebo `clamp()` může být proti pravidlům přístupnosti WCAG, která doporučují, aby si uživatelé mohli písmo libovolně zvětšovat sami.
 
 ## Co byste ještě měli vědět o porovnávacích funkcích? {#co-jeste}
 
