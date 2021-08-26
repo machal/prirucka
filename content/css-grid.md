@@ -240,7 +240,7 @@ Předně chci zdůraznit, že grid nenahrazuje [flexbox](css-flexbox.md). Potře
 - Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
 - Grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.
 - Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu. <!-- Více na [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/). -->
-- Grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje má funkcionalitu jako je automatický layout, funkce jako `minmax()`, `repeat()` nebo klíčová slova jako `auto-fill`. <!-- Píšou to na [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/). -->
+- Grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje funkcionalitu jako je automatický layout, funkce jako `minmax()`, `repeat()` nebo klíčová slova jako `auto-fill`. <!-- Píšou to na [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/). -->
 - Grid považuji celkově za robustnější. Jak možná sami vidíte, ve specifikaci gridu je daleko více vlastností než ve flexboxu. Je to i vidět u vlastností [zarovnávání boxů (CSS Box Alignment)](css-box-alignment.md) – těch, které jsou navázané na mřížku je více než těch, které jsou navázané na flexbox.
 
 Z mého pohledu má grid daleko širší možnosti stylování než flexboxem. Můžeme v něm udělat i dříve těžce kódovatelné layouty.
