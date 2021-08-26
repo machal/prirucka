@@ -60,10 +60,6 @@ Pomocí vlastnosti `columns` a dalších definujeme na rodičovském kontejneru 
 
 To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uvedenou vlastností.
 
-### Kontejner flexboxu {#vlastnosti-kontejner}
-
-Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext formátování flexboxem, takže jeho přímí potomkové mohou mít specifické vlastnosti. Možná je také „inline“ hodnota: `inline-flex`.
-
 <div class="reference-items">
 
   <article role="article">
