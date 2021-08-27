@@ -1,8 +1,10 @@
 # Vlastnosti grid-template-rows a grid-template-columns: definice explicitního gridu
 
-CSS vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení explicitní (tedy námi výslovně definované) mřížky v [CSS gridu](css-grid.md).
+Vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení explicitní (tedy námi výslovně definované) mřížky v CSS gridu.
 
 ## Jednoduchý příklad
+
+<!-- TODO IMG: obrázek pro níže uvedený příklad -->
 
 Vezměne toto HTML:
 
@@ -27,9 +29,11 @@ Pokud bychom chtěli zajistit rozvržení do mřížky 4 × 4, použijeme násle
 
 Vysvětleme:
 
-- `display: grid` – „zapíná“ mřížkové zobrazení. Možná je také řádková hodnota `inline-grid`.
-- `grid-template-columns: 50% 50%` – definujeme dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
-- `grid-template-rows: auto auto` – definujeme dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu. Grid sjednocuje výšky položek v každém, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
+- `display:grid` – „zapíná“ mřížkové zobrazení.
+- `grid-template-columns:50% 50%` – definuje dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
+- `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu. Grid sjednocuje výšky položek v každém z nich, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
+
+Příklad si také můžete prohlédnout na CodePenu.
 
 CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
 
@@ -47,7 +51,11 @@ Teď se stane ošlivá a zlá věc – zákeřný frontend kodér do HTML přid�
 </div>
 ```
 
-Jak bude vypadat pátá položka zobrazená v gridu 2 × 2? V tomto případě stejně jako předchozí čtyři. Algoritmus gridu ji přidělí 50% šířku a automatickou výšku.
+Jak bude vypadat pátá položka zobrazená v gridu 2 × 2? V tomto případě stejně jako předchozí čtyři.
+
+<!-- TODO IMG: obrázek pro tento stav -->
+
+Algoritmus gridu ji přidělí 50% šířku a automatickou výšku.
 
 <!-- AdSnippet -->
 
@@ -63,25 +71,31 @@ Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výc
 
 CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
-Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns` je možné určit vlastnostmi `grid-auto-columns` a `grid-auto-rows`. Ty definují implicitní grid a o těch napíšeme později.
+Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns` je možné určit vlastnostmi [`grid-auto-columns` a `grid-auto-rows`](css-grid-auto-rows-columns.md), které definují implicitní grid.
 
 ## Další možnosti zápisu gridu {#hodnoty}
 
-Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`.
+Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`, tedy na sloupce i řády layoutu.
+
+<div class="rwd-scrollable f-6"  markdown="1">
 
 | Možnost                            | Ukázka hodnoty                           |
 |------------------------------------|------------------------------------------|
-| [Bez explicitního gridu](#none)    | `none`                                   |
-| [Kombinace jednotek](#jednotky)    | `150px auto 1fr 1fr`                     |
-| [Pojmenovávání stop](#pojmenovane-stopy) | `[first] 150px [second] 1fr [end]` |
-| [Opakování](#opakovani)            | `repeat(12, 1fr)`                        |
-| [Masonry](#masonry)                | `masonry`                                |
+| Bez explicitního gridu    | `none`                                   |
+| Kombinace jednotek    | `150px auto 1fr 1fr`                     |
+| Pojmenovávání stop | `[first] 150px [second] 1fr [end]` |
+| Opakování            | `repeat(12, 1fr)`                        |
+| Masonry                | `masonry`                                |
+
+</div>
 
 Další řadu možností nabízí [funkce `minmax()`](css-minmax.md) a související hodnoty pro nastavení šířky podle obsahu jako je `min-content`, `max-content` nebo `fit-content`.
 
+Pojďme se ale podívat na možnosti hodnot z tabulky.
+
 ### Bez explicitního gridu {#none}
 
-Toto je výchozí stav:
+Hodnota `none` tvoří výchozí stav:
 
 ```css
 .container {
@@ -89,13 +103,13 @@ Toto je výchozí stav:
 }
 ```
 
-Občas se to ale může hodit použít i ve vlastním kódu, například když rušíme explicitní grid. Pokud to provedeme, platí pravidla pro implicitní, tedy nepřímo vyjádřenou mřížku – `grid-auto-columns` a `grid-auto-rows`.
+Občas se ale může hodit použít ji i ve vlastním kódu, například když rušíme explicitní grid. Pokud to provedeme, platí pravidla pro implicitní, tedy nepřímo vyjádřenou mřížku – `grid-auto-columns` a `grid-auto-rows`.
 
 ### Kombinace jednotek a jednotka fr {#jednotky}
 
 V gridu je možné pro definici řádků a sloupečků používat všechny možné [jednotky](jednotky.md), které už pro rozvržení v CSS používáte.
 
-Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *flex fraction* a dá se o něm mluvit jako o podílu na zbytku.
+Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *flex fraction* a dá se o v jejím případě mluvit jako o podílu na zbytku.
 
 Zápis může vypadat například takto:
 
@@ -107,15 +121,15 @@ Zápis může vypadat například takto:
 
 CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
 
-`1fr` je v chování velice podobné číslu `1`, které používáte ve vlastnosti `flex` u [flexboxu](css3-flexbox-polozky.md).
+`1fr` je v chování velice podobné číslu `1`, které používáte ve [vlastnosti `flex`](css-flex.md) u flexboxu.
 
 ### Pojmenovávání stop {#pojmenovane-stopy}
 
-Pojmenovávání stop se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu jako je `grid-column`, `grid-row` nebo `grid-area`.
+Pojmenovávání stop se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu jako je [`grid-column`, `grid-row`](css-grid-row-column.md) nebo [`grid-area`](css-grid-area.md).
 
 Každý sloupec nebo řádka je v gridu definovaná dvěma stopami.
 
-<!-- TODO obrázek -->
+<!-- TODO IMG -->
 
 Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v tabulce. Stopy jsou rámečky kolem buněk tabulky.
 
@@ -151,23 +165,27 @@ Proto je tady [funkce `repeat()`](css-repeat.md), která opakování zamezuje:
 }
 ```
 
-## Masonry {#masonry}
+Zápisem `repeat(6, 1fr)` říkáme: „Napiš šestkrát po sobě hodnotu `1fr`.“
+
+## Masonry, zděné rozvržení {#masonry}
 
 Hodnota `masonry` je speciální, protože by v budoucnu měla zařídit nativní [masonry (nebo zděný) layout](css-masonry.md).
 
-<figure>
+<figure class="web-only">
 <img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
 <figcaption markdown="1">
 *Nativně vykreslený masonry layout. Zdroj: [Rachel Andrew](https://codepen.io/rachelandrew/pen/wvWmZWB).*
 </figcaption>
 </figure>
 
-Vzhledem k tomu, že na konci roku 2020 to zatím podporuje jen prohlížeč Firefox ve verzi Nightly, bude ještě chvíli trvat než se z takové věci budeme moci začít těšit v běžných prohlížečích.
+Toto ale na konci léta roku 2021 zatím podporuje jen prohlížeč Firefox v případě nastavení volby uživatelem.
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Explorer 11 tyto vlastnosti nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md).
+Internet Explorer 11 vlastnosti `grid-template-rows`/`-columns` nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md). 
 
-Tento stařičký, ale občas ještě [používaný prohlížeč](msie.md), také nezvládá automatické umísťování položek do mřížky. I to je možné alespoň částečně vyřešit.
+Tento stařičký, ale občas ještě [používaný prohlížeč](msie.md), také nezvládá automatické umísťování položek do mřížky. I to je možné alespoň částečně vyřešit pomocí Autoprefixeru.
+
+V moderních prohlížečích nebudete s podporou mít problém.
 
 <!-- AdSnippet -->

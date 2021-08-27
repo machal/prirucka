@@ -1,26 +1,26 @@
 # CSS grid v Internet Exploreru
 
-„Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z 10 důvodů, proč lidé ještě v roce 2021 nepoužívají [CSS grid](css-grid.md).
+„Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z 10 důvodů, proč lidé ještě v roce 2021 CSS grid nepoužívají.
 
-Problém to ale v realitě zase tak moc není, protože u většiny projektů už nejspíš [není MSIE nutné používat](msie.md).
+V realitě to ale zase tak moc velký problém není, protože u většiny projektů už nejspíš [není MSIE nutné používat](msie.md). Je-li toto i váš případ, tuto podkapitolu račte vynechat.
 
-A pokud Explorer podporovat musíte, vězte, že nějakou (a ne úplně malou podporu) gridu má. To je jedna věc.
+A pokud Explorer podporovat musíte, vězte, že nějakou (a ne úplně malou) podporu gridu má. To je jedna věc.
 
 Druhá věc je, že tu podporu Exploreru můžete rozšířit pomocí chytrého hacku. V tomto textu se totiž budeme zabývat automatizovaným řešením pro zlepšení podpory gridu pomocí nástroje [Autoprefixer](autoprefixer.md).
 
-<p class="video">
+<p class="video web-only">
 Video: <a href="https://www.youtube.com/watch?v=JjmXOB01Yq0">CSS grid v Internet Exploreru</a> ~ Základy a krátké demo podle obsahu článku.
 </p>
 
 Pojďme tedy dát kombinaci gridu s MSIE novou šanci.
 
-## Co Internet Explorer z gridu podporuje a co ne {#podpora}
+## Které vlastnosti gridu Internet Explorer podporuje? {#podpora}
 
-jisté rozdíly mezi IE a ostatními zde jsou. Z těch důležitých například napráskejme, že Internet Explorer nativně neumí následující:
+Jisté rozdíly mezi IE a moderními prohlížeči zde jsou. Z těch důležitých například uveďme, že Internet Explorer nativně neumí následující:
 
-- automatické umísťování prvků do mřížky („auto-placement“),
-- pojmenovávání oblastí mřížky ([vlastnosti jako `grid-template-areas`](css-grid-template-areas.md)),
-- mezery mezi buňkami mřížky (např. [`grid-gap`](css-gap.md)).
+- Automatické umísťování prvků do mřížky („auto-placement“).
+- Pojmenovávání oblastí mřížky (vlastnosti jako [`grid-template-areas`](css-grid-template-areas.md)).
+- Mezery mezi buňkami mřížky (vlastnost [`gap`](css-gap.md)).
 
 Velká část uvedeného pro vás ale přečtením tohodle dlouhého textu přestane platit.
 
@@ -28,14 +28,16 @@ Velká část uvedeného pro vás ale přečtením tohodle dlouhého textu přes
 
 Naopak se málo ví, že stařičký IE nativně podporuje následující:
 
-- implicitní (nepředdefinovanou) mřížky,
-- [funkci `repeat()`](css-repeat.md), jen jinak: `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`,
-- další skvělou funkci – [`minmax()`](css-minmax.md),
-- klíčová slova `min-content` a `max-content`.
+- Implicitní (nepředdefinovanou) mřížku.
+- [Funkci `repeat()`](css-repeat.md), jen jinak. `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`.
+- [Funkci `minmax()`](css-minmax.md).
+- Klíčová slova `min-content` a `max-content`.
 
 To myslím není zlé.
 
-Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“. Jejich příčinou je rychlá implementace gridu v ranné fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, ale grid v Exploreru zůstal v původní variantě.
+Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“.
+
+Jejich příčinou je rychlá implementace gridu v ranné fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, grid ale v Exploreru zůstal v původní variantě, protože se tento prohlížeč ve své době aktualizoval jen velmi pomalu.
 
 ## Třísloupcové demo aneb „Jak to kurnikšopa funguje?“ {#demo}
 
@@ -49,25 +51,29 @@ Jde o rozvržení definované následujícím způsobem:
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-column-gap: 0.5em;  
   grid-template-areas: "a b c";
+  column-gap: 0.5em;  
 }
 ```
 
-Pro zájemce polopaticky:
+Pro zájemce vše vysvětlím polopaticky:
 
-- `display: grid` asi vysvětlovat nemusím. Definujeme prostě kontejner mřížky.
-- `grid-template-columns: 1fr 3fr 1fr` specifikuje samotnou mřížku. O [jednotce `fr`](css-jednotka-fr.md) píšu v jiném textu.
-- `grid-column-gap: 0.5em` je zápis pro mezeru mezi sloupci layoutu.  
+- `display:grid` asi vysvětlovat nemusím. Definujeme prostě kontejner mřížky.
+- `grid-template-columns:1fr 3fr 1fr` specifikuje samotnou mřížku. O [jednotce `fr`](css-jednotka-fr.md) píšu v jiném textu.
 - `grid-template-areas` je šablona pojmenování oblastí pro následné využití v CSS.
+- `column-gap:0.5em` je zápis pro mezeru mezi sloupci layoutu.
 
 Teď to nejlepší. Tenhle kód nám Autoprefixer přeloží tak, aby v pohodě fungoval v Internet Exploreru 11. Včetně mezer (`-gap`) a pojmenovaných oblastí (`-areas`). Tedy vlastností, které tenhle pravěký prohlížeč neumí.
 
-### Proč takhle složitě? Protože Autoprefixer
+Než se k tomu dostaneme, musím zmínit jednu nevýhodu.
 
-Vy znalejší jste si jistě všimli, že pro takto jednoduchý layout by bylo zbytečné definovat šablonu pojmenování oblastí – `grid-template-areas`. To je ale oběť na oltář podpory v Internet Exploreru.
+### Proč layout zapisuji takhle složitě? Protože Autoprefixer
 
-Dalším kódem už jen umístíme sloupečky do pojmenovaných oblastí:
+Vy znalejší jste si jistě všimli, že pro takto jednoduchý layout je zbytečné definovat šablonu pojmenování oblastí – `grid-template-areas`. 
+
+To je ale oběť na oltář podpory v Internet Exploreru, respektive vyžaduje to po nás Autoprefixer.
+
+Dalším kódem ještě musíme umístít sloupečky do pojmenovaných oblastí:
 
 ```css
 .side-1 {
@@ -87,7 +93,7 @@ A šup! V další fázi se můžeme kochat kódem, který vypotí Autoprefixer.
 
 ### Kód produkovaný Autoprefixerem
 
-Nejprve rodič layoutu:
+Nejprve se podíváme na kód generovaný tímto nástrojem pro rodiče layoutu:
 
 ```css
 .container {
@@ -99,7 +105,7 @@ Nejprve rodič layoutu:
 Následuje samozřejmě výše uvedený kód pro moderní prohlížeče. Ten pro zjednodušení vynechávám. Opět ale oba řádky vysvětlím:
 
 - `display: -ms-grid` – prefixovaný zapínač gridu v Exploreru.
-- `-ms-grid-columns: 1fr 0.5em 3fr 0.5em 1fr` – magie. Autoprefixer spojil definici mřížky s definicí mezer (`grid-column-gap`), abychom ty (sakramentsky návykové) díry v layoutu mohli využívat i v Exploreru, který žádnou z „gap vlastností“ nepodporuje.
+- `-ms-grid-columns: 1fr 0.5em 3fr 0.5em 1fr` – magie. Autoprefixer spojil definici mřížky s definicí mezer (`column-gap`), abychom ty (sakramentsky návykové) díry v layoutu mohli využívat i v Exploreru, který žádnou z „gap vlastností“ nepodporuje.
 
 Kód prvků layoutu, jež Autoprefixer vyrobí pro potřeby Exploreru, vypadá takhle:
 
@@ -125,7 +131,6 @@ IE totiž neumí ani žádnou z vlastností `*-area`. Autoprefixer tak automatic
 Pokud vám nesedí počty sloupců u vlastnosti `-ms-grid-column`, pak raději zopakuji, že Autoprefixer uměle přidává sloupečky, abychom mohli používat mezery `-gap`.
 
 Demo jsme snad rozebrali do posledního kamínku. Tady je ještě v celé kráse: [cdpn.io/e/BvJjdz](https://codepen.io/machal/pen/BvJjdz).
-
 
 ## Co Autoprefixer umí? {#autoprefixer-vlastnosti}
 
@@ -282,3 +287,9 @@ V samotném CSS kódu se pak držte těchto pravidel:
 Pokud na něco z toho zapomenete, Autoprefixer vás asi řádně potrápí, protože žádné prefixy nepřidá.
 
 <!-- AdSnippet -->
+
+Možná vám to celé připadá dost složité. Nedivil bych se vám.
+
+Na závěr ale chci akcentovat dva důležité fakty. Za prvé – jednodušší layouty nejsou pro Autoprefixer problematické a výše uvedené detailní znalosti pravděpodobně nebudete potřebovat.
+
+Za druhé – v době vydání knihy velmi pravděpodobně nebudete muset podporovat Internet Explorer a tuto podkapitolu jste tedy mohli přeskočit. Z toho vyplývá, že bych vám v tomto odstavci klidně mohl nadávat a vy byste si dále žili klidný život. Bez mých nadávek a Exploreru.

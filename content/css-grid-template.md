@@ -1,12 +1,12 @@
 # Vlastnost grid-template
 
-Vlastnost `grid-template` slouží k definování mřížky v [CSS gridu](css-grid.md).
+Vlastnost `grid-template` slouží k definování mřížky v CSS gridu.
 
-Jde o zkratku (shorthand) pro vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md) a také [grid-template-areas](css-grid-template-areas.md).
+Jde o zkratku (shorthand) pro vlastnosti [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a také [`grid-template-areas`](css-grid-template-areas.md).
 
 ## Definování sloupečků a řádků {#cols-rows}
 
-V jednoduchém demu si ukážeme `grid-template` jako zkratku pro vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md):
+V prvním demu si ukážeme `grid-template` jako zkratku pro vlastnosti `grid-template-rows` a `grid-template-columns`:
 
 ```css
 .container {
@@ -20,15 +20,17 @@ To odpovídá zápisu:
 .container {
   grid-template-rows: auto auto;
   grid-template-columns: 2fr 1fr;
-  grid-template-areas: none;  
+  grid-template-areas: none;
 }
 ```
+
+V živé ukázce si můžete vyzkoušet změnit některé hodnoty.
 
 CodePen: [cdpn.io/e/YmWxzw](https://codepen.io/machal/pen/YmWxzw?editors=1100)
 
 ## Sloupečky, řádky a pojmenované stopy {#cols-rows-stopy}
 
-V hranatých závorkách zde můžeme uvést také pojmenované řádky a sloupce jak o nich píšeme v textu o vlastnostech [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md#pojmenovane-stopy)
+V hranatých závorkách můžeme při zapisování hodnoty `grid-template` uvést také pojmenované řádky a sloupce:
 
 ```css
 .container {
@@ -48,11 +50,13 @@ To odpovídá zápisu:
 }
 ```
 
+Opět je k dispozici živá ukázka.
+
 CodePen: [cdpn.io/e/dxXzpG](https://codepen.io/machal/pen/dxXzpG?editors=1100)
 
 ## Sloupečky, řádky a pojmenované oblasti {#cols-rows-oblasti}
 
-V téhle jedné vlastnosti je také možné definovat rozměry gridu spolu s pojmenováním oblastí:
+V poslední ukázce uvidíte, že je také možné definovat rozměry gridu spolu s pojmenováním oblastí:
 
 ```css
 .container {
@@ -64,7 +68,7 @@ V téhle jedné vlastnosti je také možné definovat rozměry gridu spolu s poj
     2fr 1fr;
 ```
 
-Je to už docela složité, chápu. Definují se nejprve řádky – jejich jména a výšky – a pak za lomítkem šířky sloupečků. Odpovídá to následujícímu:
+Je to už docela složité. Definují se nejprve řádky – jejich jména a výšky – a pak za lomítkem šířky sloupečků. Odpovídá to následujícímu:
 
 ```css
 .container {
@@ -80,10 +84,16 @@ CodePen: [cdpn.io/e/JgKyxK](https://codepen.io/machal/pen/JgKyxK?editors=1100)
 
 ## Co je dobré vědět? {#dobre-vedet}
 
+Je zde pár kulišáren, na které bych vás rád upozornil:
+
 - Všimněte si, že `grid-template` nastavuje `grid-template-areas: none`, takže resetuje i případné dříve nastavené oblasti.
-- [Funkce `repeat()`](css-repeat.md) zde není povolena, protože se zde dává přednost vizuálnímu vyjádření mřížky, takzvanému „ASCII artu“.
-- Stejnou syntaxi má vlastnost `grid`, která ovšem navíc umožňuje nastavení rozměrů implicitního gridu (vlastnosti `grid-auto-columns`, `grid-auto-rows`, and `grid-auto-flow`), takže je pravděpodobné, že můžete chtít použít spíše právě ji.
+- [Funkce `repeat()`](css-repeat.md) zde není povolena, protože se dává přednost vizuálnímu vyjádření mřížky, takzvanému „ASCII artu“.
+- Stejnou syntaxi má další zkratka – [vlastnost `grid`](css-grid-zkratka.md), která ovšem navíc umožňuje nastavení rozměrů implicitního gridu (vlastnosti `grid-auto-columns`, `grid-auto-rows`, a `grid-auto-flow`), takže je pravděpodobné, že můžete chtít použít spíše právě ji.
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Exploreru 11 vlastnost nepodporuje. Asi už víte, že [díky Autoprefixeru](css-grid-msie.md) to tak problematické být nemusí. Doporučení zde ale zní: Používejte vlastnost `grid-template`, nikoliv zkratku `grid` a půjde to.
+Internet Exploreru 11 vlastnost nepodporuje. Můžete to zkusit automaticky převádět [díky Autoprefixeru](css-grid-msie.md).
+
+Pokud ale podporu MSIE s využitím Autoprefixeru plánujete, moje doporučení zní: Používejte vlastnost `grid-template`, nikoliv zkratku `grid` a vyhnete se problémům.
+
+Moderní prohlížeče nemají s `grid-template` problém.
