@@ -36,10 +36,8 @@ Obsah je král a HTML je jeho trůn. Tímhle musíme začít.
 
 ## Přístupnost {#pristupnost}
 
-Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, které jsme mohli nechtěně vytvořit uživatelům, a to ne jen těm hendikepovaným. Přístupnost se týká všech.
+Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, které jsme mohli nechtěně vytvořit uživatelům, a to ne jen těm hendikepovaným. Přístupnost se týká všech.  V obecné rovině je ošetřena normou WCAG. Projděte proto web a hledejte možné chyby podle standardu [„Web Content Accessibility Guidelines“ ve verzi 2.1](http://blindfriendly.cz/wcag20checklist/). Nastavte si střední přísnost, [úroveň AA](http://www.pristupnost.cz/jak-tvorit-pristupny-web/pravidla-pristupnosti/wcag/). Kontrolujte nástrojem [WAVE - Web Accessibility Evaluation Tool](https://wave.webaim.org/).
 
-- Kontrola podle normy WCAG ★★★  
-<small>Projděte web a hledejte možné chyby podle standardu [„Web Content Accessibility Guidelines“ ve verzi 2.0](http://blindfriendly.cz/wcag20checklist/). Nastavte si střední přísnost, [úroveň AA](http://www.pristupnost.cz/jak-tvorit-pristupny-web/pravidla-pristupnosti/wcag/). Nástroj: [WAVE - Web Accessibility Evaluation Tool](https://wave.webaim.org/).</small>
 - Struktura dokumentu: WAI-ARIA oblasti a HTML5 elementy ★★★  
 <small>Správná struktura umožní zrakově postiženým strukturované procházení, což jim šetří čas. Stačí přidat „role“ pro navigaci, obsah a třeba vyhledávání. Více: [WAI-ARIA](wai-aria.md) a [HTML5 elementy](html5-struktura.md) na Vzhůru dolů.</small>
 - Procházení stránky tabulátorem ★★☆  
@@ -53,7 +51,7 @@ Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, kter�
 - Multimédia mají textovou alternativu ★★☆  
 <small>Obrázkům doplňte smysluplný popisek do atributu `alt`, používejte [značku `<figure>`](figure-figcaption.md). Více [Textové alternativy obrázků na Zdrojáku](https://zdrojak.cz/clanky/pristupnost-html5-textove-alternativy-obrazku-1-2-teorie/).</small>
 
-<small>S testováním přístupnosti vám pomohou také nástroje [Lighthouse](lighthouse.md), [Accessibility Insights](https://accessibilityinsights.io/) nebo [Tenon](https://tenon.io/). Detailně se tímto tématem zabývají také checklisty [na A11Y Project](https://a11yproject.com/checklist/) nebo [kontrolní seznam Heydona Pickeringa](https://github.com/Heydon/inclusive-design-checklist).</small>
+<small>Detailnější instrukce k otestování přístupnosti své stránky najdete také v článku Radka Pavlíčka [Jak na jednoduchý audit přístupnosti – otestujte si bezbariérovost svého webu](https://poslepu.cz/jak-na-jednoduchy-audit-pristupnosti-otestujte-si-bezbarierovost-sveho-webu/).</small>
 
 ## Design webu {#design}
 
@@ -66,7 +64,7 @@ Tuhle oblast mají obvykle na starosti naši kolegové designéři. Pojďme ale 
 - Grafika podporuje HD displeje typu Retina ★★★  
 <small>Obyčejná grafika nebude na vysokokapacitních displejích vypadat dobře. Trochu teorie [o problému v článku](css-pixel.md). V praxi potřebujete [SVG](svg.md), případně také [atribut srcset](srcset-sizes.md).</small>
 - Šablony pro chybové stránky 404 a 50x ★★★  
-<small>Navrhněte a namimplementujte vlastní. Výchozí chybovky serverových frameworků nebo serverů návštěvníkovi nepomohou. Pár [tipů v článku na Interval.cz](https://www.interval.cz/clanky/pet-nezbytnych-prvku-uspesne-chybove-stranky-404/).</small>
+<small>Navrhněte a implementujte vlastní. Výchozí chybovky serverových frameworků nebo serverů návštěvníkovi nepomohou. Pár [tipů v článku na Interval.cz](https://www.interval.cz/clanky/pet-nezbytnych-prvku-uspesne-chybove-stranky-404/).</small>
 
 <small>Věnujte pozornost také [UX checklistu pro e-shopy od Ondřeje Ilinčeva](http://www.ilincev.com/ux-checklist-eshop) nebo [UX checklistu Lukáše Dubiny](https://www.lukasdubina.cz/uxdesign-checklist).</small>
 
@@ -151,9 +149,9 @@ Používejte také nástroje pro obecnou automatickou kontrolu webu:
 
 <small>
 
-Checklist pro frontendisty, verze 3.0. Autor: [Martin Michálek](https://www.vzhurudolu.cz/martin).
+Checklist pro frontendisty, verze 3.0. Autor: [Martin Michálek](https://www.vzhurudolu.cz/martin). Za připomínky ke třetí verzi autor děkuje [Radkovi Pavlíčkovi](https://poslepu.cz/).
 
-Úpravy vítány. Stačí vytvořit pull request na [Githubu](https://github.com/machal/prirucka/blob/master/content/checklist.md) nebo napsat komentář.
+Připomínky vítány. Stačí vytvořit pull request na [Githubu](https://github.com/machal/prirucka/blob/master/content/checklist.md) nebo napsat komentář.
 
 </small>
 
