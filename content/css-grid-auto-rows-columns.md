@@ -1,49 +1,59 @@
 # Vlastnosti grid-auto-rows a grid-auto-columns: definice implicitního gridu
 
-Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, tedy výslovně nedefinovaného [gridu v CSS](css-grid.md).
+Vlastnosti `grid-auto-rows` a `grid-auto-columns` je možné použít pro tvorbu implicitního, tedy výslovně nedefinovaného gridu v CSS.
 
 Jsou tedy doplňkem vlastností [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, tedy autorsky definovaného.
 
-Použijete jej hlavně pro řádky (`grid-auto-rows`), a to v případech, kdy máte v HTML neznámý počet položek. 
+Tyto vlastnosti jsou užitečné pro implicitní řádky (`grid-auto-rows`), a to v případech, kdy máte v HTML neznámý počet položek. Řádky se vám v layoutu tvoří samy a vy nemusíte definovat mřížku pro různé počty položek v ní.
 
 ## Možné hodnoty {#hodnoty}
 
-Vlastnostem `grid-auto-rows` a `grid-auto-columns` můžete přiřazovat stejné hodnoty jako jejich explicitním kolegyním – [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md).
+Vlastnostem implicitního gridu `grid-auto-rows` a `grid-auto-columns` můžete přiřazovat stejné hodnoty jako jejich „explicitním kolegyním“  – `grid-template-rows` a `grid-template-columns`.
 
-### Klíčová slova
+Příklady budu držet kolem definování řádků, ale samozřejmě platí i pro sloupce:
 
-<!-- TODO:
-- Dopracovat podle https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns 
-- Více ukázek, přidat všude, odkazy na klíčová slova atd. 
--->
+Výchozí je hodnota `auto`:
 
 ```css
-grid-auto-columns: min-content;
-grid-auto-columns: max-content;
-grid-auto-columns: auto;
+grid-auto-rows: auto;
 ```
 
-### Jedna hodnota pro všechny sloupce (nebo řádky)
+Říká se tím, že výšku řádku definuje výška obsahu v buňkách.
+
+### Jedna hodnota pro všechny řádky
 
 ```css
-grid-auto-columns: 100px;
-grid-auto-columns: 10%;
-grid-auto-columns: 1fr;
+grid-auto-rows: 100px;
+grid-auto-rows: 10%;
+grid-auto-rows: 1fr;
 ```
+
+V takovém případě prostě natvrdo nastavíme minimální výšku buněk. Obsah to samozřejmě může svou výškou přebít.
 
 ### Více hodnot, které se při větším počtu sloupců opakují
 
 ```css
-grid-auto-columns: 100px 200px;
-grid-auto-columns: 10% 33.3%;
-grid-auto-columns: 1fr minmax(100px, auto);
+grid-auto-rows: 100px 200px;
+grid-auto-rows: 10% 33.3%;
+grid-auto-rows: 1fr minmax(100px, auto);
 ```
 
-Jak ale onen implicitní grid vzniká a kde je možné tyto vlastnosti využít?
+Hodnota `100px 200px` říká, že první a pak každý lichý nedefinovaný a tedy implicitní řádek bude mít výchozí výšku `100px`, sudé řádky pak `200px`.
+
+### Klíčová slova
+
+```css
+grid-auto-columns: min-content;
+grid-auto-columns: max-content;
+```
+
+Je samozřejmě možné používat [funkce a klíčová slova](css-minmax.md), stejně jako při definici explicitní mřížky.
+
+Ukázky máme tedy za sebou. Jak ale onen implicitní grid vzniká a kde je možné tyto vlastnosti využít?
 
 ## Příklad: Více položek v gridu než je definovaných řádků {#priklad-radky}
 
-Myslím, že vlastnosti `grid-auto-` častěji použijete pro řádky layoutu, tedy `grid-auto-rows`. Může se vám totiž snadno stát, že v mřížce je předem daný počet sloupečků, ale neznámý počet položek a tedy řádků:
+Jak už jsem říkal – vlastnosti `grid-auto-` častěji použijete pro řádky layoutu, tedy `grid-auto-rows`. Může se vám totiž snadno stát, že v mřížce je předem daný počet sloupečků, ale neznámý počet položek a tedy řádků:
 
 ```css
 .container {
@@ -54,13 +64,15 @@ Myslím, že vlastnosti `grid-auto-` častěji použijete pro řádky layoutu, t
 
 Vlastnost `grid-template-rows` umí definovat rozměry známých řádků. Nezvládá ovšem definovat opakování hodnot.
 
-Pokud bychom chtěli střídat výšku `100px` a `200px` pro liché a sudé řádky, přičemž počet řádků neznáme, je tu vlastnost `grid-auto-rows`:
+Pokud bychom chtěli střídat výšku `100px` a `200px` pro liché a sudé řádky, přičemž počet řádků neznáme, i pro tohle je výborná vlastnost `grid-auto-rows`:
 
 ```css
 .container {
   grid-auto-rows: 100px 200px;
 }  
 ```
+
+<!-- TODO IMG -->
 
 CodePen: [cdpn.io/e/PMGJpa](https://codepen.io/machal/pen/PMGJpa?editors=1100)
 
@@ -76,7 +88,7 @@ Dalším možností, jak může explicitní grid vzniknout, je umístění polo�
 }
 ```
 
-Jenže v HTML máme čtyři a ne šest položek. A co víc, pátou a šestou položku umísťujeme na neexistující pozice v mřížce:
+Jenže v HTML máme šest a ne čtyři položky. A co víc – pátou a šestou položku nezbedný kodér umístil na pozice v mřížce, které neexistují:
 
 ```css
 .column.fifth {
@@ -90,9 +102,9 @@ Jenže v HTML máme čtyři a ne šest položek. A co víc, pátou a šestou pol
 }
 ```
 
-Prohlížeč nám při pokusu o umístění na ve třetím sloupci, tedy na pozici nedefinovanou explicitním gridem, grid rozšíří. Ale rozšíří je gridem implicitním. Výchozí rozměry prvků nám tedy zřejmě nebudou vyhovovat:
+Prohlížeč nám při pokusu o umístění do třetího sloupce, tedy na pozici nedefinovanou explicitním gridem, grid rozšíří. Ale rozšíří jej mřížkou implicitní. Výchozí rozměry prvků nám tedy zřejmě nebudou vyhovovat:
 
-<!-- TODO obrázek bez grid-auto-columns -->
+<!-- TODO img obrázek bez grid-auto-columns -->
 
 Opravíme to až touto deklarací:
 
@@ -102,12 +114,10 @@ Opravíme to až touto deklarací:
 }
 ```
 
-<!-- TODO obrázek s grid-auto-columns -->
+<!-- TODO img obrázek s grid-auto-columns -->
 
 CodePen: [cdpn.io/e/ymazjy](https://codepen.io/machal/pen/ymazjy?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnosti `grid-auto-rows` a `grid-auto-columns` podporuje kdejaký prohlížeč, včetně Internet Exploreru od verze 10
-
-Jediný problém je ve Firefoxu, který v době psaní textu nepřijímá zápis vlastnosti s více hodnotami (např `grid-auto-columns:100px 150px`). Viz [řešený bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1339672).
+Vlastnosti `grid-auto-rows` a `grid-auto-columns` podporuje kdejaký prohlížeč, včetně Internet Exploreru od verze 10. Jupí! V IE je potřeba používat vlastnosti pojmenované jako `-ms-grid-rows` a `-ms-grid-columns` nebo to řešit Autoprefixerem.
