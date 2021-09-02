@@ -1,15 +1,17 @@
 # Vlastnost grid-auto-flow
 
-Vlastnost `grid-auto-flow` určuje, jak bude fungovat algoritmus automatického umísťování prvků do mřížky v [CSS gridu](css-grid.md).
+Vlastnost `grid-auto-flow` určuje, jak bude fungovat algoritmus automatického umísťování prvků do mřížky.
 
 ## Hodnoty {#hodnoty}
 
-| Hodnota                    | Co dělá?           | 
+| Hodnota                    | Co dělá?           |
 |----------------------------|--------------------|
 | `row`     | Výchozí hodnota. Prvky layoutu se vykreslují po řádcích. |
 | `column`  | Prvky layoutu se vykreslují po sloupečcích. |
 | `dense`   | Vykresluje se po řádcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků. |
 | `column dense`   | Vykresluje se po sloupečcích a prohlížeč může vyplnit mezery změnou pořadí prvků. |
+
+Co teď? Vzhůru do ukázek!
 
 ## Příklad: změna směru vykreslování pomocí grid-auto-flow: column {#priklad-column}
 
@@ -53,9 +55,9 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 
 <p><img src="../dist/images/original/vdlayout/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column"></p>
 
-V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
-
 CodePen: [cdpn.io/e/voXWGv](https://codepen.io/machal/pen/voXWGv?editors=1100)
+
+V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
 
 ## Příklad: zahuštěné vykreslování pomocí grid-auto-flow:dense {#priklad-dense}
 
@@ -83,7 +85,7 @@ Layout je definovaný takto:
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 10px;
-  grid-auto-flow: dense;  
+  grid-auto-flow: dense;
 }
 ```
 
@@ -92,13 +94,15 @@ Vysvětleme:
 - Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovoný počet sloupečku ([funkce `repeat()`](css-repeat.md)) ale každý musí být minimálně 120px široký `minmax(120px, 1fr)` (více o [funkci `minmax()`](css-minmax.md)).
 - `grid-auto-flow: dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
 
-<!-- TODO obrázek porovnání breakpointů bez dense a s ním https://codepen.io/machal/pen/VoKroo?editors=1100 -->
+<!-- TODO IMG obrázek porovnání breakpointů bez dense a s ním https://codepen.io/machal/pen/VoKroo?editors=1100 -->
 
 CodePen: [cdpn.io/e/VoKroo](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
 ## Přístupnost a pozor na změnu pořadí {#pristupnost}
 
-Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to! Dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Snažte se proto tuto deklaraci používat jen pro prvky, u kterých na pořadí zase tak moc nezáleží.
+Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to!
+
+Dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Snažte se proto tuto deklaraci používat jen pro prvky, u kterých na pořadí zase tak moc nezáleží.
 
 Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
 

@@ -1,11 +1,17 @@
 # Vlastnost grid
 
-`grid` je zkratka (shorthand) pro definování [CSS gridu](css-grid.md).
+`grid` je zkratka (shorthand) pro definování všech vlastností CSS gridu.
 
 V jedné deklaraci můžete nastavit jen jeden z obou možných gridů:
 
 - *explicitní*, výslovně definovaný pomocí vlastností [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
 - *implicitní*, definovaný pomocí vlastností [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md)
+
+…a ještě další vlastnosti.
+
+Je to mocná zbraň, která dokáže zrychlit práci zkušených mřížkových ninjů, ovšem začínajícím bych ji raději nedoporučoval používat.
+
+Pojďme se podívat na několik ukázek.
 
 ## Definice explicitního gridu {#explicitni}
 
@@ -29,7 +35,7 @@ Odpovídá tomuto zápisu:
 .container {
   grid-template-rows: auto auto;
   grid-template-columns: 2fr 1fr;
-  grid-template-areas: none;  
+  grid-template-areas: none;
 }
 ```
 
@@ -41,7 +47,7 @@ To zda definujete v daném směru definujete implicitní grid se pozná podle kl
 
 ```css
 .container {
-  grid: auto-flow 1fr / 100px;
+  grid: auto-flow 1fr / 100px 100px;
 }
 ```
 
@@ -111,9 +117,11 @@ Můžeme ji nastavit i pomocí zkratky `grid`. Následující dva kousky kódu b
 
 ## Co je ještě dobré vědět? {#dobre-vedet}
 
-- U všech zkratek v CSS platí, že vlastnosti, které nedefinujeme, zkratka nastaví na jejich výchozí hodnoty.
+- U všech zkratek v CSS platí, že vlastnosti, které nedefinujeme, zkratka nastaví na jejich výchozí hodnoty. To může být občas nebezpečné.
 - Vlastnost pro mezeru mezi buňky layoutu – [`gap`](css-gap.md) – nelze přes zkratku `grid` nastavit a není tudíž jejím použitím resetována.
 
 ## Podpora v prohlížečích {#podpora}
 
-Zkratku `grid` zvládají všechny prohlížeče, kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat [CSS grid](css-grid.md) i tento prohlížeč, doporučuji se zkratce `grid` vyhnout. Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v IE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).
+Zkratku `grid` zvládají všechny prohlížeče, kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat CSS grid i tento prohlížeč, doporučuji se zkratce `grid` vyhnout.
+
+Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v IE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).

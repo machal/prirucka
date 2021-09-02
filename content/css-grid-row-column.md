@@ -1,6 +1,6 @@
 # Vlastnosti grid-column a grid-row
 
-V textu se zaměříme na vlastnosti `grid-column` a `grid-row`, které slouží k umísťování položek v definovaném [CSS gridu](css-grid.md).
+V textu se zaměříme na vlastnosti `grid-column` a `grid-row`, které slouží k umísťování položek v definované mřížce.
 
 Ve skutečnosti se jedná o zkratky pro vlastnosti `grid-column-start`, `grid-column-end` a `grid-row-start`, `grid-row-end`.
 
@@ -15,12 +15,12 @@ grid-column: <grid-column-start> / <grid-column-end>;
 
 | Možnost                       | Ukázka hodnoty             |
 |-------------------------------|----------------------------|
-| [Čísla stop](#cisla-stop)     | `1 / 2`                    |
-| [Jména stop](#jmena-stop)     | `first-line / second-line` |
-| [Rozsah](#span)               | `1 / span 2`               |
-| [Jedno číslo](#jedno)         | `3`                        |
-| [Záporná čísla](#zaporna)     | `-1 / -3`                  |
-| [Automatické umístění](#auto) | `auto`                     |
+| Čísla stop                    | `1 / 2`                    |
+| Jména stop                    | `first-line / second-line` |
+| Rozsah                        | `1 / span 2`               |
+| Jedno číslo                   | `3`                        |
+| Záporná čísla                 | `-1 / -3`                  |
+| Automatické umístění          | `auto`                     |
 
 ### Čísla stop {#cisla-stop}
 
@@ -59,9 +59,9 @@ Je to totéž, jako bychom napsali:
 
 Všimněte si, že řádky končíme na čísle 4, i když je máme jen tři. Je to dobrá připomínka toho, že se zde neodkazujeme na čísla řádků či sloupců, ale na čísla linek, které grid definují.
 
-<!-- TODO obrázek -->
+<!-- TODO IMG obrázek -->
 
-CodePen: [cdpn.io/e/LwWxWy](https://codepen.io/machal/pen/LwWxWy?editors=1100)
+CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
 ### Jména stop {#jmena-stop}
 
@@ -142,7 +142,7 @@ CodePen: [cdpn.io/e/VoppWg](https://codepen.io/machal/pen/VoppWg?editors=1100)
 
 ### Automatické umístění {#auto}
 
-Hodnota `auto` vypíná ruční umísťování a nechá pracovat algoritmus „autoplacementu“.
+Hodnota `auto` vypíná ruční umísťování a nechá pracovat algoritmus „autoplacementu“, postupného automatického umístění do existujících buněk rozvržení.
 
 Vezměme stejný příklad:
 
@@ -156,3 +156,7 @@ Vezměme stejný příklad:
 Prvek bude dále umístění do druhého sloupce, ale v tomto případě do prvního řádku. Algoritmnus automatického umísťování zde vždy začíná a dosud nevykresloval žádné jiné prvky mřížky, které by pozici mohly posunout.
 
 CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
+
+## Podpora
+
+Moderní prohlížeče jsou s těmito vlastnostmi úplně v pohodě. Horší je to samozřejmě v MSIE, ale to navadí, protože podobné vlastnosti tam existují. [Autoprefixer](css-grid-msie.md) nám pomůže a např. `grid-row` se přeloží do `-ms-grid-row`.
