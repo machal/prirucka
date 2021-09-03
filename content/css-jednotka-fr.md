@@ -1,6 +1,6 @@
 # Jednotka fr v CSS
 
-Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru v [CSS gridu](css-grid.md). Proto `fr` jako *fraction unit*.
+Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru v CSS gridu. Proto `fr`, jako *fraction unit*.
 
 Využívá se ve vlastnostech popisující mřížku, jako jsou [`grid-template-columns/rows`](css-grid-template-rows-columns.md) nebo [grid-auto-columns/rows](css-grid-auto-rows-columns.md).
 
@@ -23,13 +23,37 @@ Raději zdůrazněme, že šířka buňky se ani zde nikdy nezmenší pod šíř
 
 ## Je (a není) to jako procenta {#procenta}
 
-Zjednodušeně by se tahle jednotka dala přirovnat k procentům (`%`), ovšem s tím rozdílem, že nemusíme počítat prvky gridu a řešit nastavení box modelu. Demo to ostatně ukáže v celé kráse.
+Zjednodušeně by se tahle jednotka dala přirovnat k procentům (`%`), je to ale lepší než procenta.
 
-CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
+<!-- AdSnippet -->
+
+Demo to ostatně ukáže v celé kráse. Máme dva kontejnery vysázené gridem, které mají tři vnitřní prvky. První layout je definován v procentech, druhý ve `fr`.
+
+```css
+.container-percentage {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  gap: 10px;
+}
+
+.container-fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+```
+
+Na pohled by to mohlo fungovat stejně, ale to opravdu jen na první pohled.
+
+<!-- TODO IMG: screen s rozdílem mezi prvním a druhým -->
+
+Výhoda `fr` oproti procentům? Nemusíme počítat prvky gridu a řešit nastavení box modelu.
 
 Procentuální grid v demu nastavujeme jako `grid-template-columns: 33.3% 33.3% 33.3%`. Může to být fajn, ale procentuální hodnotu musíme vypočíst podle počtu sloupců v HTML. No a pokud by se nám ten změnil, nezbývá než upravovat také CSS.
 
 Další problém je v *box modelu*, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`) a bez změny počítání box modelu pomocí vlastnosti [`box-sizing`](css3-box-sizing.md) nám prvky přetečou z rodičovského kontejneru.
+
+CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
 
 ## Podíl na zbytku {#podil}
 
@@ -45,8 +69,6 @@ CodePen: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)
 
 Podívejme se ještě na jeden speciální příklad, který ukazuje použití nulové (`0fr`) a desetinné (`0.1fr`) hodnoty.
 
-CodePen: [cdpn.io/e/PoYGQOw](https://codepen.io/machal/pen/PoYGQOw?editors=1100)
-
 Mřížku definujeme takto:
 
 ```css
@@ -57,11 +79,13 @@ Mřížku definujeme takto:
 
 Pokud je nastavená nulová hodnota (`0fr`) vykreslí prohlížeč sloupec v šířce obsahu.
 
+<!-- TODO IMG -->
+
 Poměrně užitečné jsou také desetinné hodnoty. Jejich součet je `0.6fr`, takže zanechává `0.4fr` prostoru prázdného.
 
 Obojí se myslím může docela hodit, nemám pravdu?
 
-<!-- AdSnippet -->
+CodePen: [cdpn.io/e/PoYGQOw](https://codepen.io/machal/pen/PoYGQOw?editors=1100)
 
 Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to nevede, už jsem to ověřil.
 
@@ -72,6 +96,6 @@ Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to
 
 ## Podpora v prohlížečích {#poznamky}
 
-Podpora je skvělá. Nevím o žádném relevantním prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to za relevantní prohlížeč v době psaní textu považuji i Internet Explorer 11.
+Podpora je skvělá. Nevím o žádném mezi uživateli rozšířeném prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to do této skupiny prohlížečů o prázdninách 2021 považuji i Internet Explorer 11.
 
 <!-- AdSnippet -->

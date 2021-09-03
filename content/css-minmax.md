@@ -1,29 +1,30 @@
 # CSS funkce minmax() a klíčová slova min-content, max-content a fit-content
 
-Funkce (nebo přesněji řečeno „zápis“) `minmax()` a navázaná klíčová slova slouží k definování rozsahu šířky nebo výšky pro sloupce nebo řádky mřížky v [CSS gridu](css-grid.md).
+Funkce (nebo přesněji řečeno „zápis“) `minmax()` a navázaná klíčová slova definují rozsah šířky nebo výšky pro sloupce či řádky mřížky v CSS gridu.
 
-Pro plnohodnotné používání mřížky je to skoro nepostradatelné, ale je v tom řada nejasností, záludností a jiných opičáren. Pojďme se na ně v tomto textu podívat.
+Pro plnohodnotné používání mřížky je to skoro nepostradatelné, ale je v tom řada nejasností, záludností a… opičáren. Pojďme se na ně v tomto textu podívat.
 
 <!-- AdSnippet -->
 
 Možných hodnot je více:
 
-| Hodnota                         | Ukázka                       |
-|-------------------------------|------------------------------|
-| [Statický rozsah](#zaklady)   | `minmax(100px, 200px)`       |
-| [Flexibilní rozsah](#fr)      | `minmax(100px, 1fr)`         |
-| [max-content](#max-content)   | `minmax(100px, max-content)` |
-| [min-content](#min-content)   | `minmax(min-content, 200px)` |
-| [auto](#auto)                 | `minmax(auto, auto)`         |
-| [fit-content()](#fit-content) | `fit-content(200px)`         |
+| Hodnota                          | Ukázka                       |
+|----------------------------------|------------------------------|
+| Statický rozsah                  | `minmax(100px, 200px)`       |
+| Flexibilní rozsah                | `minmax(100px, 1fr)`         |
+| `max-content` (maximální velikost obsahu)                    | `minmax(100px, max-content)` |
+| `min-content` (minimální velikost obsahu)                    | `minmax(min-content, 200px)` |
+| `auto` (automaticky)                           | `minmax(auto, auto)`         |
+| `fit-content` (podle obsahu)                  | `fit-content`         |
+| `fit-content()` (podle obsahu, s maximem)                  | `fit-content(200px)`         |
 
-V tomhle textu řešíme vlastnosti pro nastavení rozměrů stop mřížky podle vlastních (obsahových nebo v angličtině *intrinsic*) velikostí prvků uvnitř.
+V tomhle textu řešíme vlastnosti pro nastavení rozměrů stop mřížky podle vlastních (obsahových nebo v angličtině *intrinsic*) velikostí prvků uvnitř. Zabýváme se rozměry obsahu.
 
 <div class="web-only related" markdown="1">
 - [CSS funkce `min()`, `max()` a `clamp()`](css-min-max-clamp.md)
 </div>
 
-Je dobré si uvědomit, že se to liší od nastavení rozměrů zvenčí – pomocí fixních [jednotek](jednotky.md) (`px`, `rem`, …) nebo podílové jednotky `fr`. Ty totiž obsah uvnitř příliš nezajímá.
+Je dobré si uvědomit, že se to liší od nastavení rozměrů zvenčí pomocí nadřazeného prvku. Tam užijete fixní [jednotky](jednotky.md) (`px`, `rem`, …) nebo podílové jednotky `fr`. Ty obsah uvnitř příliš nezajímá a nastavují rozměry prvku, ve kterém se obsah nachází.
 
 Projďeme si teď vše podrobně na příkladech.
 
@@ -43,13 +44,6 @@ Tohle je asi jednoduché, že?
 - Další dva sloupečky si rovnoměrné rozdělí šířku zbylého prostoru, protože jsou jsou nastavené [podílovou jednotkou](css-jednotka-fr.md) na `1fr`.
 
 CodePen: [cdpn.io/e/XWrLErd](https://codepen.io/machal/pen/XWrLErd?editors=1100)
-
-### Co když… pár specifičností zápisu minmax() {#co-kdyz}
-
-Pokud byste chtěli zápis `minmax()` mermomocí rozbít, prohlížeče by se podle [specifikace](https://www.w3.org/TR/css-grid-1/#valdef-grid-template-columns-minmax) měly chovat následovně:
-
-- Pokud uvedete vyšší minimum než maximum (např. `minmax(200px, 100px)`), maximum se bude ignorovat a prohlížeče budou počítat jen s minimem.
-- Jako minima zatím nemá smysl uvádět zlomkovou jednotku `fr`. Ale v budoucí verzi specifikace by se to prý mohlo změnit.
 
 ## Flexibilní rozsah (použití jednotky fr) {#fr}
 
@@ -113,13 +107,21 @@ CodePen: [cdpn.io/e/wvwbmGV](https://codepen.io/machal/pen/wvwbmGV?editors=1100)
 
 Možné je samozřejmě i použití jak `min-content`, tak `max-content`: `minmax(min-content, max-content)`:
 
-CodePen: [cdpn.io/e/ZEzNxmX](https://codepen.io/machal/pen/ZEzNxmX?editors=1100)
+```css
+.container {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 1fr 1fr;
+  gap: 10px;
+}
+```
 
 Dotčená stopa layoutu se pak nezmenší pod minimální a nezvětší nad maximální šířku či výšku obsahu.
 
+CodePen: [cdpn.io/e/ZEzNxmX](https://codepen.io/machal/pen/ZEzNxmX?editors=1100)
+
 ## Klíčové slovo auto {#auto}
 
-V hodnotách zápisu `minmax()` je možné uvádět i klíčové slovo `auto`, které velmi dobře známe odjinud z CSS. Chová se to skoro tak, jak bychom očekávali:
+V hodnotách zápisu `minmax()` je možné uvádět i klíčové slovo `auto`, které velmi dobře známe odjinud z CSS. V gridu se chová skoro tak, jak bychom očekávali. Skoro.
 
 - Pokud je `auto` v druhém parametru, chová se stejně jako `max-content`. Takže zápis `minmax(100px, auto)` bude mít stejný dopad jako `minmax(100px, max-content)`.
 - Jakmile jej však uvedeme v prvním parametru, může přebírat hodnotu vlastností `min-width` nebo `min-height`. Pokud ty nejsou definované, chová se stejně jako `min-content`, a tedy zápis `minmax(auto, 200px)` bude ekvivalentní k `minmax(min-content, 200px)`.
@@ -148,7 +150,7 @@ Jak se ovšem bude `minmax()` chovat v případě použití u sloupečků (nebo 
 
 Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených buněk. Tak, aby se žádný z prvků mřížky nedeformoval pod své obsahové minimum nebo nad své maximum. To je fér, ne?
 
-## Funkce fit-content() {#fit-content}
+## Klíčové slovo nebo funkce fit-content() {#fit-content}
 
 `fit-content` je způsob jak v podporovaných prohlížečích deklarovat, že si přejeme rozměr prvku podle obsahu. Hodí se to například v situaci, kdy chceme, aby se blokový prvek neroztahoval do celé šířky rodiče:
 
@@ -158,7 +160,7 @@ Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených
 }
 ```
 
-Ukázka: [cdpn.io/e/NWKZyrY](https://codepen.io/machal/pen/NWKZyrY?editors=1100).
+CodePen: [cdpn.io/e/NWKZyrY](https://codepen.io/machal/pen/NWKZyrY?editors=1100).
 
 V CSS gridu se `fit-content` používá s parametrem:
 
@@ -178,15 +180,48 @@ Může vás také zajímat, jak to funguje s obrázky a jejich vnitřními nast
 
 Následuje tedy ještě jedna ukázka vycházející z dřívějšího CodePenu s obrázkem.
 
+```html
+<div class="container">
+  <p class="column">
+    <img src="image.png" width="400" alt="Obrázek">
+  </p>
+  <p class="column">2</p>
+  <p class="column">3</p>
+</div>
+```
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: fit-content(200px) 1fr 1fr;
+  gap: 10px;
+}
+```
+
+Funguje to dobře. I přes to, že obrázek má nastavenou šířku 400 pixelů, v layoutu si drží maximální šířku definovanou v CSS pomocí `fit-content(200px)`. 
+
 CodePen: [cdpn.io/e/JjPQpYj](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
+
+## Co když… pár specifičností zápisu minmax() {#co-kdyz}
+
+Pokud byste chtěli zápis `minmax()` mermomocí rozbít, prohlížeče by se podle specifikace měly chovat následovně:
+
+- Pokud uvedete vyšší minimum než maximum (např. `minmax(200px, 100px)`), maximum se bude ignorovat a prohlížeče budou počítat jen s minimem.
+- Jako minima zatím nemá smysl uvádět zlomkovou jednotku `fr`. Ale v budoucí verzi specifikace by se to prý mohlo změnit.
 
 ## Podpora v prohlížečích {#podpora}
 
 Teď už zbývá jen rekapitulace podpory v prohlížečích.
 
-- Funkce `minmax()`, ale i klíčové slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. Tam ale doporučuji testovat, občas se to chová podivně.
-- `fit-content()` podporují skoro všechny relevantní prohlížeče (viz [CanIUse](https://caniuse.com/#search=fit-content)), ale v IE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
+- Funkce `minmax()`, ale i klíčové slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči-dědečkovi ale doporučuji testovat, občas se to chová podivně.
+- `fit-content()` podporují skoro všechny relevantní prohlížeče ale v IE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
+
+Viz CanIUse: [caniuse.com/intrinsic-width](https://caniuse.com/#search=intrinsic-width).
+
+<div class="web-only related" markdown="1">
 
 Použili jste `minmax()` ještě nějak jinak? Neváhejte napsat do komentářů, rád to do článku doplním.
+
+</div>
 
 <!-- AdSnippet -->

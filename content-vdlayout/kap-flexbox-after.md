@@ -1,4 +1,4 @@
-# Shrnutí páte kapitoly
+# Shrnutí páté kapitoly
 
 Otesujte si, co jste se naučili o flexboxu.
 

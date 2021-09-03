@@ -2,11 +2,16 @@
 
 Rozvržení typu masonry je ve webdesignu stejně populární jako zednická lžíce mezi zedníky.
 
-Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu [flexboxu](css-flexbox.md), ale plně to nevyřešil ani [grid](css-grid.md).
+Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu flexboxu, ale plně to nevyřešil ani grid.
 
-<!-- AdSnippet -->
+<div class="web-only related" markdown="1">
+- [CSS flexbox](css-flexbox.md)
+- [CSS grid](css-grid.md)
+- [CSS multicol](css-multicolumn.md)
+- [W3: CSS grid 3](https://drafts.csswg.org/css-grid-3/)
+</div>
 
-Teď už se ale blýská na lepší časy. Chystaná [třetí verze specifikace CSS gridu](https://drafts.csswg.org/css-grid-3/) totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
+Teď už se ale snad blýská na lepší časy. Chystaná třetí verze specicikace gridu totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
 
 ```css
 .container {
@@ -15,9 +20,13 @@ Teď už se ale blýská na lepší časy. Chystaná [třetí verze specifikace 
 }
 ```
 
-Zatím to má podporu jen v Nightly verzi Firefoxu, ale předpokládáme, že se to ujme a že nás to zbaví dalšího nadbytečného javascriptového pluginu.
+Zatím to bohužel má podporu jen v Nightly verzi Firefoxu. Je možné, že se to ujme a že nás to zbaví dalšího nadbytečného javascriptového pluginu. 
 
-Skvěle to (jako vždy) popisuje Rachel Andrew v textu [Native CSS Masonry Layout In CSS grid](https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/) na Smashing Magazine, ze kterého tady budu vycházet.
+Aktuálně to ale na webech používat nemůžeme, proto se v článku kromě budoucnosti (nativní implementace v CSS) věnujeme i současnosti (řešení pomocí JS komponent).
+
+<!-- AdSnippet -->
+
+Skvěle to (jako vždy) popisuje Rachel Andrew v textu „Native CSS Masonry Layout In CSS grid“ na Smashing Magazine, ze kterého tady budu vycházet. [vrdl.in/smmas](https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/)
 
 ## Co je to „masonry“? {#co}
 
@@ -26,27 +35,29 @@ Určitě zde jsou tací, kteří o masonry layoutu nic moc nevědí. „Masonry�
 <figure>
 <img src="../dist/images/original/masonry.jpg" width="1600" height="900" alt="Masonry layout na webu Erika Johanssona">
 <figcaption markdown="1">
-*Masonry layout [na webu Erika Johanssona](https://www.erikjo.com/work). Jediná vada na kráse je vykreslení pomocí klientského JavaScriptu.*
+*Masonry layout na webu Erika Johanssona. Jediná vada na kráse je vykreslení pomocí klientského JavaScriptu. [erikjo.com/work](https://www.erikjo.com/work)*
 </figcaption>
 </figure>
 
-Když se položky ve zděném rozvržení přesunou na další řádek, nezarovnávají se do rovné linky, ale přesunou se nahoru do mezer, které zanechají kratší položky v prvním řádku. Je to podobné jako u jedné z vlastností CSS gridu, automatického umístění (autoplacement), ale bez přísného dodržení mřížky pro řádky.
+Když se položky ve zděném rozvržení přesunou na další řádek, nezarovnávají se do rovné linky, ale přesunou se nahoru do mezer, které zanechají kratší položky v prvním řádku.
+
+Je to podobné jako u jedné z vlastností CSS gridu, automatického umístění (autoplacement), ale bez přísného dodržení mřížky pro řádky.
 
 Však se podívejte na obrázek výše, z toho to bude asi vidět lépe. Hlavní směr typického masonry layoutu je inline, tedy po řádcích.
 
 <!-- AdSnippet -->
 
-V současnosti se tyto typy rozvržení dělají pomocí dnes už legendární javascriptové kompomenty [Masonry od Davida DeSandra](https://masonry.desandro.com/).
+V současnosti se tyto typy rozvržení dělají pomocí dnes už legendární javascriptové kompomenty „Masonry“ od Davida DeSandra. [masonry.desandro.com](https://masonry.desandro.com/)
 
-Autorovi všechna čest, ale je nutné si přiznat, že z pohledu vykreslovacího (ale i načítacího) výkonu stránky nebude takto razantní ovlivňování layoutu JavaScriptem nikdy optimální. Tohle má prostě dělat prohlížeč.
+Autorovi všechna čest, ale je nutné si přiznat, že z pohledu vykreslovacího (ale i načítacího) výkonu stránky nebude takto razantní ovlivňování layoutu JavaScriptem nikdy optimální. Tohle má prostě dělat prohlížeč a autoři to mají definovat v CSS.
 
 ## Masonry v CSS gridu {#css-grid}
 
 Masonry layout budeme podle specifikace definovat pomocí `grid-template-rows:masonry` nebo `grid-template-columns:masonry`, podle toho, zda si pro „zdění“ vybereme vodorovný nebo svislý směr.
 
-Směr definovaný pomocí `masonry` se pak bude označovat jako osa zdiva. Druhá osa bude mít stopy mřížky definované jako normální. To bude osa mřížky.
+Směr definovaný pomocí `masonry` se pak bude označovat jako „osa zdiva“. Druhá osa bude mít stopy mřížky definované jako normální. To bude osa mřížky.
 
-Přikládám CodePen, ale v době psaní bude fungovat jen ve zmíněném [Firefox Nightly](https://www.mozilla.org/cs/firefox/channel/desktop/), takže neuškodí, když si jej stáhnete.
+Přikládám CodePen, ale v době psaní bude fungovat jen ve zmíněném Firefox Nightly, takže neuškodí, když si tuto verzi prohlížeče pro zkoušení nových vlastností stáhnete.
 
 CodePen: [cdpn.io/e/wvWmZWB](https://codepen.io/rachelandrew/pen/wvWmZWB?editors=0100)
 
@@ -65,24 +76,24 @@ Raději to vysvětlím:
 
 - `display:grid` definuje [layout do mřížky](css-grid.md).
 - `gap:10px` nabádá prohlížeč k vykreslení desetipixelové [mezery mezi buňkami](css-gap.md).
-- `grid-template-columns:repeat(4,1fr)` vykreslí čtyři stejně široké sloupce mřížky. Viz [vlastnost `repeat()`](css-repeat.md).
+- `grid-template-columns:repeat(4,1fr)` vykreslí čtyři stejně široké sloupce mřížky. Viz [zápis `repeat()`](css-repeat.md).
 - `grid-template-rows:masonry` dělá to zděné kouzlo. Řádky nebudou zarovnané podle osy, ale nalepí se na položky výše a přeskupí se. Viz [vlastnost `grid-template-rows`](css-grid-template.md).
 
-Výsledek tohodle zápisu nicméně bez Firefox Nightly lépe uvidíte na obrázku. Tady je.
+Výsledek tohoto zápisu nicméně bez Firefox Nightly lépe uvidíte na obrázku. Tady je.
 
 <figure>
 <img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
 <figcaption markdown="1">
-*Nativně vykreslený masonry layout. Zdroj: [Rachel Andrew](https://codepen.io/rachelandrew/pen/wvWmZWB).*
+*Nativně vykreslený masonry layout. Zdroj: CodePen Rachel Andrew.*
 </figcaption>
 </figure>
 
 Je to nativní. Není to krásné?
 
-Napiš řádek kódu,  
-postav třeba zeď.  
-Zpívej přitom ódu,  
-začni s tím hned teď.
+> Napiš řádek kódu,  
+> postav třeba zeď.  
+> Zpívej přitom ódu,  
+> začni s tím hned teď.
 
 Po básnické vsuvce, vyvolané vidinou světa bez další javascriptové knihovny, pojďme dál.
 
@@ -90,8 +101,8 @@ Po básnické vsuvce, vyvolané vidinou světa bez další javascriptové knihov
 
 Vzhledem k tomu, že jsme v systému rozvržení pomocí CSS gridu, můžeme používat i další vlastnosti:
 
-- Stále můžeme porušit automatické umísťování a konkrétní položku vložit na konkrétní místo mřížky. Viz prvek `.positioned` [v tomto CodePenu](https://codepen.io/rachelandrew/pen/PozRvZb) od Rachel Andrew.
-- Je samozřejmě dovoleno používat i roztažení prvků do více buněk mřížky. To je zase vidět na prvku `.landscape` [v jiném CodePenu](https://codepen.io/rachelandrew/pen/QWEmPMK).
+- Stále můžeme porušit automatické umísťování a konkrétní položku vložit na konkrétní místo mřížky. Viz prvek `.positioned` v tomto CodePenu od Rachel Andrew. [cdpn.io/e/PozRvZb](https://codepen.io/rachelandrew/pen/PozRvZb)
+- Je samozřejmě dovoleno používat i roztažení prvků do více buněk mřížky. To je zase vidět na prvku `.landscape` v jiném CodePenu. [cdpn.io/e/QWEmPMK](https://codepen.io/rachelandrew/pen/QWEmPMK)
 
 ### `masonry-auto-flow`, kontrola toku položek {#dalsi-grid-flow}
 
@@ -116,11 +127,9 @@ Další možnosti jsou podobné jako u vlastností `align-content` a `justify-co
 
 ## Podpora v prohlížečích a implementace {#podpora}
 
-Standardizátoři mají CSS grid Level 3 zatím rozpracovaný. V téhle fázi je tedy potřeba, aby vývojářky a vývojáři neváhali [dávat zpětnou vazbu](https://github.com/w3c/csswg-drafts/issues/).
+Standardizátoři mají CSS grid Level 3 zatím rozpracovaný. V září 2021 je je tato skvělá nová věc podporovaná jen v Nightly verzi Firefoxu. I tam je ale potřeba zapnout vlaječku `layout.css.grid-template-masonry-value` v `about:config`.
 
-Jak už jsem zmínil – v době psaní je tato skvělá nová věc podporovaná jen v Nightly verzi Firefoxu. I tam je ale potřeba zapnout vlaječku `layout.css.grid-template-masonry-value` v `about:config`.
-
-Řešit [fallbacky](fallback.md) bude v případě nativní implementace technicky snadné řešit, protože máme [podmínku podpory – `@supports`](css-supports.md):
+Řešit fallbacky bude v případě nativní implementace relativně snadné řešit, protože máme [podmínku podpory – `@supports`](css-supports.md):
 
 ```css
 @supports (grid-template-rows: masonry) {
@@ -133,9 +142,7 @@ Jak už jsem zmínil – v době psaní je tato skvělá nová věc podporovaná
 
 Je samozřejmě otázkou, jak může vypadat náhradní řešení z vizuálního pohledu.
 
-Osobně nicméně věřím, že po připomínkovém řízení ke specifikaci dojde k implementaci v Chrome a odvozených prohlížečích a pak chvíli čekání na Safari, jak už to ve světě dnešního vývoje webů chodí.
-
-Takže podpora naprosté většiny prohlížečů zde může přijít relativně brzy, ale teď je na nás, abychom to zkoušeli a připomínkovali.
+Doufejme, že to nebudeme muset dlouho dělat a po připomínkovém řízení ke specifikaci dojde k implementaci v Chrome a odvozených prohlížečích a pak chvíli čekání na Safari, jak už to ve světě dnešního vývoje webů chodí.
 
 ## Další možnosti jak řešit masonry {#dalsi}
 
@@ -145,12 +152,12 @@ Do doby než se dokončí specifikace a prohlížeče nativní masonry naimpleme
 
 Existují dvě varianty:
 
-- *[Masonry](https://masonry.desandro.com/)*  
-„JavaScript grid layout library“ je použitelná s jQuery nebo také s čistým JavaSciptem. Má spoustu [možností nastavení](https://masonry.desandro.com/options.html). 24 kB dat po minifikaci, 8 kB po gzipu.
-- *[Colcade](https://github.com/desandro/colcade)*  
-Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny jako spojování sloupečků (multi-column-spanning) nebo přechody (transitions). Za tip děkujeme Honzovi z komentářů.
+- *Masonry*  
+„JavaScript grid layout library“ je použitelná s jQuery nebo také s čistým JavaSciptem. Má spoustu možností nastavení. 24 kB dat po minifikaci, 8 kB po gzipu. [masonry.desandro.com](https://masonry.desandro.com/)
+- *Colcade*  
+Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny jako spojování sloupečků (multi-column-spanning) nebo přechody (transitions). [github.com/desandro/colcade](https://github.com/desandro/colcade)
 
-Další metody dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScipt. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
+Další metody alternativného řešení zděného layoutu majít dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScipt. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
 
 ### Vícesloupcový layout {#dalsi-multicol}
 
@@ -186,7 +193,7 @@ CodePen: [cdpn.io/e/mdExgmZ](https://codepen.io/rachelandrew/pen/mdExgmZ?editors
 
 ### Flexbox, `:nth-child` a `order` {#dalsi-flexbox-nthchild}
 
-[Tobias Ahlin Bjerrome](https://tobiasahlin.com/blog/masonry-with-css/) se pokusil o řešení [flexboxem](css-flexbox.md), [selektorem `:nth-child(n)`](css3-selektory.md) a [vlastností `order`](css-order.md):
+Tobias Ahlin Bjerrome se pokusil o řešení [flexboxem](css-flexbox.md), [selektorem `:nth-child(n)`](css3-selektory.md) a [vlastností `order`](css-order.md). [vrdl.in/tobmas](https://tobiasahlin.com/blog/masonry-with-css/)
 
 ```css
 /* Render items as columns */
@@ -212,14 +219,12 @@ CodePen: [cdpn.io/e/mdExgmZ](https://codepen.io/rachelandrew/pen/mdExgmZ?editors
 
 Je to plné dobrých nápadů, relativně dobře to funguje, ale ne na všech rozlišeních. Navíc je složité to nastavoval pro různý počet sloupců v layoutu.
 
-CodePen: [cdpn.io/e/mdJVmLRaExgmZ](https://codepen.io/tobiasahlin/pen/JVmLRa?editors=1100)
+CodePen: [cdpn.io/e/JVmLRa](https://codepen.io/tobiasahlin/pen/JVmLRa?editors=1100)
 
-Další možná řešení už budu jmenovat jen stručně:
-
-- [Paul Bakaus: A 'perfect' row-based image masonry](https://paulbakaus.com/tutorials/css/a-perfect-row-based-image-masonry/) (využívá také [vlastnost `object-fit`](css-object-fit-position.md))
-- [W3Bits: CSS Masonry Generator](https://w3bits.com/tools/masonry-generator/) (opět postaveno na sloupcovém layoutu, ale pro zobrazení v řádcích už používá JavaScript)
-- [Kristóf Poduszló: Building Highly Performant Masonry Layouts with Gatsby.js](https://blog.usejournal.com/building-highly-performant-masonry-layouts-with-gatsby-js-54115acc3e72) (zapojení serverového renderingu je v případě JAMstacku dobrý nápad)
+<div class="web-only related" markdown="1">
 
 Pokud znáte další řešení, které pomůže ostatním čtenářkám a čtenářům, než prohlížeče začnou podporovat nativní variantu, neváhejte se ozvat v komentářích.
+
+</div>
 
 <!-- AdSnippet -->
