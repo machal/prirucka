@@ -31,4 +31,4 @@ Jaké příklady spolu ve čtvrté kapitole nakódujeme?
 
 </div>
 
-Je dobré předem zmínit, že každý příklad obsahu zadání i řešení. Pro potřeby učení CSS layoutu vám doporučím načerpat obsah první části, odložit knížku a zkusit si příklad nakódovat.
+Je dobré předem zmínit, že každý příklad obsahuje zadání i řešení. Pro potřeby učení CSS layoutu vám doporučím načerpat obsah první části, odložit knížku a zkusit si příklad nakódovat.

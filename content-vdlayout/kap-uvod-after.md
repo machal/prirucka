@@ -21,6 +21,8 @@ c. Microsoft Silverlight
 
 ---
 
+Řešení:
+
 1. **K čemu slouží CSS Multicolum Layout?**  
 b. k automatické vícesloupcové sazbě textu
 1. **Co udělá zápis `display:flex`?**  

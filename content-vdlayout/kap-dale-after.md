@@ -25,6 +25,8 @@ c. jde o chyták, tento problém vzniká jen u rozvžení gridem
 
 ---
 
+Řešení:
+
 1. **Jaký podíl na českém trhu má Internet Explorer ke konci jara 2021?**  
 c. kolem 2 %
 1. **Co je logické pořadí prvků?**  

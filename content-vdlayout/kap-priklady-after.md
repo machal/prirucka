@@ -37,8 +37,9 @@ a. stopadesát slupečků o šířce `1em`
 b. sloupečky libovolného počtu se šířkou přesně `150px` a mezerou `1em`
 c. sloupečky libovolného počtu se šířkou přibližně `150px` a mezerou `1em`
 
-
 ---
+
+Řešení:
 
 1. **K čemu slouží vlastnost `grid-template-columns`?**  
 a. definuje šablonu pro rozvržení sloupců gridu

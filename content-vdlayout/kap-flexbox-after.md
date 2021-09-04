@@ -41,6 +41,8 @@ c. `flex: 0 1 auto`
 
 ---
 
+Řešení:
+
 1. **Jak definovat režim zobrazení flexboxu?**  
 a. `display:flex`  
 1. **Jaký je výchozí směr os flexboxu?**  
