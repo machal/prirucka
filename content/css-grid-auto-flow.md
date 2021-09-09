@@ -94,7 +94,12 @@ Vysvětleme:
 - Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovoný počet sloupečku ([funkce `repeat()`](css-repeat.md)) ale každý musí být minimálně 120px široký `minmax(120px, 1fr)` (více o [funkci `minmax()`](css-minmax.md)).
 - `grid-auto-flow: dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
 
-<!-- TODO IMG obrázek porovnání breakpointů bez dense a s ním https://codepen.io/machal/pen/VoKroo?editors=1100 -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-auto-flow-dense.png" width="1600" height="900" alt="grid-auto-flow: dense">
+<figcaption markdown="1">
+*Zahuštěné vykreslení (`dense`)  prostě dává přednost hustotě před pořadí.*
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/VoKroo](https://codepen.io/machal/pen/VoKroo?editors=1100)
 

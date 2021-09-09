@@ -72,7 +72,12 @@ Pokud bychom chtěli střídat výšku `100px` a `200px` pro liché a sudé řá
 }  
 ```
 
-<!-- TODO IMG -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-auto-rows.png" width="1600" height="900" alt="grid-auto-rows">
+<figcaption markdown="1">
+*Vlastnost `grid-auto-rows` v akci. Dává rozměry položkám, se kterými nepočítá explicitně definovaná mřížka.*
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/PMGJpa](https://codepen.io/machal/pen/PMGJpa?editors=1100)
 
@@ -102,9 +107,7 @@ Jenže v HTML máme šest a ne čtyři položky. A co víc – pátou a šestou 
 }
 ```
 
-Prohlížeč nám při pokusu o umístění do třetího sloupce, tedy na pozici nedefinovanou explicitním gridem, grid rozšíří. Ale rozšíří jej mřížkou implicitní. Výchozí rozměry prvků nám tedy zřejmě nebudou vyhovovat:
-
-<!-- TODO img obrázek bez grid-auto-columns -->
+Prohlížeč nám při pokusu o umístění do třetího sloupce, tedy na pozici nedefinovanou explicitním gridem, grid rozšíří. Ale rozšíří jej mřížkou implicitní. Výchozí rozměry prvků nám tedy zřejmě nebudou vyhovovat.
 
 Opravíme to až touto deklarací:
 
@@ -114,7 +117,12 @@ Opravíme to až touto deklarací:
 }
 ```
 
-<!-- TODO img obrázek s grid-auto-columns -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-auto-cols.png" width="1600" height="900" alt="grid-auto-columns">
+<figcaption markdown="1">
+*Rozdíl mezi nedefinovanou implicitní mřížkou (`grid-auto-columns:auto`) a definovanou (`grid-auto-columns:1fr`), ve které pátá a šestá položka dostane definovanou výšku.*
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/ymazjy](https://codepen.io/machal/pen/ymazjy?editors=1100)
 

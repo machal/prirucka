@@ -59,7 +59,7 @@ Je to totéž, jako bychom napsali:
 
 Všimněte si, že řádky končíme na čísle 4, i když je máme jen tři. Je to dobrá připomínka toho, že se zde neodkazujeme na čísla řádků či sloupců, ale na čísla linek, které grid definují.
 
-<!-- TODO IMG obrázek -->
+<p><img src="../dist/images/original/vdlayout/css-grid-row-column.png" width="1920" height="540"  alt="grid-column a grid-row ve Firefoxu"></p>
 
 CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
