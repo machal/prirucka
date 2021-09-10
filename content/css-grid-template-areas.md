@@ -4,12 +4,21 @@ Vlastnost `grid-template-areas` slouží k pojmenovávání obdélníkových obl
 
 `grid-template-areas` vytváří oblasti, které jsou pak použitelné ve vlastnostech jako `grid-area` a dalších, sloužících k umísťování elementů do gridu.
 
-<!-- TODO img -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-template-areas.png" width="1920" height="540" alt="Vlastnost grid-template-areas">
+<figcaption markdown="1">
+*Zeleně (světlou barvou) jsou vyznačené položky, růžově (výraznější překryvnou barvou) pak oblasti mřížky vyznačené ve Firefox DevTools.*
+</figcaption>
+</figure>
 
 V příkladu na obrázku pojmenováváme oblasti následovně:
 
 ```css
 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;  
   grid-template-areas:
     "first first"
     ".     second";
@@ -40,7 +49,7 @@ Následuje pár poznámek k vlastnosti `grid-template-areas`, které mě zaujaly
 
 Pojmenovanými oblastmi je možné definovat i samotný grid. V některých případech tedy nemusíte potřebovat vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md).
 
-Tento kód vytvoří velmi podobnou mřížku jako ve výše uvedeném příkladu:
+Tento kód vytvoří stejnou mřížku jako ve výše uvedeném příkladu:
 
 ```css
 .container {
@@ -62,7 +71,46 @@ Například definování oblasti pojmenované `head`, automaticky vytvoří dvě
 
 A víte co je ještě lepší? Definováním stop `head-start` a `head-end` ve vlastnostech [grid-template-rows a grid-template-columns](css-grid-template-rows-columns.md) vytvoříte oblast `head`.
 
-<!-- TODO img a příklad -->
+Vezměme tento grid definovaný jako dva sloupce a dva řádky:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: [head-start] 50% 50% [head-end];
+  grid-template-rows: [head-start] auto [head-end] auto;  
+}
+```
+
+Jak je vidět, pomocí `head-start` a `head-end` se pokoušíme na prvním řádku definovat oblast `head` bez použití `grid-template-areas`.
+
+HTML je následující:
+
+```html
+<div class="container">
+  <p class="item">1</p>
+  <p class="item">2</p>
+  <p class="item item--head">Head</p>
+</div>
+```
+
+Pak stačí pomocí [vlastnosti `grid-area`](css-grid-area.md) prvek `.item-head` umístit:
+
+```css
+.item--head {
+  grid-area: head;
+}
+```
+
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-template-areas-tracks.png" width="1920" height="540" alt="Grid - automatická tvorba oblastí">
+<figcaption markdown="1">
+*Tady to je. Oblast definovaná jen pomocí stop. Takhle to ukazují Firefox DevTools.*
+</figcaption>
+</figure>
+
+Na definování oblastí s pomocí stop jsou i DevTools prohlížečů krátké a nejenže ve vrstvě neukáží název oblasti (head), ale ani názvy stop (head-start, head-end). Nevadí. Hlavně, že správně funguje umístění do definované oblasti.
+
+CodePen: [cdpn.io/e/qBjrLwe](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
 
 ## Výhody definování oblastí mřížky {#vyhody}
 
@@ -76,20 +124,31 @@ V dalším demíčku si pojďme ukázat věc, která se mi na `grid-template-are
 
 Je to jednoduché – oblasti je prostě možné různě přehazovat v rámci definovaného gridu.
 
-<!-- TODO IMG -->
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-template-areas-mq.png" width="1600" height="900" alt="grid-template-areas s Media Queries">
+<figcaption markdown="1">
+*V kombinaci s Media Queries se z definovaní oblastí pomocí `grid-template-areas` stává fantastický pomocník.*
+</figcaption>
+</figure>
 
-Výše uvedený příklad prostě stačí rozšířit o tyto deklarace:
+V tomto příkladu máme tyto responzivní deklarace:
 
 ```css
-@media screen and (max-width: 600px) {
+.container {
+  grid-template-areas: 
+    "first first"
+    "second second";
+}
+
+@media screen and (min-width: 400px) {
   .container {
     grid-template-areas:
       "first first"
-      "second second";
+      ".     second";
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   .container {
     grid-template-areas:
       "first second"
@@ -98,7 +157,7 @@ Výše uvedený příklad prostě stačí rozšířit o tyto deklarace:
 }
 ```
 
-<!-- TODO příklad -->
+CodePen: [cdpn.io/e/jgrmoq](https://codepen.io/machal/pen/jgrmoq?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 
