@@ -45,7 +45,7 @@ Demo to ostatně ukáže v celé kráse. Máme dva kontejnery vysázené gridem
 
 Na pohled by to mohlo fungovat stejně, ale to opravdu jen na první pohled.
 
-<!-- TODO IMG: screen s rozdílem mezi prvním a druhým -->
+<p><img src="../dist/images/original/vdlayout/css-fr-procenta.png" width="1920" height="1080" alt="Jednotka fr a procenta"></p>
 
 Výhoda `fr` oproti procentům? Nemusíme počítat prvky gridu a řešit nastavení box modelu.
 
@@ -79,7 +79,7 @@ Mřížku definujeme takto:
 
 Pokud je nastavená nulová hodnota (`0fr`) vykreslí prohlížeč sloupec v šířce obsahu.
 
-<!-- TODO IMG -->
+<p><img src="../dist/images/original/vdlayout/css-fr-desetinna.png" width="1920" height="540" alt="Jednotka fr a procenta - rozdíl"></p>
 
 Poměrně užitečné jsou také desetinné hodnoty. Jejich součet je `0.6fr`, takže zanechává `0.4fr` prostoru prázdného.
 
@@ -94,7 +94,7 @@ Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to
 * Asi jste postřehli, že `grid-template-columns: 1fr` se chová podobně jako bezjednotkový údaj ve [flexboxu](css-flexbox.md), např. `flex: 1`.
 * `fr` není jednotka délky a nedá se s nimi ani kombinovat. Nemůžeme tedy použít funkci [calc()](css3-calc.md) a výraz jako `calc(1fr - 20px)`.
 
-## Podpora v prohlížečích {#poznamky}
+## Podpora v prohlížečích {#podpora}
 
 Podpora je skvělá. Nevím o žádném mezi uživateli rozšířeném prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to do této skupiny prohlížečů o prázdninách 2021 považuji i Internet Explorer 11.
 
