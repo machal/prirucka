@@ -4,8 +4,6 @@ Vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení 
 
 ## Jednoduchý příklad
 
-<!-- TODO IMG: obrázek pro níže uvedený příklad -->
-
 Vezměne toto HTML:
 
 ```html
@@ -31,11 +29,26 @@ Vysvětleme:
 
 - `display:grid` – „zapíná“ mřížkové zobrazení.
 - `grid-template-columns:50% 50%` – definuje dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
-- `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu. Grid sjednocuje výšky položek v každém z nich, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí. (Viz [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100))
+- `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu.
 
-Příklad si také můžete prohlédnout na CodePenu.
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows"></p>
 
 CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
+
+Poznámka k hodnotě `auto` v definici řádků: Grid sjednocuje výšky položek v každém z nich, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí.
+
+```html
+<div class="container">
+  <p class="column">1</p>
+  <p class="column">2</p>
+  <p class="column">3</p>
+  <p class="column">4<br>hi!</p>
+</div>
+```
+
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-2.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - vyšší buňka"></p>
+
+CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
 ### Co když je položek více než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
 
@@ -53,8 +66,6 @@ Teď se stane ošlivá a zlá věc – zákeřný frontend kodér do HTML přid�
 
 Jak bude vypadat pátá položka zobrazená v gridu 2 × 2? V tomto případě stejně jako předchozí čtyři.
 
-<!-- TODO IMG: obrázek pro tento stav -->
-
 Algoritmus gridu ji přidělí 50% šířku a automatickou výšku.
 
 <!-- AdSnippet -->
@@ -68,6 +79,8 @@ Jiná by byla situace, pokud bychom změnili definici výšky položek gridu:
 ```
 
 Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výchozí, v tomto případě opět `auto`.
+
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-3.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - přidání páté buňky"></p>
 
 CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
@@ -129,8 +142,6 @@ Pojmenovávání stop se může hodit pro použití ve vlastnostech, které defi
 
 Každý sloupec nebo řádka je v gridu definovaná dvěma stopami.
 
-<!-- TODO IMG -->
-
 Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v tabulce. Stopy jsou rámečky kolem buněk tabulky.
 
 ```css
@@ -142,6 +153,8 @@ Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v ta
 ```
 
 V ukázce je tedy první položka gridu umístěná vodorovně na pozici mezi `first-col` a `second-col`. Svisle pak mezi `first-row` a `second-row`.
+
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-tracks.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - definování stop"></p>
 
 CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
 
