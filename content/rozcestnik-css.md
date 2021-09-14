@@ -50,7 +50,7 @@
 - [Vícesloupcový layout](css-multicolumn.md): [vlastnost `columns`](css-multicol-columns.md)
 - [Flexbox](css-flexbox.md): vlastnosti [kontejneru](css3-flexbox-kontejner.md) a [položky](css3-flexbox-polozky.md)
 - [CSS grid](css-grid.md): [v MSIE](css-grid-msie.md), [příklady](css-grid-inspirace.md) a [masonry v CSS](css-masonry.md)
-- [CSS Box Alignment](css-box-alignment.md)
+- [CSS Box Alignment](css-box-alignment.md) a [gap](css-gap.md)
 - [order: změna pořadí položek](css-order.md)
 
 ### Další vlastnosti
