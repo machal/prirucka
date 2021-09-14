@@ -1,6 +1,6 @@
 # Obrázkový formát AVIF
 
-Chrome od verze 85 a Firefox od verze 86 začaly vcelku nenápadně podporovat nový obrázkový formát AVIF.
+Chrome od verze 85 a Firefox od verze 93 začaly podporovat nový obrázkový formát AVIF.
 
 Inovativní formáty nás webaře zajímají hlavně z pohledu datové efektivity a nových vlastností. Obojí je zde splněno, takže se na AVIF pojďme podívat více zblízka.
 
@@ -19,7 +19,7 @@ Formát WebP už je starý více než 10 let a tak AVIF přináší opravu nejv�
 
 AVIF disponuje také zajímavými a pro web užitečnými vlastnosti. Jeho velkou výhodou je například je, že i při vysoké kompresi zachovává ostré hrany barevných přechodů.
 
-Podporuje jej zatím jen Chrome, Opera a chystá se Firefox, ale s ostatními prohlížeči to vypadá, vzhledem k příznivým licenčním podmínkám, velmi dobře.
+Podporuje jej zatím jen Chrome, Opera a Firefox, ale s ostatními prohlížeči to vypadá – vzhledem k příznivým licenčním podmínkám – velmi dobře.
 
 ## Odkud se AVIF vzal {#odkud}
 
@@ -151,9 +151,15 @@ Problémem WebP byla pomalá adopce prohlížeči. Ano, díváme se na tebe, Saf
 
 Jak je to u AVIFu?
 
-- [Chrome 85](https://developers.google.com/web/updates/2020/08/nic85) již AVIF podporuje. V jiných prohlížečích založených na Chromu práce probíhá.
-- [Ve Firefoxu](https://bugzilla.mozilla.org/show_bug.cgi?id=1443863) na podpoře pracují. Bude k dispozici od verze 89.
-- Apple zatím neoznámil, zda bude v Safari AVIF podporovat. Tentokrát je však Apple jednou ze společností v Alliance for Open Media, tvůrců AVIF a tvůrci Webkitu, enginu, na kterém Safari běží, [na podpoře pracují](https://bugs.webkit.org/show_bug.cgi?id=207750).
+[Chrome 85](https://developers.google.com/web/updates/2020/08/nic85) již AVIF podporuje. V jiných prohlížečích založených na Chromu práce probíhá.
+
+Ve Firefoxu podpora přichází na podzim '21 [s verzí 93](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/93) na podpoře pracují.
+
+Apple zatím neoznámil, zda bude v Safari AVIF podporovat. Tentokrát je však Apple jednou ze společností v Alliance for Open Media, tvůrců AVIF a tvůrci Webkitu, enginu, na kterém Safari běží, [na podpoře pracují](https://bugs.webkit.org/show_bug.cgi?id=207750). Ale jako vždy to záleží na podpoře v operačních systémech Apple:
+
+> …any support for AVIF depends on underlying OS support. I can't comment as to whether any future OS releases will support AVIF.
+
+Takže zatím prostě nevíme a Apple nám to neřekne.
 
 <figure>
 <img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1605530919962/caniuse-embed/all/avif.webp" alt="Podpora AVIF v prohlížečích">
