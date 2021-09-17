@@ -48,6 +48,15 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
 <div class="reference-items">
 
   <article role="article">
+    <h4 id="gap"><a href="css-gap.md"><code>gap</code></a></h4>
+    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.png" alt="CSS vlastnost gap" /></a></p>
+    <p>
+      Definice mezery mezi buňkami. <br>
+      <code>gap:1rem;</code>
+    </p>
+  </article>
+
+  <article role="article">
     <h4><a href="css-align-items.md"><code>align-items</code></a></h4>
     <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.png" alt="Vlastnost align-items" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>

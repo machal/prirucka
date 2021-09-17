@@ -91,15 +91,6 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
     </p>
   </article>
 
-  <article role="article">
-    <h4 id="gap"><a href="css-gap.md"><code>gap</code></a></h4>
-    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.png" alt="CSS vlastnost gap" /></a></p>
-    <p>
-      Definice mezery mezi buňkami. <br>
-      <code>gap:1rem;</code>
-    </p>
-  </article>
-
 </div>
 
 ### Umístění do mřížky {#vlastnosti-umisteni}
@@ -162,7 +153,7 @@ Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám
 
 ## Zarovnávání (CSS Box Alignment) {#css-box-alignment}
 
-Ke správnému zarovnávání v gridu budete potřebova také vlastnosti jako [`justify-items`](css-justify-items.md), [`align-self`](css-align-self.md) a mnohé další. Ty jsou součástí samostatné příručky.
+Ke správnému zarovnávání v gridu budete potřebova také vlastnosti jako [`gap`](css-gap.md), [`justify-items`](css-justify-items.md), [`align-self`](css-align-self.md) a mnohé další. Ty jsou součástí samostatné příručky.
 
 → *Související: [Zarovnání boxů v CSS (Box Alignment Module)](css-box-alignment.md) – Materiál k vlastnostem pro zarovnání boxů.*
 

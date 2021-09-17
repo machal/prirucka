@@ -98,6 +98,14 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
 <div class="reference-items">
 
   <article role="article">
+    <h4 id="gap"><a href="css-gap.md"><code>gap</code></a></h4>
+    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.png" alt="CSS vlastnost gap" /></a></p>
+    <p>
+      Definice mezery mezi buňkami. <br>
+      <code>gap:1rem;</code>
+    </p>
+  </article>  
+  <article role="article">
     <h4 id="justify-content"><a href="css-justify-content.md"><code>justify-content</code></a></h4>
     <p><a href="css-justify-content.md"><img src="../dist/images/small/vdlayout/css-justify-content-schema.png" alt="Vlastnost justify-content" /></a></p>
     <p>Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. <code>justify-content:space-between</code> rozdělí prostor mezi položky.</p>

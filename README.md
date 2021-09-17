@@ -225,6 +225,36 @@ Jednotlivé články zatím vkládáme takto:
 → *Související: [Vkládání JavaScriptu jako async, defer a type="module"](js-async-defer-module.md)*
 
 
+### Související informace
+
+Obrázek vlastnosti, stručná vysvětlivka, odkazy na další příručky a případně živé URL. Vkládáme pomocí HTML:
+
+```html
+<div class="connected" markdown="1">
+
+<!-- Obrázek -->
+![CSS vlastnost gap](../dist/images/medium/vdlayout/schema-css-gap.png)
+
+<!-- Popisek -->
+`gap` je mezera mezi vnitřními prvky layoutu.
+
+<div class="web-only" markdown="1">
+
+<!-- Související příručky -->
+Vlastnost `gap` je možné použít ve všech layoutech – v  [CSS gridu](css-grid.md), [flexboxu](css-flexbox.md), [multicol](css-multicolumn.md). Patří však do specifikace [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+<!-- Odkaz na živé URL pro knížky -->
+→ [vrdl.cz/p/css-gap](https://www.vzhurudolu.cz/prirucka/css-gap)
+
+</div>
+
+</div>
+```
+
 ### Seznam vlastností
 
 Možné to je, viz `/prirucka/css-flexbox`:

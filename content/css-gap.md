@@ -2,21 +2,32 @@
 
 Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas podle anglického originálu říká „gutter“.
 
-Od Safari verze 14.1 je navíc možné `gap` používat nejen v gridu, ale také ve flexboxu, což je skvělé a proto se vyplatí tuto vlastnost umět použít.
+<div class="connected" markdown="1">
 
-<!-- AdSnippet -->
+![CSS vlastnost gap](../dist/images/small/vdlayout/schema-css-gap.png)
+
+`gap` je mezera mezi vnitřními prvky layoutu.
+
+<div class="web-only" markdown="1">
+
+Vlastnost `gap` je možné použít ve všech layoutech – v  [CSS gridu](css-grid.md), [flexboxu](css-flexbox.md), [multicol](css-multicolumn.md). Patří však do specifikace [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-gap](https://www.vzhurudolu.cz/prirucka/css-gap)
+
+</div>
+
+</div>
+
+Od Safari verze 14.1 je navíc možné `gap` používat nejen v gridu, ale také ve flexboxu, což je skvělé a proto se vyplatí tuto vlastnost umět použít.
 
 Zápis `gap` je zkratkou pro jiné dvě vlastnosti:
 
 - `row-gap` – prostor mezi řádky (v „blokovém“ či svislém směru)
 - `column-gap` – prostor mezi sloupci (tedy v „inline“, tedy obvykle vodorovném směru)
-
-<div class="related web-only" markdown="1">
-- [CSS grid](css-grid.md)
-- [CSS flexbox](css-flexbox.md)
-- [CSS multicol](css-multicolumn.md)
-- [CSS box align](css-box-alignment.md)
-</div>
 
 Zkratka se zapisuje takto:
 
