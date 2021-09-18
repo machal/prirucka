@@ -2,6 +2,24 @@
 
 Funkce (nebo přesněji řečeno „zápis“) `repeat()` slouží k usnadnění opakujících se předpisů pro sloupce nebo řádky mřížky v CSS gridu.
 
+<div class="connected" markdown="1">
+
+![CSS funkce repeat](../dist/images/medium/vdlayout/schema-css-repeat.png)
+
+<div class="web-only" markdown="1">
+
+Funkce `repeat()` je součástí specifikace [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-repeat](https://www.vzhurudolu.cz/prirucka/css-repeat)
+
+</div>
+
+</div>
+
 Zápis můžete realizovat například takto:
 
 ```css
@@ -29,6 +47,8 @@ repeat(auto-fill, minmax(100px, 1fr));
 ```
 
 V druhém parametru zápisu `repeat()` prostě můžete uvést libovolnou deklaraci stopy mřížky, které budete znát už například z vlastností [`grid-template-rows`/`-columns`](css-grid-template-rows-columns.md).
+
+<!-- AdSnippet -->
 
 Co když ale chcete deklaraci sloupců nebo řádků opakovat, ale ještě nevíte kolikrát? Co když prostě nevíte, kolik jich tam chcete, protože nevíte, kolik bude mít rodičovský prvek v HTML potomků?
 

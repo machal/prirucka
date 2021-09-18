@@ -4,6 +4,24 @@ Vlastnost `grid-template` slouží k definování mřížky v CSS gridu.
 
 Jde o zkratku (shorthand) pro vlastnosti [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a také [`grid-template-areas`](css-grid-template-areas.md).
 
+<div class="connected" markdown="1">
+
+![Vlastnost grid-template-areas](../dist/images/medium/vdlayout/schema-css-grid-template.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `grid-template` je součástí [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-template](https://www.vzhurudolu.cz/prirucka/css-grid-template)
+
+</div>
+
+</div>
+
 ## Definování sloupečků a řádků {#cols-rows}
 
 V prvním demu si ukážeme `grid-template` jako zkratku pro vlastnosti `grid-template-rows` a `grid-template-columns`:
@@ -30,7 +48,11 @@ CodePen: [cdpn.io/e/YmWxzw](https://codepen.io/machal/pen/YmWxzw?editors=1100)
 
 ## Sloupečky, řádky a pojmenované stopy {#cols-rows-stopy}
 
-V hranatých závorkách můžeme při zapisování hodnoty `grid-template` uvést také pojmenované řádky a sloupce:
+V hranatých závorkách můžeme při zapisování hodnoty `grid-template` uvést také pojmenované řádky a sloupce.
+
+<!-- AdSnippet -->
+
+V kódu to vypadá následovně:
 
 ```css
 .container {
@@ -97,3 +119,5 @@ Internet Exploreru 11 vlastnost nepodporuje. Můžete to zkusit automaticky pře
 Pokud ale podporu MSIE s využitím Autoprefixeru plánujete, moje doporučení zní: Používejte vlastnost `grid-template`, nikoliv zkratku `grid` a vyhnete se problémům.
 
 Moderní prohlížeče nemají s `grid-template` problém.
+
+<!-- AdSnippet -->

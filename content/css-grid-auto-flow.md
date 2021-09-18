@@ -2,7 +2,31 @@
 
 Vlastnost `grid-auto-flow` určuje, jak bude fungovat algoritmus automatického umísťování prvků do mřížky.
 
+<div class="connected" markdown="1">
+
+![CSS vlastnost grid-auto-flow](../dist/images/medium/vdlayout/schema-css-grid-auto-flow.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `grid-auto-flow` je součástí specifikace [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-auto-flow](https://www.vzhurudolu.cz/prirucka/css-grid-auto-flow)
+
+</div>
+
+</div>
+
+Běžně vlastnost slouží ke změně směru vykreslování rozvržení. Možností použití je ale celá řada. 
+
+Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vykreslení, kdy prohlížeč dá přednost kompaktnosti vykreslení položek před jejich pořadím definovaným v kódu.
+
 ## Hodnoty {#hodnoty}
+
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 
 | Hodnota                    | Co dělá?           |
 |----------------------------|--------------------|
@@ -10,6 +34,8 @@ Vlastnost `grid-auto-flow` určuje, jak bude fungovat algoritmus automatického 
 | `column`  | Prvky layoutu se vykreslují po sloupečcích. |
 | `dense`   | Vykresluje se po řádcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků. |
 | `column dense`   | Vykresluje se po sloupečcích a prohlížeč může vyplnit mezery změnou pořadí prvků. |
+
+</div>
 
 Co teď? Vzhůru do ukázek!
 
@@ -62,6 +88,8 @@ V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`gri
 ## Příklad: zahuštěné vykreslování pomocí grid-auto-flow:dense {#priklad-dense}
 
 Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstavaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu.
+
+<!-- AdSnippet -->
 
 Důležité je, že prohlížeč může po nastavení `grid-auto-flow:dense` změnit pořadí vykreslení prvků.
 
@@ -116,3 +144,5 @@ Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost
 Vlastnost `grid-auto-flow` a její hodnoty jsou plně podporovány ve všech prohlížečích s jedinou výjimkou – Internet Explorerem.
 
 V IE nám bohužel nepomůže v případě této vlastnosti nepomůže ani [Autoprefixer](autoprefixer.md) nebo jiný nástroj. Můžeme na něj ale vyzrát vhodným napsáním kódu tak, abychom měli pod kontrolou desktopové zobrazení, které Explorer používá, a prohlížečích a vlastnosti `grid-auto-flow` nechali jen menší displeje.
+
+<!-- AdSnippet -->

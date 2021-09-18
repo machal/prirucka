@@ -1,6 +1,24 @@
 # Vlastnosti grid-auto-rows a grid-auto-columns: definice implicitního gridu
 
-Vlastnosti `grid-auto-rows` a `grid-auto-columns` je možné použít pro tvorbu implicitního, tedy výslovně nedefinovaného gridu v CSS.
+Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, tedy výslovně nedefinovaného gridu v CSS.
+
+<div class="connected" markdown="1">
+
+![Vlastnost grid-auto-rows a grid-auto-columns](../dist/images/medium/vdlayout/schema-css-grid-auto-rows-columns.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnosti `grid-auto-rows` a `grid-auto-columns` jsou součástí [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-auto-rows-columns](https://www.vzhurudolu.cz/prirucka/css-grid-auto-rows-columns)
+
+</div>
+
+</div>
 
 Jsou tedy doplňkem vlastností [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, tedy autorsky definovaného.
 
@@ -9,6 +27,8 @@ Tyto vlastnosti jsou užitečné pro implicitní řádky (`grid-auto-rows`), a t
 ## Možné hodnoty {#hodnoty}
 
 Vlastnostem implicitního gridu `grid-auto-rows` a `grid-auto-columns` můžete přiřazovat stejné hodnoty jako jejich „explicitním kolegyním“  – `grid-template-rows` a `grid-template-columns`.
+
+<!-- AdSnippet -->
 
 Příklady budu držet kolem definování řádků, ale samozřejmě platí i pro sloupce:
 
@@ -129,3 +149,5 @@ CodePen: [cdpn.io/e/ymazjy](https://codepen.io/machal/pen/ymazjy?editors=1100)
 ## Podpora v prohlížečích {#podpora}
 
 Vlastnosti `grid-auto-rows` a `grid-auto-columns` podporuje kdejaký prohlížeč, včetně Internet Exploreru od verze 10. Jupí! V IE je potřeba používat vlastnosti pojmenované jako `-ms-grid-rows` a `-ms-grid-columns` nebo to řešit Autoprefixerem.
+
+<!-- AdSnippet -->

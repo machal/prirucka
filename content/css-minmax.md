@@ -2,11 +2,31 @@
 
 Funkce (nebo přesněji řečeno „zápis“) `minmax()` a navázaná klíčová slova definují rozsah šířky nebo výšky pro sloupce či řádky mřížky v CSS gridu.
 
+<div class="connected" markdown="1">
+
+![Funkce minmax](../dist/images/medium/vdlayout/schema-css-minmax.png)
+
+<div class="web-only" markdown="1">
+
+Zápis `minmax()` je součástí specifikace [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-minmax](https://www.vzhurudolu.cz/prirucka/css-minmax)
+
+</div>
+
+</div>
+
+V CSS už máme [funkce `min()`, `max()` a `clamp()`](css-min-max-clamp.md), ale funkce `minmax()` a klíčová slova `min-content`, `max-content` a `fit-content` jsou zásadní pro použití v mřížce.
+
 Pro plnohodnotné používání mřížky je to skoro nepostradatelné, ale je v tom řada nejasností, záludností a… opičáren. Pojďme se na ně v tomto textu podívat.
 
-<!-- AdSnippet -->
-
 Možných hodnot je více:
+
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
 
 | Hodnota                          | Ukázka                       |
 |----------------------------------|------------------------------|
@@ -18,11 +38,11 @@ Možných hodnot je více:
 | `fit-content` (podle obsahu)                  | `fit-content`         |
 | `fit-content()` (podle obsahu, s maximem)                  | `fit-content(200px)`         |
 
+</div>
+
 V tomhle textu řešíme vlastnosti pro nastavení rozměrů stop mřížky podle vlastních (obsahových nebo v angličtině *intrinsic*) velikostí prvků uvnitř. Zabýváme se rozměry obsahu.
 
-<div class="web-only related" markdown="1">
-- [CSS funkce `min()`, `max()` a `clamp()`](css-min-max-clamp.md)
-</div>
+<!-- AdSnippet -->
 
 Je dobré si uvědomit, že se to liší od nastavení rozměrů zvenčí pomocí nadřazeného prvku. Tam užijete fixní [jednotky](jednotky.md) (`px`, `rem`, …) nebo podílové jednotky `fr`. Ty obsah uvnitř příliš nezajímá a nastavují rozměry prvku, ve kterém se obsah nachází.
 

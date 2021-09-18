@@ -1,6 +1,24 @@
 # Vlastnost grid-area
 
-CSS vlastnost `grid-area` slouží k umísťování položek v definovaném [CSS gridu](css-grid.md).
+CSS vlastnost `grid-area` slouží k umísťování položek v definovaném CSS gridu.
+
+<div class="connected" markdown="1">
+
+![CSS vlastnost grid-area](../dist/images/medium/vdlayout/schema-css-grid-area.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `grid-area` je součástí specifikace [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-area](https://www.vzhurudolu.cz/prirucka/css-grid-area)
+
+</div>
+
+</div>
 
 Jde o zkratku pro vlastnosti `grid-column-start`, `grid-column-end` a `grid-row-start`, `grid-row-end` nebo také zkratku pro zkratky [`grid-column` a `grid-row`](css-grid-row-column.md), aby to nebylo úplně jednoduché.
 
@@ -35,6 +53,8 @@ Pak už do oblastí `first` a `second` můžeme umísťovat:
   grid-area: first;
 }
 ```
+
+<!-- AdSnippet -->
 
 Je to zápis ekvivalentní k tomuto:
 
@@ -75,8 +95,10 @@ Umísti do třetího sloupce a roztáhni se do všech řádků (od prvního (`1`
 }
 ```
 
-Na různé další možnosti hodnot, včetně demíček na CodePenu, se podívejte do příručky ke zkratkám [`grid-column` a `grid-row`](css-grid-row-column.md). 
+Na různé další možnosti hodnot, včetně demíček na CodePenu, se podívejte do příručky ke zkratkám [`grid-column` a `grid-row`](css-grid-row-column.md).
 
 ## Přístupnost a pozor na změnu pořadí {#pristupnost}
 
 Pomocí vlastnosti `grid-area` můžete zcela odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to, dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+
+<!-- AdSnippet -->

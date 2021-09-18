@@ -2,6 +2,24 @@
 
 V textu se zaměříme na vlastnosti `grid-column` a `grid-row`, které slouží k umísťování položek v definované mřížce.
 
+<div class="connected" markdown="1">
+
+![CSS vlastnosti grid-column a grid-row](../dist/images/medium/vdlayout/schema-css-row-column.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnosti `grid-column` a `grid-row` jsou součástí specifikace [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-row-column](https://www.vzhurudolu.cz/prirucka/css-grid-row-column)
+
+</div>
+
+</div>
+
 Ve skutečnosti se jedná o zkratky pro vlastnosti `grid-column-start`, `grid-column-end` a `grid-row-start`, `grid-row-end`.
 
 Mě však připadá praktičtější používání zkratek, takže se zaměříme na ně:
@@ -13,6 +31,8 @@ grid-column: <grid-column-start> / <grid-column-end>;
 
 ## Možné hodnoty {#hodnoty}
 
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
+
 | Možnost                       | Ukázka hodnoty             |
 |-------------------------------|----------------------------|
 | Čísla stop                    | `1 / 2`                    |
@@ -21,6 +41,8 @@ grid-column: <grid-column-start> / <grid-column-end>;
 | Jedno číslo                   | `3`                        |
 | Záporná čísla                 | `-1 / -3`                  |
 | Automatické umístění          | `auto`                     |
+
+</div>
 
 ### Čísla stop {#cisla-stop}
 
@@ -95,6 +117,8 @@ CodePen: [cdpn.io/e/GVWrOB](https://codepen.io/machal/pen/GVWrOB?editors=1100)
 
 Klíčové slovo `span` slouží ke specifikování *rozsahu*, který v mřížce daná buňka zabírá.
 
+<!-- AdSnippet -->
+
 Podívejme se teď na tentýž příklad jako v první ukázce, jen si jeho pozici definujme pomocí rozsahu:
 
 ```css
@@ -160,3 +184,5 @@ CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 ## Podpora
 
 Moderní prohlížeče jsou s těmito vlastnostmi úplně v pohodě. Horší je to samozřejmě v MSIE, ale to navadí, protože podobné vlastnosti tam existují. [Autoprefixer](css-grid-msie.md) nám pomůže a např. `grid-row` se přeloží do `-ms-grid-row`.
+
+<!-- AdSnippet -->

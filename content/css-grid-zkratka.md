@@ -2,6 +2,24 @@
 
 `grid` je zkratka (shorthand) pro definování všech vlastností CSS gridu.
 
+<div class="connected" markdown="1">
+
+![CSS vlastnost grid](../dist/images/medium/vdlayout/schema-css-grid-zkratka.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `grid` je součástí specifikace [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-zkratka](https://www.vzhurudolu.cz/prirucka/css-grid-zkratka)
+
+</div>
+
+</div>
+
 V jedné deklaraci můžete nastavit jen jeden z obou možných gridů:
 
 - *explicitní*, výslovně definovaný pomocí vlastností [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
@@ -10,6 +28,8 @@ V jedné deklaraci můžete nastavit jen jeden z obou možných gridů:
 …a ještě další vlastnosti.
 
 Je to mocná zbraň, která dokáže zrychlit práci zkušených mřížkových ninjů, ovšem začínajícím bych ji raději nedoporučoval používat.
+
+<!-- AdSnippet -->
 
 Pojďme se podívat na několik ukázek.
 
@@ -125,3 +145,5 @@ Můžeme ji nastavit i pomocí zkratky `grid`. Následující dva kousky kódu b
 Zkratku `grid` zvládají všechny prohlížeče, kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat CSS grid i tento prohlížeč, doporučuji se zkratce `grid` vyhnout.
 
 Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v IE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).
+
+<!-- AdSnippet -->

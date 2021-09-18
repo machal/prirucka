@@ -2,6 +2,24 @@
 
 Vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení explicitní (tedy námi výslovně definované) mřížky v CSS gridu.
 
+<div class="connected" markdown="1">
+
+![Vlastnosti grid-template-rows a grid-template-columns](../dist/images/medium/vdlayout/schema-css-grid-template-rows-columns.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnosti `grid-template-rows` a `grid-template-columns` jsou součástí [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-template-rows-columns](https://www.vzhurudolu.cz/prirucka/css-grid-template-rows-columns)
+
+</div>
+
+</div>
+
 ## Jednoduchý příklad
 
 Vezměne toto HTML:

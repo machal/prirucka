@@ -2,14 +2,25 @@
 
 Rozvržení typu masonry je ve webdesignu stejně populární jako zednická lžíce mezi zedníky.
 
-Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu flexboxu, ale plně to nevyřešil ani grid.
+<div class="connected" markdown="1">
 
-<div class="web-only related" markdown="1">
-- [CSS flexbox](css-flexbox.md)
-- [CSS grid](css-grid.md)
-- [CSS multicol](css-multicolumn.md)
-- [W3: CSS grid 3](https://drafts.csswg.org/css-grid-3/)
+![CSS masonry](../dist/images/medium/vdlayout/schema-css-masonry.png)
+
+<div class="web-only" markdown="1">
+
+CSS masonry snad jednou bude součástí specifikace [CSS gridu](css-grid.md).
+
 </div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-masonry](https://www.vzhurudolu.cz/prirucka/css-masonry)
+
+</div>
+
+</div>
+
+Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu flexboxu, ale plně to nevyřešil ani grid.
 
 Teď už se ale snad blýská na lepší časy. Chystaná třetí verze specicikace gridu totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
 

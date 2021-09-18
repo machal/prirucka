@@ -2,14 +2,25 @@
 
 Vlastnost `grid-template-areas` slouží k pojmenovávání obdélníkových oblastí definovaných CSS gridem.
 
-`grid-template-areas` vytváří oblasti, které jsou pak použitelné ve vlastnostech jako `grid-area` a dalších, sloužících k umísťování elementů do gridu.
+<div class="connected" markdown="1">
 
-<figure>
-<img src="../dist/images/original/vdlayout/css-grid-template-areas.png" width="1920" height="540" alt="Vlastnost grid-template-areas">
-<figcaption markdown="1">
-*Zeleně (světlou barvou) jsou vyznačené položky, růžově (výraznější překryvnou barvou) pak oblasti mřížky vyznačené ve Firefox DevTools.*
-</figcaption>
-</figure>
+![Vlastnost grid-template-areas](../dist/images/medium/vdlayout/schema-css-grid-template-areas.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `grid-template-areas` je součástí [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-grid-template-areas](https://www.vzhurudolu.cz/prirucka/css-grid-template-areas)
+
+</div>
+
+</div>
+
+`grid-template-areas` vytváří oblasti, které jsou pak použitelné ve vlastnostech jako `grid-area` a dalších, sloužících k umísťování elementů do gridu.
 
 V příkladu na obrázku pojmenováváme oblasti následovně:
 
@@ -33,7 +44,14 @@ V příkladu na obrázku pojmenováváme oblasti následovně:
 }
 ```
 
-Vysvětleme:
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-template-areas.png" width="1920" height="540" alt="Vlastnost grid-template-areas">
+<figcaption markdown="1">
+*Zeleně (světlou barvou) jsou vyznačené položky, růžově (výraznější překryvnou barvou) pak oblasti mřížky vyznačené ve Firefox DevTools.*
+</figcaption>
+</figure>
+
+Vysvětleme výše uvedený kód:
 
 - Grid je definovaný jako dvousloupcový (`grid-template-columns: 1fr 1fr`) a dvouřádkový (`grid-template-rows: auto auto`).
 - V `grid-template-areas` je pak seznam řetězců, které označují oblasti. To je to, oč zde běží.
@@ -66,6 +84,8 @@ CodePen: [cdpn.io/e/ymJXaX](https://codepen.io/machal/pen/ymJXaX?editors=1100)
 ## Implicitně vytvořené oblasti a linky {#implicitne}
 
 Pojmenované oblasti souvisí s pojmenovanými linkami, které znáte z vlastnosti [`grid-template-rows`/`-columns`](css-grid-template-rows-columns.md).
+
+<!-- AdSnippet -->
 
 Například definování oblasti pojmenované `head`, automaticky vytvoří dvě linky – `head-start` a `head-end`.
 
@@ -116,6 +136,8 @@ CodePen: [cdpn.io/e/qBjrLwe](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
 
 Oblasti gridu samozřejmě není nutné definovat pokaždé. Hodit se ale budou pro komplexnější layouty, které zároveň potřebujeme definovat a spravovat ručně. Typickým příkladem jsou rozvržení celostránkové.
 
+<!-- AdSnippet -->
+
 Vlastnost `grid-template-areas` je ale užitečná ještě ve dvou směrech. Za prvé zlidšťuje zápis layoutu. Je totiž lepší mluvit o oblasti `heading` než o „oblasti mezi první a osmou buňkou prvního řádku gridu“. Za druhé umožňuje pěkné kejkle s Media Queries.
 
 ## Využití Media Queries {#media-queries}
@@ -164,3 +186,5 @@ CodePen: [cdpn.io/e/jgrmoq](https://codepen.io/machal/pen/jgrmoq?editors=1100)
 Opět je zde jediná potíž. Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to tak problematické být nemusí.
 
 Moderní prohlížeče nemají s vlastností `grid-template-areas` žádný problém.
+
+<!-- AdSnippet -->

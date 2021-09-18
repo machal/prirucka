@@ -2,9 +2,25 @@
 
 Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru v CSS gridu. Proto `fr`, jako *fraction unit*.
 
-Využívá se ve vlastnostech popisující mřížku, jako jsou [`grid-template-columns/rows`](css-grid-template-rows-columns.md) nebo [grid-auto-columns/rows](css-grid-auto-rows-columns.md).
+<div class="connected" markdown="1">
 
-<!-- AdSnippet -->
+![CSS jednotka fr](../dist/images/medium/vdlayout/schema-css-jednotka-fr.png)
+
+<div class="web-only" markdown="1">
+
+Jednotka `fr` je součástí specifikace [CSS gridu](css-grid.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-jednotka-fr](https://www.vzhurudolu.cz/prirucka/css-jednotka-fr)
+
+</div>
+
+</div>
+
+Využívá se ve vlastnostech popisující mřížku, jako jsou [`grid-template-columns/rows`](css-grid-template-rows-columns.md) nebo [grid-auto-columns/rows](css-grid-auto-rows-columns.md).
 
 Ale dost řečí a ukažme si nějaký kód:
 
