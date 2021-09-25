@@ -2,11 +2,25 @@
 
 Vlastnost `place-self` určí zarovnání položky na hlavní i příčné ose pro layouty v CSS.
 
-![Vlastnost place-self](../dist/images/original/vdlayout/css-place-self-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost place-self](../dist/images/medium/vdlayout/css-place-self-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `place-self` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-place-self](https://www.vzhurudolu.cz/prirucka/css-align-self)
+
+</div>
+
+</div>
 
 Jde o zkratku pro vlastnosti [`align-self`](css-align-self.md) a [`justify-self`](css-justify-self.md).
-
-<!-- AdSnippet -->
 
 Zapisuje se takto:
 
@@ -16,9 +30,7 @@ place-self: <hodnota align-self> <hodnota justify-self>;
 
 Pokud není druhá hodnota přítomná, použije se první pro oba směry, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
 
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
+<!-- AdSnippet -->
 
 ## Jednoduchý příklad
 

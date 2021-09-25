@@ -2,17 +2,27 @@
 
 Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél příčné (nebo blokové) osy kontejneru layoutu.
 
-![Vlastnost align-content](../dist/images/original/vdlayout/css-align-content-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost align-content](../dist/images/medium/vdlayout/css-align-content-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `align-content` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-align-content](https://www.vzhurudolu.cz/prirucka/css-align-content)
+
+</div>
+
+</div>
 
 Ve specifikaci se počítá s použitím pro flexbox, grid, vícesloupcový layout, ale taky pro blokové prvky.
 
-<!-- AdSnippet -->
-
 Tato vlastnost nemá pochopitelně vliv na jednořádkové flexboxové kontejnery (tj. kontejnery s `flex-wrap:nowrap`).
-
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
 
 ## Jednoduchý příklad
 

@@ -2,19 +2,31 @@
 
 Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak též řádkové ose).
 
-![Vlastnost justify-self](../dist/images/original/vdlayout/css-justify-self-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost place-items](../dist/images/medium/vdlayout/css-place-items-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `place-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-place-items](https://www.vzhurudolu.cz/prirucka/css-place-items)
+
+</div>
+
+</div>
 
 Je dobré zmínit, že uvnitř buněk tabulek a ve flexboxu je vlastnost `justify-self` ignorována. V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
-
-<!-- AdSnippet -->
 
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
 
 Hodnota `auto` u vnějších okrajů má ostatně před touto `justify-self` přednost ve všech systémech rozvržení v CSS.
 
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
+<!-- AdSnippet -->
 
 ## Jednoduchý příklad
 

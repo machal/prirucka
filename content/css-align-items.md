@@ -2,17 +2,27 @@
 
 Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na příčné ose (jinak též blokové ose) pro layouty v CSS.
 
-![Vlastnost align-items](../dist/images/original/vdlayout/css-align-items-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost align-items](../dist/images/medium/vdlayout/css-align-items-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `align-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-align-items](https://www.vzhurudolu.cz/prirucka/css-align-items)
+
+</div>
+
+</div>
 
 Nastavuje výchozí hodnotu `align-self` pro všechny položky uvnitř kontejneru.
 
-<!-- AdSnippet -->
-
 Tuhle vlastnost není možné aplikovat na blokové elementy nebo na buňky tabulek.
-
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
 
 ## Jednoduchý příklad
 
@@ -63,6 +73,8 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
 Pokud vím, v žádném prohlížeči toto zatím nefunguje.
+
+<!-- AdSnippet -->
 
 ## Podpora v prohlížečích
 

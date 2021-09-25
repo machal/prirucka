@@ -2,19 +2,31 @@
 
 Vlastnost `align-self` určuje zarovnání položky na příčné ose (jinak též blokové ose).
 
-![Vlastnost align-self](../dist/images/original/vdlayout/css-align-self-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost align-self](../dist/images/medium/vdlayout/css-align-self-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `align-self` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-align-self](https://www.vzhurudolu.cz/prirucka/css-align-self)
+
+</div>
+
+</div>
 
 V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky. Ve rozvržení tvořeném flexboxem jde o zarovnání položky na v celém prostoru příčné osy.
 
 Hodnota `auto` u vlastnosti `margin` má ostatně před `align-self` přednost ve všech systémech rozvržení v CSS.
 
-<!-- AdSnippet -->
-
 Vlastnost `align-self` je určená pro flexbox, grid, absolutně pozicované prvky, ale ne pro buňky tabulky nebo blokový layout.
 
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
+<!-- AdSnippet -->
 
 ## Jednoduché příklady
 

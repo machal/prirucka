@@ -2,11 +2,29 @@
 
 Vlastnost `order` nastavuje pořadí položky v kontejneru [flexboxu](css-flexbox.md) nebo [CSS gridu](css-grid.md).
 
+<div class="connected" markdown="1">
+
+<!-- TODO
+![CSS vlastnost order](../dist/images/medium/vdlayout/css-order-schema.png)
+ -->
+ 
+<div class="web-only" markdown="1">
+
+Vlastnost `order` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-order](https://www.vzhurudolu.cz/prirucka/css-order)
+
+</div>
+
+</div>
+
 Občas se může kodérům a kodérkám  hodit proto, že zajistí odlišení *vizuálního* pořadí položek od pořadí *zdrojového* vycházejícího z HTML nebo lépe ze stromu DOM.
 
 Jenže kouzlo téhle vlastnosti je zároveň rizikem z pohledu přístupnosti.
-
-<!-- AdSnippet -->
 
 Ale než se k tomu dostaneme, pojďme si tu vlastnost rozebrat, jak je na Vzhůru dolů zvykem.
 
@@ -63,6 +81,8 @@ CodePen: [cdnp.io/e/oNxmLRe](https://codepen.io/machal/pen/oNxmLRe?editors=1000)
 ## Pár věcí, které si stojí za to zapamatovat {#zapamatujte-si}
 
 Jak je vidět, vlastnost `order`, jakkoliv se zdá jednoduchá a přímočará, trošku klame tělem. A to jsme ještě nezačali mluvit o přístupnosti.
+
+<!-- AdSnippet -->
 
 Jsou zde ale i další vědomosti, které byste měli mít v hlavě, než si s `order` začnete hrát.
 

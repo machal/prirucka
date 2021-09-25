@@ -2,13 +2,25 @@
 
 Vlastnost `justify-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose (jinak též řádkové ose) pro layouty v CSS.
 
-![Vlastnost justify-items](../dist/images/original/vdlayout/css-justify-items-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost justify-items](../dist/images/medium/vdlayout/css-justify-items-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `justify-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-justify-items](https://www.vzhurudolu.cz/prirucka/css-justify-items)
+
+</div>
+
+</div>
 
 Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejneru.
-
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
 
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
 

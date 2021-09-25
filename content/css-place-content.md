@@ -2,7 +2,23 @@
 
 Úkolem vlastnosti `place-content` je specifikovat rozdělení prostoru mezi položkami na hlavní i příčné ose kontejneru pro layouty v CSS.
 
-![Vlastnost place-content](../dist/images/original/vdlayout/css-place-content-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost place-content](../dist/images/medium/vdlayout/css-place-content-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `place-content` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-place-content](https://www.vzhurudolu.cz/prirucka/css-place-content)
+
+</div>
+
+</div>
 
 `place-content` je zkratkou pro vlastnosti [`justify-content`](css-justify-content.md) a [`align-content`](css-align-content.md).
 

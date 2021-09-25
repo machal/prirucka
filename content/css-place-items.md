@@ -2,7 +2,23 @@
 
 Vlastnost `place-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose i příčné ose pro layouty v CSS.
 
-![Vlastnost place-items](../dist/images/original/vdlayout/css-place-items-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost place-items](../dist/images/medium/vdlayout/css-place-items-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `place-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-place-items](https://www.vzhurudolu.cz/prirucka/css-place-items)
+
+</div>
+
+</div>
 
 Jde totiž o zkratku pro vlastnosti [`justify-items`](css-justify-items.md) a [`align-items`](css-align-items.md).
 
@@ -17,10 +33,6 @@ Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř konte
 <!-- AdSnippet -->
 
 Dává smysl hlavně pro CSS grid, protože ve flexboxu je vlastnost `justify-items` ignorována.
-
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
 
 ## Jednoduchý příklad
 

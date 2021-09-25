@@ -2,17 +2,29 @@
 
 Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél hlavní (nebo řádkové) osy kontejneru layoutu.
 
-![Vlastnost justify-content](../dist/images/original/vdlayout/css-justify-content-schema.png)
+<div class="connected" markdown="1">
+
+![CSS vlastnost justify-content](../dist/images/medium/vdlayout/css-justify-content-schema.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnost `justify-content` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-justify-content](https://www.vzhurudolu.cz/prirucka/css-justify-content)
+
+</div>
+
+</div>
 
 Ve specifikaci se počítá s použitím pro flexbox, grid, ale také vícesloupcový layout.
 
-<!-- AdSnippet -->
-
 Po pořádek zmiňme, že tahle vlastnost nemusí být pro flexbox užitečná, protože zbylý prostor se rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů a až poté, co se započtou hodnoty délek položek rozvržení. Stačí tedy jedna flexboxová položka s `flex` nebo `flex-grow` nastavená na 1 a více a žádný volný prostor zde nezbude.
 
-<div class="related web-only" markdown="1">
-- [CSS Box Alignment](css-box-alignment.md)
-</div>
+<!-- AdSnippet -->
 
 ## Jednoduchý příklad
 
