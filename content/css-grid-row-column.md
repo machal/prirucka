@@ -4,7 +4,7 @@ V textu se zaměříme na vlastnosti `grid-column` a `grid-row`, které slouží
 
 <div class="connected" markdown="1">
 
-![CSS vlastnosti grid-column a grid-row](../dist/images/medium/vdlayout/schema-css-row-column.png)
+![CSS vlastnosti grid-column a grid-row](../dist/images/medium/vdlayout/schema-css-grid-row-column.png)
 
 <div class="web-only" markdown="1">
 
