@@ -2,14 +2,30 @@
 
 Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik sloupců ve vícesloupcovém rozvržení.
 
-<div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicolumn.md)
+<div class="connected" markdown="1">
+
+![CSS vlastnost column-span](../dist/images/small/vdlayout/css-multicol-span-scheme.png)
+
+<div class="web-only" markdown="1">
+
+`column-span` patří do specifikace vícesloupcového layoutu – [CSS Multi-column Layout](css-multicolumn.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-multicol-span](https://www.vzhurudolu.cz/prirucka/css-multicol-span)
+
+</div>
+
 </div>
 
 Možné hodnoty jsou tyto:
 
 - `none` - prvek se nepřeklenuje.
 - `all` – prvek se překlenuje přes všechny dostupné sloupce.
+
+Vlastnost je velmi zajímavá pro použití na nadpisy a podobné prvky, které mají oddělovat sekce obsahu.
 
 Jak přesně to funguje? To uvidíte nejlépe v příkladu nebo na obrázku.
 
@@ -19,8 +35,6 @@ Jak přesně to funguje? To uvidíte nejlépe v příkladu nebo na obrázku.
 *Černý prvek se standardně spokojí jen s jedním sloupcem. Dokud mu nenastavíte `column-span:all`.*
 </figcaption>
 </figure>
-
-Vlastnost je velmi zajímavá pro použití na nadpisy a podobné prvky, které mají oddělovat sekce obsahu.
 
 ## Příklad {#priklad}
 

@@ -1,13 +1,30 @@
 # Vlastnosti column-gap a column-rule: Mezery a oddělovače ve vícesloupcovém rozložení
 
-Ve vícesloupcovém rozvržení (CSS Multi-column layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží následující vlastnosti:
+Ve vícesloupcovém rozvržení (CSS Multi-column layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží tyto vlastnosti.
+
+<div class="connected" markdown="1">
+
+![CSS vlastnosti column-gap a column-rule](../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnosti `column-gap` a `column-rule` patří do specifikace vícesloupcového layoutu – [CSS Multi-column Layout](css-multicolumn.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-multicol-gap](https://www.vzhurudolu.cz/prirucka/css-multicol-gap)
+
+</div>
+
+</div>
+
+
+Je jich hned několik:
 
 - `column-gap` – nastavení šířky mezery mezi sloupci.
 - `column-rule` – definice grafického oddělovače sloupců. Jde o zkratky pro vlastnosti `column-rule-color`, `column-rule-style`, `column-rule-width`.
-
-<div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicolumn.md)
-</div>
 
 Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače nikoliv. Oddělovač jakékoliv šířky neubírá místo mezerám nebo sloupcům v rozvržení. Nedává vám to smysl? Podívejte se na příklad na konci tohoto textu.
 

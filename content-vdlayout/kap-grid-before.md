@@ -1,4 +1,4 @@
-# Kapitola 6: grid
+# Kapitola 6: Grid
 
 CSS grid je nejnovější, nejrobustnější a dle mého názoru nejslibnější specifikace pro tvorbu rozvržení v kaskádových stylech.
 

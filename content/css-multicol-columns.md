@@ -1,14 +1,28 @@
 # Vlastnosti column-width, column-count a columns: počet sloupců a jejich šířka ve vícesloupcovém rozložení
 
-Pokud chcete pro rozvržení použít CSS Multi-column Layout, pak je nutné začít alespoň jednou z následujících vlastností:
+Pokud chcete pro rozvržení použít CSS Multi-column Layout, pak je nutné začít alespoň jednou z těchto vlastností.
+
+<div class="connected" markdown="1">
+
+![column-width, column-count a columns](../dist/images/small/vdlayout/css-multicol-columns-scheme.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnosti `column-width`, `column-count` a `columns` patří do specifikace vícesloupcového layoutu – [CSS Multi-column Layout](css-multicolumn.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-multicol-columns](https://www.vzhurudolu.cz/prirucka/css-multicol-columns)
+
+</div>
+
+</div>
 
 - `column-width` – nastavíte doporučenou šířku sloupce, jejich počet se pak přizpůsobí šířce rodiče.
 - `column-count` – vezmete to přes počet sloupcí, zde se naopak přizpůsobí jejich šířka.
 - `columns` – zkratka pro obě vlastnosti.
-
-<div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicolumn.md)
-</div>
 
 Zejména vlastnost `column-width` je u vícesloupcového rozvržení v CSS kouzelná. Umožňuje totiž dělat něco jako automatický responzivní layout. Tedy určit počet sloupečků automaticky podle dostupného prostoru.
 

@@ -2,17 +2,29 @@
 
 V automatickém vícesloupcovém layoutu můžete mít prvky, u kterých si nepřejete, aby prohlížeče udělaly zalomení z jednoho sloupce na druhý. Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – vlastně jakékoliv prvky, které mají potomky.
 
-<!-- AdSnippet -->
+<div class="connected" markdown="1">
+
+![CSS vlastnosti column-break, break-after](../dist/images/small/vdlayout/css-multicol-break-scheme.png)
+
+<div class="web-only" markdown="1">
+
+Vlastnosti `break-before`, `break-after` a `break-inside` patří do specifikace vícesloupcového layoutu – [CSS Multi-column Layout](css-multicolumn.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-multicol-break](https://www.vzhurudolu.cz/prirucka/css-multicol-break)
+
+</div>
+
+</div>
 
 Slouží k tomu následující tři vlastnosti, které znáte možná ještě z CSS modulu pro ovlivnění stránkování během tisku stránky:
 
 - `break-before` – zalamování před prvkem.
 - `break-after` – zalamování za prvkem.
 - `break-inside` – zalamování uvnitř prvku.
-
-<div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicolumn.md)
-</div>
 
 Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jejich nedostatečné podpoře v prohlížečích.
 
@@ -48,6 +60,8 @@ Vlastnost `break-before` můžeme použít k vynucení nebo zakázání zalomen�
 - `auto` – ponechej výchozí chování prohlížeče.
 - `avoid` nebo `avoid-column` – zakazuje zalomení uvnitř prvku.
 - `column` – vynucuje zalomení uvnitř prvku.
+
+<!-- AdSnippet -->
 
 ## Příklad {#priklad}
 

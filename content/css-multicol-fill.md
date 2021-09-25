@@ -2,15 +2,25 @@
 
 Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení do několika sloupečků tak, aby všechny zabíraly přibližně stejnou výšku.
 
-V případě nastavení `column-fill:balance` se prohlížeče snaží minimalizovat odchylky výšky sloupců a zároveň ctít zalamování, ošetřovat typografické vdovy a sirotky a další vlastnosti.
+<div class="connected" markdown="1">
 
-<div class="related web-only" markdown="1">
-- [CSS Multi-column Layout](css-multicolumn.md)
+![CSS vlastnost column-fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.png)
+
+<div class="web-only" markdown="1">
+
+`column-fill` patří do specifikace vícesloupcového layoutu – [CSS Multi-column Layout](css-multicolumn.md).
+
 </div>
 
-Vlastnost se vám asi zatím bude používat hůře. Implementace v prohlížečích je různorodá.
+<div class="ebook-only" markdown="1">
 
-<!-- AdSnippet -->
+→ [vrdl.cz/p/css-multicol-fill](https://www.vzhurudolu.cz/prirucka/css-multicol-fill)
+
+</div>
+
+</div>
+
+V případě nastavení `column-fill:balance` se prohlížeče snaží minimalizovat odchylky výšky sloupců a zároveň ctít zalamování, ošetřovat typografické vdovy a sirotky a další vlastnosti.
 
 Podívejme se na možné hodnoty:
 
@@ -19,6 +29,10 @@ Podívejme se na možné hodnoty:
 - `balance-all` – stejně jako `balance`, jen se do sloupečků rozděluje veškerý obsah. V době psaní toto žádný prohlížeč nepodporuje.
 
 Rozdíl mezi `balance` a `balance-all` uvidíte jen ve vícestránkových kontextech jako je CSS pro tisk („paged media“ nebo také „fragmented contexts“). V případě `balance` se do sloupců má rozdělit jen poslední fragment, např. poslední stránka. U hodnoty `balance-all` se rozdělí všechny fragmenty či stránky.
+
+<!-- AdSnippet -->
+
+Vlastnost se vám asi zatím bude používat hůře. Implementace v prohlížečích je různorodá.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-fill.png" width="1600" height="900" alt="CSS vlastnost column-fill">
