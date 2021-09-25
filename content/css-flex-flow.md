@@ -1,13 +1,29 @@
 # CSS vlastnost flex-flow: zkratka pro určení směru a zalamování flexboxu
 
-Vlastnost `flex-flow` je zkratkou pro dvě už dříve uváděné:
+Vlastnost `flex-flow` určuje směr a způsob zalamování položek flexboxu.
+
+<div class="connected" markdown="1">
+
+![CSS vlastnost flex-flow](../dist/images/medium/vdlayout/css-flex-flow-schema.png)
+
+<div class="web-only" markdown="1">
+
+`flex-flow` je jedna z vlastností [flexboxu](css-flexbox.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-flex-flow](https://www.vzhurudolu.cz/prirucka/css-flex-flow)
+
+</div>
+
+</div>
+
+Jde o zkratku pro dvě už dříve uváděné vlastnosti:
 
 - [`flex-direction`](css-flex-direction.md) – směr vykreslování flexboxového rozvržení.
 - [`flex-wrap`](css-flex-wrap.md) – zalamování položek layoutu na více řádků.
-
-<div class="related web-only" markdown="1">
-- [Flexbox](css-flexbox.md)
-</div>
 
 V obecné rovině je zápis následující:
 

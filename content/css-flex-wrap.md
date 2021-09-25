@@ -2,18 +2,25 @@
 
 Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda se položky rozvržení mohou zalamovat na více řádků nebo nikoliv.
 
-Hodnotou `wrap-reverse` také můžeme otočit pořadí vyskládání prvků na příčné ose layoutu.
+<div class="connected" markdown="1">
 
-<figure>
-<img src="../dist/images/original/vdlayout/css-flex-wrap.png" width="1600" height="900" alt="CSS vlastnost flex-wrap">
-<figcaption markdown="1">
-*Může se layout zalamovat, a pokud ano jakým směrem?*
-</figcaption>
-</figure>
+![CSS vlastnost flex-wrap](../dist/images/medium/vdlayout/css-flex-wrap-schema.png)
 
-<div class="related web-only" markdown="1">
-- [Flexbox](css-flexbox.md)
+<div class="web-only" markdown="1">
+
+`flex-wrap` je jedna z vlastností [flexboxu](css-flexbox.md).
+
 </div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-flex-wrap](https://www.vzhurudolu.cz/prirucka/css-flex-wrap)
+
+</div>
+
+</div>
+
+Hodnotou `wrap-reverse` také můžeme otočit pořadí vyskládání prvků na příčné ose layoutu.
 
 Toto jsou možné hodnoty:
 
@@ -23,6 +30,13 @@ Výchozí hodnota. Flexbox bude jednořádkový.
 Kontejner flexboxu umožní položkám, aby se zalomily na další řádek.
 - `wrap-reverse`  
 Položky se mohou zalomit do více řádků a zároveň se pořadí řádků otočí.
+
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-wrap.png" width="1600" height="900" alt="CSS vlastnost flex-wrap">
+<figcaption markdown="1">
+*Může se layout zalamovat, a pokud ano jakým směrem?*
+</figcaption>
+</figure>
 
 <div class="web-only" markdown="1">
 

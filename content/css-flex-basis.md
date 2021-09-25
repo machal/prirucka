@@ -2,8 +2,22 @@
 
 Vlastnost `flex-basis` určuje výchozí velikost prvku v rámci rozvržení postaveném na flexboxu.
 
-<div class="related web-only" markdown="1">
-- [Flexbox](css-flexbox.md)
+<div class="connected" markdown="1">
+
+![CSS vlastnost flex-basis](../dist/images/medium/vdlayout/css-flex-basis-schema.png)
+
+<div class="web-only" markdown="1">
+
+`flex-basis` je jedna z vlastností [flexboxu](css-flexbox.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-flex-basis](https://www.vzhurudolu.cz/prirucka/css-flex-basis)
+
+</div>
+
 </div>
 
 Je to velice podobné jako vlastnosti `width` nebo `height`, ale s tím, že velikost definovaná ve `flex-basis` má vždy přednost.

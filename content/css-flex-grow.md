@@ -2,13 +2,25 @@
 
 Jak moc může položka růst relativně k dalším položkám, pokud je k dispozici volné místo – například když uživatel zvětší okno prohlížeče? To určuje vlastnost `flex-grow`.
 
-<div class="related web-only" markdown="1">
-- [Flexbox](css-flexbox.md)
+<div class="connected" markdown="1">
+
+![CSS vlastnost flex-grow](../dist/images/medium/vdlayout/css-flex-grow-schema.png)
+
+<div class="web-only" markdown="1">
+
+`flex-grow` je jedna z vlastností [flexboxu](css-flexbox.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-flex-grow](https://www.vzhurudolu.cz/prirucka/css-flex-grow)
+
+</div>
+
 </div>
 
 Specifikace a praktická zkušenost nás – namísto používání vlastnosti `flex-grow` – navádejí spíše ke [zkratce `flex`](css-flex.md), ale přesto považuji za nutné se o této vlastnosti zmínit.
-
-<!-- AdSnippet -->
 
 Možné hodnoty:
 
@@ -18,6 +30,8 @@ Znamená, že položka s přibývajícím volným místem nijak neroste.
 Položky si rozdělují podíly z nově získaného místa nad rámec výchozí šířky.
 
 Záporné hodnoty zde nejsou validní, ale desetinná čísla jsou povolená, což už jste viděli.
+
+<!-- AdSnippet -->
 
 ## Demo {#demo}
 

@@ -2,8 +2,22 @@
 
 Vlastnost `flex` nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat v rámci flexboxového layoutu.
 
-<div class="related web-only" markdown="1">
-- [Flexbox](css-flexbox.md)
+<div class="connected" markdown="1">
+
+![CSS vlastnost flex](../dist/images/medium/vdlayout/css-flex-schema.png)
+
+<div class="web-only" markdown="1">
+
+`flex` je jedna z vlastností [flexboxu](css-flexbox.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-flex](https://www.vzhurudolu.cz/prirucka/css-flex)
+
+</div>
+
 </div>
 
 Jde o zkratku pro všechny vlastnosti definující pružnost flex položky:

@@ -2,13 +2,25 @@
 
 Jakým podílem se může položka flexboxu zmenšovat, pokud v rodičovském kontejneru místo ubylo? Od toho tady máme vlastnost `flex-shrink`.
 
-<!-- AdSnippet -->
+<div class="connected" markdown="1">
+
+![CSS vlastnost flex-shrink](../dist/images/medium/vdlayout/css-flex-shrink-schema.png)
+
+<div class="web-only" markdown="1">
+
+`flex-shrink` je jedna z vlastností [flexboxu](css-flexbox.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-flex-shrink](https://www.vzhurudolu.cz/prirucka/css-flex-shrink)
+
+</div>
+
+</div>
 
 Také v jejím případě platí, že je obecně lepší místo ní používat [zkratku `flex`](css-flex.md). Problematikou smršťování položek flexboxu se tady ale zabývat budeme, to si pište, že ano.
-
-<div class="related web-only" markdown="1">
-- [Flexbox](css-flexbox.md)
-</div>
 
 Možné hodnoty:
 

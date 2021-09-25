@@ -224,10 +224,9 @@ Jednotlivé články zatím vkládáme takto:
 
 → *Související: [Vkládání JavaScriptu jako async, defer a type="module"](js-async-defer-module.md)*
 
-
 ### Související informace
 
-Obrázek vlastnosti, stručná vysvětlivka, odkazy na další příručky a případně živé URL. Vkládáme pomocí HTML:
+Obrázek vlastnosti, stručná vysvětlivka, odkazy na další příručky a případně živé URL. Vkládáme pomocí HTML vždy za první odstavec definující vlastnost:
 
 ```html
 <div class="connected" markdown="1">

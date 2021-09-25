@@ -2,15 +2,22 @@
 
 Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vyskládání položek tím, že nastaví směr hlavní osy flexboxu.
 
-<figure>
-<img src="../dist/images/original/vdlayout/css-flex-direction.png?2" width="1600" height="900" alt="CSS vlastnost flex-direction">
-<figcaption markdown="1">
-*Jakým směrem se flexboxové rozvržení vykreslí?*
-</figcaption>
-</figure>
+<div class="connected" markdown="1">
 
-<div class="related web-only" markdown="1">
-- [Flexbox](css-flexbox.md)
+![CSS vlastnost flex-direction](../dist/images/medium/vdlayout/css-flex-direction-schema.png)
+
+<div class="web-only" markdown="1">
+
+`flex-direction` je jedna z vlastností [flexboxu](css-flexbox.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+→ [vrdl.cz/p/css-flex-direction](https://www.vzhurudolu.cz/prirucka/css-flex-direction)
+
+</div>
+
 </div>
 
 Toto jsou možné hodnoty:
@@ -23,6 +30,13 @@ Do řádky, ale v opačném směru, tedy zprava doleva.
 Položky flexboxu se skládají shora dolů, do sloupce.
 - `column-reverse`  
 Do sloupce, ale v opačném směru, tedy zdola nahoru.
+
+<figure>
+<img src="../dist/images/original/vdlayout/css-flex-direction.png?2" width="1600" height="900" alt="CSS vlastnost flex-direction">
+<figcaption markdown="1">
+*Jakým směrem se flexboxové rozvržení vykreslí?*
+</figcaption>
+</figure>
 
 V živé ukázce je možné interaktivě zkoušet všechny varianty hodnot vlastnosti.
 
