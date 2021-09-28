@@ -1,15 +1,14 @@
 # Google Page Experience update
 
-Asi víte, že Google bude od poloviny června postupně nasazovat aktualizaci algoritmu zvanou [Page Experience](https://developers.google.com/search/docs/guides/page-experience). Kluci a holky v největším vyhledávači ji navrhli tak, aby zvýrazňovala stránky, které nabízejí výborný uživatelský prožitek.
+Google od června do srpna 2021 postupně nasazoval aktualizaci algoritmu zvanou [Page Experience](https://developers.google.com/search/docs/guides/page-experience). 
 
-V tomhle článku se zaměříme na to, abychom poněkud vágní definici upřesnili.
+Kluci a holky v největším vyhledávači ji navrhli tak, aby zvýrazňovala stránky, které nabízejí výborný uživatelský prožitek. V tomhle článku se zaměříme na to, abychom poněkud vágní definici upřesnili.
 
 <div class="f-6" markdown="1">
 
 ## Obsah
 
 - [Obsah je stále král](#obsah)
-- [Kdy se to začne nasazovat?](#kdy)
 - [Signály, které do Page Experience patří](#signaly)
 - [Jak se to bude posuzovat?](#jak)
 - [Konec zvýhodnění AMP](#amp)
@@ -28,13 +27,12 @@ Signály z oblasti Page Experience bude platforma používat spolu se stovkami d
 
 Prostě obsah zůstává králem, i když cvrlikání na sítích v poslední době může působit jinak.
 
-## Kdy se to začne nasazovat? {#kdy}
+Podle studie Sistrixu ze září 2021 to vypadá, že vliv signálu Page Experience je zatím menší, ale postupně roste:
 
-Změny začne Google aplikovat na své systémy od poloviny června 2021. Bude to nasazovat postupně, aby odladil případné bugy a očekává, že celou akci ukončí ke konci srpna.
+<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Zjištění Sistrix o vlivu Page Experience na SEO:<br><br>– Weby, který splňují PX mají nyní v průměru o 1 % lepší pozice v SERP, ale průběžně se rozdíl zvyšuje.<br><br>– Weby, které některé z požadavků nesplňují, mají pozice o 3,7 % horší.<a href="https://t.co/PBJP3nlKq3">https://t.co/PBJP3nlKq3</a> <a href="https://t.co/ki7jyLWNew">pic.twitter.com/ki7jyLWNew</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1442094201965924359?ref_src=twsrc%5Etfw">September 26, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<!-- AdSnippet -->
-
-Na jaké atributy stránek se v rámci Page Experience budou v Googlu ve svých automatizovaných hodnoceních dívat?
+Na jaké atributy stránek se v rámci Page Experience v Googlu ve svých automatizovaných hodnoceních dívají?
 
 ## Signály {#signaly}
 
@@ -104,6 +102,8 @@ Nemluvě o tom, že samotné metriky v tuto chvíli pokrývají ještě menší 
 ## Jak se to bude posuzovat? {#jak}
 
 Kladl jsem si otázku, jak přesně bude signály pro Page Experience Google měřit.
+
+<!-- AdSnippet -->
 
 Budu zde sledovat hlavně na [Web Vitals](web-vitals.md) – metriky LCP, FID a CLS, které jsou z uvedeného seznamu nejnovější. A zároveň se mi zdá, že kolem [měření rychlosti](https://www.vzhurudolu.cz/video/webinar-rychlost-mereni) existuje celá řada [mýtů](rychlost-myty.md).
 
