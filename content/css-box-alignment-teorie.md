@@ -22,10 +22,9 @@ Osy pro potřeby layoutu v CSS:
 - _Hlavní_ nebo-li _řádková_ osa (inline axis), ve středoevropských podmínkách obvykle vodorovná.
 - _Příčná_ nebo-li _bloková_ osa (block axis), u nás obvykle svislá.
 
-Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit:
+Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Japonština nebo arabština se čtou zcela v odlišných směrech.
 
-- Změníme mód psaní (`writing-mode`) nebo jazyk dokumentu. Japonština nebo arabština se čtou zcela v odlišných směrech.
-- Změníme směr toku layoutu, což například ve flexboxu často děláme pomocí vlastnosti `flex-direction`.
+O směru psaní dokumentu a tvorbě layoutu pro tyto jazyky píšu více v textu o [logických vlastnostech a hodnotách v CSS](css-logical.md).
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-box-alignment-direction.png" width="1600" height="900" alt="Změna směru rozvržení">
