@@ -286,7 +286,7 @@ Jak je z článku už asi zřejmé, logické alternativy nemusejí mít jen vlas
 
 Ve vlastnostech `float` a `clear` pak budeme moci použít nové hodnoty `inline-start` a `inline-end`.
 
-Pro `text-align` je to jednodušší, protože jde zarovnávat jen v jednom směru. Takže `text-align:start` bude `text-align:right`.
+Pro `text-align` je to jednodušší, protože jde zarovnávat jen v jednom směru. Takže `text-align:start` bude `text-align:left`.
 
 Vlastnost `resize` zase bude moci nabývat hodnot `block` a `inline`.
 
