@@ -22,8 +22,8 @@ Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik slo
 
 Možné hodnoty jsou tyto:
 
-- `none` - prvek se nepřeklenuje.
-- `all` – prvek se překlenuje přes všechny dostupné sloupce.
+- `none` - prvek nepřeklenuje.
+- `all` – prvek překlenuje všechny dostupné sloupce.
 
 Vlastnost je velmi zajímavá pro použití na nadpisy a podobné prvky, které mají oddělovat sekce obsahu.
 
@@ -35,6 +35,8 @@ Jak přesně to funguje? To uvidíte nejlépe v příkladu nebo na obrázku.
 *Černý prvek se standardně spokojí jen s jedním sloupcem. Dokud mu nenastavíte `column-span:all`.*
 </figcaption>
 </figure>
+
+Ukázka bude. To víte, že ano.
 
 ## Příklad {#priklad}
 
@@ -51,10 +53,10 @@ Máme zde opět náš starý známý kontejner, tentokrát jen mírně upravený
 
 CodePen: [cdpn.io/e/jOMaYVg](https://codepen.io/machal/pen/jOMaYVg?editors=1000)
 
-V přepínači nahoře je možné volit mezi dvěma hodnotami pro nadpisy `<h2>`:
+Při prohlížení ukázky naživo je možné v přepínači nahoře volit mezi dvěma hodnotami pro nadpisy `<h2>`:
 
-- `column-span: none` neudělá nic. Nebo prostě maže překlenutí získané druhou možností.
-- `column-span: all` zapíná překlenutí přes všechny sloupečky Multi-column layoutu.
+- `column-span:none` neudělá nic. Nebo prostě maže překlenutí získané dříve hodnotou `all`.
+- `column-span:all` zapíná překlenutí přes všechny sloupečky CSS Multi-column layoutu.
 
 ## Poznámka ke splynutí okrajů {#margin}
 
@@ -62,14 +64,16 @@ Asi víte, že svislé vnější okraje (`margin-top` a `margin-bottom`) prvků 
 
 <!-- AdSnippet -->
 
-Z příkladu výše pak hezky uvidíte, že v případě nadpisu majícího `column-span: all` to neplatí. Je to proto, že prohlížeč pokaždé když začne tvořit sloupečkové rozvržení, zároveň vytvoří nový blokový formátovací kontext.
+Z příkladu výše pak hezky uvidíte, že v případě nadpisu, který nastavíte jako překlenující (`column-span:all`) to neplatí.
 
-Pokud byste ale umístili dva nadpisy s nastavením `column-span: all` k sobě, jejich svislé vnější marginy by splývaly.
+Je to proto, že prohlížeč pokaždé když začne tvořit sloupečkové rozvržení, zároveň vytvoří nový blokový formátovací kontext.
+
+Pokud byste ale umístili dva nadpisy s nastavením `column-span:all` k sobě, jejich svislé vnější marginy by splývaly.
 
 ## Podpora v prohlížečích {#podpora}
 
-K mému překvapení je podpora vynikající. Demo z CodePen hezky funguje jak v Chrome, tak v Safari i Firefoxu.
+K mé velké radosti je podpora vlastnosti `column-span` vynikající. Demo z CodePenu hezky funguje jak v Chrome, tak v Safari i Firefoxu.
 
-Podle webu CanIUse je vlastnost dostupná také v Internet Exploreru 10 a 11. No výborně. [caniuse.com/column-span](https://caniuse.com/?search=column-span)
+Podle webu CanIUse je vlastnost dostupná také v Internet Exploreru 10 a 11. Tyhle překvapení mám rád. Jsou vzácná. [caniuse.com/column-span](https://caniuse.com/?search=column-span)
 
 <!-- AdSnippet -->

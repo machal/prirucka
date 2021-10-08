@@ -1,6 +1,6 @@
 # Vícesloupcové rozvržení: příručka pro vlastnosti CSS Multi-column Layout
 
-Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-column Layout můžeme obsah vysázet do více sloupců definované šířky podobně jako v novinové sazbě.
+Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-column Layout můžeme obsah stránky vysázet do více sloupců definované šířky podobně jako v novinové sazbě.
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)
@@ -8,7 +8,7 @@ Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-colum
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
-Na rozdíl od podobných layoutových modulů – CSS gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro obsah, nikoliv pro layout stránek nebo komponent.
+Na rozdíl od podobných layoutových modulů – CSS gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro textový a obrázkový obsah, nikoliv pro layout stránek nebo komponent.
 
 Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu. Na obrázku vidíte vícesloupcový layout s nastavením `columns:20em`.
 
@@ -19,7 +19,19 @@ Kouzlo automatického přizpůsobení šířce okna.
 </figcaption>
 </figure>
 
-V následujícím příkladu se té responzivitě mrkneme na zoubek.
+<div class="web-only" markdown="1">
+
+Žádné [Media Queries](css-media-queries.md), opravdu!
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Žádné [Media Queries](content-vdlayout/media-queries.md), opravdu!
+
+</div>
+
+V následující části se tomuto příkladu pořádně mrkneme na zoubek.
 
 ## Příklad k vyzkoušení {#priklad}
 
@@ -46,13 +58,15 @@ V CSS jsme pomocí vícesloupcového rozvržení definovali následující:
 
 Prohlížeč by pak měl vnitřní prvky kontejneru rozdělit do sloupců o šířce kolem `20em`, což také udělá. Při šířkách okna do zhruba 950 pixelů zde vidíme jeden sloupec.
 
-Od této šířky sloupce v layoutu pořád přibývají.
+Od této šířky sloupce v layoutu pořád přibývají. Viděli jste to v obrázku výše.
 
 CodePen: [cdpn.io/e/rNMzwaN](https://codepen.io/machal/pen/rNMzwaN?editors=1100)
 
 Když si v CodePenu budete klikat na tlačítka s přiblížením a oddálením (0.5×…), uvidíte, jak to funguje v praxi.
 
-Je to automaticky responzivní, aniž bychom museli definovat [Media Queries](css-media-queries.md).
+Je to automaticky responzivní, aniž bychom museli definovat Media Queries. Bezva.
+
+Tady jsme ale v příručce po CSS Multicol-Layout. Teď proto pojďme podívat na vlastnosti spadající do tohoto modulu.
 
 ## Vlastnosti pro kontejner {#vlastnosti-kontejner}
 
@@ -67,7 +81,7 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
     <p><a href="css-multicol-columns.md"><img src="../dist/images/small/vdlayout/css-multicol-columns-scheme.png" alt="Vlastnost column"></a></p>
     <p>
       Počet sloupců a jejich šířka.
-      <br><code>columns:3 20em</code> – maximálně tři sloupce o šířce <code>20em</code>.
+      <br>Např. <code>columns:3 20em</code> – maximálně tři sloupce o šířce <code>20em</code>.
     </p>
   </article>  
   <article role="article">
@@ -75,14 +89,14 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
      <p><a href="css-multicol-gap-rule.md"><img src="../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png" alt="Vlastnost gap a rule"></a></p>
      <p>
       Definice mezer a oddělovačů mezi sloupci. <br>
-      <code>gap:3em; column-rule:dotted lightgrey;</code> – mezera <code>3em</code>, oddělující čára tečkovaná a světle šedá.</p>
+      Např. <code>gap:3em; column-rule:dotted lightgrey;</code> – mezera <code>3em</code>, oddělující čára tečkovaná a světle šedá.</p>
    </article>  
   <article role="article">
     <h4><a href="css-multicol-fill.md"><code>column-fill</code></a></h4>
     <p><a href="css-multicol-fill.md"><img src="../dist/images/small/vdlayout/css-multicol-fill-scheme.png" alt="Vlastnost fill"></a></p>
     <p>
       Vyvažování výšky sloupců. <br>
-      <code>column-fill:balance</code> – prvky se rozdělí do sloupců a jejich výška bude podobná.</p>
+      Např. <code>column-fill:balance</code> – prvky se rozdělí do sloupců a jejich výška bude podobná.</p>
   </article>  
 
 </div>
@@ -98,7 +112,7 @@ Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamov
     <p><a href="css-multicol-break.md"><img src="../dist/images/small/vdlayout/css-multicol-break-scheme.png" alt="Vlastnost break"></a></p>
     <p>
       Zalamování prvků do sloupců. <br>
-      <code>break-inside:avoid</code> – zabrání zalamování obsahu prvku do více sloupců.
+      Např. <code>break-inside:avoid</code> – zabrání zalamování obsahu prvku do více sloupců.
     </p>
   </article>
 
@@ -107,45 +121,42 @@ Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamov
      <p><a href="css-multicol-span.md"><img src="../dist/images/small/vdlayout/css-multicol-span-scheme.png" alt="Vlastnost span"></a></p>
      <p>
       Prvek může překlenout více sloupců. <br>
-      <code>column-span:all</code> – prvek překlene všechny sloupce.
+      Např. <code>column-span:all</code> – prvek překlene všechny sloupce.
     </p>
   </article>
 
 </div>
 
-## Co byste ještě o vícesloupcovém layoutu měli vědět? {#vice}
-
-Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s pochopením téhle užitečné sady vlastností.
-
-### Anonymní fragmentačním kontejnery {#vice-kontejnery}
-
-Jiné metody rozložení v CSS, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení. Například při použití hodnoty [vlastnosti `display`](css-display.md) `grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
-
-<!-- AdSnippet -->
-
-V případě CSS Multi-column Layout však podřízené prvky kontejneru s více sloupci pokračují v normálním toku a ten je uspořádán do několika sloupců. Tyto sloupce mají pružnou velikost ve směru řádků, a proto reagují na dostupné místo změnou velikosti nebo počtu zobrazených sloupců.
-
-Vícesloupcové rozložení zavádí kontext fragmentace tvořený anonymními fragmentačními kontejnery, které se nazývají sloupcové boxy (nebo zkráceně sloupce).
-
-<!-- TODO
-- [ ] https://www.w3.org/TR/css-multicol-1/#the-multi-column-model
-- [ ] https://www.w3.org/TR/css-multicol-1/#overflow 
--->
-
-## K čemu se hodí? {#priklady}
+## K čemu se vícesloupcový layout hodí? {#priklady}
 
 Kromě „novinové“ sazby textu se hodí také na položky seznamu. Třeba náhledy obrázků ve fotogalerii nebo položky e-shopu…
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-weby.jpg" width="1600" height="900" alt="Weby používající vícesloupcové rozvržení">
 <figcaption markdown="1">
-Weby používající vícesloupcové rozvržení: Learning Log Romana Veselého, program konference PyCon nebo rozvržení položek v navigaci webu OnlineSekáč.cz.
+Weby používající vícesloupcové rozvržení: Learning Log Romana Veselého (1), program konference PyCon (2) nebo rozvržení položek v navigaci webu OnlineSekáč.cz (3).
 </figcaption>
 </figure>
 
 Možností využití je překvapivě hodně a určitě si na nějakou vzpomenete.
 
-Vícesloupcový layout má sice z trojice Multi-column, Flexbox, grid nejméně možností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc — prohlížeče si s ním velmi dobře rozumí.
+Vícesloupcový layout má sice z trojice multi-column, flexbox, grid nejméně možností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc — prohlížeče si s ním velmi dobře rozumí.
+
+## Anonymní fragmentačním kontejnery {#vice-kontejnery}
+
+Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s pochopením téhle užitečné sady vlastností.
+
+Jiné metody rozložení v CSS, jako flex nebo grid, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení.
+
+Například při použití [vlastnosti `display`](css-display.md) s hodnotou `grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
+
+<!-- AdSnippet -->
+
+V případě CSS Multi-column Layout však podřízené prvky kontejneru s více sloupci pokračují v normálním toku a ten je uspořádán do několika sloupců.
+
+Tyto sloupce mají pružnou velikost ve směru řádků, a proto reagují na dostupné místo změnou velikosti nebo počtu zobrazených sloupců.
+
+Vícesloupcové rozložení zavádí „kontext fragmentace“ tvořený „anonymními fragmentačními kontejnery“, které se nazývají sloupcové boxy (nebo zkráceně sloupce).
 
 ## Podpora v prohlížečích {#podpora}
 
@@ -158,7 +169,7 @@ Podpora podstatných vlastností vícesloupcového rozvržení je vynikající. 
 </figcaption>
 </figure>
 
-Moderní prohlížeče si jen hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců, o čemž píšu v příručce k těmto vlastnostem.
+Moderní prohlížeče to zvládají taky, to víte, že ano. Jen si hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců, o čemž píšu v příručce k těmto vlastnostem.
 
 Více najdete [v textu o podpoře](css-layout-bugy.md) nových systémů layoutu v prohlížečích.
 

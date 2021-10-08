@@ -20,7 +20,7 @@ Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení
 
 </div>
 
-V případě nastavení `column-fill:balance` se prohlížeče snaží minimalizovat odchylky výšky sloupců a zároveň ctít zalamování, ošetřovat typografické vdovy a sirotky a další vlastnosti.
+V případě nastavení `column-fill:balance` se prohlížeče snaží minimalizovat odchylky výšky sloupců a zároveň ctít zalamování, ošetřovat typografické vdovy a sirotky, tedy sázet text opravdu hezky.
 
 Podívejme se na možné hodnoty:
 
@@ -54,7 +54,7 @@ Toto demo už znáte z jiných vlastností vícesloupcového rozvržení. Máme 
 }
 ```
 
-V demu můžete přepínat mezi nastavením vlastnosti `column-fill` na hodnoty `auto` nebo `balance`. Poslední hodnotu, `balance-all`, jsem zatím nezahrnoval, protože ji prohlížeče zatím nepodporují a vzhledem k jejímu využití pro stránkovaná média by ani demonstrace v CodePenu nedávala smysl.
+V demu můžete přepínat mezi nastavením vlastnosti `column-fill` na hodnoty `auto` nebo `balance`. Poslední hodnotu, `balance-all`, jsem nezahrnoval, protože ji prohlížeče zatím nepodporují a vzhledem k jejímu využití pro stránkovaná média by ani demonstrace v CodePenu nedávala smysl.
 
 CodePen: [cdpn.io/e/PoGEadq](https://codepen.io/machal/pen/PoGEadq?editors=1000)
 
@@ -69,7 +69,7 @@ Mohli bychom tím skončit, ale po hrátkách s mým CodePenem v různých prohl
 - V Chrome hodnota `balance` nefunguje bez vynucení nastavení výšky na `.container`, ať už to uděláme vlastností `height` nebo jinak.
 - Safari má chybu opačnou – pokud nenastavíme kontejneru výšku, rozděluje sloupečky tak jako bychom použili vyvažování – hodnotu `balance`. V prohlížeči od Apple se navíc přepnutí mezi hodnotami `balance` a `auto` projeví až po změně šířky okna.
 
-Naopak se mi zdá, že dobře tato vlastnost funguje – minimálně v mém demu – v nejméně používaném moderním prohlížeči, tedy ve Firefoxu.
+Naopak se mi zdá, že tato vlastnost velmi dobře funguje – minimálně v mém demu – v nejméně používaném moderním prohlížeči, tedy ve Firefoxu.
 
 Určitě vás nechci od používání vlastnosti `column-fill` odradit. Bude se vám občas hodit. Jen si to vždy dobře otestujte v různých prohlížečích.
 

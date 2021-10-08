@@ -1,6 +1,8 @@
 # Vlastnosti break-before, break-after a break-inside: zalamování ve vícesloupcovém rozložení
 
-V automatickém vícesloupcovém layoutu můžete mít prvky, u kterých si nepřejete, aby prohlížeče udělaly zalomení z jednoho sloupce na druhý. Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – vlastně jakékoliv prvky, které mají potomky.
+Uvnitř vícesloupcového layoutu můžete mít prvky, které si nepřejete zalamovat při přechodu z jednoho sloupce do druhého.
+
+Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – vlastně jakékoliv prvky, které mají potomky.
 
 <div class="connected" markdown="1">
 
@@ -28,6 +30,8 @@ Slouží k tomu následující tři vlastnosti, které znáte možná ještě z 
 
 Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jejich nedostatečné podpoře v prohlížečích.
 
+To nás ale od jejich zdokumentování nemůže odradit. A pokud vás ano, mě určitě ne.
+
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-break.png" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
 <figcaption markdown="1">
@@ -35,7 +39,7 @@ Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jej
 </figcaption>
 </figure>
 
-Pojďme si to ale alespoň teoreticky rozebrat. Je možné, že v době, kdy toto čtete, už bude podpora lepší.
+Pojďme si to alespoň teoreticky rozebrat. Je možné, že v době, kdy toto čtete, už bude podpora lepší.
 
 ## `break-before` – zalamování před prvkem {#break-before}
 
@@ -89,7 +93,13 @@ Když si patřičně upravíte šířku okna tak, aby druhý nadpis připadl na 
 
 CodePen: [cdpn.io/e/jOMaMdq](https://codepen.io/machal/pen/jOMaMdq?editors=1000)
 
-V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu bychom to nemuseli zapisovat, zde je ale potřeba smazat hodnoty dalších nastavení. Jen připomínám, že k tomu slouží hodnota `auto` u všech vlastností:
+V ukázce byste měli vidět tři možnosti zakázat:
+
+- `auto` – nastavuje všechny tři vlastnosti na tuto hodnotu.
+- `break-before: column` - vynucuje zalomení nadpisů vždy do nového sloupce.
+- `break-inside: avoid` – zakazujeme zalomení uvnitř nadpisu.
+
+V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu bychom to nemuseli zapisovat, je to výchozí stav, ale vypadá to takto:
 
 ```css
 .container h2 {
@@ -99,18 +109,11 @@ V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu
 }
 ```
 
-U dalších dvou možností se snažíme zalamování vynutit nebo zakázat:
-
-- `break-before: column` - vynucuje zalomení nadpisů vždy do nového sloupce.
-- `break-inside: avoid` – zakazujeme zalomení uvnitř nadpisu.
-
 Sami můžete posoudit, jak to v jednotlivých prohlížečích funguje.
 
 Nebo spíše nefunguje.
 
 ## Podpora v prohlížečích {#podpora}
-
-<!-- TODO podporu je potřeba detailnější -->
 
 Výše uvedený příklad mě plně funguje jen v nejnovějším Safari (verze 14). Firefox zvládne jen možnost `break-inside:avoid`, Chrome je u obou ukázek zcela chromý.
 
