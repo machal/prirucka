@@ -1,6 +1,6 @@
 # Zarovnání boxů v CSS (Box Alignment Module)
 
-Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo gridu.
+„Box Alignment“ je modul specifikace CSS, který definuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo gridu.
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)
@@ -8,7 +8,9 @@ Modul Box Alignment v CSS specifikuje zarovnání boxů v různých modelech roz
 - [Vícesloupcový layout](css-multicolumn.md)
 </div>
 
-Specifikace [Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout, což nás zajímá hlavně pro potřeby CSS gridu. O tom je tato příručka na Vzhůru dolů.
+V tomto textu se podíváme na jednotlivé vlastnosti pro zarovnávání layoutech.
+
+Specifikace „Box Alignment Module Level 3“ v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout.
 
 <!-- AdSnippet -->
 
@@ -18,12 +20,14 @@ Nijak se zde nezabýváme zarovnáváním textu (vlastnosti jako `text-align`, `
 
 Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou hlavu opravdu hodně.
 
+Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednoduchého klíče.
+
 ![Tahák k CSS Box Alignment](../dist/images/original/vdlayout/css-box-alignment-tahak.png)
 
-Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednoduchého klíče. Než vyberete tu správnou, musíte si ujasnit:
+Než vyberete tu správnou, musíte si ujasnit:
 
-- Směr zarovnávání (hlavní osa je obvykle vodorovná, jinak též řádková; příčná osa svislá, jinak též bloková).
-- Co budete zarovnávat (všechny položky, jednu položku nebo obsah mezi nimi).
+1. Směr zarovnávání (hlavní osa je obvykle vodorovná, jinak též řádková; příčná osa svislá, jinak též bloková). Na obrázku výše se podívejte k šipkám.
+2. Co budete zarovnávat (všechny položky, jednu položku nebo obsah mezi nimi). Na obrázku výše se podívejte do layoutu.
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
@@ -35,7 +39,7 @@ Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednod
 
 </div>
 
-Jen připomínám, že směr hlavní a příčné osy se může změnit – například pomocí vlastnosti [`flex-direction` nastavené na `column`](css3-flexbox-kontejner.md).
+Jen připomínám, že směr hlavní a příčné osy rozvržení se může změnit – například pomocí vlastnosti [`flex-direction` nastavené na `column`](css-flex-direction.md).
 
 V tabulce nejsou obsaženy zdaleka všechny zarovnávací vlastnosti, na ty se pojďme podívat hned v další části textu.
 
@@ -93,7 +97,7 @@ Pro konkrétní položku definujeme, jak se bude zarovnávat.
 
 ## Distribuce prostoru mezi položkami (`*-content`) {#distribuce-prostoru}
 
-Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejneru zůstává mezi položkami.
+Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejneru zůstává mezi položkami.
 
 <div class="reference-items">
 
@@ -102,7 +106,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
     <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.png" alt="CSS vlastnost gap" /></a></p>
     <p>
       Definice mezery mezi buňkami. <br>
-      <code>gap:1rem;</code>
+      Např. <code>gap:1rem</code> definuje mezeru `1rem` v obou směrech.
     </p>
   </article>  
   <article role="article">
@@ -123,11 +127,26 @@ Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejn
 
 </div>
 
+## Podpora v prohlížečích {#podpora}
+
+Na úrovni celé této velké specifikace je těžké mluvit o podpoře či nepodpoře. Různé prohlížeče mohou nepodporovat některé vlastnosti, některé mohou nepodporovat zase určité hodnoty nebo jejich kombinaci s různými systémy rozvržení, jako je grid, flexbox nebo vícesloupcový layout.
+
+Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zaměřme na konkrétní zásadnější nedostatky v podpoře, jež mají slabou podporu.
+
+- Internet Explorer 11 – pokud ještě musíte podporovat tento prehistorický prohlížeč, je třeba vědět, že vlastnosti pro zarovnání umí jen v kombinaci s flexboxem, nikoliv gridem.
+- Zkratky jako [`place-self`](css-place-self.md) neumí IE11, ale zatím bohužel také Safari, což je daleko nepříjemnější. Na druhou stranu, zkratku [`place-content`](css-place-content.md) Safari ovládá, což tuto vlastnost činí použitelnou na většině moderních projektů.
+- [Vlastnosti `gap`](css-gap.md) v grid layoutu umí všechny prohlížeče, kromě IE11, ale v kombinaci s jinými systémy rozvržení je to daleko složitější.
+- Vlastnost `overflow-position` v době psaní textu neumí žádný prohlížeč.
+
+Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda to jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty.
+
+Konkrétněji o podpoře v prohlížečích píšu v příručkách pro jednotlivé vlastnosti.
+
 <div class="web-only" markdown="1">
 
 ## Odkazy pro další studium {#odkazy}
 
-Na závěr si neodpustím několik odkazů jinam:
+Udělal jsem maximum pro to, aby vám tento průvodce vystačil a jiné zdroje jste hledat nemuseli. Přesto si neodpustím několik odkazů jinam:
 
 - Specifikace W3C pro CSS Box Alignment Module Level 3 – [w3.org/TR/css-align-3](https://www.w3.org/TR/css-align-3/)
 - Ahmad Shaheed: hra „Learn Box Alignment“ – [ishadeed.com/article/learn-box-alignment/](https://ishadeed.com/article/learn-box-alignment/)
@@ -135,28 +154,4 @@ Na závěr si neodpustím několik odkazů jinam:
 
 </div>
 
-## Podpora v prohlížečích {#podpora}
-
-Z textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích už víte, že Box Alignment v CSS má dva zádrhele:
-
-1. Ne všechny vlastnosti je možné použít ve všech systémech layoutu. Například `justify-items` a `justify-self` nefungují ve flexboxu.
-2. [Internet Explorer](msie.md) těch vlastností nepodporuje více, ale je to problematické hlavně u gridu.
-
 <!-- AdSnippet -->
-
-<!--  
-
-## A co teorie? {#teorie}
-
-V této části se pokouším být co nejvíce praktický. Poskytnout snadno použitelný rozcestník pro použití vlastností CSS Box Alignment. Cíleně jsem vám ale zamlčel teoretickou část, která je důležitá pro pochopení problematiky zarovnání v CSS. 
-
-Pro pochopení zarovnání layoutu v CSS byste totiž ideálně měli znát:
-
-- Pojmy jako je kontejner, položka, „fallback alignment“ a další.
-- Všechny možné typy zarovnání.
-- Problematiku podporu v prohlížečích.
-- Odkazy pro další studium.
-
-Tohle všechno jsem schoval [do teorie kolem CSS Box Alignment](css-box-alignment-teorie.md).
-
--->

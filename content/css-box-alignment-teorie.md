@@ -1,6 +1,10 @@
 # Teorie k zarovnání boxů v CSS (Box Alignment Module)
 
-Zde si objasníme pár konceptů k CSS Box Alignment Module. Nebojte se, nebudu to s teorií přehánět, vybral jsem jen takové pojmy, bez kterých se nemůžete obejít.
+Zde si představíme pár konceptů k CSS Box Alignment Module.
+
+Nebojte se, nebudu to s teorií přehánět. Vybral jsem jen takové části teorie, bez kterých se nemůžete obejít.
+
+Jde o jakousi zobecněnou esenci referenční příručky k jednotlivým vlastnostem. Pokud to tady vstřebáte, nemusíte zase tak moc studovat konkrétní vlastnosti zarovnání boxů v CSS.
 
 ## Důležité pojmy {#pojmy}
 
@@ -8,7 +12,7 @@ Podíváme se na pojmy jako „směr rozvržení“, „kontejner“ a „předm
 
 ### Směr rozvržení: bloková a řádková osa {#pojmy-osy}
 
-Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek a tak naštěstí zarovnáváme jen na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
+Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek a tak naštěstí zarovnáváme na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-box-alignment-osy.png" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
@@ -22,7 +26,7 @@ Osy pro potřeby layoutu v CSS:
 - _Hlavní_ nebo-li _řádková_ osa (inline axis), ve středoevropských podmínkách obvykle vodorovná.
 - _Příčná_ nebo-li _bloková_ osa (block axis), u nás obvykle svislá.
 
-Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Japonština nebo arabština se čtou zcela v odlišných směrech.
+Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Taková japonština nebo arabština se čtou zcela v odlišných směrech.
 
 O směru psaní dokumentu a tvorbě layoutu pro tyto jazyky píšu více v textu o [logických vlastnostech a hodnotách v CSS](css-logical.md).
 
@@ -39,7 +43,7 @@ Ze stejného důvodu nemůžeme například říci, že zarovnáváme „vlevo n
 
 Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma pojmy:
 
-- *Předmět zarovnání* (alignment subject) je samotný boxík, který zarovnáváme. V rámci textů mu zde občas budeme říkat také „položka“.
+- *Předmět zarovnání* (alignment subject) je samotný boxík, který zarovnáváme. Zde mu občas budeme říkat také „položka“.
 - *Kontejner zarovnání* (alignment container) je rámec, ve kterém předmět zarovnáváme. Obvykle jde o rodičovský element.
 
 <figure>
@@ -53,65 +57,30 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 
 „Fallback alignment“, nebo také náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
 
-Například pro uplatnění hodnoty `space-between` u vlastnosti `justify-content` je nutné, aby se v kontejneru vyskytoval více než jeden předmět. Pokud tato podmínka není splněna, specifikace jako náhradní řešení předepisuje hodnotu `flex-start` nebo `start`.
+Například pro uplatnění hodnoty `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky) je nutné, aby se v kontejneru vyskytoval více než jeden předmět aka položka.
 
-## Typy zarovnání podle elementu {#typy-element}
+Pokud tato podmínka není splněna, specifikace jako náhradní řešení předepisuje hodnotu `flex-start` nebo `start`.
 
-<!-- TODO zmiňovat to, když už je to v css-box-alignment.md přehnedněji? -->
+To asi dává smysl, že?
 
-Zkusme zabřednout trošku více do hloubky a zároveň si v tom neudělat nepořádek. Vlastnosti a hodnoty zarovnání boxů v CSS můžeme dělit podle dvou klíčů.
-
-Ten první je zaměřený na elementy, které ovlivňuje – všechny položky, samostatnou položku nebo prostor mezi nimi.
-
-### Zarovnání položek {#polozky}
-
-Na kontejneru definujeme, jak se budou zarovnávat položky.
-
-Patří sem všechny vlastnosti, které v názvu obsahují `-items`:
-
-- [`justify-items`](css-justify-items.md) – zarovnání na řádkové ose.
-- [`align-items`](css-align-items.md) - zarovnání na blokové ose.
-- [`place-items`](css-place-items.md) - zkratka pro obě vlastnosti.
-
-### Zarovnání samostatné položky {#sebe-sama}
-
-Zarovnání konkrétního subjektu uvnitř kontejneru.
-
-Jde o všechny vlastnosti, které v názvu obsahují `-self`:
-
-- [`justify-self`](css-justify-self.md) – zarovnání na řádkové ose.
-- [`align-self`](css-align-self.md) - zarovnání na blokové ose.
-- [`place-self`](css-place-self.md) - zkratka pro obě vlastnosti.
-
-### Distribuce prostoru mezi položkami {#distribuce-prostoru}
-
-Vlastnosti, které řídí rozdělení volného prostoru, který uvnitř kontejneru zůstává mezi položkami.
-
-Patří sem všechny vlastnosti, které v názvu obsahují `-content`:
-
-- [`justify-content`](css-justify-content.md) – zarovnání na řádkové ose.
-- [`align-content`](css-align-content.md) - zarovnání na blokové ose.
-- [`place-content`](css-place-content.md) - zkratka pro obě vlastnosti.
 
 ## Klíčová slova pro zarovnání {#typy-klicova-slova}
 
-Druhý typ rozdělení CSS Box Alignment do skupin se zaměřuje nikoliv na vlastnosti, ale jejich hodnoty – klíčová slova.
+Už víme, že vlastnosti [CSS Box Alignment](css-box-alignment.md) je možné dělit podle toho, zda ovlivňují všechny položky, jednu položku nebo prostor mezi nimi.
 
-Většinou potřebujeme vyřešit poziční zarovnání, ale známe také zarovnání na účaří, zarovnání zbylého prostoru, zarování pro možnost přetečení a nakonec definici mezery mezi položkami.
-
-Zní to asi složitě, takže bude rovnou lepší proniknout rovnou do jednotlivých typů klíčových slov. Tentokrát si je doplníme i ukázkami.
+Druhý typ rozdělení vlastností pro zarovnávání se zaměřuje nikoliv na vlastnosti, ale jejich hodnoty – klíčová slova.
 
 ### Poziční zarovnání {#pozicni}
 
-Určování polohy předmětu vzhledem k jeho kontejneru zarovnání. Ve specifikaci se používá pojem „Positional Alignment“.
+Určování polohy položky vzhledem ke kontejneru. (Ve specifikaci se používá pojem „Positional Alignment“.)
 
 Týká se to už uvedených vlastností:
 
-- Zarovnání všech položek (`justify-items`, `align-items` a `place-items`).
-- Zarovnání samostatné položky (`justify-self`, `align-self` a `place-self`).
-- Distribuce obsahu (`justify-content`, `align-content` a `place-content`).
+- Zarovnání všech položek ([`justify-items`](css-justify-items.md), [`align-items`](css-align-items.md) a [`place-items`](css-place-items.md)).
+- Zarovnání samostatné položky ([`justify-self`](css-justify-self.md), [`align-self`](css-align-self.md) a [`place-self`](css-place-self.md)).
+- Distribuce obsahu ([`justify-content`](css-justify-content.md), [`align-content`](css-align-content.md) a [`place-content`](css-place-content.md)).
 
-Můžete použít tyto hodnoty:
+V obecné rovině můžeme použít tyto hodnoty:
 
 - `center` <small>(použitelné pro `-self` i `-content`)</small>  
   Centruje předmět doprostřed kontejneru zarovnání.
@@ -157,11 +126,13 @@ Layout je s pomocí CSS gridu definovaný následovně:
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
-  height: 5em;  
-}  
+  height: 5em;
+}
 ```
 
-A teď přichází ono zarovnání:
+Jen pro pořádek: Každá položka layoutu bude mít výšku `5em`, spravedlivě si rozdělí prostor (`1fr`) a mezera mezi nimi bude `1em`.
+
+A teď ke slovu přichází ono zarovnání:
 
 ```css
 .container {
@@ -175,26 +146,34 @@ A teď přichází ono zarovnání:
 
 Na nic nečekejme a vše vysvětleme:
 
-- Přes kontejner rozvržení (`.container`) nastavíme po hlavní ose (`align-`) všem položkám (`-items`) zarovnání k horní hraně kontejneru (`start`), dohromady tedy `align-items:start`.
-- Třetí položce `.item--3` udělíme výjimku – bude zarovnaná ke spodní hradně kontejneru – `align-self:end`.
+- Kontejneru rozvržení (`.container`) nastavíme po hlavní ose (`align-`) zarovnání všech položek (`-items`)  k horní hraně kontejneru (`start`). Dohromady tedy `align-items:start`.
+- Třetí položce `.item--3` udělíme výjimku. Bude zarovnaná ke spodní hradně kontejneru – `align-self:end`.
+
+Mrkněte se na živý CodePen, pokud si to neumíte představit, ale asi to nebude těžké.
+
+<!-- TODO img -->
 
 CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
 ### Zarovnání na účaří {#ucari}
 
-Zarovnání na účaří určuje polohy účaří předmětu nebo skupiny předmětů tím, že přídává vnější okraj nad box. V češtině to funguje jen pro zarovnání vedle sebe, kde lze jednotlivá účaří porovnávvat. Ve specifikaci se mluví o „Baseline Alignment“, pokud byste to chtěli hledat.
+Zarovnání na účaří určuje polohu účaří položky nebo skupiny položek tím, že nad ní nebo nad ně přídává vnější okraj.
+
+Zní to asi trochu zašmodrchaně, že? Ještě to chvíli zkuste číst, ono to není úplně neužitečné.
+
+Při sazbě dokumentů v češtině (nebo jiných evropských jazycích) to funguje jen pro zarovnání položek vedle sebe, kde lze jednotlivá účaří porovnávat. (A ve specifikaci se mluví o „Baseline Alignment“, pokud byste to chtěli hledat.)
 
 Týká se těchto vlastností:
 
-- Zarovnání sebe sama (`justify-self`, `align-self` a `place-self`).
-- Distribuce obsahu (`justify-content`, `align-content` a `place-content`).
+- Zarovnání sebe sama ([`justify-self`](css-justify-self.md), [`align-self`](css-align-self.md) a [`place-self`](css-place-self.md)).
+- Distribuce obsahu ([`justify-content`](css-justify-content.md), [`align-content`](css-align-content.md) a [`place-content`](css-place-content.md)).
 
 Můžete použít tyto hodnoty:
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
@@ -222,13 +201,13 @@ Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje po
 
 CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 
+<!-- TODO img -->
+
 ### Zarovnání zbylého prostoru {#zbyly-prostor}
 
-Určuje, co se stane s prostorem, který zbude mezi položkami na řádkové ose. Ve specifikaci hledejte jako „Distributed Alignment“.
+Určuje, co se stane s prostorem, který zbude mezi položkami na řádkové ose. (Ve specifikaci hledejte jako „Distributed Alignment“.)
 
-Týká se těchto vlastnotí:
-
-- Distribuce obsahu (`justify-content`, `align-content` a `place-content`).
+Týká se to jen vlastností pro nastavení distribuce obsahu, tedy volného místa uvnitř kontejneru – [`justify-content`](css-justify-content.md), [`align-content`](css-align-content.md) a [`place-content`](css-place-content.md).
 
 Můžete použít tyto hodnoty:
 
@@ -259,9 +238,11 @@ Jdeme na vysvětlování:
 - Tím, že jsme omezili šířku položky na `100px`, při roztažení rodiče (`.container`) vznikne volné místo.
 - Jak se s volným místem vedle položek naloží určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
 
+<!-- TODO IMG -->
+
 CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
-### Zarovnání pro přetečení {#overflow}
+### Zarovnání pro přetečení (bez podpory prohlížečí) {#overflow}
 
 Vlastnosti a hodnoty, které pomáhají definovat chování prohlížečů, když je předmět zarovnání větší než jeho kontejner.
 
@@ -275,17 +256,17 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
 <figure>
 <img src="../dist/images/original/vdlayout/overflow-position.png" width="1600" height="900" alt="Vlastnost overflow-position">
 <figcaption markdown="1">
-*Kontejner a položky neboli předměty zarovnání.*
+*V případě hodnoty `unsafe` se použije poziční zarovnání. Alespoň teoreticky.*
 </figcaption>
 </figure>
 
-V době psaní textu (srpen 2020) se zdá, že naše milé prohlížeče s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
+V době psaní textu (říjen 2021) se zdá, že naše milé prohlížeče s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
 
 ### Definování mezer mezi položkami {#gap}
 
 Vlastnosti a hodnoty umožňují nastavení konzistentní mezery mezi položkami v řádku nebo sloupci a hlavně uvnitř CSS gridu.
 
-Vlastnosti:
+Jde o různé varianty [vlastnosti `gap`](css-gap.md):
 
 - `row-gap` - mezera mezi řádky (na blokové ose)
 - `column-gap` - mezera mezi sloupci (na inline ose)
@@ -301,29 +282,6 @@ Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `g
 }
 ```
 
-Více [o vlastnosti `gap`](css-gap.md)
-
 Uvedené vytvoří odkaz mřížku o třech slupcích a dvou rádcích. Mezery mezi položkami layoutu budou `1em` ve svislém směru a `0.5em` ve vodorovném.
 
 Jako hodnoty bere vlastnost `gap` všechny možné délkové jednotky a také procenta, přičemž ty se vztahují na délku kontejneru layoutu.
-
-## Podpora v prohlížečích {#podpora}
-
-Na úrovni celé této velké specifikace je těžké mluvit o podpoře či nepodpoře. Různé prohlížeče mohou nepodporovat některé vlastnosti, některé mohou nepodporovat zase určité hodnoty nebo jejich kombinaci s různými systémy rozvržení, jako je grid, flexbox nebo vícesloupcový layout.
-
-Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zaměřme na konkrétní zásadnější nedostatky v podpoře, jež mají slabou podporu.
-
-- Internet Explorer 11 – pokud ještě musíte podporovat tento prehistorický prohlížeč, je třeba vědět, že vlastnosti pro zarovnání umí jen v kombinaci s flexboxem, nikoliv gridem.
-- Zkratky jako `place-self` neumí IE11, ale zatím bohužel také Safari, což je daleko nepříjemnější. Na druhou stranu, zkratku `place-content` Safari ovládá, což tuto vlastnost činí použitelnou na většině moderních projektů.
-- [Vlastnosti `gap`](css-gap.md) v grid layoutu umí všechny prohlížeče, kromě IE11, ale v kombinaci s jinými systémy rozvržení je to daleko složitější.
-- Vlastnost `overflow-position` v době psaní textu neumí žádný prohlížeč.
-
-Nenechte se ale odradit, toto jsou jen malé věci. Celková podpora zarovnávání v gridu a flexboxu je vynikající a ty nejužitečnější vlastnosti jsou plně podporovány.
-
-## Odkazy pro další studium {#odkazy}
-
-Udělal jsem maximum pro to, aby vám tento průvodce vystačil a jiné zdroje jste hledat nemuseli. Přesto si neodpustím několik odkazů jinam:
-
-- Specifikace W3C pro CSS Box Alignment Module Level 3 – [w3.org/TR/css-align-3](https://www.w3.org/TR/css-align-3/)
-- Ahmad Shaheed: hra „Learn Box Alignment“ – [ishadeed.com/article/learn-box-alignment/](https://ishadeed.com/article/learn-box-alignment/)
-- Rachel Andrew: stručný tahák „Box Alignment Cheatsheet“ – [rachelandrew.co.uk/css/cheatsheets/box-alignment](https://rachelandrew.co.uk/css/cheatsheets/box-alignment)
