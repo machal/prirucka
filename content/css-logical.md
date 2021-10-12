@@ -45,7 +45,7 @@ Vysvětlím to více:
 
 - `float:inline-start` znamená, že obrázek bude plout k začátku inline (řádkové) osy. V češtině by to tedy bylo doleva (hodnota `left`), v arabštině doprava (hodnota `right`).
 - `margin-inline-end:1rem` přidá vnější okraj na konec blokové osy (příčnou k řádkové). V češtině by to odpovídalo `margin-right:1rem`, v arabštině `margin-left:1rem`.
-- `margin-inline-end:1rem` je podobný případ, jen v tomto případě pro oba jazyky stejný. Odpovídá `margin-bottom:1rem`. Například ale v japonštině, sázené shora dolů by se měnily obě osy, řádková i bloková.
+- `margin-block-end:1rem` je podobný případ, jen v tomto případě pro oba jazyky stejný. Odpovídá `margin-bottom:1rem`. Například ale v japonštině, sázené shora dolů by se měnily obě osy, řádková i bloková.
 
 ### Užitečné zkratky vlastností {#priklad-arabstina-zkratky}
 
