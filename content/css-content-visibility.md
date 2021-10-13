@@ -98,9 +98,9 @@ Nebylo by v úplně pořádku aplikovat `content-visibility:auto` na celý rodi�
 
 Připomeňme si ale, že `content-visibility:auto` zapíná *size* containment, takže prohlížeč prvkům nerezervuje prostor ve stránce.
 
-Takto označeným prvkům ale nějak musíme nastavit alespoň odhadovanou výšku pro vykreslení, aby prohlížeč věděl, jaké rozměry mají mít rolovací lišty. K tomu slouží vlastnost `contain-intristic-size`.
+Takto označeným prvkům ale nějak musíme nastavit alespoň odhadovanou výšku pro vykreslení, aby prohlížeč věděl, jaké rozměry mají mít rolovací lišty. K tomu slouží vlastnost `contain-intrinsic-size`.
 
-## Vlastnost `contain-intristic-size` {#contain-intristic-size}
+## Vlastnost `contain-intrinsic-size` {#contain-intrinsic-size}
 
 Vlastnost, která určuje přirozenou velikost prvku, pokud je prvek ovlivněn size containmentem.
 
