@@ -1,6 +1,6 @@
 # Vlastnost align-items: Zarovnání všech položek na příčné ose
 
-Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na příčné ose (jinak též blokové ose) pro layouty v CSS.
+Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na příčné ose (jinak též blokové ose).
 
 <div class="connected" markdown="1">
 
@@ -9,6 +9,8 @@ Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na p
 <div class="web-only" markdown="1">
 
 Vlastnost `align-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+Vlastnost je možné použít v layoutech tvořených [flexboxem](css-flexbox.md) a také [gridem](css-grid.md).
 
 </div>
 
@@ -22,11 +24,24 @@ Vlastnost `align-items` patří do specifikace pro zarovnání boxů – [CSS Bo
 
 Nastavuje výchozí hodnotu `align-self` pro všechny položky uvnitř kontejneru.
 
-Tuhle vlastnost není možné aplikovat na blokové elementy nebo na buňky tabulek.
+Tuhle vlastnost není možné aplikovat na blokové elementy nebo na buňky tabulek, ale v gridu a flexboxu ji rozhodně využijete.
 
 ## Jednoduchý příklad
 
-V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `align-items`.
+V naší ukázce definujeme třísloupcový kontejner gridu:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10em;  
+  align-items: start;  
+}
+```
+
+Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `align-items`.
+
+Použitá hodnota `start` umístí položky na začátek vymezeného prostoru.
 
 CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?editors=1100)
 
@@ -34,7 +49,7 @@ CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?
 
 ![Hodnoty vlastnosti align-items](../dist/images/original/vdlayout/css-align-items-hodnoty.png)
 
-Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
+Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 
 ### Základní
 
@@ -72,16 +87,18 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-Pokud vím, v žádném prohlížeči toto zatím nefunguje.
+Toto v žádném prohlížeči zatím nefunguje.
 
 <!-- AdSnippet -->
 
 ## Podpora v prohlížečích
 
-Stav k srpnu 2020:
+Stav k říjnu 2021:
 
 - V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvojslovné pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
-- V rámci rozvržení pomocí gridu tuto vlastnost nepodporuje jen IE11, ale tam by podporu této vlastnosti měl nahrazovat [Autoprefixer](autoprefixer.md).
+- V rámci rozvržení pomocí gridu tuto vlastnost nepodporuje jen IE11, ale tam by podporu této vlastnosti měl nahrazovat [Autoprefixer](autoprefixer.md). Jinak je to v gridu zcela v pořádku.
+
+I zde platí, že jde o drobnosti. Celkově vzato je možné tuhle vlastnost a její neužitečnější hodnoty bez problémů v moderních prohlížečích používat.
 
 Pro více informací se podívejte na [caniuse.com/align-items](https://caniuse.com/#search=align-items).
 
