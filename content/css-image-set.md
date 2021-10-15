@@ -14,7 +14,7 @@ Je to vhodné zejména pro posílání různých obrázků na obrazovky [s vysok
 }
 ```
 
-Od února 2021 tento zápis [podporuje Firefox](https://hacks.mozilla.org/2021/02/a-fabulous-february-firefox-86/) (zatím ve verzi Nightly). Díky tomu už bude brzy možné základní varianty zápisu `image-set()` používat ve všech moderních prohlížečích.
+Základní varianty zápisu `image-set()` je možné používat ve všech moderních prohlížečích.
 
 Jak jste asi pochopili, jde o obdobu [atributu `srcset`](srcset-sizes.md) pro značku `<img>`. Některé varianty zápisu `image-set()` mohou přebírat také funkčnost [značky `<picture>`](picture.md), jenže ty zatím nejsou podporované.
 
@@ -46,13 +46,13 @@ CodePen: [cdpn.io/e/BapbBZV](https://codepen.io/machal/pen/BapbBZV?editors=1100)
 
 Není to jediná varianta, kterou bychom podle specifikace mohli použít.
 
-## Další teoretické možnosti použití image-set(), zatím nepodporované {#dalsi}
+## Další teoretické možnosti použití image-set() (zatím nepodporované) {#dalsi}
 
-Specifikace je jedna věc, praxe ale velí vycházet z podpory v prohlížečích. Dále uváděné možnosti zůstávají na papíře. Jediný prohlížeč, který je podporuje, je právě nový Firefox Nighly.
+Specifikace je jedna věc, praxe ale velí vycházet z podpory v prohlížečích. Dále uváděné možnosti zůstávají na papíře. Jediný prohlížeč, který je podporuje, je  Firefox.
 
 ### Výběr podle typu obrázku
 
-Podobně jako [u značky `<picture>`](picture.md) bychom i tady mohli prohlížeči nabídnout dva formáty pro jeden obrázek. To by bylo skvělé pro využití u nových formátů jako [WebP](webp.md) nebo [AVIF](avif.md)…
+Podobně jako u značky `<picture>` bychom i tady mohli prohlížeči nabídnout dva formáty pro jeden obrázek. To by bylo skvělé pro využití u nových formátů jako [WebP](webp.md) nebo [AVIF](avif.md)…
 
 ```css
 .box {
@@ -64,11 +64,11 @@ Podobně jako [u značky `<picture>`](picture.md) bychom i tady mohli prohlíže
 }
 ```
 
-…kdyby to ovšem podporovaly prohlížeče. Ke dni psaní s tímto zápisem uspějete jen  Firefox Nightly.
+…kdyby to ovšem podporoval ještě jiný prohlížeč než Firefox.
 
 Více je možné vidět [v CodePenu](https://codepen.io/machal/pen/ZELPqNY?editors=1100).
 
-### Kombinace obrázků s generovaným pozadím
+### Kombinace obrázků s generovaným pozadím 
 
 Občas by se kódérkám a kóderům mohla hodit kombinace obrázku s generovaným pozadím, např. přechody tvořenými pomocí [`linear-gradient()`](css3-gradients.md).
 
@@ -82,7 +82,7 @@ Občas by se kódérkám a kóderům mohla hodit kombinace obrázku s generovan�
 } 
 ```
 
-Podporuje to opět jen nový Firefox ve vývojářské verzi Nightly. [CodePen](https://codepen.io/machal/pen/MWJxzYw?editors=1100) k hraní.
+Toto ale nepodporuje ani onen nový Firefox. Odkážu na [CodePen](https://codepen.io/machal/pen/MWJxzYw?editors=1100) k hraní.
 
 ### Deskriptor `w`
 
@@ -100,7 +100,7 @@ V atributu `srcset` bychom teoreticky mohli mít možnost používat deskriptor 
 
 Tady ale pouštím imaginaci na plné obrátky a troufám si jít opravdu daleko, protože i ve specifikace o tomto mluví jako o přání a úkolu pro budoucí specifikátory, nikoliv o navržené vlastnosti. Tak nic.
 
-Mrkněte se na [CodePen](https://codepen.io/machal/pen/NWdJEqm?editors=1100).
+Mrkněte se na [CodePen](https://codepen.io/machal/pen/NWdJEqm?editors=1100), pokud opravdu hodně chcete.
 
 <!-- AdSnippet -->
 
@@ -108,13 +108,13 @@ Na vaše objevování zápisu `image-set()` se těší celá moje [kolekce CodeP
 
 ## Podpora {#podpora}
 
-Použitelnost zápisu `image-set()` díky implementaci ve Firefoxu bez pochyby v příštích měsících prudce stoupne. Jde totiž o poslední moderní prohlížeč, který jej dosud neuměl.
+Použitelnost zápisu `image-set()` díky nové implementaci ve Firefoxu bez pochyby  prudce stoupne. Jde totiž o poslední moderní prohlížeč, který jej dosud neuměl.
 
 Jenže pokud jste se, jako já, nechali namlsat všemi zde uvedenými možnostmi zápisu, budete stejně zklamaní. Ale tak už to mezi námi webaři chodí. Jsme nadšení z implementace nový vlastností, abychom byli tentýž den zklamaní, co všechno ještě prohlížeče neumí.
 
 Při implementaci nezapomeňte na [Autoprefixer](autoprefixer.md), protože i moderní prohlížeče pro tuto vlastnost vyžadují prefixy – např. Chrome rozumí jen zápisu `-webkit-image-set()`.
 
-Internet Explorer je sice už téměř vymřelý druh, ale pokud byste potřebovali zajistit si fungování i v něm, musíte uvést [náhradní řešení](fallback.md). Je to vidět v mém prvním CodePenu:
+[Internet Explorer](msie.md) je sice už téměř vymřelý druh, ale pokud byste potřebovali zajistit si fungování i v něm, musíte uvést [náhradní řešení](fallback.md). Je to vidět v mém prvním CodePenu:
 
 ```css
 .box {
