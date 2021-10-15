@@ -260,7 +260,7 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
 </figcaption>
 </figure>
 
-V době psaní textu (říjen 2021) se zdá, že naše milé prohlížeče s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
+V době psaní textu (říjen 2021) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
 
 ### Definování mezer mezi položkami {#gap}
 

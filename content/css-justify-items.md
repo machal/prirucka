@@ -1,6 +1,6 @@
 # Vlastnost justify-items: Zarovnání všech položek na hlavní ose
 
-Vlastnost `justify-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose (jinak též řádkové ose) pro layouty v CSS.
+Vlastnost `justify-items` definuje na kontejneru layoutu zarovnání položek na hlavní (jinak též řádkové) ose.
 
 <div class="connected" markdown="1">
 
@@ -9,6 +9,8 @@ Vlastnost `justify-items` na kontejneru layoutu definuje zarovnání položek na
 <div class="web-only" markdown="1">
 
 Vlastnost `justify-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+Je použitelná uvnitř layoutů dělaných [gridem](css-grid.md).
 
 </div>
 
@@ -20,32 +22,73 @@ Vlastnost `justify-items` patří do specifikace pro zarovnání boxů – [CSS 
 
 </div>
 
-Nastavuje výchozí hodnotu `justify-self` pro všechny položky uvnitř kontejneru.
+## Příklad s gridem
+
+V naší ukázce definujeme třísloupcový kontejner gridu.
+
+HTML:
+
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
+
+CSS:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
+}
+```
+
+Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání:
+
+```css
+.item {  
+  height: 5em;
+  min-width: 5em;
+}
+```
+
+Vlastnost `justify-items` zde tedy zarovnává položky na hlavní (vodorovné) ose do prostoru, který je jim vymezený (`1fr`, tedy jeden [podíl na celku](css-jednotka-fr.md)). Hodnota `end` je umístí ke konci onoho vymezeného prostoru.
+
+<!-- TODO IMG s vizualizací gridu z Firefoxu -->
+
+CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
+
+## Trochu teorie: nastavení `justify-self` a proč ve flexboxu vlastnost nefunguje
+
+Vlastnost `justify-items` vlastně nedělá nic jiného než, že nastavuje výchozí hodnotu [vlastnosti `justify-self`](css-justify-self.md) pro všechny položky uvnitř kontejneru.
 
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
 
-U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme.
+U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. V další ukázce je vidět, že ve flexboxovém layoutu je deklarace `justify-items:end` ignorována.
 
 CodePen: [cdpn.io/e/eYZgOwL](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
-
-## Jednoduchý příklad s gridem
-
-V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `justify-items`.
-
-CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
 ## Možné hodnoty zarovnání
 
 ![Hodnoty vlastnosti justify-items](../dist/images/original/vdlayout/css-justify-items-hodnoty.png)
 
-Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
+Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 
 ### Základní
 
 - `normal` (výchozí)  
-  Ve většině systémů layoutu, včetně gridu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
+  V gridu bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
 - `auto`  
-  Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`.
+  Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`, tedy `stretch`.
 - `stretch`  
   Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
@@ -70,6 +113,8 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 - `right`  
   Chová se jako `end`.
 
+<!-- AdSnippet -->  
+
 ### Podle účaří
 
 - `first baseline`  
@@ -79,7 +124,9 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 - `baseline`  
   Zkratka pro `first baseline`.
 
-<!-- AdSnippet -->
+V době psaní toto funguje jen ve Firefoxu a můžete si to v tomto prohlížeči zkusit na následující ukázce.
+
+CodePen: [cdpn.io/e/ZEpGQqm](https://codepen.io/mkfeuhrer/pen/ZEpGQqm?editors=1100)
 
 ### Pro přetečení
 
@@ -90,11 +137,26 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty [z jednotlivých
 
 Pokud vím, v žádném prohlížeči ale toto zatím nefunguje.
 
+V následující živé ukázce je možné vyzkoušet několik hodnot:
+
+- výchozí `stretch` (roztažení),
+- `end` (zarovnání na konec vymezeného prostoru),
+- `left` (obdobu `start` tedy zarovnání na začátek vymezeného prostoru),
+- `center` (zarovnání doprostřed vymezeného prostoru).
+
+CodePen: [cdpn.io/e/OJjyqpK](https://codepen.io/machal/pen/OJjyqpK?editors=1100)
+
 ## Podpora v prohlížečích
 
 Jak už padlo, ve flexboxových layoutech je vlastnost `justify-items` ignorována, takže můžeme i bez nadsázky říct, že ji při použití `display:flex` podporují úplně všechny prohlížeče, které kdy vznikly.
 
-Ale vážněji: při použití `display:grid` zde máme tradiční výjimku – Internet Explorer 11.
+Ale vážněji:
+
+- Zarovnání pro přetečení (`safe`) nepodporuje žádný prohlížeč.
+- Zarovnání na účaří podporuje jen Firefox.
+- Vlastnost nepodporuje Internet Explorer 11.
+
+Ta podstatná sada hodnot je v moderních prohlížečích podporována, takže se vlastnosti `justify-items` nebojte.
 
 Více na [caniuse.com/justify-items](https://caniuse.com/#search=justify-items).
 
