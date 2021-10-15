@@ -1,6 +1,6 @@
 # Vlastnost place-items: Zarovnání všech položek na obou osách
 
-Vlastnost `place-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose i příčné ose pro layouty v CSS.
+Vlastnost `place-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose i příčné ose.
 
 <div class="connected" markdown="1">
 
@@ -9,6 +9,8 @@ Vlastnost `place-items` na kontejneru layoutu definuje zarovnání položek na h
 <div class="web-only" markdown="1">
 
 Vlastnost `place-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
 
 </div>
 
@@ -32,7 +34,7 @@ Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř konte
 
 <!-- AdSnippet -->
 
-Dává smysl hlavně pro CSS grid, protože ve flexboxu je vlastnost `justify-items` ignorována.
+Dává smysl hlavně pro CSS grid, protože ve flexboxu je vlastnost `justify-items` a díky tomu i zkratka `place-items` ignorována.
 
 ## Jednoduchý příklad
 
@@ -46,6 +48,8 @@ V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři polo�
 
 Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně doprava (`right`).
 
+<!-- TODO IMG -->
+
 CodePen: [cdpn.io/e/dyMOxdm?editors=1100](https://codepen.io/machal/pen/dyMOxdm?editors=1100)
 
 ## Možné hodnoty
@@ -57,7 +61,7 @@ Podívejte se na referenční příručku k oběma vlastnostem, pro které je `p
 
 ## Podpora v prohlížečích
 
-Použití ve flexboxu smysl nedává, ale v rámci CSS gridu má `place-items` velmi slušnou podporu ve všech moderních prohlížečích kromě výjimek od Microsoftu – původního Edge, který již ale není příliš rozšířená a IE11, který je na tom podobně. Předpokládám ale, že Autoprefixer si s touhle vlastností poradí.
+Použití ve flexboxu smysl nedává, ale v rámci CSS gridu má `place-items` velmi slušnou podporu ve všech moderních prohlížečích. IE11 vlastnost nepodporuje, to ale nevadí.
 
 Pro více informací se podívejte na [caniuse.com/place-items](https://caniuse.com/#search=place-items).
 
