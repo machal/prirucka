@@ -4,6 +4,8 @@ V tomto článku si budeme povídat o starých dobrých HTML značkách postaven
 
 Asi je skoro všichni znáte, ale všiml jsem si, že je tam pár nuancí, které řada lidí nezná. A taky jsem to ještě na Vzhůru dolů nezdokumentoval, což je pro mě silný důvod.
 
+<!-- AdSnippet -->
+
 Takže čtěte, i když si myslíže, že tomu rozumíte. Slibuju, že tady nezůstanu u základů.
 
 ## Co to přesně je a jak se to liší od `<title>`?
@@ -99,7 +101,7 @@ Asi jste si všimli, že kromě technologie [Open Graph](https://ogp.me/) od Fac
 
 V praxi se můžete setkat ještě s třetí specifikací – [oEmbed](https://oembed.com/), která na to technicky jde trochu jinak.
 
-V HTML definujete jen cestu k XML nebo JSON dokumentu:
+V HTML definujete jen cestu k datové struktuře ve formátu XML nebo JSON:
 
 ```html
 <link rel="alternate" type="application/json+oembed"
@@ -128,15 +130,19 @@ Vypadá to zajímavě, hlavně z pohledu vývojářů, protože díky umístěn�
 
 Zdá se, že minimálně obecně s oEmbed [Facebook](https://developers.facebook.com/docs/features-reference/oembed_read) i [Twitter](https://developer.twitter.com/en/docs/twitter-for-websites/oembed-api) pracovat umí.
 
-<!-- TODO socsítě odpovědi? -->
+Ptal jsem se na sociálních sítích, zda někdo oEmbed používá jako hlavní zdroj pro náhledy webyu ([Facebook](https://www.facebook.com/groups/frontendisti/posts/2925001394378032/), [Twitter](https://twitter.com/machal/status/1450008456698736650)), ale nikoho jsem nenašel. oEmbed tedy zatím považuji spíše za doplněk k Open Graph, který používají větší weby.
 
-O využití oEmbed pro zobrazení náhledu ve vaší webové aplikaci dříve psal Bohumil Jahoda [na Ječas.cz](https://jecas.cz/oembed).
+<!-- AdSnippet -->
+
+O využití oEmbed z druhé strany – pro zobrazení náhledu ve vaší webové aplikaci – dříve psal Bohumil Jahoda [na Ječas.cz](https://jecas.cz/oembed).
 
 ## Typy obsahu
 
 Vraťme se teď k nejrozšířenějšímu Open Graph a k tématu kategorií obsahu. Specifikovat přesnou kategorii obsahu a sémantický popis vašeho obsahu může být užitečné.
 
-Kdysi jsem viděl případové studie, jak je  Facebook schopný přidat „lajknutý“ mediální obsah typu video do oblíbeného obsahu konkrétního uživatele a tím vytvořit o trochu silnější vazbu mezi provozovatelem webu a oním uživatelem sociální sítě.
+Podle [Facebooku](https://developers.facebook.com/docs/sharing/webmasters) má  `og:type` vliv na to, jak se váš obsah zobrazuje v News Feedu. Pokud typ nezadáte,výchozí je `website`.
+
+Kdysi jsem viděl [texty o tom]( https://blog.kissmetrics.com/open-graph-meta-tags/), jak je  Facebook schopný přidat „lajknutý“ mediální obsah typu video do oblíbeného obsahu konkrétního uživatele a tím vytvořit o trochu silnější vazbu mezi provozovatelem webu a oním uživatelem sociální sítě.
 
 Pokud tedy připravujete obsah jednoho z následujících typů, zvažte, zda ty metaznačky ještě více nerozšířit:
 
@@ -150,18 +156,91 @@ Například pro případ typu `article` by se metaznačky mohly rozšířit nás
 
 ```html
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.example.com/">
-<meta property="og:image" content="http://example.com/image.jpg">
-<meta property="og:description" content="…">
-<meta property="og:site_name" content="…">
-<meta property="article:published_time" content="2013-09-17T05:59:00+01:00">
-<meta property="article:modified_time" content="2013-09-16T19:08:47+01:00">
+<meta property="article:published_time" content="2020-09-17T05:59:00+01:00">
+<meta property="article:modified_time" content="2020-09-16T19:08:47+01:00">
 <meta property="article:section" content="…">
 <meta property="article:tag" content="…">
 ```
 
 Více o typech obsahu píší [ve specifikaci Open Graph](https://ogp.me/#types) nebo [v článku na Moz.com](https://moz.com/blog/meta-data-templates-123).
 
-<!-- ATD viz Evernote -->
+## Značky s prefixem `fb:` a propojení s analytikou
 
+Uvádět hodnotu pro `fb:app_id` sice není pro Facebook povinné, ale pomůže to propojit váš web s aplikacemi Marka Zuckerberga, jako jsou komentáře, a jeho analytikou pro sledování webů:
 
+```html
+<meta property="fb:app_id" content="…">
+```
+
+Kdysi jsem četl, že je kvůli analytice dobré propojit web se stránkou na Facebooku. K tomu slouží `fb:pages`:
+
+```html
+<meta property="fb:pages" content="…">
+```
+
+U Twitteru prý podobnou vazbu na analytiku dělá `twitter:site`:
+
+```html
+<meta name="twitter:site" content="@vzhurudolu">
+```
+
+## Dva náhledové obrázky
+
+Docela často se hodí mít možnost nechat uživateli vybrat, jaký náhledový obrázek si pro sdílení vašeho obrázku vybere. Je to snadné:
+
+```html
+<meta property="og:image" content="/img/socky-1.jpg">
+<meta property="og:image" content="/img/socky-2.jpg">
+```
+
+Jasně, používá to jen malý zlomek uživatelů, nadšenců jako jsem já, ale např. u obecných obrázků se vám občasná změna zobrazení.
+
+## Náhledy webů na Apple Watch
+
+S příchodem chytrých hodinek Watch mě zaujalo, že kalifornská firma převzala existující standard pro náhledy. Ano, i na Apple hodinkách budou uživatelé profitovat z vašich značek Open Graph:
+
+```html
+<meta property="og:title" content="Titulek stránky">
+<meta property="og:image" content="/nahledovy-obrazek.jpg">
+```
+
+O tomto nastavení píšu v článku [o vlivu Apple Watch na webařinu](weby-watchos.md).
+
+## Strukturovaná data: něco podobného, ale vlastně jiného
+
+Musím zde zmínit i jednu věc, se kterou se Open Graph a podobné metaznačky pletou –[Strukturovaná data (aneb Rich Snippets)](rich-snippets.md) od Googlu:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "Optimalizace rychlosti webu"
+}
+</script>
+```
+
+Strukturovaná data definovaná na [Schema.org](https://schema.org/) také slouží k sémantickému (významnovému) popisu obsahu stránky. Jenže se zaměřují ne jen na pohled na stránku zvenčí jako celek („metaobsah“), ale hlavně na samotný obsah stránky.
+
+Takže v případě kategorie produktů na e-shopu se Open Graph stará o popis této kategorie, Schema.org zajímá i detailní struktura produktů v obsahu.
+
+Rozdíl je v praktickém využití – zatímco Open Graph je pro online kecálky a sociální sítě, Schema.org pro Google a další vyhledávače.
+
+## Generování náhledových obrázků
+
+K náhledovým obrázkům se určitě hodí napsat, že rozhodně nedoporučuji používat nějaké obecné obrázky, např. s logem firmy. Pokud je obsah hodný sdílení, měl by opravdu prezentovat obsah na stránkce.
+
+Např. na Vzhůru dolů sice pro články (zatím) obecné náhledy používám, ale při ručním sdílení je měním. Každý důležitý produkt – jako je video, školení, e-book má pak vlastní sdílecí obrázek.
+
+Samotná technologie generování je poměrně důležité téma, ale těžko jej pokrýt v rámci jediného článku o Open Graph, takže vás přesměruju na odkazy:
+
+- Github nedávno psal [o vlastním frameworku](https://github.blog/2021-06-22-framework-building-open-graph-images/) pro generování obrázků Open Graph.
+- Pro PHP svět existuje knihovna [Astrotomic/php-open-graph](https://github.com/Astrotomic/php-open-graph).
+- Ve světě WordPressu existuje řada [pluginů pro Open Graph](https://cs.wordpress.org/plugins/search/open+graph+image/), které obrázky generují. Jasně, na všechno tam jsou pluginy.
+- Pro framework Next.js se mi líbil [tenhle návod na dev.to](https://dev.to/kleveland/generating-sharable-content-images-with-open-graph-and-nextjs-4e34).
+
+Však vy už si to pro vlastní platformy nějak dohledáte a nakonec – většina z vás pokročilejších to už dávno řeší.
+
+<!-- AdSnippet -->
+
+Máte nějaké tipy, na které jsem v textu zapomněl? Napište mi do komentářů.
