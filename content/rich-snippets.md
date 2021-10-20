@@ -218,6 +218,17 @@ Do příchozí zprávy v Gmailu je možné vkládat tlačítka pro rychlé akce,
 
 Nikdy jsem se tím do hloubky nezabýval, takže to zde uvádím hlavně pro kontext a odkážu vás na [oficiální dokumentaci](https://developers.google.com/gmail/markup/reference).
 
+## Open Graph {#og}
+
+Velmi podobná věc jako Rich Snippets je Open Graph a podobné specifikace. I ty se snaží o sémantický popis stránky. Nikolik však jejího obsahu jako spíše stránky jako celku:
+
+```html
+<meta property="og:title" content="Titulek stránky">
+<meta property="og:image" content="obrazek.jpg">
+```
+
+O [Open Graph, Twitter Cards a oEmbed](meta-open-graph.md) píšu ve zvláštním textu.
+
 ## Závěr {#zaver}
 
 Jak jsem uvedl, svoje problémy strukturovaná data mají, ale pragmaticky vzato:

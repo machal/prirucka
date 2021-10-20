@@ -98,6 +98,8 @@ Abyste dosáhli hezkého náhledu odkazu v aplikacích pro práci s e-maily a c
 
 Předpokládám ale, že je už na webu máte, a to kvůli zobrazení náhledů na sociálních sítích nebo v chatovacích aplikacích.
 
+O [Open Graph](meta-open-graph.md) více píšu ve zvláštním textu.
+
 ### Formuláře {#formulare}
 
 Mile mě překvapilo, že na hodinkách od Applu je možné dělat také interakce s formuláři. Když se ale podíváte na následující obrázek, dává to smysl. Uživatelský vstup je vyřešený vážně hezky:

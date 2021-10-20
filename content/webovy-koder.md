@@ -37,7 +37,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 <!-- AdSnippet -->
 
 * SEO: osnova dokumentu, `<title>`, `<meta description…>`.
-* **[nové] **Sémantické metaznačky: [Facebook OpenGraph](http://davidwalsh.name/facebook-meta-tags); Google Schema.org a [Rich Snippets](https://www.vzhurudolu.cz/prirucka/rich-snippets); Twitter Cards; [favicon a touchicon](favicon.md). ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
+* **[nové] **Sémantické metaznačky: [Facebook Open Graph a Twitter Cards](meta-open-graph.md); Google Schema.org a [Rich Snippets](rich-snippets.md);  [favicon a touchicon](favicon.md). ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))
 * **[nové] **[Audio a video](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video): HTML5 formáty audia a videa, které vyžadují aktuální prohlížeče, případně Flash.
 * **[nové] **[Canvas](http://www.zdrojak.cz/clanky/zaciname-z-html5-canvasem/): principy; k čemu je dobrý.
 * **[nové] **Povědomí o základních HTML5 aplikačních API: local/sessionStorage; History API; Geolocation API; komunikace: WebSockets, ServerSentEvents; offline: AppCache. ([školení](https://www.vzhurudolu.cz/kurzy/webovy-frontend))

@@ -1,54 +1,52 @@
 # Open Graph a oEmbed: meta značky pro sociální sítě (Facebook, Twitter, LinkedIn, Slack…)
 
-V tomto článku si budeme povídat o starých dobrých HTML značkách postavený na specifikaci [Open Graph](https://ogp.me/) od Facebooku.
+V tomto článku si budeme povídat o starých dobrých HTML značkách postavený na specifikaci Open Graph od Facebooku.
 
-Asi je skoro všichni znáte, ale všiml jsem si, že je tam pár nuancí, které řada lidí nezná. A taky jsem to ještě na Vzhůru dolů nezdokumentoval, což je pro mě silný důvod.
+Asi je skoro všichni znáte, ale všiml jsem si, že je tam pár nuancí, ve kterých leckdo plave. A taky jsem značky pro sociální sítě ještě na Vzhůru dolů nezdokumentoval.
 
 <!-- AdSnippet -->
 
-Takže čtěte, i když si myslíže, že tomu rozumíte. Slibuju, že tady nezůstanu u základů.
+Takže čtěte, i když si myslíte, že tomu rozumíte. Slibuju, že tady nezůstanu u základů.
 
-## Co to přesně je a jak se to liší od `<title>`?
+## Co to přesně je a jak se to liší od `<title>`? {#co}
 
-Základy ovšem přeskočit nemůžu, protože sem pár neznalých čtenářek a čtenářů určitě zavítá.
-
-Meta značky pro sociální sítě a moderní chatovací programy vytvářejí automatické náhledy stránek v momentě, kdy uživatel někde sdílí URL vašeho webu.
+Meta značky pro sociální sítě a moderní chatovací nástroje jsou zodpovědné za automatické náhledy stránek v momentě, kdy uživatel někde sdílí URL vašeho webu.
 
 <figure>
 <img src="../dist/images/original/meta-open-graph.png" alt="">
 <figcaption markdown="1">
-*Takhle to může vypadat na Facebooku, Twitteru, LinkedIn nebo Slacku, když se to dobře nastaví.*
+*Takhle to může vypadat na Facebooku, Twitteru, LinkedIn nebo Slacku. Když se to dobře nastaví.*
 </figcaption>
 </figure>
 
-Dále platí, že do `<head>` stránky musíme uvádět značky `<title>` a `<meta name="description">`:
+Stále samozřejmě platí, že do `<head>` stránky musíme uvádět značky `<title>` a `<meta name="description">`:
 
 ```html
 <title>CSS grid: mřížka v kostce (Video)</title>
 <meta name="description" content="Kupte si kurz „CSS grid: mřížka v kostce“. Praktické video postavené…">
 ```
 
-Asi víte, že tohle je nutné a že se to použije na mnoha různých místech – počínaje názvem okna v prohlížeči a konče výsledky vyhledávání Googlu nebo Seznamu. Tam to bude ovlivňovat například i šanci, jak moc bude uživatel chtít kliknout právě na ten váš výsledek.
+Tohle se použije na mnoha různých místech – počínaje názvem okna v prohlížeči a konče výsledky vyhledávání Googlu nebo Seznamu. Tam to bude ovlivňovat například i šanci, jak moc bude uživatel chtít kliknout právě na ten váš výsledek.
 
 Teoreticky by to mohlo stačit všem sociálním sítím. Jenže často je struktura informací potřebných pro náhled v prohlížeči, vyhledávači a nebo pro Twitter dost odlišná.
 
-Ten hlavní rozdíl je v obrázku, který po vás sociální síť vyžaduje:
+Ten hlavní rozdíl je v obrázkovém náhledu obsahu stránky, který po vás sociální síť vyžaduje:
 
 ```html
 <meta property="og:image" content="/img/webinar-css-grid.png">
 ```
 
-Bez téhle metaznačky se při sdílení vašeho článku, produktu nebo firemní stránky zobrazí jen výchozí náhled nebo obrázek žádný. A žádný obrázek, to je výrazně nižší šance kliknutí během boje o uživatelskou pozornost.
+Bez téhle metaznačky se při sdílení vašeho článku, produktu nebo firemní stránky zobrazí jen výchozí náhled bez obrázku nebo odkaz úplně bez náhledu. Znamená to výrazně nižší šanci na kliknutí během boje o uživatelskou pozornost.
 
 Proto je dobré, abyste alespoň obrázek měli doplněný vždy.
 
-## Validátory
+## Validátory {#validatory}
 
 V tomhle textu chci, jak je ostatně u mě zvykem, postupovat salámovou metodou. Nezahltit vás těžkými sousty hned zkraje. Proto si k informaci o nutnosti přiřadit obrázek přidejte ještě odkaz na tento validátor:
 
 → [metatags.io](https://metatags.io/)
 
-Vrátí vám docela přesnou vizuální emulaci toho, jak bude vaše URL vypadat při sdílení na různých sociálních sítích.
+Po zadání URL vám vrátí docela přesnou vizuální emulaci toho, jak bude vaše stránka vypadat při sdílení na různých sociálních sítích.
 
 <figure>
 <img src="../dist/images/original/meta-open-graph-validator.png" alt="">
@@ -59,20 +57,20 @@ Vrátí vám docela přesnou vizuální emulaci toho, jak bude vaše URL vypadat
 
 Tenhle validátor ovšem může za rok, dva být neplatný nebo prostě nebude dostačovat vašim pokročilým nárokům.
 
-Proto se vždy dívejte ještě do validátorů pro sociální sítě, které vás zajímají:
+Proto se ideálně ještě dívejte na výsledky validátorů pro sociální sítě, které vás zajímají:
 
 - [Facebook: Sharing Debugger](https://developers.facebook.com/tools/debug/)
 - [Twitter: Card Validator](https://cards-dev.twitter.com/validator)
 - [LinkedIn: Post Inspector](https://www.linkedin.com/post-inspector/inspect/)
 - [Pinterest: Rich Pins Validator](https://developers.pinterest.com/tools/url-debugger/)
 
-Minimálně ty první dva (Facebook a Twitter) doporučuji projít u každého typu URL, které na webu máte. Vzhledem k významnému podílu návštěvnosti se sociálních sítích je to nutnost.
+Minimálně ty první dva (Facebook a Twitter) doporučuji projít u každého typu URL, které na webu máte. Vzhledem k významnému podílu návštěvnosti ze sociálních sítí je to nutnost.
 
 Takže teď víte, že máte vždy připravit obrázek a pak se případně nechat řídit validátory. Pojďme ukrojit další, tentokrát více hutné, kolečko salámu.
 
-## Plné znění meta značek pro obsahovou stránku
+## Plné znění meta značek pro obsahovou stránku {#plne}
 
-Obyčejný článek nebo detail produktu může mít strukturu meta značek podobnou s tou mojí:
+Obyčejný detail produktu na e-shopu může mít strukturu meta značek podobnou s tou mojí:
 
 ```html
 <meta property="og:title" content="CSS grid: mřížka v kostce (Video)">
@@ -87,19 +85,19 @@ Obyčejný článek nebo detail produktu může mít strukturu meta značek podo
 
 Následuje vysvětlení:
 
-- `og:title` a `og:description` je titulek a popisek pro sociální sítě a chaty. Můžete jej kreativně využít k lepší proklikovost.
-- `og:image` je onen důležitý obrázek.
+- `og:title` a `og:description` je titulek a popisek pro sociální sítě a chaty. Můžete jej kreativně využít k lepší proklikovost, odlišit od `<title>`.
+- `og:image` je onen důležitý obrázkový náhled.
 - `og:url` je kanonické URL, které si přičte všechna sdílení a lajkování této stránky. Prý je to povinné i pro URL, která nemají kanonickou adresu.
-- `og:site_name` použijte raději vždy,ale hodí se hlavně u webů, které sedí na více (sub)doménách a chtějí používate jednu značku.
-- `og:type` je důležité označení typu stránky. Různé typy mohou mít různé zobrazení náhledů. Možné typy jsou např. `article`, `book`, `product`… Více k tomu později.
+- `og:site_name` použijte raději vždy, ale hodí se hlavně u webů, které sedí na více (sub)doménách a chtějí na socsítích používat jednu značku.
+- `og:type` je důležité označení typu stránky. Různé typy mohou mít různé zobrazení náhledů. Možné typy jsou např. `article`, `book`, `product`… Více k tomu [později](#typy).
 - `twitter:card` je označení typu karty, což umožňuje změnit Twitter.
 - `twitter:site` odkazuje na Twitter účet, který se může u karty objevit s výzvou k přihlášení odběru.
 
-## Open Graph, Twitter Cards a hlavně oEmbed
+## Open Graph, Twitter Cards… a tady oEmbed {#oembed}
 
-Asi jste si všimli, že kromě technologie [Open Graph](https://ogp.me/) od Facebooku (prefix `og:`) se zde používají také [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started) (prefix: `twitter:`).
+Asi jste si všimli, že kromě technologie [Open Graph](https://ogp.me/) (OG) od Facebooku (prefix `og:`) se zde používají také [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started) (prefix: `twitter:`).
 
-V praxi se můžete setkat ještě s třetí specifikací – [oEmbed](https://oembed.com/), která na to technicky jde trochu jinak.
+V praxi se můžete setkat ještě se třetí specifikací – [oEmbed](https://oembed.com/), která na to technicky jde trochu jinak.
 
 V HTML definujete jen cestu k datové struktuře ve formátu XML nebo JSON:
 
@@ -126,23 +124,30 @@ V JSON pak definujete potřebně parametry pro vzhled sdílecího náhledu:
 }
 ```
 
-Vypadá to zajímavě, hlavně z pohledu vývojářů, protože díky umístění „bokem“ není potřeba dále zvětšovat HTML kód.
+Vypadá to zajímavě, hlavně z pohledu vývojářů, protože díky umístění „bokem“ není potřeba zvětšovat HTML kód.
 
 Zdá se, že minimálně obecně s oEmbed [Facebook](https://developers.facebook.com/docs/features-reference/oembed_read) i [Twitter](https://developer.twitter.com/en/docs/twitter-for-websites/oembed-api) pracovat umí.
 
-Ptal jsem se na sociálních sítích, zda někdo oEmbed používá jako hlavní zdroj pro náhledy webyu ([Facebook](https://www.facebook.com/groups/frontendisti/posts/2925001394378032/), [Twitter](https://twitter.com/machal/status/1450008456698736650)), ale nikoho jsem nenašel. oEmbed tedy zatím považuji spíše za doplněk k Open Graph, který používají větší weby.
+To ale neznamená, že byste mohli Open Graph pro vaše weby úplně vynechat. Ptal jsem se na sociálních sítích, zda někdo oEmbed používá jako hlavní zdroj pro náhledy webu ([Facebook](https://www.facebook.com/groups/frontendisti/posts/2925001394378032/), [Twitter](https://twitter.com/machal/status/1450008456698736650)):
+
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr">My máme oEmbed na jedinom webe (<a href="https://t.co/m0oXRxMfZI">https://t.co/m0oXRxMfZI</a>), ale nie je to kvôli zdieľaniu náhľadov. Máme ho kvoli možnosti embedovania, napríklad na Medium, tam to bez oEmbed nejde.</p>&mdash; Michal Kočí (@mifko) <a href="https://twitter.com/mifko/status/1450705870871007233?ref_src=twsrc%5Etfw">October 20, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+oEmbed tedy zatím považuji spíše za určitou alternativu k Open Graph, která je vhodná pro specifičtější použití, ale OG nenahrazuje.
+
+Mimochodem, Medium a blogovací nástroje, to je další pole možného výskytu vašeho obsahu, který stojí za pozornost jak při použití OG, tak oEmbed. A mimochodem podruhé – Medium pro zobrazování náhledů z oEmbed používá [Embed.ly](https://docs.embed.ly/docs/embedly-api), můstek třetí strany, kam je ale potřeba se registrovat.
 
 <!-- AdSnippet -->
 
 O využití oEmbed z druhé strany – pro zobrazení náhledu ve vaší webové aplikaci – dříve psal Bohumil Jahoda [na Ječas.cz](https://jecas.cz/oembed).
 
-## Typy obsahu
+## Typy obsahu {#typy}
 
 Vraťme se teď k nejrozšířenějšímu Open Graph a k tématu kategorií obsahu. Specifikovat přesnou kategorii obsahu a sémantický popis vašeho obsahu může být užitečné.
 
-Podle [Facebooku](https://developers.facebook.com/docs/sharing/webmasters) má  `og:type` vliv na to, jak se váš obsah zobrazuje v News Feedu. Pokud typ nezadáte,výchozí je `website`.
+Podle [Facebooku](https://developers.facebook.com/docs/sharing/webmasters) má `og:type` vliv na to, jak se váš obsah zobrazuje v News Feedu. Pokud typ nezadáte, výchozí je `website`.
 
-Kdysi jsem viděl [texty o tom]( https://blog.kissmetrics.com/open-graph-meta-tags/), jak je  Facebook schopný přidat „lajknutý“ mediální obsah typu video do oblíbeného obsahu konkrétního uživatele a tím vytvořit o trochu silnější vazbu mezi provozovatelem webu a oním uživatelem sociální sítě.
+Kdysi jsem viděl [texty o tom](https://blog.kissmetrics.com/open-graph-meta-tags/), jak je  Facebook schopný přidat „lajknutý“ mediální obsah typu video do oblíbeného obsahu konkrétního uživatele a tím vytvořit o trochu silnější vazbu mezi provozovatelem webu a oním uživatelem sociální sítě.
 
 Pokud tedy připravujete obsah jednoho z následujících typů, zvažte, zda ty metaznačky ještě více nerozšířit:
 
@@ -164,15 +169,15 @@ Například pro případ typu `article` by se metaznačky mohly rozšířit nás
 
 Více o typech obsahu píší [ve specifikaci Open Graph](https://ogp.me/#types) nebo [v článku na Moz.com](https://moz.com/blog/meta-data-templates-123).
 
-## Značky s prefixem `fb:` a propojení s analytikou
+## Značky s prefixem `fb:` a propojení s analytikou {#fb}
 
-Uvádět hodnotu pro `fb:app_id` sice není pro Facebook povinné, ale pomůže to propojit váš web s aplikacemi Marka Zuckerberga, jako jsou komentáře, a jeho analytikou pro sledování webů:
+Uvádět hodnotu pro `fb:app_id` sice není pro Facebook povinné, ale pomůže to propojit váš web s aplikacemi lidí Marka Zuckerberga, jako jsou komentáře, a jeho analytikou pro sledování webů:
 
 ```html
 <meta property="fb:app_id" content="…">
 ```
 
-Kdysi jsem četl, že je kvůli analytice dobré propojit web se stránkou na Facebooku. K tomu slouží `fb:pages`:
+Kdysi jsem četl, že je kvůli analytice dobré propojit web i se stránkou na Facebooku. K tomu slouží `fb:pages`:
 
 ```html
 <meta property="fb:pages" content="…">
@@ -184,7 +189,7 @@ U Twitteru prý podobnou vazbu na analytiku dělá `twitter:site`:
 <meta name="twitter:site" content="@vzhurudolu">
 ```
 
-## Dva náhledové obrázky
+## Dva náhledové obrázky {#dva-nahledy}
 
 Docela často se hodí mít možnost nechat uživateli vybrat, jaký náhledový obrázek si pro sdílení vašeho obrázku vybere. Je to snadné:
 
@@ -193,22 +198,22 @@ Docela často se hodí mít možnost nechat uživateli vybrat, jaký náhledový
 <meta property="og:image" content="/img/socky-2.jpg">
 ```
 
-Jasně, používá to jen malý zlomek uživatelů, nadšenců jako jsem já, ale např. u obecných obrázků se vám občasná změna zobrazení.
+Jasně, používá to jen malý zlomek uživatelů (nadšenců jako jsem já), ale např. u obecných obrázků se vám občasná změna zobrazení na sociálních sítích může vyplatit.
 
-## Náhledy webů na Apple Watch
+## Náhledy webů na Apple Watch {#apple-watch}
 
-S příchodem chytrých hodinek Watch mě zaujalo, že kalifornská firma převzala existující standard pro náhledy. Ano, i na Apple hodinkách budou uživatelé profitovat z vašich značek Open Graph:
+S příchodem chytrých hodinek Watch mě před lety zaujalo, že kalifornská firma převzala existující standard pro náhledy. Ano, i na Apple hodinkách budou uživatelé profitovat z vašich značek Open Graph:
 
 ```html
 <meta property="og:title" content="Titulek stránky">
 <meta property="og:image" content="/nahledovy-obrazek.jpg">
 ```
 
-O tomto nastavení píšu v článku [o vlivu Apple Watch na webařinu](weby-watchos.md).
+Uživatelům se pak zobrazí náhled webu v chatovacích programech. O tomto píšu v článku [o vlivu Apple Watch na webařinu](weby-watchos.md).
 
-## Strukturovaná data: něco podobného, ale vlastně jiného
+## Strukturovaná data: něco podobného, ale vlastně jiného {#strukturovana-data}
 
-Musím zde zmínit i jednu věc, se kterou se Open Graph a podobné metaznačky pletou –[Strukturovaná data (aneb Rich Snippets)](rich-snippets.md) od Googlu:
+Musím zde zmínit i jednu věc, se kterou se Open Graph a podobné metaznačky pletou – [Strukturovaná data (aneb Rich Snippets)](rich-snippets.md) od Googlu:
 
 ```html
 <script type="application/ld+json">
@@ -226,9 +231,9 @@ Takže v případě kategorie produktů na e-shopu se Open Graph stará o popis 
 
 Rozdíl je v praktickém využití – zatímco Open Graph je pro online kecálky a sociální sítě, Schema.org pro Google a další vyhledávače.
 
-## Generování náhledových obrázků
+## Generování náhledových obrázků {#generovani}
 
-K náhledovým obrázkům se určitě hodí napsat, že rozhodně nedoporučuji používat nějaké obecné obrázky, např. s logem firmy. Pokud je obsah hodný sdílení, měl by opravdu prezentovat obsah na stránkce.
+K náhledovým obrázkům se určitě hodí napsat, že nedoporučuji používat nějaké obecné obrázky, např. s logem firmy. Pokud je obsah hodný sdílení, měl by opravdu prezentovat obsah na stránce.
 
 Např. na Vzhůru dolů sice pro články (zatím) obecné náhledy používám, ale při ručním sdílení je měním. Každý důležitý produkt – jako je video, školení, e-book má pak vlastní sdílecí obrázek.
 
@@ -239,7 +244,7 @@ Samotná technologie generování je poměrně důležité téma, ale těžko je
 - Ve světě WordPressu existuje řada [pluginů pro Open Graph](https://cs.wordpress.org/plugins/search/open+graph+image/), které obrázky generují. Jasně, na všechno tam jsou pluginy.
 - Pro framework Next.js se mi líbil [tenhle návod na dev.to](https://dev.to/kleveland/generating-sharable-content-images-with-open-graph-and-nextjs-4e34).
 
-Však vy už si to pro vlastní platformy nějak dohledáte a nakonec – většina z vás pokročilejších to už dávno řeší.
+Však vy už si to pro vlastní platformy nějak dohledáte. A nakonec – většina z vás pokročilejších to už dávno má vyřešené.
 
 <!-- AdSnippet -->
 
