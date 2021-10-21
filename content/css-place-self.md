@@ -10,11 +10,13 @@ Vlastnost `place-self` určí zarovnání položky na hlavní i příčné ose p
 
 Vlastnost `place-self` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
 
+Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
+
 </div>
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-place-self](https://www.vzhurudolu.cz/prirucka/css-align-self)
+→ [vrdl.cz/p/css-place-self](https://www.vzhurudolu.cz/prirucka/css-place-self)
 
 </div>
 
@@ -22,41 +24,71 @@ Vlastnost `place-self` patří do specifikace pro zarovnání boxů – [CSS Box
 
 Jde o zkratku pro vlastnosti [`align-self`](css-align-self.md) a [`justify-self`](css-justify-self.md).
 
-Zapisuje se takto:
+V obecné rovině se zapisuje takto:
 
 ```css
 place-self: <hodnota align-self> <hodnota justify-self>;
 ```
 
-Pokud není druhá hodnota přítomná, použije se první pro oba směry, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
+Pokud na druhou hodnotu zapomenete, použije se první pro oba směry, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
+
+Zkratku `place-self` není možné použít [ve flexboxu](css-flexbox.md), protože tam nepochodíte s její důležitou částí – zarovnáním položky ve směru hlavní osy (`align-self`).
 
 <!-- AdSnippet -->
 
-## Jednoduchý příklad
+## Příklad {#priklad}
 
-V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který zařídí vlastnost `place-self` na třetí položce:
+V naší ukázce definujeme třísloupcový kontejner gridu a poslední položku zarovnáme pomocí `place-self` trochu jinak.
+
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
+
+CSS:
 
 ```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10em;  
+}
+
 .item--3 {
   place-self: end center;
 }
 ```
 
-Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně n buňky (`center`).
+Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání.
 
-CodePen: [cdpn.io/e/MWymbYw?editors=1100](https://codepen.io/machal/pen/MWymbYw?editors=1100)
+<!-- TODO img aspon maly -->
 
-## Možné hodnoty
+Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně na buňky (`center`).
 
-Podívejte se na referenční příručku k oběma vlastnostem, pro které je `place-items` zkratkou:
+CodePen: [cdpn.io/e/MWymbYw](https://codepen.io/machal/pen/MWymbYw?editors=1100)
 
-- [`justify-items`](css-justify-items.md)
-- [`align-items`](css-align-items.md)
+## Možné hodnoty {#hodnoty}
 
-## Podpora v prohlížečích
+Pro nalezení všech možných hodnot se podívejte na referenční příručky k oběma vlastnostem, pro které je `place-items` zkratkou:
 
-Vlastnost `place-self` bohužel v době psaní tohoto textu nepodporuje Internet Explorer, ale ani Safari.
+- [`justify-items`](css-justify-items.md) – zarovnání na hlavní ose
+- [`align-items`](css-align-items.md) – zarovnání na příčné ose
 
-Aktuální informace hledejte na [caniuse.com/place-self](https://caniuse.com/#search=place-self).
+## Podpora v prohlížečích {#prohlizece}
+
+Vlastnost `place-self` v době psaní tohoto textu nepodporuje Internet Explorer.
+
+Ve flexboxových rozvrženích nemůžete tuto vlastnost použít v žádném prohlížeči, protože to nedovoluje specifikace.
+
+Aktuální informace hledejte na CanIUse.com. [caniuse.com/place-self](https://caniuse.com/#search=place-self).
 
 <!-- AdSnippet -->

@@ -4,41 +4,84 @@ Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak té�
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost place-items](../dist/images/medium/vdlayout/css-place-items-schema.png)
+![CSS vlastnost justify-self](../dist/images/medium/vdlayout/css-justify-self-schema.png)
 
 <div class="web-only" markdown="1">
 
-Vlastnost `place-items` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+Vlastnost `justify-self` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
 
 </div>
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-place-items](https://www.vzhurudolu.cz/prirucka/css-place-items)
+→ [vrdl.cz/p/css-justify-self](https://www.vzhurudolu.cz/prirucka/css-justify-self)
 
 </div>
 
 </div>
 
-Je dobré zmínit, že uvnitř buněk tabulek a ve flexboxu je vlastnost `justify-self` ignorována. V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
+Je dobré zmínit, že uvnitř buněk tabulek a ve [flexboxu](css-flexbox.md) je vlastnost `justify-self` ignorována. V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
 
-Hodnota `auto` u vnějších okrajů má ostatně před touto `justify-self` přednost ve všech systémech rozvržení v CSS.
-
 <!-- AdSnippet -->
 
-## Jednoduchý příklad
+## Příklad: `margin` má přednost před `justify-self`
 
-V naší ukázce definujeme třísloupcový kontejner gridu.
+V naší ukázce definujeme třísloupcový kontejner gridu. Poslední, jinak zbarvenou položku pak zarovnáváme pomocí `justify-self`.
 
-CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
+HTML vám asi bude znít povědomě:
+
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
+
+Definice třísloupcového kontejneru gridu pak vypadá zhruba následovně:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10em;  
+}
+```
+
+Nakonec deklarace pro poslední položku:
+
+```css
+.item--3 {
+  margin-right: auto;
+  justify-self: end;
+}
+```
+
+Tady vlastně zarovnáváme dvěma způsoby. Jednou doleva (`margin-right:auto`) a jednou doprava (`justify-self:end`). Co myslíte - bude platit poslední deklarace, jako je tomu u CSS vždy? Nikoliv, zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
+
+Zkuste si tu první deklaraci schválně v živé ukázce odmazat.
+
+<!-- TODO img -->
 
 Následuje několik užitečných vysvětlovacích odrážek:
 
 - První dvě položky nemají vlastnost `justify-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé šířky prostoru buňky.
 - Poslední položka má nastaveno `justify-self:end`, takže by se měla „scvrknout“ na přirozenou šířku podle obsahu a zarovnat ke konci prostoru buňky, což je zároveň pravá hrana kontejneru.
 - Vyhrává ovšem deklarace `margin-right:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `justify-self:end`.
+
+CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
+
+## Příklad: ve flexboxu to nefunguje
 
 V dalším CodePenu je vidět, že `justify-self` ve flexboxu opravu nefunguje. Pokouším se tam stylovat poslední položku pomocí `justify-self:end`. A nic.
 
@@ -48,7 +91,7 @@ CodePen: [cdpn.io/e/MWJaVyZ](https://codepen.io/machal/pen/MWJaVyZ?editors=1100)
 
 ![Hodnoty vlastnosti justify-self](../dist/images/original/vdlayout/css-justify-self-hodnoty.png)
 
-Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
+Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov specifikace CSS Box Alignment:
 
 ### Základní
 
@@ -58,6 +101,10 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých 
   V CSS gridu bude nastavený jako hodnota `stretch`, ale například v blokových layoutech (`display:block`) jako `start`.
 - `stretch`  
   Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
+
+Po dekódování zašmodrchaností specifikace můžeme konstatovat, že výchozí hodnota je vždy `stretch`, tedy roztažení do šířky.  
+
+<!-- AdSnippet -->
 
 ### Poziční
 
@@ -96,14 +143,12 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých 
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-Pokud vím, v žádném prohlížeči toto zatím nefunguje.
+Toto v žádném prohlížeči zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-Při použití s `display:flex` zde máme tradiční výjimku – vlastnosti `justify-self` nepodporuje Internet Explorer 11.
+V rámci flexboxu a tabulkovém layoutu tuto vlastnost nemůžete použít v žádném prohlížeči.
 
-<!-- TODO je to pravda? Viz CSS layout bugy -->
-
-Více na [caniuse.com/justify-self](https://caniuse.com/#search=justify-self).
+Při použití s `display:grid` je podpora v prohlížečích plná, jen v Internet Exploreru je hlášeno několik bugů. Více na CanIUse. [caniuse.com/justify-self](https://caniuse.com/#search=justify-self)
 
 <!-- AdSnippet -->

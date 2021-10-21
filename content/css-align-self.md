@@ -1,6 +1,6 @@
 # Vlastnost align-self: Zarovnání položky na příčné ose
 
-Vlastnost `align-self` určuje zarovnání položky na příčné ose (jinak též blokové ose).
+Vlastnost `align-self` nastavuje zarovnání položky na příčné (jinak též blokové) ose layoutu.
 
 <div class="connected" markdown="1">
 
@@ -9,6 +9,8 @@ Vlastnost `align-self` určuje zarovnání položky na příčné ose (jinak té
 <div class="web-only" markdown="1">
 
 Vlastnost `align-self` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
+
+Můžete ji využít v layoutech tvořených [gridem](css-grid.md) nebo [flexboxem](css-flexbox.md).
 
 </div>
 
@@ -20,40 +22,94 @@ Vlastnost `align-self` patří do specifikace pro zarovnání boxů – [CSS Box
 
 </div>
 
-V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky. Ve rozvržení tvořeném flexboxem jde o zarovnání položky na v celém prostoru příčné osy.
+V layoutu tvořeném gridem se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky. V rozvržení flexboxem jde o zarovnání položky v celém prostoru příčné osy.
 
-Hodnota `auto` u vlastnosti `margin` má ostatně před `align-self` přednost ve všech systémech rozvržení v CSS.
-
-Vlastnost `align-self` je určená pro flexbox, grid, absolutně pozicované prvky, ale ne pro buňky tabulky nebo blokový layout.
+Vlastnost `align-self` je specifikací předurčená pro flexbox, grid, absolutně pozicované prvky, ale ne pro buňky tabulky nebo blokový layout tvořený například pomocí „floatů“.
 
 <!-- AdSnippet -->
 
-## Jednoduché příklady
+## Příklad: `margin` má přednost před `align-self`
 
-V první ukázce definujeme třísloupcový kontejner gridu.
+V první ukázce definujeme třísloupcový kontejner gridu a poslední položku se snažíme zarovnat jinak než její první dvě kolegyně.
 
-CodePen: [cdpn.io/e/zYqwKer?editors=1100](https://codepen.io/machal/pen/zYqwKer?editors=1100)
+HTML už znáte:
+
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
+
+CSS pro deklaraci gridu a té naší specificky zarovnané poslední položky:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10em;
+}
+
+.item--3 {
+  margin-top: auto;
+  align-self: start;
+}
+```
+
+Stejně jako [u `justify-self`](css-justify-self.md) i tady zarovnáváme dvěma způsoby. Jednou dolů (`margin-top:auto`) a jednou nahoru (`align-self:start`). A opět platí – zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
+
+<!-- TODO img: nejlépe z grid průzkumníka -->
 
 Vysvětleme:
 
 - Rodičovský prvek `.container` má nastavenou výšku (`height:10em`), abychom viděli efekt zarovnání na blokové ose.
-- První dvě položky nemají vlastnost `align-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé šířky prostoru buňky.
-- Poslední položka má nastaveno `align-self:center`, takže by se měla „scvrknout“ na přirozenou výšku podle obsahu a zarovnat doprostřed prostoru buňky, což je zároveň pravá hrana kontejneru.
-- Vyhrává ovšem deklarace `margin-bottom:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `align-self:start`.
+- První dvě položky nemají vlastnost `align-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé výšky prostoru buňky.
+- Poslední položka má nastaveno `align-self:start`, takže by se měla „scvrknout“ na přirozenou výšku podle obsahu a zarovnat k horní hraně prostoru buňky.
+- Vyhrává ovšem deklarace `margin-top:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `align-self:end`.
 
-V druhé ukázce si pohrajeme s flexboxem:
+CodePen: [cdpn.io/e/zYqwKer](https://codepen.io/machal/pen/zYqwKer?editors=1100)
 
-CodePen: [cdpn.io/e/zYqwKer?editors=1100](https://codepen.io/machal/pen/zYqwKer?editors=1100)
+## Příklad: `align-self` ve flexboxu
 
-- Rodičovský kontejner má deklarováno `display:flex` položky `flex:1`, takže se roztáhnou do celé šířky.
-- Na výšku jsou položky ovlivněné výchozí hodnotou `align-self:stretch`
+V druhé ukázce si pohrajeme s flexboxem. HTML je stejné, CSS se mění:
+
+```css
+.container {
+  display: flex;
+  height: 10em;
+}
+
+.item {  
+  flex: 1;
+}
+
+.item--3 {
+  align-self: flex-end;
+}
+```
+
+<!-- TODO img, aspon maly -->
+
+Nyní přichází vysvětlení:
+
+- Rodičovský kontejner má deklarováno `display:flex` a položky `flex:1`, takže se roztáhnou do celé šířky.
+- Na výšku jsou položky ovlivněné výchozí hodnotou (`align-self:stretch`).
 - Třetí položka `.item--3` je pak díky `align-self:flex-end` zarovnaná ke spodní hraně kontejneru. Jsme ve flexboxu, takže hodnoty jako `end` by zde nezabraly.
+
+CodePen: [cdpn.io/e/zYqwKer](https://codepen.io/machal/pen/zYqwKer?editors=1100)
 
 ## Možné hodnoty zarovnání
 
 ![Hodnoty vlastnosti align-self](../dist/images/original/vdlayout/css-align-self-hodnoty.png)
 
-Také vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
+Také vlastnosti `align-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov specifikace CSS Box Alignment:
 
 ### Základní
 
@@ -63,6 +119,8 @@ Také vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotliv�
   V CSS gridu, flexboxu ale i ve většině systémů pro layout bude nastavený jako hodnota `stretch`.
 - `stretch`  
   Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
+
+Opět platí, že v zásadě je výchozí roztažení na výšku – takže hodnota `stretch`.
 
 ### Poziční
 
@@ -101,12 +159,10 @@ Také vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotliv�
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-Pokud vím, v žádném prohlížeči toto zatím nefunguje.
+V žádném prohlížeči toto zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro grid layout. V [Internet Exploreru 11](msie.md) je ovšem nutné použít prefix `-ms-align-self`, což ale doplní [Autoprefixer](autoprefixer.md).
-
-Více na [caniuse.com/align-self](https://caniuse.com/#search=align-self).
+Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro grid layout. V [Internet Exploreru 11](msie.md) je ovšem nutné použít vlastnost `-ms-grid-row-align`, což ale do `align-self` přeloží [Autoprefixer](autoprefixer.md). Více na CanIUse. [caniuse.com/align-self](https://caniuse.com/#search=align-self)
 
 <!-- AdSnippet -->
