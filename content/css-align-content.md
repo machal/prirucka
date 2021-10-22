@@ -10,6 +10,8 @@ Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi po
 
 Vlastnost `align-content` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
 
+Počítá se však s použitím pro [flexbox](css-flexbox.md), [grid](css-grid.md), ale také [vícesloupcový layout](css-multicolumn.md).
+
 </div>
 
 <div class="ebook-only" markdown="1">
@@ -20,23 +22,66 @@ Vlastnost `align-content` patří do specifikace pro zarovnání boxů – [CSS 
 
 </div>
 
-Ve specifikaci se počítá s použitím pro flexbox, grid, vícesloupcový layout, ale taky pro blokové prvky.
+Ve specifikaci se počítá s použitím pro flexbox, grid, vícesloupcový layout, ale taky pro blokové prvky, kde to ale zatím použít nejde.
 
-Tato vlastnost nemá pochopitelně vliv na jednořádkové flexboxové kontejnery (tj. kontejnery s `flex-wrap:nowrap`).
+Tato vlastnost zarovnává ve svislém směru a tak nemá pochopitelně vliv na jednořádkové flexboxové kontejnery (tj. kontejnery s `flex-wrap:nowrap`).
 
-## Jednoduchý příklad
+## Jednoduchý příklad {#priklad}
 
-V naší ukázce definujeme třísloupcový kontejner gridu. Jeho položky jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
+V naší ukázce definujeme třířádkový kontejner gridu:
 
-CodePen: [cdpn.io/e/ZEWKPvr?editors=1100](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
 
-Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát pro flexbox.
+```css
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 3em);
+  height: 12em;
+  align-content: space-between;
+}
+```
 
-CodePen: [cdpn.io/e/zYqwbpL?editors=1100](https://codepen.io/machal/pen/zYqwbpL?editors=1100)
+<!-- TODO img -->
 
-Deklarace `align-content:space-between` tedy zajistí rozdělení volného prostoru takovým způsobem… Ale vy víte, co? Raději se podívejte na na všechny možné hodnoty, i tuhle mezi nima najdete.
+Pomocí zápisu `align-content:space-between` se volný prostor hezky distribuuje na výšku mezi jednotlivé položky.
 
-## Možné hodnoty zarovnání
+CodePen: [cdpn.io/e/ZEWKPvr](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
+
+Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát pro flexbox a jinou hodnotu `align-content`.
+
+CSS:
+
+```css
+.container {
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 12em;
+  align-content: space-around;
+}
+```
+
+<!-- TODO img -->
+
+Zápis `align-content:space-around` tedy rozdělí volný prostor na polovinu a přidá ji před a za buňku.
+
+CodePen: [cdpn.io/e/zYqwbpL](https://codepen.io/machal/pen/zYqwbpL?editors=1100)
+
+Víte, co? Raději se podívejte na na všechny možné hodnoty, i tuhle mezi nima najdete.
+
+## Možné hodnoty zarovnání {#hodnoty}
 
 ![Hodnoty vlastnosti align-content](../dist/images/original/vdlayout/css-align-content-hodnoty.png)
 
@@ -89,12 +134,14 @@ Tyto hodnoty zatím nemají u této vlastnost dobrou podporu v prohlížečích 
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-Pokud vím, v žádném prohlížeči toto zatím nefunguje.
+Toto v době psaní podporuje jen Firefox.
 
-## Podpora v prohlížečích
+## Podpora v prohlížečích {#podpora}
 
-V layoutech postavených na gridu je u základních hodnot vlastnost plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
+V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
 
-Více na [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
+Ve flexboxových rozvrženích `justify-content` dobře funguje i v Internet Exploreru.
+
+Více na CanIUse.com. [caniuse.com/align-content](https://caniuse.com/#search=align-content).
 
 <!-- AdSnippet -->

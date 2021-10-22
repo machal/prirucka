@@ -159,7 +159,7 @@ Opět platí, že v zásadě je výchozí roztažení na výšku – takže hodn
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-V žádném prohlížeči toto zatím nefunguje.
+Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích
 

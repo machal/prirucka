@@ -10,6 +10,8 @@ Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor m
 
 Vlastnost `justify-content` patří do specifikace pro zarovnání boxů – [CSS Box Alignment](css-box-alignment.md).
 
+Počítá se však s použitím pro [flexbox](css-flexbox.md), [grid](css-grid.md), ale také [vícesloupcový layout](css-multicolumn.md).
+
 </div>
 
 <div class="ebook-only" markdown="1">
@@ -20,29 +22,74 @@ Vlastnost `justify-content` patří do specifikace pro zarovnání boxů – [CS
 
 </div>
 
-Ve specifikaci se počítá s použitím pro flexbox, grid, ale také vícesloupcový layout.
+Využití je možné ve všech moderních systémech layoutu: flex, grid i multicol.
 
-Po pořádek zmiňme, že tahle vlastnost nemusí být pro flexbox užitečná, protože zbylý prostor se rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů a až poté, co se započtou hodnoty délek položek rozvržení. Stačí tedy jedna flexboxová položka s `flex` nebo `flex-grow` nastavená na 1 a více a žádný volný prostor zde nezbude.
+## Ve flexboxu je to občas zbytečné {#flexbox}
+
+Po pořádek zmiňme, že tahle vlastnost nebude pro flexbox zase tak užitečná. Zbylý prostor se ve flexboxu rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů (`margin`) a až poté, co se započtou hodnoty délek položek rozvržení. 
+
+Stačí tedy existence jedné flexboxové položky s vlastnostmi [`flex`](css-flex.md) nebo [`flex-grow`](css-flex-grow.md) nastavená na hodnotu `1` a více a žádný volný prostor zde nezbude.
 
 <!-- AdSnippet -->
 
-## Jednoduchý příklad
+## Jednoduchý příklad {#priklad}
 
-V naší ukázce definujeme třísloupcový kontejner gridu. Jeho položky jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
+V naší ukázce definujeme třísloupcový kontejner gridu. HTML:
 
-CodePen: [cdpn.io/e/qBZmvEy?editors=1100](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
+
+CSS:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(3em, 5em));
+  height: 10em;
+  justify-content: space-around;
+}
+```
+
+Položky gridu jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
+
+<!-- TODO img -->
+
+CodePen: [cdpn.io/e/qBZmvEy](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
 
 Deklarace `justify-content:space-around` zajistí rozdělení volného prostoru na výšku tak, aby mezi položkami a kontejnerem byla poloviční mezera než mezi jednotlivými položkami.
 
-Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát pro flexbox.
+Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát rozvržené pomocí flexboxu.
 
-CodePen: [cdpn.io/e/mdPmoVZ?editors=1100](https://codepen.io/machal/pen/mdPmoVZ?editors=1100)
+CSS tam vypadá zhruba takto:
 
-## Možné hodnoty zarovnání
+```css
+.container {
+  display: flex;
+}
+```
+
+<!-- TODO img -->
+
+Vzhledem k tomu, že jsme zde na položkách nepoužili vlastnost `flex` nebo `flex-grow`, dělení prostoru pomocí `justify-content` zůstává v platnosti.
+
+CodePen: [cdpn.io/e/mdPmoVZ](https://codepen.io/machal/pen/mdPmoVZ?editors=1100)
+
+## Možné hodnoty zarovnání {#hodnoty}
 
 ![Hodnoty vlastnosti justify-content](../dist/images/original/vdlayout/css-justify-content-hodnoty.png)
 
-Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
+Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 
 ### Základní
 
@@ -58,14 +105,16 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých 
 - `space-evenly`  
   Volné místo se rovnoměrně rozdělí mezi položky i mezi první a poslední položku a okraje kontejneru. Tato vlastnost není v kombinaci s flexboxem podporována v IE11.
 - `stretch`  
-  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato hodnota není v kombinaci s flexboxem podporována. 
+  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato hodnota není v kombinaci s flexboxem podporována v IE11.
+
+<!-- AdSnippet -->
 
 ### Poziční
 
 - `center`  
-  Položky se centruje doprostřed kontejneru.
+  Položky se centruje doprostřed kontejneru. Ve flexboxu nepodporuje IE.
 - `start`  
-  Položky se zarovnají k hraně začátku kontejneru.
+  Položky se zarovnají k hraně začátku kontejneru. Ve flexboxu nepodporuje IE.
 - `end`  
   Položky se zarovnají k hraně konce kontejneru.
 - `flex-start`  
@@ -79,6 +128,17 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty [z jednotlivých 
 
 Hodnoty `left`, `right`, `start` a `end` zatím nemají u této vlastnost dobrou podporu v prohlížečích při použití ve flexboxu.
 
+### Zarovnání na účaří {#ucari}
+
+- `first baseline`  
+  Zarovnání na účaří prvního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `start`.
+- `last baseline`  
+  Zarovnání na účaří posledního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `end`.
+- `baseline`  
+  Zkratka pro `first baseline`.
+
+Toto v době psaní podporuje v Chrome a Edge.
+
 ### Pro přetečení
 
 - `safe`  
@@ -86,12 +146,14 @@ Hodnoty `left`, `right`, `start` a `end` zatím nemají u této vlastnost dobrou
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-Pokud vím, v žádném prohlížeči toto zatím nefunguje.
+Toto v době psaní podporuje jen Firefox.
 
-## Podpora v prohlížečích
+## Podpora v prohlížečích {#podpora}
 
-V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. U flexboxu situaci popisujeme u jednotlivých vlastností.
+V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
 
-Více na [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
+Ve flexboxových rozvrženích `justify-content` dobře funguje i v Internet Exploreru.
+
+Více na CanIUse. [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
 
 <!-- AdSnippet -->

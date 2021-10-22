@@ -87,7 +87,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-Toto v žádném prohlížeči zatím nefunguje.
+Toto v době psaní podporuje jen Firefox.
 
 <!-- AdSnippet -->
 
