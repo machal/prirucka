@@ -113,7 +113,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 - `right`  
   Chová se jako `end`.
 
-<!-- AdSnippet -->  
+<!-- AdSnippet -->
 
 ### Podle účaří
 
