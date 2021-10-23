@@ -85,7 +85,7 @@ Víte, co? Raději se podívejte na na všechny možné hodnoty, i tuhle mezi ni
 
 ![Hodnoty vlastnosti align-content](../dist/images/original/vdlayout/css-align-content-hodnoty.png)
 
-Vlastnosti `align-self` můžete předávat všechny hodnoty [z jednotlivých obecných kategorií klíčových slov](css-box-alignment.md#typy-klicova-slova):
+Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 
 ### Základní
 

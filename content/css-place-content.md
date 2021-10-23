@@ -34,13 +34,53 @@ Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř konte
 
 <!-- AdSnippet -->
 
-Ve flexboxu může být využití vlastnosti [`justify-content`](css-justify-content.md) vcelku omezené.
+Pokud v deklaraci `place-content` neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
 
-Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
+Připomínám, že ve flexboxu může být využití vlastnosti [`justify-content`](css-justify-content.md) vcelku omezené. Pokud totiž použijete nastavení šířky položky pomocí `flex` nebo `flex-grow`, položka se roztáhne do volného prostoru, `justify-content` pak nebude mít co rozdělovat.
 
 ## Jednoduchý příklad {#priklad}
 
-V ukázce si hrajeme s dvousloupcovým kontejnerem gridu. Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání, který způsobuje vlastnost `place-content`. Využíváme zde tuto hodnotu:
+V ukázce si hrajeme s dvousloupcovým kontejnerem gridu.
+
+```html
+<div class="container">
+  <div class="item item--1">
+    Item 1
+  </div>
+  <div class="item item--2">
+    Item 2
+  </div>
+  <div class="item item--3">
+    Item 3
+  </div>  
+</div>
+```
+
+CSS pro rozvržení:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 5em);
+  height: 20em;
+}
+```
+
+Všechny tři položky mají omezenou výšku i šířku:
+
+```css
+.item {  
+  padding: 1em;
+  height: 5em;
+  width: 5em;
+}
+```
+
+To aby byl hezky vidět efekt distribuce volného prostoru mezi položkami, který způsobuje vlastnost `place-content`.
+
+<!-- TODO IMG -->
+
+Využíváme zde tuto hodnotu:
 
 ```css
 .container {
@@ -48,11 +88,9 @@ V ukázce si hrajeme s dvousloupcovým kontejnerem gridu. Všechny tři položky
 }
 ```
 
-Položky zarovnáváme svisle tak, aby mezi nimi vznikla rovnoměrná mezera (`space-between`) a vodorovně na konec hrany kontejneru (`end`).
+Položky tedy zarovnáváme svisle tak, aby mezi nimi vznikla rovnoměrná mezera (`space-between`) a vodorovně na konec hrany kontejneru (`end`).
 
-<!-- TODO end tady moc nefunguje -->
-
-CodePen: [cdpn.io/e/PoNJVPm?editors=1100](https://codepen.io/machal/pen/PoNJVPm?editors=1100)
+CodePen: [cdpn.io/e/PoNJVPm](https://codepen.io/machal/pen/PoNJVPm?editors=1100)
 
 ## Možné hodnoty
 
@@ -63,8 +101,8 @@ Podívejte se na referenční příručku k oběma vlastnostem, pro které je `p
 
 ## Podpora v prohlížečích
 
-`place-content` funguje ve všech prohlížečích kromě MSIE 11.
+Vlastnost `place-content` funguje ve všech prohlížečích kromě MSIE 11.
 
-Pro více informací se podívejte na [caniuse.com/place-items](https://caniuse.com/#search=place-items).
+Více informací hledejte na CanIUse. [caniuse.com/place-items](https://caniuse.com/#search=place-items).
 
 <!-- AdSnippet -->
