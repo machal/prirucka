@@ -48,9 +48,9 @@ V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři polo�
 
 Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně doprava (`right`).
 
-<!-- TODO IMG -->
+<p><img src="../dist/images/original/vdlayout/css-place-items-end-right.png" width="1920" height="540"  alt="place-items: end right v Chrome při zapnutém grid overlay"></p>
 
-CodePen: [cdpn.io/e/dyMOxdm?editors=1100](https://codepen.io/machal/pen/dyMOxdm?editors=1100)
+CodePen: [cdpn.io/e/dyMOxdm](https://codepen.io/machal/pen/dyMOxdm?editors=1100)
 
 ## Možné hodnoty
 

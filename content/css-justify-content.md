@@ -63,7 +63,7 @@ CSS:
 
 Položky gridu jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
 
-<!-- TODO img -->
+<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around.png" width="1920" height="540" alt="justify-content: space-around v gridu - v Chrome při zapnutém grid overlay"></p>
 
 CodePen: [cdpn.io/e/qBZmvEy](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
 
@@ -79,7 +79,7 @@ CSS tam vypadá zhruba takto:
 }
 ```
 
-<!-- TODO img -->
+<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around-flex.png" width="1920" height="540" alt="justify-content: space-around ve flexu - v Chrome při zapnutém layout overlay"></p>
 
 Vzhledem k tomu, že jsme zde na položkách nepoužili vlastnost `flex` nebo `flex-grow`, dělení prostoru pomocí `justify-content` zůstává v platnosti.
 

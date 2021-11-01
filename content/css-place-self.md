@@ -70,7 +70,7 @@ CSS:
 
 Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání.
 
-<!-- TODO img aspon maly -->
+<p><img src="../dist/images/original/vdlayout/css-place-self-item3.png" width="1920" height="540" alt="place-self v gridu - v Chrome při zapnutém grid overlay"></p>
 
 Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně na buňky (`center`).
 

@@ -71,7 +71,7 @@ Tady vlastně zarovnáváme dvěma způsoby. Jednou doleva (`margin-right:auto`)
 
 Zkuste si tu první deklaraci schválně v živé ukázce odmazat.
 
-<!-- TODO img -->
+<p><img src="../dist/images/original/vdlayout/css-justify-self-vs-margin.png" width="1920" height="540"  alt="margin má přednost před justify-self - v Chrome při zapnutém grid overlay"></p>
 
 Následuje několik užitečných vysvětlovacích odrážek:
 

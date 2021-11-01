@@ -65,7 +65,7 @@ CSS pro deklaraci gridu a té naší specificky zarovnané poslední položky:
 
 Stejně jako [u `justify-self`](css-justify-self.md) i tady zarovnáváme dvěma způsoby. Jednou dolů (`margin-top:auto`) a jednou nahoru (`align-self:start`). A opět platí – zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
 
-<!-- TODO img: nejlépe z grid průzkumníka -->
+<p><img src="../dist/images/original/vdlayout/css-align-self-vs-margin.png" width="1920" height="540"  alt="margin má přednost před align-self - v Chrome při zapnutém grid overlay"></p>
 
 Vysvětleme:
 
@@ -95,7 +95,7 @@ V druhé ukázce si pohrajeme s flexboxem. HTML je stejné, CSS se mění:
 }
 ```
 
-<!-- TODO img, aspon maly -->
+<p><img src="../dist/images/original/vdlayout/css-align-self-flexbox.png" width="1920" height="540"  al="align-self ve flexboxu - v Chrome při zapnutém grid overlay"></p>
 
 Nyní přichází vysvětlení:
 
@@ -103,7 +103,7 @@ Nyní přichází vysvětlení:
 - Na výšku jsou položky ovlivněné výchozí hodnotou (`align-self:stretch`).
 - Třetí položka `.item--3` je pak díky `align-self:flex-end` zarovnaná ke spodní hraně kontejneru. Jsme ve flexboxu, takže hodnoty jako `end` by zde nezabraly.
 
-CodePen: [cdpn.io/e/zYqwKer](https://codepen.io/machal/pen/zYqwKer?editors=1100)
+CodePen: [cdpn.io/e/eYZWdoN](https://codepen.io/machal/pen/eYZWdoN?editors=1100)
 
 ## Možné hodnoty zarovnání
 

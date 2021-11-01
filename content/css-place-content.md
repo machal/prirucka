@@ -78,7 +78,7 @@ Všechny tři položky mají omezenou výšku i šířku:
 
 To aby byl hezky vidět efekt distribuce volného prostoru mezi položkami, který způsobuje vlastnost `place-content`.
 
-<!-- TODO IMG -->
+<p><img src="../dist/images/original/vdlayout/css-place-content-grid.png" width="1920" height="540" alt="place-content: space-between end v gridu - v Chrome při zapnutém layout overlay"></p>
 
 Využíváme zde tuto hodnotu:
 

@@ -53,7 +53,7 @@ V naší ukázce definujeme třířádkový kontejner gridu:
 }
 ```
 
-<!-- TODO img -->
+<p><img src="../dist/original/images/vdlayout/css-align-content-grid.png" width="1920" height="540" alt="align-content:space-between ve gridu - v Chrome při zapnutém layout overlay"></p>
 
 Pomocí zápisu `align-content:space-between` se volný prostor hezky distribuuje na výšku mezi jednotlivé položky.
 
@@ -73,7 +73,7 @@ CSS:
 }
 ```
 
-<!-- TODO img -->
+<p><img src="../dist/images/original/vdlayout/css-align-content-flex.png" width="1920" height="540" alt="align-content:space-around ve flexboxu - v Chrome při zapnutém layout overlay"></p>
 
 Zápis `align-content:space-around` tedy rozdělí volný prostor na polovinu a přidá ji před a za buňku.
 
