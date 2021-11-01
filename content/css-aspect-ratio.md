@@ -1,20 +1,22 @@
 # Vlastnost aspect-ratio v CSS
 
-Od Chrome verze 88 a brzy i v dalších prohlížečích můžeme používat vlastnost `aspect-ratio`, která umožňuje vytvářet kontejnery pro asynchronní obsah a zabránit tak nechtěnému překreslování obsahu stránky, který měří [Kumulativní posun layoutu (CLS)](metrika-cls.md).
+Od září 2021 můžeme v prohlížečích používat vlastnost `aspect-ratio`, která v CSS zajistí držení poměru stran pro element ve stránce.
 
-<!-- AdSnippet -->
-
-Technik pro [zajištění poměru stran v CSS](css-pomer-stran.md) máme vcelku hodně, přičemž [zajištění plochy pro obrázky](img-pomer-stran.md) už příliš řešit nemusíme, to za nás rozlouskly prohlížeče a my jen musíme dodat atributy `width` a `height`.
-
-Pokud jde o další typy obsahu – `iframe` s obsahem třetí strany, videa, vkládané SVG dokumenty, asychronně vykreslený obsah od grafů až po výsledky ajaxových dotazů – asi nejznámější metodou je [padding trik](padding-trik.md).
-
-`aspect-ratio` je tady, aby nahradilo právě trik s paddingem. Je to úplně jednoduché, jako hodnotu vlastnosti stačí uvést poměr stran:
+Je to úplně jednoduché, jako hodnotu vlastnosti stačí uvést poměr stran:
 
 ```css
 .box {
   aspect-ratio: 4/3;
 }
 ```
+
+Jde o techniku, která umožňuje vytvářet kontejnery pro asynchronní obsah a zabránit tak nechtěnému překreslování obsahu stránky, který měří [Kumulativní posun layoutu (CLS)](metrika-cls.md).
+
+<!-- AdSnippet -->
+
+Metod pro [zajištění poměru stran v CSS](css-pomer-stran.md) máme vcelku hodně, přičemž [zajištění plochy pro obrázky](img-pomer-stran.md) už příliš řešit nemusíme, to za nás rozlouskly prohlížeče, a my jen musíme dodat atributy `width` a `height`.
+
+Pokud jde o další typy obsahu – `iframe` s obsahem třetí strany, videa, vkládané SVG dokumenty, asychronně vykreslený obsah od grafů až po výsledky ajaxových dotazů – asi nejznámější stávající metodou je [padding trik](padding-trik.md).No a vlastnost `aspect-ratio` je tady, aby nahradila právě trik s paddingem.
 
 Připravil jsem demo s obrázkem, ve kterém to snad půjde dobře vidět:
 
@@ -24,14 +26,16 @@ V HTML je `.box` rodičem obrázku:
 
 ```html
 <p class="box">
-  <img src="http://satyr.io/4000x3000/green?delay=3000&text=IMG" 
+  <img src="https://satyr.dev/4000x3000/green?delay=3000&text=IMG…" 
     width="2000" height="1500" alt="Image">
 </p>  
 ```
 
 Povšimněte si atributů `width` a `height`, které drží poměr stran samotného obrázku.
 
-Díky vlastnosti `delay` má obrázek servírovaný skvělou službou [Satyr.io](http://satyr.io/) nastaveno zpoždění. Když na něj čekáme, prohlížeč by vykreslil bílou plochu. My ale chceme barevný placeholder, aby bylo vidět, že na toto místo něco dorazí. K tomu nám poslouží `.box`, který má nastavený poměr stran stejně jako obrázek – 4:3 – `aspect-ratio: 4/3`.
+Pro vykreslení obrázku využívám skvělou službou [Satyr.io](http://satyr.io/). Díky parametru `delay` má obrázek nastaveno zpoždění. Když na něj čekáme, prohlížeč by za normálních okolností vykreslil bílou plochu.
+
+My tam ale chceme ponechat barevný placeholder (zástupný symbol), aby bylo vidět, že na toto místo něco dorazí. K tomu nám poslouží prvek `.box`, který má nastavený poměr stran stejně jako obrázek – 4:3 – `aspect-ratio: 4/3`. Už chápete?
 
 <!-- AdSnippet -->
 
@@ -39,7 +43,7 @@ Toto bylo úplně základní použití. [V textu na web.dev](https://web.dev/asp
 
 ## Podpůrná vlastnost `object-fit` {#object-fit}
 
-Pokud by byl `aspect-ration` člověk, do hospody by pravidelně chodil s vlastnostmi[`object-fit` a `object-position`](css-object-fit-position.md). Je to nerozlučná trojka.
+Pokud by byl `aspect-ratio` člověk, do hospody by pravidelně chodil s vlastnostmi[`object-fit` a `object-position`](css-object-fit-position.md). Chápu je totiž jako nerozlučnou trojka.
 
 <figure>
 <img src="../dist/images/original/css-object-fit.png" alt="">
@@ -48,7 +52,9 @@ Pokud by byl `aspect-ration` člověk, do hospody by pravidelně chodil s vlastn
 </figcaption>
 </figure>
 
-Pro elementy typu obrázky nebo videa, u kterých nevíme, jaký budou mít poměr stran, totiž můžeme držet jednotný prostor a vnitřní prvky následně ořezat nebo nějak napozicovat. Možnosti vlastnosti `object-fit` jsou následující:
+Ve stránce můžeme mít obrázky nebo videa, o kterých víme, že budou mít různý poměr stran. Díky kombinaci `aspect-ratio` s `object-fit` pak můžeme držet jednotný poměr stran a vnitřní prvky následně ořezat nebo nějak napozicovat.
+
+Možnosti vlastnosti `object-fit` jsou následující:
 
 <div class="rwd-scrollable f-6" markdown="1">
 
@@ -62,9 +68,11 @@ Pro elementy typu obrázky nebo videa, u kterých nevíme, jaký budou mít pom�
 
 </div>
 
-## Triky s attr() a důležitost atributů width a height {#attr}
+## Triky s `attr()` a důležitost atributů `width` a `height` {#attr}
 
-Měl bych zmínit, že prohlížeče přidaly `aspect-ratio` do svých výchozích stylů pro překvapivě hodně prvků a to nejen těch, do kterých se stahuje asynchronní obsah.
+Funkce `attr()` umožňuje do CSS deklarace na místo hodnoty vepsat obsah atributu z HTML prvku. Toho využívají prohlížeče při nastavování výchozího poměru stran.
+
+Prohlížeče přidaly `aspect-ratio` do svých výchozích stylů pro překvapivě hodně prvků a to nejen těch, do kterých se stahuje asynchronní obsah.
 
 Toto je například z výchozího stylopisu Firefoxu, alespoň [podle MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio):
 
@@ -74,10 +82,18 @@ img, input[type="image"], video, embed, iframe, marquee, object, table {
 }
 ```
 
-Nastavení poměru stran do atributů `width` a `height` tedy definitivně berme za zásadní.
+Tabulka? `marquee`? Hmmm… Tady se někdo při nastavování výchozích poměrů stran vyřádil…
 
 ## Podpora {#podpora}
 
-Vlastnost `aspect-ratio` podporuje [Chrome od verze 88](https://www.chromestatus.com/feature/5738050678161408). Na ostatní prohlížeče se v době psaní textu čeká, ale dočkáme se velmi brzy, v řádu měsíců. Firefox plánuje podporu [od verze 87](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features#property_aspect-ratio) (nyní mám 85). Safari od Technology Preview [verze 119](https://developer.apple.com/safari/technology-preview/release-notes/), takže se objeví v některém z příštích Safari. Více je na [CanIUse](https://caniuse.com/mdn-css_properties_aspect-ratio).
+Vlastnost `aspect-ratio` podporují všechny moderní prohlížeče:
+
+- Chrome [od verze 88](https://www.chromestatus.com/feature/5738050678161408).
+- Firefox [od verze 89](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/89)
+- Safari [od verze 15](https://developer.apple.com/documentation/safari-release-notes/safari-15-release-notes) 
+
+A co [Explorer](msie.md)? Hm… jděte si dělat legraci jinam.
+
+Více je na [CanIUse.com](https://caniuse.com/mdn-css_properties_aspect-ratio).
 
 <!-- AdSnippet -->
