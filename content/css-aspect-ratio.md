@@ -16,7 +16,7 @@ Jde o techniku, která umožňuje vytvářet kontejnery pro asynchronní obsah a
 
 Metod pro [zajištění poměru stran v CSS](css-pomer-stran.md) máme vcelku hodně, přičemž [zajištění plochy pro obrázky](img-pomer-stran.md) už příliš řešit nemusíme, to za nás rozlouskly prohlížeče, a my jen musíme dodat atributy `width` a `height`.
 
-Pokud jde o další typy obsahu – `iframe` s obsahem třetí strany, videa, vkládané SVG dokumenty, asychronně vykreslený obsah od grafů až po výsledky ajaxových dotazů – asi nejznámější stávající metodou je [padding trik](padding-trik.md).No a vlastnost `aspect-ratio` je tady, aby nahradila právě trik s paddingem.
+Pokud jde o další typy obsahu – `iframe` s obsahem třetí strany, videa, vkládané SVG dokumenty, asychronně vykreslený obsah od grafů až po výsledky ajaxových dotazů – asi nejznámější stávající metodou je [padding trik](padding-trik.md). No a vlastnost `aspect-ratio` je tady, aby nahradila právě trik s paddingem.
 
 Připravil jsem demo s obrázkem, ve kterém to snad půjde dobře vidět:
 
@@ -33,7 +33,7 @@ V HTML je `.box` rodičem obrázku:
 
 Povšimněte si atributů `width` a `height`, které drží poměr stran samotného obrázku.
 
-Pro vykreslení obrázku využívám skvělou službou [Satyr.io](http://satyr.io/). Díky parametru `delay` má obrázek nastaveno zpoždění. Když na něj čekáme, prohlížeč by za normálních okolností vykreslil bílou plochu.
+Pro vykreslení obrázku využívám skvělou službou [Satyr.dev](http://satyr.dev/). Díky parametru `delay` má obrázek nastaveno zpoždění. Když na něj čekáme, prohlížeč by za normálních okolností vykreslil bílou plochu.
 
 My tam ale chceme ponechat barevný placeholder (zástupný symbol), aby bylo vidět, že na toto místo něco dorazí. K tomu nám poslouží prvek `.box`, který má nastavený poměr stran stejně jako obrázek – 4:3 – `aspect-ratio: 4/3`. Už chápete?
 

@@ -56,7 +56,7 @@ Uděláme technický test hypotézy vzešlé ze skicování. Navážeme teď zas
 
 ## Prototyp vybrané varianty
 
-Rychlé demo si vytvoříme na už zmíněném online editoru *CodePen* a použijeme přitom generátor zástupných obrázků *Satyr.io*. Výsledek si prohlédneme v *Re:view*, neméně skvělém nástroji pro komparativní testování návrhů v mobilních rozlišeních.
+Rychlé demo si vytvoříme na už zmíněném online editoru *CodePen* a použijeme přitom generátor zástupných obrázků *Satyr.dev*. Výsledek si prohlédneme v *Re:view*, neméně skvělém nástroji pro komparativní testování návrhů v mobilních rozlišeních.
 
 Aktuální stav prototypu vidíte na obrázku nebo naživo na CodePenu. [cdpn.io/e/JEKxEK](https://codepen.io/machal/pen/JEKxEK).
 
@@ -130,4 +130,4 @@ Jde ovšem pořád jen o mou designérsko-kodérskou hypotézu, kterou bych měl
 A ještě odkazy na dva zde zmíněné nástroje:
 
 - *Re:view* – skvělé rozšíření Google Chrome pro komparativní testování návrhů v mobilních rozlišeních. [re-view.emmet.io/](http://re-view.emmet.io/) 
-- *Satyr.io* – vynikající generátor zástupných obrázků pro vaše prototypy. [satyr.io](http://satyr.io/)
+- *Satyr.dev* – vynikající generátor zástupných obrázků pro vaše prototypy. [satyr.dev](https://satyr.dev/)

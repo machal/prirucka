@@ -126,7 +126,7 @@ Když do HTML kódu obrázku vložíme inline [SVG](svg.md), bude se to chovat p
 ```html
 <img class="aspect-ratio-box__in"
   src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 320 180'%2F%3E"
-  data-src="http://satyr.io/320x180"
+  data-src="https://satyr.dev/320x180"
   width="320" height="180" alt="Image…">
 ```
 
