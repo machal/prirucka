@@ -99,6 +99,8 @@ Není asi od věci zmínit, že nativní líné načtení funguje i pro atributy
   loading="lazy" alt="…">
 ```
 
+CodePen: [cdpn.io/e/YzxYXQX](https://codepen.io/machal/pen/YzxYXQX?editors=1000)
+
 ### Demo pro iframe {#nativni-demo-iframe}
 
 Pro iframe externích dodavatelů je lazyloading snad ještě důležitější než pro obrázky. Jak jsem [upozorňoval na Twitteru](https://twitter.com/machal/status/1160409274834726912), problémem často bývá kromě dat také požírání výkonu zbytečně prováděným JavaScriptem třetí strany.
