@@ -2,6 +2,12 @@
 
 Vlastnost `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
 
+<div class="ebook-only" markdown="1">
+
+Abyste totiž mohli začít vytvářet nějaký typ rozvržení v CSS, musíte většinou nejprve rodičovskému prvku nastavit určitý typ „formátovacícho kontextu“. K tomu právě obvykle slouží vlastnost `display`.
+
+</div>
+
 Vy, kteří znáte její základní hodnoty jako `block` nebo `inline` možná budete překvapení, že od roku 2020 zde máme novou verzi specifikace, která přidává řadu dalších možností – „CSS Display Module Level 3“. [vrdl.in/w3disp](https://www.w3.org/TR/css-display-3/)
 
 Ale víte co? Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich asi znáte.

@@ -1,12 +1,18 @@
 # CSS proměnné (nebo také autorské či volitelné vlastnosti)
 
-Nativní proměnné v CSS jsou fajn. Od [proměnných v preprocesorech](https://www.vzhurudolu.cz/blog/13-css-preprocesory-2#promenne), které asi znáte více, se liší tím, že se počítají přímo v prohlížeči a že jsou dostupné kromě CSS také v JavaScriptu a HTML.
+Nativní proměnné v CSS jsou fajn. Od proměnných v preprocesorech, které možná někteří znáte více, se liší tím, že se počítají přímo v prohlížeči a že jsou dostupné kromě CSS také v JavaScriptu a HTML.
 
-Nemají sice [plnou podporu](https://caniuse.com/#feat=css-variables) – brzdí nás Internet Explorer 11, který může mít kolem [pěti až deseti procent](https://www.vzhurudolu.cz/prirucka/prohlizece) českých uživatelů – ale s použitým šikovných fallbacků je CSS proměnné možné leckde použít.
+Pokud jde o moderní prohlížeče, můžeme říci, že CSS proměnné mají plnou podporu.
+
+<div class="ebook-only" markdown="1">
+
+V knize proměné zhusta používám v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic nebo jen co by se za nehet vešlo, je tady toto moje představení CSS proměnných.
+
+</div>
 
 ## Co je to? {#co}
 
-Základy si ukážeme na jednoduchém příkladu. Definice vypadá následovně:
+Základy si ukážeme na jednoduchém příkladu. Definice proměnné vypadá následovně:
 
 ```css
 html {
@@ -14,7 +20,7 @@ html {
 }
 ```
 
-Rovnou tady trochu nabořím pojmenování „proměnná v CSS“. Tímto způsobem totiž definujeme [Custom Property](https://www.w3.org/TR/css-variables-1/#defining-variables) – volitelnou nebo též autorskou vlastnost. Rovnou to zmiňuji, protože zápis opravdu odpovídá spíše _vlastnosti_, než proměnné.
+Rovnou tady trochu nabořím pojmenování „proměnná v CSS“. Tímto způsobem totiž definujeme _Custom Property_ – volitelnou nebo též autorskou vlastnost. Musím to zmínit. A jak sami vidíte, zápis opravdu odpovídá spíše _vlastnosti_, než proměnné.
 
 Následuje použití vlastnosti už ve formě proměnné pomocí funkce `var()`:
 
@@ -24,23 +30,35 @@ Následuje použití vlastnosti už ve formě proměnné pomocí funkce `var()`:
 }
 ```
 
-Tuhle základní konstrukci si můžete vyzkoušet na CodePenu: [cdpn.io/e/mBOZZK](https://codepen.io/machal/pen/mBOZZK).
+Tuhle základní konstrukci si můžete vyzkoušet v mé ukázce.
 
-<!-- AdSnippet -->
+CodePen: [cdpn.io/e/mBOZZK](https://codepen.io/machal/pen/mBOZZK)
 
-V příkladu jsem definoval něco jako globální proměnnou, prostě ji navázal na nejvyšší prvek DOMu, tedy `<html>`. Občas je v příkladech vidět použití pseudoprvku `:root`. To je to samé jako selektor `html`, jen je [váha (specificita) selektoru](https://www.vzhurudolu.cz/prirucka/css-kaskada#specificita) vyšší, na úrovni třídy. To se může hodit.
+V příkladu jsem definoval něco jako globální proměnnou, prostě ji navázal na nejvyšší prvek DOMu, tedy `<html>`.
+
+Občas je v jiných příkladech vidět použití pseudoprvku `:root`. To je to samé jako selektor `html`, jen je váha (specificita) selektoru vyšší, na úrovni třídy. To se může hodit.
+
+<div class="web-only" markdown="1">
+
+→ *Související: [Kaskáda (a také specificita) v CSS](css-kaskada.md)*
+
+</div>
 
 ## Proč „volitelné vlastnosti“ a ne prostě jen „proměnné“?  {#volitelne-vlastnosti-vs-promenne}
 
-Zastavme se na chvíli u pojmenovávání. [Specifikace](https://www.w3.org/TR/css-variables-1/) definuje „custom property“ (volitelnou vlastnost) a „variable“ (proměnnou) jako dvě odlišné věci.
+Zastavme se ještě na chvíli u pojmenovávání. Specifikace definuje „custom property“ (volitelnou vlastnost) a „variable“ (proměnnou) jako dvě odlišné věci.
 
 _Volitelné vlastnosti_ jsou ty vlastnosti, které nejsou zapsány v CSS specifikaci a mohou si je vymyslet a používat autoři a uživatelé webů. Vypadají jako vlastnosti, ale na začátku mají dvě pomlčky. V příkladu to je `--color: blue`.
 
 _Proměnné_ pak zpřístupňují hodnoty uložené ve volitelných vlastnostech. To je ona konstrukce `var(--color)`, která vrací hodnotu `blue` nebo jinou nastavenou.
 
+<!-- AdSnippet -->
+
 Teoreticky byste tedy v příkladu výše mohli založit novou vlastnost (`--color: blue`), ale ve funkci `var()` ji nepoužít. Mohli byste například hodnotu vlastnosti chtít jen sdílet v HTML nebo JavaScriptu. Pak jistě chápete, že nemůžeme mluvit o CSS proměnné.
 
-Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme používat jako univerzální proměnné. Použití jen možné jen tam, kde vkládáte hodnoty standardních CSS vlastnosti:
+## Limity „autorských vlastností“ (#limity)
+
+Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme používat jako proměnné univerzální. Použití jen možné jen tam, kde vkládáte hodnoty standardních CSS vlastnosti. V Media Queries to například nehrozí:
 
 ```css
 /* Smůlička, následující nefunguje: */
@@ -52,23 +70,61 @@ Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme pou
 --var(jmeno-selektoru) {  }
 ```
 
+Některým to tady opět může začít připadat jako typické CSS: škrábeme se levou nohou za zadním uchem. Je potřeba si uvědomit, že programátorské hlavy mezi námi mají trochu jiné očekávání od slova „proměnná“ než pouhé využití autorem vymyšlené CSS vlastnosti.
+
+Takoví čtenáři budou jistě nadšení chystanou specifikací od autorů CSS, která se jmenuje „CSS Environment Variables“. Zápisem `env()` by pak bylo možné nahradit jakoukoliv část CSS. A to je něco, co, na rozdíl od CSS proměnných, asi opravdu všichni chceme.
+
 ## „CSS proměnné“ versus proměnné z preprocesorů {#css-promenne-vs-preprocesory}
 
-Proč se vlastně zabývat proměnnými v CSS, když už většina z nás používá proměnné v [CSS preprocesorech](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1)?
+Proč se vlastně zabývat autorskými vlastnostmi v CSS, když už většina z nás používá proměnné v CSS preprocesorech jako je Sass?
 
-Protože to jsou dvě odlišné věci. Volitelné vlastnosti z CSS se od preprocesorových proměnných liší takto:
+Protože to jsou dvě odlišné věci. Volitelné vlastnosti z CSS se od preprocesorových proměnných liší následovně:
 
 * jsou dynamické, počítají se až v prohlížeči,
 * můžete k nim přistupovat nebo je číst také z HTML a JS,
-* řídí se [dědičností](css-dedicnost.md), [kaskádou](css-kaskada.md) a dalšími přirozenými vlastnostmi CSS
+* řídí se dědičností, kaskádou a dalšími přirozenými vlastnostmi CSS.
 
 Přinášejí tedy vlastnosti, která preprocesorové proměnné neumí. Na druhou stranu – CSS proměnné nemají jiné vlastnosti, kterými naopak disponují ty preprocesorové. Jak už jsem ukazoval, neumožní vám například vložit proměnnou kamkoliv do CSS kódu. Hlavně u větších projektů se bez CSS preprocesorů stále neobejdete.
 
-Ideální variantou se mi jeví propojit obojí: z preprocesorových proměnných, které užijete i v prohlížeči, generovat volitelné vlastnosti, podobně jako to dělá třeba [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/theming/).
+Ideální variantou se tedy jeví propojit obojí: z preprocesorových proměnných, které užijete i v prohlížeči, generovat volitelné vlastnosti, podobně jako to dělá třeba framework Bootstrap.
 
-## Překvapivá škála možných hodnot
+V preprocesoru Sass definujeme interní proměnné:
 
-Škála možných hodnot je velká:
+```scss
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+) !default;
+```
+
+Ty pak můžeme dát k dispozici do autorských vlastností:
+
+```scss
+:root {
+  --blue: map-get($colors, $blue);
+  --indigo: map-get($colors, $indigo);
+}
+```
+
+Díky zkompilovanému CSS pak budou k dispozici v prohlížeči a tedy také v HTML nebo JS:
+
+```css
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+}
+```
+
+<div class="web-only" markdown="1">
+
+→ *Související: [CSS preprocesory](https://www.vzhurudolu.cz/blog/12-css-preprocesory-1) a [používání proměnných](https://www.vzhurudolu.cz/blog/13-css-preprocesory-2#promenne) v nich.*
+
+</div>
+
+## Překvapivá škála možných hodnot {#hodnoty}
+
+Různorodost možných hodnot je velká:
 
 ```css
 :root {
@@ -92,7 +148,7 @@ Ideální variantou se mi jeví propojit obojí: z preprocesorových proměnnýc
 
 ## Funkce var() {#funkce-var}
 
-Podívejme se teď více na funkci, která umí z volitelné vlastnosti vytáhnout její hodnotu.
+Podívejme se teď více na funkci, která umí z volitelné vlastnosti vytáhnout její hodnotu. Tady už můžeme konečně trochu mluvit o proměnných.
 
 Použití už jste viděli:
 
@@ -107,26 +163,34 @@ Použití už jste viděli:
 Cokoliv je za čárkou, považuje funkce za náhradní řešení pro případ, že první hodnota není definovaná:
 
 ```css
-background: var(--bg-color, black);
-background: var(--bg-color, var(--primary-color));
+.box {
+  background: var(--bg-color, black);
+  background: var(--bg-color, var(--primary-color));
+}
 ```
 
 Je tam samozřejmě možné mít čárek více, ale to jen pro případ, že jako fallback potřebujeme hodnoty oddělené čárkou. Hodí se například pro specifikaci barev v gradientech:
 
 ```css
---box-bg-color: var(--gradient, yellow, orange);
-background: linear-gradient(var(--box-bg-color));
+.box {
+  --box-bg-color: var(--gradient, yellow, orange);
+  background: linear-gradient(var(--box-bg-color));
+}
 ```
 
-Více v příkladu: [cdpn.io/e/eeMqer](https://codepen.io/machal/pen/eeMqer)
+Však si to zkuste naživo v následující ukázce.
+
+CodePen: [cdpn.io/e/eeMqer](https://codepen.io/machal/pen/eeMqer)
 
 ### Co když není proměnná definovaná? {#funkce-var-nedefinovana}
 
 Vezměme tuto hypotetickou situaci:
 
 ```css
-color: blue;
-color: var(--my-color);
+.box {
+  color: blue;
+  color: var(--my-color);
+}  
 ```
 
 Proměnnou  `--my-color` jsme zde zapomněli definovat. Jakou barvu bude text mít?
@@ -142,44 +206,58 @@ Modrou barvu v příkladu ale zobrazí prohlížeč, který proměnné nepodporu
 Pokud bychom chtěli fallback i pro podporující prohlížeče, musíme využít standardního mechanismu fallbacku za čárkou, který funkce `var()` nabízí:
 
 ```css
-color: blue;
-color: var(--my-color, blue);
+.box {
+  color: blue;
+  color: var(--my-color, blue);
+}
 ```
+
+Živá ukázka hned následuje.
 
 CodePen: [cdpn.io/e/XzqyWb](https://codepen.io/machal/pen/XzqyWb)
 
 ### Slučování hodnot a matematika ve funkci var() {#funkce-var-slucovani}
 
-Tady zase opatrně, jste v CSS, nikoliv programovacím jazyce. Nic jako v následujícím příkladu fungovat nebude:
+Programátoři, tady buďte opět opatrní. Jste v CSS, nikoliv programovacím jazyce. Nic jako v následujícím příkladu fungovat nebude:
 
 ```css
---gap: 20;
-/* Smůla, fungovat nebude: */
-margin-top: var(--gap)px;
+.box {
+  --gap: 20;
+  /* Smůla, fungovat nebude: */
+  margin-top: var(--gap)px;
+}
 ```
 
 Výsledkem by byla hodnota s mezerou: `margin-top: 20 px`, které prohlížeč nebude rozumět.
 
-Pro „přetypování“ namísto toho můžete použít funci calc():
+Pro „přetypování“ namísto toho můžete použít [funci `calc()`](css3-calc.md):
 
 ```css
---gap: 20;
-margin-top: calc(var(--gap) * 1px);
+.box {
+  --gap: 20;
+  margin-top: calc(var(--gap) * 1px);
+}
 ```
+
+Já vím… Já vím, co si vy programátoři myslíte. Ale z pohledu CSS má toto logiku. Pořád nezapomínejme, že toto nejsou plnohodnotné proměnné.
 
 Pojďme si ještě ukázat další příklady s funkcí `calc()`. Použít nějakou matematiku je zde možné:
 
 ```css
---gap: 20px;
-margin-top: calc(var(--gap) + 1px); /* 21px */
-margin-top: calc(var(--gap) / 2); /* 10px */
+.box {
+  --gap: 20px;
+  margin-top: calc(var(--gap) + 1px); /* 21px */
+  margin-top: calc(var(--gap) / 2); /* 10px */
+}  
 ```
 
 Psal jsem, že nám slučování hodnot neprojde. Slučování řetězců ale možné je:
 
 ```css
---text-hi: 'Ahoj';
---text-sentence: var(--text-hi)', jsem ráda, že tě vidím!';
+.box {
+  --text-hi: 'Ahoj';
+  --text-sentence: var(--text-hi)', jsem ráda, že tě vidím!';
+}
 ```
 
 ## Sdílení v HTML {#html-sdileni}
@@ -221,7 +299,9 @@ V HTML ji pak změníme:
 </p>
 ```
 
-Oba příklady jsou samozřejmě děsně primitivní. Později ještě ukážu, jak je možné sdílení v HTML prakticky využít. Tady je CodePen obsahující oba zjednodušené scénáře: [cdpn.io/e/OxWvRx](https://codepen.io/machal/pen/OxWvRx).
+Oba příklady jsou samozřejmě děsně primitivní. Později ještě ukážu, jak je možné sdílení v HTML prakticky využít. Tady je CodePen obsahující oba zjednodušené scénáře.
+
+CodePen: [cdpn.io/e/OxWvRx](https://codepen.io/machal/pen/OxWvRx)
 
 ## Sdílení v JavaScriptu {#js-sdileni}
 
@@ -235,7 +315,7 @@ getComputedStyle(element).getPropertyValue("--color");
 element.style.setProperty("--color", "blue");
 ```
 
-Vyzkoušení v CodePenu: [cdpn.io/e/xXgWPw](https://codepen.io/machal/pen/xXgWPw?editors=1111).
+CodePen: [cdpn.io/e/xXgWPw](https://codepen.io/machal/pen/xXgWPw?editors=1111)
 
 V jQuery od verze 3.1 to se „proměnnými“ pracuje stejně jako s běžnými CSS vlastnostmi. Aby ne, když to jsou vlastnosti, jen volitelné.
 
@@ -247,11 +327,15 @@ $('#box1').css('--color');
 $('#box2').css('--color', 'blue');
 ```
 
-CodePen: [cdpn.io/e/LOdPbR](https://codepen.io/machal/pen/LOdPbR?editors=1111).
+Pokud tedy jQuery ještě používáte…
+
+CodePen: [cdpn.io/e/LOdPbR](https://codepen.io/machal/pen/LOdPbR?editors=1111)
 
 ## Podpora a fallbacky {#podpora-fallbacky}
 
-CSS proměnné podporují všechny moderní prohlížeče. Bez podpory jsme například v Opeře Mini a ve všech Internet Explorerech. Jasně, obvyklí podezřelí. Více o podpoře je na webu CanIUse. [https://caniuse.com/css-variables](https://caniuse.com/css-variables).
+CSS proměnné podporují všechny moderní prohlížeče. Bez podpory jsme například v Opeře Mini a ve všech Internet Explorerech. Jasně, obvyklí podezřelí. To vůbec nevadí. Více o podpoře je na webu CanIUse. [caniuse.com/css-variables](https://caniuse.com/css-variables)
+
+<!-- TODO asi uz ne
 
 [Internet Explorer](msie.md) 11 ale mohou v době psaní textu i na vašich webech ještě tvořit významnou část návštěvníků. Následují tedy čtyři možnosti řešení této situace.
 
@@ -287,6 +371,8 @@ Samozřejmě můžete využít i [feature queries – `@supports`](css-supports.
 }
 ```
 
+ -->
+
 Tolik k volitelným vlastnostem a CSS proměnným. Teď už vám můžu nabídnout jen sumarizaci toho nejdůležitějšího.
 
 ## Shrnutí {#shrnuti}
@@ -294,9 +380,12 @@ Tolik k volitelným vlastnostem a CSS proměnným. Teď už vám můžu nabídno
 Pojďme si sesumírovat klady a zápory volitelných vlastností a jejich použití jako proměnných v CSS.
 
 * Plus: Počítají se v prohlížeči a jsou dostupné z CSS, HTML i JS.
-* Minus: Není je možné použít na jakémkoliv místě v kódu jako preprocesorové proměnné.
-* Minus: Nepodporuje je Internet Explorer 11. Ale možnosti, jak si s tím poradit, zde jsou.
+* Minus: Není je možné použít na jakémkoliv místě v kódu jako preprocesorové proměnné. Protože to nejsou proměnné.
 
-Pro [ukázky praktického použití](css-promenne-priklady.md) jděte na další článek.
+<div class="web-only" markdown="1">
+
+Pro [praktického použití proměnných](css-promenne-priklady.md) jděte na další článek.
+
+</div>
 
 <!-- AdSnippet -->
