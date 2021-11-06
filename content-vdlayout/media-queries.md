@@ -251,6 +251,12 @@ Vysvětlení:
 - [`display:flex`](css-display.md) nám zajistí umístění prvků vedle sebe a jejich flexibilitu vycházející z obsahu.
 - V zápisu `flex:1` nebo `flex:2` používám [zkratku `flex`](css-flex.md). V případě, že v ní mám jen jednu hodnotu bez jednotky, říkám tím prohlížeči, aby šířku rozdělil podle uvedených čísel, bez ohledu na skutečnou šířku obsahu prvků. To je přesně to, co zde potřebuji.
 
+<div class="ebook-only" markdown="1">
+
+(Mimochodem, o [vlastnosti `display`](css-display.md) více píšu v poslední, přílohové kapitole.)
+
+</div>
+
 Vy, kteří jste mezitím kódovali vlastní variantu, řekněte mi, dopracovali jste se ke stejnému zápisu?
 
 Vsadím své ošoupané kodérské tenisky, že většina z vás ne. Možných řešení je dlouhá řada a určitě zde jsou i řešení lepší než to moje. Já se zde snažil hlavně o jednoduchost zápisu proto, abychom si mohli ukázat to, co nám zde chybí.

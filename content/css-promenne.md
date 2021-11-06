@@ -6,7 +6,7 @@ Pokud jde o moderní prohlížeče, můžeme říci, že CSS proměnné mají pl
 
 <div class="ebook-only" markdown="1">
 
-V knize proměné zhusta používám v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic nebo jen co by se za nehet vešlo, je tady toto moje představení CSS proměnných.
+V knize proměnné zhusta používám v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic nebo jen co by se za nehet vešlo, je tady toto moje jejich představení.
 
 </div>
 

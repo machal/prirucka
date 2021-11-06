@@ -6,17 +6,23 @@ Logické vlastnosti a rozměry (podle specifikace „CSS Logical Properties and 
 
 Například namísto fyzického `margin-left:1rem` napíšete `margin-inline-start:1rem`. Bude to pak univerzální pro češtinu, arabštinu i japonštinu. Pokaždé se totiž vnější okraj vykreslí na jiné straně.
 
+<div class="ebook-only" markdown="1">
+
+CSS Logical Properties velmi souvisí se změnou směru layoutu pro různé směry toku dokumentu. V knížce o CSS layoutech tedy mají své místo, i když uznávám, že jejich využití v praxi je relativně omezené.
+
+</div>
+
 <!-- AdSnippet -->
 
 V CSS to je relativní novinka, ale má to vcelku dobrou podporu v prohlížečích.
 
-Bude to pro vás naprosto zásadní, pokud pracujete s různými jazyky. Vám ostatním to pomůže spíše drobně,  např. v tom že zde máme nové užitečné zkratky vlastností jako `margin-inline` a `padding-block`.
+Bude to pro vás naprosto zásadní, pokud pracujete s různými jazyky. Vám ostatním Logical Properties pomohou spíše drobně,  např. v tom že zde máme nové užitečné zkratky vlastností jako `margin-inline` a `padding-block`.
 
-Všechno se ale dozvíte v článku, pojďme to teď rozebrat dopodobrna.
+Všechno se ale dozvíte v článku, pojďme to teď rozebrat dopodobrona.
 
 ## Příklad s arabštinou {#priklad-arabstina}
 
-Arabština má, jak známo, opačný tok dokumentu než evropské jazyky – čte se zprava doleva.
+Arabština má, jak známo, opačný tok textu než evropské jazyky – čte se zprava doleva.
 
 Vezměme, že máme jednoduchý příklad, který vidíte na obrázku. Nadpis, obrázek a text, který jej obtéká. Na polovině stránky je to česky, na polovině arabsky.
 
@@ -29,7 +35,7 @@ Vezměme, že máme jednoduchý příklad, který vidíte na obrázku. Nadpis, o
 
 Arabská polovina textu je v HTML označená atributem s hodnotou `dir="rtl"`. To znamená, že v tomto místě má tok dokumentu směr zprava doleva. (`rtl` jako „Right To Left“).
 
-To by ale na rozvržení nemělo žádný dopad, pokud bychom použili klasické fyzické hodnoty jako `float:left` nebo `margin-right`.
+To by ale na rozvržení nemělo žádný dopad, pokud bychom použili klasické fyzické hodnoty jako `float:left` nebo `margin-right:1rem`.
 
 My ovšem pro sazbu textu a vložení obrázku sáhneme po logických vlastnostech a hodnotách:
 
@@ -85,13 +91,15 @@ Asi si to umíte představit podle [vlastnosti `display`](css-display.md), kter�
 
 Možná není úplně jasné, proč se nepoužívají hodnoty z reálného světa – osa horizontální a osa vertikální, případně vodorovná a příčná? Důvod je v obecnosti.
 
-Pokud chceme CSS stavět tak, aby umělo pracovat s různými světovými jazyky, je nutné vyjadřovat se v obecných pojmech nikoliv v pojmech které reflektují například jen jazyky vycházející z latiny.
+Pokud od CSS chceme, aby umělo pracovat s různými světovými jazyky, je nutné, aby se umělo vyjadřovat v obecných pojmech, nikoliv v pojmech které reflektují například jen jazyky vycházející z latiny.
 
 ## Směr toku dokumentu versus směr layoutu {#smer-layoutu}
 
 Pojmy jako řádková osa a bloková osa můžete znát z nových layoutový modulů jako je [grid](css-grid.md). Směr toku dokumentu je ale něco jiného než směr layoutu.
 
-Tím jak je CSS stále obecnější mohou některé pojmy splývat a za měňovat se. Já sám jsem se napálil právě u řádkové a blokové osy, když jsem se domníval, že je možné změnit osu toku dokumentu změnou toku layoutu:
+Díky tomu, že je CSS stále obecnější, mohou některé pojmy splývat a zaměňovat se.
+
+Já sám jsem se napálil právě u řádkové a blokové osy, když jsem se domníval, že je možné změnit osu toku dokumentu pro konkrétní komponenty změnou toku layoutu:
 
 ```css
 /* Změní to směr toku dokumentu? */
@@ -100,7 +108,7 @@ Tím jak je CSS stále obecnější mohou některé pojmy splývat a za měňova
 }
 ```
 
-Prdlajs. Takhle to nefunguje. To, co změní [vlastnost `flex-direction`](css-flex-direction.md) nebo třeba [`grid-auto-flow`](css-grid-auto-flow.md) je směr rozvržení, nikoliv směr toku dokumentu.
+Ale prdlajs. Takhle to nefunguje. To, co změní [vlastnost `flex-direction`](css-flex-direction.md) nebo třeba [`grid-auto-flow`](css-grid-auto-flow.md) je směr rozvržení, nikoliv směr toku dokumentu.
 
 Směr toku dokumentu mění pouze tyto vlastnosti:
 
@@ -108,9 +116,7 @@ Směr toku dokumentu mění pouze tyto vlastnosti:
 - `direction` – (nebo atribut `dir` v HTML) určí směr sázení na inline ose. Možnosti `ltr` nebo `rtl`.
 - `text-orientation` – mění orientaci textu sázeného svisle.
 
-V praxi se to pak projevuje následovně.
-
-Vezměme, že máme flexový kontejner a v něm několik položek. Každá z nich má tuto deklaraci:
+V praxi se to pak projevuje následovně: Vezměme, že máme flexový kontejner a v něm několik položek. Každá z nich má tuto deklaraci:
 
 ```css
 .container p {
@@ -126,7 +132,7 @@ Ano, manipulujeme tady s vlastnostmi prvku na blokové osy, tedy v případě s�
 
 V případě, že směr rozvržení změníme z vodorovného (`flex-direction:row`) na svislý (`flex-direction:column`), zelené okraje položek zůstávají umístěné ve svislém směru.
 
-Změnil se směr layoutu, ale ten směr toku dokumentu.
+Změnil se směr layoutu, ale ne směr toku dokumentu.
 
 Pozice blokových vlastností se mění až se směrem toku dokumentu, tedy zapojením deklarace `writing-mode:vertical-rl`.
 
@@ -145,11 +151,11 @@ Podobné to bude u vlastnosti `grid-auto-flow`, která dokáže změnit směr ro
 
 CodePen: [cdpn.io/e/jOwQzxx](https://codepen.io/machal/pen/jOwQzxx?editors=1100)
 
+## Konkrétní logické vlastnosti a hodnoty {#vlastnosti-hodnoty}
+
 V další části textu už následuje jen výčet nových logických vlastností a hodnot, které jsou adekvátní fyzickým vlastnostem.
 
 Než je začnete používat, dobře si to otestujte v různých prohlížečích.
-
-## Konkrétní logické vlastnosti a hodnoty {#vlastnosti-hodnoty}
 
 ### Box model {#vlastnosti-hodnoty-box}
 
@@ -269,6 +275,8 @@ Tohle může být zajímavé, ale zatím to v prohlížečích nemá podporu. Kd
 
 Takto to má fungovat pro následující vlastnosti: `inset`, `margin`, `padding`, `border-width`, `border-style`, `border-color`, `scroll-padding`, `scroll-margin`. Až to bude fungovat v prohlížečích…
 
+Jen připomínám, že logický směr je pro různé jazyky různý.
+
 ### Hodnoty pro vlastnosti {#vlastnosti-hodnoty-hodnoty}
 
 Jak je z článku už asi zřejmé, logické alternativy nemusejí mít jen vlastnosti, ale také jejich hodnoty:
@@ -292,16 +300,8 @@ Vlastnost `resize` zase bude moci nabývat hodnot `block` a `inline`.
 
 ## Podpora v prohlížečích {#podpora}
 
-V době psaní článku (konec září 2021) můžu konstatovat, že podpora je široká, ale chaoticky distribuovaná.
+V době psaní aktualizace tohoto textu (listopad 2021) můžu konstatovat, že podpora CSS Logical Properties je v moderních prohlížečích plná.
 
-Ty nejdůležitější části specifikace CSS Logical Properties and Values podporují všechny moderní prohlížeče, kam samozřejmě nepočítám [Internet Explorer](msie.md).
-
-Pokud se zaměříme na celou specifikaci, jsou zde drobné výjimky:
-
-- Safari 14.1 desktop + 14.7 iOS (nyní aktuální): Nepodporuje logické vlastnosti `border-start-start-radius`, `border-start-end-radius`, `border-end-start-radius` a `border-end-end-radius`.
-- Safari 14 desktop + Safari 14.4 iOS + Samsung Internet 14: Nepodporují vlastnosti `padding-block`, `padding-inline` a žádnou vlastnost s  `inset` v názvu.
-- Chrome nepodporuje logické hodnoty ve vlastnostech `float` a `clear`.
-
-Bohužel jsem neměl čas (a vlastně ani chuť) detailně testovat každou vlastnost a její hodnotu. Ale bude toho víc. Takže vám můžu jen poradit, ať pořádně testujete a sleduje aktuální stav na webu CanIUse. [caniuse.com/css-logical-props](https://caniuse.com/css-logical-props)
+Více na CanIUse. [caniuse.com/css-logical-props](https://caniuse.com/css-logical-props)
 
 <!-- AdSnippet -->

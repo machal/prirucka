@@ -1,66 +1,126 @@
 # Funkce calc()
 
-Funkce, která umožňuje vložit matematický výraz namísto hodnoty vlastnosti.
+Funkce `calc()` v CSS umožňuje vložit matematický výraz namísto hodnoty vlastnosti.
 
-Je velmi dobře podporovaná, ale málo se o ní ví. Je užitečná, i když se to občas zpochybňuje. Pojďme to napravit. Nejprve si ukažme dvě jednoduchá využití:
+Je velmi dobře podporovaná. Je užitečná. Je škoda, že ji kodérky a kodéři nepoužívají častěji. Pojďme to zkusit zlepšit. Nejprve si ukažme dvě jednoduchá využití:
 
 ```css
-.el {
+.box {
   width: calc(100% / 3);
+}
+```
+
+Rozdělení šířky na tři díly byste asi zvládli i bez kalkulačky, ale výhoda zápisu s `calc()` je v tom, že nedojde k zaokrouhlení z vaší strany.
+
+```css
+.box {
   margin-bottom: calc(1em - 2px); 
 }
 ```
 
-## Není to stejné jako matematika v preprocesorech?
+Něco takového je použitelné velmi často. Například když z odsazení nebo šířky elementu potřebujete odečíst šířku rámečku (`border`).
 
-Není. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím, než prohlížeč stránku vidí:
+<div class="ebook-only" markdown="1">
 
-```sass
-width: (100% / 3)
-// › width: 33.33333333%
+Funkce `calc()` je samozřejmě velmi dobře použitelná právě v různých layoutech CSS. Proto má své místo i v poslední kapitole této knihy.
+
+</div>
+
+## Není to stejné jako matematika v preprocesorech? {#preprocesory}
+
+Prosím nezaměňujte `calc()` s výpočty v CSS preprocesorech jako je Sass. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím, než prohlížeč stránku vidí:
+
+```scss
+.box {
+  width: (100% / 3)
+  // › width: 33.33333333%
+}
 ```
 
 Jenže preprocesoru dochází dech v momentě, kdy potřebuji kombinovat více jednotek. Vezměme příklad třísloupcového rozvržení s vnějším okrajem o šířce `1em`:
 
 ```css
-width: calc(100% / 3 - (2 * 1em))
+.box {
+  width: calc(100% / 3 - (2 * 1em))
+}
 ```
+
+Tady je vidět síla funkce `calc()`. Počítá se v prohlížeči a jedině prohlížeč zná konkrétní hodnoty, které zastupují jednotky jako je `em`.
+
+<!-- AdSnippet -->
 
 Že se vám to někdy hodilo? Že to obcházíte podivnými hacky? Vítejte v klubu!
 
-## Podpora v prohlížečích
+## Příklady použití {#priklady}
 
-Funkci `calc()` nepodporuje hlavně Internet Explorer 8, jeho starší sourozenci a ani Android Browser. V době psaní textu mohou u průměrného českého webu tvořit maximálně něco kolem 3–4 % návštěvnosti.
+Pojďme si teď více ukázat možnosti praktického využití na vašich projektech.
 
-Pokud funkci používáte, myslete na tyto uživatele, a pokud je to potřeba, poskytněte jim alternativu v podobě definovaného fallbacku. Může vypadat mírně jinak. Je to lepší, než když se ve starém prohlížeči rozpadnou důležité věci.
+### 1) Ukaž matiku! {#priklady-1}
 
-### Definovaný fallback
-
-```css
-/* IE8 a spol: */
-width: 30%;
-/* Moderní prohlížeče: */
-width: calc(100% / 3 - (2 * 1em));
-```
-
-A prosím pěkně: pozor na chyby v některých nechvalně známých prohlížečích. Na této stránce doporučuji kliknout na „Known issues“ a hledat „crash“: [caniuse.com/calc](https://caniuse.com/calc).
-
-
-### Polyfill
-
-Vždycky říkám, že používání polyfillu na zásadní věci týkající se layoutu je dost nebezpečné. Myslete na situaci, kdy selže Javascript. Myslete na vykreslovací výkon. Myslete na svoje nervy. 
-
-Pokud je i tak použití `calc` ve starých prohlížečích nezbytné, z polyfillů vezměte tento: [github.com/closingtag/calc-polyfill](https://github.com/closingtag/calc-polyfill).
-
-### Detekce vlastnosti
-
-Knihovna Modernizr umí funkci detekovat, takže směle do toho:
+Nejprve si více rozebereme příklad podobný tomu v úvodu:
 
 ```css
-.no-csscalc .el {
-  /* IE8 a spol: */
-}
-.csscalc .el {
-  /* Moderní prohlížeče: */
+.box {
+  width: calc(100% / 7);
 }
 ```
+
+Proč nenapsat rovnou `width: 14.2857`? Ze dvou důvodů:
+
+1. *Čitelnost kódu.* Vsaďte se, že na původ čísla 14,2857 zapomenete. Nejpozději za týden. Správa této části kódu pro vás pak bude znamenat kladení otázek „jak jsem k tomu číslu došel?“. Vždy je lepší zapsat výpočet než výsledek.
+2. *Zaokrouhlování.* V celé kráse vypadá takto: 14,285714286. Kodéři občas podlehnou pokušení a desetinná místa zaokrouhlí. A pak se diví, že se jim v nějakém konkrétním rozlišení a prohlížeči rozpadlo rozvržení stránky. Nebuďte takoví kodéři. Nezaokrouhlujte.
+
+### 2) Responzivní obrázky {#priklady-2}
+
+V parametru `sizes` značky `<img>` se bez `calc()` nedá obejít. Zkuste si bez téhle prima funkce spočítat šířku obrázku uvnitř layoutu, který v responzivním layoutu splňuje následující podmínky:
+
+1. Na větších displejích zabírá polovinu šířky layoutu stránky. Ale bez vnějších okrajů layoutu (10 pixelů) a samotné stránky (15 pixelů).
+2. Na menších zabírá celou šířku viewportu bez vnějších okrajů stránky (15 pixelů).
+
+```html
+<img
+  sizes="calc((100vw - 2 * 15px) / 2) - 10px), 
+         calc(100vw - 2 * 15px)"   
+>
+```
+
+Uznávám, že už je to vypadá docela složitě. Ale bez `calc()` byste layout stránky pro potřebu responzivních obrázků nedokázali popsat.
+
+<!-- AdSnippet -->
+
+(Pro zájemce: více o atributu `sizes` najdete na Vzhůru dolů. [vrdl.cz/p/srcset-sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes))
+
+## 3) Barevný přechod se stabilně širokou částí {#priklady-2}
+
+Vezměme gradient, jehož část chceme definovat stabilní šířkou a ostatní části už standardně podílem z celku.
+
+Více řekne obrázek. Černá část bude mít stabilní šířku. Bílá plocha se zmenšuje a zvětšuje podle dostupného místa.
+
+![CSS funkce calc() na gradientu](../dist/images/original/css3-calc-gradient.jpg)
+
+Takto vypadá kód:
+
+```css
+div {
+  background: 
+    linear-gradient(to right bottom, 
+      transparent calc(50% - 2em), 
+      #000 0, 
+      #000 calc(50% + 2em), 
+      transparent 0);
+}
+```
+
+Následuje živá ukázka z pera Any Tudor.
+
+CodePen: [cdpn.io/e/YyGPJo](https://codepen.io/thebabydino/pen/YyGPJo).
+
+Ne všechno, co se třpytí, je `calc()`. Pojďme se teď podívat na příklady užití, které doporučují různé články na webu a které je lepší řešit jinak.
+
+## Podpora v prohlížečích {#podpora}
+
+Funkci `calc()` podporují všechny moderní prohlížeče.
+
+Na CanIUse si můžete přečíst, v jakých situacích tuto užitečnou funkci nepodporuje [Internet Explorer 11](msie.md). Pochybuji, že by se vám doho chtělo. Je to dlouhý seznam. [caniuse.com/calc](https://caniuse.com/calc)
+
+<!-- AdSnippet -->

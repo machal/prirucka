@@ -168,6 +168,12 @@ CodePen: [cdpn.io/e/KKqqqpJ](https://codepen.io/machal/pen/KKqqqpJ?editors=1100)
 
 A k čemu, že se funkce `calc()` může hodit? Příkladem budiž odpočítání šířky rámečků (`border`) buňek layoutu z celkové šířky mezery.
 
+<div class="ebook-only" markdown="1">
+
+Neznáte [funkci `calc()`](css3-calc.md)? Podívejte se na speciální zmínku v poslední kapitole této knihy.
+
+</div>
+
 ### Klíčové slovo `normal` {#hodnoty-normal}
 
 Šup s tím hned do vody, tedy do ukázky kódu:

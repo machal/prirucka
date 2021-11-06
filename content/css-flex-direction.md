@@ -56,7 +56,7 @@ Také u této vlastnosti můžete použít [zkratku `flex-flow`](css-flex-flow.m
 
 Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v japonštině shora dolů. Jak jsem [psal jinde](css-flexbox-dobre-vedet.md), záleží to také na nastavení vlastností `writing-mode` a `direction`.
 
-O směru psaní dokumentu a tvorbě layoutu pro jazyky sázené v jiných směrech píšu více v textu o [logických vlastnostech a hodnotách v CSS](css-logical.md).
+O směru psaní dokumentu a tvorbě layoutu pro jazyky sázené v jiných směrech píšu více v textu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách.
 
 <!-- AdSnippet -->
 
