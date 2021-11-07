@@ -55,7 +55,7 @@ Skládá se ze dvou kroků. První je definování kontejneru:
 }
 ```
 
-[Vlastnost `contain`](css-contain.md), které píšu v poslední kapitole, není v CSS nová. Definuje zapouzdření určité části stránky. Prohlížeči dáváme nápovědu, které části (komponenty) jsou izolovatelné od zbytku tak, aby nemusel překreslovat celou stránku a šetřil výkon.
+Vlastnost `contain` není v CSS nová. Definuje zapouzdření určité části stránky. Prohlížeči dáváme nápovědu, které části (komponenty) jsou izolovatelné od zbytku tak, aby nemusel překreslovat celou stránku a šetřil výkon.
 
 Hodnota `layout` udává „zapouzdření pro rozvržení“. Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují.
 

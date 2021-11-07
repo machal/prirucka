@@ -1,8 +1,14 @@
 # Autoprefixer
 
-Autoprefixer je, jak z názvu vyplývá, automatizační nástroj, který přidává [prohlížečové prefixy](prefix.md) do CSS kódu.
+Autoprefixer je, jak z názvu vyplývá, automatizační nástroj, který přidává prohlížečové prefixy do CSS kódu.
 
-Například z následujícího kódu…
+<div class="ebook-only" markdown="1">
+
+V knížce se o něj celou dobu otíráme, takže se mu konečně pojďme věnovat.
+
+</div>
+
+Autoprefixer například z následujícího kódu…
 
 ```css
 .box {
@@ -29,21 +35,37 @@ Tím pádem budou kódu rozumět všechny prohlížeče, i když vlastnost `hyph
 </figcaption>
 </figure>
 
+<div class="web-only" markdown="1">
+
+→ *Co jsou [prohlížečové prefixy](prefix.md)?*
+
+</div>
+
 ## Jak Autoprefixer funguje? {#jak-funguje}
 
-Autoprefixer je balíček, který si můžete do projektu nainstalovat jako plugin pro PostCSS.
-
-Nástroj [PostCSS](postcss.md) slouží k jakémukoliv automatickému zpracovávání CSS kódu.
+Autoprefixer je balíček, který si můžete do projektu nainstalovat jako plugin pro PostCSS, což je nástroj, který slouží k jakémukoliv automatickému zpracovávání CSS kódu.
 
 <!-- AdSnippet -->
 
 Používat Autoprefixer můžete mnoha různými způsoby, o těch bude další část textu. Nejprve ale k nastavení.
 
+<div class="web-only" markdown="1">
+
+→ *Nástroj [PostCSS](postcss.md)?*
+
+</div>
+
 ## Nastavení pomocí Browserlist {#browserlist}
 
-Browserlist je způsob, jak Autoprefixeru a podobným nástrojům (jako Babel pro JavaScript) určit, které prohlížeče na projektu podporujete.
+Browserlist je způsob, jak Autoprefixeru a podobným nástrojům (jako je například Babel pro zpracování JavaScriptu) určit, které prohlížeče na projektu podporujete.
 
-Nejlepším způsobem, jak poskytnou toto nastavení, je soubor `.browserslistrc` v kořenovém adresáři projektu. Alternativně můžete přidat klíč `browserslist` do [souboru `package.json`](package-json.md) nebo přímo v nastavení Autoprefixeru.
+Nejlepším způsobem, jak poskytnou toto nastavení, je soubor `.browserslistrc` v kořenovém adresáři projektu. Alternativně můžete přidat klíč `browserslist` do souboru `package.json` nebo přímo v nastavení Autoprefixeru.
+
+<div class="web-only" markdown="1">
+
+→ *Soubor [`package.json`](package-json.md)?*
+
+</div>
 
 Výchozí nastavení vypadá asi takto:
 
