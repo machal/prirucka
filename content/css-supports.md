@@ -8,18 +8,19 @@ S pomocí `@supports` je možné psát „feature queries“, dotazy na vlastnos
 
 ```css
 @supports (grid-template-rows: masonry) {
-  /* Kód pro prohlížeče, které 
-     podporují grid-template-rows:masonry */
+  .text {
+    color: green;
+  }
 }
 ```
 
-Pokud se na ukázku podíváte v prohlížečích, které podporují vlastnost `grid-template-rows` a zároveň její hodnotu `masonry`, což je v březnu 2021 zatím jen Firefox Nightly, uvidíte zelený text.
+Pokud se na ukázku podíváte v prohlížečích, které podporují vlastnost `grid-template-rows` a zároveň její hodnotu `masonry`, což je i koncem roku 2021 zatím jen Firefox Nightly, uvidíte zelený text.
 
 Ve všech ostatních prohlížečích bude text černý.
 
 CodePen: [cdpn.io/e/NWbLRKv](https://codepen.io/machal/pen/NWbLRKv?editors=1100)
 
-Všimněte si důležité věci – pro detekování podpory musíme dotazovat na vlastnost i její hodnotu. Takže pokud bychom se ptali na podporu vlastnosti `display`, musíme se zeptat například na `display:block`.
+Všimněte si důležité věci – pro detekování podpory se musíme dotazovat na vlastnost i její hodnotu. Takže pokud bychom se ptali na podporu vlastnosti `display`, musíme se zeptat například na `display:block`.
 
 ## Logické operátory: `not`, `and` a `or` {#operatory}
 
@@ -45,7 +46,9 @@ Logický operátor konjunkce – `and`:
 
 ```css
 @supports (display: table-cell) and (display: list-item) {
-  /* CSS kód */
+  .text {
+    color: green;
+  }
 }
 ```
 
@@ -58,7 +61,9 @@ Další operátor – `or` – definuje logickou disjunkci:
 ```css
 @supports (transform-style: preserve) or 
   (-moz-transform-style: preserve) {
-  /* CSS kód */
+  .text {
+    color: green;
+  }
 }
 ```
 
@@ -96,24 +101,24 @@ Tento zápis ale validní je:
 }
 ```
 
-Aby nedošlo k záměně mezi `and` a `or`, syntaxe je specifikována tak, aby byly výslovně psány jako `and` nebo `or`. Asi víte proč. Autoři specifikace se poučili z nejasného použití čárky namísto `or` v dotazech na media, Media Queries. [vrdl.cz/p/css3-media-queries](css3-media-queries.md)
+Aby nedošlo k záměně mezi `and` a `or`, syntaxe je specifikována tak, aby byly výslovně psány jako `and` nebo `or`.
 
 ## Prohlížečové prefixy {#prefixy}
 
 Dalším překvapením může být nutnost používat všechny prefixové vlastnosti. Pokud máte v cílové skupiny uživatele prohlížečů, které vlastnost podporují jen s použitím prefixů, musíte je uvést všechny:
 
 ```css
-@supports (box-shadow: 0 0 2px black inset) or
+@supports ((box-shadow: 0 0 2px black inset) or
   (-moz-box-shadow: 0 0 2px black inset) or
   (-webkit-box-shadow: 0 0 2px black inset) or
-  (-o-box-shadow: 0 0 2px black inset) {
-  /* Kód pro všechny prohlížeče podporující box-shadow */
+  (-o-box-shadow: 0 0 2px black inset)) {
+  /* Kód pro všechny prohlížeče podporující box-shadow, včetně už historických */
 }
 ```
 
 Příklad mám ze specifikace. Dneska už byste prefixy k `box-shadow` nepotřebovali, takže tím kromě jiného ilustruji, že prefixy je potřeba uvádět jen tehdy, pokud byste je psali i v běžném CSS kódu.
 
-Nejlepší je ale starost o prefixy přenechat automatizaci, konkrétně nástroji Autoprefixer. [github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
+Nejlepší je ale starost o prefixy přenechat automatizaci, konkrétně nástroji [Autoprefixer](autoprefixer.md). 
 
 ## Detekce podpory selektorů {#selektory}
 
@@ -125,15 +130,11 @@ Některé moderní prohlížeče umožňují detekovat také podporu určitých 
 }
 ```
 
-Poněkud blbé ale je, že tuto funkci nepodporuje Safari, alespoň ne v březnu 2021.
-
-Museli bychom se tak dotazovat na podporu funkce `selector()`, kterou bychom se dotazovali na podporu konkrétního typu selektoru. Trochu _inception_.
-
-Funkce `selector()` je ale součástí až nové verze specifikace modulu „CSS Conditional Rules“, takže se budeme tvářit, že se nepodpoře ze strany Safari zatím nedivíme.
+Funkce `selector()` je součástí nové verze specifikace modulu „CSS Conditional Rules“ a podporují ji všechny moderní prohlížeče.
 
 <!-- AdSnippet -->
 
-Řešení pro podporu detekce už dříve hledalo více autorů, pomocí různých hacků. Zajímavý je například tento, který se dotazuje na podporu pseudotřídy `:placeholder-shown`:
+Řešení pro podporu detekce selektorů už dříve hledalo více autorů, pomocí různých hacků. Zajímavý je například tento, který se dotazuje na podporu pseudotřídy `:placeholder-shown`:
 
 ```css
 .foo { color: red }
@@ -171,7 +172,7 @@ Ti z vás, které jsem ještě neunavil detailním líčením, si možná všiml
 
 ## CSS hacky a progressive enhancement {#hacky}
 
-Udělejme si teď pro zajímavost historickou výpravu. `@supports` totiž navazuje na silnou tradici „CSS hacků“, kterou jsme zažili zhruba v první dekádě dvacátého prvního století.
+Udělejme si teď pro zajímavost historickou výpravu. `@supports` totiž navazuje na silnou epochu „CSS hacků“, kterou jsme k všeobecné nelibosti prožívali zhruba v první dekádě dvacátého prvního století.
 
 Tehdy nebylo možné v CSS podporu vlastností detekovat, proto kodérky a kodéři hledali chyby v prohlížečích při implementaci CSS pravidel. Takový zápis, který funguje v určitých prohlížečích a v jiných naopak ne.
 
@@ -198,7 +199,7 @@ CSS hacky a dnes `@supports` jsou důležitou částí zásadní webařské tech
 1. Vyrobíte základní řešení fungující ve všech prohlížečích.
 2. Nad tím postavíte lepší řešení fungující jen v některých prohlížečích.
 
-Mezi jednotlivými řešeními je detekce vlastností (nikoliv prohlížeče!), například právě pomocí `@supports`.
+Mezi jednotlivými řešeními je detekce vlastností (nikoliv prohlížeče!), například právě pomocí dotazu `@supports`.
 
 Výsledkem je, že nějaké řešení máte pro nejširší možnou skupinu zařízení. Pro web ideální.
 
@@ -210,8 +211,7 @@ Pokud si totiž prohlížeč „myslí“, že vlastnost umí, vrátí na dotaz 
 
 Dalším omezením je samotná podpora vlastnosti, v tomto případě ale záleží na použití:
 
-- `@supports` nepodporuje žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
-- Funkci `selector()` kromě IE nepodporuje žádné Safari a některé další menší mobilní prohlížeče. [caniuse.com/mdn-css_at-rules_supports_selector](https://caniuse.com/mdn-css_at-rules_supports_selector)
+`@supports` nepodporuje žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
 
 Je ovšem otázka, jak moc vadí nepodpora v Internet Exploreru. Mě nevadí. Hned vám řeknu proč.
 
@@ -278,14 +278,16 @@ Na pohled to bude vypadat stejně. Takhle jednoduchý kód se samozřejmě nevyp
 </figcaption>
 </figure>
 
-Tady nastává moment, po kterém jsme v demíčku šli. IE nejen že nezná `display:grid` a zároveň nezná `@supports`, takže tento blok kódu vynechá ze zpracování. A to je dobře.
+Tady nastává moment, pro který jsme si v demíčku šli. IE nejen že nezná `display:grid` a zároveň nezná `@supports`, takže tento blok kódu vynechá ze zpracování. A to je dobře.
 
 CodePen: [cdpn.io/e/MWbqeMG](https://codepen.io/machal/pen/MWbqeMG?editors=1100)
 
-V CodePenu navíc uvidíte v prohlížečích, podporujících grid, zelené písmo. V ostatních je to červeně. 
-
-<div class="web-only" markdown="1">
-A to je, prosím pěkně, úplně vše, co jsem vám chtěl říct. Máte-li po ruce zajímavou ukázku využití `@supports`, neváhejte mě ji svěřit do komentářů.
-</div>
+V CodePenu uvidíte v prohlížečích, podporujících grid, zelené písmo. V ostatních je to červeně.
 
 <!-- AdSnippet -->
+
+<div class="web-only" markdown="1">
+
+A to je, prosím pěkně, úplně vše, co jsem vám chtěl říct. Máte-li po ruce zajímavou ukázku využití `@supports`, neváhejte mě ji svěřit do komentářů.
+
+</div>

@@ -1,8 +1,6 @@
 # Porovnávací funkce v CSS: min(), max() a clamp()
 
-Logické porovnávací funkce jsou součástí čtvrté verze specifikace [CSS Values and Units Module](https://www.w3.org/TR/css-values-4/#comp-func), podporují je všechny moderní prohlížeče a ještě k tomu jsou užitečné.
-
-Umožňují porovnat dvě a více hodnoty:
+Funkce, které se uvádějí namísto hodnot v deklaracích stylů, umožňují porovnat dvě a více hodnoty:
 
 |   Funkce     |   Význam     |
 |--------------|--------------|
@@ -10,7 +8,17 @@ Umožňují porovnat dvě a více hodnoty:
 | `max()`      |  Vrací největší hodnotu z argumentů oddělených čárkou. <br> Např. `max(50%, 10vw, 200px)`. |
 | `clamp()`    |  Vrací prostřední hodnotu, pokud není menší než první a větší než třetí. <br> Např. `clamp(100px, 20%, 200px)`. |
 
-Tyto nové funkce v CSS nám prakticky umožní lépe řídit velikost prvků, dodržovat správné mezery mezi prvky nebo třeba implementovat plynulou („fluidní“) typografii.
+Jsou součástí čtvrté verze specifikace „CSS Values and Units Module“, podporují je všechny moderní prohlížeče a ještě k tomu jsou užitečné.
+
+Funkce `min()`, `max()` a `clamp()` v CSS nám prakticky umožní lépe řídit velikost prvků, dodržovat správné mezery mezi prvky nebo třeba implementovat plynulou („fluidní“) typografii.
+
+<div class="ebook-only" markdown="1">
+
+Mají samozřejmě své místo i v této knize. Používám je například pro [řešení svatého grálu](priklad-holy-grail.md) mezi layouty nebo při vysvětlování [krkavčí techniky](krkavci-technika.md).
+
+</div>
+
+Jak fungují?
 
 ## Funkce `min()` a `max()` {#min-max}
 
@@ -30,7 +38,7 @@ Příklad:
 
 Šířka `.box-1` bude určena tím menším přepočtem na pixely z obou hodnot.
 
-V dostatečně širokém rodičovském prvku to bude většinou `100px`, ale v opravdu malých šířkách se může použít `50%`, protože vypočtená hodnota bude menší než `100px`.
+V dostatečně širokém rodičovském prvku to bude většinou `100px`, ale v opravdu malých šířkách se může použít `50%`, protože vypočtená hodnota šířky bude menší než `100px`.
 
 <!-- AdSnippet -->
 
@@ -42,7 +50,7 @@ Zkusme si představit totéž pro funkci `max()`:
 }
 ```
 
-Šířka `.box-1` bude určena větší pixelovou hodnotou vypočtenou z obou atributů. Jak asi sami tušíte, většinou se použije hodnota `50%` a jen na opravdu malých rozlišeních.
+Šířka `.box-1` bude určena větší pixelovou hodnotou vypočtenou z obou atributů. Jak asi sami tušíte, většinou se použije hodnota `50%` a jen na opravdu malých rozlišeních prohlížeč vybere `100px`.
 
 V tomto případě jde o obdobu zápisu `width:50%;  min-width:100px;`. V ukázce to sami uvidíte.
 
@@ -70,19 +78,25 @@ Je to srozumitelné? Ještě si to případně zkuste na CodePenu.
 
 CodePen: [cdpn.io/e/poeLazv](https://codepen.io/machal/pen/poeLazv?editors=1100)
 
-Ve specifikaci se uvádí, že funkce `clamp()` je zapsatelná pomocí `min()` a `max()` jako `max(MIN, min(VAL, MAX))`. Nevím, jak vám, ale mě to moc při snaze pochopit funkci `clamp()` nepomohlo.
+Následující ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizualizace, ve které je vidět aktuální šířka rodiče, elementu a pak také argument funkce `min()`, který je v dané šířce obrazovky aktivní.
+
+<!-- TODO img -->
+
+Pokud si to budete zkoušet na živo, zkuste si hýbat se šířkou viewportu.
+
+CodePen: [cdpn.io/e/rNeGNVL](https://codepen.io/una/pen/rNeGNVL)
+
+Ve specifikaci se uvádí, že funkci `clamp()` je možné zapsat pomocí `min()` a `max()` jako `max(MIN, min(VAL, MAX))`. Nevím, jak vám, ale mě to moc při snaze pochopit funkci `clamp()` nepomohlo.
 
 ## Krása univerzálnosti {#univerzalnost}
 
-Pojďme to ale rozebrat dále, protože to nakonec bude užitečné. V našem případě by zápis vypadal takto:
+Pojďme ale vzoreček ze specifikace rozebrat více. Nakonec možná dojdeme k tomu, že bude užitečný. V případě výše uvedeného kódu by zápis vypadal takto:
 
 ```css
 .box-3 {
   width: max(100px, min(50%, 300px));
 }
 ```
-
-Následuje adekvátní zápis, který pomůže i nám, kterým zanořené matematické funkce působí pupínky. 
 
 <!-- AdSnippet -->
 
@@ -98,19 +112,15 @@ Jak už jste vy zkušenější jistě pochopili, zápis výše je stejný jako b
 
 Konstrukce s `min-width` a `max-width` v CSS máme a mnozí známe už od pravěkých dob. Tak proč zavádět nový zápis v podobě funkcí `min()`, `max()` a `clamp()`?
 
-Za prvé je nový zápis stručnější a možná přehlednější. Podstatnější je ale druhý důvod - je _univerzální_. Jeho použití není limitované na délkové vlastnosti `width` a `height`. K tomu se ještě musíme vrátit.
+Za prvé je nový zápis stručnější a možná přehlednější. Podstatnější je ale druhý důvod - je _univerzální_. Jeho použití není limitované na délkové vlastnosti `width` a `height`.
 
-## Demo: vizualizace výběru funkce {#demo-vizualizace}
-
-První ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizualizace, ve které je vidět aktuální šířka rodiče, elementu a pak také argument funkce `min()`, který je v dané šířce obrazovky aktivní. Jen si zkuste hýbat se šířkou viewportu:
-
-CodePen: [cdpn.io/e/rNeGNVL](https://codepen.io/una/pen/rNeGNVL)
+To je tak zajímavé, že to musíme rozebrat. Jen chvíli počkejte.
 
 ## Demo: ideální šířka textu {#demo-typograficka-sirka}
 
-V demonstraci u článku o [porovnávacích funkcích na web.dev](https://web.dev/min-max-clamp/) má autorka tento pěkný příklad.
+Ve známé knize [The Elements of Typographic Style](http://webtypography.net/2.1.2#:~:text=%E2%80%9CAnything%20from%2045%20to%2075,is%2040%20to%2050%20characters.%E2%80%9D) od Roberta Bringhursta se píše, že „za uspokojivou délku řádku pro jednosloupcovou stránku s patkovým písmem se obecně považuje 45 až 75 znaků“.
 
-Ve známé knize [The Elements of Typographic Style](http://webtypography.net/2.1.2#:~:text=%E2%80%9CAnything%20from%2045%20to%2075,is%2040%20to%2050%20characters.%E2%80%9D) od Roberta Bringhursta se píše, že „za uspokojivou délku řádku pro jednosloupcovou stránku s patkovým písmem se obecně považuje 45 až 75 znaků“. Toto můžeme krásně definovat právě pomocí porovnávací funkce:
+Toto můžeme krásně definovat právě pomocí porovnávací funkce:
 
 ```css
 .card {
@@ -118,7 +128,11 @@ Ve známé knize [The Elements of Typographic Style](http://webtypography.net/2.
 }
 ```
 
-Prvek `.card` bude zabírat `50%` šířky rodiče, ale nikdy méně než `45ch` a více než `75ch`. Jednotka `ch` obsahuje šířku znaku `0`, což se považuje za průměrnou šířku znaku.
+Prvek `.card` bude zabírat `50%` šířky rodiče, ale nikdy méně než `45ch` a více než `75ch`.
+
+Pokud to nevíte, jednotka `ch` v sobě obsahuje šířku znaku `0`, což se považuje za průměrnou šířku znaku.
+
+<!-- TODO img -->
 
 CodePen: [cdpn.io/e/QWyLxaL](https://codepen.io/una/pen/QWyLxaL)
 
@@ -132,15 +146,19 @@ h1 {
 }
 ```
 
-[Jednotkou `vw`](jednotky.md) nastavujeme velikost písma na pět procent šířky viewportu. Abychom se přitom vyhnuli extrémně malým a extrémně velkým hodnotám `font-size`, pomáháme se funkcí `clamp()`.
+[Jednotkou `vw`](jednotky.md) nastavujeme velikost písma na pět procent šířky viewportu. Abychom se přitom vyhnuli extrémně malým a extrémně velkým hodnotám `font-size`, pomáháme si funkcí `clamp()`.
+
+<!-- TODO img -->
 
 CodePen: [cdpn.io/e/ExyYXaN](https://codepen.io/una/pen/ExyYXaN)
 
-Čtenář Dan Srb nám poslal ještě jeden tip ke stupňovitému zvětšování písma:
+Čtenář Dan Srb mi po vydání tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
 
 > Pokud chcete  například zajistit, aby se od 500px šířky viewportu začalo písmo zvětšovat z 1rem na 2rem až k hranici šířky viewportu 900px, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost padding.)
 
-Dodejme ještě, že autorka původního CodePenu nás nabádá, abychom si přitom dávali pozor na přístupnost. Omezení velikosti textu pomocí funkcí `max()` nebo `clamp()` může být proti pravidlům přístupnosti WCAG, která doporučují, aby si uživatelé mohli písmo libovolně zvětšovat sami.
+Dodejme ještě, že autorka původního CodePenu nás nabádá, abychom si těchto hrátkách s velikostí písma dávali pozor na přístupnost.
+
+Omezení velikosti textu pomocí funkcí `max()` nebo `clamp()` může být proti pravidlům přístupnosti WCAG, která doporučují, aby si uživatelé mohli písmo libovolně zvětšovat sami.
 
 ## Co byste ještě měli vědět o porovnávacích funkcích? {#co-jeste}
 
@@ -152,7 +170,7 @@ Funkce `min()`, `max()` a `clamp()` mají v DNA pár důležitých vlastností, 
 
 ## Podpora v prohlížečích
 
-Je to dobré, funkce `min()`, `max()` a `clamp()` podporují všechny moderní prohlížeče. V Internet Exploreru vám tyto funkce neprojdou.
+Je to dobré. Funkce `min()`, `max()` a `clamp()` podporují všechny moderní prohlížeče. V Internet Exploreru vám tyto funkce neprojdou.
 
 Můžete to ověřit na CanIUse: [caniuse.com/css-math-functions](https://caniuse.com/css-math-functions)
 

@@ -18,7 +18,7 @@ Rozdělení šířky na tři díly byste asi zvládli i bez kalkulačky, ale vý
 }
 ```
 
-Něco takového je použitelné velmi často. Například když z odsazení nebo šířky elementu potřebujete odečíst šířku rámečku (`border`).
+Něco takového je velmi užitečné. Například když z odsazení nebo šířky elementu potřebujete odečíst šířku rámečku (`border`).
 
 <div class="ebook-only" markdown="1">
 
