@@ -12,6 +12,8 @@ Vlastnost `align-items` patří do specifikace pro zarovnání boxů – [CSS Bo
 
 Vlastnost je možné použít v layoutech tvořených [flexboxem](css-flexbox.md) a také [gridem](css-grid.md).
 
+Můžete také použít zkratku [`place-items`](css-place-items.md).
+
 </div>
 
 <div class="ebook-only" markdown="1">

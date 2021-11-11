@@ -231,6 +231,28 @@ Takže v případě kategorie produktů na e-shopu se Open Graph stará o popis 
 
 Rozdíl je v praktickém využití – zatímco Open Graph je pro online kecálky a sociální sítě, Schema.org pro Google a další vyhledávače.
 
+## Velikost náhledových obrázků {#velikost}
+
+Podmínky pro náhledové obrázky se liší podle sociálních sítí, ale je možné najít rozumný průnik:
+
+### Facebook
+
+- Ideální poměr stran je 1,91:1.
+- Minimálně 600 ⨉ 315, ideálně ale zhruba 1200 ⨉ 630 pixelů a širší.
+- Maximálně 8 MB.
+
+Více v [dokumentaci Facebooku](https://developers.facebook.com/docs/sharing/webmasters/images/).
+
+### Twitter
+
+- Poměr stran 2:1.
+- Minimálně 300 ⨉ 157.
+- Maximálně 4096 ⨉ 4096, 5 MB.
+
+Více [v dokumentaci Twitteru](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image).
+
+Vychází z toho, že vaše obrázky by mohly mít poměr stran velikost 1200 ⨉ 630 pixelů, ale počítejte, že vám je Twitter na výšku mírně ořízne.
+
 ## Generování náhledových obrázků {#generovani}
 
 K náhledovým obrázkům se určitě hodí napsat, že nedoporučuji používat nějaké obecné obrázky, např. s logem firmy. Pokud je obsah hodný sdílení, měl by opravdu prezentovat obsah na stránce.
@@ -239,6 +261,7 @@ Např. na Vzhůru dolů sice pro články (zatím) obecné náhledy používám,
 
 Samotná technologie generování je poměrně důležité téma, ale těžko jej pokrýt v rámci jediného článku o Open Graph, takže vás přesměruju na odkazy:
 
+- [Resoc Image Template Development Kit](https://github.com/Resocio/resoc/tree/main/packages/cli-itdk) umožňuje generovat náhledy pomocí HTML (Mustache) a CSS. Jde o balíček pro [NPM](npm.md). [Článek](https://css-tricks.com/create-your-own-automated-social-images-with-resoc/).
 - Github nedávno psal [o vlastním frameworku](https://github.blog/2021-06-22-framework-building-open-graph-images/) pro generování obrázků Open Graph.
 - Pro PHP svět existuje knihovna [Astrotomic/php-open-graph](https://github.com/Astrotomic/php-open-graph).
 - Ve světě WordPressu existuje řada [pluginů pro Open Graph](https://cs.wordpress.org/plugins/search/open+graph+image/), které obrázky generují. Jasně, na všechno tam jsou pluginy.

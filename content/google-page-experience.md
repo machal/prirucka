@@ -1,8 +1,10 @@
 # Google Page Experience update
 
-Google od června do srpna 2021 postupně nasazoval aktualizaci algoritmu zvanou [Page Experience](https://developers.google.com/search/docs/guides/page-experience). 
+Google od června 2021 postupně nasazuje aktualizaci algoritmu zvanou [Page Experience](https://developers.google.com/search/docs/guides/page-experience).
 
 Kluci a holky v největším vyhledávači ji navrhli tak, aby zvýrazňovala stránky, které nabízejí výborný uživatelský prožitek. V tomhle článku se zaměříme na to, abychom poněkud vágní definici upřesnili.
+
+Během roku 2021 se to začalo projevovat v mobilním vyhledávání a [od února 2022 Google plánuje](https://developers.google.com/search/blog/2021/11/bringing-page-experience-to-desktop) nasazení také do hodnocení desktopových webů.
 
 <div class="f-6" markdown="1">
 

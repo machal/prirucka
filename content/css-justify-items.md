@@ -12,6 +12,8 @@ Vlastnost `justify-items` patří do specifikace pro zarovnání boxů – [CSS 
 
 Je použitelná uvnitř layoutů dělaných [gridem](css-grid.md).
 
+Můžete také použít zkratku [`place-items`](css-place-items.md).
+
 </div>
 
 <div class="ebook-only" markdown="1">
@@ -63,7 +65,7 @@ Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět e
 
 Vlastnost `justify-items` zde tedy zarovnává položky na hlavní (vodorovné) ose do prostoru, který je jim vymezený (`1fr`, tedy jeden [podíl na celku](css-jednotka-fr.md)). Hodnota `end` je umístí ke konci onoho vymezeného prostoru.
 
-<p><img src="../dist/images/original/vdlayout/css-justify-items-end.png" width="1920" height="540"  alt="justify-items:end v Chrome při zapnutém grid overlay"></p>
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-justify-items-end.png" width="1920" height="540"  alt="justify-items:end v Chrome při zapnutém grid overlay"></p>
 
 CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
