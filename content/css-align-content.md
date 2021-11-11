@@ -53,7 +53,7 @@ V naší ukázce definujeme třířádkový kontejner gridu:
 }
 ```
 
-<p><img src="../dist/original/images/vdlayout/css-align-content-grid.png" width="1920" height="540" alt="align-content:space-between ve gridu - v Chrome při zapnutém layout overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-align-content-grid.png" width="1920" height="540" alt="align-content:space-between ve gridu - v Chrome při zapnutém layout overlay"></p>
 
 Pomocí zápisu `align-content:space-between` se volný prostor hezky distribuuje na výšku mezi jednotlivé položky.
 

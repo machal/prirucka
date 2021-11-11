@@ -63,7 +63,6 @@ Pokud tato podmínka není splněna, specifikace jako náhradní řešení před
 
 To asi dává smysl, že?
 
-
 ## Klíčová slova pro zarovnání {#typy-klicova-slova}
 
 Už víme, že vlastnosti [CSS Box Alignment](css-box-alignment.md) je možné dělit podle toho, zda ovlivňují všechny položky, jednu položku nebo prostor mezi nimi.
@@ -151,7 +150,7 @@ Na nic nečekejme a vše vysvětleme:
 
 Mrkněte se na živý CodePen, pokud si to neumíte představit, ale asi to nebude těžké.
 
-<!-- TODO img -->
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-pozicni.png" width="1920" height="540" alt="Poziční zarovnání Box Align"></p>
 
 CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
@@ -199,9 +198,9 @@ Totiž:
 
 Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku shora tak, aby druhá i třetí lícovala na účaří.
 
-CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-ucari.png" width="1920" height="540" alt="Box Align zarovnání na účaří"></p>
 
-<!-- TODO img -->
+CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 
 ### Zarovnání zbylého prostoru {#zbyly-prostor}
 
@@ -238,7 +237,7 @@ Jdeme na vysvětlování:
 - Tím, že jsme omezili šířku položky na `100px`, při roztažení rodiče (`.container`) vznikne volné místo.
 - Jak se s volným místem vedle položek naloží určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
 
-<!-- TODO IMG -->
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-prostor.png" width="1920" height="540" alt="Box Align zarovnání - zbylý prostor"></p>
 
 CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 

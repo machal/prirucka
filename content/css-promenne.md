@@ -335,44 +335,6 @@ CodePen: [cdpn.io/e/LOdPbR](https://codepen.io/machal/pen/LOdPbR?editors=1111)
 
 CSS proměnné podporují všechny moderní prohlížeče. Bez podpory jsme například v Opeře Mini a ve všech Internet Explorerech. Jasně, obvyklí podezřelí. To vůbec nevadí. Více o podpoře je na webu CanIUse. [caniuse.com/css-variables](https://caniuse.com/css-variables)
 
-<!-- TODO asi uz ne
-
-[Internet Explorer](msie.md) 11 ale mohou v době psaní textu i na vašich webech ještě tvořit významnou část návštěvníků. Následují tedy čtyři možnosti řešení této situace.
-
-### CSS proměnné jen pro vylepšení prožitku {#podpora-fallbacky-vylepseni}
-
-Proměnné používat jen pro vylepšení uživatelského prožitku. Nestavět na nich nic důležitého. Nuda, já vím. Ale může se to hodit pro věci jako je „theming“, tedy změny barev na přání uživatele nebo stylování vzhledu pro mobily, na kterých se Explorer naštěstí už prakticky nevyskytuje.
-
-### Generování vypočteného CSS pro starší prohlížeče {#podpora-fallbacky-generovani}
-
-Pomocí PostCSS si můžete nechat generovat speciální CSS soubor, ve kterém jsou všechny hodnoty vypočtené a ten podsouvat nepodporujícím prohlížečům. Samozřejmě, že ne ve všech případech to půjde. Ale tady je jeden z použitelných pluginů: [github.com/postcss/postcss-custom-properties](https://github.com/postcss/postcss-custom-properties).
-
-### Fallbacky v kódu {#podpora-fallbacky-v-kodu}
-
-Prohlížeče, který uživatelskou vlastnost neznají, budou volitelnou vlastnost ignorovat a použijí výchozí hodnotu. Toho se dá využít při konstrukci náhradních řešení:
-
-```css
---my-color: blue;
-color: blue;
-color: var(--my-color);
-```
-
-### Detekce podpory pomocí @supports {#podpora-fallbacky-supports}
-
-Samozřejmě můžete využít i [feature queries – `@supports`](css-supports.md):
-
-```css
-@supports ( (--a: 0)) {
-  /* Prohlížeč podporuje  */
-}
-
-@supports ( not (--a: 0)) {
-  /* Zlý, zlý prohlížeč  */
-}
-```
-
- -->
-
 Tolik k volitelným vlastnostem a CSS proměnným. Teď už vám můžu nabídnout jen sumarizaci toho nejdůležitějšího.
 
 ## Shrnutí {#shrnuti}

@@ -66,7 +66,7 @@ Jeden z významů slova „clamp“ v angličtině (_[klæmp]_) je „svěrka“
 }
 ```
 
-<img src="../dist/images/original/css-clamp.png" width="1600" height="900" alt="CSS funkce clamp()">
+<p><img src="../dist/images/original/css-clamp.png" width="1600" height="900" alt="CSS funkce clamp()"></p>
 
 Vysvětlíme to ještě detailně:
 
@@ -80,7 +80,7 @@ CodePen: [cdpn.io/e/poeLazv](https://codepen.io/machal/pen/poeLazv?editors=1100)
 
 Následující ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizualizace, ve které je vidět aktuální šířka rodiče, elementu a pak také argument funkce `min()`, který je v dané šířce obrazovky aktivní.
 
-<!-- TODO img -->
+<p class="ebook-only"><img src="../dist/images/original/css-min-una.png" alt="CSS funkce clamp()"></p>
 
 Pokud si to budete zkoušet na živo, zkuste si hýbat se šířkou viewportu.
 
@@ -132,8 +132,6 @@ Prvek `.card` bude zabírat `50%` šířky rodiče, ale nikdy méně než `45ch`
 
 Pokud to nevíte, jednotka `ch` v sobě obsahuje šířku znaku `0`, což se považuje za průměrnou šířku znaku.
 
-<!-- TODO img -->
-
 CodePen: [cdpn.io/e/QWyLxaL](https://codepen.io/una/pen/QWyLxaL)
 
 ## Demo: Plynulá typografie {#demo-fluid-typo}
@@ -146,9 +144,9 @@ h1 {
 }
 ```
 
-[Jednotkou `vw`](jednotky.md) nastavujeme velikost písma na pět procent šířky viewportu. Abychom se přitom vyhnuli extrémně malým a extrémně velkým hodnotám `font-size`, pomáháme si funkcí `clamp()`.
+Velikost písma se bude s rozšiřováním okna zvětšovat od `1.5rem` až po `5rem`.
 
-<!-- TODO img -->
+[Jednotkou `vw`](jednotky.md) nastavujeme velikost písma na pět procent šířky viewportu. Abychom se přitom vyhnuli extrémně malým a extrémně velkým hodnotám `font-size`, pomáháme si funkcí `clamp()`.
 
 CodePen: [cdpn.io/e/ExyYXaN](https://codepen.io/una/pen/ExyYXaN)
 

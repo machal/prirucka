@@ -127,6 +127,21 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
 
 </div>
 
+## Změna pořadí (`*-content`) {#zmena-poradi}
+
+<div class="reference-items">
+
+  <article role="article">
+    <h4 id="order"><a href="css-order.md"><code>order</code></a></h4>
+    <p><a href="css-order.md"><img src="../dist/images/small/vdlayout/css-order-schema.png" alt="CSS vlastnost order" /></a></p>
+    <p>
+      Změna pořadí prvků layoutu. <br>
+      Např. <code>order:-1</code> přesune položku před všechny ostatní.
+    </p>
+  </article>  
+
+</div>
+
 ## Podpora v prohlížečích {#podpora}
 
 Na úrovni celé této velké specifikace je těžké mluvit o podpoře či nepodpoře. Různé prohlížeče mohou nepodporovat některé vlastnosti, některé mohou nepodporovat zase určité hodnoty nebo jejich kombinaci s různými systémy rozvržení, jako je grid, flexbox nebo vícesloupcový layout.

@@ -96,20 +96,13 @@ Udělá z prvku tabulku. V tomto případě jsou zde ale dva „kontejnery“. `
 - `ruby`  
 Tohle je exotické a pro středoevropské prostředí nepotřebné. „Ruby anotace“ jsou krátké řady znaků umístěné vedle základního textu, které se  používají ve východoasijské typografii jako vodítko pro výslovnost.
 
-<figure>
-<img src="../dist/images/original/vdlayout/css-display-outer.png" width="1600" height="450" alt="CSS display - inline a block">
-<figcaption markdown="1">
-*Možnosti hodnot vnitřního zobrazení.*
-</figcaption>
-</figure>
-
 Připravil jsem dva vysvětlující CodePeny, na kterých si můžete otestovat to, co vidíte na obrázku.
 
 V prvním máme jednoduše a bez layoutu umístěné tři prvky v jednom rodiči.
 
 CodePen: [cdpn.io/e/KKgGeQQ](https://codepen.io/machal/pen/KKgGeQQ?editors=0000)
 
-`display:flow` v prohlížečích nefunguje, ale jako by fungoval… „Tokové“ je totiž výchozí zobrazení.
+`display:flow` zatím nemá v prohlížečích podporu, ale jako by tam byla… „Tokové“ je totiž výchozí zobrazení.
 
 Zajímavější bude druhý CodePen. Všechny tři vnitřní prvky jsou „tekoucí“, floatové:
 
@@ -119,7 +112,14 @@ Zajímavější bude druhý CodePen. Všechny tři vnitřní prvky jsou „tekou
 }
 ```
 
-<!-- TODO IMG CodePen -->
+Výsledek vidíte na obrázku.
+
+<figure>
+<img src="../dist/images/original/vdlayout/css-display-outer.png" width="1600" height="450" alt="CSS display - inline a block">
+<figcaption markdown="1">
+*Možnosti hodnot vnitřního zobrazení s vnitřními plovoucími prvky.*
+</figcaption>
+</figure>
 
 - Běžné tokové zobrazení (`display:flow`) floaty obalit neumí, potřebovali bychom už zmíněný „clearfix“.
 - `display:flow-root` floaty obalí, vždy vytvoří nový kontext formátování bloku.
@@ -144,19 +144,20 @@ Náš kontejner díky tomu můžeme stylovat, jako by to byl prvek `<ul>` nebo `
 }
 ```
 
-<!-- TODO img -->
-
 Podpora `display:list-item` jde napříč všemi prohlížeči. [caniuse.com](https://caniuse.com/mdn-css_properties_display_list-item)
 
 CodePen: [cdpn.io/e/gOwqJmq](https://codepen.io/machal/pen/gOwqJmq?editors=0000)
 
-## Typy zobrazení pro vnitřní rozvržení: `table-*` a `ruby-*` {#table-ruby}
+První příklad na následujícím obrázku ukazuje zobrazení typu `list-item`.
 
-Modely zobrazení, které vynucují vnitřní rozvržení, jako je `display:table` a `display:ruby`, mají složitou strukturu s několika různými rolemi, které mohou jejich  potomci plnit.
+<figure>
+<img src="../dist/images/original/vdlayout/css-display-etc.png" width="1600" height="450" alt="CSS display - list-item, none, contents">
+<figcaption markdown="1">
+*Další typy (ne)zobrazení v CSS.*
+</figcaption>
+</figure>
 
-Jak je uvedeno výše, zápis `display:table` sice vytvoří kontejner tabulky, ale ten vytvoří kontext formátování bloku. Nedosáhneme tím tedy tabulkového zobrazení. K tomu bychom potřebovali další prvky, které reprezentují řádky a buňky tabulky se správnými hodnotami vlastnosti `display` (`table-row`, `table-cell`…).
-
-Podobné je to `display:ruby`, jen ty vnitřní prvky jsou jiné.
+Druhou a třetí hodnotu z obrázku probereme hned v následující části.
 
 ## Schování prvků: `none` a `contents` {#none-contents}
 
@@ -169,22 +170,17 @@ Element se na obrazovku nevykreslí, ale jeho potomkové ano.
 
 Zobrazení typu `contents` funguje tak, jako by byl ve DOM stromu nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
 
-<!-- TODO img list-item pryč -->
-
-<figure>
-<img src="../dist/images/original/vdlayout/css-display-etc.png" width="1600" height="450" alt="CSS display - list-item, none, contents">
-<figcaption markdown="1">
-*Další typy (ne)zobrazení v CSS.*
-</figcaption>
-</figure>
-
-Podívejme se na CodePen s možností přepínat tyto dvě hodnoty.
-
 CodePen: [cdpn.io/e/zYKmaMb](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
 
-Podpora nezobrazení pomocí `none` je samozřejmě plná.
+Podpora nezobrazení pomocí `none` je samozřejmě plná. Hodnotu `contents` zvládají všechny prohlížeče kromě Internet Exploreru, ale podle webu CanIUse je s ní spojeno několik chyb v prohlížečích vycházejících z jádra Chromium, které souvisejí s přístupností.  [caniuse.com](https://caniuse.com/css-display-contents)
 
-Hodnotu `contents` zvládají všechny prohlížeče kromě Internet Exploreru, ale podle webu CanIUse je s ní spojeno několik chyb v prohlížečích vycházejících z jádra Chromium, které souvisejí s přístupností.  [caniuse.com](https://caniuse.com/css-display-contents)
+## Typy zobrazení pro vnitřní rozvržení: `table-*` a `ruby-*` {#table-ruby}
+
+Modely zobrazení, které vynucují vnitřní rozvržení, jako je `display:table` a `display:ruby`, mají složitou strukturu s několika různými rolemi, které mohou jejich  potomci plnit.
+
+Jak je uvedeno výše, zápis `display:table` sice vytvoří kontejner tabulky, ale ten vytvoří kontext formátování bloku. Nedosáhneme tím tedy tabulkového zobrazení. K tomu bychom potřebovali další prvky, které reprezentují řádky a buňky tabulky se správnými hodnotami vlastnosti `display` (`table-row`, `table-cell`…).
+
+Podobné je to `display:ruby`, jen ty vnitřní prvky jsou jiné.
 
 ## Hodnoty s více klíčovými slovy {#viceslovna}
 

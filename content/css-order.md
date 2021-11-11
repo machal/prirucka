@@ -4,9 +4,7 @@ Vlastnost `order` nastavuje pořadí položky v kontejneru rozvržení v CSS.
 
 <div class="connected" markdown="1">
 
-<!-- TODO IMG
 ![CSS vlastnost order](../dist/images/medium/vdlayout/css-order-schema.png)
- -->
  
 <div class="web-only" markdown="1">
 
