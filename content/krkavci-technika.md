@@ -31,6 +31,12 @@ Havraní technika je založená na matematických funkcích a dalších novinká
 - [Funkce `clamp()`](css-min-max-clamp.md) je kombinací `min()` a `max()` pro tříčiselné hodnoty.
 - [Proměnné v CSS](css-promenne.md) jako `--color:blue` zase umožňují udržovat a měnit hodnoty výpočtu, podobně jako v programovacích jazycích.
 
+<div class="ebook-only" markdown="1">
+
+Mimochodem, „CSS proměnné“ nejsou ve skutečnosti proměnné. Ne takové, jaké si představí běžná vývojářka nebo vývojář. Píšu o nich více [v poslední „přílohové“ kapitole](css-promenne.md), kde také najdete ukázky jejich použití.
+
+</div>
+
 ## Definujeme proměnné
 
 V prvním kroku budování krkavčí techniky si definujeme proměnné se šířkou a s body zlomu layoutu:

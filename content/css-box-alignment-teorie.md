@@ -28,7 +28,17 @@ Osy pro potřeby layoutu v CSS:
 
 Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Taková japonština nebo arabština se čtou zcela v odlišných směrech.
 
-O směru psaní dokumentu a tvorbě layoutu pro tyto jazyky píšu více v textu o [logických vlastnostech a hodnotách v CSS](css-logical.md).
+<div class="web-only" markdown="1">
+
+O směru psaní dokumentu a tvorbě layoutu pro jazyky sázené v jiných směrech píšu více v textu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách.
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
+
+</div>
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-box-alignment-direction.png" width="1600" height="900" alt="Změna směru rozvržení">

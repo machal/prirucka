@@ -148,7 +148,7 @@ Pomocí inspekce mřížky ve Firefoxu se nám teď layout krásně vizualizuje 
 
 Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má postranní panel (`.side`) mít šířku 30 % — ovšem s minimem `10em` a maximem `20em`.
 
-Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce [funkce `clamp()`](css-min-max-clamp.md).
+Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce funkce `clamp()`.
 
 ```css
   .container {
@@ -158,6 +158,12 @@ Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli.
 ```
 
 Dělá to přesně to, co si myslíte: `30%` v prostředním argumentu je optimální velikost. První a poslední argument dodává minimum a maximum. Podpora této funkce v moderních prohlížečích je výborná, takže ji neváhejte využít.
+
+<div class="ebook-only" markdown="1">
+
+Mimochodem, funkci `clamp()`, stejně jako její kolegyně `min()` a `max()`, pro zájemce více popisuji [v poslední „přílohové“ kapitole](css-min-max-clamp.md).
+
+</div>
 
 Pojďme si to teď zjednodušit, nebo možná zkomplikovat. Záleží, jak se na to budete dívat.
 

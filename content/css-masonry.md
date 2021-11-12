@@ -155,6 +155,12 @@ Je samozřejmě otázkou, jak může vypadat náhradní řešení z vizuálního
 
 Doufejme, že to nebudeme muset dlouho dělat a po připomínkovém řízení ke specifikaci dojde k implementaci v Chrome a odvozených prohlížečích a pak chvíli čekání na Safari, jak už to ve světě dnešního vývoje webů chodí.
 
+<div class="ebook-only" markdown="1">
+
+Mimochodem, velmi užitečné „Feature  Queries“, dotazy na podporu vlastností a tedy klíčové slovo `@supports` pro zájemce více popisuji [v poslední „přílohové“ kapitole](css-supports.md).
+
+</div>
+
 ## Další možnosti jak řešit masonry {#dalsi}
 
 Do doby než se dokončí specifikace a prohlížeče nativní masonry naimplementují, přidávám sem také seznam alternativních metod.

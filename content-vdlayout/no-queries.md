@@ -255,6 +255,12 @@ Vidíte to? Žádný flexbox, žádný grid. A dokonce žádné dotazy v `@media
 
 Detailní vysvětlení nechávám na samotném autorovi a jeho článku „The Fab Four technique to create Responsive Emails without Media Queries“. [vrdl.in/fabfour](https://www.freecodecamp.org/news/the-fab-four-technique-to-create-responsive-emails-without-media-queries-baf11fdfa848/)
 
+<div class="ebook-only" markdown="1">
+
+Mimochodem, funkce `calc()` je při práci na CSS layoutech velmi užitečná. V knize předpokládám základní úroveň její znalosti, nicméně více ji pro zájemce popisuji [v poslední „přílohové“ kapitole](css3-calc.md).
+
+</div>
+
 Dlužím vám ještě demo. Asi nejlepší je to následující, ze kterého mám také výše uvedenou ukázku kódu.
 
 CodePen: [cdpn.io/e/ZQgEoZ](https://codepen.io/thierry/pen/ZQgEoZ?editors=1100)

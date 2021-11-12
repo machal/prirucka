@@ -56,7 +56,7 @@ _Proměnné_ pak zpřístupňují hodnoty uložené ve volitelných vlastnostech
 
 Teoreticky byste tedy v příkladu výše mohli založit novou vlastnost (`--color: blue`), ale ve funkci `var()` ji nepoužít. Mohli byste například hodnotu vlastnosti chtít jen sdílet v HTML nebo JavaScriptu. Pak jistě chápete, že nemůžeme mluvit o CSS proměnné.
 
-## Limity „autorských vlastností“ (#limity)
+## Limity „autorských vlastností“ {#limity}
 
 Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme používat jako proměnné univerzální. Použití jen možné jen tam, kde vkládáte hodnoty standardních CSS vlastnosti. V Media Queries to například nehrozí:
 

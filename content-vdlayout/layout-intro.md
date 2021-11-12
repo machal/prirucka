@@ -87,7 +87,17 @@ Používáme zde nejvděčnějšího parťáka z naší trojice, flexbox, a prot
 }
 ```
 
-Už jen tímto zápisem dosáhneme toho, aby se potomkové (prvky `box__image` a `box__text`) zarovnaly vedle sebe. Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovně:
+Už jen tímto zápisem dosáhneme toho, aby se potomkové (prvky `box__image` a `box__text`) zarovnaly vedle sebe. 
+
+<div class="ebook-only" markdown="1">
+
+Pokud je tu někdo, kdo by potřeboval vysvětlit vlastnost `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná určitý způsob zobrazení.
+
+</div>
+
+
+
+Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovně:
 
 ```css
 .box__image {

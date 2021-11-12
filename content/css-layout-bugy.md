@@ -36,6 +36,12 @@ Co konkrétně znamenají ty zelenohnědé obdélníky?
 - U flexboxu máme prakticky plnou podporu, jen v IE 11 si musíme dát pozor na pár chyb.
 - Podpora vícesloupcového layoutu je naopak v Exploreru výborná. Moderní prohlížeče si ale většinou  hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců.
 
+<div class="ebook-only" markdown="1">
+
+Mimochodem, poprvé jsem tady zmínil skvělý nástroj Autoprefixer, který automaticky dodává CSS prefixy i další kód pro starší prohlížeče. Předpokládám jeho obecnou znalost, ale pokud jste se s ním zatím nesetkali, přidal jsem podkapitolu o něm [do poslední „přílohové“ kapitoly](autoprefixer.md).
+
+</div>
+
 <!-- AdSnippet -->
 
 V textu vezmeme nové systémy layoutu jeden po druhém a k jejich podpoře v prohlížečích si něco povíme.
