@@ -1,10 +1,9 @@
-© Martin Michálek, 2019  
-Příklad, kvízy, text „Tutoriál: blogpost“ © Robin Pokorný, 2019  
-© Nakladatelství Martin Michálek – Vzhůru dolů, 2019  
+© Martin Michálek, 2022  
+© Nakladatelství Martin Michálek – Vzhůru dolů, 2022  
 All rights reserved.
 
 ISBN:
 
-PDF: 978-80-88253-04-4  
-MOBI: 978-80-88253-05-1  
-ePUB: 978-80-88253-06-8
+PDF: *TODO*  
+MOBI: *TODO*  
+ePUB: *TODO*

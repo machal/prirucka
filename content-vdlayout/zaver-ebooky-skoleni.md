@@ -4,35 +4,32 @@
 
 ## Další e-booky
 
-![E-booky ze Vzhůru dolů](../dist/images/original/vdamp/vdcss3-vdwd.jpg)
+<!-- ![E-booky ze Vzhůru dolů](../dist/images/original/vdamp/vdcss3-vdwd.jpg) -->
+
+*TODO*
 
 ### Vzhůru do (responzivního) webdesignu
 
 Kompletní průvodce návrhem a implementací designu responzivních webů. Vydáno v roce 2017, aktualizováno 2018. 311 stránek. E-book i tištěná kniha.  
 [vzhurudolu.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
 
-### Vzhůru do CSS3
+### Vzhůru do AMP
 
-Základy CSS3 vlastností a flexbox do hloubky. Vydáno v roce 2015, naposledy aktualizováno v roce 2017.  
-[vzhurudolu.cz/ebook-css3](https://www.vzhurudolu.cz/ebook-css3)
+Průvodce frameworkem pro efektivní tvorbu rychlých webů. Vydáno s Robinem Pokorným v roce 2019.s  
+[vzhurudolu.cz/ebook-amp](https://www.vzhurudolu.cz/ebook-amp/)
 
-## Školení
+## Videa ze Vzhůru dolů
 
-Vzhůru dolů pořádá kurzy moderních frontendových technologií pro profesionální webové vývojáře.
+*TODO*
 
-<figure>
-<img src="../dist/images/original/vdamp/vd-skoleni.jpg" alt="">
-<figcaption markdown="1">
-_Školení „Optimalizace rychlosti webu“ v Brně. Foto: Zuzana Šumlanská, SUPERKODERS_
-</figcaption>
-</figure>
-
-Školíme JavaScript, CSS, rychlost načítání a další technologie. Dvakrát ročně v Praze a jednou v Brně.
-
-[vzhurudolu.cz/kurzy](https://www.vzhurudolu.cz/kurzy)
+[vzhurudolu.cz/video](https://www.vzhurudolu.cz/video)
 
 ## Vzhůru dolů
 
-[vzhurudolu.cz](https://www.vzhurudolu.cz/)  
+Sledujte novinky z oboru a naše články na sociálních sítích:
+
 [facebook.com/vzhurudolu](https://www.facebook.com/VzhuruDolu/)  
-[twitter.com/vzhurudolu](https://twitter.com/vzhurudolu)
+[twitter.com/vzhurudolu](https://twitter.com/vzhurudolu)  
+[linkedin.com/company/vzhůru-dolů/](https://www.linkedin.com/company/vzh%C5%AFru-dol%C5%AF/)
+
+[vzhurudolu.cz](https://www.vzhurudolu.cz/)
