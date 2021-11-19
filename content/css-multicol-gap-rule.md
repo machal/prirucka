@@ -14,7 +14,7 @@ Vlastnosti `column-gap` a `column-rule` patří do specifikace vícesloupcového
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-multicol-gap](https://www.vzhurudolu.cz/prirucka/css-multicol-gap)
+→ [vrdl.cz/p/css-multicol-gap-rule](https://www.vzhurudolu.cz/prirucka/css-multicol-gap-rule)
 
 </div>
 

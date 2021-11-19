@@ -117,7 +117,7 @@ Ten je ekvivalentní následujícímu:
 
 ### Zahuštěné vykreslování, klíčové slovo dense
 
-Pokud jste viděli vlastnost `grid-auto-flow`, určitě vás zaujala hodnota [`dense`](css-grid-auto-flow.md#priklad-dense).
+Pokud jste viděli [vlastnost `grid-auto-flow`](css-grid-auto-flow.md), určitě vás zaujala hodnota `dense`.
 
 Můžeme ji nastavit i pomocí zkratky `grid`. Následující dva kousky kódu budou totožné:
 
