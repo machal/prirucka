@@ -4,7 +4,7 @@ Kromě výslovně uvedené explicitní mřížky existuje v CSS gridu ještě im
 
 V naprosté většině případů definujeme explicitní mřížku, tedy _předem uvedenou_.
 
-Může se nám ale stát, že položku umístíme na místo, kam explicitní mřížka nesahá. V takovém případě se nám mřížka automaticky rozšíří o implicitní část. Budete se divit, ale i tu můžeme předem nadefinovat.
+Může se nám ale stát, že položku umístíme na místo, kam explicitní mřížka nesahá. V takovém případě se nám mřížka automaticky rozšíří o implicitní část. Budete se divit, ale i tu můžeme předem definovat.
 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit.png" width="1600" height="900" alt="Explicitní a implicitní CSS grid">
@@ -41,7 +41,7 @@ V CSS pak layout rozdělíme do tří sloupců, které se spravedlivě dělí o 
 }
 ```
 
-Co se ale stane, když do DOMu přidáme čvrtou položku?
+Co se ale stane, když do DOMu přidáme čtvrtou položku?
 
 ```html
 <div class="container">
@@ -73,7 +73,7 @@ Mřížce tím nepřikazujeme, aby byla rovnou dvouřádková. Říkáme zhruba 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-1.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 1. příklad">
 <figcaption markdown="1">
-*A helemese, na druhém řádku je položka. Ta se zformátuje podle automatického, implicitního gridu.*
+*A helemese, na druhém řádku je položka. Ta se formátuje podle automatického, implicitního gridu.*
 </figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ Ve stylech sice zapneme formátovací kontext mřížky, nějakou tu mezeru pomo
 }
 ```
 
-Prohlížeč si řekne: „Hmm… grid! Ovšem pozor – nemá deklaraceci layoutu, takže to prostě vypíšu pod sebe.“ A jak řekl, tak udělá:
+Prohlížeč si řekne: „Hmm… grid! Ovšem pozor – nemá deklaraci layoutu, takže to prostě vypíšu pod sebe.“ A jak řekl, tak udělá:
 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2a.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 2. příklad">
@@ -129,7 +129,7 @@ Naštěstí si ale náš milý prohlížeč vzpomene, že kromě explicitního m
 </figcaption>
 </figure>
 
-Výchozí výška i šířka implicitních buněk je na hodnotě `auto`, takže se rozměry určí podle obsahu položky. No a když tam žádný není… nemužeme se pak divit, že čtvrtý sloupec je méně široký než první tři a nový pátý. Nemá totiž žádný obsah. Mohli bychom to opravit přípravou implicitní mřížky, například takto:
+Výchozí výška i šířka implicitních buněk je na hodnotě `auto`, takže se rozměry určí podle obsahu položky. No a když tam žádný není… nemůžeme se pak divit, že čtvrtý sloupec je méně široký než první tři a nový pátý. Nemá totiž žádný obsah. Mohli bychom to opravit přípravou implicitní mřížky, například takto:
 
 ```css
 .container {

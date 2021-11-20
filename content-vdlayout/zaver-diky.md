@@ -1,8 +1,8 @@
 # Na závěr
 
-Právě jste knihu dočetli. Díky, že jste jí věnovali svůj čas, a jsem napsatý, co na ní říkáte.
+Právě jste knihu dočetli.
 
-Budeme rádi za sdílení vašich zkušeností.
+Díky, že jste jí věnovali svůj čas, a jsem napsatý, co na ní říkáte. Budu rád za každý váš názor.
 
 ## Zpětná vazba, pochvaly, hlášení chyb
 

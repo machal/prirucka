@@ -4,7 +4,7 @@ Přemýšlel jsem nad paralelou, abych popsal svůj pocit z CSS modulu, který s
 
 Představte si situaci v rodině, kdy se postupně narodí čtyři bratři. Na rozdíl od pohádek je ten nejstarší sice v úzké rodině milovaný, ale v širším společenství zároveň vnímaný jako nejslabší a nejvíc opomíjený.
 
-Tři mladší bratři (zde [grid](css-grid.md), [flexbox](css-flexbox.md) a [zarovnávání](css-box-alignment.md)) si rychle získají popularitu v široké skupině lidí. Ten nejstarší je nejkrehčí a nikdo moc neví, v čem vyniká.
+Tři mladší bratři (zde [grid](css-grid.md), [flexbox](css-flexbox.md) a [zarovnávání](css-box-alignment.md)) si rychle získají popularitu v široké skupině lidí. Ten nejstarší je nejkřehčí a nikdo moc neví, v čem vyniká.
 
 Jenže i on vyniká. I když to málokdo vidí. Zatímco tento nejstarší potomek může vynikat v malování, stříhání ušima nebo já nevím v čem…, Multi-column layout výborně zvládá sazbu textu nebo obrázků do sloupců a nabízí také nevídané možnosti při tvorbě responzivních rozvržení, které můžete dělat bez použití Media Queries.
 

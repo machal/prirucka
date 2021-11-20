@@ -131,7 +131,7 @@ Podívejme se teď na tentýž příklad jako v první ukázce, jen si jeho pozi
 Vysvětlíme:
 
 - `span 1` u `grid-column` znamená „zabírá jeden sloupec“. Tady je to zbytečné, fungovalo by to i bez tého hodnoty.
-- `span 1` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buňek mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
+- `span 1` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
 
 CodePen: [cdpn.io/e/LwWxWy](https://codepen.io/machal/pen/LwWxWy?editors=1100)
 
@@ -183,6 +183,6 @@ CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
 ## Podpora
 
-Moderní prohlížeče jsou s těmito vlastnostmi úplně v pohodě. Horší je to samozřejmě v MSIE, ale to navadí, protože podobné vlastnosti tam existují. [Autoprefixer](css-grid-msie.md) nám pomůže a např. `grid-row` se přeloží do `-ms-grid-row`.
+Moderní prohlížeče jsou s těmito vlastnostmi úplně v pohodě. Horší je to samozřejmě v MSIE, ale to nevadí, protože podobné vlastnosti tam existují. [Autoprefixer](css-grid-msie.md) nám pomůže a např. `grid-row` se přeloží do `-ms-grid-row`.
 
 <!-- AdSnippet -->

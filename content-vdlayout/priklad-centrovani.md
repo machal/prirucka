@@ -66,7 +66,7 @@ Náš první centrovací pokus učiníme s pomocí flexboxu:
 
 Je nám jasné, že toto žádné zázraky neučiní. Spíše naopak - vytvoří nám to problémy. Boxík je teď roztažený na celou výšku rodiče.
 
-Je to častá potíž začátečníků s flexboxem. Výchozí hodnota vlastnosti, která určuje zarování na výšku, je totiž nastavená na maximální rozpínavost.
+Je to častá potíž začátečníků s flexboxem. Výchozí hodnota vlastnosti, která určuje zarovnání na výšku, je totiž nastavená na maximální rozpínavost.
 
 O kterou vlastnost jde? Tady máme dobrou příležitost ukázat si tahák, který převezmeme z referenční příručky k CSS Box Alignment.
 

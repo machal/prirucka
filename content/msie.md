@@ -98,11 +98,11 @@ Explorer byl dobrý prohlížeč. Svého času. V době kdy přišla verze 4, ud
 
 Nicholas C. Zakas připomíná ve svém výborném článku „The innovations of Internet Explorer“ dobré věci, které nám MSIE přinesl:
 
-> Věřte tomu nebo ne, ale Internet Explorer 4-6 je do značné míry zodpovědný za webovovou vývojařinu, jak ji známe dnes. Řada proprietárních funkcí se stala de facto standardy a poté oficiálními standardy, přičemž některé z nich skončily ve specifikaci HTML5.
+> Věřte tomu nebo ne, ale Internet Explorer 4-6 je do značné míry zodpovědný za webovou vývojařinu, jak ji známe dnes. Řada proprietárních funkcí se stala de facto standardy a poté oficiálními standardy, přičemž některé z nich skončily ve specifikaci HTML5.
 
 Z jeho textu, zmiňujícího mnoho inovací Exploreru, jsem vybral pár bodů, které stojí za připomenutí:
 
-1. Internet Explorer 4 zlepšil práci s DOMem tím, že umožnil programový přístup ke každému prvku na stránce prostřednictvím `document.all`, což byl předchůdce `document.getElementById()`. Ve stejné verzi se také poprve objevila vlastnost `innerHTML`.
+1. Internet Explorer 4 zlepšil práci s DOMem tím, že umožnil programový přístup ke každému prvku na stránce prostřednictvím `document.all`, což byl předchůdce `document.getElementById()`. Ve stejné verzi se také poprvé objevila vlastnost `innerHTML`.
 2. Exploreru také vděčíme za bublání událostí (event bubbling). Kromě toho vytvořili v Microsoftu řadu dalších událostí, které se nakonec staly součástí standardů W3C: `beforeunload`, `mouseenter`, `mouseleave` a další.
 3. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámců (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámce, dodnes velmi populární.
 4. Často se zapomíná, že v Microsoftu nepřímo vymysleli Ajax. Zpracování XML na straně klienta bylo součástí implementace XMLHttpRequest, která byla poprvé představena jako součást rozšíření ActiveX v páté verzi Internet Exploreru.

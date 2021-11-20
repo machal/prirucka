@@ -70,7 +70,7 @@ CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
 ### Co když je položek více než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
 
-Teď se stane ošlivá a zlá věc – zákeřný frontend kodér do HTML přidá pátou položku:
+Teď se stane ošklivá a zlá věc – zákeřný frontend kodér do HTML přidá pátou položku:
 
 ```html
 <div class="container">
@@ -106,7 +106,7 @@ Rozměry položek vložených nad rámec počtu položek definovaných explicitn
 
 ## Další možnosti zápisu gridu {#hodnoty}
 
-Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`, tedy na sloupce i řády layoutu.
+Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`, tedy na sloupce i řádky layoutu.
 
 <div class="rwd-scrollable f-6"  markdown="1">
 
@@ -160,7 +160,7 @@ Pojmenovávání stop se může hodit pro použití ve vlastnostech, které defi
 
 Každý sloupec nebo řádka je v gridu definovaná dvěma stopami.
 
-Sloupce a řádky mřížky je možné si přestavit jako sloupce a řádky v tabulce. Stopy jsou rámečky kolem buněk tabulky.
+Sloupce a řádky mřížky je možné si představit jako sloupce a řádky v tabulce. Stopy jsou rámečky kolem buněk tabulky.
 
 ```css
 .container {

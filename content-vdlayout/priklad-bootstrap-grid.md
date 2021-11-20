@@ -2,7 +2,7 @@
 
 Pokud tento text nečtete v krytu, kde se mnoho let připravujete na zombie apokalypsu, nebo pokud jste se právě teď dozvěděli, že existuje něco jako webová vývojařina, myslím, že můžu předpokládat, že znáte framework Bootstrap.
 
-Tento frondendový framework se proslavil snadností stavby uživatelského rozhraní, zejména pro vývojáře nebo amatéry, kterým nejsou CSS, HTML a JavaScript úplně blízké.
+Tento frontendový framework se proslavil snadností stavby uživatelského rozhraní, zejména pro vývojáře nebo amatéry, kterým nejsou CSS, HTML a JavaScript úplně blízké.
 
 <figure>
 <img src="../dist/images/original/vdlayout/bootstrap-grid.png" width="1600" height="900" alt="Bootstrap - dokumentace ke gridu">

@@ -156,7 +156,7 @@ A teď ke slovu přichází ono zarovnání:
 Na nic nečekejme a vše vysvětleme:
 
 - Kontejneru rozvržení (`.container`) nastavíme po hlavní ose (`align-`) zarovnání všech položek (`-items`)  k horní hraně kontejneru (`start`). Dohromady tedy `align-items:start`.
-- Třetí položce `.item--3` udělíme výjimku. Bude zarovnaná ke spodní hradně kontejneru – `align-self:end`.
+- Třetí položce `.item--3` udělíme výjimku. Bude zarovnaná ke spodní hraně kontejneru – `align-self:end`.
 
 Mrkněte se na živý CodePen, pokud si to neumíte představit, ale asi to nebude těžké.
 
@@ -166,7 +166,7 @@ CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
 ### Zarovnání na účaří {#ucari}
 
-Zarovnání na účaří určuje polohu účaří položky nebo skupiny položek tím, že nad ní nebo nad ně přídává vnější okraj.
+Zarovnání na účaří určuje polohu účaří položky nebo skupiny položek tím, že nad ní nebo nad ně přidává vnější okraj.
 
 Zní to asi trochu zašmodrchaně, že? Ještě to chvíli zkuste číst, ono to není úplně neužitečné.
 
@@ -204,7 +204,7 @@ Tentokrát ovšem přidáme tuto deklaraci:
 Totiž:
 
 - Na rozdíl od první položky zarovnáme druhou a třetí na účaří (`align-self:baseline`).
-- Druhé položce přidáme vnitří okraj (`padding-top:3em`), takže prohlížeči zkomplikujeme jeho snahu o zarovnání.
+- Druhé položce přidáme vnitřní okraj (`padding-top:3em`), takže prohlížeči zkomplikujeme jeho snahu o zarovnání.
 
 Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku shora tak, aby druhá i třetí lícovala na účaří.
 
@@ -251,7 +251,7 @@ Jdeme na vysvětlování:
 
 CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
-### Zarovnání pro přetečení (bez podpory prohlížečí) {#overflow}
+### Zarovnání pro přetečení (bez podpory prohlížečů) {#overflow}
 
 Vlastnosti a hodnoty, které pomáhají definovat chování prohlížečů, když je předmět zarovnání větší než jeho kontejner.
 
@@ -291,6 +291,6 @@ Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `g
 }
 ```
 
-Uvedené vytvoří odkaz mřížku o třech slupcích a dvou rádcích. Mezery mezi položkami layoutu budou `1em` ve svislém směru a `0.5em` ve vodorovném.
+Uvedené vytvoří odkaz mřížku o třech sloupcích a dvou řádcích. Mezery mezi položkami layoutu budou `1em` ve svislém směru a `0.5em` ve vodorovném.
 
 Jako hodnoty bere vlastnost `gap` všechny možné délkové jednotky a také procenta, přičemž ty se vztahují na délku kontejneru layoutu.

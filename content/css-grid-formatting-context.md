@@ -12,7 +12,7 @@ Co se v prohlížečích stane pěkného (nebo pro někoho nepěkného) když na
 
 Hodnoty vlastnosti `margin` shora a zdola se neslučují s hodnotami sousedních prvků. To, co znáte z blokových elementů, ve světě CSS gridu neplatí.
 
-Je to logické. Mřížka slouží k rozvržení prvků na stránce. Při této čiinnosti by nám slučování vnějších okrajů působilo ještě větší trable než nám působí u blokových prvků.
+Je to logické. Mřížka slouží k rozvržení prvků na stránce. Při této činnosti by nám slučování vnějších okrajů působilo ještě větší trable než nám působí u blokových prvků.
 
 Chcete ukázku? Vezměme, že máme dva bloky se třemi vnitřními položkami. Každá položka má tento předpis v CSS:
 

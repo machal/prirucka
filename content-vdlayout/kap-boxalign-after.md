@@ -1,6 +1,6 @@
 # Shrnutí kapitoly
 
-Otesujte si, co jste se naučili o zarovnávání boxů v CSS.
+Otestujte si, co jste se naučili o zarovnávání boxů v CSS.
 
 1. **Co definuje CSS modul Box Alignment?**  
 a. zarovnání boxů v různých modelech rozvržení CSS  

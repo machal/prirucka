@@ -132,7 +132,7 @@ Následuje přehled možných hodnot vlastnosti `gap`. Čistě pro inspiraci, na
 
 Jak už jsem uvedl, toto je možné. V prvním čísle je svislý směr, v druhém vodorovný.
 
-Pojďme si to vyzkoušet na flexboxovém layoutu, který jsme ještě vlastností `gap`  nestihli nepotrápit:
+Pojďme si to vyzkoušet na flexboxovém layoutu, který jsme ještě vlastností `gap`  nestihli potrápit:
 
 ```css
 .container {
@@ -166,7 +166,7 @@ Dříve toto nefungovalo v Safari, ale nyní je to už zprovozněné. Do slunné
 
 CodePen: [cdpn.io/e/KKqqqpJ](https://codepen.io/machal/pen/KKqqqpJ?editors=1100)
 
-A k čemu, že se funkce `calc()` může hodit? Příkladem budiž odpočítání šířky rámečků (`border`) buňek layoutu z celkové šířky mezery.
+A k čemu, že se funkce `calc()` může hodit? Příkladem budiž odečtení šířky rámečků (`border`) buněk layoutu z celkové šířky mezery.
 
 <div class="ebook-only" markdown="1">
 

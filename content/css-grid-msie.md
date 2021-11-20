@@ -37,7 +37,7 @@ To myslím není zlé.
 
 Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“.
 
-Jejich příčinou je rychlá implementace gridu v ranné fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, grid ale v Exploreru zůstal v původní variantě, protože se tento prohlížeč ve své době aktualizoval jen velmi pomalu.
+Jejich příčinou je rychlá implementace gridu v rané fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, grid ale v Exploreru zůstal v původní variantě, protože se tento prohlížeč ve své době aktualizoval jen velmi pomalu.
 
 ## Třísloupcové demo aneb „Jak to kurnikšopa funguje?“ {#demo}
 
@@ -177,7 +177,7 @@ Autoprefixer namísto `-gap` vygeneruje extra řádky nebo sloupečky. Fajn ře�
 
 Tady máte zatím smůlu:
 
-- [`grid`](css-grid-zkratka.md) je zkratka pro `grid-template-rows`, `grid-template-columns` a `grid-template-areas`. Doporučuje se namísto ní použí `grid-template`.
+- [`grid`](css-grid-zkratka.md) je zkratka pro `grid-template-rows`, `grid-template-columns` a `grid-template-areas`. Doporučuje se namísto ní použít `grid-template`.
 - Automatické umístění: [`grid-auto-columns`, `grid-auto-rows`](css-grid-auto-rows-columns.md) nebo [`grid-auto-flow`](css-grid-auto-flow.md).
 
 Automatické umísťování ale u jednodušších layoutů udělat jde, jak za chvíli uvidíte.
@@ -248,7 +248,7 @@ I když IE [funkci `repeat()`](css-repeat.md) zvládá, klíčová slova `auto-f
 V moderních prohlížečích lze obojí kombinovat, v IE bohužel ne. Buď tedy budete všechny prvky gridu umísťovat ručně (použijte vlastnost `grid-template-areas` v definici gridu) nebo automaticky (bez `*-areas`).
 - *Pozor na pseudoelementy*  
 `::before` a `::after` uvnitř gridu vám v IE rozbijí mřížku, to se vsaďte.
-- *V Media Qeuries nelze změnit jen grid-gap*  
+- *V Media Queries nelze změnit jen grid-gap*  
 Namísto toho je Autoprefixeru potřeba znovu deklarovat explicitní mřížku pomocí vlastností `grid-template-*`.
 
 Neřeší to všechno, ale máme tady o jeden silný důvod navíc použít.

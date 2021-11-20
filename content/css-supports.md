@@ -213,7 +213,7 @@ Dalším omezením je samotná podpora vlastnosti, v tomto případě ale zále�
 
 `@supports` nepodporuje žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
 
-Je ovšem otázka, jak moc vadí nepodpora v Internet Exploreru. Mě nevadí. Hned vám řeknu proč.
+Je ovšem otázka, jak moc vadí chybějící podpora v Internet Exploreru. Mě nevadí. Hned vám řeknu proč.
 
 Internet Explorer totiž je skoro vždy ve skupině prohlížečů, které vlastnost nezvládají. Proto vůbec nevadí, když nerozumí ani otázce, zda vlastnost zvládá.
 

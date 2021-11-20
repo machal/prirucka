@@ -107,7 +107,7 @@ Pojďme na ty chyby, ať tu nepříjemnost máme za sebou.
 5. Položky flexboxu se špatně zarovnají, když se užívá `max-width` _(flexbug #17)_.
 6. Položky flexboxu lezou z kontejneru, který má `align-items:center` _(flexbug #2)_.
 7. Vlastnost `min-height` na flex kontejneru nefunguje _(flexbug #3)_.
-8. Pložky flexboxu neudržují poměr stran _(flexbug #5)_.
+8. Položky flexboxu neudržují poměr stran _(flexbug #5)_.
 9. Položky flexboxu neumí zarovnání pomocí `margin:auto` na příčné ose _(flexbug #15)_.
 
 Máte přečteno? A máte z toho depresi? Chvilku počkejte.
@@ -147,7 +147,7 @@ A pak na ty, kteří mají trochu smůlu.
 <figure>
 <img src="../dist/images/original/css-grid-caniuse.png" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Podpora gridu v prohlížečích. Zelenohnědá barva u IE nevěští nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
+*Podpora gridu v prohlížečích. Zelenohnědá barva u IE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
 </figcaption>
 </figure>
 
@@ -243,7 +243,7 @@ Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmín
 
 Jak je vidno, v moderních prohlížečích je to v pořádku.
 
-Nepodpora `justify-items` i `justify-self` v IE je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči.
+Chybějící podpora `justify-items` i `justify-self` v IE je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči.
 
 V případě, že podporujete IE to je u gridu celkově složitější, viz následující [pojednání o tom](css-grid-msie.md).
 

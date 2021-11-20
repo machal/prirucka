@@ -78,7 +78,7 @@ Grafiku oddělovače je také samozřejmě možné vypnout pomocí hodnoty `none
 
 ## `column-rule-width`: šířka oddělovače {#column-rule-width}
 
-I zde se samozřejmě akceptují jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, která ale pravděpodobně každý prohlížeč vykreslí jinak. V Chrome to dle mých propočtu odpovídá šířce 1, 2 a 5 pixelů.
+I zde se samozřejmě akceptují jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, která ale pravděpodobně každý prohlížeč vykreslí jinak. V Chrome to dle mých propočtů odpovídá šířce 1, 2 a 5 pixelů.
 
 Výchozí hodnota je `medium`.
 
@@ -114,7 +114,7 @@ CodePen: [cdpn.io/e/eYdGEKR](https://codepen.io/machal/pen/eYdGEKR?editors=1100)
 
 1. První deklarace (`gap:auto; column-rule:none;`) nastavuje mezeru i oddělovač na výchozí hodnoty, tzn. mezera má šířku `1em` a oddělovač se nevykresluje. Všimněte si použití vlastnosti `gap` namísto `column-gap`. V moderních prohlížečích je to prostě synonymum.
 2. Druhá deklarace (`gap:3em; column-rule:dotted lightgrey;`) – nastaví trojnásobnou mezeru a tečkovaný oddělovač. Jeho šířku jsem byl líný definovat, takže se použije `medium`.
-3. Třetí deklarace (`gap:3em; column-rule:4em solid lightgrey;`) je záludná – nastaví oddělovač o větší šířce než mezeru. Jasně, asi to hned nepoužijete, to chápu. Chtěl jsem zde totiž ukázat to, co píšu výše – oddělovač si z celkové šířky rodičovského kontejneru nevezmě ani pixel. Vykreslí se doprostřed mezery a když ta mu přestane stačit, neváhá překrývat ani obsah ve sloupcích. Ano, takhle bezzkurpulózní ten oddělovač je…
+3. Třetí deklarace (`gap:3em; column-rule:4em solid lightgrey;`) je záludná – nastaví oddělovač o větší šířce než mezeru. Jasně, asi to hned nepoužijete, to chápu. Chtěl jsem zde totiž ukázat to, co píšu výše – oddělovač si z celkové šířky rodičovského kontejneru nevezme ani pixel. Vykreslí se doprostřed mezery a když ta mu přestane stačit, neváhá překrývat ani obsah ve sloupcích. Ano, takhle bezskurpulózní ten oddělovač je…
 
 A jak tyhle legrace můžete využívat v dnešních prohlížečích?
 

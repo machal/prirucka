@@ -66,7 +66,7 @@ Asi víte, že svislé vnější okraje (`margin-top` a `margin-bottom`) prvků 
 
 Z příkladu výše pak hezky uvidíte, že v případě nadpisu, který nastavíte jako překlenující (`column-span:all`) to neplatí.
 
-Je to proto, že prohlížeč pokaždé když začne tvořit sloupečkové rozvržení, zároveň vytvoří nový blokový formátovací kontext.
+Je to proto, že prohlížeč pokaždé když začne tvořit sloupcové rozvržení, zároveň vytvoří nový blokový formátovací kontext.
 
 Pokud byste ale umístili dva nadpisy s nastavením `column-span:all` k sobě, jejich svislé vnější marginy by splývaly.
 

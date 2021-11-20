@@ -153,7 +153,7 @@ Pravidla – kdy se spouští která značka?
 
 ## Datová vrstva, dataLayer {#data-layer}
 
-Už jsem tu mnohokrát zmínil pojem dataLayer. Jeho [dokumentaci pro GA4](https://developers.google.com/tag-manager/ecommerce-ga4) případně pro [Universal Analytics](https://developers.google.com/tag-manager/enhanced-ecommerce) je dobré si pročíst.
+Už jsem tu mnohokrát zmínil pojem dataLayer. Jeho [dokumentaci pro GA4](https://developers.google.com/tag-manager/ecommerce-ga4) případně pro [Universal Analytics](https://developers.google.com/tag-manager/enhanced-ecommerce) je dobré si přečíst.
 
 Ve zkratce se jedná o vrstvu, do které posíláte data. Co uživatel viděl, kam kliknul, co si vložil do košíku…
 

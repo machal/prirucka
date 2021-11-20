@@ -156,7 +156,7 @@ CodePen: [cdpn.io/e/VwbpjKK](https://codepen.io/machal/pen/VwbpjKK?editors=1100)
 
 Pojďme si ale položit otázku, zda by i zde nebylo vhodnější vyřešit úkol pomocí mřížky. Zmizel by nám minimálně problém s nutností nastavovat mezery mezi prvky vlastností `margin`, která je tak… _oldschool_!
 
-Příjímám sázky. Umožní nám grid více sexy řešení?
+Přijímám sázky. Umožní nám grid více sexy řešení?
 
 ## Řešení gridem
 
@@ -244,7 +244,7 @@ Došli jste ke stejnému nebo jinému řešení? V čem je to vaše lepší? Kli
 
 Tady se samozřejmě musím pozastavit u využití dotazů na média - [Media Queries](media-queries.md). V předchozí kapitole vcelku jasně píšu, že ty se hodí hlavně pro rozvržení celé stránky.
 
-Jenže v tomto případě jsme se zaměřili na jednu malou komponentu. Tu navíc můžou naší zlovolní vývojářští a designérští kolegové umísťovat do různých míst stránek, přesně podle dnešního způsobu práce se systémy komponent.
+Jenže v tomto případě jsme se zaměřili na jednu malou komponentu. Tu navíc mohou naší zlovolní vývojářští a designérští kolegové umísťovat do různých míst stránek, přesně podle dnešního způsobu práce se systémy komponent.
 
 Zde by se prostě daleko víc hodilo namísto dotazů na média a klíčového slova `@media` hodilo použít dotazy na rodičovský element a slovo `@container`. Jak ale už také víte, [Container Queries](container-queries.md) jsou v době psaní jen zkušebně implementovány v prohlížeči Chrome a vůbec není jisté, že se ujmou.
 

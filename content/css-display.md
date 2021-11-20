@@ -168,7 +168,7 @@ Element ani jeho potomkové se na obrazovku prostě nevykreslí.
 - `contents`  
 Element se na obrazovku nevykreslí, ale jeho potomkové ano.
 
-Zobrazení typu `contents` funguje tak, jako by byl ve DOM stromu nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
+Zobrazení typu `contents` funguje tak, jako by byl v DOM stromu nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
 
 CodePen: [cdpn.io/e/zYKmaMb](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
 

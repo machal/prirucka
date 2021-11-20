@@ -84,7 +84,7 @@ CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 
 Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba uvědomit si, že vycházejí z obecné vlastnosti CSS - dvou směrů: blokového řádkového.
 
-- _Řádková osa (inline)_ je směr sázení textu pořádcích.
+- _Řádková osa (inline)_ je směr sázení textu po řádcích.
 - _Bloková osa (block)_ zase ve směru protilehlém.
 
 Asi si to umíte představit podle [vlastnosti `display`](css-display.md), která má hodnoty `inline` a `block`.

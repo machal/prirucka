@@ -100,7 +100,7 @@ CodePen: [cdpn.io/e/NWKzjoV](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
 }
 ```
 
-Zkuste si v CodePenu změnit šířku okna a dívat se přitom na rodičovský element ve vývojářských nástrojích Chrome nebo Fifefoxu. Uvidíte něco podobného jako je na obrázku výše.
+Zkuste si v CodePenu změnit šířku okna a dívat se přitom na rodičovský element ve vývojářských nástrojích Chrome nebo Firefoxu. Uvidíte něco podobného jako je na obrázku výše.
 
 CodePen: [cdpn.io/e/BaBVREb](https://codepen.io/machal/pen/BaBVREb?editors=1100)
 

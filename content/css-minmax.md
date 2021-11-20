@@ -166,7 +166,7 @@ Musíme zmínit, že pouze stopy mřížky s rozměry nastavenými na `auto` je
 
 Považuji zde za vhodné připomenout, že naše příklady jsou hodně zjednodušené, protože v daném sloupci rozvržení pomocí CSS gridu máme vždy jen jednu obsahovou buňku.
 
-Jak se ovšem bude `minmax()` chovat v případě použití u sloupečků (nebo řádků), kde je buněk více? U maxima vezme vždy tu nejmenší velikost z obsahu všech buňek, u minima pak největší.
+Jak se ovšem bude `minmax()` chovat v případě použití u sloupečků (nebo řádků), kde je buněk více? U maxima vezme vždy tu nejmenší velikost z obsahu všech buněk, u minima pak největší.
 
 Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených buněk. Tak, aby se žádný z prvků mřížky nedeformoval pod své obsahové minimum nebo nad své maximum. To je fér, ne?
 

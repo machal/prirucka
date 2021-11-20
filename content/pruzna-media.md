@@ -1,6 +1,6 @@
 # Vkládaná média se zachováním poměru stran
 
-Jak zařídit, aby se obrázky, video a prvky vkládané přes `<iframe>` přizpůsobovaly šířce rodičovského elementu a ještě k tomu zachovávaly [poměr stran](css-pomer-stran.md)?
+Jak zařídit, aby se obrázky, video a prvky vkládané přes `<iframe>` přizpůsobovaly šířce rodičovského elementu a ještě k tomu zachovaly [poměr stran](css-pomer-stran.md)?
 
 ## Pružné obrázky
 

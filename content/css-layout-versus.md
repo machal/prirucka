@@ -35,7 +35,7 @@ Pojďme na tyto techniky prostě zapomenout. Máme kladívko, takže paličkou d
 
 Nevýhodou „pseudolayoutů“ je jejich špatná zapamatovatelnost. Tabulkový layout je dodnes relativně populární právě proto, že je velmi logický. 
 
-Ale vysvětlujte začátečníkovi, jak dělat rozvržení pomocí vlastnosti `float`. Musíte vždy dodat „clearování“ nějaký způsob, jak plovoucí prvky resetovat. Není to prostě úplně jednoduché a občas se to chová divně.
+Ale vysvětlujte začátečníkovi, jak udělat rozvržení pomocí vlastnosti `float`. Musíte vždy dodat „clearování“ nějaký způsob, jak plovoucí prvky resetovat. Není to prostě úplně jednoduché a občas se to chová divně.
 
 „Pseudolayout“ se špatně vysvětluje a špatně používá, proto lidé hledali způsob jak si často se opakující nepříjemnosti zjednodušit. Řešení této situace my v IT říkáme „framework“.
 
@@ -45,7 +45,7 @@ V druhé polovině první dekády 21. století (sic!) začaly vznikat nástroje,
 
 Vznik CSS frameworků podpořily problémy v kompatibilitě napříč prohlížeči, které vznikaly i při tvorbě na pohled jednoduchých rozvržení.
 
-### Ranný webdesign: Jak to vlastně dělali sazeči knih a novin?
+### Raný webdesign: Jak to vlastně dělali sazeči knih a novin?
 
 Někdy mezi roky 2005 až 2010 si navíc webaři začali ve velkém všímat typografických principů ze sazby knih, novin a časopisů.
 
@@ -85,7 +85,7 @@ Zároveň zde ale vznikl problém s nadužíváním těchto nástrojů. Jako kon
 
 Když se tento laxní přístup k rychlosti nakombinuje s dalšími *ne-optimalizacemi*, na vykreslení stránky uživatel čeká… a čeká…
 
-CSS grid nás nezbavuje nutnosti přepínat pozornost z HTML do CSS, ale řeší problémy s nefukčními základními layouty a radikálně zjednodušuje znalosti, které o psaní CSS pro rozvržení stránky musíte mít.
+CSS grid nás nezbavuje nutnosti přepínat pozornost z HTML do CSS, ale řeší problémy s nefunkčními základními layouty a radikálně zjednodušuje znalosti, které o psaní CSS pro rozvržení stránky musíte mít.
 
 V knížce se proto pokusíme nahradit některé základní scénáře použití mřížky z Bootstrapu pomocí CSS gridu.
 
@@ -93,7 +93,7 @@ Tímto tedy oficiálně zahajuji snahu vás přesvědčit, abyste nepoužívali 
 
 Možná, že to nebude snadné, ale společně to zvládneme. Ostatně – celá citace rozhovoru z úvodu této podkapitoly má znít následovně:
 
-Luke Skywalker: „Umět hnout kamenem je jedna věc, ale tohle je něco jiného“.  
+Luke Skywalker: „Umět pohnout kamenem je jedna věc, ale tohle je něco jiného“.  
 Mistr Yoda: „Ne, není to jiné. Jiné je to v tvé hlavě. Musíš se teď odnaučit, co tě dřív učili.“  
 Luke Skywalker: „Dobře, já to teda zkusím.“  
 Mistr Yoda: „Ne, nezkusíš. Uděláš to nebo ne. Už žádné zkusím!“  

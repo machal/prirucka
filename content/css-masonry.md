@@ -22,7 +22,7 @@ CSS masonry snad jednou bude součástí specifikace [CSS gridu](css-grid.md).
 
 Kodérky a kodéři jsou ovšem dneska nucení jej dělat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu flexboxu, ale plně to nevyřešil ani grid.
 
-Teď už se ale snad blýská na lepší časy. Chystaná třetí verze specicikace gridu totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
+Teď už se ale snad blýská na lepší časy. Chystaná třetí verze specifikace gridu totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
 
 ```css
 .container {
@@ -31,7 +31,7 @@ Teď už se ale snad blýská na lepší časy. Chystaná třetí verze specicik
 }
 ```
 
-Zatím to bohužel má podporu jen v Nightly verzi Firefoxu. Je možné, že se to ujme a že nás to zbaví dalšího nadbytečného javascriptového pluginu. 
+Zatím to bohužel má podporu jen v Nightly verzi Firefoxu. Je možné, že se to ujme a že nás to zbaví dalšího nadbytečného javascriptového pluginu.
 
 Aktuálně to ale na webech používat nemůžeme, proto se v článku kromě budoucnosti (nativní implementace v CSS) věnujeme i současnosti (řešení pomocí JS komponent).
 
@@ -58,7 +58,7 @@ Však se podívejte na obrázek výše, z toho to bude asi vidět lépe. Hlavní
 
 <!-- AdSnippet -->
 
-V současnosti se tyto typy rozvržení dělají pomocí dnes už legendární javascriptové kompomenty „Masonry“ od Davida DeSandra. [masonry.desandro.com](https://masonry.desandro.com/)
+V současnosti se tyto typy rozvržení dělají pomocí dnes už takřka legendární javascriptové komponenty „Masonry“ od Davida DeSandra. [masonry.desandro.com](https://masonry.desandro.com/)
 
 Autorovi všechna čest, ale je nutné si přiznat, že z pohledu vykreslovacího (ale i načítacího) výkonu stránky nebude takto razantní ovlivňování layoutu JavaScriptem nikdy optimální. Tohle má prostě dělat prohlížeč a autoři to mají definovat v CSS.
 
@@ -170,11 +170,11 @@ Do doby než se dokončí specifikace a prohlížeče nativní masonry naimpleme
 Existují dvě varianty:
 
 - *Masonry*  
-„JavaScript grid layout library“ je použitelná s jQuery nebo také s čistým JavaSciptem. Má spoustu možností nastavení. 24 kB dat po minifikaci, 8 kB po gzipu. [masonry.desandro.com](https://masonry.desandro.com/)
+„JavaScript grid layout library“ je použitelná s jQuery nebo také s čistým javascriptem. Má spoustu možností nastavení. 24 kB dat po minifikaci, 8 kB po gzipu. [masonry.desandro.com](https://masonry.desandro.com/)
 - *Colcade*  
 Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny jako spojování sloupečků (multi-column-spanning) nebo přechody (transitions). [github.com/desandro/colcade](https://github.com/desandro/colcade)
 
-Další metody alternativného řešení zděného layoutu majít dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScipt. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
+Další metody alternativního řešení zděného layoutu mají dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScript. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
 
 ### Vícesloupcový layout {#dalsi-multicol}
 

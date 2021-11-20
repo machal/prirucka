@@ -36,7 +36,7 @@ V prohlížeči bude naše mřížka vypadat následovně:
 </figcaption>
 </figure>
 
-Na obrázku vidíme jeden kontejner a pět položek mřížky, čímž se dostáváme k našim pojmům. Budu je zde uvádět česky s anglickým ekvivalentem v závorce, v dalších textech už povětšinou jen česky.
+Na obrázku vidíme jeden kontejner a pět položek mřížky, čímž se dostáváme k našim pojmům. Budu je zde uvádět česky s anglickým ekvivalentem v závorce, v dalších textech už většinou jen česky.
 
 ## Kontejner mřížky (grid container) {#kontejner}
 
@@ -105,7 +105,7 @@ Kontejner je teď menší než je samotná mřížka. Po vytečení „položek 
 </figcaption>
 </figure>
 
-Mimochodem, s původně uvedeným CSS a HTML by to takhle udělat nešlo. Musel jsem styly trochu změnit tak, aby si položky kontejneru zachovávaly nějakou minimální šířku:
+Mimochodem, s původně uvedeným CSS a HTML by to takhle udělat nešlo. Musel jsem styly trochu změnit tak, aby si položky kontejneru zachovaly nějakou minimální šířku:
 
 ```css
 .container {
@@ -124,7 +124,7 @@ Mřížka je ona neviditelná pravidelná síť, do které umísťujeme náš la
 
 Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési „okno“ pro vykreslování mřížky.
 
-Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkne vizualizovat v DevTools.
+Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkně vizualizovat v DevTools.
 
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-firefox.png" width="1600" height="450" alt="CSS grid Inspector ve Firefoxu">
@@ -209,7 +209,7 @@ Abychom mohli buňku ovlivnit z CSS, musíme z ní udělat oblast.
 
 ## Oblast mřížky (grid area) {#oblast}
 
-Oblast je prostor vymezený čtyřmi linkami mřížky, který ale může být možné dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buňek mřížky.
+Oblast je prostor vymezený čtyřmi linkami mřížky, který ale může být možné dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buněk mřížky.
 
 V naší ukázce jsme pátou položku ručně umístili na místo páté a šesté buňky mřížky, tedy do prostoru, který v předchozím obrázku vidíte jako neobsazený.
 

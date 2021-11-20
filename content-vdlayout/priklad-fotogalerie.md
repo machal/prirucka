@@ -61,8 +61,8 @@ Pokud vás pro tyto případy napadl jako vhodný systém pro rozvržení [CSS M
 
 Vysvětlím to:
 
-- [Vlastností `columns`](css-multicol-columns.md), což je zkratka pro nastavení počtu sloupečků nebo jejich doporučené šířky, zde jako šířku nastavuji polovinu šířky sloupečku.
-- S pomocí druhé vlastnosi, [`gap`](css-gap.md), nastavuji šířku mezi sloupečky. To už znáte.
+- [Vlastností `columns`](css-multicol-columns.md), což je zkratka pro nastavení počtu sloupečků nebo jejich doporučené šířky, zde jako šířku nastavuji polovinu šířky sloupce.
+- S pomocí druhé vlastnosti, [`gap`](css-gap.md), nastavuji šířku mezi sloupečky. To už znáte.
 
 Chybí mi tady ještě jedna věc a to zákaz zalomení uvnitř prvku `<figure>`, protože bychom velmi neradi viděli popisek z prvku `<figcaption>` mimo samotný obrázek, třeba hned na začátku následujícího sloupce:
 
@@ -79,7 +79,7 @@ CodePenu: [cdpn.io/e/ZEKKozg](https://codepen.io/machal/pen/ZEKKozg?editors=1100
 Zamysleme se však také nad nevýhodami volby vícesloupcového layoutu pro kód zadání.
 
 - Náhledy fotografií se řadí do sloupců pod sebe. Takže druhá fotka bude pod první, nikoliv vedle ní.
-- Položky s fotkami netvoří mřížku, ale jsou volně vyskládané, příčemž roli hraje celková výška položky, určená také délkou textu popisku.
+- Položky s fotkami netvoří mřížku, ale jsou volně vyskládané, přičemž roli hraje celková výška položky, určená také délkou textu popisku.
 
 Ve spoustě situací to ale může být vhodné řešení, na obrázku uvidíte, že vizuálně působí dobře.
 

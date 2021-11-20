@@ -111,7 +111,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
 </div>
 
-### Funkce a klíčová clova {#vlastnosti-funkce}
+### Funkce a klíčová slova {#vlastnosti-funkce}
 
 Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám zatím s odkazem na anglické zdroje:
 

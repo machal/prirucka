@@ -16,7 +16,7 @@ Jako nedostatečné vnímají možnosti rozvržení v CSS už samotní zakladate
 
 ## 1998: MULTICOL
 
-Andreesen se snaží layout naimplementovat do svého prohlížeče Netscape Navigator a tak verze 3 přichází s tímto zápisem:
+Andreesen se snaží layout implementovat do svého prohlížeče Netscape Navigator a tak verze 3 přichází s tímto zápisem:
 
 ```html
 <MULTICOL COLS="2">
@@ -48,7 +48,7 @@ BODY {
 }
 ```
 
-Klobou dolů, zvládli to specifikovat skoro na první dobrou.
+Klobouk dolů, zvládli to specifikovat skoro na první dobrou.
 
 ## 2002: Éra floatů
 
@@ -112,7 +112,7 @@ V Microsoftu se dějí věci. Plánují zaříznout Silverlight, zjednodušeně 
 <figure>
 <img src="../dist/images/original/vdlayout/silverlight.png" width="1920" height="540" alt="Microsoft Silverlight">
 <figcaption markdown="1">
-*Obrázek: To by člověk nečekal, na jak podivných místech najde inspirační zdroje dnešního moderního CSS. Děkovné dopisy prossím posílejte do Microsoftu.*
+*Obrázek: To by člověk nečekal, na jak podivných místech najde inspirační zdroje dnešního moderního CSS. Děkovné dopisy prosím posílejte do Microsoftu.*
 </figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ V témže roce přijde Tab Atkins, další známá postava standardů kolem CSS,
 
 ## 2012: Přelom. Prohlížeče implementují flexbox, Microsoft předává grid do W3C
 
-Cupp prezentuje nový systém rozvržení konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konfrenci WebExpo 2016) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS gridu.
+Cupp prezentuje nový systém rozvržení konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konferenci WebExpo 2016) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS gridu.
 
 V čem byl ale tento pokus o implementaci rozvržení typu mřížky jiný než všechny předchozí? Je to jednoduché – Phil Cupp a jeho lidé zařídili implementaci v prohlížeči.
 

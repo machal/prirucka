@@ -6,13 +6,13 @@ Media Queries mají širokou podporu v prohlížečích, ale lidé ve standardiz
 
 Zato Container Queries jsou navržené pro větší část scénářů, kdy tyto dotazy potřebujeme – pro layout komponent ve stránce, tedy jen výseku okna prohlížeče. Jenže v době psaní těchto textů Container Queries podporu prakticky nemají.
 
-V moderních systémech layoutu je ještě jedna možnost – zalamovat rovržení úplně bez podmínek, takzvané „No Queries“ layouty. Na první pohled to může znít skvěle, i mě to tak pořád zní, ale má to řadu háčků nebo přímo velrybářských harpun, abych byl přesný.
+V moderních systémech layoutu je ještě jedna možnost – zalamovat rozvržení úplně bez podmínek, takzvané „No Queries“ layouty. Na první pohled to může znít skvěle, i mě to tak pořád zní, ale má to řadu háčků nebo přímo velrybářských harpun, abych byl přesný.
 
-Prostě od toho raději zase tak moc nečekejte. Ale jsou situace, kdy vám No Queries (zkusme jim alterantivně říkat také „bezdotazová rozvržení“) v praxi velmi pomohou, takže pojďme na to. Ve většině příkladů budeme zalamováním layoutu opět trápit náš mediální objekt.
+Prostě od toho raději zase tak moc nečekejte. Ale jsou situace, kdy vám No Queries (zkusme jim alternativně říkat také „bezdotazová rozvržení“) v praxi velmi pomohou, takže pojďme na to. Ve většině příkladů budeme zalamováním layoutu opět trápit náš mediální objekt.
 
 ## Flexbox a `min-width` s `max-width`
 
-Nejprve si alespoň zjednodušeně připomeňme strukturu HMTL, která drží naší komponentu:
+Nejprve si alespoň zjednodušeně připomeňme strukturu HTML, která drží naší komponentu:
 
 ```html
 <div class="container">
@@ -38,7 +38,7 @@ Výchozí hodnota `nowrap` totiž zalamování zakazuje. Připomínám, že krom
 
 ### Samotné řešení
 
-Po nutném úvodu teď už pojďme na kód, který pro řešení zalamování layoutu bez dotazů používám:
+Po nutném úvodu teď už pojďme na kód, který pro řešení zalomení layoutu bez dotazů používám:
 
 ```css
 .item {
@@ -100,7 +100,7 @@ Na obrázku je vidět moment, kdy už jsme došli k maximu jeho šířky ale je�
 
 ### Alternativa bez `min-width` a `max-width`
 
-Zkusme to namísto věčného komplikování spíše zjednodušit. Řešení využívající flexbox je možné ořezat na kost a nepoužít přitom minimální a maximální šířku:
+Zkusme to místo věčného komplikování spíše zjednodušit. Řešení využívající flexbox je možné ořezat na kost a nepoužít přitom minimální a maximální šířku:
 
 ```css
 .item__image {
@@ -144,8 +144,8 @@ Pojďme si to ukázat přímo v kódu. HTML je pořád stejné, mění se jen ka
 
 Jádro triku je v zápisu `repeat(auto-fit, minmax(300px, 1fr))`, proto právě této části pojďme věnovat zvýšenou péči:
 
-- [Funkce `repeat()`](css-repeat.md) zajistí opakované vykreslení buněk. Prostě namísto `1fr 1fr 1fr` uvedeme `repeat(3, 1fr)`.
-- Kouzlo přichází, když namísto počtu uvedeme do prvního parametru `auto-fit`, který zajistí roztahování a smršťování již existujících buňek layoutu.
+- [Funkce `repeat()`](css-repeat.md) zajistí opakované vykreslení buněk. Prostě místo `1fr 1fr 1fr` uvedeme `repeat(3, 1fr)`.
+- Kouzlo přichází, když namísto počtu uvedeme do prvního parametru `auto-fit`, který zajistí roztahování a smršťování již existujících buněk layoutu.
 - Přidáme ještě minimální a maximální velikost buňky, `minmax(300px, 1fr)`, a máme hotovo.
 
 CodePen: [cdpn.io/e/GRrMexj](https://codepen.io/machal/pen/GRrMexj?editors=1100)
@@ -192,7 +192,7 @@ CodePen: [cdpn.io/e/zYNaLjB](https://codepen.io/machal/pen/zYNaLjB?editors=1100)
 
 [Vlastnost `columns`](css-multicolumn.md) a ostatní, které z ní vycházejí (součást balíčku  CSS Multiple Column), je hotový ráj pro milovníky bezdotazových rozvržení. Má to ale háček, tahle specifikace je vymyšlená takřka výlučně pro sázení textového obsahu.
 
-Pojďme to ale trochu hacknout a použít pro naši mediální komponentu. HTML zůstává stejné, styly jako vždy převlákají kabát:
+Pojďme to ale trochu hacknout a použít pro naši mediální komponentu. HTML zůstává stejné, styly jako vždy převlékají kabát:
 
 ```css
 .item {
@@ -222,7 +222,7 @@ CodePen: [cdpn.io/e/ExZmRbM](https://codepen.io/machal/pen/ExZmRbM?editors=1100)
 
 Pro takzvaný No Queries Layout s pomocí vlastnosti `columns` zde máme ještě jednu demostrační ukázku.
 
-Responzivní obrázková galerie je opět založena pouze na definici šířky sloupečku s pomocí `column-width`. Zde je řešení obohacené také o `break-inside:avoid`, což zabrání zalomení sloupečku uvnitř položky galerie. [cdpn.io/e/rraAgj](https://codepen.io/machal/pen/rraAgj?editors=1100)
+Responzivní obrázková galerie je opět založena pouze na definici šířky sloupce s pomocí `column-width`. Zde je řešení obohacené také o `break-inside:avoid`, což zabrání zalomení sloupečku uvnitř položky galerie. [cdpn.io/e/rraAgj](https://codepen.io/machal/pen/rraAgj?editors=1100)
 
 Řekl bych, že pro obrázkovou galerii je bezdotazový layout pomocí vlastnosti `column` vhodnější. V případě mediálního objektu byly až příliš patrné nevýhody jako nutnost stejné šířky sloupečků.
 
@@ -230,7 +230,7 @@ Tak či tak, obě řešení využívají CSS Multicol Layout pro situace, na kte
 
 ## No Queries mimo CSS layouty: Technika „The Fab Four“
 
-Není to úplně předmětem této knížky, ale ani tuto metodu nechci přejít mlčením. Jde o způsob, jak dělat rozvržení bez Media Queries, zcela mimo světy gridu, flexboxu a vícesloupcového layoutu.
+Není to úplně předmětem této knížky, ale ani tuto metodu nechci přejít mlčením. Jde o způsob, jak udělat rozvržení bez Media Queries, zcela mimo světy gridu, flexboxu a vícesloupcového layoutu.
 
 Trik „The Fab Four“, který Rémi Parmentier pojmenoval podle amerického revivalového bandu Beatles, byl původně určen pro tvorbu responzivních e-mailů. Jak možná mnozí víte, e-mailové klienty netvoří zrovna přátelskou partu co se Media Queries týče.
 
@@ -247,7 +247,7 @@ Technika je založená na tomto kódu pro jednotlivé položky layoutu:
 
 Vysvětlení:
 
-1. V `min-width:30%` je hodnota šířky pro rovržení v šířce rodiče menší než je breakpoint.
+1. V `min-width:30%` je hodnota šířky pro rozvržení v šířce rodiče menší než je breakpoint.
 2. V hodnotě `400px` je uložený breakpoint.
 3. V `max-width:100%` je hodnota pro šířky větší než breakpoint.
 
@@ -265,9 +265,9 @@ Dlužím vám ještě demo. Asi nejlepší je to následující, ze kterého má
 
 CodePen: [cdpn.io/e/ZQgEoZ](https://codepen.io/thierry/pen/ZQgEoZ?editors=1100)
 
-Zde bychom odbočku k layoutům bez Media (a Container) Queries mohli ukončit. Než jsem tuto podklapitolu začal psát, přemýšlel jsem, zda se do toho vůbec pouštět.
+Zde bychom odbočku k layoutům bez Media (a Container) Queries mohli ukončit. Než jsem tuto podkapitolu začal psát, přemýšlel jsem, zda se do toho vůbec pouštět.
 
-Proti bylo část mé osobnosti, která má ráda čistá řešení, která odmítá používat kladivo na klepání masa a paličku na přibíjení hřebíků. Ta která ví, že tato řešení mají řadu nevýhod a složitostí, jež mohou například začátečníky svést na zcestí, kde po prvotním nadšení přijde kruté vystřízlivění v podobě zjištění, že pro jejich případ se toto řešení nehodí.
+Proti bylo část mé osobnosti, která má ráda čistá řešení, která odmítá používat kladivo na klepání masa a paličku na přibíjení hřebíků. Ta která ví, že tato řešení mají řadu nevýhod a složitostí, jež mohou například začátečníky svést na scestí, kde po prvotním nadšení přijde kruté vystřízlivění v podobě zjištění, že pro jejich případ se toto řešení nehodí.
 
 Pro zveřejnění byla moje praktická část („Občas se to někomu může hodit, když ještě v prohlížečích nemáme Container Queries.“) a autorská část („Když už píšeš o layoutech, toto nemůžeš vynechat.“)
 

@@ -2,7 +2,7 @@
 
 Doba je rychlá a inovace zvýšily tempo řešení situací, které lidem dříve zabíraly velké množství času.
 
-Vezměme třeba seznamování. Když jsem byl v pubertě, bylo potřeba obléct sváteční kostkovanou košili, co nejpodobnější té, jakou nosil Kurt Kobain, vyrazit na vesnickou zábavu, investovat do vstupného, investovat do tekutin, které zajistí uvolněnost a zábavnost, převést se v tanci na 2Unlimited a celou dobu hlída, až budou hrát Nothing Else Matters, v tu chvíli sprintovat pro dívku snů… Bylo to složité a v mém případě s nejistým výsledkem.
+Vezměme třeba seznamování. Když jsem byl v pubertě, bylo potřeba obléct sváteční kostkovanou košili, co nejpodobnější té, jakou nosil Kurt Cobain, vyrazit na vesnickou zábavu, investovat do vstupného, investovat do tekutin, které zajistí uvolněnost a zábavnost, předvést se v tanci na 2 Unlimited a celou dobu hlídat, až budou hrát Nothing Else Matters, v tu chvíli sprintovat pro dívku snů… Bylo to složité a v mém případě s nejistým výsledkem.
 
 Dnešní seznamovací aplikace a weby jsou úplně jinde, člověk párkrát klikne a je to. Je to rychlé.
 
@@ -23,9 +23,9 @@ Tohle bude Tinder pro systémy layoutu v CSS.
 
 Zatímco na skutečném Tinderu máte k ruce vystajlované fotky možných partnerek nebo partnerů, CSS layouty jsou sexy asi jako návod na sestavení nábytku z IKEA.
 
-Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektuálové, kteří na vás mluví řečí symbolů. Žádně obrázky z posiloven, žádné „duckface“, žádné výstřihy a dokonce ani žádné instagramové filtry…
+Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektuálové, kteří na vás mluví řečí symbolů. Žádné obrázky z posiloven, žádné „duckface“, žádné výstřihy a dokonce ani žádné instagramové filtry…
 
-Jsou to od pohledu relativně nezábavní patroni, takže vám o nich budu muset něco říct:
+Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něco říct:
 
 - [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení stránky. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi.
 - [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože se nekamarádí s vývojáři, kteří mají v přátelích Internet Explorer.
@@ -47,7 +47,7 @@ Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když ř
 
 Pokud bychom byli při seznamování v reálném životě důslední, chtěli bychom vidět chování partnerky nebo partnera různých životních situacích. Chtěli bychom co nejrychleji a nejefektivněji zjistit, co je zač.
 
-Tady se proto nabízí spíše paralela s přijímacím hovorem na pracovní pozici a testy, které zaměstnavatelé dávají zaměstnancům.
+Tady se proto nabízí spíše paralela s přijímacím pohovorem na pracovní pozici a testy, které zaměstnavatelé dávají zaměstnancům.
 
 My se teď pokusíme na jednoduchých příkladech ukázat, co je který systém rozvržený zač. Ostatně takhle to budeme dělat v celé knížce.
 
@@ -87,7 +87,7 @@ Používáme zde nejvděčnějšího parťáka z naší trojice, flexbox, a prot
 }
 ```
 
-Už jen tímto zápisem dosáhneme toho, aby se potomkové (prvky `box__image` a `box__text`) zarovnaly vedle sebe. 
+Už jen tímto zápisem dosáhneme toho, aby se potomci (prvky `box__image` a `box__text`) zarovnali vedle sebe.
 
 <div class="ebook-only" markdown="1">
 
@@ -121,7 +121,7 @@ Pomocí `margin-left:1rem` jsme pak zajistili onu mezírku mezi oběma prvky.
 </figcaption>
 </figure>
 
-Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demostrační ukázka knížky je to myslím dostačující.
+Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 
 Zájemce ještě posílám na zdrojové kódy na službě CodePen, což ostatně v knížce budu dělat často.
 
@@ -170,7 +170,7 @@ Layout vzniká až prostřednictvím [vlastnosti `grid-template-columns`](css-gr
 
 Pokud bychom zůstali u tohoto kódu, kýženého layoutu bychom nedosáhli. Jde o rozvržení 2×2, tedy čtyři buňky. V našem HTML ale jako potomky prvku `box` máme jen tři HTML prvky.
 
-Díky „autoplacementu“, vlastnosti gridu, která prvky automaticky umísťuje do mřížky by byl obrázek v první buňce, text v druhé a cenovka ve třetí. Čtvrtá buňka by zůstala prázdná a naše nadšení pro grid by končilo uprostřed prvního rande.
+Díky „autoplacementu“, vlastnosti gridu, která prvky automaticky umísťuje do mřížky by byl obrázek v první buňce, text v druhé a cenovka ve třetí. Čtvrtá buňka by zůstala prázdná a naše nadšení pro grid by skončilo uprostřed prvního rande.
 
 Automatické umístění rozbijeme tímto kódem:
 
@@ -205,7 +205,7 @@ CodePen: [cdpn.io/e/YzZqmwj](https://codepen.io/machal/pen/YzZqmwj?editors=1100)
 
 ## Vícesloupcové rozvržení: příklad s odrážkovým seznamem
 
-Vraťme se opět očima k obrázku se zadáním. V případě multicol layoutu je úkolem pro první rande zajistit, aby se odrážkový seznam skládal do sloupců, které nebudou mít delší šířku než `15rem`.
+Vraťme se opět očima k obrázku se zadáním. V případě multicol layoutu je úkolem pro první rande zajistit, aby se odrážkový seznam skládal do sloupců, které nebudou mít větší šířku než `15rem`.
 
 V HTML máme 15 položek seznamu, ale pro potřeby ukázky v knížce jsem si vystačil se třemi:
 
@@ -230,9 +230,9 @@ Když už jsem vás přinutil si představit Tinder pro CSS layout, vaše imagin
 
 S pomocí flexboxu ani gridu bychom zde neuspěli, protože pro rozdělení do sloupců bychom museli mezi jednotlivé `<li>` vkládat prvky jako `<div>`, které by layout nesly.
 
-Navíc bychom zde s pomocí těchto dvou typů rozvržení nebyli schopní snadno dosáhnout automatického generování vhodného počtu sloupečků. Layout bycho prostě museli museli doslovně definovat.
+Navíc bychom zde s pomocí těchto dvou typů rozvržení nebyli schopni snadno dosáhnout automatického generování vhodného počtu sloupečků. Layout bychom prostě museli museli doslovně definovat.
 
-Toto je síla CSS Multicolumn Layout. Chcete rozvržení o šířce sloupce maximálně `15rem` se šířkou mezery `1rem`? Není nic snažšího:
+Toto je síla CSS Multicolumn Layout. Chcete rozvržení o šířce sloupce maximálně `15rem` se šířkou mezery `1rem`? Není nic snazšího:
 
 ```css
 .box {

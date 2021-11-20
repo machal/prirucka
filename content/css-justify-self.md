@@ -73,7 +73,7 @@ Zkuste si tu první deklaraci schválně v živé ukázce odmazat.
 
 <p><img src="../dist/images/original/vdlayout/css-justify-self-vs-margin.png" width="1920" height="540"  alt="margin má přednost před justify-self - v Chrome při zapnutém grid overlay"></p>
 
-Následuje několik užitečných vysvětlovacích odrážek:
+Následuje několik užitečných vysvětlujících odrážek:
 
 - První dvě položky nemají vlastnost `justify-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé šířky prostoru buňky.
 - Poslední položka má nastaveno `justify-self:end`, takže by se měla „scvrknout“ na přirozenou šířku podle obsahu a zarovnat ke konci prostoru buňky, což je zároveň pravá hrana kontejneru.

@@ -20,7 +20,7 @@ Jak moc může položka růst relativně k dalším položkám, pokud je k dispo
 
 </div>
 
-Specifikace a praktická zkušenost nás – namísto používání vlastnosti `flex-grow` – navádejí spíše ke [zkratce `flex`](css-flex.md), ale přesto považuji za nutné se o této vlastnosti zmínit.
+Specifikace a praktická zkušenost nás – namísto používání vlastnosti `flex-grow` – navádějí spíše ke [zkratce `flex`](css-flex.md), ale přesto považuji za nutné se o této vlastnosti zmínit.
 
 Možné hodnoty:
 
@@ -44,7 +44,7 @@ V interaktivní ukázce máme kontejner flexboxu (`display:flex`) a první polo�
 </figcaption>
 </figure>
 
-Druhé a třetí položce jsme jsme nenastavili žádnou šířku. HTML vypadá následovně:
+Druhé a třetí položce jsme nenastavili žádnou šířku. HTML vypadá následovně:
 
 ```html
 <div class="container">

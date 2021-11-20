@@ -1,6 +1,6 @@
 # Shrnutí třetí kapitoly
 
-Otesujte si, co jste se naučili v kapitole o layoutových dotazech.
+Otestujte si, co jste se naučili v kapitole o layoutových dotazech.
 
 1. **Jaký je rozdíl mezi Media Queries a Container Queries**  
 a. jde o chyták, Container Queries neexistují  

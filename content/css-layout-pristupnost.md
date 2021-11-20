@@ -2,11 +2,11 @@
 
 Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí, a jen zdánlivě se týká hendikepovaných minorit jako jsou zrakově postižení.
 
-Velmi postatné je, že přístupný dokument není až tak nesnadné vytvořit. V nových CSS layoutech kromě „přístupnostních klasik“, jako je využití správných sémantických elementů, vstupuje do hry ještě poněkud kontroverzní možnost změny pořadí.
+Velmi podstatné je, že přístupný dokument není až tak nesnadné vytvořit. V nových CSS layoutech kromě „přístupnostních klasik“, jako je využití správných sémantických elementů, vstupuje do hry ještě poněkud kontroverzní možnost změny pořadí.
 
 ## Přístupnost a pořadí ve flexboxu nebo gridu {#poradi}
 
-Musím vás upozornit na to, že jakmile odlišíte pořadí zobrazování od pořadí v kódu, může se stát, že při ovládání z klávesnice (tabulátorem) nebo použítí [s odečítači pro zrakově hendikepované](testovani-odecitace.md) přestane pořadí dávat smysl.
+Musím vás upozornit na to, že jakmile odlišíte pořadí zobrazování od pořadí v kódu, může se stát, že při ovládání z klávesnice (tabulátorem) nebo použití [s odečítači pro zrakově hendikepované](testovani-odecitace.md) přestane pořadí dávat smysl.
 
 Také proto je ve specifikaci obsaženo toto důrazné varování:
 
@@ -72,7 +72,7 @@ Kontejner (`.container`) je obyčejný flexbox, ale za ukázání kódu stojí p
 }
 ```
 
-Původní pořadí (1, 2, 3, 4) se tedy při prhlížení stránky v prohlížeči změní na 3, 1, 2, 4.
+Původní pořadí (1, 2, 3, 4) se tedy při prohlížení stránky v prohlížeči změní na 3, 1, 2, 4.
 
 Jenže navigační pořadí je prohlížečem stále bráno podle HTML.
 

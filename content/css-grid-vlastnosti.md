@@ -46,8 +46,8 @@ Frontendové kodérky a kodéři museli vzhledu často obětovat strukturu HTML,
 
 Když vynecháme nepěkné triky s pozicováním, slibně zde vstupil flexbox. Co je to ale oproti gridu!
 
-* [Vlastnost `order`](css-order.md), která dovoluje změnit pořadí prvků v prohlížeči, už znáte z flexboxu. Ano, tady ji můžete použíž taky.
-* Pomocí [vlastnosti `grid-area`](css-grid-area.md) budete schopní umístit jakéhokoliv potomka na jakékoliv místo mřížky. A zahodit přitom svěrací kazajku struktury HTML.
+* [Vlastnost `order`](css-order.md), která dovoluje změnit pořadí prvků v prohlížeči, už znáte z flexboxu. Ano, tady ji můžete použít taky.
+* Pomocí [vlastnosti `grid-area`](css-grid-area.md) budete schopni umístit jakéhokoliv potomka na jakékoliv místo mřížky. A zahodit přitom svěrací kazajku struktury HTML.
 * Hodnota `dense` [vlastnosti `grid-auto-flow`](css-grid-auto-flow.md) částečně nechává vykreslení layout na prohlížeči, což oceníte u jednoduchých rozvržení typu „masonry“.
 
 Zde je ale samozřejmě potřeba zvážit možné negativní [vlivy na přístupnost](css-layout-pristupnost.md).
@@ -96,7 +96,7 @@ Samozřejmě je možné používat i vlastnost `position`, která snadno vytrhne
 
 ## 9) Zanořování mřížek
 
-To, co je profíkům jasné jako facka, nemusí být patrné všem. Stejně jako blokové prvky nebo flexboxové kontejnery, můžete do sebe zanořovat i kontejnery gridu.
+To, co je profíkům jasné jako facka, nemusí být patrné všem. Stejně jako blokové prvky nebo flexboxové kontejnery, můžete do sebe vnořovat i kontejnery gridu.
 
 Otevírá to další možnosti a prostor pro tvorbu precizně definovaných layoutů.
 

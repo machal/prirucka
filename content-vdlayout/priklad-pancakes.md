@@ -9,7 +9,7 @@ V dalším relativně častém návrhovém vzoru z uživatelských rozhraní web
 </figcaption>
 </figure>
 
-Tomuto návrhovéhom vzoru se říká „Pancake Stack“ takže „hromada lívanců“. Často ji uvidíme v různých výpisech prvků ve stránce. 
+Tomuto návrhovému vzoru se říká „Pancake Stack“ takže „hromada lívanců“. Často ji uvidíme v různých výpisech prvků ve stránce.
 
 V zadání je tato představa:
 

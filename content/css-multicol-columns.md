@@ -110,7 +110,7 @@ CodePen: [cdpn.io/e/mdrMYBE](https://codepen.io/machal/pen/mdrMYBE?editors=1100)
 Pokud si příklad vyzkoušíte naživo, uvidíte, že můžete přepínat mezi několika možnostmi zobrazení. Pro případ, že nezkoušíte a jen čtete, zde uvádím všechny možnosti:
 
 - `columns:auto` - vícesloupcový layout se vůbec nepoužije.
-- `columns:20em` – doporučená šířka sloupce je `20em`. Je to stejné, jako kdybyste napsali `column-width:20em`. Při testování v různě širokých oknech prohlížeče vidím jeden až pět sloupců. Měly by být široké kolem 400 pixelů, protože velikkost písma je zde kolem `20px`. Zde jde ovšem o doporučení, takže v prohlížeči vidím šířky od 400 až po 650 pixelů.
+- `columns:20em` – doporučená šířka sloupce je `20em`. Je to stejné, jako kdybyste napsali `column-width:20em`. Při testování v různě širokých oknech prohlížeče vidím jeden až pět sloupců. Měly by být široké kolem 400 pixelů, protože velikost písma je zde kolem `20px`. Zde jde ovšem o doporučení, takže v prohlížeči vidím šířky od 400 až po 650 pixelů.
 - `columns:3` – na každé šířce okna se vykreslí tři sloupce. Prohlížeč zde nepoužije jinou variantu ani na nejmenších rozlišeních.
 - `columns:3 20em` – zde deklarujeme jak počet sloupců (`column-count:3`), tak doporučenou šířku (`column-width:20em`). Prohlížeče se zde chovají konzistentně – drží se doporučené šířky, ale nikdy nevykreslí více než tři sloupce.
 

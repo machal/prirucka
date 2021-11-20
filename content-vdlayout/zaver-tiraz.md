@@ -15,6 +15,6 @@ Verze 1.0, listopad 2021
 
 ISBN:
 
-PDF: 978-80-88253-04-4  
-MOBI: 978-80-88253-05-1  
-ePUB: 978-80-88253-06-8
+PDF: *TODO*  
+MOBI: *TODO*  
+ePUB: *TODO*

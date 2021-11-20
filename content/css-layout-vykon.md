@@ -22,7 +22,7 @@ Za všechny uvedu jednu z Itálie. Vývojář Sandro Baccega testoval vykreslen�
 
 V druhém testu, vykreslování složitého celostránkového layoutu, dopadl flexbox i grid velmi podobně.
 
-Takže pokud se nechystáte vykreslovat desítky tisíc prvků do layoutu eshopu nebo prezentančího webu, toto pro vás užitečná informace nebude.
+Takže pokud se nechystáte vykreslovat desítky tisíc prvků do layoutu eshopu nebo prezentačního webu, toto pro vás užitečná informace nebude.
 
 V případě zájmu běžte přímo na text „CSS grid vs Flexbox: Performance Evaluation“ na smc.it. [vrdl.in/gridflexper](https://techblog.smc.it/en/2020-08-03/grid-vs-flexbox-performance)
 
@@ -141,7 +141,7 @@ Zcela konkrétně to popsal Bohumil Jahoda, autor skvělého JeČas.cz, kterého
 
 > Flexbox trpí tím, že musí čekat na stažení celého HTML nebo poskakuje. … Týká se to použití u dlouhého obsahu. Problém je v tom, že poslední element může totálně ovlivnit, jak se daná část vykreslí. Takže prohlížeč buď musí čekat na stažení celého potřebného HTML, nebo vykreslit neúplný obsah, což může vést k tomu poskakování.
 
-Vzal jsem to z Twitteru, jak jinak, kde si můžete pročíst celou diskuzi. [vrdl.in/flexposk](https://twitter.com/Jahoda/status/1367863896900505605)
+Vzal jsem to z Twitteru, jak jinak, kde si můžete přečíst celou diskuzi. [vrdl.in/flexposk](https://twitter.com/Jahoda/status/1367863896900505605)
 
 ### Nejde ani tak o flexbox, jako o přednost obsahu při skládání layoutu
 
@@ -165,7 +165,7 @@ Stručně to popišme:
 
 - Klíčová slova [`max-content` a `min-content`](css-minmax.md) dávají instrukci, aby se prvek nezvětšoval nad maximální nebo minimální velikost obsahu.
 - Klíčové slovo `auto` zde odpovídá `minmax(min-content, max-content)`, takže nejmenší i největší možné rozměr této buňky layoutu je opět na prohlížeči.
-- Prvek `aside` není definován kontejnerem, který určuje jen třísloupcový layout. Tento nový je proto přidán danymicky, což způsobí nechtěné překreslení layoutu.
+- Prvek `aside` není definován kontejnerem, který určuje jen třísloupcový layout. Tento nový je proto přidán dynamicky, což způsobí nechtěné překreslení layoutu.
 
 Ale vraťme se k varování Jake Archibalda a nenechme si tím flexbox zprotivit. Problémy se pravděpodobně projeví jen na velmi komplexních stránkách a ještě na pomalých zařízeních.
 

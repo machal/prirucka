@@ -2,7 +2,7 @@
 
 Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovém světu zavládly mobily. Jde o základní stavební kámen responzivního designu, takže při stavění CSS layoutů bez nich nepostavíme ani boudu pro psa.
 
-Dovolím si zde shrnout jejich úplné základy, pro případ, že v Media Queries plavete. Vy zkušenější, kteří nestojíte o zopakování tématu, můžete úvodní část s čistým svědomím přeskočit, a rovnou si najít nadpis „Limity Media Qeuries“.
+Dovolím si zde shrnout jejich úplné základy, pro případ, že v Media Queries plavete. Vy zkušenější, kteří nestojíte o opakování tématu, můžete úvodní část s čistým svědomím přeskočit, a rovnou si najít nadpis „Limity Media Queries“.
 
 Media Queries jsou podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech, nejen tedy týkajících se rozměrů obrazovky.
 
@@ -133,7 +133,7 @@ Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*
 
 ## Chcete vědět více?
 
-Získané dovednosti nám pro potřeby knížky a návrhu prnvích layoutů zcela dostačují.
+Získané dovednosti nám pro potřeby knížky a návrhu prvních layoutů zcela dostačují.
 
 Ovládnutí dotazů na média je však zcela nepostradatelná dovednost, každý profesionální webový vývojář i webová vývojářka píší Media Queries prakticky denně.
 
@@ -285,14 +285,14 @@ Zopakujme si, že zápisem `@media` vytvářím podmínku, platící na určité
 
 A co to číslo `428px`? To by bylo na dlouhé povídání. A taky že bude. Vždyť k němu celou dobu trpělivě směřuji.
 
-## Limity Media Qeuries
+## Limity Media Queries
 
 Tvorba breakpointů (jinak též „bodů zlomu“) je samostatné téma, ostatně odkázal jsem vás výše na docela dlouhý text, kde vás s ním můžu potrápit, chcete-li.
 
 Pojďme si ale ukázat, jak konkrétně jsem zde uvažoval a došel k hodnotě `428px`:
 Chtěl bych, aby vodorovný layout naskočil nejdříve v momentě, kdy obrázek dosáhne svých maximálních rozměrů. Řekněme, že v tomto případě jsem jej připravil tak, aby se v prohlížeči mohl zobrazovat až do šířky 300 pixelů. Proč ale v Media Query není číslo `300px`?
 
-Dotazy na media se vztahují k šířce viewportu, k šířce plochy, kterou má prohlížeč k dispozici. Jak uvidíte na obrázku níže, mezi okrajem viewportu a okrajem obrázku jsou ještě další prvky, které také mají své rozměry.
+Dotazy na média se vztahují k šířce viewportu, k šířce plochy, kterou má prohlížeč k dispozici. Jak uvidíte na obrázku níže, mezi okrajem viewportu a okrajem obrázku jsou ještě další prvky, které také mají své rozměry.
 
 Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (`margin` i `padding`) o celkové šířce `3em`. Jedno `em` je vždy `16px`, pokud jej nenastavíme jinak. Dále je zde vnitřní okraj `1em` u prvků `.item__text` a `.item__image`. Celkem tedy 4 krát 16, to je 64 a ještě krát 2, protože musíme vzít v úvahu obě strany. Vychází nám 128. Přidáme šířku obrázku a vyjde nám 428 pixelů.
 
@@ -311,4 +311,4 @@ Pro rozvržení celé stránky jsou skvělé. Jenže my se zde snažíme vymysle
 
 Počítání okrajů mezi samotnou komponentou a stránkou je jen ta menší část problému. Představte si, že byste byli nuceni správným breakpoint vymýšlet v situaci, kdy objekt bude součástí většího layoutu a ve stránce se bude opakovat. Někdy se bude na stránce vyskytovat sám, někdy budou dva vedle sebe, někdy třeba tři…
 
-Už chápete limity věci zvané Media Qeuries?
+Už chápete limity věci zvané Media Queries?

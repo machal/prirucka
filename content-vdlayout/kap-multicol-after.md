@@ -1,6 +1,6 @@
 # Shrnutí páté kapitoly
 
-Otesujte si, co jste se naučili o vícesloupcovém layoutu.
+Otestujte si, co jste se naučili o vícesloupcovém layoutu.
 
 1. **Modul CSS Multi-column Layout umožňuje:**  
 a. vytvářet layout do mřížky  

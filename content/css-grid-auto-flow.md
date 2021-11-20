@@ -31,9 +31,9 @@ Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vy
 | Hodnota                    | Co dělá?           |
 |----------------------------|--------------------|
 | `row`     | Výchozí hodnota. Prvky layoutu se vykreslují po řádcích. |
-| `column`  | Prvky layoutu se vykreslují po sloupečcích. |
+| `column`  | Prvky layoutu se vykreslují po sloupcích. |
 | `dense`   | Vykresluje se po řádcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků. |
-| `column dense`   | Vykresluje se po sloupečcích a prohlížeč může vyplnit mezery změnou pořadí prvků. |
+| `column dense`   | Vykresluje se po sloupcích a prohlížeč může vyplnit mezery změnou pořadí prvků. |
 
 </div>
 
@@ -87,7 +87,7 @@ V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`gri
 
 ## Příklad: zahuštěné vykreslování pomocí grid-auto-flow:dense {#priklad-dense}
 
-Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstavaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu.
+Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstávaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu.
 
 <!-- AdSnippet -->
 
@@ -119,7 +119,7 @@ Layout je definovaný takto:
 
 Vysvětleme:
 
-- Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovoný počet sloupečku ([funkce `repeat()`](css-repeat.md)) ale každý musí být minimálně 120px široký `minmax(120px, 1fr)` (více o [funkci `minmax()`](css-minmax.md)).
+- Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovolný počet sloupců ([funkce `repeat()`](css-repeat.md)) ale každý musí být minimálně 120px široký `minmax(120px, 1fr)` (více o [funkci `minmax()`](css-minmax.md)).
 - `grid-auto-flow: dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
 
 <figure>

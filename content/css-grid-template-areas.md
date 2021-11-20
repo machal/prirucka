@@ -149,7 +149,7 @@ Je to jednoduché – oblasti je prostě možné různě přehazovat v rámci de
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-template-areas-mq.png" width="1600" height="900" alt="grid-template-areas s Media Queries">
 <figcaption markdown="1">
-*V kombinaci s Media Queries se z definovaní oblastí pomocí `grid-template-areas` stává fantastický pomocník.*
+*V kombinaci s Media Queries se z definovaných oblastí pomocí `grid-template-areas` stává fantastický pomocník.*
 </figcaption>
 </figure>
 

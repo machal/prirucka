@@ -35,7 +35,7 @@ Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext for
   <article role="article">
     <h4><a href="css-flex-flow.md"><code>flex-flow</code></a></h4>
     <p><a href="css-flex-flow.md"><img src="../dist/images/small/vdlayout/css-flex-flow-schema.png" alt="Vlastnost flex-flow" /></a></p>
-    <p>Zkratka pro <code>flex-wrap</code> a <code>flex-direction</code>. <br>Např. <code>flex-flow:wrap column</code> – položky se zalomují a skládají shora dolů.</p>
+    <p>Zkratka pro <code>flex-wrap</code> a <code>flex-direction</code>. <br>Např. <code>flex-flow:wrap column</code> – položky se zalamují a skládají shora dolů.</p>
   </article>
 
 </div>
@@ -203,7 +203,7 @@ V případě, že zde nebude dost prostoru pro všechny položky, zalomíme. To 
 
 ### První dva sloupce jsou pružné, třetí nikoliv {#priklad-treti}
 
-Dále jsme si vymysleli, že první dva sloupce se budou změnšovat a zvětšovat, přičemž druhý dvakrát více než první. Třetí naopak nikoliv, zůstane vždy na svém. Tady pomůže [zkratka vlastností položky flexboxu, `flex`](css-flex.md):
+Dále jsme si vymysleli, že první dva sloupce se budou zmenšovat a zvětšovat, přičemž druhý dvakrát více než první. Třetí naopak nikoliv, zůstane vždy na svém. Tady pomůže [zkratka vlastností položky flexboxu, `flex`](css-flex.md):
 
 ```css
 /* Pružná položka, zabírá jednu část volného místa: */
@@ -224,7 +224,7 @@ Dále jsme si vymysleli, že první dva sloupce se budou změnšovat a zvětšov
 
 ### Na menších displejích se změní směr {#priklad-smer}
 
-Na mobilech zpravila není pro rozvržení prvků vedle sebe prostor. Přidáme proto změnu směru layoutu, což zajistíme [vlastností `flex-direction`](css-flex-direction.md):
+Na mobilech zpravidla není pro rozvržení prvků vedle sebe prostor. Přidáme proto změnu směru layoutu, což zajistíme [vlastností `flex-direction`](css-flex-direction.md):
 
 ```css
 @media (max-width: 400px) {
@@ -297,6 +297,6 @@ Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s po
 
 Konkrétní podporu je ale potřeba rozpadnout podle jednotlivých vlastností, uvedených výše v tabulce. Tam je situace už různorodější. 
 
-Bojem s více či méně příjemnými chybami je provázena práce v Internet Exploreru, protože jde o nejstarší dnes sloužící prohlížeče. Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích. Není to ale nic vážného, tento prohlížeč od Microsoftu už prakticy vymřel a chyby v něm nejsou tak velké.
+Bojem s více či méně příjemnými chybami je provázena práce v Internet Exploreru, protože jde o nejstarší dnes sloužící prohlížeče. Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích. Není to ale nic vážného, tento prohlížeč od Microsoftu už prakticky vymřel a chyby v něm nejsou tak velké.
 
 <!-- AdSnippet -->

@@ -2,7 +2,7 @@
 
 Milé čtenářky, milí čtenáři,
 
-kaskádové styly už nejsou, čím bývaly. Během těch více než 20 let, kdy CSS sleduju, píšu a přemýšlím nad nimi, se změnily z triviálního jazyka pro popis barevnosti dokumentu k robustnímu systému schopnému deklarovat vzhled dokumentů, aplikací, ale třeba i knížek.
+kaskádové styly už nejsou, čím bývaly. Během těch více než 20 let, kdy CSS sleduji, píšu a přemýšlím nad nimi, se změnily z triviálního jazyka pro popis barevnosti dokumentu k robustnímu systému schopnému deklarovat vzhled dokumentů, aplikací, ale třeba i knížek.
 
 Kdysi bylo možné „céeseska“ umět jakoby mimochodem, k hlavní odbornosti vývojářů nebo designérů. Dnes tvrdím, že není v silách sebelepších specialistů znát všechny možnosti stylů. Myslím si, že je na čase, aby vznikaly profese zaměřené jen na určitou část CSS, tudíž je paradoxem, že odborníků na CSS jako celek je jako šafránu.
 

@@ -32,7 +32,7 @@ Jakmile je váš layout víceřádkový, typu mřížka, a nevystačíte si s po
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-vs-flexbox-grid.png" width="1600" height="900" alt="…">
 <figcaption markdown="1">
-*Grid je mřížka. Dvojrozměrná mřížka.*
+*Grid je mřížka. Dvourozměrná mřížka.*
 </figcaption>
 </figure>
 
@@ -55,11 +55,11 @@ Pokud tedy chcete umístit pár prvků vedle sebe a není nutné jim definovat r
 
 Tím, že je flexbox jednosměrný, bude se vám častěji hodit na zarovnávání „věcí“ vedle sebe nebo pod sebe. Užijete jej pro záložkové i globální navigace nebo například zarovnání jednořádkových formulářů. Více jej oceníte u menších komponent uvnitř stránky.
 
-Existují také studie, které zjistily, že flexbox se při použití obrovského množství elementů chová při vykreslování celé stránky [daleko líněji](css-layout-vykon.md). Ne, že by to bylo zvlášť podstatné, ale opět to ukazuje na podstatu flexboxu – vycházet z rozměrů vykreslených prvků.
+Existují také studie, které zjistily, že flexbox se při použití obrovského množství elementů chová při vykreslování celé stránky [o trochu více líně](css-layout-vykon.md). Ne, že by to bylo zvlášť podstatné, ale opět to ukazuje na podstatu flexboxu – vycházet z rozměrů vykreslených prvků.
 
 Náš milý grid je obousměrný, takže je vhodné s ním rozvrhnout například složitější formuláře, výpis produktů v kategorii e-shopu nebo celou stránku. Grid je příhodnější pro layout větších celků.
 
-Toto pravidlo samozřejmě neberte dogmaticky. Osobně, když se rozhodnuji, jestli použít grid nebo flexbox, kladu si otázku:
+Toto pravidlo samozřejmě neberte dogmaticky. Osobně, když se rozhoduji, jestli použít grid nebo flexbox, kladu si otázku:
 
 > Je možné přes rozvržení na některých šířkách okna položit neviditelnou vícerozměrnou mřížku?
 
@@ -89,11 +89,11 @@ Abychom si v tom udělali pořádek i vizuálně, připravil jsem si pro vás ta
 |   Vlastnost              |   Flexbox   |   grid   |
 |:-------------------------|:-----------:|:--------:|
 |   Jednorozměrný layout   |       +     |     +    |
-|   Dvojrozměrný layout    |             |     +    |
+|   Dvourozměrný layout    |             |     +    |
 |   Layout z obsahu        |       +     |     ?    |
 |   Layout z mřížky        |             |     +    |
 |   Kompatibilita v IE     |       +     |     ?    |
 
 Tabulka netabulka…  osobně vám doporučuji naučit se flexbox i grid.
 
-Abyste dobře poznali flexbox a grid, budete potřebovat poznat také jejich předky. Začmeme pravěkou historií a pak se zastavíme u nedávné minulosti.
+Abyste dobře poznali flexbox a grid, budete potřebovat poznat také jejich předky. Začneme pravěkou historií a pak se zastavíme u nedávné minulosti.

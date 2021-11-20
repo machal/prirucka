@@ -71,7 +71,7 @@ Zde to máme ještě o trochu jednodušší:
 }
 ```
 
-Zápisem [`display:grid`](css-display.md) ještě žádný layout nevzniká. Ten začne platit až s definicí šablony, kterou nejsnadněji udělám použití [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md) (pro definici sloupců layoutu), případně `grid-template-rows` (pro definici jeho řádků).
+Zápisem [`display:grid`](css-display.md) ještě žádný layout nevzniká. Ten začne platit až s definicí šablony, kterou nejsnadněji uděláme použitím [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md) (pro definici sloupců layoutu), případně `grid-template-rows` (pro definici jeho řádků).
 
 Využíváme zde drobné parádičky - [funkce `minmax()`](css-minmax.md), která funguje pro definici buněk gridu podobně jako vám asi již známé vlastnosti `min-width` a `max-width`. V prvním parametru je minimální a v druhém maximální hodnota.
 

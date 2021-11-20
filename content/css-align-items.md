@@ -97,10 +97,10 @@ Toto v době psaní podporuje jen Firefox.
 
 Stav k říjnu 2021:
 
-- V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvojslovné pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
+- V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvouslovné pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
 - V rámci rozvržení pomocí gridu tuto vlastnost nepodporuje jen IE11, ale tam by podporu této vlastnosti měl nahrazovat [Autoprefixer](autoprefixer.md). Jinak je to v gridu zcela v pořádku.
 
-I zde platí, že jde o drobnosti. Celkově vzato je možné tuhle vlastnost a její neužitečnější hodnoty bez problémů v moderních prohlížečích používat.
+I zde platí, že jde o drobnosti. Celkově vzato je možné tuhle vlastnost a její nejužitečnější hodnoty bez problémů v moderních prohlížečích používat.
 
 Pro více informací se podívejte na [caniuse.com/align-items](https://caniuse.com/#search=align-items).
 

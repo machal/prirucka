@@ -1,6 +1,6 @@
 # Shrnutí páté kapitoly
 
-Otesujte si, co jste se naučili o flexboxu.
+Otestujte si, co jste se naučili o flexboxu.
 
 1. **Jak definovat režim zobrazení flexboxu?**  
 a. `display:flex`  

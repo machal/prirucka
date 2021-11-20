@@ -110,7 +110,7 @@ Předpokládám, že děláte nějakou analýzu konkurence. Změřte si také je
 </figcaption> 
 </figure>
 
-Je prokázáno, že lidé jsou schopní rozeznat dvacetiprocentní a vyšší rozdíl v rychlosti načítání. Nejlepší čísla v ukázce vykazuje web „konkurent1.cz“. Proto si pro vlastní web nastavte právě takto vylepšené cíle:
+Je prokázáno, že lidé jsou schopni rozeznat dvacetiprocentní a vyšší rozdíl v rychlosti načítání. Nejlepší čísla v ukázce vykazuje web „konkurent1.cz“. Proto si pro vlastní web nastavte právě takto vylepšené cíle:
 
 |                    | First Byte |  Speed Index |  Page Load |
 |:-------------------|-----------:| ------------:|-----------:|

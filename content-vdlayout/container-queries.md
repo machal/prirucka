@@ -2,7 +2,7 @@
 
 Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, která do současného layoutu v CSS a vlastně celého webdesignu přinášejí.
 
-To, co dotazy na media dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
+To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
 
 <figure>
 <img src="../dist/images/original/vdlayout/media-vs-containder.png" alt="">
@@ -89,7 +89,7 @@ A teď prakticky.
 
 ## Naše komponenta v Container Queries
 
-Poďme si to poskládat dohromady na konkrétním příkladu našeho „Media Objectu“:
+Pojďme si to poskládat dohromady na konkrétním příkladu našeho „Media Objectu“:
 
 ```css
 .container {
@@ -157,7 +157,7 @@ CSS:
 
 Pomocí [`display:grid`](css-display.md), vlastnosti [`grid-template-columns`](css-grid-template.md) a [`gap`](css-gap.md) definuji dvousloupcovou mřížku s mezerou mezi sloupci o šířce `1em`.
 
-Možná to vypadá trochu složitě, ale zatím layout vysvětlovat nebudu. Pokud jste v e-booku, pro detailní informace klidněte na název vlastnosti nebo si počkejte do další kapitoly, kde to vše trpělivě vysvětlíme.
+Možná to vypadá trochu složitě, ale zatím layout vysvětlovat nebudu. Pokud jste v e-booku, pro detailní informace klikněte na název vlastnosti nebo si počkejte do další kapitoly, kde to vše trpělivě vysvětlíme.
 
 CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
@@ -165,7 +165,7 @@ CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
 Jak jsem už psal, na jaře 2021 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chrome je zkušební.
 
-Přepokládám ale, že někteří čtenáři na tenhle text narazí v době, kdy budou už existovat implementace v některých prohlížečích, v jiných naopak ne.
+Předpokládám ale, že někteří čtenáři na tenhle text narazí v době, kdy budou už existovat implementace v některých prohlížečích, v jiných naopak ne.
 
 Osobně bych očekával nějakou dobu trvající situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí v řádu měsíců, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
 

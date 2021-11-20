@@ -68,7 +68,7 @@ V odkazovaném článku se obecně doporučuje použití pro skripty, které gen
 
 Vysoká priorita stahování. Spuštění po konci práce HTML parseru.
 
-Jde o dobrý způsob, jak zrychlit zobrazení stránky bez nutnosti stažení JavaScriptu. Je ale dobré vědět, že všechny zde uvedené skripty budou mít vysokou prioritu stahování, takže vám můžou odložit důležitější prvky typu obrázků nutných pro zobrazení uživatelského rozhraní. Dobrý příklad použití je tento:
+Jde o dobrý způsob, jak zrychlit zobrazení stránky bez nutnosti stažení JavaScriptu. Je ale dobré vědět, že všechny zde uvedené skripty budou mít vysokou prioritu stahování, takže vám mohou odložit důležitější prvky typu obrázků nutných pro zobrazení uživatelského rozhraní. Dobrý příklad použití je tento:
 
 - Servírování knihoven typu jQuery a jejich pluginů na prezentačních webech.
 

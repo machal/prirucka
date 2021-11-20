@@ -6,7 +6,7 @@ Původně šlo o součást specifikace [flexboxu](css-flexbox.md), ale časem se
 
 Nyní je specifikace CSS Box Alignment vyvíjená tak obecně, aby vlastnosti jako `justify-items`, `align-content` a další použít šly použít ve [vícesloupcovém layoutu](css-multicolumn.md), v blokových layoutech, pozicování nebo tabulkách. Tohle se ale v době psaní knížky zatím v prohlížečích netěší prakticky žádné podpoře.
 
-Moc bych si přál, abyste i tuhle část poctivě pročetli, vyzkoušeli si CodePeny a shrnuli si vše v závěrečném testu.
+Moc bych si přál, abyste i tuhle část poctivě přečetli, vyzkoušeli si CodePeny a shrnuli si vše v závěrečném testu.
 
 Ale co si budeme nalhávat – jde o referenční příručku. I když jsem pro její čtivost vymýšlel různé kejkle, pořád je tam spousta opakujících se a nudných částí. Z principu to ani jinak být nemůže.
 

@@ -122,7 +122,7 @@ To teď máte draze vyrobit nativní aplikaci a ještě se smířit s tím, že 
 
 Obecně platí, že weby mají na mobilech skvělý *záběr*. Nemusí se instalovat a s rozumnou propagací je navštíví daleko více uživatelů. Kanálů k propagaci je celá řada: sociální sítě, vyhledávače, bannery… Vlastně všechny kanály známé z dnešního Webu.
 
-Pokud jste firma, co má věrné uživatele, aplikací jste zase schopní je více *zapřáhnout*. Díky snadnějšímu ovládání a rychlé dostupnosti budou daleko aktivnější než uživatelé webu. 
+Pokud jste firma, co má věrné uživatele, aplikací jste zase schopni je více *zapřáhnout*. Díky snadnějšímu ovládání a rychlé dostupnosti budou daleko aktivnější než uživatelé webu. 
 
 ![Reach (web) vs. Rich (native)](../dist/images/original/vdwd/lukew-reach-rich.png)
 

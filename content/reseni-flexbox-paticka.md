@@ -1,6 +1,6 @@
 # CSS řešení: Patička přilepená ke spodní hraně okna
 
-Jsou věci, které grafici na CSS prostě nemůžou vystát. Jako třeba patičku, která zůstává viset hned za obsahem.
+Jsou věci, které grafici na CSS prostě nemohou vystát. Jako třeba patičku, která zůstává viset hned za obsahem.
 
 ![Patička se má vždy přilepit ke spodní hraně okan](../dist/images/original/flexbox-footer.jpg)
 

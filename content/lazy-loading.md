@@ -36,7 +36,7 @@ Méně stažených dat sice [nemusí zrychlit web](rychlost-myty.md#7), ale rozh
 
 <!-- AdSnippet -->
 
-Nejčastěji líně načítané prvky – obrázky a `<iframe>` s obsahem třetích stran – patří k zároveň k největším Otesánkům. Nasazením lazy loadingu jsme na jedné webové stránce schopní ušetřit až jednotky megabajtů dat.
+Nejčastěji líně načítané prvky – obrázky a `<iframe>` s obsahem třetích stran – patří k zároveň k největším Otesánkům. Nasazením lazy loadingu jsme na jedné webové stránce schopni ušetřit až jednotky megabajtů dat.
 
 ### 2) Méně složitý DOM {#proc-2}
 

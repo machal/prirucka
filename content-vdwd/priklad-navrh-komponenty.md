@@ -19,9 +19,9 @@ Než si skici ukážeme, měli bychom si rozmyslet, kde se vlastně fotogalerie 
 
 V případě prodeje bot přes internet platí, že obrázek nahradí tisíc slov. Návštěvníci a návštěvnice ForestKid.cz by měli mít možnost si na produkt vytvořit názor hned a bez dalšího klikání. Takže fotky chceme zobrazovat dostatečně velké.
 
-Zároveň jim ale nechceme dát tak zásadní váhu, aby upozadily všechny ostatní informace z horní poloviny stránky. Hlavně pak název produktu a cenu. Řekněme proto, že významem jsou fotografie někde na úrovni názvu produktu a ceny. 
+Zároveň jim ale nechceme dát tak zásadní váhu, aby upozadily všechny ostatní informace z horní poloviny stránky. Hlavně pak název produktu a cenu. Řekněme proto, že významem jsou fotografie někde na úrovni názvu produktu a ceny.
 
-Musíme si také vyjasnit, jestli jsme od našich dodavatelů schopní získat dostatečně kvalitní obrázky produktů pro komponentu tak zásadní váhy. V naší hypotetické situaci ano, ale pozor, neplatí to zdaleka pro každý e-shop nebo web obecně.
+Musíme si také vyjasnit, jestli jsme od našich dodavatelů schopni získat dostatečně kvalitní obrázky produktů pro komponentu tak zásadní váhy. V naší hypotetické situaci ano, ale pozor, neplatí to zdaleka pro každý e-shop nebo web obecně.
 
 A ještě na jednu věc nesmíme zapomenout, a sice na variabilitu obsahu. V našem případě vycházím z toho, že všechny fotografie budeme mít produkčně připravené ořezané na bílém pozadí v poměru 1 : 1 a že jich u jednoho produktu bude mezi třemi a patnácti.
 

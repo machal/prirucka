@@ -14,7 +14,7 @@ Pro pochopení technických částí budete potřebovat alespoň základní znal
 
 Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od začátku do konce.“. Jenže takhle se technické knížky nečtou. A nebudu si hrát na to, že tahle by měla být výjimkou.
 
-V prvních třech kapitolách čtenářům postupně představuji téma, abychom se ve čtvrté dostali k vrcholu, který představují příklady použítí CSS layoutů.
+V prvních třech kapitolách čtenářům postupně představuji téma, abychom se ve čtvrté dostali k vrcholu, který představují příklady použití CSS layoutů.
 
 Pátá až devátá kapitola jsou už čisté referenční příručku. Budu moc rád, když si je pročtete. Hlavně vy začínající. Ale myslím si, že do nich spíše budete nahlížet, když to budete potřebovat – takže narazíte na vlastnost, kterou byste chtěli více pochopit.
 

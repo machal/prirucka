@@ -1,6 +1,6 @@
 # Shrnutí šesté kapitoly
 
-Otesujte si, co jste se naučili o CSS gridu.
+Otestujte si, co jste se naučili o CSS gridu.
 
 1. **Které prohlížeče podporují nějakou formu gridu?**  
 a. Jen všechny moderní prohlížeče  

@@ -152,7 +152,7 @@ CodePen: [cdpn.io/e/OJjyqpK](https://codepen.io/machal/pen/OJjyqpK?editors=1100)
 
 Jak už padlo, ve flexboxových layoutech je vlastnost `justify-items` ignorována, takže můžeme i bez nadsázky říct, že ji při použití `display:flex` podporují úplně všechny prohlížeče, které kdy vznikly.
 
-Ale vážněji:
+Ale vážně:
 
 - Zarovnání pro přetečení (`safe`) nepodporuje žádný prohlížeč.
 - Zarovnání na účaří podporuje jen Firefox.

@@ -63,7 +63,7 @@ Je to prostě úplně stejné jako u zkratky [`grid-template`](css-grid-template
 
 ## Implicitní grid a auto-flow {#implicitni-auto-flow}
 
-To zda definujete v daném směru definujete implicitní grid se pozná podle klíčového slova `auto-flow`:
+To zda v daném směru definujete implicitní grid se pozná podle klíčového slova `auto-flow`:
 
 ```css
 .container {

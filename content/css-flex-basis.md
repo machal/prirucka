@@ -47,7 +47,7 @@ Mimochodem, dokumentační stránka MDN zmiňuje vtipnou historii nastavení `fl
 Zmínil jsem dva možné způsoby počítání zvětšování nebo zmenšování velikosti položky flexboxu. Je to důležité, takže to zde vysvětlím:
 
 - *Relativní pružnost*  
-Pokud uvedeme `flex-basis:auto`, velikost boxu se počítá z obsahu a pak se teprve připočtou nebo odečtou faktory růstu (`flex-grow`) nebo smršťování (`flex-shrink`).
+Pokud uvedeme `flex-basis:auto`, velikost boxu se počítá z obsahu a pak se teprve přičtou nebo odečtou faktory růstu (`flex-grow`) nebo smršťování (`flex-shrink`).
 - *Absolutní pružnost*  
 Pokud uvedeme `flex-basis:0`, nezohlední se velikost textového nebo jiného obsahu. Růst nebo smršťování se vypočítává z celé šířky boxu.
 
