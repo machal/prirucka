@@ -132,6 +132,18 @@ Při vkládání odkazu, který generuje CSS, je potřeba jen uvést parametr `d
 
 Další „vendoři“, jako Adobe Fonts nebo Fonts.com, se zatím nepřidali. Sleduje to a průběžně o tom informuje [Zach Leatherman](https://www.zachleat.com/web/google-fonts-display/).
 
+## Deskriptor size-adjust {#size-adjust}
+
+V prohlížečích můžete nově použít také [deskriptor `size-adjust`](css-size-adjust.md), který usnadní stylování systémového písma tak, aby velikostí odpovídalo později načtenému webfontu:
+
+```css
+@font-face {
+  font-family: "Arial-Size-Adjusted";
+  size-adjust: 113%;
+  src: local("Arial");
+}
+```
+
 ## Podpora v prohlížečích {#podpora}
 
 Podle [CanIUse](https://caniuse.com/#feat=css-font-rendering-controls) je podpora deskriptoru `font-display` mezi moderními prohlížeči takřka stoprocentní. Po přechodu Edge na jádro Chromium chybí podpora z relevantních prohlížečů už jen v Internet Exploreru. Jeho výchozí nastavení ale pracuje s něčím jako hodnotou `swap`, ovšem [zcela bez intervalu blokování](https://font-display.glitch.me/). Na stránce je prostě vykreslený fallbackový font a jakmile se stáhne webfont, dojde k překreslení.

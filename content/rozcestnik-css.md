@@ -16,6 +16,7 @@
 - [text-shadow: stíny u textu](css3-text-shadow.md)
 - [font-face: webové fonty](css3-font-face.md)
 - [font-display: způsob náhrady textu](css-font-display.md)
+- [size-adjust: úprava velikosti znaku](css-size-adjust.md)
 
 ### Pozadí
 

@@ -100,7 +100,15 @@ Pojďme ale vzoreček ze specifikace rozebrat více. Nakonec možná dojdeme k t
 
 <!-- AdSnippet -->
 
-Jak už jste vy zkušenější jistě pochopili, zápis výše je stejný jako bychom napsali následující deklaraci:
+Zopakuji i původní zápis pomocí funkce `clamp()`:
+
+```css
+.box-3 {
+  width: clamp(100px, 50%, 300px);
+}
+```
+
+Jak už jste jistě pochopili, kód výše je stejný jako bychom napsali následující deklaraci:
 
 ```css
 .box-3 {
