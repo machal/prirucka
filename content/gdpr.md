@@ -9,6 +9,8 @@ Obsah:
 
 Text revidoval Ondřej Preuss z [Dostupného advokáta](https://dostupnyadvokat.cz/), kterému tímto děkuji.
 
+→ *Související: [Cookie lišta od roku 2022](cookie-lista-2022.md)*
+
 ## Co je GDPR? {#co-je-gdpr}
 
 Cílem je eliminace úniků a zneužití osobních informací.  [Osobní údaje](http://www.fbadvokati.cz/cs/clanky/541-co-je-co-neni-a-co-bude-osobni-udaj-podle-gdpr) a jejich pohyb jsou nyní ve všech zemích EU ze strany uživatelů dohledatelné, získatelné a smazatelné.
