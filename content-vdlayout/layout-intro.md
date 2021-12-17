@@ -62,7 +62,7 @@ Začneme tím nejpopulárnějším parťákem.
 
 ## Flexbox: příklad s obrázkem a textem
 
-Cílem je dosáhnout rozvržení, kde na jedné straně je obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není.
+Cílem je dosáhnout rozvržení, kde na jedné straně je obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
 
 Začneme asi s HTML, což?
 
@@ -91,11 +91,9 @@ Už jen tímto zápisem dosáhneme toho, aby se potomci (prvky `box__image` a `b
 
 <div class="ebook-only" markdown="1">
 
-Pokud je tu někdo, kdo by potřeboval vysvětlit vlastnost `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná určitý způsob zobrazení.
+Pokud je tu někdo, kdo by potřeboval vysvětlit vlastnost `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná flexboxový layout.
 
 </div>
-
-
 
 Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovně:
 
@@ -120,6 +118,8 @@ Pomocí `margin-left:1rem` jsme pak zajistili onu mezírku mezi oběma prvky.
 *Flexbox pod rentgenem. Výsledné rozvržení prohlížené ve vývojářských nástrojích Firefoxu.*
 </figcaption>
 </figure>
+
+Vytvořili jsme rozvržení, kde prvek `box__image` bude zabírat jednu třetinu šířky (`flex:1`), přičemž přepíše výchozí šířku obrázu, a prvek `box__text` vyplní zbylé dvě třetiny (`flex:2`).
 
 Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 

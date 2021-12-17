@@ -2,7 +2,7 @@
 
 Právě jste knihu dočetli.
 
-Díky, že jste jí věnovali svůj čas, a jsem napsatý, co na ní říkáte. Budu rád za každý váš názor.
+Díky, že jste jí věnovali svůj čas, a jsem napjatý, co na ní říkáte. Budu rád za každý váš názor.
 
 ## Zpětná vazba, pochvaly, hlášení chyb
 

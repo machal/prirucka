@@ -2,7 +2,7 @@
 
 Už to došlo i do Česka. Od ledna 2022 bude nutné od uživatelů žádat souhlas s použitím ukládání například personalizačních a analytických cookies.
 
-Stačí když na webu máte základní analytiku, např. Google Analytics, a od konce roku máte povinnost před uložením cookies (nebo do jakéhokoliv úložiště v prohlížeči) žádat souhlas pomocí takzvané cookie lišty.
+Stačí když na webu máte základní analytiku, např. Google Analytics, a od konce roku máte povinnost před uložením cookies (nebo do jakéhokoliv úložiště v prohlížeči) žádat souhlas pomocí takzvané cookie lišty. Pokud tedy Analytics nezakážete ukládat cookies.
 
 Pravděpodobně jste to už řešili, pravděpodobně to už máte vyřešené. Pokud spravujete velké weby, tím spíše. Já spravuju jen Vzhůru dolů a pár malinkých webů, takže jsem to nechával na poslední chvíli. (Což jsem neměl dělat.)
 
@@ -18,7 +18,7 @@ Než se do toho pustíme, velmi rád bych zde nejprve ventiloval svůj celkový 
 
 ## Uživatelé platí soukromím za to, že my šetříme čas a peníze {#plati}
 
-Ještě před měsícem jsem nechápal proč bychom měli už i v Česku všechny weby nasazovat cookie lištu.
+Ještě před měsícem jsem nechápal, proč bychom měli už i v Česku na všechny weby nasazovat cookie lištu.
 
 [GDPR](gdpr.md) už máme vyřešené a od roku 2015 nějak i v Česku řešíme [„EU cookies"](https://www.vzhurudolu.cz/blog/36-eu-cookies). Vždyť přece stačí, že uživatele informujeme…
 
@@ -166,6 +166,10 @@ Taky je možné nepoužívat Google Analytics, že ano? Popularitu teď nabíraj
 
 Tyhle nástroje často nepoužívají cookies, to je fajn, ale zároveň uživatele identifikují jinak, nejčastěji kombinací různých faktorů, takže [fingerprintingem](https://en.wikipedia.org/wiki/Device_fingerprint), což je z pohledu soukromí úplně to samé.
 
+[Simple Analytics](https://simpleanalytics.com/), další alternativu, údajně bez fingerprintingu, ale bez sledování uživatele napříč webem, mě doporučovali další lidé, jako např. [Jan Smitka na Twitteru](https://twitter.com/jansmitka/status/1471592040479825923).
+
+Pokud už alternativy plní požadavky na soukromí, chovají se vlastně podobně jako Google Analytics v Consent Mode. Přičemž GA mají velkou výhodu – jsou de facto průmyslovým standardem.
+
 Zdá se mi, že ani tudy cesta nevede. (Ale samozřejmě budu moc rád za argumenty v komentářích, proč vy si myslíte, že ano.)
 
 ## Co další komponenty třetích stran? {#3p}
@@ -223,7 +227,8 @@ Přes Google Tag Manager je pak možné i nastavit nesouhlas se vším, nechat p
 Toto jsem zatím neřešil, proto zde využiju možností získaných od kolegů
 
 * **[CookieConsent](https://orestbida.com/demo-projects/cookieconsent/)**: Malý plugin i s [ukázkovým kódem](https://gist.github.com/lynt-smitka/1f795c2d0410659ac8fea0992eb1b977) od Vladimíra Smitky.
-* **[Complianz](https://wordpress.org/plugins/complianz-gdpr/)** (Wordpress): [Dan Střelec](https://www.danielstrelec.cz/) píše: „V základu je zdarma, nasazení cca 1 hodina práce (podle webu). Pokud potřebujete ukládat souhlasy, je třeba placená verze (39 EUR/rok).
+* **[CookieConsent.com](https://www.cookieconsent.com/)** se jmenuje stejně, dělá to podobné věci, ale je to něco jiného.
+* **[Complianz](https://wordpress.org/plugins/complianz-gdpr/)** (Wordpress): [Dan Střelec](https://www.danielstrelec.cz/) píše: „V základu je zdarma, nasazení pár hodin hodina práce (podle webu). Pokud potřebujete ukládat souhlasy, je třeba placená verze (39 EUR/rok).
 
 Větší řešení jsou například [Cookiebot](https://www.cookiebot.com/en/): V ČR velmi populární. Dan Střelec: „Neplacená verze je pouze do 100 stránek/web, od 500 stránek/web stojí €9/měsíc.". Nebo velmi robustní [OneTrust (dříve Optanon)](https://www.onetrust.com/), Didomi nebo Funding Choices od Google.
 
