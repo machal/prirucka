@@ -128,10 +128,7 @@ Vypadá to zajímavě, hlavně z pohledu vývojářů, protože díky umístěn�
 
 Zdá se, že minimálně obecně s oEmbed [Facebook](https://developers.facebook.com/docs/features-reference/oembed_read) i [Twitter](https://developer.twitter.com/en/docs/twitter-for-websites/oembed-api) pracovat umí.
 
-To ale neznamená, že byste mohli Open Graph pro vaše weby úplně vynechat. Ptal jsem se na sociálních sítích, zda někdo oEmbed používá jako hlavní zdroj pro náhledy webu ([Facebook](https://www.facebook.com/groups/frontendisti/posts/2925001394378032/), [Twitter](https://twitter.com/machal/status/1450008456698736650)):
-
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr">My máme oEmbed na jedinom webe (<a href="https://t.co/m0oXRxMfZI">https://t.co/m0oXRxMfZI</a>), ale nie je to kvôli zdieľaniu náhľadov. Máme ho kvoli možnosti embedovania, napríklad na Medium, tam to bez oEmbed nejde.</p>&mdash; Michal Kočí (@mifko) <a href="https://twitter.com/mifko/status/1450705870871007233?ref_src=twsrc%5Etfw">October 20, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+To ale neznamená, že byste mohli Open Graph pro vaše weby úplně vynechat. Ptal jsem se na sociálních sítích, zda někdo oEmbed používá jako hlavní zdroj pro náhledy webu ([Facebook](https://www.facebook.com/groups/frontendisti/posts/2925001394378032/), [Twitter](https://twitter.com/machal/status/1450008456698736650)). [Nikoliv](https://twitter.com/mifko/status/1450705870871007233).
 
 oEmbed tedy zatím považuji spíše za určitou alternativu k Open Graph, která je vhodná pro specifičtější použití, ale OG nenahrazuje.
 

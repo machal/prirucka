@@ -72,8 +72,9 @@ Rychlost webu je vždy nutné posuzovat v širším kontextu a ten vám jednorá
 
 Pro vývojáře je pak podstatné umět používat DevTools v prohlížeči, protože žádný checklist, žádný článek (ani tento) vám nevyřeší konkrétní problémy na konkrétní stránce.
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Jednomu z největších omylů kolem <a href="https://twitter.com/hashtag/RychlostWebu?src=hash&amp;ref_src=twsrc%5Etfw">#RychlostWebu</a> říkám „checklistová optimalizace“.<br><br>Práce podle kontrolních seznamů je důležitá, ale velké posuny skoro nikdy neudělá. <br><br>Pro dobré optimalizace potřebujeme chirurgicky přesně najít problémy. A taky vymyslet jejich efektivní řešení.</p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1362670762860118017?ref_src=twsrc%5Etfw">February 19, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Jednomu z největších omylů kolem #RychlostWebu říkám „checklistová optimalizace“.
+
+Práce podle kontrolních seznamů je důležitá, ale velké posuny skoro nikdy neudělá. Pro dobré optimalizace potřebujeme chirurgicky přesně najít problémy. A taky vymyslet jejich efektivní řešení.
 
 Vývojáři a vývojářky, naučte se používat Chrome DevTools, zejména nástroje Performance, Network a Lighthouse, naučte se tam číst, co brzdí rychlost vašeho webu, co ovlivňuje konkrétní metriky.
 

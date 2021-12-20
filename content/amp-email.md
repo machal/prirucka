@@ -6,14 +6,7 @@
 AMP Email je podmnožina [frameworku AMP](amp.md), která slouží ke tvorbě interaktivních e-mailů.
 </div>
 
-<div class="ebook-only" markdown="1">
 AMP Email je podmnožina frameworku, která slouží ke tvorbě interaktivních e-mailů.
-</div>
-
-<div class="web-only" markdown="1">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">AMP is powering a brand new way to do email with realtime information &amp; in-line actions. Starting today, email providers including Gmail, Yahoo, Outlook and <a href="https://t.co/Ixfs2ZNi4Q">https://t.co/Ixfs2ZNi4Q</a> are bringing <a href="https://twitter.com/hashtag/ampforemail?src=hash&amp;ref_src=twsrc%5Etfw">#ampforemail</a> to their users.<br>Learn more: <a href="https://t.co/Paf17Ne6vg">https://t.co/Paf17Ne6vg</a> <a href="https://t.co/7ZYHLO4C9k">pic.twitter.com/7ZYHLO4C9k</a></p>&mdash; AMP Project (@AMPhtml) <a href="https://twitter.com/AMPhtml/status/1110578205034012678?ref_src=twsrc%5Etfw">March 26, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 
 V případě rozšíření by to mohla být opravdová revoluce. Představme si, že bychom jako autoři newsletterů nebo transakčních e-mailů mohli používat komponenty uživatelského rozhraní, jako je akordeon (díky komponentě `amp-accordion`) nebo obrázkový lightbox (`amp-image-lightbox`).
 
@@ -69,11 +62,6 @@ Více je možné najít v článku „Bringing the power of AMP to Gmail“ na h
 „Dochází nám snad záložky v prohlížeči, že chce Google slučovat tyto dva kontexty?“ ptá se vtipně Devin Coldewey v textu „AMP for email is a terrible idea“ na TechCrunch. Podle něj interaktivitu v e-mailu nepotřebujeme. Je užitečné, že máme sdělování věcí v e-mailu oddělené od jiných aktivit na webech a v aplikacích.
 
 V určitých ohledech má pravdu, ale osobně neočekáváme rozvoj chatování, přenosu videa, složitějšího nakupování nebo dalších komplexních interakcí uvnitř e-mailu. Ony ty „jiné aktivity na internetu“ jsou jako skříň s mnoha šuplíky. Akce typu rychlá objednávka nebo filtrování obsahu patří do šuplíku, který naopak v e-mailu smysl má – rychlá a jednoduchá interakce na základě doručeného obsahu.
-
-<div class="web-only" markdown="1">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">And you thought email is old and outdated. A guide to building interactive emails with AMP email, including tips for getting started and a few code snippets. By <a href="https://twitter.com/leemunroe?ref_src=twsrc%5Etfw">@leemunroe</a>.<br><br>Currently supported by Gmail, Yahoo! Mail, Outlook, <a href="https://t.co/Vx9DzNpXZm">https://t.co/Vx9DzNpXZm</a>.<a href="https://t.co/zK7Xwjly2U">https://t.co/zK7Xwjly2U</a> <a href="https://t.co/Qx5TsxbND6">pic.twitter.com/Qx5TsxbND6</a></p>&mdash; Smashing Magazine (@smashingmag) <a href="https://twitter.com/smashingmag/status/1151584409616826369?ref_src=twsrc%5Etfw">July 17, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 
 Z tohoto pohledu rádi přirovnáváme AMP Email k notifikacím v moderních mobilních operačních systémech. Dříve to byly jen zprávy. Dnes je možné už přímo z nich vykonávat jednoduché akce – například odpovědět na zprávu. A zhruba v téhle oblasti vidíme místo pro dynamický e-mail.  
 

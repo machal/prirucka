@@ -28,9 +28,9 @@ Cookie lišta je zlo. Cookie lišta je zlo pro uživatele i provozovatele, takž
 
 To soukromí ale fakt musíme řešit.
 
-> Nepoužívat a nešmírovat. Za analytické nástroje nechat platit toho, kdo data měří a nenechávat to na cene uživatelského soukromí lidí, kteří ani nevědí co schvalují.
-
-— _Honza ChemiX Černý [na Twitteru](https://twitter.com/janhonzacerny/status/1465985275268632579)_
+> Nepoužívat a nešmírovat. Za analytické nástroje nechat platit toho, kdo data měří a nenechávat to na ceně uživatelského soukromí lidí, kteří ani nevědí co schvalují.
+>
+> — *<cite>Honza ChemiX Černý [na Twitteru](https://twitter.com/janhonzacerny/status/1465985275268632579)</cite>*
 
 Představte si situaci že přijdete do obchoďáku a u vchodu vám bez ptaní dají do kapsy krabičku, která bude ukládat vaši polohu – jaké obchody jste navštívili, co jste tam dělali. Dají vám ji s úsměvem a s tím, že příště ta data použijí pro zlepšení vašeho nákupního prožitku. A že je možné, že ta data někomu prodají. Pro vaše dobro.
 
@@ -105,9 +105,9 @@ Prostě bez zkoumání uložených cookies a čtení „Cookie Policy" dodavatel
 
 Z jaké změny v zákoně vlastně celý ten humbuk vychází?
 
-[Zákon o elektronických komunikacích](https://www.zakonyprolidi.cz/cs/2005-127) (§ 89 Důvěrnost komunikací):
-
 > Každý, kdo hodlá používat nebo používá sítě elektronických komunikací k ukládání údajů nebo k získávání přístupu k údajům uloženým v koncových zařízeních účastníků nebo uživatelů, je povinen tyto účastníky nebo uživatele předem prokazatelně informovat o rozsahu a účelu jejich zpracování a je povinen nabídnout jim možnost takové zpracování odmítnout. Tato povinnost neplatí pro technické ukládání nebo přístup výhradně pro potřeby přenosu zprávy prostřednictvím sítě elektronických komunikací nebo je-li to nezbytné pro potřeby poskytování služby informační společnosti, která je výslovně vyžádána účastníkem nebo uživatelem.
+>
+> — *[Zákon o elektronických komunikacích](https://www.zakonyprolidi.cz/cs/2005-127) (§ 89 Důvěrnost komunikací)*
 
 To je vše. Složitě napsané, ale překvapivě krátké, že?
 
@@ -118,8 +118,8 @@ Víte co, pojďme se tedy nejprve zkusit na to celé vykašlat.
 Cookie lišta je otrava. Ano, to je.
 
 > Víte jaká je nejlepší cookie lišta?  Žádná!
-
-— *Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)*
+>
+> — *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
 
 Pokud máte velký web, řešil bych to, u malinkých asi nemá smysl propadat panice a nutně nasazovat lištu hned po Vánocích.
 
@@ -128,8 +128,8 @@ Jak to riziko chápu já? Postihy za nedodržení zákona samozřejmě budou ud�
 Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápravě, takže i kdyby na vás „vlítli", máte čas to opravit. Pokuty by navíc neměly být likvidační.
 
 > Kontrolu provádí @UOOUCR, sankce dává samozřejmě podle uvážení, ale horní hranice je vždycky předpisem limitovaná, navíc nesmí být nepřiměřená a likvidační.
-
-— _Petra Dolejšová [na Twitteru](https://twitter.com/DolejsovaPetra/status/1470436779803262988)_
+>
+> — *<cite>Petra Dolejšová [na Twitteru](https://twitter.com/DolejsovaPetra/status/1470436779803262988)</cite>*
 
 Nechci tady ale nabádat k očůrávání zákona. S jeho smyslem souhlasím, svoje weby podle něj upravím. Výše uvedené mi ale dává čas a klid to dát do pořádku, když už jsem to začal řešit pozdě.
 
@@ -163,14 +163,16 @@ Možnosti, jak si ponechat GA a zároveň nemít cookie lištu, tedy plnit záko
 První příklad je naprogramování vlastní vrstvy událostí na Google Analytics:
 
 > Přejdi na GA4, použij consent API a bez souhlasu měř bez využití dat ze storage jen pomocí odpalování eventů.
-
-— _Martin Kopta [na Twitteru](https://twitter.com/atpok/status/1464153090223976451)_
+>
+> — *<cite>Martin Kopta [na Twitteru](https://twitter.com/atpok/status/1464153090223976451)</cite>*
 
 Druhá varianta s počítáním `clienId`:
 
 > clientId neukládáš, nýbrž jej počítáš pro každý request zvlášť. Výhody: nemusíš nic ukládat (a tedy není třeba souhlas). Nevýhody: horší přesnost, může to session více lidí spojit do jedné.
+>
+> — *<cite>Jirka Hrazdil [na Twitteru](https://twitter.com/nufue/status/1471062808515289096)</cite>*
 
-— _Jirka Hrazdil [na Twitteru](https://twitter.com/nufue/status/1471062808515289096) odkazuje na text [Disabling Google Analytics Cookies: Advanced Solution](https://helgeklein.com/blog/google-analytics-cookieless-tracking-without-gdpr-consent/#disabling-google-analytics-cookies-advanced-solution)_
+Viz text [Disabling Google Analytics Cookies: Advanced Solution](https://helgeklein.com/blog/google-analytics-cookieless-tracking-without-gdpr-consent/#disabling-google-analytics-cookies-advanced-solution).
 
 Taky je možné nepoužívat Google Analytics, že ano? Popularitu teď nabírají alternativní nástroje jako je [Matomo](https://matomo.org/) nebo [Fathom](https://usefathom.com/) a další. Z toho co jsem z komentářů analytiků, kterým věřím, usoudil… Je to past.
 

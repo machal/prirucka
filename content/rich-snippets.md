@@ -165,8 +165,9 @@ Tento formát vkládání [podporuje](https://www.bing.com/webmaster/help/markin
 
 Český Seznam.cz strukturovaná data podporuje jen velmi málo až vůbec, alespoň podle Dušana Janovského:
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">V organiku jenom odkazy na kotvy do obsahu (typicky Wikipedie, ale i jiné weby). O ničem jiném nevím, ale je možné, že tam ještě něco máme. Osobně vnímám jako problematické ověřování těch informací a jako odstrašující příklad rád udávám ty hvězdičky z “hodnocení”.</p>&mdash; Dušan Janovský (@janovsky) <a href="https://twitter.com/janovsky/status/1256676009685979136?ref_src=twsrc%5Etfw">May 2, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> V organiku jenom odkazy na kotvy do obsahu (typicky Wikipedie, ale i jiné weby). O ničem jiném nevím, ale je možné, že tam ještě něco máme. Osobně vnímám jako problematické ověřování těch informací a jako odstrašující příklad rád udávám ty hvězdičky z “hodnocení”.
+>
+> — *<cite>Dušan Janovský [na Twitteru](https://twitter.com/janovsky/status/1256676009685979136)</cite>*
 
 ## Kontroverze. Jen velmi mírná, ale přesto si neodpustím rýpnutí… {#kontroverze}
 

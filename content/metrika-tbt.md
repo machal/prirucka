@@ -55,10 +55,7 @@ Zde se tedy velmi dobře hledají také příčiny těchto nekalých dlouhých �
 
 ### WebpageTest {#mereni-webpagetest}
 
-Ve WebpageTestu najdete TBT jako jednu z nejdůležitějších metrik. Krátce po zveřejnění [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6) zareagoval tvůrce tohoto skvělého nástroje Pat Meenan tak, že bylo jasné, že si TBT hned velmi oblíbil:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just swapped out &quot;First CPU Idle&quot; for &quot;Total Blocking Time&quot; in the main WebPageTest results UI. TBT is a much better indicator of the jankiness of the UI after it has rendered.<br><br>Something like FCP + TBT would make for a good top-level perf number that includes both.</p>&mdash; Patrick Meenan (@patmeenan) <a href="https://twitter.com/patmeenan/status/1256267827478175746?ref_src=twsrc%5Etfw">May 1, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Ve WebpageTestu najdete TBT jako jednu z nejdůležitějších metrik. Krátce po zveřejnění [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6) zareagoval tvůrce tohoto skvělého nástroje [Pat Meenan tak](https://twitter.com/patmeenan/status/1256267827478175746), že bylo jasné, že si TBT hned velmi oblíbil.
 
 ### A co u reálných uživatelů? {#mereni-rum}
 

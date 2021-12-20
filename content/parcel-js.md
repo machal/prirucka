@@ -18,9 +18,6 @@ Díky tomu, že Parcel nevyžaduje složitou konfiguraci (díváme se na tebe, [
 
 Poslední rok jej bez problémů používám v aplikaci [Pobo Page Builder](https://www.pobo.cz), která využívá mix Vue.js a Latte, a nenarazil jsem větší potíže.
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Parcel na drobnosti (nemusíš nic nastavovat) a Webpack, když se v tom chceš vrtat</p>&mdash; Roman Ožana (@OzzyCzech) <a href="https://twitter.com/OzzyCzech/status/1280232892728295424?ref_src=twsrc%5Etfw">July 6, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 Parcel.js nativně podporuje zdrojové mapy (source maps) pro snadnější ladění kódu ve vývojářských nástrojích prohlížečů a umožní rychlejší vyhledání problematického kódu při ladění např. [blackboxového zdrojáku](https://developer.chrome.com/devtools/docs/blackboxing).
 
 <!-- AdSnippet -->

@@ -31,8 +31,9 @@ Prostě obsah zůstává králem, i když cvrlikání na sítích v poslední do
 
 Podle studie Sistrixu ze září 2021 to vypadá, že vliv signálu Page Experience je zatím menší, ale postupně roste:
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Zjištění Sistrix o vlivu Page Experience na SEO:<br><br>– Weby, který splňují PX mají nyní v průměru o 1 % lepší pozice v SERP, ale průběžně se rozdíl zvyšuje.<br><br>– Weby, které některé z požadavků nesplňují, mají pozice o 3,7 % horší.<a href="https://t.co/PBJP3nlKq3">https://t.co/PBJP3nlKq3</a> <a href="https://t.co/ki7jyLWNew">pic.twitter.com/ki7jyLWNew</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1442094201965924359?ref_src=twsrc%5Etfw">September 26, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Zjištění Sistrix o vlivu Page Experience na SEO:<br><br>– Weby, který splňují PX mají nyní v průměru o 1 % lepší pozice v SERP, ale průběžně se rozdíl zvyšuje.<br><br>– Weby, které některé z požadavků nesplňují, mají pozice o 3,7 % horší.
+>
+> — *<cite>[Twitter](https://twitter.com/machal/status/1442094201965924359)</cite>*
 
 Na jaké atributy stránek se v rámci Page Experience v Googlu ve svých automatizovaných hodnoceních dívají?
 
@@ -128,9 +129,6 @@ Data od uživatelů můžete nejjednodušším způsobem vytáhnout v [PageSpeed
 
 Další aspekty, které byly uváděny na Google.IO skvěle [v tweetu](https://mobile.twitter.com/fabkru/status/1396331280585928707) shrnul Fabian Krumbholz, takže z něj vyjdu.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My take aways from the Google’s Web Vitals Q&amp;A: <a href="https://t.co/v1BnVXtkTN">https://t.co/v1BnVXtkTN</a><a href="https://twitter.com/hashtag/CWV?src=hash&amp;ref_src=twsrc%5Etfw">#CWV</a> <a href="https://twitter.com/hashtag/SEO?src=hash&amp;ref_src=twsrc%5Etfw">#SEO</a> <a href="https://twitter.com/hashtag/WebPerf?src=hash&amp;ref_src=twsrc%5Etfw">#WebPerf</a> <a href="https://t.co/2M7eIrqpKe">pic.twitter.com/2M7eIrqpKe</a></p>&mdash; Fabian Krumbholz (@fabkru) <a href="https://twitter.com/fabkru/status/1396331280585928707?ref_src=twsrc%5Etfw">May 23, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ### 2) Každá metrika samostatně jako signál {#jak-2}
 
 Po Page Experience update bude Google hodnotit každou z Web Vitals samostatně jako signál pro hodnocení.
@@ -141,9 +139,7 @@ Takže pokud konkurence nebude mít zelené LCP a vy ano, můžete za tuto oblas
 
 ### 3) Zvýhodnění dostanete za zelené metriky {#jak-3}
 
-Viz obrázek v Tweetu výše. John Mueller to podepřel půvabnou grafikou vytvořenou snad v Malování:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Think of it like this. Graphic not to scale. <a href="https://t.co/6lLUYNM53A">pic.twitter.com/6lLUYNM53A</a></p>&mdash; 🍌 John 🍌 (@JohnMu) <a href="https://twitter.com/JohnMu/status/1395798952570724352?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote>
+Viz obrázek v Tweetu výše. John Mueller to [na Twitteru](https://twitter.com/JohnMu/status/1395798952570724352) podepřel půvabnou grafikou vytvořenou snad v Malování.
 
 Systém je postavený na zvýhodňování. Pokud máte metriku v červené oblasti hodnot, nezískáváte žádné plusové body.
 
@@ -199,10 +195,7 @@ Můj odhad? Pro tyto stránky se skóre počítá, výsledky v SERPu to ovlivňu
 
 ### 9) Posuzován bude stav Page Experience i na počítačích {#jak-9}
 
-Tradičně Google hlídal rychlost hlavně na mobilech, což se ale nyní mění. Signály Page Experience přicházejí také na desktop:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Whoa - big change: Google to incorporate Page Experience as a desktop ranking factor too<br><br>Presumably includes Core Web Vitals, previously only expected to roll out for mobile rankings<br><br>Timeframe: *Soon*<br>Google says more info to follow...<a href="https://t.co/i55cHelE7d">https://t.co/i55cHelE7d</a> ht <a href="https://twitter.com/Stevenvvessum?ref_src=twsrc%5Etfw">@Stevenvvessum</a> <a href="https://t.co/FhXOGWLXTk">pic.twitter.com/FhXOGWLXTk</a></p>&mdash; Cyrus (@CyrusShepard) <a href="https://twitter.com/CyrusShepard/status/1397948209067040768?ref_src=twsrc%5Etfw">May 27, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Tradičně Google hlídal rychlost hlavně na mobilech, což se ale nyní mění. Signály Page Experience přicházejí také [na desktop](https://developers.google.com/search/blog/2021/11/bringing-page-experience-to-desktop).
 
 Dává to samozřejmě smysl. Rychlost webů na desktopu není automaticky dobrá, i když rychlé počítače připojujeme do rychlých sítí. Metriky jako Cumulative Layout Shift navíc nesouvisejí s rychlosti zařízení ani s rychlostí připojení.
 
@@ -327,10 +320,7 @@ Nemyslím si, že Google svým updatem Page Experience spustí revoluci a výraz
 
 Důvodů, proč [řešit rychlost webu](rychlost-nacitani-proc.md) ale najdete celou řadu. To, že ji prosazuje Google, je jen důsledkem faktu, že pro návštěvníka i provozovatele je mít rychlý web prostě dobré.
 
-Stále navíc platí, že Web Vitals splňuje jen menší část webů:
-
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Podíl webů, které splňují všechny Core Web Vitals:<br>— 11/2020: 23,5 %<br>— 12/2020: 23,4 %<br>— 01/2021: 23,7 %<br>— 01/2021: 21,98 %<br>Prostě to neroste. I proto si myslím, že od května Google revolučně nezmění význam <a href="https://twitter.com/hashtag/RychlostWebu?src=hash&amp;ref_src=twsrc%5Etfw">#RychlostWebu</a> v hodnocení.<br>Více o Web Vitals: <a href="https://t.co/BDPMJjKPxT">https://t.co/BDPMJjKPxT</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1372182620793139200?ref_src=twsrc%5Etfw">March 17, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Stále navíc platí, že Web Vitals splňuje jen [menší část webů](https://twitter.com/machal/status/1372182620793139200).
 
 Proto si myslím, že ve velmi konkurenčních oborech může jít i v rámci výsledků vyhledávání o nezanedbatelnou konkurenční výhodu.
 

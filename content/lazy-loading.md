@@ -50,10 +50,7 @@ Jak už jsem zmiňoval, týká se to různých megamenu nebo panelů s obsahem z
 
 ### 3) Méně zpracovávání JavaScriptu {#proc-3}
 
-Odložením načtení knihoven třetích stran ale neděláme primárně kvůli datům. Podstatným faktorem je výkon prohlížeče, často zbytečně blokovaný počítáním odložitelného JavaScriptu třetí strany.
-
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Proč dělat lazy loading služeb vkládaných přes &lt;iframe&gt;?<br>I proto, abychom se zbavili zbytečného zpracování JS.<br><br>Podívejte se, na jak dlouho zablokuje CPU jedno vkládané YouTube na webu klienta.<br><br>→ <a href="https://t.co/Hq5G3UkQaX">https://t.co/Hq5G3UkQaX</a> <a href="https://t.co/AFBwsBOGtY">pic.twitter.com/AFBwsBOGtY</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1160409274834726912?ref_src=twsrc%5Etfw">August 11, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Odložením načtení knihoven třetích stran ale neděláme [primárně kvůli datům](https://twitter.com/machal/status/1160409274834726912). Podstatným faktorem je výkon prohlížeče, často zbytečně blokovaný počítáním odložitelného JavaScriptu třetí strany.
 
 ### 4) Prioritizace obsahu {#proc-4}
 

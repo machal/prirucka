@@ -47,8 +47,9 @@ Není. Nebo ne obvykle. Když vezmu české weby, které jsem dosud zkoumal, ča
 
 Zato na frontendovou mašinerii musejí nebozí uživatelé čekat *dloooouhé* vteřiny. Případy, kdy se na pomalejším 3G na mobilu něco děje desítky vteřiny nejsou tak vzácné, jak bych si přál.
 
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Zajímavé, jak rozšířená je myšlenka „náš web je pomalý, protože běží na pomalé platformě [dosaďte oblíbenou]“.<br>90 % problémů je přitom na frontendu.</p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1047423382017462272?ref_src=twsrc%5Etfw">October 3, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Zajímavé, jak rozšířená je myšlenka „náš web je pomalý, protože běží na pomalé platformě [dosaďte oblíbenou]“. 90 % problémů je přitom na frontendu.
+>
+> — *<cite>Stěžuji si [na Twitteru](https://twitter.com/machal/status/1047423382017462272)</cite>*
 
 Moje tvrzení na Twitteru sice není založené na širším výzkumu, ale praxe českých a slovenských webů mě ho stále potvrzuje.
 

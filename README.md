@@ -149,6 +149,17 @@ Nedávej `autoplay`, žere ti to kredit na Cloudinary.
 </div>
 ```
 
+## Citace 
+
+Týká se i vkládání obsahu v embedech od Twitteru, které ruším od roku 22 kvůli [cookie liště](https://www.vzhurudolu.cz/prirucka/cookie-lista-2022).
+
+Zjistil jsem, že v Markdownu je možné vkládat krásnou citaci i s uvedením zdroje:
+
+> Víte jaká je nejlepší cookie lišta?  Žádná!
+>
+> — *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
+
+
 ### CodePen s ukázkou
 
 Ukázky vkládáme jako běžný odstavec v Markdownu:

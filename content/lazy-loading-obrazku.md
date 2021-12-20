@@ -74,10 +74,7 @@ Ta hranice je ovšem nastavená různě. V případě nativního lazy loadingu j
 
 [Autoři uvádějí](https://web.dev/native-lazy-loading), že od Chrome 77 budeme moci testovat různé hranice pomocí omezením rychlosti připojení ve vývojářských nástrojích prohlížeče.
 
-Od [července 2020 a Chrome 79](https://web.dev/native-lazy-loading/#improved-data-savings-and-distance-from-viewport-thresholds) v Chrome platí, že na rychlejších připojeních (4G a lepší) se stahují všechny obrázky vzdálené 1250 pixelů od [viewportu](viewport.md). Na 3G a pomalejších připojeních je hranice nastavená na 2500 pixelů. Je to trochu paradoxní, ale jen tak může prohlížeč zajistit dostatečně včasné stažení obrázků:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’ve improved &lt;img&gt; lazy-loading in Chrome! <a href="https://t.co/zx8sf7I86L">https://t.co/zx8sf7I86L</a> The new thresholds for when we load &lt;img loading=lazy&gt;:<br><br>* Offer *much* better data-savings<br>* Are closer to JavaScript lazy-loading libraries<br>* Are rolling out to Chrome 79+ <a href="https://t.co/3OHm2rnRAm">pic.twitter.com/3OHm2rnRAm</a></p>&mdash; Addy Osmani (@addyosmani) <a href="https://twitter.com/addyosmani/status/1284020009350701057?ref_src=twsrc%5Etfw">July 17, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Od [července 2020 a Chrome 79](https://web.dev/native-lazy-loading/#improved-data-savings-and-distance-from-viewport-thresholds) v Chrome platí, že na rychlejších připojeních (4G a lepší) se stahují všechny obrázky vzdálené 1250 pixelů od [viewportu](viewport.md). Na 3G a pomalejších připojeních je hranice nastavená na 2500 pixelů. Je to trochu paradoxní, ale jen tak může prohlížeč zajistit dostatečně včasné stažení obrázků.
 
 ### Demo pro obrázky {#nativni-demo-obrazky}
 
@@ -104,9 +101,6 @@ CodePen: [cdpn.io/e/YzxYXQX](https://codepen.io/machal/pen/YzxYXQX?editors=1000)
 ### Demo pro iframe {#nativni-demo-iframe}
 
 Pro iframe externích dodavatelů je lazyloading snad ještě důležitější než pro obrázky. Jak jsem [upozorňoval na Twitteru](https://twitter.com/machal/status/1160409274834726912), problémem často bývá kromě dat také požírání výkonu zbytečně prováděným JavaScriptem třetí strany.
-
-<blockquote class="twitter-tweet"><p lang="cs" dir="ltr">Proč dělat lazy loading služeb vkládaných přes &lt;iframe&gt;?<br>I proto, abychom se zbavili zbytečného zpracování JS.<br><br>Podívejte se, na jak dlouho zablokuje CPU jedno vkládané YouTube na webu klienta.<br><br><a href="https://t.co/Hq5G3UkQaX">https://t.co/Hq5G3UkQaX</a> <a href="https://t.co/AFBwsBOGtY">pic.twitter.com/AFBwsBOGtY</a></p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1160409274834726912?ref_src=twsrc%5Etfw">August 11, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Nativní lazy loading pro `<iframe>` je vidět v následujícím demu.
 
