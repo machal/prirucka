@@ -1,10 +1,10 @@
 # Cookie lišta, verze 2022
 
-Už to došlo i do Česka. Od ledna 2022 bude nutné od uživatelů žádat souhlas s použitím ukládání například personalizačních a analytických cookies.
+Už to došlo i do Česka. Od ledna 2022 bude nutné od uživatelů žádat souhlas s ukládáním personalizačních a analytických cookies do jejich prohlížečů.
 
 Stačí když na webu máte základní analytiku, např. Google Analytics, a od konce roku máte povinnost před uložením cookies (nebo do jakéhokoliv úložiště v prohlížeči) žádat souhlas pomocí takzvané cookie lišty. Pokud tedy Analytics nezakážete ukládat cookies.
 
-Pravděpodobně jste to už řešili, pravděpodobně to už máte vyřešené. Pokud spravujete velké weby, tím spíše. Já spravuju jen Vzhůru dolů a pár malinkých webů, takže jsem to nechával na poslední chvíli. (Což jsem neměl dělat.)
+Pravděpodobně jste to už řešili, pravděpodobně to už máte vyřešené. Pokud spravujete velké weby, tím spíše. Já spravuju jen Vzhůru dolů a pár malinkých webů, takže jsem to nechával na poslední chvíli. Neměl jsem to dělat.
 
 <!-- AdSnippet -->
 
@@ -12,7 +12,7 @@ Text budu tedy spíše cílit na majitele menších webů nebo ty, kteří zatí
 
 Předem říkám, že se v téhle oblasti nepovažuji za odborníka – pokud se webařinou živíte, nasazení na weby konzultujte s advokáty (já využívám [Dostupného advokáta](https://dostupnyadvokat.cz/spolecnosti/cookies)), experty na UX a marketing.
 
-Můj pohled je víceméně pohledem „hobbíka", člověka, který spravuje pár webů, ale denodenní vývojařinou se převážně neživí.
+Můj pohled je víceméně pohledem „hobbíka“, člověka, který spravuje pár webů, ale denodenní vývojařinou se neživí.
 
 Než se do toho pustíme, velmi rád bych zde nejprve ventiloval svůj celkový osobní dojem. On se totiž za poslední týdny dost významně změnil.
 
@@ -20,11 +20,11 @@ Než se do toho pustíme, velmi rád bych zde nejprve ventiloval svůj celkový 
 
 Ještě před měsícem jsem nechápal, proč bychom měli už i v Česku na všechny weby nasazovat cookie lištu.
 
-[GDPR](gdpr.md) už máme vyřešené a od roku 2015 nějak i v Česku řešíme [„EU cookies"](https://www.vzhurudolu.cz/blog/36-eu-cookies). Vždyť přece stačí, že uživatele informujeme…
+[GDPR](gdpr.md) už máme vyřešené a od roku 2015 nějak i v Česku řešíme [„EU cookies“](https://www.vzhurudolu.cz/blog/36-eu-cookies). Vždyť přece stačí, že uživatele informujeme…
 
-Čím více to studuji, tím více dávám za pravdu zákonné úpravě, která bude platit od ledna. Jasně, forma je fakt nešťastná.
+Čím více to studuji, tím více dávám za pravdu zákonné úpravě, která bude platit od ledna.
 
-Cookie lišta je zlo. Cookie lišta je zlo pro uživatele i provozovatele, takže se těším se na [normu ePrivacy](https://digital-strategy.ec.europa.eu/en/policies/eprivacy-regulation), která to přesune do nastavení prohlížeče.
+Jasně, forma je fakt nešťastná. Cookie lišta je zlo. Cookie lišta je zlo pro uživatele i provozovatele, takže se těším se na [normu ePrivacy](https://digital-strategy.ec.europa.eu/en/policies/eprivacy-regulation), která to přesune do nastavení prohlížeče.
 
 To soukromí ale fakt musíme řešit.
 
@@ -45,13 +45,13 @@ To všechno proto, že na webech mocně využíváme služby třetích stran. Zv
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1639995817/vzhurudolu-prirucka/cookie-lista-2022-fun_end4jh.png" width="1600" height="900" alt="Cookie lišta">
 <figcaption markdown="1">
-*Někdomu sledování nevadí. Ale vědět to předem je asi dobré, ne?*
+*Někomu sledování nevadí. Ale vědět to předem je asi dobré, ne?*
 </figcaption>
 </figure>
 
 Za náš ušetřený čas a peníze platí uživatelé svým soukromím. Jejich data, informace o pohybu našim webem využíváme nejen my, ale i úplně cizí firmy.
 
-Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, Twitteru, Facebooku…
+Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, Twitteru, Facebooku… Je to prostě o dost horší, než jsem si myslel.
 
 Takže – pojďme to soukromí řešit. Pojďme to řešit bez paniky a nadávání na zákon nebo EU. Pojďme vzít ty (formálně špatné) cookie lišty jako příležitost se něco naučit a zlepšit web jako celek.
 
@@ -59,7 +59,7 @@ Takže – pojďme to soukromí řešit. Pojďme to řešit bez paniky a nadáv�
 
 Jednou třeba lišty dáme pryč a zůstanou nám, doufám, weby, které více dbají na soukromí lidí. Neprodávají jejich duši, aniž by to jako návštěvníci věděli.
 
-Teď už se pustím do praktických rad, co s tím dělat na malém webu. Dávám sem svůj stav mysli. Ten rád změním, když mě na to upozorníte v komentářích. Než se do implementace na vaše weby pustíte, poraďte se opravdu s odborníky.
+Teď už se pustím do praktických rad, co s tím dělat na malém webu. Dávám sem svůj stav mysli. Ten rád změním, když mě na to upozorníte v komentářích.
 
 ## Nutné základy {#zaklady}
 
@@ -95,11 +95,11 @@ Nástroje, které pomáhají odhalit, které cookies na webu potřebujete:
 
 Nejdříve dobrá zpráva – analyzovat těmito nástroje je jednoduché.
 
-A teď ta špatná. Ani na Vzhůru dolů, takže strukturou menším webu, mě to nenašlo zdaleka všechny cookies, které bych měl „řešit".
+A teď ta špatná. Ani na Vzhůru dolů, takže strukturou menším webu, mě to nenašlo zdaleka všechny cookies, které bych měl „řešit“.
 
 Navíc jde samozřejmě o statickou analýzu webu, takže např. komponenty [načítané líně](lazy-loading.md) nebo na akci uživatele, to neodhalí.
 
-Prostě bez zkoumání uložených cookies a čtení „Cookie Policy" dodavatelů třetích stran se myslím neobejdete.
+Prostě bez zkoumání uložených cookies a čtení „Cookie Policy“ dodavatelů třetích stran se myslím neobejdete.
 
 ## Zákon praví… {#zakon}
 
@@ -123,9 +123,9 @@ Cookie lišta je otrava. Ano, to je.
 
 Pokud máte velký web, řešil bych to, u malinkých asi nemá smysl propadat panice a nutně nasazovat lištu hned po Vánocích.
 
-Jak to riziko chápu já? Postihy za nedodržení zákona samozřejmě budou udělovány, ale [úřad ÚOOU](https://www.uoou.cz/), který to řeší by se musel rozkrájet, aby řešil i menší přestupky. Osobně čekám spíše akčnost typu „česká hygiena během pandemie". U svých malých webů nebudu s cookie lištou zase tak moc spěchat a stresovat.
+Jak to riziko chápu já? Postihy za nedodržení zákona samozřejmě budou udělovány, ale [úřad ÚOOU](https://www.uoou.cz/), který to řeší by se musel rozkrájet, aby řešil i menší přestupky. Osobně čekám spíše akčnost typu „česká hygiena během pandemie“. U svých malých webů nebudu s cookie lištou zase tak moc spěchat a stresovat.
 
-Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápravě, takže i kdyby na vás „vlítli", máte čas to opravit. Pokuty by navíc neměly být likvidační.
+Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápravě, takže i kdyby na vás „vlítli“, máte čas to opravit. Pokuty by navíc neměly být likvidační.
 
 > Kontrolu provádí @UOOUCR, sankce dává samozřejmě podle uvážení, ale horní hranice je vždycky předpisem limitovaná, navíc nesmí být nepřiměřená a likvidační.
 >
@@ -190,7 +190,7 @@ Musím se přiznat, že právě tahle část analýzy, kterou jsem si dělal pro
 
 Pojďme si projít pár [third-parties](third-party.md), které jsem zkoumal.
 
-* **Google Fonts:** názory se různí. Nějakou personalizaci dělají, ale spíše na základě lokality. Ve [FAQ píší](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), že „no cookies are sent". [Vladimír Smitka](https://twitter.com/smitka/status/1471132548990439434) ale říká, že „Google fonty sbírají data o koncovém uživateli" a tak je při přísném výkladu potřeba souhlas. Nebo si fonty stáhnout lokálně.
+* **Google Fonts:** názory se různí. Nějakou personalizaci dělají, ale spíše na základě lokality. Ve [FAQ píší](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), že „no cookies are sent“. [Vladimír Smitka](https://twitter.com/smitka/status/1471132548990439434) ale říká, že „Google fonty sbírají data o koncovém uživateli“ a tak je při přísném výkladu potřeba souhlas. Nebo si fonty stáhnout lokálně.
 * **Vložení obsahu z Twitteru:** Ukládají cookies, personalizační i reklamní, tzn. souhlas by myslím standardně byl potřeba. Je to však možné vypnout a chránit soukromí uživatele, viz [nápověda](https://twitter.com/machal/status/1471031073027076098).
 * **Vložení videa z YouTube:** Standardně souhlas potřebujete, ukládají reklamní cookies. Embedy lze servírovat z domény http://youtube-nocookie.com a cookies se neuloží dokud uživatel video nepustí. Tzn. pak není potřeba souhlas? Nevím. Vladimír Smitka [píše](https://twitter.com/smitka/status/1471132859402489865), že ta cookieless doména je fejk.
 * **Facebook embed i Facebook pixel:** Ukládají cookie jak diví a nikde jsem nenašel možnost to změnit.
@@ -248,7 +248,7 @@ Toto jsem zatím neřešil, proto zde využiju možností získaných od kolegů
 * **[CookieConsent.com](https://www.cookieconsent.com/)** se jmenuje stejně, dělá to podobné věci, ale je to něco jiného.
 * **[Complianz](https://wordpress.org/plugins/complianz-gdpr/)** (Wordpress): Kolega [Dan Střelec](https://www.danielstrelec.cz/) mi píše: „V základu je zdarma, nasazení pár hodin hodina práce (podle webu). Pokud potřebujete ukládat souhlasy, je třeba placená verze (39 EUR/rok).
 
-Větší řešení jsou například [Cookiebot](https://www.cookiebot.com/en/): V ČR velmi populární. Dan Střelec: „Neplacená verze je pouze do 100 stránek/web, od 500 stránek/web stojí €9/měsíc.".
+Větší řešení jsou například [Cookiebot](https://www.cookiebot.com/en/): V ČR velmi populární. Dan Střelec: „Neplacená verze je pouze do 100 stránek/web, od 500 stránek/web stojí €9/měsíc.“.
 
 Zajímavé srovnání řešení, hlavně pro weby běžící na WordPressu, připravili v [eHub.cz](https://ehub.cz/blog/post/jak-vyresit-novou-podobu-cookies-listy-na-wordpress-webech).
 
