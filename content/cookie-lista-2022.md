@@ -34,7 +34,7 @@ To soukromí ale fakt musíme řešit.
 
 Představte si situaci že přijdete do obchoďáku a u vchodu vám bez ptaní dají do kapsy krabičku, která bude ukládat vaši polohu – jaké obchody jste navštívili, co jste tam dělali. Dají vám ji s úsměvem a s tím, že příště ta data použijí pro zlepšení vašeho nákupního prožitku. A že je možné, že ta data někomu prodají. Pro vaše dobro.
 
-Líbilo by se vám to? Mě ne. Ale na webu je to úplně běžné:
+Líbilo by se vám to? Mně ne. Ale na webu je to úplně běžné:
 
 * Přijdete, dostanete cookie od Google Analytics, která sleduje váš pohyb webem.
 * Pokud je na webu vložené YouTube video, cookie se ukládá nejen pro úpravu obsahu a reklamy nejen na navštíveném webu, ale také na YouTube a také na jiných webech.
@@ -119,7 +119,7 @@ Cookie lišta je otrava. Ano, to je.
 
 > Víte jaká je nejlepší cookie lišta?  Žádná!
 
-— _Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)_
+— *Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)*
 
 Pokud máte velký web, řešil bych to, u malinkých asi nemá smysl propadat panice a nutně nasazovat lištu hned po Vánocích.
 
