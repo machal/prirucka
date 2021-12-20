@@ -10,9 +10,9 @@ Pravděpodobně jste to už řešili, pravděpodobně to už máte vyřešené. 
 
 Text budu tedy spíše cílit na majitele menších webů nebo ty, kteří zatím neměli potřebu to řešit. Dole v textu odkazuji na všemožné zdroje, takže to můžete dostudovat. V textu základy řešit nebudu, spíše otevřu témata, která mě zaujala a jinde jsem je nenašel.
 
-Předem říkám, že se v téhle oblasti nepovažuji za odborníka – pokud se webařinou živíte, nasazení na weby konzultujte s advokáty, experty na UX a marketing.
+Předem říkám, že se v téhle oblasti nepovažuji za odborníka – pokud se webařinou živíte, nasazení na weby konzultujte s advokáty (já využívám [Dostupného advokáta](https://dostupnyadvokat.cz/spolecnosti/cookies)), experty na UX a marketing.
 
-Můj pohled je pohled „hobbíka", člověka, který pro radost spravuje pár webů, ale vývojařinou se víceméně neživí.
+Můj pohled je víceméně pohledem „hobbíka", člověka, který spravuje pár webů, ale denodenní vývojařinou se převážně neživí.
 
 Než se do toho pustíme, velmi rád bych zde nejprve ventiloval svůj celkový osobní dojem. On se totiž za poslední týdny dost významně změnil.
 
@@ -30,7 +30,7 @@ To soukromí ale fakt musíme řešit.
 
 > Nepoužívat a nešmírovat. Za analytické nástroje nechat platit toho, kdo data měří a nenechávat to na cene uživatelského soukromí lidí, kteří ani nevědí co schvalují.
 
-(Jan Černý [na Twitteru](https://twitter.com/janhonzacerny/status/1465985275268632579).)
+— _Honza ChemiX Černý [na Twitteru](https://twitter.com/janhonzacerny/status/1465985275268632579)_
 
 Představte si situaci že přijdete do obchoďáku a u vchodu vám bez ptaní dají do kapsy krabičku, která bude ukládat vaši polohu – jaké obchody jste navštívili, co jste tam dělali. Dají vám ji s úsměvem a s tím, že příště ta data použijí pro zlepšení vašeho nákupního prožitku. A že je možné, že ta data někomu prodají. Pro vaše dobro.
 
@@ -41,6 +41,13 @@ Líbilo by se vám to? Mě ne. Ale na webu je to úplně běžné:
 * Taková komentářová služba Disqus se s tím už vůbec nemaže. V [Cookie Policy](https://disqus.com/cookie-policy/) přiznává jen zlomek cookies, které reálně ukládá, a rovnou říká, že data vašich uživatelů posílá i dalším stranám.
 
 To všechno proto, že na webech mocně využíváme služby třetích stran. Zvykli jsme si na to. Šetří nám to jako vývojářům a marketérům čas a peníze. Jenže nic jako komponenta třetí strany zdarma neexistuje. I ty placené mají daleko větší cenu než si myslíme.
+
+<figure>
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1639995817/vzhurudolu-prirucka/cookie-lista-2022-fun_end4jh.png" width="1600" height="900" alt="Cookie lišta">
+<figcaption markdown="1">
+*Někdomu sledování nevadí. Ale vědět to předem je asi dobré, ne?*
+</figcaption>
+</figure>
 
 Za náš ušetřený čas a peníze platí uživatelé svým soukromím. Jejich data, informace o pohybu našim webem využíváme nejen my, ale i úplně cizí firmy.
 
@@ -58,9 +65,9 @@ Teď už se pustím do praktických rad, co s tím dělat na malém webu. Dává
 
 Nejprve pár textů a videí, které se vám mohou hodit při studiu:
 
-* Právní pohled na [Lupa.cz](https://www.lupa.cz/clanky/od-1-ledna-se-zmeni-pravidla-pro-cookies-pripravte-si-listy-radi-pravnicka/) nebo od [Petry Dolejšové](https://www.pavelungr.cz/jak-na-cookie-listu-v-roce-2022-prace-s-cookies-v-roce-2022-saga-pokracuje-petra-dolejsova/).
-* Marketingový pohled od [House of Řezáč](https://www.houseofrezac.com/blog/mereni-a-marketing-bez-cookies).
-* UX pohled od [Ondřeje Ilinčeva](https://www.ilincev.com/cookies-2022).
+* Právní pohled: [Lupa.cz](https://www.lupa.cz/clanky/od-1-ledna-se-zmeni-pravidla-pro-cookies-pripravte-si-listy-radi-pravnicka/), od [Petry Dolejšové](https://www.pavelungr.cz/jak-na-cookie-listu-v-roce-2022-prace-s-cookies-v-roce-2022-saga-pokracuje-petra-dolejsova/) nebo [Dostupného advokáta](https://dostupnyadvokat.cz/blog/cookies-2022).
+* Marketingový pohled: [House of Řezáč](https://www.houseofrezac.com/blog/mereni-a-marketing-bez-cookies).
+* UX pohled: [Ondřej Ilinčev](https://www.ilincev.com/cookies-2022).
 * Můj pohled k rychlosti webu na [PageSpeed.cz](http://pagespeed.cz/). (To jediné, čemu doopravdy rozumím.)
 * [Komplexní webinář](https://www.youtube.com/watch?v=mvMyEVr_kMg) organizovaný Pavlem Ungrem.
 * [Diskuze o cookies](https://www.youtube.com/watch?v=s4I6TjZMR_I) u Frontendistů. (Martin Kopta a Honza Chemix Černý tam velmi hezky argumentují z pohledu soukromí uživatele.)
@@ -112,7 +119,7 @@ Cookie lišta je otrava. Ano, to je.
 
 > Víte jaká je nejlepší cookie lišta?  Žádná!
 
-(Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555).)
+— _Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)_
 
 Pokud máte velký web, řešil bych to, u malinkých asi nemá smysl propadat panice a nutně nasazovat lištu hned po Vánocích.
 
@@ -120,8 +127,9 @@ Jak to riziko chápu já? Postihy za nedodržení zákona samozřejmě budou ud�
 
 Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápravě, takže i kdyby na vás „vlítli", máte čas to opravit. Pokuty by navíc neměly být likvidační.
 
-<blockquote class="twitter-tweet"  data-dnt="true"><p lang="cs" dir="ltr">Kontrolu provádí <a href="https://twitter.com/UOOUCR?ref_src=twsrc%5Etfw">@UOOUCR</a>, sankce dává samozřejmě podle uvážení, ale horní hranice je vždycky předpisem limitovaná, navíc nesmí být nepřiměřená a likvidační. Myslím, že novela pro cookies nemá speciální hranici, takže limit podle GDPR (nechci tady těmi částkami zbytečně strašit).</p>&mdash; Petra Dolejšová (@DolejsovaPetra) <a href="https://twitter.com/DolejsovaPetra/status/1470436779803262988?ref_src=twsrc%5Etfw">December 13, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Kontrolu provádí @UOOUCR, sankce dává samozřejmě podle uvážení, ale horní hranice je vždycky předpisem limitovaná, navíc nesmí být nepřiměřená a likvidační.
+
+— _Petra Dolejšová [na Twitteru](https://twitter.com/DolejsovaPetra/status/1470436779803262988)_
 
 Nechci tady ale nabádat k očůrávání zákona. S jeho smyslem souhlasím, svoje weby podle něj upravím. Výše uvedené mi ale dává čas a klid to dát do pořádku, když už jsem to začal řešit pozdě.
 
@@ -154,13 +162,15 @@ Možnosti, jak si ponechat GA a zároveň nemít cookie lištu, tedy plnit záko
 
 První příklad je naprogramování vlastní vrstvy událostí na Google Analytics:
 
-<blockquote class="twitter-tweet"  data-dnt="true"><p lang="cs" dir="ltr">Přejdi na GA4, použij consent API a bez souhlasu měř bez využití dat ze storage jen pomocí odpalování eventů. Pak ti stačí podle ZEK uživatele jen informovat a podle GDPR uplatníš oprávněný zájem.</p>&mdash; Martin Kopta (@atpok) <a href="https://twitter.com/atpok/status/1464153090223976451?ref_src=twsrc%5Etfw">November 26, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Přejdi na GA4, použij consent API a bez souhlasu měř bez využití dat ze storage jen pomocí odpalování eventů.
 
-Druhá varianta s počítáním clienId:
+— _Martin Kopta [na Twitteru](https://twitter.com/atpok/status/1464153090223976451)_
 
-<blockquote class="twitter-tweet"  data-dnt="true"><p lang="cs" dir="ltr">Koukni na <a href="https://t.co/dbplN7Q8iM">https://t.co/dbplN7Q8iM</a> Je tam popsaná varianta, kdy clientId neukládáš, nýbrž jej počítáš pro každý request zvlášť. Výhody: nemusíš nic ukládat (a tedy není třeba souhlas). Nevýhody: horší přesnost, může to session více lidí spojit do jedné.</p>&mdash; Jirka Hrazdil (@nufue) <a href="https://twitter.com/nufue/status/1471062808515289096?ref_src=twsrc%5Etfw">December 15, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Druhá varianta s počítáním `clienId`:
+
+> clientId neukládáš, nýbrž jej počítáš pro každý request zvlášť. Výhody: nemusíš nic ukládat (a tedy není třeba souhlas). Nevýhody: horší přesnost, může to session více lidí spojit do jedné.
+
+— _Jirka Hrazdil [na Twitteru](https://twitter.com/nufue/status/1471062808515289096) odkazuje na text [Disabling Google Analytics Cookies: Advanced Solution](https://helgeklein.com/blog/google-analytics-cookieless-tracking-without-gdpr-consent/#disabling-google-analytics-cookies-advanced-solution)_
 
 Taky je možné nepoužívat Google Analytics, že ano? Popularitu teď nabírají alternativní nástroje jako je [Matomo](https://matomo.org/) nebo [Fathom](https://usefathom.com/) a další. Z toho co jsem z komentářů analytiků, kterým věřím, usoudil… Je to past.
 
@@ -186,12 +196,18 @@ Pojďme si projít pár [third-parties](third-party.md), které jsem zkoumal.
 
 Můj celkový dojem? Pardon, ale asi budu blinkat… Takhle špatné jsem to nečekal. Čest výjimce, čest Twitteru.
 
-Celé moje vlákno na Twitteru, pokud by vás to zajímalo doplněné o cenné názory dalších:
-
-<blockquote class="twitter-tweet"  data-dnt="true"><p lang="cs" dir="ltr">Jak to od ledna bude s cookie-lištou a komponentami třetích stran?<br>Sám tomu moc nerozumím. Co si myslím, vykopnu ve vláknu a třeba mě doplníte. ⬇️</p>&mdash; Martin Michálek (@machal) <a href="https://twitter.com/machal/status/1471031067708641282?ref_src=twsrc%5Etfw">December 15, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 Můj seznam je samozřejmě nekompletní, takže pokud jej doplníte v komentářích (zatím Disqus, omlouvám se), budu moc rád.
+
+Hodně se mi líbí řešení, kdy si souhlas k vložení obsahu vkládaném třetími stranami vyžádáte až při najetí na tento obsah. Připravené je to např. v komponentě [Iframe Manager](https://github.com/orestbida/iframemanager).
+
+<figure>
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1639995815/vzhurudolu-prirucka/cookie-lista-2022-iframe-manager_a3wgnj.png" width="1600" height="900" alt="Iframe Manager">
+<figcaption markdown="1">
+*Iframe Manager. Chce opravdu přehrát tohle video? Počkejte… i za cenu šmírování?*
+</figcaption>
+</figure>
+
+Celé moje vlákno k problematice third-parties je [na Twitteru](https://twitter.com/machal/status/1471031067708641282), pokud by vás to zajímalo doplněné o cenné názory dalších.
 
 Dobře, teď už vím, že s vysokou pravděpodobností budu i na Vzhůru dolů nějakou lištu potřebovat. Jak to ale implementovat?
 
@@ -228,9 +244,13 @@ Toto jsem zatím neřešil, proto zde využiju možností získaných od kolegů
 
 * **[CookieConsent](https://orestbida.com/demo-projects/cookieconsent/)**: Malý plugin i s [ukázkovým kódem](https://gist.github.com/lynt-smitka/1f795c2d0410659ac8fea0992eb1b977) od Vladimíra Smitky.
 * **[CookieConsent.com](https://www.cookieconsent.com/)** se jmenuje stejně, dělá to podobné věci, ale je to něco jiného.
-* **[Complianz](https://wordpress.org/plugins/complianz-gdpr/)** (Wordpress): [Dan Střelec](https://www.danielstrelec.cz/) píše: „V základu je zdarma, nasazení pár hodin hodina práce (podle webu). Pokud potřebujete ukládat souhlasy, je třeba placená verze (39 EUR/rok).
+* **[Complianz](https://wordpress.org/plugins/complianz-gdpr/)** (Wordpress): Kolega [Dan Střelec](https://www.danielstrelec.cz/) mi píše: „V základu je zdarma, nasazení pár hodin hodina práce (podle webu). Pokud potřebujete ukládat souhlasy, je třeba placená verze (39 EUR/rok).
 
-Větší řešení jsou například [Cookiebot](https://www.cookiebot.com/en/): V ČR velmi populární. Dan Střelec: „Neplacená verze je pouze do 100 stránek/web, od 500 stránek/web stojí €9/měsíc.". Nebo velmi robustní [OneTrust (dříve Optanon)](https://www.onetrust.com/), Didomi nebo Funding Choices od Google.
+Větší řešení jsou například [Cookiebot](https://www.cookiebot.com/en/): V ČR velmi populární. Dan Střelec: „Neplacená verze je pouze do 100 stránek/web, od 500 stránek/web stojí €9/měsíc.".
+
+Zajímavé srovnání řešení, hlavně pro weby běžící na WordPressu, připravili v [eHub.cz](https://ehub.cz/blog/post/jak-vyresit-novou-podobu-cookies-listy-na-wordpress-webech).
+
+Větší weby využívají velmi robustní [OneTrust (dříve Optanon)](https://www.onetrust.com/), Didomi nebo Funding Choices od Google.
 
 ## Cookie lišta a rychlost webu {#rychlost}
 
