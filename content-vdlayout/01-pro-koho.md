@@ -16,7 +16,7 @@ Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od za
 
 V prvních třech kapitolách čtenářům postupně představuji téma, abychom se ve čtvrté dostali k vrcholu, který představují příklady použití CSS layoutů.
 
-Pátá až devátá kapitola jsou už čisté referenční příručku. Budu moc rád, když si je pročtete. Hlavně vy začínající. Ale myslím si, že do nich spíše budete nahlížet, když to budete potřebovat – takže narazíte na vlastnost, kterou byste chtěli více pochopit.
+Pátá až devátá kapitola jsou už čisté referenční příručky. Budu moc rád, když si je pročtete. Hlavně vy začínající. Ale myslím si, že do nich spíše budete nahlížet, když to budete potřebovat – takže až narazíte na vlastnost, kterou byste chtěli více pochopit.
 
 Jedno ale doporučím všem – z každé kapitoly si poctivě přečtěte úvod a závěrečný kvíz. V tom druhém se zhruba dozvíte, jak jste na tom se znalostí problematiky. Nakonec třeba uznáte, že jsem netrávil čas zbytečně, když jsem se snažil, aby i referenční kapitoly měly při čtení hlavu a patu.
 

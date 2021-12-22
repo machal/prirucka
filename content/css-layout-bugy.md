@@ -100,6 +100,8 @@ Kdysi tak populární prohlížeč od Microsoftu vycházel v nových verzích z 
 
 Pojďme na ty chyby, ať tu nepříjemnost máme za sebou.
 
+Často tady budu mluvit o [vlastnosti `flex-basis`](css-flex-basis.md). Pokud ji neznáte, vězte, jde o podobnou věc jako je [vlastnost `flex`](css-flex.md), tedy určení rozměrů položky. Zkratka `flex` toho umí jen o trochu víc.
+
 1. Vlastnost `flex-basis` nezohledňuje `box-sizing:border-box` _(flexbug #7)_.
 2. Vlastnost `flex` s nulovou `flex-basis` neplatí _(flexbug #4)_.
 3. Vlastnost `flex-basis` neumí funkci `calc()` _(flexbug #8)_.

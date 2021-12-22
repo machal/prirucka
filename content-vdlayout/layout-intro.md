@@ -8,9 +8,7 @@ Dnešní seznamovací aplikace a weby jsou úplně jinde, člověk párkrát kli
 
 Vzhledem k tomu, že držíte v ruce knížku, vlastně jste ukázali, že rychlé tempo seznamování, minimálně s technologiemi, není pro vás. To mám radost!
 
-Právě tuhle knížku ale v ruce držíte proto, že se chcete naučit něco o nových systémech layoutu v CSS.
-
-Potřebujeme s tématem nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem.
+V první kapitole ale s tématem potřebujeme nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem.
 
 Tohle bude Tinder pro systémy layoutu v CSS.
 
@@ -91,9 +89,18 @@ Už jen tímto zápisem dosáhneme toho, aby se potomci (prvky `box__image` a `b
 
 <div class="ebook-only" markdown="1">
 
-Pokud je tu někdo, kdo by potřeboval vysvětlit vlastnost `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná flexboxový layout.
+Pokud je tu někdo, kdo by potřeboval vysvětlit vlastnost `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde se jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná flexboxový layout.
 
 </div>
+
+Dále víme, že mezera mezi prvky v rozvržení bude zabírat `1rem`. Toho dosáhneme pomocí [vlastnosti `gap`](css-gap.md), která v layoutech umí jednoduše udělat mezery:
+
+```css
+.box {
+  display: flex;
+  gap: 1rem;
+}
+```
 
 Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovně:
 
@@ -104,13 +111,10 @@ Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovn
 
 .box__text {
   flex: 2;
-  margin-left: 1rem;  
 }
 ```
 
 [Vlastností `flex`](css-flex.md), což je zkratka pro nastavení šířky a způsobu rozpínání a smršťování prvku, jsme nastavili podíl na celkové šířce.
-
-Pomocí `margin-left:1rem` jsme pak zajistili onu mezírku mezi oběma prvky.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-layout-intro-example-flex.png" width="1600" height="900" alt="Flexbox ve Firefox DevTools">
@@ -119,7 +123,7 @@ Pomocí `margin-left:1rem` jsme pak zajistili onu mezírku mezi oběma prvky.
 </figcaption>
 </figure>
 
-Vytvořili jsme rozvržení, kde prvek `box__image` bude zabírat jednu třetinu šířky (`flex:1`), přičemž přepíše výchozí šířku obrázu, a prvek `box__text` vyplní zbylé dvě třetiny (`flex:2`).
+Vytvořili jsme rozvržení, kde prvek `box__image` bude zabírat jednu třetinu šířky (`flex:1`), přičemž přepíše výchozí šířku obrázku, a prvek `box__text` vyplní zbylé dvě třetiny (`flex:2`).
 
 Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 
@@ -164,7 +168,7 @@ Máme tedy rodiče (`box`) a tři prvky v něm. Jak z nich uděláme kýžený t
 
 Pomocí `display:grid` „zapneme“ mřížku, ale ještě se (na rozdíl od flexboxu) nic nestane.
 
-Layout vzniká až prostřednictvím [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md), které definuje šablonu pro počet a rozměry sloupců. Asi jste pochopili, že zápisem `2fr 1fr` rozděluji plochu na sloupečky o šířce dvou třetin a jedné třetiny.
+Layout vzniká až prostřednictvím [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md), které definuje šablonu pro počet a rozměry sloupců. Zápisem `2fr 1fr` pak rozděluji plochu na sloupečky o šířce dvou třetin a jedné třetiny. Je to podobné jako jsem to udělal u flexboxu pomocí `flex:2` a `flex:1`.
 
 [Vlastnost `gap`](css-gap.md) zde slouží k vykreslení mezery mezi prvky, v našem případě o šířce `1rem`.
 

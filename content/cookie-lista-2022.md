@@ -65,7 +65,7 @@ Teď už se pustím do praktických rad, co s tím dělat na malém webu. Dává
 
 Nejprve pár textů a videí, které se vám mohou hodit při studiu:
 
-* Právní pohled: [Lupa.cz](https://www.lupa.cz/clanky/od-1-ledna-se-zmeni-pravidla-pro-cookies-pripravte-si-listy-radi-pravnicka/), od [Petry Dolejšové](https://www.pavelungr.cz/jak-na-cookie-listu-v-roce-2022-prace-s-cookies-v-roce-2022-saga-pokracuje-petra-dolejsova/) nebo [Dostupného advokáta](https://dostupnyadvokat.cz/blog/cookies-2022).
+* Právní pohled: [Lupa.cz](https://www.lupa.cz/clanky/od-1-ledna-se-zmeni-pravidla-pro-cookies-pripravte-si-listy-radi-pravnicka/), od [Petry Dolejšové](https://www.pavelungr.cz/jak-na-cookie-listu-v-roce-2022-prace-s-cookies-v-roce-2022-saga-pokracuje-petra-dolejsova/) nebo [Dostupného advokáta](https://dostupnyadvokat.cz/blog/povinnosti-cookies).
 * Marketingový pohled: [House of Řezáč](https://www.houseofrezac.com/blog/mereni-a-marketing-bez-cookies).
 * UX pohled: [Ondřej Ilinčev](https://www.ilincev.com/cookies-2022).
 * Můj pohled k rychlosti webu na [PageSpeed.cz](http://pagespeed.cz/). (To jediné, čemu doopravdy rozumím.)

@@ -78,7 +78,7 @@ Pokud nutně potřebujete obsloužit i uživatele těchto prohlížečů a není
 Je dobré si uvědomit, že velkou část vlastností mají grid s flexboxem společnou nebo podobnou:
 
 * Všechny vlastnosti pro zarovnávání ve svislém a vodorovném směru.
-* Flexibilní jednotky (grid nabízí `fr`, flexbox pak čísla ve vlastnosti `flex-basis`).
+* Flexibilní jednotky (grid nabízí `fr`, flexbox pak čísla ve vlastnosti `flex`).
 
 Našli bychom toho více. Platí ale, že grid tyhle vlastnosti pokrývá více ze šířky a více do hloubky a je celkově robustnější. Flexbox je takový menší brácha, specializovaný na jeden typ layoutu.
 
