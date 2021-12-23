@@ -234,11 +234,7 @@ Příklad z praxe? Kolegové z VašeČočky.cz snížili nasazením FontFaceObse
 
 ### Zvažte nasazení technologie AMP {#amp-heading}
 
-[Accelerated Mobile Pages Project](https://www.ampproject.org/) je technologie pro tvorbu speciální verze stránek od Google.
-
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=i2_lAEzmOPo">AMP HTML (Accelerated Mobile Pages) demo</a> ~ AMP verze stránky se vám z výsledků vyhledávání Google zobrazí prakticky okamžitě. I na EDGE připojení.
-</p>
+[AMP](amp.md) je technologie pro tvorbu speciální verze stránek od Google.
 
 Zatím je určená hlavně pro statické weby – stránky s textovým obsahem typu blogy. [V plánech](https://www.ampproject.org/roadmap/) se ale objevují zmínky i o e-commerce.
 

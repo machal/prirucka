@@ -32,9 +32,9 @@ První veřejné oznámení technologie proběhlo 7. října 2015 a mluví jasn�
 
 Personální základy AMP tedy položil Google. Už v úvodních oznámeních se ale mluví o partnerství s poskytovateli obsahu, jako jsou Twitter, Pinterest nebo BuzzFeed. Google nicméně projekt vedl a navazoval na něj své další projekty.
 
-<p class="video web-only">
-Video: <a href="https://www.youtube.com/watch?v=a9E-gL8NOqs">AMP: Základy technologie pro rychlé weby</a> ~ Proč AMP potřebujeme a z čeho je vlastně tahle technologie složená?
-</p>
+Podívejte se na video „AMP: Základy technologie pro rychlé weby“.
+
+YouTube: [youtu.be/a9E-gL8NOqs](https://www.youtube.com/watch?v=a9E-gL8NOqs)
 
 Tady někde se zrodila ta názorová vlna, že jde o skupinu technologií jedné firmy. Klasický „vendor lock“, uzamčení uživatelů v technologiích jedné firmy, ze kterého není úniku.
 

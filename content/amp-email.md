@@ -105,9 +105,9 @@ Respektive – jak sami vidíte, jde o směsici prvků použitých u AMP Website
 Jde o směsici prvků použitých v jiných částech specifikace AMP – Websites a Ads.
 </div>
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=un9625xfRYg">AMP Email</a> ~ Tomáš Krejčí na brněnské minikonferenci Frontendisti.cz ukazuje krásné demo dynamických e-mailů, hlavně pro vývojáře.
-</p>
+Podívejte se na video „AMP Email“. Tomáš Krejčí na brněnské minikonferenci Frontendisti.cz ukazuje krásné demo dynamických e-mailů, hlavně pro vývojáře.
+
+YouTube: [youtu.be/un9625xfRYg](https://www.youtube.com/watch?v=un9625xfRYg)
 
 Kromě vám již známých pravidel tady například platí:
 

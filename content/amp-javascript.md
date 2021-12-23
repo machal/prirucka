@@ -202,9 +202,9 @@ Kód tedy umístíme na do souboru `ahoj.js` na naši doméně. Pokud JavaScript
 
 Takhle to vypadá jako starý dobrý běžný JavaScript ve starých dobrých běžných stránkách, že ano? Nenechte se mýlit, funguje to úplně jinak.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=sYXkVOiz77I">Kristofer Baxter: amp-script</a> ~ Představení komponenty na AMP Conf 2019.
-</p>
+Podívejte se na video „Kristofer Baxter: amp-script“.
+
+YouTube: [youtu.be/sYXkVOiz77I](https://www.youtube.com/watch?v=sYXkVOiz77I)
 
 `amp-script` cílí zejména na dva problémy současného JavaScriptu.
 

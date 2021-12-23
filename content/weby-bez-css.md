@@ -1,12 +1,6 @@
 # Weby bez CSS: Existuje to vůbec? A jak to testovat?
 
-Je docela dost situací a kontextů, ve kterých se weby vykreslují s jinými než vašimi styly nebo úplně bez nich.
-
-Prima video k tomu natočila Jen Simmons. 
-
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=C82zB_yaGF8">Jen Simmons: HTML Source Order and When There’s No CSS</a> ~ Je důležité nakódit stránku tak, aby bez CSS dávala smysl.
-</p>
+Je docela dost situací a kontextů, ve kterých se weby vykreslují s jinými než vašimi styly nebo úplně bez nich. Prima video k tomu natočila [Jen Simmons](https://www.youtube.com/watch?v=C82zB_yaGF8).
 
 Pojďme teď téma shrnout a doplnit vlastními postřehy.
 

@@ -84,9 +84,9 @@ CodePen: [cdpn.io/e/RXevwJ](https://codepen.io/machal/pen/RXevwJ?editors=1000)
 
 Je zajímavé, že když jsem totéž zkoušel pro menší obrázky, veliké zhruba mezi 20-30 kB, prohlížeč usoudil, že lazy loading je zbytečné dělat a stáhl obrázky všechny.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=caxfm0jO7uY">Nativní lazyloading</a> ~ Martin Kolář vysvětluje líné načtení v Chrome na akci Frontendisti.cz.
-</p>
+Podívejte se na video „Nativní lazyloading“.
+
+YouTube: [youtu.be/caxfm0jO7uY](https://www.youtube.com/watch?v=caxfm0jO7uY)
 
 Není asi od věci zmínit, že nativní líné načtení funguje i pro atributy [`srcset` a `sizes`](srcset-sizes.md) nebo značku [`<picture>`](picture.md):
 

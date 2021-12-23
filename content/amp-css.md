@@ -16,9 +16,9 @@ Aby bylo dosaženo kýženého výkonu, CSS je nutné vkládat přímo do HTML, 
 
 </div>
 
-<p class="video web-only">
-Video: <a href="https://www.youtube.com/watch?v=_vp-BVgYU98">AMP pro frontendisty</a> ~ HTML, CSS a přes 100 komponent v jednom frameworku.
-</p>
+Podívejte se na video „AMP pro frontendisty: HTML, CSS a přes 100 komponent v jednom frameworku.“
+
+YouTube: [youtu.be/_vp-BVgYU98](https://www.youtube.com/watch?v=_vp-BVgYU98)
 
 Některé zde uvedené body jsou rozumné a daly by se doporučit přinejmenším některým webům realizovaným běžnými technologiemi. Do této kategorie patří zákaz stahování externích skriptů pomocí `@import` v CSS, omezení animací a částečně také vkládání stylů přímo do HTML.
 

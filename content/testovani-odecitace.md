@@ -61,10 +61,9 @@ Rotor umí vypsat všechny navigační prvky stránky, například i [WAI-ARIA o
 
 Tohle vám bude asi stačit. Pokud byste se chtěli naučit i další zkratky, zkuste si projít nápovědu na [accessibility.psu.edu](http://accessibility.psu.edu/screenreaders/voiceover/).
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=sO_xOGgrE2Y">WAI-ARIA</a> ~ Jak testovat WAI-ARIA role. I za pomocí VoiceOveru na macOS
-</p>
+Podívejte se na video „WAI-ARIA“.
 
+YouTube: [youtu.be/sO_xOGgrE2Y](https://www.youtube.com/watch?v=sO_xOGgrE2Y)
 
 ## Jak používat VoiceOver na iOS?{#ios-voiceover}
 

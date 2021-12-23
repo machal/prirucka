@@ -59,7 +59,7 @@ Na některých webech hlavní navigaci v hlavičce nepotřebujete. Žádná spec
 
 Raději zmíním i tento „návrhový vzor“. Jak jsem psal [v textu o ikoně hamburgeru](mobilni-navigace-hamburger.md), často se navigace na mobilech schovává zbytečně. Když v ní máte velmi málo položek, tohle je nejlepší řešení: uvařit si kafe, dát nohy nahoru a nedělat nic.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=D4IDwYCWfJk">Responzivní navigace</a> ~ Jaký typ responzivní navigace vybrat? Projdeme si osm návrhových vzorů pro navigace na responzivních webech a ukážeme si příklady ze skutečných webů.
-</p>
+Podívejte se na video „Responzivní navigace“.
+
+YouTube: [youtu.be/D4IDwYCWfJk](https://www.youtube.com/watch?v=D4IDwYCWfJk)
 

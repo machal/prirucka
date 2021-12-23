@@ -137,13 +137,15 @@ Jen pro pořádek – je potřeba odlišit [GDPR](gdpr.md) a nový odstaveček z
 
 ## Jak nemít cookie lištu a zároveň dodržovat zákon? {#nemit}
 
-V prvé fázi jsem u všech svých webů přemýšlel nad tímto řešením. Realizovatelné to ale je jen u těch opravdu miniaturních.
+V prvé fázi jsem u všech svých webů přemýšlel nad tímto nejčistším řešením. U miniaturních webů je to realizovatelné, jen nevím jak tomu bude u Vzhůru dolů.
 
-Pokud potřebuji základní měření [Google Analytics](google-analytics.md), cookie lištu musím mít. GA totiž přidávají cookie, kterou měří uživatele napříč webem.
+Pokud potřebujete běžné měření [Google Analytics](google-analytics.md), cookie lištu musíte mít. GA totiž přidávají cookie, kterou měří uživatele napříč webem.
 
 Pokud potřebuji jakoukoliv jinou komponent třetí strany (YouTube a jiné embedy, GTM, chat, pravděpodobně i Google Fonts), pak vysoce pravděpodobně cookie lištu musíte mít.
 
-Takže – nezajímá vás návštěvnost a chování návštěvníků, nepotřebujete kód třetí strany? Lištu nepotřebujete.
+Touto cestou se vydaly i velké weby [jako Github](https://github.blog/2020-12-17-no-cookie-for-you/). Když si ale ke dnešku prohlédnete cookies, které vám Github a jimi používané third-parties uloží na stránce tohoto oznámení, vůbec není jisté, zda byli schopní tu proklamovanou čistotu udržet.
+
+Takže – nezajímá vás návštěvnost a chování návštěvníků, nepotřebujete kód třetí strany? Lištu nepotřebujete. Jinak to budete mít složitější.
 
 ## Lze mít Google Analytics a nemít lištu?  {#ga}
 
@@ -192,7 +194,7 @@ Pojďme si projít pár [third-parties](third-party.md), které jsem zkoumal.
 
 * **Google Fonts:** názory se různí. Nějakou personalizaci dělají, ale spíše na základě lokality. Ve [FAQ píší](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), že „no cookies are sent“. [Vladimír Smitka](https://twitter.com/smitka/status/1471132548990439434) ale říká, že „Google fonty sbírají data o koncovém uživateli“ a tak je při přísném výkladu potřeba souhlas. Nebo si fonty stáhnout lokálně.
 * **Vložení obsahu z Twitteru:** Ukládají cookies, personalizační i reklamní, tzn. souhlas by myslím standardně byl potřeba. Je to však možné vypnout a chránit soukromí uživatele, viz [nápověda](https://twitter.com/machal/status/1471031073027076098).
-* **Vložení videa z YouTube:** Standardně souhlas potřebujete, ukládají reklamní cookies. Embedy lze servírovat z domény http://youtube-nocookie.com a cookies se neuloží dokud uživatel video nepustí. Tzn. pak není potřeba souhlas? Nevím. Vladimír Smitka [píše](https://twitter.com/smitka/status/1471132859402489865), že ta cookieless doména je fejk.
+* **Vložení videa z YouTube:** Standardně souhlas potřebujete, ukládají reklamní cookies. Embedy lze servírovat z domény `youtube-nocookie.com` a cookies se neuloží dokud uživatel video nepustí. Tzn. pak není potřeba souhlas? Nevím. Vladimír Smitka [píše](https://twitter.com/smitka/status/1471132859402489865), že ta cookieless doména je fejk.
 * **Facebook embed i Facebook pixel:** Ukládají cookie jak diví a nikde jsem nenašel možnost to změnit.
 * **Komentáře Disqus:** Ukládá cookies jak divý, v [Cookie Policy](https://disqus.com/cookie-policy/) přiznává jen část a ještě vesele prohlašuje komu všemu ty údaje cookies nepředává. A to je prosím placená služba! Zde budu muset při pročišťování webu od nepořádných služeb třetí strany začít.
 
@@ -215,11 +217,9 @@ Dobře, teď už vím, že s vysokou pravděpodobností budu i na Vzhůru dolů 
 
 ## Řešení souhlasu s Google Tag Managerem  {#gtm}
 
-[Martin Kolář](https://martinkolar.eu/) udělal o tomto jednoduchém řešení pěknou přednášku:
+[Martin Kolář](https://martinkolar.eu/) udělal o tomto jednoduchém řešení pěknou přednášku.
 
-<div class="rwd-media">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KW7lNaLfu9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+YouTube: [youtu.be/KW7lNaLfu9c](https://www.youtube.com/watch?v=KW7lNaLfu9c)
 
 Martin ukazuje řešení vhodné právě pro jednoduché weby a vlastní implementaci lišty.
 

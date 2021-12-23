@@ -35,11 +35,9 @@ Kniha [HTTP/3 explained](https://http3-explained.haxx.se/en/h3/h3-h2) v části 
 
 Připomínám, že prioritizaci zdrojů ovlivňují prohlížeče, může je ovlivnit vývojář (např. [způsobem servírování JS](https://www.vzhurudolu.cz/prirucka/js-priority) nebo pomocí [přednačtení](https://www.vzhurudolu.cz/prirucka/preload)), ale také je ovlivní server, vlastním způsobem implementace priorit.
 
-Dalo by se říct, že s prioritizací jsou na HTTP/2 jenom potíže. Ty vychází hlavně ze špatného nastavení na serverech. V oboru je proto populární následující video od Pata Meenena:
+Dalo by se říct, že s prioritizací jsou na HTTP/2 jenom potíže. Ty vychází hlavně ze špatného nastavení na serverech. V oboru je proto populární následující video od Pata Meenena.
 
-<div class="rwd-media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sgjxuhFQktE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+YouTube: [youtu.be/sgjxuhFQktE](https://www.youtube.com/watch?v=sgjxuhFQktE)
 
 Prioritizace na HTTP/1.x byla jednoduchá – prohlížeče uměly navázat 6 spojení pro každou doménu. Když zdroje stáhly, pokračovaly dál.
 

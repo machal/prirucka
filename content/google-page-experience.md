@@ -41,9 +41,7 @@ Na jaké atributy stránek se v rámci Page Experience v Googlu ve svých automa
 
 Ve [videu](https://www.youtube.com/watch?v=h00kn5J-F2Q) z letošní konference Google.IO ukazuje Jeffrey Jose všechny atributy, které má dobrá uživatelská zkušenost se stránkou a zároveň je Google bude v aktualizaci zohledňovat.
 
-<div class="rwd-media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h00kn5J-F2Q?start=122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+YouTube: [youtu.be/h00kn5J-F2Q](https://www.youtube.com/watch?v=h00kn5J-F2Q?start=122)
 
 Je zajímavé, že se signály nyní třídí trochu jinak. Nová kategorizace dle mého není dokonalá, ale řekněme, že blíž k dokonalosti. Signály jsou rozdělené do následujících oblastí.
 
@@ -248,11 +246,9 @@ Nyní Google otevírá tuto možnost všem stránkám a to pomocí [technologie 
 
 Použití technologie SXG podle Google není podmínkou pro získání výhod z oblasti Page Experience. Jde o nadstavbu a jednu z možností, jak zlepšit rychlost webů.
 
-Zájemci o vysvětlení Signed Exchanges nechť se podívají na přednášku Robina Pokorného:
+Zájemci o vysvětlení Signed Exchanges nechť se podívají na přednášku Robina Pokorného na videu níže.
 
-<div class="rwd-media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UFopT4oc8eE?start=5386" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-</div>
+YouTube: [youtu.be/UFopT4oc8eE](https://www.youtube.com/watch?v=UFopT4oc8eE?start=5386)
 
 V [rozhovoru o AMP](https://www.vzhurudolu.cz/blog/149-amp-paul-bakaus) mě Paul Bakaus, jeden z nejviditelnější lidí v komunitě kolem AMP, říkal:
 

@@ -161,11 +161,9 @@ Ke správnému zarovnávání v gridu budete potřebova také vlastnosti jako [`
 
 ## Základy gridu a příklad {#priklad}
 
-Nejprve pojďme na představovací video.
+Nejprve pojďme na představovací video. Podívejte se na video „CSS grid“.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=9M5RGjlAkeY">CSS grid</a> ~ Úplné základy ve videu.
-</p>
+YouTube: [youtu.be/9M5RGjlAkeY](https://www.youtube.com/watch?v=9M5RGjlAkeY)
 
 A teď ten příklad. Řekněme, že naše HTML vypadá takto:
 

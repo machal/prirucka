@@ -67,9 +67,9 @@ Metriky se dají získat různými způsoby a na to se teď zaměříme.
 
 Ukazatele je možné získat strojem nebo spočítat z návštěv skutečných lidí.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=fR9n_yi050g">Metriky rychlosti načítání</a> ~ O tématu jsem v březnu 2018 přednášel také na minikonferenci Frontendisti.cz
-</p>
+Podívejte se na video „Lighthouse“.
+
+YouTube: [youtu.be/fR9n_yi050g](https://www.youtube.com/watch?v=fR9n_yi050g)
 
 ### Syntetická měření {#syntetika}
 

@@ -54,9 +54,9 @@ Ještě neutíkejte. V následujícím textu vám ukážu, kdy je takový systé
 
 Tenhle text chci napsat už asi dva roky, zhruba tak dlouho se mezi frontendisty tohle téma řeší. Odstup se jako vždy ukázal jako dobrá věc – se systémy jednoúčelových tříd dneska už mám docela dost zkušeností a názory na tuhle věc se mi za tu dobu pěkně usadily.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=UBSTRrEhWJ0">Utility třídy</a> ~ Úvod do problematiky na brněnském meetupu Frontendisti.cz.
-</p>
+Podívejte se na video „Utility třídy“.
+
+YouTube: [youtu.be/UBSTRrEhWJ0](https://www.youtube.com/watch?v=UBSTRrEhWJ0)
 
 Musím se ale pozastavit už u pojmenování. Téma článku je možné v českých webařských luzích a hájích potkat pod různými názvy:
 

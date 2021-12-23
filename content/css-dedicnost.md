@@ -10,9 +10,9 @@ Nezbývá než se s nimi smířit, pochopit je a najít způsob, jak spolu všic
 
 Dědičnost v CSS je způsob, jakým se dostávají hodnoty vlastností od rodičovských elementů k potomkům.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=bRZzF0rzfDw">Základy CSS: Dědičnost</a> ~ Pojďme si na ukázkách říct, co to ta dědičnost je.
-</p>
+Podívejte se na video „Základy CSS: Dědičnost“.
+
+YouTube: [youtu.be/bRZzF0rzfDw](https://www.youtube.com/watch?v=bRZzF0rzfDw)
 
 Dědičnost umožňuje skvělou věc, kterou si už často ani zkušenější mezi námi neuvědomují – nemusíme totiž v každé deklaraci uvádět všechny vlastnosti, které mají element stylovat.
 

@@ -13,9 +13,9 @@ Pojďme si dnes něco povědět o hlavním nástroji, který u klientů použív
 
 Interně jeho měření používá [Lighthouse](lighthouse.md) a WebpageTest, tedy [nástroje](rychlost-nastroje.md), které někteří čtenáři Vzhůru dolů znají jako své boty. A ti samí asi budou znát i [metriky](metriky-rychlosti.md), které SpeedCurve dokáže hlídat.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=xZvWR9obQ_0">SpeedCurve: Průběžné sledování rychlosti webu</a> ~ Případová studie použití SpeedCurve během optimalizace Rohlík.cz.
-</p>
+Podívejte se na video „SpeedCurve: Průběžné sledování rychlosti webu“.
+
+YouTube: [youtu.be/xZvWR9obQ_0](https://www.youtube.com/watch?v=xZvWR9obQ_0)
 
 SpeedCurve je můj hlavní nástroj u klientů, kterým dlouhodobě hlídám rychlost webu. Není tak drahý jak by se mohlo zdát, ale k ceně se ještě dostaneme. Nejprve si pojďme projít vlastnosti monitorovací aplikace. Budu ukazovat grafy od [Rohlík.cz](https://www.rohlik.cz/), mého milého klienta, o kterém jsem mluvil na výše uvedené přednášce.
 
@@ -94,11 +94,7 @@ Jak už jsem říkal na výše uvedené přednášce v Rohlík.cz, SpeedCurve zn
 
 Pokud byste ovšem stáli o monitoring reálných uživatelů, bude to už _darda_. Pak se připravte cenu od dvanácti tisíc dolarů ročně. [speedcurve.com/pricing/](https://speedcurve.com/pricing/)
 
-Základní měření reálných uživatelů ovšem dostanete i zadarmo od Googlu. Podívejte se na moje video o [Chrome UX Reportu (CrUX)](chrome-ux-report.md).
-
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=wvVmumXPQPM">Chrome UX Report: Jak rychlý je web u skutečných uživatelů?</a> ~ Databáze o rychlosti webů. Co to je a jak získat informace o vašem webu?
-</p>
+Základní měření reálných uživatelů ovšem dostanete i zadarmo od Googlu – z [Chrome UX Reportu (CrUX)](chrome-ux-report.md).
 
 Reporty z CrUX samozřejmě nejsou plnohodnotná náhrada, ale pro většinu běžných webů postačující.
 

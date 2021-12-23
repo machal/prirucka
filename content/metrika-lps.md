@@ -167,9 +167,9 @@ Ukažme si alespoň základní z nástrojů, které Lighthouse Performance Score
 
 [Nástrojů](rychlost-nastroje.md) pro měření rychlosti webu postavených na Lighthouse je ale opravdu hodně.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=zkbzYJ7xNKw">Lighthouse</a> ~ Průvodce měřením rychlosti s populárním nástrojem od Googlu.
-</p>
+Podívejte se na video „Lighthouse“.
+
+YouTube: [youtu.be/zkbzYJ7xNKw](https://www.youtube.com/watch?v=zkbzYJ7xNKw)
 
 A ještě jednu věc byste měli vědět – že není dobré porovnávat výsledky z různých nástrojů nebo různých prostředí.
 

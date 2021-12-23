@@ -198,9 +198,9 @@ Jak je tady vidět, metrika _První interaktivita_ během optimalizací provád�
 
 V AMP Vieweru už mohou uživatelé na AMP stránku narazit. Další krok – přednačtení – totiž nemusí „klapnout“, takže se stránka v nejhorším případě opravdu může vykreslovat s těmito hodnotami.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=l751Or7iZCA">AMP ekosystém</a> ~ Co je AMP Cache, co Optimizer a co Viewer?
-</p>
+Podívejte se na video „AMP ekosystém: Co je AMP Cache, co Optimizer a co Viewer?“.
+
+YouTube: [youtu.be/l751Or7iZCA](https://www.youtube.com/watch?v=l751Or7iZCA)
 
 Na webu Reflexu došlo v tomto kroku k hezkým zlepšením metrik _První vykreslení_ a _První interaktivita_.
 

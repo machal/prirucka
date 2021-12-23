@@ -42,9 +42,9 @@ Je garantováno pořadí provedení podle pořadí uvedení v HTML kódu.
 
 Odložené spuštění. Klasický skript, který se stáhne souběžně s parsováním. Je vyhodnocen, až prohlížeč skončí s parsováním HTML kódu.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=sEgvLilxDpE">Servírování JS na statických webech</a> ~ O async/defer/module jsem mluvil také na druhém online meetupu Frontendisti.cz.
-</p>
+Podívejte se na video „Servírování JS na statických webech“.
+
+YouTube: [youtu.be/sEgvLilxDpE](https://www.youtube.com/watch?v=sEgvLilxDpE)
 
 Také při tomto způsobu vložení je garantováno pořadí provedení.
 

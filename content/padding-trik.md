@@ -2,9 +2,9 @@
 
 Často se stává, že během načítání externích zdrojů stránky – jako jsou obrázky, video nebo obsah prvku `<iframe>` – potřebujeme držet [poměr stran](css-pomer-stran.md).
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=bi6Y6UqPEZU">Padding trik v CSS</a> ~ Padding trik a další techniky přehledně v krátkém videu.
-</p>
+Podívejte se na video „Padding trik v CSS“.
+
+YouTube: [youtu.be/bi6Y6UqPEZU](https://www.youtube.com/watch?v=bi6Y6UqPEZU)
 
 Ze své podstaty se totiž načítají asynchronně, takže stránka může být vykreslená, uživatelka ji používá a ejhle… layout se jí překreslí, obsah se posune, protože prohlížeč stáhl externí médium.
 

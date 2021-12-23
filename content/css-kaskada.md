@@ -24,9 +24,9 @@ Máte?
 
 Naopak do specifity nepatří [dědičnost](css-dedicnost.md), další *obávaná* vlastnost CSS. Když byste se mě před rokem zeptali, do kaskády bych ji zahrnul. Chybně. Stejně jako jste ji do kaskády předpokládám zahrnuli vy.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=TtDuwGpRYas">Základy CSS: Kaskáda a specificita</a> ~ V tomhle plavou i zkušenější, proto jsem připravit vysvětlující video.
-</p>
+Podívejte se na video „Základy CSS: Kaskáda a specificita“.
+
+YouTube: [youtu.be/TtDuwGpRYas](https://www.youtube.com/watch?v=TtDuwGpRYas)
 
 Pojďme teď na ty konkrétní vlastnosti kaskády.
 

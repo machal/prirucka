@@ -146,7 +146,3 @@ Vkládané SVG se samo o sobě nepřizpůsobuje rodičovskému kontejneru, proto
 Šířka a výška fallback obrázků se bere z hodnot, které máte ve zdrojových obrázcích u značky `<svg>`.  Buď si je tedy nastavte podle fixní šířky layoutu ve starších prohlížečích, nebo se bez nich v SVG zdrojích obejděte a velikosti PNG si nastavte v Grunt úloze parametry `defaultWidth` a `defaultHeight`.
 
 A to je vše, přátelé. Více najdete [v demu na Githubu](https://github.com/machal/demo-grunticon).
-
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=jG49jWMSjSc">Grunticon: sada nástrojů pro práci s SVG </a> ~ Co je Grunticon a jak ho nainstalovat a nastavit?
-</p>

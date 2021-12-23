@@ -110,9 +110,9 @@ Vše podstatné je v záložce Network:
 Na Vzhůru dolů jsem už psal i o dalších praktických tipech pro DevTools. [vrdl.cz/b/41-devtools-tipy](https://www.vzhurudolu.cz/blog/41-devtools-tipy).
 </div>
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=ewwHYkXmPpQ">Chrome DevTools: analýza načítání stránky </a> ~ Praktická demonstrace analýzy rychlosti načítání ve vývojářských nástrojích Chrome.
-</p>
+Podívejte se na video „Chrome DevTools: analýza načítání stránky“.
+
+YouTube: [youtu.be/ewwHYkXmPpQ](https://www.youtube.com/watch?v=ewwHYkXmPpQ)
 
 ## GTmetrix
 

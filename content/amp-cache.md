@@ -14,9 +14,9 @@ AMP Cache dělá tu zásadní inovaci celé technologie. Stránky už negeneruj�
 
 </div>
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=l751Or7iZCA">AMP: ekosystém</a> ~ Co je AMP Cache, co Optimizer a co Viewer?
-</p>
+Podívejte se na video „AMP: ekosystém: Co je AMP Cache, co Optimizer a co Viewer?“.
+
+YouTube: [youtu.be/l751Or7iZCA](https://www.youtube.com/watch?v=l751Or7iZCA)
 
 Kopie vaší AMP stránky je prostě stažená na adrese pod cizí doménou. Například:
 

@@ -18,11 +18,9 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/atomicky-design-a-pattern-la
 
 ## Designové systémy
 
-Myslím to, co asi znáte pod pojmy *style guide* nebo *pattern library*. Neznáte? Je to jako by jste si udělali pro větší projekt vlastní knihovnu odpovídající Bootstrapu. Chcete lepší vysvětlení? Podívejte se na přednášku:
+Myslím to, co asi znáte pod pojmy *style guide* nebo *pattern library*. Neznáte? Je to jako by jste si udělali pro větší projekt vlastní knihovnu odpovídající Bootstrapu. Chcete lepší vysvětlení? Podívejte se na video „Úvod do Style Guides“.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=FvTzAwebUjQ">Úvod do Style Guides</a> ~ Martin Staněk o „style guides“, dokumentacích k systémům designu.
-</p>
+YouTube: [youtu.be/FvTzAwebUjQ](https://www.youtube.com/watch?v=FvTzAwebUjQ)
 
 Budu se tady odkazovat na svůj aktuální projekt – přípravu systému atomického designu pro nový [Webmium e-Shop](http://www.webmium.cz/eshopy).
 
@@ -79,9 +77,9 @@ Organizace komponent o méně úrovních, obvyklá na jiných mých projektech �
 
 Pokud by vám ale atomické dělení přestalo vyhovovat, kategorizaci si můžete sami změnit. Brad Frost k tomu vyloženě vybízí a ukazuje i příklady jiných organizací. Myslím, že to ale nebudete potřebovat.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=wgsHfAV-6Aw">Atomic Design v České televizi</a> ~ Zdeněk Lanc sdílí zkušenosti s předchozí verzí Pattern Labu při redesignu ČT24.
-</p>
+Podívejte se na video „Atomic Design v České televizi“.
+
+YouTube: [youtu.be/wgsHfAV-6Aw](https://www.youtube.com/watch?v=wgsHfAV-6Aw)
 
 Tak, a teď si pojďme povídat o nástroji pro práci na atomických systémech.
 

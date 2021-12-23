@@ -67,15 +67,13 @@ Více informací je k dispozici ve zvláštním textu <span class="ebook-only" m
 
 <div class="web-only" markdown="1">
 
-  Můžete pokračovat článkem o [meta značce pro viewport](viewport-meta.md) nebo [výpočtu velikosti okna v CSS a JS](velikost-okna-css-js.md).
+Můžete pokračovat článkem o [meta značce pro viewport](viewport-meta.md) nebo [výpočtu velikosti okna v CSS a JS](velikost-okna-css-js.md).
+
+Podívejte se na video „Viewporty na mobilních zařízeních“.
+
+YouTube: [youtu.be/Un1lofU64oo](https://www.youtube.com/watch?v=Un1lofU64oo)
 
 </div>
-
-<p class="video web-only">
-
-Video: <a href="https://www.youtube.com/watch?v=Un1lofU64oo">Viewporty na mobilních zařízeních</a> ~ Praktická demonstrace viewportů na mobilních zařízeních a jak se k nim dostat v Javascriptu.
-
-</p>
 
 <div class="ebook-only" markdown="1">
 

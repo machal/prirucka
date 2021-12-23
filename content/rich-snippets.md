@@ -46,9 +46,9 @@ Strukturovaná data jsou standardizovaný formát pro poskytování informací o
 
 Zároveň jde z pohledu HTML kódu o jeden z nejsilnějších nástrojů pro získávání konkurenční výhody ve vyhledávači. Je to logické, ale bylo také mnohokrát prokázáno, že vizuální atraktivita výsledku vyznačených pomocí Rich Snippets zvyšuje šanci, že na ně uživatelé kliknou (a tedy zlepšuje míru prokliku, CTR).
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=IRU9RZU9wHQ">Strukturovaná data</a> ~ Úplné základy k tématice „rich snippetů“.
-</p>
+Podívejte se na video „Strukturovaná data“.
+
+YouTube: [youtu.be/IRU9RZU9wHQ](https://www.youtube.com/watch?v=IRU9RZU9wHQ)
 
 ## Jaké typy strukturovaných dat můžeme do zdrojáku vložit? {#typy}
 
@@ -189,9 +189,9 @@ Dávalo by smysl ta data poskytovat mimo dokument, jako externí JSON soubor, ž
 
 Podvody se strukturovanými daty jsou problém, na který ve výše uvedeném tweetu narážel i Dušan Janovský. Mnoho SEO fiškulínů se snažilo dostat například hvězdičkové hodnocení i do typů obsahu, pro které původně určený nebyl – typicky k článkům.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=rv_HgfAJRec">Zvýší vám rich snippety návštěvnost?</a> ~ Tomáš Bukovský: Jaký efekt můžete po nasazení čekat?
-</p>
+Podívejte se na video „Tomáš Bukovský: Zvýší vám rich snippety návštěvnost?“.
+
+YouTube: [youtu.be/rv_HgfAJRec](https://www.youtube.com/watch?v=rv_HgfAJRec)
 
 Google to ale začal více hlídat a [od roku 2019](https://webmasters.googleblog.com/2019/09/making-review-rich-results-more-helpful.html) už je možné hvězdičky zobrazovat jen u konkrétních typů obsahu.
 

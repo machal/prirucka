@@ -4,9 +4,9 @@ Docela často se stává, že na stránce potřebujeme stahovat prvky z jiných 
 
 Prohlížeč ovšem musí pro každou novou doménu zjednodušeně řečeno navázat spojení. A je blbé, když to dělá mnohokrát během procesu načítání stránky. Prostě to zdržuje.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=_jdXSjkdDFQ">Zrychlení webu díky před-spojení</a> ~ Preconnect a DNS-prefetch v sedmi minutách.
-</p>
+Podívejte se na video „Zrychlení webu díky před-spojení“.
+
+YouTube: [youtu.be/_jdXSjkdDFQ](https://www.youtube.com/watch?v=_jdXSjkdDFQ)
 
 Možným řešením je použití meta značek `preconnect` a `dns-prefetch`, které prohlížeč informují o našich úmyslech navazovat spojení na cizí domény:
 

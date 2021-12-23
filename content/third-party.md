@@ -302,9 +302,9 @@ Abyste se zbavili prodlevy způsobené CDN, můžete si (opět hlavně na HTTP/2
 
 Líbí se mi však [případovka od Casper.com](https://medium.com/caspertechteam/we-shaved-1-7-seconds-off-casper-com-by-self-hosting-optimizely-2704bcbff8ec), kde ušetřili 1,7 sekundy selfhostováním Optimizely, nástroje pro A/B testování.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=6capkjTohTg">„To my ne, to oni!“</a> ~ V přednášce se kromě doporučeného postupu věnuji také ukázkám řešení konkrétních komponent třetí strany a Google Tag Manageru.
-</p>
+Podívejte se na video „To my ne, to oni!“.
+
+YouTube: [youtu.be/6capkjTohTg](https://www.youtube.com/watch?v=6capkjTohTg)
 
 Tím bych uzavřel mé technické tipy na optimalizaci komponent třetích stran. Pokud máte nějaké další, neváhejte je zmínit v komentářích.
 

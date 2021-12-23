@@ -6,9 +6,9 @@ CrUX je velmi důležitý zdroj metrik [Core Web Vitals](web-vitals.md), které 
 
 Google takhle získaná data poctivě skladuje ve své olbřímí databázi [BigQuery](https://cloud.google.com/bigquery/). A víte co je nejlepší? Data jsou volně přístupná všem.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=wvVmumXPQPM">Chrome UX Report</a> ~ Jak rychlý je web u skutečných uživatelů? Úvod do problematiky.
-</p>
+Podívejte se na video „Chrome UX Report“.
+
+YouTube: [youtu.be/wvVmumXPQPM](https://www.youtube.com/watch?v=wvVmumXPQPM)
 
 CrUX už dlouho používám ve své klientské praxi. V tomhle článku vám ukážu:
 

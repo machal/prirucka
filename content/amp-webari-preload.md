@@ -62,12 +62,9 @@ AMP neslibuje jen rychlejší zobrazení. On slibuje zobrazení okamžité. Prot
 * Umístění stránky na CDN u Google
 * Přednačtení od Google
 
-Výsledek není vůbec marný. Takový nějaký efekt to má:
+Výsledek není vůbec marný. Podívejte se na video.
 
-<div class="rwd-media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/elHr8-MPUwA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
+YouTube: [youtu.be/elHr8-MPUwA](https://www.youtube.com/watch?v=elHr8-MPUwA)
 
 ## Hlavní kouzlo? Přednačtení 
 

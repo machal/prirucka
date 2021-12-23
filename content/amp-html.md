@@ -10,9 +10,9 @@ V této ukázce z knihy [Vzhůru do AMP](https://www.vzhurudolu.cz/ebook-amp/) s
 
 Základní kostra dokumentu v AMP vypadá trochu jinak, není možné zde použít prvky vkládající externí obsah jako `<iframe>` nebo `<img>`.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=_vp-BVgYU98">AMP pro frontendisty</a> ~ HTML, CSS a přes 100 komponent v jednom frameworku.
-</p>
+Podívejte se na video „AMP pro frontendisty: HTML, CSS a přes 100 komponent v jednom frameworku“.
+
+YouTube: [youtu.be/_vp-BVgYU98](https://www.youtube.com/watch?v=_vp-BVgYU98)
 
 Namísto nich máme ale komponenty jako `<amp-iframe>` nebo `<amp-img>.` Z HTML atributů vypadly všechny, které popisují nějaké chování, to je však vzhledem k chybějícímu autorskému JavaScriptu pochopitelné.
 

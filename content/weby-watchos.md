@@ -26,9 +26,9 @@ Píšu o tom proto, že Apple je známý tím, že kroky nemívá nepodložené 
 
 Počínaje tímto krokem Apple (platí od roku 2018 a watchOS verze 5) je potřeba věřit tomu, že lidé weby na hodinkách nějak používat budou. Rozdíl oproti mobilům nebo desktopu bude pravděpodobně v intenzitě toho používání. V textu vycházím hlavně z prezentace „Designing Web Content for watchOS“ přímo od Applu. [vrdl.in/webwatchos](http://vrdl.in/webwatchos)
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=clATaBexIEc">MacRumors: How to Browse the Internet on Apple Watch</a> ~ Jak funguje prohlížení webu přes hodinky od Apple.
-</p>
+Podívejte se na video „MacRumors: How to Browse the Internet on Apple Watch“.
+
+YouTube: [youtu.be/clATaBexIEc](https://www.youtube.com/watch?v=clATaBexIEc)
 
 Ale čtěte dále, všechno se dozvíte.
 

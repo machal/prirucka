@@ -8,9 +8,9 @@ A pokud Explorer podporovat musíte, vězte, že nějakou (a ne úplně malou) p
 
 Druhá věc je, že tu podporu Exploreru můžete rozšířit pomocí chytrého hacku. V tomto textu se totiž budeme zabývat automatizovaným řešením pro zlepšení podpory gridu pomocí nástroje [Autoprefixer](autoprefixer.md).
 
-<p class="video web-only">
-Video: <a href="https://www.youtube.com/watch?v=JjmXOB01Yq0">CSS grid v Internet Exploreru</a> ~ Základy a krátké demo podle obsahu článku.
-</p>
+Podívejte se na video „CSS grid v Internet Exploreru“.
+
+YouTube: [youtu.be/JjmXOB01Yq0](https://www.youtube.com/watch?v=JjmXOB01Yq0)
 
 Pojďme tedy dát kombinaci gridu s MSIE novou šanci.
 

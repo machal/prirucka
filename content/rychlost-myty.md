@@ -18,9 +18,9 @@ V praxi poradce k rychlosti webů musím často vysvětlovat některá koncepčn
 
 Z [dřívějšího textu](rychlost-nacteni.md) už víme, že rychlost načítání není bod v čase. Že jde o časový úsek – uživatelský prožitek během načítání a vykreslování stránky. Pokud tohle přijmeme, můžeme společně konstatovat, že uvedených sedm prohlášení jsou vážně – *ehm* – blbosti.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=u0UhPmLpZnc">Blbosti kolem webové rychlosti</a> ~ Téma textu v přednášce z brněnského srazu Frontendisti.cz.
-</p>
+Podívejte se na video „Blbosti kolem webové rychlosti“.
+
+YouTube: [youtu.be/u0UhPmLpZnc](https://www.youtube.com/watch?v=u0UhPmLpZnc)
 
 V textu diskutuji s „imaginárním vymlouvačem“. Představme si sedm reakcí na moji zprávu, že web je prostě pomalý. Tady je ta první:
 

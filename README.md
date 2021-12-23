@@ -114,7 +114,17 @@ Hodí se to na všechna možná podrobnější schémata atd.
 
 #### Vložení z YouTube
 
-Ideální je vložení pomocí HTML kódu. Markdown je tady nespolehlivý:
+Nejlepší způsob je kvůli cookies a potřebnému souhlasu pomocí prostého odkazu:
+
+> Podívejte se na video „AMP: ekosystém: Co je AMP Cache, co Optimizer a co Viewer?“.
+>
+> YouTube: [youtu.be/l751Or7iZCA](https://www.youtube.com/watch?v=l751Or7iZCA)
+
+Do budoucna to případně budu nahrazovat nějakým slušným embedem.
+
+_Následující je nyní přežité a z markdownů odstraněné:_
+
+Dále je možné vložení pomocí HTML kódu. Markdown je tady nespolehlivý:
 
 ```html
 <p class="video">

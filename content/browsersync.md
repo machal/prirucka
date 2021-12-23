@@ -69,9 +69,9 @@ Vezměte mobil připojený do stejné wifi a vyťukejte do tamního prohlížeč
 
 Proč vám o takové *blbině* vyprávím? Protože ušetří vaši energii při testování responzivních webů na reálných zařízeních. [vrdl.cz/p/jak-testovat-responzivni-weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> ~ Obě vlastnosti rozebrány ve videu. Podívejte se.
-</p>
+Podívejte se na video „Browsersync“.
+
+YouTube: [youtu.be/2DTP8MuW9rw](https://www.youtube.com/watch?v=2DTP8MuW9rw)
 
 ### Ladění webu na mobilních zařízeních (odstraněno) {#co-umi-mobily}
 

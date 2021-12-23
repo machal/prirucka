@@ -18,9 +18,9 @@ Pojďme si to teď všechno rozebrat.
 
 Začneme pohledem uživatele: AMP stránky jsou rychlé jako blesk.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=a9E-gL8NOqs">AMP: Základy technologie pro rychlé weby</a> ~ Proč AMP potřebujeme a z čeho je vlastně tahle technologie složená?
-</p>
+Podívejte se na video „AMP: Základy technologie pro rychlé weby“.
+
+YouTube: [youtu.be/a9E-gL8NOqs](https://www.youtube.com/watch?v=a9E-gL8NOqs)
 
 ### Rychlé stránky
 
@@ -33,11 +33,9 @@ _S AMP stránkami se můžete potkat ve výsledcích vyhledávání Google, v mo
 </figcaption>
 </figure>
 
-Stránka se pak za ideálních podmínek načte prakticky okamžitě:
+Stránka se pak za ideálních podmínek načte prakticky okamžitě. Podívejte se na video.
 
-<div class="rwd-media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/elHr8-MPUwA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+YouTube: [youtu.be/elHr8-MPUwA](https://www.youtube.com/watch?v=elHr8-MPUwA)
 
 V další části textu se také zaměřuji na číselné vyjádření této rychlosti. Jak ale AMP funguje technicky?
 
@@ -86,9 +84,9 @@ Je zde však několik rozdílů. Jednak označení AMP stránky pomocí blesku (
 
 Více informací [o AMP HTML](amp-html.md) je na Vzhůru dolů. Plnohodnotnou dokumentaci frameworku najdete na [amp.dev](https://amp.dev/).
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=_vp-BVgYU98">AMP pro frontendisty</a> ~ HTML, CSS a přes 100 komponent v jednom frameworku.
-</p>
+Podívejte se na video „AMP pro frontendisty“.
+
+YouTube: [youtu.be/_vp-BVgYU98](https://www.youtube.com/watch?v=_vp-BVgYU98)
 
 Čím se liší vývoj v AMP oproti vývoji běžných webů? Je toho více, ale zůstaňme u těch nejdůležitějších rozdílů:
 
@@ -109,9 +107,9 @@ AMP stránka je nejčastěji upravená verze už existující stránky vašeho w
 
 Za pár hodin až dní bude stránka `example.amp.html` umístěná v AMP Cache, na zvláštní adrese. AMP Cache poskytuje Microsoft pro svůj vyhledávač Bing, dále Cloudflare nebo samozřejmě Google. U toho posledního jmenovaného bude adresa vaší AMP stránky začínat řetězcem `https://google.com/amp/s/…`.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=l751Or7iZCA">AMP ekosystém</a> ~ Co je AMP Cache, co Optimizer a co Viewer?
-</p>
+Podívejte se na video „AMP ekosystém“.
+
+YouTube: [youtu.be/l751Or7iZCA](https://www.youtube.com/watch?v=l751Or7iZCA)
 
 Díky tomu má vaše AMP stránka adresu na jiné doméně, což je terčem poměrně oprávněné kritiky. Autoři AMP pro toto nabízejí řešení v podobě standardu [Signed HTTP Exchanges](https://digichef.cz/signed-http-exchanges-aneb-vyuzivejte-amp-s-originalni-url), který zajistí zobrazení stránky pod vaší adresou, i když je fyzicky umístěná jinde. Uvidíme, zda se standard ujme.
 
@@ -157,11 +155,9 @@ Aktuálně je takto na stránky AMP možné vstoupit z výsledků vyhledávání
 
 AMP je také framework pro vývoj webů. Obsahuje zhruba [stovku komponent](https://amp.dev/documentation/components/?format=websites) určených pro snadné poskládání obsahových webů nebo také e-shopů.
 
-Komponenty suplují to, že autoři webů v AMP nemohou psát JavaScript tak jak jsou zvyklí. To se ale změnilo s nástupem [komponenty `amp-script`](amp-javascript.md):
+Komponenty suplují to, že autoři webů v AMP nemohou psát JavaScript tak jak jsou zvyklí. To se ale změnilo s nástupem [komponenty `amp-script`](amp-javascript.md). Podívejte se na video.
 
-<div class="rwd-media">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sYXkVOiz77I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+YouTube: [youtu.be/sYXkVOiz77I](https://www.youtube.com/watch?v=sYXkVOiz77I)
 
 Mezi současnými komponentami nesmí chybět klasické prvky uživatelského rozhraní jako je [lightbox](https://amp.dev/documentation/examples/components/amp-lightbox-gallery/?referrer=ampbyexample.com) nebo [karusel](https://amp.dev/documentation/examples/components/amp-carousel/). Ten se do stránky vkládá podobně jako to děláte u pluginů pro jQuery:
 
@@ -224,9 +220,9 @@ Už víme, že [rychlý web zlepšuje konverze](rychlost-nacitani-proc.md). Fran
 
 _BMW.com_ nasadilo AMP a na novém webu díky tomu získalo o 49 % vyšší návštěvnost z vyhledávačů. Zajímavé jsou ale i [další případové studie](amp-co-je-pripadovky.md).
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=miNJbjfffPs">Weby postavené na AMP</a> ~ Proč AMP používají weby jako The Washington Post, BMW.com, Reflex.cz nebo Vzhůru dolů?
-</p>
+Podívejte se na video „Weby postavené na AMP“.
+
+YouTube: [youtu.be/miNJbjfffPs](https://www.youtube.com/watch?v=miNJbjfffPs)
 
 V Česku AMP používá například _Reflex.cz_, anebo _Seznam Zprávy_ či _ProŽeny.cz_ z dílny _Seznam.cz_. Z větších e-shopů je to kromě _Lékárna.cz_ také například cestovka _Relaxos.cz_, s technologií ale experimentuje i _Alza.cz_.
 

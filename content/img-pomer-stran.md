@@ -2,9 +2,9 @@
 
 Nedávno jsem na Vzhůru dolů publikoval [text o nastavení poměru stran](css-pomer-stran.md) pro obrázky, video, iframy a další obsah vkládaný do HTML zvenčí. Říkejme mu média.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=zmkIvMSKU8U">Obrázky (IMG v HTML): Poměr stran jednoduše</a> ~ Zjednodušený obsah článku ve videu.
-</p>
+Podívejte se na video „Obrázky (IMG v HTML): Poměr stran jednoduše“.
+
+YouTube: [youtu.be/zmkIvMSKU8U](https://www.youtube.com/watch?v=zmkIvMSKU8U)
 
 Problém je v tom, že prohlížeče vykreslují stránku dříve než jsou tyto prvky stažené. Pokud neznají velikost ani poměr stran médií, dopadne to tak, že se stránka vykresluje vícekrát. Pro uživatele to znamená nepříjemné „poskakování“ obsahu v momentě, kdy už například čte text.
 

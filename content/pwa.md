@@ -2,9 +2,9 @@
 
 PWA (progresivní webové aplikace) je označení pro weby, které přebírají některé vlastnosti nativních aplikací: umí například běžet offline, mají přístup k hardwaru a posílají notifikace uživateli.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=-TvcSwA5oC8">Co to je PWA</a> ~ Martin popisuje progresivní webové aplikace i pro netechnické diváky.
-</p>
+Podívejte se na video „Co to je PWA“.
+
+YouTube: [youtu.be/-TvcSwA5oC8](https://www.youtube.com/watch?v=-TvcSwA5oC8)
 
 PWA tak kombinují výhody světa webů se světem nativních aplikací. Jak jsem psal v textu [Weby versus aplikace](weby-vs-aplikace.md):
 
@@ -59,9 +59,9 @@ Jsou to opravdu jen ty nejzákladnější vlastnosti PWA, ale pro začátek to n
 
 Nástroj pro testování technické kvality webů [Lighthouse](lighthouse.md) znáte už z jiných zdejších textů.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=cYdek3ZUS-c">PWA pro vývojáře</a> ~ Jak udělat z webu progresivní webovou aplikaci a získat maximální hodnocení na Lighthouse?
-</p>
+Podívejte se na video „PWA pro vývojáře“.
+
+YouTube: [youtu.be/cYdek3ZUS-c](https://www.youtube.com/watch?v=cYdek3ZUS-c)
 
 Kromě [rychlosti webů](https://www.vzhurudolu.cz/rychlost-nacitani), technického SEO a dalších okruhů Lighthouse také ukazuje, jak moc váš web splňuje základní požadavky kladené na PWA.
 
@@ -200,9 +200,9 @@ To je vše. V tuhle chvíli jsme z obyčejného webu vytvořili progresivní web
 
 Postupný „přechod“ na PWA a využití Service Workerů považuji za směr, kterým by se měly vydat v zásadě všechny weby. Jsem tedy rád, že se mi konečně povedlo sepsat alespoň tento úvod.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=sly6IF_lEQ8">PWA na Frontendisti.cz</a> ~ Josef Ježek: Rychlé a modulární progresivní webové aplikace.
-</p>
+Podívejte se na video „PWA na Frontendisti.cz“.
+
+YouTube: [youtu.be/sly6IF_lEQ8](https://www.youtube.com/watch?v=sly6IF_lEQ8)
 
 Milerád se k tématu ještě vrátím. V tuto chvíli vám nabídnu alespoň pár odkazů k dalšímu studiu.
 

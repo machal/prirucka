@@ -1,10 +1,10 @@
 # AMP ve WordPressu s oficiálním pluginem: Bleskurychlé stránky za málo práce
 
-Na [WordCampu 2020](https://2020.prague.wordcamp.org/session/bleskurychle-nacteni-webovych-stranek-na-mobilu-i-bez-rychleho-pripojeni-s-technologii-amp-to-neni-sci-fi/) jsem povídal o AMPu ve WordPressu a konkrétně o oficiálním pluginu „AMP for WordPress“. 
+Na [WordCampu 2020](https://2020.prague.wordcamp.org/session/bleskurychle-nacteni-webovych-stranek-na-mobilu-i-bez-rychleho-pripojeni-s-technologii-amp-to-neni-sci-fi/) jsem povídal o AMPu ve WordPressu a konkrétně o oficiálním pluginu „AMP for WordPress“.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=9k75XDh_0fE">AMP ve WordPressu</a> ~ Bleskurychlé načtení webových stránek na mobilu i bez rychlého připojení.
-</p>
+Podívejte se na video „AMP ve WordPressu“.
+
+YouTube: [youtu.be/9k75XDh_0fE](https://www.youtube.com/watch?v=9k75XDh_0fE)
 
 Velmi příjemně mě překvapilo, jak dobře je AMP ve WordPressu vyřešený a jak snadno implementovatelný.
 

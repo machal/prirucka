@@ -20,9 +20,9 @@ Obsah:
 
 Používám jej hlavně pro analýzu [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani), ale o webu umí podat daleko barevnější obrázek. Pokrývá přístupnost, SEO a další oblasti.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=2VIJU7NNKYw">Lighthouse: Základní představení</a> ~ Jak si otestovat web v tomhle výborném nástroji. (Na videu pracuji se starší verzí.)
-</p>
+Podívejte se na video „Lighthouse: Základní představení“.
+
+YouTube: [youtu.be/2VIJU7NNKYw](https://www.youtube.com/watch?v=2VIJU7NNKYw)
 
 Velmi doporučuji pomocí Lighthouse testovat vaše weby a webové aplikace. A nejlépe to dělat pravidelně a automaticky.
 
@@ -99,9 +99,9 @@ Zajímavá možnost je v nastavení zpomalení – *Throttling*:
 
 No a poslední možnost – *Clear storage* – před testy smaže obsah lokálních úložišť, aby Lighthouse dokázal zachytit prožitek úplně nového uživatele.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=zkbzYJ7xNKw">Lighthouse: Test rychlosti webu</a> ~ Na videu procházíme výstupy záložky „Performance“. (Ukazuji to na starší verzi Lighthouse.)
-</p>
+Podívejte se na video „Lighthouse: Test rychlosti webu“.
+
+YouTube: [youtu.be/zkbzYJ7xNKw](https://www.youtube.com/watch?v=zkbzYJ7xNKw)
 
 ## User Flows, průchody uživatele službou
 

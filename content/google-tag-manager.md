@@ -6,9 +6,9 @@ _[Martin Kolář](https://martinkolar.eu/) pro Vzhůru dolů píše o nástroji,
 
 Základním účelem správců značek (tag managerů) je snadná správa značek (tagů). V případě webu jsou značky defakto kusy javascriptového kódu.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=2fHTBRyBXZ0">GTM očima marketéra a vývojáře</a> ~ Martin Kolář a Marek Pěntoň vysvětlují, proč by vás Google Tag Manager měl zajímat.
-</p>
+Podívejte se na video „GTM očima marketéra a vývojáře“.
+
+YouTube: [youtu.be/2fHTBRyBXZ0](https://www.youtube.com/watch?v=2fHTBRyBXZ0)
 
 V textu se budeme zabývat [Google Tag Managerem](https://tagmanager.google.com/#/home) (Správce značek Google, GTM). Kromě GTM existují i další správci, například Adobe Experience Platform, IBM Digital Data Exchange, Ensighten, Salesforce Data Management nebo Tealium.
 

@@ -16,9 +16,9 @@ Na testeru PageSpeed Insights je skvělé, že kombinuje dva důležité pohledy
 
 Nástroj vám také rovnou nahlásí největší příležitosti, které na stránce našel a jejichž odstranění vám vylepší hodnocení a ve výsledku samozřejmě zrychlí web. K tomu se ještě dostaneme.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=nCNLRML_Yw8">PageSpeed Insights: Představení</a> ~ Online test rychlosti webu.
-</p>
+Podívejte se na video „PageSpeed Insights: Představení“.
+
+YouTube: [youtu.be/nCNLRML_Yw8](https://www.youtube.com/watch?v=nCNLRML_Yw8)
 
 Teď ale šup na testování:
 

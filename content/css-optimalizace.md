@@ -2,9 +2,9 @@
 
 CSS je zdroj, který vždy blokuje vykreslení stránky a proto se každý jeho kilobajt počítá. Ukažme si osm kroků, kterými je možné optimalizovat datovou velikost stylů a zlepšit tak rychlost webu.
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=Ibg7FbDnQJE">CSS: techniky optimalizace datové velikosti</a> ~ Během akce „Livesport talk VIII“ jsem se podíval na nejproblematičtější zdroje blokující zobrazení webů.
-</p>
+Podívejte se na video „CSS: techniky optimalizace datové velikosti“.
+
+YouTube: [youtu.be/Ibg7FbDnQJE](https://www.youtube.com/watch?v=Ibg7FbDnQJE)
 
 ## První zobrazení stránky a jeho ideální hodnota {#prvni-zobrazeni-ideal}
 

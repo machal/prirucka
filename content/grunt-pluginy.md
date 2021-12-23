@@ -116,9 +116,9 @@ Fantastická věc. [Browsersync](browsersync.md) zařizuje reload stránky bez n
 
 No a pak ještě – lusk! – a máte synchronizované procházení webem na všech připojených zařízeních. Včetně skrolování a odesílání formulářů prosím. Čtyři z pěti responzivních webařů doporučují! [Web](http://www.browsersync.io/docs/grunt/).
 
-<p class="video">
-Video: <a href="https://www.youtube.com/watch?v=2DTP8MuW9rw">Browsersync: živý náhled webu a synchronizace prohlížení </a> ~ Obě vlastnosti rozebrány ve videu. Podívejte se.
-</p>
+Podívejte se na video „Browsersync: živý náhled webu a synchronizace prohlížení“.
+
+YouTube: [youtu.be/2DTP8MuW9rw](https://www.youtube.com/watch?v=2DTP8MuW9rw)
 
 ### Copy: kopírování souborů nebo adresářů
 
