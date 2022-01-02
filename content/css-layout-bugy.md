@@ -79,9 +79,9 @@ Moderní prohlížeče, tedy všechny kromě Internet Exploreru, byly zodpovědn
 
 To už ale dávno neplatí, dle mých testů zůstaly jen dvě málo důležité chyby.
 
-- _Některé elementy nemohou být flex-kontejnerem. (Flexbug #9)_  
+- _Některé elementy nemohou být flex-kontejnerem. (Flexbug #9)_  
 Dříve to platilo i pro `<fieldset>` a `<button>` ve všech prohlížečích, což je naštěstí opravené. Zůstává jen málo nepříjemné omezení použití flexboxu na prvku `<summary>` v prohlížeči Safari. V tomto případě stačí použít vložený `<div>` jako kontejner pro rozvržení flexboxem.
-- _Zalamované elementy na inline flexboxu přetékají z rodiče (Flexbug #14)_  
+- _Zalamované elementy na inline flexboxu přetékají z rodiče (Flexbug #14)_  
 Jde o kombinaci použití `flex-flow:column wrap` a `display:inline-flex`, takže poměrně vzácný scénář. Vnitřní prvky pak ve všech prohlížečích „vylezou“ z velikosti rodiče, i když by neměly. Je možné to obejít například pomocí nastavení `flex-direction:row` a změnou směru vykreslení zápisem vlastnosti `writing-mode`.
 
 V CodePenu se můžete podívat na řešení druhé uvedené flexboty.
@@ -102,15 +102,15 @@ Pojďme na ty chyby, ať tu nepříjemnost máme za sebou.
 
 Často tady budu mluvit o [vlastnosti `flex-basis`](css-flex-basis.md). Pokud ji neznáte, vězte, jde o podobnou věc jako je [vlastnost `flex`](css-flex.md), tedy určení rozměrů položky. Zkratka `flex` toho umí jen o trochu víc.
 
-1. Vlastnost `flex-basis` nezohledňuje `box-sizing:border-box` _(flexbug #7)_.
-2. Vlastnost `flex` s nulovou `flex-basis` neplatí _(flexbug #4)_.
-3. Vlastnost `flex-basis` neumí funkci `calc()` _(flexbug #8)_.
-4. Položky flexboxu nemohou být `display:inline` _(flexbug #12)_.
-5. Položky flexboxu se špatně zarovnají, když se užívá `max-width` _(flexbug #17)_.
-6. Položky flexboxu lezou z kontejneru, který má `align-items:center` _(flexbug #2)_.
-7. Vlastnost `min-height` na flex kontejneru nefunguje _(flexbug #3)_.
-8. Položky flexboxu neudržují poměr stran _(flexbug #5)_.
-9. Položky flexboxu neumí zarovnání pomocí `margin:auto` na příčné ose _(flexbug #15)_.
+1. Vlastnost `flex-basis` nezohledňuje `box-sizing:border-box` _(flexbug #7)_.
+2. Vlastnost `flex` s nulovou `flex-basis` neplatí _(flexbug #4)_.
+3. Vlastnost `flex-basis` neumí funkci `calc()` _(flexbug #8)_.
+4. Položky flexboxu nemohou být `display:inline` _(flexbug #12)_.
+5. Položky flexboxu se špatně zarovnají, když se užívá `max-width` _(flexbug #17)_.
+6. Položky flexboxu lezou z kontejneru, který má `align-items:center` _(flexbug #2)_.
+7. Vlastnost `min-height` na flex kontejneru nefunguje _(flexbug #3)_.
+8. Položky flexboxu neudržují poměr stran _(flexbug #5)_.
+9. Položky flexboxu neumí zarovnání pomocí `margin:auto` na příčné ose _(flexbug #15)_.
 
 Máte přečteno? A máte z toho depresi? Chvilku počkejte.
 
@@ -247,7 +247,7 @@ Jak je vidno, v moderních prohlížečích je to v pořádku.
 
 Chybějící podpora `justify-items` i `justify-self` v IE je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči.
 
-V případě, že podporujete IE to je u gridu celkově složitější, viz následující [pojednání o tom](css-grid-msie.md).
+V případě, že podporujete IE to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
 
 Explorer také nepodporuje novější hodnoty některých vlastností: `baseline` a `stretch` vlastností [`align-self`](css-align-self.md) a [`justify-content`](css-justify-content.md) nebo také `space-evenly` u [`justify-content`](css-justify-content.md).
 

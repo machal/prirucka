@@ -6,9 +6,7 @@ Vezměme třeba seznamování. Když jsem byl v pubertě, bylo potřeba obléct 
 
 Dnešní seznamovací aplikace a weby jsou úplně jinde, člověk párkrát klikne a je to. Je to rychlé.
 
-Vzhledem k tomu, že držíte v ruce knížku, vlastně jste ukázali, že rychlé tempo seznamování, minimálně s technologiemi, není pro vás. To mám radost!
-
-V první kapitole ale s tématem potřebujeme nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem.
+V první kapitole s tématem potřebujeme nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem.
 
 Tohle bude Tinder pro systémy layoutu v CSS.
 
@@ -25,7 +23,7 @@ Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektu
 
 Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něco říct:
 
-- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení stránky. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi.
+- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi.
 - [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože se nekamarádí s vývojáři, kteří mají v přátelích Internet Explorer.
 - [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu rádi.
 
@@ -176,7 +174,7 @@ Pokud bychom zůstali u tohoto kódu, kýženého layoutu bychom nedosáhli. Jde
 
 Díky „autoplacementu“, vlastnosti gridu, která prvky automaticky umísťuje do mřížky by byl obrázek v první buňce, text v druhé a cenovka ve třetí. Čtvrtá buňka by zůstala prázdná a naše nadšení pro grid by skončilo uprostřed prvního rande.
 
-Automatické umístění rozbijeme tímto kódem:
+Automatické umístění zrušíme tímto kódem:
 
 ```css
 .box__image {

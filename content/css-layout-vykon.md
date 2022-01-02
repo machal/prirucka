@@ -16,9 +16,9 @@ Ano, takhle zmateně by se to dalo shrnout. V určitých typech layoutu exceluje
 
 Podstatné ale je, že vy a vaši uživatelé to nejspíš nepoznáte. Studie byly skoro vždy ryze teoretické a postavené například na testech vykreslování desetitisíců prvků do stránky.
 
-Za všechny uvedu jednu z Itálie. Vývojář Sandro Baccega testoval vykreslení 10 000 prvků do stránky. Pokud byste někdy něco takového potřebovali, vězte, že rychlejší to bude udělat flexboxem. V jeho testech to prohlížeči pomocí flexboxu zabralo něco kolem 40 ms, zatímco s gridem kolem 200 ms.
+Za všechny uvedu jednu z Itálie. Vývojář Sandro Baccega testoval vykreslení 10 000 prvků do stránky. Pokud byste někdy něco takového potřebovali, vězte, že rychlejší to bude udělat flexboxem. V jeho testech to prohlížeči pomocí flexboxu zabralo něco kolem 40 ms, zatímco s gridem kolem 200 ms. Autor k tomu píše:
 
-> Pravděpodobně to vychází ze skutečnosti, že ve flexboxu prvky následujících řádků nemohou zasahovat do vykreslení prvků předchozích řádků,zatímco v CSS gridu tomu tak není.
+> Pravděpodobně to vychází ze skutečnosti, že ve flexboxu prvky následujících řádků nemohou zasahovat do vykreslení prvků předchozích řádků, zatímco v CSS gridu tomu tak není.
 
 V druhém testu, vykreslování složitého celostránkového layoutu, dopadl flexbox i grid velmi podobně.
 

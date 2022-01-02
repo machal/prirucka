@@ -2,7 +2,7 @@
 
 Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí, a jen zdánlivě se týká hendikepovaných minorit jako jsou zrakově postižení.
 
-Velmi podstatné je, že přístupný dokument není až tak nesnadné vytvořit. V nových CSS layoutech kromě „přístupnostních klasik“, jako je využití správných sémantických elementů, vstupuje do hry ještě poněkud kontroverzní možnost změny pořadí.
+V nových CSS layoutech může přístupnost pokazit poněkud kontroverzní možnost změny pořadí prvků ve stránce.
 
 ## Přístupnost a pořadí ve flexboxu nebo gridu {#poradi}
 
