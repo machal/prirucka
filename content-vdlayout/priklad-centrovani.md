@@ -87,9 +87,9 @@ My však chceme zarovnávat doprostřed:
 
 Povedlo se nám zařídit centrování ve svislém směru. Teď ještě vodorovně, že ano… Podívejte se do taháku na obrázku. Odtamtud asi zjistíte, že v horizontálním směru (`justify-`) potřebujete zarovnávat položky (`-items`).
 
-Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou celá vlastnost je v prohlížečích v tuto chvíli ignorována.
+Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou celou vlastnost není možné v rámci pružného layoutu použít.
 
-Budeme se zde muset spokojit se starým dobrým zarovnáním pomocí `margin:auto`:
+Jaké máme možnosti? První je spokojit se zde spokojit se starým dobrým zarovnáním pomocí `margin:auto`:
 
 ```css
 .container {
@@ -102,11 +102,29 @@ Budeme se zde muset spokojit se starým dobrým zarovnáním pomocí `margin:aut
 }
 ```
 
+CodePen: [cdpn.io/e/abWZjVE](https://codepen.io/machal/pen/abWZjVE?editors=1100)
+
 Můžeme s tím být spokojení, protože naše řešení funguje. Ale víte, co vám řeknu? Já s tím spokojený nejsem. Hlavně proto, že znám lepší řešení, řešení gridem, které není tak komplikované.
 
-Ještě než k němu přejdeme, dlužím vám CodePen flexboxového řešení:
+Ještě než k němu přejdeme, zmíním ještě jednu možnost poměrně populární u zkušených kodérů: k centrování využít [vlastnost `justify-content`](css-justify-content.md):
 
-CodePen: [cdpn.io/e/abWZjVE](https://codepen.io/machal/pen/abWZjVE?editors=1100)
+```css
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+Tohle řešení bude v řadě případů pro centrování z obou stran ve flexboxu perfektně fungovat.
+
+O jeho „čistotě“ se ovšem můžeme přít. Zkušenější mohou již `justify-content` dobře znát a tedy se při jeho použití ve složitějších příkladech nenapálit.
+
+Pro méně zkušené může být nepříjemný fakt, že vlastnost neslouží k zarovnání položek, ale prostoru mezi nimi. Tohle vás může někdy doběhnout.
+
+CodePen: [cdpn.io/e/poWLQRX](https://codepen.io/machal/pen/poWLQRX?editors=1100)
+
+Ale pojďme už na ten elegantní grid.
 
 ## Středění boxu v boxu: situaci zachraňuje grid
 

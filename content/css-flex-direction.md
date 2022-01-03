@@ -82,7 +82,7 @@ Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basi
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `flex-direction` funguje to dobře. Jedinou mě známou výjimkou je flexbug číslo 14, kdy při použití `display:inline-flex` a `flex-flow:column wrap` prohlížeče neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md).
+Vlastnost `flex-direction` funguje dobře. Jedinou mě známou výjimkou je flexbug číslo 14, kdy při použití `display:inline-flex` a `flex-flow:column wrap` prohlížeče neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md).
 
 Více o podpoře je na  [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-direction).
 

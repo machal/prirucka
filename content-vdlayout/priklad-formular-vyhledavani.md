@@ -49,10 +49,13 @@ Nejprve si připravíme jeviště pro tvorbu layoutu:
 .form {
   display: flex;
   align-items: baseline;  
+  gap: 0.5rem;
 }
 ```
 
-Rodičovský prvek musí být flexboxem a tak pomocí [vlastnosti `display`](css-display.md) nastavíme hodnotu `flex`. To je snad jasné.
+Rodičovský prvek musí být flexboxem a tak pomocí [vlastnosti `display`](css-display.md) nastavíme hodnotu `flex`.
+
+Asi je evidentní, že pomocí `gap:0.5rem` přidáváme mezery mezi jednotlivé prvky layoutu.
 
 ### Zarovnání na účaří
 
@@ -77,7 +80,6 @@ Na menších displejích chceme, aby se všechny tři prvky vyskládaly pod sebe
   .form__input, 
   .form__button {
     width: 100%;
-    margin-bottom: 0.5rem;
     box-sizing: border-box;
   }
   
@@ -87,7 +89,6 @@ Na menších displejích chceme, aby se všechny tři prvky vyskládaly pod sebe
 Moje komentáře:
 
 - [Vlastností `flex-direction`](css-flex-direction.md) a hodnotou `column` měníme směr rozvržení z výchozího vodorovného na svislý.
-- Mezeru mezi jednotlivými prvky děláme pomocí vnějšího okraje (`margin-bottom:0.5rem`). Ve flexboxu totiž (zatím) není možné použít vlastnost `gap`.
 - Pomocí `width:100%` roztáhneme všechny prvky na celou šířku a pomocí `box-sizing:border-box` prohlížeči sdělíme, že šířku chceme počítat i s vnitřním okrajem a rámečkem. Pokud tu druhou vlastnost neznáte, podívejte se na Vzhůru dolů. [vrdl.cz/p/css3-box-sizing](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
 
 ### Větší displeje
@@ -97,29 +98,24 @@ Kód této části bude o něco jednodušší. Přirozené rozvržení, které n
 ```css
 @media (min-width: 500px) {
 
-  .form__label {
-    margin-right: 0.5rem;
-  }
-
   .form__input {
-    margin-right: 0.5rem;
     flex: auto;
   }
   
-}
+}  
 ```
 
-Pár myšlenek k tomu:
-
-- Asi je evidentní, že pomocí `margin-right:0.5rem` opět dodáváme mezery mezi jednotlivé prvky layoutu.
-- [Vlastnost `flex`](css-flex.md) je zkratkou pro nastavení velikosti a faktoru zvětšování či smršťování položky flexboxu. Hodnotou `auto` povolíme rovnoměrné zvětšování i smršťování a nastavíme šířku podle potřeby obsahu. Prvky `.form__label` a `.form__button` se tedy roztahovat nebudou, prvek `.form__input` ano.
+[Vlastnost `flex`](css-flex.md) je zkratkou pro nastavení velikosti a faktoru zvětšování či smršťování položky flexboxu. Hodnotou `auto` povolíme rovnoměrné zvětšování i smršťování a nastavíme šířku podle potřeby obsahu. Prvky `.form__label` a `.form__button` se tedy roztahovat nebudou, prvek `.form__input` ano.
 
 Celý kód flexboxového řešení je zde:
 
 ```css
+/* Flexbox layout: */
+
 .form {
   display: flex;
   align-items: baseline;  
+  gap: 0.5rem;
 }
 
 @media (max-width: 499px) {
@@ -132,7 +128,6 @@ Celý kód flexboxového řešení je zde:
   .form__input, 
   .form__button {
     width: 100%;
-    margin-bottom: 0.5rem;
     box-sizing: border-box;
   }
   
@@ -140,12 +135,7 @@ Celý kód flexboxového řešení je zde:
 
 @media (min-width: 500px) {
 
-  .form__label {
-    margin-right: 0.5rem;
-  }
-
   .form__input {
-    margin-right: 0.5rem;    
     flex: auto;
   }
   
@@ -154,9 +144,7 @@ Celý kód flexboxového řešení je zde:
 
 CodePen: [cdpn.io/e/VwbpjKK](https://codepen.io/machal/pen/VwbpjKK?editors=1100)
 
-Pojďme si ale položit otázku, zda by i zde nebylo vhodnější vyřešit úkol pomocí mřížky. Zmizel by nám minimálně problém s nutností nastavovat mezery mezi prvky vlastností `margin`, která je tak… _oldschool_!
-
-Přijímám sázky. Umožní nám grid více sexy řešení?
+Pojďme si ale položit otázku, zda by i zde nebylo vhodnější vyřešit úkol pomocí mřížky. Přijímám sázky. Umožní nám grid více sexy řešení?
 
 ## Řešení gridem
 
@@ -173,7 +161,6 @@ Přijímám sázky. Umožní nám grid více sexy řešení?
 Vysvětlivky:
 
 - `display:grid` nastaví formátovací kontext gridu a jen připomínám, že žádné rozvržení sám o sobě nevytvoří.
-- [Vlastnost `gap`](css-gap.md) umožní vytvořit mezery mezi prvky a to prosím pěkně jakýmkoliv směrem a bez použití vnějšího okraje, tedy bez vlastnosti `margin`.
 - Zarovnávání na účaří pomocí `align-items:baseline` můžeme samozřejmě zapsat i do gridového layoutu, protože vlastnosti [CSS Box Alignment](css-box-alignment.md) jsou univerzální.
 
 ### Menší displeje

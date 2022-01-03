@@ -142,6 +142,24 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
 
 </div>
 
+## Některé zarovnávací vlastnosti nefungují ve flexboxu
+
+Vlastnosti [`justify-items`](css-justify-items.md) i [`justify-self`](css-justify-self.md) nejsou dostupné pro layouty tvořené flexboxem.
+
+Namísto `justify-items` můžeme použít starý dobrý `margin` nebo pro centrování třeba `justify-content`.
+
+Stejně tak proto nebudou fungovat zkratky [`place-items`](css-place-items.md) a [`place-self`](css-place-self.md).
+
+<div class="rwd-scrollable prop-table f-6"  markdown="1">
+
+|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*`) |
+|-------------------------------------|------------------------------|----------------------------|--------------------------|
+| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>~~flex~~, grid     | [`align-items`](css-align-items.md)<br>flex, grid      | [`place-items`](css-place-items.md)<br>~~flex~~, grid |
+| **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>~~flex~~, grid      | [`align-self`](css-align-self.md)<br>flex, grid       | [`place-self`](css-place-self.md)<br> ~~flex~~, grid |
+| **Distribuce obsahu** (`*-content`) |  [`justify-content`](css-justify-content.md)<br>flex, grid    | [`align-content`](css-align-content.md)<br>flex, grid    | [`place-content`](css-place-content.md)<br> flex, grid |
+
+</div>
+
 ## Podpora v prohlížečích {#podpora}
 
 Na úrovni celé této velké specifikace je těžké mluvit o podpoře či nepodpoře. Různé prohlížeče mohou nepodporovat některé vlastnosti, některé mohou nepodporovat zase určité hodnoty nebo jejich kombinaci s různými systémy rozvržení, jako je grid, flexbox nebo vícesloupcový layout.

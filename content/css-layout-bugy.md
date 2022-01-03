@@ -231,7 +231,7 @@ Najdete je zde jako jednotlivé vlastnosti, když budete hledat text `align-` ne
 
 ### Tabulky podpory CSS Box Align v Internet Exploreru {#box-align-tabulka}
 
-Podpora v moderních prohlížečích je zde vynikající, ale je potřeba zmínit, že i v tomto případě je Internet Explorer problematický. Opět hlavně v kombinaci s gridem.
+Podpora v moderních prohlížečích je v [zarovnávání](css-box-alignment.md) vynikající, ale je potřeba zmínit, že i v tomto případě je Internet Explorer problematický. Opět hlavně v kombinaci s gridem.
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
