@@ -1,12 +1,18 @@
 # Přístupnost a CSS layout: pozor na vizuální pořadí
 
-Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí, a jen zdánlivě se týká hendikepovaných minorit jako jsou zrakově postižení.
+Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí, a jen zdánlivě se týká pouze hendikepovaných minorit jako jsou zrakově postižení.
 
 V nových CSS layoutech může přístupnost pokazit poněkud kontroverzní možnost změny pořadí prvků ve stránce.
 
 ## Přístupnost a pořadí ve flexboxu nebo gridu {#poradi}
 
-Musím vás upozornit na to, že jakmile odlišíte pořadí zobrazování od pořadí v kódu, může se stát, že při ovládání z klávesnice (tabulátorem) nebo použití [s odečítači pro zrakově hendikepované](testovani-odecitace.md) přestane pořadí dávat smysl.
+Musím vás upozornit na to, že jakmile odlišíte pořadí zobrazování od pořadí v kódu, může se stát, že při ovládání z klávesnice (tabulátorem) nebo při použití nejrůznějších asistivních technologií (například odečítačů obrazovky) přestane uživatelům pořadí dávat smysl.
+
+<div class="web-only" markdown="1">
+
+→ *Související: [Testování webů v odečítačích obrazovky](testovani-odecitace.md)*
+
+</div>
 
 Také proto je ve specifikaci obsaženo toto důrazné varování:
 
@@ -17,9 +23,9 @@ Logické pořadí je zpravidla pořadí  zápisu kódu a jeho využití si můž
 - _Roboti_  
 Například stroje vyhledávačů jako je Google. Roboti postupují podle pořadí v HTML nebo DOM.
 - _Sekvenční navigace stránkou_  
-Tento typ procházení provádějí pomocí odečítačů obrazovky slabozrací nebo pomocí tabulátoru občas i běžní uživatelé.
+Tento typ procházení využívají například uživatelé odečítačů obrazovky nebo uživatelé, kteří z nějakého důvodu nemohou použít jiný způsob navigace - ať už z důvodu trvalého, či dočasného postižení rukou jako je třeba zlomenina.
 - _Hlasem a jinými médii_  
-Přeskupení vizuálního pořadí nezmění řazení v nevizuálních médiích, například v řeči. Není to úplně běžné, ale stránku můžete stylovat také pro automatické čtení pomocí podmínky `@media speech`.
+Přeskupení vizuálního pořadí nezmění řazení v nevizuálních médiích, například v řeči.
 
 Může se tedy stát, že někdo, kdo se naviguje pomocí klávesnice, bude procházet odkazy na vašem webu a najednou odskočí z dolní do horní části dokumentu, protože tam je další položka logického pořadí.
 

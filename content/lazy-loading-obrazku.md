@@ -35,7 +35,7 @@ Od Chrome [verze 76](https://web.dev/native-lazy-loading) a [Firefoxu 75](https:
   alt="…" width="200" height="200">
 ```
 
-Kromě obrázků je to možné nastavit i pro vkládané rámce:
+Kromě obrázků je to možné nastavit i pro vkládané rámy:
 
 ```html
 <iframe src="https://example.com" loading="lazy"></iframe>

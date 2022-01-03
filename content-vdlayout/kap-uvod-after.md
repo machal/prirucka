@@ -7,25 +7,25 @@ Shrnutí všech kapitol jsem pro vás připravil ve formě kvízu. Testy jsou sk
 První test je rozehřívací.
 
 1. **K čemu slouží CSS Multicolum Layout?**  
-a. ke flexibilnímu rozložení položek vedle sebe  
-b. k automatické vícesloupcové sazbě textu  
-c. k rozložení do do tvaru mřížky
+a) ke flexibilnímu rozložení položek vedle sebe  
+b) k automatické vícesloupcové sazbě textu  
+c) k rozložení do do tvaru mřížky
 1. **Co udělá zápis `display:flex`?**  
-a. zobrazí prvek ve stránce jako úhlovou brusku, flexu  
-b. neudělá nic, je potřeba dalších vlastností jako `flex-template`  
-c. vykreslí všechny potomky prvku vedle sebe  
+a) zobrazí prvek ve stránce jako úhlovou brusku, flexu  
+b) neudělá nic, je potřeba dalších vlastností jako `flex-template`  
+c) vykreslí všechny potomky prvku vedle sebe  
 1. **Technologie, jejímuž zániku vděčíme za vznik CSS gridu, se jmenuje:**  
-a. Macromedia Flash  
-b. Netscape Navigator  
-c. Microsoft Silverlight
+a) Macromedia Flash  
+b) Netscape Navigator  
+c) Microsoft Silverlight
 
 ---
 
 Řešení:
 
 1. **K čemu slouží CSS Multicolum Layout?**  
-b. k automatické vícesloupcové sazbě textu
+b) k automatické vícesloupcové sazbě textu
 1. **Co udělá zápis `display:flex`?**  
-c. vykreslí všechny potomky prvku vedle sebe
+c) vykreslí všechny potomky prvku vedle sebe
 1. **Technologie, jejímuž zániku vděčíme za vznik CSS gridu, se jmenuje:**  
-c. Microsoft Silverlight
+c) Microsoft Silverlight

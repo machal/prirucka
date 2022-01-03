@@ -6,7 +6,7 @@ Vezměme třeba seznamování. Když jsem byl v pubertě, bylo potřeba obléct 
 
 Dnešní seznamovací aplikace a weby jsou úplně jinde, člověk párkrát klikne a je to. Je to rychlé.
 
-V první kapitole s tématem potřebujeme nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem.
+V první kapitole s tématem potřebujeme nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem, třemi hlavními hrdiny téhle knížky.
 
 Tohle bude Tinder pro systémy layoutu v CSS.
 

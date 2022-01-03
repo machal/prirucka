@@ -126,7 +126,7 @@ Je to dostupné už skoro ve všech prohlížečích, takže stačí přidat atr
   alt="…" width="200" height="200">
 ```
 
-Je to možné nastavit i pro vkládané rámce:
+Je to možné nastavit i pro vkládané rámy:
 
 ```html
 <iframe src="https://example.com" loading="lazy">

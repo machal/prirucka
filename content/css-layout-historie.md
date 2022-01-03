@@ -2,7 +2,7 @@
 
 Pokud se těšíte na psaní kódu, tuhle část můžete v klidu přeskočit. Ale věřte mi – pokud bych si myslel, že vás bude nudit, do knížky bych ji nedával.
 
-Historie rozvržení v CSS je totiž tak trochu historií CSS a protože tu napjatě sledoval úplně od začátku, vidím v následujícím příběhu pár zajímavých a vtipných momentů.
+Historie rozvržení v CSS je totiž tak trochu historií CSS a protože tu jsem napjatě sledoval úplně od začátku, vidím v následujícím příběhu pár zajímavých a vtipných momentů.
 
 Slíbil jsem stručnost, takže to vezměme v bodech.
 
@@ -35,6 +35,37 @@ Ano, opravdu se značky zapisovaly VERZÁLKAMI.
 Ne. Opravdu o tom už nechci dále mluvit.
 
 V téhle době stavím svůj první větší web – fanouškovské stránky U2 na tehdy velmi známém serveru MusicHall. Jsem hrdý, že pro rozložení stránky nepoužívám `<frame>`, už zastaralou metodu. Kód mého webu je totiž stavěný na prvku `<table>`.
+
+## 1998: TABLE
+
+Někdy v této době přišel bezejmenný webař na to, že když z tabulky odstraní rámečky, vznikne docela dobrá struktura, které může nést i složitější rozvržení stránek nebo jednotlivých komponent uvnitř.
+Někdy po roce 2000 začne komunitou kolovat následující vtip:
+
+– „Tr td td td tr td td td… – co je to?“
+– „Vlak přijíždí do stanice?“
+– „Ne to webař tvoří rozvržení stránky.“
+
+Kód, který takto vznikal mě dodnes chodí v noci strašit. No však se sami podívejte:
+
+```html
+<table width="100%" border="0"> 
+  <tr> 
+    <td colspan="2" bgcolor="#b5dcb3"> 
+      <h1>Ahoj, jsem web</h1> 
+    </td> 
+  </tr> 
+  <tr valign="top"> 
+    <td bgcolor="#aaa" width="50"> 
+      Ahoj, jsem navigace.
+    </td> 
+    <td bgcolor="#eee" width="100" height="200"> 
+      Ahoj, jsem hlavní obsah.
+    </td> 
+  </tr> 
+</table>
+```
+
+Doufám, že až někdo tomuto neznámému webaři postaví pomník, bude text na něm vysázený v tabulkovém layoutu.
 
 ## 1999: Multi-column layout
 
@@ -124,7 +155,7 @@ V témže roce přijde Tab Atkins, další známá postava standardů kolem CSS,
 
 ## 2012: Přelom. Prohlížeče implementují flexbox, Microsoft předává grid do W3C
 
-Cupp prezentuje nový systém rozvržení konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konferenci WebExpo 2016) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS gridu.
+Cupp prezentuje nový systém rozvržení konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konferenci WebExpo 2016 nebo XML Prague o čtyři roky později) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS gridu.
 
 V čem byl ale tento pokus o implementaci rozvržení typu mřížky jiný než všechny předchozí? Je to jednoduché – Phil Cupp a jeho lidé zařídili implementaci v prohlížeči.
 

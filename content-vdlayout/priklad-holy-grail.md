@@ -19,7 +19,7 @@ Pojďme to raději vizualizovat. Svatý grál mezi layouty vypadá takto:
 
 Ano, znáte ho. Je to layout, ve kterém byla ještě před lety vysázena každá druhá webovka.
 
-Toto rozvržení jsme implementovali  nejprve pomocí rámců, pak tabulkami, floaty nebo ještě jinak. Bylo to peklo. Vzpomeňte na [exkurzi z první kapitoly](css-layout-versus.md).
+Toto rozvržení jsme implementovali  nejprve pomocí rámů, pak tabulkami, floaty nebo ještě jinak. Bylo to peklo. Vzpomeňte na [exkurzi z první kapitoly](css-layout-versus.md).
 
 Až nyní jsme se přiblížili k optimálnímu a dostatečně jednoduchému řešení. Jak už správně tušíte, svatý grál umíme nakódovat pomocí [CSS gridu](css-grid.md).
 
