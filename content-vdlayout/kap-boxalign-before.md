@@ -2,9 +2,9 @@
 
 Zarovnávání boxů je modul specifikace CSS, bez kterého se žádný layout neobejde.
 
-Původně šlo o součást specifikace [flexboxu](css-flexbox.md), ale časem se rozšířila, aby bylo možné ji použít i [v gridu](css-grid.md).
+Původně šlo o součást specifikace [flexboxu](css-flexbox.md), ale časem se rozšířila, aby ji bylo možné použít i [v gridu](css-grid.md).
 
-Nyní je specifikace CSS Box Alignment vyvíjená tak obecně, aby vlastnosti jako `justify-items`, `align-content` a další použít šly použít ve [vícesloupcovém layoutu](css-multicolumn.md), v blokových layoutech, pozicování nebo tabulkách. Tohle se ale v době psaní knížky zatím v prohlížečích netěší prakticky žádné podpoře.
+Nyní je specifikace CSS Box Alignment vyvíjená tak obecně, aby vlastnosti jako `justify-items`, `align-content` a další šly použít ve [vícesloupcovém layoutu](css-multicolumn.md), v blokových layoutech, pozicování nebo tabulkách. Tohle se ale v době psaní knížky zatím v prohlížečích netěší prakticky žádné podpoře.
 
 Moc bych si přál, abyste i tuhle část poctivě přečetli, vyzkoušeli si CodePeny a shrnuli si vše v závěrečném testu.
 

@@ -105,7 +105,7 @@ Aby nedošlo k záměně mezi `and` a `or`, syntaxe je specifikována tak, aby b
 
 ## Prohlížečové prefixy {#prefixy}
 
-Dalším překvapením může být nutnost používat všechny prefixové vlastnosti. Pokud máte v cílové skupiny uživatele prohlížečů, které vlastnost podporují jen s použitím prefixů, musíte je uvést všechny:
+Dalším překvapením může být nutnost používat všechny prefixové vlastnosti. Pokud máte v cílové skupině uživatele prohlížečů, které vlastnost podporují jen s použitím prefixů, musíte je uvést všechny:
 
 ```css
 @supports ((box-shadow: 0 0 2px black inset) or
@@ -134,7 +134,7 @@ Funkce `selector()` je součástí nové verze specifikace modulu „CSS Conditi
 
 <!-- AdSnippet -->
 
-Řešení pro podporu detekce selektorů už dříve hledalo více autorů, pomocí různých hacků. Zajímavý je například tento, který se dotazuje na podporu pseudotřídy `:placeholder-shown`:
+Řešení pro podporu detekce selektorů už dříve hledalo více autorů pomocí různých hacků. Zajímavý je například tento, který se dotazuje na podporu pseudotřídy `:placeholder-shown`:
 
 ```css
 .foo { color: red }
@@ -213,9 +213,9 @@ Dalším omezením je samotná podpora vlastnosti, v tomto případě ale zále�
 
 `@supports` nepodporuje žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
 
-Je ovšem otázka, jak moc vadí chybějící podpora v Internet Exploreru. Mě nevadí. Hned vám řeknu proč.
+Je ovšem otázka, jak moc vadí chybějící podpora v Internet Exploreru. Mně nevadí. Hned vám řeknu proč.
 
-Internet Explorer totiž je skoro vždy ve skupině prohlížečů, které vlastnost nezvládají. Proto vůbec nevadí, když nerozumí ani otázce, zda vlastnost zvládá.
+Internet Explorer je totiž skoro vždy ve skupině prohlížečů, které vlastnost nezvládají. Proto vůbec nevadí, když nerozumí ani otázce, zda vlastnost zvládá.
 
 Ukažme si to ještě na jednom příkladu.
 

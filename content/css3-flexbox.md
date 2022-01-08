@@ -89,7 +89,7 @@ Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě 
 
 * flex kontejner – rodičovský element
 * flex položka – všichni přímí potomci flex kontejneru
-* hlavní osa – výchozí je horizontální, ale lze změnit
+* hlavní osa – výchozí je vodorovná, ale lze změnit
 * příčná osa – vždy příčná k hlavní, takže ve výchozí podobě svislá
 * hlavní rozměr – výchozí je šířka, ale řídí se nastavením hlavní osy
 * příčný rozměr – výchozí je výška

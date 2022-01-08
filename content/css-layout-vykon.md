@@ -2,13 +2,13 @@
 
 V diskuzích pokročilejších vývojářů a vývojářek se občas objevuje téma „performance“ CSS gridu a flexboxu. Mají tím na mysli rychlost vykreslování.
 
-Poměrně dost se to v komunitě řešilo, když byly tyhle systémy pro rozvržení stránek a komponent nové. Ale je to téma ještě dneska? Neřekl bych.
+Když byly tyhle systémy pro rozvržení stránek a komponent nové, poměrně dost se to v komunitě řešilo. Ale je to téma ještě dneska? Neřekl bych.
 
-Je zde však jedna věc, na kterou byste si měli dát pozor – použití flexboxu pro rozvržení celé stránky.
+Flexbox je v extrémně sloužitých layoutech rychlejší. Ale je zde jedna věc, na kterou byste si měli dát pozor – použití flexboxu pro rozvržení celé stránky nebo obzvlášť dlouhého obsahu jako jsou komplexní články.
 
 ## Je rychlejší grid nebo flexbox? A není to jedno?
 
-Před lety vznikaly studie, které se různými propracovanými metodami snažily zjistit, který systém rozvržení, je pro vykreslování v prohlížeči lépe optimalizovaný.
+Před lety vznikaly studie, které se různými propracovanými metodami snažily zjistit, který systém rozvržení je pro vykreslování v prohlížeči lépe optimalizovaný.
 
 Vyhrál to grid, teda flexbox, teda grid, teda flexbox.
 
@@ -130,7 +130,7 @@ Připomínám, že nechtěné překreslení layoutu uživatele rozhodně nepotě
 
 Jake Archibald ovšem varuje: „Nenechte se tímto příspěvkem vyděsit z flexboxu.“
 
-Má pravdu. Jeho test je postavený i na svou dobu na silně zpomalené rychlosti stahování a vykreslování. Dnes už rychlost mobilního připojení 2G nemá smysl testovat. Jeho dema mě v roce 2021 už při sebevětším zpomalení testovacího zařízení a připojení k internetu žádné postřehnutelné nekalosti neukázala.
+Má pravdu. Jeho test je postavený i na svou dobu na silně zpomalené rychlosti stahování a vykreslování. Dnes už rychlost mobilního připojení 2G nemá smysl testovat, používá se většinou pomalejší 4G. Jeho dema mě v roce 2021 už při sebevětším zpomalení testovacího zařízení a připojení k internetu žádné postřehnutelné nekalosti neukázala.
 
 Nicméně, je nezpochybnitelný fakt, že flexbox i grid jsou vykreslovány zcela jiným způsobem, takže připomenu, co už jsem psal:
 
@@ -163,12 +163,16 @@ aside {
 
 Stručně to popišme:
 
-- Klíčová slova [`max-content` a `min-content`](css-minmax.md) dávají instrukci, aby se prvek nezvětšoval nad maximální nebo minimální velikost obsahu.
+- Klíčová slova `max-content` a `min-content` dávají instrukci, aby se prvek nezvětšoval nad maximální nebo nezmenšoval pod minimální velikost obsahu.
 - Klíčové slovo `auto` zde odpovídá `minmax(min-content, max-content)`, takže nejmenší i největší možné rozměr této buňky layoutu je opět na prohlížeči.
-- Prvek `aside` není definován kontejnerem, který určuje jen třísloupcový layout. Tento nový je proto přidán dynamicky, což způsobí nechtěné překreslení layoutu.
+- Třída `container` určuje třísloupcový layout. Prvek `aside` v něm není definován. Přidáme jej dynamicky, což má za následek nechtěné překreslení layoutu.
 
-Ale vraťme se k varování Jake Archibalda a nenechme si tím flexbox zprotivit. Problémy se pravděpodobně projeví jen na velmi komplexních stránkách a ještě na pomalých zařízeních.
+O funkci `minmax()` a klíčových slovech `max-content` a `min-content` se více dozvíte [v kapitole o gridu](css-minmax.md).
+
+Vraťme se k varování Jake Archibalda, ale nenechme si tím flexbox zprotivit. Problémy se pravděpodobně projeví jen na velmi komplexních stránkách a ještě na pomalých zařízeních.
 
 Vychází z toho ale jedno ponaučení – pokud kódujete celostránkový layout ve flexboxu, nezapomeňte to otestovat na nejhorším možném zařízení, které si ve vaší cílové skupině umíte představit.
+
+Nebo pro tyhle účely – komplexní nebo celostránková rozvržení – prostě používejte grid.
 
 Ještě vám dlužím odkaz na článek „Don't use flexbox for overall page layout“ od Jakea Archibalda. [vrdl.in/6pajl](https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)

@@ -10,7 +10,7 @@
 
 V tomto textu se podíváme na jednotlivé vlastnosti pro zarovnávání layoutech.
 
-Specifikace „Box Alignment Module Level 3“ v podstatě vzala všechna zarovnání a rozdělení prostoru definovaná ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout.
+Specifikace „Box Alignment Module Level 3“ v podstatě vzala všechna zarovnání a rozdělení prostoru definovaného ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout.
 
 <!-- AdSnippet -->
 

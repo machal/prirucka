@@ -6,6 +6,12 @@ To, že se v e-booku o layoutech v CSS zabýváme starým Explorerem, samozřejm
 
 Pokud Explorer na svých projektech nepodporujete, pak i tuto podkapitolu směle přeskočte.
 
+Explorer vám velmi zkomplikuje využítí CSS gridu, všechny ostatní systémy layoutu tam jsou použitelné.
+
+Ty drobné chyby, které se vztahují na moderní prohlížeče a mřížku, flexbox, vícesloupcový layout a zarovnání boxů, spíše nestojí za řeč a budu je dále rozebírat v kapitolách s příručkou k jednotlivým vlastnostem.
+
+Ale pokud už tady chcete jít do hloubky, čtěte dále.
+
 </div>
 
 „Nové systémy layoutu v CSS jsou tak úžasné, že to jistě musí mít nějaký háček“, mohl by si někdo myslet.
@@ -148,9 +154,7 @@ Více informací o podpoře je na Can I Use. [caniuse.com/flexbox](https://caniu
 
 V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů.
 
-Na ty, kteří nemusí Internet Explorer 11 podporovat.
-
-A pak na ty, kteří mají trochu smůlu.
+Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří mají trochu smůlu.
 
 <figure>
 <img src="../dist/images/original/css-grid-caniuse.png" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
@@ -158,6 +162,8 @@ A pak na ty, kteří mají trochu smůlu.
 *Podpora gridu v prohlížečích. Zelenohnědá barva u IE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
 </figcaption>
 </figure>
+
+Na obrázku vidíte podporu gridu v prohlížečích, které které mají v ČR nad 0,5 % podílu trhu. Prohlížeče jsou seřazené podle používanosti.
 
 Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu před gridem. Obávám se, že za to může komplikace jménem podpora gridu v IE.
 
@@ -167,7 +173,7 @@ Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastnost�
 
 Máme zde sice [Autoprefixer](autoprefixer.md), který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 
-Prostě to s gridem v IE je složité a já se vůbec nedivím lidem, kteří říkají „skoro na všechno mě stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
+Prostě to s gridem v IE je složité a já se vůbec nedivím lidem, kteří říkají „skoro na všechno mně stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
 
 Jo, to když Explorer podporovat nemusíte, to je jiná písnička…
 
@@ -221,7 +227,7 @@ Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 </figcaption>
 </figure>
 
-Asi nejznámějším bugem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí.
+Asi nejznámějším bugem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí. V kontextu tématu této knížky jde ale spíše o drobnost, o které více napíšu v příručce této vlastnosti dále v knize.
 
 Pokud bychom se ale dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl byl to grid ani flexbox. Černého Petra bohužel vyhrává vícesloupcové rozvržení.
 
@@ -229,15 +235,17 @@ Více informací najdete na našem oblíbeném webu. [caniuse.com/multicolumn](h
 
 ## A co zarovnávání, CSS Box Align? {#box-align}
 
-Čtvrtou specifikací z party systémů rozvržení v CSS je [zarovnání boxů](css-box-alignment.md).
+Čtvrtou specifikací z party systémů rozvržení v CSS je [zarovnání boxů](css-box-alignment.md), který je nedílnou součástí navrhování layoutů v gridu a flexboxu.
 
-Tenhle systém layoutu bohužel samostatný záznam na CanIUse nemá. Je to proto, že původně šlo o součást specifikace flexboxu, kde také na webu sledujícím podporu v prohlížečích vlastnosti ze specifikace CSS Box Alignment zůstaly.
+Tenhle systém layoutu bohužel samostatný záznam na CanIUse nemá. Je to proto, že původně šlo o součást specifikace flexboxu, kde také na webu sledujícím podporu v prohlížečích vlastnosti CSS Box Alignment zůstaly.
 
 Najdete je zde jako jednotlivé vlastnosti, když budete hledat text `align-` nebo `justify-`.
 
 ### Tabulky podpory CSS Box Align v Internet Exploreru {#box-align-tabulka}
 
 Podpora v moderních prohlížečích je v [zarovnávání](css-box-alignment.md) vynikající, ale je potřeba zmínit, že i v tomto případě je Internet Explorer problematický. Opět hlavně v kombinaci s gridem.
+
+Nepodporované vlastnosti jsou ty, které začínají slovem `place-`, dále vadí nepodpora `align-items` a `align-content`.
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
@@ -249,9 +257,7 @@ Podpora v moderních prohlížečích je v [zarovnávání](css-box-alignment.md
 
 </div>
 
-Jak je vidno, v moderních prohlížečích je to v pořádku.
-
-Chybějící podpora `justify-items` i `justify-self` v IE je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči.
+Chybějící podpora `justify-items` i `justify-self` v IE u flexboxu je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Toto vysvětlím v příručce [vlastnosti `justify-self`](css-justify-self.md).
 
 V případě, že podporujete IE to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
 
@@ -272,7 +278,7 @@ Nicméně, důležitý je celkový dojem. Pokusím se to shrnout takto:
 - [Flexbox](css-flexbox.md) je víceméně bezproblémový. Při použití ve Exploreru raději nahraďte `flex-basis` za `width` nebo `height`.
 - [Grid](css-grid.md) je v Exploreru problémový, musíte mít [zvláštní znalosti](css-grid-msie.md). V moderních prohlížečích skoro úplně bez potíží.
 - [Vícesloupcový layout](css-multicolumn.md) umí zkomplikovat život menšími chybami, ale je jich dost.
-- [Zarovnání boxů](css-box-alignment.md) je v případě flexboxu skoro bez zádrhelů všude, v případě gridu je to s IE opět složitější.
+- [Zarovnání boxů](css-box-alignment.md) je v případě flexboxu skoro bez zádrhelů všude, v případě gridu je to s IE opět složitější. Ve vícesloupcovém layoutu nejde vlastnosti Box Align použít.
 
 <div class="web-only" markdown="1">
 

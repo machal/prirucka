@@ -108,7 +108,7 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých o
 - `auto` (výchozí)  
   Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`.
 - `normal`  
-  V CSS gridu bude nastavený jako hodnota `stretch`, ale například v blokových layoutech (`display:block`) jako `start`.
+  V CSS gridu jde jen o jiný zápis pro hodnotu `stretch`, ale například v blokových layoutech (`display:block`) jako `start`.
 - `stretch`  
   Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
@@ -125,9 +125,9 @@ Po dekódování zašmodrchaností specifikace můžeme konstatovat, že výchoz
 - `end`  
   Položka se zarovnává k hraně konce jí určeného prostoru.
 - `self-start`  
-  Hodnota chová jako `start`.
+  Hodnota se chová jako `start`.
 - `self-end`  
-  Hodnota chová jako `end`.
+  Hodnota se chová jako `end`.
 - `flex-start`  
   Chová se jako `start`.
 - `flex-end`  

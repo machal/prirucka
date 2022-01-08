@@ -34,8 +34,6 @@ Zájemci se na to mohou ještě mrknout živě v CodePenu.
 
 CodePen: [cdpn.io/e/Bpajbz](https://codepen.io/machal/pen/Bpajbz)
 
-Mimochodem, pro případ, že plavete v jednotkách `em`, `px` a dalších, používaných v CSS, udělejte si odbočku na Vzhůru dolů do textu „Jednotky pro tvorbu webu (em, rem, %, px, vh, vw): Kde použít jakou?“. [vrdl.cz/p/jednotky](https://www.vzhurudolu.cz/prirucka/jednotky)
-
 ## Různé typy dotazů
 
 Kromě maximální šířky se samozřejmě můžeme ptát i na minimum:
@@ -49,12 +47,12 @@ Kromě maximální šířky se samozřejmě můžeme ptát i na minimum:
 Můžeme se ptát na výšku:
 
 ```css
-@media (max-height: 800px) { 
+@media (max-height: 50em) { 
   /* Aplikuje se pro výšku viewportu do 800px */ 
 }
 ```
 
-(Ano, uvnitř dotazu je možné používat jakoukoliv jednotku, ale `em` nebo `px` jsou nejpraktičtější.)
+(Pokud vás zajímá, proč zde používám jednotku `em`, podívejte se do přílohové kapitoly na text o [CSS jednotkách](jednotky.md).)
 
 Můžeme také detekovat typ média:
 
@@ -101,7 +99,7 @@ Zjišťovat orientaci viewportu:
 
 ```css
 @media (orientation: portrait) {
-  /* „Na výšku“, šířka je užší než výšky */
+  /* „Na výšku“, šířka je užší než výška */
 }
 ```
 
@@ -185,7 +183,7 @@ Vidíme zde tedy obalující `.container` pro celou stránku. Pak samotný media
 
 Samotné texty nedávají smysl, a to je dobře. Jsou generované službou Blábot, jejíž kouzlo je v tom, že dodává texty připomínající češtinu, ale zároveň nepoutající pozornost. Takové české Lorem Ipsum. [blabot.cz](https://www.blabot.cz/)
 
-Základní CSS naše příkladu vypadá bez rozvržení také vcelku jednoduše:
+Základní CSS našeho příkladu vypadá bez rozvržení také vcelku jednoduše:
 
 ```css
 /* Barvy a odsazení: */
@@ -295,6 +293,8 @@ Chtěl bych, aby vodorovný layout naskočil nejdříve v momentě, kdy obrázek
 Dotazy na média se vztahují k šířce viewportu, k šířce plochy, kterou má prohlížeč k dispozici. Jak uvidíte na obrázku níže, mezi okrajem viewportu a okrajem obrázku jsou ještě další prvky, které také mají své rozměry.
 
 Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (`margin` i `padding`) o celkové šířce `3em`. Jedno `em` je vždy `16px`, pokud jej nenastavíme jinak. Dále je zde vnitřní okraj `1em` u prvků `.item__text` a `.item__image`. Celkem tedy 4 krát 16, to je 64 a ještě krát 2, protože musíme vzít v úvahu obě strany. Vychází nám 128. Přidáme šířku obrázku a vyjde nám 428 pixelů.
+
+Pro puristy zde přiznávám, že jsem porušil své vlastní pravidlo a v dotazu použil jednotku `px` namísto `em`. To proto, abychom si to matematicky ještě více nezkomplikovali. Ale `428px` standardně přepočteme na `26.75em`.  Více o jednotkách hledejte v textu o [CSS jednotkách](jednotky.md) ze závěrečné kapitoly.
 
 <figure>
 <img src="../dist/images/original/vdlayout/media-object-mq-rozmery.png" width="1600" height="900" alt="…">

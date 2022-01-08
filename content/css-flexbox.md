@@ -16,7 +16,9 @@ Vlastnosti se týkají buď kontejneru, tedy rodičovského prvku nebo položek.
 
 ### Kontejner flexboxu {#vlastnosti-kontejner}
 
-Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext formátování flexboxem, takže jeho přímí potomkové mohou mít specifické vlastnosti. Možná je také „inline“ hodnota: `inline-flex`.
+Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext formátování flexboxem, takže jeho přímí potomkové mohou mít specifické vlastnosti.
+
+Možná je také „inline“ hodnota: `inline-flex`, která se chová jako `inline-block`, tedy uvnitř je možné dělat rozvržení, zvenčí jde o součást řádku textu.
 
 <div class="reference-items">
 
@@ -227,7 +229,7 @@ Dále jsme si vymysleli, že první dva sloupce se budou zmenšovat a zvětšova
 Na mobilech zpravidla není pro rozvržení prvků vedle sebe prostor. Přidáme proto změnu směru layoutu, což zajistíme [vlastností `flex-direction`](css-flex-direction.md):
 
 ```css
-@media (max-width: 400px) {
+@media (max-width: 25em) {
   .container {
     flex-direction: column;
   }
@@ -279,7 +281,7 @@ Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě 
 
 - flex kontejner – rodičovský element
 - flex položka – všichni přímí potomci flex kontejneru
-- hlavní osa – výchozí je horizontální, ale lze změnit
+- hlavní osa – výchozí je vodorovná, ale lze změnit
 - příčná osa – vždy příčná k hlavní, takže ve výchozí podobě svislá
 - hlavní rozměr – výchozí je šířka, ale řídí se nastavením hlavní osy
 - příčný rozměr – výchozí je výška

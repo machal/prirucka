@@ -85,7 +85,7 @@ My však chceme zarovnávat doprostřed:
 }
 ```
 
-Povedlo se nám zařídit centrování ve svislém směru. Teď ještě vodorovně, že ano… Podívejte se do taháku na obrázku. Odtamtud asi zjistíte, že v horizontálním směru (`justify-`) potřebujete zarovnávat položky (`-items`).
+Povedlo se nám zařídit centrování ve svislém směru. Teď ještě vodorovně, že ano… Podívejte se do taháku na obrázku. Odtamtud asi zjistíte, že ve vodorovném směru (`justify-`) potřebujete zarovnávat položky (`-items`).
 
 Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou vlastnost `justify-items` a tedy i [`justify-self`](css-justify-self.md) je ve specifikaci i prohlížečích v tuto chvíli pro použití ve flexboxu zapovězena. Pokud vás to zajímá více, mrkněte se na podkapitoly o těchto vlastnostech v příručkách dále.
 

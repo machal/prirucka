@@ -21,7 +21,7 @@ Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) – *fr
 </figcaption>
 </figure>
 
-Aby to nestačilo, máme v gridu k dispozici ještě například [funkci `minmax()`](css-minmax.md), díky níž můžeme rozměry nastavit v rozmezí od minimální po maximální hodnotu.
+Kdyby to nestačilo, máme v gridu k dispozici ještě například [funkci `minmax()`](css-minmax.md), díky níž můžeme rozměry nastavit v rozmezí od minimální po maximální hodnotu.
 
 A dále také [funkce `min()`, `max()` a `clamp()`](css-min-max-clamp.md), které svou působností překračují hranice CSS layoutů.
 
@@ -29,7 +29,7 @@ A dále také [funkce `min()`, `max()` a `clamp()`](css-min-max-clamp.md), kter�
 
 Někdy je lepší nenastavovat šířku a výšku autorsky, ale nechat obsah položky, aby do rozměrů mluvil sám. K tomu jsou zde klíčová slova použitelná [ve funkci `minmax()`](css-minmax.md):
 
-* `max-content` – nezmenšuj se pod minimální rozměr obsahu.
+* `min-content` – nezmenšuj se pod minimální rozměr obsahu.
 * `max-content` – nezvětšuj se nad maximální rozměr obsahu.
 
 Zajímavá je i funkce `fit-content()`, kdy vnutíme šířku podle obsahu i těm prvkům, které by se v daném kontextu chovaly jako blokové.
@@ -44,7 +44,7 @@ Ještě více možností máme v případě gridu – můžeme zde používat da
 
 Frontendové kodérky a kodéři museli vzhledu často obětovat strukturu HTML, což přinášelo komplikace v oblasti přístupnosti stránky například čtečkám pro nevidomé nebo robotům vyhledávačů.
 
-Když vynecháme nepěkné triky s pozicováním, slibně zde vstupil flexbox. Co je to ale oproti gridu!
+Když vynecháme nepěkné triky s pozicováním, slibně zde vstoupil flexbox. Co je to ale oproti gridu!
 
 * [Vlastnost `order`](css-order.md), která dovoluje změnit pořadí prvků v prohlížeči, už znáte z flexboxu. Ano, tady ji můžete použít taky.
 * Pomocí [vlastnosti `grid-area`](css-grid-area.md) budete schopni umístit jakéhokoliv potomka na jakékoliv místo mřížky. A zahodit přitom svěrací kazajku struktury HTML.
@@ -69,7 +69,7 @@ Pokud bychom snad chtěli změnit směr budování mřížky na shora dolů a pa
 Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-template-areas.md) velmi usnadňují definování layoutů a jejich přeskládávání v různých rozlišeních:
 
 ```css
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 37.49999em) {
   .container {
     grid-template-areas:
       "first first"
@@ -77,7 +77,7 @@ Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-t
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .container {
     grid-template-areas:
       "first second"

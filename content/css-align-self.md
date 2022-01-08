@@ -116,7 +116,7 @@ Také vlastnosti `align-self` můžete předávat všechny hodnoty z jednotlivý
 - `auto` (výchozí)  
   Podědí se hodnota `align-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`.
 - `normal`  
-  V CSS gridu, flexboxu ale i ve většině systémů pro layout bude nastavený jako hodnota `stretch`.
+  V CSS gridu, flexboxu ale i ve většině systémů pro layout půjde jen o jiný zápis pro hodnotu `stretch`.
 - `stretch`  
   Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
@@ -131,9 +131,9 @@ Opět platí, že v zásadě je výchozí roztažení na výšku – takže hodn
 - `end`  
   Položka se zarovnává k hraně konce jí určeného prostoru.
 - `self-start`  
-  Hodnota chová jako `start`.
+  Hodnota se chová jako `start`.
 - `self-end`  
-  Hodnota chová jako `end`.
+  Hodnota se chová jako `end`.
 - `left`  
   Chová se jako `start`.
 - `right`  

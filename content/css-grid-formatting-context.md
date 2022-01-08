@@ -38,7 +38,7 @@ CodePen: [cdpn.io/e/GRobVpz](https://codepen.io/machal/pen/GRobVpz?editors=1100)
 Ano, s plovoucími prvky v gridu neuspějete. Pro formátovací kontext mřížky platí, že:
 
 - Vlastnosti `float` a `clear` nemají žádný efekt na položky mřížky. (Radši si ani nepředstavuji, co by vývojáři dělali, kdyby tomu tak nebylo.)
-- Plovoucí prvky (např. `float:left`), nijak nevstupují do kontejneru mřížky. Sousední kontejner mohou posunout, zmenšit, ale nikdy nevstoupí dovnitř, aby rozbily položky.
+- Plovoucí prvky (např. `float:left`), nijak nevstupují do kontejneru mřížky. Sousední kontejner mohou posunout, zmenšit, ale nikdy nevstoupí dovnitř, aby rozbil položky.
 
 Brrr! Raději pojďme od „floatů“ pryč. Začalo se mi dělat nevolno…
 

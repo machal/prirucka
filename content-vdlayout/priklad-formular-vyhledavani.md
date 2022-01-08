@@ -30,8 +30,8 @@ HTML vypadá takto:
 
 Zadání je následující:
 
-- Na menších displejích (do `499px` šířky) budou prvky jednoduše pod sebou.
-- Na větších velikostech obrazovky (od `500px` šířky) se prvky vyskládají vedle sebe.
+- Na menších displejích (do `499px`, tedy `31.24999em` šířky) budou prvky jednoduše pod sebou.
+- Na větších velikostech obrazovky (od `500px` šířky, `31.25em`) se prvky vyskládají vedle sebe.
 - V druhém případě mají popisek a tlačítko šířku obsahu a textový vstup se roztahuje, aby vyplnil maximální šířku.
 - V obou případech je mezi prvky mezera o polovině `rem`.
 
@@ -70,7 +70,7 @@ Typografické elementy, jako je text a formulářové prvky typu vstupní pole n
 Na menších displejích chceme, aby se všechny tři prvky vyskládaly pod sebe. Toho v případě flexboxu dosáhneme změnou směru layoutu:
 
 ```css
-@media (max-width: 499px) {
+@media (max-width: 31.24999em) {
   
   .form {
     flex-direction: column;
@@ -96,7 +96,7 @@ Moje komentáře:
 Kód této části bude o něco jednodušší. Přirozené rozvržení, které nám vznikne nastavením `display:flex` zde jen trochu upravíme.
 
 ```css
-@media (min-width: 500px) {
+@media (min-width: 31.25em) {
 
   .form__input {
     flex: auto;
@@ -118,7 +118,7 @@ Celý kód flexboxového řešení je zde:
   gap: 0.5rem;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 31.24999em) {
   
   .form {
     flex-direction: column;
@@ -133,7 +133,7 @@ Celý kód flexboxového řešení je zde:
   
 }  
 
-@media (min-width: 500px) {
+@media (min-width: 31.25em) {
 
   .form__input {
     flex: auto;
@@ -168,7 +168,7 @@ Vysvětlivky:
 Kód pro menší viewporty je díky propracovanosti gridu velmi jednoduchý:
 
 ```css
-@media (max-width: 499px) {
+@media (max-width: 31.24999em) {
   .form {
     grid-template-rows: repeat(3, auto);
   }  
@@ -183,7 +183,7 @@ Co jsme zde udělali?
 
 Je to jednoduché, že? Ale teď vám řeknu, že vás u této ukázky trošku tahám za nos. Mohlo by to totiž být ještě jednodušší.
 
-Ve skutečnosti bychom zde nemuseli zapisovat žádný kód. Možná už totiž víte, že [CSS grid](css-grid.md) řádky layoutu vytváří automaticky. Při automatickém vytvoření řádku se prvek na řádku roztáhne na celou šířku (což chceme) a výšku má podle obsahu (což také chceme).
+Ve skutečnosti bychom zde nemuseli zapisovat žádný kód. Možná už totiž víte, že [CSS grid](css-grid.md) řádky layoutu vytváří automaticky. Při automatickém vytvoření řádku se prvek roztáhne na celou šířku (což chceme) a výšku má podle obsahu (což také chceme).
 
 Takže si klidně ušetřeme práci a pro malé displeje tuto deklaraci zcela vynechme.
 
@@ -192,7 +192,7 @@ Takže si klidně ušetřeme práci a pro malé displeje tuto deklaraci zcela vy
 Na větších displejích už nějaký ten layout máme, takže si jej pojďme zapsat:
 
 ```css
-@media (min-width: 500px) {
+@media (min-width: 31.25em) {
   .form {
     grid-template-columns: auto 1fr auto;
   }  
@@ -214,7 +214,7 @@ Kompletní rozvržení bychom tedy gridem zapsali takto:
   align-items: baseline;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 31.25em) {
   .form {
     grid-template-columns: auto 1fr auto;
   }  

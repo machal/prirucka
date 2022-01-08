@@ -79,7 +79,7 @@ Pakliže si chcete sami zkusit kódovat, teď je ta správná příležitost zav
 Nejprve si napíšeme [Media Query](media-queries.md) a uděláme servisní nastavení:
 
 ```css
-@media screen and (min-width: 600px) { 
+@media screen and (min-width: 37.5em) { 
   .container {
     display: grid;
     height: 100vh;
@@ -229,7 +229,7 @@ Je mi jasné, že pro jedny jsem to sice zjednodušil („hurá, méně kódu!�
 Ještě vám dlužím finální CSS kód. Používám tu nejkratší variantu:
 
 ```css
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
 
   .container {
     display: grid;

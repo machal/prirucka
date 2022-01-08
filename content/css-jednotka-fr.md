@@ -65,9 +65,9 @@ Na pohled by to mohlo fungovat stejně, ale to opravdu jen na první pohled.
 
 Výhoda `fr` oproti procentům? Nemusíme počítat prvky gridu a řešit nastavení box modelu.
 
-Procentuální grid v demu nastavujeme jako `grid-template-columns: 33.3% 33.3% 33.3%`. Může to být fajn, ale procentuální hodnotu musíme vypočíst podle počtu sloupců v HTML. No a pokud by se nám ten změnil, nezbývá než upravovat také CSS.
+Procentuální grid v demu nastavujeme jako `grid-template-columns: 33.3% 33.3% 33.3%`. Může to být fajn, ale procentuální hodnotu musíme vypočíst podle počtu sloupců v HTML. No a pokud by se nám jejich počet změnil, nezbývá než upravovat také CSS.
 
-Další problém je v *box modelu*, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`) a bez změny počítání box modelu pomocí vlastnosti [`box-sizing`](css3-box-sizing.md) nám prvky přetečou z rodičovského kontejneru.
+Další problém je v *box modelu*, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`). Bez změny počítání box modelu pomocí vlastnosti [`box-sizing`](css3-box-sizing.md) nám prvky přetečou z rodičovského kontejneru.
 
 CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
 

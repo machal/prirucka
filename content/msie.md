@@ -1,6 +1,6 @@
 # Internet Explorer (je už mrtvý?)
 
-MSIE dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné tento starý prohlížeč od Microsoftu podporovat.
+Microsoft Internet Explorer (MSIE) dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné tento starý prohlížeč od Microsoftu podporovat.
 
 Text píšu v červnu 2021. A píšu ho proto, že pokud Internet Explorer stále ještě podporujete, myslím si, že byste od této praxe mohli začít upouštět.
 

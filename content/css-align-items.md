@@ -56,7 +56,7 @@ Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých ob
 ### Základní
 
 - `normal` (výchozí)  
-  Ve většině systémů layoutu, včetně gridu nebo flexboxu, bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
+  Ve většině systémů layoutu, včetně gridu nebo flexboxu, půjde jen o jiný zápis pro hodnotu `stretch`, kterou popisujeme níže.
 - `stretch`  
   Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
@@ -69,9 +69,9 @@ Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých ob
 - `end`  
   Zarovnává všechny položky k hraně konce kontejneru.
 - `flex-start`  
-  Hodnota chová jako `start`.
+  Hodnota se chová jako `start`.
 - `flex-end`  
-  Hodnota chová jako `end`.
+  Hodnota se chová jako `end`.
 
 ### Podle účaří
 

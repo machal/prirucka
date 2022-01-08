@@ -14,6 +14,10 @@ c) `display:clear-float`
 a) jde o logické funkce při počítání matematiky v `calc()`  
 b) k sázení layoutu v závislosti na směru toku jazyka dokumentu  
 c) jde o obecný název pro vnitřní a vnější okraje prvku
+1. **Jaký je ideální způsob nastavení velikosti písma v dokumentu?**  
+a) v procentech: `html { font-size: 120% }`  
+b) v „root em“: `html { font-size: 1.2rem }`  
+c) v „emkách“: `html { font-size: 1.2em }`
 1. **Co definuji zápisem `html {--color: blue}`**  
 a) globální proměnnou `--color` s hodnotou `blue`  
 b) jde jen o hack, který zamezí viditelnosti zápisu v Exploreru verze 4  
@@ -45,6 +49,8 @@ b) vnitřně se jedná o blokový element, zvnějšku inline – netvoří zalom
 a) `display:flow-root`
 1. **K čemu slouží logické vlastnosti a hodnoty (CSS Logical Properties)?**  
 b) k sázení layoutu v závislosti na směru toku jazyka dokumentu
+1. **Jaký je ideální způsob nastavení velikosti písma v dokumentu?**  
+a) v procentech: `html { font-size: 120% }`
 1. **Co definuji zápisem `html {--color: blue}`**  
 c) autorskou vlastnost `--color` s hodnotou `blue`
 1. **Jaké jsou výhody autorských vlastností a jejich použití v proměnných?**  

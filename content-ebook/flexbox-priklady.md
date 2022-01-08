@@ -75,7 +75,7 @@ Změna vizuálního pořadí se hodí i třeba pro řazení od konce abecedy. Do
 
 ## Příklad pátý: navigace s neznámým počtem položek
 
-Představte si horizontální navigaci, u které předem neznáte počet položek. Ale nepředstavujte si ji prosím moc dlouho, abyste z toho nedostali nějakou ošklivou vyrážku.
+Představte si vodorovnou navigaci, u které předem neznáte počet položek. Ale nepředstavujte si ji prosím moc dlouho, abyste z toho nedostali nějakou ošklivou vyrážku.
 
 Toto je její HTML:
 

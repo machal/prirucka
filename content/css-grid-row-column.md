@@ -22,7 +22,7 @@ Vlastnosti `grid-column` a `grid-row` jsou součástí specifikace [CSS gridu](c
 
 Ve skutečnosti se jedná o zkratky pro vlastnosti `grid-column-start`, `grid-column-end` a `grid-row-start`, `grid-row-end`.
 
-Mě však připadá praktičtější používání zkratek, takže se zaměříme na ně:
+Mně však připadá praktičtější používání zkratek, takže se zaměříme na ně:
 
 ```css
 grid-row: <grid-row-start> / <grid-row-end>;
@@ -87,7 +87,7 @@ CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
 ### Jména linek {#jmena}
 
-Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše uvedeným, jen s pojmenovanými linkami:
+Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše uvedený, jen s pojmenovanými linkami:
 
 ```css
 .container {
@@ -131,7 +131,7 @@ Podívejme se teď na tentýž příklad jako v první ukázce, jen si jeho pozi
 Vysvětlíme:
 
 - Zápis `span 1` u `grid-column` znamená „zabírá jeden sloupec“. Tady je to zbytečné, fungovalo by to i bez tého hodnoty.
-- Zápis `span 1` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
+- Zápis `span 2` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
 
 CodePen: [cdpn.io/e/LwWxWy](https://codepen.io/machal/pen/LwWxWy?editors=1100)
 

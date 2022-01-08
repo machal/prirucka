@@ -162,7 +162,7 @@ V tomto příkladu máme tyto responzivní deklarace:
     "second second";
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 25em) {
   .container {
     grid-template-areas:
       "first first"
@@ -170,7 +170,7 @@ V tomto příkladu máme tyto responzivní deklarace:
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .container {
     grid-template-areas:
       "first second"

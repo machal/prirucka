@@ -46,7 +46,7 @@ V tomhle textu řešíme vlastnosti pro nastavení rozměrů stop mřížky podl
 
 Je dobré si uvědomit, že se to liší od nastavení rozměrů zvenčí pomocí nadřazeného prvku. Tam užijete fixní [jednotky](jednotky.md) (`px`, `rem`, …) nebo podílové jednotky `fr`. Ty obsah uvnitř příliš nezajímá a nastavují rozměry prvku, ve kterém se obsah nachází.
 
-Projďeme si teď vše podrobně na příkladech.
+Projděme si teď vše podrobně na příkladech.
 
 ## Základy: Statický rozsah {#zaklady}
 
@@ -99,9 +99,15 @@ Instrukce pro vykreslení prvního sloupce mřížky zní:
 
 <!-- AdSnippet -->
 
-Co je ale ta „maximální velikost obsahu“? Je to různé. U [pružných responzivních obrázků](pruzna-media.md) například jde o jejich maximální pixelovou velikost. Blok s textovým obsahem se může zvětšovat, dokud slova stačí. Však si to zkuste na příkladu.
+Co je ale ta „maximální velikost obsahu“? Je to různé. U pružných responzivních obrázků například jde o jejich maximální pixelovou velikost. Blok s textovým obsahem se může zvětšovat, dokud slova stačí. Však si to zkuste na příkladu.
 
 CodePen: [cdpn.io/e/wvwbmQM](https://codepen.io/machal/pen/wvwbmQM?editors=1100)
+
+<div class="web-only" markdown="1">
+
+→ *Související: [Pružná média v responzivním designu](pruzna-media.md)*
+
+</div>
 
 Pojďme si to ještě ukázat na příkladu s obrázkem. Kód je totožný jako v předchozím demíčku:
 

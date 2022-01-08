@@ -122,7 +122,7 @@ Jak vidíte, pomocí flexboxu se No Queries layouty dělají docela snadno. Klí
 
 Oba příklady ale snad také dobře demonstrují limity bezdotazových layoutů. V určitých šířkách prostě nebudou vypadat tak dobře, jako ty vypiplané pomocí Media nebo Container Queries.
 
-Existují situace, kdy to nevadí nebo nevýhodu nepěkné „mezifáze“ rozvržení převáží možnost nepsát layoutové dotazy.
+Existují situace, kdy to nevadí nebo nevýhodu nepěkné „mezifáze“ rozvržení převáží možnost nepsat layoutové dotazy.
 
 ## Řešení pomocí gridu
 

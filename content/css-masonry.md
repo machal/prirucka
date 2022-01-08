@@ -86,7 +86,7 @@ V uvedeném prohlížeči si můžete pohrát s hlavním kouskem kódu, který v
 Raději to vysvětlím:
 
 - `display:grid` definuje [layout do mřížky](css-grid.md).
-- `gap:10px` nabádá prohlížeč k vykreslení desetipixelové [mezery mezi buňkami](css-gap.md).
+- `gap:10px` nabádá prohlížeč k vykreslení deseti pixelové [mezery mezi buňkami](css-gap.md).
 - `grid-template-columns:repeat(4,1fr)` vykreslí čtyři stejně široké sloupce mřížky. Viz [zápis `repeat()`](css-repeat.md).
 - `grid-template-rows:masonry` dělá to zděné kouzlo. Řádky nebudou zarovnané podle osy, ale nalepí se na položky výše a přeskupí se. Viz [vlastnost `grid-template-rows`](css-grid-template.md).
 

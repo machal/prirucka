@@ -72,7 +72,7 @@ Proč nenapsat rovnou `width: 14.2857`? Ze dvou důvodů:
 
 ### 2) Responzivní obrázky {#priklady-2}
 
-V parametru `sizes` značky `<img>` se bez `calc()` nedá obejít. Zkuste si bez téhle prima funkce spočítat šířku obrázku uvnitř layoutu, který v responzivním layoutu splňuje následující podmínky:
+V parametru `sizes` značky `<img>` je znalost `calc()` naprosto klíčová. Zkuste si bez téhle prima funkce spočítat šířku obrázku uvnitř layoutu, který v responzivním layoutu splňuje následující podmínky:
 
 1. Na větších displejích zabírá polovinu šířky layoutu stránky. Ale bez vnějších okrajů layoutu (10 pixelů) a samotné stránky (15 pixelů).
 2. Na menších zabírá celou šířku viewportu bez vnějších okrajů stránky (15 pixelů).
@@ -84,7 +84,7 @@ V parametru `sizes` značky `<img>` se bez `calc()` nedá obejít. Zkuste si bez
 >
 ```
 
-Uznávám, že už je to vypadá docela složitě. Ale bez `calc()` byste layout stránky pro potřebu responzivních obrázků nedokázali popsat.
+Uznávám, že už to vypadá docela složitě. Ale bez `calc()` byste layout stránky pro potřebu responzivních obrázků nedokázali popsat.
 
 <!-- AdSnippet -->
 
@@ -115,12 +115,10 @@ Následuje živá ukázka z pera Any Tudor.
 
 CodePen: [cdpn.io/e/YyGPJo](https://codepen.io/thebabydino/pen/YyGPJo).
 
-Ne všechno, co se třpytí, je `calc()`. Pojďme se teď podívat na příklady užití, které doporučují různé články na webu a které je lepší řešit jinak.
-
 ## Podpora v prohlížečích {#podpora}
 
 Funkci `calc()` podporují všechny moderní prohlížeče.
 
-Na CanIUse si můžete přečíst, v jakých situacích tuto užitečnou funkci nepodporuje [Internet Explorer 11](msie.md). Pochybuji, že by se vám doho chtělo. Je to dlouhý seznam. [caniuse.com/calc](https://caniuse.com/calc)
+Na CanIUse si můžete přečíst, v jakých situacích tuto užitečnou funkci nepodporuje [Internet Explorer 11](msie.md). Pochybuji, že by se vám do toho chtělo. Je to dlouhý seznam. [caniuse.com/calc](https://caniuse.com/calc)
 
 <!-- AdSnippet -->

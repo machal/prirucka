@@ -162,8 +162,6 @@ Uvádění [výpočetní funkce `calc()`](css3-calc.md) se v hodnotách `gap` m�
 }
 ```
 
-Dříve toto nefungovalo v Safari, ale nyní je to už zprovozněné. Do slunné Kalifornie posíláme klíčenku s poděkováním! Pokud firmě Apple nevěříte, zkuste si to na CodePenu.
-
 CodePen: [cdpn.io/e/KKqqqpJ](https://codepen.io/machal/pen/KKqqqpJ?editors=1100)
 
 A k čemu, že se funkce `calc()` může hodit? Příkladem budiž odečtení šířky rámečků (`border`) buněk layoutu z celkové šířky mezery.
@@ -198,9 +196,9 @@ Procentuální hodnoty můžete chtít použít, ale dejte si pozor na hodnoty v
 
 Ve vodorovném směru je to jednoduché – spočítá se deset procent ze šířky rodičovského kontejneru a tato hodnota se vloží jako mezera mezi prvky.
 
-Zajímavější je svislý směr.
+Zajímavější je svislý směr. V layoutu tvořeném mřížkou se spočítá deset procent z výchozí výšky rodičovského kontejneru, což je výška před aplikováním mezery pomocí vlastnosti `gap`.
 
-V [layoutu tvořeném mřížkou](css-grid.md) se spočítá deset procent z výchozí výšky rodičovského kontejneru. Prostě z výšky před aplikováním mezery pomocí vlastnosti `gap`.
+Výsledkem je, že procentuální hodnota pro `gap` aplikovaná na svislý směr vám velmi často zařídí přetečené položek z rozměru kontejneru.
 
 <p><img src="../dist/images/original/vdlayout/css-gap-percentage.png" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru v gridu"></p>
 
@@ -208,7 +206,7 @@ Pravděpodobně se vám tedy stane, že mezera vytlačí spodní prvky z kontejn
 
 CodePen: [cdpn.io/e/OJggmrx](https://codepen.io/machal/pen/OJggmrx?editors=1100)
 
-V případě [flexboxového layoutu](css-flexbox.md) a neznámé výšky kontejneru se procentuální `gap` ve svislém směru vůbec nezapočítá. Je z něj čistá nula. Ptáte se, kdy je výška kontejneru neznámá? Inu, ve flexboxu skoro vždy – dokud ji výslovně nedefinujete.
+V případě flexboxového layoutu a neznámé výšky kontejneru se procentuální `gap` ve svislém směru vůbec nezapočítá. Je z něj čistá nula. Ptáte se, kdy je výška kontejneru neznámá? Inu, ve flexboxu skoro vždy – dokud ji výslovně nedefinujete.
 
 <p><img src="../dist/images/original/vdlayout/css-gap-percentage-flex.png" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru ve flexboxu"></p>
 

@@ -71,7 +71,7 @@ Jeden z významů slova „clamp“ v angličtině (_[klæmp]_) je „svěrka“
 Vysvětlíme to ještě detailně:
 
 - Prostřední argument je _ideální hodnota_. `.box-3` bude široký `50%`, pokud nevstoupí v platnost svěrka z jedné nebo druhé strany.
-- První argument je _minimální hodnota_. Prvek nesmí být méně široký než `100px`.
+- První argument je _minimální hodnota_. Prvek nesmí být užší než `100px`.
 - Třetí argument je _maximální hodnota_. `.box-3` nebude nikdy širší než `300px`.
 
 Je to srozumitelné? Ještě si to případně zkuste na CodePenu.

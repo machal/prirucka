@@ -118,15 +118,15 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých o
 - `end`  
   Položky se zarovnají k hraně konce kontejneru.
 - `flex-start`  
-  Chová se jako `start`, použitelné hlavně ve flexboxu.
+  Chová se jako `start`, použitelné jen ve flexboxu.
 - `flex-end`  
-  Chová se jako `end`, použitelné hlavně ve flexboxu.
+  Chová se jako `end`, použitelné jen ve flexboxu.
 - `left`  
   Chová se jako `start`.
 - `right`  
   Chová se jako `end`.
 
-Hodnoty `left`, `right`, `start` a `end` zatím nemají u této vlastnost dobrou podporu v prohlížečích při použití ve flexboxu.
+Hodnoty `left`, `right`, `start` a `end` zatím nemají u této vlastnosti dobrou podporu v prohlížečích při použití ve flexboxu.
 
 ### Zarovnání na účaří {#ucari}
 

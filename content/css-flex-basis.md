@@ -58,6 +58,10 @@ Pokud uvedeme `flex-basis:0`, nezohlední se velikost textového nebo jiného ob
 </figcaption>
 </figure>
 
+Na horním části obrázku se pružnost počítá relativně k obsahu, takže se vezme šířka obsahu a k němu se po stranách připočte volný prostor odpovídající podílu.
+
+Na dolním části je vidět absolutní pružnost – obsah se vůbec nebere v úvahu a podíl na celku se počítá z celé šířky elementu.
+
 Standardní je samozřejmě relativní model pružnosti, ale je potřeba vědět, co nám způsobí `flex-basis:0` nebo třeba nastavení [vlastnosti `flex`](css-flex.md) na konkrétní číslo: `flex:1`.
 
 ## Ukázky {#ukazky}

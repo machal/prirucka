@@ -56,7 +56,7 @@ Tipy a triky
 
 ### Stín jen na jedné straně objektu
 
-Tady chceme stín jen na levé straně. Je to jednoduché – horizontální stín nastavíme na `0`. I přesto je ale díky použití rozostření stín malinko vidět nahoře i dole:
+Tady chceme stín jen na levé straně. Je to jednoduché – vodorovný stín nastavíme na `0`. I přesto je ale díky použití rozostření stín malinko vidět nahoře i dole:
 
 ```css
 box-shadow: 5px 0 5px -2px rgba(0,0,0,.5);

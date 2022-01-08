@@ -1,6 +1,8 @@
 # Přístupnost a CSS layout: pozor na vizuální pořadí
 
-Přístupnost je důležitá disciplína, kterou vývojáři mohou velmi pomoci různým skupinám lidí, a jen zdánlivě se týká pouze hendikepovaných minorit jako jsou zrakově postižení.
+Přístupnost je důležitá disciplína, s jejíž pomocí vývojáři mohou vyjít vstříc různým skupinám lidí, a jen zdánlivě se týká pouze hendikepovaných minorit jako jsou zrakově postižení.
+
+Díky přístupnosti se zkrátka mohou různé skupiny lidí dostat k informacím webu bez velkých překážek.
 
 V nových CSS layoutech může přístupnost pokazit poněkud kontroverzní možnost změny pořadí prvků ve stránce.
 
@@ -44,6 +46,7 @@ Problém se týká všech CSS vlastností, které mohou v nových systémech roz
 - [Vlastnost `order`](css-order.md), která změní způsob automatického umisťování položek.
 - [Deklarace `grid-auto-flow:dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak než jsou uvedeny v DOM.
 - [Vlastnost `grid-area`](css-grid-area.md), která umístí položky do konkrétního místa mřížky a opět nemusí respektovat pořadí ve zdroji.
+- [Vlastnost `flex-direction`](css-flex-direction.md) a hodnoty, které převracejí pořadí – `row-reverse` a `column-reverse`.
 
 Možností, jak přeskupit obsah je samozřejmě více a vztáhnout to můžeme i na starý dobrý `float`, takže tento text berte jako obecné varování.
 

@@ -67,7 +67,7 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 
 „Fallback alignment“, nebo také náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
 
-Například pro uplatnění hodnoty `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky) je nutné, aby se v kontejneru vyskytoval více než jeden předmět aka položka.
+Například pro uplatnění hodnoty `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky) je nutné, aby se v kontejneru vyskytoval více než jeden předmět, známý též jako položka.
 
 Pokud tato podmínka není splněna, specifikace jako náhradní řešení předepisuje hodnotu `flex-start` nebo `start`.
 
@@ -102,9 +102,9 @@ V obecné rovině můžeme použít tyto hodnoty:
 - `self-end` <small>(`-self`)</small>  
   Zarovnává předmět k hraně konce kontejneru, která odpovídá konci předmětu na patřičné ose.
 - `flex-start` <small>(`-self` i `-content`, jen pro flexbox)</small>  
-  Totéž jako `start`, jen pro položky flexboxu. Mimo flexbox se hodnota chová jako `start`.
+  Totéž jako `start`, jen pro položky flexboxu. Mimo flexbox se hodnota se chová jako `start`.
 - `flex-end` <small>(`-self` i `-content`, jen pro flexbox)</small>  
-  Totéž jako `end`, jen pro položky flexboxu.  Mimo flexbox se hodnota chová jako `end`.
+  Totéž jako `end`, jen pro položky flexboxu.  Mimo flexbox se hodnota se chová jako `end`.
 - `left` <small>(jen `justify-*`)</small>  
   Pokud se použije na řádkové ose, chová se jako `start`.
 - `right` <small>(jen `justify-*`)</small>  

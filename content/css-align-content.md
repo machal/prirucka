@@ -112,9 +112,9 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 - `end`  
   Položky se zarovnají k hraně konce kontejneru, nefunguje ve flexboxu.
 - `flex-start`  
-  Chová se jako `start`, použitelné hlavně ve flexboxu.
+  Chová se jako `start`, použitelné jen ve flexboxu.
 - `flex-end`  
-  Chová se jako `end`, použitelné hlavně ve flexboxu.
+  Chová se jako `end`, použitelné jen ve flexboxu.
 
 ### Podle účaří
 
@@ -125,7 +125,7 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 - `baseline`  
   Zkratka pro `first baseline`.
 
-Tyto hodnoty zatím nemají u této vlastnost dobrou podporu v prohlížečích při použití ve flexboxu. V IE není podporována vůbec.
+Tyto hodnoty zatím nemají u této vlastnosti dobrou podporu v prohlížečích při použití ve flexboxu. V IE není podporována vůbec.
 
 ### Zarovnání pro přetečení
 

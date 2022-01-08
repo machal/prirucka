@@ -75,7 +75,9 @@ Vlastnost `justify-items` vlastně nedělá nic jiného než, že nastavuje výc
 
 Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována. Pro vysvětlení jděte na text o [`justify-self`](css-justify-self.md).
 
-U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. V další ukázce je vidět, že ve flexboxovém layoutu je deklarace `justify-items:end` ignorována.
+U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`.
+
+V další ukázce je vidět, že ve flexboxovém layoutu je deklarace `justify-items:end` ignorována.
 
 CodePen: [cdpn.io/e/eYZgOwL](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
@@ -88,7 +90,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 ### Základní
 
 - `normal` (výchozí)  
-  V gridu bude nastavený jako hodnota `stretch`, kterou popisujeme níže.
+  V gridu jde jen o jiný zápis pro hodnotu `stretch`, kterou popisujeme níže.
 - `auto`  
   Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`, tedy `stretch`.
 - `stretch`  
@@ -107,9 +109,9 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 - `self-end`  
   Zarovnává všechny položky k hraně konce kontejneru, která odpovídá konci předmětu.
 - `flex-start`  
-  Hodnota chová jako `start`.
+  Hodnota se chová jako `start`.
 - `flex-end`  
-  Hodnota chová jako `end`.
+  Hodnota se chová jako `end`.
 - `left`  
   Chová se jako `start`.
 - `right`  
@@ -126,7 +128,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 - `baseline`  
   Zkratka pro `first baseline`.
 
-V době psaní toto funguje jen ve Firefoxu a můžete si to v tomto prohlížeči zkusit na následující ukázce.
+V době psaní zarovnávání na účaří funguje jen ve Firefoxu a můžete si to v tomto prohlížeči zkusit na následující ukázce.
 
 CodePen: [cdpn.io/e/ZEpGQqm](https://codepen.io/mkfeuhrer/pen/ZEpGQqm?editors=1100)
 
@@ -158,7 +160,7 @@ Ale vážně:
 - Zarovnání na účaří podporuje jen Firefox.
 - Vlastnost nepodporuje Internet Explorer 11.
 
-Ta podstatná sada hodnot je v moderních prohlížečích podporována, takže se vlastnosti `justify-items` nebojte.
+Podstatná sada hodnot je v moderních prohlížečích podporována, takže se vlastnosti `justify-items` nebojte.
 
 Více na [caniuse.com/justify-items](https://caniuse.com/#search=justify-items).
 

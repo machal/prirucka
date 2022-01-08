@@ -240,7 +240,7 @@ Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost
 
 „Gutter“ by se měl asi přeložit jako „žlab“, ale v kontextu webdesignu by to bylo dost neobvyklé. Slovo „gutter“ se v hovorové *webařštině* vcelku běžně používá, takže si s ním jako se synonymem pro „žlab“ vystačíme.
 
-Pojďme si desetipixelový „gutter“ nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
+Pojďme si deseti pixelový „gutter“ nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
 
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-grid-inspector.png" width="1600" height="900" alt="Inspektor CSS gridu ve Firefoxu">

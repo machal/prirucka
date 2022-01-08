@@ -129,7 +129,7 @@ Naštěstí si ale náš milý prohlížeč vzpomene, že kromě explicitního m
 </figcaption>
 </figure>
 
-Výchozí výška i šířka implicitních buněk je na hodnotě `auto`, takže se rozměry určí podle obsahu položky. No a když tam žádný není… nemůžeme se pak divit, že čtvrtý sloupec je méně široký než první tři a nový pátý. Nemá totiž žádný obsah. Mohli bychom to opravit přípravou implicitní mřížky, například takto:
+Výchozí výška i šířka implicitních buněk je na hodnotě `auto`, takže se rozměry určí podle obsahu položky. No a když tam žádný není… nemůžeme se pak divit, že čtvrtý sloupec je užší než první tři a nový pátý. Nemá totiž žádný obsah. Mohli bychom to opravit přípravou implicitní mřížky, například takto:
 
 ```css
 .container {

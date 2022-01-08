@@ -75,14 +75,14 @@ Jak už víte, toto samo o sobě ještě nic nezařídí. Prohlížeč sice ví,
 
 ## Breakpointy
 
-V příkladu jsem za vás pomocí [Media Queries](media-queries.md) definoval tři body zlomu:
+V příkladu jsem za vás pomocí [Media Queries](media-queries.md) definoval dva body zlomu (400 a 700 pixelů):
 
 ```css
-@media (max-width: 399px) { }
+@media (max-width: 24.9999em) { }
 
-@media (min-width: 400px) and (max-width: 699px) { }
+@media (min-width: 25em) and (max-width: 43.7499em) { }
 
-@media (min-width: 700px) { }
+@media (min-width: 43.75em) { }
 ```
 
 Pojďme teď konečně zapracovat na jednotlivých rozvrženích. Mocně zde využijeme právě [zkratku `grid-template`](css-grid-template.md), o které už víte, že jsem si ji poměrně oblíbil.
@@ -92,7 +92,7 @@ Pojďme teď konečně zapracovat na jednotlivých rozvrženích. Mocně zde vyu
 Rozvržení pro nejmenší zařízení typu mobily na výšku bude vypadat takto:
 
 ```css
-@media (max-width: 399px) {
+@media (max-width: 24.9999em) {
   .gallery {
     grid-template:
       "main main main"
@@ -107,7 +107,7 @@ Jde o mřížku 3 × 2, tři sloupce a dva řádky. Každý sloupec je stejně
 Výšku řádků bychom mohli definovat hned za oblastmi. Pokud ji neurčíme, spočítá se podle obsahu, takže má hodnotu `auto`, zde podle výšky obrázků. Jen pro pořádek uvedu odpovídající zápis s definicí výšky řádků layoutu:
 
 ```css
-@media (max-width: 399px) {
+@media (max-width: 24.9999em) {
   .gallery {
     grid-template:
       "main main main" auto
@@ -131,7 +131,7 @@ Díky tomu, že jsem nejprve propojil elementy DOMu z oblastmi, nemusím nyní v
 Pojďme rovnou na kód:
 
 ```css
-@media (min-width: 400px) and (max-width: 699px) {
+@media (min-width: 25em) and (max-width: 43.7499em) {
   .gallery {
     grid-template:
       "main thumb1"
@@ -159,7 +159,7 @@ Rozmístění oblastí `main`, `thumb1` a `thumb2` do buněk mřížky asi vidí
 Nyní k největšímu breakpointu. CSS kód vypadá takto:
 
 ```css
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .gallery {
     grid-template:
       "main thumb1 thumb2"

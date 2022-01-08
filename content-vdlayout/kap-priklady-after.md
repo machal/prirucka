@@ -13,9 +13,6 @@ c) vrací největší z atributů a používá se pro jakoukoliv CSS vlastnost
 1. **Jakou funkci má vlastnost `grid-area`?**  
 a) pojmenovává oblast gridu  
 b) zajistí umístění prvku do pojmenované oblasti gridu
-1. **Jakou funkci má vlastnost `grid-area`?**  
-a) pojmenovává oblast gridu  
-b) zajistí umístění prvku do pojmenované oblasti gridu
 1. **Co dělá vlastnost `grid`?**  
 a) slouží k zapnutí layoutu do mřížky  
 b) jde o zkratku pro definici vzhledu mřížky  

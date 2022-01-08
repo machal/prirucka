@@ -1,6 +1,6 @@
 # Container Queries
 
-Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, která do současného layoutu v CSS a vlastně celého webdesignu přinášejí.
+Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, kterým současný layout v CSS a vlastně celý webdesign limitují v rozletu.
 
 To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
 
@@ -15,9 +15,9 @@ Skeptik by se mě na tomto místě zeptal, jaký to má háček. Ano, má to há
 
 ## Těžká hlava autora technické knížky
 
-Psaní knížek je maraton. Pokud dlouho pracujete na technické knížce (a já na ni pracuji přes rok), může se vám stát, že v průběhu psaní vznikne technologie, která celý hotový materiál vezme a vyhodí jej do koše. Nebo vám na něj dá přinejmenším radikálně jiný pohled.
+Psaní knížek je maraton. Pokud dlouho pracujete na technické knížce (a já na ni v době dokončování během ledna 2022 pracuji už dva roky), může se vám stát, že v průběhu psaní vznikne technologie, která celý hotový materiál vezme a vyhodí jej do koše. Nebo vám na něj dá přinejmenším radikálně jiný pohled.
 
-To druhé se mi děje právě teď, v dubnu 2021, když píšu tyto řádky. Zhruba před třemi týdny se objevila první zkušební implementace Container Queries v Chrome Canary, verzi prohlížeče pro nedočkavé vývojáře.
+To druhé se mi děje právě teď, když píšu tyto řádky. Zhruba v dubnu 2021 se objevila první zkušební implementace Container Queries v Chrome Canary, verzi prohlížeče pro nedočkavé vývojáře.
 
 Mám se spolehnout na to, že zavádění téhle technologie bude tak rychlé jako se to děje u jiných? Že Google nebude čekat na specifikaci od W3C (která zatím není) a prostě to naimplementuje a pustí mezi lidi?
 
@@ -37,31 +37,31 @@ Pořád si to myslím, ale tehdy to tak jednoduché nebylo:
 
 Proč to tehdy vypadalo, že tahle technologie se do prohlížečů nedostane? Lidé ze standardizační organizace W3C tehdy nad Container Queries přemýšleli a zdálo se jim, že je to špatně implementovatelné v prohlížečích.
 
-Pak debata na mnoho let utichla a zůstalo jen u javascriptových implementací, které jsou ale nejsou z pohledu rychlosti vykreslení doporučeníhodné.
+Pak debata na mnoho let utichla a zůstalo jen u javascriptových knihoven, které jsou ale nejsou z pohledu rychlosti vykreslení hodné doporučení.
 
 Pokud by vás to jako exkurze do minulosti zajímalo, zde je ten můj článek: [vrdl.cz/p/element-queries](https://www.vzhurudolu.cz/prirucka/element-queries).
 
 Ale zpět k současnosti.
 
-## Implementace Element Queries v Chrome Canary
+## Implementace Element Queries v Chrome
 
-S novým návrhem přišla v prosinci 2020 Miriam Suzanne, ale je to jen jakýsi vrchol pyramidy, postavený na práci mnoha dalších.
+S novým návrhem přišla v prosinci 2020 Miriam Suzanne, ale je to jen jakýsi vrchol pyramidy, postavený na letité práci mnoha dalších.
 
-Skládá se ze dvou kroků. První je definování kontejneru:
+Skládá se ze dvou kroků. První je definování kontejneru, což se v aktuální verzi specifikace děje takto:
 
 ```css
 .container {
-  contain: layout inline-size;
+  container: inline-size;
 }
 ```
 
-Vlastnost `contain` není v CSS nová. Definuje zapouzdření určité části stránky. Prohlížeči dáváme nápovědu, které části (komponenty) jsou izolovatelné od zbytku tak, aby nemusel překreslovat celou stránku a šetřil výkon.
+Hodnota `inline-size` říká, že půjde o layout rozvržení na inline ose, tedy v případě evropských jazyků vodorovně.
 
-Hodnota `layout` udává „zapouzdření pro rozvržení“. Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují.
+<div class="ebook-only" markdown="1">
 
-Další hodnota `inline-size` říká, že půjde o layout rozvržení na inline ose, tedy v případě evropských jazyků vodorovně.
+Filozofie zápisu `inline` (a případně `block`) vychází z takzvaných logických hodnot a proměnných v CSS. Těm se věnuji [v poslední kapitole](css-logical.md).
 
-Pokud by vás princip zapouzdření zajímal více, mrkněte se na Vzhůru dolů, ale pro potřeby pochopení Container Queries už víte dost. [vrdl.cz/p/css-contain](https://www.vzhurudolu.cz/prirucka/css-contain).
+</div>
 
 Druhý krok je samotný dotaz na kontejner, Container Query:
 
@@ -75,17 +75,21 @@ Tohle je asi zřejmé. Pokud bude šířka rodičovského prvku alespoň `30em` 
 
 Je možné, že i v době, kdy toto čtete, budou Container Queries schované za vlaječkovým nastavení prohlížeče. Jak to tedy otestovat?
 
-1. Potřebujete Chromium verze 91.0.4459.0 a vyšší.
+1. Potřebujete Chromium verze 91 a vyšší.
 2. Jděte do vlaječkového nastavení: `chrome://flags`.
 3. Povolte možnost „Enable CSS Container Queries“.
 
-Než dojde na moje příklady, můžete si tam zatím vyzkoušet například CodePen „CSS Container Queries Demo“ od Bramuse Van Dammeho.
+## Specifikace a další prohlížeče
 
-CodePen: [cdpn.io/e/LYxNpeE](https://codepen.io/bramus/pen/LYxNpeE)
+Na Container Queries se těším jako malý Jarda a tak po očku vývoj sleduji. V Chrome se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právět tuto verzi.
 
-Na závěr teoretického úvodu přidávám odkaz na draft specifikace podmínky `@container` od Miriam Suzanne na Githubu. [vrdl.in/contdraft](https://github.com/w3c/csswg-drafts/issues/5796)
+Když se podíváme na další dva zásadní prohlížeče (Safari a Firefox), zdá se, že Container Queries hodlají implementovat. Ale v systémech pro správu rozpracovaných vlastností je u obou jen pustý a prázdný záznam bez viditelné práce a bez jakékoliv diskuze.
 
-A teď prakticky.
+Problém bude také v tom, že specifikace je velmi v raném stádiu vývoje a často se mění. Je ale strašně zajímavé ten vývoj sledovat, protože se tam např. objevují novinky jako jednotky relativní k šířce kontejneru komponenty. To by se měl malý Jarda zase na co těšit!
+
+Na závěr teoretického úvodu přidávám odkaz na draft specifikace „CSS Containment Module Level 3“. [vrdl.in/contdraft](https://drafts.csswg.org/css-contain-3/)
+
+A teď už prakticky. Alespoň do budoucna. Doufejme.
 
 ## Naše komponenta v Container Queries
 
@@ -93,7 +97,7 @@ Pojďme si to poskládat dohromady na konkrétním příkladu našeho „Media O
 
 ```css
 .container {
-  contain: layout inline-size;
+  container: inline-size;
 }
 
 @container (min-width: 30em) {
@@ -113,7 +117,7 @@ Pojďme si to poskládat dohromady na konkrétním příkladu našeho „Media O
 }  
 ```
 
-Rodičovskému prvku (`.container`) nejprve nastavíme izolaci na úrovni layoutu a prohlížeči napovíme, že rozvržení bude vodorovné. V dotazu `@container` je pak dotaz na šířku prvku `.container`.
+Rodičovskému prvku (`.container`) nejprve nastavíme kontejner pro šířku (`inline-size`). V dotazu `@container` je pak dotaz na šířku prvku `.container`.
 
 Bezva! Zde už řešení netrpí problémy, které způsobovaly Media Queries. Při nastavování hodnoty bodu zlomu (`30em`) se můžeme soustředit na samotný obsah a nemusíme do toho započítávat další hodnoty ve stránce.
 
@@ -163,11 +167,11 @@ CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
 ## Podpora v prohlížečích a náhradní řešení
 
-Jak jsem už psal, na jaře 2021 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chrome je zkušební.
+Jak jsem už psal, v lednu 2022 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chrome je zkušební a nedostupná běžným uživatelům.
 
 Předpokládám ale, že někteří čtenáři na tenhle text narazí v době, kdy budou už existovat implementace v některých prohlížečích, v jiných naopak ne.
 
-Osobně bych očekával nějakou dobu trvající situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí v řádu měsíců, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
+Osobně bych očekával nějakou dobu trvající situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
 
 Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií. Pomocí postupného vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a horší nepodporujícím.
 

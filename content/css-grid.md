@@ -34,6 +34,8 @@ Následuje detailní příručka k jednotlivým vlastnostem CSS gridu.
 
 Hodnota [vlastnosti `display:grid`](css-display.md) nastaví „grid formatting context“. Možná je také „inline“ hodnota: `inline-grid`.
 
+Možná je také „inline“ hodnota: `inline-grid`. To je věc podobná  `inline-block`, tedy uvnitř je možné dělat rozvržení, zvenčí jde o součást řádku textu.
+
 ### Definice mřížky {#vlastnosti-definice}
 
 Následujícími vlastnostmi je možné definovat kostru rozvržení.
@@ -186,7 +188,7 @@ Pojďme to nakódovat. Nejprve příprava na layout do mřížky:
 Toto – na rozdíl od `display:flex` – automaticky nic nedělá. Zatím jsme definovali mřížku, takže máme smůlu. Vzhůru do ní:
 
 ```css
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .container {
       grid-template-columns: 1fr 3fr 1fr;
   }
@@ -228,8 +230,8 @@ Předně chci zdůraznit, že grid nenahrazuje [flexbox](css-flexbox.md). Potře
 
 - Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
 - Grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.
-- Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu. <!-- Více na [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/). -->
-- Grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje funkcionalitu jako je automatický layout, funkce jako `minmax()`, `repeat()` nebo klíčová slova jako `auto-fill`. <!-- Píšou to na [css-tricks.com](https://css-tricks.com/css-grid-replace-flexbox/). -->
+- Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu.
+- Grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje funkcionalitu jako je automatický layout, funkce jako [`minmax()`](css-minmax.md), [`repeat()`](css-repeat.md) nebo klíčová slova jako `auto-fill`.
 - Grid považuji celkově za robustnější. Jak možná sami vidíte, ve specifikaci gridu je daleko více vlastností než ve flexboxu. Je to i vidět u vlastností [zarovnávání boxů (CSS Box Alignment)](css-box-alignment.md) – těch, které jsou navázané na mřížku je více než těch, které jsou navázané na flexbox.
 
 Z mého pohledu má grid daleko širší možnosti stylování než flexboxem. Můžeme v něm udělat i dříve těžce kódovatelné layouty.
@@ -241,7 +243,7 @@ Podpora gridu v moderních prohlížečích je výborná, takřka bezchybná.
 <figure>
 <img src="../dist/images/original/css-grid-caniuse.png" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Podpora gridu v prohlížečích. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
+*Podpora gridu v prohlížečích, které mají v ČR nad 0,5 % podílu trhu. Prohlížeče jsou seřazené podle používanosti. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
 </figcaption>
 </figure>
 

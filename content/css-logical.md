@@ -2,7 +2,7 @@
 
 V CSS často pracujeme s rozměry v určitém směru. Občas se ale může stát, hlavně při práci s cizokrajnými jazyky, že typografii nebo layout potřebujeme sázet v jiných směrech než zleva doprava jako naši mateřštinu.
 
-Logické vlastnosti a rozměry (podle specifikace „CSS Logical Properties and Values”) vznikly jako alternativa k fyzickým vlastnostem a rozměrům.
+Logické vlastnosti a rozměry (podle specifikace „CSS Logical Properties and Values“) vznikly jako alternativa k fyzickým vlastnostem a rozměrům.
 
 Například namísto fyzického `margin-left:1rem` napíšete `margin-inline-start:1rem`. Bude to pak univerzální pro češtinu, arabštinu i japonštinu. Pokaždé se totiž vnější okraj vykreslí na jiné straně.
 

@@ -12,7 +12,7 @@ V této ukázce zkusíme využít flexbox i grid. Jde o jeden z nejčastějšíc
 Zadání je následující:
 
 - Boční panel (`.sidebar`) má minimální šířku `200px` a maximální `20%`.
-- Oba prvky jsou vedle sebe až od šířky okna `599px`, od `600px` je boční panel vlevo a obsah vpravo.
+- Oba prvky jsou vedle sebe až od šířky okna `599px`. Od šířky `600px` (`37.5em` pro potřeby Media Queries) je boční panel vlevo a obsah vpravo.
 
 HTML jsme navrhli takto:
 
@@ -42,7 +42,7 @@ Můžete si pak porovnat svůj výsledek s mým, který teď právě představí
 CSS kód je následující:
 
 ```css
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .container {
     display: flex;
   }
@@ -63,7 +63,7 @@ CodePen: [cdpn.io/e/wvddxWd](https://codepen.io/machal/pen/wvddxWd?editors=1100)
 Zde to máme ještě o trochu jednodušší:
 
 ```css
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .container {
     display: grid;
     grid-template-columns: minmax(200px, 20%) 1fr;
