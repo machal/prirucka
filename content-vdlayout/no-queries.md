@@ -68,7 +68,7 @@ Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku o
 Budeme si ten kód muset vysvětlit, že?
 
 - `flex: 1 1 20%` – Obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
-- Základní velikost položek je nastavena níž než je celková šířka plochy (`20%` a  `40%`) a slouží jen k definování výchozího poměru stran. Je to jako bychom to uvedli [vlastností `flex-basis`](css-flex-basis.md).
+- Základní velikost položek je nastavena užší než je celková šířka plochy (`20%` a  `40%` dává jen 60 procent). Nám slouží jen k definování výchozího poměru stran. Je to jako bychom to uvedli [vlastností `flex-basis`](css-flex-basis.md). O roztažení do celé šířky se pak postará obsah.
 - Bod zlomu definuje maximální šířka obrázku – `max-width: 300px`.
 
 Ještě se teď více zaměřme na ten bod zlomu, abychom to celé opravdu pochopili.
@@ -116,11 +116,13 @@ Obě strany rozvržení mají stejnou šířku. V hodnotě `300px` je uložený 
 
 CodePen: [cdpn.io/e/WNRjyoE](https://codepen.io/machal/pen/WNRjyoE?editors=1100)
 
+Jak už víte, díky „content out“ povaze flexboxu a vládě obsahu nad layoutem se obrázek a text dělí o prostor různými způsoby, nikoliv přesně na polovinu. O to se stará automatika flexboxu.
+
 Jak vidíte, pomocí flexboxu se No Queries layouty dělají docela snadno. Klíčem je umožnit zalomení pomocí `flex-wrap` a pak si hrát s různými vlastnosti určujícími šířku.
 
-Oba příklady ale snad dobře demonstrují limity bezdotazových layoutů. V určitých šířkách prostě nebudou vypadat tak dobře, jako ty vypiplané pomocí Media nebo Container Queries.
+Oba příklady ale snad také dobře demonstrují limity bezdotazových layoutů. V určitých šířkách prostě nebudou vypadat tak dobře, jako ty vypiplané pomocí Media nebo Container Queries.
 
-Existují ale situace, kdy to nevadí nebo nevýhodu nepěkné „mezifáze“ rozvržení převáží možnost nepsát layoutové dotazy.
+Existují situace, kdy to nevadí nebo nevýhodu nepěkné „mezifáze“ rozvržení převáží možnost nepsát layoutové dotazy.
 
 ## Řešení pomocí gridu
 
@@ -144,7 +146,7 @@ Pojďme si to ukázat přímo v kódu. HTML je pořád stejné, mění se jen ka
 
 Jádro triku je v zápisu `repeat(auto-fit, minmax(300px, 1fr))`, proto právě této části pojďme věnovat zvýšenou péči:
 
-- [Funkce `repeat()`](css-repeat.md) zajistí opakované vykreslení buněk. Prostě místo `1fr 1fr 1fr` uvedeme `repeat(3, 1fr)`.
+- [Funkce `repeat()`](css-repeat.md) zajistí opakované vykreslení buněk mřížky. Prostě místo `1fr 1fr 1fr` uvedeme `repeat(3, 1fr)`.
 - Kouzlo přichází, když namísto počtu uvedeme do prvního parametru `auto-fit`, který zajistí roztahování a smršťování již existujících buněk layoutu.
 - Přidáme ještě minimální a maximální velikost buňky, `minmax(300px, 1fr)`, a máme hotovo.
 

@@ -35,7 +35,7 @@ Povšimněte si atributů `width` a `height`, které drží poměr stran samotn�
 
 Pro vykreslení obrázku využívám skvělou službou [Satyr.dev](http://satyr.dev/). Díky parametru `delay` má obrázek nastaveno zpoždění. Když na něj čekáme, prohlížeč by za normálních okolností vykreslil bílou plochu.
 
-My tam ale chceme ponechat barevný placeholder (zástupný symbol), aby bylo vidět, že na toto místo něco dorazí. K tomu nám poslouží prvek `.box`, který má nastavený poměr stran stejně jako obrázek – 4:3 – `aspect-ratio: 4/3`. Už chápete?
+My tam ale chceme ponechat barevný placeholder (zástupný symbol), aby bylo vidět, že na toto místo něco dorazí. K tomu nám poslouží prvek `.box`, který má nastavený poměr stran stejně jako obrázek – 4 : 3 – `aspect-ratio: 4/3`. Už chápete?
 
 <!-- AdSnippet -->
 

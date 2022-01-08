@@ -53,7 +53,7 @@ Třídu `.svg-container` pak kvůli Explorerům nastylujeme metodou pro zachová
   position: relative;
   width: 100%;
   height: 0;
-  padding-top: 100%; /* Poměr stran 1:1 */ 
+  padding-top: 100%; /* Poměr stran 1 : 1 */ 
 }
 
 .svg-content {
@@ -104,11 +104,11 @@ U většiny vektorových obrázků pak chceme definovat poměr stran, který si 
 .svg-icon
   …
   height: 0;
-  padding-bottom: 100%; /* Poměr stran 1:1 */ 
+  padding-bottom: 100%; /* Poměr stran 1 : 1 */ 
 }
 ```
 
-Tady už není ani žádné speciální nastavení pro Internet Explorer. Hurá! 
+Tady už není ani žádné speciální nastavení pro Internet Explorer. Hurá!
 
 Mrkněme se spolu na CodePen. [cdpn.io/e/NbmgPr](https://codepen.io/machal/pen/NbmgPr)
 

@@ -8,7 +8,7 @@ Velmi to záleží na cílové skupině konkrétního projektů, ale drtivá vě
 
 <!-- AdSnippet -->
 
-Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl mnoho dobrého. Ne, není to ironie.
+Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl mnoho dobrého. Ne, není to ironie. Jak brzy uvidíte, Explorer dříve stál na světlé straně Síly a možná vás překvapí, že to byl nejpokrokovější prohlížeč své doby.
 
 ## Aktuální podíl MSIE mezi uživateli je v ČR mezi 1-2 %. A klesá to
 
@@ -103,8 +103,8 @@ Nicholas C. Zakas připomíná ve svém výborném článku „The innovations o
 Z jeho textu, zmiňujícího mnoho inovací Exploreru, jsem vybral pár bodů, které stojí za připomenutí:
 
 1. Internet Explorer 4 zlepšil práci s DOMem tím, že umožnil programový přístup ke každému prvku na stránce prostřednictvím `document.all`, což byl předchůdce `document.getElementById()`. Ve stejné verzi se také poprvé objevila vlastnost `innerHTML`.
-2. Exploreru také vděčíme za bublání událostí (event bubbling). Kromě toho vytvořili v Microsoftu řadu dalších událostí, které se nakonec staly součástí standardů W3C: `beforeunload`, `mouseenter`, `mouseleave` a další.
-3. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámy (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární.
+2. Exploreru také vděčíme za vznik bublání událostí (event bubbling), tedy vlastnosti DOMu, bez které si dnes nedokážeme představit vývoj webů. Kromě toho vytvořili v Microsoftu řadu dalších událostí, které se nakonec staly součástí standardů W3C: `beforeunload`, `mouseenter`, `mouseleave` a další.
+3. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámy (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární, například pro vkládání komponent třetích stran jako je reklama nebo přehrávače videí z YouTube.
 4. Často se zapomíná, že v Microsoftu nepřímo vymysleli Ajax. Zpracování XML na straně klienta bylo součástí implementace XMLHttpRequest, která byla poprvé představena jako součást rozšíření ActiveX v páté verzi Internet Exploreru.
 5. Internet Explorer 3 byl také první prohlížeč, který vsadil na CSS. V té době totiž konkurenční společnost Netscape prosazovala alternativní návrh, JavaScript Style Sheets (JSSS). Dodávám, že byť Netscape následně CSS začal implementovat, byl to začátek konce tohoto prohlížeče, protože používání CSS zde bylo velmi chybové. MSIE 4 byl první browser s rozumnou implementací základů CSS a i díky tomu se stal nejpoužívanějším prohlížečem světa.
 6. První implementace box modelu v Internet Explorer 5 interpretovala šířku a výšku tak, že prvek má mít celkovou velikost včetně vnitřních okrajů a rámečku. To byl základ pro pozdější standardizovanou vlastnost `box-sizing:border-box`, i když v té době to bylo od Microsoftu opravdu nepěkné a webařům značně zavařil.

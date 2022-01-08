@@ -17,7 +17,7 @@ Minimálně mobilech bojujeme se zhoršenými světelnými podmínkami úplně v
 
 Pojďme si tedy říct, jaké hodnoty bychom při návrhu a vývoji webu měli splňovat.
 
-## Doporučený kontrastní poměr: 7:1 ideálně, 3:1 minimálně {#doporuceny}
+## Doporučený kontrastní poměr: 7 : 1 ideálně, 3 : 1 minimálně {#doporuceny}
 
 Nemůžu tady navázat na nikoho jiného než [na Radka Pavlíčka](http://poslepu.cz/jak-vybrat-barvy-pro-graficky-navrh/), odborníka na přístupnost.
 
@@ -30,15 +30,15 @@ Nemůžu tady navázat na nikoho jiného než [na Radka Pavlíčka](http://posle
 
 Správný kontrastní poměr je následující:
 
-### 7:1 - ideální minimální kontrastní poměr {#7-1}
+### 7 : 1 - ideální minimální kontrastní poměr {#7-1}
 
 Vyhovuje nejvyšší úrovni AAA normy [WCAG](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). Jde o ideální stav.
 
-### 4,5:1 – minimální kontrastní poměr pro běžný text  {#4-5-1}
+### 4,5 : 1 – minimální kontrastní poměr pro běžný text  {#4-5-1}
 
 Je to definováno jako běžné písmo do velikosti 18 bodů nebo tučné písmo do velikosti 14 bodů. To je podle [WCAG](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) v úrovni AA.
 
-### 3:1 – minimální kontrastní poměr pro větší nebo méně významné texty {#3-1}
+### 3 : 1 – minimální kontrastní poměr pro větší nebo méně významné texty {#3-1}
 
 Jde o písmo nad 18 bodů nebo tučné písmo nad 14 bodů. Radek Pavlíček tenhle kontrastní poměr doporučuje také jako minimum pro [neaktivní prvky rozhraní](http://poslepu.cz/musi-byt-text-neaktivniho-prvku-rozhrani-dostatecne-kontrastni/).
 

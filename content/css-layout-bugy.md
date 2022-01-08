@@ -1,7 +1,11 @@
 # Podpora flexboxu, gridu a vícesloupcového layoutu v prohlížečích
 
 <div class="ebook-only">
+
 To, že se v e-booku o layoutech v CSS zabýváme starým Explorerem, samozřejmě není jen tak. V této podkapitole se chceme zaměřit na problémy prohlížečů s podporou flexboxu, gridu a spol.
+
+Pokud Explorer na svých projektech nepodporujete, pak i tuto podkapitolu směle přeskočte.
+
 </div>
 
 „Nové systémy layoutu v CSS jsou tak úžasné, že to jistě musí mít nějaký háček“, mohl by si někdo myslet.
@@ -124,9 +128,11 @@ Když jsem se vývojářů na Twitteru ptal na jejich mentální zkratky spojen�
 
 > U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default) a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
 
-Často tedy stačí namísto [vlastnosti `flex-basis`](css-flex-basis.md) použít `width` nebo `height` a všechno to dobře funguje.
+Vysvětlím to. Zápis `flex:1 1 auto` je zkratka, která v prvním čísle definuje rozsah zvětšování položky, v druhém rozsah zmenšování a ve třetím výchozí velikost, která se ve flexboxu nastavuje vlastností `flex-basis`. Je možné ji nezapsat a ponechat výchozí hodnotu (`flex:auto`), což vám ale v případě nutnosti podpory IE nedoporučuju.
 
-Věřte mi. Nic komplikovaného na tom není a používat flexbox i s podporou IE11 je úplně v pohodě.
+Dalším nutným vstřídným krokem je potřeba vyhnout vlastnosti [vlastnosti `flex-basis`](css-flex-basis.md). Často tedy stačí namísto ní použít `width` nebo `height` a všechno to dobře funguje. I v Exploreru.
+
+Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podporu Exploreru, neděste se toho. Nic komplikovaného na tom není a používat flexbox i s podporou IE11 je úplně v pohodě.
 
 ### A co další chyby?
 

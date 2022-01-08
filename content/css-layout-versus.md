@@ -98,4 +98,4 @@ Mistr Yoda: „Ne, není to jiné. Jiné je to v tvé hlavě. Musíš se teď od
 Luke Skywalker: „Dobře, já to teda zkusím.“  
 Mistr Yoda: „Ne, nezkusíš. Uděláš to nebo ne. Už žádné zkusím!“  
 
-Pokusím se v dalších řádcích být trochu jako mistr Yoda. Ale hodný mistr Yoda.
+V dalších řádcích budu trochu jako mistr Yoda. Ale hodný mistr Yoda.

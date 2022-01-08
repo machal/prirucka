@@ -62,7 +62,7 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 - Zatím jen JPG nebo PNG.
 - Bílé pozadí. Obsah až ke krajům.
 - Ideálně bez efektů jako stíny na pozadí screenshotů z Maca.
-- 16:9. Minimálně 2000 pixelů široké v 300dpi. Kvůli případnému tisku.
+- 16 : 9. Minimálně 2000 pixelů široké v 300dpi. Kvůli případnému tisku.
 - Shora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
 - Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
 - Informace nebo jejich vazba nesmí být závislá jen na barvě. Kůli černobílým Kindle čtečkám.
@@ -87,9 +87,9 @@ Alternativně s popiskem jako `<figure>`:
 
 Popisek (`figcaption`) není potřeba uvádět jako: „Obrázek: …“, protože je ve všech místech výskytu vizuálně oddělený od zbytku obsahu.
 
-#### Jiný poměr stran než 16:9
+#### Jiný poměr stran než 16 : 9
 
-Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají jiný poměr stran než 16:9, uvádět rozměry explicitně. Stačí poměr stran. Například pro výškou poloviční obrázky – 32:9:
+Hlavně kvůli AMP a layoutu v `<amp-img>` je potřeba u obrázků, které mají jiný poměr stran než 16 : 9, uvádět rozměry explicitně. Stačí poměr stran. Například pro výškou poloviční obrázky – 32 : 9:
 
 ```html
 <p><img src="../dist/images/original/pagespeed-insights-skore.jpg" width="1920" height="540"  alt="PageSpeed Insights Skóre"></p>
@@ -140,7 +140,7 @@ Pro případné přímé vložení iframe z Youtube je na webu potřeba obalit j
 </div>
 ```
 
-Komponenta `.rwd-media` standardně dělá poměr stran 16:9, ale lze přidat různé modifikátory, např. `.rwd-media--160-45` pro poloviční výšku. Viz stejnojmenná komponenta u Vzhůru dolů webu.
+Komponenta `.rwd-media` standardně dělá poměr stran 16 : 9, ale lze přidat různé modifikátory, např. `.rwd-media--160-45` pro poloviční výšku. Viz stejnojmenná komponenta u Vzhůru dolů webu.
 
 #### Vložení MP4
 

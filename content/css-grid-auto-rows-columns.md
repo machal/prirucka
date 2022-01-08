@@ -48,7 +48,7 @@ grid-auto-rows: 10%;
 grid-auto-rows: 1fr;
 ```
 
-V takovém případě prostě natvrdo nastavíme minimální výšku buněk. Obsah to samozřejmě může svou výškou přebít.
+V takovém případě prostě natvrdo nastavíme minimální výšku buněk mřížky. Obsah to samozřejmě může svou výškou přebít.
 
 ### Více hodnot, které se při větším počtu sloupců opakují
 

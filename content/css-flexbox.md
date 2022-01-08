@@ -104,7 +104,7 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
   <article role="article">
     <h4><a href="css-flex-grow.md"><code>flex-grow</code></a></h4>
     <p><a href="css-flex-grow.md"><img src="../dist/images/small/vdlayout/css-flex-grow-schema.png" alt="Vlastnost flex-grow" /></a></p>
-    <p>Jak moc může položka růst. Výchozí je <code>0</code>. <br>Např. <code>flex-grow: 1</code> – bere si podíl v hodnotě <code>1</code> z volného prostoru.</p>
+    <p>Jak moc může položka růst. Výchozí je <code>0</code>. <br>Např. <code>flex-grow: 1</code> – podíl na celku hodnoty <code>1</code> z volného prostoru.</p>
   </article>
 
   <article role="article">

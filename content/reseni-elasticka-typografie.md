@@ -36,7 +36,7 @@ Způsobů jak elastickou typografii vytvořit [je více](https://www.smashingmag
 }
 ```
 
-Jenže nic jako `10bh` v CSS nemáme, že? Můžeme to ale spočítat, pokud známe poměr stran komponenty. Ten je v našem případě 16:9. Výšku pak vypočteme ze šířky a poměru stran:
+Jenže nic jako `10bh` v CSS nemáme, že? Můžeme to ale spočítat, pokud známe poměr stran komponenty. Ten je v našem případě 16 : 9. Výšku pak vypočteme ze šířky a poměru stran:
 
 ```
 ((šířka okna) - (vodorovný padding)) / 16 * 9)

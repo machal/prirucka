@@ -146,7 +146,9 @@ Pojďme rovnou na kód:
 
 Zde musíme poslední náhled „vypnout“ pomocí `display:none`. Grafický návrh nám to káže.
 
-Zde jen umístím vsuvku způsobenou tím, že odborník na rychlost webu ve mě se nyní staví na zadní: „Vypnutí“ obrázku pomocí `display:none` prohlížeči nezakáže obrázek stáhnout. Může to vadit, ale v tomhle případě se budeme tvářit, že ne zase tak moc.
+Zde jen umístím vsuvku způsobenou tím, že odborník na rychlost webu ve mě se nyní staví na zadní: „Vypnutí“ obrázku pomocí `display:none` prohlížeči nezakáže obrázek stáhnout.
+
+Pokud byste chtěli směr řešení tohoto neduhu, možná si jako já vzpomenete na líné načtení obrázků. Pokud neviditelnému obrázku přidáme atribut a hodnotu `loading="lazy"`, prohlížeč jej v případě, že nebude viditelný nestáhne. Více o této technice najdete na Vzhůru dolů. [vrdl.cz/p/lazy-loading-obrazku](https://www.vzhurudolu.cz/prirucka/lazy-loading-obrazku)
 
 Samotný layout je tentokrát definovaný jako mřížka 2 × 2. První sloupec je dvoutřetinový (`2fr`), druhý zabírá zbylou třetinu prostoru (`1fr`).
 

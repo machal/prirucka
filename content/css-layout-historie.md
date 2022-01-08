@@ -8,7 +8,7 @@ Slíbil jsem stručnost, takže to vezměme v bodech.
 
 ## 1994: „Je mi líto, ale jste v háji.“
 
-Možnosti stylování dokumentů jsou mizerné. Výborně to vyjadřuje mimo jiné také Marc Andreessen, pozdější spoluzakladatel Netscape a člen představenstva Facebooku, v e-mailovém fóru WWW-Talk. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v TeXu nebo ve Wordu, všem prý odpovídá: „Sorry you’re screwed.“
+Možnosti stylování dokumentů jsou mizerné. Výborně to vyjadřuje mimo jiné také Marc Andreessen, pozdější spoluzakladatel Netscape a člen představenstva Facebooku, v e-mailovém fóru WWW-Talk. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v sázecím programu LaTeX (nebo alespoň jako ve Wordu), všem prý odpovídá: „Sorry you’re screwed.“
 
 ## 1996: FRAME
 

@@ -118,7 +118,7 @@ Výsledek vypadá jinak než v řešení pomocí CSS Multicol, na obrázku uvid�
 
 Položky jsou srovnané do řádků a je možné je číst zleva doprava.
 
-Nevýhody zde však nějaké vidím taky. Na většině šířek displeje náhledy s popisky nevyplní všechny řádky. Prohlížeč dá prostě přednost vyplnění první řádky, takže můžeme například vidět kombinaci 9 položek v prvním řádku a 3 ve druhém.
+Nevýhody zde však vidím taky. Na většině šířek displeje náhledy s popisky nevyplní všechny řádky. Algoritmus prohlížeče vykreslí položky po řádcích, takže můžeme například vidět kombinaci 9 položek v prvním řádku a 3 ve druhém.
 
 Udělat pěknou mřížku, bez vynechaných položek, tedy například 2 × 6, 3 × 4… je samozřejmě s gridem možné, jen bychom to museli specifikovat přesněji s pomocí Media Queries.
 

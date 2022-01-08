@@ -69,7 +69,7 @@ Rozdíly jsou zhruba následující:
 
 - Oba zápisy v `repeat()` přidávají nové neviditelné buňky mřížky, tak aby se vyplnil volný prostor.
 - `auto-fill` se snaží vyplnit prostor prázdnými buňkami.
-- `auto-fit` při vykreslování nové prázdné buňky eliminuje a tedy umožní vyplnit prostor roztažením (napasováním, proto „fit“) velikosti stávajících buněk.
+- `auto-fit` při vykreslování nové prázdné buňky eliminuje a tedy umožní vyplnit prostor roztažením (napasováním, proto „fit“) velikosti stávajících buněk mřížky.
 
 Myslím si, že obě klíčová slova dává smysl použít jen s [funkcí `minmax()`](css-minmax.md), aby se buňky mohly roztahovat od minima po maximum velikosti.
 
@@ -92,7 +92,7 @@ CodePen: [cdpn.io/e/NWKzjoV](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
 
 ### Příklad s auto-fit {#auto-fit}
 
-`auto-fit` bude při roztahování dostupného prostoru prioritizovat roztahování stávajících buněk. Ve skutečnosti tedy buňky přidává také, ale při výpočtu šířek ty neviditelné eliminuje.
+`auto-fit` bude při roztahování dostupného prostoru prioritizovat roztahování stávajících buněk mřížky. Ve skutečnosti tedy buňky přidává také, ale při výpočtu šířek ty neviditelné eliminuje.
 
 ```css
 .container {

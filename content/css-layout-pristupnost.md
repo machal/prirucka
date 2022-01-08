@@ -43,7 +43,7 @@ Problém se týká všech CSS vlastností, které mohou v nových systémech roz
 
 - [Vlastnost `order`](css-order.md), která změní způsob automatického umisťování položek.
 - [Deklarace `grid-auto-flow:dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak než jsou uvedeny v DOM.
-- [Vlastnost `grid-area`](css-grid-area.md), která umístí položek do konkrétního místa mřížky a opět nerespektuje pořadí ve zdroji.
+- [Vlastnost `grid-area`](css-grid-area.md), která umístí položky do konkrétního místa mřížky a opět nemusí respektovat pořadí ve zdroji.
 
 Možností, jak přeskupit obsah je samozřejmě více a vztáhnout to můžeme i na starý dobrý `float`, takže tento text berte jako obecné varování.
 

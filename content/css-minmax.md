@@ -168,7 +168,7 @@ Považuji zde za vhodné připomenout, že naše příklady jsou hodně zjednodu
 
 Jak se ovšem bude `minmax()` chovat v případě použití u sloupečků (nebo řádků), kde je buněk více? U maxima vezme vždy tu nejmenší velikost z obsahu všech buněk, u minima pak největší.
 
-Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených buněk. Tak, aby se žádný z prvků mřížky nedeformoval pod své obsahové minimum nebo nad své maximum. To je fér, ne?
+Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených buněk mřížky. Tak, aby se žádný z prvků mřížky nedeformoval pod své obsahové minimum nebo nad své maximum. To je fér, ne?
 
 ## Klíčové slovo nebo funkce fit-content() {#fit-content}
 

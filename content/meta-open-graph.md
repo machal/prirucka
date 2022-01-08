@@ -234,7 +234,7 @@ Podmínky pro náhledové obrázky se liší podle sociálních sítí, ale je m
 
 ### Facebook
 
-- Ideální poměr stran je 1,91:1.
+- Ideální poměr stran je 1,91 : 1.
 - Minimálně 600 ⨉ 315, ideálně ale zhruba 1200 ⨉ 630 pixelů a širší.
 - Maximálně 8 MB.
 
@@ -242,7 +242,7 @@ Více v [dokumentaci Facebooku](https://developers.facebook.com/docs/sharing/web
 
 ### Twitter
 
-- Poměr stran 2:1.
+- Poměr stran 2 : 1.
 - Minimálně 300 ⨉ 157.
 - Maximálně 4096 ⨉ 4096, 5 MB.
 

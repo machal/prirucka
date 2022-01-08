@@ -4,7 +4,7 @@ Doba je rychlá a inovace zvýšily tempo řešení situací, které lidem dří
 
 Vezměme třeba seznamování. Když jsem byl v pubertě, bylo potřeba obléct sváteční kostkovanou košili, co nejpodobnější té, jakou nosil Kurt Cobain, vyrazit na vesnickou zábavu, investovat do vstupného, investovat do tekutin, které zajistí uvolněnost a zábavnost, předvést se v tanci na 2 Unlimited a celou dobu hlídat, až budou hrát Nothing Else Matters, v tu chvíli sprintovat pro dívku snů… Bylo to složité a v mém případě s nejistým výsledkem.
 
-Dnešní seznamovací aplikace a weby jsou úplně jinde, člověk párkrát klikne a je to. Je to rychlé.
+Dnešní seznamovací aplikace jako Tinder jsou s efektivitou úplně jinde, člověk párkrát klikne a je to.
 
 V první kapitole s tématem potřebujeme nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem, třemi hlavními hrdiny téhle knížky.
 
@@ -31,13 +31,15 @@ Tak a teď máte nové kamarády, gratuluji vám. Dejte jim odběr.
 
 V knížce asi zjistíte, že první pohled někdy klame a to, co vám tady tvrdím, nemusí být pravda vždycky. Od toho jsou ale knížky. Aby vás zbavili povrchního pohledu a ukázaly všechny „ale“.
 
-## Čtvrtý vzadu
+## Box Align, čtvrtý vzadu
 
 Ta paralela s Tinderem samozřejmě trošku skřípe, ale pojďme u ní ještě chvilku zůstat.
 
 Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (on) a její nejlepší kámoška (kámoš). Pro jistotu.
 
-Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct [Box Align](css-box-alignment.md). Bez zarovnání boxů a vlastností jako je `justify-items` nebo `align-self` se systémy layoutu, a hlavně flexbox a grid, neobejdou a na rande samy nevyrazí.
+Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct Box Align.
+
+[CSS Box Alignment](css-box-alignment.md) je specifikace, která obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností jako je `justify-items` nebo `align-self` se systémy layoutu, a hlavně flexbox a grid, neobejdou a na rande samy nevyrazí.
 
 ## Pojďme si je otestovat
 
@@ -63,14 +65,14 @@ Cílem je dosáhnout rozvržení, kde na jedné straně je obrázek, který zab�
 Začneme asi s HTML, což?
 
 ```html
-<div class="box">
-  <p class="box__image">
-    <img src="obrazek.png" alt="…">
-  </p>
-  <p class="box__text">
-    Lorem ipsum…
-  </p>
-</div>
+  <figure class="figure">
+    <p class="figure__image">
+      <img src="image.jpg" alt="…" width="300" height="300">
+    </p>
+    <figcaption class="figure__figcaption">
+      Lorem ipsum…
+    </figcaption>
+  </figure>
 ```
 
 Na tom asi nic složitého není, takže pojďme pokračovat.
@@ -78,12 +80,12 @@ Na tom asi nic složitého není, takže pojďme pokračovat.
 Používáme zde nejvděčnějšího parťáka z naší trojice, flexbox, a proto nebude složité vytvořit rozvržení:
 
 ```css
-.box {
+.figure {
   display: flex;
 }
 ```
 
-Už jen tímto zápisem dosáhneme toho, aby se potomci (prvky `box__image` a `box__text`) zarovnali vedle sebe.
+Už jen tímto zápisem dosáhneme toho, aby se potomci (prvky `figure__image` a `figure__figcaption`) zarovnali vedle sebe.
 
 <div class="ebook-only" markdown="1">
 
@@ -91,23 +93,25 @@ Pokud je tu někdo, kdo by potřeboval vysvětlit vlastnost `display` v CSS, nec
 
 </div>
 
-Dále víme, že mezera mezi prvky v rozvržení bude zabírat `1rem`. Toho dosáhneme pomocí [vlastnosti `gap`](css-gap.md), která v layoutech umí jednoduše udělat mezery:
+Dále víme, že mezera mezi prvky v rozvržení bude zabírat `1rem`. Proč zrovna `rem`? O jednotkách něco napíšu ke konci této podkapitoly.
+
+Mezery dosáhneme pomocí [vlastnosti `gap`](css-gap.md), která v layoutech umí jednoduše udělat mezery:
 
 ```css
-.box {
+.figure {
   display: flex;
-  gap: 1rem;
+  gap: 1rem;  
 }
 ```
 
 Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovně:
 
 ```css
-.box__image {
+.figure__image {
   flex: 1;
 }
 
-.box__text {
+.figure__figcaption {
   flex: 2;
 }
 ```
@@ -121,17 +125,17 @@ Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovn
 </figcaption>
 </figure>
 
-Vytvořili jsme rozvržení, kde prvek `box__image` bude zabírat jednu třetinu šířky (`flex:1`), přičemž přepíše výchozí šířku obrázku, a prvek `box__text` vyplní zbylé dvě třetiny (`flex:2`).
+Vytvořili jsme rozvržení, kde prvek `figure__image` bude zabírat jednu třetinu šířky (`flex:1`), a prvek `figure__figcaption` vyplní zbylé dvě třetiny (`flex:2`).
 
 Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 
-Zájemce ještě posílám na zdrojové kódy na službě CodePen, což ostatně v knížce budu dělat často.
+Zájemce nyní pošlu na zdrojové kódy na službě CodePen, což ostatně v knížce budu dělat často.
 
 CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
 ## Grid: příklad s kartou produktu
 
-V obrázku se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2:1. Mezery mezi prvky jsou opět v šířce `1rem`.
+V obrázku se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2 : 1. Mezery mezi prvky jsou opět v šířce `1rem`.
 
 Ano, i toto rozlišení bychom mohli udělat flexboxem, respektive dvěma flexboxy. Jenže by to nebylo tak elegantní jako řešení s pomocí gridu.
 
@@ -257,5 +261,18 @@ Ten vícesloupcový layout vypadá skvěle, viďte? Než jej ale pozvete na druh
 I zde je pro zájemce k dispozici ukázka na službě CodePen.
 
 CodePen: [cdpn.io/e/JjWXgNL](https://codepen.io/machal/pen/JjWXgNL?editors=1100)
+
+## Poznámka k jednotkám
+
+Už v první části knížky jsem použil několik jednotek a myslím, že by bylo vhodné je trošku předstvit, spolu s jejich kolegyněmi, které budu používat nejčastěji použiji:
+
+- `rem` (root em) je velikost písma v dokumentu. Pokud nenastavíme jinak, jde většinou o `16px`. Používám všude, kde se hodí vycházet z velikosti písma.
+- `em` (em) je velikost písma v daném prvku. Na rozdíl od `rem` ji může zvětšit kaskáda v CSS, například uvnitř nadpisů. Používám pro lokální změnu velikosti písma nebo pro Media Queries.
+- `%` (procenta). Používám pro změnu výchozí velikosti v dokumentu a občas pro šířky či výšky v layoutu.
+- `px` (CSS pixely). Používám hlavně u dekorací jako je šířka rámečku.
+
+Velice často zde také budu používat bezjednotkového hodnoty, které určují podíl prvku na rozměrech celku. Jde o čísla ve vlastnosti `flex`, zde již použité, hodnoty s jednotkou `fr` ve gridu. Ale nebudeme předbíhat.
+
+Více o používání jednotek v CSS píšu [v poslední, přílohové kapitole](jednotky.md).
 
 Prostřednictvím Tinderu a prvního rande jsme se tedy seznámili se třemi hlavními protagonisty knížky a jejich nejlepším kamarádem. Ještě se nám ale bude hodit lépe poznat dva nejžhavější kandidáty.

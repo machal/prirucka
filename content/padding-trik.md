@@ -48,7 +48,7 @@ Teď si to samozřejmě vysvětlíme detailně. Nejprve k rodičovskému prvku `
 
 - `position:relative` vytvoří nový omezující blok, ve kterém lze absolutně pozicovat.
 - `height:0` výšku nulujeme proto, abychom ji mohli nastavit pomocí vnitřních okrajů prvku.
-- `padding-bottom:75%` určí poměr stran rodičovského bloku. Poměr stran je zde 4:3. Výpočet pak vypadá jako `3 / 4 * 100`. Vyjde `75%`.
+- `padding-bottom:75%` určí poměr stran rodičovského bloku. Poměr stran je zde 4 : 3. Výpočet pak vypadá jako `3 / 4 * 100`. Vyjde `75%`.
 
 A co vnitřní prvek `aspect-ratio-box__in`?
 
@@ -62,11 +62,11 @@ A co vnitřní prvek `aspect-ratio-box__in`?
 
 → *Související: [CSS aspect-ratio](css-aspect-ratio.md)*
 
-Možná jste si všimli, že v příkladu máme obrázek o rozměrech 320 × 180 pixelů, což naznačuje poměr stran 16:9, nikoliv 4:3. Vytvoříme si tedy ještě jednu modifikační třídu (podle BEM):
+Možná jste si všimli, že v příkladu máme obrázek o rozměrech 320 × 180 pixelů, což naznačuje poměr stran 16 : 9, nikoliv 4 : 3. Vytvoříme si tedy ještě jednu modifikační třídu (podle BEM):
 
 ```css
 .aspect-ratio-box--16-9 {
-  padding-bottom: 56.25%; /* 16:9, tedy 9 / 16 * 100 */
+  padding-bottom: 56.25%; /* 16 : 9, tedy 9 / 16 * 100 */
 }
 ```
 

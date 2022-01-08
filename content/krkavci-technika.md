@@ -28,7 +28,7 @@ Havraní technika je založená na matematických funkcích a dalších novinká
 
 - [Funkce `calc()`](css3-calc.md) umožní vložit namísto hodnoty matematický výraz.
 - [Funkce `min()` a `max()`](css-min-max-clamp.md) vracejí nejnižší, respektive nejvyšší hodnotu ze všech uvedených v argumentech.
-- [Funkce `clamp()`](css-min-max-clamp.md) je kombinací `min()` a `max()` pro tříčíselné hodnoty.
+- [Funkce `clamp()`](css-min-max-clamp.md) je kombinací `min()` a `max()` pro třičíselné hodnoty.
 - [Proměnné v CSS](css-promenne.md) jako `--color:blue` zase umožňují udržovat a měnit hodnoty výpočtu, podobně jako v programovacích jazycích.
 
 <div class="ebook-only" markdown="1">

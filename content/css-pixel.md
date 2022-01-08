@@ -20,7 +20,7 @@ Autorům webů totiž prohlížeče hardwarové rozlišení přepočítají do t
 
 V případě iPhone 5S to bude polovina, tedy 320 × 568 pixelů. To už je docela normální „mobilní“ rozlišení, že?
 
-Retina displej na iPhone má tedy poměr mezi CSS a hardwarovým rozlišením 1:2. Ale pozor, když v CSS vykreslíme objekt velký 1 pixel, bude zabírat 4 hardwarové pixely. Půjde o mřížku o velikosti 2 × 2 pixely, odtud ten poměr 1:2.
+Retina displej na iPhone má tedy poměr mezi CSS a hardwarovým rozlišením 1 : 2. Ale pozor, když v CSS vykreslíme objekt velký 1 pixel, bude zabírat 4 hardwarové pixely. Půjde o mřížku o velikosti 2 × 2 pixely, odtud ten poměr 1 : 2.
 
 Když tedy do stránky vložíme obrázek…
 
@@ -68,7 +68,7 @@ Poměr mezi hardwarovým a CSS rozlišením udává vlastnost `resolution` (dř�
   (min-resolution: 2dppx) { … }
 ```
 
-Jenže tady se děje další častá chyba webařů. Jejich responzivní weby počítají jen s poměrem 1:2, technicky řečeno `resolution: 2dppx`.
+Jenže tady se děje další častá chyba webařů. Jejich responzivní weby počítají jen s poměrem 1 : 2, technicky řečeno `resolution: 2dppx`.
 
 Existují zařízení s poměry 1,5; 1,325; nebo třeba 2,37. A ne vždy na nich obrázek ve dvojnásobném rozlišení vypadá uspokojivě, zejména pokud jde o ikonku.
 

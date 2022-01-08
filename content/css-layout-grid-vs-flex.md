@@ -36,20 +36,20 @@ Jakmile je váš layout víceřádkový, typu mřížka, a nevystačíte si s po
 </figcaption>
 </figure>
 
-### Flexbox je pro layout z obsahu, grid více z mřížky
+### U flexboxu kraluje obsah, u gridu zase nastavený layout
 
-Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit autorsky definované mřížce.
+Grid je zaměřený více na layout, kdy se obsah musí vždy přizpůsobit definované mřížce. Layout je král a obsah, tedy text obrázky a tak dál, se mu musí přizpůsobit. Této filozofii se v odborné hantýrce říká „grid in“, takže „z mřížky směrem dovnitř“.
 
-Flexbox je výborný pro „content out“ situace, kdy se layout musí přizpůsobit obsahu a vy nechcete nastavovat parametry layoutu.
+Flexbox je naopak navržený pro situace, kdy se layout musí přizpůsobit obsahu. Výhodou je, že často nemusíte nastavovat parametry layoutu a díky rozměrům obsahu to nějak dopadne. Tento přístup k vykreslování layoutu naleznete pod pojmem „content out“, tedy „z obsahu směrem ven“.
 
 Vyplývá to trochu i z jejich podstaty na úrovni kódu:
 
 * Když napíšete `display:flexbox`, potomci se poslušně seskupí do vodorovného rozvržení. Pro definici layoutu použijí prvky své vlastní rozměry.
 * Po napsání `display:grid` se nestane vůbec nic, dokud nedefinujete rozvržení pomocí vlastností řady `grid-template`. Tady vládne autor kódu a jeho mřížka, prvky stránky se musí přizpůsobit.
 
-Ne, že by mřížka neuměla layout z obsahu, ale musíte si to nastavit. V případě flexboxu leccos pořeší automatika.
-
 Pokud tedy chcete umístit pár prvků vedle sebe a není nutné jim definovat rozměry, volte flexbox. Pokud položkám flexboxu složitě nastavujete pravidla chování rozměrů, pak asi potřebujete grid.
+
+Samozřejmě, že i z tohoto pravidla existuje řada výjimek. Mřížka například umí layout tvořený z obsahu, ale musíte si to nastavit.
 
 ## Flexbox je více pro layout komponent, grid pro layout celé stránky
 

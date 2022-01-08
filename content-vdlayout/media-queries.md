@@ -93,7 +93,7 @@ Můžeme detekovat poměr stran viewportu:
 
 ```css
 @media (aspect-ratio: 16/9) {
-  /* Aplikuje se v poměru stran 16:9 */
+  /* Aplikuje se v poměru stran 16 : 9 */
 }
 ```
 
@@ -309,6 +309,6 @@ Media Queries jsou totiž v zaměřené na parametry celé stránky, respektive 
 
 Pro rozvržení celé stránky jsou skvělé. Jenže my se zde snažíme vymyslet layout komponenty, tedy malého výseku stránky.
 
-Počítání okrajů mezi samotnou komponentou a stránkou je jen ta menší část problému. Představte si, že byste byli nuceni správným breakpoint vymýšlet v situaci, kdy objekt bude součástí většího layoutu a ve stránce se bude opakovat. Někdy se bude na stránce vyskytovat sám, někdy budou dva vedle sebe, někdy třeba tři…
+Počítání okrajů mezi samotnou komponentou a stránkou je jen ta menší část problému. Představte si, že byste byli nuceni správný breakpoint vymýšlet v situaci, kdy objekt bude součástí většího layoutu a ve stránce se bude opakovat. Někdy se bude na stránce vyskytovat sám, někdy budou dva vedle sebe, někdy třeba tři…
 
-Už chápete limity věci zvané Media Queries?
+Naštěstí se blýská na lepší časy a kromě dotazů na šířku stránky bychom mohli brzy v prohlížečích mít také dotazy na šířku konkrétní komponenty.

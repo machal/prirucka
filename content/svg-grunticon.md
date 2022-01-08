@@ -115,9 +115,9 @@ V CSS pak použijeme [známým trik](http://kratce.vzhurudolu.cz/post/4461719947
 .icon-container {
   display: block;
   position: relative;
-  width: 100%;	
+  width: 100%;
   height: 0;
-  padding-bottom: 56.25%;  /* 16:9 */
+  padding-bottom: 56.25%;  /* 16 : 9 */
   /* Zástupná barva než se do boxíku načtou ikony: */
   background-color: #ddd;
 }

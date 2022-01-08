@@ -36,7 +36,7 @@ V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v akt
 
 Pokud opravdu nejíte konzervy v krytu a neotevřeli jste knížku právě na této stránce, z dřívějších textů víte, že pro layout typu „mřížka“ by se daleko více hodila… No… Mřížka. Překvapivě.
 
-Bootstrap zatím CSS grid nepodporuje, hlavně kvůli [kompatibilitě s Internet Explorerem](msie.md), ale to se v další verzi změní. Můžete však mít i jiné důvody nepoužít pro rozvržení nejpopulárnější webové framework.
+Bootstrap zatím CSS grid nepodporuje, hlavně kvůli [kompatibilitě s Internet Explorerem](msie.md), ale to se v další verzi změní. Můžete však mít i jiné důvody nepoužít pro rozvržení nejpopulárnější webové frameworky.
 
 Prvním problémem může být zbytečných 20-30 kilobajtů CSS, které musíte v podobě Bootstrapu kvůli layoutu stahovat. Jestliže máte přísné požadavky na rychlost načítání stránky, je to určitě nemalá nevýhoda.
 

@@ -99,7 +99,7 @@ CSS:
 .aspect-ratio-box {
   position: relative;
   height: 0;
-  padding-bottom: 75%; /* Poměr stran 4:3 */
+  padding-bottom: 75%; /* Poměr stran 4 : 3 */
 }
 
 .aspect-ratio-box__in {
@@ -109,7 +109,7 @@ CSS:
 }
 ```
 
-Rezervování prostoru o poměru stran 4:3 zde zajišťuje deklarace `padding-bottom:75%.`
+Rezervování prostoru o poměru stran 4 : 3 zde zajišťuje deklarace `padding-bottom:75%.`
 
 CodePen: [cdpn.io/e/OJJZOGZ](https://codepen.io/machal/pen/OJJZOGZ?editors=1100)
 
