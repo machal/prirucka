@@ -29,7 +29,7 @@ Většinou `flex-basis` určuje výchozí šířku položky, tedy jako `width`. 
 Možné hodnoty:
 
 - `auto` (výchozí)  
-Přebírá rozměr podle `width` a `height`.  Pokud ten je také `auto`, pak platí, že rozměr určuje obsah, tedy se použije dále uvedená hodnota `content`. Distribuce volného místa pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md) se pak bude týkat jen místa, které položky okupují nad rámec svého obsahu – „relativní model“ pružnosti rozebírám také níže.
+Přebírá rozměr podle `width` a `height`.  Pokud ten je také `auto`, pak platí, že rozměr určuje obsah, tedy se použije dále uvedená hodnota `content`. Distribuce volného místa pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md) se pak bude týkat jen místa, které položky obsadily nad rámec svého obsahu – „relativní model“ pružnosti rozebírám také níže.
 - `content`  
 Velikost na základě obsahu položky. Toto klíčové slovo ještě není dobře podporováno. V mých CodePenech níže jsou vidět rozdíly mezi `content` a `auto` jen ve Firefoxu. Podobného efektu jako s  `flex-basis:content` dosáhnete nastavením `flex-basis:auto` a vlastností `width`/`height` také na hodnotu `auto`.
 - `0`  

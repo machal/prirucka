@@ -81,11 +81,21 @@ Následuje několik užitečných vysvětlujících odrážek:
 
 CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
 
-## Příklad: ve flexboxu to nefunguje
+## Příklad: proč to ve flexboxu nefunguje
 
 V dalším CodePenu je vidět, že `justify-self` ve flexboxu opravu nefunguje. Pokouším se tam stylovat poslední položku pomocí `justify-self:end`. A nic.
 
 CodePen: [cdpn.io/e/MWJaVyZ](https://codepen.io/machal/pen/MWJaVyZ?editors=1100)
+
+Zde je potřeba vysvětlit proč:
+
+Prvním důvodem je, že ve flexboxu nejsou vlastnosti `justify-self` a tím pádem ani [`justify-items`](css-justify-items.md) potřeba – můžete totiž úplně v pohodě použít `margin` a jeho hodnotu `auto`.
+
+Druhý důvodem je to, že u flexboxu se, na rozdíl od gridu, počítá s přítomností více položek na hlavní ose. Pravděpodobně nechcete dělat flexboxové rozvržení s jednou položkou. Nebo chcete, ale pro tohle flexbox vymyšlený nebyl. Více položek, tam je pro zarovnání dobrá [vlastnost `justify-content`](css-justify-content.md).
+
+Takže mám jednu dobrou a jednu špatnou vlastnost. Pro zarovnání položek na hlavní ose ve flexboxu používejte `margin` nebo `justify-content`. A ta špatná? Budete si to muset zapamatovat.
+
+Je o tom krásná diskuze „In CSS Flexbox, why are there no "justify-items" and "justify-self" properties?“ na Stack Overflow. [stackoverflow.com/a/32569434/889682](https://stackoverflow.com/a/32569434/889682)
 
 ## Možné hodnoty zarovnání
 

@@ -2,7 +2,7 @@
 
 V diskuzích pokročilejších vývojářů a vývojářek se občas objevuje téma „performance“ CSS gridu a flexboxu. Mají tím na mysli rychlost vykreslování.
 
-Poměrně dost se to v komunitě řešilo, když byly tyhle systémy pro rozvržení stránek a komponent nové.Ale je to téma ještě dneska? Neřekl bych.
+Poměrně dost se to v komunitě řešilo, když byly tyhle systémy pro rozvržení stránek a komponent nové. Ale je to téma ještě dneska? Neřekl bych.
 
 Je zde však jedna věc, na kterou byste si měli dát pozor – použití flexboxu pro rozvržení celé stránky.
 

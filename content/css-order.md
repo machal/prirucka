@@ -64,7 +64,7 @@ Do obrázku jsem nakreslil nejen řešení, ale rovnou i hned dvě další možn
 <figure>
 <img src="../dist/images/original/css-order.png" width="1600" height="900" alt="CSS vlastnost order">
 <figcaption markdown="1">
-*Číselné hodnoty vlastnosti `order` vytvářejí nové řazené. Kladná za stávajícími položkami, záporná před nimi.*
+*Číselné hodnoty vlastnosti `order` vytvářejí nové řazení. Kladná za stávajícími položkami, záporná před nimi.*
 </figcaption>
 </figure>
 

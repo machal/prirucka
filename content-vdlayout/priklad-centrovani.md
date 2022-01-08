@@ -9,7 +9,7 @@ Cílem je to, co vidíte na obrázku. Boxík, který ve viditelné ploše obrazo
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-centrovani.png" width="1600" height="900" alt="Centrování boxu na výšku i šířku">
 <figcaption markdown="1">
-*Centruj centruj, vykrúcaj!*
+*Centruj, centruj, vykrúcaj!*
 </figcaption>
 </figure>
 
@@ -87,9 +87,9 @@ My však chceme zarovnávat doprostřed:
 
 Povedlo se nám zařídit centrování ve svislém směru. Teď ještě vodorovně, že ano… Podívejte se do taháku na obrázku. Odtamtud asi zjistíte, že v horizontálním směru (`justify-`) potřebujete zarovnávat položky (`-items`).
 
-Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou celou vlastnost není možné v rámci pružného layoutu použít.
+Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou vlastnost `justify-items` a tedy i [`justify-self`](css-justify-self.md) je ve specifikaci i prohlížečích v tuto chvíli pro použití ve flexboxu zapovězena. Pokud vás to zajímá více, mrkněte se na podkapitoly o těchto vlastnostech v příručkách dále.
 
-Jaké máme možnosti? První je spokojit se zde spokojit se starým dobrým zarovnáním pomocí `margin:auto`:
+Tento typ zarovnávání se ve flexboxu totiž dělá starým dobrým `margin:auto`:
 
 ```css
 .container {

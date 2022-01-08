@@ -69,11 +69,11 @@ Vlastnost `justify-items` zde tedy zarovnává položky na hlavní (vodorovné) 
 
 CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
-## Trochu teorie: nastavení `justify-self` a proč ve flexboxu vlastnost nefunguje
+## Trochu teorie: nastavení `justify-self`. A pozor, ve flexboxu vlastnost nefunguje
 
 Vlastnost `justify-items` vlastně nedělá nic jiného než, že nastavuje výchozí hodnotu [vlastnosti `justify-self`](css-justify-self.md) pro všechny položky uvnitř kontejneru.
 
-Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována.
+Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována. Pro vysvětlení jděte na text o [`justify-self`](css-justify-self.md).
 
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, ale `justify-items` zde nerozchodíme. V další ukázce je vidět, že ve flexboxovém layoutu je deklarace `justify-items:end` ignorována.
 

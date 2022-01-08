@@ -18,11 +18,11 @@ Zadání je ale složitější – tentokrát budeme velmi intenzivně řešit r
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-slevomat-responsive.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - responzivní pohledy">
 <figcaption markdown="1">
-*Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wellness nebude, spíše galeje.*
+*Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wellness nebude, spíše galeje. (Že chybí třetí fotka na tabletu? To není chyba, ale vlastnost.)*
 </figcaption>
 </figure>
 
-Chcete si to zkusit sami? „Forkněte“ CodePen a vzhůru do toho. 
+Chcete si to zkusit sami? „Forkněte“ CodePen a vzhůru do toho.
 
 CodePen: [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
 
@@ -71,7 +71,7 @@ V CSS kódu to bude vypadat následovně:
 }
 ```
 
-Jak už víte, toto samo o sobě ještě nic nezařídí. Snad jen zmatenost prohlížeče, protože ten sice ví, kam chcete který prvek umístit, ale oblasti ani layout zatím nezná.
+Jak už víte, toto samo o sobě ještě nic nezařídí. Prohlížeč sice ví, kam chcete který prvek umístit, ale oblasti ani layout zatím nezná.
 
 ## Breakpointy
 

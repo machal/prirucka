@@ -35,8 +35,8 @@ grid-column: <grid-column-start> / <grid-column-end>;
 
 | Možnost                       | Ukázka hodnoty             |
 |-------------------------------|----------------------------|
-| Čísla stop                    | `1 / 2`                    |
-| Jména stop                    | `first-line / second-line` |
+| Čísla linek                    | `1 / 2`                    |
+| Jména linek                    | `first-line / second-line` |
 | Rozsah                        | `1 / span 2`               |
 | Jedno číslo                   | `3`                        |
 | Záporná čísla                 | `-1 / -3`                  |
@@ -44,7 +44,7 @@ grid-column: <grid-column-start> / <grid-column-end>;
 
 </div>
 
-### Čísla stop {#cisla-stop}
+### Čísla linek {#cisla}
 
 Tady je to jednoduché. Potřebujete dvě hodnoty – pro začátek a konec pozice v mřížce.
 
@@ -85,7 +85,7 @@ Všimněte si, že řádky končíme na čísle 4, i když je máme jen tři. Je
 
 CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
-### Jména stop {#jmena-stop}
+### Jména linek {#jmena}
 
 Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše uvedeným, jen s pojmenovanými linkami:
 
@@ -130,8 +130,8 @@ Podívejme se teď na tentýž příklad jako v první ukázce, jen si jeho pozi
 
 Vysvětlíme:
 
-- `span 1` u `grid-column` znamená „zabírá jeden sloupec“. Tady je to zbytečné, fungovalo by to i bez tého hodnoty.
-- `span 1` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
+- Zápis `span 1` u `grid-column` znamená „zabírá jeden sloupec“. Tady je to zbytečné, fungovalo by to i bez tého hodnoty.
+- Zápis `span 1` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
 
 CodePen: [cdpn.io/e/LwWxWy](https://codepen.io/machal/pen/LwWxWy?editors=1100)
 

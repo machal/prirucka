@@ -63,7 +63,7 @@ Asi je evidentní, že pomocí `gap:0.5rem` přidáváme mezery mezi jednotlivé
 
 Hodnota `baseline` je velmi zajímavá – umožní nám zarovnávat prvky na _účaří_. Jde o typografický pojem, pod kterým si můžete představit neviditelnou linku, na kterou se zapisují jednotlivé znaky, asi jako jste to dělali ve škole do sešitu. Jinak se jí ještě říká _základní dotažnice_, případně anglicky _baseline_.
 
-Typografické prvky, jako jsou také formulářové prvky, je pro lepší čitelnost lepší zarovnat právě na účaří, nikoliv třeba doprostřed.
+Typografické elementy, jako je text a formulářové prvky typu vstupní pole nebo tlačítka, je pro lepší čitelnost lepší zarovnat právě na účaří, nikoliv třeba doprostřed.
 
 ### Menší displeje
 

@@ -16,11 +16,11 @@ Pozicování prvků vlastností `position` a hodnotami `absolute`, `relative`, `
 
 ## 4. S `visibility:collapse` flexbox pracuje jako se řádky tabulky
 
-`visibility:collapse` funguje u flex položek stejně jako u `display: table-row` nebo `table-column` elementů. Element okupuje místo a v DOMu se s ním počítá, jen není vidět.
+`visibility:collapse` funguje u flex položek stejně jako u `display: table-row` nebo `table-column` elementů. Element drží místo a v DOMu se s ním počítá, jen není vidět.
 
 ## 5. Směr hlavní osy flexboxu řídí jazyk rozhraní
 
-Směr hlavní osy flex kontejneru vychází vždy z vlastnosti `writing-mode`. Pokud bychom tedy flexboxem dělali layout stránky v japonštině, budou všechny hodnoty zmíněné ve vlastnostech jako [`flex-direction`](css-flex-direction.md) naopak.
+Směr hlavní osy flex kontejneru vychází vždy z vlastnosti `writing-mode`. Pokud bychom tedy flexboxem dělali layout stránky v arabštině, budou hodnoty zmíněné ve vlastnostech jako [`flex-direction`](css-flex-direction.md) naopak.
 
 <div class="ebook-only" markdown="1">
 

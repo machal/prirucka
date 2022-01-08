@@ -160,7 +160,9 @@ Ztratíte ale přehled o počtu shlédnutých stránek na jednu návštěvu a v�
 
 Zůstane vám např. ale přehled nejnavštěvovanějších stránek, hrubý přehled o návštěvnosti a případně i konverzích.
 
-Možnosti, jak si ponechat GA a zároveň nemít cookie lištu, tedy plnit zákon, se objevují. Nemám je vyzkoušené, takže bez záruky.
+⚠️ _Aktualizace k 4. lednu 2022: Pozor, řešení sice na papíře vypadá snadno, ale v praxi to úplně zničí měření. Aktuálně hledám řešení - viz [Twitter](https://twitter.com/machal/status/1478337956482260995) nebo [Facebook](https://www.facebook.com/groups/1394319880800285/posts/3163539267211662/)._
+
+Další možnosti, jak si ponechat GA a zároveň nemít cookie lištu, tedy plnit zákon, se objevují. Nemám je vyzkoušené, takže bez záruky.
 
 První příklad je naprogramování vlastní vrstvy událostí na Google Analytics:
 

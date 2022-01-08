@@ -48,7 +48,7 @@ Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: co
 
 ![vlastnost flex-basis](../dist/images/original/flexbox-flex-basis.jpg)
 
-* `auto` (výchozí) – rozměr určuje obsah podobně jako u `width: auto`. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se pak bude týkat jen místa, které položky okupují nad rámec svého obsahu – tzv. relativní model pružnosti.
+* `auto` (výchozí) – rozměr určuje obsah podobně jako u `width: auto`. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se pak bude týkat jen místa, které položky zabírají nad rámec svého obsahu – tzv. relativní model pružnosti.
 * `0` – nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se bude týkat celé šířky položky – absolutní model pružnosti.
 * Jakýkoliv CSS rozměr, např. `100px`, `15em` nebo `50%`.
 

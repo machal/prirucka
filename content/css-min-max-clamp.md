@@ -120,7 +120,7 @@ Jak už jste jistě pochopili, kód výše je stejný jako bychom napsali násle
 
 Konstrukce s `min-width` a `max-width` v CSS máme a mnozí známe už od pravěkých dob. Tak proč zavádět nový zápis v podobě funkcí `min()`, `max()` a `clamp()`?
 
-Za prvé je nový zápis stručnější a možná přehlednější. Podstatnější je ale druhý důvod - je _univerzální_. Jeho použití není limitované na délkové vlastnosti `width` a `height`.
+Za prvé je nový zápis stručnější a možná přehlednější, nejdůležitější je ale jeho _univerzálnost_. Použití není limitované na délkové vlastnosti `width` a `height`.
 
 To je tak zajímavé, že to musíme rozebrat. Jen chvíli počkejte.
 

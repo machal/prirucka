@@ -73,7 +73,7 @@ CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
 
 ## Podíl na zbytku {#podil}
 
-Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou neokupují prvky s rozměry nastavenými běžnými [jednotkami délky](jednotky.md), jako jsou `%`, `px`, `em`, `rem` a další:
+Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou nezabírají prvky s rozměry nastavenými běžnými [jednotkami délky](jednotky.md), jako jsou `%`, `px`, `em`, `rem` a další:
 
 <p><img src="../dist/images/original/vdlayout/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu"></p>
 

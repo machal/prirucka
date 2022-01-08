@@ -51,7 +51,7 @@ CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?
 
 ![Hodnoty vlastnosti align-items](../dist/images/original/vdlayout/css-align-items-hodnoty.png)
 
-Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
+Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 
 ### Základní
 

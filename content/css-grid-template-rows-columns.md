@@ -114,7 +114,7 @@ Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-colu
 |------------------------------------|------------------------------------------|
 | Bez explicitního gridu    | `none`                                   |
 | Kombinace jednotek    | `150px auto 1fr 1fr`                     |
-| Pojmenovávání stop | `[first] 150px [second] 1fr [end]` |
+| Pojmenovávání linek | `[first] 150px [second] 1fr [end]` |
 | Opakování            | `repeat(12, 1fr)`                        |
 | Masonry                | `masonry`                                |
 
@@ -154,13 +154,13 @@ CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
 
 `1fr` je v chování velice podobné číslu `1`, které používáte ve [vlastnosti `flex`](css-flex.md) u flexboxu.
 
-### Pojmenovávání stop {#pojmenovane-stopy}
+### Pojmenovávání linek {#pojmenovane}
 
-Pojmenovávání stop se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu jako je [`grid-column`, `grid-row`](css-grid-row-column.md) nebo [`grid-area`](css-grid-area.md).
+Pojmenovávání linek se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu jako je [`grid-column`, `grid-row`](css-grid-row-column.md) nebo [`grid-area`](css-grid-area.md).
 
-Každý sloupec nebo řádka je v gridu definovaná dvěma stopami.
+Každý sloupec nebo řádka je v gridu definovaná dvěma linkami.
 
-Sloupce a řádky mřížky je možné si představit jako sloupce a řádky v tabulce. Stopy jsou rámečky kolem buněk tabulky.
+Sloupce a řádky mřížky je možné si představit jako sloupce a řádky v tabulce. Linky jsou rámečky kolem buněk tabulky.
 
 ```css
 .container {
@@ -172,7 +172,7 @@ Sloupce a řádky mřížky je možné si představit jako sloupce a řádky v t
 
 V ukázce je tedy první položka gridu umístěná vodorovně na pozici mezi `first-col` a `second-col`. Svisle pak mezi `first-row` a `second-row`.
 
-<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-tracks.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - definování stop"></p>
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-tracks.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - definování linek"></p>
 
 CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
 
@@ -213,7 +213,7 @@ Toto ale na konci léta roku 2021 zatím podporuje jen prohlížeč Firefox v p�
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Explorer 11 vlastnosti `grid-template-rows`/`-columns` nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md). 
+Internet Explorer 11 vlastnosti `grid-template-rows`/`-columns` nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md).
 
 Tento stařičký, ale občas ještě [používaný prohlížeč](msie.md), také nezvládá automatické umísťování položek do mřížky. I to je možné alespoň částečně vyřešit pomocí Autoprefixeru.
 

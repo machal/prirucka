@@ -89,7 +89,7 @@ Pojmenované oblasti souvisí s pojmenovanými linkami, které znáte z vlastnos
 
 Například definování oblasti pojmenované `head`, automaticky vytvoří dvě linky – `head-start` a `head-end`.
 
-A víte co je ještě lepší? Definováním stop `head-start` a `head-end` ve vlastnostech [grid-template-rows a grid-template-columns](css-grid-template-rows-columns.md) vytvoříte oblast `head`.
+A víte co je ještě lepší? Definováním linek `head-start` a `head-end` ve vlastnostech [grid-template-rows a grid-template-columns](css-grid-template-rows-columns.md) vytvoříte oblast `head`.
 
 Vezměme tento grid definovaný jako dva sloupce a dva řádky:
 
@@ -124,11 +124,11 @@ Pak stačí pomocí [vlastnosti `grid-area`](css-grid-area.md) prvek `.item-head
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-template-areas-tracks.png" width="1920" height="540" alt="Grid - automatická tvorba oblastí">
 <figcaption markdown="1">
-*Tady to je. Oblast definovaná jen pomocí stop. Takhle to ukazují Firefox DevTools.*
+*Tady to je. Oblast definovaná jen pomocí linek. Takhle to ukazuje Firefox v DevTools.*
 </figcaption>
 </figure>
 
-Na definování oblastí s pomocí stop jsou i DevTools prohlížečů krátké a nejenže ve vrstvě neukáží název oblasti (head), ale ani názvy stop (head-start, head-end). Nevadí. Hlavně, že správně funguje umístění do definované oblasti.
+Na definování oblastí s pomocí linek jsou i DevTools prohlížečů krátké a nejenže ve vrstvě neukáží název oblasti (head), ale ani názvy linek (head-start, head-end). Nevadí. Hlavně, že správně funguje umístění do definované oblasti.
 
 CodePen: [cdpn.io/e/qBjrLwe](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
 
