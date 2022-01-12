@@ -22,7 +22,7 @@ Konkrétně uspějete s  `grid-auto-*` – [`grid-auto-rows`, `grid-auto-columns
 
 ## Příklad s přidáním položky na novou řádku
 
-Jak už jsem psal, v naprosté většině případů mřížku definujeme jako explicitní. Vezměme třeba tento jednoduchoučný kód:
+Jak už jsem psal, v naprosté většině případů mřížku definujeme jako explicitní. Vezměme třeba tento jednoduchoučký kód:
 
 ```html
 <div class="container">

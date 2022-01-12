@@ -15,7 +15,7 @@ Kompletní průvodce návrhem a implementací designu responzivních webů. Vyd�
 
 ### Vzhůru do AMP
 
-Průvodce frameworkem pro efektivní tvorbu rychlých webů. Vydáno s Robinem Pokorným v roce 2019.s  
+Průvodce frameworkem pro efektivní tvorbu rychlých webů. Napsáno s Robinem Pokorným v roce 2019.  
 [vzhurudolu.cz/ebook-amp](https://www.vzhurudolu.cz/ebook-amp/)
 
 ## Videa ze Vzhůru dolů

@@ -163,9 +163,13 @@ Ke správnému zarovnávání v gridu budete potřebova také vlastnosti jako [`
 
 ## Základy gridu a příklad {#priklad}
 
+<div class="web-only" markdown="1">
+
 Nejprve pojďme na představovací video. Podívejte se na video „CSS grid“.
 
 YouTube: [youtu.be/9M5RGjlAkeY](https://www.youtube.com/watch?v=9M5RGjlAkeY)
+
+</div>
 
 A teď ten příklad. Řekněme, že naše HTML vypadá takto:
 

@@ -12,7 +12,9 @@ Pro pochopení technických částí budete potřebovat alespoň základní znal
 
 ## Jak knížku číst?
 
-Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od začátku do konce.“. Jenže takhle se technické knížky nečtou. A nebudu si hrát na to, že tahle by měla být výjimkou.
+Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od začátku do konce.“
+
+Jenže takhle se technické knížky nečtou. A nebudu si hrát na to, že tahle by měla být výjimkou.
 
 V prvních třech kapitolách čtenářům postupně představuji téma, abychom se ve čtvrté dostali k vrcholu, který představují příklady použití CSS layoutů.
 
@@ -22,16 +24,68 @@ Jedno ale doporučím všem – z každé kapitoly si poctivě přečtěte úvod
 
 ## CodePen: „Talk is cheap. Show me the code.“
 
-Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu – CodePen.io.
+Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu – CodePen.
 
-Mě samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v téhle knize. V době psaní těchto řádků je jich na 170.
+Mě samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v téhle knize. V době psaní těchto řádků je jich na 170. Během čtení knížky tedy narazíte na celou řadu odkazů na CodePen.
 
-Některé z textů v této knize najdete také online na Vzhůru dolů – třeba že v kratší nebo jinak upravené verzi). V takovém případě je možné ukázky testovat přímo v článcích.
+<figure>
+<img src="../dist/images/original/vdlayout/codepen.png" width="1600" height="900" alt="CodePen">
+<figcaption markdown="1">
+*To je on, našich srdcí šampión. CodePen.*
+</figcaption>
+</figure>
 
-Vy, kteří knihu čtete na obrazovce nebo na papíře, uvidíte řadu odkazů na CodePen. Pokud je chcete zkoušet, což vám velmi doporučuji, udělejte prosím následující:
+Pokud chcete „peny“ zkoušet, což vám velmi doporučuji, udělejte prosím následující:
 
-- Zřiďte si na CodePen účet. Je to zdarma a velmi jednoduché.
-- Moje CodePeny si „forkněte“, takže uložte kopii do vlastního účtu.
-- Upravujte kód dle libosti. Experimentujte. Snažte se to rozbít. Takhle se nejvíc naučíte.
+1. Zřiďte si na CodePenu účet. Je to zdarma a velmi jednoduché.
+2. Moje CodePeny si „forkněte“, takže uložte kopii do vlastního účtu.
+3. Responzivitu si emulujte v tomto rozložení a pohybem šoupátka ze strany na stranu.
+4. Upravujte kód dle libosti. Experimentujte. Snažte se to vylepšit nebo rozbít.
+
+Takhle se nejvíc naučíte.
+
+## Podpora v prohlížečích
+
+Pokud mluvím o moderních prohlížečích, mám skoro vždy na mysli tyto tři a jejich poslední verze:
+
+- Chrome od Googlu, což je nyní dominující prohlížeč na mobilech i desktopu.
+- Safari od Applu, které se drží hlavně díky uzavřenosti ekosystému, ale s implementací podpory některých modernějších layoutů nespěchá.
+- Firefox od Mozilly, což je výborný prohlížeč, ale dnes už bohužel jen s velmi malým tržním podílem v řádu jednotek procent.
+
+### Internet Explorer, polomrtvý prohlížeč
+
+Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nový projekt a podporovat na něm prohlížeč Internet Explorer – jeho trží podíl je kolem 1 %.
+
+Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovaly. U těch ostatních můžete použít techniky, které obecně zmiňuji. Exploreru a podpoře ve starších prohlížečích se věnuji i v jednotlivých podkapitolách, kde se věnuji konkrétním vlastnostem.
+
+Raději se ale věnuji novinkám než zombie-prohlížečům.
+
+### Spekulativní sázky na novinky
+
+Během psaní knížky se objevila řada novinek, které ještě nemají plnou podporu v moderních prohlížečích, ale já to nevydržel a píšu tady o nich.
+
+Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad píšu o technologiích, které jsou sice _cool_, ale v praxi je použít nemůžete.
+
+Takové [Container Queries](containe-queries.md) sice mají zatím jen experimentální podporu v Chrome, ale mohutně se na nich pracuje a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
+
+Dále jsem neodolal například u [subgridu](css-grid-subgrid.md) – zatím s podporou jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
+
+Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozorním a samozřejmě — knížka je hlavně o vlastnostech, které používat můžete bez problémů všude.
+
+### Jak hledat podporu a testovat ji
+
+Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlížečích, ale znáte to – časy se mění a prohlížeče s nimi. Je tedy prakticky jisté, že některé informace zde již budou zastaralé.
+
+<figure>
+<img src="../dist/images/original/vdlayout/codepen.png" width="1600" height="900" alt="CodePen">
+<figcaption markdown="1">
+*Tyhle weby mějte po ruce. Kdyby něco.*
+</figcaption>
+</figure>
+
+Doporučuji vám brát v knize zmíněnou podporu v prohlížečích jako orientační a doplnit ji ještě dalšími zdroji:
+
+1. Vždy se dívejte na aktuální stav podpory na webech [CanIUse.com](https://caniuse.com/) nebo MDN ([developer.mozilla.org](https://developer.mozilla.org/)).
+2. Testujte to. Buď v prohlížečích, které máte u sebe nebo v cloudových službách jako je [Browserstack.com](https://www.browserstack.com/) nebo [LambdaTest.com](https://www.lambdatest.com/).
 
 A jsme na konci úvodu. Teď už vám jen přeji, ať se vám knížka líbí a naučíte se mnoho nového!
