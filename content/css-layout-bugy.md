@@ -1,6 +1,6 @@
 # Podpora flexboxu, gridu a vícesloupcového layoutu v prohlížečích
 
-<div class="ebook-only">
+<div class="ebook-only" markdown="1">
 
 To, že se v e-booku o layoutech v CSS zabýváme starým Explorerem, samozřejmě není jen tak. V této podkapitole se chceme zaměřit na problémy prohlížečů s podporou flexboxu, gridu a spol.
 
@@ -227,9 +227,9 @@ Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 </figcaption>
 </figure>
 
-Asi nejznámějším bugem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí. V kontextu tématu této knížky jde ale spíše o drobnost, o které více napíšu v příručce této vlastnosti dále v knize.
+Asi nejznámějším bugem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí. V kontextu tématu této knížky spíše o drobnost, ale je zde asi největší rozdíl mezi specifikací na papíře a reálným chováním prohlížečů.
 
-Pokud bychom se ale dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl byl to grid ani flexbox. Černého Petra bohužel vyhrává vícesloupcové rozvržení.
+Pokud bychom se dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl byl to grid ani flexbox. Pokud jde o moderní prohlížeče, Černého Petra si bohužel vytáhlo vícesloupcové rozvržení. Je to samozřejmě proto, že CSS Multicol je výrazně nejméně používaným systémem rozvržení.
 
 Více informací najdete na našem oblíbeném webu. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 

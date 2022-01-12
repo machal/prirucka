@@ -96,7 +96,7 @@ Minimální šířka obrázku nám zde jeden problém vyřeší a druhý vyrobí
 </figcaption>
 </figure>
 
-Na obrázku je vidět moment, kdy už jsme došli k maximu jeho šířky ale ještě se nám vedle nevejde text. Jeho minimální šířka je totiž určená délkou nejdelšího slova.
+Na screenshotech výše je vidět moment, kdy už jsme došli k maximu šířky obrázku, ale ještě se nám vedle nevejde text. Minimální šířka textu je totiž určená délkou nejdelšího slova.
 
 ### Alternativa bez `min-width` a `max-width`
 
@@ -249,7 +249,7 @@ Technika je založená na tomto kódu pro jednotlivé položky layoutu:
 
 Vysvětlení:
 
-1. V `min-width:30%` je hodnota šířky pro rozvržení v šířce rodiče menší než je breakpoint.
+1. V `min-width:30%` je hodnota šířky pro rozvržení, kdy je šířka rodiče menší než breakpoint.
 2. V hodnotě `400px` je uložený breakpoint.
 3. V `max-width:100%` je hodnota pro šířky větší než breakpoint.
 

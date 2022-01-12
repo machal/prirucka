@@ -173,4 +173,10 @@ Moderní prohlížeče to zvládají taky, to víte, že ano. Jen si hůř rozum
 
 Více najdete [v textu o podpoře](css-layout-bugy.md) nových systémů layoutu v prohlížečích.
 
+<div class="ebook-only" markdown="1">
+
+Podívejme se teď na jednotlivé vlastnosti specifikace CSS Multicol.
+
+</div>
+
 <!-- AdSnippet -->

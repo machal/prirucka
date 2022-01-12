@@ -184,7 +184,7 @@ Vodorovné a svislé stopy mřížky jsou označovány jako řádky a sloupce, p
 
 Poznámka pro pokročilé: Pokud bychom chtěli být přesní, měli bychom uvést ještě pojem „osa mřížky“, což je stejně jako v geometrii přímka, jež určuje směry. V případě CSS gridu jsou ty směry naštěstí jen dva.
 
-V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale *blokové ose* (block axis) a *inline ose* (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je čeština nebo slovenština), ale také se zápisem svislým (jako je japonština). Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale opravdu v textu už nechci více zatěžovat.
+V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale *blokové ose* (block axis) a *inline ose* (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je čeština nebo slovenština), ale také se zápisem svislým (jako může být například japonština). Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale opravdu v textu už nechci více zatěžovat.
 
 ## Buňka mřížky (grid cell) {#bunka}
 

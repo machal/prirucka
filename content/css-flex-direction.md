@@ -54,7 +54,7 @@ Také u této vlastnosti můžete použít [zkratku `flex-flow`](css-flex-flow.m
 
 ## Záludnosti změny pořadí {#poradi}
 
-Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v japonštině shora dolů. Jak jsem [psal jinde](css-flexbox-dobre-vedet.md), záleží to také na nastavení vlastností `writing-mode` a `direction`.
+Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v arabštině zprava doleva, v některých verzích zápisu japonštiny shora dolů. Jak jsem [psal jinde](css-flexbox-dobre-vedet.md), záleží to také na nastavení vlastností `writing-mode` a `direction`.
 
 <div class="web-only" markdown="1">
 

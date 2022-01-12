@@ -26,7 +26,7 @@ Osy pro potřeby layoutu v CSS:
 - _Hlavní_ nebo-li _řádková_ osa (inline axis), ve středoevropských podmínkách obvykle vodorovná.
 - _Příčná_ nebo-li _bloková_ osa (block axis), u nás obvykle svislá.
 
-Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Taková japonština nebo arabština se čtou zcela v odlišných směrech.
+Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Taková arabština nebo některé asijské jazyky se čtou zcela v odlišných směrech.
 
 <div class="web-only" markdown="1">
 
