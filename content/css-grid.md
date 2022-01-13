@@ -115,7 +115,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
 ### Funkce a klíčová slova {#vlastnosti-funkce}
 
-Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám zatím s odkazem na anglické zdroje:
+Do následující škatulky spadly nejrůznější výpočetní funkce, speciální klíčová slova a jednotky, které vznikly pro potřeby gridu:
 
 <div class="reference-items">
 
@@ -143,15 +143,27 @@ Aktuálně píšu texty příruček k dalším vlastnostem. Některé nechávám
     <p>Omezení minima a maxima v rozměru. <br> <code>grid-template-columns:minmax(100px, 1fr);</code></p>
   </article>
 
+</div>
+
+### Vlastnosti, které zatím nemají plnou podporu {#vlastnosti-funkce}
+
+Následující krátký seznam je o nových vlastnostech, které sice zatím není možné snadno použít v praxi, ale vypadá to nadějně a ke všemu je považuji za velmi užitečné:
+
+<div class="reference-items">
+
+  <article role="article">
+    <h4 id="masonry"><a href="css-subgrid.md">subgrid</a></h4>
+    <p><a href="css-subgrid.md"><img src="../dist/images/small/vdlayout/schema-css-subgrid.png" alt="CSS masonry laoyut" /></a></p>
+    <p>Podmřížka uvnitř mřížky. <br> <code>grid-template-cols:subgrid;</code></p>
+  </article>
+
   <article role="article">
     <h4 id="masonry"><a href="css-masonry.md"><code>masonry</code></a></h4>
     <p><a href="css-masonry.md"><img src="../dist/images/small/vdlayout/schema-css-masonry.png" alt="CSS masonry laoyut" /></a></p>
-    <p>Masonry (zděný) layout. <br> <code>grid-template-rows: masonry;</code></p>
+    <p>Masonry (zděný) layout. <br> <code>grid-template-rows:masonry;</code></p>
   </article>
 
 </div>
-
-<div class="web-only" markdown="1">
 
 ## Zarovnávání (CSS Box Alignment) {#css-box-alignment}
 

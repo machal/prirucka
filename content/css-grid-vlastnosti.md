@@ -100,7 +100,7 @@ To, co je profíkům jasné jako facka, nemusí být patrné všem. Stejně jako
 
 Otevírá to další možnosti a prostor pro tvorbu precizně definovaných layoutů.
 
-Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako podmřížka (subgrid) nebo nová hodnota [vlastnosti `display:contents`](css-display.md), která umožní nevykreslit rodiče a celý prostor věnovat potomkům.
+Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako [podmřížka (subgrid)](css-subgrid.md) nebo nová hodnota [vlastnosti `display:contents`](css-display.md), která umožní nevykreslit rodiče a celý prostor věnovat potomkům.
 
 ## 10) Nové typy layoutů
 
