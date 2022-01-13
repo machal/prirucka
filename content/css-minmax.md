@@ -240,7 +240,7 @@ Pokud byste chtěli zápis `minmax()` mermomocí rozbít, prohlížeče by se po
 Teď už zbývá jen rekapitulace podpory v prohlížečích.
 
 - Funkce `minmax()`, ale i klíčové slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči-dědečkovi ale doporučuji testovat, občas se to chová podivně.
-- `fit-content()` podporují skoro všechny relevantní prohlížeče ale v IE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
+- `fit-content()` podporují skoro všechny relevantní prohlížeče ale v MSIE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
 
 Viz CanIUse: [caniuse.com/intrinsic-width](https://caniuse.com/#search=intrinsic-width).
 

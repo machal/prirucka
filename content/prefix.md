@@ -13,11 +13,11 @@ Pojďme si to ukázat na příkladu. [CSS3 transformaci](css3-transforms.md) oto
   -webkit-transform: rotate(7.5deg);
   /* Firefox 3.5-15: */
   -moz-transform: rotate(7.5deg);
-  /* IE 9: */
+  /* MSIE 9: */
   -ms-transform: rotate(7.5deg);
   /* Opera 10.50-12.00: */
   -o-transform: rotate(7.5deg);
-  /* Firefox 16+, IE 10+, Opera 12.10+: */
+  /* Firefox 16+, MSIE 10+, Opera 12.10+: */
   transform: rotate(7.5deg);
 }
 ```

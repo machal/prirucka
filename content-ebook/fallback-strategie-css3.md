@@ -48,7 +48,7 @@ Určitě si vzpomenete, že definovaného fallbacku využíváme také u prefixo
   -webkit-column-count: 2;
   /* Firefox: */
   -moz-column-count: 2;
-  /* IE 10, Op 11.1+: */
+  /* MSIE 10, Op 11.1+: */
   column-count: 2;
 }
 ```
@@ -118,7 +118,7 @@ Více o pravidle `@supports` čtěte na Mozilla Developer Network. [vrdl.in/o9lm
 
 ### Prázdný dotaz na média
 
-Zajímavé použití detekce vlastnosti (a zároveň ukázkovou Progressive Enhancement!) představuje prázdná media query. Starší prohlížeče – jako IE do verze 8 nebo nějaké obskurnější mobilní křápy – prostě tuto část kódu nepřečtou. Hodí se třeba pro odstínění těchto prohlížečů od layoutu:
+Zajímavé použití detekce vlastnosti (a zároveň ukázkovou Progressive Enhancement!) představuje prázdná media query. Starší prohlížeče – jako MSIE do verze 8 nebo nějaké obskurnější mobilní křápy – prostě tuto část kódu nepřečtou. Hodí se třeba pro odstínění těchto prohlížečů od layoutu:
 
 ```css
 .component {

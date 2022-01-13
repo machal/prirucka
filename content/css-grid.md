@@ -271,7 +271,7 @@ Horší je to ve stařičkém prohlížeči od Microsoftu.
 
 Explorer a starší Edge podporují dnes už neplatnou specifikaci gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, mohli bychom pokračovat.
 
-Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení gridu pro IE](css-grid-msie.md) jemu.
+Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení gridu pro MSIE](css-grid-msie.md) jemu.
 
 Existence „explorerového“ gridu nám ale v mnoha případech umožní mřížku vcelku bez problémů používat i bez Autoprefixeru. Jen je potřeba se kromě základních vlastností dnešního gridu naučit i ten starší.
 

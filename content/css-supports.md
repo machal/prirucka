@@ -278,7 +278,7 @@ Na pohled to bude vypadat stejně. Takhle jednoduchý kód se samozřejmě nevyp
 </figcaption>
 </figure>
 
-Tady nastává moment, pro který jsme si v demíčku šli. IE nejen že nezná `display:grid` a zároveň nezná `@supports`, takže tento blok kódu vynechá ze zpracování. A to je dobře.
+Tady nastává moment, pro který jsme si v demíčku šli. MSIE nejen že nezná `display:grid` a zároveň nezná `@supports`, takže tento blok kódu vynechá ze zpracování. A to je dobře.
 
 CodePen: [cdpn.io/e/MWbqeMG](https://codepen.io/machal/pen/MWbqeMG?editors=1100)
 

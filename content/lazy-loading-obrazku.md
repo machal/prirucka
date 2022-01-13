@@ -118,7 +118,7 @@ Prohlížeč se navíc během stahování iframe pokouší zobrazit zástupný s
 
 Nativní lazy loading podporuje Chrome od verze 76 a Firefox od verze 75. Z důležitých prohlížečů tuhle vlastnost zatím nepodporuje Safari (autoři mají také [otevřený úkol](https://bugs.webkit.org/show_bug.cgi?id=200764)).
 
-K mému překvapení [podporoval Internet Explorer](https://msdn.microsoft.com/en-us/ie/dn369270(v=vs.94)) atribut `lazyload` jako úplně první prohlížeč. Jenže funkčnost atributu je tam odlišná od nové specifikace, takže také IE musíme počítat do skupiny prohlížečů bez podpory.
+K mému překvapení [podporoval Internet Explorer](https://msdn.microsoft.com/en-us/ie/dn369270(v=vs.94)) atribut `lazyload` jako úplně první prohlížeč. Jenže funkčnost atributu je tam odlišná od nové specifikace, takže také MSIE musíme počítat do skupiny prohlížečů bez podpory.
 
 Více o podpoře hledejte na [caniuse.com/loading-lazy-attr](https://caniuse.com/#feat=loading-lazy-attr).
 

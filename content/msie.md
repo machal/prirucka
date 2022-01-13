@@ -15,13 +15,13 @@ Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl
 Podívejte se na graf. Z toho je myslím jasné, že i v České republice bude možné Internet Explorer brzy přestat podporovat.
 
 <figure>
-<img src="../dist/images/original/msie-stats.png" width="1600" height="900" alt="Graf podílu prohlížečů pro IE, MS Edge, Firefox">
+<img src="../dist/images/original/msie-stats.png" width="1600" height="900" alt="Graf podílu prohlížečů pro MSIE, MS Edge, Firefox">
 <figcaption markdown="1">
 *Nejmenší ze všech nejmenších. Podíl méně významných prohlížečů na trhu v ČR. Vývoj MSIE ukazuje světle modrá linka. Zdroj: [rankings.gemius.com](http://ranking.gemius.com/cz/ranking/browsers/).*
 </figcaption>
 </figure>
 
-V Česku má IE zastoupení kolem 1,5 %. Tato čísla potvrzuje i jiný statistický web, StatCounter, a moje vlastní měření na webech klientů.
+V Česku má MSIE zastoupení kolem 1,5 %. Tato čísla potvrzuje i jiný statistický web, StatCounter, a moje vlastní měření na webech klientů.
 
 Daleko důležitější je ale trend vývoje. Zatímco začátkem roku 2019  dědeček prohlížeč používala ještě zhruba desetina uživatelů, zkraje roku 2020 už jej pro přístup na weby využívalo jen zhruba 5 %. No a v roce 2021 to je kolem dvou procent. Každý rok to tedy klesne na polovinu a méně.
 
@@ -33,7 +33,7 @@ V době, kdy tento text čtete v knížce, už pravděpodobně u vašich projekt
 
 <div class="web-only">
 
-Blíží se doba, kdy IE nebude mít smysl tento prohlížeč podporovat na žádném projektu.
+Blíží se doba, kdy MSIE nebude mít smysl tento prohlížeč podporovat na žádném projektu.
 
 </div>
 
@@ -56,7 +56,7 @@ Je samozřejmě otázka, při jakém podílu na návštěvnosti je možné podpo
 
 Ten druhý bod je přitom klíčový. Vyfiltrujte si v Google Analytics tržby uživatelů Exploreru a porovnejte to se svými náklady.
 
-Takto to pojali například vývojářky a vývojáři v Rohlík.cz. Podíl IE je na Rohlíku nízký, jenže přepočteno na tržby se to pořád vyplatí.
+Takto to pojali například vývojářky a vývojáři v Rohlík.cz. Podíl MSIE je na Rohlíku nízký, jenže přepočteno na tržby se to pořád vyplatí.
 
 Pro každého frontendistu je ovšem podpora takto zastaralého prohlížeče otrava. V Rohlíku tedy uživatelům Exploreru ukazují hlášku, motivující je ke změně prohlížeče.
 

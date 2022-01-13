@@ -226,8 +226,8 @@ Když už jsme v tom, mám pár poznámek. Doslova pár:
 Pokud jde o moderní prohlížeče, vlastnost `gap` ve flexboxu a gridu podporují všechny.
 
 - Grid: Prakticky plná podpora. Internet Explorer 11 vlastnost `gap` nepodporuje, ale to je možné dohnat [použitím nástroje Autoprefixer](css-grid-msie.md).
-- Flexbox: Nepodporuje IE 11.
-- Vícesloupcový layout: Nepodporuje IE 11 a zatím ani Safari.
+- Flexbox: Nepodporuje MSIE 11.
+- Vícesloupcový layout: Nepodporuje MSIE 11 a zatím ani Safari.
 
 Takže pokud potřebujete mezery v gridu a flexboxu a neřešíte Explorer, jste takzvaně ve vatě.
 

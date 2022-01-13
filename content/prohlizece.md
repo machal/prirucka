@@ -99,7 +99,7 @@ Celosvětově postupně klesá. Teď má na světě podle Statcounter podíl 11 
 
 ### Internet Explorer 11 {#IE11}
 
-Oproti starším verzí IE je to relativně moderní kus software. Jenže na dnešní potřeby webařů nestačí. Blokuje nás zejména jeho [(ne)podpora CSS gridu](css-grid.md). Předpokládám, že bude dále klesat ve prospěch Edge a ostatních prohlížečů. Mohl by ale předvádět rychlejší sešup, než dneska vidíme. [Wikipedia](https://en.wikipedia.org/wiki/Internet_Explorer_11)  
+Oproti starším verzí MSIE je to relativně moderní kus software. Jenže na dnešní potřeby webařů nestačí. Blokuje nás zejména jeho [(ne)podpora CSS gridu](css-grid.md). Předpokládám, že bude dále klesat ve prospěch Edge a ostatních prohlížečů. Mohl by ale předvádět rychlejší sešup, než dneska vidíme. [Wikipedia](https://en.wikipedia.org/wiki/Internet_Explorer_11)  
 <small>HTML5test.com: 312/555</small>
 
 ### Edge {#edge}
@@ -156,14 +156,14 @@ Weby je možné a slušné vyrobit tak, aby se zásadně nerozsypaly ani v mén�
 - *Android Browser*  
   Starší prohlížeč postavený na jádře Webkit. Modrá zeměkoule s nápisem Internet. Týká se Androidů ve verzích 4.x. Často jej upravovali výrobci zařízení, takže ho můžete znát třeba i pod jinými názvy. V téhle rodině prohlížečů je pěkný galimatyáš. Už se doufám ale nevyvíjí. [slides.com/html5test/the-android-browser](https://slides.com/html5test/the-android-browser)  
   <small>HTML5test.com: 356/555 (verze 30)</small>
-- *[IE 8](https://en.wikipedia.org/wiki/Internet_Explorer_8)*  
+- *[MSIE 8](https://en.wikipedia.org/wiki/Internet_Explorer_8)*  
   Už je naštěstí pryč. Občas je možné jej vidět na Windows XP. Brzy snad už jen v muzeu.  
   <small>HTML5test.com: 33/555</small>  
-- *[IE 9](https://en.wikipedia.org/wiki/Internet_Explorer_9)*  
-  IE9 běží na systémech, kde lze obvykle aktualizovat na novější verzi. Dnes už se skoro nevyskytuje.  
+- *[MSIE 9](https://en.wikipedia.org/wiki/Internet_Explorer_9)*  
+  MSIE9 běží na systémech, kde lze obvykle aktualizovat na novější verzi. Dnes už se skoro nevyskytuje.  
   <small>HTML5test.com: 113/555</small>
-- *[IE 10](https://en.wikipedia.org/wiki/Internet_Explorer_10)*  
-  Také IE10 běží na systémech, kde lze obvykle aktualizovat na novější verzi. Opět je jeho výskyt spíše vzácností.  
+- *[MSIE 10](https://en.wikipedia.org/wiki/Internet_Explorer_10)*  
+  Také MSIE10 běží na systémech, kde lze obvykle aktualizovat na novější verzi. Opět je jeho výskyt spíše vzácností.  
   <small>HTML5test.com: 265/555</small>
 - *[Internet Explorery Mobile](https://en.wikipedia.org/wiki/Internet_Explorer_Mobile)*  
   Výchozí prohlížeče na Windows Phone verzí 7 a 8. S koncem platformy postupně mizí.  
@@ -196,7 +196,7 @@ Pro zájemce je více informací [na Wikipedii](https://en.wikipedia.org/wiki/Br
 ## Závěrečná doporučení pro webaře {#doporuceni}
 
 - Zde uvedená obecná čísla berte s rezervou. Sledujte hlavně vlastní [Google Analytics](google-analytics-vyvojari.md).
-- Nebojte se nových technologií. [Flexbox](css-flexbox.md) má prakticky plnou podporu, [CSS grid](css-grid.md) podporují všechny prohlížeče kromě IE 11, ten jen částečně. Obojí vám ušetří práci a nabídne nové možnosti. Fallbacky ve starých prohlížečích rozhodně nedělejte plnohodnotné se zobrazením v moderních prohlížečích. Obvykle se vám to nevyplatí.
+- Nebojte se nových technologií. [Flexbox](css-flexbox.md) má prakticky plnou podporu, [CSS grid](css-grid.md) podporují všechny prohlížeče kromě MSIE 11, ten jen částečně. Obojí vám ušetří práci a nabídne nové možnosti. Fallbacky ve starých prohlížečích rozhodně nedělejte plnohodnotné se zobrazením v moderních prohlížečích. Obvykle se vám to nevyplatí.
 - Nepodceňujte menší prohlížeče. Obstarávají minimálně čtvrtinu zhlédnutí stránek. Naučte se testovat tak, abyste s tím neměli moc práce. Doporučím zase svůj článek. [vrdl.cz/p/jak-testovat-responzivni-weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 
 …a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. Testujte ve všech relevantních prohlížečích, prosím. Díky za pozornost!

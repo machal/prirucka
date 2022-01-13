@@ -21,4 +21,4 @@ Tip – stíny textu je možné řetězit a vytvořit až pseudo-3D efekty: [mar
 Podpora v prohlížečích
 ----------------------
 
-IE10+. Ve starších prohlížečích si můžete vybrat buď tvrdý fallback bez stínu  (preferovaná varianta), nebo s&nbsp;pomocí podmínek Modernizru či IE podmíněných komentářů udělat IE8– variantu s&nbsp;pomocí microsoftího filtru DropShadow. Více hledejte v dokumentaci na webu Microsoftu. [vrdl.in/0ar6x](http://msdn.microsoft.com/en-us/library/ms533086.aspx)
+IE10+. Ve starších prohlížečích si můžete vybrat buď tvrdý fallback bez stínu  (preferovaná varianta), nebo s&nbsp;pomocí podmínek Modernizru či MSIE podmíněných komentářů udělat IE8– variantu s&nbsp;pomocí microsoftího filtru DropShadow. Více hledejte v dokumentaci na webu Microsoftu. [vrdl.in/0ar6x](http://msdn.microsoft.com/en-us/library/ms533086.aspx)

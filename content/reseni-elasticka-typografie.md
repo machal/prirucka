@@ -78,7 +78,7 @@ Hotovo. Tohle řešení funguje ve všech prohlížečích, které podporují je
 
 <!-- AdSnippet -->
 
-Je dobré ještě pomyslet na náhradní řešení v IE verze 9 a starších:
+Je dobré ještě pomyslet na náhradní řešení v MSIE verze 9 a starších:
 
 
 ```scss

@@ -85,7 +85,7 @@ SVG si můžete samozřejmě editovat sami. Kromě obligátního Illustratoru je
 
 ## Podpora v prohlížečích? 95-98 % jich SVG umí
 
-S klesajícími podíly starších IE mizí i důvody proč webaři SVG zatím moc nevyužívali. Formát nezvládá jen IE8 a Android 2.3 a starší. To je na začátku roku 2016 něco mezi dvěma a čtyřmi procenty podílu.
+S klesajícími podíly starších MSIE mizí i důvody proč webaři SVG zatím moc nevyužívali. Formát nezvládá jen IE8 a Android 2.3 a starší. To je na začátku roku 2016 něco mezi dvěma a čtyřmi procenty podílu.
 
 Řešení pro starší prohlížeče najdete v článku [SVG fallbacky](svg-fallbacky.md).
 

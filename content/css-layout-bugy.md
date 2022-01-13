@@ -43,7 +43,7 @@ Trošku nás zlobí Internet Explorer v poslední verzi 11, u gridu nás zlobí 
 Co konkrétně znamenají ty zelenohnědé obdélníky?
 
 - Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
-- U flexboxu máme prakticky plnou podporu, jen v IE 11 si musíme dát pozor na pár chyb.
+- U flexboxu máme prakticky plnou podporu, jen v MSIE 11 si musíme dát pozor na pár chyb.
 - Podpora vícesloupcového layoutu je naopak v Exploreru výborná. Moderní prohlížeče si ale většinou  hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců.
 
 <div class="ebook-only" markdown="1">
@@ -56,7 +56,7 @@ Mimochodem, poprvé jsem tady zmínil skvělý nástroj Autoprefixer, který aut
 
 V textu vezmeme nové systémy layoutu jeden po druhém a k jejich podpoře v prohlížečích si něco povíme.
 
-## Flexbox a „flexboty“ v IE11 {#flexbox}
+## Flexbox a „flexboty“ v MSIE11 {#flexbox}
 
 Když jsem začal [flexbox](css-flexbox.md) před lety používat, bylo to trochu jako procházka minovým polem.
 
@@ -100,11 +100,11 @@ CodePen: [cdpn.io/e/RjvQgx](https://codepen.io/philipwalton/pen/RjvQgx)
 
 A co náš dědeček mezi prohlížeči?
 
-### Flexboty v IE11 {#flexbox-ie11}
+### Flexboty v MSIE11 {#flexbox-ie11}
 
 Tohle je zajímavější. Internet Explorer byl sice první prohlížeč, který moderní layouty naimplementoval, ale stejně jako všechny ostatní „prvoimplementace“ šlo o pokus plný chyb.
 
-Problémem IE tedy není množství chyb, chyby dělají všichni programátoři prohlížečů, ale způsob aktualizace.
+Problémem MSIE tedy není množství chyb, chyby dělají všichni programátoři prohlížečů, ale způsob aktualizace.
 
 Kdysi tak populární prohlížeč od Microsoftu vycházel v nových verzích z dnešního pohledu velmi pomalu, po letech, nikoliv měsících. A navíc – jedenáctá verze Exploreru je poslední a nikdo ji už aktualizovat nebude.
 
@@ -126,7 +126,7 @@ Máte přečteno? A máte z toho depresi? Chvilku počkejte.
 
 <!-- AdSnippet -->
 
-Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohrozí. Stačí jen vědět, že si v případě _podivného_ chování IE11 u flexboxu musíte vzpomenout na existenci stránky Flexbugs nebo tohoto textu. A pak ještě jednu věc.
+Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohrozí. Stačí jen vědět, že si v případě _podivného_ chování MSIE11 u flexboxu musíte vzpomenout na existenci stránky Flexbugs nebo tohoto textu. A pak ještě jednu věc.
 
 ### Zkuste vynechat flex-basis
 
@@ -134,11 +134,11 @@ Když jsem se vývojářů na Twitteru ptal na jejich mentální zkratky spojen�
 
 > U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default) a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
 
-Vysvětlím to. Zápis `flex:1 1 auto` je zkratka, která v prvním čísle definuje rozsah zvětšování položky, v druhém rozsah zmenšování a ve třetím výchozí velikost, která se ve flexboxu nastavuje vlastností `flex-basis`. Je možné ji nezapsat a ponechat výchozí hodnotu (`flex:auto`), což vám ale v případě nutnosti podpory IE nedoporučuju.
+Vysvětlím to. Zápis `flex:1 1 auto` je zkratka, která v prvním čísle definuje rozsah zvětšování položky, v druhém rozsah zmenšování a ve třetím výchozí velikost, která se ve flexboxu nastavuje vlastností `flex-basis`. Je možné ji nezapsat a ponechat výchozí hodnotu (`flex:auto`), což vám ale v případě nutnosti podpory MSIE nedoporučuju.
 
 Dalším nutným vstřídným krokem je potřeba vyhnout vlastnosti [vlastnosti `flex-basis`](css-flex-basis.md). Často tedy stačí namísto ní použít `width` nebo `height` a všechno to dobře funguje. I v Exploreru.
 
-Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podporu Exploreru, neděste se toho. Nic komplikovaného na tom není a používat flexbox i s podporou IE11 je úplně v pohodě.
+Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podporu Exploreru, neděste se toho. Nic komplikovaného na tom není a používat flexbox i s podporou MSIE11 je úplně v pohodě.
 
 ### A co další chyby?
 
@@ -159,13 +159,13 @@ Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří maj
 <figure>
 <img src="../dist/images/original/css-grid-caniuse.png" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Podpora gridu v prohlížečích. Zelenohnědá barva u IE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
+*Podpora gridu v prohlížečích. Zelenohnědá barva u MSIE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
 </figcaption>
 </figure>
 
 Na obrázku vidíte podporu gridu v prohlížečích, které které mají v ČR nad 0,5 % podílu trhu. Prohlížeče jsou seřazené podle používanosti.
 
-Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu před gridem. Obávám se, že za to může komplikace jménem podpora gridu v IE.
+Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že významná většina dává přednost flexboxu před gridem. Obávám se, že za to může komplikace jménem podpora gridu v MSIE.
 
 Je potřeba říct, že i tenhle prohlížeč grid podporuje a nepodporuje toho z něj vůbec málo: implicitní mřížku, [funkci `repeat()`](css-repeat.md), funkci [`minmax()`](css-minmax.md) nebo klíčová slova `min-content` a `max-content`.
 
@@ -173,17 +173,19 @@ Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastnost�
 
 Máme zde sice [Autoprefixer](autoprefixer.md), který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 
-Prostě to s gridem v IE je složité a já se vůbec nedivím lidem, kteří říkají „skoro na všechno mně stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
+Prostě to s gridem v MSIE je složité a já se vůbec nedivím lidem, kteří říkají „skoro na všechno mně stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
 
 Jo, to když Explorer podporovat nemusíte, to je jiná písnička…
 
 <!-- AdSnippet -->
 
-<div class="ebook-only">
-V další podkapitole si o podpoře gridu v IE povíme více.
+<div class="ebook-only" markdown="1">
+
+V další podkapitole si o podpoře gridu v MSIE povíme více.
+
 </div>
 
-<div class="web-only">
+<div class="web-only" markdown="1">
 
 Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Exploreru](css-grid-msie.md) a pojďme dál.
 
@@ -243,7 +245,7 @@ Najdete je zde jako jednotlivé vlastnosti, když budete hledat text `align-` ne
 
 ### Tabulky podpory CSS Box Align v Internet Exploreru {#box-align-tabulka}
 
-Podpora v moderních prohlížečích je v [zarovnávání](css-box-alignment.md) vynikající, ale je potřeba zmínit, že i v tomto případě je Internet Explorer problematický. Opět hlavně v kombinaci s gridem.
+Podpora v moderních prohlížečích je v [zarovnávání](css-box-alignment.md) vynikající, ale je potřeba zmínit, že i v tomto případě je Internet Explorer (MSIE) problematický. Opět hlavně v kombinaci s gridem.
 
 Nepodporované vlastnosti jsou ty, které začínají slovem `place-`, dále vadí nepodpora `align-items` a `align-content`.
 
@@ -251,15 +253,15 @@ Nepodporované vlastnosti jsou ty, které začínají slovem `place-`, dále vad
 
 |                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*`) |
 |-------------------------------------|------------------------------|----------------------------|--------------------------|
-| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>IE: ~~flex~~, ~~grid~~     | [`align-items`](css-align-items.md)<br>IE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>IE: ~~flex~~, ~~grid~~ |
-| **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>IE: ~~flex~~, grid      | [`align-self`](css-align-self.md)<br>IE: flex, grid       | [`place-self`](css-place-self.md)<br>IE: ~~flex~~, ~~grid~~ |
-| **Distribuce obsahu** (`*-content`) |  [`justify-content`](css-justify-content.md)<br>IE: flex, ~~grid~~    | [`align-content`](css-align-content.md)<br>IE: flex, ~~grid~~    | [`place-content`](css-place-content.md)<br>IE: ~~flex~~, ~~grid~~ |
+| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>MSIE: ~~flex~~, ~~grid~~     | [`align-items`](css-align-items.md)<br>MSIE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>MSIE: ~~flex~~, ~~grid~~ |
+| **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>MSIE: ~~flex~~, grid      | [`align-self`](css-align-self.md)<br>MSIE: flex, grid       | [`place-self`](css-place-self.md)<br>MSIE: ~~flex~~, ~~grid~~ |
+| **Distribuce obsahu** (`*-content`) |  [`justify-content`](css-justify-content.md)<br>MSIE: flex, ~~grid~~    | [`align-content`](css-align-content.md)<br>MSIE: flex, ~~grid~~    | [`place-content`](css-place-content.md)<br>MSIE: ~~flex~~, ~~grid~~ |
 
 </div>
 
-Chybějící podpora `justify-items` i `justify-self` v IE u flexboxu je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Toto vysvětlím v příručce [vlastnosti `justify-self`](css-justify-self.md).
+Chybějící podpora `justify-items` i `justify-self` v MSIE u flexboxu je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Toto vysvětlím v příručce [vlastnosti `justify-self`](css-justify-self.md).
 
-V případě, že podporujete IE to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
+V případě, že podporujete MSIE to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
 
 Explorer také nepodporuje novější hodnoty některých vlastností: `baseline` a `stretch` vlastností [`align-self`](css-align-self.md) a [`justify-content`](css-justify-content.md) nebo také `space-evenly` u [`justify-content`](css-justify-content.md).
 
@@ -278,7 +280,7 @@ Nicméně, důležitý je celkový dojem. Pokusím se to shrnout takto:
 - [Flexbox](css-flexbox.md) je víceméně bezproblémový. Při použití ve Exploreru raději nahraďte `flex-basis` za `width` nebo `height`.
 - [Grid](css-grid.md) je v Exploreru problémový, musíte mít [zvláštní znalosti](css-grid-msie.md). V moderních prohlížečích skoro úplně bez potíží.
 - [Vícesloupcový layout](css-multicolumn.md) umí zkomplikovat život menšími chybami, ale je jich dost.
-- [Zarovnání boxů](css-box-alignment.md) je v případě flexboxu skoro bez zádrhelů všude, v případě gridu je to s IE opět složitější. Ve vícesloupcovém layoutu nejde vlastnosti Box Align použít.
+- [Zarovnání boxů](css-box-alignment.md) je v případě flexboxu skoro bez zádrhelů všude, v případě gridu je to s MSIE opět složitější. Ve vícesloupcovém layoutu nejde vlastnosti Box Align použít.
 
 <div class="web-only" markdown="1">
 

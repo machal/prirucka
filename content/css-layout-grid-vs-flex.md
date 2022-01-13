@@ -67,7 +67,7 @@ Představa mřížky je zde zásadní. A úplně nejlepší je, když mřížku 
 
 ## Kompatibilita s Internet Explorerem je silná stránka flexboxu
 
-Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z IE jedenácté verze. Pak je potřeba zvažovat, zda je možné grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát.
+Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z MSIE jedenácté verze. Pak je potřeba zvažovat, zda je možné grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát.
 
 Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. Více se tomu věnuji ve druhé kapitole.
 
@@ -92,7 +92,7 @@ Abychom si v tom udělali pořádek i vizuálně, připravil jsem si pro vás ta
 |   Dvourozměrný layout    |             |     +    |
 |   Layout z obsahu        |       +     |     ?    |
 |   Layout z mřížky        |             |     +    |
-|   Kompatibilita v IE     |       +     |     ?    |
+|   Kompatibilita v MSIE   |       +     |     ?    |
 
 Tabulka netabulka…  osobně vám doporučuji naučit se flexbox i grid.
 

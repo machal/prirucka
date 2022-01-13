@@ -109,7 +109,7 @@ Tohle je ta jednodušší část. Pomohou nám [animace přechodů](css3-transit
 
 Řešení bude fungovat v Internet Exploreru od verze 10 a všech dnešních prohlížečích.  
 
-V IE 8 a 9 by se ale zobrazovalo špatně. Důvody jsou v nepodpoře CSS transformací konkrétního typu nebo pokročilejších selektorů. Nemůžeme proto použít detekci vlastností. Pomohou nám [podmíněné body třídy](https://css-tricks.com/snippets/html/add-body-class-just-for-ie/). Problematické části prostě odstraníme:
+V MSIE 8 a 9 by se ale zobrazovalo špatně. Důvody jsou v nepodpoře CSS transformací konkrétního typu nebo pokročilejších selektorů. Nemůžeme proto použít detekci vlastností. Pomohou nám [podmíněné body třídy](https://css-tricks.com/snippets/html/add-body-class-just-for-ie/). Problematické části prostě odstraníme:
 
 ```css
 .old-ie .checkbox__label:before,

@@ -16,7 +16,7 @@ Pojďme tedy dát kombinaci gridu s MSIE novou šanci.
 
 ## Které vlastnosti gridu Internet Explorer podporuje? {#podpora}
 
-Jisté rozdíly mezi IE a moderními prohlížeči zde jsou. Z těch důležitých například uveďme, že Internet Explorer nativně neumí následující:
+Jisté rozdíly mezi MSIE a moderními prohlížeči zde jsou. Z těch důležitých například uveďme, že Internet Explorer nativně neumí následující:
 
 - Automatické umísťování prvků do mřížky („auto-placement“).
 - Pojmenovávání oblastí mřížky (vlastnosti jako [`grid-template-areas`](css-grid-template-areas.md)).
@@ -26,7 +26,7 @@ Velká část uvedeného pro vás ale přečtením tohodle dlouhého textu přes
 
 <!-- AdSnippet -->
 
-Naopak se málo ví, že stařičký IE nativně podporuje následující:
+Naopak se málo ví, že stařičký MSIE nativně podporuje následující:
 
 - Implicitní (nepředdefinovanou) mřížku.
 - [Funkci `repeat()`](css-repeat.md), jen jinak. `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`.
@@ -126,7 +126,7 @@ Kód prvků layoutu, jež Autoprefixer vyrobí pro potřeby Exploreru, vypadá t
 }
 ```
 
-IE totiž neumí ani žádnou z vlastností `*-area`. Autoprefixer tak automaticky spočítá umístění do patřičných sloupečků.
+MSIE totiž neumí ani žádnou z vlastností `*-area`. Autoprefixer tak automaticky spočítá umístění do patřičných sloupečků.
 
 Pokud vám nesedí počty sloupců u vlastnosti `-ms-grid-column`, pak raději zopakuji, že Autoprefixer uměle přidává sloupečky, abychom mohli používat mezery `-gap`.
 
@@ -212,7 +212,7 @@ Díky automatickému umístění bude v moderních prohlížečích stačit defi
 Prvky se nám pěkně rozmístí. Jenže smůla, tohle nebude fungovat v Internet Exploreru.
 
 <figure>
-<img src="../dist/images/original/msie-grid-autoplacement-browsers.jpg" alt="Grid autoplacement v IE a moderních prohlížečích">
+<img src="../dist/images/original/msie-grid-autoplacement-browsers.jpg" alt="Grid autoplacement v MSIE a moderních prohlížečích">
 <figcaption markdown="1">
 *Ale to je nepříjemné, automatické umístění v MSIE nefunguje*
 </figcaption>
@@ -243,24 +243,24 @@ Je možné tedy automatizace použít jen pro explicitní mřížky definované 
 - *Pozor na zpětné nasazení na starých projektech*  
 Doporučení zní: Nechte grid vypnutý a pomocí CSS komentářů jej zapínejte pouze pro nové deklarace.
 - *Neumí to repeat() v kombinaci a auto-fill, auto-fit*  
-I když IE [funkci `repeat()`](css-repeat.md) zvládá, klíčová slova `auto-fill` a `auto-fit` bohužel ne.
+I když MSIE [funkci `repeat()`](css-repeat.md) zvládá, klíčová slova `auto-fill` a `auto-fit` bohužel ne.
 - *Vyberte si: Buď autoplacement nebo manuální umístění v gridu*  
-V moderních prohlížečích lze obojí kombinovat, v IE bohužel ne. Buď tedy budete všechny prvky gridu umísťovat ručně (použijte vlastnost `grid-template-areas` v definici gridu) nebo automaticky (bez `*-areas`).
+V moderních prohlížečích lze obojí kombinovat, v MSIE bohužel ne. Buď tedy budete všechny prvky gridu umísťovat ručně (použijte vlastnost `grid-template-areas` v definici gridu) nebo automaticky (bez `*-areas`).
 - *Pozor na pseudoelementy*  
-`::before` a `::after` uvnitř gridu vám v IE rozbijí mřížku, to se vsaďte.
+`::before` a `::after` uvnitř gridu vám v MSIE rozbijí mřížku, to se vsaďte.
 - *V Media Queries nelze změnit jen grid-gap*  
 Namísto toho je Autoprefixeru potřeba znovu deklarovat explicitní mřížku pomocí vlastností `grid-template-*`.
 
 Neřeší to všechno, ale máme tady o jeden silný důvod navíc použít.
 
-## Co potřebujete pro překlad gridu pro IE pomocí Autoprefixeru?
+## Co potřebujete pro překlad gridu pro MSIE pomocí Autoprefixeru?
 
 Potřebujete tyto suroviny:
 
 - *Automatizaci*  
 Gulp, Grunt, skripty v NPM nebo podobné nástroje, které umí využít Autoprefixer.
 - *Zapnout podporu IE11*  
-V Browserslist, seznamu podporovaných prohlížečů, je nutné specifikovat také IE 11, případně i desátou verzi – např. takto `> 1%, IE 11, IE 10`.
+V Browserslist, seznamu podporovaných prohlížečů, je nutné specifikovat také MSIE 11, případně i desátou verzi – např. takto `> 1%, IE 11, IE 10`.
 - *Zapnout grid a auto-umístění*  
 Zavolat Autoprefixer s parametrem `grid: 'autoplace'`, který zařídí podporu právě pro automatické umístění. Alternativa jsou řídící komentáře přímo v CSS: `/* autoprefixer grid: autoplace */`.
 

@@ -144,6 +144,6 @@ Můžeme ji nastavit i pomocí zkratky `grid`. Následující dva kousky kódu b
 
 Zkratku `grid` zvládají všechny prohlížeče, kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat CSS grid i pro tento prohlížeč, doporučuji se zkratce `grid` vyhnout.
 
-Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v IE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).
+Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v MSIE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).
 
 <!-- AdSnippet -->

@@ -125,7 +125,7 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 - `baseline`  
   Zkratka pro `first baseline`.
 
-Tyto hodnoty zatím nemají u této vlastnosti dobrou podporu v prohlížečích při použití ve flexboxu. V IE není podporována vůbec.
+Tyto hodnoty zatím nemají u této vlastnosti dobrou podporu v prohlížečích při použití ve flexboxu. V MSIE není podporována vůbec.
 
 ### Zarovnání pro přetečení
 

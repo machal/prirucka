@@ -136,7 +136,7 @@ Opakujícími se barevnými a zelenými plochami se nám vykreslí „terč“. 
 
 ## Podpora v prohlížečích
 
-Barevné přechody neumí IE ve verzi 8 a 9 nebo Opera Mini.  [caniuse.com/gradients](https://caniuse.com/gradients).
+Barevné přechody neumí MSIE ve verzi 8 a 9 nebo Opera Mini.  [caniuse.com/gradients](https://caniuse.com/gradients).
 
 <!-- AdSnippet -->
 

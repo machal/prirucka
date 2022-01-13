@@ -103,18 +103,18 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých o
 - `space-around`  
   Volné místo se rovnoměrně rozdělí mezi položky a polovina mezery mezi položkami se vloží mezi hrany kontejneru a první a poslední položku.
 - `space-evenly`  
-  Volné místo se rovnoměrně rozdělí mezi položky i mezi první a poslední položku a okraje kontejneru. Tato vlastnost není v kombinaci s flexboxem podporována v IE11.
+  Volné místo se rovnoměrně rozdělí mezi položky i mezi první a poslední položku a okraje kontejneru. Tato vlastnost není v kombinaci s flexboxem podporována v MSIE11.
 - `stretch`  
-  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato hodnota není v kombinaci s flexboxem podporována v IE11.
+  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato hodnota není v kombinaci s flexboxem podporována v MSIE11.
 
 <!-- AdSnippet -->
 
 ### Poziční
 
 - `center`  
-  Položky se centruje doprostřed kontejneru. Ve flexboxu nepodporuje IE.
+  Položky se centruje doprostřed kontejneru. Ve flexboxu nepodporuje MSIE.
 - `start`  
-  Položky se zarovnají k hraně začátku kontejneru. Ve flexboxu nepodporuje IE.
+  Položky se zarovnají k hraně začátku kontejneru. Ve flexboxu nepodporuje MSIE.
 - `end`  
   Položky se zarovnají k hraně konce kontejneru.
 - `flex-start`  
@@ -150,7 +150,7 @@ Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích {#podpora}
 
-V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
+V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou MSIE11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
 
 Ve flexboxových rozvrženích `justify-content` dobře funguje i v Internet Exploreru.
 
