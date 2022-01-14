@@ -4,13 +4,9 @@
 
 To, že se v e-booku o layoutech v CSS zabýváme starým Explorerem, samozřejmě není jen tak. V této podkapitole se chceme zaměřit na problémy prohlížečů s podporou flexboxu, gridu a spol.
 
-Pokud Explorer na svých projektech nepodporujete, pak i tuto podkapitolu směle přeskočte.
-
-Explorer vám velmi zkomplikuje využítí CSS gridu, všechny ostatní systémy layoutu tam jsou použitelné.
+Pokud Explorer na svých projektech nepodporujete, pak i tuto podkapitolu směle přeskočte. Explorer vám velmi zkomplikuje využití CSS gridu, všechny ostatní systémy layoutu tam ale jsou použitelné.
 
 Ty drobné chyby, které se vztahují na moderní prohlížeče a mřížku, flexbox, vícesloupcový layout a zarovnání boxů, spíše nestojí za řeč a budu je dále rozebírat v kapitolách s příručkou k jednotlivým vlastnostem.
-
-Ale pokud už tady chcete jít do hloubky, čtěte dále.
 
 </div>
 
@@ -36,25 +32,23 @@ Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Mu
 </figcaption>
 </figure>
 
-Flexbox, grid nebo vícesloupcový layout se na nás z CanIUse směje zeleně.
-
-Trošku nás zlobí Internet Explorer v poslední verzi 11, u gridu nás zlobí více.
+Flexbox, grid nebo vícesloupcový layout se na nás z CanIUse většinou směje zeleně.
 
 Co konkrétně znamenají ty zelenohnědé obdélníky?
 
-- Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně [řešit Autoprefixerem](css-grid-msie.md).
+- Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně řešit Autoprefixerem.
 - U flexboxu máme prakticky plnou podporu, jen v MSIE 11 si musíme dát pozor na pár chyb.
 - Podpora vícesloupcového layoutu je naopak v Exploreru výborná. Moderní prohlížeče si ale většinou  hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců.
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, poprvé jsem tady zmínil skvělý nástroj Autoprefixer, který automaticky dodává CSS prefixy i další kód pro starší prohlížeče. Předpokládám jeho obecnou znalost, ale pokud jste se s ním zatím nesetkali, přidal jsem podkapitolu o něm [do poslední „přílohové“ kapitoly](autoprefixer.md).
+Mimochodem, poprvé jsem tady zmínil skvělý nástroj [Autoprefixer](autoprefixer.md), který automaticky dodává CSS prefixy i další kód pro starší prohlížeče. Předpokládám jeho obecnou znalost, ale pokud jste se s ním zatím nesetkali, přidal jsem podkapitolu o něm do poslední „přílohové“ kapitoly.
 
 </div>
 
 <!-- AdSnippet -->
 
-V textu vezmeme nové systémy layoutu jeden po druhém a k jejich podpoře v prohlížečích si něco povíme.
+V následujícím textu vezmeme nové systémy layoutu jeden po druhém a k jejich podpoře v prohlížečích si něco povíme.
 
 ## Flexbox a „flexboty“ v MSIE11 {#flexbox}
 
@@ -62,7 +56,7 @@ Když jsem začal [flexbox](css-flexbox.md) před lety používat, bylo to troch
 
 Za každým řádkem kódu mohla číhat nekompatibilita v některém prohlížeči. Člověk potřeboval detektor min a tím se stala stránka „Flexbugs“ od Philipa Waltona. Jde o seznam 17 chyb v prohlížečích, které tehdy potřeboval znát každý, kdo pokouší osud psaním flexboxového kódu. [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
 
-Znalost některých chyb byla tak zásadní, že jsem je svého času musel učit na svých školeních. A při té příležitosti jsem jim začal říkal česky: _flexboty_. Boty, které zanechali výrobci prohlížečů při implementaci flexboxu.
+Znalost některých chyb byla tak zásadní, že jsem je svého času musel učit na svých školeních. A při té příležitosti jsem jim začal říkal česky: _flexboty_. Každý děláme boty. Flexboty jsou chyby, které zanechali výrobci prohlížečů při implementaci flexboxu.
 
 Když jsem během psaní tohoto textu srovnával současný stav s tím dřívějším, došel jsem k radostnému poznání.
 
@@ -75,13 +69,7 @@ Když jsem během psaní tohoto textu srovnával současný stav s tím dřívě
 
 Je to tak, jak vidíte na obrázku. Takřka všechny chyby v moderních prohlížečích jsou opravené. Zůstaly jen ty navázané na Internet Explorer 11.
 
-Dnes už tedy můžete psát flexboxový kód, aniž byste se museli bát. Stačí se vyhnout určitým zápisům a bude to vše dobře fungovat i v Internet Exploreru 11.
-
-### Podpora flexboxu je prakticky plná {#flexbox-podpora}
-
-Pojďme říct důležitou věc – fungování flexboxu napříč prohlížeči, včetně posledního Exploreru, je konzistentní a podporu považuji za takřka plnou.
-
-U chyb, které v následujícím textu uvádím, se jedná o boty menší velikosti. Ale když už si o flexboxu povídáme takto detailně, je potřeba se o nich zmínit.
+Podpora flexboxu je prakticky plná. U chyb, které v následujícím textu uvádím, se jedná o boty menší velikosti. Ale když už si o podpoře flexboxu povídáme takto detailně, je potřeba se o nich zmínit.
 
 ### Flexboty v moderních prohlížečích {#flexbox-moderni}
 
@@ -100,7 +88,7 @@ CodePen: [cdpn.io/e/RjvQgx](https://codepen.io/philipwalton/pen/RjvQgx)
 
 A co náš dědeček mezi prohlížeči?
 
-### Flexboty v MSIE11 {#flexbox-ie11}
+### Flexboty v MSIE 11 {#flexbox-ie11}
 
 Tohle je zajímavější. Internet Explorer byl sice první prohlížeč, který moderní layouty naimplementoval, ale stejně jako všechny ostatní „prvoimplementace“ šlo o pokus plný chyb.
 
@@ -144,9 +132,7 @@ Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podp
 
 Pokud jste počítali, do celkového počtu 17 chyb stále tři chybí. Ano, máte pravdu a vyhráváte… pobyt v Muzeu historie webových prohlížečů.
 
-Zbývající 3 boty má na svědomí Internet Explorer 10 a ten, jak už jsem psal, dávno vyhynul.
-
-Pokud by vás opravdu hodně zajímaly, podívejte se na tu svého času slavnou stránku Philipa Waltona. Flexbugs: [github.com/philipwalton/flexbugs](https://github.com/philipwalton/flexbugs)
+Zbývající 3 boty má na svědomí Internet Explorer 10 a ten už dávno vyhynul.
 
 Více informací o podpoře je na Can I Use. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 

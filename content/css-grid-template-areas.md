@@ -128,7 +128,7 @@ Pak stačí pomocí [vlastnosti `grid-area`](css-grid-area.md) prvek `.item-head
 </figcaption>
 </figure>
 
-Na definování oblastí s pomocí linek jsou i DevTools prohlížečů krátké a nejenže ve vrstvě neukáží název oblasti (head), ale ani názvy linek (head-start, head-end). Nevadí. Hlavně, že správně funguje umístění do definované oblasti.
+Následuje už jen ukázka v penu.
 
 CodePen: [cdpn.io/e/qBjrLwe](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
 

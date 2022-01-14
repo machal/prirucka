@@ -4,7 +4,7 @@ V diskuzích pokročilejších vývojářů a vývojářek se občas objevuje t�
 
 Když byly tyhle systémy pro rozvržení stránek a komponent nové, poměrně dost se to v komunitě řešilo. Ale je to téma ještě dneska? Neřekl bych.
 
-Flexbox je v extrémně sloužitých layoutech rychlejší. Ale je zde jedna věc, na kterou byste si měli dát pozor – použití flexboxu pro rozvržení celé stránky nebo obzvlášť dlouhého obsahu jako jsou komplexní články.
+V textu dále se dozvít, že flexbox je v extrémně složitých layoutech rychlejší. A je zde jedna věc, na kterou byste si měli dát pozor – použití flexboxu pro rozvržení celé stránky nebo obzvlášť dlouhého obsahu jako jsou komplexní články.
 
 ## Je rychlejší grid nebo flexbox? A není to jedno?
 

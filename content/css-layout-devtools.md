@@ -74,5 +74,5 @@ Těším se, co nám konkurence prohlížečů ještě v tomhle směru přinese 
 Odkazy na texty představující tyto nástroje v jednotlivých prohlížečích:
 
 - „Firefox 52 for developers“ [vrdl.in/griddevfir](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/52)
-- „Chrome 87: What's New In DevTools“ [](https://developer.chrome.com/blog/new-in-devtools-87/)
+- „Chrome 87: What's New In DevTools“ [vrdl.in/griddevchr](https://developer.chrome.com/blog/new-in-devtools-87/)
 - „WebKit: Introducing CSS grid Inspector“. [vrdl.in/griddevsaf](https://webkit.org/blog/11588/introducing-css-grid-inspector/)

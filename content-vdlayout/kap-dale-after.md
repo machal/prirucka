@@ -9,7 +9,7 @@ c) kolem 2 %
 1. **Co je logické pořadí prvků?**  
 a) vizuální pořadí, jak prvky vidíme ve stránce  
 b) pořadí prvků v HTML  
-c) pořadí navigace prvků, tak jak se jim naviguje například pomocí klávesy Tab  
+c) pořadí prvků, jak se jim prochází např. pomocí klávesy Tab  
 1. **Jaké vlastnosti mohou měnit logické pořadí ve stránce?**  
 a) například `order`, `grid-auto-flow`, `grid-area`  
 b) například `flex`, `grid-basis`, `grid-shrink`  
@@ -30,7 +30,7 @@ c) jde o chyták, tento problém vzniká jen u rozvžení gridem
 1. **Jaký podíl na českém trhu má Internet Explorer ke konci jara 2021?**  
 c) kolem 2 %
 1. **Co je logické pořadí prvků?**  
-c) pořadí navigace prvků, tak jak se jim naviguje například pomocí klávesy Tab  
+c) pořadí prvků, jak se jim prochází např. pomocí klávesy Tab  
 1. **Jaké vlastnosti mohou měnit logické pořadí ve stránce?**  
 a) Například `order`, `grid-auto-flow`, `grid-area`  
 1. **Jakou vlastnost raději vynechat, pokud se chceme vyhnout potížím v Internet Exploreru?**  

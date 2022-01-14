@@ -67,13 +67,15 @@ Výhoda `fr` oproti procentům? Nemusíme počítat prvky gridu a řešit nastav
 
 Procentuální grid v demu nastavujeme jako `grid-template-columns: 33.3% 33.3% 33.3%`. Může to být fajn, ale procentuální hodnotu musíme vypočíst podle počtu sloupců v HTML. No a pokud by se nám jejich počet změnil, nezbývá než upravovat také CSS.
 
-Další problém je v *box modelu*, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`). Bez změny počítání box modelu pomocí vlastnosti [`box-sizing`](css3-box-sizing.md) nám prvky přetečou z rodičovského kontejneru.
+Další problém je v *box modelu*, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`). Bez změny počítání box modelu pomocí vlastnosti `box-sizing` nám prvky přetečou z rodičovského kontejneru.
 
 CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
 
+Pokud vlastnost `box-sizing` neznáte, dostudujte si ji v mém textu na Vzhůru dolů. [vrdl.cz/p/css3-box-sizing](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
+
 ## Podíl na zbytku {#podil}
 
-Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou nezabírají prvky s rozměry nastavenými běžnými [jednotkami délky](jednotky.md), jako jsou `%`, `px`, `em`, `rem` a další:
+Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou nezabírají prvky s rozměry nastavenými běžnými jednotkami délky, jako jsou `%`, `px`, `em`, `rem` a další:
 
 <p><img src="../dist/images/original/vdlayout/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu"></p>
 
@@ -115,3 +117,15 @@ Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to
 Podpora je skvělá. Nevím o žádném mezi uživateli rozšířeném prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to do této skupiny prohlížečů o prázdninách 2021 považuji i Internet Explorer 11.
 
 <!-- AdSnippet -->
+
+<div class="web-only" markdown="1">
+
+Další [jednotky v CSS](jednotky.md) (`%`, `px`, `em`, `rem`) probírám v samostatném textu.
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Další jednotky v CSS (`%`, `px`, `em`, `rem`) probírám v samostatném textu [poslední kapitoly](jednotky.md).
+
+</div>

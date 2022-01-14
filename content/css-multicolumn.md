@@ -66,7 +66,7 @@ Když si v CodePenu budete klikat na tlačítka s přiblížením a oddálením 
 
 Je to automaticky responzivní, aniž bychom museli definovat Media Queries. Bezva.
 
-Tady jsme ale v příručce po CSS Multicol-Layout. Teď proto pojďme podívat na vlastnosti spadající do tohoto modulu.
+Tady jsme ale v příručce o CSS Multicol-Layout. Teď se proto pojďme podívat na vlastnosti spadající do tohoto modulu.
 
 ## Vlastnosti pro kontejner {#vlastnosti-kontejner}
 

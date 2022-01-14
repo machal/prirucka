@@ -43,7 +43,36 @@ Jen připomínám, že směr hlavní a příčné osy rozvržení se může změ
 
 V tabulce nejsou obsaženy zdaleka všechny zarovnávací vlastnosti, na ty se pojďme podívat hned v další části textu.
 
-Každou vlastnost si zde můžete rozkliknout a dostat se tak na její specifikaci.
+### Jak si zapamatovat správný směr?
+
+Docela dlouho se trápím s tím, jak si bez taháku zapamatovat správný směr zarovnání. „Justify“ je totiž většinou vodorovný, „align“ svislý směr.
+
+Na asi nejlepší trik mě v jedné diskuzi přivedl David Grudl. Přitom je to tak prosté, podívat se do anglicko-českého slovníku:
+
+- „justify“ znamená „zarovnat“ (text)
+- „align“ znamená „srovnat“ (do roviny)
+
+Další mnemotechnickou pomůckou může být, že „justify“ je typ zarovnání, který se vždy používá pro text, tedy u nás vodorovný směr.
+
+Musíme ovšem zapomenout na to, že nejen různé textové editory, ale i samotné CSS (`text-align`) nás to léta učily špatně.
+
+<div class="ebook-only" markdown="1">
+
+Vzpomeňme si opět na mistra Yodu. „Musíš se teď odnaučit, co tě dřív učili.“
+
+</div>
+
+<div class="web-only" markdown="1">
+
+Následuje už referenční příručka k jednotlivým vlastnostem. Každou vlastnost si zde můžete rozkliknout a dostat se tak na její specifikaci.
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Následuje už stručná referenční příručka k jednotlivým vlastnostem a později v kapitole jejich detailní popis.
+
+</div>
 
 ## Zarovnání položek (`*-items`) {#polozky}
 

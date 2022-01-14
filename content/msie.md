@@ -2,7 +2,7 @@
 
 Microsoft Internet Explorer (MSIE) dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné tento starý prohlížeč od Microsoftu podporovat.
 
-Text píšu v červnu 2021. A píšu ho proto, že pokud Internet Explorer stále ještě podporujete, myslím si, že byste od této praxe mohli začít upouštět.
+Pokud Internet Explorer stále ještě podporujete, myslím si, že byste od této praxe mohli začít upouštět. To je důvod, proč píšu tenhle text.
 
 Velmi to záleží na cílové skupině konkrétního projektů, ale drtivá většina vývojářů si myslím ukončení podpory ke polovině roku 2021 může dovolit.
 
@@ -21,25 +21,13 @@ Podívejte se na graf. Z toho je myslím jasné, že i v České republice bude 
 </figcaption>
 </figure>
 
-V Česku má MSIE zastoupení kolem 1,5 %. Tato čísla potvrzuje i jiný statistický web, StatCounter, a moje vlastní měření na webech klientů.
+V Česku měl MSIE v polovině roku 2021 zastoupení kolem 1,5 %. Tato čísla potvrzuje i jiný statistický web, StatCounter, a moje vlastní měření na webech klientů.
 
-Daleko důležitější je ale trend vývoje. Zatímco začátkem roku 2019  dědeček prohlížeč používala ještě zhruba desetina uživatelů, zkraje roku 2020 už jej pro přístup na weby využívalo jen zhruba 5 %. No a v roce 2021 to je kolem dvou procent. Každý rok to tedy klesne na polovinu a méně.
-
-<div class="ebook-only">
-
-V době, kdy tento text čtete v knížce, už pravděpodobně u vašich projektů nedává smysl tento prohlížeč podporovat.
-
-</div>
-
-<div class="web-only">
-
-Blíží se doba, kdy MSIE nebude mít smysl tento prohlížeč podporovat na žádném projektu.
-
-</div>
+Daleko důležitější je ale trend vývoje. Zatímco začátkem roku 2019  dědeček prohlížeč používala ještě zhruba desetina uživatelů, zkraje roku 2020 už jej pro přístup na weby využívalo jen zhruba 5 %. No a v roce 2021 to je kolem dvou procent. Každý rok to tedy klesne na polovinu a méně.
 
 <!-- AdSnippet -->
 
-Bratrům Slovákům zde ale můžeme jen závidět. V zemi pod Tatrami je totiž zastoupení MSIE podle čísel Gemiusu už nyní nulové.
+Například bratrům Slovákům zde můžeme jen závidět. V zemi pod Tatrami je totiž zastoupení MSIE podle čísel Gemiusu už v roce 2021 nulové.
 
 ## Výjimky potvrzují pravidlo. Sledujte statistiky a příjmy
 
@@ -67,7 +55,7 @@ Pro každého frontendistu je ovšem podpora takto zastaralého prohlížeče ot
 </figcaption>
 </figure>
 
-Ve schopnost těchto hlášek snížit podíl zastoupení starých prohlížečů samy od sebe zase tak moc nevěřím, ale jako součást širšího strategického balíčku smysl mají.
+Ve schopnost těchto hlášek snížit podíl zastoupení starých prohlížečů samy od sebe zase tak moc nevěřím, ale jako součást širšího strategického balíčku „přemlouvání uživatelů“ smysl mají.
 
 ## Exploreru končí podpora od Microsoftu
 
@@ -82,6 +70,8 @@ Oficiální ukončení podpory mají v Microsoftu naplánované na polovinu čer
 
 Termín je pro uživatele Exploreru od Microsoftu nastavený velkoryse, ale předpokládám, že uživatelé ve spolupráci s webaři ukončí podporu Internet Exploreru daleko dříve.
 
+<div class="web-only" markdown="1">
+
 ## Starší verze Exploreru
 
 Váš případný dotaz na rozšíření starších verzí MSIE než poslední, jedenácté, je samozřejmě správný.
@@ -89,6 +79,8 @@ Váš případný dotaz na rozšíření starších verzí MSIE než poslední, 
 Raději jsem ve všech výše uvedených zdrojích ověřoval i přítomnost uživatelů s Explorerem 10 a staršímu. A k naší společné radosti zde můžu konstatovat, že tyto živočišné druhy už dávno vyhynuly.
 
 Nejpozději do roka je bude následovat i Internet Explorer 11, poslední svého druhu.
+
+</div>
 
 <!-- AdSnippet -->
 
@@ -102,6 +94,8 @@ Nicholas C. Zakas připomíná ve svém výborném článku „The innovations o
 
 Z jeho textu, zmiňujícího mnoho inovací Exploreru, jsem vybral pár bodů, které stojí za připomenutí:
 
+<div class="web-only" markdown="1">
+
 1. Internet Explorer 4 zlepšil práci s DOMem tím, že umožnil programový přístup ke každému prvku na stránce prostřednictvím `document.all`, což byl předchůdce `document.getElementById()`. Ve stejné verzi se také poprvé objevila vlastnost `innerHTML`.
 2. Exploreru také vděčíme za vznik bublání událostí (event bubbling), tedy vlastnosti DOMu, bez které si dnes nedokážeme představit vývoj webů. Kromě toho vytvořili v Microsoftu řadu dalších událostí, které se nakonec staly součástí standardů W3C: `beforeunload`, `mouseenter`, `mouseleave` a další.
 3. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámy (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární, například pro vkládání komponent třetích stran jako je reklama nebo přehrávače videí z YouTube.
@@ -110,13 +104,24 @@ Z jeho textu, zmiňujícího mnoho inovací Exploreru, jsem vybral pár bodů, k
 6. První implementace box modelu v Internet Explorer 5 interpretovala šířku a výšku tak, že prvek má mít celkovou velikost včetně vnitřních okrajů a rámečku. To byl základ pro pozdější standardizovanou vlastnost `box-sizing:border-box`, i když v té době to bylo od Microsoftu opravdu nepěkné a webařům značně zavařil.
 7. Mnoho nových vizuálních efektů z CSS3 má základ ve filtrech Internet Exploreru. Příkladem budiž použití vrženého stínu na prvek – filtr `Alpha` v CSS3 známe jako `opacity` a tak dále.
 
+</div>
+
+<div class="ebook-only" markdown="1">
+
+1. Zlepšil práci s DOMem tím, že umožnil programový přístup ke každému prvku na stránce prostřednictvím `document.all`, což byl předchůdce `document.getElementById()`.
+2. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámů (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární, například pro vkládání komponent třetích stran jako je reklama nebo přehrávače videí z YouTube.
+3. Internet Explorer 3 byl také první prohlížeč, který vsadil na CSS. V té době totiž konkurenční společnost Netscape prosazovala alternativní návrh, JavaScript Style Sheets (JSSS).
+4. Často se zapomíná, že v Microsoftu nepřímo vymysleli Ajax. Zpracování XML na straně klienta bylo součástí implementace XMLHttpRequest, která byla poprvé představena jako součást rozšíření ActiveX v páté verzi Internet Exploreru.
+
+</div>
+
+Celý text Nicholase C. Zakase najdete na odkaze. [vrdl.in/msieinn](https://humanwhocodes.com/blog/2012/08/22/the-innovations-of-internet-explorer/)
+
 <div class="web-only" markdown="1">
 
 Samozřejmě je nutné ještě přidat rok 2011, kdy Microsoft vymyslí a v Internet Exploreru poprvé implementuje [CSS grid](css-grid.md).
 
 </div>
-
-Celý text Nicholase C. Zakase najdete na odkaze. [vrdl.in/msieinn](https://humanwhocodes.com/blog/2012/08/22/the-innovations-of-internet-explorer/)
 
 <div class="ebook-only" markdown="1">
 

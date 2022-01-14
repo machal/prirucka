@@ -22,7 +22,7 @@ Pátá až devátá kapitola jsou už čisté referenční příručky. Budu moc
 
 Jedno ale doporučím všem – z každé kapitoly si poctivě přečtěte úvod a závěrečný kvíz. V tom druhém se zhruba dozvíte, jak jste na tom se znalostí problematiky. Nakonec třeba uznáte, že jsem netrávil čas zbytečně, když jsem se snažil, aby i referenční kapitoly měly při čtení hlavu a patu.
 
-## CodePen: „Talk is cheap. Show me the code.“
+## CodePen: „Talk is cheap, show me the code“
 
 Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu – CodePen.
 
@@ -44,19 +44,21 @@ Pokud chcete „peny“ zkoušet, což vám velmi doporučuji, udělejte prosím
 
 Takhle se nejvíc naučíte.
 
-## Podpora v prohlížečích
+## Jak se v knížce stavím k podpoře v prohlížečích?
 
-Pokud mluvím o moderních prohlížečích, mám skoro vždy na mysli tyto tři a jejich poslední verze:
+Pokud v následujících řádcích píšu o moderních prohlížečích, mám skoro vždy na mysli tyto tři a jejich poslední verze:
 
 - Chrome od Googlu, což je nyní dominující prohlížeč na mobilech i desktopu.
 - Safari od Applu, které se drží hlavně díky uzavřenosti ekosystému, ale s implementací podpory některých modernějších layoutů nespěchá.
 - Firefox od Mozilly, což je výborný prohlížeč, ale dnes už bohužel jen s velmi malým tržním podílem v řádu jednotek procent.
 
+Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi v komatu, nejspíš jej znáte. Až padne jeho jméno, pravděpodobně byste se do komatu nejraději odebrali.
+
 ### Internet Explorer, polomrtvý prohlížeč
 
-Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nový projekt a podporovat na něm prohlížeč Internet Explorer – jeho trží podíl je kolem 1 %.
+Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nový projekt a podporovat na něm prohlížeč Internet Explorer (MSIE) – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
 
-Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovaly. U těch ostatních můžete použít techniky, které obecně zmiňuji. Exploreru a podpoře ve starších prohlížečích se věnuji i v jednotlivých podkapitolách, kde se věnuji konkrétním vlastnostem.
+Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech.
 
 Raději se ale věnuji novinkám než zombie-prohlížečům.
 
@@ -68,7 +70,7 @@ Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad p�
 
 Takové [Container Queries](containe-queries.md) sice mají zatím jen experimentální podporu v Chrome, ale mohutně se na nich pracuje a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
 
-Dále jsem neodolal například u [subgridu](css-subgrid.md) – zatím s podporou jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
+Dále jsem neodolal například u [subgridu](css-subgrid.md), který má zatím implementaci jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
 
 Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozorním a samozřejmě — knížka je hlavně o vlastnostech, které používat můžete bez problémů všude.
 
