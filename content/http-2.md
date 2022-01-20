@@ -69,13 +69,13 @@ Webů běžících na HTTP/2 je už v Česku docela dost, včetně Vzhůru dolů
 Nástroje: [Firefox plugin](https://addons.mozilla.org/cs/firefox/addon/spdy-indicator/) pro detekci, zda web běží na HTTP/2. [Totéž pro Chrome](https://chrome.google.com/webstore/detail/http2-and-spdy-indicator/mpbpobfflnpcgagjijhmgnchggcjblin). [Jak poznat protokol](https://ma.ttias.be/view-http-spdy-http2-protocol-google-chrome/) v Chrome DevTools.
 </small>
 
-## Optimalizace frontendu se mění: hodně malých souborů je plus {#frontend}
+## Optimalizace frontendu se mění: hodně malých souborů už tolik nevadí {#frontend}
 
-Při optimalizaci pro HTTP/1.1 frontendisti dbající [na rychlost](https://www.vzhurudolu.cz/rychlost-nacitani) minimalizují data co stránka posílá a počet dotazů na server. Na HTTP/2 už na počtu dotazů tak moc nezáleží.
+Při optimalizaci pro HTTP/1.1 frontendisti dbající [na rychlost](https://www.vzhurudolu.cz/rychlost-nacitani) minimalizují data, které stránka posílá a počet dotazů na server. Na HTTP/2 už na počtu dotazů tak moc nezáleží.
 
 <!-- AdSnippet -->
 
-Pro HTTP/2 je tedy ideální posílání menších CSS, JS souborů. Hlavní důvody pro některé aktuální optimalizační triky odpadají:
+Pro HTTP/2 je tedy ideální posílání menších CSS, JS souborů, řekněme o velikosti alespoň několika kilobajtů. Hlavní důvody pro některé aktuální optimalizační triky odpadají:
 
 ### CSS sprite
 
