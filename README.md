@@ -79,6 +79,28 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 - **Kód** (výraznější hnědá):  
 `#64320f` (alt. `#8c4615` světlejší)
 
+#### Pravidla pro obrázky
+
+- Technicky:
+	- Zatím jen PNG, alternativně JPG.
+	- 16 : 9, alternativně 16 : 4,5. 
+	- Minimálně 3000 pixelů široké v 300 dpi. Kvůli případnému tisku.
+- Barvy:
+	- Viz výše. Nikdy ne bílé pozadí, viz ebooky a dark-mode.
+	- Informace nebo jejich vazba nesmí být závislá jen na barvě. Kvůli černobílým Kindle čtečkám.
+	- Codepeny upravit podle tohoto barevného schématu.
+- Vizuální formát, obsah:
+	- Písmo: Foro, InConsolata.
+	- Písmo pro vnitřek CodePenů - sjednotit na systémové: Helvetica, Georgia, Courrier.
+	- Obsah nikdy ke krajům.
+	- Minimalizmus. Pokud to jde dvěmi barvami, udělat dvěmi. 
+	- Bez kudrlinek jako stíny na pozadí screenshotů z Maca.
+	- Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
+	- V obrázcích neopakovat delší kód, který je v textu.
+	- Nedávat nikde tečkované, proužkované linky a šrafování - vypadá to blbě, nepasuje to a šrafování působí jako šikmý obrázek
+- Zdroje ukládáme buď přímo do příručky, nebo experimentálně taháme z Cloudinary. 
+
+
 #### Vkládání obrázků
 
 Standardně vkládáme jako obrázek:
