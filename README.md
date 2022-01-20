@@ -66,7 +66,20 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 - Shora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
 - Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
 - Informace nebo jejich vazba nesmí být závislá jen na barvě. Kůli černobílým Kindle čtečkám.
-- Zdroje ukládáme buď přímo do příručky, nebo exterimentálně taháme z Cloudinary, ale to spíše pro články na blogu.
+- Zdroje ukládáme buď přímo do příručky, nebo exterimentálně vkládáme [z Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/home), ale to spíše pro články na blogu.
+
+#### Schéma barev pro obrázky a ilustrace
+
+- **Hlavní barva** (tmavě hnědá):  
+`#2E2C08` (alternativně `#58563a`, `#82806b`, `#abab9d`)
+- **Pozadí** (hnědo-šedivá):  
+`#F2F0EC` (alt. `#e5e3de`, pokud je tam bílý oddělovač nebo bílé boxy)
+- **Akcent** (tmavě zelená, jen pokud chci na něco upozornit a došly barvy):  
+`#30680d` (alt. tmavší `#285d19`, `#174622` nebo vyloženě šedá `#002c3a`)
+- **Kód** (výraznější hnědá):  
+`#64320f` (alt. `#8c4615` světlejší)
+
+#### Vkládání obrázků
 
 Standardně vkládáme jako obrázek:
 
