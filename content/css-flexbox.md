@@ -273,7 +273,7 @@ Všechny `<li>` se tady stávají flex položkami.
 Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si je na zjednodušeném schématu:
 
 <figure>
-<img src="../dist/images/original/flexbox-schema.jpg" width="1600" height="900" alt="Schéma flexboxu">
+<img src="../dist/images/original/vdlayout/flexbox-schema.jpg" width="1600" height="900" alt="Schéma flexboxu">
 <figcaption markdown="1">
 *Schéma vnitřních struktur flexboxu.*
 </figcaption>

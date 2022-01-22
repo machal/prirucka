@@ -90,31 +90,6 @@ Uznávám, že už to vypadá docela složitě. Ale bez `calc()` byste layout st
 
 (Pro zájemce: více o atributu `sizes` najdete na Vzhůru dolů. [vrdl.cz/p/srcset-sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes))
 
-## 3) Barevný přechod se stabilně širokou částí {#priklady-2}
-
-Vezměme gradient, jehož část chceme definovat stabilní šířkou a ostatní části už standardně podílem z celku.
-
-Více řekne obrázek. Černá část bude mít stabilní šířku. Bílá plocha se zmenšuje a zvětšuje podle dostupného místa.
-
-![CSS funkce calc() na gradientu](../dist/images/original/css3-calc-gradient.jpg)
-
-Takto vypadá kód:
-
-```css
-div {
-  background: 
-    linear-gradient(to right bottom, 
-      transparent calc(50% - 2em), 
-      #000 0, 
-      #000 calc(50% + 2em), 
-      transparent 0);
-}
-```
-
-Následuje živá ukázka z pera Any Tudor.
-
-CodePen: [cdpn.io/e/YyGPJo](https://codepen.io/thebabydino/pen/YyGPJo).
-
 ## Podpora v prohlížečích {#podpora}
 
 Funkci `calc()` podporují všechny moderní prohlížeče.
