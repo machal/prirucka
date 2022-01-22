@@ -56,7 +56,7 @@ Máte? Výborně. Toto se nám bude hodit, až budeme hovořit o hodnotách pro 
 Vnější zobrazení v podstatě určuje roli stylovaného boxu v uspořádání toku stránky.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-display-inline-block.png" width="1600" height="450" alt="CSS display - inline a block">
+<img src="../dist/images/original/vdlayout/css-display-inline-block.jpg" width="1600" height="450" alt="CSS display - inline a block">
 <figcaption markdown="1">
 *Hodnoty pro vnější zobrazení jsou naši staří známí.*
 </figcaption>
@@ -115,7 +115,7 @@ Zajímavější bude druhý CodePen. Všechny tři vnitřní prvky jsou „tekou
 Výsledek vidíte na obrázku.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-display-outer.png" width="1600" height="450" alt="CSS display - inline a block">
+<img src="../dist/images/original/vdlayout/css-display-outer.jpg" width="1600" height="450" alt="CSS display - inline a block">
 <figcaption markdown="1">
 *Možnosti hodnot vnitřního zobrazení s vnitřními plovoucími prvky.*
 </figcaption>
@@ -151,7 +151,7 @@ CodePen: [cdpn.io/e/gOwqJmq](https://codepen.io/machal/pen/gOwqJmq?editors=0000)
 První příklad na následujícím obrázku ukazuje zobrazení typu `list-item`.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-display-etc.png" width="1600" height="450" alt="CSS display - list-item, none, contents">
+<img src="../dist/images/original/vdlayout/css-display-etc.jpg" width="1600" height="450" alt="CSS display - list-item, none, contents">
 <figcaption markdown="1">
 *Další typy (ne)zobrazení v CSS.*
 </figcaption>

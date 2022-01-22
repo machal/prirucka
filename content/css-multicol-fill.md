@@ -4,7 +4,7 @@ Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost column-fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.png)
+![CSS vlastnost column-fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -35,7 +35,7 @@ Rozdíl mezi `balance` a `balance-all` uvidíte jen ve vícestránkových kontex
 Vlastnost se vám asi zatím bude používat hůře. Implementace v prohlížečích je různorodá.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-multicol-fill.png" width="1600" height="900" alt="CSS vlastnost column-fill">
+<img src="../dist/images/original/vdlayout/css-multicol-fill.jpg" width="1600" height="900" alt="CSS vlastnost column-fill">
 <figcaption markdown="1">
 *Na obrázku je rozdíl mezi hodnotami `auto` a `balance` snad dobře vidět.*
 </figcaption>

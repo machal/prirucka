@@ -4,7 +4,7 @@ Ve vícesloupcovém rozvržení (CSS Multi-column layout) je většinou potřeba
 
 <div class="connected" markdown="1">
 
-![CSS vlastnosti column-gap a column-rule](../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png)
+![CSS vlastnosti column-gap a column-rule](../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -29,7 +29,7 @@ Je jich hned několik:
 Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače nikoliv. Oddělovač jakékoliv šířky neubírá místo mezerám nebo sloupcům v rozvržení. Nedává vám to smysl? Podívejte se na příklad na konci tohoto textu.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-multicol-gap-rule.png" width="1600" height="900" alt="CSS vlastnosti column-gap a column-rule">
+<img src="../dist/images/original/vdlayout/css-multicol-gap-rule.jpg" width="1600" height="900" alt="CSS vlastnosti column-gap a column-rule">
 <figcaption markdown="1">
 *Na obrázku jsme definovali mezeru mezi sloupečky o šířce `3em` a k ní ještě přidali šedivý čárkovaný oddělovač .*
 </figcaption>

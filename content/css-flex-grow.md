@@ -4,7 +4,7 @@ Jak moc může položka růst relativně k dalším položkám, pokud je k dispo
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost flex-grow](../dist/images/medium/vdlayout/css-flex-grow-schema.png)
+![CSS vlastnost flex-grow](../dist/images/medium/vdlayout/css-flex-grow-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -38,7 +38,7 @@ Záporné hodnoty zde nejsou validní, ale desetinná čísla jsou povolená, co
 V interaktivní ukázce máme kontejner flexboxu (`display:flex`) a první položce přidáváme různě hodnoty vlastnosti `flex-grow`:
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-grow.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
+<img src="../dist/images/original/vdlayout/css-flex-grow.jpg" width="1600" height="900" alt="CSS vlastnost flex-shrink">
 <figcaption markdown="1">
 *Jak se bude položka flexboxu roztahovat do volného místa?*
 </figcaption>

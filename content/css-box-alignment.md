@@ -22,7 +22,7 @@ Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou h
 
 Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednoduchého klíče.
 
-![Tahák k CSS Box Alignment](../dist/images/original/vdlayout/css-box-alignment-tahak.png)
+![Tahák k CSS Box Alignment](../dist/images/original/vdlayout/css-box-alignment-tahak.jpg)
 
 Než vyberete tu správnou, musíte si ujasnit:
 
@@ -82,19 +82,19 @@ Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 
   <article role="article">
     <h4 id="justify-items"><a href="css-justify-items.md"><code>justify-items</code></a></h4>
-    <p><a href="css-justify-items.md"><img src="../dist/images/small/vdlayout/css-justify-items-schema.png" alt="Vlastnost justify-items" /></a></p>
+    <p><a href="css-justify-items.md"><img src="../dist/images/small/vdlayout/css-justify-items-schema.jpg" alt="Vlastnost justify-items" /></a></p>
     <p>Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. <code>justify-items:center</code> centruje všechny položky.</p>
   </article>
 
   <article role="article">
     <h4 id="align-items"><a href="css-align-items.md"><code>align-items</code></a></h4>
-    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.png" alt="Vlastnost align-items" /></a></p>
+    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.jpg" alt="Vlastnost align-items" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items:end</code> zarovná položky ke spodní hraně kontejneru.</p>
   </article>
 
   <article role="article">
     <h4 id="place-items"><a href="css-place-items.md"><code>place-items</code></a></h4>
-    <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.png" alt="Vlastnost place-items" /></a></p>
+    <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.jpg" alt="Vlastnost place-items" /></a></p>
     <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items:end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
   </article>
 
@@ -108,17 +108,17 @@ Pro konkrétní položku definujeme, jak se bude zarovnávat.
 
   <article role="article">
     <h4 id="justify-self"><a href="css-justify-self.md"><code>justify-self</code></a></h4>
-    <p><a href="css-justify-self.md"><img src="../dist/images/small/vdlayout/css-justify-self-schema.png" alt="Vlastnost justify-self" /></a></p>
+    <p><a href="css-justify-self.md"><img src="../dist/images/small/vdlayout/css-justify-self-schema.jpg" alt="Vlastnost justify-self" /></a></p>
     <p>Zarovnání na řádkové ose (obvykle vodorovně). <br> Např. <code>justify-self:center</code> vodorovně centruje položku.</p>
   </article>
   <article role="article">
     <h4 id="align-self"><a href="css-align-self.md"><code>align-self</code></a></h4>
-    <p><a href="css-align-self.md"><img src="../dist/images/small/vdlayout/css-align-self-schema.png?2" alt="Vlastnost align-self" /></a></p>
+    <p><a href="css-align-self.md"><img src="../dist/images/small/vdlayout/css-align-self-schema.jpg?2" alt="Vlastnost align-self" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-self:end</code> zarovná položku ke spodní hraně.</p>
   </article>
   <article role="article">
     <h4 id="place-self"><a href="css-place-self.md"><code>place-self</code></a></h4>
-    <p><a href="css-place-self.md"><img src="../dist/images/small/vdlayout/css-place-self-schema.png" alt="Vlastnost place-self" /></a></p>
+    <p><a href="css-place-self.md"><img src="../dist/images/small/vdlayout/css-place-self-schema.jpg" alt="Vlastnost place-self" /></a></p>
     <p>Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. <code>place-self:end center</code> zarovná položku ke spodní hraně a vodorovně doprostřed.</p>
   </article>
 
@@ -132,7 +132,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
 
   <article role="article">
     <h4 id="gap"><a href="css-gap.md"><code>gap</code></a></h4>
-    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.png" alt="CSS vlastnost gap" /></a></p>
+    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.jpg" alt="CSS vlastnost gap" /></a></p>
     <p>
       Definice mezery mezi buňkami. <br>
       Např. <code>gap:1rem</code> definuje mezeru `1rem` v obou směrech.
@@ -140,17 +140,17 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
   </article>  
   <article role="article">
     <h4 id="justify-content"><a href="css-justify-content.md"><code>justify-content</code></a></h4>
-    <p><a href="css-justify-content.md"><img src="../dist/images/small/vdlayout/css-justify-content-schema.png" alt="Vlastnost justify-content" /></a></p>
+    <p><a href="css-justify-content.md"><img src="../dist/images/small/vdlayout/css-justify-content-schema.jpg" alt="Vlastnost justify-content" /></a></p>
     <p>Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. <code>justify-content:space-between</code> rozdělí prostor mezi položky.</p>
   </article>
   <article role="article">
     <h4 id="align-content"><a href="css-align-content.md"><code>align-content</code></a></h4>
-    <p><a href="css-align-content.md"><img src="../dist/images/small/vdlayout/css-align-content-schema.png" alt="Vlastnost align-content" /></a></p>
+    <p><a href="css-align-content.md"><img src="../dist/images/small/vdlayout/css-align-content-schema.jpg" alt="Vlastnost align-content" /></a></p>
     <p>Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. <code>align-content:start</code> zajistí zarovnání položek k horní hraně kontejneru.</p>
   </article>
   <article role="article">
     <h4 id="place-content"><a href="css-place-content.md"><code>place-content</code></a></h4>
-    <p><a href="css-place-content.md"><img src="../dist/images/small/vdlayout/css-place-content-schema.png" alt="Vlastnost place-content" /></a></p>
+    <p><a href="css-place-content.md"><img src="../dist/images/small/vdlayout/css-place-content-schema.jpg" alt="Vlastnost place-content" /></a></p>
     <p>Zkratka pro rozdělení prostoru v obou směrech. <br> Např. <code>place-content:start space-between</code> zarovná položky k horní hraně a vodorovné dělí prostor.</p>
   </article>
 
@@ -162,7 +162,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
 
   <article role="article">
     <h4 id="order"><a href="css-order.md"><code>order</code></a></h4>
-    <p><a href="css-order.md"><img src="../dist/images/small/vdlayout/css-order-schema.png" alt="CSS vlastnost order" /></a></p>
+    <p><a href="css-order.md"><img src="../dist/images/small/vdlayout/css-order-schema.jpg" alt="CSS vlastnost order" /></a></p>
     <p>
       Změna pořadí prvků layoutu. <br>
       Např. <code>order:-1</code> přesune položku před všechny ostatní.
@@ -202,7 +202,7 @@ Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zam�
 
 Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda to jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty.
 
-Konkrétněji o podpoře v prohlížečích píšu v příručkách pro jednotlivé vlastnosti.
+Konkrétněji o podpoře v prohlížečích píšu v textech o jednotlivých vlastnostech.
 
 <div class="web-only" markdown="1">
 

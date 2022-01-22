@@ -4,7 +4,7 @@ Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vy
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost flex-direction](../dist/images/medium/vdlayout/css-flex-direction-schema.png)
+![CSS vlastnost flex-direction](../dist/images/medium/vdlayout/css-flex-direction-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -32,7 +32,7 @@ Položky flexboxu se skládají shora dolů, do sloupce.
 Do sloupce, ale v opačném směru, tedy zdola nahoru.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-direction.png?2" width="1600" height="900" alt="CSS vlastnost flex-direction">
+<img src="../dist/images/original/vdlayout/css-flex-direction.jpg?2" width="1600" height="900" alt="CSS vlastnost flex-direction">
 <figcaption markdown="1">
 *Jakým směrem se flexboxové rozvržení vykreslí?*
 </figcaption>

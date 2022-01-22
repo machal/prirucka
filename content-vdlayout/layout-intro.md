@@ -11,7 +11,7 @@ V první kapitole s tématem potřebujeme nějak začít, vytvořit si první n�
 Tohle bude Tinder pro systémy layoutu v CSS.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-layout-intro-scheme.png" width="1600" height="900" alt="Základní představení flex, grid, multicol">
+<img src="../dist/images/original/vdlayout/css-layout-intro-scheme.jpg" width="1600" height="900" alt="Základní představení flex, grid, multicol">
 <figcaption markdown="1">
 *To jsou oni. Seznamte se.*
 </figcaption>
@@ -50,7 +50,7 @@ Tady se proto nabízí spíše paralela s přijímacím pohovorem na pracovní p
 My se teď pokusíme na jednoduchých příkladech ukázat, co je který systém rozvržený zač. Ostatně takhle to budeme dělat v celé knížce.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-layout-intro-examples.png" width="1600" height="900" alt="Zadání příkladů pro Flex, grid, Multicol">
+<img src="../dist/images/original/vdlayout/css-layout-intro-examples.jpg" width="1600" height="900" alt="Zadání příkladů pro Flex, grid, Multicol">
 <figcaption markdown="1">
 *Tři systémy a tři zadání pro příklad.*
 </figcaption>
@@ -119,7 +119,7 @@ Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovn
 [Vlastností `flex`](css-flex.md), což je zkratka pro nastavení šířky a způsobu rozpínání a smršťování prvku, jsme nastavili podíl na celkové šířce.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-layout-intro-example-flex.png" width="1600" height="900" alt="Flexbox ve Firefox DevTools">
+<img src="../dist/images/original/vdlayout/css-layout-intro-example-flex.jpg" width="1600" height="900" alt="Flexbox ve Firefox DevTools">
 <figcaption markdown="1">
 *Flexbox pod rentgenem. Výsledné rozvržení prohlížené ve vývojářských nástrojích Firefoxu.*
 </figcaption>
@@ -144,7 +144,7 @@ Pojďme se podívat na zjednodušené HTML:
 ```html
 <div class="box">
   <p class="box__image">
-    <img src="obrazek.png" alt="…">
+    <img src="obrazek.jpg" alt="…">
   </p>
   <p class="box__text">
     Lorem ipsum…
@@ -191,7 +191,7 @@ Automatické umístění zrušíme tímto kódem:
 Co je ta linka? Nejlépe to uvidíme na následujícím obrázku, který je zároveň doporučením, abyste věnovali pozornost [vývojářským nástrojům prohlížečů](css-layout-devtools.md). Ty umí být při práci s layouty opravdovými pomocníky.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-layout-intro-examples-grid.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/css-layout-intro-examples-grid.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *DevTools Firefoxu (ale i Chrome) krásně ukáží, co je myšleno termínem „linka gridu“.*
 </figcaption>
@@ -232,8 +232,6 @@ V HTML máme 15 položek seznamu, ale pro potřeby ukázky v knížce jsem si vy
 </div>
 ```
 
-Když už jsem vás přinutil si představit Tinder pro CSS layout, vaše imaginace je na tak dobré úrovni, až se mám chuť vsadit, že ten patnáctičlenný seznam položek vidíte úplně živě.
-
 S pomocí flexboxu ani gridu bychom zde neuspěli, protože pro rozdělení do sloupců bychom museli mezi jednotlivé `<li>` vkládat prvky jako `<div>`, které by layout nesly.
 
 Navíc bychom zde s pomocí těchto dvou typů rozvržení nebyli schopni snadno dosáhnout automatického generování vhodného počtu sloupečků. Layout bychom prostě museli museli doslovně definovat.
@@ -250,7 +248,7 @@ Toto je síla CSS Multicolumn Layout. Chcete rozvržení o šířce sloupce maxi
 K [vlastnosti `columns`](css-multicol-columns.md) se ještě dostaneme, vlastnost `gap` už trochu znáte.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-layout-intro-example-multicol.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/css-layout-intro-example-multicol.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Výsledek ve Firefoxu. Je ale dobré vědět, že v různých šířkách okna bude počet sloupečků různý.*
 </figcaption>

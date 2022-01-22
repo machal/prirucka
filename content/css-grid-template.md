@@ -6,7 +6,7 @@ Jde o zkratku (shorthand) pro vlastnosti [`grid-template-rows`, `grid-template-c
 
 <div class="connected" markdown="1">
 
-![Vlastnost grid-template-areas](../dist/images/medium/vdlayout/schema-css-grid-template.png)
+![Vlastnost grid-template-areas](../dist/images/medium/vdlayout/schema-css-grid-template.jpg)
 
 <div class="web-only" markdown="1">
 

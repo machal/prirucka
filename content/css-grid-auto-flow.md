@@ -4,7 +4,7 @@ Vlastnost `grid-auto-flow` určuje, jak bude fungovat algoritmus automatického 
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost grid-auto-flow](../dist/images/medium/vdlayout/schema-css-grid-auto-flow.png)
+![CSS vlastnost grid-auto-flow](../dist/images/medium/vdlayout/schema-css-grid-auto-flow.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -79,7 +79,7 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/grid-auto-flow.png" width="1920" height="540"  alt="grid-auto-flow: column"></p>
+<p><img src="../dist/images/original/vdlayout/grid-auto-flow.jpg" width="1920" height="450"  alt="grid-auto-flow: column"></p>
 
 CodePen: [cdpn.io/e/voXWGv](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
@@ -123,7 +123,7 @@ Vysvětleme:
 - `grid-auto-flow: dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-grid-auto-flow-dense.png" width="1600" height="900" alt="grid-auto-flow: dense">
+<img src="../dist/images/original/vdlayout/css-grid-auto-flow-dense.jpg" width="1600" height="900" alt="grid-auto-flow: dense">
 <figcaption markdown="1">
 *Zahuštěné vykreslení (`dense`)  prostě dává přednost hustotě před pořadí.*
 </figcaption>

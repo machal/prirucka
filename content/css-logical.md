@@ -27,7 +27,7 @@ Arabština má, jak známo, opačný tok textu než evropské jazyky – čte se
 Vezměme, že máme jednoduchý příklad, který vidíte na obrázku. Nadpis, obrázek a text, který jej obtéká. Na polovině stránky je to česky, na polovině arabsky.
 
 <figure>
-<img src="../dist/images/original/css-logical-czech-arabic.png" width="1600" height="900" alt="Čeština a Arabština na jedné stránce">
+<img src="../dist/images/original/vdlayout/css-logical-czech-arabic.jpg" width="1600" height="900" alt="Čeština a Arabština na jedné stránce">
 <figcaption markdown="1">
 *Jak to safra nastylovat co nejuniverzálněji?*
 </figcaption>
@@ -137,7 +137,7 @@ Změnil se směr layoutu, ale ne směr toku dokumentu.
 Pozice blokových vlastností se mění až se směrem toku dokumentu, tedy zapojením deklarace `writing-mode:vertical-rl`.
 
 <figure>
-<img src="../dist/images/original/css-logical-direction.png" width="1600" height="900" alt="flex-direction a writing-mode">
+<img src="../dist/images/original/vdlayout/css-logical-direction.jpg" width="1600" height="900" alt="flex-direction a writing-mode">
 <figcaption markdown="1">
 Zelené blokové okraje změní směr až se změnou toku dokumentu.
 </figcaption>
@@ -162,7 +162,7 @@ Než je začnete používat, dobře si to otestujte v různých prohlížečích
 Pro box model máme hezký obrázek s porovnáním fyzických a logických variant:
 
 <figure>
-<img src="../dist/images/original/css-logical-physical.png" width="1600" height="900" alt="CSS physical / CSS logical">
+<img src="../dist/images/original/vdlayout/css-logical-physical.jpg" width="1600" height="900" alt="CSS physical / CSS logical">
 <figcaption markdown="1">
 Zdroj: Adrian Roselli. [cdpn.io/e/bGGxrvM](https://codepen.io/aardrian/pen/bGGxrvM)
 </figcaption>

@@ -115,7 +115,7 @@ aside {
 A teď k těm rozdílům.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-perf.png" width="1600" height="900" alt="Rozdíly ve vykreslování gridu a flexboxu">
+<img src="../dist/images/original/vdlayout/css-flex-perf.jpg" width="1600" height="900" alt="Rozdíly ve vykreslování gridu a flexboxu">
 <figcaption markdown="1">
 *Rozdíly ve vykreslování gridu a flexboxu, na které poukazuje Jake Archibald.*
 </figcaption>

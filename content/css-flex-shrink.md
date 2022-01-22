@@ -4,7 +4,7 @@ Jakým podílem se může položka flexboxu zmenšovat, pokud v rodičovském ko
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost flex-shrink](../dist/images/medium/vdlayout/css-flex-shrink-schema.png)
+![CSS vlastnost flex-shrink](../dist/images/medium/vdlayout/css-flex-shrink-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -38,7 +38,7 @@ Možná to celé zní trošku zašmodrchaně a bude lepší ukázat si to na obr
 Pevně doufám, že když se podíváte na obrázek, problematiku smršťování a vlastnosti `flex-shrink` snáze pochopíte.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-shrink.png" width="1600" height="900" alt="CSS vlastnost flex-shrink">
+<img src="../dist/images/original/vdlayout/css-flex-shrink.jpg" width="1600" height="900" alt="CSS vlastnost flex-shrink">
 <figcaption markdown="1">
 *Různé hodnoty vlastnosti na první položce dělají různé smršťování.*
 </figcaption>

@@ -4,7 +4,7 @@ Vlastnost `flex` nastaví výchozí velikost elementu a způsob, jakým se smí 
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost flex](../dist/images/medium/vdlayout/css-flex-schema.png)
+![CSS vlastnost flex](../dist/images/medium/vdlayout/css-flex-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -88,7 +88,7 @@ Odpovídá `flex: 0 0 auto` a zcela ruší pružnost položky. Druhá nejčastě
 U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se vám změní výchozí velikost položky a model pružnosti, jak jsme zmiňovali [u vlastnosti `flex-basis`](css-flex-basis.md).
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex.png" width="1600" height="900" alt="CSS vlastnost flex">
+<img src="../dist/images/original/vdlayout/css-flex.jpg" width="1600" height="900" alt="CSS vlastnost flex">
 <figcaption markdown="1">
 *Přednastavené hodnoty a jejich dopad na velikost položky. Zapište si je za uši, jsou hodně důležité.*
 </figcaption>

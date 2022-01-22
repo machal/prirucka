@@ -5,7 +5,7 @@ Pokud tento text nečtete v krytu, kde se mnoho let připravujete na zombie apok
 Tento frontendový framework se proslavil snadností stavby uživatelského rozhraní, zejména pro vývojáře nebo amatéry, kterým nejsou CSS, HTML a JavaScript úplně blízké.
 
 <figure>
-<img src="../dist/images/original/vdlayout/bootstrap-grid.png" width="1600" height="900" alt="Bootstrap - dokumentace ke gridu">
+<img src="../dist/images/original/vdlayout/bootstrap-grid.jpg" width="1600" height="900" alt="Bootstrap - dokumentace ke gridu">
 <figcaption markdown="1">
 *Tohle určitě vidíte poprvé… Nebo taky ne.*
 </figcaption>
@@ -121,7 +121,7 @@ Shrňme si to v kompletním CSS kódu:
 CodePen: [cdpn.io/e/MWpzqdv](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-bootstrap-4-8.png" width="1600" height="900" alt="4/8 rozvržení jako v Bootstrapu">
+<img src="../dist/images/original/vdlayout/priklad-bootstrap-4-8.jpg" width="1600" height="900" alt="4/8 rozvržení jako v Bootstrapu">
 <figcaption markdown="1">
 *Rozvržení 4/8 jako v Bootstrapu s překryvnou vrstvou vyznačující neviditelné sloupečky gridu a mezery mezi nimi.*
 </figcaption>

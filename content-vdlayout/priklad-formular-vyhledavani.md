@@ -5,7 +5,7 @@ V této ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkou
 Zadání přichází s návrhovým vzorem, na který každá kodérka a každý kodér jednou narazí.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-vyhledavani-zadani.png" width="1600" height="900" alt="Příklad s vyhledáváním">
+<img src="../dist/images/original/vdlayout/priklad-vyhledavani-zadani.jpg" width="1600" height="900" alt="Příklad s vyhledáváním">
 <figcaption markdown="1">
 *Co budeme vyhledávat dneska? Co třeba řešení tohoto příkladu?*
 </figcaption>

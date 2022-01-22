@@ -1,9 +1,9 @@
 # Hromada lívanců
 
-V dalším relativně častém návrhovém vzoru z uživatelských rozhraní webů zkusíme využít rozvržení mřížkou, tentorkát ale v jiném směru než v předchozí ukázce.
+V dalším relativně častém návrhovém vzoru z uživatelských rozhraní webů zkusíme využít rozvržení mřížkou, tentokrát ale v jiném směru než v předchozí ukázce.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-pancake-zadani.png" width="1600" height="900" alt="Příklad - hromada lívanců">
+<img src="../dist/images/original/vdlayout/priklad-pancake-zadani.jpg" width="1600" height="900" alt="Příklad - hromada lívanců">
 <figcaption markdown="1">
 *Hromada lívanců. Dáte si to s džemem, ovocem, jogurtem nebo třeba nějakým typem CSS layoutu?*
 </figcaption>

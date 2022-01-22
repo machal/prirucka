@@ -4,7 +4,7 @@ Vlastnost `justify-items` definuje na kontejneru layoutu zarovnání položek na
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost justify-items](../dist/images/medium/vdlayout/css-justify-items-schema.png)
+![CSS vlastnost justify-items](../dist/images/medium/vdlayout/css-justify-items-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -65,7 +65,7 @@ Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět e
 
 Vlastnost `justify-items` zde tedy zarovnává položky na hlavní (vodorovné) ose do prostoru, který je jim vymezený (`1fr`, tedy jeden [podíl na celku](css-jednotka-fr.md)). Hodnota `end` je umístí ke konci onoho vymezeného prostoru.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-justify-items-end.png" width="1920" height="540"  alt="justify-items:end v Chrome při zapnutém grid overlay"></p>
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-justify-items-end.jpg" width="1920" height="540"  alt="justify-items:end v Chrome při zapnutém grid overlay"></p>
 
 CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
@@ -83,7 +83,7 @@ CodePen: [cdpn.io/e/eYZgOwL](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-items](../dist/images/original/vdlayout/css-justify-items-hodnoty.png)
+![Hodnoty vlastnosti justify-items](../dist/images/original/vdlayout/css-justify-items-hodnoty.jpg)
 
 Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 

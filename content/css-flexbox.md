@@ -24,19 +24,19 @@ Možná je také „inline“ hodnota: `inline-flex`, která se chová jako `inl
 
   <article role="article">
     <h4><a href="css-flex-wrap.md"><code>flex-wrap</code></a></h4>
-    <p><a href="css-flex-wrap.md"><img src="../dist/images/small/vdlayout/css-flex-wrap-schema.png" alt="Vlastnost flex-wrap" /></a></p>
+    <p><a href="css-flex-wrap.md"><img src="../dist/images/small/vdlayout/css-flex-wrap-schema.jpg" alt="Vlastnost flex-wrap" /></a></p>
     <p>Mohou se položky zalamovat? Výchozí je nezalamovat. <br>Např. <code>flex-wrap:wrap</code> – položky se mohou vykreslit na další řádek.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-flex-direction.md"><code>flex-direction</code></a></h4>
-    <p><a href="css-flex-direction.md"><img src="../dist/images/small/vdlayout/css-flex-direction-schema.png" alt="Vlastnost flex-direction" /></a></p>
+    <p><a href="css-flex-direction.md"><img src="../dist/images/small/vdlayout/css-flex-direction-schema.jpg" alt="Vlastnost flex-direction" /></a></p>
     <p>Určí směr toku rozvržení. Výchozí je zleva doprava, do řádku. <br>Např. <code>flex-direction:column</code> – položky se skládají shora dolů, do sloupce.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-flex-flow.md"><code>flex-flow</code></a></h4>
-    <p><a href="css-flex-flow.md"><img src="../dist/images/small/vdlayout/css-flex-flow-schema.png" alt="Vlastnost flex-flow" /></a></p>
+    <p><a href="css-flex-flow.md"><img src="../dist/images/small/vdlayout/css-flex-flow-schema.jpg" alt="Vlastnost flex-flow" /></a></p>
     <p>Zkratka pro <code>flex-wrap</code> a <code>flex-direction</code>. <br>Např. <code>flex-flow:wrap column</code> – položky se zalamují a skládají shora dolů.</p>
   </article>
 
@@ -51,7 +51,7 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
 
   <article role="article">
     <h4 id="gap"><a href="css-gap.md"><code>gap</code></a></h4>
-    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.png" alt="CSS vlastnost gap" /></a></p>
+    <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.jpg" alt="CSS vlastnost gap" /></a></p>
     <p>
       Definice mezery mezi buňkami. <br>
       <code>gap:1rem;</code>
@@ -60,13 +60,13 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
 
   <article role="article">
     <h4><a href="css-align-items.md"><code>align-items</code></a></h4>
-    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.png" alt="Vlastnost align-items" /></a></p>
+    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.jpg" alt="Vlastnost align-items" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-place-items.md"><code>place-items</code></a></h4>
-    <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.png" alt="Vlastnost place-items" /></a></p>
+    <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.jpg" alt="Vlastnost place-items" /></a></p>
     <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items: end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
   </article>
 
@@ -78,19 +78,19 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
   <article role="article">
     <h4><a href="css-justify-content.md"><code>justify-content</code></a></h4>
-    <p><a href="css-justify-content.md"><img src="../dist/images/small/vdlayout/css-justify-content-schema.png" alt="Vlastnost justify-content" /></a></p>
+    <p><a href="css-justify-content.md"><img src="../dist/images/small/vdlayout/css-justify-content-schema.jpg" alt="Vlastnost justify-content" /></a></p>
     <p>Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. <code>justify-content:space-between</code> rozdělí prostor mezi položky.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-align-content.md"><code>align-content</code></a></h4>
-    <p><a href="css-align-content.md"><img src="../dist/images/small/vdlayout/css-align-content-schema.png" alt="Vlastnost align-content" /></a></p>
+    <p><a href="css-align-content.md"><img src="../dist/images/small/vdlayout/css-align-content-schema.jpg" alt="Vlastnost align-content" /></a></p>
     <p>Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. <code>align-content:start</code> zajistí zarovnání položek k horní hraně kontejneru.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-place-content.md"><code>place-content</code></a></h4>
-    <p><a href="css-place-content.md"><img src="../dist/images/small/vdlayout/css-place-content-schema.png" alt="Vlastnost place-content" /></a></p>
+    <p><a href="css-place-content.md"><img src="../dist/images/small/vdlayout/css-place-content-schema.jpg" alt="Vlastnost place-content" /></a></p>
     <p>Zkratka pro rozdělení prostoru v obou směrech. <br> Např. <code>place-content:start space-between</code> zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky.</p>
   </article>
 
@@ -105,25 +105,25 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
   <article role="article">
     <h4><a href="css-flex-grow.md"><code>flex-grow</code></a></h4>
-    <p><a href="css-flex-grow.md"><img src="../dist/images/small/vdlayout/css-flex-grow-schema.png" alt="Vlastnost flex-grow" /></a></p>
+    <p><a href="css-flex-grow.md"><img src="../dist/images/small/vdlayout/css-flex-grow-schema.jpg" alt="Vlastnost flex-grow" /></a></p>
     <p>Jak moc může položka růst. Výchozí je <code>0</code>. <br>Např. <code>flex-grow: 1</code> – podíl na celku hodnoty <code>1</code> z volného prostoru.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-flex-shrink.md"><code>flex-shrink</code></a></h4>
-    <p><a href="css-flex-shrink.md"><img src="../dist/images/small/vdlayout/css-flex-shrink-schema.png" alt="Vlastnost flex-shrink" /></a></p>
+    <p><a href="css-flex-shrink.md"><img src="../dist/images/small/vdlayout/css-flex-shrink-schema.jpg" alt="Vlastnost flex-shrink" /></a></p>
     <p>Faktor smršťování položky. Výchozí je <code>1</code>. <br>Např. <code>flex-shrink:0</code> – položka se nesmršťuje.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-flex-basis.md"><code>flex-basis</code></a></h4>
-    <p><a href="css-flex-basis.md"><img src="../dist/images/small/vdlayout/css-flex-basis-schema.png" alt="Vlastnost flex-basis" /></a></p>
+    <p><a href="css-flex-basis.md"><img src="../dist/images/small/vdlayout/css-flex-basis-schema.jpg" alt="Vlastnost flex-basis" /></a></p>
     <p>Výchozí velikost položky. Výchozí je <code>auto</code>. <br>Např. <code>flex-basis:0</code> – nehledí se na rozměr obsahu ani <code>width</code> či <code>height</code>.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-flex.md"><code>flex</code></a></h4>
-    <p><a href="css-flex.md"><img src="../dist/images/small/vdlayout/css-flex-schema.png" alt="Vlastnost flex-basis" /></a></p>
+    <p><a href="css-flex.md"><img src="../dist/images/small/vdlayout/css-flex-schema.jpg" alt="Vlastnost flex-basis" /></a></p>
     <p>Zkratka pro vlastnosti <code>flex-grow</code>, <code>flex-shrink</code> a <code>flex-basis</code>. <br>Např. <code>flex:auto</code> – roste, smršťuje se a rozměr je nastavený na <code>auto</code>.</p>
   </article>
 
@@ -140,13 +140,13 @@ Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude za
 
   <article role="article">
     <h4><a href="css-align-self.md"><code>align-self</code></a></h4>
-    <p><a href="css-align-self.md"><img src="../dist/images/small/vdlayout/css-align-self-schema.png?2" alt="Vlastnost align-self" /></a></p>
+    <p><a href="css-align-self.md"><img src="../dist/images/small/vdlayout/css-align-self-schema.jpg?2" alt="Vlastnost align-self" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-self:end</code> zarovná položku ke spodní hraně.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-place-self.md"><code>place-self</code></a></h4>
-    <p><a href="css-place-self.md"><img src="../dist/images/small/vdlayout/css-place-self-schema.png" alt="Vlastnost place-self" /></a></p>
+    <p><a href="css-place-self.md"><img src="../dist/images/small/vdlayout/css-place-self-schema.jpg" alt="Vlastnost place-self" /></a></p>
     <p>Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. <code>place-self:end center</code> zarovná položku ke spodní hraně a vodorovně doprostřed.</p>
   </article>
 
@@ -239,7 +239,7 @@ Na mobilech zpravidla není pro rozvržení prvků vedle sebe prostor. Přidáme
 Na obrázku je vidět, k čemu jsme se dopracovali:
 
 <figure>
-<img src="../dist/images/original/flexbox-priklad.png" width="1600" height="900" alt="Příklad flexboxu">
+<img src="../dist/images/original/vdlayout/flexbox-priklad.jpg" width="1600" height="900" alt="Příklad flexboxu">
 <figcaption markdown="1">
 *Takhle to dopadá, když si flexbox pustíte k tělu.*
 </figcaption>
@@ -273,7 +273,7 @@ Všechny `<li>` se tady stávají flex položkami.
 Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si je na zjednodušeném schématu:
 
 <figure>
-<img src="../dist/images/original/flexbox-schema.png" width="1600" height="900" alt="Schéma flexboxu">
+<img src="../dist/images/original/flexbox-schema.jpg" width="1600" height="900" alt="Schéma flexboxu">
 <figcaption markdown="1">
 *Schéma vnitřních struktur flexboxu.*
 </figcaption>
@@ -291,7 +291,7 @@ Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě 
 Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s podporou přišel už [Internet Explorer](msie.md) 10! Grafy na CanIUse jsou tedy pěkně zelené. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
 <figure>
-<img src="../dist/images/original/css-flexbox-caniuse.png" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
+<img src="../dist/images/original/vdlayout/css-flexbox-caniuse.jpg" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 *Jak je to krásně zelené! Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
 </figcaption>

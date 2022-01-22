@@ -13,7 +13,7 @@ Na rozdíl od podobných layoutových modulů – CSS gridu a flexboxu – navrh
 Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu. Na obrázku vidíte vícesloupcový layout s nastavením `columns:20em`.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-multicol.png" width="1600" height="900" alt="CSS Multi-column Layout s nastavením columns:20em">
+<img src="../dist/images/original/vdlayout/css-multicol.jpg" width="1600" height="900" alt="CSS Multi-column Layout s nastavením columns:20em">
 <figcaption markdown="1">
 Kouzlo automatického přizpůsobení šířce okna.
 </figcaption>
@@ -78,7 +78,7 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
 
   <article role="article">
     <h4><a href="css-multicol-columns.md"><code>column-width</code>, <code>column-count</code>, <code>columns</code></a></h4>
-    <p><a href="css-multicol-columns.md"><img src="../dist/images/small/vdlayout/css-multicol-columns-scheme.png" alt="Vlastnost column"></a></p>
+    <p><a href="css-multicol-columns.md"><img src="../dist/images/small/vdlayout/css-multicol-columns-scheme.jpg" alt="Vlastnost column"></a></p>
     <p>
       Počet sloupců a jejich šířka.
       <br>Např. <code>columns:3 20em</code> – maximálně tři sloupce o šířce <code>20em</code>.
@@ -86,14 +86,14 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
   </article>  
   <article role="article">
     <h4><a href="css-multicol-gap-rule.md"><code>column-gap</code>, <code>column-rule</code></a></h4>
-     <p><a href="css-multicol-gap-rule.md"><img src="../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.png" alt="Vlastnost gap a rule"></a></p>
+     <p><a href="css-multicol-gap-rule.md"><img src="../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.jpg" alt="Vlastnost gap a rule"></a></p>
      <p>
       Definice mezer a oddělovačů mezi sloupci. <br>
       Např. <code>gap:3em; column-rule:dotted lightgrey;</code> – mezera <code>3em</code>, oddělující čára tečkovaná a světle šedá.</p>
    </article>  
   <article role="article">
     <h4><a href="css-multicol-fill.md"><code>column-fill</code></a></h4>
-    <p><a href="css-multicol-fill.md"><img src="../dist/images/small/vdlayout/css-multicol-fill-scheme.png" alt="Vlastnost fill"></a></p>
+    <p><a href="css-multicol-fill.md"><img src="../dist/images/small/vdlayout/css-multicol-fill-scheme.jpg" alt="Vlastnost fill"></a></p>
     <p>
       Vyvažování výšky sloupců. <br>
       Např. <code>column-fill:balance</code> – prvky se rozdělí do sloupců a jejich výška bude podobná.</p>
@@ -109,7 +109,7 @@ Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamov
 
   <article role="article">
     <h4><a href="css-multicol-break.md"><code>break-before</code>, <code>break-after</code>, <code>break-inside</code></a></h4>
-    <p><a href="css-multicol-break.md"><img src="../dist/images/small/vdlayout/css-multicol-break-scheme.png" alt="Vlastnost break"></a></p>
+    <p><a href="css-multicol-break.md"><img src="../dist/images/small/vdlayout/css-multicol-break-scheme.jpg" alt="Vlastnost break"></a></p>
     <p>
       Zalamování prvků do sloupců. <br>
       Např. <code>break-inside:avoid</code> – zabrání zalamování obsahu prvku do více sloupců.
@@ -118,7 +118,7 @@ Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamov
 
   <article role="article">
     <h4><a href="css-multicol-span.md"><code>column-span</code></a></h4>
-     <p><a href="css-multicol-span.md"><img src="../dist/images/small/vdlayout/css-multicol-span-scheme.png" alt="Vlastnost span"></a></p>
+     <p><a href="css-multicol-span.md"><img src="../dist/images/small/vdlayout/css-multicol-span-scheme.jpg" alt="Vlastnost span"></a></p>
      <p>
       Prvek může překlenout více sloupců. <br>
       Např. <code>column-span:all</code> – prvek překlene všechny sloupce.
@@ -163,7 +163,7 @@ Vícesloupcové rozložení zavádí „kontext fragmentace“ tvořený „anon
 Podpora podstatných vlastností vícesloupcového rozvržení je vynikající. Historicky zde exceloval i Internet Explorer, specifikaci CSS Multi-column Layout naimplementoval v podstatě celou už ve verzi 10.
 
 <figure>
-<img src="../dist/images/original/css-multicol-caniuse.png" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse">
+<img src="../dist/images/original/vdlayout/css-multicol-caniuse.jpg" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 *Podpora vícesloupcového layoutu v prohlížečích. Zelená je na místech, které byste možná nečekali. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
 </figcaption>

@@ -4,7 +4,7 @@ Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru
 
 <div class="connected" markdown="1">
 
-![CSS jednotka fr](../dist/images/medium/vdlayout/schema-css-jednotka-fr.png)
+![CSS jednotka fr](../dist/images/medium/vdlayout/schema-css-jednotka-fr.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -61,7 +61,7 @@ Demo to ostatně ukáže v celé kráse. Máme dva kontejnery vysázené gridem
 
 Na pohled by to mohlo fungovat stejně, ale to opravdu jen na první pohled.
 
-<p><img src="../dist/images/original/vdlayout/css-fr-procenta.png" width="1920" height="1080" alt="Jednotka fr a procenta"></p>
+<p><img src="../dist/images/original/vdlayout/css-fr-procenta.jpg" width="1920" height="1080" alt="Jednotka fr a procenta"></p>
 
 Výhoda `fr` oproti procentům? Nemusíme počítat prvky gridu a řešit nastavení box modelu.
 
@@ -77,7 +77,7 @@ Pokud vlastnost `box-sizing` neznáte, dostudujte si ji v mém textu na Vzhůru 
 
 Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou nezabírají prvky s rozměry nastavenými běžnými jednotkami délky, jako jsou `%`, `px`, `em`, `rem` a další:
 
-<p><img src="../dist/images/original/vdlayout/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu"></p>
+<p><img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu"></p>
 
 Pomocí `grid-template-columns: 80px 5em 2fr 1fr` definuje čtyřsloupcovou mřížku. První sloupec má fixní šířku `80px`. Druhý má šířku `5em`, takže jeho šířka bude záležet na velikosti písma rodičovského prvku. Pokud nám zbude nějaký prostor, prohlížeč jej vydělí třemi (`2fr` + `1fr`) a rozpočítá na dvě buňky definované podílovou jednotkou.
 
@@ -97,7 +97,7 @@ Mřížku definujeme takto:
 
 Pokud je nastavená nulová hodnota (`0fr`) vykreslí prohlížeč sloupec v šířce obsahu.
 
-<p><img src="../dist/images/original/vdlayout/css-fr-desetinna.png" width="1920" height="540" alt="Jednotka fr a procenta - rozdíl"></p>
+<p><img src="../dist/images/original/vdlayout/css-fr-desetinna.jpg" width="1920" height="540" alt="Jednotka fr a procenta - rozdíl"></p>
 
 Poměrně užitečné jsou také desetinné hodnoty. Jejich součet je `0.6fr`, takže zanechává `0.4fr` prostoru prázdného.
 

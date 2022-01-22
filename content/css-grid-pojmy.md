@@ -30,7 +30,7 @@ S pomocí [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md
 V prohlížeči bude naše mřížka vypadat následovně:
 
 <figure>
-<img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Byl jednou jeden kontejner.*
 </figcaption>
@@ -65,7 +65,7 @@ Do této kategorie patří také například obrázky nebo takzvané *anonymní 
 ```html
 <div class="container">
   <p class="item">I'm an item</p>
-  <img src="img.png" width="300" height="200" alt="…">  
+  <img src="img.jpg" width="300" height="200" alt="…">  
   I'm an item too
 </div>
 ```
@@ -82,7 +82,7 @@ V této ukázce máme tedy rovnou tři položky mřížky a nějak si s nimi bud
 Rozdělil jsem plochu, kterou vymezuje kontejner, na tři rovnoměrné části. Na skutečné šířky položek bude mít vliv jejich obsah, ale o tom se budeme bavit později.
 
 <figure>
-<img src="../dist/images/original/vdlayout/pojmy-anonymni.png" width="1600" height="450" alt="Anonymní uzel v CSS gridu">
+<img src="../dist/images/original/vdlayout/pojmy-anonymni.jpg" width="1600" height="450" alt="Anonymní uzel v CSS gridu">
 <figcaption markdown="1">
 *Obrázek i anonymní textový uzel jsou plnohodnotnými občany definované mřížky.*
 </figcaption>
@@ -99,7 +99,7 @@ Než dojdeme k dalším pojmům, spácháme na naší původní ukázce nepěkno
 Kontejner je teď menší než je samotná mřížka. Po vytečení „položek z kontejneru“ se dostáváme k dalším pojmům.
 
 <figure>
-<img src="../dist/images/original/vdlayout/pojmy-kontejner-mrizka.png" width="1600" height="900" alt="Kontejner a mřížka v CSS gridu">
+<img src="../dist/images/original/vdlayout/pojmy-kontejner-mrizka.jpg" width="1600" height="900" alt="Kontejner a mřížka v CSS gridu">
 <figcaption markdown="1">
 *Tady je vidět rozdíl mezi kontejnerem mřížky a mřížkou samotnou.*
 </figcaption>
@@ -127,7 +127,7 @@ Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési
 Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkně vizualizovat v DevTools.
 
 <figure>
-<img src="../dist/images/original/vdlayout/devtools-layout-firefox.png" width="1600" height="450" alt="CSS grid Inspector ve Firefoxu">
+<img src="../dist/images/original/vdlayout/devtools-layout-firefox.jpg" width="1600" height="450" alt="CSS grid Inspector ve Firefoxu">
 <figcaption markdown="1">
 *Obrázek: grid v negližé, to je „CSS grid Inspector“ ve Firefoxu.*
 </figcaption>
@@ -144,7 +144,7 @@ O podpoře layoutů v DevTools moderních prohlížečů jsem psal [v jedné z p
 Když už tedy víme, co je mřížka a umíte ji vizualizovat, pojďme si říct, z jakých stavebních prvků se přesně ta naše mřížka skládá.
 
 <figure>
-<img src="../dist/images/original/vdlayout/pojmy-gridu.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/pojmy-gridu.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Obrázek: Mřížka, linka, oblast, řádek, sloupec.*
 </figcaption>
@@ -195,7 +195,7 @@ Pozor, buňka mřížky zároveň není položkou mřížky. Mřížka má vždy
 Je to patrné v následujícím příkladu, kde jsme ubrali poslední položku. Mřížka však má stále tři sloupce a dva řádky:
 
 <figure>
-<img src="../dist/images/original/vdlayout/pojmy-polozky-bunky.png" width="1600" height="900" alt="Položky a buňky v CSS gridu">
+<img src="../dist/images/original/vdlayout/pojmy-polozky-bunky.jpg" width="1600" height="900" alt="Položky a buňky v CSS gridu">
 <figcaption markdown="1">
 *Některé buňky neuvidíte, ale jsou tam pořád, potvory.*
 </figcaption>
@@ -243,7 +243,7 @@ Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost
 Pojďme si deseti pixelový „gutter“ nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
 
 <figure>
-<img src="../dist/images/original/vdlayout/pojmy-grid-inspector.png" width="1600" height="900" alt="Inspektor CSS gridu ve Firefoxu">
+<img src="../dist/images/original/vdlayout/pojmy-grid-inspector.jpg" width="1600" height="900" alt="Inspektor CSS gridu ve Firefoxu">
 <figcaption markdown="1">
 *Obrázek z Firefoxu: Ale to je nemilé, linka mřížky už není jen linka.*
 </figcaption>

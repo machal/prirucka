@@ -4,7 +4,7 @@ Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytváře
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost gap](../dist/images/small/vdlayout/schema-css-gap.png)
+![CSS vlastnost gap](../dist/images/small/vdlayout/schema-css-gap.jpg)
 
 `gap` je mezera mezi vnitřními prvky layoutu.
 
@@ -66,7 +66,7 @@ Vysvětleme si to:
 - [Vlastnost `grid-template-columns`](css-grid-template-rows-columns.md) definují podobu mřížky. Zde jde sloupce o rovnoměrné šířce.
 - `gap: 2em 1em` je instrukce pro vložení mezery svisle a pak i vodorovně.
 
-<p><img src="../dist/images/original/vdlayout/css-gap.png" width="1920" height="540" alt="CSS Gap"></p>
+<p><img src="../dist/images/original/vdlayout/css-gap.jpg" width="1920" height="540" alt="CSS Gap"></p>
 
 CodePen: [cdpn.io/e/JgXWod](https://codepen.io/machal/pen/JgXWod?editors=1100)
 
@@ -112,7 +112,7 @@ Ještě chvilku.
 
 A teď už přichází obrázek:
 
-<p><img src="../dist/images/original/vdlayout/css-gap-margin.png" width="1920" height="540" alt="CSS Gap v kombinaci s marginem a paddingem"></p>
+<p><img src="../dist/images/original/vdlayout/css-gap-margin.jpg" width="1920" height="540" alt="CSS Gap v kombinaci s marginem a paddingem"></p>
 
 Ano, viditelná mezera mezi položkami bude široká celé `3em`. Sečteme dva vnější okraje (`margin`) a mezeru (`gap`).
 
@@ -146,7 +146,7 @@ Pojďme si to vyzkoušet na flexboxovém layoutu, který jsme ještě vlastnost�
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-gap-flexbox.png" width="1920" height="540" alt="CSS Gap ve flexboxu"></p>
+<p><img src="../dist/images/original/vdlayout/css-gap-flexbox.jpg" width="1920" height="540" alt="CSS Gap ve flexboxu"></p>
 
 Raději si to zopakujme. Zápis `gap:5px 1rem` říká, že svisle mezi řádku chci mezeru `5px` a vodorovně mezi sloupci pak `1rem`.
 
@@ -200,7 +200,7 @@ Zajímavější je svislý směr. V layoutu tvořeném mřížkou se spočítá 
 
 Výsledkem je, že procentuální hodnota pro `gap` aplikovaná na svislý směr vám velmi často zařídí přetečené položek z rozměru kontejneru.
 
-<p><img src="../dist/images/original/vdlayout/css-gap-percentage.png" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru v gridu"></p>
+<p><img src="../dist/images/original/vdlayout/css-gap-percentage.jpg" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru v gridu"></p>
 
 Pravděpodobně se vám tedy stane, že mezera vytlačí spodní prvky z kontejneru.
 
@@ -208,7 +208,7 @@ CodePen: [cdpn.io/e/OJggmrx](https://codepen.io/machal/pen/OJggmrx?editors=1100)
 
 V případě flexboxového layoutu a neznámé výšky kontejneru se procentuální `gap` ve svislém směru vůbec nezapočítá. Je z něj čistá nula. Ptáte se, kdy je výška kontejneru neznámá? Inu, ve flexboxu skoro vždy – dokud ji výslovně nedefinujete.
 
-<p><img src="../dist/images/original/vdlayout/css-gap-percentage-flex.png" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru ve flexboxu"></p>
+<p><img src="../dist/images/original/vdlayout/css-gap-percentage-flex.jpg" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru ve flexboxu"></p>
 
 Zkoušení naživo je možné opět v následující ukázce.
 

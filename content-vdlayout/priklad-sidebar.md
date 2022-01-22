@@ -3,7 +3,7 @@
 V této ukázce zkusíme využít flexbox i grid. Jde o jeden z nejčastějších layoutů, jaké můžete na webu zahlédnout.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-sidebar-zadani.png" width="1600" height="900" alt="Příklad s bočním panelem">
+<img src="../dist/images/original/vdlayout/priklad-sidebar-zadani.jpg" width="1600" height="900" alt="Příklad s bočním panelem">
 <figcaption markdown="1">
 *Tohle už jste na webu někde viděli, že ano?*
 </figcaption>

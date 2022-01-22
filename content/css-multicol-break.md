@@ -6,7 +6,7 @@ Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – v
 
 <div class="connected" markdown="1">
 
-![CSS vlastnosti column-break, break-after](../dist/images/small/vdlayout/css-multicol-break-scheme.png)
+![CSS vlastnosti column-break, break-after](../dist/images/small/vdlayout/css-multicol-break-scheme.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -33,7 +33,7 @@ Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jej
 To nás ale od jejich zdokumentování nemůže odradit. A pokud vás ano, mě určitě ne.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-multicol-break.png" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
+<img src="../dist/images/original/vdlayout/css-multicol-break.jpg" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
 <figcaption markdown="1">
 *Na obrázku je vidět, že jsme černému prvku zakázali, aby se jeho obsah rozbil do dvou sloupečků. Tím ďábelským nástrojem je zde právě `break-inside:avoid`.*
 </figcaption>
@@ -59,7 +59,7 @@ Toto bychom mohli psát přes kopírák – vlastnost `break-after` vynucuje neb
 
 ## `break-inside` – zalamování uvnitř prvku {#break-inside}
 
-Vlastnost `break-before` můžeme použít k vynucení nebo zakázání zalomení uvnitř prvku. V kontextu vícesloupcového rozložení jsou možné tyto hodnoty:
+Vlastnost `break-inside` můžeme použít k vynucení nebo zakázání zalomení uvnitř prvku. V kontextu vícesloupcového rozložení jsou možné tyto hodnoty:
 
 - `auto` – ponechej výchozí chování prohlížeče.
 - `avoid` nebo `avoid-column` – zakazuje zalomení uvnitř prvku.
@@ -69,7 +69,7 @@ Vlastnost `break-before` můžeme použít k vynucení nebo zakázání zalomen�
 
 ## Příklad {#priklad}
 
-Nakódoval jsem příklad, ve kterém se snažím všem možnými způsoby rozbít vícesloupcový layout definovaný takto:
+Nakódoval jsem příklad, ve kterém se snažím všemi možnými způsoby rozbít vícesloupcový layout definovaný takto:
 
 ```css
 .container {

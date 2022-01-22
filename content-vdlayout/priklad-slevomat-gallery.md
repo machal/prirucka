@@ -7,7 +7,7 @@ Oblasti jsme zde využili hlavně pro zjednodušení a zpřehlednění kódu. V 
 Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Ale takovou jste určitě už viděli i jinde nebo ji dokonce kódovali.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-slevomat-live.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz">
+<img src="../dist/images/original/vdlayout/priklad-slevomat-live.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz">
 <figcaption markdown="1">
 *Co takhle si po tom všem kódování dopřát wellness?*
 </figcaption>
@@ -16,7 +16,7 @@ Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Ale takovou j
 Zadání je ale složitější – tentokrát budeme velmi intenzivně řešit responzivitu, různá zobrazení na různě velkých displejích.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-slevomat-responsive.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - responzivní pohledy">
+<img src="../dist/images/original/vdlayout/priklad-slevomat-responsive.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - responzivní pohledy">
 <figcaption markdown="1">
 *Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wellness nebude, spíše galeje. (Že chybí třetí fotka na tabletu? To není chyba, ale vlastnost.)*
 </figcaption>
@@ -172,7 +172,7 @@ Nyní k největšímu breakpointu. CSS kód vypadá takto:
 Máme zde mřížku 2 × 3, dělenou na pětiny. Umístění oblastí do buněk gridu je asi zřejmé. V případě potřeby si je porovnejte s rozvržením z obrázků.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-slevomat-firefox.png" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - Firefox">
+<img src="../dist/images/original/vdlayout/priklad-slevomat-firefox.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - Firefox">
 <figcaption markdown="1">
 *Vizualizace mřížky a jejích oblastí ve Firefoxu.*
 </figcaption>

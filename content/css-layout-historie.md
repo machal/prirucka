@@ -141,7 +141,7 @@ V témže roce vzniká „Candidate Recommendation“ pro vícesloupcový layout
 V Microsoftu se dějí věci. Plánují zaříznout Silverlight, zjednodušeně řečeno vlastní napodobeninu Flashe, a více šlápnout do webových technologií. Jde jim o využití HTML a CSS pro vlastní produkty, ale jejich vývojáři jsou nešťastní z nedostatku rozumného layoutování v CSS, oproti tomu, na co byli zvyklí v Silverlightu.
 
 <figure>
-<img src="../dist/images/original/vdlayout/silverlight.png" width="1920" height="540" alt="Microsoft Silverlight">
+<img src="../dist/images/original/vdlayout/silverlight.jpg" width="1920" height="540" alt="Microsoft Silverlight">
 <figcaption markdown="1">
 *Obrázek: To by člověk nečekal, na jak podivných místech najde inspirační zdroje dnešního moderního CSS. Děkovné dopisy prosím posílejte do Microsoftu.*
 </figcaption>

@@ -4,7 +4,7 @@ CSS vlastnost `grid-area` slouží k umísťování položek v definovaném CSS 
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost grid-area](../dist/images/medium/vdlayout/schema-css-grid-area.png)
+![CSS vlastnost grid-area](../dist/images/medium/vdlayout/schema-css-grid-area.jpg)
 
 <div class="web-only" markdown="1">
 

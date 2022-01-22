@@ -66,7 +66,7 @@ Jeden z významů slova „clamp“ v angličtině (_[klæmp]_) je „svěrka“
 }
 ```
 
-<p><img src="../dist/images/original/css-clamp.png" width="1600" height="900" alt="CSS funkce clamp()"></p>
+<p><img src="../dist/images/original/vdlayout/css-clamp.jpg" width="1600" height="900" alt="CSS funkce clamp()"></p>
 
 Vysvětlíme to ještě detailně:
 
@@ -80,7 +80,7 @@ CodePen: [cdpn.io/e/poeLazv](https://codepen.io/machal/pen/poeLazv?editors=1100)
 
 Následující ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizualizace, ve které je vidět aktuální šířka rodiče, elementu a pak také argument funkce `min()`, který je v dané šířce obrazovky aktivní.
 
-<p class="ebook-only"><img src="../dist/images/original/css-min-una.png" alt="CSS funkce clamp()"></p>
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-min-una.jpg" alt="CSS funkce clamp()"></p>
 
 Pokud si to budete zkoušet na živo, zkuste si hýbat se šířkou viewportu.
 

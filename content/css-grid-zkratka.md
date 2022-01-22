@@ -4,7 +4,7 @@
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost grid](../dist/images/medium/vdlayout/schema-css-grid-zkratka.png)
+![CSS vlastnost grid](../dist/images/medium/vdlayout/schema-css-grid-zkratka.jpg)
 
 <div class="web-only" markdown="1">
 

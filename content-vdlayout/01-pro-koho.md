@@ -29,7 +29,7 @@ Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že u
 Mě samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v téhle knize. V době psaní těchto řádků je jich na 170. Během čtení knížky tedy narazíte na celou řadu odkazů na CodePen.
 
 <figure>
-<img src="../dist/images/original/vdlayout/codepen.png" width="1600" height="900" alt="CodePen">
+<img src="../dist/images/original/vdlayout/codepen.jpg" width="1600" height="900" alt="CodePen">
 <figcaption markdown="1">
 *To je on, našich srdcí šampión. CodePen.*
 </figcaption>
@@ -79,7 +79,7 @@ Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozo
 Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlížečích, ale znáte to – časy se mění a prohlížeče s nimi. Je tedy prakticky jisté, že některé informace zde již budou zastaralé.
 
 <figure>
-<img src="../dist/images/original/vdlayout/codepen.png" width="1600" height="900" alt="CodePen">
+<img src="../dist/images/original/vdlayout/caniuse-etc.jpg" width="1600" height="900" alt="CodePen">
 <figcaption markdown="1">
 *Tyhle weby mějte po ruce. Kdyby něco.*
 </figcaption>

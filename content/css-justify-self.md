@@ -4,7 +4,7 @@ Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak té�
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost justify-self](../dist/images/medium/vdlayout/css-justify-self-schema.png)
+![CSS vlastnost justify-self](../dist/images/medium/vdlayout/css-justify-self-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -71,13 +71,13 @@ Tady vlastně zarovnáváme dvěma způsoby. Jednou doleva (`margin-right:auto`)
 
 Zkuste si tu první deklaraci schválně v živé ukázce odmazat.
 
-<p><img src="../dist/images/original/vdlayout/css-justify-self-vs-margin.png" width="1920" height="540"  alt="margin má přednost před justify-self - v Chrome při zapnutém grid overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-justify-self-vs-margin.jpg" width="1920" height="540"  alt="margin má přednost před justify-self - v Chrome při zapnutém grid overlay"></p>
 
 Následuje několik užitečných vysvětlujících odrážek:
 
 - První dvě položky nemají vlastnost `justify-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé šířky prostoru buňky.
 - Poslední položka má nastaveno `justify-self:end`, takže by se měla „scvrknout“ na přirozenou šířku podle obsahu a zarovnat ke konci prostoru buňky, což je zároveň pravá hrana kontejneru.
-- Vyhrává ovšem deklarace `margin-right:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `justify-self:end`.
+- Vyhrává ovšem deklarace `margin-right:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `justify-self:start`.
 
 CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
 
@@ -99,7 +99,7 @@ Je o tom krásná diskuze „In CSS Flexbox, why are there no "justify-items" an
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-self](../dist/images/original/vdlayout/css-justify-self-hodnoty.png)
+![Hodnoty vlastnosti justify-self](../dist/images/original/vdlayout/css-justify-self-hodnoty.jpg)
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov specifikace CSS Box Alignment:
 

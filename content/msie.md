@@ -15,7 +15,7 @@ Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl
 Podívejte se na graf. Z toho je myslím jasné, že i v České republice bude možné Internet Explorer brzy přestat podporovat.
 
 <figure>
-<img src="../dist/images/original/msie-stats.png" width="1600" height="900" alt="Graf podílu prohlížečů pro MSIE, MS Edge, Firefox">
+<img src="../dist/images/original/vdlayout/msie-stats.jpg" width="1600" height="900" alt="Graf podílu prohlížečů pro MSIE, MS Edge, Firefox">
 <figcaption markdown="1">
 *Nejmenší ze všech nejmenších. Podíl méně významných prohlížečů na trhu v ČR. Vývoj MSIE ukazuje světle modrá linka. Zdroj: [rankings.gemius.com](http://ranking.gemius.com/cz/ranking/browsers/).*
 </figcaption>
@@ -49,7 +49,7 @@ Takto to pojali například vývojářky a vývojáři v Rohlík.cz. Podíl MSIE
 Pro každého frontendistu je ovšem podpora takto zastaralého prohlížeče otrava. V Rohlíku tedy uživatelům Exploreru ukazují hlášku, motivující je ke změně prohlížeče.
 
 <figure>
-<img src="../dist/images/original/msie-rohlik.png" width="1600" height="900" alt="Jakub Valenta z Rohlíku a obrazovka pro uživatele MSIE">
+<img src="../dist/images/original/vdlayout/msie-rohlik.jpg" width="1600" height="900" alt="Jakub Valenta z Rohlíku a obrazovka pro uživatele MSIE">
 <figcaption markdown="1">
 *Máme vás rádi, ale nechtěli byste změnit prohlížeč? Hodně by nám to pomohlo. Zdroj: [Twitter](https://twitter.com/JakubValenta_/status/1375383150273126401).*
 </figcaption>
@@ -62,7 +62,7 @@ Ve schopnost těchto hlášek snížit podíl zastoupení starých prohlížeč�
 Oficiální ukončení podpory mají v Microsoftu naplánované na polovinu června 2022.
 
 <figure>
-<img src="../dist/images/original/msie-support-end.png" width="1600" height="900" alt="Konec podpory Exploreru - Microsoft to vidí na červen 2022">
+<img src="../dist/images/original/vdlayout/msie-support-end.jpg" width="1600" height="900" alt="Konec podpory Exploreru - Microsoft to vidí na červen 2022">
 <figcaption markdown="1">
 *Oznámení o ukončení podpory MSIE zobrazené v MSIE. Hurá, stránka se nerozpadla!*
 </figcaption>

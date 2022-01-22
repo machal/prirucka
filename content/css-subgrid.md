@@ -4,7 +4,7 @@ Subgrid umožní vytvořit zanořenou mřížku, která zároveň podědí layou
 
 <div class="connected" markdown="1">
 
-![CSS masonry](../dist/images/medium/vdlayout/schema-css-subgrid.png)
+![CSS masonry](../dist/images/medium/vdlayout/schema-css-grid-subgrid.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -22,7 +22,7 @@ CSS masonry snad jednou bude součástí specifikace [CSS gridu](css-grid.md).
 
 Grid je skvělý, ale dříve nebo později se dostaneme do situace, kdy potřebujeme jeden grid zanořit do druhého. A když už jsme v tom, přejeme si, aby vnitřní grid dokázal podědit vnější layout.
 
-<p><img src="../dist/images/original/vdlayout/subgrid-intro.png" width="1600" height="540" alt="Grid vs. subgrid"></p>
+<p><img src="../dist/images/original/vdlayout/subgrid-intro.jpg" width="1600" height="540" alt="Grid vs. subgrid"></p>
 
 Jak vidíte na obrázku, subgrid mám může zařídit to, aby vnitřní části položek lícovaly i když mají různě velký obsah.
 
@@ -42,7 +42,7 @@ Mám seznam položek, říkejme jim karty produktu. Každá má složitější s
       <a href="#">Lorem ipsum…</a>
     </h2>  
     <p class="item__image">
-      <a href="#"><img src="image.png" alt="Image" width="300" height="200"></a>
+      <a href="#"><img src="image.jpg" alt="Image" width="300" height="200"></a>
     </p>
     <p class="item__perex">
       Lorem ipsum…
@@ -108,7 +108,7 @@ Prohlížeči dáváme tyhle instrukce:
 Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad pomůže s pochopením celé legrace.
 
 <figure>
-<img src="../dist/images/original/vdlayout/subgrid-example.png" width="1600" height="900" alt="Příklad se subgridem">
+<img src="../dist/images/original/vdlayout/subgrid-example.jpg" width="1600" height="900" alt="Příklad se subgridem">
 <figcaption markdown="1">
 *Zelená podmřížka si hoví v modré mřížce a je spokojená. My také, protože vnitřní položky karet jsou navzájem zarovanané.*
 </figcaption>

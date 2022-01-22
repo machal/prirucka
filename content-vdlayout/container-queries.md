@@ -5,7 +5,7 @@ Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, kterým
 To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
 
 <figure>
-<img src="../dist/images/original/vdlayout/media-vs-containder.png" alt="">
+<img src="../dist/images/original/vdlayout/media-vs-containder.jpg" alt="">
 <figcaption markdown="1">
 Container Queries cílí jen na konkrétní část stránky. Říkáte „hurá“? Jen s tím počkejte.
 </figcaption>
@@ -126,7 +126,7 @@ CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 Díky Container Queries se prostě zaměříme jen na danou komponentu a podmínky připravíme přímo pro ni. Ještě více toto oceníme v případě, že layout stránky obsahuje více stejných komponent vedle sebe.
 
 <figure>
-<img src="../dist/images/original/vdlayout/container-queries-chrome.png" alt="">
+<img src="../dist/images/original/vdlayout/container-queries-chrome.jpg" alt="">
 <figcaption markdown="1">
 Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jejich obsahu.“ Media Queries: „Uff!“, Container Queries: „Podrž mi to pivo…“
 </figcaption>
@@ -178,7 +178,7 @@ Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webový
 Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili. Například v případě nepodpory Safari bude naše komponenta v tomto prohlížeči vypadat následovně.
 
 <figure>
-<img src="../dist/images/original/vdlayout/container-queries-safari.png" alt="">
+<img src="../dist/images/original/vdlayout/container-queries-safari.jpg" alt="">
 <figcaption markdown="1">
 Safari: „Container Queries neumím, ale nějak to zobrazím.“
 </figcaption>

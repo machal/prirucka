@@ -11,7 +11,7 @@ Svatým grálem medicíny je například nalezení léku na rakovinu. Jenže co 
 Pojďme to raději vizualizovat. Svatý grál mezi layouty vypadá takto:
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-holy-grail-zadani.png" width="1600" height="900" alt="Příklad - holy grail">
+<img src="../dist/images/original/vdlayout/priklad-holy-grail-zadani.jpg" width="1600" height="900" alt="Příklad - holy grail">
 <figcaption markdown="1">
 *Hurá, našli jsme svatý grál! Potřebujeme jej ale ještě vůbec?*
 </figcaption>
@@ -138,7 +138,7 @@ Asi jste si všimli, že oblasti `head` a `foot` zabírají vždy dvě buňky, c
 Pomocí inspekce mřížky ve Firefoxu se nám teď layout krásně vizualizuje i s pojmenovanými oblastmi:
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-holy-grail-firefox.png" width="1600" height="900" alt="Příklad - holy grail ve Firefoxu">
+<img src="../dist/images/original/vdlayout/priklad-holy-grail-firefox.jpg" width="1600" height="900" alt="Příklad - holy grail ve Firefoxu">
 <figcaption markdown="1">
 *Holy grail layout vizualizovaný ve Firefoxu.*
 </figcaption>

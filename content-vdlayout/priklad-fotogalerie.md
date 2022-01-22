@@ -5,7 +5,7 @@ Fotogalerie, nebo prostě seznam položek vyskládaný do mřížky, to je návr
 V tomto specifickém příkladu budeme předpokládat kodéra velmi lenivé nátury a pokusíme se vyhnout jakýmkoliv Media nebo Container Queries.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-photogallery.png" width="1600" height="900" alt="Příklad s fotogalerií bez Media Queries">
+<img src="../dist/images/original/vdlayout/priklad-photogallery.jpg" width="1600" height="900" alt="Příklad s fotogalerií bez Media Queries">
 <figcaption markdown="1">
 *Tohle nakódujete za chvilku. Co ale responzivně a bez Media Queries?*
 </figcaption>
@@ -110,7 +110,7 @@ Jinak řečeno – zápisem `repeat(auto-fit, minmax(150px, 1fr))` říkáme: De
 Výsledek vypadá jinak než v řešení pomocí CSS Multicol, na obrázku uvidíte srovnání.
 
 <figure>
-<img src="../dist/images/original/vdlayout/priklad-photogallery-multicol-grid.png" width="1600" height="900" alt="Příklad s fotogalerií - dvě řešení">
+<img src="../dist/images/original/vdlayout/priklad-photogallery-multicol-grid.jpg" width="1600" height="900" alt="Příklad s fotogalerií - dvě řešení">
 <figcaption markdown="1">
 *Kdo je váš favorit, pan Vícesloupec nebo paní Mřížka?*
 </figcaption>

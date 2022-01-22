@@ -4,7 +4,7 @@ Vlastnost `align-self` nastavuje zarovnání položky na příčné (jinak též
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost align-self](../dist/images/medium/vdlayout/css-align-self-schema.png)
+![CSS vlastnost align-self](../dist/images/medium/vdlayout/css-align-self-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -65,7 +65,7 @@ CSS pro deklaraci gridu a té naší specificky zarovnané poslední položky:
 
 Stejně jako [u `justify-self`](css-justify-self.md) i tady zarovnáváme dvěma způsoby. Jednou dolů (`margin-top:auto`) a jednou nahoru (`align-self:start`). A opět platí – zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
 
-<p><img src="../dist/images/original/vdlayout/css-align-self-vs-margin.png" width="1920" height="540"  alt="margin má přednost před align-self - v Chrome při zapnutém grid overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-align-self-vs-margin.jpg" width="1920" height="540"  alt="margin má přednost před align-self - v Chrome při zapnutém grid overlay"></p>
 
 Vysvětleme:
 
@@ -95,7 +95,7 @@ V druhé ukázce si pohrajeme s flexboxem. HTML je stejné, CSS se mění:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-align-self-flexbox.png" width="1920" height="540"  al="align-self ve flexboxu - v Chrome při zapnutém grid overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-align-self-flexbox.jpg" width="1920" height="540"  al="align-self ve flexboxu - v Chrome při zapnutém grid overlay"></p>
 
 Nyní přichází vysvětlení:
 
@@ -107,7 +107,7 @@ CodePen: [cdpn.io/e/eYZWdoN](https://codepen.io/machal/pen/eYZWdoN?editors=1100)
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti align-self](../dist/images/original/vdlayout/css-align-self-hodnoty.png)
+![Hodnoty vlastnosti align-self](../dist/images/original/vdlayout/css-align-self-hodnoty.jpg)
 
 Také vlastnosti `align-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov specifikace CSS Box Alignment:
 

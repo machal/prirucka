@@ -4,7 +4,7 @@
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost place-content](../dist/images/medium/vdlayout/css-place-content-schema.png)
+![CSS vlastnost place-content](../dist/images/medium/vdlayout/css-place-content-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -78,7 +78,7 @@ Všechny tři položky mají omezenou výšku i šířku:
 
 To aby byl hezky vidět efekt distribuce volného prostoru mezi položkami, který způsobuje vlastnost `place-content`.
 
-<p><img src="../dist/images/original/vdlayout/css-place-content-grid.png" width="1920" height="540" alt="place-content: space-between end v gridu - v Chrome při zapnutém layout overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-place-content-grid.jpg" width="1920" height="540" alt="place-content: space-between end v gridu - v Chrome při zapnutém layout overlay"></p>
 
 Využíváme zde tuto hodnotu:
 
@@ -94,7 +94,7 @@ CodePen: [cdpn.io/e/PoNJVPm](https://codepen.io/machal/pen/PoNJVPm?editors=1100)
 
 ## Možné hodnoty
 
-Podívejte se na referenční příručku k oběma vlastnostem, pro které je `place-items` zkratkou:
+Podívejte se na referenční příručku k oběma vlastnostem, pro které je `place-content` zkratkou:
 
 - [`justify-content`](css-justify-content.md)
 - [`align-content`](css-align-content.md)

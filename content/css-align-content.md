@@ -4,7 +4,7 @@ Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi po
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost align-content](../dist/images/medium/vdlayout/css-align-content-schema.png)
+![CSS vlastnost align-content](../dist/images/medium/vdlayout/css-align-content-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -53,7 +53,7 @@ V naší ukázce definujeme třířádkový kontejner gridu:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-align-content-grid.png" width="1920" height="540" alt="align-content:space-between ve gridu - v Chrome při zapnutém layout overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-align-content-grid.jpg" width="1920" height="540" alt="align-content:space-between ve gridu - v Chrome při zapnutém layout overlay"></p>
 
 Pomocí zápisu `align-content:space-between` se volný prostor hezky distribuuje na výšku mezi jednotlivé položky.
 
@@ -73,7 +73,7 @@ CSS:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-align-content-flex.png" width="1920" height="540" alt="align-content:space-around ve flexboxu - v Chrome při zapnutém layout overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-align-content-flex.jpg" width="1920" height="540" alt="align-content:space-around ve flexboxu - v Chrome při zapnutém layout overlay"></p>
 
 Zápis `align-content:space-around` tedy rozdělí volný prostor na polovinu a přidá ji před a za buňku.
 
@@ -83,7 +83,7 @@ Víte, co? Raději se podívejte na na všechny možné hodnoty, i tuhle mezi ni
 
 ## Možné hodnoty zarovnání {#hodnoty}
 
-![Hodnoty vlastnosti align-content](../dist/images/original/vdlayout/css-align-content-hodnoty.png)
+![Hodnoty vlastnosti align-content](../dist/images/original/vdlayout/css-align-content-hodnoty.jpg)
 
 Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 

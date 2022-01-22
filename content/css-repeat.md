@@ -4,7 +4,7 @@ Funkce (nebo přesněji řečeno „zápis“) `repeat()` slouží k usnadněn�
 
 <div class="connected" markdown="1">
 
-![CSS funkce repeat](../dist/images/medium/vdlayout/schema-css-repeat.png)
+![CSS funkce repeat](../dist/images/medium/vdlayout/schema-css-repeat.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -59,7 +59,7 @@ Tady vstupují do hry zajímavá klíčová slova `auto-fill` a `auto-fit`.
 Použití zápisu `repeat()` v kombinaci s klíčovými slovy `auto-fill` a `auto-fit` se velmi hodí, pokud neznáte počet položek. Následující obrázek snad napoví, čím se liší.
 
 <figure>
-<img src="../dist/images/original/auto-fill-fit.png" alt="">
+<img src="../dist/images/original/auto-fill-fit.jpg" alt="">
 <figcaption markdown="1">
 *`auto-fill` do volného prostoru přidává neviditelné buňky, `auto-fit` prioritizuje roztahování těch už vykreslených.*
 </figcaption>

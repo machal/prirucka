@@ -4,7 +4,7 @@ Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor m
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost justify-content](../dist/images/medium/vdlayout/css-justify-content-schema.png)
+![CSS vlastnost justify-content](../dist/images/medium/vdlayout/css-justify-content-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -63,7 +63,7 @@ CSS:
 
 Položky gridu jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
 
-<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around.png" width="1920" height="540" alt="justify-content: space-around v gridu - v Chrome při zapnutém grid overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around.jpg" width="1920" height="540" alt="justify-content: space-around v gridu - v Chrome při zapnutém grid overlay"></p>
 
 CodePen: [cdpn.io/e/qBZmvEy](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
 
@@ -79,7 +79,7 @@ CSS tam vypadá zhruba takto:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around-flex.png" width="1920" height="540" alt="justify-content: space-around ve flexu - v Chrome při zapnutém layout overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around-flex.jpg" width="1920" height="540" alt="justify-content: space-around ve flexu - v Chrome při zapnutém layout overlay"></p>
 
 Vzhledem k tomu, že jsme zde na položkách nepoužili vlastnost `flex` nebo `flex-grow`, dělení prostoru pomocí `justify-content` zůstává v platnosti.
 
@@ -87,14 +87,14 @@ CodePen: [cdpn.io/e/mdPmoVZ](https://codepen.io/machal/pen/mdPmoVZ?editors=1100)
 
 ## Možné hodnoty zarovnání {#hodnoty}
 
-![Hodnoty vlastnosti justify-content](../dist/images/original/vdlayout/css-justify-content-hodnoty.png)
+![Hodnoty vlastnosti justify-content](../dist/images/original/vdlayout/css-justify-content-hodnoty.jpg)
 
-Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
+Vlastnosti `justify-content` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 
 ### Základní
 
 - `normal` (výchozí)  
-  V CSS gridu i flexboxu bude odpovídat hodnotě `start`. Položky se tedy zarovnají za začátek osy, takže obvykle doleva.
+  V CSS gridu i flexboxu bude odpovídat hodnotě `start`. Položky se tedy zarovnají na začátek osy, takže obvykle doleva.
 
 ### Zbylý prostor
 

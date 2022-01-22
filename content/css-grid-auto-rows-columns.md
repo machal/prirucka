@@ -4,7 +4,7 @@ Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicit
 
 <div class="connected" markdown="1">
 
-![Vlastnost grid-auto-rows a grid-auto-columns](../dist/images/medium/vdlayout/schema-css-grid-auto-rows-columns.png)
+![Vlastnost grid-auto-rows a grid-auto-columns](../dist/images/medium/vdlayout/schema-css-grid-auto-rows-columns.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -93,7 +93,7 @@ Pokud bychom chtěli střídat výšku `100px` a `200px` pro liché a sudé řá
 ```
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-grid-auto-rows.png" width="1600" height="900" alt="grid-auto-rows">
+<img src="../dist/images/original/vdlayout/css-grid-auto-rows.jpg" width="1600" height="900" alt="grid-auto-rows">
 <figcaption markdown="1">
 *Vlastnost `grid-auto-rows` v akci. Dává rozměry položkám, se kterými nepočítá explicitně definovaná mřížka.*
 </figcaption>
@@ -138,7 +138,7 @@ Opravíme to až touto deklarací:
 ```
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-grid-auto-cols.png" width="1600" height="900" alt="grid-auto-columns">
+<img src="../dist/images/original/vdlayout/css-grid-auto-cols.jpg" width="1600" height="900" alt="grid-auto-columns">
 <figcaption markdown="1">
 *Rozdíl mezi nedefinovanou implicitní mřížkou (`grid-auto-columns:auto`) a definovanou (`grid-auto-columns:1fr`), ve které pátá a šestá položka dostane definovanou výšku.*
 </figcaption>

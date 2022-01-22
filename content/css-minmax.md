@@ -4,7 +4,7 @@ Funkce (nebo přesněji řečeno „zápis“) `minmax()` a navázaná klíčov�
 
 <div class="connected" markdown="1">
 
-![Funkce minmax](../dist/images/medium/vdlayout/schema-css-minmax.png)
+![Funkce minmax](../dist/images/medium/vdlayout/schema-css-minmax.jpg)
 
 <div class="web-only" markdown="1">
 

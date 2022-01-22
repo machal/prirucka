@@ -4,7 +4,7 @@ Rozvržení typu masonry je ve webdesignu stejně populární jako zednická lž
 
 <div class="connected" markdown="1">
 
-![CSS masonry](../dist/images/medium/vdlayout/schema-css-masonry.png)
+![CSS masonry](../dist/images/medium/vdlayout/schema-css-masonry.jpg)
 
 <div class="web-only" markdown="1">
 

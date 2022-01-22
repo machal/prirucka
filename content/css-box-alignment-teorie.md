@@ -15,7 +15,7 @@ Podíváme se na pojmy jako „směr rozvržení“, „kontejner“ a „předm
 Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek a tak naštěstí zarovnáváme na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-box-alignment-osy.png" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
+<img src="../dist/images/original/vdlayout/css-box-alignment-osy.jpg" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
 <figcaption markdown="1">
 *Dvě osy v rozvržení.*
 </figcaption>
@@ -41,7 +41,7 @@ Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical proper
 </div>
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-box-alignment-direction.png" width="1600" height="900" alt="Změna směru rozvržení">
+<img src="../dist/images/original/vdlayout/css-box-alignment-direction.jpg" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
 *Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti `flex-direction`. Zdroj: [cdnp.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)*
 </figcaption>
@@ -57,7 +57,7 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 - *Kontejner zarovnání* (alignment container) je rámec, ve kterém předmět zarovnáváme. Obvykle jde o rodičovský element.
 
 <figure>
-<img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.png" width="1600" height="900" alt="Kontejner a položky">
+<img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.jpg" width="1600" height="900" alt="Kontejner a položky">
 <figcaption markdown="1">
 *Kontejner a položky neboli předměty zarovnání.*
 </figcaption>
@@ -155,12 +155,12 @@ A teď ke slovu přichází ono zarovnání:
 
 Na nic nečekejme a vše vysvětleme:
 
-- Kontejneru rozvržení (`.container`) nastavíme po hlavní ose (`align-`) zarovnání všech položek (`-items`)  k horní hraně kontejneru (`start`). Dohromady tedy `align-items:start`.
+- Kontejneru rozvržení (`.container`) nastavíme po příčné ose (`align-`) zarovnání všech položek (`-items`)  k horní hraně kontejneru (`start`). Dohromady tedy `align-items:start`.
 - Třetí položce `.item--3` udělíme výjimku. Bude zarovnaná ke spodní hraně kontejneru – `align-self:end`.
 
 Mrkněte se na živý CodePen, pokud si to neumíte představit, ale asi to nebude těžké.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-pozicni.png" width="1920" height="540" alt="Poziční zarovnání Box Align"></p>
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-pozicni.jpg" width="1920" height="540" alt="Poziční zarovnání Box Align"></p>
 
 CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
@@ -208,7 +208,7 @@ Totiž:
 
 Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku shora tak, aby druhá i třetí lícovala na účaří.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-ucari.png" width="1920" height="540" alt="Box Align zarovnání na účaří"></p>
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-ucari.jpg" width="1920" height="540" alt="Box Align zarovnání na účaří"></p>
 
 CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 
@@ -247,7 +247,7 @@ Jdeme na vysvětlování:
 - Tím, že jsme omezili šířku položky na `100px`, při roztažení rodiče (`.container`) vznikne volné místo.
 - Jak se s volným místem vedle položek naloží určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-prostor.png" width="1920" height="540" alt="Box Align zarovnání - zbylý prostor"></p>
+<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-prostor.jpg" width="1920" height="540" alt="Box Align zarovnání - zbylý prostor"></p>
 
 CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
@@ -263,7 +263,7 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
 <figure>
-<img src="../dist/images/original/vdlayout/overflow-position.png" width="1600" height="900" alt="Vlastnost overflow-position">
+<img src="../dist/images/original/vdlayout/overflow-position.jpg" width="1600" height="900" alt="Vlastnost overflow-position">
 <figcaption markdown="1">
 *V případě hodnoty `unsafe` se použije poziční zarovnání. Alespoň teoreticky.*
 </figcaption>

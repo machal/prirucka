@@ -44,7 +44,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
   <article role="article">
     <h4 id="grid-template-columnsrows"><a href="css-grid-template-rows-columns.md"><code>grid-template-columns/rows</code></a></h4>
-    <p><a href="css-grid-template-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-rows-columns.png" alt="CSS vlastnost grid-template-columns/rows" /></a></p>
+    <p><a href="css-grid-template-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-rows-columns.jpg" alt="CSS vlastnost grid-template-columns/rows" /></a></p>
     <p>
       Definice explicitní mřížky. <br>
       <code>grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr;</code>
@@ -53,7 +53,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
   <article role="article">
     <h4 id="grid-template-areas"><a href="css-grid-template-areas.md"><code>grid-template-areas</code></a></h4>
-    <p><a href="css-grid-template-areas.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-areas.png" alt="CSS vlastnost grid-template-areas" /></a></p>
+    <p><a href="css-grid-template-areas.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-areas.jpg" alt="CSS vlastnost grid-template-areas" /></a></p>
     <p>
       Pojmenování oblastí. <br>
       <code>grid-template-areas: "one two"</code>
@@ -62,7 +62,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
   <article role="article">
     <h4 id="grid-template"><a href="css-grid-template.md"><code>grid-template</code></a></h4>
-    <p><a href="css-grid-template.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template.png" alt="CSS vlastnost grid-template" /></a></p>
+    <p><a href="css-grid-template.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template.jpg" alt="CSS vlastnost grid-template" /></a></p>
     <p>
       Zkratka pro definici explicitní mřížky. <br>
       <code>grid-template:"one one two" 1fr ⏎ "one one two" 1fr / 1fr 1fr 1fr;</code>
@@ -71,7 +71,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
   <article role="article">
     <h4 id="grid-auto-columnsrows"><a href="css-grid-auto-rows-columns.md"><code>grid-auto-columns/rows</code></a></h4>
-    <p><a href="css-grid-auto-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-rows-columns.png" alt="CSS vlastnost grid-auto-columns/rows" /></a></p>
+    <p><a href="css-grid-auto-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-rows-columns.jpg" alt="CSS vlastnost grid-auto-columns/rows" /></a></p>
     <p>
       Definice implicitní mřížky. <br>
       <code>grid-auto-rows:1fr;</code>
@@ -80,13 +80,13 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
   <article role="article">
     <h4 id="grid-auto-flow"><a href="css-grid-auto-flow.md"><code>grid-auto-flow</code></a></h4>
-    <p><a href="css-grid-auto-flow.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-flow.png" alt="CSS vlastnost grid-auto-flow" /></a></p>
+    <p><a href="css-grid-auto-flow.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-flow.jpg" alt="CSS vlastnost grid-auto-flow" /></a></p>
     <p>Způsob automatického umísťování do mřížky. <br> <code>grid-auto-flow:column;</code></p>
   </article>
 
   <article role="article">
     <h4 id="grid"><a href="css-grid-zkratka.md"><code>grid</code></a></h4>
-    <p><a href="css-grid-zkratka.md"><img src="../dist/images/small/vdlayout/schema-css-grid-zkratka.png" alt="CSS zkratka grid" /></a></p>
+    <p><a href="css-grid-zkratka.md"><img src="../dist/images/small/vdlayout/schema-css-grid-zkratka.jpg" alt="CSS zkratka grid" /></a></p>
     <p>
       Zkratka pro definici všeho. <br>
       <code>grid:auto-flow 1fr / 100px;</code>
@@ -101,13 +101,13 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
   <article role="article">
     <h4 id="grid-columnrow"><a href="css-grid-row-column.md"><code>grid-column/row</code></a></h4>
-    <p><a href="css-grid-row-column.md"><img src="../dist/images/small/vdlayout/schema-css-grid-row-column.png" alt="CSS vlastnost grid-column/row" /></a></p>
+    <p><a href="css-grid-row-column.md"><img src="../dist/images/small/vdlayout/schema-css-grid-row-column.jpg" alt="CSS vlastnost grid-column/row" /></a></p>
     <p>Umístění do explicitní mřížky. <br> <code>grid-column:2 / 3;</code></p>
   </article>
 
   <article role="article">
     <h4 id="grid-area"><a href="css-grid-area.md"><code>grid-area</code></a></h4>
-    <p><a href="css-grid-area.md"><img src="../dist/images/small/vdlayout/schema-css-grid-area.png" alt="CSS vlastnost grid-area" /></a></p>
+    <p><a href="css-grid-area.md"><img src="../dist/images/small/vdlayout/schema-css-grid-area.jpg" alt="CSS vlastnost grid-area" /></a></p>
     <p>Umístění do pojmenované oblasti. <br> <code>grid-area:first;</code></p>
   </article>
 
@@ -121,7 +121,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
 
   <article role="article">
     <h4 id="jednotka-fr"><a href="css-jednotka-fr.md">jednotka <code>fr</code></a></h4>
-    <p><a href="css-jednotka-fr.md"><img src="../dist/images/small/vdlayout/schema-css-jednotka-fr.png" alt="CSS jednotka fr" /></a></p>
+    <p><a href="css-jednotka-fr.md"><img src="../dist/images/small/vdlayout/schema-css-jednotka-fr.jpg" alt="CSS jednotka fr" /></a></p>
     <p>
       Jednotka pro podíl na celku. <br> 
       <code>grid-template-columns:1fr 2fr;</code>
@@ -130,7 +130,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
 
   <article role="article">
     <h4 id="funkce-repeat-auto-fill-a-auto-fit"><a href="css-repeat.md">funkce <code>repeat()</code>, <code>auto-fill</code> a <code>auto-fit</code></a></h4>
-    <p><a href="css-repeat.md"><img src="../dist/images/small/vdlayout/schema-css-repeat.png" alt="CSS funkce repeat()" /></a></p>
+    <p><a href="css-repeat.md"><img src="../dist/images/small/vdlayout/schema-css-repeat.jpg" alt="CSS funkce repeat()" /></a></p>
     <p>
       Funkce zkrácení opakujících se zápisů. <br>
       <code>grid-template-columns:repeat(8, 1fr);</code>
@@ -139,7 +139,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
 
   <article role="article">
     <h4 id="funkce-minmax"><a href="css-minmax.md">funkce <code>minmax()</code></a></h4>
-    <p><a href="css-minmax.md"><img src="../dist/images/small/vdlayout/schema-css-minmax.png" alt="CSS funkce minmax()" /></a></p>
+    <p><a href="css-minmax.md"><img src="../dist/images/small/vdlayout/schema-css-minmax.jpg" alt="CSS funkce minmax()" /></a></p>
     <p>Omezení minima a maxima v rozměru. <br> <code>grid-template-columns:minmax(100px, 1fr);</code></p>
   </article>
 
@@ -153,13 +153,13 @@ Následující krátký seznam je o nových vlastnostech, které sice zatím nen
 
   <article role="article">
     <h4 id="masonry"><a href="css-subgrid.md">subgrid</a></h4>
-    <p><a href="css-subgrid.md"><img src="../dist/images/small/vdlayout/schema-css-subgrid.png" alt="CSS masonry laoyut" /></a></p>
+    <p><a href="css-subgrid.md"><img src="../dist/images/small/vdlayout/schema-css-grid-subgrid.jpg" alt="CSS masonry laoyut" /></a></p>
     <p>Podmřížka uvnitř mřížky. <br> <code>grid-template-cols:subgrid;</code></p>
   </article>
 
   <article role="article">
     <h4 id="masonry"><a href="css-masonry.md"><code>masonry</code></a></h4>
-    <p><a href="css-masonry.md"><img src="../dist/images/small/vdlayout/schema-css-masonry.png" alt="CSS masonry laoyut" /></a></p>
+    <p><a href="css-masonry.md"><img src="../dist/images/small/vdlayout/schema-css-masonry.jpg" alt="CSS masonry laoyut" /></a></p>
     <p>Masonry (zděný) layout. <br> <code>grid-template-rows:masonry;</code></p>
   </article>
 
@@ -214,7 +214,7 @@ Toto – na rozdíl od `display:flex` – automaticky nic nedělá. Zatím jsme 
 Vytvoříme tím layout rozdělený na pět sloupečků mřížky. Přičemž první a poslední části pro postranní obsah zaberou jednu pětinu. Prostřední část (`content`) tři pětiny.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-grid-priklad-basic.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/css-grid-priklad-basic.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Jednoduchý layout s použitím CSS gridu. Ani to nebolelo.*
 </figcaption>
@@ -257,7 +257,7 @@ Z mého pohledu má grid daleko širší možnosti stylování než flexboxem. M
 Podpora gridu v moderních prohlížečích je výborná, takřka bezchybná.
 
 <figure>
-<img src="../dist/images/original/css-grid-caniuse.png" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
+<img src="../dist/images/original/vdlayout/css-grid-caniuse.jpg" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 *Podpora gridu v prohlížečích, které mají v ČR nad 0,5 % podílu trhu. Prohlížeče jsou seřazené podle používanosti. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
 </figcaption>

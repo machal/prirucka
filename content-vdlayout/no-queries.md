@@ -59,7 +59,7 @@ Po nutném úvodu teď už pojďme na kód, který pro řešení zalomení layou
 Rozvržení pak vypadá jako na obrázku.
 
 <figure>
-<img src="../dist/images/original/vdlayout/no-queries-flex-wrap.png" width="1600" height="900" alt="">
+<img src="../dist/images/original/vdlayout/no-queries-flex-wrap.jpg" width="1600" height="900" alt="">
 <figcaption markdown="1">
 Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku okna 320, 380 a 900 pixelů.
 </figcaption>
@@ -90,7 +90,7 @@ Obrázek pak bude na nejmenších šířkách rodičovského prvku při rozlože
 Tady nedovolíme obrázku menší šířku než 200 pixelů. Řeší to náš problém, ale zároveň jsem si tím zadělali na jiný. V mezikroku vznikne po straně obrázku prostor.
 
 <figure>
-<img src="../dist/images/original/vdlayout/no-queries-flex-wrap-min-width.png" width="1600" height="900" alt="">
+<img src="../dist/images/original/vdlayout/no-queries-flex-wrap-min-width.jpg" width="1600" height="900" alt="">
 <figcaption markdown="1">
 Minimální šířka obrázku nám zde jeden problém vyřeší a druhý vyrobí.
 </figcaption>
@@ -155,7 +155,7 @@ CodePen: [cdpn.io/e/GRrMexj](https://codepen.io/machal/pen/GRrMexj?editors=1100)
 Když si s mým příkladem pohrajete pomocí zvětšování a zmenšování okna, zjistíte, že ze všech dosud uváděných ukázek se chová nejhůř. Ostatně, uvidíte to také na obrázku.
 
 <figure>
-<img src="../dist/images/original/vdlayout/no-queries-grid.png" width="1600" height="900" alt="">
+<img src="../dist/images/original/vdlayout/no-queries-grid.jpg" width="1600" height="900" alt="">
 <figcaption markdown="1">
 Tady jsme mřížku už trošku rozbili. Dobré to není, že?
 </figcaption>
@@ -180,7 +180,7 @@ Kouzelník zde použil stejný trik…
 …ale výsledek je daleko elegantnější. Na obrázku to snad dobře uvidíte.
 
 <figure>
-<img src="../dist/images/original/vdlayout/no-queries-grid-images.png" width="1600" height="900" alt="">
+<img src="../dist/images/original/vdlayout/no-queries-grid-images.jpg" width="1600" height="900" alt="">
 <figcaption markdown="1">
 Mřížka vrací úder. V pravidelných layoutech se cítí jako doma.
 </figcaption>
@@ -212,7 +212,7 @@ Vezměme do ruky lupu a podívejme se na ten kód pořádně:
 Na obrázku to bude vypadat takto:
 
 <figure>
-<img src="../dist/images/original/vdlayout/no-queries-multicol.png" width="1600" height="900" alt="">
+<img src="../dist/images/original/vdlayout/no-queries-multicol.jpg" width="1600" height="900" alt="">
 <figcaption markdown="1">
 Vícesloupcový layout. Na první pohled ujde, ale doma to raději nezkoušejte.
 </figcaption>

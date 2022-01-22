@@ -4,7 +4,7 @@ Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda 
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost flex-wrap](../dist/images/medium/vdlayout/css-flex-wrap-schema.png)
+![CSS vlastnost flex-wrap](../dist/images/medium/vdlayout/css-flex-wrap-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -32,7 +32,7 @@ Kontejner flexboxu umožní položkám, aby se zalomily na další řádek.
 Položky se mohou zalomit do více řádků a zároveň se pořadí řádků otočí.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-wrap.png" width="1600" height="900" alt="CSS vlastnost flex-wrap">
+<img src="../dist/images/original/vdlayout/css-flex-wrap.jpg" width="1600" height="900" alt="CSS vlastnost flex-wrap">
 <figcaption markdown="1">
 *Může se layout zalamovat, a pokud ano jakým směrem?*
 </figcaption>

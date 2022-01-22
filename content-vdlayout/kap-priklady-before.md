@@ -10,23 +10,23 @@ Jaké příklady spolu ve čtvrté kapitole nakódujeme?
 
 <div class="inner-grid" markdown="1">
 
-- ![Sidebar](../dist/images/small/vdlayout/schema-priklad-sidebar.png.png)  
+- ![Sidebar](../dist/images/small/vdlayout/schema-priklad-sidebar.jpg)  
 [Boční panel](priklad-sidebar.md)
-- ![Pancakes](../dist/images/small/vdlayout/schema-priklad-pancakes.png)  
+- ![Pancakes](../dist/images/small/vdlayout/schema-priklad-pancakes.jpg)  
 [Hromada lívanců](priklad-pancakes.md)
-- ![Holy grail](../dist/images/small/vdlayout/schema-priklad-holy-grail.png)  
+- ![Holy grail](../dist/images/small/vdlayout/schema-priklad-holy-grail.jpg)  
 [Svatý grál](priklad-holy-grail.md)
-- ![Slevomat](../dist/images/small/vdlayout/schema-priklad-slevomat.png)  
+- ![Slevomat](../dist/images/small/vdlayout/schema-priklad-slevomat.jpg)  
 [Responzivní fotogalerie](priklad-slevomat-gallery.md)
-- ![Bootstrap](../dist/images/small/vdlayout/schema-priklad-bootstrap.png)  
+- ![Bootstrap](../dist/images/small/vdlayout/schema-priklad-bootstrap.jpg)  
 [Mřížka z Bootstrapu](priklad-bootstrap-grid.md)
-- ![Centrování](../dist/images/small/vdlayout/schema-priklad-centrovani.png)  
+- ![Centrování](../dist/images/small/vdlayout/schema-priklad-centrovani.jpg)  
 [Centrování boxíků](priklad-centrovani.md)
-- ![Slevomat](../dist/images/small/vdlayout/schema-priklad-vyhledavani.png)  
+- ![Slevomat](../dist/images/small/vdlayout/schema-priklad-vyhledavani.jpg)  
 [Vyhledávací formulář](priklad-formular-vyhledavani.md)
-- ![Photogallery](../dist/images/small/vdlayout/schema-priklad-photogallery.png)  
+- ![Photogallery](../dist/images/small/vdlayout/schema-priklad-photogallery.jpg)  
 [Fotogalerie bez Media Queries](priklad-photogallery.md)
-- ![Raven](../dist/images/small/vdlayout/schema-priklad-raven.png)  
+- ![Raven](../dist/images/small/vdlayout/schema-priklad-raven.jpg)  
 [Krkavčí technika](krkavci-technika.md)
 
 </div>

@@ -149,7 +149,7 @@ V tomto bodě začnu předpokládat, že o Media Queries už něco víte a spole
 „Media Object“ je ve webdesignu velmi populární komponenta. Tak populární, že se bez ní nemůže obejít žádná knížka. A pokud jde o knížku o layoutu v CSS, tím tuplem ne.
 
 <figure>
-<img src="../dist/images/original/vdlayout/media-object-mq.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/media-object-mq.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 „Ahoj, já jsem Media Object a teď vás budu trochu trápit.“
 </figcaption>
@@ -297,7 +297,7 @@ Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (
 Pro puristy zde přiznávám, že jsem porušil své vlastní pravidlo a v dotazu použil jednotku `px` namísto `em`. To proto, abychom si to matematicky ještě více nezkomplikovali. Ale `428px` standardně přepočteme na `26.75em`.  Více o jednotkách hledejte v textu o [CSS jednotkách](jednotky.md) ze závěrečné kapitoly.
 
 <figure>
-<img src="../dist/images/original/vdlayout/media-object-mq-rozmery.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/media-object-mq-rozmery.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 To je samý margin a padding. Kdo pak má ty Media Queries počítat?!
 </figcaption>

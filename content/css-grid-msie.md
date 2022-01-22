@@ -43,7 +43,7 @@ Jejich příčinou je rychlá implementace gridu v rané fázi specifikace týme
 
 Podívejme se na jednoduchý layout, u kterého si ukážeme jak přesně Autoprefixer zařídí fungování gridu v MSIE.
 
-CodePen: [cdpn.io/e/BvJjdz](https://codepen.io/machal/pen/BvJjdz?editors=1100).
+CodePen: [cdpn.io/e/PopyerN](https://codepen.io/machal/pen/PopyerN?editors=1100).
 
 Jde o rozvržení definované následujícím způsobem:
 
@@ -130,7 +130,7 @@ MSIE totiž neumí ani žádnou z vlastností `*-area`. Autoprefixer tak automat
 
 Pokud vám nesedí počty sloupců u vlastnosti `-ms-grid-column`, pak raději zopakuji, že Autoprefixer uměle přidává sloupečky, abychom mohli používat mezery `-gap`.
 
-Demo jsme snad rozebrali do posledního kamínku. Tady je ještě v celé kráse: [cdpn.io/e/BvJjdz](https://codepen.io/machal/pen/BvJjdz).
+Demo jsme snad rozebrali do posledního kamínku. Tady je ještě jednou v celé kráse: [cdpn.io/e/PopyerN](https://codepen.io/machal/pen/PopyerN).
 
 ## Co Autoprefixer umí? {#autoprefixer-vlastnosti}
 
@@ -188,14 +188,15 @@ Automatické umísťování ale u jednodušších layoutů udělat jde, jak za 
 
 *Autoplacement* je další důležitá vlastnost gridu, Explorer ji neumí, ale i tady vám může částečně pomoci Explorer.
 
-Pojďme tradičně na příklad. Chceme layout 2 × 2 prvky. HTML kód vypadá takto:
+Pojďme tradičně na příklad. Chceme layout 3 × 2 prvky. HTML kód vypadá takto:
 
 ```html
 <div class="container">
   <p class="box">Box</p>
   <p class="box">Box</p>
+  <p class="box">Box<br>…</p>
   <p class="box">Box</p>
-  <p class="box">Box</p>
+  <p class="box">Box<br>…</p>  
 </div>
 ```
 
@@ -204,8 +205,9 @@ Díky automatickému umístění bude v moderních prohlížečích stačit defi
 ```css
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;  
   grid-template-rows: auto auto;
+  gap: 1rem;
 }
 ```
 

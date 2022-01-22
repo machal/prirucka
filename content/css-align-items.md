@@ -4,7 +4,7 @@ Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na p
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost align-items](../dist/images/medium/vdlayout/css-align-items-schema.png)
+![CSS vlastnost align-items](../dist/images/medium/vdlayout/css-align-items-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -49,7 +49,7 @@ CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti align-items](../dist/images/original/vdlayout/css-align-items-hodnoty.png)
+![Hodnoty vlastnosti align-items](../dist/images/original/vdlayout/css-align-items-hodnoty.jpg)
 
 Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 

@@ -7,7 +7,7 @@ V naprosté většině případů definujeme explicitní mřížku, tedy _přede
 Může se nám ale stát, že položku umístíme na místo, kam explicitní mřížka nesahá. V takovém případě se nám mřížka automaticky rozšíří o implicitní část. Budete se divit, ale i tu můžeme předem definovat.
 
 <figure>
-<img src="../dist/images/original/vdlayout/grid-explicit-implicit.png" width="1600" height="900" alt="Explicitní a implicitní CSS grid">
+<img src="../dist/images/original/vdlayout/grid-explicit-implicit.jpg" width="1600" height="900" alt="Explicitní a implicitní CSS grid">
 <figcaption markdown="1">
 *Mřížka se zelenou explicitní (doslovně definovanou) a bílou implicitní (automaticky definovanou) částí.*
 </figcaption>
@@ -71,7 +71,7 @@ Pokud bychom si ale přáli jiné parametry pro ty potenciální nové prvky mř
 Mřížce tím nepřikazujeme, aby byla rovnou dvouřádková. Říkáme zhruba toto: „Zatím nic nevykresluj, ale pokud by náhodou přibyla položka na druhou řádku, vykresli ji dvakrát tak vysokou než jsou ty na prvním řádku.“ Tak tohle je ten slavný implicitní grid. Vypadá to teď jako na obrázku.
 
 <figure>
-<img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-1.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 1. příklad">
+<img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-1.jpg" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 1. příklad">
 <figcaption markdown="1">
 *A helemese, na druhém řádku je položka. Ta se formátuje podle automatického, implicitního gridu.*
 </figcaption>
@@ -103,7 +103,7 @@ Ve stylech sice zapneme formátovací kontext mřížky, nějakou tu mezeru pomo
 Prohlížeč si řekne: „Hmm… grid! Ovšem pozor – nemá deklaraci layoutu, takže to prostě vypíšu pod sebe.“ A jak řekl, tak udělá:
 
 <figure>
-<img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2a.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 2. příklad">
+<img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2a.jpg" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 2. příklad">
 <figcaption markdown="1">
 *Tady žádný grid není, co jiného bychom měli čekat?*
 </figcaption>
@@ -123,7 +123,7 @@ Prohlížeč: „No toto! Máme tam přeci jen tři sloupce a jeden řádek. A t
 Naštěstí si ale náš milý prohlížeč vzpomene, že kromě explicitního mřížky jej učili ještě implicitní. Tedy, že tam, kde chybí explicitní buňky, může vyskládat ty implicitní:
 
 <figure>
-<img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2b.png" width="1600" height="450" alt="Explicitní a implicitní CSS grid - příklad">
+<img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2b.jpg" width="1600" height="450" alt="Explicitní a implicitní CSS grid - příklad">
 <figcaption markdown="1">
 *Hele, grid!*
 </figcaption>

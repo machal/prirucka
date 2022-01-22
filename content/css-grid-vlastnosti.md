@@ -15,7 +15,7 @@ Kontejner mřížky můžeme definovat kromě `display:grid` také jako `display
 Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) – *fraction unit*, která umožní snadné dělení volného místa.
 
 <figure>
-<img src="../dist/images/original/vdlayout/grid-fr-unit.png" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
+<img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
 <figcaption markdown="1">
 *Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce EM odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou FR. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
 </figcaption>
@@ -62,7 +62,7 @@ V našich podmínkách čteme zleva doprava a pak dolů. Položky se samozřejm�
 
 Pokud bychom snad chtěli změnit směr budování mřížky na shora dolů a pak doprava, pomůžeme si [vlastností `grid-auto-flow`](css-grid-auto-flow.md) s hodnotou `column`.
 
-<p><img src="../dist/images/original/vdlayout/grid-auto-flow.png" width="1920" height="540" alt="grid-auto-flow: column"></p>
+<p><img src="../dist/images/original/vdlayout/grid-auto-flow.jpg" width="1920" height="540" alt="grid-auto-flow: column"></p>
 
 ## 7) Oblasti mřížky
 
@@ -107,7 +107,7 @@ Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracovan
 Sečteno, podtrženo: CSS grid může být nástrojem, který k webu přitáhne novou generaci webových designérů a s nimi nové, neotřelé layouty.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-grid-jen-simmons.png" width="1600" height="900" alt="THE EXPERIMENTAL LAYOUT LAB OF JEN SIMMONS">
+<img src="../dist/images/original/vdlayout/css-grid-jen-simmons.jpg" width="1600" height="900" alt="THE EXPERIMENTAL LAYOUT LAB OF JEN SIMMONS">
 <figcaption markdown="1">
 *The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a neotřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak. Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/*
 </figcaption>

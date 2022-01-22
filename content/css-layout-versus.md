@@ -73,7 +73,7 @@ Bootstrap je skvělý. Kromě základních typografických principů a mřížky
 Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a často ani frontendového kodéra, představuje Bootstrap (a z něj vycházející frameworky jako Foundation nebo Semantic UI) hotový zázrak. Všechno co potřebují napíší v HTML a framework se nějak postará o zbytek.
 
 <figure>
-<img src="../dist/images/original/vdlayout/bootstrap.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/bootstrap.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Bootstrap je skvělý nástroj. Občas se ale používá pro nesprávné účely.*
 </figcaption>

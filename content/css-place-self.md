@@ -4,7 +4,7 @@ Vlastnost `place-self` určí zarovnání položky na hlavní i příčné ose p
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost place-self](../dist/images/medium/vdlayout/css-place-self-schema.png)
+![CSS vlastnost place-self](../dist/images/medium/vdlayout/css-place-self-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -70,7 +70,7 @@ CSS:
 
 Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání.
 
-<p><img src="../dist/images/original/vdlayout/css-place-self-item3.png" width="1920" height="540" alt="place-self v gridu - v Chrome při zapnutém grid overlay"></p>
+<p><img src="../dist/images/original/vdlayout/css-place-self-item3.jpg" width="1920" height="540" alt="place-self v gridu - v Chrome při zapnutém grid overlay"></p>
 
 Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně na buňky (`center`).
 
@@ -78,10 +78,10 @@ CodePen: [cdpn.io/e/MWymbYw](https://codepen.io/machal/pen/MWymbYw?editors=1100)
 
 ## Možné hodnoty {#hodnoty}
 
-Pro nalezení všech možných hodnot se podívejte na referenční příručky k oběma vlastnostem, pro které je `place-items` zkratkou:
+Pro nalezení všech možných hodnot se podívejte na referenční příručky k oběma vlastnostem, pro které je `place-self` zkratkou:
 
-- [`justify-items`](css-justify-items.md) – zarovnání na hlavní ose
-- [`align-items`](css-align-items.md) – zarovnání na příčné ose
+- [`justify-self`](css-justify-self.md) – zarovnání na hlavní ose
+- [`align-self`](css-align-self.md) – zarovnání na příčné ose
 
 ## Podpora v prohlížečích {#prohlizece}
 

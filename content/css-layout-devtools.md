@@ -9,7 +9,7 @@ Máme ale štěstí, že autoři nástrojů pro vývojáře to vidí také a v �
 Lídrem trhu bychom v této oblasti mohli s klidným srdcem jmenovat autory Firefoxu.
 
 <figure>
-<img src="../dist/images/original/vdlayout/devtools-layout-firefox.png" width="1600" height="900" alt="Livesport.cz v DevTools Firefoxu">
+<img src="../dist/images/original/vdlayout/devtools-layout-firefox.jpg" width="1600" height="900" alt="Livesport.cz v DevTools Firefoxu">
 <figcaption markdown="1">
 *CSS grid Inspector v DevTools Firefoxu používaný na Livesport.cz.*
 </figcaption>
@@ -22,7 +22,7 @@ Firefox ale od té doby bohužel prošel krizí, kdy musel snižovat počet lid�
 Někde jsem pod dojmy z nevyváženosti množství vývojářů pracujících na Firefoxu a Chrome napsal, že prohlížeč od Googlu všechny dobré vlastnosti Firefoxu rychle zkopíruje.
 
 <figure>
-<img src="../dist/images/original/vdlayout/devtools-layout-chrome.png" width="1600" height="900" alt="Livesport.cz v DevTools Chrome">
+<img src="../dist/images/original/vdlayout/devtools-layout-chrome.jpg" width="1600" height="900" alt="Livesport.cz v DevTools Chrome">
 <figcaption markdown="1">
 *Jako dvojče. CSS grid na Livesport pitvaný pomocí vývojářských nástrojů Chrome.*
 </figcaption>
@@ -50,7 +50,7 @@ Pokud používáte Firefoxu, v návodu namísto záložky Elements dosadíte Ins
 Osobně se mi zdá, že Firefox má v této oblasti pořád alespoň malý náskok. Zejména jejich překryvná vrstva pro ladění gridu je navržená velmi dobře.
 
 <figure>
-<img src="../dist/images/original/vdlayout/devtools-layout-firefox-detail.png" width="1600" height="900" alt="Livesport.cz v DevTools Chrome">
+<img src="../dist/images/original/vdlayout/devtools-layout-firefox-detail.jpg" width="1600" height="900" alt="Livesport.cz v DevTools Chrome">
 <figcaption markdown="1">
 *Překryvná vrstva ve Firefoxu. Zkoumám tam tento Codepen: [cdpn.io/e/bXeWjb](https://codepen.io/machal/pen/bXeWjb?editors=1100)*
 </figcaption>
@@ -61,7 +61,7 @@ V překryvné vrstvě gridu a flexboxu ve Firefoxu krásně vidím [linky, oblas
 Chrome ale přišel s jednou novou vlastností, která se mi moc líbí.
 
 <figure>
-<img src="../dist/images/original/vdlayout/devtools-layout-ikony.png" width="1600" height="900" alt="Vizualizace vlastností flexboxu v DevTools Chrome">
+<img src="../dist/images/original/vdlayout/devtools-layout-ikony.jpg" width="1600" height="900" alt="Vizualizace vlastností flexboxu v DevTools Chrome">
 <figcaption markdown="1">
 *Chrome: Vizualizace a možnost přenastavení vlastností layoutu.*
 </figcaption>

@@ -4,7 +4,7 @@ Vlastnost `flex-basis` určuje výchozí velikost prvku v rámci rozvržení pos
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost flex-basis](../dist/images/medium/vdlayout/css-flex-basis-schema.png)
+![CSS vlastnost flex-basis](../dist/images/medium/vdlayout/css-flex-basis-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -52,7 +52,7 @@ Pokud uvedeme `flex-basis:auto`, velikost boxu se počítá z obsahu a pak se te
 Pokud uvedeme `flex-basis:0`, nezohlední se velikost textového nebo jiného obsahu. Růst nebo smršťování se vypočítává z celé šířky boxu.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-basis-pruznost.png" width="1600" height="900" alt="Modely pružnosti CSS flexboxu">
+<img src="../dist/images/original/vdlayout/css-flex-basis-pruznost.jpg" width="1600" height="900" alt="Modely pružnosti CSS flexboxu">
 <figcaption markdown="1">
 *Není pružnost jako pružnost. Není model jako model.*
 </figcaption>
@@ -89,7 +89,7 @@ Ukázky jsem připravil dvě – v jedné využívám vlastnosti `flex-basis` sa
 ### Ukázka bez použití `width` {#ukazka-bez-width}
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-basis.png" width="1600" height="900" alt="CSS vlastnost flex-basis">
+<img src="../dist/images/original/vdlayout/css-flex-basis.jpg" width="1600" height="900" alt="CSS vlastnost flex-basis">
 <figcaption markdown="1">
 *Různé možnosti hodnot. Vysvětlujeme je v textu pod obrázkem.*
 </figcaption>
@@ -120,7 +120,7 @@ Nejdříve se možná zkuste podle výše uvedeného zamyslet, co přesně se p�
 Tady je potřeba si uvědomit důležitou věc, kterou už jsem zmiňoval – `flex-basis` je nadřazená vlastnost k `width` nebo `height`. Takže i když máme `width` nastavenu později, a měla by tudíž přebít `flex-basis`, nestane se tak.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-basis-width.png" width="1600" height="900" alt="CSS vlastnost flex-basis a width">
+<img src="../dist/images/original/vdlayout/css-flex-basis-width.jpg" width="1600" height="900" alt="CSS vlastnost flex-basis a width">
 <figcaption markdown="1">
 *Přidáním `width` se mění situace.*
 </figcaption>

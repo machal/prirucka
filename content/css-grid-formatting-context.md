@@ -27,7 +27,7 @@ Výsledek se různí podle formátovacího kontextu:
 - `display:block` slučuje svislé okraje, takže mezi položkami je shora i zdola mezera jen `1em`.
 - `display:grid` naproti tomu okraje neslučuje, takže mezi jednotlivými .`.item` tvoří mezeru dvakrát `margin`, tedy `2em`.
 
-<p><img src="../dist/images/original/vdlayout/margins-display-block-grid.png" width="1920" height="540"  alt="Marginy se v CSS gridu neslučují"></p>
+<p><img src="../dist/images/original/vdlayout/margins-display-block-grid.jpg" width="1920" height="540" alt="Marginy se v CSS gridu neslučují"></p>
 
 Zájemci o více informací nechť prozkoumají následující živou ukázku.
 
@@ -62,7 +62,7 @@ Pozicovat můžete samotný grid kontejner, ale i jeho položky, pokud z kontejn
 
 Vyzkoušel jsem to za vás, protože jsem byl zvědavý:
 
-<p><img src="../dist/images/original/vdlayout/css-grid-position.png" width="1920" height="540"  alt="CSS grid a vlastnost position"></p>
+<p><img src="../dist/images/original/vdlayout/css-grid-position.jpg" width="1920" height="540"  alt="CSS grid a vlastnost position"></p>
 
 CodePen: [cdpn.io/e/qBbdmrd](https://codepen.io/machal/pen/qBbdmrd?editors=1100)
 

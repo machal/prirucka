@@ -4,7 +4,7 @@ Vlastnost `flex-flow` určuje směr a způsob zalamování položek flexboxu.
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost flex-flow](../dist/images/medium/vdlayout/css-flex-flow-schema.png)
+![CSS vlastnost flex-flow](../dist/images/medium/vdlayout/css-flex-flow-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -40,7 +40,7 @@ Vzhledem k tomu, že obě vlastnosti používají jiná klíčová slova pro sv�
 Níže to v textu rozebereme více, ale obrázky napoví. Jako vždy. Nejprve k `flex-direction`.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-direction.png" width="1600" height="900" alt="CSS vlastnost flex-direction">
+<img src="../dist/images/original/vdlayout/css-flex-direction.jpg" width="1600" height="900" alt="CSS vlastnost flex-direction">
 <figcaption markdown="1">
 *Vlastnost `flex-direction` přikáže flexboxovému rozvržení směr vykreslování.*
 </figcaption>
@@ -49,7 +49,7 @@ Níže to v textu rozebereme více, ale obrázky napoví. Jako vždy. Nejprve k 
 A co vlastnost `flex-wrap`? Tramtadadá, tady ji máme!
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-flex-wrap.png" width="1600" height="900" alt="CSS vlastnost flex-wrap">
+<img src="../dist/images/original/vdlayout/css-flex-wrap.jpg" width="1600" height="900" alt="CSS vlastnost flex-wrap">
 <figcaption markdown="1">
 *Bude se to zalamovat, a pokud ano jakým směrem? Tomu velí vlastnost `flex-wrap`.*
 </figcaption>

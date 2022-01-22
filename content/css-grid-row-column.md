@@ -4,7 +4,7 @@ V textu se zaměříme na vlastnosti `grid-column` a `grid-row`, které slouží
 
 <div class="connected" markdown="1">
 
-![CSS vlastnosti grid-column a grid-row](../dist/images/medium/vdlayout/schema-css-grid-row-column.png)
+![CSS vlastnosti grid-column a grid-row](../dist/images/medium/vdlayout/schema-css-grid-row-column.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -81,7 +81,7 @@ Je to totéž, jako bychom napsali:
 
 Všimněte si, že řádky končíme na čísle 4, i když je máme jen tři. Je to dobrá připomínka toho, že se zde neodkazujeme na čísla řádků či sloupců, ale na čísla linek, které grid definují.
 
-<p><img src="../dist/images/original/vdlayout/css-grid-row-column.png" width="1920" height="540"  alt="grid-column a grid-row ve Firefoxu"></p>
+<p><img src="../dist/images/original/vdlayout/css-grid-row-column.jpg" width="1920" height="540"  alt="grid-column a grid-row ve Firefoxu"></p>
 
 CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 

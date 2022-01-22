@@ -4,7 +4,7 @@ Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik slo
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost column-span](../dist/images/small/vdlayout/css-multicol-span-scheme.png)
+![CSS vlastnost column-span](../dist/images/small/vdlayout/css-multicol-span-scheme.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -30,7 +30,7 @@ Vlastnost je velmi zajímavá pro použití na nadpisy a podobné prvky, které 
 Jak přesně to funguje? To uvidíte nejlépe v příkladu nebo na obrázku.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-multicol-span.png" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
+<img src="../dist/images/original/vdlayout/css-multicol-span.jpg" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
 <figcaption markdown="1">
 *Černý prvek se standardně spokojí jen s jedním sloupcem. Dokud mu nenastavíte `column-span:all`.*
 </figcaption>

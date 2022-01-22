@@ -4,7 +4,7 @@ Vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení 
 
 <div class="connected" markdown="1">
 
-![Vlastnosti grid-template-rows a grid-template-columns](../dist/images/medium/vdlayout/schema-css-grid-template-rows-columns.png)
+![Vlastnosti grid-template-rows a grid-template-columns](../dist/images/medium/vdlayout/schema-css-grid-template-rows-columns.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -49,7 +49,7 @@ Vysvětleme:
 - `grid-template-columns:50% 50%` – definuje dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
 - `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu.
 
-<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows"></p>
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows"></p>
 
 CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
 
@@ -64,7 +64,7 @@ Poznámka k hodnotě `auto` v definici řádků: Grid sjednocuje výšky polože
 </div>
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-2.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - vyšší buňka"></p>
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-2.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - vyšší buňka"></p>
 
 CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
@@ -98,7 +98,7 @@ Jiná by byla situace, pokud bychom změnili definici výšky položek gridu:
 
 Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výchozí, v tomto případě opět `auto`.
 
-<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-3.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - přidání páté buňky"></p>
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-3.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - přidání páté buňky"></p>
 
 CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
@@ -172,7 +172,7 @@ Sloupce a řádky mřížky je možné si představit jako sloupce a řádky v t
 
 V ukázce je tedy první položka gridu umístěná vodorovně na pozici mezi `first-col` a `second-col`. Svisle pak mezi `first-row` a `second-row`.
 
-<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-tracks.png" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - definování linek"></p>
+<p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-tracks.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - definování linek"></p>
 
 CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
 

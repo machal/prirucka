@@ -4,7 +4,7 @@ Pokud chcete pro rozvržení použít CSS Multi-column Layout, pak je nutné za�
 
 <div class="connected" markdown="1">
 
-![column-width, column-count a columns](../dist/images/small/vdlayout/css-multicol-columns-scheme.png)
+![column-width, column-count a columns](../dist/images/small/vdlayout/css-multicol-columns-scheme.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -33,7 +33,7 @@ Umožňuje totiž dělat něco jako automatický responzivní layout. Tedy urči
 </div>
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-multicol-columns.png" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
+<img src="../dist/images/original/vdlayout/css-multicol-columns.jpg" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
 <figcaption markdown="1">
 *Tady je máme. Vlastnost `columns` je zkratkou pro dvě jiné, `column-width` a `column-count`. V tomto případě jsem vyrobili rozvržení, které obsahuje maximálně tři sloupce o šířce `20em`.*
 </figcaption>

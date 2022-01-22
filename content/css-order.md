@@ -4,7 +4,7 @@ Vlastnost `order` nastavuje pořadí položky v kontejneru rozvržení v CSS.
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost order](../dist/images/medium/vdlayout/css-order-schema.png)
+![CSS vlastnost order](../dist/images/medium/vdlayout/css-order-schema.jpg)
  
 <div class="web-only" markdown="1">
 
@@ -62,7 +62,7 @@ Kam si myslíte, že se třetí položka posune? Na první místo? Na druhé? P�
 Do obrázku jsem nakreslil nejen řešení, ale rovnou i hned dvě další možná nastavení.
 
 <figure>
-<img src="../dist/images/original/css-order.png" width="1600" height="900" alt="CSS vlastnost order">
+<img src="../dist/images/original/css-order.jpg" width="1600" height="900" alt="CSS vlastnost order">
 <figcaption markdown="1">
 *Číselné hodnoty vlastnosti `order` vytvářejí nové řazení. Kladná za stávajícími položkami, záporná před nimi.*
 </figcaption>

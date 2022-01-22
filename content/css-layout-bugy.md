@@ -26,7 +26,7 @@ Autorovi téhle myšlenky bychom museli přiznat jistou dávku zdravého skeptic
 Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Musíme ovšem s úlevou prohlásit, že oproti dřívějšímu stavu je přítomnost chyb spojených s flexboxem nebo gridem v prohlížečích minimální.
 
 <figure>
-<img src="../dist/images/original/css-layout-podpora-celkem.png" width="1600" height="450" alt="Podpora flexboxu, gridu, multicol z CanIUse">
+<img src="../dist/images/original/vdlayout/css-layout-podpora-celkem.jpg" width="1600" height="450" alt="Podpora flexboxu, gridu, multicol z CanIUse">
 <figcaption markdown="1">
 *Čím více zelené, tím více podpory. Zelenohnědá značí, že daný prohlížeč má nějaký problém. Zdroj: [CanIUse.com](https://caniuse.com/).*
 </figcaption>
@@ -61,7 +61,7 @@ Znalost některých chyb byla tak zásadní, že jsem je svého času musel uči
 Když jsem během psaní tohoto textu srovnával současný stav s tím dřívějším, došel jsem k radostnému poznání.
 
 <figure>
-<img src="../dist/images/original/css-flexbox-caniuse.png" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
+<img src="../dist/images/original/vdlayout/css-flexbox-caniuse.jpg" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 *Jak je to krásně zelené! Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
 </figcaption>
@@ -143,7 +143,7 @@ V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit 
 Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří mají trochu smůlu.
 
 <figure>
-<img src="../dist/images/original/css-grid-caniuse.png" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
+<img src="../dist/images/original/vdlayout/css-grid-caniuse.jpg" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 *Podpora gridu v prohlížečích. Zelenohnědá barva u MSIE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
 </figcaption>
@@ -198,7 +198,7 @@ Všechny ostatní chyby jsou, zdá se, opravené. Takže, když nebereme v úvah
 Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních prohlížečích. Implementace v Exploreru je vlastně výborná.
 
 <figure>
-<img src="../dist/images/original/css-multicol-caniuse.png" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse">
+<img src="../dist/images/original/vdlayout/css-multicol-caniuse.jpg" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 *Podpora vícesloupcového layoutu v prohlížečích. Zelená je na místech, které byste možná nečekali. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
 </figcaption>
@@ -209,7 +209,7 @@ Chyby v Chrome a Firefoxu zde zůstávají už léta hlavně proto, že sloupcov
 Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 
 <figure>
-<img src="../dist/images/original/css-multicol-caniuse-issues.png" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse - záložka issues">
+<img src="../dist/images/original/vdlayout/css-multicol-caniuse-issues.jpg" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse - záložka issues">
 <figcaption markdown="1">
 *Pytel blech. Drobné problémy ve vícesloupcovém layoutu. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
 </figcaption>

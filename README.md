@@ -57,17 +57,6 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 
 ## Komponenty ve stránce
 
-### Obrázky
-
-- Zatím jen JPG nebo PNG.
-- Bílé pozadí. Obsah až ke krajům.
-- Ideálně bez efektů jako stíny na pozadí screenshotů z Maca.
-- 16 : 9. Minimálně 2000 pixelů široké v 300dpi. Kvůli případnému tisku.
-- Shora může být odsazení a barevný rámeček (ebooky). Zezdola zase odsazení a text.
-- Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
-- Informace nebo jejich vazba nesmí být závislá jen na barvě. Kůli černobílým Kindle čtečkám.
-- Zdroje ukládáme buď přímo do příručky, nebo exterimentálně vkládáme [z Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/home), ale to spíše pro články na blogu.
-
 #### Schéma barev pro obrázky a ilustrace
 
 - **Hlavní barva** (tmavě hnědá):  
@@ -82,8 +71,8 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 #### Pravidla pro obrázky
 
 - Technicky:
-	- Zatím jen PNG, alternativně JPG.
-	- 16 : 9, alternativně 16 : 4,5. 
+	- Zatím zdroje vždy JPG. (Kvůli tisku. Časem optimalizované pro web jako menší WebP.)
+	- 16 : 9, alternativně 16 : 4,5.
 	- Minimálně 3000 pixelů široké v 300 dpi. Kvůli případnému tisku.
 - Barvy:
 	- Viz výše. Nikdy ne bílé pozadí, viz ebooky a dark-mode.
@@ -98,7 +87,7 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 	- Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
 	- V obrázcích neopakovat delší kód, který je v textu.
 	- Nedávat nikde tečkované, proužkované linky a šrafování - vypadá to blbě, nepasuje to a šrafování působí jako šikmý obrázek
-- Zdroje ukládáme buď přímo do příručky, nebo experimentálně taháme z Cloudinary. 
+- Zdroje ukládáme buď přímo do příručky, nebo experimentálně taháme [z Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/home). 
 
 
 #### Vkládání obrázků
@@ -288,7 +277,7 @@ Obrázek vlastnosti, stručná vysvětlivka, odkazy na další příručky a př
 <div class="connected" markdown="1">
 
 <!-- Obrázek -->
-![CSS vlastnost gap](../dist/images/medium/vdlayout/schema-css-gap.png)
+![CSS vlastnost gap](../dist/images/medium/vdlayout/schema-css-gap.jpg)
 
 <!-- Popisek -->
 `gap` je mezera mezi vnitřními prvky layoutu.
@@ -324,13 +313,13 @@ Příklad:
 
   <article role="article">
     <h4><a href="css-align-items.md"><code>align-items</code></a></h4>
-    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.png" alt="Vlastnost align-items" /></a></p>
+    <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.jpg" alt="Vlastnost align-items" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-place-items.md"><code>place-items</code></a></h4>
-    <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.png" alt="Vlastnost place-items" /></a></p>
+    <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.jpg" alt="Vlastnost place-items" /></a></p>
     <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items: end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
   </article>
 
@@ -400,7 +389,7 @@ Uvést ale adresu přímo z Cloudinary, přesměrování nemá rád náš lightb
 
 ```html
 <figure>
-<img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1/caniuse-embed/static/link-rel-preload-1590381119841.png" alt="Podpora preload v prohlížečích">
+<img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1/caniuse-embed/static/link-rel-preload-1590381119841.jpg" alt="Podpora preload v prohlížečích">
 <figcaption markdown="1">
 *Obrázek: Podpora přednačtení prohlížečích. Zdroj: [CanIUse Embed](https://caniuse.bitsofco.de/).*
 </figcaption>
