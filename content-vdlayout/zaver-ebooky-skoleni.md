@@ -1,12 +1,16 @@
-# Kam dál? E-booky, školení a blog
+# Vzhůru dolů: videa, další e-booky a tak dále
 
-*TODO*
+Na [vzhurudolu.cz](https://www.vzhurudolu.cz/) najdete i další výstupy mé práce.
+
+## Videa
+
+Vzdělávací videa jsou na mém webu novinkou. V době psaní je možné zakoupit hodinové video o CSS gridu, ale další videa na témata z knížky jsou v plánu. Celkem je zde již přes 20 videí.
+
+[vzhurudolu.cz/video](https://www.vzhurudolu.cz/video)
 
 ## Další e-booky
 
-<!-- ![E-booky ze Vzhůru dolů](../dist/images/original/vdamp/vdcss3-vdwd.jpg) -->
-
-*TODO*
+Dříve jsem vydal e-booky na související témata. Možná by vás tedy mohly zajímat.
 
 ### Vzhůru do (responzivního) webdesignu
 
@@ -18,18 +22,10 @@ Kompletní průvodce návrhem a implementací designu responzivních webů. Vyd�
 Průvodce frameworkem pro efektivní tvorbu rychlých webů. Napsáno s Robinem Pokorným v roce 2019.  
 [vzhurudolu.cz/ebook-amp](https://www.vzhurudolu.cz/ebook-amp/)
 
-## Videa ze Vzhůru dolů
-
-*TODO*
-
-[vzhurudolu.cz/video](https://www.vzhurudolu.cz/video)
-
 ## Vzhůru dolů
 
-Sledujte novinky z oboru a naše články na sociálních sítích:
+Sledujte novinky z oboru a články ze Vzhůru dolů na sociálních sítích:
 
 [facebook.com/vzhurudolu](https://www.facebook.com/VzhuruDolu/)  
 [twitter.com/vzhurudolu](https://twitter.com/vzhurudolu)  
 [linkedin.com/company/vzhůru-dolů/](https://www.linkedin.com/company/vzh%C5%AFru-dol%C5%AF/)
-
-[vzhurudolu.cz](https://www.vzhurudolu.cz/)
