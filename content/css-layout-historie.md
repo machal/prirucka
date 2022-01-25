@@ -41,8 +41,8 @@ V téhle době stavím svůj první větší web – fanouškovské stránky U2 
 Někdy v této době přišel bezejmenný webař na to, že když z tabulky odstraní rámečky, vznikne docela dobrá struktura, které může nést i složitější rozvržení stránek nebo jednotlivých komponent uvnitř.
 Někdy po roce 2000 začne komunitou kolovat následující vtip:
 
-– „Tr td td td tr td td td… – co je to?“
-– „Vlak přijíždí do stanice?“
+– „Tr td td td tr td td td… – co je to?“  
+– „Vlak přijíždí do stanice?“  
 – „Ne to webař tvoří rozvržení stránky.“
 
 Kód, který takto vznikal mě dodnes chodí v noci strašit. No však se sami podívejte:
