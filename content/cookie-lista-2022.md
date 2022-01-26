@@ -38,9 +38,11 @@ Líbilo by se vám to? Mně ne. Ale na webu je to úplně běžné:
 
 * Přijdete, dostanete cookie od Google Analytics, která sleduje váš pohyb webem.
 * Pokud je na webu vložené YouTube video, cookie se ukládá nejen pro úpravu obsahu a reklamy nejen na navštíveném webu, ale také na YouTube a také na jiných webech.
-* Taková komentářová služba Disqus se s tím už vůbec nemaže. V [Cookie Policy](https://disqus.com/cookie-policy/) přiznává jen zlomek cookies, které reálně ukládá, a rovnou říká, že data vašich uživatelů posílá i dalším stranám.
+* Taková komentářová služba Disqus se s tím už vůbec nemaže. V [Cookie Policy](https://disqus.com/cookie-policy/) přiznává jen zlomek cookies, které reálně ukládá, a rovnou říká, že data vašich uživatelů posílá i dalším firmám.
 
 To všechno proto, že na webech mocně využíváme služby třetích stran. Zvykli jsme si na to. Šetří nám to jako vývojářům a marketérům čas a peníze. Jenže nic jako komponenta třetí strany zdarma neexistuje. I ty placené mají daleko větší cenu než si myslíme.
+
+Za náš ušetřený čas a peníze platí uživatelé svým soukromím. Jejich data, informace o pohybu našim webem využíváme nejen my, ale i úplně cizí firmy.
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1639995817/vzhurudolu-prirucka/cookie-lista-2022-fun_end4jh.png" width="1600" height="900" alt="Cookie lišta">
@@ -49,17 +51,15 @@ To všechno proto, že na webech mocně využíváme služby třetích stran. Zv
 </figcaption>
 </figure>
 
-Za náš ušetřený čas a peníze platí uživatelé svým soukromím. Jejich data, informace o pohybu našim webem využíváme nejen my, ale i úplně cizí firmy.
+Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, Twitteru, Facebooku… Jejich přístup k soukromě je prostě o dost horší, než jsem si myslel.
 
-Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, Twitteru, Facebooku… Je to prostě o dost horší, než jsem si myslel.
-
-Takže – pojďme to soukromí řešit. Pojďme to řešit bez paniky a nadávání na zákon nebo EU. Pojďme vzít ty (formálně špatné) cookie lišty jako příležitost se něco naučit a zlepšit web jako celek.
+Takže – pojďme soukromí řešit. Pojďme to řešit bez paniky a nadávání na zákon nebo EU. Pojďme vzít ty (formálně špatné) cookie lišty jako příležitost se něco naučit a zlepšit web jako celek.
 
 <!-- AdSnippet -->
 
 Jednou třeba lišty dáme pryč a zůstanou nám, doufám, weby, které více dbají na soukromí lidí. Neprodávají jejich duši, aniž by to jako návštěvníci věděli.
 
-Teď už se pustím do praktických rad, co s tím dělat na malém webu. Dávám sem svůj stav mysli. Ten rád změním, když mě na to upozorníte v komentářích.
+Teď už se pustím do praktických rad, co s tím dělat na malém webu. Dávám sem svůj stav mysli.
 
 ## Nutné základy {#zaklady}
 
@@ -99,7 +99,7 @@ A teď ta špatná. Ani na Vzhůru dolů, takže strukturou menším webu, mě t
 
 Navíc jde samozřejmě o statickou analýzu webu, takže např. komponenty [načítané líně](lazy-loading.md) nebo na akci uživatele, to neodhalí.
 
-Prostě bez zkoumání uložených cookies a čtení „Cookie Policy“ dodavatelů třetích stran se myslím neobejdete.
+Prostě bez zkoumání uložených cookies ve vývojářských nástrojích prohlížečů a čtení „Cookie Policy“ dodavatelů třetích stran se myslím neobejdete.
 
 ## Zákon praví… {#zakon}
 
@@ -133,7 +133,7 @@ Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápra
 
 Nechci tady ale nabádat k očůrávání zákona. S jeho smyslem souhlasím, svoje weby podle něj upravím. Výše uvedené mi ale dává čas a klid to dát do pořádku, když už jsem to začal řešit pozdě.
 
-Jen pro pořádek – je potřeba odlišit [GDPR](gdpr.md) a nový odstaveček zákona týkajícího se cookie lišty. Píšu tady o tom druhém. Pokuty za porušování GDPR jsou myslím úplně jiná písnička. To by už ale měli mít v pořádku všichni. A dávno.
+Jen pro pořádek – je potřeba odlišit [GDPR](gdpr.md) a nový odstaveček zákona týkajícího se cookie lišty. Píšu tady o tom druhém. Pokuty za porušování GDPR jsou myslím úplně jiná písnička. GDPR by už ale měli mít v pořádku všichni. A dávno.
 
 ## Jak nemít cookie lištu a zároveň dodržovat zákon? {#nemit}
 
@@ -149,44 +149,29 @@ Takže – nezajímá vás návštěvnost a chování návštěvníků, nepotře
 
 ## Lze mít Google Analytics a nemít lištu?  {#ga}
 
-Ano, GA můžeme přepnout do [Consent Mode](https://support.google.com/analytics/answer/9976101?hl=en), kdy se neukládá cookie a uživatel není sledován.
+Ano, Google Analytics (GA) můžeme zakázat ukládání do lokálních úložišť:
 
 ```js
-analytics_storage='denied'
-ad_storage='denied'
+'client_storage': 'none',
 ```
 
 Ztratíte ale přehled o počtu shlédnutých stránek na jednu návštěvu a vše související.
 
-Zůstane vám např. ale přehled nejnavštěvovanějších stránek, hrubý přehled o návštěvnosti a případně i konverzích.
+→ *Celé řešení pro GA popisuji v textu o [zbavování webu cookies](cookieless.md).*
 
-⚠️ _Aktualizace k 4. lednu 2022: Pozor, řešení sice na papíře vypadá snadno, ale v praxi to úplně zničí měření. Aktuálně hledám řešení - viz [Twitter](https://twitter.com/machal/status/1478337956482260995) nebo [Facebook](https://www.facebook.com/groups/1394319880800285/posts/3163539267211662/)._
+Taky je ale možné nepoužívat Google Analytics, že ano?
 
-Další možnosti, jak si ponechat GA a zároveň nemít cookie lištu, tedy plnit zákon, se objevují. Nemám je vyzkoušené, takže bez záruky.
+### Alternativy ke Google Analytics
 
-První příklad je naprogramování vlastní vrstvy událostí na Google Analytics:
-
-> Přejdi na GA4, použij consent API a bez souhlasu měř bez využití dat ze storage jen pomocí odpalování eventů.
->
-> — *<cite>Martin Kopta [na Twitteru](https://twitter.com/atpok/status/1464153090223976451)</cite>*
-
-Druhá varianta s počítáním `clienId`:
-
-> clientId neukládáš, nýbrž jej počítáš pro každý request zvlášť. Výhody: nemusíš nic ukládat (a tedy není třeba souhlas). Nevýhody: horší přesnost, může to session více lidí spojit do jedné.
->
-> — *<cite>Jirka Hrazdil [na Twitteru](https://twitter.com/nufue/status/1471062808515289096)</cite>*
-
-Viz text [Disabling Google Analytics Cookies: Advanced Solution](https://helgeklein.com/blog/google-analytics-cookieless-tracking-without-gdpr-consent/#disabling-google-analytics-cookies-advanced-solution).
-
-Taky je možné nepoužívat Google Analytics, že ano? Popularitu teď nabírají alternativní nástroje jako je [Matomo](https://matomo.org/) nebo [Fathom](https://usefathom.com/) a další. Z toho co jsem z komentářů analytiků, kterým věřím, usoudil… Je to past.
+Popularitu teď nabírají alternativní nástroje jako je [Matomo](https://matomo.org/) nebo [Fathom](https://usefathom.com/) a další. Z toho co jsem pochopil z komentářů analytiků, kterým věřím… Je to past.
 
 Tyhle nástroje často nepoužívají cookies, to je fajn, ale zároveň uživatele identifikují jinak, nejčastěji kombinací různých faktorů, takže [fingerprintingem](https://en.wikipedia.org/wiki/Device_fingerprint), což je z pohledu soukromí úplně to samé.
 
-[Simple Analytics](https://simpleanalytics.com/), další alternativu, údajně bez fingerprintingu, ale bez sledování uživatele napříč webem, mě doporučovali další lidé, jako např. [Jan Smitka na Twitteru](https://twitter.com/jansmitka/status/1471592040479825923).
+[Simple Analytics](https://simpleanalytics.com/), další alternativu, údajně bez fingerprintingu, ale bez sledování uživatele napříč webem, doporučovali další lidé, jako např. [Jan Smitka na Twitteru](https://twitter.com/jansmitka/status/1471592040479825923).
 
 Pokud už alternativy plní požadavky na soukromí, chovají se vlastně podobně jako Google Analytics v Consent Mode. Přičemž GA mají velkou výhodu – jsou de facto průmyslovým standardem.
 
-Zdá se mi, že ani tudy cesta nevede. (Ale samozřejmě budu moc rád za argumenty v komentářích, proč vy si myslíte, že ano.)
+Zdá se mi, že ani tudy cesta nevede. (Ale samozřejmě budu moc rád za argumenty, proč vy si myslíte, že ano.)
 
 ## Co další komponenty třetích stran? {#3p}
 
@@ -202,7 +187,7 @@ Pojďme si projít pár [third-parties](third-party.md), které jsem zkoumal.
 
 Můj celkový dojem? Pardon, ale asi budu blinkat… Takhle špatné jsem to nečekal. Čest výjimce, čest Twitteru.
 
-Můj seznam je samozřejmě nekompletní, takže pokud jej doplníte v komentářích (zatím Disqus, omlouvám se), budu moc rád.
+→ *Související: Jak jsem dělal [analýzu cookies třetích stran](cookieless.md).*
 
 Hodně se mi líbí řešení, kdy si souhlas k vložení obsahu vkládaném třetími stranami vyžádáte až při najetí na tento obsah. Připravené je to např. v komponentě [Iframe Manager](https://github.com/orestbida/iframemanager).
 
@@ -272,6 +257,6 @@ Osobně budu pro Vzhůru dolů hledat co nejjednodušší řešení, které mi u
 
 Po počáteční negaci beru ale celou věc kolem cookies od roku 2022 za velkou příležitost brát oblast soukromí uživatelů našich webů daleko vážněji.
 
-Tento text budu postupně doplňovat, ale moje znalosti jsou samozřejmě omezené. Neváhejte mě doplňovat do komentářů nebo [e-mailem](mailto:martin@vzhurudolu.cz).
+Moje znalosti jsou samozřejmě omezené, ale tento text budu postupně doplňovat, takže pokud vám zde něco chybí nebo přebývá, napište mi.
 
 <!-- AdSnippet -->

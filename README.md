@@ -303,8 +303,8 @@ Vlastnost `gap` je možné použít ve všech layoutech – v  [CSS gridu](css-g
 
 Možné to je, viz `/prirucka/css-flexbox`:
 
-- Je potřeba je přímo v HTML a obrázky ve `small` variantě. 
-- Popisek: V PDF verzi by měl být max. na 3 řád. První řádek popisuje vlastnost, druhý a případně třetí dává příklad. 
+- Je potřeba je přímo v HTML a obrázky ve `small` variantě.
+- Popisek: V PDF verzi by měl být max. na 3 řád. První řádek popisuje vlastnost, druhý a případně třetí dává příklad.
 
 Příklad:
 
