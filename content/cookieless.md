@@ -1,6 +1,6 @@
 # Jak jsem web zbavoval šmírovacích cookies
 
-Sledovací cookies jsou všude. Překvapilo mě, že i na menším webu není vlastně úplně jednoduché se jich zbavit. Nakonec se mi to povedlo a nejspíš se tedy obejdu úplně bez cookie lišty.
+Sledovací cookies jsou všude. Překvapilo mě, že i na menším webu není vlastně úplně jednoduché se jich zbavit. 
 
 Asi víte, že od letoška mají weby povinnost si před ukládáním analytických „sušenek“ vyžádat souhlas uživatele. O [cookies v roce 2022](cookie-lista-2022.md) jsem psal text, který průběžně aktualizuji.
 
@@ -14,17 +14,25 @@ Rozhodl jsem se, že se na Vzhůru dolů pokusím odstranit všechny jiné než 
 
 U hodně malých webů jako je třeba ten kamarádčin s nabídkou [ubytování v Provence](https://www.ubytovani-provence.cz/), jsem se rozhodl, že úplně odstraním komponenty třetí strany.
 
-V zásadě stačilo odstranit Google Analytics, u kterých je za běžných okolností nutné žádat o svolení s ukládáním cookies.
+V zásadě stačilo odstranit Google Analytics (GA), u kterých je za běžných okolností nutné žádat o svolení s ukládáním cookies.
 
 Jak získávám data o návštěvnosti? Stačí mi [Google Search Console](https://www.vzhurudolu.cz/prirucka/google-search-console), které ukazují přístupy z ekosystému Googlu, včetně vyhledávání. Tyto typy webíků mívají velmi malou návštěvnost odjinud (např. ze sociálních sítí), takže to vůbec nevadí.
 
+Na Vzhůru dolů se ovšem bez nějaké základní analytiky neobejdu.
+
 ## Co když Google Analytics potřebuji? {#ga}
 
-Na Vzhůru dolů ovšem nějakou základní analytiku potřebuji. Jednak se mi hodí znát hrubou čtenost článků a také zde prodávám [knížky](https://www.vzhurudolu.cz/ebooky) a [videa](https://www.vzhurudolu.cz/video), takže je to takový malý e-shop podporující mou publikační snahu. Zde není od věci například moci vyhodnocovat konverze.
+Proč potřebuji GA? Jednak se mi hodí znát hrubou čtenost článků a také zde prodávám [knížky](https://www.vzhurudolu.cz/ebooky) a [videa](https://www.vzhurudolu.cz/video), takže je to takový malý e-shop podporující mou publikační snahu. Zde není od věci například moci vyhodnocovat konverze.
 
 Google Analytics ale sbírají obrovské množství další dat, které nepotřebuji. Chtěl jsem tedy najít řešení bez ukládání cookies v prohlížeči, které by zachovalo alespoň základní data.
 
 Po delším pátrání se mi povedlo najít a ověřit tento kód pro verzi Universal Analytics:
+
+⚠️ **Update:** Toto řešení je nejspíš bohužel špatně a bez cookie lišty se neobejdete:
+
+> Řešení odesílá i data o uživateli, tj. s jeho nastavení prohlížeče etc.
+> 
+> — Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
 
 ```html
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-XX"></script>
@@ -39,19 +47,21 @@ Po delším pátrání se mi povedlo najít a ověřit tento kód pro verzi Univ
 </script>
 ```
 
-Trošku to vysvětlím:
+Pokud vás to i tak zajímá, vysvětlím to více:
 
 * Konfigurace `client_storage` zakazuje ukládat do cookies nebo jiného lokálního úložiště. (Pro potřeby zákona je špatně ukládání kamkoliv do prohlížeče.)
 * `anonymize_ip` zapíná [anonymizaci IP](https://developers.google.com/analytics/devguides/collection/gtagjs/ip-anonymization). Toto není pro potřeby cookie lišty nutné. Respektive, ehm, názory se různí…
 * Pokud kód budete někam kopírovat nezapomeňte namísto `UA-XXXXX-XX` doplnit svůj identifikátor pro Google Analytics.
 
-Pozor, toto řešení je vhodné jen pro verzi Universal Analytics (identifikační řetězec začíná `UA-`). Novější Google Analytics 4 sice do režimu „neukládej lokálně" přepnete taky, ale bohužel pak v rozhraní nevidíte žádná data. Prý se ukládají, ale nezobrazují.
+Pozor, toto řešení je vhodné jen pro verzi Universal Analytics (identifikační řetězec začíná `UA-`). Novější Google Analytics 4 sice do režimu „neukládej lokálně“ přepnete taky, ale bohužel pak v rozhraní nevidíte žádná data. Prý se ukládají, ale nezobrazují.
+
+<!--
 
 ### O co jsem vypnutím client storage přišel? {#ga-prisel}
 
 Pokud nemá analytický nástroj k dispozici cookie (nebo jinou identifikaci konkrétního uživatele), nemůže samozřejmě navázat jednoho uživatele na návštěvy různých URL.
 
-Přijdete tak o délku trvání session (bude vždy 0), bounce rate (míra okamžitého opuštění bude vždy 100 %), page views na jednoho uživatele (budou  vždy 1). Dále budou všichni uživatelé bráni jako noví, ve zdrojích silně  naroste „direct"…
+Přijdete tak o délku trvání session (bude vždy 0), bounce rate (míra okamžitého opuštění bude vždy 100 %), page views na jednoho uživatele (budou  vždy 1). Dále budou všichni uživatelé bráni jako noví, ve zdrojích silně  naroste „direct“…
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1643092265/vzhurudolu-prirucka/cookieless-ga_sh0xxw.png" alt="Google Analytics cookie-less">
@@ -79,6 +89,8 @@ ga('set', 'anonymizeIp', true);
 ga('send', 'pageview');
 ```
 
+-->
+
 Jaké další alternativy jsou možné?
 
 * Jiné měřiče jako Plausible, Fathom, Matomo… Ty se dle mého přeceňují, protože sice neukládají cookies, ale uživatele identifikují jinak, což je z pohledu zákona úplně to samé.
@@ -100,7 +112,7 @@ Jak jsem postupoval? V prvé řadě jsem si udělal seznam všech třetích stra
 * [Vimeo](https://vimeo.com/) (vkládaná videa pro kurzy)
 * [YouTube](https://www.youtube.com/) (vkládaná videa do článků)
 
-Dále jsem si udělal analýzu vkládaných cookies. Pro oddělení špatných (analytických) od dobrých (funkčních) cookies jsem použil nástroje [cookieserve.com](https://www.cookieserve.com/) a [cookiebot.com](https://www.cookiebot.com/en/), ale neobešel jsem se bez poctivého koukání do DevTools prohlížeče nebo procházení „Cookie Policy" poskytovatelů komponent.
+Dále jsem si udělal analýzu vkládaných cookies. Pro oddělení špatných (analytických) od dobrých (funkčních) cookies jsem použil nástroje [cookieserve.com](https://www.cookieserve.com/) a [cookiebot.com](https://www.cookiebot.com/en/), ale neobešel jsem se bez poctivého koukání do DevTools prohlížeče nebo procházení „Cookie Policy“ poskytovatelů komponent.
 
 <figure>
 <img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1643092265/vzhurudolu-prirucka/cookieless-devtools_zrgtw1.png" alt="DevTools a cookies">
@@ -127,13 +139,13 @@ Tuhle firmu vnímám jako vedoucího jezdce v pelotonu zneužívačů soukromí 
 
 ### YouTube {#youtube}
 
-Embedy ukládají a šmírují a to i [v případě „nocookie" domény](https://stackoverflow.com/questions/61887699/gdpr-youtube-nocookie-embedded-urls-need-visitors-permission), která sice neukládá cookies, ale do local storage, což je to z pohledu zákona totéž. YouTube jsem z článků úplně odstranil spolu s dalším vkládaným obsahem ze sociálních sítí. Je možné to nahradit obrázkem s odkazem. Já si zatím vystačil s pouhým odkazem na sociální síť.
+Embedy ukládají a šmírují a to i [v případě „nocookie“ domény](https://stackoverflow.com/questions/61887699/gdpr-youtube-nocookie-embedded-urls-need-visitors-permission), která sice neukládá cookies, ale do local storage, což je to z pohledu zákona totéž. YouTube jsem z článků úplně odstranil spolu s dalším vkládaným obsahem ze sociálních sítí. Je možné to nahradit obrázkem s odkazem. Já si zatím vystačil s pouhým odkazem na sociální síť.
 
 <!-- AdSnippet -->
 
 Firmy v téhle kategorii mají leccos společné. Celkově špatné renomé v oblasti soukromí, podivnou cookie policy a nemožnost dohledat cokoliv kolem omezení sledování (varianta „do not track") ve vývojářské dokumentaci.
 
-## Komponenty nastavená jako „do not track" (bez sledování) {#komp-dnt}
+## Komponenty nastavená jako „do not track“ (bez sledování) {#komp-dnt}
 
 Další kategorii embedů bylo možné je ponechat, protože umožňují nastavit režim bez sledování. Poskytovatelé zařazení v této kategorii projevili alespoň snahu.
 
@@ -178,7 +190,7 @@ Tohle je nejlepší skupina. Patří do ní poskytovatelé vkládaných komponen
 
 ## Pojďme to shrnout {#shrnuti}
 
-V následující tabulce vše shrnují i se svým subjektivním hodnocením.
+V tabulce následuje katovna – seznam komponent i s mým subjektivním hodnocením.
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
@@ -198,11 +210,11 @@ V následující tabulce vše shrnují i se svým subjektivním hodnocením.
 
 Tuhle analýzu jsem dělal hlavně pro Vzhůru dolů, což je zčásti volnočasový projekt. Problematikou soukromí se nezabývám a nejsem na ni expert, takže si to vše ověřte u svých vývojářů a advokátů.
 
-Neberte to jako návod, jak postupovat u větších a komerčních projektů. Spíše jako pomocníka pro jiné „hobbíky" a  ty, kteří usilují o provozování webu bez ukládání sledovacích cookies.
+Neberte to jako návod, jak postupovat u větších a komerčních projektů. Spíše jako pomocníka pro jiné „hobbíky“ a  ty, kteří usilují o provozování webu bez ukládání sledovacích cookies.
 
 Berte ten text také jako zprávu o stavu soukromí na internetu, o tom co stojí za vlnou vášní kolem [cookie lišty](cookie-lista-2022.md).
 
-Česko bylo asi jednou z posledních zemí EU, které povinnost cookie lišty zavedlo. Přesto mám pocit, že ani zahraniční poskytovatelé zatím většinou webařům příliš vstříc nevycházejí. Možnost „do not track" je vzácná, dokumentace chybí a analytické nástroje na tuhle situaci zatím vůbec nejsou připraveny.
+Česko bylo asi jednou z posledních zemí EU, které povinnost cookie lišty zavedlo. Přesto mám pocit, že ani zahraniční poskytovatelé zatím většinou webařům příliš vstříc nevycházejí. Možnost „do not track“ je vzácná, dokumentace chybí a analytické nástroje na tuhle situaci zatím vůbec nejsou připraveny.
 
 Jsme na začátku cesty. Ale vidím to tak, že prakticky každý web může pro ochranu soukromí svých uživatelů už teď něco udělat, pokud chce.
 
