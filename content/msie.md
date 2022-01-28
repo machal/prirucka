@@ -33,7 +33,7 @@ Například bratrům Slovákům zde můžeme jen závidět. V zemi pod Tatrami j
 
 Jak zjistit, jestli můžu Explorer přestat podporovat?
 
-Podíl MSIE v na používání se liší web od webu, takže například na svém blogu, Vzhůru dolů, vidím v březnu 2021 pouhých 0,27 % návštěv od uživatelů s tímto prohlížečem. Na webech klientů ale Google Analytics ukazují čísla mezi 1-2 %,někde i více.
+Podíl MSIE v na používání se liší web od webu, takže například na svém blogu, Vzhůru dolů, vidím v březnu 2021 pouhých 0,27 % návštěv od uživatelů s tímto prohlížečem. Na webech klientů ale Google Analytics ukazují čísla mezi 1-2 %, někde i více.
 
 Podíl prohlížečů zjistíte například právě v Google Analytics (Publikum > Technologie > Prohlížeč).
 

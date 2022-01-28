@@ -1,16 +1,16 @@
 # Pro koho knížka je a jak ji číst?
 
-## Pro koho to je?
+### Pro koho to je?
 
 V knížce jsem cílil na webové vývojáře všech úrovní – od začínajících a orientujících se v problematice až po profesionální specialisty na CSS.
 
 Principy CSS layoutů by ideálně mohly být uložené v obecném povědomí také našich netechnických kolegyň a kolegů – z oblasti designu, grafiky, marketingu, produktového managementu a tak dále. Tentokrát je kniha vyloženě technická, ale věřím, že například v prvních dvou kapitolách si i tato skupina najde svoje.
 
-## Co musíte umět?
+### Co musíte umět?
 
 Pro pochopení technických částí budete potřebovat alespoň základní znalost HTML a CSS. Text také vyžaduje hrubý přehled o moderních webařských technologiích a postupech. Pokud je to možné, vždy odkazuji na bližší vysvětlení ve zdrojích na webu nebo přímo v knížce.
 
-## Jak knížku číst?
+### Jak knížku číst?
 
 Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od začátku do konce.“
 
@@ -22,7 +22,7 @@ Pátá až devátá kapitola jsou už čisté referenční příručky. Budu moc
 
 Jedno ale doporučím všem – z každé kapitoly si poctivě přečtěte úvod a závěrečný kvíz. V tom druhém se zhruba dozvíte, jak jste na tom se znalostí problematiky. Nakonec třeba uznáte, že jsem netrávil čas zbytečně, když jsem se snažil, aby i referenční kapitoly měly při čtení hlavu a patu.
 
-## CodePen: „Talk is cheap, show me the code“
+### CodePen: „Talk is cheap, show me the code“
 
 Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu – CodePen.
 
