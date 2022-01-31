@@ -1,6 +1,6 @@
 # Jak jsem web zbavoval šmírovacích cookies
 
-Sledovací cookies jsou všude. Překvapilo mě, že i na menším webu není vlastně úplně jednoduché se jich zbavit. 
+Sledovací cookies jsou všude. Překvapilo mě, že i na menším webu není vlastně úplně jednoduché se jich zbavit.
 
 Asi víte, že od letoška mají weby povinnost si před ukládáním analytických „sušenek“ vyžádat souhlas uživatele. O [cookies v roce 2022](cookie-lista-2022.md) jsem psal text, který průběžně aktualizuji.
 
@@ -8,15 +8,13 @@ Zároveň se tam můžete dočíst, jak se můj postoj k problematice soukromí 
 
 <!-- AdSnippet -->
 
-Rozhodl jsem se, že se na Vzhůru dolů pokusím odstranit všechny jiné než funkční cookies tak, abych uživatelům nemusel klást překážky v podobě cookie lišty. Ale taky proto, abych z toho webu udělal alespoň symbolický ostrůvek, kde se nešmíruje.
+Povedlo se mi web zbavit cookies třetích stran, a to dokonce i u Google Analytics. Jenž i přes to se zdá, že přítomnost Google Analytics souhlas uživatele pomocí cookie lišty vyžaduje tak či tak.
 
 ## První řešení: Google Search Console {#gsc}
 
-U hodně malých webů jako je třeba ten kamarádčin s nabídkou [ubytování v Provence](https://www.ubytovani-provence.cz/), jsem se rozhodl, že úplně odstraním komponenty třetí strany.
+U hodně malých webů jako je třeba ten kamarádčin s nabídkou [ubytování v Provence](https://www.ubytovani-provence.cz/), jsem se rozhodl, že úplně odstraním komponenty třetí strany. V zásadě stačilo smazat kód Google Analytics (GA) a pár dalších.
 
-V zásadě stačilo odstranit Google Analytics (GA), u kterých je za běžných okolností nutné žádat o svolení s ukládáním cookies.
-
-Jak získávám data o návštěvnosti? Stačí mi [Google Search Console](https://www.vzhurudolu.cz/prirucka/google-search-console), které ukazují přístupy z ekosystému Googlu, včetně vyhledávání. Tyto typy webíků mívají velmi malou návštěvnost odjinud (např. ze sociálních sítí), takže to vůbec nevadí.
+Jak získávám data o návštěvnosti? Stačí mi [Google Search Console](google-search-console.md), které ukazují přístupy z ekosystému Googlu, včetně vyhledávání. Tyto typy webíků mívají velmi malou návštěvnost odjinud (např. ze sociálních sítí), takže to vůbec nevadí.
 
 Na Vzhůru dolů se ovšem bez nějaké základní analytiky neobejdu.
 
@@ -26,13 +24,7 @@ Proč potřebuji GA? Jednak se mi hodí znát hrubou čtenost článků a také 
 
 Google Analytics ale sbírají obrovské množství další dat, které nepotřebuji. Chtěl jsem tedy najít řešení bez ukládání cookies v prohlížeči, které by zachovalo alespoň základní data.
 
-Po delším pátrání se mi povedlo najít a ověřit tento kód pro verzi Universal Analytics:
-
-⚠️ **Update:** Toto řešení je nejspíš bohužel špatně a bez cookie lišty se neobejdete:
-
-> Řešení odesílá i data o uživateli, tj. s jeho nastavení prohlížeče etc.
-> 
-> — Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
+Po delším pátrání se mi povedlo najít a ověřit tento kód pro verzi Universal Analytics, který cookies ani žádné jiné lokální úložiště nepotřebuje:
 
 ```html
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-XX"></script>
@@ -55,7 +47,15 @@ Pokud vás to i tak zajímá, vysvětlím to více:
 
 Pozor, toto řešení je vhodné jen pro verzi Universal Analytics (identifikační řetězec začíná `UA-`). Novější Google Analytics 4 sice do režimu „neukládej lokálně“ přepnete taky, ale bohužel pak v rozhraní nevidíte žádná data. Prý se ukládají, ale nezobrazují.
 
-<!--
+Nepotřebujete pak cookie lištu? Teď vás zklamu. Cookies sice tohle řešení nevyžaduje, ale dále je možné uživatele přes data uložená v GA identifikovat: 
+
+> Řešení odesílá i data o uživateli, tj. s jeho nastavení prohlížeče etc.
+> 
+> — Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
+
+Takže i s tímto řešením cookie lištu potřebujete. Marek se ale [zmínil](https://twitter.com/MarekLecian/status/1486990984898617344), že možná nasdílí řešení, které ponechá možnost mít na menších webech dále GA a zároveň nemít cookie lištu.
+
+Moje řešení je navíc problematické v tom, že pochopitelně přijdete o část dat.
 
 ### O co jsem vypnutím client storage přišel? {#ga-prisel}
 
@@ -70,7 +70,7 @@ Hurá, narostla mi návštěvnost. Nebo ne? Srovnání měření s cookies (oran
 </figcaption>
 </figure>
 
-Bohužel zmizelo i počítání konverzí, což se troch divím. Jde přece jen o zasílání událostí… Tohle mi zatím hlava nebere a budu to dál řešit.
+Bohužel zmizelo i počítání konverzí, což se trochu divím. Jde přece jen o zasílání událostí… Tohle mi zatím hlava nebere a budu to dál řešit.
 
 Google Analytics se tak stanou jednoduchým počítadlem návštěv webu (s čísly neporovnatelnými se stavem před vypnutím cookies). Dobře ale vidím návštěvy jednotlivých stránek a další data.
 
@@ -78,24 +78,16 @@ Pro potřeby menšího webu, který něco vydělává, to je tedy díky ztrátě
 
 ### Alternativní řešení pro analytiku {#ga-alt}
 
-Během svého pátrání po „cookieless Google Analytics" jsem narazil na řadu zdrojů. Nejvíc se mi líbí [řešení Helgeho Kleina](https://helgeklein.com/blog/google-analytics-cookieless-tracking-without-gdpr-consent/), který v GA vypne lokální uložiště  a klienta si identifikuje na straně serveru:
+Během svého pátrání po „cookieless Google Analytics" jsem narazil na řadu zdrojů. Nejvíc se mi líbilo [řešení Helgeho Kleina](https://helgeklein.com/blog/google-analytics-cookieless-tracking-without-gdpr-consent/), který v GA vypne lokální uložiště a klienta si identifikuje na straně serveru. To je fajn, pokud nechcet cookies, ale identifikace uživatele je opět možná:
 
-```js
-ga('create', 'YOUR-GA-TRACKING-CODE', {
-   'storage': 'none',
-   'clientId': clientIDHashed // <-- Backend
-});
-ga('set', 'anonymizeIp', true);
-ga('send', 'pageview');
-```
-
--->
+>  …cookie se jen vyměnila za IP uživatele (fingerprint obsahující IP). Což je z mého pohledu ještě horší než ukládat cookies.
+> 
+> — Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
 
 Jaké další alternativy jsou možné?
 
-* Jiné měřiče jako Plausible, Fathom, Matomo… Ty se dle mého přeceňují, protože sice neukládají cookies, ale uživatele identifikují jinak, což je z pohledu zákona úplně to samé.
-* V diskuzích padala možnost vrátit se k analýze logů serveru, ale kdo si to někdy dělal, ví, že to je cesta zpět na stromy.
-* Do budoucna bude jistě zajímavá [server-side analytika](https://www.houseofrezac.com/blog/co-to-je-server-side-mereni).
+* Jiné měřiče jako Plausible, Fathom, Matomo, Simple Analytics… Než se pro ně nachnete, prosím ověřte si, zda opravdu neidentifikují uživatele, ať už pomocí cookie nebo fingerprintingem.
+* Do budoucna bude jistě zajímavá [server-side analytika](https://www.houseofrezac.com/blog/co-to-je-server-side-mereni) nebo pokročilá analýzy serverových logů.
 
 ## Audit komponent třetích stran {#audit}
 
@@ -131,11 +123,11 @@ Zde jsou tři nejzlobivější služby, které jsem nakonec bez náhrady odstran
 
 Služba, která pod každý článek vkládá komentáře. Dříve poměrně užitečná, později se z toho stávalo stále větší peklo díky přibývajícím reklamám (a cookies), a to i přes fakt, že jde o placený produkt. Přínos pro Vzhůru dolů nebyl malý, takže jsem komponentu nechával žít.
 
-Říká se, že patří Číňanům, ale podle všeho to pravda není, i když jejich management má čínsky znějící jména. Pohled na ukládané cookies a do jejich [cookie policy](https://disqus.com/cookie-policy/) mě ale přesvědčil o tom, že Disqus půjde pryč. Ukládají toho hodně a předávají to spouště firem. To nechci. Komentáře jsem v tuhle chvíli [odstranil úplně](https://twitter.com/machal/status/1483024831192911872).
+Říká se, že patří Číňanům, ale podle všeho to pravda není. (I když jejich management má čínsky znějící jména.) Pohled na ukládané cookies a do jejich [cookie policy](https://disqus.com/cookie-policy/) mě ale přesvědčil o tom, že Disqus půjde pryč. Ukládají toho hodně a předávají to spouště firem. To nechci. Komentáře jsem v tuhle chvíli [odstranil úplně](https://twitter.com/machal/status/1483024831192911872).
 
 ### Facebook {#facebook}
 
-Tuhle firmu vnímám jako vedoucího jezdce v pelotonu zneužívačů soukromí lidí. Kdysi jsem jim platil nějaké drobné za kampaně podporující naše kurzy a videa, ale od dob provalení [Facebook Papers](https://www.seznamzpravy.cz/clanek/facebook-zaziva-nejvetsi-krizi-v-historii-vylezly-jeho-interni-dokumenty-178786) jsem se rozhodl, že tam sice zůstanu přítomný, ale peníze té firmě platit nebudu. Analytiku tedy nepotřebuji a šmírovací pixel od Facebooku jsem tedy ze Vzhůru dolů odstranil.
+Tuhle firmu vnímám jako vedoucího jezdce v pelotonu zneužívačů soukromí lidí. Kdysi jsem jim platil nějaké drobné za kampaně podporující naše kurzy a videa, ale od dob provalení [Facebook Papers](https://www.seznamzpravy.cz/clanek/facebook-zaziva-nejvetsi-krizi-v-historii-vylezly-jeho-interni-dokumenty-178786) jsem se rozhodl, že tam sice zůstanu přítomný, ale peníze té firmě platit nebudu. Analytiku nepotřebuji a šmírovací pixel od Facebooku jsem tedy ze Vzhůru dolů odstranil.
 
 ### YouTube {#youtube}
 
@@ -151,7 +143,7 @@ Další kategorii embedů bylo možné je ponechat, protože umožňují nastavi
 
 ### Vimeo {#vimeo}
 
-Pro vkládání videí do stránek používám placený tarif, takže mě překvapilo, že do prohlížečů ukládají nemalé množství cookies. Umožňují ale [zakázat analytické cookies](https://developer.vimeo.com/player/sdk/embed) pomocí přidání parametru dnt=1 .
+Pro vkládání videí do stránek používám placený tarif, takže mě překvapilo, že do prohlížečů ukládají nemalé množství cookies. Umožňují ale [zakázat analytické cookies](https://developer.vimeo.com/player/sdk/embed) pomocí přidání parametru `dnt=1`.
 
 Viz například:
 
@@ -184,9 +176,9 @@ Snaha byla, že ano. Zatím jsem ale neověřil, zda to funguje, protože jsem s
 
 Tohle je nejlepší skupina. Patří do ní poskytovatelé vkládaných komponent, kteří pro poskytování služby nepotřebují ukládat cookie a tedy sledovat uživatele.
 
-* Cloudinary -- původně mě vcelku vyděsili, protože v návaznosti na jejich doménu jsem u Vzhůru dolů viděl řadu uložených cookies, včetně analytických. Ale tyto cookies dostanou [jen přihlášení uživatelé](https://support.cloudinary.com/hc/en-us/community/posts/200787742-Cookieless-domain), tedy ti, kteří Cloudinary využívají na svých webech. Čtenáři webu už ale mají prohlížeč čistý jako studánku.
-* Cast, poskytovatel přehrávače pro podcast, je v pohodě. Neukládá žádné sušenky.
-* Codepen, poskytovatel vkládaných ukázek, se také zdá v pořádku a jiné než nutné cookies neukládá.
+* Cloudinary – původně mě vcelku vyděsili, protože v návaznosti na jejich doménu jsem u Vzhůru dolů viděl řadu uložených cookies, včetně analytických. Ale tyto cookies dostanou [jen přihlášení uživatelé](https://support.cloudinary.com/hc/en-us/community/posts/200787742-Cookieless-domain), tedy ti, kteří Cloudinary využívají na svých webech. Čtenáři webu už ale mají prohlížeč čistý jako studánku.
+* Cast – poskytovatel přehrávače pro podcast, je v pohodě. Neukládá žádné sušenky.
+* Codepen – poskytovatel vkládaných ukázek, se také zdá v pořádku a jiné než nutné cookies neukládá.
 
 ## Pojďme to shrnout {#shrnuti}
 
@@ -201,7 +193,7 @@ V tabulce následuje katovna – seznam komponent i s mým subjektivním hodnoce
 | Cast        | ★★★       | bez cookies |
 | Twitter     | ★★☆       | umožní „do not track“ |
 | Vimeo       | ★☆☆       | umožní „do not track“, ale přijdete o měření |
-| Google Analytics | ★☆☆       | umožní „do not track“, ale přijdete o měření |
+| Google Analytics | ★☆☆       | bez identifikace uživatele to nejde |
 | YouTube          | ☆☆☆       | sleduje tak či tak |
 | Disqus           | ☆☆☆       | sleduje (a předává data dál) |
 | Facebook         | ☆☆☆       | sleduje jak divý |
@@ -210,7 +202,7 @@ V tabulce následuje katovna – seznam komponent i s mým subjektivním hodnoce
 
 Tuhle analýzu jsem dělal hlavně pro Vzhůru dolů, což je zčásti volnočasový projekt. Problematikou soukromí se nezabývám a nejsem na ni expert, takže si to vše ověřte u svých vývojářů a advokátů.
 
-Neberte to jako návod, jak postupovat u větších a komerčních projektů. Spíše jako pomocníka pro jiné „hobbíky“ a  ty, kteří usilují o provozování webu bez ukládání sledovacích cookies.
+Neberte to jako návod, jak postupovat u větších a komerčních projektů. Spíše jako pomocníka pro jiné „hobbíky“ a ty, kteří usilují o provozování webu bez ukládání sledovacích cookies.
 
 Berte ten text také jako zprávu o stavu soukromí na internetu, o tom co stojí za vlnou vášní kolem [cookie lišty](cookie-lista-2022.md).
 

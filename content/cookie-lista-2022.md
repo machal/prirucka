@@ -2,7 +2,7 @@
 
 Už to došlo i do Česka. Od ledna 2022 bude nutné od uživatelů žádat souhlas s ukládáním personalizačních a analytických cookies do jejich prohlížečů.
 
-Stačí když na webu máte základní analytiku, např. Google Analytics, a od konce roku máte povinnost před uložením cookies (nebo do jakéhokoliv úložiště v prohlížeči) žádat souhlas pomocí takzvané cookie lišty. Pokud tedy Analytics nezakážete ukládat cookies.
+Stačí když na webu máte základní analytiku, např. Google Analytics, a od začátku roku máte povinnost před uložením cookies (nebo do jakéhokoliv úložiště v prohlížeči) žádat souhlas pomocí takzvané cookie lišty.
 
 Pravděpodobně jste to už řešili, pravděpodobně to už máte vyřešené. Pokud spravujete velké weby, tím spíše. Já spravuju jen Vzhůru dolů a pár malinkých webů, takže jsem to nechával na poslední chvíli. Neměl jsem to dělat.
 
@@ -10,23 +10,23 @@ Pravděpodobně jste to už řešili, pravděpodobně to už máte vyřešené. 
 
 Text budu tedy spíše cílit na majitele menších webů nebo ty, kteří zatím neměli potřebu to řešit. Dole v textu odkazuji na všemožné zdroje, takže to můžete dostudovat. V textu základy řešit nebudu, spíše otevřu témata, která mě zaujala a jinde jsem je nenašel.
 
-Předem říkám, že se v téhle oblasti nepovažuji za odborníka – pokud se webařinou živíte, nasazení na weby konzultujte s advokáty (já využívám [Dostupného advokáta](https://dostupnyadvokat.cz/spolecnosti/cookies)), experty na UX a marketing.
+Předem říkám, že se v téhle oblasti nepovažuji za odborníka – pokud se webařinou živíte, nasazení na weby konzultujte s advokáty (já využívám [Dostupného advokáta](https://dostupnyadvokat.cz/spolecnosti/cookies)), případně také experty na UX a marketing.
 
 Můj pohled je víceméně pohledem „hobbíka“, člověka, který spravuje pár webů, ale denodenní vývojařinou se neživí.
 
-Než se do toho pustíme, velmi rád bych zde nejprve ventiloval svůj celkový osobní dojem. On se totiž za poslední týdny dost významně změnil.
+Než se do toho pustíme, velmi rád bych zde nejprve ventiloval svůj celkový osobní dojem. On se totiž během posledních měsíců roku 2021 dost významně změnil.
 
 ## Uživatelé platí soukromím za to, že my šetříme čas a peníze {#plati}
 
-Ještě před měsícem jsem nechápal, proč bychom měli už i v Česku na všechny weby nasazovat cookie lištu.
+Ještě na podzim '21 jsem nechápal, proč bychom měli už i v Česku na všechny weby nasazovat cookie lištu.
 
 [GDPR](gdpr.md) už máme vyřešené a od roku 2015 nějak i v Česku řešíme [„EU cookies“](https://www.vzhurudolu.cz/blog/36-eu-cookies). Vždyť přece stačí, že uživatele informujeme…
 
-Čím více to studuji, tím více dávám za pravdu zákonné úpravě, která bude platit od ledna.
+Čím více jsem se do problematiky ponořoval, tím více dávám za pravdu zákonné úpravě, která platí od ledna.
 
 Jasně, forma je fakt nešťastná. Cookie lišta je zlo. Cookie lišta je zlo pro uživatele i provozovatele, takže se těším se na [normu ePrivacy](https://digital-strategy.ec.europa.eu/en/policies/eprivacy-regulation), která to přesune do nastavení prohlížeče.
 
-To soukromí ale fakt musíme řešit.
+To soukromí ale fakt musíme řešit. Jenže jak?
 
 > Nepoužívat a nešmírovat. Za analytické nástroje nechat platit toho, kdo data měří a nenechávat to na ceně uživatelského soukromí lidí, kteří ani nevědí co schvalují.
 >
@@ -40,7 +40,7 @@ Líbilo by se vám to? Mně ne. Ale na webu je to úplně běžné:
 * Pokud je na webu vložené YouTube video, cookie se ukládá nejen pro úpravu obsahu a reklamy nejen na navštíveném webu, ale také na YouTube a také na jiných webech.
 * Taková komentářová služba Disqus se s tím už vůbec nemaže. V [Cookie Policy](https://disqus.com/cookie-policy/) přiznává jen zlomek cookies, které reálně ukládá, a rovnou říká, že data vašich uživatelů posílá i dalším firmám.
 
-To všechno proto, že na webech mocně využíváme služby třetích stran. Zvykli jsme si na to. Šetří nám to jako vývojářům a marketérům čas a peníze. Jenže nic jako komponenta třetí strany zdarma neexistuje. I ty placené mají daleko větší cenu než si myslíme.
+To všechno proto, že na webech mocně využíváme služby třetích stran. Zvykli jsme si na to. Šetří nám to jako webařům čas a peníze. Jenže nic jako komponenta třetí strany zdarma neexistuje. I ty placené mají daleko vyšší cenu než si myslíme.
 
 Za náš ušetřený čas a peníze platí uživatelé svým soukromím. Jejich data, informace o pohybu našim webem využíváme nejen my, ale i úplně cizí firmy.
 
@@ -51,9 +51,9 @@ Za náš ušetřený čas a peníze platí uživatelé svým soukromím. Jejich 
 </figcaption>
 </figure>
 
-Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, Twitteru, Facebooku… Jejich přístup k soukromě je prostě o dost horší, než jsem si myslel.
+Můj postoj je silně ovlivněný studiem třetích stran, které jsem dosud běžně používal zde na Vzhůru dolů a které pravděpodobně používáte taky – Google Analytics a vkládaný obsah od YouTube, Twitteru, Facebooku… Jejich přístup k soukromí je prostě o dost horší, než jsem si myslel.
 
-Takže – pojďme soukromí řešit. Pojďme to řešit bez paniky a nadávání na zákon nebo EU. Pojďme vzít ty (formálně špatné) cookie lišty jako příležitost se něco naučit a zlepšit web jako celek.
+Takže – pojďme soukromí řešit. Pojďme jej řešit bez paniky a nadávání na zákon nebo EU. Pojďme vzít ty (formálně špatné) cookie lišty jako příležitost se něco naučit a zlepšit web jako celek.
 
 <!-- AdSnippet -->
 
@@ -63,7 +63,7 @@ Teď už se pustím do praktických rad, co s tím dělat na malém webu. Dává
 
 ## Nutné základy {#zaklady}
 
-Nejprve pár textů a videí, které se vám mohou hodit při studiu:
+Nejprve pár textů a videí, které se vám mohou hodit při studiu základů z pohledu právního, marketingového nebo UX:
 
 * Právní pohled: [Lupa.cz](https://www.lupa.cz/clanky/od-1-ledna-se-zmeni-pravidla-pro-cookies-pripravte-si-listy-radi-pravnicka/), od [Petry Dolejšové](https://www.pavelungr.cz/jak-na-cookie-listu-v-roce-2022-prace-s-cookies-v-roce-2022-saga-pokracuje-petra-dolejsova/) nebo [Dostupného advokáta](https://dostupnyadvokat.cz/blog/povinnosti-cookies).
 * Marketingový pohled: [House of Řezáč](https://www.houseofrezac.com/blog/mereni-a-marketing-bez-cookies).
@@ -72,13 +72,11 @@ Nejprve pár textů a videí, které se vám mohou hodit při studiu:
 * [Komplexní webinář](https://www.youtube.com/watch?v=mvMyEVr_kMg) organizovaný Pavlem Ungrem.
 * [Diskuze o cookies](https://www.youtube.com/watch?v=s4I6TjZMR_I) u Frontendistů. (Martin Kopta a Honza Chemix Černý tam velmi hezky argumentují z pohledu soukromí uživatele.)
 
-Než budeme pokračovat, musím dodat pár úplných základů. Jen pár.
-
 ## Které cookies jsou nově se souhlasem a jak zjistím, že je na webu mám? {#typy}
 
 Tohle jste už asi četli stokrát, ale pro jistotu to opakuju.
 
-Pravděpodobně na webu používáte cookies nutné např. pro přihlášení nebo uložení nastavení jazyka (funkční cookies). Touto kategorií se vůbec trápit nemusíte, dále je možné je bez souhlasu používat.
+Pravděpodobně na webu používáte cookies nutné např. pro přihlášení nebo uložení nastavení jazyka (funkční cookies). Touto kategorií se vůbec trápit nemusíte, dále je možné je bez souhlasu v podobě cookie lišty používat.
 
 Dejte si pozor na tyto typy cookies:
 
@@ -86,7 +84,7 @@ Dejte si pozor na tyto typy cookies:
 * analytické
 * personalizační
 
-K těmto potřebujete od 1. ledna souhlas.
+K těmto potřebujete od 1. ledna 2022 souhlas.
 
 Nástroje, které pomáhají odhalit, které cookies na webu potřebujete:
 
@@ -99,7 +97,7 @@ A teď ta špatná. Ani na Vzhůru dolů, takže strukturou menším webu, mě t
 
 Navíc jde samozřejmě o statickou analýzu webu, takže např. komponenty [načítané líně](lazy-loading.md) nebo na akci uživatele, to neodhalí.
 
-Prostě bez zkoumání uložených cookies ve vývojářských nástrojích prohlížečů a čtení „Cookie Policy“ dodavatelů třetích stran se myslím neobejdete.
+Prostě bez zkoumání uložených cookies ve vývojářských nástrojích prohlížečů a čtení „Cookie Policy“ dodavatelů třetích stran se asi neobejdete.
 
 ## Zákon praví… {#zakon}
 
@@ -121,11 +119,11 @@ Cookie lišta je otrava. Ano, to je.
 >
 > — *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
 
-Pokud máte velký web, řešil bych to, u malinkých asi nemá smysl propadat panice a nutně nasazovat lištu hned po Vánocích.
+Pokud máte velký web, řešil bych to, u malinkých asi nemá smysl propadat panice a nutně hned nasazovat lištu.
 
 Jak to riziko chápu já? Postihy za nedodržení zákona samozřejmě budou udělovány, ale [úřad ÚOOU](https://www.uoou.cz/), který to řeší by se musel rozkrájet, aby řešil i menší přestupky. Osobně čekám spíše akčnost typu „česká hygiena během pandemie“. U svých malých webů nebudu s cookie lištou zase tak moc spěchat a stresovat.
 
-Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápravě, takže i kdyby na vás „vlítli“, máte čas to opravit. Pokuty by navíc neměly být likvidační.
+Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápravě, takže i kdyby na vás „vlítli“, máte čas to opravit. Pokuty by prý neměly být likvidační.
 
 > Kontrolu provádí @UOOUCR, sankce dává samozřejmě podle uvážení, ale horní hranice je vždycky předpisem limitovaná, navíc nesmí být nepřiměřená a likvidační.
 >
@@ -137,17 +135,19 @@ Jen pro pořádek – je potřeba odlišit [GDPR](gdpr.md) a nový odstaveček z
 
 ## Jak nemít cookie lištu a zároveň dodržovat zákon? {#nemit}
 
-V prvé fázi jsem u všech svých webů přemýšlel nad tímto nejčistším řešením. U miniaturních webů je to realizovatelné, jen nevím jak tomu bude u Vzhůru dolů.
+V prvé fázi jsem u všech svých webů přemýšlel nad tímto nejčistším řešením. U miniaturních webů je to realizovatelné například tím, že přestanete měřit analytikou, která cokoliv ukládá do prohlížečů nebo analytik opustíte úplně a vystačíte si například s daty z Google Search Console.
 
-Pokud potřebujete běžné měření [Google Analytics](google-analytics.md), cookie lištu musíte mít. GA totiž přidávají cookie, kterou měří uživatele napříč webem.
+Pokud potřebujete běžné měření [Google Analytics](google-analytics.md), cookie lištu musíte mít.
 
-Pokud potřebuji jakoukoliv jinou komponent třetí strany (YouTube a jiné embedy, GTM, chat, pravděpodobně i Google Fonts), pak vysoce pravděpodobně cookie lištu musíte mít.
+Pokud do webu vkládáte jakoukoliv jinou komponent třetí strany (YouTube a jiné embedy, Google Tag Manager, chat, Google Fonts…), pak vysoce pravděpodobně cookie lištu musíte mít.
 
 Touto cestou se vydaly i velké weby [jako Github](https://github.blog/2020-12-17-no-cookie-for-you/). Když si ale ke dnešku prohlédnete cookies, které vám Github a jimi používané third-parties uloží na stránce tohoto oznámení, vůbec není jisté, zda byli schopní tu proklamovanou čistotu udržet.
 
 Takže – nezajímá vás návštěvnost a chování návštěvníků, nepotřebujete kód třetí strany? Lištu nepotřebujete. Jinak to budete mít složitější.
 
-## Lze mít Google Analytics a nemít lištu?  {#ga}
+→ *Více popisuji v textu o [zbavování webu cookies třetích stran](cookieless.md).*
+
+## Lze mít Google Analytics bez ukládání cookies?  {#ga}
 
 Ano, Google Analytics (GA) můžeme zakázat ukládání do lokálních úložišť:
 
@@ -155,9 +155,9 @@ Ano, Google Analytics (GA) můžeme zakázat ukládání do lokálních úloži�
 'client_storage': 'none',
 ```
 
-Ztratíte ale přehled o počtu shlédnutých stránek na jednu návštěvu a vše související.
+Ztratíte ale přehled o počtu shlédnutých stránek na jednu návštěvu a vše související. Navíc se nezbavíte povinnosti mít cookie lištu, protože je dále možné identifikovat uživatele na straně dat z analytiky.
 
-→ *Celé řešení pro GA popisuji v textu o [zbavování webu cookies](cookieless.md).*
+Celé řešení pro GA popisuji v textu o [zbavování webu cookies](cookieless.md).
 
 Taky je ale možné nepoužívat Google Analytics, že ano?
 
@@ -169,9 +169,9 @@ Tyhle nástroje často nepoužívají cookies, to je fajn, ale zároveň uživat
 
 [Simple Analytics](https://simpleanalytics.com/), další alternativu, údajně bez fingerprintingu, ale bez sledování uživatele napříč webem, doporučovali další lidé, jako např. [Jan Smitka na Twitteru](https://twitter.com/jansmitka/status/1471592040479825923).
 
-Pokud už alternativy plní požadavky na soukromí, chovají se vlastně podobně jako Google Analytics v Consent Mode. Přičemž GA mají velkou výhodu – jsou de facto průmyslovým standardem.
+Zdá se mi, že ani přes alternativní řešení ke GA cesta nevede. GA navíc mají velkou výhodu – jsou de facto průmyslovým standardem. 
 
-Zdá se mi, že ani tudy cesta nevede. (Ale samozřejmě budu moc rád za argumenty, proč vy si myslíte, že ano.)
+Další možností je zaměřit se na server. Serverová analytika je věc, která má dle mého budoucnost, ale zatím nevidím snadné a přímočaré řešení.
 
 ## Co další komponenty třetích stran? {#3p}
 
@@ -223,13 +223,13 @@ gtag('consent', 'default', {
 });
 ```
 
-V GTM se pak nastaví souhlas pro konkrétní kategorii v nastavení kontejneru. Více je v přednášce.
+V GTM se pak nastaví souhlas pro konkrétní kategorii v nastavení kontejneru. Více je v přednášce, ale upozorňuji, že to je opět vhodné spíše pro menší weby.
 
 Přes Google Tag Manager je pak možné i nastavit nesouhlas se vším, nechat přes nastavení GTM pak např. Google Analytics běžet v Consent Mode a uživatele netrápit cookie lištou.
 
 ## Řešení pro cookie lištu třetích stran  {#reseni}
 
-Toto jsem zatím neřešil, proto zde využiju možností získaných od kolegů
+Toto jsem zatím neřešil, proto zde využiji možností získaných od kolegů
 
 * **[CookieConsent](https://orestbida.com/demo-projects/cookieconsent/)**: Malý plugin i s [ukázkovým kódem](https://gist.github.com/lynt-smitka/1f795c2d0410659ac8fea0992eb1b977) od Vladimíra Smitky.
 * **[CookieConsent.com](https://www.cookieconsent.com/)** se jmenuje stejně, dělá to podobné věci, ale je to něco jiného.
@@ -253,10 +253,10 @@ Pravidlo číslo jedna? Načtěte tu lištu co nejdříve:
 
 ## Co dál? {#dal}
 
-Osobně budu pro Vzhůru dolů hledat co nejjednodušší řešení, které mi umožní splnit to, co zákon káže. Je už skoro jisté, že minimálně na nějaký čas zde cookie lišta bude viset.
+Osobně budu pro Vzhůru dolů hledat co nejjednodušší řešení, které mi umožní splnit to, co zákon káže.
 
 Po počáteční negaci beru ale celou věc kolem cookies od roku 2022 za velkou příležitost brát oblast soukromí uživatelů našich webů daleko vážněji.
 
-Moje znalosti jsou samozřejmě omezené, ale tento text budu postupně doplňovat, takže pokud vám zde něco chybí nebo přebývá, napište mi.
+Moje znalosti jsou samozřejmě omezené, ale tento text budu postupně doplňovat. Pokud vám zde něco chybí nebo přebývá, napište mi.
 
 <!-- AdSnippet -->
