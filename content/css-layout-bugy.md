@@ -124,7 +124,7 @@ Když jsem se vývojářů na Twitteru ptal na jejich mentální zkratky spojen�
 
 Vysvětlím to. Zápis `flex:1 1 auto` je zkratka, která v prvním čísle definuje rozsah zvětšování položky, v druhém rozsah zmenšování a ve třetím výchozí velikost, která se ve flexboxu nastavuje vlastností `flex-basis`. Je možné ji nezapsat a ponechat výchozí hodnotu (`flex:auto`), což vám ale v případě nutnosti podpory MSIE nedoporučuju.
 
-Dalším nutným vstřídným krokem je potřeba vyhnout vlastnosti [vlastnosti `flex-basis`](css-flex-basis.md). Často tedy stačí namísto ní použít `width` nebo `height` a všechno to dobře funguje. I v Exploreru.
+Dalším nutným vstřícným krokem je potřeba vyhnout vlastnosti [vlastnosti `flex-basis`](css-flex-basis.md). Často tedy stačí namísto ní použít `width` nebo `height` a všechno to dobře funguje. I v Exploreru.
 
 Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podporu Exploreru, neděste se toho. Nic komplikovaného na tom není a používat flexbox i s podporou MSIE11 je úplně v pohodě.
 

@@ -155,7 +155,7 @@ CodePen: [cdpn.io/e/wvGLEvJ](https://codepen.io/machal/pen/wvGLEvJ?editors=1100)
 
 Vlastnost `place-items` má u layoutů tvořených gridech samozřejmě podporu ve všech třech aktuálních prohlížečích.
 
-## Středění boxu ve stráce
+## Středění boxu ve stránce
 
 Zatím jsme se zaměřovali na zarovnávání doprostřed rodičovského prvku. Zadání pro tento příklad ovšem hovořilo o centrování uvnitř viditelné části stránky.
 

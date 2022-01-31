@@ -96,7 +96,7 @@ Minimální šířka obrázku nám zde jeden problém vyřeší a druhý vyrobí
 </figcaption>
 </figure>
 
-Na screenshotech výše je vidět moment, kdy už jsme došli k maximu šířky obrázku, ale ještě se nám vedle nevejde text. Minimální šířka textu je totiž určená délkou nejdelšího slova.
+Na screenshotech výše je vidět moment, kdy už jsme došli k maximu šířky obrázku, ale ještě se nám vedle nevejde text. Minimální šířka textu je totiž určena délkou nejdelšího slova.
 
 ### Alternativa bez `min-width` a `max-width`
 
