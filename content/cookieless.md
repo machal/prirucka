@@ -8,7 +8,7 @@ Zároveň se tam můžete dočíst, jak se můj postoj k problematice soukromí 
 
 <!-- AdSnippet -->
 
-Povedlo se mi web zbavit cookies třetích stran, a to dokonce i u Google Analytics. Jenž i přes to se zdá, že přítomnost Google Analytics souhlas uživatele pomocí cookie lišty vyžaduje tak či tak.
+Povedlo se mi web zbavit cookies třetích stran, a to dokonce i u Google Analytics. Jenže i přes to se zdá, že přítomnost Google Analytics souhlas uživatele pomocí cookie lišty vyžaduje tak či tak.
 
 ## První řešení: Google Search Console {#gsc}
 
