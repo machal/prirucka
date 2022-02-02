@@ -86,7 +86,7 @@ Během svého pátrání po „cookieless Google Analytics" jsem narazil na řad
 
 Jaké další alternativy jsou možné?
 
-* Jiné měřiče jako Plausible, Fathom, Matomo, Simple Analytics… Než se pro ně nachnete, prosím ověřte si, zda opravdu neidentifikují uživatele, ať už pomocí cookie nebo fingerprintingem.
+* Jiné měřiče jako Plausible, Fathom, Matomo, Simple Analytics… Než se pro ně nadchnete, prosím ověřte si, zda opravdu neidentifikují uživatele, ať už pomocí cookie nebo fingerprintingem.
 * Do budoucna bude jistě zajímavá [server-side analytika](https://www.houseofrezac.com/blog/co-to-je-server-side-mereni) nebo pokročilá analýzy serverových logů.
 
 ## Audit komponent třetích stran {#audit}
