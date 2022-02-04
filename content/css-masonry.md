@@ -153,7 +153,7 @@ Standardizátoři mají CSS grid Level 3 zatím rozpracovaný. V září 2021 je
 
 Je samozřejmě otázkou, jak může vypadat náhradní řešení z vizuálního pohledu.
 
-Doufejme, že to nebudeme muset dlouho dělat a po připomínkovém řízení ke specifikaci dojde k implementaci v Chrome a odvozených prohlížečích a pak chvíli čekání na Safari, jak už to ve světě dnešního vývoje webů chodí.
+Doufejme, že to nebudeme muset dlouho dělat a po připomínkovém řízení ke specifikaci dojde k implementaci v Chromu a odvozených prohlížečích a pak chvíli čekání na Safari, jak už to ve světě dnešního vývoje webů chodí.
 
 <div class="ebook-only" markdown="1">
 

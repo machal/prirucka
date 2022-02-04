@@ -184,6 +184,6 @@ Technické možnosti tady jsou. Máme [značku `<picture>`](picture.md), takže 
 </picture>
 ```
 
-V takovém případě se nám AVIF ke dni psaní článku stáhne v Chrome a Opeře, WebP ve všech prohlížečích kromě starších Safari a [Internet Explorerů](msie.md). No a JPEG právě tam, v jámě lvové.
+V takovém případě se nám AVIF ke dni psaní článku stáhne v Chromu a Opeře, WebP ve všech prohlížečích kromě starších Safari a [Internet Explorerů](msie.md). No a JPEG právě tam, v jámě lvové.
 
 Vzhledem k podpoře zatím nepředpokládám masivní nasazení na všechny obsahové obrázky některých webů. Ale pro jednotlivé obrázky se mě to zdá je výborný nápad, který jsem si několikrát ověřit, například zde, na Vzhůru dolů, na stránce [o e-booku „Vzhůru do AMP“](https://www.vzhurudolu.cz/ebook-amp/).

@@ -38,7 +38,7 @@ V květnu 2021 je možné zkoumat grid jen v Safari Technology Preview, ale mysl
 
 Pojďme se na tyhle nástroje podívat z větší blízkosti.
 
-V Chrome zkoumání gridu nebo flexboxu zapnete takto:
+V Chromu zkoumání gridu nebo flexboxu zapnete takto:
 
 1. Pusťte na stránce DevTools: F12 nebo Ctrl/Cmd+Alt/Option+I.
 2. Otevřete záložku Elements. Prvky, které je možné takto ladit mají štítek „grid“ nebo „flex“. Klikněte na štítek.

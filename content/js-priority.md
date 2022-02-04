@@ -44,7 +44,7 @@ Podle zdrojového článku je to vhodné pro skripty, které generují obsah pro
 
 Nízká priorita stažení. Spouštění má ale vysokou prioritu a přeruší HTML parser.
 
-`async` skripty při stahování nepřeruší parsování stránky. Stahují se asynchronně v jiném vlákně a prohlížeč na ně tedy nečeká pro zobrazení stránky. Jakmile je má ale stažené, spustí je okamžitě. To se ale může minimálně v Chrome změnit. Jeho autoři [zvažují změnu spouštěcí priority](https://docs.google.com/document/d/16rHWLu-0abC9WWLhLBFlIRtbSnOFzhKAXsCamsp0oAs/edit#) těchto skriptů na nízkou.
+`async` skripty při stahování nepřeruší parsování stránky. Stahují se asynchronně v jiném vlákně a prohlížeč na ně tedy nečeká pro zobrazení stránky. Jakmile je má ale stažené, spustí je okamžitě. To se ale může minimálně v Chromu změnit. Jeho autoři [zvažují změnu spouštěcí priority](https://docs.google.com/document/d/16rHWLu-0abC9WWLhLBFlIRtbSnOFzhKAXsCamsp0oAs/edit#) těchto skriptů na nízkou.
 
 Nevýhodou `async` skriptů je to, že není možné garantovat pořadí jejich provádění. Tohle nastavení není proto vhodné pro posílání knihoven a jejich závislostí v jednotlivých souborech.
 

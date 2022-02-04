@@ -76,7 +76,7 @@ A podobně fungují zkratky pro blokový směr a další vlastnosti jako je `pad
 
 Proč to tak zdůrazňuji? Definice rozměrů v jednom směru je věc, která nám v CSS chyběla a která je díky CSS Logical Properties nyní možná. Drobnost, ale pomůže. I těm, kteří nesázejí dokumenty v arabštině nebo japonštině.
 
-Podívejte se na CodePen k tomuto příkladu. Jen pozor, logické hodnoty ve vlastnosti `float` mě v době psaní fungovaly ve Firefoxu, ale ne v Chrome a Safari.
+Podívejte se na CodePen k tomuto příkladu. Jen pozor, logické hodnoty ve vlastnosti `float` mě v době psaní fungovaly ve Firefoxu, ale ne v Chromu a Safari.
 
 CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 

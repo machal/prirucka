@@ -78,7 +78,7 @@ Grafiku oddělovače je také samozřejmě možné vypnout pomocí hodnoty `none
 
 ## `column-rule-width`: šířka oddělovače {#column-rule-width}
 
-I zde se samozřejmě akceptují jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, která ale pravděpodobně každý prohlížeč vykreslí jinak. V Chrome to dle mých propočtů odpovídá šířce 1, 2 a 5 pixelů.
+I zde se samozřejmě akceptují jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, která ale pravděpodobně každý prohlížeč vykreslí jinak. V Chromu to dle mých propočtů odpovídá šířce 1, 2 a 5 pixelů.
 
 Výchozí hodnota je `medium`.
 

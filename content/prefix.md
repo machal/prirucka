@@ -46,7 +46,7 @@ Implementují tedy něco, co nemá hotový standard. Je to tedy zkušební, prot
 
 Během roku 2016 ovšem vyvrcholila snaha výrobců prohlížečů a tvůrců standardů o nový přístup. Standardy se už nějakou dobu vyvíjejí v menších modulech, takže jdou vpřed rychleji. Z toho kromě jiného vyplývá, že prefixy přestávají být potřeba.
 
-Nové vlastnosti teď výrobci prohlížečů přidávají pod „vlaječky“ (flags), skrytá nastavení. Můžete si je snadno zkusit otevřením `chrome:flags` v Chrome nebo třeba `about:config` ve Firefoxu. Bližší vysvětlení přechodu od prefixů k vlaječkám je na Mozilla Developer Network.
+Nové vlastnosti teď výrobci prohlížečů přidávají pod „vlaječky“ (flags), skrytá nastavení. Můžete si je snadno zkusit otevřením `chrome:flags` v Chromu nebo třeba `about:config` ve Firefoxu. Bližší vysvětlení přechodu od prefixů k vlaječkám je na Mozilla Developer Network.
 [vrdl.in/akgm5](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
 
 Jak si s prefixy poradit? Autoprefixerem

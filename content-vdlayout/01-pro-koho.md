@@ -12,21 +12,19 @@ Pro pochopení technických částí budete potřebovat alespoň základní znal
 
 ### Jak knížku číst?
 
-Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od začátku do konce.“
-
-Jenže takhle se technické knížky nečtou. A nebudu si hrát na to, že tahle by měla být výjimkou.
+Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od začátku do konce.“ Jenže takhle se technické knížky nečtou. A nebudu si hrát na to, že tahle by měla být výjimkou.
 
 V prvních třech kapitolách čtenářům postupně představuji téma, abychom se ve čtvrté dostali k vrcholu, který představují příklady použití CSS layoutů.
 
-Pátá až devátá kapitola jsou už čisté referenční příručky. Budu moc rád, když si je pročtete. Hlavně vy začínající. Ale myslím si, že do nich spíše budete nahlížet, když to budete potřebovat – takže až narazíte na vlastnost, kterou byste chtěli více pochopit.
+Pátá až devátá kapitola jsou už čistě referenční příručky. Budu moc rád, když si je pročtete – hlavně vy začínající. Ale myslím si, že do nich spíše budete nahlížet, když to budete potřebovat – až narazíte na vlastnost, kterou byste chtěli více pochopit.
 
 Jedno ale doporučím všem – z každé kapitoly si poctivě přečtěte úvod a závěrečný kvíz. V tom druhém se zhruba dozvíte, jak jste na tom se znalostí problematiky. Nakonec třeba uznáte, že jsem netrávil čas zbytečně, když jsem se snažil, aby i referenční kapitoly měly při čtení hlavu a patu.
 
 ### CodePen: „Talk is cheap, show me the code“
 
-Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu – CodePen.
+Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu CodePen.
 
-Mě samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v téhle knize. V době psaní těchto řádků je jich na 170. Během čtení knížky tedy narazíte na celou řadu odkazů na CodePen.
+Mně samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v téhle knize. Je jich na 170.
 
 <figure>
 <img src="../dist/images/original/vdlayout/codepen.jpg" width="1600" height="900" alt="CodePen">
@@ -38,11 +36,11 @@ Mě samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v té
 Pokud chcete „peny“ zkoušet, což vám velmi doporučuji, udělejte prosím následující:
 
 1. Zřiďte si na CodePenu účet. Je to zdarma a velmi jednoduché.
-2. Moje CodePeny si „forkněte“, takže uložte kopii do vlastního účtu.
-3. Responzivitu si emulujte v tomto rozložení a pohybem šoupátka ze strany na stranu.
-4. Upravujte kód dle libosti. Experimentujte. Snažte se to vylepšit nebo rozbít.
+1. Moje CodePeny si forkněte, čili uložte kopii do vlastního účtu.
+1. Responzivitu si emulujte v tomto rozložení a pohybem šoupátka ze strany na stranu.
+1. Upravujte kód dle libosti. Experimentujte. Snažte se ho vylepšit nebo rozbít.
 
-Takhle se nejvíc naučíte.
+Takhle se naučíte nejvíc.
 
 ## Jak se v knížce stavím k podpoře v prohlížečích?
 
@@ -52,7 +50,7 @@ Pokud v následujících řádcích píšu o moderních prohlížečích, mám s
 - Safari od Applu, které se drží hlavně díky uzavřenosti ekosystému, ale s implementací podpory některých modernějších layoutů nespěchá.
 - Firefox od Mozilly, což je výborný prohlížeč, ale dnes už bohužel jen s velmi malým tržním podílem v řádu jednotek procent.
 
-Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi v komatu, nejspíš jej znáte. Až padne jeho jméno, pravděpodobně byste se do komatu nejraději odebrali.
+Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi v kómatu, nejspíš jej znáte. Až padne jeho jméno, pravděpodobně byste se do kómatu nejraději odebrali.
 
 ### Internet Explorer, polomrtvý prohlížeč
 
@@ -60,15 +58,15 @@ Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nov�
 
 Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech.
 
-Raději se ale věnuji novinkám než zombie-prohlížečům.
+Raději se ale věnuji novinkám než zombie prohlížečům.
 
 ### Spekulativní sázky na novinky
 
 Během psaní knížky se objevila řada novinek, které ještě nemají plnou podporu v moderních prohlížečích, ale já to nevydržel a píšu tady o nich.
 
-Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad píšu o technologiích, které jsou sice _cool_, ale v praxi je použít nemůžete.
+Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad píšu o technologiích, které jsou sice cool, ale v praxi je použít nemůžete.
 
-Takové [Container Queries](containe-queries.md) sice mají zatím jen experimentální podporu v Chrome, ale mohutně se na nich pracuje a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
+Takové [Container Queries](containe-queries.md) sice mají zatím jen experimentální podporu v Chromu, ale mohutně se na nich pracuje a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
 
 Dále jsem neodolal například u [subgridu](css-subgrid.md), který má zatím implementaci jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
 

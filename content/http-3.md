@@ -73,7 +73,7 @@ TODO srovnání viz https://developer.akamai.com/blog/2020/04/14/quick-introduct
 Na rychlém připojení a na počítači rozdíl nepoznáte. Nejde o tak zásadní posun jako mezi druhou a první verzí HTTP.
 
 <figure>
-<img src="../dist/images/original/http-3-chrome.png" width="1600" height="900" alt="HTTP/3 v Chrome">
+<img src="../dist/images/original/http-3-chrome.png" width="1600" height="900" alt="HTTP/3 v Chromu">
 <figcaption markdown="1">
 *HTTP/3 na produkci YouTube. Prohlíženo přes Network panel z Chrome 87.*
 </figcaption>

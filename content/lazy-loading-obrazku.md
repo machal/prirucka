@@ -70,11 +70,11 @@ Ta hranice je ovšem nastavená různě. V případě nativního lazy loadingu j
 - zda je aktivní [Lite mód](https://blog.chromium.org/2019/04/data-saver-is-now-lite-mode.html) (režim šetřetní dat) prohlížeče,
 - jaký je [typ připojení](https://googlechrome.github.io/samples/network-information/) (obsah `navigator.connection`).
 
-### Aktualizace v Chrome 77 a 79 {#nativni-update}
+### Aktualizace v Chromu 77 a 79 {#nativni-update}
 
 [Autoři uvádějí](https://web.dev/native-lazy-loading), že od Chrome 77 budeme moci testovat různé hranice pomocí omezením rychlosti připojení ve vývojářských nástrojích prohlížeče.
 
-Od [července 2020 a Chrome 79](https://web.dev/native-lazy-loading/#improved-data-savings-and-distance-from-viewport-thresholds) v Chrome platí, že na rychlejších připojeních (4G a lepší) se stahují všechny obrázky vzdálené 1250 pixelů od [viewportu](viewport.md). Na 3G a pomalejších připojeních je hranice nastavená na 2500 pixelů. Je to trochu paradoxní, ale jen tak může prohlížeč zajistit dostatečně včasné stažení obrázků.
+Od [července 2020 a Chrome 79](https://web.dev/native-lazy-loading/#improved-data-savings-and-distance-from-viewport-thresholds) v Chromu platí, že na rychlejších připojeních (4G a lepší) se stahují všechny obrázky vzdálené 1250 pixelů od [viewportu](viewport.md). Na 3G a pomalejších připojeních je hranice nastavená na 2500 pixelů. Je to trochu paradoxní, ale jen tak může prohlížeč zajistit dostatečně včasné stažení obrázků.
 
 ### Demo pro obrázky {#nativni-demo-obrazky}
 

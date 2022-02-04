@@ -24,7 +24,7 @@ Na mobilech musíme počítat s Google Chrome a Safari. Menší podíl mají dal
 </figcaption>
 </figure>
 
-Moc se neví, že na iOS se jádro Safari používá i v Google Chrome a všech dalších prohlížečích. Raději to zmíním už tady. Vykreslování tedy obvykle není potřeba na iOS kontrolovat v Chrome a zároveň Safari.
+Moc se neví, že na iOS se jádro Safari používá i v Google Chrome a všech dalších prohlížečích. Raději to zmíním už tady. Vykreslování tedy obvykle není potřeba na iOS kontrolovat v Chromu a zároveň Safari.
 
 Ještě méně se ví o nástupu nových malých prohlížečů. Znáte například Samsung Browser? V Česku také nemůžete minout stále významnější prohlížeč od Seznamu.
 

@@ -79,7 +79,7 @@ Obrázek v následujícím CodePenu má nastaveno zpoždění načítání, tak�
 
 CodePen: [codepen.io/e/WBRaPe](https://codepen.io/machal/pen/WBRaPe?editors=1100)
 
-Všimněte si, že v Chrome a Firefoxu vám layout celou dobu drží jako přibitý. No a pak se podívejte, že v CSS pro toto nepoužíváme žádné speciální triky. Prohlížeči prostě stačily atributy `width` a `height`.
+Všimněte si, že v Chromu a Firefoxu vám layout celou dobu drží jako přibitý. No a pak se podívejte, že v CSS pro toto nepoužíváme žádné speciální triky. Prohlížeči prostě stačily atributy `width` a `height`.
 
 <div class="related" markdown="1">
 - [Poměr stran: alternativní metody](css-pomer-stran.md)
@@ -149,7 +149,7 @@ S nativním lazy loadingem by „nativní poměr stran“ fungovat měl…
   width="640" height="360">
 ```
 
-…ale je zde jeden [bugísek v Chrome](https://bugs.chromium.org/p/chromium/issues/detail?id=1045745), který se hodí sledovat.
+…ale je zde jeden [bugísek v Chromu](https://bugs.chromium.org/p/chromium/issues/detail?id=1045745), který se hodí sledovat.
 
 Pokud nepoužíváte nativní líné načtení - je potřeba ošetřit přes `aspect-ratio` a ostatní metody
 

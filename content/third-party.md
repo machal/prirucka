@@ -118,7 +118,7 @@ Podobný graf mi u jednoho klienta pomohl vyřešit problém s výkonem jednoho 
 
 ### Chrome DevTools {#mereni-devtools}
 
-Ale za analýzou komponent třetích stran nemusíme chodit daleko. Leccos se dozvíme také přímo z prohlížeče. Používám pro ty účely DevTools v Chrome.
+Ale za analýzou komponent třetích stran nemusíme chodit daleko. Leccos se dozvíme také přímo z prohlížeče. Používám pro ty účely DevTools v Chromu.
 
 V Chrome DevTools si zapněte zobrazování „third party badges“. (Ctrl/Cmd+Alt+J > Ctrl/Cmd+Shift+P > Show third party badges).
 

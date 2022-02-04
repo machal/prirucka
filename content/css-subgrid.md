@@ -139,7 +139,7 @@ V běžném gridu je možné pomocí [vlastností `grid-auto-`](css-grid-auto-ro
 Subgrid je součástí specifikace CSS Grid Layout Module již ode Level 2, která se datuje do roku 2018. Zde je stav k lednu 2022:
 
 - Firefox subgrid podporuje od verze 70 z prosince 2019.
-- V Chrome se na subgridu zdá se docela hodně pracuje od podzimu 2021.
+- V Chromu se na subgridu zdá se docela hodně pracuje od podzimu 2021.
 - Safari sice subgrid eviduje, ale zatím tým vývojářů mlčí.
 
 Vzhledem k tomu, že se ledy hnuly u Chrome, má subgrid opravdu dobrou šanci na to, že se ujme a bude nám v budoucnu sloužit.

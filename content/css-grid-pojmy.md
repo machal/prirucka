@@ -133,7 +133,7 @@ Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési
 </figcaption>
 </figure>
 
-Vizualizace mřížky ve Firefoxu nebo i v Chrome pomůže pochopit, z čeho se váš grid skládá a jak to chápe prohlížeč. Velmi doporučuji to při práci na mřížkách používat.
+Vizualizace mřížky ve Firefoxu nebo i v Chromu pomůže pochopit, z čeho se váš grid skládá a jak to chápe prohlížeč. Velmi doporučuji to při práci na mřížkách používat.
 
 <div class="ebook-only" markdown="1">
 

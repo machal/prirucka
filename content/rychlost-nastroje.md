@@ -1,6 +1,6 @@
 # Nástroje pro analýzu rychlosti načtení stránky
 
-Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebPageTest.org. Vývojářům se také budou hodit vývojářské nástroje v Chrome nebo jiných prohlížečích.
+Začněte s Google PageSpeed Insights nebo Google Analytics, pokračujte na WebPageTest.org. Vývojářům se také budou hodit vývojářské nástroje v Chromu nebo jiných prohlížečích.
 
 ## Google PageSpeed Insights
 
@@ -89,7 +89,7 @@ Dívám se samozřejmě i na další čísla. WebPagetest má mnoho zákoutí k 
 
 ## Chrome DevTools
 
-Pokročilá analýza a detailní testování procesů načítání v Chrome. Velmi podobný nástroj mají i ostatní moderní prohlížeče.
+Pokročilá analýza a detailní testování procesů načítání v Chromu. Velmi podobný nástroj mají i ostatní moderní prohlížeče.
 
 <figure>
 <img src="../dist/images/original/devtools-rychlost-schema.jpg" alt="DevTools">

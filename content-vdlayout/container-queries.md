@@ -43,7 +43,7 @@ Pokud by vás to jako exkurze do minulosti zajímalo, zde je ten můj článek: 
 
 Ale zpět k současnosti.
 
-## Implementace Element Queries v Chrome
+## Implementace Element Queries v Chromu
 
 S novým návrhem přišla v prosinci 2020 Miriam Suzanne, ale je to jen jakýsi vrchol pyramidy, postavený na letité práci mnoha dalších.
 
@@ -81,7 +81,7 @@ Je možné, že i v době, kdy toto čtete, budou Container Queries schované za
 
 ## Specifikace a další prohlížeče
 
-Na Container Queries se těším jako malý Jarda a tak po očku vývoj sleduji. V Chrome se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právět tuto verzi.
+Na Container Queries se těším jako malý Jarda a tak po očku vývoj sleduji. V Chromu se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právět tuto verzi.
 
 Když se podíváme na další dva zásadní prohlížeče (Safari a Firefox), zdá se, že Container Queries hodlají implementovat. Ale v systémech pro správu rozpracovaných vlastností je u obou jen pustý a prázdný záznam bez viditelné práce a bez jakékoliv diskuze.
 
@@ -167,7 +167,7 @@ CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
 ## Podpora v prohlížečích a náhradní řešení
 
-Jak jsem už psal, v lednu 2022 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chrome je zkušební a nedostupná běžným uživatelům.
+Jak jsem už psal, v lednu 2022 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chromu je zkušební a nedostupná běžným uživatelům.
 
 Předpokládám ale, že někteří čtenáři na tenhle text narazí v době, kdy budou už existovat implementace v některých prohlížečích, v jiných naopak ne.
 

@@ -83,7 +83,7 @@ Pro reportování LCP je důležité, aby stránka byla ve viditelném okně či
 
 ### Jaký je postup měření? {#pocitani-technicky}
 
-Pokud vás to zajímá detailně technicky, pak postup měření v Chrome je následující:
+Pokud vás to zajímá detailně technicky, pak postup měření v Chromu je následující:
 
 1. Prohlížeč „kouká“ do [PerformanceEntry API](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry) na typ události `largest-contentful-paint`.
 2. Tyto události na stránce postupně přibývají, protože se vykreslují nové prvky. Také se donačítají obrázky a webfonty nebo do viewportu může autor pomocí JS přidat nebo odebrat prvek.

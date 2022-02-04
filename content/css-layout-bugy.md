@@ -204,7 +204,7 @@ Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních proh
 </figcaption>
 </figure>
 
-Chyby v Chrome a Firefoxu zde zůstávají už léta hlavně proto, že sloupcový systém rozvržení v CSS není právě často používaný a tudíž tlak na programátory prohlížečů není tak velký.
+Chyby v Chromu a Firefoxu zde zůstávají už léta hlavně proto, že sloupcový systém rozvržení v CSS není právě často používaný a tudíž tlak na programátory prohlížečů není tak velký.
 
 Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 

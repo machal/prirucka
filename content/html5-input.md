@@ -115,7 +115,7 @@ Tipy:
 <input type="week">
 ```
 
-* funguje jen v Chrome, Opeře a Edge http://caniuse.com/#feat=input-datetime
+* funguje jen v Chromu, Opeře a Edge http://caniuse.com/#feat=input-datetime
 * https://github.com/chemerisuk/better-dateinput-polyfill
 * "I think it’s time that we trust browser vendors a bit more. The days of useless features for the sake of having a longer feature list are long gone. Nowadays, browser vendors try to add features that are actually useful for users, and are actually implemented by web developers. If a browser says it supports <input type=”date”>, you should trust it to deliver a decent experience to its users. If it says it does not, and only in that case, you should use a custom widget instead."
 https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a

@@ -300,7 +300,7 @@ Podobně jako `layout="responsive"` v AMP je [parametr intrinsicsize](https://go
 <img intrinsicsize="250 x 200" src="cat.jpg">
 ```
 
-Zatím je ovšem skrytý za vlaječkovým nastavením v Chrome a další prohlížeče zdá se moc nereagují, viz [CanIUse](https://caniuse.com/#search=intrinsicsize).
+Zatím je ovšem skrytý za vlaječkovým nastavením v Chromu a další prohlížeče zdá se moc nereagují, viz [CanIUse](https://caniuse.com/#search=intrinsicsize).
 
 ## Nezapomeňte na zástupné symboly {#placeholder}
 

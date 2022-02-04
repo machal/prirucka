@@ -22,7 +22,7 @@ Zadání je ale složitější – tentokrát budeme velmi intenzivně řešit r
 </figcaption>
 </figure>
 
-Chcete si to zkusit sami? „Forkněte“ CodePen a vzhůru do toho.
+Chcete si to zkusit sami? Forkněte CodePen a vzhůru do toho.
 
 CodePen: [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
 

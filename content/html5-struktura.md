@@ -171,8 +171,8 @@ Pokud máte významnou návštěvnost z Exploreru 8 a starších, použijte [HTM
 
 - Pro Firefox existuje hezké rozšíření pro testování `role` atributů [Landmarks](https://addons.mozilla.org/en-US/firefox/addon/landmarks/).
 - MS Edge má pěkně vypadající [Accessibility Tools](https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide/dom-explorer/accessibility-tools). Za tip děkuji Vojtovi Bulantovi.
-- V Chrome vám oblasti definované pomocí `role` ukáže rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm): „Information“ > „Display ARIA roles“.
-- V Chrome si také můžete povolit experimentální [Accessibility Inspection](https://gist.github.com/marcysutton/0a42f815878c159517a55e6652e3b23a), jak píše Martin Držka v komentářích.
+- V Chromu vám oblasti definované pomocí `role` ukáže rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm): „Information“ > „Display ARIA roles“.
+- V Chromu si také můžete povolit experimentální [Accessibility Inspection](https://gist.github.com/marcysutton/0a42f815878c159517a55e6652e3b23a), jak píše Martin Držka v komentářích.
 -  Nejlepší je ale testovat přímo pomocí čteček. Na Macu máme vestavěný [VoiceOver](http://www.apple.com/accessibility/mac/vision/). Na Windows si nainstalujte [NVDA](http://nvda-project.cz/). Tady je [návod pro spuštění testování](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html).
 
 

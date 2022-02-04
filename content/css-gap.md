@@ -239,6 +239,6 @@ Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale tak
 
 <!-- AdSnippet -->
 
-Vlastnost `gap`, tedy bez prefixu `grid-` je podporována v Chrome 68+, Safari 11.2 Release 50+ a Opeře 54+. Ale to už je dneska vlastně jen historické okénko.
+Vlastnost `gap`, tedy bez prefixu `grid-` je podporována v Chromu 68+, Safari 11.2 Release 50+ a Opeře 54+. Ale to už je dneska vlastně jen historické okénko.
 
 Detailní informace o podpoře jsou na CanIUse. [caniuse.com/gap](https://caniuse.com/#search=gap)

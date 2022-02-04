@@ -137,7 +137,7 @@ Hodnoty `left`, `right`, `start` a `end` zatím nemají u této vlastnosti dobro
 - `baseline`  
   Zkratka pro `first baseline`.
 
-Toto v době psaní podporuje v Chrome a Edge.
+Toto v době psaní podporuje v Chromu a Edge.
 
 ### Pro přetečení
 

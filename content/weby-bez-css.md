@@ -78,7 +78,7 @@ To důležité by v HTML mělo být nahoře. Častým problémem je například 
 
 - Nejlépe samozřejmě ve zmíněných nástojích: Čtecích módech prohlížečů, čtečkách pro zrakově postižené a tak dále. 
 - Ve Firefoxu to je jednoduché. Jděte do nabídky „View“ > „Page Style“ a vyberte „No style“.
-- V Chrome to snadno jde jen přes rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm). („CSS“ > „Disable All Styles“).
+- V Chromu to snadno jde jen přes rozšíření [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm). („CSS“ > „Disable All Styles“).
 
 
 Shrňme si to:

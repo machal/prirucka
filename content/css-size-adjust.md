@@ -8,7 +8,7 @@ V textu se budeme zabývat nejen samotným `size-adjust`, ale také příbuzným
 
 <!-- AdSnippet -->
 
-Mají podporu v Chrome i Firefoxu a na Safari v tomto případě nemá smysl čekat.
+Mají podporu v Chromu i Firefoxu a na Safari v tomto případě nemá smysl čekat.
 
 ## Skuhrání nad optimalizací fontů {#skuhrani}
 

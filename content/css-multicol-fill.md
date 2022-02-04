@@ -66,7 +66,7 @@ Podle CanIUse podporují `column-fill` všechny moderní prohlížeče, včetně
 
 Mohli bychom tím skončit, ale po hrátkách s mým CodePenem v různých prohlížečích vás musím upozornit na následující:
 
-- V Chrome hodnota `balance` nefunguje bez vynucení nastavení výšky na `.container`, ať už to uděláme vlastností `height` nebo jinak.
+- V Chromu hodnota `balance` nefunguje bez vynucení nastavení výšky na `.container`, ať už to uděláme vlastností `height` nebo jinak.
 - Safari má chybu opačnou – pokud nenastavíme kontejneru výšku, rozděluje sloupečky tak jako bychom použili vyvažování – hodnotu `balance`. V prohlížeči od Apple se navíc přepnutí mezi hodnotami `balance` a `auto` projeví až po změně šířky okna.
 
 Naopak se mi zdá, že tato vlastnost velmi dobře funguje – minimálně v mém demu – v nejméně používaném moderním prohlížeči, tedy ve Firefoxu.

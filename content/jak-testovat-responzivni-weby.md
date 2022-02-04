@@ -19,7 +19,7 @@ V téhle fázi trávím samozřejmě nejvíce času. Kvůli DevTools používám
 
 Občas se podívám do ostatních desktopových prohlížečů: Firefoxu, Explorerů, Safari a Edge. Méně často do Opery, která obvykle renderuje stejně jako Chrome.
 
-Protože se ale bavíme hlavně o mobilních zařízeních, v Chrome mám puštěný Device Mode. Neznám lepší nástroj na emulaci všeho možného mobilního a díky tomu v Chrome trávím během procesu návrhu i kódování webu nejvíce času. 
+Protože se ale bavíme hlavně o mobilních zařízeních, v Chromu mám puštěný Device Mode. Neznám lepší nástroj na emulaci všeho možného mobilního a díky tomu v Chromu trávím během procesu návrhu i kódování webu nejvíce času.
 
 Najdete ho pod nenápadnou ikonkou mobilu nalevo od hlavního menu. Nebo pod zkratkou `Ctrl/Cmd+Shift+M`, když máte DevTools otevřené (`Ctrl/Cmd+Shift+I`).
 
@@ -29,9 +29,9 @@ Obsahuje přednastavené profily zařízení, emulaci pomalého mobilního inter
 
 Něco *podobného* existuje ve Firefoxu (Responsive Design View – `Ctrl/Cmd+Alt+M`) nebo v Safari, a dokonce v Edge (`F12` / Záložka „Emulation“). Alternativy jsou ale dle mých zkušeností slabší.
 
-Při testování v Chrome si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bratry, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
+Při testování v Chromu si navíc odladíte nejpopulárnější desktopový i mobilní prohlížeč. Ano, Firefox i Edge mají mobilní bratry, na které bychom neměli zapomínat, ale jejich podíl je malý na to, abyste z nich mohli udělat primární zařízení pro jednodušší testování mobilů.
 
-V Chrome obvykle oknem prohlížeče hýbu a upravuji kód, dokud se mně design alespoň trochu nelíbí ve *všech* rozlišeních.
+V Chromu obvykle oknem prohlížeče hýbu a upravuji kód, dokud se mně design alespoň trochu nelíbí ve *všech* rozlišeních.
 
 V další fázi potřebuji testovat v reálnějším prostředí. Ano, jde o jiná vykreslovací nebo javascriptová jádra. Pomůže BrowserStack nebo simulátory.
 

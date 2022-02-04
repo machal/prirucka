@@ -114,7 +114,7 @@ Lighthouse User Flows.
 </figcaption>
 </figure>
 
-K dispozici je to také v Chrome, koncem roku 2021 jen ve verzi Canary. Zde pod záložkou Recorder.
+K dispozici je to také v Chromu, koncem roku 2021 jen ve verzi Canary. Zde pod záložkou Recorder.
 
 ## Příkazová řádka {#prikazovka}
 

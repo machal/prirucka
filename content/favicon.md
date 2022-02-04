@@ -33,7 +33,7 @@ Dále tady máme standardizovaný **Web App Manifest**, který kromě ikon defin
 <link rel="manifest" href="/favicon/manifest.json">
 ```
 
-V Chrome na Androidu můžete také upravit **barvy rozhraní prohlížeče**. Více na [developers.google.com](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/#meta_theme_color_for_chrome_and_opera):
+V Chromu na Androidu můžete také upravit **barvy rozhraní prohlížeče**. Více na [developers.google.com](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/#meta_theme_color_for_chrome_and_opera):
 
 ```html
 <meta name="theme-color" content="#1e3307">
