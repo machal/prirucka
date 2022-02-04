@@ -49,7 +49,7 @@ Zato na frontendovou mašinerii musejí nebozí uživatelé čekat *dloooouhé* 
 
 > Zajímavé, jak rozšířená je myšlenka „náš web je pomalý, protože běží na pomalé platformě [dosaďte oblíbenou]“. 90 % problémů je přitom na frontendu.
 >
-> — *<cite>Stěžuji si [na Twitteru](https://twitter.com/machal/status/1047423382017462272)</cite>*
+> – *<cite>Stěžuji si [na Twitteru](https://twitter.com/machal/status/1047423382017462272)</cite>*
 
 Moje tvrzení na Twitteru sice není založené na širším výzkumu, ale praxe českých a slovenských webů mě ho stále potvrzuje.
 
@@ -144,7 +144,7 @@ Proč myslíte, že jsem jeden stylopis rozdělil do čtyř a cíleně tak zvý�
 
 Ano, klíč je v těch číslech za otazníkem. Vyjadřují datum a čas poslední změny souboru. Uživatel totiž [stáhne jen měněné části CSS](https://alistapart.com/article/the-best-request-is-no-request-revisited). Nikoliv tedy celý soubor pokaždé když ve stylech něco změníme.
 
-Kreativní práce s dotazy na server má na HTTP/2 své limity, ale pojďme si obecně říci, že nutnost vždy a všude zmenšovat počet dotazů na server je — prostě *mýtus*.
+Kreativní práce s dotazy na server má na HTTP/2 své limity, ale pojďme si obecně říci, že nutnost vždy a všude zmenšovat počet dotazů na server je – prostě *mýtus*.
 
 ## 7) „Zmenšíme datový objem obrázků a tím to vyřešíme“ {#7}
 

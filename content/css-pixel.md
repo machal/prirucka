@@ -38,7 +38,7 @@ Zjednodušeně řečeno je tedy lepší fotografii rovnou vyrobit ve velikosti 2
 
 Jenže to by znamenalo velké obrázky a neúměrnou datovou zátěž. Raději ještě chvilku čtěte.
 
-Nejdříve ale ještě o tom, kde všude s CSS pixely pracují webaři. Stručná odpověď zní — všude.
+Nejdříve ale ještě o tom, kde všude s CSS pixely pracují webaři. Stručná odpověď zní – všude.
 
 ## Autoři stránek pracují jen s CSS pixely
 

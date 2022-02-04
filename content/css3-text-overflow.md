@@ -10,7 +10,7 @@ text-overflow:
 
 Když na školeních ukazuji `text-overflow: ellipsis`, opakuje se vždy stejný scénář. Polovina účastníků zívá: „Hm, tohle používám už dva roky…“ A druhá polovina? Nadšeně si píše: „Musím použít hned zítra!“
 
-Hodnota `ellipsis` má háček — aktuálně je možné ji použít jen na vytečkování jednořádkového textu na blokových elementech. I tak je to ale velmi užitečný pomocník.
+Hodnota `ellipsis` má háček – aktuálně je možné ji použít jen na vytečkování jednořádkového textu na blokových elementech. I tak je to ale velmi užitečný pomocník.
 
 Příklad s navigací
 --------

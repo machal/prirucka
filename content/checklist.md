@@ -8,7 +8,7 @@ Náš kontrolní seznam je zaměřený primárně na [frontendové kodéry a kod
 
 Zaměřujeme se zde hlavně na obsahové weby a také e-shopy.
 
-Jednotlivé úkoly jsou označené prioritami tří stupňů —
+Jednotlivé úkoly jsou označené prioritami tří stupňů –
 ★★★ značí nejvyšší a ★☆☆ nejnižší prioritu.
 
 ## Obsah a HTML {#obsah-html}

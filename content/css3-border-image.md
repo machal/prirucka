@@ -61,7 +61,7 @@ border-image-repeat: stretch repeat;
 Může se hodit
 ----
 
-* Moc fajn generátor, který vám ulehčí život hlavně při hledání rozměrů řezů — [border-image.com](http://border-image.com/)
+* Moc fajn generátor, který vám ulehčí život hlavně při hledání rozměrů řezů – [border-image.com](http://border-image.com/)
 * Pozor, `border-image` nebude podle aktuální verze specifikace fungovat, pokud u stylovaného elementu zapomenete na deklaraci vlastností `border-style` a `border-width`.
 
 

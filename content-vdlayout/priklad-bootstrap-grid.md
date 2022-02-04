@@ -26,7 +26,7 @@ Například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o
 </div>
 ```
 
-Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definuje sloupec a pomocí třídy `.col-` s číslem podíl na výchozím dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Bootstrapu a šup — máte layout hotový.
+Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definuje sloupec a pomocí třídy `.col-` s číslem podíl na výchozím dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Bootstrapu a šup – máte layout hotový.
 
 CodePen: [cdpn.io/e/zYwBYjR](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
 

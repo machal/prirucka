@@ -146,7 +146,7 @@ Pomocí inspekce mřížky ve Firefoxu se nám teď layout krásně vizualizuje 
 
 ## Minimum, maximum, optimum s pomocí funkce `clamp()`
 
-Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má postranní panel (`.side`) mít šířku 30 % — ovšem s minimem `10em` a maximem `20em`.
+Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má postranní panel (`.side`) mít šířku 30 % – ovšem s minimem `10em` a maximem `20em`.
 
 Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce funkce `clamp()`.
 

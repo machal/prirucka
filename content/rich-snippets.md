@@ -167,7 +167,7 @@ Tento formát vkládání [podporuje](https://www.bing.com/webmaster/help/markin
 
 > V organiku jenom odkazy na kotvy do obsahu (typicky Wikipedie, ale i jiné weby). O ničem jiném nevím, ale je možné, že tam ještě něco máme. Osobně vnímám jako problematické ověřování těch informací a jako odstrašující příklad rád udávám ty hvězdičky z “hodnocení”.
 >
-> — *<cite>Dušan Janovský [na Twitteru](https://twitter.com/janovsky/status/1256676009685979136)</cite>*
+> – *<cite>Dušan Janovský [na Twitteru](https://twitter.com/janovsky/status/1256676009685979136)</cite>*
 
 ## Kontroverze. Jen velmi mírná, ale přesto si neodpustím rýpnutí… {#kontroverze}
 

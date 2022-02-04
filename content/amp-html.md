@@ -80,7 +80,7 @@ Namísto `amp` můžete v řádku `<html>` použít také emoji symbol „High V
 
 <div class="web-only" markdown="1">
 
-Namísto `amp` můžete v řádku s deklarací verze `html` použít také emoji symbol „High Voltage“ — ⚡.
+Namísto `amp` můžete v řádku s deklarací verze `html` použít také emoji symbol „High Voltage“ – ⚡.
 
 </div>
 

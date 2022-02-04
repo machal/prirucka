@@ -9,7 +9,7 @@ Jeho doménou je webový frontend, tedy technologie v prohlížečích, ale je p
 
 <!-- AdSnippet -->
 
-Kodér má přesah do oborů, se kterými spolupracuje na podkladech pro svou práci — UX, webová grafika. Také do oborů, kterým svou práci předává — frontend či backend programování, mírně třeba i do správy serverů.
+Kodér má přesah do oborů, se kterými spolupracuje na podkladech pro svou práci – UX, webová grafika. Také do oborů, kterým svou práci předává – frontend či backend programování, mírně třeba i do správy serverů.
 
 Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatelského rozhraní (UI) nebo třeba [frontendista](http://www.frontendisti.cz/). Dříve měla velmi podobnou náplň pozice „webmaster“, ale její používání [dnes je už překonané](https://www.vzhurudolu.cz/blog/62-frontend-pozice).
 

@@ -51,7 +51,7 @@ Nepotřebujete pak cookie lištu? Teď vás zklamu. Cookies sice tohle řešení
 
 > Řešení odesílá i data o uživateli, tj. s jeho nastavení prohlížeče etc.
 > 
-> — Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
+> – Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
 
 Takže i s tímto řešením cookie lištu potřebujete. Marek se ale [zmínil](https://twitter.com/MarekLecian/status/1486990984898617344), že možná nasdílí řešení, které ponechá možnost mít na menších webech dále GA a zároveň nemít cookie lištu.
 
@@ -82,7 +82,7 @@ Během svého pátrání po „cookieless Google Analytics" jsem narazil na řad
 
 >  …cookie se jen vyměnila za IP uživatele (fingerprint obsahující IP). Což je z mého pohledu ještě horší než ukládat cookies.
 > 
-> — Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
+> – Marek Lecián na [Facebooku](https://www.facebook.com/machal/posts/10227467122962667?comment_id=10227467215444979)
 
 Jaké další alternativy jsou možné?
 

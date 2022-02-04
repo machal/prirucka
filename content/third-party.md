@@ -176,7 +176,7 @@ Následuje pět mých nejčastějších optimalizačních technik. Hádejte, kte
 
 Tohle zní trochu jako knížecí rada, viďte? Ale řeknu vám příklad: Na jednom webu jsme hledali důvod, proč je nasazená komponenta [Targito](https://www.targito.com/). Obsahovala blokující CSS i JS soubory, takže s tím bylo potřeba něco udělat.
 
-Po chvilce pátrání se přišlo na to, že oba soubory slouží _jen_ k podpoře zobrazení modálního okna pro určitý typ příchozích uživatelů.  No jo — ale blokující CSS a JS se stahovaly všem.
+Po chvilce pátrání se přišlo na to, že oba soubory slouží _jen_ k podpoře zobrazení modálního okna pro určitý typ příchozích uživatelů.  No jo – ale blokující CSS a JS se stahovaly všem.
 
 ```html
 <!-- Targito popup -->

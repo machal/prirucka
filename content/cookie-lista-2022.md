@@ -30,7 +30,7 @@ To soukromí ale fakt musíme řešit. Jenže jak?
 
 > Nepoužívat a nešmírovat. Za analytické nástroje nechat platit toho, kdo data měří a nenechávat to na ceně uživatelského soukromí lidí, kteří ani nevědí co schvalují.
 >
-> — *<cite>Honza ChemiX Černý [na Twitteru](https://twitter.com/janhonzacerny/status/1465985275268632579)</cite>*
+> – *<cite>Honza ChemiX Černý [na Twitteru](https://twitter.com/janhonzacerny/status/1465985275268632579)</cite>*
 
 Představte si situaci že přijdete do obchoďáku a u vchodu vám bez ptaní dají do kapsy krabičku, která bude ukládat vaši polohu – jaké obchody jste navštívili, co jste tam dělali. Dají vám ji s úsměvem a s tím, že příště ta data použijí pro zlepšení vašeho nákupního prožitku. A že je možné, že ta data někomu prodají. Pro vaše dobro.
 
@@ -105,7 +105,7 @@ Z jaké změny v zákoně vlastně celý ten humbuk vychází?
 
 > Každý, kdo hodlá používat nebo používá sítě elektronických komunikací k ukládání údajů nebo k získávání přístupu k údajům uloženým v koncových zařízeních účastníků nebo uživatelů, je povinen tyto účastníky nebo uživatele předem prokazatelně informovat o rozsahu a účelu jejich zpracování a je povinen nabídnout jim možnost takové zpracování odmítnout. Tato povinnost neplatí pro technické ukládání nebo přístup výhradně pro potřeby přenosu zprávy prostřednictvím sítě elektronických komunikací nebo je-li to nezbytné pro potřeby poskytování služby informační společnosti, která je výslovně vyžádána účastníkem nebo uživatelem.
 >
-> — *[Zákon o elektronických komunikacích](https://www.zakonyprolidi.cz/cs/2005-127) (§ 89 Důvěrnost komunikací)*
+> – *[Zákon o elektronických komunikacích](https://www.zakonyprolidi.cz/cs/2005-127) (§ 89 Důvěrnost komunikací)*
 
 To je vše. Složitě napsané, ale překvapivě krátké, že?
 
@@ -117,7 +117,7 @@ Cookie lišta je otrava. Ano, to je.
 
 > Víte jaká je nejlepší cookie lišta?  Žádná!
 >
-> — *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
+> – *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
 
 Pokud máte velký web, řešil bych to, u malinkých asi nemá smysl propadat panice a nutně hned nasazovat lištu.
 
@@ -127,7 +127,7 @@ Advokáti navíc říkají, že vás nejprve úředníci musejí vyzvat k nápra
 
 > Kontrolu provádí @UOOUCR, sankce dává samozřejmě podle uvážení, ale horní hranice je vždycky předpisem limitovaná, navíc nesmí být nepřiměřená a likvidační.
 >
-> — *<cite>Petra Dolejšová [na Twitteru](https://twitter.com/DolejsovaPetra/status/1470436779803262988)</cite>*
+> – *<cite>Petra Dolejšová [na Twitteru](https://twitter.com/DolejsovaPetra/status/1470436779803262988)</cite>*
 
 Nechci tady ale nabádat k očůrávání zákona. S jeho smyslem souhlasím, svoje weby podle něj upravím. Výše uvedené mi ale dává čas a klid to dát do pořádku, když už jsem to začal řešit pozdě.
 

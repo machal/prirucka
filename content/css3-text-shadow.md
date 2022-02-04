@@ -14,7 +14,7 @@ text-shadow:
 
 Podívejte se rovnou na příklad: [cdpn.io/e/aDLCl](https://cdpn.io/e/aDLCl).
 
-`text-shadow` má dvojče — stínování boxu [box-shadow](css3-box-shadow.md). Na stránce o stínování boxu najdete detailnější popis syntaxe. Je velmi podobná.
+`text-shadow` má dvojče – stínování boxu [box-shadow](css3-box-shadow.md). Na stránce o stínování boxu najdete detailnější popis syntaxe. Je velmi podobná.
 
 Tip – stíny textu je možné řetězit a vytvořit až pseudo-3D efekty: [markdotto.com/playground/3d-text](http://markdotto.com/playground/3d-text/)
 

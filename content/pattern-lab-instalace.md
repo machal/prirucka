@@ -2,7 +2,7 @@
 
 [Pattern Lab](http://patternlab.io/) je nástroj pro tvorbu a prezentaci knihoven uživatelských rozhraní. Prostě toho co asi znáte pod pojmy *style guide* nebo *pattern library*. 
 
-Používám ho na aktuálním projekt a jsem stále více přesvědčený, že je hlavně pro vymýšlení a testovaní UI knihovny je to skvělý nástroj. Jenže — postup jeho rozchození je děsný porod. Proto tenhle čistě technický návod. Doufám, že vám to ušetří nehezké nervy, které jsem s Pattern Labem měl já.
+Používám ho na aktuálním projekt a jsem stále více přesvědčený, že je hlavně pro vymýšlení a testovaní UI knihovny je to skvělý nástroj. Jenže – postup jeho rozchození je děsný porod. Proto tenhle čistě technický návod. Doufám, že vám to ušetří nehezké nervy, které jsem s Pattern Labem měl já.
 
 ## Pattern Lab využijte jako výchozí šablonu pro váš projekt
 

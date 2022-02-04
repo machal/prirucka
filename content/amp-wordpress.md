@@ -91,7 +91,7 @@ Vaše HTML stránky budou v režimu „Reader“ převedeny do AMP na samostatn�
 
 <!-- AdSnippet -->
 
-Musíme vám ale říct jednu věc — tohle nechcete. Tento, původně jediný možný režim práce s AMP ve WordPressu, nadělal více škody než užitku. Jak už víte, [AMP je jen zvláštní distribuční verze](amp.md) vašeho webu, nemá vypadat a fungovat jinak.
+Musíme vám ale říct jednu věc – tohle nechcete. Tento, původně jediný možný režim práce s AMP ve WordPressu, nadělal více škody než užitku. Jak už víte, [AMP je jen zvláštní distribuční verze](amp.md) vašeho webu, nemá vypadat a fungovat jinak.
 
 Díky tomu, že původně nešlo AMP z WordPressu dostat jinak než tímto způsobem, vznikla o předmětné technologii [celá hromada mýtů](amp-kritika-myty.md), počínaje tím, že „AMP vynucuje tvorbu dvou verzí webu“ a konče tím, že „AMP stránky vypadají jedna jako druhá“.
 

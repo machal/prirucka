@@ -4,7 +4,7 @@ Fallback
 
 Ve světě webového frontendu se jedná o náhradní řešení pro prohlížeče, které neznají určitou technologii.
 
-Využívá **chytré vlastnosti HTML a CSS — ignorace neznámého**. Prohlížeče odjakživa oba jazyky zpracovávají tak, že v případě, že narazí na neznámou značku, atribut, vlastnost nebo hodnotu, ignorují ji a pokračují ve zpracování kódu.
+Využívá **chytré vlastnosti HTML a CSS – ignorace neznámého**. Prohlížeče odjakživa oba jazyky zpracovávají tak, že v případě, že narazí na neznámou značku, atribut, vlastnost nebo hodnotu, ignorují ji a pokračují ve zpracování kódu.
 
 Definovat fallback **považuji za slušnost** i na projektech, které mají nízký podíl přístupů ze starších prohlížečů. Nemluvě o tom, že ke dnešku má pořád dost silné zastoupení IE8+9, jež většinu HTML5 technologií nezvládají.
 

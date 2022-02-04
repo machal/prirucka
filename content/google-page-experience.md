@@ -33,7 +33,7 @@ Podle studie Sistrixu ze září 2021 to vypadá, že vliv signálu Page Experie
 
 > Zjištění Sistrix o vlivu Page Experience na SEO:<br><br>– Weby, který splňují PX mají nyní v průměru o 1 % lepší pozice v SERP, ale průběžně se rozdíl zvyšuje.<br><br>– Weby, které některé z požadavků nesplňují, mají pozice o 3,7 % horší.
 >
-> — *<cite>[Twitter](https://twitter.com/machal/status/1442094201965924359)</cite>*
+> – *<cite>[Twitter](https://twitter.com/machal/status/1442094201965924359)</cite>*
 
 Na jaké atributy stránek se v rámci Page Experience v Googlu ve svých automatizovaných hodnoceních dívají?
 

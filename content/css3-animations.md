@@ -66,10 +66,10 @@ Výchozí stav naší animace bude vypadat takto: Před startem animování a po
 
 Může nabývat čtyř hodnot:
 
-- `none` — výchozí hodnota.
-- `backwards` — i když má element jiné nastavení vlastností, při jeho zobrazení se použijí hodnoty z keyframe 0%.
-- `forwards` — po skončení poslední iterace animace zůstane objekt ve stejném stavu, jako je v keyframe 100%, a nevrací se zpět.
-- `both` — aplikuje `forwards` i `backwards`.
+- `none` – výchozí hodnota.
+- `backwards` – i když má element jiné nastavení vlastností, při jeho zobrazení se použijí hodnoty z keyframe 0%.
+- `forwards` – po skončení poslední iterace animace zůstane objekt ve stejném stavu, jako je v keyframe 100%, a nevrací se zpět.
+- `both` – aplikuje `forwards` i `backwards`.
 
 ### `animation-play-state` – stav přehrávání
 

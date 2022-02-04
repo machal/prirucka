@@ -122,7 +122,7 @@ Lepší je samozřejmě podpora u CDN, například [u Cloudflare](https://develo
 
 ### České hostingy {#podpora-hosting}
 
-Zatím je víceméně mrtvo. U HTTP/2 jsem to docela podrobně sledovat. V případě HTTP/3 udělal první průzkumnické kolečko [Wladass](https://wladass.cz/budeme-pripraveni-na-http-3/). Výsledkem je, že našel jediný podporující hosting — [exon.io](https://exon.io/nexthosting).
+Zatím je víceméně mrtvo. U HTTP/2 jsem to docela podrobně sledovat. V případě HTTP/3 udělal první průzkumnické kolečko [Wladass](https://wladass.cz/budeme-pripraveni-na-http-3/). Výsledkem je, že našel jediný podporující hosting – [exon.io](https://exon.io/nexthosting).
 
 Je potřeba říci, že je nyní opravdu hodně brzy a specifikace kolem HTTP/3 jsou zatím pořád ve stadiu návrhu.
 

@@ -65,9 +65,9 @@ Teď si představme, že se obrázek vkládá do stránky `https://www.iframe.cz
 
 Autoři Chrome mluví o novém klíči „Network Isolation Key“, který obsahuje tuto sadu:
 
-- Doménu druhého řádu pro stránku (přesněji [eTLD+1](https://web.dev/same-site-same-origin/) — `e-shop.cz`.
-- Totéž pro aktuální iframe — `iframe.cz`.
-- Adresu zdroje — `https://cdn.example.cz/obrazek.png`.
+- Doménu druhého řádu pro stránku (přesněji [eTLD+1](https://web.dev/same-site-same-origin/) – `e-shop.cz`.
+- Totéž pro aktuální iframe – `iframe.cz`.
+- Adresu zdroje – `https://cdn.example.cz/obrazek.png`.
 
 Podle textu [Gaining security and privacy by partitioning the cache](https://developers.google.com/web/updates/2020/10/http-cache-partitioning) od Googlu je podpora v prohlížečích následující:
 

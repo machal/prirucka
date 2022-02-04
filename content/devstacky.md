@@ -54,7 +54,7 @@ Danův stack zde pokrývá totéž jako v případě Gulpu a opět je hezky čes
 
 ### DevStack Vojty Bulanta
 
-Není zdokumentovaný, zase ale velmi jednoduchý a přímočarý. Pokrývá HTML (Pug), CSS (PostCSS), JS ([Parcel](parcel-js.md)), SVG (SVGO). — [gist.github.com/vbulant](https://gist.github.com/vbulant/cfbe4b109de4de52220c686decf41562?fbclid=IwAR1wQyt5mplcM6rjBG6SD1NWiGAbQxRc6DetOEwYzkFofmn0D0DDtal7sdY)
+Není zdokumentovaný, zase ale velmi jednoduchý a přímočarý. Pokrývá HTML (Pug), CSS (PostCSS), JS ([Parcel](parcel-js.md)), SVG (SVGO). – [gist.github.com/vbulant](https://gist.github.com/vbulant/cfbe4b109de4de52220c686decf41562?fbclid=IwAR1wQyt5mplcM6rjBG6SD1NWiGAbQxRc6DetOEwYzkFofmn0D0DDtal7sdY)
 
 ## Grunt
 

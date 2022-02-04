@@ -18,8 +18,8 @@ _Reklamní komponenty v akci. amp-ad na webu Reflexu zobrazuje Google Ads. Druh�
 
 Další oblastí působnosti je analytika, měření všeho všemi:
 
-* `amp-analytics` — komponenta pro jednotný způsob vkládání analytických skriptů od Google Analytics, ale i dalších poskytovatelů. [V dalším textu](amp-analytics.md) se o ní rozepisujeme více.
-* `amp-pixel` — vestavěná komponenta pro jednoduché měření zobrazení stránky.
+* `amp-analytics` – komponenta pro jednotný způsob vkládání analytických skriptů od Google Analytics, ale i dalších poskytovatelů. [V dalším textu](amp-analytics.md) se o ní rozepisujeme více.
+* `amp-pixel` – vestavěná komponenta pro jednoduché měření zobrazení stránky.
 * `amp-call-tracking` – možnost měření volání na určité telefonní číslo.
 * `amp-share-tracking` – měření počtu sdílení na sociálních sítích. V době psaní textu je komponenta ještě ve vývoji.
 

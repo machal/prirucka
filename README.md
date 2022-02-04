@@ -191,7 +191,7 @@ Zjistil jsem, že v Markdownu je možné vkládat krásnou citaci i s uvedením 
 
 > Víte jaká je nejlepší cookie lišta?  Žádná!
 >
-> — *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
+> – *<cite>Z ohlasů [na Twitteru](https://twitter.com/count_lovelace/status/1466352798149271555)</cite>*
 
 
 ### CodePen s ukázkou

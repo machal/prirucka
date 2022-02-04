@@ -18,7 +18,7 @@ Je určený pro základní analytiku, která se chová jako měřicí pixel:
 
 Vysvětlíme:
 
-* `<adresa-pro-mereni>` — adresa měřicího koncového bodu vaší aplikace. Nemusí to být samozřejmě pixelový obrázek, ale třeba `https://example.com/mereni/zmer-me.`
+* `<adresa-pro-mereni>` – adresa měřicího koncového bodu vaší aplikace. Nemusí to být samozřejmě pixelový obrázek, ale třeba `https://example.com/mereni/zmer-me.`
 * `layout="nodisplay"` – prvek, který se spustí, ale nezobrazí. To už asi víte z textu [o layoutu v AMP](amp-komponenty-layout.md).
 
 Více o pixelu je na [vrdl.in/amppixel](https://amp.dev/documentation/components/amp-pixel).
@@ -103,7 +103,7 @@ V Google Analytics lze návštěvníky z AMP stránek měřit také jednoduše p
 
 Po nasazení AMP a prvních měřeních se vám může zdát, že na konverze žádný vliv nemělo. Nebo že snad dokonce míra konverzí poklesla. Nebo že se vám zvýšila metrika Míra okamžitého opuštění (Bounce Rate). Všechno to může ukazovat nějaký problém na webu, ale také na problém s měřením.
 
-Vzhledem k tomu, že hlubší analytika už je daleko za oblastí našich znalostí a schopností, s jistou úlevou vás odkazujeme na oči otevírající text „So your AMP test doesn’t perform — now what?“ na blogu AMP. [vrdl.in/ampdoesntper](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%e2%80%8a-%e2%80%8anow-what/)
+Vzhledem k tomu, že hlubší analytika už je daleko za oblastí našich znalostí a schopností, s jistou úlevou vás odkazujeme na oči otevírající text „So your AMP test doesn’t perform – now what?“ na blogu AMP. [vrdl.in/ampdoesntper](https://blog.amp.dev/2018/11/08/so-your-amp-test-doesnt-perform%e2%80%8a-%e2%80%8anow-what/)
 
 V uvedeném textu se dozvíte, že problémy změřené na AMP stránkách nakonec problémy být nemusejí:
 

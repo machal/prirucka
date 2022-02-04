@@ -10,4 +10,4 @@ Pro přepočet mezi hardwarovým a CSS rozlišením se užívá technického poj
 
 ![Poměr mezi HW a CSS rozlišením u vybraných zařízení](../dist/images/original/hw-css-pixely-tabulka.jpg)
 
-A teď ještě — jaký vliv má `device-pixel-ratio` na práci vývojáře uživatelského rozhraní? To se dozvíte v následujícím odstavci.
+A teď ještě – jaký vliv má `device-pixel-ratio` na práci vývojáře uživatelského rozhraní? To se dozvíte v následujícím odstavci.

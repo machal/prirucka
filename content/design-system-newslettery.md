@@ -2,7 +2,7 @@
 
 _[Tomáš Krejčí](https://www.vzhurudolu.cz/lektori/tomas-krejci) ze [SUPERKODERS](https://superkoders.com/) vám v dnešním textu ukáže svou práci na knihovně UI komponent pro newslettery úspěšného českého startupu._
 
-Ano, čtete správně — i pro vaše newslettery či jiné HTML e-maily lze připravit systém znovupoužitelných komponent.
+Ano, čtete správně – i pro vaše newslettery či jiné HTML e-maily lze připravit systém znovupoužitelných komponent.
 
 O [systémech designu](pattern-lab.md) se na Vzhůru dolů psalo už před lety a v roce 2018 Honza Toman povídal [o systému designu v Kiwi.com](https://www.vzhurudolu.cz/podcast/126-podcast-kiwi-design-system) v našem podcastu.
 

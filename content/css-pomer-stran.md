@@ -68,7 +68,7 @@ Podobný problém může nastat [s lazy loadingem obrázků nebo prvků `<iframe
 
 ## Než začneme: Co musí obstarat backendisti a designéři? {#design-backend}
 
-Udržování poměru stran v layoutu není možné bez — no, ano — znalosti poměru stran.
+Udržování poměru stran v layoutu není možné bez – no, ano – znalosti poměru stran.
 
 <!-- AdSnippet -->
 

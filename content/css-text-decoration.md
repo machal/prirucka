@@ -94,7 +94,7 @@ text-decoration-line: none |
   [ underline || overline || line-through || blink ]
 ```
 
-Ve středoevropském prostoru chcete asi většinou použít podtržení — `underline`.
+Ve středoevropském prostoru chcete asi většinou použít podtržení – `underline`.
 
 Blikající hodnota `blink` je označená za zastaralou a moderní prohlížeče ji už neimplementují. Chválabohu.
 

@@ -2,7 +2,7 @@
 
 Dědičnost je spolu s [kaskádou](css-kaskada.md) jako dvě sestry. A my, weboví vývojáři, jejich rodiče.
 
-Občas nás děti dost zlobí, jindy se mezi sebou mlátí… prostě nám jednou za čas lezou na nervy. Jenže — co s tím naděláme?
+Občas nás děti dost zlobí, jindy se mezi sebou mlátí… prostě nám jednou za čas lezou na nervy. Jenže – co s tím naděláme?
 
 Nezbývá než se s nimi smířit, pochopit je a najít způsob, jak spolu všichni můžeme vycházet.
 

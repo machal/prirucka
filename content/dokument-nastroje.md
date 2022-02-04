@@ -125,7 +125,7 @@ Když už máme jakžtakž vysázený dokument, můžeme k němu začít přidá
 
 Poslední členka sesterského komanda Blanek vychází právě z toho, že ne všechny HTML elementy musíte znát. Nebo lépe: že si na ně prostě nemusíte vzpomenout, takže ve stylech je neošetříte.
 
-Kdo z nás nezažil situaci, kdy ve stylech počítal úplně se vším — dokud mu klient přes redakční systém na web nevložil úplně novou kombinaci prvků, která rozbila celý web?
+Kdo z nás nezažil situaci, kdy ve stylech počítal úplně se vším – dokud mu klient přes redakční systém na web nevložil úplně novou kombinaci prvků, která rozbila celý web?
 
 Proto je tu Blanka Type Test, zátěžový test typografie. Je to vlastně dokument obsahující všechny myslitelné i nemyslitelné HTML elementy. V kombinacích, které by nás nenapadly. V zanořeních, se kterými jsme nepočítali. V rozměrech a délkách, jejichž představa by vás budila ze sna.
 

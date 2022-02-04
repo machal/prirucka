@@ -66,11 +66,11 @@ Během psaní knížky se objevila řada novinek, které ještě nemají plnou p
 
 Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad píšu o technologiích, které jsou sice cool, ale v praxi je použít nemůžete.
 
-Takové [Container Queries](containe-queries.md) sice mají zatím jen experimentální podporu v Chromu, ale mohutně se na nich pracuje a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
+Takové [Container Queries](containe-queries.md) sice mají zatím jen experimentální podporu v Chromu, ale mohutně se na nich pracuje, a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
 
 Dále jsem neodolal například u [subgridu](css-subgrid.md), který má zatím implementaci jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
 
-Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozorním a samozřejmě — knížka je hlavně o vlastnostech, které používat můžete bez problémů všude.
+Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozorním a samozřejmě – knížka je hlavně o vlastnostech, které používat můžete bez problémů všude.
 
 ### Jak hledat podporu a testovat ji
 

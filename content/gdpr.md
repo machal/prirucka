@@ -247,9 +247,9 @@ Odkazy
 
 Podle všeho co vím není potřeba žádat všechny odběratele znovu o souhlas. Na [ShopSys Webinář](https://www.youtube.com/watch?v=bDCrDzXIyGE)i (40 min.) padlo, že je potřeba rozdělit zákazníky do tří skupin:
 
-* zákazníci, kteří se svobodně přihlásili k newsletteru — můžete je oslovovat nadále
-* zákazníci, kteří u vás nakoupili před méně než 2 lety — můžete je oslovovat nadále
-* u všech ostatních kontaktů v e-mailové databázi — musíte získat souhlas, ale  nespojovat to s nabídkou
+* zákazníci, kteří se svobodně přihlásili k newsletteru – můžete je oslovovat nadále
+* zákazníci, kteří u vás nakoupili před méně než 2 lety – můžete je oslovovat nadále
+* u všech ostatních kontaktů v e-mailové databázi – musíte získat souhlas, ale  nespojovat to s nabídkou
 
 Je samozřejmě důležité samozřejmě v e-mailech vždy umožnit odhlášení. Opět se dívím, kolik firem takhle základní věc stále ignoruje.
 

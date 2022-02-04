@@ -6,7 +6,7 @@ Máme pět možných strategií: nulový nebo definovaný fallback, detekci vlas
 
 Počet znaků fallback kódu: nula. Žádný alternativní kód prostě nepíšete. (Ovšem za podmínky, že přesně víte, co děláte.)
 
-Nulový fallback využívá chytré vlastnosti HTML a CSS — ignorace neznámého. Prohlížeče odjakživa oba jazyky zpracovávají tak, že v případě, že narazí na neznámou značku, atribut, vlastnost nebo hodnotu, ignorují ji a pokračují ve zpracování kódu.
+Nulový fallback využívá chytré vlastnosti HTML a CSS – ignorace neznámého. Prohlížeče odjakživa oba jazyky zpracovávají tak, že v případě, že narazí na neznámou značku, atribut, vlastnost nebo hodnotu, ignorují ji a pokračují ve zpracování kódu.
 
 ```css
 .box {

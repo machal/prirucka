@@ -140,7 +140,7 @@ Weby používající vícesloupcové rozvržení: Learning Log Romana Veselého 
 
 Možností využití je překvapivě hodně a určitě si na nějakou vzpomenete.
 
-Vícesloupcový layout má sice z trojice multi-column, flexbox, grid nejméně možností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc — prohlížeče si s ním velmi dobře rozumí.
+Vícesloupcový layout má sice z trojice multi-column, flexbox, grid nejméně možností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc – prohlížeče si s ním velmi dobře rozumí.
 
 ## Anonymní fragmentačním kontejnery {#vice-kontejnery}
 

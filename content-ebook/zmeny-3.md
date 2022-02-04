@@ -29,7 +29,7 @@ U jednoho ale uděláme výjimku a chvíli se na něj zaměříme.
 
 Podíl návštěv z Chrome na mobilech roste, a tak je dobré zmínit, že na nových Androidech nahrazuje původní prohlížeč. Ten s ikonou zeměkoule a názvem „Internet“.
 
-Na rozdíl od staršího bratrance bude mobilní Chrome mít — alespoň na některých zařízeních — automatickou aktualizaci. A co do podpory CSS3 a dalších HTML5 technologií je určitě lepší. Viz třeba [html5test.com](https://html5test.com/results/mobile.html).
+Na rozdíl od staršího bratrance bude mobilní Chrome mít – alespoň na některých zařízeních – automatickou aktualizaci. A co do podpory CSS3 a dalších HTML5 technologií je určitě lepší. Viz třeba [html5test.com](https://html5test.com/results/mobile.html).
 
 Chrome existuje i ve verzi pro iOS. Tam je to ovšem  takový pseudo-Chrome.
 

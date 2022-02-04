@@ -27,7 +27,7 @@ Týká se to hlavně kurzívy a tučného řezu. Pokud byste totiž deklarovali 
 
 … slovo „kůň” by se na první pohled správně vykreslilo tučně, stejně jako slovo „ódy” kurzívou fontu `WebFont`. Jenže ouha, šlo by o falešnou kurzívu a tučný řez, který se prohlížeč pokusil vytvořit z běžného řezu písma.
 
-Pokud všechny tři řezy potřebujete, jediná správná cesta je dodat prohlížeči tři řezy – „normální“, kurzívu a tučný řez — a v CSS deklaraci mu oznámit, který soubor ke které variantě patří.
+Pokud všechny tři řezy potřebujete, jediná správná cesta je dodat prohlížeči tři řezy – „normální“, kurzívu a tučný řez – a v CSS deklaraci mu oznámit, který soubor ke které variantě patří.
 
 Zjednodušeně by to mohlo vypadat takto:
 
@@ -76,7 +76,7 @@ Resource access is restricted.
 </IfModule>
 ```
 
-Nastavení pro jiné servery než Apache hledejte v `server-configs` repozitářích u HTML5Boilerplate — [github.com/h5bp](https://github.com/h5bp).
+Nastavení pro jiné servery než Apache hledejte v `server-configs` repozitářích u HTML5Boilerplate – [github.com/h5bp](https://github.com/h5bp).
 
 Dobré zmínit, že načítání z jiných domén mírně zdrží zobrazení fontů kvůli dalšímu DNS lookupu.
 

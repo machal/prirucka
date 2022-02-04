@@ -34,7 +34,7 @@ Nový formát je proto příbuzný s WebP. Oba jsou založeny na video kodeku z 
 </figcaption>
 </figure>
 
-Mezi členy skupiny Alliance for Open Media počítáme například Google, Amazon, Facebook, Intel, Microsoft, Mozillu, Netflix, Samsung Electronics a — _chvíle napětí_ – Apple. Tohle si zapamatujme jako velmi důležité, ještě se k tomu vrátíme.
+Mezi členy skupiny Alliance for Open Media počítáme například Google, Amazon, Facebook, Intel, Microsoft, Mozillu, Netflix, Samsung Electronics a – _chvíle napětí_ – Apple. Tohle si zapamatujme jako velmi důležité, ještě se k tomu vrátíme.
 
 ## Výhody AVIF {#vyhody}
 

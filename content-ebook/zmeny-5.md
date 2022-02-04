@@ -1,6 +1,6 @@
 # SVG a srcset/sizes, nové výzvy pro vkládání obrázků
 
-Díky CSS pixelu a snaze posílat uživateli ve stránce datově co nejúspornější materiál řešíme daleko více otázek než jen — „Mám použít PNG, nebo JPG?“.
+Díky CSS pixelu a snaze posílat uživateli ve stránce datově co nejúspornější materiál řešíme daleko více otázek než jen – „Mám použít PNG, nebo JPG?“.
 
 Obrázky užívané ve stránkách si nejdříve ale musíme rozdělit do dvou kategorií – obrázky v rozhraní a v obsahu.
 
@@ -20,4 +20,4 @@ Fotky samozřejmě můžete připravit v ohromném rozlišení – klidně více
 
 Vyřešíte problém s `device-pixel-ratio`, ale nárůst datového objemu stránky bude tak šílený, že vás uživatelé brzy jistojistě přijdou ubít svými chytrými telefony. Připomínám, že fotka připravená pro Retina displej (2×) neobsahuje 2×, ale 4× více pixelů, takže její datový objem naroste klidně čtyřnásobně.
 
-V praxi preferuji řešení pomocí nových atributů tagu `<img>` — `srcset` a `sizes`. [vrdl.cz/prirucka/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes)
+V praxi preferuji řešení pomocí nových atributů tagu `<img>` – `srcset` a `sizes`. [vrdl.cz/prirucka/srcset-sizes](http://www.vzhurudolu.cz/prirucka/srcset-sizes)

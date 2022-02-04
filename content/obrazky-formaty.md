@@ -161,7 +161,7 @@ Dřívější praxe kodérů vypadala asi takto:
 
 Myslím ale, že v poslední době se toho hodně změnilo.
 
-Jednak — GIF se mě dneska už zdá zbytečný. Máme HTML5 video, animace děláme pomocí [CSS](css3-animations.md), JS nebo [SVG](svg-inspirace.md). Ale jasně, animovaná koťátka jej udrží při životě ještě dlouho.
+Jednak – GIF se mě dneska už zdá zbytečný. Máme HTML5 video, animace děláme pomocí [CSS](css3-animations.md), JS nebo [SVG](svg-inspirace.md). Ale jasně, animovaná koťátka jej udrží při životě ještě dlouho.
 
 <!-- AdSnippet -->
 

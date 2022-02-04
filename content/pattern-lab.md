@@ -1,7 +1,7 @@
 # Atomický design a Pattern Lab: návrat do budoucnosti návrhu uživatelských rozhraní
 
 > We’re not designing pages, we’re designing systems of components. 
-— Stephen Hay
+– Stephen Hay
 
 [Pattern Lab](http://patternlab.io/) je nástroj pro návrh, testování a prezentaci atomických designových systémů. 
 
@@ -72,7 +72,7 @@ Než jsem si to zkusil na konkrétním projektu.
 
 Teď už mám vyzkoušeno a říkám, že je to kategorizace, která je pro obyčejné weby vlastně dokonalá. Omlouvám se tedy všem atomům, molekulám, organizmům a své učitelce chemie na střední.
 
-Hlavním důvodem pro zavedení designových systémů je — ušetření práce. 
+Hlavním důvodem pro zavedení designových systémů je – ušetření práce. 
 Organizace komponent o méně úrovních, obvyklá na jiných mých projektech čas šetří, ale ne tak jako když z atomů skládáte molekuly a z molekul organizmy. Práce designéra i kodéra se pak opakuje výrazně méně a začne fungovat onen efekt skládání Lego kostek, tak hojně spojovaný se systémy webového designu.
 
 Pokud by vám ale atomické dělení přestalo vyhovovat, kategorizaci si můžete sami změnit. Brad Frost k tomu vyloženě vybízí a ukazuje i příklady jiných organizací. Myslím, že to ale nebudete potřebovat.
@@ -85,7 +85,7 @@ Tak, a teď si pojďme povídat o nástroji pro práci na atomických systémech
 
 ## Pattern Lab: návrh, prezentace, ale hlavně testování atomického designu
 
-Na začátek se musím přiznat, že [Pattern Lab](http://patternlab.io/) je pro mě zdrojem největšího nepochopení a frustrace — asi tak od doby co jsem se snažil ve Francii domluvit anglicky.
+Na začátek se musím přiznat, že [Pattern Lab](http://patternlab.io/) je pro mě zdrojem největšího nepochopení a frustrace – asi tak od doby co jsem se snažil ve Francii domluvit anglicky.
 
 Pattern Lab totiž není:
 
