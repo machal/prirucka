@@ -2,21 +2,21 @@
 
 Pokud se těšíte na psaní kódu, tuhle část můžete v klidu přeskočit. Ale věřte mi – pokud bych si myslel, že vás bude nudit, do knížky bych ji nedával.
 
-Historie rozvržení v CSS je totiž tak trochu historií CSS a protože tu jsem napjatě sledoval úplně od začátku, vidím v následujícím příběhu pár zajímavých a vtipných momentů.
+Historie rozvržení v CSS je totiž tak trochu historií CSS, a protože tu jsem napjatě sledoval úplně od začátku, vidím v následujícím příběhu pár zajímavých a vtipných momentů.
 
 Slíbil jsem stručnost, takže to vezměme v bodech.
 
 ## 1994: „Je mi líto, ale jste v háji.“
 
-Možnosti stylování dokumentů jsou mizerné. Výborně to vyjadřuje mimo jiné také Marc Andreessen, pozdější spoluzakladatel Netscape a člen představenstva Facebooku, v e-mailovém fóru WWW-Talk. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v sázecím programu LaTeX (nebo alespoň jako ve Wordu), všem prý odpovídá: „Sorry you’re screwed.“
+Možnosti stylování dokumentů jsou mizerné. Výborně to vyjadřuje mimo jiné také Marc Andreessen, spoluzakladatel Netscape a pozdější člen představenstva Facebooku, v e-mailovém fóru WWW-Talk. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v sázecím programu LaTeX (nebo alespoň jako ve Wordu), všem prý odpovídá: „Sorry you’re screwed.“
 
 ## 1996: FRAME
 
-Jako nedostatečné vnímají možnosti rozvržení v CSS už samotní zakladatelné kaskádových stylů, Bert Bos a Håkon Wium Lie, a proto přicházejí v tehdejší době s převratem – rámci. Prvek `<FRAME>` umožňuje rozdělit stránku na samostatné jednotky, které nejsou nic jiného než jen další stránky. První layoutová revoluce je tady.
+Jako nedostatečné vnímají možnosti rozvržení v CSS už samotní zakladatelné kaskádových stylů, Bert Bos a Håkon Wium Lie, a proto přicházejí v tehdejší době s převratnými rámci. Prvek `<FRAME>` umožňuje rozdělit stránku na samostatné jednotky, které nejsou nic jiného než jen další stránky. První layoutová revoluce je tady.
 
 ## 1998: MULTICOL
 
-Andreesen se snaží layout implementovat do svého prohlížeče Netscape Navigator a tak verze 3 přichází s tímto zápisem:
+Andreessen se snaží implementovat layout do svého prohlížeče Netscape Navigator, a tak verze 3 přichází s tímto zápisem:
 
 ```html
 <MULTICOL COLS="2">
@@ -34,18 +34,17 @@ Ano, opravdu se značky zapisovaly VERZÁLKAMI.
 
 Ne. Opravdu o tom už nechci dále mluvit.
 
-V téhle době stavím svůj první větší web – fanouškovské stránky U2 na tehdy velmi známém serveru MusicHall. Jsem hrdý, že pro rozložení stránky nepoužívám `<frame>`, už zastaralou metodu. Kód mého webu je totiž stavěný na prvku `<table>`.
+V té době tenkrát stavím svůj první větší web – fanouškovské stránky kapely U2 na tehdy velmi známém serveru MusicHall. Jsem hrdý, že pro rozložení stránky nepoužívám `<frame>`, už zastaralou metodu. Kód mého webu je totiž stavěný na prvku `<table>`.
 
 ## 1998: TABLE
 
-Někdy v této době přišel bezejmenný webař na to, že když z tabulky odstraní rámečky, vznikne docela dobrá struktura, které může nést i složitější rozvržení stránek nebo jednotlivých komponent uvnitř.
-Někdy po roce 2000 začne komunitou kolovat následující vtip:
+Někdy v této době přišel bezejmenný webař na to, že když z tabulky odstraní rámečky, vznikne docela dobrá struktura, která může nést i složitější rozvržení stránek nebo jednotlivých komponent uvnitř. Někdy po roce 2000 začne komunitou kolovat následující vtip:
 
 – „Tr td td td tr td td td… – co je to?“  
 – „Vlak přijíždí do stanice?“  
-– „Ne to webař tvoří rozvržení stránky.“
+– „Ne, to webař tvoří rozvržení stránky.“
 
-Kód, který takto vznikal mě dodnes chodí v noci strašit. No však se sami podívejte:
+Kód, který takto vznikal, mě dodnes chodí v noci strašit. No však se sami podívejte:
 
 ```html
 <table width="100%" border="0"> 
@@ -69,7 +68,7 @@ Doufám, že až někdo tomuto neznámému webaři postaví pomník, bude text n
 
 ## 1999: Multi-column layout
 
-Håkon Lie a mnozí další přicházejí s prvním drafty specifikace pro vícesloupcový layout.
+Håkon Lie a mnozí další přicházejí s prvními drafty specifikace pro vícesloupcový layout.
 
 Když si ji prohlédnete, zjistíte, že se zápis v kódu od toho dnešního zase tak moc neliší.
 
@@ -180,7 +179,7 @@ grid-template-areas:
   "col1 col2";
 ```
 
-„Je to jako ASCII art pro vytváření šablony“ řekla prý Elika Etemad, editorka pro modul CSS grid Layout Module ve W3C, což sedí.
+„Je to jako ASCII art pro vytváření šablony,“ řekla prý Elika Etemad, editorka pro modul CSS grid Layout Module ve W3C, což sedí.
 
 S výsledkem se právě teď můžete podrobně seznámit na následujících stránkách.
 
@@ -189,6 +188,6 @@ Myslím, že se po dočtení knížky shodneme, že je to takové malé zemětř
 Pokud byste se do historie chtěli ponořit více, doporučím vám tyto dva články:
 
 - „The Story of CSS grid, from Its Creators“ od Aarona Gustafsona. [vrdl.in/vdghist](https://alistapart.com/article/the-story-of-css-grid-from-its-creators/)
-- „A Look Back at the History of CSS“ od Jay Hoffmanna. [vrdl.in/csshist](https://css-tricks.com/look-back-history-css/)
+- „A Look Back at the History of CSS“ od Jaye Hoffmanna. [vrdl.in/csshist](https://css-tricks.com/look-back-history-css/)
 
-My se od historie specifikací CSS layoutů podíváme na dnešní možnosti tvorby rozvržení. Ano, myslím ty, které nejsou předmětem této knížky. Ty, o kterých se slušní frontendisti už dnes raději nebaví.
+My se od historie specifikací CSS layoutů přesuneme  dnešním možnostem tvorby rozvržení. Ano, myslím ty, které nejsou předmětem této knížky. Ty, o kterých se už dnes slušní frontendisti raději nebaví.

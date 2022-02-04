@@ -12,7 +12,7 @@ Mají podporu v Chromu i Firefoxu a na Safari v tomto případě nemá smysl če
 
 ## Skuhrání nad optimalizací fontů {#skuhrani}
 
-Optimalizace načítání a vykreslování fontů je při práci na rychlosti webu jednou z komplikovanějších oblastí. Ne, že bychom neměli dostatek možností optimalizace, ale je jich hodně. Stejně jako různých možností, jak je pro různé designy a různé projekty vhodné fonty vykreslovat.
+Optimalizace načítání a vykreslování fontů je při práci na rychlosti webu jednou z komplikovanějších oblastí. Ne že bychom neměli dostatek možností optimalizace, ale je jich hodně. Stejně jako různých možností, jak je pro různé designy a různé projekty vhodné fonty vykreslovat.
 
 Načítání fontů je asynchronní a tak se i dále budeme potkávat s weby, na kterých to kodérky a kodéři nevyřešili dobře. Fonty se načítají pozdě. Po načtení finálního fontu se obrazovka razantně překreslí... Je to otrava.
 

@@ -22,7 +22,7 @@ c) V gridu nelze hodnoty `margin` používat, máme zde vlastnost `gap`
 a) Nijak, ve výsledku je to stejné  
 b) U `fr` nemusíme přemýšlet na počtem položek a box modelem  
 c) `%` není možné v gridu používat, rozbilo by to prohlížeče
-1. **Jak definovat mřížku od rozměrech 2×2 se stejnými rozměry buněk?**  
+1. **Jak definovat mřížku od rozměrech 2 × 2 se stejnými rozměry buněk?**  
 a) `grid-template: 1fr 1fr / 1fr 1fr`  
 b) `grid-define: 1fr 1fr / 1fr 1fr`  
 c) `grid-template: "two rows", "two cols"`
@@ -57,7 +57,7 @@ c) Implicitní je předem nedefinovaná, nastavuje se pomocí `grid-auto-*`
 b) Ne, ve formátovacím kontextu gridu se hodnoty neslučují  
 1. **Jak se liší jednotka `fr` od `%`?**  
 b) U `fr` nemusíme přemýšlet na počtem položek a box modelem
-1. **Jak definovat mřížku od rozměrech 2×2 se stejnými rozměry buněk?**  
+1. **Jak definovat mřížku od rozměrech 2 × 2 se stejnými rozměry buněk?**  
 a) `grid-template: 1fr 1fr / 1fr 1fr`
 1. **Co dělá vlastnost `grid-template-areas`?**  
 c) Pojmenovává oblasti, tedy jednu nebo více buněk

@@ -1,6 +1,6 @@
 # Grid vs. flex (vs. multicol)
 
-Nyní se zaměříme na jednotlivé systémy rozvržení a povězme si více o rozdílech mezi nimi. Začneme vícesloupcovým layoutem, který se z těch tří trochu vyjímá.
+Nyní se zaměříme na jednotlivé systémy rozvržení a povíme si více o rozdílech mezi nimi. Začneme vícesloupcovým layoutem, který se z těch tří trochu vyjímá.
 
 ## Multicolumn layout, expert na vícesloupcovou sazbu textu
 
@@ -10,15 +10,15 @@ Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobn
 
 ## Grid vs. flexbox
 
-Tyto dva systémy rozvržení dělají jádro knížky a proto se jim budeme věnovat s patřičnou péčí.
+Tyto dva systémy rozvržení tvoří jádro knížky, a proto se jim budeme věnovat s patřičnou péčí.
 
-Občas se setkávám s názorem, že [grid](css-grid.md) je novější a tak nahrazuje starší [flexbox](css-flexbox.md). Nenahrazuje. Potřebujete obojí. Naučte se obojí.
+Občas se setkávám s názorem, že [grid](css-grid.md) je novější a tak nahrazuje starší [flexbox](css-flexbox.md). Nenahrazuje. Potřebujete obojí. A obojí se naučte.
 
 Jsou mezi nimi však významné rozdíly. Podívejme se na ně.
 
 ## Jednorozměrný flexbox, vícerozměrný grid
 
-Grid autoři navrhli pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná, ať už svislá nebo vodorovná.
+Grid navrhli autoři pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná, ať už svislá nebo vodorovná.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-vs-flexbox-flexbox.jpg" width="1600" height="900" alt="…">
@@ -38,28 +38,28 @@ Jakmile je váš layout víceřádkový, typu mřížka, a nevystačíte si s po
 
 ### U flexboxu kraluje obsah, u gridu zase nastavený layout
 
-Grid je zaměřený více na layout, kdy se obsah musí vždy přizpůsobit definované mřížce. Layout je král a obsah, tedy text obrázky a tak dál, se mu musí přizpůsobit. Této filozofii se v odborné hantýrce říká „grid in“, takže „z mřížky směrem dovnitř“.
+Grid je více zaměřený na layout, kdy se obsah musí vždy přizpůsobit definované mřížce. Layout je král – a obsah, tedy text obrázky a tak dál, se mu musí přizpůsobit. Této filozofii se v odborné hantýrce říká „grid in“, takže „z mřížky směrem dovnitř“.
 
-Flexbox je naopak navržený pro situace, kdy se layout musí přizpůsobit obsahu. Výhodou je, že často nemusíte nastavovat parametry layoutu a díky rozměrům obsahu to nějak dopadne. Tento přístup k vykreslování layoutu naleznete pod pojmem „content out“, tedy „z obsahu směrem ven“.
+Flexbox je naopak navržený pro situace, kdy se layout musí přizpůsobit obsahu. Výhodou je, že nemusíte často nastavovat parametry layoutu a díky rozměrům obsahu to nějak dopadne. Tento přístup k vykreslování layoutu naleznete pod pojmem „content out“, tedy „z obsahu směrem ven“.
 
 Vyplývá to trochu i z jejich podstaty na úrovni kódu:
 
 * Když napíšete `display:flexbox`, potomci se poslušně seskupí do vodorovného rozvržení. Pro definici layoutu použijí prvky své vlastní rozměry.
 * Po napsání `display:grid` se nestane vůbec nic, dokud nedefinujete rozvržení pomocí vlastností řady `grid-template`. Tady vládne autor kódu a jeho mřížka, prvky stránky se musí přizpůsobit.
 
-Pokud tedy chcete umístit pár prvků vedle sebe a není nutné jim definovat rozměry, volte flexbox. Pokud položkám flexboxu složitě nastavujete pravidla chování rozměrů, pak asi potřebujete grid.
+Pokud tedy chcete umístit pár prvků vedle sebe a není nutné jim definovat rozměry, volte flexbox. Jestli položkám flexboxu složitě nastavujete pravidla chování rozměrů, pak asi potřebujete grid.
 
 Samozřejmě, že i z tohoto pravidla existuje řada výjimek. Mřížka například umí layout tvořený z obsahu, ale musíte si to nastavit.
 
-## Flexbox je více pro layout komponent, grid pro layout celé stránky
+## Flexbox slouží více layoutu komponent, grid zase layoutu celé stránky
 
 Tím, že je flexbox jednosměrný, bude se vám častěji hodit na zarovnávání „věcí“ vedle sebe nebo pod sebe. Užijete jej pro záložkové i globální navigace nebo například zarovnání jednořádkových formulářů. Více jej oceníte u menších komponent uvnitř stránky.
 
-Existují také studie, které zjistily, že flexbox se při použití obrovského množství elementů chová při vykreslování celé stránky [o trochu více líně](css-layout-vykon.md). Ne, že by to bylo zvlášť podstatné, ale opět to ukazuje na podstatu flexboxu – vycházet z rozměrů vykreslených prvků.
+Existují také studie, které zjistily, že flexbox se při použití obrovského množství elementů chová při vykreslování celé stránky [o trochu líněji](css-layout-vykon.md). Ne že by to bylo zvlášť podstatné, ale opět to ukazuje na podstatu flexboxu – vycházet z rozměrů vykreslených prvků.
 
 Náš milý grid je obousměrný, takže je vhodné s ním rozvrhnout například složitější formuláře, výpis produktů v kategorii e-shopu nebo celou stránku. Grid je příhodnější pro layout větších celků.
 
-Toto pravidlo samozřejmě neberte dogmaticky. Osobně, když se rozhoduji, jestli použít grid nebo flexbox, kladu si otázku:
+Toto pravidlo samozřejmě neberte dogmaticky. Osobně, když se rozhoduji, jestli použít grid, nebo flexbox, kladu si otázku:
 
 > Je možné přes rozvržení na některých šířkách okna položit neviditelnou vícerozměrnou mřížku?
 
@@ -84,9 +84,9 @@ Našli bychom toho více. Platí ale, že grid tyhle vlastnosti pokrývá více 
 
 ## Srovnání flexboxu a gridu
 
-Abychom si v tom udělali pořádek i vizuálně, připravil jsem si pro vás tady takovou pěknou tabulku. Berte to tak, že to velmi zjednodušuji:
+Abychom si v tom udělali pořádek i vizuálně, připravil jsem si pro vás takovou pěknou tabulku. Berte to tak, že to velmi zjednodušuji:
 
-|   Vlastnost              |   Flexbox   |   grid   |
+|   Vlastnost              |   Flexbox   |   Grid   |
 |:-------------------------|:-----------:|:--------:|
 |   Jednorozměrný layout   |       +     |     +    |
 |   Dvourozměrný layout    |             |     +    |

@@ -141,7 +141,7 @@ Vzpomínáte si na větu „Převádí váš existující web na AMP?“. Tak te
 
 ## Sanitace CSS a Tree Shaking {#sanitace}
 
-[CSS v AMPu](amp-css.md) trošku bolí, to ne, že by ne. A nejde jen o limit 75 kB na stránku a nemožnost používání `!important`. Vytváření zvláštní distribuce CSS pro AMP na Vzhůru dolů dalo autorovi dost zabrat, mohl by vám vyprávět.
+[CSS v AMPu](amp-css.md) trošku bolí, to ne že by ne. A nejde jen o limit 75 kB na stránku a nemožnost používání `!important`. Vytváření zvláštní distribuce CSS pro AMP na Vzhůru dolů dalo autorovi dost zabrat, mohl by vám vyprávět.
 
 <div class="related web-only" markdown="1">
 - [Co je AMP?](amp.md)

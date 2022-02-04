@@ -70,11 +70,11 @@ Takové [Container Queries](containe-queries.md) sice mají zatím jen experimen
 
 Dále jsem neodolal například u [subgridu](css-subgrid.md), který má zatím implementaci jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
 
-Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozorním a samozřejmě – knížka je hlavně o vlastnostech, které používat můžete bez problémů všude.
+Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozorním a samozřejmě – knížka je hlavně o vlastnostech, které můžete používat bez problémů všude.
 
 ### Jak hledat podporu a testovat ji
 
-Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlížečích, ale znáte to – časy se mění a prohlížeče s nimi. Je tedy prakticky jisté, že některé informace zde již budou zastaralé.
+Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlížečích, ale znáte to – časy se mění a prohlížeče s nimi. Je tedy takřka jisté, že některé informace zde zestárnou.
 
 <figure>
 <img src="../dist/images/original/vdlayout/caniuse-etc.jpg" width="1600" height="900" alt="CodePen">
@@ -83,9 +83,9 @@ Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlíže�
 </figcaption>
 </figure>
 
-Doporučuji vám brát v knize zmíněnou podporu v prohlížečích jako orientační a doplnit ji ještě dalšími zdroji:
+Doporučuji vám brát podporu v prohlížečích zmíněnou v knize jako orientační a doplnit ji ještě dalšími zdroji:
 
 1. Vždy se dívejte na aktuální stav podpory na webech [CanIUse.com](https://caniuse.com/) nebo MDN ([developer.mozilla.org](https://developer.mozilla.org/)).
-2. Testujte to. Buď v prohlížečích, které máte u sebe nebo v cloudových službách jako je [Browserstack.com](https://www.browserstack.com/) nebo [LambdaTest.com](https://www.lambdatest.com/).
+2. Testujte to. Buď v prohlížečích, které máte u sebe, nebo v cloudových službách, jako je [Browserstack.com](https://www.browserstack.com/) nebo [LambdaTest.com](https://www.lambdatest.com/).
 
 A jsme na konci úvodu. Teď už vám jen přeji, ať se vám knížka líbí a naučíte se mnoho nového!

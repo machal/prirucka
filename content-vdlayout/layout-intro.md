@@ -2,11 +2,11 @@
 
 Doba je rychlá a inovace zvýšily tempo řešení situací, které lidem dříve zabíraly velké množství času.
 
-Vezměme třeba seznamování. Když jsem byl v pubertě, bylo potřeba obléct sváteční kostkovanou košili, co nejpodobnější té, jakou nosil Kurt Cobain, vyrazit na vesnickou zábavu, investovat do vstupného, investovat do tekutin, které zajistí uvolněnost a zábavnost, předvést se v tanci na 2 Unlimited a celou dobu hlídat, až budou hrát Nothing Else Matters, v tu chvíli sprintovat pro dívku snů… Bylo to složité a v mém případě s nejistým výsledkem.
+Vezměme třeba seznamování. Když jsem byl v pubertě, bylo potřeba obléct sváteční kostkovanou košili, co nejpodobnější té, jakou nosil Kurt Cobain, vyrazit na vesnickou zábavu, investovat do vstupného a do tekutin, které zajistí uvolněnost a zábavnost, předvést se v tanci na 2 Unlimited a celou dobu hlídat, až budou hrát Nothing Else Matters, a v tu chvíli sprintovat pro dívku snů… Bylo to složité a v mém případě s nejistým výsledkem.
 
 Dnešní seznamovací aplikace jako Tinder jsou s efektivitou úplně jinde, člověk párkrát klikne a je to.
 
-V první kapitole s tématem potřebujeme nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít rychle. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem, třemi hlavními hrdiny téhle knížky.
+V první kapitole potřebujeme s tématem nějak začít, vytvořit si první náčrt mapy, kterou se vám pokusím během čtení knížky vytvářet v hlavě. A bylo by nejlepší začít svižně. Tohle tedy bude rychlé seznámení s gridem, flexem a vícesloupcovým layoutem, třemi hlavními hrdiny této knížky.
 
 Tohle bude Tinder pro systémy layoutu v CSS.
 
@@ -19,7 +19,7 @@ Tohle bude Tinder pro systémy layoutu v CSS.
 
 Zatímco na skutečném Tinderu máte k ruce vystajlované fotky možných partnerek nebo partnerů, CSS layouty jsou sexy asi jako návod na sestavení nábytku z IKEA.
 
-Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektuálové, kteří na vás mluví řečí symbolů. Žádné obrázky z posiloven, žádné „duckface“, žádné výstřihy a dokonce ani žádné instagramové filtry…
+Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektuálové, kteří na vás mluví řečí symbolů. Žádné obrázky z posiloven, žádné „duckface“, žádné výstřihy, a dokonce ani žádné instagramové filtry…
 
 Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něco říct:
 
@@ -29,25 +29,25 @@ Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něc
 
 Tak a teď máte nové kamarády, gratuluji vám. Dejte jim odběr.
 
-V knížce asi zjistíte, že první pohled někdy klame a to, co vám tady tvrdím, nemusí být pravda vždycky. Od toho jsou ale knížky. Aby vás zbavili povrchního pohledu a ukázaly všechny „ale“.
+V knížce asi zjistíte, že první pohled někdy klame a to, co vám tady tvrdím, nemusí být vždycky pravda. Od toho jsou ale knížky. Aby vás zbavily povrchního pohledu a ukázaly všechna „ale“.
 
 ## Box Align, čtvrtý vzadu
 
 Ta paralela s Tinderem samozřejmě trošku skřípe, ale pojďme u ní ještě chvilku zůstat.
 
-Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (on) a její nejlepší kámoška (kámoš). Pro jistotu.
+Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (on) s nejlepší kámoškou (kámošem), pro jistotu?
 
 Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct Box Align.
 
-[CSS Box Alignment](css-box-alignment.md) je specifikace, která obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností jako je `justify-items` nebo `align-self` se systémy layoutu, a hlavně flexbox a grid, neobejdou a na rande samy nevyrazí.
+[CSS Box Alignment](css-box-alignment.md) je specifikace, která obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je `justify-items` nebo `align-self`, se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí.
 
 ## Pojďme si je otestovat
 
-Pokud bychom byli při seznamování v reálném životě důslední, chtěli bychom vidět chování partnerky nebo partnera různých životních situacích. Chtěli bychom co nejrychleji a nejefektivněji zjistit, co je zač.
+Pokud bychom byli při seznamování v reálném životě důslední, chtěli bychom vidět chování partnerky nebo partnera v různých životních situacích. Chtěli bychom co nejrychleji a nejefektivněji zjistit, co je zač.
 
-Tady se proto nabízí spíše paralela s přijímacím pohovorem na pracovní pozici a testy, které zaměstnavatelé dávají zaměstnancům.
+Tady se proto nabízí spíše paralela s přijímacím pohovorem na pracovní pozici a testy, které zaměstnavatelé svým potenciálním zaměstnancům dávají.
 
-My se teď pokusíme na jednoduchých příkladech ukázat, co je který systém rozvržený zač. Ostatně takhle to budeme dělat v celé knížce.
+My se teď pokusíme na jednoduchých příkladech ukázat, co je který systém rozvržení zač. Ostatně takhle to budeme dělat v celé knížce.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-layout-intro-examples.jpg" width="1600" height="900" alt="Zadání příkladů pro Flex, grid, Multicol">
@@ -125,11 +125,11 @@ Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovn
 </figcaption>
 </figure>
 
-Vytvořili jsme rozvržení, kde prvek `figure__image` bude zabírat jednu třetinu šířky (`flex:1`), a prvek `figure__figcaption` vyplní zbylé dvě třetiny (`flex:2`).
+Vytvořili jsme rozvržení, kde prvek `figure__image` bude zabírat jednu třetinu šířky (`flex:1`) a prvek `figure__figcaption` vyplní zbylé dvě třetiny (`flex:2`).
 
 Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 
-Zájemce nyní pošlu na zdrojové kódy na službě CodePen, což ostatně v knížce budu dělat často.
+Zájemce nyní pošlu na zdrojové kódy ve službě CodePen, což ostatně v knížce budu dělat často.
 
 CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
@@ -170,13 +170,13 @@ Máme tedy rodiče (`box`) a tři prvky v něm. Jak z nich uděláme kýžený t
 
 Pomocí `display:grid` „zapneme“ mřížku, ale ještě se (na rozdíl od flexboxu) nic nestane.
 
-Layout vzniká až prostřednictvím [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md), které definuje šablonu pro počet a rozměry sloupců. Zápisem `2fr 1fr` pak rozděluji plochu na sloupečky o šířce dvou třetin a jedné třetiny. Je to podobné jako jsem to udělal u flexboxu pomocí `flex:2` a `flex:1`.
+Layout vzniká až prostřednictvím [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md), která definuje šablonu pro počet a rozměry sloupců. Zápisem `2fr 1fr` pak rozděluji plochu na sloupečky o šířce dvou třetin a jedné třetiny. Je to podobné, jako jsem to udělal u flexboxu pomocí `flex:2` a `flex:1`.
 
 [Vlastnost `gap`](css-gap.md) zde slouží k vykreslení mezery mezi prvky, v našem případě o šířce `1rem`.
 
-Pokud bychom zůstali u tohoto kódu, kýženého layoutu bychom nedosáhli. Jde o rozvržení 2×2, tedy čtyři buňky. V našem HTML ale jako potomky prvku `box` máme jen tři HTML prvky.
+Pokud bychom zůstali u tohoto kódu, kýženého layoutu bychom nedosáhli. Jde o rozvržení 2 × 2, tedy čtyři buňky. V našem HTML ale jako potomky prvku `box` máme jen tři HTML prvky.
 
-Díky „autoplacementu“, vlastnosti gridu, která prvky automaticky umísťuje do mřížky by byl obrázek v první buňce, text v druhé a cenovka ve třetí. Čtvrtá buňka by zůstala prázdná a naše nadšení pro grid by skončilo uprostřed prvního rande.
+Díky „autoplacementu“, vlastnosti gridu, která prvky automaticky umísťuje do mřížky, by byl obrázek v první buňce, text v druhé a cenovka ve třetí. Čtvrtá buňka by zůstala prázdná a naše nadšení pro grid by skončilo uprostřed prvního rande.
 
 Automatické umístění zrušíme tímto kódem:
 
@@ -188,12 +188,12 @@ Automatické umístění zrušíme tímto kódem:
 
 [Vlastnost `grid-column`](css-grid-row-column.md) slouží k výslovnému umístění určitého prvku na konkrétní místo mřížky. V tomto případě mezi první a třetí linku mřížky.
 
-Co je ta linka? Nejlépe to uvidíme na následujícím obrázku, který je zároveň doporučením, abyste věnovali pozornost [vývojářským nástrojům prohlížečů](css-layout-devtools.md). Ty umí být při práci s layouty opravdovými pomocníky.
+Co je zač ta linka? Nejlépe to uvidíme na následujícím obrázku, který je zároveň doporučením, abyste věnovali pozornost [vývojářským nástrojům prohlížečů](css-layout-devtools.md). Ty umí být při práci s layouty opravdovými pomocníky.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-layout-intro-examples-grid.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
-*DevTools Firefoxu (ale i Chrome) krásně ukáží, co je myšleno termínem „linka gridu“.*
+DevTools Firefoxu (ale i Chromu) krásně ukážou, co je myšleno termínem „linka gridu“.
 </figcaption>
 </figure>
 
@@ -205,7 +205,7 @@ Nerad bych vám zatajil poslední část kódu. Sice nemá s moderními CSS layo
 }
 ```
 
-I tady máte možnost projít si, vyzkoušet a případně upravit kompletní zdrojový kód. Následuje odkaz na CodePen.
+I tady máte možnost projít si, vyzkoušet a případně upravit kompletní zdrojový kód.
 
 CodePen: [cdpn.io/e/YzZqmwj](https://codepen.io/machal/pen/YzZqmwj?editors=1100)
 
@@ -234,7 +234,7 @@ V HTML máme 15 položek seznamu, ale pro potřeby ukázky v knížce jsem si vy
 
 S pomocí flexboxu ani gridu bychom zde neuspěli, protože pro rozdělení do sloupců bychom museli mezi jednotlivé `<li>` vkládat prvky jako `<div>`, které by layout nesly.
 
-Navíc bychom zde s pomocí těchto dvou typů rozvržení nebyli schopni snadno dosáhnout automatického generování vhodného počtu sloupečků. Layout bychom prostě museli museli doslovně definovat.
+Navíc bychom zde s pomocí těchto dvou typů rozvržení nebyli schopni snadno dosáhnout automatického generování vhodného počtu sloupečků. Layout bychom prostě museli doslovně definovat.
 
 Toto je síla CSS Multicolumn Layout. Chcete rozvržení o šířce sloupce maximálně `15rem` se šířkou mezery `1rem`? Není nic snazšího:
 
@@ -256,18 +256,16 @@ K [vlastnosti `columns`](css-multicol-columns.md) se ještě dostaneme, vlastnos
 
 Ten vícesloupcový layout vypadá skvěle, viďte? Než jej ale pozvete na druhé rande, měli byste vědět, že se hodí opravdu hlavně jen pro textový obsah, takže na nějaké parády se všemi `div`y světa zde raději zapomeňte.
 
-I zde je pro zájemce k dispozici ukázka na službě CodePen.
-
 CodePen: [cdpn.io/e/JjWXgNL](https://codepen.io/machal/pen/JjWXgNL?editors=1100)
 
 ## Poznámka k jednotkám
 
-Už v první části knížky jsem použil několik jednotek a myslím, že by bylo vhodné je trošku předstvit, spolu s jejich kolegyněmi, které budu používat nejčastěji použiji:
+Už v první části knížky jsem použil několik jednotek a myslím, že by bylo vhodné je trošku představit, spolu s jejich kolegyněmi, které budu používat nejčastěji:
 
-- `rem` (root em) je velikost písma v dokumentu. Pokud nenastavíme jinak, jde většinou o `16px`. Používám všude, kde se hodí vycházet z velikosti písma.
-- `em` (em) je velikost písma v daném prvku. Na rozdíl od `rem` ji může zvětšit kaskáda v CSS, například uvnitř nadpisů. Používám pro lokální změnu velikosti písma nebo pro Media Queries.
-- `%` (procenta). Používám pro změnu výchozí velikosti v dokumentu a občas pro šířky či výšky v layoutu.
-- `px` (CSS pixely). Používám hlavně u dekorací jako je šířka rámečku.
+- `rem` (root em) je velikost písma v dokumentu. Pokud nenastavíme jinak, jde většinou o `16px`. Používám ji všude, kde se hodí vycházet z velikosti písma.
+- `em` (em) je velikost písma v daném prvku. Na rozdíl od `rem` ji může zvětšit kaskáda v CSS, například uvnitř nadpisů. Používám ji pro lokální změnu velikosti písma nebo pro Media Queries.
+- `%` (procenta). Používám je pro změnu výchozí velikosti v dokumentu a občas pro šířky či výšky v layoutu.
+- `px` (CSS pixely). Používám je hlavně u dekorací, jako je šířka rámečku.
 
 Velice často zde také budu používat bezjednotkového hodnoty, které určují podíl prvku na rozměrech celku. Jde o čísla ve vlastnosti `flex`, zde již použité, hodnoty s jednotkou `fr` ve gridu. Ale nebudeme předbíhat.
 
