@@ -2,7 +2,7 @@
 
 V metrikách a událostech, které se týkají načítání a vykreslování stránky je děsný nepořádek. Pokusím se trochu uklidit.
 
-Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledujete. Ostatní pošlu na konec článku do [závěrečných doporučení](#doporuceni).
+Bude to užitečné hlavně pro ty z vás, kteří obor [rychlosti načítání](https://www.vzhurudolu.cz/rychlost-nacitani) trochu více sledujete. Ostatní odkážu na konec článku do [závěrečných doporučení](#doporuceni).
 
 A teď už vzhůru na ty metriky. Tenhle text slouží totiž především jako rozcestník.
 

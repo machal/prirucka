@@ -99,7 +99,7 @@ Raději připomínám, že tohle opravdu není pokus o *blacklist* zastaralých 
 
 ### Prohlížeče
 
-HTTP/2 je podporované prakticky všemi moderními prohlížeči. Podívejte se [na Can I use](https://caniuse.com/#feat=http2). Protokol nepodporují jen Explorery 10 a starší a prohlížeče na čtyřkových Androidech. U webu s běžnou českou návštěvností [odhadem do jednoho procenta návštěvnosti](prohlizece.md).
+HTTP/2 je podporované prakticky všemi moderními prohlížeči. Podívejte se [na CanIUse](https://caniuse.com/#feat=http2). Protokol nepodporují jen Explorery 10 a starší a prohlížeče na čtyřkových Androidech. U webu s běžnou českou návštěvností [odhadem do jednoho procenta návštěvnosti](prohlizece.md).
 
 Nový protokol je ale zpětně kompatibilní, takže obstaróžním prohlížečům web přijde na starém dobrém HTTP/1.1. Raději tedy zmíním, že váš frontend optimalizovaný pro HTTP/2 může být na starých křápech o chlup pomalejší. Ale pocítí to opravdu jen minorita uživatelů.
 

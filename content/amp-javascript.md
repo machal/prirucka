@@ -230,7 +230,7 @@ Jeden `amp-script` může mít maximální 10 kB, všechny dohromady ve stránc
 
 Komponenta `amp-script` podporuje populární javascriptové frameworky jako React, Angular, Vue.js… nebo jQuery, pokud jinak nedáte.
 
-`amp-script` je velké téma, určitě se k němu ještě vrátíme. V tuhle chvíli vás alespoň pošlu na další zdroje:
+`amp-script` je velké téma, určitě se k němu ještě vrátíme. V tuhle chvíli vás alespoň odkážu na další zdroje:
 
 - `amp-script` v dokumentaci: [vrdl.in/ampscript](https://amp.dev/documentation/components/amp-script)
 - Paul Bakaus ukazuje AMP jako frontendový framework na WebExpo 2019: [vrdl.in/ampexpo](https://slideslive.com/38919320/maximizing-web-developer-productivity-with-amp)

@@ -129,7 +129,7 @@ Vytvořili jsme rozvržení, kde prvek `figure__image` bude zabírat jednu třet
 
 Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 
-Zájemce nyní pošlu na zdrojové kódy ve službě CodePen, což ostatně v knížce budu dělat často.
+Zájemce nyní odkážu na zdrojové kódy ve službě CodePen, což ostatně v knížce budu dělat často.
 
 CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 

@@ -6,7 +6,7 @@ Shrnutí všech kapitol jsem pro vás připravil ve formě kvízu. Testy jsou sk
 
 První test je rozehřívací.
 
-1. **K čemu slouží CSS Multicolum Layout?**  
+1. **K čemu slouží CSS Multicolumn Layout?**  
 a) ke flexibilnímu rozložení položek vedle sebe  
 b) k automatické vícesloupcové sazbě textu  
 c) k rozložení do do tvaru mřížky
@@ -23,7 +23,7 @@ c) Microsoft Silverlight
 
 Řešení:
 
-1. **K čemu slouží CSS Multicolum Layout?**  
+1. **K čemu slouží CSS Multicolumn Layout?**  
 b) k automatické vícesloupcové sazbě textu
 1. **Co udělá zápis `display:flex`?**  
 c) vykreslí všechny potomky prvku vedle sebe

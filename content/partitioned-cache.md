@@ -42,7 +42,7 @@ Padouch mohl z historie procházení uživatele zjistit, zda navštívil konkré
 - _Sledování uživatele napříč weby._  
 Mezipaměť bylo možné použít k ukládání identifikátorů, které pak sloužily ke sledování uživatele napříč weby.
 
-Zájemce o více informací pošlu do textu [Explainer - Partition the HTTP Cache](https://github.com/shivanigithub/http-cache-partitioning) a my ostatní se pojďme podívat, jak to funguje.
+Zájemce o více informací odkážu do textu [Explainer - Partition the HTTP Cache](https://github.com/shivanigithub/http-cache-partitioning) a my ostatní se pojďme podívat, jak to funguje.
 
 ## Jak to přesně funguje a jaká je podpora? {#fungovani}
 

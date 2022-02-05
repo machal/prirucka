@@ -26,7 +26,7 @@ Na základě předchozí fáze navrhneme drátěné modely rozhraní, prototypy 
 
 Ve chvíli, kdy odtud vyjde něco hmatatelného, přecházíme opět do fáze průzkumu a definice. Testujeme výsledky s uživateli, analyzujeme podle dat z Google Analytics nebo prostě podrobujeme vlastnímu kritickému pohledu. Vyhodnocujeme. Začali jsme tím další kolečko průzkumu, definice a následného návrhu s realizací.
 
-Takhle stručně mně to pro potřeby knížky stačí. Výhrady zkušených webařů, nespokojených s mou zjednodušující interpretací, tady asi slyšíte až k vám domů. My ale můžeme pokračovat dál, protože ty zvědavé pošlu k dalším zdrojům.
+Takhle stručně mně to pro potřeby knížky stačí. Výhrady zkušených webařů, nespokojených s mou zjednodušující interpretací, tady asi slyšíte až k vám domů. My ale můžeme pokračovat dál, protože ty zvědavé odkážu k dalším zdrojům.
 
 ## Další zdroje o procesu návrhu webu
 

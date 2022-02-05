@@ -1,8 +1,8 @@
 # Přístupnost a CSS layout: pozor na vizuální pořadí
 
-Přístupnost je důležitá disciplína, s jejíž pomocí vývojáři mohou vyjít vstříc různým skupinám lidí, a jen zdánlivě se týká pouze hendikepovaných minorit jako jsou zrakově postižení.
+Přístupnost je důležitá disciplína, s jejíž pomocí mohou vývojáři vyjít vstříc různým skupinám lidí a jež se jen zdánlivě týká pouze hendikepovaných minorit, jako jsou zrakově postižení.
 
-Díky přístupnosti se zkrátka mohou různé skupiny lidí dostat k informacím webu bez velkých překážek.
+Díky přístupnosti se zkrátka mohou různé skupiny lidí dostat k informacím na webu bez velkých překážek.
 
 V nových CSS layoutech může přístupnost pokazit poněkud kontroverzní možnost změny pořadí prvků ve stránce.
 
@@ -23,9 +23,9 @@ Také proto je ve specifikaci obsaženo toto důrazné varování:
 Logické pořadí je zpravidla pořadí  zápisu kódu a jeho využití si můžete představit v těchto kontextech konzumace stránky:
 
 - _Roboti_  
-Například stroje vyhledávačů jako je Google. Roboti postupují podle pořadí v HTML nebo DOM.
+Například stroje vyhledávačů, jako je Google. Roboti postupují podle pořadí v HTML nebo DOM.
 - _Sekvenční navigace stránkou_  
-Tento typ procházení využívají například uživatelé odečítačů obrazovky nebo uživatelé, kteří z nějakého důvodu nemohou použít jiný způsob navigace - ať už z důvodu trvalého, či dočasného postižení rukou jako je třeba zlomenina.
+Tento typ procházení využívají například uživatelé odečítačů obrazovky nebo uživatelé, kteří z nějakého důvodu nemohou použít jiný způsob navigace – ať už z důvodu trvalého či dočasného postižení rukou, jako je třeba zlomenina.
 - _Hlasem a jinými médii_  
 Přeskupení vizuálního pořadí nezmění řazení v nevizuálních médiích, například v řeči.
 
@@ -35,20 +35,18 @@ Ve specifikaci mřížky se dále píše:
 
 > CSS grid dává autorům velkou moc přeskupit dokument. Nejedná se však o náhradu za správné uspořádání zdroje dokumentu.
 
-Něco vám řeknu. Specifikace má pravdu.
-
-Pokud chcete pro přístupnost něco udělat, rozhodně dbejte na to, aby pořadí v kódu dávalo smysl, pokud byste stránku četli bez stylů.
+Něco vám řeknu. Specifikace má pravdu. Pokud chcete pro přístupnost něco udělat, rozhodně dbejte na to, aby pořadí v kódu dávalo smysl v případě, kdy byste stránku četli bez stylů.
 
 ## Dotčené vlastnosti {#vlastnosti}
 
 Problém se týká všech CSS vlastností, které mohou v nových systémech rozvržení ovlivnit vizuální pořadí:
 
-- [Vlastnost `order`](css-order.md), která změní způsob automatického umisťování položek.
-- [Deklarace `grid-auto-flow:dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak než jsou uvedeny v DOM.
+- [Vlastnost `order`](css-order.md), která změní způsob automatického umísťování položek.
+- [Deklarace `grid-auto-flow:dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak, než jsou uvedeny v DOM.
 - [Vlastnost `grid-area`](css-grid-area.md), která umístí položky do konkrétního místa mřížky a opět nemusí respektovat pořadí ve zdroji.
 - [Vlastnost `flex-direction`](css-flex-direction.md) a hodnoty, které převracejí pořadí – `row-reverse` a `column-reverse`.
 
-Možností, jak přeskupit obsah je samozřejmě více a vztáhnout to můžeme i na starý dobrý `float`, takže tento text berte jako obecné varování.
+Možností, jak přeskupit obsah, je samozřejmě více a vztáhnout to můžeme i na starý dobrý `float`, takže tento text berte jako obecné varování.
 
 ## Příklad {#priklad}
 
@@ -71,7 +69,7 @@ Pojďme si to ukázat na jednoduchém demu postaveném na vlastnosti `order` a [
 </div>
 ```
 
-Jak vidíte, tentokrát jsem vyměnil DIVy za odkazy a to proto, abychom mohli obsahem navigovat pomocí tabulátoru.
+Jak vidíte, tentokrát jsem vyměnil `div`y za odkazy a to proto, abychom mohli obsahem navigovat pomocí tabulátoru.
 
 Kontejner (`.container`) je obyčejný flexbox, ale za ukázání kódu stojí předpis pro třetí položku:
 
@@ -150,7 +148,7 @@ Pořadí navigace je nyní správné, protože odpovídá logickému uspořádá
 
 Zdá se, že problém jsme vyřešili. Pořadí v HTML a pořadí navigační se neliší.
 
-Jenže chyba lávky! Otázka, totiž zní: Jak moc je `tabindex` pro tyto případy v praxi použitelný?
+Jenže chyba lávky! Otázka totiž zní: Jak moc je `tabindex` pro tyto případy v praxi použitelný?
 
 <!-- AdSnippet -->
 
@@ -158,7 +156,7 @@ Atribut `tabindex` totiž nastavuje pořadí pro *celý* dokument, takže jakmil
 
 A pak – neumím si představit, že bychom kvůli jedné komponentě s `order` natvrdo měnili pořadí `tabindex` pro celou stránku.
 
-Takže z mého pohledu je `tabindex` pro opravu tohoto problému použitelný jen velmi omezeně.
+Z mého pohledu je tedy `tabindex` pro opravu tohoto problému použitelný jen velmi omezeně.
 
 Ale zkusit si to v CodePenu klidně můžete.
 
@@ -178,7 +176,7 @@ Odlišení pořadí navigačního od vizuálního je možné ve flexboxu a teď 
 
 Bohužel se to zdá jako aktuálně nevyřešitelný problém, protože jej myslím nijak konkrétně neřeší specifikace, natož pak prohlížeče.
 
-Pošlu vás na další zdroje, ale nic veselého se tam nedozvíte:
+Odkážu vás na další zdroje, ale nic veselého se tam nedozvíte:
 
 - Varování ve specifikaci flexboxu. [w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/#order-property)
 - Totéž ve specifikaci CSS gridu. [drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/#order-accessibility)
@@ -187,6 +185,6 @@ Pošlu vás na další zdroje, ale nic veselého se tam nedozvíte:
 - Rachel Andrew: „Grid, content re-ordering and accessibility“. [rachelandrew.co.uk](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility)
 - Léonie Watson: „Flexbox & the keyboard navigation disconnect“. [tink.uk](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
 
-Komunitu, tedy vývojáře, lidi kolem webových specifikací a prohlížečů, zde ještě čeká dost práce. Jednoho by to v roce 2021 překvapilo.
+Komunitu, tedy vývojáře, lidi kolem webových specifikací a prohlížečů, zde ještě čeká dost práce. Jednoho by to v roce 2022 překvapilo.
 
-Ponaučení do praxe zní: Jakmile použijete některou z vlastností, která rozpojuje pořadí vizuální od pořadí logického, přemýšlejte, jak velký vliv to bude mít na přístupnost a hlavně vaše uživatele tam venku.
+Ponaučení do praxe zní: Jakmile použijete některou z vlastností, která rozpojuje pořadí vizuální od pořadí logického, přemýšlejte, jak velký vliv to bude mít na přístupnost a hlavně na vaše uživatele tam venku.
