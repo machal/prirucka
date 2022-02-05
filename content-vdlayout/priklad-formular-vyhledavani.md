@@ -2,7 +2,7 @@
 
 V této ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkoušíme opět něco ze zarovnávání boxů ([CSS Box Alignment](css-box-alignment.md)) a oba systémy layoutu – [flexbox](css-flexbox.md) i [grid](css-grid.md).
 
-Zadání přichází s návrhovým vzorem, na který každá kodérka a každý kodér jednou narazí.
+Zadání přichází s návrhovým vzorem, na který jednou narazí každá kodérka i každý kodér.
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-vyhledavani-zadani.jpg" width="1600" height="900" alt="Příklad s vyhledáváním">
@@ -11,7 +11,7 @@ Zadání přichází s návrhovým vzorem, na který každá kodérka a každý 
 </figcaption>
 </figure>
 
-Jak asi vidíte, jde o vyhledávací formulář obsahující tři prvky – textovým popisek `<label>`, textovým vstup `<input>` a tlačítko `<button>`.
+Jak asi vidíte, jde o vyhledávací formulář obsahující tři prvky – textový popisek `<label>`, textový vstup `<input>` a tlačítko `<button>`.
 
 HTML vypadá takto:
 
@@ -35,7 +35,7 @@ Zadání je následující:
 - V druhém případě mají popisek a tlačítko šířku obsahu a textový vstup se roztahuje, aby vyplnil maximální šířku.
 - V obou případech je mezi prvky mezera o polovině `rem`.
 
-Přikládám výchozí CodePen. Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a začít.
+Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a začněte.
 
 CodePen: [cdpn.io/e/qBZzMRW](https://codepen.io/machal/pen/qBZzMRW?editors=1100)
 
@@ -53,9 +53,9 @@ Nejprve si připravíme jeviště pro tvorbu layoutu:
 }
 ```
 
-Rodičovský prvek musí být flexboxem a tak pomocí [vlastnosti `display`](css-display.md) nastavíme hodnotu `flex`.
+Rodičovský prvek musí být flexboxem, a tak pomocí [vlastnosti `display`](css-display.md) nastavíme hodnotu `flex`.
 
-Asi je evidentní, že pomocí `gap:0.5rem` přidáváme mezery mezi jednotlivé prvky layoutu.
+Snad je evidentní, že pomocí `gap:0.5rem` přidáváme mezery mezi jednotlivé prvky layoutu.
 
 ### Zarovnání na účaří
 
@@ -63,7 +63,7 @@ Asi je evidentní, že pomocí `gap:0.5rem` přidáváme mezery mezi jednotlivé
 
 Hodnota `baseline` je velmi zajímavá – umožní nám zarovnávat prvky na _účaří_. Jde o typografický pojem, pod kterým si můžete představit neviditelnou linku, na kterou se zapisují jednotlivé znaky, asi jako jste to dělali ve škole do sešitu. Jinak se jí ještě říká _základní dotažnice_, případně anglicky _baseline_.
 
-Typografické elementy, jako je text a formulářové prvky typu vstupní pole nebo tlačítka, je pro lepší čitelnost lepší zarovnat právě na účaří, nikoliv třeba doprostřed.
+Typografické elementy, jako je text a formulářové prvky typu vstupní pole nebo tlačítka, je pro lepší čitelnost vhodnější zarovnat právě na účaří, nikoliv třeba doprostřed.
 
 ### Menší displeje
 
@@ -93,7 +93,7 @@ Moje komentáře:
 
 ### Větší displeje
 
-Kód této části bude o něco jednodušší. Přirozené rozvržení, které nám vznikne nastavením `display:flex` zde jen trochu upravíme.
+Kód této části bude o něco jednodušší. Přirozené rozvržení, které nám vznikne nastavením `display:flex`, zde jen trochu upravíme.
 
 ```css
 @media (min-width: 31.25em) {
@@ -178,8 +178,8 @@ Kód pro menší viewporty je díky propracovanosti gridu velmi jednoduchý:
 Co jsme zde udělali?
 
 - Šabloně layoutu ([vlastnosti `grid-template-`](css-grid-template-rows-columns.md)) nastavíme směr do řádků (`-rows`).
-- V layoutu pak máme 3 prvky a každý si ponechá šířku podle obsahu, což definujeme klíčovým slovem `auto`.
-- Abychom nemuseli zapisovat `grid-template-rows:auto auto auto` použijeme [funkci `repeat()`](css-repeat.md), která nám to zápisem `repeat(3, auto)` usnadní.
+- V layoutu pak máme tři prvky a každý si ponechá šířku podle obsahu, což definujeme klíčovým slovem `auto`.
+- Abychom nemuseli zapisovat `grid-template-rows:auto auto auto`, použijeme [funkci `repeat()`](css-repeat.md), která nám to zápisem `repeat(3, auto)` usnadní.
 
 Je to jednoduché, že? Ale teď vám řeknu, že vás u této ukázky trošku tahám za nos. Mohlo by to totiž být ještě jednodušší.
 
@@ -221,26 +221,26 @@ Kompletní rozvržení bychom tedy gridem zapsali takto:
 }  
 ```
 
-Není to prostě _sexy_?
+Není tohle opravdu sexy?
 
 CodePen: [cdpn.io/e/poPebVB](https://codepen.io/machal/pen/poPebVB?editors=1100)
 
-Došli jste ke stejnému nebo jinému řešení? V čem je to vaše lepší? Klidně se mi ozvěte.
+Došli jste ke stejnému, anebo jinému řešení? V čem je to vaše lepší? Klidně se mi ozvěte.
 
 ## Media nebo Container Queries?
 
-Tady se samozřejmě musím pozastavit u využití dotazů na média - [Media Queries](media-queries.md). V předchozí kapitole vcelku jasně píšu, že ty se hodí hlavně pro rozvržení celé stránky.
+Tady se samozřejmě musím pozastavit u využití dotazů na média – [Media Queries](media-queries.md). V předchozí kapitole vcelku jasně píšu, že ty se hodí hlavně pro rozvržení celé stránky.
 
-Jenže v tomto případě jsme se zaměřili na jednu malou komponentu. Tu navíc mohou naší zlovolní vývojářští a designérští kolegové umísťovat do různých míst stránek, přesně podle dnešního způsobu práce se systémy komponent.
+Jenže v tomto případě jsme se zaměřili na jednu malou komponentu. Tu navíc mohou naši zlovolní vývojářští a designérští kolegové umísťovat do různých míst stránek, přesně podle dnešního způsobu práce se systémy komponent.
 
 Zde by se prostě daleko víc hodilo namísto dotazů na média a klíčového slova `@media` hodilo použít dotazy na rodičovský element a slovo `@container`. Jak ale už také víte, [Container Queries](container-queries.md) jsou v době psaní jen zkušebně implementovány v prohlížeči Chrome a vůbec není jisté, že se ujmou.
 
 ## Co jsme se naučili?
 
-Rád bych tady ještě shrnul, co jsem se pokusil vás tímto příkladem naučit, nebo vám alespoň připomenout:
+Rád bych tady ještě shrnul, co jsem se pokusil vás tímto příkladem naučit nebo vám to alespoň připomenout:
 
 1. Pro rozvržení jednoduše skládaná do jednoho nebo druhého směru, ve kterých se hodně pracuje s mezerami, se více hodí CSS grid.
-2. Dozvěděli jsme se, že grid umí automaticky vytvářet řádku a členy těchto řádků roztahuje do plné šířky, takže to nepotřebujeme dělat ručně, jako u flexboxu.
+2. Dozvěděli jsme se, že grid umí automaticky vytvářet řádku a členy těchto řádků roztahuje do plné šířky, takže to nepotřebujeme dělat ručně jako u flexboxu.
 3. Naučili jsme se vlastnost `align-items` a hodnotu `baseline`, velmi užitečnou pro vyrovnávání typografických elementů.
 4. Zpochybnili jsme používání Media Queries pro rozvržení komponent, ale to je tak všechno, co s tím teď můžeme prakticky dělat.
 

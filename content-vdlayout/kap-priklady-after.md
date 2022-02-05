@@ -9,10 +9,11 @@ c) vlastnost neexistuje, správně je `grid-template-cols`
 1. **Co dělá funkce `minmax()`?**  
 a) vrací největší z atributů a používá se pro šířku a výšku prvku  
 b) vrací největší a nejmenší z atributů a používá se pro šířku a výšku prvku  
-c) vrací největší z atributů a používá se pro jakoukoliv CSS vlastnost
+c) vrací největší z atributů a používá se pro jakoukoliv vlastnost CSS
 1. **Jakou funkci má vlastnost `grid-area`?**  
 a) pojmenovává oblast gridu  
-b) zajistí umístění prvku do pojmenované oblasti gridu
+b) zajistí umístění prvku do pojmenované oblasti gridu  
+c) vrací všechny názvy oblastí v daném layoutu
 1. **Co dělá vlastnost `grid`?**  
 a) slouží k zapnutí layoutu do mřížky  
 b) jde o zkratku pro definici vzhledu mřížky  
@@ -21,7 +22,7 @@ c) tato vlastnost neexistuje
 a) dvanáct sloupečků o šířce `1fr`  
 b) vykreslil by dvanáct sloupečků, ale jednotka `fr` neexistuje  
 c) je to celé velký chyták, nic takového neexistuje
-1. **Jak gridem vycentrovat boxík uvnitř boxík?**  
+1. **Jak gridem vycentrovat boxík uvnitř boxu?**  
 a) `display:grid;place-items:center;`  
 b) `display:grid;align-items:center;`  
 c) stačí jen `display:grid`
@@ -41,14 +42,14 @@ c) sloupečky libovolného počtu se šířkou přibližně `150px` a mezerou `1
 1. **K čemu slouží vlastnost `grid-template-columns`?**  
 a) definuje šablonu pro rozvržení sloupců gridu
 1. **Co dělá funkce `minmax()`?**  
-c) vrací největší z atributů a používá se pro jakoukoliv CSS vlastnost
+c) vrací největší z atributů a používá se pro jakoukoliv vlastnost CSS
 1. **Jakou funkci má vlastnost `grid-area`?**  
 b) zajistí umístění prvku do pojmenované oblasti gridu
 1. **Co dělá vlastnost `grid`?**  
 b) jde o zkratku pro definici vzhledu mřížky
 1. **Co vykreslí zápis `grid-template-columns:repeat(12, 1fr)`?**  
 a) dvanáct sloupečků o šířce `1fr`
-1. **Jak gridem vycentrovat boxík uvnitř boxík?**  
+1. **Jak gridem vycentrovat boxík uvnitř boxu?**  
 a) `display:grid;place-items:center;`
 1. **Co dělá zápis `flex:auto`?**  
 b) hodnotou `auto` povolíme automatické rozpínání i smršťování velikosti položek

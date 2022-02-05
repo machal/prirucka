@@ -29,7 +29,7 @@ I přes to bych se svatým grálem mezi rozvrženími nějaký čas v knížce s
 
 A pak… Skvěle se na něm ukazují silné stránky šablonování vlastnostmi začínajícími na `grid-template` v CSS gridu.
 
-Pokud byste v tuto chvíli chtěli začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si forkněte a vzhůru do kódování.
+Pokud byste v tuto chvíli chtěli začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si forkněte – a vzhůru do kódování.
 
 CodePen: [cdpn.io/e/ZEePyrM](https://codepen.io/machal/pen/ZEePyrM?editors=1100)
 
@@ -66,7 +66,7 @@ HTML jsem vymyslel takto:
 Nejprve je potřeba definovat, jak přesně má layout vypadat a chovat se. Leccos jste asi viděli na obrázku výše. Ještě to ale raději rozepíšu:
 
 - Na malých displejích, zde do šířky okna `599px`, chceme prostě a jednoduše vyskládat všechny prvky layoutu pod sebe dle pořadí v kódu.
-- Na větších obrazovkách je layout je roztažený na celou viditelnou výšku okna.
+- Na větších obrazovkách je layout roztažený na celou viditelnou výšku okna.
 - Na výšku bychom rádi drželi tato pravidla: hlavička a patička (prvky `.head` a `.foot`) jsou vysoké přesně `10em` a `5em`. Prostředek zabere zbývající plochu.
 - Ve zbývající vnitřní ploše máme dva prvky. Postranní panel (`.side`) má šířku 30 %, ovšem s minimem `10em` a maximem `20em`. Obsahový blok (`.main`) už pak jen dostává zbytek viditelné plochy.
 
@@ -76,7 +76,7 @@ Pakliže si chcete sami zkusit kódovat, teď je ta správná příležitost zav
 
 ## Řešení příkladu
 
-Nejprve si napíšeme [Media Query](media-queries.md) a uděláme servisní nastavení:
+Nejprve si napíšeme [Media Query](media-queries.md) a provedeme servisní nastavení:
 
 ```css
 @media screen and (min-width: 37.5em) { 
@@ -87,7 +87,7 @@ Nejprve si napíšeme [Media Query](media-queries.md) a uděláme servisní nast
 }
 ```
 
-Rodičovskému prvku `.container` jsme nastavili zobrazovací kontext pro [CSS grid](css-grid.md) a výšku na `100vh`, což je sto procent výšky viewportu (viewport height). Layout tak bude vždy roztažený v celém okně.
+Rodičovskému prvku `.container` jsme nastavili zobrazovací kontext pro [CSS grid](css-grid.md) a výšku na `100vh`, což je sto procent výšky viewportu (`vh` jako „viewport height“). Layout tak bude vždy roztažený v celém okně.
 
 V tomto případě jsem se rozhodl, že budu používat oblasti (`grid-area`), takže do nich můžu prvky DOMu rovnou umístit:
 
@@ -124,16 +124,16 @@ Jak asi tušíte, toto samo o sobě nic nedělá. Normálně bych začínal od d
 
 Teď si to vysvětleme. První dvě vlastnosti už znáte:
 
-- Pomocí [`grid-template-rows`](css-grid-template-row-columns.md) definujeme řádky layoutu. Víme, že hlavička má být vysoká `10em`, patička `5em` a ten zbytek připadá na prostřední část. Zbytek definujeme jako jeden podíl z celkového počtu jednoho podílu, [jednotkou `fr`](css-jednotka-fr.md).
-- [Vlastnost `grid-template-columns`](css-grid-template-row-columns.md) nám, jak už víte, pomůže definovat směr rozvržení po hlavní ose, tedy po sloupcích. Postranní panel má zabrat 30 % šířky a pak je tu ten zbytek pro obsah.
+- Pomocí [`grid-template-rows`](css-grid-template-row-columns.md) definujeme řádky layoutu. Víme, že hlavička má být vysoká `10em`, patička `5em` a zbytek připadá na prostřední část. Tento zbytek definujeme jako jeden podíl z celkového počtu jednoho podílu, [jednotkou `fr`](css-jednotka-fr.md).
+- [Vlastnost `grid-template-columns`](css-grid-template-row-columns.md) nám, jak už víte, pomůže definovat směr rozvržení po hlavní ose, tedy po sloupcích. Postranní panel má zabrat 30 % šířky a pak je tu ten zbytek určený pro obsah.
 
 ## Definované oblasti
 
-[Vlastnost `grid-template-areas`](css-grid-template-areas.md) ještě možná neznáte, ale v gridu patří k mým nejoblíbenějším. Definujeme s jejím pomocím jména oblastí a jejich umístění v buňkách mřížky.
+[Vlastnost `grid-template-areas`](css-grid-template-areas.md) ještě možná neznáte, ale v gridu patří k mým nejoblíbenějším. S její pomocí definujeme jména oblastí a jejich umístění v buňkách mřížky.
 
-Pomocí `grid-template-rows` a `grid-template-rows` jsme vytvořili mřížku 3 ⨉ 2, o třech řádcích a dvou sloupcích. Do nich teď můžeme pomocí tohoto „ASCII artu“ umísťovat oblasti.
+Pomocí `grid-template-rows` a `grid-template-rows` jsme vytvořili mřížku 3 × 2, o třech řádcích a dvou sloupcích. Do nich teď můžeme pomocí tohoto „ASCII artu“ umísťovat oblasti.
 
-Asi jste si všimli, že oblasti `head` a `foot` zabírají vždy dvě buňky, což je přesně ten layout, který potřebujeme udělat.
+Asi jste si všimli, že oblasti `head` a `foot` zabírají vždy dvě buňky, což je přesně ten layout, kterého potřebujeme dosáhnout.
 
 Pomocí inspekce mřížky ve Firefoxu se nám teď layout krásně vizualizuje i s pojmenovanými oblastmi:
 
@@ -148,7 +148,7 @@ Pomocí inspekce mřížky ve Firefoxu se nám teď layout krásně vizualizuje 
 
 Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má postranní panel (`.side`) mít šířku 30 % – ovšem s minimem `10em` a maximem `20em`.
 
-Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce funkce `clamp()`.
+Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce `clamp()`.
 
 ```css
   .container {
@@ -222,9 +222,9 @@ A mohli bychom to zkrátit ještě více. Do [zkratky `grid`](css-grid-zkratka.m
 }
 ```
 
-Do zápisu `grid` se kromě vlastností pro šablonu (`grid-template`) dají uvádět ještě vlastnosti implicitního gridu, (začínající na [`grid-auto`](grid-auto-flow.md)). To je už dost specifická a zapeklitá věc, takže ji zde zatím nechám bez vysvětlení, která najdete v referenční příručce k CSS gridu.
+Do zápisu `grid` se kromě vlastností pro šablonu (`grid-template`) dají uvádět ještě vlastnosti implicitního gridu, (začínající na [`grid-auto`](grid-auto-flow.md)). To je už dost specifická a zapeklitá věc, takže ji zde zatím nechám bez vysvětlení. Najdete je v referenční příručce k CSS gridu.
 
-Je mi jasné, že pro jedny jsem to sice zjednodušil („hurá, méně kódu!“), jiným jsem zamotal hlavu („fuj, kód složitý jako assembler“). Máte však volbu, jak kód v gridu zapisovat a vyberte si dle svých preferencí.
+Je mi jasné, že pro jedny jsem to sice zjednodušil („hurá, méně kódu!“), jiným jsem zamotal hlavu („fuj, kód složitý jako assembler“). Máte však volbu, jak kód v gridu zapisovat, a vyberte si dle svých preferencí.
 
 Ještě vám dlužím finální CSS kód. Používám tu nejkratší variantu:
 

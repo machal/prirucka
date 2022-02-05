@@ -7,11 +7,11 @@ Tento frontendový framework se proslavil snadností stavby uživatelského rozh
 <figure>
 <img src="../dist/images/original/vdlayout/bootstrap-grid.jpg" width="1600" height="900" alt="Bootstrap - dokumentace ke gridu">
 <figcaption markdown="1">
-*Tohle určitě vidíte poprvé… Nebo taky ne.*
+Tohle určitě vidíte poprvé. Nebo taky ne…
 </figcaption>
 </figure>
 
-Mnoho vývojářek a vývojářů však ze všech vlastností Bootstrapu používá jen jednu část - mřížku pro tvorbu rozvržení stránky. Tvořit layout pomocí tohoto nebo podobných frameworků je totiž úžasně jednoduché.
+Mnoho vývojářek a vývojářů však ze všech vlastností Bootstrapu používá jen jednu část – mřížku pro tvorbu rozvržení stránky. Tvořit layout pomocí tohoto nebo podobných frameworků je totiž úžasně jednoduché.
 
 Například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o dvou sloupcích třetinové a dvoutřetinové šířky:
 
@@ -26,21 +26,21 @@ Například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o
 </div>
 ```
 
-Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definuje sloupec a pomocí třídy `.col-` s číslem podíl na výchozím dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Bootstrapu a šup – máte layout hotový.
+Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definujeme sloupec a pomocí třídy `.col-` s číslem podíl na výchozí dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Bootstrapu a šup – layout máte hotový.
 
 CodePen: [cdpn.io/e/zYwBYjR](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
 
-V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v aktuální verzi 5 – tvořen pomocí flexboxu. Dříve to bylo pomocí `display:inline-block` a ještě dříve vlastnosti pro obtékání – `float`.
+V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v aktuální verzi 5 – tvořen pomocí flexboxu. Dříve to bylo pomocí `display:inline-block` a ještě dříve díky vlastnosti pro obtékání – `float`.
 
 ## Proč nepoužít Bootstrap?
 
-Pokud opravdu nejíte konzervy v krytu a neotevřeli jste knížku právě na této stránce, z dřívějších textů víte, že pro layout typu „mřížka“ by se daleko více hodila… No… Mřížka. Překvapivě.
+Pokud opravdu nebaštíte konzervy v zemljance a neotevřeli jste knížku náhodně právě na této stránce, z dřívějších textů víte, že pro layout typu „mřížka“ by se daleko více hodila… No… Mřížka. Překvapivě.
 
-Bootstrap zatím CSS grid nepodporuje, hlavně kvůli [kompatibilitě s Internet Explorerem](msie.md), ale to se v další verzi změní. Můžete však mít i jiné důvody nepoužít pro rozvržení nejpopulárnější webové frameworky.
+Bootstrap zatím CSS grid nepodporuje, hlavně kvůli [kompatibilitě s Internet Explorerem](msie.md), ale to se v další verzi změní. Můžete však mít i jiné důvody, proč nepoužít pro rozvržení nejpopulárnější webové frameworky.
 
-Prvním problémem může být zbytečných 20-30 kilobajtů CSS, které musíte v podobě Bootstrapu kvůli layoutu stahovat. Jestliže máte přísné požadavky na rychlost načítání stránky, je to určitě nemalá nevýhoda.
+Prvním problémem může být zbytečných 20–30 kilobajtů CSS, které musíte v podobě Bootstrapu kvůli layoutu stahovat. Jestliže máte přísné požadavky na rychlost načítání stránky, je to určitě nemalá nevýhoda.
 
-Druhým teoretickým problémem je vaše touha mít layout definovaný v CSS, nikoliv v HTML. Dobrých důvodů pro něco takového může být hodně – od nemožnosti upravovat HTML na vašem projektu, po specifický způsob organizace frontendového kódu.
+Druhým teoretickým problémem je vaše touha mít layout definovaný v CSS, nikoliv v HTML. Dobrých důvodů pro něco takového může být hodně – od nemožnosti upravovat HTML na vašem projektu po specifický způsob organizace frontendového kódu.
 
 Nyní se tedy dostáváme k jádru pudla. Tento layout bychom chtěli napsat v CSS gridu a ušetřit tak stažení zbytečného frameworku.
 
@@ -133,4 +133,4 @@ Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden Code
 
 CodePen: [cdpn.io/e/dJxBGz](https://codepen.io/machal/pen/dJxBGz?editors=1100)
 
-Zpráva, která by se vám na konci tohoto příkladu měla zapsat do paměti zní: Pokud hledáte jednoduchou možnost tvorby layoutu v mřížce, jako nativně podporovanou alternativu k Bootstrapu a podobným frameworkům zvažte CSS grid.
+Zpráva, která by se vám na konci tohoto příkladu měla zapsat do paměti, zní: Pokud hledáte jednoduchou možnost tvorby layoutu v mřížce jako nativně podporovanou alternativu k Bootstrapu a podobným frameworkům zvažte CSS grid.

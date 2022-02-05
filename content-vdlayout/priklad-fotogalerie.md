@@ -50,7 +50,7 @@ Pracanti nechť zavřou knihu a v klidu pracují. My ostatní si rozdělíme fun
 
 ## Řešení pomocí CSS Multicolumn Layout
 
-Pokud vás pro tyto případy napadl jako vhodný systém pro rozvržení [CSS Multicol](css-multicolumn.md), byli jste na správné cestě. I já bych po něm při řešení určitých typů fotogalerií sáhl. Je to totiž raz dva hotové:
+Pokud vás pro tyto případy napadl jako vhodný systém pro rozvržení [CSS Multicol](css-multicolumn.md), byli jste na správné cestě. I já bych po něm při řešení určitých typů fotogalerií sáhl. Je to totiž hotové raz dva:
 
 ```css
 .container {
@@ -64,7 +64,7 @@ Vysvětlím to:
 - [Vlastností `columns`](css-multicol-columns.md), což je zkratka pro nastavení počtu sloupečků nebo jejich doporučené šířky, zde jako šířku nastavuji polovinu šířky sloupce.
 - S pomocí druhé vlastnosti, [`gap`](css-gap.md), nastavuji šířku mezi sloupečky. To už znáte.
 
-Chybí mi tady ještě jedna věc a to zákaz zalomení uvnitř prvku `<figure>`, protože bychom velmi neradi viděli popisek z prvku `<figcaption>` mimo samotný obrázek, třeba hned na začátku následujícího sloupce:
+Chybí mi tady ještě jedna věc, a to zákaz zalomení uvnitř prvku `<figure>`, protože bychom velmi neradi viděli popisek z prvku `<figcaption>` mimo samotný obrázek, třeba hned na začátku následujícího sloupce:
 
 ```css
 .figure {
@@ -101,7 +101,7 @@ Pokud bychom nechtěli použít Media Queries, v CSS gridu máme možnost sáhno
 
 RAM, to je zkratka pro Repeat, Auto, Minmax. V popisování začínám zevnitř závorek:
 
-- [Funkci `minmax()`](css-minmax.md) jsem zde už vysvětloval. Zde ji využíváme k nastavení minimální šířky elementu na `150px` a maximální `1fr`.
+- [Funkci `minmax()`](css-minmax.md) jsem zde už vysvětloval. Tady ji využíváme k nastavení minimální šířky elementu na `150px` a maximální `1fr`.
 - [Funkci `repeat()`](css-repeat.md) už také znáte. Zjednodušuje zápis opakovaných údajů v `grid-template`.
 - Namísto čísla v prvním argumentu `repeat()` se na nás ale překvapeně kouká klíčové slovo `auto-fit`, které prohlížeči říká, aby prostor vyplnil maximálním možným roztažením buněk, které už na řádku existují.
 
@@ -112,7 +112,7 @@ Výsledek vypadá jinak než v řešení pomocí CSS Multicol, na obrázku uvid�
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-photogallery-multicol-grid.jpg" width="1600" height="900" alt="Příklad s fotogalerií - dvě řešení">
 <figcaption markdown="1">
-*Kdo je váš favorit, pan Vícesloupec nebo paní Mřížka?*
+*Kdo je váš favorit, pan Vícesloupec nebo paní Mřížková?*
 </figcaption>
 </figure>
 
@@ -120,14 +120,14 @@ Položky jsou srovnané do řádků a je možné je číst zleva doprava.
 
 Nevýhody zde však vidím taky. Na většině šířek displeje náhledy s popisky nevyplní všechny řádky. Algoritmus prohlížeče vykreslí položky po řádcích, takže můžeme například vidět kombinaci 9 položek v prvním řádku a 3 ve druhém.
 
-Udělat pěknou mřížku, bez vynechaných položek, tedy například 2 × 6, 3 × 4… je samozřejmě s gridem možné, jen bychom to museli specifikovat přesněji s pomocí Media Queries.
+Udělat pěknou mřížku, bez vynechaných položek, tedy například 2 × 6, 3 × 4 apod., je samozřejmě s gridem možné, jen bychom to museli specifikovat přesněji s pomocí Media Queries.
 
-Ještě odkaz na CodePen s řešením využívajícím grid a pojďme to uzavřít.
+Ještě odkaz na CodePen s řešením využívajícím grid a můžeme to uzavřít.
 
 CodePen: [cdpn.io/e/LYyydoZ](https://codepen.io/machal/pen/LYyydoZ?editors=1100)
 
 ## Co jsme se tady naučili?
 
-- Poprvé jsme v kapitole s příklady využili [CSS Multicolumn Layout](css-multicolumn.md) a to v situaci, kde funguje velmi dobře – design fotogalerie.
+- Poprvé jsme v kapitole s příklady využili [CSS Multicolumn Layout](css-multicolumn.md), a to v situaci, kde funguje velmi dobře – design fotogalerie.
 - Vyzkoušeli jsme si dva layouty s „automatickou responzivitou“, bez použití Media Queries.
 - V rámci CSS gridu jsme se něco dozvěděli o návrhovém vzoru RAM a klíčovém slově `auto-fit`.

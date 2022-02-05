@@ -13,7 +13,7 @@ Cílem je to, co vidíte na obrázku. Boxík, který ve viditelné ploše obrazo
 </figcaption>
 </figure>
 
-Opět dám chvilku času těm z vás, kteří si řešení chcete vymyslet sami. Podmínky řešení jsou tyto:
+Opět dám chvilku těm z vás, kteří si chcete řešení vymyslet sami. Jeho podmínky jsou tyto:
 
 - Prvek `.item` je centrovaný vodorovně i svisle uprostřed stránky.
 - Maximální šířka `.item` je `20em`, výšku vždy určuje obsah prvku, který může být proměnlivý.
@@ -36,9 +36,9 @@ CodePen: [cdpn.io/e/xxdOJOX](https://codepen.io/machal/pen/xxdOJOX?editors=1100)
 
 ## Středění boxu v boxu a poněkud komplikovaný flexbox
 
-Začneme jednodušší variantou příkladu, ve které budeme centrovat boxík uvnitř jiného boxíku.
+Začneme jednodušší variantou příkladu, ve které budeme centrovat boxík uvnitř jiného boxu.
 
-K HTML výše si doplníme zhruba toto CSS, které doplňuje zadání o omáčku kolem:
+K HTML výše přidáme zhruba toto CSS, které doplňuje zadání o omáčku kolem:
 
 ```css
 .container {
@@ -64,17 +64,17 @@ Náš první centrovací pokus učiníme s pomocí flexboxu:
 }
 ```
 
-Je nám jasné, že toto žádné zázraky neučiní. Spíše naopak - vytvoří nám to problémy. Boxík je teď roztažený na celou výšku rodiče.
+Je nám jasné, že toto žádné zázraky neučiní. Spíše naopak – připraví nám to problémy. Boxík je teď roztažený na celou výšku rodiče.
 
-Je to častá potíž začátečníků s flexboxem. Výchozí hodnota vlastnosti, která určuje zarovnání na výšku, je totiž nastavená na maximální rozpínavost.
+Toto je častá potíž začátečníků s flexboxem. Výchozí hodnota vlastnosti, která určuje zarovnání na výšku, je totiž nastavená na maximální rozpínavost.
 
-O kterou vlastnost jde? Tady máme dobrou příležitost ukázat si tahák, který převezmeme z referenční příručky k CSS Box Alignment.
+O jakou vlastnost jde? Tady máme dobrou příležitost ukázat si tahák, který převezmeme z referenční příručky k CSS Box Alignment.
 
 ![Tahák k CSS Box Alignment](../dist/images/original/vdlayout/css-box-alignment-tahak.jpg)
 
-Vidíme, že vlastnosti ve výchozím směru layoutu (vodorovně) začínají na `justify-` a ty v příčném směru (ve výchozím nastavení svisle) na `align-`. Snad i vidíme, že dotčená vlastnost se týká položek, takže hlavní podezřelým je zde [vlastnost `align-items`](css-align-items.md).
+Vidíme, že vlastnosti ve výchozím směru layoutu (vodorovně) začínají na `justify-` a ty v příčném směru (ve výchozím nastavení svisle) na `align-`. Snad i chápeme, že dotčená vlastnost se týká položek, takže hlavní podezřelým je zde [vlastnost `align-items`](css-align-items.md).
 
-Ano, je to tak. Ve flexboxu má výchozí hodnotu `stretch`, která je příčinou toho roztažení na výšku.
+Ano, je to tak. Ve flexboxu má výchozí hodnotu `stretch`, která je příčinou onoho roztažení na výšku.
 
 My však chceme zarovnávat doprostřed:
 
@@ -85,11 +85,11 @@ My však chceme zarovnávat doprostřed:
 }
 ```
 
-Povedlo se nám zařídit centrování ve svislém směru. Teď ještě vodorovně, že ano… Podívejte se do taháku na obrázku. Odtamtud asi zjistíte, že ve vodorovném směru (`justify-`) potřebujete zarovnávat položky (`-items`).
+Povedlo se nám zařídit centrování ve svislém směru. Teď ještě vodorovně, že ano… Podívejte se do taháku na obrázku. Patrně zjistíte, že ve vodorovném směru (`justify-`) potřebujete zarovnávat položky (`-items`).
 
-Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou vlastnost `justify-items` a tedy i [`justify-self`](css-justify-self.md) je ve specifikaci i prohlížečích v tuto chvíli pro použití ve flexboxu zapovězena. Pokud vás to zajímá více, mrkněte se na podkapitoly o těchto vlastnostech v příručkách dále.
+Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou vlastnost `justify-items` a tedy i [`justify-self`](css-justify-self.md) je ve specifikaci i prohlížečích pro použití ve flexboxu prozatím zapovězena. Pokud vás to zajímá více, mrkněte se na podkapitoly o těchto vlastnostech v příručkách dále.
 
-Tento typ zarovnávání se ve flexboxu totiž dělá starým dobrým `margin:auto`:
+Tento typ zarovnávání se ve flexboxu dělá starým dobrým `margin:auto`:
 
 ```css
 .container {
@@ -104,9 +104,9 @@ Tento typ zarovnávání se ve flexboxu totiž dělá starým dobrým `margin:au
 
 CodePen: [cdpn.io/e/abWZjVE](https://codepen.io/machal/pen/abWZjVE?editors=1100)
 
-Můžeme s tím být spokojení, protože naše řešení funguje. Ale víte, co vám řeknu? Já s tím spokojený nejsem. Hlavně proto, že znám lepší řešení, řešení gridem, které není tak komplikované.
+Můžeme s tím být spokojení, protože naše řešení funguje. Ale víte, co vám řeknu? Já s tím spokojený nejsem. Hlavně proto, že znám lepší řešení pomocí gridu, které není tak komplikované.
 
-Ještě než k němu přejdeme, zmíním ještě jednu možnost poměrně populární u zkušených kodérů: k centrování využít [vlastnost `justify-content`](css-justify-content.md):
+Než k němu přejdeme, zmíním ještě jednu možnost, poměrně populární u zkušených kodérů: k centrování využijte [vlastnost `justify-content`](css-justify-content.md):
 
 ```css
 .container {
@@ -116,19 +116,19 @@ Ještě než k němu přejdeme, zmíním ještě jednu možnost poměrně popul�
 }
 ```
 
-Tohle řešení bude v řadě případů pro centrování z obou stran ve flexboxu perfektně fungovat.
+Tohle řešení bude v řadě případů pro centrování z obou stran ve flexboxu fungovat perfektně.
 
-O jeho „čistotě“ se ovšem můžeme přít. Zkušenější mohou již `justify-content` dobře znát a tedy se při jeho použití ve složitějších příkladech nenapálit.
+O jeho „čistotě“ se ovšem můžeme přít. Zkušenější mohou již `justify-content` dobře znát, a tedy se při jeho použití ve složitějších příkladech nenapálit.
 
 Pro méně zkušené může být nepříjemný fakt, že vlastnost neslouží k zarovnání položek, ale prostoru mezi nimi. Tohle vás může někdy doběhnout.
 
 CodePen: [cdpn.io/e/poWLQRX](https://codepen.io/machal/pen/poWLQRX?editors=1100)
 
-Ale pojďme už na ten elegantní grid.
+Teď ale už pojďme na ten elegantní grid.
 
 ## Středění boxu v boxu: situaci zachraňuje grid
 
-Asi už víte, že zarovnávací vlastnosti CSS Box Align, jako je `align-items`, můžete s drobnými výjimkami použít jako pro flexbox, tak pro grid. V gridu jsou tyto vlastnosti ale k dispozici řekněme v plném míře.
+Asi už víte, že zarovnávací vlastnosti CSS Box Align, jako je `align-items`, můžete s drobnými výjimkami použít jak pro flexbox, tak pro grid. V gridu jsou však tyto vlastnosti k dispozici řekněme v plném míře.
 
 Naše původně zvažované řešení pro zarovnání položek na výšku i šířku by zde krásně fungovalo:
 
@@ -140,7 +140,7 @@ Naše původně zvažované řešení pro zarovnání položek na výšku i ší
 }
 ```
 
-A víte vy co? Znám ještě elegantnější možnost:
+Já ale znám ještě elegantnější možnost:
 
 ```css
 .container {
@@ -153,7 +153,7 @@ A víte vy co? Znám ještě elegantnější možnost:
 
 CodePen: [cdpn.io/e/wvGLEvJ](https://codepen.io/machal/pen/wvGLEvJ?editors=1100)
 
-Vlastnost `place-items` má u layoutů tvořených gridech samozřejmě podporu ve všech třech aktuálních prohlížečích.
+Vlastnost `place-items` má u layoutů tvořených gridem samozřejmě podporu ve všech třech aktuálních prohlížečích.
 
 ## Středění boxu ve stránce
 

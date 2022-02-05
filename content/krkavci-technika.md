@@ -2,7 +2,7 @@
 
 V posledním příkladu mírně sejdeme z cesty poznávání CSS layoutů a vrátíme se k jednomu z našich témat – Container Queries versus Media Queries.
 
-Rozebereme si totiž „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které v ale době psaní této podkapitoly nemají podporu v prohlížečích.
+Rozebereme si totiž „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které ale v době psaní této podkapitoly nemají podporu v prohlížečích.
 
 Výhodou této techniky je podpora ve všech moderních prohlížečích. Nevýhodou je krkolomnost.
 
@@ -22,13 +22,13 @@ width: --dyn_length: calc(
 
 Žádné strachy, vše ještě poctivě vysvětlím. Jen jsem chtěl demonstrovat, jak komplikovaná tato technika je.
 
-Ale nechci Raven Technique úplně shazovat. Pokud něco jako podmínku `@container` z Container Queries na vašem projektu zoufale potřebujete, věnujte mi ještě chvíli pozornosti.
+Raven Technique ale nechci úplně shazovat. Pokud něco jako podmínku `@container` z Container Queries na vašem projektu zoufale potřebujete, věnujte mi ještě chvíli pozornosti.
 
 Havraní technika je založená na matematických funkcích a dalších novinkách v CSS:
 
 - [Funkce `calc()`](css3-calc.md) umožní vložit namísto hodnoty matematický výraz.
 - [Funkce `min()` a `max()`](css-min-max-clamp.md) vracejí nejnižší, respektive nejvyšší hodnotu ze všech uvedených v argumentech.
-- [Funkce `clamp()`](css-min-max-clamp.md) je kombinací `min()` a `max()` pro třičíselné hodnoty.
+- [Funkce `clamp()`](css-min-max-clamp.md) je kombinací `min()` a `max()` pro tříčíselné hodnoty.
 - [Proměnné v CSS](css-promenne.md) jako `--color:blue` zase umožňují udržovat a měnit hodnoty výpočtu, podobně jako v programovacích jazycích.
 
 <div class="ebook-only" markdown="1">
@@ -64,11 +64,11 @@ Dále definujeme šířky prvků pro tři rozmezí, která vznikla definicí bre
 }
 ```  
 
-Asi je zřetelné, že na nejmenších viewportech (`--length_4_small`) zabere celou šířku jeden boxík (`calc((100% / 1)`), zatímco největších už budou vedle sebe čtyři (`calc((100% / 4)`).
+Asi je zřetelné, že na nejmenších viewportech (`--length_4_small`) zabere celou šířku jeden boxík (`calc((100% / 1)`), zatímco na největších už budou vedle sebe čtyři (`calc((100% / 4)`).
 
 ## Dotazy na splnění podmínek pro šířku rodiče
 
-Magie probíhá v následujícím kroku. Tady pomocí matematických funkcí plníme proměnné, které indikují, na jakém breakpointu se aktuálně nalézáme:
+Magie nastává v následujícím kroku. Tady pomocí matematických funkcí plníme proměnné, které indikují, na jakém breakpointu se aktuálně nalézáme:
 
 ```css
 .container {
@@ -76,7 +76,7 @@ Magie probíhá v následujícím kroku. Tady pomocí matematických funkcí pln
 }  
 ```
 
-Proměnná `--is_wide` vrací `1px` pokud je `--base_size` větší než `--breakpoint_wide`. Představte si to `1px` jako `true`. V opačném případě vrací `0px` jako false.
+Proměnná `--is_wide` vrací `1px`, pokud je `--base_size` větší než `--breakpoint_wide`. Představte si to `1px` jako `true`. V opačném případě vrací `0px` jako `false`.
 
 V `--base_size` máme uloženou hodnotu `100%`, což je ale skutečná šířka rodičovského prvku. Už chápete?
 
@@ -84,7 +84,7 @@ Podobné to bude pro hodnoty `--is_medium` a `--is_small`.
 
 ## Definujeme vlastnosti prvku v jednotlivých breakpointech
 
-Proměnné indikující breakpoint můžeme nakrásně využít v dalším kroku, kde nastavujeme šířku pro konkrétní prvky v layoutu:
+Proměnné, které indikují breakpoint, můžeme nakrásně využít v dalším kroku, kde nastavujeme šířku pro konkrétní prvky v layoutu:
 
 ```css
 .item {
@@ -100,7 +100,7 @@ Pokud bude například aktivní proměnná `--is_medium`, vyjde nám zde `200px`
 
 To by mohlo pro pochopení základního principu The Raven Technique stačit. Je to samozřejmě ještě trochu složitější, sami jste to viděli z úvodní ukázky kódu.
 
-Ale zkušenější to jistě ocení a je fajn, že jsme si udělali výlet do pokročilejších vlastností CSS.
+Ale zkušenější z vás to jistě ocení a je fajn, že jsme si udělali výlet do pokročilejších vlastností CSS.
 
 CodePen: [cdpn.io/e/QWpqJjJ](https://codepen.io/machal/pen/QWpqJjJ?editors=1100)
 

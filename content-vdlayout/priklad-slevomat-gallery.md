@@ -1,10 +1,10 @@
 # Responzivní fotogalerie
 
-V předchozí ukázce jsme poměrně intenzivně využili oblasti mřížky definované pomocí [`grid-template-areas`](css-grid-template-areas.md) a umísťované s vlastností [vlastností `grid-area`](css-grid-area.md).
+V předchozí ukázce jsme poměrně intenzivně využili oblasti mřížky definované pomocí [`grid-template-areas`](css-grid-template-areas.md) a umísťované s [vlastností `grid-area`](css-grid-area.md).
 
-Oblasti jsme zde využili hlavně pro zjednodušení a zpřehlednění kódu. V této ukázce u oblastí zůstaneme, ale jejich využití tady bude ještě intenzivnější a uplatnění na zpřehlednění kódu větší.
+Oblasti jsme zde využili hlavně pro zjednodušení a zpřehlednění kódu. V této ukázce u oblastí zůstaneme, ale jejich využití tady bude ještě intenzivnější a vliv na zpřehlednění kódu větší.
 
-Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Ale takovou jste určitě už viděli i jinde nebo ji dokonce kódovali.
+Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Podobnou jste určitě už viděli i jinde, nebo takovou dokonce sami kódovali.
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-slevomat-live.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz">
@@ -18,7 +18,7 @@ Zadání je ale složitější – tentokrát budeme velmi intenzivně řešit r
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-slevomat-responsive.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - responzivní pohledy">
 <figcaption markdown="1">
-*Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wellness nebude, spíše galeje. (Že chybí třetí fotka na tabletu? To není chyba, ale vlastnost.)*
+Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wellness nebude, spíše galeje. (Že chybí čtvrtá fotka na tabletu? To není chyba, ale vlastnost.)
 </figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ Pokud by vás BEM, metodika zápisu tříd pro potřebu tvorby komponent, zajím
 
 ## Oblasti mřížky
 
-V dalším kroku si spárujeme jednotlivé prvky HTML (nebo DOMu, když chcete) s oblastmi gridu.
+V dalším kroku si spárujeme jednotlivé prvky HTML (nebo DOMu, chcete-li) s oblastmi gridu.
 
 V CSS kódu to bude vypadat následovně:
 
@@ -124,7 +124,7 @@ Podstatné na této ukázce je ale umístění oblastí do mřížky:
 - Oblast `main` zabírá první tři buňky mřížky, tedy celý první řádek.
 - Oblastem `thumb1` až `thumb3` jsme přidělili jednotlivé buňky na třetím řádku.
 
-Díky tomu, že jsem nejprve propojil elementy DOMu z oblastmi, nemusím nyní vůbec přemýšlet, jak vypadá moje HTML. Prostě umísťuji pojmenované oblasti do požadovaného rozvržení.
+Díky tomu, že jsem nejprve propojil elementy DOMu s oblastmi, nemusím nyní vůbec přemýšlet, jak vypadá moje HTML. Prostě umísťuji pojmenované oblasti do požadovaného rozvržení.
 
 ## Layout na středních displejích
 
@@ -144,11 +144,11 @@ Pojďme rovnou na kód:
 }
 ```
 
-Zde musíme poslední náhled „vypnout“ pomocí `display:none`. Grafický návrh nám to káže.
+Tady musíme poslední náhled „vypnout“ pomocí `display:none`. Grafický návrh nám to káže.
 
-Zde jen umístím vsuvku způsobenou tím, že odborník na rychlost webu ve mě se nyní staví na zadní: „Vypnutí“ obrázku pomocí `display:none` prohlížeči nezakáže obrázek stáhnout.
+Zde ale musím něco dodat, protože se ve mně staví na zadní odborník na rychlost webu: „Vypnutí“ obrázku pomocí `display:none` nezakáže prohlížeči obrázek stáhnout.
 
-Pokud byste chtěli směr řešení tohoto neduhu, možná si jako já vzpomenete na líné načtení obrázků. Pokud neviditelnému obrázku přidáme atribut a hodnotu `loading="lazy"`, prohlížeč jej v případě, že nebude viditelný nestáhne. Více o této technice najdete na Vzhůru dolů. [vrdl.cz/p/lazy-loading-obrazku](https://www.vzhurudolu.cz/prirucka/lazy-loading-obrazku)
+Kdybyste chtěli tento neduh vyřešit, možná si jako já vzpomenete na líné načtení obrázků. Pokud neviditelnému obrázku přidáme atribut a hodnotu `loading="lazy"`, prohlížeč jej v případě, že nebude viditelný, nestáhne. Více o této technice najdete na Vzhůru dolů. [vrdl.cz/p/lazy-loading-obrazku](https://www.vzhurudolu.cz/prirucka/lazy-loading-obrazku)
 
 Samotný layout je tentokrát definovaný jako mřížka 2 × 2. První sloupec je dvoutřetinový (`2fr`), druhý zabírá zbylou třetinu prostoru (`1fr`).
 
