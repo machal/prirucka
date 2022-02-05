@@ -2,9 +2,9 @@
 
 Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovém světu zavládly mobily. Jde o základní stavební kámen responzivního designu, takže při stavění CSS layoutů bez nich nepostavíme ani boudu pro psa.
 
-Dovolím si zde shrnout jejich úplné základy, pro případ, že v Media Queries plavete. Vy zkušenější, kteří nestojíte o opakování tématu, můžete úvodní část s čistým svědomím přeskočit, a rovnou si najít nadpis „Limity Media Queries“.
+Dovolím si zde shrnout jejich úplné základy, pro případ, že v Media Queries plavete. Vy zkušenější, kteří nestojíte o opakování tématu, můžete úvodní část s čistým svědomím přeskočit a rovnou si najít nadpis „Limity Media Queries“.
 
-Media Queries jsou podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech, nejen tedy týkajících se rozměrů obrazovky.
+Media Queries jsou podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech, nejen tedy těch týkajících se rozměrů obrazovky.
 
 ## Příklad pro začátek
 
@@ -30,7 +30,7 @@ Možná i začátečníci už poznali, co se zde děje:
 - Podmínka `(max-width:40em)` říká, že vložený kód se má aplikovat jen pro šířky okna do `40em`, což je zde obvykle 640 pixelů (40 × 16, při výchozí velikosti písma v dokumentu `16px`, není-li nastaveno jinak).
 - V podmínce nadpisu nastavujeme jinou velikost písma `font-size:1.5em`. Pokud jste si to už nespočítali, půjde o 24 pixelů (16 × 1,5).
 
-Zájemci se na to mohou ještě mrknout živě v CodePenu.
+Zájemci se na to mohou ještě mrknout živě.
 
 CodePen: [cdpn.io/e/Bpajbz](https://codepen.io/machal/pen/Bpajbz)
 
@@ -81,7 +81,7 @@ Můžeme aplikovat logické „nebo“, a to pomocí čárky:
 ```css
 @media screen and (max-width: 40em), 
   print {
-  /* Aplikuje na obrazovky od šířky 
+  /* Aplikuje se na obrazovky od šířky  
      viewportu 40 em nebo v tisku
   */ 
 }
@@ -111,7 +111,7 @@ Detekovat hustotu pixelů na obrazovce:
 }
 ```
 
-Padly tady výrazy, kterým někteří nemusejí rozumět a těm opět nabízím vysvětlení v textech na Vzhůru dolů:
+Padly tady výrazy, kterým někteří nemusí rozumět – těm opět nabízím vysvětlení v textech na Vzhůru dolů:
 
 - „Viewport“ je část obrazovky, ve které prohlížeč vykresluje stránku. [vrdl.cz/p/viewport](https://www.vzhurudolu.cz/prirucka/viewport)
 - „Retina“ a vysokokapacitní displeje do webdesignu zavedly přepočet hardwarových pixelů na „CSS pixely“. [vrdl.cz/prirucka/css-pixel](https://www.vzhurudolu.cz/prirucka/css-pixel)
@@ -120,7 +120,7 @@ Ještě se čistě obecně pozastavme u složení jednotlivých částí každé
 
 ## Anatomie Media Query
 
-Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
+Dotaz na médium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
 
 <figure>
 <img src="../dist/images/original/media-query.jpg" alt="">
@@ -138,15 +138,15 @@ Ovládnutí dotazů na média je však zcela nepostradatelná dovednost, každý
 Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
 
 - Stránka o Media Queries na Vzhůru dolů: [vrdl.cz/p/css3-media-queries](https://www.vzhurudolu.cz/prirucka/css3-media-queries).
-- Jak v responzivní layoutu dělat breakpointy, body zlomu: [vrdl.cz/p/breakpointy](https://www.vzhurudolu.cz/prirucka/breakpointy).
+- Jak v responzivním layoutu dělat breakpointy, body zlomu [vrdl.cz/p/breakpointy](https://www.vzhurudolu.cz/prirucka/breakpointy).
 - Jak breakpointy řešit technicky: [vrdl.cz/p/breakpointy-css](https://www.vzhurudolu.cz/prirucka/breakpointy-css).
-- Celý e-book o responzivním designu. Prý je docela dobrý, říkali to lidi. [vrdl.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
+- Celý e-book o responzivním designu. Prý je docela dobrý, říkali lidi… [vrdl.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
 
-V tomto bodě začnu předpokládat, že o Media Queries už něco víte a společně se tedy pustíme do jejich používání.
+V tomto bodě začnu předpokládat, že o Media Queries už něco víte, a společně se tedy pustíme do jejich používání.
 
 ## Příklad: Media Object
 
-„Media Object“ je ve webdesignu velmi populární komponenta. Tak populární, že se bez ní nemůže obejít žádná knížka. A pokud jde o knížku o layoutu v CSS, tím tuplem ne.
+„Media Object“ je ve webdesignu velmi populární komponenta. Tak populární, že se bez ní nemůže obejít žádná knížka. A jde-li o knížku o layoutu v CSS, tuplem ne.
 
 <figure>
 <img src="../dist/images/original/vdlayout/media-object-mq.jpg" width="1600" height="900" alt="…">
@@ -157,7 +157,7 @@ V tomto bodě začnu předpokládat, že o Media Queries už něco víte a spole
 
 V „objektu s médiem“ jsou tři základní prvky – obrázek (nebo jiné médium), nadpis a text. Na téhle komponentě sbírají webaři své responzivní ostruhy, je to krásný případ použití Media Queries.
 
-I my si je zde vyzkoušíme. Pokud se podle knížky učíte, zkuste si objekt nakódovat podle výše uvedeného obrázku. Vám, kteří raději čtete, to teď jdu popsat.
+I my si je zde vyzkoušíme. Pokud se podle knížky učíte, zkuste si objekt nakódovat podle výše uvedeného obrázku. Vám, kteří raději čtete, to teď popíšu.
 
 V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
 
@@ -181,7 +181,7 @@ V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
 
 Vidíme zde tedy obalující `.container` pro celou stránku. Pak samotný media object s třídou `.item` a v něm části pro obrázek `.item__image` a pro text `.item__text`.
 
-Samotné texty nedávají smysl, a to je dobře. Jsou generované službou Blábot, jejíž kouzlo je v tom, že dodává texty připomínající češtinu, ale zároveň nepoutající pozornost. Takové české Lorem Ipsum. [blabot.cz](https://www.blabot.cz/)
+Samotné texty nedávají smysl a to je dobře. Jsou generované službou Blábot, jejíž kouzlo je v tom, že dodává texty připomínající češtinu, ale zároveň nepoutající pozornost. Takové české Lorem Ipsum. [blabot.cz](https://www.blabot.cz/)
 
 Základní CSS našeho příkladu vypadá bez rozvržení také vcelku jednoduše:
 
@@ -251,7 +251,7 @@ Vysvětlení:
 
 <div class="ebook-only" markdown="1">
 
-(Mimochodem, o [vlastnosti `display`](css-display.md) více píšu v poslední, přílohové kapitole.)
+(Mimochodem, o [vlastnosti `display`](css-display.md) píšu více v poslední, přílohové kapitole.)
 
 </div>
 
@@ -290,9 +290,9 @@ Tvorba breakpointů (jinak též „bodů zlomu“) je samostatné téma, ostatn
 Pojďme si ale ukázat, jak konkrétně jsem zde uvažoval a došel k hodnotě `428px`:
 Chtěl bych, aby vodorovný layout naskočil nejdříve v momentě, kdy obrázek dosáhne svých maximálních rozměrů. Řekněme, že v tomto případě jsem jej připravil tak, aby se v prohlížeči mohl zobrazovat až do šířky 300 pixelů. Proč ale v Media Query není číslo `300px`?
 
-Dotazy na média se vztahují k šířce viewportu, k šířce plochy, kterou má prohlížeč k dispozici. Jak uvidíte na obrázku níže, mezi okrajem viewportu a okrajem obrázku jsou ještě další prvky, které také mají své rozměry.
+Dotazy na média se vztahují k šířce viewportu, k šířce plochy, kterou má prohlížeč k dispozici. Jak uvidíte na obrázku níže, mezi okrajem viewportu a okrajem obrázku jsou ještě další prvky, jež také mají své rozměry.
 
-Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (`margin` i `padding`) o celkové šířce `3em`. Jedno `em` je vždy `16px`, pokud jej nenastavíme jinak. Dále je zde vnitřní okraj `1em` u prvků `.item__text` a `.item__image`. Celkem tedy 4 krát 16, to je 64 a ještě krát 2, protože musíme vzít v úvahu obě strany. Vychází nám 128. Přidáme šířku obrázku a vyjde nám 428 pixelů.
+Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (`margin` i `padding`) o celkové šířce `3em`. Jedno `em` je vždy `16px`, pokud jej nenastavíme jinak. Dále je zde vnitřní okraj `1em` u prvků `.item__text` a `.item__image`. Celkem tedy 4 krát 16, to je 64, a ještě krát 2, protože musíme vzít v úvahu obě strany. Vychází nám 128. Přidáme šířku obrázku a vyjde nám 428 pixelů.
 
 Pro puristy zde přiznávám, že jsem porušil své vlastní pravidlo a v dotazu použil jednotku `px` namísto `em`. To proto, abychom si to matematicky ještě více nezkomplikovali. Ale `428px` standardně přepočteme na `26.75em`.  Více o jednotkách hledejte v textu o [CSS jednotkách](jednotky.md) ze závěrečné kapitoly.
 
@@ -305,7 +305,7 @@ To je samý margin a padding. Kdo pak má ty Media Queries počítat?!
 
 Trápím vás tou matematikou úmyslně. Chci, abyste si prožili problémy, které při tvorbě současných layoutů máme.
 
-Media Queries jsou totiž v zaměřené na parametry celé stránky, respektive viewportu prohlížeče.
+Media Queries jsou totiž zaměřené na parametry celé stránky, respektive viewportu prohlížeče.
 
 Pro rozvržení celé stránky jsou skvělé. Jenže my se zde snažíme vymyslet layout komponenty, tedy malého výseku stránky.
 

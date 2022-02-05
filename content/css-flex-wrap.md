@@ -58,7 +58,7 @@ V obou demech máme jednoduché HTML…
 </div>
 ```
 
-…a ještě jednodušší základní CSS:
+… a ještě jednodušší základní CSS:
 
 ```css
 .container {

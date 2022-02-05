@@ -88,7 +88,7 @@ Hlavně vlastnost `max-height` je užitečná pro použití na různé rozkliká
 }
 ```
 
-Vy zkušenější víte, že vlastnost `max-height` je také možné animovat. Je to vidět například na tomto Codepenu: [cdpn.io/e/ICkwe](https://codepen.io/LFeh/pen/ICkwe).
+Vy zkušenější víte, že vlastnost `max-height` je také možné animovat. Je to vidět například na tomto CodePenu: [cdpn.io/e/ICkwe](https://codepen.io/LFeh/pen/ICkwe).
 
 Všechny stroje obsah v `.nav` uvidí. A Google? Protože stránku „vidí“, domnívám se, že může obsahu dát menší váhu. *TODO*
 

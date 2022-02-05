@@ -102,7 +102,7 @@ No jasně, Element Queries všichni chtějí, takže se to snad jednou podaří 
 
 ## Prozatím alespoň ty javascriptové implementace…
 
-…a pár odkazů na ně:
+… a pár odkazů na ně:
 
 - [EQCSS: Element Queries](http://elementqueries.com/) od Tommyho Hodginse
 - [CSS Element Queries](http://marcj.github.io/css-element-queries/) od  Marca J. Schmidta

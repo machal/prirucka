@@ -75,7 +75,7 @@ p {
 }
 ```
 
-…jenže zároveň má ve svých výchozích stylech definován tento předpis:
+… jenže zároveň má ve svých výchozích stylech definován tento předpis:
 
 ```css
 a:-webkit-any-link {

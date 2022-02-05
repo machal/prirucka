@@ -110,7 +110,7 @@ Tentokrát bude asi lepší prohlížet jej na samostatná stránce: [cdpn.io/ZE
 
 V demíčku se kromě výkonu JavaScriptu ušetří 700 kB a zhruba 20 requestů, které vyžaduje vkládané video z YouTube. To není málo.
 
-Autoři Chrome [upozorňují](https://web.dev/native-lazy-loading), že prvky `<iframe>` skryté pomocí `display:none`, `visibility:hidden`, dále pak ty s negativním pozicováním mimo obrazovku nebo velmi malých rozměrů do čtyř pixelů výšky a šířky prohlížeč nebude načítat líně, protože je považuje za analytické iframy.
+Autoři Chromu [upozorňují](https://web.dev/native-lazy-loading), že prvky `<iframe>` skryté pomocí `display:none`, `visibility:hidden`, dále pak ty s negativním pozicováním mimo obrazovku nebo velmi malých rozměrů do čtyř pixelů výšky a šířky prohlížeč nebude načítat líně, protože je považuje za analytické iframy.
 
 Prohlížeč se navíc během stahování iframe pokouší zobrazit zástupný symbol, což u obrázků zatím nedělá.
 

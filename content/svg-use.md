@@ -95,7 +95,7 @@ Může za to milá fíčurka CSS, o které [píší na MDN](https://developer.mo
 
 Máte tedy dvě možnosti: První je na původním objektu styly nedefinovat. Druhá je ručně nastavit [dědičnost](css-dedicnost.md) na hodnotu, které je výchozí v běžném DOMu: `stroke:inherit`.
 
-V dalším Codepenu si vyzkoušejme všechny možnosti.
+V dalším CodePenu si vyzkoušejme všechny možnosti.
 
 * `fill` není na původním objektu definován, takže jej mohou klony používat.
 * `stroke` na původním definován je, takže se pokusy o přepsání na klonech neberou v potaz.

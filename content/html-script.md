@@ -23,11 +23,11 @@ alert('Ahoj!');
 </script>
 ```
 
-…jenže v praxi je to složitější a právě tento způsob vkládání má svá rizika. Čtěte proto prosím dále.
+… jenže v praxi je to složitější a právě tento způsob vkládání má svá rizika. Čtěte proto prosím dále.
 
 ## Značka `<script>` {#script}
 
-…a nebo z HTML odkážeme na externí soubor s javascriptovým kódem:
+… a nebo z HTML odkážeme na externí soubor s javascriptovým kódem:
 
 ```html
 <script src="script.js"></script>

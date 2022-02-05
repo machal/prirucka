@@ -6,13 +6,13 @@ Media Queries mají širokou podporu v prohlížečích, ale lidé ve standardiz
 
 Zato Container Queries jsou navržené pro větší část scénářů, kdy tyto dotazy potřebujeme – pro layout komponent ve stránce, tedy jen výseku okna prohlížeče. Jenže v době psaní těchto textů Container Queries podporu prakticky nemají.
 
-V moderních systémech layoutu je ještě jedna možnost – zalamovat rozvržení úplně bez podmínek, takzvané „No Queries“ layouty. Na první pohled to může znít skvěle, i mě to tak pořád zní, ale má to řadu háčků nebo přímo velrybářských harpun, abych byl přesný.
+V moderních systémech layoutu je ještě jedna možnost – zalamovat rozvržení úplně bez podmínek, takzvané „No Queries“ layouty. Na první pohled to může znít skvěle, i mně to tak pořád zní, ale má to řadu háčků nebo přímo velrybářských harpun, abych byl přesný.
 
 Prostě od toho raději zase tak moc nečekejte. Ale jsou situace, kdy vám No Queries (zkusme jim alternativně říkat také „bezdotazová rozvržení“) v praxi velmi pomohou, takže pojďme na to. Ve většině příkladů budeme zalamováním layoutu opět trápit náš mediální objekt.
 
 ## Flexbox a `min-width` s `max-width`
 
-Nejprve si alespoň zjednodušeně připomeňme strukturu HTML, která drží naší komponentu:
+Nejprve si alespoň zjednodušeně připomeňme strukturu HTML, která drží naši komponentu:
 
 ```html
 <div class="container">
@@ -67,15 +67,15 @@ Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku o
 
 Budeme si ten kód muset vysvětlit, že?
 
-- `flex: 1 1 20%` – Obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
-- Základní velikost položek je nastavena užší než je celková šířka plochy (`20%` a  `40%` dává jen 60 procent). Nám slouží jen k definování výchozího poměru stran. Je to jako bychom to uvedli [vlastností `flex-basis`](css-flex-basis.md). O roztažení do celé šířky se pak postará obsah.
+- `flex: 1 1 20%` – Obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to, jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
+- Základní velikost položek je nastavena užší, než je celková šířka plochy (`20%` a  `40%` dává jen 60 procent). Nám slouží jen k definování výchozího poměru stran. Je to adekvátní k zápisu [vlastností `flex-basis`](css-flex-basis.md). O roztažení do celé šířky se pak postará obsah.
 - Bod zlomu definuje maximální šířka obrázku – `max-width: 300px`.
 
-Ještě se teď více zaměřme na ten bod zlomu, abychom to celé opravdu pochopili.
+Teď se ještě více zaměřme na onen bod zlomu, abychom to celé opravdu pochopili.
 
-Jak už víte, flexboxové rozvržení se vždy přizpůsobuje velikost obsahu. Obrázek v tomto layoutu se chová pružně, takže by se ve zvětšování ani smršťování nikde nezastavil.
+Jak už víte, flexboxové rozvržení se vždy přizpůsobuje velikosti obsahu. Obrázek v tomto layoutu se chová pružně, takže by se ve zvětšování ani smršťování nikde nezastavil.
 
-Definicí `max-width: 300px` jej omezíme a stanovíme s její pomocí také bod zlomu. Znamená to však, že jakmile layout splní požadavky výchozí šířky, tedy dosáhne oněch `20%` definovaných jako `flex-basis`, prostě prohlížeč vykreslí obě položky vedle sebe.
+Definicí `max-width: 300px` jej omezíme a stanovíme s její pomocí také bod zlomu. Znamená to však, že jakmile layout splní požadavky výchozí šířky, tedy dosáhne oněch `20%` definovaných jako `flex-basis`, prohlížeč prostě vykreslí obě položky vedle sebe.
 
 Obrázek pak bude na nejmenších šířkách rodičovského prvku při rozložení vedle sebe opravdu malinký. Mohli bychom to změnit nastavením minimální šířky:
 
@@ -87,7 +87,7 @@ Obrázek pak bude na nejmenších šířkách rodičovského prvku při rozlože
 }
 ```
 
-Tady nedovolíme obrázku menší šířku než 200 pixelů. Řeší to náš problém, ale zároveň jsem si tím zadělali na jiný. V mezikroku vznikne po straně obrázku prostor.
+Tady nedovolíme obrázku menší šířku než 200 pixelů. Řeší to náš problém, ale zároveň jsme si tím zadělali na jiný. V mezikroku vznikne po straně obrázku prostor.
 
 <figure>
 <img src="../dist/images/original/vdlayout/no-queries-flex-wrap-min-width.jpg" width="1600" height="900" alt="">
@@ -116,11 +116,11 @@ Obě strany rozvržení mají stejnou šířku. V hodnotě `300px` je uložený 
 
 CodePen: [cdpn.io/e/WNRjyoE](https://codepen.io/machal/pen/WNRjyoE?editors=1100)
 
-Jak už víte, díky „content out“ povaze flexboxu a vládě obsahu nad layoutem se obrázek a text dělí o prostor různými způsoby, nikoliv přesně na polovinu. O to se stará automatika flexboxu.
+Jak už víte, díky vládě obsahu nad layoutem ve flexboxu se obrázek a text dělí o prostor různými způsoby, nikoliv přesně na polovinu. O to se stará automatika flexboxu.
 
-Jak vidíte, pomocí flexboxu se No Queries layouty dělají docela snadno. Klíčem je umožnit zalomení pomocí `flex-wrap` a pak si hrát s různými vlastnosti určujícími šířku.
+Jak vidíte, pomocí flexboxu se No Queries layouty dělají docela snadno. Klíčem je umožnit zalomení pomocí `flex-wrap` a pak si hrát s různými vlastnostmi určujícími šířku.
 
-Oba příklady ale snad také dobře demonstrují limity bezdotazových layoutů. V určitých šířkách prostě nebudou vypadat tak dobře, jako ty vypiplané pomocí Media nebo Container Queries.
+Oba příklady ale snad také dobře demonstrují limity bezdotazových layoutů. V určitých šířkách prostě nebudou vypadat tak dobře jako ty vypiplané pomocí Media nebo Container Queries.
 
 Existují situace, kdy to nevadí nebo nevýhodu nepěkné „mezifáze“ rozvržení převáží možnost nepsat layoutové dotazy.
 
@@ -128,7 +128,7 @@ Existují situace, kdy to nevadí nebo nevýhodu nepěkné „mezifáze“ rozvr
 
 Také [CSS grid](css-grid.md) nabízí trik, jak udělat rozvržení bez uvádění dotazů na velikost prvků.
 
-Pro potřeby layoutu komponenty, kterou jsme si vybrali jako červenou nit této kapitoly, media objektu, se ale zase tak moc nehodí.
+Pro potřeby layoutu komponenty, kterou jsme si vybrali jako červenou nit této kapitoly, mediálního objektu, se ale zase tak moc nehodí.
 
 Pojďme si to ukázat přímo v kódu. HTML je pořád stejné, mění se jen kaskádové styly:
 
@@ -163,7 +163,7 @@ Tady jsme mřížku už trošku rozbili. Dobré to není, že?
 
 Řešení tímto trikem v gridu má zásadní nevýhodu – do funkce `repeat()` můžete pochopitelně uvádět jen buňky stejné velikosti.
 
-Daleko zajímavější jsou bezdotazová řešení v gridu pro zápis rozvržení jako jsou fotogalerie.
+Daleko zajímavější jsou bezdotazová řešení v gridu pro zápis rozvržení, jako jsou fotogalerie.
 
 V následujícím demu jsem vyšel z řešení Anthonyho Kuanga.
 
@@ -177,7 +177,7 @@ Kouzelník zde použil stejný trik…
 }
 ```
 
-…ale výsledek je daleko elegantnější. Na obrázku to snad dobře uvidíte.
+… ale výsledek je daleko elegantnější. Na obrázku to snad dobře uvidíte.
 
 <figure>
 <img src="../dist/images/original/vdlayout/no-queries-grid-images.jpg" width="1600" height="900" alt="">
@@ -218,11 +218,9 @@ Vícesloupcový layout. Na první pohled ujde, ale doma to raději nezkoušejte.
 </figcaption>
 </figure>
 
-Dále už následuje jen obligátní CodePen.
-
 CodePen: [cdpn.io/e/ExZmRbM](https://codepen.io/machal/pen/ExZmRbM?editors=1100)
 
-Pro takzvaný No Queries Layout s pomocí vlastnosti `columns` zde máme ještě jednu demostrační ukázku.
+Pro takzvaný No Queries Layout s pomocí vlastnosti `columns` zde máme ještě jednu demonstrační ukázku.
 
 Responzivní obrázková galerie je opět založena pouze na definici šířky sloupce s pomocí `column-width`. Zde je řešení obohacené také o `break-inside:avoid`, což zabrání zalomení sloupečku uvnitř položky galerie. [cdpn.io/e/rraAgj](https://codepen.io/machal/pen/rraAgj?editors=1100)
 
@@ -234,7 +232,7 @@ Tak či tak, obě řešení využívají CSS Multicol Layout pro situace, na kte
 
 Není to úplně předmětem této knížky, ale ani tuto metodu nechci přejít mlčením. Jde o způsob, jak udělat rozvržení bez Media Queries, zcela mimo světy gridu, flexboxu a vícesloupcového layoutu.
 
-Trik „The Fab Four“, který Rémi Parmentier pojmenoval podle amerického revivalového bandu Beatles, byl původně určen pro tvorbu responzivních e-mailů. Jak možná mnozí víte, e-mailové klienty netvoří zrovna přátelskou partu co se Media Queries týče.
+Trik „The Fab Four“, který Rémi Parmentier pojmenoval podle přezdívky kapely Beatles, byl původně určen pro tvorbu responzivních e-mailů. Jak možná mnozí víte, e-mailové klienty netvoří zrovna přátelskou partu co se Media Queries týče.
 
 Technika je založená na tomto kódu pro jednotlivé položky layoutu:
 
@@ -269,8 +267,8 @@ CodePen: [cdpn.io/e/ZQgEoZ](https://codepen.io/thierry/pen/ZQgEoZ?editors=1100)
 
 Zde bychom odbočku k layoutům bez Media (a Container) Queries mohli ukončit. Než jsem tuto podkapitolu začal psát, přemýšlel jsem, zda se do toho vůbec pouštět.
 
-Proti bylo část mé osobnosti, která má ráda čistá řešení, která odmítá používat kladivo na klepání masa a paličku na přibíjení hřebíků. Ta která ví, že tato řešení mají řadu nevýhod a složitostí, jež mohou například začátečníky svést na scestí, kde po prvotním nadšení přijde kruté vystřízlivění v podobě zjištění, že pro jejich případ se toto řešení nehodí.
+Proti byla část mé osobnosti, která má ráda čistá řešení a která odmítá používat kladivo na klepání masa a paličku na přibíjení hřebíků. Ta, která ví, že tato řešení mají řadu nevýhod a složitostí, jež mohou například začátečníky svést na scestí, kde po prvotním nadšení přijde kruté vystřízlivění v podobě zjištění, že pro jejich případ se toto řešení nehodí.
 
 Pro zveřejnění byla moje praktická část („Občas se to někomu může hodit, když ještě v prohlížečích nemáme Container Queries.“) a autorská část („Když už píšeš o layoutech, toto nemůžeš vynechat.“)
 
-To máte dvě části Michálka proti jedné. A vy už víte, jak hlasování dopadlo.
+To máte dvě části Michálka proti jedné. A vy už víte, jak ten vnitřní rozpor dopadl.

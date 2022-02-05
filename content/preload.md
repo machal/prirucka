@@ -187,7 +187,7 @@ var preloadSupported = function() {
 }
 ```
 
-…čímž se dostáváme k tématu podpory v prohlížečích.
+… čímž se dostáváme k tématu podpory v prohlížečích.
 
 ## Podpora v prohlížečích {#prohlizece}
 

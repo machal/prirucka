@@ -25,7 +25,7 @@ V jedné deklaraci můžete nastavit jen jeden z obou možných gridů:
 - *explicitní*, výslovně definovaný pomocí vlastností [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
 - *implicitní*, definovaný pomocí vlastností [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md)
 
-…a ještě další vlastnosti.
+… a ještě další vlastnosti.
 
 Je to mocná zbraň, která dokáže zrychlit práci zkušených mřížkových ninjů, ovšem začínajícím bych ji raději nedoporučoval používat.
 

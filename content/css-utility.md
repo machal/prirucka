@@ -162,7 +162,7 @@ BEM komponenta:
   <h2 class="box__heading">
 ```
 
-…a její modifikátor:
+… a její modifikátor:
 
 ```html
 <div class="box box--vertical">

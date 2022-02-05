@@ -30,7 +30,7 @@ Když tedy do stránky vložíme obrázek…
     alt="Fotka z dovolené">
 ```
 
-…vykreslí se na Retina displeji v ploše 200 × 200 hardwarových pixelů.
+… vykreslí se na Retina displeji v ploše 200 × 200 hardwarových pixelů.
 
 A tady vznikají problémy. Prohlížeč totiž nebude mít fotografii v dostatečné kvalitě, protože vykresluje 100 × 100 velký obrázek na 200 × 200 mřížce. Na iPhone s Retina displejem pak naše úžasná fotografie z dovolené prostě nebude tak krásně ostrá. Kurnik šopa!
 
@@ -51,7 +51,7 @@ Takže když napíšu následující podmínku…
   (max-width: 600px) { … }
 ```
 
-…cílím s jeho pomocí na rozlišení obrazovky nebo velikosti okna, které mají méně než 600 CSS pixelů. A cílím tedy i na zmiňovaný iPhone 5S.
+… cílím s jeho pomocí na rozlišení obrazovky nebo velikosti okna, které mají méně než 600 CSS pixelů. A cílím tedy i na zmiňovaný iPhone 5S.
 
 Správnou meta značku pro viewport rozebírám v jiném článku. [vrdl.cz/p/viewport-meta](https://www.vzhurudolu.cz/prirucka/viewport-meta)
 

@@ -48,7 +48,7 @@ Ale zpět k Bootstrapu.
 
 ## Příklad s media objektem
 
-Pojďme si přístup k budování rozhraní pommocí utility tříd v Bootstrapu představit na příkladu s takzvaným „media objektem“ – prvkem s fotkou, nadpisem a kouskem textu. Tady je Codepen: [cdpn.io/e/JOJomB](https://codepen.io/machal/pen/JOJomB)
+Pojďme si přístup k budování rozhraní pommocí utility tříd v Bootstrapu představit na příkladu s takzvaným „media objektem“ – prvkem s fotkou, nadpisem a kouskem textu. Tady je CodePen: [cdpn.io/e/JOJomB](https://codepen.io/machal/pen/JOJomB)
 
 Základní struktura by s použitím utility tříd ze čtyřkového Bootstrapu vypadala takto:
 
@@ -65,7 +65,7 @@ Tohle vám udělá layout s obrázkem nalevo a textem napravo:
 - `flex-row` nastaví layout do vodorovného směru (`flex-direction: row`).
 - `mr-3` udělá odsazení mezi fotkou a textem (`margin-right` třetího stupně, což je `1rem`).
 
-Na Codepenu si pak můžete všimnout, že používám třídy `my-item`, `my-item__image` a `my-item__text`. Ty hlavně proto, aby se HTML lépe četlo. Ano, i díky [metodice BEM](bem.md).
+Na CodePenu si pak můžete všimnout, že používám třídy `my-item`, `my-item__image` a `my-item__text`. Ty hlavně proto, aby se HTML lépe četlo. Ano, i díky [metodice BEM](bem.md).
 
 Určitě jste si ale všimli, že pro vytvoření komponenty jsem nepotřeboval ani čárku vlastního CSS kódu. To je na tomto přístupu skvělé. A vážně nejen pro lidi, kterým se z CSS dělá nevolno.
 
@@ -87,7 +87,7 @@ Vysvětlím jen ty nově přidané třídy:
 - Kombinace tříd `flex-column flex-md-row` říká, že výchozí směr layoutu je svislý (`flex-direction: column`) a od `md` („medium“) [breakpointu](breakpointy.md) (768px) se mění na vodorovný (`flex-direction: row`).
 - Kombinaci `mb-3 mb-md-0 mr-md-3` si už asi odvodíte. Na malých displejích dělá odsazení zezdola (`mb-3`), která se od bodu zlomu `md` ruší (`mb-md-0`) a mění na odsazení zprava (`mr-md-3`).
 
-Opět jsem nemusel napsat ani řádku vlastního CSS. Podívejte se na Codepen: [cdpn.io/e/mqmNyz](https://codepen.io/machal/pen/mqmNyz).
+Opět jsem nemusel napsat ani řádku vlastního CSS. Podívejte se na CodePen: [cdpn.io/e/mqmNyz](https://codepen.io/machal/pen/mqmNyz).
 
 
 ## Utility třídy v Bootstrapu

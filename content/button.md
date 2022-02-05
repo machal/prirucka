@@ -145,7 +145,7 @@ Zkusme tedy další pokus s odkazem. Hlídání stisknutí mezerníku musíme o�
 </a>
 ```
 
-Můžete si to zkusit na Codepenu: [cdpn.io/e/eExXmy](https://codepen.io/machal/pen/eExXmy?editors=1000#0).
+Můžete si to zkusit na CodePenu: [cdpn.io/e/eExXmy](https://codepen.io/machal/pen/eExXmy?editors=1000#0).
 
 ### A teď úplná prasárna: prvek SPAN jako tlačítko
 

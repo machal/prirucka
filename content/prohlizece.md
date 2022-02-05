@@ -199,6 +199,6 @@ Pro zájemce je více informací [na Wikipedii](https://en.wikipedia.org/wiki/Br
 - Nebojte se nových technologií. [Flexbox](css-flexbox.md) má prakticky plnou podporu, [CSS grid](css-grid.md) podporují všechny prohlížeče kromě MSIE 11, ten jen částečně. Obojí vám ušetří práci a nabídne nové možnosti. Fallbacky ve starých prohlížečích rozhodně nedělejte plnohodnotné se zobrazením v moderních prohlížečích. Obvykle se vám to nevyplatí.
 - Nepodceňujte menší prohlížeče. Obstarávají minimálně čtvrtinu zhlédnutí stránek. Naučte se testovat tak, abyste s tím neměli moc práce. Doporučím zase svůj článek. [vrdl.cz/p/jak-testovat-responzivni-weby](https://www.vzhurudolu.cz/prirucka/jak-testovat-responzivni-weby)
 
-…a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. Testujte ve všech relevantních prohlížečích, prosím. Díky za pozornost!
+… a raději doslovně pro méně zkušené: Pokud by vás snad napadlo, že web se prohlíží hlavně na Chrome a pak trochu Firefoxu, ošklivě se klamete. Testujte ve všech relevantních prohlížečích, prosím. Díky za pozornost!
 
 <!-- AdSnippet -->

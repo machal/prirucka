@@ -301,7 +301,7 @@ entry: {
 }
 ```
 
-…objekt:
+… objekt:
 
 ```js
 entry: {
@@ -310,7 +310,7 @@ entry: {
 }
 ```
 
-…nebo třeba pole:
+… nebo třeba pole:
 
 ```js
 entry: ["./src/index.js", "./src/styles.scss"],

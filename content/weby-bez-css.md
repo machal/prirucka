@@ -25,7 +25,7 @@ Struktura HTML má vliv i na to, jak bude vypadat náhled, který se zobrazí po
 
 ### 4) Čtecí služby třetích stran: Pocket, Instapaper atd. {#cteci-sluzby}
 
-…nebo taky RSS čtečky jako Feedly a další. Vezmou si vaše HTML a přiřadí si k němu nějaké vlastní CSS.
+… nebo taky RSS čtečky jako Feedly a další. Vezmou si vaše HTML a přiřadí si k němu nějaké vlastní CSS.
 
 
 ### 5) Čtecí mód v Safari nebo Firefoxu {#reader-view}
@@ -61,7 +61,7 @@ Jenže někdy zjistíte, že jste jako uživatel webu bez stylů zároveň pova�
  
 ### 8) Hlasoví asistenti: Siri, Google Assistant
 
-…nebo Cortana či Alexa. Jsem si docela jistý, že půjde o jeden z kontextů používání webů. Pojedete v autě nebo hromadné dopravě a necháte si číst nové články z internetu. Velmi blízká budoucnost.
+… nebo Cortana či Alexa. Jsem si docela jistý, že půjde o jeden z kontextů používání webů. Pojedete v autě nebo hromadné dopravě a necháte si číst nové články z internetu. Velmi blízká budoucnost.
 
 
 

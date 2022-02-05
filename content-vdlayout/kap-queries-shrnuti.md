@@ -20,7 +20,7 @@ b. vypisuje obsah na obrazovku, například `contain: "ahoj"`
 c. nejde o vlastnost, ale o dotaz, zda prvek obsahuje určitý text: `@contain ("ahoj")`
 1. **Co dělá zápis `@container (min-width: 30em)`?**  
 a. zjišťujeme šířku kontejneru na odpadky při automatické analýze obrázku v prohlížeči  
-b. ptáme se jeho prostřednictvím na minimální šířku rodičovského prvku  
+b. jeho prostřednictvím se ptáme na minimální šířku rodičovského prvku  
 c. zjišťujeme šířku obrazovky uživatele
 1. **Jaké jsou klíčové triky pro „No Queries“ dotazy?**  
 a. stačí uvést `display:flex` nebo `display:grid` a funguje to samo  
@@ -40,6 +40,6 @@ a. zda je obrazovka zařízení na výšku (méně široká než vysoká)
 1. **K čemu slouží CSS vlastnost `contain`?**  
 a. definuje zapouzdření (nezávislost) určité části stránky  
 1. **Co dělá zápis `@container (min-width: 30em)`?**  
-b. ptáme se jeho prostřednictvím na minimální šířku rodičovského prvku  
+b. jeho prostřednictvím se ptáme na minimální šířku rodičovského prvku  
 1. **Jaké jsou klíčové triky pro „No Queries“ dotazy?**  
 c. vlastnost `flex-wrap` ve flexboxu a zápis `repeat(auto-fit, minmax(…, …))` v gridu  

@@ -234,7 +234,7 @@ Pro MSIE 10 a 11, ve kterých nějaká verze CSS gridu funguje, nám zde Autopre
 }
 ```
 
-…a tak dále.
+… a tak dále.
 
 ### Chcete autoplacement? Pozor na výjimky
 

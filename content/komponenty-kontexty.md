@@ -66,7 +66,7 @@ Pak se stane něco špatného. Náš milý kolega programátor si přečte HTML,
 </div>
 ```
 
-…vyleze kvůli tomu ze své temné sluje, aby nám mlčky zaťukal na rameno a pak sám sobě na čelo. Načež prohlásí něco ve smyslu, že přeci nebude přidávat třídu na tlačítko podle toho, kde se zrovna vyskytuje. Že to je složitá logika a že tohle si má řešit CSS, potažmo my. A v tomto případě má pravdu.
+… vyleze kvůli tomu ze své temné sluje, aby nám mlčky zaťukal na rameno a pak sám sobě na čelo. Načež prohlásí něco ve smyslu, že přeci nebude přidávat třídu na tlačítko podle toho, kde se zrovna vyskytuje. Že to je složitá logika a že tohle si má řešit CSS, potažmo my. A v tomto případě má pravdu.
 
 ## Kontextový přístup {#kontexty}
 

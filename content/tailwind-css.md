@@ -183,7 +183,7 @@ module.exports = {
 }
 ```
 
-…nebo přidat vlastní. [V dokumentaci pluginů](https://tailwindcss.com/docs/plugins) uvidíte, jak mocný nástroj je možné vytvořit, když dovolíte konfiguraci na úrovni JavaScriptu, tedy plnohodnotného programovacího jazyka.
+… nebo přidat vlastní. [V dokumentaci pluginů](https://tailwindcss.com/docs/plugins) uvidíte, jak mocný nástroj je možné vytvořit, když dovolíte konfiguraci na úrovni JavaScriptu, tedy plnohodnotného programovacího jazyka.
 
 ## Varianty: stavy, pseudotřídy, breakpointy… {#varianty}
 

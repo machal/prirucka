@@ -101,7 +101,7 @@ Možná vás napadlo, že pokud atributy určují poměr stran, nemuseli byste s
   width="16" height="9">
 ```
 
-…a mě to napadlo určitě, protože přesně takhle elegantně funguje responzivní layout [v AMP](amp.md).
+… a mě to napadlo určitě, protože přesně takhle elegantně funguje responzivní layout [v AMP](amp.md).
 
 Jenže to fungovat nebude. Pokud do `width` a `height` vložíte menší čísla než je aktuální potřeba layoutu, vykreslí se obrázek ve fixních rozměrech.
 
@@ -138,7 +138,7 @@ Pokud používáte [značku `<picture>`](picture.md) pro vkládání různě roz
 </picture>
 ```
 
-…může vám tato metoda haprovat, protože u alternativních zdrojů uvedených v `<source>` není možné atributy `width` a `height` definovat. O tom se ale ví a [už se to řeší](https://github.com/whatwg/html/issues/4968).
+ může vám tato metoda haprovat, protože u alternativních zdrojů uvedených v `<source>` není možné atributy `width` a `height` definovat. O tom se ale ví a [už se to řeší](https://github.com/whatwg/html/issues/4968).
 
 ### Lazy loading obrázků {#problemy-lazy-loading}
 
@@ -149,7 +149,7 @@ S nativním lazy loadingem by „nativní poměr stran“ fungovat měl…
   width="640" height="360">
 ```
 
-…ale je zde jeden [bugísek v Chromu](https://bugs.chromium.org/p/chromium/issues/detail?id=1045745), který se hodí sledovat.
+… ale je zde jeden [bugísek v Chromu](https://bugs.chromium.org/p/chromium/issues/detail?id=1045745), který se hodí sledovat.
 
 Pokud nepoužíváte nativní líné načtení - je potřeba ošetřit přes `aspect-ratio` a ostatní metody
 

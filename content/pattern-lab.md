@@ -18,7 +18,7 @@ Podcast: <a href="https://soundcloud.com/vzhurudolu/atomicky-design-a-pattern-la
 
 ## Designové systémy
 
-Myslím to, co asi znáte pod pojmy *style guide* nebo *pattern library*. Neznáte? Je to jako by jste si udělali pro větší projekt vlastní knihovnu odpovídající Bootstrapu. Chcete lepší vysvětlení? Podívejte se na video „Úvod do Style Guides“.
+Myslím to, co asi znáte pod pojmy *style guide* nebo *pattern library*. Neznáte? Je to, jako by jste si udělali pro větší projekt vlastní knihovnu odpovídající Bootstrapu. Chcete lepší vysvětlení? Podívejte se na video „Úvod do Style Guides“.
 
 YouTube: [youtu.be/FvTzAwebUjQ](https://www.youtube.com/watch?v=FvTzAwebUjQ)
 

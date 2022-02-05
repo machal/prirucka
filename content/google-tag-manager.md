@@ -213,7 +213,7 @@ Ona totiž vlastní značka s kódem…
 </script>
 ```
 
-…udělá přesně to, co si myslíte.
+… udělá přesně to, co si myslíte.
 
 Ano, asi toto nenastane, ale krásně to vypovídá o tom, jak moc opatrní u udělování přístupů musíte být. A taky jak moc je důležité, abyste se jako vývojáři o manažery značek zajímali a sledovali je.
 

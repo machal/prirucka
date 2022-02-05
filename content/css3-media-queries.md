@@ -20,7 +20,7 @@ Z CSS2 budete znát podmínky pro typy médií jako třeba `@media print`. Norma
 
 ## Anatomie Media Query
 
-Dotaz na medium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
+Dotaz na médium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
 
 <figure>
 <img src="../dist/images/original/media-query.jpg" alt="">

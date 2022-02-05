@@ -63,7 +63,7 @@ https://cdn.example.cz/obrazek.png
 
 Teď si představme, že se obrázek vkládá do stránky `https://www.iframe.cz/` a ta se jako `<iframe>` vkládá do `https://www.e-shop.cz/kategorie`.
 
-Autoři Chrome mluví o novém klíči „Network Isolation Key“, který obsahuje tuto sadu:
+Autoři Chromu mluví o novém klíči „Network Isolation Key“, který obsahuje tuto sadu:
 
 - Doménu druhého řádu pro stránku (přesněji [eTLD+1](https://web.dev/same-site-same-origin/) – `e-shop.cz`.
 - Totéž pro aktuální iframe – `iframe.cz`.
@@ -97,7 +97,7 @@ Jen to připomenu. Pokud jste například tahali jQuery z této adresy…
 https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 ```
 
-…je možné, že dříve ji uživatel stáhl už na nějakém jiném webu. Tohle je věc, kterou partitioned cache zabila.
+… je možné, že dříve ji uživatel stáhl už na nějakém jiném webu. Tohle je věc, kterou partitioned cache zabila.
 
 Je ale otázka, jestli lze zabít mrtvolu.
 

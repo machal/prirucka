@@ -1,6 +1,6 @@
 # Container Queries
 
-Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, kterým současný layout v CSS a vlastně celý webdesign limitují v rozletu.
+Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, která současný layout v CSS a vlastně celý webdesign limitují v rozletu.
 
 To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
 
@@ -15,19 +15,19 @@ Skeptik by se mě na tomto místě zeptal, jaký to má háček. Ano, má to há
 
 ## Těžká hlava autora technické knížky
 
-Psaní knížek je maraton. Pokud dlouho pracujete na technické knížce (a já na ni v době dokončování během ledna 2022 pracuji už dva roky), může se vám stát, že v průběhu psaní vznikne technologie, která celý hotový materiál vezme a vyhodí jej do koše. Nebo vám na něj dá přinejmenším radikálně jiný pohled.
+Psaní knížek je maraton. Pokud dlouho pracujete na technické knížce (a já na ni v době dokončování během ledna 2022 pracuji už dva roky), může se vám stát, že v průběhu psaní vznikne technologie, kvůli které mohu celý hotový materiál vyhodit do koše. Nebo se na něj přinejmenším radikálně jinak podívám.
 
 To druhé se mi děje právě teď, když píšu tyto řádky. Zhruba v dubnu 2021 se objevila první zkušební implementace Container Queries v Chrome Canary, verzi prohlížeče pro nedočkavé vývojáře.
 
-Mám se spolehnout na to, že zavádění téhle technologie bude tak rychlé jako se to děje u jiných? Že Google nebude čekat na specifikaci od W3C (která zatím není) a prostě to naimplementuje a pustí mezi lidi?
+Mám se spolehnout na to, že zavádění téhle technologie bude tak rychlé, jako se to děje u jiných? Že Google nebude čekat na specifikaci od W3C (která zatím není) a prostě to naimplementuje a pustí mezi lidi?
 
 Odhaduji, že v případě takhle důležité a komplexní technologie to tak rychlé nebude, ale můžu se mýlit. Každopádně – v době, kdy tyhle řádky čtete, bude pravděpodobně jiný měsíc a jiný rok, takže vás oslovuji z minulosti a vy se možná potutelně usmíváte, jak jsem se pletl.
 
-V knížce budu zatím Container Queries považovat za technologii budoucnosti. Občas ji připomenu, ale stavět na ni zatím moc nebudu.
+V knížce budu zatím Container Queries považovat za technologii budoucnosti. Občas ji připomenu, ale stavět na ní zatím moc nebudu.
 
 ## Container Queries jsme odjakživa chtěli a mysleli si, že je nikdy nedostaneme
 
-V roce 2017 se této technologii říkalo „Element Queries“, což dávalo smysl. Šlo o dotazy na rozměrové parametry konkrétního prvku stránky. Lidé přemýšleli, jak ji dostat do prohlížečů a já k tomu napsal:
+V roce 2017 se této technologii říkalo „Element Queries“, což dávalo smysl. Šlo o dotazy na rozměrové parametry konkrétního prvku stránky. Lidé přemýšleli, jak ji dostat do prohlížečů, a já k tomu napsal:
 
 > Je to věc, kterou ve webdesignu opravdu hodně chci. A věřte mi, že vy taky.
 
@@ -37,7 +37,7 @@ Pořád si to myslím, ale tehdy to tak jednoduché nebylo:
 
 Proč to tehdy vypadalo, že tahle technologie se do prohlížečů nedostane? Lidé ze standardizační organizace W3C tehdy nad Container Queries přemýšleli a zdálo se jim, že je to špatně implementovatelné v prohlížečích.
 
-Pak debata na mnoho let utichla a zůstalo jen u javascriptových knihoven, které jsou ale nejsou z pohledu rychlosti vykreslení hodné doporučení.
+Pak debata na mnoho let utichla a zůstalo jen u javascriptových knihoven, které ale z pohledu rychlosti vykreslení nejsou hodné doporučení.
 
 Pokud by vás to jako exkurze do minulosti zajímalo, zde je ten můj článek: [vrdl.cz/p/element-queries](https://www.vzhurudolu.cz/prirucka/element-queries).
 
@@ -45,9 +45,9 @@ Ale zpět k současnosti.
 
 ## Implementace Element Queries v Chromu
 
-S novým návrhem přišla v prosinci 2020 Miriam Suzanne, ale je to jen jakýsi vrchol pyramidy, postavený na letité práci mnoha dalších.
+S novým návrhem přišla v prosinci 2020 Miriam Suzanne, ale je to jen jakýsi vrchol pyramidy postavený na letité práci mnoha dalších.
 
-Skládá se ze dvou kroků. První je definování kontejneru, což se v aktuální verzi specifikace děje takto:
+Tento návrh se skládá ze dvou kroků. První je definování kontejneru, což se v aktuální verzi specifikace děje takto:
 
 ```css
 .container {
@@ -73,7 +73,7 @@ Druhý krok je samotný dotaz na kontejner, Container Query:
 
 Tohle je asi zřejmé. Pokud bude šířka rodičovského prvku alespoň `30em` (což je v obvyklých případech 480 pixelů), aplikují se pravidla uvnitř.
 
-Je možné, že i v době, kdy toto čtete, budou Container Queries schované za vlaječkovým nastavení prohlížeče. Jak to tedy otestovat?
+Je možné, že i v době, kdy toto čtete, budou Container Queries schované za vlaječkovým nastavením prohlížeče. Jak to tedy otestovat?
 
 1. Potřebujete Chromium verze 91 a vyšší.
 2. Jděte do vlaječkového nastavení: `chrome://flags`.
@@ -81,11 +81,11 @@ Je možné, že i v době, kdy toto čtete, budou Container Queries schované za
 
 ## Specifikace a další prohlížeče
 
-Na Container Queries se těším jako malý Jarda a tak po očku vývoj sleduji. V Chromu se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právět tuto verzi.
+Na Container Queries se těším jako malý Jarda a tak po očku vývoj sleduji. V Chromu se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právě tuto verzi.
 
 Když se podíváme na další dva zásadní prohlížeče (Safari a Firefox), zdá se, že Container Queries hodlají implementovat. Ale v systémech pro správu rozpracovaných vlastností je u obou jen pustý a prázdný záznam bez viditelné práce a bez jakékoliv diskuze.
 
-Problém bude také v tom, že specifikace je velmi v raném stádiu vývoje a často se mění. Je ale strašně zajímavé ten vývoj sledovat, protože se tam např. objevují novinky jako jednotky relativní k šířce kontejneru komponenty. To by se měl malý Jarda zase na co těšit!
+Problém bude také v tom, že specifikace je ve velmi raném stádiu vývoje a často se mění. Je ale strašně zajímavé ten vývoj sledovat, protože se tam např. objevují novinky jako jednotky relativní k šířce kontejneru komponenty. To by se měl malý Jarda zase na co těšit!
 
 Na závěr teoretického úvodu přidávám odkaz na draft specifikace „CSS Containment Module Level 3“. [vrdl.in/contdraft](https://drafts.csswg.org/css-contain-3/)
 
@@ -128,7 +128,7 @@ Díky Container Queries se prostě zaměříme jen na danou komponentu a podmín
 <figure>
 <img src="../dist/images/original/vdlayout/container-queries-chrome.jpg" alt="">
 <figcaption markdown="1">
-Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jejich obsahu.“ Media Queries: „Uff!“, Container Queries: „Podrž mi to pivo…“
+Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jejich obsahu.“ Media Queries: „Ufff!“ Container Queries: „Podrž mi to pivo…“
 </figcaption>
 </figure>
 
@@ -186,7 +186,7 @@ Safari: „Container Queries neumím, ale nějak to zobrazím.“
 
 Na mobilu nemusí vadit, že podmínku `@container` prohlížeč neumí. Tam layout často nepotřebujeme. Na větších obrazovkách dostane uživatel jiný vzhled komponenty. Vadí to? Nemusí.
 
-Osobně bych přemýšlel, jak moc odlišný uživatelský prožitek zde lidé dostávají a kolik lidí se to dotkne. Safari je ve střední Evropě populární hlavně na mobilech, jako desktopový prohlížeč jej používá jen pár jednotek procent uživatelů.
+Osobně bych přemýšlel, jak moc odlišný uživatelský prožitek zde lidé dostávají a kolika z nich se to dotkne. Safari je ve střední Evropě populární hlavně na mobilech, jako desktopový prohlížeč jej používá jen pár jednotek procent uživatelů.
 
 Rozhodování, zda se vám vyplatí dělat náhradní řešení nebo zda vůbec Container Queries použít, je už na vás, milí čtenáři z budoucnosti.
 

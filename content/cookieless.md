@@ -97,7 +97,7 @@ Jak jsem postupoval? V prvé řadě jsem si udělal seznam všech třetích stra
 
 * [Cast](https://tryca.st/) (vkládání podcastů)
 * [Cloudinary](https://cloudinary.com/) (obrázky z CDN)
-* [Codepen](https://codepen.io/) (vkládání ukázek kódu)
+* [CodePen](https://codepen.io/) (vkládání ukázek kódu)
 * [Disqus](https://disqus.com/) (komentářová služba pro články)
 * [Facebook](https://www.facebook.com/) (měřící pixel a občas vkládaný obsah z Facebooku)
 * [Twitter](https://twitter.com/) (vkládané tweety do článků)
@@ -178,7 +178,7 @@ Tohle je nejlepší skupina. Patří do ní poskytovatelé vkládaných komponen
 
 * Cloudinary – původně mě vcelku vyděsili, protože v návaznosti na jejich doménu jsem u Vzhůru dolů viděl řadu uložených cookies, včetně analytických. Ale tyto cookies dostanou [jen přihlášení uživatelé](https://support.cloudinary.com/hc/en-us/community/posts/200787742-Cookieless-domain), tedy ti, kteří Cloudinary využívají na svých webech. Čtenáři webu už ale mají prohlížeč čistý jako studánku.
 * Cast – poskytovatel přehrávače pro podcast, je v pohodě. Neukládá žádné sušenky.
-* Codepen – poskytovatel vkládaných ukázek, se také zdá v pořádku a jiné než nutné cookies neukládá.
+* CodePen – poskytovatel vkládaných ukázek, se také zdá v pořádku a jiné než nutné cookies neukládá.
 
 ## Pojďme to shrnout {#shrnuti}
 

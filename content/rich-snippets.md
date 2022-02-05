@@ -14,7 +14,7 @@ Zjednodušeně řečeno do stránky přidáte nějaký kus kódu ve formátu JSO
 </script>
 ```
 
-…a ve výsledcích vyhledávání se časem objeví speciální výpis této informace:
+… a ve výsledcích vyhledávání se časem objeví speciální výpis této informace:
 
 <figure>
 <img src="../dist/images/original/rich-snippets-event.png" alt="Rich snippets k události">

@@ -77,7 +77,7 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 - Barvy:
 	- Viz výše. Nikdy ne bílé pozadí, viz ebooky a dark-mode.
 	- Informace nebo jejich vazba nesmí být závislá jen na barvě. Kvůli černobílým Kindle čtečkám.
-	- Codepeny upravit podle tohoto barevného schématu.
+	- CodePeny upravit podle tohoto barevného schématu.
 - Vizuální formát, obsah:
 	- Písmo: Foro, InConsolata.
 	- Písmo pro vnitřek CodePenů - sjednotit na systémové: Helvetica, Georgia, Courrier.
