@@ -69,7 +69,7 @@ Ekvivalentní k `flex-direction:column; flex-wrap:wrap`.
 - `row-reverse wrap`  
 Ekvivalentní k `flex-direction:row-reverse; flex-wrap:wrap`.
 
-Všechno je to dobře vidět v online ukázce na CodePenu, kde si také můžete měnit velikost písma, šířku viewportu nebo to jinak rozbíjet a přitom se to všechno naučit.
+Všechno je to dobře vidět v online ukázce na CodePenu, kde si také můžete měnit velikost písma, šířku viewportu nebo to jinak rozbíjet a při tom se to všechno naučit.
 
 CodePen: [cdpn.io/e/JjReqbB](https://codepen.io/machal/pen/JjReqbB?editors=0000)
 

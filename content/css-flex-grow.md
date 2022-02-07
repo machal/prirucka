@@ -61,18 +61,18 @@ Druhé a třetí položce jsme nenastavili žádnou šířku. HTML vypadá násl
 ```
 
 Ve výchozím stavu se všechny tři položky roztáhnou podle své přirozené velikosti.
-Pokud bude v rodičovském kontejneru dostatek volného místa, pak si první položka, stylovaná přepínači nahoře, vezme tolik zbývajícího prostoru, kolik jsme jí ochotní dát právě nastavením vlastnosti `flex-grow`:
+Pokud bude v rodičovském kontejneru dostatek volného místa, pak si první položka, stylovaná přepínači nahoře, vezme tolik zbývajícího prostoru, kolik jsme jí ochotni dát právě nastavením vlastnosti `flex-grow`:
 
 - `0` – zůstane na výchozí šířce.
 - `0.5` – vezme si polovinu volného prostoru.
 - `1` – roztáhne se do celé šířky volného prostoru.
 - `2` – opět se jen roztáhne do celé šířky volného prostoru.
 
-U poslední možnosti, nastavení na `2` se pozastavme. Je zde vidět, že `flex-grow` hospodaří vždy jen s prostorem uvnitř kontejneru flexboxu, takže neumožní položce zabrat dvojnásobek zbytku a vyrůst tedy mimo kontejner.
+U poslední možnosti, nastavení na `2`, se pozastavme. Je zde vidět, že `flex-grow` hospodaří vždy jen s prostorem uvnitř kontejneru flexboxu, takže neumožní položce zabrat dvojnásobek zbytku a vyrůst tedy mimo kontejner.
 
 <!-- AdSnippet -->
 
-Hodnota `2` by měla efekt pokud bychom v demu změnili nastavení růstu ostatních položek, například na `flex-grow:1`. V takovém případě by se stala poněkud obézní a zabrala by ze zbylého prostoru dvojnásobek oproti jejím dvěma sestrám.
+Hodnota `2` by měla efekt, pokud bychom v demu změnili nastavení růstu ostatních položek, například na `flex-grow:1`. V takovém případě by se stala poněkud obézní a zabrala by ze zbylého prostoru dvojnásobek oproti jejím dvěma sestrám.
 
 CodePen: [cdpn.io/e/XWNbNQE](https://codepen.io/machal/pen/XWNbNQE?editors=0000)
 

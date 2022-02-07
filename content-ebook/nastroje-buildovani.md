@@ -17,4 +17,4 @@ Zástupce zjednodušených buildovacích nástrojů. Obvykle doporučuji začít
 
 Kromě všech základních úkolů nad CSS, Javascripty a obrázky umí aktualizovat weby přes FTP a provádět synchronizované prohlížení webu na více zařízeních.
 
-Pokud se ale nechcete omezovat a jste ochotní investovat čas do učení složitějšího nástroje, začněte používat rovnou Grunt.
+Pokud se ale nechcete omezovat a jste ochotni investovat čas do učení složitějšího nástroje, začněte používat rovnou Grunt.

@@ -1,6 +1,6 @@
 # CSS vlastnost flex-wrap: zalamování položek flexboxu
 
-Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda se položky rozvržení mohou zalamovat na více řádků nebo nikoliv.
+Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda se položky rozvržení mohou zalamovat na více řádků, nebo nikoliv.
 
 <div class="connected" markdown="1">
 
@@ -34,7 +34,7 @@ Položky se mohou zalomit do více řádků a zároveň se pořadí řádků oto
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-wrap.jpg" width="1600" height="900" alt="CSS vlastnost flex-wrap">
 <figcaption markdown="1">
-*Může se layout zalamovat, a pokud ano jakým směrem?*
+Může se layout zalamovat? A pokud ano, jakým směrem?
 </figcaption>
 </figure>
 
@@ -105,6 +105,6 @@ Možná už víte, že můžete použít [vlastnost `flex-flow`](css-flex-flow.m
 
 ## Podpora v prohlížečích {#podpora}
 
-Podpora je velmi dobrá a o chybách nevím. Na webu CanIUse se u Internet Exploreru 11 v době psaní uvádí částečná podpora s poznámkou, že to je kvůli velkému počtu chyb. Trošku horší je, že už nejsou uvedeny a dle mého neexistují. [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-wrap)
+Podpora vlastnosti `flex-wrap` je velmi dobrá a o chybách nevím.  Na webu CanIUse se u Internet Exploreru 11 v době psaní uvádí částečná podpora s poznámkou, že to je kvůli velkému počtu chyb. Trošku horší je, že je tento web neuvádí – a dle mého ani neexistují.  [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-wrap)
 
 <!-- AdSnippet -->

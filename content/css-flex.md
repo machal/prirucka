@@ -55,11 +55,11 @@ Pokud chcete například nastavit, aby vaše položky zabíraly minimálně `150
 
 ## Používejte flex raději než konkrétní vlastnosti {#pouzivejte-flex}
 
-Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku `flex` proti konkrétním vlastnostem, které zastupuje.
+Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku `flex` před konkrétními vlastnostmi, které zastupuje.
 
 <!-- AdSnippet -->
 
-Důvodem mimojiné je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
+Důvodem mimo jiné je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
 
 ## Přednastavené hodnoty {#prednastavene}
 
@@ -76,10 +76,10 @@ Jednoslovné hodnoty se vám budou hodit asi nejčastěji. Podívejte se na prvn
 
 </div>
 
-Dále si dopad přednastavených hodnot zkratky `flex` vysvětlíme v textu:
+Teď si vysvětlíme dopad přednastavených hodnot zkratky `flex`:
 
 - `flex: initial`  
-Nastavení výchozí hodnoty, tedy `flex: 0 1 auto`. Položky se tak s ubývajícím místem zmenšují, ale nezvětšují nad velikost svého obsahu.
+Nastavení výchozí hodnoty, tedy `flex: 0 1 auto`. Položky se s ubývajícím místem zmenšují, ale nezvětšují se nad velikost svého obsahu.
 - `flex: auto`  
 Odpovídá `flex: 1 1 auto`. Dotčené položky se stanou plně pružnými s výchozím rozměrem podle svého obsahu. Asi nejčastější případ, který potřebujete.
 - `flex: none`  
@@ -102,6 +102,6 @@ CodePen: [cdpn.io/e/vYyKaEp](https://codepen.io/machal/pen/vYyKaEp?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Explorery ve verzích 10 a 11 tuto vlastnost implementovaly jako `-ms-flexbox`, ale s pomocí [Autoprefixeru](autoprefixer.md) není nutné na toto myslet. Všechny informace o podpoře jsou na [CanIUse](https://caniuse.com/mdn-css_properties_display_flex).
+Internet Explorer ve verzích 10 a 11 tuto vlastnost implementoval jako `-ms-flexbox`, ale s pomocí [Autoprefixeru](autoprefixer.md) není nutné na toto myslet. Všechny informace o podpoře jsou na [CanIUse](https://caniuse.com/mdn-css_properties_display_flex).
 
 <!-- AdSnippet -->

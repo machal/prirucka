@@ -42,7 +42,7 @@ Něco vám řeknu. Specifikace má pravdu. Pokud chcete pro přístupnost něco 
 Problém se týká všech CSS vlastností, které mohou v nových systémech rozvržení ovlivnit vizuální pořadí:
 
 - [Vlastnost `order`](css-order.md), která změní způsob automatického umísťování položek.
-- [Deklarace `grid-auto-flow:dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak, než jsou uvedeny v DOM.
+- [Deklarace `grid-auto-flow:dense`](css-grid-auto-flow.md), jež automaticky přeskupí položky jinak, než jsou uvedeny v DOMu.
 - [Vlastnost `grid-area`](css-grid-area.md), která umístí položky do konkrétního místa mřížky a opět nemusí respektovat pořadí ve zdroji.
 - [Vlastnost `flex-direction`](css-flex-direction.md) a hodnoty, které převracejí pořadí – `row-reverse` a `column-reverse`.
 

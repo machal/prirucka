@@ -4,7 +4,7 @@ Další stránky jsou věnované referenčním příručkám různých CSS modul
 
 Nečekám, že je budete číst slovo od slova jako detektivku. Jsou zde k dispozici pro vaši potřebu.
 
-Pokud ale knížku čtete postupně, snažil jsem se i ty referenční příručky psát tak, aby vás bavilo je číst a hlavně – abyste se vždy dozvěděli něco nového.
+Pokud ale knížku čtete postupně, snažil jsem se i referenční příručky psát tak, aby vás bavilo je číst a hlavně – abyste se vždy dozvěděli něco nového.
 
 Jestliže s flexboxem začínáte, zkuste si projít vše, ale zaměřte se hlavně na [vlastnost `flex`](css-flex.md).
 

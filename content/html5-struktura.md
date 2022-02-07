@@ -63,7 +63,7 @@ Něco jako boční lišta. Méně významné informace, které se vztahují k hl
 
 [HTML5](https://www.w3.org/TR/html5/sections.html#the-aside-element) specifikace říká, že na stránce může být `<aside>` více. Jedna pod `<html>` prvkem a další pod jednotlivými sekcemi. 
 
-[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#complementary) specifikace říká, že jde o doplňující informace k hlavnímu obsahu stránky. Podobná úroveň v DOM hierarchii, ale bez hlavního obsahu nedává smysl. Všechny zde zmiňované `role` atributy by ve stránce měly být jen jednou.
+[WAI-ARIA](https://www.w3.org/TR/wai-aria/roles#complementary) specifikace říká, že jde o doplňující informace k hlavnímu obsahu stránky. Podobná úroveň v hierarchii DOMu, ale bez hlavního obsahu nedává smysl. Všechny zde zmiňované `role` atributy by ve stránce měly být jen jednou.
 
 ### `<nav role="navigation">`
 

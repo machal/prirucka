@@ -7,8 +7,8 @@ a) `display:flex`
 b) `display:flexbox`  
 c) `layout:flex`
 1. **Jaký je výchozí směr os flexboxu?**  
-a) hlavní je vodorovná, příčná je svislá  
-b) hlavní je svislá, příčná vodorovná  
+a) hlavní osa má vodorovný směr, příčná osa svislý  
+b) hlavní osa má svislý směr, příčná osa vodorovný  
 c) jde o chyták, flexbox na rozdíl od gridu nemá dvě osy
 1. **Jak můžeme změnit směr os flexboxu?**  
 a) vlastností `flex-direction`  
@@ -46,7 +46,7 @@ c) `flex: 0 1 auto`
 1. **Jak definovat režim zobrazení flexboxu?**  
 a) `display:flex`  
 1. **Jaký je výchozí směr os flexboxu?**  
-a) hlavní je vodorovná, příčná je svislá  
+a) hlavní osa má vodorovný směr, příčná osa svislý  
 1. **Jak můžeme změnit směr os flexboxu?**  
 c) vlastností `flex-direction`, nastavením jazyka nebo vlastností `writing-mode`
 1. **Co dělá zápis `flex-wrap:wrap`?**  

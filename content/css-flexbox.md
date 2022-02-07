@@ -1,6 +1,6 @@
 # Flexbox: referenční příručka všech vlastností
 
-*Flex* v češtině znamená *pružný*, *přizpůsobivý*. Flexboxy jsou tedy *pružné* elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
+Flex v češtině znamená pružný, přizpůsobivý. Flexboxy jsou tedy pružné elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)
@@ -12,7 +12,7 @@ Toto je referenční příručka s příklady pro všechny vlastnosti, které ve
 
 ## Vlastnosti flexboxu {#vlastnosti}
 
-Vlastnosti se týkají buď kontejneru, tedy rodičovského prvku nebo položek.
+Vlastnosti se týkají buď kontejneru, tedy rodičovského prvku, nebo položek.
 
 ### Kontejner flexboxu {#vlastnosti-kontejner}
 
@@ -25,13 +25,13 @@ Možná je také „inline“ hodnota: `inline-flex`, která se chová jako `inl
   <article role="article">
     <h4><a href="css-flex-wrap.md"><code>flex-wrap</code></a></h4>
     <p><a href="css-flex-wrap.md"><img src="../dist/images/small/vdlayout/css-flex-wrap-schema.jpg" alt="Vlastnost flex-wrap" /></a></p>
-    <p>Mohou se položky zalamovat? Výchozí je nezalamovat. <br>Např. <code>flex-wrap:wrap</code> – položky se mohou vykreslit na další řádek.</p>
+    <p>Mohou se položky zalamovat? Výchozí stav je nezalamovat. <br>Např. <code>flex-wrap:wrap</code> – položky se mohou vykreslit na další řádek.</p>
   </article>
 
   <article role="article">
     <h4><a href="css-flex-direction.md"><code>flex-direction</code></a></h4>
     <p><a href="css-flex-direction.md"><img src="../dist/images/small/vdlayout/css-flex-direction-schema.jpg" alt="Vlastnost flex-direction" /></a></p>
-    <p>Určí směr toku rozvržení. Výchozí je zleva doprava, do řádku. <br>Např. <code>flex-direction:column</code> – položky se skládají shora dolů, do sloupce.</p>
+    <p>Určí směr toku rozvržení. Výchozí stav je zleva doprava, do řádku. <br>Např. <code>flex-direction:column</code> – položky se skládají shora dolů, do sloupce.</p>
   </article>
 
   <article role="article">
@@ -155,7 +155,7 @@ Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude za
 <!-- /Kopie z css-multicolumn.md -->
 </div>
 
-Nyní známe vlastnosti a teď pojďme prozkoumat jednoduchý příklad.
+Nyní známe vlastnosti a pojďme prozkoumat použití flexboxu v konkrétní situaci.
 
 ## Základy v jednoduchém příkladu {#priklad}
 
@@ -185,7 +185,7 @@ V dalším textu si ukážeme, jak bych postupoval já.
 
 ### Všechny sloupce mají být stejně vysoké {#priklad-sloupce}
 
-Stejná výška prvků platí i v případech kdy má jeden sloupec delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče pomocí [vlastnosti `display`](css-display.md) udělat kontejner flexboxu:
+Stejná výška prvků platí i v případech, kdy má jeden sloupec delší obsah než zbylé dva. To je to nejjednodušší. Stačí z rodiče pomocí [vlastnosti `display`](css-display.md) udělat kontejner flexboxu:
 
 ```css
 .container {
@@ -281,8 +281,8 @@ Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě 
 
 - flex kontejner – rodičovský element
 - flex položka – všichni přímí potomci flex kontejneru
-- hlavní osa – výchozí je vodorovná, ale lze změnit
-- příčná osa – vždy příčná k hlavní, takže ve výchozí podobě svislá
+- hlavní osa – výchozí je vodorovná, ale toto lze změnit
+- příčná osa – vždy příčná k hlavní, takže ve výchozí podobě je svislá
 - hlavní rozměr – výchozí je šířka, ale řídí se nastavením hlavní osy
 - příčný rozměr – výchozí je výška
 
@@ -297,8 +297,8 @@ Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s po
 </figcaption>
 </figure>
 
-Konkrétní podporu je ale potřeba rozpadnout podle jednotlivých vlastností, uvedených výše v tabulce. Tam je situace už různorodější. 
+Konkrétní podporu je ale potřeba rozdělit podle jednotlivých vlastností uvedených výše v tabulce. Tam už je situace různorodější.
 
-Bojem s více či méně příjemnými chybami je provázena práce v Internet Exploreru, protože jde o nejstarší dnes sloužící prohlížeče. Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích. Není to ale nic vážného, tento prohlížeč od Microsoftu už prakticky vymřel a chyby v něm nejsou tak velké.
+Bojem s více či méně příjemnými chybami je provázena práce v Internet Exploreru, protože jde o nejstarší dnes sloužící prohlížeč. Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích. Není to ale nic vážného, tento prohlížeč od Microsoftu už prakticky vymřel a chyby v něm nejsou tak velké.
 
 <!-- AdSnippet -->

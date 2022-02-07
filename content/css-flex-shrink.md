@@ -40,7 +40,7 @@ Pevně doufám, že když se podíváte na obrázek, problematiku smršťování
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-shrink.jpg" width="1600" height="900" alt="CSS vlastnost flex-shrink">
 <figcaption markdown="1">
-*Různé hodnoty vlastnosti na první položce dělají různé smršťování.*
+*Různé hodnoty vlastnosti na první položce způsobují různé smršťování.*
 </figcaption>
 </figure>
 
@@ -68,23 +68,23 @@ Demo jsme obohatili ještě o nastavení každého potomka tak, aby se pokoušel
 }
 ```
 
-Ta paralela se skutečným rodičovstvím je zde až mrazivá. Mámy a tátové mezi čtenáři vědí, že takhle rozpínavé děti, bojující o každé volné místo naší pozornosti, nechceme, ale nakonec jsou takové nějakou chvíli všechny. Ale nic, zpět k CSS…
+Ta paralela se skutečným rodičovstvím je zde až mrazivá. Mámy a tátové mezi čtenáři vědí, že takhle rozpínavé děti, bojující o každičký kousíček naší pozornosti, nechceme, ale nakonec jsou takové nějakou chvíli všechny. Raději se vraťme k CSS…
 
 <!-- AdSnippet -->
 
 Podívejme se na různé možnosti nastavení `flex-shrink`, které dostává první dítě  (nebo raději _potomek_) jménem `.box`:
 
-- `0` – nesmršťuje se. Nebude se za žádnou cenu omezovat. Jednou jsme řekli `width:100%`, tak co bychom také chtěli…? Podřídí se tomuto pravidlu a oba ostatní sourozence vytlačí ven. Vzhledem k tomu, že výchozí hodnota `flex-shrink` je `1`, sourozenci si poctivě ze své šířky ubrali.
+- `0` – nesmršťuje se. Nebude se za žádnou cenu omezovat. Jednou jsme ale řekli `width:100%`, tak co bychom také chtěli?… Podřídí se tomuto pravidlu a oba ostatní sourozence vytlačí ven. Vzhledem k tomu, že výchozí hodnota `flex-shrink` je `1`, sourozenci si poctivě ze své šířky ubrali.
 - `0.5` – ubere si polovinu oproti sourozencům, takže při zmenšování rodičovského prvku zabírá stále více místa.
 - `1` – v tomto případě se všichni potomkové spravedlivě smršťují stejným podílem. (Z pohledu rodiče ideální stav.)
 - `2` – první položka si ubírá dvojnásobek oproti zbylým dvěma.
 
-Je to trochu jasnější? Snad ano. Živou ukázku hledejte na následujícím odkaze.
+Je to trochu jasnější? Snad ano. Živou ukázku hledejte v následujícím odkazu.
 
 CodePen: [cdpn.io/e/GRNJNVg](https://codepen.io/machal/pen/GRNJNVg?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 
-Podpora vlastnosti `flex-shrink` je plná. Internet Explorer 10 jako výchozí hodnotu chybně používá `0`, ale tuto informaci už ve 21. století potřebovat nebudete. Vše o podpoře najdete na webu [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-shrink).
+Podpora vlastnosti `flex-shrink` je plná. Internet Explorer 10 používá jako výchozí hodnotu chybně 0, ale tuto informaci už v 21. století potřebovat nebudete. Vše o podpoře najdete na webu [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-shrink).
 
 <!-- AdSnippet -->

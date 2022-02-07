@@ -25,11 +25,11 @@ Toto jsou možné hodnoty:
 - `row`  
 (Výchozí hodnota.) Vyskládá flex položky do řádky.
 - `row-reverse`  
-Do řádky, ale v opačném směru, tedy zprava doleva.
+Skládání položek do řádky, ale v opačném směru, tedy zprava doleva.
 - `column`  
 Položky flexboxu se skládají shora dolů, do sloupce.
 - `column-reverse`  
-Do sloupce, ale v opačném směru, tedy zdola nahoru.
+Skládání položek do sloupce, ale v opačném směru, tedy zdola nahoru.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-direction.jpg?2" width="1600" height="900" alt="CSS vlastnost flex-direction">
@@ -54,7 +54,7 @@ Také u této vlastnosti můžete použít [zkratku `flex-flow`](css-flex-flow.m
 
 ## Záludnosti změny pořadí {#poradi}
 
-Je potřeba říci, že směr layout ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v arabštině zprava doleva, v některých verzích zápisu japonštiny shora dolů. Jak jsem [psal jinde](css-flexbox-dobre-vedet.md), záleží to také na nastavení vlastností `writing-mode` a `direction`.
+Je potřeba říci, že směr layoutu ve flexboxu vždy vychází ze zvyklostí daného jazyka – u nás tedy zleva doprava, v arabštině zprava doleva, v některých verzích zápisu japonštiny shora dolů. Jak jsem [psal jinde](css-flexbox-dobre-vedet.md), záleží to také na nastavení vlastností `writing-mode` a `direction`.
 
 <div class="web-only" markdown="1">
 
@@ -78,12 +78,12 @@ Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „�
 
 ## Vliv na `flex-basis` {#flex-basis}
 
-Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basis`](css-flex-basis.md) nastavujete výšku, tedy vlastnost `height`, nikoliv šířku a tedy `width`.
+Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basis`](css-flex-basis.md) nastavujete výšku, tedy vlastnost `height`, nikoliv šířku, `width`.
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `flex-direction` funguje dobře. Jedinou mě známou výjimkou je flexbug číslo 14, kdy při použití `display:inline-flex` a `flex-flow:column wrap` prohlížeče neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md).
+Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je flexbug číslo 14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md).
 
-Více o podpoře je na  [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-direction).
+Další informace o podpoře jsou na [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-direction).
 
 <!-- AdSnippet -->

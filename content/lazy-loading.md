@@ -40,7 +40,7 @@ Nejčastěji líně načítané prvky – obrázky a `<iframe>` s obsahem třet�
 
 ### 2) Méně složitý DOM {#proc-2}
 
-Google nám webmasterům radí, abychom počet prvků ve stromu DOM drželi [pod 1500 uzlů](https://developers.google.com/web/tools/lighthouse/audits/dom-size). Souhlasím, v DOM by opravdu mělo být jen to nejdůležitější. Zrychluje to všechny operace nad stromem, ale také třeba překreslování stránky.
+Google nám webmasterům radí, abychom počet prvků ve stromu DOM drželi [pod 1500 uzlů](https://developers.google.com/web/tools/lighthouse/audits/dom-size). Souhlasím, v DOMu by opravdu mělo být jen to nejdůležitější. Zrychluje to všechny operace nad stromem, ale také třeba překreslování stránky.
 
 Veškerý méně důležitý obsah dostupný na akci uživatele – posun stránky, kliknutí, najetí myši – bychom měli načíst až když se akce přiblíží.
 

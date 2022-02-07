@@ -1,6 +1,6 @@
 # CSS vlastnost flex-basis: velikost položky flexboxu
 
-Vlastnost `flex-basis` určuje výchozí velikost prvku v rámci rozvržení postaveném na flexboxu.
+Vlastnost `flex-basis` určuje výchozí velikost prvku v rámci rozvržení postaveného na flexboxu.
 
 <div class="connected" markdown="1">
 
@@ -29,14 +29,14 @@ Většinou `flex-basis` určuje výchozí šířku položky, tedy jako `width`. 
 Možné hodnoty:
 
 - `auto` (výchozí)  
-Přebírá rozměr podle `width` a `height`.  Pokud ten je také `auto`, pak platí, že rozměr určuje obsah, tedy se použije dále uvedená hodnota `content`. Distribuce volného místa pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md) se pak bude týkat jen místa, které položky obsadily nad rámec svého obsahu – „relativní model“ pružnosti rozebírám také níže.
+Přebírá rozměr podle `width` a `height`.  Pokud ten je také `auto`, pak platí, že rozměr určuje obsah, tedy se použije dále uvedená hodnota `content`. Distribuce volného místa pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md) se pak bude týkat jen místa, které položky obsadily nad rámec svého obsahu – „relativní model“ pružnosti rozebírám více níže.
 - `content`  
-Velikost na základě obsahu položky. Toto klíčové zatím podporuje jen Firefox a Chrome. V mých CodePenech níže jsou vidět rozdíly mezi `content` a `auto`. Podobného efektu jako s  `flex-basis:content` dosáhnete nastavením `flex-basis:auto` a vlastností `width`/`height` také na hodnotu `auto`.
+Nastaví velikost na základě obsahu položky. Toto klíčové slovo zatím podporuje jen Firefox a Chrome. V mých CodePenech níže jsou vidět rozdíly mezi `content` a `auto`. Podobného efektu jako s  `flex-basis:content` dosáhnete nastavením `flex-basis:auto` a zároveň vlastností `width`/`height` také na hodnotu `auto`.
 - `0`  
 Nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se bude týkat celé šířky položky – „absolutní model“ pružnosti.
-- Jakýkoliv CSS rozměr, např. `20%`, `100px`, `15em`… – toto je naštěstí nejčastější a tedy ne tak komplikované.
+- Nastavení Jakéhokoliv CSS rozměru, např. `20%`, `100px`, `15em…` – toto je naštěstí nejčastější typ hodnoty, a tedy ne tak komplikované.
 
-Firefox podporuje ještě další hodnoty – `max-content` a `min-content`. O obou pak píšu v kontextu [funkce `minmax()`](css-minmax.md).
+Firefox podporuje ještě další hodnoty – `max-content` a `min-content`. O obou píšu v kontextu [funkce `minmax()`](css-minmax.md).
 
 <!-- AdSnippet -->
 
@@ -58,9 +58,9 @@ Pokud uvedeme `flex-basis:0`, nezohlední se velikost textového nebo jiného ob
 </figcaption>
 </figure>
 
-Na horním části obrázku se pružnost počítá relativně k obsahu, takže se vezme šířka obsahu a k němu se po stranách připočte volný prostor odpovídající podílu.
+Na horní části obrázku se pružnost počítá relativně k obsahu, takže se vezme šířka obsahu a k němu se po stranách připočte volný prostor odpovídající podílu.
 
-Na dolním části je vidět absolutní pružnost – obsah se vůbec nebere v úvahu a podíl na celku se počítá z celé šířky elementu.
+Na dolní části je vidět absolutní pružnost – obsah se vůbec nebere v úvahu a podíl na celku se počítá z celé šířky elementu.
 
 Standardní je samozřejmě relativní model pružnosti, ale je potřeba vědět, co nám způsobí `flex-basis:0` nebo třeba nastavení [vlastnosti `flex`](css-flex.md) na konkrétní číslo: `flex:1`.
 
@@ -84,7 +84,7 @@ Máme zde opět jednoduché HTML:
 
 Kontejner je nastavený jako `display:flex` a pomocí přepínačů stylujeme první položku – `.box--one`.
 
-Ukázky jsem připravil dvě – v jedné využívám vlastnosti `flex-basis` samotnou a v druhé zároveň s `width`.
+Ukázky jsem připravil dvě – v jedné využívám vlastnost `flex-basis` samotnou a ve druhé zároveň s `width`.
 
 ### Ukázka bez použití `width` {#ukazka-bez-width}
 
@@ -95,9 +95,9 @@ Ukázky jsem připravil dvě – v jedné využívám vlastnosti `flex-basis` sa
 </figcaption>
 </figure>
 
-Můžete zde vidět, mezi hodnotami `auto` a `content` žádné rozdíly nejsou. Položky `.box` totiž nemají nastavené rozměry pomocí vlastností `width` či `height`.
+Jak zde můžete vidět, mezi hodnotami `auto` a `content` žádné rozdíly nejsou. Položky `.box` totiž nemají nastavené rozměry pomocí vlastností `width` či `height`.
 
-V případě nastavení `flex-basis:0` se použije nejmenší možný obsahový rozměr, což je v případě textu šířka nejdelšího slova.
+U nastavení `flex-basis:0` se použije nejmenší možný obsahový rozměr, což je v případě textu šířka nejdelšího slova.
 
 Jakmile nastavíme rozměr (`flex-basis:20%`), chová se vlastnost stejně jako `width`.
 
@@ -122,7 +122,7 @@ Tady je potřeba si uvědomit důležitou věc, kterou už jsem zmiňoval – `f
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-basis-width.jpg" width="1600" height="900" alt="CSS vlastnost flex-basis a width">
 <figcaption markdown="1">
-*Přidáním `width` se mění situace.*
+Přidáním šířky se mění situace.
 </figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ CodePen: [cdpn.io/e/poNjzwg](https://codepen.io/machal/pen/poNjzwg?editors=0000)
 
 ## Vlastnost flex-basis a width/height {#flexbasis-width}
 
-Z již uvedeného leccos vyplývá, ale myslím, že nebude od věci si přehledně připomenout, jak se liší nastavování rozměrů pomocí `flex-basis` od téhož s použitím `width` a `height`.
+Z již uvedeného leccos vyplývá, ale myslím, že nebude od věci si přehledně připomenout, jak se liší nastavování rozměrů pomocí `flex-basis` od nastavování rozměrů s použitím `width` a `height`.
 
 ### 1) `flex-basis` má přednost {#flexbasis-width-1}
 
@@ -164,8 +164,8 @@ Pokud byste chtěli omezit velikost prvku minimemem nebo maximem, můžete využ
 Toto platí právě proto, že:
 
 - rozměry prvku ve flexboxu se berou z `flex-basis`,
-- pokud není definováno, pak z `width`/`height`,
-- pokud ani jedno není definováno, pak z obsahu.
+- pokud to není definováno, pak se berou z `width`/`height`,
+- pokud ani jedno není definováno, pak se berou z obsahu.
 
 ```
 flex-basis > width/height > obsah
@@ -175,7 +175,7 @@ flex-basis > width/height > obsah
 
 ## Používejte vlastnost flex {#pouzivejte-flex}
 
-Obecně navíc platí, že [vlastnost `flex`](css-flex.md) je lepší než `flex-basis` a to je lepší než `width`/`height`.
+Obecně navíc platí, že [vlastnost `flex`](css-flex.md) je zase lepší než `flex-basis` a to je lepší než `width`/`height`.
 
 Vlastnost `flex-basis` totiž zvládne jak výšku, tak šířku, což se při změně směru rozvržení může hodit.
 
@@ -183,13 +183,13 @@ Vlastnost `flex` je ještě praktičtější, protože má chytře vymyšlené v
 
 ## Podpora v prohlížečích {#podpora}
 
-Základní podpora pro `flex-basis` je v prohlížečích výborná. Výjimku si nárokuje jen Internet Explorer, který při jiném nastavení než `flex-basis:auto` počítá velikost prvku podle box modelu `content-box`.
+Základní podpora pro `flex-basis` je v prohlížečích výborná. Výjimku si nárokuje jen Internet Explorer, který při jiném nastavení než `flex-basis:auto` počítá velikost prvku podle způsobu počítání rozměru boxu („box model“)  v režimu `content-box`, což je výchozí hodnota počítající jen se samotným obsahem a bez vlastností hodnot okrajů.
 
 <div class="web-only" markdown="1">
 → *Související: [`box-sizing:content-box`](css3-box-sizing.md) a další hodnoty pro změnu počítání šířky boxů*
 </div>
 
-No a pak tady máme klíčové slovo `content`. Stejně jako klíčová slova `max-content` a `min-content` je zatím nepodporuje Safari, ale v lednu 2021 to vypadá, že je ohlášena podpora v další verzi.
+No a pak tady máme klíčové slovo `content`. Stejně jako klíčová slova `max-content` a `min-content` je zatím nepodporuje Safari, ale v únoru 2022 to vypadá, že je ohlášena podpora v další verzi.
 
 Více najdete na [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-basis).
 
