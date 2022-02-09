@@ -10,12 +10,12 @@ Tady a teď si k teorii o CSS přidáme výchozí hodnotu a projdeme si hodnoty 
 
 ## Zděděná a výchozí hodnota {#zdedena-vychozi}
 
-Téma výchozích hodnot je důležité. Každá CSS vlastnost nějakou má.
+Téma výchozích hodnot je důležité. Každá vlastnost CSS nějakou má.
 
 <figure>
 <img src="../dist/images/original/css-initial-inherit-mdn.png" alt="MDN: CSS initial a inherit">
 <figcaption markdown="1">
-*Obrázek: V dokumentaci na [developer.mozilla.org](https://developer.mozilla.org/) nebo ve specifikaci CSS lze najít, zda se hledaná CSS vlastnost dědí a jaká je její výchozí hodnota.*
+*Obrázek: V dokumentaci na [developer.mozilla.org](https://developer.mozilla.org/) nebo ve specifikaci CSS lze najít, zda se hledaná vlastnost CSS  dědí a jaká je její výchozí hodnota.*
 </figcaption>
 </figure>
 

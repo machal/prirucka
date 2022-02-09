@@ -4,7 +4,7 @@ Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi po
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost align-content](../dist/images/medium/vdlayout/css-align-content-schema.jpg)
+![Vlastnost align-content](../dist/images/medium/vdlayout/css-align-content-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -101,7 +101,7 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 - `space-evenly`  
   Volné místo se rovnoměrně rozdělí mezi položky i mezi první a poslední položku a okraje kontejneru. Tato vlastnost není v kombinaci s flexboxem podporována v IE11.
 - `stretch`  
-  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato vlastnost není v kombinaci s flexboxem podporována v IE11.  
+  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato vlastnost není v kombinaci s flexboxem podporována v IE11.  
 
 ### Poziční
 

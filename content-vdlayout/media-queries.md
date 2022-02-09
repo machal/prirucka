@@ -71,7 +71,7 @@ Můžeme podmínky kombinovat pomocí logického „a zároveň“:
   and (min-width: 30em) 
   and (max-width: 40em) {  
   /* Aplikuje se jen na viewport 
-     obrazovky mezi 30 a 40 em
+     obrazovky mezi 30em a 40em
   */
 }
 ```
@@ -82,7 +82,7 @@ Můžeme aplikovat logické „nebo“, a to pomocí čárky:
 @media screen and (max-width: 40em), 
   print {
   /* Aplikuje se na obrazovky od šířky  
-     viewportu 40 em nebo v tisku
+     viewportu 40em nebo v tisku
   */ 
 }
 ```

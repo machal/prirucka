@@ -232,7 +232,7 @@ Nestačí proměnná? Volte mixin. Jejich výhody sumarizuje Sitepoint v článk
 Prostě `@extend` zahoďte, nepoužívejte, utečte od něj. A pokud jsem vás nepřesvědčil, buďte při jeho používání alespoň hóódně opatrní. Tady je [návod ze Sass Guidelines Huga Giraudela](https://sass-guidelin.es/cz/#extend) v českém překladu Honzy Bittnera:
 
 - Použijte extend z modulu, ne napříč různými moduly.
-- Použijte extend na samostatné placeholdery, nikoli na skutečné selektory.
+- Použijte extend na samostatné placeholdery, nikoliv na skutečné selektory.
 - Ujistěte se, že placeholder, který extendujete, je ve stylech přítomný co možná nejméně.
 
 <!-- AdSnippet -->

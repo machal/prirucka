@@ -1,4 +1,4 @@
-# CSS vlastnost display
+# Vlastnost CSS display
 
 Vlastnost `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
 

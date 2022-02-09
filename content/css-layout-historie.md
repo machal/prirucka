@@ -166,7 +166,7 @@ Z flexboxu se stává „Candidate Recommendation“, což znamená, že specifi
 
 ## 2017: Nová a lepší specifikace gridu
 
-Vzniká specifikace „CSS grid Layout Module Level 1“.
+Vzniká specifikace „CSS Grid Layout Module Level 1“.
 
 Lidé z W3C ale původní specifikaci od Microsoftu radikálně předělali. Přidali například možnosti automatického umísťování do mřížky a rozšířili ji o lepší možnosti responzivity.
 
@@ -179,7 +179,7 @@ grid-template-areas:
   "col1 col2";
 ```
 
-„Je to jako ASCII art pro vytváření šablony,“ řekla prý Elika Etemad, editorka pro modul CSS grid Layout Module ve W3C, což sedí.
+„Je to jako ASCII art pro vytváření šablony,“ řekla prý Elika Etemad, editorka pro modul CSS Grid Layout Module ve W3C, což sedí.
 
 S výsledkem se právě teď můžete podrobně seznámit na následujících stránkách.
 

@@ -27,7 +27,7 @@ Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něc
 - [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože se nekamarádí s vývojáři, kteří mají v přátelích Internet Explorer.
 - [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu rádi.
 
-Tak a teď máte nové kamarády, gratuluji vám. Dejte jim odběr.
+Tak a teď máte nové kamarády, gratuluji vám.
 
 V knížce asi zjistíte, že první pohled někdy klame a to, co vám tady tvrdím, nemusí být vždycky pravda. Od toho jsou ale knížky. Aby vás zbavily povrchního pohledu a ukázaly všechna „ale“.
 

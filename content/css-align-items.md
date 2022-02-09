@@ -4,7 +4,7 @@ Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na p
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost align-items](../dist/images/medium/vdlayout/css-align-items-schema.jpg)
+![Vlastnost align-items](../dist/images/medium/vdlayout/css-align-items-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -58,7 +58,7 @@ Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých ob
 - `normal` (výchozí)  
   Ve většině systémů layoutu, včetně gridu nebo flexboxu, půjde jen o jiný zápis pro hodnotu `stretch`, kterou popisujeme níže.
 - `stretch`  
-  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
+  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
 ### Poziční
 

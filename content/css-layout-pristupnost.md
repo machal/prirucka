@@ -18,12 +18,12 @@ Musím vás upozornit na to, že jakmile odlišíte pořadí zobrazování od po
 
 Také proto je ve specifikaci obsaženo toto důrazné varování:
 
-> Autoři musí použít změnu pořadí pouze pro vizuální, nikoli logické přeskupování obsahu.
+> Autoři musí použít změnu pořadí pouze pro vizuální, nikoliv logické přeskupování obsahu.
 
 Logické pořadí je zpravidla pořadí  zápisu kódu a jeho využití si můžete představit v těchto kontextech konzumace stránky:
 
 - _Roboti_  
-Například stroje vyhledávačů, jako je Google. Roboti postupují podle pořadí v HTML nebo DOM.
+Například stroje vyhledávačů, jako je Google. Roboti postupují podle pořadí v HTML nebo DOMu.
 - _Sekvenční navigace stránkou_  
 Tento typ procházení využívají například uživatelé odečítačů obrazovky nebo uživatelé, kteří z nějakého důvodu nemohou použít jiný způsob navigace – ať už z důvodu trvalého či dočasného postižení rukou, jako je třeba zlomenina.
 - _Hlasem a jinými médii_  

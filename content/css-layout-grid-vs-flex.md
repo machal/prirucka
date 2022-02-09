@@ -71,7 +71,7 @@ Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 
 
 Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. Více se tomu věnuji ve druhé kapitole.
 
-Pokud nutně potřebujete obsloužit i uživatele těchto prohlížečů a není možné zajistit fallback k řešení v gridu, pak může flexbox vaše problémy eliminovat.
+Pokud nutně potřebujete obsloužit i uživatele těchto prohlížečů a není možné zajistit fallback, tedy náhradní řešení, pak může flexbox vaše problémy eliminovat.
 
 ## Společné vlastnosti
 

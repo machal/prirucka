@@ -50,7 +50,7 @@ Mimochodem, poprvé jsem tady zmínil skvělý nástroj [Autoprefixer](autoprefi
 
 V následujícím textu vezmeme nové systémy layoutu jeden po druhém a k jejich podpoře v prohlížečích si něco povíme.
 
-## Flexbox a „flexboty“ v MSIE11 {#flexbox}
+## Flexbox a „flexboty“ v MSIE 11 {#flexbox}
 
 Když jsem začal [flexbox](css-flexbox.md) před lety používat, bylo to trochu jako procházka minovým polem.
 
@@ -114,7 +114,7 @@ Máte přečteno? A máte z toho depresi? Chvilku počkejte.
 
 <!-- AdSnippet -->
 
-Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohrozí. Stačí jen vědět, že si v případě podivného chování MSIE11 u flexboxu musíte vzpomenout na existenci stránky Flexbugs nebo tohoto textu. A pak ještě jednu věc.
+Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohrozí. Stačí jen vědět, že si v případě podivného chování MSIE 11 u flexboxu musíte vzpomenout na existenci stránky Flexbugs nebo tohoto textu. A pak ještě jednu věc.
 
 ### Zkuste vynechat flex-basis
 
@@ -126,7 +126,7 @@ Vysvětlím to. Zápis `flex:1 1 auto` je zkratka, která v prvním čísle defi
 
 Dalším nutným vstřícným krokem je potřeba vyhnout se vlastnosti [vlastnosti `flex-basis`](css-flex-basis.md). Často tedy stačí namísto ní použít `width` nebo `height` a všechno to dobře funguje. I v Exploreru.
 
-Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podporu Exploreru, neděste se toho. Nic komplikovaného na tom není a používat flexbox i s podporou MSIE11 je úplně v pohodě.
+Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podporu Exploreru, neděste se toho. Nic komplikovaného na tom není a používat flexbox i s podporou MSIE 11 je úplně v pohodě.
 
 ### A co další chyby?
 
@@ -155,7 +155,7 @@ Když jsem si na Twitteru dělal průzkum mezi vývojáři, vyšlo mi, že význ
 
 Je potřeba říct, že i tenhle prohlížeč grid podporuje – a nepodporuje toho z něj vůbec málo: implicitní mřížku, [funkci `repeat()`](css-repeat.md), funkci [`minmax()`](css-minmax.md) nebo klíčová slova `min-content` a `max-content`.
 
-Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastností toho, čemu říkáme CSS grid Layout, navíc často jinak implementovanou.
+Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastností toho, čemu říkáme CSS Grid Layout, navíc často jinak implementovanou.
 
 Máme zde sice [Autoprefixer](autoprefixer.md), který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 
@@ -200,7 +200,7 @@ Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních proh
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-caniuse.jpg" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Podpora vícesloupcového layoutu v prohlížečích. Zelená je na místech, která byste možná nečekali. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
+Podpora vícesloupcového layoutu v prohlížečích. Zelená je na místech, kde byste to možná nečekali. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).
 </figcaption>
 </figure>
 
@@ -215,7 +215,7 @@ Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 </figcaption>
 </figure>
 
-Asi nejznámějším bugem je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí. V kontextu tématu této knížky jde spíše o drobnost, ale je zde asi největší rozdíl mezi specifikací na papíře a reálným chováním prohlížečů.
+Asi nejznámějším bugem, čili chybou v podpoře, je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí. V kontextu tématu této knížky jde spíše o drobnost, ale je zde asi největší rozdíl mezi specifikací na papíře a reálným chováním prohlížečů.
 
 Pokud bychom se dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl byl to grid ani flexbox. Pokud jde o moderní prohlížeče, Černého Petra si bohužel vytáhlo vícesloupcové rozvržení. Je to samozřejmě proto, že CSS Multicol je výrazně nejméně používaným systémem rozvržení.
 

@@ -138,7 +138,7 @@ Jsou zde ale i další vědomosti, které byste měli mít v hlavě, než si s `
 
 Ve specifikaci se píše:
 
-> Autoři musí použít změnu pořadí pouze pro vizuální, nikoli logické přeskupování obsahu.
+> Autoři musí použít změnu pořadí pouze pro vizuální, nikoliv logické přeskupování obsahu.
 
 Dává to smysl. Když pomocí vlastnosti `order` nebo jiným způsobem změníte pořadí prvku na obrazovce, nijak nezměníte pořadí logické, tedy způsob, jakým obsah konzumují roboti nebo jakým probíhá sekvenční navigace na stránce.  
 

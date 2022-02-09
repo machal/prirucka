@@ -4,7 +4,7 @@ Vlastnost `align-self` nastavuje zarovnání položky na příčné (jinak též
 
 <div class="connected" markdown="1">
 
-![CSS vlastnost align-self](../dist/images/medium/vdlayout/css-align-self-schema.jpg)
+![Vlastnost align-self](../dist/images/medium/vdlayout/css-align-self-schema.jpg)
 
 <div class="web-only" markdown="1">
 
@@ -118,7 +118,7 @@ Také vlastnosti `align-self` můžete předávat všechny hodnoty z jednotlivý
 - `normal`  
   V CSS gridu, flexboxu ale i ve většině systémů pro layout půjde jen o jiný zápis pro hodnotu `stretch`.
 - `stretch`  
-  Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
+  Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
 Opět platí, že v zásadě je výchozí roztažení na výšku – takže hodnota `stretch`.
 
