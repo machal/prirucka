@@ -17,12 +17,12 @@ HTML vypadá takto:
 
 ```html
 <form action="" class="form">
-  <label for="input" class="form__label">
+  <label for="input" class="form-label">
     Type&nbsp;here:  
   </label>
-  <input size="10" class="form__input" id="input"
+  <input size="10" class="form-input" id="input"
      type="text" placeholder="Your text…">
-  <button class="form__button">
+  <button class="form-button">
     Search
   </button>
 </form>
@@ -76,9 +76,9 @@ Na menších displejích chceme, aby se všechny tři prvky vyskládaly pod sebe
     flex-direction: column;
   }
 
-  .form__label,
-  .form__input, 
-  .form__button {
+  .form-label,
+  .form-input, 
+  .form-button {
     width: 100%;
     box-sizing: border-box;
   }
@@ -98,14 +98,14 @@ Kód této části bude o něco jednodušší. Přirozené rozvržení, které n
 ```css
 @media (min-width: 31.25em) {
 
-  .form__input {
+  .form-input {
     flex: auto;
   }
   
 }  
 ```
 
-[Vlastnost `flex`](css-flex.md) je zkratkou pro nastavení velikosti a faktoru zvětšování či smršťování položky flexboxu. Hodnotou `auto` povolíme rovnoměrné zvětšování i smršťování a nastavíme šířku podle potřeby obsahu. Prvky `.form__label` a `.form__button` se tedy roztahovat nebudou, prvek `.form__input` ano.
+[Vlastnost `flex`](css-flex.md) je zkratkou pro nastavení velikosti a faktoru zvětšování či smršťování položky flexboxu. Hodnotou `auto` povolíme rovnoměrné zvětšování i smršťování a nastavíme šířku podle potřeby obsahu. Prvky `.form-label` a `.form-button` se tedy roztahovat nebudou, prvek `.form-input` ano.
 
 Celý kód flexboxového řešení je zde:
 
@@ -124,9 +124,9 @@ Celý kód flexboxového řešení je zde:
     flex-direction: column;
   }
 
-  .form__label,
-  .form__input, 
-  .form__button {
+  .form-label,
+  .form-input, 
+  .form-button {
     width: 100%;
     box-sizing: border-box;
   }
@@ -135,7 +135,7 @@ Celý kód flexboxového řešení je zde:
 
 @media (min-width: 31.25em) {
 
-  .form__input {
+  .form-input {
     flex: auto;
   }
   
@@ -202,8 +202,8 @@ Na větších displejích už nějaký ten layout máme, takže si jej pojďme z
 Poznámky:
 
 - Šabloně layoutu ([vlastnosti `grid-template-`](css-grid-template-rows-columns.md)) nastavíme směr do sloupečků (`-columns`), tedy vodorovný.
-- První a třetí člen (zde `.form__label` a `.form__button`) mají mít šířku podle obsahu – to obstará klíčové slovo `auto`.
-- Prostřední prvek (`.form__input`) se má roztáhnout do zbylého prostoru – k tomu využijeme [zlomkovou jednotku `fr`](css-jednotka-fr.md).
+- První a třetí člen (zde `.form-label` a `.form-button`) mají mít šířku podle obsahu – to obstará klíčové slovo `auto`.
+- Prostřední prvek (`.form-input`) se má roztáhnout do zbylého prostoru – k tomu využijeme [zlomkovou jednotku `fr`](css-jednotka-fr.md).
 
 Kompletní rozvržení bychom tedy gridem zapsali takto:
 

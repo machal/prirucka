@@ -11,24 +11,26 @@ V dalším relativně častém návrhovém vzoru z uživatelských rozhraní web
 
 Tomuto návrhovému vzoru se říká „Pancake Stack“ takže „hromada lívanců“. Často ji uvidíme v různých výpisech prvků ve stránce.
 
+Mimochodem, pokud v „Pancake Stack“ nevidíte žádnou podobnost s lívanci, zkuste jich udělat velkou hromadu a pak se na ně podívat z boku.
+
 V zadání je tato představa:
 
-- Šedivá hlavička (`.box__head`) a patička  (`.box__foot`) bloku má výšku podle svého vnitřního obsahu. První je vždy přilepená nahoře, druhá dole.
+- Šedivá hlavička (`.box-head`) a patička  (`.box-foot`) bloku má výšku podle svého vnitřního obsahu. První je vždy přilepená nahoře, druhá dole.
 - Prostřední část je vždy stejně vysoká – má výšku `20rem`.
-- Je potřeba zajistit, aby obsah prvku `.box__body` v případě přetečení nerozbil výšku, protože hromad lívanců máme hned několik vedle sebe.
+- Je potřeba zajistit, aby obsah prvku `.box-body` v případě přetečení nerozbil výšku, protože hromad lívanců máme hned několik vedle sebe.
 
 HTML pro jeden prvek, jednu hromadu lívanců, jsme vymysleli následovně:
 
 ```html
 <div class="box">
-  <header class="box__head">
+  <header class="box-head">
     Hlavička
   </header>
-  <main class="box__body" contenteditable>
+  <main class="box-body" contenteditable>
     <h2>Název</h2>
     <p>Lorem ipsum dolor sit…</p>
   </main>
-  <footer class="box__foot">
+  <footer class="box-foot">
     <a href="#">
       Upravit
     </a>
@@ -56,9 +58,9 @@ Pro znalce gridu bude CSS opravdu velmi jednoduché:
 }
 ```
 
-V šabloně (vlastnosti [začínající `grid-template`](grid-template-rows-columns.md)) tentokrát nedefinujeme sloupce, ale řádky. Jak vidíte, jsou tři. První a poslední, což jsou v příkladu elementy `.box__head` a `.box__foot`, mají výšku podle vlastního obsahu, tedy `auto`.
+V šabloně (vlastnosti [začínající `grid-template`](grid-template-rows-columns.md)) tentokrát nedefinujeme sloupce, ale řádky. Jak vidíte, jsou tři. První a poslední, což jsou v příkladu elementy `.box-head` a `.box-foot`, mají výšku podle vlastního obsahu, tedy `auto`.
 
-Prostřední buňka připadající na prvek `.box__body` má vždy výšku `20rem`. Zde zejména proto, že hromad lívanců máme vždy několik vedle sebe a nechtěli bychom, aby některé byly vyšší než jiné.
+Prostřední buňka připadající na prvek `.box-body` má vždy výšku `20rem`. Zde zejména proto, že hromad lívanců máme vždy několik vedle sebe a nechtěli bychom, aby některé byly vyšší než jiné.
 
 CodePen: [cdpn.io/e/abJamrr](https://codepen.io/machal/pen/abJamrr?editors=1100)
 
@@ -75,7 +77,7 @@ Ještě doplním, že v „nastavovacím“ kódu, který je v CodePenech schova
   margin: 0 1rem 1rem 0;
 }
 
-.box__body {
+.box-body {
   padding: 1rem;
   overflow: hidden;
 }
@@ -83,6 +85,6 @@ Ještě doplním, že v „nastavovacím“ kódu, který je v CodePenech schova
 
 Kromě okrajů v `margin` a `padding` si prosím povšimněte definice rozvržení flexboxem, umístěné na rodičovském prvku nad jednotlivými hromádkami lívanců. [`display:flex`](css-display.md) už znáte, ale [vlastnost `flex-wrap`](css-flex-wrap.md) jsme v příkladech ještě neměli. Je velmi důležitá, protože prvkům rozvržení umožňuje zalamovat se na další řádky.
 
-Všimněte si i deklarace `overflow:hidden`, která obsahu v prvku `.box__body` zabraňuje v přetečení mimo vyhrazený prostor výšky `20rem`. Zde byste samozřejmě mohli namítnout, že lepší než fixní omezení obsahu by zde bylo mít jakousi vnitřní mřížku, která prvky v jednotlivých hromadách lívanců pěkně propojí a zajistí výšku podle nejvyššího z nich. Řešení se jmenuje [subgrid](css-subgrid.md), ale v době psaní zatím není podporováno všemi prohlížeči.
+Všimněte si i deklarace `overflow:hidden`, která obsahu v prvku `.box-body` zabraňuje v přetečení mimo vyhrazený prostor výšky `20rem`. Zde byste samozřejmě mohli namítnout, že lepší než fixní omezení obsahu by zde bylo mít jakousi vnitřní mřížku, která prvky v jednotlivých hromadách lívanců pěkně propojí a zajistí výšku podle nejvyššího z nich. Řešení se jmenuje [subgrid](css-subgrid.md), píšu o něm v páté kapitole, ale v době psaní zatím není podporováno všemi prohlížeči.
 
 Máte? Tak pojďme dál.

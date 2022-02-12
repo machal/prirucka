@@ -17,10 +17,10 @@ Nejprve si alespoň zjednodušeně připomeňme strukturu HTML, která drží na
 ```html
 <div class="container">
   <div class="item">
-    <p class="item__image">
+    <p class="item-image">
       <img>
     </p>
-    <div class="item__text">
+    <div class="item-text">
       <h2> … </h2>
       <p> … </p>
     </div>
@@ -46,12 +46,12 @@ Po nutném úvodu teď už pojďme na kód, který pro řešení zalomení layou
   flex-wrap: wrap;
 }
 
-.item__image {
+.item-image {
   flex: 1 1 20%;
   max-width: 300px;  /* Breakpoint */
 }
 
-.item__text {
+.item-text {
   flex: 1 1 40%;
 }
 ```
@@ -80,7 +80,7 @@ Definicí `max-width: 300px` jej omezíme a stanovíme s její pomocí také bod
 Obrázek pak bude na nejmenších šířkách rodičovského prvku při rozložení vedle sebe opravdu malinký. Mohli bychom to změnit nastavením minimální šířky:
 
 ```css
-.item__image {
+.item-image {
   flex: 1 1 20%;
   min-width: 200px; /* Min. šířka */
   max-width: 300px;
@@ -103,11 +103,11 @@ Na screenshotech výše je vidět moment, kdy už jsme došli k maximu šířky 
 Zkusme to místo věčného komplikování spíše zjednodušit. Řešení využívající flexbox je možné ořezat na kost a nepoužít přitom minimální a maximální šířku:
 
 ```css
-.item__image {
+.item-image {
   flex: 1 0 300px;
 }
 
-.item__text {
+.item-text {
   flex: 1 0 300px;
 }
 ```
@@ -139,7 +139,7 @@ Pojďme si to ukázat přímo v kódu. HTML je pořád stejné, mění se jen ka
   gap: 1em;
 }
 
-.item__image {
+.item-image {
   max-width: 300px;
 }
 ```

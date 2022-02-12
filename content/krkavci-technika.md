@@ -33,7 +33,7 @@ Havraní technika je založená na matematických funkcích a dalších novinká
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, „CSS proměnné“ nejsou ve skutečnosti proměnné. Ne takové, jaké si představí běžná vývojářka nebo vývojář. Píšu o nich více [v poslední „přílohové“ kapitole](css-promenne.md), kde také najdete ukázky jejich použití.
+Mimochodem, „CSS proměnné“ nejsou ve skutečnosti proměnné. Ne takové, jaké si představí běžná vývojářka nebo vývojář. Píšu o nich více [v deváté kapitole](css-promenne.md), kde také najdete ukázky jejich použití.
 
 </div>
 

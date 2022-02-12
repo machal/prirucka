@@ -82,6 +82,12 @@ Dříve to platilo i pro `<fieldset>` a `<button>` ve všech prohlížečích, c
 - _Zalamované elementy na inline flexboxu přetékají z rodiče (Flexbug #14)_  
 Jde o kombinaci použití `flex-flow:column wrap` a `display:inline-flex`, takže poměrně vzácný scénář. Vnitřní prvky pak ve všech prohlížečích „vylezou“ z velikosti rodiče, i když by neměly. Je možné to obejít například pomocí nastavení `flex-direction:row` a změnou směru vykreslení zápisem vlastnosti `writing-mode`.
 
+<div class="ebook-only" markdown="1">
+
+Pokud byste netušili, co je „inline flexbox“, jde o flexbox tvořený nastavením `display:inline-flex`. Uvnitř je možné dělat rozvržení, zvenčí jde o součást řádku textu. Více se tomu věnuji ještě v příručce [vlastnosti `display`](css-display.md) v deváté kapitole.
+
+</div>
+
 Můžete se podívat na řešení druhé uvedené flexboty.
 
 CodePen: [cdpn.io/e/RjvQgx](https://codepen.io/philipwalton/pen/RjvQgx)
@@ -136,6 +142,12 @@ Zbývající tři boty má na svědomí Internet Explorer 10 a ten už dávno vy
 
 Více informací o podpoře je na CanIUse. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
+<div class="ebook-only" markdown="1">
+
+Mimochodem, o flexboxu a jeho vlastnostech detailně píšu ve čtvrté kapitole.
+
+</div>
+
 ## Grid {#grid}
 
 V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů.
@@ -173,7 +185,7 @@ V další podkapitole si o podpoře gridu v MSIE povíme více.
 
 <div class="web-only" markdown="1">
 
-Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Exploreru](css-grid-msie.md) a pojďme dál.
+Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Exploreru](css-grid-msie.md) a pojďme dál. Je součástí páté kapitoly, kde o gridu a jeho vlastnostech píšu více.
 
 </div>
 
@@ -221,6 +233,12 @@ Pokud bychom se dnes mohli bavit o nějakém „zabugovaném“ systému layoutu
 
 Více informací najdete na našem oblíbeném webu. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 
+<div class="ebook-only" markdown="1">
+
+O vícesloupcovém layoutu čtěte více v šesté kapitole.
+
+</div>
+
 ## A co zarovnávání, CSS Box Align? {#box-align}
 
 Čtvrtou specifikací z party systémů rozvržení v CSS je [zarovnání boxů](css-box-alignment.md), které je nedílnou součástí navrhování layoutů v gridu a flexboxu.
@@ -250,6 +268,12 @@ Chybějící podpora `justify-items` i `justify-self` v MSIE u flexboxu je vlast
 V případě, že podporujete MSIE, to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
 
 Explorer také nepodporuje novější hodnoty některých vlastností: `baseline` a `stretch`, vlastností [`align-self`](css-align-self.md) a [`justify-content`](css-justify-content.md) nebo také `space-evenly` u [`justify-content`](css-justify-content.md).
+
+<div class="ebook-only" markdown="1">
+
+O zarovnání boxů a jeho konkrétních vlastnostech se dočtete v sedmé kapitole.
+
+</div>
 
 ### Na layout typu masonry zatím čekáme
 

@@ -77,7 +77,6 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 - Barvy:
 	- Viz výše. Nikdy ne bílé pozadí, viz ebooky a dark-mode.
 	- Informace nebo jejich vazba nesmí být závislá jen na barvě. Kvůli černobílým Kindle čtečkám.
-	- CodePeny upravit podle tohoto barevného schématu.
 - Vizuální formát, obsah:
 	- Písmo: Foro, InConsolata.
 	- Písmo pro vnitřek CodePenů - sjednotit na systémové: Helvetica, Georgia, Courrier.
@@ -207,6 +206,12 @@ Na webu se to pak přepíše vkládaného `<iframe>`.
 - Důležité je uvést první adresu jako zkratku, kvůli kontextům mimo web, jako jsou e-booky nebo Github.
 - Odkaz ale vede na plné URL na CodePenu.
 - V parametru `?editors=` jsou uvedeny záložky se záložkou a typem kódu, který má být otevřený. Je to v řadě HTML, CSS, JS kód a konzole.
+
+### Style guide pro CodePeny
+
+- Barvy podle barevného schématu výše.
+- Nepoužívat BEM a podobné metodiky, pokud to není jen o nich.
+- Písmo pro vnitřek CodePenů - sjednotit na systémové: Helvetica, Georgia, Courrier.
 
 ### Tabulka
 

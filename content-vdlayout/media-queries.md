@@ -164,10 +164,10 @@ V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
 ```html
 <div class="container">
   <div class="item">
-    <p class="item__image">
+    <p class="item-image">
       <img src="…" alt="…" width="300" height="300">
     </p>
-    <div class="item__text">
+    <div class="item-text">
       <h2>
         <a href="#">Nezůstane by péče položená…</a>
       </h2>  
@@ -179,7 +179,7 @@ V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
 </div>
 ```
 
-Vidíme zde tedy obalující `.container` pro celou stránku. Pak samotný media object s třídou `.item` a v něm části pro obrázek `.item__image` a pro text `.item__text`.
+Vidíme zde tedy obalující `.container` pro celou stránku. Pak samotný media object s třídou `.item` a v něm části pro obrázek `.item-image` a pro text `.item-text`.
 
 Samotné texty nedávají smysl a to je dobře. Jsou generované službou Blábot, jejíž kouzlo je v tom, že dodává texty připomínající češtinu, ale zároveň nepoutající pozornost. Takové české Lorem Ipsum. [blabot.cz](https://www.blabot.cz/)
 
@@ -199,8 +199,8 @@ body {
   background: white;
 }
 
-.item__text, 
-.item__image {
+.item-text, 
+.item-image {
   padding: 1em;
 }
 
@@ -235,11 +235,11 @@ Navrhuji to pojmout [flexboxem](css-flexbox.md) takto:
   display: flex;
 }
 
-.item__image {
+.item-image {
   flex: 1;
 }
 
-.item__text {
+.item-text {
   flex: 2;
 }
 ```
@@ -268,11 +268,11 @@ A chybí nám zde Media Queries:
     display: flex;
   }
 
-  .item__image {
+  .item-image {
     flex: 1;
   }
 
-  .item__text {
+  .item-text {
     flex: 2;
   }
   
@@ -292,7 +292,7 @@ Chtěl bych, aby vodorovný layout naskočil nejdříve v momentě, kdy obrázek
 
 Dotazy na média se vztahují k šířce viewportu, k šířce plochy, kterou má prohlížeč k dispozici. Jak uvidíte na obrázku níže, mezi okrajem viewportu a okrajem obrázku jsou ještě další prvky, jež také mají své rozměry.
 
-Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (`margin` i `padding`) o celkové šířce `3em`. Jedno `em` je vždy `16px`, pokud jej nenastavíme jinak. Dále je zde vnitřní okraj `1em` u prvků `.item__text` a `.item__image`. Celkem tedy 4 krát 16, to je 64, a ještě krát 2, protože musíme vzít v úvahu obě strany. Vychází nám 128. Přidáme šířku obrázku a vyjde nám 428 pixelů.
+Pojďme ty prvky spočítat: Obal `.container` má vnější i vnitřní okraj (`margin` i `padding`) o celkové šířce `3em`. Jedno `em` je vždy `16px`, pokud jej nenastavíme jinak. Dále je zde vnitřní okraj `1em` u prvků `.item-text` a `.item-image`. Celkem tedy 4 krát 16, to je 64, a ještě krát 2, protože musíme vzít v úvahu obě strany. Vychází nám 128. Přidáme šířku obrázku a vyjde nám 428 pixelů.
 
 Pro puristy zde přiznávám, že jsem porušil své vlastní pravidlo a v dotazu použil jednotku `px` namísto `em`. To proto, abychom si to matematicky ještě více nezkomplikovali. Ale `428px` standardně přepočteme na `26.75em`.  Více o jednotkách hledejte v textu o [CSS jednotkách](jednotky.md) ze závěrečné kapitoly.
 

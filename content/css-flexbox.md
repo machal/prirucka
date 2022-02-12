@@ -4,7 +4,7 @@ Flex v češtině znamená pružný, přizpůsobivý. Flexboxy jsou tedy pružn�
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)
-- [CSS Multicolumn](css-multicolumn.md)
+- [CSS Multi-column](css-multicolumn.md)
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
@@ -163,9 +163,9 @@ Představme si triviální třísloupcový layout:
 
 ```html
 <div class="container">
-  <p class="col col--1">First is loooooong.</p>
-  <p class="col col--2">Second is looooonger.<br/>…<br/>…</p>
-  <p class="col col--3">Third is short.</p>  
+  <p class="col col-1">First is loooooong.</p>
+  <p class="col col-2">Second is looooonger.<br/>…<br/>…</p>
+  <p class="col col-3">Third is short.</p>  
 </div>
 ```
 
@@ -209,17 +209,17 @@ Dále jsme si vymysleli, že první dva sloupce se budou zmenšovat a zvětšova
 
 ```css
 /* Pružná položka, zabírá jednu část volného místa: */
-.col--1 {
+.col-1 {
   flex: 1;
 }
 
 /* Pružná položka, zabírá dvě části volného místa: */
-.col--2 {
+.col-2 {
   flex: 2;
 }  
 
 /* Fixně široká položka: */
-.col--3 {
+.col-3 {
   flex: none;
 }
 ```

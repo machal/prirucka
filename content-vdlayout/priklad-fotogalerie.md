@@ -25,14 +25,14 @@ HTML vypadá zhruba takto:
 ```html
 <div class="container">
   <figure class="figure">
-    <img src="image.jpg" alt="…" width="300" height="300" class="figure__image">
-    <figcaption class="figure__caption">
+    <img src="image.jpg" alt="…" width="300" height="300" class="figure-image">
+    <figcaption class="figure-caption">
       <strong>Image 1</strong> Lorem ipsum dolor sit.
     </figcaption>
   </figure>
   <figure class="figure">
-    <img src="image.jpg" alt="…" width="300" height="300" class="figure__image">
-    <figcaption class="figure__caption">
+    <img src="image.jpg" alt="…" width="300" height="300" class="figure-image">
+    <figcaption class="figure-caption">
       <strong>Image 2:</strong> Amet consectetur adipisicing elit. 
     </figcaption>
   </figure>
@@ -48,7 +48,7 @@ CodePen: [cdpn.io/e/eYWWrJY](https://codepen.io/machal/pen/eYWWrJY?editors=1100)
 
 Pracanti nechť zavřou knihu a v klidu pracují. My ostatní si rozdělíme funkce takto: já píšu, vy čtete.
 
-## Řešení pomocí CSS Multicolumn Layout
+## Řešení pomocí CSS Multi-column Layout
 
 Pokud vás pro tyto případy napadl jako vhodný systém pro rozvržení [CSS Multicol](css-multicolumn.md), byli jste na správné cestě. I já bych po něm při řešení určitých typů fotogalerií sáhl. Je to totiž hotové raz dva:
 
@@ -128,6 +128,6 @@ CodePen: [cdpn.io/e/LYyydoZ](https://codepen.io/machal/pen/LYyydoZ?editors=1100)
 
 ## Co jsme se tady naučili?
 
-- Poprvé jsme v kapitole s příklady využili [CSS Multicolumn Layout](css-multicolumn.md), a to v situaci, kde funguje velmi dobře – design fotogalerie.
+- Poprvé jsme v kapitole s příklady využili [CSS Multi-column Layout](css-multicolumn.md), a to v situaci, kde funguje velmi dobře – design fotogalerie.
 - Vyzkoušeli jsme si dva layouty s „automatickou responzivitou“, bez použití Media Queries.
 - V rámci CSS gridu jsme se něco dozvěděli o návrhovém vzoru RAM a klíčovém slově `auto-fit`.

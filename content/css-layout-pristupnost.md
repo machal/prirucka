@@ -69,7 +69,7 @@ Pojďme si to ukázat na jednoduchém demu postaveném na vlastnosti `order` a [
 </div>
 ```
 
-Jak vidíte, tentokrát jsem vyměnil `div`y za odkazy a to proto, abychom mohli obsahem navigovat pomocí tabulátoru.
+Ukázka obsahuje sadu odkazů proto, abychom mohli obsahem navigovat pomocí tabulátoru.
 
 Kontejner (`.container`) je obyčejný flexbox, ale za ukázání kódu stojí předpis pro třetí položku:
 

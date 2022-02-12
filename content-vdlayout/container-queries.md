@@ -106,11 +106,11 @@ Pojďme si to poskládat dohromady na konkrétním příkladu našeho „Media O
     display: flex;
   }  
   
-  .item__image {
+  .item-image {
     flex: 1;
   }
 
-  .item__text {
+  .item-text {
     flex: 2;
   }
   

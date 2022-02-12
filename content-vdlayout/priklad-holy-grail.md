@@ -124,18 +124,18 @@ Jak asi tušíte, toto samo o sobě nic nedělá. Normálně bych začínal od d
 
 Teď si to vysvětleme. První dvě vlastnosti už znáte:
 
-- Pomocí [`grid-template-rows`](css-grid-template-row-columns.md) definujeme řádky layoutu. Víme, že hlavička má být vysoká `10em`, patička `5em` a zbytek připadá na prostřední část. Tento zbytek definujeme jako jeden podíl z celkového počtu jednoho podílu, [jednotkou `fr`](css-jednotka-fr.md).
+- Pomocí [`grid-template-rows`](css-grid-template-row-columns.md) definujeme řádky layoutu. Víme, že hlavička má být vysoká `10em`, patička `5em` a zbytek připadá na prostřední část. Tento zbytek definujeme [jednotkou `fr`](css-jednotka-fr.md).
 - [Vlastnost `grid-template-columns`](css-grid-template-row-columns.md) nám, jak už víte, pomůže definovat směr rozvržení po hlavní ose, tedy po sloupcích. Postranní panel má zabrat 30 % šířky a pak je tu ten zbytek určený pro obsah.
 
 ## Definované oblasti
 
 [Vlastnost `grid-template-areas`](css-grid-template-areas.md) ještě možná neznáte, ale v gridu patří k mým nejoblíbenějším. S její pomocí definujeme jména oblastí a jejich umístění v buňkách mřížky.
 
-Pomocí `grid-template-rows` a `grid-template-rows` jsme vytvořili mřížku 3 × 2, o třech řádcích a dvou sloupcích. Do nich teď můžeme pomocí tohoto „ASCII artu“ umísťovat oblasti.
+Pomocí `grid-template-rows` a `grid-template-columns` jsme vytvořili mřížku 3 × 2, o třech řádcích a dvou sloupcích. Do nich teď můžeme pomocí tohoto „ASCII artu“ umísťovat oblasti.
 
 Asi jste si všimli, že oblasti `head` a `foot` zabírají vždy dvě buňky, což je přesně ten layout, kterého potřebujeme dosáhnout.
 
-Pomocí inspekce mřížky ve Firefoxu se nám teď layout krásně vizualizuje i s pojmenovanými oblastmi:
+Pomocí inspekce mřížky ve Firefoxu (nebo Chrome) se nám teď layout krásně vizualizuje i s pojmenovanými oblastmi:
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-holy-grail-firefox.jpg" width="1600" height="900" alt="Příklad - holy grail ve Firefoxu">
@@ -208,7 +208,7 @@ Jde to zjednodušit ještě více. Také oblasti definované v `grid-template-ar
 }
 ```
 
-K řádkům vždy nejprve uvádíme oblasti, pak rozměry řádku, následuje lomítko a zapíšeme rozměry sloupců. Dle mého to není úplně nepřehledné, ale proti gustu žádný dišputát.
+K řádkům vždy nejprve uvádíme oblasti, pak rozměry řádku, následuje lomítko a zapíšeme rozměry sloupců. Dle mého to není úplně přehledné, ale proti gustu žádný dišputát.
 
 A mohli bychom to zkrátit ještě více. Do [zkratky `grid`](css-grid-zkratka.md):
 

@@ -38,13 +38,13 @@ Mám seznam položek, říkejme jim karty produktu. Každá má složitější s
 <div class="container">
 
   <div class="item">
-    <h2 class="item__heading">
+    <h2 class="item-heading">
       <a href="#">Lorem ipsum…</a>
     </h2>  
-    <p class="item__image">
+    <p class="item-image">
       <a href="#"><img src="image.jpg" alt="Image" width="300" height="200"></a>
     </p>
-    <p class="item__perex">
+    <p class="item-perex">
       Lorem ipsum…
     </p>
     <p>

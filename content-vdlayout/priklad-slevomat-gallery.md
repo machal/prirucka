@@ -26,26 +26,26 @@ Chcete si to zkusit sami? Forkněte CodePen a vzhůru do toho.
 
 CodePen: [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
 
-HTML jsem tentokrát nevymýšlel sám. Půjčil jsem si jej přímo od kodérů Slevomatu, protože používají metodiku BEM a já k jejich HTML téměř nemám co dodat:
+HTML bude vypadat takto:
 
 ```html
 <div class="gallery">
-  <div class="gallery__main-image">
+  <div class="gallery-main-image">
     <img src="…" alt="…">
   </div>
-  <div class="gallery__thumb gallery__thumb-one">
+  <div class="gallery-thumb gallery-thumb-one">
     <img src="…" alt="…">
   </div>
-  <div class="gallery__thumb gallery__thumb-two">
+  <div class="gallery-thumb gallery-thumb-two">
     <img src="…" alt="…">
   </div>
-  <div class="gallery__thumb gallery__thumb-three">
+  <div class="gallery-thumb gallery-thumb-three">
     <img src="…" alt="…">
   </div>
 </div>
 ```
 
-Pokud by vás BEM, metodika zápisu tříd pro potřebu tvorby komponent, zajímal víc, mrkněte se na Vzhůru dolů. [vrdl.cz/p/bem](https://www.vzhurudolu.cz/prirucka/bem)
+Obrázky, které v této galerii použijeme musí být v poměru stran 2 : 1. V jiném případě tento layout nebude fungovat, respektive budete si jej muset upravit.
 
 ## Oblasti mřížky
 
@@ -54,19 +54,19 @@ V dalším kroku si spárujeme jednotlivé prvky HTML (nebo DOMu, chcete-li) s o
 V CSS kódu to bude vypadat následovně:
 
 ```css
-.gallery__main-image {
+.gallery-main-image {
   grid-area: main;
 }
 
-.gallery__thumb-one {
+.gallery-thumb-one {
   grid-area: thumb1;
 }
 
-.gallery__thumb-two {
+.gallery-thumb-two {
   grid-area: thumb2;
 }
 
-.gallery__thumb-three {
+.gallery-thumb-three {
   grid-area: thumb3;
 }
 ```
@@ -138,7 +138,7 @@ Pojďme rovnou na kód:
       "main thumb2" /
       2fr 1fr;
   }
-  .gallery__thumb-three {
+  .gallery-thumb-three {
     display: none;
   }
 }
