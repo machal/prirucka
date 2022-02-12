@@ -137,7 +137,17 @@ Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odliši
 
 Dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Snažte se proto tuto deklaraci používat jen pro prvky, u kterých na pořadí zase tak moc nezáleží.
 
+<div class="web-only" markdown="1">
+
 Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Více to rozebírám v části [CSS layout a přístupnost](css-layout-pristupnost.md) osmé kapitoly.
+
+</div>
 
 ## Podpora v prohlížečích {#podpora}
 

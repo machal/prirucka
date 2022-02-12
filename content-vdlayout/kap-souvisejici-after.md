@@ -1,4 +1,4 @@
-# Shrnutí kapitoly
+# Shrnutí deváté kapitoly
 
 Poslední test knihy je tady. Co jste se naučili v této kapitole?
 

@@ -142,7 +142,17 @@ Ve specifikaci se píše:
 
 Dává to smysl. Když pomocí vlastnosti `order` nebo jiným způsobem změníte pořadí prvku na obrazovce, nijak nezměníte pořadí logické, tedy způsob, jakým obsah konzumují roboti nebo jakým probíhá sekvenční navigace na stránce.  
 
+<div class="web-only" markdown="1">
+
 Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Více to rozebírám v části [CSS layout a přístupnost](css-layout-pristupnost.md) osmé kapitoly.
+
+</div>
 
 ## Raději si na `order` dávejte pozor {#shrnuti}
 

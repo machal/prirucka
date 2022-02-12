@@ -24,7 +24,7 @@ Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektu
 Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něco říct:
 
 - [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi.
-- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože se nekamarádí s vývojáři, kteří mají v přátelích Internet Explorer.
+- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více.
 - [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu rádi.
 
 Tak a teď máte nové kamarády, gratuluji vám.
@@ -188,7 +188,7 @@ Automatické umístění zrušíme tímto kódem:
 
 [Vlastnost `grid-column`](css-grid-row-column.md) slouží k výslovnému umístění určitého prvku na konkrétní místo mřížky. V tomto případě mezi první a třetí linku mřížky.
 
-Co je zač ta linka? Nejlépe to uvidíme na následujícím obrázku, který je zároveň doporučením, abyste věnovali pozornost [vývojářským nástrojům prohlížečů](css-layout-devtools.md). Ty umí být při práci s layouty opravdovými pomocníky.
+Co je zač ta linka? Nejlépe to uvidíme na následujícím obrázku, který je zároveň doporučením, abyste věnovali pozornost [vývojářským nástrojům prohlížečů](css-layout-devtools.md) (více v osmé kapitole). Ty umí být při práci s layouty opravdovými pomocníky.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-layout-intro-examples-grid.jpg" width="1600" height="900" alt="…">

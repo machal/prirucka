@@ -1,4 +1,4 @@
-# Kapitola 7: Vícesloupcový layout
+# Kapitola 6: Vícesloupcový layout
 
 Přemýšlel jsem nad paralelou, abych popsal svůj pocit z CSS modulu, který se jmenuje Multi-column Layout. Zkusím to.
 

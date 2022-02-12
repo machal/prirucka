@@ -52,11 +52,13 @@ Pokud v následujících řádcích píšu o moderních prohlížečích, mám s
 
 Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi v kómatu, nejspíš jej znáte. Až padne jeho jméno, pravděpodobně byste se do kómatu nejraději odebrali.
 
-### Internet Explorer, polomrtvý prohlížeč
+### Internet Explorer, (téměř) mrtvý prohlížeč
 
 Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nový projekt a podporovat na něm prohlížeč Internet Explorer (MSIE) – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
 
 Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech.
+
+Podpoře gridu v MSIE se věnuji v [páté kapitole](css-grid-msie.md), samotnému Exploreru pak [v kapitole osmé](msie.md).
 
 Raději se ale věnuji novinkám než zombie prohlížečům.
 

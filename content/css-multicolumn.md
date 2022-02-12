@@ -171,9 +171,15 @@ Podpora vícesloupcového layoutu v prohlížečích. Zelená je na místech, kd
 
 Moderní prohlížeče to zvládají taky, to víte, že ano. Jen si hůř rozumějí s [vlastnostmi `break-*`](css-multicol-break.md), určenými pro ovládání zalamování vnitřních prvků do sloupců, o čemž píšu v příručce k těmto vlastnostem.
 
+<div class="web-only" markdown="1">
+
 Více najdete [v textu o podpoře](css-layout-bugy.md) nových systémů layoutu v prohlížečích.
 
+</div>
+
 <div class="ebook-only" markdown="1">
+
+Více najdete [v textu o podpoře](css-layout-bugy.md) nových systémů layoutu v prohlížečích (osmá kapitola).
 
 Podívejme se teď na jednotlivé vlastnosti specifikace CSS Multicol.
 

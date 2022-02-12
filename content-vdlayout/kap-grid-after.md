@@ -1,4 +1,4 @@
-# Shrnutí šesté kapitoly
+# Shrnutí páté kapitoly
 
 Otestujte si, co jste se naučili o CSS gridu.
 

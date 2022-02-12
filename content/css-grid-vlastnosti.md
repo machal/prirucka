@@ -50,7 +50,17 @@ Když vynecháme nepěkné triky s pozicováním, slibně zde vstoupil flexbox. 
 * Pomocí [vlastnosti `grid-area`](css-grid-area.md) budete schopni umístit jakéhokoliv potomka na jakékoliv místo mřížky. A zahodit přitom svěrací kazajku struktury HTML.
 * Hodnota `dense` [vlastnosti `grid-auto-flow`](css-grid-auto-flow.md) částečně nechává vykreslení layout na prohlížeči, což oceníte u jednoduchých rozvržení typu „masonry“.
 
+<div class="web-only" markdown="1">
+
 Zde je ale samozřejmě potřeba zvážit možné negativní [vlivy na přístupnost](css-layout-pristupnost.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Zde je ale samozřejmě potřeba zvážit možné negativní [vlivy na přístupnost](css-layout-pristupnost.md) (viz osmá kapitola).
+
+</div>
 
 ## 6) Automatické umístění položek do mřížky
 

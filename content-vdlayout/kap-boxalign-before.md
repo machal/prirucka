@@ -1,4 +1,4 @@
-# Kapitola 8: Zarovnávání boxů (CSS Box Alignment)
+# Kapitola 7: Zarovnávání boxů (CSS Box Alignment)
 
 Zarovnávání boxů je modul specifikace CSS, bez kterého se žádný layout neobejde.
 

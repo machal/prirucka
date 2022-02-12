@@ -1,4 +1,4 @@
-# Kapitola 4: Příklady použití
+# Kapitola 3: Příklady použití
 
 Všechny cesty vedou do Říma. A všechny texty této knížky vedou do této kapitoly.
 

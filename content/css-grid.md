@@ -263,7 +263,17 @@ Podpora gridu v moderních prohlížečích je výborná, takřka bezchybná.
 </figcaption>
 </figure>
 
-O podpoře moderních systémů layoutu v prohlížečích píšeme [ve zvláštním textu](css-layout-bugy.md), ale u gridu není v kontextu moderních prohlížečů téměř o čem psát.
+<div class="web-only" markdown="1">
+
+O podpoře moderních systémů layoutu v prohlížečích píšu [ve zvláštním textu](css-layout-bugy.md), ale u gridu není v kontextu moderních prohlížečů téměř o čem psát.
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+O podpoře moderních systémů layoutu v prohlížečích píšu [ve zvláštním textu](css-layout-bugy.md) osmé kapitoly, ale u gridu není v kontextu moderních prohlížečů téměř o čem psát.
+
+</div>
 
 Horší je to ve stařičkém prohlížeči od Microsoftu.
 

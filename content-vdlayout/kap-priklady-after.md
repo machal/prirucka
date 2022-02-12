@@ -1,4 +1,4 @@
-# Shrnutí čtvrté kapitoly
+# Shrnutí třetí kapitoly
 
 Otestujte si, co jste se naučili.
 

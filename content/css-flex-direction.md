@@ -74,7 +74,20 @@ Pořadí vykreslení položek se v případě vlastností `row` a `column` bere 
 
 Změna pořadí má ale vliv jen na výsledek vykreslení, nikoliv např. na pořadí vykreslování a na procházení při navigaci klávesou `Tab` nebo čtečkami pro slabozraké.
 
-Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „čtení“ dokumentu bude dávat smysl i při pořadí uvedeném v DOMu. Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) a více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „čtení“ dokumentu bude dávat smysl i při pořadí uvedeném v DOMu. 
+
+<div class="web-only" markdown="1">
+
+Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) a více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) (viz sedmá kapitola) a více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md) (viz osmá kapitola).
+
+</div>
+
 
 ## Vliv na `flex-basis` {#flex-basis}
 
@@ -82,7 +95,13 @@ Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basi
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je flexbug číslo 14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md).
+Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je flexbug číslo 14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. 
+
+<div class="ebook-only" markdown="1">
+
+Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md) uvnitř osmé kapitoly.
+
+</div>
 
 Další informace o podpoře jsou na [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-direction).
 

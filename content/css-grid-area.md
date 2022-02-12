@@ -99,6 +99,20 @@ Na různé další možnosti hodnot, včetně demíček na CodePenu, se podívej
 
 ## Přístupnost a pozor na změnu pořadí {#pristupnost}
 
-Pomocí vlastnosti `grid-area` můžete zcela odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to, dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+Pomocí vlastnosti `grid-area` můžete zcela odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to, dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. 
+
+<div class="web-only" markdown="1">
+
+Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Více to rozebírám v části [CSS layout a přístupnost](css-layout-pristupnost.md) osmé kapitoly.
+
+</div>
+
+
 
 <!-- AdSnippet -->

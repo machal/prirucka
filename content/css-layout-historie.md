@@ -170,8 +170,7 @@ Vzniká specifikace „CSS Grid Layout Module Level 1“.
 
 Lidé z W3C ale původní specifikaci od Microsoftu radikálně předělali. Přidali například možnosti automatického umísťování do mřížky a rozšířili ji o lepší možnosti responzivity.
 
-Pár věcí si vzali také ze staré specifikace od Berta Bose. Například definici layoutu pomocí [vlastnosti `grid-template-areas`]
-(css-grid-template.md):
+Pár věcí si vzali také ze staré specifikace od Berta Bose. Například definici layoutu pomocí [vlastnosti `grid-template-areas`](css-grid-template.md):
 
 ```css
 grid-template-areas:

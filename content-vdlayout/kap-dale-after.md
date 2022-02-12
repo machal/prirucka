@@ -1,6 +1,6 @@
-# Shrnutí druhé kapitoly
+# Shrnutí osmé kapitoly
 
-Otestujte si, co jste se naučili ve druhé kapitole.
+Otestujte si, co jste se naučili v osmé kapitole.
 
 1. **Jaký podíl na českém trhu má Internet Explorer ke konci jara 2021?**  
 a) kolem 42 %  

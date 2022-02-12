@@ -299,6 +299,16 @@ Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s po
 
 Konkrétní podporu je ale potřeba rozdělit podle jednotlivých vlastností uvedených výše v tabulce. Tam už je situace různorodější.
 
+<div class="web-only" markdown="1">
+
 Bojem s více či méně příjemnými chybami je provázena práce v Internet Exploreru, protože jde o nejstarší dnes sloužící prohlížeč. Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v prohlížečích. Není to ale nic vážného, tento prohlížeč od Microsoftu už prakticky vymřel a chyby v něm nejsou tak velké.
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+Bojem s více či méně příjemnými chybami je provázena práce v Internet Exploreru, protože jde o nejstarší dnes sloužící prohlížeč. Detailně se tím zabýváme v textu [o podpoře CSS layoutu](css-layout-bugy.md) v osmé kapitole.
+
+</div>
 
 <!-- AdSnippet -->

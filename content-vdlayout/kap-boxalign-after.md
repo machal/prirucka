@@ -1,4 +1,4 @@
-# Shrnutí kapitoly
+# Shrnutí sedmé kapitoly
 
 Otestujte si, co jste se naučili o zarovnávání boxů v CSS.
 

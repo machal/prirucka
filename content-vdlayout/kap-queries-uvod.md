@@ -1,4 +1,4 @@
-# Kapitola 3: Layoutové dotazy
+# Kapitola 2: Layoutové dotazy
 
 Příklady, které jsem vám dosud uváděl, zamlčovaly velmi podstatný fakt. Na naše weby se uživatelé dívají z plejády různých velikostí obrazovek.
 

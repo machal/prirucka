@@ -137,7 +137,7 @@ Vizualizace mřížky ve Firefoxu nebo i v Chromu pomůže pochopit, z čeho se 
 
 <div class="ebook-only" markdown="1">
 
-O podpoře layoutů v DevTools moderních prohlížečů jsem psal [v jedné z předchozích kapitol](css-layout-devtools.md).
+O podpoře layoutů v DevTools moderních prohlížečů budu psát [v osmé kapitole](css-layout-devtools.md).
 
 </div>
 

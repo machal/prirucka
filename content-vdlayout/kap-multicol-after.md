@@ -1,4 +1,4 @@
-# Shrnutí páté kapitoly
+# Shrnutí šesté kapitoly
 
 Otestujte si, co jste se naučili o vícesloupcovém layoutu.
 

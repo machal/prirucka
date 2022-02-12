@@ -1,4 +1,4 @@
-# Kapitola 5: Flexbox
+# Kapitola 4: Flexbox
 
 Další stránky jsou věnované referenčním příručkám různých CSS modulů pro tvorbu layoutu.
 

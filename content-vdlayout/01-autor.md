@@ -11,6 +11,6 @@ Martin je webový expert na volné noze s více než dvacetiletou praxí, který
 
 Odbornými připomínkami nebo jinak na knize spolupracovali:
 
-Markéta Andreev Dragoun, Jirka Kosek, Honza Marek, Michal Mikláš, Petr Jediný Novotný, Radek Pavlíček, Kristýna Petrová, Břetislav Proft, Daniel Střelec, Petr Raist Šťastný, Dan Srb, Zuzana Šumlanská.
+Markéta Andreev Dragoun, Jirka Kosek, Tomáš Kout, Honza Marek, Michal Mikláš, Petr Jediný Novotný, Radek Pavlíček, Kristýna Petrová, Břetislav Proft, Daniel Střelec, Petr Raist Šťastný, Dan Srb, Zuzana Šumlanská.
 
 Děkuji všem, kteří mi pomohli!

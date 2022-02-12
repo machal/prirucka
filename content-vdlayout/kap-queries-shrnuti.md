@@ -1,4 +1,4 @@
-# Shrnutí třetí kapitoly
+# Shrnutí druhé kapitoly
 
 Otestujte si, co jste se naučili v kapitole o layoutových dotazech.
 
