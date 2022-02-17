@@ -4,17 +4,17 @@
 
 Na tomto bodu není na první pohled nic nového. Vyplývá ale z toho, že na rodičovský kontejner ani jeho potomky nebudou mít účinek vlastnosti související s jinými zobrazovacími režimy [vlastnosti `display`](css-display.md) – `block`, `inline`, `inline-block` a dalšími. Typický příklad jsou vlastnosti `float`, `clear` nebo `vertical-align`.
 
-## 2. Flex položky neslučují vnější okraje
+## 2. Položky flexboxu neslučují vnější okraje
 
 V kontextu flexboxového rozvržení platí, že na rozdíl od blokových elementů se u sousedících flex položek neslučují vnější okraje, jež jsou dané vlastností `margin`.
 
-## 3. Flex položky lze pozicovat
+## 3. Položky flexboxu lze pozicovat
 
-Pozicování prvků vlastností `position` a hodnotami `absolute`, `relative`, `fixed` lze na rozdíl od vlastností souvisejících s `float` na flex položky běžně aplikovat.
+Pozicování prvků vlastností `position` a hodnotami `absolute`, `relative`, `fixed` lze na rozdíl od vlastností souvisejících s `float` na flexboxové položky běžně aplikovat.
 
 ## 4. Směr hlavní osy flexboxu řídí jazyk rozhraní
 
-Směr hlavní osy flex kontejneru vychází vždy z vlastnosti `writing-mode`. Pokud bychom tedy flexboxem dělali layout stránky v arabštině, budou hodnoty zmíněné ve vlastnostech jako [`flex-direction`](css-flex-direction.md) naopak.
+Směr hlavní osy kontejneru flexboxu vychází vždy z vlastnosti `writing-mode`. Pokud bychom tedy flexboxem dělali layout stránky v arabštině, budou hodnoty zmíněné ve vlastnostech jako [`flex-direction`](css-flex-direction.md) naopak.
 
 ## 5. S `visibility:collapse` flexbox pracuje jako se řádky tabulky
 

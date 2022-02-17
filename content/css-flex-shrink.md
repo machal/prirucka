@@ -76,7 +76,7 @@ Podívejme se na různé možnosti nastavení `flex-shrink`, které dostává pr
 
 - `0` – nesmršťuje se. Nebude se za žádnou cenu omezovat. Jednou jsme ale řekli `width:100%`, tak co bychom také chtěli?… Podřídí se tomuto pravidlu a oba ostatní sourozence vytlačí ven. Vzhledem k tomu, že výchozí hodnota `flex-shrink` je `1`, sourozenci si poctivě ze své šířky ubrali.
 - `0.5` – ubere si polovinu oproti sourozencům, takže při zmenšování rodičovského prvku zabírá stále více místa.
-- `1` – v tomto případě se všichni potomkové spravedlivě smršťují stejným podílem. (Z pohledu rodiče ideální stav.)
+- `1` – v tomto případě se všichni potomci spravedlivě smršťují stejným podílem. (Z pohledu rodiče ideální stav.)
 - `2` – první položka si ubírá dvojnásobek oproti zbylým dvěma.
 
 Je to trochu jasnější? Snad ano. Živou ukázku hledejte v následujícím odkazu.

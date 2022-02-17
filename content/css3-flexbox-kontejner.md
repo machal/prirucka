@@ -31,7 +31,7 @@ flex-direction:
 
 ![vlastnost flex-direction](../dist/images/original/flexbox-flex-direction.jpg)
 
-Výchozí (`row`) hodnota vyskládá flex položky do řádky. Pokud chcete dělat layout do svislého směru, použijte hodnotu `column`.
+Výchozí (`row`) hodnota vyskládá flexboxové položky do řádky. Pokud chcete dělat layout do svislého směru, použijte hodnotu `column`.
 
 <!-- AdSnippet -->
 
@@ -52,7 +52,7 @@ Výchozí `nowrap` říká, že elementy budou vždy na hlavní ose vedle sebe (
 
 <!-- AdSnippet -->
 
-Alternativně `wrap`. Pak se flex položky zalomí na další řádku ve chvíli, kdy se jejich obsah zvětší natolik, že se nevejdou do jedné. Poslední flex položka na prvním řádku skočí dolů a zařadí se pod první položku.
+Alternativně `wrap`. Pak se flexboxové položky zalomí na další řádku ve chvíli, kdy se jejich obsah zvětší natolik, že se nevejdou do jedné. Poslední položka flexboxu na prvním řádku skočí dolů a zařadí se pod první položku.
 
 `wrap-reverse` zalamuje naopak. Poslední položka řádku skočí nahoru a zařadí se nad první položku.
 
@@ -75,7 +75,7 @@ justify-content:
 
 ![justify-content](../dist/images/original/flexbox-justify-content.jpg)
 
-Vlastnost `justify-content` aplikujeme na flex kontejner. Říká, jak budou flex položky zarovnány po jeho hlavní ose. Výchozí hodnota je `flex-start`, tedy zarovnání k začátku hlavní osy.
+Vlastnost `justify-content` aplikujeme na flexboxový kontejner. Říká, jak budou flexboxové položky zarovnány po jeho hlavní ose. Výchozí hodnota je `flex-start`, tedy zarovnání k začátku hlavní osy.
 
 Živé demo: [cdpn.io/e/doGjaZ](https://cdpn.io/e/doGjaZ).
 
@@ -104,7 +104,7 @@ align-content:
 ```
 ![align-content.jpg](../dist/images/original/flexbox-align-content.jpg)
 
-Ještě jedna zarovnávací vlastnost. Tentokrát se vztahuje jen na flex kontejnery, jejichž položky se rozpadnou na více řádků.
+Ještě jedna zarovnávací vlastnost. Tentokrát se vztahuje jen na flexboxové kontejnery, jejichž položky se rozpadnou na více řádků.
 
 Živé demo: [cdpn.io/e/oXbMRo](https://cdpn.io/e/oXbMRo).
 

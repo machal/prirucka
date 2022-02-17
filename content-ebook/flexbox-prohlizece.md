@@ -61,7 +61,7 @@ Flexbox je jen nová hodnota vlastnosti display. S tím je možné pracovat hlav
 }
 ```
 
-Snadno se například dělá fallback pomocí vlastnosti `float`, protože ta se na flex položky nedá aplikovat:
+Snadno se například dělá fallback pomocí vlastnosti `float`, protože ta se na flexboxové položky nedá aplikovat:
 
 ```css
 .container {

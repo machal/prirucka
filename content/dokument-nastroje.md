@@ -123,11 +123,11 @@ Když už máme jakžtakž vysázený dokument, můžeme k němu začít přidá
 
 ## Blanka Type Test
 
-Poslední členka sesterského komanda Blanek vychází právě z toho, že ne všechny HTML elementy musíte znát. Nebo lépe: že si na ně prostě nemusíte vzpomenout, takže ve stylech je neošetříte.
+Poslední členka sesterského komanda Blanek vychází právě z toho, že ne všechny elementy HTML musíte znát. Nebo lépe: že si na ně prostě nemusíte vzpomenout, takže ve stylech je neošetříte.
 
 Kdo z nás nezažil situaci, kdy ve stylech počítal úplně se vším – dokud mu klient přes redakční systém na web nevložil úplně novou kombinaci prvků, která rozbila celý web?
 
-Proto je tu Blanka Type Test, zátěžový test typografie. Je to vlastně dokument obsahující všechny myslitelné i nemyslitelné HTML elementy. V kombinacích, které by nás nenapadly. V zanořeních, se kterými jsme nepočítali. V rozměrech a délkách, jejichž představa by vás budila ze sna.
+Proto je tu Blanka Type Test, zátěžový test typografie. Je to vlastně dokument obsahující všechny myslitelné i nemyslitelné elementy HTML. V kombinacích, které by nás nenapadly. V zanořeních, se kterými jsme nepočítali. V rozměrech a délkách, jejichž představa by vás budila ze sna.
 
 Prostě si stáhněte dokument, přidejte si k němu vlastní CSS a otestujte si všechny možné i nemožné kombinace prvků. Podívejte se na soubor `blanka-type-test.cz.html`. [github.com/machal/blanka-html/](https://github.com/machal/blanka-html/blob/master/blanka-type-test.cz.html)
 

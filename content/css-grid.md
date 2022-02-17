@@ -4,7 +4,7 @@ CSS grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mří�
 
 Síla gridu je kromě jiného v tom, že jej můžeme definovat jako mřížku definovat v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css-flexbox.md) tedy může být vhodnější pro celostránkové a komplexnější layouty.
 
-Grid zvládají všechny dnešní prohlížeče. [Internet Explorer 11](msie.md) ale podporuje jen starší verzi specifikace CSS gridu. Nevadí, za prvé již téměř vymřel a za druhé – i v něm je mřížku s kompromisy [možné použít](css-grid-msie.md).
+Grid zvládají všechny dnešní prohlížeče. [Internet Explorer 11](msie.md) ale podporuje jen starší verzi specifikace CSS gridu. Nevadí, za prvé již téměř vymřel a za druhé – i v něm je možné mřížku s kompromisy [použít](css-grid-msie.md).
 
 <!-- AdSnippet -->
 
@@ -32,9 +32,9 @@ Následuje detailní příručka k jednotlivým vlastnostem CSS gridu.
 
 ### Nastavení rodiče mřížky {#grid}
 
-Hodnota [vlastnosti `display:grid`](css-display.md) nastaví „grid formatting context“. Možná je také „inline“ hodnota: `inline-grid`.
+Hodnota [vlastnosti `display:grid`](css-display.md) nastaví „grid formatting context“.
 
-Možná je také „inline“ hodnota: `inline-grid`. To je věc podobná  `inline-block`, tedy uvnitř je možné dělat rozvržení, zvenčí jde o součást řádku textu.
+Možná je také „inline“ hodnota: `inline-grid`. To je věc podobná  `inline-block`, tedy uvnitř je možné dělat rozvržení, zde pomocí gridu, zvenčí jde o součást řádku textu.
 
 ### Definice mřížky {#vlastnosti-definice}
 
@@ -147,7 +147,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
 
 ### Vlastnosti, které zatím nemají plnou podporu {#vlastnosti-funkce}
 
-Následující krátký seznam je o nových vlastnostech, které sice zatím není možné snadno použít v praxi, ale vypadá to nadějně a ke všemu je považuji za velmi užitečné:
+Následující dvě nové vlastnosti sice zatím není možné snadno použít v praxi, ale vypadá to nadějně a ke všemu je považuji za velmi užitečné:
 
 <div class="reference-items">
 
@@ -164,6 +164,8 @@ Následující krátký seznam je o nových vlastnostech, které sice zatím nen
   </article>
 
 </div>
+
+<div class="web-only" markdown="1">
 
 ## Zarovnávání (CSS Box Alignment) {#css-box-alignment}
 
@@ -183,7 +185,7 @@ YouTube: [youtu.be/9M5RGjlAkeY](https://www.youtube.com/watch?v=9M5RGjlAkeY)
 
 </div>
 
-A teď ten příklad. Řekněme, že naše HTML vypadá takto:
+Řekněme, že naše HTML vypadá takto:
 
 ```html
 <div class="container">
@@ -201,7 +203,7 @@ Pojďme to nakódovat. Nejprve příprava na layout do mřížky:
 }
 ```
 
-Toto – na rozdíl od `display:flex` – automaticky nic nedělá. Zatím jsme definovali mřížku, takže máme smůlu. Vzhůru do ní:
+Toto – na rozdíl od `display:flex` – samo od sebe nic nedělá. Zatím jsme definovali mřížku, takže máme smůlu. Vzhůru do ní:
 
 ```css
 @media screen and (min-width: 37.5em) {
@@ -211,7 +213,7 @@ Toto – na rozdíl od `display:flex` – automaticky nic nedělá. Zatím jsme 
 }  
 ```
 
-Vytvoříme tím layout rozdělený na pět sloupečků mřížky. Přičemž první a poslední části pro postranní obsah zaberou jednu pětinu. Prostřední část (`content`) tři pětiny.
+Vytvoříme tím layout rozdělený na pět sloupečků mřížky, přičemž první a poslední části pro postranní obsah zaberou jednu pětinu. Prostřední část (`content`) má tři pětiny.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-priklad-basic.jpg" width="1600" height="900" alt="…">
@@ -220,7 +222,7 @@ Vytvoříme tím layout rozdělený na pět sloupečků mřížky. Přičemž pr
 </figcaption>
 </figure>
 
-Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V gridu pro ty potřeby máme novou [vlastnost `gap`](css-gap.md):
+Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V gridu máme pro ty potřeby novou [vlastnost `gap`](css-gap.md):
 
 ```css
 .container {
@@ -234,7 +236,7 @@ Po představení všech vlastností a rychlém příkladu bych se rád pozastavi
 
 ## Co je to vlastně mřížka? {#mrizka}
 
-- Nic nového. Do pravidelné mřížky se už staletí sází velká část knížek, dnes i novin a tiskovin obecně.
+- Nic nového. Do pravidelné mřížky se už staletí sází velká část knížek, novin a tiskovin obecně.
 - Webařským veteránům lze CSS grid přiblížit jako tabulkový layout, jen daleko lépe udělaný a zbavený nevýhod.
 - Těm, kteří znají Bootstrap a podobné frameworky, lze grid podat jako zdokonalený Bootstrap grid vestavěný v prohlížečích.
 
@@ -246,11 +248,11 @@ Předně chci zdůraznit, že grid nenahrazuje [flexbox](css-flexbox.md). Potře
 
 - Grid je silnější pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná.
 - Grid budete asi častěji používat pro layout celé stránky, flexbox pro layout menších komponent. Ale není to pravidlo.
-- Grid je zaměřený více na „grid in“ layout, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na „content out“ situace, kdy se layout musí přizpůsobit obsahu.
-- Grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje funkcionalitu jako je automatický layout, funkce jako [`minmax()`](css-minmax.md), [`repeat()`](css-repeat.md) nebo klíčová slova jako `auto-fill`.
-- Grid považuji celkově za robustnější. Jak možná sami vidíte, ve specifikaci gridu je daleko více vlastností než ve flexboxu. Je to i vidět u vlastností [zarovnávání boxů (CSS Box Alignment)](css-box-alignment.md) – těch, které jsou navázané na mřížku je více než těch, které jsou navázané na flexbox.
+- Grid je zaměřený více na layout „grid in“, kdy se obsah musí vždy přizpůsobit mřížce. Flexbox je super na situace „content out“, kdy se layout musí přizpůsobit obsahu.
+- Grid může být také silnější v responzivním designu. Budete potřebovat méně Media Queries, protože obsahuje funkcionalitu jako automatický layout, funkce jako [`minmax()`](css-minmax.md), [`repeat()`](css-repeat.md) nebo klíčová slova jako `auto-fill`.
+- Grid považuji celkově za robustnější. Jak možná sami vidíte, ve specifikaci gridu je daleko více vlastností než ve flexboxu. Je to i vidět u vlastností [zarovnávání boxů (CSS Box Alignment)](css-box-alignment.md) – těch, které jsou navázané na mřížku, je více než těch, které jsou navázané na flexbox.
 
-Z mého pohledu má grid daleko širší možnosti stylování než flexboxem. Můžeme v něm udělat i dříve těžce kódovatelné layouty.
+Z mého pohledu má grid daleko širší možnosti stylování než při využití flexboxu. Svedeme v něm i dříve těžce kódovatelné layouty.
 
 ## Podpora {#podpora}
 
@@ -279,7 +281,7 @@ Horší je to ve stařičkém prohlížeči od Microsoftu.
 
 ### Grid v Internet Exploreru 11 {#ie11}
 
-Explorer a starší Edge podporují dnes už neplatnou specifikaci gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, mohli bychom pokračovat.
+Explorer a starší Edge podporují dnes už neplatnou specifikaci gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, a takhle mohli bychom pokračovat.
 
 Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení gridu pro MSIE](css-grid-msie.md) jemu.
 

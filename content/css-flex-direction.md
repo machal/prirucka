@@ -23,7 +23,7 @@ Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vy
 Toto jsou možné hodnoty:
 
 - `row`  
-(Výchozí hodnota.) Vyskládá flex položky do řádky.
+(Výchozí hodnota.) Vyskládá položky flexboxu do řádky.
 - `row-reverse`  
 Skládání položek do řádky, ale v opačném směru, tedy zprava doleva.
 - `column`  

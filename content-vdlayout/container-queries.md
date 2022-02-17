@@ -55,7 +55,7 @@ Tento návrh se skládá ze dvou kroků. První je definování kontejneru, což
 }
 ```
 
-Hodnota `inline-size` říká, že půjde o layout rozvržení na inline ose, tedy v případě evropských jazyků vodorovně.
+Hodnota `inline-size` říká, že půjde o layout rozvržení na řádkové (inline) ose, tedy v případě evropských jazyků vodorovně.
 
 <div class="ebook-only" markdown="1">
 

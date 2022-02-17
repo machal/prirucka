@@ -95,7 +95,7 @@ Zatím se mi nepovedlo najít vhodné české slovíčko pro teorii, o které se
 Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastnosti `contain`:
 
 - `size`  
-Zapouzdření pro velikost. Prohlížeči říkám, že velikost prvku nijak neovlivní jeho potomkové. Pokud nastavíme `contain:size`, je potřeba v CSS také tomuto prvku nastavit nějakou velikost, jinak prohlížeč počítá, že ji má nulovou, což nechceme. Zapouzdření velikosti samo o sobě zase tak moc výkonu při renderování neušetří.
+Zapouzdření pro velikost. Prohlížeči říkám, že velikost prvku nijak neovlivní jeho potomci. Pokud nastavíme `contain:size`, je potřeba v CSS také tomuto prvku nastavit nějakou velikost, jinak prohlížeč počítá, že ji má nulovou, což nechceme. Zapouzdření velikosti samo o sobě zase tak moc výkonu při renderování neušetří.
 - `layout`  
 Zapouzdření pro rozvržení. Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují. Díky tomu může při zápise `contain:layout` prohlížeč vynechat počítání layoutu vnitřních prvků elementu a zaměřit se jen na prvek, který tuto vlastnost má nastavenou.
 - `paint`  

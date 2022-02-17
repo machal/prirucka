@@ -18,7 +18,7 @@ Pojďme tedy dát kombinaci gridu s MSIE novou šanci.
 
 Jisté rozdíly mezi MSIE a moderními prohlížeči zde jsou. Z těch důležitých například uveďme, že Internet Explorer nativně neumí následující:
 
-- Automatické umísťování prvků do mřížky („auto-placement“).
+- Automatické umísťování prvků do mřížky („autoplacement“).
 - Pojmenovávání oblastí mřížky (vlastnosti jako [`grid-template-areas`](css-grid-template-areas.md)).
 - Mezery mezi buňkami mřížky (vlastnost [`gap`](css-gap.md)).
 

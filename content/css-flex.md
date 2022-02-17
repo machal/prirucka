@@ -20,7 +20,7 @@ Vlastnost `flex` nastaví výchozí velikost elementu a způsob, jakým se smí 
 
 </div>
 
-Jde o zkratku pro všechny vlastnosti definující pružnost flex položky:
+Jde o zkratku pro všechny vlastnosti definující pružnost flexboxové položky:
 
 - [`flex-grow`](css-flex-grow.md) – faktor zvětšování.
 - [`flex-shrink`](css-flex-shrink.md) – faktor smršťování.
@@ -94,7 +94,7 @@ U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se v
 </figcaption>
 </figure>
 
-Je také dobré vědět, že se flex položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením `min-width` nebo `min-height` tohoto prvku na nějakou nízkou hodnotu.
+Je také dobré vědět, že se flexboxové položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením `min-width` nebo `min-height` tohoto prvku na nějakou nízkou hodnotu.
 
 Vyzkoušet si to opět můžete na našem interaktivním CodePenu.
 

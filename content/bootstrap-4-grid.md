@@ -42,12 +42,11 @@ Tohle zůstává stejné. Ve verzi 4 ale přibyl jeden [breakpoint](breakpointy.
 
 V dalších ukázkách kódu už budu `.container` pro zjednodušení vynechávat.
 
-
 ## Řádek rozvržení {#row}
 
 Řádky jsou vodorovná seskupení sloupců rozvržení. Na třídu `.row` nesmíte zapomenout, má totiž dvě funkce:
 
-1. Spuštění layoutu. `.row` je [flex kontejner](css3-flexbox-kontejner.md), rodič layoutu.
+1. Spuštění layoutu. `.row` je [flexboxový kontejner](css3-flexbox-kontejner.md), rodič layoutu.
 2. Zarovnávání layoutu. Má totiž nastavený záporný vnější okraj.
 
 Při používání Bootstrapu 3 se na `.row` často zapomínalo. Ve čtyřce už bez řádky není možné udělat layout. To je docela účinná tabletka proti zapomnětlivosti. 
@@ -66,7 +65,7 @@ Sloupec je základní stavební jednotka layoutů v Bootstrapu. Nově je ve verz
 </div>
 ```
 
-`.col` má nastaveno `flex-grow: 1`, takže sloupečky budou stejně široké. Viz [vlastnosti flex položky](css3-flexbox-polozky.md). To je prima.
+`.col` má nastaveno `flex-grow: 1`, takže sloupečky budou stejně široké. Viz [vlastnosti položky flexboxu](css3-flexbox-polozky.md). To je prima.
 
 Jen pozor, layout neuvidíte na menších velikostech okna. Flexbox vlastnosti v `.col` jsou nastavené tak, aby zohledňovaly obsah okna. Zažijete to i v ukázce, když si okno zmenšíte pod 260 pixelů: [cdpn.io/e/ZeMmJg](https://codepen.io/machal/pen/ZeMmJg?editors=1000).
 
@@ -234,7 +233,7 @@ Zarovnání na vodorovné ose:
 
 </div>
 
-Vychází to z vlastnosti flex kontejneru [`justify-content`](css3-flexbox-kontejner.md#justify-content). Následuje příklad použití:
+Vychází to z vlastnosti flexboxového kontejneru [`justify-content`](css3-flexbox-kontejner.md#justify-content). Následuje příklad použití:
 
 ```html
 <div class="row justify-content-between">
@@ -257,7 +256,7 @@ Zarovnání na svislé ose:
 
 </div>
 
-Vychází to z vlastností flex kontejneru [`align-items`](css3-flexbox-kontejner.md#align-items) a flex položky [`align-self`](css3-flexbox-polozky.md#align-self). Příklad použití:
+Vychází to z vlastností flexboxového kontejneru [`align-items`](css3-flexbox-kontejner.md#align-items) a položky flexboxu [`align-self`](css3-flexbox-polozky.md#align-self). Příklad použití:
 
 ```html
 <div class="row align-items-center">

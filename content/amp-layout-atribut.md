@@ -158,7 +158,7 @@ Abyste o layoutu v AMP věděli opravdu všechno, musíte znát také jednu skry
 
 V předchozím textu jsme tvrdili, že atribut `layout` je možné aplikovat jen na externí obsah, jako je ten dodávaný komponentami `amp-img`, `amp-iframe`, `amp-carousel` a dalšími. To je pravda.
 
-Ty pěkné věci, které atribut dokáže, můžeme ovšem aplikovat i na běžné HTML elementy. Pomůže nám komponenta `amp-layout`.
+Ty pěkné věci, které atribut dokáže, můžeme ovšem aplikovat i na běžné elementy HTML. Pomůže nám komponenta `amp-layout`.
 
 Uvažme třeba, že se nám moc líbí možnost definovat zachování poměru stran jediným atributem. A že ji chceme aplikovat na responzivní SVG vložené přímo do HTML kódu:
 

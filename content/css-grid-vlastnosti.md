@@ -2,13 +2,13 @@
 
 CSS grid má mnoho skvělých vlastností. Ne všechny jsou unikátní, některé jste totiž mohli vidět už [u flexboxu](css-flexbox.md), ale mřížka jejich seznam dále rozšiřuje.
 
-Podívejme se na ně prozatím velmi stručně, ale časem se k nim ještě vrátíme.
+Podívejme se na ně prozatím velmi stručně, časem se k nim ještě vrátíme.
 
 ## 1) Blokový a inline grid
 
 Kontejner mřížky můžeme definovat kromě `display:grid` také jako `display:inline-grid` a použít ho vedle dalších řádkových (`inline` nebo `inline-block`) elementů. Více je v textu [o vlastnosti `display`](css-display.md).
 
-## 2) Rozměry jaké si umanete: fixní i flexibilní
+## 2) Rozměry, jaké si umanete: fixní i flexibilní
 
 Šířky a výšky položek mřížky je možné definovat všemi způsoby, které už asi znáte – jednotkami `px`, `em`, `%` a mnoha dalšími.
 
@@ -17,7 +17,7 @@ Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) – *fr
 <figure>
 <img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
 <figcaption markdown="1">
-*Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce EM odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou FR. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
+*Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce `em` odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou `fr`. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
 </figcaption>
 </figure>
 
@@ -44,11 +44,11 @@ Ještě více možností máme v případě gridu – můžeme zde používat da
 
 Frontendové kodérky a kodéři museli vzhledu často obětovat strukturu HTML, což přinášelo komplikace v oblasti přístupnosti stránky například čtečkám pro nevidomé nebo robotům vyhledávačů.
 
-Když vynecháme nepěkné triky s pozicováním, slibně zde vstoupil flexbox. Co je to ale oproti gridu!
+Když vynecháme nepěkné triky s pozicováním, slibně sem vstoupil flexbox. Co je to ale oproti gridu!
 
 * [Vlastnost `order`](css-order.md), která dovoluje změnit pořadí prvků v prohlížeči, už znáte z flexboxu. Ano, tady ji můžete použít taky.
 * Pomocí [vlastnosti `grid-area`](css-grid-area.md) budete schopni umístit jakéhokoliv potomka na jakékoliv místo mřížky. A zahodit přitom svěrací kazajku struktury HTML.
-* Hodnota `dense` [vlastnosti `grid-auto-flow`](css-grid-auto-flow.md) částečně nechává vykreslení layout na prohlížeči, což oceníte u jednoduchých rozvržení typu „masonry“.
+* Hodnota `dense` [vlastnosti `grid-auto-flow`](css-grid-auto-flow.md) částečně nechává vykreslení layoutu na prohlížeči, což oceníte u jednoduchých rozvržení typu „masonry“.
 
 <div class="web-only" markdown="1">
 
@@ -64,9 +64,9 @@ Zde je ale samozřejmě potřeba zvážit možné negativní [vlivy na přístup
 
 ## 6) Automatické umístění položek do mřížky
 
-Díky vlastnosti známé jako „auto-placement“ není nutné položkám gridu definovat, do kterých buněk mřížky je chceme umístit.
+Díky vlastnosti známé jako „autoplacement“ není nutné položkám gridu definovat, do kterých buněk mřížky je chceme umístit.
 
-Pokud totiž není definováno jinak, každý DOM uzel, který je přímým potomkem kontejneru mřížky, se umístí do jedné buňky.
+Pokud totiž není definováno jinak, každý uzel DOMu, který je přímým potomkem kontejneru mřížky, se umístí do jedné buňky.
 
 V našich podmínkách čteme zleva doprava a pak dolů. Položky se samozřejmě budou umísťovat ve stejném směru.
 
@@ -76,7 +76,7 @@ Pokud bychom snad chtěli změnit směr budování mřížky na shora dolů a pa
 
 ## 7) Oblasti mřížky
 
-Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-template-areas.md) velmi usnadňují definování layoutů a jejich přeskládávání v různých rozlišeních:
+Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-template-areas.md), velmi usnadňují definování layoutů a jejich přeskládávání v různých rozlišeních:
 
 ```css
 @media screen and (max-width: 37.49999em) {
@@ -106,7 +106,7 @@ Samozřejmě je možné používat i vlastnost `position`, která snadno vytrhne
 
 ## 9) Zanořování mřížek
 
-To, co je profíkům jasné jako facka, nemusí být patrné všem. Stejně jako blokové prvky nebo flexboxové kontejnery, můžete do sebe vnořovat i kontejnery gridu.
+To, co je profíkům jasné jako facka, nemusí být patrné všem. Stejně jako blokové prvky nebo flexboxové kontejnery můžete do sebe vnořovat i kontejnery gridu.
 
 Otevírá to další možnosti a prostor pro tvorbu precizně definovaných layoutů.
 
@@ -119,10 +119,10 @@ Sečteno, podtrženo: CSS grid může být nástrojem, který k webu přitáhne 
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-jen-simmons.jpg" width="1600" height="900" alt="THE EXPERIMENTAL LAYOUT LAB OF JEN SIMMONS">
 <figcaption markdown="1">
-*The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a neotřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak. Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/*
+*The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a neotřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak. Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/).*
 </figcaption>
 </figure>
 
-Grid by vás měl zajímat i když zrovna po experimentech a nových typech rozvržení netoužíte. Je vysoce pravděpodobné, že zjednoduší vaší práci nebo udělá váš kód elegantnějším a lépe čitelným.
+Grid by vás měl zajímat, i když zrovna po experimentech a nových typech rozvržení netoužíte. Je vysoce pravděpodobné, že zjednoduší vaši práci a váš kód se díky němu stane elegantnějším a lépe čitelným.
 
 Máte se na co těšit.

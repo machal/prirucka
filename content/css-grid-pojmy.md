@@ -14,7 +14,7 @@ Vysvětlíme si to na příkladu. Vezměme, že máme toto HTML:
 </div>
 ```
 
-Prozatím nechme stranou speciální nastavení páté položky zde dělané třídou `.item--five`, k tomu se propracujeme.
+Prozatím nechme stranou speciální nastavení páté položky zde reprezentované třídou `.item--five`, k tomu se propracujeme.
 
 Mřížku definujeme jako třísloupcovou, ale řádky necháme na automatice gridu:
 
@@ -42,7 +42,7 @@ Na obrázku vidíme jeden kontejner a pět položek mřížky, čímž se dostá
 
 Kontejner vytvoříme z jakéhokoliv prvku v HTML prostým deklarováním [`display:grid` nebo `display:inline-grid`](css-display.md).
 
-Vznikne tím *grid formatting context* (formátovací kontext pro mřížku) a začnou platit trochu jiná pravidla než například pro *block formatting context* (blokový formátovací kontext), který by vznikl uvedením `display:block`.
+Vznikne tím grid formatting context (formátovací kontext pro mřížku) a začnou platit trochu jiná pravidla než například pro block formatting context (blokový formátovací kontext), který by vznikl uvedením `display:block`.
 
 V našem příkladu jsme tedy kontejner mřížky udělali z prvku `.container`.
 
@@ -58,9 +58,9 @@ Položku ale můžeme osvobodit tím, že i z ní uděláme kontejner (`display:
 
 ### Anonymní položky {#anonymni-polozka}
 
-Musíme si tady uvědomit, že položkou je každý DOM uzel, který je přímým potomkem kontejneru mřížky.
+Musíme si tady uvědomit, že položkou je každý uzel DOMu, který je přímým potomkem kontejneru mřížky.
 
-Do této kategorie patří také například obrázky nebo takzvané *anonymní uzly*, což jsou textové bloky, potomkové kontejneru, neuzavřené v HTML elementu.
+Do této kategorie patří také například obrázky nebo takzvané *anonymní uzly*, což jsou textové bloky, potomci kontejneru, neuzavřené v elementu HTML.
 
 ```html
 <div class="container">
@@ -70,7 +70,7 @@ Do této kategorie patří také například obrázky nebo takzvané *anonymní 
 </div>
 ```
 
-V této ukázce máme tedy rovnou tři položky mřížky a nějak si s nimi budeme muset poradit při jejím definování. Já jsem to tady pojal jednoduše:
+V této ukázce máme tedy rovnou tři položky mřížky a nějak si s nimi budeme muset poradit při jejím definování. Já jsem to tu pojal jednoduše:
 
 ```css
 .container {
@@ -84,7 +84,7 @@ Rozdělil jsem plochu, kterou vymezuje kontejner, na tři rovnoměrné části. 
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-anonymni.jpg" width="1600" height="450" alt="Anonymní uzel v CSS gridu">
 <figcaption markdown="1">
-*Obrázek i anonymní textový uzel jsou plnohodnotnými občany definované mřížky.*
+*Obrázek i anonymní textový uzel jsou plnohodnotnými obyvateli definované mřížky.*
 </figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ Kontejner mřížky je tedy rodičovský prvek, který v HTML definuje, že tady
 
 Než dojdeme k dalším pojmům, spácháme na naší původní ukázce nepěknou a ošklivou věc. Zmenšíme plochu stránky tak, aby šířka položek přesáhla šířku kontejneru.
 
-Kontejner je teď menší než je samotná mřížka. Po vytečení „položek z kontejneru“ se dostáváme k dalším pojmům.
+Kontejner je teď menší než samotná mřížka. Po vytečení „položek z kontejneru“ se dostáváme k dalším pojmům.
 
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-kontejner-mrizka.jpg" width="1600" height="900" alt="Kontejner a mřížka v CSS gridu">
@@ -114,7 +114,7 @@ Mimochodem, s původně uvedeným CSS a HTML by to takhle udělat nešlo. Musel 
 }
 ```
 
-[Funkci `minmax()`](css-minmax.md) možná už znáte. Dělá přesně to, na co byste ji odhadovali – v našem případě zakazuje zmenšení první položky pod 200 pixelů a druhé a třetí pod 100 pixelů.
+[Funkci `minmax()`](css-minmax.md) možná už znáte. Dělá přesně to, na co byste ji odhadovali – v našem případě zakazuje zmenšení první položky pod 500 pixelů a druhé a třetí pod 250 pixelů.
 
 CodePen: [cdpn.io/e/qBbjjoj](https://codepen.io/machal/pen/qBbjjoj?editors=1100)
 
@@ -124,16 +124,16 @@ Mřížka je ona neviditelná pravidelná síť, do které umísťujeme náš la
 
 Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési „okno“ pro vykreslování mřížky.
 
-Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní a tak je možné samotnou mřížku pěkně vizualizovat v DevTools.
+Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní, a tak je možné samotnou mřížku pěkně vizualizovat v DevTools.
 
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-firefox.jpg" width="1600" height="450" alt="CSS grid Inspector ve Firefoxu">
 <figcaption markdown="1">
-*Obrázek: grid v negližé, to je „CSS grid Inspector“ ve Firefoxu.*
+*Grid v negližé, to je „CSS Grid Inspector“ ve Firefoxu.*
 </figcaption>
 </figure>
 
-Vizualizace mřížky ve Firefoxu nebo i v Chromu pomůže pochopit, z čeho se váš grid skládá a jak to chápe prohlížeč. Velmi doporučuji to při práci na mřížkách používat.
+Vizualizace mřížky ve Firefoxu nebo i v Chromu pomůže pochopit, z čeho se váš grid skládá a jak to chápe prohlížeč. Velmi doporučuji tuto funkci při práci na mřížkách používat.
 
 <div class="ebook-only" markdown="1">
 
@@ -141,7 +141,7 @@ O podpoře layoutů v DevTools moderních prohlížečů budu psát [v osmé kap
 
 </div>
 
-Když už tedy víme, co je mřížka a umíte ji vizualizovat, pojďme si říct, z jakých stavebních prvků se přesně ta naše mřížka skládá.
+Když už tedy víme, co je mřížka, a když už ji umíte vizualizovat, pojďme si říct, z jakých stavebních prvků se ta naše mřížka přesně skládá.
 
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-gridu.jpg" width="1600" height="900" alt="…">
@@ -156,7 +156,7 @@ Linka je základní prvek rozvržení mřížky. Jde o čáru, která mřížku 
 
 Jak je patrné z obrázku výše, linky mají svá čísla. Pozor, začíná se vždy od `1`, nikoliv od nuly, na což může naletět nejeden programátorsky orientovaný vývojář.
 
-Při definici mřížky, například [vlastnostmi `grid-template-rows/columns`](css-grid-template-rows-columns.md) je možné si linky pojmenovat:
+Při definici mřížky, například [vlastnostmi `grid-template-rows/columns`](css-grid-template-rows-columns.md), je možné si linky pojmenovat:
 
 ```css
 .container {
@@ -174,7 +174,7 @@ Dostali jsme se díky tomu k dalšímu pojmu – sloupec mřížky. Než se si j
 
 ## Stopa mřížky (grid track) {#stopa}
 
-Stopa je prostor, který je definovaný dvěma linkami. Vede přitom od začátku mřížky k jejímu konci. Je to asi vidět na obrázku výše.
+Stopa je prostor, který je definovaný dvěma linkami. Vede přitom od začátku mřížky k jejímu konci. Je to vidět na obrázku výše.
 
 Jde jen o obecný název pro řádek (vodorovnou stopu) nebo sloupec (svislou stopu).
 
@@ -184,13 +184,13 @@ Vodorovné a svislé stopy mřížky jsou označovány jako řádky a sloupce, p
 
 Poznámka pro pokročilé: Pokud bychom chtěli být přesní, měli bychom uvést ještě pojem „osa mřížky“, což je stejně jako v geometrii přímka, jež určuje směry. V případě CSS gridu jsou ty směry naštěstí jen dva.
 
-V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale *blokové ose* (block axis) a *inline ose* (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je čeština nebo slovenština), ale také se zápisem svislým (jako může být například japonština). Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale opravdu v textu už nechci více zatěžovat.
+V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale o blokové ose (block axis) řádkové ose (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je čeština nebo slovenština), ale také se zápisem svislým (jako může být například japonština). Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale v textu nechci už opravdu více zatěžovat.
 
 ## Buňka mřížky (grid cell) {#bunka}
 
 Buňka je prostor vymezený čtyřmi linkami mřížky, který už není možné dále dělit dalšími linkami. Je to nejmenší prostorová jednotka mřížky, odpovídající buňce tabulky.
 
-Pozor, buňka mřížky zároveň není položkou mřížky. Mřížka má vždy obdélníkový tvar, takže je možné definovat nižší počet položek než má mřížka buněk.
+Pozor, buňka mřížky zároveň není položkou mřížky. Mřížka má vždy obdélníkový tvar, takže je možné definovat nižší počet položek, než má mřížka buněk.
 
 Je to patrné v následujícím příkladu, kde jsme ubrali poslední položku. Mřížka však má stále tři sloupce a dva řádky:
 
@@ -209,7 +209,7 @@ Abychom mohli buňku ovlivnit z CSS, musíme z ní udělat oblast.
 
 ## Oblast mřížky (grid area) {#oblast}
 
-Oblast je prostor vymezený čtyřmi linkami mřížky, který ale může být možné dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buněk mřížky.
+Oblast je prostor vymezený čtyřmi linkami mřížky, který ale lze dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buněk mřížky.
 
 V naší ukázce jsme pátou položku ručně umístili na místo páté a šesté buňky mřížky, tedy do prostoru, který v předchozím obrázku vidíte jako neobsazený.
 
@@ -222,8 +222,8 @@ V naší ukázce jsme pátou položku ručně umístili na místo páté a šest
 
 Tento zápis přesně říká o umístění oblasti následující:
 
-* Svisle ji umísti mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, takže na místo druhého a třetího sloupce.
-* Vodorovně ji umísti mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, takže do druhého řádku.
+* Svisle ji umísť mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, čili na místo druhého a třetího sloupce.
+* Vodorovně ji umísť mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, čili do druhého řádku.
 
 CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 
@@ -238,20 +238,20 @@ Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost
 }
 ```
 
-„Gutter“ by se měl asi přeložit jako „žlab“, ale v kontextu webdesignu by to bylo dost neobvyklé. Slovo „gutter“ se v hovorové *webařštině* vcelku běžně používá, takže si s ním jako se synonymem pro „žlab“ vystačíme.
+„Gutter“ by se měl asi přeložit jako „žlab“, ale v kontextu webdesignu by to bylo dost neobvyklé. Slovo gutter se v hovorové webařštině vcelku běžně používá, takže si s ním jako se synonymem pro žlab vystačíme.
 
-Pojďme si deseti pixelový „gutter“ nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
+Pojďme si 10pixelový gutter nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
 
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-grid-inspector.jpg" width="1600" height="900" alt="Inspektor CSS gridu ve Firefoxu">
 <figcaption markdown="1">
-*Obrázek z Firefoxu: Ale to je nemilé, linka mřížky už není jen linka.*
+*Ale to je nemilé, linka mřížky už není jen linka.*
 </figcaption>
 </figure>
 
 Jak je vidět z obrázku, z linek mřížky se staly obdélníky. Nikoliv úsečky, ale sloupce a řádky, které mají svůj začátek i konec.
 
-Ano, vlastnosti `gap` určuje šířku linek. Pokud ji nedefinujeme, jde o neviditelné úsečky tak jako tomu bylo v předchozích příkladech.
+Ano, vlastnost `gap` určuje šířku linek. Pokud ji nedefinujeme, jde o neviditelné úsečky, tak jako tomu bylo v předchozích příkladech.
 
 CodePen: [cdpn.io/e/vYLONWz](https://codepen.io/machal/pen/vYLONWz?editors=1100)
 

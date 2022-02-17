@@ -118,7 +118,7 @@ Více o tomto využití Service Workeru najdete na amp.dev. [vrdl.in/amp2pwa](ht
 
 Pojďme ale zpět k naší uživatelce. Máme tady problém. Prohlížený produkt jí totiž nevyhovuje. Nezaujaly ji ani podobné produkty. Ale náš e-shop se jí líbí (kromě jiného i proto, že se zobrazil rychle), takže hledá navigaci na další podobné produkty.
 
-„A helemese, tady je odkaz na kategorii ‚Dětské pohorky‘, ty náš malý Vladimírek zrovna prošlapal, pacholek jeden,“ říká, kliká a přechází na plnohodnotný web.
+„A heleme se, tady je odkaz na kategorii ‚Dětské pohorky‘, ty náš malý Vladimírek zrovna prošlapal, pacholek jeden,“ říká, kliká a přechází na plnohodnotný web.
 
 ### 3) Dostává se na PWA web
 

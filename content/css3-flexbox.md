@@ -62,9 +62,9 @@ Je dobré zmínit, že flexbox je určený pro layout komponent uvnitř stránek
 
 Pro celostránkové layouty se více hodí CSS3 grid Layout. Ten má ovšem zatím jen malou podporu v prohlížečích. Užití flexboxu pro celostránkové layouty je samozřejmě možné. Jen se na velmi pomalých zařízeních nebo internetových připojeních nebude vykreslovat optimálně. Píše o tom třeba Jake Archibald. [vrdl.in/zuscj](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)
 
-## Šup na základní pojmy – flex kontejner a flex položka, hlavní a příčná osa
+## Šup na základní pojmy – flexboxový kontejner a flexboxoví položka, hlavní a příčná osa
 
-Flexbox tvoří nerozlučná dvojice dvou typů elementů – flex kontejner a flex položka. Flex položkou se stává každý přímý potomek kontejneru.
+Flexbox tvoří nerozlučná dvojice dvou typů elementů – flexboxový kontejner a flexboxová položka. Flexboxovou položkou se stává každý přímý potomek kontejneru.
 
 ```html
 <ul class="flex-container">
@@ -73,7 +73,7 @@ Flexbox tvoří nerozlučná dvojice dvou typů elementů – flex kontejner a f
 </ul>
 ```
 
-Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
+Flexbox nadefinujeme snadno jen pomocí flexboxového kontejneru:
 
 ```css
 .flex-container {
@@ -81,14 +81,14 @@ Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
 }
 ```
 
-Všechny `<li>` se tady stávají flex položkami.
+Všechny `<li>` se tady stávají položkami flexboxu.
 
-Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
+Kromě flexboxových kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si to na zjednodušeném schématu:
 
 ![flexbox schéma](../dist/images/original/flexbox-schema.jpg)
 
-* flex kontejner – rodičovský element
-* flex položka – všichni přímí potomci flex kontejneru
+* flexboxový kontejner – rodičovský element
+* flexboxová položka – všichni přímí potomci kontejneru flexboxu
 * hlavní osa – výchozí je vodorovná, ale lze změnit
 * příčná osa – vždy příčná k hlavní, takže ve výchozí podobě svislá
 * hlavní rozměr – výchozí je šířka, ale řídí se nastavením hlavní osy

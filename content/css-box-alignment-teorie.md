@@ -278,7 +278,7 @@ Vlastnosti a hodnoty umožňují nastavení konzistentní mezery mezi položkami
 Jde o různé varianty [vlastnosti `gap`](css-gap.md):
 
 - `row-gap` - mezera mezi řádky (na blokové ose)
-- `column-gap` - mezera mezi sloupci (na inline ose)
+- `column-gap` - mezera mezi sloupci (na řádkové ose)
 - `gap` - zkratka pro vlastnosti `column-gap` a `row-gap`
 
 Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `grid-column-gap`, `grid-gap`). Prohlížeče je dodnes umí, jako synonyma pro výše uvedené. Nicméně doporučuji se vám řídit novou verzí specifikace a používat `gap`, například takto:

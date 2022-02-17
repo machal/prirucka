@@ -113,7 +113,7 @@ Ale prdlajs. Takhle to nefunguje. To, co změní [vlastnost `flex-direction`](cs
 Směr toku dokumentu mění pouze tyto vlastnosti:
 
 - `writing-mode` – určuje tok dokumentu na blokové úrovni. Možnosti hodnot jsou třeba `horizontal-tb` nebo `vertical-rl`.
-- `direction` – (nebo atribut `dir` v HTML) určí směr sázení na inline ose. Možnosti `ltr` nebo `rtl`.
+- `direction` – (nebo atribut `dir` v HTML) určí směr sázení na řádkové (inline) ose. Možnosti `ltr` nebo `rtl`.
 - `text-orientation` – mění orientaci textu sázeného svisle.
 
 V praxi se to pak projevuje následovně: Vezměme, že máme flexový kontejner a v něm několik položek. Každá z nich má tuto deklaraci:

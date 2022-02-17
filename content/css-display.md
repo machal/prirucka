@@ -88,7 +88,7 @@ Hodnota `flow` zapíná formátování tokem („flow layout“), což je běžn
 - `flow-root`  
 Vytvoří kontejner blokového kontextu (jako `display:block`) a rozloží jeho obsah pomocí toku (flow layout). Hodnota `flow-root` ale vždy generuje nový kontext formátování bloku pro svůj obsah, takže není například nutné mazat „floaty“ pomocí „clearfixu“. Na této hodnotě je zajímavé, že ji podporují všechny moderní prohlížeče. Internet Explorer nikoliv. [caniuse.com/flow-root](https://caniuse.com/flow-root)
 - `flex`  
-Zapíná formátovací kontext [flexboxu](css-flexbox.md). Ze stylovaného prvku udělá flex kontejner a z přímých potomků flex položky. Podporováno všude.
+Zapíná formátovací kontext [flexboxu](css-flexbox.md). Ze stylovaného prvku udělá kontejner flexboxu a z přímých potomků flexboxové položky. Podporováno všude.
 - `grid`  
 Spouští formátovací kontext [gridu](css-grid.md). Ze stylovaného prvku udělá  kontejner mřížky a z přímých potomků její položky. Podporováno všude.
 - `table`  
@@ -164,9 +164,9 @@ Druhou a třetí hodnotu z obrázku probereme hned v následující části.
 Ke všem možným metodám ovlivnění vykreslování boxíků na obrazovku musíme přidat i metody _nevykreslování_. K tomu slouží následující dvě hodnoty vlastnosti `display`.
 
 - `none`  
-Element ani jeho potomkové se na obrazovku prostě nevykreslí.
+Element ani jeho potomci se na obrazovku prostě nevykreslí.
 - `contents`  
-Element se na obrazovku nevykreslí, ale jeho potomkové ano.
+Element se na obrazovku nevykreslí, ale jeho potomci ano.
 
 Zobrazení typu `contents` funguje tak, jako by byl v DOM stromu nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
 
@@ -195,7 +195,7 @@ Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označen�
 | Zkratka            | Plný zápis              | Co se generuje                                                 |
 | ------------------ | ----------------------- | -------------------------------------------------------------- |
 | `none`             | -                       | nic                                                            |
-| `contents`         | -                       | prvek vynechán, generují se potomkové                         |
+| `contents`         | -                       | prvek vynechán, generují se potomci                         |
 | `block`            | `block flow`            | blokový box                                                    |
 | `flow-root`        | `block flow-root`       | blokový box, který vždy vytváří nový kontext formátování bloku |
 | `inline`           | `inline flow`           | inline (řádkový) box                                           |

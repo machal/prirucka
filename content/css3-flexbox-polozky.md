@@ -56,7 +56,7 @@ Výchozí šířka položky. Alternativně výška, pokud je `flex-direction: co
 
 ##   `flex` – celková pružnost položky  {#flex}
 
-Zkratka pro všechny vlastnosti definující pružnost flex položky –  `flex-grow`, `flex-shrink` a `flex-basis`. Nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat.
+Zkratka pro všechny vlastnosti definující pružnost flexboxové položky –  `flex-grow`, `flex-shrink` a `flex-basis`. Nastaví výchozí velikost elementu a způsob, jakým se smí zvětšovat a zmenšovat.
 
 Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku `flex` proti konkrétním vlastnostem, které zastupuje. Důvodem je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
 
@@ -94,11 +94,11 @@ Zpětné nastavení výchozí hodnoty, tedy `flex: 0 1 auto`. Položky se tak s 
 * `flex: <kladné-číslo>`
 U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se vám změní výchozí velikost položky a model pružnosti, jak jsme zmiňovali u vlastnosti flex-basis.
 
-Je také dobré vědět, že se flex položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením `min-width` nebo `min-height` na nějakou nízkou hodnotu.
+Je také dobré vědět, že se flexboxové položky nikdy nezmenší pod minimální šířku obsahu. Ta je dána šířkou nejdelšího slova nebo vnitřního elementu fixní šířky – třeba obrázku. Lze to změnit nastavením `min-width` nebo `min-height` na nějakou nízkou hodnotu.
 
 ## `order` – změna pořadí prvků  {#order}
 
-Pořadí flex položky standardně odpovídá zdrojovému kódu, ale to můžeme změnit pomocí [vlastnosti `order`](css-order.md).
+Pořadí položky flexboxu standardně odpovídá zdrojovému kódu, ale to můžeme změnit pomocí [vlastnosti `order`](css-order.md).
 
 Změna pořadí má vliv na vizuální pozici elementu a na pořadí jeho vykreslení prohlížečem. Nemá ale vliv například na pořadí čtení dokumentu čtečkami nebo na pořadí navigace pomocí klávesy tab.
 
@@ -114,7 +114,7 @@ Tímto zápisem pak třeba třetí položku předřadíme první:
 }
 ```
 
-Nezapomeňte, že order nelze použít na jiné elementy ve stránce než přímé potomky flex kontejneru.
+Nezapomeňte, že order nelze použít na jiné elementy ve stránce než přímé potomky flexboxového kontejneru.
 
 Teď je na řadě další z radostí, kterou přináší flexbox. Konečně v CSS snadno zarovnáme prvky layoutu vodorovně, ale i svisle.
 
@@ -142,6 +142,6 @@ Tato vlastnost se aplikuje na jednotlivé položky, a tak se hodí pro vytvořen
 
 ###   Poznámka: Baseline zarovnání
 
-Doporučuji všimnout si velmi praktického zarovnání na účaří prvního řádku – `baseline`. K horní hraně flex kontejneru se přilepí položka s největší vzdáleností mezi baseline a horní hranou boxu. Vidět je na předchozím obrázku nebo na [cdpn.io/e/QwobXz](https://cdpn.io/e/QwobXz). Všimněte si, že flexbox nerozhodí ani nastavení horního paddingu v pixelech.
+Doporučuji všimnout si velmi praktického zarovnání na účaří prvního řádku – `baseline`. K horní hraně flexboxového kontejneru se přilepí položka s největší vzdáleností mezi baseline a horní hranou boxu. Vidět je na předchozím obrázku nebo na [cdpn.io/e/QwobXz](https://cdpn.io/e/QwobXz). Všimněte si, že flexbox nerozhodí ani nastavení horního paddingu v pixelech.
 
 <!-- AdSnippet -->

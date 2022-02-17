@@ -16,7 +16,7 @@ Vlastnosti se týkají buď kontejneru, tedy rodičovského prvku, nebo položek
 
 ### Kontejner flexboxu {#vlastnosti-kontejner}
 
-Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext formátování flexboxem, takže jeho přímí potomkové mohou mít specifické vlastnosti.
+Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku kontext formátování flexboxem, takže jeho přímí potomci mohou mít specifické vlastnosti.
 
 Možná je také „inline“ hodnota: `inline-flex`, která se chová jako `inline-block`, tedy uvnitř je možné dělat rozvržení, zvenčí jde o součást řádku textu.
 
@@ -249,9 +249,9 @@ Výsledný příklad si utíkejte vyzkoušet naživo:
 
 CodePen: [cdpn.io/e/jOVVeVL](https://cdpn.io/e/jOVVeVL)
 
-## Základní pojmy: flex kontejner, flex položka, hlavní a příčná osa {#pojmy}
+## Základní pojmy: flexboxový kontejner, položka flexboxu, hlavní a příčná osa {#pojmy}
 
-Flexbox tvoří nerozlučná dvojice dvou typů elementů – flex kontejner a flex položka. Flex položkou se stává každý přímý potomek kontejneru.
+Flexbox tvoří nerozlučná dvojice dvou typů elementů – flexboxový kontejner a položka flexboxu. Flexboxovou položkou se stává každý přímý potomek kontejneru.
 
 ```html
 <ul class="flex-container">
@@ -260,7 +260,7 @@ Flexbox tvoří nerozlučná dvojice dvou typů elementů – flex kontejner a f
 </ul>
 ```
 
-Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
+Flexbox nadefinujeme snadno jen pomocí kontejneru flexboxu:
 
 ```css
 .flex-container {
@@ -268,9 +268,9 @@ Flexbox nadefinujeme snadno jen pomocí flex kontejneru:
 }
 ```
 
-Všechny `<li>` se tady stávají flex položkami.
+Všechny `<li>` se tady stávají položkami flexboxu.
 
-Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si je na zjednodušeném schématu:
+Kromě flexboxových kontejnerů a položek nás v dalším textu budou zajímat ještě osy. Ukažme si je na zjednodušeném schématu:
 
 <figure>
 <img src="../dist/images/original/vdlayout/flexbox-schema.jpg" width="1600" height="900" alt="Schéma flexboxu">
@@ -279,8 +279,8 @@ Kromě flex kontejnerů a položek nás v dalším textu budou zajímat ještě 
 </figcaption>
 </figure>
 
-- flex kontejner – rodičovský element
-- flex položka – všichni přímí potomci flex kontejneru
+- kontejner flexboxu – rodičovský element
+- flexboxová položka – všichni přímí potomci kontejneru
 - hlavní osa – výchozí je vodorovná, ale toto lze změnit
 - příčná osa – vždy příčná k hlavní, takže ve výchozí podobě je svislá
 - hlavní rozměr – výchozí je šířka, ale řídí se nastavením hlavní osy
