@@ -1,6 +1,6 @@
 # Autoprefixer
 
-Autoprefixer je, jak z názvu vyplývá, automatizační nástroj, který přidává prohlížečové prefixy do CSS kódu.
+Autoprefixer je – jak z názvu vyplývá – automatizační nástroj, který přidává prohlížečové prefixy do CSS kódu.
 
 <div class="ebook-only" markdown="1">
 
@@ -16,7 +16,7 @@ Autoprefixer například z následujícího kódu…
 }
 ```
 
-…udělá tento kód:
+… udělá tento kód:
 
 ```css
 .box {
@@ -43,11 +43,11 @@ Tím pádem budou kódu rozumět všechny prohlížeče, i když vlastnost `hyph
 
 ## Jak Autoprefixer funguje? {#jak-funguje}
 
-Autoprefixer je balíček, který si můžete do projektu nainstalovat jako plugin pro PostCSS, což je nástroj, který slouží k jakémukoliv automatickému zpracovávání CSS kódu.
+Autoprefixer je balíček, který si můžete do projektu nainstalovat jako plugin pro PostCSS, což je nástroj sloužící k jakémukoliv automatickému zpracovávání CSS kódu.
 
 <!-- AdSnippet -->
 
-Používat Autoprefixer můžete mnoha různými způsoby, o těch bude další část textu. Nejprve ale k nastavení.
+Používat Autoprefixer můžete mnoha různými způsoby, o těch bude za chvíli řeč. Nejprve ale k nastavení.
 
 <div class="web-only" markdown="1">
 
@@ -57,9 +57,9 @@ Používat Autoprefixer můžete mnoha různými způsoby, o těch bude další 
 
 ## Nastavení pomocí Browserlist {#browserlist}
 
-Browserlist je způsob, jak Autoprefixeru a podobným nástrojům (jako je například Babel pro zpracování JavaScriptu) určit, které prohlížeče na projektu podporujete.
+Browserlist je způsob, jak Autoprefixeru a podobným nástrojům (jakým je například Babel pro zpracování JavaScriptu) určit, které prohlížeče v projektu podporujete.
 
-Nejlepším způsobem, jak poskytnou toto nastavení, je soubor `.browserslistrc` v kořenovém adresáři projektu. Alternativně můžete přidat klíč `browserslist` do souboru `package.json` nebo přímo v nastavení Autoprefixeru.
+Nejlepším způsobem, jak poskytnout toto nastavení, je soubor `.browserslistrc` v kořenovém adresáři projektu. Alternativně můžete přidat klíč `browserslist` do souboru `package.json` nebo přímo v nastavení Autoprefixeru.
 
 <div class="web-only" markdown="1">
 
@@ -73,7 +73,7 @@ Výchozí nastavení vypadá asi takto:
 last 1 version, >1%
 ```
 
-Pak tento kód…
+Potom tento kód…
 
 ```css
 .box {
@@ -81,7 +81,7 @@ Pak tento kód…
 }
 ```
 
-…bude mít totožný zápis i po zásahu Autoprefixeru. Zápisem `last 1 version, >1%` jsme řekli, že budeme podporovat jen poslední verzi prohlížečů a takovou verzi, která má ve světě rozšíření více než jedno procento.
+… bude mít totožný zápis i po zásahu Autoprefixeru. Zápisem `last 1 version, >1%` jsme řekli, že budeme podporovat jen poslední verzi prohlížečů a takovou verzi, která má ve světě rozšíření více než jedno procento.
 
 Pojďme ale změnit zápis konfigurace takto:
 
@@ -102,11 +102,11 @@ V konfiguraci Browserlistu je `IE 10`, takže Autoprefixer přidá zápis pro te
 
 ## Použití Autoprefixeru {#pouziti}
 
-Možnosti využití je celá řada, podívejme se na ně.
+Možností využití je celá řada, podívejme se na ně.
 
 ### Online {#pouziti-online}
 
-Pokud si chcete jen hrát nebo přidat pár prefixů, využijte online pískoviště. [autoprefixer.github.io](https://autoprefixer.github.io/)
+Pokud si chcete jen hrát nebo přidat pár prefixů, zajděte na online pískoviště.[autoprefixer.github.io](https://autoprefixer.github.io/)
 
 ### Příkazová řádka {#pouziti-cli}
 
@@ -119,7 +119,7 @@ npx postcss *.css --use autoprefixer -d build/
 
 ### Gulp {#pouziti-gulp}
 
-Využijte balíček gulp-postcss. [github.com/postcss/gulp-postcss](https://github.com/postcss/gulp-postcss)
+Pro kombinování s Gulpem je k dispozici balíček gulp-postcss. [github.com/postcss/gulp-postcss](https://github.com/postcss/gulp-postcss)
 
 ```js
 gulp.task('autoprefixer', () => {
@@ -137,7 +137,18 @@ gulp.task('autoprefixer', () => {
 
 ### Webpack {#pouziti-webpack}
 
-Ve [Webpacku](webpack.md) můžete využít postcss-loader. [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
+<div class="web-only" markdown="1">
+
+postcss-loader je balíček vhodný pro vaší práci ve [Webpacku](webpack.md). [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
+
+</div>
+
+<div class="ebook-only" markdown="1">
+
+postcss-loader je balíček vhodný pro vaší práci ve Webpacku. [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
+
+</div>
+
 
 `webpack.config.js`:
 

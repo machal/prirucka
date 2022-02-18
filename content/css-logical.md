@@ -4,7 +4,7 @@ V CSS často pracujeme s rozměry v určitém směru. Občas se ale může stát
 
 Logické vlastnosti a rozměry (podle specifikace „CSS Logical Properties and Values“) vznikly jako alternativa k fyzickým vlastnostem a rozměrům.
 
-Například namísto fyzického `margin-left:1rem` napíšete `margin-inline-start:1rem`. Bude to pak univerzální pro češtinu, arabštinu i jazyky případně zapisované shora dolů. Pokaždé se totiž vnější okraj vykreslí na jiné straně.
+Například místo fyzického `margin-left:1rem` napíšete `margin-inline-start:1rem`. Bude to pak univerzální pro češtinu, arabštinu i jazyky případně zapisované shora dolů. Vnější okraj se totiž pokaždé vykreslí na jiné straně.
 
 <div class="ebook-only" markdown="1">
 
@@ -14,11 +14,11 @@ CSS Logical Properties velmi souvisí se změnou směru layoutu pro různé smě
 
 <!-- AdSnippet -->
 
-V CSS to je relativní novinka, ale má to vcelku dobrou podporu v prohlížečích.
+V CSS to je víceméně novinka, ale má to vcelku dobrou podporu v prohlížečích.
 
-Bude to pro vás naprosto zásadní, pokud pracujete s různými jazyky. Vám ostatním Logical Properties pomohou spíše drobně,  např. v tom že zde máme nové užitečné zkratky vlastností jako `margin-inline` a `padding-block`.
+Bude to pro vás naprosto zásadní, pokud pracujete s různými jazyky. Vám ostatním Logical Properties pomohou spíše drobně,  např. v tom, že zde máme nové užitečné zkratky vlastností jako `margin-inline` a `padding-block`.
 
-Všechno se ale dozvíte v článku, pojďme to teď rozebrat dopodobrona.
+Všechno se ale dozvíte v textu, pojďme to teď rozebrat dopodrobna.
 
 ## Příklad s arabštinou {#priklad-arabstina}
 
@@ -33,7 +33,7 @@ Vezměme, že máme jednoduchý příklad, který vidíte na obrázku. Nadpis, o
 </figcaption>
 </figure>
 
-Arabská polovina textu je v HTML označená atributem s hodnotou `dir="rtl"`. To znamená, že v tomto místě má tok dokumentu směr zprava doleva. (`rtl` jako „Right To Left“).
+Arabská polovina textu je v HTML označená atributem s hodnotou `dir="rtl"`. To znamená, že v tomto místě má tok dokumentu směr zprava doleva. (`rtl` jako „Right to Left“).
 
 To by ale na rozvržení nemělo žádný dopad, pokud bychom použili klasické fyzické hodnoty jako `float:left` nebo `margin-right:1rem`.
 
@@ -49,13 +49,13 @@ My ovšem pro sazbu textu a vložení obrázku sáhneme po logických vlastnoste
 
 Vysvětlím to více:
 
-- `float:inline-start` znamená, že obrázek bude plout k začátku inline (řádkové) osy. V češtině by to tedy bylo doleva (hodnota `left`), v arabštině doprava (hodnota `right`).
+- `float:inline-start` znamená, že obrázek bude plout k začátku řádkové (inline) osy. V češtině by to tedy bylo doleva (hodnota `left`), v arabštině doprava (hodnota `right`).
 - `margin-inline-end:1rem` přidá vnější okraj na konec blokové osy (příčnou k řádkové). V češtině by to odpovídalo `margin-right:1rem`, v arabštině `margin-left:1rem`.
-- `margin-block-end:1rem` je podobný případ, jen v tomto případě pro oba jazyky stejný. Odpovídá `margin-bottom:1rem`. Například ale v japonštině, která můež být vysázená shora dolů by se měnily obě osy, řádková i bloková.
+- `margin-block-end:1rem` je podobný případ, jen v tomto případě pro oba jazyky stejný. Odpovídá `margin-bottom:1rem`. Například ale v japonštině, která může být vysázená shora dolů, by se měnily obě osy, řádková i bloková.
 
 ### Užitečné zkratky vlastností {#priklad-arabstina-zkratky}
 
-Až budete zkoumat přiložený CodePen, pravděpodobně vás v něm zaujme tato deklarace:
+Až budete zkoumat přiložený CodePen, pravděpodobně vás v něm zaujme toto:
 
 ```css
 body {
@@ -72,17 +72,17 @@ body {
 }
 ```
 
-A podobně fungují zkratky pro blokový směr a další vlastnosti jako je `padding`.
+A podobně fungují zkratky pro blokový směr a další vlastnosti, jako je `padding`.
 
-Proč to tak zdůrazňuji? Definice rozměrů v jednom směru je věc, která nám v CSS chyběla a která je díky CSS Logical Properties nyní možná. Drobnost, ale pomůže. I těm, kteří nesázejí dokumenty v arabštině nebo japonštině.
+Proč to tak zdůrazňuji? Definice rozměrů v jednom směru je věc, která nám v CSS chyběla a která je nyní díky CSS Logical Properties možná. Drobnost, ale pomůže. I těm, kteří nesázejí dokumenty v arabštině nebo japonštině.
 
-Podívejte se na CodePen k tomuto příkladu. Jen pozor, logické hodnoty ve vlastnosti `float` mě v době psaní fungovaly ve Firefoxu, ale ne v Chromu a Safari.
+Podívejte se na CodePen k tomuto příkladu. Jen pozor, logické hodnoty ve vlastnosti `float` mi v době psaní fungovaly ve Firefoxu, ale ne v Chromu a Safari.
 
 CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 
 ## Směr blokový a řádkový {#smer}
 
-Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba uvědomit si, že vycházejí z obecné vlastnosti CSS - dvou směrů: blokového řádkového.
+Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba uvědomit si, že vycházejí z obecné vlastnosti CSS – dvou směrů: blokového a řádkového.
 
 - _Řádková osa (inline)_ je směr sázení textu po řádcích.
 - _Bloková osa (block)_ zase ve směru protilehlém.
@@ -91,11 +91,11 @@ Asi si to umíte představit podle [vlastnosti `display`](css-display.md), kter�
 
 Možná není úplně jasné, proč se nepoužívají hodnoty z reálného světa – osa horizontální a osa vertikální, případně vodorovná a příčná? Důvod je v obecnosti.
 
-Pokud od CSS chceme, aby umělo pracovat s různými světovými jazyky, je nutné, aby se umělo vyjadřovat v obecných pojmech, nikoliv v pojmech které reflektují například jen jazyky vycházející z latiny.
+Pokud od CSS chceme, aby umělo pracovat s různými světovými jazyky, je nutné, aby se umělo vyjadřovat v obecných pojmech, nikoliv v pojmech, které reflektují například jen jazyky vycházející z latiny.
 
 ## Směr toku dokumentu versus směr layoutu {#smer-layoutu}
 
-Pojmy jako řádková osa a bloková osa můžete znát z nových layoutový modulů jako je [grid](css-grid.md). Směr toku dokumentu je ale něco jiného než směr layoutu.
+Pojmy jako řádková osa a bloková osa můžete znát z nových layoutových modulů, jako je [grid](css-grid.md). Směr toku dokumentu je ale něco jiného než směr layoutu.
 
 Díky tomu, že je CSS stále obecnější, mohou některé pojmy splývat a zaměňovat se.
 
@@ -108,7 +108,7 @@ Já sám jsem se napálil právě u řádkové a blokové osy, když jsem se dom
 }
 ```
 
-Ale prdlajs. Takhle to nefunguje. To, co změní [vlastnost `flex-direction`](css-flex-direction.md) nebo třeba [`grid-auto-flow`](css-grid-auto-flow.md) je směr rozvržení, nikoliv směr toku dokumentu.
+Ale prdlajs. Takhle to nefunguje. To, co změní [vlastnost `flex-direction`](css-flex-direction.md) nebo třeba [`grid-auto-flow`](css-grid-auto-flow.md), je směr rozvržení, nikoliv směr toku dokumentu.
 
 Směr toku dokumentu mění pouze tyto vlastnosti:
 
@@ -128,7 +128,7 @@ V praxi se to pak projevuje následovně: Vezměme, že máme flexový kontejner
 }
 ```
 
-Ano, manipulujeme tady s vlastnostmi prvku na blokové osy, tedy v případě sázení v češtině na výšku. Prvek má vyšší vnitřní okraj (`padding-block:2rem`) a zelenou barvu rámečku `border-block-color:LimeGreen`.
+Ano, manipulujeme tady s vlastnostmi prvku na blokové ose, tedy v případě sázení v češtině na výšku. Prvek má vyšší vnitřní okraj (`padding-block:2rem`) a zelenou barvu rámečku `border-block-color:LimeGreen`.
 
 V případě, že směr rozvržení změníme z vodorovného (`flex-direction:row`) na svislý (`flex-direction:column`), zelené okraje položek zůstávají umístěné ve svislém směru.
 
@@ -155,7 +155,7 @@ CodePen: [cdpn.io/e/jOwQzxx](https://codepen.io/machal/pen/jOwQzxx?editors=1100)
 
 V další části textu už následuje jen výčet nových logických vlastností a hodnot, které jsou adekvátní fyzickým vlastnostem.
 
-Než je začnete používat, dobře si to otestujte v různých prohlížečích.
+Než je začnete používat, dobře si vše otestujte v různých prohlížečích.
 
 ### Box model {#vlastnosti-hodnoty-box}
 
@@ -262,7 +262,7 @@ Tohle může být zajímavé, ale zatím to v prohlížečích nemá podporu. Kd
 }
 ```
 
-…interně se to bude považovat za logické hodnoty:
+… interně se to bude považovat za logické hodnoty:
 
 ```css
 .box {
@@ -273,13 +273,13 @@ Tohle může být zajímavé, ale zatím to v prohlížečích nemá podporu. Kd
 }
 ```
 
-Takto to má fungovat pro následující vlastnosti: `inset`, `margin`, `padding`, `border-width`, `border-style`, `border-color`, `scroll-padding`, `scroll-margin`. Až to bude fungovat v prohlížečích…
+Takto to má fungovat pro následující vlastnosti: `inset`, `margin`, `padding`, `border-width`, `border-style`, `border-color`, `scroll-padding`, `scroll-margin`. Tedy až to bude fungovat v prohlížečích…
 
 Jen připomínám, že logický směr je pro různé jazyky různý.
 
 ### Hodnoty pro vlastnosti {#vlastnosti-hodnoty-hodnoty}
 
-Jak je z článku už asi zřejmé, logické alternativy nemusejí mít jen vlastnosti, ale také jejich hodnoty:
+Jak už je asi z textu zřejmé, logické alternativy nemusí mít jen vlastnosti, ale také jejich hodnoty:
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
@@ -300,7 +300,7 @@ Vlastnost `resize` zase bude moci nabývat hodnot `block` a `inline`.
 
 ## Podpora v prohlížečích {#podpora}
 
-V době psaní aktualizace tohoto textu (listopad 2021) můžu konstatovat, že podpora CSS Logical Properties je v moderních prohlížečích plná.
+V době psaní aktualizace tohoto textu (únor 2022) můžu konstatovat, že obecná podpora CSS Logical Properties je v moderních prohlížečích plná. Konkrétní vlastnosti vám ale doporučuji si dobře otestovat.
 
 Více na CanIUse. [caniuse.com/css-logical-props](https://caniuse.com/css-logical-props)
 

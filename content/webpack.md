@@ -13,7 +13,7 @@ Webpack je určený primárně pro svět JavaScripu, jeho modularizaci, izolaci 
 
 ## CSS, obrázky, webfonty na statických webech? Zvažte jiné nástroje {#jine-nastroje}
 
-U všech souborů, které do Webpacku nacpete – a že jimi mohou být kromě JS i CSSka, obrázky, webfonty a cokoliv vás napadne – se předpokládá, že budou součástí výstupního javascriptového balíčku.
+U všech souborů, které do Webpacku nacpete – a že jimi mohou být kromě JS i céeseska, obrázky, webfonty a cokoliv vás napadne – se předpokládá, že budou součástí výstupního javascriptového balíčku.
 
 To chcete u javascriptových aplikací, ale asi většinou ne u statických webů, kde se předpokládá, že styly a spol. budou v samostatných souborech oddělených od JS.
 

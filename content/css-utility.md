@@ -62,7 +62,7 @@ Musím se ale pozastavit už u pojmenování. Téma článku je možné v česk�
 
 * *Atomické CSS* se mě nezdá vhodné, protože se plete [s atomickým designem](pattern-lab.md), což spolu souvisí asi jako Java a JavaScript.
 * *Funkcionální CSS* zase evokuje nějakou spojitost s aktuálním buzzwordem funkcionální programování. Jenže prdlajs, žádná tam není.
-* *Helpery* jsou také trochu něco jiného. Pomocné třídy obsahují i víceřádkové věci jako často používanou deklaraci pro schování vizuální obsahu, třídu `.sr-only`. Dříve běžný `.clearfix` je také helper, ale do utilit bych jej nezařadil.
+* *Helpery* jsou také trochu něco jiného. Pomocné třídy obsahují i víceřádkové věci jako často používanou deklaraci pro skrytí vizuální obsahu, třídu `.sr-only`. Dříve běžný `.clearfix` je také helper, ale do utilit bych jej nezařadil.
 
 Budu proto psát a mluvit o „užitkovém přístupu CSS“, protože „utility CSS“ se docela blbě překládá. Jde o celkový přístup postavený na jednotlivých třídách, „utility classes“. Ty budu alternativně označovat za „jednoúčelové třídy“.
 

@@ -1,8 +1,8 @@
 # Funkce calc()
 
-Funkce `calc()` v CSS umožňuje vložit matematický výraz namísto hodnoty vlastnosti.
+Funkce `calc()` v CSS umožňuje vložit matematický výraz místo hodnoty vlastnosti.
 
-Je velmi dobře podporovaná. Je užitečná. Je škoda, že ji kodérky a kodéři nepoužívají častěji. Pojďme to zkusit zlepšit. Nejprve si ukažme dvě jednoduchá využití:
+Je velmi dobře podporovaná. Je užitečná. A je škoda, že ji kodérky a kodéři nepoužívají častěji. Pojďme to zkusit zlepšit. Nejprve si ukažme dvě jednoduchá využití:
 
 ```css
 .box {
@@ -28,7 +28,7 @@ Funkce `calc()` je samozřejmě velmi dobře použitelná právě v různých la
 
 ## Není to stejné jako matematika v preprocesorech? {#preprocesory}
 
-Prosím nezaměňujte `calc()` s výpočty v CSS preprocesorech jako je Sass. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím, než prohlížeč stránku vidí:
+Prosím nezaměňujte `calc()` s výpočty v CSS preprocesorech, jako je Sass. V preprocesoru se musíme spokojit s výrazy, které se mohou zkompilovat do CSS ještě předtím, než prohlížeč stránku vidí:
 
 ```scss
 .box {
@@ -53,7 +53,7 @@ Tady je vidět síla funkce `calc()`. Počítá se v prohlížeči a jedině pro
 
 ## Příklady použití {#priklady}
 
-Pojďme si teď více ukázat možnosti praktického využití na vašich projektech.
+Pojďme si teď více ukázat možnosti praktického využití ve vašich projektech.
 
 ### 1) Ukaž matiku! {#priklady-1}
 
@@ -67,8 +67,8 @@ Nejprve si více rozebereme příklad podobný tomu v úvodu:
 
 Proč nenapsat rovnou `width: 14.2857`? Ze dvou důvodů:
 
-1. *Čitelnost kódu.* Vsaďte se, že na původ čísla 14,2857 zapomenete. Nejpozději za týden. Správa této části kódu pro vás pak bude znamenat kladení otázek „jak jsem k tomu číslu došel?“. Vždy je lepší zapsat výpočet než výsledek.
-2. *Zaokrouhlování.* V celé kráse vypadá takto: 14,285714286. Kodéři občas podlehnou pokušení a desetinná místa zaokrouhlí. A pak se diví, že se jim v nějakém konkrétním rozlišení a prohlížeči rozpadlo rozvržení stránky. Nebuďte takoví kodéři. Nezaokrouhlujte.
+1. *Čitelnost kódu.* Vsaďte se, že na původ čísla 14,2857 zapomenete. Nejpozději za týden. Správa této části kódu pro vás pak bude znamenat kladení otázek typu „jak jsem k tomu číslu došel?“. Vždy je lepší zapsat výpočet než výsledek.
+2. *Zaokrouhlování.*  V celé kráse vypadá výsledek takto: 14,285714286. Kodéři občas podlehnou pokušení a desetinná místa zaokrouhlí. A pak se diví, že se jim v nějakém konkrétním rozlišení a prohlížeči rozvržení stránky rozpadlo. Nebuďte takoví kodéři. Nezaokrouhlujte.
 
 ### 2) Responzivní obrázky {#priklady-2}
 
@@ -84,7 +84,7 @@ V parametru `sizes` značky `<img>` je znalost `calc()` naprosto klíčová. Zku
 >
 ```
 
-Uznávám, že už to vypadá docela složitě. Ale bez `calc()` byste layout stránky pro potřebu responzivních obrázků nedokázali popsat.
+Uznávám, že to vypadá docela složitě. Ale bez `calc()` byste layout stránky pro potřebu responzivních obrázků nedokázali popsat.
 
 <!-- AdSnippet -->
 

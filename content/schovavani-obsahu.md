@@ -1,4 +1,4 @@
-# Schovávání obsahu v CSS a HTML
+# Skrytí obsahu v CSS a HTML
 
 ## Googlebot
 

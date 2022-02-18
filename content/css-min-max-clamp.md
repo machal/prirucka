@@ -1,6 +1,6 @@
 # Porovnávací funkce v CSS: min(), max() a clamp()
 
-Funkce, které se uvádějí namísto hodnot v deklaracích stylů, umožňují porovnat dvě a více hodnoty:
+Funkce, které se uvádějí místo hodnot v deklaracích stylů, umožňují porovnat dvě a více hodnot:
 
 |   Funkce     |   Význam     |
 |--------------|--------------|
@@ -10,7 +10,7 @@ Funkce, které se uvádějí namísto hodnot v deklaracích stylů, umožňují 
 
 Jsou součástí čtvrté verze specifikace „CSS Values and Units Module“, podporují je všechny moderní prohlížeče a ještě k tomu jsou užitečné.
 
-Funkce `min()`, `max()` a `clamp()` v CSS nám prakticky umožní lépe řídit velikost prvků, dodržovat správné mezery mezi prvky nebo třeba implementovat plynulou („fluidní“) typografii.
+Funkce `min()`, `max()` a `clamp()` nám v CSS prakticky umožní lépe řídit velikost prvků, dodržovat správné mezery mezi prvky nebo třeba implementovat plynulou („fluidní“) typografii.
 
 <div class="ebook-only" markdown="1">
 
@@ -58,7 +58,7 @@ CodePen: [cdpn.io/e/gOmeoEj](https://codepen.io/machal/pen/gOmeoEj?editors=1100)
 
 ## Funkce `clamp()` {#clamp}
 
-Jeden z významů slova „clamp“ v angličtině (_[klæmp]_) je „svěrka“, což je vcelku přesné. První a poslední atribut v závorce totiž udává minimální a maximální sevření, prostřední je ideální hodnota:
+Jeden z významů slova „clamp“ v angličtině je „svěrka“, což je vcelku přesné. První a poslední atribut v závorce totiž udává minimální a maximální sevření, prostřední je ideální hodnota:
 
 ```css
 .box-3 {
@@ -82,15 +82,15 @@ Následující ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizuali
 
 <p class="ebook-only"><img src="../dist/images/original/vdlayout/css-min-una.jpg" alt="CSS funkce clamp()"></p>
 
-Pokud si to budete zkoušet na živo, zkuste si hýbat se šířkou viewportu.
+Pokud si to budete zkoušet naživo, zkuste si hýbat se šířkou viewportu.
 
 CodePen: [cdpn.io/e/rNeGNVL](https://codepen.io/una/pen/rNeGNVL)
 
-Ve specifikaci se uvádí, že funkci `clamp()` je možné zapsat pomocí `min()` a `max()` jako `max(MIN, min(VAL, MAX))`. Nevím, jak vám, ale mě to moc při snaze pochopit funkci `clamp()` nepomohlo.
+Ve specifikaci se uvádí, že funkci `clamp()` je možné zapsat pomocí `min()` a `max()` jako `max(MIN, min(VAL, MAX))`. Nevím jak vám, ale mně to moc při snaze pochopit funkci `clamp()` nepomohlo.
 
 ## Krása univerzálnosti {#univerzalnost}
 
-Pojďme ale vzoreček ze specifikace rozebrat více. Nakonec možná dojdeme k tomu, že bude užitečný. V případě výše uvedeného kódu by zápis vypadal takto:
+Pojďme však vzoreček ze specifikace rozebrat více. Nakonec možná dojdeme k tomu, že bude užitečný. V případě výše uvedeného kódu by zápis vypadal takto:
 
 ```css
 .box-3 {
@@ -108,7 +108,7 @@ Zopakuji i původní zápis pomocí funkce `clamp()`:
 }
 ```
 
-Jak už jste jistě pochopili, kód výše je stejný jako bychom napsali následující deklaraci:
+Jak už jste jistě pochopili, kód výše je stejný, jako bychom napsali následující deklaraci:
 
 ```css
 .box-3 {
@@ -120,7 +120,7 @@ Jak už jste jistě pochopili, kód výše je stejný jako bychom napsali násle
 
 Konstrukce s `min-width` a `max-width` v CSS máme a mnozí známe už od pravěkých dob. Tak proč zavádět nový zápis v podobě funkcí `min()`, `max()` a `clamp()`?
 
-Za prvé je nový zápis stručnější a možná přehlednější, nejdůležitější je ale jeho _univerzálnost_. Použití není limitované na délkové vlastnosti `width` a `height`.
+Za prvé je nový zápis stručnější a možná přehlednější, nejdůležitější je ale jeho univerzálnost. Použití není limitované na délkové vlastnosti `width` a `height`.
 
 To je tak zajímavé, že to musíme rozebrat. Jen chvíli počkejte.
 
@@ -142,7 +142,7 @@ Pokud to nevíte, jednotka `ch` v sobě obsahuje šířku znaku `0`, což se pov
 
 CodePen: [cdpn.io/e/QWyLxaL](https://codepen.io/una/pen/QWyLxaL)
 
-## Demo: Plynulá typografie {#demo-fluid-typo}
+## Demo: plynulá typografie {#demo-fluid-typo}
 
 V další ukázce Uny Kravets konečně odbočíme mimo vlastnosti určující šířku elementu. Budeme nastavovat maximální a minimální velikost textu a tím plně využijeme nových porovnávacích funkcí.
 
@@ -160,9 +160,9 @@ CodePen: [cdpn.io/e/ExyYXaN](https://codepen.io/una/pen/ExyYXaN)
 
 Čtenář Dan Srb mi po vydání tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
 
-> Pokud chcete  například zajistit, aby se od 500px šířky viewportu začalo písmo zvětšovat z 1rem na 2rem až k hranici šířky viewportu 900px, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost padding.)
+> Pokud chcete například zajistit, aby se od pětisetpixelové šířky viewportu začalo písmo zvětšovat z `1rem` na `2rem` až k hranici šířky viewportu `900px`, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost `padding`.)
 
-Dodejme ještě, že autorka původního CodePenu nás nabádá, abychom si těchto hrátkách s velikostí písma dávali pozor na přístupnost.
+Dodejme ještě, že autorka původního CodePenu nás nabádá, abychom si při těchto hrátkách s velikostí písma dávali pozor na přístupnost.
 
 Omezení velikosti textu pomocí funkcí `max()` nebo `clamp()` může být proti pravidlům přístupnosti WCAG, která doporučují, aby si uživatelé mohli písmo libovolně zvětšovat sami.
 

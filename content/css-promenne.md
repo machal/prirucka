@@ -6,7 +6,7 @@ Pokud jde o moderní prohlížeče, můžeme říci, že CSS proměnné mají pl
 
 <div class="ebook-only" markdown="1">
 
-V knize proměnné zhusta používám v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic nebo jen co by se za nehet vešlo, je tady toto moje jejich představení.
+V knize proměnné zhusta používám v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic, nebo jen co by se za nehet vešlo, představuji je zde.
 
 </div>
 
@@ -20,7 +20,7 @@ html {
 }
 ```
 
-Rovnou tady trochu nabořím pojmenování „proměnná v CSS“. Tímto způsobem totiž definujeme _Custom Property_ – volitelnou nebo též autorskou vlastnost. Musím to zmínit. A jak sami vidíte, zápis opravdu odpovídá spíše _vlastnosti_, než proměnné.
+Rovnou tady trochu nabořím pojmenování „proměnná v CSS“. Tímto způsobem totiž definujeme Custom Property – volitelnou nebo též autorskou vlastnost. Musím to zmínit. A jak sami vidíte, zápis opravdu odpovídá spíše _vlastnosti_ než proměnné.
 
 Následuje použití vlastnosti už ve formě proměnné pomocí funkce `var()`:
 
@@ -36,7 +36,7 @@ CodePen: [cdpn.io/e/mBOZZK](https://codepen.io/machal/pen/mBOZZK)
 
 V příkladu jsem definoval něco jako globální proměnnou, prostě ji navázal na nejvyšší prvek DOMu, tedy `<html>`.
 
-Občas je v jiných příkladech vidět použití pseudoprvku `:root`. To je to samé jako selektor `html`, jen je váha (specificita) selektoru vyšší, na úrovni třídy. To se může hodit.
+Občas je v jiných příkladech vidět použití pseudoprvku `:root`. To je to samé jako selektor `html`, jen je váha (specificita) selektoru vyšší, na úrovni třídy. Což se může hodit.
 
 <div class="web-only" markdown="1">
 
@@ -58,7 +58,7 @@ Teoreticky byste tedy v příkladu výše mohli založit novou vlastnost (`--col
 
 ## Limity „autorských vlastností“ {#limity}
 
-Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme používat jako proměnné univerzální. Použití jen možné jen tam, kde vkládáte hodnoty standardních CSS vlastnosti. V Media Queries to například nehrozí:
+Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme používat jako proměnné univerzální. Jejich použití je možné jen tam, kde vkládáte hodnoty standardních CSS vlastností. V Media Queries to například nehrozí:
 
 ```css
 /* Smůlička, následující nefunguje: */
@@ -70,13 +70,13 @@ Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme pou
 --var(jmeno-selektoru) {  }
 ```
 
-Některým to tady opět může začít připadat jako typické CSS: škrábeme se levou nohou za zadním uchem. Je potřeba si uvědomit, že programátorské hlavy mezi námi mají trochu jiné očekávání od slova „proměnná“ než pouhé využití autorem vymyšlené CSS vlastnosti.
+Některým to tady opět může začít připadat jako typické CSS: škrábeme se nohou za uchem. Je potřeba si uvědomit, že programátorské hlavy mezi námi mají trochu jiné očekávání od slova „proměnná“ než pouhé využití autorem vymyšlené CSS vlastnosti.
 
-Takoví čtenáři budou jistě nadšení chystanou specifikací od autorů CSS, která se jmenuje „CSS Environment Variables“. Zápisem `env()` by pak bylo možné nahradit jakoukoliv část CSS. A to je něco, co, na rozdíl od CSS proměnných, asi opravdu všichni chceme.
+Takoví čtenáři budou jistě nadšení chystanou specifikací od autorů CSS, která se jmenuje „CSS Environment Variables“. Zápisem `env()` by pak bylo možné nahradit jakoukoliv část CSS. A to je něco, co na rozdíl od CSS proměnných asi opravdu všichni chceme.
 
 ## „CSS proměnné“ versus proměnné z preprocesorů {#css-promenne-vs-preprocesory}
 
-Proč se vlastně zabývat autorskými vlastnostmi v CSS, když už většina z nás používá proměnné v CSS preprocesorech jako je Sass?
+Proč se vlastně zabývat autorskými vlastnostmi v CSS, když už většina z nás používá proměnné v CSS preprocesorech, jako je Sass?
 
 Protože to jsou dvě odlišné věci. Volitelné vlastnosti z CSS se od preprocesorových proměnných liší následovně:
 
@@ -84,9 +84,9 @@ Protože to jsou dvě odlišné věci. Volitelné vlastnosti z CSS se od preproc
 * můžete k nim přistupovat nebo je číst také z HTML a JS,
 * řídí se dědičností, kaskádou a dalšími přirozenými vlastnostmi CSS.
 
-Přinášejí tedy vlastnosti, která preprocesorové proměnné neumí. Na druhou stranu – CSS proměnné nemají jiné vlastnosti, kterými naopak disponují ty preprocesorové. Jak už jsem ukazoval, neumožní vám například vložit proměnnou kamkoliv do CSS kódu. Hlavně u větších projektů se bez CSS preprocesorů stále neobejdete.
+Přinášejí tedy vlastnosti, které preprocesorové proměnné neumí. Na druhou stranu – CSS proměnné nemají jiné vlastnosti, kterými naopak disponují ty preprocesorové. Jak už jsem ukazoval, neumožní vám například vložit proměnnou kamkoliv do CSS kódu. Hlavně u větších projektů se bez CSS preprocesorů stále neobejdete.
 
-Ideální variantou se tedy jeví propojit obojí: z preprocesorových proměnných, které užijete i v prohlížeči, generovat volitelné vlastnosti, podobně jako to dělá třeba framework Bootstrap.
+Ideální variantou se tedy jeví propojit obojí: z preprocesorových proměnných, které užijete i v prohlížeči, generovat volitelné vlastnosti, podobně to dělá třeba framework Bootstrap.
 
 V preprocesoru Sass definujeme interní proměnné:
 
@@ -230,7 +230,7 @@ Programátoři, tady buďte opět opatrní. Jste v CSS, nikoliv programovacím j
 
 Výsledkem by byla hodnota s mezerou: `margin-top: 20 px`, které prohlížeč nebude rozumět.
 
-Pro „přetypování“ namísto toho můžete použít [funci `calc()`](css3-calc.md):
+Pro „přetypování“ namísto toho můžete použít [funkci `calc()`](css3-calc.md):
 
 ```css
 .box {
@@ -239,15 +239,15 @@ Pro „přetypování“ namísto toho můžete použít [funci `calc()`](css3-c
 }
 ```
 
-Já vím… Já vím, co si vy programátoři myslíte. Ale z pohledu CSS má toto logiku. Pořád nezapomínejme, že toto nejsou plnohodnotné proměnné.
+Já vím… Já vím, co si vy programátoři myslíte. Dělat převody jednotky tímto způsobem pro vás asi není nejhezčí… Ale z pohledu CSS má toto logiku. Pořád nezapomínejme, že toto nejsou plnohodnotné proměnné.
 
 Pojďme si ještě ukázat další příklady s funkcí `calc()`. Použít nějakou matematiku je zde možné:
 
 ```css
 .box {
   --gap: 20px;
-  margin-top: calc(var(--gap) + 1px); /* 21px */
-  margin-top: calc(var(--gap) / 2); /* 10px */
+  margin-top: calc(var(--gap) + 1px); /* 21 px */
+  margin-top: calc(var(--gap) / 2); /* 10 px */
 }  
 ```
 
@@ -317,7 +317,7 @@ element.style.setProperty("--color", "blue");
 
 CodePen: [cdpn.io/e/xXgWPw](https://codepen.io/machal/pen/xXgWPw?editors=1111)
 
-V jQuery od verze 3.1 to se „proměnnými“ pracuje stejně jako s běžnými CSS vlastnostmi. Aby ne, když to jsou vlastnosti, jen volitelné.
+V jQuery od verze 3.1  se s „proměnnými“ pracuje stejně jako s běžnými CSS vlastnostmi. Aby ne, když to jsou vlastnosti, jen volitelné.
 
 ```js
 // číst hodnotu

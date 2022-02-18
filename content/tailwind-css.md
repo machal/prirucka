@@ -95,7 +95,7 @@ Na velké části webů a webových aplikací, používajících nejznámější
 
 Tailwind je v tomhle jiný – nenabídne vám hotové komponenty, ale nízkoúrovňový CSS framework nad konkrétními vlastnosti a sadou předvybraných (a nastavitelných) hodnot.
 
-Toto velmi ocení typičtí „CSSkaři“ – frontendové kodérky a kodéři, jejichž běžným úkolem je kódování velmi odlišných designů webu.
+Toto velmi ocení typičtí „céeseskaři“ – frontendové kodérky a kodéři, jejichž běžným úkolem je kódování velmi odlišných designů webu.
 
 Jak ve své přednášce říká [Honza Bien](https://www.webmistr.wtf/): Tailwind je první CSS framework, který mu umožnil rychle nakódovat jakýkoliv design.
 
@@ -107,7 +107,7 @@ Má pravdu, Webmistr.
 
 ## Bootstrap versus Tailwind: komponenty versus utility? {#bootstrap}
 
-Možnost nakódovat jakýkoliv design je skvělá pro někoho, kdo CSSka velmi dobře zvládá a potřebuje zrychlit svou práci, ale ne pro typického uživatele Bootstrapu – vývojáře, který do detailů CSS až tak vidět nechce nebo nemůže.
+Možnost nakódovat jakýkoliv design je skvělá pro někoho, kdo céeseska velmi dobře zvládá a potřebuje zrychlit svou práci, ale ne pro typického uživatele Bootstrapu – vývojáře, který do detailů CSS až tak vidět nechce nebo nemůže.
 
 Zatímco Bootstrap je „component-first“ a až v posledních verzích začal hojně [přidávat utility](bootstrap-4-utility.md), Tailwind na to jde z druhé strany – DNA frameworku tvoří právě utility a komponenty si buď postavíte sami nebo využijete některé předpřipravené externí nástroje, jako [Taiwind UI](https://tailwindui.com/), [Headless UI](https://headlessui.dev/) nebo [Heroicons](https://heroicons.com/) pro ikony.
 
@@ -226,7 +226,7 @@ Tailwind je také velmi vhodný pro ty, kteří pracují agenturně, takže kód
 
 <!-- AdSnippet -->
 
-Já už aktivně a za peníze CSSka nepíšu, ale frameworky mě zajímají (už jen kvůli [konzultací k rychlosti webů](https://www.vzhurudolu.cz/martin)) a Tailwind jsem použil na některých osobních projektech. Pokud bych na to měl čas, pravděpodobně bych jej nasadil i zde na Vzhůru dolů, kde používám kombinaci vlastního utility frameworku a BEMovských komponent.
+Já už aktivně a za peníze céeseska nepíšu, ale frameworky mě zajímají (už jen kvůli [konzultací k rychlosti webů](https://www.vzhurudolu.cz/martin)) a Tailwind jsem použil na některých osobních projektech. Pokud bych na to měl čas, pravděpodobně bych jej nasadil i zde na Vzhůru dolů, kde používám kombinaci vlastního utility frameworku a BEMovských komponent.
 
 Pokud odhlédnu od své specifické situace, nebojím se říct, že Tailwind mě nadchnul. Mentální zábrany používat utility třídy jsem si vnitřně zboural už před lety a velmi oceňuji praktičnost tohoto přístupu.
 

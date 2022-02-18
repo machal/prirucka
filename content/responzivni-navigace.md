@@ -21,7 +21,7 @@ Technicky je možné tento návrhový vzor řešit i dost jednoduše jen pomocí
 
 ## Přepínač (Toggle)
 
-Celou navigaci na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiný. Jeho nevýhodou je hlavně schování celé navigace, která tím přestává zastávat role, jež má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
+Celou navigaci na malých displejích schováte do tlačítka. Nejčastěji s ikonou „hamburgeru“. Je to nejpoužívanější typ responzivní navigace, jenže má svá úskalí a často je vhodnější použít jiný. Jeho nevýhodou je hlavně skrytí celé navigace, která tím přestává zastávat role, jež má na webu hrát. O schovávání navigace a hamburgeru jsem [už psal](mobilni-navigace-hamburger.md). 
 
 Návrhový vzor *přepínač* zpopularizoval například framework Bootstrap a najdete jej na většině dnešních responzivních webů. 
 

@@ -33,7 +33,7 @@ Vygenerování [kritického CSS](https://www.vzhurudolu.cz/blog/35-critical-css)
 
 ### CSSnano: zmenšení objemu CSS souboru
 
-Minifikovat CSSka umí i jiné nástroje. CSSnano je ale navržený pro PostCSS, což chceme. Navíc je velmi konfigurovatelný. [Web](http://cssnano.co/).
+Minifikovat céeseska umí i jiné nástroje. CSSnano je ale navržený pro PostCSS, což chceme. Navíc je velmi konfigurovatelný. [Web](http://cssnano.co/).
 
 <!-- AdSnippet -->
 

@@ -10,12 +10,12 @@ Na Vzhůru dolů najdete referenční příručky k většině vlastností, kter
 - Příručka k flexboxu: [vrdl.cz/p/css-flexbox](https://www.vzhurudolu.cz/prirucka/css-flexbox)
 - Příručka k multicol: [vrdl.cz/p/css-multicolumn](https://www.vzhurudolu.cz/prirucka/css-multicolumn)
 - Příručka k zarovnání boxů: [vrdl.cz/p/css-box-alignment](https://www.vzhurudolu.cz/prirucka/css-box-alignment)
-- Hodinový video-kurz gridu: [vrdl.cz/v/webinar-css-grid](https://www.vzhurudolu.cz/video/webinar-css-grid)
+- Hodinový videokurz gridu: [vrdl.cz/v/webinar-css-grid](https://www.vzhurudolu.cz/video/webinar-css-grid)
 - Články o CSS obecně: [vrdl.cz/css](https://www.vzhurudolu.cz/css)
 
 ## Vzdělávací hry
 
-Snažil jsem se, aby i v knížce učení byla zábava. Ale hry jsou přecijen hry. Někomu může vyhovovat plnit úkoly v herním rozhraní a tím se layout učit.
+Snažil jsem se, aby i v knížce bylo učení zábavou. Ale hry jsou přeci jen hry. Někomu může vyhovovat plnit úkoly v herním rozhraní a tím se layout učit.
 
 - Flexbox Froggy: [flexboxfroggy.com](https://flexboxfroggy.com/)
 - Flex Box Adventure: [codingfantasy.com/games/flexboxadventure](https://codingfantasy.com/games/flexboxadventure)
@@ -31,7 +31,7 @@ Další příklady z praxe, které se vám mohou hodit.
 
 ## Generátory
 
-Pokud kód pro psaní layoutů ještě nemáte v hlavě, zkuste použít generátory.
+Pokud ještě nemáte kód pro psaní layoutů v hlavě, zkuste použít generátory.
 
 - [grid.layoutit.com](https://grid.layoutit.com/) (grid)
 - [layout.bradwoods.io](https://layout.bradwoods.io/) (grid i flexbox)
@@ -47,7 +47,7 @@ CSS-Tricks je asi nejlepší zdroj jednoduchých příruček k CSS vlastnostem v
 
 ## Specifikace W3
 
-Zdroj všech zdrojů. Osobně čtu specifikace moc rád. Řekl bych, že jsou napsané lépe než si lidé myslí a detailnější popis vlastností nikde nenajdete.
+Zdroj všech zdrojů. Osobně čtu specifikace moc rád. Řekl bych, že jsou napsané lépe, než si lidé myslí, a detailnější popis vlastností nikde jinde nenajdete.
 
 - Flexbox: [w3.org/TR/css3-flexbox](http://www.w3.org/TR/css3-flexbox/)
 - Grid Layout: [w3.org/TR/css-grid](https://www.w3.org/TR/css-grid/)

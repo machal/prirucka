@@ -24,7 +24,7 @@ Chcete vidět hlavní nevýhody ikonfontů v jednom obrázku? Tady je:
 Ikonfonty zde spojují nevýhody tří věcí:
 
 - Velkého balíčku dat s nízkou prioritou, který zobrazuje důležitý obsah. Zde se na něj musí počkat.
-- Webfontů, které mají pro vykreslování svá specifika – nízkou prioritu nebo schování textu prohlížeči. Projevuje se neviditelným obsahem, takzvaným [FOIT](https://css-tricks.com/fout-foit-foft/), probliknutím neviditelného textu. Dá se vyřešit, ale lepší je odstranit příčiny.
+- Webfontů, které mají pro vykreslování svá specifika – nízkou prioritu nebo skrytí textu prohlížeči. Projevuje se neviditelným obsahem, takzvaným [FOIT](https://css-tricks.com/fout-foit-foft/), probliknutím neviditelného textu. Dá se vyřešit, ale lepší je odstranit příčiny.
 - Oklamání prohlížeče – sice mu posíláte font, ale jednotlivé znaky jsou mimo základní sadu. Zde se projevuje čtverečky.
 
 <!-- AdSnippet -->

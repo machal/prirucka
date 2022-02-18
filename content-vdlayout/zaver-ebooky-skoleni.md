@@ -10,7 +10,7 @@ Vzdělávací videa jsou na mém webu novinkou. V době psaní je možné zakoup
 
 ## Další e-booky
 
-Dříve jsem vydal e-booky na související témata. Možná by vás tedy mohly zajímat.
+Dříve jsem vydal několik e-booků na související témata. Možná by vás tedy mohly zajímat.
 
 ### Vzhůru do (responzivního) webdesignu
 

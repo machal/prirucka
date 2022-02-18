@@ -8,41 +8,41 @@ Abyste totiž mohli začít vytvářet nějaký typ rozvržení v CSS, musíte v
 
 </div>
 
-Vy, kteří znáte její základní hodnoty jako `block` nebo `inline` možná budete překvapení, že od roku 2020 zde máme novou verzi specifikace, která přidává řadu dalších možností – „CSS Display Module Level 3“. [vrdl.in/w3disp](https://www.w3.org/TR/css-display-3/)
+Vy, kteří znáte její základní hodnoty jako `block` nebo `inline`, možná budete překvapení, že od roku 2020 zde máme novou verzi specifikace, která přidává řadu dalších možností – „CSS Display Module Level 3“. [vrdl.in/w3disp](https://www.w3.org/TR/css-display-3/)
 
-Ale víte co? Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich asi znáte.
+Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich asi znáte.
 
 <div class="rwd-scrollable f-6" markdown="1">
 
 | Hodnota                   |  Jak se zobrazuje |
 |---------------------------|-------------------|
-| `inline`                  |  Řádkový element, který netvoří zalomení před sebou nebo po sobě. (výchozí)        |
+| `inline`                  |  Řádkový element, který netvoří zalomení před sebou nebo po sobě (výchozí nastavení).        |
 | `block`                   |  Blokový element. Zalomí řádky před sebou i po sobě. |
 | `inline-block`            |  Vnitřně se jedná o blokový element, zvnějšku inline, který netvoří zalomení.                 |
-| `flex`, `inline-flex`     |  Vytvoří [flexboxové rozvržení](css-flexbox.md). Inline varianta nezalomí řádky před a po.  |
-| `grid`, `inline-grid`     |  Vytvoří [rozvržení do mřížky](css-grid.md). Inline varianta opět nezalomí řádky.  |
-| `table`, `inline-table`   |  Rozvržení do tabulky. Inline varianta opět tvoří tabulku v řádce.  |
+| `flex`, `inline-flex`     |  Vytvoří [flexboxové rozvržení](css-flexbox.md). Inlinová varianta nezalomí řádky před a po.  |
+| `grid`, `inline-grid`     |  Vytvoří [rozvržení do mřížky](css-grid.md). Inlinová varianta nezalomí řádky.  |
+| `table`, `inline-table`   |  Rozvržení do tabulky. Inlinová varianta opět tvoří tabulku v řádce.  |
 | `none`                    |  Nevykreslí prvek, ale ani jeho potomky.  |
 
 </div>
 
-V tabulce zdaleka nejsou všechny možnosti a popsány všechny jejich specifické vlastnosti, nástrahy a vychytávky. Proto čtěte dál.
+V tabulce zdaleka nejsou všechny možnosti a jejich specifické vlastnosti, nástrahy a vychytávky. Proto čtěte dál.
 
 Víte například, že…?
 
 - S pomocí [hodnoty `flow-root`](#vnejsi) nemusíte pro „floaty“ používat „clearfix“, tedy reset plovoucího layoutu?
 - Firefox podporuje [víceslovná označení](#viceslovna) jako `inline flex`?
-- Pro schovávání prvku existuje kromě hodnoty `none` také [hodnota `contents`](#none-contents)?
+- Pro skrytí prvku existuje kromě hodnoty `none` také [hodnota `contents`](#none-contents)?
 
 V CSS je stále těžší najít vlastnost, která by byla snadná k pochopení a naučení.
 
 <!-- AdSnippet -->
 
-Možná to překvapí i vás, zkušenější, ale jak vidíte nebo brzy uvidíte docela široký záběr člověk potřebuje i pro vstřebání vlastnosti `display`. Pojďme se teď podívat do jejího světa.
+Možná to překvapí i vás zkušenější, ale jak vidíte (nebo brzy uvidíte), docela široký záběr potřebuje člověk i pro vstřebání vlastnosti `display`. Pojďme se teď podívat do jejího světa.
 
 ## Vnitřní a vnější zobrazení {#typy}
 
-První věc, kterou si musíme uvědomit, je holý fakt, že nově podle specifikace existují dva typy zobrazení:
+První věc, kterou si musíme uvědomit, je holý fakt, že nově existují podle specifikace dva typy zobrazení:
 
 - _Vnitřní zobrazení_  
 Hodnota vlastnosti `display` určuje, jak prohlížeče rozloží potomky prvku. Sem patří hodnoty jako `flex`, `grid` nebo `table`.
@@ -69,22 +69,22 @@ Vytvoří boxík, který je „inline-level“, řádkový. Před sebou a po sob
 - `block`  
 Vygeneruje boxík, který je „block-level“. Zjednodušeně to znamená, že se vykreslí do celé šířky rodiče a zalomí řádky před sebou i po sobě.
 - `inline-block`  
-Generuje boxík, která se zvenčí chová jako řádkový a uvnitř generuje vždy nový blokový kontext. Mimochodem, specifikace s touto hodnotou do budoucna počítá jen jako jiným zápisem pro dvojici klíčových slov `inline flow-root`. O tom píšu později.
+Generuje boxík, který se zvenčí chová jako řádkový a uvnitř generuje vždy nový blokový kontext. Mimochodem, specifikace s touto hodnotou počítá do budoucna jen jako s jiným zápisem pro dvojici klíčových slov `inline flow-root`. O tom píšu později.
 - `run-in`  
-Vygeneruje typ „inline-level“ boxu se zvláštním chováním – pokusí se sloučit do následujícího blokového prvku. Pokud za „run-in“ prvkem následuje blokový prvek, „run-in“ se stane jeho prvním inline boxem. Pokud bude následovat inline pole, stane se z „run-in“ prvku blokový.
+Vygeneruje typ „inline-level“ boxu se zvláštním chováním – pokusí se vložit sám sebe do následujícího blokového prvku. Pokud za prvkem „run-in“ následuje blokový prvek, „run-in“ se stane jeho prvním inline boxem. Pokud bude následovat inlinové pole, stane se z prvku „run-in“ prvek blokový.
 
 V CodePenu si můžete vyzkoušet všechny možnosti.
 
 CodePen: [cdpn.io/e/wvzYXeg](https://codepen.io/machal/pen/wvzYXeg?editors=0000)
 
-Varianta s display `run-in` v mé ukázce chybí, není totiž podporovaná jinde než v [Internet Exploreru](msie.md) (!). V tomto dědečkovi mezi prohlížeči nefunguje CodePen, takže byste z ukázky nic neměli. Viz podpora na CanIUse.com. [caniuse.com/run-in](https://caniuse.com/run-in)
+Varianta s typem zobrazení `run-in` v mé ukázce chybí, není totiž podporovaná jinde než v [Internet Exploreru](msie.md) (!). V tomto dědečkovi mezi prohlížeči nefunguje CodePen, takže byste z ukázky nic neměli. Viz podpora na CanIUse.com. [caniuse.com/run-in](https://caniuse.com/run-in)
 
 ## Vnitřní zobrazení {#vnitrni}
 
-Hodnoty vnitřního zobrazení zapínají uvnitř dotčeného prvku nový kontext formátování (k tomu se v CSS používá pojem „formatting context“). No a ten mívá vliv na způsob vykreslení vnitřních prvků, případně na použití dalších vlastností na nich.
+Hodnoty vnitřního zobrazení zapínají uvnitř dotčeného prvku nový kontext formátování (k tomu se v CSS používá pojem „formatting context“). No a ten má vliv na způsob vykreslení vnitřních prvků, případně na chování vlastností aplikovaných na prvek.
 
 - `flow`  
-Hodnota `flow` zapíná formátování tokem („flow layout“), což je běžný způsob zobrazení, který automaticky zapnou hodnoty `block`, `inline` a `inline-block`. Pokud vím, toto zatím není v prohlížečích podporováno, nicméně jde o výchozí režim rozvržení v CSS.
+Hodnota `flow` zapíná formátování tokem („flow layout“), což je běžný způsob zobrazení, jež je automaticky zapnuto hodnotami `block`, `inline` a `inline-block`. Pokud vím, toto zatím není v prohlížečích podporováno, nicméně jde o výchozí režim rozvržení v CSS.
 - `flow-root`  
 Vytvoří kontejner blokového kontextu (jako `display:block`) a rozloží jeho obsah pomocí toku (flow layout). Hodnota `flow-root` ale vždy generuje nový kontext formátování bloku pro svůj obsah, takže není například nutné mazat „floaty“ pomocí „clearfixu“. Na této hodnotě je zajímavé, že ji podporují všechny moderní prohlížeče. Internet Explorer nikoliv. [caniuse.com/flow-root](https://caniuse.com/flow-root)
 - `flex`  
@@ -159,7 +159,7 @@ První příklad na následujícím obrázku ukazuje zobrazení typu `list-item`
 
 Druhou a třetí hodnotu z obrázku probereme hned v následující části.
 
-## Schování prvků: `none` a `contents` {#none-contents}
+## Skrytí prvků: `none` a `contents` {#none-contents}
 
 Ke všem možným metodám ovlivnění vykreslování boxíků na obrazovku musíme přidat i metody _nevykreslování_. K tomu slouží následující dvě hodnoty vlastnosti `display`.
 
@@ -168,7 +168,7 @@ Element ani jeho potomci se na obrazovku prostě nevykreslí.
 - `contents`  
 Element se na obrazovku nevykreslí, ale jeho potomci ano.
 
-Zobrazení typu `contents` funguje tak, jako by byl v DOM stromu nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
+Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
 
 CodePen: [cdpn.io/e/zYKmaMb](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
 
@@ -176,17 +176,17 @@ Podpora nezobrazení pomocí `none` je samozřejmě plná. Hodnotu `contents` zv
 
 ## Typy zobrazení pro vnitřní rozvržení: `table-*` a `ruby-*` {#table-ruby}
 
-Modely zobrazení, které vynucují vnitřní rozvržení, jako je `display:table` a `display:ruby`, mají složitou strukturu s několika různými rolemi, které mohou jejich  potomci plnit.
+Modely zobrazení, které vynucují vnitřní rozvržení, jako je `display:table` a `display:ruby`, mají složitou strukturu s několika různými rolemi, jež mohou jejich potomci plnit.
 
 Jak je uvedeno výše, zápis `display:table` sice vytvoří kontejner tabulky, ale ten vytvoří kontext formátování bloku. Nedosáhneme tím tedy tabulkového zobrazení. K tomu bychom potřebovali další prvky, které reprezentují řádky a buňky tabulky se správnými hodnotami vlastnosti `display` (`table-row`, `table-cell`…).
 
-Podobné je to `display:ruby`, jen ty vnitřní prvky jsou jiné.
+Podobné je to s `display:ruby`, jen ty vnitřní prvky jsou jiné.
 
 ## Hodnoty s více klíčovými slovy {#viceslovna}
 
 Tohle je nová věc, do specifikace přidaná v druhé polovině roku 2020. Zatím to zvládá jen Firefox, ale věnovat se tomu musíme. Proč? Protože se mi to líbí.
 
-Vzpomínáte si, když jsem psal o různých typech zobrazení – vnitřním a vnějším? Pokud ne, rychle proskenujte začátek tohoto textu nebo jeho nadpisy. Pak pochopíte, proč mi víceslovné hodnoty pro vlastnost `display` dávají smysl.
+Vzpomínáte si, jak jsem psal o různých typech zobrazení – vnitřním a vnějším? Pokud ne, rychle proskenujte začátek tohoto textu nebo jeho nadpisy. Pak pochopíte, proč mi víceslovné hodnoty pro vlastnost `display` dávají smysl.
 
 Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označení vnitřního, vnějšího nebo speciálního zobrazení.
 
@@ -198,17 +198,17 @@ Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označen�
 | `contents`         | -                       | prvek vynechán, generují se potomci                         |
 | `block`            | `block flow`            | blokový box                                                    |
 | `flow-root`        | `block flow-root`       | blokový box, který vždy vytváří nový kontext formátování bloku |
-| `inline`           | `inline flow`           | inline (řádkový) box                                           |
-| `inline-block`     | `inline flow-root`      | inline (řádkový) box, který vždy vytváří nový blokový kontext  |
-| `run-in`           | `run-in flow`           | run-in box (inline box se speciálními pravidly)                |
+| `inline`           | `inline flow`           | inlinový (řádkový) box                                           |
+| `inline-block`     | `inline flow-root`      | inlinový (řádkový) box, který vždy vytváří nový blokový kontext  |
+| `run-in`           | `run-in flow`           | run-in box (inlinový box se speciálními pravidly)                |
 | `list-item`        | `block flow list-item`  | blokový box s přídavnou značkou položky seznamu                |
-| `inline list-item` | `inline flow list-item` | inline box s přídavnou značkou položky seznamu                 |
+| `inline list-item` | `inline flow list-item` | inlinový box s přídavnou značkou položky seznamu                 |
 | `flex`             | `block flex`            | blokový kontejner flexu                                        |
-| `inline-flex`      | `inline flex`           | inline kontejner flexu                                         |
+| `inline-flex`      | `inline flex`           | inlinový kontejner flexu                                         |
 | `grid`             | `block grid`            | blokový kontejner mřížky                                       |
-| `inline-grid`      | `inline grid`           | inline kontejner mřížky                                        |
+| `inline-grid`      | `inline grid`           | inlinový kontejner mřížky                                        |
 | `table`            | `block table`           | blokový obalový rámeček tabulky                                |
-| `inline-table`     | `inline table`          | inline obalový rámeček tabulky                                 |
+| `inline-table`     | `inline table`          | inlinový obalový rámeček tabulky                                 |
 
 </div>
 
@@ -218,7 +218,7 @@ Z tabulky je to asi zřejmé, ale pro jistotu ještě uvádím tři příklady:
 - `display:inline-flex` definuje kontejner flexboxu (`flex`), který je umístěný v řádku (`inline`).
 - `display:list-item` vykreslí prvek seznamu (`list-item`), který je umístěný v běžném toku (`flow`) a zároveň je blokový (`block`).
 
-Také se těšíte, až to budou umět všechny prohlížeče? Zatím jen Firefox, na ostatní se čeká. Podporu sledujte na CanIUse. [caniuse.com](https://caniuse.com/mdn-css_properties_display_multi-keyword_values) (hledejte „display: Multi-keyword“)
+Také se těšíte, až to budou umět všechny prohlížeče? Zatím vede Firefox, na ostatní se čeká. Podporu sledujte na CanIUse. [caniuse.com](https://caniuse.com/mdn-css_properties_display_multi-keyword_values) (hledejte „display: Multi-keyword“)
 
 <!-- AdSnippet -->
 

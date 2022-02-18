@@ -2,7 +2,7 @@
 
 [Stylelint](https://stylelint.io/) je nástroj pro automatickou kontrolu CSS. Usnadní vám psaní jednotnějšího a kvalitnějšího kódu. Hlavně na větších projektech, nebo na takových, kde se styly snaží *rozbít* více lidí najednou. Prostě linter.
 
-Sám se ho snažím vnucovat klientům, protože obvykle dělám pro firmy, jejichž CSSka jsou hodně nafouklá a složitá. Ale používám ho i tady na blogu, jehož styly nepravidelně kutíme [ve dvou lidech](https://www.vzhurudolu.cz/o-webu). A právě použití na Vzhůru dolů vezmu jako podklad pro tenhle text.
+Sám se ho snažím vnucovat klientům, protože obvykle dělám pro firmy, jejichž céeseska jsou hodně nafouklá a složitá. Ale používám ho i tady na blogu, jehož styly nepravidelně kutíme [ve dvou lidech](https://www.vzhurudolu.cz/o-webu). A právě použití na Vzhůru dolů vezmu jako podklad pro tenhle text.
 
 ## S čím Stylelint pomůže
 
