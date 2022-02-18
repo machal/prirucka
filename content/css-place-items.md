@@ -1,6 +1,6 @@
 # Vlastnost place-items: Zarovnání všech položek na obou osách
 
-Vlastnost `place-items` na kontejneru layoutu definuje zarovnání položek na hlavní ose i příčné ose.
+Vlastnost `place-items` definuje na kontejneru layoutu zarovnání položek na hlavní ose i příčné ose.
 
 <div class="connected" markdown="1">
 
@@ -61,7 +61,7 @@ Podívejte se na referenční příručku k oběma vlastnostem, pro které je `p
 
 ## Podpora v prohlížečích
 
-Použití ve flexboxu smysl nedává, ale v rámci CSS gridu má `place-items` velmi slušnou podporu ve všech moderních prohlížečích. IE11 vlastnost nepodporuje, to ale nevadí.
+Použití ve flexboxu smysl nedává, ale v rámci CSS gridu má `place-items` velmi slušnou podporu ve všech moderních prohlížečích. MSIE 11 vlastnost nepodporuje, to ale nevadí.
 
 Pro více informací se podívejte na [caniuse.com/place-items](https://caniuse.com/#search=place-items).
 

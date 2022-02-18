@@ -26,7 +26,7 @@ Využití je možné ve všech moderních systémech layoutu: flex, grid i multi
 
 ## Ve flexboxu je to občas zbytečné {#flexbox}
 
-Po pořádek zmiňme, že tahle vlastnost nebude pro flexbox zase tak užitečná. Zbylý prostor se ve flexboxu rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů (`margin`) a až poté, co se započtou hodnoty délek položek rozvržení.
+Pro pořádek zmiňme, že tahle vlastnost nebude pro flexbox zase tak užitečná. Zbylý prostor se ve flexboxu rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů (`margin`) a až poté, co se započtou hodnoty délek položek rozvržení.
 
 Stačí tedy existence jedné flexboxové položky s vlastnostmi [`flex`](css-flex.md) nebo [`flex-grow`](css-flex-grow.md) nastavená na hodnotu `1` a více a žádný volný prostor zde nezbude.
 
@@ -67,7 +67,7 @@ Položky gridu jsme ale, my zlí experimentátoři, přinutili, aby držely mini
 
 CodePen: [cdpn.io/e/qBZmvEy](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
 
-Deklarace `justify-content:space-around` zajistí rozdělení volného prostoru na výšku tak, aby mezi položkami a kontejnerem byla poloviční mezera než mezi jednotlivými položkami.
+Deklarace `justify-content:space-around` zajistí rozdělení volného prostoru na výšku tak, aby mezi položkami a kontejnerem byla poloviční mezera, než je mezi jednotlivými položkami.
 
 Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát rozvržené pomocí flexboxu.
 
@@ -81,7 +81,7 @@ CSS tam vypadá zhruba takto:
 
 <p><img src="../dist/images/original/vdlayout/css-justify-content-space-around-flex.jpg" width="1920" height="540" alt="justify-content: space-around ve flexu - v Chrome při zapnutém layout overlay"></p>
 
-Vzhledem k tomu, že jsme zde na položkách nepoužili vlastnost `flex` nebo `flex-grow`, dělení prostoru pomocí `justify-content` zůstává v platnosti.
+Vzhledem k tomu, že jsme na položky neaplikovali vlastnost `flex` nebo `flex-grow`, dělení prostoru pomocí `justify-content` zůstává v platnosti.
 
 CodePen: [cdpn.io/e/mdPmoVZ](https://codepen.io/machal/pen/mdPmoVZ?editors=1100)
 
@@ -112,7 +112,7 @@ Vlastnosti `justify-content` můžete předávat všechny hodnoty z jednotlivýc
 ### Poziční
 
 - `center`  
-  Položky se centruje doprostřed kontejneru. Ve flexboxu nepodporuje MSIE.
+  Položky se centrují doprostřed kontejneru. Ve flexboxu nepodporuje MSIE.
 - `start`  
   Položky se zarovnají k hraně začátku kontejneru. Ve flexboxu nepodporuje MSIE.
 - `end`  
@@ -131,18 +131,18 @@ Hodnoty `left`, `right`, `start` a `end` zatím nemají u této vlastnosti dobro
 ### Zarovnání na účaří {#ucari}
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
-Toto v době psaní podporuje v Chromu a Edge.
+Toto v době psaní podporuje Chrome a Edge.
 
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -152,7 +152,7 @@ Toto v době psaní podporuje jen Firefox.
 
 V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou MSIE 11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
 
-Ve flexboxových rozvrženích `justify-content` dobře funguje i v Internet Exploreru.
+Ve flexboxových rozvrženích funguje `justify-content` dobře i v Internet Exploreru.
 
 Více na CanIUse. [caniuse.com/justify-content](https://caniuse.com/#search=justify-content).
 

@@ -1,6 +1,6 @@
 # CSS vlastnost gap
 
-Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas i v češtině podle anglického originálu říká „gutter“. A brzy taky možná „gap“.
+Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas i v češtině podle anglického originálu říká „gutter“. A brzy také možná „gap“.
 
 <div class="connected" markdown="1">
 
@@ -22,12 +22,12 @@ Vlastnost `gap` je možné použít ve všech moderních layoutech – v [gridu]
 
 </div>
 
-Od příchodu Safari verze 14.1 je možné `gap` ve všech prohlížečích používat nejen v rámci gridu, ale také ve flexboxu. To je skvělé a taky proto se vyplatí tuto vlastnost umět použít.
+Od příchodu Safari verze 14.1 je možné `gap` ve všech prohlížečích používat nejen v rámci gridu, ale také ve flexboxu. To je skvělé, a taky proto se vyplatí tuto vlastnost umět použít.
 
 Zápis `gap` je zkratkou pro jiné dvě vlastnosti:
 
 - `row-gap` – prostor mezi řádky (v „blokovém“ či svislém směru)
-- `column-gap` – prostor mezi sloupci (tedy v „inline“, tedy obvykle vodorovném směru)
+- `column-gap` – prostor mezi sloupci (tedy v „inline“, obvykle vodorovném směru)
 
 Zkratka se zapisuje takto:
 
@@ -63,7 +63,7 @@ Layout v CSS definujeme následovně:
 Vysvětleme si to:
 
 - [Deklarace `display:grid`](css-display.md) zajistí zobrazení pomocí CSS gridu.
-- [Vlastnost `grid-template-columns`](css-grid-template-rows-columns.md) definují podobu mřížky. Zde jde sloupce o rovnoměrné šířce.
+- [Vlastnost `grid-template-columns`](css-grid-template-rows-columns.md) definuje podobu mřížky. Zde jde sloupce o rovnoměrné šířce.
 - `gap: 2em 1em` je instrukce pro vložení mezery svisle a pak i vodorovně.
 
 <p><img src="../dist/images/original/vdlayout/css-gap.jpg" width="1920" height="540" alt="CSS Gap"></p>
@@ -104,7 +104,7 @@ Jen si pak dejte pozor na interpretaci v prohlížečích, protože viditelná m
 }
 ```
 
-Anketní otázka: Jak velká bude mezera mezi položkou 1 a 2? Zvládnete ji zodpovědět ještě než se podíváte na obrázek?
+Anketní otázka: Jak velká bude mezera mezi položkou 1 a 2? Zvládnete ji zodpovědět, ještě než se podíváte na obrázek?
 
 Nechám vám chvilku času.
 
@@ -130,7 +130,7 @@ Následuje přehled možných hodnot vlastnosti `gap`. Čistě pro inspiraci, na
 }  
 ```
 
-Jak už jsem uvedl, toto je možné. V prvním čísle je svislý směr, v druhém vodorovný.
+Jak už jsem uvedl, toto je možné. První číslo definuje svislý směr, druhé vodorovný.
 
 Pojďme si to vyzkoušet na flexboxovém layoutu, který jsme ještě vlastností `gap`  nestihli potrápit:
 
@@ -148,7 +148,7 @@ Pojďme si to vyzkoušet na flexboxovém layoutu, který jsme ještě vlastnost�
 
 <p><img src="../dist/images/original/vdlayout/css-gap-flexbox.jpg" width="1920" height="540" alt="CSS Gap ve flexboxu"></p>
 
-Raději si to zopakujme. Zápis `gap:5px 1rem` říká, že svisle mezi řádku chci mezeru `5px` a vodorovně mezi sloupci pak `1rem`.
+Raději si to zopakujme. Zápis `gap:5px 1rem` říká, že svisle chci mezi řádku mezeru `5px` a vodorovně mezi sloupci pak mezeru `1rem`.
 
 CodePen: [cdpn.io/e/VwWWWwP](https://codepen.io/machal/pen/VwWWWwP?editors=1100)
 
@@ -174,7 +174,7 @@ Neznáte [funkci `calc()`](css3-calc.md)? Podívejte se na speciální zmínku v
 
 ### Klíčové slovo `normal` {#hodnoty-normal}
 
-Šup s tím hned do vody, tedy do ukázky kódu:
+Šup s ním hned do vody, tedy do ukázky kódu:
 
 ```css
 .container {
@@ -182,7 +182,7 @@ Neznáte [funkci `calc()`](css3-calc.md)? Podívejte se na speciální zmínku v
 }
 ```
 
-Slovo `normal` představuje použitou hodnotu `1em` u vícesloupcového layoutu a hodnotu `0px` v kontextu gridu a flexboxu. Asi to není zase tak moc zajímavé… Já jen… Když byste se náhodou ptali… nebo vám to někdo položil jako otázku v testu.
+Slovo `normal` představuje použitou hodnotu `1em` u vícesloupcového layoutu a hodnotu `0px` v kontextu gridu a flexboxu. Asi to není zase tak moc zajímavé… Já jen… Kdybyste se náhodou ptali… nebo vám to někdo položil jako otázku v testu.
 
 ### Procenta a jejich uvádění ve svislém směru {#hodnoty-procenta}
 
@@ -198,7 +198,7 @@ Ve vodorovném směru je to jednoduché – spočítá se deset procent ze ší�
 
 Zajímavější je svislý směr. V layoutu tvořeném mřížkou se spočítá deset procent z výchozí výšky rodičovského kontejneru, což je výška před aplikováním mezery pomocí vlastnosti `gap`.
 
-Výsledkem je, že procentuální hodnota pro `gap` aplikovaná na svislý směr vám velmi často zařídí přetečené položek z rozměru kontejneru.
+Výsledkem je, že procentuální hodnota pro `gap` aplikovaná na svislý směr vám velmi často způsobí přetečení položek z rozměru kontejneru.
 
 <p><img src="../dist/images/original/vdlayout/css-gap-percentage.jpg" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru v gridu"></p>
 
@@ -219,7 +219,7 @@ CodePen: [cdpn.io/e/ZEyyKZZ](https://codepen.io/machal/pen/ZEyyKZZ?editors=1100)
 Když už jsme v tom, mám pár poznámek. Doslova pár:
 
 1. Mezery tvořené `gap` mají vliv na minimální rozestupy mezi položkami. Je však možné další rozestupy přidat pomocí vlastností jako [`justify-content`](css-justify-content.md) nebo [`align-content`](css-align-content.md). Jejich hodnota `space-between` má podobnou funkcionalitu jako `gap` a je možné je vzájemně kombinovat.
-2. Když už se `gap` dá použít všude, nedá se to použít i pro mezery mezi buňkami uvnitř `<table>`? Nedá, děkujeme za optání. Tabulková zobrazení místo používají vlastnost `border-spacing`.
+2. Když už se `gap` dá použít všude, nedá se to použít i pro mezery mezi buňkami uvnitř `<table>`? Nedá, děkujeme za optání. Tabulková zobrazení místo toho používají vlastnost `border-spacing`.
 
 ## Podpora v prohlížečích {#podpora}
 
@@ -229,7 +229,7 @@ Pokud jde o moderní prohlížeče, vlastnost `gap` ve flexboxu a gridu podporuj
 - Flexbox: Nepodporuje MSIE 11.
 - Vícesloupcový layout: Nepodporuje MSIE 11 a zatím ani Safari.
 
-Takže pokud potřebujete mezery v gridu a flexboxu a neřešíte Explorer, jste takzvaně ve vatě.
+Takže pokud potřebujete mezery v gridu a flexboxu a neřešíte Explorer, jste v suchu.
 
 ### Dříve jen v gridu
 
@@ -239,6 +239,6 @@ Logicky totiž nespadají jen do možnosti definovat layout v mřížce, ale tak
 
 <!-- AdSnippet -->
 
-Vlastnost `gap`, tedy bez prefixu `grid-` je podporována v Chromu 68+, Safari 11.2 Release 50+ a Opeře 54+. Ale to už je dneska vlastně jen historické okénko.
+Vlastnost `gap`, tedy bez prefixu `grid-`, je podporována v Chromu 68+, Safari 11.2 Release 50+ a Opeře 54+. Ale to už je dneska vlastně jen historické okénko.
 
 Detailní informace o podpoře jsou na CanIUse. [caniuse.com/gap](https://caniuse.com/#search=gap)

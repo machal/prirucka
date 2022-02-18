@@ -72,7 +72,7 @@ Vysvětleme:
 - Rodičovský prvek `.container` má nastavenou výšku (`height:10em`), abychom viděli efekt zarovnání na blokové ose.
 - První dvě položky nemají vlastnost `align-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé výšky prostoru buňky.
 - Poslední položka má nastaveno `align-self:start`, takže by se měla „scvrknout“ na přirozenou výšku podle obsahu a zarovnat k horní hraně prostoru buňky.
-- Vyhrává ovšem deklarace `margin-top:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `align-self:end`.
+- Vyhrává ovšem deklarace `margin-top:auto`, která buňku zarovná na začátek prostoru buňky, a funguje tedy stejně jako `align-self:end`.
 
 CodePen: [cdpn.io/e/zYqwKer](https://codepen.io/machal/pen/zYqwKer?editors=1100)
 
@@ -146,16 +146,16 @@ Opět platí, že v zásadě je výchozí roztažení na výšku – takže hodn
 ### Podle účaří
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -163,6 +163,6 @@ Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích
 
-Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro grid layout. V [Internet Exploreru 11](msie.md) je ovšem nutné použít vlastnost `-ms-grid-row-align`, což ale do `align-self` přeloží [Autoprefixer](autoprefixer.md). Více na CanIUse. [caniuse.com/align-self](https://caniuse.com/#search=align-self)
+Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro layout do mřížky. V [Internet Exploreru 11](msie.md) je ovšem nutné použít vlastnost `-ms-grid-row-align`, což ale do `align-self` přeloží [Autoprefixer](autoprefixer.md). Více na CanIUse. [caniuse.com/align-self](https://caniuse.com/#search=align-self)
 
 <!-- AdSnippet -->

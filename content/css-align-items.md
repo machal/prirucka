@@ -1,6 +1,6 @@
 # Vlastnost align-items: Zarovnání všech položek na příčné ose
 
-Vlastnost `align-items` na kontejneru layoutu definuje zarovnání položek na příčné ose (jinak též blokové ose).
+Vlastnost `align-items` definuje na kontejneru layoutu zarovnání položek na příčné ose (jinak též blokové ose).
 
 <div class="connected" markdown="1">
 
@@ -76,16 +76,16 @@ Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých ob
 ### Podle účaří
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -95,12 +95,12 @@ Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích
 
-Stav k říjnu 2021:
+Stav k březnu 2022:
 
-- V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvouslovné pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
-- V rámci rozvržení pomocí gridu tuto vlastnost nepodporuje jen IE11, ale tam by podporu této vlastnosti měl nahrazovat [Autoprefixer](autoprefixer.md). Jinak je to v gridu zcela v pořádku.
+- V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvouslovná pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
+- V rámci rozvržení pomocí gridu tuto vlastnost nepodporuje jen MSIE 11, ale tam by měl podporu této vlastnosti nahrazovat [Autoprefixer](autoprefixer.md). Jinak je to v gridu zcela v pořádku.
 
-I zde platí, že jde o drobnosti. Celkově vzato je možné tuhle vlastnost a její nejužitečnější hodnoty bez problémů v moderních prohlížečích používat.
+I zde platí, že jde o drobnosti. Celkově vzato je možné tuhle vlastnost a její nejužitečnější hodnoty v moderních prohlížečích používat bez problémů.
 
 Pro více informací se podívejte na [caniuse.com/align-items](https://caniuse.com/#search=align-items).
 

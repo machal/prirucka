@@ -30,7 +30,7 @@ V obecné rovině se zapisuje takto:
 place-self: <hodnota align-self> <hodnota justify-self>;
 ```
 
-Pokud na druhou hodnotu zapomenete, použije se první pro oba směry, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
+Pokud na druhou hodnotu zapomenete, použije se první pro oba směry, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máte smůlu a bude neplatná celá deklarace.
 
 Zkratku `place-self` není možné použít [ve flexboxu](css-flexbox.md), protože tam nepochodíte s její důležitou částí – zarovnáním položky ve směru hlavní osy (`align-self`).
 

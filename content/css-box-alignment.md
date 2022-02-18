@@ -8,26 +8,26 @@
 - [Vícesloupcový layout](css-multicolumn.md)
 </div>
 
-V tomto textu se podíváme na jednotlivé vlastnosti pro zarovnávání layoutech.
+V tomto textu se podíváme na jednotlivé vlastnosti pro zarovnávání layoutů.
 
-Specifikace „Box Alignment Module Level 3“ v podstatě vzala všechna zarovnání a rozdělení prostoru definovaného ve flexboxu, něco přidala a zpřístupnila ji ostatním systémům pro layout.
+Specifikace „Box Alignment Module Level 3“ v podstatě převzala všechna zarovnání a rozdělení prostoru definovaného ve flexboxu, něco přidala a zpřístupnila je ostatním systémům pro layout.
 
 <!-- AdSnippet -->
 
-Nijak se zde nezabýváme zarovnáváním textu (vlastnosti jako `text-align`, `vertical-align`), ani staršími (ale stále funkčními) metodami zarovnávání boxů s pomocí `margin` a tak dále.
+Nijak se zde nezabýváme zarovnáváním textu (vlastnosti jako `text-align`, `vertical-align`) ani staršími (ale stále funkčními) metodami zarovnávání boxů pomocí `margin` a tak dále.
 
 ## Rychlý tahák k vlastnostem {#tahak}
 
 Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou hlavu opravdu hodně.
 
-Naštěstí jsou ale ty nejdůležitější vlastnosti pojmenované podle jednoduchého klíče.
+Naštěstí jsou ale ty nejdůležitější z nich pojmenované podle jednoduchého klíče.
 
 ![Tahák k CSS Box Alignment](../dist/images/original/vdlayout/css-box-alignment-tahak.jpg)
 
 Než vyberete tu správnou, musíte si ujasnit:
 
 1. Směr zarovnávání (hlavní osa je obvykle vodorovná, jinak též řádková; příčná osa svislá, jinak též bloková). Na obrázku výše se podívejte k šipkám.
-2. Co budete zarovnávat (všechny položky, jednu položku nebo obsah mezi nimi). Na obrázku výše se podívejte do layoutu.
+2. Co budete zarovnávat (všechny položky, jednu položku, nebo obsah mezi nimi). Na obrázku výše se podívejte do layoutu.
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
@@ -45,7 +45,7 @@ V tabulce nejsou obsaženy zdaleka všechny zarovnávací vlastnosti, na ty se p
 
 ### Jak si zapamatovat správný směr?
 
-Docela dlouho se trápím s tím, jak si bez taháku zapamatovat správný směr zarovnání. „Justify“ je totiž většinou vodorovný, „align“ svislý směr.
+Docela dlouho se trápím s tím, jak si bez taháku zapamatovat správný směr zarovnání. „Justify“ je totiž většinou vodorovný, „align“ pak svislý směr.
 
 Na asi nejlepší trik mě v jedné diskuzi přivedl David Grudl. Přitom je to tak prosté, podívat se do anglicko-českého slovníku:
 
@@ -135,7 +135,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
     <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.jpg" alt="CSS vlastnost gap" /></a></p>
     <p>
       Definice mezery mezi buňkami. <br>
-      Např. <code>gap:1rem</code> definuje mezeru `1rem` v obou směrech.
+      Např. <code>gap:1rem</code> definuje mezeru <code>1rem</code> v obou směrech.
     </p>
   </article>  
   <article role="article">
@@ -151,7 +151,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
   <article role="article">
     <h4 id="place-content"><a href="css-place-content.md"><code>place-content</code></a></h4>
     <p><a href="css-place-content.md"><img src="../dist/images/small/vdlayout/css-place-content-schema.jpg" alt="Vlastnost place-content" /></a></p>
-    <p>Zkratka pro rozdělení prostoru v obou směrech. <br> Např. <code>place-content:start space-between</code> zarovná položky k horní hraně a vodorovné dělí prostor.</p>
+    <p>Zkratka pro rozdělení prostoru v obou směrech. <br> Např. <code>place-content:start space-between</code> zarovná položky k horní hraně a vodorovně dělí prostor.</p>
   </article>
 
 </div>
@@ -177,7 +177,7 @@ Vlastnosti [`justify-items`](css-justify-items.md) i [`justify-self`](css-justif
 
 Namísto `justify-items` můžeme použít starý dobrý `margin` nebo pro centrování třeba `justify-content`.
 
-Stejně tak proto nebudou fungovat zkratky [`place-items`](css-place-items.md) a [`place-self`](css-place-self.md).
+Stejně tak nebudou fungovat zkratky [`place-items`](css-place-items.md) a [`place-self`](css-place-self.md).
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
@@ -193,14 +193,14 @@ Stejně tak proto nebudou fungovat zkratky [`place-items`](css-place-items.md) a
 
 Na úrovni celé této velké specifikace je těžké mluvit o podpoře či nepodpoře. Různé prohlížeče mohou nepodporovat některé vlastnosti, některé mohou nepodporovat zase určité hodnoty nebo jejich kombinaci s různými systémy rozvržení, jako je grid, flexbox nebo vícesloupcový layout.
 
-Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zaměřme na konkrétní zásadnější nedostatky v podpoře, jež mají slabou podporu.
+Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zaměřme na konkrétní zásadnější nedostatky v podpoře.
 
 - Internet Explorer 11 – pokud ještě musíte podporovat tento prehistorický prohlížeč, je třeba vědět, že vlastnosti pro zarovnání umí jen v kombinaci s flexboxem, nikoliv gridem.
-- Zkratky jako [`place-self`](css-place-self.md) neumí IE11, ale zatím bohužel také Safari, což je daleko nepříjemnější. Na druhou stranu, zkratku [`place-content`](css-place-content.md) Safari ovládá, což tuto vlastnost činí použitelnou na většině moderních projektů.
-- [Vlastnosti `gap`](css-gap.md) v grid layoutu umí všechny prohlížeče, kromě IE11, ale v kombinaci s jinými systémy rozvržení je to daleko složitější.
-- Vlastnost `overflow-position` v době psaní textu neumí žádný prohlížeč.
+- Zkratky jako [`place-self`](css-place-self.md) neumí MSIE 11, ale zatím bohužel také Safari, což je daleko nepříjemnější. Na druhou stranu, zkratku [`place-content`](css-place-content.md) Safari ovládá, takže tato vlastnost je použitelná ve většině moderních projektů.
+- [Vlastnosti `gap`](css-gap.md) v layoutu gridem a flexboxem umí všechny prohlížeče, kromě MSIE 11, ale v kombinaci s vícesloupcovým layoutem to je složitější.
+- Vlastnost `overflow-position` neumí v době psaní textu žádný prohlížeč.
 
-Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda to jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty.
+Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda ji jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty.
 
 Konkrétněji o podpoře v prohlížečích píšu v textech o jednotlivých vlastnostech.
 

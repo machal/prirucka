@@ -24,7 +24,7 @@ Počítá se však s použitím pro [flexbox](css-flexbox.md), [grid](css-grid.m
 
 Ve specifikaci se počítá s použitím pro flexbox, grid, vícesloupcový layout, ale taky pro blokové prvky, kde to ale zatím použít nejde.
 
-Tato vlastnost zarovnává ve svislém směru a tak nemá pochopitelně vliv na jednořádkové flexboxové kontejnery (tj. kontejnery s `flex-wrap:nowrap`).
+Tato vlastnost zarovnává ve svislém směru, a tak nemá pochopitelně vliv na jednořádkové flexboxové kontejnery (tj. kontejnery s `flex-wrap:nowrap`).
 
 ## Jednoduchý příklad {#priklad}
 
@@ -59,7 +59,7 @@ Pomocí zápisu `align-content:space-between` se volný prostor hezky distribuuj
 
 CodePen: [cdpn.io/e/ZEWKPvr](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
 
-Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát pro flexbox a jinou hodnotu `align-content`.
+Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát pro flexbox a má jinou hodnotu `align-content`.
 
 CSS:
 
@@ -79,7 +79,7 @@ Zápis `align-content:space-around` tedy rozdělí volný prostor na polovinu a 
 
 CodePen: [cdpn.io/e/zYqwbpL](https://codepen.io/machal/pen/zYqwbpL?editors=1100)
 
-Víte, co? Raději se podívejte na na všechny možné hodnoty, i tuhle mezi nima najdete.
+Víte co? Raději se podívejte na všechny možné hodnoty, i tuhle mezi nimi najdete.
 
 ## Možné hodnoty zarovnání {#hodnoty}
 
@@ -90,7 +90,7 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 ### Základní
 
 - `normal` (výchozí)  
-  V CSS gridu odpovídat hodnotě `start`, ve flexboxu zase `stretch`.
+  V CSS gridu odpovídá hodnotě `start`, ve flexboxu je to zase `stretch`.
 
 ### Zbylý prostor
 
@@ -99,9 +99,9 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 - `space-around`  
   Volné místo se rovnoměrně rozdělí mezi položky a polovina mezery mezi položkami se vloží mezi hrany kontejneru a první a poslední položku.
 - `space-evenly`  
-  Volné místo se rovnoměrně rozdělí mezi položky i mezi první a poslední položku a okraje kontejneru. Tato vlastnost není v kombinaci s flexboxem podporována v IE11.
+  Volné místo se rovnoměrně rozdělí mezi položky i mezi první a poslední položku a okraje kontejneru. Tato vlastnost není v kombinaci s flexboxem podporována v MSIE 11.
 - `stretch`  
-  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato vlastnost není v kombinaci s flexboxem podporována v IE11.  
+  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`. Tato vlastnost není v kombinaci s flexboxem podporována v MSIE 11.  
 
 ### Poziční
 
@@ -119,18 +119,18 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 ### Podle účaří
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
-Tyto hodnoty zatím nemají u této vlastnosti dobrou podporu v prohlížečích při použití ve flexboxu. V MSIE není podporována vůbec.
+Tyto hodnoty zatím nemají u popisované vlastnosti dobrou podporu v prohlížečích při použití ve flexboxu. V MSIE není podporována vůbec.
 
 ### Zarovnání pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -138,9 +138,9 @@ Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích {#podpora}
 
-V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou IE11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
+V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou MSIE 11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
 
-Ve flexboxových rozvrženích `justify-content` dobře funguje i v Internet Exploreru.
+Ve flexboxových rozvrženích funguje `justify-content` dobře i v Internet Exploreru.
 
 Více na CanIUse.com. [caniuse.com/align-content](https://caniuse.com/#search=align-content).
 

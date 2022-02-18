@@ -22,7 +22,7 @@ Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
 
 </div>
 
-Je dobré zmínit, že uvnitř buněk tabulek a ve [flexboxu](css-flexbox.md) je vlastnost `justify-self` ignorována. V grid layoutu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
+Je dobré zmínit, že uvnitř buněk tabulek a ve [flexboxu](css-flexbox.md) je vlastnost `justify-self` ignorována. V layoutu pomocí gridu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
 
@@ -32,7 +32,7 @@ U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou m
 
 V naší ukázce definujeme třísloupcový kontejner gridu. Poslední, jinak zbarvenou položku pak zarovnáváme pomocí `justify-self`.
 
-HTML vám asi bude znít povědomě:
+HTML vám asi bude povědomé:
 
 ```html
 <div class="container">
@@ -67,7 +67,7 @@ Nakonec deklarace pro poslední položku:
 }
 ```
 
-Tady vlastně zarovnáváme dvěma způsoby. Jednou doleva (`margin-right:auto`) a jednou doprava (`justify-self:end`). Co myslíte - bude platit poslední deklarace, jako je tomu u CSS vždy? Nikoliv, zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
+Tady vlastně zarovnáváme dvěma způsoby. Jednou doleva (`margin-right:auto`) a jednou doprava (`justify-self:end`). Co myslíte, bude platit poslední deklarace, jako je tomu u CSS vždy? Nikoliv, zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
 
 Zkuste si tu první deklaraci schválně v živé ukázce odmazat.
 
@@ -77,7 +77,7 @@ Následuje několik užitečných vysvětlujících odrážek:
 
 - První dvě položky nemají vlastnost `justify-self` nastavenou, takže získají výchozí hodnotu `stretch` a roztáhnou se do celé šířky prostoru buňky.
 - Poslední položka má nastaveno `justify-self:end`, takže by se měla „scvrknout“ na přirozenou šířku podle obsahu a zarovnat ke konci prostoru buňky, což je zároveň pravá hrana kontejneru.
-- Vyhrává ovšem deklarace `margin-right:auto`, která buňku zarovná na začátek prostoru buňky a funguje tedy stejně jako `justify-self:start`.
+- Vyhrává ovšem deklarace `margin-right:auto`, která buňku zarovná na začátek prostoru buňky, a funguje tedy stejně jako `justify-self:start`.
 
 CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
 
@@ -87,15 +87,15 @@ V dalším CodePenu je vidět, že `justify-self` ve flexboxu opravu nefunguje. 
 
 CodePen: [cdpn.io/e/MWJaVyZ](https://codepen.io/machal/pen/MWJaVyZ?editors=1100)
 
-Zde je potřeba vysvětlit proč:
+Zde je potřeba vysvětlit, proč tomu tak je.
 
 Prvním důvodem je, že ve flexboxu nejsou vlastnosti `justify-self` a tím pádem ani [`justify-items`](css-justify-items.md) potřeba – můžete totiž úplně v pohodě použít `margin` a jeho hodnotu `auto`.
 
-Druhý důvodem je to, že u flexboxu se, na rozdíl od gridu, počítá s přítomností více položek na hlavní ose. Pravděpodobně nechcete dělat flexboxové rozvržení s jednou položkou. Nebo chcete, ale pro tohle flexbox vymyšlený nebyl. Více položek, tam je pro zarovnání dobrá [vlastnost `justify-content`](css-justify-content.md).
+Za druhé, u flexboxu se – na rozdíl od gridu – počítá s přítomností více položek na hlavní ose. Pravděpodobně nechcete dělat flexboxové rozvržení s jednou položkou. Nebo chcete, ale pro tohle flexbox vymyšlený nebyl. Pro zarovnání více položek je dobrá [vlastnost `justify-content`](css-justify-content.md).
 
-Takže mám jednu dobrou a jednu špatnou vlastnost. Pro zarovnání položek na hlavní ose ve flexboxu používejte `margin` nebo `justify-content`. A ta špatná? Budete si to muset zapamatovat.
+Mám tedy jednu dobrou a jednu špatnou zprávu. Ta dobrá: Pro zarovnání položek na hlavní ose ve flexboxu používejte `margin` nebo `justify-content`. A ta špatná? Budete si to muset zapamatovat.
 
-Je o tom krásná diskuze „In CSS Flexbox, why are there no "justify-items" and "justify-self" properties?“ na Stack Overflow. [stackoverflow.com/a/32569434/889682](https://stackoverflow.com/a/32569434/889682)
+Zabývá se tím krásná diskuze „In CSS Flexbox, why are there no ,justify-items’ and ,justify-self’ properties?“ na Stack Overflow. [stackoverflow.com/a/32569434/889682](https://stackoverflow.com/a/32569434/889682)
 
 ## Možné hodnoty zarovnání
 
@@ -108,7 +108,7 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých o
 - `auto` (výchozí)  
   Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`.
 - `normal`  
-  V CSS gridu jde jen o jiný zápis pro hodnotu `stretch`, ale například v blokových layoutech (`display:block`) jako `start`.
+  V CSS gridu jde jen o jiný zápis pro hodnotu `stretch`, ale například v blokových layoutech (`display:block`) uvádíme jako `start`.
 - `stretch`  
   Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
@@ -140,16 +140,16 @@ Po dekódování zašmodrchaností specifikace můžeme konstatovat, že výchoz
 ### Podle účaří
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -157,7 +157,7 @@ Toto v žádném prohlížeči zatím nefunguje.
 
 ## Podpora v prohlížečích
 
-V rámci flexboxu a tabulkovém layoutu tuto vlastnost nemůžete použít v žádném prohlížeči.
+V rámci flexboxu a v tabulkovém layoutu tuto vlastnost nemůžete použít v žádném prohlížeči.
 
 Při použití s `display:grid` je podpora v prohlížečích plná, jen v Internet Exploreru je hlášeno několik bugů. Více na CanIUse. [caniuse.com/justify-self](https://caniuse.com/#search=justify-self)
 

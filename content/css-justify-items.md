@@ -69,11 +69,11 @@ Vlastnost `justify-items` zde tedy zarovnává položky na hlavní (vodorovné) 
 
 CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
-## Trochu teorie: nastavení `justify-self`. A pozor, ve flexboxu vlastnost nefunguje
+## Trocha teorie: nastavení `justify-self`. A pozor, ve flexboxu vlastnost nefunguje
 
-Vlastnost `justify-items` vlastně nedělá nic jiného než, že nastavuje výchozí hodnotu [vlastnosti `justify-self`](css-justify-self.md) pro všechny položky uvnitř kontejneru.
+Vlastnost `justify-items` vlastně nedělá nic jiného, než že nastavuje výchozí hodnotu [vlastnosti `justify-self`](css-justify-self.md) pro všechny položky uvnitř kontejneru.
 
-Je dobré zmínit, že ve flexbox layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována. Pro vysvětlení jděte na text o [`justify-self`](css-justify-self.md).
+Je dobré zmínit, že ve flexboxovém layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována. Pro vysvětlení jděte na text o [`justify-self`](css-justify-self.md).
 
 U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`.
 
@@ -122,20 +122,20 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 ### Podle účaří
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
-V době psaní zarovnávání na účaří funguje jen ve Firefoxu a můžete si to v tomto prohlížeči zkusit na následující ukázce.
+V době psaní funguje zarovnávání na účaří jen ve Firefoxu – můžete si to v něm zkusit na následující ukázce.
 
 CodePen: [cdpn.io/e/ZEpGQqm](https://codepen.io/mkfeuhrer/pen/ZEpGQqm?editors=1100)
 
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -145,14 +145,14 @@ V následující živé ukázce je možné vyzkoušet několik hodnot:
 
 - výchozí `stretch` (roztažení),
 - `end` (zarovnání na konec vymezeného prostoru),
-- `left` (obdobu `start` tedy zarovnání na začátek vymezeného prostoru),
+- `left` (obdoba `start`, tedy zarovnání na začátek vymezeného prostoru),
 - `center` (zarovnání doprostřed vymezeného prostoru).
 
 CodePen: [cdpn.io/e/OJjyqpK](https://codepen.io/machal/pen/OJjyqpK?editors=1100)
 
 ## Podpora v prohlížečích
 
-Jak už padlo, ve flexboxových layoutech je vlastnost `justify-items` ignorována, takže můžeme i bez nadsázky říct, že ji při použití `display:flex` podporují úplně všechny prohlížeče, které kdy vznikly.
+Jak už padlo, ve flexboxových layoutech je vlastnost `justify-items` ignorována, takže můžeme i bez nadsázky říct, že ji při použití `display:flex` podporují úplně všechny prohlížeče, které kdy vznikly…
 
 Ale vážně:
 

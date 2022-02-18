@@ -34,9 +34,9 @@ Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř konte
 
 <!-- AdSnippet -->
 
-Pokud v deklaraci `place-content` neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
+Pokud v deklaraci `place-content` neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máte smůlu a bude neplatná celá deklarace.
 
-Připomínám, že ve flexboxu může být využití vlastnosti [`justify-content`](css-justify-content.md) vcelku omezené. Pokud totiž použijete nastavení šířky položky pomocí `flex` nebo `flex-grow`, položka se roztáhne do volného prostoru, `justify-content` pak nebude mít co rozdělovat.
+Připomínám, že ve flexboxu může být využití vlastnosti [`justify-content`](css-justify-content.md) vcelku omezené. Pokud totiž použijete nastavení šířky položky pomocí `flex` nebo `flex-grow`, položka se roztáhne do volného prostoru a `justify-content` pak nebude mít co rozdělovat.
 
 ## Jednoduchý příklad {#priklad}
 
@@ -88,7 +88,7 @@ Využíváme zde tuto hodnotu:
 }
 ```
 
-Položky tedy zarovnáváme svisle tak, aby mezi nimi vznikla rovnoměrná mezera (`space-between`) a vodorovně na konec hrany kontejneru (`end`).
+Položky tedy zarovnáváme svisle tak, aby mezi nimi vznikla rovnoměrná mezera (`space-between`), a vodorovně na konec hrany kontejneru (`end`).
 
 CodePen: [cdpn.io/e/PoNJVPm](https://codepen.io/machal/pen/PoNJVPm?editors=1100)
 

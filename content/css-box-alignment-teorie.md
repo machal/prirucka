@@ -12,7 +12,7 @@ Podíváme se na pojmy jako „směr rozvržení“, „kontejner“ a „předm
 
 ### Směr rozvržení: bloková a řádková osa {#pojmy-osy}
 
-Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek a tak naštěstí zarovnáváme na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
+Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek, a tak naštěstí zarovnáváme na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-box-alignment-osy.jpg" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
@@ -23,10 +23,10 @@ Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrn�
 
 Osy pro potřeby layoutu v CSS:
 
-- _Hlavní_ nebo-li _řádková_ osa (inline axis), ve středoevropských podmínkách obvykle vodorovná.
-- _Příčná_ nebo-li _bloková_ osa (block axis), u nás obvykle svislá.
+- _Hlavní_ neboli řádková osa (inline axis), ve středoevropských podmínkách obvykle vodorovná.
+- _Příčná_ neboli bloková osa (block axis), u nás obvykle svislá.
 
-Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Taková arabština nebo některé asijské jazyky se čtou zcela v odlišných směrech.
+Osy se nejmenují „vodorovná“ a „svislá“, protože se jejich směr může v různých situacích měnit, když upravíme mód psaní (`writing-mode`) nebo jazyk dokumentu. Taková arabština nebo některé asijské jazyky se čtou ve zcela odlišných směrech.
 
 <div class="web-only" markdown="1">
 
@@ -67,21 +67,21 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 
 „Fallback alignment“, nebo také náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
 
-Například pro uplatnění hodnoty `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky) je nutné, aby se v kontejneru vyskytoval více než jeden předmět, známý též jako položka.
+Například pro uplatnění hodnoty `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky) je nutné, aby se v kontejneru vyskytoval více než jeden předmět neboli položka.
 
-Pokud tato podmínka není splněna, specifikace jako náhradní řešení předepisuje hodnotu `flex-start` nebo `start`.
+Pokud tato podmínka není splněna, specifikace předepisuje jako náhradní řešení hodnotu `flex-start` nebo `start`.
 
 To asi dává smysl, že?
 
 ## Klíčová slova pro zarovnání {#typy-klicova-slova}
 
-Už víme, že vlastnosti [CSS Box Alignment](css-box-alignment.md) je možné dělit podle toho, zda ovlivňují všechny položky, jednu položku nebo prostor mezi nimi.
+Už víme, že vlastnosti [CSS Box Alignment](css-box-alignment.md) je možné dělit podle toho, zda ovlivňují všechny položky, jednu položku, anebo prostor mezi nimi.
 
 Druhý typ rozdělení vlastností pro zarovnávání se zaměřuje nikoliv na vlastnosti, ale jejich hodnoty – klíčová slova.
 
 ### Poziční zarovnání {#pozicni}
 
-Určování polohy položky vzhledem ke kontejneru. (Ve specifikaci se používá pojem „Positional Alignment“.)
+Určí polohu položky vzhledem ke kontejneru. (Ve specifikaci je používán pojem „Positional Alignment“.)
 
 Týká se to už uvedených vlastností:
 
@@ -102,15 +102,15 @@ V obecné rovině můžeme použít tyto hodnoty:
 - `self-end` <small>(`-self`)</small>  
   Zarovnává předmět k hraně konce kontejneru, která odpovídá konci předmětu na patřičné ose.
 - `flex-start` <small>(`-self` i `-content`, jen pro flexbox)</small>  
-  Totéž jako `start`, jen pro položky flexboxu. Mimo flexbox se hodnota se chová jako `start`.
+  Totéž jako `start`, jen pro položky flexboxu. Mimo flexbox se hodnota chová jako `start`.
 - `flex-end` <small>(`-self` i `-content`, jen pro flexbox)</small>  
-  Totéž jako `end`, jen pro položky flexboxu.  Mimo flexbox se hodnota se chová jako `end`.
+  Totéž jako `end`, jen pro položky flexboxu.  Mimo flexbox se hodnota chová jako `end`.
 - `left` <small>(jen `justify-*`)</small>  
-  Pokud se použije na řádkové ose, chová se jako `start`.
+  Pokud hodnotu použijeme na řádkové ose, chová se jako `start`.
 - `right` <small>(jen `justify-*`)</small>  
-  Pokud se použije na řádkové ose, chová se jako `end`.
+  Pokud hodnotu použijeme na řádkové ose, chová se jako `end`.
 
-Troufám si tvrdit, že naprostá většina z praktických použití CSS Box Alignment se týká právě pozičního zarovnání.
+Troufám si tvrdit, že naprostá většina z možností praktického použití CSS Box Alignment se týká právě pozičního zarovnání.
 
 Mrkněme se na jednoduchý příklad. Máme následující HTML připravené pro třísloupcové rozvržení:
 
@@ -141,7 +141,7 @@ Layout je s pomocí CSS gridu definovaný následovně:
 
 Jen pro pořádek: Každá položka layoutu bude mít výšku `5em`, spravedlivě si rozdělí prostor (`1fr`) a mezera mezi nimi bude `1em`.
 
-A teď ke slovu přichází ono zarovnání:
+A teď přichází ke slovu ono zarovnání:
 
 ```css
 .container {
@@ -158,7 +158,7 @@ Na nic nečekejme a vše vysvětleme:
 - Kontejneru rozvržení (`.container`) nastavíme po příčné ose (`align-`) zarovnání všech položek (`-items`)  k horní hraně kontejneru (`start`). Dohromady tedy `align-items:start`.
 - Třetí položce `.item--3` udělíme výjimku. Bude zarovnaná ke spodní hraně kontejneru – `align-self:end`.
 
-Mrkněte se na živý CodePen, pokud si to neumíte představit, ale asi to nebude těžké.
+Pokud si to neumíte představit, podívejte se na živý CodePen, ale asi to nebude těžké.
 
 <p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-pozicni.jpg" width="1920" height="540" alt="Poziční zarovnání Box Align"></p>
 
@@ -166,11 +166,11 @@ CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
 ### Zarovnání na účaří {#ucari}
 
-Zarovnání na účaří určuje polohu účaří položky nebo skupiny položek tím, že nad ní nebo nad ně přidává vnější okraj.
+Zarovnání na účaří určuje polohu účaří položky nebo skupiny položek tím, že nad ni nebo nad ně přidává vnější okraj.
 
-Zní to asi trochu zašmodrchaně, že? Ještě to chvíli zkuste číst, ono to není úplně neužitečné.
+Zní to asi trochu zašmodrchaně, že? Ještě to chvíli vydržte, ono to není úplně neužitečné.
 
-Při sazbě dokumentů v češtině (nebo jiných evropských jazycích) to funguje jen pro zarovnání položek vedle sebe, kde lze jednotlivá účaří porovnávat. (A ve specifikaci se mluví o „Baseline Alignment“, pokud byste to chtěli hledat.)
+Při sazbě dokumentů v češtině (nebo jiných evropských jazycích) to funguje jen pro zarovnání položek vedle sebe, kde lze jednotlivá účaří porovnávat. (Ve specifikaci se mluví o „Baseline Alignment“, pokud byste to chtěli hledat.)
 
 Týká se těchto vlastností:
 
@@ -180,9 +180,9 @@ Týká se těchto vlastností:
 Můžete použít tyto hodnoty:
 
 - `first baseline`  
-  Zarovnání na účaří prvního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `start`.
+  Zarovnání na účaří prvního řádku. Pokud ale v daném kontextu nelze použít, zarovná se jako `start`.
 - `last baseline`  
-  Zarovnání na účaří posledního řádku. Pokud to v daném kontextu nelze použít, zarovná se jako `end`.
+  Zarovnání na účaří posledního řádku. Pokud ale v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
   Zkratka pro `first baseline`.
 
@@ -201,7 +201,7 @@ Tentokrát ovšem přidáme tuto deklaraci:
 }
 ```
 
-Totiž:
+Čili:
 
 - Na rozdíl od první položky zarovnáme druhou a třetí na účaří (`align-self:baseline`).
 - Druhé položce přidáme vnitřní okraj (`padding-top:3em`), takže prohlížeči zkomplikujeme jeho snahu o zarovnání.
@@ -221,7 +221,7 @@ Týká se to jen vlastností pro nastavení distribuce obsahu, tedy volného mí
 Můžete použít tyto hodnoty:
 
 - `stretch` (výchozí)  
-  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
+  Položky rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoli proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 - `space-between`  
   Volné místo se rovnoměrně rozdělí mezi položky, přičemž první a poslední je zarovnaná s hranou kontejneru.
 - `space-around`  
@@ -244,8 +244,8 @@ Můžete použít tyto hodnoty:
 
 Jdeme na vysvětlování:
 
-- Tím, že jsme omezili šířku položky na `100px`, při roztažení rodiče (`.container`) vznikne volné místo.
-- Jak se s volným místem vedle položek naloží určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
+- Tím, že jsme omezili šířku položky na `100px`, vznikne při roztažení rodiče (`.container`) volné místo.
+- Jak se s volným místem vedle položek naloží, určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
 
 <p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-prostor.jpg" width="1920" height="540" alt="Box Align zarovnání - zbylý prostor"></p>
 
@@ -253,12 +253,12 @@ CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
 ### Zarovnání pro přetečení (bez podpory prohlížečů) {#overflow}
 
-Vlastnosti a hodnoty, které pomáhají definovat chování prohlížečů, když je předmět zarovnání větší než jeho kontejner.
+Jde o vlastnosti a hodnoty, které pomáhají definovat chování prohlížečů, když je předmět zarovnání větší než jeho kontejner.
 
 Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflow-position`, která má podle specifikace dvě možné hodnoty:
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, takže aby například bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -269,7 +269,7 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
 </figcaption>
 </figure>
 
-V době psaní textu (říjen 2021) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
+V době dokončování textu (únor 2022) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
 
 ### Definování mezer mezi položkami {#gap}
 
@@ -281,7 +281,7 @@ Jde o různé varianty [vlastnosti `gap`](css-gap.md):
 - `column-gap` - mezera mezi sloupci (na řádkové ose)
 - `gap` - zkratka pro vlastnosti `column-gap` a `row-gap`
 
-Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `grid-column-gap`, `grid-gap`). Prohlížeče je dodnes umí, jako synonyma pro výše uvedené. Nicméně doporučuji se vám řídit novou verzí specifikace a používat `gap`, například takto:
+Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `grid-column-gap`, `grid-gap`). Prohlížeče je dodnes umí, jako synonyma pro výše uvedené. Nicméně vám doporučuji řídit se novou verzí specifikace a používat `gap`, například takto:
 
 ```css
 .container {
@@ -291,6 +291,6 @@ Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `g
 }
 ```
 
-Uvedené vytvoří odkaz mřížku o třech sloupcích a dvou řádcích. Mezery mezi položkami layoutu budou `1em` ve svislém směru a `0.5em` ve vodorovném.
+Uvedené vytvoří odkaz na mřížku o třech sloupcích a dvou řádcích. Mezery mezi položkami layoutu budou `1em` ve svislém směru a `0.5em` ve vodorovném.
 
 Jako hodnoty bere vlastnost `gap` všechny možné délkové jednotky a také procenta, přičemž ty se vztahují na délku kontejneru layoutu.
