@@ -15,7 +15,7 @@ Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž je
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol.jpg" width="1600" height="900" alt="CSS Multi-column Layout s nastavením columns:20em">
 <figcaption markdown="1">
-Kouzlo automatického přizpůsobení šířce okna.
+Kouzlo automatického přizpůsobení se šířce okna.
 </figcaption>
 </figure>
 
@@ -58,11 +58,11 @@ V CSS jsme pomocí vícesloupcového rozvržení definovali následující:
 
 Prohlížeč by pak měl vnitřní prvky kontejneru rozdělit do sloupců o šířce kolem `20em`, což také udělá. Při šířkách okna do zhruba 950 pixelů zde vidíme jeden sloupec.
 
-Od této šířky sloupce v layoutu pořád přibývají. Viděli jste to v obrázku výše.
+Od této šířky sloupce v layoutu pořád přibývají. Viděli jste to na obrázku výše.
 
 CodePen: [cdpn.io/e/rNMzwaN](https://codepen.io/machal/pen/rNMzwaN?editors=1100)
 
-Když si v CodePenu budete klikat na tlačítka s přiblížením a oddálením (0.5×…), uvidíte, jak to funguje v praxi.
+Když si v CodePenu poklikáte na tlačítka s přiblížením a oddálením (0.5×…), uvidíte, jak to funguje v praxi.
 
 Je to automaticky responzivní, aniž bychom museli definovat Media Queries. Bezva.
 
@@ -72,7 +72,7 @@ Tady jsme ale v příručce o CSS Multicol-Layout. Teď se proto pojďme podíva
 
 Pomocí vlastnosti `columns` a dalších definujeme na rodičovském kontejneru podmínky tvorby sloupečků.
 
-To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uvedenou vlastností.
+To, co je na obrázcích zvýrazněno černě, ovlivňuje uvedená vlastnost.
 
 <div class="reference-items">
 
@@ -103,7 +103,7 @@ To, co je na obrázcích zvýrazněno černě, je předmětem ovlivňování uve
 
 ## Vlastnosti pro vnitřní prvky {#vlastnosti-prvky}
 
-Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamování obsahu do sloupců a nebo roztažení vnitřních prvků do všech sloupců.
+Prostřednictvím následujících vlastností můžete ovlivnit způsob zalamování obsahu do sloupců anebo roztažení vnitřních prvků do všech sloupců.
 
 <div class="reference-items">
 
@@ -140,13 +140,13 @@ Weby používající vícesloupcové rozvržení: Learning Log Romana Veselého 
 
 Možností využití je překvapivě hodně a určitě si na nějakou vzpomenete.
 
-Vícesloupcový layout má sice z trojice multi-column, flexbox, grid nejméně možností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc – prohlížeče si s ním velmi dobře rozumí.
+Vícesloupcový layout má sice z trojice multi-column, flexbox a grid nejméně možností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc – prohlížeče si s ním velmi dobře rozumí.
 
-## Anonymní fragmentačním kontejnery {#vice-kontejnery}
+## Anonymní fragmentační kontejnery {#vice-kontejnery}
 
 Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s pochopením téhle užitečné sady vlastností.
 
-Jiné metody rozložení v CSS, jako flex nebo grid, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení.
+Jiné metody rozložení v CSS jako flex nebo grid, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení.
 
 Například při použití [vlastnosti `display`](css-display.md) s hodnotou `grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
 

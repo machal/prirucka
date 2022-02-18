@@ -40,11 +40,11 @@ Možných hodnot je více:
 
 </div>
 
-V tomhle textu řešíme vlastnosti pro nastavení rozměrů stop mřížky podle vlastních (obsahových nebo v angličtině *intrinsic*) velikostí prvků uvnitř. Zabýváme se rozměry obsahu.
+V tomhle textu řešíme vlastnosti pro nastavení rozměrů stop mřížky podle vlastních (obsahových – anebo v angličtině *intrinsic*) velikostí prvků uvnitř. Zabýváme se rozměry obsahu.
 
 <!-- AdSnippet -->
 
-Je dobré si uvědomit, že se to liší od nastavení rozměrů zvenčí pomocí nadřazeného prvku. Tam užijete fixní [jednotky](jednotky.md) (`px`, `rem`, …) nebo podílové jednotky `fr`. Ty obsah uvnitř příliš nezajímá a nastavují rozměry prvku, ve kterém se obsah nachází.
+Je dobré si uvědomit, že rozměry obsahu se liší od nastavení rozměrů zvenčí pomocí nadřazeného prvku. Tam užijete fixní [jednotky](jednotky.md) (`px`, `rem`, …) nebo podílové jednotky `fr`. Ty obsah uvnitř příliš nezajímá a nastavují rozměry prvku, ve kterém se obsah nachází.
 
 Projděme si teď vše podrobně na příkladech.
 
@@ -61,7 +61,7 @@ Zápis `minmax()` se tváří jako funkce se dvěma parametry: minimálním a ma
 Tohle je asi jednoduché, že?
 
 - První sloupeček se nikdy nezmenší pod `100px` a nepřesáhne šířku `200px`. To přesně dělá zápis `minmax(100px, 200px)`.
-- Další dva sloupečky si rovnoměrné rozdělí šířku zbylého prostoru, protože jsou jsou nastavené [podílovou jednotkou](css-jednotka-fr.md) na `1fr`.
+- Další dva sloupečky si rovnoměrně rozdělí šířku zbylého prostoru, protože jsou nastavené [podílovou jednotkou](css-jednotka-fr.md) na `1fr`.
 
 CodePen: [cdpn.io/e/XWrLErd](https://codepen.io/machal/pen/XWrLErd?editors=1100)
 
@@ -77,7 +77,7 @@ Příklad pozměníme:
 
 Uvedený zápis asi opět nebude žádná velká věda, protože [zlomkovou jednotku `fr`](css-jednotka-fr.md) už známe.
 
-- Všechny sloupečky si rovnoměrné rozdělí šířku na tři části.
+- Všechny sloupečky si rovnoměrně rozdělí šířku na tři části.
 - První sloupeček se ale nikdy nezmenší pod `100px`. Důvodem je zápis `minmax(100px, 1fr)`.
 
 CodePen: [cdpn.io/e/qBWGooy](https://codepen.io/machal/pen/qBWGooy?editors=1100)
@@ -99,7 +99,7 @@ Instrukce pro vykreslení prvního sloupce mřížky zní:
 
 <!-- AdSnippet -->
 
-Co je ale ta „maximální velikost obsahu“? Je to různé. U pružných responzivních obrázků například jde o jejich maximální pixelovou velikost. Blok s textovým obsahem se může zvětšovat, dokud slova stačí. Však si to zkuste na příkladu.
+Co je ale ta „maximální velikost obsahu“? Je to různé. U pružných responzivních obrázků jde například o jejich maximální pixelovou velikost. Blok s textovým obsahem se může zvětšovat, dokud slova stačí. Však si to zkuste na příkladu.
 
 CodePen: [cdpn.io/e/wvwbmQM](https://codepen.io/machal/pen/wvwbmQM?editors=1100)
 
@@ -164,7 +164,7 @@ CodePen: [cdpn.io/e/eYOaXyW](https://codepen.io/machal/pen/eYOaXyW?editors=1100)
 
 Uvnitř první buňky máme obrázek, který má pružné rozměry (definované pomocí `max-width: 100%; height: auto;`). Použitím `minmax(auto, auto)` prohlížeči říkáme: Sloupec mřížky se smí zmenšit jen na minimální obsahovou velikost a zvětšit na maximální.
 
-Jenže u vkládaných pružných médií není rozměrové minimum a maximum nijak definováno. My to ale můžeme udělat. Maximum v našem CodePenu definuje už uvedeným atributem `width="400"` v HTML. A minimum? Tady se dostáváme k použití vlastnosti `min-width`, kterou zde nastavujeme na `100px`.
+Jenže u vkládaných pružných médií není rozměrové minimum a maximum nijak definováno. My to ale dovedeme. Maximum v našem CodePenu definujeme už uvedeným atributem `width="400"` v HTML. A minimum? Tady se dostáváme k použití vlastnosti `min-width`, kterou zde nastavujeme na `100px`.
 
 Musíme zmínit, že pouze stopy mřížky s rozměry nastavenými na `auto` je možné roztáhnout na šířku či výšku pomocí `align-content: stretch` nebo `justify-content: stretch`.
 
@@ -178,7 +178,7 @@ Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených
 
 ## Klíčové slovo nebo funkce fit-content() {#fit-content}
 
-`fit-content` je způsob jak v podporovaných prohlížečích deklarovat, že si přejeme rozměr prvku podle obsahu. Hodí se to například v situaci, kdy chceme, aby se blokový prvek neroztahoval do celé šířky rodiče:
+`fit-content` je způsob, jak v podporovaných prohlížečích deklarovat, že si přejeme rozměr prvku podle obsahu. Hodí se to například v situaci, kdy chceme, aby se blokový prvek neroztahoval do celé šířky rodiče:
 
 ```css
 .box {
@@ -198,7 +198,7 @@ V CSS gridu se `fit-content` používá s parametrem:
 
 Takový zápis říká, aby prohlížeč zařídil šířku prvního sloupce vždy podle obsahu, ale s maximem `200px`.
 
-`fit-content()` se tedy počítá jako `minmax(auto, max-content)` s tím že hodnota v argumentu funkce slouží jako zarážka pro maximální rozměr, pokud je větší než minimum.
+`fit-content()` se tedy počítá jako `minmax(auto, max-content)` s tím, že hodnota v argumentu funkce slouží jako zarážka pro maximální rozměr, pokud je větší než minimum.
 
 CodePen: [cdpn.io/e/GRKbQom](https://codepen.io/machal/pen/GRKbQom?editors=1100).
 
@@ -228,19 +228,19 @@ Funguje to dobře. I přes to, že obrázek má nastavenou šířku 400 pixelů,
 
 CodePen: [cdpn.io/e/JjPQpYj](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
 
-## Co když… pár specifičností zápisu minmax() {#co-kdyz}
+## Co když… Pár specifičností zápisu minmax() {#co-kdyz}
 
 Pokud byste chtěli zápis `minmax()` mermomocí rozbít, prohlížeče by se podle specifikace měly chovat následovně:
 
-- Pokud uvedete vyšší minimum než maximum (např. `minmax(200px, 100px)`), maximum se bude ignorovat a prohlížeče budou počítat jen s minimem.
+- Pokud uvedete vyšší minimum než maximum (např. `minmax(200px, 100px)`), maximum bude ignorováno a prohlížeče budou počítat jen s minimem.
 - Jako minima zatím nemá smysl uvádět zlomkovou jednotku `fr`. Ale v budoucí verzi specifikace by se to prý mohlo změnit.
 
 ## Podpora v prohlížečích {#podpora}
 
 Teď už zbývá jen rekapitulace podpory v prohlížečích.
 
-- Funkce `minmax()`, ale i klíčové slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči-dědečkovi ale doporučuji testovat, občas se to chová podivně.
-- `fit-content()` podporují skoro všechny relevantní prohlížeče ale v MSIE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
+- Funkce `minmax()`, ale i klíčové slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči-dědečkovi ale doporučuji testovat, občas se chová podivně.
+- `fit-content()` podporují skoro všechny relevantní prohlížeče, ale v MSIE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
 
 Viz CanIUse: [caniuse.com/intrinsic-width](https://caniuse.com/#search=intrinsic-width).
 

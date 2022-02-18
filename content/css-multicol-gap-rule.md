@@ -1,6 +1,6 @@
 # Vlastnosti column-gap a column-rule: Mezery a oddělovače ve vícesloupcovém rozložení
 
-Ve vícesloupcovém rozvržení (CSS Multi-column layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží tyto vlastnosti.
+Ve vícesloupcovém rozvržení (CSS Multi-column Layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží tyto vlastnosti.
 
 <div class="connected" markdown="1">
 
@@ -24,9 +24,9 @@ Vlastnosti `column-gap` a `column-rule` patří do specifikace vícesloupcového
 Je jich hned několik:
 
 - `column-gap` – nastavení šířky mezery mezi sloupci.
-- `column-rule` – definice grafického oddělovače sloupců. Jde o zkratky pro vlastnosti `column-rule-color`, `column-rule-style`, `column-rule-width`.
+- `column-rule` – definice grafického oddělovače sloupců. Jde o zkratky pro vlastnosti `column-rule-color`, `column-rule-style` a `column-rule-width`.
 
-Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače nikoliv. Oddělovač jakékoliv šířky neubírá místo mezerám nebo sloupcům v rozvržení. Nedává vám to smysl? Podívejte se na příklad na konci tohoto textu.
+Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače nikoliv. Oddělovač jakékoliv šířky neubírá místo mezerám nebo sloupcům v rozvržení. Nedává vám to smysl? Podívejte se na následující příklad.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-gap-rule.jpg" width="1600" height="900" alt="CSS vlastnosti column-gap a column-rule">
@@ -39,11 +39,11 @@ A co teď? No, co by…? Vzhůru na jednotlivé vlastnosti.
 
 ## `column-gap`: mezera mezi sloupci {#column-gap}
 
-Šířka výchozí mezery je `1em`. Pokud to chcete změnit, je pro definici šířky mezery je možné použít vlastnost `column-gap`.
+Šířka výchozí mezery je `1em`. Pokud ji chcete změnit, je pro její definici možné použít vlastnost `column-gap`.
 
 <!-- AdSnippet -->
 
-Mezeru můžeme definovat také pomocí obecné [vlastnosti `gap`](css-gap.md), kterou asi znáte z flexboxu nebo CSS gridu. Ta zde ale nebude fungovat v Exploreru a ke dni psaní ani v Safari.
+Mezeru můžeme definovat také pomocí obecné [vlastnosti `gap`](css-gap.md), kterou asi znáte z flexboxu nebo CSS gridu. Ta ale nebude fungovat v Exploreru a ke dni psaní tohoto textu ani v Safari.
 
 Možné hodnoty jsou následující:
 
@@ -72,17 +72,17 @@ Je ale dobré zmínit, že jako výchozí barva se zde použije `currentcolor`, 
 
 ## `column-rule-style`: grafické ztvárnění oddělovače {#column-rule-style}
 
-Grafický styl oddělovače můžete určit stejnými klíčovými slovy jako určujete barvy rámečků: `dotted`, `dashed`, `solid`, `double`, `groove`, `ridge`, `inset` nebo `outset`.
+Grafický styl oddělovače můžete určit stejnými klíčovými slovy, jakými určujete barvy rámečků: `dotted`, `dashed`, `solid`, `double`, `groove`, `ridge`, `inset` nebo `outset`.
 
 Grafiku oddělovače je také samozřejmě možné vypnout pomocí hodnoty `none`, čímž se pochopitelně vypne i zobrazení oddělovače.
 
 ## `column-rule-width`: šířka oddělovače {#column-rule-width}
 
-I zde se samozřejmě akceptují jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, která ale pravděpodobně každý prohlížeč vykreslí jinak. V Chromu to dle mých propočtů odpovídá šířce 1, 2 a 5 pixelů.
+I zde jsou logicky akceptovány jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, jež ale pravděpodobně každý prohlížeč vykreslí jinak. V Chromu to dle mých propočtů odpovídá šířce 1, 2 a 5 pixelů.
 
 Výchozí hodnota je `medium`.
 
-Oddělovač je samozřejmě možné vypnout. Opět pomocí hodnoty `none`, což vás jistě nepřekvapilo.
+Také oddělovač je možné vypnout, opět pomocí hodnoty `none`, což vás jistě nepřekvapilo.
 
 ## `column-rule`: zkratka pro deklaraci oddělovače na jednom místě {#column-rule}
 
@@ -106,23 +106,23 @@ Připravil jsem pro vás CodePen, ve kterém si můžete přepínat mezi třemi 
 
 <div class="ebook-only" markdown="1">
 
-Slibuji si od toho, že vám to pomůže pochopit výše uvedené. I když v tomto případě se nejedná o nic složitého a pokud nemáte možnost zkoušet naživo, o nic nepřicházíte.
+Slibuji si od toho, že vám to pomůže pochopit výše uvedené. I když v tomto případě se nejedná o nic složitého, a pokud nemáte možnost zkoušet naživo, o nic nepřicházíte.
 
 </div>
 
 CodePen: [cdpn.io/e/eYdGEKR](https://codepen.io/machal/pen/eYdGEKR?editors=1100)
 
 1. První deklarace (`gap:auto; column-rule:none;`) nastavuje mezeru i oddělovač na výchozí hodnoty, tzn. mezera má šířku `1em` a oddělovač se nevykresluje. Všimněte si použití vlastnosti `gap` namísto `column-gap`. V moderních prohlížečích je to prostě synonymum.
-2. Druhá deklarace (`gap:3em; column-rule:dotted lightgrey;`) – nastaví trojnásobnou mezeru a tečkovaný oddělovač. Jeho šířku jsem byl líný definovat, takže se použije `medium`.
-3. Třetí deklarace (`gap:3em; column-rule:4em solid lightgrey;`) je záludná – nastaví oddělovač o větší šířce než mezeru. Jasně, asi to hned nepoužijete, to chápu. Chtěl jsem zde totiž ukázat to, co píšu výše – oddělovač si z celkové šířky rodičovského kontejneru nevezme ani pixel. Vykreslí se doprostřed mezery a když ta mu přestane stačit, neváhá překrývat ani obsah ve sloupcích. Ano, takhle bezskurpulózní ten oddělovač je…
+2. Druhá deklarace (`gap:3em; column-rule:dotted lightgrey;`) nastaví trojnásobnou mezeru a tečkovaný oddělovač. Jeho šířku jsem byl líný definovat, takže se použije `medium`.
+3. Třetí deklarace (`gap:3em; column-rule:4em solid lightgrey;`) je záludná – nastaví oddělovač o větší šířce než mezeru. Jasně, asi to hned nepoužijete, to chápu. Chtěl jsem zde totiž ukázat to, co píšu výše – oddělovač si z celkové šířky rodičovského kontejneru nevezme ani pixel. Vykreslí se doprostřed mezery, a když ta mu přestane stačit, neváhá překrývat obsah ve sloupcích. Ano, takhle bezskrupulózní ten oddělovač je…
 
-A jak tyhle legrace můžete využívat v dnešních prohlížečích?
+Jak tyhle legrace můžete využívat v dnešních prohlížečích?
 
 ## Podpora v prohlížečích {#podpora}
 
-Žádné strachy, vlastnosti `column-gap`, `column-rule` i všechny ostatní, zde zmíněné, moderní prohlížeče zvládají.
+Žádné strachy, vlastnosti `column-gap`, `column-rule` i všechny ostatní zde zmíněné každý moderní prohlížeč zvládne.
 
-Zvládá je také Internet Explorer. Ten ovšem neumí nahradit `column-gap` pomocí `gap`. Stejně tak Safari. Ale to je jen malá bolístka jinak výborné podpory.
+A zvládá je také Internet Explorer. Ten ovšem neumí nahradit `column-gap` pomocí vlastnosti `gap`. Stejně tak Safari. Ale to je jen malá bolístka jinak výborné podpory.
 
 Více je na CanIUse. [caniuse.com/column](https://caniuse.com/?search=column)
 

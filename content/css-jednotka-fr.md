@@ -1,6 +1,6 @@
 # Jednotka fr v CSS
 
-Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru v CSS gridu. Proto `fr`, jako *fraction unit*.
+Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru v CSS gridu. Proto `fr`, jako fraction unit.
 
 <div class="connected" markdown="1">
 
@@ -20,9 +20,9 @@ Jednotka `fr` je součástí specifikace [CSS gridu](css-grid.md).
 
 </div>
 
-Využívá se ve vlastnostech popisující mřížku, jako jsou [`grid-template-columns/rows`](css-grid-template-rows-columns.md) nebo [grid-auto-columns/rows](css-grid-auto-rows-columns.md).
+Využívá se ve vlastnostech popisujících mřížku, jako jsou [`grid-template-columns/rows`](css-grid-template-rows-columns.md) nebo [grid-auto-columns/rows](css-grid-auto-rows-columns.md).
 
-Ale dost řečí a ukažme si nějaký kód:
+Ukažme si nějaký kód:
 
 ```css
 .container {
@@ -39,7 +39,7 @@ Raději zdůrazněme, že šířka buňky se ani zde nikdy nezmenší pod šíř
 
 ## Je (a není) to jako procenta {#procenta}
 
-Zjednodušeně by se tahle jednotka dala přirovnat k procentům (`%`), je to ale lepší než procenta.
+Zjednodušeně by se tahle jednotka dala přirovnat k procentům (`%`), je ale lepší než procenta.
 
 <!-- AdSnippet -->
 
@@ -67,7 +67,7 @@ Výhoda `fr` oproti procentům? Nemusíme počítat prvky gridu a řešit nastav
 
 Procentuální grid v demu nastavujeme jako `grid-template-columns: 33.3% 33.3% 33.3%`. Může to být fajn, ale procentuální hodnotu musíme vypočíst podle počtu sloupců v HTML. No a pokud by se nám jejich počet změnil, nezbývá než upravovat také CSS.
 
-Další problém je v *box modelu*, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`). Bez změny počítání box modelu pomocí vlastnosti `box-sizing` nám prvky přetečou z rodičovského kontejneru.
+Další problém je v box modelu, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`). Bez změny počítání box modelu pomocí vlastnosti `box-sizing` nám prvky přetečou z rodičovského kontejneru.
 
 CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
 
@@ -75,11 +75,11 @@ Pokud vlastnost `box-sizing` neznáte, dostudujte si ji v mém textu na Vzhůru 
 
 ## Podíl na zbytku {#podil}
 
-Jednotka `fr` tvoří podíl na *zbytku* plochy, kterou nezabírají prvky s rozměry nastavenými běžnými jednotkami délky, jako jsou `%`, `px`, `em`, `rem` a další:
+Jednotka `fr` tvoří podíl na zbytku plochy, kterou nezabírají prvky s rozměry nastavenými běžnými jednotkami délky, jako jsou `%`, `px`, `em`, `rem` a další:
 
 <p><img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu"></p>
 
-Pomocí `grid-template-columns: 80px 5em 2fr 1fr` definuje čtyřsloupcovou mřížku. První sloupec má fixní šířku `80px`. Druhý má šířku `5em`, takže jeho šířka bude záležet na velikosti písma rodičovského prvku. Pokud nám zbude nějaký prostor, prohlížeč jej vydělí třemi (`2fr` + `1fr`) a rozpočítá na dvě buňky definované podílovou jednotkou.
+Pomocí `grid-template-columns: 80px 5em 2fr 1fr` definujeme čtyřsloupcovou mřížku. První sloupec má fixní šířku `80px`. Druhý má šířku `5em`, takže jeho šířka bude záležet na velikosti písma rodičovského prvku. Pokud nám zbude nějaký prostor, prohlížeč jej vydělí třemi (`2fr` + `1fr`) a rozpočítá na dvě buňky definované podílovou jednotkou.
 
 CodePen: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)
 
@@ -95,7 +95,7 @@ Mřížku definujeme takto:
 }
 ```
 
-Pokud je nastavená nulová hodnota (`0fr`) vykreslí prohlížeč sloupec v šířce obsahu.
+Pokud je nastavená nulová hodnota (`0fr`), vykreslí prohlížeč sloupec v šířce obsahu.
 
 <p><img src="../dist/images/original/vdlayout/css-fr-desetinna.jpg" width="1920" height="540" alt="Jednotka fr a procenta - rozdíl"></p>
 
@@ -114,7 +114,7 @@ Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to
 
 ## Podpora v prohlížečích {#podpora}
 
-Podpora je skvělá. Nevím o žádném mezi uživateli rozšířeném prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to do této skupiny prohlížečů o prázdninách 2021 považuji i Internet Explorer 11.
+Podpora je skvělá. Nevím o žádném mezi uživateli rozšířeném prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to do této skupiny prohlížečů o únoru 2022 považuji i Internet Explorer 11.
 
 <!-- AdSnippet -->
 

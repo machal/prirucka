@@ -1,18 +1,18 @@
 # Formátovací kontext CSS gridu
 
-Formátovací kontext (grid formatting context). To je další teoretická znalost o mřížce, která se nám může velmi hodit.
+Formátovací kontext (grid formatting context) je další teoretická znalost o mřížce, která se nám může velmi hodit.
 
 Každá hodnota [vlastnosti `display`](css-display.md) totiž zapíná nový způsob zacházení s potomky prvku a může měnit vztahy prvku a jeho okolí.
 
-Tak jako `display:block` má od časů CSS 2.1 svůj *block formatting context*, CSS grid má také jeden. Pojem *grid formatting context* vás tedy nejspíš nepřekvapí.
+Tak jako `display:block` má od časů CSS 2.1 svůj block formatting context, i CSS grid má jeden. Pojem *grid formatting context* vás tedy nejspíš nepřekvapí.
 
-Co se v prohlížečích stane pěkného (nebo pro někoho nepěkného) když napíšeme `display:grid` nebo `display:inline-grid`?
+Co se v prohlížečích stane pěkného (pro někoho nepěkného) když napíšeme `display:grid` nebo `display:inline-grid`?
 
 ## Svislé vnější okraje se neslučují. Chválabohu
 
 Hodnoty vlastnosti `margin` shora a zdola se neslučují s hodnotami sousedních prvků. To, co znáte z blokových elementů, ve světě CSS gridu neplatí.
 
-Je to logické. Mřížka slouží k rozvržení prvků na stránce. Při této činnosti by nám slučování vnějších okrajů působilo ještě větší trable než nám působí u blokových prvků.
+Je to logické. Mřížka slouží k rozvržení prvků na stránce. Při této činnosti by nám slučování vnějších okrajů působilo ještě větší trable než u blokových prvků.
 
 Chcete ukázku? Vezměme, že máme dva bloky se třemi vnitřními položkami. Každá položka má tento předpis v CSS:
 
@@ -35,10 +35,10 @@ CodePen: [cdpn.io/e/GRobVpz](https://codepen.io/machal/pen/GRobVpz?editors=1100)
 
 ## Floaty nechte plavat
 
-Ano, s plovoucími prvky v gridu neuspějete. Pro formátovací kontext mřížky platí, že:
+S plovoucími prvky v gridu neuspějete. Pro formátovací kontext mřížky platí, že:
 
 - Vlastnosti `float` a `clear` nemají žádný efekt na položky mřížky. (Radši si ani nepředstavuji, co by vývojáři dělali, kdyby tomu tak nebylo.)
-- Plovoucí prvky (např. `float:left`), nijak nevstupují do kontejneru mřížky. Sousední kontejner mohou posunout, zmenšit, ale nikdy nevstoupí dovnitř, aby rozbil položky.
+- Plovoucí prvky (např. `float:left`) nijak nevstupují do kontejneru mřížky. Sousední kontejner mohou posunout, zmenšit, ale nikdy nevstoupí dovnitř, aby rozbil položky.
 
 Brrr! Raději pojďme od „floatů“ pryč. Začalo se mi dělat nevolno…
 
@@ -56,9 +56,9 @@ CodePen: [cdpn.io/e/GRoJmgN](https://codepen.io/machal/pen/GRoJmgN?editors=1100)
 
 ## A co pozicování?
 
-Úplně to sem nepatří, ale je možné, že se vám tahle otázka vynořila v hlavě. vlastnost `position` funguje dobře, děkuji za optání.
+Úplně to sem nepatří, ale je možné, že se vám vynořila v hlavě otázka pozicování. Vlastnost `position` funguje dobře, děkuji za optání.
 
-Pozicovat můžete samotný grid kontejner, ale i jeho položky, pokud z kontejneru uděláte takzvaný *containing block* pomocí `position:absolute`.
+Pozicovat můžete samotný grid kontejner, ale i jeho položky, pokud z kontejneru uděláte takzvaný containing block pomocí `position:absolute`.
 
 Vyzkoušel jsem to za vás, protože jsem byl zvědavý:
 

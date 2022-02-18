@@ -1,6 +1,6 @@
 # Vlastnost grid
 
-`grid` je zkratka (shorthand) pro definování všech vlastností CSS gridu.
+`grid` je zkratka pro definování všech vlastností CSS gridu.
 
 <div class="connected" markdown="1">
 
@@ -22,12 +22,10 @@ Vlastnost `grid` je součástí specifikace [CSS gridu](css-grid.md).
 
 V jedné deklaraci můžete nastavit jen jeden z obou možných gridů:
 
-- *explicitní*, výslovně definovaný pomocí vlastností [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md),
+- *explicitní*, výslovně definovaný pomocí vlastností [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a [`grid-template-areas`](css-grid-template-areas.md)
 - *implicitní*, definovaný pomocí vlastností [`grid-auto-rows`, `grid-auto-columns`](css-grid-auto-rows-columns.md) a [`grid-auto-flow`](css-grid-auto-flow.md)
 
-… a ještě další vlastnosti.
-
-Je to mocná zbraň, která dokáže zrychlit práci zkušených mřížkových ninjů, ovšem začínajícím bych ji raději nedoporučoval používat.
+Je to mocná zbraň, která dokáže urychlit práci zkušených mřížkových ninjů, ovšem začínajícím bych ji raději doporučoval nepoužívat.
 
 <!-- AdSnippet -->
 
@@ -63,7 +61,7 @@ Je to prostě úplně stejné jako u zkratky [`grid-template`](css-grid-template
 
 ## Implicitní grid a auto-flow {#implicitni-auto-flow}
 
-To zda v daném směru definujete implicitní grid se pozná podle klíčového slova `auto-flow`:
+To, zda v daném směru definujete implicitní grid, se pozná podle klíčového slova `auto-flow`:
 
 ```css
 .container {
@@ -87,7 +85,7 @@ Zápis je ekvivalentní tomuto:
 Vysvětlíme:
 
 - `grid-auto-flow: row` – grid se bude vykreslovat po řádcích. Jak můžete vědět ze studia vlastnosti [`grid-auto-flow`](css-grid-auto-flow.md), hodnota `grid-auto-flow:row` je v prohlížečích výchozí, takže bychom ji nemuseli nastavovat.
-- `grid-auto-rows: 1fr` – že implicitní grid bude mít výšku řádků `1fr`.
+- `grid-auto-rows: 1fr` – implicitní grid bude mít výšku řádků `1fr`.
 - `grid-auto-columns: auto` – implicitní grid nemá definované sloupce, takže se budou řídit šířkou obsahu buňky.
 - `grid-template-rows: none` – buňky gridu nemají ve směru řádků nijak nastavené rozměry.
 - `grid-template-columns: 100px 100px` – buňky mají v explicitním gridu nastavenou šířku `100px` a tvoří dva sloupce.
@@ -138,12 +136,12 @@ Můžeme ji nastavit i pomocí zkratky `grid`. Následující dva kousky kódu b
 ## Co je ještě dobré vědět? {#dobre-vedet}
 
 - U všech zkratek v CSS platí, že vlastnosti, které nedefinujeme, zkratka nastaví na jejich výchozí hodnoty. To může být občas nebezpečné.
-- Vlastnost pro mezeru mezi buňky layoutu – [`gap`](css-gap.md) – nelze přes zkratku `grid` nastavit a není tudíž jejím použitím resetována.
+- Vlastnost pro mezeru mezi buňky layoutu – [`gap`](css-gap.md) – nelze přes zkratku `grid` nastavit, a není tudíž jejím použitím resetována.
 
 ## Podpora v prohlížečích {#podpora}
 
-Zkratku `grid` zvládají všechny prohlížeče, kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat CSS grid i pro tento prohlížeč, doporučuji se zkratce `grid` vyhnout.
+Zkratku `grid` zvládají všechny prohlížeče kromě Internet Exploreru. Pokud na projektu potřebujete zapisovat CSS grid i pro tento prohlížeč, doporučuji se zkratce `grid` vyhnout.
 
-Nástroj [Autoprefixer](css-grid-msie.md), který podporu základních layoutů v MSIE dokáže zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).
+Nástroj [Autoprefixer](css-grid-msie.md), který dokáže podporu základních layoutů v MSIE zařídit, doporučuje použití samotných vlastností nebo maximálně zkratky [`grid-template`](css-grid-template.md).
 
 <!-- AdSnippet -->

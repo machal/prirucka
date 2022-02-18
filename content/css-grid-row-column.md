@@ -87,7 +87,7 @@ CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
 ### Jména linek {#jmena}
 
-Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše uvedený, jen s pojmenovanými linkami:
+Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše, jen s pojmenovanými linkami:
 
 ```css
 .container {
@@ -100,7 +100,7 @@ Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše 
 }
 ```
 
-Umísťujeme pak elegantně a o fous více čitelně:
+Umísťujeme pak elegantně a o fous čitelněji:
 
 ```css
 .item {
@@ -115,7 +115,7 @@ CodePen: [cdpn.io/e/GVWrOB](https://codepen.io/machal/pen/GVWrOB?editors=1100)
 
 ### Rozsah {#span}
 
-Klíčové slovo `span` slouží ke specifikování *rozsahu*, který v mřížce daná buňka zabírá.
+Klíčové slovo `span` slouží ke specifikování rozsahu, jaký v mřížce daná buňka zabírá.
 
 <!-- AdSnippet -->
 
@@ -145,7 +145,7 @@ Občas je možné vidět zápis `grid-row` a `grid-column` jen s jedním čísle
 }  
 ```
 
-Funguje to tak, jak asi očekáváte. Prohlížeče automaticky umísťují na jednu buňku mřížky (`span 1`), takže jim stačí uvést pozici začátku vykreslování.
+Funguje to tak, jak asi očekáváte. Prohlížeče v tomto případě automaticky umísťují prvky DOMu na jednu buňku mřížky (`span 1`), takže jim stačí uvést pozici začátku vykreslování.
 
 CodePen: [cdpn.io/e/Qeppxd](https://codepen.io/machal/pen/Qeppxd?editors=1100)
 
@@ -177,12 +177,12 @@ Vezměme stejný příklad:
 }
 ```
 
-Prvek bude dále umístění do druhého sloupce, ale v tomto případě do prvního řádku. Algoritmnus automatického umísťování zde vždy začíná a dosud nevykresloval žádné jiné prvky mřížky, které by pozici mohly posunout.
+Prvek bude dále umístění do druhého sloupce, ale v tomto případě do prvního řádku. Algoritmus automatického umísťování zde vždy začíná a dosud nevykresloval žádné jiné prvky mřížky, které by mohly pozici posunout.
 
 CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
 ## Podpora
 
-Moderní prohlížeče jsou s těmito vlastnostmi úplně v pohodě. Horší je to samozřejmě v MSIE, ale to nevadí, protože podobné vlastnosti tam existují. [Autoprefixer](css-grid-msie.md) nám pomůže a např. `grid-row` se přeloží do `-ms-grid-row`.
+Moderní prohlížeče s těmito vlastnostmi nemají problém. Horší je to samozřejmě v MSIE, ale to nevadí, protože podobné vlastnosti tam existují. [Autoprefixer](css-grid-msie.md) nám pomůže a např. `grid-row` se přeloží do `-ms-grid-row`.
 
 <!-- AdSnippet -->

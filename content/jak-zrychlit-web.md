@@ -141,7 +141,7 @@ Líně ale nenačítejte zdroje důležité pro první viewport a už vůbec ne 
 
 ## 4) Nepoužívejte CDN pro kritické zdroje {#ne-CDN}
 
-Díky přechodu Chrome na [partitioned (dělenou) cache](partitioned-cache.md), přestaly CDN dávat smysl pro sdílení zdrojů mezi weby.
+Díky přechodu Chromu na [partitioned (dělenou) cache](partitioned-cache.md), přestaly CDN dávat smysl pro sdílení zdrojů mezi weby.
 
 <figure>
 <img src="../dist/images/original/partitioned-cache.png" alt="Schéma partitioned cache v prohlížečích.">

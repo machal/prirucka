@@ -2,7 +2,7 @@
 
 Vlastnost `grid-template` slouží k definování mřížky v CSS gridu.
 
-Jde o zkratku (shorthand) pro vlastnosti [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a také [`grid-template-areas`](css-grid-template-areas.md).
+Jde o zkratku pro vlastnosti [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a také [`grid-template-areas`](css-grid-template-areas.md).
 
 <div class="connected" markdown="1">
 
@@ -110,11 +110,11 @@ Je zde pár kulišáren, na které bych vás rád upozornil:
 
 - Všimněte si, že `grid-template` nastavuje `grid-template-areas: none`, takže resetuje i případné dříve nastavené oblasti.
 - [Funkce `repeat()`](css-repeat.md) zde není povolena, protože se dává přednost vizuálnímu vyjádření mřížky, takzvanému „ASCII artu“.
-- Stejnou syntaxi má další zkratka – [vlastnost `grid`](css-grid-zkratka.md), která ovšem navíc umožňuje nastavení rozměrů implicitního gridu (vlastnosti `grid-auto-columns`, `grid-auto-rows`, a `grid-auto-flow`), takže je pravděpodobné, že můžete chtít použít spíše právě ji.
+- Stejnou syntaxi má další zkratka – [vlastnost `grid`](css-grid-zkratka.md), která ovšem navíc umožňuje nastavení rozměrů implicitního gridu (vlastnosti `grid-auto-columns`, `grid-auto-rows` a `grid-auto-flow`), takže je pravděpodobné, že můžete chtít použít spíše právě ji.
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Exploreru 11 vlastnost nepodporuje. Můžete to zkusit automaticky převádět [díky Autoprefixeru](css-grid-msie.md).
+Internet Exploreru 11 vlastnost nepodporuje. Můžete ji zkusit automaticky převádět [díky Autoprefixeru](css-grid-msie.md).
 
 Pokud ale podporu MSIE s využitím Autoprefixeru plánujete, moje doporučení zní: Používejte vlastnost `grid-template`, nikoliv zkratku `grid` a vyhnete se problémům.
 

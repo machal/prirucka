@@ -55,7 +55,7 @@ Vysvětleme výše uvedený kód:
 
 - Grid je definovaný jako dvousloupcový (`grid-template-columns: 1fr 1fr`) a dvouřádkový (`grid-template-rows: auto auto`).
 - V `grid-template-areas` je pak seznam řetězců, které označují oblasti. To je to, oč zde běží.
-- První řádek hodnot (`"first first"`) říká, že na první dvě buňky layoutu patří do oblasti `first`.
+- První řádek hodnot (`"first first"`) říká, že první dvě buňky layoutu patří do oblasti `first`.
 - Tečka (`.`) uvádí prázdnou buňku, kde se nic zobrazovat nemá.
 - Elementy `.first` a `.second` je pak potřeba ručně umístit do vyhrazených oblastí mřížky pomocí vlastnosti `grid-area`.
 
@@ -87,9 +87,9 @@ Pojmenované oblasti souvisí s pojmenovanými linkami, které znáte z vlastnos
 
 <!-- AdSnippet -->
 
-Například definování oblasti pojmenované `head`, automaticky vytvoří dvě linky – `head-start` a `head-end`.
+Například definování oblasti pojmenované `head` automaticky vytvoří dvě linky – `head-start` a `head-end`.
 
-A víte co je ještě lepší? Definováním linek `head-start` a `head-end` ve vlastnostech [grid-template-rows a grid-template-columns](css-grid-template-rows-columns.md) vytvoříte oblast `head`.
+A víte, co je ještě lepší? Definováním linek `head-start` a `head-end` ve vlastnostech [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md) vytvoříte oblast `head`.
 
 Vezměme tento grid definovaný jako dva sloupce a dva řádky:
 
@@ -128,13 +128,13 @@ Pak stačí pomocí [vlastnosti `grid-area`](css-grid-area.md) prvek `.item-head
 </figcaption>
 </figure>
 
-Následuje už jen ukázka v penu.
+Následuje už jen ukázka v CodePenu.
 
 CodePen: [cdpn.io/e/qBjrLwe](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
 
 ## Výhody definování oblastí mřížky {#vyhody}
 
-Oblasti gridu samozřejmě není nutné definovat pokaždé. Hodit se ale budou pro komplexnější layouty, které zároveň potřebujeme definovat a spravovat ručně. Typickým příkladem jsou rozvržení celostránkové.
+Oblasti gridu samozřejmě není nutné definovat pokaždé. Hodit se ale budou pro komplexnější layouty, které zároveň potřebujeme definovat a spravovat ručně. Typickým příkladem jsou rozvržení celostránková.
 
 <!-- AdSnippet -->
 
@@ -183,7 +183,7 @@ CodePen: [cdpn.io/e/jgrmoq](https://codepen.io/machal/pen/jgrmoq?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 
-Opět je zde jediná potíž. Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to tak problematické být nemusí.
+Opět je zde jediná potíž: Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to tak problematické být nemusí.
 
 Moderní prohlížeče nemají s vlastností `grid-template-areas` žádný problém.
 

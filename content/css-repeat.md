@@ -46,11 +46,11 @@ repeat(4, 10px [col-start] 30% [col-middle] auto [col-end])
 repeat(auto-fill, minmax(100px, 1fr));
 ```
 
-V druhém parametru zápisu `repeat()` prostě můžete uvést libovolnou deklaraci stopy mřížky, které budete znát už například z vlastností [`grid-template-rows`/`-columns`](css-grid-template-rows-columns.md).
+V druhém parametru zápisu `repeat()` prostě můžete uvést libovolnou deklaraci stopy mřížky, kterou budete znát už například z vlastností [`grid-template-rows`/`-columns`](css-grid-template-rows-columns.md).
 
 <!-- AdSnippet -->
 
-Co když ale chcete deklaraci sloupců nebo řádků opakovat, ale ještě nevíte kolikrát? Co když prostě nevíte, kolik jich tam chcete, protože nevíte, kolik bude mít rodičovský prvek v HTML potomků?
+Co když ale chcete deklaraci sloupců nebo řádků opakovat, jenže ještě nevíte kolikrát? Třeba prostě nevíte, kolik bude mít rodičovský prvek v HTML potomků.
 
 Tady vstupují do hry zajímavá klíčová slova `auto-fill` a `auto-fit`.
 
@@ -67,9 +67,9 @@ Použití zápisu `repeat()` v kombinaci s klíčovými slovy `auto-fill` a `au
 
 Rozdíly jsou zhruba následující:
 
-- Oba zápisy v `repeat()` přidávají nové neviditelné buňky mřížky, tak aby se vyplnil volný prostor.
+- Oba zápisy v `repeat()` přidávají nové neviditelné buňky mřížky tak, aby se vyplnil volný prostor.
 - `auto-fill` se snaží vyplnit prostor prázdnými buňkami.
-- `auto-fit` při vykreslování nové prázdné buňky eliminuje a tedy umožní vyplnit prostor roztažením (napasováním, proto „fit“) velikosti stávajících buněk mřížky.
+- `auto-fit` při vykreslování nové prázdné buňky eliminuje, a tedy umožní vyplnit prostor roztažením (napasováním, proto „fit“) velikosti stávajících buněk mřížky.
 
 Myslím si, že obě klíčová slova dává smysl použít jen s [funkcí `minmax()`](css-minmax.md), aby se buňky mohly roztahovat od minima po maximum velikosti.
 
@@ -92,7 +92,7 @@ CodePen: [cdpn.io/e/NWKzjoV](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
 
 ### Příklad s auto-fit {#auto-fit}
 
-`auto-fit` bude při roztahování dostupného prostoru prioritizovat roztahování stávajících buněk mřížky. Ve skutečnosti tedy buňky přidává také, ale při výpočtu šířek ty neviditelné eliminuje.
+`auto-fit` bude při roztahování dostupného prostoru prioritizovat roztahování stávajících buněk mřížky. Ve skutečnosti tedy přidává buňky také, ale při výpočtu šířek ty neviditelné eliminuje.
 
 ```css
 .container {
@@ -100,7 +100,7 @@ CodePen: [cdpn.io/e/NWKzjoV](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
 }
 ```
 
-Zkuste si v CodePenu změnit šířku okna a dívat se přitom na rodičovský element ve vývojářských nástrojích Chrome nebo Firefoxu. Uvidíte něco podobného jako je na obrázku výše.
+Zkuste si v CodePenu změnit šířku okna a dívat se přitom na rodičovský element ve vývojářských nástrojích Chromu nebo Firefoxu. Uvidíte něco podobného, jako je na obrázku výše.
 
 CodePen: [cdpn.io/e/BaBVREb](https://codepen.io/machal/pen/BaBVREb?editors=1100)
 
@@ -108,6 +108,6 @@ CodePen: [cdpn.io/e/BaBVREb](https://codepen.io/machal/pen/BaBVREb?editors=1100)
 
 V problematickém MSIE 11 je potřeba funkci zapisovat jinak: například `repeat(4, 1fr 20px)` jako `(1fr 20px)[4]`. Použití s [Autoprefixerem](css-grid-msie.md) vám ale umožní používat jeden, standardní zápis.
 
-Bohužel ale není možné použít automatické opakování s klíčovými slovy jako `auto-fill` a `auto-fit`.
+Bohužel však není možné použít automatické opakování s klíčovými slovy jako `auto-fill` a `auto-fit`.
 
 <!-- AdSnippet -->

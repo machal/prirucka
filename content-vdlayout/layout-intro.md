@@ -118,7 +118,7 @@ Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovn
 }
 ```
 
-[Vlastností `flex`](css-flex.md), což je zkratka pro nastavení šířky a způsobu rozpínání a smršťování prvku, jsme nastavili podíl na celkové šířce.
+[Vlastností `flex`](css-flex.md), což je zkratka (shorthand) pro nastavení šířky a způsobu rozpínání a smršťování prvku, jsme nastavili podíl na celkové šířce.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-layout-intro-example-flex.jpg" width="1600" height="900" alt="Flexbox ve Firefox DevTools">

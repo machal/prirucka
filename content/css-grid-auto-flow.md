@@ -20,7 +20,7 @@ Vlastnost `grid-auto-flow` je součástí specifikace [CSS gridu](css-grid.md).
 
 </div>
 
-Běžně vlastnost slouží ke změně směru vykreslování rozvržení. Možností použití je ale celá řada. 
+Běžně vlastnost slouží ke změně směru vykreslování rozvržení. Možností použití je ale celá řada.
 
 Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vykreslení, kdy prohlížeč dá přednost kompaktnosti vykreslení položek před jejich pořadím definovaným v kódu.
 
@@ -33,7 +33,7 @@ Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vy
 | `row`     | Výchozí hodnota. Prvky layoutu se vykreslují po řádcích. |
 | `column`  | Prvky layoutu se vykreslují po sloupcích. |
 | `dense`   | Vykresluje se po řádcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků. |
-| `column dense`   | Vykresluje se po sloupcích a prohlížeč může vyplnit mezery změnou pořadí prvků. |
+| `column dense`   | Vykresluje se po sloupcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků.|
 
 </div>
 
@@ -43,7 +43,7 @@ Co teď? Vzhůru do ukázek!
 
 Tohle je jednoduché, prostě se jen změní směr vykreslování z řádků na sloupečky.
 
-Vezměme, že máme šest položek v layoutu:
+Řekněme, že máme šest položek v layoutu:
 
 ```html
 <div class="container">
@@ -93,7 +93,7 @@ Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená,
 
 Důležité je, že prohlížeč může po nastavení `grid-auto-flow:dense` změnit pořadí vykreslení prvků.
 
-Ale namísto řečí pojďme na příklad. Opět zde máme šest položek:
+Místo dlouhých řečí ale pojďme na příklad. Opět zde máme šest položek:
 
 ```html
 <div class="container">
@@ -117,25 +117,25 @@ Layout je definovaný takto:
 }
 ```
 
-Vysvětleme:
+Vysvětlíme:
 
-- Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovolný počet sloupců ([funkce `repeat()`](css-repeat.md)) ale každý musí být minimálně 120px široký `minmax(120px, 1fr)` (více o [funkci `minmax()`](css-minmax.md)).
+- Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovolný počet sloupců ([funkce `repeat()`](css-repeat.md)), ale každý musí být minimálně 120px široký – [`minmax(120px, 1fr)`](css-minmax.md).
 - `grid-auto-flow: dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-auto-flow-dense.jpg" width="1600" height="900" alt="grid-auto-flow: dense">
 <figcaption markdown="1">
-*Zahuštěné vykreslení (`dense`)  prostě dává přednost hustotě před pořadí.*
+*Zahuštěné vykreslení (`dense`)  prostě dává přednost hustotě před pořadím.*
 </figcaption>
 </figure>
 
 CodePen: [cdpn.io/e/VoKroo](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
-## Přístupnost a pozor na změnu pořadí {#pristupnost}
+## Přístupnost: pozor na změnu pořadí {#pristupnost}
 
-Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to!
+Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí.
 
-Dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. Snažte se proto tuto deklaraci používat jen pro prvky, u kterých na pořadí zase tak moc nezáleží.
+Pozor na to! Dokument pak může zlobit při navigaci z klávesnice nebo pro odečítače obrazovky. Snažte se proto tuto deklaraci používat jen pro prvky, u kterých na pořadí zase tak moc nezáleží.
 
 <div class="web-only" markdown="1">
 
@@ -151,8 +151,8 @@ Více to rozebírám v části [CSS layout a přístupnost](css-layout-pristupno
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `grid-auto-flow` a její hodnoty jsou plně podporovány ve všech prohlížečích s jedinou výjimkou – Internet Explorerem.
+Vlastnost `grid-auto-flow` a její hodnoty jsou plně podporovány ve všech prohlížečích s jedinou výjimkou – Internet Exploreru.
 
-V MSIE nám bohužel nepomůže v případě této vlastnosti nepomůže ani [Autoprefixer](autoprefixer.md) nebo jiný nástroj. Můžeme na něj ale vyzrát vhodným napsáním kódu tak, abychom měli pod kontrolou desktopové zobrazení, které Explorer používá, a prohlížečích a vlastnosti `grid-auto-flow` nechali jen menší displeje.
+V MSIE nám bohužel nepomůže v případě této vlastnosti ani [Autoprefixer](autoprefixer.md) nebo jiný nástroj. Můžeme na něj ale vyzrát vhodným napsáním kódu tak, abychom měli pod kontrolou desktopové zobrazení, které Explorer používá, a ostatním prohlížečům pomocí vlastnosti `grid-auto-flow` nechali jen menší displeje.
 
 <!-- AdSnippet -->

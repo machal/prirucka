@@ -1,6 +1,6 @@
 # Vlastnosti grid-auto-rows a grid-auto-columns: definice implicitního gridu
 
-Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, tedy výslovně nedefinovaného gridu v CSS.
+Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, čili výslovně nedefinovaného gridu v CSS.
 
 <div class="connected" markdown="1">
 
@@ -30,9 +30,9 @@ Vlastnostem implicitního gridu `grid-auto-rows` a `grid-auto-columns` můžete 
 
 <!-- AdSnippet -->
 
-Příklady budu držet kolem definování řádků, ale samozřejmě platí i pro sloupce:
+Příklady se budou točit kolem definování řádků, ale samozřejmě platí i pro sloupce:
 
-Výchozí je hodnota `auto`:
+Výchozí hodnota je `auto`:
 
 ```css
 grid-auto-rows: auto;
@@ -58,7 +58,7 @@ grid-auto-rows: 10% 33.3%;
 grid-auto-rows: 1fr minmax(100px, auto);
 ```
 
-Hodnota `100px 200px` říká, že první a pak každý lichý nedefinovaný a tedy implicitní řádek bude mít výchozí výšku `100px`, sudé řádky pak `200px`.
+Hodnota `100px 200px` říká, že první a pak každý lichý nedefinovaný, a tedy implicitní řádek bude mít výchozí výšku `100px`, sudé řádky pak `200px`.
 
 ### Klíčová slova
 
@@ -71,9 +71,9 @@ Je samozřejmě možné používat [funkce a klíčová slova](css-minmax.md), s
 
 Ukázky máme tedy za sebou. Jak ale onen implicitní grid vzniká a kde je možné tyto vlastnosti využít?
 
-## Příklad: Více položek v gridu než je definovaných řádků {#priklad-radky}
+## Příklad: Více položek v gridu, než je definovaných řádků {#priklad-radky}
 
-Jak už jsem říkal – vlastnosti `grid-auto-` častěji použijete pro řádky layoutu, tedy `grid-auto-rows`. Může se vám totiž snadno stát, že v mřížce je předem daný počet sloupečků, ale neznámý počet položek a tedy řádků:
+Jak už jsem říkal – vlastnosti `grid-auto-` častěji použijete pro řádky layoutu, tedy `grid-auto-rows`. Může se vám totiž snadno stát, že v mřížce je předem daný počet sloupečků, ale neznámý počet položek, a tedy řádků:
 
 ```css
 .container {
@@ -103,7 +103,7 @@ CodePen: [cdpn.io/e/PMGJpa](https://codepen.io/machal/pen/PMGJpa?editors=1100)
 
 ## Příklad: Umístění položky mimo explicitní grid {#priklad-umisteni}
 
-Dalším možností, jak může explicitní grid vzniknout, je umístění položky zcela mimo definovanou mřížku. Vezměme že ji definujeme jako 2 × 2:
+Další možností, jak může explicitní grid vzniknout, je umístění položky zcela mimo definovanou mřížku. Řekněme, že ji definujeme jako 2 × 2:
 
 ```css
 .container {
@@ -140,7 +140,7 @@ Opravíme to až touto deklarací:
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-auto-cols.jpg" width="1600" height="900" alt="grid-auto-columns">
 <figcaption markdown="1">
-*Rozdíl mezi nedefinovanou implicitní mřížkou (`grid-auto-columns:auto`) a definovanou (`grid-auto-columns:1fr`), ve které pátá a šestá položka dostane definovanou výšku.*
+*Rozdíl mezi nedefinovanou implicitní mřížkou (`grid-auto-columns:auto`) a definovanou (`grid-auto-columns:1fr`), ve které pátá a šestá položka dostane definovanou šírku.*
 </figcaption>
 </figure>
 

@@ -22,7 +22,7 @@ Vlastnosti `grid-template-rows` a `grid-template-columns` jsou součástí [CSS 
 
 ## Jednoduchý příklad
 
-Vezměne toto HTML:
+Vezměme toto HTML:
 
 ```html
 <div class="container">
@@ -68,9 +68,9 @@ Poznámka k hodnotě `auto` v definici řádků: Grid sjednocuje výšky polože
 
 CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
-### Co když je položek více než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
+### Co když je položek více, než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
 
-Teď se stane ošklivá a zlá věc – zákeřný frontend kodér do HTML přidá pátou položku:
+Teď se stane ošklivá a zlá věc – zákeřný frontendový kodér do HTML přidá pátou položku:
 
 ```html
 <div class="container">
@@ -84,7 +84,7 @@ Teď se stane ošklivá a zlá věc – zákeřný frontend kodér do HTML přid
 
 Jak bude vypadat pátá položka zobrazená v gridu 2 × 2? V tomto případě stejně jako předchozí čtyři.
 
-Algoritmus gridu ji přidělí 50% šířku a automatickou výšku.
+Algoritmus gridu jí přidělí 50% šířku a automatickou výšku.
 
 <!-- AdSnippet -->
 
@@ -102,7 +102,7 @@ Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výc
 
 CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
-Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns` je možné určit vlastnostmi [`grid-auto-columns` a `grid-auto-rows`](css-grid-auto-rows-columns.md), které definují implicitní grid.
+Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns`, je možné určit vlastnostmi [`grid-auto-columns` a `grid-auto-rows`](css-grid-auto-rows-columns.md), které definují implicitní grid.
 
 ## Další možnosti zápisu gridu {#hodnoty}
 
@@ -120,7 +120,7 @@ Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-colu
 
 </div>
 
-Další řadu možností nabízí [funkce `minmax()`](css-minmax.md) a související hodnoty pro nastavení šířky podle obsahu jako je `min-content`, `max-content` nebo `fit-content`.
+Další řadu možností nabízí [funkce `minmax()`](css-minmax.md) a související hodnoty pro nastavení šířky podle obsahu, jako je `min-content`, `max-content` nebo `fit-content`.
 
 Pojďme se ale podívat na možnosti hodnot z tabulky.
 
@@ -140,7 +140,7 @@ Občas se ale může hodit použít ji i ve vlastním kódu, například když r
 
 V gridu je možné pro definici řádků a sloupečků používat všechny možné [jednotky](jednotky.md), které už pro rozvržení v CSS používáte.
 
-Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *flex fraction* a dá se o v jejím případě mluvit jako o podílu na zbytku.
+Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *flex fraction* a dá se o ní mluvit jako o podílu na zbytku.
 
 Zápis může vypadat například takto:
 
@@ -156,7 +156,7 @@ CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
 
 ### Pojmenovávání linek {#pojmenovane}
 
-Pojmenovávání linek se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu jako je [`grid-column`, `grid-row`](css-grid-row-column.md) nebo [`grid-area`](css-grid-area.md).
+Pojmenovávání linek se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu, jako je [`grid-column`, `grid-row`](css-grid-row-column.md) nebo [`grid-area`](css-grid-area.md).
 
 Každý sloupec nebo řádka je v gridu definovaná dvěma linkami.
 
@@ -209,14 +209,14 @@ Hodnota `masonry` je speciální, protože by v budoucnu měla zařídit nativn�
 </figcaption>
 </figure>
 
-Toto ale na konci léta roku 2021 zatím podporuje jen prohlížeč Firefox v případě nastavení volby uživatelem.
+Toto ale na konci února 2022 zatím podporuje jen prohlížeč Firefox v případě nastavení volby uživatelem.
 
 ## Podpora v prohlížečích {#podpora}
 
 Internet Explorer 11 vlastnosti `grid-template-rows`/`-columns` nepodporuje. Namísto `grid-template-columns` používá vlastnost `-ms-grid-columns` a místo `grid-template-rows` pak `-ms-grid-rows`. Toto se dá naštěstí obejít pomocí [nástroje Autoprefixer](css-grid-msie.md).
 
-Tento stařičký, ale občas ještě [používaný prohlížeč](msie.md), také nezvládá automatické umísťování položek do mřížky. I to je možné alespoň částečně vyřešit pomocí Autoprefixeru.
+Explorer, tento stařičký, ale občas ještě [používaný prohlížeč](msie.md), také nezvládá automatické umísťování položek do mřížky. I to je možné alespoň částečně vyřešit pomocí Autoprefixeru.
 
-V moderních prohlížečích nebudete s podporou mít problém.
+V moderních prohlížečích nebudete mít s podporou problém.
 
 <!-- AdSnippet -->

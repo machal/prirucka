@@ -24,13 +24,13 @@ Grid je skvělý, ale dříve nebo později se dostaneme do situace, kdy potřeb
 
 <p><img src="../dist/images/original/vdlayout/subgrid-intro.jpg" width="1600" height="540" alt="Grid vs. subgrid"></p>
 
-Jak vidíte na obrázku, subgrid mám může zařídit to, aby vnitřní části položek lícovaly i když mají různě velký obsah.
+Jak vidíte na obrázku, subgrid mám může zařídit to, aby vnitřní části položek lícovaly, i když mají různě velký obsah.
 
 Můžeme to zajistit i jinak: nastavit prvkům fixní rozměry na výšku nebo použít JavaScript (což bych kvůli výkonu moc nedoporučoval). Staré páky mezi kodéry si vzpomenou na složité tabulkové layouty, kterými se toho dalo dosáhnout, ale ve kterých se nikdo nevyznal…
 
 ## Příklad s kartou produktu {#priklad}
 
-Víte vy co? Ukážu vám to na jednoduchém příkladu. Už zase. Na obrázku výše totiž vidíte layout podobný tomu, který používám na Vzhůru dolů.
+Víte vy co? Ukážu vám to na jednoduchém příkladu. Na obrázku výše totiž vidíte layout podobný tomu, který používám na Vzhůru dolů.
 
 Mám seznam položek, říkejme jim karty produktu. Každá má složitější strukturu – nadpis, obrázek, text, tlačítko:
 
@@ -69,7 +69,7 @@ Vnější rozvržení, tedy to, které se týká vodorovného umístění karet,
 }
 ```
 
-Umísťuji zde dvě položky a přeji si, aby nebyly uzší než `250px` a širší než `400px`. Mezera mezi nimi je `4rem`.
+Umísťuji zde dvě položky a přeji si, aby nebyly užší než `250px` a širší než `400px`. Mezera mezi nimi je `4rem`.
 
 CodePen: [cdpn.io/e/VwMVPBJ](https://codepen.io/machal/pen/VwMVPBJ?editors=1100)
 
@@ -85,11 +85,11 @@ Nejprve musíme změnit rodičovský layout, a to tak, že přidáme řádky pom
 }
 ```
 
-Jak vidíte, nemáme příliš velké ambice položky layout nějak omezovat. Víme jen, že budou čtyři (nadpis, obrázek, text, tlačítko) a hodláme je pouze zarovnávat mezi sebou navzájem.
+Jak vidíte, nemáme příliš velké ambice položky layoutu nějak omezovat. Víme jen, že budou čtyři (nadpis, obrázek, text, tlačítko) a hodláme je pouze zarovnávat mezi sebou navzájem.
 
 ## A teď kouzlo, subgrid
 
-Zápis pro vnitřní mřížku u jednotlivých položek, který řešíme podmřížkou (subgridem):
+Zápis pro vnitřní mřížku u jednotlivých položek, který řešíme podmřížkou (subgridem), bude:
 
 ```css
 .item {
@@ -110,7 +110,7 @@ Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad p
 <figure>
 <img src="../dist/images/original/vdlayout/subgrid-example.jpg" width="1600" height="900" alt="Příklad se subgridem">
 <figcaption markdown="1">
-*Zelená podmřížka si hoví v modré mřížce a je spokojená. My také, protože vnitřní položky karet jsou navzájem zarovanané.*
+*Zelená podmřížka si hoví v modré mřížce a je spokojená. My také, protože vnitřní položky karet jsou navzájem zarovnané.*
 </figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ CodePen: [cdpn.io/e/wvrQgLJ](https://codepen.io/machal/pen/wvrQgLJ?editors=1100)
 
 ## Poznámky k subgridu {#poznamky}
 
-Vzhledem k tomu, že v době psaní (leden 2022) subgrid umí jen jeden prohlížeč a to ještě ten nejmenší, Firefox, nebudu zde provádět úplně detailní průzkum této části CSS gridu. Pár poznámek zde ale zanechám:
+Vzhledem k tomu, že v době psaní (únor 2022) subgrid umí jen jeden prohlížeč, navíc ten nejmenší, Firefox, nebudu zde provádět úplně detailní průzkum této části CSS gridu. Pár poznámek zde ale uvedu:
 
 ### Vícerozměrnost sugridu
 
@@ -128,7 +128,7 @@ V ukázce jsme pro podmřížku využili jen svislý směr rodičovského layout
 
 ### Dědění mezer
 
-[Vlastnost `gap`](css-gap.md) se z rodičovského gridu samozřejmě dědí i na ten vnitřní, ale je možné si uvnitř mezery změnit na takové, které vám budou vyhovovat.
+[Vlastnost `gap`](css-gap.md) se z rodičovského gridu samozřejmě dědí i na ten vnitřní, ale je možné si uvnitř mezery v layoutu změnit i pro vnitřní prvky novou deklarací `gap`.
 
 ### Žádné přidávání implicitních řádků nebo sloupců
 
@@ -136,12 +136,12 @@ V běžném gridu je možné pomocí [vlastností `grid-auto-`](css-grid-auto-ro
 
 ## Podpora v prohlížečích {#podpora}
 
-Subgrid je součástí specifikace CSS Grid Layout Module již ode Level 2, která se datuje do roku 2018. Zde je stav k lednu 2022:
+Subgrid je součástí specifikace CSS Grid Layout Module již od Level 2, která se datuje do roku 2018. Zde je stav k únoru 2022:
 
-- Firefox subgrid podporuje od verze 70 z prosince 2019.
+- Firefox podporuje subgrid od verze 70 z prosince 2019.
 - V Chromu se na subgridu zdá se docela hodně pracuje od podzimu 2021.
-- Safari sice subgrid eviduje, ale zatím tým vývojářů mlčí.
+- Safari sice subgrid eviduje, ale tým vývojářů zatím mlčí.
 
-Vzhledem k tomu, že se ledy hnuly u Chrome, má subgrid opravdu dobrou šanci na to, že se ujme a bude nám v budoucnu sloužit.
+Vzhledem k tomu, že se ledy hnuly u Chromu, má subgrid opravdu dobrou šanci na to, že se ujme a bude nám v budoucnu sloužit.
 
 Aktuální informace hledejte na [CanIUse.com/css-subgrid](https://caniuse.com/css-subgrid).

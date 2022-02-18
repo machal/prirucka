@@ -23,7 +23,7 @@ Internet Explorer 8 a starší dnes nejsou na návštěvnosti většiny webů za
 
 ![Podpora přístupnosti HTML5 tagů v prohlížečích](../dist/images/original/html5-accessibility.jpg)
 
-Když se totiž podíváte na data z [HTML5accessibility.com](http://www.html5accessibility.com/), sekční HTML5 elementy neumí především Explorer 11. Pak tam jsou jen dvě výjimky pro `<header>` u Chrome a [`<figure>`](figure-figcaption.md) u Safari.
+Když se totiž podíváte na data z [HTML5accessibility.com](http://www.html5accessibility.com/), sekční HTML5 elementy neumí především Explorer 11. Pak tam jsou jen dvě výjimky pro `<header>` u Chromu a [`<figure>`](figure-figcaption.md) u Safari.
 
 Podpora `role=""` atributů je ale podle všeho vyšší. Proč tedy používat HTML5 tagy? Vypadá to totiž, že do budoucna bude pro vyznačení oblastí možné používat jen tagy. [Radek Pavlíček](http://poslepu.blogspot.cz/2012/12/proc-bych-nerad-aby-strukturalni-html5.html) v odpovědi na můj tehdejší hejt psal, že sekční elementy zvyšují pravděpodobnosti, že je kodéři použijí. `<main>` napíšete radši než `role="main"`. Ano, jistý efekt to mít může. 
 

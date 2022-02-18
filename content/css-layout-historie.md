@@ -66,7 +66,7 @@ Kód, který takto vznikal, mě dodnes chodí v noci strašit. No však se sami 
 
 Doufám, že až někdo tomuto neznámému webaři postaví pomník, bude text na něm vysázený v tabulkovém layoutu.
 
-## 1999: Multi-column layout
+## 1999: Multi-column Layout
 
 Håkon Lie a mnozí další přicházejí s prvními drafty specifikace pro vícesloupcový layout.
 

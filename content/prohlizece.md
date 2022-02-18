@@ -58,7 +58,7 @@ Jako třetí ukazují Analytics *Android Webview*, což dle mého je je prohlí�
 
 Nezapomeňte na *Samsung Internet* a *Seznam.cz*. Oba dva jsou velmi podobné Chrome. Za chvíli se dozvíte více.
 
-Když sečteme všechny prohlížeče postavená na jádru Chrome („Chromium“), kromě Safari nemá v ČR na mobilních zařízení žádnou konkurenci. Ostatně ani na světe ne.
+Když sečteme všechny prohlížeče postavená na jádru Chromu („Chromium“), kromě Safari nemá v ČR na mobilních zařízení žádnou konkurenci. Ostatně ani na světe ne.
 
 ## Trendy: Roste mobilní Chrome a nové menší prohlížeče {#trendy}
 

@@ -22,7 +22,7 @@ Vlastnosti `break-before`, `break-after` a `break-inside` patří do specifikace
 
 </div>
 
-Slouží k tomu následující tři vlastnosti, které znáte možná ještě z CSS modulu pro ovlivnění stránkování během tisku stránky:
+Poslouží jim následující tři vlastnosti, které znáte možná ještě z CSS modulu pro ovlivnění stránkování během tisku stránky:
 
 - `break-before` – zalamování před prvkem.
 - `break-after` – zalamování za prvkem.
@@ -39,7 +39,7 @@ To nás ale od jejich zdokumentování nemůže odradit. A pokud vás ano, mě u
 </figcaption>
 </figure>
 
-Pojďme si to alespoň teoreticky rozebrat. Je možné, že v době, kdy toto čtete, už bude podpora lepší.
+Pojďme si to alespoň teoreticky rozebrat. Je ovšem možné, že v době, kdy toto čtete, už bude podpora lepší.
 
 ## `break-before` – zalamování před prvkem {#break-before}
 
@@ -93,7 +93,7 @@ Když si patřičně upravíte šířku okna tak, aby druhý nadpis připadl na 
 
 CodePen: [cdpn.io/e/jOMaMdq](https://codepen.io/machal/pen/jOMaMdq?editors=1000)
 
-V ukázce byste měli vidět tři možnosti zakázat:
+V ukázce byste měli vidět tři možnosti, jak zalamování zakázat:
 
 - `auto` – nastavuje všechny tři vlastnosti na tuto hodnotu.
 - `break-before: column` - vynucuje zalomení nadpisů vždy do nového sloupce.
@@ -115,12 +115,12 @@ Nebo spíše nefunguje.
 
 ## Podpora v prohlížečích {#podpora}
 
-Výše uvedený příklad mě plně funguje jen v nejnovějším Safari (verze 14). Firefox zvládne jen možnost `break-inside:avoid`, Chrome je u obou ukázek zcela chromý.
+Výše uvedený příklad mi plně funguje jen v nejnovějším Safari (verze 14). Firefox zvládne pouze možnost `break-inside:avoid`, Chrome je u obou ukázek zcela chromý.
 
 Tabulky na webu CanIUse hovoří o různorodé podpoře, ale těm zeleným políčkům se na základě mých testů nedá příliš věřit. [caniuse.com/break-](https://caniuse.com/?search=break-%20multi-)
 
-Na jiném místě CanIUse se o Chrome uvádí, že ve všech zde zmíněných vlastnostech nyní (v prosinci 2020) nepodporuje hodnoty `avoid-column`, `column` a `avoid`, což jsou ty potenciálně nejužitečnější. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
+Na jiném místě CanIUse se o Chromu uvádí, že ve všech zde zmíněných vlastnostech nyní (v únoru 2022) nepodporuje hodnoty `avoid-column`, `column` a `avoid`, což jsou ty potenciálně nejužitečnější. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 
 <!-- AdSnippet -->
 
-Vlastnosti `break-before`, `break-after` a `break-inside` pro mě tedy při použití v CSS Multi-Column Layout zůstávají jako na papíře krásně vypadající, ale v praxi zatím nepříliš použitelné.
+Vlastnosti `break-before`, `break-after` a `break-inside` pro mě tedy při použití v CSS Multi-column Layout zůstávají jako na papíře krásně vypadající, ale v praxi zatím nepříliš použitelné.

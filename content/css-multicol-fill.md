@@ -24,11 +24,11 @@ V případě nastavení `column-fill:balance` se prohlížeče snaží minimaliz
 
 Podívejme se na možné hodnoty:
 
-- `auto` - sloupečky se obsahem vyplňují postupně. Výchozí hodnota.
+- `auto` – sloupečky se obsahem vyplňují postupně. Výchozí hodnota.
 - `balance` – rozdělení obsahu do sloupečků tak, aby byla jejich výška co nejpodobnější.
-- `balance-all` – stejně jako `balance`, jen se do sloupečků rozděluje veškerý obsah. V době psaní toto žádný prohlížeč nepodporuje.
+- `balance-all` – stejně jako `balance`, jen se do sloupečků rozděluje veškerý obsah. V době, kdy toto píšu, však tuhle vlastnost žádný prohlížeč nepodporuje.
 
-Rozdíl mezi `balance` a `balance-all` uvidíte jen ve vícestránkových kontextech jako je CSS pro tisk („paged media“ nebo také „fragmented contexts“). V případě `balance` se do sloupců má rozdělit jen poslední fragment, např. poslední stránka. U hodnoty `balance-all` se rozdělí všechny fragmenty či stránky.
+Rozdíl mezi `balance` a `balance-all` uvidíte jen ve vícestránkových kontextech, jako je CSS pro tisk („paged media“ nebo také „fragmented contexts“). V případě `balance` se do sloupců má rozdělit jen poslední fragment, např. poslední stránka. U hodnoty `balance-all` se rozdělí všechny fragmenty či stránky.
 
 <!-- AdSnippet -->
 
@@ -37,11 +37,11 @@ Vlastnost se vám asi zatím bude používat hůře. Implementace v prohlížeč
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-fill.jpg" width="1600" height="900" alt="CSS vlastnost column-fill">
 <figcaption markdown="1">
-*Na obrázku je rozdíl mezi hodnotami `auto` a `balance` snad dobře vidět.*
+*Na obrázku je rozdíl mezi hodnotami `auto` a `balance` dobře vidět.*
 </figcaption>
 </figure>
 
-Pojďme se ale podívat jak to celé funguje.
+Pojďme se ale podívat, jak to celé funguje.
 
 ## Příklad {#priklad}
 
@@ -58,19 +58,19 @@ V demu můžete přepínat mezi nastavením vlastnosti `column-fill` na hodnoty 
 
 CodePen: [cdpn.io/e/PoGEadq](https://codepen.io/machal/pen/PoGEadq?editors=1000)
 
-Pokud byste si hráli s vlastnosti `height` u kontejneru, s obsahem prvku a šířkou okna, dojdete k témuž co já – v každém prohlížeči to funguje trochu jinak.
+Pokud byste si hráli s vlastnostmi `height` u kontejneru, s obsahem prvku a šířkou okna, dojdete k témuž co já – v každém prohlížeči to funguje trochu jinak.
 
 ## Podpora v prohlížečích {#podpora}
 
-Podle CanIUse podporují `column-fill` všechny moderní prohlížeče, včetně Internet Explorerů. [caniuse.com/column-fill](https://caniuse.com/?search=column-fill)
+Podle CanIUse podporují `column-fill` všechny moderní prohlížeče, včetně Internet Exploreru. [caniuse.com/column-fill](https://caniuse.com/?search=column-fill)
 
 Mohli bychom tím skončit, ale po hrátkách s mým CodePenem v různých prohlížečích vás musím upozornit na následující:
 
 - V Chromu hodnota `balance` nefunguje bez vynucení nastavení výšky na `.container`, ať už to uděláme vlastností `height` nebo jinak.
-- Safari má chybu opačnou – pokud nenastavíme kontejneru výšku, rozděluje sloupečky tak jako bychom použili vyvažování – hodnotu `balance`. V prohlížeči od Apple se navíc přepnutí mezi hodnotami `balance` a `auto` projeví až po změně šířky okna.
+- Safari má chybu opačnou – pokud nenastavíme kontejneru výšku, rozděluje sloupečky tak, jako bychom použili vyvažování – hodnotu `balance`. V prohlížeči od Applu se navíc přepnutí mezi hodnotami `balance` a `auto` projeví až po změně šířky okna.
 
-Naopak se mi zdá, že tato vlastnost velmi dobře funguje – minimálně v mém demu – v nejméně používaném moderním prohlížeči, tedy ve Firefoxu.
+Naopak se mi zdá, že tato vlastnost velmi dobře funguje – přinejmenším v mém demu – v nejméně používaném moderním prohlížeči, tedy ve Firefoxu.
 
-Určitě vás nechci od používání vlastnosti `column-fill` odradit. Bude se vám občas hodit. Jen si to vždy dobře otestujte v různých prohlížečích.
+Určitě vás nechci od používání vlastnosti `column-fill` odradit. Občas se vám bude hodit. Jen si to vždy dobře otestujte v různých prohlížečích.
 
 <!-- AdSnippet -->

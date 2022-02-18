@@ -32,7 +32,7 @@ grid-area:
 
 ## Jedna hodnota {#jedna-hodnota}
 
-Umístění do už pojmenované oblasti mřížky je snadné. Nejprve si nadefinujeme mřížku a pomocí [`grid-template-areas`](css-grid-template-areas.md) pojmenujeme některé z jejich oblastí:
+Umístění do už pojmenované oblasti mřížky je snadné. Nejprve si nadefinujeme mřížku a pomocí [`grid-template-areas`](css-grid-template-areas.md) pojmenujeme některé z jejích oblastí:
 
 ```css
 .container {
@@ -79,7 +79,7 @@ Automaticky umísťuj do další buňky mřížky:
 }
 ```
 
-Umísti do řádku 2 a sloupce 4, jen do jedné buňky:
+Umísti oblast do řádku 2 a sloupce 4:
 
 ```css
 .item {
@@ -87,7 +87,7 @@ Umísti do řádku 2 a sloupce 4, jen do jedné buňky:
 }
 ```
 
-Umísti do třetího sloupce a roztáhni se do všech řádků (od prvního (`1`) do posledního `-1`):
+Umísti oblast do třetího sloupce a roztáhni se do všech řádků (od prvního (`1`) do posledního `-1`):
 
 ```css
 .item {
@@ -97,9 +97,9 @@ Umísti do třetího sloupce a roztáhni se do všech řádků (od prvního (`1`
 
 Na různé další možnosti hodnot, včetně demíček na CodePenu, se podívejte do příručky ke zkratkám [`grid-column` a `grid-row`](css-grid-row-column.md).
 
-## Přístupnost a pozor na změnu pořadí {#pristupnost}
+## Přístupnost: pozor na změnu pořadí {#pristupnost}
 
-Pomocí vlastnosti `grid-area` můžete zcela odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to, dokument se může stát špatně použitelným při navigaci z klávesnice nebo pro odečítače obrazovky. 
+Pomocí vlastnosti `grid-area` můžete zcela odlišit pořadí prvků v kódu od vizuálního pořadí. Pozor na to, dokument se pak může špatně používat při navigaci z klávesnice nebo při práci přes odečítač obrazovky.
 
 <div class="web-only" markdown="1">
 

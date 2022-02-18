@@ -29,7 +29,7 @@ Takže by to mělo být ke zvážení, jen pokud obrázky generujete v reálném
 
 ## Podpora v prohlížečích: Partička kolem Chrome a Edge {#podpora}
 
-Jde o formát z dílny Google, i proto jej podporují všechny prohlížeče postavené na jádru Chrome – například Microsoft Edge, Opera nebo prohlížeč od Seznam.cz – a Firefox. Nově také Safari. Pokud to od oka dobře počítám, může jít ke dni psaní textu v Česku mezi 90 - 98 % uživatelů.
+Jde o formát z dílny Google, i proto jej podporují všechny prohlížeče postavené na jádru Chromu – například Microsoft Edge, Opera nebo prohlížeč od Seznam.cz – a Firefox. Nově také Safari. Pokud to od oka dobře počítám, může jít ke dni psaní textu v Česku mezi 90 - 98 % uživatelů.
 
 - Podporují: Chrome a prohlížeče postavené na Chromiu, Firefox, [Safari od verze 14](https://developer.apple.com/documentation/safari-release-notes/safari-14-beta-release-notes#Media).
 - Nepodporují a podporovat nebudou: Internet Explorer všech verzí.

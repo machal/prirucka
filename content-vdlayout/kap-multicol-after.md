@@ -17,17 +17,17 @@ c) tento zápis neudělá nic, umí jej jen Internet Explorer
 1. **Jak definovat šířku mezery mezi sloupci?**  
 a) jen vlastností `gap`  
 b) jen vlastností `column-gap`  
-c) vlastností `gap` (kromě MSIE a Safari), nebo vlastností `column-gap`
+c) vlastností `gap` (kromě MSIE a Safari), anebo vlastností `column-gap`
 1. **Co dělá zápis `column-fill:balance`?**  
 a) rozdělí obsah do sloupečků, aby měly co nejpodobnější výšku  
 b) rozdělí obsah vždy do co nejvíce sloupečků  
-c) vypíše obsah, tak, aby byl politicky co nejkorektnější
+c) vypíše obsah tak, aby byl politicky co nejkorektnější
 1. **Jak zajistit, aby se prvek nerozdělil do více sloupečků?**  
 a) teoreticky `break-inside:avoid`, ale nepodporují to prohlížeče  
 b) teoreticky `break-inside:auto`, ale nepodporují to prohlížeče  
 c) teoreticky ani prakticky to prostě nejde
 1. **Co zajistí `column-span:all`?**  
-a) chyták, toto neexistuje  
+a) pozor, chyták, toto neexistuje  
 b) všechny prvky layoutu se budou vykreslovat jako `<span>`  
 c) prvek překlene celou šířku vícesloupcového layoutu
 
@@ -42,7 +42,7 @@ a) `column-width:300px`
 1. **Co dělá zápis `columns:3`?**  
 a) pokusí se zalomit obsah do tří sloupců  
 1. **Jak definovat šířku mezery mezi sloupci?**  
-c) vlastností `gap` (kromě MSIE a Safari), nebo vlastností `column-gap`
+c) vlastností `gap` (kromě MSIE a Safari), anebo vlastností `column-gap`
 1. **Co dělá zápis `column-fill:balance`?**  
 a) rozdělí obsah do sloupečků, aby měly co nejpodobnější výšku  
 1. **Jak zajistit, aby se prvek nerozdělil do více sloupečků?**  
