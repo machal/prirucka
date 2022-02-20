@@ -2,6 +2,8 @@
 
 Vlastnost `grid-template-areas` slouží k pojmenovávání obdélníkových oblastí definovaných CSS gridem.
 
+<span class="book-index" data-book-index="grid-template-areas"></span>
+
 <div class="connected" markdown="1">
 
 ![Vlastnost grid-template-areas](../dist/images/medium/vdlayout/schema-css-grid-template-areas.jpg)
@@ -65,6 +67,8 @@ Následuje pár poznámek k vlastnosti `grid-template-areas`, které mě zaujaly
 
 ## Definování mřížky oblastmi {#definovani-gridu}
 
+<span class="book-index" data-book-index="Oblast mřížky"></span>
+
 Pojmenovanými oblastmi je možné definovat i samotný grid. V některých případech tedy nemusíte potřebovat vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md).
 
 Tento kód vytvoří stejnou mřížku jako ve výše uvedeném příkladu:
@@ -82,6 +86,8 @@ Tento kód vytvoří stejnou mřížku jako ve výše uvedeném příkladu:
 CodePen: [cdpn.io/e/ymJXaX](https://codepen.io/machal/pen/ymJXaX?editors=1100)
 
 ## Implicitně vytvořené oblasti a linky {#implicitne}
+
+<span class="book-index" data-book-index="Implicitní mřížka"></span>
 
 Pojmenované oblasti souvisí s pojmenovanými linkami, které znáte z vlastnosti [`grid-template-rows`/`-columns`](css-grid-template-rows-columns.md).
 
@@ -141,6 +147,8 @@ Oblasti gridu samozřejmě není nutné definovat pokaždé. Hodit se ale budou 
 Vlastnost `grid-template-areas` je ale užitečná ještě ve dvou směrech. Za prvé zlidšťuje zápis layoutu. Je totiž lepší mluvit o oblasti `heading` než o „oblasti mezi první a osmou buňkou prvního řádku gridu“. Za druhé umožňuje pěkné kejkle s Media Queries.
 
 ## Využití Media Queries {#media-queries}
+
+<span class="book-index" data-book-index="Media Queries"></span>
 
 V dalším demíčku si pojďme ukázat věc, která se mi na `grid-template-areas` velmi líbí – kombinaci s Media Queries.
 

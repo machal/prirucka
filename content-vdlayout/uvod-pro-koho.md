@@ -22,7 +22,7 @@ Jedno ale doporučím všem – z každé kapitoly si poctivě přečtěte úvod
 
 ### CodePen: „Talk is cheap, show me the code“
 
-Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu CodePen.
+Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že ukázka je víc než tisíc slov. K tomuto účelu používám skvělý nástroj Chrise Coyiera a jeho týmu <span class="book-index" data-book-index="CodePen">CodePen</span>.
 
 Mně samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v téhle knize. Je jich na 170.
 
@@ -44,7 +44,7 @@ Takhle se naučíte nejvíc.
 
 ## Jak se v knížce stavím k podpoře v prohlížečích?
 
-Pokud v následujících řádcích píšu o moderních prohlížečích, mám skoro vždy na mysli tyto tři a jejich poslední verze:
+Pokud v následujících řádcích píšu o <span class="book-index" data-book-index="Prohlížeče, podpora">moderních prohlížečích</span>, mám skoro vždy na mysli tyto tři a jejich poslední verze:
 
 - Chrome od Googlu, což je nyní dominující prohlížeč na mobilech i desktopu.
 - Safari od Applu, které se drží hlavně díky uzavřenosti ekosystému, ale s implementací podpory některých modernějších layoutů nespěchá.
@@ -54,7 +54,7 @@ Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi 
 
 ### Internet Explorer, (téměř) mrtvý prohlížeč
 
-Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nový projekt a podporovat na něm prohlížeč Internet Explorer (MSIE) – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
+Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nový projekt a podporovat na něm prohlížeč <span class="book-index" data-book-index="Internet Explorer (MSIE)">Internet Explorer (MSIE)</span> – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
 
 Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech.
 
@@ -68,7 +68,7 @@ Během psaní knížky se objevila řada novinek, které ještě nemají plnou p
 
 Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad píšu o technologiích, které jsou sice cool, ale v praxi je použít nemůžete.
 
-Takové [Container Queries](containe-queries.md) sice mají zatím jen experimentální podporu v Chromu, ale mohutně se na nich pracuje, a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
+<span class="book-index" data-book-index="Container Queries">Takové</span> [Container Queries](container-queries.md) sice mají zatím jen experimentální podporu v Chromu, ale mohutně se na nich pracuje, a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
 
 Dále jsem neodolal například u [subgridu](css-subgrid.md), který má zatím implementaci jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
 
@@ -85,7 +85,7 @@ Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlíže�
 </figcaption>
 </figure>
 
-Doporučuji vám brát podporu v prohlížečích zmíněnou v knize jako orientační a doplnit ji ještě dalšími zdroji:
+Doporučuji vám brát podporu v prohlížečích zmíněnou v knize jako orientační a doplnit ji ještě dalšími <span class="book-index" data-book-index="CanIUse">zdroji</span>:
 
 1. Vždy se dívejte na aktuální stav podpory na webech [CanIUse.com](https://caniuse.com/) nebo MDN ([developer.mozilla.org](https://developer.mozilla.org/)).
 2. Testujte to. Buď v prohlížečích, které máte u sebe, nebo v cloudových službách, jako je [Browserstack.com](https://www.browserstack.com/) nebo [LambdaTest.com](https://www.lambdatest.com/).

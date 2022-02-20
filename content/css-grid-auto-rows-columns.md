@@ -2,6 +2,9 @@
 
 Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, čili výslovně nedefinovaného gridu v CSS.
 
+<span class="book-index" data-book-index="grid-auto-rows"></span>
+<span class="book-index" data-book-index="grid-auto-columns"></span>
+
 <div class="connected" markdown="1">
 
 ![Vlastnost grid-auto-rows a grid-auto-columns](../dist/images/medium/vdlayout/schema-css-grid-auto-rows-columns.jpg)
@@ -62,6 +65,9 @@ Hodnota `100px 200px` říká, že první a pak každý lichý nedefinovaný, a 
 
 ### Klíčová slova
 
+<span class="book-index" data-book-index="min-content"></span>
+<span class="book-index" data-book-index="max-content"></span>
+
 ```css
 grid-auto-columns: min-content;
 grid-auto-columns: max-content;
@@ -102,6 +108,8 @@ Pokud bychom chtěli střídat výšku `100px` a `200px` pro liché a sudé řá
 CodePen: [cdpn.io/e/PMGJpa](https://codepen.io/machal/pen/PMGJpa?editors=1100)
 
 ## Příklad: Umístění položky mimo explicitní grid {#priklad-umisteni}
+
+<span class="book-index" data-book-index="Implicitní mřížka"></span>
 
 Další možností, jak může explicitní grid vzniknout, je umístění položky zcela mimo definovanou mřížku. Řekněme, že ji definujeme jako 2 × 2:
 

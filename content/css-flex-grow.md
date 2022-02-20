@@ -14,6 +14,8 @@ Jak moc může položka růst relativně k dalším položkám, pokud je k dispo
 
 <div class="ebook-only" markdown="1">
 
+<span class="book-index" data-book-index="flex-grow"></span>
+
 → [vrdl.cz/p/css-flex-grow](https://www.vzhurudolu.cz/prirucka/css-flex-grow)
 
 </div>

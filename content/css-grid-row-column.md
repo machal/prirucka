@@ -2,6 +2,9 @@
 
 V textu se zaměříme na vlastnosti `grid-column` a `grid-row`, které slouží k umísťování položek v definované mřížce.
 
+<span class="book-index" data-book-index="grid-row"></span>
+<span class="book-index" data-book-index="grid-column"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnosti grid-column a grid-row](../dist/images/medium/vdlayout/schema-css-grid-row-column.jpg)
@@ -114,6 +117,8 @@ Výsledek však pochopitelně bude stejný.
 CodePen: [cdpn.io/e/GVWrOB](https://codepen.io/machal/pen/GVWrOB?editors=1100)
 
 ### Rozsah {#span}
+
+<span class="book-index" data-book-index="span (rozsah v mřížce)"></span>
 
 Klíčové slovo `span` slouží ke specifikování rozsahu, jaký v mřížce daná buňka zabírá.
 

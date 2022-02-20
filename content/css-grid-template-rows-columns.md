@@ -2,6 +2,9 @@
 
 Vlastnosti `grid-template-rows` a `grid-template-columns` slouží k nastavení explicitní (tedy námi výslovně definované) mřížky v CSS gridu.
 
+<span class="book-index" data-book-index="grid-template-rows"></span>
+<span class="book-index" data-book-index="grid-template-columns"></span>
+
 <div class="connected" markdown="1">
 
 ![Vlastnosti grid-template-rows a grid-template-columns](../dist/images/medium/vdlayout/schema-css-grid-template-rows-columns.jpg)
@@ -69,6 +72,8 @@ Poznámka k hodnotě `auto` v definici řádků: Grid sjednocuje výšky polože
 CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
 ### Co když je položek více, než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
+
+<span class="book-index" data-book-index="Explicitní grid"></span>
 
 Teď se stane ošklivá a zlá věc – zákeřný frontendový kodér do HTML přidá pátou položku:
 
@@ -138,6 +143,8 @@ Občas se ale může hodit použít ji i ve vlastním kódu, například když r
 
 ### Kombinace jednotek a jednotka fr {#jednotky}
 
+<span class="book-index" data-book-index="fr (jednotka)"></span>
+
 V gridu je možné pro definici řádků a sloupečků používat všechny možné [jednotky](jednotky.md), které už pro rozvržení v CSS používáte.
 
 Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *flex fraction* a dá se o ní mluvit jako o podílu na zbytku.
@@ -155,6 +162,8 @@ CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
 `1fr` je v chování velice podobné číslu `1`, které používáte ve [vlastnosti `flex`](css-flex.md) u flexboxu.
 
 ### Pojmenovávání linek {#pojmenovane}
+
+<span class="book-index" data-book-index="Pojmenované linky"></span>
 
 Pojmenovávání linek se může hodit pro použití ve vlastnostech, které definují umístění prvků v gridu, jako je [`grid-column`, `grid-row`](css-grid-row-column.md) nebo [`grid-area`](css-grid-area.md).
 
@@ -178,6 +187,8 @@ CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
 
 ### Opakování {#opakovani}
 
+<span class="book-index" data-book-index="repeat()"></span>
+
 U složitějších mřížek by bylo nepříjemné zapisovat řadu stejných hodnot do řádky. Vezměme například dvanáctisloupcovou mřížku:
 
 ```css
@@ -199,6 +210,8 @@ Proto je tady [funkce `repeat()`](css-repeat.md), která opakování zamezuje:
 Zápisem `repeat(6, 1fr)` říkáme: „Napiš šestkrát po sobě hodnotu `1fr`.“
 
 ## Masonry, zděné rozvržení {#masonry}
+
+<span class="book-index" data-book-index="Masonry"></span>
 
 Hodnota `masonry` je speciální, protože by v budoucnu měla zařídit nativní [masonry (nebo zděný) layout](css-masonry.md).
 

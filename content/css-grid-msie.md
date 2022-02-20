@@ -1,5 +1,7 @@
 # CSS grid v Internet Exploreru
 
+<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
+
 „Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z 10 důvodů, proč lidé ještě v roce 2022 CSS grid nepoužívají.
 
 V realitě to ale zase tak moc velký problém není, protože u většiny projektů už nejspíš [není MSIE nutné používat](msie.md). Je-li toto i váš případ, tuto podkapitolu račte vynechat.
@@ -19,6 +21,8 @@ YouTube: [youtu.be/JjmXOB01Yq0](https://www.youtube.com/watch?v=JjmXOB01Yq0)
 Pojďme tedy dát kombinaci gridu s MSIE novou šanci.
 
 ## Které vlastnosti gridu Internet Explorer podporuje? {#podpora}
+
+<span class="book-index" data-book-index="Internet Explorer v gridu"></span>
 
 Jisté rozdíly mezi MSIE a moderními prohlížeči zde jsou. Z těch důležitých například uveďme, že Internet Explorer nativně neumí následující:
 
@@ -73,7 +77,9 @@ Než se k tomu dostaneme, musím zmínit jednu nevýhodu.
 
 ### Proč layout zapisuji takhle složitě? Protože Autoprefixer
 
-Vy znalejší jste si jistě všimli, že pro takto jednoduchý layout je zbytečné definovat šablonu pojmenování oblastí – `grid-template-areas`. 
+<span class="book-index" data-book-index="Autoprefixer"></span>
+
+Vy znalejší jste si jistě všimli, že pro takto jednoduchý layout je zbytečné definovat šablonu pojmenování oblastí – `grid-template-areas`.
 
 To je ale oběť na oltář podpory v Internet Exploreru, respektive vyžaduje to po nás Autoprefixer.
 
@@ -189,6 +195,8 @@ Automatické umísťování ale u jednodušších layoutů udělat jde, jak za 
 <!-- AdSnippet -->
 
 ## Au­to­ma­tic­ké umís­ťo­vá­ní do mříž­ky (autoplacement)
+
+<span class="book-index" data-book-index="Autoplacement"></span>
 
 *Autoplacement* je další důležitá vlastnost gridu, Explorer ji neumí, ale i tady vám může částečně pomoci Autoprefixer.
 

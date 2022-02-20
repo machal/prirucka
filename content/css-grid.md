@@ -1,5 +1,7 @@
 # CSS grid
 
+<span class="book-index" data-book-index="Grid"></span>
+
 CSS grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
 
 Síla gridu je kromě jiného v tom, že jej můžeme definovat jako mřížku definovat v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css-flexbox.md) tedy může být vhodnější pro celostránkové a komplexnější layouty.

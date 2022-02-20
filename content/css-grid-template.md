@@ -2,6 +2,8 @@
 
 Vlastnost `grid-template` slouží k definování mřížky v CSS gridu.
 
+<span class="book-index" data-book-index="grid-template"></span>
+
 Jde o zkratku pro vlastnosti [`grid-template-rows`, `grid-template-columns`](css-grid-template-rows-columns.md) a také [`grid-template-areas`](css-grid-template-areas.md).
 
 <div class="connected" markdown="1">

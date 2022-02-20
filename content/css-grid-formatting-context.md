@@ -1,5 +1,7 @@
 # Formátovací kontext CSS gridu
 
+<span class="book-index" data-book-index="Formátovací kontext gridu"></span>
+
 Formátovací kontext (grid formatting context) je další teoretická znalost o mřížce, která se nám může velmi hodit.
 
 Každá hodnota [vlastnosti `display`](css-display.md) totiž zapíná nový způsob zacházení s potomky prvku a může měnit vztahy prvku a jeho okolí.
@@ -35,6 +37,8 @@ CodePen: [cdpn.io/e/GRobVpz](https://codepen.io/machal/pen/GRobVpz?editors=1100)
 
 ## Floaty nechte plavat
 
+<span class="book-index" data-book-index="Float"></span>
+
 S plovoucími prvky v gridu neuspějete. Pro formátovací kontext mřížky platí, že:
 
 - Vlastnosti `float` a `clear` nemají žádný efekt na položky mřížky. (Radši si ani nepředstavuji, co by vývojáři dělali, kdyby tomu tak nebylo.)
@@ -43,6 +47,8 @@ S plovoucími prvky v gridu neuspějete. Pro formátovací kontext mřížky pla
 Brrr! Raději pojďme od „floatů“ pryč. Začalo se mi dělat nevolno…
 
 ## Vlastnost `vertical-align` nemá na položky mřížky žádný efekt
+
+<span class="book-index" data-book-index="vertical-align"></span>
 
 `vertical-align` slouží ke svislému zarovnání textového obsahu. Pro zarovnání v mřížce zde máme jiné úžasné vlastnosti, o kterých bude ještě řeč – [CSS Box Alignment](css-box-alignment.md).
 

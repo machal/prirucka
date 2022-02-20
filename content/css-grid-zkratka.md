@@ -2,6 +2,8 @@
 
 `grid` je zkratka pro definování všech vlastností CSS gridu.
 
+<span class="book-index" data-book-index="grid (zkratka)"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost grid](../dist/images/medium/vdlayout/schema-css-grid-zkratka.jpg)

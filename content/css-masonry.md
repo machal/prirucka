@@ -2,6 +2,8 @@
 
 Rozvržení typu masonry je ve webdesignu stejně populární jako zednická lžíce mezi zedníky.
 
+<span class="book-index" data-book-index="Masonry"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS masonry](../dist/images/medium/vdlayout/schema-css-masonry.jpg)
@@ -117,6 +119,8 @@ Vzhledem k tomu, že jsme v systému rozvržení pomocí CSS gridu, můžeme pou
 
 ### `masonry-auto-flow`, kontrola toku položek {#dalsi-grid-flow}
 
+<span class="book-index" data-book-index="masonry-auto-flow"></span>
+
 Tato vlastnost ještě není naprogramovaná ani ve Firefox Nightly, ale je podobná existující [`grid-auto-flow`](css-grid-auto-flow.md). Prostě ovlivňuje, v jakém pořadí se budou položky do zděného rozvržení sázet.
 
 - Ve výchozím stavu vloží prohlížeč položku do sloupce s největším prostorem.
@@ -124,6 +128,9 @@ Tato vlastnost ještě není naprogramovaná ani ve Firefox Nightly, ale je podo
 - Hodnota `ordered` – layout bude vždy v pořadí, v jakém jsou položky v dokumentu, pokud není řečeno jinak pomocí [vlastnosti `order`](css-order.md).
 
 ### Zarovnání pomocí `justify-tracks` a `align-tracks` {#dalsi-grid-zarovnani}
+
+<span class="book-index" data-book-index="justify-tracks"></span>
+<span class="book-index" data-book-index="align-tracks"></span>
 
 V layoutu typu masonry potřebujeme i dvě nové zarovnávací vlastnosti.
 

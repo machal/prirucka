@@ -2,6 +2,9 @@
 
 Funkce (nebo přesněji řečeno „zápis“) `repeat()` slouží k usnadnění opakujících se předpisů pro sloupce nebo řádky mřížky v CSS gridu.
 
+<span class="book-index" data-book-index="repeat()"></span>
+<span class="book-index" data-book-index="Opakování v gridu"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS funkce repeat](../dist/images/medium/vdlayout/schema-css-repeat.jpg)
@@ -57,6 +60,9 @@ Tady vstupují do hry zajímavá klíčová slova `auto-fill` a `auto-fit`.
 ## Automatické opakování s auto-fill a auto-fit {#auto-fill-fit}
 
 Použití zápisu `repeat()` v kombinaci s klíčovými slovy `auto-fill` a `auto-fit` se velmi hodí, pokud neznáte počet položek. Následující obrázek snad napoví, čím se liší.
+
+<span class="book-index" data-book-index="auto-fill"></span>
+<span class="book-index" data-book-index="auto-fit"></span>
 
 <figure>
 <img src="../dist/images/original/auto-fill-fit.jpg" alt="">

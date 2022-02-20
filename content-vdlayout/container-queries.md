@@ -2,7 +2,7 @@
 
 Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, která současný layout v CSS a vlastně celý webdesign limitují v rozletu.
 
-To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
+To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout <span class="book-index" data-book-index="Container Queries">Container Queries</span>.
 
 <figure>
 <img src="../dist/images/original/vdlayout/media-vs-containder.jpg" alt="">

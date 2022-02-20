@@ -1,6 +1,6 @@
 # Vlastnost CSS display
 
-Vlastnost `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
+<span class="book-index" data-book-index="Display">Vlastnost</span> `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
 
 <div class="ebook-only" markdown="1">
 

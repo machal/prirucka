@@ -2,6 +2,8 @@
 
 Vlastnost `grid-auto-flow` určuje, jak bude fungovat algoritmus automatického umísťování prvků do mřížky.
 
+<span class="book-index" data-book-index="grid-auto-flow"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost grid-auto-flow](../dist/images/medium/vdlayout/schema-css-grid-auto-flow.jpg)
@@ -40,6 +42,8 @@ Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vy
 Co teď? Vzhůru do ukázek!
 
 ## Příklad: změna směru vykreslování pomocí grid-auto-flow: column {#priklad-column}
+
+<span class="book-index" data-book-index="Směr vykreslování mřížky"></span>
 
 Tohle je jednoduché, prostě se jen změní směr vykreslování z řádků na sloupečky.
 
@@ -87,6 +91,8 @@ V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`gri
 
 ## Příklad: zahuštěné vykreslování pomocí grid-auto-flow:dense {#priklad-dense}
 
+<span class="book-index" data-book-index="Zahuštěné vykreslování mřížky"></span>
+
 Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstávaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu.
 
 <!-- AdSnippet -->
@@ -132,6 +138,9 @@ Vysvětlíme:
 CodePen: [cdpn.io/e/VoKroo](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
 ## Přístupnost: pozor na změnu pořadí {#pristupnost}
+
+<span class="book-index" data-book-index="Pořadí vykreslování"></span>
+<span class="book-index" data-book-index="Přístupnost"></span>
 
 Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí.
 

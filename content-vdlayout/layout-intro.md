@@ -23,9 +23,9 @@ Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektu
 
 Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něco říct:
 
-- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi. (Specifikace o flexboxu mluví jako o „CSS Flexible Box Layout“ a já pak více ve čtvrté kapitole.)
-- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více. (Gridu se ve specifikaci říká „CSS Grid Layout“, píšu o něm v páté kapitole.)
-- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu rádi. (Plný název podle specifikace je „CSS Multi-column Layout“ a můj detailní rozbor je v šesté kapitole.)
+- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi. (Specifikace o flexboxu mluví jako o <span class="book-index" data-book-index="Flexbox">„CSS Flexible Box Layout“</span> a já pak více ve čtvrté kapitole.)
+- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více. (Gridu se ve specifikaci říká <span class="book-index" data-book-index="Grid">„CSS Grid Layout“</span>, píšu o něm v páté kapitole.)
+- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu rádi. (Plný název podle specifikace je <span class="book-index" data-book-index="Multicol">„CSS Multi-column Layout“</span> a můj detailní rozbor je v šesté kapitole.)
 
 Tak a teď máte nové kamarády, gratuluji vám.
 
@@ -39,7 +39,7 @@ Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (o
 
 Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct Box Align.
 
-„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md).
+<span class="book-index" data-book-index="Box Alignment">„CSS Box Alignment“</span>, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md).
 
 Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je `justify-items` nebo `align-self`, se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí.
 
@@ -62,7 +62,7 @@ Začneme tím nejpopulárnějším parťákem.
 
 ## Flexbox: příklad s obrázkem a textem
 
-Cílem je dosáhnout rozvržení, kde na jedné straně je obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
+<span class="book-index" data-book-index="Flexbox">Cílem</span> je dosáhnout rozvržení, kde na jedné straně je obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
 
 Začneme asi s HTML, což?
 
@@ -91,7 +91,7 @@ Už jen tímto zápisem dosáhneme toho, aby se potomci (prvky `figure-image` a 
 
 <div class="ebook-only" markdown="1">
 
-Pokud je tu někdo, kdo by potřeboval vysvětlit vlastnost `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde se jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná flexboxový layout.
+Pokud je tu někdo, kdo by potřeboval vysvětlit `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde se jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná flexboxový layout.
 
 </div>
 
@@ -137,7 +137,7 @@ CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
 ## Grid: příklad s kartou produktu
 
-V obrázku se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2 : 1. Mezery mezi prvky jsou opět v šířce `1rem`.
+<span class="book-index" data-book-index="Flexbox">Grid</span> se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2 : 1. Mezery mezi prvky jsou opět v šířce `1rem`.
 
 Ano, i toto rozlišení bychom mohli udělat flexboxem, respektive dvěma flexboxy. Jenže by to nebylo tak elegantní jako řešení s pomocí gridu.
 

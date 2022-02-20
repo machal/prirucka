@@ -14,6 +14,8 @@ Vlastnost `flex-flow` určuje směr a způsob zalamování položek flexboxu.
 
 <div class="ebook-only" markdown="1">
 
+<span class="book-index" data-book-index="flex-flow"></div>
+
 → [vrdl.cz/p/css-flex-flow](https://www.vzhurudolu.cz/prirucka/css-flex-flow)
 
 </div>

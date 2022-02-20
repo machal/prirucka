@@ -1,6 +1,6 @@
 # Vícesloupcové rozvržení: příručka pro vlastnosti CSS Multi-column Layout
 
-Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-column Layout můžeme obsah stránky vysázet do více sloupců definované šířky podobně jako v novinové sazbě.
+Díky vlastnosti `column` a dalším definovaným v sadě modulu <span class="book-index" data-book-index="Multicol">CSS Multi-column Layout</span> můžeme obsah stránky vysázet do více sloupců definované šířky podobně jako v novinové sazbě.
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)

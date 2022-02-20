@@ -1,5 +1,8 @@
 # CSS grid: Explicitní a implicitní mřížka
 
+<span class="book-index" data-book-index="Explicitní mřížka"></span>
+<span class="book-index" data-book-index="Implicitní mřížka"></span>
+
 Kromě výslovně uvedené explicitní mřížky existuje v CSS gridu ještě implicitní mřížka.
 
 V naprosté většině případů definujeme explicitní mřížku, tedy _předem uvedenou_.
