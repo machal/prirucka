@@ -2,6 +2,8 @@
 
 Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik sloupců ve vícesloupcovém rozvržení.
 
+<span class="book-index" data-book-index="column-span"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost column-span](../dist/images/small/vdlayout/css-multicol-span-scheme.jpg)

@@ -2,6 +2,8 @@
 
 Vlastnost `align-items` definuje na kontejneru layoutu zarovnání položek na příčné ose (jinak též blokové ose).
 
+<span class="book-index" data-book-index="align-items"></span>
+
 <div class="connected" markdown="1">
 
 ![Vlastnost align-items](../dist/images/medium/vdlayout/css-align-items-schema.jpg)

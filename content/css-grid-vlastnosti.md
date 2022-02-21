@@ -64,6 +64,8 @@ Zde je ale samozřejmě potřeba zvážit možné negativní [vlivy na přístup
 
 ## 6) Automatické umístění položek do mřížky
 
+<span class="book-index" data-book-index="Autoplacement"></span>
+
 Díky vlastnosti známé jako „autoplacement“ není nutné položkám gridu definovat, do kterých buněk mřížky je chceme umístit.
 
 Pokud totiž není definováno jinak, každý uzel DOMu, který je přímým potomkem kontejneru mřížky, se umístí do jedné buňky.

@@ -1,7 +1,5 @@
 # Pojmy v CSS gridu
 
-<span class="book-index" data-book-index="Grid"></span>
-
 V gridu se to hemží pojmy, které si musíme vyjasnit. Jsou totiž důležité pro pochopení tohoto typu rozvržení a náchylné na záměnu, což nám může způsobit nejednu malou katastrofu.
 
 Vysvětlíme si to na příkladu. Vezměme, že máme toto HTML:
@@ -43,10 +41,11 @@ Na obrázku vidíme jeden kontejner a pět položek mřížky, čímž se dostá
 ## Kontejner mřížky (grid container) {#kontejner}
 
 <span class="book-index" data-book-index="Kontejner mřížky"></span>
+<span class="book-index" data-book-index="Formátovací kontext"></span>
 
 Kontejner vytvoříme z jakéhokoliv prvku v HTML prostým deklarováním [`display:grid` nebo `display:inline-grid`](css-display.md).
 
-Vznikne tím grid formatting context (formátovací kontext pro mřížku) a začnou platit trochu jiná pravidla než například pro block formatting context (blokový formátovací kontext), který by vznikl uvedením `display:block`.
+Vznikne tím [grid formatting context](css-grid-formatting-context.md) (formátovací kontext pro mřížku) a začnou platit trochu jiná pravidla než například pro block formatting context (blokový formátovací kontext), který by vznikl uvedením `display:block`.
 
 V našem příkladu jsme tedy kontejner mřížky udělali z prvku `.container`.
 
@@ -55,6 +54,7 @@ Jednou z vlastností formátovacího kontextu mřížky je, že každý z přím
 ## Položka mřížky (grid item) {#polozka}
 
 <span class="book-index" data-book-index="Položka mřížky"></span>
+<span class="book-index" data-book-index="Grid item"></span>
 
 Položkou mřížky v ukázce jsou všechny prvky `.item`.
 
@@ -64,7 +64,7 @@ Položku ale můžeme osvobodit tím, že i z ní uděláme kontejner (`display:
 
 ### Anonymní položky {#anonymni-polozka}
 
-<span class="book-index" data-book-index="Anonymní položka mřížky"></span>
+<span class="book-index" data-book-index="Anonymní položka"></span>
 
 Musíme si tady uvědomit, že položkou je každý uzel DOMu, který je přímým potomkem kontejneru mřížky.
 
@@ -163,6 +163,7 @@ Když už tedy víme, co je mřížka, a když už ji umíte vizualizovat, pojď
 ## Linka mřížky (grid line) {#linka}
 
 <span class="book-index" data-book-index="Linka mřížky"></span>
+<span class="book-index" data-book-index="Grid line"></span>
 
 Linka je základní prvek rozvržení mřížky. Jde o čáru, která mřížku dělí na řádky, sloupce a pak jednotlivé buňky.
 
@@ -187,6 +188,7 @@ Dostali jsme se díky tomu k dalšímu pojmu – sloupec mřížky. Než se si j
 ## Stopa mřížky (grid track) {#stopa}
 
 <span class="book-index" data-book-index="Stopa mřížky"></span>
+<span class="book-index" data-book-index="Grid track"></span>
 
 Stopa je prostor, který je definovaný dvěma linkami. Vede přitom od začátku mřížky k jejímu konci. Je to vidět na obrázku výše.
 
@@ -194,8 +196,9 @@ Jde jen o obecný název pro řádek (vodorovnou stopu) nebo sloupec (svislou st
 
 ## Řádek, sloupec mřížky (grid row, grid column) {#radek-sloupec}
 
-<span class="book-index" data-book-index="Řádek mřížky"></span>
 <span class="book-index" data-book-index="Sloupec mřížky"></span>
+<span class="book-index" data-book-index="Grid row"></span>
+<span class="book-index" data-book-index="Grid column"></span>
 
 Vodorovné a svislé stopy mřížky jsou označovány jako řádky a sloupce, přesně jako to už znáte z tabulek.
 
@@ -206,6 +209,7 @@ V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale o blokové os
 ## Buňka mřížky (grid cell) {#bunka}
 
 <span class="book-index" data-book-index="Buňka mřížky"></span>
+<span class="book-index" data-book-index="Grid cell"></span>
 
 Buňka je prostor vymezený čtyřmi linkami mřížky, který už není možné dále dělit dalšími linkami. Je to nejmenší prostorová jednotka mřížky, odpovídající buňce tabulky.
 
@@ -229,6 +233,7 @@ Abychom mohli buňku ovlivnit z CSS, musíme z ní udělat oblast.
 ## Oblast mřížky (grid area) {#oblast}
 
 <span class="book-index" data-book-index="Oblast mřížky"></span>
+<span class="book-index" data-book-index="Grid area"></span>
 
 Oblast je prostor vymezený čtyřmi linkami mřížky, který ale lze dále dělit dalšími linkami. Oblast se tedy skládá z jedné nebo více buněk mřížky.
 
@@ -250,7 +255,8 @@ CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 
 ## Mezery mezi buňkami (gap, gutter) {#gutter}
 
-<span class="book-index" data-book-index="Mezery v mřížce (gap, gutter)"></span>
+<span class="book-index" data-book-index="Mezera v layoutu"></span>
+<span class="book-index" data-book-index="Gap"></span>
 
 Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
 

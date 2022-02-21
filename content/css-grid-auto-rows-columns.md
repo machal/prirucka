@@ -109,8 +109,6 @@ CodePen: [cdpn.io/e/PMGJpa](https://codepen.io/machal/pen/PMGJpa?editors=1100)
 
 ## Příklad: Umístění položky mimo explicitní grid {#priklad-umisteni}
 
-<span class="book-index" data-book-index="Implicitní mřížka"></span>
-
 Další možností, jak může explicitní grid vzniknout, je umístění položky zcela mimo definovanou mřížku. Řekněme, že ji definujeme jako 2 × 2:
 
 ```css

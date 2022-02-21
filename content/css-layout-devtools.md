@@ -1,5 +1,8 @@
 # CSS layout a DevTools
 
+<span class="book-index" data-book-index="DevTools"></span>
+<span class="book-index" data-book-index="Prohlížeče"></span>
+
 Vsadím se, že už jen při listování touto knížkou jste si všimli, že rozvržení v CSS jsou sakra složitá věc.
 
 Máme ale štěstí, že autoři nástrojů pro vývojáře to vidí také a v „devtools“ všech dnešních prohlížečů je řada nadstaveb, které nám práci s gridem a flexboxem usnadní.

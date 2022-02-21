@@ -1,5 +1,7 @@
 # CSS layout (grid a flexbox) a rychlost vykreslení stránky
 
+<span class="book-index" data-book-index="Rychlost vykreslení"></span>
+
 V diskuzích pokročilejších vývojářek a vývojářů se občas objevuje téma „performance“ CSS gridu a flexboxu. Mají tím na mysli rychlost vykreslování.
 
 Když byly tyhle systémy pro rozvržení stránek a komponent nové, poměrně dost se to v komunitě řešilo. Ale je to téma ještě dneska? Neřekl bych.

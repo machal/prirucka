@@ -1,6 +1,8 @@
 # No Queries
 
-<span class="book-index" data-book-index="No Queries">Prošli</span> jsme dva typy podmínek, podle nichž můžete přizpůsobovat rozložení stránky nebo její části v různě širokých rodičovských prvcích.
+<span class="book-index" data-book-index="No Queries"></span>
+
+Prošli jsme dva typy podmínek, podle nichž můžete přizpůsobovat rozložení stránky nebo její části v různě širokých rodičovských prvcích.
 
 Media Queries mají širokou podporu v prohlížečích, ale lidé ve standardizační organizaci je navrhli tak, aby řešily spíše rozložení celé stránky. Cílí totiž na šířku okna prohlížeče.
 
@@ -229,6 +231,8 @@ Responzivní obrázková galerie je opět založena pouze na definici šířky s
 Tak či tak, obě řešení využívají CSS Multicol Layout pro situace, na které nebyl tento modul navržen a vymyšlen. Nejlepších výsledků dosáhnete, když v případě hrátek s `column` zůstanete u textového obsahu.
 
 ## No Queries mimo CSS layouty: Technika „The Fab Four“
+
+<span class="book-index" data-book-index="The Fab Four"></span>
 
 Není to úplně předmětem této knížky, ale ani tuto metodu nechci přejít mlčením. Jde o způsob, jak udělat rozvržení bez Media Queries, zcela mimo světy gridu, flexboxu a vícesloupcového layoutu.
 

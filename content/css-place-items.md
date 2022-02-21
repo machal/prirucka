@@ -2,6 +2,8 @@
 
 Vlastnost `place-items` definuje na kontejneru layoutu zarovnání položek na hlavní ose i příčné ose.
 
+<span class="book-index" data-book-index="place-items"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost place-items](../dist/images/medium/vdlayout/css-place-items-schema.jpg)

@@ -2,6 +2,9 @@
 
 Vlastnost `order` nastavuje pořadí položky v kontejneru rozvržení v CSS.
 
+<span class="book-index" data-book-index="order"></span>
+<span class="book-index" data-book-index="Pořadí v layoutu"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost order](../dist/images/medium/vdlayout/css-order-schema.jpg)
@@ -135,6 +138,8 @@ Jsou zde ale i další vědomosti, o kterých byste měli mít ponětí, než si
 3. Absolutně pozicované položky vždy dostanou nastavení `order:0`, takže drží pořadí vykreslení dle DOMu. Zájemcům nabízím CodePen. [cdnp.io/e/JjXxVJy](https://codepen.io/machal/pen/JjXxVJy?editors=1100)
 
 ## Ošemetná změna pořadí z pohledu přístupnosti {#pristupnost}
+
+<span class="book-index" data-book-index="Přístupnost"></span>
 
 Ve specifikaci se píše:
 

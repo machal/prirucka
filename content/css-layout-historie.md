@@ -1,5 +1,7 @@
 # Velmi stručná historie layoutů v CSS
 
+<span class="book-index" data-book-index="Historie"></span>
+
 Pokud se těšíte na psaní kódu, tuhle část můžete v klidu přeskočit. Ale věřte mi – pokud bych si myslel, že vás bude nudit, do knížky bych ji nedával.
 
 Historie rozvržení v CSS je totiž tak trochu historií CSS, a protože tu jsem napjatě sledoval úplně od začátku, vidím v následujícím příběhu pár zajímavých a vtipných momentů.
@@ -12,9 +14,13 @@ Možnosti stylování dokumentů jsou mizerné. Výborně to vyjadřuje mimo jin
 
 ## 1996: FRAME
 
+<span class="book-index" data-book-index="Frame"></span>
+
 Jako nedostatečné vnímají možnosti rozvržení v CSS už samotní zakladatelné kaskádových stylů, Bert Bos a Håkon Wium Lie, a proto přicházejí v tehdejší době s převratnými rámci. Prvek `<FRAME>` umožňuje rozdělit stránku na samostatné jednotky, které nejsou nic jiného než jen další stránky. První layoutová revoluce je tady.
 
 ## 1998: MULTICOL
+
+<span class="book-index" data-book-index="Multicol"></span>
 
 Andreessen se snaží implementovat layout do svého prohlížeče Netscape Navigator, a tak verze 3 přichází s tímto zápisem:
 
@@ -37,6 +43,8 @@ Ne. Opravdu o tom už nechci dále mluvit.
 V té době tenkrát stavím svůj první větší web – fanouškovské stránky kapely U2 na tehdy velmi známém serveru MusicHall. Jsem hrdý, že pro rozložení stránky nepoužívám `<frame>`, už zastaralou metodu. Kód mého webu je totiž stavěný na prvku `<table>`.
 
 ## 1998: TABLE
+
+<span class="book-index" data-book-index="Table"></span>
 
 Někdy v této době přišel bezejmenný webař na to, že když z tabulky odstraní rámečky, vznikne docela dobrá struktura, která může nést i složitější rozvržení stránek nebo jednotlivých komponent uvnitř. Někdy po roce 2000 začne komunitou kolovat následující vtip:
 
@@ -136,6 +144,8 @@ Tahle „nultá verze“ specifikace je založena na technologii XUL, kterou v t
 V témže roce vzniká „Candidate Recommendation“ pro vícesloupcový layout. Prohlížeče jej začínají implementovat.
 
 ## 2011: Microsoft implementuje grid
+
+<span class="book-index" data-book-index="Microsoft"></span>
 
 V Microsoftu se dějí věci. Plánují zaříznout Silverlight, zjednodušeně řečeno vlastní napodobeninu Flashe, a více šlápnout do webových technologií. Jde jim o využití HTML a CSS pro vlastní produkty, ale jejich vývojáři jsou nešťastní z nedostatku rozumného layoutování v CSS, oproti tomu, na co byli zvyklí v Silverlightu.
 

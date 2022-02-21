@@ -12,6 +12,11 @@ Podíváme se na pojmy jako „směr rozvržení“, „kontejner“ a „předm
 
 ### Směr rozvržení: bloková a řádková osa {#pojmy-osy}
 
+<span class="book-index" data-book-index="Bloková osa"></span>
+<span class="book-index" data-book-index="Inline osa"></span>
+<span class="book-index" data-book-index="Hlavní osa"></span>
+<span class="book-index" data-book-index="Příčná osa"></span>
+
 Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek, a tak naštěstí zarovnáváme na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
 
 <figure>
@@ -51,6 +56,9 @@ Ze stejného důvodu nemůžeme například říci, že zarovnáváme „vlevo n
 
 ### Předmět a kontejner {#pojmy-predmet-kontejner}
 
+<span class="book-index" data-book-index="Předmět zarovnání"></span>
+<span class="book-index" data-book-index="Kontejner zarovnání"></span>
+
 Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma pojmy:
 
 - *Předmět zarovnání* (alignment subject) je samotný boxík, který zarovnáváme. Zde mu občas budeme říkat také „položka“.
@@ -64,6 +72,9 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 </figure>
 
 ### Náhradní řešení zarovnání {#pojmy-fallback}
+
+<span class="book-index" data-book-index="Náhradní zarovnání"></span>
+<span class="book-index" data-book-index="Fallback alignment"></span>
 
 „Fallback alignment“, nebo také náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
 
@@ -80,6 +91,9 @@ Už víme, že vlastnosti [CSS Box Alignment](css-box-alignment.md) je možné d
 Druhý typ rozdělení vlastností pro zarovnávání se zaměřuje nikoliv na vlastnosti, ale jejich hodnoty – klíčová slova.
 
 ### Poziční zarovnání {#pozicni}
+
+<span class="book-index" data-book-index="Poziční zarovnání"></span>
+<span class="book-index" data-book-index="Positional Alignment"></span>
 
 Určí polohu položky vzhledem ke kontejneru. (Ve specifikaci je používán pojem „Positional Alignment“.)
 
@@ -166,6 +180,9 @@ CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
 ### Zarovnání na účaří {#ucari}
 
+<span class="book-index" data-book-index="Zarovnání na účaří"></span>
+<span class="book-index" data-book-index="Baseline Alignment"></span>
+
 Zarovnání na účaří určuje polohu účaří položky nebo skupiny položek tím, že nad ni nebo nad ně přidává vnější okraj.
 
 Zní to asi trochu zašmodrchaně, že? Ještě to chvíli vydržte, ono to není úplně neužitečné.
@@ -214,6 +231,9 @@ CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 
 ### Zarovnání zbylého prostoru {#zbyly-prostor}
 
+<span class="book-index" data-book-index="Zarovnání prostoru"></span>
+<span class="book-index" data-book-index="Distributed Alignment"></span>
+
 Určuje, co se stane s prostorem, který zbude mezi položkami na řádkové ose. (Ve specifikaci hledejte jako „Distributed Alignment“.)
 
 Týká se to jen vlastností pro nastavení distribuce obsahu, tedy volného místa uvnitř kontejneru – [`justify-content`](css-justify-content.md), [`align-content`](css-align-content.md) a [`place-content`](css-place-content.md).
@@ -253,6 +273,9 @@ CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
 ### Zarovnání pro přetečení (bez podpory prohlížečů) {#overflow}
 
+<span class="book-index" data-book-index="Zarovnání pro přetečení"></span>
+<span class="book-index" data-book-index="Overflow Alignment"></span>
+
 Jde o vlastnosti a hodnoty, které pomáhají definovat chování prohlížečů, když je předmět zarovnání větší než jeho kontejner.
 
 Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflow-position`, která má podle specifikace dvě možné hodnoty:
@@ -272,6 +295,9 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
 V době dokončování textu (únor 2022) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
 
 ### Definování mezer mezi položkami {#gap}
+
+<span class="book-index" data-book-index="gap"></span>
+<span class="book-index" data-book-index="Mezera v layoutu"></span>
 
 Vlastnosti a hodnoty umožňují nastavení konzistentní mezery mezi položkami v řádku nebo sloupci a hlavně uvnitř CSS gridu.
 

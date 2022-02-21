@@ -4,6 +4,10 @@ Uvnitř vícesloupcového layoutu můžete mít prvky, které si nepřejete zala
 
 Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – vlastně jakékoliv prvky, které mají potomky.
 
+<span class="book-index" data-book-index="break-before"></span>
+<span class="book-index" data-book-index="break-after"></span>
+<span class="book-index" data-book-index="break-inside"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnosti column-break, break-after](../dist/images/small/vdlayout/css-multicol-break-scheme.jpg)

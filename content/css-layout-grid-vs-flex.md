@@ -4,11 +4,16 @@ Nyní se zaměříme na jednotlivé systémy rozvržení a povíme si více o ro
 
 ## Multicolumn layout, expert na vícesloupcovou sazbu textu
 
+<span class="book-index" data-book-index="Multicol"></span>
+
 Tohle bude rychlé. Už totiž víte, že [multicol](css-multicolumn.md) je určený pro vícesloupcovou sazbu textu, nikoliv pro rozvržení rozhraní.
 
 Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobných, je možné jej omezeně využít pro tvorbu [„No Queries“ layoutů](no-queries.md), ale je dobré si uvědomit, že tím ohýbáme nástroj pro potřeby řešení.
 
 ## Grid vs. flexbox
+
+<span class="book-index" data-book-index="Grid"></span>
+<span class="book-index" data-book-index="Flexbox"></span>
 
 Tyto dva systémy rozvržení tvoří jádro knížky, a proto se jim budeme věnovat s patřičnou péčí.
 
@@ -18,7 +23,7 @@ Jsou mezi nimi však významné rozdíly. Podívejme se na ně.
 
 ## Jednorozměrný flexbox, vícerozměrný grid
 
-<span class="book-index" data-book-index="Grid">Grid</span> navrhli autoři pro dvourozměrné layouty – po svislé i vodorovné ose. <span class="book-index" data-book-index="Flexbox">Flexbox</span> se více hodí na rozvržení jednosměrná, ať už svislá nebo vodorovná.
+Grid navrhli autoři pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná, ať už svislá nebo vodorovná.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-vs-flexbox-flexbox.jpg" width="1600" height="900" alt="…">
@@ -67,7 +72,11 @@ Představa mřížky je zde zásadní. A úplně nejlepší je, když mřížku 
 
 ## Kompatibilita s Internet Explorerem je silná stránka flexboxu
 
-Flexbox ja takřka plně podporován prohlížeči <span class="book-index" data-book-index="Internet Explorer (MSIE)">Internet Explorer</span> verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z MSIE jedenácté verze. Pak je potřeba zvažovat, zda je možné grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát.
+<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
+<span class="book-index" data-book-index="Fallback"></span>
+<span class="book-index" data-book-index="Náhradní řešení"></span>
+
+Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z MSIE jedenácté verze. Pak je potřeba zvažovat, zda je možné grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát.
 
 Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. Více se tomu věnuji v osmé kapitole.
 

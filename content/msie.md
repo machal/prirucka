@@ -1,6 +1,8 @@
 # Internet Explorer (je už mrtvý?)
 
-Microsoft <span class="book-index" data-book-index="Internet Explorer (MSIE)">Internet Explorer (MSIE)</span> dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné tento starý prohlížeč od Microsoftu podporovat.
+Microsoft Internet Explorer (MSIE) dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné tento starý prohlížeč od Microsoftu podporovat.
+
+<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
 
 Pokud Internet Explorer stále ještě podporujete, myslím si, že byste od této praxe mohli začít upouštět. To je důvod, proč píšu tenhle text.
 

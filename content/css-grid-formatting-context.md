@@ -1,6 +1,6 @@
 # Formátovací kontext CSS gridu
 
-<span class="book-index" data-book-index="Formátovací kontext gridu"></span>
+<span class="book-index" data-book-index="Formátovací kontext"></span>
 
 Formátovací kontext (grid formatting context) je další teoretická znalost o mřížce, která se nám může velmi hodit.
 

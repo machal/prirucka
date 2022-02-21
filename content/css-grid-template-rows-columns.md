@@ -71,9 +71,9 @@ Poznámka k hodnotě `auto` v definici řádků: Grid sjednocuje výšky polože
 
 CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
-### Co když je položek více, než definuje grid? (Implicitní vs. explicitní grid) {#explicitni-implicitni}
+### Co když je položek více, než definuje grid? (Implicitní vs. explicitní mřížka) {#explicitni-implicitni}
 
-<span class="book-index" data-book-index="Explicitní grid"></span>
+<span class="book-index" data-book-index="Explicitní mřížka"></span>
 
 Teď se stane ošklivá a zlá věc – zákeřný frontendový kodér do HTML přidá pátou položku:
 

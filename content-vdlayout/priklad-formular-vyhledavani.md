@@ -160,7 +160,7 @@ Pojďme si ale položit otázku, zda by i zde nebylo vhodnější vyřešit úko
 
 Vysvětlivky:
 
-- `display:grid` nastaví formátovací kontext gridu a jen připomínám, že žádné rozvržení sám o sobě nevytvoří.
+- `display:grid` nastaví formátovací kontext gridu (více [v páté kapitole](css-grid-formatting-context.md)). že žádné rozvržení sám o sobě nevytvoří.
 - Zarovnávání na účaří pomocí `align-items:baseline` můžeme samozřejmě zapsat i do gridového layoutu, protože vlastnosti [CSS Box Alignment](css-box-alignment.md) jsou univerzální.
 
 ### Menší displeje

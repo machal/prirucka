@@ -2,6 +2,8 @@
 
 Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení do několika sloupečků tak, aby všechny zabíraly přibližně stejnou výšku.
 
+<span class="book-index" data-book-index="column-fill"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost column-fill](../dist/images/small/vdlayout/css-multicol-fill-scheme.jpg)

@@ -1,8 +1,12 @@
 # Vlastnost CSS display
 
-<span class="book-index" data-book-index="Display">Vlastnost</span> `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
+<span class="book-index" data-book-index="display"></span>
+
+Vlastnost `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
 
 <div class="ebook-only" markdown="1">
+
+<span class="book-index" data-book-index="Formátovací kontext"></span>
 
 Abyste totiž mohli začít vytvářet nějaký typ rozvržení v CSS, musíte většinou nejprve rodičovskému prvku nastavit určitý typ „formátovacícho kontextu“. K tomu právě obvykle slouží vlastnost `display`.
 
@@ -22,7 +26,7 @@ Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich 
 | `flex`, `inline-flex`     |  Vytvoří [flexboxové rozvržení](css-flexbox.md). Inlinová varianta nezalomí řádky před a po.  |
 | `grid`, `inline-grid`     |  Vytvoří [rozvržení do mřížky](css-grid.md). Inlinová varianta nezalomí řádky.  |
 | `table`, `inline-table`   |  Rozvržení do tabulky. Inlinová varianta opět tvoří tabulku v řádce.  |
-| `none`                    |  Nevykreslí prvek, ale ani jeho potomky.  |
+| `none`                    |  Nevykreslí prvek, ale ani jeho potomci.  |
 
 </div>
 

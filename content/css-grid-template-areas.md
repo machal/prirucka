@@ -148,8 +148,6 @@ Vlastnost `grid-template-areas` je ale užitečná ještě ve dvou směrech. Za 
 
 ## Využití Media Queries {#media-queries}
 
-<span class="book-index" data-book-index="Media Queries"></span>
-
 V dalším demíčku si pojďme ukázat věc, která se mi na `grid-template-areas` velmi líbí – kombinaci s Media Queries.
 
 Je to jednoduché – oblasti je prostě možné různě přehazovat v rámci definovaného gridu.

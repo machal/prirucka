@@ -2,6 +2,10 @@
 
 Pokud chcete pro rozvržení použít CSS Multi-column Layout, pak je nutné začít alespoň jednou z těchto vlastností.
 
+<span class="book-index" data-book-index="column-width"></span>
+<span class="book-index" data-book-index="column-count"></span>
+<span class="book-index" data-book-index="columns"></span>
+
 <div class="connected" markdown="1">
 
 ![column-width, column-count a columns](../dist/images/small/vdlayout/css-multicol-columns-scheme.jpg)

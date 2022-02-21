@@ -2,6 +2,8 @@
 
 Vlastnost `justify-items` definuje na kontejneru layoutu zarovnání položek na hlavní (jinak též řádkové) ose.
 
+<span class="book-index" data-book-index="justify-items"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost justify-items](../dist/images/medium/vdlayout/css-justify-items-schema.jpg)

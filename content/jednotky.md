@@ -1,5 +1,7 @@
 # Jednotky pro tvorbu webu (em, rem, %, px, vh, vw): Kde použít jakou?
 
+<span class="book-index" data-book-index="Jednotky"></span>
+
 Pojďme si tady shrnout všechny CSS jednotky použitelné v dnešním webdesignu. A na příkladu ukázat, k čemu se která hodí.
 
 Základními jednotkami pro mě jsou ty relativní k velikosti písma – `rem` a `em`.
@@ -39,7 +41,7 @@ Je ale možné, že si skoro všude vystačíte s `px`. K tomu se dostávám [na
 
 ## Základní velikost písma v dokumentu: %  {#velikost-pisma-html}
 
-Výchozí velikost písma je v drtivé většině prohlížečů `16px`. Existují ale méně významné prohlížeče, které velikost písma nastavují jinak. Prostě tak, aby se nám na konkrétním zařízení lépe četlo. 
+Výchozí velikost písma je v drtivé většině prohlížečů `16px`. Existují ale méně významné prohlížeče, které velikost písma nastavují jinak. Prostě tak, aby se nám na konkrétním zařízení lépe četlo.
 
 Například prohlížeč v Kindle 3 měl výchozí velikost písma `26px`, Opera Mini 7 zase `17px`. Můžeme sice sázet na to, že většina nejrozšířenějších prohlížečů výchozí velikost písma nemění, ale moje zkušenost velí, že je lepší to nedělat.
 

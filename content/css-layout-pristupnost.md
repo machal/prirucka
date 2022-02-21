@@ -1,5 +1,8 @@
 # Přístupnost a CSS layout: pozor na vizuální pořadí
 
+<span class="book-index" data-book-index="Přístupnost"></span>
+<span class="book-index" data-book-index="Pořadí v layoutu"></span>
+
 Přístupnost je důležitá disciplína, s jejíž pomocí mohou vývojáři vyjít vstříc různým skupinám lidí a jež se jen zdánlivě týká pouze hendikepovaných minorit, jako jsou zrakově postižení.
 
 Díky přístupnosti se zkrátka mohou různé skupiny lidí dostat k informacím na webu bez velkých překážek.

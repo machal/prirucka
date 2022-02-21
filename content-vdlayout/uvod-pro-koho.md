@@ -44,7 +44,14 @@ Takhle se naučíte nejvíc.
 
 ## Jak se v knížce stavím k podpoře v prohlížečích?
 
-Pokud v následujících řádcích píšu o <span class="book-index" data-book-index="Prohlížeče, podpora">moderních prohlížečích</span>, mám skoro vždy na mysli tyto tři a jejich poslední verze:
+<span class="book-index" data-book-index="Podpora v prohlížečích"></span>
+
+Pokud v následujících řádcích píšu o moderních prohlížečích, mám skoro vždy na mysli tyto tři a jejich poslední verze:
+
+<span class="book-index" data-book-index="Prohlížeče"></span>
+<span class="book-index" data-book-index="Chrome"></span>
+<span class="book-index" data-book-index="Safari"></span>
+<span class="book-index" data-book-index="Firefox"></span>
 
 - Chrome od Googlu, což je nyní dominující prohlížeč na mobilech i desktopu.
 - Safari od Applu, které se drží hlavně díky uzavřenosti ekosystému, ale s implementací podpory některých modernějších layoutů nespěchá.

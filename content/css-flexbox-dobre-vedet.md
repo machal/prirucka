@@ -2,7 +2,7 @@
 
 ## 1. `flex` je nová hodnota vlastnosti `display`
 
-Na tomto bodu není na první pohled nic nového. Vyplývá ale z toho, že na rodičovský kontejner ani jeho potomky nebudou mít účinek vlastnosti související s jinými zobrazovacími režimy [vlastnosti `display`](css-display.md) – `block`, `inline`, `inline-block` a dalšími. Typický příklad jsou vlastnosti `float`, `clear` nebo `vertical-align`.
+Na tomto bodu není na první pohled nic nového. Vyplývá ale z toho, že na rodičovský kontejner ani jeho potomci nebudou mít účinek vlastnosti související s jinými zobrazovacími režimy [vlastnosti `display`](css-display.md) – `block`, `inline`, `inline-block` a dalšími. Typický příklad jsou vlastnosti `float`, `clear` nebo `vertical-align`.
 
 ## 2. Položky flexboxu neslučují vnější okraje
 

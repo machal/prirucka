@@ -1,12 +1,15 @@
 # Podpora layoutů v prohlížečích
 
+<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
+<span class="book-index" data-book-index="Podpora v prohlížečích"></span>
+
 <div class="ebook-only" markdown="1">
 
-To, že se v e-booku o layoutech v CSS zabýváme starým <span class="book-index" data-book-index="Internet Explorer (MSIE)">Explorerem</span>, samozřejmě není jen tak. V této podkapitole se chceme zaměřit na problémy prohlížečů s podporou flexboxu, gridu a spol.
+To, že se v e-booku o layoutech v CSS zabýváme starým Explorerem, samozřejmě není jen tak. V této podkapitole se chceme zaměřit na problémy prohlížečů s podporou flexboxu, gridu a spol.
 
 Pokud Explorer na svých projektech nepodporujete, pak i tuto podkapitolu směle přeskočte. Explorer vám velmi zkomplikuje využití CSS gridu, všechny ostatní systémy layoutu tam ale jsou použitelné.
 
-Ty <span class="book-index" data-book-index="Prohlížeče, podpora">drobné chyby</span>, které se vztahují na moderní prohlížeče a mřížku, flexbox, vícesloupcový layout a zarovnání boxů, spíše nestojí za řeč a budu je dále rozebírat v kapitolách s příručkou k jednotlivým vlastnostem.
+Ty drobné chyby, které se vztahují na moderní prohlížeče a mřížku, flexbox, vícesloupcový layout a zarovnání boxů, spíše nestojí za řeč a budu je dále rozebírat v kapitolách s příručkou k jednotlivým vlastnostem.
 
 </div>
 
@@ -124,6 +127,8 @@ Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohr
 
 ### Zkuste vynechat flex-basis
 
+<span class="book-index" data-book-index="flex-basis"></span>
+
 Když jsem se vývojářů na Twitteru ptal na jejich mentální zkratky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
 
 > U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default), a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
@@ -205,6 +210,8 @@ Všechny ostatní chyby jsou, zdá se, opravené. Takže, když nebereme v úvah
 
 ## Vícesloupcové rozvržení, CSS Multiple Columns {#css-multicol}
 
+<span class="book-index" data-book-index="Multicol"></span>
+
 [Multicolumn layout](css-multicolumn.md) v CSS, takže sada specifikovaná kolem vlastnosti `column`, je na tom s podporou v prohlížečích poměrně dobře.
 
 Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních prohlížečích. Implementace v Exploreru je vlastně výborná.
@@ -240,6 +247,8 @@ O vícesloupcovém layoutu čtěte více v šesté kapitole.
 </div>
 
 ## A co zarovnávání, CSS Box Align? {#box-align}
+
+<span class="book-index" data-book-index="Zarovnání boxů"></span>
 
 Čtvrtou specifikací z party systémů rozvržení v CSS je [zarovnání boxů](css-box-alignment.md), které je nedílnou součástí navrhování layoutů v gridu a flexboxu.
 

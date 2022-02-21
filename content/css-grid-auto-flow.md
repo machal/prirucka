@@ -43,7 +43,7 @@ Co teď? Vzhůru do ukázek!
 
 ## Příklad: změna směru vykreslování pomocí grid-auto-flow: column {#priklad-column}
 
-<span class="book-index" data-book-index="Směr vykreslování mřížky"></span>
+<span class="book-index" data-book-index="Směr layoutu"></span>
 
 Tohle je jednoduché, prostě se jen změní směr vykreslování z řádků na sloupečky.
 
@@ -91,7 +91,7 @@ V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`gri
 
 ## Příklad: zahuštěné vykreslování pomocí grid-auto-flow:dense {#priklad-dense}
 
-<span class="book-index" data-book-index="Zahuštěné vykreslování mřížky"></span>
+<span class="book-index" data-book-index="Zahuštěné vykreslování"></span>
 
 Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstávaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu.
 

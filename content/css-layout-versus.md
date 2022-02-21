@@ -8,6 +8,10 @@ Pokud snad s „webděláním“ začínáte – a pojmy jako „tabulkový layo
 
 ## Layout versus „pseudolayout“
 
+<span class="book-index" data-book-index="Frame"></span>
+<span class="book-index" data-book-index="Table"></span>
+<span class="book-index" data-book-index="Float"></span>
+
 Za těch více než dvacet let, co dělám weby, mi bylo dopřáno realizovat rozvržení stránky i jejich komponent opravdu mnoha způsoby.
 
 Z dnešního pohledu zní až krutě, že ani jeden z nich pro layout určený nebyl, takže jsem s nimi vlastně bojoval zbytečně:
@@ -45,6 +49,8 @@ V druhé polovině první dekády 21. století (sic!) začaly vznikat nástroje,
 
 Vznik CSS frameworků podpořily problémy v kompatibilitě napříč prohlížeči, které vznikaly i při tvorbě na pohled jednoduchých rozvržení.
 
+<span class="book-index" data-book-index="CSS frameworky"></span>
+
 ### Raný webdesign: Jak to vlastně dělali sazeči knih a novin?
 
 Někdy mezi roky 2005 až 2010 si webaři začali ve velkém všímat typografických principů ze sazby knih, novin a časopisů.
@@ -67,6 +73,8 @@ V té době šlo o zjevení. Dodnes si dobře vybavuji radost z krásných typog
 Následovaly frameworky jako 960 grid System, YUI grids, YAML… a v roce 2011 představil Twitter dosud nejkomplexnější knihovnu pro tvorbu uživatelských rozhraní – Bootstrap.
 
 ### Éra Bootstrapu
+
+<span class="book-index" data-book-index="Bootstrap"></span>
 
 Bootstrap je skvělý. Kromě základních typografických principů a mřížky obsahuje také hotové komponenty pro tvorbu uživatelských rozhraní a dnes už i prostředky pro systematickou tvorbu komponent vlastních, například v podobě „utilit“.
 

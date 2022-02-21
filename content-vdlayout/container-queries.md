@@ -1,8 +1,10 @@
 # Container Queries
 
+<span class="book-index" data-book-index="Container Queries"></span>
+
 Z podkapitoly o Media Queries na nás vyskočila nepříjemná omezení, která současný layout v CSS a vlastně celý webdesign limitují v rozletu.
 
-To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout <span class="book-index" data-book-index="Container Queries">Container Queries</span>.
+To, co dotazy na média dělají pro celou stránku, my většinou potřebujeme pro její část, pro konkrétní komponentu. A právě to by nám mohly poskytnout Container Queries.
 
 <figure>
 <img src="../dist/images/original/vdlayout/media-vs-containder.jpg" alt="">
@@ -93,6 +95,8 @@ A teď už prakticky. Alespoň do budoucna. Doufejme.
 
 ## Naše komponenta v Container Queries
 
+<span class="book-index" data-book-index="Media Object"></span>
+
 Pojďme si to poskládat dohromady na konkrétním příkladu našeho „Media Objectu“:
 
 ```css
@@ -166,6 +170,9 @@ Možná to vypadá trochu složitě, ale zatím layout vysvětlovat nebudu. Poku
 CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
 ## Podpora v prohlížečích a náhradní řešení
+
+<span class="book-index" data-book-index="Fallback"></span>
+<span class="book-index" data-book-index="Náhradní řešení"></span>
 
 Jak jsem už psal, v lednu 2022 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chromu je zkušební a nedostupná běžným uživatelům.
 

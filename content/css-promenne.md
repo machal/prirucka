@@ -4,6 +4,10 @@ Nativní proměnné v CSS jsou fajn. Od proměnných v preprocesorech, které mo
 
 Pokud jde o moderní prohlížeče, můžeme říci, že CSS proměnné mají plnou podporu.
 
+<span class="book-index" data-book-index="Proměnné"></span>
+<span class="book-index" data-book-index="Autorské vlastnosti"></span>
+<span class="book-index" data-book-index="var()"></span>
+
 <div class="ebook-only" markdown="1">
 
 V knize proměnné zhusta používám v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic, nebo jen co by se za nehet vešlo, představuji je zde.
@@ -57,6 +61,8 @@ _Proměnné_ pak zpřístupňují hodnoty uložené ve volitelných vlastnostech
 Teoreticky byste tedy v příkladu výše mohli založit novou vlastnost (`--color: blue`), ale ve funkci `var()` ji nepoužít. Mohli byste například hodnotu vlastnosti chtít jen sdílet v HTML nebo JavaScriptu. Pak jistě chápete, že nemůžeme mluvit o CSS proměnné.
 
 ## Limity „autorských vlastností“ {#limity}
+
+<span class="book-index" data-book-index="env()"></span>
 
 Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme používat jako proměnné univerzální. Jejich použití je možné jen tam, kde vkládáte hodnoty standardních CSS vlastností. V Media Queries to například nehrozí:
 

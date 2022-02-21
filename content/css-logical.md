@@ -1,5 +1,7 @@
 # Logické vlastnosti a rozměry v CSS (Logical Properties and Values)
 
+<span class="book-index" data-book-index="Logické vlastnosti"></span>
+
 V CSS často pracujeme s rozměry v určitém směru. Občas se ale může stát, hlavně při práci s cizokrajnými jazyky, že typografii nebo layout potřebujeme sázet v jiných směrech než zleva doprava jako naši mateřštinu.
 
 Logické vlastnosti a rozměry (podle specifikace „CSS Logical Properties and Values“) vznikly jako alternativa k fyzickým vlastnostem a rozměrům.
@@ -82,6 +84,9 @@ CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 
 ## Směr blokový a řádkový {#smer}
 
+<span class="book-index" data-book-index="Bloková osa"></span>
+<span class="book-index" data-book-index="Řádková osa"></span>
+
 Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba uvědomit si, že vycházejí z obecné vlastnosti CSS – dvou směrů: blokového a řádkového.
 
 - _Řádková osa (inline)_ je směr sázení textu po řádcích.
@@ -94,6 +99,8 @@ Možná není úplně jasné, proč se nepoužívají hodnoty z reálného svět
 Pokud od CSS chceme, aby umělo pracovat s různými světovými jazyky, je nutné, aby se umělo vyjadřovat v obecných pojmech, nikoliv v pojmech, které reflektují například jen jazyky vycházející z latiny.
 
 ## Směr toku dokumentu versus směr layoutu {#smer-layoutu}
+
+<span class="book-index" data-book-index="Směr layoutu"></span>
 
 Pojmy jako řádková osa a bloková osa můžete znát z nových layoutových modulů, jako je [grid](css-grid.md). Směr toku dokumentu je ale něco jiného než směr layoutu.
 
@@ -158,6 +165,8 @@ V další části textu už následuje jen výčet nových logických vlastnost�
 Než je začnete používat, dobře si vše otestujte v různých prohlížečích.
 
 ### Box model {#vlastnosti-hodnoty-box}
+
+<span class="book-index" data-book-index="Box model"></span>
 
 Pro box model máme hezký obrázek s porovnáním fyzických a logických variant:
 

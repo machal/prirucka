@@ -2,6 +2,8 @@
 
 Vlastnost CSS `justify-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél hlavní (nebo řádkové) osy kontejneru layoutu.
 
+<span class="book-index" data-book-index="justify-content"></span>
+
 <div class="connected" markdown="1">
 
 ![CSS vlastnost justify-content](../dist/images/medium/vdlayout/css-justify-content-schema.jpg)

@@ -39,7 +39,10 @@ Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (o
 
 Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct Box Align.
 
-<span class="book-index" data-book-index="Box Alignment">„CSS Box Alignment“</span>, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md).
+<span class="book-index" data-book-index="Box Align"></span>
+<span class="book-index" data-book-index="Zarovnání boxů"></span>
+
+„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md).
 
 Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je `justify-items` nebo `align-self`, se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí.
 
@@ -62,7 +65,7 @@ Začneme tím nejpopulárnějším parťákem.
 
 ## Flexbox: příklad s obrázkem a textem
 
-<span class="book-index" data-book-index="Flexbox">Cílem</span> je dosáhnout rozvržení, kde na jedné straně je obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
+Cílem je dosáhnout rozvržení, kde na jedné straně je obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
 
 Začneme asi s HTML, což?
 
@@ -137,7 +140,7 @@ CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
 ## Grid: příklad s kartou produktu
 
-<span class="book-index" data-book-index="Flexbox">Grid</span> se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2 : 1. Mezery mezi prvky jsou opět v šířce `1rem`.
+Grid se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2 : 1. Mezery mezi prvky jsou opět v šířce `1rem`.
 
 Ano, i toto rozlišení bychom mohli udělat flexboxem, respektive dvěma flexboxy. Jenže by to nebylo tak elegantní jako řešení s pomocí gridu.
 
