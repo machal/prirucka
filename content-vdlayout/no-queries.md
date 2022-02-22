@@ -232,7 +232,7 @@ Tak či tak, obě řešení využívají CSS Multicol Layout pro situace, na kte
 
 ## No Queries mimo CSS layouty: Technika „The Fab Four“
 
-<span class="book-index" data-book-index="The Fab Four"></span>
+<span class="book-index" data-book-index="Fab Four"></span>
 
 Není to úplně předmětem této knížky, ale ani tuto metodu nechci přejít mlčením. Jde o způsob, jak udělat rozvržení bez Media Queries, zcela mimo světy gridu, flexboxu a vícesloupcového layoutu.
 

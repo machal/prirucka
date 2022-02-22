@@ -52,4 +52,4 @@ Zdroj všech zdrojů. Osobně čtu specifikace moc rád. Řekl bych, že jsou na
 - Flexbox: [w3.org/TR/css3-flexbox](http://www.w3.org/TR/css3-flexbox/)
 - Grid Layout: [w3.org/TR/css-grid](https://www.w3.org/TR/css-grid/)
 - Multi-column Layout: [w3.org/TR/css-multicol](https://www.w3.org/TR/css-multicol/)
-- Box Alignment: [w3.org/TR/css-align/](https://www.w3.org/TR/css-align/)
+- Box Alignment: [w3.org/TR/css-align](https://www.w3.org/TR/css-align/)

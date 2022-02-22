@@ -85,7 +85,7 @@ CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 ## Směr blokový a řádkový {#smer}
 
 <span class="book-index" data-book-index="Bloková osa"></span>
-<span class="book-index" data-book-index="Řádková osa"></span>
+<span class="book-index" data-book-index="Inline osa"></span>
 
 Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba uvědomit si, že vycházejí z obecné vlastnosti CSS – dvou směrů: blokového a řádkového.
 

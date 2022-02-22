@@ -22,8 +22,6 @@ Pojďme tedy dát kombinaci gridu s MSIE novou šanci.
 
 ## Které vlastnosti gridu Internet Explorer podporuje? {#podpora}
 
-<span class="book-index" data-book-index="Internet Explorer v gridu"></span>
-
 Jisté rozdíly mezi MSIE a moderními prohlížeči zde jsou. Z těch důležitých například uveďme, že Internet Explorer nativně neumí následující:
 
 - Automatické umísťování prvků do mřížky („autoplacement“).
