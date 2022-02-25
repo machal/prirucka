@@ -1,4 +1,15 @@
+<div id="kap-multicol-before" class="ebook-chapter-before" markdown="1"> 
+
 # Kapitola 6: Vícesloupcový layout
+
+<div class="ebook-chapter-before-image">
+  <div class="ebook-chapter-before-number">
+    06
+  </div>  
+  <div class="ebook-chapter-before-heading">
+    Vícesloupcový layout
+  </div>
+</div>
 
 Přemýšlel jsem nad nějakou paralelou, kterou bych popsal svůj pocit z CSS modulu, jenž se jmenuje Multi-column Layout. Zkusím to.
 
@@ -11,3 +22,11 @@ Jenže i on vyniká, i když to málokdo vidí. Zatímco tento nejstarší potom
 Pokud o vícesloupcovém layoutu nic nevíte, zkuste si projít kapitolu postupně tak, jak jsem ji připravil.
 
 V případě, že si myslíte, že už o tématu něco víte, zopakujte si kouzla se zkratkou [`column`](css-multicol-column.md) a mrkněte se také na vlastnosti [`column-fill`](css-multicol-fill.md) a [`column-span`](css-multicol-span.md), které mě svou užitečností a podporou příjemně překvapily.
+
+</div>
+
+
+
+
+
+

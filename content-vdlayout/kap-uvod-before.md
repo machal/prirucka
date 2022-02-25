@@ -7,7 +7,7 @@
     01
   </div>  
   <div class="ebook-chapter-before-heading">
-    Začínáme s layouty v CSS
+    Začínáme s layouty v CSS
   </div>
 </div>
 
@@ -16,4 +16,3 @@ V první kapitole se s jednotlivými typy layoutů nejprve seznámíme na jednod
 A teď už: Vzhůru do layoutů v CSS!
 
 </div>
-

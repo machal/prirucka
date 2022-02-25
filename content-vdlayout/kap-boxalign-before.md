@@ -1,4 +1,15 @@
+<div id="kap-boxalign-before" class="ebook-chapter-before" markdown="1"> 
+
 # Kapitola 7: Zarovnávání boxů (CSS Box Alignment)
+
+<div class="ebook-chapter-before-image">
+  <div class="ebook-chapter-before-number">
+    07
+  </div>  
+  <div class="ebook-chapter-before-heading">
+    Zarovnávání boxů (CSS Box Alignment)
+  </div>
+</div>
 
 Zarovnávání boxů je modul specifikace CSS, bez kterého se žádný layout neobejde.
 
@@ -11,3 +22,7 @@ Moc bych si přál, abyste i tuhle část poctivě přečetli, vyzkoušeli si Co
 Ale co si budeme nalhávat – jde o referenční příručku. I když jsem pro její čtivost vymýšlel různé kejkle, pořád je v ní spousta opakujících se a méně zábavných částí. Z principu to ani jinak být nemůže.
 
 Proces čtení a učení tedy opět nechám na vás. Pokud o zarovnávání boxů už něco víte, projděte pořádně alespoň vlastnosti[`gap`](css-gap.md) a [`order`](css-order.md) a zkuste si [závěrečný test](kap-boxalign-after.md).
+
+</div>
+
+

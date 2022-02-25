@@ -1,4 +1,15 @@
+<div id="kap-priklady-before" class="ebook-chapter-before" markdown="1"> 
+
 # Kapitola 3: Příklady použití
+
+<div class="ebook-chapter-before-image">
+  <div class="ebook-chapter-before-number">
+    03
+  </div>  
+  <div class="ebook-chapter-before-heading">
+    Příklady použití
+  </div>
+</div>
 
 Všechny cesty vedou do Říma. A všechny texty této knížky vedou do této kapitoly.
 
@@ -32,3 +43,8 @@ Jaké příklady spolu ve čtvrté kapitole nakódujeme?
 </div>
 
 Je dobré předem zmínit, že každý příklad obsahuje zadání i řešení. Pro potřeby učení CSS layoutu vám doporučím načerpat obsah první části, odložit knížku a zkusit si příklad nakódovat.
+
+</div>
+
+
+

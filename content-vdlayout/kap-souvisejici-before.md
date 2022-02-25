@@ -1,4 +1,15 @@
+<div id="kap-souvisejici-before" class="ebook-chapter-before" markdown="1"> 
+
 # Kapitola 9: Související nástroje a vlastnosti
+
+<div class="ebook-chapter-before-image">
+  <div class="ebook-chapter-before-number">
+    09
+  </div>  
+  <div class="ebook-chapter-before-heading">
+    Související nástroje a vlastnosti
+  </div>
+</div>
 
 Jsme skoro na konci a někteří možná úplně. Je docela dobře možné, že následující kapitolu už nebudete muset číst.
 

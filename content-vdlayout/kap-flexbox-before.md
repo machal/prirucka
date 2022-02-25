@@ -1,4 +1,15 @@
+<div id="kap-flexbox-before" class="ebook-chapter-before" markdown="1"> 
+
 # Kapitola 4: Flexbox
+
+<div class="ebook-chapter-before-image">
+  <div class="ebook-chapter-before-number">
+    04
+  </div>  
+  <div class="ebook-chapter-before-heading">
+    Flexbox
+  </div>
+</div>
 
 Další stránky jsou věnované referenčním příručkám různých CSS modulů pro tvorbu layoutu.
 
@@ -8,4 +19,6 @@ Pokud ale knížku čtete postupně, snažil jsem se i referenční příručky 
 
 Jestliže s flexboxem začínáte, zkuste si projít vše, ale zaměřte se hlavně na [vlastnost `flex`](css-flex.md).
 
-Zkušenějším zase neuškodí podrobnější zkoumání zákonitostí kolem [vlastnosti `flex-basis`](css-flex-basis.md), které disponují mnohými ošemetnostmi. 
+Zkušenějším zase neuškodí podrobnější zkoumání zákonitostí kolem [vlastnosti `flex-basis`](css-flex-basis.md), které disponují mnohými ošemetnostmi.
+
+</div>
