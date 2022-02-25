@@ -11,6 +11,6 @@
   </div>
 </div>
 
-V této kapitole opustíme refereční příručky a prohloubíme si znalosti souvislostí. Začneme u podpory v prohlížečích a přes přístupnost a rychlost se dostaneme k vývojářským nástrojům v prohlížečích, které nám mohou být velice nápomocny.
+V této kapitole opustíme refereční příručky a prohloubíme si znalosti souvislostí. Začneme u [podpory v prohlížečích](css-layout-bugy.md) a přes [přístupnost](css-layout-pristupnost.md) a [rychlost](css-layout-vykon.md) se dostaneme [k vývojářským nástrojům](css-layout-devtools.md) v prohlížečích, které nám mohou být velice nápomocny.
 
 </div>

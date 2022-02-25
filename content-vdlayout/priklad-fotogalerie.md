@@ -1,4 +1,4 @@
-# Fotogalerie bez Media Queries
+# Galerie bez Media Queries
 
 <span class="book-index" data-book-index="No Queries"></span>
 
