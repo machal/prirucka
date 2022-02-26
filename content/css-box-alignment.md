@@ -25,7 +25,12 @@ Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou h
 
 Naštěstí jsou ale ty nejdůležitější z nich pojmenované podle jednoduchého klíče.
 
-![Tahák k CSS Box Alignment](../dist/images/original/vdlayout/css-box-alignment-tahak.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-box-alignment-tahak.jpg" alt="Tahák k CSS Box Alignment">
+<figcaption markdown="1">
+Tahák k vlastnostem pro zarovnání boxů v CSS.
+</figcaption>
+</figure>
 
 Než vyberete tu správnou, musíte si ujasnit:
 
@@ -77,7 +82,7 @@ Následuje už stručná referenční příručka k jednotlivým vlastnostem a p
 
 </div>
 
-## Zarovnání položek (`*-items`) {#polozky}
+## Zarovnání položek (*-items) {#polozky}
 
 Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 
@@ -103,7 +108,7 @@ Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
 
 </div>
 
-## Zarovnání samostatné položky (`*-self`) {#sebe-sama}
+## Zarovnání samostatné položky (*-self) {#sebe-sama}
 
 Pro konkrétní položku definujeme, jak se bude zarovnávat.
 
@@ -127,7 +132,7 @@ Pro konkrétní položku definujeme, jak se bude zarovnávat.
 
 </div>
 
-## Distribuce prostoru mezi položkami (`*-content`) {#distribuce-prostoru}
+## Distribuce prostoru mezi položkami (*-content) {#distribuce-prostoru}
 
 Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejneru zůstává mezi položkami.
 
@@ -159,7 +164,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
 
 </div>
 
-## Změna pořadí (`*-content`) {#zmena-poradi}
+## Změna pořadí {#zmena-poradi}
 
 <div class="reference-items">
 

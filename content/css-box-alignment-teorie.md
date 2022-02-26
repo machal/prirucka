@@ -48,7 +48,7 @@ Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical proper
 <figure>
 <img src="../dist/images/original/vdlayout/css-box-alignment-direction.jpg" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
-*Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti `flex-direction`. Zdroj: [cdnp.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)*
+Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [cdnp.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)
 </figcaption>
 </figure>
 
@@ -174,7 +174,16 @@ Na nic nečekejme a vše vysvětleme:
 
 Pokud si to neumíte představit, podívejte se na živý CodePen, ale asi to nebude těžké.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-pozicni.jpg" width="1920" height="540" alt="Poziční zarovnání Box Align"></p>
+<div class="ebook-only" markdown="1">
+
+<figure>
+<img src="../dist/images/original/vdlayout/css-box-alignment-teorie-pozicni.jpg" width="1920" height="540" alt="Poziční zarovnání Box Align">
+<figcaption markdown="1">
+Poziční zarovnání s neposednou poslední položkou layoutu.
+</figcaption>
+</figure>
+
+</div>
 
 CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
@@ -223,9 +232,16 @@ Tentokrát ovšem přidáme tuto deklaraci:
 - Na rozdíl od první položky zarovnáme druhou a třetí na účaří (`align-self:baseline`).
 - Druhé položce přidáme vnitřní okraj (`padding-top:3em`), takže prohlížeči zkomplikujeme jeho snahu o zarovnání.
 
-Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku shora tak, aby druhá i třetí lícovala na účaří.
+<div class="ebook-only" markdown="1">
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-ucari.jpg" width="1920" height="540" alt="Box Align zarovnání na účaří"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-box-alignment-teorie-ucari.jpg" width="1920" height="540" alt="Box Align zarovnání na účaří">
+<figcaption markdown="1">
+Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje posunou třetí položku shora tak, aby druhá i třetí lícovala na účaří.
+</figcaption>
+</figure>
+
+</div>
 
 CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 
@@ -267,7 +283,12 @@ Jdeme na vysvětlování:
 - Tím, že jsme omezili šířku položky na `100px`, vznikne při roztažení rodiče (`.container`) volné místo.
 - Jak se s volným místem vedle položek naloží, určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-box-alignment-teorie-prostor.jpg" width="1920" height="540" alt="Box Align zarovnání - zbylý prostor"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-box-alignment-teorie-prostor.jpg" width="1920" height="540" alt="Box Align zarovnání - zbylý prostor">
+<figcaption markdown="1">
+Účinek zarovnání zbylého prostoru pomocí vlastnosti justify-content.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
@@ -288,7 +309,7 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
 <figure>
 <img src="../dist/images/original/vdlayout/overflow-position.jpg" width="1600" height="900" alt="Vlastnost overflow-position">
 <figcaption markdown="1">
-*V případě hodnoty `unsafe` se použije poziční zarovnání. Alespoň teoreticky.*
+V případě hodnoty unsafe se použije poziční zarovnání. Alespoň teoreticky.
 </figcaption>
 </figure>
 

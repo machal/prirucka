@@ -92,7 +92,7 @@ U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se v
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex.jpg" width="1600" height="900" alt="CSS vlastnost flex">
 <figcaption markdown="1">
-*Přednastavené hodnoty a jejich dopad na velikost položky. Zapište si je za uši, jsou hodně důležité.*
+*Přednastavené hodnoty vlastnosti flex a jejich dopad na velikost položky. Zapište si je za uši, jsou hodně důležité.*
 </figcaption>
 </figure>
 

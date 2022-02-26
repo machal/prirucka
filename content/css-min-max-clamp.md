@@ -24,7 +24,7 @@ Mají samozřejmě své místo i v této knize. Používám je například pro [
 
 Jak fungují?
 
-## Funkce `min()` a `max()` {#min-max}
+## Funkce min() a max() {#min-max}
 
 U funkcí `min()` a `max()` to je jednoduché – zadáte seznam argumentů a prohlížeč určí, která z hodnot je nejmenší nebo největší.
 
@@ -60,7 +60,7 @@ V tomto případě jde o obdobu zápisu `width:50%;  min-width:100px;`. V ukázc
 
 CodePen: [cdpn.io/e/gOmeoEj](https://codepen.io/machal/pen/gOmeoEj?editors=1100)
 
-## Funkce `clamp()` {#clamp}
+## Funkce clamp() {#clamp}
 
 Jeden z významů slova „clamp“ v angličtině je „svěrka“, což je vcelku přesné. První a poslední atribut v závorce totiž udává minimální a maximální sevření, prostřední je ideální hodnota:
 
@@ -70,7 +70,12 @@ Jeden z významů slova „clamp“ v angličtině je „svěrka“, což je vce
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-clamp.jpg" width="1600" height="900" alt="CSS funkce clamp()"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-clamp.jpg" width="1600" height="900" alt="CSS funkce clamp()">
+<figcaption markdown="1">
+Pitva funkce clamp().
+</figcaption>
+</figure>
 
 Vysvětlíme to ještě detailně:
 
@@ -84,7 +89,12 @@ CodePen: [cdpn.io/e/poeLazv](https://codepen.io/machal/pen/poeLazv?editors=1100)
 
 Následující ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizualizace, ve které je vidět aktuální šířka rodiče, elementu a pak také argument funkce `min()`, který je v dané šířce obrazovky aktivní.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-min-una.jpg" alt="CSS funkce clamp()"></p>
+<figure class="ebook-only">
+<img src="../dist/images/original/vdlayout/css-min-una.jpg" width="1600" height="900" alt="CSS funkce clamp()">
+<figcaption markdown="1">
+Funkce min() vybere prostě tu menší ze dvou hodnot. Zdroj: Una Kravets.
+</figcaption>
+</figure>
 
 Pokud si to budete zkoušet naživo, zkuste si hýbat se šířkou viewportu.
 
@@ -164,7 +174,7 @@ CodePen: [cdpn.io/e/ExyYXaN](https://codepen.io/una/pen/ExyYXaN)
 
 Čtenář Dan Srb mi po vydání tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
 
-> Pokud chcete například zajistit, aby se od pětisetpixelové šířky viewportu začalo písmo zvětšovat z `1rem` na `2rem` až k hranici šířky viewportu `900px`, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost `padding`.)
+> Pokud chcete například zajistit, aby se od pětisetpixelové šířky viewportu začalo písmo zvětšovat z 1rem na 2rem až k hranici šířky viewportu 900px, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost padding.)
 
 Dodejme ještě, že autorka původního CodePenu nás nabádá, abychom si při těchto hrátkách s velikostí písma dávali pozor na přístupnost.
 

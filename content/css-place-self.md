@@ -72,7 +72,12 @@ CSS:
 
 Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět efekt zarovnání.
 
-<p><img src="../dist/images/original/vdlayout/css-place-self-item3.jpg" width="1920" height="540" alt="place-self v gridu - v Chrome při zapnutém grid overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-place-self-item3.jpg" width="1920" height="540" alt="place-self v gridu - v Chrome při zapnutém grid overlay">
+<figcaption markdown="1">
+Hodnoty vlastnosti place-self. Poslední položka nám uskočila díky jinému nastavení, viz kód výše.
+</figcaption>
+</figure>
 
 Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně na buňky (`center`).
 

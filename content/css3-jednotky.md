@@ -66,7 +66,7 @@ Umožňují definovat rozměry v CSS relativně k velikosti viewportu, zjednodu�
 * `vmin` – zkratka pro „viewport minimum“ – reprezentuje menší hodnotu z porovnání `1vw` a `1vh`
 * `vmax` – zkratka pro „viewport maximum“ – reprezentuje větší hodnotu z porovnání `1vw` a `1vh`
 
-### První příklad: roztažení elementu na celou výšku okna pomocí `vh`
+### První příklad: roztažení elementu na celou výšku okna pomocí vh
 
 Na rozdíl od procent se jednotky viewportu nevztahují k rozměrům nejbližšího rodiče, ale k šířce a výšce okna prohlížeče. Lze s nimi tedy dělat kouzla, která dříve byla možná jen pomocí CSS hacků nebo Javascriptu.
 

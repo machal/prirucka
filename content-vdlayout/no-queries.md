@@ -12,7 +12,7 @@ V moderních systémech layoutu je ještě jedna možnost – zalamovat rozvrže
 
 Prostě od toho raději zase tak moc nečekejte. Ale jsou situace, kdy vám No Queries (zkusme jim alternativně říkat také „bezdotazová rozvržení“) v praxi velmi pomohou, takže pojďme na to. Ve většině příkladů budeme zalamováním layoutu opět trápit náš mediální objekt.
 
-## Flexbox a `min-width` s `max-width`
+## Flexbox a min-width s max-width
 
 Nejprve si alespoň zjednodušeně připomeňme strukturu HTML, která drží naši komponentu:
 
@@ -32,7 +32,7 @@ Nejprve si alespoň zjednodušeně připomeňme strukturu HTML, která drží na
 
 Na těchto základech budeme stavět. Provedení bezdotazového rozvržení s pomocí flexboxu nám dovolí jedna nenápadná vlastnost.
 
-### Kouzelný `flex-wrap`
+### Kouzelný flex-wrap
 
 [Vlastnost `flex-wrap`](css-flex-wrap.md) definuje, zda je možné v layoutu stavěném flexboxem položky zalamovat do dalšího řádku (nebo sloupce, pokud má rozvržení opačný směr).
 
@@ -63,7 +63,7 @@ Rozvržení pak vypadá jako na obrázku.
 <figure>
 <img src="../dist/images/original/vdlayout/no-queries-flex-wrap.jpg" width="1600" height="900" alt="">
 <figcaption markdown="1">
-Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku okna 320, 380 a 900 pixelů.
+Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku okna 320, 380 a 900 pixelů.
 </figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ Minimální šířka obrázku nám zde jeden problém vyřeší a druhý vyrobí
 
 Na screenshotech výše je vidět moment, kdy už jsme došli k maximu šířky obrázku, ale ještě se nám vedle nevejde text. Minimální šířka textu je totiž určena délkou nejdelšího slova.
 
-### Alternativa bez `min-width` a `max-width`
+### Alternativa bez min-width a max-width
 
 Zkusme to místo věčného komplikování spíše zjednodušit. Řešení využívající flexbox je možné ořezat na kost a nepoužít přitom minimální a maximální šířku:
 

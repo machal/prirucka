@@ -17,7 +17,7 @@ Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) – *fr
 <figure>
 <img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
 <figcaption markdown="1">
-*Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce `em` odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou `fr`. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
+*Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce em odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou fr. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
 </figcaption>
 </figure>
 
@@ -74,7 +74,12 @@ V našich podmínkách čteme zleva doprava a pak dolů. Položky se samozřejm�
 
 Pokud bychom snad chtěli změnit směr budování mřížky na shora dolů a pak doprava, pomůžeme si [vlastností `grid-auto-flow`](css-grid-auto-flow.md) s hodnotou `column`.
 
-<p><img src="../dist/images/original/vdlayout/grid-auto-flow.jpg" width="1920" height="540" alt="grid-auto-flow: column"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/grid-auto-flow.jpg" width="1920" height="540" alt="grid-auto-flow: column">
+<figcaption markdown="1">
+*Změnit směr rozvržení jde lusknutím prstu nebo lépe řečeno lusknutím vlastností grid-auto-flow.*
+</figcaption>
+</figure>
 
 ## 7) Oblasti mřížky
 

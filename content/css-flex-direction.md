@@ -90,8 +90,7 @@ Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) (viz sedmá ka
 
 </div>
 
-
-## Vliv na `flex-basis` {#flex-basis}
+## Vliv na flex-basis {#flex-basis}
 
 Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basis`](css-flex-basis.md) nastavujete výšku, tedy vlastnost `height`, nikoliv šířku, `width`.
 

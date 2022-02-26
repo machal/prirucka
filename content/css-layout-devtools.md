@@ -14,7 +14,7 @@ Lídrem trhu bychom v této oblasti mohli s klidným srdcem jmenovat autory Fire
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-firefox.jpg" width="1600" height="900" alt="Livesport.cz v DevTools Firefoxu">
 <figcaption markdown="1">
-*CSS grid Inspector v DevTools Firefoxu používaný na Livesport.cz.*
+It works! CSS grid Inspector v DevTools Firefoxu používaný na Livesport.cz.
 </figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Osobně se mi zdá, že Firefox má v této oblasti pořád alespoň malý násk
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-firefox-detail.jpg" width="1600" height="900" alt="Livesport.cz v DevTools Chrome">
 <figcaption markdown="1">
-*Překryvná vrstva ve Firefoxu. Zkoumám tam tento CodePen: [cdpn.io/e/bXeWjb](https://codepen.io/machal/pen/bXeWjb?editors=1100)*
+Překryvná vrstva ve Firefoxu. Zkoumám tam tento CodePen: [cdpn.io/e/bXeWjb](https://codepen.io/machal/pen/bXeWjb?editors=1100).
 </figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ Chrome ale přišel s jednou novou vlastností, která se mi moc líbí.
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-ikony.jpg" width="1600" height="900" alt="Vizualizace vlastností flexboxu v DevTools Chrome">
 <figcaption markdown="1">
-*Chrome: Vizualizace a možnost přenastavení vlastností layoutu.*
+Skoro jako WYSIWYG… Vizualizace a možnost přenastavení vlastností layoutu v Chrome.
 </figcaption>
 </figure>
 

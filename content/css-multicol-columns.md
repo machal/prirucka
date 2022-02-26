@@ -39,11 +39,11 @@ Umožňuje totiž dělat něco jako automatický responzivní layout. Tedy urči
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-columns.jpg" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
 <figcaption markdown="1">
-Tady je máme. Vlastnost `columns` je zkratkou pro dvě jiné, `column-width` a `column-count`. V tomto případě jsme vyrobili rozvržení, které obsahuje maximálně tři sloupce o šířce `20em`.
+Tady je máme. Vlastnost columns je zkratkou pro dvě jiné, column-width a column-count. V tomto případě jsme vyrobili rozvržení, které obsahuje maximálně tři sloupce o šířce 20em.
 </figcaption>
 </figure>
 
-## `column-width`: doporučená šířka sloupce {#column-width}
+## Vlastnost column-width: doporučená šířka sloupce {#column-width}
 
 Vlastnost nastaví doporučenou šířku všem sloupcům v kontejneru.
 
@@ -60,7 +60,7 @@ Možné hodnoty:
 
 Skutečná šířka sloupce může být širší, aby vyplnila dostupný prostor, nebo užší, ale to pouze pokud je dostupný prostor menší než zadaná šířka sloupce.
 
-## `column-count`: počet sloupců {#column-count}
+## Vlastnost column-count: počet sloupců {#column-count}
 
 Vlastnost nastaví počet sloupců v kontejneru.
 
@@ -73,7 +73,7 @@ Teď přichází trik. Pokud nastavíte vlastnosti `column-width` i `column-coun
 
 Jenže nikoliv. Prohlížeče by měly vzít v potaz obojí a celočíselná hodnota v `column-count` pak popisuje _maximální_, nikoliv jasně daný počet sloupců.
 
-## `columns`: zkratka pro `column-width` a `column-count` {#columns}
+## Vlastnost columns: zkratka pro column-width a column-count {#columns}
 
 Vlastnost `columns` je zkratkou pro obě výše uvedené:
 

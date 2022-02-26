@@ -83,7 +83,12 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/grid-auto-flow.jpg" width="1920" height="450"  alt="grid-auto-flow: column"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/grid-auto-flow.jpg" width="1920" height="540" alt="grid-auto-flow: column">
+<figcaption markdown="1">
+*Změnit směr rozvržení mřížkou jde snadno s pomocí vlastnosti grid-auto-flow.*
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/voXWGv](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
@@ -131,7 +136,7 @@ Vysvětlíme:
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-auto-flow-dense.jpg" width="1600" height="900" alt="grid-auto-flow: dense">
 <figcaption markdown="1">
-*Zahuštěné vykreslení (`dense`)  prostě dává přednost hustotě před pořadím.*
+*Zahuštěné vykreslení (hodnota dense)  prostě dává přednost hustotě před pořadím.*
 </figcaption>
 </figure>
 

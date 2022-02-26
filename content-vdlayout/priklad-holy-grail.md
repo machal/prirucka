@@ -144,7 +144,7 @@ Pomocí inspekce mřížky ve Firefoxu (nebo Chrome) se nám teď layout krásn�
 </figcaption>
 </figure>
 
-## Minimum, maximum, optimum s pomocí funkce `clamp()`
+## Minimum, maximum, optimum s pomocí funkce clamp()
 
 Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má postranní panel (`.side`) mít šířku 30 % – ovšem s minimem `10em` a maximem `20em`.
 

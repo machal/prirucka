@@ -32,7 +32,7 @@ V prohlížeči bude naše mřížka vypadat následovně:
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
-*Byl jednou jeden kontejner.*
+*Byl jednou jeden kontejner a v něm žilo pět položek…*
 </figcaption>
 </figure>
 
@@ -137,9 +137,9 @@ Může být stejně velká jako kontejner, ale nemusí. Kontejner je jen jakési
 Říkám, že je neviditelná, ale takto to být nemusí vždy a všude. Autoři prohlížečů jsou v této oblasti webovým vývojářům velmi nápomocní, a tak je možné samotnou mřížku pěkně vizualizovat v DevTools.
 
 <figure>
-<img src="../dist/images/original/vdlayout/devtools-layout-firefox.jpg" width="1600" height="450" alt="CSS grid Inspector ve Firefoxu">
+<img src="../dist/images/original/vdlayout/devtools-layout-chrome.jpg" width="1600" height="450" alt="CSS grid Inspector v Chromu">
 <figcaption markdown="1">
-*Grid v negližé, to je „CSS Grid Inspector“ ve Firefoxu.*
+*Grid v negližé, to je vizualizace mřížky v Chromu.*
 </figcaption>
 </figure>
 
@@ -156,7 +156,7 @@ Když už tedy víme, co je mřížka, a když už ji umíte vizualizovat, pojď
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-gridu.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
-*Obrázek: Mřížka, linka, oblast, řádek, sloupec.*
+*Tady máme celou partu: mřížka, linka, oblast, řádek, sloupec.*
 </figcaption>
 </figure>
 
@@ -274,7 +274,7 @@ Pojďme si 10pixelový gutter nadefinovat v našem příkladu a podívat se, jak
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-grid-inspector.jpg" width="1600" height="900" alt="Inspektor CSS gridu ve Firefoxu">
 <figcaption markdown="1">
-*Ale to je nemilé, linka mřížky už není jen linka.*
+*Linka mřížky se nám nafoukla do tvaru obdélníku.*
 </figcaption>
 </figure>
 

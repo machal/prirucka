@@ -16,7 +16,7 @@ Pozicování prvků vlastností `position` a hodnotami `absolute`, `relative`, `
 
 Směr hlavní osy kontejneru flexboxu vychází vždy z vlastnosti `writing-mode`. Pokud bychom tedy flexboxem dělali layout stránky v arabštině, budou hodnoty zmíněné ve vlastnostech jako [`flex-direction`](css-flex-direction.md) naopak.
 
-## 5. S `visibility:collapse` flexbox pracuje jako se řádky tabulky
+## 5. S visibility:collapse flexbox pracuje jako se řádky tabulky
 
 Taková drobnost na závěr. `visibility:collapse` funguje stejně jako u hodnoty `hidden` s výjimkou tabulek a flexboxu. U flex položek (stejně jako u elementů s `display:table-row` nebo `table-column`) prostě prvek není vidět, ale drží se mu místo a v DOMu se s ním počítá.
 

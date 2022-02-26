@@ -29,7 +29,9 @@ Počítá se však s použitím pro [flexbox](css-flexbox.md), [grid](css-grid.m
 Zapisuje se takto:
 
 ```css
-place-content: <hodnota align-content> <hodnota justify-content>;
+place-content: 
+  <hodnota align-content> 
+  <hodnota justify-content>;
 ```
 
 Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru.
@@ -80,7 +82,12 @@ Všechny tři položky mají omezenou výšku i šířku:
 
 To aby byl hezky vidět efekt distribuce volného prostoru mezi položkami, který způsobuje vlastnost `place-content`.
 
-<p><img src="../dist/images/original/vdlayout/css-place-content-grid.jpg" width="1920" height="540" alt="place-content: space-between end v gridu - v Chrome při zapnutém layout overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-place-content-grid.jpg" width="1600" height="450" alt="place-content: space-between end v gridu - v Chrome při zapnutém layout overlay">
+<figcaption markdown="1">
+Nastavení place-content:space-between end v gridu.
+</figcaption>
+</figure>
 
 Využíváme zde tuto hodnotu:
 

@@ -241,7 +241,7 @@ Na obrázku je vidět, k čemu jsme se dopracovali:
 <figure>
 <img src="../dist/images/original/vdlayout/flexbox-priklad.jpg" width="1600" height="900" alt="Příklad flexboxu">
 <figcaption markdown="1">
-*Takhle to dopadá, když si flexbox pustíte k tělu.*
+*Je to layout. Je pružný. Je to flexbox.*
 </figcaption>
 </figure>
 
@@ -293,7 +293,7 @@ Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s po
 <figure>
 <img src="../dist/images/original/vdlayout/css-flexbox-caniuse.jpg" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Jak je to krásně zelené! Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
+*Paráda. Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
 </figcaption>
 </figure>
 

@@ -119,7 +119,7 @@ A teď k těm rozdílům.
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-perf.jpg" width="1600" height="900" alt="Rozdíly ve vykreslování gridu a flexboxu">
 <figcaption markdown="1">
-*Rozdíly ve vykreslování gridu a flexboxu, na které poukazuje Jake Archibald.*
+Rozdíly ve vykreslování gridu a flexboxu, na které poukazuje Jake Archibald. Ne, to není ten nafukující se pán na obrázku.
 </figcaption>
 </figure>
 

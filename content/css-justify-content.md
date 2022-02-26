@@ -65,7 +65,12 @@ CSS:
 
 Položky gridu jsme ale, my zlí experimentátoři, přinutili, aby držely minimální a maximální šířku – pomocí `minmax(3em, 5em)`.
 
-<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around.jpg" width="1920" height="540" alt="justify-content: space-around v gridu - v Chrome při zapnutém grid overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-justify-content-space-around.jpg" width="1920" height="540" alt="justify-content: space-around v gridu - v Chrome při zapnutém grid overlay">
+<figcaption markdown="1">
+Budiž prostor mezi položkami! Vlastnost justify-content v nastavení space-around.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/qBZmvEy](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
 
@@ -81,15 +86,25 @@ CSS tam vypadá zhruba takto:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-justify-content-space-around-flex.jpg" width="1920" height="540" alt="justify-content: space-around ve flexu - v Chrome při zapnutém layout overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-justify-content-space-around-flex.jpg" width="1920" height="540" alt="justify-content: space-around ve flexu - v Chrome při zapnutém layout overlay">
+<figcaption markdown="1">
+Nastavení space-around, tentokrát ve flexboxu.
+</figcaption>
+</figure>
 
 Vzhledem k tomu, že jsme na položky neaplikovali vlastnost `flex` nebo `flex-grow`, dělení prostoru pomocí `justify-content` zůstává v platnosti.
 
 CodePen: [cdpn.io/e/mdPmoVZ](https://codepen.io/machal/pen/mdPmoVZ?editors=1100)
 
-## Možné hodnoty zarovnání {#hodnoty}
+## Možné hodnoty {#hodnoty}
 
-![Hodnoty vlastnosti justify-content](../dist/images/original/vdlayout/css-justify-content-hodnoty.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-justify-content-hodnoty.jpg" width="1920" height="540" alt="Hodnoty vlastnosti justify-content">
+<figcaption markdown="1">
+Hodnoty vlastnosti justify-content.
+</figcaption>
+</figure>
 
 Vlastnosti `justify-content` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 

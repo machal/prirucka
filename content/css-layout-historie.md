@@ -152,7 +152,7 @@ V Microsoftu se dějí věci. Plánují zaříznout Silverlight, zjednodušeně 
 <figure>
 <img src="../dist/images/original/vdlayout/silverlight.jpg" width="1920" height="540" alt="Microsoft Silverlight">
 <figcaption markdown="1">
-*Obrázek: To by člověk nečekal, na jak podivných místech najde inspirační zdroje dnešního moderního CSS. Děkovné dopisy prosím posílejte do Microsoftu.*
+*To by člověk nečekal, na jak podivných místech najde inspirační zdroje dnešního moderního CSS. Děkovné dopisy prosím posílejte do Microsoftu.*
 </figcaption>
 </figure>
 

@@ -29,7 +29,9 @@ Jde totiž o zkratku pro vlastnosti [`justify-items`](css-justify-items.md) a [`
 Zapisuje se takto:
 
 ```css
-place-items: <hodnota align-items> <hodnota justify-items>;
+place-items: 
+  <hodnota align-items> 
+  <hodnota justify-items>;
 ```
 
 Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru. Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
@@ -50,7 +52,12 @@ V naší ukázce definujeme třísloupcový kontejner gridu. Všechny tři polo�
 
 Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně doprava (`right`).
 
-<p><img src="../dist/images/original/vdlayout/css-place-items-end-right.jpg" width="1920" height="540"  alt="place-items: end right v Chrome při zapnutém grid overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-place-items-end-right.jpg" width="1600" height="450" alt="Hodnoty vlastnosti place-items">
+<figcaption markdown="1">
+Hodnota vlastnsoti place-items v Chrome při zapnutém grid overlay.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/dyMOxdm](https://codepen.io/machal/pen/dyMOxdm?editors=1100)
 

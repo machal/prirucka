@@ -30,7 +30,7 @@ Vlastnost `align-self` je specifikací předurčená pro flexbox, grid, absolutn
 
 <!-- AdSnippet -->
 
-## Příklad: `margin` má přednost před `align-self`
+## Příklad: margin má přednost před align-self
 
 V první ukázce definujeme třísloupcový kontejner gridu a poslední položku se snažíme zarovnat jinak než její první dvě kolegyně.
 
@@ -67,7 +67,12 @@ CSS pro deklaraci gridu a té naší specificky zarovnané poslední položky:
 
 Stejně jako [u `justify-self`](css-justify-self.md) i tady zarovnáváme dvěma způsoby. Jednou dolů (`margin-top:auto`) a jednou nahoru (`align-self:start`). A opět platí – zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
 
-<p><img src="../dist/images/original/vdlayout/css-align-self-vs-margin.jpg" width="1920" height="540"  alt="margin má přednost před align-self - v Chrome při zapnutém grid overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-align-self-vs-margin.jpg" width="1920" height="540"  alt="margin má přednost před align-self - v Chrome při zapnutém grid overlay">
+<figcaption markdown="1">
+Vlastnost margin má přednost před align-self.
+</figcaption>
+</figure>
 
 Vysvětleme:
 
@@ -78,7 +83,7 @@ Vysvětleme:
 
 CodePen: [cdpn.io/e/zYqwKer](https://codepen.io/machal/pen/zYqwKer?editors=1100)
 
-## Příklad: `align-self` ve flexboxu
+## Příklad: align-self ve flexboxu
 
 V druhé ukázce si pohrajeme s flexboxem. HTML je stejné, CSS se mění:
 
@@ -97,7 +102,12 @@ V druhé ukázce si pohrajeme s flexboxem. HTML je stejné, CSS se mění:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-align-self-flexbox.jpg" width="1920" height="540"  al="align-self ve flexboxu - v Chrome při zapnutém grid overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-align-self-flexbox.jpg" width="1920" height="540"  al="align-self ve flexboxu - v Chrome při zapnutém grid overlay">
+<figcaption markdown="1">
+Vlastnost align-self ve flexboxu.
+</figcaption>
+</figure>
 
 Nyní přichází vysvětlení:
 
@@ -107,9 +117,14 @@ Nyní přichází vysvětlení:
 
 CodePen: [cdpn.io/e/eYZWdoN](https://codepen.io/machal/pen/eYZWdoN?editors=1100)
 
-## Možné hodnoty zarovnání
+## Možné hodnoty
 
-![Hodnoty vlastnosti align-self](../dist/images/original/vdlayout/css-align-self-hodnoty.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-align-self-hodnoty.jpg" width="1920" height="540"  al="Hodnoty vlastnosti align-self">
+<figcaption markdown="1">
+Hodnoty vlastnosti align-self.
+</figcaption>
+</figure>
 
 Také vlastnosti `align-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov specifikace CSS Box Alignment:
 

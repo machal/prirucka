@@ -67,7 +67,7 @@ Do obrázku jsem nakreslil nejen řešení, ale rovnou i hned dvě další možn
 <figure>
 <img src="../dist/images/original/css-order.jpg" width="1600" height="900" alt="CSS vlastnost order">
 <figcaption markdown="1">
-Číselné hodnoty vlastnosti `order` vytvářejí nové řazení. Kladné za stávajícími položkami, záporné před nimi.
+Číselné hodnoty vlastnosti order vytvářejí nové řazení. Kladné za stávajícími položkami, záporné před nimi.
 </figcaption>
 </figure>
 
@@ -159,7 +159,7 @@ Více to rozebírám v části [CSS layout a přístupnost](css-layout-pristupno
 
 </div>
 
-## Raději si na `order` dávejte pozor {#shrnuti}
+## Raději si na vlastnost order dávejte pozor {#shrnuti}
 
 Shrňme si to. Vlastnost `order` určitě může být v některých případech užitečná,nebo dokonce nezbytná pro změnu vizuálního pořadí.
 

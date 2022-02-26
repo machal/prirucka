@@ -70,7 +70,12 @@ Vysvětleme si to:
 - [Vlastnost `grid-template-columns`](css-grid-template-rows-columns.md) definuje podobu mřížky. Zde jde sloupce o rovnoměrné šířce.
 - `gap: 2em 1em` je instrukce pro vložení mezery svisle a pak i vodorovně.
 
-<p><img src="../dist/images/original/vdlayout/css-gap.jpg" width="1920" height="540" alt="CSS Gap"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-gap.jpg" width="1920" height="540" alt="CSS Gap">
+<figcaption markdown="1">
+Takto vypadá odlišné nastavení vlastnosti gap pro svislý a vodorovný směr.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/JgXWod](https://codepen.io/machal/pen/JgXWod?editors=1100)
 
@@ -116,7 +121,12 @@ Ještě chvilku.
 
 A teď už přichází obrázek:
 
-<p><img src="../dist/images/original/vdlayout/css-gap-margin.jpg" width="1920" height="540" alt="CSS Gap v kombinaci s marginem a paddingem"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-gap-margin.jpg" width="1920" height="540" alt="CSS Gap v kombinaci s marginem a paddingem">
+<figcaption markdown="1">
+Vlastnost gap v kombinaci s marginem a paddingem.
+</figcaption>
+</figure>
 
 Ano, viditelná mezera mezi položkami bude široká celé `3em`. Sečteme dva vnější okraje (`margin`) a mezeru (`gap`).
 
@@ -150,13 +160,18 @@ Pojďme si to vyzkoušet na flexboxovém layoutu, který jsme ještě vlastnost�
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-gap-flexbox.jpg" width="1920" height="540" alt="CSS Gap ve flexboxu"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-gap-flexbox.jpg" width="1920" height="540" alt="CSS Gap ve flexboxu">
+<figcaption markdown="1">
+Gap ve flexboxu. I tady to mezerám sekne, že ano… ?
+</figcaption>
+</figure>
 
 Raději si to zopakujme. Zápis `gap:5px 1rem` říká, že svisle chci mezi řádku mezeru `5px` a vodorovně mezi sloupci pak mezeru `1rem`.
 
 CodePen: [cdpn.io/e/VwWWWwP](https://codepen.io/machal/pen/VwWWWwP?editors=1100)
 
-### Použití funkce `calc()` {#hodnoty-calc}
+### Použití funkce calc() {#hodnoty-calc}
 
 Uvádění [výpočetní funkce `calc()`](css3-calc.md) se v hodnotách `gap` může hodit:
 
@@ -176,7 +191,7 @@ Neznáte [funkci `calc()`](css3-calc.md)? Podívejte se na speciální zmínku v
 
 </div>
 
-### Klíčové slovo `normal` {#hodnoty-normal}
+### Klíčové slovo normal {#hodnoty-normal}
 
 Šup s ním hned do vody, tedy do ukázky kódu:
 
@@ -204,7 +219,12 @@ Zajímavější je svislý směr. V layoutu tvořeném mřížkou se spočítá 
 
 Výsledkem je, že procentuální hodnota pro `gap` aplikovaná na svislý směr vám velmi často způsobí přetečení položek z rozměru kontejneru.
 
-<p><img src="../dist/images/original/vdlayout/css-gap-percentage.jpg" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru v gridu"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-gap-percentage.jpg" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru v gridu">
+<figcaption markdown="1">
+To byste nečekali. Použití procent ve vlastnosti gap ve svislém směru rozbije náš pěkný layout.
+</figcaption>
+</figure>
 
 Pravděpodobně se vám tedy stane, že mezera vytlačí spodní prvky z kontejneru.
 
@@ -212,13 +232,18 @@ CodePen: [cdpn.io/e/OJggmrx](https://codepen.io/machal/pen/OJggmrx?editors=1100)
 
 V případě flexboxového layoutu a neznámé výšky kontejneru se procentuální `gap` ve svislém směru vůbec nezapočítá. Je z něj čistá nula. Ptáte se, kdy je výška kontejneru neznámá? Inu, ve flexboxu skoro vždy – dokud ji výslovně nedefinujete.
 
-<p><img src="../dist/images/original/vdlayout/css-gap-percentage-flex.jpg" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru ve flexboxu"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-gap-percentage-flex.jpg" width="1920" height="540" alt="CSS Gap - procenta ve svislém směru ve flexboxu">
+<figcaption markdown="1">
+A tohle už byste asi vůbec nečekali. Použití procent ve vlastnosti gap ve svislém směru ve flexboxu prostě nefunguje.
+</figcaption>
+</figure>
 
 Zkoušení naživo je možné opět v následující ukázce.
 
 CodePen: [cdpn.io/e/ZEyyKZZ](https://codepen.io/machal/pen/ZEyyKZZ?editors=1100)
 
-## Co byste o `gap` měli vědět? {#vedet}
+## Co byste o gap měli vědět? {#vedet}
 
 Když už jsme v tom, mám pár poznámek. Doslova pár:
 

@@ -76,7 +76,7 @@ Mřížce tím nepřikazujeme, aby byla rovnou dvouřádková. Říkáme zhruba 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-1.jpg" width="1600" height="450" alt="Explicitní a implicitní CSS grid - 1. příklad">
 <figcaption markdown="1">
-*A heleme se, na druhém řádku je položka. Ta se formátuje podle automatického, implicitního gridu.*
+*A heleme se, na druhém řádku je položka. Ta se formátuje podle automatického, implicitního gridu.*
 </figcaption>
 </figure>
 

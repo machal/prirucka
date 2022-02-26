@@ -31,7 +31,7 @@ Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Mu
 <figure>
 <img src="../dist/images/original/vdlayout/css-layout-podpora-celkem.jpg" width="1600" height="450" alt="Podpora flexboxu, gridu, multicol z CanIUse">
 <figcaption markdown="1">
-*Čím více zelené, tím více podpory. Zelenohnědá značí, že daný prohlížeč má nějaký problém. Zdroj: [CanIUse.com](https://caniuse.com/).*
+*Čím více zelené, tím více podpory. Zelenohnědá značí, že daný prohlížeč má nějaký problém. Ale ne s vámi, neberte si to osobně. Zdroj: [CanIUse.com](https://caniuse.com/).*
 </figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ Když jsem během psaní tohoto textu srovnával současný stav s tím dřívě
 <figure>
 <img src="../dist/images/original/vdlayout/css-flexbox-caniuse.jpg" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Jak je to krásně zelené! Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
+*Zelená se tráva… Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
 </figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohr
 
 Když jsem se vývojářů na Twitteru ptal na jejich mentální zkratky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
 
-> U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy `flex: 1 1 auto` (nespoléhat na default), a pokud to jde, tak používat `width` místo `flex-basis` nebo obojí.
+> U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy „flex: 1 1 auto“ (nespoléhat na default), a pokud to jde, tak používat vlastnost width místo flex-basis nebo obojí.
 
 Vysvětlím to. Zápis `flex:1 1 auto` je zkratka, která v prvním čísle definuje rozsah zvětšování položky, v druhém rozsah zmenšování a ve třetím výchozí velikost, která se ve flexboxu nastavuje vlastností `flex-basis`. Je možné ji nezapsat a ponechat výchozí hodnotu (`flex:auto`), což vám ale v případě nutnosti podpory MSIE nedoporučuji.
 

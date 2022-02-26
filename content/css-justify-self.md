@@ -30,7 +30,7 @@ U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou m
 
 <!-- AdSnippet -->
 
-## Příklad: `margin` má přednost před `justify-self`
+## Příklad: margin má přednost před justify-self
 
 V naší ukázce definujeme třísloupcový kontejner gridu. Poslední, jinak zbarvenou položku pak zarovnáváme pomocí `justify-self`.
 
@@ -73,7 +73,12 @@ Tady vlastně zarovnáváme dvěma způsoby. Jednou doleva (`margin-right:auto`)
 
 Zkuste si tu první deklaraci schválně v živé ukázce odmazat.
 
-<p><img src="../dist/images/original/vdlayout/css-justify-self-vs-margin.jpg" width="1920" height="540"  alt="margin má přednost před justify-self - v Chrome při zapnutém grid overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-justify-self-vs-margin.jpg" width="1920" height="540"  alt="margin má přednost před justify-self - v Chrome při zapnutém grid overlay">
+<figcaption markdown="1">
+Vlastnost margin má přednost před justify-self.
+</figcaption>
+</figure>
 
 Následuje několik užitečných vysvětlujících odrážek:
 
@@ -101,7 +106,12 @@ Zabývá se tím krásná diskuze „In CSS Flexbox, why are there no ,justify-i
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-self](../dist/images/original/vdlayout/css-justify-self-hodnoty.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-justify-self-hodnoty.jpg" width="1920" height="540"  alt="margin má přednost před justify-self - v Chrome při zapnutém grid overlay">
+<figcaption markdown="1">
+Hodnoty vlastnosti justify-self.
+</figcaption>
+</figure>
 
 Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov specifikace CSS Box Alignment:
 

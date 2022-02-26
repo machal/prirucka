@@ -31,7 +31,7 @@ Vezměme, že máme jednoduchý příklad, který vidíte na obrázku. Nadpis, o
 <figure>
 <img src="../dist/images/original/vdlayout/css-logical-czech-arabic.jpg" width="1600" height="900" alt="Čeština a Arabština na jedné stránce">
 <figcaption markdown="1">
-*Jak to safra nastylovat co nejuniverzálněji?*
+Zleva doprava. Zprava doleva. Jak to safra nastylovat co nejuniverzálněji?
 </figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ Pro box model máme hezký obrázek s porovnáním fyzických a logických varia
 <figure>
 <img src="../dist/images/original/vdlayout/css-logical-physical.jpg" width="1600" height="900" alt="CSS physical / CSS logical">
 <figcaption markdown="1">
-Zdroj: Adrian Roselli. [cdpn.io/e/bGGxrvM](https://codepen.io/aardrian/pen/bGGxrvM)
+Logické hodnoty jako synonyma těch fyzických. Zdroj: Adrian Roselli. [cdpn.io/e/bGGxrvM](https://codepen.io/aardrian/pen/bGGxrvM)
 </figcaption>
 </figure>
 
@@ -261,7 +261,7 @@ Poznámka: Vzhledem k tomu, že vlastnost `border` představuje zkratku, uvádí
 - Barva: `border-color` (`border-block-start-color` = `border-top-color`)
 - Zakulacení: `border-radius` (`border-block-start-radius` = `border-top-radius`)
 
-### Klíčové slovo `logical` {#vlastnosti-hodnoty-logical}
+### Klíčové slovo logical {#vlastnosti-hodnoty-logical}
 
 Tohle může být zajímavé, ale zatím to v prohlížečích nemá podporu. Když uvedete klíčové slovo `logical` před zápisem hodnot ve zkratkách vlastností…
 

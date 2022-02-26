@@ -34,13 +34,13 @@ Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače niko
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-gap-rule.jpg" width="1600" height="900" alt="CSS vlastnosti column-gap a column-rule">
 <figcaption markdown="1">
-*Na obrázku jsme definovali mezeru mezi sloupečky o šířce `3em` a k ní ještě přidali šedivý čárkovaný oddělovač .*
+*Na obrázku jsme definovali mezeru mezi sloupečky o šířce 3em a k ní ještě přidali šedivý čárkovaný oddělovač .*
 </figcaption>
 </figure>
 
 A co teď? No, co by…? Vzhůru na jednotlivé vlastnosti.
 
-## `column-gap`: mezera mezi sloupci {#column-gap}
+## Vlastnost column-gap: mezera mezi sloupci {#column-gap}
 
 Šířka výchozí mezery je `1em`. Pokud ji chcete změnit, je pro její definici možné použít vlastnost `column-gap`.
 
@@ -61,7 +61,7 @@ Možné hodnoty jsou následující:
 
 Záporné hodnoty délky pochopitelně nejsou možné.
 
-## `column-rule-color`: barva oddělovače {#column-rule-color}
+## Vlastnost column-rule-color: barva oddělovače {#column-rule-color}
 
 Barvu oddělovače je možné definovat přesně tak, jak jste na to zvyklí u všech možných vlastností. Nebudeme tedy příklady ztrácet čas.
 
@@ -73,21 +73,19 @@ Je ale dobré zmínit, že jako výchozí barva se zde použije `currentcolor`, 
 
 </div>
 
-## `column-rule-style`: grafické ztvárnění oddělovače {#column-rule-style}
+## Vlastnost column-rule-style: grafické ztvárnění oddělovače {#column-rule-style}
 
 Grafický styl oddělovače můžete určit stejnými klíčovými slovy, jakými určujete barvy rámečků: `dotted`, `dashed`, `solid`, `double`, `groove`, `ridge`, `inset` nebo `outset`.
 
 Grafiku oddělovače je také samozřejmě možné vypnout pomocí hodnoty `none`, čímž se pochopitelně vypne i zobrazení oddělovače.
 
-## `column-rule-width`: šířka oddělovače {#column-rule-width}
+## Vlastnost column-rule-width: šířka oddělovače {#column-rule-width}
 
-I zde jsou logicky akceptovány jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, jež ale pravděpodobně každý prohlížeč vykreslí jinak. V Chromu to dle mých propočtů odpovídá šířce 1, 2 a 5 pixelů.
-
-Výchozí hodnota je `medium`.
+I zde jsou logicky akceptovány jakékoliv jednotky šířky, které si v CSS umíte představit, včetně slovních označení `thin`, `medium` a `thick`, jež ale pravděpodobně každý prohlížeč vykreslí jinak. V Chromu to dle mých propočtů odpovídá šířce 1, 2 a 5 pixelů. Výchozí hodnota je `medium`.
 
 Také oddělovač je možné vypnout, opět pomocí hodnoty `none`, což vás jistě nepřekvapilo.
 
-## `column-rule`: zkratka pro deklaraci oddělovače na jednom místě {#column-rule}
+## Vlastnost column-rule: zkratka pro deklaraci oddělovače na jednom místě {#column-rule}
 
 Všechny tři vlastnosti můžete použít v jedné zkratce:
 

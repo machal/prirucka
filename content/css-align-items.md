@@ -49,9 +49,14 @@ Použitá hodnota `start` umístí položky na začátek vymezeného prostoru.
 
 CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?editors=1100)
 
-## Možné hodnoty zarovnání
+## Možné hodnoty
 
-![Hodnoty vlastnosti align-items](../dist/images/original/vdlayout/css-align-items-hodnoty.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-align-items-hodnoty.jpg" width="1600" height="900" alt="Hodnoty vlastnosti align-items">
+<figcaption markdown="1">
+Hodnoty vlastnosti align-items.
+</figcaption>
+</figure>
 
 Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 

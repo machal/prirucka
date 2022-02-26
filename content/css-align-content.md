@@ -55,9 +55,12 @@ V naší ukázce definujeme třířádkový kontejner gridu:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-align-content-grid.jpg" width="1920" height="540" alt="align-content:space-between ve gridu - v Chrome při zapnutém layout overlay"></p>
-
-Pomocí zápisu `align-content:space-between` se volný prostor hezky distribuuje na výšku mezi jednotlivé položky.
+<figure>
+<img src="../dist/images/original/vdlayout/css-align-content-grid.jpg" width="1920" height="540" alt="align-content:space-between ve gridu - v Chrome při zapnutém layout overlay">
+<figcaption markdown="1">
+Pomocí zápisu align-content:space-between se volný prostor hezky distribuuje na výšku mezi jednotlivé položky.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/ZEWKPvr](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
 
@@ -75,17 +78,25 @@ CSS:
 }
 ```
 
-<p><img src="../dist/images/original/vdlayout/css-align-content-flex.jpg" width="1920" height="540" alt="align-content:space-around ve flexboxu - v Chrome při zapnutém layout overlay"></p>
-
-Zápis `align-content:space-around` tedy rozdělí volný prostor na polovinu a přidá ji před a za buňku.
+<figure>
+<img src="../dist/images/original/vdlayout/css-align-content-flex.jpg" width="1920" height="540" alt="align-content:space-around ve flexboxu - v Chrome při zapnutém layout overlay">
+<figcaption markdown="1">
+Zápis align-content:space-around rozdělí volný prostor na polovinu a přidá ji před a za buňku.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/zYqwbpL](https://codepen.io/machal/pen/zYqwbpL?editors=1100)
 
 Víte co? Raději se podívejte na všechny možné hodnoty, i tuhle mezi nimi najdete.
 
-## Možné hodnoty zarovnání {#hodnoty}
+## Možné hodnoty {#hodnoty}
 
-![Hodnoty vlastnosti align-content](../dist/images/original/vdlayout/css-align-content-hodnoty.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-align-content-hodnoty.jpg" width="1600" height="450" alt="Hodnoty vlastnosti align-content.">
+<figcaption markdown="1">
+Hodnoty vlastnosti align-content.
+</figcaption>
+</figure>
 
 Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 

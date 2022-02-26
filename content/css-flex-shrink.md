@@ -42,7 +42,7 @@ Pevně doufám, že když se podíváte na obrázek, problematiku smršťování
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-shrink.jpg" width="1600" height="900" alt="CSS vlastnost flex-shrink">
 <figcaption markdown="1">
-*Různé hodnoty vlastnosti na první položce způsobují různé smršťování.*
+Různé hodnoty vlastnosti flex-shrink na první položce způsobují různé smršťování.
 </figcaption>
 </figure>
 

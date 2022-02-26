@@ -62,7 +62,7 @@ Vnější zobrazení v podstatě určuje roli stylovaného boxu v uspořádání
 <figure>
 <img src="../dist/images/original/vdlayout/css-display-inline-block.jpg" width="1600" height="450" alt="CSS display - inline a block">
 <figcaption markdown="1">
-*Hodnoty pro vnější zobrazení jsou naši staří známí.*
+Vlastnost display. Hodnoty pro vnější zobrazení jsou naši staří známí.
 </figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ CodePen: [cdpn.io/e/WNGayad](https://codepen.io/machal/pen/WNGayad?editors=0000)
 
 Pojďme ještě projít několik specifických hodnot.
 
-## Generování boxů se značkami: `list-item` {#list-item}
+## Generování boxů se značkami: list-item {#list-item}
 
 Zápis `display:list-item` způsobí, že element vygeneruje pseudoprvek `::marker`.
 
@@ -163,7 +163,7 @@ První příklad na následujícím obrázku ukazuje zobrazení typu `list-item`
 
 Druhou a třetí hodnotu z obrázku probereme hned v následující části.
 
-## Skrytí prvků: `none` a `contents` {#none-contents}
+## Skrytí prvků: hodnoty none a contents {#none-contents}
 
 Ke všem možným metodám ovlivnění vykreslování boxíků na obrazovku musíme přidat i metody _nevykreslování_. K tomu slouží následující dvě hodnoty vlastnosti `display`.
 
@@ -178,7 +178,7 @@ CodePen: [cdpn.io/e/zYKmaMb](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
 
 Podpora nezobrazení pomocí `none` je samozřejmě plná. Hodnotu `contents` zvládají všechny prohlížeče kromě Internet Exploreru, ale podle webu CanIUse je s ní spojeno několik chyb v prohlížečích vycházejících z jádra Chromium, které souvisejí s přístupností.  [caniuse.com](https://caniuse.com/css-display-contents)
 
-## Typy zobrazení pro vnitřní rozvržení: `table-*` a `ruby-*` {#table-ruby}
+## Typy zobrazení pro vnitřní rozvržení: hodnoty table-* a ruby-* {#table-ruby}
 
 Modely zobrazení, které vynucují vnitřní rozvržení, jako je `display:table` a `display:ruby`, mají složitou strukturu s několika různými rolemi, jež mohou jejich potomci plnit.
 

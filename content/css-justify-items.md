@@ -67,11 +67,16 @@ Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět e
 
 Vlastnost `justify-items` zde tedy zarovnává položky na hlavní (vodorovné) ose do prostoru, který je jim vymezený (`1fr`, tedy jeden [podíl na celku](css-jednotka-fr.md)). Hodnota `end` je umístí ke konci onoho vymezeného prostoru.
 
-<p class="ebook-only"><img src="../dist/images/original/vdlayout/css-justify-items-end.jpg" width="1920" height="540"  alt="justify-items:end v Chrome při zapnutém grid overlay"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-justify-items-end.jpg" width="1920" height="540"  alt="justify-items:end v Chrome při zapnutém grid overlay">
+<figcaption markdown="1">
+Zarovnání pomocí justify-items:end v Chrome při zapnutém grid overlay.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
-## Trocha teorie: nastavení `justify-self`. A pozor, ve flexboxu vlastnost nefunguje
+## Trocha teorie: nastavení justify-self. A pozor, ve flexboxu vlastnost nefunguje
 
 Vlastnost `justify-items` vlastně nedělá nic jiného, než že nastavuje výchozí hodnotu [vlastnosti `justify-self`](css-justify-self.md) pro všechny položky uvnitř kontejneru.
 
@@ -85,7 +90,12 @@ CodePen: [cdpn.io/e/eYZgOwL](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
 ## Možné hodnoty zarovnání
 
-![Hodnoty vlastnosti justify-items](../dist/images/original/vdlayout/css-justify-items-hodnoty.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-justify-items-hodnoty.jpg"  width="1600" height="900" alt="Hodnoty vlastnosti justify-items">
+<figcaption markdown="1">
+Hodnoty vlastnosti justify-items.
+</figcaption>
+</figure>
 
 Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých obecných kategorií klíčových slov:
 

@@ -39,7 +39,7 @@ Vlastnost se vám asi zatím bude používat hůře. Implementace v prohlížeč
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-fill.jpg" width="1600" height="900" alt="CSS vlastnost column-fill">
 <figcaption markdown="1">
-*Na obrázku je rozdíl mezi hodnotami `auto` a `balance` dobře vidět.*
+*Rozdíl mezi hodnotami vlastnosti column-fill: auto a balance.*
 </figcaption>
 </figure>
 

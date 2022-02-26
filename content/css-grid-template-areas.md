@@ -49,7 +49,7 @@ V příkladu na obrázku pojmenováváme oblasti následovně:
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-template-areas.jpg" width="1920" height="540" alt="Vlastnost grid-template-areas">
 <figcaption markdown="1">
-*Zeleně (světlou barvou) jsou vyznačené položky, růžově (výraznější překryvnou barvou) pak oblasti mřížky vyznačené ve Firefox DevTools.*
+*Světle hnědou barvou jsou vyznačené položky, modře pak uvidíte oblasti mřížky vyznačené ve Firefox DevTools.*
 </figcaption>
 </figure>
 
@@ -130,7 +130,7 @@ Pak stačí pomocí [vlastnosti `grid-area`](css-grid-area.md) prvek `.item-head
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-template-areas-tracks.jpg" width="1920" height="540" alt="Grid - automatická tvorba oblastí">
 <figcaption markdown="1">
-*Tady to je. Oblast definovaná jen pomocí linek. Takhle to ukazuje Firefox v DevTools.*
+Oblast definovaná jen pomocí linek. Takhle to ukazuje Firefox v DevTools.
 </figcaption>
 </figure>
 
@@ -155,7 +155,7 @@ Je to jednoduché – oblasti je prostě možné různě přehazovat v rámci de
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-template-areas-mq.jpg" width="1600" height="900" alt="grid-template-areas s Media Queries">
 <figcaption markdown="1">
-*V kombinaci s Media Queries se z definovaných oblastí pomocí `grid-template-areas` stává fantastický pomocník.*
+*V kombinaci s Media Queries se z definovaných oblastí pomocí  vlastnosti grid-template-areas stává fantastický pomocník.*
 </figcaption>
 </figure>
 

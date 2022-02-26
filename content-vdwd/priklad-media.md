@@ -43,7 +43,7 @@ Nejmenší velikost obrazovky aktuálních mobilů je 240 pixelů. Dnes už se m
 
 Maximální šířka layoutu je nastavená na `30em`, což je 540 pixelů. Kvůli „Retina“ displejům budeme počítat s dvojnásobkem, tedy 1080 pixelů. Obrázky je vhodné testovat i na zařízeních s více než dvojnásobným poměrem hardwarových a CSS pixelů, ale mám zkušenost, že dvojnásobek obvykle postačuje.
 
-### Vyrobíme varianty a uvedeme je do `srcset`
+### Vyrobíme varianty a uvedeme je do srcset
 
 Jak jsem psal v textu o [srcset a sizes](srcset-sizes.md), varianty generuji po dvě stě a tři sta pixelech. Můžu to zařídit nějakou automatizací na svém počítači nebo na serveru. Pro jednorázovou práci ale doporučuji výborný generátor variant obrázků „Responsive Image Breakpoints Generator“. [responsivebreakpoints.com](http://www.responsivebreakpoints.com/)
 
@@ -78,7 +78,7 @@ Zapsáno v kódu to vypadá takto:
 
 Pro další dva obrázky to bude vypadat trochu jinak. Podívejte se pak do HTML zdroje nebo na odpovídající commit na Githubu. [git.io/vDVjw](https://github.com/machal/vdwd-example/commit/e19e60989a520cca57cc94fa4c2b90886b64e01f)
 
-### Nastavíme velikost obrázku v layoutu: `sizes`
+### Nastavíme velikost obrázku v layoutu: sizes
 
 Layout a velikost obrázků v něm jsou v tuto chvíli jednoduše zjistitelné. Stačí vzít vývojářské nástroje, zmenšit okno a postupně ho zvětšovat. Všechny body zlomu layoutu tam krásně uvidíte a z vývojářských nástrojů snadno vyčtete patřičné rozměry.
 

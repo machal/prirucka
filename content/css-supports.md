@@ -25,11 +25,11 @@ CodePen: [cdpn.io/e/NWbLRKv](https://codepen.io/machal/pen/NWbLRKv?editors=1100)
 
 Všimněte si důležité věci – pro detekování podpory se musíme dotazovat na vlastnost i její hodnotu. Takže pokud bychom se ptali na podporu vlastnosti `display`, musíme se zeptat například na `display:block`.
 
-## Logické operátory: `not`, `and` a `or` {#operatory}
+## Logické operátory: not, and a or {#operatory}
 
 Specifikace „Feature Queries“ velmi správně definuje logické operátory podle zvyklostí z jiných jazyků.
 
-### Operátor `not` {#operatory-not}
+### Operátor not {#operatory-not}
 
 Velice často se nám může hodit negace a klíčové slovo `not`:
 
@@ -43,7 +43,7 @@ Velice často se nám může hodit negace a klíčové slovo `not`:
 
 Kód se aplikuje jen v těch prohlížečích, které _nepodporují_ [CSS grid](css-grid.md).
 
-### Operátor `and` {#operatory-and}
+### Operátor and {#operatory-and}
 
 Logický operátor konjunkce (tedy průnik dvou množin) – `and`:
 
@@ -57,7 +57,7 @@ Logický operátor konjunkce (tedy průnik dvou množin) – `and`:
 
 Použijeme ho v případech, kdy musí platit všechny podmínky.
 
-### Operátor `or` {#operatory-or}
+### Operátor or {#operatory-or}
 
 Další operátor – `or` – definuje logickou disjunkci (tedy sjednocení množin):
 
@@ -213,7 +213,7 @@ Mezi jednotlivými řešeními je detekce vlastností (nikoliv prohlížeče!), 
 
 Výsledkem je, že nějaké řešení máte pro nejširší možnou skupinu zařízení. Pro web ideální.
 
-## Podpora `@supports` a limity použitelnosti {#podpora}
+## Podpora @supports a limity použitelnosti {#podpora}
 
 První omezené použití `@supports` vychází z principů fungování prohlížečů – „Feature Queries“ nelze použít ke kontrole, zda prohlížeč vlastnost, hodnotu nebo selektor podporuje správně a bez chyb.
 

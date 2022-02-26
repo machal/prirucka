@@ -89,7 +89,7 @@ CodePen: [cdpn.io/e/WNoNrbB](https://codepen.io/machal/pen/WNoNrbB?editors=0000)
 <!-- .web-only -->
 </div>
 
-## Nezalamuje `wrap-reverse` naopak?
+## Nezalamuje hodnota wrap-reverse naopak?
 
 Všimněte si prosím chování hodnoty `wrap-reverse` – položky se vyskládají dle očekávání zdola, ale zleva doprava, nikoliv naopak, jak by mohl někdo očekávat.
 

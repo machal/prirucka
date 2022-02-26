@@ -88,12 +88,12 @@ Kontejner je nastavený jako `display:flex` a pomocí přepínačů stylujeme pr
 
 Ukázky jsem připravil dvě – v jedné využívám vlastnost `flex-basis` samotnou a ve druhé zároveň s `width`.
 
-### Ukázka bez použití `width` {#ukazka-bez-width}
+### Ukázka bez použití width {#ukazka-bez-width}
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-basis.jpg" width="1600" height="900" alt="CSS vlastnost flex-basis">
 <figcaption markdown="1">
-*Různé možnosti hodnot. Vysvětlujeme je v textu pod obrázkem.*
+*Různé možnosti hodnot flex-basis. Vysvětlujeme je v textu pod obrázkem.*
 </figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ Jakmile nastavíme rozměr (`flex-basis:20%`), chová se vlastnost stejně jako 
 
 CodePen: [cdpn.io/e/vYyNBLr](https://codepen.io/machal/pen/vYyNBLr?editors=0000)
 
-### Ukázka s použitím `width` {#ukazka-s-width}
+### Ukázka s použitím width {#ukazka-s-width}
 
 V druhém CodePenu jsme to zkomplikovali přidáním tohoto stylu:
 
@@ -124,7 +124,7 @@ Tady je potřeba si uvědomit důležitou věc, kterou už jsem zmiňoval – `f
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-basis-width.jpg" width="1600" height="900" alt="CSS vlastnost flex-basis a width">
 <figcaption markdown="1">
-Přidáním šířky se mění situace.
+Přidáním šířky pomocí vlastnosti width se mění situace.
 </figcaption>
 </figure>
 
@@ -141,19 +141,19 @@ CodePen: [cdpn.io/e/poNjzwg](https://codepen.io/machal/pen/poNjzwg?editors=0000)
 
 Z již uvedeného leccos vyplývá, ale myslím, že nebude od věci si přehledně připomenout, jak se liší nastavování rozměrů pomocí `flex-basis` od nastavování rozměrů s použitím `width` a `height`.
 
-### 1) `flex-basis` má přednost {#flexbasis-width-1}
+### 1) Vlastnost flex-basis má přednost {#flexbasis-width-1}
 
 Platí, že při použití obou metod nastavení výšky nebo šířky dostane hodnota ve `flex-basis` přednost, bez ohledu na pořadí uvedení. Zkuste si to případně v ukázce.
 
 CodePen: [cdpn.io/e/vRZWqa](https://codepen.io/machal/pen/vRZWqa?editors=1100)
 
-### 2) `flex-basis` je obousměrné {#flexbasis-width-2}
+### 2) Vlastnost flex-basis je obousměrné {#flexbasis-width-2}
 
 Lze jej použít jako pro výšku, tak pro šířku. Vždy podle směru layoutu a ten určuje nejčastěji vlastnost [`flex-direction`](css-flex-direction.md).
 
 CodePen: [cdpn.io/e/bvLOMv](https://codepen.io/machal/pen/bvLOMv?editors=1100)
 
-### 3) `flex-basis` se nezmenší pod minimální velikost obsahu {#flexbasis-width-3}
+### 3) Vlastnost flex-basis se nezmenší pod minimální velikost obsahu {#flexbasis-width-3}
 
 Na rozdíl od `width` a `height` nemůže být `flex-basis` menší než minimální šířka obsahu, což je například u textu šířka nejdelšího slova.
 

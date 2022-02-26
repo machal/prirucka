@@ -39,13 +39,13 @@ To nás ale od jejich zdokumentování nemůže odradit. A pokud vás ano, mě u
 <figure>
 <img src="../dist/images/original/vdlayout/css-multicol-break.jpg" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
 <figcaption markdown="1">
-*Na obrázku je vidět, že jsme černému prvku zakázali, aby se jeho obsah rozbil do dvou sloupečků. Tím ďábelským nástrojem je zde právě `break-inside:avoid`.*
+Černému prvku jsme zakázali, aby se jeho obsah rozbil do dvou sloupečků. Tím ďábelským nástrojem je zde právě break-inside:avoid.
 </figcaption>
 </figure>
 
 Pojďme si to alespoň teoreticky rozebrat. Je ovšem možné, že v době, kdy toto čtete, už bude podpora lepší.
 
-## `break-before` – zalamování před prvkem {#break-before}
+## Vlastnost break-before – zalamování před prvkem {#break-before}
 
 Vlastnost `break-before` slouží k vynucení nebo zakázání zalomení před prvkem. V kontextu vícesloupcového rozložení jsou možné tyto hodnoty:
 
@@ -53,7 +53,7 @@ Vlastnost `break-before` slouží k vynucení nebo zakázání zalomení před p
 - `avoid` nebo `avoid-column` – zakazuje zalomení před prvkem.
 - `column` – vynucuje zalomení před prvkem.
 
-## `break-after` – zalamování za prvkem {#break-after}
+## Vlastnost break-after – zalamování za prvkem {#break-after}
 
 Toto bychom mohli psát přes kopírák – vlastnost `break-after` vynucuje nebo zakazuje zalomení za prvkem. Možné jsou tyto hodnoty:
 
@@ -61,7 +61,7 @@ Toto bychom mohli psát přes kopírák – vlastnost `break-after` vynucuje neb
 - `avoid` nebo `avoid-column` – zakazuje zalomení za prvkem.
 - `column` – vynucuje zalomení za prvkem.
 
-## `break-inside` – zalamování uvnitř prvku {#break-inside}
+## Vlastnost break-inside – zalamování uvnitř prvku {#break-inside}
 
 Vlastnost `break-inside` můžeme použít k vynucení nebo zakázání zalomení uvnitř prvku. V kontextu vícesloupcového rozložení jsou možné tyto hodnoty:
 

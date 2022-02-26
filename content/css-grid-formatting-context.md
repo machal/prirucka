@@ -29,7 +29,12 @@ Výsledek se různí podle formátovacího kontextu:
 - `display:block` slučuje svislé okraje, takže mezi položkami je shora i zdola mezera jen `1em`.
 - `display:grid` naproti tomu okraje neslučuje, takže mezi jednotlivými .`.item` tvoří mezeru dvakrát `margin`, tedy `2em`.
 
-<p><img src="../dist/images/original/vdlayout/margins-display-block-grid.jpg" width="1920" height="540" alt="Marginy se v CSS gridu neslučují"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/margins-display-block-grid.jpg" width="1920" height="540" alt="Marginy se v CSS gridu neslučují">
+<figcaption markdown="1">
+*Grid vyhání slučování.*
+</figcaption>
+</figure>
 
 Zájemci o více informací nechť prozkoumají následující živou ukázku.
 
@@ -46,13 +51,13 @@ S plovoucími prvky v gridu neuspějete. Pro formátovací kontext mřížky pla
 
 Brrr! Raději pojďme od „floatů“ pryč. Začalo se mi dělat nevolno…
 
-## Vlastnost `vertical-align` nemá na položky mřížky žádný efekt
+## Vlastnost vertical-align nemá na položky mřížky žádný efekt
 
 <span class="book-index" data-book-index="vertical-align"></span>
 
 `vertical-align` slouží ke svislému zarovnání textového obsahu. Pro zarovnání v mřížce zde máme jiné úžasné vlastnosti, o kterých bude ještě řeč – [CSS Box Alignment](css-box-alignment.md).
 
-## Pseudoelementy `::first-line` and `::first-letter` u kontejnerů mřížky nefungují
+## Pseudoelementy ::first-line a ::first-letter u kontejnerů mřížky nefungují
 
 I tohle je naprosto logické. Pseudoelementy pro první řádek a první znak dávají smysl u typografických bloků. Jenže grid je šéf přes layout, nikoliv psaný text.
 
@@ -62,13 +67,14 @@ CodePen: [cdpn.io/e/GRoJmgN](https://codepen.io/machal/pen/GRoJmgN?editors=1100)
 
 ## A co pozicování?
 
-Úplně to sem nepatří, ale je možné, že se vám vynořila v hlavě otázka pozicování. Vlastnost `position` funguje dobře, děkuji za optání.
+Úplně to sem nepatří, ale je možné, že se vám vynořila v hlavě otázka pozicování. Pozicovat můžete samotný grid kontejner, ale i jeho položky, pokud z kontejneru uděláte takzvaný containing block pomocí `position:absolute`. Vyzkoušel jsem to za vás, protože jsem byl zvědavý:
 
-Pozicovat můžete samotný grid kontejner, ale i jeho položky, pokud z kontejneru uděláte takzvaný containing block pomocí `position:absolute`.
-
-Vyzkoušel jsem to za vás, protože jsem byl zvědavý:
-
-<p><img src="../dist/images/original/vdlayout/css-grid-position.jpg" width="1920" height="540"  alt="CSS grid a vlastnost position"></p>
+<figure>
+<img src="../dist/images/original/vdlayout/css-grid-position.jpg" width="1920" height="540"  alt="CSS grid a vlastnost position">
+<figcaption markdown="1">
+Vlastnost position funguje dobře, děkuji za optání.
+</figcaption>
+</figure>
 
 CodePen: [cdpn.io/e/qBbdmrd](https://codepen.io/machal/pen/qBbdmrd?editors=1100)
 

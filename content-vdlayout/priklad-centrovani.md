@@ -70,7 +70,12 @@ Toto je častá potíž začátečníků s flexboxem. Výchozí hodnota vlastnos
 
 O jakou vlastnost jde? Tady máme dobrou příležitost ukázat si tahák, který převezmeme z referenční příručky k CSS Box Alignment.
 
-![Tahák k CSS Box Alignment](../dist/images/original/vdlayout/css-box-alignment-tahak.jpg)
+<figure>
+<img src="../dist/images/original/vdlayout/css-box-alignment-tahak.jpg" alt="Tahák k CSS Box Alignment">
+<figcaption markdown="1">
+*CSS Box Alignment v celé své složité kráse.*
+</figcaption>
+</figure>
 
 Vidíme, že vlastnosti ve výchozím směru layoutu (vodorovně) začínají na `justify-` a ty v příčném směru (ve výchozím nastavení svisle) na `align-`. Snad i chápeme, že dotčená vlastnost se týká položek, takže hlavní podezřelým je zde [vlastnost `align-items`](css-align-items.md).
 

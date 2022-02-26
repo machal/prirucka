@@ -117,7 +117,7 @@ Vzhledem k tomu, že jsme v systému rozvržení pomocí CSS gridu, můžeme pou
 - Stále můžeme porušit automatické umísťování a konkrétní položku vložit na konkrétní místo mřížky. Viz prvek `.positioned` v tomto CodePenu od Rachel Andrew. [cdpn.io/e/PozRvZb](https://codepen.io/rachelandrew/pen/PozRvZb)
 - Je samozřejmě dovoleno používat i roztažení prvků do více buněk mřížky. To je zase vidět na prvku `.landscape` v jiném CodePenu. [cdpn.io/e/QWEmPMK](https://codepen.io/rachelandrew/pen/QWEmPMK)
 
-### `masonry-auto-flow`, kontrola toku položek {#dalsi-grid-flow}
+### Vlastnost masonry-auto-flow, kontrola toku položek {#dalsi-grid-flow}
 
 <span class="book-index" data-book-index="masonry-auto-flow"></span>
 
@@ -127,7 +127,7 @@ Tato vlastnost ještě není naprogramovaná ani ve Firefox Nightly, ale je podo
 - Hodnota `next` – umístí položku na další místo na ose mřížky.
 - Hodnota `ordered` – layout bude vždy v pořadí, v jakém jsou položky v dokumentu, pokud není řečeno jinak pomocí [vlastnosti `order`](css-order.md).
 
-### Zarovnání pomocí `justify-tracks` a `align-tracks` {#dalsi-grid-zarovnani}
+### Zarovnání pomocí vlastností justify-tracks a align-tracks {#dalsi-grid-zarovnani}
 
 <span class="book-index" data-book-index="justify-tracks"></span>
 <span class="book-index" data-book-index="align-tracks"></span>
