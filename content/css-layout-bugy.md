@@ -101,7 +101,7 @@ A co náš dědeček mezi prohlížeči?
 
 Tohle je zajímavější. Internet Explorer byl sice první prohlížeč, který moderní layouty naimplementoval, ale stejně jako všechny ostatní „prvoimplementace“ šlo o pokus plný chyb.
 
-Problémem MSIE tedy není množství chyb, chyby dělají všichni programátoři prohlížečů, ale způsob aktualizace.
+Problémem MSIE tedy není množství chyb (chyby dělají všichni programátoři prohlížečů), ale způsob aktualizace.
 
 Kdysi tak populární prohlížeč od Microsoftu vycházel v nových verzích z dnešního pohledu velmi pomalu, po letech, nikoliv měsících. A navíc – jedenáctá verze Exploreru je poslední a nikdo ji už aktualizovat nebude.
 
@@ -129,13 +129,13 @@ Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohr
 
 <span class="book-index" data-book-index="flex-basis"></span>
 
-Když jsem se vývojářů na Twitteru ptal na jejich mentální zkratky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
+Když jsem se vývojářů na Twitteru ptal na jejich vychytávky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
 
 > U flexboxu jsem se naučil definovat vždy kompletní zápis, tedy „flex: 1 1 auto“ (nespoléhat na default), a pokud to jde, tak používat vlastnost width místo flex-basis nebo obojí.
 
 Vysvětlím to. Zápis `flex:1 1 auto` je zkratka, která v prvním čísle definuje rozsah zvětšování položky, v druhém rozsah zmenšování a ve třetím výchozí velikost, která se ve flexboxu nastavuje vlastností `flex-basis`. Je možné ji nezapsat a ponechat výchozí hodnotu (`flex:auto`), což vám ale v případě nutnosti podpory MSIE nedoporučuji.
 
-Dalším nutným vstřícným krokem je potřeba vyhnout se vlastnosti [vlastnosti `flex-basis`](css-flex-basis.md). Často tedy stačí namísto ní použít `width` nebo `height` a všechno to dobře funguje. I v Exploreru.
+Dalším nutným vstřícným krokem je potřeba vyhnout se [vlastnosti `flex-basis`](css-flex-basis.md). Často tedy stačí namísto ní použít `width` nebo `height` a všechno to dobře funguje. I v Exploreru.
 
 Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podporu Exploreru, neděste se toho. Nic komplikovaného na tom není a používat flexbox i s podporou MSIE 11 je úplně v pohodě.
 
@@ -155,9 +155,9 @@ Mimochodem, o flexboxu a jeho vlastnostech detailně píšu ve čtvrté kapitole
 
 ## Grid {#grid}
 
-V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů.
+V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů:
 
-Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří mají trochu smůlu.
+Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří mají smůlu.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-caniuse.jpg" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
@@ -176,7 +176,7 @@ Na druhou stranu – jde jen o menší podmnožinu současné šíře vlastnost�
 
 Máme zde sice [Autoprefixer](autoprefixer.md), který „současný grid“ umí překládat do podoby „IE gridu“, ale jen částečně a navíc to vyžaduje další znalosti a schopnost tento nástroj bezchybně nastavit.
 
-S gridem v MSIE to prostě je složité a já se vůbec nedivím lidem, kteří říkají: „Skoro na všechno mně stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
+S gridem je to prostě v MSIE složité a já se vůbec nedivím lidem, kteří říkají: „Skoro na všechno mi stačí flexbox“, i když pak flexbox používají pro situace, kde by byl výhodnější grid.
 
 Jo, to když Explorer podporovat nemusíte, to je jiná písnička…
 
@@ -236,7 +236,7 @@ Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 
 Asi nejznámějším bugem, čili chybou v podpoře, je špatná podpora zalamování pomocí [vlastností typu `break-*`](css-multicol-break.md) v prohlížeči Chrome a všech, které z něj vycházejí. V kontextu tématu této knížky jde spíše o drobnost, ale je zde asi největší rozdíl mezi specifikací na papíře a reálným chováním prohlížečů.
 
-Pokud bychom se dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl byl to grid ani flexbox. Pokud jde o moderní prohlížeče, Černého Petra si bohužel vytáhlo vícesloupcové rozvržení. Je to samozřejmě proto, že CSS Multicol je výrazně nejméně používaným systémem rozvržení.
+Pokud bychom se dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl by to grid ani flexbox. Pokud jde o moderní prohlížeče, Černého Petra si bohužel vytáhlo vícesloupcové rozvržení. Je to samozřejmě proto, že CSS Multicol je výrazně nejméně používaným systémem rozvržení.
 
 Více informací najdete na našem oblíbeném webu. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 
@@ -272,7 +272,7 @@ Nepodporované vlastnosti jsou ty, které začínají slovem `place-`, dále vad
 
 </div>
 
-Chybějící podpora `justify-items` i `justify-self` v MSIE u flexboxu je vlastnost, nikoliv bug. Tyto s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Vysvětlím to v příručce[vlastnosti `justify-self`](css-justify-self.md).
+Chybějící podpora `justify-items` i `justify-self` v MSIE u flexboxu je vlastnost, nikoliv bug. Tyto vlastnosti s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Vysvětlím to v příručce[vlastnosti `justify-self`](css-justify-self.md).
 
 V případě, že podporujete MSIE, to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
 
@@ -288,7 +288,7 @@ O zarovnání boxů a jeho konkrétních vlastnostech se dočtete v sedmé kapit
 
 `align-tracks`, `justify-tracks` a další části [layoutu typu masonry](css-masonry.md) v CSS zatím žádný prohlížeč nepodporuje.
 
-Layouty typu Masonry v CSS tedy sledujte, ale pro praktické nasazení využijte jinou cestu.
+Layouty typu masonry v CSS tedy sledujte, ale pro praktické nasazení využijte jinou cestu.
 
 ## Shrnutí podpory
 

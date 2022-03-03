@@ -6,7 +6,7 @@ V tomto speciálním příkladu ze světa známých rozvržení začneme citací
 
 Svatým grálem medicíny je například nalezení léku na rakovinu. Jenže co je „svatý grál“ v oblasti webových layoutů? Nejlépe to opět definuje největší světová encyklopedie:
 
-> Svatým grálem je rozvržení, které má více stejně vysokých sloupců. Je běžně žádané a implementované, ale po mnoho let měly různé způsoby jeho implementace všechny možné nevýhody. Z tohoto důvodu bylo nalezení optimální implementace přirovnáváno k hledání nepolapitelného svatého grálu.
+> Svatým grálem webdesignu je rozvržení, které má více stejně vysokých sloupců. Je běžně žádané a implementované, ale po mnoho let měly různé způsoby jeho implementace všechny možné nevýhody. Z tohoto důvodu bylo nalezení optimální implementace přirovnáváno k hledání nepolapitelného svatého grálu.
 
 Pojďme to raději vizualizovat. Svatý grál mezi layouty vypadá takto:
 
@@ -140,13 +140,13 @@ Pomocí inspekce mřížky ve Firefoxu (nebo Chrome) se nám teď layout krásn�
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-holy-grail-firefox.jpg" width="1600" height="900" alt="Příklad - holy grail ve Firefoxu">
 <figcaption markdown="1">
-*Holy grail layout vizualizovaný ve Firefoxu.*
+„Holy grail layout“ vizualizovaný ve Firefoxu.
 </figcaption>
 </figure>
 
 ## Minimum, maximum, optimum s pomocí funkce clamp()
 
-Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má postranní panel (`.side`) mít šířku 30 % – ovšem s minimem `10em` a maximem `20em`.
+Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má mít postranní panel (`.side`) mít šířku 30 % – ovšem s minimem `10em` a maximem `20em`.
 
 Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce `clamp()`.
 
@@ -157,7 +157,7 @@ Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli.
   }
 ```
 
-Dělá to přesně to, co si myslíte: `30%` v prostředním argumentu je optimální velikost. První a poslední argument dodává minimum a maximum. Podpora této funkce v moderních prohlížečích je výborná, takže ji neváhejte využít.
+Dělá přesně to, co si myslíte: `30%` v prostředním argumentu je optimální velikost. První a poslední argument dodává minimum a maximum. Podpora této funkce v moderních prohlížečích je výborná, takže jí neváhejte využít.
 
 <div class="ebook-only" markdown="1">
 

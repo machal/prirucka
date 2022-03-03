@@ -1,6 +1,6 @@
 # Internet Explorer (je už mrtvý?)
 
-Microsoft Internet Explorer (MSIE) dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné tento starý prohlížeč od Microsoftu podporovat.
+Microsoft Internet Explorer (MSIE) dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné podporovat tento starý prohlížeč od Microsoftu.
 
 <span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
 
@@ -12,30 +12,30 @@ Velmi to záleží na cílové skupině konkrétního projektu, ale drtivá vět
 
 Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl mnoho dobrého. Ne, není to ironie. Jak brzy uvidíte, Explorer dříve stál na světlé straně Síly a možná vás překvapí, že to byl nejpokrokovější prohlížeč své doby.
 
-## Aktuální podíl MSIE mezi uživateli je v ČR mezi 1–2 %. A klesá to
+## Aktuální podíl MSIE mezi uživateli je v ČR mezi 1–2 %. A dál klesá
 
-Podívejte se na graf. Z toho je myslím jasné, že i v České republice bude možné Internet Explorer brzy přestat podporovat.
+Podívejte se na graf. Je z něj myslím jasné, že i v České republice bude možné Internet Explorer brzy přestat podporovat.
 
 <figure>
 <img src="../dist/images/original/vdlayout/msie-stats.jpg" width="1600" height="900" alt="Graf podílu prohlížečů pro MSIE, MS Edge, Firefox">
 <figcaption markdown="1">
-*Nejmenší ze všech nejmenších. Podíl méně významných prohlížečů na trhu v ČR. Vývoj MSIE ukazuje světle modrá linka. Zdroj: [rankings.gemius.com](http://ranking.gemius.com/cz/ranking/browsers/).*
+Nejmenší z nejmenších. Podíl méně významných prohlížečů na trhu v ČR. Vývoj MSIE ukazuje světle modrá linka. Zdroj: [rankings.gemius.com](http://ranking.gemius.com/cz/ranking/browsers/).
 </figcaption>
 </figure>
 
-V Česku měl MSIE v polovině roku 2021 zastoupení kolem 1,5 %. Tato čísla potvrzuje i jiný statistický web, StatCounter, a moje vlastní měření na webech klientů.
+V Česku měl MSIE v polovině roku 2021 zastoupení kolem 1,5 % a začátkem roku 2022 už jen kolem 1 %. Tato čísla potvrzuje i jiný statistický web, StatCounter.
 
-Daleko důležitější je ale trend vývoje. Zatímco začátkem roku 2019 používala dědeček prohlížeč ještě zhruba desetina uživatelů, zkraje roku 2020 už jej pro přístup na weby využívalo jen zhruba 5 %. No a v roce 2021 to je kolem dvou procent. Každý rok to tedy klesne na polovinu a méně.
+Daleko důležitější je ale trend vývoje. Zatímco začátkem roku 2019 používala dědeček prohlížeč ještě zhruba desetina uživatelů, zkraje roku 2020 už jej pro přístup na weby využívalo jen zhruba 5 %. Každý rok tedy jeho popularita klesne na polovinu a méně.
 
 <!-- AdSnippet -->
 
-Například bratrům Slovákům zde můžeme jen závidět. V zemi pod Tatrami je totiž zastoupení MSIE podle čísel Gemiusu už v roce 2021 nulové.
+Ovšem bratrům Slovákům zde můžeme jen závidět. V zemi pod Tatrami je totiž zastoupení MSIE podle čísel Gemiusu už od roku 2021 nulové.
 
 ## Výjimky potvrzují pravidlo. Sledujte statistiky a příjmy
 
 Jak zjistit, jestli můžu Explorer přestat podporovat?
 
-Podíl MSIE na používání se liší web od webu, takže například na svém blogu, Vzhůru dolů, vidím v březnu 2021 pouhých 0,27 % návštěv od uživatelů s tímto prohlížečem. Na webech klientů ale Google Analytics ukazují čísla mezi 1–2 %, někde i více.
+Podíl MSIE na používání se liší web od webu, takže například na svém blogu, Vzhůru dolů, nevidím v březnu 2022 prakticky žádné návštěvy od uživatelů s tímto prohlížečem. Na webech klientů ale Google Analytics ukazují čísla vyšší.
 
 Podíl prohlížečů zjistíte například právě v Google Analytics (Publikum > Technologie > Prohlížeč).
 
@@ -44,7 +44,7 @@ Je samozřejmě otázka, při jakém podílu na návštěvnosti je možné podpo
 - Kolik času a peněz musíte do podpory investovat. Troufám si říct, že toto číslo bude u Exploreru vysoké, protože už na příkladu CSS gridu je vidět, jak moc odlišné řešení je pro Explorer nutné dělat.
 - Jak důležití jsou uživatelé prohlížeče pro výdělečnost vašeho projektu.
 
-Ten druhý bod je přitom klíčový. Vyfiltrujte si v Google Analytics tržby uživatelů Exploreru a porovnejte to se svými náklady.
+Ten druhý bod je přitom klíčový. Vyfiltrujte si v Google Analytics tržby uživatelů Exploreru a porovnejte je se svými náklady.
 
 Takto to pojali například vývojářky a vývojáři v Rohlík.cz. Podíl MSIE je na Rohlíku nízký, jenže přepočteno na tržby se to pořád vyplatí.
 
@@ -100,7 +100,7 @@ Z jeho textu, zmiňujícího mnoho inovací Exploreru, jsem vybral pár bodů, k
 
 1. Internet Explorer 4 zlepšil práci s DOMem tím, že umožnil programový přístup ke každému prvku na stránce prostřednictvím `document.all`, což byl předchůdce `document.getElementById()`. Ve stejné verzi se také poprvé objevila vlastnost `innerHTML`.
 2. Exploreru také vděčíme za vznik bublání událostí (event bubbling), tedy vlastnosti DOMu, bez které si dnes nedokážeme představit vývoj webů. Kromě toho vytvořili v Microsoftu řadu dalších událostí, které se nakonec staly součástí standardů W3C: `beforeunload`, `mouseenter`, `mouseleave` a další.
-3. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámy (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární, například pro vkládání komponent třetích stran, jako je reklama nebo přehrávače videí z YouTube.
+3. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámy `<frame>` také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární, například pro vkládání komponent třetích stran, jako je reklama nebo přehrávače videí z YouTube.
 4. Často se zapomíná, že v Microsoftu nepřímo vymysleli Ajax. Zpracování XML na straně klienta bylo součástí implementace XMLHttpRequest, která byla poprvé představena jako součást rozšíření ActiveX v páté verzi Internet Exploreru.
 5. Internet Explorer 3 byl také první prohlížeč, který vsadil na CSS. V té době totiž konkurenční společnost Netscape prosazovala alternativní návrh, JavaScript Style Sheets (JSSS). Dodávám, že byť Netscape následně CSS začal implementovat, byl to začátek konce tohoto prohlížeče, protože používání CSS zde bylo velmi chybové. MSIE 4 byl první browser s rozumnou implementací základů CSS a i díky tomu se stal nejpoužívanějším prohlížečem světa.
 6. První implementace box modelu v Internet Explorer 5 interpretovala šířku a výšku tak, že prvek má mít celkovou velikost včetně vnitřních okrajů a rámečku. To byl základ pro pozdější standardizovanou vlastnost `box-sizing:border-box`, i když v té době to bylo od Microsoftu opravdu nepěkné a webařům značně zavařil.

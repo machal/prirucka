@@ -36,7 +36,7 @@ Mně samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v t�
 Pokud chcete „peny“ zkoušet, což vám velmi doporučuji, udělejte prosím následující:
 
 1. Zřiďte si na CodePenu účet. Je to zdarma a velmi jednoduché.
-1. Moje CodePeny si forkněte, čili uložte kopii do vlastního účtu.
+1. Moje CodePeny si „forkněte“, čili uložte kopii do vlastního účtu.
 1. Responzivitu si emulujte v tomto rozložení a pohybem šoupátka ze strany na stranu.
 1. Upravujte kód dle libosti. Experimentujte. Snažte se ho vylepšit nebo rozbít.
 
@@ -61,7 +61,9 @@ Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi 
 
 ### Internet Explorer, (téměř) mrtvý prohlížeč
 
-Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil startovat nový projekt a podporovat na něm prohlížeč <span class="book-index" data-book-index="Internet Explorer (MSIE)">Internet Explorer (MSIE)</span> – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
+<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
+
+Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil podporovat při startu nového projektu prohlížeč Internet Explorer (MSIE) – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
 
 Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech.
 

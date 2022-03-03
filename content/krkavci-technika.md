@@ -24,7 +24,7 @@ width: --dyn_length: calc(
 
 Raven Technique ale nechci úplně shazovat. Pokud něco jako podmínku `@container` z Container Queries na vašem projektu zoufale potřebujete, věnujte mi ještě chvíli pozornosti.
 
-Havraní technika je založená na matematických funkcích a dalších novinkách v CSS:
+Krkavčí technika je založená na matematických funkcích a dalších novinkách v CSS:
 
 - [Funkce `calc()`](css3-calc.md) umožní vložit namísto hodnoty matematický výraz.
 - [Funkce `min()` a `max()`](css-min-max-clamp.md) vracejí nejnižší, respektive nejvyšší hodnotu ze všech uvedených v argumentech.
@@ -104,4 +104,4 @@ Ale zkušenější z vás to jistě ocení a je fajn, že jsme si udělali výle
 
 CodePen: [cdpn.io/e/QWpqJjJ](https://codepen.io/machal/pen/QWpqJjJ?editors=1100)
 
-Zájemci o více informací, mrkněte se na celý článek „The Raven Technique: One Step Closer to Container Queries“. [vrdl.in/raven](https://css-tricks.com/the-raven-technique-one-step-closer-to-container-queries/)
+Zájemci o více informací ať se mrknou na celý článek „The Raven Technique: One Step Closer to Container Queries“. [vrdl.in/raven](https://css-tricks.com/the-raven-technique-one-step-closer-to-container-queries/)

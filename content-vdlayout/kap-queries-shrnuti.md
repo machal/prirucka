@@ -2,7 +2,7 @@
 
 Otestujte si, co jste se naučili v kapitole o layoutových dotazech.
 
-1. **Jaký je rozdíl mezi Media Queries a Container Queries**  
+1. **Jaký je rozdíl mezi Media Queries a Container Queries?**  
 a. jde o chyták, Container Queries neexistují  
 b. v Media Queries se ptáme na velikost okna, v Container Queries na velikost rodičovského prvku  
 c. v Media Queries se ptáme na velikost rodičovského prvku, v Container Queries na velikost okna  
@@ -31,7 +31,7 @@ c. vlastnost `flex-wrap` ve flexboxu a zápis `repeat(auto-fit, minmax(…, …)
 
 Řešení:
 
-1. **Jaký je rozdíl mezi Media Queries a Container Queries**  
+1. **Jaký je rozdíl mezi Media Queries a Container Queries?**  
 b. v Media Queries se ptáme na velikost okna, v Container Queries na velikost rodičovského prvku  
 1. **Jak zapíšeme dotaz na minimální šířku okna?**  
 c. `@media (min-width: …)`  

@@ -17,7 +17,7 @@ c) vrací všechny názvy oblastí v daném layoutu
 1. **Co dělá vlastnost `grid`?**  
 a) slouží k zapnutí layoutu do mřížky  
 b) jde o zkratku pro definici vzhledu mřížky  
-c) tato vlastnost neexistuje
+c) nic, tuto vlastnost podporoval jen prohlížeč Netscape
 1. **Co vykreslí zápis `grid-template-columns:repeat(12, 1fr)`?**  
 a) dvanáct sloupečků o šířce `1fr`  
 b) vykreslil by dvanáct sloupečků, ale jednotka `fr` neexistuje  

@@ -10,7 +10,7 @@ Slíbil jsem stručnost, takže to vezměme v bodech.
 
 ## 1994: „Je mi líto, ale jste v háji.“
 
-Možnosti stylování dokumentů jsou mizerné. Výborně to vyjadřuje mimo jiné také Marc Andreessen, spoluzakladatel Netscape a pozdější člen představenstva Facebooku, v e-mailovém fóru WWW-Talk. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v sázecím programu LaTeX (nebo alespoň jako ve Wordu), všem prý odpovídá: „Sorry you’re screwed.“
+Možnosti stylování dokumentů jsou mizerné. Mimo jiné to výborně vyjadřuje v e-mailovém fóru WWW-Talk také Marc Andreessen, spoluzakladatel Netscapu a pozdější člen představenstva Facebooku. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v sázecím programu LaTeX (nebo alespoň jako ve Wordu), všem prý odpovídá: „Sorry, you’re screwed.“
 
 ## 1996: FRAME
 
@@ -118,7 +118,7 @@ No – a když není žádná implementace v prohlížečích, návrhy specifika
 
 Webaři mezitím skřípou zuby u každého `float`. A pak si na dlouhou dobu zvyknou.
 
-## 2009: Flexbox přichází na scénu
+## 2009: Na scénu přichází flexbox
 
 Vzniká první specifikace [flexboxu](css-flexbox.md):
 
@@ -199,4 +199,4 @@ Pokud byste se do historie chtěli ponořit více, doporučím vám tyto dva čl
 - „The Story of CSS grid, from Its Creators“ od Aarona Gustafsona. [vrdl.in/vdghist](https://alistapart.com/article/the-story-of-css-grid-from-its-creators/)
 - „A Look Back at the History of CSS“ od Jaye Hoffmanna. [vrdl.in/csshist](https://css-tricks.com/look-back-history-css/)
 
-My se od historie specifikací CSS layoutů přesuneme  dnešním možnostem tvorby rozvržení. Ano, myslím ty, které nejsou předmětem této knížky. Ty, o kterých se už dnes slušní frontendisti raději nebaví.
+My se od historie specifikací CSS layoutů přesuneme k dnešním možnostem tvorby rozvržení. Ano, myslím ty, které nejsou předmětem této knížky. Ty, nichž se už dnes slušní frontendisti raději nebaví.

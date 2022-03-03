@@ -2,7 +2,7 @@
 
 Milé čtenářky, milí čtenáři,
 
-kaskádové styly už nejsou, čím bývaly. Během těch více než 20 let, kdy CSS sleduji, píšu o nich a přemýšlím nad nimi, se změnily z triviálního jazyka pro popis barevnosti dokumentu k robustnímu systému schopnému deklarovat vzhled dokumentů, aplikací, ale třeba i knížek.
+kaskádové styly už nejsou tím, čím bývaly. Během těch více než 20 let, kdy CSS sleduji, píšu o nich a přemýšlím nad nimi, se změnily z triviálního jazyka pro popis barevnosti dokumentu k robustnímu systému schopnému deklarovat vzhled dokumentů, aplikací, ale třeba i knížek.
 
 Kdysi bylo možné „céeseska“ umět jakoby mimochodem vedle hlavní odbornosti vývojářů nebo designérů. Dnes tvrdím, že není v silách sebelepších specialistů znát všechny možnosti stylů. Myslím si, že je na čase, aby vznikaly profese zaměřené jen na určitou část CSS, a je tudíž paradoxem, že odborníků na CSS jako celek je jako šafránu.
 
@@ -13,4 +13,4 @@ Jenže CSS mám pořád opravdu hodně rád. Deklarace dnes častěji čtu než 
 I proto vznikla tato kniha o nových layoutech v CSS. Aby vám ve složitém světě ukázala cestu, naučila vás triky, které vás možná nenapadly. Je tu proto, abyste se do ní mohli kdykoliv vrátit. Věřím, že pro vás bude jako mapa. A doufám, že vás tahle mapa bude zároveň bavit.
 
 Martin Michálek  
-v Praze, únor 2022
+v Praze, březen 2022

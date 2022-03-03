@@ -47,7 +47,7 @@ Ale vysvětlujte začátečníkovi, jak udělat rozvržení pomocí vlastnosti `
 
 V druhé polovině první dekády 21. století (sic!) začaly vznikat nástroje, které měly práci s CSS usnadňovat. A taky usnadňovaly.
 
-Vznik CSS frameworků podpořily problémy v kompatibilitě napříč prohlížeči, které vznikaly i při tvorbě na pohled jednoduchých rozvržení.
+Vznik CSS frameworků podpořily problémy v kompatibilitě napříč prohlížeči, jež vznikaly i při tvorbě na pohled jednoduchých rozvržení.
 
 <span class="book-index" data-book-index="CSS frameworky"></span>
 
@@ -104,6 +104,6 @@ Možná, že to nebude snadné, ale společně to zvládneme. Ostatně – celá
 Luke Skywalker: „Umět pohnout kamenem je jedna věc, ale tohle je něco jiného.“  
 Mistr Yoda: „Ne, není to jiné. Jiné je to v tvé hlavě. Musíš se teď odnaučit, co tě dřív učili.“  
 Luke Skywalker: „Dobře, já to teda zkusím.“  
-Mistr Yoda: „Ne, nezkusíš. Uděláš to nebo ne. Už žádné zkusím!“  
+Mistr Yoda: „Ne, nezkusíš. Uděláš to, nebo ne. Už žádné zkusím!“
 
 V dalších řádcích budu trochu jako mistr Yoda. Ale hodný mistr Yoda.

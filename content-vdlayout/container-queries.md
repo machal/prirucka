@@ -17,7 +17,7 @@ Skeptik by se mě na tomto místě zeptal, jaký to má háček. Ano, má to há
 
 ## Těžká hlava autora technické knížky
 
-Psaní knížek je maraton. Pokud dlouho pracujete na technické knížce (a já na ni v době dokončování během ledna 2022 pracuji už dva roky), může se vám stát, že v průběhu psaní vznikne technologie, kvůli které mohu celý hotový materiál vyhodit do koše. Nebo se na něj přinejmenším radikálně jinak podívám.
+Psaní knížek je maraton. Pokud dlouho pracujete na technické knížce (a já na ní v době dokončování během ledna 2022 pracuji už dva roky), může se vám stát, že v průběhu psaní vznikne technologie, kvůli které mohu celý hotový materiál vyhodit do koše. Nebo se na něj přinejmenším radikálně jinak podívám.
 
 To druhé se mi děje právě teď, když píšu tyto řádky. Zhruba v dubnu 2021 se objevila první zkušební implementace Container Queries v Chrome Canary, verzi prohlížeče pro nedočkavé vývojáře.
 
@@ -83,9 +83,9 @@ Je možné, že i v době, kdy toto čtete, budou Container Queries schované za
 
 ## Specifikace a další prohlížeče
 
-Na Container Queries se těším jako malý Jarda a tak po očku vývoj sleduji. V Chromu se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právě tuto verzi.
+Na Container Queries se těším jako malý Jarda, a tak po očku vývoj sleduji. V Chromu se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právě tuto verzi.
 
-Když se podíváme na další dva zásadní prohlížeče (Safari a Firefox), zdá se, že Container Queries hodlají implementovat. Ale v systémech pro správu rozpracovaných vlastností je u obou jen pustý a prázdný záznam bez viditelné práce a bez jakékoliv diskuze.
+Když se podíváme na další dva zásadní prohlížeče (Safari a Firefox), zdá se, že hodlají Container Queries implementovat. Ale v systémech pro správu rozpracovaných vlastností je u obou jen pustý a prázdný záznam bez viditelné práce a bez jakékoliv diskuze.
 
 Problém bude také v tom, že specifikace je ve velmi raném stádiu vývoje a často se mění. Je ale strašně zajímavé ten vývoj sledovat, protože se tam např. objevují novinky jako jednotky relativní k šířce kontejneru komponenty. To by se měl malý Jarda zase na co těšit!
 
@@ -199,7 +199,7 @@ Rozhodování, zda se vám vyplatí dělat náhradní řešení nebo zda vůbec 
 
 ## Něco pro alternativce: krkavčí technika
 
-Pro pořádek ještě zmíním, že existují pokusy dosáhnout zde popsané funkčnosti za pomocí přiohnutí už existujících vlastností.
+Pro pořádek ještě zmíním, že existují pokusy dosáhnout zde popsané funkčnosti za pomoci přiohnutí už existujících vlastností.
 
 Vezměme například „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Její výhodou je podpora ve všech moderních prohlížečích.
 

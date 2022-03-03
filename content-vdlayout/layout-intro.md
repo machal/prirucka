@@ -25,7 +25,7 @@ Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něc
 
 - [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi. (Specifikace o flexboxu mluví jako o <span class="book-index" data-book-index="Flexbox">„CSS Flexible Box Layout“</span> a já pak více ve čtvrté kapitole.)
 - [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více. (Gridu se ve specifikaci říká <span class="book-index" data-book-index="Grid">„CSS Grid Layout“</span>, píšu o něm v páté kapitole.)
-- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu rádi. (Plný název podle specifikace je <span class="book-index" data-book-index="Multicol">„CSS Multi-column Layout“</span> a můj detailní rozbor je v šesté kapitole.)
+- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu vděční. (Plný název podle specifikace je <span class="book-index" data-book-index="Multicol">„CSS Multi-column Layout“</span> a můj detailní rozbor je v šesté kapitole.)
 
 Tak a teď máte nové kamarády, gratuluji vám.
 
@@ -37,7 +37,7 @@ Ta paralela s Tinderem samozřejmě trošku skřípe, ale pojďme u ní ještě 
 
 Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (on) s nejlepší kámoškou (kámošem), pro jistotu?
 
-Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct Box Align.
+Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct také Box Align.
 
 <span class="book-index" data-book-index="Box Align"></span>
 <span class="book-index" data-book-index="Zarovnání boxů"></span>
@@ -65,7 +65,7 @@ Začneme tím nejpopulárnějším parťákem.
 
 ## Flexbox: příklad s obrázkem a textem
 
-Cílem je dosáhnout rozvržení, kde na jedné straně je obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
+Cílem je dosáhnout rozvržení, kde je na jedné straně obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
 
 Začneme asi s HTML, což?
 
@@ -94,7 +94,7 @@ Už jen tímto zápisem dosáhneme toho, aby se potomci (prvky `figure-image` a 
 
 <div class="ebook-only" markdown="1">
 
-Pokud je tu někdo, kdo by potřeboval vysvětlit `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde se jí věnuji do detailu. Ale v tuhle chvíli nám bude stačit vědět, že zapíná flexboxový layout.
+Pokud je tu někdo, kdo by potřeboval vysvětlit `display` v CSS, nechť zabrousí [do poslední kapitoly](css-display.md), kde se jí věnuji do detailu. Ale v tuhle chvíli nám stačí vědět, že zapíná flexboxový layout.
 
 </div>
 
@@ -134,7 +134,7 @@ Vytvořili jsme rozvržení, kde prvek `figure-image` bude zabírat jednu třeti
 
 Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 
-Zájemce nyní odkážu na zdrojové kódy ve službě CodePen, což ostatně v knížce budu dělat často.
+Zájemce nyní pošlu na zdrojové kódy ve službě CodePen, což ostatně budu dělat v knížce často.
 
 CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
@@ -276,7 +276,7 @@ Už v první části knížky jsem použil několik jednotek a myslím, že by b
 
 V Media Queries v knížce používám jednotně `em`, ale v praxi je možné použít také `rem` a pokud vám nevadí velmi specifické problémy se zvětšování stránky v Safari, lze využít také `px`.
 
-Velice často zde také budu používat bezjednotkového hodnoty, které určují podíl prvku na rozměrech celku. Jde o čísla ve vlastnosti `flex`, zde již použité, hodnoty s jednotkou `fr` ve gridu. Ale nebudeme předbíhat.
+Velice často zde také budu používat bezjednotkové hodnoty, které určují podíl prvku na rozměrech celku. Jde o čísla ve vlastnosti `flex`, zde již použité, hodnoty s jednotkou `fr` ve gridu. Ale nebudeme předbíhat.
 
 Více o používání jednotek v CSS píšu [v poslední, přílohové kapitole](jednotky.md).
 

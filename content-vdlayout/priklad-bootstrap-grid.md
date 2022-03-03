@@ -2,7 +2,7 @@
 
 <span class="book-index" data-book-index="Bootstrap"></span>
 
-Pokud tento text nečtete v krytu, kde se mnoho let připravujete na zombie apokalypsu, nebo pokud jste se právě teď dozvěděli, že existuje něco jako webová vývojařina, myslím, že můžu předpokládat, že znáte framework Bootstrap.
+Pokud tento text nečtete v krytu, kde se mnoho let připravujete na zombie apokalypsu, nebo pokud jste se právě teď nedozvěděli, že existuje něco jako webová vývojařina, myslím, že můžu předpokládat, že znáte framework Bootstrap.
 
 Tento frontendový framework se proslavil snadností stavby uživatelského rozhraní, zejména pro vývojáře nebo amatéry, kterým nejsou CSS, HTML a JavaScript úplně blízké.
 
@@ -36,7 +36,7 @@ V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v akt
 
 ## Proč nepoužít Bootstrap?
 
-Pokud opravdu nebaštíte konzervy v zemljance a neotevřeli jste knížku náhodně právě na této stránce, z dřívějších textů víte, že pro layout typu „mřížka“ by se daleko více hodila… No… Mřížka. Překvapivě.
+Pokud opravdu nebaštíte konzervy v zemljance a neotevřeli jste knížku náhodně právě na této stránce, z dřívějších textů víte, že pro layout typu „mřížka“ by se daleko více hodila… no… mřížka. Překvapivě.
 
 Bootstrap zatím CSS grid nepodporuje, hlavně kvůli [kompatibilitě s Internet Explorerem](msie.md), ale to se v další verzi změní. Můžete však mít i jiné důvody, proč nepoužít pro rozvržení nejpopulárnější webové frameworky.
 
@@ -135,4 +135,4 @@ Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden Code
 
 CodePen: [cdpn.io/e/dJxBGz](https://codepen.io/machal/pen/dJxBGz?editors=1100)
 
-Zpráva, která by se vám na konci tohoto příkladu měla zapsat do paměti, zní: Pokud hledáte jednoduchou možnost tvorby layoutu v mřížce jako nativně podporovanou alternativu k Bootstrapu a podobným frameworkům zvažte CSS grid.
+Zpráva, která by se vám na konci tohoto příkladu měla zapsat do paměti, zní: Pokud hledáte jednoduchou možnost tvorby layoutu v mřížce jako nativně podporovanou alternativu k Bootstrapu a podobným frameworkům, zvažte CSS grid.

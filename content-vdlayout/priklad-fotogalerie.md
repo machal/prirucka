@@ -76,7 +76,7 @@ Chybí mi tady ještě jedna věc, a to zákaz zalomení uvnitř prvku `<figure>
 
 Také [vlastnost `break-inside`](css-multicol-break.md) si můžete prostudovat v referenční příručce na konci knížky. Celé řešení si pak můžete projít a otestovat v CodePenu.
 
-CodePenu: [cdpn.io/e/ZEKKozg](https://codepen.io/machal/pen/ZEKKozg?editors=1100)
+CodePen: [cdpn.io/e/ZEKKozg](https://codepen.io/machal/pen/ZEKKozg?editors=1100)
 
 Zamysleme se však také nad nevýhodami volby vícesloupcového layoutu pro kód zadání.
 
@@ -105,7 +105,7 @@ RAM, to je zkratka pro Repeat, Auto, Minmax. V popisování začínám zevnitř 
 
 - [Funkci `minmax()`](css-minmax.md) jsem zde už vysvětloval. Tady ji využíváme k nastavení minimální šířky elementu na `150px` a maximální `1fr`.
 - [Funkci `repeat()`](css-repeat.md) už také znáte. Zjednodušuje zápis opakovaných údajů v `grid-template`.
-- Namísto čísla v prvním argumentu `repeat()` se na nás ale překvapeně kouká klíčové slovo `auto-fit`, které prohlížeči říká, aby prostor vyplnil maximálním možným roztažením buněk, které už na řádku existují.
+- Namísto čísla v prvním argumentu `repeat()` se na nás ale k našemu překvapení kouká klíčové slovo `auto-fit`, které prohlížeči říká, aby prostor vyplnil maximálním možným roztažením buněk, jež už na řádku existují.
 
 Jinak řečeno – zápisem `repeat(auto-fit, minmax(150px, 1fr))` říkáme: Dej na řádek libovolný počet položek. Roztáhni je klidně do jejich maximální obsahové šířky, ale nikdy je nesmršťuj pod 150 pixelů.
 

@@ -3,7 +3,7 @@
 <span class="book-index" data-book-index="Media Queries"></span>
 <span class="book-index" data-book-index="@media"></span>
 
-Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovém světu zavládly mobily. Jde o základní stavební kámen responzivního designu, takže při stavění CSS layoutů bez nich nepostavíme ani boudu pro psa.
+Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovému světu zavládly mobily. Jde o základní stavební kámen responzivního designu, takže při stavění CSS layoutů bez nich nepostavíme ani boudu pro psa.
 
 Dovolím si zde shrnout jejich úplné základy, pro případ, že v Media Queries plavete. Vy zkušenější, kteří nestojíte o opakování tématu, můžete úvodní část s čistým svědomím přeskočit a rovnou si najít nadpis „Limity Media Queries“.
 
@@ -186,7 +186,7 @@ V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
 
 Vidíme zde tedy obalující `.container` pro celou stránku. Pak samotný media object s třídou `.item` a v něm části pro obrázek `.item-image` a pro text `.item-text`.
 
-Samotné texty nedávají smysl a to je dobře. Jsou generované službou Blábot, jejíž kouzlo je v tom, že dodává texty připomínající češtinu, ale zároveň nepoutající pozornost. Takové české Lorem Ipsum. [blabot.cz](https://www.blabot.cz/)
+Samotné texty nedávají smysl a to je dobře. Jsou generované službou Blábot, jejíž kouzlo je v tom, že dodává texty připomínající češtinu, ale zároveň nepoutající pozornost. Takové české Lorem ipsum. [blabot.cz](https://www.blabot.cz/)
 
 Základní CSS našeho příkladu vypadá bez rozvržení také vcelku jednoduše:
 
@@ -284,13 +284,13 @@ A chybí nám zde Media Queries:
 }  
 ```
 
-Zopakujme si, že zápisem `@media` vytvářím podmínku, platící na určitém médiu. V tomto případě na šířce viewportu, proto `min-width`. Deklarace uvnitř CSS prohlížeč aplikuje jen od určité šířky. Čárymáryfuk a je tu vodorovné rozvržení našeho objektu.
+Zopakujme si, že zápisem `@media` vytvářím podmínku, platící na určitém médiu. V tomto případě na šířce viewportu, proto `min-width`. Deklarace uvnitř CSS aplikuje prohlížeč jen od určité šířky. Čárymáryfuk a je tu vodorovné rozvržení našeho objektu.
 
 A co to číslo `428px`? To by bylo na dlouhé povídání. A taky že bude. Vždyť k němu celou dobu trpělivě směřuji.
 
 ## Limity Media Queries
 
-Tvorba breakpointů (jinak též „bodů zlomu“) je samostatné téma, ostatně odkázal jsem vás výše na docela dlouhý text, kde vás s ním můžu potrápit, chcete-li.
+Tvorba breakpointů (jinak též „bodů zlomu“) je samostatné téma, ostatně odkázal jsem vás výše na docela dlouhý text, kde kde se s ním můžete potrápit, chcete-li.
 
 Pojďme si ale ukázat, jak konkrétně jsem zde uvažoval a došel k hodnotě `428px`:
 Chtěl bych, aby vodorovný layout naskočil nejdříve v momentě, kdy obrázek dosáhne svých maximálních rozměrů. Řekněme, že v tomto případě jsem jej připravil tak, aby se v prohlížeči mohl zobrazovat až do šířky 300 pixelů. Proč ale v Media Query není číslo `300px`?
@@ -314,6 +314,6 @@ Media Queries jsou totiž zaměřené na parametry celé stránky, respektive vi
 
 Pro rozvržení celé stránky jsou skvělé. Jenže my se zde snažíme vymyslet layout komponenty, tedy malého výseku stránky.
 
-Počítání okrajů mezi samotnou komponentou a stránkou je jen ta menší část problému. Představte si, že byste byli nuceni správný breakpoint vymýšlet v situaci, kdy objekt bude součástí většího layoutu a ve stránce se bude opakovat. Někdy se bude na stránce vyskytovat sám, někdy budou dva vedle sebe, někdy třeba tři…
+Počítání okrajů mezi samotnou komponentou a stránkou je jen ta menší část problému. Představte si, že byste byli nuceni vymýšlet správný breakpoint v situaci, kdy objekt bude součástí většího layoutu a ve stránce se bude opakovat. Někdy se bude na stránce vyskytovat sám, někdy budou dva vedle sebe, někdy třeba tři…
 
 Naštěstí se blýská na lepší časy a kromě dotazů na šířku stránky bychom mohli brzy v prohlížečích mít také dotazy na šířku konkrétní komponenty.

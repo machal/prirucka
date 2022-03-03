@@ -2,10 +2,10 @@
 
 Otestujte si, co jste se naučili v osmé kapitole.
 
-1. **Jaký podíl na českém trhu má Internet Explorer ke konci jara 2021?**  
+1. **Jaký podíl na českém trhu má Internet Explorer začátkem roku 2022?**  
 a) kolem 42 %  
 b) kolem 10 %  
-c) kolem 2 %
+c) kolem 1 %
 1. **Co je logické pořadí prvků?**  
 a) vizuální pořadí, jak prvky vidíme ve stránce  
 b) pořadí prvků v HTML  
@@ -27,8 +27,8 @@ c) jde o chyták, tento problém vzniká jen u rozvržení gridem
 
 Řešení:
 
-1. **Jaký podíl na českém trhu má Internet Explorer ke konci jara 2021?**  
-c) kolem 2 %
+1. **Jaký podíl na českém trhu má Internet Explorer začátkem roku 2022?**  
+c) kolem 1 %
 1. **Co je logické pořadí prvků?**  
 c) pořadí prvků, jak se jimi prochází, např. pomocí klávesy Tab  
 1. **Jaké vlastnosti mohou měnit logické pořadí ve stránce?**  

@@ -28,7 +28,7 @@ Takže pokud se nechystáte vykreslovat desítky tisíc prvků do layoutu e-shop
 
 V případě zájmu běžte přímo na text „CSS grid vs Flexbox: Performance Evaluation“ na smc.it. [vrdl.in/gridflexper](https://techblog.smc.it/en/2020-08-03/grid-vs-flexbox-performance)
 
-Ten složitý celostránkový layout italského testu nám ale může, když už ne jinak, posloužit jako pěkný oslí můstek k zajímavějšímu testu.
+Ten složitý celostránkový layout italského testu nám ale může posloužit – když už ne jinak – jako pěkný oslí můstek k zajímavějšímu testu.
 
 ## Pokud nemusíte, nepoužívejte flexbox pro celostránkové layouty
 
@@ -126,7 +126,7 @@ Rozdíly ve vykreslování gridu a flexboxu, na které poukazuje Jake Archibald.
 Ještě to popíšu, vypadá to asi následovně:
 
 - V případě [gridu](css-grid.md) je layout připravený už při první verzi vykreslené stránky a dále se již nemění. Kontejner určuje layout obsahu.
-- [Flexbox](css-flexbox.md) vykreslí nejprve hlavní část s textem. Pak si prohlížeč jakoby vzpomene, že zde jsou ještě dvě boční části a vykreslí je. Dojde tedy k překreslení. Obsah určuje layout kontejneru.
+- [Flexbox](css-flexbox.md) vykreslí nejprve hlavní část s textem. Pak si prohlížeč jakoby vzpomene, že zde jsou ještě dvě boční části, a vykreslí je. Dojde tedy k překreslení. Obsah určuje layout kontejneru.
 
 Připomínám, že nechtěné překreslení layoutu uživatele rozhodně nepotěší a webu zhorší metriku Cumulative Layout Shift, kterou se zabývá Google v rámci svých Web Vitals. [vrdl.cz/p/metrika-cls](https://www.vzhurudolu.cz/prirucka/metrika-cls)
 
@@ -177,4 +177,4 @@ Vychází z toho ale jedno ponaučení – pokud kódujete celostránkový layou
 
 Nebo pro tyhle účely – komplexní nebo celostránková rozvržení – prostě používejte grid.
 
-Ještě vám dlužím odkaz na článek „Don’t use flexbox for overall page layout“ od Jakea Archibalda. [vrdl.in/6pajl](https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)
+Ještě vám dlužím odkaz na Archibaldův článek „Don’t use flexbox for overall page layout“. [vrdl.in/6pajl](https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)

@@ -9,7 +9,7 @@ První test je rozehřívací.
 1. **K čemu slouží CSS Multi-column Layout?**  
 a) ke flexibilnímu rozložení položek vedle sebe  
 b) k automatické vícesloupcové sazbě textu  
-c) k rozložení do do tvaru mřížky
+c) k rozložení do tvaru mřížky
 1. **Co udělá zápis `display:flex`?**  
 a) zobrazí prvek ve stránce jako úhlovou brusku, flexu  
 b) neudělá nic, je potřeba dalších vlastností jako `flex-template`  

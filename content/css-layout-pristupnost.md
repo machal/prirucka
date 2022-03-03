@@ -29,7 +29,7 @@ Logické pořadí je zpravidla pořadí  zápisu kódu a jeho využití si můž
 Například stroje vyhledávačů, jako je Google. Roboti postupují podle pořadí v HTML nebo DOMu.
 - _Sekvenční navigace stránkou_  
 Tento typ procházení využívají například uživatelé odečítačů obrazovky nebo uživatelé, kteří z nějakého důvodu nemohou použít jiný způsob navigace – ať už z důvodu trvalého či dočasného postižení rukou, jako je třeba zlomenina.
-- _Hlasem a jinými médii_  
+- _Hlas a jiná média_  
 Přeskupení vizuálního pořadí nezmění řazení v nevizuálních médiích, například v řeči.
 
 Může se tedy stát, že někdo, kdo se naviguje pomocí klávesnice, bude procházet odkazy na vašem webu a najednou odskočí z dolní do horní části dokumentu, protože tam je další položka logického pořadí.
@@ -72,7 +72,7 @@ Pojďme si to ukázat na jednoduchém demu postaveném na vlastnosti `order` a [
 </div>
 ```
 
-Ukázka obsahuje sadu odkazů proto, abychom mohli obsahem navigovat pomocí tabulátoru.
+Jak vidíte, tentokrát jsem vyměnil `div`y za odkazy, a to proto, abychom mohli obsahem navigovat pomocí tabulátoru.
 
 Kontejner (`.container`) je obyčejný flexbox, ale za ukázání kódu stojí předpis pro třetí položku:
 
@@ -167,9 +167,9 @@ CodePen: [cdpn.io/e/PoNVgyv](https://codepen.io/machal/pen/PoNVgyv)
 
 ## Pomůže aria-flowto? {#aria}
 
-Léonie Watson v článku „Flexbox & the keyboard navigation disconnect“ (odkaz níže) už před lety upozorňovala na vlastnost `aria-flowto`, která v rámci specifikace [WAI-ARIA](wai-aria.md) umožňuje právě lokální změnu navigačního pořadí. Je to prostě takový `tabindex` pro komponenty.
+Léonie Watson v článku „Flexbox & the keyboard navigation disconnect“ už před lety upozorňovala na vlastnost `aria-flowto`, která v rámci specifikace [WAI-ARIA](wai-aria.md) umožňuje právě lokální změnu navigačního pořadí. Je to prostě takový `tabindex` pro komponenty.
 
-Hned jsem to vyzkoušel, ale zdá se, že stále platí to, co píše Léonie v článku z roku 2016: Tahle vlastnost má extrémně špatnou podporu v prohlížečích. Alespoň něco se v prohlížečích nemění.  
+Hned jsem to vyzkoušel, ale zdá se, že stále platí to, co píše Léonie v článku z roku 2016: Tahle vlastnost má extrémně špatnou podporu v prohlížečích. Alespoň něco se v prohlížečích nemění… 
 
 CodePen: [cdnp.io/e/zYqeXeE](https://codepen.io/machal/pen/zYqeXeE)
 

@@ -61,7 +61,7 @@ Snad je evidentní, že pomocí `gap:0.5rem` přidáváme mezery mezi jednotliv�
 
 [Vlastnost `align-items`](css-align-items.md) nás možná přinutí si vzpomenout na tahák z předchozího příkladu. Zde chceme zarovnávat položky layoutu (`-items`) na příčné ose (`align-`).
 
-Hodnota `baseline` je velmi zajímavá – umožní nám zarovnávat prvky na _účaří_. Jde o typografický pojem, pod kterým si můžete představit neviditelnou linku, na kterou se zapisují jednotlivé znaky, asi jako jste to dělali ve škole do sešitu. Jinak se jí ještě říká _základní dotažnice_, případně anglicky _baseline_.
+Hodnota `baseline` je velmi zajímavá – umožní nám zarovnávat prvky na _účaří_. Jde o typografický pojem, pod nímž si můžete představit neviditelnou linku, na kterou se zapisují jednotlivé znaky, asi jako jste to dělali ve škole do sešitu. Jinak se jí ještě říká _základní dotažnice_, případně anglicky _baseline_.
 
 Typografické elementy, jako je text a formulářové prvky typu vstupní pole nebo tlačítka, je pro lepší čitelnost vhodnější zarovnat právě na účaří, nikoliv třeba doprostřed.
 
@@ -237,7 +237,7 @@ Zde by se prostě daleko víc hodilo namísto dotazů na média a klíčového s
 
 ## Co jsme se naučili?
 
-Rád bych tady ještě shrnul, co jsem se pokusil vás tímto příkladem naučit nebo vám to alespoň připomenout:
+Rád bych tady ještě shrnul, co jsem se vás pokusil tímto příkladem naučit, nebo vám to alespoň připomenu:
 
 1. Pro rozvržení jednoduše skládaná do jednoho nebo druhého směru, ve kterých se hodně pracuje s mezerami, se více hodí CSS grid.
 2. Dozvěděli jsme se, že grid umí automaticky vytvářet řádku a členy těchto řádků roztahuje do plné šířky, takže to nepotřebujeme dělat ručně jako u flexboxu.

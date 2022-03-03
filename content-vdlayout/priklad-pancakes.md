@@ -41,7 +41,7 @@ HTML pro jeden prvek, jednu hromadu lívanců, jsme vymysleli následovně:
 </div>
 ```
 
-Všimněte si parametru `contenteditable`. Tímto způsobem dovolujeme, aby bylo přímo do rozhraní možné psát nebo vkládat obsah. V ukázce jsem to povolil proto, abyste si mohli zkusit vložit složitější text a layout tak rozbít.
+Všimněte si parametru `contenteditable`. Tímto způsobem dovolujeme, aby bylo přímo do rozhraní možné psát nebo vkládat obsah. V ukázce jsem to povolil proto, abyste si mohli zkusit vložit složitější text, a layout tak rozbít.
 
 Opět je zde možnost teď zavřít knížku a zkusit si zadání nakódovat. Sledujte předpřipravený CodePen.
 
@@ -60,7 +60,7 @@ Pro znalce gridu bude CSS opravdu velmi jednoduché:
 
 V šabloně (vlastnosti [začínající `grid-template`](grid-template-rows-columns.md)) tentokrát nedefinujeme sloupce, ale řádky. Jak vidíte, jsou tři. První a poslední, což jsou v příkladu elementy `.box-head` a `.box-foot`, mají výšku podle vlastního obsahu, tedy `auto`.
 
-Prostřední buňka připadající na prvek `.box-body` má vždy výšku `20rem`. Zde zejména proto, že hromad lívanců máme vždy několik vedle sebe a nechtěli bychom, aby některé byly vyšší než jiné.
+Prostřední buňka připadající na prvek `.box-body` má pokaždé výšku `20rem`. Zde zejména proto, že hromad lívanců máme vždy několik vedle sebe a nechtěli bychom, aby některé byly vyšší než jiné.
 
 CodePen: [cdpn.io/e/abJamrr](https://codepen.io/machal/pen/abJamrr?editors=1100)
 

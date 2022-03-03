@@ -146,7 +146,7 @@ Pojďme si to ukázat přímo v kódu. HTML je pořád stejné, mění se jen ka
 }
 ```
 
-Jádro triku je v zápisu `repeat(auto-fit, minmax(300px, 1fr))`, proto právě této části pojďme věnovat zvýšenou péči:
+Jádro triku je v zápisu `repeat(auto-fit, minmax(300px, 1fr))`, proto právě této části věnujeme zvýšenou péči:
 
 - [Funkce `repeat()`](css-repeat.md) zajistí opakované vykreslení buněk mřížky. Prostě místo `1fr 1fr 1fr` uvedeme `repeat(3, 1fr)`.
 - Kouzlo přichází, když namísto počtu uvedeme do prvního parametru `auto-fit`, který zajistí roztahování a smršťování již existujících buněk layoutu.
@@ -205,7 +205,7 @@ Pojďme to ale trochu hacknout a použít pro naši mediální komponentu. HTML 
 }
 ```
 
-Vezměme do ruky lupu a podívejme se na ten kód pořádně:
+Vezměme do ruky lupu a podívejme se na tento kód pořádně:
 
 - `.item` - Možná jste zpozorněli už na řádku se selektorem. Ano, je to tak, CSS Multiple Column nám dovoluje definovat layout bez Queries už na úrovni rodičovského prvku.
 - `column-width:300px` – Tahle [vlastnost](css-multicol-columns.md) definuje doporučenou šířku sloupce, tedy položky layoutu, ale nijak neříká, kolik jich zde má být. Ideální věc pro bezdotazové rozvržení, jen nad ním tu lupu ještě chvíli podržte!
@@ -236,7 +236,7 @@ Tak či tak, obě řešení využívají CSS Multicol Layout pro situace, na kte
 
 Není to úplně předmětem této knížky, ale ani tuto metodu nechci přejít mlčením. Jde o způsob, jak udělat rozvržení bez Media Queries, zcela mimo světy gridu, flexboxu a vícesloupcového layoutu.
 
-Trik „The Fab Four“, který Rémi Parmentier pojmenoval podle přezdívky kapely Beatles, byl původně určen pro tvorbu responzivních e-mailů. Jak možná mnozí víte, e-mailové klienty netvoří zrovna přátelskou partu co se Media Queries týče.
+Trik „The Fab Four“, který Rémi Parmentier pojmenoval podle přezdívky kapely Beatles, byl původně určen pro tvorbu responzivních e-mailů. Jak možná mnozí víte, e-mailové klienty netvoří zrovna přátelskou partu, co se Media Queries týče.
 
 Technika je založená na tomto kódu pro jednotlivé položky layoutu:
 

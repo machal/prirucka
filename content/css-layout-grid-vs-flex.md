@@ -43,7 +43,7 @@ Jakmile je váš layout víceřádkový, typu mřížka, a nevystačíte si s po
 
 ### U flexboxu kraluje obsah, u gridu zase nastavený layout
 
-Grid je více zaměřený na layout, kdy se obsah musí vždy přizpůsobit definované mřížce. Layout je král – a obsah, tedy text obrázky a tak dál, se mu musí přizpůsobit. Této filozofii se v odborné hantýrce říká „grid in“, takže „z mřížky směrem dovnitř“.
+Grid je zaměřenější na layout, kdy se obsah musí vždy přizpůsobit definované mřížce. Layout je král – a obsah, tedy text obrázky a tak dál, se mu musí přizpůsobit. Této filozofii se v odborné hantýrce říká „grid in“, takže „z mřížky směrem dovnitř“.
 
 Flexbox je naopak navržený pro situace, kdy se layout musí přizpůsobit obsahu. Výhodou je, že nemusíte často nastavovat parametry layoutu a díky rozměrům obsahu to nějak dopadne. Tento přístup k vykreslování layoutu naleznete pod pojmem „content out“, tedy „z obsahu směrem ven“.
 
@@ -60,7 +60,7 @@ Samozřejmě, že i z tohoto pravidla existuje řada výjimek. Mřížka napří
 
 Tím, že je flexbox jednosměrný, bude se vám častěji hodit na zarovnávání „věcí“ vedle sebe nebo pod sebe. Užijete jej pro záložkové i globální navigace nebo například zarovnání jednořádkových formulářů. Více jej oceníte u menších komponent uvnitř stránky.
 
-Existují také studie, které zjistily, že flexbox se při použití obrovského množství elementů chová při vykreslování celé stránky [o trochu líněji](css-layout-vykon.md), jak na okraj zmiňuji v osmé kapitole. Ne že by to bylo zvlášť podstatné, ale opět to ukazuje na podstatu flexboxu – vycházet z rozměrů vykreslených prvků.
+Existují také studie, které zjistily, že flexbox se při použití obrovského množství elementů chová při vykreslování celé stránky [o trochu líněji](css-layout-vykon.md), jak na okraj zmiňuji v osmé kapitole. Ne že by to bylo zvlášť důležité, ale opět to ukazuje na podstatu flexboxu – vycházet z rozměrů vykreslených prvků.
 
 Náš milý grid je obousměrný, takže je vhodné s ním rozvrhnout například složitější formuláře, výpis produktů v kategorii e-shopu nebo celou stránku. Grid je příhodnější pro layout větších celků.
 
