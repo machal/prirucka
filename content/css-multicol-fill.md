@@ -2,7 +2,7 @@
 
 Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení do několika sloupečků tak, aby všechny zabíraly přibližně stejnou výšku.
 
-<span class="book-index" data-book-index="column-fill"></span>
+<div class="book-index" data-book-index="column-fill"></div>
 
 <div class="connected" markdown="1">
 

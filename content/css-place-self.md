@@ -2,7 +2,7 @@
 
 Vlastnost `place-self` určí zarovnání položky na hlavní i příčné ose pro layouty v CSS.
 
-<span class="book-index" data-book-index="place-self"></span>
+<div class="book-index" data-book-index="place-self"></div>
 
 <div class="connected" markdown="1">
 

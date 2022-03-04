@@ -1,6 +1,6 @@
 # No Queries
 
-<span class="book-index" data-book-index="No Queries"></span>
+<div class="book-index" data-book-index="No Queries"></div>
 
 Prošli jsme dva typy podmínek, podle nichž můžete přizpůsobovat rozložení stránky nebo její části v různě širokých rodičovských prvcích.
 
@@ -232,7 +232,7 @@ Tak či tak, obě řešení využívají CSS Multicol Layout pro situace, na kte
 
 ## No Queries mimo CSS layouty: Technika „The Fab Four“
 
-<span class="book-index" data-book-index="Fab Four"></span>
+<div class="book-index" data-book-index="Fab Four"></div>
 
 Není to úplně předmětem této knížky, ale ani tuto metodu nechci přejít mlčením. Jde o způsob, jak udělat rozvržení bez Media Queries, zcela mimo světy gridu, flexboxu a vícesloupcového layoutu.
 

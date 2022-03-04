@@ -1,8 +1,8 @@
 # Porovnávací funkce v CSS: min(), max() a clamp()
 
-<span class="book-index" data-book-index="min()"></span>
-<span class="book-index" data-book-index="max()"></span>
-<span class="book-index" data-book-index="clamp()"></span>
+<div class="book-index" data-book-index="min()"></div>
+<div class="book-index" data-book-index="max()"></div>
+<div class="book-index" data-book-index="clamp()"></div>
 
 Funkce, které se uvádějí místo hodnot v deklaracích stylů, umožňují porovnat dvě a více hodnot:
 

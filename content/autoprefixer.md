@@ -1,6 +1,6 @@
 # Autoprefixer
 
-<span class="book-index" data-book-index="Autoprefixer"></span>
+<div class="book-index" data-book-index="Autoprefixer"></div>
 
 Autoprefixer je – jak z názvu vyplývá – automatizační nástroj, který přidává prohlížečové prefixy do CSS kódu.
 

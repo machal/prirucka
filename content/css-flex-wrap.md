@@ -14,7 +14,7 @@ Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda 
 
 <div class="ebook-only" markdown="1">
 
-<span class="book-index" data-book-index="flex-wrap"></div>
+<div class="book-index" data-book-index="flex-wrap"></div>
 
 Poznámka: všechny texty příruček jsou k vidění naživo na na Vzhůru dolů:
 

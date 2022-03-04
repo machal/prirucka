@@ -2,8 +2,8 @@
 
 „Box Alignment“ je modul specifikace CSS, který definuje zarovnání boxů v různých modelech rozvržení CSS: blokovém, tabulkovém, vícesloupcovém, flexboxu nebo gridu.
 
-<span class="book-index" data-book-index="Box Align"></span>
-<span class="book-index" data-book-index="Zarovnání boxů"></span>
+<div class="book-index" data-book-index="Box Align"></div>
+<div class="book-index" data-book-index="Zarovnání boxů"></div>
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)

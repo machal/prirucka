@@ -4,9 +4,9 @@ Nativní proměnné v CSS jsou fajn. Od proměnných v preprocesorech, které mo
 
 Pokud jde o moderní prohlížeče, můžeme říci, že CSS proměnné mají plnou podporu.
 
-<span class="book-index" data-book-index="Proměnné"></span>
-<span class="book-index" data-book-index="Autorské vlastnosti"></span>
-<span class="book-index" data-book-index="var()"></span>
+<div class="book-index" data-book-index="Proměnné"></div>
+<div class="book-index" data-book-index="Autorské vlastnosti"></div>
+<div class="book-index" data-book-index="var()"></div>
 
 <div class="ebook-only" markdown="1">
 
@@ -62,7 +62,7 @@ Teoreticky byste tedy v příkladu výše mohli založit novou vlastnost (`--col
 
 ## Limity „autorských vlastností“ {#limity}
 
-<span class="book-index" data-book-index="env()"></span>
+<div class="book-index" data-book-index="env()"></div>
 
 Mluvit jen o „CSS proměnných“ je nepřesné i proto, že je nemůžeme používat jako proměnné univerzální. Jejich použití je možné jen tam, kde vkládáte hodnoty standardních CSS vlastností. V Media Queries to například nehrozí:
 

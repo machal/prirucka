@@ -1,6 +1,6 @@
 # Jednotky pro tvorbu webu (em, rem, %, px, vh, vw): Kde použít jakou?
 
-<span class="book-index" data-book-index="Jednotky"></span>
+<div class="book-index" data-book-index="Jednotky"></div>
 
 Pojďme si tady shrnout všechny CSS jednotky použitelné v dnešním webdesignu. A na příkladu ukázat, k čemu se která hodí.
 

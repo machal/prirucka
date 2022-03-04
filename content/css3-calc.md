@@ -2,7 +2,7 @@
 
 Funkce `calc()` v CSS umožňuje vložit matematický výraz místo hodnoty vlastnosti.
 
-<span class="book-index" data-book-index="calc()"></span>
+<div class="book-index" data-book-index="calc()"></div>
 
 Je velmi dobře podporovaná. Je užitečná. A je škoda, že ji kodérky a kodéři nepoužívají častěji. Pojďme to zkusit zlepšit. Nejprve si ukažme dvě jednoduchá využití:
 

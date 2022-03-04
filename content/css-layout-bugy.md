@@ -1,7 +1,7 @@
 # Podpora layoutů v prohlížečích
 
-<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
-<span class="book-index" data-book-index="Podpora v prohlížečích"></span>
+<div class="book-index" data-book-index="Internet Explorer (MSIE)"></div>
+<div class="book-index" data-book-index="Podpora v prohlížečích"></div>
 
 <div class="ebook-only" markdown="1">
 
@@ -127,7 +127,7 @@ Tyhle chyby detailně znát nemusíte. Většinu vaší práce s flexboxem neohr
 
 ### Zkuste vynechat flex-basis
 
-<span class="book-index" data-book-index="flex-basis"></span>
+<div class="book-index" data-book-index="flex-basis"></div>
 
 Když jsem se vývojářů na Twitteru ptal na jejich vychytávky spojené s flexboxem a gridem, Daniel Střelec napsal jednu, se kterou se ztotožňuji:
 
@@ -210,7 +210,7 @@ Všechny ostatní chyby jsou, zdá se, opravené. Takže, když nebereme v úvah
 
 ## Vícesloupcové rozvržení, CSS Multiple Columns {#css-multicol}
 
-<span class="book-index" data-book-index="Multicol"></span>
+<div class="book-index" data-book-index="Multicol"></div>
 
 [Multicolumn layout](css-multicolumn.md) v CSS, takže sada specifikovaná kolem vlastnosti `column`, je na tom s podporou v prohlížečích poměrně dobře.
 
@@ -248,7 +248,7 @@ O vícesloupcovém layoutu čtěte více v šesté kapitole.
 
 ## A co zarovnávání, CSS Box Align? {#box-align}
 
-<span class="book-index" data-book-index="Zarovnání boxů"></span>
+<div class="book-index" data-book-index="Zarovnání boxů"></div>
 
 Čtvrtou specifikací z party systémů rozvržení v CSS je [zarovnání boxů](css-box-alignment.md), které je nedílnou součástí navrhování layoutů v gridu a flexboxu.
 

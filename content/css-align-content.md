@@ -2,7 +2,7 @@
 
 Vlastnost `align-content` definuje, jak prohlížeč distribuuje prostor mezi položkami obsahu podél příčné (nebo blokové) osy kontejneru layoutu.
 
-<span class="book-index" data-book-index="align-content"></span>
+<div class="book-index" data-book-index="align-content"></div>
 
 <div class="connected" markdown="1">
 

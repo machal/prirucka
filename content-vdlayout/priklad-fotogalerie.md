@@ -1,6 +1,6 @@
 # Galerie bez Media Queries
 
-<span class="book-index" data-book-index="No Queries"></span>
+<div class="book-index" data-book-index="No Queries"></div>
 
 Fotogalerie, nebo prostě seznam položek vyskládaný do mřížky, to je návrhový vzor, kterým se dnešní weby jen hemží a ve vývojářské praxi se mu nedá vyhnout.
 

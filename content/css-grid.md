@@ -1,6 +1,6 @@
 # CSS grid
 
-<span class="book-index" data-book-index="Grid"></span>
+<div class="book-index" data-book-index="Grid"></div>
 
 CSS grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
 

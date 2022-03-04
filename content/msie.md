@@ -2,7 +2,7 @@
 
 Microsoft Internet Explorer (MSIE) dělá vývojářům starosti. Používat moderní vlastnosti jako [CSS grid](css-grid.md) je složitější a někdy i nemožné, pokud je na projektu nutné podporovat tento starý prohlížeč od Microsoftu.
 
-<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
+<div class="book-index" data-book-index="Internet Explorer (MSIE)"></div>
 
 Pokud Internet Explorer stále ještě podporujete, myslím si, že byste od této praxe mohli začít upouštět. To je důvod, proč píšu tenhle text.
 

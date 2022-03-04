@@ -1,6 +1,6 @@
 # Mřížka jako v Bootstrapu
 
-<span class="book-index" data-book-index="Bootstrap"></span>
+<div class="book-index" data-book-index="Bootstrap"></div>
 
 Pokud tento text nečtete v krytu, kde se mnoho let připravujete na zombie apokalypsu, nebo pokud jste se právě teď nedozvěděli, že existuje něco jako webová vývojařina, myslím, že můžu předpokládat, že znáte framework Bootstrap.
 

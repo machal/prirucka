@@ -1,7 +1,7 @@
 # Media Queries
 
-<span class="book-index" data-book-index="Media Queries"></span>
-<span class="book-index" data-book-index="@media"></span>
+<div class="book-index" data-book-index="Media Queries"></div>
+<div class="book-index" data-book-index="@media"></div>
 
 Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovému světu zavládly mobily. Jde o základní stavební kámen responzivního designu, takže při stavění CSS layoutů bez nich nepostavíme ani boudu pro psa.
 
@@ -149,7 +149,7 @@ V tomto bodě začnu předpokládat, že o Media Queries už něco víte, a spol
 
 ## Příklad: Media Object
 
-<span class="book-index" data-book-index="Media Object"></span>
+<div class="book-index" data-book-index="Media Object"></div>
 
 „Media Object“ je ve webdesignu velmi populární komponenta. Tak populární, že se bez ní nemůže obejít žádná knížka. A jde-li o knížku o layoutu v CSS, tuplem ne.
 

@@ -153,7 +153,7 @@ Tlačítko v Bootstrapu 3:
 
 ```html
 <button class="btn" aria-label="Left Align">
-  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></div>
 </button>
 ```
 

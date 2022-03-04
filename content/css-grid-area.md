@@ -2,7 +2,7 @@
 
 CSS vlastnost `grid-area` slouží k umísťování položek v definovaném CSS gridu.
 
-<span class="book-index" data-book-index="grid-area"></span>
+<div class="book-index" data-book-index="grid-area"></div>
 
 <div class="connected" markdown="1">
 

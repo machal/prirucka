@@ -2,7 +2,7 @@
 
 Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-column Layout můžeme obsah stránky vysázet do více sloupců definované šířky podobně jako v novinové sazbě.
 
-<span class="book-index" data-book-index="Multicol"></span>
+<div class="book-index" data-book-index="Multicol"></div>
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)

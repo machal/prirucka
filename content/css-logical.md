@@ -1,6 +1,6 @@
 # Logické vlastnosti a rozměry v CSS (Logical Properties and Values)
 
-<span class="book-index" data-book-index="Logické vlastnosti"></span>
+<div class="book-index" data-book-index="Logické vlastnosti"></div>
 
 V CSS často pracujeme s rozměry v určitém směru. Občas se ale může stát, hlavně při práci s cizokrajnými jazyky, že typografii nebo layout potřebujeme sázet v jiných směrech než zleva doprava jako naši mateřštinu.
 
@@ -84,8 +84,8 @@ CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 
 ## Směr blokový a řádkový {#smer}
 
-<span class="book-index" data-book-index="Bloková osa"></span>
-<span class="book-index" data-book-index="Inline osa"></span>
+<div class="book-index" data-book-index="Bloková osa"></div>
+<div class="book-index" data-book-index="Inline osa"></div>
 
 Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba uvědomit si, že vycházejí z obecné vlastnosti CSS – dvou směrů: blokového a řádkového.
 
@@ -100,7 +100,7 @@ Pokud od CSS chceme, aby umělo pracovat s různými světovými jazyky, je nutn
 
 ## Směr toku dokumentu versus směr layoutu {#smer-layoutu}
 
-<span class="book-index" data-book-index="Směr layoutu"></span>
+<div class="book-index" data-book-index="Směr layoutu"></div>
 
 Pojmy jako řádková osa a bloková osa můžete znát z nových layoutových modulů, jako je [grid](css-grid.md). Směr toku dokumentu je ale něco jiného než směr layoutu.
 
@@ -166,7 +166,7 @@ Než je začnete používat, dobře si vše otestujte v různých prohlížečí
 
 ### Box model {#vlastnosti-hodnoty-box}
 
-<span class="book-index" data-book-index="Box model"></span>
+<div class="book-index" data-book-index="Box model"></div>
 
 Pro box model máme hezký obrázek s porovnáním fyzických a logických variant:
 

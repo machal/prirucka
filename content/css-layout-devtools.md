@@ -1,7 +1,7 @@
 # CSS layout a DevTools
 
-<span class="book-index" data-book-index="DevTools"></span>
-<span class="book-index" data-book-index="Prohlížeče"></span>
+<div class="book-index" data-book-index="DevTools"></div>
+<div class="book-index" data-book-index="Prohlížeče"></div>
 
 Vsadím se, že už jen při listování touto knížkou jste si všimli, že rozvržení v CSS jsou sakra složitá věc.
 

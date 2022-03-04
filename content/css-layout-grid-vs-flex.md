@@ -4,7 +4,7 @@ Nyní se zaměříme na jednotlivé systémy rozvržení a povíme si více o ro
 
 ## Multicolumn layout, expert na vícesloupcovou sazbu textu
 
-<span class="book-index" data-book-index="Multicol"></span>
+<div class="book-index" data-book-index="Multicol"></div>
 
 Tohle bude rychlé. Už totiž víte, že [multicol](css-multicolumn.md) je určený pro vícesloupcovou sazbu textu, nikoliv pro rozvržení rozhraní.
 
@@ -12,8 +12,8 @@ Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobn
 
 ## Grid vs. flexbox
 
-<span class="book-index" data-book-index="Grid"></span>
-<span class="book-index" data-book-index="Flexbox"></span>
+<div class="book-index" data-book-index="Grid"></div>
+<div class="book-index" data-book-index="Flexbox"></div>
 
 Tyto dva systémy rozvržení tvoří jádro knížky, a proto se jim budeme věnovat s patřičnou péčí.
 
@@ -65,9 +65,9 @@ Představa mřížky je zde zásadní. A úplně nejlepší je, když mřížku 
 
 ## Kompatibilita s Internet Explorerem je silná stránka flexboxu
 
-<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
-<span class="book-index" data-book-index="Fallback"></span>
-<span class="book-index" data-book-index="Náhradní řešení"></span>
+<div class="book-index" data-book-index="Internet Explorer (MSIE)"></div>
+<div class="book-index" data-book-index="Fallback"></div>
+<div class="book-index" data-book-index="Náhradní řešení"></div>
 
 Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z MSIE jedenácté verze. Pak je potřeba zvažovat, zda je možné grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát.
 

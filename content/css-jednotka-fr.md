@@ -2,8 +2,8 @@
 
 Jedná se o flexibilní jednotku, která reprezentuje podíl na volném prostoru v CSS gridu. Proto `fr`, jako fraction unit.
 
-<span class="book-index" data-book-index="fr (jednotka)"></span>
-<span class="book-index" data-book-index="Jednotky"></span>
+<div class="book-index" data-book-index="fr (jednotka)"></div>
+<div class="book-index" data-book-index="Jednotky"></div>
 
 <div class="connected" markdown="1">
 

@@ -2,7 +2,7 @@
 
 Vlastnost `align-self` nastavuje zarovnání položky na příčné (jinak též blokové) ose layoutu.
 
-<span class="book-index" data-book-index="align-self"></span>
+<div class="book-index" data-book-index="align-self"></div>
 
 <div class="connected" markdown="1">
 

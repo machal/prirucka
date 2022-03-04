@@ -2,7 +2,7 @@
 
 Vlastnost `justify-self` určuje zarovnání položky na hlavní ose (jinak též řádkové ose).
 
-<span class="book-index" data-book-index="justify-self"></span>
+<div class="book-index" data-book-index="justify-self"></div>
 
 <div class="connected" markdown="1">
 

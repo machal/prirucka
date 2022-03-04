@@ -2,7 +2,7 @@
 
 Vlastnost `justify-items` definuje na kontejneru layoutu zarovnání položek na hlavní (jinak též řádkové) ose.
 
-<span class="book-index" data-book-index="justify-items"></span>
+<div class="book-index" data-book-index="justify-items"></div>
 
 <div class="connected" markdown="1">
 

@@ -2,7 +2,7 @@
 
 Subgrid umožní vytvořit zanořenou mřížku, která zároveň podědí layout rodičovského gridu. Je to velmi praktické, ale zatím podporované jen ve Firefoxu.
 
-<span class="book-index" data-book-index="Subgrid"></span>
+<div class="book-index" data-book-index="Subgrid"></div>
 
 <div class="connected" markdown="1">
 

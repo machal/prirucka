@@ -2,7 +2,7 @@
 
 Úkolem vlastnosti `place-content` je specifikovat rozdělení prostoru mezi položkami na hlavní i příčné ose kontejneru pro layouty v CSS.
 
-<span class="book-index" data-book-index="place-content"></span>
+<div class="book-index" data-book-index="place-content"></div>
 
 <div class="connected" markdown="1">
 

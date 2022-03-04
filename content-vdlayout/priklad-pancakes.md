@@ -85,6 +85,6 @@ Ještě doplním, že v „nastavovacím“ kódu, který je v CodePenech schova
 
 Kromě okrajů v `margin` a `padding` si prosím povšimněte definice rozvržení flexboxem, umístěné na rodičovském prvku nad jednotlivými hromádkami lívanců. [`display:flex`](css-display.md) už znáte, ale [vlastnost `flex-wrap`](css-flex-wrap.md) jsme v příkladech ještě neměli. Je velmi důležitá, protože prvkům rozvržení umožňuje zalamovat se na další řádky.
 
-Všimněte si i deklarace `overflow:hidden`, která obsahu v prvku `.box-body` zabraňuje v přetečení mimo vyhrazený prostor výšky `20rem`. Zde byste samozřejmě mohli namítnout, že lepší než fixní omezení obsahu by zde bylo mít jakousi vnitřní mřížku, která prvky v jednotlivých hromadách lívanců pěkně propojí a zajistí výšku podle nejvyššího z nich. <span class="book-index" data-book-index="Subgrid">Řešení</span> se jmenuje [subgrid](css-subgrid.md), píšu o něm v páté kapitole, ale v době psaní zatím není podporováno všemi prohlížeči.
+Všimněte si i deklarace `overflow:hidden`, která obsahu v prvku `.box-body` zabraňuje v přetečení mimo vyhrazený prostor výšky `20rem`. Zde byste samozřejmě mohli namítnout, že lepší než fixní omezení obsahu by zde bylo mít jakousi vnitřní mřížku, která prvky v jednotlivých hromadách lívanců pěkně propojí a zajistí výšku podle nejvyššího z nich. <div class="book-index" data-book-index="Subgrid">Řešení</span> se jmenuje [subgrid](css-subgrid.md), píšu o něm v páté kapitole, ale v době psaní zatím není podporováno všemi prohlížeči.
 
 Máte? Tak pojďme dál.

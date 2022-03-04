@@ -1,6 +1,6 @@
 # CSS grid v Internet Exploreru
 
-<span class="book-index" data-book-index="Internet Explorer (MSIE)"></span>
+<div class="book-index" data-book-index="Internet Explorer (MSIE)"></div>
 
 „Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z 10 důvodů, proč lidé ještě v roce 2022 CSS grid nepoužívají.
 
@@ -73,7 +73,7 @@ Než se k tomu dostaneme, musím zmínit jednu nevýhodu.
 
 ### Proč layout zapisuji takhle složitě? Protože Autoprefixer
 
-<span class="book-index" data-book-index="Autoprefixer"></span>
+<div class="book-index" data-book-index="Autoprefixer"></div>
 
 Vy znalejší jste si jistě všimli, že pro takto jednoduchý layout je zbytečné definovat šablonu pojmenování oblastí – `grid-template-areas`.
 
@@ -192,7 +192,7 @@ Automatické umísťování ale u jednodušších layoutů udělat jde, jak za 
 
 ## Au­to­ma­tic­ké umís­ťo­vá­ní do mříž­ky (autoplacement)
 
-<span class="book-index" data-book-index="Autoplacement"></span>
+<div class="book-index" data-book-index="Autoplacement"></div>
 
 *Autoplacement* je další důležitá vlastnost gridu, Explorer ji neumí, ale i tady vám může částečně pomoci Autoprefixer.
 

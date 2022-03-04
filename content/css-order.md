@@ -2,8 +2,8 @@
 
 Vlastnost `order` nastavuje pořadí položky v kontejneru rozvržení v CSS.
 
-<span class="book-index" data-book-index="order"></span>
-<span class="book-index" data-book-index="Pořadí v layoutu"></span>
+<div class="book-index" data-book-index="order"></div>
+<div class="book-index" data-book-index="Pořadí v layoutu"></div>
 
 <div class="connected" markdown="1">
 
@@ -139,7 +139,7 @@ Jsou zde ale i další vědomosti, o kterých byste měli mít ponětí, než si
 
 ## Ošemetná změna pořadí z pohledu přístupnosti {#pristupnost}
 
-<span class="book-index" data-book-index="Přístupnost"></span>
+<div class="book-index" data-book-index="Přístupnost"></div>
 
 Ve specifikaci se píše:
 

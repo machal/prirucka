@@ -2,8 +2,8 @@
 
 V CSS nebo JavaScriptu se nám občas hodí napsat kód, který rozlišuje varianty podle podpory určitých CSS vlastností.
 
-<span class="book-index" data-book-index="@supports"></span>
-<span class="book-index" data-book-index="Feature Queries"></span>
+<div class="book-index" data-book-index="@supports"></div>
+<div class="book-index" data-book-index="Feature Queries"></div>
 
 K tomu můžeme použít poměrně nové pravidlo `@supports`, součást specifikace „CSS Conditional Rules Module“.
 
@@ -108,7 +108,7 @@ Aby nedošlo k záměně mezi `and` a `or`, syntaxe je specifikována tak, aby b
 
 ## Prohlížečové prefixy {#prefixy}
 
-<span class="book-index" data-book-index="Prefixy"></span>
+<div class="book-index" data-book-index="Prefixy"></div>
 
 Dalším překvapením může být nutnost používat všechny prefixové vlastnosti. Pokud máte v cílové skupině uživatele prohlížečů, které vlastnost podporují jen s použitím prefixů, musíte je uvést všechny:
 
@@ -180,7 +180,7 @@ Ti z vás, které jsem ještě neunavil detailním líčením, si možná všiml
 
 ## CSS hacky a progressive enhancement {#hacky}
 
-<span class="book-index" data-book-index="Progressive Enhancement"></span>
+<div class="book-index" data-book-index="Progressive Enhancement"></div>
 
 Udělejme si teď pro zajímavost výpravu do historie. `@supports` totiž navazuje na silnou epochu „CSS hacků“, kterou jsme k všeobecné nelibosti prožívali zhruba v první dekádě 21. století.
 

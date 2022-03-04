@@ -64,7 +64,7 @@ Zde je ale samozřejmě potřeba zvážit možné negativní [vlivy na přístup
 
 ## 6) Automatické umístění položek do mřížky
 
-<span class="book-index" data-book-index="Autoplacement"></span>
+<div class="book-index" data-book-index="Autoplacement"></div>
 
 Díky vlastnosti známé jako „autoplacement“ není nutné položkám gridu definovat, do kterých buněk mřížky je chceme umístit.
 

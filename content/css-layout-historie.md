@@ -1,6 +1,6 @@
 # Velmi stručná historie layoutů v CSS
 
-<span class="book-index" data-book-index="Historie"></span>
+<div class="book-index" data-book-index="Historie"></div>
 
 Pokud se těšíte na psaní kódu, tuhle část můžete v klidu přeskočit. Ale věřte mi – pokud bych si myslel, že vás bude nudit, do knížky bych ji nedával.
 
@@ -14,13 +14,13 @@ Možnosti stylování dokumentů jsou mizerné. Mimo jiné to výborně vyjadřu
 
 ## 1996: FRAME
 
-<span class="book-index" data-book-index="Frame"></span>
+<div class="book-index" data-book-index="Frame"></div>
 
 Jako nedostatečné vnímají možnosti rozvržení v CSS už samotní zakladatelné kaskádových stylů, Bert Bos a Håkon Wium Lie, a proto přicházejí v tehdejší době s převratnými rámci. Prvek `<FRAME>` umožňuje rozdělit stránku na samostatné jednotky, které nejsou nic jiného než jen další stránky. První layoutová revoluce je tady.
 
 ## 1998: MULTICOL
 
-<span class="book-index" data-book-index="Multicol"></span>
+<div class="book-index" data-book-index="Multicol"></div>
 
 Andreessen se snaží implementovat layout do svého prohlížeče Netscape Navigator, a tak verze 3 přichází s tímto zápisem:
 
@@ -44,7 +44,7 @@ V té době tenkrát stavím svůj první větší web – fanouškovské strán
 
 ## 1998: TABLE
 
-<span class="book-index" data-book-index="Table"></span>
+<div class="book-index" data-book-index="Table"></div>
 
 Někdy v této době přišel bezejmenný webař na to, že když z tabulky odstraní rámečky, vznikne docela dobrá struktura, která může nést i složitější rozvržení stránek nebo jednotlivých komponent uvnitř. Někdy po roce 2000 začne komunitou kolovat následující vtip:
 
@@ -145,7 +145,7 @@ V témže roce vzniká „Candidate Recommendation“ pro vícesloupcový layout
 
 ## 2011: Microsoft implementuje grid
 
-<span class="book-index" data-book-index="Microsoft"></span>
+<div class="book-index" data-book-index="Microsoft"></div>
 
 V Microsoftu se dějí věci. Plánují zaříznout Silverlight, zjednodušeně řečeno vlastní napodobeninu Flashe, a více šlápnout do webových technologií. Jde jim o využití HTML a CSS pro vlastní produkty, ale jejich vývojáři jsou nešťastní z nedostatku rozumného layoutování v CSS, oproti tomu, na co byli zvyklí v Silverlightu.
 

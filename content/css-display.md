@@ -1,12 +1,12 @@
 # Vlastnost CSS display
 
-<span class="book-index" data-book-index="display"></span>
+<div class="book-index" data-book-index="display"></div>
 
 Vlastnost `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
 
 <div class="ebook-only" markdown="1">
 
-<span class="book-index" data-book-index="Formátovací kontext"></span>
+<div class="book-index" data-book-index="Formátovací kontext"></div>
 
 Abyste totiž mohli začít vytvářet nějaký typ rozvržení v CSS, musíte většinou nejprve rodičovskému prvku nastavit určitý typ „formátovacícho kontextu“. K tomu právě obvykle slouží vlastnost `display`.
 

@@ -2,8 +2,8 @@
 
 Ve vícesloupcovém rozvržení (CSS Multi-column Layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží tyto vlastnosti.
 
-<span class="book-index" data-book-index="column-gap"></span>
-<span class="book-index" data-book-index="column-rule"></span>
+<div class="book-index" data-book-index="column-gap"></div>
+<div class="book-index" data-book-index="column-rule"></div>
 
 <div class="connected" markdown="1">
 

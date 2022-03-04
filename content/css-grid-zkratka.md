@@ -2,7 +2,7 @@
 
 `grid` je zkratka pro definování všech vlastností CSS gridu.
 
-<span class="book-index" data-book-index="grid (zkratka)"></span>
+<div class="book-index" data-book-index="grid (zkratka)"></div>
 
 <div class="connected" markdown="1">
 

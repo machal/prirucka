@@ -14,7 +14,7 @@ Vlastnost `flex-basis` určuje výchozí velikost prvku v rámci rozvržení pos
 
 <div class="ebook-only" markdown="1">
 
-<span class="book-index" data-book-index="flex-basis"></span>
+<div class="book-index" data-book-index="flex-basis"></div>
 
 → [vrdl.cz/p/css-flex-basis](https://www.vzhurudolu.cz/prirucka/css-flex-basis)
 

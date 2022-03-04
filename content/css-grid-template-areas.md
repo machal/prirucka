@@ -2,7 +2,7 @@
 
 Vlastnost `grid-template-areas` slouží k pojmenovávání obdélníkových oblastí definovaných CSS gridem.
 
-<span class="book-index" data-book-index="grid-template-areas"></span>
+<div class="book-index" data-book-index="grid-template-areas"></div>
 
 <div class="connected" markdown="1">
 
@@ -67,7 +67,7 @@ Následuje pár poznámek k vlastnosti `grid-template-areas`, které mě zaujaly
 
 ## Definování mřížky oblastmi {#definovani-gridu}
 
-<span class="book-index" data-book-index="Oblast mřížky"></span>
+<div class="book-index" data-book-index="Oblast mřížky"></div>
 
 Pojmenovanými oblastmi je možné definovat i samotný grid. V některých případech tedy nemusíte potřebovat vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md).
 
@@ -87,7 +87,7 @@ CodePen: [cdpn.io/e/ymJXaX](https://codepen.io/machal/pen/ymJXaX?editors=1100)
 
 ## Implicitně vytvořené oblasti a linky {#implicitne}
 
-<span class="book-index" data-book-index="Implicitní mřížka"></span>
+<div class="book-index" data-book-index="Implicitní mřížka"></div>
 
 Pojmenované oblasti souvisí s pojmenovanými linkami, které znáte z vlastnosti [`grid-template-rows`/`-columns`](css-grid-template-rows-columns.md).
 

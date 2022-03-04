@@ -2,7 +2,7 @@
 
 Funkce (nebo přesněji řečeno „zápis“) `minmax()` a navázaná klíčová slova definují rozsah šířky nebo výšky pro sloupce či řádky mřížky v CSS gridu.
 
-<span class="book-index" data-book-index="minmax()"></span>
+<div class="book-index" data-book-index="minmax()"></div>
 
 <div class="connected" markdown="1">
 
@@ -86,7 +86,7 @@ CodePen: [cdpn.io/e/qBWGooy](https://codepen.io/machal/pen/qBWGooy?editors=1100)
 
 ## Klíčové slovo max-content {#max-content}
 
-<span class="book-index" data-book-index="max-content"></span>
+<div class="book-index" data-book-index="max-content"></div>
 
 `max-content` dává instrukci, aby se buňka nezvětšovala nad maximální velikost obsahu:
 
@@ -121,7 +121,7 @@ Obrázek nebude ve stopě mřížky definované jako `minmax(100px, max-content)
 
 ## Klíčové slovo min-content {#min-content}
 
-<span class="book-index" data-book-index="min-content"></span>
+<div class="book-index" data-book-index="min-content"></div>
 
 `min-content` funguje opačně než `max-content`, to byste nečekali, že?
 
@@ -184,7 +184,7 @@ Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených
 
 ## Klíčové slovo nebo funkce fit-content() {#fit-content}
 
-<span class="book-index" data-book-index="fit-content()"></span>
+<div class="book-index" data-book-index="fit-content()"></div>
 
 `fit-content` je způsob, jak v podporovaných prohlížečích deklarovat, že si přejeme rozměr prvku podle obsahu. Hodí se to například v situaci, kdy chceme, aby se blokový prvek neroztahoval do celé šířky rodiče:
 

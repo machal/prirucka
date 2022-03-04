@@ -14,7 +14,7 @@ Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vy
 
 <div class="ebook-only" markdown="1">
 
-<span class="book-index" data-book-index="flex-direction"></div>
+<div class="book-index" data-book-index="flex-direction"></div>
 
 → [vrdl.cz/p/css-flex-direction](https://www.vzhurudolu.cz/prirucka/css-flex-direction)
 

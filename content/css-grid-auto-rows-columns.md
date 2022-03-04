@@ -2,8 +2,8 @@
 
 Vlastnosti `grid-auto-rows` a `grid-auto-columns` použijete pro tvorbu implicitního, čili výslovně nedefinovaného gridu v CSS.
 
-<span class="book-index" data-book-index="grid-auto-rows"></span>
-<span class="book-index" data-book-index="grid-auto-columns"></span>
+<div class="book-index" data-book-index="grid-auto-rows"></div>
+<div class="book-index" data-book-index="grid-auto-columns"></div>
 
 <div class="connected" markdown="1">
 
@@ -65,8 +65,8 @@ Hodnota `100px 200px` říká, že první a pak každý lichý nedefinovaný, a 
 
 ### Klíčová slova
 
-<span class="book-index" data-book-index="min-content"></span>
-<span class="book-index" data-book-index="max-content"></span>
+<div class="book-index" data-book-index="min-content"></div>
+<div class="book-index" data-book-index="max-content"></div>
 
 ```css
 grid-auto-columns: min-content;

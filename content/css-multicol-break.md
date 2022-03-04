@@ -4,9 +4,9 @@ Uvnitř vícesloupcového layoutu můžete mít prvky, které si nepřejete zala
 
 Může jít o nadpisy a podnadpisy, tabulky nebo obrázky s jejich popisky – vlastně jakékoliv prvky, které mají potomky.
 
-<span class="book-index" data-book-index="break-before"></span>
-<span class="book-index" data-book-index="break-after"></span>
-<span class="book-index" data-book-index="break-inside"></span>
+<div class="book-index" data-book-index="break-before"></div>
+<div class="book-index" data-book-index="break-after"></div>
+<div class="book-index" data-book-index="break-inside"></div>
 
 <div class="connected" markdown="1">
 

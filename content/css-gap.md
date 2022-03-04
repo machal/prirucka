@@ -2,9 +2,9 @@
 
 Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas i v češtině podle anglického originálu říká „gutter“. A brzy také možná „gap“.
 
-<span class="book-index" data-book-index="gap"></span>
-<span class="book-index" data-book-index="gutter"></span>
-<span class="book-index" data-book-index="Mezera v layoutu"></span>
+<div class="book-index" data-book-index="gap"></div>
+<div class="book-index" data-book-index="gutter"></div>
+<div class="book-index" data-book-index="Mezera v layoutu"></div>
 
 <div class="connected" markdown="1">
 

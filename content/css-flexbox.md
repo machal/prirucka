@@ -1,6 +1,6 @@
 # Flexbox: referenční příručka všech vlastností
 
-Flex v češtině znamená pružný, přizpůsobivý. <span class="book-index" data-book-index="Flexbox">Flexboxy</span> jsou tedy pružné elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
+Flex v češtině znamená pružný, přizpůsobivý. <div class="book-index" data-book-index="Flexbox">Flexboxy</span> jsou tedy pružné elementy layoutu. Jednou z hlavních předností flexboxu je totiž schopnost vyplňovat zbylý prostor.
 
 <div class="related web-only" markdown="1">
 - [CSS grid](css-grid.md)

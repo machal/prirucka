@@ -2,7 +2,7 @@
 
 Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik sloupců ve vícesloupcovém rozvržení.
 
-<span class="book-index" data-book-index="column-span"></span>
+<div class="book-index" data-book-index="column-span"></div>
 
 <div class="connected" markdown="1">
 

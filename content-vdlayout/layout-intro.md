@@ -23,9 +23,9 @@ Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektu
 
 Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něco říct:
 
-- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi. (Specifikace o flexboxu mluví jako o <span class="book-index" data-book-index="Flexbox">„CSS Flexible Box Layout“</span> a já pak více ve čtvrté kapitole.)
-- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více. (Gridu se ve specifikaci říká <span class="book-index" data-book-index="Grid">„CSS Grid Layout“</span>, píšu o něm v páté kapitole.)
-- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu vděční. (Plný název podle specifikace je <span class="book-index" data-book-index="Multicol">„CSS Multi-column Layout“</span> a můj detailní rozbor je v šesté kapitole.)
+- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi. (Specifikace o flexboxu mluví jako o <div class="book-index" data-book-index="Flexbox">„CSS Flexible Box Layout“</span> a já pak více ve čtvrté kapitole.)
+- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více. (Gridu se ve specifikaci říká <div class="book-index" data-book-index="Grid">„CSS Grid Layout“</span>, píšu o něm v páté kapitole.)
+- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu vděční. (Plný název podle specifikace je <div class="book-index" data-book-index="Multicol">„CSS Multi-column Layout“</span> a můj detailní rozbor je v šesté kapitole.)
 
 Tak a teď máte nové kamarády, gratuluji vám.
 
@@ -39,8 +39,8 @@ Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (o
 
 Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct také Box Align.
 
-<span class="book-index" data-book-index="Box Align"></span>
-<span class="book-index" data-book-index="Zarovnání boxů"></span>
+<div class="book-index" data-book-index="Box Align"></div>
+<div class="book-index" data-book-index="Zarovnání boxů"></div>
 
 „CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md).
 
