@@ -149,6 +149,6 @@ Subgrid je součástí specifikace CSS Grid Layout Module již od Level 2, kter�
 - V Chromu se na subgridu zdá se docela hodně pracuje od podzimu 2021.
 - Safari sice subgrid eviduje, ale tým vývojářů zatím mlčí.
 
-Vzhledem k tomu, že se ledy hnuly u Chromu, má subgrid opravdu dobrou šanci na to, že se ujme a bude nám v budoucnu sloužit.
+Vzhledem k tomu, že se ledy hnuly u Chromu, má subgrid opravdu dobrou šanci, že se ujme a bude nám v budoucnu sloužit.
 
-Aktuální informace hledejte na [CanIUse.com/css-subgrid](https://caniuse.com/css-subgrid).
+Aktuální informace hledejte na [CanIUse.com/css-subgrid](https://caniuse.com/css-subgrid)

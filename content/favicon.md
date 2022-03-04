@@ -27,7 +27,7 @@ Některé další detaily najdete také na JeČas.cz. [jecas.cz/favicon](http://
   href="/favicon/apple-touch-icon.png">
 ```
 
-Dále tady máme standardizovaný **Web App Manifest**, který kromě ikon definuje  barvy a způsob zobrazení. Používá jej Chrome na Androidu. Více na [w3.org](http://www.w3.org/2008/webapps/manifest/):
+Dále máme standardizovaný **Web App Manifest**, který kromě ikon definuje  barvy a způsob zobrazení. Používá jej Chrome na Androidu. Více na [w3.org](http://www.w3.org/2008/webapps/manifest/):
 
 ```html
 <link rel="manifest" href="/favicon/manifest.json">

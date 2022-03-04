@@ -242,7 +242,7 @@ Vychází to z vlastnosti flexboxového kontejneru [`justify-content`](css3-flex
 </div>
 ```
 
-Pro tenhle kód se první sloupec přilepí doleva a druhý doprava. Volný prostor se totiž rozdělí mezi jednotlivé sloupce (`.justify-content-between`). [cdnp.io/ZeMPbP](https://codepen.io/machal/pen/ZeMPbP?editors=1000)
+Pro tenhle kód se první sloupec přilepí doleva a druhý doprava. Volný prostor se totiž rozdělí mezi jednotlivé sloupce (`.justify-content-between`). [cdpn.io/ZeMPbP](https://codepen.io/machal/pen/ZeMPbP?editors=1000)
 
 Zarovnání na svislé ose:
 
@@ -266,7 +266,7 @@ Vychází to z vlastností flexboxového kontejneru [`align-items`](css3-flexbox
   <div class="col-3 align-self-end"> <!-- … --> </div>
 </div>
 ```
-Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdnp.io/XMPGjv](https://codepen.io/machal/pen/XMPGjv?editors=1100)
+Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdpn.io/XMPGjv](https://codepen.io/machal/pen/XMPGjv?editors=1100).
 
 <!-- AdSnippet -->
 

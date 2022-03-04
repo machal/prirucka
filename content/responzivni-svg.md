@@ -160,7 +160,7 @@ Co když ale vložíme SVG soubor obsahující Media Queries externě?
   width="100" height="100" alt="Logo Vzhůru dolů">
 ```  
 
-Tušíte správně, podmínky v `@media` se pak budou vztahovat k šířce obrázku samotného. [cdnp.io/e/zZKzRe](https://codepen.io/machal/pen/zZKzRe?editors=1100)
+Tušíte správně, podmínky v `@media` se pak budou vztahovat k šířce obrázku samotného. [cdpn.io/e/zZKzRe](https://codepen.io/machal/pen/zZKzRe?editors=1100)
 
 <div class="ebook-only" markdown="1">
   Podmínky budou pracovat jako Container Queries, které bychom ve webdesignu potřebovali jako sůl. Ale nemáme je. Zatím tedy jen u externích SVG. Zmíním je ještě [v kapitole o Media Queries](media-queries-tipy.md).

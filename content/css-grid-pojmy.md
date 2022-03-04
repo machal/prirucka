@@ -2,7 +2,7 @@
 
 V gridu se to hemží pojmy, které si musíme vyjasnit. Jsou totiž důležité pro pochopení tohoto typu rozvržení a náchylné na záměnu, což nám může způsobit nejednu malou katastrofu.
 
-Vysvětlíme si to na příkladu. Vezměme, že máme toto HTML:
+Vysvětlíme si to na příkladu. Řekněme, že máme toto HTML:
 
 ```html
 <div class="container">
@@ -14,7 +14,7 @@ Vysvětlíme si to na příkladu. Vezměme, že máme toto HTML:
 </div>
 ```
 
-Prozatím nechme stranou speciální nastavení páté položky zde reprezentované třídou `.item--five`, k tomu se propracujeme.
+Prozatím nechme stranou specifické nastavení páté položky zde reprezentované třídou `.item--five`, k tomu se propracujeme.
 
 Mřížku definujeme jako třísloupcovou, ale řádky necháme na automatice gridu:
 
@@ -45,7 +45,7 @@ Na obrázku vidíme jeden kontejner a pět položek mřížky, čímž se dostá
 
 Kontejner vytvoříme z jakéhokoliv prvku v HTML prostým deklarováním [`display:grid` nebo `display:inline-grid`](css-display.md).
 
-Vznikne tím [grid formatting context](css-grid-formatting-context.md) (formátovací kontext pro mřížku) a začnou platit trochu jiná pravidla než například pro block formatting context (blokový formátovací kontext), který by vznikl uvedením `display:block`.
+Vznikne tím [formátovací kontext pro mřížku](css-grid-formatting-context.md) (grid formatting context) a začnou platit trochu jiná pravidla než například pro blokový formátovací kontext (block formatting context), který by vznikl uvedením `display:block`.
 
 V našem příkladu jsme tedy kontejner mřížky udělali z prvku `.container`.
 
@@ -58,7 +58,7 @@ Jednou z vlastností formátovacího kontextu mřížky je, že každý z přím
 
 Položkou mřížky v ukázce jsou všechny prvky `.item`.
 
-Položka nemá žádné speciální vlastnosti – kromě toho, že je nesvobodná.  Prohlížeč se ji totiž snaží vložit do definované mřížky.
+Položka nemá žádné specifické vlastnosti – kromě toho, že je nesvobodná. Prohlížeč se ji totiž snaží vložit do definované mřížky.
 
 Položku ale můžeme osvobodit tím, že i z ní uděláme kontejner (`display:grid`) a ona pak bude omezovat na svobodě své potomky. Pochopili jste mě správně – zanořování více gridů do sebe je možné.
 
@@ -156,7 +156,7 @@ Když už tedy víme, co je mřížka, a když už ji umíte vizualizovat, pojď
 <figure>
 <img src="../dist/images/original/vdlayout/pojmy-gridu.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
-*Tady máme celou partu: mřížka, linka, oblast, řádek, sloupec.*
+Tady máme celou partu: mřížka, linka, oblast, řádek i sloupec.
 </figcaption>
 </figure>
 
@@ -204,7 +204,7 @@ Vodorovné a svislé stopy mřížky jsou označovány jako řádky a sloupce, p
 
 Poznámka pro pokročilé: Pokud bychom chtěli být přesní, měli bychom uvést ještě pojem „osa mřížky“, což je stejně jako v geometrii přímka, jež určuje směry. V případě CSS gridu jsou ty směry naštěstí jen dva.
 
-V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale o blokové ose (block axis) řádkové ose (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je čeština nebo slovenština), ale také se zápisem svislým (jako může být například japonština). Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale v textu nechci už opravdu více zatěžovat.
+V pojmologii CSS gridu se nemluví o vodorovné a svislé ose, ale o blokové ose (block axis) a řádkové ose (inline axis). Proč proboha? Je to kvůli tomu, že CSS musí obsloužit nejen jazyky se zápisem vodorovným (jako je čeština nebo slovenština), ale také se zápisem svislým (jako může být například japonština). Pak se označení os prohodí, ale výhodou je, že ve směru psaní vždy zůstává bloková osa. Tím vás ale v textu nechci už opravdu více zatěžovat.
 
 ## Buňka mřížky (grid cell) {#bunka}
 
@@ -248,8 +248,8 @@ V naší ukázce jsme pátou položku ručně umístili na místo páté a šest
 
 Tento zápis přesně říká o umístění oblasti následující:
 
-* Svisle ji umísť mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, čili na místo druhého a třetího sloupce.
-* Vodorovně ji umísť mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, čili do druhého řádku.
+* Svisle ji umisť mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, čili na místo druhého a třetího sloupce.
+* Vodorovně ji umisť mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, čili do druhého řádku.
 
 CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 

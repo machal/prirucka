@@ -205,7 +205,7 @@ Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zam�
 
 - Internet Explorer 11 – pokud ještě musíte podporovat tento prehistorický prohlížeč, je třeba vědět, že vlastnosti pro zarovnání umí jen v kombinaci s flexboxem, nikoliv gridem.
 - Zkratky jako [`place-self`](css-place-self.md) neumí MSIE 11, ale zatím bohužel také Safari, což je daleko nepříjemnější. Na druhou stranu, zkratku [`place-content`](css-place-content.md) Safari ovládá, takže tato vlastnost je použitelná ve většině moderních projektů.
-- [Vlastnosti `gap`](css-gap.md) v layoutu gridem a flexboxem umí všechny prohlížeče, kromě MSIE 11, ale v kombinaci s vícesloupcovým layoutem to je složitější.
+- [Vlastnosti `gap`](css-gap.md) v layoutu tvořeném gridem a flexboxem umí všechny prohlížeče, kromě MSIE 11, ale v kombinaci s vícesloupcovým layoutem to je složitější.
 - Vlastnost `overflow-position` neumí v době psaní textu žádný prohlížeč.
 
 Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda ji jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty.

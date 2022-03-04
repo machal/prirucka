@@ -41,14 +41,14 @@ O směru psaní dokumentu a tvorbě layoutu pro jazyky sázené v jiných směre
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
+Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně o možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
 
 </div>
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-box-alignment-direction.jpg" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
-Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [cdnp.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)
+Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [cdpn.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)
 </figcaption>
 </figure>
 
@@ -185,7 +185,7 @@ Poziční zarovnání s neposednou poslední položkou layoutu.
 
 </div>
 
-CodePen: [cdnp.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
+CodePen: [cdpn.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
 ### Zarovnání na účaří {#ucari}
 

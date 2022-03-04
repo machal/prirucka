@@ -28,7 +28,7 @@ Využití je možné ve všech moderních systémech layoutu: flex, grid i multi
 
 ## Ve flexboxu je to občas zbytečné {#flexbox}
 
-Pro pořádek zmiňme, že tahle vlastnost nebude pro flexbox zase tak užitečná. Zbylý prostor se ve flexboxu rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů (`margin`) a až poté, co se započtou hodnoty délek položek rozvržení.
+Pro pořádek zmiňme, že tahle vlastnost nebude pro flexbox zase tak užitečná. Zbylý prostor se ve flexboxu rozdělí až poté, co se započtou hodnoty `auto` vnějších okrajů (`margin`), a až poté, co se započtou hodnoty délek položek rozvržení.
 
 Stačí tedy existence jedné flexboxové položky s vlastnostmi [`flex`](css-flex.md) nebo [`flex-grow`](css-flex-grow.md) nastavená na hodnotu `1` a více a žádný volný prostor zde nezbude.
 
@@ -36,7 +36,7 @@ Stačí tedy existence jedné flexboxové položky s vlastnostmi [`flex`](css-fl
 
 ## Jednoduchý příklad {#priklad}
 
-V naší ukázce definujeme třísloupcový kontejner gridu. HTML:
+V naší ukázce definujeme třísloupcový kontejner gridu. Začneme s HTML:
 
 ```html
 <div class="container">
@@ -167,7 +167,7 @@ Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích {#podpora}
 
-V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou MSIE 11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
+V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována, s výjimkou MSIE 11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
 
 Ve flexboxových rozvrženích funguje `justify-content` dobře i v Internet Exploreru.
 

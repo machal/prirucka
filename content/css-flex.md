@@ -35,7 +35,7 @@ flex:
   <flex-grow> <flex-shrink> <flex-basis>
 ```
 
-Výchozí hodnota je `initial`, kterou můžete zapsat následujícím způsobem:
+Výchozí hodnota je `initial` a můžete ji zapsat následujícím způsobem:
 
 ```css
 .box {
@@ -61,7 +61,7 @@ Je dobré vědět, že autoři specifikace doporučují upřednostňovat zkratku
 
 <!-- AdSnippet -->
 
-Důvodem mimo jiné je, že zkratka umí inteligentně nastavovat výchozí hodnoty.
+Důvodem je mimo jiné to, že zkratka umí inteligentně nastavovat výchozí hodnoty.
 
 ## Přednastavené hodnoty {#prednastavene}
 

@@ -16,6 +16,8 @@ Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda 
 
 <span class="book-index" data-book-index="flex-wrap"></div>
 
+Poznámka: všechny texty příruček jsou k vidění naživo na na Vzhůru dolů:
+
 → [vrdl.cz/p/css-flex-wrap](https://www.vzhurudolu.cz/prirucka/css-flex-wrap)
 
 </div>
@@ -107,6 +109,6 @@ Možná už víte, že můžete použít [vlastnost `flex-flow`](css-flex-flow.m
 
 ## Podpora v prohlížečích {#podpora}
 
-Podpora vlastnosti `flex-wrap` je velmi dobrá a o chybách nevím.  Na webu CanIUse se u Internet Exploreru 11 v době psaní uvádí částečná podpora s poznámkou, že to je kvůli velkému počtu chyb. Trošku horší je, že je tento web neuvádí – a dle mého ani neexistují.  [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-wrap)
+Podpora vlastnosti `flex-wrap` je velmi dobrá a o chybách nevím.  Na webu CanIUse se u Internet Exploreru 11 v době psaní uvádí částečná podpora s poznámkou, že to je kvůli velkému počtu chyb. Trošku horší je, že je tento web neuvádí – a dle mého vlastně ani neexistují.  [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-wrap)
 
 <!-- AdSnippet -->

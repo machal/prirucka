@@ -78,7 +78,7 @@ CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
 ## Trocha teorie: nastavení justify-self. A pozor, ve flexboxu vlastnost nefunguje
 
-Vlastnost `justify-items` vlastně nedělá nic jiného, než že nastavuje výchozí hodnotu [vlastnosti `justify-self`](css-justify-self.md) pro všechny položky uvnitř kontejneru.
+Vlastnost `justify-items` v podstatě nedělá nic jiného, než že nastavuje výchozí hodnotu [vlastnosti `justify-self`](css-justify-self.md) pro všechny položky uvnitř kontejneru.
 
 Je dobré zmínit, že ve flexboxovém layoutu a uvnitř buněk tabulek je vlastnost `justify-items` ignorována. Pro vysvětlení jděte na text o [`justify-self`](css-justify-self.md).
 

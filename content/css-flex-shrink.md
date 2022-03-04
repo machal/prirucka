@@ -1,6 +1,6 @@
 # CSS vlastnost flex-shrink: faktor smršťování položky flexboxu
 
-Jakým podílem se může položka flexboxu zmenšovat, pokud v rodičovském kontejneru místo ubylo? Od toho tady máme vlastnost `flex-shrink`.
+Jakým podílem se může položka flexboxu zmenšovat, pokud v rodičovském kontejneru místo ubylo? Od toho máme vlastnost `flex-shrink`.
 
 <div class="connected" markdown="1">
 

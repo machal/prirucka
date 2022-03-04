@@ -12,7 +12,7 @@ Může se nám ale stát, že položku umístíme na místo, kam explicitní mř
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit.jpg" width="1600" height="900" alt="Explicitní a implicitní CSS grid">
 <figcaption markdown="1">
-*Mřížka se hnědou explicitní (doslovně definovanou) částí a bílou implicitní (automaticky definovanou) částí.*
+*Mřížka s tmavou explicitní (doslovně definovanou) částí a bílou implicitní (automaticky definovanou) částí.*
 </figcaption>
 </figure>
 
@@ -123,7 +123,7 @@ Jenže přesně na to vývojář čeká a prohlížeč jde zaskočit přidáním
 
 Prohlížeč: „No toto! Máme tam přeci jen tři sloupce a jeden řádek. A ty mi tady něco umísťuješ do pátého sloupce a druhého řádku!“
 
-Naštěstí si ale náš milý prohlížeč vzpomene, že kromě explicitního mřížky jej učili ještě implicitní. Tedy, že tam, kde chybí explicitní buňky, může vyskládat ty implicitní:
+Naštěstí si ale náš milý prohlížeč vzpomene, že kromě explicitní mřížky jej učili ještě implicitní. Tedy, že tam, kde chybí explicitní buňky, může vyskládat ty implicitní:
 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit-example-2b.jpg" width="1600" height="450" alt="Explicitní a implicitní CSS grid - příklad">

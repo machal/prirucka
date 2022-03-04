@@ -27,7 +27,7 @@ Chcete ukázku? Vezměme, že máme dva bloky se třemi vnitřními položkami. 
 Výsledek se různí podle formátovacího kontextu:
 
 - `display:block` slučuje svislé okraje, takže mezi položkami je shora i zdola mezera jen `1em`.
-- `display:grid` naproti tomu okraje neslučuje, takže mezi jednotlivými .`.item` tvoří mezeru dvakrát `margin`, tedy `2em`.
+- `display:grid` naproti tomu okraje neslučuje, takže mezi jednotlivými `.item` tvoří mezeru dvakrát `margin`, tedy `2em`.
 
 <figure>
 <img src="../dist/images/original/vdlayout/margins-display-block-grid.jpg" width="1920" height="540" alt="Marginy se v CSS gridu neslučují">

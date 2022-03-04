@@ -24,7 +24,7 @@ Vlastnost `grid-area` je součástí specifikace [CSS gridu](css-grid.md).
 
 Jde o zkratku pro vlastnosti `grid-column-start`, `grid-column-end` a `grid-row-start`, `grid-row-end` nebo také zkratku pro zkratky [`grid-column` a `grid-row`](css-grid-row-column.md), aby to nebylo úplně jednoduché.
 
-Může mít jednu až čtyři hodnoty. Obecně zápis vypadá asi takto:
+Může mít jednu až čtyři hodnoty. Obecně vypadá zápis asi takto:
 
 ```css
 grid-area:

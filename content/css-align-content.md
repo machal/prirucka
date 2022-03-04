@@ -151,7 +151,7 @@ Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích {#podpora}
 
-V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována s výjimkou MSIE 11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
+V layoutech postavených na gridu je vlastnost u základních hodnot plně podporována, s výjimkou MSIE 11. Použitím nástroje [Autoprefixer](autoprefixer.md) je ale možné to dohnat.
 
 Ve flexboxových rozvrženích funguje `justify-content` dobře i v Internet Exploreru.
 

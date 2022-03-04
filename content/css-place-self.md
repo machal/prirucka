@@ -96,6 +96,6 @@ Vlastnost `place-self` v době psaní tohoto textu nepodporuje Internet Explorer
 
 Ve flexboxových rozvrženích nemůžete tuto vlastnost použít v žádném prohlížeči, protože to nedovoluje specifikace.
 
-Aktuální informace hledejte na CanIUse.com. [caniuse.com/place-self](https://caniuse.com/#search=place-self).
+Aktuální informace hledejte na CanIUse.com. [caniuse.com/place-self](https://caniuse.com/#search=place-self)
 
 <!-- AdSnippet -->

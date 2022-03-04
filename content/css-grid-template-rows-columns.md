@@ -50,7 +50,7 @@ Vysvětleme:
 
 - `display:grid` – „zapíná“ mřížkové zobrazení.
 - `grid-template-columns:50% 50%` – definuje dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
-- `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich se počítá automaticky podle výšky obsahu.
+- `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich počítá automaticky podle výšky obsahu.
 
 <p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows"></p>
 
@@ -75,7 +75,7 @@ CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
 <span class="book-index" data-book-index="Explicitní mřížka"></span>
 
-Teď se stane ošklivá a zlá věc – zákeřný frontendový kodér do HTML přidá pátou položku:
+Teď se stane nepěkná věc – zákeřný frontendový kodér do HTML přidá pátou položku:
 
 ```html
 <div class="container">
@@ -147,7 +147,7 @@ Občas se ale může hodit použít ji i ve vlastním kódu, například když r
 
 V gridu je možné pro definici řádků a sloupečků používat všechny možné [jednotky](jednotky.md), které už pro rozvržení v CSS používáte.
 
-Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *flex fraction* a dá se o ní mluvit jako o podílu na zbytku.
+Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *fraction unit* a dá se o ní mluvit jako o podílu na zbytku.
 
 Zápis může vypadat například takto:
 
@@ -213,7 +213,7 @@ Zápisem `repeat(6, 1fr)` říkáme: „Napiš šestkrát po sobě hodnotu `1fr`
 
 <span class="book-index" data-book-index="Masonry"></span>
 
-Hodnota `masonry` je speciální, protože by v budoucnu měla zařídit nativní [masonry (nebo zděný) layout](css-masonry.md).
+Hodnota `masonry` je specifická, protože by v budoucnu měla zařídit nativní [masonry (nebo zděný) layout](css-masonry.md).
 
 <figure class="web-only">
 <img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">

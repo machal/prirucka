@@ -39,7 +39,7 @@ Zkratka se zapisuje takto:
 gap: <hodnota row-gap> <hodnota column-gap>;
 ```
 
-Nastavujeme zde, jak je v CSS zvykem, nejprve svislý a pak až vodorovný směr. Druhá hodnota je volitelná. Pokud se neuvede, použije se jedna hodnota pro oba směry. I to je ostatně ve stylech běžné.
+Nastavujeme zde, jak je v CSS zvykem, nejprve svislý a až pak vodorovný směr. Druhá hodnota je volitelná. Pokud se neuvede, použije se jedna hodnota pro oba směry. I to je ostatně ve stylech běžné.
 
 ## Příklad {#priklad}
 
@@ -67,7 +67,7 @@ Layout v CSS definujeme následovně:
 Vysvětleme si to:
 
 - [Deklarace `display:grid`](css-display.md) zajistí zobrazení pomocí CSS gridu.
-- [Vlastnost `grid-template-columns`](css-grid-template-rows-columns.md) definuje podobu mřížky. Zde jde sloupce o rovnoměrné šířce.
+- [Vlastnost `grid-template-columns`](css-grid-template-rows-columns.md) definuje podobu mřížky. Zde jde o sloupce o rovnoměrné šířce.
 - `gap: 2em 1em` je instrukce pro vložení mezery svisle a pak i vodorovně.
 
 <figure>
@@ -201,7 +201,7 @@ Neznáte [funkci `calc()`](css3-calc.md)? Podívejte se na speciální zmínku v
 }
 ```
 
-Slovo `normal` představuje použitou hodnotu `1em` u vícesloupcového layoutu a hodnotu `0px` v kontextu gridu a flexboxu. Asi to není zase tak moc zajímavé… Já jen… Kdybyste se náhodou ptali… nebo vám to někdo položil jako otázku v testu.
+Slovo `normal` představuje použitou hodnotu `1em` u vícesloupcového layoutu a hodnotu `0px` v kontextu gridu a flexboxu. Asi to není zase tak moc zajímavé… Já jen… Kdybyste se náhodou ptali… Nebo vám to někdo položil jako otázku v testu.
 
 ### Procenta a jejich uvádění ve svislém směru {#hodnoty-procenta}
 

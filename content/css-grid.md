@@ -244,7 +244,7 @@ Po představení všech vlastností a rychlém příkladu bych se rád pozastavi
 
 Všechno by to ale byla pravda jen částečně. Grid je daleko silnější než uvedené příklady.
 
-## Jak se grid liší od flexboxu? {#flexbox}
+## Jak se liší grid od flexboxu? {#flexbox}
 
 Předně chci zdůraznit, že grid nenahrazuje [flexbox](css-flexbox.md). Potřebujete obojí. Naučte se obojí. Ale nějaké rozdíly zde jsou:
 

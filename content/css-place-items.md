@@ -1,6 +1,6 @@
 # Vlastnost place-items: Zarovnání všech položek na obou osách
 
-Vlastnost `place-items` definuje na kontejneru layoutu zarovnání položek na hlavní ose i příčné ose.
+Vlastnost `place-items` definuje na kontejneru layoutu zarovnání položek na hlavní i příčné ose.
 
 <span class="book-index" data-book-index="place-items"></span>
 

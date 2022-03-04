@@ -35,7 +35,7 @@ Ovšem bratrům Slovákům zde můžeme jen závidět. V zemi pod Tatrami je tot
 
 Jak zjistit, jestli můžu Explorer přestat podporovat?
 
-Podíl MSIE na používání se liší web od webu, takže například na svém blogu, Vzhůru dolů, nevidím v březnu 2022 prakticky žádné návštěvy od uživatelů s tímto prohlížečem. Na webech klientů ale Google Analytics ukazují čísla vyšší.
+Podíl MSIE na používání se liší web od webu, takže například na svém blogu, Vzhůru dolů, nevidím v únoru 2022 prakticky žádné návštěvy od uživatelů s tímto prohlížečem. Na webech klientů ale Google Analytics ukazují čísla vyšší.
 
 Podíl prohlížečů zjistíte například právě v Google Analytics (Publikum > Technologie > Prohlížeč).
 

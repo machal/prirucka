@@ -187,7 +187,7 @@ Vezměme stejný příklad:
 }
 ```
 
-Prvek bude dále umístění do druhého sloupce, ale v tomto případě do prvního řádku. Algoritmus automatického umísťování zde vždy začíná a dosud nevykresloval žádné jiné prvky mřížky, které by mohly pozici posunout.
+Prvek bude dále umístěn do druhého sloupce, ale v tomto případě do prvního řádku. Algoritmus automatického umísťování zde vždy začíná a dosud nevykresloval žádné jiné prvky mřížky, které by mohly pozici posunout.
 
 CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 

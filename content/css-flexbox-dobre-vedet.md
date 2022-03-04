@@ -2,7 +2,7 @@
 
 ## 1. `flex` je nová hodnota vlastnosti `display`
 
-Na tomto bodu není na první pohled nic nového. Vyplývá ale z toho, že na rodičovský kontejner ani jeho potomci nebudou mít účinek vlastnosti související s jinými zobrazovacími režimy [vlastnosti `display`](css-display.md) – `block`, `inline`, `inline-block` a dalšími. Typický příklad jsou vlastnosti `float`, `clear` nebo `vertical-align`.
+Na tomto bodu není na první pohled nic nového. Vyplývá z toho ale, že na rodičovský kontejner ani jeho potomci nebudou mít účinek vlastnosti související s jinými zobrazovacími režimy [vlastnosti `display`](css-display.md) – `block`, `inline`, `inline-block` a dalšími. Typický příklad jsou vlastnosti `float`, `clear` nebo `vertical-align`.
 
 ## 2. Položky flexboxu neslučují vnější okraje
 
@@ -14,9 +14,9 @@ Pozicování prvků vlastností `position` a hodnotami `absolute`, `relative`, `
 
 ## 4. Směr hlavní osy flexboxu řídí jazyk rozhraní
 
-Směr hlavní osy kontejneru flexboxu vychází vždy z vlastnosti `writing-mode`. Pokud bychom tedy flexboxem dělali layout stránky v arabštině, budou hodnoty zmíněné ve vlastnostech jako [`flex-direction`](css-flex-direction.md) naopak.
+Směr hlavní osy flex kontejneru vychází vždy z vlastnosti `writing-mode`. Pokud bychom tedy flexboxem dělali layout stránky v arabštině, budou hodnoty zmíněné ve vlastnostech jako [`flex-direction`](css-flex-direction.md) naopak.
 
-## 5. S visibility:collapse flexbox pracuje jako se řádky tabulky
+## 5. S visibility:collapse pracuje flexbox jako se řádky tabulky
 
 Taková drobnost na závěr. `visibility:collapse` funguje stejně jako u hodnoty `hidden` s výjimkou tabulek a flexboxu. U flex položek (stejně jako u elementů s `display:table-row` nebo `table-column`) prostě prvek není vidět, ale drží se mu místo a v DOMu se s ním počítá.
 

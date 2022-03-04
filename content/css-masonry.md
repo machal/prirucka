@@ -138,7 +138,7 @@ Jako by nám nestačily ty desítky, co jich už máme, řekl by bručoun. Ale n
 
 Pokud máte v kontejneru mřížky více prostoru ve směru rozloženém pomocí masonry, zjistíte, že se položky zarovnají na začátek kontejneru. Počáteční hodnota vlastnosti `align-tracks` je totiž `start`.
 
-Další možnosti jsou podobné jako u vlastností `align-content` a `justify-content` (např. `end` nebo asi i `space-between`) s několika modifikacemi:
+Další možnosti jsou podobné jako u vlastností `align-content` a `justify-content` (např. `end` nebo z podstaty věci také `space-between`) s několika modifikacemi:
 
 - Hodnota `normal` – u těchto vlastností se chová jako `start`.
 - Hodnota `stretch` – položky automatické velikosti v rozložení se roztáhnou.
@@ -164,7 +164,7 @@ Doufejme, že o náhradních řešeních nebudeme muset dlouho přemýšlet a po
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, velmi užitečné „Feature Queries“, dotazy na podporu vlastností, a tedy klíčové slovo `@supports` popisuji pro zájemce více [v poslední „přílohové“ kapitole](css-supports.md).
+Mimochodem, velmi užitečné „Feature Queries“, dotazy na podporu vlastností, a tedy klíčové slovo `@supports`, popisuji pro zájemce více [v poslední „přílohové“ kapitole](css-supports.md).
 
 </div>
 

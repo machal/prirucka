@@ -23,7 +23,7 @@ Atributem `type=""` můžete tlačítku vnutit různé vzorce chování:
 * `<button type="reset">` – resetuje hodnoty ve formuláři
 * `<button type="button">` – nedělá nic
 
-Poslední typ neodešle formulář, takže mu můžete přidávat nejrůznější funkce. Rozdíl mezi odesílacím a neodesílacím tlačítkem je patrný také v mé další ukázce. [cdnp.io/e/VrZJwX](https://codepen.io/machal/pen/VrZJwX)
+Poslední typ neodešle formulář, takže mu můžete přidávat nejrůznější funkce. Rozdíl mezi odesílacím a neodesílacím tlačítkem je patrný také v mé další ukázce. [cdpn.io/e/VrZJwX](https://codepen.io/machal/pen/VrZJwX)
 
 To, že `type="button"` nic nedělá, neznamená, že nic neumí. Má vlastnosti, které jiným HTML prvkům chybí. Za chvilku se k nim dostaneme. Nejprve ještě k sesterské značce `<input>`.
 

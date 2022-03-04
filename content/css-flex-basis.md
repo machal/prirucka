@@ -36,7 +36,7 @@ Přebírá rozměr podle `width` a `height`.  Pokud ten je také `auto`, pak pla
 Nastaví velikost na základě obsahu položky. Toto klíčové slovo zatím podporuje jen Firefox a Chrome. V mých CodePenech níže jsou vidět rozdíly mezi `content` a `auto`. Podobného efektu jako s  `flex-basis:content` dosáhnete nastavením `flex-basis:auto` a zároveň vlastností `width`/`height` také na hodnotu `auto`.
 - `0`  
 Nehledí se na rozměr obsahu. Distribuce volného místa pomocí `flex-grow` a `flex-basis` se bude týkat celé šířky položky – „absolutní model“ pružnosti.
-- Nastavení Jakéhokoliv CSS rozměru, např. `20%`, `100px`, `15em…` – toto je naštěstí nejčastější typ hodnoty, a tedy ne tak komplikované.
+- Nastavení jakéhokoliv CSS rozměru, např. `20%`, `100px`, `15em…` – toto je naštěstí nejčastější typ hodnoty, a tedy ne tak komplikované.
 
 Firefox podporuje ještě další hodnoty – `max-content` a `min-content`. O obou píšu v kontextu [funkce `minmax()`](css-minmax.md).
 
@@ -147,9 +147,9 @@ Platí, že při použití obou metod nastavení výšky nebo šířky dostane h
 
 CodePen: [cdpn.io/e/vRZWqa](https://codepen.io/machal/pen/vRZWqa?editors=1100)
 
-### 2) Vlastnost flex-basis je obousměrné {#flexbasis-width-2}
+### 2) Vlastnost flex-basis je obousměrná {#flexbasis-width-2}
 
-Lze jej použít jako pro výšku, tak pro šířku. Vždy podle směru layoutu a ten určuje nejčastěji vlastnost [`flex-direction`](css-flex-direction.md).
+Lze ji použít jak pro výšku, tak pro šířku. Vždy podle směru layoutu a ten určuje nejčastěji vlastnost [`flex-direction`](css-flex-direction.md).
 
 CodePen: [cdpn.io/e/bvLOMv](https://codepen.io/machal/pen/bvLOMv?editors=1100)
 
@@ -161,7 +161,7 @@ CodePen: [cdpn.io/e/OvgYZm](https://codepen.io/machal/pen/OvgYZm?editors=1100)
 
 ### 4) Minimální a maximální velikost platí {#flexbasis-width-4}
 
-Pokud byste chtěli omezit velikost prvku minimemem nebo maximem, můžete využít vlastností `min-width`/`height` a `max-width`/`height`.
+Pokud byste chtěli omezit velikost prvku minimem nebo maximem, můžete využít vlastností `min-width`/`height` a `max-width`/`height`.
 
 Toto platí právě proto, že:
 
@@ -177,7 +177,7 @@ flex-basis > width/height > obsah
 
 ## Používejte vlastnost flex {#pouzivejte-flex}
 
-Obecně navíc platí, že [vlastnost `flex`](css-flex.md) je zase lepší než `flex-basis` a to je lepší než `width`/`height`.
+Obecně navíc platí, že [vlastnost `flex`](css-flex.md) je zase lepší než `flex-basis` – a to je lepší než `width`/`height`.
 
 Vlastnost `flex-basis` totiž zvládne jak výšku, tak šířku, což se při změně směru rozvržení může hodit.
 

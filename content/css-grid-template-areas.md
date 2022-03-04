@@ -49,7 +49,7 @@ V příkladu na obrázku pojmenováváme oblasti následovně:
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-template-areas.jpg" width="1920" height="540" alt="Vlastnost grid-template-areas">
 <figcaption markdown="1">
-*Světle hnědou barvou jsou vyznačené položky, modře pak uvidíte oblasti mřížky vyznačené ve Firefox DevTools.*
+Světle hnědou barvou jsou vyznačené položky, modře pak uvidíte oblasti mřížky vyznačené ve Firefox DevTools.
 </figcaption>
 </figure>
 
@@ -189,7 +189,7 @@ CodePen: [cdpn.io/e/jgrmoq](https://codepen.io/machal/pen/jgrmoq?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 
-Opět je zde jediná potíž: Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to tak problematické být nemusí.
+Opět je zde jediná potíž: Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to nemusí být tak problematické.
 
 Moderní prohlížeče nemají s vlastností `grid-template-areas` žádný problém.
 

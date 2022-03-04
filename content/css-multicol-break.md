@@ -100,7 +100,7 @@ CodePen: [cdpn.io/e/jOMaMdq](https://codepen.io/machal/pen/jOMaMdq?editors=1000)
 V ukázce byste měli vidět tři možnosti, jak zalamování zakázat:
 
 - `auto` – nastavuje všechny tři vlastnosti na tuto hodnotu.
-- `break-before: column` - vynucuje zalomení nadpisů vždy do nového sloupce.
+- `break-before: column` – vynucuje zalomení nadpisů vždy do nového sloupce.
 - `break-inside: avoid` – zakazujeme zalomení uvnitř nadpisu.
 
 V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu bychom to nemuseli zapisovat, je to výchozí stav, ale vypadá to takto:

@@ -41,9 +41,7 @@ Naopak se málo ví, že stařičký MSIE nativně podporuje následující:
 
 To myslím není zlé.
 
-Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“.
-
-Jejich příčinou je rychlá implementace gridu v rané fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, grid ale v Exploreru zůstal v původní variantě, protože se tento prohlížeč ve své době aktualizoval jen velmi pomalu.
+Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“. Jejich příčinou je rychlá implementace gridu v rané fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, grid ale v Exploreru zůstal v původní variantě, protože se tento prohlížeč ve své době aktualizoval jen velmi pomalu.
 
 ## Třísloupcové demo aneb „Jak to kurnik šopa funguje?“ {#demo}
 

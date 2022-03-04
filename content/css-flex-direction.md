@@ -66,7 +66,7 @@ O směru psaní dokumentu a tvorbě layoutu pro jazyky sázené v jiných směre
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
+Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně o možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
 
 </div>
 
@@ -96,7 +96,7 @@ Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basi
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je flexbug číslo 14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou často lidé ani nenarazí. 
+Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je flexbug číslo 14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou lidé skoro nenarazí.
 
 <div class="ebook-only" markdown="1">
 

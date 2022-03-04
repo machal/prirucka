@@ -92,7 +92,7 @@ V poslední ukázce uvidíte, že je také možné definovat rozměry gridu spol
     2fr 1fr;
 ```
 
-Je to už docela složité. Definují se nejprve řádky – jejich jména a výšky – a pak za lomítkem šířky sloupečků. Odpovídá to následujícímu:
+Je to už docela složité. Nejprve se definují řádky – jejich jména a výšky – a pak za lomítkem šířky sloupečků. Odpovídá to následujícímu:
 
 ```css
 .container {
@@ -116,7 +116,7 @@ Je zde pár kulišáren, na které bych vás rád upozornil:
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Exploreru 11 vlastnost nepodporuje. Můžete ji zkusit automaticky převádět [díky Autoprefixeru](css-grid-msie.md).
+Internet Explorer 11 vlastnost nepodporuje. Můžete ji zkusit automaticky převádět [díky Autoprefixeru](css-grid-msie.md).
 
 Pokud ale podporu MSIE s využitím Autoprefixeru plánujete, moje doporučení zní: Používejte vlastnost `grid-template`, nikoliv zkratku `grid` a vyhnete se problémům.
 

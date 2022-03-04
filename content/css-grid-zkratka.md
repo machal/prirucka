@@ -35,7 +35,7 @@ Pojďme se podívat na několik ukázek.
 
 ## Definice explicitního gridu {#explicitni}
 
-V zápisu lomítkem oddělujeme zápis pro `grid-template-rows` od `grid-template-columns`:
+V tomto zápisu oddělujeme hodnoty pro vlastnosti `grid-template-rows` od `grid-template-columns` pomocí lomítka:
 
 ```css
 grid: <grid-template-rows> / <grid-template-columns>;

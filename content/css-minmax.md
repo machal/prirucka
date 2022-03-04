@@ -212,7 +212,7 @@ CodePen: [cdpn.io/e/GRKbQom](https://codepen.io/machal/pen/GRKbQom?editors=1100)
 
 Může vás také zajímat, jak to funguje s obrázky a jejich vnitřními nastaveními minima a maxima.
 
-Následuje tedy ještě jedna ukázka vycházející z dřívějšího CodePenu s obrázkem.
+Následuje tedy ještě jedna ukázka, vycházející z dřívějšího CodePenu s obrázkem.
 
 ```html
 <div class="container">
@@ -247,7 +247,7 @@ Pokud byste chtěli zápis `minmax()` mermomocí rozbít, prohlížeče by se po
 
 Teď už zbývá jen rekapitulace podpory v prohlížečích.
 
-- Funkce `minmax()`, ale i klíčové slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči-dědečkovi ale doporučuji testovat, občas se chová podivně.
+- Funkce `minmax()`, ale i klíčová slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči-dědečkovi ale doporučuji testovat, občas se chová podivně.
 - `fit-content()` podporují skoro všechny relevantní prohlížeče, ale v MSIE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
 
 Viz CanIUse: [caniuse.com/intrinsic-width](https://caniuse.com/#search=intrinsic-width).

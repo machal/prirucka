@@ -29,7 +29,7 @@ Animaci pak na element aplikujeme ve chvíli, kdy jej uživatel aktivuje najetí
 
 Má se provést animace s názvem `my_blink_animation`, trvat přesně jednu vteřinu a mít nekonečný (`infinite`) počet opakování.
 
-Příklad je k vyzkoušení na [cdnp.io/e/pKodf](http://codepen.io/machal/pen/pKodf). Vyzkoušejte si to; ale prosím vás, v praxi to blikání raději moc nepoužívejte! :-)
+Příklad je k vyzkoušení na [cdpn.io/e/pKodf](http://codepen.io/machal/pen/pKodf). Vyzkoušejte si to; ale prosím vás, v praxi to blikání raději moc nepoužívejte! :-)
 
 ## Druhý: řetězení animací
 

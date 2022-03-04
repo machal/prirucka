@@ -171,7 +171,7 @@ Léonie Watson v článku „Flexbox & the keyboard navigation disconnect“ už
 
 Hned jsem to vyzkoušel, ale zdá se, že stále platí to, co píše Léonie v článku z roku 2016: Tahle vlastnost má extrémně špatnou podporu v prohlížečích. Alespoň něco se v prohlížečích nemění… 
 
-CodePen: [cdnp.io/e/zYqeXeE](https://codepen.io/machal/pen/zYqeXeE)
+CodePen: [cdpn.io/e/zYqeXeE](https://codepen.io/machal/pen/zYqeXeE)
 
 ## Pomůže nám vůbec něco? Ani ne {#neco}
 

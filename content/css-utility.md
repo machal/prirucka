@@ -113,7 +113,7 @@ Stejné to je například u vnitřních a vnějších okrajů. Projekt by měl b
 </figcaption>
 </figure>
 
-Když se vrátíme k otázce na třídu `.text-blue` a její inline stylovou alternativu, vlastně nedává smysl. Barev by mělo být na projektu omezené množství, vycházející z definice designu a zároveň by mělo jít o barvy sémanticky, nikoliv vizuálně pojmenované.
+Když se vrátíme k otázce na třídu `.text-blue` a její inline stylovou alternativu, v podstatě nedává smysl. Barev by mělo být na projektu omezené množství, vycházející z definice designu a zároveň by mělo jít o barvy sémanticky, nikoliv vizuálně pojmenované.
 
 Prostě: `.text-primary` dává větší smysl než `.text-blue`. V `.text-primary` totiž vidíme odraz designérského systému, takže otázka na inline-stylovou alternativu přestává být relevantní. Takové věci pomocí inline stylů nedokážeme.
 

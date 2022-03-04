@@ -12,12 +12,12 @@ Kontejner mřížky můžeme definovat kromě `display:grid` také jako `display
 
 Šířky a výšky položek mřížky je možné definovat všemi způsoby, které už asi znáte – jednotkami `px`, `em`, `%` a mnoha dalšími.
 
-Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) – *fraction unit*, která umožní snadné dělení volného místa.
+Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) (*fraction unit*), která umožní snadné dělení volného místa.
 
 <figure>
 <img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
 <figcaption markdown="1">
-*Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce em odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou fr. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)*
+Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce em odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou fr. Zdroj: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100).
 </figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ To, co je profíkům jasné jako facka, nemusí být patrné všem. Stejně jako
 
 Otevírá to další možnosti a prostor pro tvorbu precizně definovaných layoutů.
 
-Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako [podmřížka (subgrid)](css-subgrid.md) nebo nová hodnota [vlastnosti `display:contents`](css-display.md), která umožní nevykreslit rodiče a celý prostor věnovat potomkům.
+Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako [podmřížka (subgrid)](css-subgrid.md) nebo nová hodnota [vlastnosti `display:contents`](css-display.md), jež umožní nevykreslit rodiče a celý prostor věnovuje potomkům.
 
 ## 10) Nové typy layoutů
 
