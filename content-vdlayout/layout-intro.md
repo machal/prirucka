@@ -21,11 +21,15 @@ Zatímco na skutečném Tinderu máte k ruce vystajlované fotky možných partn
 
 Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektuálové, kteří na vás mluví řečí symbolů. Žádné obrázky z posiloven, žádné „duckface“, žádné výstřihy, a dokonce ani žádné instagramové filtry…
 
+<div class="book-index" data-book-index="Flexbox"></div>
+<div class="book-index" data-book-index="Grid"></div>
+<div class="book-index" data-book-index="Multicol"></div>
+
 Jsou to od pohledu relativně nudní patroni, takže vám o nich budu muset něco říct:
 
-- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi. (Specifikace o flexboxu mluví jako o <div class="book-index" data-book-index="Flexbox">„CSS Flexible Box Layout“</span> a já pak více ve čtvrté kapitole.)
-- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více. (Gridu se ve specifikaci říká <div class="book-index" data-book-index="Grid">„CSS Grid Layout“</span>, píšu o něm v páté kapitole.)
-- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu vděční. (Plný název podle specifikace je <div class="book-index" data-book-index="Multicol">„CSS Multi-column Layout“</span> a můj detailní rozbor je v šesté kapitole.)
+- [Flexbox](css-flexbox.md) je skvělý pro jednosměrná rozložení prvků na stránce. Ze všech tří je to největší parťák, kamarádi mu říkají krátce „flex“. Nezkazí žádnou legraci a všichni jej mají rádi. (Specifikace o flexboxu mluví jako o „CSS Flexible Box Layout“ a já pak více ve čtvrté kapitole.)
+- [Grid](css-grid.md) výborně zvládá obousměrné layouty. Je mladší než flex a trošku arogantní, protože toho zvládá o dost více. (Gridu se ve specifikaci říká „CSS Grid Layout“, píšu o něm v páté kapitole.)
+- [Multicol](css-multicol.md), neboli vícesloupcový layout, je nenápadný introvert. Mnozí si jej ani nevšimnou, protože pasuje jen do několika životních situací týkajících se zalomení textu do sloupců. Když ale takovou řešíte, za vztah s ním budete opravdu vděční. (Plný název podle specifikace je „CSS Multi-column Layout“ a můj detailní rozbor je v šesté kapitole.)
 
 Tak a teď máte nové kamarády, gratuluji vám.
 
