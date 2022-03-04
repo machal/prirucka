@@ -217,7 +217,7 @@ Pozor, buňka mřížky zároveň není položkou mřížky. Mřížka má vždy
 
 Je to patrné v následujícím příkladu, kde jsme ubrali poslední položku. Mřížka však má stále tři sloupce a dva řádky:
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/pojmy-polozky-bunky.jpg" width="1600" height="900" alt="Položky a buňky v CSS gridu">
 <figcaption markdown="1">
 *Některé buňky neuvidíte, ale jsou tam pořád, potvory.*

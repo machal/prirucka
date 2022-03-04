@@ -19,7 +19,7 @@ Podíváme se na pojmy jako „směr rozvržení“, „kontejner“ a „předm
 
 Prohlížeče nám při tvorbě běžného layoutu umožňují jen dvourozměrný zážitek, a tak naštěstí zarovnáváme na dvě osy. Vzhledem ke složitosti téhle oblasti v CSS je to moc dobrá zpráva.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-box-alignment-osy.jpg" width="1600" height="900" alt="Osy v rozvržení pomocí CSS">
 <figcaption markdown="1">
 *Dvě osy v rozvržení.*
@@ -45,7 +45,7 @@ Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical proper
 
 </div>
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-box-alignment-direction.jpg" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
 Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [cdpn.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)
@@ -64,7 +64,7 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 - *Předmět zarovnání* (alignment subject) je samotný boxík, který zarovnáváme. Zde mu občas budeme říkat také „položka“.
 - *Kontejner zarovnání* (alignment container) je rámec, ve kterém předmět zarovnáváme. Obvykle jde o rodičovský element.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.jpg" width="1600" height="900" alt="Kontejner a položky">
 <figcaption markdown="1">
 *Kontejner a položky neboli předměty zarovnání.*
@@ -306,7 +306,7 @@ Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflo
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/overflow-position.jpg" width="1600" height="900" alt="Vlastnost overflow-position">
 <figcaption markdown="1">
 V případě hodnoty unsafe se použije poziční zarovnání. Alespoň teoreticky.

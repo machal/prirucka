@@ -50,7 +50,7 @@ Pokud používáte Firefox, v návodu namísto záložky Elements dosadíte Insp
 
 Osobně se mi zdá, že Firefox má v této oblasti pořád alespoň malý náskok. Zejména jejich překryvná vrstva pro ladění gridu je navržená velmi dobře.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/devtools-layout-firefox-detail.jpg" width="1600" height="900" alt="Livesport.cz v DevTools Chrome">
 <figcaption markdown="1">
 Překryvná vrstva ve Firefoxu. Zkoumám tam tento CodePen: [cdpn.io/e/bXeWjb](https://codepen.io/machal/pen/bXeWjb?editors=1100).

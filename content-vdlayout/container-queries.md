@@ -130,7 +130,7 @@ CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 Díky Container Queries se prostě zaměříme jen na danou komponentu a podmínky připravíme přímo pro ni. Ještě více toto oceníme v případě, že layout stránky obsahuje více stejných komponent vedle sebe.
 
 <figure>
-<img src="../dist/images/original/vdlayout/container-queries-chrome.jpg" alt="">
+<img src="../dist/images/original/vdlayout/container-queries-chrome.jpg" width="1600" height="450" alt="">
 <figcaption markdown="1">
 Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jejich obsahu.“ Media Queries: „Ufff!“ Container Queries: „Podrž mi to pivo…“
 </figcaption>
@@ -185,7 +185,7 @@ Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webový
 Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili. Například v případě nepodpory Safari bude naše komponenta v tomto prohlížeči vypadat následovně.
 
 <figure>
-<img src="../dist/images/original/vdlayout/container-queries-safari.jpg" alt="">
+<img src="../dist/images/original/vdlayout/container-queries-safari.jpg" width="1600" height="450" alt="">
 <figcaption markdown="1">
 Safari: „Container Queries neumím, ale nějak to zobrazím.“
 </figcaption>

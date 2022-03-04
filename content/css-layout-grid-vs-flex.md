@@ -26,20 +26,13 @@ Jsou mezi nimi však významné rozdíly. Podívejme se na ně.
 Grid navrhli autoři pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná, ať už svislá nebo vodorovná.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-grid-vs-flexbox-flexbox.jpg" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/css-grid-vs-flexbox.jpg" width="1600" height="900" alt="Grid vs. flex">
 <figcaption markdown="1">
-*Flexbox zná jen jeden směr. Víceřádkový layout už pak například nezarovnáte do sloupců.*
+Flexbox zná jen jeden směr. Víceřádkový layout už pak například nezarovnáte do sloupců. Grid je mřížka. Dvourozměrná mřížka.
 </figcaption>
 </figure>
 
 Jakmile je váš layout víceřádkový, typu mřížka, a nevystačíte si s pouhým zalomením bez definice pravidel layoutu druhé řádky, je pravděpodobné, že potřebujete grid.
-
-<figure>
-<img src="../dist/images/original/vdlayout/css-grid-vs-flexbox-grid.jpg" width="1600" height="900" alt="…">
-<figcaption markdown="1">
-*Grid je mřížka. Dvourozměrná mřížka.*
-</figcaption>
-</figure>
 
 ### U flexboxu kraluje obsah, u gridu zase nastavený layout
 

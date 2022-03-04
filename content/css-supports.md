@@ -284,7 +284,7 @@ Na pohled to bude vypadat stejně. Takhle jednoduchý kód se samozřejmě nevyp
 <figure>
 <img src="../dist/images/original/css-supports-grid.jpg" width="1600" height="900" alt="CSS @supports a dotazy na vlastnosti - V Internet Explorer flex a Chrome grid">
 <figcaption markdown="1">
-*Dvě verze pro dvě kategorie prohlížečů. To nám snadno umožní Feature Queries, dotazy na vlastnosti.*
+Dvě verze pro dvě kategorie prohlížečů. To nám snadno umožní Feature Queries, dotazy na vlastnosti.
 </figcaption>
 </figure>
 

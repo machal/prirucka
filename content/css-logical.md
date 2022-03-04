@@ -28,7 +28,7 @@ Arabština má, jak známo, opačný tok textu než evropské jazyky – čte se
 
 Vezměme, že máme jednoduchý příklad, který vidíte na obrázku. Nadpis, obrázek a text, který jej obtéká. Na polovině stránky je to česky, na polovině arabsky.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-logical-czech-arabic.jpg" width="1600" height="900" alt="Čeština a Arabština na jedné stránce">
 <figcaption markdown="1">
 Zleva doprava. Zprava doleva. Jak to safra nastylovat co nejuniverzálněji?
@@ -170,7 +170,7 @@ Než je začnete používat, dobře si vše otestujte v různých prohlížečí
 
 Pro box model máme hezký obrázek s porovnáním fyzických a logických variant:
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-logical-physical.jpg" width="1600" height="900" alt="CSS physical / CSS logical">
 <figcaption markdown="1">
 Logické hodnoty jako synonyma těch fyzických. Zdroj: Adrian Roselli. [cdpn.io/e/bGGxrvM](https://codepen.io/aardrian/pen/bGGxrvM)

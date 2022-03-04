@@ -31,10 +31,10 @@ Vlastnost je velmi zajímavá pro použití na nadpisy a podobné prvky, které 
 
 Jak přesně to funguje? To uvidíte nejlépe v příkladu nebo na obrázku.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-multicol-span.jpg" width="1600" height="900" alt="CSS vlastnosti column-width, column-count a columns">
 <figcaption markdown="1">
-Černý prvek se standardně spokojí jen s jedním sloupcem. Dokud mu nenastavíte vlastnost column-span:all.
+Tmavý prvek se standardně spokojí jen s jedním sloupcem. Dokud mu nenastavíte vlastnost column-span:all.
 </figcaption>
 </figure>
 

@@ -70,7 +70,7 @@ Jeden z významů slova „clamp“ v angličtině je „svěrka“, což je vce
 }
 ```
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-clamp.jpg" width="1600" height="900" alt="CSS funkce clamp()">
 <figcaption markdown="1">
 Pitva funkce clamp().
@@ -89,7 +89,7 @@ CodePen: [cdpn.io/e/poeLazv](https://codepen.io/machal/pen/poeLazv?editors=1100)
 
 Následující ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizualizace, ve které je vidět aktuální šířka rodiče, elementu a pak také argument funkce `min()`, který je v dané šířce obrazovky aktivní.
 
-<figure class="ebook-only">
+<figure class="ebook-only figure-thirds">
 <img src="../dist/images/original/vdlayout/css-min-una.jpg" width="1600" height="900" alt="CSS funkce clamp()">
 <figcaption markdown="1">
 Funkce min() vybere prostě tu menší ze dvou hodnot. Zdroj: Una Kravets.

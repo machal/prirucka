@@ -197,7 +197,7 @@ V tomto případě mezi první a třetí linku mřížky. Linka je čára, kter�
 
 Nejlépe to uvidíme na následujícím obrázku, který je zároveň doporučením, abyste věnovali pozornost [vývojářským nástrojům prohlížečů](css-layout-devtools.md) (více v osmé kapitole). Ty umí být při práci s layouty opravdovými pomocníky.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-layout-intro-examples-grid.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 DevTools Firefoxu (ale i Chromu) krásně ukážou, co je myšleno termínem „linka gridu“.
@@ -254,10 +254,10 @@ Toto je síla CSS Multi-column Layout. Chcete rozvržení o šířce sloupce max
 
 K [vlastnosti `columns`](css-multicol-columns.md) se ještě dostaneme, vlastnost `gap` už trochu znáte.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-layout-intro-example-multicol.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
-*Výsledek ve Firefoxu. Je ale dobré vědět, že v různých šířkách okna bude počet sloupečků různý.*
+Výsledek ve Firefoxu. Je ale dobré vědět, že v různých šířkách okna bude počet sloupečků různý.
 </figcaption>
 </figure>
 

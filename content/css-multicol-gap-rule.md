@@ -31,7 +31,7 @@ Je jich hned několik:
 
 Je dobré vědět, že mezery místo v layoutu zabírají, ale oddělovače nikoliv. Oddělovač jakékoliv šířky neubírá místo mezerám nebo sloupcům v rozvržení. Nedává vám to smysl? Podívejte se na následující příklad.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-multicol-gap-rule.jpg" width="1600" height="900" alt="CSS vlastnosti column-gap a column-rule">
 <figcaption markdown="1">
 *Na obrázku jsme definovali mezeru mezi sloupečky o šířce 3em a k ní ještě přidali šedivý čárkovaný oddělovač .*

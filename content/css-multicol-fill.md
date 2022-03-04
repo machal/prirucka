@@ -36,10 +36,10 @@ Rozdíl mezi `balance` a `balance-all` uvidíte jen ve vícestránkových kontex
 
 Vlastnost se vám asi zatím bude používat hůře. Implementace v prohlížečích je různorodá.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-multicol-fill.jpg" width="1600" height="900" alt="CSS vlastnost column-fill">
 <figcaption markdown="1">
-*Rozdíl mezi hodnotami vlastnosti column-fill: auto a balance.*
+Rozdíl mezi hodnotami vlastnosti column-fill: auto a balance.
 </figcaption>
 </figure>
 

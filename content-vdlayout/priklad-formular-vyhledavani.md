@@ -4,10 +4,10 @@ V této ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkou
 
 Zadání přichází s návrhovým vzorem, na který jednou narazí každá kodérka i každý kodér.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-vyhledavani-zadani.jpg" width="1600" height="900" alt="Příklad s vyhledáváním">
 <figcaption markdown="1">
-*Co budeme vyhledávat dneska? Co třeba řešení tohoto příkladu?*
+Co budeme vyhledávat dneska? Třeba řešení tohoto příkladu?
 </figcaption>
 </figure>
 

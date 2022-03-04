@@ -123,10 +123,10 @@ Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracovan
 
 Sečteno, podtrženo: CSS grid může být nástrojem, který k webu přitáhne novou generaci webových designérů a s nimi nové, neotřelé layouty.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-jen-simmons.jpg" width="1600" height="900" alt="THE EXPERIMENTAL LAYOUT LAB OF JEN SIMMONS">
 <figcaption markdown="1">
-*The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a neotřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak. Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/).*
+The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a neotřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak. Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/).
 </figcaption>
 </figure>
 

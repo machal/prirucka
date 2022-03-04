@@ -9,7 +9,7 @@ V naprosté většině případů definujeme explicitní mřížku, tedy _přede
 
 Může se nám ale stát, že položku umístíme na místo, kam explicitní mřížka nesahá. V takovém případě se nám mřížka automaticky rozšíří o implicitní část. Budete se divit, ale i tu můžeme předem definovat.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/grid-explicit-implicit.jpg" width="1600" height="900" alt="Explicitní a implicitní CSS grid">
 <figcaption markdown="1">
 *Mřížka s tmavou explicitní (doslovně definovanou) částí a bílou implicitní (automaticky definovanou) částí.*

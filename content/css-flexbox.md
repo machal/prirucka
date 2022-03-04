@@ -290,7 +290,7 @@ Kromě flexboxových kontejnerů a položek nás v dalším textu budou zajímat
 
 Dostupnost vlastností flexboxu v prohlížečích je velmi dobrá, vždyť s podporou přišel už [Internet Explorer](msie.md) 10! Grafy na CanIUse jsou tedy pěkně zelené. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-flexbox-caniuse.jpg" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 *Paráda. Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*

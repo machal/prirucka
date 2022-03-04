@@ -64,7 +64,7 @@ Demo to ostatně ukáže v celé kráse. Máme dva kontejnery vysázené gridem
 
 Na pohled by to mohlo fungovat stejně, ale to opravdu jen na první pohled.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-fr-procenta.jpg" width="1920" height="1080" alt="Jednotka fr a procenta">
 <figcaption markdown="1">
 Jednotky fr a %. Kdo s koho?

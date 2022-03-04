@@ -26,7 +26,7 @@ Vy, kteří čtete moje články na Vzhůru dolů, víte, že ctím heslo, že u
 
 Mně samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v téhle knize. Je jich na 170.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/codepen.jpg" width="1600" height="900" alt="CodePen">
 <figcaption markdown="1">
 *To je on, našich srdcí šampión. CodePen.*
@@ -36,9 +36,9 @@ Mně samotnému spadla čelist, když jsem spočítal ukázky na CodePenech v t�
 Pokud chcete „peny“ zkoušet, což vám velmi doporučuji, udělejte prosím následující:
 
 1. Zřiďte si na CodePenu účet. Je to zdarma a velmi jednoduché.
-1. Moje CodePeny si „forkněte“, čili uložte kopii do vlastního účtu.
-1. Responzivitu si emulujte v tomto rozložení a pohybem šoupátka ze strany na stranu.
-1. Upravujte kód dle libosti. Experimentujte. Snažte se ho vylepšit nebo rozbít.
+2. Moje CodePeny si „forkněte“, čili uložte kopii do vlastního účtu.
+3. Responzivitu si emulujte v tomto rozložení a pohybem šoupátka ze strany na stranu.
+4. Upravujte kód dle libosti. Experimentujte. Snažte se ho vylepšit nebo rozbít.
 
 Takhle se naučíte nejvíc.
 
@@ -90,7 +90,7 @@ Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlíže�
 <figure>
 <img src="../dist/images/original/vdlayout/caniuse-etc.jpg" width="1600" height="900" alt="CodePen">
 <figcaption markdown="1">
-*Tyhle weby mějte po ruce. Kdyby něco.*
+Weby, které mějte po ruce. Kdyby něco.
 </figcaption>
 </figure>
 

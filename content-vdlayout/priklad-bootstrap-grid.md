@@ -122,7 +122,7 @@ Shrňme si to v kompletním CSS kódu:
 
 CodePen: [cdpn.io/e/MWpzqdv](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-bootstrap-4-8.jpg" width="1600" height="900" alt="4/8 rozvržení jako v Bootstrapu">
 <figcaption markdown="1">
 *Rozvržení 4/8 jako v Bootstrapu s překryvnou vrstvou vyznačující neviditelné sloupečky gridu a mezery mezi nimi.*

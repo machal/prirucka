@@ -30,7 +30,7 @@ Autoprefixer například z následujícího kódu…
 
 Tím pádem budou kódu rozumět všechny prohlížeče, i když vlastnost `hyphens` neznají a podporují jen prefixované varianty.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/autoprefixer.jpg" width="1600" height="900" alt="Autoprefixer online">
 <figcaption markdown="1">
 *Autoprefixer v celé kráse své online verze.*

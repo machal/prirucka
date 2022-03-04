@@ -98,10 +98,10 @@ Pokud bychom chtěli střídat výšku `100px` a `200px` pro liché a sudé řá
 }  
 ```
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-auto-rows.jpg" width="1600" height="900" alt="grid-auto-rows">
 <figcaption markdown="1">
-*Vlastnost grid-auto-rows v akci. Dává rozměry položkám, se kterými nepočítá explicitně definovaná mřížka.*
+Vlastnost grid-auto-rows v akci. Dává rozměry položkám, se kterými nepočítá explicitně definovaná mřížka.
 </figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ Opravíme to až touto deklarací:
 }
 ```
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-auto-cols.jpg" width="1600" height="900" alt="grid-auto-columns">
 <figcaption markdown="1">
 Rozdíl mezi nedefinovanou mřížkou (grid-auto-columns:auto) a definovanou (grid-auto-columns:1fr), ve které pátá a šestá položka dostanou definovanou šírku.

@@ -50,10 +50,10 @@ Takto to pojali například vývojářky a vývojáři v Rohlík.cz. Podíl MSIE
 
 Pro každého frontendistu je ovšem podpora takto zastaralého prohlížeče otrava. V Rohlíku tedy uživatelům Exploreru ukazují hlášku motivující je ke změně prohlížeče.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/msie-rohlik.jpg" width="1600" height="900" alt="Jakub Valenta z Rohlíku a obrazovka pro uživatele MSIE">
 <figcaption markdown="1">
-*Máme vás rádi, ale nechtěli byste změnit prohlížeč? Hodně by nám to pomohlo. Zdroj: [Twitter](https://twitter.com/JakubValenta_/status/1375383150273126401).*
+Máme vás rádi, ale nechtěli byste změnit prohlížeč? Hodně by nám to pomohlo. Zdroj: [Twitter](https://twitter.com/JakubValenta_/status/1375383150273126401).
 </figcaption>
 </figure>
 
@@ -63,10 +63,10 @@ Ve schopnost těchto hlášek snížit podíl zastoupení starých prohlížeč�
 
 Oficiální ukončení podpory mají v Microsoftu naplánované na polovinu června 2022.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/msie-support-end.jpg" width="1600" height="900" alt="Konec podpory Exploreru - Microsoft to vidí na červen 2022">
 <figcaption markdown="1">
-*Oznámení o ukončení podpory MSIE zobrazené v MSIE. Hurá, stránka se nerozpadla!*
+Oznámení o ukončení podpory MSIE zobrazené v MSIE. Hurá, stránka se nerozpadla!
 </figcaption>
 </figure>
 

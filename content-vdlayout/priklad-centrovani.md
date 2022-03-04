@@ -6,7 +6,7 @@ V tomto jednoduchém příkladu otevřeme bránu do světa zarovnávání boxů,
 
 Cílem je to, co vidíte na obrázku. Boxík, který ve viditelné ploše obrazovky zůstane vycentrovaný vodorovně i svisle, i když se jeho obsah změní.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-centrovani.jpg" width="1600" height="900" alt="Centrování boxu na výšku i šířku">
 <figcaption markdown="1">
 *Centruj, centruj, vykrúcaj!*
@@ -70,7 +70,7 @@ Toto je častá potíž začátečníků s flexboxem. Výchozí hodnota vlastnos
 
 O jakou vlastnost jde? Tady máme dobrou příležitost ukázat si tahák, který převezmeme z referenční příručky k CSS Box Alignment.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-box-alignment-tahak.jpg" alt="Tahák k CSS Box Alignment">
 <figcaption markdown="1">
 *CSS Box Alignment v celé své složité kráse.*

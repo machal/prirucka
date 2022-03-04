@@ -260,10 +260,10 @@ Z mého pohledu má grid daleko širší možnosti stylování než při využit
 
 Podpora gridu v moderních prohlížečích je výborná, takřka bezchybná.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-caniuse.jpg" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Podpora gridu v prohlížečích, které mají v ČR nad 0,5 % podílu trhu. Prohlížeče jsou seřazené podle používanosti. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
+Podpora gridu v prohlížečích, které mají v ČR nad 0,5 % podílu trhu. Prohlížeče jsou seřazené podle používanosti. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).
 </figcaption>
 </figure>
 

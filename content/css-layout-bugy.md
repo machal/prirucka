@@ -63,10 +63,10 @@ Znalost některých chyb byla tak zásadní, že jsem je svého času musel uči
 
 Když jsem během psaní tohoto textu srovnával současný stav s tím dřívějším, došel jsem k radostnému poznání.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-flexbox-caniuse.jpg" width="1600" height="900" alt="Podpora flexboxu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Zelená se tráva… Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).*
+Zelená se tráva… Podpora flexboxu v moderních prohlížečích je takřka bezchybná. Zdroj: [CanIUse.com](https://caniuse.com/flexbox).
 </figcaption>
 </figure>
 
@@ -159,10 +159,10 @@ V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit 
 
 Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří mají smůlu.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-caniuse.jpg" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-*Podpora gridu v prohlížečích. Zelenohnědá barva u MSIE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).*
+Podpora gridu v prohlížečích. Zelenohnědá barva u MSIE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).
 </figcaption>
 </figure>
 
@@ -216,7 +216,7 @@ Všechny ostatní chyby jsou, zdá se, opravené. Takže, když nebereme v úvah
 
 Zajímavé je, že tuto specifikaci trápí spíše nedodělky v moderních prohlížečích. Implementace v Exploreru je vlastně výborná.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-multicol-caniuse.jpg" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse">
 <figcaption markdown="1">
 Podpora vícesloupcového layoutu v prohlížečích. Zelená je na místech, kde byste to možná nečekali. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).
@@ -227,7 +227,7 @@ Chyby v Chromu a Firefoxu zde zůstávají už léta hlavně proto, že sloupcov
 
 Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-multicol-caniuse-issues.jpg" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse - záložka issues">
 <figcaption markdown="1">
 *Pytel blech. Drobné problémy ve vícesloupcovém layoutu. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*

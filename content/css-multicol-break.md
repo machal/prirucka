@@ -36,10 +36,10 @@ Potíž v kombinaci těchto vlastností s vícesloupcovým rozložením je v jej
 
 To nás ale od jejich zdokumentování nemůže odradit. A pokud vás ano, mě určitě ne.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-multicol-break.jpg" width="1600" height="900" alt="CSS vlastnost break ve vícesloupcovém rozložení">
 <figcaption markdown="1">
-Černému prvku jsme zakázali, aby se jeho obsah rozbil do dvou sloupečků. Tím ďábelským nástrojem je zde právě break-inside:avoid.
+Tmavému prvku jsme zakázali, aby se jeho obsah rozbil do dvou sloupečků. Tím ďábelským nástrojem je zde právě break-inside:avoid.
 </figcaption>
 </figure>
 
