@@ -45,7 +45,7 @@ CSS-Tricks je asi nejlepší zdroj jednoduchých příruček k CSS vlastnostem v
 - CSS-Tricks: A Complete Guide to Grid:  
 [css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-## Specifikace W3
+## Specifikace W3C
 
 Zdroj všech zdrojů. Osobně čtu specifikace moc rád. Řekl bych, že jsou napsané lépe, než si lidé myslí, a detailnější popis vlastností nikde jinde nenajdete.
 

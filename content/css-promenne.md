@@ -10,7 +10,7 @@ Pokud jde o moderní prohlížeče, můžeme říci, že CSS proměnné mají pl
 
 <div class="ebook-only" markdown="1">
 
-V knize proměnné zhusta používám v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic, nebo jen co by se za nehet vešlo, představuji je zde.
+V knize používám proměnné zhusta v [podkapitole o „krkavčí technice“](krkavci-technika.md), ale během psaní moderních kaskádových stylů na ně budete narážet velmi často. Pro případ, že o nich nevíte vůbec nic, nebo jen co by se za nehet vešlo, představuji je zde.
 
 </div>
 
@@ -38,7 +38,7 @@ Tuhle základní konstrukci si můžete vyzkoušet v mé ukázce.
 
 CodePen: [cdpn.io/e/mBOZZK](https://codepen.io/machal/pen/mBOZZK)
 
-V příkladu jsem definoval něco jako globální proměnnou, prostě ji navázal na nejvyšší prvek DOMu, tedy `<html>`.
+V příkladu jsem definoval něco jako globální proměnnou, prostě jsem ji navázal na nejvyšší prvek DOMu, tedy `<html>`.
 
 Občas je v jiných příkladech vidět použití pseudoprvku `:root`. To je to samé jako selektor `html`, jen je váha (specificita) selektoru vyšší, na úrovni třídy. Což se může hodit.
 
@@ -52,7 +52,7 @@ Občas je v jiných příkladech vidět použití pseudoprvku `:root`. To je to 
 
 Zastavme se ještě na chvíli u pojmenovávání. Specifikace definuje „custom property“ (volitelnou vlastnost) a „variable“ (proměnnou) jako dvě odlišné věci.
 
-_Volitelné vlastnosti_ jsou ty vlastnosti, které nejsou zapsány v CSS specifikaci a mohou si je vymyslet a používat autoři a uživatelé webů. Vypadají jako vlastnosti, ale na začátku mají dvě pomlčky. V příkladu to je `--color: blue`.
+_Volitelné vlastnosti_ jsou ty vlastnosti, které nejsou zapsány v CSS specifikaci. Mohou si je vymyslet a používat autoři a uživatelé webů. Vypadají jako vlastnosti, ale na začátku mají dvě pomlčky. V příkladu to je `--color: blue`.
 
 _Proměnné_ pak zpřístupňují hodnoty uložené ve volitelných vlastnostech. To je ona konstrukce `var(--color)`, která vrací hodnotu `blue` nebo jinou nastavenou.
 
@@ -113,7 +113,7 @@ Ty pak můžeme dát k dispozici do autorských vlastností:
 }
 ```
 
-Díky zkompilovanému CSS pak budou k dispozici v prohlížeči a tedy také v HTML nebo JS:
+Díky zkompilovanému CSS pak budou k dispozici v prohlížeči, a tedy také v HTML nebo JS:
 
 ```css
 :root {

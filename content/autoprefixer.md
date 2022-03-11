@@ -49,7 +49,7 @@ Autoprefixer je balíček, který si můžete do projektu nainstalovat jako plug
 
 <!-- AdSnippet -->
 
-Používat Autoprefixer můžete mnoha různými způsoby, o těch bude za chvíli řeč. Nejprve ale k nastavení.
+Používat můžete Autoprefixer mnoha různými způsoby, o těch bude za chvíli řeč. Nejprve ale k nastavení.
 
 <div class="web-only" markdown="1">
 
@@ -57,7 +57,7 @@ Používat Autoprefixer můžete mnoha různými způsoby, o těch bude za chví
 
 </div>
 
-## Nastavení pomocí Browserlist {#browserlist}
+## Nastavení pomocí Browserlistu {#browserlist}
 
 Browserlist je způsob, jak Autoprefixeru a podobným nástrojům (jakým je například Babel pro zpracování JavaScriptu) určit, které prohlížeče v projektu podporujete.
 
@@ -141,13 +141,13 @@ gulp.task('autoprefixer', () => {
 
 <div class="web-only" markdown="1">
 
-postcss-loader je balíček vhodný pro vaší práci ve [Webpacku](webpack.md). [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
+postcss-loader je balíček vhodný pro vaši práci ve [Webpacku](webpack.md). [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
 
 </div>
 
 <div class="ebook-only" markdown="1">
 
-postcss-loader je balíček vhodný pro vaší práci ve Webpacku. [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
+postcss-loader je balíček vhodný pro vaši práci ve Webpacku. [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
 
 </div>
 

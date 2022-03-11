@@ -87,7 +87,7 @@ CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 <div class="book-index" data-book-index="Bloková osa"></div>
 <div class="book-index" data-book-index="Inline osa"></div>
 
-Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba uvědomit si, že vycházejí z obecné vlastnosti CSS – dvou směrů: blokového a řádkového.
+Pro podrobnější pochopení logických vlastností a hodnot v CSS je potřeba si uvědomit, že vycházejí z obecné vlastnosti CSS – dvou směrů: blokového a řádkového.
 
 - _Řádková osa (inline)_ je směr sázení textu po řádcích.
 - _Bloková osa (block)_ zase ve směru protilehlém.
@@ -127,17 +127,17 @@ V praxi se to pak projevuje následovně: Vezměme, že máme flexový kontejner
 
 ```css
 .container p {
-  margin: 0.25rem;
-  padding: 0.5rem;
-  border: 5px dotted black;
+  margin: 1rem;
+  padding: 1rem;
+  border: .5rem dotted #abab9d;
   padding-block: 2rem;
-  border-block-color: LimeGreen;
+  border-block-color: #2E2C08;
 }
 ```
 
-Ano, manipulujeme tady s vlastnostmi prvku na blokové ose, tedy v případě sázení v češtině na výšku. Prvek má vyšší vnitřní okraj (`padding-block:2rem`) a zelenou barvu rámečku `border-block-color:LimeGreen`.
+Ano, manipulujeme tady s vlastnostmi prvku na blokové ose, tedy v případě sázení v češtině na výšku. Prvek má vyšší vnitřní okraj (`padding-block:2rem`) a tmavou barvu rámečku (`border-block-color:#2E2C08`).
 
-V případě, že směr rozvržení změníme z vodorovného (`flex-direction:row`) na svislý (`flex-direction:column`), zelené okraje položek zůstávají umístěné ve svislém směru.
+V případě, že směr rozvržení změníme z vodorovného (`flex-direction:row`) na svislý (`flex-direction:column`), tmavé okraje položek zůstávají umístěné ve svislém směru.
 
 Změnil se směr layoutu, ale ne směr toku dokumentu.
 
@@ -146,7 +146,7 @@ Pozice blokových vlastností se mění až se směrem toku dokumentu, tedy zapo
 <figure>
 <img src="../dist/images/original/vdlayout/css-logical-direction.jpg" width="1600" height="900" alt="flex-direction a writing-mode">
 <figcaption markdown="1">
-Zelené blokové okraje změní směr až se změnou toku dokumentu.
+Tmavé blokové okraje změní směr až se změnou toku dokumentu.
 </figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ Pro box model máme hezký obrázek s porovnáním fyzických a logických varia
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-logical-physical.jpg" width="1600" height="900" alt="CSS physical / CSS logical">
 <figcaption markdown="1">
-Logické hodnoty jako synonyma těch fyzických. Zdroj: Adrian Roselli. [cdpn.io/e/bGGxrvM](https://codepen.io/aardrian/pen/bGGxrvM)
+Logické hodnoty jako synonyma těch fyzických. Zdroj: Adrian Roselli. [cdpn.io/e/bGGxrvM](https://codepen.io/aardrian/pen/bGGxrvM).
 </figcaption>
 </figure>
 

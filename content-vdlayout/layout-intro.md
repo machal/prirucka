@@ -74,14 +74,14 @@ Cílem je dosáhnout rozvržení, kde je na jedné straně obrázek, který zab�
 Začneme asi s HTML, což?
 
 ```html
-  <figure class="figure">
-    <p class="figure-image">
-      <img src="image.jpg" alt="…" width="300" height="300">
-    </p>
-    <figcaption class="figure-figcaption">
-      Lorem ipsum…
-    </figcaption>
-  </figure>
+<figure class="figure">
+  <p class="figure-image">
+    <img src="image.jpg" alt="…" width="300" height="300">
+  </p>
+  <figcaption class="figure-figcaption">
+    Lorem ipsum…
+  </figcaption>
+</figure>
 ```
 
 Na tom asi nic složitého není, takže pojďme pokračovat.

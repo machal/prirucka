@@ -1,6 +1,6 @@
 # Na závěr
 
-Právě jste knihu dočetli.
+Právě jste tuhle knihu dočetli.
 
 Díky, že jste jí věnovali svůj čas, a jsem napjatý, co na ni říkáte. Budu vděčný za každý váš názor.
 

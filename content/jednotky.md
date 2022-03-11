@@ -137,7 +137,7 @@ A ono není. W3C definovalo `em` jinak. Jeho velikost v kořeni dokumentu je ve 
 
 ## Media Queries: em {#media-queries}
 
-Proč nepoužít `px`?  Opět kvůli nemožnosti reakce dotazů v Media Queries na zvětšování písma.
+Proč nepoužít `px`? Doporučím vám vyhnout se pixelům kvůli nemožnosti reakce dotazů v Media Queries na zvětšování písma.
 
 ```css
 @media screen and (min-width: 30em) { }

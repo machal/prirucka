@@ -1,6 +1,6 @@
 # Tiráž
 
-Redakce a jazyková korektura: Petr Novotný  
+Redakce a jazyková korektura: Petr Jediný Novotný, [pjnovotny.cz/](http://pjnovotny.cz/)  
 Obrázky, schémata a vnitřní sazba: Martin Michálek  
 Obálka a spolupráce na grafice knihy: Petr Šťastný, [raist.cz](https://raist.cz/)  
 Spolupráce na webu: Jan Kočiš, [SUPERKODERS](https://superkoders.com/)  

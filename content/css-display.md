@@ -192,7 +192,7 @@ Tohle je nová věc, do specifikace přidaná v druhé polovině roku 2020. Zat�
 
 Vzpomínáte si, jak jsem psal o různých typech zobrazení – vnitřním a vnějším? Pokud ne, rychle proskenujte začátek tohoto textu nebo jeho nadpisy. Pak pochopíte, proč mi víceslovné hodnoty pro vlastnost `display` dávají smysl.
 
-Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označení vnitřního, vnějšího nebo speciálního zobrazení.
+Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označení vnitřního, vnějšího nebo specifického zobrazení.
 
 <div class="rwd-scrollable f-6" markdown="1">
 
@@ -204,7 +204,7 @@ Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označen�
 | `flow-root`        | `block flow-root`       | blokový box, který vždy vytváří nový kontext formátování bloku |
 | `inline`           | `inline flow`           | inlinový (řádkový) box                                           |
 | `inline-block`     | `inline flow-root`      | inlinový (řádkový) box, který vždy vytváří nový blokový kontext  |
-| `run-in`           | `run-in flow`           | run-in box (inlinový box se speciálními pravidly)                |
+| `run-in`           | `run-in flow`           | run-in box (inlinový box se specifickými pravidly)                |
 | `list-item`        | `block flow list-item`  | blokový box s přídavnou značkou položky seznamu                |
 | `inline list-item` | `inline flow list-item` | inlinový box s přídavnou značkou položky seznamu                 |
 | `flex`             | `block flex`            | blokový kontejner flexu                                        |

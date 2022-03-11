@@ -1,11 +1,11 @@
 # Shrnutí deváté kapitoly
 
-Poslední test knihy je tady. Co jste se naučili v této kapitole?
+Poslední test knihy je tady! Co jste se naučili v této kapitole?
 
 1. **Jaký typ zobrazení zajistí deklarace `display:inline-block`?**  
 a) zvnějšku je prvek blokový, zevnitř se vykresluje do řádku  
 b) vnitřně se jedná o blokový element, zvnějšku o inlinový – netvoří zalomení  
-c) v nové verzi specifikace je toto psát již zakázáno
+c) v nové verzi specifikace je už toto psát zakázáno
 1. **Jak zajistit, aby plovoucí prvky nevytékaly z rodičovského elementu?**  
 a) `display:flow-root`  
 b) `display:float-root`  
@@ -37,7 +37,7 @@ c) `@supports (transform-style: preserve) { }`
 1. **Co je Autoprefixer?**  
 a) automatizační nástroj, který přidává (nejen) prefixy do CSS kódu  
 b) automatizační nástroj pro zprovoznění webu v Exploreru verze 6  
-c) značka fixů určených pro frontend vývojářky a vývojáře
+c) značka fixů určených pro frontendové vývojářky a vývojáře
 
 ---
 
