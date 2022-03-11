@@ -1,4 +1,4 @@
-<div id="kap-multicol-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-multicol-before" class="ebook-chapter-before ebook-chapter-multicol" markdown="1"> 
 
 # Kapitola 6: Vícesloupcový layout
 

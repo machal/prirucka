@@ -1,4 +1,4 @@
-<div id="kap-priklady-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-priklady-before" class="ebook-chapter-before ebook-chapter-before-priklady" markdown="1"> 
 
 # Kapitola 3: Příklady použití
 

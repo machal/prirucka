@@ -1,4 +1,4 @@
-<div id="kap-uvod-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-uvod-before" class="ebook-chapter-before ebook-chapter-before-uvod" markdown="1"> 
 
 # Kapitola 1: Začínáme s layouty v CSS
 

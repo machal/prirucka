@@ -1,4 +1,4 @@
-<div id="kap-boxalign-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-boxalign-before" class="ebook-chapter-before ebook-chapter-before-boxalign" markdown="1"> 
 
 # Kapitola 7: Zarovnávání boxů (CSS Box Alignment)
 

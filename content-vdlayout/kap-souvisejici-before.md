@@ -1,4 +1,4 @@
-<div id="kap-souvisejici-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-souvisejici-before" class="ebook-chapter-before ebook-chapter-before-souvisejici" markdown="1"> 
 
 # Kapitola 9: Související nástroje a vlastnosti
 

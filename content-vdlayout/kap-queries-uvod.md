@@ -1,4 +1,4 @@
-<div id="kap-queries-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-queries-before" class="ebook-chapter-before ebook-chapter-queries" markdown="1"> 
 
 # Kapitola 2: Layoutové dotazy
 

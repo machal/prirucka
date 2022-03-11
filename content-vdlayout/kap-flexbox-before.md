@@ -1,4 +1,4 @@
-<div id="kap-flexbox-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-flexbox-before" class="ebook-chapter-before ebook-chapter-before-flexbox" markdown="1"> 
 
 # Kapitola 4: Flexbox
 

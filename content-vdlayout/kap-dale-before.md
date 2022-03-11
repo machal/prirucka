@@ -1,4 +1,4 @@
-<div id="kap-dale-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-dale-before" class="ebook-chapter-before ebook-chapter-before-dale" markdown="1"> 
 
 # Kapitola 8: Co byste ještě měli vědět?
 
