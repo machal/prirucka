@@ -191,7 +191,7 @@ Doporučuji `px` používat jen tam, kde potřebujete precizní vyjádření v p
 }
 ```
 
-Jen pro jistotu připomínám, že už nejde o hardwarový pixel, ale o referenční nebo takzvaný „CSS pixel“. Píšu o něm na Vzhůru dolů. [https://vrdl.cz/p/css-pixel](https://www.vzhurudolu.cz/prirucka/css-pixel)
+Jen pro jistotu připomínám, že už nejde o hardwarový pixel, ale o referenční nebo takzvaný „CSS pixel“. Píšu o něm na Vzhůru dolů. [vrdl.cz/p/css-pixel](https://www.vzhurudolu.cz/prirucka/css-pixel)
 
 ## Typografie podle velikosti okna: vw {#viewport-typografie}
 
