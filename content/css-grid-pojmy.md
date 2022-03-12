@@ -29,7 +29,7 @@ S pomocí [vlastnosti `grid-template-columns`](css-grid-template-rows-columns.md
 
 V prohlížeči bude naše mřížka vypadat následovně:
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/pojmy-grid-kontejner-polozky.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Byl jednou jeden kontejner a v něm žilo pět položek…*
@@ -106,7 +106,7 @@ Než dojdeme k dalším pojmům, spácháme na naší původní ukázce nepěkno
 
 Kontejner je teď menší než samotná mřížka. Po vytečení „položek z kontejneru“ se dostáváme k dalším pojmům.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/pojmy-kontejner-mrizka.jpg" width="1600" height="900" alt="Kontejner a mřížka v CSS gridu">
 <figcaption markdown="1">
 *Tady je vidět rozdíl mezi kontejnerem mřížky a mřížkou samotnou.*

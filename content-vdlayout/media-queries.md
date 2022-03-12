@@ -192,11 +192,9 @@ Vidíme zde tedy obalující `.container` pro celou stránku. Pak samotný media
 
 Samotné texty nedávají smysl a to je dobře. Jsou generované službou Blábot, jejíž kouzlo je v tom, že dodává texty připomínající češtinu, ale zároveň nepoutající pozornost. Takové české Lorem ipsum. [blabot.cz](https://www.blabot.cz/)
 
-Základní CSS našeho příkladu vypadá bez rozvržení také vcelku jednoduše:
+Základní CSS našeho příkladu vypadá bez rozvržení také vcelku jednoduše. Nejprve deklarace barev a odsazení:
 
 ```css
-/* Barvy a odsazení: */
-
 body {
   background: lightgrey;
 }
@@ -212,9 +210,11 @@ body {
 .item-image {
   padding: 1em;
 }
+```
 
-/* Typografie: */
+Nyní definujeme typografii:
 
+```css
 p, h2 {
   margin: 0;
   padding: 0;
@@ -224,9 +224,11 @@ h2 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
+```
 
-/* Pružnost obrázku: */
+Nakonec pružnou přizpůsobivost obrázku šířce rodiče:
 
+```css
 img {
   height: auto;
   max-width: 100%;

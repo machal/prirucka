@@ -169,6 +169,8 @@ Toto platí právě proto, že:
 - pokud to není definováno, pak se berou z `width`/`height`,
 - pokud ani jedno není definováno, pak se berou z obsahu.
 
+Kouzelná formulka tedy zní následovně:
+
 ```
 flex-basis > width/height > obsah
 ```

@@ -37,18 +37,14 @@ V knížce asi zjistíte, že první pohled někdy klame a to, co vám tady tvrd
 
 ## Box Align, čtvrtý vzadu
 
-Ta paralela s Tinderem samozřejmě trošku skřípe, ale pojďme u ní ještě chvilku zůstat.
-
-Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (on) s nejlepší kámoškou (kámošem), pro jistotu?
+Ta paralela s Tinderem samozřejmě trošku skřípe, ale pojďme u ní ještě chvilku zůstat. Znáte to, když jdete s jednou (jedním) na rande a přijdou dvě (dva)? Ona (on) s nejlepší kámoškou (kámošem), pro jistotu?
 
 Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když řekneme flex, grid a multicol, musíme říct také Box Align.
 
 <div class="book-index" data-book-index="Box Align"></div>
 <div class="book-index" data-book-index="Zarovnání boxů"></div>
 
-„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md).
-
-Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je `justify-items` nebo `align-self`, se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí.
+„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md). Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je [`justify-items`](css-justify-items.md) (zarovnání na položek na hlavní ose) nebo [`align-self`](css-align-self.md) (zarovnání položky na příčné ose), se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí. Ale všeho dočasu. I těmto vlastnostem se budeme detailně věnovat.
 
 ## Pojďme si je otestovat
 
@@ -69,7 +65,7 @@ Začneme tím nejpopulárnějším parťákem.
 
 ## Flexbox: příklad s obrázkem a textem
 
-Cílem je dosáhnout rozvržení, kde je na jedné straně obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, ta ve schématu není vidět.
+Cílem je dosáhnout rozvržení, kde je na jedné straně obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, které ale není ve schématu na další stránce vidět.
 
 Začneme asi s HTML, což?
 
@@ -102,7 +98,7 @@ Pokud je tu někdo, kdo by potřeboval vysvětlit `display` v CSS, nechť zabrou
 
 </div>
 
-Dále víme, že mezera mezi prvky v rozvržení bude zabírat `1rem`. Proč zrovna `rem`? O jednotkách něco napíšu ke konci této podkapitoly.
+Dále víme, že mezera mezi prvky v rozvržení bude zabírat `1rem`, tedy rozměr základní velikosti písma. Proč zrovna `rem`? O jednotkách něco napíšu ke konci této podkapitoly.
 
 Mezery dosáhneme pomocí [vlastnosti `gap`](css-gap.md), která v layoutech umí jednoduše udělat mezery:
 

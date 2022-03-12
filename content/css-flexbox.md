@@ -255,7 +255,7 @@ Na mobilech zpravidla není pro rozvržení prvků vedle sebe prostor. Přidáme
 
 Na obrázku je vidět, k čemu jsme se dopracovali:
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/flexbox-priklad.jpg" width="1600" height="900" alt="Příklad flexboxu">
 <figcaption markdown="1">
 *Je to layout. Je pružný. Je to flexbox.*

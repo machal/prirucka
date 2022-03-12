@@ -67,11 +67,7 @@ Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi 
 
 Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil podporovat při startu nového projektu prohlížeč Internet Explorer (MSIE) – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
 
-Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech.
-
-Podpoře gridu v MSIE se věnuji v [páté kapitole](css-grid-msie.md), samotnému Exploreru pak [v kapitole osmé](msie.md).
-
-Raději se ale věnuji novinkám než zombie prohlížečům.
+Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech. O podpoře gridu v MSIE píšu v [páté kapitole](css-grid-msie.md), samotnému Exploreru pak [v kapitole osmé](msie.md). Raději se ale zabývám novinkami než zombie prohlížeči.
 
 ### Spekulativní sázky na novinky
 

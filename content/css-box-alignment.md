@@ -232,9 +232,7 @@ Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zam�
 - [Vlastnosti `gap`](css-gap.md) v layoutu tvořeném gridem a flexboxem umí všechny prohlížeče, kromě MSIE 11, ale v kombinaci s vícesloupcovým layoutem to je složitější.
 - Vlastnost `overflow-position` neumí v době psaní textu žádný prohlížeč.
 
-Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda ji jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty.
-
-Konkrétněji o podpoře v prohlížečích píšu v textech o jednotlivých vlastnostech.
+Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda ji jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty. Konkrétněji o podpoře v prohlížečích píšu v textech o jednotlivých vlastnostech.
 
 <div class="web-only" markdown="1">
 

@@ -69,7 +69,7 @@ Jednoslovné hodnoty se vám budou hodit asi nejčastěji. Podívejte se na prvn
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Hodnota          | `flex-grow` | `flex-shrink` | `flex-basis` |
+| Hodnota          | flex-grow   | flex-shrink   | flex-basis   |
 |------------------|:-----------:|:-------------:|:------------:|
 | `flex: initial`  |     `0`     |     `1`       |   `auto`     |
 | `flex: auto`     |     `1`     |     `1`       |   `auto`     |

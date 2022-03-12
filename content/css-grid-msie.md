@@ -221,7 +221,7 @@ Díky automatickému umístění bude v moderních prohlížečích stačit defi
 
 Prvky se nám pěkně rozmístí. Jenže smůla, tohle nebude fungovat v Internet Exploreru.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/msie-grid-autoplacement-browsers.jpg" alt="Grid autoplacement v MSIE a moderních prohlížečích">
 <figcaption markdown="1">
 *Ale to je nepříjemné, automatické umístění v MSIE nefunguje.*
