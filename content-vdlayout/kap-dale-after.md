@@ -2,9 +2,7 @@
 
 # Shrnutí osmé kapitoly
 
-Otestujte si, co jste se naučili v osmé kapitole.
-
-1. **Jaký podíl na českém trhu má Internet Explorer začátkem roku 2022?**  
+1. **Jaký podíl na českém trhu má MSIE začátkem roku 2022?**  
 a) kolem 42 %  
 b) kolem 10 %  
 c) kolem 1 %
@@ -20,9 +18,9 @@ c) například `flex`, `grid-grow`, `grid-shrink`
 a) `flex-basis`  
 b) `display`  
 c) `flex-shrink`
-1. **Proč může komplikovanější layout dělaný pomocí flexboxu „probliknout“?**  
-a) flexboxový layout může ovlivnit každá položka, počítá se totiž z obsahu  
-b) flexboxový layout odhaduje prohlížeč podle denní doby  
+1. **Proč může komplikovanější flexboxový layout „probliknout“?**  
+a) layout může ovlivnit každá položka, počítá se totiž z obsahu  
+b) layout odhaduje prohlížeč podle denní doby  
 c) jde o chyták, tento problém vzniká jen u rozvržení gridem
 
 ---

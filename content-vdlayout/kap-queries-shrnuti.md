@@ -15,19 +15,19 @@ c. `@media (min-width: …)`
 1. **Na co se ptá dotaz `(orientation: portrait)`?**  
 a. zda je obrazovka zařízení na výšku (méně široká než vysoká)  
 b. zda je obrazovka zařízení na šířku (více široká než vysoká)  
-c. zda byl autor kresby na obrázku orientovaný více na kresbu portrétů než krajinek  
+c. zda byl autor orientovaný více na kresbu portrétů než krajinek  
 1. **K čemu slouží CSS vlastnost `contain`?**  
 a. definuje zapouzdření (nezávislost) určité části stránky  
 b. vypisuje obsah na obrazovku, například `contain: "ahoj"`  
-c. nejde o vlastnost, ale o dotaz, zda prvek obsahuje určitý text: `@contain ("ahoj")`
+c. jde o dotaz, zda prvek obsahuje určitý text: `@contain ("ahoj")`
 1. **Co dělá zápis `@container (min-width: 30em)`?**  
-a. zjišťujeme šířku kontejneru na odpadky při automatické analýze obrázku v prohlížeči  
-b. jeho prostřednictvím se ptáme na minimální šířku rodičovského prvku  
+a. zjišťujeme šířku vašeho kontejneru na odpadky  
+b. ptáme se na minimální šířku rodičovského prvku  
 c. zjišťujeme šířku obrazovky uživatele
 1. **Jaké jsou klíčové triky pro „No Queries“ dotazy?**  
 a. stačí uvést `display:flex` nebo `display:grid` a funguje to samo  
-b. vlastnost `flex-wrap` v gridu a zápis `repeat(auto-fit, minmax(…, …))` ve flexboxu  
-c. vlastnost `flex-wrap` ve flexboxu a zápis `repeat(auto-fit, minmax(…, …))` v gridu  
+b. `flex-wrap` v gridu a `repeat(auto-fit, minmax(…, …))` ve flexboxu  
+c. `flex-wrap` ve flexboxu a `repeat(auto-fit, minmax(…, …))` v gridu  
 
 ---
 

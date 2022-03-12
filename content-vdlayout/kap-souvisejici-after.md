@@ -6,13 +6,13 @@ Poslední test knihy je tady! Co jste se naučili v této kapitole?
 
 1. **Jaký typ zobrazení zajistí deklarace `display:inline-block`?**  
 a) zvnějšku je prvek blokový, zevnitř se vykresluje do řádku  
-b) vnitřně se jedná o blokový element, zvnějšku o inlinový – netvoří zalomení  
+b) vnitřně je to blokový element, zvnějšku inlinový – netvoří zalomení  
 c) v nové verzi specifikace je už toto psát zakázáno
 1. **Jak zajistit, aby plovoucí prvky nevytékaly z rodičovského elementu?**  
 a) `display:flow-root`  
 b) `display:float-root`  
 c) `display:clear-float`
-1. **K čemu slouží logické vlastnosti a hodnoty (CSS Logical Properties)?**  
+1. **K čemu slouží logické vlastnosti (CSS Logical Properties)?**  
 a) jde o logické funkce při počítání matematiky v `calc()`  
 b) k sázení layoutu v závislosti na směru toku jazyka dokumentu  
 c) jde o obecný název pro vnitřní a vnější okraje prvku
@@ -26,10 +26,10 @@ b) jde jen o hack, který zamezí viditelnosti zápisu v Exploreru verze 4
 c) autorskou vlastnost `--color` s hodnotou `blue`
 1. **Jaké jsou výhody autorských vlastností a jejich použití v proměnných?**  
 a) je to totéž jako proměnné v preprocesoru  
-b) počítají se v prohlížeči, podléhají kaskádě, jsou dostupné z HTML i JS  
+b) počítají se v prohlížeči, jsou dostupné v CSS kaskádě, HTML, JS  
 c) je to totéž jako proměnné v JavaScriptu
 1. **Co udělá zápis `margin-bottom:calc(1em-2px)`?**  
-a) prohlížeč spočte `1em` a výsledek výpočtu dosadí v závorce místo hodnoty  
+a) prohlížeč spočte `1em` a výsledek výpočtu dosadí místo hodnoty  
 b) výsledná hodnota bude vždy `14px`  
 c) výsledná hodnota bude vždy výška řádku minus 2 pixely
 1. **Jak se prohlížeče zeptat na podporu vlastnosti `transform-style`?**  

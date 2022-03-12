@@ -35,9 +35,14 @@ Zadání je následující:
 - V druhém případě mají popisek a tlačítko šířku obsahu a textový vstup se roztahuje, aby vyplnil maximální šířku.
 - V obou případech je mezi prvky mezera o polovině `rem`.
 
-Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a začněte.
+<div class="colored-box" markdown="1">
+
+Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a vrhněte se na CodePen se zadáním.
 
 CodePen: [cdpn.io/e/qBZzMRW](https://codepen.io/machal/pen/qBZzMRW?editors=1100)
+
+</div>
+<!-- .colored-box -->
 
 Spolu s ostatními budeme pokračovat.
 

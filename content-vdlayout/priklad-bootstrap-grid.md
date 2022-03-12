@@ -46,7 +46,12 @@ Druhým teoretickým problémem je vaše touha mít layout definovaný v CSS, ni
 
 Nyní se tedy dostáváme k jádru pudla. Tento layout bychom chtěli napsat v CSS gridu a ušetřit tak stažení zbytečného frameworku.
 
+<div class="colored-box" markdown="1">
+
 Zadání pro vás tedy zní: K HTML uvedenému výše napište CSS pomocí gridu tak, aby rozvržení vypadalo stejně.
+
+</div>
+<!-- .colored-box -->
 
 ## Řešení pomocí CSS gridu
 

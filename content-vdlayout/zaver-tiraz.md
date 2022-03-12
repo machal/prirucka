@@ -1,3 +1,5 @@
+<div class="imprint" markdown="1">
+
 # Tiráž
 
 Redakce a jazyková korektura: Petr Jediný Novotný, [pjnovotny.cz](http://pjnovotny.cz/)  
@@ -17,3 +19,6 @@ Tištěná kniha: 978-80-88253-07-5
 PDF: 978-80-88253-08-2  
 MOBI: 978-80-88253-09-9  
 ePUB: 978-80-88253-10-5  
+
+</div>
+<!-- .imprint -->

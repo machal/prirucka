@@ -43,9 +43,14 @@ HTML pro jeden prvek, jednu hromadu lívanců, jsme vymysleli následovně:
 
 Všimněte si parametru `contenteditable`. Tímto způsobem dovolujeme, aby bylo přímo do rozhraní možné psát nebo vkládat obsah. V ukázce jsem to povolil proto, abyste si mohli zkusit vložit složitější text, a layout tak rozbít.
 
+<div class="colored-box" markdown="1">
+
 Opět je zde možnost teď zavřít knížku a zkusit si zadání nakódovat. Sledujte předpřipravený CodePen.
 
 CodePen: [cdpn.io/e/poeGQya](https://codepen.io/machal/pen/poeGQya?editors=1100)
+
+</div>
+<!-- .colored-box -->
 
 ## Výsledný kód
 

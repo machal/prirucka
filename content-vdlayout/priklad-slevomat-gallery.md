@@ -22,9 +22,14 @@ Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wel
 </figcaption>
 </figure>
 
+<div class="colored-box" markdown="1">
+
 Chcete si to zkusit sami? Forkněte CodePen a vzhůru do toho.
 
 CodePen: [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
+
+</div>
+<!-- .colored-box -->
 
 HTML bude vypadat takto:
 

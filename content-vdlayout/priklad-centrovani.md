@@ -28,9 +28,14 @@ Toto je výchozí HTML:
 </div>
 ```
 
-Také CodePen už čeká na váš fork a následné procvičování mozkových závitů. Jen pozor, použijte jen vlastnosti ze specifikací nového layoutu – gridu, flexboxu a zarovnávání boxů.
+<div class="colored-box" markdown="1">
+
+Také CodePen se zadáním už čeká na váš fork a následné procvičování mozkových závitů. Jen pozor, použijte jen vlastnosti ze specifikací nového layoutu – gridu, flexboxu a zarovnávání boxů.
 
 CodePen: [cdpn.io/e/xxdOJOX](https://codepen.io/machal/pen/xxdOJOX?editors=1100)
+
+</div>
+<!-- .colored-box -->
 
 Čtenáři mezi vámi nechť směle pokračují dál.
 

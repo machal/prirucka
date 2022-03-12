@@ -2,11 +2,11 @@
 
 # Shrnutí první kapitoly
 
-Shrnutí všech kapitol jsem pro vás připravil ve formě kvízu. Testy jsou skvělé v tom, že čtenáře nutí přemýšlet a lovit v paměti. Odměnou za trochu námahy by vám mělo být trvalejší uložení důležitých informací z knížky v hlavě.
+Nejspíš jste si všimli změny formátování v podobě oranžového proužku vlevo. V těchto částech knihy vás vybízím k aktivitě, ať už ve formě kvízu nebo možnosti zkusit si nakódovat některý příklad.
 
-Řešení testů najdete hned pod nimi a zároveň slouží jako shrnutí kapitoly, pokud byste snad nechtěli testovat svou znalost problematiky.
+Shrnutí všech kapitol jsem pro vás připravil ve formě kvízu. Testy jsou skvělé v tom, že čtenáře nutí přemýšlet a lovit v paměti. Odměnou za tu trochu námahy by vám mělo být trvalejší uložení důležitých informací z knížky v hlavě.
 
-První test je rozehřívací.
+Řešení testů najdete hned pod nimi a zároveň slouží jako shrnutí kapitoly, pokud byste snad nechtěli testovat svou znalost problematiky. První test je rozehřívací.
 
 1. **K čemu slouží CSS Multi-column Layout?**  
 a) ke flexibilnímu rozložení položek vedle sebe  

@@ -29,9 +29,14 @@ I přes to bych se svatým grálem mezi rozvrženími nějaký čas v knížce s
 
 A pak… Skvěle se na něm ukazují silné stránky šablonování vlastnostmi začínajícími na `grid-template` v CSS gridu.
 
+<div class="colored-box" markdown="1">
+
 Pokud byste v tuto chvíli chtěli začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si forkněte – a vzhůru do kódování.
 
 CodePen: [cdpn.io/e/ZEePyrM](https://codepen.io/machal/pen/ZEePyrM?editors=1100)
+
+</div>
+<!-- .colored-box -->
 
 HTML jsem vymyslel takto:
 

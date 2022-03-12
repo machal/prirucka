@@ -42,11 +42,14 @@ HTML vypadá zhruba takto:
 </div>
 ```
 
-Píše se vám už v hlavě kód?
+<div class="colored-box" markdown="1">
 
-Vlastně to nemusí být nic složitého, takže vám zde rovnou poskytnu výchozí CodePen.
+Píše se vám už v hlavě kód?  Vlastně to nemusí být nic složitého, takže vám zde rovnou poskytnu výchozí CodePen se zadáním.
 
 CodePen: [cdpn.io/e/eYWWrJY](https://codepen.io/machal/pen/eYWWrJY?editors=1100)
+
+</div>
+<!-- .colored-box -->
 
 Pracanti nechť zavřou knihu a v klidu pracují. My ostatní si rozdělíme funkce takto: já píšu, vy čtete.
 

@@ -33,7 +33,12 @@ HTML jsme navrhli takto:
 </div>
 ```
 
+<div class="colored-box" markdown="1">
+
 Chcete si to zkusit sami? Pak neváhejte a využijte připravený prázdný CodePen: [cdpn.io/e/VwpgEQg](https://codepen.io/machal/pen/VwpgEQg?editors=1100)
+
+</div>
+<!-- .colored-box -->
 
 Můžete si pak porovnat svůj výsledek s mým, který teď právě představím.
 

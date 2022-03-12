@@ -2,17 +2,11 @@
 
 # Shrnutí sedmé kapitoly
 
-Otestujte si, co jste se naučili o zarovnávání boxů v CSS.
-
-1. **Co definuje CSS modul Box Alignment?**  
-a) zarovnání boxů v různých modelech rozvržení CSS  
-b) způsob zarovnání textu v CSS  
-c) zarovnání prvku v CSS takzvaně „na roh boxerského ringu“
 1. **Jak rozlišit vlastnosti zarovnání na hlavní a na příčnou osu?**  
 a) je to zhola nemožné, raději si hodit kostkou  
 b) vlastnosti `justify-` zarovnávají na hlavní, `align-` na příčnou osu  
 c) vlastnosti `align-` zarovnávají na hlavní, `justify-` na příčnou osu  
-1. **Jaký je rozdíl mezi vlastnostmi obsahujícími `-items`, `-self`, `-content`?**  
+1. **Jaký je rozdíl mezi vlastnostmi `-items`, `-self`, `-content`?**  
 a) `-items` = položky, `-self` = položka,  `-content` = volný prostor  
 b) `-items` = položky, `-self` = kontejner, `-content` = obsah v položce  
 c) je to  chyták, není v tom řád, jdu se raději opít  
@@ -39,6 +33,6 @@ c) `order: -1`
 
 ---
 
-Řešení: 1. a), 2. b), 3. a), 4. b), 5. c), 6. b), 7. a), 8. c).
+Řešení: 1. b), 2. a), 3. b), 4. c), 5. b), 6. a), 7. c).
 
 </div>
