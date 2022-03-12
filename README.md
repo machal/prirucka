@@ -317,13 +317,13 @@ Příklad:
 <div class="reference-items">
 
   <article role="article">
-    <h4><a href="css-align-items.md"><code>align-items</code></a></h4>
+    <h4><a href="css-align-items.md">align-items</a></h4>
     <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.jpg" alt="Vlastnost align-items" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>
   </article>
 
   <article role="article">
-    <h4><a href="css-place-items.md"><code>place-items</code></a></h4>
+    <h4><a href="css-place-items.md">place-items</a></h4>
     <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.jpg" alt="Vlastnost place-items" /></a></p>
     <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items: end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
   </article>
@@ -337,17 +337,13 @@ Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně
 
 - V bloku kódu.
 - Uvnitř textu. Např. „Značka `<html>` slouží…“. Možné to je uvnitř odstravců, odrážek, ale i uvnitř tabulek.
-
-`<code>` naopak nepoužíváme v nadpisech:
-
-- V nadpisech, protože jsou vyvedené tučným řezem (kód není), vypadají nehezky atd.
-- Rozbijou mPDF proces tvorby PDF e-booku.
-- Jediná výjimka jsou situace, kdy nadpis tvoří jen samotný kód. [Příklad](https://www.vzhurudolu.cz/prirucka/pruzna-media)
   
-Kód nepoužíváme i na dalších místech:
+`<code>` nepoužíváme:
 
-- V citacích (`blockquote` a `cite`). 
+- V nadpisech všech úrovní, protože jsou vyvedené tučným řezem (kód není), pak vypadají nehezky.
+- V citacích (`blockquote` a `cite`).
 - `figcaption`, protože jsou vyvedené kurzívou.
+- V jakémkoliv tučném textu, v jakékoliv kurzívě.
 
 HTML značky lze opsat kapitálkami („Značka HTML slouží…“). JS a CSS kód prostě uvedeme bez `<code>` tak jak je. Vyplývá z toho samozřejmě, že je lepší se kódu na takovýchto místech vyhnout.
 

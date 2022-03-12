@@ -54,13 +54,12 @@ Určitě zde jsou tací, kteří o layoutu masonry nic moc nevědí. „Masonry�
 
 Když se položky ve zděném rozvržení přesunou na další řádek, nezarovnávají se do rovné linky, ale přesunou se nahoru do mezer, které zanechají kratší položky v prvním řádku.
 
-Je to podobné jako u jedné z vlastností CSS gridu, automatického umístění (autoplacement), ale bez přísného dodržení mřížky pro řádky.
-
-Však se podívejte na obrázek výše, na něm to asi pochopíte nejlépe. Hlavní směr typického masonry je inline, tedy po řádcích.
+Je to podobné jako u jedné z vlastností CSS gridu, automatického umístění (autoplacement), ale bez přísného dodržení mřížky pro řádky. Však se podívejte na obrázek výše, na něm to asi pochopíte nejlépe. Hlavní směr typického masonry je inline, tedy po řádcích.
 
 <!-- AdSnippet -->
 
-V současnosti se tyto typy rozvržení dělají pomocí dnes už takřka legendární javascriptové komponenty „Masonry“ od Davida DeSandra. [masonry.desandro.com](https://masonry.desandro.com/)
+V současnosti se tyto typy rozvržení dělají pomocí dnes už takřka legendární javascriptové komponenty „Masonry“ od Davida DeSandra.  
+[masonry.desandro.com](https://masonry.desandro.com/)
 
 Autorovi všechna čest, je však nutné si přiznat, že z pohledu vykreslovacího (ale i načítacího) výkonu stránky nebude takto razantní ovlivňování layoutu JavaScriptem nikdy optimální. Tohle má prostě dělat prohlížeč a autoři to mají definovat v CSS.
 

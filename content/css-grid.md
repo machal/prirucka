@@ -38,6 +38,8 @@ Hodnota [vlastnosti `display:grid`](css-display.md) nastaví „grid formatting 
 
 Možná je také „inline“ hodnota: `inline-grid`. To je věc podobná  `inline-block`, tedy uvnitř je možné dělat rozvržení, zde pomocí gridu, zvenčí jde o součást řádku textu.
 
+<div class="pbi-avoid" markdown="1">
+
 ### Definice mřížky {#vlastnosti-definice}
 
 Následujícími vlastnostmi je možné definovat kostru rozvržení.
@@ -45,7 +47,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 <div class="reference-items">
 
   <article role="article">
-    <h4 id="grid-template-columnsrows"><a href="css-grid-template-rows-columns.md"><code>grid-template-columns/rows</code></a></h4>
+    <h4 id="grid-template-columnsrows"><a href="css-grid-template-rows-columns.md">grid-template-columns/rows</a></h4>
     <p><a href="css-grid-template-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-rows-columns.jpg" alt="CSS vlastnost grid-template-columns/rows" /></a></p>
     <p>
       Definice explicitní mřížky. <br>
@@ -54,7 +56,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
   </article>
 
   <article role="article">
-    <h4 id="grid-template-areas"><a href="css-grid-template-areas.md"><code>grid-template-areas</code></a></h4>
+    <h4 id="grid-template-areas"><a href="css-grid-template-areas.md">grid-template-areas</a></h4>
     <p><a href="css-grid-template-areas.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-areas.jpg" alt="CSS vlastnost grid-template-areas" /></a></p>
     <p>
       Pojmenování oblastí. <br>
@@ -63,7 +65,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
   </article>
 
   <article role="article">
-    <h4 id="grid-template"><a href="css-grid-template.md"><code>grid-template</code></a></h4>
+    <h4 id="grid-template"><a href="css-grid-template.md">grid-template</a></h4>
     <p><a href="css-grid-template.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template.jpg" alt="CSS vlastnost grid-template" /></a></p>
     <p>
       Zkratka pro definici explicitní mřížky. <br>
@@ -72,7 +74,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
   </article>
 
   <article role="article">
-    <h4 id="grid-auto-columnsrows"><a href="css-grid-auto-rows-columns.md"><code>grid-auto-columns/rows</code></a></h4>
+    <h4 id="grid-auto-columnsrows"><a href="css-grid-auto-rows-columns.md">grid-auto-columns/rows</a></h4>
     <p><a href="css-grid-auto-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-rows-columns.jpg" alt="CSS vlastnost grid-auto-columns/rows" /></a></p>
     <p>
       Definice implicitní mřížky. <br>
@@ -81,13 +83,13 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
   </article>
 
   <article role="article">
-    <h4 id="grid-auto-flow"><a href="css-grid-auto-flow.md"><code>grid-auto-flow</code></a></h4>
+    <h4 id="grid-auto-flow"><a href="css-grid-auto-flow.md">grid-auto-flow</a></h4>
     <p><a href="css-grid-auto-flow.md"><img src="../dist/images/small/vdlayout/schema-css-grid-auto-flow.jpg" alt="CSS vlastnost grid-auto-flow" /></a></p>
     <p>Způsob automatického umísťování do mřížky. <br> <code>grid-auto-flow:column;</code></p>
   </article>
 
   <article role="article">
-    <h4 id="grid"><a href="css-grid-zkratka.md"><code>grid</code></a></h4>
+    <h4 id="grid"><a href="css-grid-zkratka.md">grid</a></h4>
     <p><a href="css-grid-zkratka.md"><img src="../dist/images/small/vdlayout/schema-css-grid-zkratka.jpg" alt="CSS zkratka grid" /></a></p>
     <p>
       Zkratka pro definici všeho. <br>
@@ -96,24 +98,36 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
   </article>
 
 </div>
+<!-- .reference-items -->
+
+</div>
+<!-- .pbi-avoid -->
+
+<div class="pbi-avoid" markdown="1">
 
 ### Umístění do mřížky {#vlastnosti-umisteni}
 
 <div class="reference-items">
 
   <article role="article">
-    <h4 id="grid-columnrow"><a href="css-grid-row-column.md"><code>grid-column/row</code></a></h4>
+    <h4 id="grid-columnrow"><a href="css-grid-row-column.md">grid-column/row</a></h4>
     <p><a href="css-grid-row-column.md"><img src="../dist/images/small/vdlayout/schema-css-grid-row-column.jpg" alt="CSS vlastnost grid-column/row" /></a></p>
     <p>Umístění do explicitní mřížky. <br> <code>grid-column:2 / 3;</code></p>
   </article>
 
   <article role="article">
-    <h4 id="grid-area"><a href="css-grid-area.md"><code>grid-area</code></a></h4>
+    <h4 id="grid-area"><a href="css-grid-area.md">grid-area</a></h4>
     <p><a href="css-grid-area.md"><img src="../dist/images/small/vdlayout/schema-css-grid-area.jpg" alt="CSS vlastnost grid-area" /></a></p>
     <p>Umístění do pojmenované oblasti. <br> <code>grid-area:first;</code></p>
   </article>
 
 </div>
+<!-- .reference-items -->
+
+</div>
+<!-- .pbi-avoid -->
+
+<div class="pbi-avoid" markdown="1">
 
 ### Funkce a klíčová slova {#vlastnosti-funkce}
 
@@ -122,7 +136,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
 <div class="reference-items">
 
   <article role="article">
-    <h4 id="jednotka-fr"><a href="css-jednotka-fr.md">jednotka <code>fr</code></a></h4>
+    <h4 id="jednotka-fr"><a href="css-jednotka-fr.md">jednotka fr</a></h4>
     <p><a href="css-jednotka-fr.md"><img src="../dist/images/small/vdlayout/schema-css-jednotka-fr.jpg" alt="CSS jednotka fr" /></a></p>
     <p>
       Jednotka pro podíl na celku. <br> 
@@ -131,7 +145,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
   </article>
 
   <article role="article">
-    <h4 id="funkce-repeat-auto-fill-a-auto-fit"><a href="css-repeat.md">funkce <code>repeat()</code>, <code>auto-fill</code> a <code>auto-fit</code></a></h4>
+    <h4 id="funkce-repeat-auto-fill-a-auto-fit"><a href="css-repeat.md">funkce repeat(), auto-fill a auto-fit</a></h4>
     <p><a href="css-repeat.md"><img src="../dist/images/small/vdlayout/schema-css-repeat.jpg" alt="CSS funkce repeat()" /></a></p>
     <p>
       Funkce zkrácení opakujících se zápisů. <br>
@@ -140,12 +154,18 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
   </article>
 
   <article role="article">
-    <h4 id="funkce-minmax"><a href="css-minmax.md">funkce <code>minmax()</code></a></h4>
+    <h4 id="funkce-minmax"><a href="css-minmax.md">funkce minmax()</a></h4>
     <p><a href="css-minmax.md"><img src="../dist/images/small/vdlayout/schema-css-minmax.jpg" alt="CSS funkce minmax()" /></a></p>
     <p>Omezení minima a maxima v rozměru. <br> <code>grid-template-columns:minmax(100px, 1fr);</code></p>
   </article>
 
 </div>
+<!-- .reference-items -->
+
+</div>
+<!-- .pbi-avoid -->
+
+<div class="pbi-avoid" markdown="1">
 
 ### Vlastnosti, které zatím nemají plnou podporu {#vlastnosti-funkce}
 
@@ -160,12 +180,16 @@ Následující dvě nové vlastnosti sice zatím není možné snadno použít v
   </article>
 
   <article role="article">
-    <h4 id="masonry"><a href="css-masonry.md"><code>masonry</code></a></h4>
+    <h4 id="masonry"><a href="css-masonry.md">masonry</a></h4>
     <p><a href="css-masonry.md"><img src="../dist/images/small/vdlayout/schema-css-masonry.jpg" alt="CSS masonry laoyut" /></a></p>
     <p>Masonry (zděný) layout. <br> <code>grid-template-rows:masonry;</code></p>
   </article>
 
 </div>
+<!-- .reference-items -->
+
+</div>
+<!-- .pbi-avoid -->
 
 <div class="web-only" markdown="1">
 

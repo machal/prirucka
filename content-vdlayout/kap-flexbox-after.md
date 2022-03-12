@@ -10,11 +10,11 @@ c) jde o chyták, flexbox na rozdíl od gridu nemá dvě osy
 a) vlastností `flex-direction`  
 b) vlastností `flex-axis`  
 c) vlastností `flex-direction` a `writing-mode`, nastavením jazyka
-1. **Co zajistí zápis `flex-flow:column`?**  
+1. **Co zajistí zápis flex-flow:column?**  
 a) zalomí (`wrap`) a vykreslí svisle (`flex-direction:column`)  
 b) zákaz zalamení (`nowrap`) a vykreslí svisle (`flex-direction:column`)  
 c) jde o zápis pro vytvoření sloupcové sazby textu
-1. **Jaké vlastnosti odpovídá `flex-basis`?**  
+1. **Jaké vlastnosti odpovídá flex-basis?**  
 a) `width`  
 b) `height`  
 c) většinou `width`, ale v opačném směru layoutu pak `height`
@@ -22,11 +22,11 @@ c) většinou `width`, ale v opačném směru layoutu pak `height`
 a) `flex-basis:auto`  
 b) `flex-basis:1`  
 c) `flex:0`
-1. **Co nastavuje zkratka `flex`?**  
+1. **Co nastavuje zkratka flex?**  
 a) šířku nebo výšku položky  
 b) vlastnosti `flex-grow` a `flex-shrink`  
 c) vlastnosti `flex-grow`, `flex-shrink` a `flex-basis`
-1. **Čemu odpovídá zápis `flex:auto`?**  
+1. **Čemu odpovídá zápis flex:auto?**  
 a) `flex: 1 1 auto`  
 b) `flex: 0 0 auto`  
 c) `flex: 0 1 auto`

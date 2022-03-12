@@ -12,7 +12,7 @@ Shrnutí všech kapitol jsem pro vás připravil ve formě kvízu. Testy jsou sk
 a) ke flexibilnímu rozložení položek vedle sebe  
 b) k automatické vícesloupcové sazbě textu  
 c) k rozložení do tvaru mřížky
-1. **Co udělá zápis `display:flex`?**  
+1. **Co udělá zápis display:flex?**  
 a) zobrazí prvek ve stránce jako úhlovou brusku, flexu  
 b) neudělá nic, je potřeba dalších vlastností jako `flex-template`  
 c) vykreslí všechny potomky prvku vedle sebe  

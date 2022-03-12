@@ -4,7 +4,7 @@
 
 Poslední test knihy je tady! Co jste se naučili v této kapitole?
 
-1. **Jaký typ zobrazení zajistí deklarace `display:inline-block`?**  
+1. **Jaký typ zobrazení zajistí deklarace display:inline-block?**  
 a) zvnějšku je prvek blokový, zevnitř se vykresluje do řádku  
 b) vnitřně je to blokový element, zvnějšku inlinový – netvoří zalomení  
 c) v nové verzi specifikace je už toto psát zakázáno
@@ -20,7 +20,7 @@ c) jde o obecný název pro vnitřní a vnější okraje prvku
 a) v procentech: `html { font-size: 120% }`  
 b) v „root em“: `html { font-size: 1.2rem }`  
 c) v „emkách“: `html { font-size: 1.2em }`
-1. **Co definuji zápisem `html {--color: blue}`?**  
+1. **Co definuji zápisem html {--color: blue}?**  
 a) globální proměnnou `--color` s hodnotou `blue`  
 b) jde jen o hack, který zamezí viditelnosti zápisu v Exploreru verze 4  
 c) autorskou vlastnost `--color` s hodnotou `blue`
@@ -28,11 +28,11 @@ c) autorskou vlastnost `--color` s hodnotou `blue`
 a) je to totéž jako proměnné v preprocesoru  
 b) počítají se v prohlížeči, jsou dostupné v CSS kaskádě, HTML, JS  
 c) je to totéž jako proměnné v JavaScriptu
-1. **Co udělá zápis `margin-bottom:calc(1em-2px)`?**  
+1. **Co udělá zápis margin-bottom:calc(1em-2px)?**  
 a) prohlížeč spočte `1em` a výsledek výpočtu dosadí místo hodnoty  
 b) výsledná hodnota bude vždy `14px`  
 c) výsledná hodnota bude vždy výška řádku minus 2 pixely
-1. **Jak se prohlížeče zeptat na podporu vlastnosti `transform-style`?**  
+1. **Jak se prohlížeče zeptat na podporu vlastnosti transform-style?**  
 a) `@supports transform-style { }`  
 b) `@supports (transform-style) { }`  
 c) `@supports (transform-style: preserve) { }`
