@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí druhé kapitoly
 
 Otestujte si, co jste se naučili v kapitole o layoutových dotazech.
@@ -29,17 +31,6 @@ c. vlastnost `flex-wrap` ve flexboxu a zápis `repeat(auto-fit, minmax(…, …)
 
 ---
 
-Řešení:
+Řešení: 1. b), 2. c), 3. a), 4. a), 5. b), 6. c).
 
-1. **Jaký je rozdíl mezi Media Queries a Container Queries?**  
-b. v Media Queries se ptáme na velikost okna, v Container Queries na velikost rodičovského prvku  
-1. **Jak zapíšeme dotaz na minimální šířku okna?**  
-c. `@media (min-width: …)`  
-1. **Na co se ptá dotaz `(orientation: portrait)`?**  
-a. zda je obrazovka zařízení na výšku (méně široká než vysoká)  
-1. **K čemu slouží CSS vlastnost `contain`?**  
-a. definuje zapouzdření (nezávislost) určité části stránky  
-1. **Co dělá zápis `@container (min-width: 30em)`?**  
-b. jeho prostřednictvím se ptáme na minimální šířku rodičovského prvku  
-1. **Jaké jsou klíčové triky pro „No Queries“ dotazy?**  
-c. vlastnost `flex-wrap` ve flexboxu a zápis `repeat(auto-fit, minmax(…, …))` v gridu  
+</div>

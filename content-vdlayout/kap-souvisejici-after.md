@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí deváté kapitoly
 
 Poslední test knihy je tady! Co jste se naučili v této kapitole?
@@ -41,23 +43,6 @@ c) značka fixů určených pro frontendové vývojářky a vývojáře
 
 ---
 
-Řešení:
+Řešení: 1. b), 2. a), 3. b), 4. a), 5. c), 6. b), 7. a), 8. c), 8. a).
 
-1. **Jaký typ zobrazení zajistí deklarace `display:inline-block`?**  
-b) vnitřně se jedná o blokový element, zvnějšku o inlinový – netvoří zalomení  
-1. **Jak zajistit, aby plovoucí prvky nevytékaly z rodičovského elementu?**  
-a) `display:flow-root`
-1. **K čemu slouží logické vlastnosti a hodnoty (CSS Logical Properties)?**  
-b) k sázení layoutu v závislosti na směru toku jazyka dokumentu
-1. **Jaký je ideální způsob nastavení velikosti písma v dokumentu?**  
-a) v procentech: `html { font-size: 120% }`
-1. **Co definuji zápisem `html {--color: blue}`?**  
-c) autorskou vlastnost `--color` s hodnotou `blue`
-1. **Jaké jsou výhody autorských vlastností a jejich použití v proměnných?**  
-b) počítají se v prohlížeči, podléhají kaskádě, jsou dostupné z HTML i JS
-1. **Co udělá zápis `margin-bottom:calc(1em-2px)`?**  
-a) prohlížeč spočte `1em` a výsledek výpočtu dosadí v závorce místo hodnoty
-1. **Jak se prohlížeče zeptat na podporu vlastnosti `transform-style`?**  
-c) `@supports (transform-style: preserve) { }`
-1. **Co je Autoprefixer?**  
-a) automatizační nástroj, který přidává (nejen) prefixy do CSS kódu
+</div>

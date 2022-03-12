@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí páté kapitoly
 
 Otestujte si, co jste se naučili o CSS gridu.
@@ -45,25 +47,6 @@ c) bude široká nejméně `100px` a nejvíce bude mít maximální šířku vie
 
 ---
 
-Řešení:
+Řešení: 1. c), 2. b), 3. c), 4. b), 5. b), 6. a), 7. c), 8. a), 8. b), 9. a).
 
-1. **Které prohlížeče podporují nějakou formu gridu?**  
-c) Internet Explorer 10 a všechny moderní
-1. **Jaký je rozdíl mezi položkou a buňkou mřížky?**  
-b) položka je prvek v DOMu, buňka je prostor vymezený čtyřmi linkami
-1. **Co je to implicitní mřížka?**  
-c) implicitní je předem nedefinovaná, nastavuje se pomocí `grid-auto-*`
-1. **Slučují se v položkách gridu sousedící vnější okraje `margin`?**  
-b) ne, ve formátovacím kontextu gridu se hodnoty neslučují  
-1. **Jak se liší jednotka `fr` od `%`?**  
-b) u `fr` nemusíme přemýšlet nad počtem položek a box modelem
-1. **Jak definovat mřížku o rozměrech 2 × 2 se stejnými rozměry buněk?**  
-a) `grid-template: 1fr 1fr / 1fr 1fr`
-1. **Co dělá vlastnost `grid-template-areas`?**  
-c) pojmenovává oblasti, tedy jednu nebo více buněk
-1. **Co dělá zápis `grid-area:oblast`?**  
-a) umístí položku do oblasti `oblast`
-1. **Jaký je rozdíl mezi `auto-fill` a `auto-fit` ve funkci `repeat()`?**  
-b) `auto-fill` vyplní prostor novými buňkami, `auto-fit` roztahuje existující
-1. **Co bude výsledkem zápisu šířky buňky jako `minmax(100px,max-content)`?**  
-a) bude široká nejméně `100px` a nejvíce bude mít maximální šířku obsahu
+</div>

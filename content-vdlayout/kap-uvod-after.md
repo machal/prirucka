@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí první kapitoly
 
 Shrnutí všech kapitol jsem pro vás připravil ve formě kvízu. Testy jsou skvělé v tom, že čtenáře nutí přemýšlet a lovit v paměti. Odměnou za trochu námahy by vám mělo být trvalejší uložení důležitých informací z knížky v hlavě.
@@ -14,18 +16,13 @@ c) k rozložení do tvaru mřížky
 a) zobrazí prvek ve stránce jako úhlovou brusku, flexu  
 b) neudělá nic, je potřeba dalších vlastností jako `flex-template`  
 c) vykreslí všechny potomky prvku vedle sebe  
-1. **Technologie, jejímuž zániku vděčíme za vznik CSS gridu, se jmenuje:**  
+1. **Technologie, jejímuž zániku vděčíme za vznik CSS gridu, je:**  
 a) Macromedia Flash  
 b) Netscape Navigator  
 c) Microsoft Silverlight
 
 ---
 
-Řešení:
+Řešení: 1. b), 2. c), 3. c).
 
-1. **K čemu slouží CSS Multi-column Layout?**  
-b) k automatické vícesloupcové sazbě textu
-1. **Co udělá zápis `display:flex`?**  
-c) vykreslí všechny potomky prvku vedle sebe
-1. **Technologie, jejímuž zániku vděčíme za vznik CSS gridu, se jmenuje:**  
-c) Microsoft Silverlight
+</div>

@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí sedmé kapitoly
 
 Otestujte si, co jste se naučili o zarovnávání boxů v CSS.
@@ -37,21 +39,6 @@ c) `order: -1`
 
 ---
 
-Řešení:
+Řešení: 1. a), 2. b), 3. a), 4. b), 5. c), 6. b), 7. a), 8. c).
 
-1. **Co definuje CSS modul Box Alignment?**  
-a) zarovnání boxů v různých modelech rozvržení CSS  
-1. **Jak rozlišit vlastnosti zarovnání na hlavní a na příčnou osu?**  
-b) vlastnosti `justify-` zarovnávají na hlavní, `align-` na příčnou osu  
-1. **Jaký je rozdíl mezi vlastnostmi obsahujícími `-items`, `-self`, `-content`?**  
-a) `-items` = položky, `-self` = položka,  `-content` = volný prostor  
-1. **Jak zarovnat položky doprostřed buněk layoutu na vodorovné ose?**  
-b) `justify-items: center`  
-1. **Jak zarovnat položku ke spodní a pravé hraně buňky layoutu?**  
-c) `place-self: end end`
-1. **Proč je vhodné používat pro mezery v layoutu `gap`?**  
-b) nezapočítává se do rozměrů položek a je možné `gap` nastavit pro celý layout  
-1. **Co udělá `gap:normal` v gridu a flexboxu?**  
-a) mezeru nulové šířky a výšky  
-1. **Jak přesunout položku na první místo vizuálního pořadí?**  
-c) `order: -1`
+</div>

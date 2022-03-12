@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí třetí kapitoly
 
 Otestujte si, co jste se naučili.
@@ -37,21 +39,6 @@ c) sloupečky libovolného počtu se šířkou přibližně `150px` a mezerou `1
 
 ---
 
-Řešení:
+Řešení: 1. a), 2. c), 3. b), 4. b), 5. a), 6. a), 7. b), 8. c).
 
-1. **K čemu slouží vlastnost `grid-template-columns`?**  
-a) definuje šablonu pro rozvržení sloupců gridu
-1. **Co dělá funkce `minmax()`?**  
-c) vrací největší z atributů a používá se pro jakoukoliv vlastnost CSS
-1. **Jakou funkci má vlastnost `grid-area`?**  
-b) zajistí umístění prvku do pojmenované oblasti gridu
-1. **Co dělá vlastnost `grid`?**  
-b) jde o zkratku pro definici vzhledu mřížky
-1. **Co vykreslí zápis `grid-template-columns:repeat(12, 1fr)`?**  
-a) dvanáct sloupečků o šířce `1fr`
-1. **Jak gridem vycentrovat boxík uvnitř boxu?**  
-a) `display:grid;place-items:center;`
-1. **Co dělá zápis `flex:auto`?**  
-b) hodnotou `auto` povolíme automatické rozpínání i smršťování velikosti položek
-1. **Co vykreslí zápis `columns:150px;gap:1em;`?**  
-c) sloupečky libovolného počtu se šířkou přibližně `150px` a mezerou `1em`
+</div>

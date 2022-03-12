@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí osmé kapitoly
 
 Otestujte si, co jste se naučili v osmé kapitole.
@@ -25,15 +27,6 @@ c) jde o chyták, tento problém vzniká jen u rozvržení gridem
 
 ---
 
-Řešení:
+Řešení: 1. c), 2. c), 3 a), 4 a), 5. a).
 
-1. **Jaký podíl na českém trhu má Internet Explorer začátkem roku 2022?**  
-c) kolem 1 %
-1. **Co je logické pořadí prvků?**  
-c) pořadí prvků, jak se jimi prochází, např. pomocí klávesy Tab  
-1. **Jaké vlastnosti mohou měnit logické pořadí ve stránce?**  
-a) například `order`, `grid-auto-flow`, `grid-area`  
-1. **Jakou vlastnost raději vynechat, pokud se chceme vyhnout potížím v Internet Exploreru?**  
-a) `flex-basis`  
-1. **Proč může komplikovanější layout dělaný pomocí flexboxu „probliknout“?**  
-a) flexboxový layout může ovlivnit každá položka, počítá se totiž z obsahu  
+</div>

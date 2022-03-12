@@ -226,7 +226,7 @@ Do zápisu `grid` se kromě vlastností pro šablonu (`grid-template`) dají uv�
 
 Je mi jasné, že pro jedny jsem to sice zjednodušil („hurá, méně kódu!“), jiným jsem zamotal hlavu („fuj, kód složitý jako assembler“). Máte však volbu, jak kód v gridu zapisovat, a vyberte si dle svých preferencí.
 
-Ještě vám dlužím finální CSS kód. Používám tu nejkratší variantu:
+Ještě vám dlužím finální CSS kód. Nejprve definujeme grid:
 
 ```css
 @media screen and (min-width: 37.5em) {
@@ -239,7 +239,15 @@ Ještě vám dlužím finální CSS kód. Používám tu nejkratší variantu:
       "side main" 1fr
       "foot foot" 5em
       / clamp(10em, 30%, 20em) 1fr;
-  }
+  }    
+
+}  
+```
+
+Nyní umístíme prvky do mřížky:
+
+```css
+@media screen and (min-width: 37.5em) {
   
   .head {
     grid-area: head;

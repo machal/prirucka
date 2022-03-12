@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí čtvrté kapitoly
 
 Otestujte si, co jste se naučili o flexboxu.
@@ -41,23 +43,6 @@ c) `flex: 0 1 auto`
 
 ---
 
-Řešení:
+Řešení: 1. a), 2. a), 3. c), 4. c), 5. b), 6. c), 7. c), 8. c), 8. a).
 
-1. **Jak definovat režim zobrazení flexboxu?**  
-a) `display:flex`  
-1. **Jaký je výchozí směr os flexboxu?**  
-a) hlavní osa má vodorovný směr, příčná osa svislý  
-1. **Jak můžeme změnit směr os flexboxu?**  
-c) vlastností `flex-direction`, nastavením jazyka nebo vlastností `writing-mode`
-1. **Co dělá zápis `flex-wrap:wrap`?**  
-c) umožní položkám flexboxu, aby se v případě nedostatku prostoru zalamovaly na další řádek
-1. **Co zajistí zápis `flex-flow:column`?**  
-b) položky se nebudou zalamovat (`flex-wrap:nowrap`) a zároveň se vykreslí svisle (`flex-direction:column`)  
-1. **Jaké vlastnosti odpovídá `flex-basis`?**  
-c) většinou `width`, ale v opačném směru layoutu pak `height`
-1. **Kterým zápisem vytvoříme „absolutní model pružnosti“?**  
-c) `flex:0`
-1. **Co nastavuje zkratka `flex`?**  
-c) vlastnosti `flex-grow`, `flex-shrink` a `flex-basis`
-1. **Čemu odpovídá zápis `flex:auto`?**  
-a) `flex: 1 1 auto`  
+</div>

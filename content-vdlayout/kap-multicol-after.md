@@ -1,3 +1,5 @@
+<div class="colored-box pbb-a" markdown="1">
+
 # Shrnutí šesté kapitoly
 
 Otestujte si, co jste se naučili o vícesloupcovém layoutu.
@@ -33,19 +35,6 @@ c) prvek překlene celou šířku vícesloupcového layoutu
 
 ---
 
-Řešení:
+Řešení: 1. b), 2. a), 3. a), 4. c), 5. a), 6. a), 7. c).
 
-1. **Modul CSS Multi-column Layout umožňuje:**  
-b) zalamovat obsah do sloupců  
-1. **Jak pomocí „multicol“ definovat layout se šířkou sloupce `300px`?**  
-a) `column-width:300px`  
-1. **Co dělá zápis `columns:3`?**  
-a) pokusí se zalomit obsah do tří sloupců  
-1. **Jak definovat šířku mezery mezi sloupci?**  
-c) vlastností `gap` (kromě MSIE a Safari), anebo vlastností `column-gap`
-1. **Co dělá zápis `column-fill:balance`?**  
-a) rozdělí obsah do sloupečků, aby měly co nejpodobnější výšku  
-1. **Jak zajistit, aby se prvek nerozdělil do více sloupečků?**  
-a) teoreticky `break-inside:avoid`, ale nepodporují to prohlížeče  
-1. **Co zajistí `column-span:all`?**  
-c) prvek překlene celou šířku vícesloupcového layoutu
+</div>
