@@ -16,7 +16,7 @@ Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda 
 
 <div class="book-index" data-book-index="flex-wrap"></div>
 
-Poznámka: všechny texty příruček jsou k vidění naživo na na Vzhůru dolů:
+Poznámka: všechny texty příruček jsou k vidění naživo na Vzhůru dolů:
 
 → [vrdl.cz/p/css-flex-wrap](https://www.vzhurudolu.cz/prirucka/css-flex-wrap)
 

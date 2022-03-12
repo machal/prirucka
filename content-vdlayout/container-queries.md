@@ -76,10 +76,7 @@ Druhý krok je samotný dotaz na kontejner, Container Query:
 Tohle je asi zřejmé. Pokud bude šířka rodičovského prvku alespoň `30em` (což je v obvyklých případech 480 pixelů), aplikují se pravidla uvnitř.
 
 Je možné, že i v době, kdy toto čtete, budou Container Queries schované za vlaječkovým nastavením prohlížeče. Jak to tedy otestovat?
-
-1. Potřebujete Chromium verze 91 a vyšší.
-2. Jděte do vlaječkového nastavení: `chrome://flags`.
-3. Povolte možnost „Enable CSS Container Queries“.
+V Chromiu 91 a vyšších verzí jděte do vlaječkového nastavení: `chrome://flags` a povolte možnost „Enable CSS Container Queries“.
 
 ## Specifikace a další prohlížeče
 

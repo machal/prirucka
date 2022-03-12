@@ -140,10 +140,14 @@ Ovládnutí dotazů na média je však zcela nepostradatelná dovednost, každý
 
 Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
 
-- Stránka o Media Queries na Vzhůru dolů: [vrdl.cz/p/css3-media-queries](https://www.vzhurudolu.cz/prirucka/css3-media-queries).
-- Jak v responzivním layoutu dělat breakpointy, body zlomu [vrdl.cz/p/breakpointy](https://www.vzhurudolu.cz/prirucka/breakpointy).
-- Jak breakpointy řešit technicky: [vrdl.cz/p/breakpointy-css](https://www.vzhurudolu.cz/prirucka/breakpointy-css).
-- Celý e-book o responzivním designu. Prý je docela dobrý, říkali lidi… [vrdl.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
+- Stránka o Media Queries na Vzhůru dolů:  
+[vrdl.cz/p/css3-media-queries](https://www.vzhurudolu.cz/prirucka/css3-media-queries).
+- Jak v responzivním layoutu dělat breakpointy, body zlomu  
+[vrdl.cz/p/breakpointy](https://www.vzhurudolu.cz/prirucka/breakpointy).
+- Jak breakpointy řešit technicky:  
+[vrdl.cz/p/breakpointy-css](https://www.vzhurudolu.cz/prirucka/breakpointy-css).
+- Celý e-book o responzivním designu. Prý je docela dobrý, říkali lidi…  
+[vrdl.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
 
 V tomto bodě začnu předpokládat, že o Media Queries už něco víte, a společně se tedy pustíme do jejich používání.
 
