@@ -1,4 +1,4 @@
-<div id="kap-grid-before" class="ebook-chapter-before" markdown="1"> 
+<div id="kap-grid-before" class="ebook-chapter-before ebook-chapter-before-grid" markdown="1"> 
 
 # Kapitola 5: Grid
 
