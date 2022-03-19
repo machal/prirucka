@@ -24,14 +24,14 @@ CSS masonry snad jednou bude součástí specifikace [CSS gridu](css-grid.md).
 
 Grid je skvělý, ale dříve nebo později se dostaneme do situace, kdy potřebujeme jeden grid zanořit do druhého. A když už jsme v tom, přejeme si, aby vnitřní grid dokázal podědit vnější layout.
 
+Jak vidíte na obrázku níže, subgrid mám může zařídit to, aby vnitřní části položek lícovaly, i když mají různě velký obsah.
+
 <figure>
 <img src="../dist/images/original/vdlayout/subgrid-intro.jpg" width="1600" height="540" alt="Grid vs. subgrid">
 <figcaption markdown="1">
 Grid a subgrid.
 </figcaption>
 </figure>
-
-Jak vidíte na obrázku, subgrid mám může zařídit to, aby vnitřní části položek lícovaly, i když mají různě velký obsah.
 
 Můžeme to zajistit i jinak: nastavit prvkům fixní rozměry na výšku nebo použít JavaScript (což bych kvůli výkonu moc nedoporučoval). Staré páky mezi kodéry si vzpomenou na složité tabulkové layouty, kterými se toho dalo dosáhnout, ale ve kterých se nikdo nevyznal…
 
@@ -114,7 +114,7 @@ Prohlížeči dáváme tyhle instrukce:
 
 Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad pomůže s pochopením celé legrace.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/subgrid-example.jpg" width="1600" height="900" alt="Příklad se subgridem">
 <figcaption markdown="1">
 *Zelená podmřížka (vlevo) si hoví v modré mřížce a je spokojená. My také, protože vnitřní položky karet jsou navzájem zarovnané.*

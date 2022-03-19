@@ -40,9 +40,7 @@ Příklad:
 }
 ```
 
-Šířka `.box-1` bude určena tím menším přepočtem na pixely z obou hodnot.
-
-V dostatečně širokém rodičovském prvku to bude většinou `100px`, ale v opravdu malých šířkách se může použít `50%`, protože vypočtená hodnota šířky bude menší než `100px`.
+Šířka `.box-1` bude určena tím menším přepočtem na pixely z obou hodnot. V dostatečně širokém rodičovském prvku to bude většinou `100px`, ale v opravdu malých šířkách se může použít `50%`, protože vypočtená hodnota šířky bude menší než `100px`.
 
 <!-- AdSnippet -->
 

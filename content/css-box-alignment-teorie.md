@@ -338,6 +338,4 @@ Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `g
 }
 ```
 
-Uvedené vytvoří odkaz na mřížku o třech sloupcích a dvou řádcích. Mezery mezi položkami layoutu budou `1em` ve svislém směru a `0.5em` ve vodorovném.
-
-Jako hodnoty bere vlastnost `gap` všechny možné délkové jednotky a také procenta, přičemž ty se vztahují na délku kontejneru layoutu.
+Uvedené vytvoří odkaz na mřížku o třech sloupcích a dvou řádcích. Mezery mezi položkami layoutu budou `1em` ve svislém směru a `0.5em` ve vodorovném. Jako hodnoty bere vlastnost `gap` všechny možné délkové jednotky a také procenta, přičemž ty se vztahují na délku kontejneru layoutu.

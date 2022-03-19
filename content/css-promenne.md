@@ -323,7 +323,7 @@ element.style.setProperty("--color", "blue");
 
 CodePen: [cdpn.io/e/xXgWPw](https://codepen.io/machal/pen/xXgWPw?editors=1111)
 
-V jQuery od verze 3.1  se s „proměnnými“ pracuje stejně jako s běžnými CSS vlastnostmi. Aby ne, když to jsou vlastnosti, jen volitelné.
+V jQuery od verze 3.1  se s „proměnnými“ pracuje stejně jako s běžnými CSS vlastnostmi. Aby ne, když to jsou vlastnosti, jen volitelné. Pokud tedy jQuery ještě používáte…
 
 ```js
 // číst hodnotu
@@ -332,8 +332,6 @@ $('#box1').css('--color');
 // zapsat hodnotu
 $('#box2').css('--color', 'blue');
 ```
-
-Pokud tedy jQuery ještě používáte…
 
 CodePen: [cdpn.io/e/LOdPbR](https://codepen.io/machal/pen/LOdPbR?editors=1111)
 
@@ -345,7 +343,7 @@ Tolik k volitelným vlastnostem a CSS proměnným. Teď už vám můžu nabídno
 
 ## Shrnutí {#shrnuti}
 
-Pojďme si sesumírovat klady a zápory volitelných vlastností a jejich použití jako proměnných v CSS.
+Pojďme si sesumírovat klady a zápory volitelných vlastností.
 
 * Plus: Počítají se v prohlížeči a jsou dostupné z CSS, HTML i JS.
 * Minus: Není je možné použít na jakémkoliv místě v kódu jako preprocesorové proměnné. Protože to nejsou proměnné.

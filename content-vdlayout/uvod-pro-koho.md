@@ -89,7 +89,7 @@ Podobných vlastností je tady víc, vždy vás na jejich slabší podporu upozo
 
 Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlížečích, ale znáte to – časy se mění a prohlížeče s nimi. Je tedy takřka jisté, že některé informace zde zestárnou.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/caniuse-etc.jpg" width="1600" height="900" alt="CodePen">
 <figcaption markdown="1">
 Weby, které mějte po ruce. Kdyby něco.

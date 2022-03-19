@@ -143,15 +143,7 @@ Pokud máte tu smůlu, že s layouty začínáte a ještě pořád držíte podp
 
 Pokud jste počítali, do celkových 17 chyb stále tři chybí. Ano, máte pravdu a vyhráváte… pobyt v Muzeu historie webových prohlížečů.
 
-Zbývající tři boty má na svědomí Internet Explorer 10 a ten už dávno vyhynul.
-
-Více informací o podpoře je na CanIUse. [caniuse.com/flexbox](https://caniuse.com/flexbox)
-
-<div class="ebook-only" markdown="1">
-
-Mimochodem, o flexboxu a jeho vlastnostech detailně píšu ve čtvrté kapitole.
-
-</div>
+Zbývající tři boty má na svědomí Internet Explorer 10 a ten už dávno vyhynul. Více informací o podpoře je na CanIUse. [caniuse.com/flexbox](https://caniuse.com/flexbox)
 
 ## Grid {#grid}
 
@@ -181,12 +173,6 @@ S gridem je to prostě v MSIE složité a já se vůbec nedivím lidem, kteří 
 Jo, to když Explorer podporovat nemusíte, to je jiná písnička…
 
 <!-- AdSnippet -->
-
-<div class="ebook-only" markdown="1">
-
-V další podkapitole si o podpoře gridu v MSIE povíme více.
-
-</div>
 
 <div class="web-only" markdown="1">
 
@@ -239,12 +225,6 @@ Asi nejznámějším bugem, čili chybou v podpoře, je špatná podpora zalamov
 Pokud bychom se dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl by to grid ani flexbox. Pokud jde o moderní prohlížeče, Černého Petra si bohužel vytáhlo vícesloupcové rozvržení. Je to samozřejmě proto, že CSS Multicol je výrazně nejméně používaným systémem rozvržení.
 
 Více informací najdete na našem oblíbeném webu. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
-
-<div class="ebook-only" markdown="1">
-
-O vícesloupcovém layoutu čtěte více v šesté kapitole.
-
-</div>
 
 ## A co zarovnávání, CSS Box Align? {#box-align}
 

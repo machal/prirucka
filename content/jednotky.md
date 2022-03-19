@@ -211,13 +211,9 @@ CodePen: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
 
 ## Co když chci přesto používat hlavně px? {#px}
 
-Ve webdesignu se nabízí vždy celá řada možností řešení. Některá jsou optimální pro uživatele, ale náročná na implementaci, jiná představují kompromis. Nejinak tomu je u jednotek.
+Ve webdesignu se nabízí vždy celá řada možností řešení. Některá jsou optimální pro uživatele, ale náročná na implementaci, jiná představují kompromis. Nejinak tomu je u jednotek. Nemyslím si, že zemře hodně koťátek, když dáte přednost „CSS pixelům“. Použití `px` je u velké části typů designu na implementaci výrazně pohodlnější.
 
-Nemyslím si, že zemře hodně koťátek, když dáte přednost „CSS pixelům“. Použití `px` je u velké části typů designu na implementaci výrazně pohodlnější.
-
-Přesto se ujistěte, že písmo v návrhu je dostatečně veliké na to, aby je přečetla většina uživatelů. Jako základ se obecně doporučuje alespoň oněch `16px`.
-
-Raději se také sami sebe zeptejte, zda vám nevadí nic z následujícího seznamu:
+Přesto se ujistěte, že písmo v návrhu je dostatečně veliké na to, aby je přečetla většina uživatelů. Jako základ se obecně doporučuje alespoň oněch `16px`. Raději se také sami sebe zeptejte, zda vám nevadí nic z následujícího seznamu:
 
 - Uživatelům, kteří si změnili písmo v systému nebo prohlížeči (na Archive.org asi 3 %), se jejich nastavení na vašem webu neprojeví. Zůstává jim možnost zoomovat celou stránku.
 - Změna velikosti písma nebude správně reflektována v Media Queries.

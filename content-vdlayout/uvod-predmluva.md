@@ -1,3 +1,5 @@
+<div class="foreword" markdown="1">
+
 # Předmluva
 
 Milé čtenářky, milí čtenáři,
@@ -14,3 +16,5 @@ I proto vznikla tato kniha o nových layoutech v CSS. Aby vám ve složitém sv�
 
 Martin Michálek  
 v Praze, březen 2022
+
+</div>

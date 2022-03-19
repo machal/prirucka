@@ -93,7 +93,7 @@ Raději to vysvětlím:
 
 Výsledek tohoto zápisu nicméně bez Firefox Nightly lépe uvidíte na obrázku. Tady je.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
 <figcaption markdown="1">
 Nativně vykreslený layout typu masonry. Zdroj: CodePen Rachel Andrew.

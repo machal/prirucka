@@ -16,7 +16,7 @@ Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl
 
 Podívejte se na graf. Je z něj myslím jasné, že i v České republice bude možné Internet Explorer brzy přestat podporovat.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/msie-stats.jpg" width="1600" height="900" alt="Graf podílu prohlížečů pro MSIE, MS Edge, Firefox">
 <figcaption markdown="1">
 Nejmenší z nejmenších. Podíl méně významných prohlížečů na trhu v ČR. Vývoj MSIE ukazuje světle modrá linka. Zdroj: [rankings.gemius.com](http://ranking.gemius.com/cz/ranking/browsers/).

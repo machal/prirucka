@@ -130,9 +130,7 @@ Ještě to popíšu, vypadá to asi následovně:
 
 Připomínám, že nechtěné překreslení layoutu uživatele rozhodně nepotěší a webu zhorší metriku Cumulative Layout Shift, kterou se zabývá Google v rámci svých Web Vitals. [vrdl.cz/p/metrika-cls](https://www.vzhurudolu.cz/prirucka/metrika-cls)
 
-Jake Archibald ovšem varuje: „Nenechte se kvůli tomuto příspěvku flexboxem vyděsit.“
-
-Má pravdu. Jeho test je postavený i na svou dobu na silně zpomalené rychlosti stahování a vykreslování. Dnes už rychlost mobilního připojení 2G nemá smysl testovat, používá se většinou pomalejší 4G. Jeho dema mi v roce 2021 už při sebevětším zpomalení testovacího zařízení a připojení k internetu žádné postřehnutelné nekalosti neukázala.
+Jake Archibald ovšem varuje: „Nenechte se kvůli tomuto příspěvku flexboxem vyděsit.“ Má pravdu. Jeho test je postavený i na svou dobu na silně zpomalené rychlosti stahování a vykreslování. Dnes už rychlost mobilního připojení 2G nemá smysl testovat, používá se většinou pomalejší 4G. Jeho dema mi v roce 2021 už při sebevětším zpomalení testovacího zařízení a připojení k internetu žádné postřehnutelné nekalosti neukázala.
 
 Nicméně, je nezpochybnitelný fakt, že flexbox i grid jsou vykreslovány zcela jiným způsobem:
 

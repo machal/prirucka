@@ -25,7 +25,7 @@ Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou h
 
 Naštěstí jsou ale ty nejdůležitější z nich pojmenované podle jednoduchého klíče.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-box-alignment-tahak.jpg" alt="Tahák k CSS Box Alignment">
 <figcaption markdown="1">
 Tahák k vlastnostem pro zarovnání boxů v CSS.
@@ -207,9 +207,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
 
 Vlastnosti [`justify-items`](css-justify-items.md) i [`justify-self`](css-justify-self.md) nejsou dostupné pro layouty tvořené flexboxem.
 
-Namísto `justify-items` můžeme použít starý dobrý `margin` nebo pro centrování třeba `justify-content`.
-
-Stejně tak nebudou fungovat zkratky [`place-items`](css-place-items.md) a [`place-self`](css-place-self.md).
+Namísto `justify-items` můžeme použít starý dobrý `margin` nebo pro centrování třeba `justify-content`. Stejně tak nebudou fungovat zkratky [`place-items`](css-place-items.md) a [`place-self`](css-place-self.md).
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
@@ -232,7 +230,7 @@ Toto řešíme v textech příručky k jednotlivým vlastnostem. Zde se ale zam�
 - [Vlastnosti `gap`](css-gap.md) v layoutu tvořeném gridem a flexboxem umí všechny prohlížeče, kromě MSIE 11, ale v kombinaci s vícesloupcovým layoutem to je složitější.
 - Vlastnost `overflow-position` neumí v době psaní textu žádný prohlížeč.
 
-Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda ji jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty. Konkrétněji o podpoře v prohlížečích píšu v textech o jednotlivých vlastnostech.
+Aby vás to ale neodradilo – celkově vzato jde o část CSS s velmi dobrou podporou a není nutné moc dumat, zda ji jako celek používat nebo ne. Prostě to používejte. Nic jiného vám stejně nezbývá, pokud chcete vytvářet nějaké ty layouty.
 
 <div class="web-only" markdown="1">
 

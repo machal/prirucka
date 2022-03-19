@@ -1,6 +1,9 @@
-<div class="imprint" markdown="1">
+<div class="imprint imprint-last" markdown="1">
 
 # Tiráž
+
+**Martin Michálek**  
+**CSS: MODERNÍ LAYOUT**
 
 Redakce a jazyková korektura: Petr Jediný Novotný, [pjnovotny.cz](http://pjnovotny.cz/)  
 Obrázky, schémata a vnitřní sazba: Martin Michálek  
