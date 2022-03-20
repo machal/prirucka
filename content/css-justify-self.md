@@ -18,7 +18,7 @@ Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-justify-self](https://www.vzhurudolu.cz/prirucka/css-justify-self)
+→ [vrdl.in/cssjs](https://www.vzhurudolu.cz/prirucka/css-justify-self)
 
 </div>
 

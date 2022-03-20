@@ -16,7 +16,7 @@ Vlastnost `grid` je součástí specifikace [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-zkratka](https://www.vzhurudolu.cz/prirucka/css-grid-zkratka)
+→ [vrdl.in/cssg](https://www.vzhurudolu.cz/prirucka/css-grid-zkratka)
 
 </div>
 

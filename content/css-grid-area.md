@@ -16,7 +16,7 @@ Vlastnost `grid-area` je součástí specifikace [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-area](https://www.vzhurudolu.cz/prirucka/css-grid-area)
+→ [vrdl.in/cssga](https://www.vzhurudolu.cz/prirucka/css-grid-area)
 
 </div>
 

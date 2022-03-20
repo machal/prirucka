@@ -17,7 +17,7 @@ Vlastnosti `grid-auto-rows` a `grid-auto-columns` jsou součástí [CSS gridu](c
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-auto-rows-columns](https://www.vzhurudolu.cz/prirucka/css-grid-auto-rows-columns)
+→ [vrdl.in/cssgarc](https://www.vzhurudolu.cz/prirucka/css-grid-auto-rows-columns)
 
 </div>
 

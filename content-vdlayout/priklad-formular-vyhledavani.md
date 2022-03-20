@@ -94,7 +94,7 @@ Na menších displejích chceme, aby se všechny tři prvky vyskládaly pod sebe
 Moje komentáře:
 
 - [Vlastností `flex-direction`](css-flex-direction.md) a hodnotou `column` měníme směr rozvržení z výchozího vodorovného na svislý.
-- Pomocí `width:100%` roztáhneme všechny prvky na celou šířku a pomocí `box-sizing:border-box` prohlížeči sdělíme, že šířku chceme počítat i s vnitřním okrajem a rámečkem. Pokud tu druhou vlastnost neznáte, podívejte se na Vzhůru dolů. [vrdl.cz/p/css3-box-sizing](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
+- Pomocí `width:100%` roztáhneme všechny prvky na celou šířku a pomocí `box-sizing:border-box` prohlížeči sdělíme, že šířku chceme počítat i s vnitřním okrajem a rámečkem. Pokud tu druhou vlastnost neznáte, podívejte se na Vzhůru dolů. [vrdl.in/cssbs](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
 
 ### Větší displeje
 
@@ -188,9 +188,7 @@ Co jsme zde udělali?
 
 Je to jednoduché, že? Ale teď vám řeknu, že vás u této ukázky trošku tahám za nos. Mohlo by to totiž být ještě jednodušší.
 
-Ve skutečnosti bychom zde nemuseli zapisovat žádný kód. Možná už totiž víte, že [CSS grid](css-grid.md) řádky layoutu vytváří automaticky. Při automatickém vytvoření řádku se prvek roztáhne na celou šířku (což chceme) a výšku má podle obsahu (což také chceme).
-
-Takže si klidně ušetřeme práci a pro malé displeje tuto deklaraci zcela vynechme.
+Ve skutečnosti bychom zde nemuseli zapisovat žádný kód. Možná už totiž víte, že [CSS grid](css-grid.md) řádky layoutu vytváří automaticky. Při automatickém vytvoření řádku se prvek roztáhne na celou šířku (což chceme) a výšku má podle obsahu (což také chceme). Takže si klidně ušetřeme práci a pro malé displeje tuto deklaraci zcela vynechme.
 
 ### Větší displeje
 

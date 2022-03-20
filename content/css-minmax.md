@@ -16,7 +16,7 @@ Zápis `minmax()` je součástí specifikace [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-minmax](https://www.vzhurudolu.cz/prirucka/css-minmax)
+→ [vrdl.in/cssmm](https://www.vzhurudolu.cz/prirucka/css-minmax)
 
 </div>
 

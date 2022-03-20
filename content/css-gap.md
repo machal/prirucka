@@ -10,8 +10,6 @@ Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytváře
 
 ![CSS vlastnost gap](../dist/images/small/vdlayout/schema-css-gap.jpg)
 
-`gap` je mezera mezi vnitřními prvky layoutu.
-
 <div class="web-only" markdown="1">
 
 Vlastnost `gap` je možné použít ve všech moderních layoutech – v [gridu](css-grid.md), [flexboxu](css-flexbox.md) i [multicol](css-multicolumn.md). Patří však do specifikace [CSS Box Alignment](css-box-alignment.md).
@@ -20,7 +18,7 @@ Vlastnost `gap` je možné použít ve všech moderních layoutech – v [gridu]
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-gap](https://www.vzhurudolu.cz/prirucka/css-gap)
+→ [vrdl.in/gap](https://www.vzhurudolu.cz/prirucka/css-gap)
 
 </div>
 

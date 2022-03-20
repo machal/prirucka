@@ -128,7 +128,7 @@ Ještě to popíšu, vypadá to asi následovně:
 - V případě [gridu](css-grid.md) je layout připravený už při první verzi vykreslené stránky a dále se již nemění. Kontejner určuje layout obsahu.
 - [Flexbox](css-flexbox.md) vykreslí nejprve hlavní část s textem. Pak si prohlížeč jakoby vzpomene, že zde jsou ještě dvě boční části, a vykreslí je. Dojde tedy k překreslení. Obsah určuje layout kontejneru.
 
-Připomínám, že nechtěné překreslení layoutu uživatele rozhodně nepotěší a webu zhorší metriku Cumulative Layout Shift, kterou se zabývá Google v rámci svých Web Vitals. [vrdl.cz/p/metrika-cls](https://www.vzhurudolu.cz/prirucka/metrika-cls)
+Připomínám, že nechtěné překreslení layoutu uživatele rozhodně nepotěší a webu zhorší metriku Cumulative Layout Shift, kterou se zabývá Google v rámci svých Web Vitals. [vrdl.in/cls](https://www.vzhurudolu.cz/prirucka/metrika-cls)
 
 Jake Archibald ovšem varuje: „Nenechte se kvůli tomuto příspěvku flexboxem vyděsit.“ Má pravdu. Jeho test je postavený i na svou dobu na silně zpomalené rychlosti stahování a vykreslování. Dnes už rychlost mobilního připojení 2G nemá smysl testovat, používá se většinou pomalejší 4G. Jeho dema mi v roce 2021 už při sebevětším zpomalení testovacího zařízení a připojení k internetu žádné postřehnutelné nekalosti neukázala.
 

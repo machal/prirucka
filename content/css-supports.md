@@ -219,9 +219,7 @@ První omezené použití `@supports` vychází z principů fungování prohlí�
 
 Pokud si totiž prohlížeč „myslí“, že vlastnost umí, vrátí na dotaz kladnou odpověď. Ale soudruzi z NDR mohli někde v implementaci vlastnosti udělat chybu.
 
-Dalším omezením je samotná podpora vlastnosti, v tomto případě ale záleží na použití:
-
-`@supports` nepodporuje žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
+Dalším omezením je samotná podpora vlastnosti, v tomto případě ale záleží na použití: `@supports` nepodporuje žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
 
 Je ovšem otázka, jak moc tahle chybějící podpora vadí. Mně vůbec. A hned vám řeknu proč.
 

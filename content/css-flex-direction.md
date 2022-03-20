@@ -16,7 +16,7 @@ Vlastnost `flex-direction` se aplikuje na kontejner flexboxu a určí způsob vy
 
 <div class="book-index" data-book-index="flex-direction"></div>
 
-→ [vrdl.cz/p/css-flex-direction](https://www.vzhurudolu.cz/prirucka/css-flex-direction)
+→ [vrdl.in/cssfd](https://www.vzhurudolu.cz/prirucka/css-flex-direction)
 
 </div>
 
@@ -33,7 +33,7 @@ Položky flexboxu se skládají shora dolů, do sloupce.
 - `column-reverse`  
 Skládání položek do sloupce, ale v opačném směru, tedy zdola nahoru.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-flex-direction.jpg?2" width="1600" height="900" alt="CSS vlastnost flex-direction">
 <figcaption markdown="1">
 *Jakým směrem se flexboxové rozvržení vykreslí?*

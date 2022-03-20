@@ -16,7 +16,7 @@ Vlastnost `flex` nastaví výchozí velikost elementu a způsob, jakým se smí 
 
 <div class="book-index" data-book-index="flex (zkratka)"></div>
 
-→ [vrdl.cz/p/css-flex](https://www.vzhurudolu.cz/prirucka/css-flex)
+→ [vrdl.in/cssf](https://www.vzhurudolu.cz/prirucka/css-flex)
 
 </div>
 

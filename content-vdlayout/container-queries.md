@@ -41,7 +41,7 @@ Proč to tehdy vypadalo, že tahle technologie se do prohlížečů nedostane? L
 
 Pak debata na mnoho let utichla a zůstalo jen u javascriptových knihoven, které ale z pohledu rychlosti vykreslení nejsou hodné doporučení.
 
-Pokud by vás to jako exkurze do minulosti zajímalo, zde je ten můj článek: [vrdl.cz/p/element-queries](https://www.vzhurudolu.cz/prirucka/element-queries).
+Pokud by vás to jako exkurze do minulosti zajímalo, zde je ten můj článek: [vrdl.in/eq](https://www.vzhurudolu.cz/prirucka/element-queries).
 
 Ale zpět k současnosti.
 

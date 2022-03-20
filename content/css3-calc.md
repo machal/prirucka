@@ -90,7 +90,7 @@ Uznávám, že to vypadá docela složitě. Ale bez `calc()` byste layout strán
 
 <!-- AdSnippet -->
 
-(Pro zájemce: více o atributu `sizes` najdete na Vzhůru dolů. [vrdl.cz/p/srcset-sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes))
+(Pro zájemce: více o atributu `sizes` najdete na Vzhůru dolů. [vrdl.in/srcsiz](https://www.vzhurudolu.cz/prirucka/srcset-sizes))
 
 ## Podpora v prohlížečích {#podpora}
 

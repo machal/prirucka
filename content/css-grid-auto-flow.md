@@ -16,7 +16,7 @@ Vlastnost `grid-auto-flow` je součástí specifikace [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-auto-flow](https://www.vzhurudolu.cz/prirucka/css-grid-auto-flow)
+→ [vrdl.in/cssgaf](https://www.vzhurudolu.cz/prirucka/css-grid-auto-flow)
 
 </div>
 

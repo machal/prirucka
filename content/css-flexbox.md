@@ -194,7 +194,12 @@ HTML je jednoduché. O to přísnější máme požadavky na design:
 - Druhý sloupec se zvětšuje a zmenšuje dvakrát tolik než první.
 - Na menších displejích do `400px` se prvky vyskládají pod sebe.
 
+<div class="colored-box" markdown="1">
+
 Zkuste si to nakódovat sami, stačí forknout následující CodePen: [cdpn.io/e/BaRYjya](https://cdpn.io/e/BaRYjya).
+
+</div>
+<!-- .colored-box -->
 
 V dalším textu si ukážeme, jak bych postupoval já.
 

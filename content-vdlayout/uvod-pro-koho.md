@@ -71,9 +71,7 @@ Pak tady ale jsou už starší a existující projekty. Většina příkladů v 
 
 ### Spekulativní sázky na novinky
 
-Během psaní knížky se objevila řada novinek, které ještě nemají plnou podporu v moderních prohlížečích, ale já to nevydržel a píšu tady o nich.
-
-Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad píšu o technologiích, které jsou sice cool, ale v praxi je použít nemůžete.
+Během psaní knížky se objevila řada novinek, které ještě nemají plnou podporu v moderních prohlížečích, ale já to nevydržel a píšu tady o nich. Vždy jsem docela dlouho zvažoval, zda je zařadit, protože strašně nerad píšu o technologiích, které jsou sice cool, ale v praxi je použít nemůžete.
 
 <div class="book-index" data-book-index="Container Queries"></div>
 
@@ -92,7 +90,7 @@ Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlíže�
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/caniuse-etc.jpg" width="1600" height="900" alt="CodePen">
 <figcaption markdown="1">
-Weby, které mějte po ruce. Kdyby něco.
+Weby, které mějte po ruce. Kdyby něco.
 </figcaption>
 </figure>
 

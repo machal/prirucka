@@ -33,8 +33,6 @@ Možná i začátečníci už poznali, co se zde děje:
 - Podmínka `(max-width:40em)` říká, že vložený kód se má aplikovat jen pro šířky okna do `40em`, což je zde obvykle 640 pixelů (40 × 16, při výchozí velikosti písma v dokumentu `16px`, není-li nastaveno jinak).
 - V podmínce nadpisu nastavujeme jinou velikost písma `font-size:1.5em`. Pokud jste si to už nespočítali, půjde o 24 pixelů (16 × 1,5).
 
-Zájemci se na to mohou ještě mrknout živě.
-
 CodePen: [cdpn.io/e/Bpajbz](https://codepen.io/machal/pen/Bpajbz)
 
 ## Různé typy dotazů
@@ -116,8 +114,8 @@ Detekovat hustotu pixelů na obrazovce:
 
 Padly tady výrazy, kterým někteří nemusí rozumět – těm opět nabízím vysvětlení v textech na Vzhůru dolů:
 
-- „Viewport“ je část obrazovky, ve které prohlížeč vykresluje stránku. [vrdl.cz/p/viewport](https://www.vzhurudolu.cz/prirucka/viewport)
-- „Retina“ a vysokokapacitní displeje do webdesignu zavedly přepočet hardwarových pixelů na „CSS pixely“. [vrdl.cz/prirucka/css-pixel](https://www.vzhurudolu.cz/prirucka/css-pixel)
+- „Viewport“ je část obrazovky, ve které prohlížeč vykresluje stránku. [vrdl.in/viewp](https://www.vzhurudolu.cz/prirucka/viewport)
+- „Retina“ a vysokokapacitní displeje do webdesignu zavedly přepočet hardwarových pixelů na „CSS pixely“. [vrdl.in/csspix](https://www.vzhurudolu.cz/prirucka/css-pixel)
 
 Ještě se čistě obecně pozastavme u složení jednotlivých částí každého dotazu na médium.
 
@@ -134,20 +132,12 @@ Anatomie Media Query.
 
 ## Chcete vědět více?
 
-Získané dovednosti nám pro potřeby knížky a návrhu prvních layoutů zcela dostačují.
+Získané dovednosti nám pro potřeby knížky a návrhu prvních layoutů zcela dostačují. Ovládnutí dotazů na média je však zcela nepostradatelná dovednost, každý profesionální webový vývojář i webová vývojářka píší Media Queries prakticky denně. Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
 
-Ovládnutí dotazů na média je však zcela nepostradatelná dovednost, každý profesionální webový vývojář i webová vývojářka píší Media Queries prakticky denně.
-
-Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
-
-- Stránka o Media Queries na Vzhůru dolů:  
-[vrdl.cz/p/css3-media-queries](https://www.vzhurudolu.cz/prirucka/css3-media-queries).
-- Jak v responzivním layoutu dělat breakpointy, body zlomu  
-[vrdl.cz/p/breakpointy](https://www.vzhurudolu.cz/prirucka/breakpointy).
-- Jak breakpointy řešit technicky:  
-[vrdl.cz/p/breakpointy-css](https://www.vzhurudolu.cz/prirucka/breakpointy-css).
-- Celý e-book o responzivním designu. Prý je docela dobrý, říkali lidi…  
-[vrdl.cz/kniha-responzivni-design](https://www.vzhurudolu.cz/kniha-responzivni-design)
+- Stránka o Media Queries na Vzhůru dolů: [vrdl.in/cssmq](https://www.vzhurudolu.cz/prirucka/css3-media-queries).
+- Jak v responzivním layoutu dělat breakpointy: [vrdl.in/bp](https://www.vzhurudolu.cz/prirucka/breakpointy).
+- Jak breakpointy řešit technicky: [vrdl.in/bpcss](https://www.vzhurudolu.cz/prirucka/breakpointy-css).
+- Celý e-book o responzivním designu: [vrdl.in/kniha](https://www.vzhurudolu.cz/kniha-responzivni-design).
 
 V tomto bodě začnu předpokládat, že o Media Queries už něco víte, a společně se tedy pustíme do jejich používání.
 

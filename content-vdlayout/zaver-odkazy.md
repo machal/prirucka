@@ -6,12 +6,11 @@ Až začnete moderní layout v CSS používat, bude se vám, kromě knížky, ji
 
 Na Vzhůru dolů najdete referenční příručky k většině vlastností, které najdete v knížce.
 
-- Příručka k gridu: [vrdl.cz/p/css-grid](https://www.vzhurudolu.cz/prirucka/css-grid)
-- Příručka k flexboxu: [vrdl.cz/p/css-flexbox](https://www.vzhurudolu.cz/prirucka/css-flexbox)
-- Příručka k multicol: [vrdl.cz/p/css-multicolumn](https://www.vzhurudolu.cz/prirucka/css-multicolumn)
-- Příručka k zarovnání boxů: [vrdl.cz/p/css-box-alignment](https://www.vzhurudolu.cz/prirucka/css-box-alignment)
-- Hodinový videokurz gridu: [vrdl.cz/v/webinar-css-grid](https://www.vzhurudolu.cz/video/webinar-css-grid)
-- Články o CSS obecně: [vrdl.cz/css](https://www.vzhurudolu.cz/css)
+- Příručka k gridu: [vrdl.in/grid](https://www.vzhurudolu.cz/prirucka/css-grid)
+- Příručka k flexboxu: [vrdl.in/flex](https://www.vzhurudolu.cz/prirucka/css-flexbox)
+- Příručka k multicol: [vrdl.in/multicol](https://www.vzhurudolu.cz/prirucka/css-multicolumn)
+- Příručka k zarovnání boxů: [vrdl.in/boxal](https://www.vzhurudolu.cz/prirucka/css-box-alignment)
+- Hodinový videokurz gridu: [vrdl.in/vidgrid](https://www.vzhurudolu.cz/video/webinar-css-grid)
 
 ## Vzdělávací hry
 

@@ -100,4 +100,4 @@ Představme si, že bychom se mohli v CSS ptát na velikost rodičovského eleme
 
 Kód by se aplikoval, pokud by šířka rodiče elementu `.item` byla alespoň `20em`. Ukázka je v kódu javascriptové implementace konceptu – EQCSS.
 
-Problém je právě v té závislosti na Javascriptu. Při havárii JS by vám přestalo fungovat CSS. A nebude to také výkonnostně optimální. Specifikace pro Element Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi na toto téma. Bližší informace mám na blogu. [vrdl.cz/p/element-queries](https://www.vzhurudolu.cz/prirucka/element-queries)
+Problém je právě v té závislosti na Javascriptu. Při havárii JS by vám přestalo fungovat CSS. A nebude to také výkonnostně optimální. Specifikace pro Element Queries se teprve rodí, takže pokud nemáte výjimečnou motivaci, doporučuji zatím jen sledovat diskuzi na toto téma. Bližší informace mám na blogu. [vrdl.in/eq](https://www.vzhurudolu.cz/prirucka/element-queries)

@@ -32,7 +32,7 @@ Rozeberme si to:
 Další možné atributy jsou například:
 
 * `attribution` – přisouzení autorských práv.
-* `srcset` a `sizes` – ty už asi znáte. Umožňují vložit zdroje a rozměry v layoutu pro responzivní design. [vrdl.cz/p/srcset-sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes)
+* `srcset` a `sizes` – ty už asi znáte. Umožňují vložit zdroje a rozměry v layoutu pro responzivní design. [vrdl.in/srcsiz](https://www.vzhurudolu.cz/prirucka/srcset-sizes)
 
 ### Preload scanner. Proč AMP nahrazuje značky?
 

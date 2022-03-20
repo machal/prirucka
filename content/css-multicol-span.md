@@ -16,7 +16,7 @@ Vlastnost `column-span` umožňuje, aby se prvek rozprostřel přes několik slo
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-multicol-span](https://www.vzhurudolu.cz/prirucka/css-multicol-span)
+→ [vrdl.in/colsp](https://www.vzhurudolu.cz/prirucka/css-multicol-span)
 
 </div>
 

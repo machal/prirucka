@@ -17,7 +17,7 @@ Jednotka `fr` je součástí specifikace [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-jednotka-fr](https://www.vzhurudolu.cz/prirucka/css-jednotka-fr)
+→ [vrdl.in/fr](https://www.vzhurudolu.cz/prirucka/css-jednotka-fr)
 
 </div>
 
@@ -79,7 +79,7 @@ Další problém je v box modelu, způsobu počítání šířky. Jak vidíte u 
 
 CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
 
-Pokud vlastnost `box-sizing` neznáte, dostudujte si ji v mém textu na Vzhůru dolů. [vrdl.cz/p/css3-box-sizing](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
+Pokud vlastnost `box-sizing` neznáte, dostudujte si ji v mém textu na Vzhůru dolů. [vrdl.in/cssbs](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
 
 ## Podíl na zbytku {#podil}
 

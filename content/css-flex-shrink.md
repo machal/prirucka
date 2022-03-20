@@ -16,7 +16,7 @@ Jakým podílem se může položka flexboxu zmenšovat, pokud v rodičovském ko
 
 <div class="book-index" data-book-index="flex-shrink"></div>
 
-→ [vrdl.cz/p/css-flex-shrink](https://www.vzhurudolu.cz/prirucka/css-flex-shrink)
+→ [vrdl.in/cssfs](https://www.vzhurudolu.cz/prirucka/css-flex-shrink)
 
 </div>
 

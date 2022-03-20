@@ -17,7 +17,7 @@ Vlastnosti `grid-column` a `grid-row` jsou součástí specifikace [CSS gridu](c
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-row-column](https://www.vzhurudolu.cz/prirucka/css-grid-row-column)
+→ [vrdl.in/cssgrc](https://www.vzhurudolu.cz/prirucka/css-grid-row-column)
 
 </div>
 

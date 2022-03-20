@@ -18,7 +18,7 @@ Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-place-self](https://www.vzhurudolu.cz/prirucka/css-place-self)
+→ [vrdl.in/cssps](https://www.vzhurudolu.cz/prirucka/css-place-self)
 
 </div>
 

@@ -16,7 +16,7 @@ CSS masonry snad jednou bude součástí specifikace [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-subgrid](https://www.vzhurudolu.cz/prirucka/css-subgrid)
+→ [vrdl.in/subg](https://www.vzhurudolu.cz/prirucka/css-subgrid)
 
 </div>
 

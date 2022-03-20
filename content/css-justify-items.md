@@ -20,7 +20,7 @@ Můžete také použít zkratku [`place-items`](css-place-items.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-justify-items](https://www.vzhurudolu.cz/prirucka/css-justify-items)
+→ [vrdl.in/cssji](https://www.vzhurudolu.cz/prirucka/css-justify-items)
 
 </div>
 

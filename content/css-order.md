@@ -19,7 +19,7 @@ Používat ji můžete ve [flexboxu](css-flexbox.md) nebo [gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-order](https://www.vzhurudolu.cz/prirucka/css-order)
+→ [vrdl.in/ord](https://www.vzhurudolu.cz/prirucka/css-order)
 
 </div>
 

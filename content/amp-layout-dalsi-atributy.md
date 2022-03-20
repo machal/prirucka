@@ -31,7 +31,7 @@ Hodnoty atributu `sizes` zde prohlížeči přikazují:
 * Na všech ostatních šířkách okna (tedy do `319px`) vykresli obrázek do celé šířky okna (`100vw` je sto procent šířky okna).
 * Zápisem  `layout="responsive"` jsme pak řekli, že obrázek bude vždy usilovat o dodržení poměru stran (4 : 3 vychází z hodnot v atributech `width` a `height`) a přizpůsobení šířce rodičovského prvku.
 
-Více informací o atributu `sizes` ve starém dobrém HTML najdete na Vzhůru dolů. [vrdl.cz/p/srcset-sizes](https://www.vzhurudolu.cz/prirucka/srcset-sizes)
+Více informací o atributu `sizes` ve starém dobrém HTML najdete na Vzhůru dolů. [vrdl.in/srcsiz](https://www.vzhurudolu.cz/prirucka/srcset-sizes)
 
 Proč ale mluvíme o steroidech? `sizes` je totiž, na rozdíl od našeho milého běžného HTML, možné použít u jakéhokoliv elementu. S  jeho pomocí můžete definovat šířky na rozmezích designu klidně i pro `amp-carousel`. S následujícím atributem to ale bude ještě užitečnější.
 

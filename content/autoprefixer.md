@@ -108,7 +108,7 @@ Možností využití je celá řada, podívejme se na ně.
 
 ### Online {#pouziti-online}
 
-Pokud si chcete jen hrát nebo přidat pár prefixů, zajděte na online pískoviště.[autoprefixer.github.io](https://autoprefixer.github.io/)
+Pokud si chcete jen hrát nebo přidat pár prefixů, zajděte na online pískoviště. [autoprefixer.github.io](https://autoprefixer.github.io/)
 
 ### Příkazová řádka {#pouziti-cli}
 

@@ -18,7 +18,7 @@ Počítá se však s použitím pro [flexbox](css-flexbox.md), [grid](css-grid.m
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-align-content](https://www.vzhurudolu.cz/prirucka/css-align-content)
+→ [vrdl.in/cssac](https://www.vzhurudolu.cz/prirucka/css-align-content)
 
 </div>
 

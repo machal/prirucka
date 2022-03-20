@@ -18,7 +18,7 @@ Vlastnost `grid-template` je součástí [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-template](https://www.vzhurudolu.cz/prirucka/css-grid-template)
+→ [vrdl.in/cssgt](https://www.vzhurudolu.cz/prirucka/css-grid-template)
 
 </div>
 

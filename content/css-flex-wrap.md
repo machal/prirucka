@@ -18,7 +18,7 @@ Vlastnost `flex-wrap` aplikujeme na kontejner flexboxu, abychom definovali, zda 
 
 Poznámka: všechny texty příruček jsou k vidění naživo na Vzhůru dolů:
 
-→ [vrdl.cz/p/css-flex-wrap](https://www.vzhurudolu.cz/prirucka/css-flex-wrap)
+→ [vrdl.in/cssfw](https://www.vzhurudolu.cz/prirucka/css-flex-wrap)
 
 </div>
 
@@ -35,7 +35,7 @@ Kontejner flexboxu umožní položkám, aby se zalomily na další řádek.
 - `wrap-reverse`  
 Položky se mohou zalomit do více řádků a zároveň se pořadí řádků otočí.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-flex-wrap.jpg" width="1600" height="900" alt="CSS vlastnost flex-wrap">
 <figcaption markdown="1">
 Může se layout zalamovat? A pokud ano, jakým směrem?

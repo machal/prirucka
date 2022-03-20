@@ -15,17 +15,13 @@ Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobn
 <div class="book-index" data-book-index="Grid"></div>
 <div class="book-index" data-book-index="Flexbox"></div>
 
-Tyto dva systémy rozvržení tvoří jádro knížky, a proto se jim budeme věnovat s patřičnou péčí.
-
-Občas se setkávám s názorem, že [grid](css-grid.md) je novější a tak nahrazuje starší [flexbox](css-flexbox.md). Nenahrazuje. Potřebujete obojí. A obojí se naučte.
-
-Jsou mezi nimi však významné rozdíly. Podívejme se na ně.
+Tyto dva systémy rozvržení tvoří jádro knížky, a proto se jim budeme věnovat s patřičnou péčí. Občas se setkávám s názorem, že [grid](css-grid.md) je novější a tak nahrazuje starší [flexbox](css-flexbox.md). Nenahrazuje. Potřebujete obojí. A obojí se naučte. Jsou mezi nimi však významné rozdíly. Podívejme se na ně.
 
 ## Jednorozměrný flexbox, vícerozměrný grid
 
 Grid navrhli autoři pro dvourozměrné layouty – po svislé i vodorovné ose. Flexbox se více hodí na rozvržení jednosměrná, ať už svislá nebo vodorovná.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-vs-flexbox.jpg" width="1600" height="900" alt="Grid vs. flex">
 <figcaption markdown="1">
 Flexbox zná jen jeden směr. Víceřádkový layout už pak například nezarovnáte do sloupců. Grid je mřížka. Dvourozměrná mřížka.

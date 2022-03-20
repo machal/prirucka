@@ -255,7 +255,7 @@ Vysvětlení:
 2. V hodnotě `400px` je uložený breakpoint.
 3. V `max-width:100%` je hodnota pro šířky větší než breakpoint.
 
-Vidíte to? Žádný flexbox, žádný grid. A dokonce žádné dotazy v `@media`. Všechno postaru. Pracuje to dobře, jen je to trochu nepochopitelné až magické.
+Žádný flexbox, žádný grid. A dokonce žádné dotazy v `@media`. Všechno postaru. Pracuje to dobře, jen je to trochu nepochopitelné až magické.
 
 Detailní vysvětlení nechávám na samotném autorovi a jeho článku „The Fab Four technique to create Responsive Emails without Media Queries“.  
 [vrdl.in/fabfour](https://www.freecodecamp.org/news/the-fab-four-technique-to-create-responsive-emails-without-media-queries-baf11fdfa848/)

@@ -157,7 +157,7 @@ A teď skáčeme zpět k naší milé AMP Cache.
 Je dobré vědět, že cache se nespokojuje s dodanou AMP stránkou, ale dál ji upravuje.
 
 * Čistí HTML: Hledá neuzavřené HTML tagy pro zabránění XSS útoků, odstraňuje komentáře nebo bílé znaky uvnitř tagů.
-* Zpracovává obrázky: Zmenšuje příliš velké, odstraňuje z nich zbytečné hlavičky, konvertuje vše, co může, do úsporného formátu WebP ([vrdl.cz/p/webp](webp.md)), občas také snižuje kvalitu nebo generuje „`srcset` varianty“ ([vrdl.cz/p/srcset-sizes](srcset-sizes.md)).
+* Zpracovává obrázky: Zmenšuje příliš velké, odstraňuje z nich zbytečné hlavičky, konvertuje vše, co může, do úsporného formátu WebP ([vrdl.cz/p/webp](webp.md)), občas také snižuje kvalitu nebo generuje „`srcset` varianty“ ([vrdl.in/srcsiz](srcset-sizes.md)).
 * Vkládá „`prefetch` značky“, které urychlují stažení obsahu z cizích domén: Například `<link href="https://fonts.gstatic.com" rel="preconnect">` při detekci vložení webfontu z distribuční sítě Googlu.
 * Přednačítá komponenty AMP.
 * Minifikuje HTML a CSS.

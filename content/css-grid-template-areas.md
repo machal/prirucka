@@ -16,7 +16,7 @@ Vlastnost `grid-template-areas` je součástí [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-template-areas](https://www.vzhurudolu.cz/prirucka/css-grid-template-areas)
+→ [vrdl.in/cssgta](https://www.vzhurudolu.cz/prirucka/css-grid-template-areas)
 
 </div>
 

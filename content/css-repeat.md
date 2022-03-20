@@ -17,7 +17,7 @@ Funkce `repeat()` je součástí specifikace [CSS gridu](css-grid.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-repeat](https://www.vzhurudolu.cz/prirucka/css-repeat)
+→ [vrdl.in/cssrep](https://www.vzhurudolu.cz/prirucka/css-repeat)
 
 </div>
 

@@ -187,9 +187,7 @@ Zaměříme se na kód, kterým definujeme rozvržení:
 }
 ```
 
-Nyní se jej pokusíme zestručnit.
-
-[Vlastnosti `grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md) můžeme zapsat [zkratkou `grid-template`](css-grid-template.md), která definuje oba směry a odděluje je lomítkem. Jako vždy v CSS i zde uvádíme jako první svislý směr, tedy definice řádků layoutu:
+Nyní se jej pokusíme zestručnit. [Vlastnosti `grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md) můžeme zapsat [zkratkou `grid-template`](css-grid-template.md), která definuje oba směry a odděluje je lomítkem. Jako vždy v CSS i zde uvádíme jako první svislý směr, tedy definice řádků layoutu:
 
 ```css
 .container {

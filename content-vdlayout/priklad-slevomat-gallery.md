@@ -6,7 +6,7 @@ Oblasti jsme zde využili hlavně pro zjednodušení a zpřehlednění kódu. V 
 
 Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Podobnou jste určitě už viděli i jinde, nebo takovou dokonce sami kódovali.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-slevomat-live.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz">
 <figcaption markdown="1">
 *Co takhle si po tom všem kódování dopřát wellness?*
@@ -15,7 +15,7 @@ Zdrojem pro tuto ukázku je skutečná fotogalerie na Slevomat.cz. Podobnou jste
 
 Zadání je ale složitější – tentokrát budeme velmi intenzivně řešit responzivitu, různá zobrazení na různě velkých displejích.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-slevomat-responsive.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - responzivní pohledy">
 <figcaption markdown="1">
 Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wellness nebude, spíše galeje. (Že chybí čtvrtá fotka na tabletu? To není chyba, ale vlastnost.)
@@ -153,7 +153,7 @@ Tady musíme poslední náhled „vypnout“ pomocí `display:none`. Grafický n
 
 Zde ale musím něco dodat, protože se ve mně staví na zadní odborník na rychlost webu: „Vypnutí“ obrázku pomocí `display:none` nezakáže prohlížeči obrázek stáhnout.
 
-Kdybyste chtěli tento neduh vyřešit, možná si jako já vzpomenete na líné načtení obrázků. Pokud neviditelnému obrázku přidáme atribut a hodnotu `loading="lazy"`, prohlížeč jej v případě, že nebude viditelný, nestáhne. Více o této technice najdete na Vzhůru dolů. [vrdl.cz/p/lazy-loading-obrazku](https://www.vzhurudolu.cz/prirucka/lazy-loading-obrazku)
+Kdybyste chtěli tento neduh vyřešit, možná si jako já vzpomenete na líné načtení obrázků. Pokud neviditelnému obrázku přidáme atribut a hodnotu `loading="lazy"`, prohlížeč jej v případě, že nebude viditelný, nestáhne. Více o této technice najdete na Vzhůru dolů. [vrdl.in/llo](https://www.vzhurudolu.cz/prirucka/lazy-loading-obrazku)
 
 Samotný layout je tentokrát definovaný jako mřížka 2 × 2. První sloupec je dvoutřetinový (`2fr`), druhý zabírá zbylou třetinu prostoru (`1fr`).
 
@@ -176,7 +176,7 @@ Nyní k největšímu breakpointu. CSS kód vypadá takto:
 
 Máme zde mřížku 2 × 3, dělenou na pětiny. Umístění oblastí do buněk gridu je asi zřejmé. V případě potřeby si je porovnejte s rozvržením z obrázků.
 
-<figure>
+<figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-slevomat-firefox.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - Firefox">
 <figcaption markdown="1">
 *Vizualizace mřížky a jejích oblastí ve Firefoxu.*

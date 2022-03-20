@@ -18,7 +18,7 @@ Vlastnosti `column-width`, `column-count` a `columns` patří do specifikace ví
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-multicol-columns](https://www.vzhurudolu.cz/prirucka/css-multicol-columns)
+→ [vrdl.in/colc](https://www.vzhurudolu.cz/prirucka/css-multicol-columns)
 
 </div>
 

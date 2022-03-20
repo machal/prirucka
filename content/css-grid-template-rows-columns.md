@@ -17,7 +17,7 @@ Vlastnosti `grid-template-rows` a `grid-template-columns` jsou součástí [CSS 
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-grid-template-rows-columns](https://www.vzhurudolu.cz/prirucka/css-grid-template-rows-columns)
+→ [vrdl.in/cssgtrc](https://www.vzhurudolu.cz/prirucka/css-grid-template-rows-columns)
 
 </div>
 

@@ -18,7 +18,7 @@ Můžete ji využít v layoutech tvořených [gridem](css-grid.md) nebo [flexbox
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-align-self](https://www.vzhurudolu.cz/prirucka/css-align-self)
+→ [vrdl.in/cssas](https://www.vzhurudolu.cz/prirucka/css-align-self)
 
 </div>
 

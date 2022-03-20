@@ -20,7 +20,7 @@ Můžete také použít zkratku [`place-items`](css-place-items.md).
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-align-items](https://www.vzhurudolu.cz/prirucka/css-align-items)
+→ [vrdl.in/cssai](https://www.vzhurudolu.cz/prirucka/css-align-items)
 
 </div>
 

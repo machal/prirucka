@@ -57,7 +57,7 @@ Nic proti nim. Dlouho nám pomáhaly a tímto jim děkujeme. Je ale dobré věd�
 
 ## Vícesloupcový layout pomocí vlastností `column` 
 
-Primárně slouží k zalamování textů do sloupců na širších displejích. Prostě k „novinové“ sazbě. Může se ale hodit na širších obrazovkách pro dodržení optimální šířky řádku, na což si jistě vzpomínáte z kapitoly o základech typografie. Na webu se to často nepoužívá, ale hodit se může. [vrdl.cz/p/css-multicolumn](https://www.vzhurudolu.cz/prirucka/css-multicolumn)
+Primárně slouží k zalamování textů do sloupců na širších displejích. Prostě k „novinové“ sazbě. Může se ale hodit na širších obrazovkách pro dodržení optimální šířky řádku, na což si jistě vzpomínáte z kapitoly o základech typografie. Na webu se to často nepoužívá, ale hodit se může. [vrdl.in/multicol](https://www.vzhurudolu.cz/prirucka/css-multicolumn)
 
 Stručný průlet technickými možnostmi bychom tímto mohli uzavřít. Pojďme si ale ještě doporučit jednu netechnickou, designérskou metodu.
 

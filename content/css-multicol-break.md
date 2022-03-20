@@ -20,7 +20,7 @@ Vlastnosti `break-before`, `break-after` a `break-inside` patří do specifikace
 
 <div class="ebook-only" markdown="1">
 
-→ [vrdl.cz/p/css-multicol-break](https://www.vzhurudolu.cz/prirucka/css-multicol-break)
+→ [vrdl.in/colb](https://www.vzhurudolu.cz/prirucka/css-multicol-break)
 
 </div>
 

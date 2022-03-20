@@ -16,7 +16,7 @@ Jak moc může položka růst relativně k dalším položkám, pokud je k dispo
 
 <div class="book-index" data-book-index="flex-grow"></div>
 
-→ [vrdl.cz/p/css-flex-grow](https://www.vzhurudolu.cz/prirucka/css-flex-grow)
+→ [vrdl.in/cssfg](https://www.vzhurudolu.cz/prirucka/css-flex-grow)
 
 </div>
 
