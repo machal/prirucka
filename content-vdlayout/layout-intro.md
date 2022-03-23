@@ -136,7 +136,7 @@ Tento layout by se dal ještě dále vylepšovat, například o variantu pro men
 
 Zájemce nyní pošlu na zdrojové kódy ve službě CodePen, což ostatně budu dělat v knížce často.
 
-CodePen: [cdpn.io/e/eYvZqYd](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
+CodePen: [vrdl.in/aedjl](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
 ## Grid: příklad s kartou produktu
 
@@ -214,7 +214,7 @@ Nerad bych vám zatajil poslední část kódu. Sice nemá s moderními CSS layo
 
 I tady máte možnost projít si, vyzkoušet a případně upravit kompletní zdrojový kód.
 
-CodePen: [cdpn.io/e/YzZqmwj](https://codepen.io/machal/pen/YzZqmwj?editors=1100)
+CodePen: [vrdl.in/m71ec](https://codepen.io/machal/pen/YzZqmwj?editors=1100)
 
 ## Vícesloupcové rozvržení: příklad s odrážkovým seznamem
 
@@ -263,7 +263,7 @@ Výsledek ve Firefoxu. Je ale dobré vědět, že v různých šířkách okna b
 
 Ten vícesloupcový layout vypadá skvěle, viďte? Než jej ale pozvete na druhé rande, měli byste vědět, že se hodí opravdu hlavně jen pro textový obsah, takže na nějaké parády se všemi `div`y světa zde raději zapomeňte.
 
-CodePen: [cdpn.io/e/JjWXgNL](https://codepen.io/machal/pen/JjWXgNL?editors=1100)
+CodePen: [vrdl.in/wucrn](https://codepen.io/machal/pen/JjWXgNL?editors=1100)
 
 ## Poznámka k jednotkám
 

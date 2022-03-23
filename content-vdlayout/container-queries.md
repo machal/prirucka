@@ -122,7 +122,7 @@ Rodičovskému prvku (`.container`) nejprve nastavíme kontejner pro šířku (`
 
 Bezva! Zde už řešení netrpí problémy, které způsobovaly Media Queries. Při nastavování hodnoty bodu zlomu (`30em`) se můžeme soustředit na samotný obsah a nemusíme do toho započítávat další hodnoty ve stránce.
 
-CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
+CodePen: [vrdl.in/3lx5d](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
 Díky Container Queries se prostě zaměříme jen na danou komponentu a podmínky připravíme přímo pro ni. Ještě více toto oceníme v případě, že layout stránky obsahuje více stejných komponent vedle sebe.
 
@@ -164,7 +164,7 @@ Pomocí [`display:grid`](css-display.md), vlastnosti [`grid-template-columns`](c
 
 Možná to vypadá trochu složitě, ale zatím layout vysvětlovat nebudu. Pokud jste v e-booku, pro detailní informace klikněte na název vlastnosti nebo si počkejte do další kapitoly, kde to vše trpělivě vysvětlíme.
 
-CodePen: [cdpn.io/e/qBRPvqw](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
+CodePen: [vrdl.in/3lx5d](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
 ## Podpora v prohlížečích a náhradní řešení
 

@@ -39,7 +39,7 @@ Zadání je následující:
 
 Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a vrhněte se na CodePen se zadáním.
 
-CodePen: [cdpn.io/e/qBZzMRW](https://codepen.io/machal/pen/qBZzMRW?editors=1100)
+CodePen: [vrdl.in/hvuif](https://codepen.io/machal/pen/qBZzMRW?editors=1100)
 
 </div>
 <!-- .colored-box -->
@@ -147,7 +147,7 @@ Celý kód flexboxového řešení je zde:
 }
 ```
 
-CodePen: [cdpn.io/e/VwbpjKK](https://codepen.io/machal/pen/VwbpjKK?editors=1100)
+CodePen: [vrdl.in/atpbj](https://codepen.io/machal/pen/VwbpjKK?editors=1100)
 
 Pojďme si ale položit otázku, zda by i zde nebylo vhodnější vyřešit úkol pomocí mřížky. Přijímám sázky. Umožní nám grid více sexy řešení?
 
@@ -226,7 +226,7 @@ Kompletní rozvržení bychom tedy gridem zapsali takto:
 
 Není tohle opravdu sexy?
 
-CodePen: [cdpn.io/e/poPebVB](https://codepen.io/machal/pen/poPebVB?editors=1100)
+CodePen: [vrdl.in/9g56h](https://codepen.io/machal/pen/poPebVB?editors=1100)
 
 Došli jste ke stejnému, anebo jinému řešení? V čem je to vaše lepší? Klidně se mi ozvěte.
 

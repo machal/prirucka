@@ -46,7 +46,7 @@ HTML vypadá zhruba takto:
 
 Píše se vám už v hlavě kód?  Vlastně to nemusí být nic složitého, takže vám zde rovnou poskytnu výchozí CodePen se zadáním.
 
-CodePen: [cdpn.io/e/eYWWrJY](https://codepen.io/machal/pen/eYWWrJY?editors=1100)
+CodePen: [vrdl.in/78cnp](https://codepen.io/machal/pen/eYWWrJY?editors=1100)
 
 </div>
 <!-- .colored-box -->
@@ -79,7 +79,7 @@ Chybí mi tady ještě jedna věc, a to zákaz zalomení uvnitř prvku `<figure>
 
 Také [vlastnost `break-inside`](css-multicol-break.md) si můžete prostudovat v referenční příručce na konci knížky. Celé řešení si pak můžete projít a otestovat v CodePenu.
 
-CodePen: [cdpn.io/e/ZEKKozg](https://codepen.io/machal/pen/ZEKKozg?editors=1100)
+CodePen: [vrdl.in/pvyf7](https://codepen.io/machal/pen/ZEKKozg?editors=1100)
 
 Zamysleme se však také nad nevýhodami volby vícesloupcového layoutu pro kód zadání.
 
@@ -125,7 +125,7 @@ Udělat pěknou mřížku, bez vynechaných položek, tedy například 2 × 6, 3
 
 Ještě odkaz na CodePen s řešením využívajícím grid a můžeme to uzavřít.
 
-CodePen: [cdpn.io/e/LYyydoZ](https://codepen.io/machal/pen/LYyydoZ?editors=1100)
+CodePen: [vrdl.in/b2o1u](https://codepen.io/machal/pen/LYyydoZ?editors=1100)
 
 ## Co jsme se tady naučili?
 

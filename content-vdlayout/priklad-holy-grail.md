@@ -33,7 +33,7 @@ A pak… Skvěle se na něm ukazují silné stránky šablonování vlastnostmi 
 
 Pokud byste v tuto chvíli chtěli začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si forkněte – a vzhůru do kódování.
 
-CodePen: [cdpn.io/e/ZEePyrM](https://codepen.io/machal/pen/ZEePyrM?editors=1100)
+CodePen: [vrdl.in/97oj5](https://codepen.io/machal/pen/ZEePyrM?editors=1100)
 
 </div>
 <!-- .colored-box -->
@@ -271,6 +271,6 @@ Nyní umístíme prvky do mřížky:
 }  
 ```
 
-CodePen: [cdpn.io/e/ppVzrg](https://codepen.io/machal/pen/ppVzrg?editors=1100)
+CodePen: [vrdl.in/dljik](https://codepen.io/machal/pen/ppVzrg?editors=1100)
 
 A to je vše. Já už se těším na další příklad. Co vy?

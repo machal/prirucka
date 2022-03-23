@@ -32,7 +32,7 @@ Toto je výchozí HTML:
 
 Také CodePen se zadáním už čeká na váš fork a následné procvičování mozkových závitů. Jen pozor, použijte jen vlastnosti ze specifikací nového layoutu – gridu, flexboxu a zarovnávání boxů.
 
-CodePen: [cdpn.io/e/xxdOJOX](https://codepen.io/machal/pen/xxdOJOX?editors=1100)
+CodePen: [vrdl.in/8mr7c](https://codepen.io/machal/pen/xxdOJOX?editors=1100)
 
 </div>
 <!-- .colored-box -->
@@ -112,7 +112,7 @@ Tento typ zarovnávání se ve flexboxu dělá starým dobrým `margin:auto`:
 }
 ```
 
-CodePen: [cdpn.io/e/abWZjVE](https://codepen.io/machal/pen/abWZjVE?editors=1100)
+CodePen: [vrdl.in/rfbc0](https://codepen.io/machal/pen/abWZjVE?editors=1100)
 
 Můžeme s tím být spokojení, protože naše řešení funguje. Ale víte, co vám řeknu? Já s tím spokojený nejsem. Hlavně proto, že znám lepší řešení pomocí gridu, které není tak komplikované.
 
@@ -132,7 +132,7 @@ O jeho „čistotě“ se ovšem můžeme přít. Zkušenější mohou již `jus
 
 Pro méně zkušené může být nepříjemný fakt, že vlastnost neslouží k zarovnání položek, ale prostoru mezi nimi. Tohle vás může někdy doběhnout.
 
-CodePen: [cdpn.io/e/poWLQRX](https://codepen.io/machal/pen/poWLQRX?editors=1100)
+CodePen: [vrdl.in/2wyrl](https://codepen.io/machal/pen/poWLQRX?editors=1100)
 
 Teď ale už pojďme na ten elegantní grid.
 
@@ -161,7 +161,7 @@ Já ale znám ještě elegantnější možnost:
 
 [Vlastnost `place-items`](css-place-items.md) je totiž zkratkou pro nám již známé `align-items` a `justify-items`. Poskytuje tedy možnost zarovnávat v obou směrech, což je pro naši potřebu úplně dokonalé.
 
-CodePen: [cdpn.io/e/wvGLEvJ](https://codepen.io/machal/pen/wvGLEvJ?editors=1100)
+CodePen: [vrdl.in/x0wkl](https://codepen.io/machal/pen/wvGLEvJ?editors=1100)
 
 Vlastnost `place-items` má u layoutů tvořených gridem samozřejmě podporu ve všech třech aktuálních prohlížečích.
 
@@ -204,6 +204,6 @@ body {
 
 Obsah se bude centrovat na výšku i šířku. V CodePenu si pak můžete vyzkoušet přímo v prohlížeči editovat obsah prvku `.box`. I při výrazném bobtnání obsahu bude prvek stále uprostřed.
 
-CodePen: [cdpn.io/e/VwbjBPB](https://codepen.io/machal/pen/VwbjBPB?editors=1100)
+CodePen: [vrdl.in/d2yht](https://codepen.io/machal/pen/VwbjBPB?editors=1100)
 
 Na tomto příkladě jsme si mohli vyzkoušet základy zarovnávání pomocí vlastností modulu CSS Box Alignment. Jak jste viděli, k dispozici jsou ve flexboxu i gridu, ale ten druhý k nim má řekněme plný přístup a pro zarovnávání tedy bývá efektivnější použít právě mřížku.

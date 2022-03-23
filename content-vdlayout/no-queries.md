@@ -116,7 +116,7 @@ Zkusme to místo věčného komplikování spíše zjednodušit. Řešení využ
 
 Obě strany rozvržení mají stejnou šířku. V hodnotě `300px` je uložený bod zlomu tohoto layoutu, respektive jeho polovina – v případě, že obě strany mohou využít alespoň 300 pixelů, elementy se vykreslí vedle sebe.
 
-CodePen: [cdpn.io/e/WNRjyoE](https://codepen.io/machal/pen/WNRjyoE?editors=1100)
+CodePen: [vrdl.in/y37l6](https://codepen.io/machal/pen/WNRjyoE?editors=1100)
 
 Jak už víte, díky vládě obsahu nad layoutem ve flexboxu se obrázek a text dělí o prostor různými způsoby, nikoliv přesně na polovinu. O to se stará automatika flexboxu.
 
@@ -152,7 +152,7 @@ Jádro triku je v zápisu `repeat(auto-fit, minmax(300px, 1fr))`, proto právě 
 - Kouzlo přichází, když namísto počtu uvedeme do prvního parametru `auto-fit`, který zajistí roztahování a smršťování již existujících buněk layoutu.
 - Přidáme ještě minimální a maximální velikost buňky, `minmax(300px, 1fr)`, a máme hotovo.
 
-CodePen: [cdpn.io/e/GRrMexj](https://codepen.io/machal/pen/GRrMexj?editors=1100)
+CodePen: [vrdl.in/mk6of](https://codepen.io/machal/pen/GRrMexj?editors=1100)
 
 Když si s mým příkladem pohrajete pomocí zvětšování a zmenšování okna, zjistíte, že ze všech dosud uváděných ukázek se chová nejhůř. Ostatně, uvidíte to také na obrázku.
 
@@ -190,7 +190,7 @@ Mřížka vrací úder. V pravidelných layoutech se cítí jako doma.
 
 Tohle by asi nebylo marné používat v praxi, viďte? A pozor, během natáčení nebylo zraněno žádné Media Query!
 
-CodePen: [cdpn.io/e/zYNaLjB](https://codepen.io/machal/pen/zYNaLjB?editors=1100)
+CodePen: [vrdl.in/576kh](https://codepen.io/machal/pen/zYNaLjB?editors=1100)
 
 ## Řešení pomocí vícesloupcového layoutu
 
@@ -220,7 +220,7 @@ Vícesloupcový layout. Na první pohled ujde, ale doma to raději nezkoušejte.
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/ExZmRbM](https://codepen.io/machal/pen/ExZmRbM?editors=1100)
+CodePen: [vrdl.in/vt1b9](https://codepen.io/machal/pen/ExZmRbM?editors=1100)
 
 Pro takzvaný No Queries Layout s pomocí vlastnosti `columns` zde máme ještě jednu demonstrační ukázku.
 
@@ -268,7 +268,7 @@ Mimochodem, funkce `calc()` je při práci na CSS layoutech velmi užitečná. V
 
 Dlužím vám ještě demo. Asi nejlepší je to následující, ze kterého mám také výše uvedenou ukázku kódu.
 
-CodePen: [cdpn.io/e/ZQgEoZ](https://codepen.io/thierry/pen/ZQgEoZ?editors=1100)
+CodePen: [vrdl.in/aht8z](https://codepen.io/thierry/pen/ZQgEoZ?editors=1100)
 
 Zde bychom odbočku k layoutům bez Media (a Container) Queries mohli ukončit. Než jsem tuto podkapitolu začal psát, přemýšlel jsem, zda se do toho vůbec pouštět.
 

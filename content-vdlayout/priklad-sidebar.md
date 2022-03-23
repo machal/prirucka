@@ -35,7 +35,7 @@ HTML jsme navrhli takto:
 
 <div class="colored-box" markdown="1">
 
-Chcete si to zkusit sami? Pak neváhejte a využijte připravený prázdný CodePen: [cdpn.io/e/VwpgEQg](https://codepen.io/machal/pen/VwpgEQg?editors=1100)
+Chcete si to zkusit sami? Pak neváhejte a využijte připravený prázdný CodePen: [vrdl.in/gkuom](https://codepen.io/machal/pen/VwpgEQg?editors=1100)
 
 </div>
 <!-- .colored-box -->
@@ -61,7 +61,7 @@ CSS kód je následující:
 
 Pomocí [vlastnosti `display`](css-display.md) nastavíme flexový layout. To stačí k tomu, aby se vnitřní prvky naskládaly vedle sebe. Pro definici hranic šířky prvku `.sidebar` pak použijeme klasiku – vlastnosti `min-width` a `max-width`. Prohlédnout si to můžete na výsledném CodePenu.
 
-CodePen: [cdpn.io/e/wvddxWd](https://codepen.io/machal/pen/wvddxWd?editors=1100)
+CodePen: [vrdl.in/xnfvb](https://codepen.io/machal/pen/wvddxWd?editors=1100)
 
 ## Varianta s gridem
 
@@ -82,4 +82,4 @@ Využíváme zde drobné parádičky – [funkce `minmax()`](css-minmax.md), kte
 
 [Jednotka `fr`](css-jednotka-fr.md) pak definuje rozdělení zbývající plochy, a jelikož je zde použita jen jednou, druhý sloupeček si prostě vezme celou zbývající plochu. Ještě se mrkněte na výsledný CodePen a tím to můžeme uzavřít. Došli jste ke stejnému řešení?
 
-CodePen: [cdpn.io/e/MWyMqwX](https://codepen.io/machal/pen/MWyMqwX?editors=1100)
+CodePen: [vrdl.in/2pyos](https://codepen.io/machal/pen/MWyMqwX?editors=1100)

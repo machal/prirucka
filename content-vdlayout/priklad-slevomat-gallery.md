@@ -26,7 +26,7 @@ Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wel
 
 Chcete si to zkusit sami? Forkněte CodePen a vzhůru do toho.
 
-CodePen: [cdpn.io/e/bGqmQEx](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
+CodePen: [vrdl.in/p75na](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
 
 </div>
 <!-- .colored-box -->
@@ -185,4 +185,4 @@ Máme zde mřížku 2 × 3, dělenou na pětiny. Umístění oblastí do buně
 
 A máme hotovo! Srovnejte si svá díla s mým CodePenem.
 
-CodePen: [cdpn.io/e/bGqzwMy](https://codepen.io/machal/pen/bGqzwMy?editors=1100)
+CodePen: [vrdl.in/7z6ky](https://codepen.io/machal/pen/bGqzwMy?editors=1100)

@@ -47,7 +47,7 @@ Všimněte si parametru `contenteditable`. Tímto způsobem dovolujeme, aby bylo
 
 Opět je zde možnost teď zavřít knížku a zkusit si zadání nakódovat. Sledujte předpřipravený CodePen.
 
-CodePen: [cdpn.io/e/poeGQya](https://codepen.io/machal/pen/poeGQya?editors=1100)
+CodePen: [vrdl.in/bipms](https://codepen.io/machal/pen/poeGQya?editors=1100)
 
 </div>
 <!-- .colored-box -->
@@ -67,7 +67,7 @@ V šabloně (vlastnosti [začínající `grid-template`](grid-template-rows-colu
 
 Prostřední buňka připadající na prvek `.box-body` má pokaždé výšku `20rem`. Zde zejména proto, že hromad lívanců máme vždy několik vedle sebe a nechtěli bychom, aby některé byly vyšší než jiné.
 
-CodePen: [cdpn.io/e/abJamrr](https://codepen.io/machal/pen/abJamrr?editors=1100)
+CodePen: [vrdl.in/po18w](https://codepen.io/machal/pen/abJamrr?editors=1100)
 
 Ještě doplním, že v „nastavovacím“ kódu, který je v CodePenech schovaný pod komentářem `/* ETC: */`, abych vám ulehčil práci a umožnil soustředit se na psaní kódu, který se týká layoutu, jsou tentokrát poměrně důležité deklarace:
 

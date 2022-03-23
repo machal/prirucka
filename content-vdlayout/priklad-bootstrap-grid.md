@@ -30,7 +30,7 @@ Například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o
 
 Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definujeme sloupec a pomocí třídy `.col-` s číslem podíl na výchozí dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Bootstrapu a šup – layout máte hotový.
 
-CodePen: [cdpn.io/e/zYwBYjR](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
+CodePen: [vrdl.in/d8l4m](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
 
 V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v aktuální verzi 5 – tvořen pomocí flexboxu. Dříve to bylo pomocí `display:inline-block` a ještě dříve díky vlastnosti pro obtékání – `float`.
 
@@ -125,7 +125,7 @@ Shrňme si to v kompletním CSS kódu:
 }
 ```
 
-CodePen: [cdpn.io/e/MWpzqdv](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
+CodePen: [vrdl.in/93bir](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-bootstrap-4-8.jpg" width="1600" height="900" alt="4/8 rozvržení jako v Bootstrapu">
@@ -138,6 +138,6 @@ Určitě si umíte představit i možnou náhradu dalších variant používán�
 
 Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden CodePen s dalšími ukázkami.
 
-CodePen: [cdpn.io/e/dJxBGz](https://codepen.io/machal/pen/dJxBGz?editors=1100)
+CodePen: [vrdl.in/e2f5h](https://codepen.io/machal/pen/dJxBGz?editors=1100)
 
 Zpráva, která by se vám na konci tohoto příkladu měla zapsat do paměti, zní: Pokud hledáte jednoduchou možnost tvorby layoutu v mřížce jako nativně podporovanou alternativu k Bootstrapu a podobným frameworkům, zvažte CSS grid.

@@ -33,7 +33,7 @@ Možná i začátečníci už poznali, co se zde děje:
 - Podmínka `(max-width:40em)` říká, že vložený kód se má aplikovat jen pro šířky okna do `40em`, což je zde obvykle 640 pixelů (40 × 16, při výchozí velikosti písma v dokumentu `16px`, není-li nastaveno jinak).
 - V podmínce nadpisu nastavujeme jinou velikost písma `font-size:1.5em`. Pokud jste si to už nespočítali, půjde o 24 pixelů (16 × 1,5).
 
-CodePen: [cdpn.io/e/Bpajbz](https://codepen.io/machal/pen/Bpajbz)
+CodePen: [vrdl.in/p1mrt](https://codepen.io/machal/pen/Bpajbz)
 
 ## Různé typy dotazů
 
