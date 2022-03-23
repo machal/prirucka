@@ -71,7 +71,7 @@ body {
 
 Výsledkem bude stránka orámovaná zeleným rámečkem a v ní odstavec s nápisem „Box“ vysázený červeným textem. Pokud bychom nespecifikovali barvu pro `.box`, podědil by od `body` barvu, ale už ne rámeček, protože vlastnost `border` se nedědí.
 
-CodePen: [cdpn.io/e/BaaYKKW](https://codepen.io/machal/pen/BaaYKKW?editors=1100)
+CodePen: [vrdl.in/z43so](https://codepen.io/machal/pen/BaaYKKW?editors=1100)
 
 ## Hodnota inherit: Vynucení dědičnosti {#inherit}
 
@@ -170,7 +170,7 @@ Ano, je to tak – díky použití prohlížečového CSS by mohla být hodnota 
 
 Podívejte se ještě na výsledný CodePen.
 
-CodePen: [cdpn.io/e/qBBPXPW](https://codepen.io/machal/pen/qBBPXPW?editors=1100)
+CodePen: [vrdl.in/pk1su](https://codepen.io/machal/pen/qBBPXPW?editors=1100)
 
 ## Podpora v prohlížečích
 

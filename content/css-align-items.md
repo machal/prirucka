@@ -47,7 +47,7 @@ Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět e
 
 Použitá hodnota `start` umístí položky na začátek vymezeného prostoru.
 
-CodePen: [cdpn.io/e/qBZRWog?editors=1100](https://codepen.io/machal/pen/qBZRWog?editors=1100)
+CodePen: [vrdl.in/fm9sl](https://codepen.io/machal/pen/qBZRWog?editors=1100)
 
 ## Možné hodnoty
 

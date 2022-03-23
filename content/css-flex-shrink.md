@@ -83,7 +83,7 @@ Podívejme se na různé možnosti nastavení `flex-shrink`, které dostává pr
 
 Je to trochu jasnější? Snad ano. Živou ukázku hledejte v následujícím odkazu.
 
-CodePen: [cdpn.io/e/GRNJNVg](https://codepen.io/machal/pen/GRNJNVg?editors=0000)
+CodePen: [vrdl.in/uqz1m](https://codepen.io/machal/pen/GRNJNVg?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 

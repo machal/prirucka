@@ -61,7 +61,7 @@ Vysvětleme výše uvedený kód:
 - Tečka (`.`) uvádí prázdnou buňku, kde se nic zobrazovat nemá.
 - Elementy `.first` a `.second` je pak potřeba ručně umístit do vyhrazených oblastí mřížky pomocí vlastnosti `grid-area`.
 
-CodePen: [cdpn.io/e/bXeWjb](https://codepen.io/machal/pen/bXeWjb?editors=1100)
+CodePen: [vrdl.in/othcx](https://codepen.io/machal/pen/bXeWjb?editors=1100)
 
 Následuje pár poznámek k vlastnosti `grid-template-areas`, které mě zaujaly při čtení specifikace.
 
@@ -83,7 +83,7 @@ Tento kód vytvoří stejnou mřížku jako ve výše uvedeném příkladu:
 }
 ```
 
-CodePen: [cdpn.io/e/ymJXaX](https://codepen.io/machal/pen/ymJXaX?editors=1100)
+CodePen: [vrdl.in/u9z0j](https://codepen.io/machal/pen/ymJXaX?editors=1100)
 
 ## Implicitně vytvořené oblasti a linky {#implicitne}
 
@@ -136,7 +136,7 @@ Oblast definovaná jen pomocí linek. Takhle to ukazuje Firefox v DevTools.
 
 Následuje už jen ukázka v CodePenu.
 
-CodePen: [cdpn.io/e/qBjrLwe](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
+CodePen: [vrdl.in/s84n0](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
 
 ## Výhody definování oblastí mřížky {#vyhody}
 
@@ -185,7 +185,7 @@ V tomto příkladu máme tyto responzivní deklarace:
 }
 ```
 
-CodePen: [cdpn.io/e/jgrmoq](https://codepen.io/machal/pen/jgrmoq?editors=1100)
+CodePen: [vrdl.in/sdlrj](https://codepen.io/machal/pen/jgrmoq?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 

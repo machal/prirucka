@@ -95,7 +95,7 @@ Nepokouším se zde ale rozbít samotný layout, nýbrž prvek `<h2>`, který ob
 
 Když si patřičně upravíte šířku okna tak, aby druhý nadpis připadl na konec sloupce, prohlížeč by mohl usoudit, že někde v oblasti kolem `<br>` může prvek zalamovat.
 
-CodePen: [cdpn.io/e/jOMaMdq](https://codepen.io/machal/pen/jOMaMdq?editors=1000)
+CodePen: [vrdl.in/zwcia](https://codepen.io/machal/pen/jOMaMdq?editors=1000)
 
 V ukázce byste měli vidět tři možnosti, jak zalamování zakázat:
 

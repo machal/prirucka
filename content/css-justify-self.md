@@ -86,13 +86,13 @@ Následuje několik užitečných vysvětlujících odrážek:
 - Poslední položka má nastaveno `justify-self:end`, takže by se měla „scvrknout“ na přirozenou šířku podle obsahu a zarovnat ke konci prostoru buňky, což je zároveň pravá hrana kontejneru.
 - Vyhrává ovšem deklarace `margin-right:auto`, která buňku zarovná na začátek prostoru buňky, a funguje tedy stejně jako `justify-self:start`.
 
-CodePen: [cdpn.io/e/QWNvKQJ](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
+CodePen: [vrdl.in/zmso0](https://codepen.io/machal/pen/QWNvKQJ?editors=1100)
 
 ## Příklad: proč to ve flexboxu nefunguje
 
 V dalším CodePenu je vidět, že `justify-self` ve flexboxu opravu nefunguje. Pokouším se tam stylovat poslední položku pomocí `justify-self:end`. A nic.
 
-CodePen: [cdpn.io/e/MWJaVyZ](https://codepen.io/machal/pen/MWJaVyZ?editors=1100)
+CodePen: [vrdl.in/eo9cq](https://codepen.io/machal/pen/MWJaVyZ?editors=1100)
 
 Zde je potřeba vysvětlit, proč tomu tak je.
 

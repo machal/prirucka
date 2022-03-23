@@ -95,7 +95,7 @@ Jednotka fr a podíl na zbytku plochy nevyužité jinými jednotkami.
 
 Pomocí `grid-template-columns: 80px 5em 2fr 1fr` definujeme čtyřsloupcovou mřížku. První sloupec má fixní šířku `80px`. Druhý má šířku `5em`, takže jeho šířka bude záležet na velikosti písma rodičovského prvku. Pokud nám zbude nějaký prostor, prohlížeč jej vydělí třemi (`2fr` + `1fr`) a rozpočítá na dvě buňky definované podílovou jednotkou.
 
-CodePen: [cdpn.io/e/XWrjZRV](https://codepen.io/machal/pen/XWrjZRV?editors=1100)
+CodePen: [vrdl.in/jhfwd](https://codepen.io/machal/pen/XWrjZRV?editors=1100)
 
 ## Nulová a desetinná čísla. Hodnoty, se kterými je legrace {#hodnoty}
 

@@ -98,7 +98,7 @@ Rozdělil jsem plochu, kterou vymezuje kontejner, na tři rovnoměrné části. 
 
 Tuto specialitu zmiňuji hlavně proto, abychom se dokázali vyhnout problémům, které to přináší. Obecně ale velmi doporučuji definovat každou položku gridu do samostatného HTML prvku. Už jen proto, aby se vám na něj lépe cílilo pomocí CSS selektorů.
 
-CodePen: [cdpn.io/e/ZEQGbgy](https://codepen.io/machal/pen/ZEQGbgy?editors=1100)
+CodePen: [vrdl.in/z90q8](https://codepen.io/machal/pen/ZEQGbgy?editors=1100)
 
 Kontejner mřížky je tedy rodičovský prvek, který v HTML definuje, že tady se bude odehrávat formátování CSS gridem. Položka mřížky je každý jeho přímý potomek, včetně těch anonymních.
 
@@ -124,7 +124,7 @@ Mimochodem, s původně uvedeným CSS a HTML by to takhle udělat nešlo. Musel 
 
 [Funkci `minmax()`](css-minmax.md) možná už znáte. Dělá přesně to, na co byste ji odhadovali – v našem případě zakazuje zmenšení první položky pod 500 pixelů a druhé a třetí pod 250 pixelů.
 
-CodePen: [cdpn.io/e/qBbjjoj](https://codepen.io/machal/pen/qBbjjoj?editors=1100)
+CodePen: [vrdl.in/6mif9](https://codepen.io/machal/pen/qBbjjoj?editors=1100)
 
 ## Mřížka (grid) {#mrizka}
 
@@ -226,7 +226,7 @@ Je to patrné v následujícím příkladu, kde jsme ubrali poslední položku. 
 
 Je dobré si uvědomit, že právě proto nejde buňku mřížky nijak zacílit pomocí CSS. Je to jen jakási interní stavební jednotka mřížky.
 
-CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
+CodePen: [vrdl.in/cuz72](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 
 Abychom mohli buňku ovlivnit z CSS, musíme z ní udělat oblast.
 
@@ -251,7 +251,7 @@ Tento zápis přesně říká o umístění oblasti následující:
 * Svisle ji umisť mezi druhou a čtvrtou linku mřížky `grid-column: 2 / 4`, čili na místo druhého a třetího sloupce.
 * Vodorovně ji umisť mezi druhou a třetí linku mřížky `grid-row: 2 / 3`, čili do druhého řádku.
 
-CodePen: [cdpn.io/e/NWxqNYB](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
+CodePen: [vrdl.in/cuz72](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 
 ## Mezery mezi buňkami (gap, gutter) {#gutter}
 
@@ -282,6 +282,6 @@ Jak je vidět z obrázku, z linek mřížky se staly obdélníky. Nikoliv úseč
 
 Ano, vlastnost `gap` určuje šířku linek. Pokud ji nedefinujeme, jde o neviditelné úsečky, tak jako tomu bylo v předchozích příkladech.
 
-CodePen: [cdpn.io/e/vYLONWz](https://codepen.io/machal/pen/vYLONWz?editors=1100)
+CodePen: [vrdl.in/m87br](https://codepen.io/machal/pen/vYLONWz?editors=1100)
 
 A to je vše, co jsem vám chtěl sdělit o stavebních prvcích v CSS gridu.

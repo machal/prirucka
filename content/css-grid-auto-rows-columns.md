@@ -105,7 +105,7 @@ Vlastnost grid-auto-rows v akci. Dává rozměry položkám, se kterými nepoč�
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/PMGJpa](https://codepen.io/machal/pen/PMGJpa?editors=1100)
+CodePen: [vrdl.in/08zwo](https://codepen.io/machal/pen/PMGJpa?editors=1100)
 
 ## Příklad: Umístění položky mimo explicitní grid {#priklad-umisteni}
 
@@ -150,7 +150,7 @@ Rozdíl mezi nedefinovanou mřížkou (grid-auto-columns:auto) a definovanou (gr
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/ymazjy](https://codepen.io/machal/pen/ymazjy?editors=1100)
+CodePen: [vrdl.in/fcpvj](https://codepen.io/machal/pen/ymazjy?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 

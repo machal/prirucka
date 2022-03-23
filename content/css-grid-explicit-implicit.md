@@ -80,7 +80,7 @@ Mřížce tím nepřikazujeme, aby byla rovnou dvouřádková. Říkáme zhruba 
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/zYrGoqQ](https://codepen.io/machal/pen/zYrGoqQ?editors=1100)
+CodePen: [vrdl.in/w9ua1](https://codepen.io/machal/pen/zYrGoqQ?editors=1100)
 
 ## Příklad s přidáním položky na neznámou pozici
 
@@ -142,6 +142,6 @@ Výchozí výška i šířka implicitních buněk je na hodnotě `auto`, takže 
 
 Všechny nově přidané sloupečky by pak měly stejnou šířku.
 
-CodePen: [cdpn.io/e/PoZqbqm](https://codepen.io/machal/pen/PoZqbqm?editors=1100)
+CodePen: [vrdl.in/1nyf0](https://codepen.io/machal/pen/PoZqbqm?editors=1100)
 
 Hotovo! Snad se vám díky těmto dvěma příkladům povedlo proniknout do konceptu implicitní a explicitní mřížky, který je pro chápání CSS gridu velmi důležitý.

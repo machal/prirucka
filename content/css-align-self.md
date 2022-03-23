@@ -81,7 +81,7 @@ Vysvětleme:
 - Poslední položka má nastaveno `align-self:start`, takže by se měla „scvrknout“ na přirozenou výšku podle obsahu a zarovnat k horní hraně prostoru buňky.
 - Vyhrává ovšem deklarace `margin-top:auto`, která buňku zarovná na začátek prostoru buňky, a funguje tedy stejně jako `align-self:end`.
 
-CodePen: [cdpn.io/e/zYqwKer](https://codepen.io/machal/pen/zYqwKer?editors=1100)
+CodePen: [vrdl.in/bw6hx](https://codepen.io/machal/pen/zYqwKer?editors=1100)
 
 ## Příklad: align-self ve flexboxu
 
@@ -115,7 +115,7 @@ Nyní přichází vysvětlení:
 - Na výšku jsou položky ovlivněné výchozí hodnotou (`align-self:stretch`).
 - Třetí položka `.item--3` je pak díky `align-self:flex-end` zarovnaná ke spodní hraně kontejneru. Jsme ve flexboxu, takže hodnoty jako `end` by zde nezabraly.
 
-CodePen: [cdpn.io/e/eYZWdoN](https://codepen.io/machal/pen/eYZWdoN?editors=1100)
+CodePen: [vrdl.in/pf4xm](https://codepen.io/machal/pen/eYZWdoN?editors=1100)
 
 ## Možné hodnoty
 

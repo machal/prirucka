@@ -92,7 +92,7 @@ Vysvětlíme:
 - `grid-template-rows: none` – buňky gridu nemají ve směru řádků nijak nastavené rozměry.
 - `grid-template-columns: 100px 100px` – buňky mají v explicitním gridu nastavenou šířku `100px` a tvoří dva sloupce.
 
-CodePen: [cdpn.io/e/YmpNYR](https://codepen.io/machal/pen/YmpNYR?editors=1100)
+CodePen: [vrdl.in/beuxn](https://codepen.io/machal/pen/YmpNYR?editors=1100)
 
 Podobné to bude u opačného zápisu:
 

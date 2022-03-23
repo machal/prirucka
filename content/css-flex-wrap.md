@@ -76,7 +76,7 @@ V obou demech máme jednoduché HTML…
 
 V online ukázce si můžete interaktivně vyzkoušet jednotlivé hodnoty vlastnosti `flex-wrap`:
 
-CodePen: [cdpn.io/e/OJRaYXJ](https://codepen.io/machal/pen/OJRaYXJ?editors=0000)
+CodePen: [vrdl.in/cuqnb](https://codepen.io/machal/pen/OJRaYXJ?editors=0000)
 
 <div class="web-only" markdown="1">
 
@@ -86,7 +86,7 @@ Připravil jsem ještě jedno demo, ve kterém jsou položky flexboxu obsahově 
 
 I po nastavení hodnoty na `wrap` nebo `wrap-reverse` prohlížeč uvažuje, zda vůbec zalamovat potřebuje. Je to asi jako když vypisujete text do řádku.
 
-CodePen: [cdpn.io/e/WNoNrbB](https://codepen.io/machal/pen/WNoNrbB?editors=0000)
+CodePen: [vrdl.in/ngtf2](https://codepen.io/machal/pen/WNoNrbB?editors=0000)
 
 <!-- .web-only -->
 </div>

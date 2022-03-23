@@ -256,7 +256,7 @@ Zbývá doladit nějaké ty mezery mezi buňkami mřížky. V gridu máme pro ty
 }
 ```
 
-CodePen: [cdpn.io/e/gZQoeL](https://codepen.io/machal/pen/gZQoeL?editors=1100)
+CodePen: [vrdl.in/gzwr7](https://codepen.io/machal/pen/gZQoeL?editors=1100)
 
 Po představení všech vlastností a rychlém příkladu bych se rád pozastavil u teoretických konceptů CSS gridu.
 

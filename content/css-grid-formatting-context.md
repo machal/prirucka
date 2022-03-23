@@ -38,7 +38,7 @@ Výsledek se různí podle formátovacího kontextu:
 
 Zájemci o více informací nechť prozkoumají následující živou ukázku.
 
-CodePen: [cdpn.io/e/GRobVpz](https://codepen.io/machal/pen/GRobVpz?editors=1100)
+CodePen: [vrdl.in/349vz](https://codepen.io/machal/pen/GRobVpz?editors=1100)
 
 ## Floaty nechte plavat
 
@@ -63,7 +63,7 @@ I tohle je naprosto logické. Pseudoelementy pro první řádek a první znak d�
 
 Pokud byste chtěli vidět tohle všechno v akci, neváhejte se podívat na můj CodePen, ve kterém jsem se grid pokusil rozbít všemi zde uvedenými způsoby. A byl jsem neúspěšný.
 
-CodePen: [cdpn.io/e/GRoJmgN](https://codepen.io/machal/pen/GRoJmgN?editors=1100)
+CodePen: [vrdl.in/xdqjb](https://codepen.io/machal/pen/GRoJmgN?editors=1100)
 
 ## A co pozicování?
 
@@ -76,6 +76,6 @@ Vlastnost position funguje dobře, děkuji za optání.
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/qBbdmrd](https://codepen.io/machal/pen/qBbdmrd?editors=1100)
+CodePen: [vrdl.in/ji5pg](https://codepen.io/machal/pen/qBbdmrd?editors=1100)
 
 To je myslím vše, co jste o formátovacím kontextu gridu potřebovali vědět.

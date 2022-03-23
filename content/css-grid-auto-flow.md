@@ -73,7 +73,7 @@ Layout je definovaný jako mřížka o třech sloupcích a dvou řádcích:
 
 Výchozí směr vykreslení je `grid-auto-flow:row`, tedy po řádcích.
 
-CodePen: [cdpn.io/e/KKVjvRm](https://codepen.io/machal/pen/KKVjvRm?editors=1100)
+CodePen: [vrdl.in/hiyjr](https://codepen.io/machal/pen/KKVjvRm?editors=1100)
 
 Můžeme jej ale změnit do svislého (sloupcového) směru:
 
@@ -90,7 +90,7 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/voXWGv](https://codepen.io/machal/pen/voXWGv?editors=1100)
+CodePen: [vrdl.in/i8mbo](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
 V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
 
@@ -140,7 +140,7 @@ Zahuštěné vykreslení (hodnota dense)  prostě dává přednost hustotě pře
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/VoKroo](https://codepen.io/machal/pen/VoKroo?editors=1100)
+CodePen: [vrdl.in/2caxb](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
 ## Přístupnost: pozor na změnu pořadí {#pristupnost}
 

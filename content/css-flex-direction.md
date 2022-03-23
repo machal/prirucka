@@ -42,7 +42,7 @@ Skládání položek do sloupce, ale v opačném směru, tedy zdola nahoru.
 
 V živé ukázce je možné interaktivě zkoušet všechny varianty hodnot vlastnosti.
 
-CodePen: [cdpn.io/e/NWREVGG](https://codepen.io/machal/pen/NWREVGG?editors=0000)
+CodePen: [vrdl.in/29or1](https://codepen.io/machal/pen/NWREVGG?editors=0000)
 
 ## Zkratka flex-flow {#flex-flow}
 

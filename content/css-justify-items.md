@@ -74,7 +74,7 @@ Zarovnání pomocí justify-items:end v Chrome při zapnutém grid overlay.
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/zYqWgMN](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
+CodePen: [vrdl.in/5ljcr](https://codepen.io/machal/pen/zYqWgMN?editors=1100)
 
 ## Trocha teorie: nastavení justify-self. A pozor, ve flexboxu vlastnost nefunguje
 
@@ -86,7 +86,7 @@ U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou m
 
 V další ukázce je vidět, že ve flexboxovém layoutu je deklarace `justify-items:end` ignorována.
 
-CodePen: [cdpn.io/e/eYZgOwL](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
+CodePen: [vrdl.in/8sn40](https://codepen.io/machal/pen/eYZgOwL?editors=1100)
 
 ## Možné hodnoty zarovnání
 
@@ -142,7 +142,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 
 V době psaní funguje zarovnávání na účaří jen ve Firefoxu – můžete si to v něm zkusit na následující ukázce.
 
-CodePen: [cdpn.io/e/ZEpGQqm](https://codepen.io/mkfeuhrer/pen/ZEpGQqm?editors=1100)
+CodePen: [vrdl.in/1ge5c](https://codepen.io/mkfeuhrer/pen/ZEpGQqm?editors=1100)
 
 ### Pro přetečení
 
@@ -160,7 +160,7 @@ V následující živé ukázce je možné vyzkoušet několik hodnot:
 - `left` (obdoba `start`, tedy zarovnání na začátek vymezeného prostoru),
 - `center` (zarovnání doprostřed vymezeného prostoru).
 
-CodePen: [cdpn.io/e/OJjyqpK](https://codepen.io/machal/pen/OJjyqpK?editors=1100)
+CodePen: [vrdl.in/dq0bu](https://codepen.io/machal/pen/OJjyqpK?editors=1100)
 
 ## Podpora v prohlížečích
 

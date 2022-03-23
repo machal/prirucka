@@ -76,7 +76,7 @@ U poslední možnosti, nastavení na `2`, se pozastavme. Je zde vidět, že `fle
 
 Hodnota `2` by měla efekt, pokud bychom v demu změnili nastavení růstu ostatních položek, například na `flex-grow:1`. V takovém případě by se stala poněkud obézní a zabrala by ze zbylého prostoru dvojnásobek oproti jejím dvěma sestrám.
 
-CodePen: [cdpn.io/e/XWNbNQE](https://codepen.io/machal/pen/XWNbNQE?editors=0000)
+CodePen: [vrdl.in/zkcjw](https://codepen.io/machal/pen/XWNbNQE?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 

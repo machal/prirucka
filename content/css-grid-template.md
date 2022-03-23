@@ -46,7 +46,7 @@ To odpovídá zápisu:
 
 V živé ukázce si můžete vyzkoušet změnit některé hodnoty.
 
-CodePen: [cdpn.io/e/YmWxzw](https://codepen.io/machal/pen/YmWxzw?editors=1100)
+CodePen: [vrdl.in/g1fsn](https://codepen.io/machal/pen/YmWxzw?editors=1100)
 
 ## Sloupečky, řádky a pojmenované stopy {#cols-rows-stopy}
 
@@ -76,7 +76,7 @@ To odpovídá zápisu:
 
 Opět je k dispozici živá ukázka.
 
-CodePen: [cdpn.io/e/dxXzpG](https://codepen.io/machal/pen/dxXzpG?editors=1100)
+CodePen: [vrdl.in/d81p2](https://codepen.io/machal/pen/dxXzpG?editors=1100)
 
 ## Sloupečky, řádky a pojmenované oblasti {#cols-rows-oblasti}
 
@@ -104,7 +104,7 @@ Je to už docela složité. Nejprve se definují řádky – jejich jména a vý
 }
 ```
 
-CodePen: [cdpn.io/e/JgKyxK](https://codepen.io/machal/pen/JgKyxK?editors=1100)
+CodePen: [vrdl.in/4lx3u](https://codepen.io/machal/pen/JgKyxK?editors=1100)
 
 ## Co je dobré vědět? {#dobre-vedet}
 

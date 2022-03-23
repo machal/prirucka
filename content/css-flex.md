@@ -100,7 +100,7 @@ Je také dobré vědět, že se flexboxové položky nikdy nezmenší pod minim�
 
 Vyzkoušet si to opět můžete na našem interaktivním CodePenu.
 
-CodePen: [cdpn.io/e/vYyKaEp](https://codepen.io/machal/pen/vYyKaEp?editors=0000)
+CodePen: [vrdl.in/wrntf](https://codepen.io/machal/pen/vYyKaEp?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 

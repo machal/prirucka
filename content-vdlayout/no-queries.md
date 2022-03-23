@@ -224,7 +224,7 @@ CodePen: [vrdl.in/vt1b9](https://codepen.io/machal/pen/ExZmRbM?editors=1100)
 
 Pro takzvaný No Queries Layout s pomocí vlastnosti `columns` zde máme ještě jednu demonstrační ukázku.
 
-Responzivní obrázková galerie je opět založena pouze na definici šířky sloupce s pomocí `column-width`. Zde je řešení obohacené také o `break-inside:avoid`, což zabrání zalomení sloupečku uvnitř položky galerie. [cdpn.io/e/rraAgj](https://codepen.io/machal/pen/rraAgj?editors=1100)
+Responzivní obrázková galerie je opět založena pouze na definici šířky sloupce s pomocí `column-width`. Zde je řešení obohacené také o `break-inside:avoid`, což zabrání zalomení sloupečku uvnitř položky galerie. [vrdl.in/hwpmx](https://codepen.io/machal/pen/rraAgj?editors=1100)
 
 Řekl bych, že pro obrázkovou galerii je bezdotazový layout pomocí vlastnosti `column` vhodnější. V případě mediálního objektu byly až příliš patrné nevýhody jako nutnost stejné šířky sloupečků.
 

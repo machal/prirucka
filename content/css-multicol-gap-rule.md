@@ -111,7 +111,7 @@ Slibuji si od toho, že vám to pomůže pochopit výše uvedené. I když v tom
 
 </div>
 
-CodePen: [cdpn.io/e/eYdGEKR](https://codepen.io/machal/pen/eYdGEKR?editors=1100)
+CodePen: [vrdl.in/aervw](https://codepen.io/machal/pen/eYdGEKR?editors=1100)
 
 1. První deklarace (`gap:auto; column-rule:none;`) nastavuje mezeru i oddělovač na výchozí hodnoty, tzn. mezera má šířku `1em` a oddělovač se nevykresluje. Všimněte si použití vlastnosti `gap` namísto `column-gap`. V moderních prohlížečích je to prostě synonymum.
 2. Druhá deklarace (`gap:3em; column-rule:dotted lightgrey;`) nastaví trojnásobnou mezeru a tečkovaný oddělovač. Jeho šířku jsem byl líný definovat, takže se použije `medium`.

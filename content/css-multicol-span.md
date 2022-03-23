@@ -53,7 +53,7 @@ Máme zde opět náš starý známý kontejner, tentokrát jen mírně upravený
 
 [Vlastnost `columns`](css-multicol-columns.md) jste už měli příležitost poznat, takže můžete vědět, že prohlížeč vytvoří maximálně tři sloupce a každému poskytne kolem `15em` prostoru.
 
-CodePen: [cdpn.io/e/jOMaYVg](https://codepen.io/machal/pen/jOMaYVg?editors=1000)
+CodePen: [vrdl.in/e4lwr](https://codepen.io/machal/pen/jOMaYVg?editors=1000)
 
 Při prohlížení ukázky naživo je možné v přepínači nahoře volit mezi dvěma hodnotami pro nadpisy `<h2>`:
 

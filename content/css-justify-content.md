@@ -72,7 +72,7 @@ Budiž prostor mezi položkami! Vlastnost justify-content v nastavení space-aro
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/qBZmvEy](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
+CodePen: [vrdl.in/2z1yj](https://codepen.io/machal/pen/qBZmvEy?editors=1100)
 
 Deklarace `justify-content:space-around` zajistí rozdělení volného prostoru na výšku tak, aby mezi položkami a kontejnerem byla poloviční mezera, než je mezi jednotlivými položkami.
 
@@ -95,7 +95,7 @@ Nastavení space-around, tentokrát ve flexboxu.
 
 Vzhledem k tomu, že jsme na položky neaplikovali vlastnost `flex` nebo `flex-grow`, dělení prostoru pomocí `justify-content` zůstává v platnosti.
 
-CodePen: [cdpn.io/e/mdPmoVZ](https://codepen.io/machal/pen/mdPmoVZ?editors=1100)
+CodePen: [vrdl.in/vxj62](https://codepen.io/machal/pen/mdPmoVZ?editors=1100)
 
 ## Možné hodnoty {#hodnoty}
 

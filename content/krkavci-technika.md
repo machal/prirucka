@@ -104,6 +104,6 @@ To by mohlo pro pochopení základního principu The Raven Technique stačit. Je
 
 Ale zkušenější z vás to jistě ocení a je fajn, že jsme si udělali výlet do pokročilejších vlastností CSS.
 
-CodePen: [cdpn.io/e/QWpqJjJ](https://codepen.io/machal/pen/QWpqJjJ?editors=1100)
+CodePen: [vrdl.in/spela](https://codepen.io/machal/pen/QWpqJjJ?editors=1100)
 
 Zájemci o více informací ať se mrknou na celý článek „The Raven Technique: One Step Closer to Container Queries“. [vrdl.in/raven](https://css-tricks.com/the-raven-technique-one-step-closer-to-container-queries/)

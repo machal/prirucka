@@ -196,7 +196,7 @@ HTML je jednoduché. O to přísnější máme požadavky na design:
 
 <div class="colored-box" markdown="1">
 
-Zkuste si to nakódovat sami, stačí forknout následující CodePen: [cdpn.io/e/BaRYjya](https://cdpn.io/e/BaRYjya).
+Zkuste si to nakódovat sami, stačí forknout následující CodePen: [vrdl.in/f18lo](https://cdpn.io/e/BaRYjya).
 
 </div>
 <!-- .colored-box -->
@@ -269,7 +269,7 @@ Na obrázku je vidět, k čemu jsme se dopracovali:
 
 Výsledný příklad si utíkejte vyzkoušet naživo:
 
-CodePen: [cdpn.io/e/jOVVeVL](https://cdpn.io/e/jOVVeVL)
+CodePen: [vrdl.in/lcew2](https://codepen.io/machal/pen/jOVVeVL)
 
 ## Základní pojmy: flexboxový kontejner, položka flexboxu, hlavní a příčná osa {#pojmy}
 

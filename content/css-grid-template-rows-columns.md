@@ -54,7 +54,7 @@ Vysvětleme:
 
 <p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows"></p>
 
-CodePen: [cdpn.io/e/jgWrmz](https://codepen.io/machal/pen/jgWrmz?editors=1100)
+CodePen: [vrdl.in/xl4yh](https://codepen.io/machal/pen/jgWrmz?editors=1100)
 
 Poznámka k hodnotě `auto` v definici řádků: Grid sjednocuje výšky položek v každém z nich, takže když změníme výšku jedné položky, její kolegyně se přizpůsobí.
 
@@ -69,7 +69,7 @@ Poznámka k hodnotě `auto` v definici řádků: Grid sjednocuje výšky polože
 
 <p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-2.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - vyšší buňka"></p>
 
-CodePen: [cdpn.io/e/mNVEZB](https://codepen.io/machal/pen/mNVEZB?editors=1100)
+CodePen: [vrdl.in/b18et](https://codepen.io/machal/pen/mNVEZB?editors=1100)
 
 ### Co když je položek více, než definuje grid? (Implicitní vs. explicitní mřížka) {#explicitni-implicitni}
 
@@ -105,7 +105,7 @@ Pátá položka zde pak nemá definovanou výšku a musí použít nějakou výc
 
 <p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-3.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - přidání páté buňky"></p>
 
-CodePen: [cdpn.io/e/qeZqbV](https://codepen.io/machal/pen/qeZqbV?editors=1100)
+CodePen: [vrdl.in/xhecq](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
 Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns`, je možné určit vlastnostmi [`grid-auto-columns` a `grid-auto-rows`](css-grid-auto-rows-columns.md), které definují implicitní grid.
 
@@ -157,7 +157,7 @@ Zápis může vypadat například takto:
 }
 ```
 
-CodePen: [cdpn.io/e/VgKaMB](https://codepen.io/machal/pen/VgKaMB?editors=1100)
+CodePen: [vrdl.in/5vas0](https://codepen.io/machal/pen/VgKaMB?editors=1100)
 
 `1fr` je v chování velice podobné číslu `1`, které používáte ve [vlastnosti `flex`](css-flex.md) u flexboxu.
 
@@ -183,7 +183,7 @@ V ukázce je tedy první položka gridu umístěná vodorovně na pozici mezi `f
 
 <p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols-tracks.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows - definování linek"></p>
 
-CodePen: [cdpn.io/e/wVGgaW](https://codepen.io/machal/pen/wVGgaW?editors=1100)
+CodePen: [vrdl.in/3sknv](https://codepen.io/machal/pen/wVGgaW?editors=1100)
 
 ### Opakování {#opakovani}
 

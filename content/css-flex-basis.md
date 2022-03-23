@@ -103,7 +103,7 @@ U nastavení `flex-basis:0` se použije nejmenší možný obsahový rozměr, co
 
 Jakmile nastavíme rozměr (`flex-basis:20%`), chová se vlastnost stejně jako `width`.
 
-CodePen: [cdpn.io/e/vYyNBLr](https://codepen.io/machal/pen/vYyNBLr?editors=0000)
+CodePen: [vrdl.in/uo0z3](https://codepen.io/machal/pen/vYyNBLr?editors=0000)
 
 ### Ukázka s použitím width {#ukazka-s-width}
 
@@ -135,7 +135,7 @@ Rozeberme si, proč a jak se to celé změnilo:
 - `0` – nejmenší obsahová šířka, přebíjí `width`.
 - `20%` – konkrétní rozměr, opět přebíjí `width`.
 
-CodePen: [cdpn.io/e/poNjzwg](https://codepen.io/machal/pen/poNjzwg?editors=0000)
+CodePen: [vrdl.in/z4pq8](https://codepen.io/machal/pen/poNjzwg?editors=0000)
 
 ## Vlastnost flex-basis a width/height {#flexbasis-width}
 
@@ -145,19 +145,19 @@ Z již uvedeného leccos vyplývá, ale myslím, že nebude od věci si přehled
 
 Platí, že při použití obou metod nastavení výšky nebo šířky dostane hodnota ve `flex-basis` přednost, bez ohledu na pořadí uvedení. Zkuste si to případně v ukázce.
 
-CodePen: [cdpn.io/e/vRZWqa](https://codepen.io/machal/pen/vRZWqa?editors=1100)
+CodePen: [vrdl.in/hqy9c](https://codepen.io/machal/pen/vRZWqa?editors=1100)
 
 ### 2) Vlastnost flex-basis je obousměrná {#flexbasis-width-2}
 
 Lze ji použít jak pro výšku, tak pro šířku. Vždy podle směru layoutu a ten určuje nejčastěji vlastnost [`flex-direction`](css-flex-direction.md).
 
-CodePen: [cdpn.io/e/bvLOMv](https://codepen.io/machal/pen/bvLOMv?editors=1100)
+CodePen: [vrdl.in/6zfg0](https://codepen.io/machal/pen/bvLOMv?editors=1100)
 
 ### 3) Vlastnost flex-basis se nezmenší pod minimální velikost obsahu {#flexbasis-width-3}
 
 Na rozdíl od `width` a `height` nemůže být `flex-basis` menší než minimální šířka obsahu, což je například u textu šířka nejdelšího slova.
 
-CodePen: [cdpn.io/e/OvgYZm](https://codepen.io/machal/pen/OvgYZm?editors=1100)
+CodePen: [vrdl.in/6zfg0](https://codepen.io/machal/pen/OvgYZm?editors=1100)
 
 ### 4) Minimální a maximální velikost platí {#flexbasis-width-4}
 

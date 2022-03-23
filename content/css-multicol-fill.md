@@ -58,7 +58,7 @@ Toto demo už znáte z jiných vlastností vícesloupcového rozvržení. Máme 
 
 V demu můžete přepínat mezi nastavením vlastnosti `column-fill` na hodnoty `auto` nebo `balance`. Poslední hodnotu, `balance-all`, jsem nezahrnoval, protože ji prohlížeče zatím nepodporují a vzhledem k jejímu využití pro stránkovaná média by ani demonstrace v CodePenu nedávala smysl.
 
-CodePen: [cdpn.io/e/PoGEadq](https://codepen.io/machal/pen/PoGEadq?editors=1000)
+CodePen: [vrdl.in/u74ap](https://codepen.io/machal/pen/PoGEadq?editors=1000)
 
 Pokud byste si hráli s vlastnostmi `height` u kontejneru, s obsahem prvku a šířkou okna, dojdete k témuž co já – v každém prohlížeči to funguje trochu jinak.
 

@@ -62,7 +62,7 @@ Pomocí zápisu align-content:space-between se volný prostor hezky distribuuje 
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/ZEWKPvr](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
+CodePen: [vrdl.in/2bhd9](https://codepen.io/machal/pen/ZEWKPvr?editors=1100)
 
 Můžete si vyzkoušet ještě jedno demo. Je totožné, jen tentokrát pro flexbox a má jinou hodnotu `align-content`.
 
@@ -85,7 +85,7 @@ Zápis align-content:space-around rozdělí volný prostor na polovinu a přidá
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/zYqwbpL](https://codepen.io/machal/pen/zYqwbpL?editors=1100)
+CodePen: [vrdl.in/ngjor](https://codepen.io/machal/pen/zYqwbpL?editors=1100)
 
 Víte co? Raději se podívejte na všechny možné hodnoty, i tuhle mezi nimi najdete.
 

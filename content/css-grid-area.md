@@ -69,7 +69,7 @@ Je to zápis ekvivalentní k tomuto:
 }
 ```
 
-CodePen: [cdpn.io/e/bXeWjb](https://codepen.io/machal/pen/bXeWjb?editors=1100)
+CodePen: [vrdl.in/othcx](https://codepen.io/machal/pen/bXeWjb?editors=1100)
 
 ## Další možné zápisy {#dalsi-zapisy}
 

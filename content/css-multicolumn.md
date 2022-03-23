@@ -62,7 +62,7 @@ Prohlížeč by pak měl vnitřní prvky kontejneru rozdělit do sloupců o ší
 
 Od této šířky sloupce v layoutu pořád přibývají. Viděli jste to na obrázku výše.
 
-CodePen: [cdpn.io/e/rNMzwaN](https://codepen.io/machal/pen/rNMzwaN?editors=1100)
+CodePen: [vrdl.in/dnmp8](https://codepen.io/machal/pen/rNMzwaN?editors=1100)
 
 Když si v CodePenu poklikáte na tlačítka s přiblížením a oddálením (0,5 × ), uvidíte, jak to funguje v praxi.
 

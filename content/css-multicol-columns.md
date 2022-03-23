@@ -109,7 +109,7 @@ columns: auto auto;
 
 U připraveného dema pro vlastnost `columns` už víte, že obstarává obě možnosti – definici počtu sloupců anebo definici jejich šířky.
 
-CodePen: [cdpn.io/e/mdrMYBE](https://codepen.io/machal/pen/mdrMYBE?editors=1100)
+CodePen: [vrdl.in/mlvu3](https://codepen.io/machal/pen/mdrMYBE?editors=1100)
 
 Pokud si příklad vyzkoušíte naživo, uvidíte, že můžete přepínat mezi několika možnostmi zobrazení. Pro případ, že nezkoušíte a jen čtete, zde uvádím všechny:
 

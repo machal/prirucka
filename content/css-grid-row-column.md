@@ -91,7 +91,7 @@ Vlastnosti grid-column a grid-row ve Firefoxu.
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
+CodePen: [vrdl.in/muo5r](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
 ### Jména linek {#jmena}
 
@@ -119,7 +119,7 @@ Umísťujeme pak elegantně a o fous čitelněji:
 
 Výsledek však pochopitelně bude stejný.
 
-CodePen: [cdpn.io/e/GVWrOB](https://codepen.io/machal/pen/GVWrOB?editors=1100)
+CodePen: [vrdl.in/xis4h](https://codepen.io/machal/pen/GVWrOB?editors=1100)
 
 ### Rozsah {#span}
 
@@ -143,7 +143,7 @@ Vysvětlíme:
 - Zápis `span 1` u `grid-column` znamená „zabírá jeden sloupec“. Tady je to zbytečné, fungovalo by to i bez tého hodnoty.
 - Zápis `span 2` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
 
-CodePen: [cdpn.io/e/LwWxWy](https://codepen.io/machal/pen/LwWxWy?editors=1100)
+CodePen: [vrdl.in/iks84](https://codepen.io/machal/pen/LwWxWy?editors=1100)
 
 ### Jedno číslo {#jedno}
 
@@ -157,7 +157,7 @@ Občas je možné vidět zápis `grid-row` a `grid-column` jen s jedním čísle
 
 Funguje to tak, jak asi očekáváte. Prohlížeče v tomto případě automaticky umísťují prvky DOMu na jednu buňku mřížky (`span 1`), takže jim stačí uvést pozici začátku vykreslování.
 
-CodePen: [cdpn.io/e/Qeppxd](https://codepen.io/machal/pen/Qeppxd?editors=1100)
+CodePen: [vrdl.in/jso2c](https://codepen.io/machal/pen/Qeppxd?editors=1100)
 
 ### Záporná čísla {#zaporna}
 
@@ -172,7 +172,7 @@ Záporná čísla ve vlastnostech `grid-row` a `grid-column` počítají umíst�
 
 Kódem `grid-row: -1 / -3` říkáme: Chci umístění od první linky mřížky zezdola až po třetí linku mřížky v tomtéž směru.
 
-CodePen: [cdpn.io/e/VoppWg](https://codepen.io/machal/pen/VoppWg?editors=1100)
+CodePen: [vrdl.in/wpdxy](https://codepen.io/machal/pen/VoppWg?editors=1100)
 
 ### Automatické umístění {#auto}
 
@@ -189,7 +189,7 @@ Vezměme stejný příklad:
 
 Prvek bude dále umístěn do druhého sloupce, ale v tomto případě do prvního řádku. Algoritmus automatického umísťování zde vždy začíná a dosud nevykresloval žádné jiné prvky mřížky, které by mohly pozici posunout.
 
-CodePen: [cdpn.io/e/YmZZVB](https://codepen.io/machal/pen/YmZZVB?editors=1100)
+CodePen: [vrdl.in/muo5r](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
 ## Podpora
 

@@ -47,7 +47,7 @@ Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro 
 
 Podívejme se na jednoduchý layout, u kterého si ukážeme, jak přesně Autoprefixer zařídí fungování gridu v MSIE.
 
-CodePen: [cdpn.io/e/PopyerN](https://codepen.io/machal/pen/PopyerN?editors=1100).
+CodePen: [vrdl.in/4rbvs](https://codepen.io/machal/pen/PopyerN?editors=1100).
 
 Jde o rozvržení definované následujícím způsobem:
 
@@ -136,7 +136,7 @@ MSIE totiž neumí ani žádnou z vlastností `*-area`. Autoprefixer tak automat
 
 Pokud vám nesedí počty sloupců u vlastnosti `-ms-grid-column`, pak raději zopakuji, že Autoprefixer uměle přidává sloupečky, abychom mohli používat mezery `-gap`.
 
-Demo jsme snad rozebrali do posledního kamínku. Tady je ještě jednou v celé kráse: [cdpn.io/e/PopyerN](https://codepen.io/machal/pen/PopyerN).
+Demo jsme snad rozebrali do posledního kamínku. Tady je ještě jednou v celé kráse: [vrdl.in/4rbvs](https://codepen.io/machal/pen/PopyerN).
 
 ## Co Autoprefixer umí? {#autoprefixer-vlastnosti}
 
