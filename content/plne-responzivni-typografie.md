@@ -66,9 +66,9 @@ A jak jsme vypočetli tu magickou hodnotu?
 
 ```
 heading-height-percent = 
-  (100vw - 2em)  /* 1. Layout .heading  */
-  / 16 * 9       /* 2. Poměr stran .heading  */
-  / 100;         /* 3. Získáme jedno procento  */
+  (100vw - 2em)  /* 1. Layout .heading */
+  / 16 * 9       /* 2. Poměr stran .heading */
+  / 100;         /* 3. Získáme jedno procento */
 ```  
 
 Popíšu to ještě v textu:

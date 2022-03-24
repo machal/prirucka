@@ -199,4 +199,4 @@ Pokud byste se do historie chtěli ponořit více, doporučím vám tyto dva čl
 - „The Story of CSS grid, from Its Creators“ od Aarona Gustafsona. [vrdl.in/vdghist](https://alistapart.com/article/the-story-of-css-grid-from-its-creators/)
 - „A Look Back at the History of CSS“ od Jaye Hoffmanna. [vrdl.in/csshist](https://css-tricks.com/look-back-history-css/)
 
-My se od historie specifikací CSS layoutů přesuneme k dnešním možnostem tvorby rozvržení. Ano, myslím ty, které nejsou předmětem této knížky. Ty, nichž se už dnes slušní frontendisti raději nebaví.
+My se od historie specifikací CSS layoutů přesuneme k dnešním možnostem tvorby rozvržení. Ano, myslím ty, které nejsou předmětem této knížky. Ty, o nichž se už dnes slušní frontendisti raději nebaví.

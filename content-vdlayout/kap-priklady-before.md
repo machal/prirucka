@@ -13,7 +13,7 @@
 
 Všechny cesty vedou do Říma. A všechny texty této knížky vedou do této kapitoly.
 
-V předchozích částech jsme už sice pár konkrétních příkladů řešili, ale obecně vzato jsme spíše pokládali teoretické základy. Ve čtvrté kapitole je použijeme hned na několika příkladech, které jsem se snažil vytáhnout z praxe.
+V předchozích částech jsme už sice pár konkrétních příkladů řešili, ale obecně vzato jsme spíše pokládali teoretické základy. Ve třetí kapitole je použijeme hned na několika příkladech, které jsem se snažil vytáhnout z praxe.
 
-Následující kapitoly už patří referenčním příručkám jednotlivých vlastností, kam z této kapitoly odkazuji pro případ, že byste potřebovali znát širší kontext.
+Ty následující kapitoly už budou patřit referenčním příručkám jednotlivých vlastností, kam z této kapitoly odkazuji pro případ, že byste potřebovali znát širší kontext.
 

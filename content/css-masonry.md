@@ -163,7 +163,7 @@ Doufejme, že o náhradních řešeních nebudeme muset dlouho přemýšlet a po
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, velmi užitečné „Feature Queries“, dotazy na podporu vlastností, a tedy klíčové slovo `@supports`, popisuji pro zájemce více [v poslední „přílohové“ kapitole](css-supports.md).
+Mimochodem, velmi užitečné „Feature Queries“, dotazy na podporu vlastností, a tedy klíčové slovo `@supports`, popisuji pro zájemce více [v poslední, přílohové kapitole](css-supports.md).
 
 </div>
 

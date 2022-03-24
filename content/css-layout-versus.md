@@ -78,7 +78,7 @@ Následovaly frameworky jako 960 grid System, YUI grids, YAML… a v roce 2011 p
 
 Bootstrap je skvělý. Kromě základních typografických principů a mřížky obsahuje také hotové komponenty pro tvorbu uživatelských rozhraní a dnes už i prostředky pro systematickou tvorbu komponent vlastních, například v podobě „utilit“.
 
-Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a často ani frontendového kodéra, představuje Bootstrap (a z něj vycházející frameworky jako Foundation nebo Semantic UI) hotový zázrak. Všechno, co potřebují, napíší v HTML a framework se nějak postará o zbytek.
+Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a často ani frontendového kodéra, představuje Bootstrap (a z něj vycházející frameworky jako Foundation nebo Semantic UI) hotový zázrak. Všechno, co potřebují, napíšou v HTML a framework se nějak postará o zbytek.
 
 <figure>
 <img src="../dist/images/original/vdlayout/bootstrap.jpg" width="1600" height="900" alt="…">
@@ -89,7 +89,7 @@ Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a 
 
 Zároveň zde ale vznikl problém s nadužíváním těchto nástrojů. Jako konzultant rychlosti webu se vývojářů často ptám, proč na webech používají Bootstrap. „Pro mřížku,“ zní častá odpověď.
 
-Pro mřížku tak řada webů stahuje zhruba 25 kilobajtů zbytečného kódu. To nemusí vypadat jako vysoké číslo, ale uvědomme si, že jde o pětadvacet „kilo“ stylů, které nemohou být ze své povahy asynchronní a bez kterých prohlížeč nemůže vykreslit ani řádku z chystané stránky.
+Pro mřížku tak řada webů stahuje zhruba 25 kilobajtů zbytečného kódu. To nemusí vypadat jako vysoké číslo, ale uvědomme si, že jde o pětadvacet „kilo“ stylů, které nemohou být ze své povahy asynchronní a bez kterých nemůže prohlížeč vykreslit ani řádku z chystané stránky.
 
 Když se tento laxní přístup k rychlosti nakombinuje s dalšími „ne-optimalizacemi“, na vykreslení stránky uživatel čeká… a čeká… a čeká.
 
@@ -106,4 +106,4 @@ Mistr Yoda: „Ne, není to jiné. Jiné je to v tvé hlavě. Musíš se teď od
 Luke Skywalker: „Dobře, já to teda zkusím.“  
 Mistr Yoda: „Ne, nezkusíš. Uděláš to, nebo ne. Už žádné zkusím!“
 
-V dalších řádcích budu trochu jako mistr Yoda. Ale hodný mistr Yoda.
+V dalších kapitolách budu trochu jako mistr Yoda. Ale hodný mistr Yoda.

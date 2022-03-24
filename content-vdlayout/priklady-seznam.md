@@ -1,6 +1,6 @@
 # Seznam ukázek
 
-Jaké příklady spolu ve čtvrté kapitole nakódujeme?
+Jaké příklady spolu ve třetí kapitole nakódujeme?
 
 <div class="inner-grid" markdown="1">
 

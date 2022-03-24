@@ -50,7 +50,7 @@ HTML bude vypadat takto:
 </div>
 ```
 
-Obrázky, které v této galerii použijeme musí být v poměru stran 2 : 1. V jiném případě tento layout nebude fungovat, respektive budete si jej muset upravit.
+Obrázky, které v této galerii použijeme, musí být v poměru stran 2 : 1. V jiném případě tento layout nebude fungovat, respektive budete si jej muset upravit.
 
 ## Oblasti mřížky
 

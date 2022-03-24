@@ -32,7 +32,7 @@ Způsobů jak elastickou typografii vytvořit [je více](https://www.smashingmag
 
 ```css
 .box__heading { 
-  font-size: 10bh; /* 10 % z výšky boxu  */
+  font-size: 10bh; /* 10 % z výšky boxu */
 }
 ```
 

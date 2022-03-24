@@ -7,7 +7,7 @@ Media Queries, dotazy na média, jsou tady s námi od doby, kdy webdesignovému 
 
 Dovolím si zde shrnout jejich úplné základy, pro případ, že v Media Queries plavete. Vy zkušenější, kteří nestojíte o opakování tématu, můžete úvodní část s čistým svědomím přeskočit a rovnou si najít nadpis „Limity Media Queries“.
 
-Media Queries jsou podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech, nejen tedy těch týkajících se rozměrů obrazovky.
+Media Queries jsou podmínky, které umožňují aplikovat různá CSS pravidla v různých technických kontextech, nejen tedy v těch týkajících se rozměrů obrazovky.
 
 ## Příklad pro začátek
 
@@ -60,8 +60,7 @@ Můžeme také detekovat typ média:
 ```css
 @media screen { 
   /* Aplikuje se jen pro obrazovky,  
-     ne například v tisku
-  */ 
+     ne například v tisku */ 
 }
 ```
 
@@ -72,8 +71,7 @@ Můžeme podmínky kombinovat pomocí logického „a zároveň“:
   and (min-width: 30em) 
   and (max-width: 40em) {  
   /* Aplikuje se jen na viewport 
-     obrazovky mezi 30em a 40em
-  */
+     obrazovky mezi 30em a 40em */
 }
 ```
 
@@ -83,8 +81,7 @@ Můžeme aplikovat logické „nebo“, a to pomocí čárky:
 @media screen and (max-width: 40em), 
   print {
   /* Aplikuje se na obrazovky od šířky  
-     viewportu 40em nebo v tisku
-  */ 
+     viewportu 40em nebo v tisku */ 
 }
 ```
 
@@ -134,10 +131,10 @@ Anatomie Media Query.
 
 Získané dovednosti nám pro potřeby knížky a návrhu prvních layoutů zcela dostačují. Ovládnutí dotazů na média je však zcela nepostradatelná dovednost, každý profesionální webový vývojář i webová vývojářka píší Media Queries prakticky denně. Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
 
-- Stránka o Media Queries na Vzhůru dolů: [vrdl.in/cssmq](https://www.vzhurudolu.cz/prirucka/css3-media-queries).
-- Jak v responzivním layoutu dělat breakpointy: [vrdl.in/bp](https://www.vzhurudolu.cz/prirucka/breakpointy).
-- Jak breakpointy řešit technicky: [vrdl.in/bpcss](https://www.vzhurudolu.cz/prirucka/breakpointy-css).
-- Celý e-book o responzivním designu: [vrdl.in/kniha](https://www.vzhurudolu.cz/kniha-responzivni-design).
+- Stránka o Media Queries na Vzhůru dolů: [vrdl.in/cssmq](https://www.vzhurudolu.cz/prirucka/css3-media-queries)
+- Jak v responzivním layoutu dělat breakpointy: [vrdl.in/bp](https://www.vzhurudolu.cz/prirucka/breakpointy)
+- Jak breakpointy řešit technicky: [vrdl.in/bpcss](https://www.vzhurudolu.cz/prirucka/breakpointy-css)
+- Celý e-book o responzivním designu: [vrdl.in/kniha](https://www.vzhurudolu.cz/kniha-responzivni-design)
 
 V tomto bodě začnu předpokládat, že o Media Queries už něco víte, a společně se tedy pustíme do jejich používání.
 
@@ -286,7 +283,7 @@ A co to číslo `428px`? To by bylo na dlouhé povídání. A taky že bude. Vž
 
 ## Limity Media Queries
 
-Tvorba breakpointů (jinak též „bodů zlomu“) je samostatné téma, ostatně odkázal jsem vás výše na docela dlouhý text, kde kde se s ním můžete potrápit, chcete-li.
+Tvorba breakpointů (jinak též „bodů zlomu“) je samostatné téma, ostatně odkázal jsem vás výše na docela dlouhý text, kde se s ním můžete potrápit, chcete-li.
 
 Pojďme si ale ukázat, jak konkrétně jsem zde uvažoval a došel k hodnotě `428px`:
 Chtěl bych, aby vodorovný layout naskočil nejdříve v momentě, kdy obrázek dosáhne svých maximálních rozměrů. Řekněme, že v tomto případě jsem jej připravil tak, aby se v prohlížeči mohl zobrazovat až do šířky 300 pixelů. Proč ale v Media Query není číslo `300px`?

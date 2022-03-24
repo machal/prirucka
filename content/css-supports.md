@@ -117,10 +117,8 @@ Dalším překvapením může být nutnost používat všechny prefixové vlastn
   (-moz-box-shadow: 0 0 2px black inset) or
   (-webkit-box-shadow: 0 0 2px black inset) or
   (-o-box-shadow: 0 0 2px black inset)) {
-  /* 
-    Kód pro všechny prohlížeče podporující box-shadow, 
-    včetně těch už historických 
-  */
+  /* Kód pro všechny prohlížeče podporující box-shadow, 
+     včetně těch už historických */
 }
 ```
 

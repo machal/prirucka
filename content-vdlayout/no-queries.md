@@ -69,7 +69,7 @@ Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku o
 
 Budeme si ten kód muset vysvětlit, že?
 
-- `flex: 1 1 20%` – Obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to, jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
+- `flex: 1 1 20%` – obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to, jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
 - Základní velikost položek je nastavena užší, než je celková šířka plochy (`20%` a  `40%` dává jen 60 procent). Nám slouží jen k definování výchozího poměru stran. Je to adekvátní k zápisu [vlastností `flex-basis`](css-flex-basis.md). O roztažení do celé šířky se pak postará obsah.
 - Bod zlomu definuje maximální šířka obrázku – `max-width: 300px`.
 
@@ -194,7 +194,7 @@ CodePen: [vrdl.in/576kh](https://codepen.io/machal/pen/zYNaLjB?editors=1100)
 
 ## Řešení pomocí vícesloupcového layoutu
 
-[Vlastnost `columns`](css-multicolumn.md) a ostatní, které z ní vycházejí (součást balíčku  CSS Multiple Column), je hotový ráj pro milovníky bezdotazových rozvržení. Má to ale háček, tahle specifikace je vymyšlená takřka výlučně pro sázení textového obsahu.
+[Vlastnost `columns`](css-multicolumn.md) a ostatní, které z ní vycházejí (součást balíčku  CSS Multiple Column), je hotový ráj pro milovníky bezdotazových rozvržení. Má to však háček, tahle specifikace je vymyšlená takřka výlučně pro sázení textového obsahu.
 
 Pojďme to ale trochu hacknout a použít pro naši mediální komponentu. HTML zůstává stejné, styly jako vždy převlékají kabát:
 
@@ -207,7 +207,7 @@ Pojďme to ale trochu hacknout a použít pro naši mediální komponentu. HTML 
 
 Vezměme do ruky lupu a podívejme se na tento kód pořádně:
 
-- `.item` - Možná jste zpozorněli už na řádku se selektorem. Ano, je to tak, CSS Multiple Column nám dovoluje definovat layout bez Queries už na úrovni rodičovského prvku.
+- `.item` – Možná jste zpozorněli už na řádku se selektorem. Ano, je to tak, CSS Multiple Column nám dovoluje definovat layout bez Queries už na úrovni rodičovského prvku.
 - `column-width:300px` – Tahle [vlastnost](css-multicol-columns.md) definuje doporučenou šířku sloupce, tedy položky layoutu, ale nijak neříká, kolik jich zde má být. Ideální věc pro bezdotazové rozvržení, jen nad ním tu lupu ještě chvíli podržte!
 - `column-gap:1rem` – [Vlastnost](css-gap.md) pro definici mezery mezi buňkami layoutu už asi znáte.
 
@@ -262,7 +262,7 @@ Detailní vysvětlení nechávám na samotném autorovi a jeho článku „The F
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, funkce `calc()` je při práci na CSS layoutech velmi užitečná. V knize předpokládám základní úroveň její znalosti, nicméně více ji pro zájemce popisuji [v poslední „přílohové“ kapitole](css3-calc.md).
+Mimochodem, funkce `calc()` je při práci na CSS layoutech velmi užitečná. V knize předpokládám základní úroveň její znalosti, nicméně více ji pro zájemce popisuji [v poslední, přílohové kapitole](css3-calc.md).
 
 </div>
 
@@ -270,7 +270,9 @@ Dlužím vám ještě demo. Asi nejlepší je to následující, ze kterého má
 
 CodePen: [vrdl.in/aht8z](https://codepen.io/thierry/pen/ZQgEoZ?editors=1100)
 
-Zde bychom odbočku k layoutům bez Media (a Container) Queries mohli ukončit. Než jsem tuto podkapitolu začal psát, přemýšlel jsem, zda se do toho vůbec pouštět.
+Zde bychom odbočku k layoutům bez Media (a Container) Queries mohli ukončit.
+
+Než jsem tuto podkapitolu začal psát, přemýšlel jsem, zda se do toho vůbec pouštět.
 
 Proti byla část mé osobnosti, která má ráda čistá řešení a která odmítá používat kladivo na klepání masa a paličku na přibíjení hřebíků. Ta, která ví, že tato řešení mají řadu nevýhod a složitostí, jež mohou například začátečníky svést na scestí, kde po prvotním nadšení přijde kruté vystřízlivění v podobě zjištění, že pro jejich případ se toto řešení nehodí.
 

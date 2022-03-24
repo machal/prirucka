@@ -44,7 +44,7 @@ Určitě si vzpomenete, že definovaného fallbacku využíváme také u prefixo
 
 ```css
 .element {
-  /* Chrome, Safari, Android:  */
+  /* Chrome, Safari, Android: */
   -webkit-column-count: 2;
   /* Firefox: */
   -moz-column-count: 2;

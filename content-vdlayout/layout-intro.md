@@ -278,6 +278,6 @@ V Media Queries v knížce používám jednotně `em`, ale v praxi je možné po
 
 Velice často zde také budu používat bezjednotkové hodnoty, které určují podíl prvku na rozměrech celku. Jde o čísla ve vlastnosti `flex`, zde již použité, hodnoty s jednotkou `fr` v gridu. Ale nebudeme předbíhat.
 
-Více o používání jednotek v CSS píšu [v poslední, „přílohové“ kapitole](jednotky.md).
+Více o používání jednotek v CSS píšu [v poslední, přílohové kapitole](jednotky.md).
 
 Prostřednictvím Tinderu a prvního rande jsme se tedy seznámili se třemi hlavními protagonisty knížky a jejich nejlepším kamarádem. Ještě se nám ale bude hodit lépe poznat dva nejžhavější kandidáty.

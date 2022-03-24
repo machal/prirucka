@@ -76,7 +76,7 @@ Druhý krok je samotný dotaz na kontejner, Container Query:
 Tohle je asi zřejmé. Pokud bude šířka rodičovského prvku alespoň `30em` (což je v obvyklých případech 480 pixelů), aplikují se pravidla uvnitř.
 
 Je možné, že i v době, kdy toto čtete, budou Container Queries schované za vlaječkovým nastavením prohlížeče. Jak to tedy otestovat?
-V Chromiu 91 a vyšších verzí jděte do vlaječkového nastavení: `chrome://flags` a povolte možnost „Enable CSS Container Queries“.
+V Chromiu 91 a vyšších verzích jděte do vlaječkového nastavení: `chrome://flags` a povolte možnost „Enable CSS Container Queries“.
 
 ## Specifikace a další prohlížeče
 
@@ -162,7 +162,7 @@ CSS:
 
 Pomocí [`display:grid`](css-display.md), vlastnosti [`grid-template-columns`](css-grid-template.md) a [`gap`](css-gap.md) definuji dvousloupcovou mřížku s mezerou mezi sloupci o šířce `1em`.
 
-Možná to vypadá trochu složitě, ale zatím layout vysvětlovat nebudu. Pokud jste v e-booku, pro detailní informace klikněte na název vlastnosti nebo si počkejte do další kapitoly, kde to vše trpělivě vysvětlíme.
+Možná to vypadá trochu složitě, ale zatím layout vysvětlovat nebudu. Pokud jste v e-booku, pro detailní informace klikněte na název vlastnosti nebo si počkejte do páté kapitoly, kde to vše trpělivě vysvětlíme.
 
 CodePen: [vrdl.in/3lx5d](https://codepen.io/machal/pen/qBRPvqw?editors=1100)
 
@@ -177,7 +177,7 @@ Předpokládám ale, že někteří čtenáři na tenhle text narazí v době, k
 
 Osobně bych očekával nějakou dobu trvající situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
 
-Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií. Pomocí postupného vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a horší nepodporujícím.
+Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií. Pomocí postupného vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a horší nepod​porujícím.
 
 Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili. Například v případě nepodpory Safari bude naše komponenta v tomto prohlížeči vypadat následovně.
 

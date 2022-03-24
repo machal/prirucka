@@ -140,7 +140,7 @@ Pomocí `grid-template-rows` a `grid-template-columns` jsme vytvořili mřížku
 
 Asi jste si všimli, že oblasti `head` a `foot` zabírají vždy dvě buňky, což je přesně ten layout, kterého potřebujeme dosáhnout.
 
-Pomocí inspekce mřížky ve Firefoxu (nebo Chrome) se nám teď layout krásně vizualizuje i s pojmenovanými oblastmi:
+Pomocí inspekce mřížky ve Firefoxu (nebo Chromu) se nám teď layout krásně vizualizuje i s pojmenovanými oblastmi:
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-holy-grail-firefox.jpg" width="1600" height="900" alt="Příklad - holy grail ve Firefoxu">
@@ -151,7 +151,7 @@ Pomocí inspekce mřížky ve Firefoxu (nebo Chrome) se nám teď layout krásn�
 
 ## Minimum, maximum, optimum s pomocí funkce clamp()
 
-Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má mít postranní panel (`.side`) mít šířku 30 % – ovšem s minimem `10em` a maximem `20em`.
+Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, že dle zadání má mít postranní panel (`.side`) šířku 30 % – ovšem s minimem `10em` a maximem `20em`.
 
 Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce `clamp()`.
 
@@ -166,7 +166,7 @@ Dělá přesně to, co si myslíte: `30%` v prostředním argumentu je optimáln
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, funkci `clamp()`, stejně jako její kolegyně `min()` a `max()`, pro zájemce více popisuji [v poslední „přílohové“ kapitole](css-min-max-clamp.md).
+Mimochodem, funkci `clamp()`, stejně jako její kolegyně `min()` a `max()`, pro zájemce více popisuji [v poslední, přílohové kapitole](css-min-max-clamp.md).
 
 </div>
 
@@ -225,9 +225,9 @@ A mohli bychom to zkrátit ještě více. Do [zkratky `grid`](css-grid-zkratka.m
 }
 ```
 
-Do zápisu `grid` se kromě vlastností pro šablonu (`grid-template`) dají uvádět ještě vlastnosti implicitního gridu, (začínající na [`grid-auto`](grid-auto-flow.md)). To je už dost specifická a zapeklitá věc, takže ji zde zatím nechám bez vysvětlení. Najdete je v referenční příručce k CSS gridu.
+Do zápisu `grid` se kromě vlastností pro šablonu (`grid-template`) dají uvádět ještě vlastnosti implicitního gridu (začínající na [`grid-auto`](grid-auto-flow.md)). To je už dost specifická a zapeklitá věc, takže ji zde zatím nechám bez vysvětlení. Najdete ho v referenční příručce k CSS gridu.
 
-Je mi jasné, že pro jedny jsem to sice zjednodušil („hurá, méně kódu!“), jiným jsem zamotal hlavu („fuj, kód složitý jako assembler“). Máte však volbu, jak kód v gridu zapisovat, a vyberte si dle svých preferencí.
+Je mi jasné, že pro jedny jsem to sice zjednodušil („Hurá, méně kódu!“), jiným jsem zamotal hlavu („Fuj, kód složitý jako assembler.“). Máte však volbu, jak kód v gridu zapisovat, a vyberte si dle svých preferencí.
 
 Ještě vám dlužím finální CSS kód. Nejprve definujeme grid:
 

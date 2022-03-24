@@ -138,7 +138,7 @@ Teď ale už pojďme na ten elegantní grid.
 
 ## Středění boxu v boxu: situaci zachraňuje grid
 
-Asi už víte, že zarovnávací vlastnosti CSS Box Align, jako je `align-items`, můžete s drobnými výjimkami použít jak pro flexbox, tak pro grid. V gridu jsou však tyto vlastnosti k dispozici řekněme v plném míře.
+Asi už víte, že zarovnávací vlastnosti CSS Box Align, jako je `align-items`, můžete s drobnými výjimkami použít jak pro flexbox, tak pro grid. V gridu jsou však tyto vlastnosti k dispozici řekněme v plné míře.
 
 Naše původně zvažované řešení pro zarovnání položek na výšku i šířku by zde krásně fungovalo:
 

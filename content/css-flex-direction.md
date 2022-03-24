@@ -66,7 +66,7 @@ O směru psaní dokumentu a tvorbě layoutu pro jazyky sázené v jiných směre
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně o možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
+Mimochodem, v poslední, přílohové kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně o možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
 
 </div>
 
