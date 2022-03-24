@@ -73,9 +73,9 @@ Do obrázku jsem nakreslil nejen řešení, ale rovnou i hned dvě další možn
 
 Vlastnost mění pořadí prvků možná trošku jinak, než byste čekali:
 
-- `order: 0` – u nulové hodnoty se od ovlivňované položky asi dá očekávat, že bude držet původní pozici. Nezklamala.
-- `order: 1` – kladné hodnoty vytvářejí novou řadu položek řazených od nejmenšího po největší číslo. Ale pozor – až *za* původními položkami, vlastností `order` nedotčenými.
-- `order: -1` – ano, lze použít i záporná čísla. Slouží k vytváření pořadí *před* původní řadou položek.
+- `order:0` – u nulové hodnoty se od ovlivňované položky asi dá očekávat, že bude držet původní pozici. Nezklamala.
+- `order:1` – kladné hodnoty vytvářejí novou řadu položek řazených od nejmenšího po největší číslo. Ale pozor – až *za* původními položkami, vlastností `order` nedotčenými.
+- `order:-1` – ano, lze použít i záporná čísla. Slouží k vytváření pořadí *před* původní řadou položek.
 
 Jen si s tím směle pohrejte v mém CodePenu.
 

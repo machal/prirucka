@@ -62,7 +62,7 @@ Zápis `minmax()` se tváří jako funkce se dvěma parametry: minimálním a ma
 
 Tohle je asi jednoduché, že?
 
-- První sloupeček se nikdy nezmenší pod `100px` a nepřesáhne šířku `200px`. To přesně dělá zápis `minmax(100px, 200px)`.
+- První sloupeček se nikdy nezmenší pod `100px` a nepřesáhne šířku `200px`. To přesně dělá zápis `minmax(100px,200px)`.
 - Další dva sloupečky si rovnoměrně rozdělí šířku zbylého prostoru, protože jsou nastavené [podílovou jednotkou](css-jednotka-fr.md) na `1fr`.
 
 CodePen: [vrdl.in/iu3tz](https://codepen.io/machal/pen/XWrLErd?editors=1100)
@@ -80,7 +80,7 @@ Příklad pozměníme:
 Uvedený zápis asi opět nebude žádná velká věda, protože [zlomkovou jednotku `fr`](css-jednotka-fr.md) už známe.
 
 - Všechny sloupečky si rovnoměrně rozdělí šířku na tři části.
-- První sloupeček se ale nikdy nezmenší pod `100px`. Důvodem je zápis `minmax(100px, 1fr)`.
+- První sloupeček se ale nikdy nezmenší pod `100px`. Důvodem je zápis `minmax(100px,1fr)`.
 
 CodePen: [vrdl.in/25y0n](https://codepen.io/machal/pen/qBWGooy?editors=1100)
 
@@ -117,7 +117,7 @@ Pojďme si to ještě ukázat na příkladu s obrázkem. Kód je totožný jako 
 
 CodePen: [vrdl.in/qhmsu](https://codepen.io/machal/pen/eYOaMvv?editors=1100)
 
-Obrázek nebude ve stopě mřížky definované jako `minmax(100px, max-content)` nikdy menší než `100px` a větší než maximální velikost. Ta je `400px` a je zde definovaná v atributu `width` značky `<img>`.
+Obrázek nebude ve stopě mřížky definované pomocí zápisu `minmax(100px, max-content)` nikdy menší než `100px` a větší než maximální velikost. Ta je `400px` a je zde definovaná v atributu `width` značky `<img>`.
 
 ## Klíčové slovo min-content {#min-content}
 
@@ -155,8 +155,8 @@ CodePen: [vrdl.in/fztp4](https://codepen.io/machal/pen/ZEzNxmX?editors=1100)
 
 V hodnotách zápisu `minmax()` je možné uvádět i klíčové slovo `auto`, které velmi dobře známe odjinud z CSS. V gridu se chová skoro tak, jak bychom očekávali. Skoro.
 
-- Pokud je `auto` v druhém parametru, chová se stejně jako `max-content`. Takže zápis `minmax(100px, auto)` bude mít stejný dopad jako `minmax(100px, max-content)`.
-- Jakmile jej však uvedeme v prvním parametru, může přebírat hodnotu vlastností `min-width` nebo `min-height`. Pokud ty nejsou definované, chová se stejně jako `min-content`, a tedy zápis `minmax(auto, 200px)` bude ekvivalentní k `minmax(min-content, 200px)`.
+- Pokud je `auto` v druhém parametru, chová se stejně jako `max-content`. Takže zápis `minmax(100px,auto)` bude mít stejný dopad jako `minmax(100px,max-content)`.
+- Jakmile jej však uvedeme v prvním parametru, může přebírat hodnotu vlastností `min-width` nebo `min-height`. Pokud ty nejsou definované, chová se stejně jako `min-content`, a tedy zápis `minmax(auto,200px)` bude ekvivalentní k `minmax(min-content,200px)`.
 
 Klíčové slovo `auto` si ještě vyzkoušíme na příkladu. Mřížku definujeme následovně:
 
@@ -168,11 +168,11 @@ Klíčové slovo `auto` si ještě vyzkoušíme na příkladu. Mřížku definuj
 
 CodePen: [vrdl.in/poavs](https://codepen.io/machal/pen/eYOaXyW?editors=1100)
 
-Uvnitř první buňky máme obrázek, který má pružné rozměry (definované pomocí `max-width: 100%; height: auto;`). Použitím `minmax(auto, auto)` prohlížeči říkáme: Sloupec mřížky se smí zmenšit jen na minimální obsahovou velikost a zvětšit na maximální.
+Uvnitř první buňky máme obrázek, který má pružné rozměry (definované pomocí `max-width:100%;height:auto;`). Použitím `minmax(auto,auto)` prohlížeči říkáme: Sloupec mřížky se smí zmenšit jen na minimální obsahovou velikost a zvětšit na maximální.
 
 Jenže u vkládaných pružných médií není rozměrové minimum a maximum nijak definováno. My to ale dovedeme. Maximum v našem CodePenu definujeme už uvedeným atributem `width="400"` v HTML. A minimum? Tady se dostáváme k použití vlastnosti `min-width`, kterou zde nastavujeme na `100px`.
 
-Musíme zmínit, že pouze stopy mřížky s rozměry nastavenými na `auto` je možné roztáhnout na šířku či výšku pomocí `align-content: stretch` nebo `justify-content: stretch`.
+Musíme zmínit, že pouze stopy mřížky s rozměry nastavenými na `auto` je možné roztáhnout na šířku či výšku pomocí `align-content:stretch` nebo `justify-content:stretch`.
 
 ### Co když je ve stopě mřížky buněk více? {#vice-bunek}
 
@@ -206,7 +206,7 @@ V CSS gridu se `fit-content` používá s parametrem:
 
 Takový zápis říká, aby prohlížeč zařídil šířku prvního sloupce vždy podle obsahu, ale s maximem `200px`.
 
-`fit-content()` se tedy počítá jako `minmax(auto, max-content)` s tím, že hodnota v argumentu funkce slouží jako zarážka pro maximální rozměr, pokud je větší než minimum.
+`fit-content()` se tedy počítá jako `minmax(auto,max-content)` s tím, že hodnota v argumentu funkce slouží jako zarážka pro maximální rozměr, pokud je větší než minimum.
 
 CodePen: [vrdl.in/76h4a](https://codepen.io/machal/pen/GRKbQom?editors=1100).
 
@@ -240,7 +240,7 @@ CodePen: [vrdl.in/rbv3o](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
 
 Pokud byste chtěli zápis `minmax()` mermomocí rozbít, prohlížeče by se podle specifikace měly chovat následovně:
 
-- Pokud uvedete vyšší hodnotu v minimu než maximu (např. `minmax(200px, 100px)`), maximum bude ignorováno a prohlížeče budou počítat jen s minimem.
+- Pokud uvedete vyšší hodnotu v minimu než maximu (např. `minmax(200px,100px)`), maximum bude ignorováno a prohlížeče budou počítat jen s minimem.
 - Jako minima zatím nemá smysl uvádět zlomkovou jednotku `fr`. Ale v budoucí verzi specifikace by se to prý mohlo změnit.
 
 ## Podpora v prohlížečích {#podpora}

@@ -86,11 +86,11 @@ Zápis je ekvivalentní tomuto:
 
 Vysvětlíme:
 
-- `grid-auto-flow: row` – grid se bude vykreslovat po řádcích. Jak můžete vědět ze studia vlastnosti [`grid-auto-flow`](css-grid-auto-flow.md), hodnota `grid-auto-flow:row` je v prohlížečích výchozí, takže bychom ji nemuseli nastavovat.
-- `grid-auto-rows: 1fr` – implicitní grid bude mít výšku řádků `1fr`.
-- `grid-auto-columns: auto` – implicitní grid nemá definované sloupce, takže se budou řídit šířkou obsahu buňky.
-- `grid-template-rows: none` – buňky gridu nemají ve směru řádků nijak nastavené rozměry.
-- `grid-template-columns: 100px 100px` – buňky mají v explicitním gridu nastavenou šířku `100px` a tvoří dva sloupce.
+- `grid-auto-flow:row` – grid se bude vykreslovat po řádcích. Jak můžete vědět ze studia vlastnosti [`grid-auto-flow`](css-grid-auto-flow.md), hodnota `grid-auto-flow:row` je v prohlížečích výchozí, takže bychom ji nemuseli nastavovat.
+- `grid-auto-rows:1fr` – implicitní grid bude mít výšku řádků `1fr`.
+- `grid-auto-columns:auto` – implicitní grid nemá definované sloupce, takže se budou řídit šířkou obsahu buňky.
+- `grid-template-rows:none` – buňky gridu nemají ve směru řádků nijak nastavené rozměry.
+- `grid-template-columns:100px 100px` – buňky mají v explicitním gridu nastavenou šířku `100px` a tvoří dva sloupce.
 
 CodePen: [vrdl.in/beuxn](https://codepen.io/machal/pen/YmpNYR?editors=1100)
 

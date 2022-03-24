@@ -156,10 +156,10 @@ Vsadím se, že vám celou dobu vrtá hlavou, proč jsem zatím ignoroval fakt, 
 Inu, snažím se vám ty třešničky dávkovat tak, abyste se jich nepřejedli. Další sladkou dobrotou je totiž funkce `clamp()`.
 
 ```css
-  .container {
-    /* … */
-    grid-template-columns: clamp(10em, 30%, 20em) 1fr;
-  }
+.container {
+  /* … */
+  grid-template-columns: clamp(10em, 30%, 20em) 1fr;
+}
 ```
 
 Dělá přesně to, co si myslíte: `30%` v prostředním argumentu je optimální velikost. První a poslední argument dodává minimum a maximum. Podpora této funkce v moderních prohlížečích je výborná, takže jí neváhejte využít.
@@ -187,7 +187,7 @@ Zaměříme se na kód, kterým definujeme rozvržení:
 }
 ```
 
-Nyní se jej pokusíme zestručnit. [Vlastnosti `grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md) můžeme zapsat [zkratkou `grid-template`](css-grid-template.md), která definuje oba směry a odděluje je lomítkem. Jako vždy v CSS i zde uvádíme jako první svislý směr, tedy definice řádků layoutu:
+Nyní se tento náš kód pokusíme zestručnit. [Vlastnosti `grid-template-rows` a `grid-template-columns`](grid-template-rows-columns.md) můžeme zapsat [zkratkou `grid-template`](css-grid-template.md), která definuje oba směry a odděluje je lomítkem. Jako vždy v CSS i zde uvádíme jako první svislý směr, tedy definice řádků layoutu:
 
 ```css
 .container {

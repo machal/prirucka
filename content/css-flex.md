@@ -43,9 +43,9 @@ Výchozí hodnota je `initial` a můžete ji zapsat následujícím způsobem:
 }
 ```
 
-- `flex-grow: 0` – nebude se nijak roztahovat do volného místa.
-- `flex-shrink: 1` – smršťovat se bude stejně jako ostatní položky.
-- `flex-basis: auto` – zabere prostor, který jí určí vlastní obsah.
+- `flex-grow:0` – nebude se nijak roztahovat do volného místa.
+- `flex-shrink:1` – smršťovat se bude stejně jako ostatní položky.
+- `flex-basis:auto` – zabere prostor, který jí určí vlastní obsah.
 
 Pokud chcete například nastavit, aby vaše položky zabíraly minimálně `150px`, v případě dostupnosti volného prostoru se rovnoměrně zvětšily a v případě zmenšení prostoru zase rovnoměrně smrštily, uděláte to takto:
 
@@ -71,23 +71,23 @@ Jednoslovné hodnoty se vám budou hodit asi nejčastěji. Podívejte se na prvn
 
 | Hodnota          | flex-grow   | flex-shrink   | flex-basis   |
 |------------------|:-----------:|:-------------:|:------------:|
-| `flex: initial`  |     `0`     |     `1`       |   `auto`     |
-| `flex: auto`     |     `1`     |     `1`       |   `auto`     |
-| `flex: none`     |     `0`     |     `0`       |   `auto`     |
-| `flex: 1`        |     `1`     |     `1`       |   `0`        |
+| `flex:initial`  |     `0`     |     `1`       |   `auto`     |
+| `flex:auto`     |     `1`     |     `1`       |   `auto`     |
+| `flex:none`     |     `0`     |     `0`       |   `auto`     |
+| `flex:1`        |     `1`     |     `1`       |   `0`        |
 
 </div>
 
 Teď si vysvětlíme dopad přednastavených hodnot zkratky `flex`:
 
-- `flex: initial`  
-Nastavení výchozí hodnoty, tedy `flex: 0 1 auto`. Položky se s ubývajícím místem zmenšují, ale nezvětšují se nad velikost svého obsahu.
-- `flex: auto`  
-Odpovídá `flex: 1 1 auto`. Dotčené položky se stanou plně pružnými s výchozím rozměrem podle svého obsahu. Asi nejčastější případ, který potřebujete.
-- `flex: none`  
-Odpovídá `flex: 0 0 auto` a zcela ruší pružnost položky. Druhá nejčastější situace.
-- `flex: <kladné-číslo>`  
-U jednočíselného zápisu pozor! `flex: 1` znamená `flex: 1 1 0`, takže se vám změní výchozí velikost položky a model pružnosti, jak jsme zmiňovali [u vlastnosti `flex-basis`](css-flex-basis.md).
+- `flex:initial`  
+Nastavení výchozí hodnoty, tedy `flex:0 1 auto`. Položky se s ubývajícím místem zmenšují, ale nezvětšují se nad velikost svého obsahu.
+- `flex:auto`  
+Odpovídá `flex:1 1 auto`. Dotčené položky se stanou plně pružnými s výchozím rozměrem podle svého obsahu. Asi nejčastější případ, který potřebujete.
+- `flex:none`  
+Odpovídá `flex:0 0 auto` a zcela ruší pružnost položky. Druhá nejčastější situace.
+- `flex:<kladné-číslo>`  
+U jednočíselného zápisu pozor! `flex:1` znamená `flex:1 1 0`, takže se vám změní výchozí velikost položky a model pružnosti, jak jsme zmiňovali [u vlastnosti `flex-basis`](css-flex-basis.md).
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex.jpg" width="1600" height="900" alt="CSS vlastnost flex">

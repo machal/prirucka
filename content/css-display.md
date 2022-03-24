@@ -35,7 +35,7 @@ V tabulce zdaleka nejsou všechny možnosti a jejich specifické vlastnosti, ná
 Víte například, že…?
 
 - S pomocí [hodnoty `flow-root`](#vnejsi) nemusíte pro „floaty“ používat „clearfix“, tedy reset plovoucího layoutu?
-- Firefox podporuje [víceslovná označení](#viceslovna) jako `inline flex`?
+- Firefox podporuje [víceslovná označení](#viceslovna) jako `inline flex`?
 - Pro skrytí prvku existuje kromě hodnoty `none` také [hodnota `contents`](#none-contents)?
 
 V CSS je stále těžší najít vlastnost, která by byla snadná k pochopení a naučení.
@@ -73,7 +73,7 @@ Vytvoří boxík, který je „inline-level“, řádkový. Před sebou a po sob
 - `block`  
 Vygeneruje boxík, který je „block-level“. Zjednodušeně to znamená, že se vykreslí do celé šířky rodiče a zalomí řádky před sebou i po sobě.
 - `inline-block`  
-Generuje boxík, který se zvenčí chová jako řádkový a uvnitř generuje vždy nový blokový kontext. Mimochodem, specifikace s touto hodnotou počítá do budoucna jen jako s jiným zápisem pro dvojici klíčových slov `inline flow-root`. O tom píšu později.
+Generuje boxík, který se zvenčí chová jako řádkový a uvnitř generuje vždy nový blokový kontext. Mimochodem, specifikace s touto hodnotou počítá do budoucna jen jako s jiným zápisem pro dvojici klíčových slov `inline flow-root`. O tom píšu později.
 - `run-in`  
 Vygeneruje typ „inline-level“ boxu se zvláštním chováním – pokusí se vložit sám sebe do následujícího blokového prvku. Pokud za prvkem „run-in“ následuje blokový prvek, „run-in“ se stane jeho prvním inline boxem. Pokud bude následovat inlinové pole, stane se z prvku „run-in“ prvek blokový.
 

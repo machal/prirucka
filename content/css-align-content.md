@@ -131,12 +131,12 @@ Vlastnosti `align-content` můžete předávat všechny hodnoty z jednotlivých 
 
 ### Podle účaří
 
-- `first baseline`  
+- `first baseline`  
   Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
-- `last baseline`  
+- `last baseline`  
   Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
-  Zkratka pro `first baseline`.
+  Zkratka pro `first baseline`.
 
 Tyto hodnoty zatím nemají u popisované vlastnosti dobrou podporu v prohlížečích při použití ve flexboxu. V MSIE není podporována vůbec.
 

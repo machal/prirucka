@@ -23,7 +23,7 @@ Vlastnosti `grid-auto-rows` a `grid-auto-columns` jsou součástí [CSS gridu](c
 
 </div>
 
-Jsou tedy doplňkem vlastností [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, čili autorsky definovaného.
+Jsou tedy doplňkem nám už známých vlastností [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, čili autorsky definovaného.
 
 Tyto vlastnosti jsou užitečné pro implicitní řádky (`grid-auto-rows`), a to v případech, kdy máte v HTML neznámý počet položek. Řádky se vám v layoutu tvoří samy a vy nemusíte definovat mřížku pro různé počty položek v ní.
 
@@ -61,7 +61,7 @@ grid-auto-rows: 10% 33.3%;
 grid-auto-rows: 1fr minmax(100px, auto);
 ```
 
-Hodnota `100px 200px` říká, že první a pak každý lichý nedefinovaný, a tedy implicitní řádek bude mít výchozí výšku `100px`, sudé řádky pak `200px`.
+Hodnota `100px 200px` říká, že první a pak každý lichý nedefinovaný, a tedy implicitní řádek bude mít výchozí výšku `100px`, sudé řádky pak `200px`.
 
 ### Klíčová slova
 

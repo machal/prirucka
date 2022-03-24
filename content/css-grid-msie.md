@@ -35,7 +35,7 @@ Velká část uvedeného pro vás ale přečtením tohoto dlouhého textu přest
 Naopak se málo ví, že stařičký MSIE nativně podporuje následující:
 
 - Implicitní (nepředdefinovanou) mřížku.
-- [Funkci `repeat()`](css-repeat.md), jen jinak. `repeat(12, 1fr 20px)` zapisujte v Exploreru jako `(1fr 20px)[12]`.
+- [Funkci `repeat()`](css-repeat.md), jen jinak. `repeat(12,1fr 20px)` zapisujte v Exploreru jako `(1fr 20px)[12]`.
 - [Funkci `minmax()`](css-minmax.md).
 - Klíčová slova `min-content` a `max-content`.
 
@@ -63,7 +63,7 @@ Jde o rozvržení definované následujícím způsobem:
 Pro zájemce vše vysvětlím polopaticky:
 
 - `display:grid` je asi jasný. Definujeme prostě kontejner mřížky.
-- `grid-template-columns:1fr 3fr 1fr` specifikuje samotnou mřížku. O [jednotce `fr`](css-jednotka-fr.md) píšu v jiném textu.
+- `grid-template-columns:1fr 3fr 1fr` specifikuje samotnou mřížku. O [jednotce `fr`](css-jednotka-fr.md) píšu v jiném textu.
 - `grid-template-areas` je šablona pojmenování oblastí pro následné využití v CSS.
 - `column-gap:0.5em` je zápis pro mezeru mezi sloupci layoutu.
 
@@ -110,8 +110,8 @@ Nejprve se podíváme na kód generovaný tímto nástrojem pro rodiče layoutu:
 
 Následuje samozřejmě výše uvedený kód pro moderní prohlížeče. Ten pro zjednodušení vynechávám. Opět ale oba řádky vysvětlím:
 
-- `display: -ms-grid` – prefixovaný zapínač gridu v Exploreru.
-- `-ms-grid-columns: 1fr 0.5em 3fr 0.5em 1fr` – magie. Autoprefixer spojil definici mřížky s definicí mezer (`column-gap`), abychom ty (sakramentsky návykové) díry v layoutu mohli využívat i v Exploreru, který žádnou z „vlastností gap“ nepodporuje.
+- `display:-ms-grid` – prefixovaný zapínač gridu v Exploreru.
+- `-ms-grid-columns:1fr 0.5em 3fr 0.5em 1fr` – magie. Autoprefixer spojil definici mřížky s definicí mezer (`column-gap`), abychom ty (sakramentsky návykové) díry v layoutu mohli využívat i v Exploreru, který žádnou z „vlastností gap“ nepodporuje.
 
 Kód prvků layoutu, jež Autoprefixer vyrobí pro potřeby Exploreru, vypadá takhle:
 

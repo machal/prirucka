@@ -66,7 +66,7 @@ Dále definujeme šířky prvků pro tři rozmezí, která vznikla definicí bre
 }
 ```  
 
-Asi je zřetelné, že na nejmenších viewportech (`--length_4_small`) zabere celou šířku jeden boxík (`calc((100% / 1)`), zatímco na největších už budou vedle sebe čtyři (`calc((100% / 4)`).
+Asi je zřetelné, že na nejmenších viewportech (`--length_4_small`) zabere celou šířku jeden boxík (`calc((100% / 1)`), zatímco na největších už budou vedle sebe čtyři (`calc((100% / 4)`).
 
 ## Dotazy na splnění podmínek pro šířku rodiče
 
@@ -78,7 +78,7 @@ Magie nastává v následujícím kroku. Tady pomocí matematických funkcí pln
 }  
 ```
 
-Proměnná `--is_wide` vrací `1px`, pokud je `--base_size` větší než `--breakpoint_wide`. Představte si to `1px` jako `true`. V opačném případě vrací `0px` jako `false`.
+Vysvětleme to. Proměnná `--is_wide` vrací `1px`, pokud je `--base_size` větší než `--breakpoint_wide`. Představte si to `1px` jako `true`. V opačném případě vrací `0px` jako `false`.
 
 V `--base_size` máme uloženou hodnotu `100%`, což je ale skutečná šířka rodičovského prvku. Už chápete?
 

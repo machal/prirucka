@@ -67,7 +67,7 @@ Nejprve si více rozebereme příklad podobný tomu v úvodu:
 }
 ```
 
-Proč nenapsat rovnou `width: 14.2857`? Ze dvou důvodů:
+Proč nenapsat rovnou `width:14.2857`? Ze dvou důvodů:
 
 1. *Čitelnost kódu.* Vsaďte se, že na původ čísla 14,2857 zapomenete. Nejpozději za týden. Správa této části kódu pro vás pak bude znamenat kladení otázek typu „jak jsem k tomu číslu došel?“. Vždy je lepší zapsat výpočet než výsledek.
 2. *Zaokrouhlování.*  V celé kráse vypadá výsledek takto: 14,285714286. Kodéři občas podlehnou pokušení a desetinná místa zaokrouhlí. A pak se diví, že se jim v nějakém konkrétním rozlišení a prohlížeči rozvržení stránky rozpadlo. Nebuďte takoví kodéři. Nezaokrouhlujte.

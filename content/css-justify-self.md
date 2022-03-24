@@ -26,7 +26,7 @@ Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
 
 Je dobré zmínit, že uvnitř buněk tabulek a ve [flexboxu](css-flexbox.md) je vlastnost `justify-self` ignorována. V layoutu pomocí gridu se položka zarovnává uvnitř své oblasti, což je obvykle buňka mřížky.
 
-U flexboxu můžeme pro zarovnání položek na hlavní ose využít klasickou metodu s `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
+U flexboxu je možné pro zarovnání položek na hlavní ose využít klasickou metodu s automatickým vnějším okrajem `margin:auto`, podobně jako u [`justify-items`](css-justify-items.md).
 
 <!-- AdSnippet -->
 
@@ -69,7 +69,7 @@ Nakonec deklarace pro poslední položku:
 }
 ```
 
-Tady vlastně zarovnáváme dvěma způsoby. Jednou doleva (`margin-right:auto`) a jednou doprava (`justify-self:end`). Co myslíte, bude platit poslední deklarace, jako je tomu u CSS vždy? Nikoliv, zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
+Tady vlastně zarovnáváme dvěma způsoby. Všimli jste si toho? Jednou doleva (`margin-right:auto`) a jednou doprava (`justify-self:end`). Co myslíte, bude platit poslední deklarace, jako je tomu u CSS vždy? Nikoliv, zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
 
 Zkuste si tu první deklaraci schválně v živé ukázce odmazat.
 
@@ -149,12 +149,12 @@ Po dekódování zašmodrchaností specifikace můžeme konstatovat, že výchoz
 
 ### Podle účaří
 
-- `first baseline`  
+- `first baseline`  
   Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
-- `last baseline`  
+- `last baseline`  
   Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
-  Zkratka pro `first baseline`.
+  Zkratka pro `first baseline`.
 
 ### Pro přetečení
 

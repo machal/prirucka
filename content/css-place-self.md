@@ -24,7 +24,7 @@ Můžete ji využít v layoutech tvořených [gridem](css-grid.md).
 
 </div>
 
-Jde o zkratku pro vlastnosti [`align-self`](css-align-self.md) a [`justify-self`](css-justify-self.md).
+Tato vlastnost je zkratkou pro další dvě – [`align-self`](css-align-self.md) a [`justify-self`](css-justify-self.md).
 
 V obecné rovině se zapisuje takto:
 

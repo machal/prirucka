@@ -69,15 +69,15 @@ Vidíte to? Žádná Media Query. A layout drží. Rozvržení je pro šířku o
 
 Budeme si ten kód muset vysvětlit, že?
 
-- `flex: 1 1 20%` – obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to, jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
+- `flex:1 1 20%` – obě strany layoutu mají [zkratkou `flex`](css-flex.md) v prvních dvou číslech (`1 1`) nastaveno automatické rozpínání i smršťování. Je to, jako bychom to zapsali pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md).
 - Základní velikost položek je nastavena užší, než je celková šířka plochy (`20%` a  `40%` dává jen 60 procent). Nám slouží jen k definování výchozího poměru stran. Je to adekvátní k zápisu [vlastností `flex-basis`](css-flex-basis.md). O roztažení do celé šířky se pak postará obsah.
-- Bod zlomu definuje maximální šířka obrázku – `max-width: 300px`.
+- Bod zlomu definuje maximální šířka obrázku – `max-width:300px`.
 
 Teď se ještě více zaměřme na onen bod zlomu, abychom to celé opravdu pochopili.
 
 Jak už víte, flexboxové rozvržení se vždy přizpůsobuje velikosti obsahu. Obrázek v tomto layoutu se chová pružně, takže by se ve zvětšování ani smršťování nikde nezastavil.
 
-Definicí `max-width: 300px` jej omezíme a stanovíme s její pomocí také bod zlomu. Znamená to však, že jakmile layout splní požadavky výchozí šířky, tedy dosáhne oněch `20%` definovaných jako `flex-basis`, prohlížeč prostě vykreslí obě položky vedle sebe.
+Definicí `max-width:300px` jej omezíme a stanovíme s její pomocí také bod zlomu. Znamená to však, že jakmile layout splní požadavky výchozí šířky, tedy dosáhne oněch `20%` definovaných jako `flex-basis`, prohlížeč prostě vykreslí obě položky vedle sebe.
 
 Obrázek pak bude na nejmenších šířkách rodičovského prvku při rozložení vedle sebe opravdu malinký. Mohli bychom to změnit nastavením minimální šířky:
 
@@ -146,11 +146,11 @@ Pojďme si to ukázat přímo v kódu. HTML je pořád stejné, mění se jen ka
 }
 ```
 
-Jádro triku je v zápisu `repeat(auto-fit, minmax(300px, 1fr))`, proto právě této části věnujeme zvýšenou péči:
+Jádro triku je v zápisu `repeat(auto-fit,minmax(300px,1fr))`, proto právě této části věnujeme zvýšenou péči:
 
-- [Funkce `repeat()`](css-repeat.md) zajistí opakované vykreslení buněk mřížky. Prostě místo `1fr 1fr 1fr` uvedeme `repeat(3, 1fr)`.
+- [Funkce `repeat()`](css-repeat.md) zajistí opakované vykreslení buněk mřížky. Prostě místo `1fr 1fr 1fr` uvedeme `repeat(3, 1fr)`.
 - Kouzlo přichází, když namísto počtu uvedeme do prvního parametru `auto-fit`, který zajistí roztahování a smršťování již existujících buněk layoutu.
-- Přidáme ještě minimální a maximální velikost buňky, `minmax(300px, 1fr)`, a máme hotovo.
+- Přidáme ještě minimální a maximální velikost buňky, `minmax(300px, 1fr)`, a máme hotovo.
 
 CodePen: [vrdl.in/mk6of](https://codepen.io/machal/pen/GRrMexj?editors=1100)
 

@@ -17,10 +17,10 @@ a) jde o logické funkce při počítání matematiky v `calc()`
 b) k sázení layoutu v závislosti na směru toku jazyka dokumentu  
 c) jde o obecný název pro vnitřní a vnější okraje prvku
 1. **Jaký je ideální způsob nastavení velikosti písma v dokumentu?**  
-a) v procentech: `html { font-size: 120% }`  
-b) v „root em“: `html { font-size: 1.2rem }`  
-c) v „emkách“: `html { font-size: 1.2em }`
-1. **Co definuji zápisem html {--color: blue}?**  
+a) v procentech: `html {font-size:120%}`  
+b) v „root em“: `html {font-size:1.2rem}`  
+c) v „emkách“: `html {font-size:1.2em}`
+1. **Co definuji zápisem html {--color:blue}?**  
 a) globální proměnnou `--color` s hodnotou `blue`  
 b) jde jen o hack, který zamezí viditelnosti zápisu v Exploreru verze 4  
 c) autorskou vlastnost `--color` s hodnotou `blue`
@@ -35,7 +35,7 @@ c) výsledná hodnota bude vždy výška řádku minus 2 pixely
 1. **Jak se prohlížeče zeptat na podporu vlastnosti transform-style?**  
 a) `@supports transform-style { }`  
 b) `@supports (transform-style) { }`  
-c) `@supports (transform-style: preserve) { }`
+c) `@supports (transform-style:preserve) { }`
 1. **Co je Autoprefixer?**  
 a) automatizační nástroj, který přidává (nejen) prefixy do CSS kódu  
 b) automatizační nástroj pro zprovoznění webu v Exploreru verze 6  

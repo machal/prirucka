@@ -108,7 +108,7 @@ RAM, to je zkratka pro Repeat, Auto, Minmax. V popisování začínám zevnitř 
 - [Funkci `repeat()`](css-repeat.md) už také znáte. Zjednodušuje zápis opakovaných údajů v `grid-template`.
 - Namísto čísla v prvním argumentu `repeat()` se na nás ale k našemu překvapení kouká klíčové slovo `auto-fit`, které prohlížeči říká, aby prostor vyplnil maximálním možným roztažením buněk, jež už na řádku existují.
 
-Jinak řečeno – zápisem `repeat(auto-fit, minmax(150px, 1fr))` říkáme: Dej na řádek libovolný počet položek. Roztáhni je klidně do jejich maximální obsahové šířky, ale nikdy je nesmršťuj pod 150 pixelů.
+Jinak řečeno – zápisem `repeat(auto-fit,minmax(150px,1fr))` říkáme: Dej na řádek libovolný počet položek. Roztáhni je klidně do jejich maximální obsahové šířky, ale nikdy je nesmršťuj pod 150 pixelů.
 
 Výsledek vypadá jinak než v řešení pomocí CSS Multicol, na obrázku uvidíte srovnání.
 

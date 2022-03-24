@@ -55,9 +55,9 @@ Světle šedou barvou jsou vyznačené položky, modře pak uvidíte oblasti mř
 
 Vysvětleme výše uvedený kód:
 
-- Grid je definovaný jako dvousloupcový (`grid-template-columns: 1fr 1fr`) a dvouřádkový (`grid-template-rows: auto auto`).
+- Grid je definovaný jako dvousloupcový (`grid-template-columns:1fr 1fr`) a dvouřádkový (`grid-template-rows:auto auto`).
 - V `grid-template-areas` je pak seznam řetězců, které označují oblasti. To je to, oč zde běží.
-- První řádek hodnot (`"first first"`) říká, že první dvě buňky layoutu patří do oblasti `first`.
+- První řádek hodnot (`"first first"`) říká, že první dvě buňky layoutu patří do oblasti `first`.
 - Tečka (`.`) uvádí prázdnou buňku, kde se nic zobrazovat nemá.
 - Elementy `.first` a `.second` je pak potřeba ručně umístit do vyhrazených oblastí mřížky pomocí vlastnosti `grid-area`.
 

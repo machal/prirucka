@@ -112,7 +112,7 @@ CodePen: [vrdl.in/0wc7v](https://codepen.io/machal/pen/BaBVREb?editors=1100)
 
 ## Podpora v prohlížečích
 
-V problematickém MSIE 11 je potřeba funkci zapisovat jinak: například `repeat(4, 1fr 20px)` jako `(1fr 20px)[4]`. Použití s [Autoprefixerem](css-grid-msie.md) vám ale umožní používat jeden, standardní zápis.
+V problematickém MSIE 11 je potřeba funkci zapisovat jinak: například `repeat(4,1fr 20px)` jako `(1fr 20px)[4]`. Použití s [Autoprefixerem](css-grid-msie.md) vám ale umožní používat jeden, standardní zápis.
 
 Bohužel však není možné použít automatické opakování s klíčovými slovy jako `auto-fill` a `auto-fit`.
 

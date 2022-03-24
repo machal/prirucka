@@ -147,12 +147,12 @@ Hodnoty `left`, `right`, `start` a `end` zatím nemají u této vlastnosti dobro
 
 ### Zarovnání na účaří {#ucari}
 
-- `first baseline`  
+- `first baseline`  
   Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
-- `last baseline`  
+- `last baseline`  
   Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
-  Zkratka pro `first baseline`.
+  Zkratka pro `first baseline`.
 
 Toto v době psaní podporuje Chrome a Edge.
 

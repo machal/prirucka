@@ -43,7 +43,7 @@ Náš formulář rozšíříme. Podívejte se hlavně na poslední řádek. V to
 
 ![kombinování jednotek v různých šířkách okna](../dist/images/original/flexbox-priklady-4.jpg)
 
-Všimněte si, že jsme přepínači a textu nastavili `flex: none`. Nechceme totiž aby se smršťovaly nebo roztahovaly. Prostě drží šířku za každou cenu. A naopak – textovému formulářovému políčku jsme pomocí `flex: auto` přikázali, aby se vždy smršťovalo a roztahovalo co mu šířka rodiče dovolí.
+Všimněte si, že jsme přepínači a textu nastavili `flex:none`. Nechceme totiž aby se smršťovaly nebo roztahovaly. Prostě drží šířku za každou cenu. A naopak – textovému formulářovému políčku jsme pomocí `flex:auto` přikázali, aby se vždy smršťovalo a roztahovalo co mu šířka rodiče dovolí.
 
 Příklad si opět můžete vyzkoušet na CodePenu [cdpn.io/e/jEJbmg](http://cdpn.io/e/jEJbmg).
 

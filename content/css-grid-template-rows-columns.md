@@ -49,8 +49,8 @@ Pokud bychom chtěli zajistit rozvržení do mřížky 4 × 4, použijeme násle
 Vysvětleme:
 
 - `display:grid` – „zapíná“ mřížkové zobrazení.
-- `grid-template-columns:50% 50%` – definuje dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
-- `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich počítá automaticky podle výšky obsahu.
+- `grid-template-columns:50% 50%` – definuje dva sloupečky mřížky. Každý bude zabírat polovinu šířky rodičovského kontejneru.
+- `grid-template-rows:auto auto` – definuje dva řádky mřížky. Hodnota `auto` říká, že se výška každého z nich počítá automaticky podle výšky obsahu.
 
 <p><img src="../dist/images/original/vdlayout/css-grid-template-rows-cols.jpg" width="1920" height="540"  alt="Použití grid-template-columns a grid-template-rows"></p>
 

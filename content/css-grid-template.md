@@ -26,7 +26,7 @@ Vlastnost `grid-template` je součástí [CSS gridu](css-grid.md).
 
 ## Definování sloupečků a řádků {#cols-rows}
 
-V prvním demu si ukážeme `grid-template` jako zkratku pro vlastnosti `grid-template-rows` a `grid-template-columns`:
+V prvním demu si ukážeme `grid-template` jednoduše, jako zkratku pro vlastnosti `grid-template-rows` a `grid-template-columns`:
 
 ```css
 .container {
@@ -110,7 +110,7 @@ CodePen: [vrdl.in/4lx3u](https://codepen.io/machal/pen/JgKyxK?editors=1100)
 
 Je zde pár kulišáren, na které bych vás rád upozornil:
 
-- Všimněte si, že `grid-template` nastavuje `grid-template-areas: none`, takže resetuje i případné dříve nastavené oblasti.
+- Všimněte si, že `grid-template` nastavuje `grid-template-areas:none`, takže resetuje i případné dříve nastavené oblasti.
 - [Funkce `repeat()`](css-repeat.md) zde není povolena, protože se dává přednost vizuálnímu vyjádření mřížky, takzvanému „ASCII artu“.
 - Stejnou syntaxi má další zkratka – [vlastnost `grid`](css-grid-zkratka.md), která ovšem navíc umožňuje nastavení rozměrů implicitního gridu (vlastnosti `grid-auto-columns`, `grid-auto-rows` a `grid-auto-flow`), takže je pravděpodobné, že můžete chtít použít spíše právě ji.
 

@@ -114,8 +114,8 @@ HTML kód zde tak moc složitý není:
 Vysvětlím:
 
 * Pomocí `.row` a `.jc-c` (`justify-content: center`) vytvoříme kontejner pro layout.
-* Každý sloupec rozvržení (`.col`) je od breakpointu „xs“ výše třetinové šířky (`.w-33-xs` = `width: 33%`) a centruje text (`.ta-c` = `text-align: center`).
-* Nadpis je vysázený fontem pro nadpisy (`.ff-h` = `font-family: "Foro Extra Bold"`).
+* Každý sloupec rozvržení (`.col`) je od breakpointu „xs“ výše třetinové šířky (`.w-33-xs` = `width:33%`) a centruje text (`.ta-c` = `text-align:center`).
+* Nadpis je vysázený fontem pro nadpisy (`.ff-h` = `font-family:"Foro Extra Bold"`).
 
 Asi tady vidíte názvy tříd, kterým byste na první dobrou nerozuměli. V pojmenování užitkových tříd používáme [Emmet syntaxi](http://jecas.cz/emmet), takže bude chvilku trvat, než si na ni nový člen týmu zvykne. Na druhou stranu – díky omezení je zde utilit relativně málo. A jaká že jsou ta omezení? Definují je pravidla, o kterých si teď něco povíme.
 

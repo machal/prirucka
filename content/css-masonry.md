@@ -24,7 +24,7 @@ CSS masonry snad jednou bude součástí specifikace [CSS gridu](css-grid.md).
 
 Kodérky a kodéři jsou ovšem dneska nucení se s ním vypořádat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu flexboxu, ale plně to nevyřešil ani grid.
 
-Teď už se však snad blýská na lepší časy. Chystaná třetí verze specifikace gridu totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
+Teď už se však snad blýská na lepší časy. Chystaná třetí verze specifikace gridu totiž počítá s možností zápisu hodnoty `masonry` u vlastností [`grid-template-rows/columns`](css-grid-template.md):
 
 ```css
 .container {
@@ -59,13 +59,13 @@ Je to podobné jako u jedné z vlastností CSS gridu, automatického umístění
 <!-- AdSnippet -->
 
 V současnosti se tyto typy rozvržení dělají pomocí dnes už takřka legendární javascriptové komponenty „Masonry“ od Davida DeSandra.  
-[masonry.desandro.com](https://masonry.desandro.com/)
+[vrdl.in/mas](https://masonry.desandro.com/)
 
 Autorovi všechna čest, je však nutné si přiznat, že z pohledu vykreslovacího (ale i načítacího) výkonu stránky nebude takto razantní ovlivňování layoutu JavaScriptem nikdy optimální. Tohle má prostě dělat prohlížeč a autoři to mají definovat v CSS.
 
 ## Masonry v CSS gridu {#css-grid}
 
-Masonry budeme podle specifikace definovat pomocí `grid-template-rows:masonry` nebo `grid-template-columns:masonry`, podle toho, zda si pro „zdění“ vybereme vodorovný nebo svislý směr.
+Masonry doufejme jednou budeme zapisovat podle specifikace deklaracemi `grid-template-rows:masonry` nebo `grid-template-columns:masonry`, podle toho, zda si pro „zdění“ vybereme vodorovný nebo svislý směr.
 
 Směr definovaný pomocí `masonry` se pak bude označovat jako „osa zdiva“. Druhá osa bude mít stopy mřížky definované jako normální. To bude osa mřížky.
 
@@ -137,7 +137,7 @@ Jako by nám nestačily ty desítky, co jich už máme, řekl by bručoun. Ale n
 
 Pokud máte v kontejneru mřížky více prostoru ve směru rozloženém pomocí masonry, zjistíte, že se položky zarovnají na začátek kontejneru. Počáteční hodnota vlastnosti `align-tracks` je totiž `start`.
 
-Další možnosti jsou podobné jako u vlastností `align-content` a `justify-content` (např. `end` nebo z podstaty věci také `space-between`), s několika modifikacemi:
+Další možnosti zarovnání jsou podobné jako u vlastností `align-content` a `justify-content` (např. `end` nebo z podstaty věci také `space-between`), s několika modifikacemi:
 
 - Hodnota `normal` – u těchto vlastností se chová jako `start`.
 - Hodnota `stretch` – položky automatické velikosti v rozložení se roztáhnou.
@@ -176,9 +176,9 @@ Do doby, než se dokončí specifikace a prohlížeče nativní masonry implemen
 Existují dvě varianty:
 
 - *Masonry*  
-„JavaScript Grid Layout library“ je použitelná s jQuery nebo také s čistým JavaScriptem. Má spoustu možností nastavení. 24 kB dat po minifikaci, 8 kB po gzipu. [masonry.desandro.com](https://masonry.desandro.com/)
+„JavaScript Grid Layout library“ je použitelná s jQuery nebo také s čistým JavaScriptem. Má spoustu možností nastavení. 24 kB dat po minifikaci, 8 kB po gzipu. [vrdl.in/mas](https://masonry.desandro.com/)
 - *Colcade*  
-Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny jako spojování sloupečků (multi-column-spanning) nebo přechody (transitions). [github.com/desandro/colcade](https://github.com/desandro/colcade)
+Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny jako spojování sloupečků (multi-column-spanning) nebo přechody (transitions). [vrdl.in/colca](https://github.com/desandro/colcade)
 
 Další metody alternativního řešení zděného layoutu mají dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScript. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
 

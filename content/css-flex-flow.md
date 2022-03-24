@@ -67,9 +67,9 @@ Jako `flex-direction:column`. Položky flexboxu se skládají do sloupce.
 - `wrap`  
 Odpovídá `flex-wrap:wrap`. Kontejner flexboxu umožní položkám, aby se zalomily na další řádek.
 - `column wrap`  
-Ekvivalentní k `flex-direction:column; flex-wrap:wrap`.
+Ekvivalentní k `flex-direction:column;flex-wrap:wrap`.
 - `row-reverse wrap`  
-Ekvivalentní k `flex-direction:row-reverse; flex-wrap:wrap`.
+Ekvivalentní k `flex-direction:row-reverse;flex-wrap:wrap`.
 
 Všechno je to dobře vidět v online ukázce na CodePenu, kde si také můžete měnit velikost písma, šířku viewportu nebo to jinak rozbíjet a při tom se to všechno naučit.
 
@@ -79,6 +79,6 @@ CodePen: [vrdl.in/3zji8](https://codepen.io/machal/pen/JjReqbB?editors=0000)
 
 Podpora vlastnosti `flex-flow` je přímo luxusní. Podívejte se na CanIUse a uvidíte samá zelená políčka, včetně Internet Exploreru. [CanIUse.com](https://caniuse.com/mdn-css_properties_flex-flow)
 
-Jedinou vadou na kráse je kombinace hodnot `display:inline-flex` a `flex-flow: column wrap`, nepříliš známá a nepříliš omezující chyba, kterou jsme se zabývali už [u vlastnosti `flex-direction`](css-flex-direction.md).
+Jedinou vadou na kráse je kombinace hodnot `display:inline-flex` a `flex-flow:column wrap`, nepříliš známá a nepříliš omezující chyba, kterou jsme se zabývali už [u vlastnosti `flex-direction`](css-flex-direction.md).
 
 <!-- AdSnippet -->

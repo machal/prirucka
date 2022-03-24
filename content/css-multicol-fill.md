@@ -22,7 +22,7 @@ Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení
 
 </div>
 
-V případě nastavení `column-fill:balance` se prohlížeče snaží minimalizovat odchylky výšky sloupců a zároveň ctít zalamování, ošetřovat typografické vdovy a sirotky, tedy sázet text opravdu hezky.
+V případě zápisu deklarace `column-fill:balance` se prohlížeče snaží minimalizovat odchylky výšky sloupců a zároveň ctít zalamování, ošetřovat typografické vdovy a sirotky, tedy sázet text opravdu hezky.
 
 Podívejme se na možné hodnoty:
 

@@ -27,9 +27,9 @@ a) šířku nebo výšku položky
 b) vlastnosti `flex-grow` a `flex-shrink`  
 c) vlastnosti `flex-grow`, `flex-shrink` a `flex-basis`
 1. **Čemu odpovídá zápis flex:auto?**  
-a) `flex: 1 1 auto`  
-b) `flex: 0 0 auto`  
-c) `flex: 0 1 auto`
+a) `flex:1 1 auto`  
+b) `flex:0 0 auto`  
+c) `flex:0 1 auto`
 
 ---
 

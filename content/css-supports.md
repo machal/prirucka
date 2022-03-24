@@ -170,7 +170,7 @@ V prvním řádku vidíme verzi se dvěma parametry: v prvním je prostě hodnot
 
 Další tři řádky ukazují variantu, kdy do textu uvedeme `DOMString` rovnou s hodnotou celé podmínky.
 
-Ti z vás, které jsem ještě neunavil detailním líčením, si možná všimli detekce autorské vlastnosti (nebo též „custom property“ či „CSS proměnné“) ve třetím řádku (`(--foo: red)`). Ano, i tu je možné detekovat.
+Ti z vás, které jsem ještě neunavil detailním líčením, si možná všimli detekce autorské vlastnosti (nebo též „custom property“ či „CSS proměnné“) ve třetím řádku (`(--foo: red)`). Ano, i tu je možné detekovat.
 
 <div class="web-only" markdown="1">
 → *Související: [CSS proměnné nebo také autorské vlastnosti](css-promenne.md)*
@@ -217,7 +217,7 @@ První omezené použití `@supports` vychází z principů fungování prohlí�
 
 Pokud si totiž prohlížeč „myslí“, že vlastnost umí, vrátí na dotaz kladnou odpověď. Ale soudruzi z NDR mohli někde v implementaci vlastnosti udělat chybu.
 
-Dalším omezením je samotná podpora vlastnosti, v tomto případě ale záleží na použití: `@supports` nepodporuje žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
+Dalším omezením je samotná podpora vlastnosti, v tomto případě ale záleží na použití: `@supports` nepodporuje vůbec žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
 
 Je ovšem otázka, jak moc tahle chybějící podpora vadí. Mně vůbec. A hned vám řeknu proč.
 

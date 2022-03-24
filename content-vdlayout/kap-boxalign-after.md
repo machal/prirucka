@@ -11,13 +11,13 @@ a) `-items` = položky, `-self` = položka,  `-content` = volný prostor
 b) `-items` = položky, `-self` = kontejner, `-content` = obsah v položce  
 c) je to  chyták, není v tom řád, jdu se raději opít  
 1. **Jak zarovnat položky doprostřed buněk layoutu na vodorovné ose?**  
-a) `align-items: center`  
-b) `justify-items: center`  
-c) `justify-layout: center`  
+a) `align-items:center`  
+b) `justify-items:center`  
+c) `justify-layout:center`  
 1. **Jak zarovnat položku ke spodní a pravé hraně buňky layoutu?**  
-a) `place-self: right bottom`  
-b) `place-item: end end`  
-c) `place-self: end end`
+a) `place-self:right bottom`  
+b) `place-item:end end`  
+c) `place-self:end end`
 1. **Proč je vhodné používat pro mezery v layoutu gap?**  
 a) další chyták, tohle naopak vůbec vhodné není  
 b) nezapočítává se do rozměrů položek a je možné `gap` nastavit pro celý layout  
@@ -27,9 +27,9 @@ a) mezeru nulové šířky a výšky
 b) mezeru o šířce `1em`  
 c) mezeru o šířce `10px`
 1. **Jak přesunout položku na první místo vizuálního pořadí?**  
-a) `order: 0`  
-b) `order: 1`  
-c) `order: -1`
+a) `order:0`  
+b) `order:1`  
+c) `order:-1`
 
 ---
 

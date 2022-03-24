@@ -35,7 +35,7 @@ Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vy
 | `row`     | Výchozí hodnota. Prvky layoutu se vykreslují po řádcích. |
 | `column`  | Prvky layoutu se vykreslují po sloupcích. |
 | `dense`   | Vykresluje se po řádcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků. |
-| `column dense`   | Vykresluje se po sloupcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků.|
+| `column dense`   | Vykresluje se po sloupcích, ale prohlížeč může vyplnit mezery změnou pořadí prvků.|
 
 </div>
 
@@ -131,7 +131,7 @@ Layout je definovaný takto:
 Vysvětlíme:
 
 - Ve vlastnosti [`grid-template-columns`](css-grid-template-rows-columns.md) uvádíme, že je možný libovolný počet sloupců ([funkce `repeat()`](css-repeat.md)), ale každý musí být minimálně 120px široký – [`minmax(120px, 1fr)`](css-minmax.md).
-- `grid-auto-flow: dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
+- `grid-auto-flow:dense` říká prohlížeči: Vykresli to zahuštěně, takže nezáleží na pořadí prvků, ale na tom, aby ve směru layoutu (což je tady `row`) nezůstaly mezery.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-auto-flow-dense.jpg" width="1600" height="900" alt="grid-auto-flow: dense">

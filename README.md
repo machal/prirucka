@@ -339,6 +339,7 @@ Značku `<code>`, respektive její Markdown obdobu používáme jen výjimečně
 
 - V bloku kódu.
 - Uvnitř textu. Např. „Značka `<html>` slouží…“. Možné to je uvnitř odstravců, odrážek, ale i uvnitř tabulek.
+- Uvnitř textu zkracujeme co to jde, hlavně kvůli zalamování. Mezery, které v kódu nemusejí být, dávám pryč, nutné mezery nahrazujeme pomocí ` ` ([three-em-space](https://qwerty.dev/whitespace/)).
   
 `<code>` nepoužíváme:
 

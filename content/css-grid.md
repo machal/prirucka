@@ -51,7 +51,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
     <p><a href="css-grid-template-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-rows-columns.jpg" alt="CSS vlastnost grid-template-columns/rows" /></a></p>
     <p>
       Definice explicitní mřížky. <br>
-      <code>grid-template-columns:1fr 1fr 1fr; grid-template-rows:1fr 1fr;</code>
+      <code>grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr;</code>
       </p>
   </article>
 
@@ -60,7 +60,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
     <p><a href="css-grid-template-areas.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-areas.jpg" alt="CSS vlastnost grid-template-areas" /></a></p>
     <p>
       Pojmenování oblastí. <br>
-      <code>grid-template-areas: "one two"</code>
+      <code>grid-template-areas:"one two"</code>
     </p>
   </article>
 
@@ -69,7 +69,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
     <p><a href="css-grid-template.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template.jpg" alt="CSS vlastnost grid-template" /></a></p>
     <p>
       Zkratka pro definici explicitní mřížky. <br>
-      <code>grid-template:"one one two" 1fr ⏎ "one one two" 1fr / 1fr 1fr 1fr;</code>
+      <code>grid-template:"one one two" 1fr ⏎ "one one two" 1fr / 1fr 1fr 1fr;</code>
     </p>
   </article>
 
@@ -93,7 +93,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
     <p><a href="css-grid-zkratka.md"><img src="../dist/images/small/vdlayout/schema-css-grid-zkratka.jpg" alt="CSS zkratka grid" /></a></p>
     <p>
       Zkratka pro definici všeho. <br>
-      <code>grid:auto-flow 1fr / 100px;</code>
+      <code>grid:auto-flow 1fr / 100px;</code>
     </p>
   </article>
 
@@ -112,7 +112,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
   <article role="article">
     <h4 id="grid-columnrow"><a href="css-grid-row-column.md">grid-column/row</a></h4>
     <p><a href="css-grid-row-column.md"><img src="../dist/images/small/vdlayout/schema-css-grid-row-column.jpg" alt="CSS vlastnost grid-column/row" /></a></p>
-    <p>Umístění do explicitní mřížky. <br> <code>grid-column:2 / 3;</code></p>
+    <p>Umístění do explicitní mřížky. <br> <code>grid-column:2 / 3;</code></p>
   </article>
 
   <article role="article">
@@ -140,7 +140,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
     <p><a href="css-jednotka-fr.md"><img src="../dist/images/small/vdlayout/schema-css-jednotka-fr.jpg" alt="CSS jednotka fr" /></a></p>
     <p>
       Jednotka pro podíl na celku. <br>
-      <code>grid-template-columns:1fr 2fr;</code>
+      <code>grid-template-columns:1fr 2fr;</code>
     </p>
   </article>
 
@@ -149,14 +149,14 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
     <p><a href="css-repeat.md"><img src="../dist/images/small/vdlayout/schema-css-repeat.jpg" alt="CSS funkce repeat()" /></a></p>
     <p>
       Funkce zkrácení opakujících se zápisů. <br>
-      <code>grid-template-columns:repeat(8, 1fr);</code>
+      <code>grid-template-columns:repeat(8,1fr);</code>
     </p>
   </article>
 
   <article role="article">
     <h4 id="funkce-minmax"><a href="css-minmax.md">funkce minmax()</a></h4>
     <p><a href="css-minmax.md"><img src="../dist/images/small/vdlayout/schema-css-minmax.jpg" alt="CSS funkce minmax()" /></a></p>
-    <p>Omezení minima a maxima v rozměru. <br> <code>grid-template-columns:minmax(100px, 1fr);</code></p>
+    <p>Omezení minima a maxima v rozměru. <br> <code>grid-template-columns:minmax(100px,1fr);</code></p>
   </article>
 
 </div>

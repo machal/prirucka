@@ -164,7 +164,7 @@ aside {
 Stručně to popišme:
 
 - Klíčová slova `max-content` a `min-content` dávají instrukci, aby se prvek nezvětšoval nad maximální nebo nezmenšoval pod minimální velikost obsahu.
-- Klíčové slovo `auto` zde odpovídá `minmax(min-content, max-content)`,  takže nejmenší i největší možné rozměry této buňky layoutu jsou opět na prohlížeči.
+- Klíčové slovo `auto` zde odpovídá `minmax(min-content, max-content)`,  takže nejmenší i největší možné rozměry této buňky layoutu jsou opět na prohlížeči.
 - Třída `container` určuje třísloupcový layout. Prvek `aside` v něm není definován. Přidáme jej dynamicky, což má za následek nechtěné překreslení layoutu.
 
 O funkci `minmax()` a klíčových slovech `max-content` a `min-content` se více dozvíte [v kapitole o gridu](css-minmax.md).

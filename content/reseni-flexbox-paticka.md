@@ -35,7 +35,7 @@ body {
 
 ## 2. Obsah „flexí“, ale nezmenší se pod délku textu
 
-V dalším kroku musíme obsahovému bloku jemně oznámit, aby se roztahoval na výšku co mu síly stačí (`flex-grow: 1`), ale nezmenšoval se pod svou výchozí velikost (`flex-shrink: 0`), která je určená výškou obsahu (`flex-basis: auto`). 
+V dalším kroku musíme obsahovému bloku jemně oznámit, aby se roztahoval na výšku co mu síly stačí (`flex-grow:1`), ale nezmenšoval se pod svou výchozí velikost (`flex-shrink:0`), která je určená výškou obsahu (`flex-basis: auto`).
 
 ```css
 .content {
@@ -45,7 +45,7 @@ V dalším kroku musíme obsahovému bloku jemně oznámit, aby se roztahoval na
 }
 ```
 
-Jistě, zkratka `flex: 1 0 auto` by udělala to samé, ale kvůli snadnějšímu pochopení jsem zvolil doslovný zápis.
+Jistě, zkratka `flex:1 0 auto` by udělala to samé, ale kvůli snadnějšímu pochopení jsem zvolil doslovný zápis.
 
 ## 3. Patička „neflexí“
 
@@ -59,7 +59,7 @@ Nakonec nastavíme samotnou patičku. Ta bude mít výšku podle aktuálního ob
 }
 ```
 
-Totéž bychom mohli zapsat zkratkou `flex: 0 0 auto` nebo „superzkratkou“ `flex: none`. Prostě patičce oznámit, aby „neflexila“, nechovala se pružně.  Více najdete [v referenci položky flexboxu](css3-flexbox-polozky.md).
+Totéž bychom mohli zapsat zkratkou `flex:0 0 auto` nebo „superzkratkou“ `flex:none`. Prostě patičce oznámit, aby „neflexila“, nechovala se pružně.  Více najdete [v referenci položky flexboxu](css3-flexbox-polozky.md).
 
 Řešení bude fungovat ve všech dnešních prohlížečích. Patičku zobrazenou „postaru“ uvidíte jen v Internet Exploreru verze 9 a starších.
 

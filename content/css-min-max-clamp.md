@@ -8,9 +8,9 @@ Funkce, které se uvádějí místo hodnot v deklaracích stylů, umožňují po
 
 |   Funkce     |   Význam     |
 |--------------|--------------|
-| `min()`      |  Vrací nejmenší hodnotu z argumentů oddělených čárkou. <br> Např. `min(50%, 200px)`. |
-| `max()`      |  Vrací největší hodnotu z argumentů oddělených čárkou. <br> Např. `max(50%, 10vw, 200px)`. |
-| `clamp()`    |  Vrací prostřední hodnotu, pokud není menší než první a větší než třetí. <br> Např. `clamp(100px, 20%, 200px)`. |
+| `min()`      |  Vrací nejmenší hodnotu z argumentů oddělených čárkou. <br> Např. `min(50%, 200px)`. |
+| `max()`      |  Vrací největší hodnotu z argumentů oddělených čárkou. <br> Např. `max(50%, 10vw, 200px)`. |
+| `clamp()`    |  Vrací prostřední hodnotu, pokud není menší než první a větší než třetí. <br> Např. `clamp(100px, 20%, 200px)`. |
 
 Jsou součástí čtvrté verze specifikace „CSS Values and Units Module“, podporují je všechny moderní prohlížeče a ještě k tomu jsou užitečné.
 
@@ -54,7 +54,7 @@ Zkusme si představit totéž pro funkci `max()`:
 
 Šířka `.box-1` bude určena větší pixelovou hodnotou vypočtenou z obou atributů. Jak asi sami tušíte, většinou se použije hodnota `50%` a jen na opravdu malých rozlišeních prohlížeč vybere `100px`.
 
-V tomto případě jde o obdobu zápisu `width:50%;  min-width:100px;`. V ukázce to sami uvidíte.
+V tomto případě jde o obdobu zápisu `width:50%;min-width:100px;`. V ukázce to sami uvidíte.
 
 CodePen: [vrdl.in/1jgam](https://codepen.io/machal/pen/gOmeoEj?editors=1100)
 
@@ -98,7 +98,7 @@ Pokud si to budete zkoušet naživo, zkuste si hýbat se šířkou viewportu.
 
 CodePen: [vrdl.in/lkmsg](https://codepen.io/una/pen/rNeGNVL)
 
-Ve specifikaci se uvádí, že funkci `clamp()` je možné zapsat pomocí `min()` a `max()` jako `max(MIN, min(VAL, MAX))`. Nevím jak vám, ale mně to moc při snaze pochopit funkci `clamp()` nepomohlo.
+Ve specifikaci se uvádí, že funkci `clamp()` je možné zapsat pomocí `min()` a `max()` jako `max(MIN, min(VAL, MAX))`. Nevím jak vám, ale mně to moc při snaze pochopit funkci `clamp()` nepomohlo.
 
 ## Krása univerzálnosti {#univerzalnost}
 
@@ -182,9 +182,9 @@ Omezení velikosti textu pomocí funkcí `max()` nebo `clamp()` může být prot
 
 Funkce `min()`, `max()` a `clamp()` mají v DNA pár důležitých vlastností, které se mi jinam nevešly, ale přesto si zaslouží vaši pozornost:
 
-- Funkce můžete skládat a zanořovat. Např. `font-size:max(min(0.5vw, 1em),2rem)`. Není ale garantováno, že vás z toho nerozbolí hlava.
-- Stejně jako [funkce `calc()`](css3-calc.md) umožňují porovnávací funkce používat matematické výrazy se sčítáním (+), odčítáním (-), násobením (*) a dělením (/) jako součástí hodnot. Zápis `font-size:max(calc(0.5vw - 1em),2rem)` je tudíž stejný jako `font-size:max(0.5vw - 1em,2rem)`.
-- Co když ve funkci `clamp()` prohodíte minimum a maximum? Vyhraje minimum. Například zápis `clamp(100px, …, 50px)` bude vracet hodnotu `100px`, čímž překročí maximum uvedené ve třetím argumentu.
+- Funkce můžete skládat a zanořovat. Např. `font-size:max(min(0.5vw,1em),2rem)`. Není ale garantováno, že vás z toho nerozbolí hlava.
+- Stejně jako [funkce `calc()`](css3-calc.md) umožňují porovnávací funkce používat matematické výrazy se sčítáním (+), odčítáním (-), násobením (*) a dělením (/) jako součástí hodnot. Zápis `font-size:max(calc(0.5vw - 1em),2rem)` je tudíž stejný jako `font-size:max(0.5vw - 1em,2rem)`.
+- Co když ve funkci `clamp()` prohodíte minimum a maximum? Vyhraje minimum. Například zápis `clamp(100px,…,50px)` bude vracet hodnotu `100px`, čímž překročí maximum uvedené ve třetím argumentu.
 
 ## Podpora v prohlížečích
 

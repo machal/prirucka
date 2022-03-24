@@ -23,7 +23,7 @@ Jednotka `fr` je součástí specifikace [CSS gridu](css-grid.md).
 
 </div>
 
-Využívá se ve vlastnostech popisujících mřížku, jako jsou [`grid-template-columns/rows`](css-grid-template-rows-columns.md) nebo [grid-auto-columns/rows](css-grid-auto-rows-columns.md).
+Využívá se ve vlastnostech popisujících mřížku, jako jsou [`grid-template-columns`/`-rows`](css-grid-template-rows-columns.md) nebo [`grid-auto-columns`/`-rows`](css-grid-auto-rows-columns.md).
 
 Ukažme si nějaký kód:
 
@@ -38,7 +38,7 @@ Prostor se rozdělí na tři díly, ale vykreslí do dvou buněk gridu. První b
 
 CodePen: [vrdl.in/i6leb](https://codepen.io/machal/pen/pozNbmQ?editors=1100)
 
-Raději zdůrazněme, že šířka buňky se ani zde nikdy nezmenší pod šířku obsahu. Rozdělení `1fr 2fr` tedy bude platit jen v případě dostatku prostoru.
+Raději zdůrazněme, že šířka buňky se ani zde nikdy nezmenší pod šířku obsahu. Rozdělení `1fr 2fr` tedy bude platit jen v případě dostatku prostoru.
 
 ## Je (a není) to jako procenta {#procenta}
 
@@ -73,7 +73,7 @@ Jednotky fr a %. Kdo s koho?
 
 Výhoda `fr` oproti procentům? Nemusíme počítat prvky gridu a řešit nastavení box modelu.
 
-Procentuální grid v demu nastavujeme jako `grid-template-columns: 33.3% 33.3% 33.3%`. Může to být fajn, ale procentuální hodnotu musíme vypočíst podle počtu sloupců v HTML. No a pokud by se nám jejich počet změnil, nezbývá než upravovat také CSS.
+Procentuální grid ve výše uvedeném demu nastavujeme pomocí deklarace `grid-template-columns:33.3% 33.3% 33.3%`. Může to být fajn, ale procentuální hodnotu musíme vypočíst podle počtu sloupců v HTML. No a pokud by se nám jejich počet změnil, nezbývá než upravovat také CSS.
 
 Další problém je v box modelu, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`). Bez změny počítání box modelu pomocí vlastnosti `box-sizing` nám prvky přetečou z rodičovského kontejneru.
 
@@ -92,8 +92,7 @@ Jednotka fr a podíl na zbytku plochy nevyužité jinými jednotkami.
 </figcaption>
 </figure>
 
-
-Pomocí `grid-template-columns: 80px 5em 2fr 1fr` definujeme čtyřsloupcovou mřížku. První sloupec má fixní šířku `80px`. Druhý má šířku `5em`, takže jeho šířka bude záležet na velikosti písma rodičovského prvku. Pokud nám zbude nějaký prostor, prohlížeč jej vydělí třemi (`2fr` + `1fr`) a rozpočítá na dvě buňky definované podílovou jednotkou.
+Pomocí `grid-template-columns:80px 5em 2fr 1fr` definujeme čtyřsloupcovou mřížku. První sloupec má fixní šířku `80px`. Druhý má šířku `5em`, takže jeho šířka bude záležet na velikosti písma rodičovského prvku. Pokud nám zbude nějaký prostor, prohlížeč jej vydělí třemi (`2fr` + `1fr`) a rozpočítá na dvě buňky definované podílovou jednotkou.
 
 CodePen: [vrdl.in/jhfwd](https://codepen.io/machal/pen/XWrjZRV?editors=1100)
 
@@ -128,8 +127,8 @@ Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to
 
 ## Poznámky na závěr {#poznamky}
 
-* Asi jste postřehli, že `grid-template-columns: 1fr` se chová podobně jako bezjednotkový údaj ve [flexboxu](css-flexbox.md), např. `flex: 1`.
-* `fr` není jednotka délky a nedá se s nimi ani kombinovat. Nemůžeme tedy použít funkci [calc()](css3-calc.md) a výraz jako `calc(1fr - 20px)`.
+* Asi jste postřehli, že `grid-template-columns:1fr` se chová podobně jako bezjednotkový údaj ve [flexboxu](css-flexbox.md), např. `flex:1`.
+* `fr` není jednotka délky a nedá se s nimi ani kombinovat. Nemůžeme tedy použít funkci [calc()](css3-calc.md) a výraz jako `calc(1fr - 20px)`.
 
 ## Podpora v prohlížečích {#podpora}
 

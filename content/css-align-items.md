@@ -82,12 +82,12 @@ Vlastnosti `align-items` můžete předávat všechny hodnoty z jednotlivých ob
 
 ### Podle účaří
 
-- `first baseline`  
+- `first baseline`  
   Zarovnání na účaří prvního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `start`.
-- `last baseline`  
+- `last baseline`  
   Zarovnání na účaří posledního řádku. Pokud hodnotu v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
-  Zkratka pro `first baseline`.
+  Zkratka pro `first baseline`.
 
 ### Pro přetečení
 
@@ -104,7 +104,7 @@ Toto v době psaní podporuje jen Firefox.
 
 Stav k únoru 2022:
 
-V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvouslovná pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
+V rámci flexboxového layoutu nefungují ve většině prohlížečů s výjimkou Firefoxu hodnoty `left`, `right`, `safe`, `unsafe`, `start` a `end`. V IE11 navíc nefungují ani dvouslovná pojmenování pro zarovnání na účaří: `first baseline` nebo `last baseline`.
 
 V rámci rozvržení pomocí gridu tuto vlastnost nepodporuje jen MSIE 11, ale tam by měl její podporu nahrazovat [Autoprefixer](autoprefixer.md). Jinak je to v gridu zcela v pořádku.
 

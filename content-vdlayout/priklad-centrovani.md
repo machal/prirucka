@@ -128,7 +128,7 @@ Než k němu přejdeme, zmíním ještě jednu možnost, poměrně populární u
 
 Tohle řešení bude v řadě případů pro centrování z obou stran ve flexboxu fungovat perfektně.
 
-O jeho „čistotě“ se ovšem můžeme přít. Zkušenější mohou již `justify-content` dobře znát, a tedy se při jeho použití ve složitějších příkladech nenapálit.
+O jeho „čistotě“ se ovšem můžeme dlouho přít. Zkušenější již mohou `justify-content` dobře znát, a tedy se při jeho použití ve složitějších příkladech nenapálit.
 
 Pro méně zkušené může být nepříjemný fakt, že vlastnost neslouží k zarovnání položek, ale prostoru mezi nimi. Tohle vás může někdy doběhnout.
 

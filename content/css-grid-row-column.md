@@ -23,9 +23,7 @@ Vlastnosti `grid-column` a `grid-row` jsou součástí specifikace [CSS gridu](c
 
 </div>
 
-Ve skutečnosti se jedná o zkratky pro vlastnosti `grid-column-start`, `grid-column-end` a `grid-row-start`, `grid-row-end`.
-
-Mně však připadá praktičtější používání zkratek, takže se zaměříme na ně:
+Jedná se o zkratky pro vlastnosti `grid-column-start` a také `grid-column-end` a `grid-row-start`, `grid-row-end`. Používání zkratek je praktičtější, jak sami uvidíte. Takto se zapisují:
 
 ```css
 grid-row: <grid-row-start> / <grid-row-end>;
@@ -140,8 +138,8 @@ Podívejme se teď na tentýž příklad jako v první ukázce, jen si jeho pozi
 
 Vysvětlíme:
 
-- Zápis `span 1` u `grid-column` znamená „zabírá jeden sloupec“. Tady je to zbytečné, fungovalo by to i bez tého hodnoty.
-- Zápis `span 2` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row: 2 / 4`.
+- Zápis `span 1` u `grid-column` znamená „zabírá jeden sloupec“. Tady je to zbytečné, fungovalo by to i bez tého hodnoty.
+- Zápis `span 2` u `grid-row` už je zajímavější. Říkáme tím, že má zabrat dva řádky buněk mřížky. Může to tedy být čitelnější než zápis `grid-row:2/4`.
 
 CodePen: [vrdl.in/iks84](https://codepen.io/machal/pen/LwWxWy?editors=1100)
 
@@ -170,7 +168,7 @@ Záporná čísla ve vlastnostech `grid-row` a `grid-column` počítají umíst�
 }
 ```
 
-Kódem `grid-row: -1 / -3` říkáme: Chci umístění od první linky mřížky zezdola až po třetí linku mřížky v tomtéž směru.
+Kódem `grid-row:-1/-3` říkáme: Chci umístění od první linky mřížky zezdola až po třetí linku mřížky v tomtéž směru.
 
 CodePen: [vrdl.in/wpdxy](https://codepen.io/machal/pen/VoppWg?editors=1100)
 

@@ -78,7 +78,7 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 
 „Fallback alignment“, nebo také náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
 
-Například pro uplatnění hodnoty `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky) je nutné, aby se v kontejneru vyskytoval více než jeden předmět neboli položka.
+Například pro to, aby platila hodnota `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky), je nutné v kontejneru mít více než jeden předmět neboli položku.
 
 Pokud tato podmínka není splněna, specifikace předepisuje jako náhradní řešení hodnotu `flex-start` nebo `start`.
 
@@ -205,12 +205,12 @@ Týká se těchto vlastností:
 
 Můžete použít tyto hodnoty:
 
-- `first baseline`  
+- `first baseline`  
   Zarovnání na účaří prvního řádku. Pokud ale v daném kontextu nelze použít, zarovná se jako `start`.
-- `last baseline`  
+- `last baseline`  
   Zarovnání na účaří posledního řádku. Pokud ale v daném kontextu nelze použít, zarovná se jako `end`.
 - `baseline`  
-  Zkratka pro `first baseline`.
+  Zkratka pro `first baseline`.
 
 V demíčku navážeme na strukturu HTML z předchozí ukázky.
 

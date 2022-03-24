@@ -100,8 +100,8 @@ CodePen: [vrdl.in/zwcia](https://codepen.io/machal/pen/jOMaMdq?editors=1000)
 V ukázce byste měli vidět tři možnosti, jak zalamování zakázat:
 
 - `auto` – nastavuje všechny tři vlastnosti na tuto hodnotu.
-- `break-before: column` – vynucuje zalomení nadpisů vždy do nového sloupce.
-- `break-inside: avoid` – zakazujeme zalomení uvnitř nadpisu.
+- `break-before:column` – vynucuje zalomení nadpisů vždy do nového sloupce.
+- `break-inside:avoid` – zakazujeme zalomení uvnitř nadpisu.
 
 V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu bychom to nemuseli zapisovat, je to výchozí stav, ale vypadá to takto:
 
@@ -123,7 +123,7 @@ Výše uvedený příklad mi plně funguje jen v nejnovějším Safari (verze 14
 
 Tabulky na webu CanIUse hovoří o různorodé podpoře, ale těm zeleným políčkům se na základě mých testů nedá příliš věřit. [caniuse.com/break-](https://caniuse.com/?search=break-%20multi-)
 
-Na jiném místě CanIUse se o Chromu uvádí, že ve všech zde zmíněných vlastnostech nyní (v únoru 2022) nepodporuje hodnoty `avoid-column`, `column` a `avoid`, což jsou ty potenciálně nejužitečnější. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
+Na jiném místě CanIUse se o Chromu uvádí, že ve všech zde zmíněných vlastnostech nyní (v únoru 2022) nepodporuje hodnoty `avoid-column`, `column` a `avoid`, což jsou ty možná nejužitečnější. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 
 <!-- AdSnippet -->
 

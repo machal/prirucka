@@ -105,7 +105,7 @@ Na kontejneru definujeme, jak se budou zarovnávat jednotlivé položky.
   <article role="article">
     <h4 id="place-items"><a href="css-place-items.md">place-items</a></h4>
     <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.jpg" alt="Vlastnost place-items" /></a></p>
-    <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items:end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
+    <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items:end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
   </article>
 
 </div>
@@ -135,7 +135,7 @@ Pro konkrétní položku definujeme, jak se bude zarovnávat.
   <article role="article">
     <h4 id="place-self"><a href="css-place-self.md">place-self</a></h4>
     <p><a href="css-place-self.md"><img src="../dist/images/small/vdlayout/css-place-self-schema.jpg" alt="Vlastnost place-self" /></a></p>
-    <p>Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. <code>place-self:end center</code> zarovná položku ke spodní hraně a vodorovně doprostřed.</p>
+    <p>Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. <code>place-self:end center</code> zarovná položku ke spodní hraně a vodorovně doprostřed.</p>
   </article>
 
 </div>
@@ -173,7 +173,7 @@ Vlastnosti, které řídí rozdělení volného prostoru, jenž uvnitř kontejne
   <article role="article">
     <h4 id="place-content"><a href="css-place-content.md">place-content</a></h4>
     <p><a href="css-place-content.md"><img src="../dist/images/small/vdlayout/css-place-content-schema.jpg" alt="Vlastnost place-content" /></a></p>
-    <p>Zkratka pro rozdělení prostoru v obou směrech. <br> Např. <code>place-content:start space-between</code> zarovná položky k horní hraně a vodorovně dělí prostor.</p>
+    <p>Zkratka pro rozdělení prostoru v obou směrech. <br> Např. <code>place-content:start space-between</code> zarovná položky k horní hraně a vodorovně dělí prostor.</p>
   </article>
 
 </div>

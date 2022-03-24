@@ -184,7 +184,7 @@ Co jsme zde udělali?
 
 - Šabloně layoutu ([vlastnosti `grid-template-`](css-grid-template-rows-columns.md)) nastavíme směr do řádků (`-rows`).
 - V layoutu pak máme tři prvky a každý si ponechá šířku podle obsahu, což definujeme klíčovým slovem `auto`.
-- Abychom nemuseli zapisovat `grid-template-rows:auto auto auto`, použijeme [funkci `repeat()`](css-repeat.md), která nám to zápisem `repeat(3, auto)` usnadní.
+- Abychom nemuseli zapisovat `grid-template-rows:auto auto auto`, použijeme [funkci `repeat()`](css-repeat.md), která nám to zápisem `repeat(3, auto)` usnadní.
 
 Je to jednoduché, že? Ale teď vám řeknu, že vás u této ukázky trošku tahám za nos. Mohlo by to totiž být ještě jednodušší.
 

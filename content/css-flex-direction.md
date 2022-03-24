@@ -92,11 +92,11 @@ Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) (viz sedmá ka
 
 ## Vliv na flex-basis {#flex-basis}
 
-Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basis`](css-flex-basis.md) nastavujete výšku, tedy vlastnost `height`, nikoliv šířku, `width`.
+Pokud je vlastnost `flex-direction` nastaveno na hodnotu `column`, jinou [vlastností `flex-basis`](css-flex-basis.md) nastavujete výšku, tedy vlastnost `height`, nikoliv šířku, `width`.
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je tzv. flexbug #14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou lidé skoro nenarazí.
+Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je tzv. flexbug #14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou lidé skoro nenarazí.
 
 <div class="ebook-only" markdown="1">
 

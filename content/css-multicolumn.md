@@ -85,7 +85,7 @@ To, co je na obrázcích zvýrazněno černě, ovlivňuje uvedená vlastnost.
     <p><a href="css-multicol-columns.md"><img src="../dist/images/small/vdlayout/css-multicol-columns-scheme.jpg" alt="Vlastnost column"></a></p>
     <p>
       Počet sloupců a jejich šířka.
-      <br>Např. <code>columns:3 20em</code> – maximálně tři sloupce o šířce <code>20em</code>.
+      <br>Např. <code>columns:3 20em</code> – maximálně tři sloupce o šířce <code>20em</code>.
     </p>
   </article>  
   <article role="article">
@@ -93,7 +93,7 @@ To, co je na obrázcích zvýrazněno černě, ovlivňuje uvedená vlastnost.
      <p><a href="css-multicol-gap-rule.md"><img src="../dist/images/small/vdlayout/css-multicol-gap-rule-scheme.jpg" alt="Vlastnost gap a rule"></a></p>
      <p>
       Definice mezer a oddělovačů mezi sloupci. <br>
-      Např. <code>gap:3em; column-rule:dotted lightgrey;</code> – mezera <code>3em</code>, oddělující čára tečkovaná a světle šedá.</p>
+      Např. <code>gap:3em;column-rule:dotted lightgrey;</code> – mezera <code>3em</code>, oddělující čára tečkovaná a světle šedá.</p>
    </article>  
   <article role="article">
     <h4><a href="css-multicol-fill.md">column-fill</a></h4>

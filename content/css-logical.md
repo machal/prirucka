@@ -6,7 +6,7 @@ V CSS často pracujeme s rozměry v určitém směru. Občas se ale může stát
 
 Logické vlastnosti a rozměry (podle specifikace „CSS Logical Properties and Values“) vznikly jako alternativa k fyzickým vlastnostem a rozměrům.
 
-Například místo fyzického `margin-left:1rem` napíšete `margin-inline-start:1rem`. Bude to pak univerzální pro češtinu, arabštinu i jazyky případně zapisované shora dolů. Vnější okraj se totiž pokaždé vykreslí na jiné straně.
+Například místo fyzického zápisu `margin-left:1rem` můžete uvést `margin-inline-start:1rem`. Bude to pak univerzální pro češtinu, arabštinu i jazyky případně zapisované shora dolů. Vnější okraj se totiž pokaždé vykreslí na jiné straně.
 
 <div class="ebook-only" markdown="1">
 

@@ -52,13 +52,13 @@ Občas je v jiných příkladech vidět použití pseudoprvku `:root`. To je to 
 
 Zastavme se ještě na chvíli u pojmenovávání. Specifikace definuje „custom property“ (volitelnou vlastnost) a „variable“ (proměnnou) jako dvě odlišné věci.
 
-_Volitelné vlastnosti_ jsou ty vlastnosti, které nejsou zapsány v CSS specifikaci. Mohou si je vymyslet a používat autoři a uživatelé webů. Vypadají jako vlastnosti, ale na začátku mají dvě pomlčky. V příkladu to je `--color: blue`.
+_Volitelné vlastnosti_ jsou ty vlastnosti, které nejsou zapsány v CSS specifikaci. Mohou si je vymyslet a používat autoři a uživatelé webů. Vypadají jako vlastnosti, ale na začátku mají dvě pomlčky. V příkladu to je `--color:blue`.
 
 _Proměnné_ pak zpřístupňují hodnoty uložené ve volitelných vlastnostech. To je ona konstrukce `var(--color)`, která vrací hodnotu `blue` nebo jinou nastavenou.
 
 <!-- AdSnippet -->
 
-Teoreticky byste tedy v příkladu výše mohli založit novou vlastnost (`--color: blue`), ale ve funkci `var()` ji nepoužít. Mohli byste například hodnotu vlastnosti chtít jen sdílet v HTML nebo JavaScriptu. Pak jistě chápete, že nemůžeme mluvit o CSS proměnné.
+Teoreticky byste tedy v příkladu výše mohli založit novou vlastnost (`--color:blue`), ale ve funkci `var()` ji nepoužít. Mohli byste například hodnotu vlastnosti chtít jen sdílet v HTML nebo JavaScriptu. Pak jistě chápete, že nemůžeme mluvit o CSS proměnné.
 
 ## Limity „autorských vlastností“ {#limity}
 
@@ -234,7 +234,7 @@ Programátoři, tady buďte opět opatrní. Jste v CSS, nikoliv programovacím j
 }
 ```
 
-Výsledkem by byla hodnota s mezerou: `margin-top: 20 px`, které prohlížeč nebude rozumět.
+Výsledkem by byla hodnota s mezerou: `margin-top: 20 px`, které prohlížeč nebude rozumět.
 
 Pro „přetypování“ namísto toho můžete použít [funkci `calc()`](css3-calc.md):
 

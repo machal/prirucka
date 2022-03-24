@@ -73,7 +73,7 @@ Velikost písma pro jednotlivé části dokumentu, vnější a vnitřní okraje,
 
 `1rem` (1 root `em`) obsahuje výchozí velikost písma nastavenou autorem pro dokument a případně ještě upravenou uživatelem nebo prohlížečem, jak už jsme viděli.
 
-Pokud ji na dokumentu nezměníme, platí, že `1rem = 16px`.
+Pokud ji na dokumentu nezměníme, platí, že `1rem` = `16px`.
 
 ```css
 p { margin-bottom: 1rem; }
@@ -102,7 +102,7 @@ Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože gr
 
 Jak z konfliktu design versus přístupnost ven? Může vám pomoci automatická úprava CSS.
 
-Možná znáte knihovnu PostCSS, jež umožňuje automatizované zpracování stylů. Plugin pro PostCSS „postcss-pxtorem“ zařídí převod z px do rem pro vybrané vlastnosti. Z `font-size: 16px` prostě udělá `font-size: 1rem`. [vrdl.in/cyxe1](https://github.com/cuth/postcss-pxtorem)
+Možná znáte knihovnu PostCSS, jež umožňuje automatizované zpracování stylů. Plugin pro PostCSS „postcss-pxtorem“ zařídí převod z px do rem pro vybrané vlastnosti. Ze zápisu `font-size:16px` prostě udělá `font-size:1rem`. [vrdl.in/cyxe1](https://github.com/cuth/postcss-pxtorem)
 
 `rem` tedy považuji za hlavní jednotku pro tvorbu rozhraní. Velmi se nám ale také hodí `em`.
 
@@ -177,8 +177,8 @@ Použitelných jednotek pro layout je ale více:
 
 - Procenta nebo `vw` se roztahují podle šířky okna, `vh` podle jeho výšky.
 - `rem` a `em` podle velikosti písma.
-- Ve [flexboxu](css-flex.md) je možné používat také absolutní jednotky (`flex: 1`).
-- V CSS gridu zase takzvané [podílové jednotky `fr`](css-jednotka-fr.md) (`grid-template-columns: 3fr 1fr`).
+- Ve [flexboxu](css-flex.md) je možné používat také absolutní jednotky (`flex:1`).
+- V CSS gridu zase takzvané [podílové jednotky `fr`](css-jednotka-fr.md) (`grid-template-columns:3fr 1fr`).
 - Občas se hodí i fixní rozměry v `px`.
 
 ## Rámečky, dekorace: px {#dekorace}
