@@ -56,7 +56,7 @@ Zkusme si představit totéž pro funkci `max()`:
 
 V tomto případě jde o obdobu zápisu `width:50%;  min-width:100px;`. V ukázce to sami uvidíte.
 
-CodePen: [cdpn.io/e/gOmeoEj](https://codepen.io/machal/pen/gOmeoEj?editors=1100)
+CodePen: [vrdl.in/1jgam](https://codepen.io/machal/pen/gOmeoEj?editors=1100)
 
 ## Funkce clamp() {#clamp}
 
@@ -83,7 +83,7 @@ Vysvětlíme to ještě detailně:
 
 Je to srozumitelné? Ještě si to případně zkuste na CodePenu.
 
-CodePen: [cdpn.io/e/poeLazv](https://codepen.io/machal/pen/poeLazv?editors=1100)
+CodePen: [vrdl.in/op3tz](https://codepen.io/machal/pen/poeLazv?editors=1100)
 
 Následující ukázku jsem si vypůjčil od Uny Kravets. Je to krásná vizualizace, ve které je vidět aktuální šířka rodiče, elementu a pak také argument funkce `min()`, který je v dané šířce obrazovky aktivní.
 
@@ -96,7 +96,7 @@ Funkce min() vybere prostě tu menší ze dvou hodnot. Zdroj: Una Kravets.
 
 Pokud si to budete zkoušet naživo, zkuste si hýbat se šířkou viewportu.
 
-CodePen: [cdpn.io/e/rNeGNVL](https://codepen.io/una/pen/rNeGNVL)
+CodePen: [vrdl.in/lkmsg](https://codepen.io/una/pen/rNeGNVL)
 
 Ve specifikaci se uvádí, že funkci `clamp()` je možné zapsat pomocí `min()` a `max()` jako `max(MIN, min(VAL, MAX))`. Nevím jak vám, ale mně to moc při snaze pochopit funkci `clamp()` nepomohlo.
 
@@ -152,7 +152,7 @@ Prvek `.card` bude zabírat `50%` šířky rodiče, ale nikdy méně než `45ch`
 
 Pokud to nevíte, jednotka `ch` v sobě obsahuje šířku znaku `0`, což se považuje za průměrnou šířku znaku.
 
-CodePen: [cdpn.io/e/QWyLxaL](https://codepen.io/una/pen/QWyLxaL)
+CodePen: [vrdl.in/2q9xo](https://codepen.io/una/pen/QWyLxaL)
 
 ## Demo: plynulá typografie {#demo-fluid-typo}
 
@@ -168,7 +168,7 @@ Velikost písma se bude s rozšiřováním okna zvětšovat od `1.5rem` až po `
 
 [Jednotkou `vw`](jednotky.md) nastavujeme velikost písma na pět procent šířky viewportu. Abychom se přitom vyhnuli extrémně malým a extrémně velkým hodnotám `font-size`, pomáháme si funkcí `clamp()`.
 
-CodePen: [cdpn.io/e/ExyYXaN](https://codepen.io/una/pen/ExyYXaN)
+CodePen: [vrdl.in/crs5t](https://codepen.io/una/pen/ExyYXaN)
 
 Čtenář Dan Srb mi po vydání tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
 

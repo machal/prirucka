@@ -79,7 +79,7 @@ Vygeneruje typ „inline-level“ boxu se zvláštním chováním – pokusí se
 
 V CodePenu si můžete vyzkoušet všechny možnosti.
 
-CodePen: [cdpn.io/e/wvzYXeg](https://codepen.io/machal/pen/wvzYXeg?editors=0000)
+CodePen: [vrdl.in/azksi](https://codepen.io/machal/pen/wvzYXeg?editors=0000)
 
 Varianta s typem zobrazení `run-in` v mé ukázce chybí, není totiž podporovaná jinde než v [Internet Exploreru](msie.md) (!). V tomto dědečkovi mezi prohlížeči nefunguje CodePen, takže byste z ukázky nic neměli. Viz podpora na CanIUse.com. [caniuse.com/run-in](https://caniuse.com/run-in)
 
@@ -104,7 +104,7 @@ Připravil jsem dva vysvětlující CodePeny, na kterých si můžete otestovat 
 
 V prvním máme jednoduše a bez layoutu umístěné tři prvky v jednom rodiči.
 
-CodePen: [cdpn.io/e/KKgGeQQ](https://codepen.io/machal/pen/KKgGeQQ?editors=0000)
+CodePen: [vrdl.in/8m9kh](https://codepen.io/machal/pen/KKgGeQQ?editors=0000)
 
 `display:flow` zatím nemá v prohlížečích podporu, ale jako by tam byla… „Tokové“ je totiž výchozí zobrazení.
 
@@ -130,7 +130,7 @@ Výsledek vidíte na obrázku.
 - Na `display:flex` a `display:grid` nemají floaty žádný vliv.
 - Na vnitřní prvky v `display:table` floaty vliv mají, protože rodič je zde v běžném tokovém kontextu formátování bloku.
 
-CodePen: [cdpn.io/e/WNGayad](https://codepen.io/machal/pen/WNGayad?editors=0000)
+CodePen: [vrdl.in/lksp8](https://codepen.io/machal/pen/WNGayad?editors=0000)
 
 Pojďme ještě projít několik specifických hodnot.
 
@@ -150,7 +150,7 @@ Náš kontejner díky tomu můžeme stylovat, jako by to byl prvek `<ul>` nebo `
 
 Podpora `display:list-item` jde napříč všemi prohlížeči. [caniuse.com](https://caniuse.com/mdn-css_properties_display_list-item)
 
-CodePen: [cdpn.io/e/gOwqJmq](https://codepen.io/machal/pen/gOwqJmq?editors=0000)
+CodePen: [vrdl.in/2bjke](https://codepen.io/machal/pen/gOwqJmq?editors=0000)
 
 První příklad na následujícím obrázku ukazuje zobrazení typu `list-item`.
 
@@ -174,7 +174,7 @@ Element se na obrazovku nevykreslí, ale jeho potomci ano.
 
 Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
 
-CodePen: [cdpn.io/e/zYKmaMb](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
+CodePen: [vrdl.in/u1cvt](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
 
 Podpora nezobrazení pomocí `none` je samozřejmě plná. Hodnotu `contents` zvládají všechny prohlížeče kromě Internet Exploreru, ale podle webu CanIUse je s ní spojeno několik chyb v prohlížečích vycházejících z jádra Chromium, které souvisejí s přístupností.  [caniuse.com](https://caniuse.com/css-display-contents)
 

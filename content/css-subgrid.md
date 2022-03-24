@@ -78,7 +78,7 @@ Vnější rozvržení, tedy to, které se týká vodorovného umístění karet,
 
 Umísťuji zde dvě položky a přeji si, aby nebyly užší než `250px` a širší než `400px`. Mezera mezi nimi je `4rem`.
 
-CodePen: [cdpn.io/e/VwMVPBJ](https://codepen.io/machal/pen/VwMVPBJ?editors=1100)
+CodePen: [vrdl.in/hunip](https://codepen.io/machal/pen/VwMVPBJ?editors=1100)
 
 To bude asi bez problémů, ale když já chci, aby nadpisy, obrázky, texty i tlačítka jednotlivých karet byly vždy ve stejné výšce.
 
@@ -123,7 +123,7 @@ Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad p
 
 Výsledek je samozřejmě opět možné zkoušet na živé ukázce.
 
-CodePen: [cdpn.io/e/wvrQgLJ](https://codepen.io/machal/pen/wvrQgLJ?editors=1100)
+CodePen: [vrdl.in/se38k](https://codepen.io/machal/pen/wvrQgLJ?editors=1100)
 
 ## Poznámky k subgridu {#poznamky}
 

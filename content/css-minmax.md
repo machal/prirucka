@@ -65,7 +65,7 @@ Tohle je asi jednoduché, že?
 - První sloupeček se nikdy nezmenší pod `100px` a nepřesáhne šířku `200px`. To přesně dělá zápis `minmax(100px, 200px)`.
 - Další dva sloupečky si rovnoměrně rozdělí šířku zbylého prostoru, protože jsou nastavené [podílovou jednotkou](css-jednotka-fr.md) na `1fr`.
 
-CodePen: [cdpn.io/e/XWrLErd](https://codepen.io/machal/pen/XWrLErd?editors=1100)
+CodePen: [vrdl.in/iu3tz](https://codepen.io/machal/pen/XWrLErd?editors=1100)
 
 ## Flexibilní rozsah (použití jednotky fr) {#fr}
 
@@ -82,7 +82,7 @@ Uvedený zápis asi opět nebude žádná velká věda, protože [zlomkovou jedn
 - Všechny sloupečky si rovnoměrně rozdělí šířku na tři části.
 - První sloupeček se ale nikdy nezmenší pod `100px`. Důvodem je zápis `minmax(100px, 1fr)`.
 
-CodePen: [cdpn.io/e/qBWGooy](https://codepen.io/machal/pen/qBWGooy?editors=1100)
+CodePen: [vrdl.in/25y0n](https://codepen.io/machal/pen/qBWGooy?editors=1100)
 
 ## Klíčové slovo max-content {#max-content}
 
@@ -105,7 +105,7 @@ Instrukce pro vykreslení prvního sloupce mřížky zní:
 
 Co je ale ta „maximální velikost obsahu“? Je to různé. U pružných responzivních obrázků jde například o jejich maximální pixelovou velikost. Blok s textovým obsahem se může zvětšovat, dokud slova stačí. Však si to zkuste na příkladu.
 
-CodePen: [cdpn.io/e/wvwbmQM](https://codepen.io/machal/pen/wvwbmQM?editors=1100)
+CodePen: [vrdl.in/d3we8](https://codepen.io/machal/pen/wvwbmQM?editors=1100)
 
 <div class="web-only" markdown="1">
 
@@ -115,7 +115,7 @@ CodePen: [cdpn.io/e/wvwbmQM](https://codepen.io/machal/pen/wvwbmQM?editors=1100)
 
 Pojďme si to ještě ukázat na příkladu s obrázkem. Kód je totožný jako v předchozím demíčku:
 
-CodePen: [cdpn.io/e/eYOaMvv](https://codepen.io/machal/pen/eYOaMvv?editors=1100)
+CodePen: [vrdl.in/qhmsu](https://codepen.io/machal/pen/eYOaMvv?editors=1100)
 
 Obrázek nebude ve stopě mřížky definované jako `minmax(100px, max-content)` nikdy menší než `100px` a větší než maximální velikost. Ta je `400px` a je zde definovaná v atributu `width` značky `<img>`.
 
@@ -135,7 +135,7 @@ Při použití ve funkci `minmax()` přikazuje, aby se buňka nikdy nezmenšila 
 
 Co je zase ta „minimální velikost obsahu“? U textu délka nejdelšího slova, u obrázků a jiných vkládaných médií s pružnými rozměry žádnou minimální šířku či výšku nemáme.
 
-CodePen: [cdpn.io/e/wvwbmGV](https://codepen.io/machal/pen/wvwbmGV?editors=1100)
+CodePen: [vrdl.in/n6o2v](https://codepen.io/machal/pen/wvwbmGV?editors=1100)
 
 Možné je samozřejmě i použití jak `min-content`, tak `max-content`: `minmax(min-content, max-content)`:
 
@@ -149,7 +149,7 @@ Možné je samozřejmě i použití jak `min-content`, tak `max-content`: `minma
 
 Dotčená stopa layoutu se pak nezmenší pod minimální a nezvětší nad maximální šířku či výšku obsahu.
 
-CodePen: [cdpn.io/e/ZEzNxmX](https://codepen.io/machal/pen/ZEzNxmX?editors=1100)
+CodePen: [vrdl.in/fztp4](https://codepen.io/machal/pen/ZEzNxmX?editors=1100)
 
 ## Klíčové slovo auto {#auto}
 
@@ -166,7 +166,7 @@ Klíčové slovo `auto` si ještě vyzkoušíme na příkladu. Mřížku definuj
 }
 ```
 
-CodePen: [cdpn.io/e/eYOaXyW](https://codepen.io/machal/pen/eYOaXyW?editors=1100)
+CodePen: [vrdl.in/poavs](https://codepen.io/machal/pen/eYOaXyW?editors=1100)
 
 Uvnitř první buňky máme obrázek, který má pružné rozměry (definované pomocí `max-width: 100%; height: auto;`). Použitím `minmax(auto, auto)` prohlížeči říkáme: Sloupec mřížky se smí zmenšit jen na minimální obsahovou velikost a zvětšit na maximální.
 
@@ -194,7 +194,7 @@ Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených
 }
 ```
 
-CodePen: [cdpn.io/e/NWKZyrY](https://codepen.io/machal/pen/NWKZyrY?editors=1100).
+CodePen: [vrdl.in/81hou](https://codepen.io/machal/pen/NWKZyrY?editors=1100).
 
 V CSS gridu se `fit-content` používá s parametrem:
 
@@ -208,7 +208,7 @@ Takový zápis říká, aby prohlížeč zařídil šířku prvního sloupce vž
 
 `fit-content()` se tedy počítá jako `minmax(auto, max-content)` s tím, že hodnota v argumentu funkce slouží jako zarážka pro maximální rozměr, pokud je větší než minimum.
 
-CodePen: [cdpn.io/e/GRKbQom](https://codepen.io/machal/pen/GRKbQom?editors=1100).
+CodePen: [vrdl.in/76h4a](https://codepen.io/machal/pen/GRKbQom?editors=1100).
 
 Může vás také zajímat, jak to funguje s obrázky a jejich vnitřními nastaveními minima a maxima.
 
@@ -232,9 +232,9 @@ Následuje tedy ještě jedna ukázka, vycházející z dřívějšího CodePenu
 }
 ```
 
-Funguje to dobře. I přes to, že obrázek má nastavenou šířku 400 pixelů, v layoutu si drží maximální šířku definovanou v CSS pomocí `fit-content(200px)`. 
+Funguje to dobře. I přes to, že obrázek má nastavenou šířku 400 pixelů, v layoutu si drží maximální šířku definovanou v CSS pomocí `fit-content(200px)`.
 
-CodePen: [cdpn.io/e/JjPQpYj](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
+CodePen: [vrdl.in/rbv3o](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
 
 ## Co když… Pár specifičností zápisu minmax() {#co-kdyz}
 

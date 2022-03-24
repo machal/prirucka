@@ -36,7 +36,7 @@ Následuje použití vlastnosti už ve formě proměnné pomocí funkce `var()`:
 
 Tuhle základní konstrukci si můžete vyzkoušet v mé ukázce.
 
-CodePen: [cdpn.io/e/mBOZZK](https://codepen.io/machal/pen/mBOZZK)
+CodePen: [vrdl.in/cazg8](https://codepen.io/machal/pen/mBOZZK)
 
 V příkladu jsem definoval něco jako globální proměnnou, prostě jsem ji navázal na nejvyšší prvek DOMu, tedy `<html>`.
 
@@ -186,7 +186,7 @@ Je tam samozřejmě možné mít čárek více, ale to jen pro případ, že jak
 
 Však si to zkuste naživo v následující ukázce.
 
-CodePen: [cdpn.io/e/eeMqer](https://codepen.io/machal/pen/eeMqer)
+CodePen: [vrdl.in/5ne12](https://codepen.io/machal/pen/eeMqer)
 
 ### Co když není proměnná definovaná? {#funkce-var-nedefinovana}
 
@@ -220,7 +220,7 @@ Pokud bychom chtěli fallback i pro podporující prohlížeče, musíme využí
 
 Živá ukázka hned následuje.
 
-CodePen: [cdpn.io/e/XzqyWb](https://codepen.io/machal/pen/XzqyWb)
+CodePen: [vrdl.in/01y8x](https://codepen.io/machal/pen/XzqyWb)
 
 ### Slučování hodnot a matematika ve funkci var() {#funkce-var-slucovani}
 
@@ -307,7 +307,7 @@ V HTML ji pak změníme:
 
 Oba příklady jsou samozřejmě děsně primitivní. Později ještě ukážu, jak je možné sdílení v HTML prakticky využít. Tady je CodePen obsahující oba zjednodušené scénáře.
 
-CodePen: [cdpn.io/e/OxWvRx](https://codepen.io/machal/pen/OxWvRx)
+CodePen: [vrdl.in/shwao](https://codepen.io/machal/pen/OxWvRx)
 
 ## Sdílení v JavaScriptu {#js-sdileni}
 
@@ -321,7 +321,7 @@ getComputedStyle(element).getPropertyValue("--color");
 element.style.setProperty("--color", "blue");
 ```
 
-CodePen: [cdpn.io/e/xXgWPw](https://codepen.io/machal/pen/xXgWPw?editors=1111)
+CodePen: [vrdl.in/recv5](https://codepen.io/machal/pen/xXgWPw?editors=1111)
 
 V jQuery od verze 3.1  se s „proměnnými“ pracuje stejně jako s běžnými CSS vlastnostmi. Aby ne, když to jsou vlastnosti, jen volitelné. Pokud tedy jQuery ještě používáte…
 
@@ -333,7 +333,7 @@ $('#box1').css('--color');
 $('#box2').css('--color', 'blue');
 ```
 
-CodePen: [cdpn.io/e/LOdPbR](https://codepen.io/machal/pen/LOdPbR?editors=1111)
+CodePen: [vrdl.in/megob](https://codepen.io/machal/pen/LOdPbR?editors=1111)
 
 ## Podpora a fallbacky {#podpora-fallbacky}
 

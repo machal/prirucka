@@ -93,7 +93,7 @@ Pokud byste netušili, co je „inline flexbox“, jde o flexbox tvořený nasta
 
 Můžete se podívat na řešení druhé uvedené flexboty.
 
-CodePen: [cdpn.io/e/RjvQgx](https://codepen.io/philipwalton/pen/RjvQgx)
+CodePen: [vrdl.in/r63gj](https://codepen.io/philipwalton/pen/RjvQgx)
 
 A co náš dědeček mezi prohlížeči?
 

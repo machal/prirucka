@@ -36,7 +36,7 @@ Ukažme si nějaký kód:
 
 Prostor se rozdělí na tři díly, ale vykreslí do dvou buněk gridu. První bude zabírat třetinu šířky, druhá dvě třetiny.
 
-CodePen: [cdpn.io/e/pozNbmQ](https://codepen.io/machal/pen/pozNbmQ?editors=1100)
+CodePen: [vrdl.in/i6leb](https://codepen.io/machal/pen/pozNbmQ?editors=1100)
 
 Raději zdůrazněme, že šířka buňky se ani zde nikdy nezmenší pod šířku obsahu. Rozdělení `1fr 2fr` tedy bude platit jen v případě dostatku prostoru.
 
@@ -77,7 +77,7 @@ Procentuální grid v demu nastavujeme jako `grid-template-columns: 33.3% 33.3% 
 
 Další problém je v box modelu, způsobu počítání šířky. Jak vidíte u prvního prvku v CodePenu, k procentuální šířce se musí ještě připočíst vnitřní okraj (`padding`). Bez změny počítání box modelu pomocí vlastnosti `box-sizing` nám prvky přetečou z rodičovského kontejneru.
 
-CodePen: [cdpn.io/e/gOYwvrN](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
+CodePen: [vrdl.in/0v82w](https://codepen.io/machal/pen/gOYwvrN?editors=1100)
 
 Pokud vlastnost `box-sizing` neznáte, dostudujte si ji v mém textu na Vzhůru dolů. [vrdl.in/cssbs](https://www.vzhurudolu.cz/prirucka/css3-box-sizing)
 
@@ -122,7 +122,7 @@ Poměrně užitečné jsou také desetinné hodnoty. Jejich součet je `0.6fr`, 
 
 Obojí se myslím může docela hodit, nemám pravdu?
 
-CodePen: [cdpn.io/e/PoYGQOw](https://codepen.io/machal/pen/PoYGQOw?editors=1100)
+CodePen: [vrdl.in/i47sx](https://codepen.io/machal/pen/PoYGQOw?editors=1100)
 
 Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to nevede, už jsem to ověřil.
 

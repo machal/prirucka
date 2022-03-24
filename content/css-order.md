@@ -123,7 +123,7 @@ Změnu pořadí děláme takto:
 }
 ```
 
-CodePen: [cdpn.io/e/oNxmLRe](https://codepen.io/machal/pen/oNxmLRe?editors=1000)
+CodePen: [vrdl.in/vqxi6](https://codepen.io/machal/pen/oNxmLRe?editors=1000)
 
 ## Pár věcí, které stojí za zapamatování {#zapamatujte-si}
 
@@ -135,7 +135,7 @@ Jsou zde ale i další vědomosti, o kterých byste měli mít ponětí, než si
 
 1. Pokud má více položek rozvržení nastavenu stejnou hodnotu `order`, seřadí se podle pořadí v DOMu.
 2. Podle specifikace vlastnost `order` ovlivňuje také pořadí při vykreslování stránky prohlížečem, což má logiku.
-3. Absolutně pozicované položky vždy dostanou nastavení `order:0`, takže drží pořadí vykreslení dle DOMu. Zájemcům nabízím CodePen. [cdpn.io/e/JjXxVJy](https://codepen.io/machal/pen/JjXxVJy?editors=1100)
+3. Absolutně pozicované položky vždy dostanou nastavení `order:0`, takže drží pořadí vykreslení dle DOMu. Zájemcům nabízím CodePen. [vrdl.in/7yca0](https://codepen.io/machal/pen/JjXxVJy?editors=1100)
 
 ## Ošemetná změna pořadí z pohledu přístupnosti {#pristupnost}
 

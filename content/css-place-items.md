@@ -59,7 +59,7 @@ Hodnota vlastnsoti place-items v Chrome při zapnutém grid overlay.
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/dyMOxdm](https://codepen.io/machal/pen/dyMOxdm?editors=1100)
+CodePen: [vrdl.in/sa51e](https://codepen.io/machal/pen/dyMOxdm?editors=1100)
 
 ## Možné hodnoty
 

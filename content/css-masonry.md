@@ -71,7 +71,7 @@ Směr definovaný pomocí `masonry` se pak bude označovat jako „osa zdiva“.
 
 Přikládám CodePen, ale v době psaní bude fungovat jen ve zmíněném Firefox Nightly, takže neuškodí, když si tuto verzi prohlížeče pro zkoušení nových vlastností stáhnete.
 
-CodePen: [cdpn.io/e/wvWmZWB](https://codepen.io/rachelandrew/pen/wvWmZWB?editors=0100)
+CodePen: [vrdl.in/i2dgv](https://codepen.io/rachelandrew/pen/wvWmZWB?editors=0100)
 
 V uvedeném prohlížeči si můžete pohrát s hlavním kouskem kódu, který vypadá takto:
 
@@ -113,8 +113,8 @@ Po básnické chvilce, vyvolané vidinou světa bez další javascriptové kniho
 
 Vzhledem k tomu, že jsme v systému rozvržení pomocí CSS gridu, můžeme používat i další vlastnosti:
 
-- Stále můžeme porušit automatické umísťování a konkrétní položku vložit na konkrétní místo mřížky. Viz prvek `.positioned` v tomto CodePenu od Rachel Andrew. [cdpn.io/e/PozRvZb](https://codepen.io/rachelandrew/pen/PozRvZb)
-- Je samozřejmě dovoleno používat i roztažení prvků do více buněk mřížky. To je zase vidět na prvku `.landscape` v jiném CodePenu. [cdpn.io/e/QWEmPMK](https://codepen.io/rachelandrew/pen/QWEmPMK)
+- Stále můžeme porušit automatické umísťování a konkrétní položku vložit na konkrétní místo mřížky. Viz prvek `.positioned` v tomto CodePenu od Rachel Andrew. [vrdl.in/0yh1j](https://codepen.io/rachelandrew/pen/PozRvZb)
+- Je samozřejmě dovoleno používat i roztažení prvků do více buněk mřížky. To je zase vidět na prvku `.landscape` v jiném CodePenu. [vrdl.in/ar9ex](https://codepen.io/rachelandrew/pen/QWEmPMK)
 
 ### Vlastnost masonry-auto-flow, kontrola toku položek {#dalsi-grid-flow}
 
@@ -195,7 +195,7 @@ Další metody alternativního řešení zděného layoutu mají dvě věci spol
 
 Nevýhodou je to, že směr layoutu bude vždy po sloupcích, nikoliv po řádcích. Prohlížeč se také – díky povaze vícesloupcové sazby – nebude trápit tím, když poslední sloupec zůstane vyplněný jen z malé části.
 
-CodePen: [cdpn.io/e/QWEmPvK](https://codepen.io/rachelandrew/pen/QWEmPvK?editors=1100)
+CodePen: [vrdl.in/y5b7l](https://codepen.io/rachelandrew/pen/QWEmPvK?editors=1100)
 
 ### CSS grid a zahuštěné umístění {#dalsi-autoflow}
 
@@ -212,7 +212,7 @@ CodePen: [cdpn.io/e/QWEmPvK](https://codepen.io/rachelandrew/pen/QWEmPvK?editors
 
 Nevýhoda? Pořád jde o vykreslení do mřížky, takže mezi jednotlivými položkami většinou zůstávají nevyplněné mezery.
 
-CodePen: [cdpn.io/e/mdExgmZ](https://codepen.io/rachelandrew/pen/mdExgmZ?editors=1100)
+CodePen: [vrdl.in/km26b](https://codepen.io/rachelandrew/pen/mdExgmZ?editors=1100)
 
 ### Flexbox, `:nth-child` a `order` {#dalsi-flexbox-nthchild}
 
@@ -242,7 +242,7 @@ Tobias Ahlin Bjerrome se pokusil o řešení [flexboxem](css-flexbox.md), [selek
 
 Je to plné dobrých nápadů, relativně dobře to funguje, ale ne ve všech rozlišeních. Navíc je složité to nastavovat pro různý počet sloupců v layoutu.
 
-CodePen: [cdpn.io/e/JVmLRa](https://codepen.io/tobiasahlin/pen/JVmLRa?editors=1100)
+CodePen: [vrdl.in/dghb6](https://codepen.io/tobiasahlin/pen/JVmLRa?editors=1100)
 
 <div class="web-only related" markdown="1">
 

@@ -39,7 +39,7 @@ Uvedené má pak stejný výsledek jako ručně psaná verze:
 }
 ```
 
-CodePen: [cdpn.io/e/ZEzRKjG](https://codepen.io/machal/pen/ZEzRKjG?editors=1100)
+CodePen: [vrdl.in/lzrej](https://codepen.io/machal/pen/ZEzRKjG?editors=1100)
 
 Možných hodnot je ale více:
 
@@ -94,7 +94,7 @@ Je dobré vědět, že automatické opakování není možné křížit s funkc
 }
 ```
 
-CodePen: [cdpn.io/e/NWKzjoV](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
+CodePen: [vrdl.in/lx9fc](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
 
 ### Příklad s auto-fit {#auto-fit}
 
@@ -108,7 +108,7 @@ CodePen: [cdpn.io/e/NWKzjoV](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
 
 Zkuste si v CodePenu změnit šířku okna a dívat se přitom na rodičovský element ve vývojářských nástrojích Chromu nebo Firefoxu. Uvidíte něco podobného, jako je na obrázku výše.
 
-CodePen: [cdpn.io/e/BaBVREb](https://codepen.io/machal/pen/BaBVREb?editors=1100)
+CodePen: [vrdl.in/0wc7v](https://codepen.io/machal/pen/BaBVREb?editors=1100)
 
 ## Podpora v prohlížečích
 

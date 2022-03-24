@@ -207,7 +207,7 @@ Například tento nadpis z příkladu bude mít velikost písma `2rem` a k tomu 
 
 Nakonec přidávám odkaz na CodePen, ve kterém je (dle mého) optimální nastavení jednotek použito na jednoduchém příkladě.
 
-CodePen: [cdpn.io/e/dvdxWG](https://codepen.io/machal/pen/dvdxWG)
+CodePen: [vrdl.in/phdim](https://codepen.io/machal/pen/dvdxWG)
 
 ## Co když chci přesto používat hlavně px? {#px}
 

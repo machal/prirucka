@@ -48,7 +48,7 @@ Mimochodem, v poslední „přílohové“ kapitole píšu o [CSS logical proper
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-box-alignment-direction.jpg" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
-Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [cdpn.io/e/YzGXYKb](https://codepen.io/machal/pen/YzGXYKb)
+Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [vrdl.in/uy9of](https://codepen.io/machal/pen/YzGXYKb)
 </figcaption>
 </figure>
 
@@ -185,7 +185,7 @@ Poziční zarovnání s neposednou poslední položkou layoutu.
 
 </div>
 
-CodePen: [cdpn.io/e/qBZqGGz](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
+CodePen: [vrdl.in/i3v7a](https://codepen.io/machal/pen/qBZqGGz?editors=1100)
 
 ### Zarovnání na účaří {#ucari}
 
@@ -243,7 +243,7 @@ Jak je vidět, prohlížeče jsme nenapálili. Přidáním vnějšího okraje po
 
 </div>
 
-CodePen: [cdpn.io/e/RwaozNa](https://codepen.io/machal/pen/RwaozNa?editors=1100)
+CodePen: [vrdl.in/9etio](https://codepen.io/machal/pen/RwaozNa?editors=1100)
 
 ### Zarovnání zbylého prostoru {#zbyly-prostor}
 
@@ -290,7 +290,7 @@ Jdeme na vysvětlování:
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/OJNbemx](https://codepen.io/machal/pen/OJNbemx?editors=1100)
+CodePen: [vrdl.in/f5vsg](https://codepen.io/machal/pen/OJNbemx?editors=1100)
 
 ### Zarovnání pro přetečení (bez podpory prohlížečů) {#overflow}
 

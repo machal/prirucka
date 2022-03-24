@@ -99,7 +99,7 @@ Využíváme zde tuto hodnotu:
 
 Položky tedy zarovnáváme svisle tak, aby mezi nimi vznikla rovnoměrná mezera (`space-between`), a vodorovně na konec hrany kontejneru (`end`).
 
-CodePen: [cdpn.io/e/PoNJVPm](https://codepen.io/machal/pen/PoNJVPm?editors=1100)
+CodePen: [vrdl.in/zlhko](https://codepen.io/machal/pen/PoNJVPm?editors=1100)
 
 ## Možné hodnoty
 

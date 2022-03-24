@@ -21,7 +21,7 @@ Pokud se na ukázku podíváte v prohlížečích, které podporují vlastnost `
 
 Ve všech ostatních prohlížečích bude text černý.
 
-CodePen: [cdpn.io/e/NWbLRKv](https://codepen.io/machal/pen/NWbLRKv?editors=1100)
+CodePen: [vrdl.in/3q7kt](https://codepen.io/machal/pen/NWbLRKv?editors=1100)
 
 Všimněte si důležité věci – pro detekování podpory se musíme dotazovat na vlastnost i její hodnotu. Takže pokud bychom se ptali na podporu vlastnosti `display`, musíme se zeptat například na `display:block`.
 
@@ -288,7 +288,7 @@ Dvě verze pro dvě kategorie prohlížečů. To nám snadno umožní Feature Qu
 
 Tady nastává moment, pro který jsme si v demíčku šli. MSIE nejenže nezná `display:grid`, ale zároveň nezná `@supports`, takže tento blok kódu vynechá ze zpracování. A to je dobře.
 
-CodePen: [cdpn.io/e/MWbqeMG](https://codepen.io/machal/pen/MWbqeMG?editors=1100)
+CodePen: [vrdl.in/pdc3h](https://codepen.io/machal/pen/MWbqeMG?editors=1100)
 
 V CodePenu uvidíte v prohlížečích podporujících grid zelené písmo. V ostatních je to červeně.
 

@@ -81,7 +81,7 @@ Hodnoty vlastnosti place-self. Poslední položka nám uskočila díky jinému n
 
 Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně na buňky (`center`).
 
-CodePen: [cdpn.io/e/MWymbYw](https://codepen.io/machal/pen/MWymbYw?editors=1100)
+CodePen: [vrdl.in/ygipw](https://codepen.io/machal/pen/MWymbYw?editors=1100)
 
 ## Možné hodnoty {#hodnoty}
 

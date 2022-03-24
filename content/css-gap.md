@@ -75,7 +75,7 @@ Takto vypadá odlišné nastavení vlastnosti gap pro svislý a vodorovný směr
 </figcaption>
 </figure>
 
-CodePen: [cdpn.io/e/JgXWod](https://codepen.io/machal/pen/JgXWod?editors=1100)
+CodePen: [vrdl.in/kyam7](https://codepen.io/machal/pen/JgXWod?editors=1100)
 
 Totéž bychom samozřejmě mohli zapsat v nezkrácených deklaracích následovně:
 
@@ -128,7 +128,7 @@ Vlastnost gap v kombinaci s marginem a paddingem.
 
 Ano, viditelná mezera mezi položkami bude široká celé `3em`. Sečteme dva vnější okraje (`margin`) a mezeru (`gap`).
 
-CodePen: [cdpn.io/e/JjJJNmo](https://codepen.io/machal/pen/JjJJNmo?editors=1100)
+CodePen: [vrdl.in/6xz53](https://codepen.io/machal/pen/JjJJNmo?editors=1100)
 
 ## Možné hodnoty {#hodnoty}
 
@@ -167,7 +167,7 @@ Gap ve flexboxu. I tady to mezerám sekne, že ano… ?
 
 Raději si to zopakujme. Zápis `gap:5px 1rem` říká, že svisle chci mezi řádku mezeru `5px` a vodorovně mezi sloupci pak mezeru `1rem`.
 
-CodePen: [cdpn.io/e/VwWWWwP](https://codepen.io/machal/pen/VwWWWwP?editors=1100)
+CodePen: [vrdl.in/rmtfs](https://codepen.io/machal/pen/VwWWWwP?editors=1100)
 
 ### Použití funkce calc() {#hodnoty-calc}
 
@@ -179,7 +179,7 @@ Uvádění [výpočetní funkce `calc()`](css3-calc.md) se v hodnotách `gap` m�
 }
 ```
 
-CodePen: [cdpn.io/e/KKqqqpJ](https://codepen.io/machal/pen/KKqqqpJ?editors=1100)
+CodePen: [vrdl.in/4t652](https://codepen.io/machal/pen/KKqqqpJ?editors=1100)
 
 A k čemu, že se funkce `calc()` může hodit? Příkladem budiž odečtení šířky rámečků (`border`) buněk layoutu z celkové šířky mezery.
 
@@ -226,7 +226,7 @@ To byste nečekali. Použití procent ve vlastnosti gap ve svislém směru rozbi
 
 Pravděpodobně se vám tedy stane, že mezera vytlačí spodní prvky z kontejneru.
 
-CodePen: [cdpn.io/e/OJggmrx](https://codepen.io/machal/pen/OJggmrx?editors=1100)
+CodePen: [vrdl.in/ervja](https://codepen.io/machal/pen/OJggmrx?editors=1100)
 
 V případě flexboxového layoutu a neznámé výšky kontejneru se procentuální `gap` ve svislém směru vůbec nezapočítá. Je z něj čistá nula. Ptáte se, kdy je výška kontejneru neznámá? Inu, ve flexboxu skoro vždy – dokud ji výslovně nedefinujete.
 
@@ -239,7 +239,7 @@ A tohle už byste asi vůbec nečekali. Použití procent ve vlastnosti gap ve s
 
 Zkoušení naživo je možné opět v následující ukázce.
 
-CodePen: [cdpn.io/e/ZEyyKZZ](https://codepen.io/machal/pen/ZEyyKZZ?editors=1100)
+CodePen: [vrdl.in/p9xmy](https://codepen.io/machal/pen/ZEyyKZZ?editors=1100)
 
 ## Co byste o gap měli vědět? {#vedet}
 

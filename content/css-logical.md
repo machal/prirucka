@@ -80,7 +80,7 @@ Proč to tak zdůrazňuji? Definice rozměrů v jednom směru je věc, která n�
 
 Podívejte se na CodePen k tomuto příkladu. Jen pozor, logické hodnoty ve vlastnosti `float` mi v době psaní fungovaly ve Firefoxu, ale ne v Chromu a Safari.
 
-CodePen: [cdpn.io/e/ExXGvgx](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
+CodePen: [vrdl.in/8rfda](https://codepen.io/machal/pen/ExXGvgx?editors=1100)
 
 ## Směr blokový a řádkový {#smer}
 
@@ -152,11 +152,11 @@ Tmavé blokové okraje změní směr až se změnou toku dokumentu.
 
 Podívejte se na to v CodePenu.
 
-CodePen: [cdpn.io/e/vYZQRxN](https://codepen.io/machal/pen/vYZQRxN?editors=1100)
+CodePen: [vrdl.in/hizs7](https://codepen.io/machal/pen/vYZQRxN?editors=1100)
 
 Podobné to bude u vlastnosti `grid-auto-flow`, která dokáže změnit směr rozvržení v gridu.
 
-CodePen: [cdpn.io/e/jOwQzxx](https://codepen.io/machal/pen/jOwQzxx?editors=1100)
+CodePen: [vrdl.in/nao34](https://codepen.io/machal/pen/jOwQzxx?editors=1100)
 
 ## Konkrétní logické vlastnosti a hodnoty {#vlastnosti-hodnoty}
 
@@ -173,7 +173,7 @@ Pro box model máme hezký obrázek s porovnáním fyzických a logických varia
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-logical-physical.jpg" width="1600" height="900" alt="CSS physical / CSS logical">
 <figcaption markdown="1">
-Logické hodnoty jako synonyma těch fyzických. Zdroj: Adrian Roselli. [cdpn.io/e/bGGxrvM](https://codepen.io/aardrian/pen/bGGxrvM).
+Logické hodnoty jako synonyma těch fyzických. Zdroj: Adrian Roselli. [vrdl.in/3l57u](https://codepen.io/aardrian/pen/bGGxrvM).
 </figcaption>
 </figure>
 

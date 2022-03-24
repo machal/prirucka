@@ -99,7 +99,7 @@ Však to uvidíte ve videu:
 
 </div>
 
-Zkuste si to naživo v CodePenu: [cdpn.io/e/JjXxRoJ](https://codepen.io/machal/pen/JjXxRoJ).
+Zkuste si to naživo v CodePenu: [vrdl.in/ykj23](https://codepen.io/machal/pen/JjXxRoJ).
 
 ## Zachránce tabindex? Leda kulový {#pristupnost-tabindex}
 
@@ -163,15 +163,15 @@ Z mého pohledu je tedy `tabindex` pro opravu tohoto problému použitelný jen 
 
 Ale zkusit si to v CodePenu klidně můžete.
 
-CodePen: [cdpn.io/e/PoNVgyv](https://codepen.io/machal/pen/PoNVgyv)
+CodePen: [vrdl.in/hz86d](https://codepen.io/machal/pen/PoNVgyv)
 
 ## Pomůže aria-flowto? {#aria}
 
 Léonie Watson v článku „Flexbox & the keyboard navigation disconnect“ už před lety upozorňovala na vlastnost `aria-flowto`, která v rámci specifikace [WAI-ARIA](wai-aria.md) umožňuje právě lokální změnu navigačního pořadí. Je to prostě takový `tabindex` pro komponenty.
 
-Hned jsem to vyzkoušel, ale zdá se, že stále platí to, co píše Léonie v článku z roku 2016: Tahle vlastnost má extrémně špatnou podporu v prohlížečích. Alespoň něco se v prohlížečích nemění… 
+Hned jsem to vyzkoušel, ale zdá se, že stále platí to, co píše Léonie v článku z roku 2016: Tahle vlastnost má extrémně špatnou podporu v prohlížečích. Alespoň něco se v prohlížečích nemění…
 
-CodePen: [cdpn.io/e/zYqeXeE](https://codepen.io/machal/pen/zYqeXeE)
+CodePen: [vrdl.in/dmou2](https://codepen.io/machal/pen/zYqeXeE)
 
 ## Pomůže nám vůbec něco? Ani ne {#neco}
 
