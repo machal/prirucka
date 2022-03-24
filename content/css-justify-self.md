@@ -100,7 +100,7 @@ Prvním důvodem je, že ve flexboxu nejsou vlastnosti `justify-self` a tím pá
 
 Za druhé, u flexboxu se – na rozdíl od gridu – počítá s přítomností více položek na hlavní ose. Pravděpodobně nechcete dělat flexboxové rozvržení s jednou položkou. Nebo chcete, ale pro tohle flexbox vymyšlený nebyl. Pro zarovnání více položek je dobrá [vlastnost `justify-content`](css-justify-content.md).
 
-Mám tedy jednu dobrou a jednu špatnou zprávu. Ta dobrá: Pro zarovnání položek na hlavní ose ve flexboxu používejte `margin` nebo `justify-content`. A ta špatná? Budete si to muset zapamatovat. Zabývá se tím krásná diskuze „In CSS Flexbox, why are there no ,justify-items’ and ,justify-self’ properties?“ na Stack Overflow. [stackoverflow.com/a/32569434/889682](https://stackoverflow.com/a/32569434/889682)
+Mám tedy jednu dobrou a jednu špatnou zprávu. Ta dobrá: Pro zarovnání položek na hlavní ose ve flexboxu používejte `margin` nebo `justify-content`. A ta špatná? Budete si to muset zapamatovat. Zabývá se tím krásná diskuze „In CSS Flexbox, why are there no ,justify-items’ and ,justify-self’ properties?“ na Stack Overflow. [vrdl.in/qabny](https://stackoverflow.com/a/32569434/889682)
 
 ## Možné hodnoty zarovnání
 

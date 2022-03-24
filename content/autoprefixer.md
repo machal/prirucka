@@ -112,7 +112,7 @@ Pokud si chcete jen hrát nebo přidat pár prefixů, zajděte na online pískov
 
 ### Příkazová řádka {#pouziti-cli}
 
-Využijte balíček postcss-cli. [github.com/postcss/postcss-cli](https://github.com/postcss/postcss-cli).
+Využijte balíček postcss-cli. [vrdl.in/96mcu](https://github.com/postcss/postcss-cli).
 
 ```terminal
 npm install postcss-cli autoprefixer
@@ -121,7 +121,7 @@ npx postcss *.css --use autoprefixer -d build/
 
 ### Gulp {#pouziti-gulp}
 
-Pro kombinování s Gulpem je k dispozici balíček gulp-postcss. [github.com/postcss/gulp-postcss](https://github.com/postcss/gulp-postcss)
+Pro kombinování s Gulpem je k dispozici balíček gulp-postcss. [vrdl.in/2a70d](https://github.com/postcss/gulp-postcss)
 
 ```js
 gulp.task('autoprefixer', () => {
@@ -141,13 +141,13 @@ gulp.task('autoprefixer', () => {
 
 <div class="web-only" markdown="1">
 
-postcss-loader je balíček vhodný pro vaši práci ve [Webpacku](webpack.md). [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
+postcss-loader je balíček vhodný pro vaši práci ve [Webpacku](webpack.md). [vrdl.in/lcpb5](https://github.com/webpack-contrib/postcss-loader)
 
 </div>
 
 <div class="ebook-only" markdown="1">
 
-postcss-loader je balíček vhodný pro vaši práci ve Webpacku. [github.com/webpack-contrib/postcss-loader](https://github.com/webpack-contrib/postcss-loader)
+postcss-loader je balíček vhodný pro vaši práci ve Webpacku. [vrdl.in/lcpb5](https://github.com/webpack-contrib/postcss-loader)
 
 </div>
 
@@ -177,6 +177,6 @@ module.exports = {
 }
 ```
 
-Použití Autoprefixeru s dalšími nástroji a více nápovědy najdete na oficiálním webu. [github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
+Použití Autoprefixeru s dalšími nástroji a více nápovědy najdete na oficiálním webu. [vrdl.in/ptaqs](https://github.com/postcss/autoprefixer)
 
 <!-- AdSnippet -->

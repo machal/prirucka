@@ -198,7 +198,7 @@ Asi nejznámější byl podtržítkový hack:
 }
 ```
 
-Pokud by vás tahle dnes už nechvalně známá praxe zajímala, píšou o ní hezky v přehledu CSS hacků na v těch časech populárním Interval.cz. [interval.cz/clanky/css-hacky-prehled/](https://www.interval.cz/clanky/css-hacky-prehled/)
+Pokud by vás tahle dnes už nechvalně známá praxe zajímala, píšou o ní hezky v přehledu CSS hacků na v těch časech populárním Interval.cz. [vrdl.in/mo8hx](https://www.interval.cz/clanky/css-hacky-prehled/)
 
 <!-- AdSnippet -->
 

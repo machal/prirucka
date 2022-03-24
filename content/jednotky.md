@@ -65,7 +65,7 @@ Pozor, nebavíme se o „zoomování“, které je dostupné na klávesové zkra
 
 Vývojář z Archive.org Evan Minto tohle měřil a zjistil, že velikost písma si v jejich prohlížeči změnila 3 % uživatelů. Jak trefně podotýkal, je to víc než podíl návštěvníků v té době používajících Internet Explorer, Edge nebo Operu Mini.
 
-Protože chceme vytvářet řešení s co nejširším uživatelským zásahem, neměli bychom to ignorovat. Píše to v textu „Pixels vs. Ems: Users DO Change Font Size“. [medium.com/@vamptvo/5cfb20831773](https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773)
+Protože chceme vytvářet řešení s co nejširším uživatelským zásahem, neměli bychom to ignorovat. Píše to v textu „Pixels vs. Ems: Users DO Change Font Size“. [vrdl.in/pxuziv](https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773)
 
 ## Rozměry vycházející z velikosti písma dokumentu: rem  {#rem}
 
@@ -102,7 +102,7 @@ Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože gr
 
 Jak z konfliktu design versus přístupnost ven? Může vám pomoci automatická úprava CSS.
 
-Možná znáte knihovnu PostCSS, jež umožňuje automatizované zpracování stylů. Plugin pro PostCSS „postcss-pxtorem“ zařídí převod z px do rem pro vybrané vlastnosti. Z `font-size: 16px` prostě udělá `font-size: 1rem`. [github.com/cuth/postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
+Možná znáte knihovnu PostCSS, jež umožňuje automatizované zpracování stylů. Plugin pro PostCSS „postcss-pxtorem“ zařídí převod z px do rem pro vybrané vlastnosti. Z `font-size: 16px` prostě udělá `font-size: 1rem`. [vrdl.in/cyxe1](https://github.com/cuth/postcss-pxtorem)
 
 `rem` tedy považuji za hlavní jednotku pro tvorbu rozhraní. Velmi se nám ale také hodí `em`.
 
@@ -143,9 +143,9 @@ Proč nepoužít `px`? Doporučím vám vyhnout se pixelům kvůli nemožnosti r
 @media screen and (min-width: 30em) { }
 ```
 
-Iris Winter v textu „PX, EM, or REM? Examining Media Query Units in 2021“ píše, že kvůli nedokonalé implementaci v Safari je stále lepší nepoužívat pixely, ale dát přednost `em` nebo případně `rem`. Obě tyto jednotky se v dotazech Media Queries odkazují na velikost písma v dokumentu, takže jsou volně zaměnitelné. [betterprogramming.pub/e00cf37b91a9](https://betterprogramming.pub/px-em-or-rem-examining-media-query-units-in-2021-e00cf37b91a9)
+Iris Winter v textu „PX, EM, or REM? Examining Media Query Units in 2021“ píše, že kvůli nedokonalé implementaci v Safari je stále lepší nepoužívat pixely, ale dát přednost `em` nebo případně `rem`. Obě tyto jednotky se v dotazech Media Queries odkazují na velikost písma v dokumentu, takže jsou volně zaměnitelné. [vrdl.in/4v7uk](https://betterprogramming.pub/px-em-or-rem-examining-media-query-units-in-2021-e00cf37b91a9)
 
-V kodérské praxi je ale možné použít automatický převod z `px`, protože tady se s CSS pixely pracuje lépe. Pomůže plugin do PostCSS jménem „postcss-em-media-query“. [github.com/niksy/postcss-em-media-query](https://github.com/niksy/postcss-em-media-query)
+V kodérské praxi je ale možné použít automatický převod z `px`, protože tady se s CSS pixely pracuje lépe. Pomůže plugin do PostCSS jménem „postcss-em-media-query“. [vrdl.in/1kxie](https://github.com/niksy/postcss-em-media-query)
 
 ## Výška řádku: číslem bez jednotky {#vyska-radku}
 
