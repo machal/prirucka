@@ -104,6 +104,6 @@ CodePen: [vrdl.in/wrntf](https://codepen.io/machal/pen/vYyKaEp?editors=0000)
 
 ## Podpora v prohlížečích {#podpora}
 
-Internet Explorer ve verzích 10 a 11 tuto vlastnost implementoval jako `-ms-flexbox`, ale s pomocí [Autoprefixeru](autoprefixer.md) není nutné na toto myslet. Všechny informace o podpoře jsou na [CanIUse](https://caniuse.com/mdn-css_properties_display_flex).
+Internet Explorer ve verzích 10 a 11 tuto vlastnost implementoval jako `-ms-flexbox`, ale s pomocí [Autoprefixeru](autoprefixer.md) <span class="ebook-only">(více v deváté kapitole)</span> není nutné na toto myslet. Všechny informace o podpoře jsou na [CanIUse](https://caniuse.com/mdn-css_properties_display_flex).
 
 <!-- AdSnippet -->

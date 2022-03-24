@@ -8,7 +8,7 @@ Každá hodnota [vlastnosti `display`](css-display.md) totiž zapíná nový zp�
 
 Tak jako `display:block` má od časů CSS 2.1 svůj block formatting context, i CSS grid má jeden. Pojem *grid formatting context* vás tedy nejspíš nepřekvapí.
 
-Co se v prohlížečích stane pěkného (pro někoho nepěkného) když napíšeme `display:grid` nebo `display:inline-grid`?
+Co se v prohlížečích stane pěkného (pro někoho nepěkného), když napíšeme `display:grid` nebo `display:inline-grid`?
 
 ## Svislé vnější okraje se neslučují. Chválabohu
 

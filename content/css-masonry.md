@@ -24,7 +24,7 @@ CSS masonry snad jednou bude součástí specifikace [CSS gridu](css-grid.md).
 
 Kodérky a kodéři jsou ovšem dneska nucení se s ním vypořádat pomocí JavaScriptu. Nativní implementace v CSS byla součástí našich snů už od příchodu flexboxu, ale plně to nevyřešil ani grid.
 
-Teď už se ale snad blýská na lepší časy. Chystaná třetí verze specifikace gridu totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
+Teď už se však snad blýská na lepší časy. Chystaná třetí verze specifikace gridu totiž počítá s hodnotou `masonry` pro vlastnosti [`grid-template-rows/columns`](css-grid-template.md):
 
 ```css
 .container {
@@ -35,7 +35,7 @@ Teď už se ale snad blýská na lepší časy. Chystaná třetí verze specifik
 
 Subgrid má zatím bohužel podporu jen ve verzi Firefoxu Nightly. Je ale možné, že se ujme a že nás zbaví dalšího nadbytečného javascriptového pluginu.
 
-Aktuálně tuto funkci ale na webech používat nemůžeme, proto se v článku kromě budoucnosti (nativní implementace v CSS) věnujeme i současnosti (řešení pomocí JS komponent).
+Aktuálně ovšem tuto funkci na webech používat nemůžeme, proto se v článku kromě budoucnosti (nativní implementace v CSS) věnujeme i současnosti (řešení pomocí JS komponent).
 
 <!-- AdSnippet -->
 
@@ -91,7 +91,7 @@ Raději to vysvětlím:
 - `grid-template-columns:repeat(4,1fr)` vykreslí čtyři stejně široké sloupce mřížky. Viz [zápis `repeat()`](css-repeat.md).
 - `grid-template-rows:masonry` zařídí to zděné kouzlo. Řádky nebudou zarovnané podle osy, ale nalepí se na položky výše a přeskupí se. Viz [vlastnost `grid-template-rows`](css-grid-template.md).
 
-Výsledek tohoto zápisu nicméně bez Firefox Nightly lépe uvidíte na obrázku. Tady je.
+Výsledek tohoto zápisu nicméně bez Firefox Nightly lépe uvidíte na následujícím obrázku.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
@@ -137,7 +137,7 @@ Jako by nám nestačily ty desítky, co jich už máme, řekl by bručoun. Ale n
 
 Pokud máte v kontejneru mřížky více prostoru ve směru rozloženém pomocí masonry, zjistíte, že se položky zarovnají na začátek kontejneru. Počáteční hodnota vlastnosti `align-tracks` je totiž `start`.
 
-Další možnosti jsou podobné jako u vlastností `align-content` a `justify-content` (např. `end` nebo z podstaty věci také `space-between`) s několika modifikacemi:
+Další možnosti jsou podobné jako u vlastností `align-content` a `justify-content` (např. `end` nebo z podstaty věci také `space-between`), s několika modifikacemi:
 
 - Hodnota `normal` – u těchto vlastností se chová jako `start`.
 - Hodnota `stretch` – položky automatické velikosti v rozložení se roztáhnou.
@@ -159,11 +159,11 @@ Standardizátoři mají CSS grid Level 3 zatím rozpracovaný. V únoru 2022 byl
 
 Je samozřejmě otázkou, jak může vypadat náhradní řešení z vizuálního pohledu.
 
-Doufejme, že o náhradních řešeních nebudeme muset dlouho přemýšlet a po připomínkovém řízení ke specifikaci dojde k implementaci v Chromu a odvozených prohlížečích a pak chvíli čekání na Safari, jak už to ve světě dnešního vývoje webů chodí.
+Doufejme, že o těchto náhradních řešeních nebudeme muset dlouho přemýšlet a po připomínkovém řízení ke specifikaci dojde k implementaci v Chromu a odvozených prohlížečích a pak chvíli čekání na Safari, jak už to ve světě dnešního vývoje webů chodí.
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, velmi užitečné „Feature Queries“, dotazy na podporu vlastností, a tedy klíčové slovo `@supports`, popisuji pro zájemce více [v poslední, přílohové kapitole](css-supports.md).
+Mimochodem, velmi užitečné „Feature Queries“, dotazy na podporu vlastností, a tedy klíčové slovo `@supports`, popisuji pro zájemce více [v poslední, „přílohové“ kapitole](css-supports.md).
 
 </div>
 
@@ -193,7 +193,7 @@ Další metody alternativního řešení zděného layoutu mají dvě věci spol
 }
 ```
 
-Nevýhodou je to, že směr layoutu bude vždy po sloupcích, nikoliv po řádcích. Prohlížeč se také – díky povaze vícesloupcové sazby – nebude trápit tím, když poslední sloupec zůstane vyplněný jen z malé části.
+Nevýhodou je to, že směr layoutu bude vždy po sloupcích, nikoliv po řádcích. Prohlížeč se také – kvůli povaze vícesloupcové sazby – nebude trápit tím, když poslední sloupec zůstane vyplněný jen z malé části.
 
 CodePen: [vrdl.in/y5b7l](https://codepen.io/rachelandrew/pen/QWEmPvK?editors=1100)
 
@@ -214,7 +214,7 @@ Nevýhoda? Pořád jde o vykreslení do mřížky, takže mezi jednotlivými pol
 
 CodePen: [vrdl.in/km26b](https://codepen.io/rachelandrew/pen/mdExgmZ?editors=1100)
 
-### Flexbox, `:nth-child` a `order` {#dalsi-flexbox-nthchild}
+### Flexbox, :nth-child a order {#dalsi-flexbox-nthchild}
 
 Tobias Ahlin Bjerrome se pokusil o řešení [flexboxem](css-flexbox.md), [selektorem `:nth-child(n)`](css3-selektory.md) a [vlastností `order`](css-order.md). [vrdl.in/tobmas](https://tobiasahlin.com/blog/masonry-with-css/)
 

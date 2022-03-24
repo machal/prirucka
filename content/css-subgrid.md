@@ -92,7 +92,7 @@ Nejprve musíme změnit rodičovský layout, a to tak, že přidáme řádky pom
 }
 ```
 
-Jak vidíte, nemáme příliš velké ambice položky layoutu nějak omezovat. Víme jen, že budou čtyři (nadpis, obrázek, text, tlačítko) a hodláme je pouze zarovnávat mezi sebou navzájem.
+Jak vidíte, nemáme příliš velké ambice položky layoutu nějak omezovat. Víme jen, že budou čtyři (nadpis, obrázek, text, tlačítko), a hodláme je pouze zarovnávat mezi sebou navzájem.
 
 ## A teď kouzlo, subgrid
 
@@ -108,11 +108,11 @@ Zápis pro vnitřní mřížku u jednotlivých položek, který řešíme podmř
 
 Prohlížeči dáváme tyhle instrukce:
 
-1. Budiž grid! (`display:grid`)
-2. Umísti tuto položku do čtyř buněk gridu. (`grid-row:span 4`)
-3. Svislý směr mřížky nechť je subgridem, takže dědí vnější mřížku. (`grid-template-rows:subgrid`)
+1. Budiž grid (`display:grid`)!
+2. Umísti tuto položku do čtyř buněk gridu (`grid-row:span 4`).
+3. Svislý směr mřížky nechť je subgridem, takže po gridu zdědí vnější mřížku (`grid-template-rows:subgrid`).
 
-Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad pomůže s pochopením celé legrace.
+Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad pomůže s pochopením celé legrace, což je samozřejmě opět možné zkoušet na živé ukázce.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/subgrid-example.jpg" width="1600" height="900" alt="Příklad se subgridem">
@@ -120,8 +120,6 @@ Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad p
 *Zelená podmřížka (vlevo) si hoví v modré mřížce a je spokojená. My také, protože vnitřní položky karet jsou navzájem zarovnané.*
 </figcaption>
 </figure>
-
-Výsledek je samozřejmě opět možné zkoušet na živé ukázce.
 
 CodePen: [vrdl.in/se38k](https://codepen.io/machal/pen/wvrQgLJ?editors=1100)
 
@@ -146,7 +144,7 @@ V běžném gridu je možné pomocí [vlastností `grid-auto-`](css-grid-auto-ro
 Subgrid je součástí specifikace CSS Grid Layout Module již od Level 2, která se datuje do roku 2018. Zde je stav k únoru 2022:
 
 - Firefox podporuje subgrid od verze 70 z prosince 2019.
-- V Chromu se na subgridu zdá se docela hodně pracuje od podzimu 2021.
+- V Chromu se na subgridu – zdá se – docela hodně pracuje od podzimu 2021.
 - Safari sice subgrid eviduje, ale tým vývojářů zatím mlčí.
 
 Vzhledem k tomu, že se ledy hnuly u Chromu, má subgrid opravdu dobrou šanci, že se ujme a bude nám v budoucnu sloužit.

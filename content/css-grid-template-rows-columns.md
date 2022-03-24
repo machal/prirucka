@@ -147,7 +147,7 @@ Občas se ale může hodit použít ji i ve vlastním kódu, například když r
 
 V gridu je možné pro definici řádků a sloupečků používat všechny možné [jednotky](jednotky.md), které už pro rozvržení v CSS používáte.
 
-Je tady ale jedna novinka – [jednotka `fr`](css-jednotka-fr.md). Jde o *fraction unit* a dá se o ní mluvit jako o podílu na zbytku.
+Je tady ale ještě [jednotka `fr`](css-jednotka-fr.md). Jde o *fraction unit* a dá se o ní mluvit jako o podílu na zbytku.
 
 Zápis může vypadat například takto:
 

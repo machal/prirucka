@@ -12,7 +12,7 @@ b) vlastností `flex-axis`
 c) vlastností `flex-direction` a `writing-mode`, nastavením jazyka
 1. **Co zajistí zápis flex-flow:column?**  
 a) zalomí (`wrap`) a vykreslí svisle (`flex-direction:column`)  
-b) zákaz zalamení (`nowrap`) a vykreslí svisle (`flex-direction:column`)  
+b) zákaz zalomení (`nowrap`) a vykreslí svisle (`flex-direction:column`)  
 c) jde o zápis pro vytvoření sloupcové sazby textu
 1. **Jaké vlastnosti odpovídá flex-basis?**  
 a) `width`  

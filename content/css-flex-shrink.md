@@ -37,7 +37,7 @@ Možná to celé zní trošku zašmodrchaně a bude lepší ukázat si to na obr
 
 ## Demo {#demo}
 
-Pevně doufám, že když se podíváte na obrázek, problematiku smršťování a vlastnosti `flex-shrink` snáze pochopíte.
+Pevně doufám, že když se podíváte na obrázek, problematiku smršťování a vlastnosti `flex-shrink` pochopíte snáze.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-shrink.jpg" width="1600" height="900" alt="CSS vlastnost flex-shrink">

@@ -68,7 +68,7 @@ Položku ale můžeme osvobodit tím, že i z ní uděláme kontejner (`display:
 
 Musíme si tady uvědomit, že položkou je každý uzel DOMu, který je přímým potomkem kontejneru mřížky.
 
-Do této kategorie patří také například obrázky nebo takzvané *anonymní uzly*, což jsou textové bloky, potomci kontejneru, neuzavřené v elementu HTML.
+Do této kategorie patří také i třeba obrázky nebo takzvané *anonymní uzly*, což jsou textové bloky, potomci kontejneru, neuzavřené v elementu HTML.
 
 ```html
 <div class="container">
@@ -147,7 +147,7 @@ Vizualizace mřížky ve Firefoxu nebo i v Chromu pomůže pochopit, z čeho se 
 
 <div class="ebook-only" markdown="1">
 
-O podpoře layoutů v DevTools moderních prohlížečů budu psát [v osmé kapitole](css-layout-devtools.md).
+O podpoře layoutů v DevTools moderních prohlížečů je více [v osmé kapitole](css-layout-devtools.md).
 
 </div>
 
@@ -183,7 +183,7 @@ Uvedený zápis zařídí následující:
 * Pojmenuje vodorovné linky jako `first`, `second` a `end`.
 * Mezi linkami definuje dva sloupce, první je `2fr` široký a druhý `1fr`.
 
-Dostali jsme se díky tomu k dalšímu pojmu – sloupec mřížky. Než se si jej rozebereme, musíme se seznámit s jiným pojmem – stopa mřížky.
+Dostali jsme se díky tomu k dalšímu pojmu – sloupec mřížky. Než si jej rozebereme, musíme se seznámit s jiným pojmem – stopa mřížky.
 
 ## Stopa mřížky (grid track) {#stopa}
 
@@ -258,7 +258,7 @@ CodePen: [vrdl.in/cuz72](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 <div class="book-index" data-book-index="Mezera v layoutu"></div>
 <div class="book-index" data-book-index="Gap"></div>
 
-Jde o prostor mezi buňkami buňky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
+Jde o prostor mezi buňkami mřížky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
 
 ```css
 .container {

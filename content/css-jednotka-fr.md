@@ -133,7 +133,7 @@ Jo a – záporné hodnoty k jednotce `fr` přidávat nezkoušejte. K ničemu to
 
 ## Podpora v prohlížečích {#podpora}
 
-Podpora je skvělá. Nevím o žádném mezi uživateli rozšířeném prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to do této skupiny prohlížečů o únoru 2022 považuji i Internet Explorer 11.
+Podpora je skvělá. Nevím o žádném mezi uživateli rozšířeném prohlížeči, který by jednotku `fr` v kombinaci s CSS gridem nezvládal. A to do této skupiny prohlížečů k únoru 2022 počítám i Internet Explorer 11.
 
 <!-- AdSnippet -->
 

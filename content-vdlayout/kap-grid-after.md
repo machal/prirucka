@@ -27,9 +27,9 @@ a) `auto-fit` vyplní prostor buňkami, `auto-fill` zvětší existující
 b) `auto-fill` vyplní prostor buňkami, `auto-fit` zvětší existující  
 c) uvnitř funkce `repeat()` mají obě klíčová slova stejný význam
 1. **Co bude výsledkem zápisu minmax(100px,max-content)?**  
-a) bude široká nejméně `100px`, maximálně bude mít šířku obsahu  
-b) bude široká nejméně `100px`, maximálně bude mít šířku rodiče  
-c) bude široká nejméně `100px`, maximálně bude mít šířku viewportu
+a) buňka široká nejméně `100px`, maximálně bude mít šířku obsahu  
+b) buňka široká nejméně `100px`, maximálně bude mít šířku rodiče  
+c) buňka široká nejméně `100px`, maximálně bude mít šířku viewportu
 
 ---
 

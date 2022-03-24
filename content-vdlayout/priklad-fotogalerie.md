@@ -4,7 +4,7 @@
 
 Fotogalerie, nebo prostě seznam položek vyskládaný do mřížky, to je návrhový vzor, kterým se dnešní weby jen hemží a ve vývojářské praxi se mu nedá vyhnout.
 
-V tomto specifickém příkladu budeme předpokládat kodéra velmi lenivé nátury a pokusíme se vyhnout jakýmkoliv Media nebo Container Queries. V knize jsme o tomto přístupu psali v druhé kapitole jako [o No Queries layoutech](no-queries.md).
+V tomto specifickém příkladu předpokládejme kodéra velmi lenivé nátury a pokusíme se vyhnout jakýmkoliv Media nebo Container Queries. V knize jsme o tomto přístupu psali v druhé kapitole jako [o No Queries layoutech](no-queries.md).
 
 <figure>
 <img src="../dist/images/original/vdlayout/priklad-photogallery.jpg" width="1600" height="900" alt="Příklad s fotogalerií bez Media Queries">

@@ -240,14 +240,14 @@ CodePen: [vrdl.in/rbv3o](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
 
 Pokud byste chtěli zápis `minmax()` mermomocí rozbít, prohlížeče by se podle specifikace měly chovat následovně:
 
-- Pokud uvedete vyšší minimum než maximum (např. `minmax(200px, 100px)`), maximum bude ignorováno a prohlížeče budou počítat jen s minimem.
+- Pokud uvedete vyšší hodnotu v minimu než maximu (např. `minmax(200px, 100px)`), maximum bude ignorováno a prohlížeče budou počítat jen s minimem.
 - Jako minima zatím nemá smysl uvádět zlomkovou jednotku `fr`. Ale v budoucí verzi specifikace by se to prý mohlo změnit.
 
 ## Podpora v prohlížečích {#podpora}
 
 Teď už zbývá jen rekapitulace podpory v prohlížečích.
 
-- Funkce `minmax()`, ale i klíčová slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči-dědečkovi ale doporučuji testovat, občas se chová podivně.
+- Funkce `minmax()`, ale i klíčová slova `min-content` a `max-content` podporují všechny prohlížeče včetně Internet Exploreru 11. V tomto prohlížeči „dědečkovi“ ale doporučuji testovat, občas se chová podivně.
 - `fit-content()` podporují skoro všechny relevantní prohlížeče, ale v MSIE 11 ostrouháte. Je však možné tam vlastnost obejít pomocí šířky stopy nastavené na `auto` a vlastnosti `max-width` aplikované na buňky layoutu.
 
 Viz CanIUse: [caniuse.com/intrinsic-width](https://caniuse.com/#search=intrinsic-width).

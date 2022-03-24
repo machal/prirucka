@@ -67,7 +67,7 @@ Použití zápisu `repeat()` v kombinaci s klíčovými slovy `auto-fill` a `au
 <figure>
 <img src="../dist/images/original/auto-fill-fit.jpg" alt="">
 <figcaption markdown="1">
-Hodnota auto-fill přidává do volného prostoru neviditelné buňky, naproti tomu auto-fit prioritizuje roztahování těch už vykreslených.*
+Hodnota auto-fill přidává do volného prostoru neviditelné buňky, naproti tomu auto-fit prioritizuje roztahování těch už vykreslených.
 </figcaption>
 </figure>
 

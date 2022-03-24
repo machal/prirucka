@@ -41,7 +41,7 @@ Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vy
 
 Co teď? Vzhůru do ukázek!
 
-## Příklad: změna směru vykreslování pomocí grid-auto-flow: column {#priklad-column}
+## Příklad: změna směru vykreslování pomocí zápisu grid-auto-flow:column {#priklad-column}
 
 <div class="book-index" data-book-index="Směr layoutu"></div>
 
@@ -94,7 +94,7 @@ CodePen: [vrdl.in/i8mbo](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
 V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
 
-## Příklad: zahuštěné vykreslování pomocí grid-auto-flow:dense {#priklad-dense}
+## Příklad: zahuštěné vykreslování pomocí zápisu grid-auto-flow:dense {#priklad-dense}
 
 <div class="book-index" data-book-index="Zahuštěné vykreslování"></div>
 

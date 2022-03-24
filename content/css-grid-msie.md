@@ -2,7 +2,7 @@
 
 <div class="book-index" data-book-index="Internet Explorer (MSIE)"></div>
 
-„Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z 10 důvodů, proč lidé ještě v roce 2022 CSS grid nepoužívají.
+„Neumí to Explorer“ je, když to přeženeme, na prvních devíti místech z deseti důvodů, proč lidé ještě v roce 2022 CSS grid nepoužívají.
 
 V realitě to ale zase tak moc velký problém není, protože u většiny projektů už nejspíš [není MSIE nutné používat](msie.md). Je-li toto i váš případ, tuto podkapitolu račte vynechat.
 
@@ -35,7 +35,7 @@ Velká část uvedeného pro vás ale přečtením tohoto dlouhého textu přest
 Naopak se málo ví, že stařičký MSIE nativně podporuje následující:
 
 - Implicitní (nepředdefinovanou) mřížku.
-- [Funkci `repeat()`](css-repeat.md), jen jinak. `repeat(12, 1fr 20px)` zapisuje jako `(1fr 20px)[12]`.
+- [Funkci `repeat()`](css-repeat.md), jen jinak. `repeat(12, 1fr 20px)` zapisujte v Exploreru jako `(1fr 20px)[12]`.
 - [Funkci `minmax()`](css-minmax.md).
 - Klíčová slova `min-content` a `max-content`.
 
@@ -45,7 +45,7 @@ Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro 
 
 ## Třísloupcové demo aneb „Jak to kurnik šopa funguje?“ {#demo}
 
-Podívejme se na jednoduchý layout, u kterého si ukážeme, jak přesně Autoprefixer zařídí fungování gridu v MSIE.
+Podívejme se na velmi jednoduchý layout, u kterého si ukážeme, jak přesně Autoprefixer zařídí fungování gridu v MSIE.
 
 CodePen: [vrdl.in/4rbvs](https://codepen.io/machal/pen/PopyerN?editors=1100).
 
@@ -270,11 +270,11 @@ Potřebujete tyto suroviny:
 - *Automatizaci*  
 Gulp, Grunt, skripty v NPM nebo podobné nástroje, které umí využít Autoprefixer.
 - *Zapnout podporu MSIE11*  
-V Browserslistu, seznamu podporovaných prohlížečů, je nutné specifikovat také MSIE 11, případně i desátou verzi – např. takto `> 1%, IE 11, IE 10`.
+V Browserslistu, seznamu podporovaných prohlížečů, je nutné specifikovat také MSIE 11, případně i desátou verzi – například takto `> 1%, IE 11, IE 10`.
 - *Zapnout grid a autoplacement*  
 Zavolat Autoprefixer s parametrem `grid: 'autoplace'`, který zařídí podporu právě pro automatické umístění. Alternativou jsou řídicí komentáře přímo v CSS: `/* autoprefixer grid: autoplace */`.
 
-Takto může vypadat konfigurace v automatizačním nástroji Gulpu:
+Takto může vypadat konfigurace v automatizačním nástroji Gulp:
 
 ```js
 gulp.task('autoprefixer', () =>

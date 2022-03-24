@@ -10,7 +10,7 @@ Díky vlastnosti `column` a dalším definovaným v sadě modulu CSS Multi-colum
 - [CSS Box Alignment](css-box-alignment.md)
 </div>
 
-Na rozdíl od podobných layoutových modulů – CSS gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3 spíše pro textový a obrázkový obsah, nikoliv pro layout stránek nebo komponent.
+Na rozdíl od podobných layoutových modulů – CSS gridu a flexboxu – navrhli vícesloupcové rozvržení v konsorciu W3C spíše pro textový a obrázkový obsah, nikoliv pro layout stránek nebo komponent.
 
 Ale kreativitě se samozřejmě meze nekladou. Multi-column Layout má totiž jednu krásnou vlastnost – automatickou responzivitu. Na obrázku vidíte vícesloupcový layout s nastavením `columns:20em`.
 
@@ -64,7 +64,7 @@ Od této šířky sloupce v layoutu pořád přibývají. Viděli jste to na obr
 
 CodePen: [vrdl.in/dnmp8](https://codepen.io/machal/pen/rNMzwaN?editors=1100)
 
-Když si v CodePenu poklikáte na tlačítka s přiblížením a oddálením (0,5 × ), uvidíte, jak to funguje v praxi.
+Když si v CodePenu poklikáte na tlačítka s přiblížením a oddálením, uvidíte, jak to funguje v praxi.
 
 Je to automaticky responzivní, aniž bychom museli definovat Media Queries. Bezva.
 
@@ -158,9 +158,7 @@ Vícesloupcový layout má sice z trojice multi-column, flexbox a grid nejméně
 
 ## Anonymní fragmentační kontejnery {#vice-kontejnery}
 
-Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s pochopením téhle užitečné sady vlastností.
-
-Jiné metody rozložení v CSS jako flex nebo grid, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení.
+Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s pochopením téhle užitečné sady vlastností. Jiné metody rozložení v CSS jako flex nebo grid, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení.
 
 Například při použití [vlastnosti `display`](css-display.md) s hodnotou `grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
 

@@ -23,7 +23,7 @@ Vlastnosti `grid-auto-rows` a `grid-auto-columns` jsou součástí [CSS gridu](c
 
 </div>
 
-Jsou tedy doplňkem vlastností [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, tedy autorsky definovaného.
+Jsou tedy doplňkem vlastností [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, čili autorsky definovaného.
 
 Tyto vlastnosti jsou užitečné pro implicitní řádky (`grid-auto-rows`), a to v případech, kdy máte v HTML neznámý počet položek. Řádky se vám v layoutu tvoří samy a vy nemusíte definovat mřížku pro různé počty položek v ní.
 
@@ -146,7 +146,7 @@ Opravíme to až touto deklarací:
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-auto-cols.jpg" width="1600" height="900" alt="grid-auto-columns">
 <figcaption markdown="1">
-Rozdíl mezi nedefinovanou mřížkou (grid-auto-columns:auto) a definovanou (grid-auto-columns:1fr), ve které pátá a šestá položka dostanou definovanou šírku.
+Rozdíl mezi nedefinovanou mřížkou (deklarace grid-auto-columns:auto) a definovanou (deklarace grid-auto-columns:1fr), ve které pátá a šestá položka dostanou definovanou šířku.
 </figcaption>
 </figure>
 

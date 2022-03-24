@@ -73,7 +73,7 @@ Teď přichází trik. Pokud nastavíte vlastnosti `column-width` i `column-coun
 
 Jenže nikoliv. Prohlížeče by měly vzít v potaz obojí a celočíselná hodnota v `column-count` pak popisuje _maximální_, nikoliv jasně daný počet sloupců.
 
-## Vlastnost columns: zkratka pro column-width a column-count {#columns}
+## Zápis columns: zkratka pro vlastnosti column-width a column-count {#columns}
 
 Vlastnost `columns` je zkratkou pro obě výše uvedené:
 
@@ -120,7 +120,7 @@ Pokud si příklad vyzkoušíte naživo, uvidíte, že můžete přepínat mezi 
 
 ## Podpora v prohlížečích {#podpora}
 
-V případě `column-width`, `column-count` i `columns` důvod se s podporou v prohlížečích stresovat.
+V případě `column-width`, `column-count` i `columns` není důvod se s podporou v prohlížečích stresovat.
 
 Tabulky na CanIUse jsou u těchto tří vlastností zelené jako pečlivě udržovaný fotbalový trávník. Dobře je zvládaly dokonce Explorery verze 11 i 10 (!). [caniuse.com/column](https://caniuse.com/?search=column)
 

@@ -165,7 +165,7 @@ Pojďme si ale položit otázku, zda by i zde nebylo vhodnější vyřešit úko
 
 Vysvětlivky:
 
-- `display:grid` nastaví formátovací kontext gridu (více [v páté kapitole](css-grid-formatting-context.md)). že žádné rozvržení sám o sobě nevytvoří.
+- `display:grid` nastaví formátovací kontext gridu (více [v páté kapitole](css-grid-formatting-context.md)), ale žádné rozvržení sám o sobě nevytvoří.
 - Zarovnávání na účaří pomocí `align-items:baseline` můžeme samozřejmě zapsat i do gridového layoutu, protože vlastnosti [CSS Box Alignment](css-box-alignment.md) jsou univerzální.
 
 ### Menší displeje
@@ -188,7 +188,7 @@ Co jsme zde udělali?
 
 Je to jednoduché, že? Ale teď vám řeknu, že vás u této ukázky trošku tahám za nos. Mohlo by to totiž být ještě jednodušší.
 
-Ve skutečnosti bychom zde nemuseli zapisovat žádný kód. Možná už totiž víte, že [CSS grid](css-grid.md) řádky layoutu vytváří automaticky. Při automatickém vytvoření řádku se prvek roztáhne na celou šířku (což chceme) a výšku má podle obsahu (což také chceme). Takže si klidně ušetřeme práci a pro malé displeje tuto deklaraci zcela vynechme.
+Ve skutečnosti bychom zde nemuseli zapisovat žádný kód. Možná už totiž víte, že [CSS grid](css-grid.md) vytváří řádky layoutu. Při automatickém vytvoření řádku se prvek roztáhne na celou šířku (což chceme) a výšku má podle obsahu (což také chceme). Takže si klidně ušetřeme práci a pro malé displeje tuto deklaraci zcela vynechme.
 
 ### Větší displeje
 
@@ -236,7 +236,7 @@ Tady se samozřejmě musím pozastavit u využití dotazů na média – [Media 
 
 Jenže v tomto případě jsme se zaměřili na jednu malou komponentu. Tu navíc mohou naši zlovolní vývojářští a designérští kolegové umísťovat do různých míst stránek, přesně podle dnešního způsobu práce se systémy komponent.
 
-Zde by se prostě daleko víc hodilo namísto dotazů na média a klíčového slova `@media` hodilo použít dotazy na rodičovský element a slovo `@container`. Jak ale už také víte, [Container Queries](container-queries.md) jsou v době psaní jen zkušebně implementovány v prohlížeči Chrome a vůbec není jisté, že se ujmou.
+Zde by se prostě daleko víc hodilo namísto dotazů na média a klíčového slova `@media` použít dotazy na rodičovský element a slovo `@container`. Jak ale už také víte, [Container Queries](container-queries.md) jsou v době psaní jen zkušebně implementovány v prohlížeči Chrome a vůbec není jisté, že se ujmou.
 
 ## Co jsme se naučili?
 

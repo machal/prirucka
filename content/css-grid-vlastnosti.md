@@ -17,7 +17,8 @@ Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) (*fract
 <figure>
 <img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
 <figcaption markdown="1">
-Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce em odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou fr. Zdroj: [vrdl.in/jhfwd](https://codepen.io/machal/pen/XWrjZRV?editors=1100).
+Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce em odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou fr.  
+Zdroj: [vrdl.in/jhfwd](https://codepen.io/machal/pen/XWrjZRV?editors=1100).
 </figcaption>
 </figure>
 
@@ -83,7 +84,7 @@ Pokud bychom snad chtěli změnit směr budování mřížky na shora dolů a pa
 
 ## 7) Oblasti mřížky
 
-Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-template-areas.md), velmi usnadňují definování layoutů a jejich přeskládávání v různých rozlišeních:
+Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-template-areas.md), velmi usnadňují definování layoutů a jejich přeskládávání v různých rozli​še​ních:
 
 ```css
 @media screen and (max-width: 37.49999em) {
@@ -117,7 +118,7 @@ To, co je profíkům jasné jako facka, nemusí být patrné všem. Stejně jako
 
 Otevírá to další možnosti a prostor pro tvorbu precizně definovaných layoutů.
 
-Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako [podmřížka (subgrid)](css-subgrid.md) nebo nová hodnota [vlastnosti `display:contents`](css-display.md), jež umožní nevykreslit rodiče a celý prostor věnovuje potomkům.
+Do budoucna zde mohou ještě zaúřadovat a nové možnosti přidat rozpracované vlastnosti jako [podmřížka (subgrid)](css-subgrid.md) nebo nová hodnota [vlastnosti `display:contents`](css-display.md), jež umožní nevykreslit rodiče a celý prostor věnuje potomkům.
 
 ## 10) Nové typy layoutů
 
@@ -126,7 +127,8 @@ Sečteno, podtrženo: CSS grid může být nástrojem, který k webu přitáhne 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-jen-simmons.jpg" width="1600" height="900" alt="THE EXPERIMENTAL LAYOUT LAB OF JEN SIMMONS">
 <figcaption markdown="1">
-The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a neotřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak. Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/).
+The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a ne​otřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak.  
+Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/).
 </figcaption>
 </figure>
 

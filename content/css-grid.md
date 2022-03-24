@@ -51,7 +51,7 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
     <p><a href="css-grid-template-rows-columns.md"><img src="../dist/images/small/vdlayout/schema-css-grid-template-rows-columns.jpg" alt="CSS vlastnost grid-template-columns/rows" /></a></p>
     <p>
       Definice explicitní mřížky. <br>
-      <code>grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr;</code>
+      <code>grid-template-columns:1fr 1fr 1fr; grid-template-rows:1fr 1fr;</code>
       </p>
   </article>
 
@@ -139,7 +139,7 @@ Do následující škatulky spadly nejrůznější výpočetní funkce, speciál
     <h4 id="jednotka-fr"><a href="css-jednotka-fr.md">jednotka fr</a></h4>
     <p><a href="css-jednotka-fr.md"><img src="../dist/images/small/vdlayout/schema-css-jednotka-fr.jpg" alt="CSS jednotka fr" /></a></p>
     <p>
-      Jednotka pro podíl na celku. <br> 
+      Jednotka pro podíl na celku. <br>
       <code>grid-template-columns:1fr 2fr;</code>
     </p>
   </article>
@@ -201,7 +201,7 @@ Ke správnému zarovnávání v gridu budete potřebova také vlastnosti jako [`
 
 </div>
 
-## Základy gridu a příklad {#priklad}
+## Základy gridu a první příklad {#priklad}
 
 <div class="web-only" markdown="1">
 
@@ -307,7 +307,7 @@ Horší je to ve stařičkém prohlížeči od Microsoftu.
 
 ### Grid v Internet Exploreru 11 {#ie11}
 
-Explorer a starší Edge podporují dnes už neplatnou specifikaci gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, a takhle mohli bychom pokračovat.
+Explorer a starší Edge podporují dnes už neplatnou specifikaci gridu. Má jinou syntaxi a jde o podmnožinu dnešních možností gridu. Navíc nepodporuje automatické umísťování prvků do mřížky. A neumí vlastnost `grid-gap`… No, a takhle bychom mohli pokračovat.
 
 Naštěstí je tady [Autoprefixer](autoprefixer.md) a dnes už je možné svěřit [řešení gridu pro MSIE](css-grid-msie.md) jemu.
 

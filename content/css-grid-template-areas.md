@@ -49,7 +49,7 @@ V příkladu na obrázku pojmenováváme oblasti následovně:
 <figure>
 <img src="../dist/images/original/vdlayout/css-grid-template-areas.jpg" width="1920" height="540" alt="Vlastnost grid-template-areas">
 <figcaption markdown="1">
-Světle hnědou barvou jsou vyznačené položky, modře pak uvidíte oblasti mřížky vyznačené ve Firefox DevTools.
+Světle šedou barvou jsou vyznačené položky, modře pak uvidíte oblasti mřížky vyznačené ve Firefox DevTools.
 </figcaption>
 </figure>
 
@@ -95,9 +95,7 @@ Pojmenované oblasti souvisí s pojmenovanými linkami, které znáte z vlastnos
 
 Například definování oblasti pojmenované `head` automaticky vytvoří dvě linky – `head-start` a `head-end`.
 
-A víte, co je ještě lepší? Definováním linek `head-start` a `head-end` ve vlastnostech [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md) vytvoříte oblast `head`.
-
-Vezměme tento grid definovaný jako dva sloupce a dva řádky:
+A víte, co je ještě lepší? Definováním linek `head-start` a `head-end` ve vlastnostech [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md) vytvoříte oblast `head`. Vezměme tento grid definovaný jako dva sloupce a dva řádky:
 
 ```css
 .container {
@@ -159,6 +157,8 @@ Je to jednoduché – oblasti je prostě možné různě přehazovat v rámci de
 </figcaption>
 </figure>
 
+<div class="pbi-avoid" markdown="1">
+
 V tomto příkladu máme tyto responzivní deklarace:
 
 ```css
@@ -187,9 +187,12 @@ V tomto příkladu máme tyto responzivní deklarace:
 
 CodePen: [vrdl.in/sdlrj](https://codepen.io/machal/pen/jgrmoq?editors=1100)
 
+</div>
+<!-- .pbi-avoid -->
+
 ## Podpora v prohlížečích {#podpora}
 
-Opět je zde jediná potíž: Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to nemusí být tak problematické.
+Opět je zde jediná potíž: Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to nemusí být tak pro​ble​matické.
 
 Moderní prohlížeče nemají s vlastností `grid-template-areas` žádný problém.
 

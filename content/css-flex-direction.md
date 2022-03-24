@@ -66,7 +66,7 @@ O směru psaní dokumentu a tvorbě layoutu pro jazyky sázené v jiných směre
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, v poslední, přílohové kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně o možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
+Mimochodem, v poslední, „přílohové“ kapitole píšu o [CSS logical properties](css-logical.md), logických vlastnostech a hodnotách a obecně o možnosti sázení dokumentu v jazycích, které mají jiný směr toku než ten náš.
 
 </div>
 
@@ -74,13 +74,13 @@ Mimochodem, v poslední, přílohové kapitole píšu o [CSS logical properties]
 
 Pořadí vykreslení položek se v případě vlastností `row` a `column` bere z pořadí v kódu. Pokud chcete pořadí otočit, prostě zvolte hodnoty `row-reverse` nebo `column-reverse`. Pozorní si asi všimli, že vlastnost `flex-direction` lze tím pádem použít i pro změnu řazení seznamů.
 
-Změna pořadí má ale vliv jen na výsledek vykreslení, nikoliv např. na pořadí vykreslování a na procházení při navigaci klávesou `Tab` nebo čtečkami pro slabozraké.
+Změna pořadí má ale vliv jen na výsledek vykreslení, nikoliv např. na pořadí vykreslování a na procházení při navigaci klávesou Tab nebo čtečkami pro slabozraké.
 
-Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „čtení“ dokumentu bude dávat smysl i při pořadí uvedeném v DOMu. 
+Proto si na změnu směru dávejte velký pozor a vždy si představte, zda „čtení“ dokumentu bude dávat smysl i při pořadí uvedeném v DOMu.
 
 <div class="web-only" markdown="1">
 
-Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) a více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost.md).
+Je to ostatně podobné jako u [vlastnosti `order`](css-order.md) a více to rozebírám v textu [o přístupnosti CSS layoutu](css-layout-pristupnost.md).
 
 </div>
 
@@ -96,11 +96,11 @@ Pokud je `flex-direction` nastaveno na hodnotu `column`, [vlastností `flex-basi
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je flexbug číslo 14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou lidé skoro nenarazí.
+Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je tzv. flexbug #14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou lidé skoro nenarazí.
 
 <div class="ebook-only" markdown="1">
 
-Více o tom píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md) uvnitř osmé kapitoly.
+Více o „flexbugs“ píšu v textu [o chybách v CSS layoutech](css-layout-bugy.md) uvnitř osmé kapitoly.
 
 </div>
 

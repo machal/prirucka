@@ -26,12 +26,12 @@ Je to velice podobné jako vlastnosti `width` nebo `height`, ale s tím, že vel
 
 Doslovně se definuje jako šířka nebo výška před rozdělením volného prostoru v kontejneru flexboxu.
 
-Většinou `flex-basis` určuje výchozí šířku položky, tedy jako `width`. Alternativně výšku, pokud je směr rozvržení flexboxu svislý, například pomocí nastavení [`flex-direction:column`](css-flex-direction.md).
+Většinou určuje `flex-basis` výchozí šířku položky, tedy jako `width`. Alternativně výšku, pokud je směr rozvržení flexboxu svislý, například pomocí nastavení [`flex-direction:column`](css-flex-direction.md).
 
 Možné hodnoty:
 
 - `auto` (výchozí)  
-Přebírá rozměr podle `width` a `height`.  Pokud ten je také `auto`, pak platí, že rozměr určuje obsah, tedy se použije dále uvedená hodnota `content`. Distribuce volného místa pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md) se pak bude týkat jen místa, které položky obsadily nad rámec svého obsahu – „relativní model“ pružnosti rozebírám více níže.
+Přebírá rozměr podle `width` a `height`.  Pokud ten je také `auto`, pak platí, že rozměr určuje obsah, tedy se použije dále uvedená hodnota `content`. Distribuce volného místa pomocí [`flex-grow`](css-flex-grow.md) a [`flex-shrink`](css-flex-shrink.md) se pak bude týkat jen místa, které položky obsadily nad rámec svého obsahu – více rozebírám „relativní model“ pružnosti níže.
 - `content`  
 Nastaví velikost na základě obsahu položky. Toto klíčové slovo zatím podporuje jen Firefox a Chrome. V mých CodePenech níže jsou vidět rozdíly mezi `content` a `auto`. Podobného efektu jako s  `flex-basis:content` dosáhnete nastavením `flex-basis:auto` a zároveň vlastností `width`/`height` také na hodnotu `auto`.
 - `0`  
