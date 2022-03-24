@@ -19,7 +19,7 @@ Tohle bude Tinder pro systémy layoutu v CSS.
 
 Zatímco na skutečném Tinderu máte k ruce vystajlované fotky možných partnerek nebo partnerů, CSS layouty jsou sexy asi jako návod na sestavení nábytku z IKEA.
 
-Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektuálové, kteří na vás mluví řečí symbolů. Žádné obrázky z posiloven, žádné „duckface“, žádné výstřihy, a dokonce ani žádné instagramové filtry…
+Něco vizuálně poutavého na nich je, ale flex, grid a multicol jsou intelektuálové, kteří na vás mluví řečí symbolů. Žádné obrázky z posiloven, žádné „duckfaces“, žádné výstřihy, a dokonce ani žádné instagramové filtry…
 
 <div class="book-index" data-book-index="Flexbox"></div>
 <div class="book-index" data-book-index="Grid"></div>
@@ -44,7 +44,7 @@ Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když ř
 <div class="book-index" data-book-index="Box Align"></div>
 <div class="book-index" data-book-index="Zarovnání boxů"></div>
 
-„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md). Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je [`justify-items`](css-justify-items.md) (zarovnání na položek na hlavní ose) nebo [`align-self`](css-align-self.md) (zarovnání položky na příčné ose), se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí. Ale všeho dočasu. I těmto vlastnostem se budeme detailně věnovat.
+„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md). Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je [`justify-items`](css-justify-items.md) (zarovnání položek na hlavní ose) nebo [`align-self`](css-align-self.md) (zarovnání položky na příčné ose), se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí. Ale všeho dočasu. I těmto vlastnostem se budeme detailně věnovat.
 
 ## Pojďme si je otestovat
 
@@ -65,7 +65,7 @@ Začneme tím nejpopulárnějším parťákem.
 
 ## Flexbox: příklad s obrázkem a textem
 
-Cílem je dosáhnout rozvržení, kde je na jedné straně obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, které ale není ve schématu na další stránce vidět.
+Cílem je dosáhnout rozvržení, kde je na jedné straně obrázek, který zabírá třetinu šířky, a na druhé text. Mezi nimi jsme si ještě vymysleli mezeru o šířce `1rem`, která ale není ve schématu na další stránce vidět.
 
 Začneme asi s HTML, což?
 
@@ -140,7 +140,7 @@ CodePen: [vrdl.in/aedjl](https://codepen.io/machal/pen/eYvZqYd?editors=1100)
 
 ## Grid: příklad s kartou produktu
 
-Grid se zadáním vidíme, že u gridu jsem vybral rozvržení, které má dva směry - vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2 : 1. Mezery mezi prvky jsou opět v šířce `1rem`.
+V zadání vidíme, že u gridu jsem vybral rozvržení, které má dva směry – vodorovný i svislý. Obrázek zabírá celou horní polovinu, druhý řádek je rozdělený poměrem 2 : 1. Mezery mezi prvky jsou opět v šířce `1rem`.
 
 Ano, i toto rozlišení bychom mohli udělat flexboxem, respektive dvěma flexboxy. Jenže by to nebylo tak elegantní jako řešení s pomocí gridu.
 
@@ -191,7 +191,7 @@ Automatické umístění zrušíme tímto kódem:
 }
 ```
 
-[Vlastnost `grid-column`](css-grid-row-column.md) (dále v páté kapitole) slouží k výslovnému umístění určitého prvku na konkrétní místo mřížky.
+[Vlastnost `grid-column`](css-grid-row-column.md) (více v páté kapitole) slouží k výslovnému umístění určitého prvku na konkrétní místo mřížky.
 
 V tomto případě mezi první a třetí linku mřížky. Linka je čára, která mřížku dělí na řádky, sloupce a pak jednotlivé buňky. Pokud si grid přirovnáte k tabulce, pak linky jsou úsečky tvořící její rámeček. (I linkám se věnuji v páté kapitole.)
 
@@ -257,7 +257,7 @@ K [vlastnosti `columns`](css-multicol-columns.md) se ještě dostaneme, vlastnos
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-layout-intro-example-multicol.jpg" width="1600" height="900" alt="…">
 <figcaption markdown="1">
-Výsledek ve Firefoxu. Je ale dobré vědět, že v různých šířkách okna bude počet sloupečků různý.
+Výsledek ve Firefoxu. Je ale dobré vědět, že v různých šířkách okna bude různý i počet sloupečků.
 </figcaption>
 </figure>
 
@@ -274,10 +274,10 @@ Už v první části knížky jsem použil několik jednotek a myslím, že by b
 - `%` (procenta). Používám je pro změnu výchozí velikosti v dokumentu a občas pro šířky či výšky v layoutu.
 - `px` (CSS pixely). Používám je hlavně u dekorací, jako je šířka rámečku.
 
-V Media Queries v knížce používám jednotně `em`, ale v praxi je možné použít také `rem` a pokud vám nevadí velmi specifické problémy se zvětšování stránky v Safari, lze využít také `px`.
+V Media Queries v knížce používám jednotně `em`, ale v praxi je možné použít také `rem`, a pokud vám nevadí velmi specifické problémy se zvětšováním stránky v Safari, lze využít rovněž `px`.
 
-Velice často zde také budu používat bezjednotkové hodnoty, které určují podíl prvku na rozměrech celku. Jde o čísla ve vlastnosti `flex`, zde již použité, hodnoty s jednotkou `fr` ve gridu. Ale nebudeme předbíhat.
+Velice často zde také budu používat bezjednotkové hodnoty, které určují podíl prvku na rozměrech celku. Jde o čísla ve vlastnosti `flex`, zde již použité, hodnoty s jednotkou `fr` v gridu. Ale nebudeme předbíhat.
 
-Více o používání jednotek v CSS píšu [v poslední, přílohové kapitole](jednotky.md).
+Více o používání jednotek v CSS píšu [v poslední, „přílohové“ kapitole](jednotky.md).
 
 Prostřednictvím Tinderu a prvního rande jsme se tedy seznámili se třemi hlavními protagonisty knížky a jejich nejlepším kamarádem. Ještě se nám ale bude hodit lépe poznat dva nejžhavější kandidáty.

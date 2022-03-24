@@ -15,7 +15,7 @@ Jasně – rozvržení je možné tvořit i pomocí vlastnosti `column` a podobn
 <div class="book-index" data-book-index="Grid"></div>
 <div class="book-index" data-book-index="Flexbox"></div>
 
-Tyto dva systémy rozvržení tvoří jádro knížky, a proto se jim budeme věnovat s patřičnou péčí. Občas se setkávám s názorem, že [grid](css-grid.md) je novější a tak nahrazuje starší [flexbox](css-flexbox.md). Nenahrazuje. Potřebujete obojí. A obojí se naučte. Jsou mezi nimi však významné rozdíly. Podívejme se na ně.
+Tyto dva systémy rozvržení tvoří jádro knížky, a proto se jim budeme věnovat s patřičnou péčí. Občas se setkávám s názorem, že [grid](css-grid.md) je novější, a tak nahrazuje starší [flexbox](css-flexbox.md). Nenahrazuje. Potřebujete obojí. A obojí se naučte. Jsou mezi nimi však významné rozdíly. Podívejme se na ně.
 
 ## Jednorozměrný flexbox, vícerozměrný grid
 
@@ -32,7 +32,7 @@ Jakmile je váš layout víceřádkový, typu mřížka, a nevystačíte si s po
 
 ### U flexboxu kraluje obsah, u gridu zase nastavený layout
 
-Grid je zaměřenější na layout, kdy se obsah musí vždy přizpůsobit definované mřížce. Layout je král – a obsah, tedy text obrázky a tak dál, se mu musí přizpůsobit. Této filozofii se v odborné hantýrce říká „grid in“, takže „z mřížky směrem dovnitř“.
+Grid je zaměřenější na layout, kdy se obsah musí vždy přizpůsobit definované mřížce. Layout je král – a obsah, tedy text, obrázky a tak dál, se mu musí přizpůsobit. Této filozofii se v odborné hantýrce říká „grid in“, takže „z mřížky směrem dovnitř“.
 
 Flexbox je naopak navržený pro situace, kdy se layout musí přizpůsobit obsahu. Výhodou je, že nemusíte často nastavovat parametry layoutu a díky rozměrům obsahu to nějak dopadne. Tento přístup k vykreslování layoutu naleznete pod pojmem „content out“, tedy „z obsahu směrem ven“.
 
@@ -94,4 +94,4 @@ Abychom si v tom udělali pořádek i vizuálně, připravil jsem si pro vás ta
 
 Tabulka netabulka…  osobně vám doporučuji naučit se flexbox i grid.
 
-Abyste dobře poznali flexbox a grid, budete potřebovat poznat také jejich předky. Začneme pravěkou historií a pak se zastavíme u nedávné minulosti.
+Abyste oba dobře poznali, budete potřebovat poznat také jejich předky. Začneme pravěkou historií a pak se zastavíme u nedávné minulosti.

@@ -10,7 +10,7 @@ Slíbil jsem stručnost, takže to vezměme v bodech.
 
 ## 1994: „Je mi líto, ale jste v háji.“
 
-Možnosti stylování dokumentů jsou mizerné. Mimo jiné to výborně vyjadřuje v e-mailovém fóru WWW-Talk také Marc Andreessen, spoluzakladatel Netscapu a pozdější člen představenstva Facebooku. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v sázecím programu LaTeX (nebo alespoň jako ve Wordu), všem prý odpovídá: „Sorry, you’re screwed.“
+Možnosti stylování dokumentů jsou mizerné. Mimo jiné to výborně vyjadřuje v e-mailovém fóru WWW-Talk Marc Andreessen, spoluzakladatel Netscapu a pozdější člen představenstva Facebooku. Když prý po něm lidé chtějí, aby jejich webové dokumenty vypadaly podobným způsobem, jak to jde zařídit v sázecím programu LaTeX (nebo alespoň jako ve Wordu), všem prý odpovídá: „Sorry, you’re screwed.“
 
 ## 1996: FRAME
 
@@ -40,7 +40,7 @@ Ano, opravdu se značky zapisovaly VERZÁLKAMI.
 
 Ne. Opravdu o tom už nechci dále mluvit.
 
-V té době tenkrát stavím svůj první větší web – fanouškovské stránky kapely U2 na tehdy velmi známém serveru MusicHall. Jsem hrdý, že pro rozložení stránky nepoužívám `<frame>`, už zastaralou metodu. Kód mého webu je totiž stavěný na prvku `<table>`.
+V těch časech stavím svůj první větší web – fanouškovské stránky kapely U2 na tehdy velmi známém serveru MusicHall. Jsem hrdý, že pro rozložení stránky nepoužívám `<frame>`, už zastaralou metodu. Kód mého webu je totiž stavěný na prvku `<table>`.
 
 ## 1998: TABLE
 
@@ -160,11 +160,11 @@ Nejvíce se tato frustrace projeví u šéfa jednoho z redmondských týmů zam�
 
 Ta věc se jmenuje „Grid Layout“.
 
-V témže roce přijde Tab Atkins, další známá postava standardů kolem CSS, a přepíše celou specifikaci flexboxu. Jeho hlavním cílem bylo pokusit se odstranit závislost na všech těch šílených háčcích s `float` nebo `table`, které jsme museli jako weboví vývojář umět.
+V témže roce přijde Tab Atkins, další známá postava standardů kolem CSS, a přepíše celou specifikaci flexboxu. Jeho hlavním cílem bylo pokusit se odstranit závislost na všech těch šílených háčcích s `float` nebo `table`, které jsme museli jako weboví vývojáři umět.
 
 ## 2012: Přelom. Prohlížeče implementují flexbox, Microsoft předává grid do W3C
 
-Cupp prezentuje nový systém rozvržení konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konferenci WebExpo 2016 nebo XML Prague o čtyři roky později) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS gridu.
+Cupp prezentuje nový systém rozvržení standardizačnímu konsorciu W3C. Začne se o tom hodně mluvit a další nadšenci (jako Rachel Andrew, kterou jste v Praze mohli potkat na konferenci WebExpo 2016 nebo XML Prague o čtyři roky později) to šíří do komunity webových vývojářů. Odtud už vede přímá cesta k dnešnímu CSS gridu.
 
 V čem byl ale tento pokus o implementaci rozvržení typu mřížky jiný než všechny předchozí? Je to jednoduché – Phil Cupp a jeho lidé zařídili implementaci v prohlížeči.
 

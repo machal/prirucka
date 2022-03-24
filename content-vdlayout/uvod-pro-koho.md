@@ -1,7 +1,5 @@
 # Pro koho knížka je a jak ji číst?
 
-### Pro koho to je?
-
 V knížce jsem cílil na webové vývojáře všech úrovní – od začínajících a orientujících se v problematice až po profesionální specialisty na CSS.
 
 Principy CSS layoutů by ideálně mohly být uložené v obecném povědomí také našich netechnických kolegyň a kolegů – z oblasti designu, grafiky, marketingu, produktového managementu a tak dále. Tentokrát je kniha vyloženě technická, ale věřím, že například v prvních dvou kapitolách si i tato skupina najde svoje.
@@ -14,7 +12,7 @@ Pro pochopení technických částí budete potřebovat alespoň základní znal
 
 Ideální odpověď by mohla znít: „Slovo od slova, řádek po řádku. Od začátku do konce.“ Jenže takhle se technické knížky nečtou. A nebudu si hrát na to, že tahle by měla být výjimkou.
 
-V prvních třech kapitolách čtenářům postupně představuji téma, abychom se ve čtvrté dostali k vrcholu, který představují příklady použití CSS layoutů.
+V prvních dvou kapitolách čtenářům postupně představuji téma, abychom se ve třetí dostali k vrcholu, který představují příklady použití CSS layoutů.
 
 Pátá až devátá kapitola jsou už čistě referenční příručky. Budu moc rád, když si je pročtete – hlavně vy začínající. Ale myslím si, že do nich spíše budete nahlížet, když to budete potřebovat – až narazíte na vlastnost, kterou byste chtěli více pochopit.
 
@@ -67,7 +65,7 @@ Existuje ale ještě minimálně jeden. Pokud jste teď dlouhá léta neleželi 
 
 Knížku dopisuji v době, kdy už bych skoro nikomu nedoporučil podporovat při startu nového projektu prohlížeč Internet Explorer (MSIE) – jeho tržní podíl je v ČR kolem 1 % a strmě klesá.
 
-Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech. O podpoře gridu v MSIE píšu v [páté kapitole](css-grid-msie.md), samotnému Exploreru pak [v kapitole osmé](msie.md). Raději se ale zabývám novinkami než zombie prohlížeči.
+Pak tady ale jsou už starší a existující projekty. Většina příkladů v knize je stavěná tak, aby v Exploreru přímo fungovala. U těch ostatních můžete použít techniky, které obecně zmiňuji. MSIE a podpoře ve starších prohlížečích se věnuji i v podkapitolách o jednotlivých vlastnostech. O podpoře gridu v MSIE píšu v [páté kapitole](css-grid-msie.md), o samotném Exploreru pak [v kapitole osmé](msie.md). Raději se ale zabývám novinkami než zombie prohlížeči.
 
 ### Spekulativní sázky na novinky
 
@@ -90,7 +88,7 @@ Prakticky každou vlastnost jsem v nějaké době testoval ve všech prohlíže�
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/caniuse-etc.jpg" width="1600" height="900" alt="CodePen">
 <figcaption markdown="1">
-Weby, které mějte po ruce. Kdyby něco.
+Tyhle weby mějte po ruce. Kdyby něco.
 </figcaption>
 </figure>
 
