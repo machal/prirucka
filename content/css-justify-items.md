@@ -70,7 +70,7 @@ Vlastnost `justify-items` zde tedy zarovnává položky na hlavní (vodorovné) 
 <figure>
 <img src="../dist/images/original/vdlayout/css-justify-items-end.jpg" width="1920" height="540"  alt="justify-items:end v Chrome při zapnutém grid overlay">
 <figcaption markdown="1">
-Zarovnání pomocí justify-items:end v Chrome při zapnutém grid overlay.
+Zarovnání pomocí justify-items:end v Chromu při zapnutém grid overlay.
 </figcaption>
 </figure>
 
@@ -147,7 +147,7 @@ CodePen: [vrdl.in/1ge5c](https://codepen.io/mkfeuhrer/pen/ZEpGQqm?editors=1100)
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno takovým způsobem, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 

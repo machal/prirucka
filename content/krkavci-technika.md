@@ -14,7 +14,7 @@ Posuďte to sami z ukázky kódu:
 
 ```css
 .item {
-width: --dyn_length: calc(
+  width: --dyn_length: calc(
     min(var(--is_wide) * var(--very_big_int), var(--length_4_wide)) 
     + min(var(--is_medium) * var(--very_big_int), var(--length_4_medium))
     + min(var(--is_small)  * var(--very_big_int), var(--length_4_small))

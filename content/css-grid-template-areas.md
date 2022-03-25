@@ -69,7 +69,7 @@ Následuje pár poznámek k vlastnosti `grid-template-areas`, které mě zaujaly
 
 <div class="book-index" data-book-index="Oblast mřížky"></div>
 
-Pojmenovanými oblastmi je možné definovat i samotný grid. V některých případech tedy nemusíte potřebovat vlastnosti [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md).
+Pojmenovanými oblastmi je možné definovat i samotný grid. V některých případech tedy nebudeme potřebovat vlastnosti pro nastavení mřížky jako [`grid-template-rows` a `grid-template-columns`](css-grid-template-rows-columns.md).
 
 Tento kód vytvoří stejnou mřížku jako ve výše uvedeném příkladu:
 

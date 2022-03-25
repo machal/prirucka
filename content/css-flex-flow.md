@@ -22,7 +22,7 @@ Vlastnost `flex-flow` určuje směr a způsob zalamování položek flexboxu.
 
 </div>
 
-Jde o zkratku pro dvě už dříve uváděné vlastnosti:
+Jde o zkratku pro dvě vlastnosti, které jsme uváděli již dříve:
 
 - [`flex-direction`](css-flex-direction.md) – směr vykreslování flexboxového rozvržení.
 - [`flex-wrap`](css-flex-wrap.md) – zalamování položek layoutu na více řádků.

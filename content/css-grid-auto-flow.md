@@ -94,7 +94,7 @@ CodePen: [vrdl.in/i8mbo](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
 V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
 
-## Příklad: zahuštěné vykreslování pomocí zápisu grid-auto-flow:dense {#priklad-dense}
+## Příklad: zahuštěné vykreslování s grid-auto-flow:dense {#priklad-dense}
 
 <div class="book-index" data-book-index="Zahuštěné vykreslování"></div>
 
@@ -102,7 +102,7 @@ Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená,
 
 <!-- AdSnippet -->
 
-Důležité je, že prohlížeč může po nastavení `grid-auto-flow:dense` změnit pořadí vykreslení prvků.
+Důležité je, že prohlížeč může po nastavení `grid-auto-flow:dense` změnit pořadí vykreslení prvků. 
 
 Místo dlouhých řečí ale pojďme na příklad. Opět zde máme šest položek:
 

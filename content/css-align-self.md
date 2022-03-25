@@ -172,7 +172,7 @@ Opět platí, že v zásadě je výchozí roztažení na výšku – takže hodn
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno takovým způsobem, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -180,6 +180,7 @@ Toto v době psaní podporuje jen Firefox.
 
 ## Podpora v prohlížečích
 
-Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro layout do mřížky. V [Internet Exploreru 11](msie.md) je ovšem nutné použít vlastnost `-ms-grid-row-align`, což ale do `align-self` přeloží [Autoprefixer](autoprefixer.md). Více na CanIUse. [caniuse.com/align-self](https://caniuse.com/#search=align-self)
+Vlastnost `align-self` má prakticky plnou podporu jak pro flexbox, tak pro layout do mřížky. V [Internet Exploreru 11](msie.md) je ovšem nutné použít vlastnost `-ms-grid-row-align`, což ale do `align-self` přeloží [Autoprefixer](autoprefixer.md).  
+Více na CanIUse. [caniuse.com/align-self](https://caniuse.com/#search=align-self)
 
 <!-- AdSnippet -->

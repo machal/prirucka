@@ -101,7 +101,7 @@ V ukázce byste měli vidět tři možnosti, jak zalamování zakázat:
 
 - `auto` – nastavuje všechny tři vlastnosti na tuto hodnotu.
 - `break-before:column` – vynucuje zalomení nadpisů vždy do nového sloupce.
-- `break-inside:avoid` – zakazujeme zalomení uvnitř nadpisu.
+- `break-inside:avoid` – zakazuje zalomení uvnitř nadpisu.
 
 V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu bychom to nemuseli zapisovat, je to výchozí stav, ale vypadá to takto:
 
@@ -113,9 +113,7 @@ V první možnosti (`auto`) necháváme vše na prohlížeči. V běžném kódu
 }
 ```
 
-Sami můžete posoudit, jak to v jednotlivých prohlížečích funguje.
-
-Nebo spíše nefunguje.
+Sami můžete posoudit, jak to v jednotlivých prohlížečích funguje. Nebo spíše nefunguje.
 
 ## Podpora v prohlížečích {#podpora}
 

@@ -65,9 +65,7 @@ Představa mřížky je zde zásadní. A úplně nejlepší je, když mřížku 
 <div class="book-index" data-book-index="Fallback"></div>
 <div class="book-index" data-book-index="Náhradní řešení"></div>
 
-Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z MSIE jedenácté verze. Pak je potřeba zvažovat, zda je možné grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát.
-
-Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. Více se tomu věnuji v osmé kapitole.
+Flexbox ja takřka plně podporován prohlížeči Internet Explorer verze 10 i 11. Ty už jsou dneska víceméně na odpis, hlavně verze 10. Ale některé weby a webové aplikace mají stále slušnou návštěvnost z MSIE jedenácté verze. Pak je potřeba zvažovat, zda je možné grid použít, například s pomocí náhradních řešení, o kterých zde budu také psát. Grid v těchto prohlížečích podporu má, jenže s velkým „ale“. Více se tomu věnuji v osmé kapitole.
 
 Pokud nutně potřebujete obsloužit i uživatele těchto prohlížečů a není možné zajistit fallback, tedy náhradní řešení, pak může flexbox vaše problémy eliminovat.
 

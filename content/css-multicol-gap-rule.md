@@ -1,6 +1,6 @@
 # Vlastnosti column-gap a column-rule: Mezery a oddělovače ve vícesloupcovém rozložení
 
-Ve vícesloupcovém rozvržení (CSS Multi-column Layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží tyto vlastnosti.
+Ve vícesloupcovém rozvržení (CSS Multi-column Layout) je většinou potřeba změnit výchozí mezeru mezi sloupci nebo přidat oddělovač. K tomu slouží následující vlastnosti.
 
 <div class="book-index" data-book-index="column-gap"></div>
 <div class="book-index" data-book-index="column-rule"></div>
@@ -23,9 +23,6 @@ Vlastnosti `column-gap` a `column-rule` patří do specifikace vícesloupcového
 
 </div>
 
-
-Je jich hned několik:
-
 - `column-gap` – nastavení šířky mezery mezi sloupci.
 - `column-rule` – definice grafického oddělovače sloupců. Jde o zkratky pro vlastnosti `column-rule-color`, `column-rule-style` a `column-rule-width`.
 
@@ -46,7 +43,7 @@ A co teď? No, co by…? Vzhůru na jednotlivé vlastnosti.
 
 <!-- AdSnippet -->
 
-Mezeru můžeme definovat také pomocí obecné [vlastnosti `gap`](css-gap.md), kterou asi znáte z flexboxu nebo CSS gridu. Ta ale nebude fungovat v Exploreru a ke dni psaní tohoto textu ani v Safari.
+Mezeru můžeme definovat také pomocí obecné [vlastnosti `gap`](css-gap.md), kterou už asi všichni znáte z flexboxu nebo CSS gridu. Ta ale v kontextu vícesloupcového layoutu nebude fungovat v Internet Exploreru, což vás nepřekvapí, a ke dni psaní tohoto textu ani v Safari, což vás taky ne… ale nic…
 
 Možné hodnoty jsou následující:
 
@@ -73,7 +70,7 @@ Je ale dobré zmínit, že jako výchozí barva se zde použije `currentcolor`, 
 
 </div>
 
-## Vlastnost column-rule-style: grafické ztvárnění oddělovače {#column-rule-style}
+## Vlastnost column-rule-style: vzhled oddělovače {#column-rule-style}
 
 Grafický styl oddělovače můžete určit stejnými klíčovými slovy, jakými určujete barvy rámečků: `dotted`, `dashed`, `solid`, `double`, `groove`, `ridge`, `inset` nebo `outset`.
 

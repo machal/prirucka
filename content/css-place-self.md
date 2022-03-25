@@ -75,7 +75,7 @@ Všechny tři položky mají omezenou výšku i šířku, aby byl hezky vidět e
 <figure>
 <img src="../dist/images/original/vdlayout/css-place-self-item3.jpg" width="1920" height="540" alt="place-self v gridu - v Chrome při zapnutém grid overlay">
 <figcaption markdown="1">
-Hodnoty vlastnosti place-self. Poslední položka nám uskočila díky jinému nastavení, viz kód výše.
+Hodnoty vlastnosti place-self. Poslední položka nám uskočila kvůli jinému nastavení, viz kód výše.
 </figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ Pro nalezení všech možných hodnot se podívejte na referenční příručky 
 
 ## Podpora v prohlížečích {#prohlizece}
 
-Vlastnost `place-self` v době psaní tohoto textu nepodporuje Internet Explorer.
+Vlastnost `place-self` v době psaní tohoto textu nepodporuje MSIE.
 
 Ve flexboxových rozvrženích nemůžete tuto vlastnost použít v žádném prohlížeči, protože to nedovoluje specifikace.
 

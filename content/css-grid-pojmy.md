@@ -68,7 +68,7 @@ Položku ale můžeme osvobodit tím, že i z ní uděláme kontejner (`display:
 
 Musíme si tady uvědomit, že položkou je každý uzel DOMu, který je přímým potomkem kontejneru mřížky.
 
-Do této kategorie patří také i třeba obrázky nebo takzvané *anonymní uzly*, což jsou textové bloky, potomci kontejneru, neuzavřené v elementu HTML.
+Do této kategorie patří i třeba obrázky nebo takzvané *anonymní uzly*, což jsou textové bloky, potomci kontejneru, neuzavřené v elementu HTML.
 
 ```html
 <div class="container">
@@ -126,6 +126,8 @@ Mimochodem, s původně uvedeným CSS a HTML by to takhle udělat nešlo. Musel 
 
 CodePen: [vrdl.in/6mif9](https://codepen.io/machal/pen/qBbjjoj?editors=1100)
 
+<div class="pbi-avoid" markdown="1">
+
 ## Mřížka (grid) {#mrizka}
 
 <div class="book-index" data-book-index="Mřížka v gridu"></div>
@@ -159,6 +161,9 @@ Když už tedy víme, co je mřížka, a když už ji umíte vizualizovat, pojď
 Tady máme celou partu: mřížka, linka, oblast, řádek i sloupec.
 </figcaption>
 </figure>
+
+</div>
+<!-- .pbi-avoid -->
 
 ## Linka mřížky (grid line) {#linka}
 
@@ -258,7 +263,7 @@ CodePen: [vrdl.in/cuz72](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
 <div class="book-index" data-book-index="Mezera v layoutu"></div>
 <div class="book-index" data-book-index="Gap"></div>
 
-Jde o prostor mezi buňkami mřížky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
+Bavme se nyní o mezerách. Jde prostor mezi buňkami mřížky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
 
 ```css
 .container {
@@ -267,7 +272,7 @@ Jde o prostor mezi buňkami mřížky, pro jehož definici se používá [vlastn
 }
 ```
 
-„Gutter“ by se měl asi přeložit jako „žlab“, ale v kontextu webdesignu by to bylo dost neobvyklé. Slovo gutter se v hovorové webařštině vcelku běžně používá, takže si s ním jako se synonymem pro žlab vystačíme.
+„Gutter“ by se měl nejlépe přeložit jako „žlab“, ale v kontextu webdesignu by to bylo slovo poměrně neobvyklé. Slovo gutter se v hovorové webařštině vcelku běžně používá, takže si s ním jako se synonymem pro žlab vystačíme a dále už o žlabech příliš mluvit nebudeme.
 
 Pojďme si 10pixelový gutter nadefinovat v našem příkladu a podívat se, jak to bude vypadat v prohlížeči.
 
@@ -278,9 +283,9 @@ Pojďme si 10pixelový gutter nadefinovat v našem příkladu a podívat se, jak
 </figcaption>
 </figure>
 
-Jak je vidět z obrázku, z linek mřížky se staly obdélníky. Nikoliv úsečky, ale sloupce a řádky, které mají svůj začátek i konec.
+Jak je vidět z obrázku, z linek mřížky se staly obdélníky. Nikoliv úsečky nulové tloušťky, ale poctivé objekty ve tvaru sloupců a řádků, které mají svůj začátek i konec.
 
-Ano, vlastnost `gap` určuje šířku linek. Pokud ji nedefinujeme, jde o neviditelné úsečky, tak jako tomu bylo v předchozích příkladech.
+Ano, chápete to dobře. Vlastnost `gap` určuje šířku linek. Pokud mezery nedefinujeme, linky tvoří jen neviditelné úsečky, tak jako jste to viděli v předchozích příkladech.
 
 CodePen: [vrdl.in/m87br](https://codepen.io/machal/pen/vYLONWz?editors=1100)
 

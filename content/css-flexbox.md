@@ -22,7 +22,7 @@ Vlastnosti se týkají buď kontejneru, tedy rodičovského prvku, nebo položek
 
 Hodnota [vlastnosti `display`](css-display.md) `flex` nastaví prvku formátovací kontext flexboxu, takže jeho přímí potomci mohou mít specifické vlastnosti.
 
-Možná je také „inline“ hodnota: `inline-flex`, která se chová jako `inline-block`, tedy uvnitř je možné dělat rozvržení, zvenčí jde o součást řádku textu.
+Můžete také použít „inline“ hodnotu: `inline-flex`, která se chová jako `inline-block`, tedy uvnitř je možné dělat rozvržení, zvenčí jde o součást řádku textu.
 
 <div class="reference-items">
 

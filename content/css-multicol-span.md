@@ -74,7 +74,7 @@ Pokud byste ale umístili dva nadpisy s nastavením `column-span:all` k sobě, 
 
 ## Podpora v prohlížečích {#podpora}
 
-K mé velké radosti je podpora vlastnosti `column-span` vynikající. Demo z CodePenu hezky funguje jak v Chromu, tak v Safari i Firefoxu.
+K mé nelíčené radosti je podpora vlastnosti `column-span` vynikající. Demo z CodePenu hezky funguje jak v Chromu, tak v Safari i Firefoxu.
 
 Podle webu CanIUse je vlastnost dostupná také v Internet Exploreru 10 a 11. Tahle překvapení mám rád. Jsou vzácná. [caniuse.com/column-span](https://caniuse.com/?search=column-span)
 

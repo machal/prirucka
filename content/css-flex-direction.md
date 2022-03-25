@@ -96,7 +96,7 @@ Pokud je vlastnost `flex-direction` nastaveno na hodnotu `column`, jinou [vlastn
 
 ## Podpora v prohlížečích {#podpora}
 
-Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je tzv. flexbug #14, kdy prohlížeče při použití `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou lidé skoro nenarazí.
+Vlastnost `flex-direction` funguje dobře. Jedinou mně známou výjimkou je tzv. flexbug #14, kdy prohlížeče při použití deklarací `display:inline-flex` a `flex-flow:column wrap` neumí správně roztáhnout kontejner do celé šířky položek. Ale to je drobnost, na kterou lidé skoro nenarazí.
 
 <div class="ebook-only" markdown="1">
 

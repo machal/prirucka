@@ -117,7 +117,7 @@ Pojďme si to ještě ukázat na příkladu s obrázkem. Kód je totožný jako 
 
 CodePen: [vrdl.in/qhmsu](https://codepen.io/machal/pen/eYOaMvv?editors=1100)
 
-Obrázek nebude ve stopě mřížky definované pomocí zápisu `minmax(100px, max-content)` nikdy menší než `100px` a větší než maximální velikost. Ta je `400px` a je zde definovaná v atributu `width` značky `<img>`.
+Obrázek v této ukázce nebude ve stopě mřížky definované pomocí zápisu `minmax(100px, max-content)` nikdy menší než `100px` a větší než maximální velikost. Ta je `400px` a je zde definovaná v atributu `width` značky `<img>`.
 
 ## Klíčové slovo min-content {#min-content}
 
@@ -232,7 +232,7 @@ Následuje tedy ještě jedna ukázka, vycházející z dřívějšího CodePenu
 }
 ```
 
-Funguje to dobře. I přes to, že obrázek má nastavenou šířku 400 pixelů, v layoutu si drží maximální šířku definovanou v CSS pomocí `fit-content(200px)`.
+Funguje to dobře. I přes to, že obrázek má nastavenou šířku 400 pixelů, v layoutu si drží maximální šířku definovanou v kaskádových stylech pomocí `fit-content(200px)`.
 
 CodePen: [vrdl.in/rbv3o](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
 

@@ -34,11 +34,11 @@ place-items:
   <hodnota justify-items>;
 ```
 
-Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru. Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máme smůlu a bude neplatná celá deklarace.
+Nastavuje výchozí hodnotu obou vlastností pro všechny položky uvnitř kontejneru. Pokud v deklaraci neuvedete druhou hodnotu, použije se první hodnota pro obě vlastnosti, ale jen za předpokladu, že je pro obě vlastnosti platná. Pokud tomu tak není, máte smůlu a bude neplatná celá deklarace.
 
 <!-- AdSnippet -->
 
-Dává smysl hlavně pro CSS grid, protože ve flexboxu je vlastnost `justify-items` a díky tomu i zkratka `place-items` ignorována.
+Použití této zkratky dává smysl hlavně pro CSS grid, protože ve flexboxu je vlastnost `justify-items` a kvůli tomu i zkratka `place-items` ignorována.
 
 ## Jednoduchý příklad
 
@@ -55,7 +55,7 @@ Jak jste asi poznali, položky zarovnáváme svisle dolů (`end`) a vodorovně d
 <figure>
 <img src="../dist/images/original/vdlayout/css-place-items-end-right.jpg" width="1600" height="450" alt="Hodnoty vlastnosti place-items">
 <figcaption markdown="1">
-Hodnota vlastnsoti place-items v Chrome při zapnutém grid overlay.
+Hodnota vlastnsoti place-items v Chromu při zapnutém grid overlay.
 </figcaption>
 </figure>
 

@@ -24,7 +24,7 @@ Vlastnost `flex-basis` určuje výchozí velikost prvku v rámci rozvržení pos
 
 Je to velice podobné jako vlastnosti `width` nebo `height`, ale s tím, že velikost definovaná ve `flex-basis` má vždy přednost.
 
-Doslovně se definuje jako šířka nebo výška před rozdělením volného prostoru v kontejneru flexboxu.
+Doslovně se tato vlastnost definuje jako šířka nebo výška před rozdělením volného prostoru v kontejneru flexboxu.
 
 Většinou určuje `flex-basis` výchozí šířku položky, tedy jako `width`. Alternativně výšku, pokud je směr rozvržení flexboxu svislý, například pomocí nastavení [`flex-direction:column`](css-flex-direction.md).
 

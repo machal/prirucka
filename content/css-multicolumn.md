@@ -154,13 +154,13 @@ Weby používající vícesloupcové rozvržení: Learning Log Romana Veselého 
 
 Možností využití je překvapivě hodně a určitě si na nějakou vzpomenete.
 
-Vícesloupcový layout má sice z trojice multi-column, flexbox a grid nejméně možností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc – prohlížeče si s ním velmi dobře rozumí.
+Vícesloupcový layout má sice z trojice multi-column, flexbox a grid nejméně vlastností, na druhou stranu je nejjednodušeji definovatelný, umí si automaticky poradit s šířkou okna a navíc – prohlížeče si s ním velmi dobře rozumí.
 
 ## Anonymní fragmentační kontejnery {#vice-kontejnery}
 
 Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s pochopením téhle užitečné sady vlastností. Jiné metody rozložení v CSS jako flex nebo grid, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení.
 
-Například při použití [vlastnosti `display`](css-display.md) s hodnotou `grid` se podřízené prvky stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
+Zvažme příklad z gridu. Při použití [vlastnosti `display`](css-display.md) s hodnotou `grid` se podřízené prvky ve DOMu stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
 
 <!-- AdSnippet -->
 

@@ -113,9 +113,7 @@ Jen si pak dejte pozor na interpretaci v prohlížečích, protože viditelná m
 
 Anketní otázka: Jak velká bude mezera mezi položkou 1 a 2? Zvládnete ji zodpovědět, ještě než se podíváte na obrázek?
 
-Nechám vám chvilku času.
-
-Ještě chvilku.
+Nechám vám chvilku času… Ještě chvilku…
 
 A teď už přichází obrázek:
 
@@ -161,7 +159,7 @@ Pojďme si to vyzkoušet na flexboxovém layoutu, který jsme ještě vlastnost�
 <figure>
 <img src="../dist/images/original/vdlayout/css-gap-flexbox.jpg" width="1920" height="540" alt="CSS Gap ve flexboxu">
 <figcaption markdown="1">
-Gap ve flexboxu. I tady to mezerám sekne, že ano… ?
+Gap ve flexboxu. I tady to mezerám sekne, že ano…?
 </figcaption>
 </figure>
 

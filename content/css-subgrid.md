@@ -112,7 +112,7 @@ Prohlížeči dáváme tyhle instrukce:
 2. Umísti tuto položku do čtyř buněk gridu (`grid-row:span 4`).
 3. Svislý směr mřížky nechť je subgridem, takže po gridu zdědí vnější mřížku (`grid-template-rows:subgrid`).
 
-Je to jasné? Výsledek si můžete prohlédnout na obrázku, který vám snad pomůže s pochopením celé legrace, což je samozřejmě opět možné zkoušet na živé ukázce.
+Je to jasné? Výsledek uvidíte na obrázku, který vám snad pomůže s pochopením celé věci, což je opět možné zkoušet na živé ukázce.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/subgrid-example.jpg" width="1600" height="900" alt="Příklad se subgridem">

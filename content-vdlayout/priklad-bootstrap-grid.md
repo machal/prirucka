@@ -32,7 +32,7 @@ Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ 
 
 CodePen: [vrdl.in/d8l4m](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
 
-V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v aktuální verzi 5 – tvořen pomocí flexboxu. Dříve to bylo pomocí `display:inline-block` a ještě dříve díky vlastnosti pro obtékání – `float`.
+V přiloženém CSS souboru bychom pak viděli, že layout je – alespoň v aktuální páté verzi Bootstrapu – tvořen pomocí flexboxu. Dříve to bylo pomocí `display:inline-block` a ještě dříve díky vlastnosti pro obtékání – `float`.
 
 ## Proč nepoužít Bootstrap?
 

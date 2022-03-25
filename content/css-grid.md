@@ -4,7 +4,7 @@
 
 CSS grid je sada vlastností pro tvorbu layoutu vsazeného do pravidelné mřížky.
 
-Síla gridu je kromě jiného v tom, že jej můžeme definovat jako mřížku definovat v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css-flexbox.md) tedy může být vhodnější pro celostránkové a komplexnější layouty.
+Síla gridu je kromě jiného v tom, že jej můžeme definovat jako mřížku v obou směrech – v řádcích i sloupcích. Na rozdíl od [flexboxu](css-flexbox.md) tedy může být vhodnější pro celostránkové a komplexnější layouty.
 
 Grid zvládají všechny dnešní prohlížeče. [Internet Explorer 11](msie.md) ale podporuje jen starší verzi specifikace CSS gridu. Nevadí, za prvé již téměř vymřel a za druhé – i v něm je možné mřížku s kompromisy [použít](css-grid-msie.md).
 
@@ -36,7 +36,7 @@ Následuje detailní příručka k jednotlivým vlastnostem CSS gridu.
 
 Hodnota [vlastnosti `display:grid`](css-display.md) nastaví „grid formatting context“.
 
-Možná je také „inline“ hodnota: `inline-grid`. To je věc podobná  `inline-block`, tedy uvnitř je možné dělat rozvržení, zde pomocí gridu, zvenčí jde o součást řádku textu.
+Můžete také nastavit „inline“ hodnotu: `inline-grid`. To je věc podobná  `inline-block`, tedy uvnitř je možné dělat rozvržení, zde pomocí gridu, zvenčí jde o součást řádku textu.
 
 <div class="pbi-avoid" markdown="1">
 
@@ -99,6 +99,8 @@ Následujícími vlastnostmi je možné definovat kostru rozvržení.
 
 </div>
 <!-- .reference-items -->
+
+Vysvětlivka: Symbol `⏎` značí, že v běžném kódu je potřeba odsadit pomocí klávesy Enter.
 
 </div>
 <!-- .pbi-avoid -->

@@ -78,7 +78,7 @@ Pro potřeby dalších textů budeme ještě potřebovat rozlišit mezi dvěma p
 
 „Fallback alignment“, nebo také náhradní zarovnání řeší situace, kdy nejsou splněny podmínky, které určité zarovnání vyžaduje.
 
-Například pro to, aby platila hodnota `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky), je nutné v kontejneru mít více než jeden předmět neboli položku.
+Například pro to, aby vůbec platila hodnota `space-between` u vlastnosti [`justify-content`](css-justify-content.md) (tedy rozprostření volného prostoru spravedlivě mezi položky), je nutné v kontejneru mít více než jeden předmět neboli položku.
 
 Pokud tato podmínka není splněna, specifikace předepisuje jako náhradní řešení hodnotu `flex-start` nebo `start`.
 
@@ -105,23 +105,23 @@ Týká se to už uvedených vlastností:
 
 V obecné rovině můžeme použít tyto hodnoty:
 
-- `center` <small>(použitelné pro `-self` i `-content`)</small>  
+- `center` (použitelné pro `-self` i `-content`)  
   Centruje předmět doprostřed kontejneru zarovnání.
-- `start` <small>(`-self` i `-content`)</small>  
+- `start` (`-self` i `-content`)  
   Zarovnává předmět k hraně začátku kontejneru na patřičné ose.
-- `end` <small>(`-self` i `-content`)</small>  
+- `end` (`-self` i `-content`)  
   Zarovnává předmět k hraně konce kontejneru na patřičné ose.
-- `self-start` <small>(`-self`)</small>  
+- `self-start` (`-self`)  
   Zarovnává předmět k hraně začátku kontejneru, která odpovídá začátku předmětu na patřičné ose.
-- `self-end` <small>(`-self`)</small>  
+- `self-end` (`-self`)  
   Zarovnává předmět k hraně konce kontejneru, která odpovídá konci předmětu na patřičné ose.
-- `flex-start` <small>(`-self` i `-content`, jen pro flexbox)</small>  
+- `flex-start` (`-self` i `-content`, jen pro flexbox)  
   Totéž jako `start`, jen pro položky flexboxu. Mimo flexbox se hodnota chová jako `start`.
-- `flex-end` <small>(`-self` i `-content`, jen pro flexbox)</small>  
+- `flex-end` (`-self` i `-content`, jen pro flexbox)  
   Totéž jako `end`, jen pro položky flexboxu.  Mimo flexbox se hodnota chová jako `end`.
-- `left` <small>(jen `justify-*`)</small>  
+- `left` (jen `justify-*`)  
   Pokud hodnotu použijeme na řádkové ose, chová se jako `start`.
-- `right` <small>(jen `justify-*`)</small>  
+- `right` (jen `justify-*`)  
   Pokud hodnotu použijeme na řádkové ose, chová se jako `end`.
 
 Troufám si tvrdit, že naprostá většina z možností praktického použití CSS Box Alignment se týká právě pozičního zarovnání.
@@ -302,7 +302,7 @@ Jde o vlastnosti a hodnoty, které pomáhají definovat chování prohlížečů
 Co se má stát po přetečení obsahu z kontejneru, definuje vlastnost `overflow-position`, která má podle specifikace dvě možné hodnoty:
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno takovým způsobem, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 
@@ -313,7 +313,7 @@ V případě hodnoty unsafe se použije poziční zarovnání. Alespoň teoretic
 </figcaption>
 </figure>
 
-V době dokončování textu (únor 2022) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C.
+V době dokončování textu (únor 2022) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C. Dřív to u moderních vlastnostní bylo pravidlem, dnes už naštěstí jen výjimkou.
 
 ### Definování mezer mezi položkami {#gap}
 
@@ -324,11 +324,11 @@ Vlastnosti a hodnoty umožňují nastavení konzistentní mezery mezi položkami
 
 Jde o různé varianty [vlastnosti `gap`](css-gap.md):
 
-- `row-gap` - mezera mezi řádky (na blokové ose)
-- `column-gap` - mezera mezi sloupci (na řádkové ose)
-- `gap` - zkratka pro vlastnosti `column-gap` a `row-gap`
+- `row-gap` – mezera mezi řádky (na blokové ose)
+- `column-gap` – mezera mezi sloupci (na řádkové ose)
+- `gap` – zkratka pro vlastnosti `column-gap` a `row-gap`
 
-Dříve se tytéž vlastnosti používaly s prefixem `grid-` (`grid-row-gap`, `grid-column-gap`, `grid-gap`). Prohlížeče je dodnes umí, jako synonyma pro výše uvedené. Nicméně vám doporučuji řídit se novou verzí specifikace a používat `gap`, například takto:
+Dříve se tytéž vlastnosti používaly pod stejnými názvy, jen s prefixem `grid-` (`grid-row-gap`, `grid-column-gap`, `grid-gap`). Prohlížeče je dodnes umí, jako synonyma pro výše uvedené. Nicméně vám doporučuji řídit se novou verzí specifikace a používat `gap`, například takto:
 
 ```css
 .container {

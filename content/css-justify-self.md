@@ -118,7 +118,7 @@ Vlastnosti `justify-self` můžete předávat všechny hodnoty z jednotlivých o
 - `auto` (výchozí)  
   Podědí se hodnota `justify-items` od rodičovského elementu. Pokud zde žádný není, dostane prvek hodnotu `normal`.
 - `normal`  
-  V CSS gridu jde jen o jiný zápis pro hodnotu `stretch`, ale například v blokových layoutech (`display:block`) uvádíme jako `start`.
+  V CSS gridu jde jen o jiný zápis pro hodnotu `stretch`, ale například v blokových layoutech (`display:block`) je to alternativa pro `start`.
 - `stretch`  
   Položka rozšíří své rozměry tak, aby v kontejneru nezbylo žádné volné místo. Pokud jsou položky menší než kontejner, jejich velikost se zvětší rovnoměrně (nikoliv proporcionálně), přičemž stále respektují omezení uložená vlastnostmi jako `max-width`/`max-height`.
 
@@ -159,7 +159,7 @@ Po dekódování zašmodrchaností specifikace můžeme konstatovat, že výchoz
 ### Pro přetečení
 
 - `safe`  
-  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno tak, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
+  Pokud má položka v daném způsobu zarovnání přetéct z obou stran, bude zarovnání změněno takovým způsobem, aby byl vidět začátek položky, například tak, aby bylo možné přečíst začátek textu.
 - `unsafe`  
   Vždy dostane přednost poziční zarovnání, bez ohledu na to, zda bude oříznutý obsah čitelný nebo ne.  
 

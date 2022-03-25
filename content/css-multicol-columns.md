@@ -73,7 +73,7 @@ Teď přichází trik. Pokud nastavíte vlastnosti `column-width` i `column-coun
 
 Jenže nikoliv. Prohlížeče by měly vzít v potaz obojí a celočíselná hodnota v `column-count` pak popisuje _maximální_, nikoliv jasně daný počet sloupců.
 
-## Zápis columns: zkratka pro vlastnosti column-width a column-count {#columns}
+## Zkratka columns (column-width a column-count) {#columns}
 
 Vlastnost `columns` je zkratkou pro obě výše uvedené:
 
