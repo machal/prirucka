@@ -115,7 +115,7 @@ Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-colu
 
 <div class="rwd-scrollable f-6"  markdown="1">
 
-| Možnost                            | Ukázka hodnoty                           |
+| **Možnost**                        | **Ukázka hodnoty**                       |
 |------------------------------------|------------------------------------------|
 | Bez explicitního gridu    | `none`                                   |
 | Kombinace jednotek    | `150px auto 1fr 1fr`                     |

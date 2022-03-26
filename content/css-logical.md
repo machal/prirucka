@@ -176,9 +176,9 @@ Zdroj: Adrian Roselli. [vrdl.in/3l57u](https://codepen.io/aardrian/pen/bGGxrvM).
 
 Logická výška a šířka:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
-| Logicky           | Fyzicky         |
+| **Logicky**       | **Fyzicky**     |
 |-------------------|-----------------|
 | `block-size`      |  `height`       |
 | `inline-size`     |  `width`        |
@@ -189,11 +189,13 @@ Logická výška a šířka:
 
 </div>
 
+<div class="pbi-avoid" markdown="1">
+
 Logické vnitřní okraje:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
-| Logicky               | Fyzicky         |
+| **Logicky**       | **Fyzicky**     |
 |-----------------------|-----------------|
 | `padding-block-start`  |  `padding-top`         |
 | `padding-block-end`    |  `padding-bottom`      |
@@ -204,11 +206,14 @@ Logické vnitřní okraje:
 
 </div>
 
+</div>
+<!-- .pbi-avoid -->
+
 Logické vnější okraje:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
-| Logicky               | Fyzicky         |
+| **Logicky**       | **Fyzicky**     |
 |-----------------------|-----------------|
 | `margin-block-start`  |  `margin-top`         |
 | `margin-block-end`    |  `margin-bottom`      |
@@ -223,9 +228,9 @@ Logické vnější okraje:
 
 Logické posuny (ofsety):
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
-| Logicky              | Fyzicky         |
+| **Logicky**       | **Fyzicky**     |
 |----------------------|-----------------|
 | `inset-block-start`  |  `top`         |
 | `inset-block-end`    |  `bottom`      |
@@ -240,9 +245,9 @@ Logické posuny (ofsety):
 
 Logické rámečky:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
-| Logicky              | Fyzicky         |
+| **Logicky**       | **Fyzicky**     |
 |----------------------|-----------------|
 | `border-block-start`  |  `border-top`         |
 | `border-block-end`    |  `border-bottom`      |
@@ -292,9 +297,9 @@ Jen znovu připomínám, že logický směr je pro různé jazyky různý.
 
 Jak už je asi z textu zřejmé, logické alternativy nemusí mít jen vlastnosti, ale také jejich hodnoty:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
-| Logicky        | Fyzicky         |
+| **Logicky**       | **Fyzicky**   |
 |----------------|-----------------|
 | `block-start`  |  `top`         |
 | `block-end`    |  `bottom`      |

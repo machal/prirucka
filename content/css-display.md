@@ -16,10 +16,10 @@ Vy, kteří znáte její základní hodnoty jako `block` nebo `inline`, možná 
 
 Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich asi znáte.
 
-<div class="rwd-scrollable f-6" markdown="1">
+<div class="rwd-scrollable table-1-quarter f-6" markdown="1">
 
-| Hodnota                   |  Jak se zobrazuje |
-|---------------------------|-------------------|
+| **Hodnota**               |  **Jak se zobrazuje** |
+|---------------------------|-----------------------|
 | `inline`                  |  Řádkový element, který netvoří zalomení před sebou nebo po sobě (výchozí nastavení).        |
 | `block`                   |  Blokový element. Zalomí řádky před sebou i po sobě. |
 | `inline-block`            |  Vnitřně se jedná o blokový element, zvnějšku inline, který netvoří zalomení.                 |
@@ -197,7 +197,7 @@ Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označen�
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Zkratka            | Plný zápis              | Co se generuje                                                 |
+| **Zkratka**        | **Plný zápis**          | **Co se generuje**                                             |
 | ------------------ | ----------------------- | -------------------------------------------------------------- |
 | `none`             | -                       | nic                                                            |
 | `contents`         | -                       | prvek vynechán, generují se potomci                         |

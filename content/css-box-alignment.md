@@ -37,13 +37,13 @@ Než vyberete tu správnou, musíte si ujasnit:
 1. Směr zarovnávání (hlavní osa je obvykle vodorovná, jinak též řádková; příčná osa svislá, jinak též bloková). Na obrázku výše se podívejte k šipkám.
 2. Co budete zarovnávat (všechny položky, jednu položku, nebo obsah mezi nimi). Na obrázku výše se podívejte do layoutu.
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
-|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) |
+|                                     | **Hlavní osa**<br>`justify-*` | **Příčná osa**<br>`align-*` |
 |-------------------------------------|------------------------------|----------------------------|
-| **Zarovnání položek** (`*-items`)   |  `justify-items`     | `align-items`     |
-| **Zarovnání sebe sama** (`*-self`)  |  `justify-self`      | `align-self`      |
-| **Distribuce obsahu** (`*-content`) |  `justify-content`   | `align-content`   |
+| **Zarovnání položek**<br>`*-items`   |  `justify-items`     | `align-items`     |
+| **Zarovnání sebe sama**<br>`*-self`  |  `justify-self`      | `align-self`      |
+| **Distribuce obsahu**<br>`*-content` |  `justify-content`   | `align-content`   |
 
 </div>
 
@@ -209,13 +209,13 @@ Vlastnosti [`justify-items`](css-justify-items.md) i [`justify-self`](css-justif
 
 Namísto `justify-items` můžeme použít starý dobrý `margin` nebo pro centrování třeba `justify-content`. Stejně tak nebudou fungovat zkratky [`place-items`](css-place-items.md) a [`place-self`](css-place-self.md).
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-quarter f-6"  markdown="1">
 
-|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*`) |
+|                                     | **Hlavní osa**<br>`justify-*` | **Příčná osa**<br>`align-*` | **Oba směry**<br>`place-*` |
 |-------------------------------------|------------------------------|----------------------------|--------------------------|
-| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>~~flex~~, grid     | [`align-items`](css-align-items.md)<br>flex, grid      | [`place-items`](css-place-items.md)<br>~~flex~~, grid |
-| **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>~~flex~~, grid      | [`align-self`](css-align-self.md)<br>flex, grid       | [`place-self`](css-place-self.md)<br> ~~flex~~, grid |
-| **Distribuce obsahu** (`*-content`) |  [`justify-content`](css-justify-content.md)<br>flex, grid    | [`align-content`](css-align-content.md)<br>flex, grid    | [`place-content`](css-place-content.md)<br> flex, grid |
+| **Zarovnání položek**<br>`*-items`   |  [`justify-items`](css-justify-items.md)<br>~~flex~~, grid     | [`align-items`](css-align-items.md)<br>flex, grid      | [`place-items`](css-place-items.md)<br>~~flex~~, grid |
+| **Zarovnání sebe sama**<br>`*-self`  |  [`justify-self`](css-justify-self.md)<br>~~flex~~, grid      | [`align-self`](css-align-self.md)<br>flex, grid       | [`place-self`](css-place-self.md)<br> ~~flex~~, grid |
+| **Distribuce obsahu**<br>`*-content` |  [`justify-content`](css-justify-content.md)<br>flex, grid    | [`align-content`](css-align-content.md)<br>flex, grid    | [`place-content`](css-place-content.md)<br> flex, grid |
 
 </div>
 

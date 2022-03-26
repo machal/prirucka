@@ -82,7 +82,7 @@ Našli bychom toho více. Platí ale, že grid tyhle vlastnosti pokrývá více 
 
 Abychom si v tom udělali pořádek i vizuálně, připravil jsem si pro vás takovou pěknou tabulku. Berte to tak, že to velmi zjednodušuji:
 
-|   Vlastnost              |   Flexbox   |   Grid   |
+|   **Vlastnost**          | **Flexbox** | **Grid** |
 |:-------------------------|:-----------:|:--------:|
 |   Jednorozměrný layout   |       +     |     +    |
 |   Dvourozměrný layout    |             |     +    |

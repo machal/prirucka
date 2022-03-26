@@ -6,11 +6,15 @@
 
 Funkce, které se uvádějí místo hodnot v deklaracích stylů, umožňují porovnat dvě a více hodnot:
 
-|   Funkce     |   Význam     |
-|--------------|--------------|
+<div class="rwd-scrollable prop-table table-1-quarter f-6" markdown="1">
+
+|   **Funkce**     |   **Význam**     |
+|------------------|------------------|
 | `min()`      |  Vrací nejmenší hodnotu z argumentů oddělených čárkou. <br> Např. `min(50%, 200px)`. |
 | `max()`      |  Vrací největší hodnotu z argumentů oddělených čárkou. <br> Např. `max(50%, 10vw, 200px)`. |
 | `clamp()`    |  Vrací prostřední hodnotu, pokud není menší než první a větší než třetí. <br> Např. `clamp(100px, 20%, 200px)`. |
+
+</div>
 
 Jsou součástí čtvrté verze specifikace „CSS Values and Units Module“, podporují je všechny moderní prohlížeče a ještě k tomu jsou užitečné.
 

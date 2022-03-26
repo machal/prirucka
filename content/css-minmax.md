@@ -28,9 +28,9 @@ Pro plnohodnotné používání mřížky je to skoro nepostradatelné, ale je v
 
 Možných hodnot je více:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
-| Hodnota                          | Ukázka                       |
+| **Hodnota**                      | **Ukázka**                   |
 |----------------------------------|------------------------------|
 | Statický rozsah                  | `minmax(100px, 200px)`       |
 | Flexibilní rozsah                | `minmax(100px, 1fr)`         |

@@ -39,12 +39,12 @@ grid-column: <grid-column-start> / <grid-column-end>;
 
 ## Možné hodnoty {#hodnoty}
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6" markdown="1">
 
-| Možnost                       | Ukázka hodnoty             |
+| **Možnost**                   | **Ukázka hodnoty**         |
 |-------------------------------|----------------------------|
-| Čísla linek                    | `1 / 2`                    |
-| Jména linek                    | `first-line / second-line` |
+| Čísla linek                   | `1 / 2`                    |
+| Jména linek                   | `first-line / second-line` |
 | Rozsah                        | `1 / span 2`               |
 | Jedno číslo                   | `3`                        |
 | Záporná čísla                 | `-1 / -3`                  |

@@ -14,14 +14,18 @@ Ani ty ale nepovažuji za žádné Supermany mezi CSS jednotkami. Prostě se neh
 
 Zapamatujte si hlavně následující šestici.
 
-| Jednotka | Jak počítá rozměr?                            |
-| -------- | --------------------------------------------- |
-| `rem`    | relativně k velikosti písma na prvku `<html>` |
+<div class="rwd-scrollable prop-table table-1-quarter f-6" markdown="1">
+
+| **Jednotka** | **Jak počítá rozměr?**                    |
+|----------|-----------------------------------------------|
+| `rem`    | relativně k velikosti písma na prvku `html` |
 | `em`     | relativně k velikosti písma na elementu       |
 | `px`     | přepočtený pixel, CSS pixel                   |
 | `%`      | procenta relativně k rodičovskému elementu    |
 | `vw`     | procento ze šířky okna prohlížeče             |
 | `vh`     | procento z výšky okna prohlížeče              |
+
+</div>
 
 Existují samozřejmě ještě další: namátkou `pt`, `ex` nebo `vmax`. Buď je ale jejich využitelnost malá, nebo skoro žádná, takže pro zjednodušení je v tomto textu úplně vynechám.
 

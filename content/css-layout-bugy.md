@@ -242,19 +242,21 @@ Podpora v moderních prohlížečích je v [zarovnávání](css-box-alignment.md
 
 Nepodporované vlastnosti jsou ty, které začínají slovem `place-`, dále vadí nepodpora `align-items` a `align-content`.
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-quarter f-6"  markdown="1">
 
-|                                     | **Hlavní osa** (`justify-*`) | **Příčná osa** (`align-*`) | **Oba směry** (`place-*`) |
+|                                     | **Hlavní osa**<br>`justify-*` | **Příčná osa**<br>`align-*` | **Oba směry**<br>`place-*` |
 |-------------------------------------|------------------------------|----------------------------|--------------------------|
-| **Zarovnání položek** (`*-items`)   |  [`justify-items`](css-justify-items.md)<br>MSIE: ~~flex~~, ~~grid~~     | [`align-items`](css-align-items.md)<br>MSIE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>MSIE: ~~flex~~, ~~grid~~ |
-| **Zarovnání sebe sama** (`*-self`)  |  [`justify-self`](css-justify-self.md)<br>MSIE: ~~flex~~, grid      | [`align-self`](css-align-self.md)<br>MSIE: flex, grid       | [`place-self`](css-place-self.md)<br>MSIE: ~~flex~~, ~~grid~~ |
-| **Distribuce obsahu** (`*-content`) |  [`justify-content`](css-justify-content.md)<br>MSIE: flex, ~~grid~~    | [`align-content`](css-align-content.md)<br>MSIE: flex, ~~grid~~    | [`place-content`](css-place-content.md)<br>MSIE: ~~flex~~, ~~grid~~ |
+| **Zarovnání položek**<br>`*-items`   |  [`justify-items`](css-justify-items.md)<br>MSIE: ~~flex~~, ~~grid~~     | [`align-items`](css-align-items.md)<br>MSIE: flex, ~~grid~~      | [`place-items`](css-place-items.md)<br>MSIE: ~~flex~~, ~~grid~~ |
+| **Zarovnání sebe sama**<br>`*-self`  |  [`justify-self`](css-justify-self.md)<br>MSIE: ~~flex~~, grid      | [`align-self`](css-align-self.md)<br>MSIE: flex, grid       | [`place-self`](css-place-self.md)<br>MSIE: ~~flex~~, ~~grid~~ |
+| **Distribuce obsahu**<br>`*-content` |  [`justify-content`](css-justify-content.md)<br>MSIE: flex, ~~grid~~    | [`align-content`](css-align-content.md)<br>MSIE: flex, ~~grid~~    | [`place-content`](css-place-content.md)<br>MSIE: ~~flex~~, ~~grid~~ |
 
 </div>
 
 Chybějící podpora `justify-items` i `justify-self` v MSIE u flexboxu je vlastnost, nikoliv bug. Tyto vlastnosti s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Vysvětlím to v příručce k [vlastnosti `justify-self`](css-justify-self.md).
 
 V případě, že podporujete MSIE, to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
+
+<div class="pbi-avoid" markdown="1">
 
 Explorer také nepodporuje novější hodnoty některých vlastností: `baseline` a `stretch`, vlastností [`align-self`](css-align-self.md) a [`justify-content`](css-justify-content.md) nebo také `space-evenly` u [`justify-content`](css-justify-content.md).
 
@@ -269,6 +271,9 @@ O zarovnání boxů a jeho konkrétních vlastnostech se dočtete v sedmé kapit
 `align-tracks`, `justify-tracks` a další části [layoutu typu masonry](css-masonry.md) v CSS zatím žádný prohlížeč nepodporuje.
 
 Layouty typu masonry v CSS tedy sledujte, ale pro praktické nasazení využijte jinou cestu.
+
+</div>
+<!-- .pbi-avoid -->
 
 ## Shrnutí podpory
 

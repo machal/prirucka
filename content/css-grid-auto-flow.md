@@ -30,7 +30,7 @@ Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vy
 
 <div class="rwd-scrollable prop-table f-6"  markdown="1">
 
-| Hodnota                    | Co dělá?           |
+| **Hodnota**                | **Co dělá?**       |
 |----------------------------|--------------------|
 | `row`     | Výchozí hodnota. Prvky layoutu se vykreslují po řádcích. |
 | `column`  | Prvky layoutu se vykreslují po sloupcích. |

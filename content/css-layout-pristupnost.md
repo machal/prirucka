@@ -139,9 +139,9 @@ Video:
 
 Pořadí navigace je nyní správné, protože odpovídá logickému uspořádání položek na obrazovce:
 
-<div class="rwd-scrollable f-6"  markdown="1">
+<div class="rwd-scrollable table-1-third f-6"  markdown="1">
 
-|  Typ řazení          | Pořadí     |
+|  **Typ řazení**      | **Pořadí** |
 |:---------------------|:-----------|
 | HTML, DOM            | 1, 2, 3, 4 |
 | Vizuální             | 3, 1, 2, 4 |
