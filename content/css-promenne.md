@@ -86,9 +86,9 @@ Proč se vlastně zabývat autorskými vlastnostmi v CSS, když už většina z 
 
 Protože to jsou dvě odlišné věci. Volitelné vlastnosti z CSS se od preprocesorových proměnných liší následovně:
 
-* jsou dynamické, počítají se až v prohlížeči,
-* můžete k nim přistupovat nebo je číst také z HTML a JS,
-* řídí se dědičností, kaskádou a dalšími přirozenými vlastnostmi CSS.
+* Jsou dynamické, počítají se až v prohlížeči.
+* Můžete k nim přistupovat nebo je číst také z HTML a JS.
+* Řídí se dědičností, kaskádou a dalšími přirozenými vlastnostmi CSS.
 
 Přinášejí tedy vlastnosti, které preprocesorové proměnné neumí. Na druhou stranu – CSS proměnné nemají jiné vlastnosti, kterými naopak disponují ty preprocesorové. Jak už jsem ukazoval, neumožní vám například vložit proměnnou kamkoliv do CSS kódu. Hlavně u větších projektů se bez CSS preprocesorů stále neobejdete.
 
@@ -205,7 +205,7 @@ Možná vás to překvapí, ale černou. Zdědí ji po výchozím nastavení pro
 
 Fakt, že hodnotu proměnné prohlížeč nezná, jej nezajímá. Mohli byste mu ji totiž hned v následující vteřině podstrčit třeba JavaScriptem. Ale pokud jste CSS proměnnou `var(--my-color)` zatím nedefinovali, aplikuje běžnou dědičnost a vezme barvu z rodičovského prvku.
 
-Modrou barvu v příkladu ale zobrazí prohlížeč, který proměnné nepodporuje.
+Modrou barvu v příkladu ale zobrazí prohlížeč, který proměnné nepod&shy;po&shy;ruje.
 
 <!-- AdSnippet -->
 
@@ -337,7 +337,8 @@ CodePen: [vrdl.in/megob](https://codepen.io/machal/pen/LOdPbR?editors=1111)
 
 ## Podpora a fallbacky {#podpora-fallbacky}
 
-CSS proměnné podporují všechny moderní prohlížeče. Bez podpory jsme například v Opeře Mini a ve všech Internet Explorerech. Jasně, obvyklí podezřelí. To vůbec nevadí. Více o podpoře je na webu CanIUse. [caniuse.com/css-variables](https://caniuse.com/css-variables)
+CSS proměnné podporují všechny moderní prohlížeče. Bez podpory jsme například v Opeře Mini a ve všech Internet Explorerech. Jasně, obvyklí podezřelí. To vůbec nevadí. Více o podpoře je na webu CanIUse.  
+[caniuse.com/css-variables](https://caniuse.com/css-variables)
 
 Tolik k volitelným vlastnostem a CSS proměnným. Teď už vám můžu nabídnout jen sumarizaci toho nejdůležitějšího.
 

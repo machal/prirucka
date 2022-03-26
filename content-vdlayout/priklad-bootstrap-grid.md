@@ -28,7 +28,7 @@ Například pomocí následujícího HTML kódu můžeme vytvořit rozvržení o
 </div>
 ```
 
-Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definujeme sloupec a pomocí třídy `.col-` s číslem podíl na výchozí dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Bootstrapu a šup – layout máte hotový.
+Pro neznalé připomínám, že pomocí třídy `.row` se tvoří „řádek“ rozvržení, pomocí `.col` definujeme sloupec a pomocí třídy `.col-` s číslem podíl na výchozí dvanáctisloupcové mřížce. Stačí zapsat HTML, přiložit CSS soubor Boots&shy;trapu a šup – layout máte hotový.
 
 CodePen: [vrdl.in/d8l4m](https://codepen.io/machal/pen/zYwBYjR?editors=1000)
 
@@ -136,7 +136,7 @@ CodePen: [vrdl.in/93bir](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
 
 Určitě si umíte představit i možnou náhradu dalších variant používání layoutu v Bootstrapu, včetně responzivních tříd pro různě široké displeje.
 
-Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden CodePen s dalšími ukázkami.
+Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden Code&shy;Pen s dalšími ukázkami.
 
 CodePen: [vrdl.in/e2f5h](https://codepen.io/machal/pen/dJxBGz?editors=1100)
 

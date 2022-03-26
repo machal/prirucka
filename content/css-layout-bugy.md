@@ -45,7 +45,7 @@ Co konkrétně znamenají ty zelenohnědé obdélníky na obrázku?
 
 <div class="ebook-only" markdown="1">
 
-Mimochodem, poprvé jsem tady zmínil skvělý nástroj [Autoprefixer](autoprefixer.md), který automaticky dodává CSS prefixy i další kód pro starší prohlížeče. Předpokládám jeho obecnou znalost, ale pokud jste se s ním zatím nesetkali, přidal jsem podkapitolu o něm do poslední „přílohové“ kapitoly.
+Mimochodem, poprvé jsem tady zmínil skvělý nástroj [Autoprefixer](autoprefixer.md), který automaticky dodává CSS prefixy i další kód pro starší prohlížeče. Předpokládám jeho obecnou znalost, ale pokud jste se s ním zatím nesetkali, přidal jsem o něm podkapitolu do poslední, „přílohové“ kapitoly.
 
 </div>
 
@@ -80,9 +80,9 @@ Moderní prohlížeče, tedy všechny kromě Internet Exploreru, byly zodpovědn
 
 To už ale dávno neplatí, dle mých testů zůstaly jen dvě málo důležité chyby.
 
-- _Některé elementy nemohou být flex-kontejnerem. (Flexbug #9)_  
+- _Některé elementy nemohou být flex kontejnerem (flexbug #9)._  
 Dříve to platilo i pro `<fieldset>` a `<button>` ve všech prohlížečích, což je naštěstí opravené. Zůstává jen málo nepříjemné omezení použití flexboxu na prvku `<summary>` v prohlížeči Safari. V tomto případě stačí použít vložený `<div>` jako kontejner pro rozvržení flexboxem.
-- _Zalamované elementy na inline flexboxu přetékají z rodiče (Flexbug #14)_  
+- _Zalamované elementy na inline flexboxu přetékají z rodiče (flexbug #14)._  
 Jde o kombinaci použití `flex-flow:column wrap` a `display:inline-flex`, takže poměrně vzácný scénář. Vnitřní prvky pak ve všech prohlížečích „vylezou“ z velikosti rodiče, i když by neměly. Je možné to obejít například pomocí nastavení `flex-direction:row` a změnou směru vykreslení zápisem vlastnosti `writing-mode`.
 
 <div class="ebook-only" markdown="1">
@@ -182,7 +182,7 @@ Odkážu vás ještě na plnohodnotný text [o řešení gridu v Internet Explor
 
 ### Gridbugs, boty v mřížce {#gridbugs}
 
-Podobně jako první implementace flexboxu, také první napsané enginy pro vykreslování gridu byly v prohlížečích plné chyb.
+Podobně jako první implementace flexboxu, také první enginy napsané pro vykreslování gridu byly v prohlížečích plné chyb.
 
 A tak se známá propagátorka moderních rozvržení v CSS Rachel Andrew nechala inspirovat stránkou Flexbugs a vytvořila svého času její obdobu pro mřížku. Vznikly gridbugs. [github.com/rachelandrew/gridbugs](https://github.com/rachelandrew/gridbugs)
 
@@ -224,7 +224,7 @@ Asi nejznámějším bugem, čili chybou v podpoře, je špatná podpora zalamov
 
 Pokud bychom se dnes mohli bavit o nějakém „zabugovaném“ systému layoutu, nebyl by to grid ani flexbox. Pokud jde o moderní prohlížeče, Černého Petra si bohužel vytáhlo vícesloupcové rozvržení. Je to samozřejmě proto, že CSS Multicol je výrazně nejméně používaným systémem rozvržení.
 
-Více informací najdete na našem oblíbeném webu. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
+Více informací o něm najdete na našem oblíbeném webu CanIUse. [caniuse.com/multicolumn](https://caniuse.com/multicolumn)
 
 ## A co zarovnávání, CSS Box Align? {#box-align}
 
@@ -252,7 +252,7 @@ Nepodporované vlastnosti jsou ty, které začínají slovem `place-`, dále vad
 
 </div>
 
-Chybějící podpora `justify-items` i `justify-self` v MSIE u flexboxu je vlastnost, nikoliv bug. Tyto vlastnosti s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Vysvětlím to v příručce[vlastnosti `justify-self`](css-justify-self.md).
+Chybějící podpora `justify-items` i `justify-self` v MSIE u flexboxu je vlastnost, nikoliv bug. Tyto vlastnosti s flexboxem bohužel nelze kombinovat v žádném prohlížeči. Vysvětlím to v příručce k [vlastnosti `justify-self`](css-justify-self.md).
 
 V případě, že podporujete MSIE, to je u gridu celkově složitější, viz následující [podkapitola](css-grid-msie.md).
 

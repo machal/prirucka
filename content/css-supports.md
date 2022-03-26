@@ -176,7 +176,7 @@ Ti z vás, které jsem ještě neunavil detailním líčením, si možná všiml
 → *Související: [CSS proměnné nebo také autorské vlastnosti](css-promenne.md)*
 </div>
 
-## CSS hacky a progressive enhancement {#hacky}
+## CSS hacky a Progressive Enhancement {#hacky}
 
 <div class="book-index" data-book-index="Progressive Enhancement"></div>
 
@@ -196,13 +196,13 @@ Asi nejznámější byl podtržítkový hack:
 }
 ```
 
-Pokud by vás tahle dnes už nechvalně známá praxe zajímala, píšou o ní hezky v přehledu CSS hacků na v těch časech populárním Interval.cz. [vrdl.in/mo8hx](https://www.interval.cz/clanky/css-hacky-prehled/)
+Pokud by vás tahle dnes už nechvalně známá praxe zajímala, píšou o ní hezky v přehledu CSS hacků na v těch časech populárním magazínu Interval.cz. [vrdl.in/mo8hx](https://www.interval.cz/clanky/css-hacky-prehled/)
 
 <!-- AdSnippet -->
 
 Brrr, úplně mi běhá mráz po zádech, když si představím, že v té době jsem nakódoval opravdu hodně webů. Jak bych byl tehdy za `@supports` vděčný!
 
-CSS hacky a dnes `@supports` jsou důležitou částí zásadní webařské techniky – postupného vylepšování (progressive enhancement). Funguje asi takto:
+CSS hacky a dnes `@supports` jsou důležitou částí zásadní webařské techniky – postup&shy;ného vylep&shy;šování (Progressive Enhancement). Funguje asi takto:
 
 1. Vyrobíte základní řešení fungující ve všech prohlížečích.
 2. Nad tím postavíte lepší řešení fungující jen v některých prohlížečích.
@@ -217,13 +217,16 @@ První omezené použití `@supports` vychází z principů fungování prohlí�
 
 Pokud si totiž prohlížeč „myslí“, že vlastnost umí, vrátí na dotaz kladnou odpověď. Ale soudruzi z NDR mohli někde v implementaci vlastnosti udělat chybu.
 
-Dalším omezením je samotná podpora vlastnosti, v tomto případě ale záleží na použití: `@supports` nepodporuje vůbec žádný Internet Explorer. [caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
+Dalším omezením je samotná podpora vlastnosti, v tomto případě však záleží na použití: `@supports` nepodporuje vůbec žádný Internet Explorer.  
+[caniuse.com/css-featurequeries](https://caniuse.com/css-featurequeries)
 
 Je ovšem otázka, jak moc tahle chybějící podpora vadí. Mně vůbec. A hned vám řeknu proč.
 
 Internet Explorer je totiž skoro vždy ve skupině prohlížečů, které tu či onu vlastnost nezvládají. Proto vůbec nevadí, když nerozumí ani otázce, zda vlastnost zvládá…
 
 Ukažme si problém s Explorerem ještě na jednom příkladu.
+
+<div class="pbi-avoid" markdown="1">
 
 ## Závěrečná ukázka s detekcí CSS gridu {#ukazka-grid}
 
@@ -254,6 +257,9 @@ Chtěli bychom položky jednoduše umístit vedle sebe, což s pomocí [flexboxu
   flex: 1;
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 Z nějakého důvodu bychom ovšem v moderních prohlížečích chtěli použít [CSS grid](css-grid.md):
 

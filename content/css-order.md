@@ -134,8 +134,10 @@ Jak je vidět, vlastnost `order`, jakkoliv se zdá jednoduchá a přímočará, 
 Jsou zde ale i další vědomosti, o kterých byste měli mít ponětí, než si s `order` začnete hrát.
 
 1. Pokud má více položek rozvržení nastavenu stejnou hodnotu `order`, seřadí se podle pořadí v DOMu.
-2. Podle specifikace vlastnost `order` ovlivňuje také pořadí při vykreslování stránky prohlížečem, což má logiku.
-3. Absolutně pozicované položky vždy dostanou nastavení `order:0`, takže drží pořadí vykreslení dle DOMu. Zájemcům nabízím CodePen. [vrdl.in/7yca0](https://codepen.io/machal/pen/JjXxVJy?editors=1100)
+2. Podle specifikace ovlivňuje vlastnost `order` také pořadí při vykreslování stránky prohlížečem, což má logiku.
+3. Absolutně pozicované položky vždy dostanou nastavení `order:0`, takže drží pořadí vykreslení dle DOMu.
+
+CodePen: [vrdl.in/7yca0](https://codepen.io/machal/pen/JjXxVJy?editors=1100)
 
 ## Ošemetná změna pořadí z pohledu přístupnosti {#pristupnost}
 
@@ -155,13 +157,13 @@ Více to rozebírám v textu [CSS layout a přístupnost](css-layout-pristupnost
 
 <div class="ebook-only" markdown="1">
 
-Více to rozebírám v části [CSS layout a přístupnost](css-layout-pristupnost.md) osmé kapitoly.
+Více to rozebírám v části o [přístupnosti v CSS layoutu](css-layout-pristupnost.md) osmé kapitoly.
 
 </div>
 
 ## Raději si na vlastnost order dávejte pozor {#shrnuti}
 
-Shrňme si to. Vlastnost `order` určitě může být v některých případech užitečná,nebo dokonce nezbytná pro změnu vizuálního pořadí.
+Shrňme si to. Vlastnost `order` určitě může být v některých případech užitečná, nebo dokonce nezbytná pro změnu vizuálního pořadí.
 
 Je zde však nebezpečí, že uživatelům tím zároveň rozbijeme navigaci z klávesnice a zrakově postiženým čtení obsahu přes odečítače.
 

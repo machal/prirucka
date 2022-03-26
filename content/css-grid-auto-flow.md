@@ -41,7 +41,7 @@ Nejzajímavější je asi hodnota `dense`, vyvolávající „zahuštěné“ vy
 
 Co teď? Vzhůru do ukázek!
 
-## Příklad: změna směru vykreslování pomocí zápisu grid-auto-flow:column {#priklad-column}
+## Příklad: změna směru pomocí grid-auto-flow:column {#priklad-column}
 
 <div class="book-index" data-book-index="Směr layoutu"></div>
 
@@ -92,17 +92,17 @@ Můžeme jej ale změnit do svislého (sloupcového) směru:
 
 CodePen: [vrdl.in/i8mbo](https://codepen.io/machal/pen/voXWGv?editors=1100)
 
-V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit příslušný komentář v CSS.
+V CodePenu si to můžete zkusit také pro vlastnosti implicitního gridu: [`grid-auto-rows` a `grid-auto-columns`](css-grid-auto-rows-columns.md), stačí odstranit komentář v CSS.
 
 ## Příklad: zahuštěné vykreslování s grid-auto-flow:dense {#priklad-dense}
 
 <div class="book-index" data-book-index="Zahuštěné vykreslování"></div>
 
-Hodnota `dense` zajistí „zahuštěné“ vykreslení. V zásadě to znamená, že prohlížeč se snaží o to, aby ve směru vykreslení nezůstávaly v layoutu mezery mezi prvky. Mezery případně zůstanou až na konci layoutu.
+Hodnota `dense` zajistí „zahuštěné“ vykreslení. Ve směru vykreslení nezůstávají v layoutu mezery mezi prvky. Mezery pak zůstanou až na konci layoutu.
 
 <!-- AdSnippet -->
 
-Důležité je, že prohlížeč může po nastavení `grid-auto-flow:dense` změnit pořadí vykreslení prvků. 
+Důležité je, že prohlížeč může po nastavení `grid-auto-flow:dense` změnit pořadí vykreslení prvků.
 
 Místo dlouhých řečí ale pojďme na příklad. Opět zde máme šest položek:
 

@@ -47,7 +47,7 @@ Jenže preprocesoru dochází dech v momentě, kdy potřebuji kombinovat více j
 }
 ```
 
-Tady je vidět síla funkce `calc()`. Počítá se v prohlížeči a jedině prohlížeč zná konkrétní hodnoty, které zastupují jednotky jako je `em`.
+Tady je vidět síla funkce `calc()`. Počítá se v prohlížeči a jedině prohlížeč zná konkrétní hodnoty, které zastupují jednotky, jako je `em`.
 
 <!-- AdSnippet -->
 
@@ -76,8 +76,8 @@ Proč nenapsat rovnou `width:14.2857`? Ze dvou důvodů:
 
 V parametru `sizes` značky `<img>` je znalost `calc()` naprosto klíčová. Zkuste si bez téhle prima funkce spočítat šířku obrázku uvnitř layoutu, který v responzivním layoutu splňuje následující podmínky:
 
-1. Na větších displejích zabírá polovinu šířky layoutu stránky. Ale bez vnějších okrajů layoutu (10 pixelů) a samotné stránky (15 pixelů).
-2. Na menších zabírá celou šířku viewportu bez vnějších okrajů stránky (15 pixelů).
+1. Na větších displejích zabírá polovinu šířky layoutu stránky. Ale bez vnějších okrajů layoutu (10 pixelů) a samotné stránky (15 pixelů).
+2. Na menších zabírá celou šířku viewportu bez vnějších okrajů stránky (15 pixelů).
 
 ```html
 <img

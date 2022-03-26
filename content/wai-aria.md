@@ -5,7 +5,7 @@
 Asistivní technologie – občas  se nepřesně říká slepecké čtečky –  umožňují provoz ve dvou režimech: 
 
 - *Pasivně-sekvenční*, kdy web prochází pomocí nadpisové osnovy dokumentu. Pro uživatele je to příjemné asi jako ovládání webu tabulátorem. Takže jde to, ale dře to.
-- Po hendikepovaného uživatele je pohodlnější *strukturovaný* režim, ve kterém čtečka nabízí konkrétní oblasti stránky.
+- Po handicapovaného uživatele je pohodlnější *strukturovaný* režim, ve kterém čtečka nabízí konkrétní oblasti stránky.
 
 Ten druhý režim právě  umožňují WAI-ARIA orientační body (landmarks). Přidání do webu je otázka chvilky a pomůžete tím mnoha lidem, takže pokud je ještě nepoužíváte, čtěte dál. Do HTML přidáte jen pár atributů navíc.  
 
@@ -71,7 +71,7 @@ Co třeba `<nav>` namísto `<div role="navigation">`? To bych nedělal. U HTML5 
 
 ## Jak testovat?
 
-ARIA role umí zobrazit rozšíření [Web Developer](http://chrispederick.com/work/web-developer/), které je dostupné pro Chrome, Firefox nebo Operu. Na Apple výrobcích to jde „z pohledu“ hendikepovaného uživatele testovat pomocí nativního rozšíření Voice Over ([OS X](http://www.apple.com/accessibility/osx/voiceover/), [iOS](http://www.apple.com/accessibility/ios/)).
+ARIA role umí zobrazit rozšíření [Web Developer](http://chrispederick.com/work/web-developer/), které je dostupné pro Chrome, Firefox nebo Operu. Na Apple výrobcích to jde „z pohledu“ handicapovaného uživatele testovat pomocí nativního rozšíření Voice Over ([OS X](http://www.apple.com/accessibility/osx/voiceover/), [iOS](http://www.apple.com/accessibility/ios/)).
 
 Podívejte se na video „WAI-ARIA: demo s VoiceOver“.
 

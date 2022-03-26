@@ -23,7 +23,14 @@ Vlastnosti `grid-column` a `grid-row` jsou součástí specifikace [CSS gridu](c
 
 </div>
 
-Jedná se o zkratky pro vlastnosti `grid-column-start` a také `grid-column-end` a `grid-row-start`, `grid-row-end`. Používání zkratek je praktičtější, jak sami uvidíte. Takto se zapisují:
+Vlastnosti `grid-column`/`-row` jsou pouhými zkratkami pro snadnější zápis jiných:
+
+- `grid-column-start`
+- `grid-column-end`
+- `grid-row-start`
+- `grid-row-end`
+
+Používání zkratek je praktičtější, jak sami uvidíte. Takto se uvádějí obecně:
 
 ```css
 grid-row: <grid-row-start> / <grid-row-end>;

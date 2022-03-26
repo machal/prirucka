@@ -115,12 +115,12 @@ Tohle téma mě už docela dlouho profesně míjí, ale přišlo mi škoda jej t
 <div class="row">
 <div class="col w-25-xs" markdown="1">
 
-![You Don't Know JS Yet (Kyle Simpson)](../dist/images/small/knihy/dontknow-js.png)
+![You Don’t Know JS Yet (Kyle Simpson)](../dist/images/small/knihy/dontknow-js.png)
 
 </div>
 <div class="col w-75-xs" markdown="1">
 
-### You Don't Know JS Yet (Kyle Simpson)
+### You Don’t Know JS Yet (Kyle Simpson)
 
 Doporučila [Karin Strouhalová](https://www.facebook.com/groups/frontendisti/permalink/2762083107336529/?comment_id=2762093210668852&notif_id=1614447811397650&notif_t=group_comment&ref=notif) a další lidé. [Petr Sedláček](https://www.facebook.com/groups/frontendisti/permalink/2762083107336529/?comment_id=2762226847322155&reply_comment_id=2773519609526212&notif_id=1615880929718771&ref=notif&notif_t=group_comment_mention) dodává: „Série pro mírně pokročilé a pro ty, kteří chtějí proniknout do hloubky. Jeden příklad: Měli jste někdy problém s klíčovým slovem `this`? Ve třetím díle je perfektně vysvětlené. Právě se pracuje na druhé edici.“ [Dostupné online](https://github.com/getify/You-Dont-Know-JS).
 

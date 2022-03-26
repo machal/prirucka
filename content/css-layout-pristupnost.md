@@ -3,7 +3,7 @@
 <div class="book-index" data-book-index="Přístupnost"></div>
 <div class="book-index" data-book-index="Pořadí v layoutu"></div>
 
-Přístupnost je důležitá disciplína, s jejíž pomocí mohou vývojáři vyjít vstříc různým skupinám lidí a jež se jen zdánlivě týká pouze hendikepovaných minorit, jako jsou zrakově postižení.
+Přístupnost je důležitá disciplína, s jejíž pomocí mohou vývojáři vyjít vstříc různým skupinám lidí a jež se jen zdánlivě týká pouze handicapovaných minorit, jako jsou zrakově postižení.
 
 Díky přístupnosti se zkrátka mohou různé skupiny lidí dostat k informacím na webu bez velkých překážek.
 
@@ -103,7 +103,7 @@ Zkuste si to naživo v CodePenu: [vrdl.in/ykj23](https://codepen.io/machal/pen/J
 
 ## Zachránce tabindex? Leda kulový {#pristupnost-tabindex}
 
-Někteří z vás si určitě řekli, že situaci může přeci zachránit vlastnost `tabindex`, HTML atribut, který nastaví pořadí navigace pomocí tabulátorů:
+Někteří z vás si určitě řekli, že situaci může přeci zachránit vlastnost `tabindex`, atribut HTML, který nastaví pořadí navigace pomocí tabulátorů:
 
 ```html
 <div class="container">

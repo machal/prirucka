@@ -54,7 +54,7 @@ Zkusme si představit totéž pro funkci `max()`:
 
 Šířka `.box-1` bude určena větší pixelovou hodnotou vypočtenou z obou atributů. Jak asi sami tušíte, většinou se použije hodnota `50%` a jen na opravdu malých rozlišeních prohlížeč vybere `100px`.
 
-V tomto případě jde o obdobu zápisu `width:50%;min-width:100px;`. V ukázce to sami uvidíte.
+V tomto případě jde o obdobu zápisu `width:50%;min-width:100px`. V ukázce to sami uvidíte.
 
 CodePen: [vrdl.in/1jgam](https://codepen.io/machal/pen/gOmeoEj?editors=1100)
 
@@ -138,7 +138,7 @@ To je tak zajímavé, že to musíme rozebrat. Jen chvíli počkejte.
 
 ## Demo: ideální šířka textu {#demo-typograficka-sirka}
 
-Ve známé knize [The Elements of Typographic Style](http://webtypography.net/2.1.2#:~:text=%E2%80%9CAnything%20from%2045%20to%2075,is%2040%20to%2050%20characters.%E2%80%9D) od Roberta Bringhursta se píše, že „za uspokojivou délku řádku pro jednosloupcovou stránku s patkovým písmem se obecně považuje 45 až 75 znaků“.
+Ve známé knize „The Elements of Typographic Style“ od Roberta Bringhursta se píše, že „za uspokojivou délku řádku pro jednosloupcovou stránku s patkovým písmem se obecně považuje 45 až 75 znaků“. [vrdl.in/zaosw](http://webtypography.net/2.1.2#:~:text=%E2%80%9CAnything%20from%2045%20to%2075,is%2040%20to%2050%20characters.%E2%80%9D)
 
 Toto můžeme krásně definovat právě pomocí porovnávací funkce:
 
@@ -170,7 +170,7 @@ Velikost písma se bude s rozšiřováním okna zvětšovat od `1.5rem` až po `
 
 CodePen: [vrdl.in/crs5t](https://codepen.io/una/pen/ExyYXaN)
 
-Čtenář Dan Srb mi po vydání tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
+Čtenář Dan Srb mi po vydání první verze tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
 
 > Pokud chcete například zajistit, aby se od pětisetpixelové šířky viewportu začalo písmo zvětšovat z 1rem na 2rem až k hranici šířky viewportu 900px, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost padding.)
 

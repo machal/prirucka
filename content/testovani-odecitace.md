@@ -1,6 +1,6 @@
 # Testování přístupnosti webů v odečítačích obrazovky 
 
-Jak nainstalovat, spustit a používat screen readery? Pojďme si ukázat, jak testovat weby přímo tak jak je „vidí“ zrakově hendikepovaní uživatelé. 
+Jak nainstalovat, spustit a používat screen readery? Pojďme si ukázat, jak testovat weby přímo tak jak je „vidí“ zrakově handicapovaní uživatelé.
 
 Asi víte, že odečítač obrazovky (taky *čtečka* nebo [screen reader](https://en.wikipedia.org/wiki/Screen_reader)) je software, který umožňuje slepým nebo jinak zrakově postiženým lidem používat vaše weby.
 
@@ -18,7 +18,7 @@ Radek Pavlíček [doporučuje](http://poslepu.cz/testovani-pristupnosti-webu-dop
 - [iOS: VoiceOver se Safari](#ios-voiceover)
 - [Android: TalkBack s Chrome nebo Firefoxem](#android-talkback)
 
-Vychází to z kombinací, které používají sami zrakově hendikepovaní. To zase vychází z toho, jak je který odečítač optimalizovaný pro který prohlížeč. Jiné kombinace jsou trochu bez záruky.
+Vychází to z kombinací, které používají sami zrakově handicapovaní. To zase vychází z toho, jak je který odečítač optimalizovaný pro který prohlížeč. Jiné kombinace jsou trochu bez záruky.
 
 Osobně na Windows používám odečítač NVDA a na Apple zařízeních vestavěný VoiceOver. A protože obojí nepoužívám denně, udělal jsem si tahák, který snad pomůže i vám.
 

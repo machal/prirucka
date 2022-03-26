@@ -24,7 +24,10 @@ Počítá se však s použitím pro [flexbox](css-flexbox.md), [grid](css-grid.m
 
 </div>
 
-`place-content` je zkratkou pro vlastnosti [`justify-content`](css-justify-content.md) a [`align-content`](css-align-content.md).
+`place-content` je zkratkou pro tyto vlastnosti:
+
+- [`justify-content`](css-justify-content.md)
+- [`align-content`](css-align-content.md)
 
 Zapisuje se takto:
 
@@ -101,6 +104,8 @@ Položky tedy zarovnáváme svisle tak, aby mezi nimi vznikla rovnoměrná mezer
 
 CodePen: [vrdl.in/zlhko](https://codepen.io/machal/pen/PoNJVPm?editors=1100)
 
+<div class="pbi-avoid" markdown="1">
+
 ## Možné hodnoty
 
 Podívejte se na referenční příručku k oběma vlastnostem, pro které je `place-content` zkratkou:
@@ -115,3 +120,6 @@ Vlastnost `place-content` funguje ve všech prohlížečích kromě MSIE 11.
 Více informací hledejte na CanIUse. [caniuse.com/place-items](https://caniuse.com/#search=place-items).
 
 <!-- AdSnippet -->
+
+</div>
+<!-- .pbi-avoid -->

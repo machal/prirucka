@@ -43,9 +43,9 @@ Je ale možné, že si skoro všude vystačíte s `px`. K tomu se dostávám [na
 
 Výchozí velikost písma je v drtivé většině prohlížečů `16px`. Existují ale méně významné prohlížeče, které velikost písma nastavují jinak. Prostě tak, aby se nám na konkrétním zařízení lépe četlo.
 
-Například prohlížeč v Kindle 3 měl výchozí velikost písma `26px`, Opera Mini 7 zase `17px`. Můžeme sice sázet na to, že většina nejrozšířenějších prohlížečů výchozí velikost písma nemění, ale moje zkušenost velí, že je lepší to nedělat.
+Například prohlížeč v Kindle 3 měl výchozí velikost písma `26px`, Opera Mini 7 zase `17px`. Můžeme sice sázet na to, že většina nejrozšířenějších prohlížečů výchozí velikost písma nemění, ale moje zkušenost velí, že je lepší to nedělat.
 
-Ohledně výchozí velikosti písma v prohlížečích napsal Nicolas Hoizey hezký článek „People don't change the default 16px font size in their browser (You wish!)“ [vrdl.in/16px](https://nicolas-hoizey.com/2016/03/people-don-t-change-the-default-16px-font-size-in-their-browser.html)
+Ohledně výchozí velikosti písma v prohlížečích napsal Nicolas Hoizey hezký článek „People don’t change the default 16px font size in their browser (You wish!)“ [vrdl.in/16px](https://nicolas-hoizey.com/2016/03/people-don-t-change-the-default-16px-font-size-in-their-browser.html)
 
 Pokud vám výchozí velikost písma nevyhovuje, změňte to relativními jednotkami, nejlépe procenty:
 
@@ -102,7 +102,7 @@ Možná jste zvyklí při převodu designu do kódu pracovat v `px`, protože gr
 
 Jak z konfliktu design versus přístupnost ven? Může vám pomoci automatická úprava CSS.
 
-Možná znáte knihovnu PostCSS, jež umožňuje automatizované zpracování stylů. Plugin pro PostCSS „postcss-pxtorem“ zařídí převod z px do rem pro vybrané vlastnosti. Ze zápisu `font-size:16px` prostě udělá `font-size:1rem`. [vrdl.in/cyxe1](https://github.com/cuth/postcss-pxtorem)
+Možná znáte knihovnu PostCSS, jež umožňuje automatizované zpracování stylů. Plugin pro PostCSS „postcss-pxtorem“ zařídí převod z `px` do `rem` pro vybrané vlastnosti. Ze zápisu `font-size:16px` prostě udělá `font-size:1rem`. [vrdl.in/cyxe1](https://github.com/cuth/postcss-pxtorem)
 
 `rem` tedy považuji za hlavní jednotku pro tvorbu rozhraní. Velmi se nám ale také hodí `em`.
 
@@ -145,7 +145,7 @@ Proč nepoužít `px`? Doporučím vám vyhnout se pixelům kvůli nemožnosti r
 
 Iris Winter v textu „PX, EM, or REM? Examining Media Query Units in 2021“ píše, že kvůli nedokonalé implementaci v Safari je stále lepší nepoužívat pixely, ale dát přednost `em` nebo případně `rem`. Obě tyto jednotky se v dotazech Media Queries odkazují na velikost písma v dokumentu, takže jsou volně zaměnitelné. [vrdl.in/4v7uk](https://betterprogramming.pub/px-em-or-rem-examining-media-query-units-in-2021-e00cf37b91a9)
 
-V kodérské praxi je ale možné použít automatický převod z `px`, protože tady se s CSS pixely pracuje lépe. Pomůže plugin do PostCSS jménem „postcss-em-media-query“. [vrdl.in/1kxie](https://github.com/niksy/postcss-em-media-query)
+V kodérské praxi je ale možné použít automatický převod z `px`, protože tady se s CSS pixely pracuje lépe. Pomůže šikovný plugin do PostCSS jménem „postcss-em-media-query“. [vrdl.in/1kxie](https://github.com/niksy/postcss-em-media-query)
 
 ## Výška řádku: číslem bez jednotky {#vyska-radku}
 

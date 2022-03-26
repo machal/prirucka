@@ -317,7 +317,7 @@ V době dokončování textu (únor 2022) se zdá, že naše milé prohlížeče
 
 ### Definování mezer mezi položkami {#gap}
 
-<div class="book-index" data-book-index="gap"></div>
+<div class="book-index" data-book-index="Gap"></div>
 <div class="book-index" data-book-index="Mezera v layoutu"></div>
 
 Vlastnosti a hodnoty umožňují nastavení konzistentní mezery mezi položkami v řádku nebo sloupci a hlavně uvnitř CSS gridu.

@@ -16,7 +16,7 @@ CSS Logical Properties velmi souvisí se změnou směru layoutu pro různé smě
 
 <!-- AdSnippet -->
 
-V CSS to je víceméně novinka, ale má to vcelku dobrou podporu v prohlížečích.
+V CSS to je víceméně novinka, ale má vcelku dobrou podporu v pro&shy;hlí&shy;že&shy;čích.
 
 Bude to pro vás naprosto zásadní, pokud pracujete s různými jazyky. Vám ostatním Logical Properties pomohou spíše drobně,  např. v tom, že zde máme nové užitečné zkratky vlastností jako `margin-inline` a `padding-block`.
 
@@ -26,7 +26,7 @@ Všechno se ale dozvíte v textu, pojďme to teď rozebrat dopodrobna.
 
 Arabština má, jak známo, opačný tok textu než evropské jazyky – čte se zprava doleva.
 
-Vezměme, že máme jednoduchý příklad, který vidíte na obrázku. Nadpis, obrázek a text, který jej obtéká. Na polovině stránky je to česky, na polovině arabsky.
+Vezměme jednoduchý příklad, který vidíte na obrázku. Nadpis, obrázek a text, který jej obtéká. Na polovině stránky je to česky, na polovině arabsky.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-logical-czech-arabic.jpg" width="1600" height="900" alt="Čeština a Arabština na jedné stránce">
@@ -74,9 +74,7 @@ body {
 }
 ```
 
-A podobně fungují zkratky pro blokový směr a další vlastnosti, jako je `padding`.
-
-Proč to tak zdůrazňuji? Definice rozměrů v jednom směru je věc, která nám v CSS chyběla a která je nyní díky CSS Logical Properties možná. Drobnost, ale pomůže. I těm, kteří nesázejí dokumenty v arabštině nebo japonštině.
+Podobně fungují zkratky pro blokový směr a další vlastnosti, jako je `padding`. Proč to tak zdůrazňuji? Definice rozměrů v jednom směru je věc, která nám v CSS chyběla a která je nyní díky CSS Logical Properties možná. Drobnost, ale pomůže. I těm, kteří nesázejí dokumenty v arabštině nebo japonštině.
 
 Podívejte se na CodePen k tomuto příkladu. Jen pozor, logické hodnoty ve vlastnosti `float` mi v době psaní fungovaly ve Firefoxu, ale ne v Chromu a Safari.
 
@@ -150,8 +148,6 @@ Tmavé blokové okraje změní směr až se změnou toku dokumentu.
 </figcaption>
 </figure>
 
-Podívejte se na to v CodePenu.
-
 CodePen: [vrdl.in/hizs7](https://codepen.io/machal/pen/vYZQRxN?editors=1100)
 
 Podobné to bude u vlastnosti `grid-auto-flow`, která dokáže změnit směr rozvržení v gridu.
@@ -173,7 +169,8 @@ Pro box model máme hezký obrázek s porovnáním fyzických a logických varia
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-logical-physical.jpg" width="1600" height="900" alt="CSS physical / CSS logical">
 <figcaption markdown="1">
-Logické hodnoty jako synonyma těch fyzických. Zdroj: Adrian Roselli. [vrdl.in/3l57u](https://codepen.io/aardrian/pen/bGGxrvM).
+Logické hodnoty jako synonyma těch fyzických.  
+Zdroj: Adrian Roselli. [vrdl.in/3l57u](https://codepen.io/aardrian/pen/bGGxrvM).
 </figcaption>
 </figure>
 
@@ -202,8 +199,8 @@ Logické vnitřní okraje:
 | `padding-block-end`    |  `padding-bottom`      |
 | `padding-inline-start` |  `padding-left`        |
 | `padding-inline-end`   |  `padding-right`       |
-| `padding-block`        |  `padding-top` & `padding-bottom`  |
-| `padding-inline`       |  `padding-left` & `padding-right`  |
+| `padding-block`        |  `padding-top` a `padding-bottom`  |
+| `padding-inline`       |  `padding-left` a `padding-right`  |
 
 </div>
 
@@ -217,8 +214,8 @@ Logické vnější okraje:
 | `margin-block-end`    |  `margin-bottom`      |
 | `margin-inline-start` |  `margin-left`        |
 | `margin-inline-end`   |  `margin-right`       |
-| `margin-block`        |  `margin-top` & `margin-bottom`  |
-| `margin-inline`       |  `margin-left` & `margin-right`  |
+| `margin-block`        |  `margin-top` a `margin-bottom`  |
+| `margin-inline`       |  `margin-left` a `margin-right`  |
 
 </div>
 
@@ -234,10 +231,12 @@ Logické posuny (ofsety):
 | `inset-block-end`    |  `bottom`      |
 | `inset-inline-start` |  `left`        |
 | `inset-inline-end`   |  `right`       |
-| `inset-block`        |  `top` & `bottom`  |
-| `inset-inline`       |  `left` & `right`  |
+| `inset-block`        |  `top` a `bottom`  |
+| `inset-inline`       |  `left` a `right`  |
 
 </div>
+
+<div class="pbi-avoid" markdown="1">
 
 Logické rámečky:
 
@@ -249,8 +248,8 @@ Logické rámečky:
 | `border-block-end`    |  `border-bottom`      |
 | `border-inline-start` |  `border-left`        |
 | `border-inline-end`   |  `border-right`       |
-| `border-block`        |  `border-top` & `border-bottom`  |
-| `border-inline`       |  `border-left` & `border-right`  |
+| `border-block`        |  `border-top` a `border-bottom`  |
+| `border-inline`       |  `border-left` a `border-right`  |
 
 </div>
 
@@ -260,6 +259,9 @@ Poznámka: Vzhledem k tomu, že vlastnost `border` představuje zkratku, uvádí
 - Styl: `border-style` (`border-block-start-style` = `border-top-style`)
 - Barva: `border-color` (`border-block-start-color` = `border-top-color`)
 - Zakulacení: `border-radius` (`border-block-start-radius` = `border-top-radius`)
+
+</div>
+<!-- .pbi-avoid -->
 
 ### Klíčové slovo logical {#vlastnosti-hodnoty-logical}
 
@@ -284,7 +286,7 @@ Tohle může být zajímavé, ale zatím to v prohlížečích nemá podporu. Kd
 
 Takto to má fungovat pro následující vlastnosti: `inset`, `margin`, `padding`, `border-width`, `border-style`, `border-color`, `scroll-padding`, `scroll-margin`. Tedy až to bude fungovat v prohlížečích…
 
-Jen připomínám, že logický směr je pro různé jazyky různý.
+Jen znovu připomínám, že logický směr je pro různé jazyky různý.
 
 ### Hodnoty pro vlastnosti {#vlastnosti-hodnoty-hodnoty}
 
@@ -301,7 +303,7 @@ Jak už je asi z textu zřejmé, logické alternativy nemusí mít jen vlastnost
 
 </div>
 
-Ve vlastnostech `float` a `clear` pak budeme moci použít nové hodnoty `inline-start` a `inline-end`.
+Ve vlastnostech `float` nebo `clear` pak budeme moci použít nové hod&shy;noty `inline-start` a `inline-end`.
 
 Pro `text-align` je to jednodušší, protože jde zarovnávat jen v jednom směru. Takže `text-align:start` bude `text-align:left`.
 

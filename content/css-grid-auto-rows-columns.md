@@ -23,7 +23,7 @@ Vlastnosti `grid-auto-rows` a `grid-auto-columns` jsou součástí [CSS gridu](c
 
 </div>
 
-Jsou tedy doplňkem nám už známých vlastností [`grid-template-rows` a také `grid-template-columns`](css-grid-template-rows-columns.md), které naopak slouží pro vytváření gridu explicitního, čili autorsky definovaného.
+Jsou tedy doplňkem nám už známých vlastností [`grid-template-rows`](css-grid-template-rows-columns.md) (pro definici řádků mřížky) a `grid-template-columns` (pro definici sloupců), které naopak slouží pro vytváření gridu explicitního, čili autorsky definovaného.
 
 Tyto vlastnosti jsou užitečné pro implicitní řádky (`grid-auto-rows`), a to v případech, kdy máte v HTML neznámý počet položek. Řádky se vám v layoutu tvoří samy a vy nemusíte definovat mřížku pro různé počty položek v ní.
 

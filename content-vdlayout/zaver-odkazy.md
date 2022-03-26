@@ -6,7 +6,7 @@ Až začnete moderní layout v CSS používat, bude se vám, kromě knížky, ji
 
 Na Vzhůru dolů najdete referenční příručky k většině vlastností, které najdete v knížce.
 
-- Příručka k gridu: [vrdl.in/grid](https://www.vzhurudolu.cz/prirucka/css-grid)
+- Příručka ke gridu: [vrdl.in/grid](https://www.vzhurudolu.cz/prirucka/css-grid)
 - Příručka k flexboxu: [vrdl.in/flex](https://www.vzhurudolu.cz/prirucka/css-flexbox)
 - Příručka k multicol: [vrdl.in/multicol](https://www.vzhurudolu.cz/prirucka/css-multicolumn)
 - Příručka k zarovnání boxů: [vrdl.in/boxal](https://www.vzhurudolu.cz/prirucka/css-box-alignment)
@@ -32,8 +32,8 @@ Další příklady z praxe, které se vám mohou hodit.
 
 Pokud ještě nemáte kód pro psaní layoutů v hlavě, zkuste použít generátory.
 
-- [vrdl.in/gridit](https://grid.layoutit.com/) (grid)
-- [vrdl.in/bimxv](https://layout.bradwoods.io/) (grid i flexbox)
+- Grid: [vrdl.in/gridit](https://grid.layoutit.com/)
+- Grid i flexbox: [vrdl.in/bimxv](https://layout.bradwoods.io/)
 
 ## CSS-Tricks
 

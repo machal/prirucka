@@ -2,16 +2,21 @@
 
 # Tiráž
 
-**Martin Michálek**  
-**CSS: MODERNÍ LAYOUT**
+<h2>
+Martin Michálek<br>
+CSS: MODERNÍ LAYOUT
+</h2>
 
 Redakce a jazyková korektura: Petr Jediný Novotný, [pjnovotny.cz](http://pjnovotny.cz/)  
 Obrázky, schémata a vnitřní sazba: Martin Michálek  
 Obálka a spolupráce na grafice knihy: Petr Šťastný, [raist.cz](https://raist.cz/)  
 Spolupráce na webu: Jan Kočiš, [SUPERKODERS](https://superkoders.com/)  
-Foto autora: Oldřich Hrb ([oldrichhrb.cz](https://oldrichhrb.cz/))
+Foto autora: Oldřich Hrb, [oldrichhrb.cz](https://oldrichhrb.cz/)
 
-V knize jsou použitá písma Capita a Foro od Dietera Hofrichtera ([hoftype.com](http://hoftype.com/)) a InconsolataGo od Rapha Leviena ([levien.com](https://levien.com/)).
+V knize jsou použitá písma Capita a Foro od Dietera Hofrichtera  
+([hoftype.com](http://hoftype.com/)) a InconsolataGo od Rapha Leviena ([levien.com](https://levien.com/)).
+
+Tisk: PBtisk a.s.
 
 Vydal Martin Michálek – Vzhůru dolů
 

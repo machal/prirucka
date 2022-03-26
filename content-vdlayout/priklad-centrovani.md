@@ -30,7 +30,7 @@ Toto je výchozí HTML:
 
 <div class="colored-box" markdown="1">
 
-Také CodePen se zadáním už čeká na váš fork a následné procvičování mozkových závitů. Jen pozor, použijte jen vlastnosti ze specifikací nového layoutu – gridu, flexboxu a zarovnávání boxů.
+Také CodePen se zadáním už čeká na váš fork a následné procvičování mozkových závitů. Jen pozor, použijte jen vlastnosti ze specifikací no&shy;vé&shy;ho layoutu – gridu, flexboxu a zarovnávání boxů.
 
 CodePen: [vrdl.in/8mr7c](https://codepen.io/machal/pen/xxdOJOX?editors=1100)
 
@@ -97,7 +97,7 @@ My však chceme zarovnávat doprostřed:
 
 Povedlo se nám zařídit centrování ve svislém směru. Teď ještě vodorovně, že ano… Podívejte se do taháku na obrázku. Patrně zjistíte, že ve vodorovném směru (`justify-`) potřebujete zarovnávat položky (`-items`).
 
-Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou vlastnost `justify-items`, a tedy i [`justify-self`](css-justify-self.md) je ve specifikaci i prohlížečích pro použití ve flexboxu prozatím zapovězena. Pokud vás to zajímá více, mrkněte se na podkapitoly o těchto vlastnostech v příručkách dále.
+Jenže znovu ouha! Ve světě flexboxu vám v tuto chvíli `justify-items:center` fungovat nebude. Nejen hodnota, ale rovnou vlastnost `justify-items`, a tedy i [`justify-self`](css-justify-self.md) je ve specifikaci i prohlížečích pro použití ve flexboxu pro&shy;zatím zapovězena. Pokud vás to zajímá více, mrkněte se na podkapitoly o těchto vlastnostech v příručkách dále.
 
 Tento typ zarovnávání se ve flexboxu dělá starým dobrým `margin:auto`:
 

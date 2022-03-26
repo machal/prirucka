@@ -78,7 +78,7 @@ Následovaly frameworky jako 960 grid System, YUI grids, YAML… a v roce 2011 p
 
 Bootstrap je skvělý. Kromě základních typografických principů a mřížky obsahuje také hotové komponenty pro tvorbu uživatelských rozhraní a dnes už i prostředky pro systematickou tvorbu komponent vlastních, například v podobě „utilit“.
 
-Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a často ani frontendového kodéra, představuje Bootstrap (a z něj vycházející frameworky jako Foundation nebo Semantic UI) hotový zázrak. Všechno, co potřebují, napíšou v HTML a framework se nějak postará o zbytek.
+Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a často ani frontendového kodéra, představuje Bootstrap (a z něj vycházející fra&shy;me&shy;worky jako Foundation nebo Semantic UI) hotový zázrak. Všechno, co potřebují, napíšou v HTML a framework se nějak postará o zbytek.
 
 <figure>
 <img src="../dist/images/original/vdlayout/bootstrap.jpg" width="1600" height="900" alt="…">
@@ -87,7 +87,7 @@ Pro vývojáře, kteří musí tvořit rozhraní a nemají po ruce designéra a 
 </figcaption>
 </figure>
 
-Zároveň zde ale vznikl problém s nadužíváním těchto nástrojů. Jako konzultant rychlosti webu se vývojářů často ptám, proč na webech používají Bootstrap. „Pro mřížku,“ zní častá odpověď.
+Zároveň zde ale vznikl problém s nadužíváním těchto nástrojů. Jako konzultant rychlosti webu se vývojářů často ptám, proč na webech používají Boots&shy;trap. „Pro mřížku,“ zní častá odpověď.
 
 Pro mřížku tak řada webů stahuje zhruba 25 kilobajtů zbytečného kódu. To nemusí vypadat jako vysoké číslo, ale uvědomme si, že jde o pětadvacet „kilo“ stylů, které nemohou být ze své povahy asynchronní a bez kterých nemůže prohlížeč vykreslit ani řádku z chystané stránky.
 

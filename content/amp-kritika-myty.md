@@ -26,7 +26,7 @@ Zvolili cestu zcela jiné formy distribuce ([AMP Cache](amp-cache.md)) a úpravy
 
 Autoři se dopustili dvou taktických chyb: Založili AMP jako projekt jedné firmy – která se ještě ke všemu jmenuje Google, což samo o sobě u spousty lidí znamená spuštění režimu _silná nedůvěra_. A pak přidali ještě jednu chybu: Nepostavili se jasně k webovým standardům.
 
-### AMP od Googlu: Pro mnohé je to důkaz, že „Don't be evil“ už neplatí
+### AMP od Googlu: Pro mnohé je to důkaz, že „Don’t be evil“ už neplatí
 
 První veřejné oznámení technologie proběhlo 7. října 2015 a mluví jasně: AMP je projekt Googlu. Dávalo to smysl. Vždyť která jiná firma by měla mít zájem na dramatickém vylepšení uživatelského prožitku z otevřené části webu než ta, která na něm vydělává nejvíce? Jak jinak reagovat na právě spuštěný konkurenční projekt od Facebooku, Instant Articles?
 

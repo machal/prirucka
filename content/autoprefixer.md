@@ -57,9 +57,9 @@ Používat můžete Autoprefixer mnoha různými způsoby, o těch bude za chví
 
 </div>
 
-## Nastavení pomocí Browserlistu {#browserlist}
+## Nastavení pomocí Browserslistu {#browserslist}
 
-Browserlist je způsob, jak Autoprefixeru a podobným nástrojům (jakým je například Babel pro zpracování JavaScriptu) určit, které prohlížeče v projektu podporujete.
+Browserslist je způsob, jak Autoprefixeru a podobným nástrojům (jakým je například Babel pro zpracování JavaScriptu) určit, které prohlížeče v projektu podporujete.
 
 Nejlepším způsobem, jak poskytnout toto nastavení, je soubor `.browserslistrc` v kořenovém adresáři projektu. Alternativně můžete přidat klíč `browserslist` do souboru `package.json` nebo přímo v nastavení Autoprefixeru.
 
@@ -100,7 +100,7 @@ Pak bude výsledek jiný:
 }
 ```
 
-V konfiguraci Browserlistu je `IE 10`, takže Autoprefixer přidá zápis pro tento stařičký prohlížeč: `display:-ms-flexbox`.
+V konfiguraci Browserslistu je `IE 10`, takže Autoprefixer přidá zápis pro tento stařičký prohlížeč: `display:-ms-flexbox`.
 
 ## Použití Autoprefixeru {#pouziti}
 

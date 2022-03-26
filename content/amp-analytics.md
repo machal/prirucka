@@ -93,7 +93,7 @@ Pro měření AMP v samostatném segmentu je potřeba udělat následující:
 1. Měřit AMP i běžný web v jednom profilu Google Analytics (se stejným `<VASE_GA_ID>`).
 2. Propojit návštěvnost z AMP s tou na běžném webu pomocí hodnoty AMP Client ID. V nastavení Analytics na běžném webu je potřeba použít `'use_amp_client_id': true` a do HTML hlavičky AMP verze přidat: `<meta name="amp-google-client-id-api" content="googleanalytics">`. Bez tohoto se uživatel non-AMP stránky identifikuje jinak než tentýž na AMP stránce a Analytics nedokážou propojit jeho chování.
 3. V Google Analytics odfiltrovat referraly z `cdn.ampproject.org`: _Správce (Admin) › Služba (Property) › Údaje o měření (Tracking info) › Seznam vyloučených odkazujících zdrojů (Referral Exclusion List) › Přidat (Add)_.
-4. Tamtéž přidat nový zdroj dat z AMP návštěvnosti. Více najdete například v textu  „What's Your AMP Traffic Really Doing? Set Up Reporting in 10 Minutes“. [moz.com/blog/amp-reporting](https://moz.com/blog/amp-reporting)
+4. Tamtéž přidat nový zdroj dat z AMP návštěvnosti. Více najdete například v textu  „What’s Your AMP Traffic Really Doing? Set Up Reporting in 10 Minutes“. [moz.com/blog/amp-reporting](https://moz.com/blog/amp-reporting)
 
 Nastavení AMP client ID je zde zcela klíčové. Více informací najdete v textu „Set up Google AMP Client ID API“. [vrdl.in/ampid](https://support.google.com/analytics/answer/7486764).
 

@@ -8,11 +8,11 @@ Vlastnost `display` slouží k určení způsobu vykreslení prvku. Může to b�
 
 <div class="book-index" data-book-index="Formátovací kontext"></div>
 
-Abyste totiž mohli začít vytvářet nějaký typ rozvržení v CSS, musíte většinou nejprve rodičovskému prvku nastavit určitý typ „formátovacícho kontextu“. K tomu právě obvykle slouží vlastnost `display`.
+Abyste totiž mohli začít vytvářet nějaký typ rozvržení v CSS, musíte většinou nejprve rodičovskému prvku nastavit určitý typ „formátovacího kontextu“. K tomu právě obvykle slouží vlastnost `display`.
 
 </div>
 
-Vy, kteří znáte její základní hodnoty jako `block` nebo `inline`, možná budete překvapení, že od roku 2020 zde máme novou verzi specifikace, která přidává řadu dalších možností – „CSS Display Module Level 3“. [vrdl.in/w3disp](https://www.w3.org/TR/css-display-3/)
+Vy, kteří znáte její základní hodnoty jako `block` nebo `inline`, možná budete překvapení, že od roku 2020 zde máme novou verzi specifikace, jež přidává řadu dalších možností – „CSS Display Module Level 3“. [vrdl.in/w3disp](https://www.w3.org/TR/css-display-3/)
 
 Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich asi znáte.
 
@@ -26,7 +26,7 @@ Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich 
 | `flex`, `inline-flex`     |  Vytvoří [flexboxové rozvržení](css-flexbox.md). Inlinová varianta nezalomí řádky před a po.  |
 | `grid`, `inline-grid`     |  Vytvoří [rozvržení do mřížky](css-grid.md). Inlinová varianta nezalomí řádky.  |
 | `table`, `inline-table`   |  Rozvržení do tabulky. Inlinová varianta opět tvoří tabulku v řádce.  |
-| `none`                    |  Nevykreslí prvek, ale ani jeho potomci.  |
+| `none`                    |  Nevykreslí prvek, ale ani jeho potomky.  |
 
 </div>
 
@@ -73,7 +73,7 @@ Vytvoří boxík, který je „inline-level“, řádkový. Před sebou a po sob
 - `block`  
 Vygeneruje boxík, který je „block-level“. Zjednodušeně to znamená, že se vykreslí do celé šířky rodiče a zalomí řádky před sebou i po sobě.
 - `inline-block`  
-Generuje boxík, který se zvenčí chová jako řádkový a uvnitř generuje vždy nový blokový kontext. Mimochodem, specifikace s touto hodnotou počítá do budoucna jen jako s jiným zápisem pro dvojici klíčových slov `inline flow-root`. O tom píšu později.
+Generuje boxík, který se zvenčí chová jako řádkový a uvnitř generuje vždy nový blokový kontext. Mimochodem, specifikace počítá s touto hodnotou do budoucna jen jako s jiným zápisem pro dvojici klíčových slov `inline flow-root`. O tom píšu později.
 - `run-in`  
 Vygeneruje typ „inline-level“ boxu se zvláštním chováním – pokusí se vložit sám sebe do následujícího blokového prvku. Pokud za prvkem „run-in“ následuje blokový prvek, „run-in“ se stane jeho prvním inline boxem. Pokud bude následovat inlinové pole, stane se z prvku „run-in“ prvek blokový.
 
@@ -81,7 +81,8 @@ V CodePenu si můžete vyzkoušet všechny možnosti.
 
 CodePen: [vrdl.in/azksi](https://codepen.io/machal/pen/wvzYXeg?editors=0000)
 
-Varianta s typem zobrazení `run-in` v mé ukázce chybí, není totiž podporovaná jinde než v [Internet Exploreru](msie.md) (!). V tomto dědečkovi mezi prohlížeči nefunguje CodePen, takže byste z ukázky nic neměli. Viz podpora na CanIUse.com. [caniuse.com/run-in](https://caniuse.com/run-in)
+Varianta s typem zobrazení `run-in` v mé ukázce chybí, není totiž podporovaná jinde než v [Internet Exploreru](msie.md) (!). V tomto dědečkovi mezi prohlížeči nefunguje CodePen, takže byste z ukázky nic neměli. Viz podpora na CanIUse.  
+[caniuse.com/run-in](https://caniuse.com/run-in)
 
 ## Vnitřní zobrazení {#vnitrni}
 

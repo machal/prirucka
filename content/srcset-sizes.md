@@ -205,7 +205,7 @@ Pojďme si pro jistotu ještě shrnout celý zápis:
 
 CodePen: [cdpn.io/e/azBmaX](https://codepen.io/machal/full/azBmaX?editors=110)
 
-Nezapomínejte prosím na povinný atribut `alt`, který ocení vyhledávače a odečítače obrazovky pro zrakově hendikepované uživatele.
+Nezapomínejte prosím na povinný atribut `alt`, který ocení vyhledávače a odečítače obrazovky pro zrakově handicapované uživatele.
 
 Doplňte i atribut `height`, který vylepší vykreslování stránky tím, že ještě před stažením obrázku sdělí prohlížeči, jak velký prostor pro něj má v layoutu vynechat. Nevztahujte jej tedy k pixelové výšce obrázku, ale k prostoru stránky, který si přejete pro obrázek rezervovat do chvíle, než se stáhne a zobrazí.
 

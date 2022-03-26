@@ -12,7 +12,7 @@ Tenhle soubor může obsahovat různé meta informace o projektu:
 
 - [Název, popis nebo verzi projektu](#informace-o-projektu)
 - [Závislosti projektu](#zavislosti)
-- [Podporované prohlížeče](#browserlist)
+- [Podporované prohlížeče](#browserslist)
 - [Skripty pro usnadnění práce vývojářů](#scripts)
 
 Žádná položka není povinná. Jediná výjimka je název a verze a to jen u veřejných projektů.  Jistota je, že se jedná o soubor ve formátu JSON. Pojďme si to teď všechno projít na ukázkovém `package.json`:
@@ -177,7 +177,7 @@ Obsahuje deklaraci prohlížečů, které na projektu podporuji:
 
 Tady říkáme, že chceme podporovat všechny [prohlížeče](prohlizece.md), které mají více než jednoprocentní podíl na globálním trhu a zároveň nás zajímají poslední čtyři verze. Tuhle deklaraci tam mám kvůli [prohlížeči od Seznam.cz](https://www.vzhurudolu.cz/podcast/120-podcast-seznam-prohlizec), který má v době psaní textu právě toto zpoždění oproti Chrome, ze kterého vychází.
 
-K čemu je to dobré? Z browserlistu vychází nástroje pro automatické uzpůsobování kódu starším prohlížečům. V CSS je to [Autoprefixer](autoprefixer.md), v JS pak Babel.
+K čemu je to dobré? Z browserslistu vychází nástroje pro automatické uzpůsobování kódu starším prohlížečům. V CSS je to [Autoprefixer](autoprefixer.md), v JS pak Babel.
 
 Více informací je na [github.com/browserslist/browserslist](https://github.com/browserslist/browserslist).
 

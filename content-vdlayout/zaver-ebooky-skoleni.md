@@ -1,10 +1,10 @@
 # Vzhůru dolů: videa, další e-booky a tak dále
 
-Na Vzhůru dolů najdete i další výstupy mé práce.
+Na Vzhůru dolů najdete i další výsledky mé práce.
 
 ## Videa
 
-Vzdělávací videa jsou na mém webu novinkou. V době psaní je možné zakoupit hodinové video o CSS gridu, ale další videa na témata z knížky jsou v plánu. Celkem je zde již přes 20 videí. [vrdl.cz/video](https://www.vzhurudolu.cz/video)
+Vzdělávací videa jsou na mém webu novinkou. V době psaní této knihy je možné zakoupit hodinové video o CSS gridu, ale další videa na témata z knížky mám v plánu. Celkem je zde již přes 20 videí. [vrdl.cz/video](https://www.vzhurudolu.cz/video)
 
 ## E-book „Vzhůru do (responzivního) webdesignu“
 

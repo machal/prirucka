@@ -2,8 +2,8 @@
 
 Pomocí CSS vlastnosti `gap` můžeme definovat mezery v rozvrženích vytvářených pomocí CSS layoutů. Téhle mezeře se občas i v češtině podle anglického originálu říká „gutter“. A brzy také možná „gap“.
 
-<div class="book-index" data-book-index="gap"></div>
-<div class="book-index" data-book-index="gutter"></div>
+<div class="book-index" data-book-index="Gap"></div>
+<div class="book-index" data-book-index="Gutter"></div>
 <div class="book-index" data-book-index="Mezera v layoutu"></div>
 
 <div class="connected" markdown="1">
@@ -179,7 +179,7 @@ Uvádění [výpočetní funkce `calc()`](css3-calc.md) se v hodnotách `gap` m�
 
 CodePen: [vrdl.in/4t652](https://codepen.io/machal/pen/KKqqqpJ?editors=1100)
 
-A k čemu, že se funkce `calc()` může hodit? Příkladem budiž odečtení šířky rámečků (`border`) buněk layoutu z celkové šířky mezery.
+A k čemu že se funkce `calc()` může hodit? Příkladem budiž odečtení šířky rámečků (`border`) buněk layoutu z celkové šířky mezery.
 
 <div class="ebook-only" markdown="1">
 
@@ -243,8 +243,8 @@ CodePen: [vrdl.in/p9xmy](https://codepen.io/machal/pen/ZEyyKZZ?editors=1100)
 
 Když už jsme v tom, mám pár poznámek. Doslova pár:
 
-1. Mezery tvořené `gap` mají vliv na minimální rozestupy mezi položkami. Je však možné další rozestupy přidat pomocí vlastností jako [`justify-content`](css-justify-content.md) nebo [`align-content`](css-align-content.md). Jejich hodnota `space-between` má podobnou funkcionalitu jako `gap` a je možné je vzájemně kombinovat.
-2. Když už se `gap` dá použít všude, nedá se to použít i pro mezery mezi buňkami uvnitř `<table>`? Nedá, děkujeme za optání. Tabulková zobrazení místo toho používají vlastnost `border-spacing`.
+1. Mezery tvořené `gap` mají vliv na minimální rozestupy mezi položkami. Je však možné ještě další vnitří mezery přidat pomocí vlastností jako [`justify-content`](css-justify-content.md) nebo [`align-content`](css-align-content.md). Jejich hodnota `space-between` má podobný dopad jako použití `gap` a je možné je vzájemně kombinovat.
+2. Když už se `gap` dá použít všude, nedá se použít i pro mezery mezi buňkami uvnitř `<table>`? Nedá, děkujeme za optání. Tabulková zobrazení místo toho používají vlastnost `border-spacing`.
 
 ## Podpora v prohlížečích {#podpora}
 

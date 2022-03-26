@@ -26,7 +26,7 @@ Počítá se však s použitím pro [flexbox](css-flexbox.md), [grid](css-grid.m
 
 Ve specifikaci se počítá s použitím pro flexbox, grid, vícesloupcový layout, ale taky pro blokové prvky, kde to ale zatím použít nejde.
 
-Tato vlastnost zarovnává ve svislém směru, a tak nemá pochopitelně vliv na jednořádkové flexboxové kontejnery (tj. kontejnery s `flex-wrap:nowrap`).
+Tato vlastnost zarovnává ve svislém směru, a tak nemá pochopitelně vliv na jednořádkové flexboxové kontejnery, tedy prvky, kterým nastavíme deklaraci `flex-wrap:nowrap`.
 
 ## Jednoduchý příklad {#priklad}
 

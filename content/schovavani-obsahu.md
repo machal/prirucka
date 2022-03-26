@@ -33,7 +33,7 @@ Sem patří naprostá většina robotů: [SeznamBot](https://napoveda.seznam.cz/
 
 ### Stroje, které čtou DOM {#roboti-dom}
 
-Příkladem mohou být zejména [odečítače obrazovky](testovani-odecitace.md) pro zrakově hendikepované jako JAWS, NVDA a tak dále. Ke stránce mají přístup skrze běžné prohlížeče. Vidí tedy už hotový DOM zpracovaný Javascriptem. Pokud je mi známo, čtou i některé části CSS. Z pochopitelných důvodů ale nijak nehodnotí vizuální stránku webu. 
+Příkladem mohou být zejména [odečítače obrazovky](testovani-odecitace.md) pro zrakově handicapované jako JAWS, NVDA a tak dále. Ke stránce mají přístup skrze běžné prohlížeče. Vidí tedy už hotový DOM zpracovaný Javascriptem. Pokud je mi známo, čtou i některé části CSS. Z pochopitelných důvodů ale nijak nehodnotí vizuální stránku webu. 
 
 ### Stroje, které stránku „vidí“ {#roboti-vidi}
 

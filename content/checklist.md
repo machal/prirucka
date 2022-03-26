@@ -36,7 +36,7 @@ Obsah je král a HTML je jeho trůn. Tímhle musíme začít.
 
 ## Přístupnost {#pristupnost}
 
-Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, které jsme mohli nechtěně vytvořit uživatelům, a to ne jen těm hendikepovaným. Přístupnost se týká všech.  V obecné rovině je ošetřena normou WCAG. Projděte proto web a hledejte možné chyby podle standardu [„Web Content Accessibility Guidelines“ ve verzi 2.1](http://blindfriendly.cz/wcag20checklist/). Nastavte si střední přísnost, [úroveň AA](http://www.pristupnost.cz/jak-tvorit-pristupny-web/pravidla-pristupnosti/wcag/). Kontrolujte nástrojem [WAVE - Web Accessibility Evaluation Tool](https://wave.webaim.org/).
+Obsah už máme královsky vyladěný. Pojďme teď odstranit překážky, které jsme mohli nechtěně vytvořit uživatelům, a to ne jen těm handicapovaným. Přístupnost se týká všech.  V obecné rovině je ošetřena normou WCAG. Projděte proto web a hledejte možné chyby podle standardu [„Web Content Accessibility Guidelines“ ve verzi 2.1](http://blindfriendly.cz/wcag20checklist/). Nastavte si střední přísnost, [úroveň AA](http://www.pristupnost.cz/jak-tvorit-pristupny-web/pravidla-pristupnosti/wcag/). Kontrolujte nástrojem [WAVE - Web Accessibility Evaluation Tool](https://wave.webaim.org/).
 
 - Struktura dokumentu: WAI-ARIA oblasti a HTML5 elementy ★★★  
 <small>Správná struktura umožní zrakově postiženým strukturované procházení, což jim šetří čas. Stačí přidat „role“ pro navigaci, obsah a třeba vyhledávání. Více: [WAI-ARIA](wai-aria.md) a [HTML5 elementy](html5-struktura.md) na Vzhůru dolů.</small>

@@ -64,7 +64,7 @@ Chrome ale přišel s jednou novou vlastností, která se mi moc líbí.
 <figure>
 <img src="../dist/images/original/vdlayout/devtools-layout-ikony.jpg" width="1600" height="900" alt="Vizualizace vlastností flexboxu v DevTools Chrome">
 <figcaption markdown="1">
-Skoro jako WYSIWYG… Vizualizace a možnost přenastavení vlastností layoutu v Chrome.
+Skoro jako WYSIWYG… Vizualizace a možnost přenastavení vlastností layoutu v Chromu.
 </figcaption>
 </figure>
 
@@ -75,5 +75,5 @@ Těším se, co nám konkurence prohlížečů ještě v tomhle směru přinese,
 Zde jsou odkazy na texty představující tyto nástroje v jednotlivých prohlížečích:
 
 - „Firefox 52 for developers“. [vrdl.in/griddevfir](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/52)
-- „Chrome 87: What's New In DevTools“. [vrdl.in/griddevchr](https://developer.chrome.com/blog/new-in-devtools-87/)
+- „Chrome 87: What’s New In DevTools“. [vrdl.in/griddevchr](https://developer.chrome.com/blog/new-in-devtools-87/)
 - „WebKit: Introducing CSS grid Inspector“. [vrdl.in/griddevsaf](https://webkit.org/blog/11588/introducing-css-grid-inspector/)

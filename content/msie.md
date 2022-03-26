@@ -14,7 +14,7 @@ Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl
 
 ## Aktuální podíl MSIE mezi uživateli je v ČR mezi 1–2 %. A dál klesá
 
-Podívejte se na graf. Je z něj myslím jasné, že i v České republice bude možné Internet Explorer brzy přestat podporovat.
+Podívejte se na graf. Je z něj myslím jasné, že i v České republice bude brzy možné přestat Internet Explorer podporovat.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/msie-stats.jpg" width="1600" height="900" alt="Graf podílu prohlížečů pro MSIE, MS Edge, Firefox">
@@ -111,7 +111,7 @@ Z jeho textu, zmiňujícího mnoho inovací Exploreru, jsem vybral pár bodů, k
 <div class="ebook-only" markdown="1">
 
 1. Zlepšil práci s DOMem tím, že umožnil programový přístup ke každému prvku na stránce prostřednictvím `document.all`, což byl předchůdce `document.getElementById()`.
-2. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámů (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární, například pro vkládání komponent třetích stran jako je reklama nebo přehrávače videí z YouTube.
+2. Ve verzi 3 přidal Microsoft kromě tehdy populárních rámů (`<frame>`) také novou vlastní značku: `<iframe>` pro vnitřní rámy, dodnes velmi populární, například pro vkládání komponent třetích stran, jako je reklama nebo přehrávače videí z YouTube.
 3. Internet Explorer 3 byl také první prohlížeč, který vsadil na CSS. V té době totiž konkurenční společnost Netscape prosazovala alternativní návrh, JavaScript Style Sheets (JSSS).
 4. Často se zapomíná, že v Microsoftu nepřímo vymysleli Ajax. Zpracování XML na straně klienta bylo součástí implementace XMLHttpRequest, která byla poprvé představena jako součást rozšíření ActiveX v páté verzi Internet Exploreru.
 
@@ -127,7 +127,7 @@ Samozřejmě je nutné ještě přidat rok 2011, kdy Microsoft vymyslí a v Inte
 
 <div class="ebook-only" markdown="1">
 
-Nezmínil jsem zde rok 2011, kdy Microsoft implementoval CSS grid. Ale to už znáte z předchozí kapitoly.
+Nezmínil jsem zde rok 2011, kdy Microsoft implementoval CSS grid. Ale to už znáte z první kapitoly.
 
 </div>
 
