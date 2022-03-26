@@ -20,7 +20,7 @@ b) `place-item:end end`
 c) `place-self:end end`
 1. **Proč je vhodné používat pro mezery v layoutu gap?**  
 a) další chyták, tohle naopak vůbec vhodné není  
-b) nezapočítává se do rozměrů položek a je možné `gap` nastavit pro celý layout  
+b) protože je možné ji nastavit pro celý layout  
 c) je to kratší slovo než `margin`
 1. **Co udělá gap:normal v gridu a flexboxu?**  
 a) mezeru nulové šířky a výšky  

@@ -83,7 +83,7 @@ Potom tento kód…
 }
 ```
 
-… bude mít totožný zápis i po zásahu Autoprefixeru. Zápisem `last 1 version, >1%` jsme řekli, že budeme podporovat jen poslední verzi prohlížečů a takovou verzi, která má ve světě rozšíření více než jedno procento.
+… bude mít totožný zápis i po zásahu Autoprefixeru. Pomocí nastavení `last 1 version, >1%` jsme řekli, že budeme podporovat jen poslední verzi prohlížečů a takovou verzi, která má ve světě rozšíření více než jedno procento.
 
 Pojďme ale změnit zápis konfigurace takto:
 

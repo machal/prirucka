@@ -7,7 +7,7 @@
     09
   </div>  
   <div class="ebook-chapter-before-heading">
-    Související nástroje a vlastnosti
+    Související nástroje a vlastnosti
   </div>
 </div>
 
