@@ -6,4 +6,4 @@ Zvláštní poklonu věnuji Petru Jedinému Novotnému, jehož cit pro jazyk kni
 
 Ano, i tištěná verze této knihy vznikla s pomocí HTML, CSS a trošky Java&shy;Scriptu a PHP. Za tuto možnost děkuji autorům knihovny Paged.js, stejně tak jako těm, kteří pracují na nástroji Pandoc, jenž mi pomáhá tvořit elektronické verze knih.
 
-Knížka by v této podobě nevznikla nebýt podpory a trpělivosti mojí ženy a zvídavých dotazů a netrpělivosti mých synů. Jano, Honzo, Kubíku, díky!
+Knížka by v této podobě nevznikla nebýt podpory a trpělivosti mojí ženy a netrpělivosti mých synů. Jano, Honzo, Kubíku, díky!

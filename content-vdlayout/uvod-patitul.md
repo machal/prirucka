@@ -11,5 +11,7 @@
 Martin Michálek
 </div>
 
+<div class="patitul-logo"></div>
+
 </div>
 <!-- .imprint -->
