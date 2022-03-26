@@ -46,7 +46,7 @@ Zjednodušeně by se tahle jednotka dala přirovnat k procentům (`%`), je ale l
 
 <!-- AdSnippet -->
 
-Demo to ostatně ukáže v celé kráse. Máme dva kontejnery vysázené gridem, které mají tři vnitřní prvky. První layout je definován v procentech, druhý ve `fr`.
+Demo to ostatně ukáže v celé kráse. Máme dva kontejnery vysázené gridem, které mají tři vnitřní prvky. První layout je definován v procentech, druhý v jednotce `fr`.
 
 ```css
 .container-percentage {

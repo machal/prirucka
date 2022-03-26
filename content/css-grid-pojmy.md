@@ -183,10 +183,15 @@ Při definici mřížky, například [vlastnostmi `grid-template-rows/columns`](
 }
 ```
 
+<div class="pbi-avoid" markdown="1">
+
 Uvedený zápis zařídí následující:
 
 * Pojmenuje vodorovné linky jako `first`, `second` a `end`.
 * Mezi linkami definuje dva sloupce, první je `2fr` široký a druhý `1fr`.
+
+</div>
+<!-- .pbi-avoid -->
 
 Dostali jsme se díky tomu k dalšímu pojmu – sloupec mřížky. Než si jej rozebereme, musíme se seznámit s jiným pojmem – stopa mřížky.
 
@@ -251,12 +256,17 @@ V naší ukázce jsme pátou položku ručně umístili na místo páté a šest
 }
 ```
 
+<div class="pbi-avoid" markdown="1">
+
 Tento zápis přesně říká o umístění oblasti následující:
 
 * Svisle ji umisť mezi druhou a čtvrtou linku mřížky `grid-column:2/4`, čili na místo druhého a třetího sloupce.
 * Vodorovně ji umisť mezi druhou a třetí linku mřížky `grid-row:2/3`, čili do druhého řádku.
 
 CodePen: [vrdl.in/cuz72](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
+
+</div>
+<!-- .pbi-avoid -->
 
 ## Mezery mezi buňkami (gap, gutter) {#gutter}
 

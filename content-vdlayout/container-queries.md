@@ -148,6 +148,8 @@ HTML:
 </div>
 ```
 
+<div class="pbi-avoid" markdown="1">
+
 CSS:
 
 ```css
@@ -157,6 +159,9 @@ CSS:
   gap: 1em;
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 Pomocí [`display:grid`](css-display.md), vlastnosti [`grid-template-columns`](css-grid-template.md) a [`gap`](css-gap.md) definuji dvousloupcovou mřížku s mezerou mezi sloupci o šířce `1em`.
 

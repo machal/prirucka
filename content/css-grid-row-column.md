@@ -98,6 +98,8 @@ Vlastnosti grid-column a grid-row ve Firefoxu.
 
 CodePen: [vrdl.in/muo5r](https://codepen.io/machal/pen/YmZZVB?editors=1100)
 
+<div class="pbi-avoid" markdown="1">
+
 ### Jména linek {#jmena}
 
 Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše, jen s pojmenovanými linkami:
@@ -112,6 +114,9 @@ Podobná situace je u pojmenovaných linek. Máme stejný příklad jako výše,
     [first-row] 2rem [second-row] 2rem [third-row] 2rem [end];
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 Umísťujeme pak elegantně a o fous čitelněji:
 

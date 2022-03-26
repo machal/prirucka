@@ -109,6 +109,9 @@ CodePen: [vrdl.in/xhecq](https://codepen.io/machal/pen/qeZqbV?editors=1100)
 
 Rozměry položek vložených nad rámec počtu položek definovaných explicitním gridem, tedy vlastnostmi `grid-template-rows` a `grid-template-columns`, je možné určit vlastnostmi [`grid-auto-columns` a `grid-auto-rows`](css-grid-auto-rows-columns.md), které definují implicitní grid.
 
+<div class="pbi-avoid" markdown="1">
+
+
 ## Další možnosti zápisu gridu {#hodnoty}
 
 Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`, tedy na sloupce i řádky layoutu.
@@ -124,6 +127,9 @@ Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-colu
 | Masonry                | `masonry`                                |
 
 </div>
+
+</div>
+<!-- .pbi-avoid -->
 
 Další řadu možností nabízí [funkce `minmax()`](css-minmax.md) a související hodnoty pro nastavení šířky podle obsahu, jako je `min-content`, `max-content` nebo `fit-content`.
 

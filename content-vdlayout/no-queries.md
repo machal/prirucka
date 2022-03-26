@@ -205,11 +205,16 @@ Pojďme to ale trochu hacknout a použít pro naši mediální komponentu. HTML 
 }
 ```
 
+<div class="pbi-avoid" markdown="1">
+
 Vezměme do ruky lupu a podívejme se na tento kód pořádně:
 
 - `.item` – Možná jste zpozorněli už na řádku se selektorem. Ano, je to tak, CSS Multiple Column nám dovoluje definovat layout bez Queries už na úrovni rodičovského prvku.
 - `column-width:300px` – Tahle [vlastnost](css-multicol-columns.md) definuje doporučenou šířku sloupce, tedy položky layoutu, ale nijak neříká, kolik jich zde má být. Ideální věc pro bezdotazové rozvržení, jen nad ním tu lupu ještě chvíli podržte!
 - `column-gap:1rem` – [Vlastnost](css-gap.md) pro definici mezery mezi buňkami layoutu už asi znáte.
+
+</div>
+<!-- .pbi-avoid -->
 
 Na obrázku to bude vypadat takto:
 

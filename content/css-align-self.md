@@ -59,6 +59,8 @@ CSS pro deklaraci gridu a té naší specificky zarovnané poslední položky:
 }
 ```
 
+<div class="pbi-avoid" markdown="1">
+
 Stejně jako [u `justify-self`](css-justify-self.md) i tady zarovnáváme dvěma způsoby. Jednou dolů (`margin-top:auto`) a jednou nahoru (`align-self:start`). A opět platí – zarovnání pomocí vnějších okrajů zde má přednost navzdory kaskádě.
 
 <figure>
@@ -67,6 +69,9 @@ Stejně jako [u `justify-self`](css-justify-self.md) i tady zarovnáváme dvěma
 Vlastnost margin má přednost před align-self.
 </figcaption>
 </figure>
+
+</div>
+<!-- .pbi-avoid -->
 
 Vysvětleme:
 

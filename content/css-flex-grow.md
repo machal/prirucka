@@ -46,7 +46,9 @@ V interaktivní ukázce máme kontejner flexboxu (`display:flex`) a první polo�
 </figcaption>
 </figure>
 
-Druhé a třetí položce jsme nenastavili žádnou šířku. HTML vypadá následovně:
+Druhé a třetí položce jsme nenastavili žádnou šířku.
+
+HTML vypadá následovně:
 
 ```html
 <div class="container">

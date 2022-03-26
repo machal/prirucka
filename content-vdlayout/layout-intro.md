@@ -226,7 +226,7 @@ V HTML máme 15 položek seznamu, ale pro potřeby ukázky v knížce jsem si vy
     <li>Lorem ipsum dolor sit amet</li>
     <li>Consectetuer adipiscing elit</li>
     <li>Cum sociis natoque penatibus</li>
-    <!-- … -->
+    …
   </ul>
 </div>
 ```

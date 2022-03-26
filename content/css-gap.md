@@ -94,9 +94,7 @@ Je také pěkné si nastavit mezery mezi prvky v layoutu pro celý kontejner na 
 
 <!-- AdSnippet -->
 
-Je však samozřejmě možné a bezpečné zároveň nastavovat mezery pomocí vnějších i vnitřních okrajů prvku nebo případně `gap` s dvojkou `margin`/`padding` kombinovat. Toho se určitě nebojte.
-
-Jen si pak dejte pozor na interpretaci v prohlížečích, protože viditelná mezera vám naroste:
+Je však samozřejmě možné a bezpečné zároveň nastavovat mezery pomocí vnějších i vnitřních okrajů prvku nebo případně `gap` s dvojkou `margin`/`padding` kombinovat. Toho se určitě nebojte. Jen si pak dejte pozor na interpretaci v prohlížečích, protože viditelná mezera vám naroste:
 
 ```css
 .container {

@@ -70,6 +70,8 @@ Pakliže si chcete sami zkusit kódovat, teď je ta správná příležitost zav
 
 Čtenáři mezi vámi mohou pokračovat.
 
+<div class="pbi-avoid" markdown="1">
+
 ## Řešení příkladu
 
 Nejprve si napíšeme [Media Query](media-queries.md) a provedeme servisní nastavení:
@@ -82,6 +84,9 @@ Nejprve si napíšeme [Media Query](media-queries.md) a provedeme servisní nast
   }
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 Rodičovskému prvku `.container` jsme nastavili zobrazovací kontext pro [CSS grid](css-grid.md) a výšku na `100vh`, což je sto procent výšky viewportu (`vh` jako „viewport height“). Layout tak bude vždy roztažený v celém okně.
 
@@ -224,7 +229,6 @@ Ještě vám dlužím finální CSS kód. Nejprve definujeme grid:
 
 ```css
 @media screen and (min-width: 37.5em) {
-
   .container {
     display: grid;
     height: 100vh;
@@ -234,33 +238,32 @@ Ještě vám dlužím finální CSS kód. Nejprve definujeme grid:
       "foot foot" 5em
       / clamp(10em, 30%, 20em) 1fr;
   }    
-
 }  
 ```
+
+<div class="pbi-avoid" markdown="1">
 
 Nyní umístíme prvky do mřížky:
 
 ```css
-@media screen and (min-width: 37.5em) {
-  
+@media screen and (min-width: 37.5em) {  
   .head {
     grid-area: head;
-  }
-  
+  }  
   .main {
     grid-area: main;
-  }  
-  
+  }    
   .side {
     grid-area: side;
-  }    
-  
+  }      
   .foot {
     grid-area: foot;
   }      
-
 }  
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 CodePen: [vrdl.in/dljik](https://codepen.io/machal/pen/ppVzrg?editors=1100)
 

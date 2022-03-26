@@ -168,10 +168,8 @@ Druhou a třetí hodnotu z obrázku probereme hned v následující části.
 
 Ke všem možným metodám ovlivnění vykreslování boxíků na obrazovku musíme přidat i metody _nevykreslování_. K tomu slouží následující dvě hodnoty vlastnosti `display`.
 
-- `none`  
-Element ani jeho potomci se na obrazovku prostě nevykreslí.
-- `contents`  
-Element se na obrazovku nevykreslí, ale jeho potomci ano.
+- `none` – element ani jeho potomci se na obrazovku prostě nevykreslí.
+- `contents` – element se na obrazovku nevykreslí, ale jeho potomci ano.
 
 Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
 

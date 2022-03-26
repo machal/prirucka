@@ -135,6 +135,8 @@ Jenže v HTML máme šest a ne čtyři položky. A co víc – pátou a šestou 
 
 Prohlížeč nám při pokusu o umístění do třetího sloupce, tedy na pozici nedefinovanou explicitním gridem, grid rozšíří. Ale rozšíří jej mřížkou implicitní. Výchozí rozměry prvků nám tedy zřejmě nebudou vyhovovat.
 
+<div class="pbi-avoid" markdown="1">
+
 Opravíme to až touto deklarací:
 
 ```css
@@ -142,6 +144,9 @@ Opravíme to až touto deklarací:
   grid-auto-columns: 1fr;
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-auto-cols.jpg" width="1600" height="900" alt="grid-auto-columns">

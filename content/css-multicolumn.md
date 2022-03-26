@@ -160,7 +160,7 @@ Vícesloupcový layout má sice z trojice multi-column, flexbox a grid nejméně
 
 Je to už spíše teorie, ale pokud se ji naučíte, může vám to pomoci s pochopením téhle užitečné sady vlastností. Jiné metody rozložení v CSS jako flex nebo grid, pokud jsou použity na nadřazený prvek, mění vlastnosti zobrazení.
 
-Zvažme příklad z gridu. Při použití [vlastnosti `display`](css-display.md) s hodnotou `grid` se podřízené prvky ve DOMu stávají položkami mřížky a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
+Zvažme příklad z gridu. Při použití [vlastnosti `display`](css-display.md) s hodnotou `grid` se podřízené prvky z DOMu stávají položkami a umísťují se do definované mřížky. Hodnota `flex` dělá z vnitřních elementů položky flexboxu, které mají specifické chování.
 
 <!-- AdSnippet -->
 

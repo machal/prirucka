@@ -131,6 +131,8 @@ Podstatné na této ukázce je ale umístění oblastí do mřížky:
 
 Díky tomu, že jsem nejprve propojil elementy DOMu s oblastmi, nemusím nyní vůbec přemýšlet, jak vypadá moje HTML. Prostě umísťuji pojmenované oblasti do požadovaného rozvržení.
 
+<div class="pbi-avoid" markdown="1">
+
 ## Layout na středních displejích
 
 Pojďme rovnou na kód:
@@ -148,6 +150,9 @@ Pojďme rovnou na kód:
   }
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 Tady musíme poslední náhled „vypnout“ pomocí `display:none`. Grafický návrh nám to káže.
 

@@ -39,9 +39,7 @@ Naopak se málo ví, že stařičký MSIE nativně podporuje následující:
 - [Funkci `minmax()`](css-minmax.md).
 - Klíčová slova `min-content` a `max-content`.
 
-To myslím není zlé.
-
-Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“. Jejich příčinou je rychlá implementace gridu v rané fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, grid ale v Exploreru zůstal v původní variantě, protože se tento prohlížeč ve své době aktualizoval jen velmi pomalu.
+To myslím není zlé. Jen připomínám, že rozdíly nevznikly v nějakém microsoftím „týmu pro vytáčení webařů“. Jejich příčinou je rychlá implementace gridu v rané fázi specifikace týmem v Microsoftu. Specifikace se bohužel časem změnila, grid ale v Exploreru zůstal v původní variantě, protože se tento prohlížeč ve své době aktualizoval jen velmi pomalu.
 
 ## Třísloupcové demo aneb „Jak to kurnik šopa funguje?“ {#demo}
 
@@ -71,6 +69,8 @@ Teď to nejlepší. Tenhle kód nám Autoprefixer přeloží tak, aby v pohodě 
 
 Než se k tomu dostaneme, musím zmínit jednu nevýhodu.
 
+<div class="pbi-avoid" markdown="1">
+
 ### Proč layout zapisuji takhle složitě? Protože Autoprefixer
 
 <div class="book-index" data-book-index="Autoprefixer"></div>
@@ -78,6 +78,9 @@ Než se k tomu dostaneme, musím zmínit jednu nevýhodu.
 Vy znalejší jste si jistě všimli, že pro takto jednoduchý layout je zbytečné definovat šablonu pojmenování oblastí – `grid-template-areas`.
 
 To je ale oběť na oltář podpory v Internet Exploreru, respektive vyžaduje to po nás Autoprefixer.
+
+</div>
+<!-- .pbi-avoid -->
 
 Dalším kódem ještě musíme umístit sloupečky do pojmenovaných oblastí:
 
@@ -179,6 +182,8 @@ Následující vlastnost funguje, ale každý potomek gridu musí mít unikátn�
 
 Autoprefixer namísto `-gap` vygeneruje extra řádky nebo sloupečky. Fajn řešení, ne? Je ale důležité, abyste grid zapsali pomocí `grid-template-areas` a zároveň `grid-template-columns`.
 
+<div class="pbi-avoid" markdown="1">
+
 ### Neumí vůbec: Vlastnost grid a automatické umístění {#autoprefixer-vlastnosti-neumi}
 
 Tady máte zatím smůlu:
@@ -187,6 +192,9 @@ Tady máte zatím smůlu:
 - Automatické umístění: [`grid-auto-columns`, `grid-auto-rows`](css-grid-auto-rows-columns.md) nebo [`grid-auto-flow`](css-grid-auto-flow.md).
 
 Automatické umísťování ale u jednodušších layoutů udělat jde, jak za chvíli uvidíte.
+
+</div>
+<!-- .pbi-avoid -->
 
 <!-- AdSnippet -->
 

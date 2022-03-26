@@ -99,9 +99,14 @@ Určí polohu položky vzhledem ke kontejneru. (Ve specifikaci je používán po
 
 Týká se to už uvedených vlastností:
 
+<div class="pbi-avoid" markdown="1">
+
 - Zarovnání všech položek ([`justify-items`](css-justify-items.md), [`align-items`](css-align-items.md) a [`place-items`](css-place-items.md)).
 - Zarovnání samostatné položky ([`justify-self`](css-justify-self.md), [`align-self`](css-align-self.md) a [`place-self`](css-place-self.md)).
 - Distribuce obsahu ([`justify-content`](css-justify-content.md), [`align-content`](css-align-content.md) a [`place-content`](css-place-content.md)).
+
+</div>
+<!-- .pbi-avoid -->
 
 V obecné rovině můžeme použít tyto hodnoty:
 
@@ -272,10 +277,15 @@ Můžete použít tyto hodnoty:
 }
 ```
 
+<div class="pbi-avoid" markdown="1">
+
 Jdeme na vysvětlování:
 
 - Tím, že jsme omezili šířku položky na `100px`, vznikne při roztažení rodiče (`.container`) volné místo.
 - Jak se s volným místem vedle položek naloží, určí právě vlastnost `justify-content`. Hodnota `space-between` deklaruje, aby se volný prostor rovnoměrně rozpočítal do prostoru mezi položkami.
+
+</div>
+<!-- .pbi-avoid -->
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-box-alignment-teorie-prostor.jpg" width="1920" height="540" alt="Box Align zarovnání - zbylý prostor">
@@ -307,7 +317,7 @@ V případě hodnoty unsafe se použije poziční zarovnání. Alespoň teoretic
 </figcaption>
 </figure>
 
-V době dokončování textu (únor 2022) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C. Dřív to u moderních vlastnostní bylo pravidlem, dnes už naštěstí jen výjimkou.
+V době dokončování textu (únor 2022) se zdá, že naše milé prohlížeče se s implementací této vlastnosti úplně nepřetrhnou. Zatím tedy užitečná `overflow-position` zůstává jen „na papíře“ specifikace od W3C. Dřív to u moderních vlastnostní bylo pravidlem, dnes už naštěstí jen výjimkou, která možná potvrzuje nové pravidlo.
 
 ### Definování mezer mezi položkami {#gap}
 

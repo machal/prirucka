@@ -199,6 +199,9 @@ body {
 }
 ```
 
+<div class="pbi-avoid" markdown="1">
+
+
 Nyní definujeme typografii:
 
 ```css
@@ -212,6 +215,9 @@ h2 {
   margin-bottom: 0.5em;
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 Nakonec pružnou přizpůsobivost obrázku šířce rodiče:
 

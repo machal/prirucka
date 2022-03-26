@@ -36,7 +36,7 @@ Jake Archibald, jeden z mých oblíbených odborníků na výkon frontendových 
 
 Ptáte se proč? Jeden důvod je výkon, ale daleko důležitější jsou neměnné principy, jak flexbox rozvržení počítá.
 
-Mrkněme se spolu na demo, které k tomu připravil. Zde je společné HTML:
+Mrkněme se spolu na demo, které k tomu připravil. Zde je zjednodušené HTML:
 
 ```html
 <div class="container">
@@ -50,7 +50,6 @@ Mrkněme se spolu na demo, které k tomu připravil. Zde je společné HTML:
     <nav id="nav">
       <ul>
         <li><a href="#">Home</a></li>
-        <!-- … -->
       </ul>
     </nav>
     <aside>

@@ -132,8 +132,6 @@ Oblast definovaná jen pomocí linek. Takhle to ukazuje Firefox v DevTools.
 </figcaption>
 </figure>
 
-Následuje už jen ukázka v CodePenu.
-
 CodePen: [vrdl.in/s84n0](https://codepen.io/machal/pen/qBjrLwe?editors=1100)
 
 ## Výhody definování oblastí mřížky {#vyhody}

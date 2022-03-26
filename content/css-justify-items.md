@@ -111,9 +111,9 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 - `end`  
   Zarovnává všechny položky k hraně konce kontejneru.
 - `self-start`  
-  Zarovnává všechny položky k hraně začátku kontejneru, která odpovídá začátku předmětu.
+  Zarovnává položky k hraně začátku kontejneru (k začátku předmětu).
 - `self-end`  
-  Zarovnává všechny položky k hraně konce kontejneru, která odpovídá konci předmětu.
+  Zarovnává položky k hraně konce kontejneru (ke konci předmětu).
 - `flex-start`  
   Hodnota se chová jako `start`.
 - `flex-end`  
@@ -134,7 +134,7 @@ Vlastnosti `justify-items` můžete předávat všechny hodnoty z jednotlivých 
 - `baseline`  
   Zkratka pro `first baseline`.
 
-V době psaní funguje zarovnávání na účaří jen ve Firefoxu – můžete si to v něm zkusit na následující ukázce.
+V době psaní funguje zarovnávání na účaří jen ve Firefoxu.
 
 CodePen: [vrdl.in/1ge5c](https://codepen.io/mkfeuhrer/pen/ZEpGQqm?editors=1100)
 

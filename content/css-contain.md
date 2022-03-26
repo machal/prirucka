@@ -66,12 +66,8 @@ Vezměme jejich výpis ve stránce:
 
 ```html
 <h1>Výpis článků</h1>
-<article class="article">
-  <!-- … -->
-</article>
-<article class="article">
-  <!-- … -->
-</article>
+<article class="article"> … </article>
+<article class="article"> … </article>
 ```
 
 Prvků `.article` jsou zde alespoň desítky či stovky nebo mají poměrně složitou DOM strukturu uvnitř.

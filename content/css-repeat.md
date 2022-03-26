@@ -86,7 +86,7 @@ Je dobré vědět, že automatické opakování není možné křížit s funkc
 
 ### Příklad s auto-fill {#auto-fill}
 
-`auto-fill` bude při roztahování dostupného prostoru prioritizovat přidávání neviditelných buněk mřížky.
+`auto-fill` se snaží při roztahování prostoru přidávat neviditelné buňky.
 
 ```css
 .container {

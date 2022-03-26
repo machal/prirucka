@@ -142,6 +142,8 @@ Zahuštěné vykreslení (hodnota dense)  prostě dává přednost hustotě pře
 
 CodePen: [vrdl.in/2caxb](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
+<div class="pbi-avoid" markdown="1">
+
 ## Přístupnost: pozor na změnu pořadí {#pristupnost}
 
 <div class="book-index" data-book-index="Pořadí vykreslování"></div>
@@ -150,6 +152,9 @@ CodePen: [vrdl.in/2caxb](https://codepen.io/machal/pen/VoKroo?editors=1100)
 Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí.
 
 Pozor na to! Dokument pak může zlobit při navigaci z klávesnice nebo pro odečítače obrazovky. Snažte se proto tuto deklaraci používat jen pro prvky, u kterých na pořadí zase tak moc nezáleží.
+
+</div>
+<!-- .pbi-avoid -->
 
 <div class="web-only" markdown="1">
 

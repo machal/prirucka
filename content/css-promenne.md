@@ -257,7 +257,7 @@ Pojďme si ještě ukázat další příklady s funkcí `calc()`. Použít něja
 }  
 ```
 
-Psal jsem, že nám slučování hodnot neprojde. Slučování řetězců ale možné je:
+Psal jsem, že nám slučování hodnot neprojde. Slučování řetězců ale možné je:
 
 ```css
 .box {

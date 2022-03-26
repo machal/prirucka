@@ -11,9 +11,7 @@
 - [Vícesloupcový layout](css-multicolumn.md)
 </div>
 
-V tomto textu se podíváme na jednotlivé vlastnosti pro zarovnávání layoutů.
-
-Specifikace „Box Alignment Module Level 3“ v podstatě převzala všechna zarovnání a rozdělení prostoru definovaného ve flexboxu, něco přidala a zpřístupnila je ostatním systémům pro layout.
+V tomto textu se podíváme na jednotlivé vlastnosti pro zarovnávání layoutů. Specifikace „Box Alignment Module Level 3“ v podstatě převzala všechna zarovnání a rozdělení prostoru definovaného ve flexboxu, něco přidala a zpřístupnila je ostatním systémům pro layout.
 
 <!-- AdSnippet -->
 
@@ -21,9 +19,7 @@ Nijak se zde nezabýváme zarovnáváním textu (vlastnosti jako `text-align`, `
 
 ## Rychlý tahák k vlastnostem {#tahak}
 
-Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou hlavu opravdu hodně.
-
-Naštěstí jsou ale ty nejdůležitější z nich pojmenované podle jednoduchého klíče.
+Vlastností, které obstarávají zarovnávání v CSS, je na jednu webařskou hlavu opravdu hodně. Naštěstí jsou ale ty nejdůležitější z nich pojmenované podle jednoduchého klíče.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-box-alignment-tahak.jpg" alt="Tahák k CSS Box Alignment">
