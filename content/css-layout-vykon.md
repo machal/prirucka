@@ -42,12 +42,10 @@ Mrkněme se spolu na demo, které k tomu připravil. Zde je společné HTML:
 <div class="container">
   <div class="site-header">
     <div class="site-title">This is my site</div>
-    <!-- … -->
   </div>
   <div class="content">
     <div class="main">
       <h1>This is my article</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing…</p>
     </div>
     <nav id="nav">
       <ul>
@@ -62,9 +60,7 @@ Mrkněme se spolu na demo, které k tomu připravil. Zde je společné HTML:
 </div>
 ```
 
-Ano, jde o klasické třísloupcové rozvržení s obsahem uprostřed.
-
-Verze pro flexbox má toto CSS:
+Ano, jde o klasické třísloupcové rozvržení s obsahem uprostřed. Verze pro flexbox má toto CSS:
 
 ```css
 .container {

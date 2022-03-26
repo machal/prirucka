@@ -29,9 +29,9 @@ Jak už jsem psal, v naprosté většině případů definujeme mřížku jako e
 
 ```html
 <div class="container">
-  <p class="item">1</p>
-  <p class="item">2</p>
-  <p class="item">3</p>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
 </div>
 ```
 
@@ -48,10 +48,10 @@ Co se ale stane, když do DOMu přidáme čtvrtou položku?
 
 ```html
 <div class="container">
-  <p class="item">1</p>
-  <p class="item">2</p>
-  <p class="item">3</p>
-  <p class="item item--x">X</p>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item item--x">X</div>
 </div>
 ```
 
@@ -88,9 +88,9 @@ Tentokrát budeme drsní a žádnou explicitní mřížku definovat nebudeme. Jd
 
 ```html
 <div class="container">
-  <p class="item">1</p>
-  <p class="item">2</p>
-  <p class="item">3</p>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
 </div>
 ```
 

@@ -42,27 +42,18 @@ HTML jsem vymyslel takto:
 
 ```html
 <div class="container">
-  
   <header class="head">
     <h2>.head</h2>
-    <p>…</p>
   </header>
-  
   <main class="main">
     <h2>.main</h2>
-    <p>…</p>
   </main>
-
   <aside class="side">
     <h2>.side</h2>
-    <p>…</p>
-  </aside>    
-  
+  </aside>
   <footer class="foot">
     <h2>.foot</h2>
-    <p>…</p>
-  </footer>  
-  
+  </footer>
 </div>
 ```
 

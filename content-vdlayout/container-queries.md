@@ -102,7 +102,6 @@ Pojďme si to poskládat dohromady na konkrétním příkladu našeho „Media O
 }
 
 @container (min-width: 30em) {
-
   .item {
     display: flex;
   }  
@@ -114,7 +113,6 @@ Pojďme si to poskládat dohromady na konkrétním příkladu našeho „Media O
   .item-text {
     flex: 2;
   }
-  
 }  
 ```
 

@@ -57,18 +57,10 @@ Pojďme si to ukázat na jednoduchém demu postaveném na vlastnosti `order` a [
 
 ```html
 <div class="container">
-  <a class="item item--1" href="#">
-    Item 1
-  </a>
-  <a class="item item--2" href="#">
-    Item 2
-  </a>
-  <a class="item item--3" href="#">
-    Item 3
-  </a>  
-  <a class="item item--4" href="#">
-    Item 4
-  </a>
+  <a class="item item--1" href="#">Item 1</a>
+  <a class="item item--2" href="#">Item 2</a>
+  <a class="item item--3" href="#">Item 3</a>  
+  <a class="item item--4" href="#">Item 4</a>
 </div>
 ```
 
@@ -107,18 +99,10 @@ Někteří z vás si určitě řekli, že situaci může přeci zachránit vlast
 
 ```html
 <div class="container">
-  <a class="item item--1" href="#" tabindex="2">
-    Item 1
-  </a>
-  <a class="item item--2" href="#" tabindex="3">
-    Item 2
-  </a>
-  <a class="item item--3" href="#" tabindex="1">
-    Item 3
-  </a>  
-  <a class="item item--4" href="#" tabindex="4">
-    Item 4
-  </a>
+  <a class="item item--1" href="#" tabindex="2">Item 1</a>
+  <a class="item item--2" href="#" tabindex="3">Item 2</a>
+  <a class="item item--3" href="#" tabindex="1">Item 3</a>  
+  <a class="item item--4" href="#" tabindex="4">Item 4</a>
 </div>
 ```
 

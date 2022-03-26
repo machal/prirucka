@@ -26,9 +26,7 @@ Andreessen se snaží implementovat layout do svého prohlížeče Netscape Navi
 
 ```html
 <MULTICOL COLS="2">
-  <P>
-    The Hypertext Markup Language (HTML) is a markup language… 
-  </P>
+  <P>The Hypertext Markup Language (HTML) is a markup language… </P>
 </MULTICOL>
 ```
 

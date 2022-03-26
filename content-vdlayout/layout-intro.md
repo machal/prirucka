@@ -71,9 +71,9 @@ Začneme asi s HTML, což?
 
 ```html
 <figure class="figure">
-  <p class="figure-image">
+  <div class="figure-image">
     <img src="image.jpg" alt="…" width="300" height="300">
-  </p>
+  </div>
   <figcaption class="figure-figcaption">
     Lorem ipsum…
   </figcaption>
@@ -130,9 +130,7 @@ Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovn
 </figcaption>
 </figure>
 
-Vytvořili jsme rozvržení, kde prvek `figure-image` bude zabírat jednu třetinu šířky (`flex:1`) a prvek `figure-figcaption` vyplní zbylé dvě třetiny (`flex:2`).
-
-Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
+Vytvořili jsme rozvržení, kde prvek `figure-image` bude zabírat jednu třetinu šířky (`flex:1`) a prvek `figure-figcaption` vyplní zbylé dvě třetiny (`flex:2`). Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
 
 Zájemce nyní pošlu na zdrojové kódy ve službě CodePen, což ostatně budu dělat v knížce často.
 
@@ -148,18 +146,18 @@ Pojďme se podívat na zjednodušené HTML:
 
 ```html
 <div class="box">
-  <p class="box-image">
+  <div class="box-image">
     <img src="obrazek.jpg" alt="…">
-  </p>
-  <p class="box-text">
+  </div>
+  <div class="box-text">
     Lorem ipsum…
-  </p>
-  <p class="box-price">
+  </div>
+  <div class="box-price">
     Price:<br>
     <strong class="price">
       999 €
     </strong>
-  </p>
+  </div>
 </div>
 ```
 
@@ -225,15 +223,9 @@ V HTML máme 15 položek seznamu, ale pro potřeby ukázky v knížce jsem si vy
 ```html
 <div class="box">
   <ul>
-    <li>
-      Lorem ipsum dolor sit amet
-    </li>
-    <li>
-      Consectetuer adipiscing elit
-    </li>
-    <li>
-      Cum sociis natoque penatibus
-    </li>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetuer adipiscing elit</li>
+    <li>Cum sociis natoque penatibus</li>
     <!-- … -->
   </ul>
 </div>

@@ -6,11 +6,11 @@ Vysvětlíme si to na příkladu. Řekněme, že máme toto HTML:
 
 ```html
 <div class="container">
-  <p class="item">1</p>
-  <p class="item">2</p>
-  <p class="item">3</p>
-  <p class="item">4</p>
-  <p class="item item--five">5</p>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item item--five">5</div>
 </div>
 ```
 
@@ -72,7 +72,7 @@ Do této kategorie patří i třeba obrázky nebo takzvané *anonymní uzly*, co
 
 ```html
 <div class="container">
-  <p class="item">I'm an item</p>
+  <div class="item">I'm an item</div>
   <img src="img.jpg" width="300" height="200" alt="…">  
   I'm an item too
 </div>

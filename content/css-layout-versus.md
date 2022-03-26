@@ -59,12 +59,8 @@ Prvním frameworkem, který jsem v té době pro tyto účely využíval, byl Bl
 
 ```html
 <div class="container">
-  <div class="span-12">
-    První polovina
-  </div>
-  <div class="span-12">
-    Druhá polovina
-  </div>
+  <div class="span-12">První polovina</div>
+  <div class="span-12">Druhá polovina</div>
 </div>
 ```
 

@@ -80,10 +80,8 @@ V parametru `sizes` značky `<img>` je znalost `calc()` naprosto klíčová. Zku
 2. Na menších zabírá celou šířku viewportu bez vnějších okrajů stránky (15 pixelů).
 
 ```html
-<img
-  sizes="calc((100vw - 2 * 15px) / 2) - 10px), 
-         calc(100vw - 2 * 15px)"   
->
+<img sizes="calc((100vw - 2 * 15px) / 2) - 10px), 
+            calc(100vw - 2 * 15px)">
 ```
 
 Uznávám, že to vypadá docela složitě. Ale bez `calc()` byste layout stránky pro potřebu responzivních obrázků nedokázali popsat.

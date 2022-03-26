@@ -50,15 +50,9 @@ Druhé a třetí položce jsme nenastavili žádnou šířku. HTML vypadá násl
 
 ```html
 <div class="container">
-  <p class="box box--one">
-    <strong>Item 1<br>(styled)</strong>
-  </p>
-  <p class="box box--two">
-    <strong>Item 2</strong>
-  </p>
-  <p class="box box--three">
-    <strong>Item 3</strong>
-  </p>  
+  <p class="box box--one"><strong>Item 1<br>(styled)</strong></p>
+  <p class="box box--two"><strong>Item 2</strong></p>
+  <p class="box box--three"><strong>Item 3</strong></p>  
 </div>
 ```
 

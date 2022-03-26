@@ -111,9 +111,9 @@ HTML je následující:
 
 ```html
 <div class="container">
-  <p class="item">1</p>
-  <p class="item">2</p>
-  <p class="item item--head">Head</p>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item item--head">Head</div>
 </div>
 ```
 

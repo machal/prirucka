@@ -19,9 +19,9 @@ Nejprve si alespoň zjednodušeně připomeňme strukturu HTML, která drží na
 ```html
 <div class="container">
   <div class="item">
-    <p class="item-image">
+    <div class="item-image">
       <img>
-    </p>
+    </div>
     <div class="item-text">
       <h2> … </h2>
       <p> … </p>

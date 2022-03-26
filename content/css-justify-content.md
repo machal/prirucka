@@ -40,15 +40,9 @@ V naší ukázce definujeme třísloupcový kontejner gridu. Začneme s HTML:
 
 ```html
 <div class="container">
-  <div class="item item--1">
-    Item 1
-  </div>
-  <div class="item item--2">
-    Item 2
-  </div>
-  <div class="item item--3">
-    Item 3
-  </div>  
+  <div class="item item--1">Item 1</div>
+  <div class="item item--2">Item 2</div>
+  <div class="item item--3">Item 3</div>
 </div>
 ```
 

@@ -160,9 +160,9 @@ V prvé řadě potřebujeme nějaké HTML. Zjednodušeně vypadá takto:
 ```html
 <div class="container">
   <div class="item">
-    <p class="item-image">
+    <div class="item-image">
       <img src="…" alt="…" width="300" height="300">
-    </p>
+    </div>
     <div class="item-text">
       <h2>
         <a href="#">Nezůstane by péče položená…</a>

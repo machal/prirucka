@@ -43,26 +43,23 @@ Mám seznam položek, říkejme jim karty produktu. Každá má složitější s
 
 ```html
 <div class="container">
-
   <div class="item">
     <h2 class="item-heading">
       <a href="#">Lorem ipsum…</a>
     </h2>  
-    <p class="item-image">
+    <div class="item-image">
       <a href="#"><img src="image.jpg" alt="Image" width="300" height="200"></a>
-    </p>
-    <p class="item-perex">
+    </div>
+    <div class="item-perex">
       Lorem ipsum…
-    </p>
-    <p>
+    </div>
+    <div>
       <button>Více informací…</button>
-    </p>
-  </div>
-  
+    </div>
+  </div>  
   <div class="item">
     <!-- Další karta produktu -->
   </div>  
-  
 </div>
 ```
 

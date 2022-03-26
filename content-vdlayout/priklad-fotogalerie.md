@@ -26,18 +26,18 @@ HTML vypadá zhruba takto:
 
 ```html
 <div class="container">
-  <figure class="figure">
-    <img src="image.jpg" alt="…" width="300" height="300" class="figure-image">
-    <figcaption class="figure-caption">
+  <div class="gallery-item">
+    <img src="image.jpg" alt="…" class="gallery-item-image">
+    <p class="gallery-item-caption">
       <strong>Image 1</strong> Lorem ipsum dolor sit.
-    </figcaption>
-  </figure>
-  <figure class="figure">
-    <img src="image.jpg" alt="…" width="300" height="300" class="figure-image">
-    <figcaption class="figure-caption">
+    </p>
+  </div>
+  <div class="gallery-item">
+    <img src="image.jpg" alt="…" class="gallery-item-image">
+    <p class="gallery-item-caption">
       <strong>Image 2:</strong> Amet consectetur adipisicing elit. 
-    </figcaption>
-  </figure>
+    </p>
+  </div>
   <!-- Další fotografie… -->
 </div>
 ```
@@ -69,10 +69,10 @@ Vysvětlím to:
 - [Vlastností `columns`](css-multicol-columns.md), což je zkratka pro nastavení počtu sloupečků nebo jejich doporučené šířky, zde jako šířku nastavuji polovinu šířky sloupce.
 - S pomocí druhé vlastnosti, [`gap`](css-gap.md), nastavuji šířku mezi sloupečky. To už znáte.
 
-Chybí mi tady ještě jedna věc, a to zákaz zalomení uvnitř prvku `<figure>`, protože bychom velmi neradi viděli popisek z prvku `<figcaption>` mimo samotný obrázek, třeba hned na začátku následujícího sloupce:
+Chybí mi tady ještě jedna věc, a to zákaz zalomení uvnitř prvku `.gallery-item`, protože bychom velmi neradi viděli popisek z prvku `.gallery-item-caption` mimo samotný obrázek, třeba hned na začátku následujícího sloupce:
 
 ```css
-.figure {
+.gallery-item {
   break-inside: avoid;
 }
 ```

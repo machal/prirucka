@@ -31,12 +31,8 @@ HTML pro jeden prvek, jednu hromadu lívanců, jsme vymysleli následovně:
     <p>Lorem ipsum dolor sit…</p>
   </main>
   <footer class="box-foot">
-    <a href="#">
-      Upravit
-    </a>
-    <a href="#">
-      Smazat
-    </a>
+    <a href="#">Upravit</a>
+    <a href="#">Smazat</a>
   </footer>
 </div>
 ```

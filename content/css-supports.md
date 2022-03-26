@@ -234,15 +234,9 @@ Ukažme si problém s Explorerem ještě na jednom příkladu.
 
 ```html
 <div class="container">
-  <div class="item">
-    Item 1
-  </div>
-  <div class="item">
-    Item 2
-  </div>
-  <div class="item">
-    Item 3
-  </div>  
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
 </div>
 ```
 

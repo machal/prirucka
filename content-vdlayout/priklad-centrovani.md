@@ -22,9 +22,9 @@ Toto je výchozí HTML:
 
 ```html
 <div class="container">
-  <p class="item">
+  <div class="item">
     Jsem uprostřed!
-  </p>
+  </div>
 </div>
 ```
 
@@ -173,9 +173,9 @@ Předpokládáme tedy HTML tohoto typu:
 
 ```html
 <body>
-  <p class="item">
+  <div class="item">
     Jsem uprostřed!
-  </p>
+  </div>
 </body>
 ```
 

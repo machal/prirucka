@@ -1,8 +1,6 @@
 # Formulář pro vyhledávání
 
-V této ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkoušíme opět něco ze zarovnávání boxů ([CSS Box Alignment](css-box-alignment.md)) a oba systémy layoutu – [flexbox](css-flexbox.md) i [grid](css-grid.md).
-
-Zadání přichází s návrhovým vzorem, na který jednou narazí každá kodérka i každý kodér.
+V této ukázce zkusíme nakódovat jednoduchý vyhledávací formulář. Vyzkoušíme opět něco ze zarovnávání boxů ([CSS Box Alignment](css-box-alignment.md)) a oba systémy layoutu – [flexbox](css-flexbox.md) i [grid](css-grid.md). Zadání přichází s návrhovým vzorem, na který jednou narazí každá kodérka i každý kodér.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/priklad-vyhledavani-zadani.jpg" width="1600" height="900" alt="Příklad s vyhledáváním">
@@ -16,15 +14,11 @@ Jak asi vidíte, jde o vyhledávací formulář obsahující tři prvky – text
 HTML vypadá takto:
 
 ```html
-<form action="" class="form">
-  <label for="input" class="form__label">
-    Type&nbsp;here:  
-  </label>
+<form class="form">
+  <label for="input" class="form__label">Type here:</label>
   <input size="10" class="form__input" id="input"
      type="text" placeholder="Your text…">
-  <button class="form__button">
-    Search
-  </button>
+  <button class="form__button">Search</button>
 </form>
 ```
 
