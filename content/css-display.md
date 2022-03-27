@@ -175,7 +175,8 @@ Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen
 
 CodePen: [vrdl.in/u1cvt](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
 
-Podpora nezobrazení pomocí `none` je samozřejmě plná. Hodnotu `contents` zvládají všechny prohlížeče kromě Internet Exploreru, ale podle webu CanIUse je s ní spojeno několik chyb v prohlížečích vycházejících z jádra Chromium, které souvisejí s přístupností.  [caniuse.com](https://caniuse.com/css-display-contents)
+Podpora nezobrazení pomocí hodnoty `none` je samozřejmě plná. Hodnotu `contents` zvládají všechny prohlížeče kromě Internet Exploreru, ale podle webu CanIUse je s ní spojeno několik chyb v prohlížečích vycházejících z jádra Chromium, které souvisejí s přístupností.  
+[caniuse.com/css-display-contents](https://caniuse.com/css-display-contents)
 
 ## Typy zobrazení pro vnitřní rozvržení: hodnoty table- a ruby- {#table-ruby}
 

@@ -264,7 +264,7 @@ Z nějakého důvodu bychom ovšem v moderních prohlížečích chtěli použí
 }
 ```
 
-Je to samozřejmě naprosto schůdné, použijeme detekci pomocí `@supports`:
+Je to samozřejmě naprosto schůdné, použijeme detekci pomocí `@supports`, dotazu na vlastnosti:
 
 ```css
 @supports (display:grid) {

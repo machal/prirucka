@@ -38,7 +38,7 @@ Pokud chcete „peny“ zkoušet, což vám velmi doporučuji, udělejte prosím
 1. Zřiďte si na CodePenu účet. Je to zdarma a velmi jednoduché.
 2. Moje CodePeny si „forkněte“, čili uložte kopii do vlastního účtu.
 3. Responzivitu si emulujte v tomto rozložení a pohybem šoupátka ze strany na stranu.
-4. Upravujte kód dle libosti. Experimentujte. Snažte se ho vylepšit nebo rozbít.
+4. Upravujte kód dle libosti. Experimentujte. Snažte se ho vylepšit nebo rozbít.
 
 Takhle se naučíte nejvíc.
 

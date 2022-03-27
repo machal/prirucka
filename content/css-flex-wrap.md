@@ -93,7 +93,7 @@ CodePen: [vrdl.in/ngtf2](https://codepen.io/machal/pen/WNoNrbB?editors=0000)
 
 ## Nezalamuje hodnota wrap-reverse naopak?
 
-Všimněte si prosím chování hodnoty `wrap-reverse` – položky se vyskládají dle očekávání zdola, ale zleva doprava, nikoliv naopak, jak by mohl někdo očekávat.
+Všimněte si prosím chování hodnoty `wrap-reverse` – položky se vyskládají dle zdola, ale zleva doprava, nikoliv naopak, jak by mohl někdo očekávat.
 
 Dává to ale smysl. Hodnota `wrap-reverse` totiž zalamuje naopak. Poslední položka řádku skočí nahoru a zařadí se nad první položku.
 

@@ -14,7 +14,7 @@ Vlastnost `column-fill` umožňuje rozdělit obsah vícesloupcového rozložení
 
 </div>
 
-<div class="ebook-only" markdown="1">
+<div class="ebook-only mt-minus-1" markdown="1">
 
 → [vrdl.in/colf](https://www.vzhurudolu.cz/prirucka/css-multicol-fill)
 
