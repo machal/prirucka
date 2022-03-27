@@ -190,7 +190,7 @@ CodePen: [vrdl.in/sdlrj](https://codepen.io/machal/pen/jgrmoq?editors=1100)
 
 ## Podpora v prohlížečích {#podpora}
 
-Opět je zde jediná potíž: Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to nemusí být tak pro​ble​matické.
+Opět je zde jediná potíž: Internet Explorer 11, který `grid-template-areas` neumí. Už ale také víte, že [díky Autoprefixeru](css-grid-msie.md) to nemusí být tak neřešitelné.
 
 Moderní prohlížeče nemají s vlastností `grid-template-areas` žádný problém.
 

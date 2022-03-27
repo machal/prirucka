@@ -13,7 +13,7 @@ Obálka a spolupráce na grafice knihy: Petr Šťastný, [raist.cz](https://rais
 Spolupráce na webu: Jan Kočiš, [SUPERKODERS](https://superkoders.com/)  
 Foto autora: Oldřich Hrb, [oldrichhrb.cz](https://oldrichhrb.cz/)
 
-V knize jsou použitá písma Capita a Foro od Dietera Hofrichtera  
+V knize jsou použita písma Capita a Foro od Dietera Hofrichtera  
 ([hoftype.com](http://hoftype.com/)) a InconsolataGo od Rapha Leviena ([levien.com](https://levien.com/)).
 
 Tisk: PBtisk a.s.

@@ -69,7 +69,7 @@ Zde je ale samozřejmě potřeba zvážit možné negativní [vlivy na přístup
 
 Díky vlastnosti známé jako „autoplacement“ není nutné položkám gridu definovat, do kterých buněk mřížky je chceme umístit.
 
-Pokud totiž není definováno jinak, každý uzel DOMu, který je přímým potomkem kontejneru mřížky, se umístí do jedné buňky.
+Pokud to totiž není definováno jinak, každý uzel DOMu, který je přímým potomkem kontejneru mřížky, se umístí do jedné buňky.
 
 V našich podmínkách čteme zleva doprava a pak dolů. Položky se samozřejmě budou umísťovat ve stejném směru.
 
@@ -84,7 +84,7 @@ Pokud bychom snad chtěli změnit směr budování mřížky na shora dolů a pa
 
 ## 7) Oblasti mřížky
 
-Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-template-areas.md), velmi usnadňují definování layoutů a jejich přeskládávání v různých rozli​še​ních:
+Pojmenované oblasti, které definujeme s pomocí [`grid-template-areas`](grid-template-areas.md), velmi usnadňují stavbu layoutů a jejich přeskládávání v různých rozlišeních:
 
 ```css
 @media screen and (max-width: 37.49999em) {
@@ -127,7 +127,7 @@ Sečteno, podtrženo: CSS grid může být nástrojem, který k webu přitáhne 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-jen-simmons.jpg" width="1600" height="900" alt="THE EXPERIMENTAL LAYOUT LAB OF JEN SIMMONS">
 <figcaption markdown="1">
-The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a ne​otřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak.  
+The Experimental Layout Lab Of Jen Simmons: Přehlídka layoutových experimentů a také neotřelých rozvržení, jejíž homepage je udělaná v gridu. Jak jinak.  
 Zdroj: [labs.jensimmons.com](https://labs.jensimmons.com/).
 </figcaption>
 </figure>

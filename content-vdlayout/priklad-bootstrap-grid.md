@@ -136,7 +136,7 @@ CodePen: [vrdl.in/93bir](https://codepen.io/machal/pen/MWpzqdv?editors=1100)
 
 Určitě si umíte představit i možnou náhradu dalších variant používání layoutu v Bootstrapu, včetně responzivních tříd pro různě široké displeje.
 
-Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden Code&shy;Pen s dalšími ukázkami.
+Pokud takovou představivost nemáte, namíchal jsem pro vás ještě jeden velmi chutný CodePen s dalšími ukázkami.
 
 CodePen: [vrdl.in/e2f5h](https://codepen.io/machal/pen/dJxBGz?editors=1100)
 

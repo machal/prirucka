@@ -178,7 +178,7 @@ Existují dvě varianty:
 - *Masonry*  
 „JavaScript Grid Layout library“ je použitelná s jQuery nebo také s čistým JavaScriptem. Má spoustu možností nastavení. 24 kB dat po minifikaci, 8 kB po gzipu. [vrdl.in/mas](https://masonry.desandro.com/)
 - *Colcade*  
-Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny jako spojování sloupečků (multi-column-spanning) nebo přechody (transitions). [vrdl.in/colca](https://github.com/desandro/colcade)
+Jedna osmina velikosti Masonry. Na druhou stranu neumí některé funkce sesterské knihovny, jakými jsou třeba spojování sloupečků (multi-column-spanning) nebo přechody (transitions). [vrdl.in/colca](https://github.com/desandro/colcade)
 
 Další metody alternativního řešení zděného layoutu mají dvě věci společné. Na rozdíl od DeSandrova pluginu nepotřebují JavaScript. A řeší vždy jen část scénářů, pro které zděný layout vývojáři používají.
 

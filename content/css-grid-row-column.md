@@ -135,7 +135,7 @@ CodePen: [vrdl.in/xis4h](https://codepen.io/machal/pen/GVWrOB?editors=1100)
 
 <div class="book-index" data-book-index="span (rozsah v mřížce)"></div>
 
-Klíčové slovo `span` slouží ke specifikování rozsahu, jaký v mřížce daná buňka zabírá.
+Klíčové slovo `span` slouží k určení rozsahu, jaký v mřížce buňka zabírá.
 
 <!-- AdSnippet -->
 

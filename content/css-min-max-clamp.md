@@ -172,7 +172,7 @@ Velikost písma se bude s rozšiřováním okna zvětšovat od `1.5rem` až po `
 
 CodePen: [vrdl.in/crs5t](https://codepen.io/una/pen/ExyYXaN)
 
-Čtenář Dan Srb mi po vydání první verze tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
+Čtenář Dan Srb mi po publikování první verze tohoto textu na Vzhůru dolů poslal ještě jeden tip ke stupňovitému zvětšování písma:
 
 > Pokud chcete například zajistit, aby se od pětisetpixelové šířky viewportu začalo písmo zvětšovat z 1rem na 2rem až k hranici šířky viewportu 900px, pak je tu tahle kalkulačka na snadno zapamatovatelné adrese: [xgkft.csb.app](https://xgkft.csb.app/). (Lze použít např. i pro vlastnost padding.)
 

@@ -123,13 +123,18 @@ Jsou zde ale i další vědomosti, o kterých byste měli mít ponětí, než si
 
 CodePen: [vrdl.in/7yca0](https://codepen.io/machal/pen/JjXxVJy?editors=1100)
 
-## Ošemetná změna pořadí z pohledu přístupnosti {#pristupnost}
+<div class="pbi-avoid" markdown="1">
 
-<div class="book-index" data-book-index="Přístupnost"></div>
+## Ošemetná změna pořadí z pohledu přístupnosti {#pristupnost}
 
 Ve specifikaci se píše:
 
 > Autoři musí použít změnu pořadí pouze pro vizuální, nikoliv logické přeskupování obsahu.
+
+</div>
+<!-- .pbi-avoid -->
+
+<div class="book-index" data-book-index="Přístupnost"></div>
 
 Dává to smysl. Když pomocí vlastnosti `order` nebo jiným způsobem změníte pořadí prvku na obrazovce, nijak nezměníte pořadí logické, tedy způsob, jakým obsah konzumují roboti nebo jakým probíhá sekvenční navigace na stránce.  
 

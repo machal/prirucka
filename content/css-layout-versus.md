@@ -93,7 +93,7 @@ CSS grid nás nezbavuje nutnosti přepínat pozornost z HTML do CSS, ale řeší
 
 V knížce se proto pokusíme nahradit některé základní scénáře použití mřížky z Bootstrapu pomocí CSS gridu.
 
-Tímto tedy oficiálně zahajuji snahu vás přesvědčit, abyste nepoužívali složité frameworky a staré postupy na plnění jednoduchých cílů v kaskádových stylech.
+Tímto tedy oficiálně zahajuji snahu vás přesvědčit, abyste nepoužívali složité frameworky a staré postupy na plnění jednoduchých cílů.
 
 Možná, že to nebude snadné, ale společně to zvládneme. Ostatně – celá citace rozhovoru z úvodu této podkapitoly má znít následovně:
 

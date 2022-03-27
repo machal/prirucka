@@ -77,7 +77,7 @@ Příklad pozměníme:
 }
 ```
 
-Uvedený zápis asi opět nebude žádná velká věda, protože [zlomkovou jednotku `fr`](css-jednotka-fr.md) už známe.
+Uvedený zápis opět nebude žádná velká věda, protože [zlomkovou jednotku `fr`](css-jednotka-fr.md) už známe.
 
 - Všechny sloupečky si rovnoměrně rozdělí šířku na tři části.
 - První sloupeček se ale nikdy nezmenší pod `100px`. Důvodem je zápis `minmax(100px,1fr)`.

@@ -12,7 +12,7 @@ Velmi to záleží na cílové skupině konkrétního projektu, ale drtivá vět
 
 Toto je mé osobní rozloučení s prohlížečem, který do webdesignu přinesl mnoho dobrého. Ne, není to ironie. Jak brzy uvidíte, Explorer dříve stál na světlé straně Síly a možná vás překvapí, že to byl nejpokrokovější prohlížeč své doby.
 
-## Aktuální podíl MSIE mezi uživateli je v ČR mezi 1–2 %. A dál klesá
+## Aktuální podíl MSIE mezi uživateli je v Česku mezi 1–2 %. A dál klesá
 
 Podívejte se na graf. Je z něj myslím jasné, že i v České republice bude brzy možné přestat Internet Explorer podporovat.
 

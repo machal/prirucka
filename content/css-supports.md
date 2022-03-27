@@ -202,7 +202,7 @@ Pokud by vás tahle dnes už nechvalně známá praxe zajímala, píšou o ní h
 
 Brrr, úplně mi běhá mráz po zádech, když si představím, že v té době jsem nakódoval opravdu hodně webů. Jak bych byl tehdy za `@supports` vděčný!
 
-CSS hacky a dnes `@supports` jsou důležitou částí zásadní webařské techniky – postup&shy;ného vylep&shy;šování (Progressive Enhancement). Funguje asi takto:
+CSS hacky a dnes `@supports` jsou důležitou částí zásadní webařské techniky: postup&shy;ného vylep&shy;šování (Progressive Enhancement). Funguje asi takto:
 
 1. Vyrobíte základní řešení fungující ve všech prohlížečích.
 2. Nad tím postavíte lepší řešení fungující jen v některých prohlížečích.

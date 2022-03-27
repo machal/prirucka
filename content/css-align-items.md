@@ -26,7 +26,7 @@ Můžete také použít zkratku [`place-items`](css-place-items.md).
 
 </div>
 
-Nastavuje výchozí hodnotu `align-self` pro všechny položky uvnitř kontejneru.
+Nastavuje výchozí hodnotu `align-self` pro každou položku uvnitř kontejneru.
 
 Tuhle vlastnost není možné aplikovat na blokové elementy nebo na buňky tabulek, ale v gridu a flexboxu ji rozhodně využijete.
 
