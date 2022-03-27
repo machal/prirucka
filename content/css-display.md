@@ -171,7 +171,7 @@ Ke všem možným metodám ovlivnění vykreslování boxíků na obrazovku mus�
 - `none` – element ani jeho potomci se na obrazovku prostě nevykreslí.
 - `contents` – element se na obrazovku nevykreslí, ale jeho potomci ano.
 
-Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech prohlížečích.
+Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech dnešních prohlížečích.
 
 CodePen: [vrdl.in/u1cvt](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
 

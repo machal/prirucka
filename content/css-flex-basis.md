@@ -109,11 +109,7 @@ V druhém CodePenu jsme to zkomplikovali přidáním tohoto stylu:
 }
 ```
 
-Nejdříve se možná zkuste podle výše uvedeného zamyslet, co přesně se přidáním vlastnosti `width` změní.
-
-<!-- AdSnippet -->
-
-Tady je potřeba si uvědomit důležitou věc, kterou už jsem zmiňoval – `flex-basis` je nadřazená vlastnost k `width` nebo `height`. Takže i když máme `width` nastavenu později, a měla by tudíž přebít `flex-basis`, nestane se tak.
+Nejdříve se možná zkuste podle výše uvedeného zamyslet, co přesně se přidáním vlastnosti `width` změní. Tady je totiž potřeba si uvědomit důležitou věc, kterou už jsem zmiňoval – `flex-basis` je nadřazená vlastnost k `width` nebo `height`. Takže i když máme `width` nastavenu později, a měla by tudíž přebít `flex-basis`, nestane se tak.
 
 <figure>
 <img src="../dist/images/original/vdlayout/css-flex-basis-width.jpg" width="1600" height="900" alt="CSS vlastnost flex-basis a width">

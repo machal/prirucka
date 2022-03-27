@@ -130,7 +130,7 @@ Máme rozvržení, ale to ještě nezná své rozměry. Zapíšeme je následovn
 </figcaption>
 </figure>
 
-Vytvořili jsme rozvržení, kde prvek `figure-image` bude zabírat jednu třetinu šířky (`flex:1`) a prvek `figure-figcaption` vyplní zbylé dvě třetiny (`flex:2`). Tento layout by se dal ještě dále vylepšovat, například o variantu pro menší displeje. Nicméně jako první demonstrační ukázka knížky je to myslím dostačující.
+Vytvořili jsme rozvržení, kde prvek `figure-image` bude zabírat jednu třetinu šířky (`flex:1`) a prvek `figure-figcaption` vyplní zbylé dvě třetiny (`flex:2`). Tento layout by se dal ještě vylepšovat, například o variantu pro menší displeje. Nicméně jako první ukázka knížky je to myslím dostačující.
 
 Zájemce nyní pošlu na zdrojové kódy ve službě CodePen, což ostatně budu dělat v knížce často.
 
@@ -231,7 +231,7 @@ V HTML máme 15 položek seznamu, ale pro potřeby ukázky v knížce jsem si vy
 </div>
 ```
 
-S pomocí flexboxu ani gridu bychom zde neuspěli, protože pro rozdělení do sloupců bychom museli mezi jednotlivé `<li>` vkládat prvky jako `<div>`, které by layout nesly.
+S pomocí flexboxu ani gridu bychom zde neuspěli. Pro rozdělení do sloupců bychom museli mezi `<li>` vkládat prvky `<div>`, které by layout nesly.
 
 Navíc bychom zde s pomocí těchto dvou typů rozvržení nebyli schopni snadno dosáhnout automatického generování vhodného počtu sloupečků. Layout bychom prostě museli doslovně definovat.
 

@@ -111,10 +111,9 @@ Rozměry položek vložených nad rámec počtu položek definovaných explicitn
 
 <div class="pbi-avoid" markdown="1">
 
-
 ## Další možnosti zápisu gridu {#hodnoty}
 
-Hodnoty v následující tabulce je možné aplikovat jak na `grid-template-columns`, tak na `grid-template-rows`, tedy na sloupce i řádky layoutu.
+Hodnoty v následující tabulce je možné aplikovat jak na vlastnost `grid-template-columns`, tak na její sestru `grid-template-rows`, tedy na sloupce i řádky layoutu.
 
 <div class="rwd-scrollable f-6"  markdown="1">
 

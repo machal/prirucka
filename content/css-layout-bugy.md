@@ -147,9 +147,7 @@ Zbývající tři boty má na svědomí Internet Explorer 10 a ten už dávno vy
 
 ## Grid {#grid}
 
-V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů:
-
-Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří mají smůlu.
+V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit na dvě skupiny vývojářek a vývojářů: Na ty, kteří nemusí Internet Explorer 11 podporovat. A pak na ty, kteří mají smůlu.
 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-caniuse.jpg" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">

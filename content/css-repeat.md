@@ -88,11 +88,16 @@ Je dobré vědět, že automatické opakování není možné křížit s funkc
 
 `auto-fill` se snaží při roztahování prostoru přidávat neviditelné buňky.
 
+<div class="pbi-avoid" markdown="1">
+
 ```css
 .container {
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 CodePen: [vrdl.in/lx9fc](https://codepen.io/machal/pen/NWKzjoV?editors=1100)
 

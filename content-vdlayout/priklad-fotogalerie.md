@@ -19,8 +19,10 @@ Zadání je následující:
 - Maximální šířka jedné fotky je `300px`.
 - Fotky mají popisky, které se mohou roztáhnout do více řádků.
 - Mezera mezi jednotlivými sloupci layoutu má šířku `1rem`.
-- Připravte kód tak, aby jednotlivé náhledy co nejpravidelněji vyplnily prostor na výšku i šířku.
+- Fotky musí co nejpravidelněji vyplnit prostor na výšku i šířku.
 - Nepoužijte přitom Media Queries.
+
+<div class="pbi-avoid" markdown="1">
 
 HTML vypadá zhruba takto:
 
@@ -38,9 +40,12 @@ HTML vypadá zhruba takto:
       <strong>Image 2:</strong> Amet consectetur adipisicing elit. 
     </p>
   </div>
-  <!-- Další fotografie… -->
+  …
 </div>
 ```
+
+</div>
+<!-- .pbi-avoid -->
 
 <div class="colored-box" markdown="1">
 
@@ -123,9 +128,14 @@ Položky jsou srovnané do řádků a je možné je číst zleva doprava. Nevýh
 
 Udělat pěknou mřížku, bez vynechaných položek, tedy například 2 × 6, 3 × 4 apod., je samozřejmě s gridem možné, jen bychom to museli specifikovat přesněji s pomocí Media Queries.
 
+<div class="pbi-avoid" markdown="1">
+
 Ještě odkaz na CodePen s řešením využívajícím grid a můžeme to uzavřít.
 
 CodePen: [vrdl.in/b2o1u](https://codepen.io/machal/pen/LYyydoZ?editors=1100)
+
+</div>
+<!-- .pbi-avoid -->
 
 ## Co jsme se tady naučili?
 

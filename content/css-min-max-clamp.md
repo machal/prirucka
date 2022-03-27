@@ -152,9 +152,7 @@ Toto můžeme krásně definovat právě pomocí porovnávací funkce:
 }
 ```
 
-Prvek `.card` bude zabírat `50%` šířky rodiče, ale nikdy méně než `45ch` a více než `75ch`.
-
-Pokud to nevíte, jednotka `ch` v sobě obsahuje šířku znaku `0`, což se považuje za průměrnou šířku znaku.
+Prvek `.card` bude zabírat `50%` šířky rodiče, ale nikdy méně než `45ch` a více než `75ch`. Pokud to nevíte, jednotka `ch` v sobě obsahuje šířku znaku `0`, což se považuje za průměrnou šířku znaku.
 
 CodePen: [vrdl.in/2q9xo](https://codepen.io/una/pen/QWyLxaL)
 
