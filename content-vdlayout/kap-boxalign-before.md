@@ -1,13 +1,13 @@
 <div id="kap-boxalign-before" class="ebook-chapter-before ebook-chapter-before-boxalign" markdown="1"> 
 
-# Kapitola 7: Zarovnávání boxů (CSS Box Alignment)
+# Kapitola 7: Zarovnávání boxů
 
 <div class="ebook-chapter-before-image">
   <div class="ebook-chapter-before-number">
     07
   </div>  
   <div class="ebook-chapter-before-heading">
-    Zarovnávání boxů (CSS Box Alignment)
+    Zarovnávání boxů
   </div>
 </div>
 

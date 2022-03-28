@@ -44,7 +44,7 @@ Přesně tohle by se vám stalo i při seznamování s našimi layouty. Když ř
 <div class="book-index" data-book-index="Box Align"></div>
 <div class="book-index" data-book-index="Zarovnání boxů"></div>
 
-„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md). Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je [`justify-items`](css-justify-items.md) (zarovnání položek na hlavní ose) nebo [`align-self`](css-align-self.md) (zarovnání položky na příčné ose), se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí. Ale všeho dočasu. I těmto vlastnostem se budeme detailně věnovat.
+„CSS Box Alignment“, což je plný název podle specifikace, rozebereme [v sedmé kapitole](css-box-alignment.md). Obstarává celý aparát zarovnávání boxíků v rozvrženích. Bez zarovnání boxů a vlastností, jako je [`justify-items`](css-justify-items.md) (zarovnání položek na hlavní ose) nebo [`align-self`](css-align-self.md) (zarovnání položky na příčné ose), se systémy layoutu (a hlavně flexbox a grid) neobejdou a na rande samy nevyrazí. Ale všeho dočasu. I těmto vlastnostem se budeme detailně věnovat.
 
 ## Pojďme si je otestovat
 

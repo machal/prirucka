@@ -84,9 +84,7 @@ V příkladu jsem za vás pomocí [Media Queries](media-queries.md) definoval dv
 
 ```css
 @media (max-width: 24.9999em) { }
-
 @media (min-width: 25em) and (max-width: 43.7499em) { }
-
 @media (min-width: 43.75em) { }
 ```
 
