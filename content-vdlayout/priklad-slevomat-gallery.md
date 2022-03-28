@@ -179,7 +179,7 @@ Nyní k největšímu breakpointu. CSS kód vypadá takto:
 
 Máme zde mřížku 2 × 3, dělenou na pětiny. Umístění oblastí do buněk gridu je asi zřejmé. V případě potřeby si je porovnejte s rozvržením z obrázků.
 
-<figure class="figure-thirds">
+<figure>
 <img src="../dist/images/original/vdlayout/priklad-slevomat-firefox.jpg" width="1600" height="900" alt="Responzivní fotogalerie na Slevomat.cz - Firefox">
 <figcaption markdown="1">
 *Vizualizace mřížky a jejích oblastí ve Firefoxu.*

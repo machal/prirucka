@@ -159,7 +159,7 @@ Metoda `CSS.supports()` vrací hodnotu `true` nebo `false` určující, zda proh
 
 Toto jsou možné zápisy:
 
-```javascript
+```js
 result = CSS.supports("grid-template-rows", "masonry");
 result = CSS.supports("display: grid");
 result = CSS.supports("(--foo: red)");
