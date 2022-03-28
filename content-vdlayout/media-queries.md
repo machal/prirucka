@@ -129,6 +129,8 @@ Anatomie Media Query.
 
 ## Chcete vědět více?
 
+<div class="book-index" data-book-index="Responzivní design"></div>
+
 Získané dovednosti nám pro potřeby knížky a návrhu prvních layoutů zcela dostačují. Ovládnutí dotazů na média je však zcela nepostradatelná dovednost, každý profesionální webový vývojář i webová vývojářka píší Media Queries prakticky denně. Proto zde nabízím odkazy na další zdroje, pokud by vám tento rychlý úvod nestačil.
 
 - Stránka o Media Queries na Vzhůru dolů: [vrdl.in/cssmq](https://www.vzhurudolu.cz/prirucka/css3-media-queries)

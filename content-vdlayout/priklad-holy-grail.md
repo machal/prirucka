@@ -1,5 +1,7 @@
 # Svatý grál mezi layouty
 
+<div class="book-index" data-book-index="Svatý grál"></div>
+
 V tomto speciálním příkladu ze světa známých rozvržení začneme citací z Wikipedie:
 
 > Jako svatý grál bývají označovány nedosažitelné předměty nebo myšlenky, které se snaží člověk vyzkoumat nebo rozluštit, čímž by měl dosáhnout zásadního pokroku.

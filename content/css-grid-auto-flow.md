@@ -146,7 +146,7 @@ CodePen: [vrdl.in/2caxb](https://codepen.io/machal/pen/VoKroo?editors=1100)
 
 ## Přístupnost: pozor na změnu pořadí {#pristupnost}
 
-<div class="book-index" data-book-index="Pořadí vykreslování"></div>
+<div class="book-index" data-book-index="Pořadí v layoutu"></div>
 <div class="book-index" data-book-index="Přístupnost"></div>
 
 Pomocí deklarace `grid-auto-flow:dense` může automatika prohlížeče odlišit pořadí prvků v kódu od vizuálního pořadí.
