@@ -38,7 +38,7 @@ Její CSS kód nám říká, že barva „tlačítková zelená“ nepůjde se z
 
 Začneme se kroutit (a někteří hroutit), protože už zase přišla ta chvíle, kdy si pokazíme komponentový přístup, dosud čistý jako studánku.
 
-CodePen: [cdpn.io/e/JmdRaa](https://codepen.io/machal/pen/JmdRaa?editors=1100).
+CodePen: [cdpn.io/e/JmdRaa](https://codepen.io/machal/pen/JmdRaa?editors=1100)
 
 ## Komponentový přístup {#komponenty}
 

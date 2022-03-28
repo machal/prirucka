@@ -66,7 +66,7 @@ Podobně jako u značky `<picture>` bychom i tady mohli prohlížeči nabídnout
 
 … kdyby to ovšem podporoval ještě jiný prohlížeč než Firefox.
 
-Více je možné vidět [v CodePenu](https://codepen.io/machal/pen/ZELPqNY?editors=1100).
+Více je možné vidět [v CodePenu](https://codepen.io/machal/pen/ZELPqNY?editors=1100)
 
 ### Kombinace obrázků s generovaným pozadím 
 

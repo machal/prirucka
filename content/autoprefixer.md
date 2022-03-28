@@ -112,7 +112,7 @@ Pokud si chcete jen hrát nebo přidat pár prefixů, zajděte na online pískov
 
 ### Příkazová řádka {#pouziti-cli}
 
-Využijte balíček postcss-cli. [vrdl.in/96mcu](https://github.com/postcss/postcss-cli).
+Využijte balíček postcss-cli. [vrdl.in/96mcu](https://github.com/postcss/postcss-cli)
 
 ```terminal
 npm install postcss-cli autoprefixer

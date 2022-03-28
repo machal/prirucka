@@ -18,7 +18,7 @@ Přidává se tady ale ještě nová [jednotka `fr`](css-jednotka-fr.md) (*fract
 <img src="../dist/images/original/vdlayout/grid-fr-unit.jpg" width="1920" height="540"  alt="Jednotka fr - podíl na zbytku v CSS gridu">
 <figcaption markdown="1">
 Kombinovat můžeme opravdu silně. První sloupec definujeme ve fixních pixelech, druhý v jednotce em odvozené z velikosti písma. Zbytek plochy rozdělíme podílovou jednotkou fr.  
-Zdroj: [vrdl.in/jhfwd](https://codepen.io/machal/pen/XWrjZRV?editors=1100).
+Zdroj: [vrdl.in/jhfwd](https://codepen.io/machal/pen/XWrjZRV?editors=1100)
 </figcaption>
 </figure>
 

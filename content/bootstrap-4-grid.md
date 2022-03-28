@@ -266,7 +266,8 @@ Vychází to z vlastností flexboxového kontejneru [`align-items`](css3-flexbox
   <div class="col-3 align-self-end"> <!-- … --> </div>
 </div>
 ```
-Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdpn.io/XMPGjv](https://codepen.io/machal/pen/XMPGjv?editors=1100).
+
+Všechny sloupce layoutu jsou na svislé ose zarovnané doprostřed (`.align-items-center`). Jen tomu poslednímu jsme dopřáli výjimku. Je zarovnaný dole, ke konci svislé osy layoutu (`.align-self-end`). [cdpn.io/XMPGjv](https://codepen.io/machal/pen/XMPGjv?editors=1100)
 
 <!-- AdSnippet -->
 

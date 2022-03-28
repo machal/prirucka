@@ -8,7 +8,7 @@ Díky, že jste jí věnovali svůj čas, a jsem napjatý, co na ni říkáte. B
 
 Dáte mi prosím zpětnou vazbu? Pomůže mi vylepšovat knížku v dalších verzích, přinejmenším v případě e-booku. Menší aktualizace dostanou všichni čtenáři zdarma.
 
-Váš názor si přečtu moc rád. Vyplňte dotazník spokojenosti (zabere jen pět minut a je to možné udělat i anonymně): [vrdl.in/laydot](https://forms.gle/GH8pCaSjNADoSZ4cA)
+Váš názor si přečtu moc rád. Vyplňte dotazník spokojenosti (zabere jen pět minut a je to možné udělat i anonymně). [vrdl.in/laydot](https://forms.gle/GH8pCaSjNADoSZ4cA).
 
 ### Líbila se vám knížka?
 

@@ -50,7 +50,7 @@ Hodnota `span 4` znamená:
 
 Podívejte se na to ještě v CodePenu:
 
-CodePen: [vrdl.in/i2fpw](https://codepen.io/machal/pen/vzxYYN?editors=1100).
+CodePen: [vrdl.in/i2fpw](https://codepen.io/machal/pen/vzxYYN?editors=1100)
 
 ## 2) Pojmenované oblasti {#2}
 
@@ -90,11 +90,11 @@ Asi se hodí připomenout i jinou milou věc: gridu už pak moc nezáleží, kde
 
 A je hotovo:
 
-Odkaz na CodePen: [vrdl.in/dljik](https://codepen.io/machal/pen/ppVzrg?editors=1100).
+Odkaz na CodePen: [vrdl.in/dljik](https://codepen.io/machal/pen/ppVzrg?editors=1100)
 
 ## 3) Umísťování prvků podle vzhledu, ne podle pořadí {#3}
 
-Tady se podívejme nejprve na CodePen: [vrdl.in/7x0gv](https://codepen.io/machal/pen/NMyjpb?editors=1100).
+Tady se podívejme nejprve na CodePen: [vrdl.in/7x0gv](https://codepen.io/machal/pen/NMyjpb?editors=1100)
 
 Zvětšujte a zmenšujte si šířku části „Result“ a všimněte si, jak černá položka mění pořadí. Někdy je čtvrtá, někdy pátá.
 
@@ -123,7 +123,7 @@ Hned si to vysvětíme:
 - [Funkce `minmax()`](css-minmax.md) definuje šířku položky mezi určitými hranicemi.
 - `1fr` je [„fraction unit“](css-jednotka-fr.md). Je to v principu totéž jako „bezjednotkové“ míry ve flexboxu – například `flex:1`.
 
-CodePen: [vrdl.in/7x0gv](https://codepen.io/machal/pen/NMyjpb?editors=1100).
+CodePen: [vrdl.in/7x0gv](https://codepen.io/machal/pen/NMyjpb?editors=1100)
 
 ## 4) Náhradní řešení se @supports {#4}
 
@@ -157,7 +157,7 @@ Hotovo. Nějaký layout se teď zobrazí v prohlížečích s podporou gridu i b
 
 Celá ukázka:
 
-CodePen: [vrdl.in/nt2bs](https://codepen.io/machal/pen/NLpWXY?editors=1100).
+CodePen: [vrdl.in/nt2bs](https://codepen.io/machal/pen/NLpWXY?editors=1100)
 
 Takhle půjde udělat spousta fallbacků pro naše řešení s gridem. Takže se nebojte a začněte ho směle používat.
 

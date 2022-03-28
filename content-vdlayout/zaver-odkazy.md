@@ -37,7 +37,7 @@ Pokud ještě nemáte kód pro psaní layoutů v hlavě, zkuste použít generá
 
 ## CSS-Tricks
 
-CSS-Tricks je asi nejlepší zdroj jednoduchých příruček k CSS vlastnostem v angličtině.
+Magazín Chrise Coyiera je asi nejlepší zdroj jednoduchých příruček k CSS vlastnostem v angličtině.
 
 - CSS-Tricks: A Complete Guide to Flexbox: [vrdl.in/csstf](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - CSS-Tricks: A Complete Guide to Grid: [vrdl.in/csstg](https://css-tricks.com/snippets/css/complete-guide-grid/)

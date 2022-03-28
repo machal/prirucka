@@ -263,7 +263,7 @@ Tento zápis přesně říká o umístění oblasti následující:
 * Svisle ji umisť mezi druhou a čtvrtou linku mřížky `grid-column:2/4`, čili na místo druhého a třetího sloupce.
 * Vodorovně ji umisť mezi druhou a třetí linku mřížky `grid-row:2/3`, čili do druhého řádku.
 
-CodePen: [vrdl.in/cuz72](https://codepen.io/machal/pen/NWxqNYB?editors=1100)
+Ukázku uvidíte v CodePenu výše.
 
 </div>
 <!-- .pbi-avoid -->

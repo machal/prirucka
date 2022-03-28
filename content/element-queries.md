@@ -81,7 +81,7 @@ Tab Atkins v odkazovaném článku zmiňuje jinou cestu: pro komponenty použít
 
 <!-- AdSnippet -->
 
-Stejně je na tom [SVG](svg.md) vložené do dokumentu externě, například pomocí `<img>` značky. I tamní Media Queries se odkazují k elementu samotnému, nikoliv celému dokumentu. [SVG už taky umí Element Queries](https://codepen.io/machal/pen/zZKzRe?editors=1100). Zásah. 
+Stejně je na tom [SVG](svg.md) vložené do dokumentu externě, například pomocí `<img>` značky. I tamní Media Queries se odkazují k elementu samotnému, nikoliv celému dokumentu. [SVG už taky umí Element Queries](https://codepen.io/machal/pen/zZKzRe?editors=1100). Zásah.
 
 Jenže u dnešního `<iframe>` ani externího SVG nepotřebuje prohlížeč čekat na jejich obsah ani styly. Vykreslí si rodičovský dokument a po čase nějak došudlá obsah „ajfrejmů“ a externích vektorových dokumentů.
 

@@ -194,7 +194,7 @@ Prostě vytvoří nejmenší možný rozsah rozměrů všech obsahů dotčených
 }
 ```
 
-CodePen: [vrdl.in/81hou](https://codepen.io/machal/pen/NWKZyrY?editors=1100).
+CodePen: [vrdl.in/81hou](https://codepen.io/machal/pen/NWKZyrY?editors=1100)
 
 V CSS gridu se `fit-content` používá s parametrem:
 
@@ -208,7 +208,7 @@ Takový zápis říká, aby prohlížeč zařídil šířku prvního sloupce vž
 
 `fit-content()` se tedy počítá jako `minmax(auto,max-content)` s tím, že hodnota v argumentu funkce slouží jako zarážka pro maximální rozměr, pokud je větší než minimum.
 
-CodePen: [vrdl.in/76h4a](https://codepen.io/machal/pen/GRKbQom?editors=1100).
+CodePen: [vrdl.in/76h4a](https://codepen.io/machal/pen/GRKbQom?editors=1100)
 
 Může vás také zajímat, jak to funguje s obrázky a jejich vnitřními nastaveními minima a maxima.
 
@@ -234,7 +234,7 @@ Následuje tedy ještě jedna ukázka, vycházející z dřívějšího CodePenu
 
 Funguje to dobře. I přes to, že obrázek má nastavenou šířku 400 pixelů, v layoutu si drží maximální šířku definovanou v kaskádových stylech pomocí `fit-content(200px)`.
 
-CodePen: [vrdl.in/rbv3o](https://codepen.io/machal/pen/JjPQpYj?editors=1100).
+CodePen: [vrdl.in/rbv3o](https://codepen.io/machal/pen/JjPQpYj?editors=1100)
 
 ## Co když… Pár specifičností zápisu minmax() {#co-kdyz}
 

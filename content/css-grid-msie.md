@@ -45,7 +45,7 @@ To myslím není zlé. Jen připomínám, že rozdíly nevznikly v nějakém mic
 
 Podívejme se na velmi jednoduchý layout, u kterého si ukážeme, jak přesně Autoprefixer zařídí fungování gridu v MSIE.
 
-CodePen: [vrdl.in/4rbvs](https://codepen.io/machal/pen/PopyerN?editors=1100).
+CodePen: [vrdl.in/4rbvs](https://codepen.io/machal/pen/PopyerN?editors=1100)
 
 Jde o rozvržení definované následujícím způsobem:
 

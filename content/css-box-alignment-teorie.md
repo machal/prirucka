@@ -48,7 +48,7 @@ Mimochodem, v poslední, přílohové kapitole píšu o [CSS logical properties]
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-box-alignment-direction.jpg" width="1600" height="900" alt="Změna směru rozvržení">
 <figcaption markdown="1">
-Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [vrdl.in/uy9of](https://codepen.io/machal/pen/YzGXYKb)
+Výchozí směr rozvržení můžeme změnit například pomocí vlastnosti flex-direction. Zdroj: [vrdl.in/uy9of](https://codepen.io/machal/pen/YzGXYKb).
 </figcaption>
 </figure>
 

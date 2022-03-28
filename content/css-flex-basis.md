@@ -147,7 +147,7 @@ CodePen: [vrdl.in/6zfg0](https://codepen.io/machal/pen/bvLOMv?editors=1100)
 
 Na rozdíl od `width` a `height` nemůže být `flex-basis` menší než minimální šířka obsahu, což je například u textu šířka nejdelšího slova.
 
-CodePen: [vrdl.in/6zfg0](https://codepen.io/machal/pen/OvgYZm?editors=1100)
+CodePen: [vrdl.in/59gdw](https://codepen.io/machal/pen/OvgYZm?editors=1100)
 
 ### 4) Minimální a maximální velikost platí {#flexbasis-width-4}
 
