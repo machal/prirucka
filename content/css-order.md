@@ -129,10 +129,12 @@ CodePen: [vrdl.in/7yca0](https://codepen.io/machal/pen/JjXxVJy?editors=1100)
 
 Ve specifikaci se píše:
 
+<blockquote>
+<p>Autoři musí použít změnu pořadí pouze pro vizuální, nikoliv logické přeskupování obsahu.</p>
+</blockquote>
+
 </div>
 <!-- .pbi-avoid -->
-
-> Autoři musí použít změnu pořadí pouze pro vizuální, nikoliv logické přeskupování obsahu.
 
 <div class="book-index" data-book-index="Přístupnost"></div>
 

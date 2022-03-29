@@ -151,7 +151,8 @@ Opravíme to až touto deklarací:
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-auto-cols.jpg" width="1600" height="900" alt="grid-auto-columns">
 <figcaption markdown="1">
-Rozdíl mezi nedefinovanou mřížkou (v případě zápisu grid-auto-columns:auto) a mřížkou definovanou (grid-auto-columns:1fr), ve které pátá a šestá položka dostanou definovanou šířku.
+Rozdíl mezi nedefinovanou mřížkou (v případě zápisu grid-auto-columns:auto) a mřížkou definovanou  
+(grid-auto-columns:1fr), ve které pátá a šestá položka dostanou definovanou šířku.
 </figcaption>
 </figure>
 
