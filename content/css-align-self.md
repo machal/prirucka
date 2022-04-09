@@ -102,7 +102,7 @@ V druhé ukázce si pohrajeme s flexboxem. HTML je stejné, CSS se mění:
 ```
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-align-self-flexbox.jpg" width="1920" height="540"  al="align-self ve flexboxu - v Chrome při zapnutém grid overlay">
+<img src="../dist/images/original/vdlayout/css-align-self-flexbox.jpg" width="1920" height="540"  alt="align-self ve flexboxu - v Chrome při zapnutém grid overlay">
 <figcaption markdown="1">
 Vlastnost align-self ve flexboxu.
 </figcaption>
@@ -119,7 +119,7 @@ CodePen: [vrdl.in/pf4xm](https://codepen.io/machal/pen/eYZWdoN?editors=1100)
 ## Možné hodnoty
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-align-self-hodnoty.jpg" width="1920" height="540"  al="Hodnoty vlastnosti align-self">
+<img src="../dist/images/original/vdlayout/css-align-self-hodnoty.jpg" width="1920" height="540"  alt="Hodnoty vlastnosti align-self">
 <figcaption markdown="1">
 Hodnoty vlastnosti align-self.
 </figcaption>
