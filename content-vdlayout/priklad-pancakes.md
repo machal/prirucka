@@ -41,7 +41,7 @@ Všimněte si parametru `contenteditable`. Tímto způsobem dovolujeme, aby bylo
 
 <div class="colored-box" markdown="1">
 
-Opět je zde možnost teď zavřít knížku a zkusit si zadání nakódovat. Sledujte předpřipravený CodePen.
+💻 Opět je zde možnost teď zavřít knížku a zkusit si zadání nakódovat. Sledujte předpřipravený CodePen.
 
 CodePen: [vrdl.in/bipms](https://codepen.io/machal/pen/poeGQya?editors=1100)
 

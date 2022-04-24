@@ -31,7 +31,7 @@ Zadání je následující:
 
 <div class="colored-box" markdown="1">
 
-Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a vrhněte se na CodePen se zadáním.
+💻 Pokud chcete kódovat sami, což vám doporučuji, neváhejte odložit knížku nebo čtečku s e-bookem a vrhněte se na CodePen se zadáním.
 
 CodePen: [vrdl.in/hvuif](https://codepen.io/machal/pen/qBZzMRW?editors=1100)
 

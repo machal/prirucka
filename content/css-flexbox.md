@@ -196,7 +196,7 @@ HTML je jednoduché. O to přísnější máme požadavky na design:
 
 <div class="colored-box" markdown="1">
 
-Zkuste si to nakódovat sami, stačí forknout následující CodePen: [vrdl.in/f18lo](https://cdpn.io/e/BaRYjya).
+💻 Zkuste si to nakódovat sami, stačí forknout následující CodePen: [vrdl.in/f18lo](https://cdpn.io/e/BaRYjya).
 
 </div>
 <!-- .colored-box -->

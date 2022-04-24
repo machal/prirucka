@@ -33,7 +33,7 @@ A pak… Skvěle se na něm ukazují silné stránky šablonování vlastnostmi 
 
 <div class="colored-box" markdown="1">
 
-Pokud byste v tuto chvíli chtěli začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si forkněte – a vzhůru do kódování.
+💻 Pokud byste v tuto chvíli chtěli začít kódovat, což vám můžu jedině doporučit, opět nabízím předpřipravený CodePen, který si forkněte – a vzhůru do kódování.
 
 CodePen: [vrdl.in/97oj5](https://codepen.io/machal/pen/ZEePyrM?editors=1100)
 

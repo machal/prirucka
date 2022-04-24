@@ -30,7 +30,7 @@ Toto je výchozí HTML:
 
 <div class="colored-box" markdown="1">
 
-Také CodePen se zadáním už čeká na váš fork a následné procvičování mozkových závitů. Jen pozor, použijte jen vlastnosti ze specifikací no&shy;vé&shy;ho layoutu – gridu, flexboxu a zarovnávání boxů.
+💻 Také CodePen se zadáním už čeká na váš fork a následné procvičování mozkových závitů. Jen pozor, použijte jen vlastnosti ze specifikací no&shy;vé&shy;ho layoutu – gridu, flexboxu a zarovnávání boxů.
 
 CodePen: [vrdl.in/8mr7c](https://codepen.io/machal/pen/xxdOJOX?editors=1100)
 

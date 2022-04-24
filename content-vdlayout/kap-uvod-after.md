@@ -2,7 +2,7 @@
 
 # Shrnutí první kapitoly
 
-Nejspíš jste si všimli změny formátování v podobě oranžového proužku vlevo. V těchto částech knihy vás vybízím k aktivitě, ať už ve formě kvízu nebo možnosti zkusit si nakódovat některý příklad.
+💻 Nejspíš jste si všimli změny formátování v podobě oranžového proužku vlevo. V těchto částech knihy vás vybízím k aktivitě, ať už ve formě kvízu nebo možnosti zkusit si nakódovat některý příklad.
 
 Shrnutí všech kapitol jsem pro vás připravil ve formě kvízu. Testy jsou skvělé v tom, že čtenáře nutí přemýšlet a lovit v paměti. Odměnou za tu trochu námahy by vám mělo být trvalejší uložení důležitých informací z knížky v hlavě.
 

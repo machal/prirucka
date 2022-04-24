@@ -49,7 +49,7 @@ HTML vypadá zhruba takto:
 
 <div class="colored-box" markdown="1">
 
-Píše se vám už v hlavě kód?  Vlastně to nemusí být nic složitého, takže vám zde rovnou poskytnu výchozí CodePen se zadáním.
+💻 Píše se vám už v hlavě kód?  Vlastně to nemusí být nic složitého, takže vám zde rovnou poskytnu výchozí CodePen se zadáním.
 
 CodePen: [vrdl.in/78cnp](https://codepen.io/machal/pen/eYWWrJY?editors=1100)
 
