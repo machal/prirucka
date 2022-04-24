@@ -31,13 +31,11 @@ Je to tak, milé čtenářky a milí čtenáři, určitá „ale“ zde jsou. Mu
 <figure>
 <img src="../dist/images/original/vdlayout/css-layout-podpora-celkem.jpg" width="1600" height="450" alt="Podpora flexboxu, gridu, multicol z CanIUse">
 <figcaption markdown="1">
-*Čím více zelené, tím více podpory. Zelenohnědá značí, že daný prohlížeč má nějaký problém. Ale ne s vámi, neberte si to osobně. Zdroj: [CanIUse.com](https://caniuse.com/).*
+*Čím více zelené, tím více podpory. Jiný odstín (v barvě zelenohnědé) značí, že prohlížeč má nějaký problém. Ale ne s vámi, neberte si to osobně. Zdroj: [CanIUse.com](https://caniuse.com/).*
 </figcaption>
 </figure>
 
-Flexbox, grid nebo vícesloupcový layout se na nás z CanIUse většinou směje zeleně.
-
-Co konkrétně znamenají ty zelenohnědé obdélníky na obrázku?
+Co konkrétně znamenají ty zelenohnědé obdélníky u IE v případě gridu a flexboxu a skoro všude v případě multicol na obrázku?
 
 - Jediným větším a hůře odstranitelným problémem je slabá podpora CSS gridu ze strany Internet Exploreru 11, i to se ale dá částečně řešit Autoprefixerem.
 - U flexboxu máme prakticky plnou podporu, jen v MSIE 11 si musíme dát pozor na pár chyb.
@@ -152,7 +150,7 @@ V případě gridu se – daleko silněji než u flexboxu – musíme rozdělit 
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-grid-caniuse.jpg" width="1600" height="900" alt="Podpora gridu v prohlížečích na CanIUse">
 <figcaption markdown="1">
-Podpora gridu v prohlížečích. Zelenohnědá barva u MSIE nevěstí nic dobrého. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).
+Podpora gridu v prohlížečích. Jiný odstín u MSIE nevěstí značí špatnou podporu. Zdroj: [CanIUse.com](https://caniuse.com/css-grid).
 </figcaption>
 </figure>
 
