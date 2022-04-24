@@ -35,7 +35,7 @@ HTML jsme navrhli takto:
 
 <div class="colored-box" markdown="1">
 
-Chcete si to zkusit sami? Jste ve správné části knihy. Text s oranžovým okrajem vás totiž vyzývá k aktivitě, ať už formou kódování nebo psaní testu. Zde můžete využít připravený prázdný CodePen: [vrdl.in/gkuom](https://codepen.io/machal/pen/VwpgEQg?editors=1100)
+💻 Chcete si to zkusit sami? Jste ve správné části knihy. Text s oranžovým okrajem vás totiž vyzývá k aktivitě, ať už formou kódování nebo psaní testu. Zde můžete využít připravený prázdný CodePen: [vrdl.in/gkuom](https://codepen.io/machal/pen/VwpgEQg?editors=1100)
 
 </div>
 <!-- .colored-box -->
