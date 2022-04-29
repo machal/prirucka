@@ -24,7 +24,7 @@ Tři breakpointy, tři různá rozvržení fotogalerie. Tohle asi kodérský wel
 
 <div class="colored-box" markdown="1">
 
-💻 Chcete si to zkusit sami? Forkněte CodePen a vzhůru do toho.
+Chcete si to zkusit sami? Forkněte CodePen a vzhůru do toho.
 
 CodePen: [vrdl.in/p75na](https://codepen.io/machal/pen/bGqmQEx?editors=1100)
 

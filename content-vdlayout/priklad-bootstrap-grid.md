@@ -48,7 +48,7 @@ Nyní se tedy dostáváme k jádru pudla. Tento layout bychom chtěli napsat v C
 
 <div class="colored-box" markdown="1">
 
-💻 Zadání pro vás tedy zní: K HTML uvedenému výše napište CSS pomocí gridu tak, aby rozvržení vypadalo stejně.
+Zadání pro vás tedy zní: K HTML uvedenému výše napište CSS pomocí gridu tak, aby rozvržení vypadalo stejně.
 
 </div>
 <!-- .colored-box -->
