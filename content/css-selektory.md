@@ -149,6 +149,92 @@ V případě URL `example.cz/#kotva` se pak prvek `<h1>` podbarví žlutou.
 
 **Podpora:** [Plná](https://caniuse.com/mdn-css_selectors_target) (včetně MSIE).
 
+## Pseudotřídy akcí uživatele {#pseudo-action}
+
+Existuje několik pseudotříd uživatelských akcí pro výběr prvku, se kterým interaguje uživatel. Prvek může odpovídat několika takovým pseudotřídám současně.
+
+### Pseudotřída najetí ukazatelem (`:hover`) {#hover}
+
+Pomocí `:hover` vybíráme prvky, na které uživatel najede ukazatelem myši na prvek nebo jeho potomka. V moderních prohlížečích to je použitelné jak pro odkazy, tak pro běžné prvky, viz CodePen. [cdpn.io/e/vYdYbjx](https://codepen.io/machal/pen/vYdYbjx)
+
+```css
+/* Prvek zežloutne jen v momentě najetí myši na něj */
+.box:hover {
+  background: yellow;
+}
+```
+
+### Pseudotřída aktivace prvku (`:active`) {#active}
+
+Umožňuje vybrat prvky, na které uživatel klikne nebo je aktivuje na klávesnici. Platí to jen mezi okamžiky, kdy uživatel stiskne a pak uvolní aktivační tlačítko, takže třeba primární tlačítko myši.
+
+V moderních prohlížečích funguje na všech prvcích, i když pseudotřídu `:active` standard HTML [omezuje jen na interakční prvky](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-active) typu `<a>` nebo [`<button>`](button.md). [cdpn.io/e/rNJNPqB](https://codepen.io/machal/pen/rNJNPqB)
+
+```css
+/* Prvek zežloutne jen v momentě kliknutí na něj */
+.box:active {
+  background: yellow;
+}
+```
+
+### Pseudotřída zaměření vstupu (`:focus`) {#focus}
+
+Pseudotřída `:focus` platí, dokud je prvek zaměřený (tedy je na něm „fokus“) a přijímá vstupy z klávesnice nebo myši.
+
+Toto funguje jen na takzvaně [zaměřitelných prvcích](https://html.spec.whatwg.org/multipage/interaction.html#focusable-area), tedy těch, které mohou vyvolávat akci (`<a>`, `<button>`…) nebo mají roli v navigační struktuře (např. pomocí atributu `tabindex`). [cdpn.io/e/NWyWooO](https://codepen.io/machal/pen/NWyWooO)
+
+```css
+/* Pokud na prvek dojdu navigací pomocí Tab nebo na něj kliknu, tvale zežloutne */
+.box:focus {
+  background: yellow;
+}
+```
+
+### Pseudotřída indikovaného zaměření (`:focus-visible`) {#focus-visible}
+
+Pseudotřída `:focus-visible` platí, když platí `:focus` (prvek je zaměřený) a zároveň prohlížeč usoudí, že je vhodné tento prvek při zaměření zvýraznit.
+
+Prakticky vzato: `:focus` vám prvek zvýrazní jak při klikání myši, tak při najetí pomocí klávesy Tab. `:focus-visible` je výhodnější v tom, že u některých prvků vynechá zvýraznění při najetí myši.
+
+Tady bychom si mohli přímo vložit příklad.
+
+Máme dva odkazové boxíky:
+
+```css
+/* Zvýrazní se při kliknutí i při najetí Tab: */
+.box-1:focus {
+  outline: 2px solid blue;
+}
+
+/* Zvýrazní se jen při najetí Tab: */
+.box-2:focus-visible {
+  outline: 2px solid red;
+}
+```
+
+Výhodné je to proto, že v uživatelských rozhraních často nechceme razantně zvýrazňovat při klikání, ale pro lepší přístupnost chceme prvky zvýrazňovat při navigaci klávesou Tab.
+
+CodePen: [cdpn.io/e/wvyvNbE](https://codepen.io/machal/pen/wvyvNbE)
+
+**Podpora**: [Plná](https://caniuse.com/css-focus-visible) (s výjimkou MSIE)
+
+### Pseudotřída zaměření na rodiče (`:focus-within`) {#focus-within}
+
+Pseudotřída `:focus-within` se vztahuje na jakýkoli prvek, pro který platí pseudotřída `:focus`, a také na prvek jehož potomek podmínky pro přiřazení `:focus` splňuje.
+
+```css
+/* Rodič bude mít červenou outline, pokud je focus na potomka: */
+.container:focus-within {
+  outline: 2px solid red;
+}
+```
+
+CodePen: [cdpn.io/e/wvyvNbE](https://codepen.io/machal/pen/wvyvNbE)
+
+Vím, že se to používá pro [uchování otevírání různých meníček](https://www.scottohara.me/blog/2017/05/14/focus-within.html) a tak dále.
+
+**Podpora**: [Plná](https://caniuse.com/css-focus-within) (s výjimkou MSIE)
+
 ## Nepodporováno {#nepodporovano}
 
 - `:target-within` - podobně jako `:target` vybere cíl kotvy a navíc také každý prvek, jehož potomek je cíl kotvy a tedy splňuje podmínky výběru pro `:target`.
