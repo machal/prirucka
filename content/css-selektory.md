@@ -1,5 +1,13 @@
 # CSS selektory
 
+Tímto textem v příručce doplňuji mezery, které na Vzhůru dolů mám v oblasti pokrytí základů CSS. Při rešerši jsem si všiml, že takto komplexně se selektory snad žádný český text nezabývá.
+
+Jasně, cílím zde především na začátečníky, ale myslím, že osvěžit si tohle téma neuškodí ani pokročilým. Pojďme se nejprve podívat na tabulkové shrnutí toho, co v článku najdete.
+
+<!-- TODO tabulka -->
+
+<!-- TODO Codepen -->
+
 ## Selektory prvků  (`tag`, `*`) {#prvky}
 
 Tyto selektory vybírají prvky z DOMu podle názvu HTML značky.
@@ -12,8 +20,6 @@ Další příklady:
 
 - `h1` představuje všechny elementy `<h1>` v dokumentu.
 
-Podpora je plná. Viz [CanIUse.com](https://caniuse.com/mdn-css_selectors_type).
-
 ### Univerzální selektor {#prvky-univerzalni}
 
 Speciální varianta selektoru typu, který reprezentuje prvek libovolného typu.
@@ -21,8 +27,6 @@ Speciální varianta selektoru typu, který reprezentuje prvek libovolného typu
 Další příklady:
 
 - `*` – představuje všechny elementy v dokumentu.
-
-Podpora je plná. Viz [CanIUse.com](https://caniuse.com/mdn-css_selectors_universal).
 
 ## Selektory atributů (`[attr]`) {#attr}
 
@@ -41,8 +45,6 @@ Typy selektorů atributů:
 - `h1[title~=Ahoj]` – vlnovkový atributový selektor shody jedné hodnoty. Prvek `<h1>`, u něhož atribut `title` alespoň v jedné hodnotě _obsahuje_ řetězec `Ahoj`. Hodnoty pro potřeby selektory oddělují mezerami, takže `<h1 title="Ahoj světe">` selektor splňuje.
 - `h1[title|=Ahoj]` – selektor shody prefixu. Toto je zvláštní. Vybraná hodnota musí být buď přesně `Ahoj`, nebo začínat `Ahoj` bezprostředně následovaná znakem `-`. Dává to smysl asi jen v případě výběru jazykových kódů. Např. [hreflang|="en"] odpovídá řetězcům `en` i `en-US`.
 
-Podpora je plná. Viz [CanIUse.com](https://caniuse.com/mdn-css_selectors_attribute).
-
 ### Selektory podřetězců atributů {#attr-podretezce}
 
 Zvolíme prvky podle shody s částí hodnoty atributu. Jde o selektory pro hledání podřetězců v hodnotě atributu.
@@ -52,8 +54,6 @@ Typy atributových selektorů podřetězců:
 - `h1[title^=Ahoj]` – atributový selektor se stříškou reprezentuje prvek `<h1>` s atributem `title`, jehož hodnota _začíná_ `Ahoj`.
 - `h1[title$=Ahoj]` – atributový selektor s dolarem reprezentuje prvek `<h1>` s atributem `title`, jehož hodnota _končí_ `Ahoj`.
 - `h1[title*=Ahoj]` – atributový selektor s hvězdičkou reprezentuje prvek `<h1>` s atributem `title`, jehož hodnota _obsahuje_ `Ahoj`.
-
-Podpora v prohlížečích je plná. Viz [CanIUse.com](https://caniuse.com/mdn-css_selectors_attribute).
 
 Ve všech případech selektorů podřetězců platí, že pokud by hodnota byla prázdný řetězec, pak selektor nepředstavuje nic. Prostě se selektorem daný prvek nevybere.
 
@@ -69,7 +69,7 @@ Příklad:
 
 - `h1[title=Ahoj s]` – vybere prvky `<h1>` s atributem `title` v hodnotě `Ahoj`, ale nikoliv už `ahoj`.
 
-Podpora je plná. Viz [CanIUse.com](https://caniuse.com/css-case-insensitive).
+Mimochodem, i tenhle relativně nový přepínač podporují všechny moderní prohlížeče. Viz [CanIUse.com](https://caniuse.com/css-case-insensitive).
 
 ### Selektor třídy (`.className`) {#attr-trida}
 
@@ -95,8 +95,6 @@ Další příklady:
 - `h1.heading` – všechny prvky `<h1>`, které mají třídu `heading`.
 - `h1.heading.heading-large` – všechny prvky `<h1>`, které mají třídu `heading` a zároveň `heading-large`.
 
-Podpora je plná. Viz [CanIUse.com](https://caniuse.com/mdn-css_selectors_class).
-
 Možná jste si všimli, že zápis `.heading` je ekvivalentní zápisu vlnovkového selektoru atributu (tj. [class~=heading]).
 
 Na selektorech třídy je dnes postaveno skoro celé stylování webů, vzpomeňme například metodiky [OOCSS](https://www.vzhurudolu.cz/prirucka/oocss), [BEM](https://www.vzhurudolu.cz/prirucka/bem), ale i novější [utility CSS](https://www.vzhurudolu.cz/prirucka/css-utility).
@@ -116,8 +114,6 @@ Příklad:
 ```
 
 Selektor `.a#first` vybere jen `<span class="a" id="first">`.
-
-Podpora je plná. Viz [CanIUse.com](https://caniuse.com/mdn-css_selectors_id).
 
 V HTML dokumentech je možné, aby jednomu ID selektoru odpovídalo více prvků, je to tak v pořádku z pohledu CSS selektoru, nikoliv ale samozřejmě z pohledu HTML sémantiky nebo přístupnosti.
 
@@ -147,8 +143,6 @@ Další příklady:
 - `h1 em` – všechny prvky `<em>`, které jsou potomkem prvku `<h1>`.
 - `h1 * em` – všechny prvky `<em>`, které jsou potomkem ve druhém a vyšším zanoření uvnitř prvku `<h1>`.
 
-Podpora je plná.
-
 ### Kombinátor dítěte (`A > B`)  {#kombinator-ditete}
 
 Kombinátor se znaménkem větší než (`A > B`) vybírá prvek `B`, který je přímým potomkem prvku `A`.
@@ -172,8 +166,6 @@ Další příklady:
 - `.heading > span` – všechny prvky `<span>`, které jsou přímým potomkem prvků s třídou `heading`.
 - `h1 > em` – všechny prvky `<em>`, které jsou přímým potomkem prvku `<h1>`.
 - `.box ol > li p` – všechny prvky `<p>`, které jsou potomkem `<li>`, přičemž `<li>` musí být přímým potomkem `<ol>` a potomkem libovolné úrovně v prvku s třídou `.box`.
-
-Podpora je plná.
 
 Mezera kolem kombinátoru dítěte je volitelná. `h1 > em` a `h1>em` je totožné. Pro lepší čitelnost zápisu se upřednostňuje zápis s mezerami.
 
@@ -200,8 +192,6 @@ Další příklady:
 - `h1 + p` – všechny prvky `<p>`, které následují po `<h1>`.
 - `h1.heading + h2` – všechny prvky `<h2>`, které následují po prvku `<h1>` s třídou `heading`.
 
-Podpora je plná.
-
 Mezery jsou opět volitelné. `h1 + p` je totéž jako `h1+p`, ale upřednostňujte tu první.
 
 ### Kombinátor pozdějšího sourozence (`A ~ B`)  {#kombinator-vlnovka}
@@ -227,10 +217,21 @@ Další příklady:
 - `h1 ~ p` – všechny prvky `<p>`, které mají stejného rodiče jako `<h1>`.
 - `h1.heading ~ h2` – všechny prvky `<h2>`, které mají stejného rodiče jako `<h1>` s třídou `heading`.
 
-Podpora je plná.
-
 Mezery v selektoru jsou opět volitelné.
 
-## Nepodporováno {#nepodporovano}
+## Podpora v prohlížečích {#podpora}
 
-- `A || B` – sloupcový kombinátor. Vybírá prvek `A` patřící ke sloupci `B`. Viz např. v tabulkách `col.selected || td`. Bylo by to užitečné, ale zatím to žádný prohlížeč nepodporuje, stejně jako podobně zaměřené pseudotřídy `:nth-col()` a `:nth-last-col()`. Viz [CanIUse.com](https://caniuse.com/mdn-css_selectors_column) nebo [specifikace](https://www.w3.org/TR/selectors-4/#table-pseudos).
+Všechny CSS selektory, které zde zmiňuji, jsou plně podporované ve všech prohlížečích, včetně MSIE. Jedinou výjimkou je přepínač citlivosti na velikost písmeen (`[title=Ahoj s]`), který už v tomto starém prohlížeči nerozchodíte.
+
+Je zde ale jedna skupina selektorů, zmíněná ve specifikaci Selectors Level 4, která podporu nemá.
+
+### Selektory sloupců
+
+`A || B` – sloupcový kombinátor. Vybírá prvek `A` patřící ke sloupci `B`. Viz např. v tabulkách `col.selected || td`.
+
+Bylo by užitečné takový selektor mít, ale zatím to žádný prohlížeč nepodporuje, stejně jako podobně zaměřené pseudotřídy `:nth-col()` a `:nth-last-col()`.
+
+- [CanIUse.com](https://caniuse.com/mdn-css_selectors_column)
+- [Specifikace](https://www.w3.org/TR/selectors-4/#table-pseudos)
+
+V pokračování tohoto textu se zaměřím na pseudotřídy v CSS, které jsou vlastně jen trošku zvláštní selektory.
