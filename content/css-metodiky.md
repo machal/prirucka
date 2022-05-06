@@ -21,7 +21,7 @@ Původní zdroj téhle nepříliš dobře zdokumentované metodiky je v předná
 Hlavním cílem OOCSS je zapouzdření stylů do samostatných objektů, nebo komponent chcete-li. Z toho vycházejí hlavní principy:
 
 - *Nezávislost vzhledu na struktuře*  
-Do CSS selektorů nikdy nedáváme HTML tagy. Mohou se totiž změnit. Selektor `.button` je univerzálnější než `input` nebo `input.button`.
+Do [CSS selektorů](css-selektory.md) nikdy nedáváme HTML tagy. Mohou se totiž změnit. Selektor `.button` je univerzálnější než `input` nebo `input.button`.
 - *Nezávislost obsahu na kontejneru*  
 Do CSS selektorů nikdy nepromítáme strukturu stromu DOM. I ta se totiž může v různých kontextech změnit. `.button-tiny` je tedy lepší než např. `.login-form .button { … }`. Udržovat komponenty je vždy snazší než [udržovat kontexty](komponenty-kontexty.md).
 

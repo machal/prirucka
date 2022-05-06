@@ -32,7 +32,7 @@ Pojďme teď na ty konkrétní vlastnosti kaskády.
 
 ## Pořadí pravidel {#poradi}
 
-Začneme tím nejjednodušším: Pokud mají selektory dvou deklarací stejnou váhu (specificitu), pak prohlížeč aplikuje ten, který je v kódu pozdější.
+Začneme tím nejjednodušším: Pokud mají [selektory](css-selektory.md) dvou deklarací stejnou váhu (specificitu), pak prohlížeč aplikuje ten, který je v kódu pozdější.
 
 [Dušan Janovský](https://www.jakpsatweb.cz/css/css-kaskadovani.html) tohle pravidlo vyjádřil hezkým českým *„Kdo se směje naposled, ten se směje nejlíp“*.
 
@@ -125,8 +125,12 @@ CodePen: [cdpn.io/e/mLbrzv](https://codepen.io/machal/pen/mLbrzv?editors=0100)
 Pokud si nejste jistí, použijte skvělý kalkulátor specificity od Keegan Street: [specificity.keegan.st](http://specificity.keegan.st/)
 
 <div class="related" markdown="1">
-- [Kaskáda a další „problémy“ CSS: Jak je řešit?](css-jazyk-problemy.md)
+
+- [„Problémy“ CSS](css-jazyk-problemy.md)
+- [Dědičnost](css-dedicnost.md)
+- [Selektory](css-selektory.md)
 - [Stylelint, protože pořádek musí být](stylelint.md)
+
 </div>
 
 Spolu s milou specificitou selektorů si vám dovolím dát tyhle rady do života:

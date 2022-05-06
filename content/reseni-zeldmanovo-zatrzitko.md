@@ -93,7 +93,7 @@ Jakmile na něj někdo klikne:
 - zmenší se výška na polovic (`height: 1.25rem`)
 - zmení se barva rámečku (`border-color: green`)
 
-Všimněte si, že využíváme vlnovkový selektor pro elementy se stejným rodičem. Podívejte se i na další [CSS3 selektory](css3-selektory.md).
+Všimněte si, že využíváme [vlnovkový selektor](css-selektory.md) pro elementy se stejným rodičem. Podívejte se i na další [CSS3 selektory](css3-selektory.md).
 
 ## 5. Animujeme!
 

@@ -52,7 +52,7 @@ Třeba vám vyskočilo pár zajímavých výhod. Dobře, pojďme probrat argumen
 
 ## Nemusí se opakovat kód CSS deklarací (jenže se čas nutný pro psaní vymění za čas nutný pro čtení) {#nemusi-opakovat}
 
-V příkladu výše jsem si ušetřil zápis `color: white` u selektoru `.mat`. V reálných situacích by toho ušetřeného kódu bylo více. Dobře, ale…
+V příkladu výše jsem si ušetřil zápis `color: white` u [selektoru](css-selektory.md) `.mat`. V reálných situacích by toho ušetřeného kódu bylo více. Dobře, ale…
 
 Na ušetření kódu je možné se dívat dvěma úhly pohledu: V tom prvním si vývojář šetří práci s psaním. Neopakuje kód. Takzvaný „[DRY](https://cs.wikipedia.org/wiki/Don%27t_repeat_yourself) přístup“. Fajn, ale jak rozeberu níže, `@extend` je poměrně složitý koncept, který má spoustu výjimek, ošemetností a nevýhod, která autor i čtenář musí znát.
 

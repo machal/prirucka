@@ -85,7 +85,7 @@ h2 {
 
 Máte? Tak a teď vezměme, že cílem bylo, aby nadpis `<h2>` byl v boxíku zelený a neměl spodní vnější okraj (`margin`). Jenže: 
 
-* díky pořadí v kódu vyhraje selektor `.tabs h2` a ten nastaví modrou barvu
+* díky pořadí v kódu vyhraje [selektor](css-selektory.md) `.tabs h2` a ten nastaví modrou barvu
 * díky specificitě nezafunguje  helper `.mb-0` a `<h2>` bude mít spodní vnější okraj o velikosti `1rem`
 
 [Kaskáda](css-kaskada.md) nám to pokazila. Tady pardon – ne kaskáda, ale špatně napsaný kód, který kaskádu nerespektoval.

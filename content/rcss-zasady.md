@@ -193,7 +193,7 @@ Prettier máme nainstalovaný tak, aby nám všechny prohřešky rovnou sám opr
 3. Nejsou povoleny vendor prefixy.
 4. Nejvyšší povolená specificita je 0,3,0 – tři třídy.
 5. Nejsou povoleny id selektory (např. `#container`).
-6. V hodnotách funkcí, deklarací písem, vlastnosti `content` nebo selektorech se vždy používají dvojité uvozovky.  
+6. V hodnotách funkcí, deklarací písem, vlastnosti `content` nebo [selektorech](css-selektory.md) se vždy používají dvojité uvozovky.  
 V principu je sice možné na většině míst uvozovky nepoužívat, jenže ve výjimečných situacích jsou vyžadovány: například [u selektorů podle atributu](https://mathiasbynens.be/notes/unquoted-attribute-values#css) (`a[href^=http://]` nefunguje) nebo definici formátu písma (`format(woff)`  také nefunguje). 
 
 ### 4.3) Vlastní hodnoty zobecňujeme co nejvíce, pravidla nebo selektory co nejméně  {#4-zobecnovani}

@@ -89,7 +89,7 @@ Do hry tady, jako skoro vždy, tedy vstupuje kaskáda. Je to větší sestra, kt
 
 CodePen: [https://codepen.io/machal/pen/dyyzbWd](https://codepen.io/machal/pen/dyyzbWd?editors=1100)
 
-Je ale dobré vědět, že kaskáda se týká vždy jen aktuálního prvku. Například rodič s vyšší váhou selektoru nepřebije styl potomka. Náš pokus o odstranění kurzívy na vnitřním prvku pomocí zvýšení specificity rodiče proto nemohl být úspěšný. Však se podívejte na ukázku.
+Je ale dobré vědět, že kaskáda se týká vždy jen aktuálního prvku. Například rodič s vyšší váhou [selektoru](css-selektory.md) nepřebije styl potomka. Náš pokus o odstranění kurzívy na vnitřním prvku pomocí zvýšení specificity rodiče proto nemohl být úspěšný. Však se podívejte na ukázku.
 
 CodePen: [https://codepen.io/machal/pen/GRRvYgQ](https://codepen.io/machal/pen/GRRvYgQ?editors=1100)
 
@@ -170,6 +170,14 @@ Vycházím zde [z kompletního seznamu](https://www.w3.org/TR/CSS21/propidx.html
 *Obrázek: V dokumentaci na [developer.mozilla.org](https://developer.mozilla.org/) nebo ve specifikaci CSS lze najít, zda se hledaná CSS vlastnost dědí a jaká je její výchozí hodnota.*
 </figcaption>
 </figure>
+
+<div class="related" markdown="1">
+
+- [„Problémy“ CSS](css-jazyk-problemy.md)
+- [Kaskáda a specificita](css-kaskada.md)
+- [Selektory](css-selektory.md)
+
+</div>
 
 Pojďme si tedy zopakovat, co víme o dědičnost, jedné ze dvou základních vlastností CSS:
 

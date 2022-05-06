@@ -90,7 +90,7 @@ Co bychom ale měli, je zařídit správné umístění takového kódu. Odpově
 
 ### Kam s ním? Do button.css s ním
 
-Klíčový selektor je vždy ten poslední vpravo. V našem případě `.button`. A právě do souboru s touto komponentou bychom měli zapsat tenhle kód.
+Klíčový [selektor](css-selektory.md) je vždy ten poslední vpravo. V našem případě `.button`. A právě do souboru s touto komponentou bychom měli zapsat tenhle kód.
 
 <!-- AdSnippet -->
 

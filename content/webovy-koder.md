@@ -50,7 +50,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 * [Kaskáda](css-kaskada.md) (specifičnost selektoru, důležitost a pořadí vlastností), [dědičnost](css-dedicnost.md) v kontextu CSS. Hodnoty `inherit`, `initial`, `unset`, `revert` a [vlastnost `all`](css-all-inherit-initial-unset-revert.md).
 * [Jednotky](jednotky.md) (např. px, em, rem, procenta, cm, atd.): jejich klady, zápory a možné scénáře použití.
 * Hodnoty vlastnosti [`display`](css-display.md).
-* Prakticky použitelné CSS selektory.
+* Prakticky použitelné [CSS selektory](css-selektory.md).
 
 #### Přístupnost
 

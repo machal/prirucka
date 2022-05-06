@@ -251,6 +251,12 @@ Složitější tabulky ideálně jako `<figure>`:
 - Třída `prop-table` zajistí stejné rozvržení pro všechny tabulky s vlastnostmi - viz CSS flexbox.
 - Třída `f-6` zmenší písmo pro větší tabulky.
 
+Dále je možné třídami sjednotit šířku prvního sloupce:
+
+- `table-1-half`
+- `table-1-third`
+- `table-1-quarter`
+
 ### Podcast
 
 Vložení opět pomocí HTML kódu.

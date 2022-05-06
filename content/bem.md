@@ -33,7 +33,7 @@ Nejprve stručně s odkazy na podrobnější vysvětlení.
 
 ## Proč BEM používat a kde se hodí?
 
-BEM považuji za nadstavbu [objektových CSS (OOCSS)](oocss.md) pro středně velké a velké projekty. Pro nasazení BEMu tedy musíte umět styly psát komponentově, mít nízkou specifičnost selektorů a tak dále.
+BEM považuji za nadstavbu [objektových CSS (OOCSS)](oocss.md) pro středně velké a velké projekty. Pro nasazení BEMu tedy musíte umět styly psát komponentově, mít nízkou specifičnost [CSS selektorů](css-selektory.md) a tak dále.
 
 
 ### Jednoznačný význam tříd v CSS i HTML

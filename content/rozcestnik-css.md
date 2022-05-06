@@ -3,6 +3,7 @@
 ## Základy CSS
 
 - [„Problémy“ jazyka](css-jazyk-problemy.md)
+- [Selektory](css-selektory.md)
 - [Kaskáda](css-kaskada.md)
 - [Dědičnost](css-dedicnost.md)
 - [Zděděná a vychozí hodnota, vlastnost all](css-all-inherit-initial-unset-revert.md)
@@ -64,7 +65,6 @@
 - [calc(): výpočty v CSS](css3-calc.md)
 - [Funkce min(), max(), clamp()](css-min-max-clamp.md)
 - [RGBa barva](css3-rgba.md)
-- [Selektory v CSS](css3-selektory.md)
 - [Box Reflection: odlesk prvku](css3-box-reflection.md)
 - [contain](css-contain.md) + [content-visibility](css-content-visibility.md)
 

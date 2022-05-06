@@ -177,7 +177,7 @@ Takhle by mohl vypadat hodně jednoduchý konfigurák pravidel. Ale pro inspirac
 Pár poznámek:
 
 * Některá pravidla ze [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) považuji za zbytečně svazující, proto je na úrovni naší konfigurace vypínáme pomocí `null`.
-* Jiná pravidla zde trpím jen se skřípěním zubů. [selector-max-specificity](https://stylelint.io/user-guide/rules/selector-max-specificity/) nastavuje maximální váhu selektoru na 4 třídy. Raději bych měl dvě, ale starší kód mě tíží i na blogu – abyste si nemysleli, že si žiju v růžovém světě.
+* Jiná pravidla zde trpím jen se skřípěním zubů. [selector-max-specificity](https://stylelint.io/user-guide/rules/selector-max-specificity/) nastavuje maximální váhu [selektoru](css-selektory.md) na 4 třídy. Raději bych měl dvě, ale starší kód mě tíží i na blogu – abyste si nemysleli, že si žiju v růžovém světě.
 * Někdy je těžké se Stylelintem domluvit. Například u pravidla [at-rule-no-unknown](https://stylelint.io/user-guide/rules/at-rule-no-unknown/) nesmyslně hlásí i klíčová slova preprocesoru Sass. Lze to říct obecne – Stylelint vám dlouhodobě dost práce ušetří, ale v krátkodobém horizontu očekávejte, že do zkamarádění s ním budete muset vložit dost času.
 
 Celkově vzato mě ale tahle konfigurace vyhovuje. Kód byl poměrně v dobrém stavu už před nasazením Stylelintu a ten teď zvedá laťku.

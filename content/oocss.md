@@ -34,7 +34,7 @@ OOCSS má pět principů. Alespoň podle toho, jak jej vnímám já:
 
 ## 1) Nezávislost vzhledu na struktuře {#vzhled-na-strukture}
 
-Do CSS selektorů nikdy nedáváme HTML tagy. Mohou se totiž změnit a změny nechceme provádět na dvou místech – v HTML i CSS. Proto `.button` raději než `input.button`.
+Do [CSS selektorů](css-selektory.md) nikdy nedáváme HTML tagy. Mohou se totiž změnit a změny nechceme provádět na dvou místech – v HTML i CSS. Proto `.button` raději než `input.button`.
 
 OOCSS je v tomto přísné, takže byste v komponentové části kódu opravdu neměli mít některé z uvedených typů selektorů:
 

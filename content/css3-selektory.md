@@ -1,6 +1,8 @@
 CSS3 selektory
 ==============
 
+⚠️ *Pozor, tento článek už je zastaralý. Podívejte se ne novější – [selektory v CSS](css-selektory.md)*
+
 CSS3 přichází s armádou nových selektorů. Nejjednodušší bude podívat se na ně optikou toho, jakou verzi Internet Exploreru na svých projektech musíte podporovat, abyste je mohli použít.
 
 

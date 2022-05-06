@@ -27,9 +27,9 @@ Hlavně pro potřeby psaní webových aplikací se kromě orientačních bodů h
 - [Označení widgetů](https://www.w3.org/TR/wai-aria/roles#widget_roles_header) – přidání významu komponentám uživatelského rozhraní. Například  `role="alert"` pro časově omezené upozornění uživateli. Nebo `tab` a `tabpanel` pro vyznačení záložkové navigace uvnitř stránky a `menu`, `menuitem`, `menubar` pro dropdown navigaci.
 - [Označení struktury dokumentu](https://www.w3.org/TR/wai-aria/roles#document_structure_roles_header) – například `role="article"` pro označení atomické části hlavního obsahu. Může to být článek v seznamu článků, položka ve výpisu produktů nebo třeba `role="presentation"` pro popis elementu, který je použitý jen pro prezentaci obsahu a nechceme zachovat jeho sémantický význam. Jak se vám líbí třeba `<table role="presentation">`? Krásné, že?
 
-Ani tím ale možnosti WAI-ARIA nekončí. Orientační body patří do kategorie rolí. Dalšími kategoriemi ještě jsou [stavy a vlastnosti](https://www.w3.org/TR/wai-aria/states_and_properties). Možností jejich využití v aplikacích je hodně. Příkladem budiž [hlášení počtu zbývajících znaků](https://www.youtube.com/watch?v=MOx9cX_nQMk) v textovém poli formuláře. Pokud vás to zajímá více, [doporučím seriál Radka Pavlíčka na Zdrojáku](https://www.zdrojak.cz/serialy/pristupnost-dynamickych-webovych-aplikaci/). 
+Ani tím ale možnosti WAI-ARIA nekončí. Orientační body patří do kategorie rolí. Dalšími kategoriemi ještě jsou [stavy a vlastnosti](https://www.w3.org/TR/wai-aria/states_and_properties). Možností jejich využití v aplikacích je hodně. Příkladem budiž [hlášení počtu zbývajících znaků](https://www.youtube.com/watch?v=MOx9cX_nQMk) v textovém poli formuláře. Pokud vás to zajímá více, [doporučím seriál Radka Pavlíčka na Zdrojáku](https://www.zdrojak.cz/serialy/pristupnost-dynamickych-webovych-aplikaci/).
 
-Sami vidíte, že WAI-ARIA je sémanticky (významově) daleko bohatší než běžné HTML. Kromě pomoci znevýhodněným uživatelům je tedy možné atributy využít v CSS nebo Javascriptu jako selektor.
+Sami vidíte, že WAI-ARIA je sémanticky (významově) daleko bohatší než běžné HTML. Kromě pomoci znevýhodněným uživatelům je tedy možné atributy využít v CSS nebo Javascriptu jako [selektor](css-selektory.md).
 
 ## Pár příkladů z Bootstrapu
 
