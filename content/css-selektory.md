@@ -238,8 +238,8 @@ Selektor `.a + p` vybere jen prvek `<p class="b">`.
 
 Další příklady:
 
-- `h1 + p` – všechny prvky `<p>`, které následují po `<h1>`.
-- `h1.heading + h2` – všechny prvky `<h2>`, které následují po prvku `<h1>` s třídou `heading`.
+- `h1 + p` – prvky `<p>`, které bezprostředně následují za každým `<h1>`.
+- `h1.heading + h2` – prvky `<h2>`, které bezprostředně následují po prvcích `<h1>` s třídou `heading`.
 
 Mezery jsou opět volitelné. `h1 + p` je totéž jako `h1+p`, ale upřednostňujte tu první.
 
