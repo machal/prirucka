@@ -150,19 +150,28 @@ Typy atributových selektorů podřetězců:
 
 Ve všech případech selektorů podřetězců platí, že pokud by hodnota byla prázdný řetězec, pak selektor nepředstavuje nic. Prostě se selektorem daný prvek nevybere.
 
-### `[ s]` – přepínač case-sensitivity {#attr-case}
+### `[ i]` – přepínač case-insensitivity {#attr-case}
 
-V tomto novém přepínači můžeme zapnout nebo vypnout citlivost na rozlišování malých a velkých písmen.
+Díky tomuto novému přepínači můžeme vypnout citlivost na rozlišování malých a velkých písmen.
 
-Standardně totiž selektory pro HTML nerozlišují malá nebo velká písmena. Tímto můžeme citlivost na rozdíl mezi nimi zapnout.
+Standardně totiž selektory pro HTML malá a velká písmena rozlišují.
 
 <!-- AdSnippet -->
 
-Identifikátor `s` před uzavírací závorkou (`]`) značí „sensitive“, tedy citlivost na rozlišování velkých a malých písmen. Naopak identifikátor `i` znamená „insensitive“ tedy nerozlišování. V HTML pro vás bude užitečný jen ten první.
+Identifikátor `i` znamená „insensitive“ tedy nerozlišování velkých a malých písmen v selektoru.
 
-Příklad: `h1[title=Ahoj s]` – vybere prvky `<h1>` s atributem `title` v hodnotě `Ahoj`, ale nikoliv už `ahoj`.
+Příklady:
+
+- `h1[title=Ahoj]` – vybere prvky `<h1>` s atributem `title` v hodnotě `Ahoj`, ale nikoliv už `ahoj`.
+- `h1[title=Ahoj i]` – vybere prvky `<h1>` s atributem `title` v hodnotě `Ahoj` a také `ahoj`.
 
 Mimochodem, i tenhle relativně nový přepínač podporují všechny moderní prohlížeče. Viz [CanIUse.com](https://caniuse.com/css-case-insensitive).
+
+Podívejte se na demo od čtenáře Lukáše Chylíka.
+
+CodePen: [cdpn.io/e/eYVWOEQ](https://codepen.io/luko248/pen/eYVWOEQ?editors=1100)
+
+Identifikátor `s` před uzavírací závorkou (`]`) značí „sensitive“, tedy citlivost na rozlišování velkých a malých písmen. Podporuje to nyní jen Firefox, ale vlastně `s]` v HTML není potřeba, protože jen kopíruje výchozí stav v prohlížečích.
 
 ## Kombinátory {#kombinatory}
 
@@ -238,8 +247,8 @@ Selektor `.a + p` vybere jen prvek `<p class="b">`.
 
 Další příklady:
 
-- `h1 + p` – prvky `<p>`, které bezprostředně následují za každým `<h1>`.
-- `h1.heading + h2` – prvky `<h2>`, které bezprostředně následují po prvcích `<h1>` s třídou `heading`.
+- `h1 + p` – prvek `<p>`, který bezprostředně následuje za každým `<h1>`.
+- `h1.heading + h2` – prvek `<h2>`, který bezprostředně následuje po za každým `<h1>` s třídou `heading`.
 
 Mezery jsou opět volitelné. `h1 + p` je totéž jako `h1+p`, ale upřednostňujte tu první.
 
