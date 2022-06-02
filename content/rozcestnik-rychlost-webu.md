@@ -27,6 +27,7 @@
 - [Metrika TTFB](ttfb.md)
 - [Metrika FCP](metrika-fcp.md)
 - [Metrika FID](metrika-fcp.md)
+- [Metrika INP](metrika-inp.md)
 - [Metrika LCP](metrika-lcp.md)
 - [Metrika CLS](metrika-cls.md)
 - [Metrika TBT](metrika-tbt.md)

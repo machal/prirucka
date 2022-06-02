@@ -13,6 +13,8 @@ Je to událost, kterou ovlivňuje hlavně JavaScript. Stránka je zobrazená a u
 </figcaption>
 </figure>
 
+_Je dobré vědět, že FID bude pravděpodobně během roku 2022 nebo 2023 v rámci Web Vitals nahrazeno aktuálnějším metrikou [INP (Interaction to Next Paint)](metrika-inp.md)._
+
 ## Time To Interactive a RUM data
 
 Možná si všimnete podobnosti této metriky s [Time To Interactive (TTI)](metrika-tti.md). Zatímco FID měří prodlevu mezi akcí uživatele a jejím provedením, TTI počítá čas od startu načítání stránky po plnou interaktivitu stránky. Obě ve výsledku říkají podobnou informaci – jak rychle je možné se stránkou plně pracovat.

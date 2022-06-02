@@ -50,7 +50,7 @@ Jak už jsem psal, [metrik](metriky-rychlosti.md) zde nemáme k dispozici tolik 
 
 </div>
 
-V experimentální podobě se v době psaní textu CrUX ukládá také [Time To First Byte (TTFB)](ttfb.md), [First Input Delay (FID)](metrika-fid.md) a Cumulative Layout Shift.
+V experimentální podobě se v době psaní textu CrUX ukládájí také [Time To First Byte (TTFB)](ttfb.md), [First Input Delay (FID)](metrika-fid.md) a Cumulative Layout Shift.
 
 Nejdůležitější metriky jsou FCP a FID, soudě podle toho, že Google je zobrazuje ve svých měřících nástrojích. V tabulce můžeme vidět, jaké jejich hodnoty považuje za rychlé, průměrné a pomalé.
 

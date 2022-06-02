@@ -48,6 +48,7 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 | [First Meaningful Paint (FMP)](metrika-fmp.md) | První smysluplné vykreslení   |
 | [Total Blocking Time (TBT)](metrika-tbt.md)    | Celkový čas blokování JS      |
 | [Time to Interactive (TTI)](metrika-tti.md)    | První možnost interaktivity   |
+| [Interaction to Next Paint (INP)](metrika-inp.md)    | Od interakce do prvního vykreslení   |
 | [Speed Index](speedindex.md)                   | Vykreslení celého viewportu   |
 | [Load](load.md)                                | Stažení všeho                 |
 | [Lighthouse Performance Score](metrika-lps.md) | Všechny renderovací metriky   |
