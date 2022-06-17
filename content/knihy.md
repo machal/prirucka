@@ -49,6 +49,21 @@ Fakt bible, ale formou nic moc přitažlivého. Hodně akademické ukázky. Čet
 <div class="row">
 <div class="col w-25-xs" markdown="1">
 
+![CSS: moderní layout](../dist/images/small/knihy/vdcsslayout.jpg)
+
+</div>
+<div class="col w-75-xs" markdown="1">
+
+### CSS: moderní layout (Martin Michálek, 2022)
+
+Uvedu zde i svůj nejnovější počit. Knihu jsem psal tak, aby pokryla široké spektrum čtenářů – od programátorů, hobby tvůrců až po ostřílené kodéry v CSS. Lidé v recenzích píší, že je to dobré, že je to vtipné a že to jde do hloubky. Můžete se přesvědčit na vlastní oči. [Web knihy](https://www.vzhurudolu.cz/css-layout/).
+
+</div>
+</div>
+
+<div class="row">
+<div class="col w-25-xs" markdown="1">
+
 ![Enduring CSS](../dist/images/small/knihy/enduring-css.jpg)
 
 </div>
@@ -351,22 +366,7 @@ Jestliže se designovými systémy už trochu více zabýváte, tahle kniha od S
 
 Chtělo by se napsat, že [responzivní design](https://www.vzhurudolu.cz/responzivni-design) je fáze webdesignu, kterou už máme za sebou a není tudíž nutné o ní něco číst.
 
-To by ale byl jen omyl člověka, který webdesignem žije, trendy sleduje a nevidí dlouhý ocas skupiny lidí, kteří změny v našem oboru sledují až s letitým zpožděním.  Vybral jsem tři knížky. Všechny znám docela dobře a tu první až moc dobře.
-
-<div class="row">
-<div class="col w-25-xs" markdown="1">
-
-![Vzhůru do (responzivního) designu](../dist/images/small/knihy/vdrwd.jpg)
-
-</div>
-<div class="col w-75-xs" markdown="1">
-
-### Vzhůru do (responzivního) designu (Martin Michálek, 2017)
-
-Je to ještě aktuální? Pro ty, kteří o responzivním designu nic moc nečetli, určitě ano. Knihu jsem v roce 2017 psal jako „průvodce dnešním řemeslným webdesignem“. V té době bylo nutné přejít na responzivní design, naučit se navrhovat pro mobily a celé to dobře a udržitelně nakódovat. Snažím se neutíkat od kódu a spojovat technologie s designovým přístupem. Dnes už si můžete koupit jen e-book, tištěná kniha je prakticky vyprodaná. [Web knihy](https://www.vzhurudolu.cz/kniha-responzivni-design/).
-
-</div>
-</div>
+To by ale byl jen omyl člověka, který webdesignem žije, trendy sleduje a nevidí dlouhý ocas skupiny lidí, kteří změny v našem oboru sledují až s letitým zpožděním.  Vybral jsem tři knížky. Všechny znám docela dobře a tu poslední až moc dobře.
 
 <div class="row">
 <div class="col w-25-xs" markdown="1">
@@ -394,6 +394,21 @@ V mnoha firmách sice už běžně responzivní weby dělají, ale responzivně 
 ### Designing for Touch (Josh Clark, 2015)
 
 Nemáme zde jen mobily, tablety a desktop, říká autor myšlenky: „Zařízení jakéhokoliv typu může být dotykové. Proto musíme předpokládat, že dotykové bude.“. Hlavní myšlenky shrnuji v textu[o lidech a zařízeních](lide-a-zarizeni.md). [Web knihy](https://abookapart.com/products/designing-for-touch).
+
+</div>
+</div>
+
+<div class="row">
+<div class="col w-25-xs" markdown="1">
+
+![Vzhůru do (responzivního) designu](../dist/images/small/knihy/vdrwd.jpg)
+
+</div>
+<div class="col w-75-xs" markdown="1">
+
+### Vzhůru do (responzivního) designu (Martin Michálek, 2017)
+
+Je to ještě aktuální? Pro ty, kteří o responzivním designu nic moc nečetli, určitě ano. Knihu jsem v roce 2017 psal jako „průvodce dnešním řemeslným webdesignem“. V té době bylo nutné přejít na responzivní design, naučit se navrhovat pro mobily a celé to dobře a udržitelně nakódovat. Snažím se neutíkat od kódu a spojovat technologie s designovým přístupem. Dnes už si můžete koupit jen e-book, tištěná kniha je prakticky vyprodaná. [Web knihy](https://www.vzhurudolu.cz/kniha-responzivni-design/).
 
 </div>
 </div>
