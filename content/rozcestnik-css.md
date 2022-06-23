@@ -91,5 +91,6 @@
 ## Atd.
 
 - [Weby bez CSS](weby-bez-css.md)
+- [CSS a tisk knih](css-tisk-knih.md)
 - [Co je „CSS pixel“?](css-pixel.md)
 - [Co by měl umět webový kodér?](webovy-koder.md)
