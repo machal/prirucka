@@ -1,6 +1,6 @@
 # Obrázkový formát AVIF
 
-Chrome od verze 85 a Firefox od verze 93 začaly podporovat nový obrázkový formát AVIF.
+Prohlížeče Chrome, Firefox a (brzy i Safari) podporují nový obrázkový formát AVIF.
 
 Inovativní formáty nás webaře zajímají hlavně z pohledu datové efektivity a nových vlastností. Obojí je zde splněno, takže se na AVIF pojďme podívat více zblízka.
 
@@ -155,11 +155,7 @@ Jak je to u AVIFu?
 
 Ve Firefoxu podpora přichází na podzim '21 [s verzí 93](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/93) na podpoře pracují.
 
-Apple zatím neoznámil, zda bude v Safari AVIF podporovat. Tentokrát je však Apple jednou ze společností v Alliance for Open Media, tvůrců AVIF a tvůrci Webkitu, enginu, na kterém Safari běží, [na podpoře pracují](https://bugs.webkit.org/show_bug.cgi?id=207750). Ale jako vždy to záleží na podpoře v operačních systémech Apple:
-
-> …any support for AVIF depends on underlying OS support. I can't comment as to whether any future OS releases will support AVIF.
-
-Takže zatím prostě nevíme a Apple nám to neřekne.
+Apple říká, že podpora AVIF přijde do Safari Technology Preview release 149 během roku 2022. Bude nejspíš omezená na macOS od verze Ventura and iOS od verze 16.
 
 <figure>
 <img src="https://res.cloudinary.com/ireaderinokun/image/upload/v1605530919962/caniuse-embed/all/avif.webp" alt="Podpora AVIF v prohlížečích">
