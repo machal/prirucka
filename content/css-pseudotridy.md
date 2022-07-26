@@ -189,7 +189,156 @@ Hezký příklad jsem našel [na MDN](https://developer.mozilla.org/en-US/docs/W
 
 ## Pseudotřídy vstupu (#input)
 
-<!-- TODO -->
+Sem patří `:disabled`, `:read-only` a další pseudotřídy, které pomáhají vybírat vstupní prvky, které mají nějaký konkrétní stav. Většinou se aplikují na formulářové prvky.
+
+### Pseudotřídy povolení a zakázání – `:enabled` a `:disabled`
+
+V HTML můžeme některé aktivní prvky zobrazit, ale zakázat jejich používání. V uživatelském rozhraní se pak objeví „zašedlé“:
+
+```html
+<button>Enabled Button</button>
+<button disabled>Disabled Button</button>
+```
+
+Pomocí pseudotříd můžeme vybrat takto povolené nebo zakázané prvky:
+
+```css
+:enabled {
+  color: blue;
+}
+
+:disabled {
+  color: black;
+}
+```
+
+Samozřejmě je toto možné aplikovat jen na prvky, se kterými může uživatel interagovat.
+
+CodePen: [cdpn.io/e/ZExJPrQ](https://codepen.io/machal/pen/ZExJPrQ)
+
+Podpora `:enabled` a `:disabled` je plná ve všech prohlížečích, včetně prehistorických ještěrů.
+
+### Pseudotřídy proměnlivosti (možnosti zápisu) – `:read-only` a `:read-write`
+
+Některé aktivní prvky mohou sloužit jen pro čtení. Nejsou `disabled`, ale `readonly`:
+
+```html
+<textarea>Read/Write Textarea</textarea>
+<textarea readonly>Read/Only Textarea</textarea>
+```
+
+Pomocí pseudotřít proměnlivosti je pak možné přistupovat k těmto prvkům a stylovat je:
+
+```css
+:read-write {
+  color: blue;
+}
+
+:read-only {
+  color: brown;
+}
+```
+
+Za pozornost stojí, že všechny neaktivní prvky, např. i `div` jsou samozřejmě `readonly`. Můžete to ale změnit přidáním atributu `contenteditable`.
+
+CodePen: [cdpn.io/e/KKovExw](https://codepen.io/machal/pen/KKovExw)
+
+Podpora je plná.
+
+### Pseudotřída zobrazeného zástupného textu – `:placeholder-shown`
+
+Některé prvky, zejména ty vstupní, mohou obsahovat zástupný text (placeholder):
+
+```html
+<input type="text" value="This is value">
+<input type="text" placeholder="This is placeholder text">
+```
+
+Pseudotřída v CSS jménem  `:placeholder-shown` je tu proto, abychom mohli stylovat prvek, který placeholder obsahuje.
+
+```css
+:placeholder-shown {
+  border-color: blue;
+}
+```
+
+CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow)
+
+Podpora je [plná](https://caniuse.com/css-placeholder-shown), v MSIE s prefixem.
+
+### Pseudotřída použití automatického vyplnění textu – `:autofill`
+
+Pseudotřída `:autofill` představuje vstupní prvky, které byly automaticky vyplněny prohlížečem a uživatel je následně nezměnil.
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_autofill) s výjimkou MSIE.
+
+### Pseudotřída výchozího prvku – `:default`
+
+Pseudotřída `:default` se vztahuje na prvky uživatelského rozhraní, které jsou výchozí ze sady podobných prvků.
+
+Příkladem je výchozí tlačítko mezi sadou tlačítek:
+
+```html
+<form action="#">
+  <button>Default Button</button>
+  <button>Another Button</button>
+</form>
+```
+
+Styly:
+
+```css
+:default {
+  border-color: blue;
+}
+```
+
+První ze sady tlačítek bude vždy pro odeslání formuláře výchozí a proto se rámeček obarví.
+
+CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow)
+
+Jiným příkladem je stylování výchozí možnosti z vyskakovací nabídky `<select>`.
+
+## Stavy pro hodnoty vstupu
+
+Pod tímto kostrbatým názvem se schovává známá pseudotřída `:checked`. A pak ještě jedna, nejspíš ji neznáte.
+
+### Pseudotřída vybrané hodnoty – `:checked`
+
+Aplikuje se na vybraná zatržítka, přepínače nebo vybranou hodnotu `<option>` ze seznamu hodnot.
+
+```css
+:checked {
+  color: blue;
+}
+```
+
+Samotné obarvení nebo jiné stylování vybrané hodnoty zase tak užitečné není, ale v kombinaci s dalšími selektory to začne být zajímavé:
+
+```css
+/* Obarvíme textové popisky pro vybrané zatržítko: */
+input:checked + label {
+  color: blue;
+}
+
+/* Obarvíme zatržítka, které nejsou vybrané: */
+input[type=checkbox]:not(:checked) {
+  color: gray;
+}
+```
+
+Podpora pseudotřídy `:checked` je [úplná](https://caniuse.com/mdn-css_selectors_checked).
+
+### Pseudotřída neurčitých hodnot – `:indeterminate`
+
+Pseudotřída `:indeterminate` se vztahuje na prvky uživatelského rozhraní, jejichž hodnota je v neurčitém stavu.
+
+Například prvky radio a checkbox lze přepínat mezi stavy zaškrtnuto a nezaškrtnuto, ale někdy jsou v neurčitém stavu, tedy ani zaškrtnuto, ani nezaškrtnuto.
+
+Podobně může být v neurčitém stavu ukazatel průběhu `<progress>`, když není známo procento zbývající k dokončení.
+
+Neurčitou hodnotu přidává buď prohlížeč nebo ji můžete vynutit [atributem `indeterminate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes).
+
 
 ## Nepodporováno {#nepodporovano}
 
