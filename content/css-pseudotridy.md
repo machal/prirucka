@@ -339,6 +339,185 @@ Podobně může být v neurčitém stavu ukazatel průběhu `<progress>`, když 
 
 Neurčitou hodnotu přidává buď prohlížeč nebo ji můžete vynutit [atributem `indeterminate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes).
 
+## Kontrola vstupních hodnot
+
+Pseudotřídy kontroly vstupních hodnot umožňují dát uživateli zpětnou vazbu, pokud něco zadá do formulářového prvku. Patří sem možnost stylovat povinná políčka (`:required`) nebo označení špatného vstupu (`:invalid`).
+
+### Pseudotřídy platnosti – `:valid` a `:invalid` {#valid}
+
+Pseudotřída `:valid` v CSS představuje jakýkoli prvek `<input>` nebo jiný formulářový prvek, jehož obsah se úspěšně validuje.
+
+Je tak možné buď stylovat validní či nevalidní prvky nebo je označit textem pomocí `content`:
+
+```css
+input:invalid {
+  border-color: red;
+}
+
+input:invalid + label::before {
+  content: '✖';
+  color: red;
+}
+
+input:valid + label::before {
+  content: '✓';
+  color: green;
+}
+```
+
+Ukázku jsem převzal [z MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:valid).
+
+Na některé prvky není možné platnost aplikovat. Je rozdíl mezi prvkem, který nemá žádná omezení, a byl by tedy vždy `:valid`, např. `<input type=text>`, a prvkem, který nemá vůbec žádnou sémantiku platnosti dat, např. `<p>`, a není tedy ani `:valid`, ani `:invalid`.
+
+Podpora pro [`:valid`](https://caniuse.com/mdn-css_selectors_valid) i [`:invalid`](https://caniuse.com/mdn-css_selectors_invalid) je plná.
+
+### Pseudotřídy rozsahu – `:in-range` a `:out-of-range` {#range}
+
+Těmito pseudotřídami se v CSS představuje prvek `<input>`, jehož aktuální hodnota se nachází (`:in-range`) nebo nenachází (`:out-of-range`) v rozmezí určeném atributy `min` a `max`.
+
+Viz výše uvedený příklad:
+
+```css
+input:out-of-range {
+  border-color: red;
+}
+
+input:out-of-range + label::before {
+  content: '✖';
+  color: red;
+}
+
+input:in-range + label::before {
+  content: '✓';
+  color: green;
+}
+```
+
+Podpora je [plná](https://caniuse.com/css-in-out-of-range), IE ovšem trucuje.
+
+### Pseudotřídy volitelnosti – `:required` a `:optional` {#required}
+
+Pseudotřída `:required` v CSS označuje jakýkoliv vstupní prvek (`<input>`, `<select>`, `<textarea>`, který má atribut `required`:
+
+```css
+:required + label::after {
+  content: '*';
+}
+```
+
+Pseudotřída `:optional` pak reprezentuje všechny ostatní vstupní prvky.
+
+Podpora [`:required`](https://caniuse.com/css-required-pseudo) i [`:optional`](https://caniuse.com/css-optional-pseudo) je plná.
+
+### Pseudotřídy stromové struktury {#strom}
+
+Tyhle pseudotřídy umožňují výběr na základě informací, které se nacházejí ve stromu dokumentu, ale nelze je reprezentovat jinými selektory.
+
+### Pseudotřída kořenového prvku – `:root` {#root}
+
+Ve DOMu odpovídá pseudotřída `:root` kořenovému prvku objektu `Document`. V HTML to bude standardně element `<html>`, což se ale může javascriptem změnit.
+
+V praxi se pseudotřída díky své vyšší [specificitě](https://www.vzhurudolu.cz/prirucka/css-kaskada) používá pro deklaraci [autorských vlastností (aka proměnných)](https://www.vzhurudolu.cz/prirucka/css-promenne):
+
+```css
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+}
+```
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_root).
+
+### Pseudotřída prázdného prvku – `:empty` {#empty}
+
+Pseudotřída `:empty` zastupuje prvek, který nemá žádné potomky.
+
+Jen pro pořádek:
+
+- Potomkem může být buď další prvek nebo text (včetně bílých znaků).
+- Potomky naopak nejsou komentáře nebo CSS deklarace.
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_empty).
+
+### Pseudotřída n-tého prvku – `:nth-child()` {#nth-child}
+
+Velmi užitečná pseudotřída, která umožní vybrat prvek na základě opakujícího se pořadí – sudé, liché, n-té nebo prostě několikáté prvky.
+
+Obsah v závorce se zapisuje podle vzoru `An+B` a tedy např. `2n+1` bude každý druhý plus jedna. `n` je cyklus začínající vždy nulou, takže toto splní každý lichý prvek: první, třetí, pátý…
+
+Příklady:
+
+```css
+/* Liché řádky tabulky: */
+tr:nth-child(odd) { … }
+tr:nth-child(2n+1) { … }
+
+/* Sudé řádky tabulky: */
+tr:nth-child(even) { … }
+tr:nth-child(2n) { … }
+
+/* Každá sedmá položka v seznamu: */
+li:nth-child(7n) { … }
+
+/* Sedmá položka v seznamu: */
+li:nth-child(7) { … }
+
+/* První dva elementy v seznamu */
+li:nth-child(-n+2)
+/* → -0+2=2, -1+2=1, -2+2=0] */
+```
+
+Podpora základní syntaxe je [plná](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child). Horší byste to měli, pokud máte v úmyslu takto stylovat prvky v `<select>`, což nyní funguje jen v Safari.
+
+### Pseudotřída n-tého prvku od konce – `:nth-last-child()` {#nth-last-child}
+
+Pseudotřída `:nth-last-child()` funguje stejně jako `:nth-child()`, jen se pořadí počítá od konce:
+
+```css
+/* Druhá položka v seznamu od konce: */
+li:nth-child(2) { … }
+
+/* Každá sedmá položka v seznamu od konce: */
+li:nth-child(7n) { … }
+
+/* Liché řádky tabulky: */
+tr:nth-child(odd) { … }
+```
+
+Základní podpora je [plná](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-child).
+
+### Pseudotřída prvního potomka – `:first-child` {#first-child}
+
+Pseudotřída `:first-child` představuje prvek, který je první mezi svými sourozenci.
+
+Je to totéž jako `:nth-child(1)`.
+
+```css
+/* Tučně vysází první odstavec textu v .content */
+.content > p:first-child {  
+  font-weight: bold;
+}
+```
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_first-child).
+
+### Pseudotřída posledního potomka – `:last-child` {#last-child}
+
+Pseudotřída `:last-child` představuje prvek, který je poslední mezi svými sourozenci.
+
+Je to totéž jako `:nth-last-child(1)`.
+
+```css
+/* Tučně vysází první odstavec textu v .content */
+.content > p:last-child {  
+  font-weight: bold;
+}
+```
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_last-child).
+
+
+<!-- TODO -->
 
 ## Nepodporováno {#nepodporovano}
 
@@ -371,3 +550,25 @@ Ve [specifikaci](https://www.w3.org/TR/selectors-4/#resource-pseudos) je těchto
 Opět jde velmi zajímavá skupina pseudotříd, například pro element ve stavu modálního okna (`:modal`) nebo zobrazení elementu (nejspíš videa) v režimu PiP (picture in picture), tedy překrývající obsah (pseudotřída `:picture-in-picture`).
 
 Funguje z nich jen `:fullscreen`. U ostatních si zatím musíme počkat na implementace v prohlížečích.
+
+### Pseudotřída prázdných hodnot – `:blank` {#blank}
+
+Umožní nastylovat prázný textový vstup nebo víceřádkový vstup:
+
+```css
+textarea:blank {
+  border-color: red;
+}
+```
+
+I zde je podpora v době psaní textu [bohužel nulová](https://caniuse.com/mdn-css_selectors_blank).
+
+### Pseudotřídy interakce s uživatelem – `:user-valid` a `:user-invalid`
+
+Tyto pseudotřídy zvolí prvky, které mají správný nebo nesprávný vstup, takže se podobají pseudotřídám platnosti (`:valid` a `:invalid`).
+
+Rozdíl je v tom, že `:user-valid` a `:user-invalid` platí až poté, co s ním uživatel významně interagoval.
+
+Pseudotřídy `:valid` a `:invalid` se na prvek aplikují, i když jej uživatel nijak nevyplnil, což je bohužel většinou vcelku nepraktické.
+
+Nepraktické na pseudotřídách interakce s uživatelem zase je, že v době psaní textu je [podporuje pouze Firefox](https://caniuse.com/mdn-css_selectors_user-invalid).
