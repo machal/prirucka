@@ -1,5 +1,92 @@
 # Pseudotřídy v CSS
 
+## Rozcestník pseudotříd
+
+### Pseudotřídy odkazů a kotev
+
+<div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
+
+| Pseudotřída                   | Zápis         |
+|:------------------------------|:--------------|
+| [Odkaz](#any-link)            |  `:any-link`  |
+| [Nenavštívený odkaz](#link-visited)   | `:link`     |
+| [Navštívený odkaz](#link-visited)     | `:visited`    |
+| [Cíl kotvy](#target)          | `:target`    |
+
+</div>
+
+### Pseudotřídy uživatelských akcí
+
+<div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
+
+| Pseudotřída                   | Zápis         |
+|:------------------------------|:--------------|
+| [Najetí kurzoru](#hover)      | `:hover`    |
+| [Aktivace prvku](#active)     | `:active`   |
+| [Zaměření prvku](#focus)      | `:focus`    |
+| [Indikované zaměření](#focus-visible) | `:focus-visible` |
+| [Zaměření na rodiče](#focus-within)   | `:focus-within`  |
+
+
+</div>
+
+### Pseudotřídy uživatelských vstupů
+
+<div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
+
+| Pseudotřída                   | Zápis         |
+|:------------------------------|:--------------|
+| [Povolený prvek](#enabled-disabled)   | `:enabled`  |
+| [Zakázaný prvek](#enabled-disabled)   | `:disabled` |
+| [Možnost zápisu](#read-only-write)    | `:read-write` |
+| [Nemožnost zápisu](#read-only-write)  | `:read-only` |
+| [Zobrazený zástupný text](#placeholder-shown) |`:placeholder-shown` |
+| [Použití automatického vyplnění](#autofill) | `:autofill` |
+| [Výchozí prvek](#default)     | `:default`  |
+| [Vybraná hodnota](#checked)   | `:checked`  |
+| [Platnost zadání](#valid-invalid)  | `:valid` |
+| [Neplatnost zadání](#valid-invalid)  |`:invalid` |
+| [Povinnost zadání](#required) | `:required` |
+| [Volitelnost zadání](#required) | `:optional` |
+
+</div>
+
+### Pseudotřídy indexu potomků
+
+Pořadí prvku v sadě prvků nebo prvků stejného typu.
+
+<div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
+
+| Pseudotřída                   | Zápis         |
+|:------------------------------|:--------------|
+| [N-tého prvku](#nth-child)    | `:nth-child()` |
+| [N-tého prvku od konce](#nth-last-child) | `:nth-last-child()` |
+| [Prvního potomka](#first-child) | `:first-child` |
+| [Posledního potomka](#last-child) | `:last-child` |
+| [Jediného potomka](#only-child) | `:only-child` |
+| [N-tého prvku stejného typu](#nth-of-type) | `:nth-of-type()` |
+| [N-tého prvku typu od konce](#nth-last-of-type) | `:nth-last-of-type()` |
+| [Prvního potomka typu](#first-of-type) | `:first-of-type` |
+| [Posledního potomka typu](#last-of-type) | `:last-of-type` |
+| [Jediného potomka typu](#only-of-type) | `:only-of-type` |
+
+</div>
+
+### Ostatní pseudotřídy
+
+<div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
+
+| Pseudotřída                   | Zápis         |
+|:------------------------------|:--------------|
+| [Směr](#dir)                  |  `:dir()`     |
+| [Jazyk](#lang)                |  `:lang()`    |
+| [Celá obrazovka](#fullscreen) | `:fullscreen` |
+| [Kořenový prvek](#root)       | `:root`   |
+| [Prázdný prvek](#empty)       | `:empty`  |
+
+</div>
+
+
 ## Jazykové pseudotřídy {#pseudo-jazyk}
 
 Pomocí jazykových pseudotříd je možné stylovat prvky podle směru textu (`:dir()`) nebo nastavení jazyka (`:lang()`).
@@ -38,7 +125,7 @@ Rozdíl mezi pseudotřídou `:lang(cs)` a atributovým selektorem `[lang|=cs]` s
 
 Další rozdíl je v tom, že atributový selektor (`[lang|=en]`) funguje jako wildcard a umí tedy rozpoznat všechny jazyky začínající na `en`.
 
-## Pseudotřídy polohy {#pseudo-poloha}
+## Pseudotřídy odkazů a kotev {#pseudo-odkazy}
 
 ### Pseudotřída hypertextového odkazu (`:any-link`) {#any-link}
 
@@ -88,7 +175,7 @@ Pomocí `:hover` vybíráme prvky, na které uživatel najede ukazatelem myši, 
 V moderních prohlížečích to je použitelné jak pro odkazy, tak pro běžné prvky, viz CodePen. [cdpn.io/e/vYdYbjx](https://codepen.io/machal/pen/vYdYbjx)
 
 ```css
-/* Prvek zežloutne jen v momentě najetí myši na něj */
+/* Prvek zežloutne jen v momentě najetí myši na něj: */
 .box:hover {
   background: yellow;
 }
@@ -103,13 +190,13 @@ Selektor ale platí jen mezi okamžiky, kdy uživatel stiskne a pak uvolní akti
 Pseudotřídu `:active` standard HTML [omezuje jen na interakční prvky](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-active) typu `<a>` nebo [`<button>`](button.md), ale v moderních prohlížečích funguje na všech prvcích. [cdpn.io/e/rNJNPqB](https://codepen.io/machal/pen/rNJNPqB)
 
 ```css
-/* Prvek zežloutne jen v momentě kliknutí na něj */
+/* Prvek zežloutne jen v momentě kliknutí na něj: */
 .box:active {
   background: yellow;
 }
 ```
 
-### Pseudotřída zaměření pro vstup (`:focus`) {#focus}
+### Pseudotřída zaměření prvku (`:focus`) {#focus}
 
 Pseudotřída `:focus` platí, dokud je prvek zaměřený (tedy je na něm „fokus“) a přijímá vstupy z klávesnice nebo myši.
 
@@ -118,6 +205,7 @@ Toto funguje jen na takzvaně [zaměřitelných prvcích](https://html.spec.what
 V ukázce níže platí: Pokud na prvek dojdu navigací pomocí klávesy Tab nebo na něj kliknu, tvale zežloutne.
 
 ```css
+/* Prvek zežloutne v případě zaměření: */
 .box:focus {
   background: yellow;
 }
@@ -191,7 +279,7 @@ Hezký příklad jsem našel [na MDN](https://developer.mozilla.org/en-US/docs/W
 
 Sem patří `:disabled`, `:read-only` a další pseudotřídy, které pomáhají vybírat vstupní prvky, které mají nějaký konkrétní stav. Většinou se aplikují na formulářové prvky.
 
-### Pseudotřídy povolení a zakázání – `:enabled` a `:disabled`
+### Pseudotřídy povolení a zakázání – `:enabled` a `:disabled` {#enabled-disabled}
 
 V HTML můžeme některé aktivní prvky zobrazit, ale zakázat jejich používání. V uživatelském rozhraní se pak objeví „zašedlé“:
 
@@ -218,7 +306,7 @@ CodePen: [cdpn.io/e/ZExJPrQ](https://codepen.io/machal/pen/ZExJPrQ)
 
 Podpora `:enabled` a `:disabled` je plná ve všech prohlížečích, včetně prehistorických ještěrů.
 
-### Pseudotřídy proměnlivosti (možnosti zápisu) – `:read-only` a `:read-write`
+### Pseudotřídy proměnlivosti (možnosti zápisu) – `:read-only` a `:read-write` {#read-only-write}
 
 Některé aktivní prvky mohou sloužit jen pro čtení. Nejsou `disabled`, ale `readonly`:
 
@@ -245,7 +333,7 @@ CodePen: [cdpn.io/e/KKovExw](https://codepen.io/machal/pen/KKovExw)
 
 Podpora je plná.
 
-### Pseudotřída zobrazeného zástupného textu – `:placeholder-shown`
+### Pseudotřída zobrazeného zástupného textu – `:placeholder-shown` {#placeholder-shown}
 
 Některé prvky, zejména ty vstupní, mohou obsahovat zástupný text (placeholder):
 
@@ -266,13 +354,13 @@ CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow)
 
 Podpora je [plná](https://caniuse.com/css-placeholder-shown), v MSIE s prefixem.
 
-### Pseudotřída použití automatického vyplnění textu – `:autofill`
+### Pseudotřída použití automatického vyplnění textu – `:autofill` {#autofill}
 
 Pseudotřída `:autofill` představuje vstupní prvky, které byly automaticky vyplněny prohlížečem a uživatel je následně nezměnil.
 
 Podpora je [plná](https://caniuse.com/mdn-css_selectors_autofill) s výjimkou MSIE.
 
-### Pseudotřída výchozího prvku – `:default`
+### Pseudotřída výchozího prvku – `:default` {#default}
 
 Pseudotřída `:default` se vztahuje na prvky uživatelského rozhraní, které jsou výchozí ze sady podobných prvků.
 
@@ -299,11 +387,11 @@ CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow)
 
 Jiným příkladem je stylování výchozí možnosti z vyskakovací nabídky `<select>`.
 
-## Stavy pro hodnoty vstupu
+## Stavy pro hodnoty vstupu {#stavy-kontroly}
 
 Pod tímto kostrbatým názvem se schovává známá pseudotřída `:checked`. A pak ještě jedna, nejspíš ji neznáte.
 
-### Pseudotřída vybrané hodnoty – `:checked`
+### Pseudotřída vybrané hodnoty – `:checked` {#checked}
 
 Aplikuje se na vybraná zatržítka, přepínače nebo vybranou hodnotu `<option>` ze seznamu hodnot.
 
@@ -329,7 +417,7 @@ input[type=checkbox]:not(:checked) {
 
 Podpora pseudotřídy `:checked` je [úplná](https://caniuse.com/mdn-css_selectors_checked).
 
-### Pseudotřída neurčitých hodnot – `:indeterminate`
+### Pseudotřída neurčitých hodnot – `:indeterminate` {#indeterminate}
 
 Pseudotřída `:indeterminate` se vztahuje na prvky uživatelského rozhraní, jejichž hodnota je v neurčitém stavu.
 
@@ -339,11 +427,11 @@ Podobně může být v neurčitém stavu ukazatel průběhu `<progress>`, když 
 
 Neurčitou hodnotu přidává buď prohlížeč nebo ji můžete vynutit [atributem `indeterminate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes).
 
-## Kontrola vstupních hodnot
+## Kontrola vstupních hodnot {#kontrola}
 
 Pseudotřídy kontroly vstupních hodnot umožňují dát uživateli zpětnou vazbu, pokud něco zadá do formulářového prvku. Patří sem možnost stylovat povinná políčka (`:required`) nebo označení špatného vstupu (`:invalid`).
 
-### Pseudotřídy platnosti – `:valid` a `:invalid` {#valid}
+### Pseudotřídy platnosti – `:valid` a `:invalid` {#valid-invalid}
 
 Pseudotřída `:valid` v CSS představuje jakýkoli prvek `<input>` nebo jiný formulářový prvek, jehož obsah se úspěšně validuje.
 
@@ -409,7 +497,7 @@ Pseudotřída `:optional` pak reprezentuje všechny ostatní vstupní prvky.
 
 Podpora [`:required`](https://caniuse.com/css-required-pseudo) i [`:optional`](https://caniuse.com/css-optional-pseudo) je plná.
 
-### Pseudotřídy stromové struktury {#strom}
+## Pseudotřídy stromové struktury {#strom}
 
 Tyhle pseudotřídy umožňují výběr na základě informací, které se nacházejí ve stromu dokumentu, ale nelze je reprezentovat jinými selektory.
 
@@ -438,6 +526,10 @@ Jen pro pořádek:
 - Potomky naopak nejsou komentáře nebo CSS deklarace.
 
 Podpora je [plná](https://caniuse.com/mdn-css_selectors_empty).
+
+## Pseudotřídy indexu potomků {#index-potomku}
+
+V této kategorii je možné pseudotřídami vybrat prvního (`:first-child`), posledního (`:last-child`), několikátého nebo n-tého (`:nth-child()`) potomka určitého prvku.
 
 ### Pseudotřída n-tého prvku – `:nth-child()` {#nth-child}
 
@@ -516,8 +608,51 @@ Je to totéž jako `:nth-last-child(1)`.
 
 Podpora je [plná](https://caniuse.com/mdn-css_selectors_last-child).
 
+### Pseudotřída pvku bez sourozenců – `:only-child` {#only-child}
 
-<!-- TODO -->
+Pseudotřída `:only-child` představuje prvek, který nemá žádné sourozence.
+
+Je to mimochodem totéž jako `:first-child:last-child` nebo `:nth-child(1):nth-last-child(1)`, jen to má nižší [specifičnost](https://www.vzhurudolu.cz/prirucka/css-kaskada).
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_only-child).
+
+Pojďme dál. Pod kostrbatým názvem „pseudotřídy indexu potomků stejného typu“ se ve specifikaci nachází další kategorie pseudotříd, která stejně jako ta předchozí umožňuje vybrat n-té prvky ze sady sourozenců.
+
+V tomto případě je ale výběr omezený na prvky stejného typu, takže shodné HTML značky, jako například `img`, `p` nebo jiné.
+
+### Pseudotřída n-tého prvku stejného typu – `:nth-of-type()` {#nth-of-type}
+
+Umožní vybrat prvek stejného typu na základě opakujícího se pořadí.
+
+Od pseudotřídy `:nth-child()` se liší v tom, že umožňuje zaměření jen na prvky stejného typu.
+
+Příklady:
+
+```css
+/* Každý lichý obrázek: */
+img:nth-of-type(odd) { … }
+
+/* Každý třetí obrázek: */
+img:nth-child(3n) { … }
+```
+
+### Pseudotřída posledního prvku stejného typu – `:nth-last-of-type()` {#nth-last-of-type}
+
+Podobné jako `:nth-last-child`, jen vybere poslední n-tý prvek stejného typu, takže stejné HTML značky.
+
+### Pseudotřída prvního prvku stejného typu – `:first-of-type()` {#first-of-type}
+
+Podobné jako `:first-child`, jen vybere první prvek stejného typu, takže stejné HTML značky.
+
+### Pseudotřída prvního prvku stejného typu – `:last-of-type()` {#last-of-type}
+
+Podobné jako `:last-child`, jen vybere poslední prvek stejného typu, takže stejné HTML značky.
+
+### Pseudotřída prvku stejného typu bez sourozenců – `:only-of-type` {#only-of-type}
+
+Pseudotřída `:only-of-type` představuje prvek, který nemá žádné sourozence stejného typu. Jde o obdobu konstrukce pseudotříd `:first-of-type:last-of-type`.
+
+V závěrečné části tohoto dlouhého textu se podíváme na zoubek pseudotřídám, které zatím nenašly podporu v prohlížečích.
 
 ## Nepodporováno {#nepodporovano}
 
