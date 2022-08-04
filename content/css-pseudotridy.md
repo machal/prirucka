@@ -1,8 +1,10 @@
 # Pseudotřídy v CSS
 
-## Rozcestník pseudotříd
+## Rozcestník typů pseudotříd {#rozcestnik}
 
-### Pseudotřídy odkazů a kotev
+### Odkazy a kotvy
+
+[Pseudotřídy odkazů a kotev](#odkazy) umožňují vybrat různé typy odkazů nebo cíl kotvy.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -15,7 +17,9 @@
 
 </div>
 
-### Pseudotřídy uživatelských akcí
+### Uživatelské akce
+
+[Pseudotřídy uživatelských akcí](#akce) vybírají aktivní prvky podle jejich stavu vyvoleném uživatelem.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -27,10 +31,11 @@
 | [Indikované zaměření](#focus-visible) | `:focus-visible` |
 | [Zaměření na rodiče](#focus-within)   | `:focus-within`  |
 
-
 </div>
 
-### Pseudotřídy uživatelských vstupů
+### Uživatelské vstupy
+
+[Pseudotřídy uživatelských vstupů](#vstupy) umožňují vybrat formulářové prvky podle nastaveného očekávání uživatelského vstupu.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -51,9 +56,9 @@
 
 </div>
 
-### Pseudotřídy indexu potomků
+### Pořadí potomků
 
-Pořadí prvku v sadě prvků nebo prvků stejného typu.
+[Pseudotřídy pořadí potomků](#poradi) vybírají prvek podle jeho pořadí v sadě prvků nebo v sadě prvků stejného typu.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -72,7 +77,9 @@ Pořadí prvku v sadě prvků nebo prvků stejného typu.
 
 </div>
 
-### Ostatní pseudotřídy
+### Ostatní
+
+Do [ostatních pseudotříd](#ostatni) řadím to co se mi jinam nevešlo.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -86,46 +93,9 @@ Pořadí prvku v sadě prvků nebo prvků stejného typu.
 
 </div>
 
+Pojďme se teď na všechny typy pseudotříd a jednotlivé pseudotřídy podívat podrobně.
 
-## Jazykové pseudotřídy {#pseudo-jazyk}
-
-Pomocí jazykových pseudotříd je možné stylovat prvky podle směru textu (`:dir()`) nebo nastavení jazyka (`:lang()`).
-
-### Pseudotřída směru (`:dir()`) {#dir}
-
-Pseudotřída `:dir()` umožňuje webařům napsat selektory, které reprezentují prvek na základě směru určeného jazykem dokumentu.
-
-| Selektor          | Vysvětlení         |
-|:------------------|:-------------------|
-|  `h1:dir(ltr)`  |  prvek `<h1>` jehož směr vykreslení podle jazyka je nastavený jako `ltr`, tedy zleva doprava (left-to-right).  |
-|  `h1:dir(rtl)` | prvek `<h1>` jehož směr vykreslení podle jazyka je nastavený jako `rtl`, tedy zprava doleva (right-to-left). |
-
-Podporu pseudotřídy směru `dir()` v době psaní textu zatím implementoval [pouze Firefox](https://caniuse.com/css-dir-pseudo).
-
-Zajímá vás rozdíl mezi pseudotřídou `:dir(ltr)` a selektorem atributu `[dir=ltr]`? Je tam.
-
-Selektor atributu `[dir=ltr]` se týká pouze daného atributu, pokud je přítomný. Pseudotřída `:dir(ltr)` by měla využívat k znalosti sémantiky dokumentu ze strany prohlížeče, takže fungovat i pokud není jazyk nastavený přímov na HTML prvcích.
-
-Například v HTML se směr jazyka prvku dědí, takže potomek bez atributu `dir` bude mít stejnou směrovost jako jeho nejbližší předek s platným atributem `dir`. To by samozřejmě atributový selektor nefungoval.
-
-### Pseudotřída jazyka (`:lang()`) {#lang}
-
-Pseudotřída `:lang()` umožňuje psát CSS selektory citlivé na jazyk dokumentu.
-
-| Selektor          | Vysvětlení         |
-|:------------------|:-------------------|
-| `h1:lang(cs)` | prvek `<h1>`, který má nastavený (nebo podědí) český jazyk. |
-|  `:lang(fr-be) > h1` | prvek `<h1>` uvnitř dokumentu v belgické francouzštině. |
-
-Podpora v prohlížečích je [plná](https://caniuse.com/mdn-css_selectors_lang) (včetně MSIE).
-
-Mimochodem, v HTML je možné jazyk pro dokument nebo prvky dokumentu nastavit kombinací atributu `lang`, informací ze značek `meta` a případně také v hlavičkách HTTP.
-
-Rozdíl mezi pseudotřídou `:lang(cs)` a atributovým selektorem `[lang|=cs]` spočívá v tom, že atributový selektor provádí pouze porovnání s atributem `lang` u elementu, zatímco pseudotřída `:lang()` se opět snaží zjistit nastavení jazyka jakýmkoliv způsobem.
-
-Další rozdíl je v tom, že atributový selektor (`[lang|=en]`) funguje jako wildcard a umí tedy rozpoznat všechny jazyky začínající na `en`.
-
-## Pseudotřídy odkazů a kotev {#pseudo-odkazy}
+## Odkazy a kotvy {#odkazy}
 
 ### Pseudotřída hypertextového odkazu (`:any-link`) {#any-link}
 
@@ -164,7 +134,7 @@ V případě URL `example.cz/#kotva` se pak prvek `<h1>` podbarví žlutou.
 
 Podpora v prohlížečích je [plná](https://caniuse.com/mdn-css_selectors_target) (včetně MSIE).
 
-## Pseudotřídy akcí uživatele {#pseudo-action}
+## Uživatelské akce {#akce}
 
 Existuje několik pseudotříd uživatelských akcí pro výběr prvku, na který kliká nebo jinak interaguje uživatel. Prvek může odpovídat několika takovým pseudotřídám současně.
 
@@ -257,25 +227,7 @@ Vím, že se to používá pro [uchování otevírání různých meníček](htt
 
 Podpora je [plná](https://caniuse.com/css-focus-within) (s výjimkou MSIE).
 
-## Pseudotřída běhu přes celou obrazovku – `:fullscreen` {#fullscreen}
-
-Pseudotřída `:fullscreen` se asi nejlépe využije pro stylování stránky zobrazující video nebo samotnou stránku přes celou obrazovku.
-
-Hezký příklad jsem našel [na MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen), kde různě stylují tlačítko na zobrazení videa přes celou obrazovku:
-
-```css
-/* Styl tlačítka mimo režim celé obrazovky: */
-#fs-toggle:not(:fullscreen) {
-  background-color: #afa;
-}
-
-/* Styl tlačítka v režimu celé obrazovky: */
-#fs-toggle:fullscreen {
-  background-color: #faa;
-}
-```
-
-## Pseudotřídy vstupu (#input)
+## Uživatelské vstupy (#vstupy)
 
 Sem patří `:disabled`, `:read-only` a další pseudotřídy, které pomáhají vybírat vstupní prvky, které mají nějaký konkrétní stav. Většinou se aplikují na formulářové prvky.
 
@@ -387,10 +339,6 @@ CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow)
 
 Jiným příkladem je stylování výchozí možnosti z vyskakovací nabídky `<select>`.
 
-## Stavy pro hodnoty vstupu {#stavy-kontroly}
-
-Pod tímto kostrbatým názvem se schovává známá pseudotřída `:checked`. A pak ještě jedna, nejspíš ji neznáte.
-
 ### Pseudotřída vybrané hodnoty – `:checked` {#checked}
 
 Aplikuje se na vybraná zatržítka, přepínače nebo vybranou hodnotu `<option>` ze seznamu hodnot.
@@ -427,9 +375,7 @@ Podobně může být v neurčitém stavu ukazatel průběhu `<progress>`, když 
 
 Neurčitou hodnotu přidává buď prohlížeč nebo ji můžete vynutit [atributem `indeterminate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes).
 
-## Kontrola vstupních hodnot {#kontrola}
-
-Pseudotřídy kontroly vstupních hodnot umožňují dát uživateli zpětnou vazbu, pokud něco zadá do formulářového prvku. Patří sem možnost stylovat povinná políčka (`:required`) nebo označení špatného vstupu (`:invalid`).
+Další pseudotřídy, totiž pseudotřídy kontroly vstupních hodnot, umožňují dát uživateli zpětnou vazbu, pokud něco zadá do formulářového prvku. Patří sem možnost stylovat povinná políčka (`:required`) nebo označení špatného vstupu (`:invalid`).
 
 ### Pseudotřídy platnosti – `:valid` a `:invalid` {#valid-invalid}
 
@@ -497,37 +443,7 @@ Pseudotřída `:optional` pak reprezentuje všechny ostatní vstupní prvky.
 
 Podpora [`:required`](https://caniuse.com/css-required-pseudo) i [`:optional`](https://caniuse.com/css-optional-pseudo) je plná.
 
-## Pseudotřídy stromové struktury {#strom}
-
-Tyhle pseudotřídy umožňují výběr na základě informací, které se nacházejí ve stromu dokumentu, ale nelze je reprezentovat jinými selektory.
-
-### Pseudotřída kořenového prvku – `:root` {#root}
-
-Ve DOMu odpovídá pseudotřída `:root` kořenovému prvku objektu `Document`. V HTML to bude standardně element `<html>`, což se ale může javascriptem změnit.
-
-V praxi se pseudotřída díky své vyšší [specificitě](https://www.vzhurudolu.cz/prirucka/css-kaskada) používá pro deklaraci [autorských vlastností (aka proměnných)](https://www.vzhurudolu.cz/prirucka/css-promenne):
-
-```css
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-}
-```
-
-Podpora je [plná](https://caniuse.com/mdn-css_selectors_root).
-
-### Pseudotřída prázdného prvku – `:empty` {#empty}
-
-Pseudotřída `:empty` zastupuje prvek, který nemá žádné potomky.
-
-Jen pro pořádek:
-
-- Potomkem může být buď další prvek nebo text (včetně bílých znaků).
-- Potomky naopak nejsou komentáře nebo CSS deklarace.
-
-Podpora je [plná](https://caniuse.com/mdn-css_selectors_empty).
-
-## Pseudotřídy indexu potomků {#index-potomku}
+## Pořadí potomků {#poradi}
 
 V této kategorii je možné pseudotřídami vybrat prvního (`:first-child`), posledního (`:last-child`), několikátého nebo n-tého (`:nth-child()`) potomka určitého prvku.
 
@@ -654,6 +570,90 @@ Pseudotřída `:only-of-type` představuje prvek, který nemá žádné sourozen
 
 V závěrečné části tohoto dlouhého textu se podíváme na zoubek pseudotřídám, které zatím nenašly podporu v prohlížečích.
 
+## Ostatní {#ostatni}
+
+Pomocí jazykových pseudotříd je možné stylovat prvky podle směru textu (`:dir()`) nebo nastavení jazyka (`:lang()`).
+
+### Pseudotřída směru (`:dir()`) {#dir}
+
+Pseudotřída `:dir()` umožňuje webařům napsat selektory, které reprezentují prvek na základě směru určeného jazykem dokumentu.
+
+| Selektor          | Vysvětlení         |
+|:------------------|:-------------------|
+|  `h1:dir(ltr)`  |  prvek `<h1>` jehož směr vykreslení podle jazyka je nastavený jako `ltr`, tedy zleva doprava (left-to-right).  |
+|  `h1:dir(rtl)` | prvek `<h1>` jehož směr vykreslení podle jazyka je nastavený jako `rtl`, tedy zprava doleva (right-to-left). |
+
+Podporu pseudotřídy směru `dir()` v době psaní textu zatím implementoval [pouze Firefox](https://caniuse.com/css-dir-pseudo).
+
+Zajímá vás rozdíl mezi pseudotřídou `:dir(ltr)` a selektorem atributu `[dir=ltr]`? Je tam.
+
+Selektor atributu `[dir=ltr]` se týká pouze daného atributu, pokud je přítomný. Pseudotřída `:dir(ltr)` by měla využívat k znalosti sémantiky dokumentu ze strany prohlížeče, takže fungovat i pokud není jazyk nastavený přímov na HTML prvcích.
+
+Například v HTML se směr jazyka prvku dědí, takže potomek bez atributu `dir` bude mít stejnou směrovost jako jeho nejbližší předek s platným atributem `dir`. To by samozřejmě atributový selektor nefungoval.
+
+### Pseudotřída jazyka (`:lang()`) {#lang}
+
+Pseudotřída `:lang()` umožňuje psát CSS selektory citlivé na jazyk dokumentu.
+
+| Selektor          | Vysvětlení         |
+|:------------------|:-------------------|
+| `h1:lang(cs)` | prvek `<h1>`, který má nastavený (nebo podědí) český jazyk. |
+|  `:lang(fr-be) > h1` | prvek `<h1>` uvnitř dokumentu v belgické francouzštině. |
+
+Podpora v prohlížečích je [plná](https://caniuse.com/mdn-css_selectors_lang) (včetně MSIE).
+
+Mimochodem, v HTML je možné jazyk pro dokument nebo prvky dokumentu nastavit kombinací atributu `lang`, informací ze značek `meta` a případně také v hlavičkách HTTP.
+
+Rozdíl mezi pseudotřídou `:lang(cs)` a atributovým selektorem `[lang|=cs]` spočívá v tom, že atributový selektor provádí pouze porovnání s atributem `lang` u elementu, zatímco pseudotřída `:lang()` se opět snaží zjistit nastavení jazyka jakýmkoliv způsobem.
+
+Další rozdíl je v tom, že atributový selektor (`[lang|=en]`) funguje jako wildcard a umí tedy rozpoznat všechny jazyky začínající na `en`.
+
+### Pseudotřída běhu přes celou obrazovku – `:fullscreen` {#fullscreen}
+
+Pseudotřída `:fullscreen` se asi nejlépe využije pro stylování stránky zobrazující video nebo samotnou stránku přes celou obrazovku.
+
+Hezký příklad jsem našel [na MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen), kde různě stylují tlačítko na zobrazení videa přes celou obrazovku:
+
+```css
+/* Styl tlačítka mimo režim celé obrazovky: */
+#fs-toggle:not(:fullscreen) {
+  background-color: #afa;
+}
+
+/* Styl tlačítka v režimu celé obrazovky: */
+#fs-toggle:fullscreen {
+  background-color: #faa;
+}
+```
+
+Další pseudotřídy umožňují výběr na základě informací, které se nacházejí ve stromu dokumentu, ale nelze je reprezentovat jinými selektory.
+
+### Pseudotřída kořenového prvku – `:root` {#root}
+
+Ve DOMu odpovídá pseudotřída `:root` kořenovému prvku objektu `Document`. V HTML to bude standardně element `<html>`, což se ale může javascriptem změnit.
+
+V praxi se pseudotřída díky své vyšší [specificitě](https://www.vzhurudolu.cz/prirucka/css-kaskada) používá pro deklaraci [autorských vlastností (aka proměnných)](https://www.vzhurudolu.cz/prirucka/css-promenne):
+
+```css
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+}
+```
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_root).
+
+### Pseudotřída prázdného prvku – `:empty` {#empty}
+
+Pseudotřída `:empty` zastupuje prvek, který nemá žádné potomky.
+
+Jen pro pořádek:
+
+- Potomkem může být buď další prvek nebo text (včetně bílých znaků).
+- Potomky naopak nejsou komentáře nebo CSS deklarace.
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_empty).
+
 ## Nepodporováno {#nepodporovano}
 
 Mezi pseudotřídami je řada takových, které nemají podpory mezi prohlížeči ani co by se za nehet vešlo. Alespoň v době psaní tohoto textu.
@@ -680,7 +680,7 @@ Ve specifikaci též najdete velmi zajímavé pseudotřídy, pomocí kterých by
 
 Ve [specifikaci](https://www.w3.org/TR/selectors-4/#resource-pseudos) je těchto pozoruhodných tříd více, jen zatím pražádnou podporu nemají.
 
-## Pseudotřídy stavu zobrazení prvků
+### Pseudotřídy stavu zobrazení prvků
 
 Opět jde velmi zajímavá skupina pseudotříd, například pro element ve stavu modálního okna (`:modal`) nebo zobrazení elementu (nejspíš videa) v režimu PiP (picture in picture), tedy překrývající obsah (pseudotřída `:picture-in-picture`).
 
