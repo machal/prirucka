@@ -77,6 +77,21 @@
 
 </div>
 
+### Kombinace
+
+[Kombinační pseudotřídy](#kombinace) umožňují zjednodušit selektory, snížit specificitu nebo zavádějí nové možnosti jako selektor rodiče.
+
+<div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
+
+| Pseudotřída                   | Zápis         |
+|:------------------------------|:--------------|
+| [Výběru libovolného prvku](#is)    | `:is()` |
+| [Nulové specificity](#where) | `:where()` |
+| [Negace](#noet) | `:not()` |
+| [Vztahu](#last-child) | `:has()` |
+
+</div>
+
 ### Ostatní
 
 Do [ostatních pseudotříd](#ostatni) řadím to co se mi jinam nevešlo.
@@ -569,6 +584,112 @@ Podobné jako `:last-child`, jen vybere poslední prvek stejného typu, takže s
 Pseudotřída `:only-of-type` představuje prvek, který nemá žádné sourozence stejného typu. Jde o obdobu konstrukce pseudotříd `:first-of-type:last-of-type`.
 
 V závěrečné části tohoto dlouhého textu se podíváme na zoubek pseudotřídám, které zatím nenašly podporu v prohlížečích.
+
+## Kombinační pseudotřídy {#kombinace}
+
+### Pseudotřída výběru jakéhokoliv prvku – `:is` {#is}
+
+Pseudotřída `:is()` kontroluje, zda prvek na pozici ve vnějším selektoru odpovídá některému ze selektorů v seznamu selektorů.
+
+Je to užitečný syntaktický cukr, který umožňuje vyhnout se ručnímu vypisování všech kombinací jako samostatných selektorů:
+
+```css
+/* Kombinace selektorů: */
+.header h2,
+.footer h2,
+.side h2 {
+  font-size: 2rem;
+}
+
+/* Pomocí :is(): */
+:is(.header, .footer, .side) h2 {
+  font-size: 2rem;
+}
+```
+
+Specifičnost pseudotřídy `:is()` je nahrazena specifičností jejího nejkonkrétnějšího argumentu.
+
+Ve [specifikaci](https://www.w3.org/TR/selectors-4/#matches) je k nalezení tento příklad. Zaměřme se v něm na prvek `ol`: 
+
+```css
+/* Silnější specifičnost (0,2,0): */
+:is(ul, ol, .list) > [hidden] { … }
+
+/* Slabší specifičnost (0,1,1): */
+ul > [hidden], ol > [hidden], .list > [hidden], [hidden] { … } 
+```
+
+Vysvětlím:
+
+- V prvním příkladě máme jednu pseudotřídu a jeden atributový selektor.
+- V druhém je jedna třída a jeden element.
+
+Podpora je [plná](https://caniuse.com/css-matches-pseudo) (kromě IE).
+
+### Psudotřída nulové specificity – `:where()` {#where}
+
+Na rozdíl od `:is()` nepřispívá pseudotřída `:where()` ani žádný z jejích argumentů ke specifičnosti selektoru. Specifičnost `:where()` je vždy nulová.
+
+```css
+/* Specifičnost (0,1,1): */
+.header h2,
+.footer h2,
+.side h2 {
+  font-size: 2rem;
+}
+
+/* Specifičnost (0,1,1): */
+:is(.header, .footer, .side) h2 {
+  font-size: 2rem;
+}
+
+/* Specifičnost (0,1,1): */
+:where(.header, .footer, .side) h2 {
+  font-size: 2rem;
+}
+```
+
+Podpora je [plná](https://caniuse.com/mdn-css_selectors_where) s tradiční výjimkou IE.
+
+### Pseudotřída negace – `:not()` {#not}
+
+Pseudotřída, která vybere prvek, který není reprezentován jejím argumentem:
+
+```css
+/* Vybere h2 uvnitř .header */
+:is(.header) h2 {
+  font-size: 2rem;
+}
+
+/* Vybere h2, ale ne ty uvnitř .header  */
+:not(.header) h2 {
+  font-size: 2rem;
+}
+```
+
+Specifičnost pseudotřídy `:not()` je nahrazena specifičností nejspecifičtějšího selektoru v jejích čárkou oddělených argumentech. 
+
+Podpora pseudotřídy `:not()` je [plná](https://caniuse.com/mdn-css_selectors_not) (kromě IE).
+
+### Pseudotřída vztahu – `:has()` {#has}
+
+O [relační pseudotřídě `:has()`](https://www.vzhurudolu.cz/prirucka/css-selektor-has) jsem už dříve psal.
+
+Bez ohledu na specifikaci lidsky řečeno je pro nás důležité, že je `:has()` je použitelný jako selektor rodiče…
+
+```css
+/* Vybere <a>, které přímo obsahují <img> */
+a:has(> img)
+```
+
+… nebo také jako selektor přechozího sourozence:
+
+```css
+/* Vybere <h1>, které jsou přímo následovány <table> */
+h1:has(+ table)
+```
+
+[Podpora](https://caniuse.com/css-has) je v Safari a koncem srpna 2022 bude v Chrome. Na Firefox se zatím čeká.
 
 ## Ostatní {#ostatni}
 
