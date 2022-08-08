@@ -45,7 +45,7 @@ V článku zcela úmyslně neuvádím pseudotřídy, které mezi selektory v CSS
 
 Tyto selektory vybírají prvky z DOMu podle názvu HTML značky.
 
-### `tag` – selektor typu {#prvky-typ}
+### Selektor typu – `tag` {#prvky-typ}
 
 Obsahuje název prvku HTML a představuje instanci tohoto typu prvku ve stromu dokumentu.
 
@@ -54,7 +54,7 @@ Příklady:
 - `h1` – představuje všechny elementy `<h1>` v dokumentu.
 - `li span` – vybírá všechny prvky `<span>` zanořené v prvku `<li>`.
 
-### `*` – univerzální selektor {#univerzalni}
+### Univerzální selektor –  `*` {#univerzalni}
 
 Speciální varianta selektoru typu, který reprezentuje prvek libovolného typu.
 
@@ -67,7 +67,7 @@ Příklady:
 
 Selektory, které vybírají prvky podle atributů – jejich existence, shody s jejich celou hodnotou nebo s částí hodnoty.
 
-### `.className` – selektor třídy {#attr-trida}
+### Selektor třídy – `.className` {#attr-trida}
 
 Jeden z nejznámějších a asi rovnou nejužitečnější selektor, který vybírá prvky podle třídy.
 
@@ -95,7 +95,7 @@ Možná jste si všimli, že zápis `.heading` je ekvivalentní zápisu vlnovkov
 
 Na selektorech třídy je dnes postaveno skoro celé stylování webů, vzpomeňme například metodiky [OOCSS](oocss.md), [BEM](bem.md), ale i novější [utility CSS](css-utility.md).
 
-### `#id` – selektor ID {#id}
+### Selektor ID – `#id` {#id}
 
 Selektor ID představuje instanci prvku s identifikátorem, který odpovídá hodnotě v atributu `id`.
 
@@ -113,7 +113,7 @@ Selektor `.a#first` vybere jen `<span class="a" id="first">`.
 
 V HTML dokumentech je možné, aby jednomu ID selektoru odpovídalo více prvků, je to tak v pořádku z pohledu CSS selektoru, nikoliv ale samozřejmě z pohledu HTML sémantiky nebo přístupnosti.
 
-### `[attr]` – selektory přítomnosti a hodnoty atributů {#attr-hodnota}
+### Selektory přítomnosti a hodnoty atributů – `[attr]` {#attr-hodnota}
 
 Vybíráme, zda na prvku HTML existuje atribut nebo detekujeme jeho hodnotu.
 
@@ -132,7 +132,7 @@ Typy selektorů atributů:
 
 </div>
 
-### `[attr^=]` – selektory podřetězců atributů {#attr-podretezce}
+### Selektory podřetězců atributů – `[attr^=]` {#attr-podretezce}
 
 Zvolíme prvky podle shody s částí hodnoty atributu. Jde o selektory pro hledání podřetězců v hodnotě atributu.
 
@@ -150,7 +150,7 @@ Typy atributových selektorů podřetězců:
 
 Ve všech případech selektorů podřetězců platí, že pokud by hodnota byla prázdný řetězec, pak selektor nepředstavuje nic. Prostě se selektorem daný prvek nevybere.
 
-### `[ i]` – přepínač case-insensitivity {#attr-case}
+### Přepínač case-insensitivity `[ i]` {#attr-case}
 
 Díky tomuto novému přepínači můžeme vypnout citlivost na rozlišování malých a velkých písmen.
 
@@ -177,7 +177,7 @@ Identifikátor `s` před uzavírací závorkou (`]`) značí „sensitive“, te
 
 Kombinátory jsou speciální znaky, které umožňují kombinovat jednoduché selektory do složitějších a rozšiřovat platnost selektoru jen za splnění podmínek, jako je například vnoření prvku do určitého rodiče v DOMu.
 
-### Kombinátor potomka (`A B`)  {#kombinator-potomka}
+### Kombinátor potomka – `A B`  {#kombinator-potomka}
 
 Kombinátor s bílým znakem odděluje dva selektory (`A B`) a vybírá potomka (`B`), který je zanořený do určitého prvku `A`.
 
@@ -201,7 +201,7 @@ Další příklady:
 - `h1 em` – všechny prvky `<em>`, které jsou potomkem prvku `<h1>`.
 - `h1 * em` – všechny prvky `<em>`, které jsou potomkem ve druhém a vyšším zanoření uvnitř prvku `<h1>`.
 
-### `A > B` – kombinátor dítěte  {#kombinator-ditete}
+### Kombinátor dítěte `A > B`  {#kombinator-ditete}
 
 Kombinátor se znaménkem větší než (`A > B`) vybírá prvek `B`, který je přímým potomkem prvku `A`.
 
@@ -227,7 +227,7 @@ Další příklady:
 
 Mezera kolem kombinátoru dítěte je volitelná. `h1 > em` a `h1>em` je totožné. Pro lepší čitelnost zápisu se upřednostňuje zápis s mezerami.
 
-### `A + B` – kombinátor vedlejšího sourozence  {#kombinator-plus}
+### Kombinátor vedlejšího sourozence `A + B`  {#kombinator-plus}
 
 Kombinátor s plus (`A + B`) vybírá prvek `B`, který je vedlejším sourozencem `A`.
 
@@ -252,7 +252,7 @@ Další příklady:
 
 Mezery jsou opět volitelné. `h1 + p` je totéž jako `h1+p`, ale upřednostňujte tu první.
 
-### `A ~ B` – kombinátor pozdějšího sourozence  {#kombinator-vlnovka}
+### Kombinátor pozdějšího sourozence – `A ~ B`  {#kombinator-vlnovka}
 
 Kombinátor s vlnovkou (`A ~ B`) vybírá prvek `B`, který je vedlejším sourozencem `A`, ale zároveň jej přímo nenásleduje.
 
@@ -291,7 +291,7 @@ Všechny CSS selektory, které zde zmiňuji, jsou plně podporované ve všech p
 
 Je zde ale jedna skupina selektorů, zmíněná ve specifikaci Selectors Level 4, která podporu nemá.
 
-### Selektory sloupců {#sloupce}
+### Selektory sloupců – `A || B` {#sloupce}
 
 `A || B` – sloupcový kombinátor. Vybírá prvek `A` patřící ke sloupci `B`. Viz např. v tabulkách `col.selected || td`.
 

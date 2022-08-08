@@ -1,10 +1,14 @@
 # Pseudotřídy v CSS
 
+<!-- TODO -->
+
 ## Rozcestník typů pseudotříd {#rozcestnik}
+
+Podívejme se nejprve na roztřídený seznam všech pseudotříd v CSS. Je jich opravu hodně.
 
 ### Odkazy a kotvy
 
-[Pseudotřídy odkazů a kotev](#odkazy) umožňují vybrat různé typy odkazů nebo cíl kotvy.
+[Pseudotřídy odkazů a kotev](#odkazy) umožňují vybrat různé typy odkazů ve stránce nebo část stránky, která je cílem kotvy.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -19,7 +23,7 @@
 
 ### Uživatelské akce
 
-[Pseudotřídy uživatelských akcí](#akce) vybírají aktivní prvky podle jejich stavu vyvoleném uživatelem.
+[Pseudotřídy uživatelských akcí](#akce) vybírají aktivní prvky podle jejich stavu vovolaném uživatelem, například najetím kurzorem nebo zaměřením při ovládání z klávesnice.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -35,7 +39,7 @@
 
 ### Uživatelské vstupy
 
-[Pseudotřídy uživatelských vstupů](#vstupy) umožňují vybrat formulářové prvky podle nastaveného očekávání uživatelského vstupu.
+[Pseudotřídy uživatelských vstupů](#vstupy) umožňují vybrat formulářové prvky podle nastaveného očekávání uživatelského vstupu. Příkladem je povinný prvek (`:required`) nebo zvolené zatržítko (`:checked`).
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -58,7 +62,7 @@
 
 ### Pořadí potomků
 
-[Pseudotřídy pořadí potomků](#poradi) vybírají prvek podle jeho pořadí v sadě prvků nebo v sadě prvků stejného typu.
+[Pseudotřídy pořadí potomků](#poradi) vybírají prvek podle jeho pořadí v sadě libovolných prvků nebo v sadě prvků stejného typu.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -79,7 +83,7 @@
 
 ### Kombinace
 
-[Kombinační pseudotřídy](#kombinace) umožňují zjednodušit selektory, snížit specificitu nebo zavádějí nové možnosti jako selektor rodiče.
+[Kombinační pseudotřídy](#kombinace) nejsou až tak zaměřené na konkrétní prvky, ale umožňují zjednodušit selektory, snížit specificitu nebo zavádějí nové možnosti jako selektor rodiče.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -94,7 +98,7 @@
 
 ### Ostatní
 
-Do [ostatních pseudotříd](#ostatni) řadím to co se mi jinam nevešlo.
+Do [ostatních pseudotříd](#ostatni) řadím prostě to, co se mi jinam nevešlo.
 
 <div class="rwd-scrollable prop-table table-1-half f-6"  markdown="1">
 
@@ -108,17 +112,21 @@ Do [ostatních pseudotříd](#ostatni) řadím to co se mi jinam nevešlo.
 
 </div>
 
-Pojďme se teď na všechny typy pseudotříd a jednotlivé pseudotřídy podívat podrobně.
+Pojďme se teď jednotlivým pseudotřídám podívat na zoubek.
+
+Nesnažil jsem se zde o podrobný popis každé pseudotřídy, to by vydalo na knížku. Alespoň jsem všude doplnil nějaký příklad, aby se vám to lépe představovalo.
 
 ## Odkazy a kotvy {#odkazy}
 
-### Pseudotřída hypertextového odkazu (`:any-link`) {#any-link}
+Tyto pseudotřídy umožňují vybrat různé typy odkazů ve stránce nebo část stránky, která je cílem kotvy.
+
+### Pseudotřída hypertextového odkazu – `:any-link` {#any-link}
 
 Pseudotřída `:any-link` v selektoru představuje jakýkoliv prvek `<a>`, `<area>` nebo `<link>` s atributem `href`.
 
 Podpora v prohlížečích je [plná](https://caniuse.com/css-any-link) (s výjimkou MSIE).
 
-### Pseudotřídy pro historii odkazů (`:link` a `:visited`) {#link-visited}
+### Pseudotřídy pro historii odkazů – `:link` a `:visited` {#link-visited}
 
 Pseudotřídy cílící na historii prohlížení poskytují možnost vybrat navštívené a nenavštívené odkazy:
 
@@ -129,7 +137,7 @@ Jak je známo, po určité době mohou prohlížeče vrátit navštívený odkaz
 
 Podpora v prohlížečích je plná, včetně MSIE: [`:link`](https://caniuse.com/mdn-css_selectors_link) a [`:visited`](https://caniuse.com/mdn-css_selectors_visited).
 
-### Pseudotřída cíle: (`:target`) {#target}
+### Pseudotřída cíle – `:target` {#target}
 
 Adresa URL dokumentu může odkazovat na konkrétní prvky v dokumentu prostřednictvím fragmentu adresy (`example.cz/#kotva`). Prvky, na které se takto odkazuje, jsou pak „cílovými prvky dokumentu“, jinak též kotvami.
 
@@ -153,7 +161,7 @@ Podpora v prohlížečích je [plná](https://caniuse.com/mdn-css_selectors_targ
 
 Existuje několik pseudotříd uživatelských akcí pro výběr prvku, na který kliká nebo jinak interaguje uživatel. Prvek může odpovídat několika takovým pseudotřídám současně.
 
-### Pseudotřída najetí ukazatelem (`:hover`) {#hover}
+### Pseudotřída najetí ukazatelem – `:hover` {#hover}
 
 Pomocí `:hover` vybíráme prvky, na které uživatel najede ukazatelem myši, nebo jejich potomky.
 
@@ -166,7 +174,7 @@ V moderních prohlížečích to je použitelné jak pro odkazy, tak pro běžn�
 }
 ```
 
-### Pseudotřída aktivace prvku (`:active`) {#active}
+### Pseudotřída aktivace prvku – `:active` {#active}
 
 Umožňuje vybrat prvky, na které uživatel klikne nebo je aktivuje na klávesnici.
 
@@ -181,7 +189,7 @@ Pseudotřídu `:active` standard HTML [omezuje jen na interakční prvky](https:
 }
 ```
 
-### Pseudotřída zaměření prvku (`:focus`) {#focus}
+### Pseudotřída zaměření prvku – `:focus` {#focus}
 
 Pseudotřída `:focus` platí, dokud je prvek zaměřený (tedy je na něm „fokus“) a přijímá vstupy z klávesnice nebo myši.
 
@@ -196,7 +204,7 @@ V ukázce níže platí: Pokud na prvek dojdu navigací pomocí klávesy Tab neb
 }
 ```
 
-### Pseudotřída indikovaného zaměření (`:focus-visible`) {#focus-visible}
+### Pseudotřída indikovaného zaměření – `:focus-visible` {#focus-visible}
 
 Pseudotřída `:focus-visible` platí, když platí `:focus` (prvek je zaměřený) a zároveň prohlížeč usoudí, že je vhodné tento prvek při zaměření zvýraznit.
 
@@ -224,7 +232,7 @@ CodePen: [cdpn.io/e/wvyvNbE](https://codepen.io/machal/pen/wvyvNbE)
 
 Podpora v prohlížečích je [plná](https://caniuse.com/css-focus-visible) (s výjimkou MSIE).
 
-### Pseudotřída zaměření na rodiče (`:focus-within`) {#focus-within}
+### Pseudotřída zaměření na rodiče – `:focus-within` {#focus-within}
 
 Pseudotřída `:focus-within` se vztahuje na jakýkoli prvek, pro který platí pseudotřída `:focus`, ale také na prvek jehož potomek podmínky pro přiřazení `:focus` splňuje.
 
@@ -242,7 +250,7 @@ Vím, že se to používá pro [uchování otevírání různých meníček](htt
 
 Podpora je [plná](https://caniuse.com/css-focus-within) (s výjimkou MSIE).
 
-## Uživatelské vstupy (#vstupy)
+## Uživatelské vstupy {#vstupy}
 
 Sem patří `:disabled`, `:read-only` a další pseudotřídy, které pomáhají vybírat vstupní prvky, které mají nějaký konkrétní stav. Většinou se aplikují na formulářové prvky.
 
@@ -567,25 +575,26 @@ img:nth-of-type(odd) { … }
 img:nth-child(3n) { … }
 ```
 
-### Pseudotřída posledního prvku stejného typu – `:nth-last-of-type()` {#nth-last-of-type}
+### Další pseudotřídy pořadí
 
-Podobné jako `:nth-last-child`, jen vybere poslední n-tý prvek stejného typu, takže stejné HTML značky.
+<div class="rwd-scrollable prop-table table-1-quater f-6"  markdown="1">
 
-### Pseudotřída prvního prvku stejného typu – `:first-of-type()` {#first-of-type}
+| Selektor          | Vysvětlení         |
+|:------------------|:-------------------|
+| `:nth-last-of-type()`  | Pseudotřída posledního prvku stejného typu. Podobné jako `:nth-last-child`, jen vybere poslední n-tý prvek stejného typu, takže stejné HTML značky.  |
+| `:first-of-type()`  | Pseudotřída prvního prvku stejného typu. Podobné jako `:first-child`, jen vybere první prvek stejného typu, takže stejné HTML značky. |
+| `:last-of-type()` | Pseudotřída prvního prvku stejného typu. Podobné jako `:last-child`, jen vybere poslední prvek stejného typu, takže stejné HTML značky. |
+| `:only-of-type` | Pseudotřída prvku stejného typu bez sourozenců. Pseudotřída `:only-of-type` představuje prvek, který nemá žádné sourozence stejného typu. Jde o obdobu konstrukce pseudotříd `:first-of-type:last-of-type`. |
 
-Podobné jako `:first-child`, jen vybere první prvek stejného typu, takže stejné HTML značky.
-
-### Pseudotřída prvního prvku stejného typu – `:last-of-type()` {#last-of-type}
-
-Podobné jako `:last-child`, jen vybere poslední prvek stejného typu, takže stejné HTML značky.
-
-### Pseudotřída prvku stejného typu bez sourozenců – `:only-of-type` {#only-of-type}
-
-Pseudotřída `:only-of-type` představuje prvek, který nemá žádné sourozence stejného typu. Jde o obdobu konstrukce pseudotříd `:first-of-type:last-of-type`.
+</div>
 
 V závěrečné části tohoto dlouhého textu se podíváme na zoubek pseudotřídám, které zatím nenašly podporu v prohlížečích.
 
-## Kombinační pseudotřídy {#kombinace}
+To abychom se měli na co těšit.
+
+## Kombinace {#kombinace}
+
+Kombinační pseudotřídy nejsou až tak zaměřené na konkrétní prvky, ale umožňují zjednodušit selektory, snížit specificitu nebo zavádějí nové možnosti jako selektor rodiče.
 
 ### Pseudotřída výběru jakéhokoliv prvku – `:is` {#is}
 
@@ -712,7 +721,7 @@ Selektor atributu `[dir=ltr]` se týká pouze daného atributu, pokud je příto
 
 Například v HTML se směr jazyka prvku dědí, takže potomek bez atributu `dir` bude mít stejnou směrovost jako jeho nejbližší předek s platným atributem `dir`. To by samozřejmě atributový selektor nefungoval.
 
-### Pseudotřída jazyka (`:lang()`) {#lang}
+### Pseudotřída jazyka – `:lang()` {#lang}
 
 Pseudotřída `:lang()` umožňuje psát CSS selektory citlivé na jazyk dokumentu.
 
@@ -795,13 +804,13 @@ V některých kontextech konzumace obsahu se může hodit označení prvku, kter
 
 Specifikace jako příklady uvádí konzumaci dokumentu pomocí audia (řeči) a prohlížeční videa obsahujícího titulky tvořené technologií [WebVTT](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
 
-### Pseudotřídy stavu zdrojů {#stav-zdroju}
+### Pseudotřídy stavu zdrojů – `:playing`, `:paused`, `:buffering` {#stav-zdroju}
 
 Ve specifikaci též najdete velmi zajímavé pseudotřídy, pomocí kterých by bylo možné vybrat zdroj stánky jako obrázek nebo video, který se přehrává (`:playing`), je pozastavený (`:paused`) nebo se ukládá do mezipaměti (`:buffering`).
 
 Ve [specifikaci](https://www.w3.org/TR/selectors-4/#resource-pseudos) je těchto pozoruhodných tříd více, jen zatím pražádnou podporu nemají.
 
-### Pseudotřídy stavu zobrazení prvků
+### Pseudotřídy stavu zobrazení prvků – `:modal`, `:picture-in-picture` {#stav-zobrazeni}
 
 Opět jde velmi zajímavá skupina pseudotříd, například pro element ve stavu modálního okna (`:modal`) nebo zobrazení elementu (nejspíš videa) v režimu PiP (picture in picture), tedy překrývající obsah (pseudotřída `:picture-in-picture`).
 
@@ -819,7 +828,7 @@ textarea:blank {
 
 I zde je podpora v době psaní textu [bohužel nulová](https://caniuse.com/mdn-css_selectors_blank).
 
-### Pseudotřídy interakce s uživatelem – `:user-valid` a `:user-invalid`
+### Pseudotřídy interakce s uživatelem – `:user-valid` a `:user-invalid` {#user-valid}
 
 Tyto pseudotřídy zvolí prvky, které mají správný nebo nesprávný vstup, takže se podobají pseudotřídám platnosti (`:valid` a `:invalid`).
 
