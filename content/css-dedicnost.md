@@ -175,7 +175,9 @@ Vycházím zde [z kompletního seznamu](https://www.w3.org/TR/CSS21/propidx.html
 
 - [„Problémy“ CSS](css-jazyk-problemy.md)
 - [Kaskáda a specificita](css-kaskada.md)
-- [Selektory](css-selektory.md)
+- Dědičnost v CSS
+- [Selektory v CSS](css-selektory.md)
+- [Pseudotřídy v CSS](css-pseudotridy.md)
 
 </div>
 

@@ -1,6 +1,24 @@
 # Pseudotřídy v CSS
 
-<!-- TODO -->
+Vítejte v referenční příručce pro pseudotřídy v CSS. Pseudotřídy pomáhají [obyčejným selektorům](css-selektory.md) při snadnějším vybírání prvků pro stylování.
+
+Díky specifikaci [Selectors Level 4](https://www.w3.org/TR/selectors-4/) a [spolupráci tvůrců prohlížečů](https://www.vzhurudolu.cz/blog/215-webexpo-2022-prohlizece) můžeme dnes, my webaři, používat pseudotřídy, o kterých se nám dříve nesnilo a pomohou nám psát styly jednodušeji a efektivněji.
+
+Příkladem takových pseudotříd je `:where` a [další kombinační pseudotřídy](#kombinace). Projdeme si zde ale všechny.
+
+<!-- AdSnippet -->
+
+Prakticky použitelných pseudotříd je dnes už přes 40 a vsadím se, že některé z nich neznáte.
+
+<div class="related" markdown="1">
+
+- [„Problémy“ CSS](css-jazyk-problemy.md)
+- [Kaskáda a specificita](css-kaskada.md)
+- [Dědičnost v CSS](css-dedicnost.md)
+- [Selektory v CSS](css-selektory.md)
+- Pseudotřídy v CSS
+
+</div>
 
 ## Rozcestník typů pseudotříd {#rozcestnik}
 
@@ -135,7 +153,7 @@ Pseudotřídy cílící na historii prohlížení poskytují možnost vybrat nav
 
 Jak je známo, po určité době mohou prohlížeče vrátit navštívený odkaz do nenavštíveného stavu.
 
-Podpora v prohlížečích je plná, včetně MSIE: [`:link`](https://caniuse.com/mdn-css_selectors_link) a [`:visited`](https://caniuse.com/mdn-css_selectors_visited).
+Podpora v prohlížečích je plná, včetně MSIE – viz [`:link`](https://caniuse.com/mdn-css_selectors_link) a [`:visited`](https://caniuse.com/mdn-css_selectors_visited).
 
 ### Pseudotřída cíle – `:target` {#target}
 
@@ -157,15 +175,27 @@ V případě URL `example.cz/#kotva` se pak prvek `<h1>` podbarví žlutou.
 
 Podpora v prohlížečích je [plná](https://caniuse.com/mdn-css_selectors_target) (včetně MSIE).
 
+<!-- AdSnippet -->
+
 ## Uživatelské akce {#akce}
 
-Existuje několik pseudotříd uživatelských akcí pro výběr prvku, na který kliká nebo jinak interaguje uživatel. Prvek může odpovídat několika takovým pseudotřídám současně.
+Existuje několik pseudotříd uživatelských akcí pro výběr prvku, na který kliká nebo se kterým jinak pracuje uživatel.
+
+Prvek může odpovídat několika takovým pseudotřídám současně. Například stav navštíveného odkazu po najetí myši stylujeme tímto způsobem:
+
+```css
+:visited:hover {
+  color: red;
+}
+```
+
+Pojďme teď na ty pseudotřídy uživatelských akcí.
 
 ### Pseudotřída najetí ukazatelem – `:hover` {#hover}
 
-Pomocí `:hover` vybíráme prvky, na které uživatel najede ukazatelem myši, nebo jejich potomky.
+Pomocí `:hover` vybíráme prvky, na které uživatel najede ukazatelem myši nebo jejich potomky.
 
-V moderních prohlížečích to je použitelné jak pro odkazy, tak pro běžné prvky, viz CodePen. [cdpn.io/e/vYdYbjx](https://codepen.io/machal/pen/vYdYbjx)
+V moderních prohlížečích to je použitelné jak pro odkazy, tak pro běžné prvky.
 
 ```css
 /* Prvek zežloutne jen v momentě najetí myši na něj: */
@@ -174,13 +204,15 @@ V moderních prohlížečích to je použitelné jak pro odkazy, tak pro běžn�
 }
 ```
 
+CodePen: [cdpn.io/e/vYdYbjx](https://codepen.io/machal/pen/vYdYbjx?editors=1100)
+
 ### Pseudotřída aktivace prvku – `:active` {#active}
 
 Umožňuje vybrat prvky, na které uživatel klikne nebo je aktivuje na klávesnici.
 
-Selektor ale platí jen mezi okamžiky, kdy uživatel stiskne a pak uvolní aktivační tlačítko (třeba primární tlačítko myši).
+Selektor je ale platný jen v čase mezi okamžiky, kdy uživatel stiskne a pak uvolní aktivační tlačítko (třeba primární tlačítko myši).
 
-Pseudotřídu `:active` standard HTML [omezuje jen na interakční prvky](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-active) typu `<a>` nebo [`<button>`](button.md), ale v moderních prohlížečích funguje na všech prvcích. [cdpn.io/e/rNJNPqB](https://codepen.io/machal/pen/rNJNPqB)
+Pseudotřídu `:active` standard HTML [omezuje jen na interakční prvky](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-active) typu `<a>` nebo [`<button>`](button.md), ale v moderních prohlížečích funguje na všech prvcích.
 
 ```css
 /* Prvek zežloutne jen v momentě kliknutí na něj: */
@@ -189,11 +221,13 @@ Pseudotřídu `:active` standard HTML [omezuje jen na interakční prvky](https:
 }
 ```
 
+CodePen: [cdpn.io/e/rNJNPqB](https://codepen.io/machal/pen/rNJNPqB?editors=1100)
+
 ### Pseudotřída zaměření prvku – `:focus` {#focus}
 
 Pseudotřída `:focus` platí, dokud je prvek zaměřený (tedy je na něm „fokus“) a přijímá vstupy z klávesnice nebo myši.
 
-Toto funguje jen na takzvaně [zaměřitelných prvcích](https://html.spec.whatwg.org/multipage/interaction.html#focusable-area), tedy těch, které mohou vyvolávat akci (`<a>`, `<button>`…) nebo mají roli v navigační struktuře (např. pomocí atributu `tabindex`). [cdpn.io/e/NWyWooO](https://codepen.io/machal/pen/NWyWooO)
+Toto funguje jen na takzvaně [zaměřitelných prvcích](https://html.spec.whatwg.org/multipage/interaction.html#focusable-area), tedy těch, které mohou vyvolávat akci (`<a>`, `<button>`…) nebo mají roli v navigační struktuře (např. pomocí atributu `tabindex`).
 
 V ukázce níže platí: Pokud na prvek dojdu navigací pomocí klávesy Tab nebo na něj kliknu, tvale zežloutne.
 
@@ -204,13 +238,18 @@ V ukázce níže platí: Pokud na prvek dojdu navigací pomocí klávesy Tab neb
 }
 ```
 
+CodePen: [cdpn.io/e/NWyWooO](https://codepen.io/machal/pen/NWyWooO?editors=1100)
+
 ### Pseudotřída indikovaného zaměření – `:focus-visible` {#focus-visible}
 
-Pseudotřída `:focus-visible` platí, když platí `:focus` (prvek je zaměřený) a zároveň prohlížeč usoudí, že je vhodné tento prvek při zaměření zvýraznit.
+Pseudotřída `:focus-visible` platí, když platí `:focus` (prvek je zaměřený) _a zároveň_ prohlížeč usoudí, že je vhodné tento prvek při zaměření zvýraznit.
 
-Prakticky vzato: `:focus` vám prvek zvýrazní jak při klikání myši, tak při najetí pomocí klávesy Tab. `:focus-visible` je výhodnější v tom, že u některých prvků vynechá zvýraznění při najetí myši.
+Prakticky vzato:
 
-Tady bychom si mohli přímo vložit příklad.
+- `:focus` vám prvek zvýrazní jak při klikání myši, tak při najetí pomocí klávesy Tab.
+- `:focus-visible` je výhodnější v tom, že u některých prvků vynechá zvýraznění při najetí myši.
+
+CodePen vám to snad pomůže pochopit.
 
 Máme dva odkazové boxíky:
 
@@ -226,9 +265,9 @@ Máme dva odkazové boxíky:
 }
 ```
 
-Výhodné je to proto, že v uživatelských rozhraních často nechceme razantně zvýrazňovat při klikání, ale pro lepší přístupnost chceme prvky zvýrazňovat při navigaci klávesou Tab.
+Používat pseudotřídu `:focus-visible` je výhodné proto, že v uživatelských rozhraních často nechceme razantně zvýrazňovat při klikání, ale pro lepší přístupnost chceme prvky zvýrazňovat při navigaci klávesou Tab.
 
-CodePen: [cdpn.io/e/wvyvNbE](https://codepen.io/machal/pen/wvyvNbE)
+CodePen: [cdpn.io/e/wvyvNbE](https://codepen.io/machal/pen/wvyvNbE?editors=1100)
 
 Podpora v prohlížečích je [plná](https://caniuse.com/css-focus-visible) (s výjimkou MSIE).
 
@@ -244,15 +283,15 @@ Pseudotřída `:focus-within` se vztahuje na jakýkoli prvek, pro který platí 
 
 V tomto příkladu bude mít rodič červenou outline (dočasné zvýraznění), pokud je focus (zaměření pomocí myši nebo klávesnice) na potomka.
 
-CodePen: [cdpn.io/e/wvyvNbE](https://codepen.io/machal/pen/wvyvNbE)
+CodePen: [cdpn.io/e/wvyvNbE](https://codepen.io/machal/pen/wvyvNbE?editors=1100)
 
-Vím, že se to používá pro [uchování otevírání různých meníček](https://www.scottohara.me/blog/2017/05/14/focus-within.html) a tak dále.
+Vím, že se to používá pro [uchování otevření navigace jen s pomocí CSS](https://www.scottohara.me/blog/2017/05/14/focus-within.html) a tak dále.
 
 Podpora je [plná](https://caniuse.com/css-focus-within) (s výjimkou MSIE).
 
 ## Uživatelské vstupy {#vstupy}
 
-Sem patří `:disabled`, `:read-only` a další pseudotřídy, které pomáhají vybírat vstupní prvky, které mají nějaký konkrétní stav. Většinou se aplikují na formulářové prvky.
+Sem patří `:disabled`, `:read-only` a další pseudotřídy, jež pomáhají vybírat vstupní prvky, které mají nějaký konkrétní stav. Většinou se aplikují na formulářové prvky.
 
 ### Pseudotřídy povolení a zakázání – `:enabled` a `:disabled` {#enabled-disabled}
 
@@ -277,13 +316,13 @@ Pomocí pseudotříd můžeme vybrat takto povolené nebo zakázané prvky:
 
 Samozřejmě je toto možné aplikovat jen na prvky, se kterými může uživatel interagovat.
 
-CodePen: [cdpn.io/e/ZExJPrQ](https://codepen.io/machal/pen/ZExJPrQ)
+CodePen: [cdpn.io/e/ZExJPrQ](https://codepen.io/machal/pen/ZExJPrQ?editors=1100)
 
-Podpora `:enabled` a `:disabled` je plná ve všech prohlížečích, včetně prehistorických ještěrů.
+Podpora [`:enabled`](https://caniuse.com/mdn-css_selectors_enabled) a [`:disabled`](https://caniuse.com/mdn-css_selectors_disabled) je plná ve všech prohlížečích, včetně prehistorických ještěrů.
 
 ### Pseudotřídy proměnlivosti (možnosti zápisu) – `:read-only` a `:read-write` {#read-only-write}
 
-Některé aktivní prvky mohou sloužit jen pro čtení. Nejsou `disabled`, ale `readonly`:
+Některé aktivní prvky mohou sloužit jen pro čtení. Nejsou tedy zakázané, `disabled`, ale `readonly`:
 
 ```html
 <textarea>Read/Write Textarea</textarea>
@@ -304,7 +343,7 @@ Pomocí pseudotřít proměnlivosti je pak možné přistupovat k těmto prvkům
 
 Za pozornost stojí, že všechny neaktivní prvky, např. i `div` jsou samozřejmě `readonly`. Můžete to ale změnit přidáním atributu `contenteditable`.
 
-CodePen: [cdpn.io/e/KKovExw](https://codepen.io/machal/pen/KKovExw)
+CodePen: [cdpn.io/e/KKovExw](https://codepen.io/machal/pen/KKovExw?editors=1100)
 
 Podpora je plná.
 
@@ -325,7 +364,7 @@ Pseudotřída v CSS jménem  `:placeholder-shown` je tu proto, abychom mohli sty
 }
 ```
 
-CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow)
+CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow?editors=1100)
 
 Podpora je [plná](https://caniuse.com/css-placeholder-shown), v MSIE s prefixem.
 
@@ -358,7 +397,7 @@ Styly:
 
 První ze sady tlačítek bude vždy pro odeslání formuláře výchozí a proto se rámeček obarví.
 
-CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow)
+CodePen: [cdpn.io/e/QWmMoow](https://codepen.io/machal/pen/QWmMoow?editors=1100)
 
 Jiným příkladem je stylování výchozí možnosti z vyskakovací nabídky `<select>`.
 
@@ -386,19 +425,21 @@ input[type=checkbox]:not(:checked) {
 }
 ```
 
-Podpora pseudotřídy `:checked` je [úplná](https://caniuse.com/mdn-css_selectors_checked).
+Podpora pseudotřídy `:checked` je [plná](https://caniuse.com/mdn-css_selectors_checked).
 
 ### Pseudotřída neurčitých hodnot – `:indeterminate` {#indeterminate}
 
 Pseudotřída `:indeterminate` se vztahuje na prvky uživatelského rozhraní, jejichž hodnota je v neurčitém stavu.
 
-Například prvky radio a checkbox lze přepínat mezi stavy zaškrtnuto a nezaškrtnuto, ale někdy jsou v neurčitém stavu, tedy ani zaškrtnuto, ani nezaškrtnuto.
+Například přepínač (`<input type=radio>`) a zatržítko (`<input type=radio>`) lze přepínat mezi stavy _zaškrtnuto_ a _nezaškrtnuto_, ale někdy jsou v neurčitém stavu, tedy ani zaškrtnuto, ani nezaškrtnuto.
 
 Podobně může být v neurčitém stavu ukazatel průběhu `<progress>`, když není známo procento zbývající k dokončení.
 
 Neurčitou hodnotu přidává buď prohlížeč nebo ji můžete vynutit [atributem `indeterminate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes).
 
-Další pseudotřídy, totiž pseudotřídy kontroly vstupních hodnot, umožňují dát uživateli zpětnou vazbu, pokud něco zadá do formulářového prvku. Patří sem možnost stylovat povinná políčka (`:required`) nebo označení špatného vstupu (`:invalid`).
+Následující pseudotřídy, totiž pseudotřídy kontroly vstupních hodnot, umožňují dát uživateli zpětnou vazbu, pokud něco zadá do formulářového prvku. 
+
+Patří sem možnost stylovat povinná políčka (`:required`) nebo označení špatného vstupu (`:invalid`).
 
 ### Pseudotřídy platnosti – `:valid` a `:invalid` {#valid-invalid}
 
@@ -422,7 +463,7 @@ input:valid + label::before {
 }
 ```
 
-Ukázku jsem převzal [z MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:valid).
+Ukázku jsem převzal [z MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:valid), kde si ji můžete zkoušet.
 
 Na některé prvky není možné platnost aplikovat. Je rozdíl mezi prvkem, který nemá žádná omezení, a byl by tedy vždy `:valid`, např. `<input type=text>`, a prvkem, který nemá vůbec žádnou sémantiku platnosti dat, např. `<p>`, a není tedy ani `:valid`, ani `:invalid`.
 
@@ -450,7 +491,7 @@ input:in-range + label::before {
 }
 ```
 
-Podpora je [plná](https://caniuse.com/css-in-out-of-range), IE ovšem trucuje.
+Podpora je [plná](https://caniuse.com/css-in-out-of-range), MSIE ovšem trucuje.
 
 ### Pseudotřídy volitelnosti – `:required` a `:optional` {#required}
 
@@ -618,7 +659,7 @@ Je to užitečný syntaktický cukr, který umožňuje vyhnout se ručnímu vypi
 
 Specifičnost pseudotřídy `:is()` je nahrazena specifičností jejího nejkonkrétnějšího argumentu.
 
-Ve [specifikaci](https://www.w3.org/TR/selectors-4/#matches) je k nalezení tento příklad. Zaměřme se v něm na prvek `ol`: 
+Ve [specifikaci](https://www.w3.org/TR/selectors-4/#matches) je k nalezení tento příklad. Zaměřme se v něm na prvek `ol`:
 
 ```css
 /* Silnější specifičnost (0,2,0): */
@@ -630,10 +671,10 @@ ul > [hidden], ol > [hidden], .list > [hidden], [hidden] { … }
 
 Vysvětlím:
 
-- V prvním příkladě máme jednu pseudotřídu a jeden atributový selektor.
-- V druhém je jedna třída a jeden element.
+- V prvním příkladě máme jednu pseudotřídu a jeden atributový selektor. Je to stručnější, ale je zde silnější specificita o hodnotě (0,2,0).
+- V druhém je jedna třída a jeden element. Je to ukecanější, ale má to slabší specificitu (0,1,1).
 
-Podpora je [plná](https://caniuse.com/css-matches-pseudo) (kromě IE).
+Podpora je [plná](https://caniuse.com/css-matches-pseudo) (kromě MSIE).
 
 ### Psudotřída nulové specificity – `:where()` {#where}
 
@@ -652,13 +693,27 @@ Na rozdíl od `:is()` nepřispívá pseudotřída `:where()` ani žádný z jej�
   font-size: 2rem;
 }
 
-/* Specifičnost (0,1,1): */
+/* Specifičnost (0,0,1): */
 :where(.header, .footer, .side) h2 {
   font-size: 2rem;
 }
 ```
 
-Podpora je [plná](https://caniuse.com/mdn-css_selectors_where) s tradiční výjimkou IE.
+Od [Stephanie Eckles](https://twitter.com/5t3ph/status/1443995746601144324) jsem si půjčil následující příklad:
+
+```css
+:where(ul, ol):where([role="list"]) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+```
+
+> `:where()` (…) má vždy nulovou specifičnost. To znamená, že jej můžeme použít k nastavení rozumných výchozích hodnot, které lze přepsat.
+
+Výchozí hodnoty v demonstrovaném příkladu můžete přepsat pomocí `ul {}` nebo `ol {}`. Není třeba uvádět také atributový selektor kvůli zvýšení specificity.
+
+Podpora selektoru `:where` je [plná](https://caniuse.com/mdn-css_selectors_where) s tradiční výjimkou MSIE.
 
 ### Pseudotřída negace – `:not()` {#not}
 
@@ -676,9 +731,9 @@ Pseudotřída, která vybere prvek, který není reprezentován jejím argumente
 }
 ```
 
-Specifičnost pseudotřídy `:not()` je nahrazena specifičností nejspecifičtějšího selektoru v jejích čárkou oddělených argumentech. 
+Specifičnost pseudotřídy `:not()` je nahrazena specifičností nejspecifičtějšího selektoru v jejích čárkou oddělených argumentech.
 
-Podpora pseudotřídy `:not()` je [plná](https://caniuse.com/mdn-css_selectors_not) (kromě IE).
+Podpora pseudotřídy `:not()` je [plná](https://caniuse.com/mdn-css_selectors_not) (kromě MSIE).
 
 ### Pseudotřída vztahu – `:has()` {#has}
 
@@ -708,10 +763,14 @@ Pomocí jazykových pseudotříd je možné stylovat prvky podle směru textu (`
 
 Pseudotřída `:dir()` umožňuje webařům napsat selektory, které reprezentují prvek na základě směru určeného jazykem dokumentu.
 
+<div class="rwd-scrollable prop-table table-1-quater f-6"  markdown="1">
+
 | Selektor          | Vysvětlení         |
 |:------------------|:-------------------|
 |  `h1:dir(ltr)`  |  prvek `<h1>` jehož směr vykreslení podle jazyka je nastavený jako `ltr`, tedy zleva doprava (left-to-right).  |
 |  `h1:dir(rtl)` | prvek `<h1>` jehož směr vykreslení podle jazyka je nastavený jako `rtl`, tedy zprava doleva (right-to-left). |
+
+</div>
 
 Podporu pseudotřídy směru `dir()` v době psaní textu zatím implementoval [pouze Firefox](https://caniuse.com/css-dir-pseudo).
 
@@ -725,10 +784,14 @@ Například v HTML se směr jazyka prvku dědí, takže potomek bez atributu `di
 
 Pseudotřída `:lang()` umožňuje psát CSS selektory citlivé na jazyk dokumentu.
 
+<div class="rwd-scrollable prop-table table-1-quater f-6"  markdown="1">
+
 | Selektor          | Vysvětlení         |
 |:------------------|:-------------------|
 | `h1:lang(cs)` | prvek `<h1>`, který má nastavený (nebo podědí) český jazyk. |
 |  `:lang(fr-be) > h1` | prvek `<h1>` uvnitř dokumentu v belgické francouzštině. |
+
+</div>
 
 Podpora v prohlížečích je [plná](https://caniuse.com/mdn-css_selectors_lang) (včetně MSIE).
 
@@ -837,3 +900,5 @@ Rozdíl je v tom, že `:user-valid` a `:user-invalid` platí až poté, co s ní
 Pseudotřídy `:valid` a `:invalid` se na prvek aplikují, i když jej uživatel nijak nevyplnil, což je bohužel většinou vcelku nepraktické.
 
 Nepraktické na pseudotřídách interakce s uživatelem zase je, že v době psaní textu je [podporuje pouze Firefox](https://caniuse.com/mdn-css_selectors_user-invalid).
+
+<!-- AdSnippet -->

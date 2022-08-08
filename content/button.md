@@ -49,17 +49,17 @@ Přesněji řečeno: Pojme jakékoliv značky, které popisují text v odstavci 
 
 `<input>` přijímá pouze textové hodnoty nebo obrázek, který je ovšem dneska kvůli přístupnosti už dost krajní možností.
 
-### Můžete používat pseudotřídy :before a :after
+### Můžete používat pseudoelementy `::before` a `::after`
 
-Tohle bychom s `<input>` jako nepárovou značkou opět nemohli:
+Použití psudoelementu `::before` bychom s `<input>` jako nepárovou značkou opět nemohli:
 
 ```css
-button:before {
+button::before {
   background: url(icon.svg)
 }
 ```
 
-Nicméně pozor na velké aktivní plochy. Jak uvádí Bohumil Jahoda, větší plochy pseudotříd nejsou aktivní ve Firefoxu. [kod.djpw.cz/mckc](http://kod.djpw.cz/mckc)
+Nicméně pozor na velké aktivní plochy. Jak uvádí Bohumil Jahoda, větší plochy pseudoelementů nejsou aktivní ve Firefoxu. [kod.djpw.cz/mckc](http://kod.djpw.cz/mckc)
 
 ### Atribut value se může lišit od textu
 

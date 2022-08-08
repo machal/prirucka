@@ -210,7 +210,7 @@ Zde prostě nemáme šanci – na rozdíl například [od metodiky BEM](bem.md) 
 
 Všimněte si tříd prefixovaných v předchozí ukázce pomocí sm: – `sm:flex`, `sm:items-center` … Ano, pokud chceme responzivní chování, jsme nucení přidávat další třídy, které přenastavují již nastavené vlastnosti.
 
-Pro stylování stavů vytvářených pomocí pseudotříd je nutné přidat další specifický typ tříd. Viz například `hover:bg-purple` v předchozí ukázce. To samozřejmě úplně pohodlné není.
+Pro stylování stavů vytvářených pomocí [pseudotříd](css-pseudotridy.md) je nutné přidat další specifický typ tříd. Viz například `hover:bg-purple` v předchozí ukázce. To samozřejmě úplně pohodlné není.
 
 Na pseudoelementy pak v systémech založených na užitkových třídách můžete prakticky zapomenout. Zatímco u běžných komponent je možné na pseudoelementy navázat různé stylovací obezličky, tady pro ně nemáme prostor. Takové CSS už prostě leze ven z principů, na kterých jsou utility postavené:
 

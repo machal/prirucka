@@ -228,7 +228,7 @@ Další doporučení:
 ### 4.3) Šetříme se zanořováním {#4-zanorovani}
 
 1. Nezanořujeme do vyšší než druhé úrovně.
-2. Povoleno je jen zanoření pro následníky BEM komponenty a v druhé úrovni pro pseudotřídy nebo [Media Queries](css3-media-queries.md).
+2. Povoleno je jen zanoření pro následníky BEM komponenty a v druhé úrovni pro [pseudotřídy](css-pseudotridy.md) nebo [Media Queries](css3-media-queries.md).
 3. Ampersandové (`&__element`) zanoření v selektorech pro vyšší než druhou úroveň nepoužíváme. Komplikuje nalezení správného selektoru a kodér ztrácí jistotu nad názvem a specificitou selektoru, který vytváří.
 4. Vyhýbáme se dlouhým zanořeným deklaracím – [monolitům](https://www.vzhurudolu.cz/blog/65-css-kod-problemy#1-zavorkove-peklo-a-monoliticnost).
 

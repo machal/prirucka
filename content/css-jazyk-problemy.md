@@ -139,8 +139,13 @@ Občas je také výhodnější utilitám zvýšit specificitu nebo použít `!im
 Je dobré používat komponentový přístup a zbavit elementy závislosti na kontejneru. Prostě používat [OOCSS](oocss.md), abychom se vyhnuli problémům s kaskádou.
 
 <div class="related" markdown="1">
-- [Kaskáda v CSS](kaskada.md)
-- [Atomický design a Pattern Lab](pattern-lab.md)
+
+- „Problémy“ CSS
+- [Dědičnost](css-dedicnost.md)
+- [Kaskáda a specificita](css-kaskada.md)
+- [Selektory v CSS](css-selektory.md)
+- [Pseudotřídy v CSS](css-pseudotridy.md)
+
 </div>
 
 Tady se dotýkáme i toho, že aby to celé dávalo smysl, i design musí být komponentový.

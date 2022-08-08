@@ -39,7 +39,7 @@ Kombinátory spojují jednoduché selektory do složitějších skupin a umožň
 
 </div>
 
-V článku zcela úmyslně neuvádím pseudotřídy, které mezi selektory v CSS bezpochyby patří. Ale pořád to tady chci udržet v rozsahu článku, nikoliv knížky. Text o pseudotřídách bude následovat.
+V článku zcela úmyslně neuvádím [pseudotřídy](css-pseudotridy.md), které mezi selektory v CSS bezpochyby patří. Ale pořád to tady chci udržet v rozsahu článku, nikoliv knížky.
 
 ## Selektory prvků {#prvky}
 
@@ -282,6 +282,8 @@ Mezery v selektoru jsou opět volitelné.
 - [„Problémy“ CSS](css-jazyk-problemy.md)
 - [Dědičnost](css-dedicnost.md)
 - [Kaskáda a specificita](css-kaskada.md)
+- Selektory v CSS
+- [Pseudotřídy v CSS](css-pseudotridy.md)
 
 </div>
 
@@ -300,6 +302,6 @@ Bylo by užitečné takový selektor mít, ale zatím to žádný prohlížeč n
 - [CanIUse.com](https://caniuse.com/mdn-css_selectors_column)
 - [Specifikace](https://www.w3.org/TR/selectors-4/#table-pseudos)
 
-V pokračování tohoto textu se zaměřím na pseudotřídy v CSS, které jsou vlastně jen trošku zvláštní selektory.
+V pokračování tohoto textu se zaměřím na [pseudotřídy v CSS](css-pseudotridy.md), které jsou vlastně jen trošku zvláštní selektory.
 
 <!-- AdSnippet -->

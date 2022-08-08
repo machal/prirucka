@@ -96,7 +96,7 @@ Podívejme se na pár složitějších ukázek, ze kterých to bude snad ještě
 
 Poznámky:
 
-- Jak jste si asi všimli, univerzální selektor (`*`), kombinátory (`+`, `>`, `~`, mezera) a pseudotřída negace (`:not`) nemají na specificitu žádný vliv.
+- Jak jste si asi všimli, univerzální selektor (`*`), kombinátory (`+`, `>`, `~`, mezera) a [pseudotřída negace (`:not`)](css-pseudotridy.md#not) nemají na specificitu žádný vliv.
 - Je dobré zmínit, že spočítaná specificita není v desítkové ani jiné soustavě. Takže deset tříd nemá stejnou specificitu jako jeden identifikátor. Selektor typu identifikátor (`#id`) nad třídami (`.class`) prostě vždy vyhrává.
 
 Pojďme si dát příklad:
@@ -128,8 +128,9 @@ Pokud si nejste jistí, použijte skvělý kalkulátor specificity od Keegan Str
 
 - [„Problémy“ CSS](css-jazyk-problemy.md)
 - [Dědičnost](css-dedicnost.md)
-- [Selektory](css-selektory.md)
-- [Stylelint, protože pořádek musí být](stylelint.md)
+- Kaskáda a specificita
+- [Selektory v CSS](css-selektory.md)
+- [Pseudotřídy v CSS](css-pseudotridy.md)
 
 </div>
 
