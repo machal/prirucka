@@ -1,6 +1,6 @@
 # Pseudotřídy v CSS
 
-Vítejte v referenční příručce pro pseudotřídy v CSS. Pseudotřídy pomáhají [obyčejným selektorům](css-selektory.md) při snadnějším vybírání prvků pro stylování.
+Vítejte v referenční příručce pro pseudotřídy v CSS! Pseudotřídy pomáhají [obyčejným selektorům](css-selektory.md) při snadnějším vybírání prvků pro stylování.
 
 Díky specifikaci [Selectors Level 4](https://www.w3.org/TR/selectors-4/) a [spolupráci tvůrců prohlížečů](https://www.vzhurudolu.cz/blog/215-webexpo-2022-prohlizece) můžeme dnes, my webaři, používat pseudotřídy, o kterých se nám dříve nesnilo a pomohou nám psát styly jednodušeji a efektivněji.
 
@@ -92,10 +92,10 @@ Podívejme se nejprve na roztřídený seznam všech pseudotříd v CSS. Je jich
 | [Posledního potomka](#last-child) | `:last-child` |
 | [Jediného potomka](#only-child) | `:only-child` |
 | [N-tého prvku stejného typu](#nth-of-type) | `:nth-of-type()` |
-| [N-tého prvku typu od konce](#nth-last-of-type) | `:nth-last-of-type()` |
-| [Prvního potomka typu](#first-of-type) | `:first-of-type` |
-| [Posledního potomka typu](#last-of-type) | `:last-of-type` |
-| [Jediného potomka typu](#only-of-type) | `:only-of-type` |
+| [N-tého prvku typu od konce](#dalsi-pseudotridy-poradi) | `:nth-last-of-type()` |
+| [Prvního potomka typu](#dalsi-pseudotridy-poradi) | `:first-of-type` |
+| [Posledního potomka typu](#dalsi-pseudotridy-poradi) | `:last-of-type` |
+| [Jediného potomka typu](#dalsi-pseudotridy-poradi) | `:only-of-type` |
 
 </div>
 
@@ -109,8 +109,8 @@ Podívejme se nejprve na roztřídený seznam všech pseudotříd v CSS. Je jich
 |:------------------------------|:--------------|
 | [Výběru libovolného prvku](#is)    | `:is()` |
 | [Nulové specificity](#where) | `:where()` |
-| [Negace](#noet) | `:not()` |
-| [Vztahu](#last-child) | `:has()` |
+| [Negace](#not) | `:not()` |
+| [Vztahu](#has) | `:has()` |
 
 </div>
 
@@ -229,7 +229,7 @@ Pseudotřída `:focus` platí, dokud je prvek zaměřený (tedy je na něm „fo
 
 Toto funguje jen na takzvaně [zaměřitelných prvcích](https://html.spec.whatwg.org/multipage/interaction.html#focusable-area), tedy těch, které mohou vyvolávat akci (`<a>`, `<button>`…) nebo mají roli v navigační struktuře (např. pomocí atributu `tabindex`).
 
-V ukázce níže platí: Pokud na prvek dojdu navigací pomocí klávesy Tab nebo na něj kliknu, tvale zežloutne.
+V ukázce níže platí: Pokud na prvek dojdu navigací pomocí klávesy Tab nebo na něj kliknu, trvale zežloutne.
 
 ```css
 /* Prvek zežloutne v případě zaměření: */
@@ -435,7 +435,7 @@ Například přepínač (`<input type=radio>`) a zatržítko (`<input type=radio
 
 Podobně může být v neurčitém stavu ukazatel průběhu `<progress>`, když není známo procento zbývající k dokončení.
 
-Neurčitou hodnotu přidává buď prohlížeč nebo ji můžete vynutit [atributem `indeterminate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes).
+Neurčitou hodnotu přidává buď prohlížeč, nebo ji můžete vynutit [atributem `indeterminate`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes).
 
 Následující pseudotřídy, totiž pseudotřídy kontroly vstupních hodnot, umožňují dát uživateli zpětnou vazbu, pokud něco zadá do formulářového prvku. 
 
@@ -445,7 +445,7 @@ Patří sem možnost stylovat povinná políčka (`:required`) nebo označení �
 
 Pseudotřída `:valid` v CSS představuje jakýkoli prvek `<input>` nebo jiný formulářový prvek, jehož obsah se úspěšně validuje.
 
-Je tak možné buď stylovat validní či nevalidní prvky nebo je označit textem pomocí `content`:
+Je tak možné buď stylovat validní, či nevalidní prvky nebo je označit textem pomocí `content`:
 
 ```css
 input:invalid {
@@ -505,7 +505,7 @@ Pseudotřída `:required` v CSS označuje jakýkoliv vstupní prvek (`<input>`, 
 
 Pseudotřída `:optional` pak reprezentuje všechny ostatní vstupní prvky.
 
-Podpora [`:required`](https://caniuse.com/css-required-pseudo) i [`:optional`](https://caniuse.com/css-optional-pseudo) je plná.
+Podpora [`:required`](https://caniuse.com/mdn-css_selectors_required) i [`:optional`](https://caniuse.com/css-optional-pseudo) je plná.
 
 ## Pořadí potomků {#poradi}
 
@@ -592,7 +592,7 @@ Podpora je [plná](https://caniuse.com/mdn-css_selectors_last-child).
 
 Pseudotřída `:only-child` představuje prvek, který nemá žádné sourozence.
 
-Je to mimochodem totéž jako `:first-child:last-child` nebo `:nth-child(1):nth-last-child(1)`, jen to má nižší [specifičnost](https://www.vzhurudolu.cz/prirucka/css-kaskada).
+Je to mimochodem totéž jako `:first-child:last-child` nebo `:nth-child(1):nth-last-child(1)`, jen to má nižší [specifičnost](css-kaskada.md).
 
 Podpora je [plná](https://caniuse.com/mdn-css_selectors_only-child).
 
@@ -631,7 +631,7 @@ img:nth-child(3n) { … }
 
 V závěrečné části tohoto dlouhého textu se podíváme na zoubek pseudotřídám, které zatím nenašly podporu v prohlížečích.
 
-To abychom se měli na co těšit.
+To, abychom se měli na co těšit.
 
 ## Kombinace {#kombinace}
 
@@ -676,7 +676,7 @@ Vysvětlím:
 
 Podpora je [plná](https://caniuse.com/css-matches-pseudo) (kromě MSIE).
 
-### Psudotřída nulové specificity – `:where()` {#where}
+### Pseudotřída nulové specificity – `:where()` {#where}
 
 Na rozdíl od `:is()` nepřispívá pseudotřída `:where()` ani žádný z jejích argumentů ke specifičnosti selektoru. Specifičnost `:where()` je vždy nulová.
 
@@ -737,7 +737,7 @@ Podpora pseudotřídy `:not()` je [plná](https://caniuse.com/mdn-css_selectors_
 
 ### Pseudotřída vztahu – `:has()` {#has}
 
-O [relační pseudotřídě `:has()`](https://www.vzhurudolu.cz/prirucka/css-selektor-has) jsem už dříve psal.
+O [relační pseudotřídě `:has()`](css-selektor-has.md) jsem už dříve psal.
 
 Bez ohledu na specifikaci lidsky řečeno je pro nás důležité, že je `:has()` je použitelný jako selektor rodiče…
 
@@ -776,7 +776,7 @@ Podporu pseudotřídy směru `dir()` v době psaní textu zatím implementoval [
 
 Zajímá vás rozdíl mezi pseudotřídou `:dir(ltr)` a selektorem atributu `[dir=ltr]`? Je tam.
 
-Selektor atributu `[dir=ltr]` se týká pouze daného atributu, pokud je přítomný. Pseudotřída `:dir(ltr)` by měla využívat k znalosti sémantiky dokumentu ze strany prohlížeče, takže fungovat i pokud není jazyk nastavený přímov na HTML prvcích.
+Selektor atributu `[dir=ltr]` se týká pouze daného atributu, pokud je přítomný. Pseudotřída `:dir(ltr)` by měla využívat k znalosti sémantiky dokumentu ze strany prohlížeče, takže fungovat, i pokud není jazyk nastavený přímo na HTML prvcích.
 
 Například v HTML se směr jazyka prvku dědí, takže potomek bez atributu `dir` bude mít stejnou směrovost jako jeho nejbližší předek s platným atributem `dir`. To by samozřejmě atributový selektor nefungoval.
 
@@ -825,7 +825,7 @@ Další pseudotřídy umožňují výběr na základě informací, které se nac
 
 Ve DOMu odpovídá pseudotřída `:root` kořenovému prvku objektu `Document`. V HTML to bude standardně element `<html>`, což se ale může javascriptem změnit.
 
-V praxi se pseudotřída díky své vyšší [specificitě](https://www.vzhurudolu.cz/prirucka/css-kaskada) používá pro deklaraci [autorských vlastností (aka proměnných)](https://www.vzhurudolu.cz/prirucka/css-promenne):
+V praxi se pseudotřída díky své vyšší [specificitě](css-kaskada.md) používá pro deklaraci [autorských vlastností (aka proměnných)](css-promenne.md):
 
 ```css
 :root {
@@ -865,7 +865,7 @@ Představuje odkaz, jehož cílová absolutní adresa URL se shoduje s adresou U
 
 V některých kontextech konzumace obsahu se může hodit označení prvku, který je časově aktuální, předchozí a následující.
 
-Specifikace jako příklady uvádí konzumaci dokumentu pomocí audia (řeči) a prohlížeční videa obsahujícího titulky tvořené technologií [WebVTT](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
+Specifikace jako příklady uvádí konzumaci dokumentu pomocí audia (řeči) a prohlížení videa obsahujícího titulky tvořené technologií [WebVTT](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
 
 ### Pseudotřídy stavu zdrojů – `:playing`, `:paused`, `:buffering` {#stav-zdroju}
 

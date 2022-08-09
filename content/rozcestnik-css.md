@@ -3,10 +3,11 @@
 ## Základy CSS
 
 - [„Problémy“ jazyka](css-jazyk-problemy.md)
-- [Selektory](css-selektory.md)
 - [Kaskáda](css-kaskada.md)
 - [Dědičnost](css-dedicnost.md)
 - [Zděděná a vychozí hodnota, vlastnost all](css-all-inherit-initial-unset-revert.md)
+- [Selektory](css-selektory.md)
+- [Pseudotřídy](css-pseudotridy.md)
 
 ## Nové CSS vlastnosti
 
