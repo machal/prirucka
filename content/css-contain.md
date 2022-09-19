@@ -75,17 +75,17 @@ Zároveň jde o samostatné a izolované prvky, které se se zbytkem stránky ni
 Takhle může vypadat jejich výpis ve stránce:
 
 ```html
-<h1>Výpis článků</h1>
-<article class="article"> … </article>
-<article class="article"> … </article>
+<h1>Articles</h1>
+<article> … </article>
+<article> … </article>
 ```
 
-Představme si, že prvků `.article` jsou zde stovky a zároveň mají složitou vnitřní DOM strukturu.
+Představme si, že prvků `<article>` jsou zde stovky a zároveň mají složitou vnitřní DOM strukturu.
 
 Pomocí vlastnosti `contain` můžeme prohlížeč informovat, ať tyto prvky vyjme z celkového vykreslování stránky:
 
 ```css
-.element {
+article {
   contain: content;
 }
 ```
@@ -93,6 +93,8 @@ Pomocí vlastnosti `contain` můžeme prohlížeč informovat, ať tyto prvky vy
 Prohlížeči tak dáváme instrukci, že prvky `.element`, které „nevidí“ ve viewportu může v klidu vynechat z počítání vzhledu celé stránky.
 
 Ušetříme tím v některých situacích slušný renderovací čas.
+
+CodePen: [cdpn.io/e/gOrMOWd](https://codepen.io/machal/pen/gOrMOWd?editors=1100)
 
 ## Typy „containmentu“ {#typy}
 
@@ -105,10 +107,11 @@ Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastno
 
 | Hodnota `contain`      | Typ zapouzdření |
 |:-----------------------|:----------------|
-| `size`   |  Zapouzdření pro velikost. Prohlížeči říkám, že velikost prvku nijak neovlivní jeho potomci. Pokud nastavíme `contain:size`, je potřeba v CSS také tomuto prvku nastavit nějakou velikost. Jinak prohlížeč počítá, že velikost je nulová, což nechceme. Zapouzdření velikosti samo o sobě zase tak moc výkonu při renderování neušetří. |
-| `layout` |  Zapouzdření pro rozvržení. Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují. Díky tomu může při zápise `contain:layout` prohlížeč vynechat počítání layoutu vnitřních prvků elementu a zaměřit se jen na prvek, který tuto vlastnost má nastavenou. |
+| `size`   |  Zapouzdření pro velikost.<br>Prohlížeči říkám, že velikost prvku nijak neovlivní jeho potomci. Pokud nastavíme `contain:size`, je potřeba v CSS také tomuto prvku nastavit nějakou velikost. Jinak prohlížeč počítá, že velikost je nulová, což nechceme. Zapouzdření velikosti samo o sobě zase tak moc výkonu při renderování neušetří. |
+| `inline-size` | Zapouzdření pro „inline“ velikost. <br>Totéž jako `size` jen pro změny velikosti na vodorovné ose. |
+| `layout` |  Zapouzdření pro rozvržení. <br>Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují. Díky tomu může při zápise `contain:layout` prohlížeč vynechat počítání layoutu vnitřních prvků elementu a zaměřit se jen na prvek, který tuto vlastnost má nastavenou. |
 | `paint` |  Zapouzdření pro vykreslení. Informujeme tímto, že žádný vnitřní prvek nevyčnívá ze svého rodiče. Uvedení `contain:paint` prohlížeči umožňuje potenciálně přeskočit vykreslení potomků, pokud je prvek mimo obrazovku.   |
-| `style` |  Zapouzdření pro styly. Říkáme, že ovlivněný prvek vyjímáme z počítání hodnot napříč dokumentem, které provádějí vlastnosti jako `counter-increment`, `counter-set` nebo `quotes`.    |
+| `style` |  Zapouzdření pro styly. <br>Říkáme, že ovlivněný prvek vyjímáme z počítání hodnot napříč dokumentem, které provádějí vlastnosti jako `counter-increment`, `counter-set` nebo `quotes`.    |
 </div>
 
 Hodnoty vlastnosti `contain` jde kombinovat, takže můžete například uvést `contain: style paint`.
@@ -133,6 +136,16 @@ Jak to použít v praxi? Pojďme se zde vrátit k druhé ukázce – renderován
 - Pokud bychom použili `contain:content`, nemusíme definovat výšku jednotlivých bloků. Na druhou stranu bude prohlížeč při prvním vykreslení považovat výšku za nulovou a nevykreslí například správně velká rolovátka.
 - Pokud bychom použili `contain:strict`, prohlížeči musíme výšku sdělit, ale zase nenastane přepočítání velikosti rolovátka.
 
+## Vlastnost `contain` vytváří nové kontexty {#kontexty}
+
+Pokud containment použijete s hodnotami `paint`, `strict` nebo `content` vytvoří se nové kontexty, které je možné dělat i jinými metodami v CSS:
+
+- Nový obsahující blok (containing block) – pro potomky, jejichž vlastnost `position` je `absolute` nebo `fixed`, takže něco jako `position:relative`.
+- Nový kontext stohování ([stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)), ve kterém můžete nezávisle na zbytku stránky umísťovat prvky do vrstev pomocí `z-index`.
+- Nový kontext formátování bloku ([block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)), který například umí obsáhnout vnitřní prvky umístěné pomocí `float` nebo zakáže spojování vnějších okrajů (`margin`).
+
+Využít containment, konkrétně například `contain:content`, tedy můžete i v případě, že nechcete šetři výkon, ale usnadnit si kodérskou práci.
+
 ## Podpora je plná {#podpora}
 
 Vlastnost `contain` nepodporuje [Internet Explorer](msie.md), což vůbec nevadí. Všechny moderní prohlížeče v containmentu jedou s námi.
@@ -143,7 +156,8 @@ Viz také [CanIUse.com](https://caniuse.com/mdn-css_properties_contain)
 
 Pokud vás problematika containmentu zajímá více, zde je pár tipů k dalšímu studiu:
 
-- [CSS Containment](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Containment)  na MDN.
+- [Vlastnost `content-visibility`](css-content-visibility.md), která z containmentu vychází.
+- MDN: [CSS Containment](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Containment), [vlastnost `contain`](https://developer.mozilla.org/en-US/docs/Web/CSS/contain).
 - [Smashing Magazine: Helping Browsers Optimize With The CSS Contain Property](https://www.smashingmagazine.com/2019/12/browsers-containment-css-contain-property/)
 
 <small markdown="1">Za připomínky autor děkuje [Michalovi Matuškovi](https://www.vzhurudolu.cz/lektori/michal-matuska).</small>
