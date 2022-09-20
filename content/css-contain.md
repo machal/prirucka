@@ -8,8 +8,8 @@ Ušetříme tím výkon na stránkách s komplexním DOMem.
 
 Prohlížeče se už dlouho různými způsoby snaží nepřepočítávát vzhled celé stránky při každé změně samy.
 
-Kromě toho existují kodérské triky jak to udělat v běžném CSS (viz [Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)).
-No a relativně novou možnosí je použít pro tyhle účely vlastnost `contain`.
+Kromě toho existují kodérské triky, jak to udělat v běžném CSS (viz [Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)).
+No a relativně novou možností je použít pro tyhle účely vlastnost `contain`.
 
 → *Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `content-visibility`](css-content-visibility.md), ale silně se využívá také v [Container Queries](element-queries.md)*.
 
@@ -107,11 +107,11 @@ Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastno
 
 | Hodnota `contain`      | Typ zapouzdření |
 |:-----------------------|:----------------|
-| `size`   |  Zapouzdření pro velikost.<br>Prohlížeči říkám, že velikost prvku nijak neovlivní jeho potomci. Pokud nastavíme `contain:size`, je potřeba v CSS také tomuto prvku nastavit nějakou velikost. Jinak prohlížeč počítá, že velikost je nulová, což nechceme. Zapouzdření velikosti samo o sobě zase tak moc výkonu při renderování neušetří. |
-| `inline-size` | Zapouzdření pro „inline“ velikost. <br>Totéž jako `size` jen pro změny velikosti na vodorovné ose. |
-| `layout` |  Zapouzdření pro rozvržení. <br>Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují. Díky tomu může při zápise `contain:layout` prohlížeč vynechat počítání layoutu vnitřních prvků elementu a zaměřit se jen na prvek, který tuto vlastnost má nastavenou. |
-| `paint` |  Zapouzdření pro vykreslení. Informujeme tímto, že žádný vnitřní prvek nevyčnívá ze svého rodiče. Uvedení `contain:paint` prohlížeči umožňuje potenciálně přeskočit vykreslení potomků, pokud je prvek mimo obrazovku.   |
-| `style` |  Zapouzdření pro styly. <br>Říkáme, že ovlivněný prvek vyjímáme z počítání hodnot napříč dokumentem, které provádějí vlastnosti jako `counter-increment`, `counter-set` nebo `quotes`.    |
+| `size`   |  **Zapouzdření pro velikost.** <br>Prohlížeči říkám, že velikost prvku nijak neovlivní jeho potomci. Pokud nastavíme `contain:size`, je potřeba v CSS také tomuto prvku nastavit nějakou velikost. Jinak prohlížeč počítá, že velikost je nulová, což nechceme. Zapouzdření velikosti samo o sobě zase tak moc výkonu při renderování neušetří. |
+| `inline-size` | **Zapouzdření pro „inline“ velikost.** <br>Totéž jako `size` jen pro změny velikosti na vodorovné ose. |
+| `layout` |  **Zapouzdření pro rozvržení.** <br>Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují. Díky tomu může při zápise `contain:layout` prohlížeč vynechat počítání layoutu vnitřních prvků elementu a zaměřit se jen na prvek, který tuto vlastnost má nastavenou. |
+| `paint` |  **Zapouzdření pro vykreslení.** <br>Informujeme tímto, že žádný vnitřní prvek nevyčnívá ze svého rodiče. Uvedení `contain:paint` prohlížeči umožňuje potenciálně přeskočit vykreslení potomků, pokud je prvek mimo obrazovku.   |
+| `style` |  **Zapouzdření pro styly.** <br>Říkáme, že ovlivněný prvek vyjímáme z počítání hodnot napříč dokumentem, které provádějí vlastnosti jako `counter-increment`, `counter-set` nebo `quotes`.    |
 </div>
 
 Hodnoty vlastnosti `contain` jde kombinovat, takže můžete například uvést `contain: style paint`.
@@ -124,8 +124,8 @@ Za účelem zjednodušení problematiky pro nás, autory webů, přichází spec
 
 | Hodnota `contain`      | Typ zapouzdření |
 |:-----------------------|:----------------|
-| `strict`   |  Všechny typy zapouzdření, kromě stylů. Totéž jako zápis `contain: size layout paint`. |
-| `content`   |  Všechny typy zapouzdření, kromě stylů a velikosti. Totéž jako `contain: layout paint`. |
+| `strict`   |  Všechny typy zapouzdření, kromě stylů. <br>Totéž jako zápis `contain: size layout paint`. |
+| `content`   |  Všechny typy zapouzdření, kromě stylů a velikosti. <br>Totéž jako `contain: layout paint`. |
 
 Hodnota `strict` ušetří prohlížeči více času, ale zase musíme znát a definovat velikost prvku.
 
@@ -136,7 +136,7 @@ Jak to použít v praxi? Pojďme se zde vrátit k druhé ukázce – renderován
 - Pokud bychom použili `contain:content`, nemusíme definovat výšku jednotlivých bloků. Na druhou stranu bude prohlížeč při prvním vykreslení považovat výšku za nulovou a nevykreslí například správně velká rolovátka.
 - Pokud bychom použili `contain:strict`, prohlížeči musíme výšku sdělit, ale zase nenastane přepočítání velikosti rolovátka.
 
-## Vlastnost `contain` vytváří nové kontexty {#kontexty}
+## Vlastnost contain vytváří nové kontexty {#kontexty}
 
 Pokud containment použijete s hodnotami `paint`, `strict` nebo `content` vytvoří se nové kontexty, které je možné dělat i jinými metodami v CSS:
 
