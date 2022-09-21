@@ -184,7 +184,7 @@ Nedávej `autoplay`, žere ti to kredit na Cloudinary.
 </div>
 ```
 
-## Citace 
+### Citace 
 
 Týká se i vkládání obsahu v embedech od Twitteru, které ruším od roku 22 kvůli [cookie liště](https://www.vzhurudolu.cz/prirucka/cookie-lista-2022).
 
@@ -209,7 +209,7 @@ Na webu se to pak přepíše vkládaného `<iframe>`.
 - Odkaz ale vede na plné URL na CodePenu.
 - V parametru `?editors=` jsou uvedeny záložky se záložkou a typem kódu, který má být otevřený. Je to v řadě HTML, CSS, JS kód a konzole.
 
-### Style guide pro CodePeny
+#### Style guide pro CodePeny
 
 - Barvy podle barevného schématu výše.
 - Nepoužívat BEM a podobné metodiky, pokud to není jen o nich.
@@ -411,6 +411,19 @@ Odkaz pak například touto formou:
 
 ```
 Viz také [caniuse.com/css-containment](https://caniuse.com/#feat=css-containment)
+```
+
+### Komponenty pro formátování v tisku nebo PDF
+
+`.pbi-avoid` – zákaz zalamování uvnitř prvku (`page-break-inside:avoid`):
+
+```html
+<div class="pbi-avoid" markdown="1">
+
+<!-- Obsah, který se nesmí rozdělit na dvě stránky -->
+
+</div>
+<!-- .pbi-avoid -->
 ```
 
 ## Autorství
