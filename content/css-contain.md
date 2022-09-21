@@ -103,7 +103,7 @@ Jde o soběstačné a nezávislé zapouzdření prvku, což je ale poněkud kost
 
 Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastnosti `contain`:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
 | Hodnota `contain`      | Typ zapouzdření |
 |:-----------------------|:----------------|
@@ -120,7 +120,7 @@ Hodnoty vlastnosti `contain` jde kombinovat, takže můžete například uvést 
 
 Za účelem zjednodušení problematiky pro nás, autory webů, přichází specifikace se speciálními hodnotami vlastnosti `contain`:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
 | Hodnota `contain`      | Typ zapouzdření |
 |:-----------------------|:----------------|
