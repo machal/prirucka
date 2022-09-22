@@ -27,9 +27,11 @@ Ano, má to háček.
 Zatím to nemá tak dobrou podporu v prohlížečích.
 Aktuálně čekáme hlavně na autory Firefoxu.
 
+<!-- AdSnippet -->
+
 <div class="ebook-only" markdown="1">
 
-## Těžká hlava autora technické knížky
+## Těžká hlava autora technické knížky {#tezka-hlava}
 
 Psaní knížek je maraton.
 Pokud dlouho pracujete na technické knížce (a já na ní v době aktualizace během podzimu 2022 pracuji už dva a půl roku), může se vám stát, že v průběhu psaní vznikne technologie, kvůli které můžete celý hotový materiál vyhodit do koše.
@@ -49,7 +51,7 @@ Občas ji připomenu, ale stavět na ní zatím moc nebudu.
 </div>
 <!-- /ebook-only -->
 
-## Container Queries jsme odjakživa chtěli a mysleli si, že je nikdy nedostaneme
+## Container Queries jsme odjakživa chtěli a mysleli si, že je nikdy nedostaneme {#historie}
 
 V roce 2017 se této technologii říkalo „Element Queries“, což dávalo smysl.
 Šlo o dotazy na rozměrové parametry konkrétního prvku stránky.
@@ -68,9 +70,11 @@ Pak debata na mnoho let utichla a zůstalo jen u javascriptových knihoven, kter
 
 Pokud by vás to jako exkurze do minulosti zajímalo, zde je ten můj článek: [vrdl.in/eq](https://www.vzhurudolu.cz/prirucka/element-queries).
 
+<!-- AdSnippet -->
+
 Ale zpět k současnosti.
 
-## Implementace Element Queries v Chromu
+## Implementace Container Queries v Chromu {#chrome}
 
 S novým návrhem přišla v prosinci 2020 Miriam Suzanne, ale to byl jen jakýsi vrchol pyramidy postavený na letité práci mnoha dalších.
 
@@ -108,7 +112,7 @@ Tohle je asi zřejmé. Pokud bude šířka rodičovského prvku alespoň `30em` 
 
 A teď už prakticky, na příkladech.
 
-## Příklad: naše komponenta v Container Queries
+## Příklad: naše komponenta v Container Queries {#priklad-1}
 
 <div class="book-index" data-book-index="Media Object"></div>
 
@@ -142,7 +146,7 @@ CodePen: [vrdl.in/3lx5d](https://codepen.io/machal/pen/VwxejLg?editors=1100)
 
 Díky Container Queries se prostě zaměříme jen na danou komponentu a podmínky připravíme přímo pro ni.
 
-## Příklad: více komponent v jedné stránce
+## Příklad: více komponent v jedné stránce {#priklad-2}
 
 Ještě více toto oceníme v případě, že layout stránky obsahuje více stejných komponent vedle sebe.
 
@@ -198,7 +202,7 @@ Pokud jste v e-booku, pro detailní informace klikněte na název vlastnosti neb
 
 CodePen: [vrdl.in/1r8b7](https://codepen.io/machal/pen/xxgpLZo?editors=1100)
 
-## Příklad: pojmenované kontejnery
+## Příklad: pojmenované kontejnery {#priklad-2}
 
 Rozšiřme nyní předchozí demo se dvěma kontejnery pro jednu komponentu.
 Nová podmínka je, že první i druhý kontejner budou mít trošku jiný layout. Konkrétně chceme, aby se rozvržení zalomilo na jiném bodu zlomu.
@@ -251,11 +255,11 @@ Nejlépe si to opět vyzkoušejte v živé verzi kódu.
 
 CodePen: [vrdl.in/il0k6](https://codepen.io/machal/pen/zYjzNje?editors=1100)
 
-## Referenční příručka k vlastnostem
+## Referenční příručka k vlastnostem {#vlastnosti}
 
-Přesuňme se nyní od konkrétních základních příkladů k vlastnostem, se kterými se pojí specifikace Container Queries. 
+Přesuňme se nyní od konkrétních základních příkladů k vlastnostem, se kterými se pojí specifikace Container Queries.
 
-### Vlastnost container-type
+### Vlastnost container-type {#container-type}
 
 Vlastnost `container-type` definuje prvek jako kontejner do dotazy Container Queries.
 
@@ -265,7 +269,7 @@ Vlastnost `container-type` definuje prvek jako kontejner do dotazy Container Que
 |:--------------|:----------------|
 | `size`        | Zřizuje kontejner pro dotazy na velikost po obou osách (řádkové i blokové). |
 | `inline-size` | Zakládá kontejner pro dotazy na velikost po inline (řádkové) ose kontejneru. |
-| `normal`      | Prvek není kontejnerem pro dotazy na velikost kontejneru. |
+| `normal`      | Prvek není kontejnerem pro dotazy na velikost kontejneru. (Výchozí hodnota.) |
 
 </div>
 
@@ -273,40 +277,122 @@ Zajímavé na hodnotě `normal` je, že se prvku sice nemůžete dotazovat na ve
 O Style Queries jednou něco napíšu, jsou velmi zajímavé, ale zatím nemají podporu v prohlížečích.
 
 Ve výchozím nastavení jsou všechny prvky kontejnery pro účely Style Queries.
-Kontejnery lze vytvořit jako kontejnery pro Container Queries zadáním dalších typů dotazů pomocí vlastnosti `container-type` (nebo `zkratky container`).
+Kontejnery lze vytvořit jako kontejnery pro Container Queries zadáním dalších typů dotazů pomocí vlastnosti `container-type` (nebo `container`).
 
-<!-- 
-TODO:
-- další vlastnosti od `container-name`
-- ATD
-- podpora 
-…prostě viz Evernote
--->
+### Vlastnost container-name {#container-name}
 
-## Specifikace a další prohlížeče
+Vlastnost `container-name` určuje seznam názvů kontejnerů.
+Tyto názvy mohou být použity pravidly `@container` k filtrování dotazů, na které kontejnery se mají zaměřit.
 
-Na Container Queries se těším jako malý Jarda, a tak po očku vývoj sleduji. V Chromu se na implementaci docela viditelně pracuje. Koncem roku 2021, když se změnila specifikace, tým kolem prohlížeče v Googlu rychle zareagoval a nyní je možné v něm zkoušet právě tuto verzi.
+<div class="rwd-scrollable prop-table table-1-quarter f-6"  markdown="1">
 
-Když se podíváme na další dva zásadní prohlížeče (Safari a Firefox), zdá se, že hodlají Container Queries implementovat. Ale v systémech pro správu rozpracovaných vlastností je u obou jen pustý a prázdný záznam bez viditelné práce a bez jakékoliv diskuze.
+| Hodnota       | Co dělá?        |
+|:--------------|:----------------|
+| `none`        | Kontejner nemá žádné jméno. |
+| `<nějaký-název>` | Kontejner má jméno `<nějaký-název>`. |
 
-Problém bude také v tom, že specifikace je ve velmi raném stádiu vývoje a často se mění. Je ale strašně zajímavé ten vývoj sledovat, protože se tam např. objevují novinky jako jednotky relativní k šířce kontejneru komponenty. To by se měl malý Jarda zase na co těšit!
+</div>
 
-Na závěr teoretického úvodu přidávám odkaz na draft specifikace „CSS Containment Module Level 3“. [vrdl.in/contdraft](https://drafts.csswg.org/css-contain-3/)
+### Zkratka container {#container}
 
-## Podpora v prohlížečích a náhradní řešení
+Zkratka `container` definuje hodnoty pro `container-name` a `container-type` naráz.
+
+```css
+.container {
+  container: my-component / size;
+}
+
+.container-2 {
+  container: another-component / inline-size;
+}
+```
+
+V případě uvedení jen jedné hodnoty se počítá s `container-name`:
+
+```css
+.container {
+  container: my-component;
+}
+```
+
+Vlastnost `container-type` pak má výchozí hodnotu `normal`.
+
+### Pravidlo @container {#at-container}
+
+Pravidlo `@container` uvozuje Container Query, jejích podmínkou je dotaz na kontejner.
+
+Máme několik možností jak Container Query definovat. Jednoduše:
+
+```css
+@container my-component (inline-size > 30em) {
+  /* … */
+}
+```
+
+V kombinaci více podmínek, kde je možné používat logické operátory `and`, `or` nebo `not`:
+
+```css
+@container my-component (inline-size > 30em) and (block-size > 10em) {
+  /* … */
+}
+```
+
+Vlastnosti, na které je možné se dotazovat, jsou tyto:
+
+- Šířka: `width`.
+- Výška: `height`.
+- Řádková velikost: `inline-size`.
+- Velikost bloku: `block-size`.
+- Poměr stran: `aspect-ratio`.
+- Orientace: `orientation`.
+- Styly: funkce `style()` (zatím není podporováno).
+
+V jednom dotazu na kontejner sice nelze zadat dotaz na více pojmenovaných kontejnerů, ale lze toho dosáhnout vnořením více dotazů:
+
+```css
+@container my-component (inline-size > 30em) {
+  @container another-component (inline-size > 10em) {
+    /* … */
+  }
+}
+```
+
+Vypadá to pěkně, že? Dobře, ale jak je to tedy s podporou v prohlížečích a praktickou využitelností Container Queries?
+
+## Podpora v prohlížečích {#podpora}
+
+Na Container Queries se těším jako malý Jarda, a tak po očku vývoj sleduji.
+
+<!-- AdSnippet -->
+
+V Chromu se na implementaci docela viditelně pracuje. Od zkušební implementace v roce 2021 uběhl nějaký čas, běheme kterého autoři rychle reagovali na měnící se specifikaci.
+Od verze 106 (chystané na říjen 2022) bude podle webu CanIUse.com podpora dotazů na kontejner v nejrozšířenějším prohlížeči úplně plnohodnotná.
+
+A co další prohlížeče?
+
+- Safari se v poslední době probralo a plná implementace Container Queries dorazila už v září 2022, konkrétně do verze 16.0.
+- Edge od Microsoftu je na tom s podporou aktuálně stejně jako Chrome. Od října 2022 to bude bezva. Klíčenku posíláme do Redmondu.
+- I v nejmenším prohlížeči, ve Firefoxu, se podpora připravuje, ale soudě podle diskuze u odpovídajícího úkolu koncem září 2022 bude vývoj ještě dlouho trvat.
+
+Problém je také v tom, že specifikace je poměrně raném stádiu vývoje a často se mění.
+Je ale strašně zajímavé ten vývoj sledovat, protože se tam např. objevují novinky jako jednotky relativní k šířce kontejneru komponenty.
+To by se měl malý Jarda zase na co těšit!
+
+Na závěr přidávám odkaz na aktuální verzi specifikace „CSS Containment Module Level 3“. [vrdl.in/46rac](https://www.w3.org/TR/css-contain-3/)
+
+## Možná náhradní řešení {#fallback}
 
 <div class="book-index" data-book-index="Fallback"></div>
 <div class="book-index" data-book-index="Náhradní řešení"></div>
 
-Jak jsem už psal, v lednu 2022 Container Queries nepodporuje žádný prohlížeč dostupný běžným smrtelníkům tam venku. Implementace v Chromu je zkušební a nedostupná běžným uživatelům.
+Aktuálně tedy čekáme na podporu ze strany Firefoxu.
+Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
 
-Předpokládám ale, že někteří čtenáři na tenhle text narazí v době, kdy budou už existovat implementace v některých prohlížečích, v jiných naopak ne.
+Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií.
+Pomocí postupného vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a to horší těm nepodporujícím.
 
-Osobně bych očekával nějakou dobu trvající situaci, že prohlížeče postavené na Chromiu se dotazy na rodičovský element naučí, kdežto Firefox a Safari ještě ne. Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
-
-Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií. Pomocí postupného vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a to horší těm nepodporujícím.
-
-Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili. Například v případě nepodpory Safari bude naše komponenta v tomto prohlížeči vypadat následovně.
+Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili.
+Například v případě nepodpory Safari by naše komponenta v tomto prohlížeči vypadala následovně.
 
 <figure>
 <img src="../dist/images/original/vdlayout/container-queries-safari.jpg" width="1600" height="450" alt="">
@@ -315,16 +401,41 @@ Safari: „Container Queries neumím, ale nějak to zobrazím.“
 </figcaption>
 </figure>
 
-Na mobilu nemusí vadit, že podmínku `@container` prohlížeč neumí. Tam layout často nepotřebujeme. Na větších obrazovkách dostane uživatel jiný vzhled komponenty. Vadí to? Nemusí.
+Na mobilu nemusí vadit, že podmínku `@container` prohlížeč neumí.
+Tam layout často nepotřebujeme.
+Na větších obrazovkách dostane uživatel jiný vzhled komponenty. Vadí to? Nemusí.
 
-Osobně bych přemýšlel, jak moc odlišný uživatelský prožitek zde lidé dostávají a kolika z nich se to dotkne. Safari je ve střední Evropě populární hlavně na mobilech, jako desktopový prohlížeč jej používá jen pár jednotek procent uživatelů.
+Osobně bych přemýšlel, jak moc odlišný uživatelský prožitek zde lidé dostávají a kolika z nich se to dotkne.
 
 Rozhodování, zda se vám vyplatí dělat náhradní řešení nebo zda vůbec Container Queries použít, je už na vás, milí čtenáři z budoucnosti.
 
-## Něco pro alternativce: krkavčí technika
+### Polyfill neurazí {#polyfill}
 
-Pro pořádek ještě zmíním, že existují pokusy dosáhnout zde popsané funkčnosti za pomoci přiohnutí už existujících vlastností.
+Samozřejmě se i pro Container Queries se objevily polyfilly, čili javascriptové emulace dané vlastnosti.
+Za běžných okolností bych vás z důvodu pomalé rychlosti takových řešení od využívání odrazoval.
+Jenže v tomto případě jde o rozchození vlastnosti ve Firefoxu, prohlížeči, který využívá pár procent uživatel.
+Zase tak strašně moc proti tomu protestovat nebudu.
+[vrdl.in/cqpol](https://github.com/GoogleChromeLabs/container-query-polyfill)
+
+### Něco pro alternativce: krkavčí technika {#krkavec}
+
+Pro pořádek ještě zmíním, že existují pokusy dosáhnout funkce Container Queries za pomoci přiohnutí už existujících vlastností.
+
+<div class="web-only" markdown="1">
+
+Vezměme například [„The Raven Technique“](https://css-tricks.com/the-raven-technique-one-step-closer-to-container-queries/) popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020.
+Její výhodou je podpora ve všech moderních prohlížečích.
+
+</div>
+<!-- /web-only -->
+
+<div class="ebook-only" markdown="1">
 
 Vezměme například „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Její výhodou je podpora ve všech moderních prohlížečích.
 
 O technice [píšu v další kapitole](krkavci-technika.md).
+
+Je to ale dost šílené. Možná vám bude trvat delší dobu to pochopit než pak reálně nasadit na váš projekt.
+
+</div>
+<!-- /ebook-only -->
