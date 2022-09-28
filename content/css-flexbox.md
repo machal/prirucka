@@ -181,8 +181,8 @@ Představme si triviální třísloupcový layout:
 ```html
 <div class="container">
   <p class="col col-1">First is loooooong.</p>
-  <p class="col col-2">Second is looooonger.<br/>…<br/>…</p>
-  <p class="col col-3">Third is short.</p>  
+  <p class="col col-2">Second is looooonger.<br>…<br>…</p>
+  <p class="col col-3">Third is short.</p>
 </div>
 ```
 
