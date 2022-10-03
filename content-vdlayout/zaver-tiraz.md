@@ -11,6 +11,7 @@ Redakce a jazyková korektura: Petr Jediný Novotný, [pjnovotny.cz](http://pjno
 Obrázky, schémata a vnitřní sazba: Martin Michálek  
 Obálka a spolupráce na grafice knihy: Petr Šťastný, [raist.cz](https://raist.cz/)  
 Spolupráce na webu: Jan Kočiš, [SUPERKODERS](https://superkoders.com/)  
+Technická pomoc s e-booky: Lenka Silná  
 Foto autora: Oldřich Hrb, [oldrichhrb.cz](https://oldrichhrb.cz/)
 
 V knize jsou použita písma Capita a Foro od Dietera Hofrichtera  
@@ -20,7 +21,7 @@ Tisk: PBtisk a.s.
 
 Vydal Martin Michálek – Vzhůru dolů
 
-Verze 1.0, březen 2022
+Verze 1.1, říjen 2022
 
 ISBN:  
 Tištěná kniha: 978-80-88253-07-5  

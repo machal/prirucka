@@ -273,7 +273,7 @@ Ukázku uvidíte v CodePenu výše.
 <div class="book-index" data-book-index="Mezera v layoutu"></div>
 <div class="book-index" data-book-index="Gap"></div>
 
-Bavme se nyní o mezerách. Jde prostor mezi buňkami mřížky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
+Bavme se nyní o mezerách. Jde o prostor mezi buňkami mřížky, pro jehož definici se používá [vlastnost `gap`](css-gap.md):
 
 ```css
 .container {
