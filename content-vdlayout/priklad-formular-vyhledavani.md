@@ -230,7 +230,7 @@ Tady se samozřejmě musím pozastavit u využití dotazů na média – [Media 
 
 Jenže v tomto případě jsme se zaměřili na jednu malou komponentu. Tu navíc mohou naši zlovolní vývojářští a designérští kolegové umísťovat do různých míst stránek, přesně podle dnešního způsobu práce se systémy komponent.
 
-Zde by se prostě daleko víc hodilo namísto dotazů na média a klíčového slova `@media` použít dotazy na rodičovský element a slovo `@container`. Jak ale už také víte, [Container Queries](container-queries.md) jsou v době psaní jen zkušebně implementovány v prohlížeči Chrome a vůbec není jisté, že se ujmou.
+Zde by se prostě daleko víc hodilo namísto dotazů na média a klíčového slova `@media` použít dotazy na rodičovský element a slovo `@container`. Jak ale už také víte, [Container Queries](container-queries.md) v době psaní zatím nemají plnou podporu.
 
 ## Co jsme se naučili?
 

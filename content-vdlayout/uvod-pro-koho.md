@@ -73,7 +73,7 @@ Během psaní knížky se objevila řada novinek, které ještě nemají plnou p
 
 <div class="book-index" data-book-index="Container Queries"></div>
 
-Takové [Container Queries](container-queries.md) sice mají zatím jen experimentální podporu v Chromu, ale mohutně se na nich pracuje, a pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
+Takovým [Container Queries](container-queries.md) sice zatím chybí podpora ve Firefoxu, ale pokud to klapne, zcela to změní způsob tvorby webových uživatelských rozhraní.
 
 Dále jsem neodolal například u [subgridu](css-subgrid.md), který má zatím implementaci jen ve Firefoxu. Opět se ale zdá, že zájem o implementaci jeví všechny prohlížeče a že i tohle výrazně změní tvorbu layoutů.
 

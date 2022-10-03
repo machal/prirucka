@@ -4,7 +4,7 @@
 
 V posledním příkladu mírně sejdeme z cesty poznávání CSS layoutů a vrátíme se k jednomu z našich témat – Container Queries versus Media Queries.
 
-Rozebereme si totiž „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které ale v době psaní této podkapitoly nemají podporu v prohlížečích.
+Rozebereme si totiž „The Raven Technique“ popsanou Mathiasem Hülsbuschem na CSS-Tricks v roce 2020. Jde o alternativu k žádaným [Container Queries](container-queries.md), které ale v době psaní této podkapitoly nemají plnou podporu v prohlížečích.
 
 Výhodou této techniky je podpora ve všech moderních prohlížečích. Nevýhodou je krkolomnost.
 

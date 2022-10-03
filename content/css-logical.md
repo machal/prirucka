@@ -166,7 +166,7 @@ Než je začnete používat, dobře si vše otestujte v různých prohlížečí
 
 Pro box model máme hezký obrázek s porovnáním fyzických a logických variant:
 
-<figure class="figure-thirds">
+<figure>
 <img src="../dist/images/original/vdlayout/css-logical-physical.jpg" width="1600" height="900" alt="CSS physical / CSS logical">
 <figcaption markdown="1">
 Logické hodnoty jako synonyma těch fyzických.  

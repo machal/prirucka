@@ -212,7 +212,7 @@ Jsou to chyby spíše menšího kalibru, ale je jich poměrně dost.
 <figure class="figure-thirds">
 <img src="../dist/images/original/vdlayout/css-multicol-caniuse-issues.jpg" width="1600" height="900" alt="Podpora vícesloupcového layoutu v prohlížečích na CanIUse - záložka issues">
 <figcaption markdown="1">
-*Pytel blech. Drobné problémy ve vícesloupcovém layoutu. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
+*Pytel blech. Drobné problémy ve vícesloupcovém layoutu. Číst to celé nemusíte, stačí vám vědět, že blech je zde hodně. Zdroj: [CanIUse.com](https://caniuse.com/multicolumn).*
 </figcaption>
 </figure>
 

@@ -6,12 +6,17 @@ Ušetříme tím výkon na stránkách s komplexním DOMem.
 
 <!-- AdSnippet -->
 
-Prohlížeče se už dlouho různými způsoby snaží nepřepočítávát vzhled celé stránky při každé změně samy.
+Prohlížeče se už dlouho různými způsoby snaží nepřepočítávat vzhled celé stránky při každé změně samy.
 
-Kromě toho existují kodérské triky, jak to udělat v běžném CSS (viz [Layout Boundaries](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/)).
+Kromě toho existují kodérské triky, jak to udělat v běžném CSS (hledejte např. „Layout Boundaries“).
 No a relativně novou možností je použít pro tyhle účely vlastnost `contain`.
 
+<div class="web-only" markdown="1">
+
 → *Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `content-visibility`](css-content-visibility.md), ale silně se využívá také v [Container Queries](element-queries.md)*.
+
+</div>
+<!-- /web-only -->
 
 ## Dva příklady {#priklad}
 
@@ -20,7 +25,7 @@ Následující příklady proto berte jako schématické a hodně zjednodušené
 
 ### Přidání prvku do DOMu {#priklad-pridani}
 
-Tuhle ukázku jsem převzal [z dokumentace od Googlu](https://developers.google.com/web/updates/2016/06/css-containment). Máme následující HTML:
+Tuhle ukázku jsem převzal z dokumentace od Googlu. Máme následující HTML:
 
 ```html
 <section class="view">
@@ -98,7 +103,7 @@ CodePen: [cdpn.io/e/gOrMOWd](https://codepen.io/machal/pen/gOrMOWd?editors=1100)
 
 ## Typy „containmentu“ {#typy}
 
-Zatím se mi nepovedlo najít vhodné české slovíčko pro teorii, o které se [ve specifikaci](https://www.w3.org/TR/css-contain-2/) mluví jako o „CSS containmentu“.
+Zatím se mi nepovedlo najít vhodné české slovíčko pro teorii, o které se ve specifikaci mluví jako o „CSS containmentu“.
 Jde o soběstačné a nezávislé zapouzdření prvku, což je ale poněkud kostrbaté označení.
 
 Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastnosti `contain`:
@@ -141,8 +146,8 @@ Jak to použít v praxi? Pojďme se zde vrátit k druhé ukázce – renderován
 Pokud containment použijete s hodnotami `paint`, `strict` nebo `content` vytvoří se nové kontexty, které je možné dělat i jinými metodami v CSS:
 
 - Nový obsahující blok (containing block) – pro potomky, jejichž vlastnost `position` je `absolute` nebo `fixed`, takže něco jako `position:relative`.
-- Nový kontext stohování ([stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)), ve kterém můžete nezávisle na zbytku stránky umísťovat prvky do vrstev pomocí `z-index`.
-- Nový kontext formátování bloku ([block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)), který například umí obsáhnout vnitřní prvky umístěné pomocí `float` nebo zakáže spojování vnějších okrajů (`margin`).
+- Nový kontext stohování (stacking context), ve kterém můžete nezávisle na zbytku stránky umísťovat prvky do vrstev pomocí `z-index`.
+- Nový kontext formátování bloku (block formatting context), který například umí obsáhnout vnitřní prvky umístěné pomocí `float` nebo zakáže spojování vnějších okrajů (`margin`).
 
 Využít containment, konkrétně například `contain:content`, tedy můžete i v případě, že nechcete šetři výkon, ale usnadnit si kodérskou práci.
 
@@ -150,7 +155,9 @@ Využít containment, konkrétně například `contain:content`, tedy můžete i
 
 Vlastnost `contain` nepodporuje [Internet Explorer](msie.md), což vůbec nevadí. Všechny moderní prohlížeče v containmentu jedou s námi.
 
-Viz také [CanIUse.com](https://caniuse.com/mdn-css_properties_contain)
+Viz také [CanIUse.com/mdn-css_properties_contain](https://caniuse.com/mdn-css_properties_contain)
+
+<div class="web-only" markdown="1">
 
 ## Odkazy {#odkazy}
 
@@ -163,3 +170,6 @@ Pokud vás problematika containmentu zajímá více, zde je pár tipů k další
 <small markdown="1">Za připomínky autor děkuje [Michalovi Matuškovi](https://www.vzhurudolu.cz/lektori/michal-matuska).</small>
 
 <!-- AdSnippet -->
+
+</div>
+<!-- /web-only -->
