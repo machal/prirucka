@@ -81,13 +81,13 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 	- Písmo: Foro, InConsolata.
 	- Písmo pro vnitřek CodePenů - sjednotit na systémové: Helvetica, Georgia, Courrier.
 	- Obsah nikdy ke krajům.
-	- Minimalizmus. Pokud to jde dvěmi barvami, udělat dvěmi. 
+	- Minimalizmus. Pokud to jde dvěmi barvami, udělat dvěma.
 	- Bez kudrlinek jako stíny na pozadí screenshotů z Maca.
 	- Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
 	- V obrázcích neopakovat delší kód, který je v textu.
 	- Nedávat nikde tečkované, proužkované linky a šrafování - vypadá to blbě, nepasuje to a šrafování působí jako šikmý obrázek
-- Zdroje ukládáme buď přímo do příručky, nebo experimentálně taháme [z Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/home). 
-
+- Optimalizace: Před uložením do `src/images/` vždy JPEG prohnat přes OptImage.
+- Zdroje ukládáme buď přímo do příručky, nebo experimentálně taháme [z Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/home).
 
 #### Vkládání obrázků
 
