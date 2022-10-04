@@ -46,7 +46,7 @@ Skvěle to (jako vždy) popisuje Rachel Andrew v textu „Native CSS Masonry Lay
 Určitě zde jsou tací, kteří o layoutu masonry nic moc nevědí. „Masonry“ je v překladu zdivo, takže jde o „zděné“ rozvržení stránky.
 
 <figure>
-<img src="../dist/images/original/masonry.jpg" width="1600" height="900" alt="Masonry layout na webu Erika Johanssona">
+<img src="../dist/images/original/vdlayout/masonry.jpg" width="1600" height="900" alt="Masonry layout na webu Erika Johanssona">
 <figcaption markdown="1">
 *Masonry na webu Erika Johanssona. Jediná vada na kráse je vykreslení pomocí klientského JavaScriptu. [erikjo.com/work](https://www.erikjo.com/work)*
 </figcaption>
@@ -94,7 +94,7 @@ Raději to vysvětlím:
 Výsledek tohoto zápisu nicméně bez Firefox Nightly lépe uvidíte na následujícím obrázku.
 
 <figure class="figure-thirds">
-<img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
+<img src="../dist/images/original/vdlayout/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
 <figcaption markdown="1">
 Nativně vykreslený layout typu masonry. Zdroj: CodePen Rachel Andrew.
 </figcaption>

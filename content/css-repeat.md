@@ -65,7 +65,7 @@ Použití zápisu `repeat()` v kombinaci s klíčovými slovy `auto-fill` a `au
 <div class="book-index" data-book-index="auto-fit"></div>
 
 <figure>
-<img src="../dist/images/original/auto-fill-fit.jpg" alt="">
+<img src="../dist/images/original/vdlayout/auto-fill-fit.jpg" alt="auto-fit a auto-fill">
 <figcaption markdown="1">
 Hodnota auto-fill přidává do volného prostoru neviditelné buňky, naproti tomu auto-fit prioritizuje roztahování těch už vykreslených.
 </figcaption>

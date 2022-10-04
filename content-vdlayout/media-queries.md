@@ -121,7 +121,7 @@ Ještě se čistě obecně pozastavme u složení jednotlivých částí každé
 Dotaz na médium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.
 
 <figure class="figure-thirds">
-<img src="../dist/images/original/media-query.jpg" alt="">
+<img src="../dist/images/original/vdlayout/media-query.jpg" alt="Anatomie Media Query">
 <figcaption markdown="1">
 Anatomie Media Query.
 </figcaption>

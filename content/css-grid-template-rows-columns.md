@@ -221,7 +221,7 @@ Zápisem `repeat(6, 1fr)` říkáme: „Napiš šestkrát po sobě hodnotu `1fr`
 Hodnota `masonry` je specifická, protože by v budoucnu měla zařídit nativní [masonry (nebo zděný) layout](css-masonry.md).
 
 <figure class="web-only">
-<img src="../dist/images/original/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
+<img src="../dist/images/original/vdlayout/masonry-css.jpg" width="1600" height="900" alt="Masonry nativně pomocí CSS">
 <figcaption markdown="1">
 *Nativně vykreslený masonry layout. Zdroj: [Rachel Andrew](https://codepen.io/rachelandrew/pen/wvWmZWB).*
 </figcaption>

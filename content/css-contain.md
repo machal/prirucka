@@ -63,7 +63,7 @@ Blbé ovšem je, že se ten proces spouští pro celý DOM a celou stránku.
 Může pak pomoci přidání vlastnosti `contain`.
 
 <figure>
-<img src="../dist/images/original/css-contain.png" width="1600" height="900" alt="…">
+<img src="../dist/images/original/vdlayout/css-contain.png" width="1600" height="900" alt="…">
 <figcaption markdown="1">
 *Ilustrační obrázek: Čas potřebný pro fázi layout můžeme snížit díky omezení na konkrétní boxík menšímu počtu prvku k přepočítání. Zdroj [developers.google.com](https://developers.google.com/web/updates/2016/06/css-containment).*
 </figcaption>

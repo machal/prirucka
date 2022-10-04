@@ -57,7 +57,7 @@ Kam si myslíte, že se třetí položka posune? Na první místo? Na druhé? P�
 Do obrázku jsem nakreslil nejen řešení, ale rovnou i hned dvě další možná nastavení.
 
 <figure>
-<img src="../dist/images/original/css-order.jpg" width="1600" height="900" alt="CSS vlastnost order">
+<img src="../dist/images/original/vdlayout/css-order.jpg" width="1600" height="900" alt="CSS vlastnost order">
 <figcaption markdown="1">
 Číselné hodnoty vlastnosti order vytvářejí nové řazení. Kladné za stávajícími položkami, záporné před nimi.
 </figcaption>
