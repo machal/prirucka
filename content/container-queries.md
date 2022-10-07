@@ -152,7 +152,8 @@ Já: „Mám dvě komponenty vedle sebe a chci nastavovat breakpointy podle jeji
 </figure>
 
 Zde bychom už byli bez Container Queries namydlení.
-Buď bychom museli opravdu složitě nastavovat Media Queries pro různé případy výskytu komponenty ve stránce nebo se obejít úplně bez dotazů.
+První možností řešení by bylo složitě nastavovat Media Queries pro různé případy výskytu komponenty ve stránce.
+Další možností, která by se nabízela, by bylo obejít se úplně bez dotazů. To ale nechceme.
 
 V druhém demu jsou naše dvě komponenty vloženy vedle sebe pomocí následujícího layoutu.
 
@@ -201,7 +202,7 @@ CodePen: [vrdl.in/1r8b7](https://codepen.io/machal/pen/xxgpLZo?editors=1100)
 Rozšiřme nyní předchozí demo se dvěma kontejnery pro jednu komponentu.
 Nová podmínka je, že první i druhý kontejner budou mít trošku jiný layout. Konkrétně chceme, aby se rozvržení zalomilo na jiném bodu zlomu.
 
-Naše dva kontejnery si pojmenujeme třídami `container--one` a `container--two`:
+Naše kontejnery si pojmenujeme dvěma třídami, první bude `container--one` a druhá `container--two`:
 
 ```html
 <div class="page">  
@@ -276,8 +277,8 @@ Kontejnery pro Style Queries lze přetvořit v kontejnery pro Container Queries 
 
 ### Vlastnost container-name {#container-name}
 
-Vlastnost `container-name` určuje seznam názvů kontejnerů.
-Tyto názvy mohou být použity pravidly `@container` k filtrování dotazů, na které kontejnery se mají zaměřit.
+Pomocí `container-name` určíme seznam názvů kontejnerů.
+Ty mohou být použity pravidly `@container` k filtrování, na které kontejnery se mají zaměřit.
 
 <div class="rwd-scrollable prop-table table-1-quarter f-6"  markdown="1">
 
@@ -290,7 +291,7 @@ Tyto názvy mohou být použity pravidly `@container` k filtrování dotazů, na
 
 ### Zkratka container {#container}
 
-Zkratka `container` definuje hodnoty pro `container-name` a `container-type` naráz.
+Zkratka `container` definuje hodnoty pro `container-name` i `container-type`.
 
 ```css
 .container {
@@ -314,9 +315,7 @@ Vlastnost `container-type` pak má výchozí hodnotu `normal`.
 
 ### Pravidlo @container {#at-container}
 
-Pravidlo `@container` uvozuje Container Query, jejích podmínkou je dotaz na kontejner.
-
-Máme několik možností, jak Container Query definovat. Jednoduše:
+Pravidlo `@container` uvozuje Container Query. Máme několik možností, jak Container Query definovat. Jednoduše:
 
 ```css
 @container my-component (inline-size > 30em) {
@@ -332,7 +331,7 @@ V kombinaci více podmínek, kde je možné používat logické operátory `and`
 }
 ```
 
-Vlastnosti, na které je možné se dotazovat, jsou tyto:
+Vlastnosti, na které je možné se dotazovat, jsou následující:
 
 - Šířka: `width`.
 - Výška: `height`.

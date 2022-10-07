@@ -35,10 +35,6 @@ Tuhle ukázku jsem převzal z dokumentace od Googlu. Máme následující HTML:
 <section class="view">
   About
 </section>
-
-<section class="view">
-  Contact
-</section>
 ```
 
 A teď JavaScriptem přidáme nový prvek:
@@ -51,10 +47,6 @@ A teď JavaScriptem přidáme nový prvek:
 <section class="view">
   About
   <div class="newly-added-element">Check me out!</div>
-</section>
-
-<section class="view">
-  Contact
 </section>
 ```
 
@@ -108,7 +100,7 @@ Jde o soběstačné a nezávislé zapouzdření prvku, což je ale poněkud kost
 
 Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastnosti `contain`:
 
-<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-quater f-6"  markdown="1">
 
 | Hodnota `contain`      | Typ zapouzdření |
 |:-----------------------|:----------------|
@@ -117,6 +109,7 @@ Známe čtyři typy zapouzdření, které jsou zároveň možné hodnoty vlastno
 | `layout` |  **Zapouzdření pro rozvržení.** <br>Říkáme tím, že se layout potomků prvku a zbytku stránky nijak vzájemně neovlivňují. Díky tomu může při zápise `contain:layout` prohlížeč vynechat počítání layoutu vnitřních prvků elementu a zaměřit se jen na prvek, který tuto vlastnost má nastavenou. |
 | `paint` |  **Zapouzdření pro vykreslení.** <br>Informujeme tímto, že žádný vnitřní prvek nevyčnívá ze svého rodiče. Uvedení `contain:paint` prohlížeči umožňuje potenciálně přeskočit vykreslení potomků, pokud je prvek mimo obrazovku.   |
 | `style` |  **Zapouzdření pro styly.** <br>Říkáme, že ovlivněný prvek vyjímáme z počítání hodnot napříč dokumentem, které provádějí vlastnosti jako `counter-increment`, `counter-set` nebo `quotes`.    |
+
 </div>
 
 Hodnoty vlastnosti `contain` jde kombinovat, takže můžete například uvést `contain: style paint`.
@@ -125,12 +118,14 @@ Hodnoty vlastnosti `contain` jde kombinovat, takže můžete například uvést 
 
 Za účelem zjednodušení problematiky pro nás, autory webů, přichází specifikace se speciálními hodnotami vlastnosti `contain`:
 
-<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-quater f-6"  markdown="1">
 
 | Hodnota `contain`      | Typ zapouzdření |
 |:-----------------------|:----------------|
 | `strict`   |  Všechny typy zapouzdření, kromě stylů. <br>Totéž jako zápis `contain: size layout paint`. |
 | `content`   |  Všechny typy zapouzdření, kromě stylů a velikosti. <br>Totéž jako `contain: layout paint`. |
+
+</div>
 
 Hodnota `strict` ušetří prohlížeči více času, ale zase musíme znát a definovat velikost prvku.
 
