@@ -25,7 +25,7 @@ Subgrid je součástí specifikace [CSS gridu](css-grid.md).
 Grid je skvělý, ale dříve či později se s ním dostaneme do situace, kdy potřebujeme jeden grid zanořit do druhého.
 V takové situaci si pak pochopitelně přejeme, aby vnitřní grid dokázal podědit vnější layout.
 
-Jak vidíte na obrázku níže, subgrid mám to pommůže zařídit.
+Jak vidíte na obrázku níže, subgrid mám to pomůže zařídit.
 Vnitřní části položek budou lícovat, i když mají různě velký obsah.
 
 <figure>
@@ -142,24 +142,28 @@ CodePen: [vrdl.in/se38k](https://codepen.io/machal/pen/wvrQgLJ?editors=1100)
 Vzhledem k tomu, že v době aktualizace textu (říjen 2022) subgrid umí jen dva menší prohlížeče, Firefox a Safari, nepůjdu u této části CSS gridu úplně do hloubky.
 Pár poznámek zde ale uvedu:
 
-### Vícerozměrnost sugridu
+### Vícerozměrnost sugridu {#vicerozmernost}
 
 V ukázce jsme pro podmřížku využili jen svislý směr rodičovského layoutu.
 Je ale samozřejmě možné využít i vodorovný nebo prostě oba směry najednou.
 Pak se z toho stává jeden velký (ale krásný) tabulkový layout, jako z roku 2002.
 Dělám si legraci, je to samozřejmě daleko, daleko lepší než layout v `<table>`.
 
-### Dědění mezer
+<!-- AdSnippet -->
+
+### Dědění mezer {#dedeni-mezer}
 
 [Vlastnost `gap`](css-gap.md) se z rodičovského gridu samozřejmě dědí i na ten vnitřní.
 Je ale možné si mezery ve vnitřním layoutu změnit novou deklarací `gap`.
 
-### Žádné přidávání implicitních řádků nebo sloupců
+### Žádné přidávání implicitních řádků nebo sloupců {#implicitni}
 
 V běžném gridu je možné pomocí [vlastností `grid-auto-`](css-grid-auto-rows-columns.md) definovat rozvržení pro řádky či sloupce.
 Ty se automaticky přidají, když se rozšíří obsah v HTML.
 Je asi pochopitelné, že toto v subgridu možné není.
 Vždy se jen umísťuje do mřížky, která je zděděná shora od rodičovského gridu.
+
+<!-- AdSnippet -->
 
 ## Podpora v prohlížečích {#podpora}
 
