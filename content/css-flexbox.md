@@ -26,19 +26,19 @@ Můžete také použít „inline“ hodnotu: `inline-flex`, která se chová ja
 
 <div class="reference-items">
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-flex-wrap.md">flex-wrap</a></h4>
     <p><a href="css-flex-wrap.md"><img src="../dist/images/small/vdlayout/css-flex-wrap-schema.jpg" alt="Vlastnost flex-wrap" /></a></p>
     <p>Mohou se položky zalamovat? Výchozí stav je nezalamovat. <br>Např. <code>flex-wrap:wrap</code> – položky se mohou vykreslit na další řádek.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-flex-direction.md">flex-direction</a></h4>
     <p><a href="css-flex-direction.md"><img src="../dist/images/small/vdlayout/css-flex-direction-schema.jpg" alt="Vlastnost flex-direction" /></a></p>
     <p>Určí směr toku rozvržení. Výchozí stav je zleva doprava, do řádku. <br>Např. <code>flex-direction:column</code> – položky se skládají shora dolů, do sloupce.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-flex-flow.md">flex-flow</a></h4>
     <p><a href="css-flex-flow.md"><img src="../dist/images/small/vdlayout/css-flex-flow-schema.jpg" alt="Vlastnost flex-flow" /></a></p>
     <p>Zkratka pro <code>flex-wrap</code> a <code>flex-direction</code>. <br>Např. <code>flex-flow:wrap column</code> – položky se zalamují a skládají shora dolů.</p>
@@ -57,7 +57,7 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
 
 <div class="reference-items">
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4 id="gap"><a href="css-gap.md">gap</a></h4>
     <p><a href="css-gap.md"><img src="../dist/images/small/vdlayout/schema-css-gap.jpg" alt="CSS vlastnost gap" /></a></p>
     <p>
@@ -66,13 +66,13 @@ Dále lze na kontejner flexboxu aplikovat také vlastnosti [zarovnání boxů (C
     </p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-align-items.md">align-items</a></h4>
     <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.jpg" alt="Vlastnost align-items" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-place-items.md">place-items</a></h4>
     <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.jpg" alt="Vlastnost place-items" /></a></p>
     <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items: end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
@@ -85,19 +85,19 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
 <div class="reference-items">
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-justify-content.md">justify-content</a></h4>
     <p><a href="css-justify-content.md"><img src="../dist/images/small/vdlayout/css-justify-content-schema.jpg" alt="Vlastnost justify-content" /></a></p>
     <p>Rozdělení prostoru na řádkové ose (obvykle vodorovně). <br> Např. <code>justify-content:space-between</code> rozdělí prostor mezi položky.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-align-content.md">align-content</a></h4>
     <p><a href="css-align-content.md"><img src="../dist/images/small/vdlayout/css-align-content-schema.jpg" alt="Vlastnost align-content" /></a></p>
     <p>Rozdělení prostoru na blokové ose (obvykle svisle). <br> Např. <code>align-content:start</code> zajistí zarovnání položek k horní hraně kontejneru.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-place-content.md">place-content</a></h4>
     <p><a href="css-place-content.md"><img src="../dist/images/small/vdlayout/css-place-content-schema.jpg" alt="Vlastnost place-content" /></a></p>
     <p>Zkratka pro rozdělení prostoru v obou směrech. <br> Např. <code>place-content:start space-between</code> zajistí zarovnání položek k horní hraně kontejneru a vodorovné dělení prostoru mezi položky.</p>
@@ -115,25 +115,25 @@ K dispozici máme i vlastnosti CSS Box Align, řídící rozdělení volného pr
 
 <div class="reference-items">
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-flex-grow.md">flex-grow</a></h4>
     <p><a href="css-flex-grow.md"><img src="../dist/images/small/vdlayout/css-flex-grow-schema.jpg" alt="Vlastnost flex-grow" /></a></p>
     <p>Jak moc může položka růst. Výchozí je <code>0</code>. <br>Např. <code>flex-grow: 1</code> – podíl na celku hodnoty <code>1</code> z volného prostoru.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-flex-shrink.md">flex-shrink</a></h4>
     <p><a href="css-flex-shrink.md"><img src="../dist/images/small/vdlayout/css-flex-shrink-schema.jpg" alt="Vlastnost flex-shrink" /></a></p>
     <p>Faktor smršťování položky. Výchozí je <code>1</code>. <br>Např. <code>flex-shrink:0</code> – položka se nesmršťuje.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-flex-basis.md">flex-basis</a></h4>
     <p><a href="css-flex-basis.md"><img src="../dist/images/small/vdlayout/css-flex-basis-schema.jpg" alt="Vlastnost flex-basis" /></a></p>
     <p>Výchozí velikost položky. Výchozí je <code>auto</code>. <br>Např. <code>flex-basis:0</code> – nehledí se na rozměr obsahu ani <code>width</code> či <code>height</code>.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-flex.md">flex</a></h4>
     <p><a href="css-flex.md"><img src="../dist/images/small/vdlayout/css-flex-schema.jpg" alt="Vlastnost flex-basis" /></a></p>
     <p>Zkratka pro vlastnosti <code>flex-grow</code>, <code>flex-shrink</code> a <code>flex-basis</code>. <br>Např. <code>flex:auto</code> – roste, smršťuje se a rozměr je nastavený na <code>auto</code>.</p>
@@ -154,13 +154,13 @@ Následujícími vlastnostmi pro konkrétní položku definujeme, jak se bude za
 
 <div class="reference-items">
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-align-self.md">align-self</a></h4>
     <p><a href="css-align-self.md"><img src="../dist/images/small/vdlayout/css-align-self-schema.jpg?2" alt="Vlastnost align-self" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-self:end</code> zarovná položku ke spodní hraně.</p>
   </article>
 
-  <article role="article">
+  <article role="article" class="reference-items-item">
     <h4><a href="css-place-self.md">place-self</a></h4>
     <p><a href="css-place-self.md"><img src="../dist/images/small/vdlayout/css-place-self-schema.jpg" alt="Vlastnost place-self" /></a></p>
     <p>Zkratka pro zarovnání jednotlivé položky v obou směrech. <br> Např. <code>place-self:end center</code> zarovná položku ke spodní hraně a vodorovně doprostřed.</p>

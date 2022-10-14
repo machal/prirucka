@@ -318,20 +318,20 @@ Možné to je, viz `/prirucka/css-flexbox`:
 
 - Je potřeba je přímo v HTML a obrázky ve `small` variantě.
 - Popisek: V PDF verzi by měl být max. na 3 řád. První řádek popisuje vlastnost, druhý a případně třetí dává příklad.
-- Namísto `<article>` je pro ebooky lepší používat `<div role="article">`, protože EPUB čtečka na Macu to jinak nevezme.
+- Namísto `<article>` používáme `<div role="article" class="reference-items-item">` a pro stylování třídu `.reference-items-item`, protože EPUB čtečka na Macu to jinak nevezme.
 
 Příklad:
 
 ```html
 <div class="reference-items">
 
-  <div role="article">
+  <div role="article" class="reference-items-item">
     <h4><a href="css-align-items.md">align-items</a></h4>
     <p><a href="css-align-items.md"><img src="../dist/images/small/vdlayout/css-align-items-schema.jpg" alt="Vlastnost align-items" /></a></p>
     <p>Zarovnání na blokové ose (obvykle svisle). <br> Např. <code>align-items: end</code> zarovná položky ke spodní hraně kontejneru.</p>
   </div>
 
-  <div role="article">
+  <div role="article" class="reference-items-item">
     <h4><a href="css-place-items.md">place-items</a></h4>
     <p><a href="css-place-items.md"><img src="../dist/images/small/vdlayout/css-place-items-schema.jpg" alt="Vlastnost place-items" /></a></p>
     <p>Zkratka pro zarovnání položek v obou směrech. <br> Např. <code>place-items: end center</code> zarovná položky ke spodní hraně a vodorovně na střed.</p>
