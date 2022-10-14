@@ -11,7 +11,7 @@ CSS je všude. Vytváříme s jeho pomocí weby a webové aplikace. Fajn. Např�
 CSS to ale dopracovalo už i do vesmíru. Uživatelské rozhraní v kosmické lodi Dragon od SpaceX je [dělané pomocí HTML, JS a CSS](https://thenewstack.io/the-hardware-and-software-used-in-space/).
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-tisk-spacex.jpg" width="1600" height="900" alt="SpaceX UI">
+<img src="../dist/images/original/css-tisk-spacex.jpg" width="1600" height="900" alt="SpaceX UI">
 <figcaption markdown="1">
 „Houstone, máme problém. Vyskočila na nás cookie lišta.“
 </figcaption>
@@ -22,7 +22,7 @@ Pro mě je podstatné, že CSS hraje velkou roli v mé publikační činnosti. S
 Ale co tištěné knížky? Když jsem vydával [knihu „Vzhůru do (responzivního) webdesignu"](https://www.vzhurudolu.cz/blog/94-kniha), štvalo mě, že sazečům musím kvůli tisku exportovat Word. Sazeči pak CSS opíší do vlastního systému designu v InDesignu. To se nedá automatizovat a je to náchylné na chyby. A navíc se mi to vůbec nelíbí.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-tisk-schema.jpg" width="1600" height="900" alt="Schéma distribuce obsahu z Markdownu">
+<img src="../dist/images/original/css-tisk-schema.jpg" width="1600" height="900" alt="Schéma distribuce obsahu z Markdownu">
 <figcaption markdown="1">
 Schéma distribuce obsahu: Na web a do EPUB to jde dobře. Ty shluky křivek reprezentují procesy, kterým říkám „WTF 1“ a „WTF 2“. Nesrozumitelnou a podivnou činnost sazečů, jejichž vstupem je Word a výstupem tištěná kniha.
 </figcaption>
@@ -33,7 +33,7 @@ CSS je přitom navrženo pro tvorbu designu a vzhledu čehokoliv, ne jen webů. 
 Když vezmeme zjednodušené schéma vrstvení CSS vycházející [z metodiky ITCSS](css-metodiky.md), zjistíme, že se to hodí i na knížky:
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-tisk-vrstvy.jpg" width="1600" height="900" alt="Text, komponenty a layout - vrstvy">
+<img src="../dist/images/original/css-tisk-vrstvy.jpg" width="1600" height="900" alt="Text, komponenty a layout - vrstvy">
 <figcaption markdown="1">
 Text, komponenty a layout. Čirou náhodou je máme i v knížkách.
 </figcaption>
@@ -69,7 +69,7 @@ Asi je vám jasné, že touto cestou jsem se vydat nechtěl. Naštěstí se na o
 V posledních letech se vyrojila celá řada nových knihoven, které fungují na základě webových standardů a principu [polyfillu](polyfill.md) – pomocí JavaScriptu emulují podporu vlastností, které zatím prohlížeč nezvládá.
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-tisk-paged-js.jpg" width="1600" height="900" alt="Paged.js">
+<img src="../dist/images/original/css-tisk-paged-js.jpg" width="1600" height="900" alt="Paged.js">
 <figcaption markdown="1">
 Paged.js, javascriptová spása.
 </figcaption>
@@ -95,7 +95,7 @@ pagedjs-cli index.html -o result.pdf
 V tu chvíli v prohlížeči uvidíte náhled v podobě tištěné stránky:
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-tisk-paged-devtools.jpg" width="1600" height="900" alt="Kniha v DevTools">
+<img src="../dist/images/original/css-tisk-paged-devtools.jpg" width="1600" height="900" alt="Kniha v DevTools">
 <figcaption markdown="1">
 Debuguji knížku v DevTools Chromu.
 </figcaption>
@@ -106,7 +106,7 @@ Možnost vidět zdrojáky v DevTools prohlížeče je naprosto fantastická! Vy,
 Když Paged.js používáte jako polyfill, výstupem je PDF, které ukládáte z prohlížeče:
 
 <figure>
-<img src="../dist/images/original/vdlayout/css-tisk-paged-pdf.jpg" width="1600" height="900" alt="Save as PDF z prohlížeče">
+<img src="../dist/images/original/css-tisk-paged-pdf.jpg" width="1600" height="900" alt="Save as PDF z prohlížeče">
 <figcaption markdown="1">
 „Save as PDF“ a je hotovo. Skoro. Nebo vlastně ještě vůbec.
 </figcaption>
@@ -214,7 +214,7 @@ Rozdělovníky (`hyphens`) prohlížeče už ale umí ([CanIUse](https://caniuse
 Tolik k základům CSS pro tisk. Takhle vypadá finální knížka v PDF:
 
 <figure>
-<img src="../dist/images/original/vdlayout/vdcsslayout-pdf.jpg" width="1600" height="900" alt="CSS: moderní layout">
+<img src="../dist/images/original/vdcsslayout-pdf.jpg" width="1600" height="900" alt="CSS: moderní layout">
 <figcaption markdown="1">
 Layout knihy „CSS: moderní layout“.
 </figcaption>
@@ -245,7 +245,7 @@ Tři kroky na půl hodiny práce, na které jsem přicházel zhruba dva měsíce
 Nakonec je tiskárna spokojená a pustí se do tisku.
 
 <figure>
-<img src="../dist/images/original/vdlayout/vdcsslayout-stul-raist.jpg" width="1600" height="900" alt="CSS: moderní layout na stole">
+<img src="../dist/images/original/vdcsslayout-stul-raist.jpg" width="1600" height="900" alt="CSS: moderní layout na stole">
 <figcaption markdown="1">
 Je to vysázené pomocí HTML a CSS a je to vytištěné.
 </figcaption>

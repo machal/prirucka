@@ -86,8 +86,11 @@ Pozor také na to, že ne vždy je čtenář online. K důležitým odkazům ted
 	- Font vždy Foro Extra Bold a Light a jeho varianty. Minimální velikost písma 40pt.
 	- V obrázcích neopakovat delší kód, který je v textu.
 	- Nedávat nikde tečkované, proužkované linky a šrafování - vypadá to blbě, nepasuje to a šrafování působí jako šikmý obrázek
-- Optimalizace: Před uložením do `src/images/` vždy JPEG prohnat přes OptImage.
-- Zdroje ukládáme buď přímo do příručky, nebo experimentálně taháme [z Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/home).
+- Ukládání:
+  - Do podsložek e-booků jako `src/images/vdlayout` ukládáme jen obrázky, které budou součástí EPUB verze. Přikládají se tam totiž všechny z této složky.
+  - Buď přímo do příručky, nebo experimentálně taháme [z Cloudinary](https://cloudinary.com/console/c-60c23162d9f57381294359118f02c1/media_library/folders/home).
+- Optimalizace: 
+  - Před uložením do `src/images/` vždy JPEG prohnat přes OptImage.
 
 #### Vkládání obrázků
 
