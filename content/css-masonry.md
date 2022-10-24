@@ -216,7 +216,7 @@ CodePen: [vrdl.in/km26b](https://codepen.io/rachelandrew/pen/mdExgmZ?editors=110
 
 ### Flexbox, :nth-child a order {#dalsi-flexbox-nthchild}
 
-Tobias Ahlin Bjerrome se pokusil o řešení [flexboxem](css-flexbox.md), [selektorem `:nth-child(n)`](css3-selektory.md) a [vlastností `order`](css-order.md). [vrdl.in/tobmas](https://tobiasahlin.com/blog/masonry-with-css/)
+Tobias Ahlin Bjerrome se pokusil o řešení [flexboxem](css-flexbox.md), selektorem `:nth-child(n)` a [vlastností `order`](css-order.md). [vrdl.in/tobmas](https://tobiasahlin.com/blog/masonry-with-css/)
 
 ```css
 /* Render items as columns */

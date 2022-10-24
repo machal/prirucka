@@ -127,8 +127,8 @@ Jak asi tušíte, toto samo o sobě nic nedělá. Normálně bych začínal od d
 
 Teď si to vysvětleme. První dvě vlastnosti už znáte:
 
-- Pomocí [`grid-template-rows`](css-grid-template-row-columns.md) definujeme řádky layoutu. Víme, že hlavička má být vysoká `10em`, patička `5em` a zbytek připadá na prostřední část. Tento zbytek definujeme [jednotkou `fr`](css-jednotka-fr.md).
-- [Vlastnost `grid-template-columns`](css-grid-template-row-columns.md) nám, jak už víte, pomůže definovat směr rozvržení po hlavní ose, tedy po sloupcích. Postranní panel má zabrat 30 % šířky a pak je tu ten zbytek určený pro obsah.
+- Pomocí [`grid-template-rows`](css-grid-template-rows-columns.md) definujeme řádky layoutu. Víme, že hlavička má být vysoká `10em`, patička `5em` a zbytek připadá na prostřední část. Tento zbytek definujeme [jednotkou `fr`](css-jednotka-fr.md).
+- [Vlastnost `grid-template-columns`](css-grid-template-rows-columns.md) nám, jak už víte, pomůže definovat směr rozvržení po hlavní ose, tedy po sloupcích. Postranní panel má zabrat 30 % šířky a pak je tu ten zbytek určený pro obsah.
 
 ## Definované oblasti
 

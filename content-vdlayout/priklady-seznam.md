@@ -49,7 +49,7 @@ Jaké příklady spolu ve třetí kapitole nakódujeme?
 <div class="inner-grid-item" markdown="1">
 
 ![Photogallery](../dist/images/small/vdlayout/schema-priklad-photogallery.jpg)  
-[Galerie bez Media Queries](priklad-photogallery.md)
+[Galerie bez Media Queries](priklad-fotogalerie.md)
 
 </div>
 <div class="inner-grid-item" markdown="1">
