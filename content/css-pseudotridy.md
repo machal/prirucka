@@ -125,6 +125,7 @@ Do [ostatních pseudotříd](#ostatni) řadím prostě to, co se mi jinam neveš
 | [Směr](#dir)                  |  `:dir()`     |
 | [Jazyk](#lang)                |  `:lang()`    |
 | [Celá obrazovka](#fullscreen) | `:fullscreen` |
+| [Modální stav](#modal)        | `:modal` |
 | [Kořenový prvek](#root)       | `:root`   |
 | [Prázdný prvek](#empty)       | `:empty`  |
 
@@ -819,6 +820,14 @@ Hezký příklad jsem našel [na MDN](https://developer.mozilla.org/en-US/docs/W
 }
 ```
 
+### Pseudotřída modálního stavu – `:modal` {#modal}
+
+Tato pseudotřída odpovídá prvku ve stavu, kdy vylučuje veškerou interakci s prvky mimo něj, dokud není interakce s prvkem ukončena. Prostě modální okno.
+
+Pomocí `:modal` tedy můžeme stylovat nativní modální okna.
+
+Více je [na MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:modal). Podpora je [plná](https://caniuse.com/mdn-css_selectors_modal).
+
 Další pseudotřídy umožňují výběr na základě informací, které se nacházejí ve stromu dokumentu, ale nelze je reprezentovat jinými selektory.
 
 ### Pseudotřída kořenového prvku – `:root` {#root}
@@ -873,11 +882,9 @@ Ve specifikaci též najdete velmi zajímavé pseudotřídy, pomocí kterých by
 
 Ve [specifikaci](https://www.w3.org/TR/selectors-4/#resource-pseudos) je těchto pozoruhodných tříd více, jen zatím pražádnou podporu nemají.
 
-### Pseudotřídy stavu zobrazení prvků – `:modal`, `:picture-in-picture` {#stav-zobrazeni}
+### Pseudotřída stavu zobrazení prvků `:picture-in-picture` {#stav-zobrazeni}
 
-Opět jde velmi zajímavá skupina pseudotříd, například pro element ve stavu modálního okna (`:modal`) nebo zobrazení elementu (nejspíš videa) v režimu PiP (picture in picture), tedy překrývající obsah (pseudotřída `:picture-in-picture`).
-
-Funguje z nich jen `:fullscreen`. U ostatních si zatím musíme počkat na implementace v prohlížečích.
+Opět jde o velmi zajímavou pseudotřídu pro zobrazení elementu (nejspíš videa) v režimu PiP (picture in picture), tedy překrývající obsah (pseudotřída `:picture-in-picture`).
 
 ### Pseudotřída prázdných hodnot – `:blank` {#blank}
 
