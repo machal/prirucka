@@ -1,12 +1,9 @@
 # CSS Cascade Layers
 
-Kaskádové vrstvy v CSS slouží k zjednodušení práce s kaskádou v CSS.
-Lidsky řečeno nám umožňují měnit platnosti pořadí deklarací bez nutnosti deklarace uvádět na konkrétní místo v CSS souboru.
+Kaskádové vrstvy nám umožňují měnit platnosti pořadí deklarací, a to bez nutnosti deklarace uvádět na konkrétní místo v CSS souboru.
 
 Kaskádové vrstvy (Cascade Layers) nám poskytnou strukturovaný způsob uspořádání.
-
-Vývojářky a vývojáři mohou nyní vytvářet vrstvy pro reprezentaci výchozích nastavení prvků, knihoven třetích stran, motivů vzhledu nebo komponent.
-Není přitom nutné přizpůsobovat tomu selektory v rámci jednotlivých vrstev nebo se spoléhat na pořadí zdrojů při řešení konfliktů.
+Slouží tak ke zjednodušení práce s kaskádou v CSS.
 
 Dejme si jednoduchý příklad:
 
@@ -27,6 +24,10 @@ Dejme si jednoduchý příklad:
 }
 ```
 
+Vývojářky a vývojáři mohou nyní vytvářet vrstvy pro reprezentaci výchozích nastavení prvků, knihoven třetích stran, motivů vzhledu nebo komponent.
+Není přitom nutné přizpůsobovat tomu selektory v rámci jednotlivých vrstev nebo se spoléhat na pořadí zdrojů při řešení konfliktů.
+
+
 Zároveň nám kaskádové vrstvy poskytují možnost přeskupovat pořadí platnosti deklarací:
 
 ```css
@@ -41,7 +42,7 @@ Zároveň nám kaskádové vrstvy poskytují možnost přeskupovat pořadí plat
 }
 ```
 
-Podpora této části specifikace CSS Cascade Layers ve všech moderních prohlížečích je plná.
+Podpora této části [specifikace CSS Cascade Layers](https://www.w3.org/TR/css-cascade-5/#cascade-layers) ve všech moderních prohlížečích je plná.
 To hlavně díky tomu, že prohlížeče aktuálně [velmi dobře spolupracují](https://www.vzhurudolu.cz/blog/215-webexpo-2022-prohlizece).
 
 V textu vám ukážu několik příkladů, jak to pro vás může být užitečné.
@@ -109,24 +110,241 @@ Rozhoduje jen pořadí vrstev, tak jak jsou uvedené v CSS nebo jak jej specifik
 
 CodePen: [cdpn.io/e/VwdygQx](https://codepen.io/machal/pen/VwdygQx?editors=1100)
 
-## Jeden původ, jeden origin
+## Jeden původ, jeden origin {#origin}
 
-Je dobré akcentovat, že kaskádové vrstvy organizují styly v rámci jednoho původu (originu). V CSS jich může být více – prohlížečové styly, autorské styly (ty naše), uživatelské styly. 
+Je dobré akcentovat, že kaskádové vrstvy organizují styly v rámci jednoho původu (originu). V CSS jich může být více – prohlížečové styly, autorské styly (ty naše), uživatelské styly.
 
 Tzn. pomocí `@layer` nelze například z autorských stylů „vstoupit“ do prohlížečového originu.
 
+## Příklad s Bootstrapem: bez vrstev {#priklad-bez-vrstev}
 
+V dalším textu vám Cascade Layers představím krok za krokem pomocí jednoduchého příkladu s přestylováním Bootstrapu.
+
+Začneme příkladem bez vrstev.
+Framework nejprve importujeme, pak přestylujeme:
+
+```css
+@import url("bootstrap.min.css");
+
+body {
+  margin: 2rem;
+  background: #f2f0ec;
+}
+
+.btn {
+  background: #abab9d;
+}
+```
+
+Na první pohled nám to přestylování takto půjde dobře.
+V prohlížeči dostaneme, co jsme chtěli, tedy přebarvené `<body>` a tlačítko:
+
+CodePen: [cdpn.io/e/NWzggXe](https://codepen.io/machal/pen/NWzggXe?editors=1100)
+
+Problém však nastává při najetí myši na tlačítko ([pseudotřída `:hover`](css-pseudotridy.md#hover)).
+Barva nezůstává taková, jakou jsme nastavili.
+Důvodem je vyšší [specificita](css-kaskada.md#specificita) původního selektoru:
+
+```css
+/* Styly Bootstrapu - specificita 0,2,0 */
+.btn:hover {
+  background-color: var(--bs-btn-hover-bg);
+}
+
+/* Naše styly - specificita 0,1,0  */
+.btn {
+  background: #abab9d;
+}
+```
+
+Původní selektor s vyšší specificitou tedy vyhrává a naše změna barvy se neaplikuje.
+
+Co s tím?
+Jak už jsem psal, můžeme to přetížit selektorem stejné nebo vyšší specificity.
+Můžeme přidat důležitost pomocí `!important`.
+
+Nebo jinak a lépe – můžeme použít kaskádové vrstvy.
+
+## Příklad s Bootstrapem: vrstvy vrství {#priklad-vrstvy}
+
+V další ukázce už jsem použil Cascade Layers a trošku zkomplikoval ty přebíjené vlastnosti:
+
+```css
+/* Do vrstvy "bootstrap" importujeme Bootstrap: */
+
+@import url("bootstrap.min.css") layer(bootstrap);
+
+/* Cascade Layers: */
+
+@layer my-styles {
+  .btn {
+    background: #abab9d;
+    border-color: #2e2c08;
+  }
+}
+
+@layer my-base {
+  body {
+    margin: 2rem;
+    background-color: #f2f0ec;
+  }
+
+  .btn {
+    border-color: red;
+  }
+}
+```
+
+Jak je vidět, kromě změny barvy pozadí ještě obarvuji rámečky tlačítek na červeno.
+Najednou to celé funguje.
+Výše uvedené problémy nevidíme.
+Specificita selektorů Bootstrapu nás už netrápí, protože se aplikuje jen uvnitř vrstev.
+
+CodePen: [cdpn.io/e/qBKXWxG](https://codepen.io/machal/pen/qBKXWxG?editors=1100)
+
+## Příklad s Bootstrapem: změna pořadí vrstev {#priklad-poradi}
+
+Můžeme to celé ještě vylepšit.
+Pravidlo `@layer` totiž využíváme buď pro vložení deklarací do vrstvy nebo deklaraci pořadí vrstev.
+To druhé vypadá takto:
+
+```css
+@layer bootstrap, my-base, my-styles;
+```
+
+Deklaraci zbylého kódu necháme v původním pořadí, ale vzhled stránky se změní.
+Tlačítka nebudou mít červenou barvu rámečku, protože vrstva `my-base` je přepsaná vrstvou `my-styles`.
+
+CodePen: [cdpn.io/e/RwJggLj](https://codepen.io/machal/pen/RwJggLj?editors=1100)
+
+Prostě lusknete prsty a všechny bolehlavy s nutností dodržovat pořadí v kódu a hlídat specificitu jsou pryč.
 
 <figure>
 <img src="../dist/images/original/css-cascade-layers.jpg" alt="CSS Cascade Layers" width="1600" height="900">
 <figcaption markdown="1">
-TODO
+Vrstvy vrství a já se raduju.
 </figcaption>
 </figure>
 
+Dávám lajk.
+Proč vrstvy neexistovaly už před patnácti lety…?!
+
+## K čemu vlastně slouží `!important`?
+
+Než budeme pokračovat, je potřeba udělat odbočku k další části kaskády.
+Tou je [důležitost pravidel](css-kaskada.md#dulezitost) a klíčové slovo `!important`.
+
+Tak schválně: k čemu `!important` v CSS máme?
+
+Chvilku zkuste přemýšlet.
+
+Zněla vaše odpověď ve stylu „je to velké kladivo, kterým přebíjíme hodnoty vlastností“?
+Pak to byla pravda jen částečně.
+
+Ve [specifikaci](https://www.w3.org/TR/css-cascade-5/#importance) se píše:
+
+> Deklarace může být označena jako důležitá, což zvýší její váhu v kaskádě a obrátí pořadí priority.
+
+Všimněte si toho „obrátí pořadí priority“.
+To je velmi důležité.
+Už bez kaskádových vrstev `!important` obrací pořadí platnosti původu (origin).
+
+Standardně máme nejvýše uživatelské styly, pod nimi styly nás autorů a pod nimi styly prohlížeče.
+Pokud by ve stylu prohlížeče bylo použito `!important`, pak se pořadí mění a tato deklarace je automaticky nejvýše.
+Nepůjde ji tedy ničím přebít.
+
+To samé funguje také u kaskádových vrstev. Deklarace, kde použijete `!important`, budou měnit pořadí.
+
+## Příklad s Bootstrapem: použijeme `!important` {#priklad-important}
+
+Do našeho příkladu s frameworkem Bootstrap nyní přidáme důležitost:
+
+```css
+@layer bootstrap, my-base, my-styles;
+
+@import url("bootstrap.min.css")
+layer(bootstrap);
+
+@layer my-styles {
+  .btn {
+    background: #abab9d !important;
+  }
+}
+
+@layer my-base {
+  body {
+    margin: 2rem;
+    background-color: #f2f0ec;
+  }
+
+  .btn {
+    background: #8c4615 !important;
+  }
+}
+```
+
+Vzhledem k pořadí deklarace kódu byste mohli čekat, že tlačítka budou šedivá (`#abab9d`), ale ony jsou hnědá (`#8c4615`).
+
+CodePen: [cdpn.io/e/VwdWWOQ](https://codepen.io/machal/pen/VwdWWOQ?editors=1100)
+
+Důvodem je obrácené skládání vrstev v případě použití `!important`.
+Deklarace z vrstvy `my-base` prostě dostane přednost, protože je níže než vrstva `my-styles`.
+
+Abych to ještě doplnil o poslední dílek skládačky, v pořadí hrají roli i deklarace neuvedené ve vrstvách:
+
+1. Nejníže deklarace z jednotlivých vrstev podle pořadí, které jste jim nastavili.
+2. Uprostřed jsou deklarace nezařazené do vrstev.
+3. Nejvýše pak platí deklarace s `!important`, ovšem v opačném pořadí než jsou uvedené vrstvy.
+
+Je to docela galimatyáš, že?
+
+Ale má to dobré důvody.
+Nejlépe to uvidíte na obrázku:
+
 <figure>
-<img src="../dist/images/original/css-cascade-layers-important.jpg" alt="CSS Cascade Layers" width="1600" height="900">
+<img src="../dist/images/original/css-cascade-layers-important.jpg" alt="CSS Cascade Layers: !important" width="1600" height="900">
 <figcaption markdown="1">
-TODO
+Když už nemůžeš, vrstvi víc. Když už nemůžeš vrstvit, přidej důležitost.
 </figcaption>
 </figure>
+
+Připravil jsem k tomuto ještě tři CodePeny.
+Jsou o praktickém využití nebo spíše trablech přebíjení `!important`, které nám nadělil Bootstrap.
+
+V kódu frameworku najdete tyto řádky:
+
+```css
+[hidden] {
+  display: none !important;
+}
+```
+
+Nechme teď stranou důvody, proč bychom to měli chtít přebíjet v našem kódu.
+Řekněme, že opravdu moc chceme.
+V takovém případě nám ovšem vložení pravidla pro přebití do vrstev nepomůže ([CodePen](https://codepen.io/machal/pen/gOKxOgG?editors=1100)). Musíme přebíjecí pravidlo ponechat mimo vrstvy ([CodePen](https://codepen.io/machal/pen/rNKzNME?editors=1100)).
+
+Alternativně pak můžeme vrstvy použít, ale vložit přebíjecí pravidlo ještě pod styly Bootstrapu:
+
+```css
+@import my-styles, bootstrap;
+
+@import url("bootstrap.min.css") layer(bootstrap);
+
+@layer my-styles {
+  [hidden] {
+    display: block !important;
+  }
+}
+```
+
+CodePen: [cdpn.io/e/dyKdVVZ](https://codepen.io/machal/pen/dyKdVVZ?editors=1100)
+
+
+<!-- 
+TODO: viz Evernote:
+- vnořování atd.
+- ukázky z praxe atd.
+- podpora
+-->
+
+
