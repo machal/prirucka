@@ -1,8 +1,8 @@
-# CSS Cascade Layers
+# CSS Cascade Layers: budou vrstvy revolucí organizace stylů?
 
-Kaskádové vrstvy nám umožňují měnit platnosti pořadí deklarací, a to bez nutnosti deklarace uvádět na konkrétní místo v CSS souboru.
+Kaskádové vrstvy jsou novinka, která nám umožňuje měnit platnost pořadí deklarací bez nutnosti uvádět je na konkrétní místo v CSS souboru.
 
-Kaskádové vrstvy (Cascade Layers) nám poskytnou strukturovaný způsob uspořádání.
+CSS Cascade Layers poskytují strukturovaný způsob uspořádání.
 Slouží tak ke zjednodušení práce s kaskádou v CSS.
 
 Dejme si jednoduchý příklad:
@@ -24,9 +24,9 @@ Dejme si jednoduchý příklad:
 }
 ```
 
-Vývojářky a vývojáři mohou nyní vytvářet vrstvy pro reprezentaci výchozích nastavení prvků, knihoven třetích stran, motivů vzhledu nebo komponent.
-Není přitom nutné přizpůsobovat tomu selektory v rámci jednotlivých vrstev nebo se spoléhat na pořadí zdrojů při řešení konfliktů.
+Vývojářky a vývojáři mohou díky pravidlu `@layer` vytvářet vrstvy pro reprezentaci výchozích nastavení prvků, knihoven třetích stran, motivů vzhledu nebo komponent.
 
+Není přitom nutné přizpůsobovat tomu selektory v rámci jednotlivých vrstev nebo se spoléhat na pořadí zdrojů při řešení konfliktů.
 
 Zároveň nám kaskádové vrstvy poskytují možnost přeskupovat pořadí platnosti deklarací:
 
@@ -50,17 +50,21 @@ Nejprve vám ale zkusím vysvětlit, proč si myslím, že kaskádové vrstvy js
 
 ## Věčný boj s kaskádou {#kaskada-boj}
 
-Už od vzniku CSS před více než [více než čtvrt stoletím](https://www.vzhurudolu.cz/blog/10-17-narozeniny-css) se uživatelé CSS dělí do dvou skupin:
+Už od vzniku CSS před více než [více než čtvrt stoletím](https://www.vzhurudolu.cz/blog/10-17-narozeniny-css) se uživatelé CSS dělí do dvou skupin.
+
 Menší skupina (z velké části [kodérů a frontend designérů](https://www.vzhurudolu.cz/blog/62-frontend-pozice)), která CSS miluje i se všemi nedostatky.
 V druhé skupině sedí drtivá většina běžných vývojářů, kteří CSS používají, protože nemají jinou možnost.
 Kaskádové styly je více či méně štvou a principy návrhu CSS obvykle nechápou.
 
-Dělící linkou mezi těmito skupinami je většinou chápání [kaskády v CSS](css-kaskada.md) a jejich vlastností – dědičnosti, důležitosti (`!important`) a hlavně specificity selektorů.
+Dělící linkou mezi těmito skupinami je často chápání [kaskády v CSS](css-kaskada.md) a jejich vlastností – dědičnosti, důležitosti (`!important`) a hlavně specificity selektorů.
+
+<!-- AdSnippet -->
 
 Myslím, že příchod kaskádových vrstev je dobrá zpráva pro tu první skupinu.
 A skvělá zpráva pro tu druhou.
 
 Obvyklý vývoj a hlavně úpravy CSS probíhají v první skupině vývojářek a vývojářů podle [metodik](css-metodiky.md), z nichž je pro tyto účely nejdůležitější [ITCSS](https://frontend.garden/clanky/proc-je-itcss-nejpokrocilejsi-metodika-organizace-css/).
+
 V druhé skupině se často prostě přidávají deklarace na konec souboru a doufá se, že to pomůže:
 
 ```css
@@ -82,7 +86,7 @@ V druhé skupině se často prostě přidávají deklarace na konec souboru a do
 
 Poznáváte svůj kód?
 (Klídek, já takového napsal taky hodně.)
-Jenže klíčové slovo `!important` a důležitost v cSS je určena pro jiné účely a tudíž tohle je trošku prasárna.
+Jenže klíčové slovo `!important` a důležitost v CSS je určena pro jiné účely a tudíž tohle je trošku prasárna.
 No, možná i více než trošku…
 
 CodePen: [cdpn.io/e/jOKYdZE](https://codepen.io/machal/pen/jOKYdZE?editors=1100)
@@ -112,7 +116,8 @@ CodePen: [cdpn.io/e/VwdygQx](https://codepen.io/machal/pen/VwdygQx?editors=1100)
 
 ## Jeden původ, jeden origin {#origin}
 
-Je dobré akcentovat, že kaskádové vrstvy organizují styly v rámci jednoho původu (originu). V CSS jich může být více – prohlížečové styly, autorské styly (ty naše), uživatelské styly.
+Je dobré akcentovat, že kaskádové vrstvy organizují styly v rámci jednoho původu (originu).
+V CSS jich může být více – prohlížečové styly, autorské styly (ty naše), uživatelské styly.
 
 Tzn. pomocí `@layer` nelze například z autorských stylů „vstoupit“ do prohlížečového originu.
 
@@ -229,31 +234,16 @@ Vrstvy vrství a já se raduju.
 Dávám lajk.
 Proč vrstvy neexistovaly už před patnácti lety…?!
 
-## K čemu vlastně slouží `!important`?
+## Odbočka k `!important` {#important}
 
 Než budeme pokračovat, je potřeba udělat odbočku k další části kaskády.
 Tou je [důležitost pravidel](css-kaskada.md#dulezitost) a klíčové slovo `!important`.
 
-Tak schválně: k čemu `!important` v CSS máme?
-
-Chvilku zkuste přemýšlet.
-
-Zněla vaše odpověď ve stylu „je to velké kladivo, kterým přebíjíme hodnoty vlastností“?
-Pak to byla pravda jen částečně.
-
-Ve [specifikaci](https://www.w3.org/TR/css-cascade-5/#importance) se píše:
-
-> Deklarace může být označena jako důležitá, což zvýší její váhu v kaskádě a obrátí pořadí priority.
-
-Všimněte si toho „obrátí pořadí priority“.
+Důležitost totiž kromě zvýšení váhy konkrétní deklarace také obrátí pořadí priority.
 To je velmi důležité.
-Už bez kaskádových vrstev `!important` obrací pořadí platnosti původu (origin).
 
-Standardně máme nejvýše uživatelské styly, pod nimi styly nás autorů a pod nimi styly prohlížeče.
-Pokud by ve stylu prohlížeče bylo použito `!important`, pak se pořadí mění a tato deklarace je automaticky nejvýše.
-Nepůjde ji tedy ničím přebít.
-
-To samé funguje také u kaskádových vrstev. Deklarace, kde použijete `!important`, budou měnit pořadí.
+Stejně to funguje také u kaskádových vrstev.
+Deklarace, kde použijete `!important`, budou měnit pořadí.
 
 ## Příklad s Bootstrapem: použijeme `!important` {#priklad-important}
 
@@ -289,6 +279,8 @@ CodePen: [cdpn.io/e/VwdWWOQ](https://codepen.io/machal/pen/VwdWWOQ?editors=1100)
 
 Důvodem je obrácené skládání vrstev v případě použití `!important`.
 Deklarace z vrstvy `my-base` prostě dostane přednost, protože je níže než vrstva `my-styles`.
+
+<!-- AdSnippet -->
 
 Abych to ještě doplnil o poslední dílek skládačky, v pořadí hrají roli i deklarace neuvedené ve vrstvách:
 
@@ -339,12 +331,35 @@ Alternativně pak můžeme vrstvy použít, ale vložit přebíjecí pravidlo je
 
 CodePen: [cdpn.io/e/dyKdVVZ](https://codepen.io/machal/pen/dyKdVVZ?editors=1100)
 
+## Vnořování vrstev {#vnorovani}
 
-<!-- 
-TODO: viz Evernote:
-- vnořování atd.
-- ukázky z praxe atd.
-- podpora
--->
+Alespoň stručně ještě zmíním možnost vnořování vrstev, který rozebírají [na skvělém MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer#nesting_layers):
 
+```css
+@layer framework {
+  @layer layout { 
+    /* Vznikla nám vrstva framework.layout */ 
+  }
+}
+```
 
+## Podpora v prohlížečích {#podpora}
+
+Prohlížeče jsou na tom skvěle, díky za optání.
+Chrome podporuje `@layer` od verze 99, Safari od verze 15.4 a Firefox od verze 97.
+Ke dni psaní tohoto textu, což je listopad 2022, je tedy podpora dostupná ve všech moderních prohlížečích.
+Více je jako vždy na [caniuse.com/css-cascade-layers](https://caniuse.com/css-cascade-layers).
+
+## Závěr (…budou vrstvy revolucí v organizaci CSS?) {#zaver}
+
+Vrstvy jsou skvělý nástroj, který nám umožní vytvářet kaskádové styly, které budou přehlednější a také snadněji udržovatelné.
+
+Jsou navržené tak, aby mohly způsobit revoluci v organizaci CSS.
+Zároveň je možné je použít tak, aby se vůbec nezměnila naše běžná práce.
+
+Taky je možné, že se naše běžná práce vůbec nezmění a `@layer` se stane něčím, co se používá jen ve výjimečných případech.
+Rozdíly mezi teorií a praxí jsou totiž v oblasti organiazce CSS velmi časté.
+
+<!-- AdSnippet -->
+
+Tak či tak – mám z přítomnosti vrstev v CSS velkou radost a věřím, že vám pomohou, stejně tak jako vám doufám pomohl i tento článek.
