@@ -143,6 +143,7 @@ Je dobré používat komponentový přístup a zbavit elementy závislosti na ko
 - „Problémy“ CSS
 - [Dědičnost](css-dedicnost.md)
 - [Kaskáda a specificita](css-kaskada.md)
+- [Kaskádové vrstvy](css-cascade-layers.md)
 - [Selektory v CSS](css-selektory.md)
 - [Pseudotřídy v CSS](css-pseudotridy.md)
 

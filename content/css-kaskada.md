@@ -129,6 +129,7 @@ Pokud si nejste jistí, použijte skvělý kalkulátor specificity od Keegan Str
 - [„Problémy“ CSS](css-jazyk-problemy.md)
 - [Dědičnost](css-dedicnost.md)
 - Kaskáda a specificita
+- [Kaskádové vrstvy](css-cascade-layers.md)
 - [Selektory v CSS](css-selektory.md)
 - [Pseudotřídy v CSS](css-pseudotridy.md)
 
@@ -173,6 +174,9 @@ Výsledek bude modrý, jistě.
 CodePen: [cdpn.io/e/XqrjBR](https://codepen.io/machal/pen/XqrjBR?editors=0100)
 
 Asi vás nepřekvapí, že `!important` doporučuji používat jen když to máte dobře rozmyšleno nebo to zapadá do vaší vlastní metodiky psaní kaskádových stylů.
+
+V roce 2022 byly předstraveny [kaskádové vrstvy](css-cascade-layers.md) (pravidlo `@layer`), které komplexitu kaskády trošku komplikují.
+V kodérské praxi ovšem mohou leccos usnadnit.
 
 ## Co z toho vyplývá?
 

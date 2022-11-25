@@ -1,9 +1,9 @@
 # CSS Cascade Layers: budou vrstvy revolucí organizace stylů?
 
-Kaskádové vrstvy jsou novinka, která nám umožňuje měnit platnost pořadí deklarací bez nutnosti uvádět je na konkrétní místo v CSS souboru.
+Kaskádové vrstvy jsou novinka, která webařům umožňuje měnit platnost deklarací bez nutnosti uvádět je na konkrétní místo v CSS souboru a v konkrétním pořadí.
 
-CSS Cascade Layers poskytují strukturovaný způsob uspořádání.
-Slouží tak ke zjednodušení práce s kaskádou v CSS.
+Obecně vzato, CSS Cascade Layers poskytují strukturovaný způsob uspořádání stylů.
+Slouží tak ke zjednodušení práce s kaskádou v CSS a hlavně specificitou selektorů.
 
 Dejme si jednoduchý příklad:
 
@@ -52,11 +52,22 @@ Nejprve vám ale zkusím vysvětlit, proč si myslím, že kaskádové vrstvy js
 
 Už od vzniku CSS před více než [více než čtvrt stoletím](https://www.vzhurudolu.cz/blog/10-17-narozeniny-css) se uživatelé CSS dělí do dvou skupin.
 
-Menší skupina (z velké části [kodérů a frontend designérů](https://www.vzhurudolu.cz/blog/62-frontend-pozice)), která CSS miluje i se všemi nedostatky.
-V druhé skupině sedí drtivá většina běžných vývojářů, kteří CSS používají, protože nemají jinou možnost.
-Kaskádové styly je více či méně štvou a principy návrhu CSS obvykle nechápou.
+<div class="related" markdown="1">
 
-Dělící linkou mezi těmito skupinami je často chápání [kaskády v CSS](css-kaskada.md) a jejich vlastností – dědičnosti, důležitosti (`!important`) a hlavně specificity selektorů.
+- [„Problémy“ CSS](css-jazyk-problemy.md)
+- [Kaskáda a specificita](css-kaskada.md)
+- [Dědičnost v CSS](css-dedicnost.md)
+- Kaskádové vrstvy
+- [Selektory v CSS](css-selektory.md)
+- [Pseudotřídy v CSS](css-pseudotridy.md)
+
+</div>
+
+Menší skupina (z velké části [kodérů a frontend designérů](https://www.vzhurudolu.cz/blog/62-frontend-pozice)), která CSS miluje i se všemi nedostatky.
+Ve druhé skupině sedí drtivá většina běžných vývojářů, kteří CSS používají, protože nemají jinou možnost.
+Kaskádové styly tyto vývojáře více či méně štvou a principy návrhu CSS obvykle nechápou.
+
+Dělicí linkou mezi těmito skupinami je často chápání [kaskády v CSS](css-kaskada.md) a jejich vlastností – dědičnosti, důležitosti (`!important`) a hlavně specificity selektorů.
 
 <!-- AdSnippet -->
 
@@ -86,7 +97,7 @@ V druhé skupině se často prostě přidávají deklarace na konec souboru a do
 
 Poznáváte svůj kód?
 (Klídek, já takového napsal taky hodně.)
-Jenže klíčové slovo `!important` a důležitost v CSS je určena pro jiné účely a tudíž tohle je trošku prasárna.
+Jenže klíčové slovo `!important` a důležitost v CSS je určena pro jiné účely, a tudíž tohle je trošku prasárna.
 No, možná i více než trošku…
 
 CodePen: [cdpn.io/e/jOKYdZE](https://codepen.io/machal/pen/jOKYdZE?editors=1100)
@@ -110,7 +121,7 @@ CodePen: [cdpn.io/e/jOKYdZE](https://codepen.io/machal/pen/jOKYdZE?editors=1100)
 ```
 
 Ano, je to přesně tak, kaskáda platí jen uvnitř konkrétních kaskádových vrstev.
-Rozhoduje jen pořadí vrstev, tak jak jsou uvedené v CSS nebo jak jej specifikujete na začátku CSS souboru pomocí pravidla `@layer`.
+Rozhoduje jen pořadí vrstev, tak, jak jsou uvedené v CSS nebo jak jej specifikujete na začátku CSS souboru pomocí pravidla `@layer`.
 
 CodePen: [cdpn.io/e/VwdygQx](https://codepen.io/machal/pen/VwdygQx?editors=1100)
 
@@ -311,11 +322,11 @@ V kódu frameworku najdete tyto řádky:
 }
 ```
 
-Nechme teď stranou důvody, proč bychom to měli chtít přebíjet v našem kódu.
+Nechme teď stranou důvody, proč bychom to měli chtít přebíjet ve svém kódu.
 Řekněme, že opravdu moc chceme.
-V takovém případě nám ovšem vložení pravidla pro přebití do vrstev nepomůže ([CodePen](https://codepen.io/machal/pen/gOKxOgG?editors=1100)). Musíme přebíjecí pravidlo ponechat mimo vrstvy ([CodePen](https://codepen.io/machal/pen/rNKzNME?editors=1100)).
+V takovém případě nám ovšem vložení pravidla pro přebití do vrstev nepomůže ([CodePen](https://codepen.io/machal/pen/gOKxOgG?editors=1100)). Musíme přebíjející pravidlo ponechat mimo vrstvy ([CodePen](https://codepen.io/machal/pen/rNKzNME?editors=1100)).
 
-Alternativně pak můžeme vrstvy použít, ale vložit přebíjecí pravidlo ještě pod styly Bootstrapu:
+Alternativně pak můžeme vrstvy použít, ale vložit přebíjející pravidlo ještě pod styly Bootstrapu:
 
 ```css
 @import my-styles, bootstrap;
@@ -357,8 +368,8 @@ Vrstvy jsou skvělý nástroj, který nám umožní vytvářet kaskádové styly
 Jsou navržené tak, aby mohly způsobit revoluci v organizaci CSS.
 Zároveň je možné je použít tak, aby se vůbec nezměnila naše běžná práce.
 
-Taky je možné, že se naše běžná práce vůbec nezmění a `@layer` se stane něčím, co se používá jen ve výjimečných případech.
-Rozdíly mezi teorií a praxí jsou totiž v oblasti organiazce CSS velmi časté.
+Taky je možné, že se běžná práce kodérů vůbec nezmění a `@layer` se stane něčím, co se používá jen ve výjimečných případech.
+Rozdíly mezi teorií a praxí jsou totiž v oblasti organizace CSS velmi časté.
 
 <!-- AdSnippet -->
 

@@ -282,6 +282,7 @@ Mezery v selektoru jsou opět volitelné.
 - [„Problémy“ CSS](css-jazyk-problemy.md)
 - [Dědičnost](css-dedicnost.md)
 - [Kaskáda a specificita](css-kaskada.md)
+- [Kaskádové vrstvy](css-cascade-layers.md)
 - Selektory v CSS
 - [Pseudotřídy v CSS](css-pseudotridy.md)
 

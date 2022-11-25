@@ -15,6 +15,7 @@ Prakticky použitelných pseudotříd je dnes už přes 40 a vsadím se, že ně
 - [„Problémy“ CSS](css-jazyk-problemy.md)
 - [Kaskáda a specificita](css-kaskada.md)
 - [Dědičnost v CSS](css-dedicnost.md)
+- [Kaskádové vrstvy](css-cascade-layers.md)
 - [Selektory v CSS](css-selektory.md)
 - Pseudotřídy v CSS
 
