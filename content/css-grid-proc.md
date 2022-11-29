@@ -1,0 +1,218 @@
+# Proč mám raději grid než flexbox?
+
+Pořád se něco učíme.
+Abych se naučil layouty v CSS, napsal jsem o nich [knížku](https://www.vzhurudolu.cz/css-layout/).
+
+Opravdu. Nemyslete si, že jsem si prostě jen sedl k počítači a začal sepisovat to, co jsem měl v hlavě.
+O gridu a flexboxu jsem toho před třemi lety nevěděl více než průměrný frontendista.
+
+Jedna z metod psaní knížky obnášela nakódování asi deseti častých webových layoutů.
+Nejprve [flexboxem](css-flexbox.md), který jsem uměl lépe.
+Pak [gridem](css-grid.md).
+
+Překvapilo mě, že skoro vždy bylo nakonec řešení pomocí gridu efektivnější, přehlednější.
+Vlastně celkově lepší.
+
+Nejdůležitější znalost, kterou jsem při práci na knížce získal bylo to, že skoro vždy preferuji grid před flexboxem.
+V tomhle textu vám ukážu důvody, proč tomu tak je.
+
+## Flexbox vs. grid {#flexbox-vs-grid}
+
+Začneme obecnou rovinou. V knížce mám pro srovnání těchto dvou systémů pro tvorbu layoutu takovou pěknou tabulku:
+
+|   **Vlastnost**          | **Flexbox** | **Grid** |
+|:-------------------------|:-----------:|:--------:|
+|   Jednorozměrný layout   |       +     |     +    |
+|   Dvourozměrný layout    |             |     +    |
+|   Layout z obsahu        |       +     |     ?    |
+|   Layout z mřížky        |             |     +    |
+|   Kompatibilita v MSIE   |       +     |     ?    |
+
+Už tady je trochu vidět, že výhody gridu převládají:
+
+- Grid je určený pro dvourozměrný layout (vodorovně i svisle), ale zvládnete s ním i ten jednorozměrný (v jednom ze směrů).
+- Podstatné je, že flexbox byl navržený pro takzvaný „content out“ layout, kdy se layout vytváří na základě obsahu. Grid více odpovídá naší představě o layoutu – chceme, abychom layout kontrolovali my, ne obsah, (takzvaně „grid in“).
+- Dříve byla velkou výhodou flexboxu jeho poměrně slušná komptatibilita s MSIE. Podpora gridu v tomto neslavném prohlížeči [nějaká byla](css-grid-msie.md), ale používat to bylo škrábání levou nohou za pravým uchem. Ale [Explorer už je mrtvý](msie.md).
+
+## Flexbox ale stále vládne {#flexbox-vladne}
+
+<!-- TODO 
+https://www.facebook.com/groups/frontendisti/posts/3230392077172294/
+https://twitter.com/machal/status/1367758625142374400
+-->
+
+## Důvod první: layout na rodiči {#layout-na-rodici}
+
+Na gridu mě připadá výhodné, že layouty se vždy vytvářejí na rodiči.
+Díky tomu existuje jen jeden prvek, který do layoutu promlouvá.
+A to je rodič.
+
+Vezměme tento jednoduchý příklad layoutu s jedním rodičem a dvěma potomky:
+
+<!-- TODO IMG -->
+
+HTML kód vypadá takto:
+
+```html
+<div class="container">
+  <div class="col-1">
+    1/3 box
+  </div>
+  <div class="col-2">
+    2/3 box
+  </div>
+</div>
+```
+
+Řešení fleboxem by mohlo být následující:
+
+```css
+.container {
+  display: flex;
+  gap: 1rem;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+```
+
+Všimněte si, že používám [vlastnost `gap`](css-gap.md), která je ve flexboxu k dispozici poměrně čerstvě.
+
+Může to být prkotina (a u takovéhoto příkladu to prkotina bezpochyby je), ale to, že máme layout definovaný na potomcích, je z mého pohledu, no… řekněme neoptimální.
+
+Vždy si totiž představím řádově složitější příklady na komplexních webech, kde se kód pro rodiče i potomky může oddělovat do různých souborů.
+
+Další problém může být v tom, že s [vlastností `flex`](css-flex.md) definujete také [vlastnost `flex-basis`](css-flex-basis.md) a layout se vám může začít chovat jinak než čekáte. Stačí, když do něj připluje trošku jiných obsah než jste očekávali - například obrázek namísto textu. Podívejte se na vysvětlení „modelů pružnosti“ u poslední zmíněné vlastnosti.
+
+Řešení gridem je jednodušší:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+```
+
+Prostě jen kontejneru nastavíme `display:grid`, pomocí [`grid-template-columns`](css-grid-template-rows-columns.md) definujeme, jaké má mít sloupce, a k tomu přidáme mezeru `gap:1rem`. To je vše.
+
+Codepen: [https://codepen.io/machal/pen/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
+
+Pojďme na další příklad.
+
+## Důvod druhý: plnohodnotný Box Alignment {#box-alignment}
+
+[CSS Box Align](css-box-alignment.md) je modul CSS, který definuje zarovnání v jakémkoliv rozvržení, ať už je to grid nebo flexbox.
+Na flexboxu je ovšem nešťastné, že pro něj neplatí všechny vlastnosti zarovnání boxů.
+
+I následující tabulka je z knížky [CSS: moderní layout](https://www.vzhurudolu.cz/css-layout/).
+
+<div class="rwd-scrollable prop-table table-1-quarter f-6"  markdown="1">
+
+|                                     | **Hlavní osa**<br>`justify-*` | **Příčná osa**<br>`align-*` | **Oba směry**<br>`place-*` |
+|-------------------------------------|------------------------------|----------------------------|--------------------------|
+| **Zarovnání položek**<br>`*-items`   |  [`justify-items`](css-justify-items.md)<br>~~flex~~, grid     | [`align-items`](css-align-items.md)<br>flex, grid      | [`place-items`](css-place-items.md)<br>~~flex~~, grid |
+| **Zarovnání sebe sama**<br>`*-self`  |  [`justify-self`](css-justify-self.md)<br>~~flex~~, grid      | [`align-self`](css-align-self.md)<br>flex, grid       | [`place-self`](css-place-self.md)<br> ~~flex~~, grid |
+| **Distribuce obsahu**<br>`*-content` |  [`justify-content`](css-justify-content.md)<br>flex, grid    | [`align-content`](css-align-content.md)<br>flex, grid    | [`place-content`](css-place-content.md)<br> flex, grid |
+
+</div>
+
+Je to tak. Vlastnosti [`justify-items`](css-justify-items.md) i [`justify-self`](css-justify-self.md) nejsou dostupné pro layouty tvořené flexboxem.
+
+Tímpádem nemůžeme ani použít skvělé zkratky pro obousměrné zarovnání – `place-items` a `place-self`.
+
+Namísto `justify-items` můžeme použít starý dobrý `margin` nebo pro centrování položek ve flexboxu na příčné ose třeba `justify-content`.
+
+Důvody?
+Rozličné zaměření flexboxu a gridu.
+Když jsem to ve specifikaci studoval pro potřeby psaní knížky, chvíli jsem nemožnosti použít tyto vlastnosti rozumněl.
+Dnes už vám to bohužel vysvětlit neumím.
+Každopádně v kodérské praxi je nutnost pamatovat si, co ve flexboxu používat můžu a co ne, velice nepříjemná.
+
+Pojďme na příklad.
+Chci v obou směrech centrovat box uvnitř rodočovského prvku.
+
+HTML:
+
+```html
+<div class="container">
+  <p class="item" contenteditable>
+    Jsem uprostřed!
+  </p>
+</div>
+```
+
+CSS řešení flexboxem:
+
+```css
+.container {
+  display: flex;
+}
+
+.item {
+  align-self: center;
+  margin-inline: auto;
+}
+```
+
+CodePen: [https://codepen.io/machal/pen/eYrzBeY](https://codepen.io/machal/pen/eYrzBeY?editors=1100)
+
+Ano, můžeme zde použít magickou zkratku, kterou kodéři dnes obvykle používají:
+
+```css
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+```
+
+CodePen: [https://codepen.io/machal/pen/poKZabd](https://codepen.io/machal/pen/poKZabd?editors=1100)
+
+Otázkou je, jestli opravdu kodéři vědí, co přesně tímto dělají.
+
+V gridu je to daleko jednodušší.
+
+Můžeme použít celou škálu zarovnávacích vlastností z tabulky výše.
+A tedy i zkratky `place-items` pro obousměrné zarovnání.
+
+```css
+.container {
+  display: grid;
+  place-items: center;
+}
+```
+
+CodePen: [https://codepen.io/machal/pen/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
+
+## Důvod třetí: robustnost gridu {#robustnost-gridu}
+
+Díky zaměření gridu na tzv. „grid in“ layout byli autoři specifikace nucení promýšlet daleko více případů použití.
+Specifikace je tedy rozsáhlejší, což mnohé odradí.
+Ale díky tomu je i robustnější.
+
+Uvedu zde pár příkladů:
+
+- Pomocí [vlastnosti `grid-area`](css-grid-area.md) můžete umístit jakéhokoliv potomka na jakékoliv místo mřížky.
+- Hodnota `dense` [vlastnosti `grid-auto-flow`](css-grid-auto-flow.md) částečně nechává vykreslení layoutu typu masonry na prohlížeči.
+- I grid se může přizpůsobovat obsahu (viz klíčová slova `min-content` a `max-content` ve [funkci `minmax()`](css-minmax.md)).
+- Grid můžete použít nejen blokově (`display:grid`), ale také v řádce (`display:inline-grid`).
+- Z gridu vycházejí nové typy rozvržení jako [podmřížka (subgrid)](css-subgrid.md) nebo [masonry](css-masonry.md).
+
+Podobně jako mnozí z vás, jsem i já historicky preferoval flexbox.
+Na většinu běžných layoutů mi stačil.
+V momentě, kdy jsem se začal věnovat gridu, postupně začalo docházet k přeorientování na mřížku.
+
+Došlo to tak daleko, že jsem nedávno sám sebe načapal při přemýšlení, jestli existují layouty, u kterých je výhodnější použít flexbox. Ano, na pár si jich vzpomenu, ale moc jich není.
+
+## Kam grid nemůže (strčí se flexbox) {#kam-grid-nemuze}
+
+Na Twitteru a LinkedInu jsem se ptal i kolegyň a kolegů. Příklady, které jsem dostal, víceméně odpovídají těm pár příkladům, kde bych flexbox použil také.
+
+
+
