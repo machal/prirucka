@@ -22,7 +22,7 @@ V tomhle textu vám ukážu důvody, proč tomu tak je.
 
 Začneme obecnou rovinou. V knížce mám pro srovnání těchto dvou systémů pro tvorbu layoutu takovou pěknou tabulku:
 
-<div class="rwd-scrollable prop-table f-6"  markdown="1">
+<div class="rwd-scrollable prop-table table-1-third f-6"  markdown="1">
 
 |   **Vlastnost**          | **Flexbox** | **Grid** |
 |:-------------------------|:-----------:|:--------:|
@@ -160,7 +160,7 @@ CSS řešení flexboxem:
 }
 ```
 
-CodePen: [https://codepen.io/machal/pen/eYrzBeY](https://codepen.io/machal/pen/eYrzBeY?editors=1100)
+CodePen: [cdpn.io/e/eYrzBeY](https://codepen.io/machal/pen/eYrzBeY?editors=1100)
 
 Ano, můžeme zde použít magickou zkratku, kterou kodéři dnes obvykle používají:
 
@@ -172,7 +172,7 @@ Ano, můžeme zde použít magickou zkratku, kterou kodéři dnes obvykle použ�
 }
 ```
 
-CodePen: [https://codepen.io/machal/pen/poKZabd](https://codepen.io/machal/pen/poKZabd?editors=1100)
+CodePen: [cdpn.io/e/poKZabd](https://codepen.io/machal/pen/poKZabd?editors=1100)
 
 Otázkou je, jestli opravdu kodéři vědí, co přesně tímto dělají.
 
@@ -188,7 +188,7 @@ A tedy i [zkratku `place-items`](css-place-items.md) pro obousměrné zarovnán�
 }
 ```
 
-CodePen: [https://codepen.io/machal/pen/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
+CodePen: [cdpn.io/e/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
 
 Pojďme se ještě podívat na poslední z důležitých důvodů, proč já osobně preferuji mřížku před flexboxem.
 
@@ -258,7 +258,7 @@ Prostě jen kontejneru nastavíme `display:grid` a s pomocí [`grid-template-col
 K tomu přidáme mezeru `gap:1rem`. 
 To je vše.
 
-Codepen: [https://codepen.io/machal/pen/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
+Codepen: [cdpn.io/e/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
 
 ## Kam grid nemůže (strčí se flexbox) {#kam-grid-nemuze}
 
@@ -302,7 +302,7 @@ Navíc přidám `gap`, který je elegantnější než `margin`:
 }
 ```
 
-CodePen: [https://codepen.io/machal/pen/BaVPYmW](https://codepen.io/machal/pen/BaVPYmW?editors=1100)
+CodePen: [cdpn.io/e/BaVPYmW](https://codepen.io/machal/pen/BaVPYmW?editors=1100)
 
 Gridem to půjde jen částečně a navíc to bude trošku složitější:
 
