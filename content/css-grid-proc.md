@@ -188,7 +188,7 @@ A tedy i [zkratku `place-items`](css-place-items.md) pro obousměrné zarovnán�
 }
 ```
 
-CodePen: [cdpn.io/e/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
+CodePen: [cdpn.io/e/RwyRqOO](https://codepen.io/machal/pen/RwyRqOO?editors=1100)
 
 Pojďme se ještě podívat na poslední z důležitých důvodů, proč já osobně preferuji mřížku před flexboxem.
 
@@ -255,10 +255,14 @@ Podívejte se na vysvětlení „modelů pružnosti“ na posledním uvedením o
 ```
 
 Prostě jen kontejneru nastavíme `display:grid` a s pomocí [`grid-template-columns`](css-grid-template-rows-columns.md) definujeme, jaké má mít sloupce.
-K tomu přidáme mezeru `gap:1rem`. 
+K tomu přidáme mezeru `gap:1rem`.
 To je vše.
 
-Codepen: [cdpn.io/e/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
+CodePen: [cdpn.io/e/NWMqXrO](https://codepen.io/machal/pen/NWMqXrO?editors=1100)
+
+Dobrá tedy.
+Ale znamená to celé, že na flexbox máme zapomenout?
+Ne tak docela.
 
 ## Kam grid nemůže (strčí se flexbox) {#kam-grid-nemuze}
 
