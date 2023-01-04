@@ -18,6 +18,12 @@ Nadpis první úrovně zmenšíme pro okna prohlížeče do šířky `40em`. Tot
 
 Z CSS2 budete znát podmínky pro typy médií jako třeba `@media print`. Norma CSS3 Media Queries je vylepšuje o bližší specifikaci vlastnosti médií.
 
+<div class="web-only" markdown="1">
+
+Je dobré vědět, že kromě Media Queries máme také od ledna 2023 v prohlížečích [Container Queries](container-queries.md), které umožňují zaměřit dotazy na rozměry kontejneru, nikoliv jen celé stránky.
+
+</div>
+
 ## Anatomie Media Query
 
 Dotaz na médium (anglicky *media query*) se skládá z typu média (*media type*, výchozí je `all`) a podmínky obsahující vlastnosti média (*media features*) s hodnotou nebo rozmezím hodnot.

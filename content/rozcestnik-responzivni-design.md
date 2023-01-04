@@ -42,6 +42,7 @@
 ## CSS vlastnosti a řešení
 
 - [Media Queries](css3-media-queries.md)
+- [Container Queries](container-queries.md) 
 - [CSS pixel](css-pixel.md)
 - [Jednotky v CSS](jednotky.md)
 - [Funkce minmax(), min-content, max-content, fit-content](css-minmax.md)

@@ -13,7 +13,7 @@ No a relativně novou možností je použít pro tyhle účely vlastnost `contai
 
 <div class="web-only" markdown="1">
 
-→ *Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `content-visibility`](css-content-visibility.md), ale silně se využívá také v [Container Queries](element-queries.md)*.
+→ *Celá problematika „CSS Containmentu“ je nejzajímavější ve [vlastnosti `content-visibility`](css-content-visibility.md), ale silně se využívá také v [Container Queries](container-queries.md)*.
 
 </div>
 <!-- /web-only -->

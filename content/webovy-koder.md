@@ -96,7 +96,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### Responzivní design
 
-* **[nové] **Základní principy: fluidní layout, fluidní média, [Media Queries](https://www.vzhurudolu.cz/prirucka/css3-media-queries), [breakpointy](breakpointy.md).
+* **[nové] **Základní principy: fluidní layout, fluidní média, [Media Queries](css3-media-queries.md), [Container Queries](container-queries.md), [breakpointy](breakpointy.md).
 * **[nové] **Implementace: [Mobile First](mobile-first.md); UX na mobilech; [rychlost načítání](https://www.vzhurudolu.cz/rychlost-nacitani).
 
 #### Interpretace podkladů od UX/grafika:
