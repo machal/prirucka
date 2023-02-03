@@ -155,7 +155,10 @@ Na Vzhůru dolů je o [CSS pixelu](css-pixel.md) více informací.
 
 ### A co další vlastnosti médií?
 
-V textu jsme zvládli ty nejpoužívanější. Z dalších zajímavých budu jmenovat hlavně sadu vlastností pro detekci způsobu ovládání. Například `@media (hover:hover)`, které se umí prohlížeče zeptat na podporu efektu po najetí kurzoru. Tam se ale čeká na podporu Firefoxu. [caniuse.com/media-interaction](https://caniuse.com/#feat=css-media-interaction)
+V textu jsme zvládli ty nejpoužívanější. Z dalších zajímavých budu jmenovat například:
+
+- Sadu vlastností pro detekci způsobu ovládání – např. `@media (hover:hover)`, které se umí prohlížeče zeptat na podporu efektu po najetí kurzoru.
+- Detekci tmavého nebo světlého režimu – `@media (prefers-color-scheme: dark)`. Více je v textu [o dark mode](dark-mode).
 
 Vlastností médií existuje ale mnohem víc, i když ty ostatní už tak moc použitelné nejsou. [jecas.cz/media](http://jecas.cz/media#vlastnosti)
 
