@@ -166,7 +166,7 @@ h1 {
 }
 ```
 
-Velikost písma se bude s rozšiřováním okna zvětšovat od `1.5rem` až po `5rem`.
+Velikost písma se bude s rozšiřováním okna zvětšovat od `1.5rem` až po `3rem`.
 
 [Jednotkou `vw`](jednotky.md) nastavujeme velikost písma na pět procent šířky viewportu. Abychom se přitom vyhnuli extrémně malým a extrémně velkým hodnotám `font-size`, pomáháme si funkcí `clamp()`.
 
