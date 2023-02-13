@@ -2,7 +2,7 @@
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která informuje, kdy začne být viditelný primární obsah stránky.
 
-*Aktualizace k březnu 2020:* Metrika FMP se považuje za nespolehlivou. Vznikla ale náhrada v podobě [Largest Contentful Paint (LCP)](metrika-lcp.md).
+*Aktualizace k březnu 2020:* Metrika FMP se již delší dobu považuje za nespolehlivou. Vznikla ale náhrada v podobě [Largest Contentful Paint (LCP)](metrika-lcp.md).
 
 Jde o událost vykreslení takzvaného „hero elementu“, tedy hlavního prvku obsahu. Obvykle jde o nadpis `<h1>` nebo hlavní obrázek. V případě YouTube a podobných portálů by šlo zase o vykreslení oblasti s videem.
 

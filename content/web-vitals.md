@@ -27,7 +27,7 @@ Prodleva prvního vstupu. Metrika, která popisuje jak rychle může uživatel n
 * [*Cumulative Layout Shift (CLS)*](metrika-cls.md)  
 Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layoutu během vykreslování.
 
-_Je dobré vědět, že FID bude pravděpodobně během roku 2022 nebo 2023 v rámci Web Vitals nahrazeno aktuálnějším metrikou [INP (Interaction to Next Paint)](metrika-inp.md)._
+_Je dobré vědět, že FID bude pravděpodobně během roku 2023 nebo 2024 v rámci Web Vitals nahrazeno aktuálnějším metrikou [INP (Interaction to Next Paint)](metrika-inp.md)._
 
 Google také rozlišuje tři stavy metrik. Nově je označuje takto:
 

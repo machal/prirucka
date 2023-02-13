@@ -2,6 +2,8 @@
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která říká kdy je stránka renderovaná a zároveň schopná spolehlivě reagovat na uživatelský vstup.
 
+*Aktualizace k únoru 2023:* Metrika TTI se od [Lighthouse 10](https://www.vzhurudolu.cz/blog/222-lighthouse-10) nepoužívá. Je nahrazena kombinací [Total Blocking Time (TBT)](metrika-tbt.md) a [Largest Contentful Paint (LCP)](metrika-lcp.md). Pro zájemce ale metriku TTI samozřejmě vysvětlím:
+
 Ptáte se, kdy stránka reaguje *spolehlivě*? Je to v momentě, kdy se načetly a spustily javascripty, které jsou k tomu potřeba. A když prohlížeč není „zaseknutý“ nebo „nalaguje“.
 
 <figure>
@@ -34,4 +36,3 @@ Hranice, které pro vysvědčení používá [nástroj Lighthouse](lighthouse.md
 
 </div>
 
-V nástrojích [Lighthouse](lighthouse.md) nebo [PageSpeed Insights](pagespeed-insights.md) se metrika TTI do [celkového skóre (LPS)](metrika-lps.md) projevuje váhou 10 %.

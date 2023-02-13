@@ -54,21 +54,20 @@ Skóre každé metriky pak samozřejmě záleží na odlišnosti od optimální 
 | [First Contentful Paint (FCP)](metrika-fcp.md)    | 10 % |           ≤ 1,8 s |
 | [Largest Contentful Paint (LCP)](metrika-lcp.md)  | 25 % |         ≤ 2,5 s |
 | [Speed Index (SI)](speedindex.md)                 | 10 % |         ≤ 3,4 s |
-| [Time To Interactive (TTI)](metrika-tti.md)       | 10 % |         ≤ 3,8 s |
 | [Total Blocking Time (TBT)](metrika-tbt.md)       | 30 % |         ≤ 0,2 s |
-| [Cumulative Layout Shift (CLS)](metrika-cls.md)   | 15 %  |           ≤ 0,1 |
+| [Cumulative Layout Shift (CLS)](metrika-cls.md)   | 25 %  |           ≤ 0,1 |
 </div>  
 <figcaption markdown="1">
-*Tabulka: Metriky, jejich váhy a ideální hodnoty pro získání 100 % hodnocení v Lighthouse Performance Score od Lighthouse [verze 8](https://www.vzhurudolu.cz/blog/199-lighthouse-8).*
+*Tabulka: Metriky, jejich váhy a ideální hodnoty pro získání 100 % hodnocení v Lighthouse Performance Score od Lighthouse [verze 10](https://www.vzhurudolu.cz/blog/222-lighthouse-10).*
 </figcaption>
 </figure>
 
-Všimněte si, jak moc důležité jsou metriky [Core Web Vitals](web-vitals.md). Mají 70 % vliv na celkové skóre.
+Všimněte si, jak moc důležité jsou metriky [Core Web Vitals](web-vitals.md). Mají 80 % vliv na celkové skóre.
 
 Jak případné úspěchy v optimalizaci jednotlivých metrik pohnou s celkovým skóre si můžete vyzkoušet [na skvělém kalkulátoru](https://googlechrome.github.io/lighthouse/scorecalc/) z dílny autorů Lighthouse:
 
 <figure>
-<img src="../dist/images/original/lighthouse-calculator.png" alt="Lighthouse Calculator">
+<img src="../dist/images/original/lighthouse-calculator.jpg" alt="Lighthouse Calculator">
 <figcaption markdown="1">
 *Obrázek: Interaktivní kalkulátor od tvůrců Lighthouse.*
 </figcaption>
@@ -199,7 +198,7 @@ Základní technická doporučení ke zlepšení metriky vám dá každý z vý�
 
 Zaměřím zde se hlavně tedy „soft“, nebo také procesní rady:
 
-- Monitorujte rychlost průběžně - například na [PageSpeed.cz](https://pagespeed.cz/).
+- Monitorujte rychlost průběžně - například na [PageSpeed.cz](https://app.pagespeed.cz/).
 - Zaměřte se na jednotlivé metriky. Využijte [kalkulátor](https://googlechrome.github.io/lighthouse/scorecalc/), abyste dokázali odhadnout, jakých posunů můžete jejich optimalizací dosáhnout.
 - Nepřehánějte to. Sledujte hlavně data od uživatelů.
 

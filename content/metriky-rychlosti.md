@@ -33,7 +33,7 @@ Jde o následující tři metriky.
 
 → *Detailně: [Web Vitals](web-vitals.md)*
 
-## Další metriky {#dalsi}
+## Další důležité metriky {#dalsi}
 
 Většina rychlostních metrik jsou prostě události, které po splnění určitých podmínek vznikají na časové ose postupu vykreslování stránky.
 
@@ -43,14 +43,10 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 |:-----------------------------------------------|:------------------------------|
 | [Time To First Byte (TTFB)](ttfb.md)           | Rychlost serveru              |
 | [DOM Content Loaded (DCL)](udalost-dcl.md)     | Rozparsování HTML prohlížečem |
-| [First Paint (FP)](metrika-fp.md)              | První vykreslení              |
 | [First Contentful Paint (FCP)](metrika-fcp.md) | První vykreslení obsahu       |
-| [First Meaningful Paint (FMP)](metrika-fmp.md) | První smysluplné vykreslení   |
 | [Total Blocking Time (TBT)](metrika-tbt.md)    | Celkový čas blokování JS      |
-| [Time to Interactive (TTI)](metrika-tti.md)    | První možnost interaktivity   |
 | [Interaction to Next Paint (INP)](metrika-inp.md)    | Od interakce do prvního vykreslení   |
 | [Speed Index](speedindex.md)                   | Vykreslení celého viewportu   |
-| [Load](load.md)                                | Stažení všeho                 |
 | [Lighthouse Performance Score](metrika-lps.md) | Všechny renderovací metriky   |
 
 </div>
@@ -61,6 +57,10 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 *Postupný vznik událostí pro vykreslování stránky*
 </figcaption>
 </figure>
+
+Dříve se využívaly některé další metriky, ale mají své problémy a proto se většinou od jejich používání upustilo:
+
+[First Paint (FP, První vykreslení)](metrika-fp.md), [First Meaningful Paint (FMP, První smysluplné vykreslení)](metrika-fmp.md), [Load, Stažení všeho](load.md), [Time to Interactive (TTI, První možnost interaktivity)](metrika-tti.md).
 
 Metriky se dají získat různými způsoby a na to se teď zaměříme.
 
