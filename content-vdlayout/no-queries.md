@@ -6,7 +6,7 @@ Prošli jsme dva typy podmínek, podle nichž můžete přizpůsobovat rozložen
 
 Media Queries mají širokou podporu v prohlížečích, ale lidé ve standardizační organizaci je navrhli tak, aby řešily spíše rozložení celé stránky. Cílí totiž na šířku okna prohlížeče.
 
-Zato [Container Queries](container-queries.md) jsou navržené pro větší část scénářů, kdy tyto dotazy potřebujeme – pro layout komponent ve stránce, tedy jen výseku okna prohlížeče. Jenže v době psaní těchto textů Container Queries podporu prakticky nemají.
+Zato [Container Queries](container-queries.md) jsou navržené pro větší část scénářů, kdy tyto dotazy potřebujeme – pro layout komponent ve stránce, tedy jen výseku okna prohlížeče. 
 
 V moderních systémech layoutu je ještě jedna možnost – zalamovat rozvržení úplně bez podmínek, takzvané „No Queries“ layouty. Na první pohled to může znít skvěle, i mně to tak pořád zní, ale má to řadu háčků nebo přímo velrybářských harpun, abych byl přesný.
 

@@ -20,7 +20,7 @@ Z CSS2 budete znát podmínky pro typy médií jako třeba `@media print`. Norma
 
 <div class="web-only" markdown="1">
 
-Je dobré vědět, že kromě Media Queries máme také od ledna 2023 v prohlížečích [Container Queries](container-queries.md), které umožňují zaměřit dotazy na rozměry kontejneru, nikoliv jen celé stránky.
+Je dobré vědět, že kromě Media Queries máme také od února 2023 v prohlížečích [Container Queries](container-queries.md), které umožňují zaměřit dotazy na rozměry kontejneru, nikoliv jen celé stránky.
 
 </div>
 

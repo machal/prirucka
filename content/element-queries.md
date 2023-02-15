@@ -8,7 +8,7 @@ Je to věc, kterou ve webdesignu opravdu hodně chci. A věřte mi, že vy taky.
 
 Zatím je Element Queries možné jen emulovat javascriptovými knihovnami. A bohužel není jisté, že se standardu, natož nějaké nativní implementace v dohledné době dočkáme.
 
-→ *Aktualizace v lednu 2023: Mrkněte se na článek o [Container Queries](container-queries.md).*
+→ *Aktualizace v únoru 2023: Mrkněte se na článek o [Container Queries](container-queries.md), které již mají plnou podporu.*
 
 Pokud design udržujete v nějakém [systému](pattern-lab.md), asi budete souhlasit, že parametry samotné komponenty jsou pro změnu layoutu nebo chování daleko důležitější než parametry okna prohlížeče. Myslím, že bychom tím Media Queries mohli skoro úplně nahradit.
 

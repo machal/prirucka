@@ -163,11 +163,11 @@ Co když ale vložíme SVG soubor obsahující Media Queries externě?
 Tušíte správně, podmínky v `@media` se pak budou vztahovat k šířce obrázku samotného. [cdpn.io/e/zZKzRe](https://codepen.io/machal/pen/zZKzRe?editors=1100)
 
 <div class="ebook-only" markdown="1">
-  Podmínky budou pracovat jako [Container Queries](container-queries.md), které bychom ve webdesignu potřebovali jako sůl. Ale nemáme je. Zatím tedy jen u externích SVG. Zmíním je ještě [v kapitole o Media Queries](media-queries-tipy.md).
+  Podmínky budou pracovat jako [Container Queries](container-queries.md). Zatím tedy jen u externích SVG. Zmíním je ještě [v kapitole o Media Queries](media-queries-tipy.md).
 </div>
 
 <div class="web-only" markdown="1">
-  Podmínky budou pracovat jako [Element Queries](element-queries.md), které bychom ve webdesignu potřebovali jako sůl. Ale nemáme je. Zatím tedy jen u externích SVG. 
+  Podmínky budou pracovat jako [Container Queries](container-queries.md). 
 </div>
 
 Tak či tak, mechanismus responzivních SVG má velkou budoucnost: pro ikony, grafy, interaktivní elementy, mapy (!) a další prvky s potřebou měnit hustotu informací nebo formy podle velikosti okna prohlížeče.

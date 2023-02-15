@@ -25,9 +25,9 @@ Container Queries cílí jen na konkrétní část stránky. Říkáte „hurá�
 </figure>
 
 Skeptik by se mě na tomto místě zeptal, jaký to má háček.
-Ano, má to háček.
-Ale jen malinký.
-Container Queries zatím nepodporuje Firefox, ale brzy s tím začne – odhadem v únoru 2023.
+Ano, mělo to háček.
+Ale už nemá.
+Container Queries nepodporoval Firefox, což se od února 2023 a verze 110 změnilo.
 
 <!-- AdSnippet -->
 
@@ -407,23 +407,23 @@ A co další prohlížeče?
 
 - Safari se v poslední době probralo a plná implementace Container Queries dorazila už v září 2022, konkrétně do verze 16.0. [vrdl.in/cqsaf](https://developer.apple.com/documentation/safari-release-notes/safari-16-release-notes)
 - Edge od Microsoftu je na tom s podporou aktuálně stejně jako Chrome. Od října 2022 to je bezva. Klíčenku posíláme do Redmondu.
-- I v nejméně rozšířeném prohlížeči, ve Firefoxu, se podpora připravuje. Dorazí do Firefoxu 108, což je v době psaní už příští verze. Těšit se můžeme už v lednu nebo únoru 2023. Aktuálně můžete Container Queries zkoušet ve verzi Nightly.
+- Firefox Container Queries podporuje od února 2023 a verze 110.
 
-Jako vždy platí – sledujte [CanIUse.com](https://caniuse.com/css-container-queries).
+Viz také [CanIUse.com](https://caniuse.com/css-container-queries).
 
 ## Možná náhradní řešení {#fallback}
 
 <div class="book-index" data-book-index="Fallback"></div>
 <div class="book-index" data-book-index="Náhradní řešení"></div>
 
-Aktuálně tedy čekáme na podporu ze strany Firefoxu.
+Řekněme, že v cílové skupině máte hodně uživatelů starších prohlížečů bez podpory Container Queries.
 Znamená to, že v takové chvíli tuto skvělou věc použít ještě nemůžete?
 
 Záleží na situaci, ale je nutné si i zde zopakovat základní mantru webových technologií.
 Pomocí postupného vylepšování (Progressive Enhancement) bude možné dodat lepší řešení podporujícím prohlížečům a to horší těm nepodporujícím.
 
 Ale přemýšlejme i nad možností, že bychom postupné vylepšení nezvolili.
-Například v případě nepodpory ze strany Safari by naše komponenta v tomto prohlížeči vypadala následovně.
+Například v případě nepodpory ze strany starších verzí Safari by naše komponenta vypadala následovně.
 
 <figure>
 <img src="../dist/images/original/vdlayout/container-queries-safari.jpg" width="1600" height="450" alt="">
@@ -445,7 +445,7 @@ Rozhodování, zda se vám vyplatí dělat náhradní řešení nebo zda vůbec 
 Samozřejmě se i pro Container Queries se objevily polyfilly, čili javascriptové emulace dané vlastnosti.
 Za běžných okolností bych vás z důvodu pomalé rychlosti takových řešení od využívání odrazoval.
 
-Jenže v tomto případě jde o rozchození vlastnosti ve Firefoxu, prohlížeči, který využívá pár procent uživatelů.
+Jenže v tomto případě jde o rozchození vlastnosti ve starších prohlížečích, jen pro pár procent uživatelů.
 Zase tak strašně moc proti tomu tedy protestovat nebudu. Obzvlášť v případech, kdy jej použijete pro obsah mimo první zobrazenou obrazovku. [vrdl.in/cqpol](https://github.com/GoogleChromeLabs/container-query-polyfill)
 
 ### Něco pro alternativce: krkavčí technika {#krkavec}
