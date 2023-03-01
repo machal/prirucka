@@ -51,6 +51,7 @@
 - [display: typ zobrazení prvku](css-display.md)
 - [Media Queries](css3-media-queries.md)
 - [Container Queries](container-queries.md)
+- [Style Queries](style-queries.md)
 - [Vícesloupcový layout](css-multicolumn.md): [vlastnost `columns`](css-multicol-columns.md)
 - [Flexbox](css-flexbox.md)
 - [CSS grid](css-grid.md): [v MSIE](css-grid-msie.md), [příklady](css-grid-inspirace.md), [masonry](css-masonry.md), [subgrid](css-subgrid.md), [proč grid?](css-grid-proc.md)

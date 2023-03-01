@@ -309,7 +309,8 @@ Zajímavé na hodnotě `normal` je, že se prvku sice nemůžete dotazovat na ve
 To obstarávají takzvané Style Queries.
 Jednou o nich něco napíšu, jsou velmi zajímavé, ale zatím nemají podporu v prohlížečích.
 
-Ve výchozím nastavení jsou všechny prvky kontejnerem pro účely Style Queries.
+Ve výchozím nastavení jsou všechny prvky kontejnerem pro účely [Style Queries](style-queries.md).
+
 Kontejnery pro Style Queries lze přetvořit v kontejnery pro Container Queries zadáním typu kontejneru pomocí vlastnosti `container-type` (nebo `container`).
 
 ### Vlastnost container-name {#container-name}
