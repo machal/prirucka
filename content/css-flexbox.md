@@ -192,14 +192,19 @@ HTML je jednoduché. O to přísnější máme požadavky na design:
 - Layout se při nedostatku místa zalomí.
 - První dva sloupce jsou pružné, třetí nikoliv.
 - Druhý sloupec se zvětšuje a zmenšuje dvakrát tolik než první.
+- Mezi sloupci je mezera `1rem`.
 - Na menších displejích do `400px` se prvky vyskládají pod sebe.
 
 <div class="colored-box" markdown="1">
 
-Zkuste si to nakódovat sami, stačí forknout následující CodePen: [vrdl.in/f18lo](https://codepen.io/machal/pen/BaRYjya.
+Zkuste si to nakódovat sami, stačí forknout následující CodePen: [vrdl.in/f18lo](https://codepen.io/machal/pen/BaRYjya).
 
 </div>
 <!-- .colored-box -->
+
+> Podívejte se na video „Jak na flexbox, jednorozměrný layout v CSS“.
+>
+> YouTube: [youtu.be/de2YWdhgNV8](https://www.youtube.com/watch?v=de2YWdhgNV8)
 
 V dalším textu si ukážeme, jak bych postupoval já.
 
@@ -243,6 +248,16 @@ Dále jsme si vymysleli, že první dva sloupce se budou zmenšovat a zvětšova
 /* Fixně široká položka: */
 .col-3 {
   flex: none;
+}
+```
+
+### Mezi sloupci je mezera 1rem {#priklad-mezera}
+
+Dříve ve flexboxu nebylo možné mezi položkami vytvořit mezery jinak než pomocí vlastností `padding` nebo `margin`. Teď už ano. Stačí sáhnout po [vlastnosti `gap`](css-gap.md):
+
+```css
+.container {
+  gap: 1rem;
 }
 ```
 
