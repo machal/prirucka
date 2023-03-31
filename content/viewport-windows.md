@@ -1,6 +1,6 @@
 # Viewport na Windows 8 a 8.1
 
-*Aktualizace pro rok 2018: Zápis `@viewport { }` moderní prohlížeče zatím nezvládají. Výjimkou je Internet Explorer 11 a Edge, kde je to ale potřeba zapnout v nastavení. Pravidlo tedy využívá jen IE11 v takzvaném „snap“ módu na desktopových Windows. V roce 2018 to tedy podle mě k ničemu není.*
+*Aktualizace pro rok 2023: Článek už není relevantní, mrkněte se na text o [meta značce pro viewport](viewport-meta.md).*
 
 S viewportem jsou jen problémy. A Internet Explorer na Windows Phone 8 a 8.1 dal téhle větě nový rozměr.
 

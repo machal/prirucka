@@ -20,7 +20,7 @@ První iPhone přišel v roce 2006 do situace, kdy byl prakticky každý web nav
 Zároveň v Applu doufali, že začnou vznikat weby přizpůsobené malým obrazovkám. Proto přišli s možností, jak  webaři mohou mobilním  zařízením  sdělit, že pro ně web upravili. My pro to dnes už rutinně používáme [meta značku pro viewport](viewport-meta.md):
 
 ```html
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
 Obvykle se tím sjednotí šířka layoutového viewportu se šířkou ideálního viewportu. Je to tedy jednoduché. Ale když uživatel začne stránku zvětšovat nebo zmenšovat, jsme opět v situaci dvou viewportů. Proto je musíme znát.
