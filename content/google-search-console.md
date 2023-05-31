@@ -38,7 +38,7 @@ Není vůbec od věci si jednou za čas proklikat celé rozhraní nástroje. Obv
 
 ## Kvalita stránky (Page Experience)
 
-V části „Kvalita stránky“ zobrazuje Google Search Console stav metriky Core Web Vitals s dalšími složkami signálů  uživatelského zážitku, jako je zabezpečení HTTPS, stav bezpečného prohlížení nebo přívětivost pro mobilní zařízení.
+V části „Kvalita stránky“ zobrazovala Google Search Console stav metrika Core Web Vitals s dalšími složkami signálů  uživatelského zážitku, jako je zabezpečení HTTPS, stav bezpečného prohlížení nebo přívětivost pro mobilní zařízení.
 
 <figure>
 <img src="../dist/images/original/gsc-page-experience.png" width="1600" height="900" alt="Report „Kvalita Stránky“ v Google Search Console">
@@ -47,7 +47,7 @@ V části „Kvalita stránky“ zobrazuje Google Search Console stav metriky Co
 </figcaption>
 </figure>
 
-Na obrázku je nejdůležitější hodnota pro „Adresy URL s dobrými výsledky“, protože vidíte, kolik stránek podle GSC nevyhovuje z pohledu signálů Page Experience. V tomto případě je potřeba zapracovat na 2,5 % všech URL.
+Dnes už to neplatí a rychlost zůstává jen v sekci „Rychlost“ nebo „Core Web Vitals“.
 
 V reportu „Core Web Vitals“ Google Search Console počet vyhovující a případně nevyhovujících URL z pohledu metrik [Web Vitals](web-vitals.md):
 
@@ -60,7 +60,7 @@ V reportu „Core Web Vitals“ Google Search Console počet vyhovující a př�
 
 Proklikem se pak dostaneme na už známý report podílu vyhovujících a nevyhovujících stránek.
 
-Více o této části najdete na stránce o [Google Page Experience](google-page-experience.md).
+Více o měření rychlosti Google najdete v textu o [Google Page Experience](google-page-experience.md).
 
 ## Jaké problémy vám může Search Console odhalit, když budete nástroj důsledně sledovat?
 

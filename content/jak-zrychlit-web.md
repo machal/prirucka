@@ -1,6 +1,6 @@
-# Jak zrychlit web v roce 2021?
+# Jak zrychlit web?
 
-V květnu letošního roku proběhne ve vyhledávání Googlu aktualizace zvaná [Page Experience](google-page-experience.md), kde mají nový význam ukazatele uživatelského prožitku, včetně metrik rychlosti webu zvaných [Core Web Vitals](web-vitals.md).
+V letech 2021-2022 proběhla ve vyhledávání Googlu aktualizace zvaná [Page Experience](google-page-experience.md), kde mají nový význam ukazatele uživatelského prožitku, včetně metrik rychlosti webu zvaných [Core Web Vitals](web-vitals.md).
 
 <div class="related" markdown="1">
 - [Mýty o rychlosti](rychlost-myty.md)

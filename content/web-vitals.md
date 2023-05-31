@@ -6,9 +6,9 @@ Aktuálně je totiž [měření rychlosti](rychlost-nastroje.md) (a UX) webu pom
 
 <!-- AdSnippet -->
 
-Nově tedy budeme měřit hlavně tři metriky – LCP, FID a CLS. Dostali jsme k tomu nástroje a příslib, že se to už nebude moc často měnit.
+Nyní měříme hlavně tři metriky – LCP, FID a CLS. Dostali jsme k tomu nástroje a příslib, že se to už nebude moc často měnit.
 
-Google tyto metriky zohledňuje v rámci oblasti signálů [Page Experience](google-page-experience.md). Je zde tedy jednoznačná vazba na SEO.
+Google tyto metriky zohledňuje v rámci [hodnocení rychlosti webů](google-page-experience.md). Je zde tedy jednoznačná vazba na SEO.
 
 Pojďme si v tomto textu dát rychlý úvod do metrik ve Vitals obsažených a do způsobů měření.
 
@@ -26,24 +26,25 @@ Největší vykreslení obsahu. Metrika, která popisuje rychlost načítání s
 Prodleva prvního vstupu. Metrika, která popisuje jak rychle může uživatel na stránce začít provádět úlohy – výkon *interaktivity*. Jedná se tedy o metriku podobnou synteticky měřené [TBT](metrika-tbt.md).
 * [*Cumulative Layout Shift (CLS)*](metrika-cls.md)  
 Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layoutu během vykreslování.
-
-_Je dobré vědět, že FID bude pravděpodobně během roku 2023 nebo 2024 v rámci Web Vitals nahrazeno aktuálnějším metrikou [INP (Interaction to Next Paint)](metrika-inp.md)._
+* [*Interaction to Next Paint (INP)*](metrika-inp.md)  
+Od interakce k vykreslení. Metrika, která popisuje *rychlost odezvy po uživatelské interakci*. Tato metrika nahradí FID v březnu 2024.
 
 Google také rozlišuje tři stavy metrik. Nově je označuje takto:
 
-* *Good* – Metrika vyhovuje kritériím.
-* *Needs Improvements* – Metrika vyžaduje zlepšení.
-* *Poor* – Hodnota metriky je špatná.
+* *Dobrá (Good)* – Metrika vyhovuje kritériím.
+* *Vyžaduje zlepšení (Needs Improvements)* – Metrika vyžaduje zlepšení.
+* *Špatná (Poor)* – Hodnota metriky je špatná.
 
 Hranice pro stavy jednotlivých metrik jsou [podle Googlu](https://web.dev/defining-core-web-vitals-thresholds/) následující:
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Metrika    |  Good     |  Needs Improvement  |  Poor     |
+| Metrika    |  Dobrá    |  Vyžaduje zlepšení  |  Špatná   |
 |:-----------|----------:|--------------------:|----------:|
 | LCP        | ≤ 2,5 s   |   2,5 - 4 s         |  > 4 s    |
 | FID        | ≤ 100 ms  |   100 - 300 ms      |  > 300 ms |
 | CLS        | ≤ 0,1     |   0,1 - 0,25        |  > 0,25   |
+| INP        | ≤ 200 ms  |   200 - 500 ms      |  > 500 ms |
 
 </div>
 
@@ -63,6 +64,7 @@ Google má také na web.dev pěkné materiály o optimalizaci jednotlivých metr
 * [Optimalizace LCP](https://web.dev/optimize-lcp/)
 * [Optimalizace FID](https://web.dev/optimize-fid/)
 * [Optimalizace CLS](https://web.dev/optimize-cls/)
+* [Optimalizace INP](https://web.dev/optimize-inp/)
 
 ### A co další metriky? {#dalsi-metriky}
 

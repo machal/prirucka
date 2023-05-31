@@ -6,7 +6,7 @@ Jedná se o jednu [z metrik rychlosti webu](metriky-rychlosti.md), i když v tom
 
 <!-- AdSnippet -->
 
-Metrika Cumulative Layout Shift je velmi důležitá, protože je součástí [Core Web Vitals](web-vitals.md) a zohledňuje se v rámci signálů [Google Page Experience](google-page-experience.md).
+Metrika Cumulative Layout Shift je velmi důležitá, protože je součástí [Core Web Vitals](web-vitals.md) a zohledňuje se v rámci signálů [hodnocení rychlosti webů Googlem](google-page-experience.md).
 
 CLS udává součet posunů layoutu (*layout shift*) v rámci nejhoršího pětivteřinového okna během používání stránky.
 

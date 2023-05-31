@@ -3,7 +3,7 @@
 ## Obecně o rychlosti webů
 
 - [Jak zrychlit web](jak-zrychlit-web.md)
-- [Google Page Experience](google-page-experience.md)
+- [Hodnocení rychlosti webů Googlem](google-page-experience.md)
 - [Co je to rychlost načtení?](rychlost-nacteni.md)
 - [Proč řešit rychlost?](rychlost-nacitani-proc.md)
 - [Zrychlení Srovname.cz](https://www.vzhurudolu.cz/blog/58-rychlost-srovname-cz)

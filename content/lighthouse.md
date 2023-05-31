@@ -2,7 +2,7 @@
 
 Lighthouse je velmi důležitý nástroj. Chcete vědět proč? Google jeho prostřednictvím totiž webařům radí jak weby technicky zlepšit.
 
-Je to nástroj pro analýzu technické kvality webu, která důležitá jak pro návštěvníky, tak pro umístění webu právě ve výsledích vyhledávání Googlu, například v oblasti [Page Experience](google-page-experience.md)
+Je to nástroj pro analýzu technické kvality webu, která důležitá jak pro návštěvníky, tak pro umístění webu právě ve výsledích vyhledávání Googlu, například v oblasti dřívě pojmenované [Page Experience](google-page-experience.md)
 
 Obsah:
 

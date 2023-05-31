@@ -2,7 +2,7 @@
 
 Nová [metrika rychlosti webu](metriky-rychlosti.md) – Largest Contentful Paint (LCP) – představuje přesnější způsob měření momentu, ve kterém se vykreslí hlavní obsah stránky.
 
-Metrika Largest Contentful Paint je velmi důležitá, protože je součástí [Core Web Vitals](web-vitals.md) a zohledňuje se v rámci signálů [Google Page Experience](google-page-experience.md).
+Metrika Largest Contentful Paint je velmi důležitá, protože je součástí [Core Web Vitals](web-vitals.md) a zohledňuje se v rámci  [hodnocení rychlosti webů Googlem](google-page-experience.md).
 
 LCP se „dívá“, kdy byl prohlížeč zobrazil největší prvek ve stránce. Uživatelům tak pomáhá vyhodnotit, zda je stránka užitečná.
 
