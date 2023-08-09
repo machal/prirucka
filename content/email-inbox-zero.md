@@ -117,7 +117,7 @@ Zpracování e-mailů si normálně počítám v Toggl jako práci:
 * Složitější, poradenské e-maily klientům trackuji jako placenou práci pro ně.
 * Pro ostatní e-mailovou komunikaci mám štítek „Komunikace“ a snažím se, aby nepřesáhla tak těch 30 minut denně. Sem patří neplacená komunikace s klienty, různé newslettery, komunikace kolem Vzhůru dolů, občasný soukromý e-mail, a tak dále.
 
-Všimněte si, že se e-mailům věnuji po obědě. Ano, to jsem většinou nejunavenější z celého dne a e-maily zároveň nepotřebují tolik mých moznových kapacit.
+Všimněte si, že se e-mailům věnuji po obědě. Ano, to jsem většinou nejunavenější z celého dne a e-maily zároveň nepotřebují tolik mých mozkových kapacit.
 
 ## A co další předpoklady? Chce to trochu pošolíchat nastavení e-mailu {#predpoklad-2}
 
