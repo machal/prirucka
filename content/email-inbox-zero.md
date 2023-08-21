@@ -158,7 +158,7 @@ Jak tedy postupovat každý den při procházení příchozí pošty? Různí li
 
 Projdu očima e-maily a začnu od těch nejjednodušších. Proto, aby to zkraje odsejpalo. Co si totiž budeme povídat – vyřizování e-mailů obvykle není nejúžasnější část dne.
 
-* Obecně nejprve procházím interní zprávy týmu, což znamená vyřídit všechny e-mailové notifikace z Basecampu. To eviduji jako samostatní časový úsek.
+* Obecně nejprve procházím interní zprávy týmu, což znamená vyřídit všechny e-mailové notifikace z Basecampu. To eviduji jako samostatný časový úsek.
 * Druhé na řadě jsou ostatní e-maily, které se dají vyřídit rychle, tak do minuty jeden. To eviduji jako samostatnou položku „Komunikace“. Přitom často ještě vyřídím různé notifikace ze sociálních sítí.
 * Třetí jsou konkrétní složitější e-maily, které můžu trackovat jako samostatný čas, obvykle pro konkrétního klienta. Jde většinou o rychlou radu, připomenutí priorit nebo rychlé vytěžení nějakých dat a dodání ilustrace.
 * Čtvrté na řadě jsou e-maily, u kterých vím, že se na ně nedostane. Většinou mají nízkou prioritu. Ty odkládám na další den. Je jich každý den tak desetina.
