@@ -2,7 +2,9 @@
 
 <div class="book-index" data-book-index="display"></div>
 
-Vlastnost `display` slouží k určení způsobu vykreslení prvku. Může to být i relativně komplikovaná věc a má spoustu nových hodnot.
+Vlastnost `display` slouží k určení způsobu vykreslení prvku v CSS. 
+
+Na tom nic není. Tento článek se vám ale pokusí ukázat, že může jít i o relativně komplikovanou věc.
 
 <div class="ebook-only" markdown="1">
 
@@ -14,7 +16,7 @@ Abyste totiž mohli začít vytvářet nějaký typ rozvržení v CSS, musíte v
 
 Vy, kteří znáte její základní hodnoty jako `block` nebo `inline`, možná budete překvapení, že od roku 2020 zde máme novou verzi specifikace, jež přidává řadu dalších možností – „CSS Display Module Level 3“. [vrdl.in/w3disp](https://www.w3.org/TR/css-display-3/)
 
-Začneme jednoduchým přehledem nejužitečnějších hodnot. Většinu z nich asi znáte.
+Začneme jednoduchým přehledem nejužitečnějších hodnot vlastnosti `display`. Většinu z nich asi znáte.
 
 <div class="rwd-scrollable table-1-quarter f-6" markdown="1">
 
@@ -35,23 +37,17 @@ V tabulce zdaleka nejsou všechny možnosti a jejich specifické vlastnosti, ná
 Víte například, že…?
 
 - S pomocí [hodnoty `flow-root`](#vnejsi) nemusíte pro „floaty“ používat „clearfix“, tedy reset plovoucího layoutu?
-- Firefox podporuje [víceslovná označení](#viceslovna) jako `inline flex`?
-- Pro skrytí prvku existuje kromě hodnoty `none` také [hodnota `contents`](#none-contents)?
-
-V CSS je stále těžší najít vlastnost, která by byla snadná k pochopení a naučení.
-
-<!-- AdSnippet -->
-
-Možná to překvapí i vás zkušenější, ale jak vidíte (nebo brzy uvidíte), docela široký záběr potřebuje člověk i pro vstřebání vlastnosti `display`. Pojďme se teď podívat do jejího světa.
+- Prohlížeče nově podporují [víceslovná označení](#viceslovna) jako `inline flex`?
+- Pro skrytí prvku existuje kromě hodnoty `none` také [hodnota `contents`](#none-contents). A víte, co umí?
 
 ## Vnitřní a vnější zobrazení {#typy}
 
-První věc, kterou si musíme uvědomit, je holý fakt, že nově existují podle specifikace dva typy zobrazení:
+První věc, kterou si musíme uvědomit, je holý fakt, že podle specifikace nově existují dva typy zobrazení:
 
 - _Vnitřní zobrazení_  
-Hodnota vlastnosti `display` určuje, jak prohlížeče rozloží potomky prvku. Sem patří hodnoty jako `flex`, `grid` nebo `table`.
+Hodnota vlastnosti `display` určuje, jak prohlížeče rozloží potomky prvku, nebo jinak také vnitřní elementy. Sem patří hodnoty jako `flex`, `grid` nebo `table`.
 - _Vnější zobrazení_  
-Hodnota definuje, jak se sám prvek podílí na rozložení stránky. Pohled zvenčí. Toto určují hodnoty jako `inline`, `block` nebo `none`.
+Hodnota definuje, jak se sám prvek zobrazuje vůči svému okolí. Pohled zvenčí. Toto určují hodnoty jako `inline`, `block` nebo `none`.
 
 Máte? Výborně. Toto se nám bude hodit, až budeme hovořit o hodnotách pro více klíčových slov.
 
@@ -81,33 +77,37 @@ V CodePenu si můžete vyzkoušet všechny možnosti.
 
 CodePen: [vrdl.in/azksi](https://codepen.io/machal/pen/wvzYXeg?editors=0000)
 
-Varianta s typem zobrazení `run-in` v mé ukázce chybí, není totiž podporovaná jinde než v [Internet Exploreru](msie.md) (!). V tomto dědečkovi mezi prohlížeči nefunguje CodePen, takže byste z ukázky nic neměli. Viz podpora na CanIUse.  
+Varianta s typem zobrazení `run-in` v mé ukázce chybí, není totiž podporovaná jinde než v [Internet Exploreru](msie.md) (!).
+
+V tomto dědečkovi mezi prohlížeči nefunguje CodePen, takže byste z ukázky nic neměli. Viz podpora na CanIUse.  
 [caniuse.com/run-in](https://caniuse.com/run-in)
+
+Dědeček je už ale bohužel mrtvý, takže ani `run-in` vás zajímat nemusí.
 
 ## Vnitřní zobrazení {#vnitrni}
 
-Hodnoty vnitřního zobrazení zapínají uvnitř dotčeného prvku nový kontext formátování (k tomu se v CSS používá pojem „formatting context“). No a ten má vliv na způsob vykreslení vnitřních prvků, případně na chování vlastností aplikovaných na prvek.
+Hodnoty vnitřního zobrazení zapínají uvnitř dotčeného prvku nový kontext formátování (k tomu se v CSS používá pojem „formatting context“).
+
+Kontext formátování má vliv na způsob vykreslení vnitřních prvků, případně na chování vlastností aplikovaných na prvek.
 
 - `flow`  
-Hodnota `flow` zapíná formátování tokem („flow layout“), což je běžný způsob zobrazení, jež je automaticky zapnuto hodnotami `block`, `inline` a `inline-block`. Pokud vím, toto zatím není v prohlížečích podporováno, nicméně jde o výchozí režim rozvržení v CSS.
+Hodnota `flow` zapíná formátování tokem („flow layout“). To je běžný způsob zobrazení, které je automaticky zapnuto hodnotami `block`, `inline` a `inline-block`. Jde o výchozí režim rozvržení v CSS.
 - `flow-root`  
-Vytvoří kontejner blokového kontextu (jako `display:block`) a rozloží jeho obsah pomocí toku (flow layout). Hodnota `flow-root` ale vždy generuje nový kontext formátování bloku pro svůj obsah, takže není například nutné mazat „floaty“ pomocí „clearfixu“. Na této hodnotě je zajímavé, že ji podporují všechny moderní prohlížeče. Internet Explorer nikoliv. [caniuse.com/flow-root](https://caniuse.com/flow-root)
+Vytvoří kontejner blokového kontextu (jako `display:block`) a rozloží jeho obsah pomocí toku („flow layout“). Hodnota `flow-root` ale vždy generuje nový kontext formátování bloku pro svůj obsah, takže není například nutné mazat „floaty“ pomocí „clearfixu“. Na této hodnotě je zajímavé, že ji podporují všechny moderní prohlížeče.
 - `flex`  
-Zapíná formátovací kontext [flexboxu](css-flexbox.md). Ze stylovaného prvku udělá kontejner flexboxu a z přímých potomků flexboxové položky. Podporováno všude.
+Zapíná formátovací kontext [flexboxu](css-flexbox.md). Ze stylovaného prvku udělá kontejner flexboxu a z přímých potomků flexboxové položky.
 - `grid`  
-Spouští formátovací kontext [gridu](css-grid.md). Ze stylovaného prvku udělá  kontejner mřížky a z přímých potomků její položky. Podporováno všude.
+Spouští formátovací kontext [gridu](css-grid.md). Ze stylovaného prvku udělá  kontejner mřížky a z přímých potomků její položky.
 - `table`  
 Udělá z prvku tabulku. V tomto případě jsou zde ale dva „kontejnery“. `display:table` generuje kontejner tabulky, který vytvoří kontext formátování bloku a obsahuje dodatečně vygenerovaný rámeček tabulky, který vytvoří její kontext formátování.
 - `ruby`  
-Tohle je exotické a pro středoevropské prostředí nepotřebné. „Ruby anotace“ jsou krátké řady znaků umístěné nad nebo pod základním textem, které se  používají ve východoasijské typografii jako vodítko pro výslovnost.
+Tohle je exotické a pro středoevropské prostředí nepotřebné. „Ruby anotace“ jsou krátké řady znaků umístěné nad nebo pod základním textem, které se  používají ve východoasijské typografii jako vodítko pro výslovnost. Klidně na to zapomeňte.
 
 Připravil jsem dva vysvětlující CodePeny, na kterých si můžete otestovat to, co vidíte na obrázku.
 
 V prvním máme jednoduše a bez layoutu umístěné tři prvky v jednom rodiči.
 
 CodePen: [vrdl.in/8m9kh](https://codepen.io/machal/pen/KKgGeQQ?editors=0000)
-
-`display:flow` zatím nemá v prohlížečích podporu, ale jako by tam byla… „Tokové“ je totiž výchozí zobrazení.
 
 Zajímavější bude druhý CodePen. Všechny tři vnitřní prvky jsou „tekoucí“, floatové:
 
@@ -116,6 +116,8 @@ Zajímavější bude druhý CodePen. Všechny tři vnitřní prvky jsou „tekou
   float: left;
 }
 ```
+
+CodePen: [vrdl.in/lksp8](https://codepen.io/machal/pen/WNGayad?editors=0000)
 
 Výsledek vidíte na obrázku.
 
@@ -130,8 +132,6 @@ Výsledek vidíte na obrázku.
 - `display:flow-root` floaty obalí, vždy vytvoří nový kontext formátování bloku.
 - Na `display:flex` a `display:grid` nemají floaty žádný vliv.
 - Na vnitřní prvky v `display:table` floaty vliv mají, protože rodič je zde v běžném tokovém kontextu formátování bloku.
-
-CodePen: [vrdl.in/lksp8](https://codepen.io/machal/pen/WNGayad?editors=0000)
 
 Pojďme ještě projít několik specifických hodnot.
 
@@ -149,8 +149,6 @@ Náš kontejner díky tomu můžeme stylovat, jako by to byl prvek `<ul>` nebo `
 }
 ```
 
-Podpora `display:list-item` jde napříč všemi prohlížeči. [caniuse.com](https://caniuse.com/mdn-css_properties_display_list-item)
-
 CodePen: [vrdl.in/2bjke](https://codepen.io/machal/pen/gOwqJmq?editors=0000)
 
 První příklad na následujícím obrázku ukazuje zobrazení typu `list-item`.
@@ -166,33 +164,34 @@ Druhou a třetí hodnotu z obrázku probereme hned v následující části.
 
 ## Skrytí prvků: hodnoty none a contents {#none-contents}
 
-Ke všem možným metodám ovlivnění vykreslování boxíků na obrazovku musíme přidat i metody _nevykreslování_. K tomu slouží následující dvě hodnoty vlastnosti `display`.
+Ke všem možným metodám ovlivnění vykreslování boxíků na obrazovku musíme přidat i metody _nevykreslování_.
+
+K tomu slouží následující dvě hodnoty vlastnosti `display`.
 
 - `none` – element ani jeho potomci se na obrazovku prostě nevykreslí.
 - `contents` – element se na obrazovku nevykreslí, ale jeho potomci ano.
 
-Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`). Podle všeho však toto zatím není správně implementováno ve všech dnešních prohlížečích.
+Zobrazení typu `contents` funguje tak, jako by prvek byl ve stromu DOM nahrazen jeho obsahem (včetně pseudoprvků jako `::before` a `::after`).
 
 CodePen: [vrdl.in/u1cvt](https://codepen.io/machal/pen/zYKmaMb?editors=0000)
-
-Podpora nezobrazení pomocí hodnoty `none` je samozřejmě plná. Hodnotu `contents` zvládají všechny prohlížeče kromě Internet Exploreru, ale podle webu CanIUse je s ní spojeno několik chyb v prohlížečích vycházejících z jádra Chromium, které souvisejí s přístupností.  
-[caniuse.com/css-display-contents](https://caniuse.com/css-display-contents)
 
 ## Typy zobrazení pro vnitřní rozvržení: hodnoty table- a ruby- {#table-ruby}
 
 Modely zobrazení, které vynucují vnitřní rozvržení, jako je `display:table` a `display:ruby`, mají složitou strukturu s několika různými rolemi, jež mohou jejich potomci plnit.
 
-Jak je uvedeno výše, zápis `display:table` sice vytvoří kontejner tabulky, ale ten vytvoří kontext formátování bloku. Nedosáhneme tím tedy tabulkového zobrazení. K tomu bychom potřebovali další prvky, které reprezentují řádky a buňky tabulky se správnými hodnotami vlastnosti `display` (`table-row`, `table-cell`…).
+Jak je uvedeno výše, zápis `display:table` sice vytvoří kontejner tabulky, ale ten vytvoří kontext formátování bloku.
+
+Nedosáhneme tím tedy tabulkového zobrazení. K tomu bychom potřebovali další prvky, které reprezentují řádky a buňky tabulky se správnými hodnotami vlastnosti `display` (`table-row`, `table-cell`…).
 
 Podobné je to s `display:ruby`, jen ty vnitřní prvky jsou jiné.
 
 ## Hodnoty s více klíčovými slovy {#viceslovna}
 
-Tohle je nová věc, do specifikace přidaná v druhé polovině roku 2020. Zatím to zvládá jen Firefox, ale věnovat se tomu musíme. Proč? Protože se mi to líbí.
+Tohle je nová věc, do specifikace přidaná v druhé polovině roku 2020 posledním prohlížečem, což zde byl Chrome, implementována v roce 2023.
 
 Vzpomínáte si, jak jsem psal o různých typech zobrazení – vnitřním a vnějším? Pokud ne, rychle proskenujte začátek tohoto textu nebo jeho nadpisy. Pak pochopíte, proč mi víceslovné hodnoty pro vlastnost `display` dávají smysl.
 
-Výše uvedené hodnoty lze totiž brát jako zkratky pro víceslovná označení vnitřního, vnějšího nebo specifického zobrazení.
+Výše uvedené *jednoslovné* hodnoty lze totiž brát jako zkratky pro *víceslovná* označení vnitřního, vnějšího nebo specifického zobrazení.
 
 <div class="rwd-scrollable f-6" markdown="1">
 
@@ -221,8 +220,6 @@ Z tabulky je to asi zřejmé, ale pro jistotu ještě uvádím tři příklady:
 - `display:block` označuje blokový prvek (`block`), který je umístěný v běžném toku dokumentu (`flow`).
 - `display:inline-flex` definuje kontejner flexboxu (`flex`), který je umístěný v řádku (`inline`).
 - `display:list-item` vykreslí prvek seznamu (`list-item`), který je umístěný v běžném toku (`flow`) a zároveň je blokový (`block`).
-
-Také se těšíte, až to budou umět všechny prohlížeče? Zatím vede Firefox, na ostatní se čeká. Podporu sledujte na CanIUse. [caniuse.com](https://caniuse.com/mdn-css_properties_display_multi-keyword_values) (hledejte „display: Multi-keyword“)
 
 <!-- AdSnippet -->
 
