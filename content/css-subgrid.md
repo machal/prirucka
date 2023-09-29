@@ -1,6 +1,6 @@
 # Subgrid v CSS gridu
 
-Subgrid umožní vytvořit zanořenou mřížku, která zároveň podědí layout rodičovského gridu. Je to velmi praktické, ale zatím podporované jen ve Firefoxu a Safari.
+Subgrid umožní vytvořit zanořenou mřížku, která zároveň podědí layout rodičovského gridu. Je to velmi praktické a nově podporované ve všech prohlížečích.
 
 <div class="book-index" data-book-index="Subgrid"></div>
 
@@ -23,6 +23,7 @@ Subgrid je součástí specifikace [CSS gridu](css-grid.md).
 </div>
 
 Grid je skvělý, ale dříve či později se s ním dostaneme do situace, kdy potřebujeme jeden grid zanořit do druhého.
+
 V takové situaci si pak pochopitelně přejeme, aby vnitřní grid dokázal podědit vnější layout.
 
 Jak vidíte na obrázku níže, subgrid mám to pomůže zařídit.
@@ -36,8 +37,11 @@ Grid a subgrid. Táta a syn.
 </figure>
 
 Můžeme to samozřejmě zajistit i bez subgridu:
-Nastavit prvkům fixní rozměry na výšku nebo použít JavaScript (což bych kvůli výkonu moc nedoporučoval).
-Staré páky mezi kodéry si vzpomenou na složité tabulkové layouty, kterými se toho (skoro) dalo dosáhnout, ale ve kterých se nikdo nevyznal…
+
+- Nastavit prvkům fixní rozměry na výšku nebo použít JavaScript (což bych kvůli výkonu moc nedoporučoval).
+- Staré páky mezi kodéry si vzpomenou na složité tabulkové layouty, kterými se toho (skoro) dalo dosáhnout, ale ve kterých se nikdo nevyznal…
+
+Jak na to jít dobře, se subgridem?
 
 ## Příklad s kartou produktu {#priklad}
 
@@ -91,7 +95,7 @@ CodePen: [vrdl.in/hunip](https://codepen.io/machal/pen/VwMVPBJ?editors=1100)
 To bude asi bez problémů, že?
 Ale když já chci, aby nadpisy, obrázky, texty i tlačítka jednotlivých karet byly vždy ve stejné výšce.
 
-## Přidáváme layout pro jednotlivé karty
+## Přidáváme layout pro jednotlivé karty {#priklad-karty}
 
 Nejprve musíme změnit rodičovský layout.
 Uděláme to tak, že přidáme řádky pomocí [vlastnosti `grid-template-rows`](css-grid-template-rows-columns.md).
@@ -106,7 +110,7 @@ Jak vidíte, nemáme příliš velké ambice položky layoutu nějak omezovat.
 Víme jen, že budou čtyři (nadpis, obrázek, text, tlačítko).
 A hodláme je pouze zarovnávat mezi sebou navzájem.
 
-## A teď kouzlo, subgrid
+## A teď kouzlo, subgrid {#priklad-subgrid}
 
 Zápis pro vnitřní mřížku u jednotlivých položek, který řešíme podmřížkou (subgridem), bude:
 
@@ -139,7 +143,8 @@ CodePen: [vrdl.in/se38k](https://codepen.io/machal/pen/wvrQgLJ?editors=1100)
 
 ## Poznámky k subgridu {#poznamky}
 
-Vzhledem k tomu, že v době aktualizace textu (říjen 2022) subgrid umí jen dva menší prohlížeče, Firefox a Safari, nepůjdu u této části CSS gridu úplně do hloubky.
+V době aktualizace textu (září 2023) prohlížeče zvládají subgrid  poměrně čerstvě, proto nepůjdu u této části CSS gridu úplně do hloubky.
+
 Pár poznámek zde ale uvedu:
 
 ### Vícerozměrnost sugridu {#vicerozmernost}
@@ -147,7 +152,7 @@ Pár poznámek zde ale uvedu:
 V ukázce jsme pro podmřížku využili jen svislý směr rodičovského layoutu.
 Je ale samozřejmě možné využít i vodorovný nebo prostě oba směry najednou.
 Pak se z toho stává jeden velký (ale krásný) tabulkový layout, jako z roku 2002.
-Dělám si legraci, je to samozřejmě daleko, daleko lepší než layout v `<table>`.
+Dělám si legraci, je to samozřejmě daleko (daleko!) lepší než layout v `<table>`.
 
 <!-- AdSnippet -->
 
@@ -167,12 +172,12 @@ Vždy se jen umísťuje do mřížky, která je zděděná shora od rodičovské
 
 ## Podpora v prohlížečích {#podpora}
 
-Subgrid je součástí specifikace CSS Grid Layout Module již od Level 2, která se datuje do roku 2018. Zde je stav k únoru 2022:
+Subgrid je součástí specifikace CSS Grid Layout Module již od Level 2, která se datuje do roku 2018. Zde je stav k září 2023:
 
 - Firefox podporuje subgrid od verze 70 z prosince 2019.
 - Safari subgrid přidalo v září 2022 do verze 16, od iOS 16 a v aktualizaci pro macOS Monterey a Big Sur.
-- V Chromu se na subgridu – zdá se – docela hodně pracuje.
-
-Subgrid má tedy opravdu dobrou šanci, že se ujme a bude nám dobře sloužit už v blízké budoucnosti.
+- Jako poslední se v září 2023 přidal Chrome a Edge.
 
 Aktuální informace od podpoře hledejte na [CanIUse.com/css-subgrid](https://caniuse.com/css-subgrid)
+
+Podpora subgridu mě velmi těší a nemůžu se dočkat, až mi v komentářích napíšete, jak jej v praxi používáte.
