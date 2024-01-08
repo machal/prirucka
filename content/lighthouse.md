@@ -103,6 +103,19 @@ Podívejte se na video „Lighthouse: Test rychlosti webu“.
 
 YouTube: [youtu.be/zkbzYJ7xNKw](https://www.youtube.com/watch?v=zkbzYJ7xNKw)
 
+## Každodenní data z Lighthouse: PageSpeed.cz tester
+
+Na datech z Lighthouse je postavený také produkt, který vytváříme v PageSpeed.cz. 
+
+Náš [tester rychlosti](https://app.pagespeed.cz/) má také placenou verzi pro profesionály [PLUS](https://app.pagespeed.cz/plus).
+
+<figure>
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg" width="1600" height="900" alt="PS tester PLUS">
+<figcaption markdown="1">
+*Obrázek: Tester PLUS jsme postavili na základě mnohaleté zkušenosti s poradenstvím k rychlosti.*
+</figcaption>
+</figure>
+
 ## User Flows, průchody uživatele službou
 
 V [Lighthouse 9](https://www.vzhurudolu.cz/blog/206-lighthouse-9) autoři přidali možnost testovat nejen úvodní načtení, ale také průchod webem nebo webovou aplikací. Jmenuje se to [User Flows](https://web.dev/lighthouse-user-flows/).

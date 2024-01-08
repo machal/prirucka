@@ -44,7 +44,7 @@ Jak už jsem psal, [metrik](metriky-rychlosti.md) zde nemáme k dispozici tolik 
 | ------------------------------------------------------------------------------ | --------------------------------- |
 | [First Paint (FP)](metrika-fp.md)              | Vykreslení čehokoliv              |
 | [First Contentful Paint (FCP)](metrika-fcp.md) | První vykreslení obsahu           |
-| Largest Contentful Paint (LCP)                                                 | Vykreslení největší části stránky |
+| [Largest Contentful Paint (LCP)](metrika-lcp.md)                                                 | Vykreslení největší části stránky |
 | [DOM Content Loaded (DCL)](udalost-dcl.md)     | Rozparsování HTML prohlížečem     |
 | [Load](load.md)                                | Stažení všeho ve stránce          |
 
@@ -82,7 +82,7 @@ Struktura databázové tabulky se ale v čase mění, takže doporučuji dívat 
 
 Metod vytažení dat z téhle užitečné databáze je hodně. Doporučím vám čtyři základní.
 
-Řadím je od nejjednodušší, až po relativně složitou, protože ta vyžaduje práci s nástrojem, který většina z čtenářů Vzhůru dolů asi nepoužívá – Google Data Studio.
+Řadím je od nejjednodušší, až po relativně složitou, protože ta vyžaduje práci s nástrojem, který většina z čtenářů Vzhůru dolů asi nepoužívá – Google Looker Studio.
 
 ### 1) PageSpeed Insights {#ziskani-psi}
 
@@ -133,25 +133,18 @@ Jak na to?
 </figcaption>
 </figure>
 
-### 3) CrUX run {#ziskani-crux-run}
+### 3) Tester PageSpeed.cz {#ps-tester}
 
-Pokud vás až tak nezajímá čerstvost dat, ale upřednostňujete pohled na historii vývoje rychlosti po měsících, budete skákat radostí z objevení tohoto nástroje. Pokud jej ovšem ještě neznáte.
-
-Autoři [CrUX.run](https://crux.run/) dělají klon zdrojové databáze, protože nebyli spokojení s jeho rychlostí (a zabugovaností nástrojů kolem).
+Na datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.cz. Náš [tester rychlosti](https://app.pagespeed.cz/) má také placenou verzi pro profesionály [PLUS](https://app.pagespeed.cz/plus).
 
 <figure>
-<img src="../dist/images/original/crux-run.png" alt="">
+<img src="https://res.cloudinary.com/vzhurudolu-cz/image/upload/v1704269311/vzhurudolu-blog/page-speed-cz/ps-plus-tutorial-001_weujjd.jpg" width="1600" height="900" alt="PS tester PLUS">
 <figcaption markdown="1">
-*Obrázek: Reporty z CrUX.run jsou skvělé ve dvou bodech: 1) Máte je rychle a zdarma po ruce, 2) Ukazují histogramy, které poskytují více informací než sloupcové grafy. Nevýhoda? Jsou fialové.*
+*Obrázek: Tester PLUS jsme postavili pro majitele webu, marketéry a vývojáře a to na základě mnohaleté zkušenosti s poradenstvím k rychlosti.*
 </figcaption>
 </figure>
 
-Jak na to?
-
-1. Jděte na [crux.run](https://crux.run/).
-2. Vložte adresu homepage webu, vytvoří se vám report pro celou doménu.
-
-### 4) Google Data Studio  {#ziskani-data-studio}
+### 4) Google Looker Studio  {#ziskani-data-studio}
 
 Tenhle další užitečný (a zabugovaný, co si budeme povídat) nástroj od Google slouží k obecné vizualizaci dat, případně tvorbě živých dashboardů.
 
@@ -163,7 +156,7 @@ Ano, je to jako stvořené pro vizualizace rychlosti webu.
 
 Google poskytuje předpřipravený dashboard na adrese [g.co/chromeuxdash](https://g.co/chromeuxdash), ale dle mé zkušenosti to moc nefunguje. Problém je v konektoru (pluginu pro napojení dat z různých zdrojů) od autorům Chrome UX Reportu. Lépe funguje [komunitní konektor](https://datastudio.google.com/u/0/datasources/create?connectorId=AKfycbxk7u2UtsqzgaA7I0bvkaJbBPannEx0_zmeCsGh9bBZy7wFMLrQ8x24WxpBzk_ln2i7).
 
-Jak na vytvoření reportu z Data Studia?
+Jak na vytvoření reportu z Looker Studia?
 
 1. Jděte na [předpřipravený report](https://datastudio.google.com/u/0/datasources/create?connectorId=AKfycbwRgy2UDKRX3gIUi1EEDw5TlrhfcBtEEqJHqeJrd5F4uvezRsMKdBvs8ajAr7JfDWE).
 2. Poprvé budete pravděpodobně muset odkliknout souhlasy.
@@ -179,7 +172,7 @@ Buďte ale prosím trpěliví, tento Chrome UX Report může občas hlásit chyb
 <figure>
 <img src="../dist/images/original/crux-data-studio.png" alt="">
 <figcaption markdown="1">
-*Obrázek: První stránka výstupu Chrome UX Reportu vytvořeného přes předpřipravený report v Data Studiu. Takhle hezké barvy ale na průměrném webu neuvidíte.*
+*Obrázek: První stránka výstupu Chrome UX Reportu vytvořeného přes předpřipravený report v Looker Studiu. Takhle hezké barvy ale na průměrném webu neuvidíte.*
 </figcaption>
 </figure>
 

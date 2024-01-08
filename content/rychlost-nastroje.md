@@ -33,8 +33,14 @@ Velmi doporučuji právě Lighthouse pouštět pravidelně a řídit se jeho dop
 
 <span class="web-only" markdown="1">
 Také [Lighthouse](lighthouse.md) zde má samostatný článek.
+</span>
 
-→ *Související novinka: V květnu 2020 vyšel [Lighthouse 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6).*
+## PageSpeed.cz tester 
+
+Na nástroji Lighthouse a datech z [Chrome UX Reportu](chrome-ux-report.md) je postavený také produkt, který vytváříme v PageSpeed.cz. Náš [tester rychlosti](https://app.pagespeed.cz/) má také placenou verzi pro profesionály [PLUS](https://app.pagespeed.cz/plus).
+
+<span class="web-only" markdown="1">
+Více [v tutoriálu](https://www.vzhurudolu.cz/blog/237-pagespeed-cz-plus-tutorial), kde rozebírám, jak vám náš nástroj pomůže.
 </span>
 
 ## Google Analytics

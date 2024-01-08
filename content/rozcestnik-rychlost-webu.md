@@ -14,9 +14,10 @@
 ## Měření rychlosti
 
 - [Nástroje pro měření](rychlost-nastroje.md)
+- [PageSpeed.cz tester PLUS](https://www.vzhurudolu.cz/blog/237-pagespeed-cz-plus-tutorial)
 - [PageSpeed Insights](chrome-ux-report.md)
 - [Chrome UX Report](chrome-ux-report.md)
-- [Google Lighthouse](lighthouse.md) a [verze 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6)
+- [Google Lighthouse](lighthouse.md)
 - [SpeedCurve](speedcurve.md)
 
 ## Metriky
