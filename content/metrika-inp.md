@@ -1,12 +1,16 @@
 # Interaction to Next Paint (INP): nová metrika přijde v březnu 2024
 
-INP je nová metrika rychlosti webu, se kterou přichází Google v rámci své sady [Core Web Vitals](web-vitals.md). V březnu 2024 má nahradit dnes už neuspokojivou metriku [FID (First Input Delay)](metrika-fid.md).
+INP je nová metrika rychlosti webu, se kterou přichází Google v rámci své sady [Core Web Vitals](web-vitals.md). V 12. března 2024 nahrazuje dnes už neuspokojivou metriku [FID (First Input Delay)](metrika-fid.md).
 
 Tato změna se dotkne celé řady z vás, protože INP je metrika daleko přesnější a k webům přísnější.
 
-## Poznámky k nadcházející výměně FID za INP {#poznamky}
+Metrika INP (česky možná něco jako „od interakce do dalšího vykreslení“) měří časový úsek, který trvá reakce uživatelského rozhraní na kliknutí nebo jiný vstup uživatele v rámci webové stránky.
 
-Lidé z Googlu [oznámili](https://web.dev/inp-cwv/), že metrika INP nahradí FID v Core Web Vitals už v březnu 2024.
+Měří se jen interakce, které uživatele nepřenášejí na nové URL, tedy klikání na UI komponenty typu tlačítka, modální okna, přidávání do košíku, karusely, filtrování v e-shopech… Těch problémových míst může být celá řada.
+
+Problém je samozřejmě hlavně v JavaScriptu a jeho pomalém vykonávání, občas také v Ajaxu nebo Fetch, tedy stahování dat ze serveru.
+
+## Poznámky k nadcházející výměně FID za INP {#poznamky}
 
 Prodlevy způsobené JavaScriptem budou více vidět. A pro některé vývojáře to může znamenat docela bolehlav.
 
@@ -19,7 +23,7 @@ INP je totiž daleko přísnější. Například [Tim Kadlec](https://www.linked
 </figcaption>
 </figure>
 
-Vzal jsem 100 nejnavštěvovanějších českých e-shopů z naší [studie o rychlosti webů českých e-shopů](https://www.pagespeed.cz/blog/reshoper-2023). Je to mazec. Na mobilu jich novou metriku rychlosti reakce INP splňuje pouhých 17.
+V květnu 2023 jsem vzal 100 nejnavštěvovanějších českých e-shopů z naší [studie o rychlosti webů českých e-shopů](https://www.pagespeed.cz/blog/reshoper-2023). Je to mazec. Na mobilu jich novou metriku rychlosti reakce INP splňuje pouhých 17.
 
 To jsou důvody, proč mě oznámení o tom, že INP bude už za méně než rok metrikou Core Web Vitals, překvapilo.
 
@@ -39,7 +43,7 @@ Interaction to Next Paint  je podobně jako právě FID metrikou interaktivity. 
 
 Hlavní příčinou bývá samozřejmě JavaScript a probíhající dlouhotrvající úlohy (long tasks), které zablokují vykreslovací vlákno prohlížeče.
 
-Metriky jako INP a FID se snaží tyto nepříjemnosti v uživatelském prožitku změřit a tím nám umožnit je odstranit.
+Metriky jako INP, se snaží tyto nepříjemnosti v uživatelském prožitku změřit a tím nám umožnit je odstranit.
 
 <figure>
 <div class="rwd-media">
@@ -57,7 +61,7 @@ Autoři z Googlu v případě INP namísto pojmu „interaktivita“ používaj�
 
 Zjednodušeně řečeno je INP metrikou rychlosti odezvy na uživatelské interakce.
 
-Ukazuje na to i samotný název. Interaction to Next Paint by se dalo přeložit jako „od interakce do dalšího vykreslení“. Překládat do češtiny se tento název bude špatně, a ani já o to tentokrát nebudu usilovat. Nicméně – v původním názvu se přesně odráží fungování tohoto nového ukazatele.
+Ukazuje na to i samotný název. Interaction to Next Paint by se dalo přeložit jako „od interakce do dalšího vykreslení“. Překládat do češtiny se tento název bude špatně, a ani já o to tentokrát nebudu usilovat Nicméně – v původním názvu se přesně odráží fungování tohoto nového ukazatele.
 
 ## Co INP měří a jak se liší od FID? {#co-meri}
 
@@ -67,13 +71,13 @@ Důvody, proč metrika FID už z dnešního pohledu nevyhovuje, jsou tři:
 
 1. Měří jen prodlevu při první interakci, nikoliv celou dobu pobytu uživatele na stránce.
 2. Neměří celou prodlevu, ale jen její první část.
-3. FID je málo přísné, podle dat Googlu metriku splňuje 95 % webů.
+3. Ukazatel FID je málo přísný. Podle dat Googlu jej splňuje 95 % webů.
 
 Asi nikoho nepřekvapím, když napíšu, že INP toto všechno řeší:
 
 ### 1) Měří se celou dobu pobytu na stránce {#co-meri-1}
 
-INP měří odezvu všech interakcí až do změny URL a vybere tu nejhorší odezvu se všech interakcí. Pokud je interakcí více než 50 (může se to stát např. u her v prohlížeči), nevybere se nejhorší hodnota, ale percentil, nejčastěji 98.
+INP „sleduje“ odezvu všech interakcí až do změny URL (pokud nastane reload) a vybere tu nejhorší odezvu se všech interakcí. Pokud je interakcí více než 50 (může se to stát např. u her v prohlížeči), nevybere se nejhorší hodnota, ale percentil, nejčastěji 98.
 
 Měřením po celou dobu pobytu na URL se řeší velká slepota metriky FID, protože podle propočtů Googlu zhruba 90 % interakcí probíhá až po úvodním načtení stránky.
 
@@ -123,13 +127,13 @@ V tabulce to pak vypadá následovně:
 
 ### Měření INP {#hodnoty-mereni}
 
-Hodnoty nové metriky odezvy interakcí můžete pro své weby získat už teď, protože Google ji už nějakou dobu pro uživatele Chrome sbírá v rámci svého [Chrome UX Reportu](chrome-ux-report.md) a poskytuje ve svých měřících nástrojích.
+Hodnoty nové metriky odezvy interakcí můžete pro své weby získat už nějakou dobu, protože Google ji od uživatelů Chrome sbírá v rámci svého [Chrome UX Reportu](chrome-ux-report.md) a poskytuje ve svých měřících nástrojích.
 
 Podobně jako u CLS nebo FID bude složitější ji naměřit pomocí syntetických měření typu [Lighthouse](lighthouse.md), protože metrika se sbírá až na základě uživatelských akcí. Ale je zde světlo na konci tunelu, totiž nové režimy fungování právě u nástroje s majákem ve znaku.
 
 Takže jak novou metriku změřit?
 
-* Data od uživatelů vašeho webu získáte například z PageSpeed Insights: [pagespeed.web.dev](https://pagespeed.web.dev/).
+* Data od uživatelů vašeho webu získáte například z PageSpeed Insights: [pagespeed.web.dev](https://pagespeed.web.dev/) nebo našeho [testeru PageSpeed.cz](https://app.pagespeed.cz/).
 * Můžete použít knihovnu [web-vitals](https://github.com/GoogleChrome/web-vitals/tree/next) nebo extension [Web Vitals](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma?hl=en) (a povolit logování do konzole prohlížeče).
 * V Lighthouse je možné INP změřit v novém [režimu Time Span](https://github.com/GoogleChrome/lighthouse/blob/master/docs/user-flows.md).
 * Nová verze rozšíření [Web Vitals](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma?hl=en) umí [změřit prodlevy](https://web.dev/debug-cwvs-with-web-vitals-extension/) jednotlivých interakcí uživatele.
@@ -144,13 +148,27 @@ Z praxe pro klienty vím, že obecné rady u jakékoliv metriky málokdy zafungu
 
 Samozřejmě vás ale zkusím alespoň trochu navést.
 
+### Pár konkrétních rad {#par-rad}
+
+Některé konkrétní problémy se nám v rámci [poradenství k rychlosti](https://www.pagespeed.cz/sluzby) pod hlavičkou PageSpeed.cz opakují:
+
+1. Dlouhé prodlevy po klikání do filtrace na mobilech na e-shopech způsobené překreslením stránky, které je zbytečné, protože stránka není vidět.
+2. Prodlevy každého kliku způsobené analytikou (např. TikTok pixel obecně zlobí).
+3. Dlouhé úlohy v JS při úvodním vykreslení webu, např. při provádění JS kódu [v jQuery na `document.ready()`](https://learn.jquery.com/using-jquery-core/document-ready/).
+4. Hydratace v moderních JS frameworcích jako React nebo Vue.
+5. Pozdní indikace probíhajícího načítání v rámci Ajax/Fetch volání.
+
+Hodně nám při optimalizacích pomáhá trik se `setTimeout()`. Mrkněte se na [celý článek o INP](https://www.pagespeed.cz/blog/metrika-inp), který připravila kolegyně Zuzana Šumlanská.
+
+Dále budu radit ještě obecněji.
+
 ### Zaměřte se na TBT {#optimalizace-tbt}
 
 Metriky jako FID nebo nově INP jsou velmi citlivé na takzvané long tasks v JavaScriptu. Pokud má totiž prohlížeč práci s dlouhým zpracováním JS kódu, nemůže reagovat na vstupy od uživatele.
 
 Zaměřit byste se tedy měli na optimalizaci metriky [TBT (Total Blocking Time)](metrika-tbt.md), kterou jde změřit snadno všemi možnými nástroji. Podle údajů Googlu koreluje TBT dvakrát lépe s INP než s FID, což je dobrá zpráva, protože optimalizace FID byla často docela peklíčko.
 
-### Obecná rada? Optimalizujte JavaScript {#optimalizace-js}
+### Optimalizujte prostě JavaScript {#optimalizace-js}
 
 Obecně samozřejmě pomáhá mít ve stránce co nejméně JS, který něco provádí: odstraňovat nevyužitý kód, správně bundlovat, odkládat stahování a spouštění kódu, který v daném uživatelském kontextu není potřeba. Dávat pozor na [třetí strany](third-party.md).
 
@@ -160,10 +178,12 @@ Více o [optimalizaci INP](https://web.dev/optimize-inp/) najdete jako vždy v m
 
 ## Co s tím teď? {#a-co-jako}
 
-Pokud vám můžu poradit, zatím si INP pro své weby změřte hlavně změřte.
+Pokud vám můžu poradit, určitě si INP pro své weby pravidelně měřte.
 
 <!-- AdSnippet -->
 
 Jestliže vám vyjdou velmi špatná čísla (červené spektrum) a chcete-li do budoucna Web Vitals splňovat a hlavně mít rychlý web, pak raději začněte připravovat plán na nápravu (s čímž vám [rádi pomůžeme](https://www.pagespeed.cz/sluzby)).
 
-Z mé zkušenosti je totiž právě optimalizace JavaScriptu jedna z nejsložitějších a nejdéle se táhnoucích prací na rychlosti webu. Pokud INP splňujete, nezbývá než vám gratulovat.
+Z mé zkušenosti je totiž právě optimalizace JavaScriptu jedna z nejsložitějších a nejdéle se táhnoucích prací na rychlosti webu.
+
+Pokud INP splňujete, nezbývá než vám gratulovat. 
