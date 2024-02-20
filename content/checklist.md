@@ -23,6 +23,8 @@ Obsah je král a HTML je jeho trůn. Tímhle musíme začít.
 <small>Stromová struktura (outline) nadpisů `<h1>`, `<h2>` atd.  má odrážet strukturu dokumentu. Usnadní indexaci vyhledávači a prohlížení stránky zrakově postiženými. Prohlédněte si DOM, využijte [HTML5 outliner](https://gsnedders.html5.org/outliner/). Více: [Vzhůru dolů: Lze mít více `<h1>`?](https://www.vzhurudolu.cz/blog/25-vice-h1).</small>
 - Náhledy pro sociální sítě a chaty ★★☆  
 <small>Doplňte meta značky pro Facebook Open Graph, Twitter Cards a další. Mají potenciál zvýšit návštěvnost webu, protože vytvářejí hezký náhled webu na sociálních sítích. Důležitý je hlavně obrázek. Více: [Open Graph na Vzhůru dolů](meta-open-graph.md). Nástroje pro kontrolu: [Facebook Debugger](https://developers.facebook.com/tools/debug/), [Twitter Validator](https://cards-dev.twitter.com/validator), [MetaTags.io](https://metatags.io/)</small>
+- K obrázkům máme autorská práva ★★☆  
+<small>Pokud vám webík patří, tohle si dvakrát zkontrolujte než to pro vás začne být drahé. Více: [PicRights](picrights.md).</small>
 - Strukturovaná data pro Google ★★☆  
 <small>„Rich Snippets“ usnadňují nahrání informací, například o struktuře produktů e-shopu a vylepší náhled webu ve výsledcích vyhledávání. Je to podstatné hlavně u e-shopů a webů, které obsahují recenze nebo události. Více: [Strukturovaná data (aneb Rich Snippets) na Vzhůru dolů](rich-snippets.md). Tester [Google Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/).</small>
 - Odkazy z webu ven jsou platné ★★☆  
@@ -33,6 +35,7 @@ Obsah je král a HTML je jeho trůn. Tímhle musíme začít.
 <small>Hlídejte si validitu kvůli potenciálním chybám v indexaci vyhledávači. Lpí na tom i někteří klienti, tak proč si kazit renomé. Více:[Validita na JeČas](http://jecas.cz/validita). Nástroje: [Český validátor](http://validator.webylon.info/), [W3 validátor](https://validator.w3.org/).</small>
 - Obsah bez typografických chyb ★☆☆  
 <small>Text bez chyb zajistí lepší čitelnost obsahu. Profíci jsou na to citliví. Dohlédněte alespoň na ty nejpodstatnější. Více: [Typografické rady na Wikipedii](https://cs.wikipedia.org/wiki/Wikipedie:Typografick%C3%A9_rady). Nástroj pro odstraňování chyb: [Typopo.org](https://app.typopo.org/).</small>
+
 
 ## Přístupnost {#pristupnost}
 
