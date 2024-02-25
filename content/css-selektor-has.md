@@ -136,9 +136,11 @@ Všimněte si hlavně té poslední ukázky. Rozložení v CSS layoutu upravujem
 
 Prostě můžete změnit layout podle toho, kolik je v něm položek. Kurnik šopa, proč já už vlastně nekóduju weby?
 
+Moc pěkné ukázky do své přednášky [CSS :has power](https://www.youtube.com/watch?v=n23zomcLCPg) v češtině přidal také Petr Koláček z Etnetery.
+
 <!-- AdSnippet -->
 
-Další zajímavé tipy přidal například [na X/Twitteru Wes Bos](https://twitter.com/wesbos/status/1737148340322652632) u příležitosti plné podpory selektoru `:has()` ve všech prohlížečích. Uvedu pár příkladů:
+Další zajímavé tipy najdete například [na X/Twitteru Wese Bose](https://twitter.com/wesbos/status/1737148340322652632). Uvedu pár příkladů:
 
 - [The Anywhere Selector](https://twitter.com/wesbos/status/1737148577137209383) - Např. pokud je v `<body>` zaškrtnutý checkbox, můžete vzít jakýkoli jiný prvek a nastylovat jej.
 - [Layout Targeting](https://twitter.com/wesbos/status/1737148941987156122) – Na základě struktury obsahu stránky mohu měnit rozvržení.
