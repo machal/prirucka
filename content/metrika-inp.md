@@ -186,4 +186,4 @@ Jestliže vám vyjdou velmi špatná čísla (červené spektrum) a chcete-li do
 
 Z mé zkušenosti je totiž právě optimalizace JavaScriptu jedna z nejsložitějších a nejdéle se táhnoucích prací na rychlosti webu.
 
-Pokud INP splňujete, nezbývá než vám gratulovat. 
+Pokud INP splňujete, nezbývá než vám gratulovat.
