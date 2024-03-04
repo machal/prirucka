@@ -1,6 +1,6 @@
 # Webpack: Úplné základy a tutoriál k tomu
 
-Webpack je nástroj pro zpracování souborů a usnadnění práci vývojářů. Jde o kombinaci balíčkovače (*module bundler* jako je Browserify) se spouštěčem úloh (*task runner* jako jsou Gulp nebo Grunt.
+Webpack je nástroj pro zpracování souborů a usnadnění práci vývojářů. Jde o kombinaci balíčkovače (*module bundler* jako je Browserify) se spouštěčem úloh (*task runner* jako jsou Gulp nebo Grunt).
 
 <figure>
 <img src="../dist/images/original/webpack-scheme.png" alt="">
