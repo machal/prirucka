@@ -12,7 +12,7 @@ Velikost písma pro `<html>` element je v prohlížečích obvykle nastavená ta
 - [Jednotky pro tvorbu webu: Kde použít jakou?](jednotky.md)
 </div>
 
-Pokud všechny rozměry týkající se typografie (nebo klidně i layoutu) nastavíte v `rem` jednotkách, můžete si snadno zvětšit celý dokument pouhou změnou hodnoty ve vlastnosti `html { font-size: … }` a vytvářet tak elastické layouty.
+Pokud všechny rozměry týkající se [typografie](typografie.md) (nebo klidně i layoutu) nastavíte v `rem` jednotkách, můžete si snadno zvětšit celý dokument pouhou změnou hodnoty ve vlastnosti `html { font-size: … }` a vytvářet tak elastické layouty.
 
 <!-- AdSnippet -->
 

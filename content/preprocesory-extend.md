@@ -163,7 +163,7 @@ $brandFontFamily: webfont, sans-serif;
 $brandFontWeight: 700;
 ```
 
-Obecně vzato je pro udržitelnost CSS dost zásadní, aby [graf specifičnosti](https://csswizardry.com/2014/10/the-specificity-graph/) deklarací v CSS průběžně rostl. Předpokládám, že si dáváte pozor, aby to tak bylo - typografie jde první, komponenty druhé a tak dále. `@extend` vám to dokonale rozbije.
+Obecně vzato je pro udržitelnost CSS dost zásadní, aby [graf specifičnosti](https://csswizardry.com/2014/10/the-specificity-graph/) deklarací v CSS průběžně rostl. Předpokládám, že si dáváte pozor, aby to tak bylo - [typografie](typografie.md) jde první, komponenty druhé a tak dále. `@extend` vám to dokonale rozbije.
 
 Podobné příklady [uvádí Harry Roberts](https://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/), který k používání `@extend` píše:
 

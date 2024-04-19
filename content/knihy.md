@@ -308,7 +308,7 @@ Stručná brožurka, která poskytuje intro do UX. Tuhle jsem zatím nečetl, al
 
 ### On Web Typography (Jason Santa Maria, 2014)
 
-Web je z velké části typografie. Pro mě osobně napsal Jason Santa Maria zásadní knihu tohoto tématu. A když se dívám na celý tento seznam knih, jde o jednu z mála, kterou bych si moc rád přečetl znova. [Web knihy](https://abookapart.com/products/on-web-typography).
+Web je z velké části [typografie](typografie.md). Pro mě osobně napsal Jason Santa Maria zásadní knihu tohoto tématu. A když se dívám na celý tento seznam knih, jde o jednu z mála, kterou bych si moc rád přečetl znova. [Web knihy](https://abookapart.com/products/on-web-typography).
 
 </div>
 </div>

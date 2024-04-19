@@ -36,6 +36,7 @@
 - [Navigace: responzivní](responzivni-navigace.md)
 - [Navigace: mobilní a hamburgery](mobilni-navigace-hamburger.md)
 - [Design webů v prohlížeči](https://www.vzhurudolu.cz/blog/38-design-v-prohlizeci)
+- [Typografie](typografie.md)
 - [UX tipy](https://www.vzhurudolu.cz/blog/166-ux-tipy)
 - [UX tipy: pokročilé](https://www.vzhurudolu.cz/blog/202-ux-pokrocile)
 

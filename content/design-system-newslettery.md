@@ -74,7 +74,7 @@ Ohledně pokladů musíme pochválit designéra, případně celý Kiwi tým, kt
 Skloubili jsme tedy to, co známe z webového prostředí, se zkušenostmi s kódováním HTML e-mailů a vytvořili UI knihovnu obsahující:
 
 * proměnné pro skinování šablon,
-* výchozí nastavení typografie,
+* výchozí nastavení [typografie](typografie.md),
 * layoutový systém pro skládání sekcí,
 * gridový systém,
 * přes 25 komponent, od tlačítek až po složitější komponenty,

@@ -144,6 +144,7 @@ Webovému kodérovi též můžeme říkat frontend kodér, vývojář uživatel
 
 #### Typografie
 
+* Proč je [typografie](typografie.md) důležitá
 * [Základní pojmy](http://typomil.com/): rodina, řez, typy písem, prostrkání, výška/šířka řádku.
 * Základní [typografická pravidla](http://www.pixy.cz/pixylophone/2003_02_archiv.html) a typografické neduhy na webu: uvozovky, pomlčky, jednopísmenné předložky na konci řádku.
 * Soubory s fonty: systémové fonty na platformách; zdroje webových fontů: Google Fonts, Typekit, vlastní a další.

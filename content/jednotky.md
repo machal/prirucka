@@ -39,7 +39,7 @@ V tomhle textu dost dbám na to, abychom si nerozbili přirozenou dědičnost ve
 - Media Queries: [em](#media-queries)
 - Výška řádku: [číslem bez jednotky](#vyska-radku)
 - Rámečky, dekorace: [px](#dekorace)
-- Typografie podle velikosti okna: [vw](#viewport-typografie)
+- [Typografie](typografie.md) podle velikosti okna: [vw](#viewport-typografie)
 
 Je ale možné, že si skoro všude vystačíte s `px`. K tomu se dostávám [na konci textu](#px).
 

@@ -2,19 +2,23 @@
 
 Pojďme si projít základní množinu znalostí o využití písma na webu, zmínit pár častých chyb a dvakrát podtrhnout hlavní pravidlo pro stavbu responzivního rozvržení stránky. Předtím ale ještě zmíním jeden účel písma, na který se často zapomíná. 
 
-## Písmo v nás vyvolává emoce
+<div class="web-only" markdown="1">
+
+_Tento text je ukázka z knihy [Vzhůru do (responziv­ního) webdesignu](https://www.vzhurudolu.cz/kniha-responzivni-design/)._
+
+</div>
+
+## Písmo v nás vyvolává emoce {#emoce}
 
 Než se začteme, může nám typ písma (spolu s dalšími prostředky vizuálního designu) sdělit informaci, co od webu očekávat. Jsem na webu seriózního magazínu, užitného webu typu e-shopu, nebo na stránkách Déčka, určeného pro děti? Asi je jasné, že tohle všechno je možné sdělit nebo zpochybnit mimo jiné i volbou písma. Je toho ale mnohem více.
 
 Pro potřeby předání základní úrovně typografických znalostí mně tady připadá lepší začít z druhého konce. Chybami.
 
-
-## Časté typografické chyby
+## Časté typografické chyby {#chyby}
 
 Vypadají triviálně, ale weby jsou jich plné. Příliš dlouhé řádky, špatný kontrast a nesprávné znaky.
 
-
-### 1) Příliš dlouhé řádky
+### 1) Příliš dlouhé řádky {#chyby-1}
 
 Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl obsahovat více než 75 znaků, aby oči nepřeskakovaly na řádky sousedící. Ještě o tom budu psát.
 
@@ -25,8 +29,7 @@ Wikipedie je smutným rekordmanem v délce řádku. Řádek by obecně neměl ob
 </figcaption> 
 </figure>
 
-
-### 2) Špatný kontrast a další technické parametry
+### 2) Špatný kontrast a další technické parametry {#chyby-2}
 
 Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čitelností pro delší texty, ale také velmi kontrastní barvou. Na českém webu jsou i výrazně horší weby než Zdroják, ale uvádím ho jako hůře čitelnou variantu díky kombinaci několika faktorů. 
 
@@ -39,19 +42,18 @@ Novinky jsou nejen vysázené Georgií, patkovým písmem s vynikající čiteln
 
 Více o kontrastu barev píšu na Vzhůru dolů. [vrdl.cz/p/kontrast](https://www.vzhurudolu.cz/prirucka/kontrast)
 
-### 3) Nesprávné znaky
+### 3) Nesprávné znaky  {#chyby-3}
 
 Každé rozumné písmo má speciální symboly pro uvozovky (nikoliv symbol palce), pomlčky (nikoliv spojovník, který na klávesnici můžete považovat za minus) nebo výpustku (nikoliv tři běžné tečky). 
 
 <figure>
 <img src="../dist/images/original/typografie-18.jpg" alt="">
-<figcaption markdown="1">    
+<figcaption markdown="1">
 *Aktuálně.cz používá nesprávné znaky*
 </figcaption> 
 </figure>
 
 Není to žádná buzerace typografických snobů – prostě se to lépe čte. Typografický tahák od Beneš a Michl vám může velmi pomoci. [vrdl.in/am9wu](http://blog.benes-michl.cz/data/blog/typographic_cheatsheet_1_1.pdf) (PDF)
-
 
 ## Ideální šířka a výška řádku
 
@@ -94,8 +96,7 @@ Příliš malý řádkový proklad spojuje sousedící znaky, zhoršuje čitelno
 
 Nicméně délka a výška řádku je první designérské pravidlo, na které bychom při návrhu rozhraní měli myslet. Postup návrhu pak ideálně vypadá tak, že zvolíme písmo, získáme obsah a až na těchto dvou nerozlučných přátelích postavíme systém pro layout stránky.
 
-
-## Další zdroje o typografii
+## Další zdroje o typografii  {#zdroje}
 
 Jasně, vnímáte mě dobře. Typografii mám za jeden ze zásadních stavebních kamenů přípravy vizuálu skoro každého webu. A myslím, že ze všech pěti prostředků grafického designu, které jsem zmiňoval, by právě typografii měli nejvíce rozumět i kodéři a vývojáři. Protože oni jsou často ti „sazeči“, kteří mohou mnohé ovlivnit.
 
@@ -105,5 +106,5 @@ Skvělá učebnice typografie od Jasona Santa Maria. [vrdl.in/76nb2](https://abo
 Dan Srb se hezky rozpovídal na jedné z akcí Frontendisti.cz. [youtu.be/bJLGEMQ3rnM](https://youtu.be/bJLGEMQ3rnM)
 * *Online kniha „The Elements of Typographic Style Applied to the Web“*  
 Bible od Roberta Bringhursta a spoluautorů. [webtypography.net](http://webtypography.net/toc/)
-
-
+* *Lukáš Augusta*  
+Na DesignUI.cz má Lukáš [pěkné články o typografii](https://www.designui.cz/lekce/na-typografii-v-ui-nezalezi-nebo-ano) a také nástroj pro tvorbu [typografické stupnice](https://www.designui.cz/typograficka-stupnice).
