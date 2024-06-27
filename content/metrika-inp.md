@@ -182,7 +182,7 @@ Pokud vám můžu poradit, určitě si INP pro své weby pravidelně měřte.
 
 <!-- AdSnippet -->
 
-Jestliže vám vyjdou velmi špatná čísla (červené spektrum) a chcete-li do budoucna Web Vitals splňovat a hlavně mít rychlý web, pak raději začněte připravovat plán na nápravu (s čímž vám [rádi pomůžeme](https://www.pagespeed.cz/sluzby)).
+[INP](https://docs.pagespeed.cz/docs/inp) vám umíme změřit a zoptimalizovat v [PageSpeed.cz](https://pagespeed.cz/).
 
 Z mé zkušenosti je totiž právě optimalizace JavaScriptu jedna z nejsložitějších a nejdéle se táhnoucích prací na rychlosti webu.
 

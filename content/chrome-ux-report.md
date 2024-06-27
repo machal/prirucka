@@ -176,6 +176,8 @@ Buďte ale prosím trpěliví, tento Chrome UX Report může občas hlásit chyb
 </figcaption>
 </figure>
 
+Metriky z Chrome UX Reportu vám umíme [změřit](https://app.pagespeed.cz/) a [zoptimalizovat](https://pagespeed.cz/sluzby) v PageSpeed.cz.
+
 Pokročilé metody získávání dat z Chrome UX Reportu si necháme na příště. Pokud máte nějaké vlastní reporty nebo metody prezentace dat, neváhejte dát tip v komentářích.
 
 Shrňme si, co teď víme od Google UX Reportu:

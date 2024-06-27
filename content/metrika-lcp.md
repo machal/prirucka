@@ -138,10 +138,10 @@ observer.observe({entryTypes: ['largest-contentful-paint']});
 
 Takto je možné LCP získat z prohlížeče Chrome. Více informací o měření JavaScriptem je na [web.dev od Googlu](https://web.dev/lcp/#measure-lcp-in-javascript).
 
-## Poznámky:
+## Poznámky a odkazy na závěr
 
 - Pozor na obrázky servírované z jiné domény. Z bezpečnostních důvodů není časové razítko vykreslování vystaveno pro cross-origin obrázky. Místo momentu vykreslení dostane prohlížeč informaci o jejich stažení, což může zkreslovat měření. Doporučuje se nastavit hlavičku [`Timing-Allow-Origin`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin).
-
-Měření je specifikováno v [Largest Contentful Paint API](https://wicg.github.io/largest-contentful-paint/). Při psaní jsem vycházel hlavně z podrobného [textu o LCP na webu web.dev](https://web.dev/lcp/).
+- Měření je specifikováno v [Largest Contentful Paint API](https://wicg.github.io/largest-contentful-paint/). Při psaní jsem vycházel hlavně z podrobného [textu o LCP na webu web.dev](https://web.dev/lcp/).
+- [LCP](https://docs.pagespeed.cz/docs/lcp) vám umíme měřit a zoptimalizovat s kolegy v [PageSpeed.cz](https://pagespeed.cz/).
 
 <!-- AdSnippet -->

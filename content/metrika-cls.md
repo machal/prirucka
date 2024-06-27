@@ -144,8 +144,8 @@ Zamezte poskakování při vykreslování. Zaměřte se na to, abyste v layoutu 
 * Animujte vždy CSS vlastnosti, které se umí [renderovat pomocí GPU](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/), takže např. `transform:translateY()` namísto `top`.
 * Na místo indikátorů načítání používejte [tzv. „skeletony“](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a), které napodobují obsah, na který uživatel čeká. Ale buďte s nimi opatrní, špatná implementace skeletonů z mé zkušenosti často CLS ještě zhorší.
 
-Fanoušky [AMP](amp.md) by mohlo zajímat, že tento framework je stavěný od samých základů tak, aby se [CLS rovnalo nebo blížilo nule](https://blog.amp.dev/2020/04/16/cumulative-layout-shift-in-amp/).
-
 Další obecná doporučení v angličtině od Googlu jsou na [web.dev](https://web.dev/optimize-cls/).
+
+[CLS](https://docs.pagespeed.cz/docs/cls) vám umíme změřit a zoptimalizovat v [PageSpeed.cz](https://pagespeed.cz/).
 
 <!-- AdSnippet -->

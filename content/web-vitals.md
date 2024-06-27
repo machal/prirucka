@@ -6,7 +6,7 @@ Aktuálně je totiž [měření rychlosti](rychlost-nastroje.md) (a UX) webu pom
 
 <!-- AdSnippet -->
 
-Nyní měříme hlavně tři metriky – LCP, FID a CLS. Dostali jsme k tomu nástroje a příslib, že se to už nebude moc často měnit.
+Nyní měříme hlavně tři metriky – LCP, INP a CLS. Dostali jsme k tomu nástroje a příslib, že se to už nebude moc často měnit.
 
 Google tyto metriky zohledňuje v rámci [hodnocení rychlosti webů](google-page-experience.md). Je zde tedy jednoznačná vazba na SEO.
 
@@ -22,12 +22,11 @@ Celé se to točí kolem tří hlavních metrik:
 
 * [*Largest Contentful Paint (LCP)*](metrika-lcp.md)  
 Největší vykreslení obsahu. Metrika, která popisuje rychlost načítání stránky – *načítací (loading)* výkon. Jde o něco mezi [FCP](metrika-fcp.md) a [SpeedIndexem](speedindex.md).
-* [*First Input Delay (FID)*](metrika-fid.md)  
-Prodleva prvního vstupu. Metrika, která popisuje jak rychle může uživatel na stránce začít provádět úlohy – výkon *interaktivity*. Jedná se tedy o metriku podobnou synteticky měřené [TBT](metrika-tbt.md).
+* [*Interaction to Next Paint (FID)*](metrika-inp.md)  
+Od interakce k vykreslení. Metrika, která popisuje *rychlost odezvy po uživatelské interakci*. Tato metrika v březnu 2024 nahradila starší FID. V syntetických měřeních není možné ji získat, nejlepší je tedy sledovat [metriku TBT](metrika-tbt.md).
 * [*Cumulative Layout Shift (CLS)*](metrika-cls.md)  
 Kumulativní posun layoutu. Metrika, která popisuje *vizuální stabilitu* layoutu během vykreslování.
-* [*Interaction to Next Paint (INP)*](metrika-inp.md)  
-Od interakce k vykreslení. Metrika, která popisuje *rychlost odezvy po uživatelské interakci*. Tato metrika nahradí FID v březnu 2024.
+
 
 Google také rozlišuje tři stavy metrik. Nově je označuje takto:
 
@@ -42,9 +41,9 @@ Hranice pro stavy jednotlivých metrik jsou [podle Googlu](https://web.dev/defin
 | Metrika    |  Dobrá    |  Vyžaduje zlepšení  |  Špatná   |
 |:-----------|----------:|--------------------:|----------:|
 | LCP        | ≤ 2,5 s   |   2,5 - 4 s         |  > 4 s    |
-| FID        | ≤ 100 ms  |   100 - 300 ms      |  > 300 ms |
-| CLS        | ≤ 0,1     |   0,1 - 0,25        |  > 0,25   |
 | INP        | ≤ 200 ms  |   200 - 500 ms      |  > 500 ms |
+| CLS        | ≤ 0,1     |   0,1 - 0,25        |  > 0,25   |
+
 
 </div>
 
@@ -59,12 +58,11 @@ No a pokud byste chtěli jen jeden stav, jedno vysvědčení pro měřenou strá
 </figcaption>
 </figure>
 
-Google má také na web.dev pěkné materiály o optimalizaci jednotlivých metrik:
+Materiály o optimalizaci jednotlivých metrik:
 
-* [Optimalizace LCP](https://web.dev/optimize-lcp/)
-* [Optimalizace FID](https://web.dev/optimize-fid/)
-* [Optimalizace CLS](https://web.dev/optimize-cls/)
-* [Optimalizace INP](https://web.dev/optimize-inp/)
+* [Optimalizace LCP](https://docs.pagespeed.cz/docs/lcp-optimization) (PageSpeed.cz)
+* [Optimalizace CLS](https://docs.pagespeed.cz/docs/cls-optimisation) (PageSpeed.cz)
+* [Optimalizace INP](https://web.dev/optimize-inp/) (Web.dev)
 
 ### A co další metriky? {#dalsi-metriky}
 
@@ -104,11 +102,13 @@ Jednoduše měří přímo v prohlížeči.
 * [*JS knihovna web-vitals*](https://github.com/GoogleChrome/web-vitals)  
 Knihovna je skvělá pro případy, že byste si chtěli začít měřit sami a ukládat si data do [Google Analytics](google-analytics-vyvojari.md) nebo vlastní analytiky.
 
-Raději explicitně zmiňuji, že metrika FID se nedá sbírat jinak než od reálných uživatelů, z takzvaných RUM (Real User Monitoring) nástrojů. 
+Raději explicitně zmiňuji, že metrika INP se nedá sbírat jinak než od reálných uživatelů, z takzvaných RUM (Real User Monitoring) nástrojů nebo z Chrome UX Reportu.
 
 Pokud měříte synteticky strojem, což dělá například WebpageTest, [Lighthouse](lighthouse.md) (od [verze 6](https://www.vzhurudolu.cz/blog/172-lighthouse-6)) nebo částečně PageSpeed Insights či [SpeedCurve](speedcurve.md), doporučuje se nahradit ji metrikou [Total Blocking Time (TBT)](metrika-tbt.md).
 
 Google deklaruje, že chce, aby „Core Web Vitals“ byly stabilní a predikovatelné, a že se nebudou měnit častěji než jednou za rok. Zároveň ale dodává, že ani „Core Web Vitals“ nejsou perfektní a bude se na nich dále pracovat.
+
+[Web Vitals](https://docs.pagespeed.cz/docs/cwv) vám umíme [změřit](https://app.pagespeed.cz/) a [zoptimalizovat](https://pagespeed.cz/sluzby) v PageSpeed.cz.
 
 Sledujte Vzhůru dolů, abyste dostávali čerstvé informace. Tento článek budu dále aktualizovat.
 

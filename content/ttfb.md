@@ -125,6 +125,11 @@ Shrnu teď to nejdůležitější a už vám dám pokoj:
 - Do měření TTFB se může projevovat pomalé internetové připojení, zpomalení způsobené měřícím nástrojem atd.
 - TTFB může být pro různá měření a různé stránky webu velmi různě vysoké. Má tedy smysl sledovat jen jeho dlouhodobý trend a srovnávat se s adekvátní konkurencí.
 
+Více o TTFB píší například zde:
+
+- [PageSpeed.cz](https://docs.pagespeed.cz/docs/ttfb), včetně pár tipů na optimalizace.
+- [Optimize Time to First Byte](https://web.dev/articles/optimize-ttfb) na Web.dev.
+
 <!-- AdSnippet -->
 
 
