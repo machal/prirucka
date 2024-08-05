@@ -70,3 +70,5 @@
 - [Je WordPress pomalý?](https://www.vzhurudolu.cz/blog/125-wordpress-richman)
 - [Co je PWA?](pwa.md)
 - [Podcast s Michalem Matuškou](https://www.vzhurudolu.cz/podcast/153-podcast-perfnow) 
+
+Může vás zajímat také [nápověda o rychlosti webu](https://docs.pagespeed.cz/), kterou píšu s kolegy z [PageSpeed.cz](https://www.pagespeed.cz/).

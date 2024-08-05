@@ -243,6 +243,15 @@ Jinde pomůže nová metoda [s funkcí `aspect-ratio()`](css-aspect-ratio.md) ne
 
 → **Tip:** O metrice CLS mám také [video z webináře](https://www.vzhurudolu.cz/video/webinar-cls) a lidé říkají, že je bezva.
 
+## A tak dále (netříděno)
+
+- Používejte [BF cache (back/forward cache)](https://docs.pagespeed.cz/docs/bf-cache).
+- Nezapomeňte na správnou kompresi [gzip nebo brotli](https://docs.pagespeed.cz/docs/gzip-brotli).
+- Novinkou v roce 2024 jsou různé [Navigation Types](https://docs.pagespeed.cz/docs/navigation-types), včetně těch okamžitých způsobů navigace, které se dělají např. pomocí Speculation Rules.
+- Udělejte si [pořádek v `<head>`](https://docs.pagespeed.cz/docs/html-head). Nějaké drobné to může udělat, někdy i větší úspory.
+- Dejte si pozor na [komponenty třetích stran](third-party.md), jako je A/B testing, analytika nebo [chaty](https://docs.pagespeed.cz/docs/study-chat) či [cookie lišty](https://docs.pagespeed.cz/docs/cookie-consent).
+- Rozdělujte CSS i JS do [menších souborů](https://docs.pagespeed.cz/docs/study-css-files).
+
 ## Kam dál? {#kam-dal}
 
 Hledáte ještě další tipy?

@@ -26,6 +26,8 @@ Na druhou stranu: Data o rychlosti webu z CrUX jsou obvykle dostupná až s ně
 
 Ale buďme za to rádi. Google nám prostřednictvím Chrome UX Reportu poskytuje data zdarma. Podobná komerční RUM (Real User Monitoring) řešení (jako [tarify LUX](https://speedcurve.com/pricing/) nástroje [SpeedCurve](speedcurve.md)) jsou pořádně drahá.
 
+Detailněji jsem o rozdílech mezi [CrUX, synth a RUM daty o rychlosti webů](https://docs.pagespeed.cz/docs/synth-crux-rum) psal na PageSpeed.cz.
+
 ## Proč sledovat zrovna tohle? Protože SEO a UX {#proc}
 
 Má se za to, že Google data z CrUX [používá pro vyhodnocování](https://www.searchenginejournal.com/mobile-page-speed-changes/272221/) rychlosti webu, jednoho z mnoha [signálů pro řazení](https://developers.google.com/web/updates/2018/07/search-ads-speed) přirozených i placených výsledků vyhledávání.

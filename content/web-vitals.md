@@ -108,7 +108,7 @@ Pokud měříte synteticky strojem, což dělá například WebpageTest, [Lighth
 
 Google deklaruje, že chce, aby „Core Web Vitals“ byly stabilní a predikovatelné, a že se nebudou měnit častěji než jednou za rok. Zároveň ale dodává, že ani „Core Web Vitals“ nejsou perfektní a bude se na nich dále pracovat.
 
-[Web Vitals](https://docs.pagespeed.cz/docs/cwv) vám umíme [změřit](https://app.pagespeed.cz/) a [zoptimalizovat](https://pagespeed.cz/sluzby) v PageSpeed.cz.
+[Web Vitals](https://docs.pagespeed.cz/docs/core-web-vitals) vám umíme [změřit](https://app.pagespeed.cz/) a [zoptimalizovat](https://pagespeed.cz/sluzby) v PageSpeed.cz.
 
 Sledujte Vzhůru dolů, abyste dostávali čerstvé informace. Tento článek budu dále aktualizovat.
 

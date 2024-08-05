@@ -116,6 +116,8 @@ Vše podstatné je v záložce Network:
 Na Vzhůru dolů jsem už psal i o dalších praktických tipech pro DevTools. [vrdl.cz/b/41-devtools-tipy](https://www.vzhurudolu.cz/blog/41-devtools-tipy).
 </div>
 
+Nezapomeňte, že v Chrome DevTools jsou také skvělé nástroje pro [měření rychlosti webu](https://docs.pagespeed.cz/docs/web-vitals-browser).
+
 Podívejte se na video „Chrome DevTools: analýza načítání stránky“.
 
 YouTube: [youtu.be/ewwHYkXmPpQ](https://www.youtube.com/watch?v=ewwHYkXmPpQ)

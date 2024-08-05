@@ -69,7 +69,9 @@ Zatímco ideální přenosová rychlost mobilního připojení se může rovnat 
 
 Česko je už sice hezky pokryto LTE sítěmi, jenže sítě čtvrté generace zdaleka nemají a jen tak nebudou mít v mobilu všichni. [lte.ctu.cz/pokryti/](http://lte.ctu.cz/pokryti/)
 
-Takže: ano, rychlost načtení je dobré řešit. Pravděpodobně vám na web pomůže dostat více lidí a také vylepší klíčové ukazatele hodnocení jeho úspěšnosti. 
+Takže: ano, rychlost načtení je dobré řešit. Pravděpodobně vám na web pomůže dostat více lidí a také vylepší klíčové ukazatele hodnocení jeho úspěšnosti.
+
+Podrobněji jsem [o důvodech, proč řešit rychlost](https://docs.pagespeed.cz/docs/why-page-speed) psal do nápovědy PageSpeed.cz.
 
 <div class="web-only" markdown="1">
 Co dál? Přečíst si [článek o nástrojích](https://www.vzhurudolu.cz/prirucka/rychlost-nastroje) pro analýzu rychlosti.

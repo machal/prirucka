@@ -247,7 +247,7 @@ Větší weby využívají velmi robustní [OneTrust (dříve Optanon)](https://
 
 ## Cookie lišta a rychlost webu {#rychlost}
 
-Na [blogu PageSpeed.cz](https://pagespeed.cz/blog/cookie-rychlost-webu) jsem psal o trablech z pohledu rychlosti webu, které může nasazení cookie lišty způsobit.
+Na [webu PageSpeed.cz](https://docs.pagespeed.cz/docs/cookie-consent) jsem psal o trablech z pohledu rychlosti webu, které může nasazení cookie lišty způsobit.
 
 Svoje jsme si užili s OneTrust, Didomi i Google Funding Choices. Nicméně vždy jsme nalezli cestu k optimalizaci.
 

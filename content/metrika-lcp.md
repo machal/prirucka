@@ -63,6 +63,8 @@ Dále se jako LCP mohou zvažovat: `<image>` uvnitř `<svg>`, `<video>` (jen obr
 
 Naopak se ke dni psaní neberou `<svg>` (což je nemalá nedokonalost téhle metriky) nebo `<video>` bez posterů a myslím, že ani `<canvas>`.
 
+Více jsme o [LCP elementu](https://docs.pagespeed.cz/docs/lcp-element) napsali v nápovědy PageSpeed.cz.
+
 ### Jak se počítá velikost prvku pro potřeby CSS? {#pocitani-velikost}
 
 Počítá se jen samotný box model, tzn. `margin`, `padding`, ani `border` se nezapočítávají.
