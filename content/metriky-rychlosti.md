@@ -8,7 +8,7 @@ A teď už vzhůru na ty metriky. Tenhle text slouží totiž především jako 
 
 ## Metriky Web Vitals {#web-vitals}
 
-Web Vitals je označení pro metriky, které v roce 2020 vyhlásil Google. Jejich základní sadou jsou „Core Web Vitals“. 
+Web Vitals je označení pro metriky, které v roce 2020 vyhlásil Google. Jejich nejdůležitější podmnožinou jsou „Core Web Vitals“.
 
 Podle Google by se měřením a optimalizací pro tyto ukazatele měl zabývat úplně každý, kdo se kolem webdesignu motá.
 
@@ -19,7 +19,7 @@ Jde o následující tři metriky.
 | Metrika                                        |  Kdy vzniká?                  |
 |:-----------------------------------------------|:------------------------------|
 | [Largest Contentful Paint (LCP)](metrika-lcp.md) | Největší vykreslení obsahu  |
-| [First Input Delay (FID)](metrika-fid.md)      | Prodleva prvního vstupu     |
+| [Interaction to Next Paint (INP)](metrika-inp.md) | Od interakce do prvního vykreslení   |
 | [Cumulative Layout Shift (CLS)](metrika-cls.md) | Kumulativní posun layoutu    |
 
 </div>
@@ -45,7 +45,6 @@ Většina rychlostních metrik jsou prostě události, které po splnění urči
 | [DOM Content Loaded (DCL)](udalost-dcl.md)     | Rozparsování HTML prohlížečem |
 | [First Contentful Paint (FCP)](metrika-fcp.md) | První vykreslení obsahu       |
 | [Total Blocking Time (TBT)](metrika-tbt.md)    | Celkový čas blokování JS      |
-| [Interaction to Next Paint (INP)](metrika-inp.md)    | Od interakce do prvního vykreslení   |
 | [Speed Index](speedindex.md)                   | Vykreslení celého viewportu   |
 | [Lighthouse Performance Score](metrika-lps.md) | Všechny renderovací metriky   |
 
@@ -85,7 +84,7 @@ Daleko lepší metodika. Do stránky si obvykle vložíte skript, který měří
 U většiny webů vám RUM metriky dnes ale zobrazí i PageSpeed Insights a to z veřejné databáze [Chrome UX Report (CrUX)](chrome-ux-report.md). Dále umí schraňovat data od uživatelů i [SpeedCurve](speedcurve.md), ale to je drahé.
 
 <figure>
-<img src="../dist/images/original/pagespeed-insights-crux.jpg" alt="">
+<img src="../dist/images/original/pagespeed-insights-crux.png" alt="">
 <figcaption markdown="1">
 *Nástroj PageSpeed Insights zobrazuje údaje z přehledu uživatelského dojmu Chromu ([Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report/)), do kterého existuje i veřejný přístup*
 </figcaption>
@@ -97,7 +96,7 @@ Metriky zatím většinou vznikají syntetickým měřením. RUM nástroje jsou 
 
 Ano, já vím, je to trochu složité. Není ale asi potřeba, abyste si pamatovali metriky všechny a lpěli na nich. Zkusím vám na závěr doporučit jednoduchou strategii:
 
-- Zaměřte se zejména na metriky obsažené ve [Web Vitals](web-vitals.md): LCP, FID a CLS.
+- Zaměřte se zejména na metriky obsažené ve [Web Vitals](web-vitals.md): LCP, INP a CLS.
 - Dále si hlídejte [Lighthouse skóre](metrika-lps.md) pro oblast Performace, které zobrazuje také [PageSpeed Insights](pagespeed-insights.md).
 - V dlouhodobém horizontu usilujte o zlepšení v metrikách od reálných uživatelů. Nejlépe je získáte od Chrome UX Reportu, odkud je umí vytáhnout [PageSpeed Insights](pagespeed-insights.md).
 - Provnávejte výsledky vašich nejdůležitějších stránek s konkurencí. Viz můj [článek o rychlosti](rychlost-designeri.md) pro designéry a marketéry.

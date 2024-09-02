@@ -88,7 +88,7 @@ Moje zkušenost z praxe [poradenství k rychlosti webu](https://www.pagespeed.cz
 
 Důležité je zmínit, že se využívají data od skutečných uživatelů, z [Chrome UX Reportu (CrUX)](chrome-ux-report.md).
 
-Vyhodnocuje se stav metrik [Core Web Vitals](web-vitals.md), tedy [LCP](metrika-lcp.md), [FID](metrika-fid.md) (od března 2024 ji nahradí [INP](metrika-inp.md)) a [CLS](metrika-cls.md).
+Vyhodnocuje se stav metrik [Core Web Vitals](web-vitals.md), tedy [LCP](metrika-lcp.md), [INP](metrika-inp.md) a [CLS](metrika-cls.md).
 
 Explicitně raději uvádím, že Google v hodnocení nezajímají syntetická měření v [Lighthouse](lighthouse.md) a už vůbec ne [Lighthouse skóre](metrika-lps.md). Tato syntetická měření slouží vývojářům ke  zjednodušení optimalizací, nikoliv pro zjištění, jak na tom web je u Googlu.
 

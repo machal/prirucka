@@ -42,39 +42,18 @@ Jak už jsem psal, [metrik](metriky-rychlosti.md) zde nemáme k dispozici tolik 
 
 <div class="rwd-scrollable f-6" markdown="1">
 
-| Metrika                                                                        | Kdy vzniká?                       |
-| ------------------------------------------------------------------------------ | --------------------------------- |
-| [First Paint (FP)](metrika-fp.md)              | Vykreslení čehokoliv              |
-| [First Contentful Paint (FCP)](metrika-fcp.md) | První vykreslení obsahu           |
-| [Largest Contentful Paint (LCP)](metrika-lcp.md)                                                 | Vykreslení největší části stránky |
-| [DOM Content Loaded (DCL)](udalost-dcl.md)     | Rozparsování HTML prohlížečem     |
-| [Load](load.md)                                | Stažení všeho ve stránce          |
+| Metrika                                           | Co zhruba měří?                       |
+| ------------------------------------------------- | --------------------------------- |
+| [Time To First Byte (TTFB)](ttfb.md)              | Rychlost odezvy serveru           |
+| [First Paint (FP)](metrika-fp.md)                 | Vykreslení čehokoliv              |
+| [First Contentful Paint (FCP)](metrika-fcp.md)    | První vykreslení obsahu           |
+| [Largest Contentful Paint (LCP)](metrika-lcp.md)  | Vykreslení největší části stránky |
+| [Interaction to Next Paint (INP)](metrika-inp.md) | Od interakce do dalšího vykreslední  |
+| [Cumulative Layout Shift (CLS)](metrika-cls.md)   | Kumulativní posun layoutu          |
 
 </div>
 
-V experimentální podobě se v době psaní textu CrUX ukládájí také [Time To First Byte (TTFB)](ttfb.md), [First Input Delay (FID)](metrika-fid.md) a Cumulative Layout Shift.
-
-Nejdůležitější metriky jsou FCP a FID, soudě podle toho, že Google je zobrazuje ve svých měřících nástrojích. V tabulce můžeme vidět, jaké jejich hodnoty považuje za rychlé, průměrné a pomalé.
-
-<figure>
-
-<div class="rwd-scrollable f-6" markdown="1">
-
-| Uživatelský prožitek     | FCP        | FID         |
-| ------------------------ | ---------- | ----------- |
-| Rychlý (Fast)            | 0 – 1 s    | 0 – 0,1 s   |
-| Průměr (Moderate)        | 1 – 3 s    | 0,1 - 0,3 s |
-| Pomalý (Slow)            | 3 s a více | 0,3 s a více  |
-
-</div>  
-
-<figcaption markdown="1">
-
-_Tabulka: Jak Crome UX Report zařazuje uživatelských prožitek u metrik First Contentful Paint (FCP) a First Input Delay (FID). Více je [v metodice](https://developers.google.com/speed/docs/insights/v5/about#faq)._
-
-</figcaption>
-
-</figure>
+Nejdůležitější metriky jsou [Core Web Vitals](web-vitals.md) (LCP, INP, CLS).
 
 Kromě rychlostních metrik zde také najdeme informace o kategorii rychlosti připojení a typu zařízení (mobil, tablet, desktop).
 
@@ -97,7 +76,7 @@ _Obrázek: Nejjednodušší je získat tyhle hezké grafy přes PageSpeed Insigh
 </figcaption>
 </figure>
 
-Data vytažená z PageSpeed Insights se počítají za poslední měsíc, takže jsou velmi čerstvá. Dostaneme zde ale jen metriky [FCP](metrika-fcp.md) a [FID](metrika-fid.md). A také celkové zhodnocení, které se počítá ze 75. percentilu FCP a 95. FID. Google tady dává stránkám jeden ze tří stupňů hodnocení na základě uživatelských dat, které už jsem zmiňoval – Fast, Moderate nebo Slow.
+Data vytažená z PageSpeed Insights se počítají za poslední měsíc, takže jsou velmi čerstvá. Google tady dává stránkám jeden ze tří stupňů hodnocení na základě uživatelských dat, které už jsem zmiňoval – Fast, Moderate nebo Slow.
 
 Jak si vytvořit report z PageSpeed Insights?
 

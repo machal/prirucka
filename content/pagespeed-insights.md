@@ -56,14 +56,9 @@ Jde o metriky od skutečných uživatelů vašeho webu. Alespoň těch, kteří 
 
 Tohle je důležité a ukazuje to krásy měření na reálných uživatelích (s nádhernou zkratkou RUM = Real User Monitoring).
 
-Vidíme zde distribuci uživatelů pro dvě [rychlostní metriky](metriky-rychlosti.md):
+Vidíme zde distribuci uživatelů metriky [Core Web Vitals](web-vitals.md):
 
-1. *První vykreslení obsahu*  
-[First Contentful Paint](metriky-rychlosti.md#FCP) (FCP) – kdy se vašemu uživateli poprvé zobrazí obsah?
-2. *Prodleva prvního vstupu*  
-First Input Delay (FID) – za jak dlouho od prvního kliku stránka zareaguje?
-
-Graf v obrázku ukazuje jaké části uživatelů vašeho webu spadají u obou metrik (FCP i FID) do tří kategorií zastupujících rychlý, průměrný nebo pomalý uživatelský prožitek. Když to píšu, [považuje se za rychlý](https://developers.google.com/speed/docs/insights/v5/about) FCP do jedné vteřiny a FID do 50 ms.
+Graf v obrázku ukazuje jaké části uživatelů vašeho webu spadají u metrik do tří kategorií zastupujících rychlý, průměrný nebo pomalý uživatelský prožitek.
 
 Jednoduše řečeno: Čím více je tam zelené a méně červené barvy, tím lépe. Dobře udělané weby mají zelenou alespoň ve dvou třetinách obou grafů.
 

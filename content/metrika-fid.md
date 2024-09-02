@@ -2,9 +2,7 @@
 
 [Metrika rychlosti webu](metriky-rychlosti.md), která udává čas mezi interakcí uživatele se stránkou a jejím skutečným provedením.
 
-Metrika First Input Delay je velmi důležitá, protože je součástí [Core Web Vitals](web-vitals.md) a zohledňuje se v rámci [hodnocení rychlosti webů Googlem](google-page-experience.md).
-
-Je ale dobré vědět, že FID bude v březnu 2024 v rámci Core Web Vitals nahrazena aktuálnější metrikou [INP (Interaction to Next Paint)](metrika-inp.md).
+Je dobré vědět, že FID je od března 2024 v rámci Core Web Vitals nahrazena aktuálnější metrikou [INP (Interaction to Next Paint)](metrika-inp.md).
 
 ## Jak se měří FID?
 
