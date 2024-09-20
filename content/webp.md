@@ -1,8 +1,8 @@
 # WebP obrázky: datově úsporná alternativa k JPEG, PNG i GIF
 
-[WebP](https://developers.google.com/speed/webp/) je formát bitmapových obrázků, který představil Google v roce 2010.
+[WebP](https://developers.google.com/speed/webp/) je formát bitmapových obrázků, který se v posledních letech stal na webu velmi populárním.
 
-Dnes už je podporovaný prakticky všemi prohlížeči, když nepočítáme zastaralý a obvykle málo nepoužívaný Internet Explorer.
+WebP představil Google už v roce 2010. Dnes už je formát podporovaný prakticky všemi prohlížeči a operačními systémy. Podpora v obrázkových editorech je různorodá.
 
 <div class="related" markdown="1">
 - [Obrázkové formáty pro web](obrazky-formaty.md)
@@ -11,32 +11,29 @@ Dnes už je podporovaný prakticky všemi prohlížeči, když nepočítáme zas
 - [Responzivní obrázky](responzivni-obrazky.md)
 </div>
 
-Pojďme si projít hlavní přínosy:
+Pojďme si projít hlavní přínosy WebP:
 
 - možnost výrazného snížení datového objemu v porovnání s JPEG i PNG
 - alfa průhlednost, kterou dosud nabízel jen formát PNG
 - podpora animací, kterou umí jen dědeček GIF
 
-WebP naopak oproti JPEG neumí například [subsampling chroma kanálu](https://en.wikipedia.org/wiki/Chroma_subsampling) a progresivní vykreslování.
+WebP naopak oproti JPEG neumí například [subsampling chroma kanálu](https://en.wikipedia.org/wiki/Chroma_subsampling) a progresivní vykreslování (což se dá [očůrat pomocí háčků](https://shkspr.mobi/blog/2020/04/how-to-fake-progressive-webp-images/)).
 
 <!-- AdSnippet -->
 
-WebP je také prý pomalejší pro dekódování a více zatěžuje procesor. Ale na [images.guide](https://images.guide/#how-does-webp-perform) se píše:
+WebP je také prý pomalejší pro dekódování a více zatěžuje procesor. To byl ale problém jen dříve. Na už neexistujícím webu images.guide se psalo:
 
 > Back in 2013, the compression speed of WebP was ~10× slower than JPEG but is now negligible (some images may be 2× slower). For static images that are processed as part of your build, this shouldn’t be a large issue. Dynamically generated images will likely cause a perceivable CPU overhead and will be something you will need to evaluate.
 
-Takže by to mělo být ke zvážení, jen pokud obrázky generujete v reálném čase.
+Takže by to mělo být ke zvážení, jen pokud obrázky generujete v reálném čase, je jich hodně a jsou obrovské. Jinak to už dneska problém nebude a výkon se řešívá u ještě novějšího formátu [AVIF](avif.md).
 
-## Podpora v prohlížečích: Partička kolem Chrome a Edge {#podpora}
+## Podpora v prohlížečích: samá krása {#podpora}
 
-Jde o formát z dílny Google, i proto jej podporují všechny prohlížeče postavené na jádru Chromu – například Microsoft Edge, Opera nebo prohlížeč od Seznam.cz – a Firefox. Nově také Safari. Pokud to od oka dobře počítám, může jít ke dni psaní textu v Česku mezi 90 - 98 % uživatelů.
-
-- Podporují: Chrome a prohlížeče postavené na Chromiu, Firefox, [Safari od verze 14](https://developer.apple.com/documentation/safari-release-notes/safari-14-beta-release-notes#Media).
-- Nepodporují a podporovat nebudou: Internet Explorer všech verzí.
+Jde o formát z dílny Google, i proto jej nejdříve podporovaly všechny prohlížeče postavené na jádru Chromu (například Microsoft Edge, Opera nebo prohlížeč od Seznam.cz) a Firefox. Nově také [Safari od verze 14](https://developer.apple.com/documentation/safari-release-notes/safari-14-release-notes/).
 
 Více informací o podpoře: [caniuse.com/webp](https://caniuse.com/#feat=webp).
 
-Co tedy uděláme s menší částí uživatelů, kteří používají prohlížeče bez podpory nového formátu? Žádné stresy, web bez obrázků jim dodávat nemusíme.
+Dříve bylo potřeba řešit fallback do více rozšířených formátů, ale toto zde nechávám už jen kvůli zpětné kompatibilitě článku.
 
 ## Fallback do JPEG {#fallback}
 
@@ -83,17 +80,5 @@ Jinak [obecné studie od Googlu](https://developers.google.com/speed/webp/) ří
 
 - u bezztrátových obrázků typu PNG o 26 %
 - u ztrátových obrázků typu JPG o 25-34 %
-
-## Jak WebP získat? {#jak-ziskat}
-
-K červenci 2020 je už možností, jak generovat WebP obrázky opravdu hodně:
-
-- Grafické aplikace: Sketch, Pixelmator nebo GIMP mají přímý export, Photoshop a další nástroje od Adobe jej nemají, ale existuje [plugin](https://github.com/fnordware/AdobeWebM).
-- Specializované knihovny jako [cwebp](https://developers.google.com/speed/webp/docs/cwebp) pro kodek [libwebp](https://developers.google.com/speed/webp/docs/using).
-- Pluginy do knihoven jako ImageMin typu [imagemin-webp](https://github.com/imagemin/imagemin-webp) pro [Grunt](grunt.md), Gulp či jiné sestavovače.
-- PHP knihovny jako [ImageMagick](https://imagemagick.org/script/webp.php). 
-- online služby jako [Kraken.io](https://kraken.io/) (Mají vynikající výsledky komprese, ale jsou většinou za peníze a to nemalé).
-
-Další možnosti najdete na [web.dev](https://web.dev/serve-images-webp/) nebo [images.guide](https://images.guide/#how-do-i-convert-to-webp).
 
 <!-- AdSnippet -->
