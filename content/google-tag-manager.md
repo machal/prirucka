@@ -226,5 +226,3 @@ Pokud dáte přístup správným lidem, předdefinovaným i komunitním značká
 Jak už jsem napsal, GTM je dobrý sluha, ale zlý pán. V rukou _jen_ markeťáka, nebo _jen_ frontenďáka může být nebezpečný.
 
 V rukou obou těchto oborů to může být skvělý nástroj, který vám ušetří spoustu nervů.
-
-O GTM by se toho dalo napsat ještě spoustu dalšího. Například jak na vlastní šablony značek, jak na práci s proměnnými, verzování a workspaces… Pokud vás zajímá více, přihlaste na naši marketingo-frontendovou sérii webinářů o GTM na [gtmskoleni.cz](https://gtmskoleni.cz/).
